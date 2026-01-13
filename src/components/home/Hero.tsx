@@ -1,66 +1,142 @@
+"use client";
+
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, ShieldCheck, TrendingUp, Users, Lock, ChevronRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { motion } from "framer-motion";
 
 export function Hero() {
     return (
-        <section className="relative overflow-hidden bg-background pb-16 pt-16 md:pb-24 md:pt-24 lg:pb-32 lg:pt-32">
-            {/* Background Glow */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl opacity-50 pointer-events-none">
-                <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl mix-blend-multiply filter" />
-                <div className="absolute top-[10%] right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl mix-blend-multiply filter" />
+        <section className="relative overflow-hidden bg-primary pb-20 pt-24 md:pb-32 md:pt-32 min-h-[90vh] flex items-center">
+            {/* Dynamic Background */}
+            <div className="absolute inset-0 pointer-events-none">
+                {/* Gold Glow Top Left */}
+                <div className="absolute -top-20 -left-20 w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[120px] mix-blend-screen opacity-60" />
+                {/* Deep Green Glow Bottom Right */}
+                <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-[#1a5d3a]/30 rounded-full blur-[120px] mix-blend-screen opacity-50" />
+                {/* Grainy Texture Overlay */}
+                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay"></div>
             </div>
 
             <Container className="relative z-10">
+                <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
 
-                {/* Subheadline */}
-                <p className="max-w-2xl text-lg text-text-muted md:text-xl leading-relaxed text-balance">
-                    Join 500,000+ Americans who have secured their savings against inflation and market volatility.
-                    Discover if you qualify for a <span className="font-semibold text-primary">Tax-Free Gold IRA Rollover</span>.
-                </p>
+                    {/* Floating Badge */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-secondary mb-8 backdrop-blur-md hover:bg-white/10 transition-colors cursor-default shadow-lg shadow-black/20"
+                    >
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                        </span>
+                        <span>Urgent: The Dollar Buying Power is Down 14%</span>
+                    </motion.div>
 
-                {/* CTAs */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center pt-4">
-                    <Button size="xl" variant="gold" asChild className="w-full sm:w-auto min-w-[240px] shadow-xl shadow-secondary/20">
-                        <Link href="/quiz">
-                            Check Eligibility Now
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Link>
-                    </Button>
-                    <Button size="xl" variant="outline" asChild className="w-full sm:w-auto min-w-[240px] border-text-muted/20 text-text-muted hover:text-primary hover:bg-gray-50">
-                        <Link href="/best-gold-ira-companies">
-                            Compare Top Companies
-                        </Link>
-                    </Button>
-                </div>
+                    {/* Main Headline */}
+                    <motion.h1
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.1, ease: [0.2, 0.65, 0.3, 0.9] }}
+                        className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white mb-8 leading-[1.1]"
+                    >
+                        What the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#e5b94a] via-[#FFF8E7] to-[#d4a835] animate-shimmer bg-[length:200%_auto]">Rich</span> Know About Retirement
+                    </motion.h1>
 
-                {/* Trust Factors */}
-                <div className="mt-12 pt-8 border-t border-gray-100 w-full">
-                    <p className="text-sm font-medium text-gray-400 mb-6 uppercase tracking-wider">Trusted By Investors For</p>
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-sm">
-                        <div className="flex flex-col items-center gap-2">
-                            <div className="p-3 rounded-full bg-blue-50 text-blue-600 mb-1">
-                                <ShieldCheck className="h-6 w-6" />
+                    {/* Subheadline */}
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                        className="max-w-2xl text-lg text-gray-300 md:text-2xl leading-relaxed mb-10 font-light"
+                    >
+                        Most people save in paper assets and lose purchasing power every year.
+                        See how to use a <strong className="text-white font-semibold">Tax-Free Gold IRA</strong> to opt out of the failing banking system.
+                    </motion.p>
+
+                    {/* CTAs */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center"
+                    >
+                        <Button
+                            size="xl"
+                            variant="gold"
+                            asChild
+                            className="w-full sm:w-auto min-w-[280px] h-16 text-lg shadow-[0_0_40px_-10px_rgba(212,168,53,0.6)] hover:scale-105 transition-transform duration-300 border-2 border-[#fff8e7]/20 relative overflow-hidden group"
+                        >
+                            <Link href="/quiz">
+                                <span className="relative z-10 flex items-center justify-center gap-2">
+                                    Calculate Your "Rich Dad" Score
+                                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                                </span>
+                                {/* Shine Effect */}
+                                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+                            </Link>
+                        </Button>
+
+                        <Button
+                            size="xl"
+                            className="bg-white/5 hover:bg-white/10 text-white border border-white/10 w-full sm:w-auto min-w-[280px] h-16 text-lg backdrop-blur-sm transition-all duration-300"
+                            asChild
+                        >
+                            <Link href="/rich-dad-strategy">
+                                <span className="flex items-center justify-center gap-2">
+                                    Read The Strategy
+                                    <ChevronRight className="h-5 w-5 text-secondary" />
+                                </span>
+                            </Link>
+                        </Button>
+                    </motion.div>
+
+                    {/* Trust Factors / Social Proof */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.8 }}
+                        className="mt-16 pt-8 border-t border-white/10 w-full max-w-4xl"
+                    >
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-sm text-left">
+                            <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors group">
+                                <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
+                                    <ShieldCheck className="h-6 w-6" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="font-bold text-white text-base">Wealth Protection</span>
+                                    <span className="text-gray-400 text-xs uppercase tracking-wider">Inflation Hedge</span>
+                                </div>
                             </div>
-                            <span className="font-semibold text-primary">Wealth Protection</span>
-                            <span className="text-gray-500">Hedge against inflation</span>
-                        </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <div className="p-3 rounded-full bg-amber-50 text-amber-600 mb-1">
-                                <TrendingUp className="h-6 w-6" />
+
+                            <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors group">
+                                <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
+                                    <TrendingUp className="h-6 w-6" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="font-bold text-white text-base">Portfolio Growth</span>
+                                    <span className="text-gray-400 text-xs uppercase tracking-wider">Uncorrelated Asset</span>
+                                </div>
                             </div>
-                            <span className="font-semibold text-primary">Portfolio Growth</span>
-                            <span className="text-gray-500">Stability in crisis</span>
-                        </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <div className="p-3 rounded-full bg-green-50 text-green-600 mb-1">
-                                <Users className="h-6 w-6" />
+
+                            <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors group">
+                                <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
+                                    <Lock className="h-6 w-6" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="font-bold text-white text-base">Tax-Free</span>
+                                    <span className="text-gray-400 text-xs uppercase tracking-wider">IRS Approved Rollover</span>
+                                </div>
                             </div>
-                            <span className="font-semibold text-primary">Tax Advantages</span>
-                            <span className="text-gray-500">Tax-free roll over</span>
                         </div>
-                    </div>
+                        <p className="mt-6 text-center text-xs text-gray-500 font-mono tracking-widest uppercase opacity-60">
+                            Trusted Strategy • Zero Tax Implications • 100% Legal
+                        </p>
+                    </motion.div>
+
                 </div>
             </Container>
         </section>

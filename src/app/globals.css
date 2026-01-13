@@ -86,7 +86,7 @@
   h6 {
     font-family: var(--font-serif);
     font-weight: bold;
-    color: var(--color-primary);
+    /* color: var(--color-primary);  <-- Removed to allow text-white overrides */
   }
 }
 

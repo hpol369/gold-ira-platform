@@ -9,6 +9,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
+            url: "https://goldiraguide.com/guide/gold-ira-guide",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: "https://goldiraguide.com/reviews/augusta-precious-metals",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/compare/gold-ira-vs-401k",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/learn/gold-ira-benefits",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
             url: "https://goldiraguide.com/quiz",
             lastModified: new Date(),
             changeFrequency: "monthly",
