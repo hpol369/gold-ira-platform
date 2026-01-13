@@ -21,6 +21,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: "https://goldiraguide.com/reviews/noble-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/reviews/goldco",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/reviews/birch-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/reviews/american-hartford-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/reviews/advantage-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/reviews/oxford-gold-group",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://goldiraguide.com/reviews/lear-capital",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
             url: "https://goldiraguide.com/compare/gold-ira-vs-401k",
             lastModified: new Date(),
             changeFrequency: "monthly",
