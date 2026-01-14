@@ -9,6 +9,9 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   title: "Gold IRA Guide - Protect Your Retirement",
   description: "Compare the best Gold IRA companies and protect your wealth.",
+  verification: {
+    google: "ieR8rjLZCnl3Cy2YQ_fz9YnSRnPCPdfQA9p6pENdk78",
+  },
 };
 
 export default function RootLayout({
