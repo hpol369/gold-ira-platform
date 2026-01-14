@@ -20,7 +20,7 @@ export function AuthorBio() {
                     {/* Content */}
                     <FadeIn delay={0.2} className="w-full md:w-2/3 space-y-6">
                         <h2 className="text-3xl font-serif font-bold text-primary">
-                            Why I Built Gold IRA Guide
+                            Why I Built Rich Dad Retirement
                         </h2>
                         <div className="space-y-4 text-lg text-text leading-relaxed">
                             <p>

@@ -6,8 +6,8 @@ import Link from "next/link";
 import { ArrowLeft, Clock } from "lucide-react";
 
 export const metadata = {
-    title: "Contact Us - Coming Soon | Gold IRA Guide",
-    description: "Contact the Gold IRA Guide team.",
+    title: "Contact Us - Coming Soon | Rich Dad Retirement",
+    description: "Contact the Rich Dad Retirement team.",
 };
 
 export default function ContactPage() {

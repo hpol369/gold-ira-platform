@@ -12,7 +12,7 @@ export function Footer() {
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="inline-block mb-6">
                             <span className="text-2xl font-serif font-bold text-white tracking-tight">
-                                Gold<span className="text-secondary">IRA</span>Guide
+                                Rich<span className="text-secondary">Dad</span>Retirement
                             </span>
                         </Link>
                         <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -46,14 +46,14 @@ export function Footer() {
                     <div className="col-span-1 md:col-span-1">
                         <h3 className="font-serif text-lg font-semibold text-secondary mb-4">Important Disclosure</h3>
                         <p className="text-xs text-gray-400 leading-relaxed text-balance">
-                            GoldIRAGuide.com is an independent review website. We may receive meaningful compensation from the companies we review and recommend. This compensation may influence the placement and order of companies on our site. We are not financial advisors. All investments involve risk, including the loss of principal.
+                            RichDadRetirement.com is an independent review website. We may receive meaningful compensation from the companies we review and recommend. This compensation may influence the placement and order of companies on our site. We are not financial advisors. All investments involve risk, including the loss of principal.
                         </p>
                     </div>
                 </div>
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-                    <p>© {currentYear} Gold IRA Guide. All rights reserved.</p>
+                    <p>© {currentYear} Rich Dad Retirement. All rights reserved.</p>
                     <div className="flex gap-6">
                         <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>

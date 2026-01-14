@@ -6,8 +6,8 @@ import Link from "next/link";
 import { ArrowLeft, Clock } from "lucide-react";
 
 export const metadata = {
-    title: "About Us - Coming Soon | Gold IRA Guide",
-    description: "Learn more about Gold IRA Guide and our mission.",
+    title: "About Us - Coming Soon | Rich Dad Retirement",
+    description: "Learn more about Rich Dad Retirement and our mission.",
 };
 
 export default function AboutUsPage() {
@@ -23,7 +23,7 @@ export default function AboutUsPage() {
                         Coming Soon
                     </h1>
                     <p className="text-lg text-text-muted max-w-md mx-auto mb-8">
-                        Learn more about Gold IRA Guide and our mission to help you protect your retirement.
+                        Learn more about Rich Dad Retirement and our mission to help you protect your retirement.
                     </p>
                     <Button variant="outline" asChild>
                         <Link href="/">

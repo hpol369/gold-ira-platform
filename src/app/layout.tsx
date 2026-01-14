@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "Gold IRA Guide - Protect Your Retirement",
+  title: "Rich Dad Retirement - Protect Your Retirement with Gold",
   description: "Compare the best Gold IRA companies and protect your wealth.",
   verification: {
     google: "ieR8rjLZCnl3Cy2YQ_fz9YnSRnPCPdfQA9p6pENdk78",

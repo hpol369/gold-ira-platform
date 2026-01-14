@@ -42,10 +42,10 @@ export function Navbar() {
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2 group">
                             <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-primary text-secondary group-hover:bg-primary-dark transition-colors">
-                                <span className="font-serif font-bold text-lg">G</span>
+                                <span className="font-serif font-bold text-lg">R</span>
                             </div>
                             <span className="text-xl font-serif font-bold text-primary tracking-tight">
-                                Gold<span className="text-secondary">IRA</span>Guide
+                                Rich<span className="text-secondary">Dad</span>Retirement
                             </span>
                         </Link>
 

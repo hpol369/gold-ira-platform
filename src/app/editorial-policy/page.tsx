@@ -6,8 +6,8 @@ import Link from "next/link";
 import { ArrowLeft, Clock } from "lucide-react";
 
 export const metadata = {
-    title: "Editorial Policy - Coming Soon | Gold IRA Guide",
-    description: "Editorial policy for Gold IRA Guide.",
+    title: "Editorial Policy - Coming Soon | Rich Dad Retirement",
+    description: "Editorial policy for Rich Dad Retirement.",
 };
 
 export default function EditorialPolicyPage() {

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowLeft, Clock } from "lucide-react";
 
 export const metadata = {
-    title: "Best Gold IRA Companies - Coming Soon | Gold IRA Guide",
+    title: "Best Gold IRA Companies - Coming Soon | Rich Dad Retirement",
     description: "Our comprehensive comparison of the best Gold IRA companies is coming soon.",
 };
 

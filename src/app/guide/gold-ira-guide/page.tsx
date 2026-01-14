@@ -8,7 +8,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Gold IRA Guide 2026: Complete Beginner's Guide to Gold IRAs",
+    title: "Rich Dad Retirement 2026: Complete Beginner's Guide to Gold IRAs",
     description: "The definitive gold IRA guide for 2026. Learn what a gold IRA is, how it works, tax benefits, fees, and how to open one. Updated for current IRS rules.",
 };
 
@@ -38,7 +38,7 @@ export default function GoldIraGuidePage() {
                             Updated for 2026 Tax Rules
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
-                            The Complete Gold IRA Guide for 2026
+                            The Complete Rich Dad Retirement for 2026
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
                             Everything you need to know about protecting your retirement with physical gold—from tax advantages to choosing the right custodian.

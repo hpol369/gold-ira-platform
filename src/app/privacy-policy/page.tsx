@@ -6,8 +6,8 @@ import Link from "next/link";
 import { ArrowLeft, Clock } from "lucide-react";
 
 export const metadata = {
-    title: "Privacy Policy - Coming Soon | Gold IRA Guide",
-    description: "Privacy policy for Gold IRA Guide.",
+    title: "Privacy Policy - Coming Soon | Rich Dad Retirement",
+    description: "Privacy policy for Rich Dad Retirement.",
 };
 
 export default function PrivacyPolicyPage() {

@@ -6,8 +6,8 @@ import Link from "next/link";
 import { ArrowLeft, Clock } from "lucide-react";
 
 export const metadata = {
-    title: "Terms of Service - Coming Soon | Gold IRA Guide",
-    description: "Terms of service for Gold IRA Guide.",
+    title: "Terms of Service - Coming Soon | Rich Dad Retirement",
+    description: "Terms of service for Rich Dad Retirement.",
 };
 
 export default function TermsOfServicePage() {
