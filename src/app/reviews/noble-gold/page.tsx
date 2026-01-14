@@ -20,7 +20,7 @@ const companyData = {
     fees: "$225-$250/year",
     bbbRating: "A+",
     bestFor: "Smaller Accounts ($2k-$50k)",
-    visitUrl: "[NOBLE_GOLD_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "Industry-low $2,000 minimum investment",
         "Transparent, straightforward pricing",

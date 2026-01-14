@@ -20,7 +20,7 @@ const companyData = {
     fees: "$175-$225/year",
     bbbRating: "A+",
     bestFor: "Mid-Range Investors ($25k-$100k)",
-    visitUrl: "[GOLDCO_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "A+ BBB rating with excellent customer reviews",
         "Strong focus on silver alongside gold",

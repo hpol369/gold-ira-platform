@@ -19,7 +19,7 @@ const companyData = {
     fees: "$200-$250/year",
     bbbRating: "A+",
     bestFor: "Conservative Investors",
-    visitUrl: "[BIRCH_GOLD_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "Over 20 years in business (founded 2003)",
         "A+ BBB rating with strong customer reviews",

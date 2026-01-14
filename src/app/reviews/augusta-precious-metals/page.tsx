@@ -20,7 +20,7 @@ const companyData = {
     fees: "$180/year (often waived)",
     bbbRating: "A+",
     bestFor: "High Net Worth ($100k+)",
-    visitUrl: "[AUGUSTA_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "Zero fees for up to 10 years for qualified accounts",
         "1-on-1 education with Harvard-trained economist Devlyn Steele",

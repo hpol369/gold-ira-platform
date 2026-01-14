@@ -25,9 +25,9 @@ export function Footer() {
                         <h3 className="font-serif text-lg font-semibold text-secondary mb-4">Resources</h3>
                         <ul className="space-y-3">
                             <li><Link href="/best-gold-ira-companies" className="text-gray-300 hover:text-white transition-colors text-sm">Best Gold IRA Companies</Link></li>
-                            <li><Link href="/gold-ira-reviews" className="text-gray-300 hover:text-white transition-colors text-sm">Company Reviews</Link></li>
-                            <li><Link href="/gold-price-charts" className="text-gray-300 hover:text-white transition-colors text-sm">Gold Price Charts</Link></li>
-                            <li><Link href="/retirement-calculator" className="text-gray-300 hover:text-white transition-colors text-sm">Retirement Calculator</Link></li>
+                            <li><Link href="/reviews" className="text-gray-300 hover:text-white transition-colors text-sm">Company Reviews</Link></li>
+                            <li><Link href="/guide/gold-ira-guide" className="text-gray-300 hover:text-white transition-colors text-sm">Gold IRA Guide</Link></li>
+                            <li><Link href="/quiz" className="text-gray-300 hover:text-white transition-colors text-sm">Gold IRA Quiz</Link></li>
                         </ul>
                     </div>
 
@@ -55,9 +55,9 @@ export function Footer() {
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
                     <p>© {currentYear} Rich Dad Retirement. All rights reserved.</p>
                     <div className="flex gap-6">
-                        <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-                        <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                        <Link href="/compliance" className="hover:text-white transition-colors">Accessibility</Link>
+                        <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+                        <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link href="/editorial-policy" className="hover:text-white transition-colors">Editorial Policy</Link>
                     </div>
                 </div>
             </Container>

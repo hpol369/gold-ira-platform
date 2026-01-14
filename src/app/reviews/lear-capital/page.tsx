@@ -19,7 +19,7 @@ const companyData = {
     fees: "$225-$280/year",
     bbbRating: "A+",
     bestFor: "Established Brand Seekers",
-    visitUrl: "[LEAR_CAPITAL_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "25+ years in business (founded 1997)",
         "Price lock guarantee protects your purchase",

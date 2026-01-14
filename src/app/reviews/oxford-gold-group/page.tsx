@@ -19,7 +19,7 @@ const companyData = {
     fees: "$200-$275/year",
     bbbRating: "A+",
     bestFor: "Service-Focused Investors",
-    visitUrl: "[OXFORD_GOLD_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "A+ BBB rating with excellent reviews",
         "White-glove customer service",

@@ -19,7 +19,7 @@ const companyData = {
     fees: "$150-$200/year",
     bbbRating: "A+",
     bestFor: "Budget-Conscious Investors",
-    visitUrl: "[ADVANTAGE_GOLD_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "Low $5,000 minimum investment",
         "Competitive fee structure",

@@ -19,7 +19,7 @@ const companyData = {
     fees: "$180-$230/year",
     bbbRating: "A+",
     bestFor: "Price-Conscious Buyers",
-    visitUrl: "[AMERICAN_HARTFORD_AFFILIATE_LINK]",
+    visitUrl: "#",
     pros: [
         "Price match guarantee on all products",
         "Family-owned business with personal touch",

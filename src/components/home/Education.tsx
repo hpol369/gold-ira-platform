@@ -14,13 +14,13 @@ const resources = [
         icon: FileText,
         title: "2026 Tax Rules",
         description: "Updated contribution limits and distribution rules for Precious Metals IRAs.",
-        href: "/tax-rules"
+        href: "/learn/gold-ira-tax-rules"
     },
     {
         icon: Globe,
         title: "Physical vs. Paper Gold",
         description: "Why ETFs might not offer the same protection as physical bullion in a crisis.",
-        href: "/physical-vs-paper"
+        href: "/compare/gold-ira-vs-physical-gold"
     }
 ];
 
