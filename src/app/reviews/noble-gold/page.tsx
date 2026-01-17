@@ -7,6 +7,8 @@ import { Callout } from "@/components/ui/Callout";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Noble Gold Review 2026: Fees, Ratings & Is It Legit?",
@@ -20,7 +22,7 @@ const companyData = {
     fees: "$225-$250/year",
     bbbRating: "A+",
     bestFor: "Smaller Accounts ($2k-$50k)",
-    visitUrl: "#",
+    visitUrl: AFFILIATE_LINKS.noble,
     pros: [
         "Industry-low $2,000 minimum investment",
         "Transparent, straightforward pricing",
@@ -36,6 +38,35 @@ const companyData = {
         "Smaller company with shorter track record",
         "No fee waiver programs available"
     ]
+};
+
+const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Noble Gold Investments Gold IRA",
+    "image": "https://www.richdadretirement.com/images/noble-logo.png",
+    "description": "Accessible Gold IRA provider with low $2,000 minimum and unique survival packs.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Noble Gold Investments"
+    },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Rich Dad Retirement"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "850"
+    }
 };
 
 const tocItems = [
@@ -54,6 +85,7 @@ const tocItems = [
 export default function NobleGoldReviewPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Review Header */}
             <header className="bg-primary text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">

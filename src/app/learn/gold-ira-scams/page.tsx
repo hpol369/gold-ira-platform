@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
 import { AlertTriangle, Shield, Search, Phone, CheckCircle2, ArrowRight, XCircle } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA Scams to Avoid in 2026: Protect Your Retirement",
@@ -35,9 +36,73 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Gold IRA Scams to Avoid in 2026",
+            "description": "Learn how to identify and avoid Gold IRA scams. From home storage schemes to excessive fees, we expose the tactics dishonest dealers use to separate you from your money.",
+            "image": "https://richdadretirement.com/images/scams-guide-cover.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-14",
+            "dateModified": "2026-01-14"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Are Gold IRAs legitimate?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes—Gold IRAs are completely legitimate and authorized under the Taxpayer Relief Act of 1997. The industry includes many reputable companies. The key is avoiding the bad actors while working with established, well-reviewed firms."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I report a Gold IRA scam?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "If you've been victimized, report to: (1) BBB — file a complaint at bbb.org, (2) FTC — report at reportfraud.ftc.gov, (3) Your state attorney general, (4) CFPB — Consumer Financial Protection Bureau. Also leave honest reviews to warn others."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What's a reasonable premium to pay for gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For gold bars: 2-5% over spot. For gold coins (Eagles, Maples): 4-8% over spot. For silver bars: 3-8%. For silver coins: 8-15%. Anything significantly higher should be questioned. Always compare the total cost (premium + fees) between companies."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why do some companies push rare coins?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Simple: higher profit margins. A dealer might make 3-5% selling bullion coins but 30-100%+ selling \"rare\" numismatic coins. The collectible premium is largely subjective, and when you sell, you often get far less than you paid. Stick to standard bullion for IRA purposes."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function GoldIraScamsPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-background-subtle py-16 border-b border-primary/5">
                 <Container>

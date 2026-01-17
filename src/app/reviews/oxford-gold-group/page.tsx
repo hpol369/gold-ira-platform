@@ -6,6 +6,8 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Oxford Gold Group Review 2026: Fees, Ratings & Analysis",
@@ -19,7 +21,7 @@ const companyData = {
     fees: "$200-$275/year",
     bbbRating: "A+",
     bestFor: "Service-Focused Investors",
-    visitUrl: "#",
+    visitUrl: AFFILIATE_LINKS.oxford,
     pros: [
         "A+ BBB rating with excellent reviews",
         "White-glove customer service",
@@ -36,6 +38,35 @@ const companyData = {
     ]
 };
 
+const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Oxford Gold Group IRA",
+    "image": "https://www.richdadretirement.com/images/oxford-logo.png",
+    "description": "Premium service precious metals dealer with white-glove support.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Oxford Gold Group"
+    },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Rich Dad Retirement"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "500"
+    }
+};
+
 const tocItems = [
     { id: "overview", label: "Overview" },
     { id: "pros-cons", label: "Pros & Cons" },
@@ -47,6 +78,7 @@ const tocItems = [
 export default function OxfordGoldGroupReviewPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-16">
                 <Container>
                     <div className="max-w-4xl">

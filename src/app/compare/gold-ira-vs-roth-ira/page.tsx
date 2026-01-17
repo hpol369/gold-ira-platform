@@ -7,6 +7,7 @@ import { Callout } from "@/components/ui/Callout";
 import { Metadata } from "next";
 import { ArrowRight, TrendingUp, ShieldCheck, DollarSign, Clock, Scale } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA vs. Roth IRA: Which is Better for Your Retirement? (2026)",
@@ -37,9 +38,73 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Gold IRA vs. Roth IRA: Which is Better for Your Retirement?",
+            "description": "Comparing Gold IRAs vs Roth IRAs for retirement. Learn the tax differences, contribution limits, and which is right for your financial goals.",
+            "image": "https://richdadretirement.com/images/gold-ira-vs-roth-ira-cover.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-17",
+            "dateModified": "2026-01-17"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can I have both a Gold IRA and a Roth IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! You can contribute to both in the same year, subject to combined contribution limits. The total across all IRAs cannot exceed $7,000 ($8,000 if 50+) in 2026. Many investors split contributions between both types for diversification."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is a Roth Gold IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A Roth Gold IRA combines the tax benefits of a Roth IRA with physical gold holdings. You contribute after-tax dollars, but all growth and withdrawals are tax-free. This is ideal if you expect gold to appreciate significantly—you'll never pay taxes on those gains."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I convert my Roth IRA to a Gold IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! You can transfer funds from a traditional Roth IRA (stocks) to a Roth Gold IRA (physical metals) tax-free. This is a direct transfer between custodians and maintains the Roth tax treatment."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Which has better returns: Gold IRA or Roth IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Historically, stocks (Roth IRA) have provided higher average returns (~10%/year) than gold (~7-8%/year). However, gold provides better protection during crashes—it often rises when stocks fall. The 'best' depends on whether you prioritize growth or protection. Many investors use both."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function GoldIraVsRothIraPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">

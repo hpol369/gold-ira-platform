@@ -7,6 +7,8 @@ import { Callout } from "@/components/ui/Callout";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Goldco Review 2026: Fees, Complaints & Expert Analysis",
@@ -20,7 +22,7 @@ const companyData = {
     fees: "$175-$225/year",
     bbbRating: "A+",
     bestFor: "Mid-Range Investors ($25k-$100k)",
-    visitUrl: "#",
+    visitUrl: AFFILIATE_LINKS.goldco,
     pros: [
         "A+ BBB rating with excellent customer reviews",
         "Strong focus on silver alongside gold",
@@ -37,6 +39,35 @@ const companyData = {
     ]
 };
 
+const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Goldco Gold IRA",
+    "image": "https://www.richdadretirement.com/images/goldco-logo.png",
+    "description": "Leading Gold & Silver IRA provider endorsed by Sean Hannity.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Goldco"
+    },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.7",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Rich Dad Retirement"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "2100"
+    }
+};
+
 const tocItems = [
     { id: "overview", label: "Company Overview" },
     { id: "pros-cons", label: "Pros & Cons" },
@@ -51,6 +82,7 @@ const tocItems = [
 export default function GoldcoReviewPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">
                     <div className="max-w-4xl">

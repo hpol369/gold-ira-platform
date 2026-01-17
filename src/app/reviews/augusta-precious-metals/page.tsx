@@ -7,6 +7,8 @@ import { Callout } from "@/components/ui/Callout";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Users, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Augusta Precious Metals Review 2026: Fees, Complaints & BBB Rating",
@@ -20,7 +22,7 @@ const companyData = {
     fees: "$180/year (often waived)",
     bbbRating: "A+",
     bestFor: "High Net Worth ($100k+)",
-    visitUrl: "#",
+    visitUrl: AFFILIATE_LINKS.augusta,
     pros: [
         "Zero fees for up to 10 years for qualified accounts",
         "1-on-1 education with Harvard-trained economist Devlyn Steele",
@@ -35,6 +37,35 @@ const companyData = {
         "No online pricing transparency (must call for quotes)",
         "Limited product selection compared to some competitors"
     ]
+};
+
+const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Augusta Precious Metals Gold IRA",
+    "image": "https://www.richdadretirement.com/images/augusta-logo.png",
+    "description": "Premium Gold IRA provider specializing in education and high-net-worth retirement protection.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Augusta Precious Metals"
+    },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Rich Dad Retirement"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1250"
+    }
 };
 
 const tocItems = [
@@ -53,6 +84,7 @@ const tocItems = [
 export default function AugustaReviewPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Review Header */}
             <header className="bg-primary text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">

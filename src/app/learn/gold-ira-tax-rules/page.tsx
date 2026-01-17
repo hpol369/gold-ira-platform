@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
 import { FileText, DollarSign, AlertTriangle, Calendar, ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA Tax Rules 2026: Complete Guide to Taxes & Penalties",
@@ -34,9 +35,67 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Gold IRA Tax Rules 2026: Complete Guide to Taxes & Penalties",
+    "description": "Complete guide to Gold IRA tax rules in 2026. Learn about contributions, withdrawals, RMDs, penalties, and how to minimize taxes.",
+    "image": "https://www.richdadretirement.com/images/tax-rules-guide.jpg",
+    "author": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.richdadretirement.com/logo.png"
+        }
+    },
+    "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do I pay taxes when I buy gold in my IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Purchases within your IRA are not taxable events. Taxes only apply when you take distributions (Traditional) or if you made after-tax contributions (Roth)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is a Gold IRA rollover taxable?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No—if done correctly. A direct rollover from a 401(k) or traditional IRA to a Gold IRA is completely tax-free."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How is gold taxed outside of an IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Physical gold held outside an IRA is taxed as a 'collectible' with a maximum long-term capital gains rate of 28%."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I deduct Gold IRA losses?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Generally, no. Losses inside an IRA cannot be deducted because you never paid taxes on the gains in the first place."
+                }
+            }
+        ]
+    }
+};
+
 export default function GoldIraTaxRulesPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-background-subtle py-16 border-b border-primary/5">
                 <Container>

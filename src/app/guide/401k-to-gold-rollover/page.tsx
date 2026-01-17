@@ -6,6 +6,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, Building2, Lock, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "401k to Gold IRA Rollover Guide 2026: Tax-Free Transfer Steps",
@@ -23,9 +24,81 @@ const tocItems = [
     { id: "faq", label: "FAQs" },
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "401(k) to Gold IRA Rollover Guide 2026",
+            "description": "Complete 401k to gold IRA rollover guide for 2026. Learn how to transfer your retirement funds to physical gold tax-free. Step-by-step instructions and rules.",
+            "image": "https://richdadretirement.com/images/rollover-guide-cover.jpg", // Placeholder
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-14",
+            "dateModified": "2026-01-14"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can I rollover my 401(k) while still employed?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It depends on your plan and age. Most plans allow 'in-service distributions' once you reach 59½. Some plans allow them earlier. Check with your HR department or plan administrator. If your current plan doesn't allow it, you can roll over 401(k)s from previous employers at any time."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will I pay taxes on a 401(k) to gold IRA rollover?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No, a direct rollover from a traditional 401(k) to a traditional gold IRA is completely tax-free. You're simply moving retirement funds between qualified accounts. However, if you convert to a Roth gold IRA, you'll owe taxes on the converted amount."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much of my 401(k) should I roll into gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most financial advisors recommend allocating 10-20% of your retirement portfolio to precious metals. This provides meaningful protection without over-concentrating in a single asset class. You can roll over a portion of your 401(k) to gold while leaving the rest in traditional investments."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I roll over a Roth 401(k) to a gold IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! A Roth 401(k) can be rolled over to a Roth gold IRA, and a traditional 401(k) can be rolled over to a traditional gold IRA—both tax-free. You can also convert a traditional 401(k) to a Roth gold IRA, but you'll owe taxes on the conversion."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What's the minimum amount I can roll over?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "There's no IRS minimum, but gold IRA companies have their own minimums. Noble Gold accepts as little as $2,000. Goldco starts at $25,000. Augusta Precious Metals requires $50,000+. Choose a company based on your investment amount."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function RolloverGuidePage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-dark/50" />

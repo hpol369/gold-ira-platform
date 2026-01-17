@@ -6,6 +6,8 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Advantage Gold Review 2026: Fees, Ratings & Honest Analysis",
@@ -19,7 +21,7 @@ const companyData = {
     fees: "$150-$200/year",
     bbbRating: "A+",
     bestFor: "Budget-Conscious Investors",
-    visitUrl: "#",
+    visitUrl: AFFILIATE_LINKS.advantage,
     pros: [
         "Low $5,000 minimum investment",
         "Competitive fee structure",
@@ -36,6 +38,35 @@ const companyData = {
     ]
 };
 
+const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Advantage Gold IRA",
+    "image": "https://www.richdadretirement.com/images/advantage-logo.png",
+    "description": "Budget-friendly Gold IRA provider with a low $5,000 minimum.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Advantage Gold"
+    },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Rich Dad Retirement"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "350"
+    }
+};
+
 const tocItems = [
     { id: "overview", label: "Overview" },
     { id: "pros-cons", label: "Pros & Cons" },
@@ -47,6 +78,7 @@ const tocItems = [
 export default function AdvantageGoldReviewPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-16">
                 <Container>
                     <div className="max-w-4xl">

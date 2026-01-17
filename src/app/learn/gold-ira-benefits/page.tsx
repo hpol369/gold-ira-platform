@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
 import { TrendingUp, ShieldCheck, Lock, DollarSign, Users, ArrowRight, BarChart3, Globe } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "7 Key Benefits of a Gold IRA in 2026 | Why Investors Choose Gold",
@@ -35,9 +36,81 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "7 Key Benefits of a Gold IRA in 2026",
+            "description": "Discover the top benefits of a Gold IRA: tax advantages, inflation protection, portfolio diversification, and more. Learn why savvy investors are adding gold to their retirement.",
+            "image": "https://richdadretirement.com/images/benefits-guide-cover.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-14",
+            "dateModified": "2026-01-14"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What are the main benefits of a Gold IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The main benefits include: inflation protection, true portfolio diversification, tax advantages (same as traditional IRAs), tangible ownership of physical assets, crisis protection during market crashes, wealth transfer to heirs, and alignment with central bank strategies. Gold IRAs give you something most retirement accounts can't—real assets that aren't dependent on the stock market or the dollar's value."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is a Gold IRA a good investment?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A Gold IRA can be an excellent investment for those seeking to protect against inflation, diversify away from stocks, and preserve wealth long-term. However, it's typically recommended as 10-20% of a retirement portfolio—not 100%. Gold is better for preservation than growth, so it complements stocks rather than replacing them entirely."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are the disadvantages of a Gold IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Gold IRAs have some drawbacks: higher fees than regular IRAs (storage and custodian costs), no dividends or interest income, price volatility in the short term, no employer matching (unlike 401(k)s), and lower contribution limits. They also require working with specialized custodians."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does gold protect against inflation?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "When governments print more money (inflation), each dollar becomes worth less. But gold is finite—you can't print more of it. As dollars lose purchasing power, it takes more dollars to buy the same amount of gold. This means gold's price tends to rise with inflation, preserving your real purchasing power over time."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much of my portfolio should be in gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most financial advisors who recommend precious metals suggest 10-20% of your total retirement portfolio. Conservative investors might stick to 5-10%, while those more concerned about economic instability might go up to 25%. The exact amount depends on your risk tolerance, time horizon, and overall financial situation."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function GoldIraBenefitsPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-background-subtle py-16 border-b border-primary/5">
                 <Container>

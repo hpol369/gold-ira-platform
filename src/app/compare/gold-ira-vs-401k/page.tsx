@@ -7,6 +7,7 @@ import { Callout } from "@/components/ui/Callout";
 import { Metadata } from "next";
 import { ArrowRight, TrendingUp, ShieldCheck, AlertTriangle, DollarSign, Lock, BarChart3 } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA vs. 401(k): Which is Better for Retirement? (2026 Guide)",
@@ -38,9 +39,81 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Gold IRA vs. 401(k): Which is Better for Retirement?",
+            "description": "Comparing Gold IRAs vs 401(k)s for retirement. Learn the tax benefits, risks, and why smart investors use both strategies to protect their wealth.",
+            "image": "https://richdadretirement.com/images/gold-ira-vs-401k-cover.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-17",
+            "dateModified": "2026-01-17"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Should I move all my 401(k) to gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most financial experts recommend allocating 10-20% of your retirement portfolio to precious metals—not 100%. Gold is excellent for protection and preservation, but stocks have historically provided higher long-term growth. A balanced approach gives you both growth potential and crash protection."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is a Gold IRA better than a 401(k)?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Neither is universally 'better'—they serve different purposes. A 401(k) is better for accumulation (thanks to employer matching and high contribution limits). A Gold IRA is better for preservation (protecting against crashes and inflation). The ideal strategy uses both."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I roll over my 401(k) to a Gold IRA without penalties?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. A direct rollover from a 401(k) to a Gold IRA is 100% tax-free and penalty-free. The key is using a 'direct rollover' where funds transfer directly between custodians without you ever touching the money."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What happens to my 401(k) if the stock market crashes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Your 401(k) balance falls with the market. In the 2008 financial crisis, the average 401(k) lost 31%. In contrast, gold rose 5% during the same period. This is why having some gold in your retirement portfolio can provide protection when stocks decline."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I have a Gold IRA if I still have a 401(k) at work?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! You can contribute to both a 401(k) and a Gold IRA in the same year (subject to contribution limits). You can also roll over 401(k)s from previous employers into a Gold IRA while maintaining your current employer's 401(k)."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function GoldIraVs401kPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">

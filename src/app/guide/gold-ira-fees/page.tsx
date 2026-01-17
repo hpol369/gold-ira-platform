@@ -6,6 +6,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, AlertTriangle, DollarSign, Calculator, Percent, Building2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees Guide 2026: Complete Fee Breakdown & Comparison",
@@ -22,9 +23,81 @@ const tocItems = [
     { id: "faq", label: "FAQs" },
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Gold IRA Fees: Complete 2026 Guide",
+            "description": "Complete guide to gold IRA fees in 2026. Understand setup fees, storage fees, custodian fees, and dealer markups. Compare fees across top companies.",
+            "image": "https://richdadretirement.com/images/fees-guide-cover.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-14",
+            "dateModified": "2026-01-14"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Are gold IRA fees tax-deductible?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not directly. IRA fees paid from within the account reduce your balance but aren't separately deductible. However, if you pay fees from outside funds, they may be deductible as investment expenses (consult a tax professional, as tax laws change)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why are gold IRA fees higher than regular IRAs?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Physical storage. Regular IRAs hold electronic securities that cost nothing to store. Gold IRAs hold physical metals in secure, insured vaults with armed guards, surveillance, and insurance. These costs are passed on to account holders, typically adding $100-300 per year."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I avoid gold IRA fees entirely?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not entirely—storage and custodian fees are unavoidable for IRA-held metals. However, companies like Augusta Precious Metals waive up to 10 years of fees for larger accounts, effectively eliminating ongoing costs for a decade. You'll still pay premiums on metal purchases."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What's the difference between segregated and commingled storage?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Segregated storage means your specific bars and coins are stored separately, in your own allocated space. Commingled storage means your metals are pooled with others' identical products—you own a specific quantity, but not specific bars. Segregated costs more but ensures you get the exact items you purchased when you take distribution."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do gold IRA fees eat into my returns?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, but typically modestly. On a $50,000 account paying $225/year in fees, that's 0.45% annually—comparable to many low-cost ETFs. The key is whether gold's portfolio protection and potential appreciation outweigh these costs for your situation. Many investors find the inflation protection alone justifies the fees."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function GoldIraFeesGuidePage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-dark/50" />

@@ -5,6 +5,7 @@ import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, DollarSign, Building2, Lock, Scale, Coins } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,9 +24,67 @@ const tocItems = [
     { id: "faq", label: "FAQs" },
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Silver IRA Guide 2026: Complete Guide to Silver IRAs",
+    "description": "The complete silver IRA guide for 2026. Learn how silver IRAs work, tax benefits, IRS-approved silver, and why silver may outperform gold.",
+    "image": "https://www.richdadretirement.com/images/silver-ira-guide.jpg",
+    "author": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.richdadretirement.com/logo.png"
+        }
+    },
+    "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Can I hold both gold and silver in the same IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Most precious metals IRAs hold a combination of gold and silver. This is the most common approach."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the minimum investment for a silver IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minimums vary. Noble Gold accepts as little as $2,000 for silver IRAs, making it very accessible."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is silver better than gold for an IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Neither is universally better. Silver offers higher growth potential due to volatility and industrial demand, while gold provides more stability."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I rollover my 401(k) into a silver IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! You can roll over funds from a 401(k), 403(b), or traditional IRA into a silver IRA tax-free and penalty-free."
+                }
+            }
+        ]
+    }
+};
+
 export default function SilverIraGuidePage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-dark/50" />

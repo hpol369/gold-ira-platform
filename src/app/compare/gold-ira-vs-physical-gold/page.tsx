@@ -7,6 +7,7 @@ import { Callout } from "@/components/ui/Callout";
 import { Metadata } from "next";
 import { ArrowRight, ShieldCheck, AlertTriangle, DollarSign, Lock, Home, Building2 } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA vs. Physical Gold: Which is Better? (2026 Comparison)",
@@ -37,9 +38,73 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Gold IRA vs. Physical Gold: Which is Better for Your Investment?",
+            "description": "Comparing Gold IRAs vs buying physical gold directly. Learn the tax advantages, storage considerations, and which method is right for your situation.",
+            "image": "https://richdadretirement.com/images/gold-ira-vs-physical-gold-cover.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-17",
+            "dateModified": "2026-01-17"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can I keep my Gold IRA gold at home?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. The IRS requires Gold IRA metals to be stored at an approved depository. 'Home storage Gold IRA' schemes are risky and can result in the IRS treating your entire IRA as a distribution—triggering immediate taxes plus a 10% penalty if you're under 59½. If you want gold at home, buy it outside of an IRA."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is physical gold a good investment?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Gold is excellent for wealth preservation and inflation protection, but not designed for aggressive growth. It's best used as a portfolio diversifier (10-20% allocation). Gold tends to hold value during crashes when stocks fall—that's its main appeal. Whether in an IRA or physical form, the underlying value is the same."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do taxes compare between Gold IRA and physical gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Physical gold held outside an IRA is taxed as a collectible—28% max on long-term gains (or ordinary income for short-term). A Roth Gold IRA offers tax-free withdrawals. A Traditional Gold IRA defers taxes until withdrawal. For long-term holdings, a Gold IRA typically results in lower overall taxes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What's the best way to buy physical gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Buy from reputable dealers with transparent pricing. Stick to well-known coins (American Gold Eagles, Canadian Maple Leafs) or bars from recognized mints. Avoid eBay and unverified sellers. Many Gold IRA companies also sell physical gold for direct ownership—they're vetted and reliable."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function GoldIraVsPhysicalGoldPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">

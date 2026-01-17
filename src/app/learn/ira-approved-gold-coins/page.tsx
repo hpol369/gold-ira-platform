@@ -7,6 +7,7 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
 import { Coins, CheckCircle2, XCircle, ArrowRight, Shield, Scale } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "IRA-Approved Gold Coins & Bars 2026: Complete List & Guide",
@@ -34,9 +35,73 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "IRA-Approved Gold Coins & Bars 2026: Complete List & Guide",
+            "description": "Complete list of IRS-approved gold coins and bars for your Gold IRA in 2026. Learn purity requirements, which products to buy, and what to avoid.",
+            "image": "https://richdadretirement.com/images/coins-guide-cover.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://richdadretirement.com/logo.png"
+                }
+            },
+            "datePublished": "2026-01-14",
+            "dateModified": "2026-01-14"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can I put my existing gold coins in an IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. You cannot contribute physical gold you already own to an IRA. IRA purchases must go through your custodian using IRA funds. If you want to add personal gold to your retirement, you'd need to sell it, contribute the cash (subject to limits), then repurchase gold through the IRA."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why are Krugerrands not allowed?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "South African Krugerrands are only 91.67% gold (22 karat)—the same as American Eagles. However, Krugerrands don't have US legal tender status and weren't specifically approved by Congress like American Eagles were. It's a regulatory technicality, not a quality issue."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Are proof coins allowed in an IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Some proof versions of approved coins (like Proof American Gold Eagles) are allowed. However, proof coins carry significant premiums over bullion versions. Unless you specifically want them, standard bullion coins offer better value for an IRA."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What happens if I buy non-approved gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Buying non-approved products is considered a \"prohibited transaction\" that can disqualify your entire IRA. This would make the full account value immediately taxable, plus a 10% penalty if you're under 59½. Always verify products are IRS-approved before purchasing."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function IraApprovedGoldCoinsPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-background-subtle py-16 border-b border-primary/5">
                 <Container>

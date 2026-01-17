@@ -5,6 +5,7 @@ import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, DollarSign, Building2, Lock, Scale, Clock, FileText } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -25,9 +26,75 @@ const tocItems = [
     { id: "faq", label: "FAQs" },
 ];
 
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Rich Dad Retirement 2026: Complete Beginner's Guide to Gold IRAs",
+    "description": "The definitive gold IRA guide for 2026. Learn what a gold IRA is, how it works, tax benefits, fees, and how to open one.",
+    "image": "https://www.richdadretirement.com/images/gold-ira-guide.jpg",
+    "author": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.richdadretirement.com/logo.png"
+        }
+    },
+    "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Can I physically hold the gold in my IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, IRS rules require precious metals in an IRA to be stored at an approved depository. You can only take physical possession when you take a distribution."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the minimum investment for a gold IRA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Minimums vary by company. Noble Gold accepts investments as low as $2,000, while Augusta Precious Metals usually requires $50,000+."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I rollover my 401(k) to a gold IRA without penalties?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! You can rollover funds from a 401(k), 403(b), TSP, or traditional IRA into a gold IRA completely tax-free and penalty-free using a direct rollover."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is a gold IRA a good investment in 2026?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gold IRAs can be an excellent choice for investors seeking to protect against inflation, economic uncertainty, and stock market volatility. Most advisors recommend 10-20% allocation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are gold IRAs safe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gold IRAs are safe when you work with reputable companies and IRS-approved depositories. Your metals are stored in high-security vaults, fully insured against theft and damage."
+                }
+            }
+        ]
+    }
+};
+
 export default function GoldIraGuidePage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-dark/50" />

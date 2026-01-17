@@ -6,6 +6,8 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Lear Capital Review 2026: Fees, Complaints & Full Analysis",
@@ -19,7 +21,7 @@ const companyData = {
     fees: "$225-$280/year",
     bbbRating: "A+",
     bestFor: "Established Brand Seekers",
-    visitUrl: "#",
+    visitUrl: AFFILIATE_LINKS.lear,
     pros: [
         "25+ years in business (founded 1997)",
         "Price lock guarantee protects your purchase",
@@ -36,6 +38,35 @@ const companyData = {
     ]
 };
 
+const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Lear Capital Gold IRA",
+    "image": "https://www.richdadretirement.com/images/lear-logo.png",
+    "description": "Established precious metals dealer with 25+ years experience.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Lear Capital"
+    },
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.4",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Rich Dad Retirement"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "400"
+    }
+};
+
 const tocItems = [
     { id: "overview", label: "Overview" },
     { id: "pros-cons", label: "Pros & Cons" },
@@ -47,6 +78,7 @@ const tocItems = [
 export default function LearCapitalReviewPage() {
     return (
         <main className="min-h-screen bg-background pb-24">
+            <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-16">
                 <Container>
                     <div className="max-w-4xl">
