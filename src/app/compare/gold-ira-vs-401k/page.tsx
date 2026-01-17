@@ -140,7 +140,10 @@ export default function GoldIraVs401kPage() {
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
 
                         <p className="lead">
-                            The debate between <strong>Gold IRA vs. 401(k)</strong> isn&apos;t about which is &quot;better&quot;—it&apos;s about understanding how each tool serves a different purpose in protecting and growing your retirement wealth.
+                            Here&apos;s the question I get asked constantly: <em>&quot;My 401(k) is doing fine—why would I bother with gold?&quot;</em>
+                        </p>
+                        <p>
+                            Fair question. Your 401(k) probably <em>is</em> doing fine. Right now. In a bull market. The real question is: what happens when it isn&apos;t? Because here&apos;s what most people don&apos;t think about until it&apos;s too late—your 401(k) is 100% dependent on the stock market. When it crashes, your retirement crashes with it. Gold doesn&apos;t work that way.
                         </p>
 
                         {/* Quick Verdict */}
@@ -172,7 +175,7 @@ export default function GoldIraVs401kPage() {
                         <section id="what-is-401k" className="scroll-mt-32">
                             <h2>What is a 401(k)?</h2>
                             <p>
-                                A <strong>401(k)</strong> is an employer-sponsored retirement savings plan that allows you to save a portion of your paycheck before taxes are taken out. It&apos;s named after the section of the tax code that created it in 1978.
+                                You probably already know this one. It&apos;s that thing your employer offers where they take money out of your paycheck before taxes, and if you&apos;re lucky, they match some of your contributions. Named after some obscure tax code section, which tells you everything you need to know about how exciting it is.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">

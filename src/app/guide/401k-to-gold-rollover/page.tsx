@@ -21,6 +21,7 @@ const tocItems = [
     { id: "tax-rules", label: "Tax Rules & Penalties" },
     { id: "timeline", label: "Timeline & Process" },
     { id: "mistakes", label: "Common Mistakes" },
+    { id: "other-accounts", label: "403(b) & TSP Rollovers" },
     { id: "faq", label: "FAQs" },
 ];
 
@@ -513,6 +514,46 @@ export default function RolloverGuidePage() {
                                     </div>
                                 </div>
                             </div>
+                        </section>
+
+                        {/* 403(b) and TSP Section */}
+                        <section id="other-accounts" className="scroll-mt-32">
+                            <h2>403(b) and TSP Rollovers to Gold</h2>
+                            <p>
+                                Not everyone has a 401(k). If you work for a school, hospital, nonprofit, or the federal government, you might have a 403(b) or Thrift Savings Plan (TSP) instead. Good news: the rollover process is essentially the same.
+                            </p>
+
+                            <h3>403(b) to Gold IRA Rollover</h3>
+                            <p>
+                                A 403(b) is the nonprofit and education sector&apos;s version of the 401(k). Teachers, nurses, university employees, and nonprofit workers typically have these accounts. Rolling over a 403(b) to a Gold IRA works exactly like a 401(k) rollover:
+                            </p>
+                            <ul>
+                                <li>Direct rollovers are tax-free</li>
+                                <li>You need to check if your plan allows in-service distributions (if still employed)</li>
+                                <li>Accounts from previous employers can be rolled over anytime</li>
+                                <li>Same 60-day rule applies for indirect rollovers</li>
+                            </ul>
+                            <p>
+                                The only difference: 403(b) plans sometimes have unique provisions or annuity components that can complicate the process. Your Gold IRA company will help navigate these.
+                            </p>
+
+                            <h3>TSP to Gold IRA Rollover (Federal Employees)</h3>
+                            <p>
+                                If you work for the federal government or military, your retirement savings are in the Thrift Savings Plan (TSP). The TSP is actually one of the best retirement plans available—ultra-low fees and solid investment options.
+                            </p>
+                            <p>
+                                That said, you can still roll TSP funds into a Gold IRA if you want physical precious metals in your portfolio:
+                            </p>
+                            <ul>
+                                <li><strong>Active employees:</strong> You can do a partial rollover of TSP funds to a Gold IRA while still working (after age 59½)</li>
+                                <li><strong>Separated employees:</strong> Once you leave federal service, you can roll over your entire TSP balance</li>
+                                <li><strong>Tax treatment:</strong> Traditional TSP to Traditional Gold IRA = tax-free. Traditional TSP to Roth Gold IRA = taxable conversion.</li>
+                                <li><strong>Process:</strong> Request a TSP-70 form (for age-based withdrawal) or TSP-99 (for separation). Your Gold IRA company will guide you through it.</li>
+                            </ul>
+
+                            <Callout type="tip" title="TSP Tip">
+                                Many federal employees keep some money in the TSP (for the ultra-low fees on the G, F, C, S, and I funds) while rolling a portion into a Gold IRA for diversification. You don&apos;t have to move everything.
+                            </Callout>
                         </section>
 
                         {/* FAQ Section */}

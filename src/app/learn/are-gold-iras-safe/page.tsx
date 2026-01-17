@@ -122,16 +122,23 @@ export default function AreGoldIrasSafePage() {
 
                         <KeyTakeaways items={takeaways} />
 
+                        <p className="lead">
+                            Let&apos;s cut through the noise. People ask &quot;are Gold IRAs safe?&quot; but what they&apos;re really asking is one of three things: Is this legal? Will my gold actually be there? Or: am I going to get scammed?
+                        </p>
+                        <p>
+                            All fair questions. Let&apos;s answer each one directly.
+                        </p>
+
                         {/* Legitimacy */}
                         <section id="legitimacy" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
                                 <div className="p-3 bg-green-50 rounded-lg text-green-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Is It Legitimate?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Is It Even Legal?</h2>
                             </div>
                             <p>
-                                Yes. The ability to hold precious metals in an IRA was codified by the <strong>Taxpayer Relief Act of 1997</strong>. It is a federally recognized retirement strategy monitored by the IRS.
+                                100% yes. Congress specifically authorized precious metals in IRAs back in 1997 with the Taxpayer Relief Act. This isn&apos;t some loophole or gray area. It&apos;s a legitimate, IRS-recognized retirement strategy that millions of Americans use.
                             </p>
                         </section>
 
@@ -141,10 +148,10 @@ export default function AreGoldIrasSafePage() {
                                 <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
                                     <Building className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The "No-Default" Safety</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Gold Can&apos;t Go to Zero</h2>
                             </div>
                             <p>
-                                Stocks can go to zero. Bonds can default. Gold cannot go bankrupt. It is an asset that is not someone else's liability. This is the ultimate form of financial safety.
+                                Here&apos;s something most people don&apos;t think about: every stock you own is a claim on a company. If that company goes bankrupt, your stock is worth zero. Happened to Enron. Happened to Lehman Brothers. Could happen to any company. Gold doesn&apos;t work that way. It&apos;s not a claim on anything. It just <em>is</em>. There&apos;s no CEO who can run it into the ground, no board making bad decisions. Gold has been valuable for 5,000 years and it&apos;ll be valuable 5,000 years from now.
                             </p>
                         </section>
 

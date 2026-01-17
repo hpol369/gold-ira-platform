@@ -122,7 +122,10 @@ export default function GoldIraForSeniorsPage() {
                         <KeyTakeaways items={takeaways} />
 
                         <p className="lead">
-                            For seniors, the investment goal shifts from <strong>accumulation</strong> (growing wealth) to <strong>preservation</strong> (keeping wealth). You don't have decades to recover from a 40% market crash. This makes gold—a stable, non-correlated asset—an essential tool for the senior investor.
+                            Here&apos;s the uncomfortable truth nobody wants to tell you: if you&apos;re 65 and the market drops 40% tomorrow, you probably won&apos;t live long enough to see it recover. Harsh? Yes. True? Also yes.
+                        </p>
+                        <p>
+                            That&apos;s why the investment game changes completely when you hit retirement age. You&apos;ve spent decades building your nest egg. Now the goal isn&apos;t to grow it—it&apos;s to <em>not lose it</em>. And that&apos;s exactly what gold is for.
                         </p>
 
                         {/* Why Seniors */}

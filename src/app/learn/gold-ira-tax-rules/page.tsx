@@ -128,10 +128,10 @@ export default function GoldIraTaxRulesPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Understanding <strong>Gold IRA tax rules</strong> can save you thousands of dollars and help you avoid costly penalties. Gold IRAs follow the same basic tax rules as regular IRAs—but there are some unique considerations when physical metals are involved.
+                                Look, taxes aren&apos;t exciting. But if you&apos;re putting gold in an IRA and you don&apos;t understand the rules? You&apos;re going to get burned. I&apos;ve seen people accidentally trigger five-figure tax bills because they didn&apos;t know what they were doing.
                             </p>
                             <p>
-                                The good news: Gold IRAs offer the same powerful tax advantages as traditional retirement accounts. The key is knowing how to maximize those benefits and avoid the traps that catch unprepared investors.
+                                The basics are simple: Gold IRAs follow the same tax rules as regular IRAs. Same contribution limits. Same withdrawal rules. Same penalties for screwing up. But there are a few gold-specific gotchas you need to know about—especially around storage and distributions.
                             </p>
                         </section>
 
@@ -144,7 +144,7 @@ export default function GoldIraTaxRulesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Contribution Rules & Limits</h2>
                             </div>
                             <p>
-                                Gold IRA contribution limits are identical to regular IRA limits. Here are the 2026 numbers:
+                                Nothing special here—Gold IRAs have the exact same contribution limits as any other IRA. For 2026:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
@@ -177,12 +177,12 @@ export default function GoldIraTaxRulesPage() {
                             </div>
 
                             <p>
-                                <strong>Important:</strong> These limits apply across ALL your IRAs combined. If you contribute $4,000 to a regular IRA and $3,000 to a Gold IRA, you&apos;ve hit the $7,000 limit.
+                                <strong>One thing people mess up:</strong> These limits apply across ALL your IRAs. Got a regular IRA and a Gold IRA? The total contributions to both can&apos;t exceed $7,000. Put $5,000 in your regular IRA, and you can only put $2,000 in your Gold IRA that year.
                             </p>
 
-                            <h3>Rollover Contributions: No Limits</h3>
+                            <h3>But Rollovers? No Limit.</h3>
                             <p>
-                                Unlike annual contributions, rollovers from 401(k)s, 403(b)s, or other IRAs have <strong>no dollar limit</strong>. You can roll over $500,000 or more in a single transaction—tax-free. See our <Link href="/guide/401k-to-gold-rollover">401(k) rollover guide</Link> for details.
+                                Here&apos;s where it gets interesting. That $7,000 limit only applies to new contributions. Rollovers from 401(k)s, 403(b)s, or other IRAs? No limit whatsoever. You could roll over $500,000 in one transaction if you wanted. Completely tax-free. This is how most people fund their Gold IRAs—they move existing retirement money, not new savings. Check out our <Link href="/guide/401k-to-gold-rollover">401(k) rollover guide</Link> for the how-to.
                             </p>
                         </section>
 
@@ -195,7 +195,7 @@ export default function GoldIraTaxRulesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Traditional vs. Roth Gold IRA Taxes</h2>
                             </div>
                             <p>
-                                The tax treatment differs dramatically between Traditional and Roth Gold IRAs:
+                                This is a big one. Traditional and Roth Gold IRAs are taxed completely differently, and picking the wrong one can cost you thousands over the long run.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">

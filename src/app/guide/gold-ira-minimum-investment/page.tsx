@@ -121,7 +121,10 @@ export default function GoldIraMinimumInvestmentPage() {
                         <KeyTakeaways items={takeaways} />
 
                         <p className="lead">
-                            One of the first questions investors ask is: <strong>"How much money do I need?"</strong> Unlike opening a Robinhood account with $5, opening a Gold IRA involves physical storage, security, and IRS compliance, which creates a higher barrier to entry.
+                            <em>&quot;Can I start a Gold IRA with $1,000?&quot;</em> I get this question all the time. And the honest answer is: technically yes, but you&apos;d be shooting yourself in the foot.
+                        </p>
+                        <p>
+                            Here&apos;s the thing—unlike opening a stock brokerage account where you can toss in $50 and buy fractional shares, Gold IRAs have real costs. Physical metal needs to be stored. Insured. Audited. All of that costs money. And if your account is too small, those fees will eat you alive.
                         </p>
 
                         {/* Typical Minimums */}
