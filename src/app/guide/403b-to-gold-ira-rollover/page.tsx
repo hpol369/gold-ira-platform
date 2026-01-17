@@ -112,11 +112,14 @@ export default function TsaRolloverPage() {
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary prose-p:text-text prose-a:text-secondary max-w-none">
 
                         <p className="lead text-xl text-text-muted">
-                            Teachers and nurses work hard for their retirement. But many 403(b) plans are filled with high-fee insurance products. A <strong>403(b) to Gold IRA rollover</strong> puts you back in control.
+                            If you&apos;re a teacher, nurse, or non-profit worker, you&apos;ve probably noticed something about your 403(b): <strong>the options are terrible</strong>.
                         </p>
 
                         <p>
-                            [Content Placeholder: Introduction to the unique challenges of 403(b) plans, often limited to high-fee annuities.]
+                            Unlike 401(k)s that offer low-cost index funds, most 403(b) plans are stuffed with high-fee annuity products from insurance companies. You&apos;re paying 1-2% in annual fees while your school district administrator has no idea what you&apos;re even invested in.
+                        </p>
+                        <p>
+                            A 403(b) to Gold IRA rollover lets you escape that trap. You move your money into an account <em>you</em> control, invested in <em>real</em> assets—not some insurance company&apos;s variable annuity product.
                         </p>
 
                         <Callout type="warning" title="Watch Out for Surrender Charges">
@@ -127,7 +130,13 @@ export default function TsaRolloverPage() {
                         <section id="what-is-403b-rollover" className="scroll-mt-32">
                             <h2>What is a 403(b) Rollover?</h2>
                             <p>
-                                [Content Placeholder: Moving funds from a 403(b)/TSA to a Self-Directed IRA. Explaining that the tax rules are the same as a 401(k).]
+                                A 403(b)—sometimes called a TSA (Tax-Sheltered Annuity)—is the non-profit world&apos;s version of a 401(k). It&apos;s offered by public schools, hospitals, churches, and charitable organizations.
+                            </p>
+                            <p>
+                                A rollover means moving your 403(b) money into an IRA. From a tax perspective, it works exactly like a 401(k) rollover—no taxes or penalties if you do a direct transfer. The money goes from one retirement account to another, tax-free.
+                            </p>
+                            <p>
+                                The big difference? Once the money is in a Self-Directed IRA, you can invest in things your 403(b) never allowed—including physical gold and silver.
                             </p>
                         </section>
 
@@ -135,15 +144,58 @@ export default function TsaRolloverPage() {
                         <section id="eligibility" className="scroll-mt-32">
                             <h2>Eligibility Rules</h2>
                             <p>
-                                [Content Placeholder: 1. Left job (Eligible). 2. Age 59.5+ (Eligible). 3. Under 59.5 & Employed (Usually restricted, check plan).]
+                                Your ability to roll over depends on your situation:
                             </p>
+                            <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
+                                <div className="p-6 rounded-xl bg-green-50 border border-green-200">
+                                    <h4 className="font-bold text-green-800 mb-3 flex items-center gap-2">
+                                        <CheckCircle2 className="w-5 h-5" />
+                                        You Can Roll Over If:
+                                    </h4>
+                                    <ul className="space-y-2 text-green-700 text-sm">
+                                        <li>• You&apos;ve left that employer (retired, resigned, laid off)</li>
+                                        <li>• You&apos;re still employed but age 59½ or older</li>
+                                        <li>• You have funds from a <em>previous</em> employer&apos;s 403(b)</li>
+                                    </ul>
+                                </div>
+                                <div className="p-6 rounded-xl bg-red-50 border border-red-200">
+                                    <h4 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+                                        <AlertTriangle className="w-5 h-5" />
+                                        You Probably Can&apos;t If:
+                                    </h4>
+                                    <ul className="space-y-2 text-red-700 text-sm">
+                                        <li>• You&apos;re under 59½ AND still working for that employer</li>
+                                        <li>• Your plan has strict &quot;no in-service withdrawal&quot; rules</li>
+                                    </ul>
+                                    <p className="text-red-600 text-xs mt-3">Check your plan document or ask HR—rules vary by employer.</p>
+                                </div>
+                            </div>
                         </section>
 
                         {/* Section 3: The Annuity Trap */}
                         <section id="annuity-trap" className="scroll-mt-32">
                             <h2>Warning: The Annuity Trap</h2>
                             <p>
-                                [Content Placeholder: Deep dive into how insurance companies lock teachers into contracts. Why Gold IRAs offer more freedom and lower long-term costs.]
+                                Here&apos;s the dirty secret of 403(b) plans: unlike 401(k)s, they&apos;re often run by insurance companies selling annuity contracts. And these contracts come with strings attached.
+                            </p>
+                            <p>
+                                <strong>Surrender charges</strong> are fees the insurance company charges if you move your money out before a certain period—typically 5-10 years. They can be as high as 7-8% of your balance in the early years.
+                            </p>
+                            <div className="not-prose my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                                <p className="font-bold text-amber-800 mb-3">Typical Surrender Charge Schedule:</p>
+                                <ul className="space-y-1 text-amber-700 text-sm">
+                                    <li>Year 1: 7% penalty</li>
+                                    <li>Year 2: 6% penalty</li>
+                                    <li>Year 3: 5% penalty</li>
+                                    <li>Year 4: 4% penalty</li>
+                                    <li>Year 5: 3% penalty</li>
+                                    <li>Year 6: 2% penalty</li>
+                                    <li>Year 7+: 0% (free to leave)</li>
+                                </ul>
+                                <p className="mt-4 text-amber-600 text-sm"><strong>Before rolling over:</strong> Call your 403(b) provider and ask &quot;What are my surrender charges if I move my money?&quot;</p>
+                            </div>
+                            <p>
+                                The good news? If your surrender period has passed, you can roll over penalty-free. And even if you&apos;re still in the surrender period, sometimes the long-term savings from lower fees in a Gold IRA outweigh the one-time surrender charge.
                             </p>
                         </section>
 
@@ -151,24 +203,114 @@ export default function TsaRolloverPage() {
                         <section id="step-by-step" className="scroll-mt-32">
                             <h2>Step-by-Step Process</h2>
                             <p>
-                                [Content Placeholder: Standard rollover steps 1-5. Specific emphasis on contacting the "Vendor" (insurance co) vs the "School District".]
+                                Rolling over a 403(b) is slightly more complicated than a 401(k) because you&apos;re often dealing with an insurance company, not just an HR department. Here&apos;s how to do it:
                             </p>
+                            <div className="not-prose my-8 space-y-4">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
+                                    <div>
+                                        <h4 className="font-bold text-primary">Open a Self-Directed Gold IRA</h4>
+                                        <p className="text-sm text-text-muted mt-1">Choose a Gold IRA company. They&apos;ll help you open an account with a custodian who can hold physical metals.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
+                                    <div>
+                                        <h4 className="font-bold text-primary">Identify Your 403(b) Vendor</h4>
+                                        <p className="text-sm text-text-muted mt-1">This is usually an insurance company (not your school district). Check your statements for names like VALIC, TIAA, AXA, or Lincoln Financial.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
+                                    <div>
+                                        <h4 className="font-bold text-primary">Request a Direct Rollover Form</h4>
+                                        <p className="text-sm text-text-muted mt-1">Call your vendor and ask for their &quot;rollover request form.&quot; Specify you want a <strong>direct transfer</strong> to avoid withholding.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
+                                    <div>
+                                        <h4 className="font-bold text-primary">Complete the Paperwork</h4>
+                                        <p className="text-sm text-text-muted mt-1">Fill out the form with your new Gold IRA custodian&apos;s information. Your Gold IRA company can help you with this.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
+                                    <div>
+                                        <h4 className="font-bold text-primary">Wait for Transfer & Purchase Gold</h4>
+                                        <p className="text-sm text-text-muted mt-1">Funds typically arrive in 2-4 weeks (insurance companies are slower than 401k administrators). Then select your gold.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
 
                         {/* Section 5: Tax Benefits */}
                         <section id="tax-benefits" className="scroll-mt-32">
                             <h2>Tax Benefits</h2>
                             <p>
-                                [Content Placeholder: Tax-Deferred growth. No immediate tax bill if done correctly.]
+                                A direct rollover from a 403(b) to a Traditional Gold IRA is <strong>completely tax-free</strong>. No taxes owed. No penalties. The money simply moves from one tax-advantaged account to another.
                             </p>
+                            <p>
+                                Once in your Gold IRA, your investments grow tax-deferred—just like they did in your 403(b). You only pay taxes when you take distributions in retirement.
+                            </p>
+                            <Callout type="tip" title="Roth 403(b) to Roth Gold IRA">
+                                If you have a Roth 403(b), you can roll it into a Roth Gold IRA. Your gold then grows tax-free, and qualified withdrawals are also tax-free. This is one of the most powerful retirement strategies available.
+                            </Callout>
                         </section>
 
                         {/* Section 6: Mistakes */}
                         <section id="mistakes" className="scroll-mt-32">
                             <h2>Common Mistakes</h2>
-                            <p>
-                                [Content Placeholder: Trying to move money while under 59.5 without checking rules. Ignoring surrender charges. Indirect rollovers.]
-                            </p>
+                            <div className="not-prose my-8 space-y-4">
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                    <div>
+                                        <h4 className="font-bold text-red-700">Ignoring surrender charges</h4>
+                                        <p className="text-sm text-red-600 mt-1">Call your vendor first. A surprise 7% surrender fee on $100,000 is $7,000 out of your pocket.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                    <div>
+                                        <h4 className="font-bold text-red-700">Taking an indirect rollover</h4>
+                                        <p className="text-sm text-red-600 mt-1">If they mail you a check, 20% is withheld for taxes. Always request a direct transfer to your new IRA.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                    <div>
+                                        <h4 className="font-bold text-red-700">Contacting HR instead of the vendor</h4>
+                                        <p className="text-sm text-red-600 mt-1">Your school district&apos;s HR usually can&apos;t help with rollovers. You need to contact the insurance company directly.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                    <div>
+                                        <h4 className="font-bold text-red-700">Not checking in-service rules</h4>
+                                        <p className="text-sm text-red-600 mt-1">If you&apos;re under 59½ and still employed, verify your plan allows rollovers before starting the process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* FAQ */}
+                        <section id="faq" className="scroll-mt-32">
+                            <h2>403(b) Rollover FAQs</h2>
+                            <div className="space-y-4 not-prose">
+                                {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
+                                    <details key={index} className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                            <h4 className="text-lg font-bold">{faq.name}</h4>
+                                            <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                                <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
+                                            </span>
+                                        </summary>
+                                        <p className="mt-4 leading-relaxed text-gray-700">
+                                            {faq.acceptedAnswer.text}
+                                        </p>
+                                    </details>
+                                ))}
+                            </div>
                         </section>
 
                         {/* Final CTA */}
