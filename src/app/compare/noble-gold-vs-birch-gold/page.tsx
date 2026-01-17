@@ -145,7 +145,13 @@ export default function NobleVsBirchPage() {
                         <section id="noble-overview" className="scroll-mt-32">
                             <h2>Noble Gold Investments Overview</h2>
                             <p>
-                                [Content Placeholder: Discuss CEO Collin Plume, their focus on education, and the unique Texas storage facility option.]
+                                Noble Gold has quietly become one of the most respected mid-tier Gold IRA companies. Founded by Collin Plume, they&apos;ve built a reputation on excellent customer service and unique product offerings.
+                            </p>
+                            <p>
+                                What sets them apart? <strong>Texas storage</strong>. Noble Gold is one of the few companies offering storage at International Depository Services in Texas—a state known for being extremely gold-friendly. For preppers and those who distrust East Coast financial centers, this is huge.
+                            </p>
+                            <p>
+                                They also offer &quot;Royal Survival Packs&quot;—curated collections of gold and silver specifically designed for emergency situations. It&apos;s a niche product, but for the right investor, it&apos;s perfect.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/noble-gold">Read Full Review</Link>
@@ -156,7 +162,13 @@ export default function NobleVsBirchPage() {
                         <section id="birch-overview" className="scroll-mt-32">
                             <h2>Birch Gold Group Overview</h2>
                             <p>
-                                [Content Placeholder: Discuss their longevity (since 2003), their media endorsements (Ben Shapiro, Steve Bannon), and education focus.]
+                                Birch Gold is the elder statesman of Gold IRAs. They&apos;ve been around since 2003—an eternity in this industry—and have built a solid reputation through steady, consistent service.
+                            </p>
+                            <p>
+                                You might know them from their celebrity endorsements. Ben Shapiro talks about them constantly on his podcast. That conservative media presence has built them a loyal following.
+                            </p>
+                            <p>
+                                Their biggest advantage is the $10,000 minimum—one of the lowest in the industry. If you&apos;re just getting started and don&apos;t have a huge 401(k) to roll over, Birch will take you seriously when bigger companies won&apos;t.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/birch-gold">Read Full Review</Link>
@@ -167,7 +179,27 @@ export default function NobleVsBirchPage() {
                         <section id="fees" className="scroll-mt-32">
                             <h2>Fees & Minimums</h2>
                             <p>
-                                [Content Placeholder: Breakdown of Noble's simple flat fees vs Birch's scaled model.]
+                                Both companies are reasonably priced for the mid-tier market:
+                            </p>
+                            <div className="not-prose my-8 overflow-x-auto">
+                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th className="p-4 border-b font-bold text-primary">Fee Type</th>
+                                            <th className="p-4 border-b font-bold text-primary">Noble Gold</th>
+                                            <th className="p-4 border-b font-bold text-primary">Birch Gold</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                        <tr><td className="p-4 font-medium">Minimum Investment</td><td className="p-4">$20,000</td><td className="p-4">$10,000</td></tr>
+                                        <tr><td className="p-4 font-medium">Setup Fee</td><td className="p-4">$80 (one-time)</td><td className="p-4">$50</td></tr>
+                                        <tr><td className="p-4 font-medium">Annual Storage</td><td className="p-4">$80 flat (Texas)</td><td className="p-4">$100+</td></tr>
+                                        <tr><td className="p-4 font-medium">Admin Fee</td><td className="p-4">Included</td><td className="p-4">$80-$100/yr</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>
+                                <strong>The math:</strong> Noble Gold&apos;s flat fee structure usually works out cheaper for accounts over $25k. But if you have exactly $10k and can&apos;t meet Noble&apos;s minimum, Birch is your only option here.
                             </p>
                         </section>
 

@@ -136,7 +136,13 @@ export default function AhgVsOxfordPage() {
                         <section id="ahg-overview" className="scroll-mt-32">
                             <h2>American Hartford Gold Overview</h2>
                             <p>
-                                [Content Placeholder: Discuss family-owned nature, Bill O'Reilly endorsement, and massive focus on silver.]
+                                American Hartford Gold (AHG) is the company you see on every cable news channel. Bill O&apos;Reilly, Rick Harrison from Pawn Stars—they&apos;ve got the celebrity endorsements locked down.
+                            </p>
+                            <p>
+                                But here&apos;s what actually matters: their &quot;No Liquidation Fee&quot; buyback program. When you&apos;re ready to sell your gold back, most companies charge you a fee. AHG doesn&apos;t. Combined with their aggressive free silver promotions (up to $10,000 in silver on large accounts), they&apos;re tough to beat on pure value.
+                            </p>
+                            <p>
+                                The $10,000 minimum makes them accessible to most investors. Customer service is available extended hours, and they&apos;re known for fast, responsive support.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/american-hartford-gold">Read Full Review</Link>
@@ -147,7 +153,13 @@ export default function AhgVsOxfordPage() {
                         <section id="oxford-overview" className="scroll-mt-32">
                             <h2>Oxford Gold Group Overview</h2>
                             <p>
-                                [Content Placeholder: Discuss their flat-fee pricing model and excellent educational resources.]
+                                Oxford Gold Group is the quieter competitor. Less flashy marketing, but solid execution. They&apos;ve built a reputation on straightforward pricing and good educational materials.
+                            </p>
+                            <p>
+                                Their strength is simplicity—no gimmicks, no confusing fee structures. They also offer a price-match guarantee, so if you find a better price elsewhere, they&apos;ll match it.
+                            </p>
+                            <p>
+                                The downside? They don&apos;t have the aggressive promotions that AHG offers. No free silver giveaways. If you want the best &quot;deal,&quot; AHG usually wins. If you prefer a low-key experience, Oxford is a solid choice.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/oxford-gold-group">Read Full Review</Link>

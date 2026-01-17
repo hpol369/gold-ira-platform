@@ -150,7 +150,13 @@ export default function AugustaVsGoldcoPage() {
                         <section id="augusta-overview" className="scroll-mt-32">
                             <h2>Augusta Precious Metals Overview</h2>
                             <p>
-                                [Content Placeholder: Focus on Devlyn Steele, the Harvard economist webinar, and their strict "no high pressure sales" policy. Mention ZERO complaints at BBB.]
+                                Augusta is the &quot;Rolls-Royce&quot; of Gold IRA companies. They&apos;re famous for one thing above all else: <strong>zero complaints at the BBB</strong>. In an industry plagued by pushy salespeople and hidden fees, that&apos;s remarkable.
+                            </p>
+                            <p>
+                                What makes them different? Their onboarding process. Before you invest a dime, they require you to watch a one-on-one webinar with Devlyn Steele, their Director of Education (and Harvard-trained economist). It&apos;s not a sales pitch—it&apos;s actual education about the economy, inflation, and why gold makes sense.
+                            </p>
+                            <p>
+                                The downside? That $50,000 minimum is steep. If you don&apos;t have that much, Augusta isn&apos;t for you.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/augusta-precious-metals">Read Full Review</Link>
@@ -161,7 +167,13 @@ export default function AugustaVsGoldcoPage() {
                         <section id="goldco-overview" className="scroll-mt-32">
                             <h2>Goldco Overview</h2>
                             <p>
-                                [Content Placeholder: Focus on Sean Hannity endorsement, their massive scale (billions in placements), and their excellent buyback program.]
+                                Goldco is the 800-pound gorilla of the Gold IRA industry. They&apos;ve placed <strong>billions</strong> in precious metals for customers and have endorsements from Sean Hannity and other major conservative figures.
+                            </p>
+                            <p>
+                                Their big advantages? Lower minimum ($25,000 vs Augusta&apos;s $50,000), aggressive promotions (up to 10% in free silver on qualifying purchases), and a &quot;Highest Price Buyback Guarantee&quot; when you&apos;re ready to sell.
+                            </p>
+                            <p>
+                                The trade-off is that Goldco has more of a &quot;sales&quot; culture than Augusta. Not bad—just more traditional. You&apos;ll get follow-up calls. Some people love the attention, others find it annoying.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/goldco">Read Full Review</Link>
@@ -172,7 +184,27 @@ export default function AugustaVsGoldcoPage() {
                         <section id="fees" className="scroll-mt-32">
                             <h2>Fees & Minimums</h2>
                             <p>
-                                [Content Placeholder: Detailed breakdown. Augusta = $50k min, flat fees. Goldco = $25k min, scaled fees.]
+                                Here&apos;s where things get interesting:
+                            </p>
+                            <div className="not-prose my-8 overflow-x-auto">
+                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th className="p-4 border-b font-bold text-primary">Fee Type</th>
+                                            <th className="p-4 border-b font-bold text-primary">Augusta</th>
+                                            <th className="p-4 border-b font-bold text-primary">Goldco</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                        <tr><td className="p-4 font-medium">Minimum Investment</td><td className="p-4">$50,000</td><td className="p-4">$25,000</td></tr>
+                                        <tr><td className="p-4 font-medium">Setup Fee</td><td className="p-4">$50 (often waived)</td><td className="p-4">$50 (often waived)</td></tr>
+                                        <tr><td className="p-4 font-medium">Annual Storage</td><td className="p-4">~$100-$150 flat</td><td className="p-4">Scaled by account size</td></tr>
+                                        <tr><td className="p-4 font-medium">First Year Fees</td><td className="p-4">Usually waived</td><td className="p-4">Usually waived</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>
+                                <strong>Bottom line:</strong> For accounts over $100k, Augusta&apos;s flat fee structure is usually cheaper. For accounts between $25k-$50k, Goldco wins by default since Augusta won&apos;t take you.
                             </p>
                         </section>
 
