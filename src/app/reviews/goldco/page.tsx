@@ -247,6 +247,40 @@ export default function GoldcoReviewPage() {
                                         </details>
                                     </div>
                                 </section>
+
+                                {/* Related Content */}
+                                <section className="mt-12 not-prose">
+                                    <h3 className="text-lg font-bold text-primary mb-4">Compare Other Companies</h3>
+                                    <div className="grid md:grid-cols-2 gap-3 mb-6">
+                                        <Link href="/reviews/augusta-precious-metals" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">Augusta Precious Metals →</span>
+                                        </Link>
+                                        <Link href="/reviews/american-hartford-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">American Hartford Gold →</span>
+                                        </Link>
+                                        <Link href="/reviews/birch-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">Birch Gold Group →</span>
+                                        </Link>
+                                        <Link href="/reviews/noble-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">Noble Gold →</span>
+                                        </Link>
+                                    </div>
+                                    <h3 className="text-lg font-bold text-primary mb-4">Helpful Guides</h3>
+                                    <div className="grid md:grid-cols-2 gap-3">
+                                        <Link href="/guide/gold-ira-fees" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">Gold IRA Fees Explained →</span>
+                                        </Link>
+                                        <Link href="/guide/401k-to-gold-rollover" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">401k to Gold Rollover →</span>
+                                        </Link>
+                                        <Link href="/learn/gold-ira-scams" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">Scams to Avoid →</span>
+                                        </Link>
+                                        <Link href="/compare/gold-ira-vs-physical-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
+                                            <span className="text-sm font-semibold text-primary">Gold IRA vs Physical Gold →</span>
+                                        </Link>
+                                    </div>
+                                </section>
                             </article>
                         </div>
                     </div>

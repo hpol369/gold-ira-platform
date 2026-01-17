@@ -11,7 +11,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "7 Key Benefits of a Gold IRA in 2026 | Why Investors Choose Gold",
-    description: "Discover the top benefits of a Gold IRA: tax advantages, inflation protection, portfolio diversification, and more. Learn why savvy investors are adding gold to their retirement.",
+    description: "Discover the top Gold IRA benefits: tax advantages, inflation protection, and portfolio diversification. Why investors add gold to retirement.",
 };
 
 const takeaways = [

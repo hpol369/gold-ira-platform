@@ -254,6 +254,10 @@ export default function GoldIraTaxRulesPage() {
                             <Callout type="tip" title="Roth Conversion Strategy">
                                 You can convert a Traditional Gold IRA to a Roth Gold IRA, paying taxes now for tax-free growth later. This can be smart if you expect tax rates to rise or want to leave tax-free assets to heirs. Consult a tax professional before converting.
                             </Callout>
+
+                            <p>
+                                <strong>Not sure which is right for you?</strong> Read our full comparison: <Link href="/compare/gold-ira-vs-roth-ira">Gold IRA vs. Roth IRA</Link>
+                            </p>
                         </section>
 
                         {/* Withdrawal Taxes */}

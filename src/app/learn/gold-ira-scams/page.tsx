@@ -11,7 +11,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA Scams to Avoid in 2026: Protect Your Retirement",
-    description: "Learn how to identify and avoid Gold IRA scams. From home storage schemes to excessive fees, we expose the tactics dishonest dealers use to separate you from your money.",
+    description: "Learn to identify and avoid Gold IRA scams. We expose home storage schemes, excessive fees, and tactics dishonest dealers use.",
 };
 
 const takeaways = [

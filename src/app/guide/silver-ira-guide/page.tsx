@@ -10,7 +10,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Silver IRA Guide 2026: Complete Guide to Silver IRAs",
-    description: "The complete silver IRA guide for 2026. Learn how silver IRAs work, tax benefits, IRS-approved silver, and why silver may outperform gold. Updated for current rules.",
+    description: "Complete 2026 silver IRA guide. Learn how silver IRAs work, tax benefits, IRS-approved silver, and why silver may outperform gold.",
 };
 
 const tocItems = [

@@ -566,6 +566,22 @@ export default function GoldIraVs401kPage() {
                             </div>
                         </div>
 
+                        {/* Related Comparisons */}
+                        <section className="mt-12 not-prose">
+                            <h3 className="text-lg font-bold text-primary mb-4">More Comparisons</h3>
+                            <div className="grid md:grid-cols-3 gap-4">
+                                <Link href="/compare/gold-ira-vs-roth-ira" className="p-4 bg-white rounded-lg border hover:border-secondary transition-colors group">
+                                    <span className="text-sm font-semibold text-primary group-hover:text-secondary">Gold IRA vs. Roth IRA →</span>
+                                </Link>
+                                <Link href="/compare/gold-ira-vs-physical-gold" className="p-4 bg-white rounded-lg border hover:border-secondary transition-colors group">
+                                    <span className="text-sm font-semibold text-primary group-hover:text-secondary">Gold IRA vs. Physical Gold →</span>
+                                </Link>
+                                <Link href="/compare/gold-ira-vs-gold-etf" className="p-4 bg-white rounded-lg border hover:border-secondary transition-colors group">
+                                    <span className="text-sm font-semibold text-primary group-hover:text-secondary">Gold IRA vs. Gold ETF →</span>
+                                </Link>
+                            </div>
+                        </section>
+
                     </article>
                 </div>
             </Container>
