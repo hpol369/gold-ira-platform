@@ -67,6 +67,7 @@ export default function AmericanHartfordGoldReviewPage() {
                                 </p>
                                 <p>
                                     While they don't have the "White Glove" feel of Augusta, they make up for it with <strong>aggressive pricing</strong>. They are known for waiving fees for up to 3 years if you meet certain deposit thresholds.
+                                    (Check our <a href="/best-gold-ira-companies">Fees Comparison Table</a> to see exactly how much you save).
                                 </p>
 
                                 <h3>Pros & Cons at a Glance</h3>

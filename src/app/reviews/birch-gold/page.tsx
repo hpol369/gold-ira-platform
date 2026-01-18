@@ -66,7 +66,8 @@ export default function BirchGoldReviewPage() {
                                     <strong>Birch Gold Group</strong> focuses on education and stability. They heavily sponsor conservative media figures (Ben Shapiro, Steve Bannon, Ron Paul), positioning themselves as the "Liberty-minded" choice for protecting wealth against government overreach.
                                 </p>
                                 <p>
-                                    Their age (Founded 2003) is their biggest asset. Many gold companies pop up and vanish in 5 years. Birch has stayed power.
+                                    Their age (Founded 2003) is their biggest asset. Many gold companies pop up and vanish in 5 years. Birch has staying power.
+                                    We verified their business history in our <a href="/investigative-hub">corporate background check</a>.
                                 </p>
 
                                 <h3>Pros & Cons at a Glance</h3>

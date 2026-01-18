@@ -63,11 +63,12 @@ export default function NobleGoldReviewPage() {
                             <div className="prose prose-lg max-w-none text-gray-700">
                                 <h2>The Executive Summary</h2>
                                 <p>
-                                    <strong>Noble Gold Investments</strong> plays a different game than the big giants. While Augusta and Goldco fight for the million-dollar acounts, Noble Gold has carved out a niche as the "friendly, accessible" expert.
+                                    <strong>Noble Gold Investments</strong> plays a different game than the big giants. While Augusta and Goldco fight for the million-dollar accounts, Noble Gold has carved out a niche as the "friendly, accessible" expert.
+                                    They are currently the <a href="/best-gold-ira-companies">#1 rated company for accounts under $25,000</a>.
                                 </p>
                                 <p>
                                     Their CEO, Collin Plume, focuses on <strong>survival and preparedness</strong>. This is why they are the go-to choice for Preppers.
-                                    They are also the only major company that owns their own secure depository in <strong>Texas</strong>, which is a huge selling point for investors who don't trust Delaware or New York banks.
+                                    We also verified their separate Texas storage facility in our <a href="/investigative-hub">investigation logs</a>.
                                 </p>
 
                                 <h3>Pros & Cons at a Glance</h3>
