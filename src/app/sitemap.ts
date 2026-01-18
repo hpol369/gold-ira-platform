@@ -375,5 +375,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "weekly",
             priority: 0.8,
         },
+        {
+            url: "https://www.richdadretirement.com/reviews/priority-gold",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/orion-metal-exchange",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/money-metals-exchange",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/american-bullion",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/self-directed-ira-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/regal-assets-lawsuit",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
     ];
 }
