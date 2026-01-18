@@ -7,11 +7,11 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
-import { CheckCircle2, AlertTriangle, Info } from "lucide-react";
+import { Info } from "lucide-react";
 
 export const metadata = {
-    title: "Augusta Precious Metals Review (2026): Legit or Scam? [Hidden Fees]",
-    description: "Honest review of Augusta Precious Metals. We uncovered their fees, minimums, and 'Harvard Economist' claims. Read our full investigation findings.",
+    title: "Augusta Precious Metals Review (2026): Fees, Complaints & Real Customer Experience",
+    description: "Our honest Augusta Precious Metals review. We analyze their $50k minimum, fee structure, Joe Montana endorsement, and whether their education-first approach is worth it.",
 };
 
 export default function AugustaReviewPage() {
@@ -20,7 +20,6 @@ export default function AugustaReviewPage() {
             <Navbar />
 
             <div className="flex-grow bg-gray-50/50">
-                {/* Header / Hero for Review */}
                 <header className="bg-primary text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/20 via-primary to-primary opacity-50 z-0"></div>
                     <Container className="relative z-10">
@@ -32,10 +31,10 @@ export default function AugustaReviewPage() {
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                                 Augusta Precious Metals Review: <br />
-                                <span className="text-gray-300">Is The Hype Justified?</span>
+                                <span className="text-gray-300">Premium Service or Overpriced?</span>
                             </h1>
                             <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
-                                They are endorsed by Joe Montana and Money Magazine. But with a $50k minimum, are they actually the right choice for <em>your</em> retirement?
+                                Joe Montana endorses them. Money Magazine featured them. But with a $50,000 minimum, is Augusta actually worth it for your retirement savings?
                             </p>
                         </div>
                     </Container>
@@ -43,133 +42,132 @@ export default function AugustaReviewPage() {
 
                 <Container className="py-12">
                     <div className="grid lg:grid-cols-3 gap-12">
-                        {/* Main Content (Left 2/3) */}
                         <article className="lg:col-span-2">
 
-                            {/* Author & Verification */}
                             <AuthorVerification />
 
-                            {/* Verdict Box (Key Takeaway) */}
                             <VerdictBox
                                 companyName="Augusta Precious Metals"
                                 rating={4.9}
                                 isRecommended={true}
-                                bottomLine="Augusta is the 'Gold Standard' for high-net-worth investors. Their zero-fee promo (for up to 10 years) and strict 'NO sales pressure' policy makes them our #1 choice for approved accounts over $50k."
+                                bottomLine="Augusta is the premium choice for investors with $50,000+. Their education-first approach, transparent fees, and fee-waiver program make them stand out. Not the cheapest, but arguably the best service in the industry."
                                 ctaUrl={AFFILIATE_LINKS.augusta}
-                                ctaText="Get Augusta's Free Gold Kit"
+                                ctaText="Get Free Gold IRA Guide"
                             />
 
-                            {/* Main Body Content - TYPOGRAPHY PROSE */}
                             <div className="prose prose-lg max-w-none text-gray-700">
-                                <h2>The "Too Long; Didn't Read" Summary</h2>
+                                <h2>The Bottom Line</h2>
                                 <p>
-                                    If you have <strong>$50,000 or more</strong> to protect, <strong>Augusta Precious Metals</strong> is simply the best in the business. Period.
-                                    They consistently rank #1 on our <a href="/best-gold-ira-companies">Best Gold IRA Companies of 2026</a> list for high-net-worth investors.
+                                    <strong>Augusta Precious Metals</strong> isn't trying to be everything to everyone. They've carved out a specific niche: high-net-worth investors who want white-glove service and are willing to pay for it. If you have $50,000 or more to roll over, they're worth serious consideration.
                                 </p>
                                 <p>
-                                    Why are we so confident? Because they do the one thing no other gold company dares to do: <strong>They tell you NOT to buy gold if it doesn't fit your needs.</strong>
-                                    We confirmed this during our <a href="/investigative-hub">secret shopper test</a> where their rep advised us to wait before buying.
+                                    What separates Augusta from the pack? They lead with education instead of sales pitches. Before you invest a dollar, they walk you through a one-on-one web conference covering how gold fits into a diversified portfolio. No fear-mongering about economic collapse. No pressure to buy today. Just information.
                                 </p>
                                 <p>
-                                    Led by their Director of Education, Devlyn Steele (a Harvard-trained economist), their entire process is built around education first. There is zero fear-mongering. No "the dollar is crashing tomorrow" pitch. Just pure, data-backed economics.
-                                    Plus, their "Zero Fees for up to 10 Years" promotion is mathematically the best offer in the industry for large accounts.
+                                    That approach has earned them something rare in this industry: zero complaints with the BBB. In a space where lawsuits and regulatory issues are common, that track record speaks volumes.
                                 </p>
 
-                                <h3>Pros & Cons at a Glance</h3>
+                                <h3>Pros & Cons</h3>
                                 <ProsCons
                                     pros={[
-                                        "Zero fees for up to 10 years (Huge savings)",
-                                        "No high-pressure sales tactics (Authorized)",
-                                        "Endorsed by Joe Montana (customer)",
-                                        "A+ BBB Rating & AAA BCA Rating"
+                                        "Fee waiver program (up to 10 years of fees covered)",
+                                        "Zero BBB complaints - exceptional track record",
+                                        "Education-first approach with personal web conference",
+                                        "Transparent pricing with no hidden markups"
                                     ]}
                                     cons={[
-                                        "High minimum investment ($50,000)",
-                                        "No online account setup (Must talk to team)",
-                                        "Does not sell crypto or platinum"
+                                        "$50,000 minimum locks out smaller investors",
+                                        "Must speak with rep - no online-only option",
+                                        "Premium pricing compared to budget competitors"
                                     ]}
                                 />
 
-                                <h2>1. Fees & Pricing Breakdown</h2>
+                                <h2>Fee Structure</h2>
                                 <p>
-                                    Transparency is where Augusta leaves competitors in the dust. Most companies hide their "dealer spread" (the profit they make on the coins) until after you sign.
-                                    Augusta is open about it:
+                                    Augusta is refreshingly upfront about what you'll pay. Most Gold IRA companies bury their fees or quote different numbers depending on who you talk to. Augusta publishes their standard fees:
                                 </p>
                                 <ul>
-                                    <li><strong>Setup Fee:</strong> $50 (One-time)</li>
-                                    <li><strong>Custodian Fee:</strong> $100 (Annual)</li>
-                                    <li><strong>Storage Fee:</strong> $100 (Annual)</li>
+                                    <li><strong>Account Setup:</strong> $50 one-time fee</li>
+                                    <li><strong>Annual Custodian Fee:</strong> $80-$100</li>
+                                    <li><strong>Annual Storage Fee:</strong> $100-$150 (depending on depository)</li>
                                 </ul>
                                 <p>
-                                    <strong>The "Zero Fee" Promotion:</strong> This is the game-changer. Augusta will pay your custodian and storage fees for you for up to 10 years depending on your investment amount.
-                                    On a $200k account, this saves you thousands of dollars that stays compounding in your account.
+                                    The real value comes from their fee-waiver promotion. Depending on your account size, Augusta covers your custodian and storage fees for up to 10 years. On a $100,000+ account, that's potentially $2,000-$3,000 in savings that stays invested and compounding.
                                 </p>
+
                                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-blue-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> Hidden Fee Alert
+                                        <Info className="w-5 h-5" /> About Dealer Spreads
                                     </h4>
                                     <p className="text-sm text-blue-800">
-                                        Most gold companies hide their dealer spread. Augusta is transparent: expect a spread of roughly 5%. This is standard for the industry, but Augusta guarantees no added commission on top of this.
+                                        Like all precious metals dealers, Augusta makes money on the spread between buy and sell prices. This is typically 5-8% and is standard across the industry. The difference with Augusta is they don't layer additional commissions on top.
                                     </p>
                                 </div>
 
-                                <h2>2. The "Harvard Economist" Webinar</h2>
+                                <h2>The Education Process</h2>
                                 <p>
-                                    This is Augusta's secret weapon. Before you spend a dime, they invite you to a private web conference.
-                                    It’s not a sales pitch—it’s an economics masterclass. They define inflation, deflation, and how central bank policies affect your 401(k).
-                                    They even walk you through the "lies" other gold companies tell. It is arguably the most valuable 45 minutes you can spend on your retirement planning.
-                                </p>
-
-                                <h2>3. Customer Reviews & Complaints</h2>
-                                <p>
-                                    We looked everywhere. The track record is spotless:
+                                    Augusta's signature offering is their one-on-one web conference. This isn't a sales call disguised as education—it's a genuine economics lesson. They cover:
                                 </p>
                                 <ul>
-                                    <li><strong>BBB:</strong> A+ Rating, 0 Complaints</li>
-                                    <li><strong>BCA:</strong> AAA Rating</li>
-                                    <li><strong>TrustLink:</strong> 5.0/5 Stars</li>
+                                    <li>How inflation affects purchasing power over time</li>
+                                    <li>The role of precious metals in portfolio diversification</li>
+                                    <li>IRS rules and tax implications for Gold IRAs</li>
+                                    <li>Red flags to watch for with other companies</li>
                                 </ul>
                                 <p>
-                                    In an industry rife with scams and lawsuits, Augusta's clean sheet is extraordinary validation of their integrity.
+                                    The conference runs about 45 minutes and there's no obligation to buy anything afterward. For investors who've never dealt with precious metals, this education alone is valuable—even if you end up choosing a different company.
                                 </p>
 
-                                <h2>4. Minimum Investment Requirements</h2>
+                                <h2>Customer Feedback</h2>
                                 <p>
-                                    The only downside? The velvet rope. You must have at least <strong>$50,000</strong> to open an account.
-                                    This high barrier ensures that every client gets dedicated, white-glove service.
-                                    If you have less than $50k, we respect their honesty in turning you away rather than taking your money and giving you subpar service.
-                                    (For smaller accounts, we recommend <strong>Noble Gold</strong>).
+                                    Augusta's reputation metrics are the best in the business:
+                                </p>
+                                <ul>
+                                    <li><strong>BBB Rating:</strong> A+ with zero complaints filed</li>
+                                    <li><strong>BCA Rating:</strong> AAA</li>
+                                    <li><strong>Google Reviews:</strong> 4.9/5 average</li>
+                                </ul>
+                                <p>
+                                    The Joe Montana endorsement gets attention, but what matters more is what actual customers say. Common themes in reviews: patient reps who don't push, smooth rollover process, and follow-up support after the sale. The complaints that exist (and there are few) typically relate to wanting a lower minimum or faster processing during high-demand periods.
+                                </p>
+
+                                <h2>The $50,000 Minimum</h2>
+                                <p>
+                                    This is the dealbreaker for many people. Augusta doesn't accept accounts under $50,000. Their reasoning: they can't provide their level of personalized service to smaller accounts while keeping the business viable.
+                                </p>
+                                <p>
+                                    Is this elitist? Maybe. But it's also honest. Companies that claim to offer "premium service" to everyone regardless of account size are usually cutting corners somewhere. Augusta would rather turn away business than dilute their service quality.
+                                </p>
+                                <p>
+                                    If you have less than $50,000 to invest, check out <a href="/reviews/noble-gold">Noble Gold</a> or <a href="/reviews/orion-metal-exchange">Orion Metal Exchange</a> instead.
                                 </p>
 
                                 <hr className="my-12 border-gray-200" />
 
-                                <h2>Final Verdict: Are They Worth It?</h2>
+                                <h2>Final Verdict</h2>
                                 <p>
-                                    If you meet the $50k minimum, <strong>Augusta Precious Metals</strong> is the obvious choice.
-                                    You get the best education, the most transparent pricing, and the security of a company endorsed by money icons.
-                                    Don't navigate this volatile economy alone—let Augusta's team guide you.
+                                    <strong>Augusta Precious Metals</strong> earns their premium reputation. For investors with $50,000+, the combination of education-first approach, fee waivers, and spotless track record makes them our top recommendation. They're not the cheapest option, but they deliver genuine value.
+                                </p>
+                                <p>
+                                    <strong>Best for:</strong> Investors with $50,000+ who want thorough education and white-glove service. Not ideal for bargain hunters or those with smaller accounts.
                                 </p>
                             </div>
 
-                            {/* Bottom CTA */}
                             <div className="bg-primary text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4">Claim Your Free Gold Kit From Augusta</h3>
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Get Augusta's Free Information Kit</h3>
                                     <p className="mb-8 text-white/80 max-w-lg mx-auto">
-                                        Don't let inflation eat your savings. Learn how to protect your 401(k) tax-free today.
+                                        Learn how Gold IRAs work and whether they fit your retirement strategy.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
                                         <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
-                                            Download Free Guide Now
+                                            Request Free Guide
                                         </a>
                                     </Button>
                                 </div>
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                                <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
                             </div>
                         </article>
 
-                        {/* Sidebar (Right 1/3) */}
                         <aside className="relative">
                             <StickyMasterSidebar />
                         </aside>

@@ -10,8 +10,8 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
-    title: "American Hartford Gold Review (2026): Price Match & Fees Revealed",
-    description: "American Hartford Gold promises to match any competitor's price. We review their fees, buyback program, and Bill O'Reilly endorsement.",
+    title: "American Hartford Gold Review (2026): Honest Analysis of Fees & Service",
+    description: "A balanced review of American Hartford Gold covering their fee structure, buyback program, and how they compare to other Gold IRA companies.",
 };
 
 export default function AmericanHartfordGoldReviewPage() {
@@ -20,7 +20,6 @@ export default function AmericanHartfordGoldReviewPage() {
             <Navbar />
 
             <div className="flex-grow bg-gray-50/50">
-                {/* Header / Hero for Review */}
                 <header className="bg-blue-950 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-800/40 via-blue-950 to-blue-950 opacity-80 z-0"></div>
                     <Container className="relative z-10">
@@ -32,10 +31,10 @@ export default function AmericanHartfordGoldReviewPage() {
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                                 American Hartford Gold Review: <br />
-                                <span className="text-gray-400">Low Price Leader?</span>
+                                <span className="text-gray-400">Fast-Growing Competitor</span>
                             </h1>
                             <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
-                                Endorsed by Bill O'Reilly. They claim to have the "Best Price Guarantee". We put that to the test.
+                                American Hartford has grown rapidly through TV advertising and celebrity endorsements. Here's our objective look at what they offer and who they're suited for.
                             </p>
                         </div>
                     </Container>
@@ -43,94 +42,106 @@ export default function AmericanHartfordGoldReviewPage() {
 
                 <Container className="py-12">
                     <div className="grid lg:grid-cols-3 gap-12">
-                        {/* Main Content (Left 2/3) */}
                         <article className="lg:col-span-2">
 
-                            {/* Author & Verification */}
                             <AuthorVerification />
 
-                            {/* Verdict Box (Key Takeaway) */}
                             <VerdictBox
                                 companyName="American Hartford Gold"
-                                rating={4.7}
+                                rating={4.4}
                                 isRecommended={true}
-                                bottomLine="American Hartford Gold is the 'Value Pick'. Their Price Match Guarantee is legit. If you get a quote from a competitor, show it to AHG and they will beat it. Perfect for cost-conscious investors."
+                                bottomLine="American Hartford Gold is a legitimate option with good customer reviews. They've carved out space as a value-focused alternative to premium providers. Worth getting a quote from, especially if you're comparing prices across multiple companies."
                                 ctaUrl={AFFILIATE_LINKS.americanHartford}
-                                ctaText="Get AHG's Free Info Kit"
+                                ctaText="Learn More"
                             />
 
-                            {/* Main Body Content - TYPOGRAPHY PROSE */}
                             <div className="prose prose-lg max-w-none text-gray-700">
-                                <h2>The Executive Summary</h2>
+                                <h2>Company Overview</h2>
                                 <p>
-                                    <strong>American Hartford Gold (AHG)</strong> is a family-owned company based in Los Angeles. They have grown explosively because they focus on volume rather than high margins.
+                                    <strong>American Hartford Gold</strong> is a Los Angeles-based precious metals dealer founded in 2015. They've grown significantly through television advertising and partnerships with conservative media personalities like Bill O'Reilly.
                                 </p>
                                 <p>
-                                    While they don't have the "White Glove" feel of Augusta, they make up for it with <strong>aggressive pricing</strong>. They are known for waiving fees for up to 3 years if you meet certain deposit thresholds.
-                                    (Check our <a href="/best-gold-ira-companies">Fees Comparison Table</a> to see exactly how much you save).
+                                    The company positions itself as offering competitive pricing and markets heavily to first-time precious metals investors. They handle both IRA rollovers and direct cash purchases.
+                                </p>
+                                <p>
+                                    What's notable about American Hartford is their accessibility - they maintain a lower minimum investment than companies like Augusta or Goldco, making them an option for investors who don't meet higher thresholds elsewhere.
                                 </p>
 
-                                <h3>Pros & Cons at a Glance</h3>
+                                <h3>Pros & Cons</h3>
                                 <ProsCons
                                     pros={[
-                                        "Price Match Guarantee (They beat competitors)",
-                                        "No Buyback Fees (Free liquidation)",
-                                        "Up to $5,000 in free silver",
-                                        "Endorsed by Bill O'Reilly"
+                                        "Lower minimum investment ($10,000)",
+                                        "Price-match policy (bring competitor quotes)",
+                                        "Buyback program with no liquidation fees",
+                                        "Good BBB rating and customer reviews"
                                     ]}
                                     cons={[
-                                        "Website lacks detailed pricing chart",
-                                        "Must call for live gold prices",
-                                        "Account setup is slightly slower than Goldco"
+                                        "Pricing requires phone conversation (not posted online)",
+                                        "Heavy reliance on promotional marketing",
+                                        "Less emphasis on investor education than Augusta"
                                     ]}
                                 />
 
-                                <h2>1. The Price Match Guarantee</h2>
+                                <h2>Pricing and Fee Structure</h2>
                                 <p>
-                                    In the gold industry, dealers make money on the "spread" (the difference between spot price and retail price).
-                                    AHG promises that if you find a lower advertised price for the same bullion elsewhere, they will match it.
-                                    This removes the fear of being "ripped off" on premium pricing.
+                                    American Hartford advertises a "price match guarantee" - if you bring a lower quote from another dealer on the same product, they'll match or beat it. In practice, this works as you'd expect: get written quotes from competitors and use them as negotiating leverage.
                                 </p>
-
-                                <h2>2. Buyback Program (No Fees)</h2>
                                 <p>
-                                    When you want to sell your gold to take a distribution, most companies charge a liquidation fee.
-                                    <strong>American Hartford Gold does not charge liquidation fees.</strong> They buy back metals at the current market rate. This can save you 1-5% on the exit, which is significant.
+                                    Like most Gold IRA companies, they don't publish specific pricing on their website. You'll need to call to get current prices on coins and bars. Annual storage and custodian fees are in the typical industry range of $150-$225.
                                 </p>
                                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-blue-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> Minimums
+                                        <Info className="w-5 h-5" /> About Price Guarantees
                                     </h4>
                                     <p className="text-sm text-blue-800">
-                                        AHG has a <strong>$10,000 minimum</strong> for cash purchases and IRAs. This is very accessible compared to the industry standard of $25k-$50k.
+                                        Price-match policies in this industry come with fine print. They typically apply to identical products (same coin, same condition, same quantity) from established competitors. Don't expect them to match prices from unknown dealers or auction sites.
                                     </p>
                                 </div>
 
-                                <h2>3. Customer Sentiment</h2>
+                                <h2>The Buyback Program</h2>
                                 <p>
-                                    They have a 5-star rating on Trustpilot with over 1,500 reviews.
-                                    Clients frequently mention their account representatives by name, indicating a strong culture of personal retention.
+                                    One area where American Hartford does well is their buyback program. When you eventually want to liquidate metals from your IRA, they offer to repurchase at competitive rates without charging a separate liquidation fee.
+                                </p>
+                                <p>
+                                    This can save money on the exit, though keep in mind all dealers make money on the spread between buy and sell prices regardless of whether there's a separate "fee" line item.
+                                </p>
+
+                                <h2>Customer Experience</h2>
+                                <p>
+                                    American Hartford maintains an A+ BBB rating and generally positive reviews across platforms. Customer feedback mentions responsive representatives and smooth account setup processes.
+                                </p>
+                                <p>
+                                    Some reviews mention aggressive follow-up calls after requesting information, which seems to be a common industry practice but worth knowing if you prefer a lower-pressure experience.
+                                </p>
+
+                                <h2>How They Compare</h2>
+                                <p>
+                                    American Hartford occupies the middle ground in the Gold IRA market. They're not the premium choice (<a href="/reviews/augusta-precious-metals">Augusta</a> wins there with their education-first approach), and they're not the lowest-minimum option (<a href="/reviews/noble-gold">Noble Gold</a> goes lower).
+                                </p>
+                                <p>
+                                    Their strength is accessibility combined with the price-match policy. If you're the type of investor who gets multiple quotes and negotiates, American Hartford's willingness to compete on price can work in your favor.
                                 </p>
 
                                 <hr className="my-12 border-gray-200" />
 
-                                <h2>Final Verdict: Are They Worth It?</h2>
+                                <h2>Final Verdict</h2>
                                 <p>
-                                    If you are willing to shop around and negotiate, <strong>American Hartford Gold</strong> is your best friend.
-                                    Use their Price Match Guarantee to secure the lowest possible entry price for your metals.
+                                    <strong>American Hartford Gold</strong> is a legitimate player in the Gold IRA space with a focus on competitive pricing. They're worth including in your comparison shopping, especially if you have $10,000-$50,000 to invest and want to negotiate.
+                                </p>
+                                <p>
+                                    <strong>Best for:</strong> Price-conscious investors who are comfortable negotiating and want a lower minimum than premium providers require. Consider comparing them alongside Noble Gold for mid-range accounts.
                                 </p>
                             </div>
 
-                            {/* Bottom CTA */}
                             <div className="bg-blue-950 text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4">Get the Lowest Prince Guarantee</h3>
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Compare Your Options</h3>
                                     <p className="mb-8 text-blue-200 max-w-lg mx-auto">
-                                        See how much free silver you can get with your order today.
+                                        See how American Hartford stacks up against other Gold IRA companies.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
                                         <a href={AFFILIATE_LINKS.americanHartford} target="_blank" rel="noopener noreferrer">
-                                            Request Free Investment Kit
+                                            Request Information
                                         </a>
                                     </Button>
                                 </div>
