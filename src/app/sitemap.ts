@@ -188,5 +188,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "yearly",
             priority: 0.3,
         },
+        {
+            url: "https://www.richdadretirement.com/reviews/noble-gold-legit",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/lear-capital-complaints",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/lear-capital-vs-noble-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/goldco-vs-lear-capital",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
     ];
 }
