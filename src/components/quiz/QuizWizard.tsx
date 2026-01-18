@@ -174,7 +174,7 @@ export function QuizWizard() {
                 </div>
 
                 <h2 className="text-3xl font-serif font-bold text-primary mb-2">
-                    Your Result: <span className="text-secondary">{result.headline === "Best for Lower Minimums" ? "Exposed" : "High Potential"}</span>
+                    Your Result: <span className="text-secondary">{result.scoreLabel}</span>
                 </h2>
 
                 <p className="text-lg text-text-muted mb-8 max-w-2xl mx-auto">
@@ -189,7 +189,7 @@ export function QuizWizard() {
                         {/* Score Circle */}
                         <div className="w-full md:w-auto flex flex-col items-center justify-center p-6 bg-background-subtle rounded-xl min-w-[150px]">
                             <span className="text-4xl font-bold text-primary font-serif">
-                                {result.minInvestment === "$50,000" ? "92" : "65"}<span className="text-lg text-gray-400">/100</span>
+                                {result.score}<span className="text-lg text-gray-400">/100</span>
                             </span>
                             <span className="text-xs uppercase tracking-wider font-semibold text-secondary mt-1">Wealth Score</span>
                         </div>

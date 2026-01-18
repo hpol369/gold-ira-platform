@@ -1,13 +1,16 @@
 import { Container } from "@/components/ui/Container";
+import Image from "next/image";
 
 export function AuthorBox() {
     return (
         <div className="bg-background-subtle rounded-2xl p-8 border border-primary/5 mt-16 flex flex-col md:flex-row gap-8 items-center md:items-start">
-            <div className="w-24 h-24 rounded-full bg-gray-200 shrink-0 overflow-hidden border-4 border-white shadow-md">
-                {/* Placeholder for Author Image */}
-                <div className="w-full h-full bg-primary/20 flex items-center justify-center text-xs text-primary font-bold">
-                    TR
-                </div>
+            <div className="w-24 h-24 rounded-full bg-gray-200 shrink-0 overflow-hidden border-4 border-white shadow-md relative">
+                <Image
+                    src="/images/thomas-richardson.png"
+                    alt="Thomas Richardson"
+                    fill
+                    className="object-cover"
+                />
             </div>
 
             <div className="flex-1 text-center md:text-left">
