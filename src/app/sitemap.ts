@@ -272,5 +272,108 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "weekly",
             priority: 0.8,
         },
+        // Missing pages added
+        {
+            url: "https://www.richdadretirement.com/compare/american-hartford-vs-oxford-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/augusta-vs-goldco",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/gold-ira-vs-crypto",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/gold-ira-vs-gold-etf",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/gold-ira-vs-traditional-ira",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/noble-gold-vs-birch-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/guide/403b-to-gold-ira-rollover",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: "https://www.richdadretirement.com/guide/gold-ira-for-seniors",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/guide/gold-ira-minimum-investment",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/guide/tsp-to-gold-ira-rollover",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/are-gold-iras-safe",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/checkbook-ira-rules",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.7,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/home-storage-gold-ira",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.7,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/platinum-ira",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.7,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/precious-metals-ira-rules",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.7,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/advantage-gold-complaints",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/goldco-lawsuit-facts",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
     ];
 }
