@@ -1,138 +1,193 @@
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
-import { TableOfContents } from "@/components/guide/TableOfContents";
-import { Metadata } from "next";
-import { AlertTriangle, Gavel } from "lucide-react";
-import { SchemaScript } from "@/components/seo/SchemaScript";
+import { Button } from "@/components/ui/Button";
+import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
+import { VerdictBox } from "@/components/reviews/VerdictBox";
+import { AuthorVerification } from "@/components/reviews/AuthorVerification";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AlertTriangle, XCircle, ShieldAlert } from "lucide-react";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-    title: "Regal Assets Lawsuit & Bankruptcy: What Happened? (2026)",
-    description: "Investigation into the collapse of Regal Assets. We explain the lawsuits, the bankruptcy filing, and what former customers need to know.",
+export const metadata = {
+    title: "Regal Assets Lawsuit & Collapse (2026): What Happened?",
+    description: "Regal Assets was once a top-rated Gold IRA company. Then it collapsed. We investigate what happened, the lawsuits, and what customers should do now.",
 };
-
-const companyData = {
-    companyName: "Regal Assets",
-    rating: 1.0, // Reflecting current status
-    minInvestment: "N/A",
-    fees: "N/A",
-    bbbRating: "F", // Bankrupt/Revoked
-    bestFor: "Avoid",
-    visitUrl: "#",
-    pros: [],
-    cons: ["Company is reportedly defunct", "Multiple lawsuits", "Clients lost money"]
-};
-
-const schema = {
-    "@context": "https://schema.org/",
-    "@type": "Article",
-    "headline": "Regal Assets Lawsuit & Bankruptcy Investigation",
-    "author": { "@type": "Organization", "name": "Rich Dad Retirement" }
-};
-
-const tocItems = [
-    { id: "overview", label: "What Happened?" },
-    { id: "timeline", label: "Timeline of Collapse" },
-    { id: "customers", label: "Customer Impact" },
-    { id: "alternatives", label: "Safe Alternatives" }
-];
 
 export default function RegalAssetsLawsuitPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
-            <SchemaScript schema={schema} />
-            <header className="bg-red-900 text-white py-16 relative overflow-hidden">
-                <Container className="relative z-10">
-                    <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 mb-6">
-                            <div className="bg-red-500/20 px-3 py-1 rounded-full border border-red-500/30 text-sm font-semibold text-red-100 flex items-center gap-2">
-                                <AlertTriangle className="w-4 h-4" /> Bankruptcy Warning
+        <main className="min-h-screen flex flex-col bg-background">
+            <Navbar />
+
+            <div className="flex-grow bg-gray-50/50">
+                {/* Header / Hero for Review */}
+                <header className="bg-red-950 text-white py-16 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-red-800/40 via-red-950 to-red-950 opacity-80 z-0"></div>
+                    <Container className="relative z-10">
+                        <div className="max-w-4xl">
+                            <div className="flex items-center gap-2 text-red-200 text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-white/10 px-2 py-1 rounded flex items-center gap-1">
+                                    <AlertTriangle className="w-4 h-4" /> Warning
+                                </span>
+                                <span>•</span>
+                                <span>Investigation</span>
                             </div>
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                                Regal Assets: <br />
+                                <span className="text-red-300">The Rise and Collapse</span>
+                            </h1>
+                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                                Once one of the most-recommended Gold IRA companies in America. Now defunct. What happened, and what should former customers do?
+                            </p>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-                            Regal Assets Lawsuit: The Collapse of a Giant
-                        </h1>
-                        <p className="text-xl text-red-100 max-w-2xl leading-relaxed">
-                            Once a top-rated company, Regal Assets has faced a catastrophic collapse. Here is the full story of what went wrong.
-                        </p>
-                    </div>
-                </Container>
-            </header>
+                    </Container>
+                </header>
 
-            <Container className="py-12">
-                <div className="flex flex-col lg:flex-row gap-12">
-                    <div className="flex-1">
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
-                            <section id="overview">
+                <Container className="py-12">
+                    <div className="grid lg:grid-cols-3 gap-12">
+                        {/* Main Content (Left 2/3) */}
+                        <article className="lg:col-span-2">
+
+                            {/* Author & Verification */}
+                            <AuthorVerification />
+
+                            {/* Warning Box instead of VerdictBox */}
+                            <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6 my-8">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center shrink-0">
+                                        <ShieldAlert className="w-6 h-6 text-red-600" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-red-800 mb-2">Company Status: DEFUNCT</h3>
+                                        <p className="text-red-700">
+                                            Regal Assets appears to have ceased operations. Their website is down, phone lines disconnected, and former customers report inability to reach anyone about their accounts. <strong>Do not attempt to do business with this company.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Main Body Content */}
+                            <div className="prose prose-lg max-w-none text-gray-700">
                                 <h2>What Happened to Regal Assets?</h2>
-                                <p className="lead">
-                                    Regal Assets was once one of the most-recommended Gold IRA companies in America. They had thousands of positive reviews, celebrity endorsements, and featured prominently on "best of" lists across the internet. Then it all collapsed. The company appears defunct, their website is down, and former customers are left wondering what happened to their gold.
+                                <p>
+                                    <strong>Regal Assets</strong> was once one of the most-recommended Gold IRA companies in America. They had thousands of positive reviews, celebrity endorsements, and featured prominently on "best of" lists across the internet.
                                 </p>
                                 <p>
-                                    This case is a stark reminder of why we emphasize due diligence in this industry. A company can look perfect on paper—A+ ratings, glowing reviews, industry awards—and still fail catastrophically. Here's what we know about the Regal Assets situation.
+                                    Then it all collapsed. The company appears defunct, their website is down, and former customers are left wondering what happened to their gold. This case is a stark reminder of why we emphasize due diligence in this industry.
                                 </p>
-                            </section>
 
-                            <section id="timeline" className="scroll-mt-32">
                                 <h2>Timeline of Collapse</h2>
-                                <p>
-                                    <strong>2012-2020:</strong> Regal Assets builds a stellar reputation. They win numerous industry awards, accumulate thousands of positive reviews, and become one of the most-recommended precious metals IRA companies. Their marketing machine was formidable.
-                                </p>
-                                <p>
-                                    <strong>2021-2022:</strong> Cracks begin to show. Customer complaints increase. Reports emerge of delayed shipments, poor communication, and difficulty reaching representatives. The company's BBB rating starts to slip.
-                                </p>
-                                <p>
-                                    <strong>2023:</strong> The situation deteriorates rapidly. The company's website goes dark. Phone lines disconnect. Customers discover they can't reach anyone about their accounts or their metals. Lawsuits are filed.
-                                </p>
-                                <p>
-                                    <strong>2024-Present:</strong> Reports indicate the company has effectively ceased operations. Former customers are working with custodians and attorneys to recover their assets. The BBB revokes their rating. What was once a success story becomes a cautionary tale.
-                                </p>
-                            </section>
 
-                            <section id="customers" className="scroll-mt-32">
+                                <div className="not-prose my-8 space-y-4">
+                                    <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                        <div className="font-bold text-green-800 shrink-0">2012-2020</div>
+                                        <div className="text-green-700">
+                                            <strong>The Golden Years:</strong> Regal Assets builds a stellar reputation. Industry awards, thousands of positive reviews, one of the most-recommended precious metals IRA companies. Marketing machine was formidable.
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
+                                        <div className="font-bold text-amber-800 shrink-0">2021-2022</div>
+                                        <div className="text-amber-700">
+                                            <strong>Cracks Appear:</strong> Customer complaints increase. Reports of delayed shipments, poor communication, difficulty reaching representatives. BBB rating starts to slip.
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 p-5 rounded-xl bg-orange-50 border border-orange-100">
+                                        <div className="font-bold text-orange-800 shrink-0">2023</div>
+                                        <div className="text-orange-700">
+                                            <strong>Rapid Deterioration:</strong> Website goes dark. Phone lines disconnect. Customers discover they can't reach anyone about accounts or metals. Lawsuits filed.
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                                        <div className="font-bold text-red-800 shrink-0">2024-Present</div>
+                                        <div className="text-red-700">
+                                            <strong>Aftermath:</strong> Company appears defunct. Former customers working with custodians and attorneys to recover assets. BBB rating revoked. What was once a success story becomes a cautionary tale.
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <h2>What This Means for Customers</h2>
                                 <p>
                                     If you have or had an account with Regal Assets, here's what you need to know:
                                 </p>
-                                <p>
-                                    <strong>Your metals should still exist.</strong> IRA precious metals are held by custodians and depositories, not the dealer. Regal Assets was an intermediary—they helped set up accounts and sold metals, but the assets themselves should be held separately. Contact your custodian directly.
-                                </p>
-                                <p>
-                                    <strong>Contact your IRA custodian immediately.</strong> If you worked with Regal Assets on an IRA, your custodian (likely Equity Trust, Kingdom Trust, or similar) is your point of contact now. They have records of your holdings and can help you understand your options.
-                                </p>
-                                <p>
-                                    <strong>Document everything.</strong> Save all communications, statements, and records related to your account. If you're considering legal action or filing a complaint, documentation is essential.
-                                </p>
-                                <p>
-                                    <strong>Consider consulting an attorney.</strong> If you believe you've suffered losses due to Regal Assets' failure, a securities attorney can advise you on potential recourse.
-                                </p>
-                            </section>
 
-                            <section id="alternatives" className="scroll-mt-32">
+                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                    <h4 className="font-bold text-blue-900 mb-4">Action Steps for Former Customers</h4>
+                                    <ul className="space-y-3 text-blue-800">
+                                        <li className="flex items-start gap-2">
+                                            <span className="font-bold">1.</span>
+                                            <span><strong>Your metals should still exist.</strong> IRA precious metals are held by custodians and depositories, not the dealer. Regal was an intermediary—assets should be held separately.</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="font-bold">2.</span>
+                                            <span><strong>Contact your IRA custodian directly.</strong> If you worked with Regal on an IRA, your custodian (likely Equity Trust or similar) has records of your holdings.</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="font-bold">3.</span>
+                                            <span><strong>Document everything.</strong> Save all communications, statements, and records related to your account for potential legal action.</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="font-bold">4.</span>
+                                            <span><strong>Consider consulting an attorney.</strong> If you believe you've suffered losses, a securities attorney can advise on potential recourse.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <h2>Lessons Learned: How to Avoid This</h2>
+                                <p>
+                                    The Regal Assets collapse teaches several important lessons:
+                                </p>
+                                <ul>
+                                    <li><strong>Verify current BBB status.</strong> Don't rely on outdated reviews. Check the BBB directly for current ratings. Regal had great ratings—until they didn't.</li>
+                                    <li><strong>Understand the custody structure.</strong> Your metals should be held by an independent, insured custodian—not by the dealer themselves.</li>
+                                    <li><strong>Avoid "too good to be true."</strong> Extremely aggressive promotions, unrealistic promises, or pressure to act immediately are red flags.</li>
+                                    <li><strong>Diversify across providers.</strong> Consider not putting all your precious metals with a single dealer.</li>
+                                </ul>
+
                                 <h2>Safe Alternatives</h2>
                                 <p>
-                                    The Regal Assets collapse is a reminder to choose your Gold IRA company carefully. Here's what to look for:
+                                    Unlike Regal Assets, many companies have maintained impeccable records over decades. We recommend sticking to established, A+ rated dealers:
                                 </p>
+                                <ul>
+                                    <li><Link href="/reviews/augusta-precious-metals">Augusta Precious Metals</Link> — Zero BBB complaints, 10+ years, education-first approach</li>
+                                    <li><Link href="/reviews/noble-gold">Noble Gold</Link> — Low minimums, Texas storage option, strong track record</li>
+                                    <li><Link href="/reviews/goldco">Goldco</Link> — Billions placed, celebrity endorsements, "White Glove" service</li>
+                                </ul>
                                 <p>
-                                    <strong>Verify current BBB status.</strong> Don't rely on outdated reviews. Check the BBB directly for current ratings and recent complaints. Regal Assets had great ratings—until they didn't.
+                                    These companies have weathered multiple market cycles and continue to operate with strong reputations.
                                 </p>
+
+                                <hr className="my-12 border-gray-200" />
+
+                                <h2>Final Thoughts</h2>
                                 <p>
-                                    <strong>Understand the custody structure.</strong> Your metals should be held by an independent, FDIC-insured custodian—not by the dealer themselves. This separation is what protects you if a dealer fails.
+                                    The Regal Assets story is a reminder that due diligence matters. A company can look perfect on paper—great reviews, industry awards, celebrity endorsements—and still fail. Always verify current status, understand how your assets are held, and work with companies that have proven staying power.
                                 </p>
-                                <p>
-                                    <strong>Avoid companies that seem too good to be true.</strong> Extremely aggressive promotions, unrealistic promises, or pressure to act immediately are red flags.
-                                </p>
-                                <p>
-                                    Unlike Regal Assets, many companies have maintained impeccable records over decades. We recommend sticking to established, A+ rated dealers like <a href="/reviews/augusta-precious-metals">Augusta Precious Metals</a> or <a href="/reviews/goldco">Goldco</a>. These companies have weathered multiple market cycles and continue to operate with strong reputations.
-                                </p>
-                            </section>
+                            </div>
+
+                            {/* Bottom CTA */}
+                            <div className="bg-primary text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                                <div className="relative z-10">
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Looking for a Trustworthy Gold IRA Company?</h3>
+                                    <p className="mb-8 text-gray-200 max-w-lg mx-auto">
+                                        Compare companies with proven track records and clean regulatory histories.
+                                    </p>
+                                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
+                                        <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                            See Our Top-Rated Companies
+                                        </a>
+                                    </Button>
+                                </div>
+                            </div>
                         </article>
+
+                        {/* Sidebar */}
+                        <aside className="relative">
+                            <StickyMasterSidebar />
+                        </aside>
                     </div>
-                    <aside className="w-80 flex-shrink-0 hidden lg:block">
-                        <ReviewSidebar {...companyData} />
-                        <div className="mt-8"><TableOfContents items={tocItems} /></div>
-                    </aside>
-                </div>
-            </Container>
+                </Container>
+            </div>
+            <Footer />
         </main>
     );
 }

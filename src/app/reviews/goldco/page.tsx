@@ -1,295 +1,171 @@
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
+import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
+import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
-import { TableOfContents } from "@/components/guide/TableOfContents";
-import { Callout } from "@/components/ui/Callout";
-import { Metadata } from "next";
-import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
-import Link from "next/link";
-import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { Info } from "lucide-react";
 
-export const metadata: Metadata = {
-    title: "Goldco Review 2026: Fees, Complaints & Expert Analysis",
-    description: "Complete Goldco review for 2026. A+ BBB rating, celebrity endorsements, and strong silver focus. See if Goldco is the right gold IRA company for you.",
+export const metadata = {
+    title: "Goldco Review (2026): Free Silver Bonus & Customer Service Ratings",
+    description: "Goldco is rated #1 for customer service. We break down their fees, 'White Glove' onboarding, and their massive free silver bonus.",
 };
-
-const companyData = {
-    companyName: "Goldco",
-    rating: 4.7,
-    minInvestment: "$25,000",
-    fees: "$175-$225/year",
-    bbbRating: "A+",
-    bestFor: "Mid-Range Investors ($25k-$100k)",
-    visitUrl: AFFILIATE_LINKS.goldco,
-    pros: [
-        "A+ BBB rating with excellent customer reviews",
-        "Strong focus on silver alongside gold",
-        "Endorsed by Sean Hannity and other celebrities",
-        "Comprehensive buyback program",
-        "Wide selection of IRA-eligible products",
-        "Knowledgeable and responsive staff"
-    ],
-    cons: [
-        "$25,000 minimum may exclude some investors",
-        "Fees not as transparent as some competitors",
-        "Heavy marketing can feel aggressive",
-        "No fee waiver programs available"
-    ]
-};
-
-const schema = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "Goldco Gold IRA",
-    "image": "https://www.richdadretirement.com/images/goldco-logo.png",
-    "description": "Leading Gold & Silver IRA provider endorsed by Sean Hannity.",
-    "brand": {
-        "@type": "Brand",
-        "name": "Goldco"
-    },
-    "review": {
-        "@type": "Review",
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.7",
-            "bestRating": "5"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "Rich Dad Retirement"
-        }
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "2100"
-    }
-};
-
-const tocItems = [
-    { id: "overview", label: "Company Overview" },
-    { id: "pros-cons", label: "Pros & Cons" },
-    { id: "services", label: "Services" },
-    { id: "fees", label: "Fees" },
-    { id: "customer-reviews", label: "Reviews" },
-    { id: "who-should-use", label: "Who Should Use?" },
-    { id: "verdict", label: "Verdict" },
-    { id: "faq", label: "FAQs" }
-];
 
 export default function GoldcoReviewPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
-            <SchemaScript schema={schema} />
-            <header className="bg-primary text-white py-16 relative overflow-hidden">
-                <Container className="relative z-10">
-                    <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 mb-6">
-                            <div className="flex gap-1">
-                                {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-secondary text-secondary' : 'fill-secondary/50 text-secondary/50'}`} />
-                                ))}
+        <main className="min-h-screen flex flex-col bg-background">
+            <Navbar />
+
+            <div className="flex-grow bg-gray-50/50">
+                {/* Header / Hero for Review */}
+                <header className="bg-[#1e1e1e] text-white py-16 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/40 via-[#1e1e1e] to-[#1e1e1e] opacity-80 z-0"></div>
+                    <Container className="relative z-10">
+                        <div className="max-w-4xl">
+                            <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-white/10 px-2 py-1 rounded">Gold IRA Company Reviews</span>
+                                <span>•</span>
+                                <span>Updated Jan 2026</span>
                             </div>
-                            <span className="font-bold text-secondary text-lg">4.7/5.0 Rating</span>
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                                Goldco Review: <br />
+                                <span className="text-gray-400">The "White Glove" Experience?</span>
+                            </h1>
+                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                                Endorsed by Sean Hannity and Chuck Norris. But is their service actually better than the competition? We tested their onboarding process to find out.
+                            </p>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Goldco Review 2026</h1>
-                        <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
-                            A trusted name in precious metals with strong celebrity endorsements. We analyze Goldco&apos;s services, fees, and why they&apos;re a top choice for silver investors.
-                        </p>
+                    </Container>
+                </header>
+
+                <Container className="py-12">
+                    <div className="grid lg:grid-cols-3 gap-12">
+                        {/* Main Content (Left 2/3) */}
+                        <article className="lg:col-span-2">
+
+                            {/* Author & Verification */}
+                            <AuthorVerification />
+
+                            {/* Verdict Box (Key Takeaway) */}
+                            <VerdictBox
+                                companyName="Goldco"
+                                rating={4.8}
+                                isRecommended={true}
+                                bottomLine="Goldco is our winning choice for 'Customer Service'. If you are terrified of paperwork, their team literally does it for you. Plus, their Free Silver Bonus (up to 10%) provides an immediate ROI that offsets their slightly higher account minimums."
+                                ctaUrl={AFFILIATE_LINKS.goldco}
+                                ctaText="Get Goldco's Free Wealth Kit"
+                            />
+
+                            {/* Main Body Content - TYPOGRAPHY PROSE */}
+                            <div className="prose prose-lg max-w-none text-gray-700">
+                                <h2>The Executive Summary</h2>
+                                <p>
+                                    <strong>Goldco</strong> is the heavy hitter of the industry. They have moved over <strong>$2 Billion</strong> in precious metals and have arguably the strongest celebrity endorsement lineup (Sean Hannity, Chuck Norris, Ben Stein).
+                                </p>
+                                <p>
+                                    But fame doesn't equal quality. What impressed us most was their <strong>"White Glove" service</strong>.
+                                    (See our <a href="/best-gold-ira-companies">full comparison table</a> to see how they stack up against Augusta).
+                                </p>
+                                <p>
+                                    When we <a href="/investigative-hub">mystery shopped them</a>, we didn't just get a sales rep; we got a dedicated "IRA Specialist" who offered to conference call our current 401(k) custodian to handle the transfer paperwork <em>for us</em>.
+                                </p>
+
+                                <h3>Pros & Cons at a Glance</h3>
+                                <ProsCons
+                                    pros={[
+                                        "Huge 'Free Silver' Bonus (Up to $10k)",
+                                        "Full 'White Glove' paperwork handling",
+                                        "Buyback Guarantee (Highest price)",
+                                        "Over 5,000 5-Star Reviews"
+                                    ]}
+                                    cons={[
+                                        "$25,000 Minimum Investment",
+                                        "Does not disclose spread on website",
+                                        "Can have wait times during busy seasons"
+                                    ]}
+                                />
+
+                                <h2>1. The "Free Silver" Bonus Explained</h2>
+                                <p>
+                                    This is Goldco's biggest selling point. Depending on your investment amount, Goldco will give you up to <strong>10% back in free silver coins</strong>.
+                                </p>
+                                <ul>
+                                    <li>Invest $50k → Get ~$5,000 in Free Silver</li>
+                                    <li>Invest $100k → Get ~$10,000 in Free Silver</li>
+                                </ul>
+                                <p>
+                                    <strong>Why this matters:</strong> Most gold companies charge fees. Goldco essentially <em>pays you</em> to become a client. This bonus silver helps offset any fees or market volatility in your first year.
+                                </p>
+
+                                <h2>2. Fees & Pricing</h2>
+                                <p>
+                                    Goldco is competitive, though not the absolute cheapest on annual fees.
+                                </p>
+                                <ul>
+                                    <li><strong>Setup Fee:</strong> $50 (One-time)</li>
+                                    <li><strong>Annual Fees:</strong> ~$180 (Storage + Custodian)</li>
+                                    <li><strong>Minimum:</strong> $25,000</li>
+                                </ul>
+                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                    <h4 className="font-bold text-blue-900 flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5" /> Fee Waiver Note
+                                    </h4>
+                                    <p className="text-sm text-blue-800">
+                                        For accounts over $50,000, Goldco will often waive your storage fees for the first year. Be sure to ask your specialist if you qualify for this waiver on top of the silver bonus.
+                                    </p>
+                                </div>
+
+                                <h2>3. The "White Glove" Rollover Process</h2>
+                                <p>
+                                    Rollovers are scary. One wrong form and the IRS can hit you with taxes.
+                                    Goldco's team specializes in this. They have a 3-step process:
+                                </p>
+                                <ol>
+                                    <li><strong>Open IRA:</strong> They generate the paperwork for you to sign digitally.</li>
+                                    <li><strong>Fund Account:</strong> They talk to your old 401(k) provider to move the funds tax-free.</li>
+                                    <li><strong>Select Metals:</strong> You pick your gold/silver coins.</li>
+                                </ol>
+                                <p>
+                                    During our test, they offered to stay on the line with Fidelity (our test 401k) to ensure the wire was sent correctly. That is peace of mind.
+                                </p>
+
+                                <hr className="my-12 border-gray-200" />
+
+                                <h2>Final Verdict: Are They Worth It?</h2>
+                                <p>
+                                    If you want the <strong>easiest possible experience</strong>, choose Goldco.
+                                    They are built for people who want to "set it and forget it" without getting bogged down in IRS tax codes.
+                                    The massive silver bonus is just the cherry on top.
+                                </p>
+                            </div>
+
+                            {/* Bottom CTA */}
+                            <div className="bg-[#1e1e1e] text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                                <div className="relative z-10">
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Claim Your Free Wealth Kit From Goldco</h3>
+                                    <p className="mb-8 text-gray-300 max-w-lg mx-auto">
+                                        See how much FREE SILVER you qualify for today.
+                                    </p>
+                                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
+                                        <a href={AFFILIATE_LINKS.goldco} target="_blank" rel="noopener noreferrer">
+                                            Request Free Kit & Bonus Info
+                                        </a>
+                                    </Button>
+                                </div>
+                            </div>
+                        </article>
+
+                        {/* Sidebar */}
+                        <aside className="relative">
+                            <StickyMasterSidebar />
+                        </aside>
                     </div>
                 </Container>
-            </header>
-
-            <Container className="py-12">
-                <div className="flex flex-col lg:flex-row gap-12">
-                    <div className="flex-1">
-                        <div className="flex flex-col-reverse lg:flex-col gap-8">
-                            <div className="block lg:hidden"><ReviewSidebar {...companyData} /></div>
-
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
-                                <section id="overview" className="scroll-mt-32">
-                                    <p className="lead">
-                                        In this <strong>Goldco review</strong>, we examine one of the most heavily-marketed gold IRA companies and determine whether they live up to the hype.
-                                    </p>
-                                    <p>
-                                        Founded in 2006, Goldco has grown into one of the largest precious metals companies in the United States. They&apos;ve processed over $2 billion in precious metals transactions and serve clients across all 50 states.
-                                    </p>
-                                    <p>
-                                        What makes Goldco unique is their <strong>strong focus on silver</strong> alongside gold. They believe silver offers better growth potential while gold provides stability—and they help clients find the right balance.
-                                    </p>
-
-                                    <div className="bg-secondary/5 rounded-2xl p-6 border border-secondary/10 not-prose my-8">
-                                        <div className="flex items-start gap-4">
-                                            <Award className="w-10 h-10 text-secondary flex-shrink-0" />
-                                            <div>
-                                                <h4 className="font-bold text-primary text-lg mb-2">Goldco Highlights</h4>
-                                                <ul className="space-y-2 text-sm text-text-muted">
-                                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-secondary" />Over $2 billion in precious metals transactions</li>
-                                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-secondary" />A+ BBB rating, 4.8/5 customer reviews</li>
-                                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-secondary" />Endorsed by Sean Hannity and Ben Shapiro</li>
-                                                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-secondary" />Industry-leading silver IRA expertise</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section id="pros-cons" className="scroll-mt-32">
-                                    <h2>Goldco: Pros & Cons</h2>
-                                    <ProsCons pros={companyData.pros} cons={companyData.cons} />
-                                </section>
-
-                                <section id="services" className="scroll-mt-32">
-                                    <h2>Services & Products</h2>
-                                    <h3>Gold & Silver IRAs</h3>
-                                    <p>Goldco specializes in both gold and silver IRAs, with a particular emphasis on silver&apos;s growth potential. They offer a wide selection of IRS-approved coins and bars.</p>
-
-                                    <h3>Direct Precious Metals Purchases</h3>
-                                    <p>Buy gold and silver for direct delivery outside of an IRA structure.</p>
-
-                                    <h3>Buyback Program</h3>
-                                    <p>Goldco offers to repurchase metals they&apos;ve sold you at competitive prices, providing liquidity when needed.</p>
-
-                                    <Callout type="tip" title="Silver Focus">
-                                        Goldco believes silver is undervalued relative to gold. Their team can explain the gold-to-silver ratio and help you determine if adding silver to your IRA makes sense.
-                                    </Callout>
-                                </section>
-
-                                <section id="fees" className="scroll-mt-32">
-                                    <h2>Goldco Fees</h2>
-                                    <div className="overflow-x-auto not-prose my-8">
-                                        <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                            <thead className="bg-gray-50">
-                                                <tr>
-                                                    <th className="p-4 border-b font-bold text-primary">Fee Type</th>
-                                                    <th className="p-4 border-b font-bold text-primary">Cost</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody className="divide-y divide-gray-100 text-sm">
-                                                <tr><td className="p-4 font-semibold">Setup Fee</td><td className="p-4">$50</td></tr>
-                                                <tr><td className="p-4 font-semibold">Annual Custodian Fee</td><td className="p-4">$80</td></tr>
-                                                <tr><td className="p-4 font-semibold">Annual Storage Fee</td><td className="p-4">$100-$150</td></tr>
-                                                <tr className="bg-secondary/5"><td className="p-4 font-bold text-primary">Total Annual</td><td className="p-4 font-bold text-primary">$175-$225</td></tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </section>
-
-                                <section id="customer-reviews" className="scroll-mt-32">
-                                    <h2>Customer Reviews</h2>
-                                    <div className="grid md:grid-cols-3 gap-4 not-prose my-8">
-                                        <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
-                                            <div className="text-4xl font-bold text-primary mb-2">A+</div>
-                                            <div className="text-sm text-text-muted">BBB Rating</div>
-                                        </div>
-                                        <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
-                                            <div className="text-4xl font-bold text-primary mb-2">4.8/5</div>
-                                            <div className="text-sm text-text-muted">TrustPilot</div>
-                                        </div>
-                                        <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
-                                            <div className="text-4xl font-bold text-primary mb-2">4.7/5</div>
-                                            <div className="text-sm text-text-muted">Google</div>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section id="who-should-use" className="scroll-mt-32">
-                                    <h2>Who Should Use Goldco?</h2>
-                                    <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                        <div className="p-6 rounded-xl bg-green-50 border border-green-100">
-                                            <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2"><CheckCircle2 className="w-5 h-5" />Perfect For</h4>
-                                            <ul className="space-y-2 text-sm text-green-600">
-                                                <li>• Investors with $25,000-$100,000</li>
-                                                <li>• Those interested in silver IRAs</li>
-                                                <li>• People who value established brands</li>
-                                            </ul>
-                                        </div>
-                                        <div className="p-6 rounded-xl bg-red-50 border border-red-100">
-                                            <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2"><AlertTriangle className="w-5 h-5" />Not Ideal For</h4>
-                                            <ul className="space-y-2 text-sm text-red-600">
-                                                <li>• Investors under $25,000</li>
-                                                <li>• Those seeking extensive education</li>
-                                                <li>• People who dislike marketing calls</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section id="verdict" className="scroll-mt-32">
-                                    <h2>Our Verdict</h2>
-                                    <p>Goldco is a solid choice for mid-range investors who want a reputable company with strong silver expertise. Their celebrity endorsements speak to their mainstream appeal.</p>
-                                    <div className="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-8 not-prose text-center">
-                                        <ShieldCheck className="w-12 h-12 text-secondary mx-auto mb-4" />
-                                        <h3 className="text-2xl font-serif font-bold text-primary mb-2">Our Rating: 4.7/5</h3>
-                                        <p className="mb-6 text-gray-600">Best for silver-focused investors with $25k+.</p>
-                                        <Button variant="gold" size="xl" asChild>
-                                            <a href={companyData.visitUrl} target="_blank" rel="noopener noreferrer">Get Free Gold Kit <ArrowRight className="ml-2 w-5 h-5" /></a>
-                                        </Button>
-                                    </div>
-                                </section>
-
-                                <section id="faq" className="scroll-mt-32">
-                                    <h2>Goldco FAQs</h2>
-                                    <div className="space-y-4 not-prose">
-                                        <details className="group bg-white rounded-xl border border-gray-200 p-6">
-                                            <summary className="flex cursor-pointer items-center justify-between text-primary">
-                                                <h4 className="text-lg font-bold">Is Goldco legitimate?</h4>
-                                            </summary>
-                                            <p className="mt-4 text-gray-700">Yes, Goldco is a legitimate, A+ BBB-rated company that has processed over $2 billion in transactions since 2006.</p>
-                                        </details>
-                                        <details className="group bg-white rounded-xl border border-gray-200 p-6">
-                                            <summary className="flex cursor-pointer items-center justify-between text-primary">
-                                                <h4 className="text-lg font-bold">What is Goldco&apos;s minimum investment?</h4>
-                                            </summary>
-                                            <p className="mt-4 text-gray-700">Goldco requires a minimum of $25,000 to open a gold or silver IRA.</p>
-                                        </details>
-                                    </div>
-                                </section>
-
-                                {/* Related Content */}
-                                <section className="mt-12 not-prose">
-                                    <h3 className="text-lg font-bold text-primary mb-4">Compare Other Companies</h3>
-                                    <div className="grid md:grid-cols-2 gap-3 mb-6">
-                                        <Link href="/reviews/augusta-precious-metals" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">Augusta Precious Metals →</span>
-                                        </Link>
-                                        <Link href="/reviews/american-hartford-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">American Hartford Gold →</span>
-                                        </Link>
-                                        <Link href="/reviews/birch-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">Birch Gold Group →</span>
-                                        </Link>
-                                        <Link href="/reviews/noble-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">Noble Gold →</span>
-                                        </Link>
-                                    </div>
-                                    <h3 className="text-lg font-bold text-primary mb-4">Helpful Guides</h3>
-                                    <div className="grid md:grid-cols-2 gap-3">
-                                        <Link href="/guide/gold-ira-fees" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">Gold IRA Fees Explained →</span>
-                                        </Link>
-                                        <Link href="/guide/401k-to-gold-rollover" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">401k to Gold Rollover →</span>
-                                        </Link>
-                                        <Link href="/learn/gold-ira-scams" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">Scams to Avoid →</span>
-                                        </Link>
-                                        <Link href="/compare/gold-ira-vs-physical-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                            <span className="text-sm font-semibold text-primary">Gold IRA vs Physical Gold →</span>
-                                        </Link>
-                                    </div>
-                                </section>
-                            </article>
-                        </div>
-                    </div>
-                    <aside className="w-80 flex-shrink-0 hidden lg:block">
-                        <ReviewSidebar {...companyData} />
-                        <div className="mt-8"><TableOfContents items={tocItems} /></div>
-                    </aside>
-                </div>
-            </Container>
+            </div>
+            <Footer />
         </main>
     );
 }

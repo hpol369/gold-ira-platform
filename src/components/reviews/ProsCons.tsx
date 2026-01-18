@@ -7,36 +7,38 @@ interface ProsConsProps {
 
 export function ProsCons({ pros, cons }: ProsConsProps) {
     return (
-        <div className="grid md:grid-cols-2 gap-8 my-12">
-            <div className="bg-green-50/50 rounded-2xl p-8 border border-green-100">
-                <h3 className="text-xl font-bold text-green-800 mb-6 flex items-center gap-2">
-                    <div className="p-1.5 bg-green-100 rounded-full">
-                        <Check className="w-5 h-5 text-green-600" />
+        <div className="grid md:grid-cols-2 gap-6 my-12 not-prose">
+            {/* Pros */}
+            <div className="bg-green-50/50 border border-green-100 rounded-2xl p-6">
+                <h3 className="font-bold text-green-800 text-lg mb-4 flex items-center gap-2">
+                    <div className="bg-green-100 p-1.5 rounded-full">
+                        <Check className="w-4 h-4 text-green-700" strokeWidth={3} />
                     </div>
                     The Good
                 </h3>
-                <ul className="space-y-4">
-                    {pros.map((pro, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                            <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                            <span className="text-sm text-gray-700 leading-relaxed font-medium">{pro}</span>
+                <ul className="space-y-3">
+                    {pros.map((pro, i) => (
+                        <li key={i} className="flex items-start gap-3 text-gray-700 text-sm">
+                            <Check className="w-4 h-4 text-green-600 mt-0.5 shrink-0" />
+                            <span>{pro}</span>
                         </li>
                     ))}
                 </ul>
             </div>
 
-            <div className="bg-red-50/50 rounded-2xl p-8 border border-red-100">
-                <h3 className="text-xl font-bold text-red-800 mb-6 flex items-center gap-2">
-                    <div className="p-1.5 bg-red-100 rounded-full">
-                        <X className="w-5 h-5 text-red-600" />
+            {/* Cons */}
+            <div className="bg-red-50/50 border border-red-100 rounded-2xl p-6">
+                <h3 className="font-bold text-red-800 text-lg mb-4 flex items-center gap-2">
+                    <div className="bg-red-100 p-1.5 rounded-full">
+                        <X className="w-4 h-4 text-red-700" strokeWidth={3} />
                     </div>
                     The Bad
                 </h3>
-                <ul className="space-y-4">
-                    {cons.map((con, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                            <X className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-                            <span className="text-sm text-gray-700 leading-relaxed font-medium">{con}</span>
+                <ul className="space-y-3">
+                    {cons.map((con, i) => (
+                        <li key={i} className="flex items-start gap-3 text-gray-700 text-sm">
+                            <X className="w-4 h-4 text-red-600 mt-0.5 shrink-0" />
+                            <span>{con}</span>
                         </li>
                     ))}
                 </ul>

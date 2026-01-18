@@ -45,9 +45,17 @@ export function Footer() {
                     {/* Disclaimer (Small & Legal) */}
                     <div className="col-span-1 md:col-span-1">
                         <h3 className="font-serif text-lg font-semibold text-secondary mb-4">Important Disclosure</h3>
-                        <p className="text-xs text-gray-400 leading-relaxed text-balance">
-                            RichDadRetirement.com is an independent review website. We may receive meaningful compensation from the companies we review and recommend. This compensation may influence the placement and order of companies on our site. We are not financial advisors. All investments involve risk, including the loss of principal.
-                        </p>
+                        <div className="text-xs sm:text-sm text-gray-400 leading-relaxed text-balance space-y-4">
+                            <p>
+                                <strong>We are not financial advisors.</strong> RichDadRetirement.com is an educational website funded by referral fees.
+                            </p>
+                            <p>
+                                We may receive meaningful compensation from the companies we review and recommend (such as Augusta Precious Metals or Goldco). This compensation may influence which companies we review and where they appear on the site.
+                            </p>
+                            <p>
+                                All investments involve risk, including the loss of principal. Gold is not guaranteed to go up. Always consult with a qualified financial planner or tax professional before moving your retirement funds.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -55,6 +63,7 @@ export function Footer() {
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
                     <p>© {currentYear} Rich Dad Retirement. All rights reserved.</p>
                     <div className="flex gap-6">
+                        <Link href="/editorial-policy" className="hover:text-white transition-colors">Affiliate Disclosure</Link>
                         <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
                         <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/editorial-policy" className="hover:text-white transition-colors">Editorial Policy</Link>

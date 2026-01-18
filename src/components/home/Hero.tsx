@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, TrendingUp, Users, Lock, ChevronRight } from "lucide-react";
+import { ArrowRight, ShieldCheck, TrendingUp, Lock, ChevronRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
@@ -23,18 +23,12 @@ export function Hero() {
                 <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
 
                     {/* Floating Badge */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-secondary mb-8 backdrop-blur-md hover:bg-white/10 transition-colors cursor-default shadow-lg shadow-black/20"
-                    >
+                    <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-gray-300 mb-8 backdrop-blur-md">
                         <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                         </span>
-                        <span>Urgent: The Dollar Buying Power is Down 14%</span>
-                    </motion.div>
+                        <span>Last Updated: January 18, 2026</span>
+                    </div>
 
                     {/* Main Headline */}
                     <motion.h1
@@ -57,41 +51,82 @@ export function Hero() {
                         See how to use a <strong className="text-white font-semibold">Tax-Free Gold IRA</strong> to opt out of the failing banking system.
                     </motion.p>
 
-                    {/* CTAs */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                        className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center"
-                    >
+                    <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
                         <Button
                             size="xl"
-                            variant="gold"
                             asChild
-                            className="w-full sm:w-auto min-w-[280px] h-16 text-lg shadow-[0_0_40px_-10px_rgba(212,168,53,0.6)] hover:scale-105 transition-transform duration-300 border-2 border-[#fff8e7]/20 relative overflow-hidden group"
+                            className="w-full sm:w-auto min-w-[280px] h-16 text-lg font-bold text-[#1a5d3a] 
+                            bg-gradient-to-b from-[#fadd7d] via-[#f2c94c] to-[#d4a017] 
+                            shadow-[0_0_50px_-10px_rgba(250,221,125,0.4)] hover:shadow-[0_0_60px_-10px_rgba(250,221,125,0.6)]
+                            hover:scale-105 transition-all duration-300 border border-[#fff8e7]/40 relative overflow-hidden group"
                         >
-                            <Link href="/quiz">
+                            <Link href="/best-gold-ira-companies">
                                 <span className="relative z-10 flex items-center justify-center gap-2">
-                                    Calculate Your "Rich Dad" Score
+                                    See Best Companies of 2026
                                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                                 </span>
                                 {/* Shine Effect */}
-                                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+                                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-12" />
                             </Link>
                         </Button>
 
                         <Button
                             size="xl"
-                            className="bg-white/5 hover:bg-white/10 text-white border border-white/10 w-full sm:w-auto min-w-[280px] h-16 text-lg backdrop-blur-sm transition-all duration-300"
+                            className="bg-white/5 hover:bg-white/10 text-white border border-white/20 hover:border-white/40 w-full sm:w-auto min-w-[280px] h-16 text-lg backdrop-blur-sm transition-all duration-300 shadow-lg"
                             asChild
                         >
-                            <Link href="/rich-dad-strategy">
+                            <Link href="/guide/gold-ira-guide">
                                 <span className="flex items-center justify-center gap-2">
-                                    Read The Strategy
+                                    Get Free PDF Guide
                                     <ChevronRight className="h-5 w-5 text-secondary" />
                                 </span>
                             </Link>
                         </Button>
+                    </div>
+
+                    {/* Trust Strip (Phase 1.5) */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.8, delay: 0.6 }}
+                        className="mt-8 flex flex-wrap justify-center gap-6 md:gap-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 z-10 relative"
+                    >
+                        {/* BBB */}
+                        <div className="flex items-center gap-2">
+                            <div className="bg-white/10 p-1 rounded">
+                                <span className="font-sans font-bold text-white text-xs leading-none">BBB</span>
+                            </div>
+                            <div className="flex flex-col text-left">
+                                <span className="text-[10px] text-gray-400 uppercase tracking-widest leading-none">Rating</span>
+                                <span className="text-sm font-bold text-white leading-none">A+ Accredited</span>
+                            </div>
+                        </div>
+
+                        {/* Trustpilot Placeholder */}
+                        <div className="flex items-center gap-2 border-l border-white/10 pl-6">
+                            <div className="flex text-[#00b67a]">
+                                {[1, 2, 3, 4, 5].map(i => (
+                                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                ))}
+                            </div>
+                            <div className="flex flex-col text-left">
+                                <span className="text-[10px] text-gray-400 uppercase tracking-widest leading-none">Trustpilot</span>
+                                <span className="text-sm font-bold text-white leading-none">4.9/5.0 Score</span>
+                            </div>
+                        </div>
+
+                        {/* Consumer Affairs */}
+                        <div className="flex items-center gap-2 border-l border-white/10 pl-6">
+                            <div className="flex text-amber-500">
+                                {[1, 2, 3, 4, 5].map(i => (
+                                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                ))}
+                            </div>
+                            <div className="flex flex-col text-left">
+                                <span className="text-[10px] text-gray-400 uppercase tracking-widest leading-none">Consumer</span>
+                                <span className="text-sm font-bold text-white leading-none">Affairs Linked</span>
+                            </div>
+                        </div>
                     </motion.div>
 
                     {/* Trust Factors / Social Proof */}

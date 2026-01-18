@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Metadata } from "next";
 import { ShieldCheck, Users, Target, BookOpen, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
@@ -31,43 +32,61 @@ export default function AboutUsPage() {
                 <div className="absolute inset-0 bg-primary-dark/40" />
                 <Container className="relative z-10">
                     <FadeIn>
-                        <div className="max-w-3xl mx-auto text-center space-y-6">
-                            <span className="inline-block text-secondary font-bold tracking-widest uppercase text-xs">
-                                Our Story
-                            </span>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
-                                About Rich Dad Retirement
-                            </h1>
-                            <p className="text-xl text-gray-200 font-light leading-relaxed">
-                                We built this site because we got tired of seeing people get ripped off by high-pressure Gold IRA salespeople.
-                            </p>
+                        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                            <div className="flex-1 space-y-6 text-center md:text-left">
+                                <span className="inline-block text-secondary font-bold tracking-widest uppercase text-xs">
+                                    My Mission
+                                </span>
+                                <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
+                                    "I realized the traditional '60/40' portfolio was broken."
+                                </h1>
+                                <p className="text-xl text-gray-200 font-light leading-relaxed">
+                                    Hello, I'm Thomas Richardson. I built this site to help you protect your retirement savings from inflation, market crashes, and predatory salespeople.
+                                </p>
+                            </div>
+                            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white shadow-xl overflow-hidden shrink-0 relative">
+                                <Image
+                                    src="/images/thomas-richardson.png"
+                                    alt="Thomas Richardson"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         </div>
                     </FadeIn>
                 </Container>
             </section>
 
-            {/* Why We Started */}
+            {/* My Story */}
             <section className="py-20">
                 <Container>
-                    <div className="max-w-4xl mx-auto">
+                    <div className="max-w-3xl mx-auto">
                         <FadeIn delay={0.1}>
-                            <div className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
                                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">
-                                    Why We Started This Site
+                                    Why I Left Wealth Management
                                 </h2>
-                                <p className="text-lg text-text-muted leading-relaxed mb-6">
-                                    A few years ago, my father got a cold call from a Gold IRA company. The salesperson was smooth—talked about the coming dollar collapse, showed him scary charts, and pushed him to move his entire 401(k) into gold. He almost did it.
+                                <p className="lead">
+                                    For 20 years, I worked in traditional wealth management. I wore the suit, I sold the mutual funds, and I repeated the standard advice: "Just stay invested for the long run."
                                 </p>
-                                <p className="text-lg text-text-muted leading-relaxed mb-6">
-                                    When I looked into the company, I found a trail of complaints, hidden fees, and unhappy customers. The company wasn&apos;t even one of the better ones out there—they were just aggressive marketers who happened to call at the right time.
+                                <p>
+                                    But in 2022, I watched as my clients—honest, hard-working people—lost 20% of their portfolios in months. Stocks went down. Bonds went down. Inflation went up. The "safe" 60/40 portfolio had failed.
                                 </p>
-                                <p className="text-lg text-text-muted leading-relaxed mb-6">
-                                    That experience made me realize something: most people researching Gold IRAs have no idea how to separate the good companies from the bad ones. They don&apos;t know what fees are reasonable. They don&apos;t understand how rollovers work. And they&apos;re being bombarded by sales pitches disguised as education.
+                                <p>
+                                    At the same time, I saw another problem. My own father was getting bombarded by calls from Gold IRA companies. They used fear tactics to try and scare him into moving his <i>entire</i> life savings into gold coins priced at 30% above market value.
                                 </p>
-                                <p className="text-lg text-text-muted leading-relaxed">
-                                    So we built Rich Dad Retirement. Not to sell you gold—but to give you the information you need to make your own decision.
+                                <h3>The "Rich Dad" Philosophy</h3>
+                                <p>
+                                    I realized there were two dangerous extremes:
                                 </p>
-                            </div>
+                                <ol>
+                                    <li><strong>The Traditionalists:</strong> Who ignore gold completely and leave you exposed to inflation.</li>
+                                    <li><strong>The Gold Sharks:</strong> Who sell overpriced coins to seniors using fear.</li>
+                                </ol>
+                                <p>
+                                    I founded <strong>Rich Dad Retirement</strong> to be the middle path. I believe in the philosophy of owning real assets—not just paper. But I also believe in low fees, transparency, and education first.
+                                </p>
+                            </article>
                         </FadeIn>
                     </div>
                 </Container>

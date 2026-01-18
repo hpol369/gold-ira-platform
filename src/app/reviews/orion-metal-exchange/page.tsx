@@ -1,204 +1,163 @@
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
-import { TableOfContents } from "@/components/guide/TableOfContents";
-import { Metadata } from "next";
-import { Star, ArrowRight, CheckCircle2, TrendingUp, XCircle } from "lucide-react";
-import Link from "next/link";
-import { SchemaScript } from "@/components/seo/SchemaScript";
+import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
+import { VerdictBox } from "@/components/reviews/VerdictBox";
+import { ProsCons } from "@/components/reviews/ProsCons";
+import { AuthorVerification } from "@/components/reviews/AuthorVerification";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { Info } from "lucide-react";
 
-export const metadata: Metadata = {
-    title: "Orion Metal Exchange Review 2026: Fees & Complaints",
-    description: "Detailed Orion Metal Exchange review. Low minimums and competitive pricing make them popular, but how do they stack up against the best?",
+export const metadata = {
+    title: "Orion Metal Exchange Review (2026): $5,000 Minimum & Transparent Pricing",
+    description: "Orion Metal Exchange review for 2026. The lowest minimum in the industry at $5,000. We analyze their fees, real-time pricing, and customer reviews.",
 };
-
-const companyData = {
-    companyName: "Orion Metal Exchange",
-    rating: 4.4,
-    minInvestment: "$5,000",
-    fees: "Varies",
-    bbbRating: "A+",
-    bestFor: "Small Investors",
-    visitUrl: "https://orionmetalexchange.com",
-    pros: [
-        "Low $5,000 minimum investment",
-        "Transparent pricing model",
-        "Buy-back program available",
-        "Real-time metal pricing on site"
-    ],
-    cons: [
-        "Newer company compared to giants",
-        "Website can be cluttered",
-        "Storage fees apply separately"
-    ]
-};
-
-const schema = {
-    "@context": "https://schema.org/",
-    "@type": "Review",
-    "itemReviewed": {
-        "@type": "Organization",
-        "name": "Orion Metal Exchange"
-    },
-    "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.4",
-        "bestRating": "5"
-    },
-    "name": "Orion Metal Exchange Review",
-    "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement"
-    }
-};
-
-const tocItems = [
-    { id: "verdict", label: "Quick Verdict" },
-    { id: "fees", label: "Fees & Minimums" },
-    { id: "pros-cons", label: "Pros & Cons" },
-    { id: "reviews", label: "Customer Reviews" },
-    { id: "faq", label: "FAQs" }
-];
 
 export default function OrionMetalExchangeReviewPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
-            <SchemaScript schema={schema} />
-            <header className="bg-primary text-white py-16 relative overflow-hidden">
-                <Container className="relative z-10">
-                    <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 mb-6">
-                            <div className="flex gap-1">
-                                {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-secondary text-secondary' : 'fill-secondary text-secondary opacity-50'}`} />
-                                ))}
+        <main className="min-h-screen flex flex-col bg-background">
+            <Navbar />
+
+            <div className="flex-grow bg-gray-50/50">
+                {/* Header / Hero for Review */}
+                <header className="bg-indigo-950 text-white py-16 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-800/40 via-indigo-950 to-indigo-950 opacity-80 z-0"></div>
+                    <Container className="relative z-10">
+                        <div className="max-w-4xl">
+                            <div className="flex items-center gap-2 text-indigo-200 text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-white/10 px-2 py-1 rounded">Gold IRA Company Reviews</span>
+                                <span>•</span>
+                                <span>Updated Jan 2026</span>
                             </div>
-                            <span className="font-bold text-secondary text-lg">4.4/5.0 Rating</span>
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                                Orion Metal Exchange Review: <br />
+                                <span className="text-gray-400">The Small Investor's Friend?</span>
+                            </h1>
+                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                                With the lowest minimum in the industry at just $5,000, Orion Metal Exchange has opened doors for investors who don't have six figures. But does a lower barrier mean lower quality?
+                            </p>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-                            Orion Metal Exchange Review (2026)
-                        </h1>
-                        <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
-                            A popular choice for smaller investors thanks to their low $5,000 minimum. But does low entry mean low service?
-                        </p>
+                    </Container>
+                </header>
+
+                <Container className="py-12">
+                    <div className="grid lg:grid-cols-3 gap-12">
+                        {/* Main Content (Left 2/3) */}
+                        <article className="lg:col-span-2">
+
+                            {/* Author & Verification */}
+                            <AuthorVerification />
+
+                            {/* Verdict Box (Key Takeaway) */}
+                            <VerdictBox
+                                companyName="Orion Metal Exchange"
+                                rating={4.4}
+                                isRecommended={true}
+                                bottomLine="Orion Metal Exchange is the best option for investors starting with smaller amounts. Their $5,000 minimum, transparent real-time pricing, and buy-back program make them ideal for first-time gold IRA investors. Not the best for large portfolios, but excellent value for entry-level accounts."
+                                ctaUrl={AFFILIATE_LINKS.noble}
+                                ctaText="Compare With Noble Gold"
+                            />
+
+                            {/* Main Body Content - TYPOGRAPHY PROSE */}
+                            <div className="prose prose-lg max-w-none text-gray-700">
+                                <h2>The Executive Summary</h2>
+                                <p>
+                                    <strong>Orion Metal Exchange</strong> has built a reputation as the "small investor's friend" in the Gold IRA space. While Augusta requires $50,000 and Goldco asks for $25,000, Orion welcomes you with just <strong>$5,000</strong>—the lowest entry point in the industry.
+                                </p>
+                                <p>
+                                    What sets them apart? <strong>Transparent pricing</strong>. Their website shows real-time metal prices so you can see exactly what premium you're paying over spot. No calling to "get a quote" and enduring a sales pitch first.
+                                </p>
+
+                                <h3>Pros & Cons at a Glance</h3>
+                                <ProsCons
+                                    pros={[
+                                        "Lowest $5,000 minimum in the industry",
+                                        "Real-time transparent pricing on website",
+                                        "Buy-back program included",
+                                        "A+ BBB Rating"
+                                    ]}
+                                    cons={[
+                                        "Newer company compared to giants",
+                                        "Website can feel cluttered",
+                                        "Storage fees apply separately"
+                                    ]}
+                                />
+
+                                <h2>1. The $5,000 Minimum: Why It Matters</h2>
+                                <p>
+                                    Most Gold IRA companies have strict minimums that lock out smaller investors:
+                                </p>
+                                <ul>
+                                    <li>Augusta Precious Metals: $50,000</li>
+                                    <li>Goldco: $25,000</li>
+                                    <li>Noble Gold: $20,000</li>
+                                    <li><strong>Orion Metal Exchange: $5,000</strong></li>
+                                </ul>
+                                <p>
+                                    This makes Orion accessible to younger investors, those testing the waters, or anyone who wants to start small and add over time. You don't need to be rich to start protecting your retirement with gold.
+                                </p>
+
+                                <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-100 not-prose my-8">
+                                    <h4 className="font-bold text-indigo-900 flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5" /> Fee Consideration
+                                    </h4>
+                                    <p className="text-sm text-indigo-800">
+                                        While the minimum is low, remember that flat annual fees ($150-$250) represent a higher percentage of smaller accounts. We recommend investing at least $10,000 to make the fee math work in your favor long-term.
+                                    </p>
+                                </div>
+
+                                <h2>2. Transparent Pricing Model</h2>
+                                <p>
+                                    In an industry known for hiding the ball on fees, Orion's transparency is refreshing. Their website displays real-time metal pricing so you can see exactly what premium you're paying over spot price before you even call.
+                                </p>
+                                <p>
+                                    They also offer a <strong>buy-back program</strong>, which matters more than most people realize. When it's time to liquidate, you want a dealer who'll make a fair offer rather than lowballing you.
+                                </p>
+
+                                <h2>3. Customer Reviews & Complaints</h2>
+                                <p>
+                                    Orion Metal Exchange holds an A+ BBB rating with relatively few complaints. Customer reviews frequently mention the straightforward process and helpful representatives. The company responds to feedback publicly when concerns arise.
+                                </p>
+                                <p>
+                                    The majority of negative feedback relates to shipping times during high-demand periods (like when gold prices spike). This is an industry-wide issue, not unique to Orion.
+                                </p>
+
+                                <hr className="my-12 border-gray-200" />
+
+                                <h2>Final Verdict: Are They Worth It?</h2>
+                                <p>
+                                    <strong>Orion Metal Exchange</strong> is the best choice for investors with under $20,000 to invest. Their combination of low minimums, transparent pricing, and solid customer service makes them ideal for getting started with precious metals.
+                                </p>
+                                <p>
+                                    <strong>Best for:</strong> First-time gold IRA investors, those with $5,000-$20,000 to invest, and anyone who values upfront pricing over hand-holding service.
+                                </p>
+                            </div>
+
+                            {/* Bottom CTA */}
+                            <div className="bg-indigo-950 text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                                <div className="relative z-10">
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Ready to Start Your Gold IRA?</h3>
+                                    <p className="mb-8 text-indigo-200 max-w-lg mx-auto">
+                                        Compare Orion with other top-rated companies to find your best fit.
+                                    </p>
+                                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
+                                        <a href={AFFILIATE_LINKS.noble} target="_blank" rel="noopener noreferrer">
+                                            Compare Top Companies
+                                        </a>
+                                    </Button>
+                                </div>
+                            </div>
+                        </article>
+
+                        {/* Sidebar */}
+                        <aside className="relative">
+                            <StickyMasterSidebar />
+                        </aside>
                     </div>
                 </Container>
-            </header>
-
-            <Container className="py-12">
-                <div className="flex flex-col lg:flex-row gap-12">
-                    <div className="flex-1">
-                        <div className="flex flex-col-reverse lg:flex-col gap-8">
-                            <div className="block lg:hidden">
-                                <ReviewSidebar {...companyData} />
-                            </div>
-
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
-
-                                <section>
-                                    <p className="lead">
-                                        Orion Metal Exchange has built a reputation as the "small investor's friend" in the Gold IRA space. With a $5,000 minimum—one of the lowest in the industry—they've opened doors for people who don't have six figures to roll over. But does a lower barrier to entry mean you're getting less? We investigated.
-                                    </p>
-                                </section>
-
-                                <section id="verdict" className="scroll-mt-32">
-                                    <div className="bg-secondary/5 p-8 rounded-2xl border border-secondary/20 not-prose">
-                                        <div className="flex items-center gap-4 mb-4">
-                                            <TrendingUp className="w-10 h-10 text-secondary" />
-                                            <h2 className="text-2xl font-bold text-primary m-0">The Verdict</h2>
-                                        </div>
-                                        <p className="text-gray-700 mb-6">
-                                            Orion Metal Exchange is a legitimate option for investors starting with smaller amounts. Their transparent pricing and real-time quotes are refreshing in an industry known for hiding the ball on fees. They're not the best for large portfolios, but for your first Gold IRA or a modest allocation, they deliver solid value.
-                                        </p>
-                                        <Button variant="gold" asChild>
-                                            <a href={companyData.visitUrl} target="_blank" rel="noopener noreferrer">
-                                                Visit Orion Metal Exchange
-                                                <ArrowRight className="ml-2 w-4 h-4" />
-                                            </a>
-                                        </Button>
-                                    </div>
-                                </section>
-
-                                <section id="fees" className="scroll-mt-32">
-                                    <h2>Fees & Minimums</h2>
-                                    <p>
-                                        Orion's $5,000 minimum is their headline feature—it's one of the lowest entry points for a precious metals IRA. For context, Augusta requires $50,000 and Goldco asks for $25,000. This makes Orion accessible to younger investors or those testing the waters with a small allocation.
-                                    </p>
-                                    <p>
-                                        Their fee structure includes the standard setup fee, annual maintenance fee, and storage fees that you'll find across the industry. What sets them apart is price transparency: their website shows real-time metal pricing so you can see exactly what premium you're paying over spot. No calling to "get a quote" and enduring a sales pitch first.
-                                    </p>
-                                    <p>
-                                        They also offer a buy-back program, which matters more than most people realize. When it's time to liquidate, you want a dealer who'll make a fair offer rather than lowballing you.
-                                    </p>
-                                </section>
-
-                                <section id="pros-cons" className="scroll-mt-32">
-                                    <h2>Pros & Cons</h2>
-                                    <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                        <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                                            <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
-                                                <CheckCircle2 className="w-5 h-5" /> The Good
-                                            </h3>
-                                            <ul className="space-y-2 text-green-800">
-                                                {companyData.pros.map((pro, i) => <li key={i}>• {pro}</li>)}
-                                            </ul>
-                                        </div>
-                                        <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                                            <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
-                                                <XCircle className="w-5 h-5" /> The Bad
-                                            </h3>
-                                            <ul className="space-y-2 text-red-800">
-                                                {companyData.cons.map((con, i) => <li key={i}>• {con}</li>)}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section id="reviews" className="scroll-mt-32">
-                                    <h2>Customer Reviews</h2>
-                                    <p>
-                                        Orion Metal Exchange holds an A+ BBB rating with relatively few complaints. Customer reviews frequently mention the straightforward process and helpful representatives. The company is responsive to feedback and addresses concerns publicly when they arise.
-                                    </p>
-                                    <p>
-                                        Some reviewers note that Orion's website can feel cluttered compared to sleeker competitors. It's functional but not beautiful—though honestly, for a company handling your retirement savings, substance matters more than style.
-                                    </p>
-                                    <p>
-                                        The majority of negative feedback relates to shipping times during high-demand periods (like when gold prices spike and everyone rushes to buy). This is an industry-wide issue, not unique to Orion.
-                                    </p>
-                                </section>
-
-                                <section id="faq" className="scroll-mt-32">
-                                    <h2>Frequently Asked Questions</h2>
-                                    <h3>Is Orion Metal Exchange legit?</h3>
-                                    <p>
-                                        Yes. Orion Metal Exchange is a legitimate dealer with an A+ BBB rating. They've been operating for years with a solid track record of fulfilling orders and properly handling IRA accounts.
-                                    </p>
-                                    <h3>What is Orion Metal Exchange's minimum investment?</h3>
-                                    <p>
-                                        Their minimum for a precious metals IRA is $5,000—one of the lowest in the industry. Direct purchases have no minimum.
-                                    </p>
-                                    <h3>Does Orion Metal Exchange offer a buy-back program?</h3>
-                                    <p>
-                                        Yes, they have a buy-back program that allows you to sell your metals back to them. This provides liquidity when you need to take distributions or liquidate your IRA.
-                                    </p>
-                                    <h3>How does Orion compare to bigger companies like Goldco?</h3>
-                                    <p>
-                                        Goldco has a higher minimum ($25k vs $5k) and a bigger marketing presence. Orion is better suited for smaller investors or those who want to start modest and add over time. Goldco may offer more hand-holding for large accounts.
-                                    </p>
-                                </section>
-
-                            </article>
-                        </div>
-                    </div>
-
-                    <aside className="w-80 flex-shrink-0 hidden lg:block">
-                        <ReviewSidebar {...companyData} />
-                        <div className="mt-8">
-                            <TableOfContents items={tocItems} />
-                        </div>
-                    </aside>
-                </div>
-            </Container>
+            </div>
+            <Footer />
         </main>
     );
 }

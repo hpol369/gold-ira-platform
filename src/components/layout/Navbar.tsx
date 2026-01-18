@@ -44,38 +44,37 @@ export function Navbar() {
                             <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-primary text-secondary group-hover:bg-primary-dark transition-colors">
                                 <span className="font-serif font-bold text-lg">R</span>
                             </div>
-                            <span className="text-xl font-serif font-bold text-primary tracking-tight">
+                            <span className="text-xl font-serif font-bold text-primary tracking-tight hidden sm:block">
                                 Rich<span className="text-secondary">Dad</span>Retirement
                             </span>
                         </Link>
 
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex items-center gap-8">
-                            <Link href="/rich-dad-strategy" className="text-sm font-medium text-text hover:text-primary transition-colors relative group">
-                                The Strategy
-                                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                            </Link>
                             <Link href="/best-gold-ira-companies" className="text-sm font-medium text-text hover:text-primary transition-colors">
                                 Best Companies
                             </Link>
                             <Link href="/reviews" className="text-sm font-medium text-text hover:text-primary transition-colors">
-                                Reviews
-                            </Link>
-                            <Link href="/resources" className="text-sm font-medium text-text hover:text-primary transition-colors">
-                                Resources
+                                Company Reviews
                             </Link>
                             <Button variant="gold" size="sm" asChild>
-                                <Link href="/quiz">Check Eligibility</Link>
+                                <Link href="/guide/gold-ira-guide">Free PDF Guide</Link>
                             </Button>
                         </nav>
 
-                        {/* Mobile Menu Button */}
-                        <button
-                            className="lg:hidden p-2 text-primary"
-                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        >
-                            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                        </button>
+                        {/* Mobile Controls */}
+                        <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
+                            <Button variant="gold" size="sm" asChild className="flex">
+                                <Link href="/guide/gold-ira-guide">Free Guide</Link>
+                            </Button>
+                            {/* Mobile Menu Button */}
+                            <button
+                                className="p-2 text-primary"
+                                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            >
+                                {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                            </button>
+                        </div>
                     </div>
                 </Container>
             </div>
@@ -84,13 +83,6 @@ export function Navbar() {
             {isMobileMenuOpen && (
                 <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 py-4 px-4 shadow-xl">
                     <div className="flex flex-col gap-4">
-                        <Link
-                            href="/rich-dad-strategy"
-                            className="text-sm font-medium text-text hover:text-primary py-2 border-b border-gray-50"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            The Rich Dad Strategy
-                        </Link>
                         <Link
                             href="/best-gold-ira-companies"
                             className="text-sm font-medium text-text hover:text-primary py-2 border-b border-gray-50"
@@ -105,16 +97,9 @@ export function Navbar() {
                         >
                             Company Reviews
                         </Link>
-                        <Link
-                            href="/resources"
-                            className="text-sm font-medium text-text hover:text-primary py-2 border-b border-gray-50"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Resources
-                        </Link>
                         <Button variant="gold" className="w-full mt-2" asChild>
-                            <Link href="/quiz" onClick={() => setIsMobileMenuOpen(false)}>
-                                Check Eligibility
+                            <Link href="/guide/gold-ira-guide" onClick={() => setIsMobileMenuOpen(false)}>
+                                Free PDF Guide
                             </Link>
                         </Button>
                     </div>
