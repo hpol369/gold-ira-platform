@@ -212,5 +212,65 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "monthly",
             priority: 0.8,
         },
+        {
+            url: "https://www.richdadretirement.com/reviews/augusta-precious-metals-lawsuit",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/patriot-gold-group",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/birch-gold-complaints",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/us-money-reserve",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/us-money-reserve-complaints",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/rosland-capital",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/rosland-capital-lawsuit",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/monetary-gold",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/blanchard-gold",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/reviews/american-hartford-gold-complaints",
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
     ];
 }
