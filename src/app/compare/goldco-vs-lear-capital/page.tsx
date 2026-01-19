@@ -11,7 +11,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Goldco vs. Lear Capital: 2026 Comparison",
-    description: "Goldco vs Lear Capital: Comparing the industry heavyweight against the 25-year veteran.",
+    description: "Goldco vs Lear Capital: Comparing the industry heavyweight against the 25-year veteran. See fees, minimums, buyback policies, and our top pick for 2026.",
 };
 
 const comparisonRows: ComparisonRow[] = [

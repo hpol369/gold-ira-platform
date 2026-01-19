@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Terms of Service | Rich Dad Retirement",
-    description: "Terms of service for Rich Dad Retirement. Please read these terms before using our website.",
+    description: "Read the terms of service for Rich Dad Retirement. Understanding these terms is essential before using our Gold IRA educational resources and guides.",
 };
 
 export default function TermsOfServicePage() {

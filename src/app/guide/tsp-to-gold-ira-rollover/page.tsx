@@ -10,7 +10,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "TSP to Gold IRA Rollover Guide: Federal & Military Rules (2026)",
-    description: "Complete guide for Federal Employees and Military personnel on rolling over TSP funds to a Gold IRA. Learn about Form TSP-70, in-service withdrawals, and tax-free transfers.",
+    description: "Complete TSP to Gold IRA rollover guide for Federal Employees and Military. Learn Form TSP-70, in-service withdrawals, and tax-free transfers.",
 };
 
 const tocItems = [

@@ -9,7 +9,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "About Us | Rich Dad Retirement - Gold IRA Education & Reviews",
-    description: "Learn about Rich Dad Retirement's mission to provide honest Gold IRA education. We help retirees and investors understand precious metals investing without the sales pressure.",
+    description: "Learn about Rich Dad Retirement's mission to provide honest Gold IRA education. We help retirees understand precious metals investing.",
 };
 
 const schema = {

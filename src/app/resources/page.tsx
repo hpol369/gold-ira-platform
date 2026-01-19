@@ -8,7 +8,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Gold IRA Resources & Tools | Free Guides & Checklists",
-    description: "Free Gold IRA resources: educational guides, comparison tools, rollover checklists, and IRS-approved metals lists. Everything you need to make an informed decision.",
+    description: "Free Gold IRA resources: guides, comparison tools, rollover checklists, and IRS-approved metals lists. Everything you need to decide.",
 };
 
 const schema = {
@@ -26,6 +26,27 @@ const guides = [
         href: "/guide/gold-ira-guide",
         icon: BookOpen,
         tag: "Most Popular"
+    },
+    {
+        title: "Gold IRA Fees Guide",
+        description: "Understand setup fees, storage costs, custodian fees, and what's actually reasonable to pay.",
+        href: "/guide/gold-ira-fees",
+        icon: Calculator,
+        tag: null
+    },
+    {
+        title: "Gold IRA Minimum Investment",
+        description: "How much do you really need? We break down minimums by company and account type.",
+        href: "/guide/gold-ira-minimum-investment",
+        icon: Calculator,
+        tag: null
+    },
+    {
+        title: "Gold IRA for Seniors",
+        description: "Special considerations for retirees: RMDs, withdrawal strategies, and age-specific rules.",
+        href: "/guide/gold-ira-for-seniors",
+        icon: BookOpen,
+        tag: null
     },
     {
         title: "Silver IRA Guide",
@@ -84,9 +105,29 @@ const learnArticles = [
         href: "/learn/ira-approved-gold-coins"
     },
     {
-        title: "Gold IRA Fees Explained",
-        description: "Setup fees, storage costs, and what's actually reasonable.",
-        href: "/guide/gold-ira-fees"
+        title: "Home Storage Gold IRA",
+        description: "Why 'home storage' IRAs are risky and usually illegal.",
+        href: "/learn/home-storage-gold-ira"
+    },
+    {
+        title: "Self-Directed IRA Gold Guide",
+        description: "How self-directed IRAs work and what they allow.",
+        href: "/learn/self-directed-ira-gold"
+    },
+    {
+        title: "Precious Metals IRA Rules",
+        description: "IRS regulations for gold, silver, platinum, and palladium.",
+        href: "/learn/precious-metals-ira-rules"
+    },
+    {
+        title: "Checkbook IRA Rules",
+        description: "Understanding LLC IRAs and their strict requirements.",
+        href: "/learn/checkbook-ira-rules"
+    },
+    {
+        title: "Platinum IRA Guide",
+        description: "Adding platinum to your precious metals portfolio.",
+        href: "/learn/platinum-ira"
     }
 ];
 
@@ -98,6 +139,14 @@ const comparisons = [
     { title: "Gold IRA vs. Gold ETFs", href: "/compare/gold-ira-vs-gold-etf" },
     { title: "Gold IRA vs. Crypto", href: "/compare/gold-ira-vs-crypto" },
     { title: "Gold vs. Silver IRA", href: "/compare/gold-vs-silver-ira" }
+];
+
+const companyComparisons = [
+    { title: "Augusta vs. Goldco", href: "/compare/augusta-vs-goldco" },
+    { title: "Noble Gold vs. Birch Gold", href: "/compare/noble-gold-vs-birch-gold" },
+    { title: "Goldco vs. Lear Capital", href: "/compare/goldco-vs-lear-capital" },
+    { title: "Lear Capital vs. Noble Gold", href: "/compare/lear-capital-vs-noble-gold" },
+    { title: "American Hartford vs. Oxford Gold", href: "/compare/american-hartford-vs-oxford-gold" }
 ];
 
 export default function ResourcesPage() {
@@ -236,6 +285,31 @@ export default function ResourcesPage() {
                                             className="flex items-center gap-3 p-4 rounded-lg hover:bg-background-subtle transition-colors group"
                                         >
                                             <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                                            <span className="text-text-muted group-hover:text-primary transition-colors">
+                                                {comparison.title}
+                                            </span>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        </FadeIn>
+
+                        <FadeIn delay={0.2}>
+                            <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 mt-6">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <div className="h-10 w-10 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+                                        <Scale className="h-5 w-5" />
+                                    </div>
+                                    <h3 className="text-xl font-bold font-serif text-primary">Company vs. Company</h3>
+                                </div>
+                                <div className="grid sm:grid-cols-2 gap-3">
+                                    {companyComparisons.map((comparison) => (
+                                        <Link
+                                            key={comparison.href}
+                                            href={comparison.href}
+                                            className="flex items-center gap-3 p-4 rounded-lg hover:bg-background-subtle transition-colors group"
+                                        >
+                                            <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                                             <span className="text-text-muted group-hover:text-primary transition-colors">
                                                 {comparison.title}
                                             </span>

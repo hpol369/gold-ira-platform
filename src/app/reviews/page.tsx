@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { Star, ArrowRight, Shield, CheckCircle2 } from "lucide-react";
+import { Star, ArrowRight, Shield, CheckCircle2, AlertTriangle, FileSearch } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,22 +22,31 @@ const companies = [
         highlight: "Best Overall",
     },
     {
-        slug: "goldco",
-        name: "Goldco",
+        slug: "noble-gold",
+        name: "Noble Gold",
         rating: 4.7,
         bbbRating: "A+",
+        minInvestment: "$2,000",
+        bestFor: "Low minimums and Texas storage option",
+        highlight: "Best for Small Accounts",
+    },
+    {
+        slug: "goldco",
+        name: "Goldco",
+        rating: 4.5,
+        bbbRating: "A+",
         minInvestment: "$25,000",
-        bestFor: "Silver-focused investors",
-        highlight: "Best for Silver",
+        bestFor: "Brand recognition and marketing",
+        highlight: "Most Recognized",
     },
     {
         slug: "american-hartford-gold",
         name: "American Hartford Gold",
-        rating: 4.6,
+        rating: 4.4,
         bbbRating: "A+",
         minInvestment: "$10,000",
-        bestFor: "Lower minimum investments",
-        highlight: "Lowest Minimum",
+        bestFor: "Price-conscious investors",
+        highlight: "Price Match",
     },
     {
         slug: "birch-gold",
@@ -45,17 +54,17 @@ const companies = [
         rating: 4.5,
         bbbRating: "A+",
         minInvestment: "$10,000",
-        bestFor: "Education-focused investors",
-        highlight: "Best Education",
+        bestFor: "Large accounts (flat fee structure)",
+        highlight: "20+ Years",
     },
     {
-        slug: "noble-gold",
-        name: "Noble Gold",
-        rating: 4.4,
+        slug: "orion-metal-exchange",
+        name: "Orion Metal Exchange",
+        rating: 4.3,
         bbbRating: "A+",
-        minInvestment: "$20,000",
-        bestFor: "Royal Survival Packs and unique offerings",
-        highlight: "Most Unique",
+        minInvestment: "$5,000",
+        bestFor: "Beginning investors with smaller amounts",
+        highlight: "Beginner Friendly",
     },
     {
         slug: "advantage-gold",
@@ -76,13 +85,139 @@ const companies = [
         highlight: "Price Protection",
     },
     {
-        slug: "oxford-gold-group",
-        name: "Oxford Gold Group",
+        slug: "priority-gold",
+        name: "Priority Gold",
         rating: 4.1,
         bbbRating: "A+",
+        minInvestment: "$10,000",
+        bestFor: "Direct pricing model",
+        highlight: "Transparent Pricing",
+    },
+    {
+        slug: "american-bullion",
+        name: "American Bullion",
+        rating: 4.0,
+        bbbRating: "A+",
+        minInvestment: "$10,000",
+        bestFor: "Established track record",
+        highlight: "Since 2009",
+    },
+    {
+        slug: "money-metals-exchange",
+        name: "Money Metals Exchange",
+        rating: 4.0,
+        bbbRating: "A+",
+        minInvestment: "$10,000",
+        bestFor: "Cash purchases and variety",
+        highlight: "Great Selection",
+    },
+    {
+        slug: "monetary-gold",
+        name: "Monetary Gold",
+        rating: 3.9,
+        bbbRating: "A",
+        minInvestment: "$10,000",
+        bestFor: "Direct dealer pricing",
+        highlight: "Direct Pricing",
+    },
+    {
+        slug: "blanchard-gold",
+        name: "Blanchard Gold",
+        rating: 3.8,
+        bbbRating: "A+",
+        minInvestment: "$10,000",
+        bestFor: "Numismatic coins and collectibles",
+        highlight: "Numismatic Expert",
+    },
+    {
+        slug: "us-money-reserve",
+        name: "US Money Reserve",
+        rating: 3.5,
+        bbbRating: "A+",
+        minInvestment: "$50",
+        bestFor: "Small coin purchases",
+        highlight: "Low Entry Point",
+    },
+    {
+        slug: "patriot-gold-group",
+        name: "Patriot Gold Group",
+        rating: 3.5,
+        bbbRating: "A",
         minInvestment: "$25,000",
-        bestFor: "Fast account setup",
-        highlight: "Fastest Setup",
+        bestFor: "No-fee IRA options",
+        highlight: "No Setup Fees",
+    },
+    {
+        slug: "rosland-capital",
+        name: "Rosland Capital",
+        rating: 3.4,
+        bbbRating: "A+",
+        minInvestment: "$2,000",
+        bestFor: "Celebrity endorsements and TV presence",
+        highlight: "TV Advertiser",
+    },
+];
+
+const investigationPages = [
+    {
+        slug: "regal-assets-lawsuit",
+        title: "Regal Assets Lawsuit & Collapse",
+        description: "What happened to one of the industry's most-recommended companies",
+        type: "warning",
+    },
+    {
+        slug: "goldco-lawsuit-facts",
+        title: "Goldco Lawsuit Fact Check",
+        description: "Separating facts from fiction on Goldco complaints",
+        type: "investigation",
+    },
+    {
+        slug: "augusta-precious-metals-lawsuit",
+        title: "Augusta Precious Metals Lawsuit",
+        description: "Examining claims and complaints against Augusta",
+        type: "investigation",
+    },
+    {
+        slug: "noble-gold-legit",
+        title: "Is Noble Gold Legit?",
+        description: "Investigation into Noble Gold's legitimacy and practices",
+        type: "investigation",
+    },
+    {
+        slug: "birch-gold-complaints",
+        title: "Birch Gold Complaints Analysis",
+        description: "Deep dive into BBB complaints and customer issues",
+        type: "complaints",
+    },
+    {
+        slug: "american-hartford-gold-complaints",
+        title: "American Hartford Gold Complaints",
+        description: "Review of customer complaints and company responses",
+        type: "complaints",
+    },
+    {
+        slug: "advantage-gold-complaints",
+        title: "Advantage Gold Complaints Audit",
+        description: "Analysis of customer feedback and issues",
+        type: "complaints",
+    },
+    {
+        slug: "lear-capital-complaints",
+        title: "Lear Capital Complaints & History",
+        description: "Lawsuit history and customer complaint patterns",
+        type: "complaints",
+    },
+    {
+        slug: "rosland-capital-lawsuit",
+        title: "Rosland Capital Lawsuit History",
+        description: "FTC settlement and class action lawsuit details",
+        type: "warning",
+    },
+    {
+        slug: "us-money-reserve-complaints",
+        title: "US Money Reserve Complaints",
+        description: "Analysis of customer issues and company practices",
+        type: "complaints",
     },
 ];
 
@@ -157,6 +292,40 @@ export default function ReviewsPage() {
                                 </div>
                             </Link>
                         ))}
+                    </div>
+
+                    {/* Investigation & Complaints Section */}
+                    <div className="max-w-4xl mx-auto mt-16">
+                        <h2 className="text-2xl font-serif font-bold text-primary mb-2 flex items-center gap-2">
+                            <FileSearch className="w-6 h-6" />
+                            Investigations & Complaint Analysis
+                        </h2>
+                        <p className="text-text-muted mb-6">Deep dives into lawsuits, BBB complaints, and company legitimacy.</p>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {investigationPages.map((page) => (
+                                <Link
+                                    key={page.slug}
+                                    href={`/reviews/${page.slug}`}
+                                    className="group p-4 bg-white rounded-xl border border-gray-200 hover:border-red-300 hover:shadow-md transition-all"
+                                >
+                                    <div className="flex items-start gap-3">
+                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
+                                            page.type === "warning" ? "bg-red-100" : "bg-amber-100"
+                                        }`}>
+                                            <AlertTriangle className={`w-4 h-4 ${
+                                                page.type === "warning" ? "text-red-600" : "text-amber-600"
+                                            }`} />
+                                        </div>
+                                        <div>
+                                            <h3 className="font-bold text-primary group-hover:text-red-700 transition-colors">
+                                                {page.title}
+                                            </h3>
+                                            <p className="text-sm text-text-muted">{page.description}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
 
                     {/* How We Review */}
