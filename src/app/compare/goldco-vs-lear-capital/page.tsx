@@ -71,7 +71,7 @@ export default function GoldcoVsLearPage() {
 
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
                         <p className="lead">
-                            (Intro: Frame the comparison. Goldco is the dominant force right now with huge promos. Lear Capital is the experienced veteran.)
+                            This is a clash between the current market leader and a seasoned veteran. <strong>Goldco</strong> dominates the Gold IRA industry with aggressive marketing, celebrity endorsements, and massive promotional offers. <strong>Lear Capital</strong> has been quietly operating since 1997—surviving recessions, lawsuits, and market crashes to become one of the most established names in the business. Which one deserves your retirement savings?
                         </p>
 
                         <section id="verdict" className="scroll-mt-32">
@@ -93,17 +93,42 @@ export default function GoldcoVsLearPage() {
 
                         <section id="goldco-overview" className="scroll-mt-32">
                             <h2>Goldco Overview</h2>
-                            <p>(Overview of Goldco.)</p>
+                            <p>
+                                Goldco has become the dominant force in the Gold IRA space through smart marketing and excellent customer service. They&apos;re endorsed by Sean Hannity, Chuck Norris, and other conservative celebrities—which resonates with their target demographic of retirement-focused Americans.
+                            </p>
+                            <p>
+                                What sets Goldco apart is their &quot;Highest Price Guarantee&quot; buyback program. When you&apos;re ready to sell, they promise to match or beat any competitor&apos;s offer. Combined with their regular promotions (often 10% in free silver on qualifying orders), they offer strong value for investors with $25k+.
+                            </p>
+                            <p>
+                                <strong>Best for:</strong> Investors with $25,000+ who want a premium experience, strong promotions, and industry-leading buyback guarantees.
+                            </p>
                         </section>
 
                         <section id="lear-overview" className="scroll-mt-32">
                             <h2>Lear Capital Overview</h2>
-                            <p>(Overview of Lear.)</p>
+                            <p>
+                                Lear Capital is the elder statesman of the Gold IRA industry. Founded in 1997, they&apos;ve survived the dot-com bust, the 2008 financial crisis, and even a lawsuit with the NY Attorney General (which they settled and subsequently improved their practices).
+                            </p>
+                            <p>
+                                Their key advantage is their &quot;Price Lock Guarantee&quot;—once you commit to a purchase, your price is locked even if metals prices change during the 5-7 day settlement period. This protects you from volatile market swings. They also have a lower $10,000 minimum, making them accessible to investors who don&apos;t meet Goldco&apos;s threshold.
+                            </p>
+                            <p>
+                                <strong>Best for:</strong> Investors with $10,000-$25,000, or those who prioritize a company with decades of proven survival in the market.
+                            </p>
                         </section>
 
                         <section id="fees" className="scroll-mt-32">
                             <h2>Fees & Minimums</h2>
-                            <p>(Comparison of fees.)</p>
+                            <p>
+                                Both companies charge similar annual fees for IRA maintenance and storage:
+                            </p>
+                            <ul>
+                                <li><strong>Goldco:</strong> $175-$225/year (custodian + storage), $25,000 minimum</li>
+                                <li><strong>Lear Capital:</strong> $225-$280/year (slightly higher), $10,000 minimum</li>
+                            </ul>
+                            <p>
+                                The real cost difference comes from the <strong>spread</strong>—the markup on metals. Goldco&apos;s free silver promotions can effectively offset their spread on larger orders, while Lear&apos;s Price Lock Guarantee protects against market timing risk. For accounts over $50k, Goldco typically offers better overall value. For accounts under $25k, Lear is your only choice between these two.
+                            </p>
                         </section>
 
                         <section id="pros-cons" className="scroll-mt-32">

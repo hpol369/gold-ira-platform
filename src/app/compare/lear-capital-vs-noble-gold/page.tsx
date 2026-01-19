@@ -72,7 +72,7 @@ export default function LearVsNoblePage() {
 
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
                         <p className="lead">
-                            (Intro: Frame the battle. Lear is the "Old Guard" with history. Noble is the "New Guard" with better service for small accounts.)
+                            This is a battle between experience and accessibility. <strong>Lear Capital</strong> represents the &quot;Old Guard&quot;—founded in 1997, they&apos;ve weathered every market storm and come out stronger. <strong>Noble Gold</strong> is the &quot;New Guard&quot;—founded in 2016, they&apos;ve disrupted the industry with the lowest minimums and a refreshingly simple approach. Here&apos;s which one makes sense for your situation.
                         </p>
 
                         <section id="verdict" className="scroll-mt-32">
@@ -94,17 +94,42 @@ export default function LearVsNoblePage() {
 
                         <section id="noble-overview" className="scroll-mt-32">
                             <h2>Noble Gold Overview</h2>
-                            <p>(Overview of Noble: Low minimums, simple process, Texas storage option.)</p>
+                            <p>
+                                Noble Gold Investments has carved out a niche as the most accessible Gold IRA company on the market. Their $2,000 minimum is industry-leading—5x lower than Lear Capital and 12x lower than Augusta. This makes them ideal for investors just starting out or those who want to test the waters with precious metals.
+                            </p>
+                            <p>
+                                What really sets Noble apart is their <strong>Texas storage option</strong>. While most companies only offer Delaware depositories, Noble Gold partners with a secure facility in Texas—appealing to investors who want their metals stored in a business-friendly state closer to home. They also offer &quot;Royal Survival Packs&quot;—pre-packaged precious metals kits for home delivery (outside of your IRA).
+                            </p>
+                            <p>
+                                <strong>Best for:</strong> First-time gold investors, smaller accounts ($2k-$50k), and those who value simplicity over brand prestige.
+                            </p>
                         </section>
 
                         <section id="lear-overview" className="scroll-mt-32">
                             <h2>Lear Capital Overview</h2>
-                            <p>(Overview of Lear: Huge inventory, price match guarantee, older company.)</p>
+                            <p>
+                                Lear Capital is one of the oldest names in the Gold IRA business. Founded in 1997, they&apos;ve processed billions in precious metals transactions. Their longevity is both their greatest asset and their badge of trust—scam companies simply don&apos;t survive 25+ years.
+                            </p>
+                            <p>
+                                Lear&apos;s standout feature is their <strong>Price Lock Guarantee</strong>. When you place an order, your price is locked immediately—protecting you from market swings during the settlement process. They also maintain one of the largest inventories of coins and bars in the industry, giving you more selection than most competitors.
+                            </p>
+                            <p>
+                                <strong>Best for:</strong> Investors who prioritize company history and stability, those with $10k-$100k to invest, and collectors who want access to rare coins.
+                            </p>
                         </section>
 
                         <section id="fees" className="scroll-mt-32">
                             <h2>Fees & Minimums</h2>
-                            <p>(Comparison of fees. Noble is flat rate. Lear can be higher for premium coins.)</p>
+                            <p>
+                                This is where Noble Gold has a clear advantage for smaller investors:
+                            </p>
+                            <ul>
+                                <li><strong>Noble Gold:</strong> $225-$250/year (flat rate), $2,000 minimum</li>
+                                <li><strong>Lear Capital:</strong> $225-$280/year (can be higher for premium coins), $10,000 minimum</li>
+                            </ul>
+                            <p>
+                                Both companies have similar annual storage/custodian fees. The key difference is accessibility—Noble lets you start with $2,000, while Lear requires $10,000. For smaller investors, this makes Noble the only realistic choice between these two. For larger accounts ($50k+), the percentage difference in fees becomes negligible.
+                            </p>
                         </section>
 
                         <section id="pros-cons" className="scroll-mt-32">
