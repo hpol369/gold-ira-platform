@@ -10,7 +10,7 @@ interface VerdictBoxProps {
     ctaText?: string;
 }
 
-export function VerdictBox({ companyName, rating, isRecommended, bottomLine, ctaUrl, ctaText = "Get Free Gold Kit" }: VerdictBoxProps) {
+export function VerdictBox({ companyName: _companyName, rating, isRecommended, bottomLine, ctaUrl, ctaText = "Get Free Gold Kit" }: VerdictBoxProps) {
     return (
         <div className="bg-white border-2 border-primary/10 rounded-2xl overflow-hidden shadow-sm my-8 not-prose">
             <div className="bg-primary/5 p-6 border-b border-primary/10 flex flex-col sm:flex-row items-center justify-between gap-4">

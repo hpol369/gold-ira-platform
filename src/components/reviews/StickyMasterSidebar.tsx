@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Link, Loader2, CheckCircle2 } from "lucide-react";
+import { Loader2, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { emailService } from "@/lib/email-service";
 import { useABTest } from "@/lib/ab-testing";

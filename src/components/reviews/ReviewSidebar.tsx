@@ -1,6 +1,5 @@
-import { Star, CheckCircle, Shield, Award } from "lucide-react";
+import { Star, Shield, Award } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 interface ReviewSidebarProps {
@@ -15,7 +14,7 @@ interface ReviewSidebarProps {
 }
 
 export function ReviewSidebar({
-    companyName,
+    companyName: _companyName,
     rating,
     minInvestment,
     fees,

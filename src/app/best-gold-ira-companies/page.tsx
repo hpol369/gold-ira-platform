@@ -225,8 +225,3 @@ export default function BestGoldIraCompaniesPage() {
         </main>
     );
 }
-
-function TrophyIcon(props: any) {
-    // ... kept for compatibility if needed elsewhere, but using Lucide icons now
-    return null;
-}

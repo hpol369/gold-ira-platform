@@ -1,7 +1,5 @@
-import Log from 'next/script';
-
 interface SchemaScriptProps {
-    schema: Record<string, any>;
+    schema: Record<string, unknown>;
 }
 
 export function SchemaScript({ schema }: SchemaScriptProps) {
