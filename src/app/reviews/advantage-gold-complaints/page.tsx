@@ -93,7 +93,7 @@ export default function AdvantageGoldComplaintsPage() {
                                 rating={4.7}
                                 isRecommended={true}
                                 bottomLine="Despite searching for 'Advantage Gold complaints,' we found very little negative feedback. They have an A+ BBB Rating, a 5-star Trustpilot score, and zero regulatory actions. The few complaints were mostly administrative delays—all resolved by the company. This is a legitimate, high-integrity firm."
-                                ctaUrl={AFFILIATE_LINKS.advantageGold || "/reviews/advantage-gold"}
+                                ctaUrl={AFFILIATE_LINKS.advantage}
                                 ctaText="Visit Advantage Gold"
                             />
                         </section>
