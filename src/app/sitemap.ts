@@ -1,13 +1,25 @@
 import { MetadataRoute } from "next";
 
+import { US_STATES } from '@/lib/states';
+
 export default function sitemap(): MetadataRoute.Sitemap {
+    const baseUrl = 'https://www.richdadretirement.com';
+
+    const statePages = US_STATES.map(state => ({
+        url: `${baseUrl}/local/${state.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
     return [
         {
-            url: "https://www.richdadretirement.com",
+            url: baseUrl,
             lastModified: new Date(),
             changeFrequency: "weekly",
             priority: 1,
         },
+        ...statePages,
         {
             url: "https://www.richdadretirement.com/guide/gold-ira-guide",
             lastModified: new Date(),
