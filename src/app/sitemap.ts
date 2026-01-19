@@ -412,6 +412,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: "https://www.richdadretirement.com/compare/augusta-vs-noble-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/compare/goldco-vs-american-hartford-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
             url: "https://www.richdadretirement.com/reviews/regal-assets-lawsuit",
             lastModified: new Date(),
             changeFrequency: "weekly",

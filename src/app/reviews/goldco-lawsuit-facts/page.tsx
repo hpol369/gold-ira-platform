@@ -1,9 +1,9 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { VerdictBox } from "@/components/compare/VerdictBox";
-import { TableOfContents } from "@/components/guide/TableOfContents";
+import { VerdictBox } from "@/components/reviews/VerdictBox";
+import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { AuthorBox } from "@/components/guide/AuthorBox";
-import { ArrowRight, AlertTriangle, ShieldCheck, Gavel, Scale } from "lucide-react";
+import { ArrowRight, ShieldCheck, Gavel } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -91,8 +91,8 @@ export default function GoldcoLawsuitPage() {
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">
                     {/* Sidebar */}
-                    <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
-                        <TableOfContents items={tocItems} />
+                    <aside className="lg:w-80 flex-shrink-0 hidden lg:block relative">
+                        <StickyMasterSidebar />
                     </aside>
 
                     {/* Content */}
@@ -105,9 +105,12 @@ export default function GoldcoLawsuitPage() {
                         {/* Quick Verdict */}
                         <section id="verdict" className="scroll-mt-32">
                             <VerdictBox
-                                winnerName="Verdict: ISSUE RESOLVED"
-                                summary="The legal issues you may read about refer to a past civil settlement with a local city attorney regarding marketing language. It was not a fraud case, and no customer funds were lost. Goldco has since overhauled its compliance and remains a top-tier industry leader."
-                                bestFor="Investors seeking a transparent, compliant partner."
+                                companyName="Goldco"
+                                rating={4.9}
+                                isRecommended={true}
+                                bottomLine="The legal issues refer to a past civil settlement (2017) regarding marketing language. No customer funds were lost. Goldco has since overhauled compliance and remains a top-tier, A+ rated company."
+                                ctaUrl="/reviews/goldco"
+                                ctaText="Get Free Compliance Guide"
                             />
                         </section>
 

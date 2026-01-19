@@ -46,9 +46,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Rich Dad Retirement",
+    "url": "https://www.richdadretirement.com",
+    "logo": "https://www.richdadretirement.com/logo.png",
+    "founder": {
+      "@type": "Person",
+      "name": "Thomas Richardson"
+    },
+    "sameAs": [
+      "https://twitter.com/richdadretire",
+      "https://facebook.com/richdadretirement",
+      "https://linkedin.com/company/richdadretirement"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-0199",
+      "contactType": "customer service"
+    }
+  };
+
   return (
     <html lang="en">
       <body className={cn(inter.variable, playfair.variable, "antialiased bg-background text-text")}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         <ExitIntentPopup />
       </body>
