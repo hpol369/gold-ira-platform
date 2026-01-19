@@ -6,6 +6,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, DollarSign, Building2, Lock, Scale, Clock, FileText } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -123,6 +124,7 @@ export default function GoldIraGuidePage() {
 
                     {/* Main Content */}
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary prose-p:text-text prose-a:text-secondary max-w-none">
+                        <Breadcrumbs />
 
                         {/* Intro Content */}
                         <p className="lead text-xl text-text-muted">

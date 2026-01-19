@@ -6,9 +6,10 @@ import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Metadata } from "next";
-import { CheckCircle2, XCircle, ArrowRight, Trophy, Wallet, GraduationCap, Building2 } from "lucide-react";
+import { CheckCircle2, XCircle, ArrowRight, Trophy, Wallet, GraduationCap, Building2, Check, X, ShieldCheck, BadgeDollarSign, UserCheck, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -56,6 +57,7 @@ export default function AugustaVsNoblePage() {
 
                         {/* Content */}
                         <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                            <Breadcrumbs />
 
                             {/* Verdict */}
                             <VerdictBox

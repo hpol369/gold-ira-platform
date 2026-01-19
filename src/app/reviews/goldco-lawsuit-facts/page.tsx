@@ -7,6 +7,8 @@ import { ArrowRight, ShieldCheck, Gavel } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Goldco Lawsuit & Complaints: Fact Check (2026)",
@@ -97,6 +99,7 @@ export default function GoldcoLawsuitPage() {
 
                     {/* Content */}
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                        <Breadcrumbs />
 
                         <p className="lead">
                             Goldco is a massive company, and massive companies often attract legal scrutiny. You may have heard mentions of a "lawsuit" or "settlement." Here are the cold, hard facts.
