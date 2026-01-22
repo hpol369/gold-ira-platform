@@ -60,9 +60,12 @@ export function Hero() {
                             shadow-[0_0_50px_-10px_rgba(250,221,125,0.4)] hover:shadow-[0_0_60px_-10px_rgba(250,221,125,0.6)]
                             hover:scale-105 transition-all duration-300 border border-[#fff8e7]/40 relative overflow-hidden group"
                         >
-                            <Link href="/best-gold-ira-companies">
+                            <Link href="/#featured-partner" onClick={(e) => {
+                                e.preventDefault();
+                                document.getElementById('featured-partner')?.scrollIntoView({ behavior: 'smooth' });
+                            }}>
                                 <span className="relative z-10 flex items-center justify-center gap-2">
-                                    See Best Companies of 2026
+                                    See #1 Rated Company
                                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                                 </span>
                                 {/* Shine Effect */}
