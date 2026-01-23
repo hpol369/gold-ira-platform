@@ -34,7 +34,7 @@ export function AugustaCTA({
           #1 RATED COMPANY
         </div>
         <h3 className="font-bold text-slate-900 mb-2 text-lg">
-          {headline || "Augusta Precious Metals"}
+          <span className="whitespace-nowrap">{headline || "Augusta Precious Metals"}</span>
         </h3>
         <div className="flex items-center gap-2 mb-3">
           <div className="flex text-amber-500">
@@ -232,7 +232,7 @@ export function AugustaCTA({
             <div className="space-y-3 pt-4 border-t border-slate-100">
               <div className="flex justify-between text-sm">
                 <span className="text-slate-600">Minimum Investment</span>
-                <span className="font-semibold text-slate-900">${augusta.minInvestment.toLocaleString()}</span>
+                <span className="font-semibold text-slate-900 whitespace-nowrap">${augusta.minInvestment.toLocaleString()}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-slate-600">Setup Fee</span>
@@ -240,7 +240,7 @@ export function AugustaCTA({
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-slate-600">Annual Fee</span>
-                <span className="font-semibold text-slate-900">${augusta.fees.annual}</span>
+                <span className="font-semibold text-slate-900 whitespace-nowrap">${augusta.fees.annual}</span>
               </div>
             </div>
           </div>

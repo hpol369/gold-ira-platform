@@ -61,9 +61,9 @@ export default function BestGoldIraCompaniesPage() {
                                 <div className="bg-primary text-white p-4 flex justify-between items-center">
                                     <div className="flex items-center gap-3">
                                         <div className="bg-secondary text-primary font-bold w-8 h-8 rounded-full flex items-center justify-center">#1</div>
-                                        <h3 className="font-bold text-xl">Augusta Precious Metals</h3>
+                                        <h3 className="font-bold text-xl whitespace-nowrap">Augusta Precious Metals</h3>
                                     </div>
-                                    <div className="text-sm font-medium bg-white/10 px-3 py-1 rounded">Best for $50,000+</div>
+                                    <div className="text-sm font-medium bg-white/10 px-3 py-1 rounded whitespace-nowrap">Best for $50,000+</div>
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">
@@ -92,7 +92,7 @@ export default function BestGoldIraCompaniesPage() {
                                         <div className="bg-gray-50 p-4 rounded-xl">
                                             <h4 className="font-bold text-amber-700 mb-2 flex items-center gap-2">Considerations</h4>
                                             <ul className="text-sm space-y-1 text-gray-600">
-                                                <li>• $50,000 minimum investment</li>
+                                                <li>• <span className="whitespace-nowrap">$50,000</span> minimum investment</li>
                                                 <li>• Requires phone consultation</li>
                                             </ul>
                                         </div>
@@ -115,9 +115,9 @@ export default function BestGoldIraCompaniesPage() {
                                 <div className="bg-amber-900 text-white p-4 flex justify-between items-center">
                                     <div className="flex items-center gap-3">
                                         <div className="bg-amber-700 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center">#2</div>
-                                        <h3 className="font-bold text-xl">Noble Gold Investments</h3>
+                                        <h3 className="font-bold text-xl whitespace-nowrap">Noble Gold Investments</h3>
                                     </div>
-                                    <div className="text-sm font-medium bg-white/10 px-3 py-1 rounded">Best for $10,000-$50,000</div>
+                                    <div className="text-sm font-medium bg-white/10 px-3 py-1 rounded whitespace-nowrap">Best for $10,000-$50,000</div>
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">

@@ -147,13 +147,13 @@ export function WhatSection() {
                     <span className="px-3 py-1 bg-amber-500 text-white text-sm font-bold rounded-full">
                       #1 Recommended
                     </span>
-                    <span className="px-3 py-1 bg-white/10 text-white text-sm font-medium rounded-full">
+                    <span className="px-3 py-1 bg-white/10 text-white text-sm font-medium rounded-full whitespace-nowrap">
                       Best for $50,000+
                     </span>
                   </div>
 
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Augusta Precious Metals
+                    <span className="whitespace-nowrap">Augusta Precious Metals</span>
                   </h3>
 
                   <p className="text-lg text-slate-300 mb-6 leading-relaxed">
@@ -230,7 +230,7 @@ export function WhatSection() {
                           </div>
                           <span className="text-white font-medium">Trustpilot</span>
                         </div>
-                        <span className="text-amber-400 font-bold text-lg">4.97/5</span>
+                        <span className="text-amber-400 font-bold text-lg whitespace-nowrap">4.97/5</span>
                       </div>
 
                       <div className="flex items-center justify-between p-4 bg-white/5 rounded-xl">
@@ -238,7 +238,7 @@ export function WhatSection() {
                           <Award className="h-10 w-10 text-amber-400" />
                           <span className="text-white font-medium">Our Rating</span>
                         </div>
-                        <span className="text-amber-400 font-bold text-lg">4.98/5</span>
+                        <span className="text-amber-400 font-bold text-lg whitespace-nowrap">4.98/5</span>
                       </div>
 
                       <div className="flex items-center justify-between p-4 bg-white/5 rounded-xl">
@@ -246,7 +246,7 @@ export function WhatSection() {
                           <Building2 className="h-10 w-10 text-slate-400" />
                           <span className="text-white font-medium">Minimum</span>
                         </div>
-                        <span className="text-white font-bold text-lg">$50,000</span>
+                        <span className="text-white font-bold text-lg whitespace-nowrap">$50,000</span>
                       </div>
                     </div>
 

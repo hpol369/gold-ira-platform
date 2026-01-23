@@ -81,7 +81,7 @@ export function VerdictSection({
             <div className="flex items-start gap-2">
               <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
               <span className="text-slate-700">
-                ${company.minInvestment.toLocaleString()} minimum investment
+                <span className="whitespace-nowrap">${company.minInvestment.toLocaleString()}</span> minimum investment
               </span>
             </div>
             <div className="flex items-start gap-2">
@@ -143,7 +143,7 @@ export function VerdictSection({
                 <span className="text-slate-400">|</span>
                 <span className="text-slate-600">BBB: {augusta.bbbRating}</span>
                 <span className="text-slate-400">|</span>
-                <span className="text-slate-600">${augusta.minInvestment.toLocaleString()} min</span>
+                <span className="text-slate-600 whitespace-nowrap">${augusta.minInvestment.toLocaleString()} min</span>
               </div>
             </div>
             <div className="flex-shrink-0">

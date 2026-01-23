@@ -42,7 +42,7 @@ export function FeaturedPartner() {
                                     #1 Rated Gold IRA Company
                                 </span>
                                 <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white leading-tight">
-                                    Augusta <br />Precious Metals
+                                    <span className="whitespace-nowrap">Augusta Precious Metals</span>
                                 </h3>
 
                                 <div className="space-y-4 mb-8">
@@ -136,7 +136,7 @@ export function FeaturedPartner() {
                             </Button>
 
                             <p className="text-center text-xs text-slate-400 mt-4">
-                                Minimum investment: $50,000
+                                Minimum investment: <span className="whitespace-nowrap">$50,000</span>
                             </p>
                         </div>
                     </div>

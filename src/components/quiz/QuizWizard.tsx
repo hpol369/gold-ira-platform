@@ -31,9 +31,9 @@ const steps = [
         helper: "Include 401(k), IRA, and other currency-based accounts.",
         options: [
             { value: "<25k", label: "Less than $25,000" },
-            { value: "25k-50k", label: "$25,000 - $50,000" },
-            { value: "50k-100k", label: "$50,000 - $100,000" },
-            { value: "100k-250k", label: "$100,000 - $250,000" },
+            { value: "25k-50k", label: "$25,000 – $50,000" },
+            { value: "50k-100k", label: "$50,000 – $100,000" },
+            { value: "100k-250k", label: "$100,000 – $250,000" },
             { value: "250k+", label: "Over $250,000" },
         ]
     },

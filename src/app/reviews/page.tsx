@@ -135,7 +135,7 @@ export default function ReviewsPage() {
                 #1 Pick
               </div>
               <div>
-                <h2 className="text-xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
+                <h2 className="text-xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors whitespace-nowrap">
                   {featuredCompany.name}
                 </h2>
                 <p className="text-sm text-slate-600">{featuredCompany.bestFor}</p>
@@ -191,7 +191,7 @@ export default function ReviewsPage() {
                     </div>
                     <div>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <h2 className={`text-xl font-bold transition-colors ${
+                        <h2 className={`text-xl font-bold transition-colors whitespace-nowrap ${
                           company.featured
                             ? "text-amber-700 group-hover:text-amber-800"
                             : "text-slate-900 group-hover:text-slate-700"
@@ -225,7 +225,7 @@ export default function ReviewsPage() {
                       <Shield className="w-4 h-4 text-green-600" />
                       <span>{company.bbbRating} BBB</span>
                     </div>
-                    <div className="text-slate-500">
+                    <div className="text-slate-500 whitespace-nowrap">
                       ${company.minInvestment.toLocaleString()} min
                     </div>
                     <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-amber-500 group-hover:translate-x-1 transition-all" />

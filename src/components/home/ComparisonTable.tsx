@@ -130,7 +130,7 @@ export function ComparisonTable() {
                                         #{company.rank}
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-primary text-lg leading-tight">{company.name}</h3>
+                                        <h3 className="font-bold text-primary text-lg leading-tight whitespace-nowrap">{company.name}</h3>
                                         <div className="flex items-center gap-1 text-sm mt-1">
                                             <span className={`font-bold ${company.rank === 1 ? 'text-amber-600' : 'text-secondary'}`}>
                                                 {company.rating}/5
@@ -223,7 +223,7 @@ export function ComparisonTable() {
                                         </div>
                                     </td>
                                     <td className="p-5 align-middle">
-                                        <div className="font-bold text-lg text-primary">{company.name}</div>
+                                        <div className="font-bold text-lg text-primary whitespace-nowrap">{company.name}</div>
                                         {company.rank === 1 && (
                                             <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-2 py-0.5 rounded-full mt-1">
                                                 <Trophy className="w-3 h-3" /> Editors Choice
@@ -243,7 +243,7 @@ export function ComparisonTable() {
                                             {company.bestForBadge}
                                         </span>
                                         <div className="text-xs text-text-muted mt-2 font-medium flex items-center gap-1">
-                                            <span className="text-slate-400">Min:</span> {company.minInvestment}
+                                            <span className="text-slate-400">Min:</span> <span className="whitespace-nowrap">{company.minInvestment}</span>
                                         </div>
                                     </td>
                                     <td className="p-5 text-center align-middle">
