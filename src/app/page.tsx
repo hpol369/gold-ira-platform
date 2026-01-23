@@ -1,12 +1,11 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Hero } from "@/components/home/Hero";
-import { ValueProps } from "@/components/home/ValueProps";
-import { Testimonials } from "@/components/home/Testimonials";
 import { TrustBadges } from "@/components/home/TrustBadges";
+import { Testimonials } from "@/components/home/Testimonials";
 import { Education } from "@/components/home/Education";
-import { ComparisonTable } from "@/components/home/ComparisonTable";
-import { FeaturedPartner } from "@/components/home/FeaturedPartner";
+
+// Golden Circle Architecture (Simon Sinek's WHY → HOW → WHAT)
+import { WhySection, HowSection, WhatSection } from "@/components/home/GoldenCircle";
 
 export default function Home() {
   return (
@@ -14,11 +13,13 @@ export default function Home() {
       <Navbar />
 
       <div className="flex-grow">
-        <Hero />
+        {/* Golden Circle: WHY → HOW → WHAT */}
+        <WhySection />
+        <HowSection />
+        <WhatSection />
+
+        {/* Social Proof & Education */}
         <TrustBadges />
-        <FeaturedPartner />
-        <ComparisonTable />
-        <ValueProps />
         <Testimonials />
         <Education />
       </div>
