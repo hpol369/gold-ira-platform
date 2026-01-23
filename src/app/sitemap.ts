@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 
 import { US_STATES } from '@/lib/states';
+import { getCompanySlugs } from '@/data/companies';
 
 // Rollover provider slugs
 const rolloverProviders = [
@@ -15,8 +16,25 @@ const rolloverAccountTypes = [
     'tsp-to-gold-ira', 'sep-ira-to-gold-ira', 'pension-to-gold-ira'
 ];
 
+// Generate all company comparison pairs
+function generateComparisonSlugs(): string[] {
+    const companySlugs = getCompanySlugs();
+    const comparisons: string[] = [];
+
+    for (let i = 0; i < companySlugs.length; i++) {
+        for (let j = 0; j < companySlugs.length; j++) {
+            if (i !== j) {
+                comparisons.push(`${companySlugs[i]}-vs-${companySlugs[j]}`);
+            }
+        }
+    }
+    return comparisons;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.richdadretirement.com';
+    const companySlugs = getCompanySlugs();
+    const comparisonSlugs = generateComparisonSlugs();
 
     const statePages = US_STATES.map(state => ({
         url: `${baseUrl}/local/${state.slug}`,
@@ -37,6 +55,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
+    }));
+
+    // Dynamic company review pages
+    const companyReviewPages = companySlugs.map(slug => ({
+        url: `${baseUrl}/reviews/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+    }));
+
+    // Dynamic comparison pages (company vs company)
+    const comparisonPages = comparisonSlugs.map(slug => ({
+        url: `${baseUrl}/compare/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
     }));
 
     return [
@@ -81,6 +115,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         ...rolloverProviderPages,
         ...rolloverAccountTypePages,
+        // Dynamic company review pages (15 companies)
+        ...companyReviewPages,
+        // Dynamic comparison pages (210 combinations)
+        ...comparisonPages,
         // Compare hub
         {
             url: `${baseUrl}/compare`,
