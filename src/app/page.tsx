@@ -2,10 +2,12 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { TrustBadges } from "@/components/home/TrustBadges";
 import { Testimonials } from "@/components/home/Testimonials";
-import { Education } from "@/components/home/Education";
+import { ValueProps } from "@/components/home/ValueProps";
+import { ProcessSteps } from "@/components/home/ProcessSteps";
+import { FeaturedPartner } from "@/components/home/FeaturedPartner";
 
-// Golden Circle Architecture (Simon Sinek's WHY → HOW → WHAT)
-import { WhySection, HowSection, WhatSection } from "@/components/home/GoldenCircle";
+// Golden Circle: WHY (Hero with visceral pain)
+import { WhySection } from "@/components/home/GoldenCircle";
 
 export default function Home() {
   return (
@@ -13,15 +15,22 @@ export default function Home() {
       <Navbar />
 
       <div className="flex-grow">
-        {/* Golden Circle: WHY → HOW → WHAT */}
+        {/* Optimized Golden Circle Flow */}
+        {/* 1. WHY: Visceral pain - "Stop Letting Inflation Eat Your Savings" */}
         <WhySection />
-        <HowSection />
-        <WhatSection />
 
-        {/* Social Proof & Education */}
+        {/* 2. LOGIC: Paper vs Real Assets - Rich Dad framework */}
+        <ValueProps />
+
+        {/* 3. HOW: 3 Simple Steps - Reduce anxiety */}
+        <ProcessSteps />
+
+        {/* 4. WHAT: The Solution - Augusta (with scarcity badge) */}
+        <FeaturedPartner />
+
+        {/* Social Proof */}
         <TrustBadges />
         <Testimonials />
-        <Education />
       </div>
 
       <Footer />

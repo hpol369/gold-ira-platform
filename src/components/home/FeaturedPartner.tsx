@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Star, ShieldCheck, Trophy, Phone, UserCheck } from "lucide-react";
+import { ArrowRight, Star, ShieldCheck, Trophy, Phone, UserCheck, Lock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
@@ -84,9 +84,9 @@ export function FeaturedPartner() {
                         {/* Right Side: Copy/Direct CTA */}
                         <div className="p-8 md:p-12 flex flex-col justify-center bg-white relative">
                             {/* Exclusive Banner */}
-                            <div className="absolute top-6 right-6 flex items-center gap-1.5 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-100">
-                                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                                Direct Partner Link
+                            <div className="absolute top-6 right-6 flex items-center gap-1.5 bg-amber-50 text-amber-900 px-3 py-1 rounded-full text-xs font-bold border border-amber-200 shadow-sm">
+                                <Lock className="w-3 h-3 text-amber-600" />
+                                Private Client Access ($50k Min)
                             </div>
 
                             <h4 className="text-2xl font-bold text-slate-900 mb-4">
@@ -126,7 +126,7 @@ export function FeaturedPartner() {
                                 <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-col items-center">
                                         <span className="flex items-center gap-2">
-                                            Check Eligibility & Get Free Kit
+                                            Confirm Eligibility (Strict $50k Min)
                                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                         </span>
                                         <span className="text-[10px] font-normal opacity-80 uppercase tracking-widest mt-1 text-amber-100">

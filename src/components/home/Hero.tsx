@@ -38,7 +38,7 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.1, ease: [0.2, 0.65, 0.3, 0.9] }}
                         className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white mb-8 leading-[1.1]"
                     >
-                        What the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#e5b94a] via-[#FFF8E7] to-[#d4a835] animate-shimmer bg-[length:200%_auto]">Rich</span> Know About Retirement
+                        Stop Letting <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#e5b94a] via-[#FFF8E7] to-[#d4a835] animate-shimmer bg-[length:200%_auto]">Inflation</span> Eat Your Savings
                     </motion.h1>
 
                     {/* Subheadline */}
@@ -48,8 +48,8 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                         className="max-w-2xl text-lg text-gray-300 md:text-2xl leading-relaxed mb-10 font-light"
                     >
-                        Most people save in paper assets and lose purchasing power every year.
-                        See how to use a <strong className="text-white font-semibold">Tax-Free Gold IRA</strong> to opt out of the failing banking system.
+                        Most people save in "fake money" and lose purchasing power every day.
+                        See how to use a <strong className="text-white font-semibold">Tax-Free Gold IRA</strong> to legally opt out of the failing banking system.
                     </motion.p>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
@@ -66,7 +66,7 @@ export function Hero() {
                                 document.getElementById('featured-partner')?.scrollIntoView({ behavior: 'smooth' });
                             }}>
                                 <span className="relative z-10 flex items-center justify-center gap-2">
-                                    See #1 Rated Company
+                                    Show Me The Strategy
                                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                                 </span>
                                 {/* Shine Effect */}
@@ -95,8 +95,19 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.6 }}
                         className="mt-8 flex flex-wrap justify-center gap-6 md:gap-10 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 z-10 relative"
                     >
-                        {/* BBB */}
+                        {/* 0 Complaints Badge (NEW) */}
                         <div className="flex items-center gap-2">
+                            <div className="bg-green-500/20 p-1 rounded border border-green-500/30">
+                                <ShieldCheck className="w-4 h-4 text-green-400" />
+                            </div>
+                            <div className="flex flex-col text-left">
+                                <span className="text-[10px] text-green-400 uppercase tracking-widest leading-none font-bold">Zero</span>
+                                <span className="text-sm font-bold text-white leading-none">Consumer Complaints</span>
+                            </div>
+                        </div>
+
+                        {/* BBB */}
+                        <div className="flex items-center gap-2 border-l border-white/10 pl-6">
                             <div className="bg-white/10 p-1 rounded">
                                 <span className="font-sans font-bold text-white text-xs leading-none">BBB</span>
                             </div>
