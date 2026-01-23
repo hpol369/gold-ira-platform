@@ -34,7 +34,7 @@ export function AugustaCTA({
           #1 RATED COMPANY
         </div>
         <h3 className="font-bold text-slate-900 mb-2 text-lg">
-          <span className="whitespace-nowrap">{headline || "Augusta Precious Metals"}</span>
+          {headline || "Augusta Precious Metals"}
         </h3>
         <div className="flex items-center gap-2 mb-3">
           <div className="flex text-amber-500">

@@ -42,7 +42,7 @@ export function FeaturedPartner() {
                                     #1 Rated Gold IRA Company
                                 </span>
                                 <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white leading-tight">
-                                    <span className="whitespace-nowrap">Augusta Precious Metals</span>
+                                    Augusta Precious Metals
                                 </h3>
 
                                 <div className="space-y-4 mb-8">
