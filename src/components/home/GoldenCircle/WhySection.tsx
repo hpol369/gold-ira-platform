@@ -30,7 +30,7 @@ export function WhySection() {
             </span>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              Stop Letting Inflation{" "}
+              Stop Letting Inflation<br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-400">
                 Eat Your Savings
               </span>
