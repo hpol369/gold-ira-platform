@@ -1,0 +1,251 @@
+// src/components/cta/AugustaCTA.tsx
+// Augusta Precious Metals CTA component for use across the site
+
+import { ArrowRight, Award, Phone, Shield, Star } from "lucide-react";
+import { getFeaturedCompany } from "@/data/companies";
+import { cn } from "@/lib/utils";
+
+interface AugustaCTAProps {
+  variant?: "default" | "sidebar" | "inline" | "footer" | "banner";
+  headline?: string;
+  subheadline?: string;
+  context?: string;
+  className?: string;
+}
+
+export function AugustaCTA({
+  variant = "default",
+  headline,
+  subheadline,
+  context,
+  className,
+}: AugustaCTAProps) {
+  const augusta = getFeaturedCompany();
+
+  // Sidebar variant - compact for sidebars
+  if (variant === "sidebar") {
+    return (
+      <div className={cn(
+        "bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-5 border border-amber-200",
+        className
+      )}>
+        <div className="flex items-center gap-2 text-amber-800 font-semibold text-xs mb-3">
+          <Award className="h-3.5 w-3.5" />
+          #1 RATED COMPANY
+        </div>
+        <h3 className="font-bold text-slate-900 mb-2 text-lg">
+          {headline || "Augusta Precious Metals"}
+        </h3>
+        <div className="flex items-center gap-2 mb-3">
+          <div className="flex text-amber-500">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <Star key={i} className="h-4 w-4 fill-current" />
+            ))}
+          </div>
+          <span className="text-sm text-slate-600">4.9/5</span>
+        </div>
+        <ul className="space-y-2 mb-4 text-sm">
+          <li className="flex items-center gap-2 text-slate-700">
+            <Shield className="h-4 w-4 text-green-600" />
+            A+ BBB Rating
+          </li>
+          <li className="flex items-center gap-2 text-slate-700">
+            <Shield className="h-4 w-4 text-green-600" />
+            Lifetime Support
+          </li>
+          <li className="flex items-center gap-2 text-slate-700">
+            <Shield className="h-4 w-4 text-green-600" />
+            No Pushy Sales
+          </li>
+        </ul>
+        <a
+          href={augusta.affiliateLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full text-center py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm"
+        >
+          Free Consultation
+        </a>
+      </div>
+    );
+  }
+
+  // Inline variant - for use within content
+  if (variant === "inline") {
+    return (
+      <div className={cn(
+        "bg-amber-50 border border-amber-200 rounded-lg p-4 my-6",
+        className
+      )}>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="flex-1">
+            <div className="flex items-center gap-2 text-amber-800 font-semibold text-xs mb-1">
+              <Award className="h-3.5 w-3.5" />
+              RECOMMENDED
+            </div>
+            <p className="text-slate-700 text-sm">
+              {subheadline || "Augusta Precious Metals is our #1 rated Gold IRA company for their education-first approach and transparent pricing."}
+            </p>
+          </div>
+          <a
+            href={augusta.affiliateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-all text-sm whitespace-nowrap"
+          >
+            Learn More
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  // Banner variant - full width banner
+  if (variant === "banner") {
+    return (
+      <div className={cn(
+        "bg-gradient-to-r from-slate-900 to-slate-800 py-4 px-6",
+        className
+      )}>
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 text-amber-400 font-semibold text-sm">
+              <Award className="h-4 w-4" />
+              #1 RATED
+            </div>
+            <span className="text-white">
+              {headline || "Get Your Free Gold IRA Guide from Augusta Precious Metals"}
+            </span>
+          </div>
+          <a
+            href={augusta.affiliateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm"
+          >
+            Get Free Guide
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  // Footer variant - for end of articles
+  if (variant === "footer") {
+    return (
+      <div className={cn(
+        "bg-gradient-to-br from-amber-50 via-white to-amber-50 rounded-2xl p-8 md:p-10 border border-amber-200 text-center",
+        className
+      )}>
+        <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 font-semibold text-sm px-4 py-2 rounded-full mb-4">
+          <Award className="h-4 w-4" />
+          OUR #1 RECOMMENDATION
+        </div>
+        <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+          {headline || "Ready to Protect Your Retirement?"}
+        </h3>
+        <p className="text-slate-600 max-w-2xl mx-auto mb-6">
+          {subheadline || "Augusta Precious Metals has been rated #1 in our comprehensive review. Their education-first approach means you'll never feel pressured. Get a free consultation today."}
+        </p>
+        <div className="flex flex-wrap justify-center gap-6 mb-8">
+          <div className="flex items-center gap-2 text-slate-700">
+            <Shield className="h-5 w-5 text-green-600" />
+            A+ BBB Rating
+          </div>
+          <div className="flex items-center gap-2 text-slate-700">
+            <Star className="h-5 w-5 text-amber-500" />
+            4.9/5 Rating
+          </div>
+          <div className="flex items-center gap-2 text-slate-700">
+            <Phone className="h-5 w-5 text-blue-600" />
+            Lifetime Support
+          </div>
+        </div>
+        <a
+          href={augusta.affiliateLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
+        >
+          Get Your Free Consultation
+          <ArrowRight className="h-5 w-5" />
+        </a>
+      </div>
+    );
+  }
+
+  // Default variant - full featured
+  return (
+    <div className={cn(
+      "bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 md:p-10 border border-amber-200",
+      className
+    )}>
+      <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <div className="inline-flex items-center gap-2 bg-amber-500 text-white font-semibold text-sm px-4 py-2 rounded-full mb-4">
+            <Award className="h-4 w-4" />
+            #1 RATED GOLD IRA COMPANY
+          </div>
+          <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+            {headline || "Augusta Precious Metals"}
+          </h3>
+          <p className="text-slate-600 mb-6">
+            {subheadline || "Education-first approach with lifetime customer support. No high-pressure sales tactics. Get a free one-on-one web conference to learn about protecting your retirement."}
+          </p>
+          <ul className="space-y-3 mb-6">
+            <li className="flex items-center gap-3 text-slate-700">
+              <Shield className="h-5 w-5 text-green-600" />
+              A+ BBB Rating • Zero Complaints
+            </li>
+            <li className="flex items-center gap-3 text-slate-700">
+              <Star className="h-5 w-5 text-amber-500" />
+              4.9/5 Average Rating
+            </li>
+            <li className="flex items-center gap-3 text-slate-700">
+              <Phone className="h-5 w-5 text-blue-600" />
+              Dedicated Agent for Life
+            </li>
+          </ul>
+          <a
+            href={augusta.affiliateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
+          >
+            Get Free Consultation
+            <ArrowRight className="h-5 w-5" />
+          </a>
+        </div>
+        <div className="hidden md:block">
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200">
+            <div className="text-center mb-4">
+              <div className="text-5xl font-bold text-slate-900">4.9</div>
+              <div className="flex justify-center text-amber-500 my-2">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <Star key={i} className="h-6 w-6 fill-current" />
+                ))}
+              </div>
+              <div className="text-sm text-slate-500">{augusta.reviewCount.toLocaleString()} verified reviews</div>
+            </div>
+            <div className="space-y-3 pt-4 border-t border-slate-100">
+              <div className="flex justify-between text-sm">
+                <span className="text-slate-600">Minimum Investment</span>
+                <span className="font-semibold text-slate-900">${augusta.minInvestment.toLocaleString()}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-slate-600">Setup Fee</span>
+                <span className="font-semibold text-green-600">Free</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-slate-600">Annual Fee</span>
+                <span className="font-semibold text-slate-900">${augusta.fees.annual}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

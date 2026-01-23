@@ -54,7 +54,10 @@ export function Navbar() {
                                 Best Companies
                             </Link>
                             <Link href="/reviews" className="text-sm font-medium text-text hover:text-primary transition-colors">
-                                Company Reviews
+                                Reviews
+                            </Link>
+                            <Link href="/compare" className="text-sm font-medium text-text hover:text-primary transition-colors">
+                                Compare
                             </Link>
                             <Button variant="gold" size="sm" asChild>
                                 <Link href="/guide/gold-ira-guide">Free PDF Guide</Link>
@@ -95,6 +98,13 @@ export function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             Company Reviews
+                        </Link>
+                        <Link
+                            href="/compare"
+                            className="text-sm font-medium text-text hover:text-primary py-2 border-b border-gray-50"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Compare Companies
                         </Link>
                         <Button variant="gold" className="w-full mt-2" asChild>
                             <Link href="/guide/gold-ira-guide" onClick={() => setIsMobileMenuOpen(false)}>
