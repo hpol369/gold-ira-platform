@@ -37,8 +37,8 @@ export function WhySection() {
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-10">
-              Every day you wait, the dollar buys less. Your $500,000 retirement?
-              <span className="text-red-400 font-semibold"> Worth $372,000 in just 10 years</span> at current inflation rates.
+              Every day you wait, the dollar buys less. Your $500,000 retirement?<br className="hidden md:block" />
+              <span className="text-red-400 font-semibold">Worth $372,000 in just 10 years</span> at current inflation rates.
             </p>
           </motion.div>
 
