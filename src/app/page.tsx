@@ -4,7 +4,6 @@ import { Hero } from "@/components/home/Hero";
 import { ValueProps } from "@/components/home/ValueProps";
 import { Testimonials } from "@/components/home/Testimonials";
 import { TrustBadges } from "@/components/home/TrustBadges";
-import { AuthorBio } from "@/components/home/AuthorBio";
 import { Education } from "@/components/home/Education";
 import { ComparisonTable } from "@/components/home/ComparisonTable";
 import { FeaturedPartner } from "@/components/home/FeaturedPartner";
@@ -21,7 +20,6 @@ export default function Home() {
         <ComparisonTable />
         <ValueProps />
         <Testimonials />
-        <AuthorBio />
         <Education />
       </div>
 
