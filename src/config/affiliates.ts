@@ -1,5 +1,5 @@
 export const AFFILIATE_LINKS = {
-    augusta: "https://www.augustapreciousmetals.com/ap-gold-silver-ira-guide/?ap_id=RICH_DAD", // Placeholder
+    augusta: "https://apmaffiliates.com/apply/?ref=5129",
     noble: "https://noblegoldinvestments.com/gold-silver-ira-guide/?affiliate_id=RICH_DAD", // Placeholder
     goldco: "https://goldco.com/free-kit/?affiliate_id=RICH_DAD", // Placeholder
     americanHartford: "https://www.americanhartfordgold.com/?affiliate_id=RICH_DAD", // Placeholder
