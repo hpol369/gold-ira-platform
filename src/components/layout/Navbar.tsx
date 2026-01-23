@@ -59,6 +59,9 @@ export function Navbar() {
                             <Link href="/compare" className="text-sm font-medium text-text hover:text-primary transition-colors">
                                 Compare
                             </Link>
+                            <Link href="/rollover" className="text-sm font-medium text-text hover:text-primary transition-colors">
+                                Rollover
+                            </Link>
                             <Button variant="gold" size="sm" asChild>
                                 <Link href="/guide/gold-ira-guide">Free PDF Guide</Link>
                             </Button>
@@ -105,6 +108,13 @@ export function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             Compare Companies
+                        </Link>
+                        <Link
+                            href="/rollover"
+                            className="text-sm font-medium text-text hover:text-primary py-2 border-b border-gray-50"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Rollover Guide
                         </Link>
                         <Button variant="gold" className="w-full mt-2" asChild>
                             <Link href="/guide/gold-ira-guide" onClick={() => setIsMobileMenuOpen(false)}>
