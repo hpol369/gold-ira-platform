@@ -1,24 +1,24 @@
 "use client";
 
 import { Container } from "@/components/ui/Container";
-import { ArrowRight, FileCheck, RefreshCw, Lock } from "lucide-react";
+import { FileCheck, RefreshCw, Lock } from "lucide-react";
 
 export function ProcessSteps() {
     const steps = [
         {
             icon: FileCheck,
             title: "1. Open Your Account",
-            desc: "The paperwork is handled for you. A specialist guides you through the application in minutes, not hours."
+            desc: "Complete a short application. Your Gold IRA company sets up the account with an IRS-approved custodian—typically same day."
         },
         {
             icon: RefreshCw,
-            title: "2. Tax-Free Transfer",
-            desc: "Move funds from your old 401(k) or IRA. It’s a penalty-free, tax-free rollover directly into your new account."
+            title: "2. Fund Your Account",
+            desc: "Roll over funds from your existing 401(k), IRA, or other retirement account. Direct transfers are tax-free with zero penalties."
         },
         {
             icon: Lock,
-            title: "3. Secure Your Gold",
-            desc: "Select your metals. They are shipped securely to an insured, IRS-approved depository in your name."
+            title: "3. Purchase Gold",
+            desc: "Choose from IRS-approved gold coins and bars. Your metals are delivered to a secure, insured depository in your name."
         }
     ];
 
@@ -26,15 +26,15 @@ export function ProcessSteps() {
         <section className="py-16 bg-white border-t border-gray-100">
             <Container>
                 <div className="text-center mb-12">
-                    <span className="text-amber-600 font-bold tracking-widest uppercase text-xs mb-2 block animate-pulse">
-                        The "Loophole" Explained
+                    <span className="text-amber-600 font-bold tracking-widest uppercase text-xs mb-2 block">
+                        The Process
                     </span>
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-                        How to Switch in 3 Simple Steps
+                        How a Gold IRA Works
                     </h2>
                     <p className="text-slate-600 max-w-2xl mx-auto">
-                        It's not complicated. You don't need to be a tax expert.
-                        The process is <strong>100% IRS-approved</strong> and takes less work than opening a bank account.
+                        A Gold IRA works just like your regular IRA—but instead of paper assets,
+                        you own physical gold. The process is straightforward and fully IRS-compliant.
                     </p>
                 </div>
 
@@ -56,10 +56,10 @@ export function ProcessSteps() {
                     ))}
                 </div>
 
-                {/* Sub-CTA */}
-                <div className="mt-12 text-center">
-                    <p className="text-sm text-gray-500 mb-4 italic">
-                        "I thought it would be hard, but the team did 95% of the work for me." — Robert T., Texas
+                {/* Timeline note */}
+                <div className="mt-10 text-center">
+                    <p className="text-sm text-slate-500">
+                        Most rollovers complete within 1-2 weeks. Your specialist handles the paperwork.
                     </p>
                 </div>
             </Container>

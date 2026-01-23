@@ -17,11 +17,11 @@ export function FeaturedPartner() {
                         Editor's Choice • 2026 Gold Standard
                     </div>
                     <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-4">
-                        Why We Recommend <span className="text-amber-600 border-b-4 border-amber-200">Only One</span> Company
+                        Our <span className="text-amber-600 border-b-4 border-amber-200">Top Pick</span> for 2026
                     </h2>
                     <p className="text-lg text-slate-600 max-w-2xl">
-                        Our investigation into 20+ dealers revealed a clear winner for high-net-worth investors.
-                        Augusta Precious Metals stands alone with <strong className="text-slate-900">Zero BBB Complaints</strong> and unmatched education.
+                        After reviewing fees, customer complaints, and service quality across the industry,
+                        Augusta Precious Metals earned our highest rating with <strong className="text-slate-900">zero BBB complaints</strong> in over 7 years.
                     </p>
                 </div>
 
@@ -90,11 +90,10 @@ export function FeaturedPartner() {
                             </div>
 
                             <h4 className="text-2xl font-bold text-slate-900 mb-4">
-                                Skip the Sales Pitch. Get Facts.
+                                Education First, Not Sales Pressure
                             </h4>
                             <p className="text-slate-600 mb-6 leading-relaxed">
-                                After reviewing 20+ Gold IRA companies, Augusta consistently scored highest on transparency, customer service, and education-first approach.
-                                Fill out the form and a specialist will call you personally to answer your questions—no pushy sales tactics.
+                                Augusta built their reputation on teaching, not selling. Request their free kit and you'll get a one-on-one web conference explaining how Gold IRAs work—no obligation, no hard sell.
                             </p>
 
                             <ul className="space-y-3 mb-8">
@@ -102,19 +101,19 @@ export function FeaturedPartner() {
                                     <div className="mt-1 bg-amber-100 rounded-full p-1 text-amber-700">
                                         <ArrowRight className="w-3 h-3" />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-700">One-on-one web conference with Harvard-trained economist</span>
+                                    <span className="text-sm font-medium text-slate-700">Free web conference with their on-staff economist</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="mt-1 bg-amber-100 rounded-full p-1 text-amber-700">
                                         <ArrowRight className="w-3 h-3" />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-700">Account lifetime support (purchasing & liquidation teams)</span>
+                                    <span className="text-sm font-medium text-slate-700">Dedicated support from account setup through retirement</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="mt-1 bg-amber-100 rounded-full p-1 text-amber-700">
                                         <ArrowRight className="w-3 h-3" />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-700">Transparent Pricing: Zero fees for up to 10 years</span>
+                                    <span className="text-sm font-medium text-slate-700">Fee waiver programs available for qualifying accounts</span>
                                 </li>
                             </ul>
 
@@ -126,18 +125,18 @@ export function FeaturedPartner() {
                                 <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-col items-center">
                                         <span className="flex items-center gap-2">
-                                            Confirm Eligibility (Strict $50k Min)
+                                            Get Your Free Gold IRA Kit
                                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                         </span>
                                         <span className="text-[10px] font-normal opacity-80 uppercase tracking-widest mt-1 text-amber-100">
-                                            Official Partner Page • Secure Form
+                                            No cost • No obligation
                                         </span>
                                     </div>
                                 </a>
                             </Button>
 
                             <p className="text-center text-xs text-slate-400 mt-4">
-                                *Required Minimum: $50,000 in retirement savings
+                                Minimum investment: $50,000
                             </p>
                         </div>
                     </div>
