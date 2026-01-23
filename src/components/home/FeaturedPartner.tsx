@@ -93,9 +93,8 @@ export function FeaturedPartner() {
                                 Skip the Sales Pitch. Get Facts.
                             </h4>
                             <p className="text-slate-600 mb-6 leading-relaxed">
-                                While other companies use high-pressure tactics, Augusta uses education.
-                                Through our exclusive partnership, you get <strong className="text-slate-900">priority access</strong> to their team.
-                                Request your free guide below and expect a personal follow-up within 24 hours.
+                                After reviewing 20+ Gold IRA companies, Augusta consistently scored highest on transparency, customer service, and education-first approach.
+                                Request a free info kit and they'll walk you through how it works—no pressure.
                             </p>
 
                             <ul className="space-y-3 mb-8">
