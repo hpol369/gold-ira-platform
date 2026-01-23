@@ -2,6 +2,19 @@ import { MetadataRoute } from "next";
 
 import { US_STATES } from '@/lib/states';
 
+// Rollover provider slugs
+const rolloverProviders = [
+    'fidelity', 'vanguard', 'charles-schwab', 'tiaa', 'principal',
+    'empower', 'john-hancock', 'tsp', 'merrill-lynch', 'prudential'
+];
+
+// Rollover account type slugs
+const rolloverAccountTypes = [
+    '401k-to-gold-ira', 'roth-ira-to-gold-ira', 'traditional-ira-to-gold-ira',
+    '403b-to-gold-ira', 'simple-ira-to-gold-ira', '457b-to-gold-ira',
+    'tsp-to-gold-ira', 'sep-ira-to-gold-ira', 'pension-to-gold-ira'
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.richdadretirement.com';
 
@@ -12,6 +25,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
+    const rolloverProviderPages = rolloverProviders.map(slug => ({
+        url: `${baseUrl}/rollover/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
+    const rolloverAccountTypePages = rolloverAccountTypes.map(slug => ({
+        url: `${baseUrl}/rollover/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
     return [
         {
             url: baseUrl,
@@ -20,6 +47,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         ...statePages,
+        // Core content pages
+        {
+            url: `${baseUrl}/what-is-a-gold-ira`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/gold-ira-rules`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/why-gold`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/why-gold/inflation-protection`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        // Rollover hub and pages
+        {
+            url: `${baseUrl}/rollover`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.9,
+        },
+        ...rolloverProviderPages,
+        ...rolloverAccountTypePages,
+        // Compare hub
+        {
+            url: `${baseUrl}/compare`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
         {
             url: "https://www.richdadretirement.com/guide/gold-ira-guide",
             lastModified: new Date(),

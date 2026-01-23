@@ -32,9 +32,9 @@ export function FeaturedPartner() {
 
                     <div className="grid md:grid-cols-2 gap-0">
                         {/* Left Side: Visual/Brand */}
-                        <div className="bg-[#0f172a] text-white p-8 md:p-12 flex flex-col justify-center relative overflow-hidden">
-                            {/* Texture */}
-                            <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay"></div>
+                        <div className="bg-slate-900 text-white p-8 md:p-12 flex flex-col justify-center relative overflow-hidden ring-1 ring-white/10">
+                            {/* Radial Gradient for Depth */}
+                            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-800 via-slate-950 to-slate-950"></div>
                             <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/20 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
 
                             <div className="relative z-10">

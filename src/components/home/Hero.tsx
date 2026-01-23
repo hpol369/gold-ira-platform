@@ -13,9 +13,9 @@ export function Hero() {
             {/* Dynamic Background */}
             <div className="absolute inset-0 pointer-events-none">
                 {/* Gold Glow Top Left */}
-                <div className="absolute -top-20 -left-20 w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[120px] mix-blend-screen opacity-60" />
-                {/* Deep Green Glow Bottom Right */}
-                <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-[#1a5d3a]/30 rounded-full blur-[120px] mix-blend-screen opacity-50" />
+                <div className="absolute -top-20 -left-20 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[120px] mix-blend-screen opacity-40" />
+                {/* Emerald Glow Bottom Right */}
+                <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-emerald-900/40 rounded-full blur-[120px] mix-blend-screen opacity-30" />
                 {/* Grainy Texture Overlay */}
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay"></div>
             </div>
@@ -36,9 +36,9 @@ export function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.1, ease: [0.2, 0.65, 0.3, 0.9] }}
-                        className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white mb-8 leading-[1.1]"
+                        className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-white mb-8 leading-[1.1] drop-shadow-sm"
                     >
-                        Stop Letting <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#e5b94a] via-[#FFF8E7] to-[#d4a835] animate-shimmer bg-[length:200%_auto]">Inflation</span> Eat Your Savings
+                        Stop Letting <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-white to-amber-200 animate-shimmer bg-[length:200%_auto]">Inflation</span> Eat Your Savings
                     </motion.h1>
 
                     {/* Subheadline */}
@@ -56,10 +56,10 @@ export function Hero() {
                         <Button
                             size="xl"
                             asChild
-                            className="w-full sm:w-auto min-w-[280px] h-16 text-lg font-bold text-[#1a5d3a] 
-                            bg-gradient-to-b from-[#fadd7d] via-[#f2c94c] to-[#d4a017] 
-                            shadow-[0_0_50px_-10px_rgba(250,221,125,0.4)] hover:shadow-[0_0_60px_-10px_rgba(250,221,125,0.6)]
-                            hover:scale-105 transition-all duration-300 border border-[#fff8e7]/40 relative overflow-hidden group"
+                            className="w-full sm:w-auto min-w-[280px] h-16 text-lg font-bold text-slate-900 
+                            bg-gradient-to-b from-amber-200 via-amber-400 to-amber-500 
+                            shadow-[0_0_50px_-10px_rgba(212,175,55,0.4)] hover:shadow-[0_0_60px_-10px_rgba(212,175,55,0.6)]
+                            hover:scale-105 transition-all duration-300 border border-amber-200/50 relative overflow-hidden group"
                         >
                             <Link href="/#featured-partner" onClick={(e) => {
                                 e.preventDefault();
