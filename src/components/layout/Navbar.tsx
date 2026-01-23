@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, ShieldCheck, Menu, X } from "lucide-react";
+import { ArrowRight, ShieldCheck, Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,11 +25,13 @@ export function Navbar() {
                             <span className="hidden sm:inline">Updated: January 2026</span>
                         </div>
                         <a
-                            href="tel:+18005550123"
-                            className="flex items-center gap-2 font-semibold hover:text-secondary transition-colors"
+                            href={AFFILIATE_LINKS.augusta}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 font-semibold hover:text-secondary transition-colors group"
                         >
-                            <Phone className="h-3 w-3 sm:h-4 sm:w-4 fill-secondary text-secondary" />
-                            <span>Free Consultation: (800) 555-0123</span>
+                            <span>Get Your Free Consultation</span>
+                            <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-secondary group-hover:translate-x-1 transition-transform" />
                         </a>
                     </div>
                 </Container>

@@ -5,7 +5,7 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
-import { TrendingDown, AlertTriangle, DollarSign } from "lucide-react";
+import { TrendingDown, AlertTriangle, Coins } from "lucide-react";
 
 export function WhySection() {
   return (
@@ -73,7 +73,7 @@ export function WhySection() {
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center">
               <div className="flex justify-center mb-3">
                 <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center">
-                  <DollarSign className="h-5 w-5 text-green-400" />
+                  <Coins className="h-5 w-5 text-green-400" />
                 </div>
               </div>
               <div className="text-2xl font-bold text-green-400 mb-1">+700%</div>

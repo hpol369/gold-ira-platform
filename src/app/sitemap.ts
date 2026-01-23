@@ -553,5 +553,106 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "weekly",
             priority: 0.8,
         },
+        // SEO Content Expansion - Phase 1, 2, 3 Pages (15 new pages)
+        // Learn pages
+        {
+            url: "https://www.richdadretirement.com/learn/why-is-gold-valuable",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/stock-market-crash-protection",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/sequence-of-returns-risk",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/recession-proof-investments",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/is-my-money-safe-in-bank",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/safe-haven-investments",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/stock-market-alternatives",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/learn/retirement-planning-mistakes",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        // Guide pages
+        {
+            url: "https://www.richdadretirement.com/guide/what-to-do-with-old-401k",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: "https://www.richdadretirement.com/guide/401k-alternatives",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: "https://www.richdadretirement.com/guide/protect-401k-from-crash",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        {
+            url: "https://www.richdadretirement.com/guide/wealth-preservation-strategies",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
+        // Why-Gold pages
+        {
+            url: "https://www.richdadretirement.com/why-gold/physical-gold-vs-paper",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/why-gold/central-banks-buying-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: "https://www.richdadretirement.com/why-gold/gold-vs-stocks",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        // Rich Dad Strategy pages
+        {
+            url: "https://www.richdadretirement.com/rich-dad-strategy/robert-kiyosaki-gold",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
     ];
 }
