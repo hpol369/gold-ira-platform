@@ -94,7 +94,7 @@ export function FeaturedPartner() {
                             </h4>
                             <p className="text-slate-600 mb-6 leading-relaxed">
                                 After reviewing 20+ Gold IRA companies, Augusta consistently scored highest on transparency, customer service, and education-first approach.
-                                Request a free info kit and they'll walk you through how it works—no pressure.
+                                Fill out the form and a specialist will call you personally to answer your questions—no pushy sales tactics.
                             </p>
 
                             <ul className="space-y-3 mb-8">
