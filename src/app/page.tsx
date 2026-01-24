@@ -7,8 +7,6 @@ import { ProcessSteps } from "@/components/home/ProcessSteps";
 import { FeaturedPartner } from "@/components/home/FeaturedPartner";
 import { QuizCTA } from "@/components/home/QuizCTA";
 import { WealthCalculator } from "@/components/home/WealthCalculator";
-
-// Golden Circle: WHY (Hero with visceral pain)
 import { WhySection } from "@/components/home/GoldenCircle";
 
 export default function Home() {

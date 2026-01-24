@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 
 import { US_STATES } from '@/lib/states';
 import { getCompanySlugs } from '@/data/companies';
+import { getAllAssetSlugs } from '@/data/assets';
 
 // Rollover provider slugs
 const rolloverProviders = [
@@ -73,6 +74,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
+    // Gold vs Asset comparison pages (programmatic SEO)
+    const assetSlugs = getAllAssetSlugs();
+    const goldVsAssetPages = assetSlugs.map(slug => ({
+        url: `${baseUrl}/compare/gold-vs/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
     return [
         {
             url: baseUrl,
@@ -119,6 +129,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...companyReviewPages,
         // Dynamic comparison pages (210 combinations)
         ...comparisonPages,
+        // Gold vs Asset comparison pages (21 pages)
+        ...goldVsAssetPages,
         // Compare hub
         {
             url: `${baseUrl}/compare`,
