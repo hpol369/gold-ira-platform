@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { Callout } from "@/components/ui/Callout";
@@ -303,6 +304,14 @@ export default function SelfDirectedIraGoldPage() {
                     </div>
                 </Container>
             </div>
+
+            {/* CTA Section */}
+            <section className="py-16 bg-slate-800/50">
+                <Container>
+                    <AugustaCTA variant="footer" />
+                </Container>
+            </section>
+
             <Footer />
         </main>
     );

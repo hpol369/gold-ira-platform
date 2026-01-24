@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Button } from "@/components/ui/Button";
 import {
   scenarios,
@@ -277,6 +278,17 @@ export default async function ScenarioPage({ params }: PageProps) {
               </Link>
             </Button>
           </div>
+        </Container>
+      </section>
+
+      {/* Augusta CTA */}
+      <section className="py-16 bg-slate-800/50">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Don't Wait Until It's Too Late"
+            subheadline="Protect your retirement before the next crisis hits. Augusta Precious Metals has helped thousands of Americans secure their savings with physical gold."
+          />
         </Container>
       </section>
 

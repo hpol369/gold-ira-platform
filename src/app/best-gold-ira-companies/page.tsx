@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { ComparisonTable } from "@/components/home/ComparisonTable";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { Sparkles, Trophy, Star, CheckCircle2, ArrowRight } from "lucide-react";
@@ -223,6 +224,18 @@ export default function BestGoldIraCompaniesPage() {
                         </div>
                     </div>
                 </Container>
+
+                {/* Augusta CTA */}
+                <section className="py-16">
+                    <Container>
+                        <AugustaCTA
+                            variant="footer"
+                            linkContext="comparison"
+                            headline="Ready to Get Started?"
+                            subheadline="Augusta Precious Metals earned our #1 ranking for their education-first approach and zero BBB complaints. Request your free kit today."
+                        />
+                    </Container>
+                </section>
             </div>
             <Footer />
         </main>

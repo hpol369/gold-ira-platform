@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { KeyTakeaways } from "@/components/learn/KeyTakeaways";
 import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
@@ -540,6 +541,13 @@ export default function GoldIraScamsPage() {
                     </article>
                 </div>
             </Container>
+
+            {/* CTA Section */}
+            <section className="py-16 bg-slate-800/50">
+                <Container>
+                    <AugustaCTA variant="footer" linkContext="comparison" />
+                </Container>
+            </section>
         </main>
     );
 }
