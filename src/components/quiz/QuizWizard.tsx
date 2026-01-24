@@ -104,28 +104,28 @@ export function QuizWizard() {
     // Render Functions
     const renderIntro = () => (
         <div className="text-center space-y-8 py-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary mb-4">
+            <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 px-4 py-1.5 text-sm font-semibold text-amber-400 mb-4">
                 <AlertTriangle className="h-4 w-4" />
                 Are You Exposed?
             </div>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary">{steps[0].title}</h2>
-            <p className="text-xl text-text-muted max-w-xl mx-auto leading-relaxed">{steps[0].subtitle}</p>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white">{steps[0].title}</h2>
+            <p className="text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">{steps[0].subtitle}</p>
 
             <Button size="xl" variant="gold" onClick={handleStart} className="w-full sm:w-auto min-w-[240px] text-lg px-12 py-6 shadow-xl">
                 Calculate My Score
                 <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <p className="text-sm text-gray-400">Takes less than 60 seconds. No SSN required.</p>
+            <p className="text-sm text-slate-400">Takes less than 60 seconds. No SSN required.</p>
         </div>
     );
 
     const renderQuestion = () => (
         <div className="max-w-2xl mx-auto py-8">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-2 text-center">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-2 text-center">
                 {currentStep.question}
             </h2>
             {currentStep.helper && (
-                <p className="text-center text-text-muted mb-8 text-sm">{currentStep.helper}</p>
+                <p className="text-center text-slate-400 mb-8 text-sm">{currentStep.helper}</p>
             )}
 
             <div className="grid grid-cols-1 gap-4 mt-8">
@@ -142,13 +142,13 @@ export function QuizWizard() {
 
                             if (key) handleOptionSelect(key, option.value);
                         }}
-                        className="group relative flex items-center justify-between p-6 text-left rounded-xl border-2 border-gray-100 hover:border-secondary hover:bg-background-subtle transition-all duration-200 shadow-sm hover:shadow-md bg-white"
+                        className="group relative flex items-center justify-between p-6 text-left rounded-xl border-2 border-white/10 hover:border-amber-500/50 hover:bg-white/10 transition-all duration-200 bg-white/5 backdrop-blur-sm"
                     >
-                        <span className="text-lg font-medium text-primary group-hover:text-primary-dark">
+                        <span className="text-lg font-medium text-white group-hover:text-amber-400">
                             {option.label}
                         </span>
-                        <div className="h-6 w-6 rounded-full border-2 border-gray-200 group-hover:border-secondary flex items-center justify-center">
-                            <div className="h-3 w-3 rounded-full bg-secondary opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div className="h-6 w-6 rounded-full border-2 border-white/20 group-hover:border-amber-500 flex items-center justify-center">
+                            <div className="h-3 w-3 rounded-full bg-amber-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                         </div>
                     </button>
                 ))}
@@ -158,9 +158,9 @@ export function QuizWizard() {
 
     const renderAnalyzing = () => (
         <div className="flex flex-col items-center justify-center py-20 text-center">
-            <div className="w-16 h-16 border-4 border-gray-200 border-t-secondary rounded-full animate-spin mb-8" />
-            <h3 className="text-2xl font-serif font-bold text-primary mb-2">Analyzing your profile...</h3>
-            <p className="text-text-muted">Comparing your portfolio against wealth protection strategies.</p>
+            <div className="w-16 h-16 border-4 border-slate-700 border-t-amber-500 rounded-full animate-spin mb-8" />
+            <h3 className="text-2xl font-serif font-bold text-white mb-2">Analyzing your profile...</h3>
+            <p className="text-slate-400">Comparing your portfolio against wealth protection strategies.</p>
         </div>
     );
 
@@ -168,41 +168,41 @@ export function QuizWizard() {
         if (!result) return null;
         return (
             <div className="max-w-3xl mx-auto py-8 text-center">
-                <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent mb-8">
+                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-1.5 text-sm font-semibold text-emerald-400 mb-8">
                     <CheckCircle2 className="h-4 w-4" />
                     Score Calculation Complete
                 </div>
 
-                <h2 className="text-3xl font-serif font-bold text-primary mb-2">
-                    Your Result: <span className="text-secondary">{result.scoreLabel}</span>
+                <h2 className="text-3xl font-serif font-bold text-white mb-2">
+                    Your Result: <span className="text-amber-400">{result.scoreLabel}</span>
                 </h2>
 
-                <p className="text-lg text-text-muted mb-8 max-w-2xl mx-auto">
+                <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
                     Based on your answers, your retirement savings may be vulnerable to inflation. However, you are in a prime position to adopt the strategies used by the wealthy.
                 </p>
 
-                <div className="bg-white rounded-2xl shadow-xl border-2 border-primary/10 p-8 mb-8 text-left relative overflow-hidden">
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8 mb-8 text-left relative overflow-hidden">
                     {/* Top Banner */}
-                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-secondary" />
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-amber-600" />
 
                     <div className="flex flex-col md:flex-row gap-8 items-start">
                         {/* Score Circle */}
-                        <div className="w-full md:w-auto flex flex-col items-center justify-center p-6 bg-background-subtle rounded-xl min-w-[150px]">
-                            <span className="text-4xl font-bold text-primary font-serif">
-                                {result.score}<span className="text-lg text-gray-400">/100</span>
+                        <div className="w-full md:w-auto flex flex-col items-center justify-center p-6 bg-slate-800/50 rounded-xl min-w-[150px] border border-white/10">
+                            <span className="text-4xl font-bold text-white font-serif">
+                                {result.score}<span className="text-lg text-slate-400">/100</span>
                             </span>
-                            <span className="text-xs uppercase tracking-wider font-semibold text-secondary mt-1">Wealth Score</span>
+                            <span className="text-xs uppercase tracking-wider font-semibold text-amber-400 mt-1">Wealth Score</span>
                         </div>
 
                         {/* Content */}
                         <div className="flex-1">
-                            <h3 className="text-xl font-bold text-primary mb-2 font-serif">Recommended Strategy: {result.match}</h3>
-                            <p className="text-text leading-relaxed mb-6">{result.description}</p>
+                            <h3 className="text-xl font-bold text-white mb-2 font-serif">Recommended Strategy: {result.match}</h3>
+                            <p className="text-slate-300 leading-relaxed mb-6">{result.description}</p>
 
                             <ul className="space-y-3 mb-8">
                                 {result.benefits.map((benefit, i) => (
-                                    <li key={i} className="flex items-center gap-3 text-sm font-medium text-primary">
-                                        <CheckCircle2 className="h-5 w-5 text-accent flex-shrink-0" />
+                                    <li key={i} className="flex items-center gap-3 text-sm font-medium text-white">
+                                        <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0" />
                                         {benefit}
                                     </li>
                                 ))}
@@ -216,14 +216,14 @@ export function QuizWizard() {
                                     </a>
                                 </Button>
                                 <div className="text-center sm:text-left px-2">
-                                    <p className="text-xs text-gray-400 mt-2">100% Free • No Obligation • Educational Only</p>
+                                    <p className="text-xs text-slate-400 mt-2">100% Free • No Obligation • Educational Only</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-slate-400">
                     Top Recommendation based on your portfolio size: {result.match}.
                 </p>
             </div>
@@ -234,9 +234,9 @@ export function QuizWizard() {
         <Container className="max-w-4xl min-h-[600px] flex flex-col justify-center">
             {/* Progress Bar */}
             {currentStepIndex > 0 && currentStepIndex < steps.length - 1 && (
-                <div className="w-full h-2 bg-gray-100 rounded-full mb-8 overflow-hidden">
+                <div className="w-full h-2 bg-slate-700 rounded-full mb-8 overflow-hidden">
                     <motion.div
-                        className="h-full bg-secondary"
+                        className="h-full bg-amber-500"
                         initial={{ width: 0 }}
                         animate={{ width: `${progress}%` }}
                         transition={{ duration: 0.5 }}
@@ -248,7 +248,7 @@ export function QuizWizard() {
             {currentStepIndex > 1 && currentStep.id !== "analyzing" && currentStep.id !== "results" && (
                 <button
                     onClick={handleBack}
-                    className="self-start flex items-center gap-1 text-sm text-text-muted hover:text-primary mb-4 transition-colors"
+                    className="self-start flex items-center gap-1 text-sm text-slate-400 hover:text-white mb-4 transition-colors"
                 >
                     <ArrowLeft className="h-4 w-4" /> Back
                 </button>
