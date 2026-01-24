@@ -23,16 +23,16 @@ export function ProcessSteps() {
     ];
 
     return (
-        <section className="py-16 bg-white border-t border-gray-100">
+        <section className="py-16 bg-slate-900 border-t border-white/5">
             <Container>
                 <div className="text-center mb-12">
-                    <span className="text-amber-600 font-bold tracking-widest uppercase text-xs mb-2 block">
+                    <span className="text-amber-400 font-bold tracking-widest uppercase text-xs mb-2 block">
                         The Process
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
                         How a Gold IRA Works
                     </h2>
-                    <p className="text-slate-600 max-w-2xl mx-auto">
+                    <p className="text-slate-400 max-w-2xl mx-auto">
                         A Gold IRA works just like your regular IRA—but instead of paper assets,
                         you own physical gold. The process is straightforward and fully IRS-compliant.
                     </p>
@@ -40,18 +40,18 @@ export function ProcessSteps() {
 
                 <div className="grid md:grid-cols-3 gap-8 relative">
                     {/* Connecting Line (Desktop) */}
-                    <div className="hidden md:block absolute top-[40px] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200 z-0" />
+                    <div className="hidden md:block absolute top-[40px] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-amber-500/20 via-amber-500/40 to-amber-500/20 z-0" />
 
                     {steps.map((step, i) => (
                         <div key={i} className="relative z-10 flex flex-col items-center text-center group">
-                            <div className="w-20 h-20 rounded-2xl bg-white border-2 border-amber-100 shadow-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-amber-400 transition-all duration-300">
-                                <step.icon className="w-10 h-10 text-amber-500" />
-                                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-lg border-4 border-white">
+                            <div className="w-20 h-20 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-amber-400/30 group-hover:bg-white/10 transition-all duration-300">
+                                <step.icon className="w-10 h-10 text-amber-400" />
+                                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-amber-500 text-slate-900 flex items-center justify-center font-bold text-lg border-4 border-slate-900">
                                     {i + 1}
                                 </div>
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
-                            <p className="text-sm text-slate-600 leading-relaxed max-w-xs">{step.desc}</p>
+                            <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
+                            <p className="text-sm text-slate-400 leading-relaxed max-w-xs">{step.desc}</p>
                         </div>
                     ))}
                 </div>

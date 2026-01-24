@@ -148,7 +148,7 @@ export default function GoldIraScamsPage() {
                         {/* Home Storage Scam */}
                         <section id="home-storage" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #1: The &quot;Home Storage Gold IRA&quot;</h2>
@@ -160,29 +160,29 @@ export default function GoldIraScamsPage() {
                                 <strong>The Reality:</strong> This is <strong>illegal</strong> under IRS rules. The IRS requires precious metals in an IRA to be held by an approved custodian at an approved depository—not in your basement.
                             </p>
 
-                            <div className="bg-red-50 rounded-2xl p-6 border border-red-100 not-prose my-8">
-                                <h4 className="font-bold text-red-700 text-lg mb-4 flex items-center gap-2">
+                            <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
+                                <h4 className="font-bold text-red-400 text-lg mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     The IRS Position on Home Storage
                                 </h4>
-                                <p className="text-red-700 mb-4">
+                                <p className="text-red-300 mb-4">
                                     The IRS considers taking personal possession of IRA metals as a <strong>distribution</strong>. This means:
                                 </p>
-                                <ul className="space-y-2 text-red-700">
+                                <ul className="space-y-2 text-red-300">
                                     <li className="flex items-start gap-2">
-                                        <XCircle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                                        <XCircle className="w-4 h-4 text-red-400 mt-1 flex-shrink-0" />
                                         <span>Immediate income taxes on the full value</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <XCircle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                                        <XCircle className="w-4 h-4 text-red-400 mt-1 flex-shrink-0" />
                                         <span>10% early withdrawal penalty if under 59½</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <XCircle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                                        <XCircle className="w-4 h-4 text-red-400 mt-1 flex-shrink-0" />
                                         <span>Potential additional penalties for prohibited transactions</span>
                                     </li>
                                 </ul>
-                                <p className="text-sm text-red-600 mt-4">
+                                <p className="text-sm text-red-400 mt-4">
                                     A $100,000 home storage scheme could cost you $30,000+ in taxes and penalties.
                                 </p>
                             </div>
@@ -195,7 +195,7 @@ export default function GoldIraScamsPage() {
                         {/* Excessive Premiums */}
                         <section id="excessive-premiums" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #2: Excessive Premiums</h2>
@@ -208,27 +208,27 @@ export default function GoldIraScamsPage() {
                             </p>
 
                             <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                <h4 className="font-bold text-primary text-lg mb-4">What Premiums Should You Expect?</h4>
+                                <h4 className="font-bold text-white text-lg mb-4">What Premiums Should You Expect?</h4>
                                 <div className="space-y-3">
-                                    <div className="flex items-center justify-between p-3 bg-white rounded-lg">
-                                        <span className="font-medium">Gold Bars</span>
-                                        <span className="text-green-600 font-bold">2-5% over spot</span>
+                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                                        <span className="font-medium text-white">Gold Bars</span>
+                                        <span className="text-green-400 font-bold">2-5% over spot</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-white rounded-lg">
-                                        <span className="font-medium">Gold Eagles/Maples</span>
-                                        <span className="text-green-600 font-bold">4-8% over spot</span>
+                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                                        <span className="font-medium text-white">Gold Eagles/Maples</span>
+                                        <span className="text-green-400 font-bold">4-8% over spot</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-white rounded-lg">
-                                        <span className="font-medium">Silver Bars</span>
-                                        <span className="text-green-600 font-bold">3-8% over spot</span>
+                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                                        <span className="font-medium text-white">Silver Bars</span>
+                                        <span className="text-green-400 font-bold">3-8% over spot</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-white rounded-lg">
-                                        <span className="font-medium">Silver Eagles</span>
-                                        <span className="text-amber-600 font-bold">8-15% over spot</span>
+                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                                        <span className="font-medium text-white">Silver Eagles</span>
+                                        <span className="text-amber-400 font-bold">8-15% over spot</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-100">
-                                        <span className="font-medium text-red-700">Red Flag Territory</span>
-                                        <span className="text-red-600 font-bold">15%+ over spot</span>
+                                    <div className="flex items-center justify-between p-3 bg-red-500/10 rounded-lg border border-red-500/20">
+                                        <span className="font-medium text-red-400">Red Flag Territory</span>
+                                        <span className="text-red-400 font-bold">15%+ over spot</span>
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +241,7 @@ export default function GoldIraScamsPage() {
                         {/* Numismatic Coins */}
                         <section id="numismatic-coins" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #3: The Numismatic Coin Push</h2>
@@ -268,7 +268,7 @@ export default function GoldIraScamsPage() {
                         {/* High-Pressure Tactics */}
                         <section id="high-pressure" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Phone className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #4: High-Pressure Sales Tactics</h2>
@@ -281,12 +281,12 @@ export default function GoldIraScamsPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
-                                    <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
+                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <h4 className="font-bold text-red-400 mb-3 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" />
                                         Red Flags
                                     </h4>
-                                    <ul className="space-y-2 text-sm text-red-600">
+                                    <ul className="space-y-2 text-sm text-red-300">
                                         <li>• &quot;Limited time offer&quot; pressure</li>
                                         <li>• Predicting imminent price changes</li>
                                         <li>• Calling multiple times per day</li>
@@ -295,12 +295,12 @@ export default function GoldIraScamsPage() {
                                         <li>• Using fear-based language</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
-                                    <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
+                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                    <h4 className="font-bold text-green-400 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Green Flags
                                     </h4>
-                                    <ul className="space-y-2 text-sm text-green-600">
+                                    <ul className="space-y-2 text-sm text-green-300">
                                         <li>• Patiently answering all questions</li>
                                         <li>• Providing educational materials</li>
                                         <li>• Encouraging you to take your time</li>
@@ -315,7 +315,7 @@ export default function GoldIraScamsPage() {
                         {/* Fake Reviews */}
                         <section id="fake-reviews" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Search className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #5: Fake Reviews & Testimonials</h2>
@@ -354,7 +354,7 @@ export default function GoldIraScamsPage() {
                         {/* Red Flags Checklist */}
                         <section id="red-flags" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Complete Red Flags Checklist</h2>
@@ -363,40 +363,40 @@ export default function GoldIraScamsPage() {
                                 Before working with any Gold IRA company, watch for these warning signs:
                             </p>
 
-                            <div className="bg-red-50 rounded-2xl p-6 border border-red-100 not-prose my-8">
-                                <h4 className="font-bold text-red-700 text-lg mb-4">Run Away If You See:</h4>
+                            <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
+                                <h4 className="font-bold text-red-400 text-lg mb-4">Run Away If You See:</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>Home storage claims</strong> — &quot;Keep your IRA gold at home&quot;</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>Home storage claims</strong> — &quot;Keep your IRA gold at home&quot;</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>No clear pricing</strong> — Refusing to provide written quotes</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>No clear pricing</strong> — Refusing to provide written quotes</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>F or no BBB rating</strong> — Serious unresolved complaints</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>F or no BBB rating</strong> — Serious unresolved complaints</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>Urgency tactics</strong> — &quot;You must act today&quot;</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>Urgency tactics</strong> — &quot;You must act today&quot;</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>Guaranteed returns</strong> — No one can guarantee gold prices</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>Guaranteed returns</strong> — No one can guarantee gold prices</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>Pushy rare coin sales</strong> — Focusing on numismatics over bullion</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>Pushy rare coin sales</strong> — Focusing on numismatics over bullion</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>Celebrity endorsements only</strong> — No educational substance</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>Celebrity endorsements only</strong> — No educational substance</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-700"><strong>Upfront payment requests</strong> — Before account is set up</span>
+                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-300"><strong>Upfront payment requests</strong> — Before account is set up</span>
                                     </li>
                                 </ul>
                             </div>
@@ -405,7 +405,7 @@ export default function GoldIraScamsPage() {
                         {/* How to Verify */}
                         <section id="how-to-verify" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Shield className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How to Verify a Gold IRA Company</h2>
@@ -460,58 +460,58 @@ export default function GoldIraScamsPage() {
                             <h2>Gold IRA Scam FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Are Gold IRAs legitimate?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Yes—Gold IRAs are completely legitimate and authorized under the Taxpayer Relief Act of 1997. The industry includes many reputable companies. The key is avoiding the bad actors while working with established, well-reviewed firms. See our <Link href="/reviews" className="text-secondary hover:underline">company reviews</Link> for vetted recommendations.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">How do I report a Gold IRA scam?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         If you&apos;ve been victimized, report to: (1) BBB — file a complaint at bbb.org, (2) FTC — report at reportfraud.ftc.gov, (3) Your state attorney general, (4) CFPB — Consumer Financial Protection Bureau. Also leave honest reviews to warn others.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What&apos;s a reasonable premium to pay for gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         For gold bars: 2-5% over spot. For gold coins (Eagles, Maples): 4-8% over spot. For silver bars: 3-8%. For silver coins: 8-15%. Anything significantly higher should be questioned. Always compare the total cost (premium + fees) between companies.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Why do some companies push rare coins?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Simple: higher profit margins. A dealer might make 3-5% selling bullion coins but 30-100%+ selling &quot;rare&quot; numismatic coins. The collectible premium is largely subjective, and when you sell, you often get far less than you paid. Stick to standard bullion for IRA purposes.
                                     </p>
                                 </details>

@@ -77,7 +77,7 @@ const tocItems = [
 
 export default function OxfordGoldGroupReviewPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-16">
                 <Container>
@@ -95,7 +95,7 @@ export default function OxfordGoldGroupReviewPage() {
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">
                     <div className="flex-1">
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
                             <section id="overview" className="scroll-mt-32">
                                 <p className="lead">In this <strong>Oxford Gold Group review</strong>, we examine a company known for premium service and personalized attention.</p>
                                 <p>Oxford Gold Group prides itself on a white-glove approach to precious metals investing. They focus on building long-term relationships rather than quick transactions.</p>

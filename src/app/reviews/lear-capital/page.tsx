@@ -77,7 +77,7 @@ const tocItems = [
 
 export default function LearCapitalReviewPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-16">
                 <Container>
@@ -95,7 +95,7 @@ export default function LearCapitalReviewPage() {
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">
                     <div className="flex-1">
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
                             <section id="overview" className="scroll-mt-32">
                                 <p className="lead">In this <strong>Lear Capital review</strong>, we examine one of the industry&apos;s longest-standing precious metals companies.</p>
                                 <p>Founded in 1997, Lear Capital has over 25 years of experience in the precious metals industry. They&apos;ve built their brand on longevity and their unique price lock guarantee.</p>

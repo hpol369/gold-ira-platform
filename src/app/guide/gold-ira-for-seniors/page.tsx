@@ -90,19 +90,19 @@ const schema = {
 
 export default function GoldIraForSeniorsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-slate-800/50 py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Retirement Protection
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Gold IRA for Seniors
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-400 leading-relaxed">
                             Protecting your life's work. A guide to using physical gold to preserve your nest egg, hedge against inflation, and leave a lasting legacy.
                         </p>
                     </div>
@@ -117,7 +117,7 @@ export default function GoldIraForSeniorsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -131,10 +131,10 @@ export default function GoldIraForSeniorsPage() {
                         {/* Why Seniors */}
                         <section id="why-seniors" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Gold Makes Sense for Seniors</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Gold Makes Sense for Seniors</h2>
                             </div>
                             <p>
                                 As you rely on your savings for income, two things become your enemy: <strong>Market Volatility</strong> and <strong>Inflation</strong>.
@@ -147,7 +147,7 @@ export default function GoldIraForSeniorsPage() {
 
                         {/* Preservation */}
                         <section id="preservation" className="scroll-mt-32">
-                            <h2>The Ultimate Insurance Policy</h2>
+                            <h2 className="text-white">The Ultimate Insurance Policy</h2>
                             <p>
                                 Think of a Gold IRA as homeowner's insurance for your portfolio. You hope your house doesn't burn down (market crash), but if it does, you're glad you have coverage. Allocating 10-15% to gold ensures that even in a financial disaster, a portion of your wealth remains safe and accessible.
                             </p>
@@ -156,10 +156,10 @@ export default function GoldIraForSeniorsPage() {
                         {/* RMD Rules */}
                         <section id="rmd-rules" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Calendar className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Navigating RMDs</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Navigating RMDs</h2>
                             </div>
                             <p>
                                 Traditional Gold IRAs are subject to Required Minimum Distributions (RMDs) starting at age 73.
@@ -174,7 +174,7 @@ export default function GoldIraForSeniorsPage() {
 
                         {/* Risks for Seniors */}
                         <section id="risks-for-seniors" className="scroll-mt-32">
-                            <h2>Risks Specific to Seniors</h2>
+                            <h2 className="text-white">Risks Specific to Seniors</h2>
                             <p>
                                 While gold is safe, certain products are not suitable for seniors:
                             </p>
@@ -188,10 +188,10 @@ export default function GoldIraForSeniorsPage() {
                         {/* Scams */}
                         <section id="scams" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Senior Fraud Alert</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Senior Fraud Alert</h2>
                             </div>
                             <p>
                                 Seniors are the #1 target for gold scams. dishonest dealers use fear tactics ("The dollar is collapsing next week!") to pressure seniors into buying overpriced coins.
@@ -215,17 +215,17 @@ export default function GoldIraForSeniorsPage() {
 
                         {/* FAQ Section */}
                         <section id="faq" className="scroll-mt-32">
-                            <h2>Senior Gold FAQ</h2>
+                            <h2 className="text-white">Senior Gold FAQ</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                                 <ShieldCheck className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-gray-700">
+                                        <p className="mt-4 leading-relaxed text-slate-400">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>

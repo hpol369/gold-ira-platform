@@ -19,7 +19,7 @@ export default function NobleGoldReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 <header className="bg-[#1e1e1e] text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-900/40 via-[#1e1e1e] to-[#1e1e1e] opacity-80 z-0"></div>
                     <Container className="relative z-10">
@@ -55,7 +55,7 @@ export default function NobleGoldReviewPage() {
                                 ctaText="Get Noble Gold Info Kit"
                             />
 
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>Why Noble Gold Stands Out</h2>
                                 <p>
                                     <strong>Noble Gold Investments</strong> operates differently than the industry giants. While companies like Augusta focus on high-net-worth clients and Goldco pours money into celebrity advertising, Noble Gold built their reputation on accessibility and personal touch.
@@ -95,11 +95,11 @@ export default function NobleGoldReviewPage() {
                                     This matters if you're younger, just starting to diversify, or rolling over a smaller 401(k) from an old job. Noble Gold doesn't make you feel like a second-class customer because your account isn't six figures.
                                 </p>
 
-                                <div className="bg-amber-50 p-6 rounded-xl border border-amber-100 not-prose my-8">
-                                    <h4 className="font-bold text-amber-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> Important Math for Small Accounts
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> Important Math for Small Accounts
                                     </h4>
-                                    <p className="text-sm text-amber-800">
+                                    <p className="text-sm text-slate-400">
                                         Annual storage and custodian fees typically run $225-$275 regardless of account size. On a $5,000 account, that's roughly 5% annually. On $20,000, it drops to about 1.25%. Consider whether your account size makes the fee structure work for your goals - we generally suggest $10,000+ for the math to make sense.
                                     </p>
                                 </div>
@@ -128,7 +128,7 @@ export default function NobleGoldReviewPage() {
                                     The account setup process is largely digital, which speeds things up compared to more paper-heavy competitors. Most customers report 2-3 weeks from initial contact to having metals in storage.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict</h2>
                                 <p>

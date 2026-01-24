@@ -81,10 +81,10 @@ const schema = {
 
 export default function TspRolloverPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-800/50 text-white py-20 relative overflow-hidden border-b border-white/10">
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
@@ -92,7 +92,7 @@ export default function TspRolloverPage() {
                             <span className="w-2 h-2 rounded-full bg-secondary"></span>
                             For Federal & Military Personnel
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-white">
                             TSP to Gold IRA Rollover Guide
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
@@ -110,10 +110,10 @@ export default function TspRolloverPage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary prose-p:text-text prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
 
-                        <p className="lead text-xl text-text-muted">
-                            The Thrift Savings Plan is one of the best retirement plans in America. Low fees. Solid fund options. Government matching. But there&apos;s one thing it <strong>cannot do</strong>: hold physical gold.
+                        <p className="lead text-xl text-slate-400">
+                            The Thrift Savings Plan is one of the best retirement plans in America. Low fees. Solid fund options. Government matching. But there&apos;s one thing it <strong className="text-white">cannot do</strong>: hold physical gold.
                         </p>
 
                         <p>
@@ -151,21 +151,21 @@ export default function TspRolloverPage() {
                                 This is where it gets a little tricky. Your eligibility depends on your employment status:
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-200">
-                                    <h4 className="font-bold text-green-800 mb-3 flex items-center gap-2">
+                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                    <h4 className="font-bold text-green-400 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Separated from Service
                                     </h4>
-                                    <p className="text-green-700 text-sm mb-3">If you&apos;ve left federal employment (retired, resigned, or separated), you can roll over your entire TSP at any age, no restrictions.</p>
-                                    <p className="text-green-600 text-xs">This is the easiest path. Most people do rollovers after they leave government service.</p>
+                                    <p className="text-green-300 text-sm mb-3">If you&apos;ve left federal employment (retired, resigned, or separated), you can roll over your entire TSP at any age, no restrictions.</p>
+                                    <p className="text-green-400 text-xs">This is the easiest path. Most people do rollovers after they leave government service.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-blue-50 border border-blue-200">
-                                    <h4 className="font-bold text-blue-800 mb-3 flex items-center gap-2">
+                                <div className="p-6 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                                    <h4 className="font-bold text-blue-400 mb-3 flex items-center gap-2">
                                         <Clock className="w-5 h-5" />
                                         Still Working (Age 59½+)
                                     </h4>
-                                    <p className="text-blue-700 text-sm mb-3">If you&apos;re still employed but over 59½, you can take an &quot;age-based in-service withdrawal&quot; and roll it into a Gold IRA while continuing to work.</p>
-                                    <p className="text-blue-600 text-xs">You keep your job, keep getting matching, and diversify part of your savings into gold.</p>
+                                    <p className="text-blue-300 text-sm mb-3">If you&apos;re still employed but over 59½, you can take an &quot;age-based in-service withdrawal&quot; and roll it into a Gold IRA while continuing to work.</p>
+                                    <p className="text-blue-400 text-xs">You keep your job, keep getting matching, and diversify part of your savings into gold.</p>
                                 </div>
                             </div>
                             <Callout type="warning" title="Under 59½ and Still Working?">
@@ -179,15 +179,15 @@ export default function TspRolloverPage() {
                             <p>
                                 Let&apos;s be real about what you&apos;re holding in the TSP:
                             </p>
-                            <ul>
-                                <li><strong>G Fund:</strong> Government bonds. &quot;Safe,&quot; but barely beats inflation—often loses purchasing power over time.</li>
-                                <li><strong>F Fund:</strong> Corporate bonds. Slightly better returns, more risk.</li>
-                                <li><strong>C Fund:</strong> S&P 500 stocks. Great when markets are up, brutal when they crash.</li>
-                                <li><strong>S Fund:</strong> Small-cap stocks. More volatile than C Fund.</li>
-                                <li><strong>I Fund:</strong> International stocks. Tied to foreign economies and currencies.</li>
+                            <ul className="text-slate-400">
+                                <li><strong className="text-white">G Fund:</strong> Government bonds. &quot;Safe,&quot; but barely beats inflation—often loses purchasing power over time.</li>
+                                <li><strong className="text-white">F Fund:</strong> Corporate bonds. Slightly better returns, more risk.</li>
+                                <li><strong className="text-white">C Fund:</strong> S&P 500 stocks. Great when markets are up, brutal when they crash.</li>
+                                <li><strong className="text-white">S Fund:</strong> Small-cap stocks. More volatile than C Fund.</li>
+                                <li><strong className="text-white">I Fund:</strong> International stocks. Tied to foreign economies and currencies.</li>
                             </ul>
                             <p>
-                                Notice what&apos;s missing? Anything <strong>real</strong>. Every fund is paper—stocks, bonds, government IOUs. When the financial system hiccups, they all tend to move together.
+                                Notice what&apos;s missing? Anything <strong className="text-white">real</strong>. Every fund is paper—stocks, bonds, government IOUs. When the financial system hiccups, they all tend to move together.
                             </p>
                             <p>
                                 Gold is different. It&apos;s not someone else&apos;s liability. During the 2008 crash, the C Fund dropped 37%. Gold rose 5%. During the 2020 pandemic panic, gold hit all-time highs while stocks cratered. That&apos;s the hedge you can&apos;t get inside the TSP.
@@ -201,39 +201,39 @@ export default function TspRolloverPage() {
                                 Here&apos;s the exact process to roll over your TSP to a Gold IRA:
                             </p>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Open a Self-Directed Gold IRA</h4>
-                                        <p className="text-sm text-text-muted mt-1">Choose a Gold IRA company and open your account. They&apos;ll set you up with a custodian (like Equity Trust or New Direction IRA) who can hold physical metals.</p>
+                                        <h4 className="font-bold text-white">Open a Self-Directed Gold IRA</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Choose a Gold IRA company and open your account. They&apos;ll set you up with a custodian (like Equity Trust or New Direction IRA) who can hold physical metals.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Get Your New IRA Account Details</h4>
-                                        <p className="text-sm text-text-muted mt-1">Your Gold IRA company will provide the custodian name, address, and account number needed for the transfer.</p>
+                                        <h4 className="font-bold text-white">Get Your New IRA Account Details</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Your Gold IRA company will provide the custodian name, address, and account number needed for the transfer.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Log Into TSP.gov</h4>
-                                        <p className="text-sm text-text-muted mt-1">Go to tsp.gov and use the &quot;Withdrawals&quot; section. The online wizard walks you through the options.</p>
+                                        <h4 className="font-bold text-white">Log Into TSP.gov</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Go to tsp.gov and use the &quot;Withdrawals&quot; section. The online wizard walks you through the options.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Select &quot;Transfer to IRA&quot; (Direct Rollover)</h4>
-                                        <p className="text-sm text-text-muted mt-1"><strong>Critical:</strong> Choose the option to transfer directly to another retirement account. Do NOT have them send you a check—that triggers 20% withholding.</p>
+                                        <h4 className="font-bold text-white">Select &quot;Transfer to IRA&quot; (Direct Rollover)</h4>
+                                        <p className="text-sm text-slate-400 mt-1"><strong className="text-white">Critical:</strong> Choose the option to transfer directly to another retirement account. Do NOT have them send you a check—that triggers 20% withholding.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Purchase Gold</h4>
-                                        <p className="text-sm text-text-muted mt-1">Once funds arrive at your new IRA (usually 1-2 weeks), work with your Gold IRA company to select and purchase IRS-approved coins and bars.</p>
+                                        <h4 className="font-bold text-white">Purchase Gold</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Once funds arrive at your new IRA (usually 1-2 weeks), work with your Gold IRA company to select and purchase IRS-approved coins and bars.</p>
                                     </div>
                                 </div>
                             </div>
@@ -245,13 +245,13 @@ export default function TspRolloverPage() {
                             <p>
                                 Good news: the TSP has modernized. Most withdrawals now happen through the online wizard at tsp.gov—no paper forms needed. But it helps to know what&apos;s happening behind the scenes:
                             </p>
-                            <ul>
-                                <li><strong>Form TSP-70:</strong> Full withdrawal request (for separated employees)</li>
-                                <li><strong>Form TSP-75:</strong> Age-based in-service withdrawal (for active employees 59½+)</li>
-                                <li><strong>Form TSP-99:</strong> Used to designate beneficiaries (not for withdrawals)</li>
+                            <ul className="text-slate-400">
+                                <li><strong className="text-white">Form TSP-70:</strong> Full withdrawal request (for separated employees)</li>
+                                <li><strong className="text-white">Form TSP-75:</strong> Age-based in-service withdrawal (for active employees 59½+)</li>
+                                <li><strong className="text-white">Form TSP-99:</strong> Used to designate beneficiaries (not for withdrawals)</li>
                             </ul>
                             <p>
-                                The online system will generate the appropriate form based on your selections. Just make sure you choose <strong>&quot;Transfer to IRA or eligible employer plan&quot;</strong>—not a cash distribution.
+                                The online system will generate the appropriate form based on your selections. Just make sure you choose <strong className="text-white">&quot;Transfer to IRA or eligible employer plan&quot;</strong>—not a cash distribution.
                             </p>
                             <Callout type="warning" title="The 20% Withholding Trap">
                                 If you take an &quot;indirect rollover&quot; (they mail you a check), the TSP withholds 20% for taxes. You then have 60 days to deposit the full amount (including that 20% from your own pocket) into your IRA. Miss the deadline or come up short? Taxes and penalties. Always choose direct transfer.
@@ -262,29 +262,29 @@ export default function TspRolloverPage() {
                         <section id="tax-rules" className="scroll-mt-32">
                             <h2>Tax Rules & Penalties</h2>
                             <p>
-                                Here&apos;s the good news: a properly executed TSP to Gold IRA rollover is <strong>100% tax-free</strong>. No taxes. No penalties. The money simply moves from one retirement account to another.
+                                Here&apos;s the good news: a properly executed TSP to Gold IRA rollover is <strong className="text-white">100% tax-free</strong>. No taxes. No penalties. The money simply moves from one retirement account to another.
                             </p>
                             <p>
                                 The key is matching account types:
                             </p>
                             <div className="not-prose my-8 overflow-x-auto">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">From TSP</th>
-                                            <th className="p-4 border-b font-bold text-primary">To IRA</th>
-                                            <th className="p-4 border-b font-bold text-primary">Tax Impact</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">From TSP</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">To IRA</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Tax Impact</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
-                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Traditional Gold IRA</td><td className="p-4 text-green-600 font-semibold">Tax-Free</td></tr>
-                                        <tr><td className="p-4">Roth TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-green-600 font-semibold">Tax-Free</td></tr>
-                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-amber-600 font-semibold">Taxable (Conversion)</td></tr>
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Traditional Gold IRA</td><td className="p-4 text-green-400 font-semibold">Tax-Free</td></tr>
+                                        <tr><td className="p-4">Roth TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-green-400 font-semibold">Tax-Free</td></tr>
+                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-amber-400 font-semibold">Taxable (Conversion)</td></tr>
                                     </tbody>
                                 </table>
                             </div>
                             <p>
-                                <strong>Early Withdrawal Penalty:</strong> If you take a distribution (not a rollover) before age 59½, you&apos;ll owe a 10% early withdrawal penalty plus income taxes. That&apos;s why rolling over to another IRA—not cashing out—is so important.
+                                <strong className="text-white">Early Withdrawal Penalty:</strong> If you take a distribution (not a rollover) before age 59½, you&apos;ll owe a 10% early withdrawal penalty plus income taxes. That&apos;s why rolling over to another IRA—not cashing out—is so important.
                             </p>
                         </section>
 
@@ -292,32 +292,32 @@ export default function TspRolloverPage() {
                         <section id="mistakes" className="scroll-mt-32">
                             <h2>Common Mistakes to Avoid</h2>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Taking a check instead of direct transfer</h4>
-                                        <p className="text-sm text-red-600 mt-1">Triggers 20% withholding and creates a 60-day deadline. Always choose direct transfer.</p>
+                                        <h4 className="font-bold text-red-400">Taking a check instead of direct transfer</h4>
+                                        <p className="text-sm text-red-300 mt-1">Triggers 20% withholding and creates a 60-day deadline. Always choose direct transfer.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Rolling over while under 59½ and still employed</h4>
-                                        <p className="text-sm text-red-600 mt-1">You&apos;re not eligible for a rollover unless you&apos;ve separated from service or qualify for age-based withdrawal.</p>
+                                        <h4 className="font-bold text-red-400">Rolling over while under 59½ and still employed</h4>
+                                        <p className="text-sm text-red-300 mt-1">You&apos;re not eligible for a rollover unless you&apos;ve separated from service or qualify for age-based withdrawal.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Rolling Traditional TSP to Roth IRA without planning</h4>
-                                        <p className="text-sm text-red-600 mt-1">This is a taxable conversion. You&apos;ll owe income taxes on the entire amount that year. Plan accordingly.</p>
+                                        <h4 className="font-bold text-red-400">Rolling Traditional TSP to Roth IRA without planning</h4>
+                                        <p className="text-sm text-red-300 mt-1">This is a taxable conversion. You&apos;ll owe income taxes on the entire amount that year. Plan accordingly.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Choosing the wrong Gold IRA company</h4>
-                                        <p className="text-sm text-red-600 mt-1">High fees, pushy sales tactics, or non-IRA-approved products can ruin your rollover. Research thoroughly.</p>
+                                        <h4 className="font-bold text-red-400">Choosing the wrong Gold IRA company</h4>
+                                        <p className="text-sm text-red-300 mt-1">High fees, pushy sales tactics, or non-IRA-approved products can ruin your rollover. Research thoroughly.</p>
                                     </div>
                                 </div>
                             </div>
@@ -328,14 +328,14 @@ export default function TspRolloverPage() {
                             <h2>TSP Rollover FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                                 <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-gray-700">
+                                        <p className="mt-4 leading-relaxed text-slate-400">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>

@@ -151,7 +151,7 @@ const companyComparisons = [
 
 export default function ResourcesPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
 
             {/* Hero Section */}
@@ -160,13 +160,13 @@ export default function ResourcesPage() {
                 <Container className="relative z-10">
                     <FadeIn>
                         <div className="max-w-3xl mx-auto text-center space-y-6">
-                            <span className="inline-block text-secondary font-bold tracking-widest uppercase text-xs">
+                            <span className="inline-block text-amber-400 font-bold tracking-widest uppercase text-xs">
                                 Free Resources
                             </span>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
                                 Gold IRA Resources
                             </h1>
-                            <p className="text-xl text-gray-200 font-light leading-relaxed">
+                            <p className="text-xl text-slate-300 font-light leading-relaxed">
                                 Guides, checklists, and tools to help you understand precious metals retirement investing. No sales pitch, no registration required.
                             </p>
                         </div>
@@ -180,9 +180,9 @@ export default function ResourcesPage() {
                     <div className="max-w-5xl mx-auto">
                         <FadeIn>
                             <div className="text-center mb-12">
-                                <span className="text-secondary font-bold tracking-widest uppercase text-xs">Start Here</span>
-                                <h2 className="text-3xl font-serif font-bold text-primary mt-3">In-Depth Guides</h2>
-                                <p className="text-text-muted mt-4 max-w-2xl mx-auto">
+                                <span className="text-amber-400 font-bold tracking-widest uppercase text-xs">Start Here</span>
+                                <h2 className="text-3xl font-serif font-bold text-white mt-3">In-Depth Guides</h2>
+                                <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
                                     These aren&apos;t 500-word fluff pieces. Each guide covers everything you need to know about its topic.
                                 </p>
                             </div>
@@ -193,23 +193,23 @@ export default function ResourcesPage() {
                                 <FadeIn key={guide.href} delay={0.1 * (index + 1)}>
                                     <Link
                                         href={guide.href}
-                                        className="group bg-white border border-gray-200 rounded-xl p-6 h-full flex flex-col hover:border-secondary hover:shadow-md transition-all"
+                                        className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-full flex flex-col hover:border-amber-500/30 hover:shadow-md transition-all"
                                     >
                                         {guide.tag && (
-                                            <span className="inline-block bg-secondary/10 text-secondary text-xs font-bold px-3 py-1 rounded-full mb-4 self-start">
+                                            <span className="inline-block bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full mb-4 self-start">
                                                 {guide.tag}
                                             </span>
                                         )}
-                                        <div className="h-10 w-10 bg-primary/5 text-primary rounded-lg flex items-center justify-center mb-4">
+                                        <div className="h-10 w-10 bg-white/5 text-white rounded-lg flex items-center justify-center mb-4">
                                             <guide.icon className="h-5 w-5" />
                                         </div>
-                                        <h3 className="text-lg font-bold font-serif text-primary mb-2 group-hover:text-secondary transition-colors">
+                                        <h3 className="text-lg font-bold font-serif text-white mb-2 group-hover:text-amber-400 transition-colors">
                                             {guide.title}
                                         </h3>
-                                        <p className="text-sm text-text-muted leading-relaxed flex-grow">
+                                        <p className="text-sm text-slate-400 leading-relaxed flex-grow">
                                             {guide.description}
                                         </p>
-                                        <div className="mt-4 text-secondary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                                        <div className="mt-4 text-amber-400 text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
                                             Read Guide <ArrowRight className="h-4 w-4" />
                                         </div>
                                     </Link>
@@ -221,14 +221,14 @@ export default function ResourcesPage() {
             </section>
 
             {/* Learn Articles */}
-            <section className="py-20 bg-background-subtle border-y border-gray-200">
+            <section className="py-20 bg-slate-800/50 border-y border-white/10">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <FadeIn>
                             <div className="text-center mb-12">
-                                <span className="text-secondary font-bold tracking-widest uppercase text-xs">Learn</span>
-                                <h2 className="text-3xl font-serif font-bold text-primary mt-3">Educational Articles</h2>
-                                <p className="text-text-muted mt-4">
+                                <span className="text-amber-400 font-bold tracking-widest uppercase text-xs">Learn</span>
+                                <h2 className="text-3xl font-serif font-bold text-white mt-3">Educational Articles</h2>
+                                <p className="text-slate-400 mt-4">
                                     Short, focused reads on specific Gold IRA topics.
                                 </p>
                             </div>
@@ -239,12 +239,12 @@ export default function ResourcesPage() {
                                 <FadeIn key={article.href} delay={0.05 * (index + 1)}>
                                     <Link
                                         href={article.href}
-                                        className="group bg-white border border-gray-200 rounded-lg p-5 hover:border-secondary hover:shadow-sm transition-all"
+                                        className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-5 hover:border-amber-500/30 hover:shadow-sm transition-all"
                                     >
-                                        <h3 className="font-bold text-primary mb-1 group-hover:text-secondary transition-colors">
+                                        <h3 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">
                                             {article.title}
                                         </h3>
-                                        <p className="text-sm text-text-muted">
+                                        <p className="text-sm text-slate-400">
                                             {article.description}
                                         </p>
                                     </Link>
@@ -261,31 +261,31 @@ export default function ResourcesPage() {
                     <div className="max-w-4xl mx-auto">
                         <FadeIn>
                             <div className="text-center mb-12">
-                                <span className="text-secondary font-bold tracking-widest uppercase text-xs">Compare</span>
-                                <h2 className="text-3xl font-serif font-bold text-primary mt-3">Side-by-Side Comparisons</h2>
-                                <p className="text-text-muted mt-4">
+                                <span className="text-amber-400 font-bold tracking-widest uppercase text-xs">Compare</span>
+                                <h2 className="text-3xl font-serif font-bold text-white mt-3">Side-by-Side Comparisons</h2>
+                                <p className="text-slate-400 mt-4">
                                     Not sure how Gold IRAs stack up against other options? We break it down.
                                 </p>
                             </div>
                         </FadeIn>
 
                         <FadeIn delay={0.1}>
-                            <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="h-10 w-10 bg-secondary/10 text-secondary rounded-full flex items-center justify-center">
+                                    <div className="h-10 w-10 bg-amber-500/10 text-amber-400 rounded-full flex items-center justify-center">
                                         <Scale className="h-5 w-5" />
                                     </div>
-                                    <h3 className="text-xl font-bold font-serif text-primary">Investment Comparisons</h3>
+                                    <h3 className="text-xl font-bold font-serif text-white">Investment Comparisons</h3>
                                 </div>
                                 <div className="grid sm:grid-cols-2 gap-3">
                                     {comparisons.map((comparison) => (
                                         <Link
                                             key={comparison.href}
                                             href={comparison.href}
-                                            className="flex items-center gap-3 p-4 rounded-lg hover:bg-background-subtle transition-colors group"
+                                            className="flex items-center gap-3 p-4 rounded-lg hover:bg-slate-800/50 transition-colors group"
                                         >
-                                            <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
-                                            <span className="text-text-muted group-hover:text-primary transition-colors">
+                                            <CheckCircle className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                                            <span className="text-slate-400 group-hover:text-white transition-colors">
                                                 {comparison.title}
                                             </span>
                                         </Link>
@@ -295,22 +295,22 @@ export default function ResourcesPage() {
                         </FadeIn>
 
                         <FadeIn delay={0.2}>
-                            <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 mt-6">
+                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 mt-6">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="h-10 w-10 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+                                    <div className="h-10 w-10 bg-white/10 text-white rounded-full flex items-center justify-center">
                                         <Scale className="h-5 w-5" />
                                     </div>
-                                    <h3 className="text-xl font-bold font-serif text-primary">Company vs. Company</h3>
+                                    <h3 className="text-xl font-bold font-serif text-white">Company vs. Company</h3>
                                 </div>
                                 <div className="grid sm:grid-cols-2 gap-3">
                                     {companyComparisons.map((comparison) => (
                                         <Link
                                             key={comparison.href}
                                             href={comparison.href}
-                                            className="flex items-center gap-3 p-4 rounded-lg hover:bg-background-subtle transition-colors group"
+                                            className="flex items-center gap-3 p-4 rounded-lg hover:bg-slate-800/50 transition-colors group"
                                         >
-                                            <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                                            <span className="text-text-muted group-hover:text-primary transition-colors">
+                                            <CheckCircle className="h-5 w-5 text-white flex-shrink-0" />
+                                            <span className="text-slate-400 group-hover:text-white transition-colors">
                                                 {comparison.title}
                                             </span>
                                         </Link>
@@ -327,10 +327,10 @@ export default function ResourcesPage() {
                 <Container>
                     <FadeIn>
                         <div className="bg-primary rounded-3xl p-10 md:p-12 text-center text-white relative overflow-hidden max-w-4xl mx-auto">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 space-y-6">
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold">Ready to Compare Companies?</h2>
-                                <p className="text-gray-200 max-w-xl mx-auto">
+                                <p className="text-slate-300 max-w-xl mx-auto">
                                     Once you understand how Gold IRAs work, the next step is finding the right company. We&apos;ve reviewed the top providers so you don&apos;t have to.
                                 </p>
                                 <Button size="lg" variant="gold" asChild>
@@ -350,10 +350,10 @@ export default function ResourcesPage() {
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <FadeIn>
-                            <h2 className="text-2xl font-serif font-bold text-primary mb-6 text-center">
+                            <h2 className="text-2xl font-serif font-bold text-white mb-6 text-center">
                                 Official IRS Resources
                             </h2>
-                            <p className="text-text-muted text-center mb-8">
+                            <p className="text-slate-400 text-center mb-8">
                                 For the official word on retirement account rules, these IRS publications are worth bookmarking.
                             </p>
                             <div className="grid sm:grid-cols-2 gap-4">
@@ -361,25 +361,25 @@ export default function ResourcesPage() {
                                     href="https://www.irs.gov/publications/p590a"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-between p-5 bg-white border border-gray-200 rounded-xl hover:border-secondary transition-colors group"
+                                    className="flex items-center justify-between p-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-amber-500/30 transition-colors group"
                                 >
                                     <div>
-                                        <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">IRS Publication 590-A</h3>
-                                        <p className="text-sm text-text-muted">Contributions to IRAs</p>
+                                        <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors">IRS Publication 590-A</h3>
+                                        <p className="text-sm text-slate-400">Contributions to IRAs</p>
                                     </div>
-                                    <ExternalLink className="h-5 w-5 text-text-muted group-hover:text-secondary transition-colors" />
+                                    <ExternalLink className="h-5 w-5 text-slate-400 group-hover:text-amber-400 transition-colors" />
                                 </a>
                                 <a
                                     href="https://www.irs.gov/publications/p590b"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-between p-5 bg-white border border-gray-200 rounded-xl hover:border-secondary transition-colors group"
+                                    className="flex items-center justify-between p-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-amber-500/30 transition-colors group"
                                 >
                                     <div>
-                                        <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">IRS Publication 590-B</h3>
-                                        <p className="text-sm text-text-muted">Distributions from IRAs</p>
+                                        <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors">IRS Publication 590-B</h3>
+                                        <p className="text-sm text-slate-400">Distributions from IRAs</p>
                                     </div>
-                                    <ExternalLink className="h-5 w-5 text-text-muted group-hover:text-secondary transition-colors" />
+                                    <ExternalLink className="h-5 w-5 text-slate-400 group-hover:text-amber-400 transition-colors" />
                                 </a>
                             </div>
                         </FadeIn>

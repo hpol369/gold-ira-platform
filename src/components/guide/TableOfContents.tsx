@@ -36,20 +36,20 @@ export function TableOfContents({ items }: TableOfContentsProps) {
     }, [items]);
 
     return (
-        <nav className="hidden lg:block sticky top-24 self-start w-64 p-6 bg-background-subtle rounded-xl border border-primary/5">
-            <h4 className="font-serif font-bold text-primary mb-4 uppercase tracking-wider text-sm">
+        <nav className="hidden lg:block sticky top-24 self-start w-64 p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+            <h4 className="font-serif font-bold text-white mb-4 uppercase tracking-wider text-sm">
                 On This Page
             </h4>
-            <ul className="space-y-3 border-l-2 border-gray-200">
+            <ul className="space-y-3 border-l-2 border-white/10">
                 {items.map((item) => (
                     <li key={item.id} className="-ml-[2px]">
                         <a
                             href={`#${item.id}`}
                             className={cn(
-                                "block pl-4 text-sm transition-all duration-200 hover:text-primary",
+                                "block pl-4 text-sm transition-all duration-200 hover:text-amber-400",
                                 activeId === item.id
-                                    ? "border-l-2 border-secondary font-semibold text-primary"
-                                    : "border-l-2 border-transparent text-text-muted"
+                                    ? "border-l-2 border-amber-400 font-semibold text-white"
+                                    : "border-l-2 border-transparent text-slate-400"
                             )}
                         >
                             {item.label}

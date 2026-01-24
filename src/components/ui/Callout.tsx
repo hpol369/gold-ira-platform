@@ -11,23 +11,23 @@ interface CalloutProps {
 const variants = {
     info: {
         icon: Info,
-        styles: "bg-blue-50 border-blue-100 text-blue-900",
-        iconColor: "text-blue-600",
+        styles: "bg-blue-500/10 border-blue-500/20 text-blue-300",
+        iconColor: "text-blue-400",
     },
     tip: {
         icon: CheckCircle2,
-        styles: "bg-background-subtle border-secondary/20 text-primary",
-        iconColor: "text-secondary",
+        styles: "bg-amber-500/10 border-amber-500/20 text-amber-300",
+        iconColor: "text-amber-400",
     },
     warning: {
         icon: AlertTriangle,
-        styles: "bg-orange-50 border-orange-100 text-orange-900",
-        iconColor: "text-orange-600",
+        styles: "bg-orange-500/10 border-orange-500/20 text-orange-300",
+        iconColor: "text-orange-400",
     },
     success: {
         icon: CheckCircle2,
-        styles: "bg-green-50 border-green-100 text-green-900",
-        iconColor: "text-green-600",
+        styles: "bg-green-500/10 border-green-500/20 text-green-300",
+        iconColor: "text-green-400",
     },
 };
 
@@ -38,11 +38,11 @@ export function Callout({ type = "info", title, children, className }: CalloutPr
     return (
         <div className={cn("rounded-xl border p-6 my-8", Variant.styles, className)}>
             <div className="flex items-start gap-4">
-                <div className={cn("p-2 rounded-full bg-white shadow-sm shrink-0", Variant.iconColor)}>
+                <div className={cn("p-2 rounded-full bg-white/10 shrink-0", Variant.iconColor)}>
                     <Icon className="h-5 w-5" />
                 </div>
                 <div>
-                    <h4 className="font-bold mb-2 text-lg">{title}</h4>
+                    <h4 className="font-bold mb-2 text-lg text-white">{title}</h4>
                     <div className="text-sm leading-relaxed opacity-90 space-y-2">
                         {children}
                     </div>

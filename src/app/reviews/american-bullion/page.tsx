@@ -19,7 +19,7 @@ export default function AmericanBullionReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 {/* Header / Hero for Review */}
                 <header className="bg-slate-900 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-700/40 via-slate-900 to-slate-900 opacity-80 z-0"></div>
@@ -60,7 +60,7 @@ export default function AmericanBullionReviewPage() {
                             />
 
                             {/* Main Body Content - TYPOGRAPHY PROSE */}
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>The Executive Summary</h2>
                                 <p>
                                     <strong>American Bullion</strong> claims to be the company that "pioneered" the Gold IRA industry. Whether or not they were literally first, they've been around long enough to have seen every market cycle since the 2008 financial crisis.
@@ -92,11 +92,11 @@ export default function AmericanBullionReviewPage() {
                                     This head start gave them deep expertise in navigating IRS rules. Their team includes people who've been doing Gold IRAs since the beginning, and that institutional knowledge shows in how smoothly they handle complex rollovers.
                                 </p>
 
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 not-prose my-8">
-                                    <h4 className="font-bold text-slate-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> Experience vs. Innovation
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> Experience vs. Innovation
                                     </h4>
-                                    <p className="text-sm text-slate-700">
+                                    <p className="text-sm text-slate-400">
                                         American Bullion's age is their biggest asset—and their biggest limitation. They know the business inside out, but haven't invested in modern educational content and digital experience that newer competitors prioritize.
                                     </p>
                                 </div>
@@ -117,7 +117,7 @@ export default function AmericanBullionReviewPage() {
                                     Complaints that exist tend to center on pricing (not always the cheapest) and communication speed. Nothing catastrophic—no patterns of fraud or major failures.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict: Are They Worth It?</h2>
                                 <p>

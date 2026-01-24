@@ -19,7 +19,7 @@ export default function PriorityGoldReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 {/* Header / Hero for Review */}
                 <header className="bg-emerald-950 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-800/40 via-emerald-950 to-emerald-950 opacity-80 z-0"></div>
@@ -60,7 +60,7 @@ export default function PriorityGoldReviewPage() {
                             />
 
                             {/* Main Body Content - TYPOGRAPHY PROSE */}
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>The Executive Summary</h2>
                                 <p>
                                     <strong>Priority Gold</strong> has carved out a niche in the precious metals industry by putting customer service first. While they may not have the advertising budget of Augusta or Goldco, their A+ BBB rating and loyal customer base tell a different story.
@@ -92,11 +92,11 @@ export default function PriorityGoldReviewPage() {
                                     For IRA clients, they work with established custodians like Equity Trust and handle the rollover paperwork. The process is straightforward—they assign you a dedicated rep who walks you through every step. Multiple reviewers mention their rep by name, which speaks to the personalized approach.
                                 </p>
 
-                                <div className="bg-emerald-50 p-6 rounded-xl border border-emerald-100 not-prose my-8">
-                                    <h4 className="font-bold text-emerald-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> Numismatic vs. Bullion
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> Numismatic vs. Bullion
                                     </h4>
-                                    <p className="text-sm text-emerald-800">
+                                    <p className="text-sm text-slate-400">
                                         Numismatic coins carry higher premiums but may appreciate beyond gold's spot price due to rarity and collectibility. Bullion tracks spot price more closely with lower premiums. Know which you're buying.
                                     </p>
                                 </div>
@@ -117,7 +117,7 @@ export default function PriorityGoldReviewPage() {
                                     Common praise focuses on the education aspect—customers appreciate that their reps explain the differences between coin types without pushing the most expensive option. That said, some reviewers wish the website had more transparent pricing upfront.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict: Are They Worth It?</h2>
                                 <p>

@@ -84,10 +84,10 @@ const schema = {
 
 export default function FourOhOneKAlternativesPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-800/50 text-white py-20 relative overflow-hidden border-b border-white/10">
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
@@ -95,7 +95,7 @@ export default function FourOhOneKAlternativesPage() {
                             <span className="w-2 h-2 rounded-full bg-secondary"></span>
                             Updated for 2026
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-white">
                             401(k) Alternatives
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
@@ -113,13 +113,13 @@ export default function FourOhOneKAlternativesPage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary prose-p:text-text prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
                         <Breadcrumbs />
 
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
-                            <p className="lead text-xl text-text-muted">
-                                The 401(k) isn&apos;t the only way to save for retirement—and for many people, it&apos;s not even the best way. Whether your employer doesn&apos;t offer one, you&apos;ve maxed out contributions, or you want more investment options, <strong>401(k) alternatives</strong> can help you build wealth on your own terms.
+                            <p className="lead text-xl text-slate-400">
+                                The 401(k) isn&apos;t the only way to save for retirement—and for many people, it&apos;s not even the best way. Whether your employer doesn&apos;t offer one, you&apos;ve maxed out contributions, or you want more investment options, <strong className="text-white">401(k) alternatives</strong> can help you build wealth on your own terms.
                             </p>
                             <p>
                                 In this guide, we&apos;ll explore seven alternatives to the traditional 401(k), including options most financial advisors won&apos;t tell you about—like Gold IRAs that let you hold physical precious metals in a tax-advantaged account.
@@ -133,126 +133,126 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 1: Traditional IRA */}
                         <section id="traditional-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">1. Traditional IRA</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Traditional IRA</h2>
                             </div>
                             <p>
                                 A Traditional IRA works similarly to a 401(k)—contributions may be tax-deductible, and investments grow tax-deferred until withdrawal.
                             </p>
 
-                            <div className="bg-background-subtle rounded-xl p-6 border border-primary/5 not-prose my-6">
-                                <h4 className="font-bold text-primary mb-4">2026 Traditional IRA Details</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 not-prose my-6">
+                                <h4 className="font-bold text-white mb-4">2026 Traditional IRA Details</h4>
                                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                                     <div>
-                                        <span className="text-text-muted">Contribution Limit:</span>
-                                        <span className="font-semibold text-primary ml-2">$7,000 ($8,000 if 50+)</span>
+                                        <span className="text-slate-400">Contribution Limit:</span>
+                                        <span className="font-semibold text-white ml-2">$7,000 ($8,000 if 50+)</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Tax Treatment:</span>
-                                        <span className="font-semibold text-primary ml-2">Tax-deductible, tax-deferred growth</span>
+                                        <span className="text-slate-400">Tax Treatment:</span>
+                                        <span className="font-semibold text-white ml-2">Tax-deductible, tax-deferred growth</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Investment Options:</span>
-                                        <span className="font-semibold text-primary ml-2">Stocks, bonds, ETFs, mutual funds</span>
+                                        <span className="text-slate-400">Investment Options:</span>
+                                        <span className="font-semibold text-white ml-2">Stocks, bonds, ETFs, mutual funds</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Best For:</span>
-                                        <span className="font-semibold text-primary ml-2">Those expecting lower taxes in retirement</span>
+                                        <span className="text-slate-400">Best For:</span>
+                                        <span className="font-semibold text-white ml-2">Those expecting lower taxes in retirement</span>
                                     </div>
                                 </div>
                             </div>
 
                             <p>
-                                <strong>Pros:</strong> Tax-deductible contributions, wide investment options, anyone with earned income can contribute.
+                                <strong className="text-white">Pros:</strong> Tax-deductible contributions, wide investment options, anyone with earned income can contribute.
                             </p>
                             <p>
-                                <strong>Cons:</strong> Lower contribution limits than 401(k), required minimum distributions at 73, early withdrawal penalties.
+                                <strong className="text-white">Cons:</strong> Lower contribution limits than 401(k), required minimum distributions at 73, early withdrawal penalties.
                             </p>
                         </section>
 
                         {/* Alternative 2: Roth IRA */}
                         <section id="roth-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">2. Roth IRA</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. Roth IRA</h2>
                             </div>
                             <p>
-                                A Roth IRA is funded with after-tax dollars, but qualified withdrawals—including all growth—are <strong>100% tax-free</strong>. Many consider it the best retirement account available.
+                                A Roth IRA is funded with after-tax dollars, but qualified withdrawals—including all growth—are <strong className="text-white">100% tax-free</strong>. Many consider it the best retirement account available.
                             </p>
 
-                            <div className="bg-background-subtle rounded-xl p-6 border border-primary/5 not-prose my-6">
-                                <h4 className="font-bold text-primary mb-4">2026 Roth IRA Details</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 not-prose my-6">
+                                <h4 className="font-bold text-white mb-4">2026 Roth IRA Details</h4>
                                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                                     <div>
-                                        <span className="text-text-muted">Contribution Limit:</span>
-                                        <span className="font-semibold text-primary ml-2">$7,000 ($8,000 if 50+)</span>
+                                        <span className="text-slate-400">Contribution Limit:</span>
+                                        <span className="font-semibold text-white ml-2">$7,000 ($8,000 if 50+)</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Tax Treatment:</span>
-                                        <span className="font-semibold text-primary ml-2">After-tax contributions, tax-free growth</span>
+                                        <span className="text-slate-400">Tax Treatment:</span>
+                                        <span className="font-semibold text-white ml-2">After-tax contributions, tax-free growth</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Income Limits:</span>
-                                        <span className="font-semibold text-primary ml-2">$161k single / $240k married</span>
+                                        <span className="text-slate-400">Income Limits:</span>
+                                        <span className="font-semibold text-white ml-2">$161k single / $240k married</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Best For:</span>
-                                        <span className="font-semibold text-primary ml-2">Young earners, those expecting higher taxes later</span>
+                                        <span className="text-slate-400">Best For:</span>
+                                        <span className="font-semibold text-white ml-2">Young earners, those expecting higher taxes later</span>
                                     </div>
                                 </div>
                             </div>
 
                             <p>
-                                <strong>Pros:</strong> Tax-free withdrawals, no required minimum distributions, can withdraw contributions anytime.
+                                <strong className="text-white">Pros:</strong> Tax-free withdrawals, no required minimum distributions, can withdraw contributions anytime.
                             </p>
                             <p>
-                                <strong>Cons:</strong> Income limits for contributions, no immediate tax deduction, lower limits than 401(k).
+                                <strong className="text-white">Cons:</strong> Income limits for contributions, no immediate tax deduction, lower limits than 401(k).
                             </p>
                         </section>
 
                         {/* Alternative 3: Gold IRA */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">3. Gold IRA (Self-Directed Precious Metals IRA)</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Gold IRA (Self-Directed Precious Metals IRA)</h2>
                             </div>
                             <p>
                                 A <Link href="/what-is-a-gold-ira">Gold IRA</Link> is a self-directed IRA that holds physical gold, silver, platinum, and palladium instead of paper assets. It offers true diversification beyond stocks and bonds.
                             </p>
 
-                            <div className="bg-amber-50 rounded-xl p-6 border border-amber-200 not-prose my-6">
-                                <h4 className="font-bold text-amber-800 mb-4">Why Consider a Gold IRA?</h4>
-                                <ul className="space-y-2 text-sm text-amber-700">
+                            <div className="bg-amber-500/10 rounded-xl p-6 border border-amber-500/20 not-prose my-6">
+                                <h4 className="font-bold text-amber-400 mb-4">Why Consider a Gold IRA?</h4>
+                                <ul className="space-y-2 text-sm text-amber-300">
                                     <li className="flex items-start gap-2">
                                         <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                                        <span><strong>Own physical gold</strong> — real coins and bars, not paper derivatives</span>
+                                        <span><strong className="text-amber-200">Own physical gold</strong> — real coins and bars, not paper derivatives</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                                        <span><strong>Crash protection</strong> — gold often rises when stocks fall</span>
+                                        <span><strong className="text-amber-200">Crash protection</strong> — gold often rises when stocks fall</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                                        <span><strong>Inflation hedge</strong> — gold maintains purchasing power over time</span>
+                                        <span><strong className="text-amber-200">Inflation hedge</strong> — gold maintains purchasing power over time</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                                        <span><strong>Tax-free rollover</strong> — move 401(k) funds to gold without taxes</span>
+                                        <span><strong className="text-amber-200">Tax-free rollover</strong> — move 401(k) funds to gold without taxes</span>
                                     </li>
                                 </ul>
                             </div>
 
                             <p>
-                                <strong>Pros:</strong> Physical asset ownership, diversification, inflation protection, same tax benefits as traditional IRAs.
+                                <strong className="text-white">Pros:</strong> Physical asset ownership, diversification, inflation protection, same tax benefits as traditional IRAs.
                             </p>
                             <p>
-                                <strong>Cons:</strong> Storage fees, requires specialized custodian, best as 10-20% of portfolio.
+                                <strong className="text-white">Cons:</strong> Storage fees, requires specialized custodian, best as 10-20% of portfolio.
                             </p>
                         </section>
 
@@ -271,61 +271,61 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 4: HSA */}
                         <section id="hsa" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4. Health Savings Account (HSA)</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">4. Health Savings Account (HSA)</h2>
                             </div>
                             <p>
-                                Often called the &quot;stealth IRA,&quot; an HSA offers a <strong>triple tax advantage</strong>: tax-deductible contributions, tax-free growth, and tax-free withdrawals for medical expenses. After 65, you can withdraw for any purpose (taxed like a traditional IRA).
+                                Often called the &quot;stealth IRA,&quot; an HSA offers a <strong className="text-white">triple tax advantage</strong>: tax-deductible contributions, tax-free growth, and tax-free withdrawals for medical expenses. After 65, you can withdraw for any purpose (taxed like a traditional IRA).
                             </p>
 
-                            <div className="bg-background-subtle rounded-xl p-6 border border-primary/5 not-prose my-6">
-                                <h4 className="font-bold text-primary mb-4">2026 HSA Details</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 not-prose my-6">
+                                <h4 className="font-bold text-white mb-4">2026 HSA Details</h4>
                                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                                     <div>
-                                        <span className="text-text-muted">Contribution Limit:</span>
-                                        <span className="font-semibold text-primary ml-2">$4,300 individual / $8,550 family</span>
+                                        <span className="text-slate-400">Contribution Limit:</span>
+                                        <span className="font-semibold text-white ml-2">$4,300 individual / $8,550 family</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Catch-up (55+):</span>
-                                        <span className="font-semibold text-primary ml-2">+$1,000</span>
+                                        <span className="text-slate-400">Catch-up (55+):</span>
+                                        <span className="font-semibold text-white ml-2">+$1,000</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Requirement:</span>
-                                        <span className="font-semibold text-primary ml-2">High-deductible health plan (HDHP)</span>
+                                        <span className="text-slate-400">Requirement:</span>
+                                        <span className="font-semibold text-white ml-2">High-deductible health plan (HDHP)</span>
                                     </div>
                                     <div>
-                                        <span className="text-text-muted">Best For:</span>
-                                        <span className="font-semibold text-primary ml-2">Healthy individuals who can pay medical costs out-of-pocket</span>
+                                        <span className="text-slate-400">Best For:</span>
+                                        <span className="font-semibold text-white ml-2">Healthy individuals who can pay medical costs out-of-pocket</span>
                                     </div>
                                 </div>
                             </div>
 
                             <p>
-                                <strong>Pros:</strong> Triple tax advantage, no &quot;use it or lose it,&quot; can invest the balance, rolls over indefinitely.
+                                <strong className="text-white">Pros:</strong> Triple tax advantage, no &quot;use it or lose it,&quot; can invest the balance, rolls over indefinitely.
                             </p>
                             <p>
-                                <strong>Cons:</strong> Requires HDHP, limited contribution amounts, 20% penalty for non-medical withdrawals before 65.
+                                <strong className="text-white">Cons:</strong> Requires HDHP, limited contribution amounts, 20% penalty for non-medical withdrawals before 65.
                             </p>
                         </section>
 
                         {/* Alternative 5: Real Estate */}
                         <section id="real-estate" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Home className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">5. Real Estate Investments</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">5. Real Estate Investments</h2>
                             </div>
                             <p>
                                 Real estate can provide income, appreciation, and tax benefits. Options include rental properties, REITs (Real Estate Investment Trusts), or real estate within a self-directed IRA.
                             </p>
                             <p>
-                                <strong>Pros:</strong> Tangible asset, rental income, tax deductions (depreciation, mortgage interest), appreciation potential.
+                                <strong className="text-white">Pros:</strong> Tangible asset, rental income, tax deductions (depreciation, mortgage interest), appreciation potential.
                             </p>
                             <p>
-                                <strong>Cons:</strong> High capital requirements, illiquid, management responsibilities, market risk.
+                                <strong className="text-white">Cons:</strong> High capital requirements, illiquid, management responsibilities, market risk.
                             </p>
 
                             <Callout type="tip" title="REITs: Real Estate Without the Hassle">
@@ -336,49 +336,49 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 6: Taxable Brokerage */}
                         <section id="taxable" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-cyan-50 rounded-lg text-cyan-600">
+                                <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <Briefcase className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">6. Taxable Brokerage Account</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Taxable Brokerage Account</h2>
                             </div>
                             <p>
                                 A regular investment account has no tax advantages, but offers complete flexibility: no contribution limits, no withdrawal restrictions, no required distributions.
                             </p>
                             <p>
-                                <strong>Pros:</strong> No contribution limits, access money anytime, favorable long-term capital gains rates, step-up in basis at death.
+                                <strong className="text-white">Pros:</strong> No contribution limits, access money anytime, favorable long-term capital gains rates, step-up in basis at death.
                             </p>
                             <p>
-                                <strong>Cons:</strong> No tax deduction, dividends and gains are taxable annually, no creditor protection in most states.
+                                <strong className="text-white">Cons:</strong> No tax deduction, dividends and gains are taxable annually, no creditor protection in most states.
                             </p>
                         </section>
 
                         {/* Alternative 7: SEP & SIMPLE IRAs */}
                         <section id="sep-simple" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-50 rounded-lg text-orange-600">
+                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
                                     <PiggyBank className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">7. SEP IRA & SIMPLE IRA</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">7. SEP IRA & SIMPLE IRA</h2>
                             </div>
                             <p>
                                 For self-employed individuals and small business owners, these accounts offer much higher contribution limits than regular IRAs.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="bg-background-subtle rounded-xl p-5 border border-primary/5">
-                                    <h4 className="font-bold text-primary mb-3">SEP IRA</h4>
-                                    <ul className="text-sm space-y-2 text-text-muted">
-                                        <li><strong>Limit:</strong> Up to $69,000 or 25% of compensation</li>
-                                        <li><strong>Best for:</strong> Self-employed, high earners</li>
-                                        <li><strong>Note:</strong> Only employer contributions</li>
+                                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+                                    <h4 className="font-bold text-white mb-3">SEP IRA</h4>
+                                    <ul className="text-sm space-y-2 text-slate-400">
+                                        <li><strong className="text-white">Limit:</strong> Up to $69,000 or 25% of compensation</li>
+                                        <li><strong className="text-white">Best for:</strong> Self-employed, high earners</li>
+                                        <li><strong className="text-white">Note:</strong> Only employer contributions</li>
                                     </ul>
                                 </div>
-                                <div className="bg-background-subtle rounded-xl p-5 border border-primary/5">
-                                    <h4 className="font-bold text-primary mb-3">SIMPLE IRA</h4>
-                                    <ul className="text-sm space-y-2 text-text-muted">
-                                        <li><strong>Limit:</strong> $16,000 employee + employer match</li>
-                                        <li><strong>Best for:</strong> Small businesses with employees</li>
-                                        <li><strong>Note:</strong> Both employer and employee can contribute</li>
+                                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 border border-white/10">
+                                    <h4 className="font-bold text-white mb-3">SIMPLE IRA</h4>
+                                    <ul className="text-sm space-y-2 text-slate-400">
+                                        <li><strong className="text-white">Limit:</strong> $16,000 employee + employer match</li>
+                                        <li><strong className="text-white">Best for:</strong> Small businesses with employees</li>
+                                        <li><strong className="text-white">Note:</strong> Both employer and employee can contribute</li>
                                     </ul>
                                 </div>
                             </div>
@@ -389,48 +389,48 @@ export default function FourOhOneKAlternativesPage() {
                             <h2>401(k) Alternatives Comparison</h2>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200 text-sm">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10 text-sm">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-3 border-b font-bold text-primary">Account</th>
-                                            <th className="p-3 border-b font-bold text-primary">2026 Limit</th>
-                                            <th className="p-3 border-b font-bold text-primary">Tax Treatment</th>
-                                            <th className="p-3 border-b font-bold text-primary">Best For</th>
+                                            <th className="p-3 border-b border-white/10 font-bold text-white">Account</th>
+                                            <th className="p-3 border-b border-white/10 font-bold text-white">2026 Limit</th>
+                                            <th className="p-3 border-b border-white/10 font-bold text-white">Tax Treatment</th>
+                                            <th className="p-3 border-b border-white/10 font-bold text-white">Best For</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100">
+                                    <tbody className="divide-y divide-white/10 text-slate-300">
                                         <tr>
-                                            <td className="p-3 font-medium">Traditional IRA</td>
+                                            <td className="p-3 font-medium text-white">Traditional IRA</td>
                                             <td className="p-3">$7,000</td>
                                             <td className="p-3">Tax-deductible, taxed on withdrawal</td>
                                             <td className="p-3">Lower taxes in retirement</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-3 font-medium">Roth IRA</td>
+                                            <td className="p-3 font-medium text-white">Roth IRA</td>
                                             <td className="p-3">$7,000</td>
                                             <td className="p-3">After-tax, tax-free withdrawal</td>
                                             <td className="p-3">Higher taxes in retirement</td>
                                         </tr>
-                                        <tr className="bg-amber-50">
-                                            <td className="p-3 font-medium text-amber-700">Gold IRA</td>
+                                        <tr className="bg-amber-500/10">
+                                            <td className="p-3 font-medium text-amber-400">Gold IRA</td>
                                             <td className="p-3">$7,000 (or rollover)</td>
                                             <td className="p-3">Same as Traditional/Roth</td>
                                             <td className="p-3">Diversification, crash protection</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-3 font-medium">HSA</td>
+                                            <td className="p-3 font-medium text-white">HSA</td>
                                             <td className="p-3">$4,300/$8,550</td>
                                             <td className="p-3">Triple tax advantage</td>
                                             <td className="p-3">Healthy, HDHP enrollees</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-3 font-medium">SEP IRA</td>
+                                            <td className="p-3 font-medium text-white">SEP IRA</td>
                                             <td className="p-3">$69,000</td>
                                             <td className="p-3">Tax-deductible, taxed on withdrawal</td>
                                             <td className="p-3">Self-employed, high earners</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-3 font-medium">Taxable Brokerage</td>
+                                            <td className="p-3 font-medium text-white">Taxable Brokerage</td>
                                             <td className="p-3">Unlimited</td>
                                             <td className="p-3">Capital gains taxes</td>
                                             <td className="p-3">Flexibility, early retirement</td>
@@ -445,44 +445,44 @@ export default function FourOhOneKAlternativesPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What are the best alternatives to a 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         The best 401(k) alternatives include: Traditional and Roth IRAs for tax-advantaged growth, <Link href="/what-is-a-gold-ira" className="text-secondary hover:underline">Gold IRAs</Link> for precious metals diversification, Health Savings Accounts (triple tax advantage), real estate investments, taxable brokerage accounts for flexibility, and SEP/SIMPLE IRAs for self-employed individuals.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I have a Gold IRA instead of a 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Yes, a Gold IRA is a self-directed IRA that allows you to hold physical gold, silver, platinum, and palladium. You can contribute directly or roll over funds from an existing 401(k) tax-free. It provides diversification beyond stocks and bonds with the same tax advantages as traditional IRAs.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What if my employer doesn&apos;t offer a 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         If your employer doesn&apos;t offer a 401(k), you can open a Traditional or Roth IRA (up to $7,000/year in 2026), contribute to an HSA if you have a high-deductible health plan, invest in real estate or taxable accounts, or if self-employed, open a SEP IRA with much higher contribution limits ($69,000).
                                     </p>
                                 </details>

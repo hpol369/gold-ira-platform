@@ -54,7 +54,7 @@ const schema = {
 
 export default function BirchGoldComplaintsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -80,7 +80,7 @@ export default function BirchGoldComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
 
                         <p className="lead">
                             Birch Gold Group is everywhere. If you listen to conservative talk radio or podcasts, you&apos;ve probably heard Ben Shapiro, Ron Paul, or other hosts endorse them. That kind of exposure brings in a lot of customers—and inevitably, some complaints.

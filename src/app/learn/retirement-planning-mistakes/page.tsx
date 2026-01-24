@@ -139,7 +139,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 1. Starting Too Late */}
                         <section id="starting-late" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">1. Starting Too Late</h2>
@@ -149,29 +149,29 @@ export default function RetirementPlanningMistakesPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Starting Age</th>
-                                            <th className="p-4 border-b font-bold text-primary">Monthly Savings</th>
-                                            <th className="p-4 border-b font-bold text-primary">At Age 65 (7% return)</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Starting Age</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Monthly Savings</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">At Age 65 (7% return)</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4">25</td>
-                                            <td className="p-4">$500</td>
-                                            <td className="p-4 text-green-600 font-semibold">$1,199,000</td>
+                                            <td className="p-4 text-white">25</td>
+                                            <td className="p-4 text-slate-400">$500</td>
+                                            <td className="p-4 text-green-400 font-semibold">$1,199,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4">35</td>
-                                            <td className="p-4">$500</td>
-                                            <td className="p-4 font-semibold">$566,000</td>
+                                            <td className="p-4 text-white">35</td>
+                                            <td className="p-4 text-slate-400">$500</td>
+                                            <td className="p-4 font-semibold text-slate-300">$566,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4">45</td>
-                                            <td className="p-4">$500</td>
-                                            <td className="p-4 text-red-600 font-semibold">$246,000</td>
+                                            <td className="p-4 text-white">45</td>
+                                            <td className="p-4 text-slate-400">$500</td>
+                                            <td className="p-4 text-red-400 font-semibold">$246,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -185,7 +185,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 2. Over-Concentration */}
                         <section id="concentration" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-50 rounded-lg text-orange-600">
+                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
                                     <PieChart className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">2. Over-Concentration in Stocks</h2>
@@ -204,7 +204,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 3. Ignoring Inflation */}
                         <section id="inflation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">3. Ignoring Inflation</h2>
@@ -227,7 +227,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 4. Sequence of Returns */}
                         <section id="sequence" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4. Ignoring Sequence of Returns Risk</h2>
@@ -246,7 +246,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 5. Healthcare */}
                         <section id="healthcare" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">5. Underestimating Healthcare Costs</h2>
@@ -277,7 +277,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 6. Social Security */}
                         <section id="social-security" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">6. Claiming Social Security Too Early</h2>
@@ -296,7 +296,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 7. Fees */}
                         <section id="fees" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-gray-100 rounded-lg text-gray-600">
+                                <div className="p-3 bg-slate-700/50 rounded-lg text-slate-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">7. Ignoring Investment Fees</h2>
@@ -312,7 +312,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 8. Withdrawal Rate */}
                         <section id="withdrawal" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">8. Using the Wrong Withdrawal Rate</h2>
@@ -331,7 +331,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 9. Tax Inefficiency */}
                         <section id="taxes" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-cyan-50 rounded-lg text-cyan-600">
+                                <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">9. Tax Inefficiency</h2>
@@ -353,7 +353,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 10. No Plan */}
                         <section id="plan" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-emerald-50 rounded-lg text-emerald-600">
+                                <div className="p-3 bg-emerald-500/20 rounded-lg text-emerald-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">10. No Written Retirement Plan</h2>
@@ -382,44 +382,44 @@ export default function RetirementPlanningMistakesPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What is the biggest retirement planning mistake?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         The biggest mistake is starting too late. Compound interest needs time—someone starting at 25 can save half as much as someone starting at 35 and end up with more. The second biggest is over-concentration in stocks, leaving retirees vulnerable to crashes.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">How do I avoid running out of money in retirement?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Use a safe withdrawal rate (3-4% annually), diversify beyond stocks into bonds, gold, and real assets, plan for sequence of returns risk with 2-3 years of cash/bonds, account for inflation, and have a written retirement plan reviewed annually.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What is sequence of returns risk?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Sequence of returns risk is the danger that poor returns early in retirement permanently deplete your portfolio—even if average returns are good. A 30% crash in year 1 is far more damaging than in year 20 because you&apos;re withdrawing from a depleted base.
                                     </p>
                                 </details>

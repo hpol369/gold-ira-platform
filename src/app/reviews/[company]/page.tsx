@@ -114,7 +114,7 @@ export default async function CompanyReviewPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen flex flex-col bg-white">
+      <main className="min-h-screen flex flex-col bg-slate-900">
         <Navbar />
 
         {/* Hero Section */}
@@ -127,26 +127,26 @@ export default async function CompanyReviewPage({ params }: Props) {
               {/* Main Article */}
               <article className="lg:col-span-2 space-y-12">
                 {/* Table of Contents */}
-                <nav className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                  <h2 className="font-bold text-slate-900 mb-4">In This Review</h2>
+                <nav className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                  <h2 className="font-bold text-white mb-4">In This Review</h2>
                   <div className="grid sm:grid-cols-2 gap-2">
-                    <a href="#overview" className="flex items-center gap-2 text-sm text-slate-600 hover:text-amber-600 transition-colors">
+                    <a href="#overview" className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-500 transition-colors">
                       <BookOpen className="h-4 w-4" />
                       Company Overview
                     </a>
-                    <a href="#pros-cons" className="flex items-center gap-2 text-sm text-slate-600 hover:text-amber-600 transition-colors">
+                    <a href="#pros-cons" className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-500 transition-colors">
                       <Scale className="h-4 w-4" />
                       Pros & Cons
                     </a>
-                    <a href="#fees" className="flex items-center gap-2 text-sm text-slate-600 hover:text-amber-600 transition-colors">
+                    <a href="#fees" className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-500 transition-colors">
                       <DollarSign className="h-4 w-4" />
                       Fee Structure
                     </a>
-                    <a href="#best-for" className="flex items-center gap-2 text-sm text-slate-600 hover:text-amber-600 transition-colors">
+                    <a href="#best-for" className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-500 transition-colors">
                       <Users className="h-4 w-4" />
                       Who It&apos;s Best For
                     </a>
-                    <a href="#verdict" className="flex items-center gap-2 text-sm text-slate-600 hover:text-amber-600 transition-colors">
+                    <a href="#verdict" className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-500 transition-colors">
                       <Award className="h-4 w-4" />
                       Final Verdict
                     </a>
@@ -155,17 +155,17 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                 {/* Company Overview */}
                 <section id="overview" className="scroll-mt-24">
-                  <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                    <div className="p-2 bg-slate-100 rounded-lg">
-                      <Building2 className="h-5 w-5 text-slate-600" />
+                  <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <div className="p-2 bg-white/10 rounded-lg">
+                      <Building2 className="h-5 w-5 text-slate-400" />
                     </div>
                     Company Overview
                   </h2>
-                  <div className="prose prose-slate max-w-none">
-                    <p className="text-lg text-slate-600 leading-relaxed">
+                  <div className="prose prose-invert max-w-none">
+                    <p className="text-lg text-slate-300 leading-relaxed">
                       {company.description}
                     </p>
-                    <p className="text-slate-600">
+                    <p className="text-slate-300">
                       Founded in {company.founded} and headquartered in {company.headquarters},
                       {company.name} has been in business for {yearsInBusiness} years. They
                       currently hold an {company.bbbRating} rating with the Better Business Bureau
@@ -176,30 +176,30 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                   {/* Quick Stats Grid */}
                   <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                    <div className="bg-slate-50 rounded-xl p-4 text-center">
-                      <div className="text-2xl font-bold text-slate-900">{yearsInBusiness}+</div>
-                      <div className="text-sm text-slate-500">Years in Business</div>
+                    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10">
+                      <div className="text-2xl font-bold text-white">{yearsInBusiness}+</div>
+                      <div className="text-sm text-slate-400">Years in Business</div>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-4 text-center">
-                      <div className="text-2xl font-bold text-slate-900">{company.bbbRating}</div>
-                      <div className="text-sm text-slate-500">BBB Rating</div>
+                    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10">
+                      <div className="text-2xl font-bold text-white">{company.bbbRating}</div>
+                      <div className="text-sm text-slate-400">BBB Rating</div>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-4 text-center">
-                      <div className="text-2xl font-bold text-slate-900">${company.minInvestment.toLocaleString()}</div>
-                      <div className="text-sm text-slate-500">Minimum</div>
+                    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10">
+                      <div className="text-2xl font-bold text-white">${company.minInvestment.toLocaleString()}</div>
+                      <div className="text-sm text-slate-400">Minimum</div>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-4 text-center">
-                      <div className="text-2xl font-bold text-slate-900">{company.metals.length}</div>
-                      <div className="text-sm text-slate-500">Metals Offered</div>
+                    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center border border-white/10">
+                      <div className="text-2xl font-bold text-white">{company.metals.length}</div>
+                      <div className="text-sm text-slate-400">Metals Offered</div>
                     </div>
                   </div>
                 </section>
 
                 {/* Pros & Cons */}
                 <section id="pros-cons" className="scroll-mt-24">
-                  <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                    <div className="p-2 bg-slate-100 rounded-lg">
-                      <Scale className="h-5 w-5 text-slate-600" />
+                  <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <div className="p-2 bg-white/10 rounded-lg">
+                      <Scale className="h-5 w-5 text-slate-400" />
                     </div>
                     Pros & Cons
                   </h2>
@@ -213,14 +213,14 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                 {/* Fee Structure */}
                 <section id="fees" className="scroll-mt-24">
-                  <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                    <div className="p-2 bg-slate-100 rounded-lg">
-                      <DollarSign className="h-5 w-5 text-slate-600" />
+                  <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <div className="p-2 bg-white/10 rounded-lg">
+                      <DollarSign className="h-5 w-5 text-slate-400" />
                     </div>
                     Fee Structure
                   </h2>
                   <SingleCompanyFees company={company} />
-                  <p className="mt-4 text-sm text-slate-500">
+                  <p className="mt-4 text-sm text-slate-400">
                     Note: Fees are subject to change. Contact {company.name} directly for current pricing.
                     All Gold IRA companies also charge spreads on precious metals purchases, typically 3-8% above spot price.
                   </p>
@@ -244,15 +244,15 @@ export default async function CompanyReviewPage({ params }: Props) {
                   )}
 
                   {/* This Company CTA */}
-                  <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                    <h3 className="font-bold text-slate-900 mb-4">Get Started with {company.name}</h3>
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 shadow-sm">
+                    <h3 className="font-bold text-white mb-4">Get Started with {company.name}</h3>
                     <ul className="space-y-2 mb-4 text-sm">
-                      <li className="flex items-center gap-2 text-slate-600">
-                        <Shield className="h-4 w-4 text-green-600" />
+                      <li className="flex items-center gap-2 text-slate-300">
+                        <Shield className="h-4 w-4 text-green-500" />
                         Free Consultation
                       </li>
-                      <li className="flex items-center gap-2 text-slate-600">
-                        <Clock className="h-4 w-4 text-blue-600" />
+                      <li className="flex items-center gap-2 text-slate-300">
+                        <Clock className="h-4 w-4 text-blue-500" />
                         No Obligation
                       </li>
                     </ul>
@@ -260,49 +260,49 @@ export default async function CompanyReviewPage({ params }: Props) {
                       href={company.affiliateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block w-full text-center py-3 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-all"
+                      className="block w-full text-center py-3 bg-amber-500 text-white font-bold rounded-lg hover:bg-amber-600 transition-all"
                     >
                       Visit {company.name}
                     </a>
                   </div>
 
                   {/* Compare with Others */}
-                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                    <h3 className="font-bold text-slate-900 mb-4">Compare Companies</h3>
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                    <h3 className="font-bold text-white mb-4">Compare Companies</h3>
                     <div className="space-y-3">
                       {topCompanies.slice(0, 3).map((c) => (
                         <Link
                           key={c.slug}
                           href={`/reviews/${c.slug}`}
-                          className="flex items-center justify-between p-3 bg-white rounded-lg border border-slate-200 hover:border-amber-300 transition-colors"
+                          className="flex items-center justify-between p-3 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors"
                         >
                           <div>
-                            <div className="font-semibold text-sm text-slate-900">{c.name}</div>
-                            <div className="text-xs text-slate-500">{c.bbbRating} BBB • ${c.minInvestment.toLocaleString()} min</div>
+                            <div className="font-semibold text-sm text-white">{c.name}</div>
+                            <div className="text-xs text-slate-400">{c.bbbRating} BBB • ${c.minInvestment.toLocaleString()} min</div>
                           </div>
-                          <div className="text-amber-600 font-bold">{c.rating}</div>
+                          <div className="text-amber-500 font-bold">{c.rating}</div>
                         </Link>
                       ))}
                     </div>
                     <Link
                       href="/reviews"
-                      className="block text-center text-sm text-amber-600 font-semibold mt-4 hover:text-amber-700"
+                      className="block text-center text-sm text-amber-500 font-semibold mt-4 hover:text-amber-400"
                     >
                       See All Reviews →
                     </Link>
                   </div>
 
                   {/* Quick Links */}
-                  <div className="bg-white rounded-xl p-6 border border-slate-200">
-                    <h3 className="font-bold text-slate-900 mb-4">Related Content</h3>
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                    <h3 className="font-bold text-white mb-4">Related Content</h3>
                     <div className="space-y-2 text-sm">
-                      <Link href="/guide/gold-ira-fees" className="block text-slate-600 hover:text-amber-600">
+                      <Link href="/guide/gold-ira-fees" className="block text-slate-400 hover:text-amber-500">
                         Understanding Gold IRA Fees →
                       </Link>
-                      <Link href="/learn/gold-ira-scams" className="block text-slate-600 hover:text-amber-600">
+                      <Link href="/learn/gold-ira-scams" className="block text-slate-400 hover:text-amber-500">
                         Gold IRA Scams to Avoid →
                       </Link>
-                      <Link href="/guide/how-to-open-gold-ira" className="block text-slate-600 hover:text-amber-600">
+                      <Link href="/guide/how-to-open-gold-ira" className="block text-slate-400 hover:text-amber-500">
                         How to Open a Gold IRA →
                       </Link>
                     </div>

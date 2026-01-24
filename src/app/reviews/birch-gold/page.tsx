@@ -19,7 +19,7 @@ export default function BirchGoldReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 <header className="bg-zinc-900 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-900/40 via-zinc-900 to-zinc-900 opacity-80 z-0"></div>
                     <Container className="relative z-10">
@@ -55,7 +55,7 @@ export default function BirchGoldReviewPage() {
                                 ctaText="Learn More"
                             />
 
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>Company Background</h2>
                                 <p>
                                     <strong>Birch Gold Group</strong> was founded in 2003, making them one of the oldest dedicated precious metals IRA companies still operating. Their Burbank, California headquarters has weathered multiple economic cycles, including the 2008 financial crisis and the 2020 pandemic.
@@ -89,11 +89,11 @@ export default function BirchGoldReviewPage() {
                                 <p>
                                     This structure creates an interesting dynamic. On a $200,000 account, $200 in annual fees is a 0.1% expense ratio - excellent value. On a $10,000 account, that same $200 represents 2% annually - not as attractive.
                                 </p>
-                                <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-100 not-prose my-8">
-                                    <h4 className="font-bold text-yellow-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> Flat vs. Percentage Fees
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> Flat vs. Percentage Fees
                                     </h4>
-                                    <p className="text-sm text-yellow-800">
+                                    <p className="text-sm text-slate-400">
                                         The flat fee model favors larger accounts significantly. If you're investing $100,000+, Birch's fee structure is competitive. For accounts under $50,000, you might find better value with companies whose fees are proportional to account size or who offer fee waivers.
                                     </p>
                                 </div>
@@ -122,7 +122,7 @@ export default function BirchGoldReviewPage() {
                                     For investors with $100,000+ accounts who prioritize track record and flat fees, Birch is worth considering. For smaller accounts or those who want a more modern experience, other options may serve you better.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict</h2>
                                 <p>

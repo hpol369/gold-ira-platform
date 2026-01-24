@@ -140,7 +140,7 @@ export default function CheckbookIraRulesPage() {
                         {/* What Is Checkbook IRA */}
                         <section id="what-is-checkbook" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <FileText className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">What Is a Checkbook IRA?</h2>
@@ -177,7 +177,7 @@ export default function CheckbookIraRulesPage() {
                         {/* Gold IRA Problems */}
                         <section id="gold-ira-problems" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why It Doesn&apos;t Work for Gold</h2>
@@ -200,7 +200,7 @@ export default function CheckbookIraRulesPage() {
                         {/* Prohibited Transactions */}
                         <section id="prohibited-transactions" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Prohibited Transactions</h2>
@@ -222,38 +222,38 @@ export default function CheckbookIraRulesPage() {
                         {/* Risks */}
                         <section id="risks" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <XCircle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Real Risks</h2>
                             </div>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <XCircle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <XCircle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Full IRA Disqualification</h4>
-                                        <p className="text-sm text-red-600 mt-1">One prohibited transaction can disqualify your entire IRA. Not just the problematic investment—the whole account. You&apos;ll owe taxes on everything.</p>
+                                        <h4 className="font-bold text-red-400">Full IRA Disqualification</h4>
+                                        <p className="text-sm text-red-300 mt-1">One prohibited transaction can disqualify your entire IRA. Not just the problematic investment—the whole account. You&apos;ll owe taxes on everything.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <XCircle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <XCircle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Early Withdrawal Penalties</h4>
-                                        <p className="text-sm text-red-600 mt-1">If you&apos;re under 59½ when your IRA is disqualified, add a 10% early withdrawal penalty on top of the income taxes.</p>
+                                        <h4 className="font-bold text-red-400">Early Withdrawal Penalties</h4>
+                                        <p className="text-sm text-red-300 mt-1">If you&apos;re under 59½ when your IRA is disqualified, add a 10% early withdrawal penalty on top of the income taxes.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-700">Audit Risk</h4>
-                                        <p className="text-sm text-amber-600 mt-1">The IRS knows about checkbook IRA schemes. These structures face higher scrutiny. An audit years later could uncover issues you didn&apos;t even know you had.</p>
+                                        <h4 className="font-bold text-amber-400">Audit Risk</h4>
+                                        <p className="text-sm text-amber-300 mt-1">The IRS knows about checkbook IRA schemes. These structures face higher scrutiny. An audit years later could uncover issues you didn&apos;t even know you had.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-700">No One to Blame But Yourself</h4>
-                                        <p className="text-sm text-amber-600 mt-1">The company that set up your checkbook IRA isn&apos;t responsible for your compliance. If you mess up, you pay the price—not them.</p>
+                                        <h4 className="font-bold text-amber-400">No One to Blame But Yourself</h4>
+                                        <p className="text-sm text-amber-300 mt-1">The company that set up your checkbook IRA isn&apos;t responsible for your compliance. If you mess up, you pay the price—not them.</p>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@ export default function CheckbookIraRulesPage() {
                         {/* Better Approach */}
                         <section id="better-approach" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">A Better Approach</h2>
@@ -302,14 +302,14 @@ export default function CheckbookIraRulesPage() {
                             <h2>Checkbook IRA FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                                 <FileText className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-gray-700">
+                                        <p className="mt-4 leading-relaxed text-slate-400">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>

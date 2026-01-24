@@ -19,7 +19,7 @@ export default function AmericanHartfordGoldReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 <header className="bg-blue-950 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-800/40 via-blue-950 to-blue-950 opacity-80 z-0"></div>
                     <Container className="relative z-10">
@@ -55,7 +55,7 @@ export default function AmericanHartfordGoldReviewPage() {
                                 ctaText="Learn More"
                             />
 
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>Company Overview</h2>
                                 <p>
                                     <strong>American Hartford Gold</strong> is a Los Angeles-based precious metals dealer founded in 2015. They've grown significantly through television advertising and partnerships with conservative media personalities like Bill O'Reilly.
@@ -89,11 +89,11 @@ export default function AmericanHartfordGoldReviewPage() {
                                 <p>
                                     Like most Gold IRA companies, they don't publish specific pricing on their website. You'll need to call to get current prices on coins and bars. Annual storage and custodian fees are in the typical industry range of $150-$225.
                                 </p>
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
-                                    <h4 className="font-bold text-blue-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> About Price Guarantees
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> About Price Guarantees
                                     </h4>
-                                    <p className="text-sm text-blue-800">
+                                    <p className="text-sm text-slate-400">
                                         Price-match policies in this industry come with fine print. They typically apply to identical products (same coin, same condition, same quantity) from established competitors. Don't expect them to match prices from unknown dealers or auction sites.
                                     </p>
                                 </div>
@@ -122,7 +122,7 @@ export default function AmericanHartfordGoldReviewPage() {
                                     Their strength is accessibility combined with the price-match policy. If you're the type of investor who gets multiple quotes and negotiates, American Hartford's willingness to compete on price can work in your favor.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict</h2>
                                 <p>

@@ -19,7 +19,7 @@ export default function RegalAssetsLawsuitPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 {/* Header / Hero for Review */}
                 <header className="bg-red-950 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-red-800/40 via-red-950 to-red-950 opacity-80 z-0"></div>
@@ -67,7 +67,7 @@ export default function RegalAssetsLawsuitPage() {
                             </div>
 
                             {/* Main Body Content */}
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>What Happened to Regal Assets?</h2>
                                 <p>
                                     <strong>Regal Assets</strong> was once one of the most-recommended Gold IRA companies in America. They had thousands of positive reviews, celebrity endorsements, and featured prominently on "best of" lists across the internet.
@@ -110,9 +110,9 @@ export default function RegalAssetsLawsuitPage() {
                                     If you have or had an account with Regal Assets, here's what you need to know:
                                 </p>
 
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
-                                    <h4 className="font-bold text-blue-900 mb-4">Action Steps for Former Customers</h4>
-                                    <ul className="space-y-3 text-blue-800">
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white mb-4">Action Steps for Former Customers</h4>
+                                    <ul className="space-y-3 text-slate-400">
                                         <li className="flex items-start gap-2">
                                             <span className="font-bold">1.</span>
                                             <span><strong>Your metals should still exist.</strong> IRA precious metals are held by custodians and depositories, not the dealer. Regal was an intermediary—assets should be held separately.</span>
@@ -156,7 +156,7 @@ export default function RegalAssetsLawsuitPage() {
                                     These companies have weathered multiple market cycles and continue to operate with strong reputations.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Thoughts</h2>
                                 <p>

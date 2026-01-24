@@ -54,7 +54,7 @@ const schema = {
 
 export default function LearCapitalComplaintsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -80,7 +80,7 @@ export default function LearCapitalComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
 
                         <p className="lead">
                             Google &quot;Lear Capital&quot; and you&apos;ll see &quot;lawsuit&quot; and &quot;scam&quot; in the autocomplete. That&apos;s enough to make anyone nervous. But here&apos;s the thing: Lear Capital has been operating for over 25 years, which scams simply don&apos;t do. Let&apos;s look at the facts—both the ugly past and the cleaned-up present.

@@ -33,14 +33,14 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <section className="py-24 bg-background-subtle">
+        <section className="py-24 bg-slate-800/50">
             <Container>
                 <FadeIn>
                     <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-3xl font-serif font-bold text-primary md:text-4xl">
+                        <h2 className="text-3xl font-serif font-bold text-white md:text-4xl">
                             Trusted by American Retirees
                         </h2>
-                        <p className="text-lg text-text-muted max-w-2xl mx-auto">
+                        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                             See why thousands of investors have switched to physical precious metals for their retirement security.
                         </p>
                     </div>
@@ -49,20 +49,20 @@ export function Testimonials() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {testimonials.map((t, i) => (
                         <FadeIn key={t.id} delay={i * 0.1} className="h-full">
-                            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 h-full flex flex-col hover:shadow-md transition-shadow">
+                            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 h-full flex flex-col hover:bg-white/10 transition-all">
                                 <div className="flex gap-1 mb-6">
                                     {[...Array(5)].map((_, i) => (
-                                        <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
+                                        <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
                                     ))}
                                 </div>
 
-                                <p className="text-text-muted leading-relaxed italic mb-6 flex-grow">
+                                <p className="text-slate-300 leading-relaxed italic mb-6 flex-grow">
                                     &quot;{t.text}&quot;
                                 </p>
 
-                                <div className="border-t border-gray-100 pt-6">
-                                    <p className="font-bold text-primary">{t.name}</p>
-                                    <p className="text-sm text-gray-400">{t.location}</p>
+                                <div className="border-t border-white/10 pt-6">
+                                    <p className="font-bold text-white">{t.name}</p>
+                                    <p className="text-sm text-slate-500">{t.location}</p>
                                 </div>
                             </div>
                         </FadeIn>

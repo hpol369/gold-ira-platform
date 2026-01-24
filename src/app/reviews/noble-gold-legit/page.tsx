@@ -57,7 +57,7 @@ const tocItems = [
 
 export default function NobleGoldLegitPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">
@@ -89,7 +89,7 @@ export default function NobleGoldLegitPage() {
                                 <ReviewSidebar {...companyData} />
                             </div>
 
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
 
                                 {/* Intro Text */}
                                 <section>

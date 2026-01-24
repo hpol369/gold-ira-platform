@@ -19,7 +19,7 @@ export default function MoneyMetalsExchangePage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 {/* Header / Hero for Review */}
                 <header className="bg-orange-950 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-800/40 via-orange-950 to-orange-950 opacity-80 z-0"></div>
@@ -60,7 +60,7 @@ export default function MoneyMetalsExchangePage() {
                             />
 
                             {/* Main Body Content - TYPOGRAPHY PROSE */}
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>The Executive Summary</h2>
                                 <p>
                                     <strong>Money Metals Exchange</strong> made headlines when Investopedia named them "Best Overall" precious metals dealer. Their claim to fame? Low-cost Starter Portfolios that let anyone get into gold and silver without a massive upfront investment.
@@ -95,11 +95,11 @@ export default function MoneyMetalsExchangePage() {
                                     For new investors, Starter Portfolios remove the paralysis of choice. For experienced stackers, they might seem limiting. Either way, they've helped Money Metals attract customers who'd otherwise feel overwhelmed.
                                 </p>
 
-                                <div className="bg-orange-50 p-6 rounded-xl border border-orange-100 not-prose my-8">
-                                    <h4 className="font-bold text-orange-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> IRA vs. Direct Purchase
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> IRA vs. Direct Purchase
                                     </h4>
-                                    <p className="text-sm text-orange-800">
+                                    <p className="text-sm text-slate-400">
                                         Money Metals is better known for direct purchases (you receive metals at home) than IRAs (metals stored in depository). If your primary goal is a retirement account rollover, compare with IRA-focused companies like Augusta or Noble Gold.
                                     </p>
                                 </div>
@@ -120,7 +120,7 @@ export default function MoneyMetalsExchangePage() {
                                     Complaints typically focus on shipping costs for small orders (no minimum means some people order small and balk at shipping fees) and occasional delays during high-demand periods.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict: Are They Worth It?</h2>
                                 <p>

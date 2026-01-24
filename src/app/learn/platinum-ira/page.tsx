@@ -128,7 +128,7 @@ export default function PlatinumIraPage() {
                         {/* What is Platinum */}
                         <section id="what-is-platinum" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-indigo-50 rounded-lg text-indigo-600">
+                                <div className="p-3 bg-indigo-500/20 rounded-lg text-indigo-400">
                                     <Gem className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Platinum?</h2>
@@ -141,7 +141,7 @@ export default function PlatinumIraPage() {
                         {/* Investment Case */}
                         <section id="investment-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Bull Case for Platinum</h2>
@@ -163,29 +163,29 @@ export default function PlatinumIraPage() {
                         <section id="platinum-vs-gold" className="scroll-mt-32">
                             <h2>Platinum vs. Gold</h2>
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Feature</th>
-                                            <th className="p-4 border-b font-bold text-primary">Gold</th>
-                                            <th className="p-4 border-b font-bold text-primary">Platinum</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Feature</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Gold</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Platinum</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 font-semibold">Primary Use</td>
-                                            <td className="p-4">Monetary / Investment</td>
-                                            <td className="p-4">Industrial / Auto</td>
+                                            <td className="p-4 font-semibold text-white">Primary Use</td>
+                                            <td className="p-4 text-slate-400">Monetary / Investment</td>
+                                            <td className="p-4 text-slate-400">Industrial / Auto</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Economic Sensitivity</td>
-                                            <td className="p-4">Counter-cyclical (Safe Haven)</td>
-                                            <td className="p-4">Pro-cyclical (Grows with Economy)</td>
+                                            <td className="p-4 font-semibold text-white">Economic Sensitivity</td>
+                                            <td className="p-4 text-slate-400">Counter-cyclical (Safe Haven)</td>
+                                            <td className="p-4 text-slate-400">Pro-cyclical (Grows with Economy)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Volatility</td>
-                                            <td className="p-4">Low/Moderate</td>
-                                            <td className="p-4">High</td>
+                                            <td className="p-4 font-semibold text-white">Volatility</td>
+                                            <td className="p-4 text-slate-400">Low/Moderate</td>
+                                            <td className="p-4 text-slate-400">High</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -218,7 +218,7 @@ export default function PlatinumIraPage() {
                         {/* Risks */}
                         <section id="risks" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Risks</h2>
@@ -245,14 +245,14 @@ export default function PlatinumIraPage() {
                             <h2>Platinum IRA FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                                 <Factory className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-gray-700">
+                                        <p className="mt-4 leading-relaxed text-slate-400">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>

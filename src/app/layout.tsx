@@ -70,7 +70,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={cn(inter.variable, playfair.variable, "antialiased bg-background text-text")}>
+      <body className={cn(inter.variable, playfair.variable, "antialiased bg-slate-900 text-slate-50")}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

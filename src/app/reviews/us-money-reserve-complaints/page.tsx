@@ -50,7 +50,7 @@ const schema = {
 
 export default function UsMoneyReserveComplaintsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -76,7 +76,7 @@ export default function UsMoneyReserveComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
 
                         <p className="lead">
                             If you&apos;ve ever downloaded a free gold guide from US Money Reserve, you probably know what comes next: phone calls. Lots of them. Sometimes multiple times a day. This is the number one complaint we see about this company.

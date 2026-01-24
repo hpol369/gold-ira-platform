@@ -115,30 +115,30 @@ export default function SelfDirectedIraGoldPage() {
 
                                 <div className="not-prose">
                                     <div className="space-y-4 my-8">
-                                        <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                        <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
                                             <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold shrink-0">
                                                 <Building2 className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <strong className="block text-primary text-lg">1. The Custodian</strong>
+                                                <strong className="block text-white text-lg">1. The Custodian</strong>
                                                 <p className="text-text-muted mt-1">A specialized financial institution that holds your IRA assets and handles all IRS reporting. Examples: Equity Trust Company, STRATA Trust, New Direction IRA.</p>
                                             </div>
                                         </div>
-                                        <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                        <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
                                             <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold shrink-0">
                                                 <Scale className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <strong className="block text-primary text-lg">2. The Precious Metals Dealer</strong>
+                                                <strong className="block text-white text-lg">2. The Precious Metals Dealer</strong>
                                                 <p className="text-text-muted mt-1">The company you purchase your gold from. Reputable dealers like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> and <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> guide you through the entire process.</p>
                                             </div>
                                         </div>
-                                        <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                            <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold shrink-0">
+                                        <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
+                                            <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold shrink-0">
                                                 <Lock className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <strong className="block text-primary text-lg">3. The Depository</strong>
+                                                <strong className="block text-white text-lg">3. The Depository</strong>
                                                 <p className="text-text-muted mt-1">A high-security vault where your physical metals are stored. These facilities are insured, audited, and IRS-approved. Popular: Delaware Depository, Brink's Global Services.</p>
                                             </div>
                                         </div>

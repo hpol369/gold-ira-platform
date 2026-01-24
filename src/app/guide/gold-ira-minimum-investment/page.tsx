@@ -89,19 +89,19 @@ const schema = {
 
 export default function GoldIraMinimumInvestmentPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-slate-800/50 py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Investment Guide
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Gold IRA Minimum Investment
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-400 leading-relaxed">
                             How much do you really need to get started? We decode the entry costs and help you find a provider that fits your budget.
                         </p>
                     </div>
@@ -116,7 +116,7 @@ export default function GoldIraMinimumInvestmentPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -130,37 +130,37 @@ export default function GoldIraMinimumInvestmentPage() {
                         {/* Typical Minimums */}
                         <section id="typical-minimums" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Wallet className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Typical Industry Minimums</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Typical Industry Minimums</h2>
                             </div>
                             <p>
                                 Most reputable brokers fall into three tiers:
                             </p>
                             <div className="grid md:grid-cols-3 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl border border-gray-200 bg-white">
-                                    <h4 className="font-bold text-gray-900 mb-2">Entry Level</h4>
+                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">Entry Level</h4>
                                     <div className="text-3xl font-bold text-primary mb-2">$10k - $25k</div>
-                                    <p className="text-sm text-gray-600">Best for first-time investors or partial rollovers.</p>
+                                    <p className="text-sm text-slate-400">Best for first-time investors or partial rollovers.</p>
                                 </div>
-                                <div className="p-6 rounded-xl border border-primary/20 bg-primary/5">
+                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-primary/30">
                                     <h4 className="font-bold text-primary mb-2">Standard</h4>
                                     <div className="text-3xl font-bold text-primary mb-2">$50,000</div>
                                     <div className="inline-block px-2 py-1 bg-secondary text-white text-xs font-bold rounded">Most Popular</div>
-                                    <p className="text-sm text-gray-600 mt-2">Access to better pricing and promotions (like waived fees).</p>
+                                    <p className="text-sm text-slate-400 mt-2">Access to better pricing and promotions (like waived fees).</p>
                                 </div>
-                                <div className="p-6 rounded-xl border border-gray-200 bg-white">
-                                    <h4 className="font-bold text-gray-900 mb-2">Premium</h4>
+                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">Premium</h4>
                                     <div className="text-3xl font-bold text-primary mb-2">$100,000+</div>
-                                    <p className="text-sm text-gray-600">VIP service, lowest premiums, and dedicated account managers.</p>
+                                    <p className="text-sm text-slate-400">VIP service, lowest premiums, and dedicated account managers.</p>
                                 </div>
                             </div>
                         </section>
 
                         {/* Why Minimums Exist */}
                         <section id="why-minimums-exist" className="scroll-mt-32">
-                            <h2>Why Do Minimums Exist?</h2>
+                            <h2 className="text-white">Why Do Minimums Exist?</h2>
                             <p>
                                 Gold IRA companies aren't just being difficult. Setting up a self-directed IRA involves significant administrative work:
                             </p>
@@ -178,10 +178,10 @@ export default function GoldIraMinimumInvestmentPage() {
                         {/* Small Account Problem */}
                         <section id="small-account-problem" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The "Fees Trap" for Small Accounts</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The "Fees Trap" for Small Accounts</h2>
                             </div>
                             <p>
                                 Why shouldn't you open a $5,000 Gold IRA? <strong>Math.</strong>
@@ -189,14 +189,14 @@ export default function GoldIraMinimumInvestmentPage() {
                             <p>
                                 Most accounts have valid flat fees of ~$200/year for storage and maintenance.
                             </p>
-                            <div className="not-prose my-6 p-6 bg-red-50 rounded-xl border border-red-100">
-                                <p className="font-bold text-red-800">Fee Impact Example:</p>
-                                <ul className="mt-2 space-y-2 text-red-700">
+                            <div className="not-prose my-6 p-6 bg-red-500/10 rounded-xl border border-red-500/20">
+                                <p className="font-bold text-red-400">Fee Impact Example:</p>
+                                <ul className="mt-2 space-y-2 text-red-300">
                                     <li><strong>$100,000 Account:</strong> $200 fee = 0.2% (Negligible)</li>
                                     <li><strong>$50,000 Account:</strong> $200 fee = 0.4% (Reasonable)</li>
                                     <li><strong>$5,000 Account:</strong> $200 fee = 4.0% (HIGH)</li>
                                 </ul>
-                                <p className="mt-4 text-sm text-red-600">
+                                <p className="mt-4 text-sm text-red-400">
                                     If your account loses 4% strictly to fees every year, gold would need to skyrocket just for you to break even. This is why we recommend at least $25,000.
                                 </p>
                             </div>
@@ -204,7 +204,7 @@ export default function GoldIraMinimumInvestmentPage() {
 
                         {/* Company Comparison */}
                         <section id="company-comparison" className="scroll-mt-32">
-                            <h2>How to Qualify</h2>
+                            <h2 className="text-white">How to Qualify</h2>
                             <p>
                                 The easiest way to hit the minimum is via a <strong>Rollover</strong>.
                             </p>
@@ -215,7 +215,7 @@ export default function GoldIraMinimumInvestmentPage() {
 
                         {/* Alternatives */}
                         <section id="alternatives" className="scroll-mt-32">
-                            <h2>Alternatives for Investors Under $10k</h2>
+                            <h2 className="text-white">Alternatives for Investors Under $10k</h2>
                             <p>
                                 If you don't meet the minimums, don't force it. Consider:
                             </p>
@@ -240,17 +240,17 @@ export default function GoldIraMinimumInvestmentPage() {
 
                         {/* FAQ Section */}
                         <section id="faq" className="scroll-mt-32">
-                            <h2>Minimum Investment FAQs</h2>
+                            <h2 className="text-white">Minimum Investment FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                                 <DollarSign className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-gray-700">
+                                        <p className="mt-4 leading-relaxed text-slate-400">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>

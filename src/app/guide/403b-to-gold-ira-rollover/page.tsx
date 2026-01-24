@@ -80,10 +80,10 @@ const schema = {
 
 export default function TsaRolloverPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-800/50 text-white py-20 relative overflow-hidden border-b border-white/10">
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
@@ -91,7 +91,7 @@ export default function TsaRolloverPage() {
                             <span className="w-2 h-2 rounded-full bg-secondary"></span>
                             For Teachers, Nurses & Non-Profits
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-white">
                             403(b) to Gold IRA Rollover Guide
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
@@ -109,10 +109,10 @@ export default function TsaRolloverPage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary prose-p:text-text prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
 
-                        <p className="lead text-xl text-text-muted">
-                            If you&apos;re a teacher, nurse, or non-profit worker, you&apos;ve probably noticed something about your 403(b): <strong>the options are terrible</strong>.
+                        <p className="lead text-xl text-slate-400">
+                            If you&apos;re a teacher, nurse, or non-profit worker, you&apos;ve probably noticed something about your 403(b): <strong className="text-white">the options are terrible</strong>.
                         </p>
 
                         <p>
@@ -147,27 +147,27 @@ export default function TsaRolloverPage() {
                                 Your ability to roll over depends on your situation:
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-200">
-                                    <h4 className="font-bold text-green-800 mb-3 flex items-center gap-2">
+                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                    <h4 className="font-bold text-green-400 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         You Can Roll Over If:
                                     </h4>
-                                    <ul className="space-y-2 text-green-700 text-sm">
+                                    <ul className="space-y-2 text-green-300 text-sm">
                                         <li>• You&apos;ve left that employer (retired, resigned, laid off)</li>
                                         <li>• You&apos;re still employed but age 59½ or older</li>
                                         <li>• You have funds from a <em>previous</em> employer&apos;s 403(b)</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-200">
-                                    <h4 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <h4 className="font-bold text-red-400 mb-3 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         You Probably Can&apos;t If:
                                     </h4>
-                                    <ul className="space-y-2 text-red-700 text-sm">
+                                    <ul className="space-y-2 text-red-300 text-sm">
                                         <li>• You&apos;re under 59½ AND still working for that employer</li>
                                         <li>• Your plan has strict &quot;no in-service withdrawal&quot; rules</li>
                                     </ul>
-                                    <p className="text-red-600 text-xs mt-3">Check your plan document or ask HR—rules vary by employer.</p>
+                                    <p className="text-red-400 text-xs mt-3">Check your plan document or ask HR—rules vary by employer.</p>
                                 </div>
                             </div>
                         </section>
@@ -179,11 +179,11 @@ export default function TsaRolloverPage() {
                                 Here&apos;s the dirty secret of 403(b) plans: unlike 401(k)s, they&apos;re often run by insurance companies selling annuity contracts. And these contracts come with strings attached.
                             </p>
                             <p>
-                                <strong>Surrender charges</strong> are fees the insurance company charges if you move your money out before a certain period—typically 5-10 years. They can be as high as 7-8% of your balance in the early years.
+                                <strong className="text-white">Surrender charges</strong> are fees the insurance company charges if you move your money out before a certain period—typically 5-10 years. They can be as high as 7-8% of your balance in the early years.
                             </p>
-                            <div className="not-prose my-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
-                                <p className="font-bold text-amber-800 mb-3">Typical Surrender Charge Schedule:</p>
-                                <ul className="space-y-1 text-amber-700 text-sm">
+                            <div className="not-prose my-8 p-6 bg-amber-500/10 rounded-xl border border-amber-500/20">
+                                <p className="font-bold text-amber-400 mb-3">Typical Surrender Charge Schedule:</p>
+                                <ul className="space-y-1 text-amber-300 text-sm">
                                     <li>Year 1: 7% penalty</li>
                                     <li>Year 2: 6% penalty</li>
                                     <li>Year 3: 5% penalty</li>
@@ -192,7 +192,7 @@ export default function TsaRolloverPage() {
                                     <li>Year 6: 2% penalty</li>
                                     <li>Year 7+: 0% (free to leave)</li>
                                 </ul>
-                                <p className="mt-4 text-amber-600 text-sm"><strong>Before rolling over:</strong> Call your 403(b) provider and ask &quot;What are my surrender charges if I move my money?&quot;</p>
+                                <p className="mt-4 text-amber-400 text-sm"><strong>Before rolling over:</strong> Call your 403(b) provider and ask &quot;What are my surrender charges if I move my money?&quot;</p>
                             </div>
                             <p>
                                 The good news? If your surrender period has passed, you can roll over penalty-free. And even if you&apos;re still in the surrender period, sometimes the long-term savings from lower fees in a Gold IRA outweigh the one-time surrender charge.
@@ -206,39 +206,39 @@ export default function TsaRolloverPage() {
                                 Rolling over a 403(b) is slightly more complicated than a 401(k) because you&apos;re often dealing with an insurance company, not just an HR department. Here&apos;s how to do it:
                             </p>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Open a Self-Directed Gold IRA</h4>
-                                        <p className="text-sm text-text-muted mt-1">Choose a Gold IRA company. They&apos;ll help you open an account with a custodian who can hold physical metals.</p>
+                                        <h4 className="font-bold text-white">Open a Self-Directed Gold IRA</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Choose a Gold IRA company. They&apos;ll help you open an account with a custodian who can hold physical metals.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Identify Your 403(b) Vendor</h4>
-                                        <p className="text-sm text-text-muted mt-1">This is usually an insurance company (not your school district). Check your statements for names like VALIC, TIAA, AXA, or Lincoln Financial.</p>
+                                        <h4 className="font-bold text-white">Identify Your 403(b) Vendor</h4>
+                                        <p className="text-sm text-slate-400 mt-1">This is usually an insurance company (not your school district). Check your statements for names like VALIC, TIAA, AXA, or Lincoln Financial.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Request a Direct Rollover Form</h4>
-                                        <p className="text-sm text-text-muted mt-1">Call your vendor and ask for their &quot;rollover request form.&quot; Specify you want a <strong>direct transfer</strong> to avoid withholding.</p>
+                                        <h4 className="font-bold text-white">Request a Direct Rollover Form</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Call your vendor and ask for their &quot;rollover request form.&quot; Specify you want a <strong className="text-white">direct transfer</strong> to avoid withholding.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Complete the Paperwork</h4>
-                                        <p className="text-sm text-text-muted mt-1">Fill out the form with your new Gold IRA custodian&apos;s information. Your Gold IRA company can help you with this.</p>
+                                        <h4 className="font-bold text-white">Complete the Paperwork</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Fill out the form with your new Gold IRA custodian&apos;s information. Your Gold IRA company can help you with this.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Wait for Transfer & Purchase Gold</h4>
-                                        <p className="text-sm text-text-muted mt-1">Funds typically arrive in 2-4 weeks (insurance companies are slower than 401k administrators). Then select your gold.</p>
+                                        <h4 className="font-bold text-white">Wait for Transfer & Purchase Gold</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Funds typically arrive in 2-4 weeks (insurance companies are slower than 401k administrators). Then select your gold.</p>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@ export default function TsaRolloverPage() {
                         <section id="tax-benefits" className="scroll-mt-32">
                             <h2>Tax Benefits</h2>
                             <p>
-                                A direct rollover from a 403(b) to a Traditional Gold IRA is <strong>completely tax-free</strong>. No taxes owed. No penalties. The money simply moves from one tax-advantaged account to another.
+                                A direct rollover from a 403(b) to a Traditional Gold IRA is <strong className="text-white">completely tax-free</strong>. No taxes owed. No penalties. The money simply moves from one tax-advantaged account to another.
                             </p>
                             <p>
                                 Once in your Gold IRA, your investments grow tax-deferred—just like they did in your 403(b). You only pay taxes when you take distributions in retirement.
@@ -262,32 +262,32 @@ export default function TsaRolloverPage() {
                         <section id="mistakes" className="scroll-mt-32">
                             <h2>Common Mistakes</h2>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Ignoring surrender charges</h4>
-                                        <p className="text-sm text-red-600 mt-1">Call your vendor first. A surprise 7% surrender fee on $100,000 is $7,000 out of your pocket.</p>
+                                        <h4 className="font-bold text-red-400">Ignoring surrender charges</h4>
+                                        <p className="text-sm text-red-300 mt-1">Call your vendor first. A surprise 7% surrender fee on $100,000 is $7,000 out of your pocket.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Taking an indirect rollover</h4>
-                                        <p className="text-sm text-red-600 mt-1">If they mail you a check, 20% is withheld for taxes. Always request a direct transfer to your new IRA.</p>
+                                        <h4 className="font-bold text-red-400">Taking an indirect rollover</h4>
+                                        <p className="text-sm text-red-300 mt-1">If they mail you a check, 20% is withheld for taxes. Always request a direct transfer to your new IRA.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Contacting HR instead of the vendor</h4>
-                                        <p className="text-sm text-red-600 mt-1">Your school district&apos;s HR usually can&apos;t help with rollovers. You need to contact the insurance company directly.</p>
+                                        <h4 className="font-bold text-red-400">Contacting HR instead of the vendor</h4>
+                                        <p className="text-sm text-red-300 mt-1">Your school district&apos;s HR usually can&apos;t help with rollovers. You need to contact the insurance company directly.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
-                                    <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-700">Not checking in-service rules</h4>
-                                        <p className="text-sm text-red-600 mt-1">If you&apos;re under 59½ and still employed, verify your plan allows rollovers before starting the process.</p>
+                                        <h4 className="font-bold text-red-400">Not checking in-service rules</h4>
+                                        <p className="text-sm text-red-300 mt-1">If you&apos;re under 59½ and still employed, verify your plan allows rollovers before starting the process.</p>
                                     </div>
                                 </div>
                             </div>
@@ -298,14 +298,14 @@ export default function TsaRolloverPage() {
                             <h2>403(b) Rollover FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                                 <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-gray-700">
+                                        <p className="mt-4 leading-relaxed text-slate-400">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>

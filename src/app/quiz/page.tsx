@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function QuizPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <main className="min-h-screen flex flex-col bg-slate-900">
             <Navbar />
-            <div className="flex-grow flex flex-col items-center justify-center py-12 md:py-24 bg-gradient-to-b from-white to-background-subtle">
+            <div className="flex-grow flex flex-col items-center justify-center py-12 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
                 <h1 className="sr-only">Gold IRA Company Matching Quiz</h1>
                 <QuizWizard />
             </div>

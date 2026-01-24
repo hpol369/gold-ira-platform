@@ -19,7 +19,7 @@ export default function GoldcoReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 <header className="bg-[#1e1e1e] text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/40 via-[#1e1e1e] to-[#1e1e1e] opacity-80 z-0"></div>
                     <Container className="relative z-10">
@@ -55,7 +55,7 @@ export default function GoldcoReviewPage() {
                                 ctaText="Request Information"
                             />
 
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>Our Take on Goldco</h2>
                                 <p>
                                     <strong>Goldco</strong> has become almost synonymous with Gold IRAs, at least in terms of brand recognition. Their advertising is everywhere - conservative talk radio, podcasts, YouTube pre-roll ads, and late-night television. They've processed billions in precious metals transactions since their founding in 2006.
@@ -100,11 +100,11 @@ export default function GoldcoReviewPage() {
                                     <li><strong>Annual Fees:</strong> $175-$225 combined (custodian + storage)</li>
                                     <li><strong>Minimum Investment:</strong> $25,000</li>
                                 </ul>
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
-                                    <h4 className="font-bold text-blue-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> About Silver Bonuses
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> About Silver Bonuses
                                     </h4>
-                                    <p className="text-sm text-blue-800">
+                                    <p className="text-sm text-slate-400">
                                         Goldco frequently advertises "free silver" bonuses. These promotions change regularly and typically require larger investment amounts. The silver is real, but remember that promotional giveaways are built into their pricing structure somewhere. Always compare the total cost of ownership, not just promotional offers.
                                     </p>
                                 </div>
@@ -125,7 +125,7 @@ export default function GoldcoReviewPage() {
                                     If you have $50,000 or more to invest, you might find better value with Augusta's fee-waiver programs. If you have less than $25,000, Goldco won't work for you anyway - consider Noble Gold or <a href="/reviews/orion-metal-exchange">Orion Metal Exchange</a> instead.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict</h2>
                                 <p>

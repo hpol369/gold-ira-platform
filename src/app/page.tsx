@@ -11,7 +11,7 @@ import { WhySection } from "@/components/home/GoldenCircle";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col bg-background">
+    <main className="min-h-screen flex flex-col bg-slate-900">
       <Navbar />
 
       <div className="flex-grow">

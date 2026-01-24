@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
 @theme {
+  /* Dark Theme - Primary Brand Colors */
   --color-primary: #0f172a;
-  /* Oxford Navy */
+  /* Slate 900 - Main dark background */
   --color-primary-light: #1e293b;
+  /* Slate 800 - Secondary dark background */
   --color-primary-dark: #020617;
+  /* Slate 950 - Deepest dark */
 
   --color-secondary: #d4af37;
-  /* Champagne Gold */
+  /* Champagne Gold - Accent */
   --color-secondary-light: #f3e5ab;
   --color-secondary-dark: #b8860b;
 
@@ -15,16 +18,21 @@
   /* Emerald Success */
   --color-accent-light: #34d399;
 
-  --color-background: #f8fafc;
-  /* Crisp White/Gray */
-  --color-background-paper: #ffffff;
-  --color-background-subtle: #f1f5f9;
+  /* Dark Theme Backgrounds */
+  --color-background: #0f172a;
+  /* Slate 900 - Primary dark bg */
+  --color-background-paper: #1e293b;
+  /* Slate 800 - Card/Paper bg */
+  --color-background-subtle: #334155;
+  /* Slate 700 - Subtle elements */
 
-  --color-text: #1e293b;
-  /* Slate 800 */
-  --color-text-muted: #64748b;
-  /* Slate 500 */
+  /* Dark Theme Text */
+  --color-text: #f8fafc;
+  /* Slate 50 - Primary text (white) */
+  --color-text-muted: #cbd5e1;
+  /* Slate 300 - Secondary text */
   --color-text-light: #94a3b8;
+  /* Slate 400 - Muted text */
 
   --font-serif: var(--font-playfair), serif;
   --font-sans: var(--font-inter), sans-serif;
@@ -87,10 +95,51 @@
   h6 {
     font-family: var(--font-serif);
     font-weight: bold;
-    /* color: var(--color-primary);  <-- Removed to allow text-white overrides */
+    color: var(--color-text);
+  }
+
+  /* Dark theme prose styles */
+  .prose {
+    --tw-prose-body: var(--color-text-muted);
+    --tw-prose-headings: var(--color-text);
+    --tw-prose-lead: var(--color-text-muted);
+    --tw-prose-links: var(--color-secondary);
+    --tw-prose-bold: var(--color-text);
+    --tw-prose-counters: var(--color-text-muted);
+    --tw-prose-bullets: var(--color-text-light);
+    --tw-prose-hr: var(--color-background-subtle);
+    --tw-prose-quotes: var(--color-text);
+    --tw-prose-quote-borders: var(--color-secondary);
+    --tw-prose-captions: var(--color-text-light);
+    --tw-prose-code: var(--color-text);
+    --tw-prose-pre-code: var(--color-text);
+    --tw-prose-pre-bg: var(--color-background-paper);
+    --tw-prose-th-borders: var(--color-background-subtle);
+    --tw-prose-td-borders: var(--color-background-subtle);
   }
 }
 
 @utility text-balance {
   text-wrap: balance;
+}
+
+/* Glass-morphism card styles */
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+@utility glass-card-hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Dark section variants */
+@utility section-dark {
+  background-color: #0f172a;
+}
+
+@utility section-dark-alt {
+  background-color: rgba(30, 41, 59, 0.5);
 }

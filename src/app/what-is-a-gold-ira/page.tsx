@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function WhatIsGoldIRAPage() {
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-slate-900">
       <Navbar />
 
       {/* Header */}
@@ -71,13 +71,13 @@ export default function WhatIsGoldIRAPage() {
       </header>
 
       {/* Quick Answer */}
-      <section className="py-12 bg-amber-50 border-b border-amber-200">
+      <section className="py-12 bg-amber-500/10 border-b border-amber-500/20">
         <Container>
           <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">
               The Simple Answer
             </h2>
-            <p className="text-lg text-slate-700 leading-relaxed">
+            <p className="text-lg text-slate-300 leading-relaxed">
               A <strong>Gold IRA</strong> (Individual Retirement Account) is a retirement savings account that
               holds physical precious metals instead of paper assets like stocks and bonds. Like traditional
               and Roth IRAs, Gold IRAs offer tax advantages—but instead of mutual funds, your account
@@ -95,10 +95,10 @@ export default function WhatIsGoldIRAPage() {
             <div className="lg:col-span-2 space-y-12">
               {/* How It Works */}
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                <h2 className="text-2xl font-bold text-white mb-6">
                   How Does a Gold IRA Work?
                 </h2>
-                <p className="text-slate-600 mb-6">
+                <p className="text-slate-400 mb-6">
                   A Gold IRA works similarly to a traditional IRA, with a few key differences. Here&apos;s the process:
                 </p>
                 <div className="space-y-4">
@@ -130,12 +130,12 @@ export default function WhatIsGoldIRAPage() {
                     }
                   ].map((item) => (
                     <div key={item.step} className="flex gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
                         {item.step}
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-bold text-slate-900">{item.title}</h3>
-                        <p className="text-slate-600 text-sm">{item.description}</p>
+                        <h3 className="font-bold text-white">{item.title}</h3>
+                        <p className="text-slate-400 text-sm">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -144,38 +144,38 @@ export default function WhatIsGoldIRAPage() {
 
               {/* Key Components */}
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                <h2 className="text-2xl font-bold text-white mb-6">
                   Key Components of a Gold IRA
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <Building2 className="h-8 w-8 text-amber-600 mb-4" />
-                    <h3 className="font-bold text-slate-900 mb-2">Custodian</h3>
-                    <p className="text-sm text-slate-600">
+                    <h3 className="font-bold text-white mb-2">Custodian</h3>
+                    <p className="text-sm text-slate-400">
                       An IRS-approved financial institution that holds and administers your Gold IRA.
                       They handle paperwork, reporting, and compliance.
                     </p>
                   </div>
-                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <Lock className="h-8 w-8 text-amber-600 mb-4" />
-                    <h3 className="font-bold text-slate-900 mb-2">Depository</h3>
-                    <p className="text-sm text-slate-600">
+                    <h3 className="font-bold text-white mb-2">Depository</h3>
+                    <p className="text-sm text-slate-400">
                       A secure, IRS-approved storage facility where your physical gold is held.
                       Depositories provide insurance and 24/7 security.
                     </p>
                   </div>
-                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <DollarSign className="h-8 w-8 text-amber-600 mb-4" />
-                    <h3 className="font-bold text-slate-900 mb-2">Dealer</h3>
-                    <p className="text-sm text-slate-600">
+                    <h3 className="font-bold text-white mb-2">Dealer</h3>
+                    <p className="text-sm text-slate-400">
                       The company you work with to select and purchase IRS-approved precious metals
                       for your account.
                     </p>
                   </div>
-                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                     <Shield className="h-8 w-8 text-amber-600 mb-4" />
-                    <h3 className="font-bold text-slate-900 mb-2">IRS-Approved Metals</h3>
-                    <p className="text-sm text-slate-600">
+                    <h3 className="font-bold text-white mb-2">IRS-Approved Metals</h3>
+                    <p className="text-sm text-slate-400">
                       Only certain gold, silver, platinum, and palladium products meet IRS purity
                       requirements for IRA inclusion.
                     </p>
@@ -185,53 +185,53 @@ export default function WhatIsGoldIRAPage() {
 
               {/* Gold IRA vs Traditional IRA */}
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                <h2 className="text-2xl font-bold text-white mb-6">
                   Gold IRA vs. Traditional IRA
                 </h2>
                 <div className="overflow-x-auto">
-                  <table className="w-full bg-white rounded-xl border border-slate-200">
+                  <table className="w-full bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
                     <thead>
-                      <tr className="bg-slate-100">
-                        <th className="p-4 text-left font-semibold text-slate-700">Feature</th>
-                        <th className="p-4 text-center font-semibold text-slate-700">Gold IRA</th>
-                        <th className="p-4 text-center font-semibold text-slate-700">Traditional IRA</th>
+                      <tr className="bg-slate-800/80">
+                        <th className="p-4 text-left font-semibold text-slate-300">Feature</th>
+                        <th className="p-4 text-center font-semibold text-slate-300">Gold IRA</th>
+                        <th className="p-4 text-center font-semibold text-slate-300">Traditional IRA</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="border-t border-slate-100">
-                        <td className="p-4 text-slate-700">Assets Held</td>
-                        <td className="p-4 text-center">Physical precious metals</td>
-                        <td className="p-4 text-center">Stocks, bonds, mutual funds</td>
+                      <tr className="border-t border-white/5">
+                        <td className="p-4 text-slate-300">Assets Held</td>
+                        <td className="p-4 text-center text-slate-400">Physical precious metals</td>
+                        <td className="p-4 text-center text-slate-400">Stocks, bonds, mutual funds</td>
                       </tr>
-                      <tr className="border-t border-slate-100 bg-slate-50">
-                        <td className="p-4 text-slate-700">Tax Treatment</td>
-                        <td className="p-4 text-center">Tax-deferred or tax-free</td>
-                        <td className="p-4 text-center">Tax-deferred or tax-free</td>
+                      <tr className="border-t border-white/5 bg-slate-800/50">
+                        <td className="p-4 text-slate-300">Tax Treatment</td>
+                        <td className="p-4 text-center text-slate-400">Tax-deferred or tax-free</td>
+                        <td className="p-4 text-center text-slate-400">Tax-deferred or tax-free</td>
                       </tr>
-                      <tr className="border-t border-slate-100">
-                        <td className="p-4 text-slate-700">Contribution Limits (2026)</td>
-                        <td className="p-4 text-center">$7,000 ($8,000 if 50+)</td>
-                        <td className="p-4 text-center">$7,000 ($8,000 if 50+)</td>
+                      <tr className="border-t border-white/5">
+                        <td className="p-4 text-slate-300">Contribution Limits (2026)</td>
+                        <td className="p-4 text-center text-slate-400">$7,000 ($8,000 if 50+)</td>
+                        <td className="p-4 text-center text-slate-400">$7,000 ($8,000 if 50+)</td>
                       </tr>
-                      <tr className="border-t border-slate-100 bg-slate-50">
-                        <td className="p-4 text-slate-700">Custodian Required</td>
-                        <td className="p-4 text-center">Self-directed custodian</td>
-                        <td className="p-4 text-center">Any IRA custodian</td>
+                      <tr className="border-t border-white/5 bg-slate-800/50">
+                        <td className="p-4 text-slate-300">Custodian Required</td>
+                        <td className="p-4 text-center text-slate-400">Self-directed custodian</td>
+                        <td className="p-4 text-center text-slate-400">Any IRA custodian</td>
                       </tr>
-                      <tr className="border-t border-slate-100">
-                        <td className="p-4 text-slate-700">Storage</td>
-                        <td className="p-4 text-center">IRS-approved depository</td>
-                        <td className="p-4 text-center">N/A (electronic records)</td>
+                      <tr className="border-t border-white/5">
+                        <td className="p-4 text-slate-300">Storage</td>
+                        <td className="p-4 text-center text-slate-400">IRS-approved depository</td>
+                        <td className="p-4 text-center text-slate-400">N/A (electronic records)</td>
                       </tr>
-                      <tr className="border-t border-slate-100 bg-slate-50">
-                        <td className="p-4 text-slate-700">Annual Fees</td>
-                        <td className="p-4 text-center">$150-$300/year</td>
-                        <td className="p-4 text-center">Often $0</td>
+                      <tr className="border-t border-white/5 bg-slate-800/50">
+                        <td className="p-4 text-slate-300">Annual Fees</td>
+                        <td className="p-4 text-center text-slate-400">$150-$300/year</td>
+                        <td className="p-4 text-center text-slate-400">Often $0</td>
                       </tr>
-                      <tr className="border-t border-slate-100">
-                        <td className="p-4 text-slate-700">Inflation Protection</td>
-                        <td className="p-4 text-center text-green-600 font-medium">Strong</td>
-                        <td className="p-4 text-center text-slate-400">Varies</td>
+                      <tr className="border-t border-white/5">
+                        <td className="p-4 text-slate-300">Inflation Protection</td>
+                        <td className="p-4 text-center text-green-400 font-medium">Strong</td>
+                        <td className="p-4 text-center text-slate-500">Varies</td>
                       </tr>
                     </tbody>
                   </table>
@@ -240,42 +240,42 @@ export default function WhatIsGoldIRAPage() {
 
               {/* Benefits */}
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                <h2 className="text-2xl font-bold text-white mb-6">
                   Benefits of a Gold IRA
                 </h2>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
-                    <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                    <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-green-800">Portfolio Diversification</h3>
-                      <p className="text-sm text-green-700">
+                      <h3 className="font-bold text-green-400">Portfolio Diversification</h3>
+                      <p className="text-sm text-green-300/80">
                         Gold typically moves independently of stocks and bonds, reducing overall portfolio risk.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
-                    <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                    <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-green-800">Inflation Hedge</h3>
-                      <p className="text-sm text-green-700">
+                      <h3 className="font-bold text-green-400">Inflation Hedge</h3>
+                      <p className="text-sm text-green-300/80">
                         Gold has historically maintained purchasing power during periods of high inflation.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
-                    <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                    <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-green-800">Tax Advantages</h3>
-                      <p className="text-sm text-green-700">
+                      <h3 className="font-bold text-green-400">Tax Advantages</h3>
+                      <p className="text-sm text-green-300/80">
                         Same tax benefits as traditional IRAs—grow your wealth tax-deferred or tax-free.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
-                    <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                    <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-green-800">Tangible Asset Ownership</h3>
-                      <p className="text-sm text-green-700">
+                      <h3 className="font-bold text-green-400">Tangible Asset Ownership</h3>
+                      <p className="text-sm text-green-300/80">
                         You own real, physical gold—not paper promises or derivatives.
                       </p>
                     </div>
@@ -285,43 +285,43 @@ export default function WhatIsGoldIRAPage() {
 
               {/* Considerations */}
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                <h2 className="text-2xl font-bold text-white mb-6">
                   Things to Consider
                 </h2>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-amber-500/10 rounded-xl p-5 border border-amber-500/20">
+                    <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-amber-800">Higher Fees</h3>
-                      <p className="text-sm text-amber-700">
+                      <h3 className="font-bold text-amber-400">Higher Fees</h3>
+                      <p className="text-sm text-amber-300/80">
                         Gold IRAs have annual storage and custodian fees that traditional IRAs don&apos;t.
                         Expect $150-$300/year for most accounts.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-amber-500/10 rounded-xl p-5 border border-amber-500/20">
+                    <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-amber-800">No Dividends</h3>
-                      <p className="text-sm text-amber-700">
+                      <h3 className="font-bold text-amber-400">No Dividends</h3>
+                      <p className="text-sm text-amber-300/80">
                         Unlike stocks, gold doesn&apos;t pay dividends or interest. Returns come only from price appreciation.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-amber-500/10 rounded-xl p-5 border border-amber-500/20">
+                    <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-amber-800">Price Volatility</h3>
-                      <p className="text-sm text-amber-700">
+                      <h3 className="font-bold text-amber-400">Price Volatility</h3>
+                      <p className="text-sm text-amber-300/80">
                         Gold prices can fluctuate significantly in the short term, though they&apos;ve been stable long-term.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-amber-500/10 rounded-xl p-5 border border-amber-500/20">
+                    <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-bold text-amber-800">Storage Requirements</h3>
-                      <p className="text-sm text-amber-700">
+                      <h3 className="font-bold text-amber-400">Storage Requirements</h3>
+                      <p className="text-sm text-amber-300/80">
                         IRS requires storage at an approved depository—you cannot store Gold IRA metals at home.
                       </p>
                     </div>
@@ -331,10 +331,10 @@ export default function WhatIsGoldIRAPage() {
 
               {/* Who Should Consider */}
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                <h2 className="text-2xl font-bold text-white mb-6">
                   Who Should Consider a Gold IRA?
                 </h2>
-                <p className="text-slate-600 mb-6">
+                <p className="text-slate-400 mb-6">
                   A Gold IRA may be right for you if:
                 </p>
                 <ul className="space-y-3">
@@ -346,8 +346,8 @@ export default function WhatIsGoldIRAPage() {
                     "You have enough retirement savings to allocate 5-15% to gold",
                     "You want tangible assets as part of your retirement portfolio"
                   ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3 text-slate-700">
-                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <li key={index} className="flex items-start gap-3 text-slate-300">
+                      <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -358,36 +358,36 @@ export default function WhatIsGoldIRAPage() {
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Quick Facts */}
-              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 sticky top-4">
-                <h3 className="font-bold text-slate-900 mb-4">
+              <div className="bg-slate-800/50 rounded-xl p-6 border border-white/10 sticky top-4">
+                <h3 className="font-bold text-white mb-4">
                   Gold IRA Quick Facts
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <DollarSign className="h-5 w-5 text-amber-600 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-slate-900">2026 Contribution Limit</div>
+                      <div className="font-medium text-white">2026 Contribution Limit</div>
                       <div className="text-sm text-slate-500">$7,000 ($8,000 if 50+)</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Shield className="h-5 w-5 text-amber-600 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-slate-900">Gold Purity Required</div>
+                      <div className="font-medium text-white">Gold Purity Required</div>
                       <div className="text-sm text-slate-500">99.5% (0.995 fineness)</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Landmark className="h-5 w-5 text-amber-600 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-slate-900">RMD Age</div>
+                      <div className="font-medium text-white">RMD Age</div>
                       <div className="text-sm text-slate-500">73 (traditional Gold IRA)</div>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Scale className="h-5 w-5 text-amber-600 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-slate-900">Typical Allocation</div>
+                      <div className="font-medium text-white">Typical Allocation</div>
                       <div className="text-sm text-slate-500">5-15% of portfolio</div>
                     </div>
                   </li>
@@ -395,11 +395,11 @@ export default function WhatIsGoldIRAPage() {
               </div>
 
               {/* CTA */}
-              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 border border-amber-200">
-                <h3 className="font-bold text-slate-900 mb-2">
+              <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/20 rounded-xl p-6 border border-amber-500/20">
+                <h3 className="font-bold text-white mb-2">
                   Get Your Free Gold IRA Kit
                 </h3>
-                <p className="text-sm text-slate-600 mb-4">
+                <p className="text-sm text-slate-400 mb-4">
                   Learn more about Gold IRAs with a free information kit from Augusta Precious Metals.
                 </p>
                 <Link
@@ -411,8 +411,8 @@ export default function WhatIsGoldIRAPage() {
               </div>
 
               {/* Related Links */}
-              <div className="bg-white rounded-xl p-6 border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-4">Related Guides</h3>
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                <h3 className="font-bold text-white mb-4">Related Guides</h3>
                 <ul className="space-y-2">
                   {[
                     { href: "/learn/gold-ira-rules", label: "Gold IRA Rules & Regulations" },
@@ -423,7 +423,7 @@ export default function WhatIsGoldIRAPage() {
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className="flex items-center gap-2 text-sm text-slate-600 hover:text-amber-600 transition-colors"
+                        className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-400 transition-colors"
                       >
                         <ArrowRight className="h-4 w-4" />
                         {link.label}
@@ -438,37 +438,37 @@ export default function WhatIsGoldIRAPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-slate-800/50">
         <Container>
-          <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">
             Frequently Asked Questions
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
-            <div className="bg-white rounded-xl p-6 border border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-2">Is a Gold IRA a good investment?</h3>
-              <p className="text-slate-600">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <h3 className="font-bold text-white mb-2">Is a Gold IRA a good investment?</h3>
+              <p className="text-slate-400">
                 A Gold IRA can be a good investment for diversification and inflation protection.
                 Most financial advisors suggest allocating 5-15% of your portfolio to precious metals.
                 Whether it&apos;s right for you depends on your risk tolerance, time horizon, and retirement goals.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-2">Can I hold physical gold in my IRA?</h3>
-              <p className="text-slate-600">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <h3 className="font-bold text-white mb-2">Can I hold physical gold in my IRA?</h3>
+              <p className="text-slate-400">
                 Yes, but with restrictions. The gold must meet IRS purity requirements (99.5% for gold)
                 and must be stored at an IRS-approved depository. You cannot store IRA gold at home.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-2">What is the minimum investment for a Gold IRA?</h3>
-              <p className="text-slate-600">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <h3 className="font-bold text-white mb-2">What is the minimum investment for a Gold IRA?</h3>
+              <p className="text-slate-400">
                 Most Gold IRA companies have minimums ranging from $10,000 to $50,000. Augusta Precious Metals
                 requires $50,000 minimum, while some companies like Noble Gold start at $20,000.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-2">Are Gold IRA fees tax deductible?</h3>
-              <p className="text-slate-600">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <h3 className="font-bold text-white mb-2">Are Gold IRA fees tax deductible?</h3>
+              <p className="text-slate-400">
                 Generally, no. Gold IRA fees paid from your IRA account reduce your balance but aren&apos;t
                 separately deductible. However, fees paid from personal funds may be deductible as
                 investment expenses, depending on your tax situation.

@@ -19,7 +19,7 @@ export default function AugustaReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 <header className="bg-primary text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/20 via-primary to-primary opacity-50 z-0"></div>
                     <Container className="relative z-10">
@@ -55,7 +55,7 @@ export default function AugustaReviewPage() {
                                 ctaText="Get Free Gold IRA Guide"
                             />
 
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>The Bottom Line</h2>
                                 <p>
                                     <strong>Augusta Precious Metals</strong> isn't trying to be everything to everyone. They've carved out a specific niche: high-net-worth investors who want white-glove service and are willing to pay for it. If you have $50,000 or more to roll over, they're worth serious consideration.
@@ -95,11 +95,11 @@ export default function AugustaReviewPage() {
                                     The real value comes from their fee-waiver promotion. Depending on your account size, Augusta covers your custodian and storage fees for up to 10 years. On a $100,000+ account, that's potentially $2,000-$3,000 in savings that stays invested and compounding.
                                 </p>
 
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
-                                    <h4 className="font-bold text-blue-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> About Dealer Spreads
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> About Dealer Spreads
                                     </h4>
-                                    <p className="text-sm text-blue-800">
+                                    <p className="text-sm text-slate-400">
                                         Like all precious metals dealers, Augusta makes money on the spread between buy and sell prices. This is typically 5-8% and is standard across the industry. The difference with Augusta is they don't layer additional commissions on top.
                                     </p>
                                 </div>
@@ -142,7 +142,7 @@ export default function AugustaReviewPage() {
                                     If you have less than $50,000 to invest, check out <a href="/reviews/noble-gold">Noble Gold</a> or <a href="/reviews/orion-metal-exchange">Orion Metal Exchange</a> instead.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict</h2>
                                 <p>

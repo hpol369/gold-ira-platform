@@ -145,7 +145,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 1. Gold */}
                         <section id="gold" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">1. Gold & Precious Metals</h2>
@@ -178,7 +178,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 2. Real Estate */}
                         <section id="realestate" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Home className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">2. Real Estate</h2>
@@ -203,7 +203,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 3. Bonds */}
                         <section id="bonds" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Landmark className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">3. Bonds & Fixed Income</h2>
@@ -229,7 +229,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 4. Private Equity */}
                         <section id="privateequity" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4. Private Equity & Private Credit</h2>
@@ -250,7 +250,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 5. Commodities */}
                         <section id="commodities" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-50 rounded-lg text-orange-600">
+                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">5. Commodities</h2>
@@ -286,7 +286,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 6. Farmland */}
                         <section id="farmland" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-emerald-50 rounded-lg text-emerald-600">
+                                <div className="p-3 bg-emerald-500/20 rounded-lg text-emerald-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">6. Farmland</h2>
@@ -310,7 +310,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 7. Annuities */}
                         <section id="annuities" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-cyan-50 rounded-lg text-cyan-600">
+                                <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">7. Annuities</h2>
@@ -333,7 +333,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 8. Alternative Funds */}
                         <section id="alternatives" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-pink-50 rounded-lg text-pink-600">
+                                <div className="p-3 bg-pink-500/20 rounded-lg text-pink-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">8. Alternative Investment Funds</h2>
@@ -355,57 +355,57 @@ export default function StockMarketAlternativesPage() {
                             <h2>Stock Market Alternatives Comparison</h2>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Alternative</th>
-                                            <th className="p-4 border-b font-bold text-primary">Liquidity</th>
-                                            <th className="p-4 border-b font-bold text-primary">Minimum</th>
-                                            <th className="p-4 border-b font-bold text-primary">Best For</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Alternative</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Liquidity</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Minimum</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Best For</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 font-semibold">Gold IRA</td>
-                                            <td className="p-4">Medium</td>
-                                            <td className="p-4">$5,000-$25,000</td>
-                                            <td className="p-4">Retirement diversification</td>
+                                            <td className="p-4 font-semibold text-white">Gold IRA</td>
+                                            <td className="p-4 text-slate-400">Medium</td>
+                                            <td className="p-4 text-slate-400">$5,000-$25,000</td>
+                                            <td className="p-4 text-slate-400">Retirement diversification</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Real Estate</td>
-                                            <td className="p-4">Low</td>
-                                            <td className="p-4">$25,000+</td>
-                                            <td className="p-4">Income + appreciation</td>
+                                            <td className="p-4 font-semibold text-white">Real Estate</td>
+                                            <td className="p-4 text-slate-400">Low</td>
+                                            <td className="p-4 text-slate-400">$25,000+</td>
+                                            <td className="p-4 text-slate-400">Income + appreciation</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">REITs</td>
-                                            <td className="p-4">High</td>
-                                            <td className="p-4">$100+</td>
-                                            <td className="p-4">Liquid real estate exposure</td>
+                                            <td className="p-4 font-semibold text-white">REITs</td>
+                                            <td className="p-4 text-slate-400">High</td>
+                                            <td className="p-4 text-slate-400">$100+</td>
+                                            <td className="p-4 text-slate-400">Liquid real estate exposure</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Treasury Bonds</td>
-                                            <td className="p-4">High</td>
-                                            <td className="p-4">$100</td>
-                                            <td className="p-4">Safety + stability</td>
+                                            <td className="p-4 font-semibold text-white">Treasury Bonds</td>
+                                            <td className="p-4 text-slate-400">High</td>
+                                            <td className="p-4 text-slate-400">$100</td>
+                                            <td className="p-4 text-slate-400">Safety + stability</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">I Bonds</td>
-                                            <td className="p-4">Medium</td>
-                                            <td className="p-4">$25</td>
-                                            <td className="p-4">Inflation protection</td>
+                                            <td className="p-4 font-semibold text-white">I Bonds</td>
+                                            <td className="p-4 text-slate-400">Medium</td>
+                                            <td className="p-4 text-slate-400">$25</td>
+                                            <td className="p-4 text-slate-400">Inflation protection</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Farmland</td>
-                                            <td className="p-4">Low</td>
-                                            <td className="p-4">$10,000+</td>
-                                            <td className="p-4">Real asset diversification</td>
+                                            <td className="p-4 font-semibold text-white">Farmland</td>
+                                            <td className="p-4 text-slate-400">Low</td>
+                                            <td className="p-4 text-slate-400">$10,000+</td>
+                                            <td className="p-4 text-slate-400">Real asset diversification</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Fixed Annuity</td>
-                                            <td className="p-4">Low</td>
-                                            <td className="p-4">$10,000+</td>
-                                            <td className="p-4">Guaranteed income</td>
+                                            <td className="p-4 font-semibold text-white">Fixed Annuity</td>
+                                            <td className="p-4 text-slate-400">Low</td>
+                                            <td className="p-4 text-slate-400">$10,000+</td>
+                                            <td className="p-4 text-slate-400">Guaranteed income</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -417,44 +417,44 @@ export default function StockMarketAlternativesPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What are the best alternatives to the stock market?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Top alternatives include: gold and precious metals, real estate (direct or REITs), bonds and fixed income, private equity, commodities, farmland, annuities, and alternative funds. The best choice depends on your goals, risk tolerance, and timeline.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Is gold a good alternative to stocks?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Yes, gold is an excellent alternative because it has low to negative correlation with stocks. During the 2008 crash, gold gained 25% while stocks lost 37%. A <Link href="/what-is-a-gold-ira" className="text-secondary hover:underline">Gold IRA</Link> allows you to hold physical gold in a tax-advantaged retirement account.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">How much should I allocate to alternatives?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Most financial advisors recommend allocating 10-30% of your portfolio to non-stock assets for diversification. The specific allocation depends on your age, risk tolerance, and retirement timeline. Those closer to retirement typically allocate more to stable alternatives.
                                     </p>
                                 </details>

@@ -96,7 +96,7 @@ const schema = {
 
 export default function GoldIraFeesGuidePage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -107,7 +107,7 @@ export default function GoldIraFeesGuidePage() {
                             <span className="w-2 h-2 rounded-full bg-secondary"></span>
                             Updated for 2026
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-white">
                             Gold IRA Fees: Complete 2026 Guide
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
@@ -125,15 +125,15 @@ export default function GoldIraFeesGuidePage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary prose-p:text-text prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
 
                         {/* Intro Content */}
-                        <p className="lead text-xl text-text-muted">
-                            <strong>Gold IRA fees</strong> are typically higher than standard IRA fees—but the difference might be smaller than you think. Understanding the fee structure helps you choose the right company and avoid overpaying. This guide breaks down every fee you&apos;ll encounter.
+                        <p className="lead text-xl text-slate-400">
+                            <strong className="text-white">Gold IRA fees</strong> are typically higher than standard IRA fees—but the difference might be smaller than you think. Understanding the fee structure helps you choose the right company and avoid overpaying. This guide breaks down every fee you&apos;ll encounter.
                         </p>
 
-                        <p>
-                            The typical gold IRA costs <strong>$225-$350 per year</strong> in ongoing fees (custodian + storage), plus a one-time setup fee and the dealer&apos;s markup on metals. Some companies waive fees for larger accounts, potentially saving you thousands over time.
+                        <p className="text-slate-400">
+                            The typical gold IRA costs <strong className="text-white">$225-$350 per year</strong> in ongoing fees (custodian + storage), plus a one-time setup fee and the dealer&apos;s markup on metals. Some companies waive fees for larger accounts, potentially saving you thousands over time.
                         </p>
 
                         <Callout type="tip" title="Key Insight">
@@ -142,169 +142,169 @@ export default function GoldIraFeesGuidePage() {
 
                         {/* Section 1: Overview */}
                         <section id="overview" className="scroll-mt-32">
-                            <h2>Gold IRA Fee Overview</h2>
-                            <p>
-                                Gold IRAs involve <strong>four main categories of fees</strong>. Here&apos;s a quick overview before we dive into the details:
+                            <h2 className="text-white">Gold IRA Fee Overview</h2>
+                            <p className="text-slate-400">
+                                Gold IRAs involve <strong className="text-white">four main categories of fees</strong>. Here&apos;s a quick overview before we dive into the details:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Fee Category</th>
-                                            <th className="p-4 border-b font-bold text-primary">Typical Range</th>
-                                            <th className="p-4 border-b font-bold text-primary">When Paid</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Fee Category</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Typical Range</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">When Paid</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 font-semibold">Setup/Account Fee</td>
-                                            <td className="p-4">$0 - $150</td>
-                                            <td className="p-4">One-time (account opening)</td>
+                                            <td className="p-4 font-semibold text-white">Setup/Account Fee</td>
+                                            <td className="p-4 text-slate-400">$0 - $150</td>
+                                            <td className="p-4 text-slate-400">One-time (account opening)</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
-                                            <td className="p-4 font-semibold">Annual Custodian Fee</td>
-                                            <td className="p-4">$75 - $300</td>
-                                            <td className="p-4">Yearly</td>
+                                        <tr className="bg-slate-800/50">
+                                            <td className="p-4 font-semibold text-white">Annual Custodian Fee</td>
+                                            <td className="p-4 text-slate-400">$75 - $300</td>
+                                            <td className="p-4 text-slate-400">Yearly</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Storage Fee</td>
-                                            <td className="p-4">$100 - $300/year</td>
-                                            <td className="p-4">Yearly</td>
+                                            <td className="p-4 font-semibold text-white">Storage Fee</td>
+                                            <td className="p-4 text-slate-400">$100 - $300/year</td>
+                                            <td className="p-4 text-slate-400">Yearly</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
-                                            <td className="p-4 font-semibold">Dealer Markup</td>
-                                            <td className="p-4">2% - 10%+</td>
-                                            <td className="p-4">Per purchase (over spot)</td>
+                                        <tr className="bg-slate-800/50">
+                                            <td className="p-4 font-semibold text-white">Dealer Markup</td>
+                                            <td className="p-4 text-slate-400">2% - 10%+</td>
+                                            <td className="p-4 text-slate-400">Per purchase (over spot)</td>
                                         </tr>
                                         <tr className="bg-secondary/5">
-                                            <td className="p-4 font-bold text-primary">Total First Year</td>
-                                            <td className="p-4 font-bold text-primary">$225 - $750+</td>
+                                            <td className="p-4 font-bold text-white">Total First Year</td>
+                                            <td className="p-4 font-bold text-white">$225 - $750+</td>
                                             <td className="p-4 font-medium text-secondary">Plus metal markup</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <p>
-                                Why are gold IRA fees higher than regular IRAs? <strong>Physical storage and insurance.</strong> Traditional IRAs hold electronic securities that cost nothing to store. Gold IRAs hold physical metals in secure, insured vaults—that costs money. Think of it as the price of owning real assets instead of paper promises.
+                            <p className="text-slate-400">
+                                Why are gold IRA fees higher than regular IRAs? <strong className="text-white">Physical storage and insurance.</strong> Traditional IRAs hold electronic securities that cost nothing to store. Gold IRAs hold physical metals in secure, insured vaults—that costs money. Think of it as the price of owning real assets instead of paper promises.
                             </p>
                         </section>
 
                         {/* Section 2: Fee Types */}
                         <section id="fee-types" className="scroll-mt-32">
-                            <h2>Types of Gold IRA Fees Explained</h2>
-                            <p>
+                            <h2 className="text-white">Types of Gold IRA Fees Explained</h2>
+                            <p className="text-slate-400">
                                 Let&apos;s examine each fee type in detail so you know exactly what you&apos;re paying for:
                             </p>
 
                             <div className="not-prose my-8">
                                 <div className="space-y-6">
-                                    <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                    <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                         <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold shrink-0">
                                             <DollarSign className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Setup/Account Opening Fee</h4>
-                                            <p className="text-text-muted mt-2"><strong>Range: $0 - $150</strong></p>
-                                            <p className="text-text-muted mt-1">A one-time fee to establish your self-directed IRA. Covers paperwork, account creation, and initial administration. Many companies waive this for larger accounts or as a promotional offer.</p>
+                                            <h4 className="font-bold text-white text-lg">Setup/Account Opening Fee</h4>
+                                            <p className="text-slate-400 mt-2"><strong className="text-white">Range: $0 - $150</strong></p>
+                                            <p className="text-slate-400 mt-1">A one-time fee to establish your self-directed IRA. Covers paperwork, account creation, and initial administration. Many companies waive this for larger accounts or as a promotional offer.</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                    <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                         <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold shrink-0">
                                             <Building2 className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Annual Custodian/Administration Fee</h4>
-                                            <p className="text-text-muted mt-2"><strong>Range: $75 - $300/year</strong></p>
-                                            <p className="text-text-muted mt-1">Paid to the IRA custodian for maintaining your account, handling IRS reporting, processing transactions, and providing statements. Some custodians charge flat fees; others charge based on account value.</p>
+                                            <h4 className="font-bold text-white text-lg">Annual Custodian/Administration Fee</h4>
+                                            <p className="text-slate-400 mt-2"><strong className="text-white">Range: $75 - $300/year</strong></p>
+                                            <p className="text-slate-400 mt-1">Paid to the IRA custodian for maintaining your account, handling IRS reporting, processing transactions, and providing statements. Some custodians charge flat fees; others charge based on account value.</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                        <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold shrink-0">
+                                    <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                        <div className="w-12 h-12 rounded-full bg-green-900/50 text-green-400 flex items-center justify-center font-bold shrink-0">
                                             <Building2 className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Annual Storage Fee</h4>
-                                            <p className="text-text-muted mt-2"><strong>Range: $100 - $300/year</strong></p>
-                                            <p className="text-text-muted mt-1">Paid to the depository that houses your metals. Covers vault space, security, insurance, and auditing. Can be flat-rate or percentage-based. Segregated storage (your metals stored separately) costs more than commingled storage.</p>
+                                            <h4 className="font-bold text-white text-lg">Annual Storage Fee</h4>
+                                            <p className="text-slate-400 mt-2"><strong className="text-white">Range: $100 - $300/year</strong></p>
+                                            <p className="text-slate-400 mt-1">Paid to the depository that houses your metals. Covers vault space, security, insurance, and auditing. Can be flat-rate or percentage-based. Segregated storage (your metals stored separately) costs more than commingled storage.</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                        <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center font-bold shrink-0">
+                                    <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                        <div className="w-12 h-12 rounded-full bg-amber-900/50 text-amber-400 flex items-center justify-center font-bold shrink-0">
                                             <Percent className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Dealer Markup (Premium Over Spot)</h4>
-                                            <p className="text-text-muted mt-2"><strong>Range: 2% - 10%+ over spot price</strong></p>
-                                            <p className="text-text-muted mt-1">This is where companies make most of their money. The &quot;spot price&quot; is the raw metal value; the &quot;premium&quot; covers minting, distribution, and dealer profit. Premiums vary by product—bars are lowest, rare coins are highest.</p>
+                                            <h4 className="font-bold text-white text-lg">Dealer Markup (Premium Over Spot)</h4>
+                                            <p className="text-slate-400 mt-2"><strong className="text-white">Range: 2% - 10%+ over spot price</strong></p>
+                                            <p className="text-slate-400 mt-1">This is where companies make most of their money. The &quot;spot price&quot; is the raw metal value; the &quot;premium&quot; covers minting, distribution, and dealer profit. Premiums vary by product—bars are lowest, rare coins are highest.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <h3>Additional Fees to Know About</h3>
-                            <ul>
-                                <li><strong>Wire transfer fee:</strong> $25-50 per transfer (some companies cover this)</li>
-                                <li><strong>Termination fee:</strong> $0-250 to close your account</li>
-                                <li><strong>Selling/liquidation fee:</strong> Some companies charge to sell your metals back</li>
-                                <li><strong>Shipping fee:</strong> Usually included, but verify for distributions</li>
+                            <h3 className="text-white">Additional Fees to Know About</h3>
+                            <ul className="text-slate-400">
+                                <li><strong className="text-white">Wire transfer fee:</strong> $25-50 per transfer (some companies cover this)</li>
+                                <li><strong className="text-white">Termination fee:</strong> $0-250 to close your account</li>
+                                <li><strong className="text-white">Selling/liquidation fee:</strong> Some companies charge to sell your metals back</li>
+                                <li><strong className="text-white">Shipping fee:</strong> Usually included, but verify for distributions</li>
                             </ul>
                         </section>
 
                         {/* Section 3: Company Comparison */}
                         <section id="company-comparison" className="scroll-mt-32">
-                            <h2>Gold IRA Fee Comparison by Company</h2>
-                            <p>
-                                Here&apos;s how the <strong>top gold IRA companies</strong> compare on fees:
+                            <h2 className="text-white">Gold IRA Fee Comparison by Company</h2>
+                            <p className="text-slate-400">
+                                Here&apos;s how the <strong className="text-white">top gold IRA companies</strong> compare on fees:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Company</th>
-                                            <th className="p-4 border-b font-bold text-primary">Setup Fee</th>
-                                            <th className="p-4 border-b font-bold text-primary">Annual Fees</th>
-                                            <th className="p-4 border-b font-bold text-primary">Fee Waivers</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Company</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Setup Fee</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Annual Fees</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Fee Waivers</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 font-semibold"><Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link></td>
-                                            <td className="p-4">$50</td>
-                                            <td className="p-4">$225 (custodian + storage)</td>
-                                            <td className="p-4 text-green-600 font-medium">Up to 10 years waived ($50k+)</td>
+                                            <td className="p-4 text-slate-400">$50</td>
+                                            <td className="p-4 text-slate-400">$225 (custodian + storage)</td>
+                                            <td className="p-4 text-green-400 font-medium">Up to 10 years waived ($50k+)</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
+                                        <tr className="bg-slate-800/50">
                                             <td className="p-4 font-semibold"><Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link></td>
-                                            <td className="p-4">$80</td>
-                                            <td className="p-4">$225-$250</td>
-                                            <td className="p-4">First year waived (promotions)</td>
+                                            <td className="p-4 text-slate-400">$80</td>
+                                            <td className="p-4 text-slate-400">$225-$250</td>
+                                            <td className="p-4 text-slate-400">First year waived (promotions)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold"><Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link></td>
-                                            <td className="p-4">$50</td>
-                                            <td className="p-4">$225-$275</td>
-                                            <td className="p-4">First year waived</td>
+                                            <td className="p-4 text-slate-400">$50</td>
+                                            <td className="p-4 text-slate-400">$225-$275</td>
+                                            <td className="p-4 text-slate-400">First year waived</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
+                                        <tr className="bg-slate-800/50">
                                             <td className="p-4 font-semibold"><Link href="/reviews/birch-gold" className="text-secondary hover:underline">Birch Gold Group</Link></td>
-                                            <td className="p-4">$50</td>
-                                            <td className="p-4">$200-$250</td>
-                                            <td className="p-4">Case-by-case</td>
+                                            <td className="p-4 text-slate-400">$50</td>
+                                            <td className="p-4 text-slate-400">$200-$250</td>
+                                            <td className="p-4 text-slate-400">Case-by-case</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold"><Link href="/reviews/american-hartford-gold" className="text-secondary hover:underline">American Hartford Gold</Link></td>
-                                            <td className="p-4">$0</td>
-                                            <td className="p-4">$180-$230</td>
-                                            <td className="p-4">No setup fee; promotions available</td>
+                                            <td className="p-4 text-slate-400">$0</td>
+                                            <td className="p-4 text-slate-400">$180-$230</td>
+                                            <td className="p-4 text-slate-400">No setup fee; promotions available</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
+                                        <tr className="bg-slate-800/50">
                                             <td className="p-4 font-semibold"><Link href="/reviews/advantage-gold" className="text-secondary hover:underline">Advantage Gold</Link></td>
-                                            <td className="p-4">$50</td>
-                                            <td className="p-4">$150-$200</td>
-                                            <td className="p-4">Low minimums, competitive fees</td>
+                                            <td className="p-4 text-slate-400">$50</td>
+                                            <td className="p-4 text-slate-400">$150-$200</td>
+                                            <td className="p-4 text-slate-400">Low minimums, competitive fees</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -329,103 +329,103 @@ export default function GoldIraFeesGuidePage() {
 
                         {/* Section 4: Hidden Fees */}
                         <section id="hidden-fees" className="scroll-mt-32">
-                            <h2>Hidden Fees to Watch Out For</h2>
-                            <p>
-                                Some gold IRA companies bury fees in the fine print or make money in less obvious ways. Here are the <strong>hidden fees</strong> to ask about:
+                            <h2 className="text-white">Hidden Fees to Watch Out For</h2>
+                            <p className="text-slate-400">
+                                Some gold IRA companies bury fees in the fine print or make money in less obvious ways. Here are the <strong className="text-white">hidden fees</strong> to ask about:
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-700">Excessive Premiums</h4>
-                                        <p className="text-sm text-amber-600 mt-1">The biggest &quot;hidden&quot; cost is often inflated premiums over spot price. A company might have low fees but charge 15% over spot when competitors charge 5%. Always ask for total purchase price, not just fees.</p>
+                                        <h4 className="font-bold text-amber-400">Excessive Premiums</h4>
+                                        <p className="text-sm text-amber-300/80 mt-1">The biggest &quot;hidden&quot; cost is often inflated premiums over spot price. A company might have low fees but charge 15% over spot when competitors charge 5%. Always ask for total purchase price, not just fees.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-700">Percentage-Based Storage</h4>
-                                        <p className="text-sm text-amber-600 mt-1">Some depositories charge a percentage of your holdings (e.g., 0.5%/year) instead of a flat fee. For large accounts, this can mean hundreds or thousands more per year than flat-rate storage.</p>
+                                        <h4 className="font-bold text-amber-400">Percentage-Based Storage</h4>
+                                        <p className="text-sm text-amber-300/80 mt-1">Some depositories charge a percentage of your holdings (e.g., 0.5%/year) instead of a flat fee. For large accounts, this can mean hundreds or thousands more per year than flat-rate storage.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-700">Poor Buyback Pricing</h4>
-                                        <p className="text-sm text-amber-600 mt-1">Some companies offer low purchase premiums but buy back at deep discounts. Ask about the &quot;spread&quot; between buy and sell prices. Reputable companies buy back at competitive rates.</p>
+                                        <h4 className="font-bold text-amber-400">Poor Buyback Pricing</h4>
+                                        <p className="text-sm text-amber-300/80 mt-1">Some companies offer low purchase premiums but buy back at deep discounts. Ask about the &quot;spread&quot; between buy and sell prices. Reputable companies buy back at competitive rates.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-700">Liquidation Fees</h4>
-                                        <p className="text-sm text-amber-600 mt-1">Some companies charge fees when you sell your metals or take a distribution. These can range from $50 to several hundred dollars. Ask about all exit costs upfront.</p>
+                                        <h4 className="font-bold text-amber-400">Liquidation Fees</h4>
+                                        <p className="text-sm text-amber-300/80 mt-1">Some companies charge fees when you sell your metals or take a distribution. These can range from $50 to several hundred dollars. Ask about all exit costs upfront.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
+                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-700">Minimum Balance Fees</h4>
-                                        <p className="text-sm text-amber-600 mt-1">Some custodians charge extra if your account falls below a certain value. Make sure you understand any minimum balance requirements.</p>
+                                        <h4 className="font-bold text-amber-400">Minimum Balance Fees</h4>
+                                        <p className="text-sm text-amber-300/80 mt-1">Some custodians charge extra if your account falls below a certain value. Make sure you understand any minimum balance requirements.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <h3>Questions to Ask Before Opening an Account</h3>
-                            <ol>
-                                <li>What is the <strong>total premium</strong> over spot price for the products I want?</li>
-                                <li>Is storage <strong>flat-rate or percentage-based</strong>?</li>
-                                <li>What is your <strong>buyback policy</strong> and pricing?</li>
-                                <li>Are there any <strong>fees to close</strong> my account?</li>
-                                <li>What <strong>fee waivers or promotions</strong> are currently available?</li>
+                            <h3 className="text-white">Questions to Ask Before Opening an Account</h3>
+                            <ol className="text-slate-400">
+                                <li>What is the <strong className="text-white">total premium</strong> over spot price for the products I want?</li>
+                                <li>Is storage <strong className="text-white">flat-rate or percentage-based</strong>?</li>
+                                <li>What is your <strong className="text-white">buyback policy</strong> and pricing?</li>
+                                <li>Are there any <strong className="text-white">fees to close</strong> my account?</li>
+                                <li>What <strong className="text-white">fee waivers or promotions</strong> are currently available?</li>
                             </ol>
                         </section>
 
                         {/* Section 5: Minimize Fees */}
                         <section id="minimize-fees" className="scroll-mt-32">
-                            <h2>How to Minimize Gold IRA Fees</h2>
-                            <p>
+                            <h2 className="text-white">How to Minimize Gold IRA Fees</h2>
+                            <p className="text-slate-400">
                                 While you can&apos;t avoid all fees, these strategies can significantly reduce your costs:
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                <h4 className="font-bold text-primary text-lg mb-4">Fee-Saving Strategies:</h4>
+                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
+                                <h4 className="font-bold text-white text-lg mb-4">Fee-Saving Strategies:</h4>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <div>
-                                            <strong>Invest more upfront:</strong> Many companies waive fees for accounts over $50,000. Even if you don&apos;t have that much, consolidating multiple retirement accounts can help you hit fee-waiver thresholds.
+                                        <div className="text-slate-400">
+                                            <strong className="text-white">Invest more upfront:</strong> Many companies waive fees for accounts over $50,000. Even if you don&apos;t have that much, consolidating multiple retirement accounts can help you hit fee-waiver thresholds.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <div>
-                                            <strong>Choose bars over coins:</strong> Silver and gold bars typically carry lower premiums than coins (2-5% vs. 5-15%). You get more metal for your money.
+                                        <div className="text-slate-400">
+                                            <strong className="text-white">Choose bars over coins:</strong> Silver and gold bars typically carry lower premiums than coins (2-5% vs. 5-15%). You get more metal for your money.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <div>
-                                            <strong>Ask about promotions:</strong> Companies frequently run promotions—free storage for a year, waived setup fees, or bonus silver. Always ask what&apos;s currently available.
+                                        <div className="text-slate-400">
+                                            <strong className="text-white">Ask about promotions:</strong> Companies frequently run promotions—free storage for a year, waived setup fees, or bonus silver. Always ask what&apos;s currently available.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <div>
-                                            <strong>Choose commingled storage:</strong> If having your exact coins stored separately isn&apos;t important to you, commingled (pooled) storage is typically cheaper than segregated storage.
+                                        <div className="text-slate-400">
+                                            <strong className="text-white">Choose commingled storage:</strong> If having your exact coins stored separately isn&apos;t important to you, commingled (pooled) storage is typically cheaper than segregated storage.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <div>
-                                            <strong>Consider gold-heavy portfolios:</strong> Gold has a higher value-to-weight ratio than silver. A gold-heavy portfolio costs less to store than the same dollar amount in silver.
+                                        <div className="text-slate-400">
+                                            <strong className="text-white">Consider gold-heavy portfolios:</strong> Gold has a higher value-to-weight ratio than silver. A gold-heavy portfolio costs less to store than the same dollar amount in silver.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <div>
-                                            <strong>Make fewer, larger purchases:</strong> Some companies charge transaction fees. Fewer, larger purchases minimize transaction costs and potentially give you leverage for better premiums.
+                                        <div className="text-slate-400">
+                                            <strong className="text-white">Make fewer, larger purchases:</strong> Some companies charge transaction fees. Fewer, larger purchases minimize transaction costs and potentially give you leverage for better premiums.
                                         </div>
                                     </li>
                                 </ul>
@@ -434,30 +434,30 @@ export default function GoldIraFeesGuidePage() {
 
                         {/* Section 6: Fees vs Value */}
                         <section id="fee-vs-value" className="scroll-mt-32">
-                            <h2>Fees vs. Value: The Bigger Picture</h2>
-                            <p>
-                                <strong>The cheapest gold IRA isn&apos;t always the best value.</strong> Here&apos;s why:
+                            <h2 className="text-white">Fees vs. Value: The Bigger Picture</h2>
+                            <p className="text-slate-400">
+                                <strong className="text-white">The cheapest gold IRA isn&apos;t always the best value.</strong> Here&apos;s why:
                             </p>
 
-                            <h3>What &quot;Value&quot; Looks Like Beyond Fees</h3>
-                            <ul>
-                                <li><strong>Competitive metal pricing:</strong> A company charging $50 less in annual fees but 3% higher premiums costs you more on a $50,000 investment</li>
-                                <li><strong>Quality customer service:</strong> Knowledgeable, responsive support saves you time and helps you make better decisions</li>
-                                <li><strong>Strong buyback program:</strong> Companies that buy back at fair prices protect your investment when it&apos;s time to sell</li>
-                                <li><strong>Education and guidance:</strong> Learning what to buy (and what to avoid) can be worth far more than fee savings</li>
-                                <li><strong>Reputation and longevity:</strong> Established companies are more likely to be around when you need them in retirement</li>
+                            <h3 className="text-white">What &quot;Value&quot; Looks Like Beyond Fees</h3>
+                            <ul className="text-slate-400">
+                                <li><strong className="text-white">Competitive metal pricing:</strong> A company charging $50 less in annual fees but 3% higher premiums costs you more on a $50,000 investment</li>
+                                <li><strong className="text-white">Quality customer service:</strong> Knowledgeable, responsive support saves you time and helps you make better decisions</li>
+                                <li><strong className="text-white">Strong buyback program:</strong> Companies that buy back at fair prices protect your investment when it&apos;s time to sell</li>
+                                <li><strong className="text-white">Education and guidance:</strong> Learning what to buy (and what to avoid) can be worth far more than fee savings</li>
+                                <li><strong className="text-white">Reputation and longevity:</strong> Established companies are more likely to be around when you need them in retirement</li>
                             </ul>
 
-                            <h3>A Real Example</h3>
-                            <p>
+                            <h3 className="text-white">A Real Example</h3>
+                            <p className="text-slate-400">
                                 Consider two companies for a $50,000 gold IRA:
                             </p>
-                            <ul>
-                                <li><strong>Company A:</strong> $300/year fees, 8% premium over spot = $4,000 in premiums + $300 fees = $4,300 first year cost</li>
-                                <li><strong>Company B:</strong> $225/year fees (waived first year), 4% premium = $2,000 in premiums + $0 fees = $2,000 first year cost</li>
+                            <ul className="text-slate-400">
+                                <li><strong className="text-white">Company A:</strong> $300/year fees, 8% premium over spot = $4,000 in premiums + $300 fees = $4,300 first year cost</li>
+                                <li><strong className="text-white">Company B:</strong> $225/year fees (waived first year), 4% premium = $2,000 in premiums + $0 fees = $2,000 first year cost</li>
                             </ul>
-                            <p>
-                                Company B—despite potentially being more &quot;expensive&quot; on paper—saves you $2,300 in the first year alone. Always calculate <strong>total cost</strong>, not just fees.
+                            <p className="text-slate-400">
+                                Company B—despite potentially being more &quot;expensive&quot; on paper—saves you $2,300 in the first year alone. Always calculate <strong className="text-white">total cost</strong>, not just fees.
                             </p>
 
                             <Callout type="tip" title="Bottom Line">
@@ -467,75 +467,75 @@ export default function GoldIraFeesGuidePage() {
 
                         {/* FAQ Section */}
                         <section id="faq" className="scroll-mt-32">
-                            <h2>Gold IRA Fees FAQs</h2>
+                            <h2 className="text-white">Gold IRA Fees FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Are gold IRA fees tax-deductible?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/5 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Not directly. IRA fees paid from within the account reduce your balance but aren&apos;t separately deductible. However, if you pay fees from outside funds, they may be deductible as investment expenses (consult a tax professional, as tax laws change).
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Why are gold IRA fees higher than regular IRAs?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/5 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Physical storage. Regular IRAs hold electronic securities that cost nothing to store. Gold IRAs hold physical metals in secure, insured vaults with armed guards, surveillance, and insurance. These costs are passed on to account holders, typically adding $100-300 per year.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I avoid gold IRA fees entirely?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/5 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Not entirely—storage and custodian fees are unavoidable for IRA-held metals. However, companies like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link> waive up to 10 years of fees for larger accounts, effectively eliminating ongoing costs for a decade. You&apos;ll still pay premiums on metal purchases.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What&apos;s the difference between segregated and commingled storage?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/5 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
-                                        <strong>Segregated storage</strong> means your specific bars and coins are stored separately, in your own allocated space. <strong>Commingled storage</strong> means your metals are pooled with others&apos; identical products—you own a specific quantity, but not specific bars. Segregated costs more but ensures you get the exact items you purchased when you take distribution.
+                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                        <strong className="text-white">Segregated storage</strong> means your specific bars and coins are stored separately, in your own allocated space. <strong className="text-white">Commingled storage</strong> means your metals are pooled with others&apos; identical products—you own a specific quantity, but not specific bars. Segregated costs more but ensures you get the exact items you purchased when you take distribution.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Do gold IRA fees eat into my returns?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/5 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Yes, but typically modestly. On a $50,000 account paying $225/year in fees, that&apos;s 0.45% annually—comparable to many low-cost ETFs. The key is whether gold&apos;s portfolio protection and potential appreciation outweigh these costs for your situation. Many investors find the inflation protection alone justifies the fees.
                                     </p>
                                 </details>

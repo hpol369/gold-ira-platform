@@ -51,7 +51,7 @@ const schema = {
 
 export default function AmericanHartfordComplaintsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -77,7 +77,7 @@ export default function AmericanHartfordComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
 
                         <p className="lead">
                             American Hartford Gold is a family-owned company that&apos;s become a major player in the Gold IRA space. With endorsements from Bill O&apos;Reilly and a 4.9/5 rating on Trustpilot, they look great on paper. But no company is perfect—so I dug into the complaints to see if there are hidden problems.

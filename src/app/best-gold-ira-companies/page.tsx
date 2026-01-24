@@ -15,22 +15,25 @@ export const metadata = {
 
 export default function BestGoldIraCompaniesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <main className="min-h-screen flex flex-col bg-slate-900">
             <Navbar />
 
             <div className="flex-grow">
-                <header className="bg-primary text-white py-20 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/20 via-primary to-primary opacity-50 z-0"></div>
+                <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 relative overflow-hidden">
+                    <div className="absolute inset-0 pointer-events-none">
+                        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[150px]" />
+                        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-700/20 rounded-full blur-[100px]" />
+                    </div>
                     <Container className="relative z-10 text-center">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-semibold mb-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-semibold mb-6">
                             <Sparkles className="w-4 h-4" />
                             Updated January 2026
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-white">
                             Best Gold IRA Companies
                         </h1>
-                        <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                            Choosing the right Gold IRA company matters. Here's our analysis of the top providers based on fees, service quality, and track record.
+                        <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                            Choosing the right Gold IRA company matters. Here&apos;s our analysis of the top providers based on fees, service quality, and track record.
                         </p>
                     </Container>
                 </header>
@@ -43,55 +46,55 @@ export default function BestGoldIraCompaniesPage() {
                     <div className="grid lg:grid-cols-3 gap-12">
                         <div className="lg:col-span-2 space-y-16">
 
-                            <div className="prose prose-lg max-w-none text-text-muted">
-                                <h2 className="text-3xl font-serif font-bold text-primary">How We Evaluate Companies</h2>
+                            <div className="prose prose-lg max-w-none text-slate-300">
+                                <h2 className="text-3xl font-serif font-bold text-white">How We Evaluate Companies</h2>
                                 <p>
                                     The Gold IRA industry has its share of questionable operators. We focus on companies that demonstrate transparency in their pricing, maintain strong regulatory standing, and have verifiable customer satisfaction records.
                                 </p>
                                 <p>
-                                    Our evaluation criteria includes: fee transparency (can you understand what you'll pay before signing up?), BBB ratings and complaint history, time in business, customer review patterns across multiple platforms, and the overall sales approach (education-focused vs. pressure tactics).
+                                    Our evaluation criteria includes: fee transparency (can you understand what you&apos;ll pay before signing up?), BBB ratings and complaint history, time in business, customer review patterns across multiple platforms, and the overall sales approach (education-focused vs. pressure tactics).
                                 </p>
                                 <p>
-                                    The right company for you depends on your situation - primarily how much you're looking to invest. Companies have different minimum thresholds, and their service levels and fee structures vary accordingly.
+                                    The right company for you depends on your situation - primarily how much you&apos;re looking to invest. Companies have different minimum thresholds, and their service levels and fee structures vary accordingly.
                                 </p>
                             </div>
 
                             {/* Augusta - Best for $50k+ */}
-                            <div id="augusta-review" className="scroll-mt-24 border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
-                                <div className="bg-primary text-white p-4 flex justify-between items-center">
+                            <div id="augusta-review" className="scroll-mt-24 border border-white/10 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm shadow-xl">
+                                <div className="bg-slate-800 text-white p-4 flex justify-between items-center">
                                     <div className="flex items-center gap-3">
-                                        <div className="bg-secondary text-primary font-bold w-8 h-8 rounded-full flex items-center justify-center">#1</div>
+                                        <div className="bg-amber-500 text-slate-900 font-bold w-8 h-8 rounded-full flex items-center justify-center">#1</div>
                                         <h3 className="font-bold text-xl whitespace-nowrap">Augusta Precious Metals</h3>
                                     </div>
                                     <div className="text-sm font-medium bg-white/10 px-3 py-1 rounded whitespace-nowrap">Best for $50,000+</div>
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">
-                                        <div className="w-full md:w-1/3 bg-gray-100 rounded-xl h-40 flex items-center justify-center text-gray-400">
+                                        <div className="w-full md:w-1/3 bg-white/5 rounded-xl h-40 flex items-center justify-center text-slate-500 border border-white/10">
                                             [Logo/Image]
                                         </div>
                                         <div className="w-full md:w-2/3">
-                                            <p className="text-text-muted mb-4">
+                                            <p className="text-slate-400 mb-4">
                                                 Augusta has built their reputation on education rather than sales pressure. Their process includes a one-on-one web conference covering how precious metals fit into retirement planning - no obligation, no hard sell. For investors with $50,000 or more, their fee waiver programs can provide genuine value over time.
                                             </p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-xs font-bold">Fee Waiver Programs Available</span>
-                                                <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-bold">Zero BBB Complaints</span>
+                                                <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-bold border border-green-500/30">Fee Waiver Programs Available</span>
+                                                <span className="bg-blue-500/20 text-blue-400 px-2 py-1 rounded text-xs font-bold border border-blue-500/30">Zero BBB Complaints</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="grid md:grid-cols-2 gap-4 mb-8">
-                                        <div className="bg-gray-50 p-4 rounded-xl">
-                                            <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Strengths</h4>
-                                            <ul className="text-sm space-y-1 text-gray-600">
+                                        <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
+                                            <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Strengths</h4>
+                                            <ul className="text-sm space-y-1 text-slate-400">
                                                 <li>• Education-first approach</li>
                                                 <li>• Transparent fee structure</li>
                                                 <li>• Exceptional complaint record</li>
                                             </ul>
                                         </div>
-                                        <div className="bg-gray-50 p-4 rounded-xl">
-                                            <h4 className="font-bold text-amber-700 mb-2 flex items-center gap-2">Considerations</h4>
-                                            <ul className="text-sm space-y-1 text-gray-600">
+                                        <div className="bg-amber-500/10 p-4 rounded-xl border border-amber-500/20">
+                                            <h4 className="font-bold text-amber-400 mb-2 flex items-center gap-2">Considerations</h4>
+                                            <ul className="text-sm space-y-1 text-slate-400">
                                                 <li>• <span className="whitespace-nowrap">$50,000</span> minimum investment</li>
                                                 <li>• Requires phone consultation</li>
                                             </ul>
@@ -103,7 +106,7 @@ export default function BestGoldIraCompaniesPage() {
                                                 Request Information
                                             </a>
                                         </Button>
-                                        <Button variant="outline" size="lg" className="w-full" asChild>
+                                        <Button variant="outline" size="lg" className="w-full border-white/20 text-slate-300 hover:bg-white/10" asChild>
                                             <Link href="/reviews/augusta-precious-metals">Read Full Review</Link>
                                         </Button>
                                     </div>
@@ -111,41 +114,41 @@ export default function BestGoldIraCompaniesPage() {
                             </div>
 
                             {/* Noble Gold - Best for $10k-$50k */}
-                            <div id="noble-review" className="scroll-mt-24 border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
-                                <div className="bg-amber-900 text-white p-4 flex justify-between items-center">
+                            <div id="noble-review" className="scroll-mt-24 border border-white/10 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm shadow-xl">
+                                <div className="bg-slate-700 text-white p-4 flex justify-between items-center">
                                     <div className="flex items-center gap-3">
-                                        <div className="bg-amber-700 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center">#2</div>
+                                        <div className="bg-slate-500 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center">#2</div>
                                         <h3 className="font-bold text-xl whitespace-nowrap">Noble Gold Investments</h3>
                                     </div>
                                     <div className="text-sm font-medium bg-white/10 px-3 py-1 rounded whitespace-nowrap">Best for $10,000-$50,000</div>
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">
-                                        <div className="w-full md:w-1/3 bg-gray-100 rounded-xl h-40 flex items-center justify-center text-gray-400">
+                                        <div className="w-full md:w-1/3 bg-white/5 rounded-xl h-40 flex items-center justify-center text-slate-500 border border-white/10">
                                             [Logo/Image]
                                         </div>
                                         <div className="w-full md:w-2/3">
-                                            <p className="text-text-muted mb-4">
-                                                Noble Gold fills an important gap for investors who don't meet the high minimums at Augusta or Goldco. With minimums as low as $2,000, they're accessible to a wider range of investors. Their Texas storage option and straightforward service approach have earned them strong reviews.
+                                            <p className="text-slate-400 mb-4">
+                                                Noble Gold fills an important gap for investors who don&apos;t meet the high minimums at Augusta or Goldco. With minimums as low as $2,000, they&apos;re accessible to a wider range of investors. Their Texas storage option and straightforward service approach have earned them strong reviews.
                                             </p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="bg-green-50 text-green-700 px-2 py-1 rounded text-xs font-bold">Low Minimum ($2k-$5k)</span>
-                                                <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-bold">Texas Storage Available</span>
+                                                <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-bold border border-green-500/30">Low Minimum ($2k-$5k)</span>
+                                                <span className="bg-blue-500/20 text-blue-400 px-2 py-1 rounded text-xs font-bold border border-blue-500/30">Texas Storage Available</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="grid md:grid-cols-2 gap-4 mb-8">
-                                        <div className="bg-gray-50 p-4 rounded-xl">
-                                            <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Strengths</h4>
-                                            <ul className="text-sm space-y-1 text-gray-600">
+                                        <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
+                                            <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Strengths</h4>
+                                            <ul className="text-sm space-y-1 text-slate-400">
                                                 <li>• Accessible to smaller investors</li>
                                                 <li>• Patient, no-pressure service</li>
                                                 <li>• Multiple storage options</li>
                                             </ul>
                                         </div>
-                                        <div className="bg-gray-50 p-4 rounded-xl">
-                                            <h4 className="font-bold text-amber-700 mb-2 flex items-center gap-2">Considerations</h4>
-                                            <ul className="text-sm space-y-1 text-gray-600">
+                                        <div className="bg-amber-500/10 p-4 rounded-xl border border-amber-500/20">
+                                            <h4 className="font-bold text-amber-400 mb-2 flex items-center gap-2">Considerations</h4>
+                                            <ul className="text-sm space-y-1 text-slate-400">
                                                 <li>• Flat fees less favorable on very small accounts</li>
                                                 <li>• Newer company (founded 2016)</li>
                                             </ul>
@@ -157,7 +160,7 @@ export default function BestGoldIraCompaniesPage() {
                                                 Request Information
                                             </a>
                                         </Button>
-                                        <Button variant="outline" size="lg" className="w-full" asChild>
+                                        <Button variant="outline" size="lg" className="w-full border-white/20 text-slate-300 hover:bg-white/10" asChild>
                                             <Link href="/reviews/noble-gold">Read Full Review</Link>
                                         </Button>
                                     </div>
@@ -165,17 +168,17 @@ export default function BestGoldIraCompaniesPage() {
                             </div>
 
                             {/* Goldco - Established Alternative */}
-                            <div id="goldco-review" className="scroll-mt-24 border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
-                                <div className="bg-[#1e1e1e] text-white p-4 flex justify-between items-center">
+                            <div id="goldco-review" className="scroll-mt-24 border border-white/10 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm shadow-xl">
+                                <div className="bg-slate-700 text-white p-4 flex justify-between items-center">
                                     <div className="flex items-center gap-3">
-                                        <div className="bg-gray-700 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center">#3</div>
+                                        <div className="bg-slate-500 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center">#3</div>
                                         <h3 className="font-bold text-xl">Goldco</h3>
                                     </div>
                                     <div className="text-sm font-medium bg-white/10 px-3 py-1 rounded">Most Recognized Brand</div>
                                 </div>
                                 <div className="p-8">
-                                    <p className="text-text-muted mb-6">
-                                        Goldco is the most-advertised Gold IRA company in the country. Their heavy marketing budget means strong brand recognition, and they've processed billions in precious metals. Customer service is solid, though their pricing requires speaking with a representative. Good option for investors who value working with a widely-recognized name.
+                                    <p className="text-slate-400 mb-6">
+                                        Goldco is the most-advertised Gold IRA company in the country. Their heavy marketing budget means strong brand recognition, and they&apos;ve processed billions in precious metals. Customer service is solid, though their pricing requires speaking with a representative. Good option for investors who value working with a widely-recognized name.
                                     </p>
                                     <div className="flex gap-4">
                                         <Button variant="gold" size="lg" className="w-full" asChild>
@@ -183,7 +186,7 @@ export default function BestGoldIraCompaniesPage() {
                                                 Request Information
                                             </a>
                                         </Button>
-                                        <Button variant="outline" size="lg" className="w-full" asChild>
+                                        <Button variant="outline" size="lg" className="w-full border-white/20 text-slate-300 hover:bg-white/10" asChild>
                                             <Link href="/reviews/goldco">Read Full Review</Link>
                                         </Button>
                                     </div>
@@ -191,22 +194,22 @@ export default function BestGoldIraCompaniesPage() {
                             </div>
 
                             {/* Other Companies Worth Considering */}
-                            <div className="prose prose-lg max-w-none text-text-muted">
-                                <h2 className="text-2xl font-serif font-bold text-primary">Other Companies Worth Considering</h2>
+                            <div className="prose prose-lg max-w-none text-slate-300">
+                                <h2 className="text-2xl font-serif font-bold text-white">Other Companies Worth Considering</h2>
                                 <p>
-                                    Several other companies have solid reputations in the Gold IRA space. <Link href="/reviews/birch-gold" className="text-primary hover:underline">Birch Gold Group</Link> has been operating since 2003 and uses a flat-fee structure that benefits larger accounts. <Link href="/reviews/american-hartford-gold" className="text-primary hover:underline">American Hartford Gold</Link> offers price-matching and competitive minimums.
+                                    Several other companies have solid reputations in the Gold IRA space. <Link href="/reviews/birch-gold" className="text-amber-400 hover:underline">Birch Gold Group</Link> has been operating since 2003 and uses a flat-fee structure that benefits larger accounts. <Link href="/reviews/american-hartford-gold" className="text-amber-400 hover:underline">American Hartford Gold</Link> offers price-matching and competitive minimums.
                                 </p>
                                 <p>
-                                    For investors with smaller amounts to invest, <Link href="/reviews/orion-metal-exchange" className="text-primary hover:underline">Orion Metal Exchange</Link> is worth researching as they cater specifically to beginning investors.
+                                    For investors with smaller amounts to invest, <Link href="/reviews/orion-metal-exchange" className="text-amber-400 hover:underline">Orion Metal Exchange</Link> is worth researching as they cater specifically to beginning investors.
                                 </p>
                             </div>
 
-                            <div className="bg-primary/5 p-8 rounded-2xl text-center">
-                                <h3 className="text-2xl font-serif font-bold text-primary mb-4">Not Sure Which Company Fits?</h3>
-                                <p className="text-text-muted mb-6">
+                            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl text-center border border-white/10">
+                                <h3 className="text-2xl font-serif font-bold text-white mb-4">Not Sure Which Company Fits?</h3>
+                                <p className="text-slate-400 mb-6">
                                     The right choice depends on your investment amount and preferences. Take our quick quiz to get a personalized recommendation.
                                 </p>
-                                <Button variant="outline" className="bg-white" asChild>
+                                <Button variant="outline" className="border-white/20 text-slate-300 hover:bg-white/10 hover:text-white" asChild>
                                     <Link href="/quiz">
                                         Take the Quiz <ArrowRight className="w-4 h-4 ml-2" />
                                     </Link>

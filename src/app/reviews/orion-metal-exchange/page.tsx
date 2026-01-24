@@ -19,7 +19,7 @@ export default function OrionMetalExchangeReviewPage() {
         <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
-            <div className="flex-grow bg-gray-50/50">
+            <div className="flex-grow bg-slate-900">
                 {/* Header / Hero for Review */}
                 <header className="bg-indigo-950 text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-800/40 via-indigo-950 to-indigo-950 opacity-80 z-0"></div>
@@ -60,7 +60,7 @@ export default function OrionMetalExchangeReviewPage() {
                             />
 
                             {/* Main Body Content - TYPOGRAPHY PROSE */}
-                            <div className="prose prose-lg max-w-none text-gray-700">
+                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
                                 <h2>The Executive Summary</h2>
                                 <p>
                                     <strong>Orion Metal Exchange</strong> has built a reputation as the "small investor's friend" in the Gold IRA space. While Augusta requires $50,000 and Goldco asks for $25,000, Orion welcomes you with just <strong>$5,000</strong>—the lowest entry point in the industry.
@@ -98,11 +98,11 @@ export default function OrionMetalExchangeReviewPage() {
                                     This makes Orion accessible to younger investors, those testing the waters, or anyone who wants to start small and add over time. You don't need to be rich to start protecting your retirement with gold.
                                 </p>
 
-                                <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-100 not-prose my-8">
-                                    <h4 className="font-bold text-indigo-900 flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5" /> Fee Consideration
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-secondary" /> Fee Consideration
                                     </h4>
-                                    <p className="text-sm text-indigo-800">
+                                    <p className="text-sm text-slate-400">
                                         While the minimum is low, remember that flat annual fees ($150-$250) represent a higher percentage of smaller accounts. We recommend investing at least $10,000 to make the fee math work in your favor long-term.
                                     </p>
                                 </div>
@@ -123,7 +123,7 @@ export default function OrionMetalExchangeReviewPage() {
                                     The majority of negative feedback relates to shipping times during high-demand periods (like when gold prices spike). This is an industry-wide issue, not unique to Orion.
                                 </p>
 
-                                <hr className="my-12 border-gray-200" />
+                                <hr className="my-12 border-white/10" />
 
                                 <h2>Final Verdict: Are They Worth It?</h2>
                                 <p>

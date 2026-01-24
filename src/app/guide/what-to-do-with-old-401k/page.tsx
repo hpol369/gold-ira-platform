@@ -103,10 +103,10 @@ const schema = {
 
 export default function WhatToDoWithOld401kPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-800/50 text-white py-20 relative overflow-hidden border-b border-white/10">
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
@@ -114,7 +114,7 @@ export default function WhatToDoWithOld401kPage() {
                             <span className="w-2 h-2 rounded-full bg-secondary"></span>
                             Updated for 2026
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-white">
                             What to Do with an Old 401(k)
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
@@ -132,37 +132,37 @@ export default function WhatToDoWithOld401kPage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary prose-p:text-text prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
                         <Breadcrumbs />
 
                         {/* Intro */}
                         <section id="overview" className="scroll-mt-32">
-                            <p className="lead text-xl text-text-muted">
-                                If you&apos;ve changed jobs, you probably have a <strong>401(k) from your old employer</strong> sitting somewhere. You&apos;re not alone—Americans have left behind over $1.35 trillion in forgotten 401(k)s.
+                            <p className="lead text-xl text-slate-400">
+                                If you&apos;ve changed jobs, you probably have a <strong className="text-white">401(k) from your old employer</strong> sitting somewhere. You&apos;re not alone—Americans have left behind over $1.35 trillion in forgotten 401(k)s.
                             </p>
                             <p>
                                 What you do with that money matters. The wrong choice could cost you thousands in fees and taxes. The right choice could protect and grow your retirement savings for decades.
                             </p>
                             <p>
-                                Here are your <strong>5 options</strong> for an old 401(k):
+                                Here are your <strong className="text-white">5 options</strong> for an old 401(k):
                             </p>
 
                             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 not-prose my-8">
-                                <div className="p-4 bg-background-subtle rounded-xl border border-primary/5 text-center">
-                                    <div className="text-2xl font-bold text-primary mb-1">1</div>
-                                    <div className="text-sm font-medium">Leave It</div>
+                                <div className="p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 text-center">
+                                    <div className="text-2xl font-bold text-white mb-1">1</div>
+                                    <div className="text-sm font-medium text-slate-300">Leave It</div>
                                 </div>
-                                <div className="p-4 bg-background-subtle rounded-xl border border-primary/5 text-center">
-                                    <div className="text-2xl font-bold text-primary mb-1">2</div>
-                                    <div className="text-sm font-medium">New Employer 401(k)</div>
+                                <div className="p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 text-center">
+                                    <div className="text-2xl font-bold text-white mb-1">2</div>
+                                    <div className="text-sm font-medium text-slate-300">New Employer 401(k)</div>
                                 </div>
-                                <div className="p-4 bg-background-subtle rounded-xl border border-primary/5 text-center">
-                                    <div className="text-2xl font-bold text-primary mb-1">3</div>
-                                    <div className="text-sm font-medium">Traditional IRA</div>
+                                <div className="p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 text-center">
+                                    <div className="text-2xl font-bold text-white mb-1">3</div>
+                                    <div className="text-sm font-medium text-slate-300">Traditional IRA</div>
                                 </div>
-                                <div className="p-4 bg-background-subtle rounded-xl border border-primary/5 text-center">
-                                    <div className="text-2xl font-bold text-primary mb-1">4</div>
-                                    <div className="text-sm font-medium">Cash Out</div>
+                                <div className="p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 text-center">
+                                    <div className="text-2xl font-bold text-white mb-1">4</div>
+                                    <div className="text-sm font-medium text-slate-300">Cash Out</div>
                                 </div>
                                 <div className="p-4 bg-secondary/10 rounded-xl border border-secondary/20 text-center">
                                     <div className="text-2xl font-bold text-secondary mb-1">5</div>
@@ -174,35 +174,35 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 1: Leave It */}
                         <section id="leave-it" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-gray-100 rounded-lg text-gray-600">
+                                <div className="p-3 bg-slate-700/50 rounded-lg text-slate-300">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Option 1: Leave It Where It Is</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Option 1: Leave It Where It Is</h2>
                             </div>
                             <p>
                                 You can simply leave your 401(k) with your former employer. The money stays invested and continues to grow tax-deferred.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-50 rounded-xl">
-                                    <h4 className="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-700 space-y-1">
-                                        <li>• No action required</li>
-                                        <li>• Money keeps growing tax-deferred</li>
-                                        <li>• May have good investment options</li>
+                                    <ul className="text-sm text-green-300 space-y-1">
+                                        <li>* No action required</li>
+                                        <li>* Money keeps growing tax-deferred</li>
+                                        <li>* May have good investment options</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-red-50 rounded-xl">
-                                    <h4 className="font-semibold text-red-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
+                                    <h4 className="font-semibold text-red-400 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
-                                    <ul className="text-sm text-red-700 space-y-1">
-                                        <li>• Can&apos;t contribute more</li>
-                                        <li>• Limited investment options</li>
-                                        <li>• Harder to track multiple accounts</li>
-                                        <li>• May have higher fees</li>
+                                    <ul className="text-sm text-red-300 space-y-1">
+                                        <li>* Can&apos;t contribute more</li>
+                                        <li>* Limited investment options</li>
+                                        <li>* Harder to track multiple accounts</li>
+                                        <li>* May have higher fees</li>
                                     </ul>
                                 </div>
                             </div>
@@ -215,36 +215,36 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 2: Roll to New Employer */}
                         <section id="rollover-new" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <RefreshCw className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Option 2: Roll to New Employer&apos;s 401(k)</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Option 2: Roll to New Employer&apos;s 401(k)</h2>
                             </div>
                             <p>
                                 If your new employer offers a 401(k) that accepts rollovers, you can consolidate your old account into your new one.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-50 rounded-xl">
-                                    <h4 className="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-700 space-y-1">
-                                        <li>• Consolidates accounts in one place</li>
-                                        <li>• Continues tax-deferred growth</li>
-                                        <li>• Can still contribute to it</li>
-                                        <li>• May have loan options</li>
+                                    <ul className="text-sm text-green-300 space-y-1">
+                                        <li>* Consolidates accounts in one place</li>
+                                        <li>* Continues tax-deferred growth</li>
+                                        <li>* Can still contribute to it</li>
+                                        <li>* May have loan options</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-red-50 rounded-xl">
-                                    <h4 className="font-semibold text-red-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
+                                    <h4 className="font-semibold text-red-400 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
-                                    <ul className="text-sm text-red-700 space-y-1">
-                                        <li>• Limited to plan&apos;s investment options</li>
-                                        <li>• No gold or precious metals allowed</li>
-                                        <li>• Still stuck with stocks/bonds/funds</li>
-                                        <li>• New employer must accept rollovers</li>
+                                    <ul className="text-sm text-red-300 space-y-1">
+                                        <li>* Limited to plan&apos;s investment options</li>
+                                        <li>* No gold or precious metals allowed</li>
+                                        <li>* Still stuck with stocks/bonds/funds</li>
+                                        <li>* New employer must accept rollovers</li>
                                     </ul>
                                 </div>
                             </div>
@@ -253,36 +253,36 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 3: Traditional IRA */}
                         <section id="rollover-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Option 3: Roll to a Traditional IRA</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Option 3: Roll to a Traditional IRA</h2>
                             </div>
                             <p>
                                 Rolling to a traditional IRA at a brokerage (Fidelity, Schwab, Vanguard, etc.) gives you more control and investment options than most 401(k) plans.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-50 rounded-xl">
-                                    <h4 className="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-700 space-y-1">
-                                        <li>• Thousands of investment options</li>
-                                        <li>• Often lower fees than 401(k)</li>
-                                        <li>• Full control over investments</li>
-                                        <li>• Easy to manage online</li>
+                                    <ul className="text-sm text-green-300 space-y-1">
+                                        <li>* Thousands of investment options</li>
+                                        <li>* Often lower fees than 401(k)</li>
+                                        <li>* Full control over investments</li>
+                                        <li>* Easy to manage online</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-red-50 rounded-xl">
-                                    <h4 className="font-semibold text-red-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
+                                    <h4 className="font-semibold text-red-400 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
-                                    <ul className="text-sm text-red-700 space-y-1">
-                                        <li>• No employer matching</li>
-                                        <li>• Lower contribution limits than 401(k)</li>
-                                        <li>• Still limited to paper assets (stocks, bonds, ETFs)</li>
-                                        <li>• No physical gold allowed</li>
+                                    <ul className="text-sm text-red-300 space-y-1">
+                                        <li>* No employer matching</li>
+                                        <li>* Lower contribution limits than 401(k)</li>
+                                        <li>* Still limited to paper assets (stocks, bonds, ETFs)</li>
+                                        <li>* No physical gold allowed</li>
                                     </ul>
                                 </div>
                             </div>
@@ -291,37 +291,37 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 4: Cash Out */}
                         <section id="cash-out" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Option 4: Cash It Out (Not Recommended)</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Option 4: Cash It Out (Not Recommended)</h2>
                             </div>
                             <p>
-                                You can withdraw your 401(k) as cash. But this is almost always a <strong>terrible idea</strong>.
+                                You can withdraw your 401(k) as cash. But this is almost always a <strong className="text-white">terrible idea</strong>.
                             </p>
 
-                            <div className="bg-red-50 border-2 border-red-200 rounded-xl p-6 not-prose my-6">
-                                <h4 className="font-bold text-red-800 mb-4">The True Cost of Cashing Out</h4>
-                                <p className="text-red-700 mb-4">If you cash out a $50,000 401(k) before age 59½:</p>
+                            <div className="bg-red-500/10 border-2 border-red-500/20 rounded-xl p-6 not-prose my-6">
+                                <h4 className="font-bold text-red-400 mb-4">The True Cost of Cashing Out</h4>
+                                <p className="text-red-300 mb-4">If you cash out a $50,000 401(k) before age 59½:</p>
                                 <div className="space-y-2 text-sm">
-                                    <div className="flex justify-between p-2 bg-white rounded">
-                                        <span>Federal income tax (24% bracket)</span>
-                                        <span className="text-red-600 font-bold">-$12,000</span>
+                                    <div className="flex justify-between p-2 bg-slate-800/50 rounded">
+                                        <span className="text-slate-300">Federal income tax (24% bracket)</span>
+                                        <span className="text-red-400 font-bold">-$12,000</span>
                                     </div>
-                                    <div className="flex justify-between p-2 bg-white rounded">
-                                        <span>Early withdrawal penalty (10%)</span>
-                                        <span className="text-red-600 font-bold">-$5,000</span>
+                                    <div className="flex justify-between p-2 bg-slate-800/50 rounded">
+                                        <span className="text-slate-300">Early withdrawal penalty (10%)</span>
+                                        <span className="text-red-400 font-bold">-$5,000</span>
                                     </div>
-                                    <div className="flex justify-between p-2 bg-white rounded">
-                                        <span>State income tax (~5%)</span>
-                                        <span className="text-red-600 font-bold">-$2,500</span>
+                                    <div className="flex justify-between p-2 bg-slate-800/50 rounded">
+                                        <span className="text-slate-300">State income tax (~5%)</span>
+                                        <span className="text-red-400 font-bold">-$2,500</span>
                                     </div>
-                                    <div className="flex justify-between p-2 bg-red-100 rounded font-bold">
-                                        <span>You actually receive</span>
-                                        <span className="text-red-800">$30,500</span>
+                                    <div className="flex justify-between p-2 bg-red-500/20 rounded font-bold">
+                                        <span className="text-white">You actually receive</span>
+                                        <span className="text-red-300">$30,500</span>
                                     </div>
                                 </div>
-                                <p className="text-red-600 text-sm mt-4">You lose nearly 40% immediately—plus decades of tax-deferred growth.</p>
+                                <p className="text-red-400 text-sm mt-4">You lose nearly 40% immediately—plus decades of tax-deferred growth.</p>
                             </div>
 
                             <p>
@@ -344,37 +344,37 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 5: Gold IRA */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Option 5: Roll to a Gold IRA</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Option 5: Roll to a Gold IRA</h2>
                             </div>
                             <p>
-                                Most people don&apos;t know this option exists: You can roll your old 401(k) into a <strong>Gold IRA</strong>—a self-directed IRA that holds physical gold, silver, platinum, and palladium instead of paper assets.
+                                Most people don&apos;t know this option exists: You can roll your old 401(k) into a <strong className="text-white">Gold IRA</strong>—a self-directed IRA that holds physical gold, silver, platinum, and palladium instead of paper assets.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-50 rounded-xl">
-                                    <h4 className="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-700 space-y-1">
-                                        <li>• Own real, physical gold</li>
-                                        <li>• Diversify away from stocks</li>
-                                        <li>• Protection against crashes & inflation</li>
-                                        <li>• Same tax advantages as traditional IRA</li>
-                                        <li>• 100% tax-free rollover</li>
+                                    <ul className="text-sm text-green-300 space-y-1">
+                                        <li>* Own real, physical gold</li>
+                                        <li>* Diversify away from stocks</li>
+                                        <li>* Protection against crashes & inflation</li>
+                                        <li>* Same tax advantages as traditional IRA</li>
+                                        <li>* 100% tax-free rollover</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-amber-50 rounded-xl">
-                                    <h4 className="font-semibold text-amber-800 mb-2 flex items-center gap-2">
+                                <div className="p-4 bg-amber-500/10 rounded-xl border border-amber-500/20">
+                                    <h4 className="font-semibold text-amber-400 mb-2 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" /> Considerations
                                     </h4>
-                                    <ul className="text-sm text-amber-700 space-y-1">
-                                        <li>• Annual storage fees (~$100-300)</li>
-                                        <li>• Must use IRS-approved custodian</li>
-                                        <li>• Can&apos;t store at home (IRS rules)</li>
-                                        <li>• Best for 10-20% of portfolio</li>
+                                    <ul className="text-sm text-amber-300 space-y-1">
+                                        <li>* Annual storage fees (~$100-300)</li>
+                                        <li>* Must use IRS-approved custodian</li>
+                                        <li>* Can&apos;t store at home (IRS rules)</li>
+                                        <li>* Best for 10-20% of portfolio</li>
                                     </ul>
                                 </div>
                             </div>
@@ -393,43 +393,43 @@ export default function WhatToDoWithOld401kPage() {
                             <h2>Side-by-Side Comparison</h2>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
+                                    <thead className="bg-slate-800/50">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Option</th>
-                                            <th className="p-4 border-b font-bold text-primary">Tax Impact</th>
-                                            <th className="p-4 border-b font-bold text-primary">Investment Options</th>
-                                            <th className="p-4 border-b font-bold text-primary">Best For</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Option</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Tax Impact</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Investment Options</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Best For</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4 font-medium">Leave It</td>
-                                            <td className="p-4 text-green-600">None</td>
+                                            <td className="p-4 font-medium text-white">Leave It</td>
+                                            <td className="p-4 text-green-400">None</td>
                                             <td className="p-4">Limited to plan options</td>
                                             <td className="p-4">Happy with current investments</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">New Employer 401(k)</td>
-                                            <td className="p-4 text-green-600">None (direct rollover)</td>
+                                            <td className="p-4 font-medium text-white">New Employer 401(k)</td>
+                                            <td className="p-4 text-green-400">None (direct rollover)</td>
                                             <td className="p-4">Limited to plan options</td>
                                             <td className="p-4">Consolidation, simplicity</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">Traditional IRA</td>
-                                            <td className="p-4 text-green-600">None (direct rollover)</td>
+                                            <td className="p-4 font-medium text-white">Traditional IRA</td>
+                                            <td className="p-4 text-green-400">None (direct rollover)</td>
                                             <td className="p-4">Stocks, bonds, ETFs, mutual funds</td>
                                             <td className="p-4">More control, lower fees</td>
                                         </tr>
-                                        <tr className="bg-red-50">
-                                            <td className="p-4 font-medium text-red-700">Cash Out</td>
-                                            <td className="p-4 text-red-600">Taxes + 10% penalty</td>
+                                        <tr className="bg-red-500/10">
+                                            <td className="p-4 font-medium text-red-400">Cash Out</td>
+                                            <td className="p-4 text-red-400">Taxes + 10% penalty</td>
                                             <td className="p-4">N/A (liquidated)</td>
                                             <td className="p-4">Emergencies only</td>
                                         </tr>
-                                        <tr className="bg-amber-50">
-                                            <td className="p-4 font-medium text-amber-700">Gold IRA</td>
-                                            <td className="p-4 text-green-600">None (direct rollover)</td>
+                                        <tr className="bg-amber-500/10">
+                                            <td className="p-4 font-medium text-amber-400">Gold IRA</td>
+                                            <td className="p-4 text-green-400">None (direct rollover)</td>
                                             <td className="p-4">Physical gold, silver, platinum, palladium</td>
                                             <td className="p-4">Diversification, crash protection</td>
                                         </tr>
@@ -446,32 +446,32 @@ export default function WhatToDoWithOld401kPage() {
                             </p>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Choose Your Destination</h4>
-                                        <p className="text-sm text-text-muted mt-1">Decide whether you want a traditional IRA, new employer 401(k), or Gold IRA. For Gold IRAs, <Link href="/quiz" className="text-secondary hover:underline">take our quiz</Link> to find the best company.</p>
+                                        <h4 className="font-bold text-white">Choose Your Destination</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Decide whether you want a traditional IRA, new employer 401(k), or Gold IRA. For Gold IRAs, <Link href="/quiz" className="text-secondary hover:underline">take our quiz</Link> to find the best company.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Open Your New Account</h4>
-                                        <p className="text-sm text-text-muted mt-1">Set up your new IRA or 401(k). For Gold IRAs, your chosen company will guide you through this process.</p>
+                                        <h4 className="font-bold text-white">Open Your New Account</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Set up your new IRA or 401(k). For Gold IRAs, your chosen company will guide you through this process.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Request a Direct Rollover</h4>
-                                        <p className="text-sm text-text-muted mt-1"><strong>Critical:</strong> Request a &quot;direct&quot; or &quot;trustee-to-trustee&quot; transfer. This sends funds directly to your new account without you touching the money—avoiding taxes.</p>
+                                        <h4 className="font-bold text-white">Request a Direct Rollover</h4>
+                                        <p className="text-sm text-slate-400 mt-1"><strong className="text-white">Critical:</strong> Request a &quot;direct&quot; or &quot;trustee-to-trustee&quot; transfer. This sends funds directly to your new account without you touching the money—avoiding taxes.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white border border-gray-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">4</div>
                                     <div>
-                                        <h4 className="font-bold text-primary">Complete the Transfer</h4>
-                                        <p className="text-sm text-text-muted mt-1">Your new custodian will coordinate with your old plan. The process typically takes 2-4 weeks. For Gold IRAs, you&apos;ll then select your precious metals.</p>
+                                        <h4 className="font-bold text-white">Complete the Transfer</h4>
+                                        <p className="text-sm text-slate-400 mt-1">Your new custodian will coordinate with your old plan. The process typically takes 2-4 weeks. For Gold IRAs, you&apos;ll then select your precious metals.</p>
                                     </div>
                                 </div>
                             </div>
@@ -486,58 +486,58 @@ export default function WhatToDoWithOld401kPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What are my options for an old 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         You have 5 main options: 1) Leave it with your old employer, 2) Roll it over to your new employer&apos;s 401(k), 3) Roll it over to a traditional IRA, 4) Cash it out (not recommended), or 5) Roll it over to a <Link href="/what-is-a-gold-ira" className="text-secondary hover:underline">Gold IRA</Link> for precious metals diversification.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I rollover my old 401(k) to a Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         Yes! You can rollover funds from an old 401(k) to a Gold IRA completely tax-free and penalty-free using a direct rollover. This allows you to convert paper assets into physical gold and silver while maintaining tax-advantaged status. See our <Link href="/guide/401k-to-gold-rollover" className="text-secondary hover:underline">401(k) to Gold IRA rollover guide</Link> for details.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What happens if I do nothing with my old 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         If you do nothing, your money stays invested in your old employer&apos;s plan. However, you may have limited investment options, higher fees, and difficulty managing multiple accounts. For balances under $5,000, some employers may force a distribution.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">How long do I have to rollover my 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-400">
                                         There&apos;s no deadline for a direct rollover. However, if you receive the funds personally (indirect rollover), you have 60 days to deposit them into a new retirement account to avoid taxes and penalties. For simplicity and safety, always choose a direct trustee-to-trustee transfer.
                                     </p>
                                 </details>
