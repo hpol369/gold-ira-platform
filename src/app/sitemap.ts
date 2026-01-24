@@ -3,6 +3,7 @@ import { MetadataRoute } from "next";
 import { US_STATES } from '@/lib/states';
 import { getCompanySlugs } from '@/data/companies';
 import { getAllAssetSlugs } from '@/data/assets';
+import { getAllScenarioSlugs } from '@/data/scenarios';
 
 // Rollover provider slugs
 const rolloverProviders = [
@@ -83,6 +84,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
+    // Crisis scenario pages
+    const scenarioSlugs = getAllScenarioSlugs();
+    const scenarioPages = scenarioSlugs.map(slug => ({
+        url: `${baseUrl}/scenarios/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
     return [
         {
             url: baseUrl,
@@ -131,6 +141,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...comparisonPages,
         // Gold vs Asset comparison pages (21 pages)
         ...goldVsAssetPages,
+        // Crisis scenario pages (6 pages)
+        {
+            url: `${baseUrl}/scenarios`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        },
+        ...scenarioPages,
         // Compare hub
         {
             url: `${baseUrl}/compare`,
