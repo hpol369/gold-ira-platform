@@ -97,8 +97,19 @@ export function LeadCaptureForm() {
       // Small delay for UX
       await new Promise((resolve) => setTimeout(resolve, 800));
 
-      // Redirect to Augusta
-      window.location.href = AUGUSTA_AFFILIATE_URL;
+      // Build redirect URL with form data as query parameters
+      // This allows Augusta's form to potentially auto-fill
+      const params = new URLSearchParams({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
+        investmentAmount: formData.investmentAmount,
+        ref: "richdadretirement", // tracking source
+      });
+
+      // Redirect to Augusta with pre-filled data
+      window.location.href = `${AUGUSTA_AFFILIATE_URL}?${params.toString()}`;
     } catch (error) {
       console.error("Error saving lead:", error);
       // Still redirect even if storage fails
