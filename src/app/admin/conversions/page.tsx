@@ -9,8 +9,11 @@ import {
   RefreshCw,
   Bell,
   CheckCircle2,
-  XCircle
+  XCircle,
+  Lock
 } from "lucide-react";
+
+const ADMIN_PIN = "6903";
 
 interface Conversion {
   type: "lead_capture" | "qualified_lead" | "trade_complete";
@@ -25,15 +28,81 @@ interface NotificationStatus {
 }
 
 export default function ConversionsPage() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [pin, setPin] = useState("");
+  const [pinError, setPinError] = useState(false);
   const [conversions, setConversions] = useState<Conversion[]>([]);
   const [loading, setLoading] = useState(true);
   const [notificationStatus, setNotificationStatus] = useState<NotificationStatus | null>(null);
   const [testingSent, setTestingSent] = useState(false);
 
   useEffect(() => {
-    fetchConversions();
-    checkNotificationStatus();
+    // Check if already authenticated in this session
+    const saved = sessionStorage.getItem("admin_auth");
+    if (saved === "true") {
+      setIsAuthenticated(true);
+    }
   }, []);
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchConversions();
+      checkNotificationStatus();
+    }
+  }, [isAuthenticated]);
+
+  function handlePinSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (pin === ADMIN_PIN) {
+      setIsAuthenticated(true);
+      sessionStorage.setItem("admin_auth", "true");
+      setPinError(false);
+    } else {
+      setPinError(true);
+      setPin("");
+    }
+  }
+
+  // PIN Entry Screen
+  if (!isAuthenticated) {
+    return (
+      <main className="min-h-screen bg-slate-900 flex items-center justify-center">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 max-w-sm w-full mx-4">
+          <div className="text-center mb-6">
+            <div className="w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Lock className="h-8 w-8 text-amber-400" />
+            </div>
+            <h1 className="text-2xl font-bold text-white">Admin Access</h1>
+            <p className="text-slate-400 text-sm mt-2">Enter PIN to continue</p>
+          </div>
+          <form onSubmit={handlePinSubmit}>
+            <input
+              type="password"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              maxLength={4}
+              value={pin}
+              onChange={(e) => setPin(e.target.value.replace(/\D/g, ""))}
+              placeholder="••••"
+              className={`w-full text-center text-2xl tracking-[0.5em] bg-slate-800 border ${
+                pinError ? "border-red-500" : "border-white/10"
+              } rounded-xl px-4 py-4 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500 transition-colors`}
+              autoFocus
+            />
+            {pinError && (
+              <p className="text-red-400 text-sm text-center mt-2">Incorrect PIN</p>
+            )}
+            <button
+              type="submit"
+              className="w-full mt-4 px-4 py-3 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-xl transition-colors"
+            >
+              Access Dashboard
+            </button>
+          </form>
+        </div>
+      </main>
+    );
+  }
 
   async function fetchConversions() {
     try {
