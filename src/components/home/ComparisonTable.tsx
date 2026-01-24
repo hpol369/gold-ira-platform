@@ -286,12 +286,6 @@ export function ComparisonTable() {
                                                 {company.rank === 1 ? "Get Free Kit" : "View Site"}
                                             </a>
                                         </Button>
-                                        {company.rank === 1 && (
-                                            <div className="text-[10px] text-green-400 font-bold flex items-center justify-center gap-1 animate-pulse">
-                                                <div className="w-1.5 h-1.5 rounded-full bg-green-400" />
-                                                Direct Partner Link
-                                            </div>
-                                        )}
                                     </td>
                                 </tr>
                             ))}
