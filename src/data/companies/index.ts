@@ -107,7 +107,7 @@ export const companies: Record<string, Company> = {
     keywordDifficulty: 24,
     featured: true,
     rank: 1,
-    affiliateLink: "https://www.augustapreciousmetals.com/ap-gold-silver-ira-guide/?ap_id=RICH_DAD",
+    affiliateLink: "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129",
     website: "https://www.augustapreciousmetals.com",
     highlight: "Best Overall",
   },

@@ -24,12 +24,12 @@ export interface QuizResult {
 }
 
 // ===========================================
-// AFFILIATE LINKS - UPDATE THESE WITH YOUR TRACKING URLS
+// AFFILIATE LINKS - Customer landing pages with tracking
 // ===========================================
 const AFFILIATE_LINKS = {
     orion: "https://orionmetalexchange.com", // TODO: Replace with your Orion affiliate link
     noble: "https://noblegoldinvestments.com", // TODO: Replace with your Noble Gold affiliate link
-    augusta: "https://augustapreciousmetals.com", // TODO: Replace with your Augusta affiliate link
+    augusta: "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129",
 };
 
 export function getQuizResult(answers: Partial<QuizState>): QuizResult {

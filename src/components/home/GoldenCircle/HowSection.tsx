@@ -19,7 +19,7 @@ import {
 
 export function HowSection() {
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-20 md:py-28 bg-slate-900">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
@@ -30,13 +30,13 @@ export function HowSection() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-1.5 bg-slate-100 rounded-full text-slate-600 text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-1.5 bg-amber-500/10 border border-amber-500/20 rounded-full text-amber-400 text-sm font-medium mb-6">
               The Process
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
               How a Gold IRA Protects Your Retirement
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               It&apos;s simpler than you think. A Gold IRA works just like your regular IRA—but instead
               of paper assets, you own real, physical gold.
             </p>
@@ -51,17 +51,17 @@ export function HowSection() {
             className="grid md:grid-cols-3 gap-8 mb-20"
           >
             <div className="relative">
-              <div className="absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-amber-400 to-transparent hidden md:block" style={{ width: 'calc(100% - 3rem)' }} />
-              <div className="bg-gradient-to-br from-amber-50 to-white border border-amber-200 rounded-2xl p-8 h-full">
-                <div className="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-xl mb-6">
+              <div className="absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-amber-500/50 to-transparent hidden md:block" style={{ width: 'calc(100% - 3rem)' }} />
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full">
+                <div className="w-14 h-14 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-bold text-xl mb-6">
                   1
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Open Your Gold IRA</h3>
-                <p className="text-slate-600 mb-4">
+                <h3 className="text-xl font-bold text-white mb-3">Open Your Gold IRA</h3>
+                <p className="text-slate-400 mb-4">
                   Choose a reputable Gold IRA company. They handle all the paperwork and set up
                   your self-directed IRA with an approved custodian.
                 </p>
-                <div className="flex items-center gap-2 text-sm text-amber-700 font-medium">
+                <div className="flex items-center gap-2 text-sm text-amber-400 font-medium">
                   <Building2 className="h-4 w-4" />
                   <span>Takes 10-15 minutes</span>
                 </div>
@@ -69,17 +69,17 @@ export function HowSection() {
             </div>
 
             <div className="relative">
-              <div className="absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-amber-400 to-transparent hidden md:block" style={{ width: 'calc(100% - 3rem)' }} />
-              <div className="bg-gradient-to-br from-amber-50 to-white border border-amber-200 rounded-2xl p-8 h-full">
-                <div className="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-xl mb-6">
+              <div className="absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-amber-500/50 to-transparent hidden md:block" style={{ width: 'calc(100% - 3rem)' }} />
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full">
+                <div className="w-14 h-14 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-bold text-xl mb-6">
                   2
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Fund with a Rollover</h3>
-                <p className="text-slate-600 mb-4">
+                <h3 className="text-xl font-bold text-white mb-3">Fund with a Rollover</h3>
+                <p className="text-slate-400 mb-4">
                   Transfer funds from your existing 401(k), IRA, or other retirement account.
                   Direct rollovers are 100% tax-free with no penalties.
                 </p>
-                <div className="flex items-center gap-2 text-sm text-amber-700 font-medium">
+                <div className="flex items-center gap-2 text-sm text-amber-400 font-medium">
                   <RefreshCw className="h-4 w-4" />
                   <span>5-14 business days</span>
                 </div>
@@ -87,16 +87,16 @@ export function HowSection() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-amber-50 to-white border border-amber-200 rounded-2xl p-8 h-full">
-                <div className="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-xl mb-6">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full">
+                <div className="w-14 h-14 rounded-2xl bg-amber-500 text-slate-900 flex items-center justify-center font-bold text-xl mb-6">
                   3
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Buy Physical Gold</h3>
-                <p className="text-slate-600 mb-4">
+                <h3 className="text-xl font-bold text-white mb-3">Buy Physical Gold</h3>
+                <p className="text-slate-400 mb-4">
                   Select IRS-approved gold coins and bars. Your metals are stored in a secure,
                   insured depository—protected for your retirement.
                 </p>
-                <div className="flex items-center gap-2 text-sm text-amber-700 font-medium">
+                <div className="flex items-center gap-2 text-sm text-amber-400 font-medium">
                   <Coins className="h-4 w-4" />
                   <span>Own real gold</span>
                 </div>

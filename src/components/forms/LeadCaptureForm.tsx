@@ -5,8 +5,8 @@ import { ArrowRight, Loader2, Lock } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
-// TODO: Replace with your actual Augusta customer referral link from your affiliate dashboard
-const AUGUSTA_AFFILIATE_URL = "https://www.augustapreciousmetals.com";
+// Augusta customer landing page with affiliate tracking
+const AUGUSTA_AFFILIATE_URL = "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129";
 
 const investmentOptions = [
   { value: "25k-50k", label: "$25,000 - $50,000" },
@@ -15,16 +15,6 @@ const investmentOptions = [
   { value: "250k-500k", label: "$250,000 - $500,000" },
   { value: "500k+", label: "$500,000+" },
 ];
-
-interface LeadData {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  investmentAmount: string;
-  timestamp: string;
-  source: string;
-}
 
 export function LeadCaptureForm() {
   const [formData, setFormData] = useState({
@@ -71,50 +61,20 @@ export function LeadCaptureForm() {
 
     setIsSubmitting(true);
 
-    // Create lead data object
-    const leadData: LeadData = {
-      ...formData,
-      timestamp: new Date().toISOString(),
-      source: typeof window !== "undefined" ? window.location.href : "direct",
-    };
-
-    // Store lead locally (can be retrieved later or sent to backend)
-    try {
-      // Store in localStorage
-      const existingLeads = JSON.parse(localStorage.getItem("captured_leads") || "[]");
-      existingLeads.push(leadData);
-      localStorage.setItem("captured_leads", JSON.stringify(existingLeads));
-
-      // Track in Google Analytics if available
-      if (typeof window !== "undefined" && (window as any).gtag) {
-        (window as any).gtag("event", "lead_capture", {
-          event_category: "conversion",
-          event_label: formData.investmentAmount,
-          value: 1,
-        });
-      }
-
-      // Small delay for UX
-      await new Promise((resolve) => setTimeout(resolve, 800));
-
-      // Build redirect URL with form data as query parameters
-      // This allows Augusta's form to potentially auto-fill
-      const params = new URLSearchParams({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        phone: formData.phone,
-        investmentAmount: formData.investmentAmount,
-        ref: "richdadretirement", // tracking source
+    // Track in Google Analytics
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "lead_capture", {
+        event_category: "conversion",
+        event_label: formData.investmentAmount,
+        value: 1,
       });
-
-      // Redirect to Augusta with pre-filled data
-      window.location.href = `${AUGUSTA_AFFILIATE_URL}?${params.toString()}`;
-    } catch (error) {
-      console.error("Error saving lead:", error);
-      // Still redirect even if storage fails
-      window.location.href = AUGUSTA_AFFILIATE_URL;
     }
+
+    // Small delay for UX
+    await new Promise((resolve) => setTimeout(resolve, 500));
+
+    // Redirect to Augusta's landing page with affiliate tracking
+    window.location.href = AUGUSTA_AFFILIATE_URL;
   };
 
   const handleChange = (

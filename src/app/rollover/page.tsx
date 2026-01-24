@@ -266,6 +266,7 @@ export default function RolloverPage() {
         <Container>
           <AugustaCTA
             variant="footer"
+            linkContext="fees"
             headline="Ready to Protect Your Retirement with Gold?"
             subheadline="Augusta Precious Metals handles your entire rollover process. Their team contacts your current provider, completes the paperwork, and ensures a tax-free transfer."
           />

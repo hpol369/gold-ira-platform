@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Star, CheckCircle2, ArrowRight, ShieldCheck, Trophy, BadgeCheck } from "lucide-react";
 import Link from "next/link";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getAugustaLink } from "@/config/affiliates";
 
 interface Company {
     rank: number;
@@ -30,7 +30,7 @@ const companies: Company[] = [
         bestFor: "High Net Worth Investors ($100k+)",
         bestForBadge: "Best Overall 2026",
         pros: ["Zero fees for up to 10 years", "1-on-1 education w/ Harvard Economist", "Money Magazine's #1 Rated"],
-        ctaUrl: AFFILIATE_LINKS.augusta,
+        ctaUrl: getAugustaLink("comparison"), // Comparison-focused landing page
         reviewUrl: "/reviews/augusta-precious-metals",
         badgeColor: "gold"
     },

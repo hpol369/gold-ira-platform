@@ -3,11 +3,14 @@ import { Footer } from "@/components/layout/Footer";
 import { TrustBadges } from "@/components/home/TrustBadges";
 import { Testimonials } from "@/components/home/Testimonials";
 import { ValueProps } from "@/components/home/ValueProps";
-import { ProcessSteps } from "@/components/home/ProcessSteps";
 import { FeaturedPartner } from "@/components/home/FeaturedPartner";
 import { QuizCTA } from "@/components/home/QuizCTA";
 import { WealthCalculator } from "@/components/home/WealthCalculator";
-import { WhySection } from "@/components/home/GoldenCircle";
+import { WhySection, DeepWhySection } from "@/components/home/GoldenCircle";
+import { HowSection } from "@/components/home/GoldenCircle";
+import { AuthoritySection } from "@/components/home/AuthoritySection";
+import { UrgencySection } from "@/components/home/UrgencySection";
+import { ComparisonTable } from "@/components/home/ComparisonTable";
 
 export default function Home() {
   return (
@@ -15,28 +18,45 @@ export default function Home() {
       <Navbar />
 
       <div className="flex-grow">
-        {/* Optimized Golden Circle Flow */}
-        {/* 1. WHY: Visceral pain - "Stop Letting Inflation Eat Your Savings" */}
+        {/* ============================================ */}
+        {/* GOLDEN CIRCLE CONVERSION FLOW               */}
+        {/* ============================================ */}
+
+        {/* 1. VISCERAL WHY: Emotional hook - "Your Retirement Is Under Attack" */}
         <WhySection />
 
-        {/* 1.5 QUIZ CTA: Not sure where to start? */}
-        <QuizCTA />
+        {/* 2. AUTHORITY: Instant credibility - Stats & Rich Dad philosophy */}
+        <AuthoritySection />
 
-        {/* 2. QUANTIFIABLE WHY: Wealth Calculator - Show the numbers */}
+        {/* 3. DEEP WHY: Our mission - "Why We Do This" */}
+        <DeepWhySection />
+
+        {/* 4. AGITATION: Make the pain real - Wealth Calculator */}
         <WealthCalculator />
 
-        {/* 3. LOGIC: Paper vs Real Assets - Rich Dad framework */}
+        {/* 5. SOLUTION LOGIC: Why gold works - Rich Dad framework */}
         <ValueProps />
 
-        {/* 4. HOW: 3 Simple Steps - Reduce anxiety */}
-        <ProcessSteps />
+        {/* 6. HOW: Reduce anxiety - "3 Simple Steps" */}
+        <HowSection />
 
-        {/* 5. WHAT: The Solution - Augusta (with scarcity badge) */}
+        {/* 7. ENGAGEMENT: Personalized path - Quiz CTA */}
+        <QuizCTA />
+
+        {/* 8. WHAT: The recommendation - Augusta Featured Partner */}
         <FeaturedPartner />
 
-        {/* Social Proof */}
-        <TrustBadges />
+        {/* 9. SOCIAL PROOF: "People like me" - Testimonials */}
         <Testimonials />
+
+        {/* 10. URGENCY: Why act NOW - Gold prices, central banks */}
+        <UrgencySection />
+
+        {/* 11. COMPARISON: For researchers - All roads lead to Augusta */}
+        <ComparisonTable />
+
+        {/* 12. TRUST: Final reassurance - Badges */}
+        <TrustBadges />
       </div>
 
       <Footer />

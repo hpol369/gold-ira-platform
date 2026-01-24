@@ -225,6 +225,7 @@ export default async function ComparisonPage({ params }: Props) {
                 {showAugustaCTA && (
                   <AugustaCTA
                     variant="inline"
+                    linkContext="comparison"
                     subheadline={`Looking for a third option? Augusta Precious Metals is our #1 rated Gold IRA company for ${new Date().getFullYear()}.`}
                   />
                 )}
@@ -393,7 +394,7 @@ export default async function ComparisonPage({ params }: Props) {
 
                   {/* Augusta CTA (if neither company is Augusta) */}
                   {showAugustaCTA && (
-                    <AugustaCTA variant="sidebar" />
+                    <AugustaCTA variant="sidebar" linkContext="comparison" />
                   )}
 
                   {/* Related Comparisons */}
@@ -443,7 +444,7 @@ export default async function ComparisonPage({ params }: Props) {
         <section className="py-16 bg-slate-50">
           <Container>
             {showAugustaCTA ? (
-              <AugustaCTA variant="footer" />
+              <AugustaCTA variant="footer" linkContext="comparison" />
             ) : (
               <div className="text-center max-w-2xl mx-auto">
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">

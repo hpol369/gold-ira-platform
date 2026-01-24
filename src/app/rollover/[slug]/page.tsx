@@ -489,6 +489,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
         <Container>
           <AugustaCTA
             variant="footer"
+            linkContext="fees"
             headline={`Ready to Roll Over Your ${accountType.name}?`}
             subheadline={`Augusta Precious Metals makes ${accountType.name} to Gold IRA rollovers simple. Their team handles everything—from contacting your custodian to completing all the paperwork. Get started with a free consultation.`}
           />
@@ -780,6 +781,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
         <Container>
           <AugustaCTA
             variant="footer"
+            linkContext="fees"
             headline={`Ready to Roll Over Your ${provider.name} Account?`}
             subheadline={`Augusta Precious Metals makes ${provider.name} rollovers simple. Their team handles everything—from contacting ${provider.name} to completing all the paperwork. Get started with a free consultation.`}
           />

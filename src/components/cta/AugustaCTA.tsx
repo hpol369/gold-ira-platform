@@ -3,13 +3,14 @@
 
 import { ArrowRight, Award, Phone, Shield, Star } from "lucide-react";
 import { getFeaturedCompany } from "@/data/companies";
+import { getAugustaLink, type AugustaContext } from "@/config/affiliates";
 import { cn } from "@/lib/utils";
 
 interface AugustaCTAProps {
   variant?: "default" | "sidebar" | "inline" | "footer" | "banner";
   headline?: string;
   subheadline?: string;
-  context?: string;
+  linkContext?: AugustaContext; // Which Augusta landing page to use
   className?: string;
 }
 
@@ -17,10 +18,11 @@ export function AugustaCTA({
   variant = "default",
   headline,
   subheadline,
-  context,
+  linkContext = "default",
   className,
 }: AugustaCTAProps) {
   const augusta = getFeaturedCompany();
+  const affiliateLink = getAugustaLink(linkContext);
 
   // Sidebar variant - compact for sidebars
   if (variant === "sidebar") {
@@ -59,7 +61,7 @@ export function AugustaCTA({
           </li>
         </ul>
         <a
-          href={augusta.affiliateLink}
+          href={affiliateLink}
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full text-center py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm"
@@ -88,7 +90,7 @@ export function AugustaCTA({
             </p>
           </div>
           <a
-            href={augusta.affiliateLink}
+            href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm whitespace-nowrap"
@@ -119,7 +121,7 @@ export function AugustaCTA({
             </span>
           </div>
           <a
-            href={augusta.affiliateLink}
+            href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm"
@@ -164,7 +166,7 @@ export function AugustaCTA({
           </div>
         </div>
         <a
-          href={augusta.affiliateLink}
+          href={affiliateLink}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
@@ -209,7 +211,7 @@ export function AugustaCTA({
             </li>
           </ul>
           <a
-            href={augusta.affiliateLink}
+            href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
