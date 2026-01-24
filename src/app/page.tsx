@@ -5,6 +5,8 @@ import { Testimonials } from "@/components/home/Testimonials";
 import { ValueProps } from "@/components/home/ValueProps";
 import { ProcessSteps } from "@/components/home/ProcessSteps";
 import { FeaturedPartner } from "@/components/home/FeaturedPartner";
+import { QuizCTA } from "@/components/home/QuizCTA";
+import { WealthCalculator } from "@/components/home/WealthCalculator";
 
 // Golden Circle: WHY (Hero with visceral pain)
 import { WhySection } from "@/components/home/GoldenCircle";
@@ -19,13 +21,19 @@ export default function Home() {
         {/* 1. WHY: Visceral pain - "Stop Letting Inflation Eat Your Savings" */}
         <WhySection />
 
-        {/* 2. LOGIC: Paper vs Real Assets - Rich Dad framework */}
+        {/* 1.5 QUIZ CTA: Not sure where to start? */}
+        <QuizCTA />
+
+        {/* 2. QUANTIFIABLE WHY: Wealth Calculator - Show the numbers */}
+        <WealthCalculator />
+
+        {/* 3. LOGIC: Paper vs Real Assets - Rich Dad framework */}
         <ValueProps />
 
-        {/* 3. HOW: 3 Simple Steps - Reduce anxiety */}
+        {/* 4. HOW: 3 Simple Steps - Reduce anxiety */}
         <ProcessSteps />
 
-        {/* 4. WHAT: The Solution - Augusta (with scarcity badge) */}
+        {/* 5. WHAT: The Solution - Augusta (with scarcity badge) */}
         <FeaturedPartner />
 
         {/* Social Proof */}
