@@ -99,19 +99,19 @@ const schema = {
 
 export default function CheckbookIraRulesPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             IRA Structures
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Checkbook IRA Rules Explained
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             The &quot;checkbook IRA&quot; sounds appealing—direct control over your retirement investments. But for precious metals, it&apos;s a minefield of IRS rules and potential penalties.
                         </p>
                     </div>
@@ -126,7 +126,7 @@ export default function CheckbookIraRulesPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -144,7 +144,7 @@ export default function CheckbookIraRulesPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <FileText className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">What Is a Checkbook IRA?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What Is a Checkbook IRA?</h2>
                             </div>
                             <p>
                                 A &quot;checkbook IRA&quot; (also called an LLC IRA or self-directed IRA LLC) is a structure where your self-directed IRA owns a limited liability company (LLC). You&apos;re the manager of that LLC, which means you can write checks and make investment decisions directly—without going through a custodian for every transaction.
@@ -181,7 +181,7 @@ export default function CheckbookIraRulesPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why It Doesn&apos;t Work for Gold</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why It Doesn&apos;t Work for Gold</h2>
                             </div>
                             <p>
                                 Here&apos;s where people get into trouble. They set up a checkbook IRA, buy gold through the LLC, and then... store it at home. After all, the LLC owns the gold, not them personally. So it should be fine, right?
@@ -204,7 +204,7 @@ export default function CheckbookIraRulesPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Prohibited Transactions</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Prohibited Transactions</h2>
                             </div>
                             <p>
                                 With a checkbook IRA, it&apos;s incredibly easy to accidentally commit a prohibited transaction. These include:
@@ -226,7 +226,7 @@ export default function CheckbookIraRulesPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <XCircle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Real Risks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Real Risks</h2>
                             </div>
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
@@ -278,7 +278,7 @@ export default function CheckbookIraRulesPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">A Better Approach</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">A Better Approach</h2>
                             </div>
                             <p>
                                 For precious metals, the traditional custodian arrangement just works better:

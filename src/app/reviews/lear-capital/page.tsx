@@ -99,12 +99,12 @@ export default function LearCapitalReviewPage() {
                             <section id="overview" className="scroll-mt-32">
                                 <p className="lead">In this <strong>Lear Capital review</strong>, we examine one of the industry&apos;s longest-standing precious metals companies.</p>
                                 <p>Founded in 1997, Lear Capital has over 25 years of experience in the precious metals industry. They&apos;ve built their brand on longevity and their unique price lock guarantee.</p>
-                                <div className="bg-secondary/5 rounded-2xl p-6 border border-secondary/10 not-prose my-8">
+                                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                     <div className="flex items-start gap-4">
                                         <Award className="w-10 h-10 text-secondary flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg mb-2">Lear Capital Highlights</h4>
-                                            <ul className="space-y-2 text-sm text-text-muted">
+                                            <h4 className="font-bold text-white text-lg mb-2">Lear Capital Highlights</h4>
+                                            <ul className="space-y-2 text-sm text-slate-300">
                                                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-secondary" />25+ years in business</li>
                                                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-secondary" />A+ BBB rating</li>
                                                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-secondary" />Price lock guarantee</li>
@@ -123,15 +123,15 @@ export default function LearCapitalReviewPage() {
                             <section id="fees" className="scroll-mt-32">
                                 <h2>Lear Capital Fees</h2>
                                 <div className="overflow-x-auto not-prose my-8">
-                                    <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                        <thead className="bg-gray-50">
-                                            <tr><th className="p-4 border-b font-bold text-primary">Fee Type</th><th className="p-4 border-b font-bold text-primary">Cost</th></tr>
+                                    <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                        <thead className="bg-white/5">
+                                            <tr><th className="p-4 border-b border-white/10 font-bold text-white">Fee Type</th><th className="p-4 border-b border-white/10 font-bold text-white">Cost</th></tr>
                                         </thead>
-                                        <tbody className="divide-y divide-gray-100 text-sm">
-                                            <tr><td className="p-4 font-semibold">Setup Fee</td><td className="p-4">$50-$100</td></tr>
-                                            <tr><td className="p-4 font-semibold">Annual Custodian Fee</td><td className="p-4">$75-$100</td></tr>
-                                            <tr><td className="p-4 font-semibold">Annual Storage Fee</td><td className="p-4">$100-$180</td></tr>
-                                            <tr className="bg-secondary/5"><td className="p-4 font-bold text-primary">Total Annual</td><td className="p-4 font-bold text-primary">$225-$280</td></tr>
+                                        <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                            <tr><td className="p-4 font-semibold text-white">Setup Fee</td><td className="p-4">$50-$100</td></tr>
+                                            <tr><td className="p-4 font-semibold text-white">Annual Custodian Fee</td><td className="p-4">$75-$100</td></tr>
+                                            <tr><td className="p-4 font-semibold text-white">Annual Storage Fee</td><td className="p-4">$100-$180</td></tr>
+                                            <tr className="bg-white/5"><td className="p-4 font-bold text-amber-400">Total Annual</td><td className="p-4 font-bold text-amber-400">$225-$280</td></tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -140,10 +140,10 @@ export default function LearCapitalReviewPage() {
                             <section id="verdict" className="scroll-mt-32">
                                 <h2>Our Verdict</h2>
                                 <p>Lear Capital is best for investors who prioritize working with an established brand with decades of history. Their price lock guarantee adds protection during volatile markets.</p>
-                                <div className="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-8 not-prose text-center">
+                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 mt-8 not-prose text-center">
                                     <ShieldCheck className="w-12 h-12 text-secondary mx-auto mb-4" />
-                                    <h3 className="text-2xl font-serif font-bold text-primary mb-2">Our Rating: 4.4/5</h3>
-                                    <p className="mb-6 text-gray-600">Best for investors seeking an established brand with 25+ years history.</p>
+                                    <h3 className="text-2xl font-serif font-bold text-white mb-2">Our Rating: 4.4/5</h3>
+                                    <p className="mb-6 text-slate-300">Best for investors seeking an established brand with 25+ years history.</p>
                                     <Button variant="gold" size="xl" asChild>
                                         <a href={companyData.visitUrl} target="_blank" rel="noopener noreferrer">Get Free Info Kit <ArrowRight className="ml-2 w-5 h-5" /></a>
                                     </Button>
@@ -153,47 +153,47 @@ export default function LearCapitalReviewPage() {
                             <section id="faq" className="scroll-mt-32">
                                 <h2>Lear Capital FAQs</h2>
                                 <div className="space-y-4 not-prose">
-                                    <details className="group bg-white rounded-xl border border-gray-200 p-6">
-                                        <summary className="flex cursor-pointer items-center justify-between text-primary"><h4 className="text-lg font-bold">Is Lear Capital legitimate?</h4></summary>
-                                        <p className="mt-4 text-gray-700">Yes, Lear Capital is a legitimate A+ BBB-rated company with over 25 years of history.</p>
+                                    <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
+                                        <summary className="flex cursor-pointer items-center justify-between text-white"><h4 className="text-lg font-bold">Is Lear Capital legitimate?</h4></summary>
+                                        <p className="mt-4 text-slate-300">Yes, Lear Capital is a legitimate A+ BBB-rated company with over 25 years of history.</p>
                                     </details>
-                                    <details className="group bg-white rounded-xl border border-gray-200 p-6">
-                                        <summary className="flex cursor-pointer items-center justify-between text-primary"><h4 className="text-lg font-bold">What is the price lock guarantee?</h4></summary>
-                                        <p className="mt-4 text-gray-700">The price lock guarantee locks in your purchase price for a set period, protecting you from price increases during the transaction process.</p>
+                                    <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
+                                        <summary className="flex cursor-pointer items-center justify-between text-white"><h4 className="text-lg font-bold">What is the price lock guarantee?</h4></summary>
+                                        <p className="mt-4 text-slate-300">The price lock guarantee locks in your purchase price for a set period, protecting you from price increases during the transaction process.</p>
                                     </details>
                                 </div>
                             </section>
 
                             {/* Related Content */}
                             <section className="mt-12 not-prose">
-                                <h3 className="text-lg font-bold text-primary mb-4">Compare Other Companies</h3>
+                                <h3 className="text-lg font-bold text-white mb-4">Compare Other Companies</h3>
                                 <div className="grid md:grid-cols-2 gap-3 mb-6">
-                                    <Link href="/reviews/augusta-precious-metals" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">Augusta Precious Metals →</span>
+                                    <Link href="/reviews/augusta-precious-metals" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">Augusta Precious Metals →</span>
                                     </Link>
-                                    <Link href="/reviews/goldco" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">Goldco →</span>
+                                    <Link href="/reviews/goldco" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">Goldco →</span>
                                     </Link>
-                                    <Link href="/reviews/american-hartford-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">American Hartford Gold →</span>
+                                    <Link href="/reviews/american-hartford-gold" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">American Hartford Gold →</span>
                                     </Link>
-                                    <Link href="/reviews/birch-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">Birch Gold Group →</span>
+                                    <Link href="/reviews/birch-gold" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">Birch Gold Group →</span>
                                     </Link>
                                 </div>
-                                <h3 className="text-lg font-bold text-primary mb-4">Helpful Guides</h3>
+                                <h3 className="text-lg font-bold text-white mb-4">Helpful Guides</h3>
                                 <div className="grid md:grid-cols-2 gap-3">
-                                    <Link href="/guide/gold-ira-fees" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">Gold IRA Fees Explained →</span>
+                                    <Link href="/guide/gold-ira-fees" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">Gold IRA Fees Explained →</span>
                                     </Link>
-                                    <Link href="/guide/401k-to-gold-rollover" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">401k to Gold Rollover →</span>
+                                    <Link href="/guide/401k-to-gold-rollover" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">401k to Gold Rollover →</span>
                                     </Link>
-                                    <Link href="/learn/gold-ira-scams" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">Scams to Avoid →</span>
+                                    <Link href="/learn/gold-ira-scams" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">Scams to Avoid →</span>
                                     </Link>
-                                    <Link href="/compare/gold-ira-vs-physical-gold" className="p-3 bg-white rounded-lg border hover:border-secondary transition-colors">
-                                        <span className="text-sm font-semibold text-primary">Gold IRA vs Physical Gold →</span>
+                                    <Link href="/compare/gold-ira-vs-physical-gold" className="p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-secondary transition-colors">
+                                        <span className="text-sm font-semibold text-white">Gold IRA vs Physical Gold →</span>
                                     </Link>
                                 </div>
                             </section>

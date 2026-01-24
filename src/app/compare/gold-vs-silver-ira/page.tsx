@@ -39,7 +39,7 @@ const tocItems = [
 
 export default function GoldVsSilverIraPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
@@ -63,7 +63,7 @@ export default function GoldVsSilverIraPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <p className="lead">
                             <strong>Gold vs. Silver</strong>—it&apos;s one of the oldest debates in precious metals investing. Both have protected wealth for millennia, but they behave very differently. This guide helps you decide how to allocate between these two metals in your IRA.
@@ -103,9 +103,9 @@ export default function GoldVsSilverIraPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
-                                    <h4 className="font-bold text-green-700 mb-3">Gold Strengths</h4>
-                                    <ul className="space-y-2 text-sm text-green-600">
+                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
+                                    <h4 className="font-bold text-green-400 mb-3">Gold Strengths</h4>
+                                    <ul className="space-y-2 text-sm text-green-300">
                                         <li>• Superior stability and crash protection</li>
                                         <li>• Lower storage costs per dollar</li>
                                         <li>• More liquid (easier to sell large amounts)</li>
@@ -113,9 +113,9 @@ export default function GoldVsSilverIraPage() {
                                         <li>• Less affected by economic downturns</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
-                                    <h4 className="font-bold text-red-700 mb-3">Gold Weaknesses</h4>
-                                    <ul className="space-y-2 text-sm text-red-600">
+                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
+                                    <h4 className="font-bold text-red-400 mb-3">Gold Weaknesses</h4>
+                                    <ul className="space-y-2 text-sm text-red-300">
                                         <li>• Higher price per ounce (barrier to entry)</li>
                                         <li>• Lower growth potential than silver</li>
                                         <li>• Less industrial demand</li>
@@ -137,9 +137,9 @@ export default function GoldVsSilverIraPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
-                                    <h4 className="font-bold text-green-700 mb-3">Silver Strengths</h4>
-                                    <ul className="space-y-2 text-sm text-green-600">
+                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
+                                    <h4 className="font-bold text-green-400 mb-3">Silver Strengths</h4>
+                                    <ul className="space-y-2 text-sm text-green-300">
                                         <li>• Higher growth potential in bull markets</li>
                                         <li>• Lower price = more accessible</li>
                                         <li>• Strong industrial demand (solar, electronics)</li>
@@ -147,9 +147,9 @@ export default function GoldVsSilverIraPage() {
                                         <li>• Potential for outsized gains</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
-                                    <h4 className="font-bold text-red-700 mb-3">Silver Weaknesses</h4>
-                                    <ul className="space-y-2 text-sm text-red-600">
+                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
+                                    <h4 className="font-bold text-red-400 mb-3">Silver Weaknesses</h4>
+                                    <ul className="space-y-2 text-sm text-red-300">
                                         <li>• Higher volatility (bigger drops possible)</li>
                                         <li>• Higher storage costs per dollar</li>
                                         <li>• More affected by economic recessions</li>
@@ -173,47 +173,47 @@ export default function GoldVsSilverIraPage() {
                             <h2>Key Differences: Gold vs. Silver</h2>
 
                             <div className="not-prose space-y-6 my-8">
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
                                         <TrendingUp className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Volatility & Returns</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold:</strong> More stable, typically ±10-20% annual swings. Better for preservation.</p>
-                                        <p className="text-text-muted mt-1"><strong>Silver:</strong> More volatile, can swing ±30-50%. From 2008-2011, silver rose 400%+ while gold rose 166%. But it also falls harder.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Volatility & Returns</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold:</strong> More stable, typically ±10-20% annual swings. Better for preservation.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Silver:</strong> More volatile, can swing ±30-50%. From 2008-2011, silver rose 400%+ while gold rose 166%. But it also falls harder.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
                                         <Coins className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Industrial Demand</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold:</strong> ~10% industrial use. Primarily an investment/store of value.</p>
-                                        <p className="text-text-muted mt-1"><strong>Silver:</strong> ~50% industrial use. Essential for solar panels, electronics, EVs, and medical devices. Green energy transition is bullish for silver.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Industrial Demand</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold:</strong> ~10% industrial use. Primarily an investment/store of value.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Silver:</strong> ~50% industrial use. Essential for solar panels, electronics, EVs, and medical devices. Green energy transition is bullish for silver.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0">
                                         <DollarSign className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Storage Costs</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold:</strong> Higher value-to-weight ratio. $50,000 in gold weighs ~1.5 lbs.</p>
-                                        <p className="text-text-muted mt-1"><strong>Silver:</strong> Same $50,000 weighs ~100+ lbs. More space = higher storage fees.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Storage Costs</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold:</strong> Higher value-to-weight ratio. $50,000 in gold weighs ~1.5 lbs.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Silver:</strong> Same $50,000 weighs ~100+ lbs. More space = higher storage fees.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Crash Protection</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold:</strong> Superior. Often rises when stocks crash. Pure &quot;safe haven&quot; asset.</p>
-                                        <p className="text-text-muted mt-1"><strong>Silver:</strong> Good but less reliable. Can initially fall with stocks (due to industrial demand drop), then recover.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Crash Protection</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold:</strong> Superior. Often rises when stocks crash. Pure &quot;safe haven&quot; asset.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Silver:</strong> Good but less reliable. Can initially fall with stocks (due to industrial demand drop), then recover.</p>
                                     </div>
                                 </div>
                             </div>
@@ -238,8 +238,8 @@ export default function GoldVsSilverIraPage() {
                                 The <strong>gold-silver ratio</strong> measures how many ounces of silver it takes to buy one ounce of gold. It&apos;s a key indicator many investors use to determine which metal is relatively undervalued.
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                <h4 className="font-bold text-primary text-lg mb-4">Gold-Silver Ratio History</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
+                                <h4 className="font-bold text-amber-400 text-lg mb-4">Gold-Silver Ratio History</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
                                         <span className="w-3 h-3 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
@@ -285,36 +285,36 @@ export default function GoldVsSilverIraPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Strategy</th>
-                                            <th className="p-4 border-b font-bold text-primary">Gold</th>
-                                            <th className="p-4 border-b font-bold text-primary">Silver</th>
-                                            <th className="p-4 border-b font-bold text-primary">Best For</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Strategy</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Gold</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Silver</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Best For</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4 font-semibold">Conservative</td>
+                                            <td className="p-4 font-semibold text-white">Conservative</td>
                                             <td className="p-4">75-80%</td>
                                             <td className="p-4">20-25%</td>
                                             <td className="p-4">Near retirement, stability-focused</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
-                                            <td className="p-4 font-semibold">Balanced</td>
+                                        <tr className="bg-white/5">
+                                            <td className="p-4 font-semibold text-white">Balanced</td>
                                             <td className="p-4">60-70%</td>
                                             <td className="p-4">30-40%</td>
                                             <td className="p-4">Most investors, diversified approach</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Growth</td>
+                                            <td className="p-4 font-semibold text-white">Growth</td>
                                             <td className="p-4">50%</td>
                                             <td className="p-4">50%</td>
                                             <td className="p-4">Longer timeline, higher risk tolerance</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
-                                            <td className="p-4 font-semibold">Aggressive</td>
+                                        <tr className="bg-white/5">
+                                            <td className="p-4 font-semibold text-white">Aggressive</td>
                                             <td className="p-4">30-40%</td>
                                             <td className="p-4">60-70%</td>
                                             <td className="p-4">Silver bulls, long timeline</td>
@@ -338,58 +338,58 @@ export default function GoldVsSilverIraPage() {
                             <h2>Gold vs. Silver IRA FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I hold both gold and silver in the same IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Yes! Most precious metals IRAs hold a combination of gold and silver (and sometimes platinum and palladium). This is the most common approach—you don&apos;t need separate accounts. Your custodian and depository can hold multiple metals in the same IRA.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Is silver a better investment than gold right now?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         The gold-silver ratio suggests silver is undervalued relative to gold. If you believe precious metals will rise, silver has more upside potential. However, &quot;better&quot; depends on your goals—gold is better for stability, silver for growth. Most advisors recommend owning both.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Why is silver cheaper than gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Silver is more abundant in the Earth&apos;s crust than gold (about 17x more). Additionally, silver is consumed in industrial applications (it&apos;s not recycled as much as gold), while gold is primarily hoarded. Supply and demand dynamics keep silver cheaper per ounce—but that doesn&apos;t make it less valuable as an investment.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What&apos;s the minimum to start a gold or silver IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Minimums vary by company. <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> accepts as little as $2,000. <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> starts at $25,000. <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link> requires $50,000+. Lower minimums make silver more accessible since you can buy more ounces per dollar.
                                     </p>
                                 </details>

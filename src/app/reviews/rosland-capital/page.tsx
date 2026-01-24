@@ -93,13 +93,13 @@ export default function RoslandCapitalReviewPage() {
                                 </section>
 
                                 <section id="verdict" className="scroll-mt-32">
-                                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 not-prose">
-                                        <h2 className="font-bold text-gray-900 m-0 mb-4 text-xl">The Verdict</h2>
-                                        <p className="text-gray-700 mb-4">
+                                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose">
+                                        <h2 className="font-bold text-white m-0 mb-4 text-xl">The Verdict</h2>
+                                        <p className="text-slate-300 mb-4">
                                             Rosland Capital is a legitimate, established company with an A+ BBB rating. Their low entry point ($2,000 for non-IRA purchases) makes them accessible. However, customer reviews suggest their spreads on numismatic coins can be higher than competitors.
                                         </p>
-                                        <p className="text-gray-700">
-                                            <strong>Best for:</strong> Small cash purchases or investors who want a recognizable brand. For larger Gold IRAs, you may find better value elsewhere.
+                                        <p className="text-slate-300">
+                                            <strong className="text-white">Best for:</strong> Small cash purchases or investors who want a recognizable brand. For larger Gold IRAs, you may find better value elsewhere.
                                         </p>
                                     </div>
                                 </section>

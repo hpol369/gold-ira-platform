@@ -48,7 +48,7 @@ const schema = {
 
 export default function LearVsNoblePage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
@@ -70,7 +70,7 @@ export default function LearVsNoblePage() {
                         <TableOfContents items={tocItems} />
                     </aside>
 
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
                         <p className="lead">
                             This is a battle between experience and accessibility. <strong>Lear Capital</strong> represents the &quot;Old Guard&quot;—founded in 1997, they&apos;ve weathered every market storm and come out stronger. <strong>Noble Gold</strong> is the &quot;New Guard&quot;—founded in 2016, they&apos;ve disrupted the industry with the lowest minimums and a refreshingly simple approach. Here&apos;s which one makes sense for your situation.
                         </p>

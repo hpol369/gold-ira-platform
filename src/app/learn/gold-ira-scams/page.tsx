@@ -102,19 +102,19 @@ const schema = {
 
 export default function GoldIraScamsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-red-500 font-bold tracking-widest uppercase text-xs mb-4 block">
                             Consumer Protection
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Gold IRA Scams to Avoid in 2026
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             Protect your retirement savings from dishonest dealers. Learn the warning signs before it&apos;s too late.
                         </p>
                     </div>
@@ -129,7 +129,7 @@ export default function GoldIraScamsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -152,7 +152,7 @@ export default function GoldIraScamsPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #1: The &quot;Home Storage Gold IRA&quot;</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Scam #1: The &quot;Home Storage Gold IRA&quot;</h2>
                             </div>
                             <p>
                                 <strong>The Pitch:</strong> &quot;Keep your IRA gold at home! Set up an LLC and store your metals in your own safe!&quot;
@@ -199,7 +199,7 @@ export default function GoldIraScamsPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #2: Excessive Premiums</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Scam #2: Excessive Premiums</h2>
                             </div>
                             <p>
                                 <strong>The Pitch:</strong> &quot;We have the lowest fees in the industry!&quot; (While charging 15-30% over spot price for metals)
@@ -208,7 +208,7 @@ export default function GoldIraScamsPage() {
                                 <strong>The Reality:</strong> Low fees mean nothing if the company makes up for it with outrageous premiums. The &quot;premium&quot; is the markup over the spot price of gold—and it&apos;s where most companies make their money.
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                 <h4 className="font-bold text-white text-lg mb-4">What Premiums Should You Expect?</h4>
                                 <div className="space-y-3">
                                     <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
@@ -245,7 +245,7 @@ export default function GoldIraScamsPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #3: The Numismatic Coin Push</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Scam #3: The Numismatic Coin Push</h2>
                             </div>
                             <p>
                                 <strong>The Pitch:</strong> &quot;These rare, collectible coins are worth much more than their gold content! They&apos;re better investments and could double in value!&quot;
@@ -272,7 +272,7 @@ export default function GoldIraScamsPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Phone className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #4: High-Pressure Sales Tactics</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Scam #4: High-Pressure Sales Tactics</h2>
                             </div>
                             <p>
                                 <strong>The Pitch:</strong> &quot;Gold is about to skyrocket! You need to act NOW before prices go through the roof! This special deal expires today!&quot;
@@ -319,7 +319,7 @@ export default function GoldIraScamsPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Search className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Scam #5: Fake Reviews & Testimonials</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Scam #5: Fake Reviews & Testimonials</h2>
                             </div>
                             <p>
                                 <strong>The Problem:</strong> Some companies manufacture positive reviews or cherry-pick testimonials while suppressing negative feedback.
@@ -358,7 +358,7 @@ export default function GoldIraScamsPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Complete Red Flags Checklist</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Complete Red Flags Checklist</h2>
                             </div>
                             <p>
                                 Before working with any Gold IRA company, watch for these warning signs:
@@ -409,7 +409,7 @@ export default function GoldIraScamsPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Shield className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How to Verify a Gold IRA Company</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Verify a Gold IRA Company</h2>
                             </div>
                             <p>
                                 Follow this verification process before committing:
@@ -420,36 +420,36 @@ export default function GoldIraScamsPage() {
                                     <div className="flex gap-4 items-start">
                                         <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Check BBB Rating & Complaints</h4>
-                                            <p className="text-text-muted mt-1">Visit bbb.org and look up the company. Look for A+ or A rating. Read complaint history—not just the rating. How did the company respond to complaints?</p>
+                                            <h4 className="font-bold text-white text-lg">Check BBB Rating & Complaints</h4>
+                                            <p className="text-slate-300 mt-1">Visit bbb.org and look up the company. Look for A+ or A rating. Read complaint history—not just the rating. How did the company respond to complaints?</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
                                         <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Read Independent Reviews</h4>
-                                            <p className="text-text-muted mt-1">Check Google Reviews, Trustpilot, Consumer Affairs, and Business Consumer Alliance. Look for patterns in both positive and negative reviews.</p>
+                                            <h4 className="font-bold text-white text-lg">Read Independent Reviews</h4>
+                                            <p className="text-slate-300 mt-1">Check Google Reviews, Trustpilot, Consumer Affairs, and Business Consumer Alliance. Look for patterns in both positive and negative reviews.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
                                         <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Verify Business History</h4>
-                                            <p className="text-text-muted mt-1">How long have they been in business? Check state business registrations. Newer companies aren&apos;t automatically bad, but longevity is a positive sign.</p>
+                                            <h4 className="font-bold text-white text-lg">Verify Business History</h4>
+                                            <p className="text-slate-300 mt-1">How long have they been in business? Check state business registrations. Newer companies aren&apos;t automatically bad, but longevity is a positive sign.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
                                         <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Request Written Information</h4>
-                                            <p className="text-text-muted mt-1">Ask for fee schedules, pricing, and all terms in writing. Reputable companies provide transparent documentation. Avoid companies that won&apos;t put things in writing.</p>
+                                            <h4 className="font-bold text-white text-lg">Request Written Information</h4>
+                                            <p className="text-slate-300 mt-1">Ask for fee schedules, pricing, and all terms in writing. Reputable companies provide transparent documentation. Avoid companies that won&apos;t put things in writing.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
                                         <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
                                         <div>
-                                            <h4 className="font-bold text-primary text-lg">Compare Multiple Companies</h4>
-                                            <p className="text-text-muted mt-1">Get quotes from at least 2-3 companies. Compare total costs (fees + premiums), not just one metric. This also helps you identify outliers.</p>
+                                            <h4 className="font-bold text-white text-lg">Compare Multiple Companies</h4>
+                                            <p className="text-slate-300 mt-1">Get quotes from at least 2-3 companies. Compare total costs (fees + premiums), not just one metric. This also helps you identify outliers.</p>
                                         </div>
                                     </div>
                                 </div>

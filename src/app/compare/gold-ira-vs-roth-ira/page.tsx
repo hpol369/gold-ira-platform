@@ -103,7 +103,7 @@ const schema = {
 
 export default function GoldIraVsRothIraPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -128,7 +128,7 @@ export default function GoldIraVsRothIraPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <p className="lead">
                             This comparison confuses a lot of people. They think it&apos;s either/or. It&apos;s not. A &quot;Gold IRA&quot; and a &quot;Roth IRA&quot; aren&apos;t mutually exclusive—you can actually have a <em>Roth Gold IRA</em> that combines both.
@@ -158,7 +158,7 @@ export default function GoldIraVsRothIraPage() {
                                 optionBName="Traditional Roth IRA"
                                 rows={comparisonRows}
                             />
-                            <p className="text-sm text-text-muted mt-4">
+                            <p className="text-sm text-slate-300 mt-4">
                                 Note: A &quot;Roth Gold IRA&quot; combines benefits of both—you hold physical gold with tax-free withdrawals.
                             </p>
                         </section>
@@ -210,58 +210,58 @@ export default function GoldIraVsRothIraPage() {
                             <h2>Key Differences: Gold IRA vs. Roth IRA</h2>
 
                             <div className="not-prose space-y-6 my-8">
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
                                         <Scale className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Asset Type</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> Holds physical gold, silver, platinum, and palladium bars and coins.</p>
-                                        <p className="text-text-muted mt-1"><strong>Roth IRA:</strong> Typically holds stocks, bonds, mutual funds, and ETFs (paper assets).</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Asset Type</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Holds physical gold, silver, platinum, and palladium bars and coins.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Roth IRA:</strong> Typically holds stocks, bonds, mutual funds, and ETFs (paper assets).</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
                                         <TrendingUp className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Growth Potential</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> More modest appreciation. Gold averages 7-10% annually over long periods.</p>
-                                        <p className="text-text-muted mt-1"><strong>Roth IRA:</strong> Higher potential. S&P 500 has averaged ~10% annually historically.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Growth Potential</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> More modest appreciation. Gold averages 7-10% annually over long periods.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Roth IRA:</strong> Higher potential. S&P 500 has averaged ~10% annually historically.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Protection & Stability</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> Excellent crash protection. Gold often rises when stocks fall.</p>
-                                        <p className="text-text-muted mt-1"><strong>Roth IRA:</strong> Fully exposed to market volatility. Can lose 30-40% in crashes.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Protection & Stability</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Excellent crash protection. Gold often rises when stocks fall.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Roth IRA:</strong> Fully exposed to market volatility. Can lose 30-40% in crashes.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
                                         <DollarSign className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Income Limits</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> No income limits. Anyone can contribute regardless of earnings.</p>
-                                        <p className="text-text-muted mt-1"><strong>Roth IRA:</strong> Phase-out at $146,000-$161,000 (single) or $230,000-$240,000 (married).</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Income Limits</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> No income limits. Anyone can contribute regardless of earnings.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Roth IRA:</strong> Phase-out at $146,000-$161,000 (single) or $230,000-$240,000 (married).</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
                                         <Clock className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">Required Minimum Distributions</h4>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA (Traditional):</strong> RMDs required starting at age 73.</p>
-                                        <p className="text-text-muted mt-1"><strong>Roth IRA:</strong> No RMDs during your lifetime—leave to heirs tax-free.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">Required Minimum Distributions</h4>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA (Traditional):</strong> RMDs required starting at age 73.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Roth IRA:</strong> No RMDs during your lifetime—leave to heirs tax-free.</p>
                                     </div>
                                 </div>
                             </div>
@@ -287,23 +287,23 @@ export default function GoldIraVsRothIraPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Tax Feature</th>
-                                            <th className="p-4 border-b font-bold text-primary">Traditional Gold IRA</th>
-                                            <th className="p-4 border-b font-bold text-primary">Roth Gold IRA</th>
-                                            <th className="p-4 border-b font-bold text-primary">Roth IRA (Stocks)</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Tax Feature</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Traditional Gold IRA</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Roth Gold IRA</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Roth IRA (Stocks)</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4 font-semibold">Contributions</td>
+                                            <td className="p-4 font-semibold text-white">Contributions</td>
                                             <td className="p-4">Pre-tax (deductible)</td>
                                             <td className="p-4">After-tax</td>
                                             <td className="p-4">After-tax</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
+                                        <tr className="bg-white/5">
                                             <td className="p-4 font-semibold">Growth</td>
                                             <td className="p-4">Tax-deferred</td>
                                             <td className="p-4">Tax-free</td>
@@ -315,7 +315,7 @@ export default function GoldIraVsRothIraPage() {
                                             <td className="p-4">Tax-free</td>
                                             <td className="p-4">Tax-free</td>
                                         </tr>
-                                        <tr className="bg-background-subtle">
+                                        <tr className="bg-white/5">
                                             <td className="p-4 font-semibold">Best If</td>
                                             <td className="p-4">Lower tax bracket in retirement</td>
                                             <td className="p-4">Expect gold to appreciate significantly</td>
@@ -348,11 +348,11 @@ export default function GoldIraVsRothIraPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
-                                    <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-green-500/10 border border-green-500/30">
+                                    <ShieldCheck className="w-6 h-6 text-green-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-green-700">Choose a Gold IRA if...</h4>
-                                        <ul className="text-sm text-green-600 mt-2 space-y-1">
+                                        <h4 className="font-bold text-green-400">Choose a Gold IRA if...</h4>
+                                        <ul className="text-sm text-green-300 mt-2 space-y-1">
                                             <li>• You&apos;re concerned about inflation eating your savings</li>
                                             <li>• You want protection against stock market crashes</li>
                                             <li>• You&apos;re nearing retirement and need stability</li>
@@ -361,11 +361,11 @@ export default function GoldIraVsRothIraPage() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
-                                    <TrendingUp className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-blue-500/10 border border-blue-500/30">
+                                    <TrendingUp className="w-6 h-6 text-blue-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-blue-700">Choose a Traditional Roth IRA if...</h4>
-                                        <ul className="text-sm text-blue-600 mt-2 space-y-1">
+                                        <h4 className="font-bold text-blue-400">Choose a Traditional Roth IRA if...</h4>
+                                        <ul className="text-sm text-blue-300 mt-2 space-y-1">
                                             <li>• You have 20+ years until retirement</li>
                                             <li>• You want maximum growth potential</li>
                                             <li>• You can tolerate significant volatility</li>
@@ -374,11 +374,11 @@ export default function GoldIraVsRothIraPage() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-secondary/10 border border-secondary/20">
-                                    <Scale className="w-6 h-6 text-secondary shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/30">
+                                    <Scale className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-primary">Consider Both if...</h4>
-                                        <ul className="text-sm text-text-muted mt-2 space-y-1">
+                                        <h4 className="font-bold text-amber-400">Consider Both if...</h4>
+                                        <ul className="text-sm text-slate-300 mt-2 space-y-1">
                                             <li>• You want diversification across asset types</li>
                                             <li>• You believe in the &quot;don&apos;t put all eggs in one basket&quot; approach</li>
                                             <li>• You want growth potential WITH crash protection</li>
@@ -398,58 +398,58 @@ export default function GoldIraVsRothIraPage() {
                             <h2>Gold IRA vs. Roth IRA FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I have both a Gold IRA and a Roth IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Yes! You can contribute to both in the same year, subject to combined contribution limits. The total across all IRAs cannot exceed $7,000 ($8,000 if 50+) in 2026. Many investors split contributions between both types for diversification.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What is a Roth Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         A Roth Gold IRA combines the tax benefits of a Roth IRA with physical gold holdings. You contribute after-tax dollars, but all growth and withdrawals are tax-free. This is ideal if you expect gold to appreciate significantly—you&apos;ll never pay taxes on those gains.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I convert my Roth IRA to a Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Yes! You can transfer funds from a traditional Roth IRA (stocks) to a Roth Gold IRA (physical metals) tax-free. This is a direct transfer between custodians and maintains the Roth tax treatment. Contact a <Link href="/reviews" className="text-secondary hover:underline">reputable gold IRA company</Link> to facilitate the transfer.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Which has better returns: Gold IRA or Roth IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Historically, stocks (Roth IRA) have provided higher average returns (~10%/year) than gold (~7-8%/year). However, gold provides better protection during crashes—it often rises when stocks fall. The &quot;best&quot; depends on whether you prioritize growth or protection. Many investors use both.
                                     </p>
                                 </details>

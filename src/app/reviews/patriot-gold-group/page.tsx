@@ -137,15 +137,15 @@ export default function PatriotGoldReviewPage() {
 
                                 {/* Verdict Section */}
                                 <section id="verdict" className="scroll-mt-32">
-                                    <div className="bg-secondary/5 p-8 rounded-2xl border border-secondary/20 not-prose">
+                                    <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 not-prose">
                                         <div className="flex items-center gap-4 mb-4">
                                             <TrendingUp className="w-10 h-10 text-secondary" />
-                                            <h2 className="text-2xl font-bold text-primary m-0">The Verdict</h2>
+                                            <h2 className="text-2xl font-bold text-white m-0">The Verdict</h2>
                                         </div>
-                                        <p className="text-gray-700 mb-4">
-                                            Patriot Gold Group is legitimate and well-reviewed. Their &quot;No-Fee for Life&quot; program is real—but you&apos;ll need at least <strong>$100,000</strong> to qualify. For smaller accounts, you&apos;ll pay standard industry fees.
+                                        <p className="text-slate-300 mb-4">
+                                            Patriot Gold Group is legitimate and well-reviewed. Their &quot;No-Fee for Life&quot; program is real—but you&apos;ll need at least <strong className="text-white">$100,000</strong> to qualify. For smaller accounts, you&apos;ll pay standard industry fees.
                                         </p>
-                                        <p className="text-gray-700 mb-6">
+                                        <p className="text-slate-300 mb-6">
                                             Their direct dealer model can save you money on coin premiums, and their A+ BBB rating shows they deliver on promises. A solid choice for investors with six figures to roll over.
                                         </p>
                                         <Button variant="gold" asChild>

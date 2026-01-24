@@ -124,21 +124,21 @@ export default function LearCapitalComplaintsPage() {
                         <section id="current-status" className="scroll-mt-32">
                             <h2>Lear Capital in 2026</h2>
                             <div className="not-prose my-8 grid md:grid-cols-4 gap-4">
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">A+</div>
-                                    <div className="text-sm text-gray-500">BBB Rating</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">A+</div>
+                                    <div className="text-sm text-slate-400">BBB Rating</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">25+</div>
-                                    <div className="text-sm text-gray-500">Years in Business</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">25+</div>
+                                    <div className="text-sm text-slate-400">Years in Business</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">4.8/5</div>
-                                    <div className="text-sm text-gray-500">Trustpilot</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">4.8/5</div>
+                                    <div className="text-sm text-slate-400">Trustpilot</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">$10k</div>
-                                    <div className="text-sm text-gray-500">Minimum</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">$10k</div>
+                                    <div className="text-sm text-slate-400">Minimum</div>
                                 </div>
                             </div>
 
@@ -155,21 +155,21 @@ export default function LearCapitalComplaintsPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">1. Sales Call Persistence</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">1. Sales Call Persistence</h4>
+                                    <p className="text-slate-300 text-sm">
                                         Lear Capital has an aggressive sales team. If you request info, expect follow-up calls. This isn&apos;t fraud—it&apos;s just their sales culture. You can ask to be removed from their call list.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">2. Spread/Premium Questions</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">2. Spread/Premium Questions</h4>
+                                    <p className="text-slate-300 text-sm">
                                         Some customers still don&apos;t fully understand the spread when they buy. However, Lear Capital now provides written disclosures upfront—a direct result of the lawsuit.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">3. Higher Fees Than Some Competitors</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">3. Higher Fees Than Some Competitors</h4>
+                                    <p className="text-slate-300 text-sm">
                                         Lear Capital&apos;s annual fees ($225-280/year) are higher than budget competitors. You&apos;re paying for a 25-year track record and their Price Lock Guarantee.
                                     </p>
                                 </div>
@@ -180,17 +180,17 @@ export default function LearCapitalComplaintsPage() {
                         <section id="improvements" className="scroll-mt-32">
                             <h2>How They Fixed the Issues</h2>
                             <div className="not-prose my-6 space-y-3">
-                                <div className="flex gap-3 items-start p-4 bg-white rounded-lg border border-gray-200">
-                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-gray-700"><strong>Price Lock Guarantee:</strong> They now lock in your purchase price, so no surprises if metal prices move during processing</p>
+                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                                    <p className="text-slate-300"><strong className="text-white">Price Lock Guarantee:</strong> They now lock in your purchase price, so no surprises if metal prices move during processing</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-white rounded-lg border border-gray-200">
-                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-gray-700"><strong>Written fee disclosures:</strong> All spreads and fees are now documented upfront before you commit</p>
+                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                                    <p className="text-slate-300"><strong className="text-white">Written fee disclosures:</strong> All spreads and fees are now documented upfront before you commit</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-white rounded-lg border border-gray-200">
-                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-gray-700"><strong>Compliance overhaul:</strong> The lawsuit forced them to tighten internal controls—making them safer than before</p>
+                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                                    <p className="text-slate-300"><strong className="text-white">Compliance overhaul:</strong> The lawsuit forced them to tighten internal controls—making them safer than before</p>
                                 </div>
                             </div>
                         </section>

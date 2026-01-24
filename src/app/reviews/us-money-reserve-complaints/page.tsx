@@ -105,21 +105,21 @@ export default function UsMoneyReserveComplaintsPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">Persistent Calling</h4>
-                                    <p className="text-gray-600 text-sm">Multiple calls per day, sometimes for weeks after requesting information. Even after asking them to stop.</p>
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">Persistent Calling</h4>
+                                    <p className="text-slate-300 text-sm">Multiple calls per day, sometimes for weeks after requesting information. Even after asking them to stop.</p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">Urgency Tactics</h4>
-                                    <p className="text-gray-600 text-sm">&quot;This price is only good for today&quot; or &quot;We only have a few of these left.&quot; Classic pressure tactics.</p>
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">Urgency Tactics</h4>
+                                    <p className="text-slate-300 text-sm">&quot;This price is only good for today&quot; or &quot;We only have a few of these left.&quot; Classic pressure tactics.</p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">Fear-Based Selling</h4>
-                                    <p className="text-gray-600 text-sm">Warnings about economic collapse, dollar devaluation, or government confiscation to create urgency.</p>
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">Fear-Based Selling</h4>
+                                    <p className="text-slate-300 text-sm">Warnings about economic collapse, dollar devaluation, or government confiscation to create urgency.</p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">Numismatic Upselling</h4>
-                                    <p className="text-gray-600 text-sm">Pushing expensive &quot;exclusive&quot; or &quot;limited edition&quot; coins instead of standard bullion.</p>
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">Numismatic Upselling</h4>
+                                    <p className="text-slate-300 text-sm">Pushing expensive &quot;exclusive&quot; or &quot;limited edition&quot; coins instead of standard bullion.</p>
                                 </div>
                             </div>
 
@@ -167,27 +167,27 @@ export default function UsMoneyReserveComplaintsPage() {
 
                         {/* How to Stop Calls */}
                         <section id="stop-calls" className="scroll-mt-32">
-                            <div className="bg-gray-100 p-6 rounded-xl border border-gray-200 not-prose">
-                                <h3 className="flex items-center gap-2 font-bold text-gray-800 text-xl mb-4">
+                            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose">
+                                <h3 className="flex items-center gap-2 font-bold text-white text-xl mb-4">
                                     <PhoneOff className="w-5 h-5" /> How to Stop the Calls
                                 </h3>
-                                <p className="text-gray-700 mb-4">If you&apos;re getting unwanted calls from US Money Reserve, here&apos;s what to do:</p>
+                                <p className="text-slate-300 mb-4">If you&apos;re getting unwanted calls from US Money Reserve, here&apos;s what to do:</p>
                                 <div className="space-y-3">
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                                        <p className="text-gray-700"><strong>Ask to be removed:</strong> Tell the caller directly, &quot;Please remove me from your call list.&quot; They&apos;re legally required to comply.</p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                                        <p className="text-slate-300"><strong className="text-white">Ask to be removed:</strong> Tell the caller directly, &quot;Please remove me from your call list.&quot; They&apos;re legally required to comply.</p>
                                     </div>
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                                        <p className="text-gray-700"><strong>Send an email:</strong> Write to their customer service requesting removal in writing. Keep a copy.</p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                                        <p className="text-slate-300"><strong className="text-white">Send an email:</strong> Write to their customer service requesting removal in writing. Keep a copy.</p>
                                     </div>
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                                        <p className="text-gray-700"><strong>Register with Do Not Call:</strong> Add your number to the National Do Not Call Registry at <a href="https://www.donotcall.gov" className="text-secondary underline" target="_blank" rel="noopener noreferrer">donotcall.gov</a></p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                                        <p className="text-slate-300"><strong className="text-white">Register with Do Not Call:</strong> Add your number to the National Do Not Call Registry at <a href="https://www.donotcall.gov" className="text-secondary underline" target="_blank" rel="noopener noreferrer">donotcall.gov</a></p>
                                     </div>
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                                        <p className="text-gray-700"><strong>File a BBB complaint:</strong> If calls continue after you&apos;ve asked to stop, file a complaint. Companies care about their BBB rating.</p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                                        <p className="text-slate-300"><strong className="text-white">File a BBB complaint:</strong> If calls continue after you&apos;ve asked to stop, file a complaint. Companies care about their BBB rating.</p>
                                     </div>
                                 </div>
                             </div>

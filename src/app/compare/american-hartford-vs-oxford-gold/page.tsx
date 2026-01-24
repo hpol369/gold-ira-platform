@@ -81,7 +81,7 @@ const schema = {
 
 export default function AhgVsOxfordPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -107,7 +107,7 @@ export default function AhgVsOxfordPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <p className="lead">
                             If you watch cable news, you've seen the ads for <strong>American Hartford Gold</strong>. <strong>Oxford Gold Group</strong> is their quieter but highly competent rival. Both specialize in customer service and competitive pricing.

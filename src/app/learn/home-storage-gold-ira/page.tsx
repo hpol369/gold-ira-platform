@@ -99,7 +99,7 @@ const schema = {
 
 export default function HomeStorageGoldIraPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-red-900 text-white py-16 border-b border-red-800">
@@ -127,7 +127,7 @@ export default function HomeStorageGoldIraPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -149,7 +149,7 @@ export default function HomeStorageGoldIraPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Home className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">What Is a &quot;Home Storage Gold IRA&quot;?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What Is a &quot;Home Storage Gold IRA&quot;?</h2>
                             </div>
                             <p>
                                 The pitch goes something like this: <em>&quot;Why trust some bank with YOUR gold? With our special IRA structure, you can keep your gold at home where you can see it, touch it, and protect it yourself.&quot;</em>
@@ -168,7 +168,7 @@ export default function HomeStorageGoldIraPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Home Storage Isn&apos;t Legal</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Home Storage Isn&apos;t Legal</h2>
                             </div>
                             <p>
                                 The IRS rules are crystal clear. Under IRC Section 408(m), precious metals in an IRA must be held by a bank or approved non-bank trustee. The metals must be stored at an IRS-approved depository.
@@ -191,7 +191,7 @@ export default function HomeStorageGoldIraPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Gavel className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Court Cases That Settled This</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Court Cases That Settled This</h2>
                             </div>
                             <p>
                                 If there was any doubt, the Tax Court has made it abundantly clear that home storage doesn&apos;t work:
@@ -211,7 +211,7 @@ export default function HomeStorageGoldIraPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <XCircle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">What You&apos;ll Actually Pay</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What You&apos;ll Actually Pay</h2>
                             </div>
                             <p>
                                 Let&apos;s say you have $100,000 in a Gold IRA and you move it to home storage. Here&apos;s what happens when the IRS catches up:
@@ -236,7 +236,7 @@ export default function HomeStorageGoldIraPage() {
                                 <div className="p-3 bg-slate-800/50 rounded-lg text-slate-400">
                                     <ShieldX className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The &quot;LLC Loophole&quot; Myth</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The &quot;LLC Loophole&quot; Myth</h2>
                             </div>
                             <p>
                                 Here&apos;s how the scam usually works: A company tells you to set up an LLC. Your self-directed IRA owns the LLC. The LLC then &quot;buys&quot; gold and stores it at your home.

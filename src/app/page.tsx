@@ -6,6 +6,7 @@ import { ValueProps } from "@/components/home/ValueProps";
 import { FeaturedPartner } from "@/components/home/FeaturedPartner";
 import { QuizCTA } from "@/components/home/QuizCTA";
 import { WealthCalculator } from "@/components/home/WealthCalculator";
+import { DailyBrief } from "@/components/home/DailyBrief";
 import { WhySection, DeepWhySection } from "@/components/home/GoldenCircle";
 import { HowSection } from "@/components/home/GoldenCircle";
 import { AuthoritySection } from "@/components/home/AuthoritySection";
@@ -33,6 +34,9 @@ export default function Home() {
 
         {/* 4. AGITATION: Make the pain real - Wealth Calculator */}
         <WealthCalculator />
+
+        {/* 4.5. CURRENT MARKET: Daily Brief - Spot prices & headlines */}
+        <DailyBrief />
 
         {/* 5. SOLUTION LOGIC: Why gold works - Rich Dad framework */}
         <ValueProps />

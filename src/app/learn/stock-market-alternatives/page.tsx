@@ -95,19 +95,19 @@ const schema = {
 
 export default function StockMarketAlternativesPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Portfolio Diversification
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Stock Market Alternatives
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             8 proven ways to diversify your portfolio beyond traditional stocks for better risk-adjusted returns.
                         </p>
                     </div>
@@ -122,7 +122,7 @@ export default function StockMarketAlternativesPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -149,7 +149,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">1. Gold & Precious Metals</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Gold & Precious Metals</h2>
                             </div>
                             <p>
                                 Gold is perhaps the ultimate stock market alternative. It has <strong>near-zero correlation with stocks</strong> over the long term and often rises when stocks fall.
@@ -182,7 +182,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Home className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">2. Real Estate</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. Real Estate</h2>
                             </div>
                             <p>
                                 Real estate offers tangible ownership, rental income, appreciation potential, and inflation protection—all outside the stock market.
@@ -207,7 +207,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Landmark className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">3. Bonds & Fixed Income</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Bonds & Fixed Income</h2>
                             </div>
                             <p>
                                 Bonds provide stability, income, and typically rise when stocks fall (as the Fed cuts rates during recessions).
@@ -233,7 +233,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4. Private Equity & Private Credit</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">4. Private Equity & Private Credit</h2>
                             </div>
                             <p>
                                 Private equity involves investing in companies not traded on public stock exchanges. These investments offer potential for higher returns but come with less liquidity.
@@ -254,7 +254,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">5. Commodities</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">5. Commodities</h2>
                             </div>
                             <p>
                                 Beyond gold, other commodities like silver, oil, natural gas, and agricultural products offer diversification:
@@ -290,7 +290,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-emerald-500/20 rounded-lg text-emerald-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">6. Farmland</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Farmland</h2>
                             </div>
                             <p>
                                 &quot;Buy land, they&apos;re not making it anymore.&quot; Farmland has historically provided steady returns with low correlation to stocks:
@@ -314,7 +314,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">7. Annuities</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">7. Annuities</h2>
                             </div>
                             <p>
                                 Annuities are insurance contracts that provide guaranteed income—completely independent of stock market performance:
@@ -337,7 +337,7 @@ export default function StockMarketAlternativesPage() {
                                 <div className="p-3 bg-pink-500/20 rounded-lg text-pink-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">8. Alternative Investment Funds</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">8. Alternative Investment Funds</h2>
                             </div>
                             <p>
                                 For sophisticated investors, alternative funds offer exposure to strategies uncorrelated with traditional markets:

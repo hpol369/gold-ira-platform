@@ -97,19 +97,19 @@ const schema = {
 
 export default function SequenceOfReturnsRiskPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Retirement Planning
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Sequence of Returns Risk
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             The hidden danger that can destroy your retirement—even with &quot;average&quot; market returns. Here&apos;s what you need to know.
                         </p>
                     </div>
@@ -124,7 +124,7 @@ export default function SequenceOfReturnsRiskPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -147,13 +147,13 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Calculator className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Math That Will Shock You</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Math That Will Shock You</h2>
                             </div>
                             <p>
                                 Let&apos;s look at two retirees who both have $1,000,000 and withdraw $50,000 per year. Both experience the same returns over 15 years—just in different order:
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                 <h4 className="font-bold text-white text-lg mb-4">Same Average Returns, Different Outcomes</h4>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-green-500/20">
@@ -175,7 +175,7 @@ export default function SequenceOfReturnsRiskPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-text-muted mt-4 text-center">Same average return. $700,000 difference. That&apos;s sequence risk.</p>
+                                <p className="text-sm text-slate-400 mt-4 text-center">Same average return. $700,000 difference. That&apos;s sequence risk.</p>
                             </div>
 
                             <p>
@@ -189,7 +189,7 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Sequence Risk Is So Dangerous</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Sequence Risk Is So Dangerous</h2>
                             </div>
                             <p>
                                 During the accumulation phase (when you&apos;re saving for retirement), sequence of returns doesn&apos;t matter much. In fact, crashes are beneficial—you buy more shares at lower prices.
@@ -215,7 +215,7 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Clock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The &quot;Danger Zone&quot;: Years 1-10</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The &quot;Danger Zone&quot;: Years 1-10</h2>
                             </div>
                             <p>
                                 Research shows that the first 5-10 years of retirement are critical. This period is often called the &quot;retirement red zone&quot; or &quot;sequence risk danger zone.&quot;
@@ -268,7 +268,7 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How to Protect Against Sequence Risk</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Protect Against Sequence Risk</h2>
                             </div>
                             <p>
                                 While you can&apos;t control market returns, you can take steps to minimize sequence risk:
@@ -306,7 +306,7 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Gold&apos;s Role in Sequence Risk Protection</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Gold&apos;s Role in Sequence Risk Protection</h2>
                             </div>
                             <p>
                                 Gold is particularly valuable for managing sequence risk because of its behavior during crises:

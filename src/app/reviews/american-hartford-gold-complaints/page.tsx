@@ -103,21 +103,21 @@ export default function AmericanHartfordComplaintsPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">1. Spot Price Confusion</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">1. Spot Price Confusion</h4>
+                                    <p className="text-slate-300 text-sm">
                                         This is the most common &quot;complaint&quot;—and it&apos;s really a misunderstanding. When you buy gold, you pay a premium above the spot price. When you check your account value, it shows the current metal value (at spot). The difference isn&apos;t a loss—it&apos;s the dealer&apos;s spread. This exists at every company.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">2. Shipping Delays</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">2. Shipping Delays</h4>
+                                    <p className="text-slate-300 text-sm">
                                         A handful of customers mentioned delays in receiving their metals. Most of these were during high-demand periods. American Hartford typically resolved these by expediting shipping or providing clear timelines.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">3. Premium Pricing on Some Products</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <h4 className="font-bold text-white mb-2">3. Premium Pricing on Some Products</h4>
+                                    <p className="text-slate-300 text-sm">
                                         A few reviewers mentioned that certain coins had higher premiums than expected. This is worth noting—always compare premiums on specific products before buying.
                                     </p>
                                 </div>
@@ -132,21 +132,21 @@ export default function AmericanHartfordComplaintsPage() {
                         <section id="reputation" className="scroll-mt-32">
                             <h2>American Hartford&apos;s Reputation in 2026</h2>
                             <div className="not-prose my-8 grid md:grid-cols-4 gap-4">
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">A+</div>
-                                    <div className="text-sm text-gray-500">BBB Rating</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">A+</div>
+                                    <div className="text-sm text-slate-400">BBB Rating</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">4.9/5</div>
-                                    <div className="text-sm text-gray-500">Trustpilot</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">4.9/5</div>
+                                    <div className="text-sm text-slate-400">Trustpilot</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">$5k</div>
-                                    <div className="text-sm text-gray-500">Minimum</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">$5k</div>
+                                    <div className="text-sm text-slate-400">Minimum</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-3xl font-bold text-primary mb-1">$0</div>
-                                    <div className="text-sm text-gray-500">Buyback Fees</div>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
+                                    <div className="text-3xl font-bold text-amber-400 mb-1">$0</div>
+                                    <div className="text-sm text-slate-400">Buyback Fees</div>
                                 </div>
                             </div>
                         </section>
@@ -159,17 +159,17 @@ export default function AmericanHartfordComplaintsPage() {
                             </p>
 
                             <div className="not-prose my-6 space-y-3">
-                                <div className="flex gap-3 items-start p-4 bg-white rounded-lg border border-gray-200">
-                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-gray-700"><strong>100% Customer Satisfaction Guarantee:</strong> They&apos;ll buy back your metals at current prices if you&apos;re not happy</p>
+                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                                    <p className="text-slate-300"><strong className="text-white">100% Customer Satisfaction Guarantee:</strong> They&apos;ll buy back your metals at current prices if you&apos;re not happy</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-white rounded-lg border border-gray-200">
-                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-gray-700"><strong>Personal responses:</strong> Complaints typically get responses from senior staff, not form letters</p>
+                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                                    <p className="text-slate-300"><strong className="text-white">Personal responses:</strong> Complaints typically get responses from senior staff, not form letters</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-white rounded-lg border border-gray-200">
-                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-gray-700"><strong>No buyback fees:</strong> Unlike some competitors, they don&apos;t charge you to sell metals back to them</p>
+                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                                    <p className="text-slate-300"><strong className="text-white">No buyback fees:</strong> Unlike some competitors, they don&apos;t charge you to sell metals back to them</p>
                                 </div>
                             </div>
                         </section>

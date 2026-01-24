@@ -105,19 +105,19 @@ const schema = {
 
 export default function StockMarketCrashProtectionPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Retirement Protection
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Stock Market Crash Protection
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             How to safeguard your retirement savings before the next market downturn—because it&apos;s not a matter of if, but when.
                         </p>
                     </div>
@@ -132,7 +132,7 @@ export default function StockMarketCrashProtectionPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -155,7 +155,7 @@ export default function StockMarketCrashProtectionPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <History className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">A History of Market Crashes</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">A History of Market Crashes</h2>
                             </div>
                             <p>
                                 Stock market crashes are not anomalies—they&apos;re a regular feature of financial markets:
@@ -210,7 +210,7 @@ export default function StockMarketCrashProtectionPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Retirees Face the Greatest Risk</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Retirees Face the Greatest Risk</h2>
                             </div>
                             <p>
                                 For younger investors, crashes are actually opportunities—they can buy more shares at lower prices. But for those near or in retirement, crashes pose an existential threat due to <strong>sequence of returns risk</strong>.
@@ -246,7 +246,7 @@ export default function StockMarketCrashProtectionPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Gold: The Ultimate Crash Insurance</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Gold: The Ultimate Crash Insurance</h2>
                             </div>
                             <p>
                                 Gold has a remarkable track record of protecting portfolios during stock market crashes. When stocks plunge, gold typically rises or holds steady:
@@ -308,7 +308,7 @@ export default function StockMarketCrashProtectionPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Crash Protection Strategies</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Crash Protection Strategies</h2>
                             </div>
                             <p>
                                 Here are proven strategies to protect your retirement from market crashes:
@@ -334,7 +334,7 @@ export default function StockMarketCrashProtectionPage() {
                                 A <Link href="/what-is-a-gold-ira">Gold IRA</Link> allows you to hold physical gold and silver in your retirement account with the same tax advantages as a traditional IRA. You can rollover existing 401(k) funds tax-free.
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                 <h4 className="font-bold text-white text-lg mb-4">Sample Crash-Protected Portfolio</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div>
@@ -364,7 +364,7 @@ export default function StockMarketCrashProtectionPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Your Action Plan</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Your Action Plan</h2>
                             </div>
                             <p>
                                 Don&apos;t wait for the next crash to protect your retirement. Take action now:
@@ -375,28 +375,28 @@ export default function StockMarketCrashProtectionPage() {
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
                                     <div>
                                         <h4 className="font-bold text-white">Assess Your Current Exposure</h4>
-                                        <p className="text-sm text-text-muted mt-1">Review your 401(k), IRA, and other accounts. What percentage is in stocks? How would a 50% crash affect you?</p>
+                                        <p className="text-sm text-slate-400 mt-1">Review your 401(k), IRA, and other accounts. What percentage is in stocks? How would a 50% crash affect you?</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
                                     <div>
                                         <h4 className="font-bold text-white">Determine Your Gold Allocation</h4>
-                                        <p className="text-sm text-text-muted mt-1">Most advisors recommend 10-20% in precious metals. Those closer to retirement may want more protection.</p>
+                                        <p className="text-sm text-slate-400 mt-1">Most advisors recommend 10-20% in precious metals. Those closer to retirement may want more protection.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
                                     <div>
                                         <h4 className="font-bold text-white">Open a Gold IRA</h4>
-                                        <p className="text-sm text-text-muted mt-1">Rollover a portion of your 401(k) or IRA into physical gold—tax-free. <Link href="/quiz" className="text-secondary hover:underline">Take our quiz</Link> to find the best company for your situation.</p>
+                                        <p className="text-sm text-slate-400 mt-1">Rollover a portion of your 401(k) or IRA into physical gold—tax-free. <Link href="/quiz" className="text-secondary hover:underline">Take our quiz</Link> to find the best company for your situation.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">4</div>
                                     <div>
                                         <h4 className="font-bold text-white">Build Your Cash Reserve</h4>
-                                        <p className="text-sm text-text-muted mt-1">Aim for 1-2 years of living expenses in accessible cash. This prevents forced selling during crashes.</p>
+                                        <p className="text-sm text-slate-400 mt-1">Aim for 1-2 years of living expenses in accessible cash. This prevents forced selling during crashes.</p>
                                     </div>
                                 </div>
                             </div>

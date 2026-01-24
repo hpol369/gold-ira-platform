@@ -75,10 +75,10 @@ export default function CentralBanksBuyingGoldPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-background">
+            <section className="py-16 bg-slate-900">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 prose-a:text-secondary max-w-none">
 
                             {/* The Data */}
                             <div className="flex items-center gap-4 mb-4 not-prose">
@@ -92,28 +92,28 @@ export default function CentralBanksBuyingGoldPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Year</th>
-                                            <th className="p-4 border-b font-bold text-primary">Central Bank Gold Purchases</th>
-                                            <th className="p-4 border-b font-bold text-primary">Notable Buyers</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Year</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Central Bank Gold Purchases</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Notable Buyers</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4">2022</td>
-                                            <td className="p-4 font-semibold text-amber-600">1,136 tonnes</td>
+                                            <td className="p-4 text-white">2022</td>
+                                            <td className="p-4 font-semibold text-amber-400">1,136 tonnes</td>
                                             <td className="p-4">Turkey, China, Egypt, Qatar</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4">2023</td>
-                                            <td className="p-4 font-semibold text-amber-600">1,037 tonnes</td>
+                                            <td className="p-4 text-white">2023</td>
+                                            <td className="p-4 font-semibold text-amber-400">1,037 tonnes</td>
                                             <td className="p-4">China, Poland, Singapore, Libya</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4">2024</td>
-                                            <td className="p-4 font-semibold text-amber-600">1,100+ tonnes (est.)</td>
+                                            <td className="p-4 text-white">2024</td>
+                                            <td className="p-4 font-semibold text-amber-400">1,100+ tonnes (est.)</td>
                                             <td className="p-4">China, India, Turkey, Poland</td>
                                         </tr>
                                     </tbody>
@@ -168,25 +168,25 @@ export default function CentralBanksBuyingGoldPage() {
                             </div>
 
                             <div className="grid gap-4 not-prose my-8">
-                                <div className="bg-white rounded-xl border border-gray-200 p-6">
-                                    <h4 className="font-bold text-primary text-lg mb-2">🇨🇳 China (PBOC)</h4>
-                                    <p className="text-gray-600 text-sm mb-2">Official holdings: 2,200+ tonnes</p>
-                                    <p className="text-gray-700">The world&apos;s largest gold producer is also a major buyer. Many analysts believe actual holdings are 3-4x higher than reported.</p>
+                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
+                                    <h4 className="font-bold text-white text-lg mb-2">China (PBOC)</h4>
+                                    <p className="text-slate-400 text-sm mb-2">Official holdings: 2,200+ tonnes</p>
+                                    <p className="text-slate-300">The world&apos;s largest gold producer is also a major buyer. Many analysts believe actual holdings are 3-4x higher than reported.</p>
                                 </div>
-                                <div className="bg-white rounded-xl border border-gray-200 p-6">
-                                    <h4 className="font-bold text-primary text-lg mb-2">🇵🇱 Poland</h4>
-                                    <p className="text-gray-600 text-sm mb-2">Added 130+ tonnes in 2023</p>
-                                    <p className="text-gray-700">Poland&apos;s central bank has been one of Europe&apos;s most aggressive buyers, citing &quot;uncertain geopolitical environment.&quot;</p>
+                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
+                                    <h4 className="font-bold text-white text-lg mb-2">Poland</h4>
+                                    <p className="text-slate-400 text-sm mb-2">Added 130+ tonnes in 2023</p>
+                                    <p className="text-slate-300">Poland&apos;s central bank has been one of Europe&apos;s most aggressive buyers, citing &quot;uncertain geopolitical environment.&quot;</p>
                                 </div>
-                                <div className="bg-white rounded-xl border border-gray-200 p-6">
-                                    <h4 className="font-bold text-primary text-lg mb-2">🇹🇷 Turkey</h4>
-                                    <p className="text-gray-600 text-sm mb-2">Major buyer through 2022-2023</p>
-                                    <p className="text-gray-700">Facing high inflation and currency depreciation, Turkey&apos;s central bank has heavily accumulated gold.</p>
+                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
+                                    <h4 className="font-bold text-white text-lg mb-2">Turkey</h4>
+                                    <p className="text-slate-400 text-sm mb-2">Major buyer through 2022-2023</p>
+                                    <p className="text-slate-300">Facing high inflation and currency depreciation, Turkey&apos;s central bank has heavily accumulated gold.</p>
                                 </div>
-                                <div className="bg-white rounded-xl border border-gray-200 p-6">
-                                    <h4 className="font-bold text-primary text-lg mb-2">🇮🇳 India (RBI)</h4>
-                                    <p className="text-gray-600 text-sm mb-2">Consistent buyer since 2017</p>
-                                    <p className="text-gray-700">India&apos;s central bank continues to add gold, reflecting the country&apos;s cultural affinity for the metal.</p>
+                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
+                                    <h4 className="font-bold text-white text-lg mb-2">India (RBI)</h4>
+                                    <p className="text-slate-400 text-sm mb-2">Consistent buyer since 2017</p>
+                                    <p className="text-slate-300">India&apos;s central bank continues to add gold, reflecting the country&apos;s cultural affinity for the metal.</p>
                                 </div>
                             </div>
 
@@ -293,7 +293,7 @@ export default function CentralBanksBuyingGoldPage() {
                         </article>
 
                         {/* Navigation */}
-                        <div className="mt-16 pt-8 border-t border-gray-200">
+                        <div className="mt-16 pt-8 border-t border-white/10">
                             <div className="flex flex-col sm:flex-row gap-4 justify-between">
                                 <Link
                                     href="/why-gold/physical-gold-vs-paper"

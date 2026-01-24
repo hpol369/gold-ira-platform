@@ -112,7 +112,7 @@ const schema = {
 
 export default function GoldIraVs401kPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
@@ -137,7 +137,7 @@ export default function GoldIraVs401kPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <p className="lead">
                             Here&apos;s the question I get asked constantly: <em>&quot;My 401(k) is doing fine—why would I bother with gold?&quot;</em>
@@ -166,7 +166,7 @@ export default function GoldIraVs401kPage() {
                                 optionBName="Gold IRA"
                                 rows={comparisonRows}
                             />
-                            <p className="text-sm text-text-muted mt-4">
+                            <p className="text-sm text-slate-300 mt-4">
                                 <strong>Key:</strong> Green highlighting indicates the better option for that category. &quot;Tie&quot; means both options are equivalent.
                             </p>
                         </section>
@@ -274,58 +274,58 @@ export default function GoldIraVs401kPage() {
                             <h2>Key Differences: Gold IRA vs. 401(k)</h2>
 
                             <div className="not-prose space-y-6 my-8">
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
                                         <BarChart3 className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">1. Asset Type</h4>
-                                        <p className="text-text-muted mt-1"><strong>401(k):</strong> Holds paper assets (stocks, bonds, mutual funds). Your wealth exists as digital entries on a computer.</p>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> Holds physical precious metals. Your wealth exists as tangible bars and coins in a secure vault.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">1. Asset Type</h4>
+                                        <p className="text-slate-300 mt-1"><strong>401(k):</strong> Holds paper assets (stocks, bonds, mutual funds). Your wealth exists as digital entries on a computer.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Holds physical precious metals. Your wealth exists as tangible bars and coins in a secure vault.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
                                         <TrendingUp className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">2. Market Correlation</h4>
-                                        <p className="text-text-muted mt-1"><strong>401(k):</strong> Fully correlated with stock market. When markets crash, your retirement crashes.</p>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> Often inversely correlated. During the 2008 crash, stocks fell 37% while gold rose 5%.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">2. Market Correlation</h4>
+                                        <p className="text-slate-300 mt-1"><strong>401(k):</strong> Fully correlated with stock market. When markets crash, your retirement crashes.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Often inversely correlated. During the 2008 crash, stocks fell 37% while gold rose 5%.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0">
                                         <DollarSign className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">3. Contribution & Matching</h4>
-                                        <p className="text-text-muted mt-1"><strong>401(k):</strong> High limits ($23,500) plus employer matching. This &quot;free money&quot; is a major advantage.</p>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> Lower limits ($7,000-8,000) with no employer matching. However, you can roll over unlimited amounts from existing accounts.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">3. Contribution & Matching</h4>
+                                        <p className="text-slate-300 mt-1"><strong>401(k):</strong> High limits ($23,500) plus employer matching. This &quot;free money&quot; is a major advantage.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Lower limits ($7,000-8,000) with no employer matching. However, you can roll over unlimited amounts from existing accounts.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">4. Inflation Protection</h4>
-                                        <p className="text-text-muted mt-1"><strong>401(k):</strong> Minimal. Your gains may be offset by dollar devaluation.</p>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> Strong. Gold has maintained purchasing power for thousands of years, regardless of currency policies.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">4. Inflation Protection</h4>
+                                        <p className="text-slate-300 mt-1"><strong>401(k):</strong> Minimal. Your gains may be offset by dollar devaluation.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Strong. Gold has maintained purchasing power for thousands of years, regardless of currency policies.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                                     <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
                                         <Lock className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary text-lg">5. Control & Access</h4>
-                                        <p className="text-text-muted mt-1"><strong>401(k):</strong> Limited to plan options. You can&apos;t choose individual stocks or alternative assets.</p>
-                                        <p className="text-text-muted mt-1"><strong>Gold IRA:</strong> Full self-direction. You choose exactly which coins and bars to hold.</p>
+                                        <h4 className="font-bold text-amber-400 text-lg">5. Control & Access</h4>
+                                        <p className="text-slate-300 mt-1"><strong>401(k):</strong> Limited to plan options. You can&apos;t choose individual stocks or alternative assets.</p>
+                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Full self-direction. You choose exactly which coins and bars to hold.</p>
                                     </div>
                                 </div>
                             </div>
@@ -339,32 +339,32 @@ export default function GoldIraVs401kPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Tax Feature</th>
-                                            <th className="p-4 border-b font-bold text-primary">Traditional 401(k)/IRA</th>
-                                            <th className="p-4 border-b font-bold text-primary">Roth 401(k)/IRA</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Tax Feature</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Traditional 401(k)/IRA</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Roth 401(k)/IRA</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4 font-semibold">Contributions</td>
+                                            <td className="p-4 font-semibold text-white">Contributions</td>
                                             <td className="p-4">Pre-tax (reduces current taxable income)</td>
                                             <td className="p-4">After-tax (no immediate tax benefit)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Growth</td>
+                                            <td className="p-4 font-semibold text-white">Growth</td>
                                             <td className="p-4">Tax-deferred</td>
                                             <td className="p-4">Tax-free</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Withdrawals</td>
+                                            <td className="p-4 font-semibold text-white">Withdrawals</td>
                                             <td className="p-4">Taxed as ordinary income</td>
                                             <td className="p-4">Tax-free (if qualified)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold">Best For</td>
+                                            <td className="p-4 font-semibold text-white">Best For</td>
                                             <td className="p-4">Those who expect lower taxes in retirement</td>
                                             <td className="p-4">Those who expect higher taxes later</td>
                                         </tr>
@@ -397,28 +397,28 @@ export default function GoldIraVs401kPage() {
                                 The &quot;Rich Dad&quot; approach to retirement isn&apos;t about choosing one or the other—it&apos;s about using each tool for its intended purpose:
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                <h4 className="font-bold text-primary text-lg mb-4">The Smart Strategy: Use Both</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
+                                <h4 className="font-bold text-amber-400 text-lg mb-4">The Smart Strategy: Use Both</h4>
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-3">
                                         <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shrink-0">1</div>
                                         <div>
-                                            <strong className="text-primary">Max out your 401(k) employer match</strong>
-                                            <p className="text-sm text-text-muted">This is free money—never leave it on the table. If your employer matches 50% up to 6%, contribute at least 6%.</p>
+                                            <strong className="text-white">Max out your 401(k) employer match</strong>
+                                            <p className="text-sm text-slate-300">This is free money—never leave it on the table. If your employer matches 50% up to 6%, contribute at least 6%.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shrink-0">2</div>
                                         <div>
-                                            <strong className="text-primary">Allocate 10-20% of your portfolio to precious metals</strong>
-                                            <p className="text-sm text-text-muted">Roll over a portion of an old 401(k), or make direct contributions to a Gold IRA for diversification.</p>
+                                            <strong className="text-white">Allocate 10-20% of your portfolio to precious metals</strong>
+                                            <p className="text-sm text-slate-300">Roll over a portion of an old 401(k), or make direct contributions to a Gold IRA for diversification.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shrink-0">3</div>
                                         <div>
-                                            <strong className="text-primary">Increase gold allocation as you approach retirement</strong>
-                                            <p className="text-sm text-text-muted">Younger investors can weather volatility; those nearing retirement need stability.</p>
+                                            <strong className="text-white">Increase gold allocation as you approach retirement</strong>
+                                            <p className="text-sm text-slate-300">Younger investors can weather volatility; those nearing retirement need stability.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -477,72 +477,72 @@ export default function GoldIraVs401kPage() {
                             <h2>Gold IRA vs. 401(k) FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Should I move all my 401(k) to gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Most financial experts recommend allocating 10-20% of your retirement portfolio to precious metals—not 100%. Gold is excellent for protection and preservation, but stocks have historically provided higher long-term growth. A balanced approach gives you both growth potential and crash protection.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Is a Gold IRA better than a 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Neither is universally &quot;better&quot;—they serve different purposes. A 401(k) is better for accumulation (thanks to employer matching and high contribution limits). A Gold IRA is better for preservation (protecting against crashes and inflation). The ideal strategy uses both.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I roll over my 401(k) to a Gold IRA without penalties?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Yes. A direct rollover from a 401(k) to a Gold IRA is 100% tax-free and penalty-free. The key is using a &quot;direct rollover&quot; where funds transfer directly between custodians without you ever touching the money. See our <Link href="/guide/401k-to-gold-rollover" className="text-secondary hover:underline">rollover guide</Link> for details.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What happens to my 401(k) if the stock market crashes?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Your 401(k) balance falls with the market. In the 2008 financial crisis, the average 401(k) lost 31%. In contrast, gold rose 5% during the same period. This is why having some gold in your retirement portfolio can provide protection when stocks decline.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Can I have a Gold IRA if I still have a 401(k) at work?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Yes! You can contribute to both a 401(k) and a Gold IRA in the same year (subject to contribution limits). You can also roll over 401(k)s from previous employers into a Gold IRA while maintaining your current employer&apos;s 401(k).
                                     </p>
                                 </details>
@@ -568,16 +568,16 @@ export default function GoldIraVs401kPage() {
 
                         {/* Related Comparisons */}
                         <section className="mt-12 not-prose">
-                            <h3 className="text-lg font-bold text-primary mb-4">More Comparisons</h3>
+                            <h3 className="text-lg font-bold text-amber-400 mb-4">More Comparisons</h3>
                             <div className="grid md:grid-cols-3 gap-4">
-                                <Link href="/compare/gold-ira-vs-roth-ira" className="p-4 bg-white rounded-lg border hover:border-secondary transition-colors group">
-                                    <span className="text-sm font-semibold text-primary group-hover:text-secondary">Gold IRA vs. Roth IRA →</span>
+                                <Link href="/compare/gold-ira-vs-roth-ira" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold IRA vs. Roth IRA →</span>
                                 </Link>
-                                <Link href="/compare/gold-ira-vs-physical-gold" className="p-4 bg-white rounded-lg border hover:border-secondary transition-colors group">
-                                    <span className="text-sm font-semibold text-primary group-hover:text-secondary">Gold IRA vs. Physical Gold →</span>
+                                <Link href="/compare/gold-ira-vs-physical-gold" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold IRA vs. Physical Gold →</span>
                                 </Link>
-                                <Link href="/compare/gold-ira-vs-gold-etf" className="p-4 bg-white rounded-lg border hover:border-secondary transition-colors group">
-                                    <span className="text-sm font-semibold text-primary group-hover:text-secondary">Gold IRA vs. Gold ETF →</span>
+                                <Link href="/compare/gold-ira-vs-gold-etf" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold IRA vs. Gold ETF →</span>
                                 </Link>
                             </div>
                         </section>

@@ -92,19 +92,19 @@ const schema = {
 
 export default function AreGoldIrasSafePage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Safety Analysis
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Are Gold IRAs Safe?
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             Separating fact from fear. We investigate the legal structure, insurance protections, and real risks of holding gold in a retirement account.
                         </p>
                     </div>
@@ -119,7 +119,7 @@ export default function AreGoldIrasSafePage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -136,7 +136,7 @@ export default function AreGoldIrasSafePage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Is It Even Legal?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Is It Even Legal?</h2>
                             </div>
                             <p>
                                 100% yes. Congress specifically authorized precious metals in IRAs back in 1997 with the Taxpayer Relief Act. This isn&apos;t some loophole or gray area. It&apos;s a legitimate, IRS-recognized retirement strategy that millions of Americans use.
@@ -149,7 +149,7 @@ export default function AreGoldIrasSafePage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Building className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Gold Can&apos;t Go to Zero</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Gold Can&apos;t Go to Zero</h2>
                             </div>
                             <p>
                                 Here&apos;s something most people don&apos;t think about: every stock you own is a claim on a company. If that company goes bankrupt, your stock is worth zero. Happened to Enron. Happened to Lehman Brothers. Could happen to any company. Gold doesn&apos;t work that way. It&apos;s not a claim on anything. It just <em>is</em>. There&apos;s no CEO who can run it into the ground, no board making bad decisions. Gold has been valuable for 5,000 years and it&apos;ll be valuable 5,000 years from now.
@@ -187,7 +187,7 @@ export default function AreGoldIrasSafePage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Real Danger: Scams</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Real Danger: Scams</h2>
                             </div>
                             <p>
                                 The Gold IRA structure is safe. The danger lies in <strong>bad dealers</strong>.

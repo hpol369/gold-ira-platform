@@ -24,7 +24,7 @@ const schema = {
 
 export default function AboutUsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
 
             {/* Hero Section */}
@@ -62,8 +62,8 @@ export default function AboutUsPage() {
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <FadeIn delay={0.1}>
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
-                                <h2 className="text-3xl font-serif font-bold text-primary mb-6">
+                            <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                                <h2 className="text-3xl font-serif font-bold text-white mb-6">
                                     Why I Left Wealth Management
                                 </h2>
                                 <p className="lead">
@@ -93,60 +93,60 @@ export default function AboutUsPage() {
             </section>
 
             {/* What We Do */}
-            <section className="py-20 bg-background-subtle border-y border-gray-200">
+            <section className="py-20 bg-white/5 border-y border-white/10">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="text-center mb-16">
-                            <span className="text-secondary font-bold tracking-widest uppercase text-xs">What We Do</span>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mt-3">
+                            <span className="text-amber-400 font-bold tracking-widest uppercase text-xs">What We Do</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-3">
                                 Honest Education, No Sales Pitch
                             </h2>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <FadeIn delay={0.1}>
-                                <div className="bg-white p-8 rounded-xl shadow-sm h-full">
-                                    <div className="h-12 w-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
+                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
                                         <BookOpen className="h-6 w-6" />
                                     </div>
-                                    <h3 className="text-xl font-bold font-serif text-primary mb-3">Educational Guides</h3>
-                                    <p className="text-text-muted leading-relaxed">
+                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Educational Guides</h3>
+                                    <p className="text-slate-400 leading-relaxed">
                                         We break down complex topics like rollover rules, IRS regulations, and fee structures into plain English. No jargon, no scare tactics—just the facts you need to know.
                                     </p>
                                 </div>
                             </FadeIn>
 
                             <FadeIn delay={0.2}>
-                                <div className="bg-white p-8 rounded-xl shadow-sm h-full">
-                                    <div className="h-12 w-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
+                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
                                         <ShieldCheck className="h-6 w-6" />
                                     </div>
-                                    <h3 className="text-xl font-bold font-serif text-primary mb-3">Honest Reviews</h3>
-                                    <p className="text-text-muted leading-relaxed">
+                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Honest Reviews</h3>
+                                    <p className="text-slate-400 leading-relaxed">
                                         We research Gold IRA companies so you don&apos;t have to wade through fake reviews and marketing fluff. We look at BBB ratings, real customer complaints, fee disclosures, and actual buyback policies.
                                     </p>
                                 </div>
                             </FadeIn>
 
                             <FadeIn delay={0.3}>
-                                <div className="bg-white p-8 rounded-xl shadow-sm h-full">
-                                    <div className="h-12 w-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
+                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
                                         <Target className="h-6 w-6" />
                                     </div>
-                                    <h3 className="text-xl font-bold font-serif text-primary mb-3">Side-by-Side Comparisons</h3>
-                                    <p className="text-text-muted leading-relaxed">
+                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Side-by-Side Comparisons</h3>
+                                    <p className="text-slate-400 leading-relaxed">
                                         Trying to decide between two companies? We put them head-to-head on the things that actually matter: minimum investments, fee transparency, customer service quality, and more.
                                     </p>
                                 </div>
                             </FadeIn>
 
                             <FadeIn delay={0.4}>
-                                <div className="bg-white p-8 rounded-xl shadow-sm h-full">
-                                    <div className="h-12 w-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
+                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
                                         <Users className="h-6 w-6" />
                                     </div>
-                                    <h3 className="text-xl font-bold font-serif text-primary mb-3">Real Talk About Precious Metals</h3>
-                                    <p className="text-text-muted leading-relaxed">
+                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Real Talk About Precious Metals</h3>
+                                    <p className="text-slate-400 leading-relaxed">
                                         We&apos;ll tell you when a Gold IRA makes sense—and when it doesn&apos;t. We&apos;re not here to convince you gold is the only answer. It&apos;s one tool in a diversified retirement strategy.
                                     </p>
                                 </div>
@@ -161,18 +161,18 @@ export default function AboutUsPage() {
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <FadeIn delay={0.1}>
-                            <h2 className="text-3xl font-serif font-bold text-primary mb-6 text-center">
+                            <h2 className="text-3xl font-serif font-bold text-white mb-6 text-center">
                                 How We Keep the Lights On
                             </h2>
-                            <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-10">
-                                <p className="text-lg text-text-muted leading-relaxed mb-6">
+                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
+                                <p className="text-lg text-slate-300 leading-relaxed mb-6">
                                     Let&apos;s be upfront about this: we earn referral fees when you request information from one of the Gold IRA companies we review. That&apos;s how we pay for the research, hosting, and content creation that goes into this site.
                                 </p>
-                                <p className="text-lg text-text-muted leading-relaxed mb-6">
-                                    But here&apos;s what makes us different: <strong className="text-primary">we don&apos;t rank companies based on who pays us the most</strong>. Our rankings are based on our research into fees, customer reviews, BBB ratings, and overall value. If a company has problems, we&apos;ll tell you—even if they&apos;re a partner.
+                                <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                                    But here&apos;s what makes us different: <strong className="text-white">we don&apos;t rank companies based on who pays us the most</strong>. Our rankings are based on our research into fees, customer reviews, BBB ratings, and overall value. If a company has problems, we&apos;ll tell you—even if they&apos;re a partner.
                                 </p>
-                                <p className="text-lg text-text-muted leading-relaxed">
-                                    You can read more about our standards in our <Link href="/editorial-policy" className="text-secondary hover:underline font-medium">Editorial Policy</Link>.
+                                <p className="text-lg text-slate-300 leading-relaxed">
+                                    You can read more about our standards in our <Link href="/editorial-policy" className="text-amber-400 hover:underline font-medium">Editorial Policy</Link>.
                                 </p>
                             </div>
                         </FadeIn>

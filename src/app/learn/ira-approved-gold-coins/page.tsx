@@ -101,19 +101,19 @@ const schema = {
 
 export default function IraApprovedGoldCoinsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Investment Guide
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             IRA-Approved Gold Coins & Bars
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             The complete guide to which gold, silver, platinum, and palladium products qualify for your precious metals IRA.
                         </p>
                     </div>
@@ -128,7 +128,7 @@ export default function IraApprovedGoldCoinsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -141,7 +141,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 Understanding these requirements is essential—buying the wrong products can disqualify your IRA and trigger taxes and penalties.
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                 <h4 className="font-bold text-white text-lg mb-4">IRS Purity Requirements</h4>
                                 <div className="space-y-3">
                                     <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
@@ -174,7 +174,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-secondary/10 rounded-lg text-secondary">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">IRA-Approved Gold Coins</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">IRA-Approved Gold Coins</h2>
                             </div>
                             <p>
                                 These gold coins meet IRS requirements and are commonly held in Gold IRAs:
@@ -230,7 +230,7 @@ export default function IraApprovedGoldCoinsPage() {
                                     </tbody>
                                 </table>
                             </div>
-                            <p className="text-sm text-text-muted">*American Gold Eagle is specifically approved by Congress despite lower purity.</p>
+                            <p className="text-sm text-slate-400">*American Gold Eagle is specifically approved by Congress despite lower purity.</p>
 
                             <h3>Most Popular Choice: American Gold Eagle</h3>
                             <p>
@@ -255,7 +255,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-primary/10 rounded-lg text-primary">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">IRA-Approved Gold Bars</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">IRA-Approved Gold Bars</h2>
                             </div>
                             <p>
                                 Gold bars must meet two requirements: (1) 99.5% purity minimum, and (2) produced by a NYMEX/COMEX-approved refiner or national mint.
@@ -307,7 +307,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-slate-800/50 rounded-lg text-slate-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">IRA-Approved Silver</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">IRA-Approved Silver</h2>
                             </div>
                             <p>
                                 Silver must be at least <strong>99.9% pure</strong> to qualify for an IRA. Here are the most popular options:
@@ -369,7 +369,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Platinum & Palladium</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Platinum & Palladium</h2>
                             </div>
                             <p>
                                 Both platinum and palladium require <strong>99.95% purity</strong> for IRA eligibility.
@@ -399,7 +399,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <XCircle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">What&apos;s NOT Allowed</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What&apos;s NOT Allowed</h2>
                             </div>
                             <p>
                                 These products do NOT qualify for a Gold IRA:
@@ -446,7 +446,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Shield className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How to Choose the Right Products</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Choose the Right Products</h2>
                             </div>
                             <p>
                                 Consider these factors when selecting gold and silver for your IRA:

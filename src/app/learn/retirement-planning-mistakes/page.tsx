@@ -96,19 +96,19 @@ const schema = {
 
 export default function RetirementPlanningMistakesPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Retirement Planning
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             10 Retirement Planning Mistakes That Destroy Wealth
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             Common mistakes that can devastate your retirement—and how to avoid them.
                         </p>
                     </div>
@@ -123,7 +123,7 @@ export default function RetirementPlanningMistakesPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -143,7 +143,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Clock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">1. Starting Too Late</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Starting Too Late</h2>
                             </div>
                             <p>
                                 Compound interest is the most powerful force in investing—but it needs time to work. Starting at 25 instead of 35 can mean having <strong>twice as much money</strong> at retirement, even with identical contributions.
@@ -189,7 +189,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
                                     <PieChart className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">2. Over-Concentration in Stocks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. Over-Concentration in Stocks</h2>
                             </div>
                             <p>
                                 Many retirees have 80-100% of their savings in stocks. While stocks offer growth, they&apos;re also volatile—and a major crash at the wrong time can devastate a retirement.
@@ -208,7 +208,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">3. Ignoring Inflation</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Ignoring Inflation</h2>
                             </div>
                             <p>
                                 At just 3% annual inflation, prices double every 24 years. Your &quot;safe&quot; $1 million in savings becomes equivalent to $500,000 in purchasing power.
@@ -231,7 +231,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4. Ignoring Sequence of Returns Risk</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">4. Ignoring Sequence of Returns Risk</h2>
                             </div>
                             <p>
                                 <strong>Sequence of returns risk</strong> is the danger that poor returns early in retirement permanently deplete your portfolio—even if long-term average returns are good.
@@ -250,7 +250,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">5. Underestimating Healthcare Costs</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">5. Underestimating Healthcare Costs</h2>
                             </div>
                             <p>
                                 Fidelity estimates a 65-year-old couple retiring in 2026 needs <strong>$315,000</strong> for healthcare costs in retirement—and that&apos;s not including long-term care.
@@ -281,7 +281,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Clock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">6. Claiming Social Security Too Early</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Claiming Social Security Too Early</h2>
                             </div>
                             <p>
                                 You can claim Social Security at 62, but benefits increase by about 8% per year until age 70. Claiming at 62 instead of 70 reduces lifetime benefits by 30%+.
@@ -300,7 +300,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-slate-700/50 rounded-lg text-slate-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">7. Ignoring Investment Fees</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">7. Ignoring Investment Fees</h2>
                             </div>
                             <p>
                                 A 1% annual fee doesn&apos;t sound like much, but over 30 years it can consume 25-30% of your portfolio. Many 401(k) plans and actively managed funds charge 1-2%.
@@ -316,7 +316,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Target className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">8. Using the Wrong Withdrawal Rate</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">8. Using the Wrong Withdrawal Rate</h2>
                             </div>
                             <p>
                                 The traditional &quot;4% rule&quot; said you could withdraw 4% of your portfolio annually. But with longer lifespans and lower expected returns, many experts now recommend 3-3.5%.
@@ -335,7 +335,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">9. Tax Inefficiency</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">9. Tax Inefficiency</h2>
                             </div>
                             <p>
                                 Many retirees have all their savings in traditional 401(k)s/IRAs—meaning every withdrawal is taxed as ordinary income. This limits flexibility and can push you into higher tax brackets.
@@ -357,7 +357,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-emerald-500/20 rounded-lg text-emerald-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">10. No Written Retirement Plan</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">10. No Written Retirement Plan</h2>
                             </div>
                             <p>
                                 Surprisingly, most Americans don&apos;t have a written retirement plan. They have a vague goal (&quot;retire at 65&quot;) but no specific strategy for getting there or maintaining their lifestyle.

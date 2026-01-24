@@ -91,19 +91,19 @@ const schema = {
 
 export default function PreciousMetalsIraRulesPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             IRS Guidelines
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Precious Metals IRA Rules
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             A clear, plain-English breakdown of the critical IRS regulations governing Gold and Silver IRAs. Stay compliant and avoid penalties.
                         </p>
                     </div>
@@ -118,7 +118,7 @@ export default function PreciousMetalsIraRulesPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -132,7 +132,7 @@ export default function PreciousMetalsIraRulesPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Fineness (Purity) Requirements</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Fineness (Purity) Requirements</h2>
                             </div>
                             <p>
                                 Not all gold qualifies. To be eligible for an IRA, metals must meet minimum fineness standards:
@@ -172,7 +172,7 @@ export default function PreciousMetalsIraRulesPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Gavel className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Strict Storage Regulations</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Strict Storage Regulations</h2>
                             </div>
                             <p>
                                 This is the most violated rule. <strong>You cannot hold the metals yourself.</strong>

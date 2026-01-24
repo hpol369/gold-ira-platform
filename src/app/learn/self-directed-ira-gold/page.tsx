@@ -41,7 +41,7 @@ const schema = {
 
 export default function SelfDirectedIraGoldPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <main className="min-h-screen flex flex-col bg-slate-900">
             <Navbar />
             <SchemaScript schema={schema} />
 
@@ -73,7 +73,7 @@ export default function SelfDirectedIraGoldPage() {
                         </aside>
 
                         {/* Main Content */}
-                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                        <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                             {/* Section 1: What is a Self-Directed IRA */}
                             <section id="what-is-sdir" className="scroll-mt-32">
@@ -88,8 +88,8 @@ export default function SelfDirectedIraGoldPage() {
                                     For gold investors, an SDIRA is the <strong>only legal way</strong> to hold physical gold in a retirement account with tax advantages. You can't just buy gold coins and stick them in a regular IRA—the IRS requires specific custodians, approved depositories, and compliant metals.
                                 </p>
 
-                                <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                    <h4 className="font-bold text-primary text-lg mb-4">Key Differences: SDIRA vs. Regular IRA</h4>
+                                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
+                                    <h4 className="font-bold text-white text-lg mb-4">Key Differences: SDIRA vs. Regular IRA</h4>
                                     <ul className="space-y-3">
                                         <li className="flex items-start gap-3">
                                             <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
@@ -122,7 +122,7 @@ export default function SelfDirectedIraGoldPage() {
                                             </div>
                                             <div>
                                                 <strong className="block text-white text-lg">1. The Custodian</strong>
-                                                <p className="text-text-muted mt-1">A specialized financial institution that holds your IRA assets and handles all IRS reporting. Examples: Equity Trust Company, STRATA Trust, New Direction IRA.</p>
+                                                <p className="text-slate-400 mt-1">A specialized financial institution that holds your IRA assets and handles all IRS reporting. Examples: Equity Trust Company, STRATA Trust, New Direction IRA.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
@@ -131,7 +131,7 @@ export default function SelfDirectedIraGoldPage() {
                                             </div>
                                             <div>
                                                 <strong className="block text-white text-lg">2. The Precious Metals Dealer</strong>
-                                                <p className="text-text-muted mt-1">The company you purchase your gold from. Reputable dealers like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> and <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> guide you through the entire process.</p>
+                                                <p className="text-slate-400 mt-1">The company you purchase your gold from. Reputable dealers like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> and <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> guide you through the entire process.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
@@ -140,7 +140,7 @@ export default function SelfDirectedIraGoldPage() {
                                             </div>
                                             <div>
                                                 <strong className="block text-white text-lg">3. The Depository</strong>
-                                                <p className="text-text-muted mt-1">A high-security vault where your physical metals are stored. These facilities are insured, audited, and IRS-approved. Popular: Delaware Depository, Brink's Global Services.</p>
+                                                <p className="text-slate-400 mt-1">A high-security vault where your physical metals are stored. These facilities are insured, audited, and IRS-approved. Popular: Delaware Depository, Brink's Global Services.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -203,36 +203,36 @@ export default function SelfDirectedIraGoldPage() {
                                         <div className="flex gap-4 items-start">
                                             <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
                                             <div>
-                                                <h4 className="font-bold text-primary text-lg">Choose a Gold IRA Company</h4>
-                                                <p className="text-text-muted mt-1">Select a reputable dealer with strong BBB ratings. They'll guide you through custodian selection and handle the paperwork.</p>
+                                                <h4 className="font-bold text-white text-lg">Choose a Gold IRA Company</h4>
+                                                <p className="text-slate-400 mt-1">Select a reputable dealer with strong BBB ratings. They'll guide you through custodian selection and handle the paperwork.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
                                             <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
                                             <div>
-                                                <h4 className="font-bold text-primary text-lg">Open Your Self-Directed IRA</h4>
-                                                <p className="text-text-muted mt-1">Your dealer helps you establish an account with a custodian that specializes in precious metals.</p>
+                                                <h4 className="font-bold text-white text-lg">Open Your Self-Directed IRA</h4>
+                                                <p className="text-slate-400 mt-1">Your dealer helps you establish an account with a custodian that specializes in precious metals.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
                                             <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
                                             <div>
-                                                <h4 className="font-bold text-primary text-lg">Fund Your Account</h4>
-                                                <p className="text-text-muted mt-1">Rollover from an existing 401(k)/IRA (tax-free), transfer from another IRA, or make a direct contribution.</p>
+                                                <h4 className="font-bold text-white text-lg">Fund Your Account</h4>
+                                                <p className="text-slate-400 mt-1">Rollover from an existing 401(k)/IRA (tax-free), transfer from another IRA, or make a direct contribution.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
                                             <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
                                             <div>
-                                                <h4 className="font-bold text-primary text-lg">Select & Purchase Metals</h4>
-                                                <p className="text-text-muted mt-1">Choose IRS-approved gold, silver, platinum, or palladium. Your dealer ships directly to the depository.</p>
+                                                <h4 className="font-bold text-white text-lg">Select & Purchase Metals</h4>
+                                                <p className="text-slate-400 mt-1">Choose IRS-approved gold, silver, platinum, or palladium. Your dealer ships directly to the depository.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
                                             <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
                                             <div>
-                                                <h4 className="font-bold text-primary text-lg">Secure Storage</h4>
-                                                <p className="text-text-muted mt-1">Your metals are stored in an IRS-approved depository, insured and audited. You receive confirmation of your holdings.</p>
+                                                <h4 className="font-bold text-white text-lg">Secure Storage</h4>
+                                                <p className="text-slate-400 mt-1">Your metals are stored in an IRS-approved depository, insured and audited. You receive confirmation of your holdings.</p>
                                             </div>
                                         </div>
                                     </div>

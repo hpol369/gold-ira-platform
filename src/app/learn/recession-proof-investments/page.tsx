@@ -95,19 +95,19 @@ const schema = {
 
 export default function RecessionProofInvestmentsPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Portfolio Protection
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Recession-Proof Investments
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             7 assets that have historically protected wealth during economic downturns—and how to add them to your portfolio.
                         </p>
                     </div>
@@ -122,7 +122,7 @@ export default function RecessionProofInvestmentsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -149,7 +149,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">1. Gold & Precious Metals</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Gold & Precious Metals</h2>
                             </div>
                             <p>
                                 Gold is perhaps the most well-known recession hedge. When economic uncertainty rises, investors flee to gold as a &quot;safe haven&quot; asset:
@@ -198,7 +198,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">2. Treasury Bonds</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. Treasury Bonds</h2>
                             </div>
                             <p>
                                 US Treasury bonds are backed by the full faith and credit of the US government. During recessions, as the Federal Reserve cuts interest rates and investors seek safety, bond prices typically rise.
@@ -221,7 +221,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-yellow-500/20 rounded-lg text-yellow-400">
                                     <Droplets className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">3. Utility Stocks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Utility Stocks</h2>
                             </div>
                             <p>
                                 People need electricity, water, and gas regardless of economic conditions. This makes utility companies some of the most recession-resistant businesses.
@@ -240,7 +240,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Pill className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4. Healthcare Stocks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">4. Healthcare Stocks</h2>
                             </div>
                             <p>
                                 Healthcare spending continues regardless of economic conditions—people still need medications, doctor visits, and medical procedures during recessions.
@@ -271,7 +271,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">5. Consumer Staples</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">5. Consumer Staples</h2>
                             </div>
                             <p>
                                 Consumer staples are everyday necessities that people buy regardless of economic conditions: food, beverages, household products, and personal care items.
@@ -290,7 +290,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-slate-800/50 rounded-lg text-slate-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">6. Cash & Cash Equivalents</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Cash & Cash Equivalents</h2>
                             </div>
                             <p>
                                 Cash provides stability and optionality during recessions. While it earns little return, it doesn&apos;t lose value in market crashes—and it gives you the ability to buy assets at depressed prices.
@@ -313,7 +313,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">7. Essential Real Estate (REITs)</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">7. Essential Real Estate (REITs)</h2>
                             </div>
                             <p>
                                 Not all real estate is recession-resistant, but certain categories tend to hold up: healthcare facilities, data centers, cell towers, and essential retail (grocery-anchored).
@@ -332,13 +332,13 @@ export default function RecessionProofInvestmentsPage() {
                                 <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Building Your Recession Defense</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Building Your Recession Defense</h2>
                             </div>
                             <p>
                                 The best approach is to hold a diversified mix of recession-resistant assets <em>before</em> a recession hits. Here&apos;s a sample defensive allocation:
                             </p>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                 <h4 className="font-bold text-white text-lg mb-4">Sample Recession-Resistant Portfolio</h4>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
@@ -362,7 +362,7 @@ export default function RecessionProofInvestmentsPage() {
                                         <span className="font-semibold text-purple-400">15%</span>
                                     </div>
                                 </div>
-                                <p className="text-sm text-text-muted mt-4">This is a defensive allocation. Adjust based on your risk tolerance and time horizon.</p>
+                                <p className="text-sm text-slate-400 mt-4">This is a defensive allocation. Adjust based on your risk tolerance and time horizon.</p>
                             </div>
                         </section>
 

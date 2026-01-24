@@ -105,22 +105,22 @@ const schema = {
 
 export default function RobertKiyosakiGoldPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <Link href="/rich-dad-strategy" className="text-secondary hover:text-secondary/80 text-sm font-semibold mb-4 inline-block">
+                        <Link href="/rich-dad-strategy" className="text-amber-400 hover:text-amber-300 text-sm font-semibold mb-4 inline-block">
                             ← Back to Rich Dad Strategy
                         </Link>
-                        <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block mt-4">
+                        <span className="text-amber-400 font-bold tracking-widest uppercase text-xs mb-4 block mt-4">
                             Investment Philosophy
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Robert Kiyosaki on Gold
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             Why the author of &quot;Rich Dad Poor Dad&quot; has recommended gold and silver for 25+ years—and how to apply his strategy to your retirement.
                         </p>
                     </div>
@@ -135,7 +135,7 @@ export default function RobertKiyosakiGoldPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -155,23 +155,23 @@ export default function RobertKiyosakiGoldPage() {
                         {/* Savers Are Losers */}
                         <section id="savers-losers" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why &quot;Savers Are Losers&quot;</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why &quot;Savers Are Losers&quot;</h2>
                             </div>
                             <p>
                                 One of Kiyosaki&apos;s most controversial statements is that <strong>&quot;savers are losers.&quot;</strong> This isn&apos;t about being irresponsible with money—it&apos;s about understanding how the monetary system works.
                             </p>
 
-                            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl not-prose my-8">
+                            <div className="bg-red-500/10 border-l-4 border-red-500 p-6 rounded-r-xl not-prose my-8">
                                 <div className="flex items-start gap-4">
-                                    <Quote className="w-8 h-8 text-red-500 flex-shrink-0" />
+                                    <Quote className="w-8 h-8 text-red-400 flex-shrink-0" />
                                     <div>
-                                        <p className="text-red-800 italic text-lg mb-2">
+                                        <p className="text-red-300 italic text-lg mb-2">
                                             &quot;In 1971, Nixon took the dollar off the gold standard. Since then, the dollar has lost over 96% of its purchasing power. Savers are losers because they save fake money.&quot;
                                         </p>
-                                        <p className="text-red-600 font-semibold">— Robert Kiyosaki</p>
+                                        <p className="text-red-400 font-semibold">— Robert Kiyosaki</p>
                                     </div>
                                 </div>
                             </div>
@@ -187,10 +187,10 @@ export default function RobertKiyosakiGoldPage() {
                         {/* God's Money */}
                         <section id="gods-money" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Gold as &quot;God&apos;s Money&quot;</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Gold as &quot;God&apos;s Money&quot;</h2>
                             </div>
                             <p>
                                 Kiyosaki frequently refers to gold and silver as <strong>&quot;God&apos;s money&quot;</strong> in contrast to fiat currency, which he calls &quot;government money&quot; or &quot;fake money.&quot;
@@ -208,14 +208,14 @@ export default function RobertKiyosakiGoldPage() {
                                 The distinction is crucial: Gold&apos;s supply is limited by nature. No government, central bank, or corporation can print more gold. This is why gold has maintained purchasing power for over 5,000 years while every paper currency in history has eventually failed.
                             </p>
 
-                            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl not-prose my-8">
+                            <div className="bg-amber-500/10 border-l-4 border-amber-500 p-6 rounded-r-xl not-prose my-8">
                                 <div className="flex items-start gap-4">
-                                    <Quote className="w-8 h-8 text-amber-500 flex-shrink-0" />
+                                    <Quote className="w-8 h-8 text-amber-400 flex-shrink-0" />
                                     <div>
-                                        <p className="text-amber-800 italic text-lg mb-2">
+                                        <p className="text-amber-300 italic text-lg mb-2">
                                             &quot;Gold is God&apos;s money. It was here before humans, and it will be here after humans. You can&apos;t print it. You can&apos;t hack it. You can&apos;t make more of it in a computer.&quot;
                                         </p>
-                                        <p className="text-amber-600 font-semibold">— Robert Kiyosaki</p>
+                                        <p className="text-amber-400 font-semibold">— Robert Kiyosaki</p>
                                     </div>
                                 </div>
                             </div>
@@ -224,10 +224,10 @@ export default function RobertKiyosakiGoldPage() {
                         {/* Predictions */}
                         <section id="predictions" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">His Economic Predictions</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">His Economic Predictions</h2>
                             </div>
                             <p>
                                 Kiyosaki has a track record of warning about economic crises before they happen. In his 2002 book &quot;Rich Dad&apos;s Prophecy,&quot; he predicted a market crash around 2016. While his timing was off, his warnings about the fragility of the financial system proved prescient during the 2008 crash.
@@ -242,21 +242,21 @@ export default function RobertKiyosakiGoldPage() {
                                 <li><strong>Banking crisis:</strong> More bank failures like Silicon Valley Bank are coming</li>
                             </ul>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                <h4 className="font-bold text-primary text-lg mb-4">Kiyosaki&apos;s Recommendations</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
+                                <h4 className="font-bold text-white text-lg mb-4">Kiyosaki&apos;s Recommendations</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
-                                    <div className="p-4 bg-green-50 rounded-xl">
-                                        <h5 className="font-semibold text-green-800 mb-2">What He Recommends</h5>
-                                        <ul className="text-sm text-green-700 space-y-1">
+                                    <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                        <h5 className="font-semibold text-green-400 mb-2">What He Recommends</h5>
+                                        <ul className="text-sm text-green-300 space-y-1">
                                             <li>✓ Physical gold and silver</li>
                                             <li>✓ Real estate (income-producing)</li>
                                             <li>✓ Bitcoin (with caution)</li>
                                             <li>✓ Financial education</li>
                                         </ul>
                                     </div>
-                                    <div className="p-4 bg-red-50 rounded-xl">
-                                        <h5 className="font-semibold text-red-800 mb-2">What He Warns Against</h5>
-                                        <ul className="text-sm text-red-700 space-y-1">
+                                    <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
+                                        <h5 className="font-semibold text-red-400 mb-2">What He Warns Against</h5>
+                                        <ul className="text-sm text-red-300 space-y-1">
                                             <li>✗ Saving dollars long-term</li>
                                             <li>✗ Paper gold (ETFs, futures)</li>
                                             <li>✗ Traditional 401(k) advice</li>
@@ -282,10 +282,10 @@ export default function RobertKiyosakiGoldPage() {
                         {/* Strategy */}
                         <section id="strategy" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">His Investment Strategy</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">His Investment Strategy</h2>
                             </div>
                             <p>
                                 Kiyosaki doesn&apos;t view gold as a &quot;get rich quick&quot; investment. Instead, he sees it as <strong>financial insurance</strong>—protection against economic crises and currency collapse.
@@ -308,24 +308,24 @@ export default function RobertKiyosakiGoldPage() {
                         {/* Famous Quotes */}
                         <section id="quotes" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <BookOpen className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Famous Kiyosaki Gold Quotes</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Famous Kiyosaki Gold Quotes</h2>
                             </div>
 
                             <div className="space-y-6 not-prose my-8">
-                                <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-400">
-                                    <p className="text-slate-700 italic mb-2">&quot;If you don&apos;t know what gold is, you&apos;re in trouble. Gold is insurance. It&apos;s not an investment.&quot;</p>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border-l-4 border-slate-500">
+                                    <p className="text-slate-300 italic mb-2">&quot;If you don&apos;t know what gold is, you&apos;re in trouble. Gold is insurance. It&apos;s not an investment.&quot;</p>
                                 </div>
-                                <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-400">
-                                    <p className="text-slate-700 italic mb-2">&quot;The reason I hold gold and silver is because I&apos;m hedging against the incompetence of our leaders.&quot;</p>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border-l-4 border-slate-500">
+                                    <p className="text-slate-300 italic mb-2">&quot;The reason I hold gold and silver is because I&apos;m hedging against the incompetence of our leaders.&quot;</p>
                                 </div>
-                                <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-400">
-                                    <p className="text-slate-700 italic mb-2">&quot;Gold and silver are honest money. The dollar is dishonest money. Which would you rather hold?&quot;</p>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border-l-4 border-slate-500">
+                                    <p className="text-slate-300 italic mb-2">&quot;Gold and silver are honest money. The dollar is dishonest money. Which would you rather hold?&quot;</p>
                                 </div>
-                                <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-400">
-                                    <p className="text-slate-700 italic mb-2">&quot;I&apos;m not saying to put all your money in gold. I&apos;m saying, don&apos;t put all your faith in the dollar.&quot;</p>
+                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border-l-4 border-slate-500">
+                                    <p className="text-slate-300 italic mb-2">&quot;I&apos;m not saying to put all your money in gold. I&apos;m saying, don&apos;t put all your faith in the dollar.&quot;</p>
                                 </div>
                             </div>
                         </section>
@@ -333,10 +333,10 @@ export default function RobertKiyosakiGoldPage() {
                         {/* Apply the Strategy */}
                         <section id="apply" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-cyan-50 rounded-lg text-cyan-600">
+                                <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How to Apply This Strategy</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Apply This Strategy</h2>
                             </div>
                             <p>
                                 If Kiyosaki&apos;s message resonates with you, here&apos;s how to take action:
@@ -358,20 +358,20 @@ export default function RobertKiyosakiGoldPage() {
                                 <li>Easy rollover from existing retirement accounts</li>
                             </ul>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                <h4 className="font-bold text-primary text-lg mb-4">Getting Started with a Gold IRA</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
+                                <h4 className="font-bold text-white text-lg mb-4">Getting Started with a Gold IRA</h4>
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
-                                        <p className="text-text-muted">Take our <Link href="/quiz" className="text-secondary hover:underline font-semibold">60-second quiz</Link> to find the best Gold IRA company for your situation</p>
+                                        <div className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
+                                        <p className="text-slate-300">Take our <Link href="/quiz" className="text-amber-400 hover:underline font-semibold">60-second quiz</Link> to find the best Gold IRA company for your situation</p>
                                     </div>
                                     <div className="flex items-start gap-4">
-                                        <div className="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
-                                        <p className="text-text-muted">Request a free information kit from your matched company</p>
+                                        <div className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
+                                        <p className="text-slate-300">Request a free information kit from your matched company</p>
                                     </div>
                                     <div className="flex items-start gap-4">
-                                        <div className="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
-                                        <p className="text-text-muted">Rollover your 401(k) or IRA into physical gold—tax-free</p>
+                                        <div className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
+                                        <p className="text-slate-300">Rollover your 401(k) or IRA into physical gold—tax-free</p>
                                     </div>
                                 </div>
                             </div>
@@ -382,59 +382,59 @@ export default function RobertKiyosakiGoldPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Does Robert Kiyosaki recommend gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Yes, Robert Kiyosaki has been a vocal advocate for gold and silver investments for over 25 years. He calls gold &quot;God&apos;s money&quot; and recommends it as protection against inflation, currency devaluation, and economic crises. He specifically recommends physical gold over paper gold ETFs.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Why does Kiyosaki say &quot;savers are losers&quot;?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Kiyosaki says &quot;savers are losers&quot; because cash savings lose purchasing power to inflation every year. Since the dollar has lost over 96% of its value since 1913, people who simply save dollars are seeing their wealth erode. He recommends converting paper savings into real assets like gold that maintain purchasing power.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">What does &quot;God&apos;s money&quot; mean?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
+                                    <p className="mt-4 leading-relaxed text-slate-300">
                                         Kiyosaki calls gold and silver &quot;God&apos;s money&quot; because they are natural elements that cannot be created, printed, or digitally manufactured by governments or central banks. Unlike fiat currency which can be printed infinitely, gold&apos;s supply is limited by nature, making it a true store of value.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white rounded-xl border border-gray-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-primary">
+                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
                                         <h4 className="text-lg font-bold">Does Kiyosaki recommend Gold IRAs?</h4>
-                                        <span className="shrink-0 rounded-full bg-white p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-gray-700">
-                                        Yes, Kiyosaki supports using retirement accounts to hold physical precious metals. A <Link href="/what-is-a-gold-ira" className="text-secondary hover:underline">Gold IRA</Link> allows you to apply his wealth protection strategy with tax advantages, converting paper 401(k) assets into physical gold and silver tax-free through a rollover.
+                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                        Yes, Kiyosaki supports using retirement accounts to hold physical precious metals. A <Link href="/what-is-a-gold-ira" className="text-amber-400 hover:underline">Gold IRA</Link> allows you to apply his wealth protection strategy with tax advantages, converting paper 401(k) assets into physical gold and silver tax-free through a rollover.
                                     </p>
                                 </details>
                             </div>

@@ -10,16 +10,16 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <FadeIn>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
                                 Terms of Service
                             </h1>
-                            <p className="text-text-muted">
+                            <p className="text-slate-400">
                                 Last updated: January 2026
                             </p>
                         </div>
@@ -31,9 +31,9 @@ export default function TermsOfServicePage() {
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">
                     <FadeIn delay={0.1}>
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
-                            <p className="lead text-lg text-text-muted">
+                            <p className="lead text-lg text-slate-300">
                                 By using Rich Dad Retirement, you agree to these terms. We&apos;ve tried to make them readable while still covering the legal bases. If something doesn&apos;t make sense, feel free to ask.
                             </p>
 

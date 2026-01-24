@@ -92,19 +92,19 @@ const schema = {
 
 export default function IsMyMoneySafeInBankPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Financial Safety
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Is My Money Safe in the Bank?
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             FDIC limits, real risks, and strategies to protect your savings beyond traditional banking.
                         </p>
                     </div>
@@ -119,7 +119,7 @@ export default function IsMyMoneySafeInBankPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -142,7 +142,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">FDIC Insurance Explained</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">FDIC Insurance Explained</h2>
                             </div>
                             <p>
                                 The Federal Deposit Insurance Corporation (FDIC) was created in 1933 after thousands of banks failed during the Great Depression. Its purpose: restore confidence in the banking system by guaranteeing deposits.
@@ -188,7 +188,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Real Risks to Your Bank Deposits</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Real Risks to Your Bank Deposits</h2>
                             </div>
 
                             <h3>1. Fractional Reserve Banking</h3>
@@ -218,7 +218,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Hidden Risk: Inflation</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Hidden Risk: Inflation</h2>
                             </div>
                             <p>
                                 Perhaps the biggest threat to bank deposits isn&apos;t bank failure—it&apos;s <strong>inflation</strong>. Your money might be &quot;safe&quot; in the sense that the bank won&apos;t lose it, but it&apos;s constantly losing purchasing power.
@@ -278,7 +278,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-slate-800/50 rounded-lg text-slate-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The 2023 Banking Crisis</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The 2023 Banking Crisis</h2>
                             </div>
                             <p>
                                 In March 2023, three major banks failed in rapid succession—a stark reminder that bank failures aren&apos;t just historical events:
@@ -325,7 +325,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Lock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Strategies to Protect Your Money</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Strategies to Protect Your Money</h2>
                             </div>
 
                             <h3>1. Spread Across Multiple Banks</h3>
@@ -360,7 +360,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Alternatives to Bank Deposits</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Alternatives to Bank Deposits</h2>
                             </div>
 
                             <h3>Physical Gold & Precious Metals</h3>

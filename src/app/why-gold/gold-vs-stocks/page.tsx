@@ -75,10 +75,10 @@ export default function GoldVsStocksPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-background">
+            <section className="py-16 bg-slate-900">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 prose-a:text-secondary max-w-none">
 
                             {/* Introduction */}
                             <p className="lead">
@@ -97,48 +97,48 @@ export default function GoldVsStocksPage() {
                             </div>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Factor</th>
-                                            <th className="p-4 border-b font-bold text-amber-600">Gold</th>
-                                            <th className="p-4 border-b font-bold text-blue-600">Stocks</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Factor</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Gold</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-blue-400">Stocks</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4 font-medium">Long-term returns (50yr)</td>
+                                            <td className="p-4 font-medium text-white">Long-term returns (50yr)</td>
                                             <td className="p-4">~7% annually</td>
                                             <td className="p-4">~10% annually</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">Income generation</td>
+                                            <td className="p-4 font-medium text-white">Income generation</td>
                                             <td className="p-4">None</td>
                                             <td className="p-4">Dividends (1-3%)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">Crisis performance</td>
-                                            <td className="p-4 text-green-600 font-semibold">Excellent (rises)</td>
-                                            <td className="p-4 text-red-600">Poor (falls)</td>
+                                            <td className="p-4 font-medium text-white">Crisis performance</td>
+                                            <td className="p-4 text-green-400 font-semibold">Excellent (rises)</td>
+                                            <td className="p-4 text-red-400">Poor (falls)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">Inflation protection</td>
-                                            <td className="p-4 text-green-600 font-semibold">Excellent</td>
+                                            <td className="p-4 font-medium text-white">Inflation protection</td>
+                                            <td className="p-4 text-green-400 font-semibold">Excellent</td>
                                             <td className="p-4">Moderate</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">Counterparty risk</td>
-                                            <td className="p-4 text-green-600 font-semibold">None (physical)</td>
+                                            <td className="p-4 font-medium text-white">Counterparty risk</td>
+                                            <td className="p-4 text-green-400 font-semibold">None (physical)</td>
                                             <td className="p-4">Yes (company risk)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">Volatility</td>
+                                            <td className="p-4 font-medium text-white">Volatility</td>
                                             <td className="p-4">Lower</td>
                                             <td className="p-4">Higher</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium">Correlation to stocks</td>
-                                            <td className="p-4 text-green-600 font-semibold">Near zero/negative</td>
+                                            <td className="p-4 font-medium text-white">Correlation to stocks</td>
+                                            <td className="p-4 text-green-400 font-semibold">Near zero/negative</td>
                                             <td className="p-4">N/A</td>
                                         </tr>
                                     </tbody>
@@ -159,34 +159,34 @@ export default function GoldVsStocksPage() {
 
                             <h3>1. Financial Crises & Market Crashes</h3>
                             <div className="overflow-x-auto not-prose my-6">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Crisis</th>
-                                            <th className="p-4 border-b font-bold text-amber-600">Gold</th>
-                                            <th className="p-4 border-b font-bold text-blue-600">S&P 500</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Crisis</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Gold</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-blue-400">S&P 500</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4">2008 Financial Crisis</td>
-                                            <td className="p-4 text-green-600 font-semibold">+25%</td>
-                                            <td className="p-4 text-red-600 font-semibold">-37%</td>
+                                            <td className="p-4 text-white">2008 Financial Crisis</td>
+                                            <td className="p-4 text-green-400 font-semibold">+25%</td>
+                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4">2020 COVID (full year)</td>
-                                            <td className="p-4 text-green-600 font-semibold">+25%</td>
-                                            <td className="p-4 font-semibold">+18%</td>
+                                            <td className="p-4 text-white">2020 COVID (full year)</td>
+                                            <td className="p-4 text-green-400 font-semibold">+25%</td>
+                                            <td className="p-4 font-semibold text-white">+18%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4">2001 Dot-Com Crash</td>
-                                            <td className="p-4 text-green-600 font-semibold">+2%</td>
-                                            <td className="p-4 text-red-600 font-semibold">-13%</td>
+                                            <td className="p-4 text-white">2001 Dot-Com Crash</td>
+                                            <td className="p-4 text-green-400 font-semibold">+2%</td>
+                                            <td className="p-4 text-red-400 font-semibold">-13%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4">1973-74 Bear Market</td>
-                                            <td className="p-4 text-green-600 font-semibold">+73%</td>
-                                            <td className="p-4 text-red-600 font-semibold">-48%</td>
+                                            <td className="p-4 text-white">1973-74 Bear Market</td>
+                                            <td className="p-4 text-green-400 font-semibold">+73%</td>
+                                            <td className="p-4 text-red-400 font-semibold">-48%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -257,32 +257,32 @@ export default function GoldVsStocksPage() {
                                 <li><strong>Maintains purchasing power:</strong> Inflation protection</li>
                             </ul>
 
-                            <div className="bg-background-subtle rounded-2xl p-6 border border-primary/5 not-prose my-8">
-                                <h4 className="font-bold text-primary text-lg mb-4">Portfolio Comparison (1972-2024)</h4>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
+                                <h4 className="font-bold text-white text-lg mb-4">Portfolio Comparison (1972-2024)</h4>
                                 <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span className="text-gray-700">100% Stocks</span>
+                                    <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
+                                        <span className="text-slate-300">100% Stocks</span>
                                         <div className="text-right">
-                                            <span className="font-semibold text-blue-600 block">10.2% return</span>
-                                            <span className="text-xs text-gray-500">Max drawdown: -51%</span>
+                                            <span className="font-semibold text-blue-400 block">10.2% return</span>
+                                            <span className="text-xs text-slate-500">Max drawdown: -51%</span>
                                         </div>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span className="text-gray-700">85% Stocks / 15% Gold</span>
+                                    <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
+                                        <span className="text-slate-300">85% Stocks / 15% Gold</span>
                                         <div className="text-right">
-                                            <span className="font-semibold text-green-600 block">9.8% return</span>
-                                            <span className="text-xs text-gray-500">Max drawdown: -40%</span>
+                                            <span className="font-semibold text-green-400 block">9.8% return</span>
+                                            <span className="text-xs text-slate-500">Max drawdown: -40%</span>
                                         </div>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span className="text-gray-700">70% Stocks / 20% Bonds / 10% Gold</span>
+                                    <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
+                                        <span className="text-slate-300">70% Stocks / 20% Bonds / 10% Gold</span>
                                         <div className="text-right">
-                                            <span className="font-semibold text-purple-600 block">9.4% return</span>
-                                            <span className="text-xs text-gray-500">Max drawdown: -32%</span>
+                                            <span className="font-semibold text-purple-400 block">9.4% return</span>
+                                            <span className="text-xs text-slate-500">Max drawdown: -32%</span>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-text-muted mt-4">Adding gold slightly reduces returns but dramatically reduces risk and drawdowns.</p>
+                                <p className="text-sm text-slate-400 mt-4">Adding gold slightly reduces returns but dramatically reduces risk and drawdowns.</p>
                             </div>
 
                             {/* How Much Gold */}
@@ -298,28 +298,28 @@ export default function GoldVsStocksPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-gray-200">
-                                    <thead className="bg-gray-50">
+                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b font-bold text-primary">Allocation</th>
-                                            <th className="p-4 border-b font-bold text-primary">Best For</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Allocation</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Best For</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100 text-sm">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
-                                            <td className="p-4 font-semibold text-amber-600">5-10%</td>
+                                            <td className="p-4 font-semibold text-amber-400">5-10%</td>
                                             <td className="p-4">Conservative diversification, young investors with long time horizons</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-amber-600">10-15%</td>
+                                            <td className="p-4 font-semibold text-amber-400">10-15%</td>
                                             <td className="p-4">Standard recommendation, balanced approach</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-amber-600">15-20%</td>
+                                            <td className="p-4 font-semibold text-amber-400">15-20%</td>
                                             <td className="p-4">Near-retirees, those concerned about market risk or inflation</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-amber-600">20%+</td>
+                                            <td className="p-4 font-semibold text-amber-400">20%+</td>
                                             <td className="p-4">Wealth preservation focus, very risk-averse, economic pessimists</td>
                                         </tr>
                                     </tbody>
@@ -365,7 +365,7 @@ export default function GoldVsStocksPage() {
                         </article>
 
                         {/* Navigation */}
-                        <div className="mt-16 pt-8 border-t border-gray-200">
+                        <div className="mt-16 pt-8 border-t border-white/10">
                             <div className="flex flex-col sm:flex-row gap-4 justify-between">
                                 <Link
                                     href="/why-gold/central-banks-buying-gold"

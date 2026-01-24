@@ -91,19 +91,19 @@ const schema = {
 
 export default function PlatinumIraPage() {
     return (
-        <main className="min-h-screen bg-background pb-24">
+        <main className="min-h-screen bg-slate-900 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-background-subtle py-16 border-b border-primary/5">
+            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Precious Metals Guide
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
                             Platinum IRA Investment Guide
                         </h1>
-                        <p className="text-xl text-text-muted leading-relaxed">
+                        <p className="text-xl text-slate-300 leading-relaxed">
                             It's 30 times rarer than gold and essential to modern industry. Here's why smart investors are adding "white gold" to their retirement portfolios.
                         </p>
                     </div>
@@ -118,7 +118,7 @@ export default function PlatinumIraPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-primary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -132,7 +132,7 @@ export default function PlatinumIraPage() {
                                 <div className="p-3 bg-indigo-500/20 rounded-lg text-indigo-400">
                                     <Gem className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Platinum?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Platinum?</h2>
                             </div>
                             <p>
                                 Platinum is incredibly rare. All the platinum ever mined would fit into your living room. In contrast, all the gold would fill three Olympic-sized swimming pools.
@@ -145,7 +145,7 @@ export default function PlatinumIraPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Bull Case for Platinum</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Bull Case for Platinum</h2>
                             </div>
                             <p>
                                 Platinum is primarily an industrial metal, used heavily in:
@@ -222,7 +222,7 @@ export default function PlatinumIraPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Risks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Risks</h2>
                             </div>
                             <p>
                                 Because platinum is an industrial metal, it suffers during recessions when car manufacturing slows down. Gold tends to perform <i>better</i> during recessions. Therefore, platinum should be viewed as a <strong>growth play</strong> within a precious metals portfolio, not just a safety play.
