@@ -51,29 +51,29 @@ export function Navbar() {
                             </span>
                         </Link>
 
-                        {/* Desktop Navigation */}
+                        {/* Desktop Navigation - Golden Circle: WHY → HOW → WHAT */}
                         <nav className="hidden lg:flex items-center gap-8">
+                            <Link href="/why-gold" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                                Why Gold?
+                            </Link>
+                            <Link href="/what-is-a-gold-ira" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                                How It Works
+                            </Link>
                             <Link href="/best-gold-ira-companies" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
                                 Best Companies
                             </Link>
                             <Link href="/reviews" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
                                 Reviews
                             </Link>
-                            <Link href="/compare" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
-                                Compare
-                            </Link>
-                            <Link href="/rollover" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
-                                Rollover
-                            </Link>
                             <Button variant="gold" size="sm" asChild>
-                                <Link href="/guide/gold-ira-guide">Free PDF Guide</Link>
+                                <Link href="/get-started">Get Started</Link>
                             </Button>
                         </nav>
 
                         {/* Mobile Controls */}
                         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
                             <Button variant="gold" size="sm" asChild className="flex">
-                                <Link href="/guide/gold-ira-guide">Free Guide</Link>
+                                <Link href="/get-started">Get Started</Link>
                             </Button>
                             {/* Mobile Menu Button */}
                             <button
@@ -87,41 +87,41 @@ export function Navbar() {
                 </Container>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu - Golden Circle: WHY → HOW → WHAT */}
             {isMobileMenuOpen && (
                 <div className="lg:hidden absolute top-full left-0 w-full bg-slate-800 border-b border-white/10 py-4 px-4 shadow-xl">
                     <div className="flex flex-col gap-4">
+                        <Link
+                            href="/why-gold"
+                            className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Why Gold?
+                        </Link>
+                        <Link
+                            href="/what-is-a-gold-ira"
+                            className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            How It Works
+                        </Link>
                         <Link
                             href="/best-gold-ira-companies"
                             className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
-                            Best Gold IRA Companies
+                            Best Companies
                         </Link>
                         <Link
                             href="/reviews"
                             className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
-                            Company Reviews
-                        </Link>
-                        <Link
-                            href="/compare"
-                            className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Compare Companies
-                        </Link>
-                        <Link
-                            href="/rollover"
-                            className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Rollover Guide
+                            Reviews
                         </Link>
                         <Button variant="gold" className="w-full mt-2" asChild>
-                            <Link href="/guide/gold-ira-guide" onClick={() => setIsMobileMenuOpen(false)}>
-                                Free PDF Guide
+                            <Link href="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
+                                Get Started
                             </Link>
                         </Button>
                     </div>
