@@ -13,20 +13,39 @@ export const AFFILIATE_LINKS = {
     advantage: "https://advantagegold.com/?affiliate_id=RICH_DAD", // Placeholder
 };
 
-// Context-aware Augusta link selection
+// Context-aware Augusta link selection with sub_id tracking
 export type AugustaContext = "default" | "comparison" | "fees" | "silver";
 
-export function getAugustaLink(context: AugustaContext = "default"): string {
+export function getAugustaLink(context: AugustaContext = "default", subId?: string): string {
+    let baseUrl: string;
+
     switch (context) {
         case "comparison":
-            return AFFILIATE_LINKS.augustaComparison;
+            baseUrl = AFFILIATE_LINKS.augustaComparison;
+            break;
         case "fees":
-            return AFFILIATE_LINKS.augustaZeroFees;
+            baseUrl = AFFILIATE_LINKS.augustaZeroFees;
+            break;
         case "silver":
-            return AFFILIATE_LINKS.augustaSilver;
+            baseUrl = AFFILIATE_LINKS.augustaSilver;
+            break;
         default:
-            return AFFILIATE_LINKS.augusta;
+            baseUrl = AFFILIATE_LINKS.augusta;
     }
+
+    // Add sub_id for tracking which page generated the lead
+    if (subId) {
+        return `${baseUrl}&sub_id=${encodeURIComponent(subId)}`;
+    }
+
+    return baseUrl;
+}
+
+// Helper to get Augusta link with automatic page tracking
+export function getAugustaLinkWithTracking(context: AugustaContext = "default", pageName?: string): string {
+    // Use page name as sub_id for tracking
+    const subId = pageName || context;
+    return getAugustaLink(context, subId);
 }
 
 export const COMPANY_DETAILS = {

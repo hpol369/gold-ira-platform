@@ -232,28 +232,31 @@ export default function ConversionsPage() {
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
             <h2 className="font-semibold text-white mb-4">Augusta Postback URLs</h2>
             <p className="text-sm text-slate-400 mb-4">
-              Copy these URLs into your Augusta affiliate dashboard:
+              Copy these URLs into your Augusta affiliate dashboard (Postbacks section):
             </p>
             <div className="space-y-3">
               <div>
-                <label className="text-xs text-slate-500 uppercase">Lead Capture</label>
-                <code className="block bg-slate-800 text-green-400 p-3 rounded-lg text-sm mt-1 overflow-x-auto">
-                  https://richdadretirement.com/api/postback?type=lead_capture&sub_id={"{sub_id}"}&lead_id={"{lead_id}"}
+                <label className="text-xs text-slate-500 uppercase">Postback - Lead Capture</label>
+                <code className="block bg-slate-800 text-green-400 p-3 rounded-lg text-sm mt-1 overflow-x-auto select-all cursor-pointer">
+                  https://richdadretirement.com/api/postback?type=lead_capture
                 </code>
               </div>
               <div>
-                <label className="text-xs text-slate-500 uppercase">Qualified Lead</label>
-                <code className="block bg-slate-800 text-amber-400 p-3 rounded-lg text-sm mt-1 overflow-x-auto">
-                  https://richdadretirement.com/api/postback?type=qualified_lead&sub_id={"{sub_id}"}&lead_id={"{lead_id}"}
+                <label className="text-xs text-slate-500 uppercase">Postback - Qualified Lead</label>
+                <code className="block bg-slate-800 text-amber-400 p-3 rounded-lg text-sm mt-1 overflow-x-auto select-all cursor-pointer">
+                  https://richdadretirement.com/api/postback?type=qualified_lead
                 </code>
               </div>
               <div>
-                <label className="text-xs text-slate-500 uppercase">Trade Complete</label>
-                <code className="block bg-slate-800 text-green-400 p-3 rounded-lg text-sm mt-1 overflow-x-auto">
-                  https://richdadretirement.com/api/postback?type=trade_complete&sub_id={"{sub_id}"}&lead_id={"{lead_id}"}
+                <label className="text-xs text-slate-500 uppercase">Postback - Trade Complete</label>
+                <code className="block bg-slate-800 text-green-400 p-3 rounded-lg text-sm mt-1 overflow-x-auto select-all cursor-pointer">
+                  https://richdadretirement.com/api/postback?type=trade_complete
                 </code>
               </div>
             </div>
+            <p className="text-xs text-slate-500 mt-4">
+              Augusta will automatically send sub_id and other tracking data with each postback.
+            </p>
           </div>
 
           {/* Recent Conversions */}
