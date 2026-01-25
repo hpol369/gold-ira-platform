@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Noble Gold Fees Breakdown 2026: Setup, Storage & Annual Costs",
@@ -324,7 +324,7 @@ export default function NobleGoldFeesPage() {
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Button variant="gold" size="lg" asChild>
-                                        <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "guide-noble-fees", "augusta")} target="_blank" rel="noopener noreferrer">
                                             Compare with Augusta <ArrowRight className="ml-2 h-4 w-4" />
                                         </a>
                                     </Button>

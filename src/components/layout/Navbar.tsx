@@ -5,7 +5,7 @@ import { ArrowRight, ShieldCheck, Menu, X, ChevronDown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ export function Navbar() {
                             <span className="hidden sm:inline text-slate-400">{freshnessBadge}</span>
                         </div>
                         <a
-                            href={AFFILIATE_LINKS.augusta}
+                            href={getTrackedLink(AFFILIATE_LINKS.augusta, "navbar-cta", "augusta")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 font-semibold text-amber-400 hover:text-amber-300 transition-colors group"

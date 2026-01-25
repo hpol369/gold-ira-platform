@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight, Star, ShieldCheck, Trophy, Phone, UserCheck, Lock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export function FeaturedPartner() {
     return (
@@ -122,7 +122,7 @@ export function FeaturedPartner() {
                                 className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all text-lg font-bold group"
                                 asChild
                             >
-                                <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-featured", "augusta")} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-col items-center">
                                         <span className="flex items-center gap-2">
                                             Get Your Free Gold IRA Kit

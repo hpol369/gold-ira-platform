@@ -5,7 +5,7 @@ import { ArrowRight, ShieldCheck, TrendingUp, Lock, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export function Hero() {
     return (
@@ -79,7 +79,7 @@ export function Hero() {
                             className="bg-white/5 hover:bg-white/10 text-white border border-white/20 hover:border-white/40 w-full sm:w-auto min-w-[280px] h-16 text-lg backdrop-blur-sm transition-all duration-300 shadow-lg group"
                             asChild
                         >
-                            <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                            <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-hero", "augusta")} target="_blank" rel="noopener noreferrer">
                                 <span className="flex items-center justify-center gap-2">
                                     <Phone className="h-5 w-5 text-secondary group-hover:animate-pulse" />
                                     Free Personal Consultation

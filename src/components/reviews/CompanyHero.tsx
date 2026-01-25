@@ -6,6 +6,7 @@ import { Company } from "@/data/companies";
 import { CompanyRating } from "./CompanyRating";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
+import { getTrackedLink } from "@/config/affiliates";
 
 interface CompanyHeroProps {
   company: Company;
@@ -68,7 +69,7 @@ export function CompanyHero({ company }: CompanyHeroProps) {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
               <a
-                href={company.affiliateLink}
+                href={getTrackedLink(company.affiliateLink, `company-hero-${company.slug}`, company.slug)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(

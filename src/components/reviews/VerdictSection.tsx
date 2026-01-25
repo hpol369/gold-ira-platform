@@ -5,6 +5,7 @@ import { Award, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Company, getFeaturedCompany } from "@/data/companies";
 import { CompanyRating } from "./CompanyRating";
 import { cn } from "@/lib/utils";
+import { getTrackedLink } from "@/config/affiliates";
 
 interface VerdictSectionProps {
   company: Company;
@@ -102,7 +103,7 @@ export function VerdictSection({
         {/* CTA */}
         <div className="flex flex-wrap gap-4">
           <a
-            href={company.affiliateLink}
+            href={getTrackedLink(company.affiliateLink, `verdict-${company.slug}`, company.slug)}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
@@ -148,7 +149,7 @@ export function VerdictSection({
             </div>
             <div className="flex-shrink-0">
               <a
-                href={augusta.affiliateLink}
+                href={getTrackedLink(augusta.affiliateLink, `verdict-${company.slug}`, "augusta-precious-metals")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"

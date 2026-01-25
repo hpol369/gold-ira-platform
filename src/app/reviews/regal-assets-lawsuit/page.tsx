@@ -6,7 +6,7 @@ import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { AlertTriangle, XCircle, ShieldAlert } from "lucide-react";
 import Link from "next/link";
 
@@ -173,7 +173,7 @@ export default function RegalAssetsLawsuitPage() {
                                         Compare companies with proven track records and clean regulatory histories.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-regal-lawsuit", "augusta")} target="_blank" rel="noopener noreferrer">
                                             See Our Top-Rated Companies
                                         </a>
                                     </Button>

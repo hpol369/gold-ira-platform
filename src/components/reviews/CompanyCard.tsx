@@ -8,6 +8,7 @@ import { ArrowRight, Award, Shield, TrendingUp } from "lucide-react";
 import { Company } from "@/data/companies";
 import { CompanyRating } from "./CompanyRating";
 import { cn } from "@/lib/utils";
+import { getTrackedLink } from "@/config/affiliates";
 
 interface CompanyCardProps {
   company: Company;
@@ -140,7 +141,7 @@ export function CompanyCard({
               Read Full Review
             </Link>
             <a
-              href={company.affiliateLink}
+              href={getTrackedLink(company.affiliateLink, `company-card-${company.slug}`, company.slug)}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 text-center py-3 px-4 rounded-lg font-semibold border border-white/10 text-slate-300 hover:bg-white/5 transition-all text-sm"

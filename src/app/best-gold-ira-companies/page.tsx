@@ -7,7 +7,7 @@ import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { Sparkles, Trophy, Star, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata = {
     title: "Best Gold IRA Companies of 2026 | Independent Reviews & Rankings",
@@ -103,7 +103,7 @@ export default function BestGoldIraCompaniesPage() {
                                     </div>
                                     <div className="flex gap-4">
                                         <Button variant="gold" size="lg" className="w-full" asChild>
-                                            <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                            <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "best-companies", "augusta")} target="_blank" rel="noopener noreferrer">
                                                 Request Information
                                             </a>
                                         </Button>
@@ -157,7 +157,7 @@ export default function BestGoldIraCompaniesPage() {
                                     </div>
                                     <div className="flex gap-4">
                                         <Button variant="gold" size="lg" className="w-full" asChild>
-                                            <a href={AFFILIATE_LINKS.noble} target="_blank" rel="noopener noreferrer">
+                                            <a href={getTrackedLink(AFFILIATE_LINKS.noble, "best-companies", "noble")} target="_blank" rel="noopener noreferrer">
                                                 Request Information
                                             </a>
                                         </Button>
@@ -183,7 +183,7 @@ export default function BestGoldIraCompaniesPage() {
                                     </p>
                                     <div className="flex gap-4">
                                         <Button variant="gold" size="lg" className="w-full" asChild>
-                                            <a href={AFFILIATE_LINKS.goldco} target="_blank" rel="noopener noreferrer">
+                                            <a href={getTrackedLink(AFFILIATE_LINKS.goldco, "best-companies", "goldco")} target="_blank" rel="noopener noreferrer">
                                                 Request Information
                                             </a>
                                         </Button>

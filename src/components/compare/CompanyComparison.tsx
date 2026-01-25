@@ -5,6 +5,7 @@ import { Company } from "@/data/companies";
 import { CheckCircle2, XCircle, Star, Shield, Award, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { getTrackedLink } from "@/config/affiliates";
 
 interface CompanyComparisonProps {
   companyA: Company;
@@ -220,7 +221,7 @@ export function CompanyComparisonTable({
             <td className="p-4"></td>
             <td className="p-4 text-center">
               <a
-                href={companyA.affiliateLink}
+                href={getTrackedLink(companyA.affiliateLink, "compare-component", companyA.slug)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
@@ -236,7 +237,7 @@ export function CompanyComparisonTable({
             </td>
             <td className="p-4 text-center">
               <a
-                href={companyB.affiliateLink}
+                href={getTrackedLink(companyB.affiliateLink, "compare-component", companyB.slug)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
@@ -387,7 +388,7 @@ export function ComparisonWinner({ companyA, companyB }: ComparisonWinnerProps) 
           {winner.featured && " As our #1 overall pick, they offer the best combination of service, fees, and customer satisfaction."}
         </p>
         <a
-          href={winner.affiliateLink}
+          href={getTrackedLink(winner.affiliateLink, "compare-component", winner.slug)}
           target="_blank"
           rel="noopener noreferrer"
           className={cn(

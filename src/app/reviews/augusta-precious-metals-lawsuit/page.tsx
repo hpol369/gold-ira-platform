@@ -8,7 +8,7 @@ import { ArrowRight, ShieldCheck, AlertTriangle, Gavel, CheckCircle2 } from "luc
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Augusta Precious Metals Lawsuit (2026 Update): The Truth",
@@ -94,7 +94,7 @@ export default function AugustaLawsuitPage() {
                                 rating={4.9}
                                 isRecommended={true}
                                 bottomLine="Our investigation found NO lawsuits, NO CFTC actions, and ZERO BBB complaints against Augusta. This is the cleanest regulatory record in the industry. The 'lawsuit' searches come from people confusing Augusta with other dealers who DID get sued."
-                                ctaUrl={AFFILIATE_LINKS.augusta}
+                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-lawsuit", "augusta")}
                                 ctaText="Get Augusta's Free Gold Guide"
                             />
                         </section>
@@ -218,7 +218,7 @@ export default function AugustaLawsuitPage() {
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Verified Clean Record</h3>
                                 <p className="mb-6 text-gray-200">See why Augusta has zero complaints. Get their free investor kit.</p>
                                 <Button variant="gold" size="lg" asChild>
-                                    <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                    <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-lawsuit", "augusta")} target="_blank" rel="noopener noreferrer">
                                         Get Free Gold Guide <ArrowRight className="ml-2 w-4 h-4" />
                                     </a>
                                 </Button>

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { getQuizResult, type QuizState, type QuizResult } from "@/types/quiz";
 import { Container } from "@/components/ui/Container";
+import { getTrackedLink } from "@/config/affiliates";
 
 // Updated for "Rich Dad" style scoring
 const steps = [
@@ -210,7 +211,7 @@ export function QuizWizard() {
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Button size="xl" variant="gold" asChild className="w-full">
-                                    <a href={result.affiliateLink} target="_blank" rel="noopener noreferrer">
+                                    <a href={getTrackedLink(result.affiliateLink, "quiz-result", result.partnerId)} target="_blank" rel="noopener noreferrer">
                                         Get Free "Rich Dad" Investment Kit
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </a>

@@ -7,7 +7,7 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Metadata } from "next";
 import { CheckCircle2, XCircle, ArrowRight, Trophy, Wallet, GraduationCap, Building2, Check, X, ShieldCheck, BadgeDollarSign, UserCheck, AlertTriangle } from "lucide-react";
 import Link from "next/link";
@@ -253,7 +253,7 @@ export default function AugustaVsNoblePage() {
                                         </ul>
                                         <div className="mt-4">
                                             <Button variant="gold" size="sm" asChild>
-                                                <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                                <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "compare-augusta-vs-noble", "augusta")} target="_blank" rel="noopener noreferrer">
                                                     Get Augusta Free Kit <ArrowRight className="ml-2 w-4 h-4" />
                                                 </a>
                                             </Button>
@@ -281,7 +281,7 @@ export default function AugustaVsNoblePage() {
                                         </ul>
                                         <div className="mt-4">
                                             <Button variant="outline" size="sm" asChild>
-                                                <a href={AFFILIATE_LINKS.noble} target="_blank" rel="noopener noreferrer">
+                                                <a href={getTrackedLink(AFFILIATE_LINKS.noble, "compare-augusta-vs-noble", "noble")} target="_blank" rel="noopener noreferrer">
                                                     Get Noble Gold Free Kit <ArrowRight className="ml-2 w-4 h-4" />
                                                 </a>
                                             </Button>

@@ -6,7 +6,7 @@
 
 import { useState, useEffect } from "react";
 import { ArrowRight, Star, Shield, X } from "lucide-react";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 interface StickyMobileCTAProps {
   companySlug: string;
@@ -18,6 +18,8 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
   const [isDismissed, setIsDismissed] = useState(false);
 
   const isAugusta = companySlug === "augusta-precious-metals";
+  const trackSource = `mobile-sticky-${companySlug}`;
+  const trackedLink = getTrackedLink(AFFILIATE_LINKS.augusta, trackSource, "augusta");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +67,7 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                 </p>
               </div>
               <a
-                href={AFFILIATE_LINKS.augusta}
+                href={trackedLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-sm rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all whitespace-nowrap"
@@ -87,7 +89,7 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                 </p>
               </div>
               <a
-                href={AFFILIATE_LINKS.augusta}
+                href={trackedLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-sm rounded-lg hover:from-green-600 hover:to-green-700 transition-all whitespace-nowrap"

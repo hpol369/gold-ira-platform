@@ -7,7 +7,7 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -52,7 +52,7 @@ export default function AugustaReviewPage() {
                                 rating={4.9}
                                 isRecommended={true}
                                 bottomLine="Augusta is the premium choice for investors with $50,000+. Their education-first approach, transparent fees, and fee-waiver program make them stand out. Not the cheapest, but arguably the best service in the industry."
-                                ctaUrl={AFFILIATE_LINKS.augusta}
+                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-static", "augusta")}
                                 ctaText="Get Free Gold IRA Guide"
                             />
 
@@ -161,7 +161,7 @@ export default function AugustaReviewPage() {
                                         Learn how Gold IRAs work and whether they fit your retirement strategy.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-static", "augusta")} target="_blank" rel="noopener noreferrer">
                                             Request Free Guide
                                         </a>
                                     </Button>

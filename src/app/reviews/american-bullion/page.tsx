@@ -7,7 +7,7 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -56,7 +56,7 @@ export default function AmericanBullionReviewPage() {
                                 rating={4.2}
                                 isRecommended={true}
                                 bottomLine="American Bullion is a solid, experienced player with a long track record and A+ BBB rating. They know what they're doing. The tradeoff: their website and educational resources feel dated compared to Augusta or Goldco. Good choice if you value experience over polish."
-                                ctaUrl={AFFILIATE_LINKS.augusta}
+                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.augusta, "review-american-bullion", "augusta")}
                                 ctaText="Compare With Our #1 Pick"
                             />
 
@@ -137,7 +137,7 @@ export default function AmericanBullionReviewPage() {
                                         Compare American Bullion with our top-rated companies.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-american-bullion", "augusta")} target="_blank" rel="noopener noreferrer">
                                             See Our #1 Recommendation
                                         </a>
                                     </Button>

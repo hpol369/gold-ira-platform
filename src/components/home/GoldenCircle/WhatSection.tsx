@@ -7,7 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import {
   Star,
   Award,
@@ -187,7 +187,7 @@ export function WhatSection() {
                       className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold shadow-lg"
                       asChild
                     >
-                      <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                      <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-what-section", "augusta")} target="_blank" rel="noopener noreferrer">
                         <span className="flex items-center gap-2">
                           Get Free Gold IRA Kit
                           <ArrowRight className="h-4 w-4" />
@@ -266,7 +266,7 @@ export function WhatSection() {
                   Free consultation with no obligation—just education
                 </p>
                 <a
-                  href={AFFILIATE_LINKS.augusta}
+                  href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-what-section", "augusta")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-amber-400 font-semibold text-sm hover:text-amber-300 transition-colors"

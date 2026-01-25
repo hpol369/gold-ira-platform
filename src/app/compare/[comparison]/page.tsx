@@ -19,6 +19,7 @@ import {
   Company,
 } from "@/data/companies";
 import { Scale, ArrowRight, Star, Shield, DollarSign, Award, CheckCircle2 } from "lucide-react";
+import { getTrackedLink } from "@/config/affiliates";
 
 interface Props {
   params: Promise<{ comparison: string }>;
@@ -283,7 +284,7 @@ export default async function ComparisonPage({ params }: Props) {
                         Read Full Review →
                       </Link>
                       <a
-                        href={companyA.affiliateLink}
+                        href={getTrackedLink(companyA.affiliateLink, `compare-${comparison}`, companyA.slug)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-300 font-semibold hover:text-white"
@@ -325,7 +326,7 @@ export default async function ComparisonPage({ params }: Props) {
                         Read Full Review →
                       </Link>
                       <a
-                        href={companyB.affiliateLink}
+                        href={getTrackedLink(companyB.affiliateLink, `compare-${comparison}`, companyB.slug)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-300 font-semibold hover:text-white"
@@ -379,7 +380,7 @@ export default async function ComparisonPage({ params }: Props) {
                         {winner.rating}/5 • {winner.bbbRating} BBB
                       </div>
                       <a
-                        href={winner.affiliateLink}
+                        href={getTrackedLink(winner.affiliateLink, `compare-${comparison}`, winner.slug)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`block w-full text-center py-3 font-bold rounded-lg transition-all ${
@@ -456,7 +457,7 @@ export default async function ComparisonPage({ params }: Props) {
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <a
-                    href={companyA.affiliateLink}
+                    href={getTrackedLink(companyA.affiliateLink, `compare-${comparison}`, companyA.slug)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${
@@ -469,7 +470,7 @@ export default async function ComparisonPage({ params }: Props) {
                     <ArrowRight className="h-4 w-4" />
                   </a>
                   <a
-                    href={companyB.affiliateLink}
+                    href={getTrackedLink(companyB.affiliateLink, `compare-${comparison}`, companyB.slug)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${

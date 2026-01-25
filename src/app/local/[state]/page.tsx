@@ -11,7 +11,7 @@ import { MapPin, Building2, AlertTriangle, ShieldCheck, CheckCircle2, Landmark }
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 // Generate static params for all states
 export async function generateStaticParams() {
@@ -275,7 +275,7 @@ export default async function StatePage({ params }: Props) {
                                             <p className="text-xs text-green-400 font-semibold">A+ BBB Rating | Zero Complaints | Serves {stateName}</p>
                                         </div>
                                         <Button variant="gold" asChild>
-                                            <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
+                                            <a href={getTrackedLink(AFFILIATE_LINKS.augusta, `local-${state}`, "augusta")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
                                         </Button>
                                     </div>
 
@@ -289,7 +289,7 @@ export default async function StatePage({ params }: Props) {
                                             <p className="text-xs text-green-400 font-semibold">A+ BBB Rating | 5,000+ 5-Star Reviews | Serves {stateName}</p>
                                         </div>
                                         <Button variant="outline" asChild>
-                                            <a href={AFFILIATE_LINKS.goldco} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
+                                            <a href={getTrackedLink(AFFILIATE_LINKS.goldco, `local-${state}`, "goldco")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
                                         </Button>
                                     </div>
 
@@ -303,7 +303,7 @@ export default async function StatePage({ params }: Props) {
                                             <p className="text-xs text-green-400 font-semibold">A+ BBB Rating | Low-Pressure Sales | Serves {stateName}</p>
                                         </div>
                                         <Button variant="outline" asChild>
-                                            <a href={AFFILIATE_LINKS.noble} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
+                                            <a href={getTrackedLink(AFFILIATE_LINKS.noble, `local-${state}`, "noble")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
                                         </Button>
                                     </div>
                                 </div>

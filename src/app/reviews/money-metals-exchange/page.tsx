@@ -7,7 +7,7 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -56,7 +56,7 @@ export default function MoneyMetalsExchangePage() {
                                 rating={4.5}
                                 isRecommended={true}
                                 bottomLine="Money Metals Exchange excels at direct bullion sales with competitive pricing and no minimums. Their famous 'Starter Portfolios' are perfect for beginners. However, IRA services feel secondary to their core business—if IRAs are your main goal, consider a more IRA-focused dealer."
-                                ctaUrl={AFFILIATE_LINKS.noble}
+                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.noble, "review-money-metals", "noble")}
                                 ctaText="Compare IRA Specialists"
                             />
 
@@ -140,7 +140,7 @@ export default function MoneyMetalsExchangePage() {
                                         Compare companies that specialize in Gold IRA rollovers.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-money-metals", "augusta")} target="_blank" rel="noopener noreferrer">
                                             See Our Top IRA Picks
                                         </a>
                                     </Button>

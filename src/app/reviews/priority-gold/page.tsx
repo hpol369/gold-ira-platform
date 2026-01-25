@@ -7,7 +7,7 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -56,7 +56,7 @@ export default function PriorityGoldReviewPage() {
                                 rating={4.3}
                                 isRecommended={true}
                                 bottomLine="Priority Gold is a solid mid-tier choice for investors who value personalized service over mass marketing. Their $10,000 minimum is accessible, and their focus on numismatic coins can be valuable—if you understand the tradeoffs. Best for collectors and those who want a dedicated rep."
-                                ctaUrl={AFFILIATE_LINKS.augusta}
+                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.augusta, "review-priority-gold", "augusta")}
                                 ctaText="Compare With Our #1 Pick"
                             />
 
@@ -137,7 +137,7 @@ export default function PriorityGoldReviewPage() {
                                         See how Priority Gold stacks up against our top-rated companies.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-priority-gold", "augusta")} target="_blank" rel="noopener noreferrer">
                                             See Our #1 Recommendation
                                         </a>
                                     </Button>
