@@ -148,20 +148,7 @@ export function AuditWizard() {
 }
 
 // Sub-component for Question Steps
-interface WizardStepProps {
-    question: string;
-    helper?: string;
-    options: Array<{
-        label: string;
-        value: string;
-        icon: string;
-    }>;
-    onSelect: (value: string) => void;
-    onBack: () => void;
-    stepIdx: number;
-}
-
-function WizardStep({ question, helper, options, onSelect, onBack, stepIdx }: WizardStepProps) {
+function WizardStep({ question, helper, options, onSelect, onBack, stepIdx }: any) {
     return (
         <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -182,7 +169,7 @@ function WizardStep({ question, helper, options, onSelect, onBack, stepIdx }: Wi
             {helper && <p className="text-slate-400 text-center mb-8">{helper}</p>}
 
             <div className="space-y-4">
-                {options.map((opt) => (
+                {options.map((opt: any) => (
                     <button
                         key={opt.value}
                         onClick={() => onSelect(opt.value)}

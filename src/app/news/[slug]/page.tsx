@@ -116,15 +116,15 @@ export default async function NewsArticlePage({ params }: Props) {
                         {/* Main Content */}
                         <article className="lg:col-span-8">
                             <div
-                                className="prose prose-invert prose-lg max-w-none
-                                    prose-headings:font-serif prose-headings:text-white
-                                    prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-                                    prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-                                    prose-p:text-slate-300 prose-p:leading-relaxed
-                                    prose-strong:text-white prose-strong:font-semibold
-                                    prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline
-                                    prose-ul:text-slate-300 prose-li:text-slate-300
-                                    prose-blockquote:border-amber-500 prose-blockquote:text-slate-300"
+                                className="text-slate-300 text-lg leading-relaxed
+                                    [&>h2]:font-serif [&>h2]:text-white [&>h2]:font-bold [&>h2]:text-2xl [&>h2]:mt-10 [&>h2]:mb-4
+                                    [&>h3]:font-serif [&>h3]:text-white [&>h3]:font-bold [&>h3]:text-xl [&>h3]:mt-8 [&>h3]:mb-3
+                                    [&>p]:mb-6
+                                    [&_strong]:text-white [&_strong]:font-semibold
+                                    [&_a]:text-amber-400 [&_a]:no-underline hover:[&_a]:underline
+                                    [&>ul]:my-6 [&>ul]:pl-6 [&>ul]:list-disc [&>ul]:marker:text-amber-400
+                                    [&_li]:mb-2
+                                    [&>blockquote]:border-l-4 [&>blockquote]:border-amber-500 [&>blockquote]:pl-6 [&>blockquote]:my-6 [&>blockquote]:italic [&>blockquote]:text-slate-400"
                                 dangerouslySetInnerHTML={{ __html: formatArticleBody(article.body) }}
                             />
 
@@ -295,25 +295,59 @@ function formatGuideName(path: string): string {
     return names[path] || path.split("/").pop()?.replace(/-/g, " ") || path;
 }
 
-// Simple markdown to HTML (basic conversion - would use MDX processor in production)
+// Simple markdown to HTML with proper formatting
 function formatArticleBody(body: string): string {
-    return body
+    // Split into blocks by double newlines
+    const blocks = body.split(/\n\n+/);
+
+    const htmlBlocks = blocks.map(block => {
+        const trimmed = block.trim();
+        if (!trimmed) return '';
+
         // Headers
-        .replace(/^### (.*$)/gm, '<h3>$1</h3>')
-        .replace(/^## (.*$)/gm, '<h2>$1</h2>')
-        .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+        if (trimmed.startsWith('### ')) {
+            return `<h3>${processInline(trimmed.slice(4))}</h3>`;
+        }
+        if (trimmed.startsWith('## ')) {
+            return `<h2>${processInline(trimmed.slice(3))}</h2>`;
+        }
+        if (trimmed.startsWith('# ')) {
+            return `<h1>${processInline(trimmed.slice(2))}</h1>`;
+        }
+
+        // Bullet lists
+        if (trimmed.startsWith('- ')) {
+            const items = trimmed.split('\n').map(line => {
+                if (line.startsWith('- ')) {
+                    return `<li>${processInline(line.slice(2))}</li>`;
+                }
+                return '';
+            }).filter(Boolean);
+            return `<ul>${items.join('')}</ul>`;
+        }
+
+        // Blockquotes
+        if (trimmed.startsWith('> ')) {
+            const content = trimmed.split('\n').map(line =>
+                line.startsWith('> ') ? line.slice(2) : line
+            ).join(' ');
+            return `<blockquote><p>${processInline(content)}</p></blockquote>`;
+        }
+
+        // Regular paragraphs
+        return `<p>${processInline(trimmed.replace(/\n/g, ' '))}</p>`;
+    });
+
+    return htmlBlocks.filter(Boolean).join('\n');
+}
+
+// Process inline markdown (bold, italic, links)
+function processInline(text: string): string {
+    return text
         // Bold
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         // Italic
         .replace(/\*(.*?)\*/g, '<em>$1</em>')
         // Links
-        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-        // Line breaks
-        .replace(/\n\n/g, '</p><p>')
-        // Wrap in paragraphs
-        .replace(/^(?!<[h|p|u|o])(.+)$/gm, '<p>$1</p>')
-        // Clean up empty paragraphs
-        .replace(/<p><\/p>/g, '')
-        .replace(/<p><h/g, '<h')
-        .replace(/<\/h([1-6])><\/p>/g, '</h$1>');
+        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
 }

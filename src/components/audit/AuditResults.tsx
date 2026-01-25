@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, AlertTriangle, TrendingDown, ShieldCheck, Lock, Download, CheckCircle2 } from "lucide-react";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
-import { useState } from "react";
 
 interface AuditResultProps {
     score: number;
@@ -126,91 +125,15 @@ export function AuditResults({ score, riskLabel, projectedLoss, primaryFear }: A
                 <p className="text-amber-50 mb-8 max-w-xl mx-auto text-lg">
                     We've prepared a comprehensive guide explaining exactly how to execute this hedge strategy with zero tax implications.
                 </p>
-
-                <EmailCaptureForm auditScore={score} />
-
-                <p className="text-xs text-amber-100 mt-6 opacity-80">
+                <Button size="xl" className="bg-white text-amber-600 hover:bg-slate-50 font-bold text-lg min-w-[280px]" asChild>
+                    <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
+                        Download Free Kit & Report <Download className="ml-2 w-5 h-5" />
+                    </a>
+                </Button>
+                <p className="text-xs text-amber-100 mt-4 opacity-80">
                     Includes: 2026 Gold Forecast, Zero-Tax Guide, and Trusted Dealer List.
                 </p>
             </motion.div>
         </div>
-    );
-}
-
-function EmailCaptureForm({ auditScore }: { auditScore: number }) {
-    const [email, setEmail] = useState("");
-    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        if (!email) return;
-
-        setStatus("loading");
-
-        try {
-            const res = await fetch("/api/lead-capture", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    email,
-                    result: { score: auditScore }
-                }),
-            });
-
-            if (res.ok) {
-                setStatus("success");
-            } else {
-                setStatus("error");
-            }
-        } catch (err) {
-            setStatus("error");
-        }
-    };
-
-    if (status === "success") {
-        return (
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border border-white/20 animate-in fade-in zoom-in">
-                <div className="flex flex-col items-center gap-4">
-                    <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center">
-                        <CheckCircle2 className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="text-center">
-                        <h3 className="font-bold text-white text-lg">Report Sent!</h3>
-                        <p className="text-amber-100 text-sm mb-4">Check your inbox for your Sovereign Blueprint.</p>
-                        <Button size="xl" className="bg-white text-amber-600 hover:bg-slate-50 font-bold w-full" asChild>
-                            <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
-                                Download Free Kit Now <Download className="ml-2 w-5 h-5" />
-                            </a>
-                        </Button>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-
-    return (
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto relative">
-            <div className="flex flex-col sm:flex-row gap-2">
-                <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 bg-white/90 border-0 text-slate-900 placeholder:text-slate-500 rounded-xl px-4 py-4 focus:ring-2 focus:ring-amber-400 outline-none"
-                    required
-                />
-                <Button
-                    type="submit"
-                    size="xl"
-                    disabled={status === "loading"}
-                    className="bg-slate-900 text-white hover:bg-slate-800 font-bold shrink-0"
-                >
-                    {status === "loading" ? "Sending..." : "Email My Report"}
-                </Button>
-            </div>
-            {status === "error" && (
-                <p className="text-red-200 text-sm mt-2 absolute -bottom-6 left-0">Something went wrong. Please try again.</p>
-            )}
-        </form>
     );
 }
