@@ -607,6 +607,7 @@ export default function ScamsPage() {
             variant="footer"
             headline="Want Personalized Guidance from a Verified Company?"
             subheadline="Augusta Precious Metals offers free, no-pressure consultations. Get expert advice on protecting your retirement—with zero obligation."
+            trackSource="scams-hub"
           />
         </Container>
       </section>

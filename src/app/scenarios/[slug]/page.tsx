@@ -288,6 +288,7 @@ export default async function ScenarioPage({ params }: PageProps) {
             variant="footer"
             headline="Don't Wait Until It's Too Late"
             subheadline="Protect your retirement before the next crisis hits. Augusta Precious Metals has helped thousands of Americans secure their savings with physical gold."
+            trackSource={`scenario-${slug}`}
           />
         </Container>
       </section>

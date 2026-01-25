@@ -253,7 +253,7 @@ export default function PreciousMetalsIraRulesPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-precious-metals-ira-rules" />
                 </Container>
             </section>
         </main>

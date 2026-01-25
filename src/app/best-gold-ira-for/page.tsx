@@ -163,6 +163,7 @@ export default function BestGoldIRAForPage() {
             variant="footer"
             headline="Not Sure Which Guide Fits You?"
             subheadline="Speak with a Gold IRA specialist who can analyze your specific situation and provide personalized recommendations."
+            trackSource="best-for-hub"
           />
         </Container>
       </section>

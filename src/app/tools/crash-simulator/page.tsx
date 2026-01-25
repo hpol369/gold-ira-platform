@@ -224,6 +224,7 @@ export default function CrashSimulatorPage() {
             variant="footer"
             headline="Ready to Add Gold to Your Portfolio?"
             subheadline="Schedule a free consultation to discuss how gold can protect your specific retirement situation."
+            trackSource="tools-crash-simulator"
           />
         </Container>
       </section>

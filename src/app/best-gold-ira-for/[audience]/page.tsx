@@ -209,6 +209,7 @@ export default async function AudiencePage({ params }: PageProps) {
             variant="footer"
             headline={`Ready to Protect Your Retirement?`}
             subheadline={`Get personalized guidance tailored to ${data.title.toLowerCase()}. Free consultation, no obligation.`}
+            trackSource={`best-for-${audience}`}
           />
         </Container>
       </section>

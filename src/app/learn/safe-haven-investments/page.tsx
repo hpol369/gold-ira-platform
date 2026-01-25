@@ -469,7 +469,7 @@ export default function SafeHavenInvestmentsPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-safe-haven-investments" />
                 </Container>
             </section>
         </main>

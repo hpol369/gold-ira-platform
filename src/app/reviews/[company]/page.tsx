@@ -209,7 +209,7 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                 {/* Inline CTA */}
                 {!company.featured && (
-                  <AugustaCTA variant="inline" linkContext="comparison" />
+                  <AugustaCTA variant="inline" linkContext="comparison" trackSource={`review-${slug}`} />
                 )}
 
                 {/* Fee Structure */}
@@ -241,7 +241,7 @@ export default async function CompanyReviewPage({ params }: Props) {
                 <div className="sticky top-24 space-y-6">
                   {/* Augusta CTA Sidebar (if not viewing Augusta) */}
                   {!company.featured && (
-                    <AugustaCTA variant="sidebar" linkContext="comparison" />
+                    <AugustaCTA variant="sidebar" linkContext="comparison" trackSource={`review-${slug}`} />
                   )}
 
                   {/* This Company CTA */}
@@ -343,7 +343,7 @@ export default async function CompanyReviewPage({ params }: Props) {
         ) : (
           <section className="py-16">
             <Container>
-              <AugustaCTA variant="footer" linkContext="comparison" />
+              <AugustaCTA variant="footer" linkContext="comparison" trackSource={`review-${slug}`} />
             </Container>
           </section>
         )}

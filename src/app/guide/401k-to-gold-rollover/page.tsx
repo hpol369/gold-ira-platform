@@ -660,7 +660,7 @@ export default function RolloverGuidePage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" linkContext="fees" />
+                    <AugustaCTA variant="footer" linkContext="fees" trackSource="guide-401k-to-gold-rollover" />
                 </Container>
             </section>
         </main>

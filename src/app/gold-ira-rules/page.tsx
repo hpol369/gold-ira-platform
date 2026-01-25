@@ -533,6 +533,7 @@ export default function GoldIRARulesPage() {
             linkContext="fees"
             headline="Open a Compliant Gold IRA Today"
             subheadline="Augusta Precious Metals ensures your Gold IRA meets all IRS requirements. Their team handles custodian setup, depository selection, and helps you choose eligible metals."
+            trackSource="gold-ira-rules"
           />
         </Container>
       </section>

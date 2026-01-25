@@ -385,7 +385,7 @@ export default function GoldVsStocksPage() {
                 </Container>
             </section>
 
-            <AugustaCTA />
+            <AugustaCTA trackSource="why-gold-gold-vs-stocks" />
             <Footer />
         </>
     );

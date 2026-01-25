@@ -283,6 +283,7 @@ export default function GlossaryPage() {
             variant="footer"
             headline="Ready to Put This Knowledge to Work?"
             subheadline="Now that you understand the terminology, speak with a specialist who can help you apply it to your retirement plan."
+            trackSource="glossary"
           />
         </Container>
       </section>

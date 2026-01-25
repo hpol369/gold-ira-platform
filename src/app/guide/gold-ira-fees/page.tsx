@@ -569,7 +569,7 @@ export default function GoldIraFeesGuidePage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" linkContext="fees" />
+                    <AugustaCTA variant="footer" linkContext="fees" trackSource="guide-gold-ira-fees" />
                 </Container>
             </section>
         </main>

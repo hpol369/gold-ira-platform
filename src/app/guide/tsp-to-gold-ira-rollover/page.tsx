@@ -367,7 +367,7 @@ export default function TspRolloverPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" linkContext="fees" />
+                    <AugustaCTA variant="footer" linkContext="fees" trackSource="guide-tsp-to-gold-ira-rollover" />
                 </Container>
             </section>
         </main>

@@ -270,7 +270,7 @@ export default function PlatinumIraPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-platinum-ira" />
                 </Container>
             </section>
         </main>

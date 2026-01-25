@@ -231,6 +231,7 @@ export default function RMDCalculatorPage() {
             variant="footer"
             headline="Need Help Planning Your RMDs?"
             subheadline="A Gold IRA specialist can help you develop a tax-efficient withdrawal strategy for your specific situation."
+            trackSource="tools-rmd-calculator"
           />
         </Container>
       </section>

@@ -240,6 +240,7 @@ export default function ScenariosPage() {
             variant="footer"
             headline="Don't Wait Until It's Too Late"
             subheadline="Protect your retirement before the next crisis hits. Augusta Precious Metals has helped thousands of Americans secure their savings with physical gold."
+            trackSource="scenarios-hub"
           />
         </Container>
       </section>

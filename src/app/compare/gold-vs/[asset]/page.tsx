@@ -442,6 +442,7 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
           <AugustaCTA
             variant="footer"
             linkContext="comparison"
+            trackSource={`gold-vs-${slug}`}
           />
         </Container>
       </section>

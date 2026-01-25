@@ -485,6 +485,7 @@ export default function WhatIsGoldIRAPage() {
             variant="footer"
             headline="Ready to Learn More About Gold IRAs?"
             subheadline="Augusta Precious Metals offers free one-on-one web conferences to help you understand if a Gold IRA is right for your retirement goals. No pressure, just education."
+            trackSource="what-is-gold-ira"
           />
         </Container>
       </section>

@@ -504,7 +504,7 @@ export default function WealthPreservationStrategiesPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="guide-wealth-preservation-strategies" />
                 </Container>
             </section>
         </main>

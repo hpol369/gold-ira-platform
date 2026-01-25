@@ -281,6 +281,7 @@ export default function AcademyPage() {
             variant="footer"
             headline="Ready to Put Your Knowledge Into Action?"
             subheadline="After completing the Academy, schedule a free consultation with Augusta Precious Metals to discuss your specific retirement goals."
+            trackSource="academy"
           />
         </Container>
       </section>

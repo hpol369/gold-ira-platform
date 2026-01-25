@@ -386,6 +386,7 @@ export default function InflationProtectionPage() {
             variant="footer"
             headline="Learn How Gold Can Protect Your Retirement"
             subheadline="Augusta Precious Metals offers free one-on-one web conferences to help you understand inflation risks and how a Gold IRA might fit your retirement strategy."
+            trackSource="why-gold-inflation-protection"
           />
         </Container>
       </section>

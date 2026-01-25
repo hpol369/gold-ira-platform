@@ -545,7 +545,7 @@ export default function GoldIraScamsPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" linkContext="scam" />
+                    <AugustaCTA variant="footer" linkContext="scam" trackSource="learn-gold-ira-scams" />
                 </Container>
             </section>
         </main>

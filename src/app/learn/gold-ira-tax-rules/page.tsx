@@ -507,7 +507,7 @@ export default function GoldIraTaxRulesPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" linkContext="fees" />
+                    <AugustaCTA variant="footer" linkContext="fees" trackSource="learn-gold-ira-tax-rules" />
                 </Container>
             </section>
         </main>

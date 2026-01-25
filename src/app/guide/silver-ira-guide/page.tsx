@@ -595,7 +595,7 @@ export default function SilverIraGuidePage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" linkContext="silver" />
+                    <AugustaCTA variant="footer" linkContext="silver" trackSource="guide-silver-ira-guide" />
                 </Container>
             </section>
         </main>

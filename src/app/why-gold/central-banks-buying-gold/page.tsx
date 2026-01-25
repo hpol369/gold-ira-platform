@@ -313,7 +313,7 @@ export default function CentralBanksBuyingGoldPage() {
                 </Container>
             </section>
 
-            <AugustaCTA />
+            <AugustaCTA trackSource="why-gold-central-banks" />
             <Footer />
         </>
     );

@@ -180,6 +180,7 @@ export default function FeesComparisonPage() {
             variant="footer"
             headline="Want a Personalized Fee Analysis?"
             subheadline="Speak with a specialist who can provide a detailed fee breakdown based on your specific account size and goals."
+            trackSource="tools-fees-comparison"
           />
         </Container>
       </section>

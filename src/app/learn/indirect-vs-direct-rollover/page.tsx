@@ -426,7 +426,7 @@ export default function IndirectVsDirectRolloverPage() {
             {/* Footer CTA */}
             <section className="py-16">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-indirect-vs-direct" />
                 </Container>
             </section>
 

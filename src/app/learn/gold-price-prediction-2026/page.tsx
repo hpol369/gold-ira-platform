@@ -399,7 +399,7 @@ export default function GoldPricePrediction2026Page() {
             {/* Footer CTA */}
             <section className="py-16">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-gold-price-prediction" />
                 </Container>
             </section>
 

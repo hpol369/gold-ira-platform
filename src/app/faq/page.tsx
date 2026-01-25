@@ -248,6 +248,7 @@ export default function FAQPage() {
             variant="footer"
             headline="Still Have Questions?"
             subheadline="Speak with a Gold IRA specialist who can answer your specific questions and provide personalized guidance."
+            trackSource="faq"
           />
         </Container>
       </section>

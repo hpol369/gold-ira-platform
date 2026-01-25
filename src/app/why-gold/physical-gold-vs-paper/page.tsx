@@ -484,6 +484,7 @@ export default function PhysicalGoldVsPaperPage() {
                         variant="footer"
                         headline="Ready to Own Real Gold?"
                         subheadline="Augusta Precious Metals specializes in helping Americans protect their retirement with physical precious metals—not paper promises."
+                        trackSource="why-gold-physical-vs-paper"
                     />
                 </Container>
             </section>

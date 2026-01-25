@@ -327,7 +327,7 @@ export default function CheckbookIraRulesPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-checkbook-ira-rules" />
                 </Container>
             </section>
         </main>

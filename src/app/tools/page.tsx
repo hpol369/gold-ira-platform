@@ -162,6 +162,7 @@ export default function ToolsPage() {
             variant="footer"
             headline="Need Personalized Guidance?"
             subheadline="Our tools give you insights, but a Gold IRA specialist can help you create a customized strategy for your specific situation."
+            trackSource="tools-hub"
           />
         </Container>
       </section>

@@ -233,6 +233,7 @@ export default function BestGoldIraCompaniesPage() {
                             linkContext="comparison"
                             headline="Ready to Get Started?"
                             subheadline="Augusta Precious Metals earned our #1 ranking for their education-first approach and zero BBB complaints. Request your free kit today."
+                            trackSource="best-companies"
                         />
                     </Container>
                 </section>

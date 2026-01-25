@@ -442,7 +442,7 @@ export default function Protect401kFromCrashPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="guide-protect-401k-from-crash" />
                 </Container>
             </section>
         </main>

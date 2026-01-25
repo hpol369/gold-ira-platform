@@ -475,7 +475,7 @@ export default function IsMyMoneySafeInBankPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-is-my-money-safe" />
                 </Container>
             </section>
         </main>

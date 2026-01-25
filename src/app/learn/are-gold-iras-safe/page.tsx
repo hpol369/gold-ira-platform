@@ -251,7 +251,7 @@ export default function AreGoldIrasSafePage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-are-gold-iras-safe" />
                 </Container>
             </section>
         </main>

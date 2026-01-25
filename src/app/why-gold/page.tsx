@@ -445,6 +445,7 @@ export default function WhyGoldPage() {
             variant="footer"
             headline="Ready to Explore Gold for Your Retirement?"
             subheadline="Augusta Precious Metals offers free one-on-one web conferences to help you understand if gold is right for your portfolio. No pressure, just education from industry experts."
+            trackSource="why-gold-hub"
           />
         </Container>
       </section>

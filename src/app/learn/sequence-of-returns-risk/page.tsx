@@ -443,7 +443,7 @@ export default function SequenceOfReturnsRiskPage() {
             {/* CTA Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <AugustaCTA variant="footer" />
+                    <AugustaCTA variant="footer" trackSource="learn-sequence-of-returns-risk" />
                 </Container>
             </section>
         </main>
