@@ -256,7 +256,42 @@ export default function RolloverPage() {
               <p className="text-slate-400">
                 A direct rollover transfers funds straight from your old account to your new Gold IRA—no taxes withheld. An indirect rollover gives you the funds first, and you have 60 days to deposit them into your Gold IRA. Always choose direct rollover to avoid complications.
               </p>
+              <Link href="/learn/indirect-vs-direct-rollover" className="inline-flex items-center gap-1 text-amber-400 text-sm font-medium mt-3 hover:text-amber-300">
+                Learn more about direct vs indirect rollovers <ArrowRight className="h-3 w-3" />
+              </Link>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Related Rollover Guides */}
+      <section className="py-16">
+        <Container>
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">
+            Detailed Rollover Guides
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <Link href="/guide/401k-to-gold-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">401(k) to Gold IRA</h3>
+              <p className="text-slate-400 text-sm">Complete guide for 401(k) holders</p>
+            </Link>
+            <Link href="/guide/tsp-to-gold-ira-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">TSP to Gold IRA</h3>
+              <p className="text-slate-400 text-sm">For federal employees</p>
+            </Link>
+            <Link href="/guide/403b-to-gold-ira-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">403(b) to Gold IRA</h3>
+              <p className="text-slate-400 text-sm">For teachers & non-profits</p>
+            </Link>
+            <Link href="/guide/457b-to-gold-ira-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">457(b) to Gold IRA</h3>
+              <p className="text-slate-400 text-sm">For government workers</p>
+            </Link>
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/learn/indirect-vs-direct-rollover" className="inline-flex items-center gap-2 text-amber-400 font-medium hover:text-amber-300">
+              Understand Direct vs Indirect Rollovers <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </Container>
       </section>
