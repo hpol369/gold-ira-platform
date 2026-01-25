@@ -1,16 +1,25 @@
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ComparisonTable, ComparisonRow } from "@/components/compare/ComparisonTable";
 import { VerdictBox } from "@/components/compare/VerdictBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Callout } from "@/components/ui/Callout";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Metadata } from "next";
 import { ArrowRight, TrendingUp, ShieldCheck, DollarSign, Scale, Coins } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Gold vs. Silver IRA: Which Precious Metal is Best? (2026 Guide)",
-    description: "Comparing gold vs silver for your IRA. Learn the differences in volatility, growth potential, storage costs, and which metal is right for your retirement.",
+    title: "Gold vs Silver IRA: Which Precious Metal is Best for 2026?",
+    description: "Compare gold vs silver for your IRA. Learn the differences in volatility, growth potential, storage costs, and which metal is right for your retirement in 2026.",
+    keywords: ["gold vs silver ira", "silver vs gold investment", "gold ira vs silver ira", "gold silver ratio", "precious metals ira", "silver ira comparison"],
+    openGraph: {
+        title: "Gold vs Silver IRA: Which Precious Metal is Best for 2026?",
+        description: "Compare gold vs silver for your retirement account. Volatility, growth potential, storage costs, and expert recommendations.",
+        type: "article",
+    },
 };
 
 const comparisonRows: ComparisonRow[] = [
@@ -37,11 +46,67 @@ const tocItems = [
     { id: "faq", label: "FAQs" }
 ];
 
+// Schema markup
+const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Gold vs Silver IRA: Which Precious Metal is Best for 2026?",
+            "description": "Compare gold vs silver for your IRA. Learn the differences in volatility, growth potential, storage costs, and which metal is right for your retirement.",
+            "author": {
+                "@type": "Person",
+                "name": "Thomas Richardson"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rich Dad Retirement"
+            },
+            "datePublished": "2026-01-15",
+            "dateModified": "2026-01-25"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can I hold both gold and silver in the same IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! Most precious metals IRAs hold a combination of gold and silver (and sometimes platinum and palladium). You don't need separate accounts. Your custodian and depository can hold multiple metals in the same IRA."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is silver a better investment than gold right now?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The gold-silver ratio suggests silver is undervalued relative to gold. If you believe precious metals will rise, silver has more upside potential. However, gold is better for stability, silver for growth. Most advisors recommend owning both."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Why is silver cheaper than gold?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Silver is more abundant in the Earth's crust than gold (about 17x more). Additionally, silver is consumed in industrial applications while gold is primarily hoarded. Supply and demand dynamics keep silver cheaper per ounce."
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 export default function GoldVsSilverIraPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-900">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
+            <Navbar />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
                     <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold text-secondary mb-6">
                         Precious Metals Showdown
@@ -164,7 +229,7 @@ export default function GoldVsSilverIraPage() {
                             </p>
 
                             <p>
-                                Learn more in our <Link href="/guide/silver-ira-guide">comprehensive Silver IRA guide</Link>.
+                                Learn more in our <Link href="/guide/silver-ira-guide">comprehensive Silver IRA guide</Link>, or explore <Link href="/learn/is-silver-a-good-investment">whether silver is a good investment</Link>.
                             </p>
                         </section>
 
@@ -413,9 +478,43 @@ export default function GoldVsSilverIraPage() {
                             </div>
                         </div>
 
+                        {/* Related Resources */}
+                        <div className="not-prose my-12">
+                            <h3 className="text-xl font-bold text-white mb-6">Related Silver IRA Resources</h3>
+                            <div className="grid md:grid-cols-3 gap-4">
+                                <Link href="/best-silver-ira-companies" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-1 group-hover:text-amber-400">Best Silver IRA Companies</h4>
+                                    <p className="text-sm text-slate-400">Compare top providers for 2026</p>
+                                </Link>
+                                <Link href="/guide/ira-approved-silver" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-1 group-hover:text-amber-400">IRA-Approved Silver</h4>
+                                    <p className="text-sm text-slate-400">Which silver coins & bars qualify</p>
+                                </Link>
+                                <Link href="/guide/silver-stacking" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-1 group-hover:text-amber-400">Silver Stacking Guide</h4>
+                                    <p className="text-sm text-slate-400">Build your silver position over time</p>
+                                </Link>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
             </Container>
+
+            {/* CTA Section */}
+            <section className="py-16 bg-slate-800/50">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        linkContext="comparison"
+                        headline="Ready to Invest in Gold & Silver?"
+                        subheadline="Augusta Precious Metals offers both gold and silver IRAs with transparent pricing and expert guidance. Get started with a free consultation."
+                        trackSource="gold-vs-silver-compare"
+                    />
+                </Container>
+            </section>
+
+            <Footer />
         </main>
     );
 }

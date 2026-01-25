@@ -29,6 +29,12 @@ export function Footer() {
                             <li><Link href="/compare" className="text-gray-400 hover:text-white transition-colors text-sm">Compare</Link></li>
                             <li><Link href="/rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Rollovers</Link></li>
                             <li><Link href="/best-gold-ira-for" className="text-gray-400 hover:text-white transition-colors text-sm">Best For You</Link></li>
+                            <li><Link href="/guide/silver-ira-guide" className="text-gray-400 hover:text-white transition-colors text-sm">Silver IRA Guide</Link></li>
+                            <li><Link href="/crypto-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Crypto IRA Guide</Link></li>
+                            <li><Link href="/self-directed-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Self-Directed IRA Guide</Link></li>
+                            <li><Link href="/robs-401k" className="text-gray-400 hover:text-white transition-colors text-sm">ROBS 401k Guide</Link></li>
+                            <li><Link href="/real-estate-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Real Estate IRA Guide</Link></li>
+                            <li><Link href="/solo-401k" className="text-gray-400 hover:text-white transition-colors text-sm">Solo 401k Guide</Link></li>
                         </ul>
                     </div>
 
@@ -36,6 +42,7 @@ export function Footer() {
                     <div>
                         <h3 className="font-semibold text-white mb-4 text-sm">Learn</h3>
                         <ul className="space-y-2">
+                            <li><Link href="/news" className="text-gray-400 hover:text-white transition-colors text-sm">Daily News Briefing</Link></li>
                             <li><Link href="/academy" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA Academy</Link></li>
                             <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors text-sm">FAQ Hub</Link></li>
                             <li><Link href="/glossary" className="text-gray-400 hover:text-white transition-colors text-sm">Glossary</Link></li>

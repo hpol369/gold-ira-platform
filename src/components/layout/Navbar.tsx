@@ -102,11 +102,87 @@ export function Navbar() {
                                             <Link href="/reviews" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
                                                 Company Reviews
                                             </Link>
+                                            <div className="border-t border-white/10 my-2"></div>
+                                            <span className="block px-4 py-1 text-xs font-semibold text-slate-500 uppercase tracking-wide">Silver IRA</span>
+                                            <Link href="/guide/silver-ira-guide" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Silver IRA Guide
+                                            </Link>
+                                            <Link href="/best-silver-ira-companies" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Best Silver IRA Companies
+                                            </Link>
+                                            <div className="border-t border-white/10 my-2"></div>
+                                            <span className="block px-4 py-1 text-xs font-semibold text-blue-400 uppercase tracking-wide flex items-center gap-1">
+                                                Crypto IRA <span className="text-[10px] bg-blue-500/20 px-1 rounded">New</span>
+                                            </span>
+                                            <Link href="/crypto-ira" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Crypto IRA Guide
+                                            </Link>
+                                            <Link href="/best-crypto-ira-companies" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Best Crypto IRA Companies
+                                            </Link>
+                                            <Link href="/reviews/itrustcapital" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                iTrustCapital Review
+                                            </Link>
+                                            <div className="border-t border-white/10 my-2"></div>
+                                            <span className="block px-4 py-1 text-xs font-semibold text-green-400 uppercase tracking-wide flex items-center gap-1">
+                                                Self-Directed IRA <span className="text-[10px] bg-green-500/20 px-1 rounded">New</span>
+                                            </span>
+                                            <Link href="/self-directed-ira" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Self-Directed IRA Guide
+                                            </Link>
+                                            <Link href="/learn/checkbook-ira" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Checkbook IRA Explained
+                                            </Link>
+                                            <Link href="/reviews/rocket-dollar" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Rocket Dollar Review
+                                            </Link>
+                                            <div className="border-t border-white/10 my-2"></div>
+                                            <span className="block px-4 py-1 text-xs font-semibold text-orange-400 uppercase tracking-wide flex items-center gap-1">
+                                                ROBS 401k <span className="text-[10px] bg-orange-500/20 px-1 rounded">New</span>
+                                            </span>
+                                            <Link href="/robs-401k" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                ROBS 401k Guide
+                                            </Link>
+                                            <Link href="/reviews/guidant-financial" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Guidant Financial Review
+                                            </Link>
+                                            <Link href="/reviews/benetrends" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Benetrends Review
+                                            </Link>
+                                            <div className="border-t border-white/10 my-2"></div>
+                                            <span className="block px-4 py-1 text-xs font-semibold text-teal-400 uppercase tracking-wide flex items-center gap-1">
+                                                Real Estate IRA <span className="text-[10px] bg-teal-500/20 px-1 rounded">New</span>
+                                            </span>
+                                            <Link href="/real-estate-ira" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Real Estate IRA Guide
+                                            </Link>
+                                            <Link href="/learn/real-estate-ira-custodians" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Best RE IRA Custodians
+                                            </Link>
+                                            <div className="border-t border-white/10 my-2"></div>
+                                            <span className="block px-4 py-1 text-xs font-semibold text-purple-400 uppercase tracking-wide flex items-center gap-1">
+                                                Solo 401k <span className="text-[10px] bg-purple-500/20 px-1 rounded">New</span>
+                                            </span>
+                                            <Link href="/solo-401k" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Solo 401k Guide
+                                            </Link>
+                                            <Link href="/learn/solo-401k-contribution-limits" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Contribution Limits 2026
+                                            </Link>
+                                            <Link href="/learn/solo-401k-vs-sep-ira" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Solo 401k vs SEP IRA
+                                            </Link>
+                                            <Link href="/learn/solo-401k-providers" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Best Providers
+                                            </Link>
                                         </div>
                                     </div>
                                 )}
                             </div>
 
+                            <Link href="/news" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                                News
+                            </Link>
                             <Link href="/tools" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
                                 Tools
                             </Link>
@@ -179,6 +255,124 @@ export function Navbar() {
                                 </Link>
                                 <Link href="/reviews" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
                                     Reviews
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Silver IRA Section */}
+                        <div className="py-2 border-b border-white/5">
+                            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wide">Silver IRA</span>
+                            <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/guide/silver-ira-guide" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Silver IRA Guide
+                                </Link>
+                                <Link href="/best-silver-ira-companies" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Best Silver IRA Companies
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Crypto IRA Section */}
+                        <div className="py-2 border-b border-white/5">
+                            <span className="text-xs font-semibold text-blue-400 uppercase tracking-wide flex items-center gap-1">
+                                Crypto IRA <span className="text-[10px] bg-blue-500/20 px-1 rounded">New</span>
+                            </span>
+                            <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/crypto-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Crypto IRA Guide
+                                </Link>
+                                <Link href="/best-crypto-ira-companies" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Best Crypto IRA Companies
+                                </Link>
+                                <Link href="/reviews/itrustcapital" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    iTrustCapital Review
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Self-Directed IRA Section */}
+                        <div className="py-2 border-b border-white/5">
+                            <span className="text-xs font-semibold text-green-400 uppercase tracking-wide flex items-center gap-1">
+                                Self-Directed IRA <span className="text-[10px] bg-green-500/20 px-1 rounded">New</span>
+                            </span>
+                            <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/self-directed-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Self-Directed IRA Guide
+                                </Link>
+                                <Link href="/learn/checkbook-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Checkbook IRA Explained
+                                </Link>
+                                <Link href="/reviews/rocket-dollar" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Rocket Dollar Review
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* ROBS 401k Section */}
+                        <div className="py-2 border-b border-white/5">
+                            <span className="text-xs font-semibold text-orange-400 uppercase tracking-wide flex items-center gap-1">
+                                ROBS 401k <span className="text-[10px] bg-orange-500/20 px-1 rounded">New</span>
+                            </span>
+                            <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/robs-401k" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    ROBS 401k Guide
+                                </Link>
+                                <Link href="/reviews/guidant-financial" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Guidant Financial Review
+                                </Link>
+                                <Link href="/reviews/benetrends" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Benetrends Review
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Real Estate IRA Section */}
+                        <div className="py-2 border-b border-white/5">
+                            <span className="text-xs font-semibold text-teal-400 uppercase tracking-wide flex items-center gap-1">
+                                Real Estate IRA <span className="text-[10px] bg-teal-500/20 px-1 rounded">New</span>
+                            </span>
+                            <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/real-estate-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Real Estate IRA Guide
+                                </Link>
+                                <Link href="/learn/real-estate-ira-custodians" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Best RE IRA Custodians
+                                </Link>
+                                <Link href="/learn/buy-rental-property-with-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Buy Rental Property
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Solo 401k Section */}
+                        <div className="py-2 border-b border-white/5">
+                            <span className="text-xs font-semibold text-purple-400 uppercase tracking-wide flex items-center gap-1">
+                                Solo 401k <span className="text-[10px] bg-purple-500/20 px-1 rounded">New</span>
+                            </span>
+                            <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/solo-401k" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Solo 401k Guide
+                                </Link>
+                                <Link href="/learn/solo-401k-contribution-limits" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Contribution Limits 2026
+                                </Link>
+                                <Link href="/learn/solo-401k-vs-sep-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Solo 401k vs SEP IRA
+                                </Link>
+                                <Link href="/learn/solo-401k-providers" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Best Providers
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* News Section */}
+                        <div className="py-2 border-b border-white/5">
+                            <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide flex items-center gap-1">
+                                Daily Briefing <span className="text-[10px] bg-amber-500/20 px-1 rounded">Live</span>
+                            </span>
+                            <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/news" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Latest News
                                 </Link>
                             </div>
                         </div>

@@ -40,6 +40,29 @@ export const AFFILIATE_LINKS = {
     oxford: "https://oxfordgoldgroup.com/?affiliate_id=RICH_DAD", // Placeholder
     lear: "https://learcapital.com/?affiliate_id=RICH_DAD", // Placeholder
     advantage: "https://advantagegold.com/?affiliate_id=RICH_DAD", // Placeholder
+
+    // ============================================
+    // CRYPTO IRA COMPANIES (Apply for programs)
+    // ============================================
+    itrustcapital: "https://itrustcapital.com/?ref=richdad", // Placeholder - apply for affiliate
+    altoIra: "https://www.altoira.com/?ref=richdad", // Placeholder
+    bitcoinIra: "https://bitcoinira.com/?ref=richdad", // Placeholder
+    choiceIra: "https://www.choiceapp.io/?ref=richdad", // Placeholder
+    unchainedIra: "https://unchained.com/ira/?ref=richdad", // Placeholder
+
+    // ============================================
+    // SELF-DIRECTED IRA CUSTODIANS (Apply for programs)
+    // ============================================
+    rocketDollar: "https://www.rocketdollar.com/?ref=richdad", // Placeholder
+    equityTrust: "https://www.trustetc.com/?ref=richdad", // Placeholder
+    entrust: "https://www.theentrustgroup.com/?ref=richdad", // Placeholder
+    directedIra: "https://directedira.com/?ref=richdad", // Placeholder
+
+    // ============================================
+    // ROBS 401K PROVIDERS (Apply for programs)
+    // ============================================
+    guidantFinancial: "https://www.guidantfinancial.com/?ref=richdad", // Placeholder
+    benetrends: "https://www.bfranchise.com/?ref=richdad", // Placeholder
 };
 
 // Context-aware Augusta link selection with sub_id tracking

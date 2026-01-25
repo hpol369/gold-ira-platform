@@ -8,10 +8,18 @@ import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, Dolla
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Metadata } from "next";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-    title: "Silver IRA Guide 2026: Complete Guide to Silver IRAs",
-    description: "Complete 2026 silver IRA guide. Learn how silver IRAs work, tax benefits, IRS-approved silver, and why silver may outperform gold.",
+    title: "Silver IRA Guide 2026: How to Invest in Silver for Retirement",
+    description: "Complete silver IRA guide for 2026. Learn how to open a silver IRA, IRS-approved silver coins & bars, 401k rollover rules, fees, and which companies offer the best silver IRAs.",
+    keywords: ["silver ira", "silver ira guide", "ira approved silver", "silver ira rollover", "silver ira companies", "invest in silver ira"],
+    openGraph: {
+        title: "Silver IRA Guide 2026: How to Invest in Silver for Retirement",
+        description: "Complete silver IRA guide. Learn IRS rules, approved silver products, fees, and how to roll over your 401k into physical silver.",
+        type: "article",
+    },
 };
 
 const tocItems = [
@@ -28,12 +36,16 @@ const tocItems = [
 const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Silver IRA Guide 2026: Complete Guide to Silver IRAs",
-    "description": "The complete silver IRA guide for 2026. Learn how silver IRAs work, tax benefits, IRS-approved silver, and why silver may outperform gold.",
+    "headline": "Silver IRA Guide 2026: How to Invest in Silver for Retirement",
+    "description": "Complete silver IRA guide for 2026. Learn how to open a silver IRA, IRS-approved silver coins & bars, 401k rollover rules, fees, and which companies offer the best silver IRAs.",
     "image": "https://www.richdadretirement.com/images/silver-ira-guide.jpg",
+    "datePublished": "2024-01-15",
+    "dateModified": "2026-01-25",
     "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement"
+        "@type": "Person",
+        "name": "Thomas Richardson",
+        "jobTitle": "Retirement Investment Specialist",
+        "description": "30+ years experience in retirement planning and precious metals investing"
     },
     "publisher": {
         "@type": "Organization",
@@ -84,8 +96,9 @@ const schema = {
 
 export default function SilverIraGuidePage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-900">
             <SchemaScript schema={schema} />
+            <Navbar />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-dark/50" />
@@ -96,7 +109,7 @@ export default function SilverIraGuidePage() {
                             Updated for 2026 Tax Rules
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
-                            The Complete Silver IRA Guide for 2026
+                            Silver IRA Guide 2026: How to Invest in Silver for Retirement
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
                             Everything you need to know about diversifying your retirement with physical silver—the &quot;poor man&apos;s gold&quot; that may offer superior returns.
@@ -598,6 +611,8 @@ export default function SilverIraGuidePage() {
                     <AugustaCTA variant="footer" linkContext="silver" trackSource="guide-silver-ira-guide" />
                 </Container>
             </section>
+
+            <Footer />
         </main>
     );
 }

@@ -46,7 +46,7 @@ export default function Home() {
         {/* 6. HOW: Reduce anxiety - "3 Simple Steps" */}
         <HowSection />
 
-        {/* 7. ENGAGEMENT: Personalized path - Quiz CTA */}
+        {/* 1.5 AUDIT CTA: The Super Tool */}
         <QuizCTA />
 
         {/* 8. WHAT: The recommendation - Augusta Featured Partner */}

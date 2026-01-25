@@ -564,6 +564,182 @@ export const scenarios: Scenario[] = [
     ],
     relatedScenarios: ["stock-market-crash", "dollar-collapse", "bank-failure"],
   },
+  {
+    slug: "silver-shortage",
+    title: "The Coming Silver Shortage",
+    subtitle: "Industrial demand is soaring while mining supply plateaus. What happens when the world runs out of silver - and how to position yourself before it happens.",
+    metaTitle: "Silver Shortage 2026: Is the World Running Out of Silver?",
+    metaDescription: "Explore the looming silver shortage. Industrial demand from solar panels and EVs is exploding while supply can't keep up. Learn how to protect and profit.",
+    threatLevel: "high",
+    probability: "Structural deficit",
+    timeframe: "Accelerating",
+    sections: [
+      {
+        title: "The Silver Supply Crisis",
+        content: "Silver is facing a perfect storm: industrial demand is exploding while mining supply has plateaued. Unlike gold, which is primarily hoarded, silver is consumed in industrial applications - and that silver is often gone forever. We've been in a supply deficit for years, and above-ground stockpiles are being depleted.",
+        bullets: [
+          "Silver deficit: 4+ consecutive years of supply shortfall",
+          "Above-ground silver stockpiles: Down 50% since 2020",
+          "Mine production: Flat to declining for a decade",
+          "Most silver mined as byproduct of other metals",
+        ],
+      },
+      {
+        title: "The Industrial Demand Explosion",
+        content: "Silver is essential to the green energy revolution. Every solar panel requires silver. Electric vehicles use twice as much silver as traditional cars. 5G networks, medical devices, and electronics all depend on silver's unique properties. By 2030, solar alone could consume 20-30% of current global silver production.",
+        bullets: [
+          "Solar panels: 20+ grams of silver per panel",
+          "Solar demand: Expected to triple by 2030",
+          "Electric vehicles: Use 2x silver vs traditional cars",
+          "5G infrastructure: Requires significant silver",
+        ],
+      },
+      {
+        title: "Why Supply Can't Keep Up",
+        content: "Silver is primarily mined as a byproduct of copper, zinc, and lead mining. There are few primary silver mines. When base metal mining slows (as it does in economic downturns), silver supply drops regardless of silver prices. New mines take 10+ years to develop. The supply response is glacially slow compared to demand growth.",
+      },
+    ],
+    warningSignals: [
+      "COMEX silver inventories declining",
+      "Premiums on physical silver rising",
+      "Industrial users reporting difficulty sourcing",
+      "Silver ETF outflows (physical being pulled from market)",
+      "Longer delivery times from mints and dealers",
+      "Miners unable to replace depleted reserves",
+    ],
+    protectionSteps: [
+      {
+        step: 1,
+        title: "Acquire Physical Silver Now",
+        description: "In a true shortage, physical silver becomes difficult to obtain at any price. Build your position while silver is still available. A Silver IRA allows tax-advantaged accumulation.",
+      },
+      {
+        step: 2,
+        title: "Prioritize Liquidity",
+        description: "Focus on recognized products: American Silver Eagles, Canadian Maple Leafs, and bars from major refiners. These will be easiest to sell or trade in a shortage scenario.",
+      },
+      {
+        step: 3,
+        title: "Consider Silver's Role in Your Portfolio",
+        description: "Silver offers both crisis protection (like gold) and industrial demand upside. Many investors allocate 20-30% of their precious metals to silver.",
+      },
+      {
+        step: 4,
+        title: "Think Long-Term",
+        description: "Supply deficits take years to resolve. This isn't a short-term trade - it's a structural shift that could play out over a decade or more.",
+      },
+    ],
+    goldBenefit: "Silver shares gold's monetary properties but adds industrial demand that's growing exponentially. While gold protects wealth, silver offers both protection AND potential for significant gains if the shortage thesis plays out. The silver-to-gold ratio suggests silver is historically cheap.",
+    stats: [
+      { label: "Years of Deficit", value: "4+", subtext: "Consecutive" },
+      { label: "Solar Silver Demand Growth", value: "300%", subtext: "By 2030" },
+      { label: "Silver-to-Gold Ratio", value: "80:1+", subtext: "Historically high" },
+      { label: "Above-Ground Stock Decline", value: "50%", subtext: "Since 2020" },
+    ],
+    faqs: [
+      {
+        question: "Is the silver shortage real?",
+        answer: "Yes. The Silver Institute confirms multiple years of supply deficits. COMEX inventories are at multi-decade lows. The London Bullion Market Association has reported tight supply. This isn't speculation - it's documented.",
+      },
+      {
+        question: "Can't miners just increase production?",
+        answer: "Most silver is mined as a byproduct of other metals. Primary silver mines are rare, and new mines take 10+ years to develop. Even with higher prices, supply response is extremely slow. The deficit is structural, not cyclical.",
+      },
+      {
+        question: "How does a shortage affect silver prices?",
+        answer: "Shortages typically cause prices to spike dramatically. In the 1970s silver squeeze, prices rose from $6 to $50. In 2011, silver hit $50 again. A true industrial shortage could push prices far higher as manufacturers compete for limited supply.",
+      },
+    ],
+    relatedScenarios: ["silver-squeeze", "dollar-collapse", "hyperinflation"],
+  },
+  {
+    slug: "silver-squeeze",
+    title: "Silver Squeeze: When Supply Runs Dry",
+    subtitle: "What happens when investors and industry compete for a shrinking supply of physical silver. The setup, the trigger, and how to profit.",
+    metaTitle: "Silver Squeeze 2026: Understanding the Physical Silver Squeeze",
+    metaDescription: "Learn about the silver squeeze - when physical silver demand overwhelms supply. Understand the mechanics, historical precedents, and how to position yourself.",
+    threatLevel: "high",
+    probability: "Building pressure",
+    timeframe: "Trigger dependent",
+    sections: [
+      {
+        title: "What Is a Silver Squeeze?",
+        content: "A silver squeeze occurs when demand for physical silver overwhelms available supply, causing prices to spike dramatically. Unlike stocks, silver has real physical constraints - there's only so much above-ground silver, and it takes years to mine more. When buyers want more silver than exists, prices must rise to ration supply.",
+        bullets: [
+          "1979-1980 Hunt Brothers squeeze: Silver went from $6 to $50",
+          "2011 investment surge: Silver hit $50 again",
+          "2021 Reddit squeeze attempt: Exposed tight physical market",
+          "Key difference today: Industrial demand consuming supply",
+        ],
+      },
+      {
+        title: "The Paper vs Physical Disconnect",
+        content: "The COMEX futures market trades 100x more 'paper' silver than physical silver exists. This works as long as few people demand delivery. But when investors increasingly demand physical metal, the disconnect becomes dangerous. Premiums on physical silver can spike 50-100% above 'spot' price when supply is tight.",
+        bullets: [
+          "Paper silver traded: 100x+ physical supply",
+          "COMEX delivery requests: Rising trend",
+          "Physical premiums: Can spike to 50-100%",
+          "Industrial users: Must have physical metal",
+        ],
+      },
+      {
+        title: "Why Now Is Different",
+        content: "Previous squeezes were primarily investor-driven. Today's setup includes permanent industrial demand growth from solar and EVs, plus investment demand. Industrial users can't substitute - they MUST have silver. This creates a structural floor under demand that didn't exist in previous cycles.",
+      },
+    ],
+    warningSignals: [
+      "COMEX registered silver inventory declining",
+      "Dealer premiums rising sharply",
+      "Delivery delays from mints",
+      "Industrial users stockpiling",
+      "ETF silver being withdrawn for physical delivery",
+      "Backwardation in silver futures",
+    ],
+    protectionSteps: [
+      {
+        step: 1,
+        title: "Own Physical Silver, Not Paper",
+        description: "In a squeeze, paper silver (ETFs, futures) may not track physical prices. A Silver IRA with allocated physical metal ensures you own real silver, not a paper promise.",
+      },
+      {
+        step: 2,
+        title: "Build Position Before the Squeeze",
+        description: "During a squeeze, physical silver becomes unavailable or carries massive premiums. The time to buy is before the squeeze, not during.",
+      },
+      {
+        step: 3,
+        title: "Consider Multiple Product Types",
+        description: "Own a mix of coins and bars. During squeezes, different products may have different availability. Diversification provides options.",
+      },
+      {
+        step: 4,
+        title: "Have a Long-Term Perspective",
+        description: "Squeezes can be volatile. Don't panic sell during pullbacks. The fundamental supply deficit remains regardless of short-term price movements.",
+      },
+    ],
+    goldBenefit: "Physical silver in a tax-advantaged IRA positions you for both wealth protection and potential gains from a silver squeeze. Unlike paper silver or mining stocks, physical silver in allocated storage cannot be diluted, defaulted, or rehypothecated.",
+    stats: [
+      { label: "1980 Silver Spike", value: "733%", subtext: "$6 to $50" },
+      { label: "Paper vs Physical", value: "100:1", subtext: "Leverage" },
+      { label: "Physical Premium Range", value: "50-100%", subtext: "In tight markets" },
+      { label: "2021 Reddit Squeeze", value: "#1", subtext: "WallStreetBets trend" },
+    ],
+    faqs: [
+      {
+        question: "Could a silver squeeze really happen?",
+        answer: "It's happened multiple times: 1980, 2011, and 2021 saw partial squeezes. The difference now is structural industrial demand means the conditions are more favorable than ever. The question is when, not if.",
+      },
+      {
+        question: "Why didn't the 2021 Reddit squeeze work?",
+        answer: "It partially did - physical premiums spiked and dealers ran out of inventory. But the paper market is vast, and sustained buying pressure is needed. The squeeze exposed how tight physical supply really is.",
+      },
+      {
+        question: "What would trigger a full squeeze?",
+        answer: "Potential triggers include: major industrial user panic buying, currency crisis driving safe-haven demand, COMEX delivery demand exceeding inventory, or a major investment fund taking physical delivery. Any could start a self-reinforcing squeeze.",
+      },
+    ],
+    relatedScenarios: ["silver-shortage", "dollar-collapse", "stock-market-crash"],
+  },
 ];
 
 export function getScenarioBySlug(slug: string): Scenario | undefined {

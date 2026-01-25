@@ -5,6 +5,7 @@ import { getProviderSlugs, getAccountTypeSlugs } from "@/data/rollovers";
 import { getAllScenarioSlugs } from "@/data/scenarios";
 import { getAllAssetSlugs } from "@/data/assets";
 import { US_STATES } from "@/lib/states";
+import { getAllNewsSlugs } from "@/lib/news";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://richdadretirement.com";
@@ -15,6 +16,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const corePages = [
     "",
     "/best-gold-ira-companies",
+    "/best-silver-ira-companies",
+    "/best-crypto-ira-companies",
+    "/crypto-ira",
+    "/self-directed-ira",
+    "/robs-401k",
+    "/real-estate-ira",
+    "/solo-401k",
     "/reviews",
     "/compare",
     "/rollover",
@@ -35,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/rich-dad-strategy",
     "/scenarios",
     "/best-gold-ira-for",
+    "/news",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -99,6 +108,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/what-to-do-with-old-401k",
     "/guide/401k-alternatives",
     "/guide/silver-ira-guide",
+    "/guide/ira-approved-silver",
+    "/guide/silver-ira-rollover",
+    "/guide/silver-ira-rules",
+    "/guide/silver-stacking",
     "/guide/wealth-preservation-strategies",
     "/guide/noble-gold-fees",
   ].map((route) => ({
@@ -134,6 +147,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/recession-proof-investments",
     "/learn/gold-price-prediction-2026",
     "/learn/gold-bullion-vs-gold-coins",
+    "/learn/is-silver-a-good-investment",
+    "/learn/silver-coins-vs-bars",
+    "/learn/bitcoin-ira",
+    "/learn/checkbook-ira",
+    "/learn/self-directed-roth-ira",
+    "/learn/robs-401k-rules",
+    "/learn/real-estate-ira-custodians",
+    "/learn/real-estate-ira-rules",
+    "/learn/buy-rental-property-with-ira",
+    "/learn/solo-401k-contribution-limits",
+    "/learn/solo-401k-vs-sep-ira",
+    "/learn/solo-401k-providers",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -191,6 +216,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews/blanchard-gold",
     "/reviews/monetary-gold",
     "/reviews/money-metals-exchange",
+    // Crypto IRA reviews
+    "/reviews/itrustcapital",
+    "/reviews/alto-ira",
+    // Self-Directed IRA reviews
+    "/reviews/rocket-dollar",
+    // ROBS 401k reviews
+    "/reviews/guidant-financial",
+    "/reviews/benetrends",
     // Complaints & lawsuit pages
     "/reviews/us-money-reserve-complaints",
     "/reviews/rosland-capital-lawsuit",
@@ -310,6 +343,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // NEWS ARTICLE PAGES
+  // ============================================
+  const newsSlugs = getAllNewsSlugs();
+  const newsPages = newsSlugs.map((slug) => ({
+    url: `${baseUrl}/news/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "daily" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   // Deduplicate by URL to handle any overlaps
@@ -331,6 +375,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...audiencePages,
     ...scenarioPages,
     ...statePages,
+    ...newsPages,
   ];
 
   // Deduplicate by URL
