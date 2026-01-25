@@ -3,29 +3,46 @@
 
 import { NextRequest, NextResponse } from "next/server";
 
-// Telegram config - set these in your .env.local
+// Telegram config - same as notifications.ts
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
-async function sendTelegramNotification(message: string) {
+async function sendClickNotification(data: {
+  company: string;
+  source: string;
+  device: string;
+  timestamp: string;
+  referer: string;
+}) {
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
-    console.log("Telegram not configured, skipping notification");
+    console.log("[CLICK] Telegram not configured");
     return;
   }
 
+  const message = `🖱️ <b>Affiliate Click</b>
+
+🏢 <b>Company:</b> ${data.company.toUpperCase()}
+📄 <b>Page:</b> ${data.source}
+${data.device}
+
+🕐 ${data.timestamp}
+🔗 ${data.referer}
+
+💰 <i>Lead incoming...</i>`;
+
   try {
-    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-    await fetch(url, {
+    await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         chat_id: TELEGRAM_CHAT_ID,
         text: message,
         parse_mode: "HTML",
+        disable_notification: true, // Silent - don't spam for every click
       }),
     });
   } catch (error) {
-    console.error("Failed to send Telegram notification:", error);
+    console.error("[CLICK] Telegram error:", error);
   }
 }
 
@@ -40,35 +57,18 @@ export async function GET(request: NextRequest) {
   }
 
   // Get visitor info
-  const userAgent = request.headers.get("user-agent") || "unknown";
+  const userAgent = request.headers.get("user-agent") || "";
   const referer = request.headers.get("referer") || "direct";
-  const ip = request.headers.get("x-forwarded-for")?.split(",")[0] || "unknown";
   const timestamp = new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" });
-
-  // Detect device type
   const isMobile = /Mobile|Android|iPhone|iPad/i.test(userAgent);
-  const deviceType = isMobile ? "📱 Mobile" : "💻 Desktop";
+  const device = isMobile ? "📱 Mobile" : "💻 Desktop";
 
-  // Format Telegram message
-  const message = `
-🔔 <b>Affiliate Click!</b>
+  // Send notification (async, don't block redirect)
+  sendClickNotification({ company, source, device, timestamp, referer });
 
-🏢 <b>Company:</b> ${company.toUpperCase()}
-📄 <b>Source Page:</b> ${source}
-${deviceType}
+  // Log
+  console.log(`[CLICK] ${company} | ${source} | ${device}`);
 
-🕐 <b>Time:</b> ${timestamp}
-🔗 <b>Referrer:</b> ${referer}
-
-💰 <i>Potential lead incoming...</i>
-`.trim();
-
-  // Send Telegram notification (async, don't wait)
-  sendTelegramNotification(message);
-
-  // Log to console for debugging
-  console.log(`[CLICK] ${company} | ${source} | ${deviceType} | ${timestamp}`);
-
-  // Redirect to destination
+  // Redirect
   return NextResponse.redirect(destination, { status: 302 });
 }
