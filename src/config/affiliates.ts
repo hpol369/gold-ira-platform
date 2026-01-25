@@ -1,9 +1,38 @@
 export const AFFILIATE_LINKS = {
-    // Augusta customer landing pages (with affiliate tracking)
+    // ============================================
+    // AUGUSTA - HIGH INTENT LANDING PAGES
+    // ============================================
+
+    // General Gold IRA Guide - Default for high-intent campaigns
     augusta: "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129",
+
+    // Company Comparison Checklist - For decision-stage behavior
     augustaComparison: "https://learn.augustapreciousmetals.com/company-checklist-1/?apmtrkr_cid=1696&aff_id=5129",
+
+    // Zero Fees Highlight - For value-seeking audiences
     augustaZeroFees: "https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129",
+
+    // General Silver IRA - For silver-focused leads
     augustaSilver: "https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129",
+
+    // Silver Scheme Exposé - For "buyer beware" / skeptical messaging
+    augustaSilverScheme: "https://learn.augustapreciousmetals.com/free-silver-1?apmtrkr_cid=1696&aff_id=5129",
+
+    // Buyer Beware - For exposé/critical content (use when Augusta is NOT #1)
+    augustaBuyerBeware: "https://learn.augustapreciousmetals.com/apm-lp5v1?apmtrkr_cid=1696&aff_id=5129",
+
+    // ============================================
+    // AUGUSTA - MID INTENT LANDING PAGES
+    // ============================================
+
+    // General Gold IRA Mid - For introductory/educational content
+    augustaMidIntent: "https://learn.augustapreciousmetals.com/saving-secrets-af-mid/?apmtrkr_cid=1696&aff_id=5129",
+
+    // Zero Fees Mid - For fee-sensitive learners
+    augustaZeroFeesMid: "https://learn.augustapreciousmetals.com/gold-ira-af-mid?apmtrkr_cid=1696&aff_id=5129",
+
+    // Silver IRA Mid - For mid-intent silver leads
+    augustaSilverMid: "https://learn.augustapreciousmetals.com/silver-ira-af-mid?apmtrkr_cid=1696&aff_id=5129",
     noble: "https://noblegoldinvestments.com/gold-silver-ira-guide/?affiliate_id=RICH_DAD", // Placeholder
     goldco: "https://goldco.com/free-kit/?affiliate_id=RICH_DAD", // Placeholder
     americanHartford: "https://www.americanhartfordgold.com/?affiliate_id=RICH_DAD", // Placeholder
@@ -14,12 +43,22 @@ export const AFFILIATE_LINKS = {
 };
 
 // Context-aware Augusta link selection with sub_id tracking
-export type AugustaContext = "default" | "comparison" | "fees" | "silver";
+export type AugustaContext =
+    | "default"           // General Gold IRA Guide (high intent)
+    | "comparison"        // Company Comparison Checklist
+    | "fees"              // Zero Fees Highlight
+    | "silver"            // General Silver IRA
+    | "scam"              // Silver Scheme Exposé (buyer beware)
+    | "buyer-beware"      // Buyer Beware / Exposé content
+    | "mid-intent"        // General Gold IRA (mid intent)
+    | "fees-mid"          // Zero Fees (mid intent)
+    | "silver-mid";       // Silver IRA (mid intent)
 
 export function getAugustaLink(context: AugustaContext = "default", subId?: string): string {
     let baseUrl: string;
 
     switch (context) {
+        // High Intent
         case "comparison":
             baseUrl = AFFILIATE_LINKS.augustaComparison;
             break;
@@ -29,6 +68,24 @@ export function getAugustaLink(context: AugustaContext = "default", subId?: stri
         case "silver":
             baseUrl = AFFILIATE_LINKS.augustaSilver;
             break;
+        case "scam":
+            baseUrl = AFFILIATE_LINKS.augustaSilverScheme;
+            break;
+        case "buyer-beware":
+            baseUrl = AFFILIATE_LINKS.augustaBuyerBeware;
+            break;
+
+        // Mid Intent
+        case "mid-intent":
+            baseUrl = AFFILIATE_LINKS.augustaMidIntent;
+            break;
+        case "fees-mid":
+            baseUrl = AFFILIATE_LINKS.augustaZeroFeesMid;
+            break;
+        case "silver-mid":
+            baseUrl = AFFILIATE_LINKS.augustaSilverMid;
+            break;
+
         default:
             baseUrl = AFFILIATE_LINKS.augusta;
     }
