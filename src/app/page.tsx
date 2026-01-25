@@ -12,6 +12,8 @@ import { HowSection } from "@/components/home/GoldenCircle";
 import { AuthoritySection } from "@/components/home/AuthoritySection";
 import { UrgencySection } from "@/components/home/UrgencySection";
 import { ComparisonTable } from "@/components/home/ComparisonTable";
+import { NewsletterSignup } from "@/components/email/NewsletterSignup";
+import { Container } from "@/components/ui/Container";
 
 export default function Home() {
   return (
@@ -55,6 +57,13 @@ export default function Home() {
 
         {/* 10. URGENCY: Why act NOW - Gold prices, central banks */}
         <UrgencySection />
+
+        {/* 10.5. NEWSLETTER: Stay informed - Weekly insights */}
+        <section className="py-16 bg-slate-900">
+          <Container>
+            <NewsletterSignup variant="footer" />
+          </Container>
+        </section>
 
         {/* 11. COMPARISON: For researchers - All roads lead to Augusta */}
         <ComparisonTable />
