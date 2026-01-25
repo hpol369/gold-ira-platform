@@ -1,10 +1,17 @@
 import { MetadataRoute } from "next";
 import { audienceSlugs } from "@/config/audiences";
+import { getCompanySlugs } from "@/data/companies";
+import { getProviderSlugs, getAccountTypeSlugs } from "@/data/rollovers";
+import { getAllScenarioSlugs } from "@/data/scenarios";
+import { getAllAssetSlugs } from "@/data/assets";
+import { US_STATES } from "@/lib/states";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://richdadretirement.com";
 
-  // Core pages
+  // ============================================
+  // CORE PAGES
+  // ============================================
   const corePages = [
     "",
     "/best-gold-ira-companies",
@@ -21,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools",
     "/about-us",
     "/contact",
+    "/resources",
+    "/quiz",
+    "/investigative-hub",
+    "/rich-dad-strategy",
+    "/scenarios",
+    "/best-gold-ira-for",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -28,7 +41,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1 : 0.9,
   }));
 
-  // Tools pages
+  // ============================================
+  // LEGAL/POLICY PAGES
+  // ============================================
+  const legalPages = [
+    "/privacy-policy",
+    "/editorial-policy",
+    "/terms-of-service",
+    "/thank-you",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.3,
+  }));
+
+  // ============================================
+  // AUTHOR PAGES
+  // ============================================
+  const authorPages = [
+    "/author/thomas-richardson",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  // ============================================
+  // TOOLS PAGES
+  // ============================================
   const toolsPages = [
     "/tools/crash-simulator",
     "/tools/rmd-calculator",
@@ -40,7 +82,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Guide pages
+  // ============================================
+  // GUIDE PAGES
+  // ============================================
   const guidePages = [
     "/guide/gold-ira-guide",
     "/guide/gold-ira-fees",
@@ -48,12 +92,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/gold-ira-minimum-investment",
     "/guide/401k-to-gold-rollover",
     "/guide/403b-to-gold-ira-rollover",
+    "/guide/457b-to-gold-ira-rollover",
     "/guide/tsp-to-gold-ira-rollover",
     "/guide/protect-401k-from-crash",
     "/guide/what-to-do-with-old-401k",
     "/guide/401k-alternatives",
     "/guide/silver-ira-guide",
     "/guide/wealth-preservation-strategies",
+    "/guide/noble-gold-fees",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -61,7 +107,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Learn pages
+  // ============================================
+  // LEARN PAGES
+  // ============================================
   const learnPages = [
     "/learn/gold-ira-benefits",
     "/learn/gold-ira-tax-rules",
@@ -72,6 +120,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/platinum-ira",
     "/learn/checkbook-ira-rules",
     "/learn/is-my-money-safe-in-bank",
+    "/learn/sequence-of-returns-risk",
+    "/learn/self-directed-ira-gold",
+    "/learn/stock-market-crash-protection",
+    "/learn/indirect-vs-direct-rollover",
+    "/learn/how-much-gold-in-portfolio",
+    "/learn/retirement-planning-mistakes",
+    "/learn/why-is-gold-valuable",
+    "/learn/safe-haven-investments",
+    "/learn/precious-metals-ira-rules",
+    "/learn/stock-market-alternatives",
+    "/learn/recession-proof-investments",
+    "/learn/gold-price-prediction-2026",
+    "/learn/gold-bullion-vs-gold-coins",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -79,12 +140,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Review pages
-  const reviewPages = [
+  // ============================================
+  // WHY GOLD PAGES
+  // ============================================
+  const whyGoldPages = [
+    "/why-gold/physical-gold-vs-paper",
+    "/why-gold/central-banks-buying-gold",
+    "/why-gold/inflation-protection",
+    "/why-gold/gold-vs-stocks",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // RICH DAD STRATEGY PAGES
+  // ============================================
+  const richDadPages = [
+    "/rich-dad-strategy/robert-kiyosaki-gold",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // REVIEW PAGES (Static)
+  // ============================================
+  const reviewStaticPages = [
+    // Main company reviews
     "/reviews/augusta-precious-metals",
     "/reviews/goldco",
     "/reviews/american-hartford-gold",
-    "/reviews/birch-gold-group",
+    "/reviews/birch-gold",
     "/reviews/noble-gold",
     "/reviews/advantage-gold",
     "/reviews/patriot-gold-group",
@@ -92,9 +183,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews/lear-capital",
     "/reviews/regal-assets",
     "/reviews/orion-metal-exchange",
-    "/reviews/preserve-gold",
     "/reviews/american-bullion",
     "/reviews/rosland-capital",
+    "/reviews/priority-gold",
+    "/reviews/us-money-reserve",
+    "/reviews/blanchard-gold",
+    "/reviews/monetary-gold",
+    "/reviews/money-metals-exchange",
+    // Complaints & lawsuit pages
+    "/reviews/us-money-reserve-complaints",
+    "/reviews/rosland-capital-lawsuit",
+    "/reviews/augusta-precious-metals-lawsuit",
+    "/reviews/american-hartford-gold-complaints",
+    "/reviews/advantage-gold-complaints",
+    "/reviews/goldco-lawsuit-facts",
+    "/reviews/lear-capital-complaints",
+    "/reviews/regal-assets-lawsuit",
+    "/reviews/birch-gold-complaints",
+    "/reviews/noble-gold-legit",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -102,33 +208,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Rollover pages
-  const rolloverPages = [
-    "/rollover/401k",
-    "/rollover/403b",
-    "/rollover/457b",
-    "/rollover/tsp",
-    "/rollover/roth",
-    "/rollover/sep",
-    "/rollover/simple",
-    "/rollover/traditional",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
+  // ============================================
+  // REVIEW PAGES (Dynamic from companies data)
+  // ============================================
+  const companySlugs = getCompanySlugs();
+  const reviewDynamicPages = companySlugs.map((slug) => ({
+    url: `${baseUrl}/reviews/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
-  // Best Gold IRA For audience pages
-  const audiencePages = audienceSlugs.map((slug) => ({
-    url: `${baseUrl}/best-gold-ira-for/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // Compare pages
-  const comparePages = [
+  // ============================================
+  // COMPARE PAGES (Static)
+  // ============================================
+  const compareStaticPages = [
     "/compare/augusta-vs-goldco",
     "/compare/augusta-vs-noble-gold",
     "/compare/goldco-vs-american-hartford-gold",
@@ -150,41 +244,103 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  // Scenario pages
-  const scenarioPages = [
-    "/scenarios/bank-failure",
-    "/scenarios/dollar-collapse",
-    "/scenarios/hyperinflation",
-    "/scenarios/market-crash",
-    "/scenarios/recession",
-    "/scenarios/stock-crash",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
+  // ============================================
+  // GOLD VS [ASSET] COMPARISON PAGES
+  // ============================================
+  const assetSlugs = getAllAssetSlugs();
+  const assetComparePages = assetSlugs.map((slug) => ({
+    url: `${baseUrl}/compare/gold-vs/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
-  // Best For hub
-  const bestForPages = [
-    "/best-gold-ira-for",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
+  // ============================================
+  // ROLLOVER ACCOUNT TYPE PAGES
+  // ============================================
+  const accountTypeSlugs = getAccountTypeSlugs();
+  const rolloverAccountPages = accountTypeSlugs.map((slug) => ({
+    url: `${baseUrl}/rollover/${slug}`,
     lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
   }));
 
-  return [
+  // ============================================
+  // ROLLOVER PROVIDER PAGES
+  // ============================================
+  const providerSlugs = getProviderSlugs();
+  const rolloverProviderPages = providerSlugs.map((slug) => ({
+    url: `${baseUrl}/rollover/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // BEST GOLD IRA FOR [AUDIENCE] PAGES
+  // ============================================
+  const audiencePages = audienceSlugs.map((slug) => ({
+    url: `${baseUrl}/best-gold-ira-for/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // SCENARIO PAGES
+  // ============================================
+  const scenarioSlugs = getAllScenarioSlugs();
+  const scenarioPages = scenarioSlugs.map((slug) => ({
+    url: `${baseUrl}/scenarios/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  // ============================================
+  // LOCAL STATE PAGES
+  // ============================================
+  const statePages = US_STATES.map((state) => ({
+    url: `${baseUrl}/local/${state.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  // ============================================
+  // COMBINE ALL PAGES
+  // ============================================
+  // Deduplicate by URL to handle any overlaps
+  const allPages = [
     ...corePages,
+    ...legalPages,
+    ...authorPages,
     ...toolsPages,
     ...guidePages,
     ...learnPages,
-    ...reviewPages,
-    ...rolloverPages,
+    ...whyGoldPages,
+    ...richDadPages,
+    ...reviewStaticPages,
+    ...reviewDynamicPages,
+    ...compareStaticPages,
+    ...assetComparePages,
+    ...rolloverAccountPages,
+    ...rolloverProviderPages,
     ...audiencePages,
-    ...comparePages,
     ...scenarioPages,
-    ...bestForPages,
+    ...statePages,
   ];
+
+  // Deduplicate by URL
+  const urlSet = new Set<string>();
+  const dedupedPages = allPages.filter((page) => {
+    if (urlSet.has(page.url)) {
+      return false;
+    }
+    urlSet.add(page.url);
+    return true;
+  });
+
+  return dedupedPages;
 }
