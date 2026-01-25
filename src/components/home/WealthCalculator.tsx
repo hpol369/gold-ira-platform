@@ -36,7 +36,7 @@ export function WealthCalculator() {
     };
 
     return (
-        <section className="py-20 bg-slate-900 border-y border-white/10">
+        <section id="wealth-calculator" className="py-20 bg-slate-900 border-y border-white/10 scroll-mt-20">
             <Container>
                 <div className="text-center mb-12">
                     <span className="text-amber-400 font-bold tracking-widest uppercase text-xs mb-2 block">
