@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { AuthorBox } from "@/components/guide/AuthorBox";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { ArrowRight, AlertTriangle, Scale, CheckCircle2, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -236,6 +237,7 @@ export default function LearCapitalComplaintsPage() {
                     </article>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="lear-capital" companyName="Lear Capital" />
         </main>
     );
 }

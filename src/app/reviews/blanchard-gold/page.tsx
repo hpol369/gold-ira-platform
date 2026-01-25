@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
 import { TableOfContents } from "@/components/guide/TableOfContents";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { Metadata } from "next";
 import { ArrowRight, CheckCircle2, XCircle, Landmark, AlertTriangle, Star } from "lucide-react";
 import Link from "next/link";
@@ -198,6 +199,7 @@ export default function BlanchardGoldReviewPage() {
                     </aside>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="blanchard-gold" companyName="Blanchard Gold" />
         </main>
     );
 }

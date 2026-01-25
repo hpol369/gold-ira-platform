@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { AuthorBox } from "@/components/guide/AuthorBox";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { ArrowRight, AlertTriangle, CheckCircle2, Clock, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -212,6 +213,7 @@ export default function AdvantageGoldComplaintsPage() {
                     </article>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="advantage-gold" companyName="Advantage Gold" />
         </main>
     );
 }

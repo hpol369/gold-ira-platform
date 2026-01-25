@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { AuthorBox } from "@/components/guide/AuthorBox";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { ArrowRight, AlertTriangle, PhoneOff, ShieldAlert, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -226,6 +227,7 @@ export default function UsMoneyReserveComplaintsPage() {
                     </article>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="us-money-reserve" companyName="US Money Reserve" />
         </main>
     );
 }

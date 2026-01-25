@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
 import { TableOfContents } from "@/components/guide/TableOfContents";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { Metadata } from "next";
 import { ArrowRight, AlertTriangle, CheckCircle2, XCircle } from "lucide-react";
 import Link from "next/link";
@@ -187,6 +188,7 @@ export default function UsMoneyReserveReviewPage() {
                     </aside>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="us-money-reserve" companyName="US Money Reserve" />
         </main>
     );
 }

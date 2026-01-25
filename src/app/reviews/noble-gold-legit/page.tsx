@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
 import { TableOfContents } from "@/components/guide/TableOfContents";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, AlertTriangle, AlertOctagon } from "lucide-react";
 import Link from "next/link";
@@ -212,6 +213,7 @@ export default function NobleGoldLegitPage() {
                     </aside>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="noble-gold" companyName="Noble Gold" />
         </main>
     );
 }

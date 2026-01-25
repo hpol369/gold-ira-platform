@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
 import { TableOfContents } from "@/components/guide/TableOfContents";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { Metadata } from "next";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, Star } from "lucide-react";
 import Link from "next/link";
@@ -195,6 +196,7 @@ export default function MonetaryGoldReviewPage() {
                     </aside>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="monetary-gold" companyName="Monetary Gold" />
         </main>
     );
 }

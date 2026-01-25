@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { AlertTriangle, XCircle, ShieldAlert } from "lucide-react";
 import Link from "next/link";
@@ -188,6 +189,7 @@ export default function RegalAssetsLawsuitPage() {
                 </Container>
             </div>
             <Footer />
+            <StickyMobileCTA companySlug="regal-assets" companyName="Regal Assets" />
         </main>
     );
 }

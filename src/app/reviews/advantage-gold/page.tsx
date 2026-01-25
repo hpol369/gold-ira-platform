@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { ReviewSidebar } from "@/components/reviews/ReviewSidebar";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { TableOfContents } from "@/components/guide/TableOfContents";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
@@ -205,6 +206,7 @@ export default function AdvantageGoldReviewPage() {
                     </aside>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="advantage-gold" companyName="Advantage Gold" />
         </main>
     );
 }

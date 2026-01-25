@@ -6,6 +6,7 @@ import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
@@ -152,6 +153,7 @@ export default function AmericanBullionReviewPage() {
                 </Container>
             </div>
             <Footer />
+            <StickyMobileCTA companySlug="american-bullion" companyName="American Bullion" />
         </main>
     );
 }

@@ -12,6 +12,7 @@ import { FeesTable, SingleCompanyFees } from "@/components/reviews/FeesTable";
 import { VerdictSection } from "@/components/reviews/VerdictSection";
 import { BestForSection } from "@/components/reviews/BestForSection";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import {
   getCompanyBySlug,
   getCompanySlugs,
@@ -348,6 +349,9 @@ export default async function CompanyReviewPage({ params }: Props) {
         )}
 
         <Footer />
+
+        {/* Sticky Mobile CTA - Only visible on mobile after scrolling */}
+        <StickyMobileCTA companySlug={company.slug} companyName={company.name} />
       </main>
     </>
   );

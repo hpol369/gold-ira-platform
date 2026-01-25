@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { AuthorBox } from "@/components/guide/AuthorBox";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { ArrowRight, ShieldCheck, Gavel } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -204,6 +205,7 @@ export default function GoldcoLawsuitPage() {
                     </article>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="goldco" companyName="Goldco" />
         </main>
     );
 }

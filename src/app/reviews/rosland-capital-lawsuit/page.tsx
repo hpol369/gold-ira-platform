@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { AuthorBox } from "@/components/guide/AuthorBox";
+import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { ArrowRight, AlertTriangle, ShieldCheck, Gavel, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -254,6 +255,7 @@ export default function RoslandLawsuitPage() {
                     </article>
                 </div>
             </Container>
+            <StickyMobileCTA companySlug="rosland-capital" companyName="Rosland Capital" />
         </main>
     );
 }
