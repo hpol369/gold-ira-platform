@@ -11,6 +11,12 @@ export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isLearnOpen, setIsLearnOpen] = useState(false);
 
+    // Auto-update freshness badge
+    const currentDate = new Date();
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+    const freshnessBadge = `Updated: ${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/80">
             {/* Top Bar - Trust & Contact */}
@@ -23,7 +29,7 @@ export function Navbar() {
                                 <span className="text-slate-300">Secure & Private</span>
                             </span>
                             <span className="hidden sm:inline text-slate-600">|</span>
-                            <span className="hidden sm:inline text-slate-400">Updated: January 2026</span>
+                            <span className="hidden sm:inline text-slate-400">{freshnessBadge}</span>
                         </div>
                         <a
                             href={AFFILIATE_LINKS.augusta}

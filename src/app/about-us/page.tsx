@@ -1,214 +1,407 @@
-import { Container } from "@/components/ui/Container";
-import { FadeIn } from "@/components/ui/FadeIn";
-import { Button } from "@/components/ui/Button";
+// src/app/about-us/page.tsx
+// Thomas Richardson's manifesto - first-person, anti-scammer, trust-building
+
 import { Metadata } from "next";
-import { ShieldCheck, Users, Target, BookOpen, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import {
+  ShieldCheck,
+  AlertTriangle,
+  BookOpen,
+  Scale,
+  ArrowRight,
+  CheckCircle2,
+  XCircle,
+  Award,
+  FileSearch,
+  Users,
+  Briefcase,
+} from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "About Us | Rich Dad Retirement - Gold IRA Education & Reviews",
-    description: "Learn about Rich Dad Retirement's mission to provide honest Gold IRA education. We help retirees understand precious metals investing.",
+  title: "About Thomas Richardson | Rich Dad Retirement",
+  description:
+    "I'm Thomas Richardson. After 20 years in wealth management, I got sick of watching scammers prey on retirees. This site is my response.",
+  openGraph: {
+    title: "About Thomas Richardson | Rich Dad Retirement",
+    description:
+      "After 20 years in wealth management, I got sick of watching scammers prey on retirees. This site is my response.",
+  },
 };
 
 const schema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Rich Dad Retirement",
-    "url": "https://richdadretirement.com",
-    "description": "Independent Gold IRA education and company reviews helping investors make informed decisions about precious metals retirement investing.",
-    "foundingDate": "2024",
-    "sameAs": []
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://richdadretirement.com/author/thomas-richardson",
+      name: "Thomas Richardson",
+      jobTitle: "Founder & Lead Researcher",
+      description:
+        "Former wealth management professional turned Gold IRA researcher. 20+ years in financial services.",
+      worksFor: {
+        "@type": "Organization",
+        name: "Rich Dad Retirement",
+      },
+      knowsAbout: [
+        "Gold IRA",
+        "Precious Metals Investing",
+        "Retirement Planning",
+        "401k Rollovers",
+        "Wealth Management",
+      ],
+    },
+    {
+      "@type": "Organization",
+      name: "Rich Dad Retirement",
+      url: "https://richdadretirement.com",
+      founder: {
+        "@type": "Person",
+        name: "Thomas Richardson",
+      },
+      foundingDate: "2024",
+      description:
+        "Independent Gold IRA research and education. We investigate companies so you don't have to.",
+    },
+    {
+      "@type": "WebPage",
+      name: "About Thomas Richardson",
+      description: "The story behind Rich Dad Retirement and our mission.",
+      url: "https://richdadretirement.com/about-us",
+    },
+  ],
 };
 
 export default function AboutUsPage() {
-    return (
-        <main className="min-h-screen bg-slate-900 pb-24">
-            <SchemaScript schema={schema} />
+  return (
+    <main className="min-h-screen bg-slate-900">
+      <SchemaScript schema={schema} />
+      <Navbar />
 
-            {/* Hero Section */}
-            <section className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/40" />
-                <Container className="relative z-10">
-                    <FadeIn>
-                        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
-                            <div className="flex-1 space-y-6 text-center md:text-left">
-                                <span className="inline-block text-secondary font-bold tracking-widest uppercase text-xs">
-                                    My Mission
-                                </span>
-                                <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
-                                    "I realized the traditional '60/40' portfolio was broken."
-                                </h1>
-                                <p className="text-xl text-gray-200 font-light leading-relaxed">
-                                    Hello, I'm Thomas Richardson. I built this site to help you protect your retirement savings from inflation, market crashes, and predatory salespeople.
-                                </p>
-                            </div>
-                            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white shadow-xl overflow-hidden shrink-0 relative">
-                                <Image
-                                    src="/images/thomas-richardson.png"
-                                    alt="Thomas Richardson"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                        </div>
-                    </FadeIn>
-                </Container>
-            </section>
+      {/* Hero - The Manifesto */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[150px]" />
+        </div>
+        <Container className="relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              {/* Photo */}
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl border-4 border-amber-500/30 shadow-2xl overflow-hidden flex-shrink-0 bg-slate-700">
+                <div className="w-full h-full flex items-center justify-center text-slate-500">
+                  {/* Placeholder - replace with actual photo */}
+                  <Users className="w-20 h-20 opacity-50" />
+                </div>
+              </div>
 
-            {/* My Story */}
-            <section className="py-20">
-                <Container>
-                    <div className="max-w-3xl mx-auto">
-                        <FadeIn delay={0.1}>
-                            <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
-                                <h2 className="text-3xl font-serif font-bold text-white mb-6">
-                                    Why I Left Wealth Management
-                                </h2>
-                                <p className="lead">
-                                    For 20 years, I worked in traditional wealth management. I wore the suit, I sold the mutual funds, and I repeated the standard advice: "Just stay invested for the long run."
-                                </p>
-                                <p>
-                                    But in 2022, I watched as my clients—honest, hard-working people—lost 20% of their portfolios in months. Stocks went down. Bonds went down. Inflation went up. The "safe" 60/40 portfolio had failed.
-                                </p>
-                                <p>
-                                    At the same time, I saw another problem. My own father was getting bombarded by calls from Gold IRA companies. They used fear tactics to try and scare him into moving his <i>entire</i> life savings into gold coins priced at 30% above market value.
-                                </p>
-                                <h3>The "Rich Dad" Philosophy</h3>
-                                <p>
-                                    I realized there were two dangerous extremes:
-                                </p>
-                                <ol>
-                                    <li><strong>The Traditionalists:</strong> Who ignore gold completely and leave you exposed to inflation.</li>
-                                    <li><strong>The Gold Sharks:</strong> Who sell overpriced coins to seniors using fear.</li>
-                                </ol>
-                                <p>
-                                    I founded <strong>Rich Dad Retirement</strong> to be the middle path. I believe in the philosophy of owning real assets—not just paper. But I also believe in low fees, transparency, and education first.
-                                </p>
-                            </article>
-                        </FadeIn>
-                    </div>
-                </Container>
-            </section>
+              {/* Intro */}
+              <div className="text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 text-xs font-semibold mb-4">
+                  <Briefcase className="h-3 w-3" />
+                  20+ YEARS IN FINANCE
+                </div>
+                <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  I&apos;m Thomas Richardson.
+                </h1>
+                <p className="text-xl text-slate-300 leading-relaxed">
+                  I got sick of watching scammers prey on retirees.
+                  <span className="text-white font-semibold">
+                    {" "}This site is my response.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
 
-            {/* What We Do */}
-            <section className="py-20 bg-white/5 border-y border-white/10">
-                <Container>
-                    <div className="max-w-5xl mx-auto">
-                        <div className="text-center mb-16">
-                            <span className="text-amber-400 font-bold tracking-widest uppercase text-xs">What We Do</span>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-3">
-                                Honest Education, No Sales Pitch
-                            </h2>
-                        </div>
+      {/* The Story */}
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <article className="prose prose-lg prose-invert prose-headings:font-bold prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+              <h2 className="text-2xl text-white flex items-center gap-3 not-prose mb-6">
+                <div className="p-2 bg-red-500/20 rounded-lg">
+                  <AlertTriangle className="h-5 w-5 text-red-400" />
+                </div>
+                The Moment I Snapped
+              </h2>
 
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <FadeIn delay={0.1}>
-                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
-                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
-                                        <BookOpen className="h-6 w-6" />
-                                    </div>
-                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Educational Guides</h3>
-                                    <p className="text-slate-400 leading-relaxed">
-                                        We break down complex topics like rollover rules, IRS regulations, and fee structures into plain English. No jargon, no scare tactics—just the facts you need to know.
-                                    </p>
-                                </div>
-                            </FadeIn>
+              <p className="text-lg">
+                In 2022, my 72-year-old father called me in a panic. A
+                &quot;Gold IRA specialist&quot; had been calling him for weeks,
+                telling him the dollar was about to collapse and he needed to
+                move his <em>entire</em> IRA into gold coins—immediately.
+              </p>
 
-                            <FadeIn delay={0.2}>
-                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
-                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
-                                        <ShieldCheck className="h-6 w-6" />
-                                    </div>
-                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Honest Reviews</h3>
-                                    <p className="text-slate-400 leading-relaxed">
-                                        We research Gold IRA companies so you don&apos;t have to wade through fake reviews and marketing fluff. We look at BBB ratings, real customer complaints, fee disclosures, and actual buyback policies.
-                                    </p>
-                                </div>
-                            </FadeIn>
+              <p>
+                The coins they were pushing? Rare numismatic collectibles priced
+                at <strong>40% above market value</strong>. They were using fear
+                to steal from a retiree.
+              </p>
 
-                            <FadeIn delay={0.3}>
-                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
-                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
-                                        <Target className="h-6 w-6" />
-                                    </div>
-                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Side-by-Side Comparisons</h3>
-                                    <p className="text-slate-400 leading-relaxed">
-                                        Trying to decide between two companies? We put them head-to-head on the things that actually matter: minimum investments, fee transparency, customer service quality, and more.
-                                    </p>
-                                </div>
-                            </FadeIn>
+              <p>
+                I&apos;d spent 20 years in wealth management. I knew how this
+                industry worked. But when I saw it targeting my own family, I
+                realized I couldn&apos;t stay silent anymore.
+              </p>
 
-                            <FadeIn delay={0.4}>
-                                <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 h-full">
-                                    <div className="h-12 w-12 bg-amber-500/20 text-amber-400 rounded-full flex items-center justify-center mb-6">
-                                        <Users className="h-6 w-6" />
-                                    </div>
-                                    <h3 className="text-xl font-bold font-serif text-white mb-3">Real Talk About Precious Metals</h3>
-                                    <p className="text-slate-400 leading-relaxed">
-                                        We&apos;ll tell you when a Gold IRA makes sense—and when it doesn&apos;t. We&apos;re not here to convince you gold is the only answer. It&apos;s one tool in a diversified retirement strategy.
-                                    </p>
-                                </div>
-                            </FadeIn>
-                        </div>
-                    </div>
-                </Container>
-            </section>
+              <h2 className="text-2xl text-white flex items-center gap-3 not-prose mt-12 mb-6">
+                <div className="p-2 bg-amber-500/20 rounded-lg">
+                  <Scale className="h-5 w-5 text-amber-400" />
+                </div>
+                The Problem: Two Dangerous Extremes
+              </h2>
 
-            {/* How We Make Money */}
-            <section className="py-20">
-                <Container>
-                    <div className="max-w-4xl mx-auto">
-                        <FadeIn delay={0.1}>
-                            <h2 className="text-3xl font-serif font-bold text-white mb-6 text-center">
-                                How We Keep the Lights On
-                            </h2>
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
-                                <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                                    Let&apos;s be upfront about this: we earn referral fees when you request information from one of the Gold IRA companies we review. That&apos;s how we pay for the research, hosting, and content creation that goes into this site.
-                                </p>
-                                <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                                    But here&apos;s what makes us different: <strong className="text-white">we don&apos;t rank companies based on who pays us the most</strong>. Our rankings are based on our research into fees, customer reviews, BBB ratings, and overall value. If a company has problems, we&apos;ll tell you—even if they&apos;re a partner.
-                                </p>
-                                <p className="text-lg text-slate-300 leading-relaxed">
-                                    You can read more about our standards in our <Link href="/editorial-policy" className="text-amber-400 hover:underline font-medium">Editorial Policy</Link>.
-                                </p>
-                            </div>
-                        </FadeIn>
-                    </div>
-                </Container>
-            </section>
+              <div className="grid md:grid-cols-2 gap-4 not-prose my-8">
+                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
+                  <div className="flex items-center gap-2 text-red-400 font-bold mb-2">
+                    <XCircle className="h-5 w-5" />
+                    The Gold Sharks
+                  </div>
+                  <p className="text-slate-400 text-sm m-0">
+                    Use fear tactics. Push overpriced coins. Pressure seniors
+                    into bad decisions. Give the whole industry a bad name.
+                  </p>
+                </div>
+                <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-5">
+                  <div className="flex items-center gap-2 text-blue-400 font-bold mb-2">
+                    <XCircle className="h-5 w-5" />
+                    The Traditionalists
+                  </div>
+                  <p className="text-slate-400 text-sm m-0">
+                    Dismiss gold entirely. Keep you 100% in stocks and bonds.
+                    Leave you exposed when inflation spikes and markets crash.
+                  </p>
+                </div>
+              </div>
 
-            {/* CTA Section */}
-            <section className="py-16">
-                <Container>
-                    <FadeIn delay={0.2}>
-                        <div className="bg-primary rounded-3xl p-10 md:p-12 text-center text-white relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-                            <div className="relative z-10 max-w-2xl mx-auto space-y-6">
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold">Ready to Learn More?</h2>
-                                <p className="text-gray-200">
-                                    Start with our beginner&apos;s guide to Gold IRAs. No fluff, no pressure—just the information you need.
-                                </p>
-                                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button size="lg" variant="gold" asChild>
-                                        <Link href="/guide/gold-ira-guide">
-                                            Read the Guide
-                                            <ArrowRight className="ml-2 h-5 w-5" />
-                                        </Link>
-                                    </Button>
-                                    <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10" asChild>
-                                        <Link href="/reviews">
-                                            See Company Reviews
-                                        </Link>
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
-                    </FadeIn>
-                </Container>
-            </section>
-        </main>
-    );
+              <p>
+                Neither extreme serves you. I built Rich Dad Retirement to be
+                the <strong>middle path</strong>—honest education about when
+                gold makes sense (and when it doesn&apos;t), plus ruthless
+                investigation of the companies in this space.
+              </p>
+
+              <h2 className="text-2xl text-white flex items-center gap-3 not-prose mt-12 mb-6">
+                <div className="p-2 bg-green-500/20 rounded-lg">
+                  <ShieldCheck className="h-5 w-5 text-green-400" />
+                </div>
+                What I Actually Do
+              </h2>
+
+              <ul>
+                <li>
+                  <strong>I research Gold IRA companies</strong>—BBB records,
+                  CFTC filings, customer complaints, fee disclosures. The stuff
+                  most people don&apos;t have time to dig through.
+                </li>
+                <li>
+                  <strong>I call out the bad actors</strong>—companies with
+                  lawsuits, deceptive pricing, or aggressive sales tactics. See
+                  our{" "}
+                  <Link href="/investigative-hub" className="text-amber-400">
+                    Investigative Hub
+                  </Link>
+                  .
+                </li>
+                <li>
+                  <strong>I recommend the good ones</strong>—companies with
+                  transparent pricing, education-first approaches, and clean
+                  regulatory records.
+                </li>
+                <li>
+                  <strong>I teach</strong>—through our{" "}
+                  <Link href="/academy" className="text-amber-400">
+                    Gold IRA Academy
+                  </Link>
+                  , guides, and comparison tools. Free, no strings attached.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </Container>
+      </section>
+
+      {/* My Credentials */}
+      <section className="py-16 bg-slate-800/50">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-white text-center mb-8">
+              My Background
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-amber-400 mb-2">20+</div>
+                <div className="text-white font-semibold mb-1">
+                  Years in Finance
+                </div>
+                <p className="text-slate-400 text-sm">
+                  Wealth management, retirement planning, portfolio construction
+                </p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-amber-400 mb-2">15+</div>
+                <div className="text-white font-semibold mb-1">
+                  Companies Investigated
+                </div>
+                <p className="text-slate-400 text-sm">
+                  Deep dives into fees, complaints, lawsuits, and business
+                  practices
+                </p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-amber-400 mb-2">0</div>
+                <div className="text-white font-semibold mb-1">
+                  Sales Pressure
+                </div>
+                <p className="text-slate-400 text-sm">
+                  Education first. I&apos;ll tell you when gold ISN&apos;T
+                  right for you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* How We Make Money (Transparency) */}
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-white text-center mb-8">
+              How I Keep the Lights On
+            </h2>
+
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+              <p className="text-slate-300 text-lg mb-6">
+                Let me be direct: I earn referral fees when you request
+                information from companies I recommend. That&apos;s how this
+                site exists.
+              </p>
+
+              <p className="text-slate-300 text-lg mb-6">
+                But here&apos;s my promise:{" "}
+                <span className="text-white font-semibold">
+                  I will never recommend a company I wouldn&apos;t trust with my
+                  own father&apos;s retirement.
+                </span>
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">
+                    Rankings are based on research, not who pays the most
+                  </span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">
+                    I publish negative reviews of companies with problems
+                  </span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">
+                    I&apos;ll tell you when a Gold IRA isn&apos;t right for your
+                    situation
+                  </span>
+                </div>
+              </div>
+
+              <p className="text-slate-400 mt-6">
+                Read our full{" "}
+                <Link href="/editorial-policy" className="text-amber-400 hover:underline">
+                  Editorial Policy
+                </Link>{" "}
+                for details on how we research and rate companies.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* What I Stand Against */}
+      <section className="py-16 bg-slate-800/50">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-white text-center mb-8">
+              What I Stand Against
+            </h2>
+
+            <div className="space-y-4">
+              {[
+                "High-pressure sales tactics that prey on fear",
+                "Rare coin schemes that charge 30-50% premiums",
+                "'Home storage IRA' scams that trigger IRS penalties",
+                "Hidden fees buried in fine print",
+                "Companies that won't publish their pricing",
+                "Salespeople who care more about commissions than clients",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-3 bg-red-500/10 border border-red-500/20 rounded-lg px-5 py-3"
+                >
+                  <XCircle className="h-5 w-5 text-red-400 flex-shrink-0" />
+                  <span className="text-slate-300">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-center text-slate-400 mt-8">
+              If you&apos;ve experienced any of these, report it to our{" "}
+              <Link href="/scams" className="text-amber-400 hover:underline">
+                Scam Protection Center
+              </Link>
+              .
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Ready to Do Your Own Research?
+            </h2>
+            <p className="text-slate-400 mb-8">
+              Start with our guides. No sales pitch, no pressure—just the
+              information you need to make an informed decision.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="gold" size="lg" asChild>
+                <Link href="/academy">
+                  <BookOpen className="h-5 w-5 mr-2" />
+                  Gold IRA Academy
+                </Link>
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white/20 text-white hover:bg-white/10"
+                asChild
+              >
+                <Link href="/best-gold-ira-companies">
+                  <Award className="h-5 w-5 mr-2" />
+                  See My Top Picks
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <Footer />
+    </main>
+  );
 }
