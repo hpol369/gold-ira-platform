@@ -1,9 +1,9 @@
-name: Daily News Pipeline
+name: News Pipeline
 
 on:
   schedule:
-    # Run every day at 6 AM UTC (1 AM EST / 10 PM PST previous day)
-    - cron: '0 6 * * *'
+    # Run every 15 minutes
+    - cron: '*/15 * * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -28,10 +28,10 @@ jobs:
       - name: Run news pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          AUTO_PUBLISH: 'true'  # Set to 'false' if you want review queue
+          AUTO_PUBLISH: 'true'
         run: npm run news:generate
 
-      - name: Check for new articles
+      - name: Check for changes
         id: check-changes
         run: |
           if [[ -n $(git status --porcelain content/news/) ]]; then
@@ -40,18 +40,16 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit and push new articles
+      - name: Commit and push changes
         if: steps.check-changes.outputs.has_changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add content/news/
-          git commit -m "📰 Auto-generated daily news articles [skip ci]"
+          # Check if there are actual article changes (not just processed-urls)
+          if git diff --cached --name-only | grep -v ".processed-urls.json" | grep -q ".mdx"; then
+            git commit -m "📰 Auto-generated news articles"
+          else
+            git commit -m "📰 Update processed news URLs [skip ci]"
+          fi
           git push
-
-      - name: Trigger deployment (optional)
-        if: steps.check-changes.outputs.has_changes == 'true'
-        run: |
-          echo "New articles committed. Deployment will be triggered by your hosting provider."
-          # If using Vercel, it auto-deploys on push
-          # If you need manual trigger, add webhook here

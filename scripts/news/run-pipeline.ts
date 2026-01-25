@@ -15,11 +15,70 @@
  *   AUTO_PUBLISH - Set to "true" to auto-publish (default: false, uses review queue)
  */
 
+import fs from "fs";
+import path from "path";
 import { scrapeFeeds } from "./scrape-feeds.js";
 import { filterByRelevance, deduplicateItems } from "./score-relevance.js";
 import { generateArticles } from "./generate-article.js";
 import { writeArticle, addToReviewQueue } from "./write-article.js";
 import { CONFIG } from "./config.js";
+
+const PROCESSED_URLS_FILE = path.join(process.cwd(), "content/news/.processed-urls.json");
+
+/**
+ * Load previously processed URLs to avoid duplicates
+ */
+function loadProcessedUrls(): Set<string> {
+    try {
+        if (fs.existsSync(PROCESSED_URLS_FILE)) {
+            const data = JSON.parse(fs.readFileSync(PROCESSED_URLS_FILE, "utf-8"));
+            // Keep only URLs from last 7 days to prevent file from growing too large
+            const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+            const recentUrls = data.filter((item: { url: string; timestamp: number }) =>
+                item.timestamp > sevenDaysAgo
+            );
+            return new Set(recentUrls.map((item: { url: string }) => item.url));
+        }
+    } catch (error) {
+        console.log("No processed URLs file found, starting fresh");
+    }
+    return new Set();
+}
+
+/**
+ * Save processed URLs
+ */
+function saveProcessedUrls(urls: Set<string>, newUrls: string[]): void {
+    try {
+        // Load existing data
+        let data: Array<{ url: string; timestamp: number }> = [];
+        if (fs.existsSync(PROCESSED_URLS_FILE)) {
+            data = JSON.parse(fs.readFileSync(PROCESSED_URLS_FILE, "utf-8"));
+        }
+
+        // Add new URLs with timestamp
+        const now = Date.now();
+        for (const url of newUrls) {
+            if (!urls.has(url)) {
+                data.push({ url, timestamp: now });
+            }
+        }
+
+        // Keep only last 7 days
+        const sevenDaysAgo = now - 7 * 24 * 60 * 60 * 1000;
+        data = data.filter(item => item.timestamp > sevenDaysAgo);
+
+        // Ensure directory exists
+        const dir = path.dirname(PROCESSED_URLS_FILE);
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+        }
+
+        fs.writeFileSync(PROCESSED_URLS_FILE, JSON.stringify(data, null, 2), "utf-8");
+    } catch (error) {
+        console.error("Error saving processed URLs:", error);
+    }
+}
 
 async function runPipeline() {
     console.log("=".repeat(60));
@@ -42,6 +101,11 @@ async function runPipeline() {
     console.log(`Mode: ${autoPublish ? "Auto-publish" : "Review queue"}`);
     console.log("");
 
+    // Load previously processed URLs
+    const processedUrls = loadProcessedUrls();
+    console.log(`Tracking ${processedUrls.size} previously processed URLs`);
+    console.log("");
+
     // Step 1: Scrape RSS feeds
     console.log("STEP 1: Scraping RSS feeds...");
     console.log("-".repeat(40));
@@ -52,12 +116,21 @@ async function runPipeline() {
         return;
     }
 
+    // Filter out already processed URLs
+    const newItems = rawItems.filter(item => !processedUrls.has(item.link));
+    console.log(`New items (not previously processed): ${newItems.length}`);
+
+    if (newItems.length === 0) {
+        console.log("No new news items to process. Exiting.");
+        return;
+    }
+
     // Step 2: Score and filter for relevance
     console.log("");
     console.log("STEP 2: Scoring relevance...");
     console.log("-".repeat(40));
     const dedupedItems = deduplicateItems(
-        rawItems.map((item) => ({
+        newItems.map((item) => ({
             ...item,
             relevanceScore: 0,
             suggestedCategory: "economy" as const,
@@ -74,6 +147,8 @@ async function runPipeline() {
 
     if (relevantItems.length === 0) {
         console.log("No sufficiently relevant news items. Exiting.");
+        // Still mark all scraped URLs as processed to avoid rescanning
+        saveProcessedUrls(processedUrls, newItems.map(i => i.link));
         return;
     }
 
@@ -106,6 +181,9 @@ async function runPipeline() {
             addToReviewQueue(article, slug);
         }
     }
+
+    // Mark all processed URLs (including ones that weren't relevant enough)
+    saveProcessedUrls(processedUrls, newItems.map(i => i.link));
 
     // Summary
     console.log("");
