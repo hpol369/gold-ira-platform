@@ -105,6 +105,44 @@ export function getAugustaLinkWithTracking(context: AugustaContext = "default", 
     return getAugustaLink(context, subId);
 }
 
+// ============================================
+// CLICK TRACKING WITH TELEGRAM NOTIFICATIONS
+// ============================================
+
+/**
+ * Wrap an affiliate link with click tracking
+ * This routes through /api/track-click which:
+ * 1. Sends a Telegram notification
+ * 2. Logs the click
+ * 3. Redirects to the destination
+ *
+ * Usage: getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-hero", "augusta")
+ */
+export function getTrackedLink(
+  destinationUrl: string,
+  sourcePage: string,
+  company: string = "augusta"
+): string {
+  const params = new URLSearchParams({
+    url: destinationUrl,
+    source: sourcePage,
+    company: company,
+  });
+  return `/api/track-click?${params.toString()}`;
+}
+
+/**
+ * Get Augusta link with tracking
+ * Combines context-aware link selection with click tracking
+ */
+export function getTrackedAugustaLink(
+  context: AugustaContext = "default",
+  sourcePage: string
+): string {
+  const baseUrl = getAugustaLink(context);
+  return getTrackedLink(baseUrl, sourcePage, "augusta");
+}
+
 export const COMPANY_DETAILS = {
     augusta: {
         name: "Augusta Precious Metals",

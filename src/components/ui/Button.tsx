@@ -18,7 +18,7 @@ const buttonVariants = cva(
                 ghost: "hover:bg-accent hover:text-accent-foreground",
                 link: "text-primary underline-offset-4 hover:underline",
                 // Custom variants for Gold IRA
-                gold: "bg-secondary text-white shadow-md hover:bg-secondary-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 font-bold",
+                gold: "bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 shadow-md hover:from-amber-600 hover:to-amber-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 font-bold",
                 navy: "bg-primary text-white shadow-md hover:bg-primary-light hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 font-bold",
                 "outline-gold": "border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-semibold transition-all duration-200",
             },

@@ -3,7 +3,7 @@
 
 import { ArrowRight, Award, Phone, Shield, Star } from "lucide-react";
 import { getFeaturedCompany } from "@/data/companies";
-import { getAugustaLink, type AugustaContext } from "@/config/affiliates";
+import { getAugustaLink, getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
 import { cn } from "@/lib/utils";
 
 interface AugustaCTAProps {
@@ -11,6 +11,7 @@ interface AugustaCTAProps {
   headline?: string;
   subheadline?: string;
   linkContext?: AugustaContext; // Which Augusta landing page to use
+  trackSource?: string; // If provided, enables click tracking with Telegram notifications
   className?: string;
 }
 
@@ -19,10 +20,14 @@ export function AugustaCTA({
   headline,
   subheadline,
   linkContext = "default",
+  trackSource,
   className,
 }: AugustaCTAProps) {
   const augusta = getFeaturedCompany();
-  const affiliateLink = getAugustaLink(linkContext);
+  // Use tracked link if trackSource is provided, otherwise use direct link
+  const affiliateLink = trackSource
+    ? getTrackedAugustaLink(linkContext, trackSource)
+    : getAugustaLink(linkContext);
 
   // Sidebar variant - compact for sidebars
   if (variant === "sidebar") {
