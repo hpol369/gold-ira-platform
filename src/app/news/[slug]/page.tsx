@@ -12,7 +12,6 @@ import {
     getRelatedNews,
 } from "@/lib/news";
 import { ArrowRight, ArrowLeft, Clock, Calendar, ExternalLink, Share2 } from "lucide-react";
-import { SidebarAuditWidget } from "@/components/news/SidebarAuditWidget";
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -196,8 +195,21 @@ export default async function NewsArticlePage({ params }: Props) {
                                 </p>
                             </div>
 
-                            {/* Audit Widget (Replaces Newsletter) */}
-                            <SidebarAuditWidget />
+                            {/* Newsletter Signup */}
+                            <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-white mb-2">Daily Briefing</h3>
+                                <p className="text-sm text-slate-400 mb-4">
+                                    Get our Rich Dad perspective on financial news delivered to your inbox.
+                                </p>
+                                <input
+                                    type="email"
+                                    placeholder="Your email"
+                                    className="w-full px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder:text-slate-500 text-sm mb-3 focus:outline-none focus:border-amber-500/50"
+                                />
+                                <Button variant="gold" className="w-full" size="sm">
+                                    Subscribe
+                                </Button>
+                            </div>
                         </aside>
                     </div>
                 </Container>

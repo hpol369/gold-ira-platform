@@ -11,6 +11,7 @@ import {
   Scale,
   ArrowRight,
   Wrench,
+  AlertTriangle,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -21,6 +22,16 @@ export const metadata: Metadata = {
 
 const tools = [
   {
+    id: "401k-risk-analyzer",
+    name: "401(k) Risk Analyzer",
+    description:
+      "Discover how much of your 401(k) is exposed to stock market volatility. See your estimated risk score and potential losses in a market crash.",
+    icon: AlertTriangle,
+    href: "/tools/401k-risk-analyzer",
+    status: "available",
+    color: "red",
+  },
+  {
     id: "crash-simulator",
     name: "Market Crash Simulator",
     description:
@@ -28,7 +39,7 @@ const tools = [
     icon: TrendingDown,
     href: "/tools/crash-simulator",
     status: "available",
-    color: "red",
+    color: "amber",
   },
   {
     id: "wealth-calculator",
