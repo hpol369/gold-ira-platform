@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/resources",
     "/quiz",
+    "/scams",
     "/investigative-hub",
     "/rich-dad-strategy",
     "/scenarios",

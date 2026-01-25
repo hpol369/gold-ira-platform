@@ -66,8 +66,9 @@ export default function RootLayout({
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-800-555-0199",
-      "contactType": "customer service"
+      "url": "https://www.richdadretirement.com/get-started",
+      "contactType": "customer service",
+      "availableLanguage": "English"
     }
   };
 

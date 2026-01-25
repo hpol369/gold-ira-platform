@@ -77,6 +77,9 @@ export function Navbar() {
                                 {isLearnOpen && (
                                     <div className="absolute top-full left-0 pt-2 z-50">
                                         <div className="w-56 bg-slate-800 border border-white/10 rounded-xl shadow-xl py-2">
+                                            <Link href="/scams" className="block px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5 font-medium">
+                                                Scam Protection Center
+                                            </Link>
                                             <Link href="/academy" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
                                                 Gold IRA Academy
                                             </Link>
@@ -153,6 +156,9 @@ export function Navbar() {
                         <div className="py-2 border-b border-white/5">
                             <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide">Learn</span>
                             <div className="mt-2 flex flex-col gap-1 pl-2">
+                                <Link href="/scams" className="text-sm text-red-400 hover:text-red-300 py-1 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Scam Protection Center
+                                </Link>
                                 <Link href="/academy" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
                                     Gold IRA Academy
                                 </Link>
