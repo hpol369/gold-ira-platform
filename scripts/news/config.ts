@@ -76,13 +76,13 @@ export const CONFIG = {
         reviewQueue: "content/news/.review-queue.json",
     },
 
-    // Category to related guides mapping
+    // Category to related guides mapping (only use existing pages!)
     categoryGuides: {
-        fed: ["/gold-ira", "/learn/inflation-protection", "/why-gold/inflation-protection"],
-        gold: ["/gold-ira", "/why-gold", "/best-gold-ira-companies"],
-        economy: ["/learn/stock-market-crash-protection", "/quiz", "/scenarios"],
+        fed: ["/guide/gold-ira-guide", "/why-gold/inflation-protection", "/best-gold-ira-companies"],
+        gold: ["/guide/gold-ira-guide", "/why-gold", "/best-gold-ira-companies"],
+        economy: ["/guide/protect-401k-from-crash", "/quiz", "/scenarios"],
         retirement: ["/rollover", "/self-directed-ira", "/solo-401k"],
         crypto: ["/crypto-ira", "/reviews/itrustcapital", "/best-crypto-ira-companies"],
-        weekly: ["/gold-ira", "/quiz", "/best-gold-ira-companies"],
+        weekly: ["/guide/gold-ira-guide", "/quiz", "/best-gold-ira-companies"],
     },
 };

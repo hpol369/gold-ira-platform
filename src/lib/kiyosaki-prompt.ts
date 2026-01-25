@@ -110,19 +110,19 @@ function getCategoryGuidance(category: NewsCategory): string {
 - Focus on how Fed policy affects purchasing power
 - Explain interest rates in terms of savings erosion
 - Connect to money printing and dollar devaluation
-- Link to: /gold-ira, /learn/inflation-protection`,
+- Link to: /guide/gold-ira-guide, /why-gold/inflation-protection`,
 
         gold: `## CATEGORY GUIDANCE: Gold & Precious Metals
 - Celebrate gold's role as "real money"
 - Compare to fiat currency performance
 - Discuss central bank gold buying
-- Link to: /gold-ira, /why-gold, /best-gold-ira-companies`,
+- Link to: /guide/gold-ira-guide, /why-gold, /best-gold-ira-companies`,
 
         economy: `## CATEGORY GUIDANCE: Economy
 - Question official statistics (real vs reported inflation)
 - Highlight wealth inequality implications
 - Connect economic weakness to retirement risk
-- Link to: /learn/stock-market-crash-protection, /quiz`,
+- Link to: /guide/protect-401k-from-crash, /quiz`,
 
         retirement: `## CATEGORY GUIDANCE: Retirement
 - Emphasize control over your own retirement
@@ -147,16 +147,16 @@ function getCategoryGuidance(category: NewsCategory): string {
 }
 
 /**
- * Get related guides based on category
+ * Get related guides based on category (only use existing pages!)
  */
 export function getRelatedGuidesForCategory(category: NewsCategory): string[] {
     const guides: Record<NewsCategory, string[]> = {
-        fed: ["/gold-ira", "/learn/inflation-protection", "/why-gold/inflation-protection"],
-        gold: ["/gold-ira", "/why-gold", "/best-gold-ira-companies", "/compare/gold-vs-silver-ira"],
-        economy: ["/learn/stock-market-crash-protection", "/quiz", "/scenarios"],
-        retirement: ["/rollover", "/self-directed-ira", "/solo-401k", "/learn/what-to-do-with-old-401k"],
+        fed: ["/guide/gold-ira-guide", "/why-gold/inflation-protection", "/best-gold-ira-companies"],
+        gold: ["/guide/gold-ira-guide", "/why-gold", "/best-gold-ira-companies"],
+        economy: ["/guide/protect-401k-from-crash", "/quiz", "/scenarios"],
+        retirement: ["/rollover", "/self-directed-ira", "/solo-401k"],
         crypto: ["/crypto-ira", "/reviews/itrustcapital", "/best-crypto-ira-companies"],
-        weekly: ["/gold-ira", "/quiz", "/best-gold-ira-companies"],
+        weekly: ["/guide/gold-ira-guide", "/quiz", "/best-gold-ira-companies"],
     };
 
     return guides[category];
