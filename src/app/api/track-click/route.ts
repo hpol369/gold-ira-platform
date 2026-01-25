@@ -3,10 +3,6 @@
 
 import { NextRequest, NextResponse } from "next/server";
 
-// Telegram config - same as notifications.ts
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-
 async function sendClickNotification(data: {
   company: string;
   source: string;
@@ -14,6 +10,10 @@ async function sendClickNotification(data: {
   timestamp: string;
   referer: string;
 }) {
+  // Read env vars inside function (required for Vercel serverless)
+  const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+  const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
     console.log("[CLICK] Telegram not configured");
     return;
