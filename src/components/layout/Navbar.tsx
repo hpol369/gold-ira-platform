@@ -70,28 +70,30 @@ export function Navbar() {
                                 onMouseEnter={() => setIsLearnOpen(true)}
                                 onMouseLeave={() => setIsLearnOpen(false)}
                             >
-                                <button className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                                <button className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors py-2">
                                     Learn
                                     <ChevronDown className={`h-4 w-4 transition-transform ${isLearnOpen ? 'rotate-180' : ''}`} />
                                 </button>
                                 {isLearnOpen && (
-                                    <div className="absolute top-full left-0 mt-2 w-56 bg-slate-800 border border-white/10 rounded-xl shadow-xl py-2 z-50">
-                                        <Link href="/academy" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                            Gold IRA Academy
-                                        </Link>
-                                        <Link href="/faq" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                            FAQ (60+ Questions)
-                                        </Link>
-                                        <Link href="/glossary" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                            Glossary of Terms
-                                        </Link>
-                                        <div className="border-t border-white/10 my-2"></div>
-                                        <Link href="/best-gold-ira-for" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                            Best For Your Situation
-                                        </Link>
-                                        <Link href="/reviews" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                            Company Reviews
-                                        </Link>
+                                    <div className="absolute top-full left-0 pt-2 z-50">
+                                        <div className="w-56 bg-slate-800 border border-white/10 rounded-xl shadow-xl py-2">
+                                            <Link href="/academy" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Gold IRA Academy
+                                            </Link>
+                                            <Link href="/faq" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                FAQ (60+ Questions)
+                                            </Link>
+                                            <Link href="/glossary" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Glossary of Terms
+                                            </Link>
+                                            <div className="border-t border-white/10 my-2"></div>
+                                            <Link href="/best-gold-ira-for" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Best For Your Situation
+                                            </Link>
+                                            <Link href="/reviews" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Company Reviews
+                                            </Link>
+                                        </div>
                                     </div>
                                 )}
                             </div>
