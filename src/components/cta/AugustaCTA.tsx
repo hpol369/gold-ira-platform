@@ -1,10 +1,13 @@
 // src/components/cta/AugustaCTA.tsx
 // Augusta Precious Metals CTA component for use across the site
 
+"use client";
+
 import { ArrowRight, Award, Phone, Shield, Star } from "lucide-react";
 import { getFeaturedCompany } from "@/data/companies";
 import { getAugustaLink, getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
 import { cn } from "@/lib/utils";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface AugustaCTAProps {
   variant?: "default" | "sidebar" | "inline" | "footer" | "banner";
@@ -28,6 +31,15 @@ export function AugustaCTA({
   const affiliateLink = trackSource
     ? getTrackedAugustaLink(linkContext, trackSource)
     : getAugustaLink(linkContext);
+
+  // Fire GA4 event on click
+  const handleClick = () => {
+    const linkType = variant === "sidebar" ? "sidebar"
+      : variant === "inline" ? "inline"
+      : variant === "banner" ? "cta"
+      : "cta";
+    trackAffiliateClick("augusta", trackSource || "direct", linkType);
+  };
 
   // Sidebar variant - compact for sidebars
   if (variant === "sidebar") {
@@ -69,6 +81,7 @@ export function AugustaCTA({
           href={affiliateLink}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleClick}
           className="block w-full text-center py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm"
         >
           Free Consultation
@@ -98,6 +111,7 @@ export function AugustaCTA({
             href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleClick}
             className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm whitespace-nowrap"
           >
             Learn More
@@ -129,6 +143,7 @@ export function AugustaCTA({
             href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleClick}
             className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all text-sm"
           >
             Get Free Guide
@@ -174,6 +189,7 @@ export function AugustaCTA({
           href={affiliateLink}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleClick}
           className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
         >
           Get Your Free Consultation
@@ -219,6 +235,7 @@ export function AugustaCTA({
             href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleClick}
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
           >
             Get Free Consultation
