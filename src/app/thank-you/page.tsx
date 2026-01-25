@@ -86,7 +86,7 @@ export default function ThankYouPage() {
                 Get started learning about Gold IRAs right now with our free digital guide.
               </p>
               <Button variant="gold" size="xl" asChild>
-                <Link href="/guide/gold-ira-beginners-guide">
+                <Link href="/guide/gold-ira-guide">
                   Read the Beginner&apos;s Guide
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>

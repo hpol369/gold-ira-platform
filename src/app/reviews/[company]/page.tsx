@@ -302,7 +302,7 @@ export default async function CompanyReviewPage({ params }: Props) {
                       <Link href="/learn/gold-ira-scams" className="block text-slate-400 hover:text-amber-500">
                         Gold IRA Scams to Avoid →
                       </Link>
-                      <Link href="/guide/how-to-open-gold-ira" className="block text-slate-400 hover:text-amber-500">
+                      <Link href="/guide/gold-ira-guide" className="block text-slate-400 hover:text-amber-500">
                         How to Open a Gold IRA →
                       </Link>
                     </div>

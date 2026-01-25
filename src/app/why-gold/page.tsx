@@ -136,7 +136,7 @@ export default function WhyGoldPage() {
                     your portfolio&apos;s volatility and protect against devastating losses.
                   </p>
                   <Link
-                    href="/why-gold/diversification"
+                    href="/learn/gold-ira-benefits#diversification"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
                     Learn about diversification
@@ -162,7 +162,7 @@ export default function WhyGoldPage() {
                     provides insurance against currency devaluation—it can&apos;t be printed like paper money.
                   </p>
                   <Link
-                    href="/why-gold/dollar-protection"
+                    href="/learn/gold-ira-benefits#inflation-hedge"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
                     Learn about currency protection
@@ -214,7 +214,7 @@ export default function WhyGoldPage() {
                     preserved wealth across civilizations, making it ideal for long-term retirement planning.
                   </p>
                   <Link
-                    href="/why-gold/wealth-preservation"
+                    href="/guide/wealth-preservation-strategies"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
                     Learn about wealth preservation
