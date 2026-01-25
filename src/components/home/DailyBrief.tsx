@@ -103,6 +103,7 @@ export function DailyBrief() {
         if (!res.ok) throw new Error("Failed to fetch");
         const briefData = await res.json();
         setData(briefData);
+        setError(null);
       } catch {
         setError("Unable to load market data");
       } finally {
@@ -111,6 +112,10 @@ export function DailyBrief() {
     }
 
     fetchBrief();
+
+    // Auto-refresh every 5 minutes
+    const interval = setInterval(fetchBrief, 5 * 60 * 1000);
+    return () => clearInterval(interval);
   }, []);
 
   const sentimentColors = {
@@ -179,7 +184,7 @@ export function DailyBrief() {
                   ))}
                 </div>
                 <p className="text-slate-500 text-xs mt-4">
-                  Prices updated hourly. Last update:{" "}
+                  Live prices • Auto-updates every 5 min. Last update:{" "}
                   {new Date(data.generatedAt).toLocaleTimeString()}
                 </p>
               </div>
