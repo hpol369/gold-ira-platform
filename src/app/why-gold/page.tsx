@@ -188,7 +188,7 @@ export default function WhyGoldPage() {
                     asset that holds value when other investments falter.
                   </p>
                   <Link
-                    href="/why-gold/crisis-protection"
+                    href="/learn/gold-ira-benefits#crisis-protection"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
                     Learn about crisis protection
