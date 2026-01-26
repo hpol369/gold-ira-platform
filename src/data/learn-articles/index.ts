@@ -34,6 +34,11 @@ import { influencerArticles } from './influencer-cluster';
 import { highVolumeArticles } from './high-volume-cluster';
 import { seniorLivingArticles } from './senior-living-cluster';
 import { influencerExpansionArticles } from './influencer-expansion-cluster';
+import { federalExpansionArticles } from './federal-expansion-cluster';
+import { wepGpoExpansionArticles } from './wep-gpo-expansion-cluster';
+import { statePensionsExpansionArticles } from './state-pensions-expansion-cluster';
+import { influencerFinalArticles } from './influencer-final-cluster';
+import { company401kExpansionArticles } from './company-401k-expansion-cluster';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -67,6 +72,11 @@ export const learnArticles: LearnArticleRegistry = {
   ...highVolumeArticles,
   ...seniorLivingArticles,
   ...influencerExpansionArticles,
+  ...federalExpansionArticles,
+  ...wepGpoExpansionArticles,
+  ...statePensionsExpansionArticles,
+  ...influencerFinalArticles,
+  ...company401kExpansionArticles,
 };
 
 // ============================================

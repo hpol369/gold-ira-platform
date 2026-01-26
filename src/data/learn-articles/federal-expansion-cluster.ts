@@ -1,0 +1,516 @@
+// src/data/learn-articles/federal-expansion-cluster.ts
+// Federal Employee Retirement Expansion Articles
+// Phase 10 SEO Expansion - Additional federal retirement content
+
+import { LearnArticle, LearnArticleRegistry } from '@/types/learn-article';
+
+export const federalExpansionArticles: LearnArticleRegistry = {
+  // ===================================
+  // TSP VS GOLD IRA - Comparison
+  // ===================================
+
+  'tsp-vs-gold-ira': {
+    slug: 'tsp-vs-gold-ira',
+    title: 'TSP vs Gold IRA: Which Is Better for Federal Employees?',
+    subtitle: 'Compare the Thrift Savings Plan with a Gold IRA. Learn the pros, cons, and how federal employees can diversify their retirement portfolio.',
+    metaTitle: 'TSP vs Gold IRA | Federal Employee Comparison Guide (2026)',
+    metaDescription: 'TSP vs Gold IRA comparison for federal employees. Learn which is better for your retirement, how to diversify, and when to roll TSP to a Gold IRA.',
+    keywords: ['tsp vs gold ira', 'thrift savings plan vs gold ira', 'tsp gold ira comparison', 'federal employee gold ira', 'tsp rollover to gold'],
+    targetKeyword: 'tsp vs gold ira',
+    volume: 200,
+    difficulty: 2,
+    cpc: 3.00,
+    category: 'protection',
+    threatLevel: 'info',
+    takeaways: [
+      'TSP offers low fees but only 5 fund options',
+      'Gold IRA provides physical precious metals TSP cannot',
+      'TSP can be rolled to Gold IRA after separation',
+      'Diversification reduces portfolio risk',
+      'Gold historically performs well during market downturns',
+    ],
+    tocItems: [
+      { id: 'overview', label: 'TSP vs Gold IRA Overview' },
+      { id: 'tsp-pros-cons', label: 'TSP Pros and Cons' },
+      { id: 'gold-ira-pros-cons', label: 'Gold IRA Pros and Cons' },
+      { id: 'comparison', label: 'Side-by-Side Comparison' },
+      { id: 'rollover', label: 'TSP to Gold IRA Rollover' },
+      { id: 'gold-bridge', label: 'Best Strategy for Federal Employees' },
+    ],
+    sections: [
+      {
+        id: 'overview',
+        icon: 'Scale',
+        iconColor: 'blue',
+        title: 'TSP vs Gold IRA: Understanding Your Options',
+        content: 'Federal employees have access to the Thrift Savings Plan, one of the best retirement plans available. But is it enough? A Gold IRA offers a different approach to retirement security.',
+        bullets: [
+          '**TSP**: Government-sponsored 401(k) with very low fees',
+          '**Gold IRA**: Self-directed IRA holding physical precious metals',
+          'Both offer tax-advantaged retirement savings',
+          'TSP is limited to 5 core funds; Gold IRA offers tangible assets',
+          'Many federal employees use both for diversification',
+        ],
+        callout: {
+          type: 'info',
+          title: 'Not Either/Or',
+          content: 'You don\'t have to choose one or the other. Many federal employees keep money in TSP and also have a Gold IRA for diversification.',
+        },
+      },
+      {
+        id: 'tsp-pros-cons',
+        icon: 'Building',
+        iconColor: 'green',
+        title: 'TSP Advantages and Limitations',
+        content: 'The Thrift Savings Plan is an excellent retirement vehicle, but it has limitations.',
+        bullets: [
+          '**Pro**: Extremely low expense ratios (0.048% in 2024)',
+          '**Pro**: Government matching up to 5% of salary',
+          '**Pro**: Simple fund choices reduce decision paralysis',
+          '**Pro**: Roth TSP option for tax-free withdrawals',
+          '**Con**: Only 5 core funds plus Lifecycle funds',
+          '**Con**: No precious metals or alternative investments',
+          '**Con**: Limited withdrawal flexibility while employed',
+        ],
+        callout: {
+          type: 'tip',
+          title: 'Maximize the Match',
+          content: 'Always contribute at least 5% to TSP to capture the full government match. This is guaranteed 100% return on that portion.',
+        },
+      },
+      {
+        id: 'gold-ira-pros-cons',
+        icon: 'Coins',
+        iconColor: 'amber',
+        title: 'Gold IRA Advantages and Limitations',
+        content: 'A Gold IRA offers benefits TSP cannot provide, but comes with different considerations.',
+        bullets: [
+          '**Pro**: Physical gold provides inflation protection',
+          '**Pro**: Gold often rises when stocks fall',
+          '**Pro**: Tangible asset you actually own',
+          '**Pro**: No counterparty risk with physical metals',
+          '**Pro**: Portfolio diversification beyond paper assets',
+          '**Con**: Higher fees than TSP',
+          '**Con**: No government matching contributions',
+          '**Con**: Requires approved custodian and depository',
+        ],
+        callout: {
+          type: 'info',
+          title: 'Physical Ownership',
+          content: 'Unlike TSP funds or gold ETFs, a Gold IRA holds actual physical gold coins or bars in your name at an approved depository.',
+        },
+      },
+      {
+        id: 'comparison',
+        icon: 'GitCompare',
+        iconColor: 'purple',
+        title: 'TSP vs Gold IRA: Side-by-Side Comparison',
+        content: 'How do TSP and Gold IRA compare across key factors?',
+        table: {
+          headers: ['Factor', 'TSP', 'Gold IRA'],
+          rows: [
+            ['Investment Options', '5 funds + Lifecycle', 'Gold, silver, platinum, palladium'],
+            ['Annual Fees', '0.048%', '0.5-1% (storage + admin)'],
+            ['Employer Match', 'Up to 5%', 'None'],
+            ['Inflation Protection', 'Limited (I Fund)', 'Strong (physical metals)'],
+            ['Market Correlation', 'High (stocks/bonds)', 'Low (inverse to stocks)'],
+            ['Tax Treatment', 'Traditional or Roth', 'Traditional or Roth'],
+            ['Contribution Limit', '$23,000 (2024)', 'Same IRA limits'],
+            ['Liquidity', 'High', 'Moderate'],
+          ],
+        },
+      },
+      {
+        id: 'rollover',
+        icon: 'Repeat',
+        iconColor: 'green',
+        title: 'Rolling TSP to Gold IRA',
+        content: 'Federal employees can roll TSP funds to a Gold IRA after separating from service or at age 59½.',
+        numberedList: [
+          'Separate from federal service (or reach age 59½ while employed)',
+          'Choose a reputable Gold IRA custodian',
+          'Open your Gold IRA account',
+          'Request direct trustee-to-trustee transfer from TSP',
+          'Select your precious metals allocation',
+          'Metals are purchased and stored at approved depository',
+        ],
+        callout: {
+          type: 'warning',
+          title: 'Direct Transfer Required',
+          content: 'Always use a direct trustee-to-trustee transfer. Taking a distribution and redepositing yourself triggers taxes and penalties.',
+        },
+      },
+    ],
+    goldBridge: {
+      title: 'Best Strategy for Federal Employees',
+      content: 'The smartest approach combines TSP\'s low fees with Gold IRA\'s diversification benefits.',
+      bullets: [
+        'Continue contributing to TSP to capture government match',
+        'After separation, consider partial rollover to Gold IRA',
+        'Gold provides hedge against market volatility TSP lacks',
+        '10-20% precious metals allocation is common recommendation',
+        'Augusta Precious Metals specializes in TSP-to-Gold rollovers',
+        'Free consultation helps determine right allocation for you',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Can I roll my TSP to a Gold IRA while still employed?',
+        answer: 'Yes, but only after age 59½. Before that, TSP funds are generally locked in while you\'re employed. You can make in-service withdrawals at 59½ and roll those to a Gold IRA.',
+      },
+      {
+        question: 'How much of my TSP should I put in a Gold IRA?',
+        answer: 'Financial experts typically recommend 5-20% of retirement assets in precious metals. The right percentage depends on your age, risk tolerance, and overall portfolio.',
+      },
+      {
+        question: 'Is a Gold IRA riskier than TSP?',
+        answer: 'Different, not necessarily riskier. TSP faces market risk; gold faces price volatility but has maintained value for thousands of years. Diversification across both reduces overall portfolio risk.',
+      },
+      {
+        question: 'Will I pay taxes on a TSP to Gold IRA rollover?',
+        answer: 'Not if done correctly as a direct trustee-to-trustee transfer. Traditional TSP rolls to Traditional Gold IRA tax-free. Rolling Traditional TSP to Roth Gold IRA would trigger taxes.',
+      },
+    ],
+    relatedArticles: ['tsp-withdrawal-strategies', 'fers-retirement-calculator', 'federal-employee-retirement-planning'],
+    relatedGuides: ['/rollover', '/guide/gold-ira-guide'],
+  },
+
+  // ===================================
+  // FEHB IN RETIREMENT GUIDE
+  // ===================================
+
+  'fehb-retirement-guide': {
+    slug: 'fehb-retirement-guide',
+    title: 'FEHB in Retirement: Complete Guide to Federal Health Benefits',
+    subtitle: 'Everything you need to know about keeping Federal Employees Health Benefits (FEHB) in retirement. Eligibility, costs, Medicare coordination, and more.',
+    metaTitle: 'FEHB in Retirement Guide | Federal Health Benefits Explained (2026)',
+    metaDescription: 'Complete FEHB retirement guide. Learn eligibility rules, costs, Medicare coordination, and how to maximize your federal health benefits in retirement.',
+    keywords: ['fehb in retirement', 'fehb retirement guide', 'federal health benefits retirement', 'keeping fehb after retirement', 'fehb medicare coordination'],
+    targetKeyword: 'fehb retirement guide',
+    volume: 500,
+    difficulty: 4,
+    cpc: 2.50,
+    category: 'life-events',
+    threatLevel: 'info',
+    takeaways: [
+      'Must be enrolled in FEHB for 5 continuous years before retirement',
+      'Government continues paying approximately 72% of premium',
+      'FEHB coordinates with Medicare at age 65',
+      'Most retirees should enroll in Medicare Parts A and B',
+      'Can change FEHB plans annually during Open Season',
+    ],
+    tocItems: [
+      { id: 'overview', label: 'FEHB Overview' },
+      { id: 'eligibility', label: 'Eligibility Requirements' },
+      { id: 'costs', label: 'Costs in Retirement' },
+      { id: 'medicare', label: 'FEHB and Medicare' },
+      { id: 'planning', label: 'Planning Tips' },
+      { id: 'gold-bridge', label: 'Protecting Your Retirement' },
+    ],
+    sections: [
+      {
+        id: 'overview',
+        icon: 'Heart',
+        iconColor: 'red',
+        title: 'Understanding FEHB in Retirement',
+        content: 'Federal Employees Health Benefits (FEHB) is one of the most valuable benefits federal employees receive. Unlike many private sector retirees, federal retirees can keep their health insurance.',
+        bullets: [
+          'FEHB provides comprehensive health coverage',
+          'Over 200 plan options nationwide',
+          'Coverage continues for your entire retirement',
+          'Spouse and dependent children can be covered',
+          'No pre-existing condition exclusions',
+          'Government subsidy continues in retirement',
+        ],
+        callout: {
+          type: 'info',
+          title: 'Valuable Benefit',
+          content: 'FEHB in retirement is worth thousands of dollars annually. Private sector retirees often pay full price for individual health insurance until Medicare.',
+        },
+      },
+      {
+        id: 'eligibility',
+        icon: 'CheckCircle',
+        iconColor: 'green',
+        title: 'FEHB Retirement Eligibility',
+        content: 'To continue FEHB into retirement, you must meet the 5-year enrollment requirement.',
+        bullets: [
+          '**The 5-Year Rule**: Enrolled in FEHB for 5 continuous years before retirement',
+          'Coverage must be continuous - no gaps allowed',
+          'Part-time and full-time service both count',
+          'Military time counts if you purchased service credit',
+          'Applies to immediate, early, and disability retirement',
+        ],
+        callout: {
+          type: 'warning',
+          title: 'Critical Requirement',
+          content: 'If you drop FEHB coverage at any point in your last 5 years, you lose eligibility to continue it in retirement. This cannot be undone.',
+        },
+      },
+      {
+        id: 'costs',
+        icon: 'Receipt',
+        iconColor: 'amber',
+        title: 'FEHB Costs for Retirees',
+        content: 'Federal retirees pay the same percentage of premiums as active employees.',
+        bullets: [
+          'Government pays approximately 72% of weighted average premium',
+          'Your share is typically 28% of total premium',
+          'Premiums deducted from your annuity',
+          'Pre-tax deduction reduces taxable income',
+          'Same plan options available as active employees',
+        ],
+        table: {
+          headers: ['Coverage Type', 'Typical Monthly Cost (Retiree Share)'],
+          rows: [
+            ['Self Only', '$200 - $400'],
+            ['Self Plus One', '$400 - $700'],
+            ['Self and Family', '$500 - $900'],
+          ],
+          caption: 'Costs vary by plan. Check fehb.opm.gov for current premiums.',
+        },
+      },
+      {
+        id: 'medicare',
+        icon: 'Shield',
+        iconColor: 'blue',
+        title: 'FEHB and Medicare Coordination',
+        content: 'At age 65, you become eligible for Medicare. Understanding how FEHB and Medicare work together is crucial.',
+        bullets: [
+          '**Medicare Part A**: Free if you have 40 work credits. Always enroll.',
+          '**Medicare Part B**: Costs ~$175/month. Most retirees should enroll.',
+          '**Coordination**: Medicare pays first, FEHB pays second',
+          '**Premium savings**: Some FEHB plans reduce premiums with Medicare',
+          '**Part D**: Usually not needed - FEHB drug coverage typically better',
+        ],
+        callout: {
+          type: 'tip',
+          title: 'Enroll in Medicare Part B',
+          content: 'When Medicare is primary, your FEHB plan often covers more and some plans reduce your premium. The Part B cost is usually worth it.',
+        },
+      },
+      {
+        id: 'planning',
+        icon: 'Calendar',
+        iconColor: 'purple',
+        title: 'FEHB Retirement Planning Tips',
+        content: 'Make smart decisions to maximize your federal health benefits.',
+        numberedList: [
+          'Verify 5-year continuous enrollment before retiring',
+          'Review all FEHB plans during Open Season each year',
+          'Consider switching to lower-premium plan at 65 when Medicare is primary',
+          'Enroll in Medicare Part A at 65 (free)',
+          'Enroll in Medicare Part B at 65 (usually recommended)',
+          'Skip Medicare Part D if your FEHB drug coverage is comprehensive',
+          'Budget for lifetime health insurance costs in retirement planning',
+        ],
+      },
+    ],
+    goldBridge: {
+      title: 'Protecting Your Retirement Beyond FEHB',
+      content: 'FEHB is excellent, but healthcare costs can still strain your retirement budget. Strong financial planning ensures you can always afford quality care.',
+      bullets: [
+        'Healthcare costs typically rise faster than inflation',
+        'FEHB premiums increase annually',
+        'Out-of-pocket costs add up over time',
+        'Diversified savings help cover rising costs',
+        'Gold IRA provides inflation protection for healthcare expenses',
+        'Augusta Precious Metals helps federal employees diversify TSP',
+      ],
+    },
+    faqs: [
+      {
+        question: 'What happens to FEHB if I drop coverage after retirement?',
+        answer: 'If you drop FEHB in retirement, you generally cannot re-enroll. The only exception is if you acquire coverage through a spouse and later lose it through qualifying life event.',
+      },
+      {
+        question: 'Can my spouse keep FEHB if I die?',
+        answer: 'Yes, if your spouse was covered under your FEHB at the time of death and you elected a survivor annuity, your spouse can continue FEHB coverage.',
+      },
+      {
+        question: 'Does FEHB cover long-term care?',
+        answer: 'No, FEHB does not cover long-term care like nursing homes or assisted living. You need separate long-term care insurance or plan to self-fund these costs.',
+      },
+      {
+        question: 'Can I keep FEHB if I retire early?',
+        answer: 'Yes, as long as you meet the 5-year continuous enrollment rule. FEHB coverage continues regardless of your age at retirement.',
+      },
+      {
+        question: 'When should I switch FEHB plans?',
+        answer: 'Review plans during Open Season (November-December) each year. Consider switching when you turn 65 and have Medicare, as lower-premium plans may provide equivalent coverage.',
+      },
+    ],
+    relatedArticles: ['fers-retirement-calculator', 'federal-employee-retirement-planning', 'fehb-retirement'],
+    relatedGuides: ['/rollover', '/guide/gold-ira-guide'],
+  },
+
+  // ===================================
+  // FERS SUPPLEMENT EXPLAINED
+  // ===================================
+
+  'fers-supplement-explained': {
+    slug: 'fers-supplement-explained',
+    title: 'FERS Supplement Explained: Your Social Security Bridge',
+    subtitle: 'Understand the FERS Special Retirement Supplement - the monthly payment that bridges the gap between federal retirement and Social Security.',
+    metaTitle: 'FERS Supplement Explained | Federal Retirement Bridge (2026)',
+    metaDescription: 'FERS Supplement explained simply. Learn who qualifies, how it\'s calculated, when it ends, and how this Social Security bridge works for federal retirees.',
+    keywords: ['fers supplement explained', 'fers special retirement supplement', 'fers supplement', 'federal retirement supplement', 'fers srs explained'],
+    targetKeyword: 'fers supplement explained',
+    volume: 800,
+    difficulty: 2,
+    cpc: 1.40,
+    category: 'life-events',
+    threatLevel: 'info',
+    takeaways: [
+      'FERS Supplement bridges gap between early retirement and Social Security at 62',
+      'Only immediate retirees (MRA+30 or 60+20) qualify',
+      'Approximates Social Security benefit earned during federal service',
+      'Ends at age 62 regardless of when you claim Social Security',
+      'Subject to earnings test if you work after retiring',
+    ],
+    tocItems: [
+      { id: 'overview', label: 'What Is the FERS Supplement?' },
+      { id: 'eligibility', label: 'Who Qualifies?' },
+      { id: 'calculation', label: 'How It\'s Calculated' },
+      { id: 'earnings-test', label: 'The Earnings Test' },
+      { id: 'planning', label: 'Planning Around the Supplement' },
+      { id: 'gold-bridge', label: 'Beyond the Supplement' },
+    ],
+    sections: [
+      {
+        id: 'overview',
+        icon: 'Bridge',
+        iconColor: 'blue',
+        title: 'What Is the FERS Supplement?',
+        content: 'The FERS Special Retirement Supplement (SRS) is a monthly benefit for federal employees who retire before age 62 - before they can collect Social Security.',
+        bullets: [
+          'Paid monthly along with your FERS annuity',
+          'Designed to approximate your Social Security benefit',
+          'Only covers the portion of SS earned during federal service',
+          'Provides income until you reach Social Security eligibility',
+          'Part of the three-legged FERS stool (pension, SS, TSP)',
+        ],
+        callout: {
+          type: 'info',
+          title: 'Why It Exists',
+          content: 'FERS was designed around receiving Social Security at 62. The Supplement ensures early retirees still have three income sources until they can actually claim SS.',
+        },
+      },
+      {
+        id: 'eligibility',
+        icon: 'CheckCircle',
+        iconColor: 'green',
+        title: 'Who Qualifies for the FERS Supplement?',
+        content: 'Not all FERS retirees receive the supplement. Your eligibility depends on how you retire.',
+        table: {
+          headers: ['Retirement Type', 'Eligible for Supplement?'],
+          rows: [
+            ['MRA + 30 years of service', 'Yes'],
+            ['Age 60 + 20 years of service', 'Yes'],
+            ['Age 62 + 5 years', 'No (already SS eligible)'],
+            ['MRA + 10 years (reduced)', 'No'],
+            ['Disability retirement', 'No'],
+            ['Deferred retirement', 'No'],
+            ['VERA with 20+ years', 'Yes'],
+          ],
+        },
+        callout: {
+          type: 'warning',
+          title: 'MRA+10 Does Not Qualify',
+          content: 'If you retire under MRA+10 (reduced retirement), you do NOT receive the FERS Supplement. Only unreduced immediate retirees qualify.',
+        },
+      },
+      {
+        id: 'calculation',
+        icon: 'Calculator',
+        iconColor: 'amber',
+        title: 'How the FERS Supplement Is Calculated',
+        content: 'The supplement approximates what you would receive from Social Security at age 62, prorated for your federal service.',
+        bullets: [
+          '**Basic Formula**: SS benefit at 62 x (FERS years / 40)',
+          'Uses your estimated Social Security benefit at exactly age 62',
+          'Only your federal service years count in the calculation',
+          '40 years represents a "full career" for this calculation',
+          'OPM calculates this based on Social Security Administration data',
+        ],
+        callout: {
+          type: 'example',
+          title: 'Calculation Example',
+          content: 'Your estimated SS at 62 is $2,400/month. You have 25 years of FERS service. Supplement = $2,400 x (25/40) = $1,500/month until age 62.',
+        },
+      },
+      {
+        id: 'earnings-test',
+        icon: 'AlertTriangle',
+        iconColor: 'red',
+        title: 'The Earnings Test',
+        content: 'If you work after retiring but before 62, your FERS Supplement may be reduced based on your earnings.',
+        bullets: [
+          'Uses same earnings test as Social Security',
+          '2024 exempt amount: $22,320 per year',
+          'Supplement reduced $1 for every $2 earned above the limit',
+          'Only earned income counts (wages, self-employment)',
+          'Investment income, pensions, and annuities do not count',
+          'Test applies only until you turn 62',
+        ],
+        callout: {
+          type: 'warning',
+          title: 'Plan Your Post-Retirement Work',
+          content: 'If you plan to work after retiring, calculate how much you can earn before your supplement is reduced. Staying under the limit preserves your full supplement.',
+        },
+      },
+      {
+        id: 'planning',
+        icon: 'Calendar',
+        iconColor: 'purple',
+        title: 'Planning Around the FERS Supplement',
+        content: 'Smart planning helps you maximize this valuable benefit.',
+        numberedList: [
+          'Get your Social Security estimate from ssa.gov',
+          'Calculate your approximate supplement before retiring',
+          'Factor supplement into your early retirement budget',
+          'Plan any post-retirement work around the earnings limit',
+          'Remember: supplement ends at 62 regardless of SS claiming',
+          'Decide when to claim Social Security (62, full retirement age, or 70)',
+          'The supplement does NOT receive COLA - budget for inflation',
+        ],
+      },
+    ],
+    goldBridge: {
+      title: 'Planning Beyond the Supplement',
+      content: 'The FERS Supplement is temporary - it ends at 62. Strong financial planning ensures smooth transition and continued retirement security.',
+      bullets: [
+        'Supplement ends at 62 whether or not you claim SS',
+        'No COLA on supplement - purchasing power erodes',
+        'TSP and other savings provide flexibility',
+        'Consider partial TSP rollover to Gold IRA',
+        'Gold provides inflation protection supplement lacks',
+        'Augusta Precious Metals helps with TSP-to-Gold rollovers',
+      ],
+    },
+    faqs: [
+      {
+        question: 'Does the FERS Supplement receive cost-of-living adjustments?',
+        answer: 'No, the FERS Supplement does not receive COLA. It stays the same amount from when you retire until it ends at age 62.',
+      },
+      {
+        question: 'What happens to my supplement at age 62?',
+        answer: 'The FERS Supplement automatically stops at age 62. You then need to decide when to claim Social Security (62, full retirement age, or 70). Waiting to claim SS increases your monthly benefit.',
+      },
+      {
+        question: 'Can I get the supplement if I have a private sector work history?',
+        answer: 'Your private sector work contributes to your overall Social Security estimate, but only your federal service years factor into the supplement calculation formula.',
+      },
+      {
+        question: 'Is the FERS Supplement taxable?',
+        answer: 'Yes, the FERS Supplement is taxable income, just like your FERS annuity. Federal and state income taxes apply.',
+      },
+      {
+        question: 'What if I retire at 61? Do I get the supplement for only one year?',
+        answer: 'Yes, you would receive the supplement until you turn 62. If you retire at 61, you get approximately one year of supplement payments before it ends.',
+      },
+    ],
+    relatedArticles: ['fers-supplement-calculator', 'fers-retirement-calculator', 'federal-employee-retirement-planning'],
+    relatedGuides: ['/rollover', '/guide/gold-ira-guide'],
+  },
+};
