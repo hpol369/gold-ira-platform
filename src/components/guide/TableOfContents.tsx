@@ -10,9 +10,10 @@ interface TOCItem {
 
 interface TableOfContentsProps {
     items: TOCItem[];
+    className?: string;
 }
 
-export function TableOfContents({ items }: TableOfContentsProps) {
+export function TableOfContents({ items, className }: TableOfContentsProps) {
     const [activeId, setActiveId] = useState<string>("");
 
     useEffect(() => {
@@ -36,7 +37,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
     }, [items]);
 
     return (
-        <nav className="hidden lg:block sticky top-24 self-start w-64 p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+        <nav className={cn("hidden lg:block sticky top-24 self-start w-64 p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10", className)}>
             <h4 className="font-serif font-bold text-white mb-4 uppercase tracking-wider text-sm">
                 On This Page
             </h4>

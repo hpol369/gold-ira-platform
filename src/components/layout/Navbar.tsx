@@ -38,7 +38,7 @@ export function Navbar() {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 font-semibold text-amber-400 hover:text-amber-300 transition-colors group"
                         >
-                            <span>Get Your Free Consultation</span>
+                            <span>Free Gold IRA Kit + Guide</span>
                             <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
                         </a>
                     </div>

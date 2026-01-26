@@ -37,38 +37,38 @@ export default function Home() {
         {/* 4. AGITATION: Make the pain real - Wealth Calculator */}
         <WealthCalculator />
 
-        {/* 4.5. CURRENT MARKET: Daily Brief - Spot prices & headlines */}
-        <DailyBrief />
-
-        {/* 5. SOLUTION LOGIC: Why gold works - Rich Dad framework */}
-        <ValueProps />
-
-        {/* 6. HOW: Reduce anxiety - "3 Simple Steps" */}
-        <HowSection />
-
-        {/* 1.5 AUDIT CTA: The Super Tool */}
+        {/* 5. QUIZ CTA: Capture intent right after pain point */}
         <QuizCTA />
 
-        {/* 8. WHAT: The recommendation - Augusta Featured Partner */}
+        {/* 6. CURRENT MARKET: Daily Brief - Spot prices & headlines */}
+        <DailyBrief />
+
+        {/* 7. SOLUTION LOGIC: Why gold works - Rich Dad framework */}
+        <ValueProps />
+
+        {/* 8. HOW: Reduce anxiety - "3 Simple Steps" */}
+        <HowSection />
+
+        {/* 9. WHAT: The recommendation - Augusta Featured Partner */}
         <FeaturedPartner />
 
-        {/* 9. SOCIAL PROOF: "People like me" - Testimonials */}
+        {/* 10. SOCIAL PROOF: "People like me" - Testimonials */}
         <Testimonials />
 
-        {/* 10. URGENCY: Why act NOW - Gold prices, central banks */}
+        {/* 11. URGENCY: Why act NOW - Gold prices, central banks */}
         <UrgencySection />
 
-        {/* 10.5. NEWSLETTER: Stay informed - Weekly insights */}
+        {/* 12. NEWSLETTER: Stay informed - Weekly insights */}
         <section className="py-16 bg-slate-900">
           <Container>
             <NewsletterSignup variant="footer" />
           </Container>
         </section>
 
-        {/* 11. COMPARISON: For researchers - All roads lead to Augusta */}
+        {/* 13. COMPARISON: For researchers - All roads lead to Augusta */}
         <ComparisonTable />
 
-        {/* 12. TRUST: Final reassurance - Badges */}
+        {/* 14. TRUST: Final reassurance - Badges */}
         <TrustBadges />
       </div>
 

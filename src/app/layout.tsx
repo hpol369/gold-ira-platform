@@ -3,7 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { ExitIntentPopup } from "@/components/layout/ExitIntentPopup";
+import { ExitIntentModal } from "@/components/widgets/ExitIntentModal";
+import { SocialProofTicker } from "@/components/widgets/SocialProofTicker";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
 
@@ -95,7 +96,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
-        <ExitIntentPopup />
+        <ExitIntentModal />
+        <SocialProofTicker />
       </body>
     </html>
   );

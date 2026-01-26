@@ -1,6 +1,7 @@
 // src/app/learn/[slug]/page.tsx
 // P1-017: Dynamic learn article page template
 
+import { Fragment } from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -11,6 +12,9 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Button } from "@/components/ui/Button";
 import { KeyTakeaways } from "@/components/learn/KeyTakeaways";
 import { TableOfContents } from "@/components/guide/TableOfContents";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import {
   getLearnArticleBySlug,
@@ -416,14 +420,23 @@ export default async function LearnArticlePage({ params }: PageProps) {
       <section className="py-8">
         <Container>
           <div className="flex gap-8 max-w-6xl mx-auto">
-            {/* Table of Contents - Desktop */}
-            <TableOfContents items={article.tocItems} />
+            {/* Sidebar - TOC and Audit Widget */}
+            <div className="hidden lg:flex flex-col gap-6 sticky top-24 self-start">
+              <TableOfContents
+                items={article.tocItems}
+                className="static block"
+              />
+              <SidebarAuditWidget />
+            </div>
 
             {/* Article Content */}
             <div className="flex-1 max-w-4xl">
               {/* Sections */}
-              {article.sections.map((section) => (
-                <ArticleSectionComponent key={section.id} section={section} />
+              {article.sections.map((section, index) => (
+                <Fragment key={section.id}>
+                  <ArticleSectionComponent section={section} />
+                  {index === 2 && <InContentCTA />}
+                </Fragment>
               ))}
 
               {/* Warning Box */}
@@ -571,6 +584,9 @@ export default async function LearnArticlePage({ params }: PageProps) {
           />
         </Container>
       </section>
+
+      {/* Mobile Sticky CTA Bar */}
+      <MobileStickyBar />
 
       <Footer />
     </main>

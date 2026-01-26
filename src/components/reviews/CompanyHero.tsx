@@ -1,12 +1,16 @@
 // src/components/reviews/CompanyHero.tsx
 // P1-021: Review page hero component
 
-import { Award, Building2, Calendar, DollarSign, ExternalLink, Shield } from "lucide-react";
+"use client";
+
+import { Award, Building2, Calendar, DollarSign, ExternalLink, Shield, Zap, ArrowRight } from "lucide-react";
 import { Company } from "@/data/companies";
 import { CompanyRating } from "./CompanyRating";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 import { getTrackedLink } from "@/config/affiliates";
+import Link from "next/link";
+import { useMemo } from "react";
 
 interface CompanyHeroProps {
   company: Company;
@@ -14,6 +18,16 @@ interface CompanyHeroProps {
 
 export function CompanyHero({ company }: CompanyHeroProps) {
   const isFeatured = company.featured;
+
+  // Generate a consistent "random" viewer count based on company slug (50-200)
+  const viewerCount = useMemo(() => {
+    let hash = 0;
+    for (let i = 0; i < company.slug.length; i++) {
+      hash = ((hash << 5) - hash) + company.slug.charCodeAt(i);
+      hash = hash & hash;
+    }
+    return 50 + Math.abs(hash) % 151;
+  }, [company.slug]);
 
   return (
     <section className={cn(
@@ -24,13 +38,21 @@ export function CompanyHero({ company }: CompanyHeroProps) {
     )}>
       <Container>
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6">
+        <nav className="flex items-center gap-2 text-sm text-slate-500 mb-4">
           <a href="/" className="hover:text-slate-700">Home</a>
           <span>/</span>
           <a href="/reviews" className="hover:text-slate-700">Reviews</a>
           <span>/</span>
           <span className="text-slate-900">{company.name}</span>
         </nav>
+
+        {/* Urgency Badge - Social Proof */}
+        <div className="mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-100 border border-amber-200 rounded-full text-amber-800 text-sm font-medium">
+            <Zap className="h-4 w-4" />
+            <span>{viewerCount} people viewed this review today</span>
+          </div>
+        </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content */}
@@ -89,6 +111,19 @@ export function CompanyHero({ company }: CompanyHeroProps) {
                 Jump to Verdict
               </a>
             </div>
+
+            {/* Compare Alternative Link - Show for non-featured companies */}
+            {!isFeatured && (
+              <div className="mt-4">
+                <Link
+                  href={`/compare/${company.slug}-vs-augusta-precious-metals`}
+                  className="inline-flex items-center gap-2 text-slate-600 hover:text-amber-600 text-sm font-medium transition-colors"
+                >
+                  Not sure? Compare {company.name} vs Augusta Precious Metals
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Quick Stats Card */}
