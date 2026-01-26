@@ -13,7 +13,7 @@ import { getAllGrandchildrenArticleSlugs } from "@/data/grandchildren";
 import { getAllSeniorProtectionArticleSlugs } from "@/data/senior-protection";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://richdadretirement.com";
+  const baseUrl = "https://www.richdadretirement.com";
 
   // ============================================
   // CORE PAGES
@@ -92,6 +92,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/fees-comparison",
     "/tools/401k-risk-analyzer",
     "/tools/retirement-calculator",
+    "/tools/72t-calculator",
+    "/tools/fers-calculator",
+    "/tools/social-security-calculator",
+    "/tools/money-longevity-calculator",
+    "/tools/medicaid-calculator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
