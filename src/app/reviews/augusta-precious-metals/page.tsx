@@ -11,8 +11,8 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
-    title: "Augusta Precious Metals Review (2026): Fees, Complaints & Real Customer Experience",
-    description: "Our honest Augusta Precious Metals review. We analyze their $50k minimum, fee structure, Joe Montana endorsement, and whether their education-first approach is worth it.",
+    title: "Augusta Precious Metals Review 2026 | Fees & Ratings",
+    description: "Augusta Precious Metals review for 2026. $50k minimum, transparent fees, education-first approach. See if Augusta is right for your Gold IRA.",
 };
 
 export default function AugustaReviewPage() {

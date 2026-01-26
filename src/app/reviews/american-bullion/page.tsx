@@ -12,7 +12,7 @@ import { Info } from "lucide-react";
 
 export const metadata = {
     title: "American Bullion Review (2026): The Gold IRA Pioneer?",
-    description: "American Bullion review for 2026. One of the oldest Gold IRA companies, founded in 2009. We analyze their experience, fees, and whether they still compete with newer companies.",
+    description: "American Bullion review 2026. One of the oldest Gold IRA companies (since 2009). We analyze fees, service, and if they still compete today.",
 };
 
 export default function AmericanBullionReviewPage() {

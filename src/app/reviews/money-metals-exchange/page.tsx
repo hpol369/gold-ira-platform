@@ -11,7 +11,7 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
-    title: "Money Metals Exchange Review (2026): Starter Packs & Investopedia's Top Pick",
+    title: "Money Metals Exchange Review 2026 | Honest Analysis",
     description: "Money Metals Exchange review. Named 'Best Overall' by Investopedia. We analyze their famous Starter Portfolios, pricing, and whether they're good for IRAs.",
 };
 

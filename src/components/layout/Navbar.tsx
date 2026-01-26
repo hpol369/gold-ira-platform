@@ -87,6 +87,9 @@ export function Navbar() {
                                             <Link href="/scams" className="block px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5 font-medium">
                                                 Scam Protection Center
                                             </Link>
+                                            <Link href="/investigative-hub" className="block px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5">
+                                                Industry Red Flags
+                                            </Link>
                                             <Link href="/academy" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
                                                 Gold IRA Academy
                                             </Link>
@@ -246,6 +249,9 @@ export function Navbar() {
                                                 View All Tools
                                                 <ArrowRight className="h-3 w-3" />
                                             </Link>
+                                            <Link href="/resources" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Resources & Guides
+                                            </Link>
                                         </div>
                                     </div>
                                 )}
@@ -304,6 +310,9 @@ export function Navbar() {
                             <div className="mt-2 flex flex-col gap-1 pl-2">
                                 <Link href="/scams" className="text-sm text-red-400 hover:text-red-300 py-1 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
                                     Scam Protection Center
+                                </Link>
+                                <Link href="/investigative-hub" className="text-sm text-red-400 hover:text-red-300 py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Industry Red Flags
                                 </Link>
                                 <Link href="/academy" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
                                     Gold IRA Academy
@@ -501,6 +510,9 @@ export function Navbar() {
                                 <Link href="/tools" className="text-sm text-amber-400 hover:text-amber-300 py-1 font-medium flex items-center gap-1" onClick={() => setIsMobileMenuOpen(false)}>
                                     View All Tools
                                     <ArrowRight className="h-3 w-3" />
+                                </Link>
+                                <Link href="/resources" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Resources & Guides
                                 </Link>
                             </div>
                         </div>

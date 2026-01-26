@@ -11,7 +11,7 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
-    title: "Orion Metal Exchange Review (2026): $5,000 Minimum & Transparent Pricing",
+    title: "Orion Metal Exchange Review 2026 | Fees & Ratings",
     description: "Orion Metal Exchange review for 2026. The lowest minimum in the industry at $5,000. We analyze their fees, real-time pricing, and customer reviews.",
 };
 

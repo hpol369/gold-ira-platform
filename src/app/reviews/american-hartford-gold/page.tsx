@@ -11,7 +11,7 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
-    title: "American Hartford Gold Review (2026): Honest Analysis of Fees & Service",
+    title: "American Hartford Gold Review 2026 | Fees & Service",
     description: "A balanced review of American Hartford Gold covering their fee structure, buyback program, and how they compare to other Gold IRA companies.",
 };
 
