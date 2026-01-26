@@ -63,6 +63,8 @@ import { estateLegalArticles } from './estate-legal-cluster';
 import { fireMovementArticles } from './fire-movement-cluster';
 import { railroadRetirementExpansionArticles } from './railroad-retirement-expansion-cluster';
 import { infiniteBankingArticles } from './infinite-banking-cluster';
+import { inheritanceProcessArticles } from './inheritance-process-articles';
+import { inheritanceDollarArticles } from './inheritance-dollar-articles';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -125,6 +127,8 @@ export const learnArticles: LearnArticleRegistry = {
   ...fireMovementArticles,
   ...railroadRetirementExpansionArticles,
   ...infiniteBankingArticles,
+  ...inheritanceProcessArticles,
+  ...inheritanceDollarArticles,
 };
 
 // ============================================
