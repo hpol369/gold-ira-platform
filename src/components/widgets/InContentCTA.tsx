@@ -46,9 +46,10 @@ export function InContentCTA({ variant = "default", className }: InContentCTAPro
       )}
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <p className={cn("text-sm leading-relaxed", styles.text)}>
-          Concerned about your retirement savings?
-        </p>
+        <div className={cn("text-sm leading-relaxed", styles.text)}>
+          <p className="font-semibold text-white">Exploring your retirement options?</p>
+          <p>Our 60-second quiz matches you with the right account type</p>
+        </div>
         <Link
           href="/audit"
           className={cn(
@@ -56,7 +57,7 @@ export function InContentCTA({ variant = "default", className }: InContentCTAPro
             styles.button
           )}
         >
-          Get Free Audit
+          Get Matched
           <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>

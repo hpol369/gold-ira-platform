@@ -21,8 +21,8 @@ interface MobileStickyBarProps {
 }
 
 export function MobileStickyBar({
-  text = "Free Retirement Audit",
-  buttonText = "Start Now",
+  text = "Find Your Perfect Account",
+  buttonText = "Free Quiz",
   href = "/audit",
   scrollThreshold = 300,
 }: MobileStickyBarProps) {

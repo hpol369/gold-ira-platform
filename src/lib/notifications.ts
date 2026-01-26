@@ -213,3 +213,38 @@ export async function sendTestNotification(): Promise<void> {
 
   await sendNotification(testEvent);
 }
+
+/**
+ * Simple function to send a Telegram notification message
+ * Used for high-value lead alerts and other direct notifications
+ */
+export async function sendTelegramNotification(message: string, urgent: boolean = false): Promise<void> {
+  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+    console.log("[TELEGRAM] Not configured, skipping notification");
+    return;
+  }
+
+  try {
+    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+    const response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+        parse_mode: "HTML",
+        disable_notification: !urgent
+      })
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      console.error("[TELEGRAM ERROR]", error);
+    } else {
+      console.log("[TELEGRAM] Direct notification sent");
+    }
+  } catch (error) {
+    console.error("[TELEGRAM ERROR]", error);
+  }
+}

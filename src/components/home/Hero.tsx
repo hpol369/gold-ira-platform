@@ -152,7 +152,7 @@ export function Hero() {
                         className="mt-16 pt-8 border-t border-white/10 w-full max-w-4xl"
                     >
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-sm text-left">
-                            <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors group">
+                            <div className="flex items-center gap-4 glass-card p-4 hover:bg-white/10 transition-colors group">
                                 <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
                                     <ShieldCheck className="h-6 w-6" />
                                 </div>
@@ -162,7 +162,7 @@ export function Hero() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors group">
+                            <div className="flex items-center gap-4 glass-card p-4 hover:bg-white/10 transition-colors group">
                                 <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
                                     <TrendingUp className="h-6 w-6" />
                                 </div>
@@ -172,7 +172,7 @@ export function Hero() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors group">
+                            <div className="flex items-center gap-4 glass-card p-4 hover:bg-white/10 transition-colors group">
                                 <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
                                     <Lock className="h-6 w-6" />
                                 </div>

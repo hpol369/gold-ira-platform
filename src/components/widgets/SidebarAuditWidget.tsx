@@ -20,22 +20,21 @@ export function SidebarAuditWidget() {
           <Shield className="h-5 w-5 text-red-400" />
         </div>
         <h4 className="font-serif font-bold text-white text-sm">
-          Free Portfolio Audit
+          Which Account Fits You?
         </h4>
       </div>
 
       <p className="text-lg font-bold text-white mb-2">
-        Is Your 401(k) at Risk?
+        Gold, Crypto, Real Estate...
       </p>
 
       <p className="text-sm text-slate-400 mb-4 leading-relaxed">
-        Get a personalized analysis of your retirement portfolio and discover
-        if gold could help protect your savings.
+        Find out in 60 seconds
       </p>
 
       <Button variant="gold" size="sm" asChild className="w-full mb-4">
         <Link href="/audit">
-          Start Free Audit <ArrowRight className="ml-2 h-4 w-4" />
+          Take Free Quiz <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
       </Button>
 

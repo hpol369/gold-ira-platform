@@ -1,12 +1,17 @@
 import { Metadata } from "next";
+import { Suspense } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { AuditWizard } from "@/components/audit/AuditWizard";
+import { UniversalQuiz } from "@/components/quiz/UniversalQuiz";
 
 export const metadata: Metadata = {
-    title: "Sovereign Wealth Audit | Calculate Your Inflation Exposure",
-    description: "Take the 60-second diagnostic to calculate your portfolio's exposure to inflation and market volatility. Get your Risk Score instantly.",
+  title: "Free Retirement Account Finder | Gold, Crypto, Real Estate IRAs",
+  description: "Take our 60-second quiz to find the perfect retirement account for your goals. Compare Gold IRAs, Crypto IRAs, ROBS 401k, Self-Directed IRAs and more.",
+  openGraph: {
+    title: "Find Your Perfect Retirement Account - Free Quiz",
+    description: "Answer 4 quick questions to get personalized recommendations for Gold IRA, Crypto IRA, ROBS 401k, or Self-Directed IRA.",
+  },
 };
 
 export default function AuditPage() {
@@ -22,7 +27,9 @@ export default function AuditPage() {
                 </div>
 
                 <Container className="relative z-10">
-                    <AuditWizard />
+                    <Suspense fallback={<div className="min-h-[400px] flex items-center justify-center"><div className="animate-pulse text-slate-400">Loading quiz...</div></div>}>
+                        <UniversalQuiz />
+                    </Suspense>
                 </Container>
             </div>
 
