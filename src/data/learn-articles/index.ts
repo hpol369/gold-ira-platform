@@ -65,6 +65,13 @@ import { railroadRetirementExpansionArticles } from './railroad-retirement-expan
 import { infiniteBankingArticles } from './infinite-banking-cluster';
 import { inheritanceProcessArticles } from './inheritance-process-articles';
 import { inheritanceDollarArticles } from './inheritance-dollar-articles';
+import { alternativeIraArticles } from './alternative-ira-cluster';
+import { goldIraComparisonArticles } from './gold-ira-comparison-cluster';
+import { retireWithAmountArticles } from './retire-with-amount-cluster';
+import { medicaidExpansionArticles } from './medicaid-expansion-cluster';
+import { robsExpansionArticles } from './robs-expansion-cluster';
+import { techRetirementArticles } from './tech-retirement-cluster';
+import { healthcareGapArticles } from './healthcare-gap-cluster';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -129,6 +136,13 @@ export const learnArticles: LearnArticleRegistry = {
   ...infiniteBankingArticles,
   ...inheritanceProcessArticles,
   ...inheritanceDollarArticles,
+  ...alternativeIraArticles,
+  ...goldIraComparisonArticles,
+  ...retireWithAmountArticles,
+  ...medicaidExpansionArticles,
+  ...robsExpansionArticles,
+  ...techRetirementArticles,
+  ...healthcareGapArticles,
 };
 
 // ============================================

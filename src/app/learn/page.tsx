@@ -26,6 +26,9 @@ import {
   Target,
   Users,
   Lock,
+  Coins,
+  Heart,
+  Briefcase,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -55,6 +58,9 @@ const categoryIcons: Record<ArticleCategory, typeof Shield> = {
   "target-date": Target,
   enrollment: Users,
   protection: Lock,
+  "gold-ira": Coins,
+  healthcare: Heart,
+  robs: Briefcase,
 };
 
 export default function LearnPage() {

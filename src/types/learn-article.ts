@@ -12,7 +12,10 @@ export type ArticleCategory =
   | 'market-fear'   // Crash worries, timing
   | 'target-date'   // TDF confusion
   | 'enrollment'    // HR issues, contributions
-  | 'protection';   // Creditor/government protection
+  | 'protection'    // Creditor/government protection
+  | 'gold-ira'      // Gold IRA comparisons, fees, minimums
+  | 'healthcare'    // Healthcare gap, COBRA, ACA, early retirement health insurance
+  | 'robs';         // ROBS, 401k business financing, franchise funding
 
 export type ThreatLevel = 'info' | 'warning' | 'critical';
 
@@ -163,6 +166,21 @@ export const categoryMeta: Record<ArticleCategory, { label: string; color: IconC
     label: 'Asset Protection',
     color: 'green',
     description: 'Creditors, bankruptcy, legal'
+  },
+  'gold-ira': {
+    label: 'Gold IRA',
+    color: 'amber',
+    description: 'Gold IRA comparisons, fees, and requirements'
+  },
+  'healthcare': {
+    label: 'Healthcare',
+    color: 'red',
+    description: 'Healthcare gap, COBRA, ACA, early retirement coverage'
+  },
+  'robs': {
+    label: 'ROBS & Business Financing',
+    color: 'amber',
+    description: '401k business financing, franchise funding, ROBS strategies'
   },
 };
 
