@@ -327,7 +327,7 @@ export default function Solo401kPage() {
 
                         <div className="mt-8 text-center">
                             <Button variant="outline" asChild>
-                                <Link href="/compare/solo-401k-vs-sep-ira">
+                                <Link href="/learn/solo-401k-vs-sep-ira">
                                     Full Solo 401k vs SEP IRA Comparison
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
@@ -549,7 +549,7 @@ export default function Solo401kPage() {
                                     </a>
                                 </Button>
                                 <Button variant="outline" size="lg" asChild>
-                                    <Link href="/compare/solo-401k-vs-sep-ira">
+                                    <Link href="/learn/solo-401k-vs-sep-ira">
                                         Compare to SEP IRA
                                     </Link>
                                 </Button>
@@ -568,7 +568,7 @@ export default function Solo401kPage() {
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                             {[
                                 { href: "/learn/solo-401k-contribution-limits", title: "Contribution Limits", desc: "2026 limits explained" },
-                                { href: "/compare/solo-401k-vs-sep-ira", title: "Solo 401k vs SEP IRA", desc: "Which is better?" },
+                                { href: "/learn/solo-401k-vs-sep-ira", title: "Solo 401k vs SEP IRA", desc: "Which is better?" },
                                 { href: "/learn/solo-401k-providers", title: "Best Providers", desc: "Compare options" },
                                 { href: "/self-directed-ira", title: "Self-Directed IRA", desc: "Alternative option" },
                             ].map((link, index) => (

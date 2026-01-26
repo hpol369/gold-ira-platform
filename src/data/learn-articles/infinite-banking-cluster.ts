@@ -225,7 +225,7 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
       'become-your-own-banker',
       'infinite-banking-vs-roth-ira'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -668,7 +668,7 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
       'be-your-own-bank-life-insurance',
       'infinite-banking-vs-roth-ira'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -889,7 +889,7 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
       'be-your-own-bank-life-insurance',
       'become-your-own-banker'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/roth-vs-traditional-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/compare/gold-ira-vs-traditional-ira'],
     relatedTools: ['/tools/retirement-calculator', '/tools/roth-conversion-calculator']
   }
 };

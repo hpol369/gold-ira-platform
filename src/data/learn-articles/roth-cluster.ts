@@ -183,7 +183,7 @@ export const rothArticles: LearnArticleRegistry = {
       'roth-conversion-tax-bomb-explained',
       'can-i-reinvest-my-rmd'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/roth-conversion-calculator', '/tools/retirement-calculator']
   },
 
@@ -345,7 +345,7 @@ export const rothArticles: LearnArticleRegistry = {
       'should-i-convert-401k-to-roth-at-60',
       'can-i-reinvest-my-rmd'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/roth-conversion-calculator', '/tools/retirement-calculator']
   },
 
@@ -504,7 +504,7 @@ export const rothArticles: LearnArticleRegistry = {
       'should-i-convert-401k-to-roth-at-60',
       'roth-conversion-tax-bomb-explained'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover', '/guide/gold-ira-guide'],
+    relatedGuides: ['/guide/401k-to-gold-rollover', '/guide/gold-ira-guide'],
     relatedTools: ['/tools/roth-conversion-calculator', '/tools/retirement-calculator']
   },
 

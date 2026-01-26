@@ -173,7 +173,7 @@ export const protectionArticles: LearnArticleRegistry = {
       'can-government-seize-my-ira',
       'what-happens-to-401k-if-bank-fails'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -333,7 +333,7 @@ export const protectionArticles: LearnArticleRegistry = {
       'what-to-do-with-spouses-401k-after-death',
       '401k-protected-from-creditors'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -500,7 +500,7 @@ export const protectionArticles: LearnArticleRegistry = {
       'am-i-on-track-for-retirement-at-50',
       'too-late-to-save-for-retirement'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   }
 };

@@ -129,7 +129,7 @@ export const audiences: Record<string, AudienceData> = {
     specificAdvice:
       "Teachers often have both a 403b and a state pension. We recommend rolling over old 403b accounts from previous districts into a Gold IRA. Keep your current 403b contributions for the match, but diversify 15-20% of total retirement assets into gold.",
     relatedLinks: [
-      { title: "403b to Gold IRA Rollover", href: "/rollover/403b" },
+      { title: "403b to Gold IRA Rollover", href: "/rollover/403b-to-gold-ira" },
       { title: "Gold IRA Tax Benefits", href: "/learn/gold-ira-tax-rules" },
       { title: "How to Get Started", href: "/guide/gold-ira-guide" },
     ],

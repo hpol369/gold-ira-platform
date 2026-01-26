@@ -369,7 +369,7 @@ export default function BestSilverIraCompaniesPage() {
                                     Many investors choose to hold both gold and silver in their precious metals IRA. Silver tends to be more volatile than gold, meaning bigger gains in bull markets but also larger drops in bear markets. The current silver-to-gold ratio may favor silver accumulation.
                                 </p>
                                 <Link
-                                    href="/compare/silver-vs-gold"
+                                    href="/compare/gold-vs-silver-ira"
                                     className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 font-semibold"
                                 >
                                     Read Our Silver vs Gold Comparison <ArrowRight className="w-4 h-4" />

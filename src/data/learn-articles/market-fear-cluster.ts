@@ -159,7 +159,7 @@ export const marketFearArticles: LearnArticleRegistry = {
       'why-did-my-401k-drop-so-much',
       '401k-lost-20-percent-what-do-i-do'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover', '/guide/gold-ira-guide'],
+    relatedGuides: ['/guide/401k-to-gold-rollover', '/guide/gold-ira-guide'],
     relatedTools: ['/tools/401k-risk-analyzer', '/tools/crash-simulator']
   },
 
@@ -311,7 +311,7 @@ export const marketFearArticles: LearnArticleRegistry = {
       '401k-lost-20-percent-what-do-i-do',
       'should-i-move-401k-before-market-crash'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/401k-risk-analyzer', '/tools/crash-simulator']
   },
 
@@ -469,7 +469,7 @@ export const marketFearArticles: LearnArticleRegistry = {
       'why-did-my-401k-drop-so-much',
       'should-i-move-401k-before-market-crash'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/401k-risk-analyzer', '/tools/crash-simulator']
   },
 
@@ -638,7 +638,7 @@ export const marketFearArticles: LearnArticleRegistry = {
       'is-200k-enough-to-retire-at-62',
       'am-i-on-track-for-retirement-at-50'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -799,7 +799,7 @@ export const marketFearArticles: LearnArticleRegistry = {
       'too-late-to-save-for-retirement',
       'is-200k-enough-to-retire-at-62'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   }
 };

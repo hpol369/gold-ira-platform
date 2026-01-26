@@ -43,7 +43,7 @@ export function Footer() {
                         <ul className="space-y-2">
                             <li><Link href="/guide/gold-ira-guide" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA Guide</Link></li>
                             <li><Link href="/guide/protect-401k-from-crash" className="text-gray-400 hover:text-white transition-colors text-sm">Protect 401k from Crash</Link></li>
-                            <li><Link href="/guide/gold-ira-rollover-guide" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA Rollover Guide</Link></li>
+                            <li><Link href="/rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA Rollover Guide</Link></li>
                             <li><Link href="/guide/tsp-to-gold-ira-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">TSP to Gold IRA Rollover</Link></li>
                             <li><Link href="/guide/gold-ira-for-seniors" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA for Seniors</Link></li>
                             <li><Link href="/guide/gold-ira-minimum-investment" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA Minimum Investment</Link></li>

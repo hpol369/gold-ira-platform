@@ -177,7 +177,7 @@ export const scamMiscArticles: LearnArticleRegistry = {
       'medicaid-compliant-annuity',
       'rental-income-retirement-strategy'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -708,7 +708,7 @@ export const scamMiscArticles: LearnArticleRegistry = {
       'medicaid-compliant-annuity',
       'reverse-mortgage-scam'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira-guide'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator']
   }
 };

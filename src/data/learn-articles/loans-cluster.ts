@@ -220,7 +220,7 @@ export const loansArticles: LearnArticleRegistry = {
       'what-happens-to-401k-loan-if-fired',
       'taking-401k-loan-good-or-bad-idea'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover', '/rollover/401k'],
+    relatedGuides: ['/guide/401k-to-gold-rollover', '/rollover/401k-to-gold-ira'],
     relatedTools: ['/tools/401k-risk-analyzer', '/tools/retirement-calculator']
   },
 
@@ -380,7 +380,7 @@ export const loansArticles: LearnArticleRegistry = {
       'taking-401k-loan-good-or-bad-idea',
       'what-happens-to-my-401k-if-i-get-laid-off-at-58'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover', '/rollover/401k'],
+    relatedGuides: ['/guide/401k-to-gold-rollover', '/rollover/401k-to-gold-ira'],
     relatedTools: ['/tools/401k-risk-analyzer']
   },
 
@@ -571,7 +571,7 @@ export const loansArticles: LearnArticleRegistry = {
       '401k-loan-vs-hardship-withdrawal',
       'what-happens-to-401k-loan-if-fired'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover', '/guide/gold-ira-guide'],
+    relatedGuides: ['/guide/401k-to-gold-rollover', '/guide/gold-ira-guide'],
     relatedTools: ['/tools/retirement-calculator', '/tools/401k-risk-analyzer']
   },
 
@@ -721,7 +721,7 @@ export const loansArticles: LearnArticleRegistry = {
       '401k-loan-vs-hardship-withdrawal',
       'taking-401k-loan-good-or-bad-idea'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -876,7 +876,7 @@ export const loansArticles: LearnArticleRegistry = {
       'taking-401k-loan-good-or-bad-idea',
       '401k-loan-vs-hardship-withdrawal'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   }
 };

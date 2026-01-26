@@ -486,7 +486,7 @@ export default function Why401kLosingMoneyPage() {
                                 Did you know you can roll over a portion of your 401k into a <Link href="/what-is-a-gold-ira">Gold IRA</Link> without tax penalties? This allows you to diversify into physical gold while keeping some funds in your existing 401k.
                             </p>
                             <p>
-                                Learn more about this option: <Link href="/guide/401k-to-gold-ira-rollover">How to Roll Over Your 401k to a Gold IRA</Link>
+                                Learn more about this option: <Link href="/guide/401k-to-gold-rollover">How to Roll Over Your 401k to a Gold IRA</Link>
                             </p>
 
                             <Callout type="success" title="The Time to Act Is Now">

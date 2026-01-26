@@ -313,8 +313,8 @@ export default function LearnPage() {
             <Link href="/learn/merrill-lynch-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
               <span className="font-medium text-white group-hover:text-blue-400 text-sm">Merrill Lynch</span>
             </Link>
-            <Link href="/learn/lincoln-financial-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Lincoln Financial</span>
+            <Link href="/learn/wells-fargo-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Wells Fargo</span>
             </Link>
           </div>
         </Container>

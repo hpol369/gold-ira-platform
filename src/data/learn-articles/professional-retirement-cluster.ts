@@ -171,7 +171,7 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['veterinarian-retirement', 'realtor-retirement-plan'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 
@@ -484,7 +484,7 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['dentist-retirement-planning', 'realtor-retirement-plan'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 
@@ -622,7 +622,7 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['pilot-retirement-age', 'pastor-retirement-planning'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/403b-to-gold-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/403b-to-gold-ira-rollover'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 
@@ -773,7 +773,7 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['dentist-retirement-planning', 'pastor-retirement-planning'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 
@@ -930,7 +930,7 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['nurse-retirement-pension', 'realtor-retirement-plan'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/403b-to-gold-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/403b-to-gold-ira-rollover'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 };

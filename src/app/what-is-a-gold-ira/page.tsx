@@ -416,7 +416,7 @@ export default function WhatIsGoldIRAPage() {
                 <h3 className="font-bold text-white mb-4">Related Guides</h3>
                 <ul className="space-y-2">
                   {[
-                    { href: "/learn/gold-ira-rules", label: "Gold IRA Rules & Regulations" },
+                    { href: "/gold-ira-rules", label: "Gold IRA Rules & Regulations" },
                     { href: "/learn/ira-approved-gold-coins", label: "IRS Approved Gold Coins" },
                     { href: "/guide/gold-ira-fees", label: "Gold IRA Fees Explained" },
                     { href: "/rollover", label: "How to Roll Over Your 401(k)" },

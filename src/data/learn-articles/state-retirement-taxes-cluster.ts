@@ -175,7 +175,7 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'delaware-retirement-taxes',
       'best-states-retire-social-security'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -358,7 +358,7 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'delaware-retirement-taxes',
       'best-states-retire-social-security'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -549,7 +549,7 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'north-carolina-retirement-taxes',
       'best-states-retire-social-security'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -738,7 +738,7 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'tennessee-retirement-taxes',
       'delaware-retirement-taxes'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -933,7 +933,7 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'tennessee-retirement-taxes',
       'delaware-retirement-taxes'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   }
 };

@@ -205,7 +205,7 @@ export const crashProofArticles: LearnArticleRegistry = {
       'how-to-prepare-economic-collapse',
       'depression-proof-investments'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/crash-simulator', '/tools/gold-allocation-calculator']
   },
 
@@ -405,7 +405,7 @@ export const crashProofArticles: LearnArticleRegistry = {
       'great-depression-vs-great-recession',
       'depression-proof-investments'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/gold-allocation-calculator']
   },
 
@@ -604,7 +604,7 @@ export const crashProofArticles: LearnArticleRegistry = {
       'crash-proof-retirement',
       'how-to-prepare-economic-collapse'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/crash-simulator', '/tools/gold-allocation-calculator']
   },
 
@@ -812,7 +812,7 @@ export const crashProofArticles: LearnArticleRegistry = {
       'crash-proof-retirement',
       'how-to-prepare-economic-collapse'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/crash-simulator', '/tools/gold-allocation-calculator']
   },
 
@@ -1014,7 +1014,7 @@ export const crashProofArticles: LearnArticleRegistry = {
       'should-i-move-401k-before-market-crash',
       'depression-proof-investments'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/crash-simulator', '/tools/gold-allocation-calculator', '/tools/401k-risk-analyzer']
   }
 };

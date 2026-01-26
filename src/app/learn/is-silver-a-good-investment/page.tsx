@@ -289,7 +289,7 @@ export default function IsSilverGoodInvestmentPage() {
                             </Callout>
 
                             <p>
-                                Learn more about how silver and gold compare in our <Link href="/compare/silver-vs-gold">Silver vs Gold comparison</Link>.
+                                Learn more about how silver and gold compare in our <Link href="/compare/gold-vs-silver-ira">Silver vs Gold comparison</Link>.
                             </p>
                         </section>
 

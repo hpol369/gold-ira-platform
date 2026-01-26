@@ -327,8 +327,8 @@ export default function RolloverPage() {
               <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Nationwide</h3>
               <p className="text-slate-400 text-sm">Rollover guide & process</p>
             </Link>
-            <Link href="/learn/lincoln-financial-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
-              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Lincoln Financial</h3>
+            <Link href="/learn/wells-fargo-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Wells Fargo</h3>
               <p className="text-slate-400 text-sm">Rollover guide & process</p>
             </Link>
             <Link href="/learn/merrill-lynch-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">

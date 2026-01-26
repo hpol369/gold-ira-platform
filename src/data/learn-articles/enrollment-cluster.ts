@@ -159,7 +159,7 @@ export const enrollmentArticles: LearnArticleRegistry = {
       'company-match-not-showing',
       '401k-not-offered-at-work'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -322,7 +322,7 @@ export const enrollmentArticles: LearnArticleRegistry = {
       'hr-not-depositing-401k',
       'what-happens-to-unvested-401k'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -485,7 +485,7 @@ export const enrollmentArticles: LearnArticleRegistry = {
       'hr-not-depositing-401k',
       'am-i-on-track-for-retirement-at-50'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   }
 };

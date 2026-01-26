@@ -161,7 +161,7 @@ export const targetDateArticles: LearnArticleRegistry = {
       'target-date-fund-fees-too-high',
       'why-is-my-401k-not-growing'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/fees-comparison', '/tools/retirement-calculator']
   },
 
@@ -306,7 +306,7 @@ export const targetDateArticles: LearnArticleRegistry = {
       'are-target-date-funds-good',
       '401k-fees-eating-my-retirement'
     ],
-    relatedGuides: ['/guide/gold-ira-fees-explained'],
+    relatedGuides: ['/guide/gold-ira-fees'],
     relatedTools: ['/tools/fees-comparison']
   },
 
@@ -450,7 +450,7 @@ export const targetDateArticles: LearnArticleRegistry = {
       'are-target-date-funds-good',
       'target-date-fund-fees-too-high'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator', '/tools/401k-risk-analyzer']
   }
 };

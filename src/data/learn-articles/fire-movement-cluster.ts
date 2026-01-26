@@ -1438,7 +1438,7 @@ export const fireMovementArticles: LearnArticleRegistry = {
       'barista-fire-explained',
       'coast-fire-explained',
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/why-gold/wealth-preservation'],
+    relatedGuides: ['/guide/gold-ira-guide', '/why-gold'],
     relatedTools: ['/tools/fire-calculator', '/tools/fat-fire-calculator'],
   },
 
@@ -1996,7 +1996,7 @@ export const fireMovementArticles: LearnArticleRegistry = {
       'fat-fire-guide',
       'lean-fire-guide',
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/why-gold/inflation-protection', '/why-gold/crash-protection'],
+    relatedGuides: ['/guide/gold-ira-guide', '/why-gold/inflation-protection', '/guide/protect-401k-from-crash'],
     relatedTools: ['/tools/fire-calculator', '/tools/gold-allocation-calculator'],
   },
 };

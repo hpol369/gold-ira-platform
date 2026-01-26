@@ -304,7 +304,7 @@ export const miscArticles: LearnArticleRegistry = {
       'why-did-my-401k-drop-so-much',
       'why-is-my-401k-not-growing'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/401k-risk-analyzer', '/tools/crash-simulator']
   },
 
@@ -631,7 +631,7 @@ export const miscArticles: LearnArticleRegistry = {
       '401k-loan-to-pay-off-debt',
       'taking-401k-loan-good-or-bad-idea'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   }
 };

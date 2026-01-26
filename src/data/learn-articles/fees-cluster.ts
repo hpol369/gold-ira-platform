@@ -162,7 +162,7 @@ export const feesArticles: LearnArticleRegistry = {
       'worst-401k-plans',
       'why-is-my-401k-not-growing'
     ],
-    relatedGuides: ['/guide/gold-ira-fees-explained', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-fees', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/fees-comparison', '/tools/retirement-calculator']
   },
 
@@ -329,7 +329,7 @@ export const feesArticles: LearnArticleRegistry = {
       'worst-401k-plans',
       'why-is-my-401k-not-growing'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover', '/guide/gold-ira-fees-explained'],
+    relatedGuides: ['/guide/401k-to-gold-rollover', '/guide/gold-ira-fees'],
     relatedTools: ['/tools/fees-comparison']
   },
 
@@ -497,7 +497,7 @@ export const feesArticles: LearnArticleRegistry = {
       '401k-fees-eating-my-retirement',
       'high-401k-fees-what-to-do'
     ],
-    relatedGuides: ['/guide/gold-ira-fees-explained', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-fees', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/fees-comparison']
   },
 
@@ -693,7 +693,7 @@ export const feesArticles: LearnArticleRegistry = {
       'why-did-my-401k-drop-so-much',
       '401k-lost-20-percent-what-do-i-do'
     ],
-    relatedGuides: ['/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator', '/tools/401k-risk-analyzer']
   }
 };

@@ -221,7 +221,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['high-net-worth-retirement-planning', 'cpa-retirement-planning', 'dentist-retirement-planning'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 
@@ -452,7 +452,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['physician-retirement-planning', 'cpa-retirement-planning', 'attorney-retirement-planning'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 
@@ -656,7 +656,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['physician-retirement-planning', 'attorney-retirement-planning', 'high-net-worth-retirement-planning'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 
@@ -861,7 +861,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     ],
 
     relatedArticles: ['physician-retirement-planning', 'cpa-retirement-planning', 'high-net-worth-retirement-planning'],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/self-directed-ira'],
+    relatedGuides: ['/guide/gold-ira-guide', '/self-directed-ira'],
     relatedTools: ['/tools/retirement-calculator'],
   },
 };

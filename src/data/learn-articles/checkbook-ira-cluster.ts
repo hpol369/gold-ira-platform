@@ -194,7 +194,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'solo-401k-checkbook-control',
       'checkbook-ira-prohibited-transactions'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -791,7 +791,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'checkbook-ira-real-estate',
       'self-directed-ira-llc-operating-agreement'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 
@@ -983,7 +983,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'checkbook-ira-prohibited-transactions',
       'solo-401k-checkbook-control'
     ],
-    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-ira-rollover'],
+    relatedGuides: ['/guide/gold-ira-guide', '/guide/401k-to-gold-rollover'],
     relatedTools: []
   },
 

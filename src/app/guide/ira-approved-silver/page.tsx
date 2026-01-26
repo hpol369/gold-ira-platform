@@ -610,7 +610,7 @@ export default function IraApprovedSilverPage() {
                                     <ArrowRight className="w-5 h-5 text-amber-400" />
                                     <span className="text-slate-300 hover:text-white">Silver IRA Rollover Guide</span>
                                 </Link>
-                                <Link href="/compare/silver-ira-vs-gold-ira" className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-colors">
+                                <Link href="/compare/gold-vs-silver-ira" className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-colors">
                                     <Scale className="w-5 h-5 text-amber-400" />
                                     <span className="text-slate-300 hover:text-white">Silver IRA vs Gold IRA</span>
                                 </Link>
