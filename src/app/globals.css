@@ -117,6 +117,46 @@
     --tw-prose-th-borders: var(--color-background-subtle);
     --tw-prose-td-borders: var(--color-background-subtle);
   }
+
+  /* Prose spacing fixes */
+  .prose p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  .prose h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .prose h3 {
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-left: 1.625em;
+  }
+
+  .prose li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .prose ul > li {
+    padding-left: 0.375em;
+  }
+
+  .prose ul > li::marker {
+    color: var(--color-text-light);
+  }
+
+  .prose ol > li::marker {
+    color: var(--color-text-muted);
+  }
 }
 
 @utility text-balance {
