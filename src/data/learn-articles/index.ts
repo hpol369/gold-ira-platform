@@ -72,6 +72,12 @@ import { medicaidExpansionArticles } from './medicaid-expansion-cluster';
 import { robsExpansionArticles } from './robs-expansion-cluster';
 import { techRetirementArticles } from './tech-retirement-cluster';
 import { healthcareGapArticles } from './healthcare-gap-cluster';
+import { retireWithAmountExpansionArticles } from './retire-with-amount-expansion-cluster';
+import { marketFearExpansionArticles } from './market-fear-expansion-cluster';
+import { couplesRetirementArticles } from './couples-retirement-cluster';
+import { layoffRetirementArticles } from './layoff-retirement-cluster';
+import { retirementPsychologyArticles } from './retirement-psychology-cluster';
+import { goldIraDecisionsArticles } from './gold-ira-decisions-cluster';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -143,6 +149,12 @@ export const learnArticles: LearnArticleRegistry = {
   ...robsExpansionArticles,
   ...techRetirementArticles,
   ...healthcareGapArticles,
+  ...retireWithAmountExpansionArticles,
+  ...marketFearExpansionArticles,
+  ...couplesRetirementArticles,
+  ...layoffRetirementArticles,
+  ...retirementPsychologyArticles,
+  ...goldIraDecisionsArticles,
 };
 
 // ============================================
