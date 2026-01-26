@@ -82,8 +82,8 @@ export function Navbar() {
                                     <ChevronDown className={`h-4 w-4 transition-transform ${isLearnOpen ? 'rotate-180' : ''}`} />
                                 </button>
                                 {isLearnOpen && (
-                                    <div className="absolute top-full -left-32 pt-2 z-50">
-                                        <div className="w-[720px] bg-slate-800 border border-white/10 rounded-xl shadow-xl p-4">
+                                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                                        <div className="w-[660px] bg-slate-800 border border-white/10 rounded-xl shadow-xl p-4">
                                             <div className="grid grid-cols-3 gap-6">
                                                 {/* Column 1: Gold IRA Essentials */}
                                                 <div>
