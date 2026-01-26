@@ -78,6 +78,7 @@ import { couplesRetirementArticles } from './couples-retirement-cluster';
 import { layoffRetirementArticles } from './layoff-retirement-cluster';
 import { retirementPsychologyArticles } from './retirement-psychology-cluster';
 import { goldIraDecisionsArticles } from './gold-ira-decisions-cluster';
+import { custodianFinalArticles } from './custodian-final-cluster';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -155,6 +156,7 @@ export const learnArticles: LearnArticleRegistry = {
   ...layoffRetirementArticles,
   ...retirementPsychologyArticles,
   ...goldIraDecisionsArticles,
+  ...custodianFinalArticles,
 };
 
 // ============================================
