@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "Silver Stacking Guide 2026: How to Build Your Silver Stack",
         description: "Complete guide to silver stacking for beginners. Best silver to stack, strategies, and tips.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

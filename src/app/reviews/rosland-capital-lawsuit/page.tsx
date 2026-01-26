@@ -10,7 +10,7 @@ import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Rosland Capital Lawsuit Investigation (2026): CFTC Settlement Explained",
+    title: "Rosland Capital Lawsuit: CFTC Settlement Facts",
     description: "Details on the Rosland Capital CFTC lawsuit and settlement. We explain what happened, what it means for customers, and if the company is safe today.",
 };
 

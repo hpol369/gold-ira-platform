@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Railroad Retirement Calculator 2026 | Free RRB Benefits Calculator",
   description:
-    "Free Railroad Retirement calculator for 2026. Calculate your Tier I, Tier II, and spousal benefits from the Railroad Retirement Board. Compare to Social Security.",
+    "Free Railroad Retirement calculator for 2026. Calculate Tier I, Tier II, and spousal benefits. Compare to Social Security.",
   keywords: [
     "railroad retirement calculator",
     "rrb calculator",

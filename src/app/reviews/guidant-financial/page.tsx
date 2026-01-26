@@ -29,6 +29,7 @@ export const metadata: Metadata = {
         title: "Guidant Financial Review 2026: ROBS Fees, Pros & Cons",
         description: "Complete Guidant Financial review for ROBS 401k business funding. Fees, services, and honest assessment.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 
@@ -36,9 +37,8 @@ const reviewJsonLd = {
     "@context": "https://schema.org",
     "@type": "Review",
     "itemReviewed": {
-        "@type": "FinancialService",
-        "name": "Guidant Financial",
-        "image": "https://www.richdadretirement.com/logo.png"
+        "@type": "Organization",
+        "name": "Guidant Financial"
     },
     "reviewRating": {
         "@type": "Rating",

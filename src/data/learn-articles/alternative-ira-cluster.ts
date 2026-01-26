@@ -9,7 +9,7 @@ export const alternativeIraArticles: LearnArticleRegistry = {
     slug: 'private-equity-ira',
     title: 'Private Equity IRA: Investing in PE with Your Retirement Account (2026)',
     subtitle: 'Learn how to invest in private equity through a self-directed IRA, including accredited investor requirements, risks, fees, and simpler alternatives.',
-    metaTitle: 'Private Equity IRA: How to Invest in PE with Retirement Funds | Rich Dad Retirement',
+    metaTitle: 'Private Equity IRA: PE Retirement Investing',
     metaDescription: 'Complete guide to private equity IRA investing. Understand accredited investor rules, minimum investments, fees, risks, and why gold IRA may be a simpler alternative for most investors.',
     keywords: [
       'private equity ira',
@@ -219,7 +219,7 @@ export const alternativeIraArticles: LearnArticleRegistry = {
     slug: 'self-directed-ira-real-estate-rules',
     title: 'Self-Directed IRA Real Estate Rules: Complete Compliance Guide (2026)',
     subtitle: 'Understand prohibited transactions, disqualified persons, UBIT/UDFI taxes, and titling requirements for investing in real estate with your SDIRA.',
-    metaTitle: 'Self-Directed IRA Real Estate Rules: Compliance Guide | Rich Dad Retirement',
+    metaTitle: 'Self-Directed IRA Real Estate Rules Guide',
     metaDescription: 'Complete guide to SDIRA real estate rules. Learn about prohibited transactions, disqualified persons, UBIT taxes, titling requirements, and how to stay IRS compliant.',
     keywords: [
       'self directed ira real estate rules',
@@ -443,7 +443,7 @@ export const alternativeIraArticles: LearnArticleRegistry = {
     slug: 'ira-alternative-investments',
     title: 'IRA Alternative Investments: Complete Guide to Diversifying Beyond Stocks (2026)',
     subtitle: 'Explore alternative assets for your IRA including real estate, private equity, cryptocurrency, and precious metals—plus how to choose the right option.',
-    metaTitle: 'IRA Alternative Investments: Real Estate, PE, Crypto, Gold Guide | Rich Dad Retirement',
+    metaTitle: 'IRA Alternative Investments Guide',
     metaDescription: 'Complete guide to IRA alternative investments. Compare real estate, private equity, cryptocurrency, and precious metals. Learn requirements, risks, and why gold is most accessible.',
     keywords: [
       'ira alternative investments',

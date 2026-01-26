@@ -25,12 +25,13 @@ import {
 
 export const metadata: Metadata = {
     title: "Equity Trust Review 2026: Fees, Pros & Cons",
-    description: "Comprehensive Equity Trust review covering their 50+ years of experience, fee structure, account types, and real customer reviews. Is Equity Trust right for your SDIRA?",
+    description: "Equity Trust review 2026. Fees, pros and cons, account types, and customer reviews. Is this SDIRA custodian right for you?",
     keywords: "equity trust reviews, equity trust company reviews, equity trust ira, equity trust custodian, equity trust fees",
     openGraph: {
         title: "Equity Trust Review 2026: Major SDIRA Custodian",
         description: "Full Equity Trust review - is it the right self-directed IRA custodian for you? See our honest analysis of fees, services, and alternatives.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

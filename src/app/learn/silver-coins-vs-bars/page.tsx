@@ -14,6 +14,7 @@ export const metadata: Metadata = {
         title: "Silver Coins vs Bars: Which is Better for Your IRA?",
         description: "Compare silver coins vs silver bars for your investment. Premiums, liquidity, recognition, and IRA eligibility.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

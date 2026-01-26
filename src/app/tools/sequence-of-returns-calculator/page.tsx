@@ -5,12 +5,13 @@ import { SequenceOfReturnsCalculator } from "@/components/tools/SequenceOfReturn
 
 export const metadata: Metadata = {
   title: "Sequence of Returns Calculator - Retirement Risk Tool",
-  description: "Free sequence of returns calculator shows how the order of investment returns dramatically affects retirement outcomes. Understand sequence risk and protect your portfolio.",
+  description: "Free sequence of returns calculator. See how return timing affects retirement outcomes and learn to protect against sequence risk.",
   keywords: "sequence of returns calculator, sequence of returns risk calculator, retirement sequence risk, sequence risk retirement, order of returns risk",
   openGraph: {
     title: "Sequence of Returns Calculator - See Why Timing Matters",
     description: "Same average returns, vastly different outcomes. Calculate how sequence of returns risk can devastate or boost your retirement.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

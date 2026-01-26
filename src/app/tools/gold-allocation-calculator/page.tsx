@@ -4,8 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { GoldAllocationCalculator } from "@/components/tools/GoldAllocationCalculator";
 
 export const metadata: Metadata = {
-  title: "Gold Allocation Calculator - Calculate Your Optimal Portfolio Gold Percentage",
-  description: "Free gold allocation calculator to determine your optimal gold percentage based on age, risk tolerance, and investment goals. Compare to Ray Dalio and Harry Browne portfolios.",
+  title: "Gold Allocation Calculator | Optimal Portfolio %",
+  description: "Free gold allocation calculator. Find your optimal portfolio gold percentage based on age and risk tolerance. Compare expert portfolios.",
   keywords: "gold allocation calculator, portfolio gold percentage, optimal gold allocation, gold IRA allocation",
 };
 

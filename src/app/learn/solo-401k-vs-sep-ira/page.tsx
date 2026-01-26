@@ -13,6 +13,7 @@ export const metadata: Metadata = {
         title: "Solo 401k vs SEP IRA: Complete Comparison Guide (2026)",
         description: "Compare Solo 401k vs SEP IRA contribution limits, features, and benefits. Find the best retirement plan for self-employed individuals.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

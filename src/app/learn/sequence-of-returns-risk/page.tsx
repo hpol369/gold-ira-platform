@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "Sequence of Returns Risk: Protect Your Retirement",
         description: "Learn why WHEN you experience market returns matters more than average returns for retirees.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

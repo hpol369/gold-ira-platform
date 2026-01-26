@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     title: "About Thomas Richardson | Rich Dad Retirement",
     description:
       "After 20 years in wealth management, I got sick of watching scammers prey on retirees. This site is my response.",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

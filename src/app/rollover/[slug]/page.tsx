@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
       title: `${accountType.name} to Gold IRA Rollover Guide 2026`,
-      description: `Complete guide to rolling over your ${accountType.fullName} to a Gold IRA. Learn the rules, restrictions, and step-by-step process for a tax-free transfer.`,
+      description: `${accountType.name} to Gold IRA rollover guide. Step-by-step process for a tax-free transfer with rules and restrictions.`,
       openGraph: {
         title: `${accountType.name} to Gold IRA Rollover Guide 2026`,
         description: `Step-by-step instructions for rolling over your ${accountType.name} to a Gold IRA without taxes or penalties.`,

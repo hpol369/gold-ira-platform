@@ -26,6 +26,7 @@ export const metadata: Metadata = {
         title: "Physical Gold vs Paper Gold: The Critical Differences",
         description: "Understand why physical gold ownership is fundamentally different from paper gold investments like ETFs and futures.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

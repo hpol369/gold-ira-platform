@@ -23,7 +23,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Gold IRA Rules 2026 | IRS Regulations & Requirements",
-  description: "Complete guide to Gold IRA rules and IRS regulations. Learn about contribution limits, eligible metals, storage requirements, distribution rules, and prohibited transactions.",
+  description: "Gold IRA rules guide. Learn IRS contribution limits, eligible metals, storage requirements, distribution rules, and prohibited transactions.",
   openGraph: {
     title: "Gold IRA Rules 2026 | IRS Regulations & Requirements",
     description: "Everything you need to know about Gold IRA rules - contribution limits, eligible metals, storage requirements, and IRS regulations.",

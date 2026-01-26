@@ -9,7 +9,7 @@ export const robsExpansionArticles: LearnArticleRegistry = {
     slug: '401k-business-financing',
     title: '401k Business Financing: Use Retirement Funds to Start Your Business (2026)',
     subtitle: 'Learn how ROBS (Rollover for Business Startups) lets you tap your 401k to fund a business without taxes or penalties—and the risks involved.',
-    metaTitle: '401k Business Financing: How to Use Your 401k to Start a Business | Rich Dad Retirement',
+    metaTitle: '401k Business Financing: Start Your Business',
     metaDescription: 'Discover how 401k business financing through ROBS works. Learn requirements, risks, and alternatives for using retirement funds to start or buy a business tax-free.',
     keywords: [
       '401k business financing',
@@ -218,7 +218,7 @@ export const robsExpansionArticles: LearnArticleRegistry = {
     slug: 'buy-franchise-with-401k',
     title: 'Buy a Franchise with Your 401k: Complete ROBS Guide (2026)',
     subtitle: 'How to use ROBS to purchase a franchise using retirement funds without taxes or penalties—and why franchises are popular ROBS investments.',
-    metaTitle: 'Buy a Franchise with 401k: ROBS Franchise Financing Guide | Rich Dad Retirement',
+    metaTitle: 'Buy a Franchise with 401k | ROBS Guide',
     metaDescription: 'Learn how to buy a franchise using your 401k through ROBS. Step-by-step process, approved franchises, SBA loan alternatives, and success strategies.',
     keywords: [
       'buy franchise with 401k',
@@ -409,7 +409,7 @@ export const robsExpansionArticles: LearnArticleRegistry = {
     slug: 'start-business-with-retirement-funds',
     title: 'Start a Business with Retirement Funds: Your Options Explained (2026)',
     subtitle: 'Compare ROBS, 401k loans, IRA withdrawals, and other methods to fund your business startup using retirement savings.',
-    metaTitle: 'Start a Business with Retirement Funds: Complete Guide | Rich Dad Retirement',
+    metaTitle: 'Start a Business with Retirement Funds',
     metaDescription: 'Learn all the ways to use retirement funds for business startup. Compare ROBS vs 401k loan vs withdrawal—tax implications, risks, and success rates explained.',
     keywords: [
       'start business with retirement funds',
@@ -624,7 +624,7 @@ export const robsExpansionArticles: LearnArticleRegistry = {
     slug: 'robs-401k-pros-cons',
     title: 'ROBS 401k Pros and Cons: Is It Worth the Risk? (2026)',
     subtitle: 'Complete analysis of ROBS advantages, disadvantages, IRS scrutiny risks, success rates, and who should avoid this business financing strategy.',
-    metaTitle: 'ROBS 401k Pros and Cons: Complete Risk Analysis | Rich Dad Retirement',
+    metaTitle: 'ROBS 401k Pros and Cons | Risk Analysis',
     metaDescription: 'Detailed ROBS 401k pros and cons analysis. Understand IRS scrutiny risks, business success rates, hidden costs, and who should avoid ROBS for business financing.',
     keywords: [
       'robs 401k pros cons',

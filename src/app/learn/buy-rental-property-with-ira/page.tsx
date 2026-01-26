@@ -25,6 +25,7 @@ export const metadata: Metadata = {
         title: "How to Buy Rental Property with Your IRA (2026 Guide)",
         description: "Step-by-step guide to purchasing rental properties using your self-directed IRA funds.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

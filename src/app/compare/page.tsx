@@ -18,25 +18,36 @@ export const metadata: Metadata = {
     title: "Gold IRA Company Comparisons 2026 | Side-by-Side Analysis",
     description: "Compare Gold IRA companies side-by-side. See fees, minimums, ratings, and pros/cons.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 
-// Generate ALL comparison pairs from companies (105 pairs for 15 companies)
+// Generate ALL comparison pairs from companies (210 pairs for 15 companies - both directions)
 function generateAllComparisonPairs() {
   const companies = getAllCompanies();
   const pairs: { slugA: string; slugB: string; nameA: string; nameB: string; highlight?: string }[] = [];
 
-  // Generate all unique pairs
+  // Generate all unique pairs in BOTH directions for complete internal linking
+  // This ensures every comparison page has at least one incoming link from the hub
   for (let i = 0; i < companies.length; i++) {
     for (let j = i + 1; j < companies.length; j++) {
       const companyA = companies[i];
       const companyB = companies[j];
+      // A vs B direction
       pairs.push({
         slugA: companyA.slug,
         slugB: companyB.slug,
         nameA: companyA.name,
         nameB: companyB.name,
         highlight: companyA.featured ? "vs #1 Pick" : companyB.featured ? "vs #1 Pick" : undefined,
+      });
+      // B vs A direction (reverse)
+      pairs.push({
+        slugA: companyB.slug,
+        slugB: companyA.slug,
+        nameA: companyB.name,
+        nameB: companyA.name,
+        highlight: companyB.featured ? "vs #1 Pick" : companyA.featured ? "vs #1 Pick" : undefined,
       });
     }
   }
@@ -72,9 +83,60 @@ const investmentComparisons = [
     description: "Physical gold vs paper gold investments",
   },
   {
+    slug: "gold-ira-vs-crypto",
+    title: "Gold IRA vs Crypto",
+    description: "Traditional precious metals vs digital assets",
+  },
+  {
     slug: "gold-vs-silver-ira",
     title: "Gold vs Silver IRA",
     description: "Compare precious metals for your IRA",
+  },
+];
+
+// Featured company comparisons (static pages with in-depth analysis)
+const featuredCompanyComparisons = [
+  {
+    slug: "goldco-vs-augusta",
+    title: "Goldco vs Augusta",
+    description: "In-depth comparison of two industry leaders",
+    highlight: "Popular",
+  },
+  {
+    slug: "augusta-vs-goldco",
+    title: "Augusta vs Goldco",
+    description: "Our #1 pick compared to the most recognized name",
+    highlight: "#1 Pick",
+  },
+  {
+    slug: "augusta-vs-noble-gold",
+    title: "Augusta vs Noble Gold",
+    description: "Premium service vs product variety",
+  },
+  {
+    slug: "goldco-vs-american-hartford-gold",
+    title: "Goldco vs American Hartford",
+    description: "Experience vs promotional offers",
+  },
+  {
+    slug: "goldco-vs-lear-capital",
+    title: "Goldco vs Lear Capital",
+    description: "Modern vs established approaches",
+  },
+  {
+    slug: "lear-capital-vs-noble-gold",
+    title: "Lear Capital vs Noble Gold",
+    description: "Industry veteran vs innovative newcomer",
+  },
+  {
+    slug: "american-hartford-vs-oxford-gold",
+    title: "American Hartford vs Oxford Gold",
+    description: "Compare two rising Gold IRA companies",
+  },
+  {
+    slug: "noble-gold-vs-birch-gold",
+    title: "Noble Gold vs Birch Gold",
+    description: "Product selection vs rollover specialists",
   },
 ];
 
@@ -111,6 +173,45 @@ export default function ComparePage() {
         </Container>
       </header>
 
+      {/* Featured Comparisons - In-Depth Analyses */}
+      <section className="py-16 bg-slate-800/30">
+        <Container>
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 bg-amber-500/20 rounded-lg border border-amber-500/30">
+              <Award className="h-5 w-5 text-amber-400" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-white">Featured Comparisons</h2>
+              <p className="text-slate-500">Our most in-depth head-to-head analyses</p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {featuredCompanyComparisons.map((comparison) => (
+              <Link
+                key={comparison.slug}
+                href={`/compare/${comparison.slug}`}
+                className="group relative bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 hover:border-amber-500/30 hover:bg-white/10 transition-all"
+              >
+                {comparison.highlight && (
+                  <div className="absolute -top-2 -right-2 bg-amber-500 text-slate-900 text-xs font-bold px-2 py-1 rounded-full">
+                    {comparison.highlight}
+                  </div>
+                )}
+                <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                  {comparison.title}
+                </h3>
+                <p className="text-sm text-slate-500 mb-4">{comparison.description}</p>
+                <span className="text-amber-400 text-sm font-semibold flex items-center gap-1">
+                  Read Analysis
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       {/* Company vs Company Comparisons */}
       <section className="py-16">
         <Container>
@@ -119,7 +220,7 @@ export default function ComparePage() {
               <TrendingUp className="h-5 w-5 text-amber-400" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-white">Company Comparisons</h2>
+              <h2 className="text-2xl font-bold text-white">All Company Comparisons</h2>
               <p className="text-slate-500">We look at trust, complaints, and service&mdash;not just marketing claims</p>
             </div>
           </div>

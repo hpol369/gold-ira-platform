@@ -22,12 +22,13 @@ import {
 
 export const metadata: Metadata = {
     title: "Self-Directed IRA Guide 2026: Real Estate, Crypto & More",
-    description: "Complete guide to Self-Directed IRAs. Learn how to invest your retirement in real estate, cryptocurrency, gold, private equity, and more. Compare the best SDIRA custodians.",
+    description: "Self-Directed IRA guide for 2026. Invest in real estate, crypto, gold, and private equity. Compare top SDIRA custodians and fees.",
     keywords: "self directed ira, sdira, self directed ira custodian, self directed roth ira, checkbook ira, ira llc",
     openGraph: {
         title: "Self-Directed IRA Guide 2026: Alternative Investments for Retirement",
         description: "Take control of your retirement. Learn how to invest in real estate, crypto, gold, and more through a Self-Directed IRA.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

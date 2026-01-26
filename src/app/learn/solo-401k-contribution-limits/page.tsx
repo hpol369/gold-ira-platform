@@ -13,6 +13,7 @@ export const metadata: Metadata = {
         title: "Solo 401k Contribution Limits 2026 | Maximum Contributions Guide",
         description: "2026 Solo 401k contribution limits explained. Employee deferral ($23,500), employer profit-sharing, and $70,000-$77,500 total maximums.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

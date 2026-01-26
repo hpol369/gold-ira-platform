@@ -19,9 +19,8 @@ const reviewJsonLd = {
     "@context": "https://schema.org",
     "@type": "Review",
     "itemReviewed": {
-        "@type": "FinancialService",
-        "name": "Birch Gold Group",
-        "image": "https://www.richdadretirement.com/logo.png"
+        "@type": "Organization",
+        "name": "Birch Gold Group"
     },
     "reviewRating": {
         "@type": "Rating",

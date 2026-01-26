@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "10 Retirement Planning Mistakes to Avoid",
         description: "Common retirement planning mistakes that destroy wealth and how to avoid them.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

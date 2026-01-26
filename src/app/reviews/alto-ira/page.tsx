@@ -29,6 +29,7 @@ export const metadata: Metadata = {
         title: "Alto IRA Review 2026: 200+ Crypto Options",
         description: "Full Alto IRA review - is it the right crypto IRA for you? See our honest analysis of fees, features, and alternatives.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Retirement Longevity Calculator - Will Your Money Last?",
     description: "Calculate exactly how many years your retirement savings will last. See the impact of spending changes, returns, and inflation.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

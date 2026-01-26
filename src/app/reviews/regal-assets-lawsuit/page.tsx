@@ -19,9 +19,8 @@ const reviewJsonLd = {
     "@context": "https://schema.org",
     "@type": "Review",
     "itemReviewed": {
-        "@type": "FinancialService",
-        "name": "Regal Assets",
-        "image": "https://www.richdadretirement.com/logo.png"
+        "@type": "Organization",
+        "name": "Regal Assets"
     },
     "reviewRating": {
         "@type": "Rating",

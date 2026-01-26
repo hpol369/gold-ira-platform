@@ -9,12 +9,13 @@ import { RefreshCw, Shield, Clock, CheckCircle2, ArrowRight, AlertTriangle, Coin
 
 export const metadata: Metadata = {
     title: "Silver IRA Rollover Guide 2026: How to Transfer Your 401k to Silver",
-    description: "Complete guide to rolling over your 401k, IRA, or retirement account to a Silver IRA. Learn the step-by-step process, tax rules, and best companies for silver IRA rollovers.",
+    description: "Silver IRA rollover guide. How to transfer your 401k or IRA to silver tax-free. Step-by-step process, eligible accounts, and top companies.",
     keywords: ["silver ira rollover", "401k to silver ira", "silver ira transfer", "rollover to silver ira", "convert ira to silver", "silver rollover"],
     openGraph: {
         title: "Silver IRA Rollover Guide 2026: How to Transfer Your 401k to Silver",
         description: "Complete guide to rolling over your retirement account to a Silver IRA without taxes or penalties.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

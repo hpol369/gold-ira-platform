@@ -10,12 +10,13 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Birch Gold Fees 2026: Complete Fee Breakdown & Cost Analysis",
-    description: "Complete breakdown of Birch Gold fees including setup costs, annual fees, storage charges, and spreads. Compare Birch Gold fees to Augusta Precious Metals and find the best value.",
+    description: "Birch Gold fees breakdown: setup costs, annual fees, storage charges, and spreads. Compare to Augusta Precious Metals for best value.",
     keywords: ["birch gold fees", "birch gold group fees", "birch gold ira fees", "birch gold costs", "gold ira fees comparison"],
     openGraph: {
         title: "Birch Gold Fees 2026: Complete Fee Breakdown & Cost Analysis",
         description: "Complete breakdown of Birch Gold fees. Compare setup costs, annual fees, storage charges, and spreads with Augusta Precious Metals.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
     twitter: {
         card: "summary_large_image",

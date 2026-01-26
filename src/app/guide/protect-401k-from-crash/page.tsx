@@ -16,6 +16,7 @@ export const metadata: Metadata = {
         title: "Protect Your 401(k) From Market Crash - 2026 Guide",
         description: "Proven strategies to protect your 401(k) from stock market crashes and economic downturns.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

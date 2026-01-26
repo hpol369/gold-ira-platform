@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Gold IRA Academy - Free Course | Rich Dad Retirement",
   description:
-    "Master Gold IRA investing with our free 10-module course. Learn everything from basics to advanced strategies for protecting your retirement with precious metals.",
+    "Free 10-module Gold IRA course. Learn the basics to advanced strategies for protecting your retirement with precious metals.",
 };
 
 const modules = [

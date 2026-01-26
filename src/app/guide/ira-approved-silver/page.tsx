@@ -12,13 +12,14 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-    title: "IRA Approved Silver 2026: Complete List of IRS-Eligible Silver Coins & Bars",
-    description: "Complete list of IRA approved silver coins and bars for 2026. American Silver Eagles, Canadian Maple Leafs, and approved silver bars. 99.9% purity requirement explained.",
+    title: "IRA Approved Silver: IRS-Eligible Coins & Bars List",
+    description: "IRA approved silver list for 2026. American Silver Eagles, Canadian Maple Leafs, approved bars, and 99.9% purity requirements explained.",
     keywords: ["ira approved silver", "ira eligible silver", "silver coins for ira", "silver bars for ira", "irs approved silver", "silver ira products"],
     openGraph: {
         title: "IRA Approved Silver 2026: Complete List of IRS-Eligible Silver",
         description: "Complete list of IRA approved silver coins and bars. Learn which silver products meet IRS purity requirements for your Silver IRA.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

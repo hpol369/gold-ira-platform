@@ -9,7 +9,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
     slug: 'checkbook-ira-reviews',
     title: 'Checkbook IRA Reviews: Best Providers & Custodians for 2026',
     subtitle: 'Compare top checkbook IRA companies, fees, and services to find the right custodian for your self-directed retirement account.',
-    metaTitle: 'Best Checkbook IRA Companies: Reviews & Comparison (2026) | Rich Dad Retirement',
+    metaTitle: 'Best Checkbook IRA Companies | Reviews 2026',
     metaDescription: 'Expert reviews of top checkbook IRA providers. Compare fees, services, and customer support to find the best checkbook IRA custodian for your self-directed retirement investing.',
     keywords: [
       'checkbook ira reviews',
@@ -202,7 +202,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
     slug: 'checkbook-ira-real-estate',
     title: 'Checkbook IRA Real Estate Investing: Complete Guide (2026)',
     subtitle: 'How to buy rental properties, fix-and-flips, and land with your IRA using checkbook control for maximum flexibility.',
-    metaTitle: 'Checkbook IRA Real Estate: How to Invest in Property Tax-Free | Rich Dad Retirement',
+    metaTitle: 'Checkbook IRA Real Estate: Tax-Free Property Guide',
     metaDescription: 'Learn how to use checkbook IRA to invest in real estate. Step-by-step guide to buying rental property, managing LLC structure, and avoiding prohibited transactions.',
     keywords: [
       'checkbook ira real estate',
@@ -404,7 +404,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
     slug: 'self-directed-ira-llc-operating-agreement',
     title: 'Self-Directed IRA LLC Operating Agreement: What You Need (2026)',
     subtitle: 'Essential provisions, state requirements, and template guidance for your IRA LLC operating agreement to maintain compliance.',
-    metaTitle: 'IRA LLC Operating Agreement Template & Requirements | Rich Dad Retirement',
+    metaTitle: 'IRA LLC Operating Agreement | Template Guide',
     metaDescription: 'Learn what must be in your self-directed IRA LLC operating agreement to stay IRS compliant. Includes key provisions, state requirements, and where to get templates.',
     keywords: [
       'self directed ira llc operating agreement',
@@ -604,7 +604,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
     slug: 'solo-401k-checkbook-control',
     title: 'Solo 401k Checkbook Control: Better Than Checkbook IRA? (2026)',
     subtitle: 'Why self-employed investors increasingly choose Solo 401k over checkbook IRA for retirement real estate and alternative investments.',
-    metaTitle: 'Solo 401k Checkbook Control vs Checkbook IRA | Rich Dad Retirement',
+    metaTitle: 'Solo 401k Checkbook Control vs Checkbook IRA',
     metaDescription: 'Solo 401k with checkbook control offers higher contributions, easier compliance, and Roth option. Compare to checkbook IRA for self-employed and small business owners.',
     keywords: [
       'solo 401k checkbook control',
@@ -799,7 +799,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
     slug: 'checkbook-ira-gold',
     title: 'Checkbook IRA Gold: Buy Precious Metals with Direct Control (2026)',
     subtitle: 'How to use checkbook IRA to invest in physical gold and silver with faster transactions and better dealer access.',
-    metaTitle: 'Checkbook IRA Gold: Direct Control Precious Metals Guide | Rich Dad Retirement',
+    metaTitle: 'Checkbook IRA Gold: Direct Control Guide',
     metaDescription: 'Learn how to buy gold and silver with checkbook IRA. IRS requirements, approved metals, storage rules, and advantages of checkbook control for precious metals investing.',
     keywords: [
       'checkbook ira gold',
@@ -991,7 +991,7 @@ export const checkbookIraArticles: LearnArticleRegistry = {
     slug: 'checkbook-ira-prohibited-transactions',
     title: 'Checkbook IRA Prohibited Transactions: What You Cannot Do (2026)',
     subtitle: 'Critical IRS rules to avoid disqualifying your checkbook IRA—violations can cost you your entire retirement account.',
-    metaTitle: 'Checkbook IRA Prohibited Transactions Rules | Rich Dad Retirement',
+    metaTitle: 'Checkbook IRA Prohibited Transactions Rules',
     metaDescription: 'Learn the IRS prohibited transaction rules for checkbook IRA. Understand disqualified persons, self-dealing rules, and penalties to protect your retirement savings.',
     keywords: [
       'checkbook ira rules',

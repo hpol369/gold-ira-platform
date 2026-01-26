@@ -367,7 +367,7 @@ export const scamMiscArticles: LearnArticleRegistry = {
     slug: 'egwp-medicare',
     title: 'EGWP Medicare: How Employer Group Waiver Plans Work for Retiree Drug Coverage',
     subtitle: 'Your employer offers retiree drug coverage through an EGWP. Here\'s what that means and how it compares to individual Medicare Part D.',
-    metaTitle: 'EGWP Medicare: Employer Group Waiver Plan Drug Coverage Explained (2025)',
+    metaTitle: 'EGWP Medicare: Employer Drug Coverage Explained',
     metaDescription: 'Learn what EGWP Medicare is, how employer group waiver plans provide Part D coverage, differences from individual plans, and employer subsidy benefits.',
     keywords: [
       'egwp medicare',
@@ -540,7 +540,7 @@ export const scamMiscArticles: LearnArticleRegistry = {
     slug: 'rental-income-retirement-strategy',
     title: 'Rental Income Retirement Strategy: Building Passive Income for Your Golden Years',
     subtitle: 'Real estate can provide reliable retirement income. Here\'s how to build a rental portfolio, the math behind passive income, and using Self-Directed IRAs for real estate.',
-    metaTitle: 'Rental Income Retirement Strategy: Real Estate Passive Income Guide (2025)',
+    metaTitle: 'Rental Income Retirement Strategy | Passive Income',
     metaDescription: 'Learn how to build rental income for retirement, calculate passive income math, use Self-Directed IRAs for real estate, and manage properties in your golden years.',
     keywords: [
       'rental income retirement',

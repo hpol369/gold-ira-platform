@@ -10,7 +10,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     title: 'Physician Retirement Planning: Complete Guide for Doctors',
     subtitle: 'Strategic retirement planning for medical professionals - from practice sale to tax-optimized retirement accounts.',
 
-    metaTitle: 'Physician Retirement Planning: Doctor Tax Strategies 2026 | Rich Dad Retirement',
+    metaTitle: 'Physician Retirement Planning: Doctor Strategies',
     metaDescription: 'Complete physician retirement planning guide. Learn malpractice tail coverage, practice sale strategies, defined benefit plans, and how doctors protect wealth with Gold IRA.',
     keywords: ['physician retirement planning', 'doctor retirement planning', 'medical professional retirement', 'physician tax planning'],
 
@@ -230,7 +230,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     title: 'High Net Worth Retirement Planning: Wealth Preservation Strategies',
     subtitle: 'Advanced retirement planning for millionaires - estate tax planning, asset protection, and tax diversification.',
 
-    metaTitle: 'High Net Worth Retirement Planning: Wealthy Strategies 2026 | Rich Dad Retirement',
+    metaTitle: 'High Net Worth Retirement Planning Strategies',
     metaDescription: 'Complete high-net-worth retirement guide. Learn estate tax planning, asset protection trusts, tax diversification, and alternative investments including Gold IRA for millionaires.',
     keywords: ['high net worth retirement planning', 'wealthy retirement planning', 'retirement planning millionaires', 'estate tax planning'],
 
@@ -461,7 +461,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     title: 'CPA Retirement Planning: Accountant Practice Succession Guide',
     subtitle: 'Strategic retirement planning for CPAs - practice succession, tax-advantaged strategies, and wealth protection.',
 
-    metaTitle: 'CPA Retirement Planning: Accounting Firm Succession 2026 | Rich Dad Retirement',
+    metaTitle: 'CPA Retirement Planning | Firm Succession',
     metaDescription: 'Complete CPA retirement planning guide. Learn accounting practice succession, tax-advantaged strategies CPAs know, maximizing deductions, and Gold IRA for inflation hedge.',
     keywords: ['cpa retirement planning', 'accountant retirement', 'accounting firm succession', 'cpa practice sale'],
 
@@ -665,7 +665,7 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     title: 'Attorney Retirement Planning: Law Firm Partner Exit Strategies',
     subtitle: 'Retirement planning for lawyers - partnership buyouts, deferred compensation, and wealth protection.',
 
-    metaTitle: 'Attorney Retirement Planning: Law Firm Exit Guide 2026 | Rich Dad Retirement',
+    metaTitle: 'Attorney Retirement Planning | Law Firm Exit',
     metaDescription: 'Complete attorney retirement planning guide. Learn partnership buyouts, deferred compensation, malpractice tail coverage, asset protection, and retirement strategies for lawyers.',
     keywords: ['attorney retirement planning', 'lawyer retirement', 'law firm partner retirement', 'legal professional retirement'],
 

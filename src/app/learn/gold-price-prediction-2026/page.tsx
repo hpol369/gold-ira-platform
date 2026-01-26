@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Gold Price Prediction 2026: Expert Forecasts & Analysis",
         description: "What will gold prices do in 2026? Expert predictions from major banks and analysts.",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

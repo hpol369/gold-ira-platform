@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Inheritance Calculator 2026 | Free Inheritance Tax Calculator",
   description:
-    "Free inheritance calculator for 2026. Calculate inheritance taxes, understand the 10-year rule for inherited IRAs, step-up in basis benefits, and plan smart investment strategies for your inheritance.",
+    "Free inheritance calculator. Calculate taxes on inherited IRAs, understand the 10-year rule, step-up in basis, and state inheritance taxes.",
   keywords: [
     "inheritance calculator",
     "inheritance tax calculator",

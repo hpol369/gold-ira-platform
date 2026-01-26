@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "How Much Gold Should I Have in My Portfolio?",
         description: "Expert recommendations on gold allocation. Learn the 5-15% rule and age-based strategies.",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

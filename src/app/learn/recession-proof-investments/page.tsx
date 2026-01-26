@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "Recession-Proof Investments: Protect Your Portfolio",
         description: "7 investments that have historically performed well during recessions and economic crises.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

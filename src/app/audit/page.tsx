@@ -27,6 +27,7 @@ export default function AuditPage() {
                 </div>
 
                 <Container className="relative z-10">
+                    <h1 className="sr-only">Free Retirement Account Finder Quiz</h1>
                     <Suspense fallback={<div className="min-h-[400px] flex items-center justify-center"><div className="animate-pulse text-slate-400">Loading quiz...</div></div>}>
                         <UniversalQuiz />
                     </Suspense>

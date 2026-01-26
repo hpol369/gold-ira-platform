@@ -24,6 +24,7 @@ export const metadata: Metadata = {
         title: "Checkbook IRA Guide 2026: Take Direct Control of Your Retirement",
         description: "Everything you need to know about Checkbook IRAs and checkbook control for self-directed retirement accounts.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

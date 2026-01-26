@@ -12,11 +12,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "What to Do with an Old 401(k): 5 Options for 2026",
-    description: "Left a job with a 401(k)? Learn your 5 options: leave it, rollover to new employer, rollover to IRA, cash out, or convert to Gold IRA. Make the smart choice for your retirement.",
+    description: "Left a job with a 401(k)? Learn your 5 options: leave it, rollover to new employer, IRA, cash out, or Gold IRA conversion.",
     openGraph: {
         title: "What to Do with an Old 401(k): Your Complete Options Guide",
         description: "Discover the best options for your old 401(k) from a previous employer. Compare rollovers, cashouts, and Gold IRA conversions.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

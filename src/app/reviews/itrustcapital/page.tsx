@@ -24,12 +24,13 @@ import {
 
 export const metadata: Metadata = {
     title: "iTrustCapital Review 2026: Fees, Pros & Cons",
-    description: "Honest iTrustCapital review covering their 1% trading fee, supported cryptocurrencies, gold/silver options, and whether it's the right crypto IRA for your retirement.",
+    description: "iTrustCapital review 2026. 1% trading fee, supported cryptos, gold/silver options. Is this crypto IRA right for you?",
     keywords: "itrustcapital, itrustcapital review, itrustcapital fees, crypto ira, bitcoin ira, itrustcapital pros and cons",
     openGraph: {
         title: "iTrustCapital Review 2026: Fees, Pros & Cons",
         description: "Comprehensive iTrustCapital review - America's leading crypto IRA platform. See our honest analysis of fees, features, and whether it's right for you.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

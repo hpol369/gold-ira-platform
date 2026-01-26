@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Monte Carlo Retirement Simulator - Calculate Your Success Odds",
     description: "Run thousands of retirement scenarios to see the probability of your money lasting. Understand how gold and asset allocation impact your success rate.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

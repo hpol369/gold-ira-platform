@@ -25,6 +25,7 @@ export const metadata: Metadata = {
         title: "What is a Bitcoin IRA? Complete Guide 2026",
         description: "Everything you need to know about Bitcoin IRAs - tax benefits, how they work, and whether they're right for your retirement.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

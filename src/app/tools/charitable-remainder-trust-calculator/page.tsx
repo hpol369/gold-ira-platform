@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Charitable Remainder Trust Calculator 2026 | CRT Tool",
   description:
-    "Free charitable remainder trust calculator. Calculate income tax deductions, annual payouts, and charitable remainder for CRAT and CRUT trusts. Perfect for appreciated assets like gold.",
+    "Free CRT calculator. Calculate tax deductions, annual payouts, and remainder values for CRAT and CRUT charitable trusts.",
   keywords: [
     "charitable remainder trust calculator",
     "crt calculator",

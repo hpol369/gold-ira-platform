@@ -24,12 +24,13 @@ import {
 
 export const metadata: Metadata = {
     title: "Kingdom Trust Review 2026: Fees, Crypto IRA & Pros/Cons",
-    description: "Comprehensive Kingdom Trust review covering their crypto IRA options, alternative assets, fee structure, and real customer experiences. Specializes in Bitcoin IRAs.",
+    description: "Kingdom Trust review 2026. Crypto IRA options, alternative assets, fees, and customer experiences. Bitcoin IRA specialist.",
     keywords: "kingdom trust reviews, kingdom trust company, kingdom trust ira, kingdom trust crypto, kingdom trust bitcoin ira",
     openGraph: {
         title: "Kingdom Trust Review 2026: Alternative Asset Specialist",
         description: "Full Kingdom Trust review - is it the right custodian for your crypto IRA? See our honest analysis of fees, crypto options, and alternatives.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

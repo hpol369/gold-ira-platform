@@ -25,6 +25,7 @@ export const metadata: Metadata = {
         title: "Central Banks Buying Gold - What It Means for You",
         description: "Central banks are buying gold at record pace. Learn why and what it means for individual investors.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

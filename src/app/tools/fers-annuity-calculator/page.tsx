@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = {
   title: "FERS Annuity Calculator 2026 | Free Federal Pension Calculator",
   description:
-    "Free FERS annuity calculator for federal employees. Calculate your FERS pension with the 1% or 1.1% multiplier, survivor benefit reductions, and 10-year COLA projections.",
+    "Free FERS annuity calculator. Calculate your federal pension with 1% or 1.1% multiplier, survivor benefit options, and COLA projections.",
   keywords: [
     "fers annuity calculator",
     "fers pension calculator",

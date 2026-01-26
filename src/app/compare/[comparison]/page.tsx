@@ -72,8 +72,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "Comparison Not Found" };
   }
 
-  const title = `${companyA.name} vs ${companyB.name}: 2026 Gold IRA Comparison`;
-  const description = `Compare ${companyA.name} vs ${companyB.name}. Side-by-side analysis of fees, minimums, BBB ratings, and customer reviews to find the best Gold IRA for you.`;
+  const title = `${companyA.name} vs ${companyB.name} Comparison`;
+  const description = `Compare ${companyA.name} vs ${companyB.name}. Side-by-side analysis of fees, minimums, BBB ratings, and reviews.`;
 
   return {
     title,
@@ -82,6 +82,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       type: "article",
+      images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
   };
 }

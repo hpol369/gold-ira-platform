@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     title: "Gold IRA Company Reviews 2026: Honest Ratings & Analysis",
     description: "Compare the top Gold IRA companies with our unbiased reviews. We analyze fees, BBB ratings, customer complaints, and minimum investments.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

@@ -23,11 +23,12 @@ import {
 
 export const metadata: Metadata = {
   title: "Gold as Inflation Protection | Preserve Purchasing Power",
-  description: "Learn how gold has protected against inflation for centuries. Understand why gold preserves purchasing power and how it can protect your retirement savings from rising prices.",
+  description: "Learn how gold protects against inflation. Understand why gold preserves purchasing power and shields retirement savings.",
   openGraph: {
     title: "Gold as Inflation Protection | Preserve Purchasing Power",
     description: "Discover how gold has historically preserved purchasing power during periods of high inflation and monetary expansion.",
     type: "article",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

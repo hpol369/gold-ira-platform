@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "401(k) Alternatives: Beyond the Traditional Retirement Plan",
         description: "Discover 7 powerful alternatives to the traditional 401(k) for building retirement wealth.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

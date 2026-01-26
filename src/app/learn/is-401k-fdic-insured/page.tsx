@@ -19,6 +19,7 @@ export const metadata: Metadata = {
         title: "Is 401k FDIC Insured? The Truth About Retirement Account Protection",
         description: "401(k)s are NOT FDIC insured. Discover what protections actually exist and how to safeguard your retirement savings.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

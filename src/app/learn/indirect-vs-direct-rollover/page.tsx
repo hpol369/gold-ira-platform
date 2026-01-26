@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Direct vs Indirect Rollover: Which Should You Choose?",
         description: "Understand the critical differences between direct and indirect rollovers. Avoid the 20% withholding trap.",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

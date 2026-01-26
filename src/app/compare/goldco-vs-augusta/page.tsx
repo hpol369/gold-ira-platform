@@ -29,6 +29,7 @@ export const metadata: Metadata = {
         title: "Goldco vs Augusta Precious Metals: In-Depth 2026 Comparison",
         description: "Complete side-by-side comparison of Goldco and Augusta Precious Metals. Find out which Gold IRA company is right for your retirement.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

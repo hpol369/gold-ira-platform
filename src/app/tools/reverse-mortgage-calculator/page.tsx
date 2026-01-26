@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Reverse Mortgage Calculator 2026 | Free HECM Payout Estimator",
   description:
-    "Free reverse mortgage calculator for 2026. Calculate how much equity you can access, compare payout options (lump sum, line of credit, monthly payments), and understand true costs including fees and interest.",
+    "Free reverse mortgage calculator. Calculate equity access, compare lump sum vs line of credit vs monthly payouts, and understand HECM costs.",
   keywords: [
     "reverse mortgage calculator",
     "hecm calculator",

@@ -21,7 +21,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "CalPERS Pension Calculator 2026 | Advanced Benefit Estimator",
   description:
-    "Advanced CalPERS pension calculator with employer-specific formulas, reciprocity support, optimal retirement age analysis, and health benefits eligibility. State, school, local, and safety employees.",
+    "CalPERS pension calculator with employer-specific formulas, reciprocity support, and optimal retirement age analysis for 2026.",
   keywords: [
     "calpers pension calculator",
     "calpers benefit estimator",

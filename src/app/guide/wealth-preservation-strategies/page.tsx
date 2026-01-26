@@ -16,6 +16,7 @@ export const metadata: Metadata = {
         title: "Wealth Preservation Strategies - 2026 Guide",
         description: "Proven strategies to protect and preserve wealth for generations.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

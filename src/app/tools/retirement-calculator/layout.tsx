@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Can I Retire Calculator - See If Your Savings Last",
   description:
-    "Free retirement calculator to answer 'can I retire?' Calculate if $300k, $500k, or $1 million is enough to retire. See how long your savings will last and get personalized recommendations.",
+    "Free retirement calculator. See if $300k, $500k, or $1M is enough to retire. Calculate how long your savings will last.",
   keywords: [
     "can i retire with 300k",
     "can i retire with 500k",
@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     description:
       "Free calculator to see if you can retire. Find out if $300k, $500k, or $1 million is enough for your retirement goals.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

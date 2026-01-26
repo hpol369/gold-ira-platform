@@ -29,6 +29,7 @@ export const metadata: Metadata = {
         title: "Benetrends Review 2026: The Original ROBS Provider",
         description: "Benetrends pioneered ROBS funding in 1983. Complete review covering fees, services, and our honest verdict.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 
@@ -36,9 +37,8 @@ const reviewJsonLd = {
     "@context": "https://schema.org",
     "@type": "Review",
     "itemReviewed": {
-        "@type": "FinancialService",
-        "name": "Benetrends",
-        "image": "https://www.richdadretirement.com/logo.png"
+        "@type": "Organization",
+        "name": "Benetrends"
     },
     "reviewRating": {
         "@type": "Rating",

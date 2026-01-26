@@ -33,6 +33,7 @@ export const metadata: Metadata = {
         title: "Is It Too Late to Save for Retirement? (Spoiler: It's NOT)",
         description: "Practical strategies for late starters. Whether you're 50, 55, or 60 - there's still time to build meaningful retirement wealth.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

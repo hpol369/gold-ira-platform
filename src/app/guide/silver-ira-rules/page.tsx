@@ -8,12 +8,13 @@ import { Scale, AlertTriangle, CheckCircle2, Clock, Coins, Shield, FileText, Arr
 
 export const metadata: Metadata = {
     title: "Silver IRA Rules 2026: IRS Requirements, Contribution Limits & More",
-    description: "Complete guide to silver IRA rules and regulations. Learn IRS purity requirements, contribution limits, withdrawal rules, storage requirements, and prohibited transactions.",
+    description: "Silver IRA rules for 2026. IRS purity requirements, contribution limits, withdrawal rules, storage requirements, and prohibited transactions.",
     keywords: ["silver ira rules", "silver ira regulations", "silver ira contribution limits", "silver ira withdrawal rules", "silver ira purity requirements", "silver ira storage rules"],
     openGraph: {
         title: "Silver IRA Rules 2026: IRS Requirements, Contribution Limits & More",
         description: "Complete guide to silver IRA rules. IRS purity requirements, contribution limits, withdrawal rules, and storage requirements.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

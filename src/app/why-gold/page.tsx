@@ -22,11 +22,12 @@ import {
 
 export const metadata: Metadata = {
   title: "Why Gold for Retirement? | Inflation Protection & Portfolio Safety",
-  description: "Understand why millions of Americans add gold to their retirement portfolios. Learn about inflation protection, portfolio diversification, and wealth preservation.",
+  description: "Why add gold to your retirement? Learn about inflation protection, portfolio diversification, and wealth preservation strategies.",
   openGraph: {
     title: "Why Gold for Retirement? | Inflation Protection & Portfolio Safety",
     description: "Discover the reasons why gold has been a trusted store of value for thousands of years and how it can protect your retirement savings.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

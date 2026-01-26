@@ -22,12 +22,13 @@ import {
 
 export const metadata: Metadata = {
     title: "Crypto IRA Guide 2026: Invest in Bitcoin & Crypto Tax-Free",
-    description: "Complete guide to Crypto IRAs. Learn how to invest in Bitcoin, Ethereum, and 30+ cryptocurrencies within a tax-advantaged retirement account. Compare top providers.",
+    description: "Crypto IRA guide for 2026. Invest in Bitcoin and 30+ cryptocurrencies tax-free in your retirement account. Compare top providers.",
     keywords: "crypto ira, bitcoin ira, cryptocurrency ira, self directed ira crypto, crypto retirement account, bitcoin 401k",
     openGraph: {
         title: "Crypto IRA Guide 2026: Tax-Advantaged Cryptocurrency Investing",
         description: "Learn how to invest in cryptocurrency through an IRA and potentially save thousands in taxes. Compare the best crypto IRA providers.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

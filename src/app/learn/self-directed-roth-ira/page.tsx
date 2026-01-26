@@ -24,6 +24,7 @@ export const metadata: Metadata = {
         title: "Self-Directed Roth IRA Guide 2026: Tax-Free Alternative Investments",
         description: "Combine the power of tax-free Roth growth with alternative investments like real estate, crypto, and gold.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

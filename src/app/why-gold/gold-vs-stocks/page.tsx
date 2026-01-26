@@ -25,6 +25,7 @@ export const metadata: Metadata = {
         title: "Gold vs Stocks: Complete Comparison Guide",
         description: "When does gold outperform stocks? Learn how to balance both for a resilient retirement portfolio.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

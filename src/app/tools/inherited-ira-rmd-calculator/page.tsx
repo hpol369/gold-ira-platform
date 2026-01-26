@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Inherited IRA RMD Calculator 2026 | SECURE Act Rules",
   description:
-    "Free inherited IRA RMD calculator for 2026. Calculate Required Minimum Distributions for beneficiary IRAs under SECURE Act rules. Includes 10-year rule, spouse options, and EDB calculations.",
+    "Free inherited IRA RMD calculator. Calculate distributions under SECURE Act 10-year rule for beneficiaries, spouses, and EDBs.",
   keywords: [
     "inherited ira rmd calculator",
     "inherited ira calculator",

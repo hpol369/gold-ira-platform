@@ -29,6 +29,7 @@ export const metadata: Metadata = {
         title: "Rocket Dollar Review 2026: Best Checkbook IRA?",
         description: "Complete Rocket Dollar review - is it the best self-directed IRA with checkbook control? See our honest analysis.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 
+export const DEFAULT_OG_IMAGE = {
+  url: "/og-default.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Rich Dad Retirement - Protect Your Retirement with Gold",
+};
+
+export function getOpenGraphImages() {
+  return [DEFAULT_OG_IMAGE];
+}
+
 /**
  * Helper function to create consistent page metadata with Open Graph tags
  * Ensures all pages have proper og:image and og:url tags

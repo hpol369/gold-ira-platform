@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Gold Bullion vs Gold Coins: Which Is Better for Your IRA?",
         description: "Compare gold bullion bars vs gold coins for your IRA. Learn the pros, cons, premiums, and liquidity differences.",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

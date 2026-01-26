@@ -18,6 +18,7 @@ export const metadata: Metadata = {
         title: "Is Silver a Good Investment in 2026? Complete Analysis",
         description: "Expert analysis on whether silver is a good investment for your portfolio in 2026.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

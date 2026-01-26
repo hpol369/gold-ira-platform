@@ -24,6 +24,7 @@ export const metadata: Metadata = {
         title: "Real Estate IRA Rules 2026: IRS Requirements Guide",
         description: "Everything you need to know about real estate IRA rules, prohibited transactions, and staying IRS compliant.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "HECM Calculator 2026 | Free FHA Reverse Mortgage Calculator",
   description:
-    "Free HECM calculator for 2026. Calculate FHA-insured Home Equity Conversion Mortgage proceeds, compare to proprietary reverse mortgages, and understand MIP costs. Updated with 2024 lending limits.",
+    "Free HECM calculator. Calculate FHA reverse mortgage proceeds, compare to proprietary options, and understand MIP costs. 2024 limits included.",
   keywords: [
     "hecm calculator",
     "hecm reverse mortgage calculator",

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
         title: "Best Solo 401k Providers 2026 | Compare Plans & Fees",
         description: "Compare top Solo 401k providers including Fidelity, Schwab, Vanguard, and self-directed custodians. Find the best plan for your self-employment income.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

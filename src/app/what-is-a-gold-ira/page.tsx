@@ -24,11 +24,12 @@ import {
 
 export const metadata: Metadata = {
   title: "What Is a Gold IRA? Complete Guide 2026 | How It Works",
-  description: "Learn what a Gold IRA is, how it works, and whether it's right for your retirement. Understand rules, custodians, storage, and IRS requirements for precious metals IRAs.",
+  description: "Learn what a Gold IRA is and how it works. Understand IRS rules, custodians, storage requirements, and if it's right for you.",
   openGraph: {
     title: "What Is a Gold IRA? Complete Guide 2026",
     description: "Everything you need to know about Gold IRAs - how they work, IRS rules, custodians, storage, and whether a precious metals IRA is right for you.",
     type: "article",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

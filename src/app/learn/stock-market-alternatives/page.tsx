@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "Stock Market Alternatives - 2026 Guide",
         description: "8 proven alternatives to stock market investing for diversification and wealth protection.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

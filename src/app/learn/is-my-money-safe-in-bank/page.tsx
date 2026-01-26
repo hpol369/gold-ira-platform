@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "Is My Money Safe in the Bank? 2026 Guide",
         description: "FDIC limits, bank failure risks, and how to protect your savings beyond traditional banking.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

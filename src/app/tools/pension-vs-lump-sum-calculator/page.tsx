@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Pension vs Lump Sum Calculator 2026 | Free Pension Buyout Calculator",
   description:
-    "Free pension vs lump sum calculator. Compare monthly pension payments to lump sum buyout offers with break-even analysis, NPV calculations, and inflation-adjusted projections.",
+    "Free pension vs lump sum calculator. Compare buyout offers with break-even analysis and inflation-adjusted NPV projections.",
   keywords: [
     "pension vs lump sum calculator",
     "pension buyout calculator",

@@ -31,6 +31,7 @@ export const metadata: Metadata = {
         title: "Preferred Trust Review 2026: Self-Directed IRA Custodian",
         description: "Full Preferred Trust review - is it the right SDIRA custodian for you? See our honest analysis of fees, services, and alternatives.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

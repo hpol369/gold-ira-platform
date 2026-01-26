@@ -13,12 +13,13 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: "Silver IRA Guide 2026: How to Invest in Silver for Retirement",
-    description: "Complete silver IRA guide for 2026. Learn how to open a silver IRA, IRS-approved silver coins & bars, 401k rollover rules, fees, and which companies offer the best silver IRAs.",
+    description: "Silver IRA guide for 2026. Learn how to open a silver IRA, IRS-approved coins and bars, rollover rules, fees, and top companies.",
     keywords: ["silver ira", "silver ira guide", "ira approved silver", "silver ira rollover", "silver ira companies", "invest in silver ira"],
     openGraph: {
         title: "Silver IRA Guide 2026: How to Invest in Silver for Retirement",
         description: "Complete silver IRA guide. Learn IRS rules, approved silver products, fees, and how to roll over your 401k into physical silver.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Pension Present Value Calculator 2026 | NPV of Pension Calculator",
   description:
-    "Free pension present value calculator. Calculate the lump sum equivalent of your pension for retirement planning, divorce settlements, or comparing job offers. Includes COLA and survivor benefit calculations.",
+    "Free pension present value calculator. Calculate lump sum equivalent of your pension for divorce, retirement planning, or job comparison.",
   keywords: [
     "pension present value calculator",
     "pension value calculator",

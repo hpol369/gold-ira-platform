@@ -24,13 +24,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Millennium Trust Review 2026: Automatic Rollover & Orphaned 401k Specialist",
+    title: "Millennium Trust Review: Orphaned 401k Specialist",
     description: "Comprehensive Millennium Trust review covering their automatic rollover services, orphaned 401k accounts, fee structure, and when you'd actually use them.",
     keywords: "millennium trust reviews, millennium trust company, millennium trust automatic rollover, orphaned 401k, millennium trust fees",
     openGraph: {
         title: "Millennium Trust Review 2026: Automatic Rollover Specialist",
         description: "Full Millennium Trust review - do you have an orphaned 401k? See our honest analysis of their services, fees, and when to use them.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

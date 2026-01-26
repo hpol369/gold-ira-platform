@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "401(k) Risk Analyzer - Check Your Portfolio Exposure",
   description:
-    "Free tool to analyze your 401(k) risk exposure. See how much you could lose in a market crash and learn how to protect your retirement savings with diversification.",
+    "Free 401(k) risk analyzer. See how much you could lose in a market crash and learn how to protect your savings.",
   keywords: [
     "401k risk calculator",
     "what is my 401k invested in",
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Free tool to analyze your 401(k) risk exposure. See how much you could lose in a market crash.",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
 

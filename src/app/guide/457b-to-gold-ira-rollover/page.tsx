@@ -11,7 +11,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "457(b) to Gold IRA Rollover Guide: For Government Employees (2026)",
-    description: "Complete guide for state, local, and federal employees. Learn how to roll over your 457(b) deferred compensation plan to a Gold IRA tax-free. No early withdrawal penalty.",
+    description: "457(b) to Gold IRA rollover guide for government employees. Transfer your deferred compensation plan tax-free with no early withdrawal penalty.",
 };
 
 const tocItems = [

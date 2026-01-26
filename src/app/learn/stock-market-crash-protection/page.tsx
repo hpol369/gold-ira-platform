@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         title: "Stock Market Crash Protection: Safeguard Your Retirement",
         description: "Proven strategies to protect your retirement portfolio from market crashes and economic downturns.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

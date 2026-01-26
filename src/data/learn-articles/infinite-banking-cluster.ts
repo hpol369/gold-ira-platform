@@ -9,7 +9,7 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
     slug: 'infinite-banking-concept-scam',
     title: 'Is the Infinite Banking Concept a Scam?',
     subtitle: 'An objective analysis of infinite banking: how it actually works, who it benefits, who should avoid it, and red flags to watch for.',
-    metaTitle: 'Is Infinite Banking a Scam? Honest Analysis (2025) | Rich Dad Retirement',
+    metaTitle: 'Is Infinite Banking a Scam? Honest Analysis',
     metaDescription: 'Unbiased analysis of the infinite banking concept. Learn how it works, legitimate pros and cons, who it is for, and red flags that signal a scam.',
     keywords: [
       'infinite banking concept scam',
@@ -233,7 +233,7 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
     slug: 'be-your-own-bank-life-insurance',
     title: 'Be Your Own Bank with Life Insurance: How It Works',
     subtitle: 'The mechanics of using whole life insurance as a personal banking system—cash value growth, policy loans, and requirements.',
-    metaTitle: 'Be Your Own Bank Life Insurance: Complete Guide (2025) | Rich Dad Retirement',
+    metaTitle: 'Be Your Own Bank Life Insurance Guide',
     metaDescription: 'Learn how to use whole life insurance to be your own bank. Understand cash value, policy loans, requirements, and if banking on yourself is right for you.',
     keywords: [
       'be your own bank life insurance',
@@ -452,7 +452,7 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
     slug: 'become-your-own-banker',
     title: 'Become Your Own Banker: Nelson Nash Infinite Banking',
     subtitle: 'Nelson Nash book Becoming Your Own Banker introduced infinite banking to the masses. Here is what it actually teaches and how to implement it.',
-    metaTitle: 'Become Your Own Banker: Nelson Nash Guide (2025) | Rich Dad Retirement',
+    metaTitle: 'Become Your Own Banker: Nelson Nash Guide',
     metaDescription: 'Complete guide to Nelson Nash Becoming Your Own Banker and infinite banking concept. Learn the principles, implementation steps, and if it is right for you.',
     keywords: [
       'become your own banker',
@@ -676,7 +676,7 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
     slug: 'infinite-banking-vs-roth-ira',
     title: 'Infinite Banking vs Roth IRA: Which Is Better for Retirement?',
     subtitle: 'Head-to-head comparison of infinite banking and Roth IRA for retirement savings—tax treatment, flexibility, returns, and who should use each.',
-    metaTitle: 'Infinite Banking vs Roth IRA: Comparison Guide (2025) | Rich Dad Retirement',
+    metaTitle: 'Infinite Banking vs Roth IRA Comparison',
     metaDescription: 'Compare infinite banking (whole life insurance) to Roth IRA for retirement. Analyze tax benefits, returns, fees, flexibility, and which strategy is best for you.',
     keywords: [
       'infinite banking vs roth ira',

@@ -23,6 +23,7 @@ export const metadata: Metadata = {
         title: "Best Real Estate IRA Custodians 2026",
         description: "Compare top self-directed IRA custodians for real estate investing. Detailed comparison of fees, features, and services.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

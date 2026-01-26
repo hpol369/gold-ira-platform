@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Noble Gold Fees Breakdown 2026: Complete Cost Analysis",
         description: "Complete breakdown of Noble Gold fees. Compare setup costs, annual fees, storage charges, and spreads.",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

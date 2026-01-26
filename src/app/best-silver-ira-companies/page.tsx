@@ -11,7 +11,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies of 2026 | Top Providers",
-    description: "Compare the best Silver IRA companies for 2026. We analyze silver selection, premiums, storage options, and fees to help you find the right silver IRA provider for your retirement.",
+    description: "Compare the best Silver IRA companies for 2026. Analysis of silver selection, premiums, storage options, and fees to find the right provider.",
     keywords: ["silver ira companies", "best silver ira companies", "silver ira providers", "top silver ira", "silver ira reviews", "silver retirement accounts"],
     openGraph: {
         title: "Best Silver IRA Companies of 2026 | Top-Rated Silver IRA Providers",

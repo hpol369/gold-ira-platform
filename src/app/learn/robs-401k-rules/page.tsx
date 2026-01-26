@@ -26,6 +26,7 @@ export const metadata: Metadata = {
         title: "ROBS 401k Rules 2026: IRS Requirements & Compliance Guide",
         description: "Everything you need to know about ROBS 401k rules, IRS requirements, and staying compliant.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

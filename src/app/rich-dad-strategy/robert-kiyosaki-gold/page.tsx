@@ -11,7 +11,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Robert Kiyosaki on Gold: Why Rich Dad Says Buy",
-    description: "Learn Robert Kiyosaki's gold investment strategy. Discover why the Rich Dad Poor Dad author recommends gold and silver for protecting wealth against inflation and dollar collapse.",
+    description: "Robert Kiyosaki's gold strategy. Why the Rich Dad author recommends gold and silver to protect wealth against inflation and dollar collapse.",
     openGraph: {
         title: "Robert Kiyosaki on Gold: The Rich Dad Investment Strategy",
         description: "Why Robert Kiyosaki recommends gold and silver for wealth protection.",

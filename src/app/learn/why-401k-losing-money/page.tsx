@@ -32,6 +32,7 @@ export const metadata: Metadata = {
         title: "Why Is My 401k Losing Money? Understanding the Causes",
         description: "Learn why your 401k might be losing value and what steps you can take to protect your retirement savings from further losses.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 

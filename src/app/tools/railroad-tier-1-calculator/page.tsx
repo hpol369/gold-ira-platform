@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Railroad Tier 1 Calculator 2026 | RRB Tier 1 Benefits Calculator",
   description:
-    "Free Railroad Tier 1 calculator for 2026. Calculate your Social Security equivalent benefits with WEP and GPO considerations. Compare railroad vs non-railroad earnings impact.",
+    "Free Railroad Tier 1 calculator. Calculate Social Security equivalent benefits with WEP/GPO considerations for railroad workers.",
   keywords: [
     "railroad tier 1 calculator",
     "rrb tier 1 benefits",

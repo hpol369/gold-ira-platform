@@ -19,6 +19,7 @@ export const metadata: Metadata = {
         title: "Gold vs Silver IRA: Which Precious Metal is Best for 2026?",
         description: "Compare gold vs silver for your retirement account. Volatility, growth potential, storage costs, and expert recommendations.",
         type: "article",
+        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
 };
 
