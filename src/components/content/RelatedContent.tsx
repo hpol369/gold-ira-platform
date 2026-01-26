@@ -142,7 +142,7 @@ export const relatedContentGroups = {
     { title: "401k Rollover", href: "/rollover/401k", type: "guide" as const },
     { title: "TSP Rollover", href: "/rollover/tsp", type: "guide" as const },
     { title: "IRA Transfer", href: "/rollover", type: "guide" as const },
-    { title: "Roth Conversion", href: "/rollover/roth", type: "guide" as const },
+    { title: "Roth Conversion", href: "/rollover/roth-ira-to-gold-ira", type: "guide" as const },
   ],
   taxes: [
     { title: "Tax Rules", href: "/learn/gold-ira-tax-rules", type: "learn" as const },

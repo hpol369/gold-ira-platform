@@ -379,7 +379,7 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'ira-rollover-mistakes',
       '401k-to-gold-ira-rollover'
     ],
-    relatedGuides: ['/guide/gold-ira-rollover-guide'],
+    relatedGuides: ['/rollover'],
     relatedTools: ['/tools/retirement-calculator']
   },
 

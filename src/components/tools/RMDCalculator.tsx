@@ -360,7 +360,7 @@ export function RMDCalculator() {
                   Roth IRAs have no Required Minimum Distributions during your lifetime.
                   If you don&apos;t need the income and want to leave a tax-free inheritance,
                   a Roth Gold IRA might be a better choice.{" "}
-                  <Link href="/rollover/roth" className="text-green-400 hover:underline">
+                  <Link href="/rollover/roth-ira-to-gold-ira" className="text-green-400 hover:underline">
                     Learn about Roth Gold IRAs →
                   </Link>
                 </p>

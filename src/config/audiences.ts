@@ -222,7 +222,7 @@ export const audiences: Record<string, AudienceData> = {
       "With substantial assets, you have options smaller investors don't. Insist on segregated (allocated) storage so your gold isn't mixed with others'. Consider platinum and palladium for additional diversification. Work with companies that assign a dedicated advisor who understands complex wealth strategies.",
     relatedLinks: [
       { title: "IRS-Approved Gold Coins", href: "/learn/ira-approved-gold-coins" },
-      { title: "Gold Storage Options", href: "/guide/gold-ira-storage" },
+      { title: "Gold Storage Options", href: "/learn/gold-ira-storage-fees" },
       { title: "Augusta Precious Metals", href: "/reviews/augusta-precious-metals" },
     ],
     faqQuestions: [
@@ -267,7 +267,7 @@ export const audiences: Record<string, AudienceData> = {
     specificAdvice:
       "Self-employed individuals have the best retirement options. A SEP Gold IRA lets you contribute up to 25% of net self-employment income (max $69,000). In good years, max it out with gold. In lean years, contribute less. This flexibility is your superpower.",
     relatedLinks: [
-      { title: "SEP IRA Rollover Guide", href: "/rollover/sep" },
+      { title: "SEP IRA Rollover Guide", href: "/rollover/sep-ira-to-gold-ira" },
       { title: "Gold IRA Tax Benefits", href: "/learn/gold-ira-tax-rules" },
       { title: "Compare Top Companies", href: "/compare" },
     ],
@@ -359,7 +359,7 @@ export const audiences: Record<string, AudienceData> = {
     specificAdvice:
       "Time is your biggest advantage. Even a small Gold IRA now (starting at $50,000) could grow substantially over 30+ years. Focus on low-fee options and consistent annual contributions. You'll likely see multiple market crashes before retirement—gold helps you sleep at night through all of them.",
     relatedLinks: [
-      { title: "Roth Gold IRA Guide", href: "/rollover/roth" },
+      { title: "Roth Gold IRA Guide", href: "/rollover/roth-ira-to-gold-ira" },
       { title: "Getting Started", href: "/guide/gold-ira-guide" },
       { title: "Compare Top Companies", href: "/compare" },
     ],
@@ -451,7 +451,7 @@ export const audiences: Record<string, AudienceData> = {
     specificAdvice:
       "For estate planning, a Roth Gold IRA is powerful. You pay taxes now, the gold grows tax-free, and your heirs inherit tax-free. Plus, they receive physical gold—an asset that has held value for 5,000 years. Consider this alongside your other estate planning tools.",
     relatedLinks: [
-      { title: "Roth Gold IRA Guide", href: "/rollover/roth" },
+      { title: "Roth Gold IRA Guide", href: "/rollover/roth-ira-to-gold-ira" },
       { title: "Gold IRA Tax Rules", href: "/learn/gold-ira-tax-rules" },
       { title: "Get Started", href: "/get-started" },
     ],
