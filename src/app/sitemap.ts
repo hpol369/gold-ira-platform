@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 import { audienceSlugs } from "@/config/audiences";
-import { getCompanySlugs } from "@/data/companies";
+import { getCompanySlugs, getAllCompanies } from "@/data/companies";
 import { getProviderSlugs, getAccountTypeSlugs } from "@/data/rollovers";
 import { getAllScenarioSlugs } from "@/data/scenarios";
 import { getAllAssetSlugs } from "@/data/assets";
@@ -347,6 +347,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // DYNAMIC COMPANY VS COMPANY COMPARISON PAGES
+  // ============================================
+  const allCompanies = getAllCompanies();
+  const companyComparisonSlugs: string[] = [];
+  for (let i = 0; i < allCompanies.length; i++) {
+    for (let j = i + 1; j < allCompanies.length; j++) {
+      // Both directions for SEO
+      companyComparisonSlugs.push(`${allCompanies[i].slug}-vs-${allCompanies[j].slug}`);
+      companyComparisonSlugs.push(`${allCompanies[j].slug}-vs-${allCompanies[i].slug}`);
+    }
+  }
+  const companyComparePages = companyComparisonSlugs.map((slug) => ({
+    url: `${baseUrl}/compare/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  // ============================================
   // GOLD VS [ASSET] COMPARISON PAGES
   // ============================================
   const assetSlugs = getAllAssetSlugs();
@@ -522,6 +541,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...reviewStaticPages,
     ...reviewDynamicPages,
     ...compareStaticPages,
+    ...companyComparePages,
     ...assetComparePages,
     ...rolloverAccountPages,
     ...rolloverProviderPages,

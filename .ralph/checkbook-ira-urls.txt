@@ -1,0 +1,59 @@
+# Checkbook IRA Cluster - Page URLs
+
+## Live URLs (once deployed):
+
+1. https://richdadretirement.com/learn/checkbook-ira-reviews
+   - Volume: 80 | Difficulty: 0 | CPC: $3.50
+   - "Checkbook IRA Reviews: Best Providers & Custodians for 2026"
+
+2. https://richdadretirement.com/learn/checkbook-ira-real-estate
+   - Volume: 30 | Difficulty: 0 | CPC: $4.00
+   - "Checkbook IRA Real Estate Investing: Complete Guide (2026)"
+
+3. https://richdadretirement.com/learn/self-directed-ira-llc-operating-agreement
+   - Volume: 90 | Difficulty: 0 | CPC: $4.00
+   - "Self-Directed IRA LLC Operating Agreement: What You Need (2026)"
+
+4. https://richdadretirement.com/learn/solo-401k-checkbook-control
+   - Volume: 50 | Difficulty: 1 | CPC: $5.00
+   - "Solo 401k Checkbook Control: Better Than Checkbook IRA? (2026)"
+
+5. https://richdadretirement.com/learn/checkbook-ira-gold
+   - Volume: 30 | Difficulty: 2 | CPC: ~$4.00
+   - "Checkbook IRA Gold: Buy Precious Metals with Direct Control (2026)"
+
+6. https://richdadretirement.com/learn/checkbook-ira-prohibited-transactions
+   - Volume: 20 | Difficulty: 3 | CPC: N/A
+   - "Checkbook IRA Prohibited Transactions: What You Cannot Do (2026)"
+
+---
+
+## Submit to Google Search Console:
+1. Navigate to: https://search.google.com/search-console
+2. Select richdadretirement.com property
+3. Go to URL Inspection tool
+4. Submit each URL for indexing
+5. Monitor performance in "Performance" dashboard
+
+---
+
+## Internal Link Opportunities:
+
+Add links from existing pages:
+- /learn/401k-protected-from-creditors → solo-401k-checkbook-control
+- /learn/what-happens-to-401k-if-bank-fails → checkbook-ira-reviews
+- /guide/gold-ira-guide → checkbook-ira-gold
+- /guide/401k-to-gold-ira-rollover → checkbook-ira-gold
+
+---
+
+## Priority Ranking Order (by difficulty):
+
+1. checkbook-ira-reviews (Diff: 0) ⭐⭐⭐
+2. checkbook-ira-real-estate (Diff: 0) ⭐⭐⭐
+3. self-directed-ira-llc-operating-agreement (Diff: 0) ⭐⭐⭐
+4. solo-401k-checkbook-control (Diff: 1) ⭐⭐
+5. checkbook-ira-gold (Diff: 2) ⭐
+6. checkbook-ira-prohibited-transactions (Diff: 3) ⭐
+
+Target rank #1 for first 4 within 30-60 days!
