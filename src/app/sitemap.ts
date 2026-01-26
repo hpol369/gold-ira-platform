@@ -126,6 +126,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/solo-401k-calculator",
     "/tools/tsp-calculator",
     "/tools/wep-calculator",
+    "/tools/fire-calculator",
+    "/tools/gold-allocation-calculator",
+    "/tools/gold-ira-calculator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -291,6 +294,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews/regal-assets-lawsuit",
     "/reviews/birch-gold-complaints",
     "/reviews/noble-gold-legit",
+    // Custodian reviews
+    "/reviews/equity-trust",
+    "/reviews/kingdom-trust",
+    "/reviews/millennium-trust",
+    "/reviews/preferred-trust",
+    // Additional complaints/fees pages
+    "/reviews/american-hartford-gold-lawsuit",
+    "/reviews/birch-gold-fees",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
