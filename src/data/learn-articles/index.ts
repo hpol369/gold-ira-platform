@@ -45,6 +45,14 @@ import { legalBeneficiaryArticles } from './legal-beneficiary-cluster';
 import { medicaidEstateArticles } from './medicaid-estate-cluster';
 import { retirementPlanningFinalArticles } from './retirement-planning-final-cluster';
 import { seniorCareCostsArticles } from './senior-care-costs-cluster';
+import { federalVeteransArticles } from './federal-veterans-cluster';
+import { inheritanceWindfallArticles } from './inheritance-windfall-cluster';
+import { scamMiscArticles } from './scam-misc-cluster';
+import { pensionDecisionsArticles } from './pension-decisions-cluster';
+import { stateRetirementTaxesArticles } from './state-retirement-taxes-cluster';
+import { professionalRetirementArticles } from './professional-retirement-cluster';
+import { lifeSituationsRetirementArticles } from './life-situations-retirement-cluster';
+import { retireAbroadArticles } from './retire-abroad-cluster';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -89,6 +97,14 @@ export const learnArticles: LearnArticleRegistry = {
   ...medicaidEstateArticles,
   ...retirementPlanningFinalArticles,
   ...seniorCareCostsArticles,
+  ...federalVeteransArticles,
+  ...inheritanceWindfallArticles,
+  ...scamMiscArticles,
+  ...pensionDecisionsArticles,
+  ...stateRetirementTaxesArticles,
+  ...professionalRetirementArticles,
+  ...lifeSituationsRetirementArticles,
+  ...retireAbroadArticles,
 };
 
 // ============================================
