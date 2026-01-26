@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "news:generate": "npx tsx scripts/news/run-pipeline.ts",
+    "news:generate": "AUTO_PUBLISH=true npx tsx scripts/news/run-pipeline.ts",
     "news:list": "npx tsx scripts/news/write-article.ts list",
     "news:approve": "npx tsx scripts/news/write-article.ts approve",
     "news:reject": "npx tsx scripts/news/write-article.ts reject"
