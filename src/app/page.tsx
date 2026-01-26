@@ -17,7 +17,7 @@ import { Container } from "@/components/ui/Container";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col bg-slate-900">
+    <main className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
 
       <div className="flex-grow">
@@ -59,7 +59,7 @@ export default function Home() {
         <UrgencySection />
 
         {/* 12. NEWSLETTER: Stay informed - Weekly insights */}
-        <section className="py-16 bg-slate-900">
+        <section className="py-16 bg-transparent">
           <Container>
             <NewsletterSignup variant="footer" />
           </Container>
