@@ -7,13 +7,16 @@ import { NewsCategory, NEWS_CATEGORIES } from "@/types/news";
 import { ArrowRight, Newspaper, TrendingUp, Clock, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Rich Dad Daily Briefing | Financial News Through a Wealth-Building Lens",
+    title: "Rich Dad Daily Briefing | Financial News for Investors",
     description: "Daily financial news analysis with Robert Kiyosaki's perspective. Fed decisions, gold prices, and economic news explained for retirement investors.",
     keywords: "financial news, gold news, fed news, retirement news, robert kiyosaki",
     openGraph: {
         title: "Rich Dad Daily Briefing | Financial News for Retirement Investors",
         description: "Daily financial news analysis with Robert Kiyosaki's perspective. What the mainstream won't tell you about your retirement.",
         type: "website",
+    },
+    alternates: {
+        canonical: "https://www.richdadretirement.com/news",
     },
 };
 

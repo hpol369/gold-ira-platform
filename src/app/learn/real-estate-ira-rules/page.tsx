@@ -17,7 +17,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Real Estate IRA Rules 2026: IRS Requirements & Prohibited Transactions | Rich Dad Retirement",
+    title: "Real Estate IRA Rules 2026: IRS Requirements Guide",
     description: "Complete guide to real estate IRA rules. Learn about prohibited transactions, disqualified persons, UBIT, and how to stay IRS compliant with your SDIRA.",
     keywords: "real estate ira rules, sdira prohibited transactions, ira real estate rules, self directed ira real estate rules",
     openGraph: {

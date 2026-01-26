@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     description: "Compare the best Gold IRA companies and protect your wealth. Expert reviews, fee comparisons, and guides.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Rich Dad Retirement - Gold IRA Reviews & Comparisons",
+        alt: "Rich Dad Retirement - Protect Your Retirement with Gold",
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rich Dad Retirement - Protect Your Retirement with Gold",
     description: "Compare the best Gold IRA companies and protect your wealth. Expert reviews and guides.",
-    images: ["/og-image.png"],
+    images: ["/og-default.jpg"],
   },
   robots: {
     index: true,

@@ -6,7 +6,7 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { ArrowRight, Calculator, Calendar, DollarSign, TrendingUp, AlertCircle, CheckCircle, Users, Percent } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Solo 401k Contribution Limits 2026 | Maximum Contributions Guide",
+    title: "Solo 401k Contribution Limits 2026 | Max Contribution",
     description: "2026 Solo 401k contribution limits explained. Employee deferral ($23,500), employer profit-sharing, and $70,000-$77,500 total maximums with calculation examples.",
     keywords: "solo 401k contribution limits, solo 401k max contribution, solo 401k contribution limits 2026, solo 401k employer contribution",
     openGraph: {

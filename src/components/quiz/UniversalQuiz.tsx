@@ -581,7 +581,7 @@ export function UniversalQuiz() {
           Free 60-Second Assessment
         </motion.div>
 
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
@@ -590,7 +590,7 @@ export function UniversalQuiz() {
         >
           Find Your Perfect<br />
           <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">Retirement Account</span>
-        </motion.h2>
+        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

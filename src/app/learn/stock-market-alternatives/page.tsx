@@ -11,7 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Stock Market Alternatives: 8 Ways to Invest Beyond Stocks | Rich Dad Retirement",
+    title: "Stock Market Alternatives: 8 Ways to Invest Beyond",
     description: "Explore stock market alternatives including gold, real estate, bonds, private equity, and more. Diversify your portfolio beyond traditional stocks.",
     openGraph: {
         title: "Stock Market Alternatives - 2026 Guide",

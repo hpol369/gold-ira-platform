@@ -6,9 +6,10 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { getAllCompanies, getFeaturedCompany } from "@/data/companies";
+import { getAllCompanies } from "@/data/companies";
 import { ComparisonBuilder } from "@/components/compare/ComparisonBuilder";
-import { Scale, ArrowRight, Star, Award, TrendingUp } from "lucide-react";
+import { assets } from "@/data/assets";
+import { Scale, ArrowRight, Star, Award, TrendingUp, BarChart3 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Gold IRA Company Comparisons 2026 | Side-by-Side Analysis",
@@ -20,48 +21,25 @@ export const metadata: Metadata = {
   },
 };
 
-// Generate comparison pairs from top companies
-function generateComparisonPairs() {
+// Generate ALL comparison pairs from companies (105 pairs for 15 companies)
+function generateAllComparisonPairs() {
   const companies = getAllCompanies();
-  const featured = getFeaturedCompany();
   const pairs: { slugA: string; slugB: string; nameA: string; nameB: string; highlight?: string }[] = [];
 
-  // Featured company vs top competitors
-  const topCompetitors = companies.filter(c => !c.featured).slice(0, 5);
-  topCompetitors.forEach(competitor => {
-    pairs.push({
-      slugA: featured.slug,
-      slugB: competitor.slug,
-      nameA: featured.name,
-      nameB: competitor.name,
-      highlight: "vs #1 Pick",
-    });
-  });
-
-  // Other popular comparisons
-  const popularPairs = [
-    ["goldco", "american-hartford-gold"],
-    ["noble-gold", "birch-gold"],
-    ["goldco", "lear-capital"],
-    ["birch-gold", "american-hartford-gold"],
-    ["noble-gold", "orion-metal-exchange"],
-  ];
-
-  popularPairs.forEach(([slugA, slugB]) => {
-    const companyA = companies.find(c => c.slug === slugA);
-    const companyB = companies.find(c => c.slug === slugB);
-    if (companyA && companyB && !pairs.some(p =>
-      (p.slugA === slugA && p.slugB === slugB) ||
-      (p.slugA === slugB && p.slugB === slugA)
-    )) {
+  // Generate all unique pairs
+  for (let i = 0; i < companies.length; i++) {
+    for (let j = i + 1; j < companies.length; j++) {
+      const companyA = companies[i];
+      const companyB = companies[j];
       pairs.push({
-        slugA,
-        slugB,
+        slugA: companyA.slug,
+        slugB: companyB.slug,
         nameA: companyA.name,
         nameB: companyB.name,
+        highlight: companyA.featured ? "vs #1 Pick" : companyB.featured ? "vs #1 Pick" : undefined,
       });
     }
-  });
+  }
 
   return pairs;
 }
@@ -101,7 +79,7 @@ const investmentComparisons = [
 ];
 
 export default function ComparePage() {
-  const companyPairs = generateComparisonPairs();
+  const companyPairs = generateAllComparisonPairs();
   const companies = getAllCompanies();
 
   return (
@@ -186,16 +164,111 @@ export default function ComparePage() {
         </Container>
       </section>
 
-      {/* Investment Type Comparisons */}
+      {/* Gold vs Other Assets */}
       <section className="py-16 bg-slate-800/50">
+        <Container>
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 bg-amber-500/20 rounded-lg border border-amber-500/30">
+              <BarChart3 className="h-5 w-5 text-amber-400" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-white">Gold vs Other Assets</h2>
+              <p className="text-slate-500">See how physical gold compares to stocks, crypto, bonds, and more</p>
+            </div>
+          </div>
+
+          {/* Stocks */}
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold text-white mb-2">Major Stocks</h3>
+            <p className="text-sm text-slate-500 mb-4">How gold stacks up against individual stocks</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {assets.filter(a => a.category === "stock").map((asset) => (
+                <Link
+                  key={asset.slug}
+                  href={`/compare/gold-vs/${asset.slug}`}
+                  className="group bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-amber-500/30 hover:bg-white/10 transition-all"
+                >
+                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-white group-hover:text-amber-400 transition-colors text-sm">
+                    Gold vs {asset.name}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Market Indices */}
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold text-white mb-2">Market Indices</h3>
+            <p className="text-sm text-slate-500 mb-4">Gold vs major stock market benchmarks</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {assets.filter(a => a.category === "index").map((asset) => (
+                <Link
+                  key={asset.slug}
+                  href={`/compare/gold-vs/${asset.slug}`}
+                  className="group bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-amber-500/30 hover:bg-white/10 transition-all"
+                >
+                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-white group-hover:text-amber-400 transition-colors text-sm">
+                    Gold vs {asset.name}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Crypto */}
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold text-white mb-2">Cryptocurrencies</h3>
+            <p className="text-sm text-slate-500 mb-4">Physical gold vs digital assets</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {assets.filter(a => a.category === "crypto").map((asset) => (
+                <Link
+                  key={asset.slug}
+                  href={`/compare/gold-vs/${asset.slug}`}
+                  className="group bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-amber-500/30 hover:bg-white/10 transition-all"
+                >
+                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-white group-hover:text-amber-400 transition-colors text-sm">
+                    Gold vs {asset.name}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Commodities & Other */}
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold text-white mb-2">Commodities, Currencies & Other</h3>
+            <p className="text-sm text-slate-500 mb-4">Gold compared to other asset classes</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {assets.filter(a => ["commodity", "currency", "other"].includes(a.category)).map((asset) => (
+                <Link
+                  key={asset.slug}
+                  href={`/compare/gold-vs/${asset.slug}`}
+                  className="group bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-amber-500/30 hover:bg-white/10 transition-all"
+                >
+                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-white group-hover:text-amber-400 transition-colors text-sm">
+                    Gold vs {asset.name}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Investment Type Comparisons */}
+      <section className="py-16">
         <Container>
           <div className="flex items-center gap-3 mb-8">
             <div className="p-2 bg-slate-700 rounded-lg border border-white/10">
               <Scale className="h-5 w-5 text-slate-300" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-white">Investment Comparisons</h2>
-              <p className="text-slate-500">Compare Gold IRAs with other investment options</p>
+              <h2 className="text-2xl font-bold text-white">Account Type Comparisons</h2>
+              <p className="text-slate-500">Compare Gold IRAs with other retirement account options</p>
             </div>
           </div>
 

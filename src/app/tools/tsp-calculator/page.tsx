@@ -17,9 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "TSP Calculator 2026 | Free Thrift Savings Plan Calculator for Federal Employees",
+  title: "TSP Calculator 2026 | Free Thrift Savings Plan Tool",
   description:
-    "Free TSP calculator for federal employees. Project your Thrift Savings Plan balance at retirement with fund allocation analysis, employer matching, and contribution optimization. 2026 limits included.",
+    "Free TSP calculator for federal employees. Project your Thrift Savings Plan balance at retirement with fund allocation and employer matching. 2026 limits.",
   keywords: [
     "tsp calculator",
     "thrift savings plan calculator",

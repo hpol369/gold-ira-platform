@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Preferred Trust Review 2026: Fees, Pros & Cons | Self-Directed IRA Custodian",
+    title: "Preferred Trust Review 2026: Fees, Pros & Cons",
     description: "Comprehensive Preferred Trust Company review covering their self-directed IRA services, fee structure, investment options, and real customer experiences.",
     keywords: "preferred trust company reviews, preferred trust ira, preferred trust custodian, preferred trust fees, self directed ira custodian",
     openGraph: {

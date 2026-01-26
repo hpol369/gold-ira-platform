@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "WEP Calculator 2026 | Windfall Elimination Provision Calculator",
   description:
-    "Free WEP calculator for 2026. Calculate how the Windfall Elimination Provision reduces your Social Security if you have a government pension. Includes GPO calculator for spousal benefits.",
+    "Free WEP calculator for 2026. Calculate how the Windfall Elimination Provision reduces your Social Security with a government pension. GPO calculator included.",
   keywords: [
     "wep calculator",
     "windfall elimination provision calculator",

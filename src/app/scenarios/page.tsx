@@ -24,7 +24,7 @@ import {
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Economic Crisis Scenarios: Protect Your Wealth | Rich Dad Retirement",
+  title: "Economic Crisis Scenarios: Protect Your Wealth",
   description: "Prepare for economic uncertainty. Understand threats to your retirement: dollar collapse, hyperinflation, bank failures, and how to protect yourself.",
 };
 

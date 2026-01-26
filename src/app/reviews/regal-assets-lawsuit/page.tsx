@@ -15,9 +15,40 @@ export const metadata = {
     description: "Regal Assets was once a top-rated Gold IRA company. Then it collapsed. We investigate what happened, the lawsuits, and what customers should do now.",
 };
 
+const reviewJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+        "@type": "FinancialService",
+        "name": "Regal Assets",
+        "image": "https://www.richdadretirement.com/logo.png"
+    },
+    "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "1",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Thomas Richardson"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement"
+    },
+    "datePublished": "2026-01-26",
+    "reviewBody": "Regal Assets was once one of the most-recommended Gold IRA companies in America. The company appears to have ceased operations with their website down and phone lines disconnected. Former customers report inability to reach anyone about their accounts."
+};
+
 export default function RegalAssetsLawsuitPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
+            />
+            <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
             <div className="flex-grow bg-slate-900">
@@ -191,5 +222,6 @@ export default function RegalAssetsLawsuitPage() {
             <Footer />
             <StickyMobileCTA companySlug="regal-assets" companyName="Regal Assets" />
         </main>
+        </>
     );
 }

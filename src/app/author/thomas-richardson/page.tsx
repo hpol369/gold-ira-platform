@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import { ArrowLeft, Linkedin, Twitter, Award, BookOpen, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Thomas Richardson - Founder & Lead Analyst | Rich Dad Retirement",
+    title: "Thomas Richardson - Founder & Lead Analyst",
     description: "Meet Thomas Richardson, a former wealth manager with 20+ years of experience and the founder of Rich Dad Retirement. Expert in Gold IRAs and precious metals.",
 };
 

@@ -11,7 +11,7 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 
 export const metadata = {
-    title: "Goldco Review (2026): Celebrity Hype vs Reality | Fee Analysis",
+    title: "Goldco Review 2026: Celebrity Hype vs Reality",
     description: "An honest look at Goldco - the most-advertised Gold IRA company. We examine their fees, the celebrity endorsements, and who they're actually best suited for.",
 };
 

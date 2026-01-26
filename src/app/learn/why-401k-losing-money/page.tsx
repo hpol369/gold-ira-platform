@@ -25,7 +25,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Why Is My 401k Losing Money? Common Causes & What To Do | Rich Dad Retirement",
+    title: "Why Is My 401k Losing Money? Causes & Solutions",
     description: "Why is your 401k losing money? Learn common causes like fees, volatility, and poor fund selection plus steps to protect your retirement savings.",
     keywords: "why is my 401k losing money, 401k losing money what to do, my 401k is down should i be worried, 401k dropping, 401k losses explained",
     openGraph: {

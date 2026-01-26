@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Market Crash Simulator - Test Your Portfolio | Rich Dad Retirement",
+  title: "Market Crash Simulator - Test Your Portfolio",
   description:
     "See how your retirement portfolio would perform in historical market crashes. Simulate 2008, COVID, and other crises to understand gold's protective power.",
   keywords: [

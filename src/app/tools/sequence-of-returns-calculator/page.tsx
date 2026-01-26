@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { SequenceOfReturnsCalculator } from "@/components/tools/SequenceOfReturnsCalculator";
 
 export const metadata: Metadata = {
-  title: "Sequence of Returns Calculator - Retirement Sequence Risk | Free Tool",
+  title: "Sequence of Returns Calculator - Retirement Risk Tool",
   description: "Free sequence of returns calculator shows how the order of investment returns dramatically affects retirement outcomes. Understand sequence risk and protect your portfolio.",
   keywords: "sequence of returns calculator, sequence of returns risk calculator, retirement sequence risk, sequence risk retirement, order of returns risk",
   openGraph: {

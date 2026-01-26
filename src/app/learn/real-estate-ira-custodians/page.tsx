@@ -16,7 +16,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Best Real Estate IRA Custodians 2026: Compare Top SDIRA Providers | Rich Dad Retirement",
+    title: "Best Real Estate IRA Custodians 2026: Top Providers",
     description: "Compare the best self-directed IRA custodians for real estate investing. Fees, features, and reviews of Rocket Dollar, Equity Trust, Entrust, and more.",
     keywords: "real estate ira custodian, sdira custodian, self directed ira custodian real estate, best sdira for real estate",
     openGraph: {

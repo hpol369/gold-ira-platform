@@ -10,7 +10,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Wealth Preservation Strategies: Protect What You've Built | Rich Dad Retirement",
+    title: "Wealth Preservation Strategies: Protect Your Assets",
     description: "Learn proven wealth preservation strategies including asset protection, diversification, gold allocation, tax planning, and estate planning for lasting wealth.",
     openGraph: {
         title: "Wealth Preservation Strategies - 2026 Guide",

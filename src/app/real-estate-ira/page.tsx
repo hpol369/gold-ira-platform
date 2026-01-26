@@ -19,7 +19,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Real Estate IRA Guide 2026: Invest in Property Tax-Free | Rich Dad Retirement",
+    title: "Real Estate IRA Guide 2026: Invest in Property Tax-Free",
     description: "Learn how to invest in real estate through your IRA. Complete guide to buying rental properties, commercial real estate, and land using self-directed IRA funds.",
     keywords: "real estate ira, self directed ira real estate, buy property with ira, rental property ira, real estate ira investing",
     openGraph: {

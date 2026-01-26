@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "CalSTRS Calculator 2026 | Free California Teachers Retirement Estimator",
+  title: "CalSTRS Calculator 2026 | California Teachers Pension",
   description:
     "Free CalSTRS calculator for California teachers. Calculate your pension using official formulas: 2%@60 classic and 2%@62 PEPRA.",
   keywords: [

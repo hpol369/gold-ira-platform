@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Can I Retire Calculator - See If Your Savings Will Last | Rich Dad Retirement",
+  title: "Can I Retire Calculator - See If Your Savings Last",
   description:
     "Free retirement calculator to answer 'can I retire?' Calculate if $300k, $500k, or $1 million is enough to retire. See how long your savings will last and get personalized recommendations.",
   keywords: [

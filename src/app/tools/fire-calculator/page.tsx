@@ -5,7 +5,7 @@ import { FIRECalculator } from "@/components/tools/FIRECalculator";
 
 export const metadata: Metadata = {
   title: "FIRE Calculator - Financial Independence Retire Early Calculator",
-  description: "Free FIRE calculator to plan your path to financial independence. Calculate your FIRE number, years to retirement, and explore what-if scenarios for early retirement.",
+  description: "Free FIRE calculator to plan financial independence. Calculate your FIRE number, years to retirement, and explore early retirement scenarios.",
   keywords: "fire calculator, financial independence calculator, early retirement calculator, retire early calculator",
 };
 

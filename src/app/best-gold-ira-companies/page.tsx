@@ -10,7 +10,7 @@ import Link from "next/link";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata = {
-    title: "Best Gold IRA Companies of 2026 | Independent Reviews & Rankings",
+    title: "Best Gold IRA Companies of 2026 | Independent Reviews",
     description: "Objective comparison of the top Gold IRA companies. We analyze fees, minimums, customer service, and track records to help you make an informed decision.",
 };
 

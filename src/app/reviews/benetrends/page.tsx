@@ -22,7 +22,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Benetrends Review 2026: ROBS Pioneer - Fees, Pros & Cons | Rich Dad Retirement",
+    title: "Benetrends Review 2026: ROBS Pioneer Fees & Pros/Cons",
     description: "Complete Benetrends review covering their 40+ years of ROBS experience, fees, services, and how they compare to Guidant Financial. Honest assessment.",
     keywords: "benetrends review, benetrends robs, benetrends fees, benetrends 401k, rollover for business startups benetrends",
     openGraph: {
@@ -38,11 +38,7 @@ const reviewJsonLd = {
     "itemReviewed": {
         "@type": "FinancialService",
         "name": "Benetrends",
-        "description": "ROBS 401k business funding pioneer"
-    },
-    "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement"
+        "image": "https://www.richdadretirement.com/logo.png"
     },
     "reviewRating": {
         "@type": "Rating",
@@ -50,8 +46,16 @@ const reviewJsonLd = {
         "bestRating": "5",
         "worstRating": "1"
     },
-    "datePublished": "2026-01-01",
-    "dateModified": new Date().toISOString().split('T')[0]
+    "author": {
+        "@type": "Person",
+        "name": "Thomas Richardson"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement"
+    },
+    "datePublished": "2026-01-26",
+    "reviewBody": "Benetrends pioneered ROBS funding in 1983 and has over 40 years of experience helping entrepreneurs. They offer slightly lower fees than competitors, an A+ BBB rating, and strong relationships with franchise brands."
 };
 
 const faqJsonLd = {

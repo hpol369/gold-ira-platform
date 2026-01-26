@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-      title: `${accountType.name} to Gold IRA Rollover Guide 2026 | Tax-Free Transfer`,
+      title: `${accountType.name} to Gold IRA Rollover Guide 2026`,
       description: `Complete guide to rolling over your ${accountType.fullName} to a Gold IRA. Learn the rules, restrictions, and step-by-step process for a tax-free transfer.`,
       openGraph: {
         title: `${accountType.name} to Gold IRA Rollover Guide 2026`,
@@ -93,7 +93,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${provider.name} Gold IRA Rollover Guide 2026 | Step-by-Step Instructions`,
+    title: `${provider.name} Gold IRA Rollover Guide 2026`,
     description: `Complete guide to rolling over your ${provider.name} retirement account to a Gold IRA. ${provider.typicalTimeline} processing time. Tax-free direct transfer.`,
     openGraph: {
       title: `${provider.name} Gold IRA Rollover Guide 2026`,

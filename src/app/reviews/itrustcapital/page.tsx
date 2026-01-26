@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "iTrustCapital Review 2026: Fees, Pros & Cons | Is It Worth It?",
+    title: "iTrustCapital Review 2026: Fees, Pros & Cons",
     description: "Honest iTrustCapital review covering their 1% trading fee, supported cryptocurrencies, gold/silver options, and whether it's the right crypto IRA for your retirement.",
     keywords: "itrustcapital, itrustcapital review, itrustcapital fees, crypto ira, bitcoin ira, itrustcapital pros and cons",
     openGraph: {

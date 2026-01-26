@@ -49,6 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/scenarios",
     "/best-gold-ira-for",
     "/news",
+    "/audit",
+    "/learn",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -298,9 +300,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews/kingdom-trust",
     "/reviews/millennium-trust",
     "/reviews/preferred-trust",
-    // Additional complaints/fees pages
-    "/reviews/american-hartford-gold-lawsuit",
-    "/reviews/birch-gold-fees",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -380,7 +379,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ============================================
   const accountTypeSlugs = getAccountTypeSlugs();
   const rolloverAccountPages = accountTypeSlugs.map((slug) => ({
-    url: `${baseUrl}/rollover/${slug}`,
+    url: `${baseUrl}/rollover/${slug}-to-gold-ira`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,

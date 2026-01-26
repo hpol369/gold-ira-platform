@@ -22,7 +22,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Guidant Financial Review 2026: ROBS Fees, Pros & Cons | Rich Dad Retirement",
+    title: "Guidant Financial Review 2026: ROBS Fees & Pros/Cons",
     description: "Honest Guidant Financial review covering ROBS 401k setup fees, services, customer reviews & our verdict. See how they compare to Benetrends and other providers.",
     keywords: "guidant financial review, guidant financial robs, guidant financial fees, guidant 401k business funding, rollover for business startups",
     openGraph: {
@@ -38,11 +38,7 @@ const reviewJsonLd = {
     "itemReviewed": {
         "@type": "FinancialService",
         "name": "Guidant Financial",
-        "description": "ROBS 401k business funding provider"
-    },
-    "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement"
+        "image": "https://www.richdadretirement.com/logo.png"
     },
     "reviewRating": {
         "@type": "Rating",
@@ -50,8 +46,16 @@ const reviewJsonLd = {
         "bestRating": "5",
         "worstRating": "1"
     },
-    "datePublished": "2026-01-01",
-    "dateModified": new Date().toISOString().split('T')[0]
+    "author": {
+        "@type": "Person",
+        "name": "Thomas Richardson"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement"
+    },
+    "datePublished": "2026-01-26",
+    "reviewBody": "Guidant Financial is one of the most trusted names in ROBS funding with 20+ years of experience and 25,000+ businesses funded. They offer comprehensive services, an A+ BBB rating, and excellent compliance support."
 };
 
 const faqJsonLd = {

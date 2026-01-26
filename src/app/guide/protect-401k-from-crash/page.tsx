@@ -10,7 +10,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "How to Protect Your 401(k) From a Stock Market Crash | Rich Dad Retirement",
+    title: "How to Protect Your 401(k) From a Stock Market Crash",
     description: "Learn proven strategies to protect your 401(k) from stock market crashes. Diversification, rebalancing, gold allocation, and crisis-proofing techniques.",
     openGraph: {
         title: "Protect Your 401(k) From Market Crash - 2026 Guide",

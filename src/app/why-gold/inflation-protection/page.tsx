@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Gold as Inflation Protection | Preserve Purchasing Power in Retirement",
+  title: "Gold as Inflation Protection | Preserve Purchasing Power",
   description: "Learn how gold has protected against inflation for centuries. Understand why gold preserves purchasing power and how it can protect your retirement savings from rising prices.",
   openGraph: {
     title: "Gold as Inflation Protection | Preserve Purchasing Power",

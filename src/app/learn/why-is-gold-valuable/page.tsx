@@ -11,7 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Why Is Gold Valuable? The Science & History Behind Gold's Worth | Rich Dad Retirement",
+    title: "Why Is Gold Valuable? Science & History Explained",
     description: "Discover why gold has been valuable for 5,000+ years. Learn the scientific properties, historical significance, and economic factors that make gold the ultimate store of value.",
     openGraph: {
         title: "Why Is Gold Valuable? Understanding Gold's Timeless Worth",

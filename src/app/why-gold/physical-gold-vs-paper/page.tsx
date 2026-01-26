@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Physical Gold vs Paper Gold: Which Is Better for Your IRA? | Rich Dad Retirement",
+    title: "Physical Gold vs Paper Gold: Which Is Better for IRAs?",
     description: "Compare physical gold vs paper gold (ETFs, futures, mining stocks). Learn the key differences, risks, and why physical gold ownership matters for retirement security.",
     openGraph: {
         title: "Physical Gold vs Paper Gold: The Critical Differences",

@@ -11,7 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Sequence of Returns Risk: The Hidden Retirement Killer | Rich Dad Retirement",
+    title: "Sequence of Returns Risk: Hidden Retirement Danger",
     description: "Understand sequence of returns risk and how it can devastate your retirement. Learn strategies to protect your savings from early retirement market crashes.",
     openGraph: {
         title: "Sequence of Returns Risk: Protect Your Retirement",

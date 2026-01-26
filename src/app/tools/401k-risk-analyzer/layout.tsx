@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "401(k) Risk Analyzer - Check Your Portfolio Exposure | Rich Dad Retirement",
+  title: "401(k) Risk Analyzer - Check Your Portfolio Exposure",
   description:
     "Free tool to analyze your 401(k) risk exposure. See how much you could lose in a market crash and learn how to protect your retirement savings with diversification.",
   keywords: [

@@ -15,9 +15,40 @@ export const metadata = {
     description: "An honest review of Birch Gold Group covering their 20+ year history, fee structure, conservative media partnerships, and how they compare to competitors.",
 };
 
+const reviewJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+        "@type": "FinancialService",
+        "name": "Birch Gold Group",
+        "image": "https://www.richdadretirement.com/logo.png"
+    },
+    "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Thomas Richardson"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Rich Dad Retirement"
+    },
+    "datePublished": "2026-01-26",
+    "reviewBody": "Birch Gold Group has been around since 2003 with over 20 years of operating history. They offer flat annual fees which benefit larger accounts, maintain an A+ BBB rating, and provide a broad selection of precious metals including platinum and palladium."
+};
+
 export default function BirchGoldReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
+            />
+            <main className="min-h-screen flex flex-col bg-background">
             <Navbar />
 
             <div className="flex-grow bg-slate-900">
@@ -159,5 +190,6 @@ export default function BirchGoldReviewPage() {
             <Footer />
             <StickyMobileCTA companySlug="birch-gold-group" companyName="Birch Gold" />
         </main>
+        </>
     );
 }

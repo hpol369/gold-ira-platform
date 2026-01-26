@@ -12,7 +12,7 @@ import { getAllProviders, getAllAccountTypes, getProvidersByType } from "@/data/
 import { RefreshCw, Building2, Landmark, Shield, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Gold IRA Rollover Guide 2026 | Transfer 401k, IRA, TSP Tax-Free",
+  title: "Gold IRA Rollover Guide 2026 | Transfer 401k, IRA, TSP",
   description: "Complete guide to rolling over your 401k, IRA, TSP, or other retirement account to a Gold IRA. Step-by-step instructions for Fidelity, Vanguard, Schwab & more.",
   openGraph: {
     title: "Gold IRA Rollover Guide 2026 | Transfer 401k, IRA, TSP Tax-Free",

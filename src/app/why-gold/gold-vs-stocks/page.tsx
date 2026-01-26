@@ -19,7 +19,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Callout } from "@/components/ui/Callout";
 
 export const metadata: Metadata = {
-    title: "Gold vs Stocks: Which Is Better for Your Portfolio? | Rich Dad Retirement",
+    title: "Gold vs Stocks: Which Is Better for Your Portfolio?",
     description: "Compare gold vs stocks for your investment portfolio. Learn when gold outperforms, when stocks win, and how to balance both for optimal returns.",
     openGraph: {
         title: "Gold vs Stocks: Complete Comparison Guide",

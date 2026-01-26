@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Checkbook IRA Guide 2026: What is Checkbook Control? | Complete Guide",
+    title: "Checkbook IRA Guide 2026: What is Checkbook Control?",
     description: "Learn what a Checkbook IRA is, how it works, pros and cons, and whether checkbook control is right for your self-directed retirement investing.",
     keywords: "checkbook ira, checkbook control ira, ira llc, self directed ira checkbook, checkbook control",
     openGraph: {

@@ -19,7 +19,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Callout } from "@/components/ui/Callout";
 
 export const metadata: Metadata = {
-    title: "Why Central Banks Are Buying Gold at Record Pace | Rich Dad Retirement",
+    title: "Why Central Banks Are Buying Gold at Record Pace",
     description: "Discover why central banks bought more gold in 2022-2024 than any time in 55 years. Learn what this means for gold prices and your retirement.",
     openGraph: {
         title: "Central Banks Buying Gold - What It Means for You",

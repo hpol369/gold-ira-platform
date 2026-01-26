@@ -12,7 +12,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Recession-Proof Investments: 7 Assets That Survive",
-    description: "Discover recession-proof investments that protect your portfolio during economic downturns. Learn about gold, bonds, utilities, healthcare, and other defensive assets.",
+    description: "Recession-proof investments to protect your portfolio during downturns. Learn about gold, bonds, utilities, and other defensive assets.",
     openGraph: {
         title: "Recession-Proof Investments: Protect Your Portfolio",
         description: "7 investments that have historically performed well during recessions and economic crises.",

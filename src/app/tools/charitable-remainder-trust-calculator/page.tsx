@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Charitable Remainder Trust Calculator 2026 | CRAT & CRUT Calculator",
+  title: "Charitable Remainder Trust Calculator 2026 | CRT Tool",
   description:
     "Free charitable remainder trust calculator. Calculate income tax deductions, annual payouts, and charitable remainder for CRAT and CRUT trusts. Perfect for appreciated assets like gold.",
   keywords: [

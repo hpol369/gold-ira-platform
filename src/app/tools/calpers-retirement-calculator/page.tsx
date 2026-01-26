@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "CalPERS Retirement Calculator 2026 | Free California Pension Estimator",
+  title: "CalPERS Retirement Calculator 2026 | Pension Estimator",
   description:
     "Free CalPERS retirement calculator for 2026. Calculate your California pension using official formulas: Classic 2%@55, 2%@60, and PEPRA 2%@62.",
   keywords: [

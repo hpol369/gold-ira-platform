@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Solo 401k Calculator 2024 | Self-Employed 401k Contribution Calculator",
   description:
-    "Free Solo 401k calculator for self-employed individuals. Calculate your maximum contribution as a sole proprietor, LLC, or S-Corp. Includes 2024 limits, catch-up contributions, and tax savings.",
+    "Free Solo 401k calculator for self-employed. Calculate maximum contributions as a sole proprietor, LLC, or S-Corp. 2024 limits and catch-up included.",
   keywords: [
     "solo 401k calculator",
     "self employed 401k calculator",

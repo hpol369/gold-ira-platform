@@ -11,7 +11,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "What to Do with an Old 401(k): 5 Options for 2026 | Rich Dad Retirement",
+    title: "What to Do with an Old 401(k): 5 Options for 2026",
     description: "Left a job with a 401(k)? Learn your 5 options: leave it, rollover to new employer, rollover to IRA, cash out, or convert to Gold IRA. Make the smart choice for your retirement.",
     openGraph: {
         title: "What to Do with an Old 401(k): Your Complete Options Guide",

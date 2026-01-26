@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Self-Directed IRA Guide 2026: Invest in Real Estate, Crypto & More",
+    title: "Self-Directed IRA Guide 2026: Real Estate, Crypto & More",
     description: "Complete guide to Self-Directed IRAs. Learn how to invest your retirement in real estate, cryptocurrency, gold, private equity, and more. Compare the best SDIRA custodians.",
     keywords: "self directed ira, sdira, self directed ira custodian, self directed roth ira, checkbook ira, ira llc",
     openGraph: {

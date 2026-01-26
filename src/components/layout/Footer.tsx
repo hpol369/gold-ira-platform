@@ -88,6 +88,7 @@ export function Footer() {
                         <h3 className="font-semibold text-white mb-4 text-sm">Resources</h3>
                         <ul className="space-y-2">
                             <li><Link href="/resources" className="text-gray-400 hover:text-white transition-colors text-sm">All Resources</Link></li>
+                            <li><Link href="/local" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA by State</Link></li>
                             <li><Link href="/investigative-hub" className="text-gray-400 hover:text-white transition-colors text-sm">Investigative Hub</Link></li>
                             <li><Link href="/tools" className="text-gray-400 hover:text-white transition-colors text-sm">Tools & Calculators</Link></li>
                             <li><Link href="/quiz" className="text-gray-400 hover:text-white transition-colors text-sm">Find Your Match Quiz</Link></li>

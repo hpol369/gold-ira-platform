@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Rocket Dollar Review 2026: Fees, Pros & Cons | Best Checkbook IRA?",
+    title: "Rocket Dollar Review 2026: Fees, Pros & Cons",
     description: "Honest Rocket Dollar review covering their $15/month pricing, checkbook control, supported investments, and whether it's the best self-directed IRA for you.",
     keywords: "rocket dollar, rocket dollar review, rocket dollar ira, rocket dollar fees, checkbook ira, self directed ira",
     openGraph: {

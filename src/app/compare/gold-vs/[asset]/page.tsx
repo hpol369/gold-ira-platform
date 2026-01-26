@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Gold vs ${asset.name}: Which Protects Your Retirement Better? | Rich Dad Retirement`,
+    title: `Gold vs ${asset.name}: Retirement Investment Comparison`,
     description: `Compare Physical Gold vs ${asset.name} (${asset.ticker}) for retirement. See 10-year returns, volatility, inflation protection, and which asset protects your wealth better.`,
     keywords: [
       `gold vs ${asset.name.toLowerCase()}`,

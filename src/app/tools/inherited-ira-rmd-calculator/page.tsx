@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Inherited IRA RMD Calculator 2026 | SECURE Act Rules & 10-Year Rule",
+  title: "Inherited IRA RMD Calculator 2026 | SECURE Act Rules",
   description:
     "Free inherited IRA RMD calculator for 2026. Calculate Required Minimum Distributions for beneficiary IRAs under SECURE Act rules. Includes 10-year rule, spouse options, and EDB calculations.",
   keywords: [

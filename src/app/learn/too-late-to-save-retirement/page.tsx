@@ -26,7 +26,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Is It Too Late to Save for Retirement? Hope & Strategies for Late Starters | Rich Dad Retirement",
+    title: "Is It Too Late to Save for Retirement? Strategies",
     description: "Think it's too late to save for retirement? It's NOT. Discover proven strategies for starting at 50, 55, or 60. Catch-up contributions, Social Security timing, Gold IRAs, and more.",
     keywords: "too late to save for retirement, starting retirement savings at 50, behind on retirement savings, not enough saved for retirement, late start retirement planning",
     openGraph: {

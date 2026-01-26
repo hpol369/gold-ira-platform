@@ -11,7 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "10 Retirement Planning Mistakes That Destroy Wealth | Rich Dad Retirement",
+    title: "10 Retirement Planning Mistakes That Destroy Wealth",
     description: "Avoid these 10 costly retirement planning mistakes. Learn about sequence of returns risk, over-concentration in stocks, ignoring inflation, and more.",
     openGraph: {
         title: "10 Retirement Planning Mistakes to Avoid",

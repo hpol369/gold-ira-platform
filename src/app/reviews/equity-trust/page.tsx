@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Equity Trust Review 2026: Fees, Pros & Cons | Self-Directed IRA Custodian",
+    title: "Equity Trust Review 2026: Fees, Pros & Cons",
     description: "Comprehensive Equity Trust review covering their 50+ years of experience, fee structure, account types, and real customer reviews. Is Equity Trust right for your SDIRA?",
     keywords: "equity trust reviews, equity trust company reviews, equity trust ira, equity trust custodian, equity trust fees",
     openGraph: {
