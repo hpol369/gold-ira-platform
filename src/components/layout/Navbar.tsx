@@ -10,6 +10,7 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isLearnOpen, setIsLearnOpen] = useState(false);
+    const [isToolsOpen, setIsToolsOpen] = useState(false);
 
     // Auto-update freshness badge
     const currentDate = new Date();
@@ -183,9 +184,72 @@ export function Navbar() {
                             <Link href="/news" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
                                 News
                             </Link>
-                            <Link href="/tools" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
-                                Tools
-                            </Link>
+
+                            {/* Tools Dropdown */}
+                            <div
+                                className="relative"
+                                onMouseEnter={() => setIsToolsOpen(true)}
+                                onMouseLeave={() => setIsToolsOpen(false)}
+                            >
+                                <button className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors py-2">
+                                    Tools
+                                    <ChevronDown className={`h-4 w-4 transition-transform ${isToolsOpen ? 'rotate-180' : ''}`} />
+                                </button>
+                                {isToolsOpen && (
+                                    <div className="absolute top-full right-0 pt-2 z-50">
+                                        <div className="w-72 bg-slate-800 border border-white/10 rounded-xl shadow-xl py-2">
+                                            {/* FIRE Calculators */}
+                                            <span className="block px-4 py-1 text-xs font-semibold text-orange-400 uppercase tracking-wide">FIRE Calculators</span>
+                                            <Link href="/tools/fire-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                FIRE Calculator
+                                            </Link>
+                                            <Link href="/tools/coast-fire-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Coast FIRE Calculator
+                                            </Link>
+
+                                            <div className="border-t border-white/10 my-2"></div>
+
+                                            {/* Retirement Planning */}
+                                            <span className="block px-4 py-1 text-xs font-semibold text-blue-400 uppercase tracking-wide">Retirement Planning</span>
+                                            <Link href="/tools/retirement-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Retirement Calculator
+                                            </Link>
+                                            <Link href="/tools/rmd-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                RMD Calculator
+                                            </Link>
+
+                                            <div className="border-t border-white/10 my-2"></div>
+
+                                            {/* Social Security */}
+                                            <span className="block px-4 py-1 text-xs font-semibold text-green-400 uppercase tracking-wide">Social Security</span>
+                                            <Link href="/tools/social-security-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Social Security Calculator
+                                            </Link>
+                                            <Link href="/tools/wep-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                WEP Calculator
+                                            </Link>
+
+                                            <div className="border-t border-white/10 my-2"></div>
+
+                                            {/* Gold IRA Tools */}
+                                            <span className="block px-4 py-1 text-xs font-semibold text-amber-400 uppercase tracking-wide">Gold IRA Tools</span>
+                                            <Link href="/tools/gold-ira-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Gold IRA Calculator
+                                            </Link>
+                                            <Link href="/tools/gold-allocation-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                                Gold Allocation Calculator
+                                            </Link>
+
+                                            <div className="border-t border-white/10 my-2"></div>
+
+                                            <Link href="/tools" className="block px-4 py-2 text-sm text-amber-400 hover:text-amber-300 hover:bg-white/5 font-medium flex items-center gap-1">
+                                                View All Tools
+                                                <ArrowRight className="h-3 w-3" />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                             <Button variant="gold" size="sm" asChild>
                                 <Link href="/get-started">Get Started</Link>
                             </Button>
@@ -380,15 +444,63 @@ export function Navbar() {
                         {/* Tools Section */}
                         <div className="py-2 border-b border-white/5">
                             <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide">Tools</span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/tools/crash-simulator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Crash Simulator
-                                </Link>
-                                <Link href="/tools/rmd-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    RMD Calculator
-                                </Link>
-                                <Link href="/tools/fees-comparison" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Fees Comparison
+
+                            {/* FIRE Calculators */}
+                            <div className="mt-2 pl-2">
+                                <span className="text-xs text-orange-400 font-medium">FIRE Calculators</span>
+                                <div className="flex flex-col gap-1 pl-2 mt-1">
+                                    <Link href="/tools/fire-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        FIRE Calculator
+                                    </Link>
+                                    <Link href="/tools/coast-fire-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        Coast FIRE Calculator
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Retirement Planning */}
+                            <div className="mt-2 pl-2">
+                                <span className="text-xs text-blue-400 font-medium">Retirement Planning</span>
+                                <div className="flex flex-col gap-1 pl-2 mt-1">
+                                    <Link href="/tools/retirement-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        Retirement Calculator
+                                    </Link>
+                                    <Link href="/tools/rmd-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        RMD Calculator
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Social Security */}
+                            <div className="mt-2 pl-2">
+                                <span className="text-xs text-green-400 font-medium">Social Security</span>
+                                <div className="flex flex-col gap-1 pl-2 mt-1">
+                                    <Link href="/tools/social-security-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        Social Security Calculator
+                                    </Link>
+                                    <Link href="/tools/wep-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        WEP Calculator
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Gold IRA Tools */}
+                            <div className="mt-2 pl-2">
+                                <span className="text-xs text-amber-400 font-medium">Gold IRA Tools</span>
+                                <div className="flex flex-col gap-1 pl-2 mt-1">
+                                    <Link href="/tools/gold-ira-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        Gold IRA Calculator
+                                    </Link>
+                                    <Link href="/tools/gold-allocation-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                        Gold Allocation Calculator
+                                    </Link>
+                                </div>
+                            </div>
+
+                            <div className="mt-2 pl-2">
+                                <Link href="/tools" className="text-sm text-amber-400 hover:text-amber-300 py-1 font-medium flex items-center gap-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    View All Tools
+                                    <ArrowRight className="h-3 w-3" />
                                 </Link>
                             </div>
                         </div>

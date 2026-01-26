@@ -56,13 +56,23 @@ export function Footer() {
                         <h3 className="font-semibold text-white mb-4 text-sm">Calculators</h3>
                         <ul className="space-y-2">
                             <li><Link href="/tools" className="text-gray-400 hover:text-white transition-colors text-sm">All Tools</Link></li>
+                            {/* Popular */}
+                            <li className="pt-2"><span className="text-xs text-blue-400 font-medium">Popular</span></li>
                             <li><Link href="/tools/retirement-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Retirement Calculator</Link></li>
-                            <li><Link href="/tools/social-security-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Social Security Optimizer</Link></li>
-                            <li><Link href="/tools/72t-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">72(t) SEPP Calculator</Link></li>
-                            <li><Link href="/tools/fers-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">FERS Calculator</Link></li>
                             <li><Link href="/tools/rmd-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">RMD Calculator</Link></li>
-                            <li><Link href="/tools/money-longevity-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Money Longevity</Link></li>
-                            <li><Link href="/tools/medicaid-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Medicaid Calculator</Link></li>
+                            <li><Link href="/tools/social-security-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Social Security Calculator</Link></li>
+                            {/* FIRE */}
+                            <li className="pt-2"><span className="text-xs text-orange-400 font-medium">FIRE</span></li>
+                            <li><Link href="/tools/fire-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">FIRE Calculator</Link></li>
+                            <li><Link href="/tools/coast-fire-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Coast FIRE Calculator</Link></li>
+                            {/* Gold IRA */}
+                            <li className="pt-2"><span className="text-xs text-amber-400 font-medium">Gold IRA</span></li>
+                            <li><Link href="/tools/gold-ira-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA Calculator</Link></li>
+                            <li><Link href="/tools/gold-allocation-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Gold Allocation Calculator</Link></li>
+                            {/* Pensions */}
+                            <li className="pt-2"><span className="text-xs text-green-400 font-medium">Pensions</span></li>
+                            <li><Link href="/tools/fers-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">FERS Calculator</Link></li>
+                            <li><Link href="/tools/calpers-retirement-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">CalPERS Calculator</Link></li>
                         </ul>
                     </div>
 

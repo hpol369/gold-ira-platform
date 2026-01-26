@@ -53,6 +53,16 @@ import { stateRetirementTaxesArticles } from './state-retirement-taxes-cluster';
 import { professionalRetirementArticles } from './professional-retirement-cluster';
 import { lifeSituationsRetirementArticles } from './life-situations-retirement-cluster';
 import { retireAbroadArticles } from './retire-abroad-cluster';
+import { financialProductsArticles } from './financial-products-cluster';
+import { professionalRetirementExpansionArticles } from './professional-retirement-expansion-cluster';
+import { crashProofArticles } from './crash-proof-cluster';
+import { retirementCommunitiesArticles } from './retirement-communities-cluster';
+import { checkbookIraArticles } from './checkbook-ira-cluster';
+import { couplesPsychologyArticles } from './couples-psychology-cluster';
+import { estateLegalArticles } from './estate-legal-cluster';
+import { fireMovementArticles } from './fire-movement-cluster';
+import { railroadRetirementExpansionArticles } from './railroad-retirement-expansion-cluster';
+import { infiniteBankingArticles } from './infinite-banking-cluster';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -105,6 +115,16 @@ export const learnArticles: LearnArticleRegistry = {
   ...professionalRetirementArticles,
   ...lifeSituationsRetirementArticles,
   ...retireAbroadArticles,
+  ...financialProductsArticles,
+  ...professionalRetirementExpansionArticles,
+  ...crashProofArticles,
+  ...retirementCommunitiesArticles,
+  ...checkbookIraArticles,
+  ...couplesPsychologyArticles,
+  ...estateLegalArticles,
+  ...fireMovementArticles,
+  ...railroadRetirementExpansionArticles,
+  ...infiniteBankingArticles,
 };
 
 // ============================================

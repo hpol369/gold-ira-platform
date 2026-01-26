@@ -151,7 +151,7 @@ export const lifeEventsArticles: LearnArticleRegistry = {
 
     relatedArticles: ['leaving-job-before-401k-vested', '401k-match-not-vested-yet-should-i-leave'],
     relatedGuides: ['/guide/401k-to-gold-rollover'],
-    relatedTools: ['/tools/unvested-401k-calculator'],
+    relatedTools: ['/tools/401k-risk-analyzer'],
   },
 
   'what-happens-to-my-401k-if-i-get-laid-off-at-58': {
@@ -446,7 +446,7 @@ export const lifeEventsArticles: LearnArticleRegistry = {
 
     relatedArticles: ['what-happens-to-unvested-401k', '401k-match-not-vested-yet-should-i-leave'],
     relatedGuides: ['/guide/401k-to-gold-rollover'],
-    relatedTools: ['/tools/unvested-401k-calculator'],
+    relatedTools: ['/tools/401k-risk-analyzer'],
   },
 
   '401k-match-not-vested-yet-should-i-leave': {
@@ -547,7 +547,7 @@ export const lifeEventsArticles: LearnArticleRegistry = {
 
     relatedArticles: ['leaving-job-before-401k-vested', 'what-happens-to-unvested-401k'],
     relatedGuides: ['/guide/401k-to-gold-rollover'],
-    relatedTools: ['/tools/unvested-401k-calculator'],
+    relatedTools: ['/tools/401k-risk-analyzer'],
   },
 
   'what-to-do-with-spouses-401k-after-death': {

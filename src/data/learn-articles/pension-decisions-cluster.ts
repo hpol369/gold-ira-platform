@@ -174,7 +174,7 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
 
     relatedArticles: ['pension-vs-lump-sum-decision', 'joint-survivor-vs-single-life-pension', 'sears-pension'],
     relatedGuides: ['/guide/gold-ira-guide'],
-    relatedTools: ['/tools/pension-buyout-calculator'],
+    relatedTools: ['/tools/pension-vs-lump-sum-calculator'],
   },
 
   'pension-vs-lump-sum-decision': {
@@ -507,7 +507,7 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
 
     relatedArticles: ['pension-risk-transfer', 'northrop-grumman-retirement'],
     relatedGuides: ['/guide/gold-ira-guide'],
-    relatedTools: ['/tools/pension-risk-analyzer'],
+    relatedTools: ['/tools/pension-present-value-calculator'],
   },
 
   'northrop-grumman-retirement': {
@@ -685,7 +685,7 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
 
     relatedArticles: ['pension-risk-transfer', 'pension-vs-lump-sum-decision'],
     relatedGuides: ['/guide/401k-to-gold-rollover'],
-    relatedTools: ['/tools/401k-fee-analyzer'],
+    relatedTools: ['/tools/fees-comparison'],
   },
 
   'joint-survivor-vs-single-life-pension': {
@@ -869,6 +869,6 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
 
     relatedArticles: ['pension-vs-lump-sum-decision', 'pension-risk-transfer'],
     relatedGuides: ['/guide/gold-ira-guide'],
-    relatedTools: ['/tools/pension-comparison-calculator'],
+    relatedTools: ['/tools/pension-vs-lump-sum-calculator'],
   },
 };

@@ -180,7 +180,7 @@ export const medicareInsuranceArticles: LearnArticleRegistry = {
 
     relatedArticles: ['social-security-survivor-benefits-guide', 'divorced-spouse-social-security'],
     relatedGuides: ['/guide/gold-ira-guide'],
-    relatedTools: ['/tools/retirement-healthcare-calculator'],
+    relatedTools: ['/tools/medicaid-calculator'],
   },
 
   'divorced-spouse-social-security': {
