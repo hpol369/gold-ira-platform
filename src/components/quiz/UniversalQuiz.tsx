@@ -2,10 +2,11 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ArrowLeft, Coins, Bitcoin, Building, Store, Briefcase, Key, Shield } from "lucide-react";
+import { ArrowRight, ArrowLeft, Coins, Bitcoin, Building, Store, Briefcase, Key, Shield, Sparkles } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { cn } from "@/lib/utils";
 import { QuizProgress } from "./QuizProgress";
 import { ProductTypeStep } from "./steps/ProductTypeStep";
@@ -563,75 +564,87 @@ export function UniversalQuiz() {
   // ============================================
 
   const renderIntro = () => (
-    <div className="text-center space-y-8 py-8 md:py-12">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.4 }}
-        className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 px-4 py-1.5 text-sm font-semibold text-amber-400 mb-4"
-      >
-        <Shield className="h-4 w-4" />
-        Free 60-Second Assessment
-      </motion.div>
+    <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12
+                    shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]">
+      {/* FloatingOrbs decoration */}
+      <FloatingOrbs variant="section" />
 
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="text-3xl md:text-5xl font-serif font-bold text-white leading-tight"
-      >
-        Find Your Perfect<br />
-        <span className="text-amber-400">Retirement Account</span>
-      </motion.h2>
-
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-lg md:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed"
-      >
-        Answer 4 quick questions to get a personalized recommendation
-      </motion.p>
-
-      {/* Options Preview */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className="flex flex-wrap justify-center gap-3 max-w-md mx-auto"
-      >
-        {introOptions.map((option, index) => {
-          const IconComponent = option.icon;
-          return (
-            <div
-              key={index}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10"
-            >
-              <IconComponent className={cn("h-4 w-4", option.color)} />
-              <span className="text-sm text-slate-300">{option.label}</span>
-            </div>
-          );
-        })}
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-      >
-        <Button
-          size="xl"
-          variant="gold"
-          onClick={handleStart}
-          className="w-full sm:w-auto min-w-[280px] text-lg px-12 py-6 shadow-xl"
+      <div className="relative text-center space-y-8 py-4 md:py-8">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4 }}
+          className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 px-4 py-1.5 text-sm font-semibold text-amber-400 mb-4
+                     border border-amber-400/20 shadow-[0_0_20px_rgba(212,175,55,0.15)]"
         >
-          Start Free Assessment
-          <ArrowRight className="ml-2 h-5 w-5" />
-        </Button>
-        <p className="text-sm text-slate-400 mt-4">
-          No email required. Get instant results.
-        </p>
-      </motion.div>
+          <Shield className="h-4 w-4" />
+          Free 60-Second Assessment
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-3xl md:text-5xl font-serif font-bold text-white leading-tight
+                     [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]"
+        >
+          Find Your Perfect<br />
+          <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">Retirement Account</span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-lg md:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed"
+        >
+          Answer 4 quick questions to get a personalized recommendation
+        </motion.p>
+
+        {/* Options Preview */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex flex-wrap justify-center gap-3 max-w-md mx-auto"
+        >
+          {introOptions.map((option, index) => {
+            const IconComponent = option.icon;
+            return (
+              <div
+                key={index}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10
+                           hover:bg-white/10 hover:border-white/20 transition-all duration-200"
+              >
+                <IconComponent className={cn("h-4 w-4", option.color)} />
+                <span className="text-sm text-slate-300">{option.label}</span>
+              </div>
+            );
+          })}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <Button
+            size="xl"
+            variant="gold"
+            onClick={handleStart}
+            className="w-full sm:w-auto min-w-[280px] text-lg px-12 py-6
+                       shadow-[0_8px_30px_rgba(212,175,55,0.3),0_0_60px_rgba(212,175,55,0.15)]
+                       hover:shadow-[0_12px_40px_rgba(212,175,55,0.4),0_0_80px_rgba(212,175,55,0.2)]
+                       transition-shadow duration-300"
+          >
+            Start Free Assessment
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <p className="text-sm text-slate-400 mt-4">
+            No email required. Get instant results.
+          </p>
+        </motion.div>
+      </div>
     </div>
   );
 
@@ -639,50 +652,74 @@ export function UniversalQuiz() {
     if (!currentQuestion) return null;
 
     return (
-      <div className="max-w-2xl mx-auto py-8">
-        <motion.h2
-          key={`question-title-${currentQuestion.id}`}
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-2xl md:text-3xl font-serif font-bold text-white mb-2 text-center"
-        >
-          {currentQuestion.question}
-        </motion.h2>
+      <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12
+                      shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]">
+        {/* FloatingOrbs decoration */}
+        <FloatingOrbs variant="minimal" />
 
-        {currentQuestion.helper && (
-          <p className="text-center text-slate-400 mb-8 text-sm">
-            {currentQuestion.helper}
-          </p>
-        )}
+        <div className="relative max-w-2xl mx-auto py-4">
+          <motion.h2
+            key={`question-title-${currentQuestion.id}`}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-2xl md:text-3xl font-serif font-bold text-white mb-2 text-center
+                       [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]"
+          >
+            {currentQuestion.question}
+          </motion.h2>
 
-        <motion.div
-          key={`question-options-${currentQuestion.id}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.1 }}
-          className="grid grid-cols-1 gap-4 mt-8"
-        >
-          {currentQuestion.options.map((option, index) => (
-            <motion.button
-              key={option.value}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
-              onClick={() => handleQuestionAnswer(currentQuestion.id, option.value)}
-              className="group relative flex items-center justify-between p-6 text-left rounded-xl
-                         border-2 border-white/10 hover:border-amber-500/50 hover:bg-white/10
-                         transition-all duration-200 bg-white/5 backdrop-blur-sm"
-            >
-              <span className="text-lg font-medium text-white group-hover:text-amber-400">
-                {option.label}
-              </span>
-              <div className="h-6 w-6 rounded-full border-2 border-white/20 group-hover:border-amber-500
-                              flex items-center justify-center transition-colors">
-                <div className="h-3 w-3 rounded-full bg-amber-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-            </motion.button>
-          ))}
-        </motion.div>
+          {currentQuestion.helper && (
+            <p className="text-center text-slate-400 mb-8 text-sm">
+              {currentQuestion.helper}
+            </p>
+          )}
+
+          <motion.div
+            key={`question-options-${currentQuestion.id}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            className="grid grid-cols-1 gap-4 mt-8"
+          >
+            {currentQuestion.options.map((option, index) => {
+              const isSelected = state.answers[currentQuestion.id] === option.value;
+              return (
+                <motion.button
+                  key={option.value}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                  onClick={() => handleQuestionAnswer(currentQuestion.id, option.value)}
+                  className={cn(
+                    "group relative flex items-center justify-between p-6 text-left rounded-xl",
+                    "bg-white/5 backdrop-blur-xl border border-white/10",
+                    "hover:bg-white/[0.1] hover:-translate-y-2 hover:scale-[1.02]",
+                    "hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.15)]",
+                    "hover:border-amber-400/40 transition-all duration-300 cursor-pointer",
+                    isSelected && "bg-amber-500/10 border-amber-400/50 shadow-[0_0_30px_rgba(212,175,55,0.2)]"
+                  )}
+                >
+                  <span className={cn(
+                    "text-lg font-medium text-white group-hover:text-amber-400 transition-colors",
+                    isSelected && "text-amber-400"
+                  )}>
+                    {option.label}
+                  </span>
+                  <div className={cn(
+                    "h-6 w-6 rounded-full border-2 border-white/20 group-hover:border-amber-500",
+                    "flex items-center justify-center transition-all duration-300",
+                    isSelected && "border-amber-500 bg-amber-500/20"
+                  )}>
+                    <div className={cn(
+                      "h-3 w-3 rounded-full bg-amber-500 transition-all duration-300",
+                      isSelected ? "opacity-100 scale-100" : "opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100"
+                    )} />
+                  </div>
+                </motion.button>
+              );
+            })}
+          </motion.div>
+        </div>
       </div>
     );
   };
@@ -695,78 +732,147 @@ export function UniversalQuiz() {
     );
 
     return (
-      <div className="max-w-3xl mx-auto py-8">
+      <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12
+                      shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]">
+        {/* FloatingOrbs decoration */}
+        <FloatingOrbs variant="section" />
+
+        {/* Gold celebration glow pulse */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="text-center mb-8"
-        >
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-1.5 text-sm font-semibold text-emerald-400 mb-6">
-            <Shield className="h-4 w-4" />
-            Your Personalized Match
-          </div>
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{
+            opacity: [0.3, 0.6, 0.3],
+            scale: [1, 1.05, 1],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute inset-0 rounded-3xl bg-gradient-to-br from-amber-500/10 via-transparent to-amber-400/10 pointer-events-none"
+        />
 
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
-            We Recommend: <span className="text-amber-400">{recommendedCompany.name}</span>
-          </h2>
-          <p className="text-slate-400 text-lg">{recommendedCompany.headline}</p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 md:p-8 relative overflow-hidden"
-        >
-          {/* Top accent */}
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 to-amber-600" />
-
-          <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-6">
-            {recommendedCompany.description}
-          </p>
-
-          <div className="mb-8">
-            <h4 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
-              Why {recommendedCompany.name}?
-            </h4>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {recommendedCompany.benefits.map((benefit, i) => (
-                <li key={i} className="flex items-center gap-3 text-white">
-                  <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                    <div className="w-2 h-2 rounded-full bg-emerald-400" />
-                  </div>
-                  <span className="text-sm">{benefit}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              size="xl"
-              variant="gold"
-              asChild
-              className="flex-1"
+        {/* Sparkle particles animation */}
+        <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none">
+          {[...Array(6)].map((_, i) => (
+            <motion.div
+              key={i}
+              initial={{
+                opacity: 0,
+                x: `${20 + (i * 15)}%`,
+                y: "100%"
+              }}
+              animate={{
+                opacity: [0, 1, 0],
+                y: [100, -20],
+                x: `${20 + (i * 15) + Math.sin(i) * 10}%`
+              }}
+              transition={{
+                duration: 3 + (i * 0.5),
+                repeat: Infinity,
+                delay: i * 0.6,
+                ease: "easeOut"
+              }}
+              className="absolute"
             >
-              <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
-                Get Free Investment Kit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={handleRestart}
-              className="text-slate-300 border-white/20 hover:bg-white/10"
-            >
-              Start Over
-            </Button>
-          </div>
+              <Sparkles className="h-4 w-4 text-amber-400/60" />
+            </motion.div>
+          ))}
+        </div>
 
-          <p className="text-center text-xs text-slate-500 mt-4">
-            Minimum Investment: {recommendedCompany.minInvestment}
-          </p>
-        </motion.div>
+        <div className="relative max-w-3xl mx-auto py-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="text-center mb-8"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-1.5 text-sm font-semibold text-emerald-400 mb-6
+                         border border-emerald-400/20 shadow-[0_0_20px_rgba(16,185,129,0.15)]"
+            >
+              <Shield className="h-4 w-4" />
+              Your Personalized Match
+            </motion.div>
+
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4
+                           [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]">
+              We Recommend: <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">{recommendedCompany.name}</span>
+            </h2>
+            <p className="text-slate-400 text-lg">{recommendedCompany.headline}</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 md:p-8 relative overflow-hidden
+                       shadow-[0_4px_20px_rgba(0,0,0,0.2)]"
+          >
+            {/* Top accent with glow */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400
+                            shadow-[0_0_10px_rgba(212,175,55,0.5)]" />
+
+            <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-6">
+              {recommendedCompany.description}
+            </p>
+
+            <div className="mb-8">
+              <h4 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
+                Why {recommendedCompany.name}?
+              </h4>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {recommendedCompany.benefits.map((benefit, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3 + (i * 0.1) }}
+                    className="flex items-center gap-3 text-white"
+                  >
+                    <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0
+                                    shadow-[0_0_10px_rgba(16,185,129,0.3)]">
+                      <div className="w-2 h-2 rounded-full bg-emerald-400" />
+                    </div>
+                    <span className="text-sm">{benefit}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                size="xl"
+                variant="gold"
+                asChild
+                className="flex-1 shadow-[0_8px_30px_rgba(212,175,55,0.3),0_0_60px_rgba(212,175,55,0.15)]
+                           hover:shadow-[0_12px_40px_rgba(212,175,55,0.4),0_0_80px_rgba(212,175,55,0.2)]
+                           transition-shadow duration-300"
+              >
+                <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+                  Get Free Investment Kit
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={handleRestart}
+                className="text-slate-300 border-white/20 hover:bg-white/10
+                           hover:border-white/30 hover:shadow-[0_4px_20px_rgba(255,255,255,0.1)]
+                           transition-all duration-300"
+              >
+                Start Over
+              </Button>
+            </div>
+
+            <p className="text-center text-xs text-slate-500 mt-4">
+              Minimum Investment: {recommendedCompany.minInvestment}
+            </p>
+          </motion.div>
+        </div>
       </div>
     );
   };
@@ -787,11 +893,15 @@ export function UniversalQuiz() {
         </div>
       )}
 
-      {/* Back Button */}
+      {/* Back Button - Premium styled */}
       {(state.step === 'product-type' || (state.step === 'questions')) && (
         <button
           onClick={handleBack}
-          className="self-start flex items-center gap-1 text-sm text-slate-400 hover:text-white mb-4 transition-colors"
+          className="self-start flex items-center gap-2 text-sm text-slate-400 hover:text-white mb-4
+                     px-3 py-1.5 rounded-lg bg-white/5 border border-white/10
+                     hover:bg-white/10 hover:border-white/20
+                     hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)]
+                     transition-all duration-300"
         >
           <ArrowLeft className="h-4 w-4" /> Back
         </button>

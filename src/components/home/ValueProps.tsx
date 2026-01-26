@@ -2,12 +2,14 @@
 
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { Check, X } from "lucide-react";
 
 export function ValueProps() {
     return (
-        <section className="py-24 bg-slate-800/50">
-            <Container>
+        <section className="py-32 bg-slate-800/50 relative overflow-hidden">
+            <FloatingOrbs variant="minimal" />
+            <Container className="relative z-10">
                 <div className="flex flex-col md:flex-row gap-16 items-center">
                     {/* Left Content */}
                     <FadeIn className="flex-1 space-y-8">
@@ -24,8 +26,12 @@ export function ValueProps() {
                         </p>
 
                         <div className="space-y-4">
-                            <div className="flex items-start gap-4 p-4 rounded-xl bg-red-500/10 border border-red-500/20">
-                                <div className="p-2 rounded-full bg-red-500/20 text-red-400 mt-1">
+                            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6
+                                           hover:bg-white/[0.08] hover:-translate-y-2
+                                           hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.1)]
+                                           hover:border-amber-400/30
+                                           transition-all duration-400 flex items-start gap-4">
+                                <div className="p-3 rounded-full bg-gradient-to-br from-red-500/20 to-red-600/5 text-red-400 mt-1">
                                     <X className="h-4 w-4" />
                                 </div>
                                 <div>
@@ -34,8 +40,12 @@ export function ValueProps() {
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4 p-4 rounded-xl bg-green-500/10 border border-green-500/20">
-                                <div className="p-2 rounded-full bg-green-500/20 text-green-400 mt-1">
+                            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6
+                                           hover:bg-white/[0.08] hover:-translate-y-2
+                                           hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.1)]
+                                           hover:border-amber-400/30
+                                           transition-all duration-400 flex items-start gap-4">
+                                <div className="p-3 rounded-full bg-gradient-to-br from-green-500/20 to-green-600/5 text-green-400 mt-1">
                                     <Check className="h-4 w-4" />
                                 </div>
                                 <div>
@@ -48,7 +58,11 @@ export function ValueProps() {
 
                     {/* Right Visual (Pie Charts Comparison) */}
                     <FadeIn delay={0.2} className="flex-1 w-full">
-                        <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 relative overflow-hidden">
+                        <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8
+                                       hover:bg-white/[0.08] hover:-translate-y-2
+                                       hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.1)]
+                                       hover:border-amber-400/30
+                                       transition-all duration-400 relative overflow-hidden">
                             {/* Decorative background element */}
                             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl" />
 

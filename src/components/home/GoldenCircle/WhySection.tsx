@@ -5,11 +5,21 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
+import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { TrendingDown, AlertTriangle, Coins } from "lucide-react";
 
 export function WhySection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-32">
+      {/* Ambient Gold Glow */}
+      <div className="absolute inset-0 pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(212,175,55,0.15),transparent)]" />
+
+      {/* Subtle Grid Overlay */}
+      <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
+
+      {/* Floating Orbs Decoration */}
+      <FloatingOrbs variant="section" />
+
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-red-500/10 rounded-full blur-[150px]" />
@@ -25,7 +35,7 @@ export function WhySection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 bg-red-500/20 border border-red-500/30 rounded-full text-red-400 text-sm font-bold mb-6">
+            <span className="inline-block px-4 py-1.5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full text-red-400 text-sm font-bold mb-6">
               Your Retirement Is Under Attack
             </span>
 
@@ -50,7 +60,7 @@ export function WhySection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto"
           >
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center">
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:bg-white/[0.08] hover:-translate-y-1 hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)] transition-all duration-300">
               <div className="flex justify-center mb-3">
                 <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center">
                   <TrendingDown className="h-5 w-5 text-red-400" />
@@ -60,7 +70,7 @@ export function WhySection() {
               <p className="text-slate-400 text-xs">Dollar purchasing power lost since 2020</p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center">
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:bg-white/[0.08] hover:-translate-y-1 hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)] transition-all duration-300">
               <div className="flex justify-center mb-3">
                 <div className="w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
                   <AlertTriangle className="h-5 w-5 text-amber-400" />
@@ -70,7 +80,7 @@ export function WhySection() {
               <p className="text-slate-400 text-xs">Average portfolio loss in 2008 crash</p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center">
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:bg-white/[0.08] hover:-translate-y-1 hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)] transition-all duration-300">
               <div className="flex justify-center mb-3">
                 <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center">
                   <Coins className="h-5 w-5 text-green-400" />

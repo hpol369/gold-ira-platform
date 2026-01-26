@@ -5,6 +5,7 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
+import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { Shield, Users, Star, Award, TrendingUp, CheckCircle2 } from "lucide-react";
 
 export function AuthoritySection() {
@@ -38,28 +39,50 @@ export function AuthoritySection() {
     "Full Insurance Coverage",
   ];
 
+  // Stagger animation variants for scroll reveal
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4 },
+    },
+  };
+
   return (
-    <section className="py-12 bg-slate-800/50 border-y border-white/5">
-      <Container>
+    <section className="py-32 bg-slate-800/50 border-y border-white/5 relative overflow-hidden">
+      <FloatingOrbs variant="minimal" />
+      <Container className="relative z-10">
         {/* Trust Stats */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-10"
         >
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="text-center"
+              variants={itemVariants}
+              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6
+                         hover:bg-white/[0.08] hover:-translate-y-2
+                         hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.1)]
+                         hover:border-amber-400/30
+                         transition-all duration-400 text-center"
             >
               <div className="flex justify-center mb-3">
-                <div className="w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center">
+                <div className="p-3 rounded-full bg-gradient-to-br from-amber-500/20 to-amber-600/5">
                   <stat.icon className="h-5 w-5 text-amber-400" />
                 </div>
               </div>

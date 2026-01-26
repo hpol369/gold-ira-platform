@@ -16,6 +16,7 @@ import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import {
   getLearnArticleBySlug,
   getAllLearnArticleSlugs,
@@ -206,107 +207,138 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-// Section component for rendering article sections
+// Section component for rendering article sections with premium glass styling
 function ArticleSectionComponent({ section }: { section: ArticleSection }) {
   const Icon = iconMap[section.icon] || Info;
   const colorClass = iconColorClasses[section.iconColor] || iconColorClasses.slate;
 
   return (
     <section id={section.id} className="scroll-mt-24 mb-12">
-      <div className="flex items-start gap-4 mb-4">
-        <div className={cn("p-2 rounded-lg flex-shrink-0", colorClass)}>
-          <Icon className="h-5 w-5" />
+      {/* Glass-premium section card */}
+      <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8
+                      shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
+        <div className="flex items-start gap-4 mb-6">
+          <div className={cn(
+            "p-3 rounded-xl flex-shrink-0 shadow-lg ring-1 ring-white/10",
+            colorClass
+          )}>
+            <Icon className="h-5 w-5" />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-white pt-1">
+            {section.title}
+          </h2>
         </div>
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-white">
-          {section.title}
-        </h2>
-      </div>
 
-      <div className="pl-0 md:pl-14">
-        <p className="text-slate-300 leading-relaxed mb-4">
-          {section.content}
-        </p>
+        <div className="pl-0 md:pl-16">
+          <p className="text-slate-300 leading-relaxed mb-6">
+            {section.content}
+          </p>
 
-        {section.bullets && section.bullets.length > 0 && (
-          <ul className="space-y-2 mb-4">
-            {section.bullets.map((bullet, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm">
-                <ChevronRight className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-300">{bullet}</span>
-              </li>
-            ))}
-          </ul>
-        )}
+          {section.bullets && section.bullets.length > 0 && (
+            <ul className="space-y-3 mb-6">
+              {section.bullets.map((bullet, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm group">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-amber-500/20 flex items-center justify-center mt-0.5 group-hover:bg-amber-500/30 transition-colors">
+                    <ChevronRight className="h-4 w-4 text-amber-400" />
+                  </span>
+                  <span className="text-slate-300 pt-0.5">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          )}
 
-        {section.numberedList && section.numberedList.length > 0 && (
-          <ol className="space-y-2 mb-4 list-none">
-            {section.numberedList.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold flex items-center justify-center">
-                  {i + 1}
-                </span>
-                <span className="text-slate-300 pt-0.5">{item}</span>
-              </li>
-            ))}
-          </ol>
-        )}
+          {section.numberedList && section.numberedList.length > 0 && (
+            <ol className="space-y-3 mb-6 list-none">
+              {section.numberedList.map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm group">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gradient-to-br from-amber-500/30 to-amber-600/20
+                                   text-amber-400 text-xs font-bold flex items-center justify-center
+                                   shadow-lg ring-1 ring-amber-500/20 group-hover:from-amber-500/40 group-hover:to-amber-600/30 transition-all">
+                    {i + 1}
+                  </span>
+                  <span className="text-slate-300 pt-1">{item}</span>
+                </li>
+              ))}
+            </ol>
+          )}
 
-        {section.table && (
-          <div className="overflow-x-auto mb-4">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-white/10">
-                  {section.table.headers.map((header, i) => (
-                    <th key={i} className="text-left py-3 px-4 text-slate-400 font-medium">
-                      {header}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {section.table.rows.map((row, i) => (
-                  <tr key={i} className="border-b border-white/5">
-                    {row.map((cell, j) => (
-                      <td key={j} className="py-3 px-4 text-slate-300">
-                        {cell}
-                      </td>
+          {section.table && (
+            <div className="overflow-x-auto mb-6 bg-white/[0.02] rounded-xl border border-white/5">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-white/10 bg-white/[0.03]">
+                    {section.table.headers.map((header, i) => (
+                      <th key={i} className="text-left py-4 px-5 text-amber-400/90 font-semibold uppercase text-xs tracking-wider">
+                        {header}
+                      </th>
                     ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
-            {section.table.caption && (
-              <p className="text-xs text-slate-500 mt-2 italic">{section.table.caption}</p>
-            )}
-          </div>
-        )}
+                </thead>
+                <tbody>
+                  {section.table.rows.map((row, i) => (
+                    <tr key={i} className="border-b border-white/5 hover:bg-white/[0.03] transition-colors">
+                      {row.map((cell, j) => (
+                        <td key={j} className={cn(
+                          "py-4 px-5 text-slate-300",
+                          j === 0 && "font-medium text-white"
+                        )}>
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {section.table.caption && (
+                <p className="text-xs text-slate-500 px-5 py-3 border-t border-white/5 italic">{section.table.caption}</p>
+              )}
+            </div>
+          )}
 
-        {section.callout && (
-          <div className={cn(
-            "rounded-lg p-4 mb-4 border",
-            section.callout.type === 'info' && "bg-blue-500/10 border-blue-500/20",
-            section.callout.type === 'warning' && "bg-amber-500/10 border-amber-500/20",
-            section.callout.type === 'tip' && "bg-green-500/10 border-green-500/20",
-            section.callout.type === 'example' && "bg-purple-500/10 border-purple-500/20"
-          )}>
-            <div className="flex items-start gap-3">
-              {section.callout.type === 'info' && <Info className="h-4 w-4 text-blue-400 flex-shrink-0 mt-0.5" />}
-              {section.callout.type === 'warning' && <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />}
-              {section.callout.type === 'tip' && <Lightbulb className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />}
-              {section.callout.type === 'example' && <FileText className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />}
-              <div>
-                <h4 className={cn(
-                  "font-bold text-sm mb-1",
-                  section.callout.type === 'info' && "text-blue-400",
-                  section.callout.type === 'warning' && "text-amber-400",
-                  section.callout.type === 'tip' && "text-green-400",
-                  section.callout.type === 'example' && "text-purple-400"
-                )}>{section.callout.title}</h4>
-                <p className="text-slate-300 text-sm leading-relaxed">{section.callout.content}</p>
+          {section.callout && (
+            <div className={cn(
+              "relative rounded-2xl p-5 mb-4 overflow-hidden",
+              "bg-white/5 backdrop-blur-xl",
+              "before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:-z-10",
+              section.callout.type === 'info' && "before:bg-gradient-to-r before:from-blue-500/50 before:via-blue-400/30 before:to-white/10",
+              section.callout.type === 'warning' && "before:bg-gradient-to-r before:from-amber-500/50 before:via-amber-400/30 before:to-white/10",
+              section.callout.type === 'tip' && "before:bg-gradient-to-r before:from-green-500/50 before:via-green-400/30 before:to-white/10",
+              section.callout.type === 'example' && "before:bg-gradient-to-r before:from-purple-500/50 before:via-purple-400/30 before:to-white/10"
+            )}>
+              <div className={cn(
+                "absolute inset-0 rounded-2xl border",
+                section.callout.type === 'info' && "border-blue-500/30",
+                section.callout.type === 'warning' && "border-amber-500/30",
+                section.callout.type === 'tip' && "border-green-500/30",
+                section.callout.type === 'example' && "border-purple-500/30"
+              )} />
+              <div className="relative flex items-start gap-4">
+                <div className={cn(
+                  "p-2 rounded-lg flex-shrink-0",
+                  section.callout.type === 'info' && "bg-blue-500/20",
+                  section.callout.type === 'warning' && "bg-amber-500/20",
+                  section.callout.type === 'tip' && "bg-green-500/20",
+                  section.callout.type === 'example' && "bg-purple-500/20"
+                )}>
+                  {section.callout.type === 'info' && <Info className="h-5 w-5 text-blue-400" />}
+                  {section.callout.type === 'warning' && <AlertTriangle className="h-5 w-5 text-amber-400" />}
+                  {section.callout.type === 'tip' && <Lightbulb className="h-5 w-5 text-green-400" />}
+                  {section.callout.type === 'example' && <FileText className="h-5 w-5 text-purple-400" />}
+                </div>
+                <div>
+                  <h4 className={cn(
+                    "font-bold text-sm mb-1.5",
+                    section.callout.type === 'info' && "text-blue-400",
+                    section.callout.type === 'warning' && "text-amber-400",
+                    section.callout.type === 'tip' && "text-green-400",
+                    section.callout.type === 'example' && "text-purple-400"
+                  )}>{section.callout.title}</h4>
+                  <p className="text-slate-300 text-sm leading-relaxed">{section.callout.content}</p>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </section>
   );
@@ -367,36 +399,44 @@ export default async function LearnArticlePage({ params }: PageProps) {
       <SchemaScript schema={faqSchema} />
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Hero Section - Premium Visual Styling */}
       <section className="relative pt-24 pb-12 overflow-hidden">
+        {/* Background layers */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-800 via-slate-900 to-slate-900" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(251,191,36,0.1),transparent_50%)]" />
 
+        {/* Ambient gold glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px]
+            bg-gradient-radial from-amber-500/10 to-transparent blur-3xl pointer-events-none" />
+
+        {/* Floating orbs for premium effect */}
+        <FloatingOrbs variant="minimal" />
+
         <Container className="relative z-10">
           <div className="max-w-4xl">
-            {/* Category & Threat Badge */}
+            {/* Category & Threat Badge - Glass Treatment */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
               <Link
                 href="/learn"
-                className={cn(
-                  "inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wider border",
-                  `text-${catMeta.color}-400 bg-${catMeta.color}-500/10 border-${catMeta.color}-500/20`
-                )}
+                className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-1.5
+                           text-amber-400 text-sm font-medium hover:bg-white/10 transition-colors"
               >
                 {catMeta.label}
               </Link>
               <div className={cn(
-                "inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wider border",
-                threatMeta.bgColor
+                "bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-1.5",
+                "inline-flex items-center gap-1.5 text-sm font-medium"
               )}>
-                {article.threatLevel === 'critical' && <AlertTriangle className="h-3 w-3" />}
-                {article.threatLevel === 'warning' && <Info className="h-3 w-3" />}
-                {article.threatLevel === 'info' && <CheckCircle2 className="h-3 w-3" />}
+                {article.threatLevel === 'critical' && <AlertTriangle className="h-3.5 w-3.5 text-red-400" />}
+                {article.threatLevel === 'warning' && <Info className="h-3.5 w-3.5 text-amber-400" />}
+                {article.threatLevel === 'info' && <CheckCircle2 className="h-3.5 w-3.5 text-green-400" />}
                 <span className={threatMeta.color}>{threatMeta.label}</span>
               </div>
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-4 leading-tight">
+            {/* Title with subtle text shadow for depth */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-4 leading-tight
+                           [text-shadow:_0_2px_20px_rgba(251,191,36,0.15)]">
               {article.title}
             </h1>
 
@@ -439,76 +479,128 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 </Fragment>
               ))}
 
-              {/* Warning Box */}
+              {/* Warning Box - Premium Styling with Gradient Border */}
               {article.warningBox && (
                 <div className={cn(
-                  "rounded-xl p-6 mb-12 border",
-                  article.warningBox.type === 'red' && "bg-red-500/10 border-red-500/20",
-                  article.warningBox.type === 'amber' && "bg-amber-500/10 border-amber-500/20",
-                  article.warningBox.type === 'blue' && "bg-blue-500/10 border-blue-500/20",
-                  article.warningBox.type === 'green' && "bg-green-500/10 border-green-500/20"
+                  "relative rounded-2xl p-6 mb-12 overflow-hidden",
+                  "bg-white/5 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]",
+                  "before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:-z-10",
+                  article.warningBox.type === 'red' && "before:bg-gradient-to-r before:from-red-500/60 before:via-red-400/30 before:to-white/10",
+                  article.warningBox.type === 'amber' && "before:bg-gradient-to-r before:from-amber-500/60 before:via-amber-400/30 before:to-white/10",
+                  article.warningBox.type === 'blue' && "before:bg-gradient-to-r before:from-blue-500/60 before:via-blue-400/30 before:to-white/10",
+                  article.warningBox.type === 'green' && "before:bg-gradient-to-r before:from-green-500/60 before:via-green-400/30 before:to-white/10"
                 )}>
-                  <div className="flex items-start gap-3">
-                    <AlertTriangle className={cn(
-                      "h-5 w-5 flex-shrink-0 mt-0.5",
-                      article.warningBox.type === 'red' && "text-red-400",
-                      article.warningBox.type === 'amber' && "text-amber-400",
-                      article.warningBox.type === 'blue' && "text-blue-400",
-                      article.warningBox.type === 'green' && "text-green-400"
-                    )} />
+                  <div className={cn(
+                    "absolute inset-0 rounded-2xl border",
+                    article.warningBox.type === 'red' && "border-red-500/30",
+                    article.warningBox.type === 'amber' && "border-amber-500/30",
+                    article.warningBox.type === 'blue' && "border-blue-500/30",
+                    article.warningBox.type === 'green' && "border-green-500/30"
+                  )} />
+                  <div className="relative flex items-start gap-4">
+                    <div className={cn(
+                      "p-3 rounded-xl flex-shrink-0 shadow-lg",
+                      article.warningBox.type === 'red' && "bg-red-500/20",
+                      article.warningBox.type === 'amber' && "bg-amber-500/20",
+                      article.warningBox.type === 'blue' && "bg-blue-500/20",
+                      article.warningBox.type === 'green' && "bg-green-500/20"
+                    )}>
+                      <AlertTriangle className={cn(
+                        "h-6 w-6",
+                        article.warningBox.type === 'red' && "text-red-400",
+                        article.warningBox.type === 'amber' && "text-amber-400",
+                        article.warningBox.type === 'blue' && "text-blue-400",
+                        article.warningBox.type === 'green' && "text-green-400"
+                      )} />
+                    </div>
                     <div>
-                      <h3 className="font-bold text-white mb-2">{article.warningBox.title}</h3>
-                      <p className="text-slate-300 text-sm leading-relaxed">{article.warningBox.content}</p>
+                      <h3 className="font-bold text-white text-lg mb-2">{article.warningBox.title}</h3>
+                      <p className="text-slate-300 leading-relaxed">{article.warningBox.content}</p>
                     </div>
                   </div>
                 </div>
               )}
 
-              {/* Gold Bridge CTA */}
-              <div id="gold-ira-bridge" className="scroll-mt-24 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-amber-500/10 rounded-2xl border border-amber-500/20 p-8 mb-12">
-                <h2 className="text-2xl font-serif font-bold text-white mb-4 flex items-center gap-3">
-                  <Shield className="h-6 w-6 text-amber-400" />
-                  {article.goldBridge.title}
-                </h2>
-                <p className="text-slate-300 leading-relaxed mb-4">
-                  {article.goldBridge.content}
-                </p>
-                <ul className="space-y-2 mb-6">
-                  {article.goldBridge.bullets.map((bullet, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-300">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="gold" size="lg" asChild>
-                  <Link href="/quiz">
-                    Get Your Free Gold IRA Guide <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+              {/* Gold Bridge CTA - Premium Glass Card with Gold Accent */}
+              <div id="gold-ira-bridge" className="scroll-mt-24 relative rounded-2xl p-8 mb-12 overflow-hidden
+                                                   bg-gradient-to-br from-amber-500/10 via-white/5 to-amber-500/5
+                                                   backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_60px_rgba(251,191,36,0.1)]">
+                {/* Gold gradient border effect */}
+                <div className="absolute inset-0 rounded-2xl border border-amber-500/30" />
+                <div className="absolute inset-0 rounded-2xl p-[1px] bg-gradient-to-r from-amber-500/50 via-amber-400/20 to-amber-500/50 -z-10" />
+
+                <div className="relative">
+                  <h2 className="text-2xl font-serif font-bold text-white mb-4 flex items-center gap-3">
+                    <div className="p-2 rounded-xl bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
+                      <Shield className="h-6 w-6 text-amber-400" />
+                    </div>
+                    {article.goldBridge.title}
+                  </h2>
+                  <p className="text-slate-300 leading-relaxed mb-5">
+                    {article.goldBridge.content}
+                  </p>
+                  <ul className="space-y-3 mb-6">
+                    {article.goldBridge.bullets.map((bullet, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm group">
+                        <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-amber-500/20 flex items-center justify-center mt-0.5
+                                         group-hover:bg-amber-500/30 transition-colors ring-1 ring-amber-500/20">
+                          <CheckCircle2 className="h-4 w-4 text-amber-400" />
+                        </span>
+                        <span className="text-slate-300 pt-0.5">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button variant="gold" size="lg" asChild>
+                    <Link href="/quiz">
+                      Get Your Free Gold IRA Guide <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
 
-              {/* FAQs */}
+              {/* FAQs - Premium Glass Cards with Hover Effects */}
               {article.faqs.length > 0 && (
                 <div className="mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-white mb-6">
+                  <h2 className="text-2xl font-serif font-bold text-white mb-6 flex items-center gap-3">
+                    <div className="p-2 rounded-xl bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
+                      <HelpCircle className="h-5 w-5 text-amber-400" />
+                    </div>
                     Frequently Asked Questions
                   </h2>
                   <div className="space-y-4">
                     {article.faqs.map((faq, i) => (
-                      <div key={i} className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                        <h3 className="font-bold text-white mb-2">{faq.question}</h3>
-                        <p className="text-slate-300 text-sm leading-relaxed">{faq.answer}</p>
+                      <div
+                        key={i}
+                        className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-6
+                                   shadow-[0_4px_20px_rgba(0,0,0,0.2)]
+                                   hover:bg-white/[0.08] hover:border-amber-400/20
+                                   hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.15)]
+                                   transition-all duration-300 group"
+                      >
+                        <h3 className="font-bold text-white mb-3 text-lg group-hover:text-amber-100 transition-colors flex items-start gap-3">
+                          <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gradient-to-br from-amber-500/30 to-amber-600/20
+                                           text-amber-400 text-sm font-bold flex items-center justify-center mt-0.5
+                                           shadow-lg ring-1 ring-amber-500/20">
+                            {i + 1}
+                          </span>
+                          <span className="pt-0.5">{faq.question}</span>
+                        </h3>
+                        <p className="text-slate-300 leading-relaxed pl-10">{faq.answer}</p>
                       </div>
                     ))}
                   </div>
                 </div>
               )}
 
-              {/* Related Articles */}
+              {/* Related Articles - Float Card Effect */}
               {relatedArticles.length > 0 && (
                 <div className="mb-12">
-                  <h2 className="text-xl font-bold text-white mb-6">Related Articles</h2>
+                  <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                    <div className="p-2 rounded-xl bg-blue-500/20 shadow-lg ring-1 ring-blue-500/30">
+                      <FileText className="h-5 w-5 text-blue-400" />
+                    </div>
+                    Related Articles
+                  </h2>
                   <div className="grid md:grid-cols-3 gap-4">
                     {relatedArticles.map((related) => {
                       const relatedCat = categoryMeta[related.category];
@@ -516,14 +608,22 @@ export default async function LearnArticlePage({ params }: PageProps) {
                         <Link
                           key={related.slug}
                           href={`/learn/${related.slug}`}
-                          className="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-amber-500/30 rounded-xl p-4 transition-all group"
+                          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-5
+                                     hover:bg-white/[0.08] hover:-translate-y-1
+                                     hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)]
+                                     hover:border-amber-400/30 transition-all duration-300 group"
                         >
-                          <div className="text-xs font-medium uppercase tracking-wider mb-2 text-slate-400">
+                          <div className="text-xs font-medium uppercase tracking-wider mb-2 text-slate-400
+                                          group-hover:text-amber-400/80 transition-colors">
                             {relatedCat.label}
                           </div>
                           <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors text-sm leading-snug">
                             {related.title}
                           </h3>
+                          <div className="mt-3 flex items-center gap-1 text-xs text-slate-500 group-hover:text-amber-400/60 transition-colors">
+                            <span>Read more</span>
+                            <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
+                          </div>
                         </Link>
                       );
                     })}
@@ -531,18 +631,28 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 </div>
               )}
 
-              {/* Related Guides */}
+              {/* Related Guides - Premium Chip Style */}
               {article.relatedGuides.length > 0 && (
                 <div className="mb-12">
-                  <h2 className="text-lg font-bold text-white mb-4">Helpful Guides</h2>
+                  <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
+                    <div className="p-1.5 rounded-lg bg-green-500/20 shadow-lg ring-1 ring-green-500/30">
+                      <FileText className="h-4 w-4 text-green-400" />
+                    </div>
+                    Helpful Guides
+                  </h2>
                   <div className="flex flex-wrap gap-3">
                     {article.relatedGuides.map((guide) => (
                       <Link
                         key={guide}
                         href={guide}
-                        className="inline-flex items-center gap-1 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-sm text-slate-300 hover:text-white transition-colors"
+                        className="inline-flex items-center gap-2 px-4 py-2.5
+                                   bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl
+                                   text-sm text-slate-300
+                                   hover:bg-white/[0.08] hover:border-amber-400/30 hover:text-white
+                                   hover:-translate-y-0.5 hover:shadow-[0_4px_20px_-5px_rgba(212,175,55,0.2)]
+                                   transition-all duration-300 group"
                       >
-                        <FileText className="h-4 w-4 text-amber-400" />
+                        <FileText className="h-4 w-4 text-amber-400 group-hover:text-amber-300" />
                         {guide.split('/').pop()?.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
                       </Link>
                     ))}
@@ -550,19 +660,32 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 </div>
               )}
 
-              {/* Related Tools */}
+              {/* Related Tools - Premium Gold Accent Style */}
               {article.relatedTools && article.relatedTools.length > 0 && (
                 <div className="mb-12">
-                  <h2 className="text-lg font-bold text-white mb-4">Interactive Tools</h2>
+                  <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
+                    <div className="p-1.5 rounded-lg bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
+                      <Calculator className="h-4 w-4 text-amber-400" />
+                    </div>
+                    Interactive Tools
+                  </h2>
                   <div className="flex flex-wrap gap-3">
                     {article.relatedTools.map((tool) => (
                       <Link
                         key={tool}
                         href={tool}
-                        className="inline-flex items-center gap-1 px-4 py-2 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 rounded-lg text-sm text-amber-400 hover:text-amber-300 transition-colors"
+                        className="inline-flex items-center gap-2 px-4 py-2.5
+                                   bg-gradient-to-br from-amber-500/15 to-amber-600/10
+                                   backdrop-blur-xl border border-amber-500/30 rounded-xl
+                                   text-sm text-amber-400 font-medium
+                                   hover:from-amber-500/25 hover:to-amber-600/15
+                                   hover:border-amber-400/50 hover:text-amber-300
+                                   hover:-translate-y-0.5 hover:shadow-[0_4px_20px_-5px_rgba(212,175,55,0.3)]
+                                   transition-all duration-300 group"
                       >
-                        <Calculator className="h-4 w-4" />
+                        <Calculator className="h-4 w-4 group-hover:scale-110 transition-transform" />
                         {tool.split('/').pop()?.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                        <ArrowRight className="h-3 w-3 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
                       </Link>
                     ))}
                   </div>

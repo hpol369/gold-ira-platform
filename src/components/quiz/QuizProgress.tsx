@@ -33,7 +33,8 @@ export function QuizProgress({
       {/* Progress Bar Container */}
       <div className="w-full h-2 bg-slate-700/50 rounded-full overflow-hidden">
         <motion.div
-          className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full"
+          className="h-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 rounded-full
+                     shadow-[0_0_10px_rgba(212,175,55,0.5)]"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{
@@ -100,7 +101,8 @@ export function QuizProgressBar({
   return (
     <div className={cn("w-full h-2 bg-slate-700/50 rounded-full overflow-hidden", className)}>
       <motion.div
-        className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full"
+        className="h-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 rounded-full
+                   shadow-[0_0_10px_rgba(212,175,55,0.5)]"
         initial={{ width: 0 }}
         animate={{ width: `${Math.min(100, Math.max(0, progress))}%` }}
         transition={{

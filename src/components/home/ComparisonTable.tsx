@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { Star, CheckCircle2, ArrowRight, ShieldCheck, Trophy, BadgeCheck } from "lucide-react";
 import Link from "next/link";
 import { AFFILIATE_LINKS, getAugustaLink } from "@/config/affiliates";
@@ -94,7 +95,8 @@ const companies: Company[] = [
 
 export function ComparisonTable() {
     return (
-        <section className="py-16 bg-slate-900" id="comparison-table">
+        <section className="py-32 bg-slate-900 relative" id="comparison-table">
+            <FloatingOrbs variant="minimal" />
             <Container>
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
@@ -110,13 +112,14 @@ export function ComparisonTable() {
                     {companies.map((company) => (
                         <div
                             key={company.name}
-                            className={`border rounded-xl p-6 shadow-sm relative overflow-hidden bg-white/5 backdrop-blur-sm
-                                ${company.rank === 1 ? 'border-amber-500/30 shadow-xl ring-1 ring-amber-500/20' : 'border-white/10'}
+                            className={`rounded-3xl p-6 relative overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10
+                                shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:bg-white/[0.06] transition-all duration-300
+                                ${company.rank === 1 ? 'ring-1 ring-amber-500/20' : ''}
                             `}
                         >
                             {company.rank === 1 && (
                                 <>
-                                    <div className="absolute top-0 right-0 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1 shadow-sm z-10">
+                                    <div className="absolute top-0 right-0 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1 shadow-[0_0_20px_rgba(212,175,55,0.5)] animate-pulse z-10" style={{ animationDuration: '3s' }}>
                                         <Trophy className="w-3 h-3" /> #1 Top Pick
                                     </div>
                                     <div className="absolute inset-0 bg-amber-500/5 pointer-events-none" />
@@ -193,9 +196,9 @@ export function ComparisonTable() {
                 </div>
 
                 {/* Desktop View (Table) */}
-                <div className="hidden md:block overflow-hidden rounded-2xl border border-white/10 shadow-xl bg-white/5 backdrop-blur-sm">
+                <div className="hidden md:block bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
                     <table className="w-full text-left border-collapse">
-                        <thead className="bg-slate-800/80">
+                        <thead className="bg-gradient-to-r from-amber-500/10 via-amber-400/5 to-amber-500/10">
                             <tr>
                                 <th className="p-5 font-bold text-center w-16 text-xs uppercase tracking-wider text-slate-500">Rank</th>
                                 <th className="p-5 font-bold w-1/4 text-xs uppercase tracking-wider text-slate-500">Company</th>
@@ -205,13 +208,13 @@ export function ComparisonTable() {
                                 <th className="p-5 font-bold text-center text-xs uppercase tracking-wider text-slate-500">Action</th>
                             </tr>
                         </thead>
-                        <tbody className="divide-y divide-white/5">
+                        <tbody>
                             {companies.map((company, index) => (
                                 <tr
                                     key={company.name}
-                                    className={`transition-colors relative ${index === 0
-                                            ? 'bg-amber-500/5 hover:bg-amber-500/10'
-                                            : 'hover:bg-white/5'
+                                    className={`border-b border-white/5 hover:bg-white/[0.06] transition-all duration-300 relative ${index === 0
+                                            ? 'bg-amber-500/5'
+                                            : ''
                                         }`}
                                 >
                                     <td className="p-5 text-center align-middle">
@@ -225,7 +228,7 @@ export function ComparisonTable() {
                                     <td className="p-5 align-middle">
                                         <div className="font-bold text-lg text-white whitespace-nowrap">{company.name}</div>
                                         {company.rank === 1 && (
-                                            <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/20 px-2 py-0.5 rounded-full mt-1">
+                                            <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-slate-900 bg-gradient-to-r from-amber-400 to-amber-500 px-2 py-0.5 rounded-full mt-1 shadow-[0_0_20px_rgba(212,175,55,0.5)] animate-pulse" style={{ animationDuration: '3s' }}>
                                                 <Trophy className="w-3 h-3" /> Editors Choice
                                             </span>
                                         )}

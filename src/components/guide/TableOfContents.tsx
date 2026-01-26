@@ -37,19 +37,26 @@ export function TableOfContents({ items, className }: TableOfContentsProps) {
     }, [items]);
 
     return (
-        <nav className={cn("hidden lg:block sticky top-24 self-start w-64 p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10", className)}>
-            <h4 className="font-serif font-bold text-white mb-4 uppercase tracking-wider text-sm">
+        <nav className={cn(
+            "hidden lg:block sticky top-24 self-start w-64 p-6",
+            "bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10",
+            "shadow-[0_8px_32px_rgba(0,0,0,0.3)]",
+            className
+        )}>
+            <h4 className="font-serif font-bold text-white mb-4 uppercase tracking-wider text-sm flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
                 On This Page
             </h4>
-            <ul className="space-y-3 border-l-2 border-white/10">
+            <ul className="space-y-2 border-l-2 border-white/10">
                 {items.map((item) => (
                     <li key={item.id} className="-ml-[2px]">
                         <a
                             href={`#${item.id}`}
                             className={cn(
-                                "block pl-4 text-sm transition-all duration-200 hover:text-amber-400",
+                                "block pl-4 py-1.5 text-sm transition-all duration-300",
+                                "hover:text-amber-400 hover:pl-5",
                                 activeId === item.id
-                                    ? "border-l-2 border-amber-400 font-semibold text-white"
+                                    ? "border-l-2 border-amber-400 font-semibold text-white bg-amber-400/5 rounded-r-lg"
                                     : "border-l-2 border-transparent text-slate-400"
                             )}
                         >

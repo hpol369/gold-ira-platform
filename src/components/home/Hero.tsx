@@ -9,7 +9,7 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export function Hero() {
     return (
-        <section className="relative overflow-hidden bg-primary pb-20 pt-24 md:pb-32 md:pt-32 min-h-[90vh] flex items-center">
+        <section className="relative overflow-hidden bg-primary pb-28 pt-28 md:pb-40 md:pt-40 min-h-[90vh] flex items-center">
             {/* Dynamic Background */}
             <div className="absolute inset-0 pointer-events-none">
                 {/* Gold Glow Top Left */}
@@ -18,7 +18,14 @@ export function Hero() {
                 <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-emerald-900/40 rounded-full blur-[120px] mix-blend-screen opacity-30" />
                 {/* Grainy Texture Overlay */}
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] mix-blend-overlay"></div>
+                {/* Subtle Grid Pattern Overlay */}
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px] opacity-30" />
             </div>
+
+            {/* Floating Decorative Orbs */}
+            <div className="absolute top-20 left-[10%] w-32 h-32 rounded-full bg-gradient-to-br from-amber-500/20 to-amber-600/5 blur-2xl animate-pulse pointer-events-none" style={{ animationDuration: '4s' }} />
+            <div className="absolute top-40 right-[15%] w-24 h-24 rounded-full bg-gradient-to-br from-amber-400/15 to-transparent blur-xl animate-pulse pointer-events-none" style={{ animationDuration: '6s', animationDelay: '1s' }} />
+            <div className="absolute bottom-32 left-[20%] w-20 h-20 rounded-full bg-gradient-to-br from-emerald-500/10 to-transparent blur-xl animate-pulse pointer-events-none" style={{ animationDuration: '5s', animationDelay: '2s' }} />
 
             <Container className="relative z-10">
                 <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
@@ -56,9 +63,10 @@ export function Hero() {
                         <Button
                             size="xl"
                             asChild
-                            className="w-full sm:w-auto min-w-[280px] h-16 text-lg font-bold text-slate-900 
-                            bg-gradient-to-b from-amber-200 via-amber-400 to-amber-500 
-                            shadow-[0_0_50px_-10px_rgba(212,175,55,0.4)] hover:shadow-[0_0_60px_-10px_rgba(212,175,55,0.6)]
+                            className="w-full sm:w-auto min-w-[280px] h-16 text-lg font-bold text-slate-900
+                            bg-gradient-to-b from-amber-200 via-amber-400 to-amber-500
+                            shadow-[0_0_60px_-5px_rgba(212,175,55,0.5),0_0_100px_-10px_rgba(212,175,55,0.3)]
+                            hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7),0_0_120px_-10px_rgba(212,175,55,0.4)]
                             hover:scale-105 transition-all duration-300 border border-amber-200/50 relative overflow-hidden group"
                         >
                             <Link href="/#featured-partner" onClick={(e) => {
@@ -76,7 +84,7 @@ export function Hero() {
 
                         <Button
                             size="xl"
-                            className="bg-white/5 hover:bg-white/10 text-white border border-white/20 hover:border-white/40 w-full sm:w-auto min-w-[280px] h-16 text-lg backdrop-blur-sm transition-all duration-300 shadow-lg group"
+                            className="bg-white/5 hover:bg-white/10 text-white border border-white/20 hover:border-amber-400/40 w-full sm:w-auto min-w-[280px] h-16 text-lg backdrop-blur-sm transition-all duration-300 shadow-lg hover:shadow-[0_0_30px_-10px_rgba(212,175,55,0.3)] group"
                             asChild
                         >
                             <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-hero", "augusta")} target="_blank" rel="noopener noreferrer">
@@ -152,8 +160,8 @@ export function Hero() {
                         className="mt-16 pt-8 border-t border-white/10 w-full max-w-4xl"
                     >
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-sm text-left">
-                            <div className="flex items-center gap-4 glass-card p-4 hover:bg-white/10 transition-colors group">
-                                <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
+                            <div className="flex items-center gap-4 p-5 rounded-xl bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-amber-400/30 hover:bg-white/[0.06] hover:-translate-y-1 hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)] transition-all duration-300 group">
+                                <div className="p-3 rounded-full bg-gradient-to-br from-secondary/20 to-secondary/5 text-secondary group-hover:scale-110 transition-transform">
                                     <ShieldCheck className="h-6 w-6" />
                                 </div>
                                 <div className="flex flex-col">
@@ -162,8 +170,8 @@ export function Hero() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-4 glass-card p-4 hover:bg-white/10 transition-colors group">
-                                <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
+                            <div className="flex items-center gap-4 p-5 rounded-xl bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-amber-400/30 hover:bg-white/[0.06] hover:-translate-y-1 hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)] transition-all duration-300 group">
+                                <div className="p-3 rounded-full bg-gradient-to-br from-secondary/20 to-secondary/5 text-secondary group-hover:scale-110 transition-transform">
                                     <TrendingUp className="h-6 w-6" />
                                 </div>
                                 <div className="flex flex-col">
@@ -172,8 +180,8 @@ export function Hero() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-4 glass-card p-4 hover:bg-white/10 transition-colors group">
-                                <div className="p-3 rounded-full bg-secondary/10 text-secondary group-hover:scale-110 transition-transform">
+                            <div className="flex items-center gap-4 p-5 rounded-xl bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-amber-400/30 hover:bg-white/[0.06] hover:-translate-y-1 hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)] transition-all duration-300 group">
+                                <div className="p-3 rounded-full bg-gradient-to-br from-secondary/20 to-secondary/5 text-secondary group-hover:scale-110 transition-transform">
                                     <Lock className="h-6 w-6" />
                                 </div>
                                 <div className="flex flex-col">
