@@ -95,7 +95,7 @@ const companies: Company[] = [
 
 export function ComparisonTable() {
     return (
-        <section className="py-32 bg-slate-900 relative" id="comparison-table">
+        <section className="py-32 bg-slate-900 relative scroll-mt-20" id="compare">
             <FloatingOrbs variant="minimal" />
             <Container>
                 <div className="text-center mb-12">

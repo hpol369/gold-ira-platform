@@ -19,7 +19,7 @@ import {
 
 export function HowSection() {
   return (
-    <section className="py-20 md:py-28 bg-slate-900">
+    <section id="how-it-works" className="py-20 md:py-28 bg-slate-900 scroll-mt-20">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
