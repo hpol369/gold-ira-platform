@@ -39,6 +39,12 @@ import { wepGpoExpansionArticles } from './wep-gpo-expansion-cluster';
 import { statePensionsExpansionArticles } from './state-pensions-expansion-cluster';
 import { influencerFinalArticles } from './influencer-final-cluster';
 import { company401kExpansionArticles } from './company-401k-expansion-cluster';
+import { influencerMarketArticles } from './influencer-market-cluster';
+import { medicareInsuranceArticles } from './medicare-insurance-cluster';
+import { legalBeneficiaryArticles } from './legal-beneficiary-cluster';
+import { medicaidEstateArticles } from './medicaid-estate-cluster';
+import { retirementPlanningFinalArticles } from './retirement-planning-final-cluster';
+import { seniorCareCostsArticles } from './senior-care-costs-cluster';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -77,6 +83,12 @@ export const learnArticles: LearnArticleRegistry = {
   ...statePensionsExpansionArticles,
   ...influencerFinalArticles,
   ...company401kExpansionArticles,
+  ...influencerMarketArticles,
+  ...medicareInsuranceArticles,
+  ...legalBeneficiaryArticles,
+  ...medicaidEstateArticles,
+  ...retirementPlanningFinalArticles,
+  ...seniorCareCostsArticles,
 };
 
 // ============================================
