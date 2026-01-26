@@ -168,9 +168,9 @@ export function TSPCalculator() {
               <Calculator className="h-4 w-4" />
               TSP CALCULATOR
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Thrift Savings Plan Calculator
-            </h2>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              TSP Calculator 2026
+            </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Project your TSP balance at retirement with fund allocation analysis and contribution optimization.
             </p>

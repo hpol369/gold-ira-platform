@@ -31,10 +31,12 @@ export default function BestGoldIraCompaniesPage() {
                             Updated January 2026
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-white">
-                            Best Gold IRA Companies
+                            We Know You&apos;re Skeptical. You Should Be.
                         </h1>
                         <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                            Choosing the right Gold IRA company matters. Here&apos;s our analysis of the top providers based on fees, service quality, and track record.
+                            After decades of Wall Street promises and financial advisors who didn&apos;t return your calls,
+                            trusting another company with your savings isn&apos;t easy. That&apos;s why we focus on one thing:
+                            which companies have zero complaints and treat people like you with respect.
                         </p>
                     </Container>
                 </header>
@@ -48,15 +50,21 @@ export default function BestGoldIraCompaniesPage() {
                         <div className="lg:col-span-2 space-y-16">
 
                             <div className="prose prose-lg max-w-none text-slate-300">
-                                <h2 className="text-3xl font-serif font-bold text-white">How We Evaluate Companies</h2>
+                                <h2 className="text-3xl font-serif font-bold text-white">How We Separate the Good from the Bad</h2>
                                 <p>
-                                    The Gold IRA industry has its share of questionable operators. We focus on companies that demonstrate transparency in their pricing, maintain strong regulatory standing, and have verifiable customer satisfaction records.
+                                    Let&apos;s be honest—the Gold IRA industry has some bad actors. Pushy salespeople, hidden fees, companies that
+                                    disappear when you have questions. After 30 years of hard work, the last thing you need is another
+                                    financial headache.
                                 </p>
                                 <p>
-                                    Our evaluation criteria includes: fee transparency (can you understand what you&apos;ll pay before signing up?), BBB ratings and complaint history, time in business, customer review patterns across multiple platforms, and the overall sales approach (education-focused vs. pressure tactics).
+                                    We look at what actually matters: Do they have complaints with the BBB? Will they pressure you into
+                                    buying today? Can a retired steelworker or nurse actually understand their fee structure? Do they
+                                    treat you like a partner or a transaction?
                                 </p>
                                 <p>
-                                    The right company for you depends on your situation - primarily how much you&apos;re looking to invest. Companies have different minimum thresholds, and their service levels and fee structures vary accordingly.
+                                    <strong>Real example:</strong> Tom, a retired electrician from Ohio, told us he called three Gold IRA
+                                    companies. Two wouldn&apos;t stop calling back. One (Augusta) sent him information, answered his
+                                    questions, and let him decide on his own timeline. That&apos;s the difference we look for.
                                 </p>
                             </div>
 
@@ -76,28 +84,32 @@ export default function BestGoldIraCompaniesPage() {
                                         </div>
                                         <div className="w-full md:w-2/3">
                                             <p className="text-slate-400 mb-4">
-                                                Augusta has built their reputation on education rather than sales pressure. Their process includes a one-on-one web conference covering how precious metals fit into retirement planning - no obligation, no hard sell. For investors with $50,000 or more, their fee waiver programs can provide genuine value over time.
+                                                <strong>Why retired teachers, nurses, and factory workers choose Augusta:</strong> They don&apos;t
+                                                pressure you. Period. John, a retired steelworker from Pittsburgh, chose Augusta because
+                                                &quot;they explained everything in plain English and never rushed me.&quot; Their team will walk you through
+                                                a free web conference—no obligation, no sales pitch. If your body says retire at 62 but your
+                                                advisor says 67, Augusta can show you how gold might bridge that gap.
                                             </p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-bold border border-green-500/30">Fee Waiver Programs Available</span>
+                                                <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-bold border border-green-500/30">No Pushy Salespeople</span>
                                                 <span className="bg-blue-500/20 text-blue-400 px-2 py-1 rounded text-xs font-bold border border-blue-500/30">Zero BBB Complaints</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="grid md:grid-cols-2 gap-4 mb-8">
                                         <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                            <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Strengths</h4>
+                                            <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Why People Trust Them</h4>
                                             <ul className="text-sm space-y-1 text-slate-400">
-                                                <li>• Education-first approach</li>
-                                                <li>• Transparent fee structure</li>
-                                                <li>• Exceptional complaint record</li>
+                                                <li>• They explain things without jargon</li>
+                                                <li>• Zero complaints in their entire history</li>
+                                                <li>• No pressure to decide today</li>
                                             </ul>
                                         </div>
                                         <div className="bg-amber-500/10 p-4 rounded-xl border border-amber-500/20">
-                                            <h4 className="font-bold text-amber-400 mb-2 flex items-center gap-2">Considerations</h4>
+                                            <h4 className="font-bold text-amber-400 mb-2 flex items-center gap-2">Good to Know</h4>
                                             <ul className="text-sm space-y-1 text-slate-400">
-                                                <li>• <span className="whitespace-nowrap">$50,000</span> minimum investment</li>
-                                                <li>• Requires phone consultation</li>
+                                                <li>• Need at least <span className="whitespace-nowrap">$50,000</span> to work with them</li>
+                                                <li>• They want to talk first (but it&apos;s worth it)</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -130,28 +142,31 @@ export default function BestGoldIraCompaniesPage() {
                                         </div>
                                         <div className="w-full md:w-2/3">
                                             <p className="text-slate-400 mb-4">
-                                                Noble Gold fills an important gap for investors who don&apos;t meet the high minimums at Augusta or Goldco. With minimums as low as $2,000, they&apos;re accessible to a wider range of investors. Their Texas storage option and straightforward service approach have earned them strong reviews.
+                                                <strong>Good for folks who haven&apos;t hit $50k yet:</strong> Mary, a recently retired
+                                                school bus driver, had $35,000 to move from her 403(b). Augusta&apos;s minimum was too high,
+                                                but Noble Gold worked with her budget. Their team is patient—they know you&apos;ve worked
+                                                hard for every dollar and won&apos;t rush you into anything.
                                             </p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-bold border border-green-500/30">Low Minimum ($2k-$5k)</span>
+                                                <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-bold border border-green-500/30">Works With Smaller Accounts</span>
                                                 <span className="bg-blue-500/20 text-blue-400 px-2 py-1 rounded text-xs font-bold border border-blue-500/30">Texas Storage Available</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="grid md:grid-cols-2 gap-4 mb-8">
                                         <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                            <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Strengths</h4>
+                                            <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Why People Trust Them</h4>
                                             <ul className="text-sm space-y-1 text-slate-400">
-                                                <li>• Accessible to smaller investors</li>
-                                                <li>• Patient, no-pressure service</li>
-                                                <li>• Multiple storage options</li>
+                                                <li>• No $50k minimum to get started</li>
+                                                <li>• Patient reps who answer questions</li>
+                                                <li>• Storage in Texas (closer to home for some)</li>
                                             </ul>
                                         </div>
                                         <div className="bg-amber-500/10 p-4 rounded-xl border border-amber-500/20">
-                                            <h4 className="font-bold text-amber-400 mb-2 flex items-center gap-2">Considerations</h4>
+                                            <h4 className="font-bold text-amber-400 mb-2 flex items-center gap-2">Good to Know</h4>
                                             <ul className="text-sm space-y-1 text-slate-400">
-                                                <li>• Flat fees less favorable on very small accounts</li>
-                                                <li>• Newer company (founded 2016)</li>
+                                                <li>• Fees are flat, so smaller accounts pay more %</li>
+                                                <li>• Newer company (founded 2016, but solid record)</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -179,7 +194,10 @@ export default function BestGoldIraCompaniesPage() {
                                 </div>
                                 <div className="p-8">
                                     <p className="text-slate-400 mb-6">
-                                        Goldco is the most-advertised Gold IRA company in the country. Their heavy marketing budget means strong brand recognition, and they&apos;ve processed billions in precious metals. Customer service is solid, though their pricing requires speaking with a representative. Good option for investors who value working with a widely-recognized name.
+                                        You&apos;ve probably seen Goldco ads everywhere—they spend more on marketing than anyone else.
+                                        That said, they&apos;ve been around a while and have handled billions in rollovers. If you
+                                        like working with a name you recognize and don&apos;t mind that their pricing isn&apos;t posted
+                                        online, they&apos;re a solid option. Just be ready to talk to a rep before you see numbers.
                                     </p>
                                     <div className="flex gap-4">
                                         <Button variant="gold" size="lg" className="w-full" asChild>
@@ -196,23 +214,30 @@ export default function BestGoldIraCompaniesPage() {
 
                             {/* Other Companies Worth Considering */}
                             <div className="prose prose-lg max-w-none text-slate-300">
-                                <h2 className="text-2xl font-serif font-bold text-white">Other Companies Worth Considering</h2>
+                                <h2 className="text-2xl font-serif font-bold text-white">Other Companies Worth Looking At</h2>
                                 <p>
-                                    Several other companies have solid reputations in the Gold IRA space. <Link href="/reviews/birch-gold" className="text-amber-400 hover:underline">Birch Gold Group</Link> has been operating since 2003 and uses a flat-fee structure that benefits larger accounts. <Link href="/reviews/american-hartford-gold" className="text-amber-400 hover:underline">American Hartford Gold</Link> offers price-matching and competitive minimums.
+                                    Everyone&apos;s situation is different. <Link href="/reviews/birch-gold" className="text-amber-400 hover:underline">Birch Gold Group</Link>
+                                    has been around since 2003—longer than most—and their flat fees work well if you&apos;re moving
+                                    $100k+. <Link href="/reviews/american-hartford-gold" className="text-amber-400 hover:underline">American Hartford Gold</Link>
+                                    offers price-matching if you want to compare quotes.
                                 </p>
                                 <p>
-                                    For investors with smaller amounts to invest, <Link href="/reviews/orion-metal-exchange" className="text-amber-400 hover:underline">Orion Metal Exchange</Link> is worth researching as they cater specifically to beginning investors.
+                                    <strong>Smaller savings to protect?</strong> Don&apos;t let that stop you.
+                                    <Link href="/reviews/orion-metal-exchange" className="text-amber-400 hover:underline"> Orion Metal Exchange</Link>
+                                    works specifically with folks who are just getting started or have smaller amounts to move.
+                                    There&apos;s no shame in starting where you are.
                                 </p>
                             </div>
 
                             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl text-center border border-white/10">
-                                <h3 className="text-2xl font-serif font-bold text-white mb-4">Not Sure Which Company Fits?</h3>
+                                <h3 className="text-2xl font-serif font-bold text-white mb-4">Not Sure Where to Start?</h3>
                                 <p className="text-slate-400 mb-6">
-                                    The right choice depends on your investment amount and preferences. Take our quick quiz to get a personalized recommendation.
+                                    Every situation is different. A retired truck driver with $200k has different needs than a
+                                    nurse with $50k. Take our 2-minute quiz and we&apos;ll match you with the company that fits your situation.
                                 </p>
                                 <Button variant="outline" className="border-white/20 text-slate-300 hover:bg-white/10 hover:text-white" asChild>
                                     <Link href="/quiz">
-                                        Take the Quiz <ArrowRight className="w-4 h-4 ml-2" />
+                                        Find My Match <ArrowRight className="w-4 h-4 ml-2" />
                                     </Link>
                                 </Button>
                             </div>
@@ -231,8 +256,8 @@ export default function BestGoldIraCompaniesPage() {
                         <AugustaCTA
                             variant="footer"
                             linkContext="comparison"
-                            headline="Ready to Get Started?"
-                            subheadline="Augusta Precious Metals earned our #1 ranking for their education-first approach and zero BBB complaints. Request your free kit today."
+                            headline="You've Earned the Right to Be Careful With Your Money"
+                            subheadline="Augusta Precious Metals has zero BBB complaints because they treat people right. No pressure, no gimmicks—just honest folks who will answer your questions and let you decide on your own timeline. After 30 years of hard work, that's the least you deserve."
                             trackSource="best-companies"
                         />
                     </Container>

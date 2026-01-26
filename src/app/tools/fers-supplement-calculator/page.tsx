@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = {
   title: "FERS Supplement Calculator 2026 | Free SRS Calculator for Federal Employees",
   description:
-    "Free FERS Special Retirement Supplement (SRS) calculator. Calculate your bridge payment from FERS retirement until age 62. Includes eligibility checker and total value projection.",
+    "Free FERS Supplement (SRS) calculator. Calculate your bridge payment from FERS retirement until age 62 with eligibility checker.",
   keywords: [
     "fers supplement calculator",
     "fers special retirement supplement",

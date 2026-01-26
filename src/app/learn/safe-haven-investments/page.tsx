@@ -11,7 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Safe Haven Investments: 6 Assets That Protect During Crisis | Rich Dad Retirement",
+    title: "Safe Haven Investments: 6 Assets for Crisis",
     description: "Discover safe haven investments that protect wealth during market crashes, geopolitical crises, and economic uncertainty. Gold, bonds, and more.",
     openGraph: {
         title: "Safe Haven Investments - 2026 Guide",

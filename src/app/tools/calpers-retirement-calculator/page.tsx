@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "CalPERS Retirement Calculator 2026 | Free California Pension Estimator",
   description:
-    "Free CalPERS retirement calculator for 2026. Calculate your California Public Employees Retirement System pension using official formulas including Classic 2%@55, 2%@60, and PEPRA 2%@62.",
+    "Free CalPERS retirement calculator for 2026. Calculate your California pension using official formulas: Classic 2%@55, 2%@60, and PEPRA 2%@62.",
   keywords: [
     "calpers retirement calculator",
     "calpers pension calculator",

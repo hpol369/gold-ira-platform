@@ -12,21 +12,22 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.richdadretirement.com"),
   title: "Rich Dad Retirement - Protect Your Retirement with Gold",
   description: "Compare the best Gold IRA companies and protect your wealth. Expert reviews, fee comparisons, and guides to help you choose the right gold investment.",
   verification: {
     google: "ieR8rjLZCnl3Cy2YQ_fz9YnSRnPCPdfQA9p6pENdk78",
   },
   openGraph: {
-    title: "Rich Dad Retirement - Protect Your Retirement with Gold",
-    description: "Compare the best Gold IRA companies and protect your wealth. Expert reviews, fee comparisons, and guides.",
+    type: "website",
+    locale: "en_US",
     url: "https://www.richdadretirement.com",
     siteName: "Rich Dad Retirement",
-    locale: "en_US",
-    type: "website",
+    title: "Rich Dad Retirement - Protect Your Retirement with Gold",
+    description: "Compare the best Gold IRA companies and protect your wealth. Expert reviews, fee comparisons, and guides.",
     images: [
       {
-        url: "https://www.richdadretirement.com/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Rich Dad Retirement - Gold IRA Reviews & Comparisons",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rich Dad Retirement - Protect Your Retirement with Gold",
     description: "Compare the best Gold IRA companies and protect your wealth. Expert reviews and guides.",
-    images: ["https://www.richdadretirement.com/og-image.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

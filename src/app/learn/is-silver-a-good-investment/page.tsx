@@ -12,7 +12,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
     title: "Is Silver a Good Investment in 2026? Complete Analysis | Rich Dad Retirement",
-    description: "Discover if silver is a good investment for 2026. Learn about silver's industrial demand, historical returns, silver-to-gold ratio, and how to invest in silver through a Silver IRA.",
+    description: "Is silver a good investment in 2026? Learn about industrial demand, silver-to-gold ratio, and how to invest through a Silver IRA.",
     keywords: ["is silver a good investment", "silver investment 2026", "should I invest in silver", "silver vs gold investment", "silver ira investment", "silver bullion investment"],
     openGraph: {
         title: "Is Silver a Good Investment in 2026? Complete Analysis",

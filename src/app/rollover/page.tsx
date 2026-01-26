@@ -264,8 +264,74 @@ export default function RolloverPage() {
         </Container>
       </section>
 
-      {/* Related Rollover Guides */}
+      {/* 401k Provider Rollover Guides */}
       <section className="py-16">
+        <Container>
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 bg-amber-500/20 rounded-lg border border-amber-500/30">
+              <Building2 className="h-5 w-5 text-amber-400" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-white">401(k) Provider Rollover Guides</h2>
+              <p className="text-slate-500">Step-by-step instructions for your specific provider</p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/learn/t-rowe-price-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">T. Rowe Price</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/transamerica-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Transamerica</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/principal-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Principal Financial</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/empower-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Empower</h3>
+              <p className="text-slate-400 text-sm">Formerly Prudential</p>
+            </Link>
+            <Link href="/learn/voya-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Voya Financial</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/john-hancock-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">John Hancock</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/adp-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">ADP Retirement</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/paychex-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Paychex</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/wells-fargo-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Wells Fargo</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/nationwide-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Nationwide</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/lincoln-financial-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Lincoln Financial</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+            <Link href="/learn/merrill-lynch-401k-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Merrill Lynch</h3>
+              <p className="text-slate-400 text-sm">Rollover guide & process</p>
+            </Link>
+          </div>
+        </Container>
+      </section>
+
+      {/* Related Rollover Guides */}
+      <section className="py-16 bg-slate-800/50">
         <Container>
           <h2 className="text-2xl font-bold text-white mb-8 text-center">
             Detailed Rollover Guides
@@ -287,10 +353,21 @@ export default function RolloverPage() {
               <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">457(b) to Gold IRA</h3>
               <p className="text-slate-400 text-sm">For government workers</p>
             </Link>
-          </div>
-          <div className="text-center mt-6">
-            <Link href="/learn/indirect-vs-direct-rollover" className="inline-flex items-center gap-2 text-amber-400 font-medium hover:text-amber-300">
-              Understand Direct vs Indirect Rollovers <ArrowRight className="h-4 w-4" />
+            <Link href="/guide/what-to-do-with-old-401k" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Old 401(k) Options</h3>
+              <p className="text-slate-400 text-sm">What to do with old accounts</p>
+            </Link>
+            <Link href="/guide/401k-alternatives" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">401(k) Alternatives</h3>
+              <p className="text-slate-400 text-sm">Beyond traditional options</p>
+            </Link>
+            <Link href="/learn/indirect-vs-direct-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Direct vs Indirect</h3>
+              <p className="text-slate-400 text-sm">Critical rollover rules</p>
+            </Link>
+            <Link href="/learn/60-day-ira-rollover-rule" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all">
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">60-Day Rule</h3>
+              <p className="text-slate-400 text-sm">Rollover deadline explained</p>
             </Link>
           </div>
         </Container>

@@ -12,7 +12,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Is 401k FDIC Insured? NO - But Here's What Does Protect Your Retirement | Rich Dad Retirement",
+    title: "Is 401k FDIC Insured? What Actually Protects You",
     description: "401(k)s are NOT FDIC insured. Learn what actually protects your retirement savings (ERISA, SIPC), what happens if your employer goes bankrupt, and how to add real asset protection.",
     keywords: ["is 401k fdic insured", "is my ira fdic insured", "is 401k protected from bank failure", "what protects my 401k", "401k insurance protection"],
     openGraph: {

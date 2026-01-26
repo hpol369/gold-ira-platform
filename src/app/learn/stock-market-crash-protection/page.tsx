@@ -11,8 +11,8 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Stock Market Crash Protection: How to Protect Your Retirement | Rich Dad Retirement",
-    description: "Learn proven strategies to protect your retirement savings from stock market crashes. Discover how gold, diversification, and defensive positioning can safeguard your portfolio.",
+    title: "Stock Market Crash Protection for Your Retirement",
+    description: "Protect your retirement from stock market crashes. Learn how gold, diversification, and defensive strategies can safeguard your portfolio.",
     openGraph: {
         title: "Stock Market Crash Protection: Safeguard Your Retirement",
         description: "Proven strategies to protect your retirement portfolio from market crashes and economic downturns.",

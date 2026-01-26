@@ -46,11 +46,12 @@ export default function WhatIsGoldIRAPage() {
               Gold IRA Basics
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              What Is a Gold IRA?
+              After 30 Years of Hard Work, Your 401(k) Deserves Protection
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-8">
-              A Gold IRA is a self-directed Individual Retirement Account that allows you to hold physical gold,
-              silver, platinum, and palladium as retirement investments. Here&apos;s everything you need to know.
+              You&apos;ve already done the hard part—saving. Whether you&apos;re a retired nurse, factory worker, truck driver, or teacher,
+              a Gold IRA lets you convert part of your savings into physical gold that you actually own.
+              Not paper promises. Real metal, in a real vault.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
               <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
@@ -75,13 +76,13 @@ export default function WhatIsGoldIRAPage() {
         <Container>
           <div className="max-w-3xl">
             <h2 className="text-2xl font-bold text-white mb-4">
-              The Simple Answer
+              The Straight Answer (No Sales Pitch)
             </h2>
             <p className="text-lg text-slate-300 leading-relaxed">
-              A <strong>Gold IRA</strong> (Individual Retirement Account) is a retirement savings account that
-              holds physical precious metals instead of paper assets like stocks and bonds. Like traditional
-              and Roth IRAs, Gold IRAs offer tax advantages—but instead of mutual funds, your account
-              holds real gold bars and coins stored in an IRS-approved depository.
+              A <strong>Gold IRA</strong> is simply a retirement account that holds physical gold instead of stocks.
+              After decades of watching Wall Street ride your savings up and down, many folks like you are
+              moving a portion into something they can actually see and touch. Same tax benefits as your
+              current IRA—your gold just sits in an insured vault instead of on a brokerage screen.
             </p>
           </div>
         </Container>
@@ -99,7 +100,7 @@ export default function WhatIsGoldIRAPage() {
                   How Does a Gold IRA Work?
                 </h2>
                 <p className="text-slate-400 mb-6">
-                  A Gold IRA works similarly to a traditional IRA, with a few key differences. Here&apos;s the process:
+                  It&apos;s simpler than you might think. If you&apos;ve managed a 401(k) for 20 or 30 years, this won&apos;t be complicated. Here&apos;s the process:
                 </p>
                 <div className="space-y-4">
                   {[
@@ -332,19 +333,19 @@ export default function WhatIsGoldIRAPage() {
               {/* Who Should Consider */}
               <div>
                 <h2 className="text-2xl font-bold text-white mb-6">
-                  Who Should Consider a Gold IRA?
+                  Is a Gold IRA Right for You?
                 </h2>
                 <p className="text-slate-400 mb-6">
-                  A Gold IRA may be right for you if:
+                  After decades in the workforce, you know what matters: protecting what you&apos;ve built. A Gold IRA makes sense if:
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "You want to diversify beyond stocks and bonds",
-                    "You're concerned about inflation eroding your savings",
-                    "You have a long time horizon (10+ years until retirement)",
-                    "You're comfortable with precious metals as an asset class",
-                    "You have enough retirement savings to allocate 5-15% to gold",
-                    "You want tangible assets as part of your retirement portfolio"
+                    "You've saved $100k or more and want to protect a portion with something tangible",
+                    "You're tired of watching your 401(k) drop 20% every time the market panics",
+                    "Your body says retire at 62, but your financial advisor says 67—you need a bridge",
+                    "You've seen too many promises from Wall Street that didn't pan out",
+                    "You want something real—gold bars and coins, not just numbers on a screen",
+                    "You're not looking to get rich quick, just to keep what you've earned"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3 text-slate-300">
                       <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
@@ -447,16 +448,20 @@ export default function WhatIsGoldIRAPage() {
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">Is a Gold IRA a good investment?</h3>
               <p className="text-slate-400">
-                A Gold IRA can be a good investment for diversification and inflation protection.
-                Most financial advisors suggest allocating 5-15% of your portfolio to precious metals.
-                Whether it&apos;s right for you depends on your risk tolerance, time horizon, and retirement goals.
+                Gold isn&apos;t about getting rich—it&apos;s about protection. After 30 years of saving, the last thing
+                you need is another 2008-style crash wiping out 40% of your nest egg right before retirement.
+                Most advisors suggest putting 5-15% of your savings in gold. Not your whole portfolio—just enough
+                to sleep better at night knowing part of your money is in something real.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="font-bold text-white mb-2">Can I hold physical gold in my IRA?</h3>
+              <h3 className="font-bold text-white mb-2">Can I actually touch my gold? Will I ever see it?</h3>
               <p className="text-slate-400">
-                Yes, but with restrictions. The gold must meet IRS purity requirements (99.5% for gold)
-                and must be stored at an IRS-approved depository. You cannot store IRA gold at home.
+                This is the most common question we hear. While your gold must be stored in an IRS-approved
+                depository (not at home) to keep the tax benefits, you absolutely own it—it&apos;s real gold with
+                your name on the account. Most depositories allow scheduled visits, and when you retire,
+                you can take physical delivery of your metals (you&apos;ll just pay taxes as a distribution).
+                Many retirees do exactly this.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
@@ -483,8 +488,8 @@ export default function WhatIsGoldIRAPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Ready to Learn More About Gold IRAs?"
-            subheadline="Augusta Precious Metals offers free one-on-one web conferences to help you understand if a Gold IRA is right for your retirement goals. No pressure, just education."
+            headline="You've Done the Hard Part. Let's Protect It."
+            subheadline="Augusta Precious Metals has zero BBB complaints and no pushy salespeople. Their team will explain everything in plain English—no Wall Street jargon, no pressure. Just honest answers from people who respect what you've built."
             trackSource="what-is-gold-ira"
           />
         </Container>

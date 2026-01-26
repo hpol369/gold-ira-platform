@@ -11,7 +11,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "401(k) Alternatives: 7 Ways to Save for Retirement in 2026 | Rich Dad Retirement",
+    title: "401(k) Alternatives: 7 Ways to Save in 2026",
     description: "Explore the best 401(k) alternatives for 2026: IRAs, Gold IRAs, HSAs, real estate, and more. Find the right retirement savings strategy for your situation.",
     openGraph: {
         title: "401(k) Alternatives: Beyond the Traditional Retirement Plan",

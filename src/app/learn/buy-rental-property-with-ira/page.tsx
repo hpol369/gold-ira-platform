@@ -18,7 +18,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "How to Buy Rental Property with Your IRA: Step-by-Step Guide 2026 | Rich Dad Retirement",
+    title: "Buy Rental Property with Your IRA: 2026 Guide",
     description: "Complete guide to buying rental property with your IRA. Learn the step-by-step process, financing options, and what to watch out for.",
     keywords: "buy rental property with ira, ira rental property, buy house with ira, purchase property with ira, rental property self directed ira",
     openGraph: {

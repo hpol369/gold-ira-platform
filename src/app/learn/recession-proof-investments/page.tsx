@@ -11,7 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Recession-Proof Investments: 7 Assets That Survive Economic Downturns | Rich Dad Retirement",
+    title: "Recession-Proof Investments: 7 Assets That Survive",
     description: "Discover recession-proof investments that protect your portfolio during economic downturns. Learn about gold, bonds, utilities, healthcare, and other defensive assets.",
     openGraph: {
         title: "Recession-Proof Investments: Protect Your Portfolio",

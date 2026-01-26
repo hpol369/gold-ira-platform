@@ -6,7 +6,7 @@ import { GoldIRACalculator } from "@/components/tools/GoldIRACalculator";
 export const metadata: Metadata = {
   title: "Gold IRA Calculator - Calculate Your Gold IRA Investment Returns",
   description:
-    "Free gold IRA calculator to project retirement savings with gold allocation. Compare portfolio performance with and without gold, analyze historical backtests, and see volatility reduction benefits.",
+    "Free gold IRA calculator to project retirement savings with gold. Compare portfolio performance, analyze historical backtests, and see volatility reduction.",
   keywords:
     "gold ira calculator, gold ira investment calculator, gold ira retirement calculator, gold ira returns calculator, gold retirement planning",
 };

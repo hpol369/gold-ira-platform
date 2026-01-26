@@ -116,9 +116,9 @@ export function FERSSupplementCalculator() {
               <Calculator className="h-4 w-4" />
               FERS SUPPLEMENT CALCULATOR
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Calculate Your FERS Special Retirement Supplement
-            </h2>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              FERS Supplement Calculator 2026
+            </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Estimate your SRS - the &quot;bridge&quot; payment that federal employees receive from retirement until age 62.
             </p>

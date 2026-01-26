@@ -8,12 +8,15 @@ import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, Dolla
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
-import { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
     title: "Rich Dad Retirement 2026: Complete Beginner's Guide to Gold IRAs",
     description: "The definitive gold IRA guide for 2026. Learn what a gold IRA is, how it works, tax benefits, fees, and how to open one. Updated for current IRS rules.",
-};
+    url: "https://www.richdadretirement.com/guide/gold-ira-guide",
+    type: "article",
+    imageAlt: "Complete Gold IRA Guide for 2026 - Rich Dad Retirement",
+});
 
 const tocItems = [
     { id: "what-is-gold-ira", label: "What is a Gold IRA?" },

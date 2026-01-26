@@ -11,7 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
 export const metadata: Metadata = {
-    title: "Is My Money Safe in the Bank? FDIC Limits & Risks Explained | Rich Dad Retirement",
+    title: "Is My Money Safe in the Bank? FDIC Limits Guide",
     description: "Understand FDIC insurance limits, bank failure risks, and what happens to your money if a bank collapses. Learn strategies to protect savings beyond $250,000.",
     openGraph: {
         title: "Is My Money Safe in the Bank? 2026 Guide",

@@ -121,6 +121,37 @@ export function Footer() {
                     </div>
                 </div>
 
+                {/* Popular Guides */}
+                <div className="border-t border-white/10 pt-8 mb-8">
+                    <h3 className="font-semibold text-white mb-4 text-sm">Popular Guides</h3>
+                    <div className="flex flex-wrap gap-x-6 gap-y-2">
+                        <Link href="/scenarios" className="text-gray-400 hover:text-white transition-colors text-sm">Crisis Scenarios</Link>
+                        <Link href="/guide/401k-alternatives" className="text-gray-400 hover:text-white transition-colors text-sm">401k Alternatives</Link>
+                        <Link href="/guide/what-to-do-with-old-401k" className="text-gray-400 hover:text-white transition-colors text-sm">What to Do with Old 401k</Link>
+                        <Link href="/learn/qualified-longevity-annuity-contract" className="text-gray-400 hover:text-white transition-colors text-sm">QLAC Guide</Link>
+                        <Link href="/learn/variable-percentage-withdrawal" className="text-gray-400 hover:text-white transition-colors text-sm">VPW Strategy</Link>
+                        <Link href="/learn/fixed-vs-variable-annuity" className="text-gray-400 hover:text-white transition-colors text-sm">Annuity Comparison</Link>
+                        <Link href="/learn/indirect-vs-direct-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Direct vs Indirect Rollover</Link>
+                    </div>
+                </div>
+
+                {/* 401k Provider Rollovers */}
+                <div className="border-t border-white/10 pt-8 mb-8">
+                    <h3 className="font-semibold text-white mb-4 text-sm">401(k) Provider Rollovers</h3>
+                    <div className="flex flex-wrap gap-x-6 gap-y-2">
+                        <Link href="/learn/t-rowe-price-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">T. Rowe Price</Link>
+                        <Link href="/learn/transamerica-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Transamerica</Link>
+                        <Link href="/learn/paychex-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Paychex</Link>
+                        <Link href="/learn/wells-fargo-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Wells Fargo</Link>
+                        <Link href="/learn/nationwide-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Nationwide</Link>
+                        <Link href="/learn/principal-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Principal</Link>
+                        <Link href="/learn/empower-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Empower</Link>
+                        <Link href="/learn/voya-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Voya</Link>
+                        <Link href="/learn/john-hancock-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">John Hancock</Link>
+                        <Link href="/learn/adp-401k-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">ADP</Link>
+                    </div>
+                </div>
+
                 {/* Disclaimer */}
                 <div className="border-t border-white/10 pt-8 mb-8">
                     <p className="text-xs text-gray-500 leading-relaxed max-w-4xl">

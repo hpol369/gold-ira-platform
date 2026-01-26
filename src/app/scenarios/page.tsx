@@ -25,7 +25,7 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Economic Crisis Scenarios: Protect Your Wealth | Rich Dad Retirement",
-  description: "Prepare for economic uncertainty. Understand the threats to your retirement savings - dollar collapse, hyperinflation, bank failures, market crashes - and how to protect yourself.",
+  description: "Prepare for economic uncertainty. Understand threats to your retirement: dollar collapse, hyperinflation, bank failures, and how to protect yourself.",
 };
 
 const scenarioIcons: Record<string, React.ReactNode> = {

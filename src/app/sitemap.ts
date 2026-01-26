@@ -63,7 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy-policy",
     "/editorial-policy",
     "/terms-of-service",
-    "/thank-you",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

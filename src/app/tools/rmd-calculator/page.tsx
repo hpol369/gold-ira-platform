@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "RMD Calculator 2026 | Free Required Minimum Distribution Calculator",
   description:
-    "Free RMD calculator for 2026. Calculate your Required Minimum Distribution using official IRS Uniform Lifetime Tables. Includes SECURE 2.0 updates, 10-year projections, and Gold IRA strategies.",
+    "Free 2026 RMD calculator. Calculate Required Minimum Distributions using IRS Uniform Lifetime Tables. Includes SECURE 2.0 updates and Gold IRA strategies.",
   keywords: [
     "rmd calculator",
     "rmd calculator 2026",

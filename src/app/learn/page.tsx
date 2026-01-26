@@ -229,6 +229,98 @@ export default function LearnPage() {
         </Container>
       </section>
 
+      {/* Featured Deep-Dive Guides */}
+      <section className="py-16">
+        <Container>
+          <h2 className="text-2xl font-serif font-bold text-white mb-8 text-center">
+            Featured Retirement Guides
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            <Link
+              href="/learn/qualified-longevity-annuity-contract"
+              className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all"
+            >
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">QLAC Guide</h3>
+              <p className="text-slate-400 text-sm">Qualified Longevity Annuity Contract explained</p>
+            </Link>
+            <Link
+              href="/learn/variable-percentage-withdrawal"
+              className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all"
+            >
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">VPW Strategy</h3>
+              <p className="text-slate-400 text-sm">Variable Percentage Withdrawal method</p>
+            </Link>
+            <Link
+              href="/learn/self-directed-ira-prohibited-transactions"
+              className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all"
+            >
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Prohibited Transactions</h3>
+              <p className="text-slate-400 text-sm">IRA rules you must follow</p>
+            </Link>
+            <Link
+              href="/learn/fixed-vs-variable-annuity"
+              className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/50 transition-all"
+            >
+              <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Annuity Comparison</h3>
+              <p className="text-slate-400 text-sm">Fixed vs Variable explained</p>
+            </Link>
+          </div>
+        </Container>
+      </section>
+
+      {/* 401k Provider Rollover Guides */}
+      <section className="py-16 bg-slate-800/30">
+        <Container>
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl font-serif font-bold text-white flex items-center gap-2">
+              <RefreshCcw className="h-6 w-6 text-blue-400" />
+              401(k) Provider Rollover Guides
+            </h2>
+            <Link href="/rollover" className="text-amber-400 hover:text-amber-300 text-sm font-medium flex items-center gap-1">
+              View All <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <Link href="/learn/t-rowe-price-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">T. Rowe Price</span>
+            </Link>
+            <Link href="/learn/transamerica-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Transamerica</span>
+            </Link>
+            <Link href="/learn/principal-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Principal</span>
+            </Link>
+            <Link href="/learn/empower-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Empower</span>
+            </Link>
+            <Link href="/learn/paychex-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Paychex</span>
+            </Link>
+            <Link href="/learn/wells-fargo-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Wells Fargo</span>
+            </Link>
+            <Link href="/learn/nationwide-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Nationwide</span>
+            </Link>
+            <Link href="/learn/voya-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Voya</span>
+            </Link>
+            <Link href="/learn/john-hancock-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">John Hancock</span>
+            </Link>
+            <Link href="/learn/adp-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">ADP</span>
+            </Link>
+            <Link href="/learn/merrill-lynch-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Merrill Lynch</span>
+            </Link>
+            <Link href="/learn/lincoln-financial-401k-rollover" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
+              <span className="font-medium text-white group-hover:text-blue-400 text-sm">Lincoln Financial</span>
+            </Link>
+          </div>
+        </Container>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16">
         <Container>

@@ -153,9 +153,9 @@ export function FERSAnnuityCalculator() {
               <Calculator className="h-4 w-4" />
               FERS ANNUITY CALCULATOR
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Calculate Your FERS Pension Benefit
-            </h2>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              FERS Annuity Calculator 2026
+            </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Estimate your FERS basic annuity with survivor benefits and COLA projections.
             </p>

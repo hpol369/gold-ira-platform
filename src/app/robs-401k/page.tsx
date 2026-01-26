@@ -19,8 +19,8 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "ROBS 401k Guide 2026: Use Your Retirement to Start a Business | Rich Dad Retirement",
-    description: "Learn how ROBS (Rollover for Business Startups) lets you use your 401k or IRA to fund a business tax-free and penalty-free. Complete guide with top providers, rules, and costs.",
+    title: "ROBS 401k Guide 2026: Fund Your Business Tax-Free",
+    description: "ROBS 401k guide: Use your retirement funds to start a business tax-free. Compare top providers, understand rules, and get costs.",
     keywords: "robs 401k, rollover for business startups, 401k business funding, use retirement to start business, robs financing, self-directed 401k business",
     openGraph: {
         title: "ROBS 401k Guide 2026: Use Your Retirement to Start a Business",

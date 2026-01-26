@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "CalSTRS Calculator 2026 | Free California Teachers Retirement Estimator",
   description:
-    "Free CalSTRS retirement calculator for California teachers. Calculate your CalSTRS pension using official formulas including 2%@60 for classic members and 2%@62 for PEPRA members.",
+    "Free CalSTRS calculator for California teachers. Calculate your pension using official formulas: 2%@60 classic and 2%@62 PEPRA.",
   keywords: [
     "calstrs calculator",
     "calstrs retirement calculator",

@@ -147,9 +147,9 @@ export function RMDCalculator() {
               <Calculator className="h-4 w-4" />
               RMD CALCULATOR
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Calculate Your Required Minimum Distribution
-            </h2>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              RMD Calculator 2026
+            </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               Plan your Gold IRA withdrawals and understand how RMDs affect your
               retirement income.

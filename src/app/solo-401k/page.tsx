@@ -19,7 +19,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "Solo 401k Guide 2026: Best Retirement Plan for Self-Employed | Rich Dad Retirement",
+    title: "Solo 401k Guide 2026: Best Plan for Self-Employed",
     description: "Complete guide to Solo 401k plans for self-employed individuals. Learn contribution limits, tax benefits, and why it beats SEP IRA. Compare top providers.",
     keywords: "solo 401k, individual 401k, self employed 401k, solo 401k contribution limits, one participant 401k",
     openGraph: {

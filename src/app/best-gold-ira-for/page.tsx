@@ -1,10 +1,10 @@
-import { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { audiences } from "@/config/audiences";
+import { createPageMetadata } from "@/lib/metadata";
 import {
   Users,
   ArrowRight,
@@ -19,11 +19,13 @@ import {
   Landmark,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Best Gold IRA For Your Situation | Rich Dad Retirement",
   description:
     "Find the best Gold IRA strategy for your specific situation. Personalized guides for retirees, veterans, teachers, beginners, and more.",
-};
+  url: "https://www.richdadretirement.com/best-gold-ira-for",
+  imageAlt: "Best Gold IRA for Your Situation - Rich Dad Retirement",
+});
 
 const audienceCategories = [
   {

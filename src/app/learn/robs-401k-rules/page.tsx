@@ -19,7 +19,7 @@ import {
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
-    title: "ROBS 401k Rules 2026: IRS Requirements & Compliance Guide | Rich Dad Retirement",
+    title: "ROBS 401k Rules 2026: IRS Compliance Guide",
     description: "Complete guide to ROBS 401k rules, IRS requirements, prohibited transactions, and compliance. Learn what you can and can't do with ROBS funding.",
     keywords: "robs 401k rules, robs requirements, robs compliance, robs prohibited transactions, robs irs rules, rollover business startups rules",
     openGraph: {
