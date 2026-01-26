@@ -1400,7 +1400,7 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
     relatedArticles: [
       'long-term-care-insurance-worth-it',
       'teacher-pension-vs-401k',
-      'social-security-claiming-strategies'
+      'social-security-bridge-strategy'
     ],
     relatedGuides: ['/guide/gold-ira-guide'],
     relatedTools: ['/tools/retirement-calculator', '/tools/social-security-calculator']

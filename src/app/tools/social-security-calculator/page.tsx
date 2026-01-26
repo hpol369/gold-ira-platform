@@ -634,10 +634,10 @@ export default function SocialSecurityCalculatorPage() {
                       Calculate Again
                     </button>
                     <Link
-                      href="/learn/social-security-claiming-strategies"
+                      href="/learn/social-security-bridge-strategy"
                       className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
                     >
-                      Learn Claiming Strategies
+                      Learn Bridge Strategies
                     </Link>
                   </div>
                 </motion.div>
