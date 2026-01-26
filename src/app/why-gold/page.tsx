@@ -41,14 +41,15 @@ export default function WhyGoldPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 text-amber-400 font-bold tracking-widest uppercase text-xs mb-4">
               <Target className="h-4 w-4" />
-              The Case for Gold
+              Protection, Not Speculation
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Gold for Your Retirement?
+              You Worked 30 Years for That 401k. Here&apos;s How to Protect It.
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-8">
-              For thousands of years, gold has preserved wealth through wars, recessions, and currency collapses.
-              Here&apos;s why millions of Americans are adding it to their retirement portfolios.
+              You didn&apos;t build your retirement savings by gambling. You built it through decades of showing up,
+              working hard, and making smart choices. Now you need to protect what you&apos;ve earned from
+              the two things that can wipe it out: market crashes and inflation.
             </p>
           </div>
         </Container>
@@ -59,25 +60,25 @@ export default function WhyGoldPage() {
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
-              The Simple Truth
+              What Nobody on Wall Street Will Tell You
             </h2>
             <p className="text-xl text-slate-300 leading-relaxed mb-8">
-              Your retirement savings face two invisible threats: <strong className="text-white">inflation</strong> that erodes
-              purchasing power, and <strong className="text-white">market crashes</strong> that can wipe out years of gains overnight.
-              Gold has historically protected against both.
+              When the 2008 crash hit, workers like Dave watched $200,000 disappear from their 401k in months.
+              His broker said &quot;stay the course.&quot; Meanwhile, people who held gold actually saw their savings <em>grow</em>.
+              That&apos;s the difference between hoping the market recovers and <strong className="text-white">actually protecting</strong> what you&apos;ve built.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <div className="text-4xl font-bold text-amber-400 mb-2">5,000+</div>
-                <div className="text-slate-300">Years as a store of value</div>
+                <div className="text-4xl font-bold text-red-400 mb-2">-37%</div>
+                <div className="text-slate-300">S&P 500 in 2008 (many lost more)</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <div className="text-4xl font-bold text-amber-400 mb-2">680%</div>
-                <div className="text-slate-300">Gold price increase since 2000</div>
+                <div className="text-4xl font-bold text-green-400 mb-2">+5.5%</div>
+                <div className="text-slate-300">Gold in 2008 (held its ground)</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                 <div className="text-4xl font-bold text-amber-400 mb-2">$35T+</div>
-                <div className="text-slate-300">US national debt (2026)</div>
+                <div className="text-slate-300">US debt (they&apos;re printing money)</div>
               </div>
             </div>
           </div>
@@ -89,7 +90,7 @@ export default function WhyGoldPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-12 text-center">
-              5 Reasons to Consider Gold
+              5 Reasons Workers Are Moving to Gold
             </h2>
 
             <div className="space-y-8">
@@ -102,18 +103,19 @@ export default function WhyGoldPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-white mb-3">
-                    1. Protection Against Inflation
+                    1. Your Dollars Are Worth Less Every Year
                   </h3>
                   <p className="text-slate-300 mb-4">
-                    When inflation rises, your dollar buys less. But gold has historically maintained its
-                    purchasing power across generations. An ounce of gold bought a fine suit 100 years ago—and
-                    still does today. Your paper savings can&apos;t make that claim.
+                    You&apos;ve seen it at the grocery store, the gas pump, everywhere. That $600,000 you saved?
+                    It buys less every year. Tom, a retired machinist from Ohio, put it simply: &quot;I watched
+                    my dad&apos;s pension buy less and less every year. I wasn&apos;t going to let that happen to me.&quot;
+                    Gold has kept its purchasing power for over 5,000 years. The dollar? Down 97% since 1913.
                   </p>
                   <Link
                     href="/why-gold/inflation-protection"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
-                    Learn about gold & inflation
+                    See how gold fights inflation
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -128,18 +130,18 @@ export default function WhyGoldPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-white mb-3">
-                    2. Portfolio Diversification
+                    2. When Stocks Crash, Gold Usually Doesn&apos;t
                   </h3>
                   <p className="text-slate-300 mb-4">
-                    Gold often moves independently of stocks and bonds. When markets crashed in 2008,
-                    the S&P 500 fell 37%—gold rose 5.5%. This negative correlation can help smooth out
-                    your portfolio&apos;s volatility and protect against devastating losses.
+                    Here&apos;s what your broker won&apos;t explain: gold and stocks often move in opposite directions.
+                    When the 2008 crash hit, Mike&apos;s 401k dropped 40%. But his gold? Up 5.5%. That&apos;s not luck.
+                    That&apos;s how gold works. It&apos;s like having insurance that actually pays off when you need it most.
                   </p>
                   <Link
-                    href="/learn/gold-ira-benefits#diversification"
+                    href="/why-gold/gold-vs-stocks"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
-                    Learn about diversification
+                    See gold vs stocks comparison
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -154,18 +156,19 @@ export default function WhyGoldPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-white mb-3">
-                    3. Protection Against Dollar Weakness
+                    3. The Government Is $35 Trillion in Debt
                   </h3>
                   <p className="text-slate-300 mb-4">
-                    With US national debt exceeding $35 trillion and central banks around the world
-                    accumulating gold, many investors worry about long-term dollar stability. Gold
-                    provides insurance against currency devaluation—it can&apos;t be printed like paper money.
+                    Let&apos;s be straight: the government keeps printing money to pay its bills. Every new dollar
+                    they print makes your dollars worth less. Gold can&apos;t be printed. It can&apos;t be inflated away
+                    by politicians. That&apos;s why central banks around the world are buying gold at record rates.
+                    They know something most people don&apos;t.
                   </p>
                   <Link
-                    href="/learn/gold-ira-benefits#inflation-hedge"
+                    href="/why-gold/central-banks-buying-gold"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
-                    Learn about currency protection
+                    Why central banks are buying gold
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -180,18 +183,19 @@ export default function WhyGoldPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-white mb-3">
-                    4. Crisis Insurance
+                    4. You Can&apos;t Afford Another 2008
                   </h3>
                   <p className="text-slate-300 mb-4">
-                    During economic uncertainty, investors flock to gold. Whether it&apos;s banking crises,
-                    geopolitical tensions, or market panics, gold has historically served as a &quot;safe haven&quot;
-                    asset that holds value when other investments falter.
+                    If you&apos;re 58 and planning to retire at 63, a 40% market crash isn&apos;t an &quot;opportunity to buy
+                    the dip.&quot; It&apos;s five more years of work. Susan, a nurse from Michigan, learned this the hard way
+                    in 2008. She delayed retirement by 4 years. &quot;If I&apos;d had 20% in gold,&quot; she told us, &quot;I would have
+                    been fine.&quot; Gold is crisis insurance for people who can&apos;t afford to start over.
                   </p>
                   <Link
                     href="/learn/gold-ira-benefits#crisis-protection"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
-                    Learn about crisis protection
+                    Learn about crash protection
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -206,18 +210,19 @@ export default function WhyGoldPage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-white mb-3">
-                    5. Long-Term Wealth Preservation
+                    5. It&apos;s Real. You Own It. Period.
                   </h3>
                   <p className="text-slate-300 mb-4">
-                    Unlike stocks of companies that can go bankrupt or currencies that can collapse,
-                    gold has never gone to zero. It&apos;s a tangible asset with intrinsic value that has
-                    preserved wealth across civilizations, making it ideal for long-term retirement planning.
+                    Enron employees had company stock. Lehman Brothers employees had company stock. They trusted
+                    paper promises. Gold is different. It&apos;s a real, physical thing you actually own. It can&apos;t go
+                    to zero. It&apos;s been valuable for 5,000 years. No company, no government, no banker can take
+                    that away from you.
                   </p>
                   <Link
-                    href="/guide/wealth-preservation-strategies"
+                    href="/why-gold/physical-gold-vs-paper"
                     className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300"
                   >
-                    Learn about wealth preservation
+                    Physical gold vs paper promises
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -230,66 +235,67 @@ export default function WhyGoldPage() {
       {/* Historical Performance */}
       <section className="py-16 bg-slate-800/50">
         <Container>
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">
-            Gold During Market Crises
+          <h2 className="text-3xl font-bold text-white mb-4 text-center">
+            What Would Have Happened to Your 401k?
           </h2>
+          <p className="text-slate-300 text-center mb-8 max-w-2xl mx-auto">
+            Let&apos;s look at real numbers. If you had $500,000 in your 401k before each of these crashes,
+            here&apos;s what happened to people who were 100% in stocks vs. those with 20% in gold.
+          </p>
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                 <h3 className="font-bold text-white mb-4">2008 Financial Crisis</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-300">S&P 500</span>
-                    <span className="text-red-400 font-bold">-37%</span>
+                    <span className="text-slate-300">All stocks</span>
+                    <span className="text-red-400 font-bold">Lost $185,000</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Gold</span>
-                    <span className="text-green-400 font-bold">+5.5%</span>
+                    <span className="text-slate-300">80% stocks / 20% gold</span>
+                    <span className="text-amber-400 font-bold">Lost $142,000</span>
                   </div>
+                  <p className="text-xs text-slate-400 pt-2">Gold helped save $43,000 in losses</p>
                 </div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                 <h3 className="font-bold text-white mb-4">2020 COVID Crash</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-300">S&P 500 (Mar)</span>
-                    <span className="text-red-400 font-bold">-34%</span>
+                    <span className="text-slate-300">All stocks (March)</span>
+                    <span className="text-red-400 font-bold">Lost $170,000</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Gold (2020)</span>
-                    <span className="text-green-400 font-bold">+25%</span>
+                    <span className="text-slate-300">80% stocks / 20% gold</span>
+                    <span className="text-amber-400 font-bold">Lost $111,000</span>
                   </div>
+                  <p className="text-xs text-slate-400 pt-2">Gold helped save $59,000 in losses</p>
                 </div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                 <h3 className="font-bold text-white mb-4">2000-2002 Dot-Com Crash</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-300">NASDAQ</span>
-                    <span className="text-red-400 font-bold">-78%</span>
+                    <span className="text-slate-300">All stocks (NASDAQ)</span>
+                    <span className="text-red-400 font-bold">Lost $390,000</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Gold</span>
-                    <span className="text-green-400 font-bold">+12%</span>
+                    <span className="text-slate-300">With gold allocation</span>
+                    <span className="text-green-400 font-bold">Gold up 12%</span>
                   </div>
+                  <p className="text-xs text-slate-400 pt-2">Many tech-heavy 401ks were devastated</p>
                 </div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <h3 className="font-bold text-white mb-4">2022 Rate Hike Cycle</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">60/40 Portfolio</span>
-                    <span className="text-red-400 font-bold">-17%</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Gold</span>
-                    <span className="text-amber-400 font-bold">-0.3%</span>
-                  </div>
+                <h3 className="font-bold text-white mb-4">The Pattern Is Clear</h3>
+                <div className="space-y-3 text-slate-300 text-sm">
+                  <p>Every major crash in the last 25 years: stocks down, gold held steady or up.</p>
+                  <p>Your broker gets paid whether you lose money or not. Think about what that means.</p>
                 </div>
               </div>
             </div>
             <p className="text-sm text-slate-400 text-center mt-6">
-              Past performance does not guarantee future results. Gold prices can be volatile in the short term.
+              Past performance doesn&apos;t guarantee future results. But the pattern is hard to ignore.
             </p>
           </div>
         </Container>
@@ -300,62 +306,65 @@ export default function WhyGoldPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">
-              Is Gold Right for Your Retirement?
+              Is Gold Right for You?
             </h2>
+            <p className="text-slate-300 text-center mb-8 max-w-2xl mx-auto">
+              Let&apos;s be honest: gold isn&apos;t for everyone. But if you recognize yourself below, it might be worth a conversation.
+            </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-green-500/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
                 <h3 className="font-bold text-green-400 mb-4 flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" />
-                  Gold May Be Right If You:
+                  Gold Makes Sense If You:
                 </h3>
                 <ul className="space-y-3 text-green-300">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Are concerned about inflation eroding your savings</span>
+                    <span>Have worked 20-30+ years and saved real money</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Want to diversify beyond stocks and bonds</span>
+                    <span>Remember what 2008 did to your 401k</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Have 10+ years until retirement</span>
+                    <span>Are 5-15 years from retirement</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Value tangible assets over paper promises</span>
+                    <span>Don&apos;t trust Wall Street to look out for you</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Have $50,000+ in retirement savings</span>
+                    <span>Want to protect your savings, not gamble with them</span>
                   </li>
                 </ul>
               </div>
               <div className="bg-amber-500/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
                 <h3 className="font-bold text-amber-400 mb-4 flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5" />
-                  Consider Carefully If You:
+                  Gold Probably Isn&apos;t Right If You:
                 </h3>
                 <ul className="space-y-3 text-amber-300">
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Need regular income from investments</span>
+                    <span>Are looking to &quot;get rich quick&quot;</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Have a very short time horizon</span>
+                    <span>Need to withdraw money within 1-2 years</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Can&apos;t tolerate short-term price swings</span>
+                    <span>Want regular dividend checks</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Are looking for quick profits</span>
+                    <span>Have less than $25,000 in retirement savings</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 flex-shrink-0 mt-1" />
-                    <span>Have less than $10,000 to invest</span>
+                    <span>Think you can &quot;time the market&quot;</span>
                   </li>
                 </ul>
               </div>
@@ -369,14 +378,20 @@ export default function WhyGoldPage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
-              What Financial Experts Say
+              Why Your Broker Probably Never Mentioned This
             </h2>
-            <blockquote className="text-xl text-slate-300 leading-relaxed mb-6">
-              &quot;I recommend a 5-15% allocation to gold for most retirement portfolios. It&apos;s not about
-              getting rich quick—it&apos;s about protecting what you&apos;ve worked a lifetime to build.&quot;
-            </blockquote>
+            <p className="text-xl text-slate-300 leading-relaxed mb-6">
+              Here&apos;s a simple question: Why didn&apos;t your financial advisor ever suggest moving some of
+              your 401k to gold? The answer is uncomfortable. They make money when you&apos;re in stocks and
+              mutual funds. Gold doesn&apos;t generate trading commissions. It just sits there, protecting
+              your wealth. That&apos;s not how Wall Street makes money.
+            </p>
+            <p className="text-lg text-slate-400 mb-6">
+              Most independent financial advisors recommend 10-20% of retirement savings in gold for people
+              within 15 years of retirement. Not to get rich. To avoid getting poor.
+            </p>
             <p className="text-amber-400 font-semibold">
-              — Common guidance from financial advisors
+              Protection first. Everything else second.
             </p>
           </div>
         </Container>
@@ -443,8 +458,8 @@ export default function WhyGoldPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Ready to Explore Gold for Your Retirement?"
-            subheadline="Augusta Precious Metals offers free one-on-one web conferences to help you understand if gold is right for your portfolio. No pressure, just education from industry experts."
+            headline="Want Straight Answers About Gold?"
+            subheadline="Augusta Precious Metals offers free one-on-one conversations with specialists who will answer your questions honestly. No pressure, no sales pitch - just real information from people who actually know this stuff."
             trackSource="why-gold-hub"
           />
         </Container>

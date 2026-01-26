@@ -114,7 +114,7 @@ export default function IraApprovedGoldCoinsPage() {
                             IRA-Approved Gold Coins & Bars
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            The complete guide to which gold, silver, platinum, and palladium products qualify for your precious metals IRA.
+                            Not all gold qualifies for an IRA. Buy the wrong kind and the IRS will hit you with taxes and penalties. Here&apos;s exactly what you can and can&apos;t put in your retirement account.
                         </p>
                     </div>
                 </Container>
@@ -135,10 +135,10 @@ export default function IraApprovedGoldCoinsPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Not all gold qualifies for a Gold IRA. The IRS has specific purity requirements that determine which <strong>IRA-approved gold coins</strong> and bars you can hold in your retirement account.
+                                The IRS has strict rules about what gold you can put in an IRA. Get it wrong and they can disqualify your entire account. You&apos;d owe taxes on the full amount plus penalties. Not worth the headache.
                             </p>
                             <p>
-                                Understanding these requirements is essential—buying the wrong products can disqualify your IRA and trigger taxes and penalties.
+                                Here&apos;s the simple version: the gold needs to be pure enough, and it needs to come from approved mints and refiners. Let&apos;s break it down.
                             </p>
 
                             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
@@ -293,8 +293,8 @@ export default function IraApprovedGoldCoinsPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Find the Best Gold IRA Company</h3>
-                                <p className="mb-6 text-gray-200">Get personalized recommendations based on your investment goals.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Let Someone Else Handle the Details</h3>
+                                <p className="mb-6 text-gray-200">A good Gold IRA company knows exactly which products are approved. They won&apos;t sell you anything that causes IRS problems.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -561,8 +561,8 @@ export default function IraApprovedGoldCoinsPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Start Your Gold IRA?</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find the best company for your situation—with transparent pricing on approved products.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect Your Retirement?</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find a company that&apos;ll guide you through this without the pressure tactics or confusing fees.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>

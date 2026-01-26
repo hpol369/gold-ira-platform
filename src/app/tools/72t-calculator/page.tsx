@@ -131,8 +131,8 @@ export default function SEPP72tCalculatorPage() {
                 72(t) SEPP Calculator
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                Calculate penalty-free early withdrawals from your IRA using IRS Rule 72(t)
-                Substantially Equal Periodic Payments (SEPP)
+                Physical work takes a toll. If your body says "retire" before 59.5,
+                Rule 72(t) lets you access your IRA penalty-free. See how much you can withdraw.
               </p>
             </motion.div>
           </div>
@@ -558,8 +558,8 @@ export default function SEPP72tCalculatorPage() {
                   {/* CTA */}
                   <AugustaCTA
                     variant="inline"
-                    headline="Considering Early Retirement with a Gold IRA?"
-                    subheadline="Learn how physical gold can provide stability during your SEPP distribution period. Augusta Precious Metals specializes in helping pre-retirees protect their savings."
+                    headline="Early Retirement? Protect What You're Drawing Down."
+                    subheadline="When you're pulling from your IRA early, the last thing you need is a market crash cutting your balance in half. Gold can help protect what's left."
                   />
 
                   {/* Action Buttons */}

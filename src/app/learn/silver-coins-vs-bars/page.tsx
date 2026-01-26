@@ -176,7 +176,7 @@ export default function SilverCoinsVsBarsPage() {
                                 Silver Coins vs Bars
                             </h1>
                             <p className="text-xl text-slate-300 leading-relaxed">
-                                Should you buy silver coins or bars? Learn the differences in premiums, liquidity, and recognition to make the right choice for your portfolio.
+                                You&apos;ve saved for decades. Now you want real assets you can hold—not just numbers on a screen. But should you buy coins or bars? Here&apos;s the straight answer from people who aren&apos;t trying to sell you something you don&apos;t need.
                             </p>
                         </div>
                     </Container>

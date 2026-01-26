@@ -58,8 +58,7 @@ export default function BuyRentalPropertyWithIraPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                            Ready to use your retirement funds to invest in rental real estate? Follow this
-                            step-by-step guide to purchase your first IRA-owned rental property.
+                            After decades of hard work building your 401k, you might be looking at real estate as a way to protect and grow your savings. Many workers—from retired teachers to former union electricians—use their IRA to buy rental property that generates income without stock market risk. Here&apos;s exactly how it works.
                         </p>
 
                         <Button variant="gold" size="lg" asChild>
@@ -330,10 +329,10 @@ export default function BuyRentalPropertyWithIraPage() {
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-2xl font-bold text-white mb-6">
-                            Ready to Buy Rental Property with Your IRA?
+                            Ready to Put Your Savings to Work?
                         </h2>
                         <p className="text-lg text-slate-300 mb-8">
-                            Start by opening a self-directed IRA with a custodian that specializes in real estate investments.
+                            You&apos;ve done the hard part—building your retirement savings through years of work. Now you can turn that money into rental income that isn&apos;t tied to Wall Street. Start with a self-directed IRA that allows real estate.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

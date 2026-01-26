@@ -112,7 +112,7 @@ export default function GoldPricePrediction2026Page() {
                             Gold Price Prediction 2026
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            What do the experts say about gold prices this year? We compile forecasts from major banks, analyze key market drivers, and help you understand what it means for your portfolio.
+                            Everyone wants to know where gold is headed. Here&apos;s what the big banks are saying, what&apos;s actually driving prices, and why you shouldn&apos;t wait for the &quot;perfect&quot; moment to protect your retirement.
                         </p>
                         <p className="text-sm text-slate-500 mt-4">Last Updated: January 2026</p>
                     </div>
@@ -309,10 +309,10 @@ export default function GoldPricePrediction2026Page() {
 
                         {/* What This Means For You */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">What This Means for Retirement Investors</h2>
+                            <h2 className="text-3xl font-bold text-white mb-6">What This Means If You&apos;re Near Retirement</h2>
                             <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-8">
                                 <p className="text-slate-300 mb-6">
-                                    While price predictions are interesting, they shouldn&apos;t drive your investment decisions. Here&apos;s what actually matters:
+                                    Here&apos;s the truth after 30+ years of watching markets: price predictions are a guessing game. But protecting what you&apos;ve built isn&apos;t about timing. Here&apos;s what matters:
                                 </p>
                                 <ul className="space-y-4 text-slate-300">
                                     <li className="flex items-start gap-3">
@@ -360,9 +360,9 @@ export default function GoldPricePrediction2026Page() {
                         <div className="bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Add Gold to Your Portfolio?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect What You&apos;ve Built?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">
-                                    Don&apos;t wait for the &quot;perfect&quot; price. Learn how a Gold IRA can protect your retirement savings from market volatility and inflation.
+                                    You didn&apos;t work 30 years to watch a market crash wipe it out. Find out if a Gold IRA makes sense for your situation.
                                 </p>
                                 <Button variant="gold" size="xl" asChild>
                                     <Link href="/quiz">

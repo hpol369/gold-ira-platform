@@ -324,8 +324,8 @@ export default function ReverseMortgageCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Protect Your Home Equity for Retirement"
-            subheadline="Before tapping your home equity, explore how a Gold IRA can provide retirement income while preserving your home for your family."
+            headline="Before You Tap Your Home, Consider This"
+            subheadline="Reverse mortgages are expensive and eat into your kids' inheritance. A Gold IRA can provide retirement income while keeping your home intact for your family."
             trackSource="tools-reverse-mortgage-calculator"
           />
         </Container>

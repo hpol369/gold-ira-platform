@@ -47,8 +47,11 @@ export default function RolloverPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Gold IRA Rollover Guide
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed mb-8">
-              Transfer your 401(k), IRA, TSP, or other retirement account to a Gold IRA without taxes or penalties. Find step-by-step instructions for your specific provider.
+            <p className="text-xl text-slate-300 leading-relaxed mb-4">
+              After 30 years at the plant, the hospital, or behind the wheel, your 401(k) deserves careful handling. You built it one paycheck at a time. Now it&apos;s time to protect it.
+            </p>
+            <p className="text-lg text-slate-400 leading-relaxed mb-8">
+              This is simpler than it sounds. A direct rollover moves your savings to a Gold IRA without taxes or penalties. Your Gold IRA company handles the paperwork. Find your provider below for step-by-step instructions.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10">
@@ -74,10 +77,10 @@ export default function RolloverPage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <h2 className="text-xl font-bold text-white mb-2">
-                Ready to Roll Over Your Retirement Account?
+                Not Sure Where to Start? You&apos;re Not Alone.
               </h2>
               <p className="text-slate-400">
-                Our recommended Gold IRA company handles the entire rollover process for you.
+                Most people feel nervous about this process. Augusta handles everything&mdash;they contact your provider, complete the paperwork, and make sure nothing goes wrong.
               </p>
             </div>
             <Link
@@ -180,9 +183,12 @@ export default function RolloverPage() {
       {/* How Rollovers Work */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-bold text-white mb-8 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4 text-center">
             How a Gold IRA Rollover Works
           </h2>
+          <p className="text-slate-400 text-center mb-8 max-w-2xl mx-auto">
+            Four steps. That&apos;s it. Your Gold IRA company handles most of the work. You don&apos;t touch the money, so there&apos;s no tax hit.
+          </p>
 
           <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="text-center">
@@ -191,16 +197,16 @@ export default function RolloverPage() {
               </div>
               <h3 className="font-bold text-white mb-2">Open Gold IRA</h3>
               <p className="text-sm text-slate-400">
-                Choose a Gold IRA company and open your new account
+                15-minute phone call to set up your new account
               </p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xl mx-auto mb-4 border border-amber-500/30">
                 2
               </div>
-              <h3 className="font-bold text-white mb-2">Request Rollover</h3>
+              <h3 className="font-bold text-white mb-2">They Handle Paperwork</h3>
               <p className="text-sm text-slate-400">
-                Contact your current provider to initiate the transfer
+                Your Gold IRA company contacts your old provider for you
               </p>
             </div>
             <div className="text-center">
@@ -209,16 +215,16 @@ export default function RolloverPage() {
               </div>
               <h3 className="font-bold text-white mb-2">Funds Transfer</h3>
               <p className="text-sm text-slate-400">
-                Money moves directly to your Gold IRA custodian
+                Money moves directly between accounts&mdash;tax-free
               </p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xl mx-auto mb-4 border border-amber-500/30">
                 4
               </div>
-              <h3 className="font-bold text-white mb-2">Buy Metals</h3>
+              <h3 className="font-bold text-white mb-2">Choose Your Metals</h3>
               <p className="text-sm text-slate-400">
-                Purchase IRS-approved gold and silver for your IRA
+                Pick IRS-approved gold and silver for your protected retirement
               </p>
             </div>
           </div>
@@ -228,36 +234,39 @@ export default function RolloverPage() {
       {/* FAQ Section */}
       <section className="py-16 bg-slate-800/50">
         <Container>
-          <h2 className="text-2xl font-bold text-white mb-8 text-center">
-            Common Rollover Questions
+          <h2 className="text-2xl font-bold text-white mb-4 text-center">
+            Questions We Hear All the Time
           </h2>
+          <p className="text-slate-400 text-center mb-8 max-w-2xl mx-auto">
+            Straight answers. No financial jargon. Just the facts you need.
+          </p>
 
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="font-bold text-white mb-2">Is a Gold IRA rollover tax-free?</h3>
+              <h3 className="font-bold text-white mb-2">Will I owe taxes on this?</h3>
               <p className="text-slate-400">
-                Yes, a direct rollover from a traditional retirement account to a traditional Gold IRA is 100% tax-free. The funds transfer directly between custodians without you taking possession, so there are no taxes or penalties.
+                No. A direct rollover is 100% tax-free. The money goes straight from your old account to your Gold IRA&mdash;you never touch it. No taxes, no penalties. It&apos;s the same money, just in a different account.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="font-bold text-white mb-2">Can I roll over my 401(k) while still employed?</h3>
+              <h3 className="font-bold text-white mb-2">Can I do this if I&apos;m still working?</h3>
               <p className="text-slate-400">
-                It depends on your plan. Many plans allow &quot;in-service distributions&quot; once you reach age 59&frac12;. Some plans allow earlier access. Check with your HR department or plan administrator. You can always roll over 401(k)s from previous employers.
+                If you&apos;re 59&frac12; or older, most plans allow it even while you&apos;re still employed. If you&apos;re leaving your job or already retired, you can roll over anytime. And 401(k)s from old jobs? Those can always be rolled over&mdash;no restrictions.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="font-bold text-white mb-2">How long does a rollover take?</h3>
+              <h3 className="font-bold text-white mb-2">How long does this take?</h3>
               <p className="text-slate-400">
-                Most rollovers complete within 5-14 business days, depending on your current provider. Brokerages like Schwab and Fidelity are typically faster (3-7 days), while employer plans may take 10-14 days.
+                Usually 1-2 weeks from start to finish. Fidelity and Schwab are faster (3-7 days). Employer plans like TIAA or Principal take a bit longer (10-14 days). Your Gold IRA company tracks the whole thing for you.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-              <h3 className="font-bold text-white mb-2">What&apos;s the difference between direct and indirect rollover?</h3>
+              <h3 className="font-bold text-white mb-2">What if I mess something up?</h3>
               <p className="text-slate-400">
-                A direct rollover transfers funds straight from your old account to your new Gold IRA—no taxes withheld. An indirect rollover gives you the funds first, and you have 60 days to deposit them into your Gold IRA. Always choose direct rollover to avoid complications.
+                That&apos;s why you use a direct rollover&mdash;there&apos;s nothing to mess up. The money goes straight between custodians. You don&apos;t handle it, so there&apos;s no 60-day deadline to worry about and no risk of triggering taxes by accident.
               </p>
               <Link href="/learn/indirect-vs-direct-rollover" className="inline-flex items-center gap-1 text-amber-400 text-sm font-medium mt-3 hover:text-amber-300">
-                Learn more about direct vs indirect rollovers <ArrowRight className="h-3 w-3" />
+                Why direct rollovers are safer <ArrowRight className="h-3 w-3" />
               </Link>
             </div>
           </div>
@@ -379,8 +388,8 @@ export default function RolloverPage() {
           <AugustaCTA
             variant="footer"
             linkContext="fees"
-            headline="Ready to Protect Your Retirement with Gold?"
-            subheadline="Augusta Precious Metals handles your entire rollover process. Their team contacts your current provider, completes the paperwork, and ensures a tax-free transfer."
+            headline="You Built It. Now Protect It."
+            subheadline="After decades of work, your retirement savings deserve real protection. Augusta handles everything&mdash;they call your provider, complete the paperwork, and make sure your rollover goes smoothly. No cost to find out if it&apos;s right for you."
             trackSource="rollover-hub"
           />
         </Container>

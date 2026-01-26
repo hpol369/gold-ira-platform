@@ -55,7 +55,7 @@ export default function HowMuchGoldPage() {
                             How Much Gold Should Be in Your Portfolio?
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            The question every investor asks. We break down expert recommendations, age-based strategies, and help you find the right gold allocation for your situation.
+                            You&apos;ve worked 30+ years building your nest egg. Now you want to know how much to move into gold. Here&apos;s the straight answer, without the Wall Street jargon.
                         </p>
                     </div>
                 </Container>
@@ -69,7 +69,7 @@ export default function HowMuchGoldPage() {
                             <h2 className="text-2xl font-bold text-white mb-4">The Short Answer</h2>
                             <p className="text-5xl font-bold text-amber-400 mb-4">5-15%</p>
                             <p className="text-lg text-slate-300">
-                                Most financial experts recommend allocating <strong className="text-white">5-15% of your total portfolio</strong> to gold and precious metals. This provides meaningful protection without overconcentration.
+                                Most experts say <strong className="text-white">5-15% of your total savings</strong> should be in gold and precious metals. That&apos;s enough protection to matter if markets crash, but not so much that you&apos;re betting the farm.
                             </p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ export default function HowMuchGoldPage() {
                         <div className="mb-16">
                             <h2 className="text-3xl font-bold text-white mb-6">Why 5-15%?</h2>
                             <p className="text-slate-300 mb-6">
-                                This range has emerged as the consensus among financial professionals for good reasons:
+                                This range isn&apos;t some arbitrary number. It&apos;s based on decades of market data. Here&apos;s the logic:
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6">
@@ -364,9 +364,9 @@ export default function HowMuchGoldPage() {
                         <div className="bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Build Your Gold Position?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect What You&apos;ve Built?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">
-                                    Get a personalized recommendation based on your age, risk tolerance, and retirement goals.
+                                    You didn&apos;t work three decades to lose it in the next crash. Get a straight answer on what makes sense for your situation.
                                 </p>
                                 <Button variant="gold" size="xl" asChild>
                                     <Link href="/quiz">

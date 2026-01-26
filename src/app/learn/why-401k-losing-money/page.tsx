@@ -163,13 +163,13 @@ export default function Why401kLosingMoneyPage() {
                         {/* Understanding Section */}
                         <section id="understanding" className="scroll-mt-32">
                             <p className="lead">
-                                Opening your 401k statement and seeing a smaller number than last time can be deeply unsettling. After all, this is your retirement - years of hard work and careful saving. <strong>But before you panic, let&apos;s take a breath and understand what&apos;s really going on.</strong>
+                                You&apos;ve been doing everything right. Every paycheck, money comes out before you even see it. 30 years of that discipline, and you&apos;ve built real savings—$500K, $600K, maybe more. <strong>So why does that number keep going down?</strong>
                             </p>
                             <p>
-                                The truth is, 401k losses are more common than most people realize. Markets go up, and markets go down - that&apos;s the nature of investing. However, understanding <em>why</em> your 401k is losing money can help you make smarter decisions about protecting what you&apos;ve worked so hard to build.
+                                Look, we get it. You didn&apos;t work double shifts as a nurse, spend decades on the factory floor, or drive coast-to-coast hauling freight just to watch Wall Street gamble it away. That sick feeling when you log in and see less than last quarter? That&apos;s not irrational. That&apos;s your gut telling you something&apos;s wrong.
                             </p>
                             <p>
-                                Let&apos;s walk through the most common reasons your 401k might be dropping - and more importantly, what you can do about each one.
+                                Let&apos;s walk through <em>exactly</em> why your 401(k) might be losing money—and more importantly, what you can actually do about it. Because at 55 or 60, you don&apos;t have decades to recover. Your body is already telling you that.
                             </p>
                         </section>
 

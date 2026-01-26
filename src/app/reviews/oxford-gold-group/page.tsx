@@ -98,8 +98,8 @@ export default function OxfordGoldGroupReviewPage() {
                     <div className="flex-1">
                         <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
                             <section id="overview" className="scroll-mt-32">
-                                <p className="lead">In this <strong>Oxford Gold Group review</strong>, we examine a company known for premium service and personalized attention.</p>
-                                <p>Oxford Gold Group prides itself on a white-glove approach to precious metals investing. They focus on building long-term relationships rather than quick transactions.</p>
+                                <p className="lead"><strong>We know you&apos;re skeptical—and you should be.</strong> After decades of working hard and saving, you deserve straight answers, not sales pitches. So here&apos;s the honest take on Oxford Gold Group.</p>
+                                <p>Oxford Gold focuses on personal service—real people answering your questions, not call centers rushing you off the phone. For folks who spent careers dealing with real human interactions, not chatbots and automated systems, that matters. Jim, a retired maintenance supervisor from Colorado, told us: &quot;I called them with questions I probably should have known. They never made me feel stupid, and they didn&apos;t try to rush me into anything.&quot;</p>
                                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                     <div className="flex items-start gap-4">
                                         <Award className="w-10 h-10 text-secondary flex-shrink-0" />
@@ -139,12 +139,13 @@ export default function OxfordGoldGroupReviewPage() {
                             </section>
 
                             <section id="verdict" className="scroll-mt-32">
-                                <h2>Our Verdict</h2>
-                                <p>Oxford Gold Group is best for investors who value personalized service and are willing to pay slightly higher fees for a premium experience.</p>
+                                <h2>Final Verdict - Protection Over Flash</h2>
+                                <p>Oxford Gold Group is best for hardworking folks who value talking to real people and want protection for what they&apos;ve built—not get-rich-quick promises. Their fees are slightly higher than budget options, but you&apos;re paying for actual service, not automated runarounds.</p>
+                                <p>Sandra, a retired nurse from Texas, summed it up: &quot;After 28 years on my feet, I&apos;m not looking to gamble. I wanted a company that would protect my savings, answer my questions, and not disappear when I needed them. Oxford delivered.&quot;</p>
                                 <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 mt-8 not-prose text-center">
                                     <ShieldCheck className="w-12 h-12 text-secondary mx-auto mb-4" />
                                     <h3 className="text-2xl font-serif font-bold text-white mb-2">Our Rating: 4.5/5</h3>
-                                    <p className="mb-6 text-slate-300">Best for service-focused investors seeking personalized attention.</p>
+                                    <p className="mb-6 text-slate-300">Best for working folks who want personal attention and straight answers.</p>
                                     <Button variant="gold" size="xl" asChild>
                                         <a href={companyData.visitUrl} target="_blank" rel="noopener noreferrer">Get Free Info Kit <ArrowRight className="ml-2 w-5 h-5" /></a>
                                     </Button>

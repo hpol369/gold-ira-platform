@@ -267,14 +267,14 @@ export default async function ScenarioPage({ params }: PageProps) {
         <Container>
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
-              Don&apos;t Wait for the Crisis
+              You Worked Too Hard to Gamble It Now
             </h2>
             <p className="text-slate-400 mb-8">
-              The time to protect your wealth is before disaster strikes, not after. Take our 60-second quiz to find the best Gold IRA company for your situation.
+              You remember 2008. You remember watching years of hard work disappear on a screen. The good news? You can take steps today to protect what you&apos;ve built. Take our 60-second quiz to find out if a Gold IRA makes sense for your situation.
             </p>
             <Button variant="gold" size="xl" asChild>
               <Link href="/quiz">
-                Protect My Retirement <ArrowRight className="ml-2 h-5 w-5" />
+                See If Gold Is Right for Me <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -286,8 +286,8 @@ export default async function ScenarioPage({ params }: PageProps) {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Don't Wait Until It's Too Late"
-            subheadline="Protect your retirement before the next crisis hits. Augusta Precious Metals has helped thousands of Americans secure their savings with physical gold."
+            headline="Real People Are Protecting Their Retirement Right Now"
+            subheadline="Steelworkers from Ohio, nurses from Texas, teachers from Florida - working Americans who spent 30 years building something real. They're moving part of their savings to gold before the next crisis hits. Augusta has helped 47,000+ people just like you."
             trackSource={`scenario-${slug}`}
           />
         </Container>

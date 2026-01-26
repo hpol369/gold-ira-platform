@@ -48,7 +48,7 @@ export default function CheckbookIRAPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 max-w-2xl leading-relaxed mb-8">
-                            A Checkbook IRA gives you direct control over your retirement investments without waiting for custodian approval. Learn how it works and if it's right for you.
+                            After decades of building your retirement savings, you might be frustrated with how long it takes to make investment decisions. A Checkbook IRA gives you direct control—no waiting for custodian approval. Here&apos;s how it works and whether it makes sense for protecting what you&apos;ve built.
                         </p>
 
                         <Button variant="gold" size="lg" asChild>
@@ -98,10 +98,10 @@ export default function CheckbookIRAPage() {
 
                             <h2>What is a Checkbook IRA?</h2>
                             <p>
-                                A <strong>Checkbook IRA</strong> (also called a Checkbook Control IRA or IRA LLC) is a type of Self-Directed IRA that gives you direct, immediate access to your retirement funds for making investments.
+                                Let&apos;s be straight with you: A <strong>Checkbook IRA</strong> (also called Checkbook Control IRA) gives you direct access to your retirement funds for making investments. No more waiting days or weeks for custodian approval.
                             </p>
                             <p>
-                                Instead of requesting permission from a custodian every time you want to make an investment—which can take days or weeks—a Checkbook IRA lets you simply write a check or use a debit card to fund investments instantly.
+                                Like Joe, a retired electrician from Michigan, many workers get frustrated when they find a good investment opportunity but can&apos;t move fast enough because their custodian takes two weeks to process paperwork. A Checkbook IRA solves that—you write a check or use a debit card and the deal is done.
                             </p>
 
                             <h2>How Does a Checkbook IRA Work?</h2>
@@ -261,19 +261,20 @@ export default function CheckbookIRAPage() {
 
                         <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white">
                             <h2>Who Should Use a Checkbook IRA?</h2>
-                            <p>A Checkbook IRA is ideal for:</p>
+                            <p>After decades of hard work building your savings, a Checkbook IRA makes sense if you&apos;re:</p>
                             <ul>
-                                <li><strong>Real estate investors</strong> who need to close deals quickly</li>
-                                <li><strong>Active investors</strong> making multiple investments per year</li>
-                                <li><strong>Experienced SDIRA users</strong> comfortable with compliance requirements</li>
-                                <li><strong>Those frustrated by custodian delays</strong> on time-sensitive deals</li>
+                                <li><strong>Buying rental properties</strong> where you need to close deals fast</li>
+                                <li><strong>An active investor</strong> making several investments per year</li>
+                                <li><strong>Comfortable with IRS rules</strong> and willing to stay compliant</li>
+                                <li><strong>Tired of waiting</strong> for custodians to approve time-sensitive deals</li>
                             </ul>
 
                             <h2>Who Should NOT Use a Checkbook IRA?</h2>
+                            <p>Here&apos;s the honest truth—this isn&apos;t for everyone:</p>
                             <ul>
-                                <li><strong>Passive investors</strong> making 1-2 investments per year (traditional SDIRA is simpler)</li>
-                                <li><strong>Beginners</strong> unfamiliar with IRA prohibited transaction rules</li>
-                                <li><strong>Those uncomfortable with responsibility</strong> of self-managing compliance</li>
+                                <li><strong>Workers focused on protection</strong> who just want their savings in gold or simple investments (a regular Gold IRA is easier)</li>
+                                <li><strong>People making 1-2 investments per year</strong> (the extra complexity isn&apos;t worth it)</li>
+                                <li><strong>Anyone unfamiliar with IRS prohibited transaction rules</strong> (one mistake can cost you the whole IRA)</li>
                             </ul>
 
                             <h2>Best Checkbook IRA Providers</h2>

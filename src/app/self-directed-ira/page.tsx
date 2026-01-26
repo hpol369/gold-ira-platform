@@ -106,7 +106,7 @@ export default function SelfDirectedIRAPage() {
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
                             <Lock className="w-4 h-4" />
-                            <span>Take Control of Your Retirement</span>
+                            <span>Your Money, Your Choices</span>
                         </div>
 
                         <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
@@ -114,7 +114,7 @@ export default function SelfDirectedIRAPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Invest your retirement in real estate, cryptocurrency, precious metals, private equity, and more. A Self-Directed IRA puts you in control.
+                            You spent decades building your 401k. A Self-Directed IRA gives you the freedom to invest it how you want—real estate, gold, crypto, or whatever makes sense for your situation. No more being stuck with whatever funds your employer picked.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -142,10 +142,10 @@ export default function SelfDirectedIRAPage() {
 
                         <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white">
                             <p>
-                                A <strong>Self-Directed IRA (SDIRA)</strong> is a type of individual retirement account that gives you complete control over your investment choices. Unlike traditional IRAs offered by banks and brokerages—which limit you to stocks, bonds, and mutual funds—a Self-Directed IRA allows you to invest in almost anything.
+                                Here&apos;s the deal: a regular IRA from Fidelity or Vanguard only lets you invest in stocks, bonds, and mutual funds. That&apos;s it. A <strong>Self-Directed IRA (SDIRA)</strong> removes those handcuffs. After 30+ years of building your nest egg, shouldn&apos;t you get to decide where it goes?
                             </p>
                             <p>
-                                With a Self-Directed IRA, you can invest in:
+                                With a Self-Directed IRA, you can invest in what you actually understand:
                             </p>
                             <ul>
                                 <li>Real estate (rental properties, land, commercial buildings)</li>
@@ -157,7 +157,7 @@ export default function SelfDirectedIRAPage() {
                                 <li>LLCs and private businesses</li>
                             </ul>
                             <p>
-                                All gains grow tax-deferred (Traditional SDIRA) or tax-free (Roth SDIRA), just like a regular IRA. The difference is the range of investments available to you.
+                                All gains grow tax-deferred (Traditional) or tax-free (Roth), just like your current retirement accounts. The only difference is you&apos;re no longer stuck with whatever options your employer chose. If you spent 30 years learning about real estate or understand why gold holds value—you can actually use that knowledge.
                             </p>
                         </div>
                     </div>
@@ -167,9 +167,9 @@ export default function SelfDirectedIRAPage() {
             {/* Investment Types */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-white mb-4 text-center">What Can You Invest In?</h2>
+                    <h2 className="text-3xl font-serif font-bold text-white mb-4 text-center">What Can You Actually Invest In?</h2>
                     <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-                        Self-Directed IRAs open up a world of alternative investments. Here are the most popular options:
+                        You worked 30 years in your field. Maybe you understand real estate better than any stock chart. Maybe you&apos;ve watched gold prices your whole life. With an SDIRA, you can invest in what you know:
                     </p>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -452,10 +452,10 @@ export default function SelfDirectedIRAPage() {
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl font-serif font-bold text-white mb-4">
-                            Ready to Take Control of Your Retirement?
+                            You Built It. You Should Decide Where It Goes.
                         </h2>
                         <p className="text-xl text-slate-300 mb-8">
-                            Open a Self-Directed IRA and start investing in what you know best.
+                            After decades of saving, you&apos;ve earned the right to invest your retirement in what makes sense to you—not just whatever your old employer&apos;s plan offered.
                         </p>
                         <Button variant="gold" size="xl" asChild>
                             <Link href="/reviews/rocket-dollar">

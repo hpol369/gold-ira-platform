@@ -128,7 +128,7 @@ export default function IsSilverGoodInvestmentPage() {
                             Is Silver a Good Investment?
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            A complete analysis of silver&apos;s investment potential in 2026—industrial demand, the silver-to-gold ratio, and whether silver belongs in your retirement portfolio.
+                            Silver isn&apos;t just &quot;poor man&apos;s gold.&quot; It&apos;s got industrial demand that gold doesn&apos;t have. Here&apos;s whether it makes sense for your retirement portfolio.
                         </p>
                     </div>
                 </Container>
@@ -149,13 +149,13 @@ export default function IsSilverGoodInvestmentPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Silver is often called &quot;poor man&apos;s gold,&quot; but that nickname undersells what makes silver unique. Unlike gold, silver is <strong>both a monetary metal AND an industrial metal</strong>—and that dual nature creates investment opportunities that gold simply doesn&apos;t offer.
+                                A lot of folks ask about silver because it&apos;s more affordable than gold. An ounce of gold costs $2,700+. An ounce of silver costs $30. But there&apos;s more to silver than just price. Unlike gold, silver is <strong>both a store of value AND an industrial metal</strong>.
                             </p>
                             <p>
-                                The question &quot;Is silver a good investment?&quot; doesn&apos;t have a simple yes or no answer. It depends on your goals, risk tolerance, and how you view the current economic environment. What we can say is that silver has characteristics that make it worth serious consideration.
+                                Solar panels need silver. Electric cars need silver. Your smartphone has silver in it. That industrial demand creates a price floor that gold doesn&apos;t have.
                             </p>
                             <p>
-                                In this guide, we&apos;ll examine the bull case for silver, the risks, and how to invest if you decide silver deserves a place in your portfolio.
+                                Here&apos;s what you need to know about silver if you&apos;re thinking about adding it to your retirement mix. The good, the bad, and when it makes sense.
                             </p>
                         </section>
 
@@ -297,8 +297,8 @@ export default function IsSilverGoodInvestmentPage() {
                         <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose border border-white/10">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Interested in Owning Physical Silver?</h3>
-                                <p className="mb-6 text-slate-300">A Silver IRA lets you hold real, physical silver in a tax-advantaged retirement account.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want to Own Real Silver in Your Retirement?</h3>
+                                <p className="mb-6 text-slate-300">A Silver IRA holds actual silver bars and coins in a vault with your name on it. Same tax benefits as your regular IRA.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/best-silver-ira-companies">Compare Silver IRA Companies <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -486,8 +486,8 @@ export default function IsSilverGoodInvestmentPage() {
                         <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white relative overflow-hidden not-prose border border-white/10">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Add Silver to Your Portfolio?</h3>
-                                <p className="mb-6 text-slate-300 max-w-xl mx-auto">Discover how a Silver IRA can help you own physical silver with tax advantages for your retirement.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Diversify Your Retirement?</h3>
+                                <p className="mb-6 text-slate-300 max-w-xl mx-auto">Adding silver to your retirement mix doesn&apos;t have to be complicated. Find a company that&apos;ll walk you through it without the high-pressure sales tactics.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/best-silver-ira-companies">Compare Silver IRA Companies <ArrowRight className="ml-2 w-5 h-5" /></Link>

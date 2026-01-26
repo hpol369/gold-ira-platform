@@ -105,7 +105,7 @@ export default function IsMyMoneySafeInBankPage() {
                             Is My Money Safe in the Bank?
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            FDIC limits, real risks, and strategies to protect your savings beyond traditional banking.
+                            After watching three banks collapse in 2023, you&apos;re right to ask this question. Here&apos;s what really protects your hard-earned savings and what doesn&apos;t.
                         </p>
                     </div>
                 </Container>
@@ -126,13 +126,13 @@ export default function IsMyMoneySafeInBankPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                After the 2023 banking crisis—when Silicon Valley Bank, Signature Bank, and First Republic collapsed within weeks—millions of Americans suddenly wondered: <em>Is my money actually safe in the bank?</em>
+                                When three major banks collapsed in 2023, a lot of hard-working folks suddenly had a wake-up call. If you&apos;ve got $500,000+ in retirement savings, you should understand exactly what&apos;s protected and what isn&apos;t.
                             </p>
                             <p>
-                                It&apos;s a question that many people never think about until it&apos;s too late. We assume banks are infallible institutions, but history shows they can and do fail. Understanding the real risks—and your actual protections—is essential for anyone serious about protecting their wealth.
+                                Most people assume banks are rock solid. We put our money there and forget about it. But after seeing news footage of people lined up outside banks, trying to get their own money? Worth understanding the rules.
                             </p>
                             <p>
-                                In this guide, we&apos;ll explore what FDIC insurance actually covers, the hidden risks to your bank deposits, and strategies to protect wealth beyond the banking system.
+                                Here&apos;s what FDIC insurance actually covers, the risks nobody talks about, and what you can do to protect savings you&apos;ve spent 30 years building.
                             </p>
                         </section>
 
@@ -311,8 +311,8 @@ export default function IsMyMoneySafeInBankPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Protect Wealth Outside the Banking System</h3>
-                                <p className="mb-6 text-gray-200">A Gold IRA holds physical precious metals you own directly—not deposits at a bank.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Own Something Real</h3>
+                                <p className="mb-6 text-gray-200">A Gold IRA holds actual gold in a vault with your name on it. Not a number on a bank&apos;s computer, not a paper promise. Real metal.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Explore Gold IRA Options <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -453,8 +453,8 @@ export default function IsMyMoneySafeInBankPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Diversify Beyond the Banking System</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Physical gold in a retirement account offers protection that bank deposits simply can&apos;t provide.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Don&apos;t Keep All Your Eggs in One Basket</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">You worked too hard for too long to trust it all to banks. Physical gold doesn&apos;t care if banks fail or computers crash.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>

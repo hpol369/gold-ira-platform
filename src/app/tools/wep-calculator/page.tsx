@@ -472,8 +472,8 @@ export default function WEPCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Affected by WEP? Diversify Your Retirement Income"
-            subheadline="Government retirees with reduced Social Security benefits should consider building additional retirement income sources. A Gold IRA provides tax-advantaged growth independent of Social Security."
+            headline="WEP Cut Your Social Security? You Still Have Options."
+            subheadline="After 25+ years of public service, WEP can slash your Social Security by $600/month. A Gold IRA builds retirement income they can't reduce - independent of government formulas."
             trackSource="tools-wep-calculator"
           />
         </Container>

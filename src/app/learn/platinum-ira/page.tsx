@@ -104,7 +104,7 @@ export default function PlatinumIraPage() {
                             Platinum IRA Investment Guide
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            It's 30 times rarer than gold and essential to modern industry. Here's why smart investors are adding "white gold" to their retirement portfolios.
+                            You've spent 30+ years building your 401k. Now you're looking at ways to protect it—and maybe grow it—without gambling on Wall Street. Platinum is 30 times rarer than gold. Here's the straight talk on whether it belongs in your retirement.
                         </p>
                     </div>
                 </Container>
@@ -123,7 +123,7 @@ export default function PlatinumIraPage() {
                         <KeyTakeaways items={takeaways} />
 
                         <p className="lead">
-                            When people think of precious metals, they think of gold and silver. But <strong>Platinum</strong>—often called "the rich man's gold"—offers a unique investment opportunity that combines the scarcity of precious metals with the utility of industrial commodities.
+                            You've probably heard about gold and silver IRAs. But there's another precious metal worth knowing about: <strong>Platinum</strong>. It's rarer, it's tied to real-world industry (not just speculation), and it can be held in the same tax-advantaged IRA as gold. Here's what you need to know—no Wall Street jargon, just the facts.
                         </p>
 
                         {/* What is Platinum */}
@@ -135,7 +135,7 @@ export default function PlatinumIraPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Platinum?</h2>
                             </div>
                             <p>
-                                Platinum is incredibly rare. All the platinum ever mined would fit into your living room. In contrast, all the gold would fill three Olympic-sized swimming pools.
+                                Here's a fact that puts things in perspective: All the platinum ever mined in human history would fit in your living room. Meanwhile, all the gold ever mined would fill three Olympic-sized swimming pools. That scarcity matters when you're looking to protect wealth you've spent decades building.
                             </p>
                         </section>
 
@@ -225,7 +225,7 @@ export default function PlatinumIraPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Risks</h2>
                             </div>
                             <p>
-                                Because platinum is an industrial metal, it suffers during recessions when car manufacturing slows down. Gold tends to perform <i>better</i> during recessions. Therefore, platinum should be viewed as a <strong>growth play</strong> within a precious metals portfolio, not just a safety play.
+                                Let me be straight with you: platinum isn't the same as gold. Because it's tied to auto manufacturing, it takes a hit during recessions when people stop buying cars. Gold actually does <i>better</i> during economic downturns. So if you're 5-7 years from retirement and worried about protecting your $500k+ 401k from a crash, gold is your safer bet. Platinum is more of a growth play—something to consider as a smaller piece of a diversified precious metals IRA, not the foundation.
                             </p>
                         </section>
 
@@ -233,8 +233,8 @@ export default function PlatinumIraPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Add Platinum to Your Portfolio</h3>
-                                <p className="mb-6 text-gray-200">Find a Gold IRA company that offers a wide selection of IRS-approved platinum coins and bars.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Considering Platinum for Your IRA?</h3>
+                                <p className="mb-6 text-gray-200">Work with a Gold IRA company that explains the real differences between metals—not one that just wants to make a sale.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find a Platinum Dealer <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>

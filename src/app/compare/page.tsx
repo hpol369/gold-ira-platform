@@ -123,8 +123,11 @@ export default function ComparePage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Gold IRA Company Comparisons
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
-              Can&apos;t decide between two companies? Our detailed comparisons break down fees, minimums, ratings, and service quality to help you make the right choice.
+            <p className="text-xl text-slate-300 leading-relaxed mb-4">
+              Choosing the right company for your life&apos;s savings isn&apos;t easy. You&apos;ve worked 30+ years to build what you have&mdash;you deserve a straight answer, not a sales pitch.
+            </p>
+            <p className="text-lg text-slate-400 leading-relaxed">
+              For someone with $500k saved over 30 years, the difference between companies isn&apos;t just fees&mdash;it&apos;s whether they&apos;ll be there when you need them. We focus on what matters: BBB complaints, customer service track records, and how they treat people like you.
             </p>
           </div>
         </Container>
@@ -139,7 +142,7 @@ export default function ComparePage() {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-white">Company Comparisons</h2>
-              <p className="text-slate-500">Head-to-head matchups of top Gold IRA providers</p>
+              <p className="text-slate-500">We look at trust, complaints, and service&mdash;not just marketing claims</p>
             </div>
           </div>
 
@@ -220,7 +223,10 @@ export default function ComparePage() {
       {/* Quick Comparison Table */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-bold text-white mb-8">Quick Company Overview</h2>
+          <h2 className="text-2xl font-bold text-white mb-4">Quick Company Overview</h2>
+          <p className="text-slate-400 mb-8 max-w-2xl">
+            When you&apos;re trusting a company with decades of savings, ratings and BBB grades tell you how they treat customers when things go wrong. Here&apos;s how the top companies stack up.
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
               <thead>

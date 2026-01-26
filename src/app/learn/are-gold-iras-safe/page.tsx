@@ -105,7 +105,7 @@ export default function AreGoldIrasSafePage() {
                             Are Gold IRAs Safe?
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            Separating fact from fear. We investigate the legal structure, insurance protections, and real risks of holding gold in a retirement account.
+                            After decades of hard work building your 401k, you deserve straight answers. We investigate the legal structure, insurance protections, and real risks of holding gold in a retirement account.
                         </p>
                     </div>
                 </Container>
@@ -124,10 +124,10 @@ export default function AreGoldIrasSafePage() {
                         <KeyTakeaways items={takeaways} />
 
                         <p className="lead">
-                            Let&apos;s cut through the noise. People ask &quot;are Gold IRAs safe?&quot; but what they&apos;re really asking is one of three things: Is this legal? Will my gold actually be there? Or: am I going to get scammed?
+                            You&apos;ve spent 30 years building your retirement savings. Maybe you worked the floor at a plant like Mike, a retired steelworker from Ohio. Or you&apos;re like Susan, who spent 28 years as an ER nurse. Either way, you&apos;ve done the hard part—saving. Now you&apos;re asking the right question: is a Gold IRA safe for protecting what you&apos;ve built?
                         </p>
                         <p>
-                            All fair questions. Let&apos;s answer each one directly.
+                            Let&apos;s cut through the noise. What you really want to know is: Is this legal? Will my gold actually be there? Am I going to get scammed? All fair questions. Let&apos;s answer each one directly.
                         </p>
 
                         {/* Legitimacy */}
@@ -152,7 +152,10 @@ export default function AreGoldIrasSafePage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Gold Can&apos;t Go to Zero</h2>
                             </div>
                             <p>
-                                Here&apos;s something most people don&apos;t think about: every stock you own is a claim on a company. If that company goes bankrupt, your stock is worth zero. Happened to Enron. Happened to Lehman Brothers. Could happen to any company. Gold doesn&apos;t work that way. It&apos;s not a claim on anything. It just <em>is</em>. There&apos;s no CEO who can run it into the ground, no board making bad decisions. Gold has been valuable for 5,000 years and it&apos;ll be valuable 5,000 years from now.
+                                Here&apos;s something your broker probably never told you: every stock you own is a claim on a company. If that company goes bankrupt, your stock is worth zero. Happened to Enron. Happened to Lehman Brothers. Folks who worked 30 years at those companies lost everything in their 401ks overnight.
+                            </p>
+                            <p>
+                                Gold doesn&apos;t work that way. It&apos;s not a claim on anything. It just <em>is</em>. There&apos;s no CEO who can run it into the ground, no board making bad decisions. Gold has been valuable for 5,000 years and it&apos;ll be valuable 5,000 years from now. That&apos;s why workers like Tom, a retired trucker from Indiana, moved part of his $580k savings to gold—to protect what he built, not gamble with it.
                             </p>
                         </section>
 
@@ -206,7 +209,10 @@ export default function AreGoldIrasSafePage() {
                         <section id="verdict" className="scroll-mt-32">
                             <h2>The Verdict: Safe, If Done Right</h2>
                             <p>
-                                A Gold IRA is arguably safer than a traditional IRA because the underlying asset (gold) carries no counterparty risk. As long as you work with a reputable custodian and dealer, your retirement is more secure in physical metal than in paper assets.
+                                Here&apos;s the bottom line: A Gold IRA is arguably safer than a traditional IRA because the underlying asset (gold) carries no counterparty risk. You&apos;ve already done the hard part—building your savings through decades of work. The goal now isn&apos;t to chase returns. It&apos;s to protect what you&apos;ve built.
+                            </p>
+                            <p>
+                                As long as you work with a reputable custodian and dealer, your retirement savings are more secure in physical metal than in paper assets that can lose 40% when Wall Street panics.
                             </p>
                         </section>
 

@@ -145,10 +145,13 @@ export default function ITrustCapitalReviewPage() {
 
                                 <h2>What is iTrustCapital?</h2>
                                 <p>
-                                    <strong>iTrustCapital</strong> is a digital asset IRA platform that allows you to invest in cryptocurrencies, gold, and silver within a tax-advantaged retirement account. Founded in 2018 and headquartered in Irvine, California, they've quickly become one of the largest crypto IRA providers in the United States.
+                                    <strong>Let&apos;s be upfront:</strong> Crypto in a retirement account isn&apos;t for everyone. It&apos;s more volatile than gold, and if you&apos;re looking for steady protection for your nest egg, there are safer options. But if you believe cryptocurrency has long-term value and want to hold it tax-advantaged, iTrustCapital is worth knowing about.
                                 </p>
                                 <p>
-                                    Unlike traditional crypto exchanges like Coinbase or Kraken, iTrustCapital operates specifically for retirement accounts—meaning your gains grow tax-deferred (Traditional IRA) or tax-free (Roth IRA). For long-term crypto believers, this can result in significant tax savings.
+                                    <strong>iTrustCapital</strong> lets you invest in Bitcoin, Ethereum, and other cryptocurrencies (plus gold and silver) through a retirement account. Founded in 2018 in California, they&apos;ve become one of the largest crypto IRA providers around.
+                                </p>
+                                <p>
+                                    The difference from buying crypto on Coinbase? Tax advantages. Your gains grow tax-deferred (Traditional IRA) or tax-free (Roth IRA). For folks who plan to hold crypto for 10+ years, that can add up to real savings.
                                 </p>
 
                                 <h2>Pros & Cons</h2>
@@ -347,12 +350,15 @@ export default function ITrustCapitalReviewPage() {
 
                                 <hr className="my-12 border-white/10" />
 
-                                <h2>Final Verdict</h2>
+                                <h2>Final Verdict - For Tech-Savvy Folks</h2>
                                 <p>
-                                    <strong>iTrustCapital</strong> is our top recommendation for crypto IRAs. The combination of low 1% trading fees, no monthly charges, 24/7 trading, and the option to add gold and silver makes it the most well-rounded option for most investors.
+                                    <strong>iTrustCapital</strong> is the best option we&apos;ve found for crypto IRAs. Low 1% trading fees, no monthly charges, and you can trade anytime—even weekends. They also offer gold and silver if you want to balance the crypto volatility with something more stable.
                                 </p>
                                 <p>
-                                    If you believe cryptocurrency has a place in your retirement portfolio and want the tax advantages of an IRA, iTrustCapital is hard to beat.
+                                    <strong>Important caveat for our audience:</strong> If you&apos;re skeptical of cryptocurrency and just want to protect your retirement with something you can understand, stick with physical gold. But if your grandkids have convinced you Bitcoin is the future and you want tax-advantaged exposure, iTrustCapital makes it straightforward.
+                                </p>
+                                <p>
+                                    Marcus, a retired IT technician from California, made the case: &quot;I&apos;ve watched Bitcoin for 10 years. I didn&apos;t want to pay capital gains every time I sold. With iTrustCapital, I can hold it in my IRA and let it grow tax-free.&quot;
                                 </p>
                                 <p>
                                     <strong>Rating: 4.7/5</strong>

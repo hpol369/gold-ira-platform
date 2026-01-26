@@ -150,9 +150,11 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
             </div>
           </div>
 
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
-            {accountType.description} Learn how to roll over your {accountType.fullName} to a Gold IRA
-            while maintaining tax-advantaged status.
+          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-4">
+            After years of contributing to your {accountType.fullName}, you&apos;ve built something real. Now it&apos;s about protecting what you&apos;ve earned&mdash;not chasing more growth.
+          </p>
+          <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mb-8">
+            This is simpler than it sounds. A direct rollover moves your {accountType.name} to a Gold IRA without taxes or penalties. Most people complete the process in under two weeks.
           </p>
 
           <div className="flex flex-wrap gap-4 text-sm">
@@ -180,10 +182,10 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <h2 className="text-lg font-bold text-white">
-                Ready to Roll Over Your {accountType.name}?
+                Nervous About Getting This Right?
               </h2>
               <p className="text-slate-400 text-sm">
-                Augusta Precious Metals handles the entire {accountType.name} to Gold IRA rollover process.
+                Most people are. Augusta handles the whole process&mdash;they contact your {accountType.name} provider, complete the paperwork, and make sure nothing falls through the cracks.
               </p>
             </div>
             <Link
@@ -204,17 +206,20 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
             <div className="lg:col-span-2 space-y-8">
               {/* Rollover Steps */}
               <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                <h3 className="font-bold text-lg text-white mb-6">
+                <h3 className="font-bold text-lg text-white mb-2">
                   How to Roll Over Your {accountType.name} to a Gold IRA
                 </h3>
+                <p className="text-slate-400 text-sm mb-6">
+                  Six steps. Your Gold IRA company handles most of the work. You don&apos;t touch the money, so there&apos;s no tax hit.
+                </p>
                 <div className="space-y-4">
                   {[
-                    `Verify your ${accountType.name} allows rollovers (check with your plan administrator)`,
-                    "Choose a reputable Gold IRA company and open your new account",
-                    "Request a direct rollover from your current custodian",
-                    "Your Gold IRA company provides transfer paperwork",
-                    "Funds transfer directly between custodians (no taxes withheld)",
-                    "Purchase IRS-approved precious metals for your Gold IRA"
+                    `Make sure your ${accountType.name} allows rollovers (if you're retiring or leaving your job, you're good to go)`,
+                    "Pick a Gold IRA company and set up your new account (takes about 15 minutes)",
+                    "They handle the paperwork and contact your current provider for you",
+                    "Request goes in for a direct rollover (money goes straight between accounts)",
+                    "Funds transfer directly&mdash;you never touch the money, so no taxes",
+                    "Choose your gold and silver. Your metals ship to an IRS-approved vault."
                   ].map((step, index) => (
                     <div key={index} className="flex gap-4">
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">
@@ -266,10 +271,13 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
 
               {/* Rollover Restrictions */}
               <div className="bg-amber-500/10 rounded-xl p-6 border border-amber-500/20">
-                <h3 className="font-bold text-amber-400 mb-4 flex items-center gap-2">
+                <h3 className="font-bold text-amber-400 mb-2 flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5" />
-                  {accountType.name} Rollover Restrictions
+                  Things to Know Before You Start
                 </h3>
+                <p className="text-amber-300/70 text-sm mb-4">
+                  Most {accountType.name} rollovers are straightforward, but here are a few rules to be aware of:
+                </p>
                 <ul className="space-y-3">
                   {accountType.rolloverRestrictions.map((restriction, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm text-amber-300">
@@ -283,11 +291,14 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
               {/* Who Holds This Account Type */}
               <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
                 <h3 className="font-bold text-lg text-white mb-4">
-                  Who Typically Has a {accountType.name}?
+                  Is This You?
                 </h3>
+                <p className="text-slate-400 text-sm mb-4">
+                  If you&apos;ve been contributing to a {accountType.name} for years, you&apos;ve done something most Americans couldn&apos;t. Now let&apos;s protect it.
+                </p>
                 <div className="space-y-4">
                   <div>
-                    <div className="text-sm font-medium text-slate-400 mb-1">Eligibility</div>
+                    <div className="text-sm font-medium text-slate-400 mb-1">Who Has This Account</div>
                     <p className="text-slate-300">{accountType.eligibility}</p>
                   </div>
                   <div>
@@ -332,16 +343,16 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
               {/* Key Facts Card */}
               <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 sticky top-4">
                 <h3 className="font-bold text-white mb-4">
-                  {accountType.name} Key Facts
+                  The Bottom Line
                 </h3>
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-white">Rollover Eligible</div>
+                      <div className="font-medium text-white">Yes, You Can Roll It Over</div>
                       <div className="text-sm text-slate-400">
-                        {accountType.canRolloverToGoldIRA ? "Yes, can roll to Gold IRA" : "Limited eligibility"}
+                        {accountType.canRolloverToGoldIRA ? "Your " + accountType.name + " is eligible for a Gold IRA rollover" : "Some restrictions may apply"}
                       </div>
                     </div>
                   </div>
@@ -349,9 +360,9 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                   <div className="flex items-start gap-3">
                     <Shield className="h-5 w-5 text-blue-400 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-white">Tax-Free Transfer</div>
+                      <div className="font-medium text-white">No Taxes. No Penalties.</div>
                       <div className="text-sm text-slate-400">
-                        Direct rollover has no taxes or penalties
+                        Direct rollover means you don&apos;t touch the money
                       </div>
                     </div>
                   </div>
@@ -359,9 +370,9 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                   <div className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-amber-400 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-white">Processing Time</div>
+                      <div className="font-medium text-white">About 1-2 Weeks</div>
                       <div className="text-sm text-slate-400">
-                        Typically 5-14 business days
+                        Most rollovers finish in 5-14 business days
                       </div>
                     </div>
                   </div>
@@ -371,8 +382,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                   <div className="flex items-start gap-2 text-sm text-slate-300">
                     <Shield className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />
                     <span>
-                      A direct rollover from your {accountType.name} to a Gold IRA is 100% tax-free
-                      when done correctly.
+                      You worked hard for this money. A direct rollover keeps it protected and tax-free.
                     </span>
                   </div>
                 </div>
@@ -381,11 +391,11 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
               {/* Augusta CTA */}
               <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/20 rounded-xl p-6 border border-amber-500/30">
                 <h3 className="font-bold text-white mb-2">
-                  Let Experts Handle Your Rollover
+                  Don&apos;t Want to Do This Alone?
                 </h3>
                 <p className="text-sm text-slate-300 mb-4">
-                  Augusta Precious Metals specializes in {accountType.name} to Gold IRA transfers.
-                  They handle all the paperwork and coordination.
+                  Most people don&apos;t. Augusta contacts your {accountType.name} provider, handles the paperwork,
+                  and makes sure everything goes right. No cost to get started.
                 </p>
                 <Link
                   href="/reviews/augusta-precious-metals"
@@ -402,50 +412,52 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
       {/* FAQ Section */}
       <section className="py-12 bg-white/5">
         <Container>
-          <h2 className="text-2xl font-bold text-white mb-8">
-            {accountType.name} to Gold IRA FAQs
+          <h2 className="text-2xl font-bold text-white mb-4">
+            Common Questions About {accountType.name} Rollovers
           </h2>
+          <p className="text-slate-400 mb-8">
+            Straight answers. No financial jargon.
+          </p>
           <div className="max-w-3xl space-y-4">
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">
-                Can I roll over my {accountType.name} to a Gold IRA?
+                Can I actually do this with my {accountType.name}?
               </h3>
               <p className="text-slate-300">
-                Yes, {accountType.name}s are eligible for Gold IRA rollovers. The key is to use a
-                direct rollover where funds transfer between custodians without you taking possession.
-                This keeps the transfer tax-free and penalty-free.
+                Yes. {accountType.name}s are eligible for Gold IRA rollovers. The key is using a
+                direct rollover&mdash;the money goes straight from one custodian to the other. You never
+                touch it, so there&apos;s no tax bill.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">
-                Is a {accountType.name} to Gold IRA rollover tax-free?
+                Will I owe taxes on the rollover?
               </h3>
               <p className="text-slate-300">
-                Yes, when done as a direct rollover (trustee-to-trustee transfer), there are no
-                taxes or early withdrawal penalties. The funds maintain their tax-advantaged status
-                throughout the transfer process.
+                No. A direct rollover is 100% tax-free. The money moves between accounts without
+                you taking possession. No taxes, no penalties, no 60-day deadline to worry about.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">
-                How much can I roll over from my {accountType.name}?
+                How much can I roll over?
               </h3>
               <p className="text-slate-300">
-                You can roll over any amount from your {accountType.name} to a Gold IRA—there&apos;s no
-                limit. However, your plan may have restrictions on in-service withdrawals if you&apos;re
-                still employed. Check your plan documents or contact your plan administrator.
+                There&apos;s no limit on rollover amounts. You can move all of it or just a portion&mdash;whatever
+                feels right for protecting your retirement. If you&apos;re still working, check if your plan
+                has any in-service withdrawal rules.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">
-                What&apos;s the difference between traditional and Roth Gold IRAs?
+                What kind of Gold IRA do I need?
               </h3>
               <p className="text-slate-300">
                 {accountType.taxTreatment === "pre-tax"
-                  ? `Your ${accountType.name} uses pre-tax dollars, so it should roll into a traditional Gold IRA to maintain tax-deferred status. Rolling to a Roth Gold IRA would trigger taxes on the converted amount.`
+                  ? `Your ${accountType.name} is pre-tax money, so it rolls into a traditional Gold IRA. Same tax treatment, just different assets. If you wanted a Roth Gold IRA instead, you'd owe taxes on the conversion.`
                   : accountType.taxTreatment === "post-tax"
-                  ? `Your ${accountType.name} uses after-tax dollars, so it should roll into a Roth Gold IRA to maintain tax-free withdrawal status.`
-                  : `Your ${accountType.name} may have both pre-tax and Roth components. Pre-tax funds should go to a traditional Gold IRA, while Roth funds should go to a Roth Gold IRA.`
+                  ? `Your ${accountType.name} is after-tax money (Roth), so it rolls into a Roth Gold IRA. You already paid taxes on this money—now it grows and comes out tax-free.`
+                  : `Your ${accountType.name} might have both pre-tax and Roth money. Pre-tax goes to a traditional Gold IRA, Roth goes to a Roth Gold IRA. Your Gold IRA company will help sort this out.`
                 }
               </p>
             </div>
@@ -490,8 +502,8 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
           <AugustaCTA
             variant="footer"
             linkContext="fees"
-            headline={`Ready to Roll Over Your ${accountType.name}?`}
-            subheadline={`Augusta Precious Metals makes ${accountType.name} to Gold IRA rollovers simple. Their team handles everything—from contacting your custodian to completing all the paperwork. Get started with a free consultation.`}
+            headline={`You've Earned This. Now Protect It.`}
+            subheadline={`After years of building your ${accountType.name}, it's time to think about protection—not just growth. Augusta handles the whole rollover process. They contact your provider, complete the paperwork, and make sure your money is safe every step of the way.`}
             trackSource={`rollover-${accountType.slug}`}
           />
         </Container>
@@ -552,8 +564,11 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
             </div>
           </div>
 
-          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
-            {provider.description}
+          <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-4">
+            After decades of work, your {provider.name} account represents real money&mdash;money you earned one paycheck at a time. Here&apos;s exactly how to move it to a Gold IRA without taxes or penalties.
+          </p>
+          <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mb-8">
+            This is simpler than it sounds. {provider.description}
           </p>
 
           <div className="flex flex-wrap gap-4 text-sm">
@@ -589,10 +604,10 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <h2 className="text-lg font-bold text-white">
-                Need Help with Your {provider.name} Rollover?
+                Nervous About Doing This Yourself?
               </h2>
               <p className="text-slate-400 text-sm">
-                Augusta Precious Metals handles the entire process for you—including contacting {provider.name}.
+                Most people are. Augusta calls {provider.name} for you, handles all the paperwork, and makes sure nothing goes wrong.
               </p>
             </div>
             <Link
@@ -670,8 +685,11 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
               {/* Contact Card */}
               <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 sticky top-4">
                 <h3 className="font-bold text-white mb-4">
-                  Contact {provider.name}
+                  If You Want to Call Yourself
                 </h3>
+                <p className="text-slate-400 text-sm mb-4">
+                  Here&apos;s {provider.name}&apos;s rollover line. Or let Augusta handle it for you.
+                </p>
 
                 {provider.phone && (
                   <a
@@ -690,7 +708,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
                   <div className="flex items-start gap-2 text-sm text-slate-300">
                     <Shield className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />
                     <span>
-                      A direct rollover from {provider.name} to a Gold IRA is 100% tax-free when done correctly.
+                      A direct rollover from {provider.name} to a Gold IRA is 100% tax-free. You don&apos;t touch the money, so there&apos;s no tax bill.
                     </span>
                   </div>
                 </div>
@@ -699,11 +717,11 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
               {/* Augusta CTA */}
               <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/20 rounded-xl p-6 border border-amber-500/30">
                 <h3 className="font-bold text-white mb-2">
-                  Let Experts Handle Your Rollover
+                  Skip the Phone Calls
                 </h3>
                 <p className="text-sm text-slate-300 mb-4">
-                  Augusta Precious Metals will contact {provider.name} on your behalf, complete all paperwork,
-                  and ensure a tax-free transfer.
+                  Augusta contacts {provider.name} for you, handles all the paperwork,
+                  and makes sure your rollover goes smoothly. No cost to get started.
                 </p>
                 <Link
                   href="/reviews/augusta-precious-metals"
@@ -722,8 +740,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
         <section className="py-12 bg-white/5">
           <Container>
             <h2 className="text-2xl font-bold text-white mb-6">
-              Other {provider.type === "brokerage" ? "Brokerage" :
-                     provider.type === "employer" ? "Employer Plan" : "Government"} Rollovers
+              Have an Account Somewhere Else?
             </h2>
             <div className="grid md:grid-cols-3 gap-4">
               {relatedProviders.map((related) => (
@@ -737,40 +754,43 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
       {/* FAQ Section */}
       <section className="py-12">
         <Container>
-          <h2 className="text-2xl font-bold text-white mb-8">
-            {provider.name} Rollover FAQs
+          <h2 className="text-2xl font-bold text-white mb-4">
+            Common Questions About {provider.name} Rollovers
           </h2>
+          <p className="text-slate-400 mb-8">
+            Straight answers. No financial jargon.
+          </p>
           <div className="max-w-3xl space-y-4">
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">
-                How long does a {provider.name} rollover take?
+                How long is this going to take?
               </h3>
               <p className="text-slate-300">
-                Most {provider.name} rollovers complete within {provider.typicalTimeline}.
+                {provider.name} rollovers typically take {provider.typicalTimeline}.
                 {provider.onlineRollover
-                  ? " Since online rollover is available, you can initiate the process immediately through their website."
-                  : " You'll need to contact their rollover department by phone to initiate the transfer."
+                  ? " You can start online, which speeds things up."
+                  : " You'll need to call their rollover department, but your Gold IRA company can handle that for you."
                 }
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">
-                Is a {provider.name} to Gold IRA rollover tax-free?
+                Will I owe taxes on this?
               </h3>
               <p className="text-slate-300">
-                Yes, a direct rollover from {provider.name} to a Gold IRA is 100% tax-free.
-                The funds transfer directly between custodians without you taking possession,
-                so there are no taxes or early withdrawal penalties.
+                No. A direct rollover from {provider.name} to a Gold IRA is 100% tax-free.
+                The money goes straight from one account to the other&mdash;you never touch it.
+                No taxes, no penalties. It&apos;s the same money, just in a different account.
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="font-bold text-white mb-2">
-                Do I need to sell my investments before rolling over?
+                What happens to my current investments?
               </h3>
               <p className="text-slate-300">
-                Yes, your current investments at {provider.name} will need to be liquidated
-                (sold for cash) before the funds can be transferred to your Gold IRA.
-                Your Gold IRA company will then use those funds to purchase IRS-approved precious metals.
+                Your stocks, bonds, or mutual funds at {provider.name} get sold and converted to cash.
+                That cash then transfers to your Gold IRA, where you use it to buy physical gold.
+                Your Gold IRA company walks you through choosing the right metals.
               </p>
             </div>
           </div>
@@ -783,8 +803,8 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
           <AugustaCTA
             variant="footer"
             linkContext="fees"
-            headline={`Ready to Roll Over Your ${provider.name} Account?`}
-            subheadline={`Augusta Precious Metals makes ${provider.name} rollovers simple. Their team handles everything—from contacting ${provider.name} to completing all the paperwork. Get started with a free consultation.`}
+            headline="You Built This. Now Protect It."
+            subheadline={`After years of saving with ${provider.name}, your retirement deserves real protection. Augusta handles everything—they call ${provider.name}, complete the paperwork, and make sure your money is safe every step of the way.`}
             trackSource={`rollover-${provider.slug}`}
           />
         </Container>

@@ -49,7 +49,7 @@ export default function BitcoinIRAPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 max-w-2xl leading-relaxed mb-8">
-                            A Bitcoin IRA lets you hold Bitcoin and other cryptocurrencies in a tax-advantaged retirement account. Your gains can grow tax-free (Roth) or tax-deferred (Traditional).
+                            After decades of building your 401k, you might be curious about cryptocurrency. A Bitcoin IRA lets you hold Bitcoin in a tax-advantaged retirement account—your gains can grow tax-free (Roth) or tax-deferred (Traditional). Here&apos;s what you need to know before putting any of your hard-earned savings into crypto.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -101,10 +101,10 @@ export default function BitcoinIRAPage() {
 
                             <h2>What is a Bitcoin IRA?</h2>
                             <p>
-                                A <strong>Bitcoin IRA</strong> (also called a Crypto IRA or Digital Asset IRA) is a type of self-directed individual retirement account that allows you to invest in Bitcoin and other cryptocurrencies within a tax-advantaged structure.
+                                Let&apos;s be straight with you: a <strong>Bitcoin IRA</strong> (also called a Crypto IRA) is a self-directed retirement account that lets you invest in Bitcoin and other cryptocurrencies. It&apos;s riskier than gold or traditional investments, but some workers use it to diversify a small portion of their savings.
                             </p>
                             <p>
-                                Unlike buying Bitcoin on Coinbase or Kraken where every trade triggers a taxable event, a Bitcoin IRA shelters your gains from immediate taxation:
+                                Unlike buying Bitcoin on regular exchanges where every trade triggers taxes, a Bitcoin IRA shelters your gains:
                             </p>
                             <ul>
                                 <li><strong>Traditional Bitcoin IRA:</strong> Contributions may be tax-deductible. Gains grow tax-deferred until you withdraw in retirement (then taxed as ordinary income).</li>
@@ -204,22 +204,24 @@ export default function BitcoinIRAPage() {
 
                             <h2>Who Should Consider a Bitcoin IRA?</h2>
                             <p>
-                                A Bitcoin IRA makes the most sense for:
+                                Here&apos;s the reality: A Bitcoin IRA is NOT for everyone. If you&apos;ve spent 30 years building your retirement savings, you don&apos;t want to gamble it all on crypto. But a small allocation (5-10%) might make sense for:
                             </p>
                             <ul>
-                                <li><strong>Long-term Bitcoin believers</strong> who plan to hold for 10+ years</li>
-                                <li><strong>High earners</strong> who want to minimize tax on large potential gains</li>
-                                <li><strong>Retirement savers</strong> who want crypto exposure in their portfolio</li>
+                                <li><strong>Workers with solid savings</strong> who can afford some risk on a small portion</li>
                                 <li><strong>Those with old 401(k)s</strong> sitting with former employers</li>
-                                <li><strong>HODLers</strong> who don't need the funds before retirement</li>
+                                <li><strong>Long-term holders</strong> who won&apos;t panic when Bitcoin drops 50%</li>
+                                <li><strong>People who understand</strong> this is speculation, not protection</li>
                             </ul>
 
                             <h2>Who Should NOT Use a Bitcoin IRA?</h2>
+                            <p>
+                                If you&apos;ve worked 30 years to build your nest egg and protection is your priority, think carefully before putting significant money here:
+                            </p>
                             <ul>
-                                <li><strong>Active traders</strong> — fees add up and you can't day trade effectively</li>
-                                <li><strong>Those who need liquidity</strong> — early withdrawal penalties apply</li>
-                                <li><strong>Self-custody advocates</strong> — you won't hold your own keys</li>
-                                <li><strong>Small investors</strong> — the fee structure may not make sense for tiny amounts</li>
+                                <li><strong>Workers close to retirement</strong> — you can&apos;t afford a 50% drop right before you stop working</li>
+                                <li><strong>Those who need liquidity</strong> — early withdrawal penalties apply before 59½</li>
+                                <li><strong>Anyone who can&apos;t stomach volatility</strong> — Bitcoin can lose half its value in months</li>
+                                <li><strong>People looking to protect savings</strong> — gold is better for preservation; crypto is speculation</li>
                             </ul>
 
                             <h2>How to Rollover Your 401(k) to a Bitcoin IRA</h2>

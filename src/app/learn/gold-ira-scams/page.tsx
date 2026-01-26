@@ -115,7 +115,7 @@ export default function GoldIraScamsPage() {
                             Gold IRA Scams to Avoid in 2026
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            Protect your retirement savings from dishonest dealers. Learn the warning signs before it&apos;s too late.
+                            You didn&apos;t work 30+ years to have some slick salesman take your retirement for a ride. Here&apos;s how to spot the con artists before they get their hands on your savings.
                         </p>
                     </div>
                 </Container>
@@ -136,13 +136,13 @@ export default function GoldIraScamsPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                The gold IRA industry has legitimate, reputable companies—but it also attracts bad actors looking to take advantage of investors. Understanding <strong>Gold IRA scams</strong> is essential to protecting your retirement savings.
+                                Look, most Gold IRA companies are honest. But this industry has its share of bad apples who see your $500,000 retirement nest egg and see dollar signs. Understanding <strong>Gold IRA scams</strong> is how you protect what you&apos;ve spent decades building.
                             </p>
                             <p>
-                                The unfortunate reality: because gold IRA transactions involve large sums (often $50,000-$500,000+), even small deceptions can cost you thousands. A 10% excessive markup on a $100,000 investment is $10,000 out of your pocket.
+                                Here&apos;s the math that keeps me up at night: a 10% excessive markup on a $100,000 rollover is $10,000 straight out of your pocket. That&apos;s money you worked years for, gone because some sales guy needed a commission check.
                             </p>
                             <p>
-                                This guide exposes the most common scams and teaches you how to identify trustworthy companies.
+                                This guide exposes the tricks and teaches you what to watch for. No scare tactics, just straight talk about protecting yourself.
                             </p>
                         </section>
 
@@ -523,8 +523,8 @@ export default function GoldIraScamsPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Find a Trustworthy Gold IRA Company</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Our quiz matches you with vetted companies that have excellent track records and transparent pricing.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Find a Company You Can Trust</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">We&apos;ve done the homework so you don&apos;t have to. Get matched with companies that play it straight with pricing and won&apos;t pressure you.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>

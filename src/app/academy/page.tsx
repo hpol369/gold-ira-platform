@@ -126,8 +126,7 @@ export default function AcademyPage() {
               Gold IRA Academy
             </h1>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Master everything you need to know about Gold IRAs in 10 easy modules.
-              From basics to advanced strategies—completely free.
+              You&apos;ve worked 30+ years building your retirement. Before you move any of it, you deserve to understand exactly how Gold IRAs work—the good, the bad, and what the sales reps won&apos;t tell you. 10 modules. Completely free. No email required.
             </p>
 
             {/* Stats */}
@@ -250,19 +249,19 @@ export default function AcademyPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
-              What You&apos;ll Learn
+              What You&apos;ll Actually Learn
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                "How Gold IRAs protect against inflation and market crashes",
-                "The exact process to roll over your existing retirement accounts",
-                "IRS rules and regulations you must follow",
-                "How to spot and avoid Gold IRA scams",
-                "The difference between various precious metals options",
-                "How to choose the best Gold IRA company for your needs",
-                "Tax benefits and smart withdrawal strategies",
-                "Real-world strategies used by sophisticated investors",
+                "Why some retirees add gold to their 401k (and why others shouldn't)",
+                "The step-by-step rollover process—no surprises",
+                "IRS rules that can get you in serious trouble if you break them",
+                "Red flags that separate legitimate companies from scams",
+                "Which metals actually qualify for your IRA (hint: not all do)",
+                "What fees to expect and which ones are rip-offs",
+                "Tax rules for withdrawals—and how to avoid penalties",
+                "Real examples of what this looks like for people like you",
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />

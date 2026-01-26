@@ -113,7 +113,7 @@ export default function HomeStorageGoldIraPage() {
                             Home Storage Gold IRA: Don&apos;t Do It
                         </h1>
                         <p className="text-xl text-red-100 leading-relaxed">
-                            Some companies will tell you that you can keep your IRA gold at home. They&apos;re wrong—and following their advice could cost you your entire retirement savings.
+                            Some slick sales guy is telling you that you can keep your IRA gold at home in your safe. Don&apos;t fall for it. Following this advice could cost you 40% of your retirement savings in taxes and penalties.
                         </p>
                     </div>
                 </Container>

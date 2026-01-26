@@ -178,8 +178,8 @@ export default function FeesComparisonPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Want a Personalized Fee Analysis?"
-            subheadline="Speak with a specialist who can provide a detailed fee breakdown based on your specific account size and goals."
+            headline="Don't Let Fees Eat Your Hard-Earned Savings"
+            subheadline="You worked 30+ years for your nest egg. Augusta has some of the clearest, most competitive fees in the industry - no hidden surprises."
             trackSource="tools-fees-comparison"
           />
         </Container>

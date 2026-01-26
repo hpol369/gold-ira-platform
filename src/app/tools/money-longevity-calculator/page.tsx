@@ -154,7 +154,8 @@ export default function MoneyLongevityCalculatorPage() {
                 Money Longevity Calculator
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                Find out how long your retirement savings will last and avoid running out of money
+                You've saved for 30+ years. The scariest question in retirement: Will it last?
+                This calculator shows if your nest egg will outlive you - or the other way around.
               </p>
             </motion.div>
           </div>
@@ -696,8 +697,8 @@ export default function MoneyLongevityCalculatorPage() {
                   {/* CTA */}
                   <AugustaCTA
                     variant="inline"
-                    headline="Protect Your Retirement Savings"
-                    subheadline="A Gold IRA can help protect your nest egg from inflation and market volatility, potentially extending how long your savings last."
+                    headline="Make Your Hard-Earned Savings Last Longer"
+                    subheadline="After decades of contributions, the last thing you need is a crash eating into your nest egg. Gold protects against inflation AND market drops - helping your money last."
                   />
 
                   {/* Action Buttons */}

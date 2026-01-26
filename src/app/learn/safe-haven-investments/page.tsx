@@ -127,13 +127,13 @@ export default function SafeHavenInvestmentsPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                When markets crash, geopolitical tensions rise, or economic crisis looms, investors flee to &quot;safe haven&quot; assets—investments expected to hold or increase value when everything else falls.
+                                You didn&apos;t work 30 years on the factory floor, driving trucks, or pulling double shifts as a nurse just to watch Wall Street gamble away your retirement in another 2008-style crash.
                             </p>
                             <p>
-                                The term &quot;safe haven&quot; refers to an investment that is expected to <strong>retain or gain value during periods of market turbulence</strong>. These assets are negatively correlated with the broader market—when stocks plummet, safe havens typically rise.
+                                <strong>Safe haven assets</strong> are investments that hold or increase value when everything else is falling apart. While stocks can drop 40% in months, these assets move in the opposite direction—or at least stay put. When panic sets in on Wall Street, smart money moves to safe havens.
                             </p>
                             <p>
-                                Understanding safe havens isn&apos;t just academic—it&apos;s essential for anyone who wants to protect retirement savings from the inevitable market downturns. Let&apos;s explore the six most reliable safe haven investments.
+                                If you&apos;ve saved $500K, $700K, or more through decades of discipline, protecting that nest egg isn&apos;t optional—it&apos;s essential. Your knees might not let you work another five years to &quot;recover&quot; from the next crash. Here are six safe haven investments that can help you sleep at night.
                             </p>
 
                             <Callout type="info" title="Flight to Safety">

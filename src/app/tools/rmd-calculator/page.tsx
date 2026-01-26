@@ -399,8 +399,8 @@ export default function RMDCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Need Help Planning Your RMDs?"
-            subheadline="A Gold IRA specialist can help you develop a tax-efficient withdrawal strategy for your specific situation."
+            headline="RMDs Are Required. Losing Your Savings Isn't."
+            subheadline="You have to take withdrawals - but you don't have to watch your balance shrink from market crashes. A Gold IRA can help preserve what's left."
             trackSource="tools-rmd-calculator"
           />
         </Container>

@@ -123,7 +123,7 @@ export default function GoldIraBenefitsPage() {
                             7 Critical Benefits of a Gold IRA
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            Why the wealthy use physical precious metals to stay rich—while the middle class loses purchasing power every year.
+                            You&apos;ve spent 30+ years building your nest egg. Now it&apos;s time to protect it. Here&apos;s why hard-working Americans are moving part of their retirement into something that can&apos;t be printed away.
                         </p>
                     </div>
                 </Container>
@@ -144,13 +144,13 @@ export default function GoldIraBenefitsPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Most financial advisors won&apos;t tell you about <strong>Gold IRA benefits</strong>. Why? Because they can&apos;t earn commissions selling you physical metals. They make money on stocks, bonds, and mutual funds—not gold.
+                                Your financial advisor probably hasn&apos;t told you about <strong>Gold IRA benefits</strong>. They make commissions on stocks and mutual funds, not on gold bars sitting in a vault. That&apos;s their business model.
                             </p>
                             <p>
-                                But if you look at how the truly wealthy protect their assets, you&apos;ll notice a pattern: they own real, tangible assets that hold value regardless of what governments or central banks do to currencies. Gold has been money for over 5,000 years—long before paper currencies existed.
+                                But here&apos;s what factory workers, nurses, truckers, and teachers who&apos;ve built real wealth understand: you don&apos;t protect 30 years of hard work with the same paper assets that crashed in 2008. Gold has been real money for over 5,000 years. It was here before the Federal Reserve, and it&apos;ll be here long after.
                             </p>
                             <p>
-                                In this guide, we&apos;ll explore the seven most important benefits of adding a Gold IRA to your retirement strategy. Whether you&apos;re concerned about inflation, market crashes, or simply want more control over your retirement, understanding these benefits is the first step.
+                                In this guide, we&apos;ll break down seven solid reasons why hard-working Americans are adding gold to their retirement. No jargon, just straight talk about protecting what you&apos;ve built.
                             </p>
                         </section>
 
@@ -209,12 +209,12 @@ export default function GoldIraBenefitsPage() {
                                 True diversification means owning assets that behave differently from each other. Gold often has a <strong>negative correlation</strong> to stocks—meaning when stocks fall, gold tends to rise.
                             </p>
 
-                            <Callout type="info" title="2008 Financial Crisis Example">
-                                During the 2008 financial crisis, the S&P 500 fell 37%. Meanwhile, gold rose 5.5%. Investors with gold in their portfolios weathered the storm far better than those with stocks alone. This inverse relationship is the essence of true diversification.
+                            <Callout type="info" title="Remember 2008?">
+                                While stock-heavy 401(k)s dropped 37%, gold actually went up 5.5%. A lot of folks who were planning to retire in 2009 or 2010 had to keep working another 5-7 years to make up their losses. The ones with gold in their mix? They had options.
                             </Callout>
 
                             <p>
-                                Adding just 10-20% precious metals to a traditional portfolio can significantly reduce overall volatility while maintaining strong long-term returns. This is why institutional investors, pension funds, and billionaires all hold physical gold.
+                                Adding just 10-20% precious metals to your retirement mix can smooth out the wild swings. You still get growth when markets do well, but you&apos;re not devastated when they crash. That&apos;s how pension funds and the wealthy have always done it. Now you can too.
                             </p>
                         </section>
 
@@ -455,8 +455,8 @@ export default function GoldIraBenefitsPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect Your Retirement?</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find out which gold IRA company is the best fit for your goals and portfolio size.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect What You&apos;ve Built?</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">You&apos;ve worked too hard to watch another crash wipe out your retirement. Find out which company fits your situation.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>

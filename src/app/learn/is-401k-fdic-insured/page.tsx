@@ -109,7 +109,7 @@ export default function Is401kFDICInsuredPage() {
                             Is 401(k) FDIC Insured?
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            The short answer is <strong className="text-red-400">NO</strong>. But your retirement isn&apos;t unprotected. Here&apos;s what actually safeguards your savings.
+                            Short answer: <strong className="text-red-400">NO</strong>. But before you panic, there ARE protections in place. Here&apos;s what actually safeguards the retirement you&apos;ve spent 30 years building.
                         </p>
                     </div>
                 </Container>
@@ -149,10 +149,10 @@ export default function Is401kFDICInsuredPage() {
                             </div>
 
                             <p className="lead">
-                                This is one of the most common misconceptions about retirement accounts. Many Americans assume their 401(k) has the same government-backed insurance as their bank account. <strong>It does not.</strong>
+                                A lot of hard-working folks think their 401(k) has the same protection as their checking account. It doesn&apos;t. But that doesn&apos;t mean your retirement is hanging out there unprotected.
                             </p>
                             <p>
-                                But before you panic, understand this: while FDIC insurance doesn&apos;t apply, your 401(k) does have other significant protections. The key is understanding what they actually protect against - and what they don&apos;t.
+                                Your 401(k) has different protections. The real question is: what do they actually protect you from? And what&apos;s still at risk? Let&apos;s break it down in plain English.
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
@@ -355,8 +355,8 @@ export default function Is401kFDICInsuredPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want Real Asset Protection?</h3>
-                                <p className="mb-6 text-gray-200">A Gold IRA holds physical precious metals you actually own - not paper promises.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want Something You Can Actually Touch?</h3>
+                                <p className="mb-6 text-gray-200">A Gold IRA holds real gold in a vault with your name on it. Not paper, not promises, not computer numbers.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <a href={augustaLink} target="_blank" rel="noopener noreferrer">
                                         Learn About Gold IRAs <ArrowRight className="ml-2 w-4 h-4" />
@@ -593,8 +593,8 @@ export default function Is401kFDICInsuredPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Add Real Asset Protection to Your Retirement</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Diversify beyond paper assets with physical gold in a tax-advantaged IRA.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Add Real Protection to What You&apos;ve Built</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">You didn&apos;t work 30 years to watch a crash wipe it out. Physical gold doesn&apos;t care what the stock market does.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <a href={augustaLink} target="_blank" rel="noopener noreferrer">

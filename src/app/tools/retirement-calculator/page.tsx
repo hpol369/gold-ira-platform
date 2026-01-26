@@ -248,9 +248,9 @@ export default function RetirementCalculatorPage() {
               Can I Retire Calculator
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Find out if your savings will last through retirement. See exactly
-              how long your money will last and what you can do to improve your
-              outlook.
+              After 30+ years of early mornings and physical work, you've built a real nest egg.
+              This calculator shows if it's enough to stop working - especially if your body
+              can't wait until 67.
             </p>
           </div>
         </Container>
@@ -1062,8 +1062,8 @@ export default function RetirementCalculatorPage() {
                     {/* Augusta CTA */}
                     <AugustaCTA
                       variant="footer"
-                      headline="Protect Your Retirement with Gold"
-                      subheadline="Learn how a Gold IRA can help diversify your retirement savings and protect against market volatility. Get a free consultation with no obligation."
+                      headline="You've Earned Every Dollar. Let's Keep It That Way."
+                      subheadline="Your nest egg represents decades of showing up. A Gold IRA can help protect it from the next market crash - so you retire on your terms, not Wall Street's."
                       linkContext="default"
                       trackSource="retirement-calculator"
                     />

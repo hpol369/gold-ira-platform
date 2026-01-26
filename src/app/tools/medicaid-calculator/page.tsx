@@ -139,7 +139,8 @@ export default function MedicaidCalculatorPage() {
                 Medicaid Spend-Down Calculator
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                Estimate your Medicaid eligibility and learn legitimate strategies to protect assets while qualifying for long-term care benefits
+                After a lifetime of working and saving, nursing home costs can wipe out everything.
+                See what you can legally protect - and what strategies can help preserve assets for your spouse and family.
               </p>
             </motion.div>
           </div>

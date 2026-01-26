@@ -99,18 +99,16 @@ export default function RealEstateIraPage() {
                         <div className="max-w-4xl">
                             <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 mb-6">
                                 <Home className="w-4 h-4 text-emerald-400" />
-                                <span className="text-emerald-400 text-sm font-medium">Alternative Investment Strategy</span>
+                                <span className="text-emerald-400 text-sm font-medium">Invest in What You Understand</span>
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                                 Real Estate IRA Guide:{" "}
-                                <span className="text-emerald-400">Invest in Property Tax-Free</span>
+                                <span className="text-emerald-400">Buy Property With Your Retirement</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                                Use your IRA to invest in rental properties, commercial real estate, and land while
-                                enjoying <strong className="text-white">tax-deferred or tax-free growth</strong>.
-                                Learn how real estate IRAs work and if they&apos;re right for you.
+                                You&apos;ve spent decades watching real estate appreciate while your 401k rides the stock market rollercoaster. A Real Estate IRA lets you invest your retirement in rental properties, commercial buildings, or land—with the same tax advantages as your current accounts. Here&apos;s how it works.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -159,16 +157,11 @@ export default function RealEstateIraPage() {
 
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                                    A Real Estate IRA is a <strong className="text-white">self-directed IRA (SDIRA)</strong> that
-                                    allows you to invest retirement funds in real estate instead of just stocks, bonds, and mutual funds.
-                                    With a real estate IRA, your property investments grow tax-deferred (Traditional) or completely
-                                    tax-free (Roth).
+                                    Here&apos;s the simple version: A Real Estate IRA is a retirement account where you can buy actual property instead of stocks. Same tax benefits as your 401k—but instead of owning shares in some company, your IRA owns a rental house, a commercial building, or a piece of land.
                                 </p>
 
                                 <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                                    Unlike regular IRAs held at Fidelity or Vanguard, a self-directed IRA requires a specialized
-                                    custodian who allows alternative investments like real estate. The IRA actually owns the property—not
-                                    you personally—and all income and expenses flow through the IRA.
+                                    If you&apos;ve spent 30 years understanding real estate in your area—watching what neighborhoods appreciate, knowing what makes a good rental—this lets you put that knowledge to work. The IRA legally owns the property, and all the rent goes back into your retirement account tax-deferred. You need a specialized custodian (not Fidelity or Vanguard), but the tax advantages are the same.
                                 </p>
                             </div>
 
@@ -223,10 +216,10 @@ export default function RealEstateIraPage() {
                 <section className="py-16 bg-slate-900">
                     <Container>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-                            What Real Estate Can You Buy with an IRA?
+                            What Can You Actually Buy?
                         </h2>
                         <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-                            Self-directed IRAs offer flexibility to invest in various types of real estate.
+                            If it&apos;s real estate, you can probably buy it with your IRA. Here&apos;s what most people invest in:
                         </p>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -545,11 +538,10 @@ export default function RealEstateIraPage() {
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                                Ready to Invest in Real Estate with Your IRA?
+                                Know Real Estate Better Than Stocks?
                             </h2>
                             <p className="text-xl text-slate-300 mb-8">
-                                Open a self-directed IRA and start building wealth through real estate
-                                with tax-advantaged growth.
+                                If you&apos;ve spent your career understanding what makes property valuable, you don&apos;t have to hand your retirement over to Wall Street. A Real Estate IRA lets you invest in what you actually know.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

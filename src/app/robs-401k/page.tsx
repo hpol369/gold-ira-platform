@@ -115,14 +115,12 @@ export default function Robs401kPage() {
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                                ROBS 401k Guide: Use Your{" "}
-                                <span className="text-orange-400">Retirement to Start a Business</span>
+                                ROBS 401k Guide:{" "}
+                                <span className="text-orange-400">Fund Your Business With Your Retirement</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                                Rollover for Business Startups (ROBS) lets you use your 401k, IRA, or other retirement funds
-                                to finance a business <strong className="text-white">without early withdrawal penalties or taxes</strong>.
-                                Learn if it&apos;s right for you.
+                                You&apos;ve spent 25 years building a retirement account. Now you want to start or buy a business. ROBS (Rollover for Business Startups) lets you use your 401k to fund it—<strong className="text-white">without paying the early withdrawal penalty or taxes</strong>. It&apos;s 100% legal, but it&apos;s not for everyone. Here&apos;s what you need to know.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -166,20 +164,16 @@ export default function Robs401kPage() {
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                                What is ROBS (Rollover for Business Startups)?
+                                What is ROBS?
                             </h2>
 
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                                    ROBS is an IRS-approved method that allows you to use your existing retirement funds—such as a 401(k),
-                                    IRA, 403(b), or other qualified plans—to start or purchase a business without triggering early
-                                    withdrawal penalties or income taxes.
+                                    ROBS stands for Rollover for Business Startups. In plain English: it&apos;s a legal way to use your 401k, IRA, or 403b to fund a business without paying the 10% early withdrawal penalty or immediate taxes. The IRS approved this strategy—it&apos;s been used since the 1970s.
                                 </p>
 
                                 <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                                    Unlike taking a loan against your 401(k), ROBS lets you <strong className="text-white">invest your retirement funds
-                                    directly in your own business</strong>. You become the employer of your own retirement plan, and your
-                                    business becomes the investment.
+                                    Instead of taking a loan (and paying interest to a bank), your retirement money gets invested directly in your own company. Think of it this way: your 401k used to own stocks. Now it owns stock in YOUR business. If the business succeeds, your retirement grows. If it fails... well, that&apos;s the risk.
                                 </p>
                             </div>
 
@@ -562,11 +556,10 @@ export default function Robs401kPage() {
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                                Ready to Fund Your Business Dream?
+                                Ready to Be Your Own Boss?
                             </h2>
                             <p className="text-xl text-slate-300 mb-8">
-                                Get a free consultation with a ROBS specialist to see if using your retirement
-                                to start a business is right for you.
+                                You&apos;ve worked for someone else long enough. If you&apos;ve got a solid business plan and understand the risks, ROBS can help you fund your dream without bank loans or credit card debt. Talk to a specialist—it&apos;s free.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

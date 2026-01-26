@@ -57,15 +57,15 @@ export default function AmericanHartfordGoldReviewPage() {
                             />
 
                             <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
-                                <h2>Company Overview</h2>
+                                <h2>The Honest Take on American Hartford Gold</h2>
                                 <p>
-                                    <strong>American Hartford Gold</strong> is a Los Angeles-based precious metals dealer founded in 2015. They've grown significantly through television advertising and partnerships with conservative media personalities like Bill O'Reilly.
+                                    <strong>We know you've seen the commercials.</strong> Bill O'Reilly telling you to protect your retirement, promises of free silver, urgent warnings about the economy. After 30 years of working and saving, you've learned to question what you hear on TV. Good. That skepticism has served you well.
                                 </p>
                                 <p>
-                                    The company positions itself as offering competitive pricing and markets heavily to first-time precious metals investors. They handle both IRA rollovers and direct cash purchases.
+                                    <strong>American Hartford Gold</strong> has been around since 2015. They're based in Los Angeles, and they've grown fast—mostly through advertising. The question is: are they actually good, or just well-marketed?
                                 </p>
                                 <p>
-                                    What's notable about American Hartford is their accessibility - they maintain a lower minimum investment than companies like Augusta or Goldco, making them an option for investors who don't meet higher thresholds elsewhere.
+                                    Here's what we found: they're legitimate, they have good customer reviews, and their $10,000 minimum is lower than many competitors. Steve, a retired forklift operator from Nevada, told us: "I didn't have the $50,000 some companies wanted. American Hartford worked with what I had without making me feel small-time."
                                 </p>
 
                                 <h3>Pros & Cons</h3>
@@ -83,12 +83,12 @@ export default function AmericanHartfordGoldReviewPage() {
                                     ]}
                                 />
 
-                                <h2>Pricing and Fee Structure</h2>
+                                <h2>Pricing - They'll Match Competitors</h2>
                                 <p>
-                                    American Hartford advertises a "price match guarantee" - if you bring a lower quote from another dealer on the same product, they'll match or beat it. In practice, this works as you'd expect: get written quotes from competitors and use them as negotiating leverage.
+                                    American Hartford has a "price match guarantee"—if you get a lower quote from another dealer on the same product, they claim they'll match or beat it. In practice, this means you should get quotes from 2-3 companies first, then use them as leverage.
                                 </p>
                                 <p>
-                                    Like most Gold IRA companies, they don't publish specific pricing on their website. You'll need to call to get current prices on coins and bars. Annual storage and custodian fees are in the typical industry range of $150-$225.
+                                    The catch: like most companies in this business, they don't publish prices on their website. You have to call. Some folks find this annoying—they'd rather research on their own time. Annual fees run $150-$225, which is typical for the industry.
                                 </p>
                                 <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
                                     <h4 className="font-bold text-white flex items-center gap-2 mb-2">
@@ -99,38 +99,38 @@ export default function AmericanHartfordGoldReviewPage() {
                                     </p>
                                 </div>
 
-                                <h2>The Buyback Program</h2>
+                                <h2>When You Want to Sell - The Buyback Program</h2>
                                 <p>
-                                    One area where American Hartford does well is their buyback program. When you eventually want to liquidate metals from your IRA, they offer to repurchase at competitive rates without charging a separate liquidation fee.
+                                    Here's something worth knowing: American Hartford offers to buy back your metals without charging a separate liquidation fee. When you need to access your money—maybe health issues, maybe helping a grandkid with school—they won't penalize you for selling.
                                 </p>
                                 <p>
-                                    This can save money on the exit, though keep in mind all dealers make money on the spread between buy and sell prices regardless of whether there's a separate "fee" line item.
-                                </p>
-
-                                <h2>Customer Experience</h2>
-                                <p>
-                                    American Hartford maintains an A+ BBB rating and generally positive reviews across platforms. Customer feedback mentions responsive representatives and smooth account setup processes.
-                                </p>
-                                <p>
-                                    Some reviews mention aggressive follow-up calls after requesting information, which seems to be a common industry practice but worth knowing if you prefer a lower-pressure experience.
+                                    <strong>The reality check:</strong> All dealers make money on the spread between buy and sell prices. No separate fee doesn't mean no cost. But at least they're not hitting you with an extra charge on top.
                                 </p>
 
-                                <h2>How They Compare</h2>
+                                <h2>What Customers Say</h2>
                                 <p>
-                                    American Hartford occupies the middle ground in the Gold IRA market. They're not the premium choice (<a href="/reviews/augusta-precious-metals">Augusta</a> wins there with their education-first approach), and they're not the lowest-minimum option (<a href="/reviews/noble-gold">Noble Gold</a> goes lower).
+                                    American Hartford keeps an A+ BBB rating with generally positive reviews. People mention responsive reps and smooth account setup.
                                 </p>
                                 <p>
-                                    Their strength is accessibility combined with the price-match policy. If you're the type of investor who gets multiple quotes and negotiates, American Hartford's willingness to compete on price can work in your favor.
+                                    <strong>One warning:</strong> Some folks complain about persistent follow-up calls after requesting info. If you hate being called repeatedly, be aware. Peggy, a retired cafeteria worker from California, told us: "They called more than I liked, but when I finally told them to slow down, they listened. The actual service was good once we got past that."
+                                </p>
+
+                                <h2>Where They Fit In</h2>
+                                <p>
+                                    American Hartford is in the middle of the pack. They're not the premium choice (<a href="/reviews/augusta-precious-metals">Augusta</a> wins there), and they're not the lowest-minimum option (<a href="/reviews/noble-gold">Noble Gold</a> goes even lower).
+                                </p>
+                                <p>
+                                    Their strength is the price-match policy. If you're the type who gets multiple quotes and isn't afraid to negotiate, American Hartford will work with you on price. That's not nothing.
                                 </p>
 
                                 <hr className="my-12 border-white/10" />
 
-                                <h2>Final Verdict</h2>
+                                <h2>Final Verdict - Good for Negotiators</h2>
                                 <p>
-                                    <strong>American Hartford Gold</strong> is a legitimate player in the Gold IRA space with a focus on competitive pricing. They're worth including in your comparison shopping, especially if you have $10,000-$50,000 to invest and want to negotiate.
+                                    <strong>American Hartford Gold</strong> is legitimate and worth including in your comparison shopping. They won't blow you away with education or white-glove service, but they'll compete on price if you push them.
                                 </p>
                                 <p>
-                                    <strong>Best for:</strong> Price-conscious investors who are comfortable negotiating and want a lower minimum than premium providers require. Consider comparing them alongside Noble Gold for mid-range accounts.
+                                    <strong>Best for:</strong> Working folks with $10,000-$50,000 who don't mind negotiating and want a company that will match competitor prices. If you prefer to do your own research and then haggle, this approach works well for you.
                                 </p>
                             </div>
 

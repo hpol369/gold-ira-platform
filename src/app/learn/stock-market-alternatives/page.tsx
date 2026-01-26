@@ -129,13 +129,13 @@ export default function StockMarketAlternativesPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Most Americans have their retirement savings concentrated in one asset class: stocks. While stocks have historically provided strong long-term returns, this concentration creates significant risk—especially for those approaching retirement.
+                                Your 401(k) is probably 80-90% stocks. That&apos;s what they told you to do—&quot;stay aggressive, you&apos;ve got time.&quot; But now you&apos;re 55, 58, 60 years old with $600K saved, and you&apos;re starting to wonder: <strong>what happens if 2008 repeats itself right before I retire?</strong>
                             </p>
                             <p>
-                                The 2008 financial crisis demonstrated this vividly: many near-retirees saw their portfolios drop 30-50% just as they needed to start withdrawals. Some had to delay retirement by years. Others never recovered.
+                                You&apos;ve seen it before. In 2008, factory supervisors, nurses, and teachers who&apos;d saved their whole careers watched their $700K become $300K in months. The market eventually recovered—but their bodies didn&apos;t wait. Some went back to work in their late 60s. Others downsized everything they&apos;d worked for.
                             </p>
                             <p>
-                                <strong>Diversification beyond stocks isn&apos;t about abandoning the market</strong>—it&apos;s about building a more resilient portfolio that can weather different economic conditions while still growing wealth.
+                                <strong>Diversifying beyond stocks isn&apos;t about chasing returns</strong>—it&apos;s about making sure a Wall Street meltdown doesn&apos;t wipe out decades of early mornings, overtime, and sacrifice. Here are the alternatives that can actually protect what you&apos;ve built.
                             </p>
 
                             <Callout type="info" title="The Correlation Problem">

@@ -112,7 +112,7 @@ export default function CheckbookIraRulesPage() {
                             Checkbook IRA Rules Explained
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            The &quot;checkbook IRA&quot; sounds appealing—direct control over your retirement investments. But for precious metals, it&apos;s a minefield of IRS rules and potential penalties.
+                            After decades of hard work building your savings, you want control over your money—that&apos;s understandable. But for precious metals, the &quot;checkbook IRA&quot; is a minefield of IRS rules that can cost you your entire retirement if you make one wrong move.
                         </p>
                     </div>
                 </Container>
@@ -131,11 +131,11 @@ export default function CheckbookIraRulesPage() {
                         <KeyTakeaways items={takeaways} />
 
                         <p className="lead">
-                            Every few months someone asks me about &quot;checkbook IRAs&quot; for their gold investments. Usually they&apos;ve seen an ad promising &quot;direct control&quot; over their retirement money. No custodian telling them what to do. No waiting for approvals. Just them and their checkbook.
+                            Let me be straight with you: Every few months someone asks about &quot;checkbook IRAs&quot; for their gold investments. Usually it&apos;s someone like Dave—a factory supervisor with 30 years of hard work behind him and $600k in savings—who saw an ad promising &quot;direct control&quot; over his retirement money. No custodian. No waiting. Just him and his checkbook.
                         </p>
 
                         <p>
-                            It sounds great. Here&apos;s the problem: for precious metals, checkbook IRAs are a trap. Let me explain why.
+                            It sounds great. Here&apos;s the problem: for precious metals, checkbook IRAs are a trap that can cost you everything you&apos;ve built. Let me explain why.
                         </p>
 
                         {/* What Is Checkbook IRA */}
@@ -147,13 +147,13 @@ export default function CheckbookIraRulesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What Is a Checkbook IRA?</h2>
                             </div>
                             <p>
-                                A &quot;checkbook IRA&quot; (also called an LLC IRA or self-directed IRA LLC) is a structure where your self-directed IRA owns a limited liability company (LLC). You&apos;re the manager of that LLC, which means you can write checks and make investment decisions directly—without going through a custodian for every transaction.
+                                A &quot;checkbook IRA&quot; is a structure where your self-directed IRA owns a limited liability company (LLC). You manage that LLC, which means you can write checks and make investment decisions without waiting for custodian approval.
                             </p>
                             <p>
-                                For some investments—like buying rental property or making private loans—this can make sense. It streamlines things.
+                                For some investments—like buying rental property or making private loans—this setup can make sense. It speeds things up when you need to close deals fast.
                             </p>
                             <p>
-                                For precious metals? It&apos;s usually a recipe for disaster.
+                                But for gold and precious metals? It&apos;s usually a recipe for disaster that puts your entire life savings at risk.
                             </p>
                         </section>
 
@@ -278,23 +278,23 @@ export default function CheckbookIraRulesPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">A Better Approach</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">A Better Approach for Protecting Your Savings</h2>
                             </div>
                             <p>
-                                For precious metals, the traditional custodian arrangement just works better:
+                                You&apos;ve spent decades building your retirement. The goal now is to protect what you&apos;ve built, not take unnecessary risks with complex structures. For precious metals, the traditional custodian arrangement just works better:
                             </p>
                             <ul>
-                                <li><strong>IRS-approved:</strong> The structure is explicitly allowed under the tax code</li>
+                                <li><strong>IRS-approved:</strong> The structure is explicitly allowed under the tax code—no gray areas</li>
                                 <li><strong>Proper storage:</strong> Your metal goes to an approved depository automatically</li>
-                                <li><strong>Compliance guardrails:</strong> The custodian prevents prohibited transactions</li>
-                                <li><strong>Insurance:</strong> Depositories carry massive insurance policies</li>
+                                <li><strong>Compliance guardrails:</strong> The custodian prevents prohibited transactions before they happen</li>
+                                <li><strong>Insurance:</strong> Depositories carry massive insurance policies on your gold</li>
                                 <li><strong>Simpler:</strong> No LLC to maintain, no state filings, no complexity</li>
                             </ul>
                             <p>
-                                Yes, you give up some &quot;control.&quot; But that control mostly means the ability to make mistakes the IRS will punish you for. The trade-off isn&apos;t worth it.
+                                Yes, you give up some &quot;control.&quot; But that control mostly means the ability to make mistakes the IRS will punish you for. After 30 years of hard work, that trade-off isn&apos;t worth it.
                             </p>
                             <p>
-                                For gold investments, stick with a reputable Gold IRA company that uses standard custodian arrangements. See our <Link href="/reviews">company reviews</Link> for recommendations.
+                                For gold investments, stick with a reputable Gold IRA company that uses standard custodian arrangements. See our <Link href="/reviews">company reviews</Link> for recommendations from workers who&apos;ve already made this move.
                             </p>
                         </section>
 

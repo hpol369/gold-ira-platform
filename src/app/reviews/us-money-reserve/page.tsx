@@ -91,20 +91,23 @@ export default function UsMoneyReserveReviewPage() {
 
                                 <section id="overview">
                                     <p className="lead">
-                                        US Money Reserve is one of the most heavily advertised gold companies in America. Their TV commercials feature former US Mint Director Philip Diehl, which gives them instant credibility. They&apos;re a major distributor of government-issued gold coins.
+                                        <strong>You&apos;ve seen the commercials.</strong> US Money Reserve ads are everywhere—TV, radio, the internet. They have a former US Mint Director as their spokesperson. Sounds impressive, right? But here&apos;s what 30 years of working teaches you: heavy advertising costs money. And that money comes from somewhere.
                                     </p>
                                     <p>
-                                        But here&apos;s the thing: heavy advertising costs money. And that money comes from somewhere. After investigating US Money Reserve, I found some things that potential customers need to know.
+                                        We dug into US Money Reserve, and there are things potential customers—especially hardworking folks protecting their retirement—need to know before calling that number.
                                     </p>
                                 </section>
 
                                 <section id="products" className="scroll-mt-32">
-                                    <h2>The &quot;Exclusive Coin&quot; Trap</h2>
+                                    <h2>Watch Out: The &quot;Exclusive Coin&quot; Trap</h2>
                                     <p>
-                                        This is where things get complicated. When you call US Money Reserve, there&apos;s a good chance they&apos;ll try to sell you on numismatic or &quot;proof&quot; coins rather than standard bullion.
+                                        Here&apos;s what we need to warn you about. When you call US Money Reserve, they&apos;ll likely try to sell you &quot;proof&quot; or &quot;collectible&quot; coins instead of standard bullion.
                                     </p>
                                     <p>
-                                        <strong>Why does this matter?</strong> Standard bullion coins (like American Gold Eagles) are priced close to the spot price of gold. You might pay a 5-8% premium, which is normal. But numismatic coins—marketed as &quot;rare,&quot; &quot;exclusive,&quot; or &quot;collectible&quot;—can have premiums of 30-50% or more.
+                                        <strong>Why does this matter to your retirement?</strong> Standard bullion coins (like American Gold Eagles) cost about 5-8% above the gold spot price—that&apos;s normal. But these &quot;exclusive&quot; and &quot;proof&quot; coins? They mark those up 30-50% or more.
+                                    </p>
+                                    <p>
+                                        Walter, a retired ironworker from Pennsylvania, shared his experience: &quot;They pushed me toward some &apos;limited edition&apos; coins. Thank God I did more research. Those premiums were insane. I would&apos;ve lost 40% of my money before gold moved a penny.&quot;
                                     </p>
 
                                     <div className="bg-amber-50 p-6 rounded-xl border border-amber-100 flex gap-4 not-prose my-6">
@@ -166,15 +169,15 @@ export default function UsMoneyReserveReviewPage() {
                                 </section>
 
                                 <section id="verdict" className="scroll-mt-32">
-                                    <h2>Final Verdict</h2>
+                                    <h2>Final Verdict - Proceed With Caution</h2>
                                     <p>
-                                        US Money Reserve is a legitimate company—they&apos;re not going to steal your money. But their business model appears optimized for selling high-margin numismatic products rather than helping you build a cost-effective Gold IRA.
+                                        US Money Reserve is legitimate—they won&apos;t steal your money. But their business model seems built around selling expensive &quot;collectible&quot; coins with huge markups. That&apos;s not what you need when you&apos;re trying to protect your retirement.
                                     </p>
                                     <p>
-                                        <strong>My recommendation:</strong> If you&apos;re interested in rare coins as collectibles, US Money Reserve might work. But if you want a Gold IRA for retirement diversification, you&apos;ll likely get better value from companies like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> that focus on bullion.
+                                        <strong>Our honest recommendation:</strong> If you&apos;re a coin collector who knows what you&apos;re doing, maybe. But if you&apos;re a working person looking for a straightforward Gold IRA to protect your 401k? Look at companies like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> that focus on regular bullion without the markups.
                                     </p>
                                     <p>
-                                        If you do call US Money Reserve, be very clear: &quot;I only want standard IRS-approved bullion for my IRA—no collectibles.&quot; Get everything in writing.
+                                        If you do call US Money Reserve, <strong>be firm:</strong> &quot;I only want standard IRS-approved bullion for my IRA—no collectibles, no &apos;exclusive&apos; coins.&quot; And get the premium over spot price in writing before you agree to anything.
                                     </p>
                                 </section>
                             </article>

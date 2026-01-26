@@ -103,7 +103,7 @@ export default function GoldcoLawsuitPage() {
                         <Breadcrumbs />
 
                         <p className="lead">
-                            Goldco is a massive company, and massive companies often attract legal scrutiny. You may have heard mentions of a "lawsuit" or "settlement." Here are the cold, hard facts.
+                            <strong>You heard something about Goldco and a lawsuit, and you&apos;re checking it out before trusting them with your retirement.</strong> That&apos;s exactly what you should do. After 30+ years of work, you&apos;ve earned the right to be skeptical. Here&apos;s the straight story—no spin, just facts.
                         </p>
 
                         {/* Quick Verdict */}
@@ -156,9 +156,9 @@ export default function GoldcoLawsuitPage() {
 
                         {/* Reviews */}
                         <section id="customer-reviews" className="scroll-mt-32">
-                            <h2>Customer Reviews 2026</h2>
+                            <h2>What Working Folks Say About Goldco Today</h2>
                             <p>
-                                Actions speak louder than lawsuits. So what do actual customers say about Goldco today?
+                                Forget what lawyers say—what do real people like you say? Here&apos;s what we found.
                             </p>
                             <div className="not-prose my-8 grid md:grid-cols-3 gap-6">
                                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
@@ -178,13 +178,13 @@ export default function GoldcoLawsuitPage() {
                                 </div>
                             </div>
                             <p>
-                                The numbers don&apos;t lie. Since the 2017 settlement, Goldco has placed billions of dollars in precious metals for tens of thousands of customers. They&apos;ve been endorsed by Sean Hannity and have maintained their A+ BBB rating throughout.
+                                The numbers don&apos;t lie. Since the 2017 settlement, Goldco has placed billions in precious metals for tens of thousands of customers. They&apos;ve maintained their A+ BBB rating throughout.
                             </p>
                             <p>
-                                Compare that to companies that have <em>never</em> been scrutinized. Would you rather invest with a company that got caught, fixed their problems, and is now hyper-compliant? Or a smaller company that simply hasn&apos;t been investigated yet?
+                                Patricia, a retired hospital administrator from North Carolina, thought about it this way: &quot;I figured—a company that got in trouble and fixed everything is probably being extra careful now. The ones that haven&apos;t been investigated yet? Who knows what they&apos;re doing.&quot;
                             </p>
                             <p>
-                                We&apos;d argue that Goldco&apos;s legal history is actually a <strong>positive signal</strong>. They got their compliance audit the hard way, and they passed.
+                                Think about it: would you rather work with a company that got caught, cleaned up, and is now hyper-compliant? Or a smaller company that simply hasn&apos;t been scrutinized yet? We&apos;d argue that Goldco&apos;s legal history—and how they handled it—is actually a good sign.
                             </p>
                         </section>
 

@@ -53,12 +53,11 @@ export default function RealEstateIraRulesPage() {
 
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                             Real Estate IRA Rules:{" "}
-                            <span className="text-emerald-400">IRS Requirements & Compliance</span>
+                            <span className="text-emerald-400">What You Can and Can't Do</span>
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                            Investing in real estate through your IRA is legal, but you must follow strict IRS rules.
-                            Breaking these rules can disqualify your entire IRA. Here&apos;s what you need to know.
+                            You've worked 30+ years to build your retirement savings. Using an IRA to buy rental property is completely legal—but the IRS has strict rules. Break them, and you could owe taxes and penalties on your entire IRA. Here's the straight talk on what's allowed and what's not.
                         </p>
                     </div>
                 </Container>
@@ -72,7 +71,7 @@ export default function RealEstateIraRulesPage() {
                             Prohibited Transactions
                         </h2>
                         <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-                            These actions are strictly forbidden and can result in IRA disqualification, taxes, and penalties.
+                            Let me be direct: these are the rules that trip people up. Break any of these, and your entire IRA could be treated as a distribution—meaning you owe taxes on the full amount, plus penalties if you're under 59 1/2.
                         </p>
 
                         <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8">
@@ -324,11 +323,10 @@ export default function RealEstateIraRulesPage() {
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-2xl font-bold text-white mb-6">
-                            Work with a Custodian That Knows Real Estate
+                            Don't Risk 30 Years of Savings on a Compliance Mistake
                         </h2>
                         <p className="text-lg text-slate-300 mb-8">
-                            A good self-directed IRA custodian helps you stay compliant with IRS rules.
-                            Don&apos;t risk your retirement on mistakes.
+                            You've worked too hard to lose your retirement over a technicality. A good self-directed IRA custodian knows these rules inside and out—and helps you stay on the right side of the IRS.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

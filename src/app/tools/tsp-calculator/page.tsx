@@ -490,8 +490,8 @@ export default function TSPCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Diversify Beyond TSP with Gold"
-            subheadline="Federal employees can roll TSP funds into a Gold IRA after separation or at age 59 1/2. Augusta Precious Metals specializes in helping federal retirees protect their savings from market volatility."
+            headline="25+ Years of Federal Service. Protect It."
+            subheadline="Your TSP can lose 40% in a crash. Federal employees at 59.5 can roll into a Gold IRA - protecting decades of contributions from market chaos. No job change required."
             trackSource="tools-tsp-calculator"
           />
         </Container>

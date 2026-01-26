@@ -387,8 +387,8 @@ export default function InheritanceCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Protect Your Inheritance for Generations"
-            subheadline="A Gold IRA preserves wealth across generations with physical assets that hold value regardless of market conditions. Explore how to diversify your inherited wealth."
+            headline="Your Parents Worked Hard for This. Honor Their Legacy."
+            subheadline="An inheritance represents a lifetime of someone's work. Protect it from market crashes and inflation with physical gold - a safe haven that holds value for generations."
             trackSource="tools-inheritance-calculator"
           />
         </Container>

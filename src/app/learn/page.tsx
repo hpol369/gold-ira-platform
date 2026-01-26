@@ -86,12 +86,11 @@ export default function LearnPage() {
               LEARNING CENTER
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              401k & Retirement{" "}
-              <span className="text-amber-400">Knowledge Base</span>
+              Retirement Questions,{" "}
+              <span className="text-amber-400">Straight Answers</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8">
-              Expert answers to your retirement questions. From RMD rules to market
-              crash protection—everything you need to know to secure your future.
+              You&apos;ve got questions about your 401k, RMDs, and protecting what you&apos;ve built. Here are the answers—in plain English, not Wall Street jargon. No sales pitch, just the information you need.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="gold" size="lg" asChild>
@@ -326,11 +325,10 @@ export default function LearnPage() {
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
-              Ready to Protect Your Retirement?
+              Done Reading? Here&apos;s Your Next Step.
             </h2>
             <p className="text-slate-400 mb-8">
-              Knowledge is power, but action is what protects your wealth. Take our
-              60-second quiz to find the best Gold IRA company for your situation.
+              You&apos;ve got the knowledge. Now find out which option actually fits your situation. Our 60-second quiz matches you with the right approach based on what you&apos;ve saved, when you&apos;re retiring, and what you&apos;re worried about.
             </p>
             <Button variant="gold" size="xl" asChild>
               <Link href="/quiz">

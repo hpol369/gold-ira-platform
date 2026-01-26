@@ -78,12 +78,11 @@ export default function Robs401kRulesPage() {
 
                             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                 ROBS 401k Rules:{" "}
-                                <span className="text-orange-400">IRS Requirements & Compliance</span>
+                                <span className="text-orange-400">What You Need to Know</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                                ROBS (Rollover for Business Startups) is 100% legal, but it must be set up and maintained
-                                correctly to avoid IRS penalties. This guide covers all the rules you need to know.
+                                You've spent 30 years building your 401k. Now you're thinking about using it to start a business—maybe a franchise, maybe something you've always dreamed of doing. ROBS makes that possible without paying early withdrawal penalties. But the IRS has strict rules. Here's the straight talk on what you can and can't do.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -111,10 +110,10 @@ export default function Robs401kRulesPage() {
                 <section className="py-16 bg-slate-800/50">
                     <Container>
                         <h2 className="text-3xl font-bold text-white mb-4 text-center">
-                            ROBS 401k Key Requirements
+                            The Non-Negotiable Requirements
                         </h2>
                         <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-                            To use ROBS legally, you must meet these fundamental requirements set by the IRS and ERISA.
+                            These aren't suggestions—they're requirements. Miss any of these, and you could owe taxes and penalties on your entire 401k. The IRS doesn't care that you didn't know.
                         </p>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -180,11 +179,10 @@ export default function Robs401kRulesPage() {
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl font-bold text-white mb-4 text-center">
-                                ROBS Prohibited Transactions
+                                What Will Get You in Trouble
                             </h2>
                             <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
-                                These transactions are forbidden under ERISA and can result in plan disqualification,
-                                taxes, and penalties. Avoid them at all costs.
+                                These are the things that get people audited and penalized. Some seem like common sense; others trip up people who don't know the rules. Do any of these, and you could lose the tax benefits on your entire 401k.
                             </p>
 
                             <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8">
@@ -398,11 +396,10 @@ export default function Robs401kRulesPage() {
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-3xl font-bold text-white mb-6">
-                                Why Professional ROBS Setup Matters
+                                Don't Risk Your Life Savings on DIY
                             </h2>
                             <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                                Given the complexity of ROBS rules and the severe penalties for non-compliance,
-                                working with an experienced ROBS provider is essential. They handle:
+                                You've spent 30 years building your 401k. The wrong setup—one missed filing, one prohibited transaction—and you could owe taxes and penalties on the entire amount. This isn't where you cut corners. A good ROBS provider handles:
                             </p>
 
                             <div className="grid sm:grid-cols-2 gap-4 mb-10 text-left">

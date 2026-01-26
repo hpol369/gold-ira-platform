@@ -73,12 +73,12 @@ export default function ScenariosPage() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              The Threats to Your
-              <span className="text-red-400"> Retirement</span>
+              You Didn&apos;t Work 30 Years
+              <span className="text-red-400"> to Lose It Now</span>
             </h1>
 
             <p className="text-xl text-slate-300 mb-8">
-              Economic crises aren&apos;t theoretical - they&apos;re historical certainties. The only question is whether you&apos;ll be prepared. Understand the risks. Build your defense.
+              You remember 2008. You watched your 401(k) drop 40% and wondered if you&apos;d ever recover. That fear isn&apos;t paranoia - it&apos;s wisdom earned the hard way. Here&apos;s the straight talk on what could happen next, and how working people like you are protecting what they&apos;ve built.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
@@ -121,10 +121,10 @@ export default function ScenariosPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-white mb-4">
-              Economic Threat Scenarios
+              Real Threats to Your Life&apos;s Work
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Click any scenario to understand the threat, warning signs, and step-by-step protection strategies.
+              These aren&apos;t scare tactics - they&apos;re the same risks your union rep, your financial advisor, and the folks at the plant are talking about. Click any scenario for the facts, the warning signs, and what you can actually do about it.
             </p>
           </div>
 
@@ -200,10 +200,10 @@ export default function ScenariosPage() {
           <div className="max-w-3xl mx-auto text-center">
             <Shield className="h-12 w-12 text-amber-400 mx-auto mb-6" />
             <h2 className="text-3xl font-serif font-bold text-white mb-4">
-              The Best Defense Is Preparation
+              You&apos;ve Earned the Right to Protect It
             </h2>
             <p className="text-slate-300 mb-8">
-              You can&apos;t predict exactly when these scenarios will unfold. But you can prepare now. A Gold IRA moves your retirement savings from paper promises to physical protection - legally, tax-advantaged, and under your control.
+              You didn&apos;t save for 30 years by being reckless. You saved by being smart, by saying no to things you wanted, by showing up every day. That $400,000, $500,000, $600,000 in your 401(k)? That&apos;s not a number on a screen - it&apos;s your life&apos;s work. A Gold IRA lets you move some of that into physical gold - legally, tax-free, and finally under your control.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="gold" size="xl" asChild>
@@ -238,8 +238,8 @@ export default function ScenariosPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Don't Wait Until It's Too Late"
-            subheadline="Protect your retirement before the next crisis hits. Augusta Precious Metals has helped thousands of Americans secure their savings with physical gold."
+            headline="47,000 Working Americans Have Already Made This Move"
+            subheadline="Teachers, nurses, steelworkers, truckers - people who spent their careers building something real. They moved part of their retirement into gold before the next 2008 hits. Augusta Precious Metals specializes in helping folks like you do it right."
             trackSource="scenarios-hub"
           />
         </Container>

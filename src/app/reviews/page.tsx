@@ -106,7 +106,7 @@ export default function ReviewsPage() {
               Gold IRA Company Reviews
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-8">
-              We&apos;ve analyzed fees, customer service, BBB ratings, and real customer complaints for every major Gold IRA company. No fluff—just the facts you need to make a smart decision.
+              You&apos;ve spent decades building your retirement. Picking the wrong Gold IRA company could cost you thousands in hidden fees—or worse. We dug through BBB complaints, fee structures, and real customer experiences. Here&apos;s what we found.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10">
@@ -287,37 +287,37 @@ export default function ReviewsPage() {
 
           {/* How We Review */}
           <div className="max-w-4xl mx-auto mt-16 p-8 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
-            <h2 className="text-2xl font-bold text-white mb-4">How We Review Gold IRA Companies</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">How We Actually Review These Companies</h2>
             <p className="text-slate-400 mb-6">
-              Every review is based on real research—not paid placements. Here&apos;s what we look at:
+              We don&apos;t just rank whoever pays us the most. We look at what actually matters when you&apos;re trusting someone with your retirement savings:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5" />
                 <div>
-                  <strong className="text-white">BBB & Review Sites</strong>
-                  <p className="text-sm text-slate-500">Official ratings and real customer complaints</p>
+                  <strong className="text-white">BBB Complaints</strong>
+                  <p className="text-sm text-slate-500">What real customers actually complained about</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5" />
                 <div>
-                  <strong className="text-white">Fee Transparency</strong>
-                  <p className="text-sm text-slate-500">Setup, annual, and hidden costs analyzed</p>
+                  <strong className="text-white">Hidden Fees</strong>
+                  <p className="text-sm text-slate-500">The charges they don&apos;t advertise up front</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5" />
                 <div>
-                  <strong className="text-white">Investment Minimums</strong>
-                  <p className="text-sm text-slate-500">Who they&apos;re really designed for</p>
+                  <strong className="text-white">Minimum Investment</strong>
+                  <p className="text-sm text-slate-500">Does it match what real people have to invest?</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5" />
                 <div>
-                  <strong className="text-white">Customer Experience</strong>
-                  <p className="text-sm text-slate-500">Sales tactics, support, and education quality</p>
+                  <strong className="text-white">Sales Pressure</strong>
+                  <p className="text-sm text-slate-500">Do they educate or do they push?</p>
                 </div>
               </div>
             </div>

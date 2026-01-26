@@ -123,8 +123,11 @@ export default function GoldIraVs401kPage() {
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Gold IRA vs. 401(k)
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                        Should you stick with paper assets or diversify into real money? We compare the safety, risks, tax benefits, and long-term wealth-building potential of both retirement strategies.
+                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed mb-4">
+                        You&apos;ve built your 401k over 30 years of showing up every day. Now the question is: should it all stay in stocks, or does it make sense to move some to gold?
+                    </p>
+                    <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                        For someone with $500k saved&mdash;real money you earned through real work&mdash;this isn&apos;t about chasing returns. It&apos;s about making sure a market crash doesn&apos;t wipe out decades of discipline.
                     </p>
                 </Container>
             </header>
@@ -140,18 +143,18 @@ export default function GoldIraVs401kPage() {
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <p className="lead">
-                            Here&apos;s the question I get asked constantly: <em>&quot;My 401(k) is doing fine—why would I bother with gold?&quot;</em>
+                            The question I hear most often: <em>&quot;My 401(k) is doing fine&mdash;why would I mess with it?&quot;</em>
                         </p>
                         <p>
-                            Fair question. Your 401(k) probably <em>is</em> doing fine. Right now. In a bull market. The real question is: what happens when it isn&apos;t? Because here&apos;s what most people don&apos;t think about until it&apos;s too late—your 401(k) is 100% dependent on the stock market. When it crashes, your retirement crashes with it. Gold doesn&apos;t work that way.
+                            Fair point. Your 401(k) probably <em>is</em> doing fine. Right now. In a good market. But here&apos;s what folks who remember 2008 know: your 401(k) is 100% tied to the stock market. When it drops 40%, so does your retirement. Some people who planned to retire in 2009 are still working because of that crash. Gold doesn&apos;t work that way&mdash;in 2008, while stocks dropped 37%, gold actually went UP 5%.
                         </p>
 
                         {/* Quick Verdict */}
                         <section id="verdict" className="scroll-mt-32">
                             <VerdictBox
-                                winnerName="Strategic Combination (Use Both)"
-                                summary="A 401(k) is unbeatable for wealth accumulation thanks to employer matching and high contribution limits. But a Gold IRA is superior for wealth preservation and protection against crashes. The wealthy don't choose—they use both."
-                                bestFor="Investors who want to KEEP what they've earned, not just grow it."
+                                winnerName="Use Both&mdash;They Do Different Jobs"
+                                summary="Your 401(k) is great for building wealth, especially if your employer matches. But a Gold IRA protects what you've already built. For someone with $500k who can't afford to watch it drop 40% right before retirement, having both makes sense."
+                                bestFor="People within 10-15 years of retirement who've worked too hard to lose it now."
                             />
                         </section>
 
@@ -175,7 +178,7 @@ export default function GoldIraVs401kPage() {
                         <section id="what-is-401k" className="scroll-mt-32">
                             <h2>What is a 401(k)?</h2>
                             <p>
-                                You probably already know this one. It&apos;s that thing your employer offers where they take money out of your paycheck before taxes, and if you&apos;re lucky, they match some of your contributions. Named after some obscure tax code section, which tells you everything you need to know about how exciting it is.
+                                You know what a 401(k) is&mdash;you&apos;ve been putting money into one for decades. It comes out of your paycheck before taxes, and if your employer&apos;s decent, they match some of what you put in. That matching is free money, and you&apos;d be foolish not to take it.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
@@ -201,16 +204,16 @@ export default function GoldIraVs401kPage() {
                                 </div>
                             </div>
 
-                            <h3>The 401(k) Problem: Paper Assets Only</h3>
+                            <h3>The Problem: It&apos;s All Paper</h3>
                             <p>
-                                The fundamental limitation of a 401(k) is that your money is locked into <strong>paper assets</strong>—stocks, bonds, and mutual funds. When the stock market crashes (like in 2008, 2020, or 2022), your retirement savings crash with it.
+                                Here&apos;s the thing nobody tells you until it&apos;s too late: your 401(k) is 100% <strong>paper assets</strong>&mdash;stocks, bonds, mutual funds. When the market crashes, your retirement crashes with it. There&apos;s no escape hatch.
                             </p>
                             <p>
-                                Many Americans approaching retirement in 2008 saw their 401(k) balances drop by 30-40%. Some had to delay retirement by years. Others never recovered.
+                                A lot of people who were planning to retire in 2009 didn&apos;t. They watched their 401(k) drop 30-40% and had to keep working. Some added 5-7 more years. That&apos;s real people who did everything right and still got burned because they had no protection.
                             </p>
 
-                            <Callout type="warning" title="The Hidden Risk">
-                                Your 401(k) is 100% exposed to stock market volatility. There&apos;s no way to hold physical gold, real estate, or other &quot;real assets&quot; that might protect you during a crash—unless you roll some of it into a Gold IRA.
+                            <Callout type="warning" title="The Reality Check">
+                                Your 401(k) has no protection from market crashes. It&apos;s 100% stocks and bonds. When Wall Street takes a hit, so does your retirement&mdash;there&apos;s no way around it unless you move some of it into something that doesn&apos;t follow the market.
                             </Callout>
                         </section>
 
@@ -218,10 +221,10 @@ export default function GoldIraVs401kPage() {
                         <section id="what-is-gold-ira" className="scroll-mt-32">
                             <h2>What is a Gold IRA?</h2>
                             <p>
-                                A <strong>Gold IRA</strong> (Individual Retirement Account) is a self-directed retirement account that allows you to hold physical gold, silver, platinum, and palladium instead of—or in addition to—paper assets.
+                                A <strong>Gold IRA</strong> is a retirement account that holds physical gold, silver, or other precious metals instead of stocks. Same tax benefits as your 401(k), but backed by something real that you can actually hold.
                             </p>
                             <p>
-                                Unlike a 401(k) where your investment choices are limited to what your employer offers, a Gold IRA gives you <strong>full control</strong> over your specific holdings. You choose the exact coins and bars that go into your account.
+                                The difference? With your 401(k), you&apos;re stuck choosing from whatever funds your employer picked. With a Gold IRA, <strong>you choose</strong> exactly what goes in&mdash;specific coins, specific bars. Your money, your decision.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
@@ -247,13 +250,13 @@ export default function GoldIraVs401kPage() {
                                 </div>
                             </div>
 
-                            <h3>The Gold Advantage: Real Money</h3>
+                            <h3>Why Gold? It&apos;s Been Money for 5,000 Years</h3>
                             <p>
-                                Gold has been money for over 5,000 years. Unlike dollars—which have lost over 96% of their purchasing power since 1913—gold maintains its value across generations. An ounce of gold bought a fine suit in 1920, and it still buys a fine suit today.
+                                Gold has been real money since before there were banks. Here&apos;s a fact that tells you everything: an ounce of gold bought a quality suit in 1920, and an ounce of gold still buys a quality suit today. Try that with dollars&mdash;they&apos;ve lost over 96% of their purchasing power since 1913.
                             </p>
 
-                            <Callout type="tip" title="Rich Dad Philosophy">
-                                &quot;Savers are losers. The dollar is designed to lose value over time. That&apos;s why the rich don&apos;t save dollars—they acquire assets that hold or increase in value. Gold is real money. Everything else is credit.&quot;
+                            <Callout type="tip" title="Why the Wealthy Own Gold">
+                                The rich don&apos;t keep all their money in stocks. They hold real assets that keep their value when everything else is falling apart. That&apos;s not paranoia&mdash;that&apos;s what people do when they&apos;ve got real money to protect.
                             </Callout>
                         </section>
 
@@ -261,10 +264,10 @@ export default function GoldIraVs401kPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Not Sure Which is Right for You?</h3>
-                                <p className="mb-6 text-gray-200">Take our 60-second quiz to get a personalized recommendation based on your portfolio size and retirement goals.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want to Know What Makes Sense for Your Situation?</h3>
+                                <p className="mb-6 text-gray-200">Answer a few quick questions about your 401(k) balance and retirement timeline. We&apos;ll show you whether gold makes sense for what you&apos;ve built.</p>
                                 <Button variant="gold" size="lg" asChild>
-                                    <Link href="/quiz">Find My Best Option <ArrowRight className="ml-2 w-4 h-4" /></Link>
+                                    <Link href="/quiz">Take the 60-Second Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
                         </div>
@@ -391,84 +394,84 @@ export default function GoldIraVs401kPage() {
                         <section id="can-i-have-both" className="scroll-mt-32">
                             <h2>Can I Have Both a 401(k) and a Gold IRA?</h2>
                             <p>
-                                <strong>Yes, absolutely.</strong> In fact, this is the recommended strategy for comprehensive retirement protection.
+                                <strong>Yes.</strong> And for someone with serious retirement savings, that&apos;s usually the smart move.
                             </p>
                             <p>
-                                The &quot;Rich Dad&quot; approach to retirement isn&apos;t about choosing one or the other—it&apos;s about using each tool for its intended purpose:
+                                It&apos;s not about choosing one or the other. Your 401(k) does one thing well (growth with employer match). A Gold IRA does something different (protection when markets crash). Use both:
                             </p>
 
                             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-amber-400 text-lg mb-4">The Smart Strategy: Use Both</h4>
+                                <h4 className="font-bold text-amber-400 text-lg mb-4">A Practical Approach</h4>
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-3">
                                         <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shrink-0">1</div>
                                         <div>
-                                            <strong className="text-white">Max out your 401(k) employer match</strong>
-                                            <p className="text-sm text-slate-300">This is free money—never leave it on the table. If your employer matches 50% up to 6%, contribute at least 6%.</p>
+                                            <strong className="text-white">Keep contributing to your 401(k) for the match</strong>
+                                            <p className="text-sm text-slate-300">That employer match is free money&mdash;don&apos;t walk away from it. If they match 50% up to 6%, you put in 6%.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shrink-0">2</div>
                                         <div>
-                                            <strong className="text-white">Allocate 10-20% of your portfolio to precious metals</strong>
-                                            <p className="text-sm text-slate-300">Roll over a portion of an old 401(k), or make direct contributions to a Gold IRA for diversification.</p>
+                                            <strong className="text-white">Move 10-20% of your retirement savings to gold</strong>
+                                            <p className="text-sm text-slate-300">If you&apos;ve got $500k saved, that&apos;s $50k-$100k in gold. Enough to matter if markets crash, but not so much you miss out on growth.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shrink-0">3</div>
                                         <div>
-                                            <strong className="text-white">Increase gold allocation as you approach retirement</strong>
-                                            <p className="text-sm text-slate-300">Younger investors can weather volatility; those nearing retirement need stability.</p>
+                                            <strong className="text-white">The closer to retirement, the more protection you need</strong>
+                                            <p className="text-sm text-slate-300">At 35, you can recover from a crash. At 60? You need to protect what you&apos;ve got. That&apos;s when gold allocation should go up.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <p>
-                                This balanced approach gives you the growth potential of stocks (401k) with the security of physical assets (Gold IRA). You get employer matching AND inflation protection.
+                                This way you get both: the growth potential of your 401(k) (plus that employer match) and the crash protection of gold. Belt and suspenders.
                             </p>
                         </section>
 
                         {/* When to Rollover */}
                         <section id="when-to-rollover" className="scroll-mt-32">
-                            <h2>When Should You Roll Over Your 401(k) to Gold?</h2>
+                            <h2>When Does Rolling Over Make Sense?</h2>
                             <p>
-                                A <strong>401(k) to Gold IRA rollover</strong> makes the most sense in these situations:
+                                Moving money from a 401(k) to a Gold IRA isn&apos;t right for everyone. Here&apos;s when it makes the most sense:
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-green-700">You&apos;ve left your employer</h4>
-                                        <p className="text-sm text-green-600 mt-1">Old 401(k)s sitting with former employers can be rolled over into a Gold IRA without any penalties or taxes.</p>
+                                        <h4 className="font-bold text-green-700">You&apos;ve got an old 401(k) from a previous job</h4>
+                                        <p className="text-sm text-green-600 mt-1">That money sitting with your old employer? You can roll it into a Gold IRA with zero taxes or penalties. Most people don&apos;t know this.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-green-700">You&apos;re nearing retirement</h4>
-                                        <p className="text-sm text-green-600 mt-1">Within 10-15 years of retirement, reducing stock exposure and adding gold protection becomes more important.</p>
+                                        <h4 className="font-bold text-green-700">You&apos;re within 10-15 years of retirement</h4>
+                                        <p className="text-sm text-green-600 mt-1">This is when protection matters most. A crash at 35 is something you can recover from. At 58? That could push your retirement back 5-7 years.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-green-700">You&apos;re concerned about the economy</h4>
-                                        <p className="text-sm text-green-600 mt-1">Rising inflation, national debt, or geopolitical tensions often drive investors toward the safety of gold.</p>
+                                        <h4 className="font-bold text-green-700">You remember 2008 (and don&apos;t want to live through it again)</h4>
+                                        <p className="text-sm text-green-600 mt-1">If watching your 401(k) drop 40% gave you chest pains, gold is worth considering. It tends to go up when stocks go down.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-green-700">Your 401(k) has limited options</h4>
-                                        <p className="text-sm text-green-600 mt-1">Some 401(k) plans offer terrible fund choices with high fees. A Gold IRA gives you better control.</p>
+                                        <h4 className="font-bold text-green-700">Your current 401(k) options are garbage</h4>
+                                        <p className="text-sm text-green-600 mt-1">Some employers offer terrible fund choices with high fees. A Gold IRA puts YOU in control of what you own.</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <Callout type="info" title="Important Note">
-                                You typically cannot roll over funds from your current employer&apos;s 401(k) while still employed (unless you&apos;re 59½ or older and the plan allows &quot;in-service distributions&quot;). However, you can roll over 401(k)s from previous employers at any time.
+                            <Callout type="info" title="One Thing to Know">
+                                You usually can&apos;t touch your current employer&apos;s 401(k) while you&apos;re still working there (unless you&apos;re 59&frac12;+). But those old 401(k)s from previous jobs? Those are yours to move whenever you want, no penalties.
                             </Callout>
                         </section>
 
@@ -553,11 +556,11 @@ export default function GoldIraVs401kPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Diversify Your Retirement?</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find out which gold IRA company is the best fit for your situation with our free, 60-second quiz.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Want to Know If This Makes Sense for You?</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Take our 60-second quiz. We&apos;ll ask about your 401(k) balance, retirement timeline, and show you which option fits your situation best.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
-                                        <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
+                                        <Link href="/quiz">See What&apos;s Right for Me <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
                                     <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
                                         <Link href="/guide/401k-to-gold-rollover">Read the Rollover Guide</Link>

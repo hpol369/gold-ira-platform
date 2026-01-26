@@ -78,7 +78,7 @@ export default function GoldBullionVsCoinsPage() {
                             Gold Bullion vs Gold Coins
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            Should you buy gold bars or gold coins for your IRA? We break down the premiums, liquidity, and practical differences to help you decide.
+                            You&apos;ve worked decades to build your retirement savings. Now you want to protect it with gold. But should you buy bars or coins? Here&apos;s the straight talk on premiums, liquidity, and which makes sense for your situation.
                         </p>
                     </div>
                 </Container>
@@ -91,7 +91,7 @@ export default function GoldBullionVsCoinsPage() {
                         <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-8">
                             <h2 className="text-2xl font-bold text-white mb-4">Quick Answer</h2>
                             <p className="text-lg text-slate-300 mb-4">
-                                <strong className="text-white">For most Gold IRA investors, coins are the better choice.</strong> They offer better liquidity, are instantly recognizable, and let you sell in smaller increments. However, if you&apos;re investing $100,000+, bars can save you money on premiums.
+                                <strong className="text-white">For most folks protecting their retirement, coins are the better choice.</strong> They&apos;re easier to sell when you need them, everyone recognizes them, and you can cash out a few at a time instead of all or nothing. If you&apos;ve got $100,000+ to move, bars can save you some money on markups.
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <div className="flex items-center gap-2 text-amber-400">
@@ -358,19 +358,19 @@ export default function GoldBullionVsCoinsPage() {
                                 <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-6">
                                     <h3 className="text-xl font-bold text-amber-400 mb-3">Choose Coins If...</h3>
                                     <ul className="space-y-2 text-slate-300">
-                                        <li>You&apos;re investing under $100,000</li>
-                                        <li>You want flexibility to sell partial holdings</li>
-                                        <li>You value instant recognition and liquidity</li>
-                                        <li>You&apos;re new to precious metals investing</li>
+                                        <li>You&apos;re rolling over $50,000-$100,000 from your 401(k)</li>
+                                        <li>You want flexibility to sell some without liquidating everything</li>
+                                        <li>You value being able to sell quickly if needed</li>
+                                        <li>You&apos;re moving to gold for the first time</li>
                                     </ul>
                                 </div>
                                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                                     <h3 className="text-xl font-bold text-white mb-3">Choose Bars If...</h3>
                                     <ul className="space-y-2 text-slate-300">
-                                        <li>You&apos;re investing $100,000+</li>
-                                        <li>You want maximum gold per dollar</li>
-                                        <li>You plan to hold long-term</li>
-                                        <li>You don&apos;t need to sell in small increments</li>
+                                        <li>You&apos;re rolling over $100,000 or more</li>
+                                        <li>You want every dollar buying actual gold</li>
+                                        <li>You&apos;re protecting savings you won&apos;t touch for 10+ years</li>
+                                        <li>You&apos;re not worried about selling in pieces</li>
                                     </ul>
                                 </div>
                             </div>
@@ -383,9 +383,9 @@ export default function GoldBullionVsCoinsPage() {
                         <div className="bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Add Gold to Your IRA?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect What You&apos;ve Built?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">
-                                    Get expert guidance on choosing the right mix of coins and bars for your retirement portfolio.
+                                    Get straight answers on the right mix of coins and bars for your retirement savings. No sales pressure, just honest guidance.
                                 </p>
                                 <Button variant="gold" size="xl" asChild>
                                     <Link href="/quiz">

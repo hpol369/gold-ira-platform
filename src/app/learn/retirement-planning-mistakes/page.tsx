@@ -109,7 +109,7 @@ export default function RetirementPlanningMistakesPage() {
                             10 Retirement Planning Mistakes That Destroy Wealth
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            Common mistakes that can devastate your retirement—and how to avoid them.
+                            You've spent 30+ years building your retirement savings. You've done what most Americans couldn't—you actually saved. Here are the mistakes that could undo all that hard work, and how to avoid them.
                         </p>
                     </div>
                 </Container>
@@ -130,10 +130,10 @@ export default function RetirementPlanningMistakesPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Retirement planning mistakes can cost hundreds of thousands of dollars over a 30-year retirement. Some mistakes are obvious in hindsight; others are subtle traps that even sophisticated investors fall into.
+                                Here's the truth nobody tells you: the financial industry makes money whether you win or lose. They get their fees either way. So when they give you "advice," ask yourself whose interests they're really serving.
                             </p>
                             <p>
-                                The good news? Most of these mistakes are avoidable with proper planning and awareness. Let&apos;s examine the 10 most common—and costly—retirement planning errors.
+                                You've already won the hardest part—you actually saved for retirement. You've got $500k, $600k, maybe more. That puts you ahead of 90% of Americans. Now the challenge is protecting it. Here are the mistakes that destroy what people like you have spent a lifetime building.
                             </p>
                         </section>
 
@@ -146,7 +146,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Starting Too Late</h2>
                             </div>
                             <p>
-                                Compound interest is the most powerful force in investing—but it needs time to work. Starting at 25 instead of 35 can mean having <strong>twice as much money</strong> at retirement, even with identical contributions.
+                                If you're reading this at 55 or 60, you already know this isn't your issue. You started decades ago. You showed up every day, maxed out your contributions when you could, and built something real. But if you have kids or grandkids who haven't started? Show them these numbers:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
@@ -179,7 +179,7 @@ export default function RetirementPlanningMistakesPage() {
                             </div>
 
                             <p>
-                                <strong>The fix:</strong> Start now. If you&apos;re behind, increase contributions and consider catch-up contributions after age 50 ($7,500 extra for 401(k)s in 2026).
+                                <strong>For you:</strong> If you're 55+ and have $500k or more saved, you're not "behind"—you're ahead of most Americans. Your focus now should be protecting what you have, not chasing returns.
                             </p>
                         </section>
 
@@ -192,13 +192,13 @@ export default function RetirementPlanningMistakesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. Over-Concentration in Stocks</h2>
                             </div>
                             <p>
-                                Many retirees have 80-100% of their savings in stocks. While stocks offer growth, they&apos;re also volatile—and a major crash at the wrong time can devastate a retirement.
+                                This is the big one for people like you. You've got 80%, 90%, maybe 100% of your 401k in stocks. Your broker says "stay diversified"—but having 10 different stock funds isn't diversification. When the market drops, they all drop together.
                             </p>
                             <p>
-                                During the 2008 crash, retirees with stock-heavy portfolios lost 30-50% of their savings just as they needed to start withdrawals. Some had to return to work; others never recovered.
+                                Remember 2008? People with stock-heavy portfolios lost 30-50% of their savings right when they needed to start withdrawals. Some folks had to keep working into their 70s. Others never recovered. And their brokers? Still collecting fees.
                             </p>
                             <p>
-                                <strong>The fix:</strong> Diversify into uncorrelated assets like bonds, gold, and real estate. A <Link href="/what-is-a-gold-ira">Gold IRA</Link> provides precious metals exposure that often rises when stocks fall.
+                                <strong>The fix:</strong> Real diversification means owning things that don't move together. When stocks crashed 37% in 2008, gold went UP 25%. A <Link href="/what-is-a-gold-ira">Gold IRA</Link> lets you move part of your 401k into physical gold while keeping your tax advantages.
                             </p>
                         </section>
 
@@ -211,13 +211,13 @@ export default function RetirementPlanningMistakesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Ignoring Inflation</h2>
                             </div>
                             <p>
-                                At just 3% annual inflation, prices double every 24 years. Your &quot;safe&quot; $1 million in savings becomes equivalent to $500,000 in purchasing power.
+                                You've watched grocery prices double. You've seen what happened to gas prices. You're not imagining it—your dollars buy less every year. At 3% inflation, your $600,000 becomes $300,000 in purchasing power over 24 years. At 7-9% like we saw in 2021-2023? Even faster.
                             </p>
                             <p>
-                                Many retirees keep too much in low-yield savings accounts or bonds, watching their purchasing power erode. In 2021-2023, inflation hit 7-9%—devastating for those in cash.
+                                The "safe" play of keeping everything in cash or bonds? That's how you slowly go broke. Your money is losing value every single day it sits there.
                             </p>
                             <p>
-                                <strong>The fix:</strong> Hold inflation-hedging assets: stocks (companies can raise prices), real estate (rents and values rise with inflation), gold (historically maintains purchasing power), and TIPS/I Bonds.
+                                <strong>The fix:</strong> Own things that rise with inflation. Gold has maintained its purchasing power for 5,000 years. An ounce of gold in 1920 bought the same quality suit as an ounce today. Meanwhile, the dollar has lost 97% of its value. Think about that.
                             </p>
 
                             <Callout type="info" title="The Gold Solution">
@@ -267,8 +267,8 @@ export default function RetirementPlanningMistakesPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Protect Against Multiple Retirement Risks</h3>
-                                <p className="mb-6 text-gray-200">A Gold IRA helps protect against inflation, market crashes, and sequence of returns risk.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">You've Built It. Now Protect It.</h3>
+                                <p className="mb-6 text-gray-200">After 30+ years of work, your 401k isn't just a number—it's your freedom. A Gold IRA protects against the crashes, inflation, and timing risks that destroy retirements.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -284,13 +284,13 @@ export default function RetirementPlanningMistakesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Claiming Social Security Too Early</h2>
                             </div>
                             <p>
-                                You can claim Social Security at 62, but benefits increase by about 8% per year until age 70. Claiming at 62 instead of 70 reduces lifetime benefits by 30%+.
+                                Here's where it gets complicated for people with physical jobs. The calculators say wait until 70. But if you're a nurse with 35 years on your feet, a trucker with a bad back, or a factory worker whose body is telling you it's time—waiting may not be an option.
                             </p>
                             <p>
-                                For someone with a $2,000/month benefit at full retirement age: claiming at 62 = $1,400/month; waiting until 70 = $2,480/month. That&apos;s $12,960 more per year—for life.
+                                The math is real: claiming at 62 versus 70 can mean $12,960 less per year for life. But the math doesn't account for bodies that wear out.
                             </p>
                             <p>
-                                <strong>The fix:</strong> If you can afford to wait, delay until 70. Use retirement savings to bridge the gap.
+                                <strong>The real answer:</strong> If you can wait, the numbers favor waiting. But if your body says it's time to stop at 62, make sure your savings can bridge the gap. That's why protecting your 401k matters so much—it gives you options when your body makes the decision for you.
                             </p>
                         </section>
 
@@ -431,8 +431,8 @@ export default function RetirementPlanningMistakesPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Avoid the Concentration Mistake</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Diversify into gold to protect against market crashes and inflation.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">You've Done the Hard Part. Don't Blow It Now.</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">30+ years of early mornings and hard work built your nest egg. Diversifying into gold protects it from the crashes that destroy retirements.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>

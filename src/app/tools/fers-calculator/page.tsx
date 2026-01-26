@@ -139,8 +139,8 @@ export default function FERSCalculatorPage() {
                 FERS Retirement Calculator
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                Estimate your Federal Employees Retirement System (FERS) pension,
-                FERS Supplement, and total retirement income
+                After 25+ years of federal service, you've earned a solid pension.
+                This calculator shows exactly what you'll get - and how to protect your TSP from the next market downturn.
               </p>
             </motion.div>
           </div>
@@ -668,8 +668,8 @@ export default function FERSCalculatorPage() {
                   {/* CTA */}
                   <AugustaCTA
                     variant="inline"
-                    headline="Diversify Your TSP with Physical Gold"
-                    subheadline="Federal employees can roll TSP funds into a Gold IRA after separation or at age 59½ while employed. Augusta Precious Metals specializes in helping federal retirees protect their savings."
+                    headline="Your Pension Is Safe. What About Your TSP?"
+                    subheadline="FERS is reliable, but your TSP can lose 40%+ in a crash. Federal employees can roll TSP into a Gold IRA at 59½ - protecting decades of contributions from market chaos."
                   />
 
                   {/* Action Buttons */}

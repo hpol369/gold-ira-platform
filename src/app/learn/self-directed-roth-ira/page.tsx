@@ -49,7 +49,7 @@ export default function SelfDirectedRothIRAPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 max-w-2xl leading-relaxed mb-8">
-                            Combine the power of tax-free Roth IRA growth with alternative investments like real estate, cryptocurrency, and precious metals. Never pay taxes on your gains.
+                            You paid taxes on every paycheck for 30 years. With a Self-Directed Roth IRA, your retirement growth is <strong>completely tax-free</strong>—and you get to invest in real assets like gold, real estate, and more. Not just whatever funds HR picked.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -108,14 +108,14 @@ export default function SelfDirectedRothIRAPage() {
 
                             <h2>What is a Self-Directed Roth IRA?</h2>
                             <p>
-                                A <strong>Self-Directed Roth IRA</strong> combines two powerful concepts:
+                                Your regular 401(k) limits you to whatever investment options your employer&apos;s plan administrator picked—usually the same mutual funds that crashed 40% in 2008. A <strong>Self-Directed Roth IRA</strong> puts you back in control:
                             </p>
                             <ol>
-                                <li><strong>Roth IRA tax treatment</strong> — Contributions are after-tax, but all qualified withdrawals (including gains) are completely tax-free</li>
-                                <li><strong>Self-directed investing</strong> — You can invest in alternative assets beyond stocks and bonds</li>
+                                <li><strong>Roth tax treatment</strong> — You&apos;ve already paid taxes on this money. When you withdraw in retirement, you pay <em>nothing</em>—even on decades of growth</li>
+                                <li><strong>Self-directed freedom</strong> — You choose the investments: physical gold, real estate, even crypto. Not whatever Wall Street wants to sell you</li>
                             </ol>
                             <p>
-                                The result? You can invest in real estate, cryptocurrency, precious metals, and other alternatives—and <strong>never pay taxes on the gains</strong> when you withdraw in retirement.
+                                For workers who&apos;ve saved $500K or more and don&apos;t trust the market not to crash again, this is how you take back control. <strong>Your money, your decisions, zero taxes on the gains.</strong>
                             </p>
 
                             <h2>Why Consider a Self-Directed Roth IRA?</h2>

@@ -154,8 +154,11 @@ export default async function ComparisonPage({ params }: Props) {
               {companyA.name} vs {companyB.name}
             </h1>
 
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mb-8">
-              A detailed comparison of two leading Gold IRA companies. See how they stack up on fees, minimums, ratings, and service quality.
+            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mb-4">
+              When you&apos;ve spent 30 years building your retirement savings, you can&apos;t afford to trust it to the wrong company. Let&apos;s look at what actually matters.
+            </p>
+            <p className="text-base text-slate-400 leading-relaxed max-w-2xl mb-8">
+              For someone with $500k saved over a lifetime of hard work, we focus on the things that count: BBB complaint history, how they handle problems, and whether customers actually recommend them to friends&mdash;not just flashy marketing.
             </p>
 
             {/* Quick Stats */}
@@ -343,11 +346,11 @@ export default async function ComparisonPage({ params }: Props) {
                   <p className="text-slate-300 mb-6">
                     {winner ? (
                       <>
-                        Based on our analysis, <strong className="text-white">{winner.name}</strong> comes out ahead with a higher rating ({winner.rating}/5) and {winner.bestFor.toLowerCase()}. However, your choice should depend on your specific needs:
+                        Look, you didn&apos;t work 30 years to hand your savings over to a company that might let you down. Based on complaint history, customer service track record, and how they treat people with real money on the line, <strong className="text-white">{winner.name}</strong> edges ahead ({winner.rating}/5 rating). That said, your situation matters:
                       </>
                     ) : (
                       <>
-                        Both companies are excellent choices with identical ratings. Your decision should come down to your specific investment amount and preferences:
+                        Both companies have solid track records with minimal complaints. For someone who&apos;s spent decades building their nest egg, that&apos;s what matters most. Your decision should come down to your specific investment amount and what feels right:
                       </>
                     )}
                   </p>
@@ -450,10 +453,10 @@ export default async function ComparisonPage({ params }: Props) {
             ) : (
               <div className="text-center max-w-2xl mx-auto">
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  Ready to Get Started?
+                  Ready to Take the Next Step?
                 </h2>
                 <p className="text-slate-300 mb-8">
-                  Request a free consultation from either company to learn more about protecting your retirement with precious metals.
+                  You&apos;ve done your homework. Both companies offer free consultations with no pressure&mdash;just straight answers about whether a Gold IRA makes sense for what you&apos;ve built.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <a

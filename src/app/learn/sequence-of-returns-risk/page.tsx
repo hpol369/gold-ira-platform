@@ -131,13 +131,13 @@ export default function SequenceOfReturnsRiskPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Most people think retirement success is about getting good <em>average</em> returns. But there&apos;s a hidden danger that financial advisors rarely discuss: <strong>sequence of returns risk</strong>.
+                                Your financial advisor probably tells you to focus on &quot;average returns&quot;—7% a year, they say, like clockwork. But here&apos;s what they don&apos;t mention: <strong>when those returns happen matters more than the average itself.</strong>
                             </p>
                             <p>
-                                Here&apos;s the uncomfortable truth: two people with <em>identical</em> average returns over 30 years can have completely different outcomes. One might live comfortably; the other runs out of money. The difference? The <em>order</em> in which those returns occurred.
+                                Picture this: Two retired teachers, both with $800K saved. Same 7% average returns over 15 years. One ends up with $1.2 million. The other? Broke by year 13. Not because they did anything wrong—but because one of them retired right before a market crash. That&apos;s sequence of returns risk, and it&apos;s the hidden killer for workers like you who&apos;ve saved half a million or more.
                             </p>
                             <p>
-                                Understanding sequence risk is critical for anyone approaching or in retirement. It&apos;s the reason why some retirees who did &quot;everything right&quot; still run out of money—while others with similar portfolios thrive.
+                                If you&apos;re 55+ and you&apos;ve worked hard to build a $500K-$1M nest egg, this is the risk that should keep you up at night—not because you should panic, but because you can actually protect against it. <strong>Most people find out about sequence risk the hard way.</strong> Let&apos;s make sure that&apos;s not you.
                             </p>
                         </section>
 

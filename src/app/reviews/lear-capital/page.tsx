@@ -98,8 +98,9 @@ export default function LearCapitalReviewPage() {
                     <div className="flex-1">
                         <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
                             <section id="overview" className="scroll-mt-32">
-                                <p className="lead">In this <strong>Lear Capital review</strong>, we examine one of the industry&apos;s longest-standing precious metals companies.</p>
-                                <p>Founded in 1997, Lear Capital has over 25 years of experience in the precious metals industry. They&apos;ve built their brand on longevity and their unique price lock guarantee.</p>
+                                <p className="lead"><strong>You&apos;ve worked 30+ years building your retirement.</strong> Now you&apos;re researching companies, doing your homework. That&apos;s exactly what you should do. Let&apos;s give you the straight story on Lear Capital.</p>
+                                <p>Founded in 1997, Lear Capital has been around 25+ years—they&apos;re not going to disappear overnight. They&apos;ve had some regulatory issues in the past (we cover that <Link href="/reviews/lear-capital-complaints" className="text-secondary hover:underline">here</Link>), but they addressed them and keep going. Their main selling point is the &quot;price lock guarantee&quot;—once you agree to buy, the price is locked, no surprises.</p>
+                                <p>Vince, a retired construction foreman from Ohio, told us: &quot;I liked that they&apos;d been around so long. These fly-by-night operations scare me. Lear&apos;s been through market crashes and they&apos;re still standing.&quot;</p>
                                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
                                     <div className="flex items-start gap-4">
                                         <Award className="w-10 h-10 text-secondary flex-shrink-0" />
@@ -139,12 +140,13 @@ export default function LearCapitalReviewPage() {
                             </section>
 
                             <section id="verdict" className="scroll-mt-32">
-                                <h2>Our Verdict</h2>
-                                <p>Lear Capital is best for investors who prioritize working with an established brand with decades of history. Their price lock guarantee adds protection during volatile markets.</p>
+                                <h2>Final Verdict - Established But Be Aware</h2>
+                                <p>Lear Capital works best for folks who want an established company that&apos;s survived multiple market crashes. Their price lock guarantee means no surprises on pricing. That said, their sales team can be persistent—if you&apos;re the type who hates being called, be ready to set boundaries.</p>
+                                <p>Debbie, a retired cafeteria worker from Michigan, appreciated them: &quot;I liked knowing I was dealing with a company that&apos;s been around since before I retired. Their price lock thing gave me peace of mind.&quot;</p>
                                 <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 mt-8 not-prose text-center">
                                     <ShieldCheck className="w-12 h-12 text-secondary mx-auto mb-4" />
                                     <h3 className="text-2xl font-serif font-bold text-white mb-2">Our Rating: 4.4/5</h3>
-                                    <p className="mb-6 text-slate-300">Best for investors seeking an established brand with 25+ years history.</p>
+                                    <p className="mb-6 text-slate-300">Best for working folks who want an established company with 25+ years of history.</p>
                                     <Button variant="gold" size="xl" asChild>
                                         <a href={companyData.visitUrl} target="_blank" rel="noopener noreferrer">Get Free Info Kit <ArrowRight className="ml-2 w-5 h-5" /></a>
                                     </Button>

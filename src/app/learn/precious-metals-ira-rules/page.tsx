@@ -104,7 +104,7 @@ export default function PreciousMetalsIraRulesPage() {
                             Precious Metals IRA Rules
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            A clear, plain-English breakdown of the critical IRS regulations governing Gold and Silver IRAs. Stay compliant and avoid penalties.
+                            You've worked 30+ years to build your 401k. Before you move any of it to gold, you need to understand the IRS rules—because breaking them means taxes and penalties that could cost you thousands. Here's the straight talk, in plain English.
                         </p>
                     </div>
                 </Container>
@@ -123,7 +123,7 @@ export default function PreciousMetalsIraRulesPage() {
                         <KeyTakeaways items={takeaways} />
 
                         <p className="lead">
-                            Investing in a Precious Metals IRA creates a powerful tax shelter for your wealth, but it comes with strict rules. The IRS (Internal Revenue Service) has specific requirements for the <strong>purity, storage, and handling</strong> of assets.
+                            Here's the reality: A Gold IRA lets you protect your hard-earned savings from market crashes while keeping your tax advantages. But the IRS has strict rules about what gold you can buy, where it must be stored, and what happens if you break the rules. This isn't complicated—but it's important. Let me walk you through exactly what you need to know.
                         </p>
 
                         {/* Purity Standards */}
@@ -135,7 +135,7 @@ export default function PreciousMetalsIraRulesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Fineness (Purity) Requirements</h2>
                             </div>
                             <p>
-                                Not all gold qualifies. To be eligible for an IRA, metals must meet minimum fineness standards:
+                                Not all gold qualifies for an IRA. The IRS sets strict purity requirements—and if you buy the wrong coins, you could trigger taxes and penalties. Here are the minimums:
                             </p>
                             <ul>
                                 <li><strong>Gold:</strong> .995+ (99.5% pure)</li>
@@ -175,10 +175,10 @@ export default function PreciousMetalsIraRulesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Strict Storage Regulations</h2>
                             </div>
                             <p>
-                                This is the most violated rule. <strong>You cannot hold the metals yourself.</strong>
+                                This is where people get into trouble. <strong>You cannot hold the gold yourself—not in your safe, not in your closet, not buried in the backyard.</strong>
                             </p>
                             <p>
-                                IRC Section 408(m) requires that physical coins and bars be held by a trustee or custodian. This practically means they must be stored in an IRS-approved, insured depository (like Delaware Depository or Brink's).
+                                The IRS requires your gold to be stored in an approved depository (like Delaware Depository or Brink's). Think of it like this: the tax advantages come with strings attached. Your gold is yours—you own it, you can take physical possession at retirement—but while it's in the IRA, a third party has to hold it.
                             </p>
                             <Callout type="warning" title="Warning: Home Storage">
                                 "Home Storage" or "Checkbook IRAs" often claim to use a legal loophole (LLC). The IRS has successfully challenged these in court (e.g., McNulty v. Commissioner), resulting in massive taxes and penalties for the investor.
@@ -216,8 +216,8 @@ export default function PreciousMetalsIraRulesPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Confused by the Rules?</h3>
-                                <p className="mb-6 text-gray-200">The best Gold IRA companies handle all the compliance for you. Find a compliance-focused partner now.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Don't Want to Navigate the Rules Alone?</h3>
+                                <p className="mb-6 text-gray-200">A good Gold IRA company handles all this compliance for you—the paperwork, the storage, the IRS requirements. That's what you're paying them for.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find a Compliance Partner <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>

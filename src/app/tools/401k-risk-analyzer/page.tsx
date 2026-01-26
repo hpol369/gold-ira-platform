@@ -192,7 +192,8 @@ export default function RiskAnalyzerPage() {
               401(k) Risk Analyzer
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Discover how much of your retirement savings is exposed to stock market volatility and what could happen in a major downturn.
+              You've worked too hard for 30+ years to lose half your 401(k) in the next crash.
+              See exactly how exposed your savings are - and what you can do about it.
             </p>
           </div>
         </Container>
@@ -539,10 +540,10 @@ export default function RiskAnalyzerPage() {
                     {/* CTA */}
                     <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/20 border border-amber-500/30 rounded-xl p-6 text-center">
                       <h3 className="text-xl font-bold text-white mb-2">
-                        Protect Your 401(k) with Gold
+                        You've Worked Too Hard to Lose It Now
                       </h3>
                       <p className="text-slate-300 text-sm mb-4">
-                        Learn how a Gold IRA can help diversify your retirement savings and protect against market volatility.
+                        After decades of contributions, you deserve protection. A Gold IRA can shield your savings from the next crash - no matter when it comes.
                       </p>
                       <a
                         href={affiliateLink}

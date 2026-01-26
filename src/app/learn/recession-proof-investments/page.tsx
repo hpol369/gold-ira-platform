@@ -108,7 +108,7 @@ export default function RecessionProofInvestmentsPage() {
                             Recession-Proof Investments
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            7 assets that have historically protected wealth during economic downturns—and how to add them to your portfolio.
+                            You've built your 401k over 30+ years of hard work. Now you're 5-10 years from retirement, and the thought of another 2008-style crash keeps you up at night. Here are 7 assets that have historically held their value—or even grown—when the market tanks.
                         </p>
                     </div>
                 </Container>
@@ -129,13 +129,13 @@ export default function RecessionProofInvestmentsPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                Recessions are inevitable. Since 1945, the US has experienced 13 recessions—roughly one every 6 years. The question isn&apos;t <em>if</em> another recession will happen, but <em>when</em>—and whether your portfolio is prepared.
+                                Let's be honest: if you're 55-65 with a $500k-$1M 401k, you can't afford to ride out another 2008. Those "just stay the course" advisors? They kept collecting fees while people like you watched 40% of their life savings disappear. You've worked too hard—too many early mornings, too many overtime shifts—to let that happen again.
                             </p>
                             <p>
-                                The term &quot;recession-proof&quot; is somewhat misleading. No investment is completely immune to economic downturns. However, some assets are far more <strong>recession-resistant</strong> than others—they either maintain their value or actually increase when the economy struggles.
+                                The term &quot;recession-proof&quot; is a bit misleading. Nothing is 100% safe. But some assets have proven themselves time and again—they either hold their value or actually <em>rise</em> when the stock market is falling apart. These are the investments that let you sleep at night.
                             </p>
                             <p>
-                                In this guide, we&apos;ll explore seven categories of recession-resistant investments and how to incorporate them into your retirement strategy.
+                                Here's what actually works—no Wall Street jargon, just the facts from historical data.
                             </p>
 
                             <Callout type="info" title="Recession Definition">
@@ -152,7 +152,7 @@ export default function RecessionProofInvestmentsPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Gold & Precious Metals</h2>
                             </div>
                             <p>
-                                Gold is perhaps the most well-known recession hedge. When economic uncertainty rises, investors flee to gold as a &quot;safe haven&quot; asset:
+                                Here's what your broker probably won't tell you: while they were advising people to "stay the course" during 2008, gold was going UP. When the stock market dropped 37%, gold gained 25%. Look at the numbers:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
@@ -185,10 +185,10 @@ export default function RecessionProofInvestmentsPage() {
                             </div>
 
                             <p>
-                                <strong>Why gold works:</strong> Gold has no counterparty risk (it&apos;s not dependent on any company or government), limited supply, and 5,000+ years of history as a store of value. When confidence in the financial system wavers, gold shines.
+                                <strong>Why gold works:</strong> Gold doesn't depend on any company's earnings or any government's promises. It's been a store of value for 5,000 years. When people lose faith in the financial system, they turn to gold. That's not theory—that's history.
                             </p>
                             <p>
-                                <strong>How to invest:</strong> Physical gold coins/bars, <Link href="/what-is-a-gold-ira">Gold IRAs</Link> for retirement accounts, or gold ETFs for convenience (though ETFs lack the benefits of physical ownership).
+                                <strong>How to add it to your retirement:</strong> You can move part of your 401k or IRA into physical gold through a <Link href="/what-is-a-gold-ira">Gold IRA</Link>. The gold is held in a secure depository, you maintain the tax advantages, and you own real metal—not a piece of paper.
                             </p>
                         </section>
 
@@ -257,8 +257,8 @@ export default function RecessionProofInvestmentsPage() {
                         <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Add Gold to Your Recession Defense</h3>
-                                <p className="mb-6 text-gray-200">A Gold IRA lets you hold physical precious metals in your retirement account.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Protect What You've Built</h3>
+                                <p className="mb-6 text-gray-200">You've worked 30+ years to build your 401k. A Gold IRA moves part of it into physical gold—the asset that's risen during every major crash.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find the Right Gold IRA <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -419,8 +419,8 @@ export default function RecessionProofInvestmentsPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Build Your Recession Defense</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Add physical gold to your retirement portfolio before the next economic downturn.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Don't Wait for the Next Crash</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">You've seen what happens to 401ks in a crash. The time to protect your savings is before the next one—not during.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>

@@ -413,8 +413,8 @@ export default function RailroadRetirementCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Protect Your Railroad Pension"
-            subheadline="Railroad workers often have substantial retirement benefits. A Gold IRA can help diversify and protect your hard-earned pension from inflation and market volatility."
+            headline="30 Years on the Rails. Protect What You've Built."
+            subheadline="Your Tier I and Tier II benefits are strong - but any 401(k) or IRA savings are still at risk. A Gold IRA protects your supplemental savings from the next crash."
             trackSource="tools-railroad-retirement-calculator"
           />
         </Container>

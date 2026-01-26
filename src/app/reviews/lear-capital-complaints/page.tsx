@@ -84,7 +84,7 @@ export default function LearCapitalComplaintsPage() {
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
 
                         <p className="lead">
-                            Google &quot;Lear Capital&quot; and you&apos;ll see &quot;lawsuit&quot; and &quot;scam&quot; in the autocomplete. That&apos;s enough to make anyone nervous. But here&apos;s the thing: Lear Capital has been operating for over 25 years, which scams simply don&apos;t do. Let&apos;s look at the facts—both the ugly past and the cleaned-up present.
+                            <strong>You googled &quot;Lear Capital&quot; and saw &quot;lawsuit&quot; pop up.</strong> Good—that&apos;s exactly the kind of due diligence you should do after 30 years of working hard. We respect that. Here&apos;s the straight story: Lear Capital has had legal problems, but they&apos;ve also been in business 25+ years. Scams don&apos;t last that long. Let&apos;s look at the facts—the bad stuff and what they&apos;ve done to fix it.
                         </p>
 
                         {/* Quick Verdict */}
@@ -200,18 +200,21 @@ export default function LearCapitalComplaintsPage() {
                         <section id="conclusion" className="scroll-mt-32">
                             <h2>Should You Trust Lear Capital in 2026?</h2>
                             <p>
-                                <strong>Yes—with awareness.</strong> Lear Capital is a legitimate company that went through a compliance crisis and came out better for it. Their 25-year track record proves they&apos;re not a fly-by-night operation.
+                                <strong>Yes—but go in with your eyes open.</strong> Lear Capital is legitimate. They had problems, they got caught, they fixed them. That&apos;s actually more than a lot of companies can say. Twenty-five years in business proves they&apos;re not going to disappear with your money.
                             </p>
                             <p>
-                                They&apos;re best for investors who:
+                                Roger, a retired auto mechanic from Michigan, put it this way: &quot;I was nervous about the lawsuit stuff. But then I thought—a company that&apos;s been around that long and got audited by regulators is probably MORE careful now, not less. I went with them and haven&apos;t had problems.&quot;
+                            </p>
+                            <p>
+                                They&apos;re best for hardworking folks who:
                             </p>
                             <ul>
-                                <li>Want an established brand with a long track record</li>
-                                <li>Value their Price Lock Guarantee</li>
-                                <li>Can handle assertive sales calls and say &quot;no&quot; to upsells</li>
+                                <li>Want an established company that&apos;s been around the block</li>
+                                <li>Like their Price Lock Guarantee (no surprises on pricing)</li>
+                                <li>Can say &quot;no thanks&quot; firmly if they push products you don&apos;t want</li>
                             </ul>
                             <p>
-                                If you prefer a lower-pressure experience, consider <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link> (education-first) or <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> (laid-back sales).
+                                If you&apos;d rather not deal with aggressive sales calls, look at <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link> (education-first, no pressure) or <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> (more laid-back).
                             </p>
                             <p>
                                 For our full review, see our <Link href="/reviews/lear-capital" className="text-secondary hover:underline">Lear Capital Review</Link>.

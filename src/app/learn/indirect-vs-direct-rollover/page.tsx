@@ -33,7 +33,7 @@ export default function IndirectVsDirectRolloverPage() {
                             Direct vs Indirect Rollover
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            The rollover method you choose can cost you thousands in taxes and penalties. Here&apos;s how to avoid the most common—and expensive—mistake.
+                            Pick the wrong method and you could lose $20,000+ to taxes you didn&apos;t need to pay. Here&apos;s how to do this right and keep more of what you&apos;ve earned.
                         </p>
                     </div>
                 </Container>
@@ -387,9 +387,9 @@ export default function IndirectVsDirectRolloverPage() {
                         <div className="bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready for a Tax-Free Rollover?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Move Your 401(k)?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">
-                                    Augusta Precious Metals handles all the paperwork for your direct rollover—no 20% withholding, no 60-day deadline stress.
+                                    Let someone else handle the paperwork. No 20% taken out, no panic about missing a deadline. Just a clean transfer.
                                 </p>
                                 <Button variant="gold" size="xl" asChild>
                                     <Link href="/quiz">

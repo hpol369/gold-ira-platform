@@ -230,8 +230,7 @@ export default function Solo401kProvidersPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                            Compare top Solo 401k providers including free brokerage options from Fidelity, Schwab,
-                            and Vanguard, plus self-directed providers for alternative investments like real estate and crypto.
+                            You went independent for a reason—more control over your work, your schedule, your life. Why hand that control back to Wall Street for your retirement? Here&apos;s how to pick a Solo 401k provider that lets you decide where your hard-earned money goes.
                         </p>
 
                         {/* Quick Decision */}

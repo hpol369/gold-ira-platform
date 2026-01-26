@@ -545,8 +545,8 @@ export default function CalPERSPensionCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="California Public Employees: Protect Your Pension from Inflation"
-            subheadline="Your CalPERS pension provides guaranteed income, but the 2% COLA may not keep pace with actual inflation. Many California state employees supplement their pension with a Gold IRA to maintain purchasing power."
+            headline="Your CalPERS Is Solid. But Is It Enough?"
+            subheadline="After 25+ years serving California, your pension is secure. But with 2% COLA and 6%+ inflation, your buying power shrinks every year. Gold helps maintain what you've earned."
             trackSource="tools-calpers-pension-calculator"
           />
         </Container>

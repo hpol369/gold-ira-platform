@@ -143,9 +143,8 @@ export default function RothConversionCalculatorPage() {
               Roth Conversion Calculator
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Calculate the tax impact of converting your Traditional IRA to a
-              Roth IRA. Find your optimal conversion amount and break-even
-              timeline.
+              After decades of contributions, your 401(k) is subject to RMDs and taxes.
+              A Roth conversion can lock in today's tax rates - see if it makes sense for your situation.
             </p>
           </div>
         </Container>
@@ -563,7 +562,8 @@ export default function RothConversionCalculatorPage() {
                 variant="inline"
                 linkContext="default"
                 trackSource="roth-conversion-calculator"
-                subheadline="Get a free consultation to learn how to protect your retirement with physical gold in a tax-advantaged IRA."
+                headline="Converting? Diversify Into Something Real."
+                subheadline="After 30+ years of saving, protect your nest egg with physical gold. Tax-free growth in a Roth Gold IRA - no RMDs, no market anxiety."
               />
             </div>
           </div>

@@ -80,7 +80,7 @@ export default function RoslandLawsuitPage() {
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
 
                         <p className="lead">
-                            If you search &quot;Rosland Capital lawsuit,&quot; you&apos;re doing smart due diligence. Unlike many Gold IRA companies, Rosland Capital <strong>has</strong> had regulatory issues—specifically a settlement with the CFTC. Here&apos;s the full story.
+                            <strong>You&apos;re doing your homework—good.</strong> After decades of hard work, you&apos;ve earned the right to question everything. So you searched &quot;Rosland Capital lawsuit&quot; and found us. Here&apos;s the straight story: they DID have regulatory problems—a settlement with the CFTC. We&apos;ll give you the facts, not spin.
                         </p>
 
                         {/* Quick Verdict */}
@@ -120,15 +120,15 @@ export default function RoslandLawsuitPage() {
 
                         {/* Plain English */}
                         <section id="what-happened" className="scroll-mt-32">
-                            <h2>What This Means in Plain English</h2>
+                            <h2>What This Actually Means For Regular Folks</h2>
                             <p>
-                                Let me translate the legal language: The CFTC was concerned that Rosland Capital was selling coins—particularly numismatic or &quot;collectible&quot; coins—at prices much higher than their actual metal value, without making that crystal clear to customers.
+                                Let&apos;s cut through the legal talk: The CFTC was concerned that Rosland Capital was selling &quot;collectible&quot; coins at prices way higher than the actual gold value—without making that crystal clear to customers.
                             </p>
                             <p>
-                                When you buy a numismatic coin at, say, 40% over the spot price of gold, and then try to sell it, you might only get the spot price back. That&apos;s a 40% instant loss. The CFTC wants companies to be very clear about this upfront.
+                                Here&apos;s the example that matters to you: Say you buy a &quot;rare&quot; coin at 40% over the spot price of gold. When you try to sell it later, you might only get spot price back. That&apos;s a 40% loss right out of the gate. Earl, a retired welder from Tennessee, learned this lesson: &quot;They sold my buddy a &apos;collector&apos; coin. When he needed to sell three years later, he was down 35% even though gold prices went UP. Stick with regular bullion.&quot;
                             </p>
                             <p>
-                                This issue isn&apos;t unique to Rosland Capital—it&apos;s a problem across the Gold IRA industry. But Rosland is one of the companies that got <strong>caught</strong> for it.
+                                This isn&apos;t just a Rosland problem—it happens across the industry. But Rosland is one of the companies that got <strong>caught and fined</strong> for it.
                             </p>
                         </section>
 
@@ -224,12 +224,15 @@ export default function RoslandLawsuitPage() {
 
                         {/* Bottom Line */}
                         <section id="conclusion" className="scroll-mt-32">
-                            <h2>Bottom Line</h2>
+                            <h2>Bottom Line - Straight Talk</h2>
                             <p>
-                                Rosland Capital&apos;s regulatory history is a yellow flag, not necessarily a red one. They settled with the CFTC, made changes, and continue operating. But their core business model—pushing numismatic coins with high markups—hasn&apos;t fundamentally changed.
+                                Rosland Capital&apos;s regulatory history is a yellow flag, not a red one. They got caught, paid a fine, and say they cleaned up their act. They&apos;re still in business with an A+ BBB rating.
                             </p>
                             <p>
-                                For most investors looking for a straightforward Gold IRA, there are better options. But if you&apos;re drawn to Rosland&apos;s brand recognition and low minimums, just be informed and insist on standard bullion.
+                                <strong>But here&apos;s the concern:</strong> Their business model still emphasizes those high-markup numismatic coins. That&apos;s how they make money. If you work with them, you need to be firm: &quot;I only want standard bullion—American Eagles, Maple Leafs, bars. Nothing collectible.&quot;
+                            </p>
+                            <p>
+                                Honestly? For most working folks looking to protect their retirement savings, <strong>there are better options</strong> with cleaner records. Companies that don&apos;t have a history of regulatory problems and don&apos;t push expensive collectibles.
                             </p>
                             <p>
                                 For our full company assessment, see our <Link href="/reviews/rosland-capital" className="text-secondary hover:underline">Rosland Capital Review</Link>.

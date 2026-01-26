@@ -74,8 +74,8 @@ export default function CrashSimulatorPage() {
               Market Crash Simulator
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Test your portfolio against historical market crashes and see how
-              gold allocation could protect your retirement savings.
+              In 2008, workers lost 40% of their 401(k)s in months. Some near retirement
+              had to keep working. See what the next crash could do to YOUR savings.
             </p>
           </div>
         </Container>
@@ -222,8 +222,8 @@ export default function CrashSimulatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Ready to Add Gold to Your Portfolio?"
-            subheadline="Schedule a free consultation to discuss how gold can protect your specific retirement situation."
+            headline="You Can't Afford to Wait for the Next Crash"
+            subheadline="You've spent 30+ years building your 401(k). Don't let the next market crash wipe out decades of hard work. Talk to a Gold IRA specialist today."
             trackSource="tools-crash-simulator"
           />
         </Container>

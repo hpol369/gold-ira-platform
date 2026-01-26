@@ -108,7 +108,7 @@ export default function GoldIraTaxRulesPage() {
                             Gold IRA Tax Rules: 2026 Guide
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed">
-                            Everything you need to know about taxes, contributions, withdrawals, and avoiding costly penalties with your Gold IRA.
+                            The IRS rules aren&apos;t complicated, but make a mistake and you could owe thousands in penalties. Here&apos;s what you need to know before moving your hard-earned retirement savings.
                         </p>
                     </div>
                 </Container>
@@ -485,8 +485,8 @@ export default function GoldIraTaxRulesPage() {
                         <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Start Your Gold IRA?</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find the best gold IRA company for your situation with our free quiz.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect Your Retirement?</h3>
+                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">You&apos;ve done the smart thing learning the rules first. Now find the right company to work with.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>

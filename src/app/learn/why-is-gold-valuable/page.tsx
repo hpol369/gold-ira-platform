@@ -148,13 +148,13 @@ export default function WhyIsGoldValuablePage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                For over 5,000 years, gold has captivated human civilization. Empires have risen and fallen, currencies have come and gone, but <strong>gold has remained valuable</strong> through it all. Why?
+                                Your grandfather probably kept some gold coins in a lockbox. His grandfather did too. Meanwhile, the dollar in your wallet buys about 3 cents worth of what it bought in 1913. <strong>Gold doesn&apos;t play by the government&apos;s rules</strong>—and that&apos;s exactly why it matters.
                             </p>
                             <p>
-                                The answer isn&apos;t mystical—it&apos;s scientific, historical, and economic. Gold&apos;s value comes from a unique combination of physical properties that no other element on Earth can match. Understanding <strong>why gold is valuable</strong> isn&apos;t just an academic exercise—it&apos;s essential knowledge for anyone considering gold as part of their retirement strategy.
+                                This isn&apos;t mystical thinking. Gold&apos;s value comes from hard science and 5,000 years of history. It doesn&apos;t rust, can&apos;t be printed, and every civilization on Earth has recognized it as real money. When you&apos;ve spent 30 years building a $500K or $700K nest egg, understanding <em>why</em> gold holds its value isn&apos;t optional—it&apos;s protection against the next time politicians and bankers decide to print their way out of a crisis.
                             </p>
                             <p>
-                                In this guide, we&apos;ll explore the science behind gold&apos;s properties, its role throughout human history, and why it remains the ultimate &quot;safe haven&quot; asset in our modern financial system.
+                                Let&apos;s break down exactly why gold has outlasted every paper currency ever created—and why workers like you are adding it to their retirement savings.
                             </p>
                         </section>
 

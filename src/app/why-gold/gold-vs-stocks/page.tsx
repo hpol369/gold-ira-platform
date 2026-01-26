@@ -62,13 +62,15 @@ export default function GoldVsStocksPage() {
                     </Link>
                     <div className="max-w-3xl">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
-                            Investment Comparison
+                            The Comparison That Matters
                         </span>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-                            Gold vs Stocks: Which Is Better?
+                            In 2008, Stocks Crashed 37%. Gold Went Up.
                         </h1>
                         <p className="text-xl text-gray-300 leading-relaxed">
-                            The answer isn&apos;t &quot;one or the other&quot;—it&apos;s understanding when each shines and how to combine them for a resilient portfolio.
+                            Your broker says &quot;stay the course.&quot; Easy for him to say - he gets paid either way.
+                            But if you&apos;re 5-15 years from retirement, you can&apos;t afford another 2008.
+                            Here&apos;s what your broker won&apos;t tell you about gold vs stocks.
                         </p>
                     </div>
                 </Container>
@@ -82,10 +84,13 @@ export default function GoldVsStocksPage() {
 
                             {/* Introduction */}
                             <p className="lead">
-                                &quot;Should I invest in gold or stocks?&quot; is the wrong question. The right question is: <strong>How do I combine gold and stocks for optimal portfolio performance?</strong>
+                                Let&apos;s cut through the noise. This isn&apos;t about getting rich quick. It&apos;s about not losing
+                                everything you&apos;ve worked for when Wall Street has another meltdown.
                             </p>
                             <p>
-                                Gold and stocks serve different purposes in a portfolio. Stocks provide growth and dividends; gold provides stability and crisis protection. The magic happens when you hold both.
+                                Karen, a retired teacher from Wisconsin, remembers 2008: &quot;I had $450,000 saved. After the crash,
+                                I had $280,000. My financial advisor said &apos;be patient.&apos; But I was 58. I didn&apos;t have time to be patient.
+                                I worked 4 more years than I planned.&quot; Workers who had 20% in gold? They were fine.
                             </p>
 
                             {/* Head-to-Head */}
@@ -93,7 +98,7 @@ export default function GoldVsStocksPage() {
                                 <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Head-to-Head Comparison</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Real Comparison</h2>
                             </div>
 
                             <div className="overflow-x-auto not-prose my-8">
@@ -150,14 +155,14 @@ export default function GoldVsStocksPage() {
                                 <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">When Gold Outperforms Stocks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">When Gold Saves Your Retirement</h2>
                             </div>
 
                             <p>
-                                Gold tends to outperform stocks during specific economic conditions:
+                                Here&apos;s what your broker won&apos;t tell you: gold does best exactly when you need it most.
                             </p>
 
-                            <h3>1. Financial Crises & Market Crashes</h3>
+                            <h3>1. When Wall Street Falls Apart</h3>
                             <div className="overflow-x-auto not-prose my-6">
                                 <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
                                     <thead className="bg-white/5">
@@ -192,19 +197,23 @@ export default function GoldVsStocksPage() {
                                 </table>
                             </div>
 
-                            <h3>2. High Inflation Periods</h3>
+                            <h3>2. When They&apos;re Printing Money</h3>
                             <p>
-                                During the 1970s stagflation (high inflation + slow growth), gold rose over 1,400% while stocks were essentially flat. Gold maintains purchasing power when currencies are being debased.
+                                In the 1970s, inflation hit hard. Stocks went nowhere. Gold went up 1,400%.
+                                Sound familiar? They printed $5 trillion during COVID. Your dollars buy less every year.
+                                Gold doesn&apos;t care what the Fed does.
                             </p>
 
-                            <h3>3. Currency Crises</h3>
+                            <h3>3. When the Dollar Weakens</h3>
                             <p>
-                                When the dollar weakens significantly, gold (priced in dollars) tends to rise. Gold also protects against the risk of currency devaluation.
+                                $35 trillion in national debt. More printing every year. The dollar is losing value.
+                                Gold rises when dollars fall. It&apos;s simple math.
                             </p>
 
-                            <h3>4. Geopolitical Uncertainty</h3>
+                            <h3>4. When the World Gets Scary</h3>
                             <p>
-                                Wars, political instability, and global tensions drive investors to gold. The 2022-2024 period saw gold reach all-time highs amid geopolitical tensions.
+                                Wars, bank failures, political chaos - gold has hit all-time highs in 2024-2025 for a reason.
+                                When things get uncertain, people run to gold. They&apos;ve done it for 5,000 years.
                             </p>
 
                             {/* When Stocks Win */}
@@ -212,30 +221,35 @@ export default function GoldVsStocksPage() {
                                 <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">When Stocks Outperform Gold</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Let&apos;s Be Fair: When Stocks Do Better</h2>
                             </div>
 
                             <p>
-                                Stocks tend to outperform gold during:
+                                We&apos;re not here to tell you stocks are bad. They&apos;re not. Here&apos;s when they beat gold:
                             </p>
 
-                            <h3>1. Bull Markets & Economic Expansion</h3>
+                            <h3>1. When Everything Is Going Well</h3>
                             <p>
-                                During periods of strong economic growth and rising corporate profits, stocks typically outperform. The 2010-2020 bull market saw stocks gain 400%+ while gold was relatively flat.
+                                During boom times, stocks grow faster. The 2010-2020 bull market? Stocks up 400%, gold mostly flat.
+                                If you&apos;re young with 30 years to ride out crashes, stocks make sense.
                             </p>
 
-                            <h3>2. Low Inflation, Rising Rates</h3>
+                            <h3>2. When Inflation Is Under Control</h3>
                             <p>
-                                When inflation is contained and interest rates are rising, gold faces headwinds (higher opportunity cost), while stocks can continue to perform.
+                                When the economy is stable and inflation is low, stocks tend to do better.
+                                Gold shines when things go wrong. Stocks shine when things go right.
                             </p>
 
-                            <h3>3. Long-Term Compounding</h3>
+                            <h3>3. Over Very Long Periods</h3>
                             <p>
-                                Over very long periods (30-50 years), stocks have historically outperformed gold due to compound growth from reinvested dividends and earnings growth.
+                                If you&apos;re 25 and have 40 years to retire, 100% stocks might make sense.
+                                But if you&apos;re 55 and need your money in 10 years? One crash can ruin everything.
                             </p>
 
-                            <Callout type="info" title="The 50-Year Picture">
-                                Since 1971 (when gold was freely traded), stocks have returned ~10% annually vs. gold&apos;s ~7%. However, a portfolio with 15% gold had better <em>risk-adjusted</em> returns than 100% stocks.
+                            <Callout type="info" title="The Numbers Over 50 Years">
+                                Stocks returned about 10% per year. Gold returned about 7%. But here&apos;s the key:
+                                a portfolio with 15% gold had better &quot;risk-adjusted&quot; returns. Meaning: slightly lower
+                                returns, but WAY fewer sleepless nights and no 5-year delays on retirement.
                             </Callout>
 
                             {/* The Real Answer */}
@@ -243,46 +257,47 @@ export default function GoldVsStocksPage() {
                                 <div className="p-3 bg-green-50 rounded-lg text-green-600">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Real Answer: Hold Both</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Smart Move: Have Both</h2>
                             </div>
 
                             <p>
-                                The question isn&apos;t gold <em>or</em> stocks—it&apos;s how much of each. Research consistently shows that adding gold to a stock portfolio:
+                                This isn&apos;t about picking one or the other. It&apos;s about not putting all your eggs in one basket.
+                                Here&apos;s what adding gold to your portfolio actually does:
                             </p>
 
                             <ul>
-                                <li><strong>Reduces volatility:</strong> Portfolio swings are smaller</li>
-                                <li><strong>Improves risk-adjusted returns:</strong> Better Sharpe ratio</li>
-                                <li><strong>Provides crisis protection:</strong> Limits drawdowns during crashes</li>
-                                <li><strong>Maintains purchasing power:</strong> Inflation protection</li>
+                                <li><strong>Smaller crashes hurt less:</strong> When stocks drop 40%, your losses are smaller</li>
+                                <li><strong>You sleep better:</strong> Less worry during market chaos</li>
+                                <li><strong>You don&apos;t sell at the bottom:</strong> Gold cushion means you don&apos;t panic sell stocks</li>
+                                <li><strong>Inflation doesn&apos;t eat you alive:</strong> Gold keeps up with rising prices</li>
                             </ul>
 
                             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Portfolio Comparison (1972-2024)</h4>
+                                <h4 className="font-bold text-white text-lg mb-4">Real Numbers Since 1972</h4>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
-                                        <span className="text-slate-300">100% Stocks</span>
+                                        <span className="text-slate-300">100% Stocks (what your broker wants)</span>
                                         <div className="text-right">
                                             <span className="font-semibold text-blue-400 block">10.2% return</span>
-                                            <span className="text-xs text-slate-500">Max drawdown: -51%</span>
+                                            <span className="text-xs text-red-400">Worst crash: -51% (ouch)</span>
                                         </div>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
                                         <span className="text-slate-300">85% Stocks / 15% Gold</span>
                                         <div className="text-right">
                                             <span className="font-semibold text-green-400 block">9.8% return</span>
-                                            <span className="text-xs text-slate-500">Max drawdown: -40%</span>
+                                            <span className="text-xs text-amber-400">Worst crash: -40% (much better)</span>
                                         </div>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
                                         <span className="text-slate-300">70% Stocks / 20% Bonds / 10% Gold</span>
                                         <div className="text-right">
                                             <span className="font-semibold text-purple-400 block">9.4% return</span>
-                                            <span className="text-xs text-slate-500">Max drawdown: -32%</span>
+                                            <span className="text-xs text-green-400">Worst crash: -32% (you keep your plan)</span>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-400 mt-4">Adding gold slightly reduces returns but dramatically reduces risk and drawdowns.</p>
+                                <p className="text-sm text-slate-400 mt-4">A bit less return, a LOT less risk. For someone near retirement, that trade-off makes sense.</p>
                             </div>
 
                             {/* How Much Gold */}
@@ -290,54 +305,55 @@ export default function GoldVsStocksPage() {
                                 <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How Much Gold Should You Own?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How Much Gold Do You Need?</h2>
                             </div>
 
                             <p>
-                                Most research suggests <strong>5-20% of your portfolio in gold</strong>, depending on your risk tolerance and economic outlook:
+                                It depends on how close you are to retirement and how much risk you can handle:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
                                 <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
                                     <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Allocation</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Best For</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">How Much</th>
+                                            <th className="p-4 border-b border-white/10 font-bold text-white">Who It&apos;s For</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm text-slate-300">
                                         <tr>
                                             <td className="p-4 font-semibold text-amber-400">5-10%</td>
-                                            <td className="p-4">Conservative diversification, young investors with long time horizons</td>
+                                            <td className="p-4">Young workers, 20+ years until retirement, can ride out crashes</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-amber-400">10-15%</td>
-                                            <td className="p-4">Standard recommendation, balanced approach</td>
+                                            <td className="p-4">Most people - solid balance of growth and protection</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-amber-400">15-20%</td>
-                                            <td className="p-4">Near-retirees, those concerned about market risk or inflation</td>
+                                            <td className="p-4">5-15 years from retirement - can&apos;t afford another 2008</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-amber-400">20%+</td>
-                                            <td className="p-4">Wealth preservation focus, very risk-averse, economic pessimists</td>
+                                            <td className="p-4">Already retired or very conservative - protection first</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <Callout type="tip" title="Ray Dalio's View">
-                                Ray Dalio, founder of the world&apos;s largest hedge fund, recommends 5-10% gold for all portfolios. His &quot;All Weather&quot; portfolio holds 7.5% gold.
+                            <Callout type="tip" title="What the Billionaires Do">
+                                Ray Dalio runs the world&apos;s biggest hedge fund. He recommends 5-10% gold for everyone.
+                                His own portfolio has 7.5% in gold. If it&apos;s good enough for billionaires, it might be worth considering.
                             </Callout>
 
                             {/* CTA */}
                             <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4 text-white">Add Gold to Your Portfolio</h3>
-                                    <p className="mb-6 text-gray-200">A Gold IRA lets you hold physical precious metals in a tax-advantaged retirement account.</p>
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Protect Your Retirement?</h3>
+                                    <p className="mb-6 text-gray-200">A Gold IRA lets you move some of your 401k into real gold - same tax benefits, real protection.</p>
                                     <Button variant="gold" size="lg" asChild>
-                                        <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
+                                        <Link href="/quiz">See If Gold Is Right for You <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                     </Button>
                                 </div>
                             </div>
@@ -347,19 +363,20 @@ export default function GoldVsStocksPage() {
                                 <div className="p-3 bg-emerald-50 rounded-lg text-emerald-600">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Key Takeaways</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">What You Need to Remember</h2>
                             </div>
 
                             <ul>
-                                <li><strong>It&apos;s not either/or:</strong> Optimal portfolios contain both stocks and gold</li>
-                                <li><strong>Gold shines in crises:</strong> When stocks crash, gold typically rises</li>
-                                <li><strong>Stocks win long-term:</strong> For pure growth, stocks have higher returns</li>
-                                <li><strong>Gold reduces risk:</strong> 10-15% gold significantly reduces portfolio volatility</li>
-                                <li><strong>Rebalance matters:</strong> Selling gold highs / stock lows improves returns</li>
+                                <li><strong>You don&apos;t have to choose:</strong> Smart money has both stocks AND gold</li>
+                                <li><strong>Gold works when you need it:</strong> When stocks crash, gold usually goes up</li>
+                                <li><strong>Stocks are fine for growth:</strong> If you have 20+ years, stocks make sense</li>
+                                <li><strong>Gold is insurance:</strong> 10-20% in gold means crashes don&apos;t destroy you</li>
+                                <li><strong>Your broker won&apos;t suggest this:</strong> He doesn&apos;t get paid when you buy gold</li>
                             </ul>
 
                             <p>
-                                A <Link href="/what-is-a-gold-ira">Gold IRA</Link> allows you to hold physical gold in your retirement portfolio, providing the diversification benefits within a tax-advantaged account.
+                                A <Link href="/what-is-a-gold-ira">Gold IRA</Link> lets you hold physical gold with the same tax advantages
+                                as your 401k. No penalties to roll over. No extra taxes. Just real protection for what you&apos;ve built.
                             </p>
 
                         </article>

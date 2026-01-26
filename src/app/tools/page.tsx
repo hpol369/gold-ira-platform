@@ -648,11 +648,11 @@ export default function ToolsPage() {
               FREE TOOLS
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Gold IRA Tools & Calculators
+              Retirement Tools Built for Real Workers
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-4">
-              Make smarter retirement decisions with our free calculators and
-              analysis tools. No signup required.
+              After 30+ years of showing up every day, you've built something real.
+              These free calculators help you protect what you've earned. No signup required.
             </p>
             <p className="text-lg text-amber-400 font-semibold">
               {tools.length} Free Calculators Available
@@ -753,8 +753,8 @@ export default function ToolsPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Need Personalized Guidance?"
-            subheadline="Our tools give you insights, but a Gold IRA specialist can help you create a customized strategy for your specific situation."
+            headline="Ready to Protect What You've Built?"
+            subheadline="You've spent decades building your retirement savings. A Gold IRA specialist can show you how to protect it from the next market crash - no obligation, no pressure."
             trackSource="tools-hub"
           />
         </Container>

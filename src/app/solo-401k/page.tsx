@@ -104,13 +104,11 @@ export default function Solo401kPage() {
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                                 Solo 401k Guide:{" "}
-                                <span className="text-purple-400">The Best Retirement Plan for Self-Employed</span>
+                                <span className="text-purple-400">Built for People Who Work for Themselves</span>
                             </h1>
 
                             <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                                Maximize your self-employed retirement savings with a Solo 401k. Contribute up to{" "}
-                                <strong className="text-white">$70,000 in 2026</strong> ($77,500 if 50+), access Roth contributions,
-                                and borrow from your plan—benefits SEP IRAs don&apos;t offer.
+                                You work for yourself—whether as a contractor, consultant, or small business owner. You don&apos;t have an employer matching your contributions. A Solo 401k lets you put away up to <strong className="text-white">$70,000 a year</strong> ($77,500 if you&apos;re 50+). That&apos;s more than any IRA, and you can even borrow from it if you need to.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -159,15 +157,11 @@ export default function Solo401kPage() {
 
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                                    A <strong className="text-white">Solo 401k</strong> (also called Individual 401k, Self-Employed 401k,
-                                    or One-Participant 401k) is a retirement plan designed specifically for self-employed individuals
-                                    and business owners with <strong className="text-white">no full-time employees other than a spouse</strong>.
+                                    A <strong className="text-white">Solo 401k</strong> is a retirement plan for self-employed people with no employees (except maybe your spouse). It goes by other names—Individual 401k, Self-Employed 401k—but it&apos;s all the same thing.
                                 </p>
 
                                 <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                                    It combines the features of a traditional employer 401(k) with the flexibility needed by solo entrepreneurs.
-                                    You act as both the employer AND the employee, allowing you to make contributions in both capacities—which
-                                    is why the limits are so high.
+                                    Here&apos;s why the contribution limits are so high: you get to contribute as both the &quot;employer&quot; AND the &quot;employee&quot; of your own business. A regular IRA caps you at $7,000 a year. A Solo 401k lets you put away up to $70,000. If you&apos;ve been working for yourself for years and feel behind on retirement savings, this is how you catch up.
                                 </p>
                             </div>
 
@@ -537,11 +531,10 @@ export default function Solo401kPage() {
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                                Ready to Maximize Your Self-Employed Retirement?
+                                Working for Yourself Shouldn&apos;t Mean Falling Behind
                             </h2>
                             <p className="text-xl text-slate-300 mb-8">
-                                Open a Solo 401k today and start contributing up to $70,000 annually
-                                toward your retirement.
+                                You took the risk of going independent. A Solo 401k lets you save for retirement like the big companies do—sometimes even better. If you&apos;ve got self-employment income, this is one of the best tax breaks available.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">

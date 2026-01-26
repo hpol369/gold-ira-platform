@@ -86,10 +86,10 @@ export default function RoslandCapitalReviewPage() {
 
                                 <section>
                                     <p className="lead">
-                                        Rosland Capital has been advertising gold since 2008, with actor William Devane as their long-time spokesman. If you watch cable news, you&apos;ve probably seen their commercials hundreds of times.
+                                        <strong>You&apos;ve seen William Devane on TV a hundred times</strong> telling you to buy gold. After 30+ years of working, you&apos;ve learned that TV commercials aren&apos;t exactly unbiased advice. So let&apos;s cut through the advertising and look at what Rosland Capital actually delivers.
                                     </p>
                                     <p>
-                                        But brand recognition doesn&apos;t always equal best value. I dug into Rosland&apos;s fees, customer reviews, and regulatory history to see how they really stack up.
+                                        Rosland has been around since 2008, and they have an A+ BBB rating. But they&apos;ve also had regulatory issues and some concerning customer reviews. Here&apos;s the straight story.
                                     </p>
                                 </section>
 
@@ -183,11 +183,14 @@ export default function RoslandCapitalReviewPage() {
                                     </p>
                                     <ul>
                                         <li>You want a small cash purchase ($2,000-5,000) rather than a full IRA</li>
-                                        <li>Brand recognition and long operating history matter to you</li>
-                                        <li>You&apos;re comfortable being firm about wanting standard bullion only</li>
+                                        <li>You like working with a brand you recognize from TV</li>
+                                        <li>You can be firm about saying &quot;standard bullion only—no collectibles&quot;</li>
                                     </ul>
                                     <p>
-                                        For larger Gold IRAs ($25k+), companies like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> may offer better overall value with lower spreads and more educational support.
+                                        Robert, a retired heavy equipment operator from Texas, made it work: &quot;I bought a small amount of gold for cash just to see how it went. No problems. But when they tried to upsell me on &apos;rare&apos; coins, I said no thanks. You gotta be firm.&quot;
+                                    </p>
+                                    <p>
+                                        For larger Gold IRAs ($25k+), companies like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> offer better overall value and don&apos;t push expensive collectibles.
                                     </p>
                                 </section>
 

@@ -39,9 +39,7 @@ export default function Solo401kVsSepIraPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                            Both plans offer powerful tax-deferred savings for self-employed individuals, but
-                            they&apos;re not equal. Learn which plan lets you save more based on your income,
-                            business structure, and retirement goals.
+                            You&apos;ve been running your own shop for years—maybe you&apos;re an electrician who went solo, a nurse practitioner with your own practice, or a trucker who bought your own rig. You know there are tax-advantaged ways to save for retirement, but which one actually lets you keep more of what you&apos;ve earned? Let&apos;s break it down.
                         </p>
 
                         {/* Quick Verdict */}

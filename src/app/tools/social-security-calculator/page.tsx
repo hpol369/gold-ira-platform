@@ -156,7 +156,8 @@ export default function SocialSecurityCalculatorPage() {
                 Social Security Optimizer
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-                Find your optimal Social Security claiming age to maximize lifetime benefits
+                After decades of paying into the system, you've earned every dollar.
+                This calculator helps you claim at the right time - especially if your body can't wait until 70.
               </p>
             </motion.div>
           </div>
@@ -621,8 +622,8 @@ export default function SocialSecurityCalculatorPage() {
                   {/* CTA */}
                   <AugustaCTA
                     variant="inline"
-                    headline="Bridge the Gap Before Social Security"
-                    subheadline="If you're considering delaying Social Security, a Gold IRA can provide stable income during the waiting years while protecting against inflation."
+                    headline="Need Income Before 62? There's a Way."
+                    subheadline="If your body can't wait for Social Security, a Gold IRA can provide income without the early claiming penalty - and protect your savings from inflation."
                   />
 
                   {/* Action Buttons */}

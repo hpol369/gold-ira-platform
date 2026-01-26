@@ -86,7 +86,7 @@ export default function CryptoIRAPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                            Invest in Bitcoin, Ethereum, and 30+ cryptocurrencies within a tax-advantaged retirement account. Your gains grow tax-deferred or tax-free.
+                            You&apos;ve watched Bitcoin go from $1,000 to $100,000. If you believe crypto is here to stay, a Crypto IRA lets you add some to your retirement—with the same tax advantages as your 401k. Here&apos;s what you need to know.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -114,17 +114,17 @@ export default function CryptoIRAPage() {
 
                         <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white">
                             <p>
-                                A <strong>Crypto IRA</strong> (also called a Bitcoin IRA or Digital Asset IRA) is a self-directed individual retirement account that allows you to invest in cryptocurrencies like Bitcoin, Ethereum, and other digital assets within a tax-advantaged structure.
+                                Here&apos;s the plain English version: A <strong>Crypto IRA</strong> is a retirement account that lets you hold Bitcoin, Ethereum, and other cryptocurrencies instead of just stocks and bonds. Same tax advantages as your regular IRA—just different investments inside.
                             </p>
                             <p>
-                                Unlike regular crypto investing through exchanges like Coinbase or Kraken, a Crypto IRA offers significant tax benefits:
+                                The tax benefits are real:
                             </p>
                             <ul>
-                                <li><strong>Traditional Crypto IRA:</strong> Contributions may be tax-deductible, and gains grow tax-deferred until withdrawal</li>
-                                <li><strong>Roth Crypto IRA:</strong> Contributions are after-tax, but qualified withdrawals (including all gains) are completely tax-free</li>
+                                <li><strong>Traditional Crypto IRA:</strong> You don&apos;t pay taxes on gains until you withdraw in retirement</li>
+                                <li><strong>Roth Crypto IRA:</strong> You pay taxes on contributions now, but all gains are tax-free forever</li>
                             </ul>
                             <p>
-                                For long-term crypto investors, these tax advantages can result in tens of thousands of dollars in savings compared to taxable accounts where every trade triggers a taxable event.
+                                Compare that to buying crypto on Coinbase, where every time you sell—even to buy a different coin—you owe taxes on any gains. For someone planning to hold long-term, a Crypto IRA can save tens of thousands in taxes.
                             </p>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ export default function CryptoIRAPage() {
             {/* Key Benefits */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-white mb-12 text-center">Why Consider a Crypto IRA?</h2>
+                    <h2 className="text-3xl font-serif font-bold text-white mb-12 text-center">Why Some Retirees Add Crypto</h2>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
@@ -143,7 +143,7 @@ export default function CryptoIRAPage() {
                             </div>
                             <h3 className="text-xl font-bold text-white mb-3">Tax-Free Growth</h3>
                             <p className="text-slate-400">
-                                In a Roth Crypto IRA, your Bitcoin gains are completely tax-free when you withdraw in retirement. No capital gains tax on potentially massive returns.
+                                In a Roth Crypto IRA, if Bitcoin goes from $100k to $500k over the next decade, you pay zero taxes on that $400k gain. Not a typo—zero.
                             </p>
                         </div>
 
@@ -151,9 +151,9 @@ export default function CryptoIRAPage() {
                             <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
                                 <TrendingUp className="w-6 h-6 text-blue-400" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">Portfolio Diversification</h3>
+                            <h3 className="text-xl font-bold text-white mb-3">Something Different</h3>
                             <p className="text-slate-400">
-                                Crypto has low correlation with stocks and bonds. Adding it to your retirement portfolio can reduce overall risk while potentially boosting returns.
+                                If you already have stocks and bonds in your 401k, crypto moves differently. When stocks crash, crypto sometimes doesn&apos;t follow—and vice versa.
                             </p>
                         </div>
 
@@ -161,9 +161,9 @@ export default function CryptoIRAPage() {
                             <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
                                 <Clock className="w-6 h-6 text-purple-400" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">24/7 Trading</h3>
+                            <h3 className="text-xl font-bold text-white mb-3">Long-Term Bet</h3>
                             <p className="text-slate-400">
-                                Unlike stocks, crypto markets never close. Trade Bitcoin and other assets anytime—nights, weekends, holidays—whenever opportunity strikes.
+                                If you believe crypto will be bigger in 10-20 years, an IRA lets you hold without worrying about taxes on every price swing along the way.
                             </p>
                         </div>
                     </div>
@@ -446,10 +446,10 @@ export default function CryptoIRAPage() {
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl font-serif font-bold text-white mb-4">
-                            Ready to Start Your Crypto IRA?
+                            Think Crypto Has a Future?
                         </h2>
                         <p className="text-xl text-slate-300 mb-8">
-                            Open an account with our top-rated provider in minutes.
+                            If you&apos;ve done your homework and believe crypto belongs in your retirement, a Crypto IRA is the tax-smart way to do it. Just remember—only invest what you can afford to hold through the ups and downs.
                         </p>
                         <Button variant="gold" size="xl" asChild>
                             <a href={getTrackedLink(AFFILIATE_LINKS.itrustcapital, "crypto-ira-page", "itrustcapital")} target="_blank" rel="noopener noreferrer">

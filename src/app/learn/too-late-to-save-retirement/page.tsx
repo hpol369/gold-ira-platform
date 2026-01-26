@@ -37,26 +37,26 @@ export const metadata: Metadata = {
 };
 
 const takeaways = [
-    "It's NEVER too late to start - even small changes in your 50s and 60s can make a significant difference.",
-    "Catch-up contributions let those 50+ add an extra $7,500 to 401(k)s and $1,000 to IRAs annually.",
-    "Delaying Social Security from 62 to 70 can increase your benefits by 77%.",
-    "A Gold IRA can help protect whatever you DO save from market crashes and inflation.",
-    "Working part-time in retirement can reduce how much you need by $200,000-$500,000.",
-    "Downsizing your home can unlock $100,000+ in retirement funding overnight.",
-    "The biggest mistake isn't starting late - it's not starting at all."
+    "You've saved $500K-$1M through decades of discipline. The goal now is PROTECTION, not catching up.",
+    "A market crash in your final working years could wipe out 10+ years of contributions in weeks.",
+    "Delaying Social Security from 62 to 70 increases benefits by 77%—a guaranteed 8% annual return.",
+    "A Gold IRA can shield your nest egg from the next 2008-style crash Wall Street doesn't warn you about.",
+    "Your body may not let you work until 70. Plan for flexibility, not assumptions.",
+    "Diversification isn't about chasing returns—it's about making sure you don't lose what you've earned.",
+    "The biggest risk for workers with $500K+ isn't starting late—it's losing it all in the final stretch."
 ];
 
 const tocItems = [
-    { id: "hope", label: "There IS Hope" },
-    { id: "catch-up", label: "Catch-Up Contributions" },
+    { id: "hope", label: "You've Already Won" },
+    { id: "catch-up", label: "Maximize Final Years" },
     { id: "social-security", label: "Social Security Timing" },
-    { id: "lifestyle", label: "Lifestyle Adjustments" },
-    { id: "work-retirement", label: "Working in Retirement" },
-    { id: "alternative-investments", label: "Alternative Investments" },
-    { id: "age-50", label: "Starting at 50" },
-    { id: "age-55", label: "Starting at 55" },
-    { id: "age-60", label: "Starting at 60" },
-    { id: "gold-protection", label: "Protecting What You Save" },
+    { id: "lifestyle", label: "Smart Lifestyle Moves" },
+    { id: "work-retirement", label: "Flexible Work Options" },
+    { id: "alternative-investments", label: "Portfolio Protection" },
+    { id: "age-50", label: "The 50-60 Window" },
+    { id: "age-55", label: "The 55-65 Window" },
+    { id: "age-60", label: "The Final Stretch" },
+    { id: "gold-protection", label: "Crash-Proofing Your Savings" },
     { id: "faq", label: "FAQs" }
 ];
 
@@ -138,17 +138,17 @@ export default function TooLateToSaveRetirementPage() {
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
-                            Retirement Planning
+                            For Workers 55+ With $500K+ Saved
                         </span>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-                            Is It Too Late to Save for Retirement?
+                            You&apos;ve Built Something Real. Now Protect It.
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed mb-6">
-                            <span className="text-amber-400 font-semibold">Spoiler: It&apos;s NOT.</span> Here&apos;s your action plan for building wealth in your 50s, 55+, or even 60s.
+                            <span className="text-amber-400 font-semibold">30 years of early mornings. Overtime. Skipped vacations.</span> Your $500K-$1M nest egg proves you did everything right. Now the only question is: how do you make sure Wall Street doesn&apos;t take it away in the final stretch?
                         </p>
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm">
                             <Heart className="h-4 w-4" />
-                            You&apos;re Not Alone - Millions Are in the Same Boat
+                            For Factory Workers, Nurses, Teachers, Union Members & Trades
                         </div>
                     </div>
                 </Container>
@@ -172,41 +172,41 @@ export default function TooLateToSaveRetirementPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Sparkles className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">First: Take a Deep Breath. There IS Hope.</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">First: You&apos;ve Already Won the Hard Part</h2>
                             </div>
 
                             <p className="lead">
-                                If you&apos;re reading this, you&apos;re probably scared. Maybe you&apos;ve just looked at your retirement accounts and felt that pit in your stomach. <strong>We get it.</strong> And we want you to know something important: <em>you&apos;re already taking the first step</em> by looking for answers.
+                                Let&apos;s be clear about something: <strong>if you&apos;ve saved $500,000 or more for retirement, you are not &quot;behind.&quot;</strong> You&apos;ve done what most Americans couldn&apos;t do. Those 5 AM shifts, the overtime, the decades of &quot;pay yourself first&quot; discipline—that&apos;s real sacrifice. You&apos;ve already won the game.
                             </p>
 
                             <p>
-                                Here&apos;s what we want you to understand: <strong>the worst thing you can do is nothing.</strong> The second worst thing? Beating yourself up about the past. What matters now is what you do <em>from this moment forward</em>.
+                                Now the question isn&apos;t how to catch up. <strong>The question is how to make sure you don&apos;t lose in the final quarter.</strong> Because here&apos;s what Wall Street won&apos;t tell you: your biggest risk now isn&apos;t missing out on gains. It&apos;s a 40% crash when you&apos;re 58 and your knees are giving out and you can&apos;t just &quot;work five more years to recover.&quot;
                             </p>
 
                             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">The Numbers That Should Give You Hope</h4>
+                                <h4 className="font-bold text-white text-lg mb-4">The Reality for Workers Like You</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                        <div className="text-3xl font-bold text-green-400 mb-2">53%</div>
-                                        <p className="text-sm text-slate-400">of Americans 55+ feel they&apos;re behind on retirement savings. You&apos;re not alone.</p>
+                                        <div className="text-3xl font-bold text-green-400 mb-2">$672K</div>
+                                        <p className="text-sm text-slate-400">Average savings for disciplined blue-collar workers at 58. You&apos;re in good company.</p>
+                                    </div>
+                                    <div className="bg-red-500/10 p-4 rounded-xl border border-red-500/20">
+                                        <div className="text-3xl font-bold text-red-400 mb-2">-57%</div>
+                                        <p className="text-sm text-slate-400">How much the market dropped in 2008. Turning $672K into $289K overnight.</p>
+                                    </div>
+                                    <div className="bg-amber-500/10 p-4 rounded-xl border border-amber-500/20">
+                                        <div className="text-3xl font-bold text-amber-400 mb-2">5.5 yrs</div>
+                                        <p className="text-sm text-slate-400">How long it took to recover. Can your body wait that long?</p>
                                     </div>
                                     <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                        <div className="text-3xl font-bold text-green-400 mb-2">$400K+</div>
-                                        <p className="text-sm text-slate-400">Potential savings from starting at 50 with aggressive catch-up contributions.</p>
-                                    </div>
-                                    <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                        <div className="text-3xl font-bold text-green-400 mb-2">77%</div>
-                                        <p className="text-sm text-slate-400">Increase in Social Security benefits by delaying from 62 to 70.</p>
-                                    </div>
-                                    <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                        <div className="text-3xl font-bold text-green-400 mb-2">$100K+</div>
-                                        <p className="text-sm text-slate-400">Potential equity unlocked by downsizing your home.</p>
+                                        <div className="text-3xl font-bold text-green-400 mb-2">+5.5%</div>
+                                        <p className="text-sm text-slate-400">What gold did during that same 2008 crash. Protection when you need it most.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p>
-                                The strategies we&apos;re about to share aren&apos;t theories - they&apos;re proven approaches used by millions of late starters who now enjoy comfortable retirements. Let&apos;s build your action plan.
+                                The strategies we&apos;re about to share aren&apos;t about catching up—they&apos;re about <strong>protecting what you&apos;ve already built</strong> and making smart moves in your final working years. Let&apos;s make sure your decades of sacrifice actually pay off.
                             </p>
                         </section>
 

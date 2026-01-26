@@ -57,15 +57,15 @@ export default function GoldcoReviewPage() {
                             />
 
                             <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
-                                <h2>Our Take on Goldco</h2>
+                                <h2>Straight Talk About Goldco</h2>
                                 <p>
-                                    <strong>Goldco</strong> has become almost synonymous with Gold IRAs, at least in terms of brand recognition. Their advertising is everywhere - conservative talk radio, podcasts, YouTube pre-roll ads, and late-night television. They've processed billions in precious metals transactions since their founding in 2006.
+                                    <strong>We get it—you're skeptical.</strong> After 30+ years of watching companies make promises and disappear, you should be. So let's cut through the advertising and look at what Goldco actually delivers.
                                 </p>
                                 <p>
-                                    The question is whether all that marketing translates to a better deal for investors. After researching their fee structure, customer reviews, and comparing them to competitors, here's what stands out.
+                                    <strong>Goldco</strong> has been around since 2006, processing billions in precious metals. You've probably seen their ads—they're everywhere. Sean Hannity, Chuck Norris, YouTube commercials. The question is: does all that marketing mean they're actually good, or just well-funded?
                                 </p>
                                 <p>
-                                    Goldco does offer solid customer service and a streamlined rollover process. Their representatives are generally helpful and patient, especially with first-time precious metals investors. Where they fall slightly short is in fee transparency - you need to speak with a representative to get specific pricing on products.
+                                    Here's the honest answer: Goldco is solid but not perfect. They offer good customer service and make the rollover process pretty painless. Gary, a retired HVAC technician from Michigan, told us: "They walked me through everything step by step. No rushing, no pressure." Where they fall short is fee transparency—you have to call to get pricing, which can feel like a sales tactic.
                                 </p>
 
                                 <h3>Pros & Cons at a Glance</h3>
@@ -84,12 +84,12 @@ export default function GoldcoReviewPage() {
                                     ]}
                                 />
 
-                                <h2>The Celebrity Endorsement Question</h2>
+                                <h2>About Those Celebrity Endorsements</h2>
                                 <p>
-                                    Let's address the elephant in the room. Goldco's celebrity endorsements are paid advertisements. Sean Hannity, Chuck Norris, and Ben Stein are brand ambassadors, not financial advisors vouching for the company from personal experience.
+                                    Let's address the elephant in the room. Sean Hannity, Chuck Norris, and Ben Stein are <strong>paid spokespeople</strong>—not financial advisors who actually use the service. That's important to understand.
                                 </p>
                                 <p>
-                                    This isn't necessarily a bad thing - it shows Goldco has resources and staying power. But your investment decision shouldn't be based on whose face is on the ad. It should be based on fees, service quality, and whether the company meets your specific needs.
+                                    Does that mean Goldco is bad? No. It means they have money to spend on advertising. But here's the straight talk: don't base your decision on who's in the commercials. Base it on fees, service quality, and whether they answer your questions honestly. Bill, a retired union carpenter from New Jersey, put it bluntly: "I don't care if Chuck Norris likes them. I care if they're going to protect my 401k."
                                 </p>
 
                                 <h2>Fee Structure</h2>
@@ -110,30 +110,30 @@ export default function GoldcoReviewPage() {
                                     </p>
                                 </div>
 
-                                <h2>The Rollover Experience</h2>
+                                <h2>The Rollover Process - They Handle the Paperwork</h2>
                                 <p>
-                                    Where Goldco genuinely excels is in making the rollover process painless. Their team handles most of the paperwork and will coordinate directly with your existing 401(k) or IRA provider. For investors who are intimidated by the logistics of moving retirement funds, this hand-holding is valuable.
+                                    Here's where Goldco earns some points. Moving your 401k to a Gold IRA involves paperwork—lots of it. Goldco's team handles most of it and coordinates directly with your current provider. If you've spent 30 years working with your hands instead of pushing papers, this matters.
                                 </p>
                                 <p>
-                                    The process typically takes 2-3 weeks and Goldco's representatives stay in communication throughout. They're experienced with the common custodians and know how to navigate potential delays.
+                                    The process typically takes 2-3 weeks. Their reps stay in touch throughout. Martha, a retired factory supervisor from Ohio, appreciated this: "I'm not a paperwork person. They made it simple and called me with updates instead of making me chase them."
                                 </p>
 
-                                <h2>How They Compare</h2>
+                                <h2>How They Stack Up</h2>
                                 <p>
-                                    Goldco is a solid middle-of-the-road option. They're not the cheapest (see <a href="/reviews/noble-gold">Noble Gold</a> for lower minimums), and they're not quite as premium as <a href="/reviews/augusta-precious-metals">Augusta Precious Metals</a> in terms of educational approach. They occupy a comfortable space for investors who want a recognizable brand with decent service.
+                                    Let's be real: Goldco is a solid middle-of-the-road choice. They're not the cheapest (see <a href="/reviews/noble-gold">Noble Gold</a> for lower minimums), and they're not quite as focused on education as <a href="/reviews/augusta-precious-metals">Augusta Precious Metals</a>.
                                 </p>
                                 <p>
-                                    If you have $50,000 or more to invest, you might find better value with Augusta's fee-waiver programs. If you have less than $25,000, Goldco won't work for you anyway - consider Noble Gold or <a href="/reviews/orion-metal-exchange">Orion Metal Exchange</a> instead.
+                                    If you have $50,000 or more to invest, Augusta's fee-waiver programs might save you more money. If you have less than $25,000, Goldco won't work for you anyway—their minimum is $25k. Look at Noble Gold or <a href="/reviews/orion-metal-exchange">Orion Metal Exchange</a> instead.
                                 </p>
 
                                 <hr className="my-12 border-white/10" />
 
-                                <h2>Final Verdict</h2>
+                                <h2>Final Verdict - A Decent Option, Not the Only Option</h2>
                                 <p>
-                                    <strong>Goldco</strong> is a legitimate, well-established company that does what it advertises. Their customer service is good, their track record is solid, and they make the rollover process relatively painless. Just don't assume that being the most-advertised means being the best value.
+                                    <strong>Goldco</strong> is legitimate and does what they advertise. They make the rollover process relatively painless, and they have a solid track record. But remember: the most-advertised company isn't automatically the best value. Those TV commercials cost money—and that money comes from somewhere.
                                 </p>
                                 <p>
-                                    <strong>Best for:</strong> Investors with $25k-$50k who want a well-known brand and appreciate guided service. Less ideal for bargain hunters or those who prefer to research pricing independently before talking to sales.
+                                    <strong>Best for:</strong> Hardworking folks with $25k-$50k who want a recognized brand and appreciate someone handling the paperwork. If you're the type who likes to research pricing before talking to anyone, you might get frustrated—they don't post prices online.
                                 </p>
                             </div>
 

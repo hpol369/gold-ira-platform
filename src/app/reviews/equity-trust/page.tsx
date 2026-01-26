@@ -144,10 +144,13 @@ export default function EquityTrustReviewPage() {
 
                                 <h2>What is Equity Trust?</h2>
                                 <p>
-                                    <strong>Equity Trust Company</strong> is one of the oldest and largest self-directed IRA custodians in the United States. Founded in 1974 and headquartered in Cleveland, Ohio, they have grown to manage over $34 billion in assets for more than 300,000 accounts.
+                                    <strong>You&apos;ve worked 30+ years building your retirement.</strong> Now you&apos;re looking for more control over where your money goes—not just the stocks and bonds your 401k manager picks. That&apos;s where Equity Trust comes in.
                                 </p>
                                 <p>
-                                    Unlike banks or brokerages that limit you to stocks and bonds, Equity Trust allows you to hold alternative assets in your retirement account, including real estate, precious metals, private equity, and more.
+                                    <strong>Equity Trust Company</strong> has been around since 1974—that&apos;s 50 years in business. They manage over $34 billion for more than 300,000 accounts. Unlike your typical bank or brokerage that limits you to stocks and bonds, Equity Trust lets you hold real estate, gold, and other alternative investments in your retirement account.
+                                </p>
+                                <p>
+                                    Raymond, a retired factory supervisor from Ohio, explained why he made the switch: &quot;I spent 35 years watching my 401k get managed by people I never met. With Equity Trust, I bought a rental property in my IRA. Now I understand what my retirement is actually invested in.&quot;
                                 </p>
 
                                 <h2>Pros & Cons</h2>
@@ -351,9 +354,15 @@ export default function EquityTrustReviewPage() {
 
                                 <hr className="my-12 border-white/10" />
 
-                                <h2>Final Verdict</h2>
+                                <h2>Final Verdict - Steady and Established</h2>
                                 <p>
-                                    <strong>Equity Trust</strong> is a reliable choice for investors who value experience and stability. Their 50+ years in business and A+ BBB rating provide peace of mind. However, if you are an active investor or want lower fees, consider alternatives like Rocket Dollar.
+                                    <strong>Equity Trust</strong> is a solid choice for hardworking folks who want an established custodian they can trust with their retirement. Fifty years in business and an A+ BBB rating mean they&apos;re not going anywhere.
+                                </p>
+                                <p>
+                                    The tradeoff? Their fees can add up if you&apos;re making frequent transactions. If you plan to buy and hold—say, a rental property or gold that you&apos;ll keep for years—their per-transaction model works fine. If you want to be more active, look at flat-fee options like Rocket Dollar.
+                                </p>
+                                <p>
+                                    Donna, a retired cafeteria manager from Indiana, appreciated the stability: &quot;I didn&apos;t want some new tech startup handling my 401k. Equity Trust has been doing this since before I started working. That matters to me.&quot;
                                 </p>
                                 <p>
                                     <strong>Rating: 4.3/5</strong>

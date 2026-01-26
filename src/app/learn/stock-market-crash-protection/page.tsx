@@ -139,13 +139,13 @@ export default function StockMarketCrashProtectionPage() {
                         {/* Overview */}
                         <section id="overview" className="scroll-mt-32">
                             <p className="lead">
-                                If your retirement savings are heavily invested in the stock market, you&apos;re exposed to a risk that has wiped out decades of savings for millions of Americans: the <strong>stock market crash</strong>.
+                                You&apos;ve worked 30 years building something real. Early shifts, overtime, skipped vacations—all so you could look at that 401(k) statement and see $600K, $700K, maybe more. <strong>Now imagine watching half of it disappear in six months.</strong>
                             </p>
                             <p>
-                                Crashes aren&apos;t rare events—they happen with alarming regularity. And for those near or in retirement, a major market downturn can be catastrophic. The 2008 crash cut many retirement portfolios in half. Some people had to delay retirement by years. Others ran out of money entirely.
+                                That&apos;s not a scare tactic. That&apos;s 2008. Folks who retired that January watched their $800K become $340K by March 2009. Some had to go back to work in their late 60s. Others never recovered. The market eventually came back—but for teachers, nurses, factory workers, and truck drivers whose bodies were already wearing out, <strong>&quot;wait five years&quot; wasn&apos;t an option</strong>.
                             </p>
                             <p>
-                                But here&apos;s the good news: <strong>crash protection exists</strong>. By understanding the risks and taking action before the next crash, you can protect your retirement savings from the worst of market volatility.
+                                Here&apos;s the good news: <strong>crash protection exists</strong>. You don&apos;t have to bet your retirement on Wall Street&apos;s next mood swing. By taking action <em>before</em> the next crash, you can protect the nest egg you&apos;ve spent decades building.
                             </p>
                         </section>
 

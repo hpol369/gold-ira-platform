@@ -59,7 +59,7 @@ export default function SelfDirectedIraGoldPage() {
                                 Self-Directed IRA Gold: <br />The Complete 2026 Guide
                             </h1>
                             <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
-                                Most retirement accounts limit you to stocks and bonds. A Self-Directed IRA changes that—it lets you invest in physical gold, real estate, and other alternative assets. Here's everything you need to know.
+                                Your company 401(k) limits you to whatever funds they picked—and you&apos;ve seen how that works out when markets crash. A Self-Directed IRA puts YOU in control. Hold physical gold, real estate, and assets that Wall Street can&apos;t gamble away.
                             </p>
                         </div>
                     </Container>
@@ -79,13 +79,13 @@ export default function SelfDirectedIraGoldPage() {
                             <section id="what-is-sdir" className="scroll-mt-32">
                                 <h2>What is a Self-Directed IRA?</h2>
                                 <p>
-                                    A <strong>Self-Directed IRA (SDIRA)</strong> is a retirement account that gives you control over your investment choices. Unlike traditional IRAs managed by brokerage firms that restrict you to their approved products, a self-directed account lets you invest in alternative assets—including physical precious metals.
+                                    For 30 years, your 401(k) has been at the mercy of whatever investment options your employer chose. Turns out, that&apos;s not your only option. A <strong>Self-Directed IRA (SDIRA)</strong> puts you back in the driver&apos;s seat—letting you invest in physical gold, silver, real estate, and other assets that don&apos;t disappear when Wall Street has a bad week.
                                 </p>
                                 <p>
-                                    The "self-directed" part doesn't mean you handle everything yourself. You still need a <strong>custodian</strong> (a financial institution approved by the IRS to hold retirement assets), but that custodian doesn't limit your investment options or push you toward certain products.
+                                    &quot;Self-directed&quot; doesn&apos;t mean you&apos;re doing paperwork on your kitchen table. You still have a <strong>custodian</strong> (an IRS-approved company that handles the legal stuff), but they don&apos;t tell you what to buy or push you toward funds that earn them commissions.
                                 </p>
                                 <p>
-                                    For gold investors, an SDIRA is the <strong>only legal way</strong> to hold physical gold in a retirement account with tax advantages. You can't just buy gold coins and stick them in a regular IRA—the IRS requires specific custodians, approved depositories, and compliant metals.
+                                    Here&apos;s the thing most financial advisors won&apos;t mention: an SDIRA is the <strong>only legal way</strong> to hold physical gold coins and bars in a tax-advantaged retirement account. You can&apos;t just buy gold and store it in your regular IRA—but with a Self-Directed IRA, you can own the real thing.
                                 </p>
 
                                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">

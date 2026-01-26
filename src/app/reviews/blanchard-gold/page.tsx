@@ -87,10 +87,10 @@ export default function BlanchardGoldReviewPage() {
 
                                 <section id="history" className="scroll-mt-32">
                                     <p className="lead">
-                                        Blanchard and Company is a legend in the precious metals world. Founded in 1975, just one year after it became legal for Americans to own gold again, the company was started by James Blanchard III—one of the activists who fought to restore gold ownership rights.
+                                        <strong>Let&apos;s be upfront:</strong> Blanchard is one of the most historic names in American gold dealing. But &quot;historic&quot; and &quot;best for your retirement&quot; aren&apos;t the same thing. Here&apos;s what you need to know.
                                     </p>
                                     <p>
-                                        That&apos;s serious pedigree. Blanchard literally helped create the modern gold investment market in America. But 50 years later, does their expertise still translate to the best value for investors?
+                                        Founded in 1975—just one year after Americans could legally own gold again—Blanchard helped create this entire industry. James Blanchard III, the founder, was one of the people who fought to restore gold ownership rights. That&apos;s real pedigree. But after 50 years, does their expertise actually help regular folks like you protect their retirement savings?
                                     </p>
 
                                     <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 flex gap-4 not-prose my-6">
@@ -105,12 +105,12 @@ export default function BlanchardGoldReviewPage() {
                                 </section>
 
                                 <section id="numismatics" className="scroll-mt-32">
-                                    <h2>The Numismatic Focus: Blessing or Curse?</h2>
+                                    <h2>The Rare Coin Question - Read This Carefully</h2>
                                     <p>
-                                        Here&apos;s where things get complicated. Blanchard specializes in <strong>numismatic coins</strong>—rare, collectible coins valued for more than just their metal content. They have deep expertise in this area, probably more than any other Gold IRA company.
+                                        Here&apos;s where we need to give you straight talk. Blanchard specializes in <strong>numismatic coins</strong>—rare, collectible coins valued for more than just their gold content. They know more about rare coins than almost anyone in the business.
                                     </p>
                                     <p>
-                                        But for most IRA investors, numismatic coins are the wrong choice.
+                                        <strong>But here&apos;s the problem:</strong> For most folks looking to protect their retirement, rare coins are the wrong choice. Let us explain why.
                                     </p>
 
                                     <div className="bg-amber-50 p-6 rounded-xl border border-amber-100 flex gap-4 not-prose my-6">
@@ -128,10 +128,13 @@ export default function BlanchardGoldReviewPage() {
                                     </div>
 
                                     <p>
-                                        This doesn&apos;t mean numismatics are a scam—serious collectors can do well with them. But if you&apos;re opening a Gold IRA for retirement diversification, you want straightforward bullion, not collector&apos;s items.
+                                        This doesn&apos;t mean rare coins are a scam—serious collectors can do well. But if you&apos;re a retired electrician or nurse looking to protect 30 years of savings, you don&apos;t need collector speculation on top of normal gold price movement. You need straightforward bullion.
                                     </p>
                                     <p>
-                                        Blanchard <em>does</em> sell bullion products, but it&apos;s not their specialty. If you work with them, you&apos;ll need to be clear about what you want.
+                                        Harold, a retired pipe fitter from Louisiana, learned this the hard way: &quot;Another company tried to push rare coins on me. The markup was 40%. I would have needed gold to double just to break even. Stick with regular bullion—American Eagles, bars, the stuff that tracks actual gold prices.&quot;
+                                    </p>
+                                    <p>
+                                        Blanchard <em>does</em> sell regular bullion, but it&apos;s not their focus. If you work with them, be crystal clear: &quot;I want standard bullion only—no collectibles.&quot;
                                     </p>
                                 </section>
 
@@ -170,15 +173,15 @@ export default function BlanchardGoldReviewPage() {
                                         Blanchard Gold makes sense if:
                                     </p>
                                     <ul>
-                                        <li><strong>You&apos;re interested in rare coins:</strong> If numismatics genuinely appeal to you (beyond just gold investing), Blanchard&apos;s expertise is valuable</li>
-                                        <li><strong>You value heritage:</strong> Working with a company that helped create the industry has intangible appeal for some</li>
-                                        <li><strong>You know exactly what you want:</strong> If you can navigate their numismatic focus and stick to bullion, they&apos;re still a legitimate option</li>
+                                        <li><strong>You&apos;re actually interested in rare coins as a hobby:</strong> Not just as investment, but as collectibles you understand</li>
+                                        <li><strong>You want the historic pedigree:</strong> Some folks just feel better working with a company that&apos;s been around 50 years</li>
+                                        <li><strong>You can be firm about what you want:</strong> If you can say &quot;bullion only&quot; and stick to it, they&apos;re still legitimate</li>
                                     </ul>
                                     <p>
-                                        <strong>For most Gold IRA investors</strong>—those who want simple, cost-effective exposure to gold prices—companies like <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> or <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> will be a better fit. They focus on bullion and make the process straightforward.
+                                        <strong>For most working folks looking to protect their retirement</strong>—people who want straightforward gold exposure without collector risk—companies like <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> or <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> are a better fit. They focus on regular bullion and don&apos;t try to steer you toward expensive collectibles.
                                     </p>
                                     <p>
-                                        Blanchard is a respected company with real expertise. But their specialty doesn&apos;t align with what most retirement investors need.
+                                        Blanchard is respected with real expertise. But their specialty—rare coins—isn&apos;t what most people need when they&apos;re trying to protect 30 years of hard-earned savings.
                                     </p>
 
                                     <div className="not-prose mt-6">

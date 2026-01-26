@@ -294,8 +294,8 @@ export default function PensionVsLumpSumCalculatorPage() {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Considering a Pension Buyout?"
-            subheadline="A Gold IRA can help protect your lump sum from inflation while providing retirement income. Get expert guidance on rolling over your pension payout tax-free."
+            headline="Taking the Lump Sum? Protect It."
+            subheadline="After 30+ years on the job, your pension buyout could be $200K-$500K. Don't let the next crash eat into it. A Gold IRA rollover protects your payout tax-free."
             trackSource="tools-pension-vs-lump-sum-calculator"
           />
         </Container>

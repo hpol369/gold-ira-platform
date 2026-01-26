@@ -103,8 +103,11 @@ export default function AugustaVsGoldcoPage() {
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Augusta Precious Metals vs. Goldco
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                        The two heavyweights of the Gold IRA industry go head-to-head. Currently #1 and #2 on most review sites. Which one is actually better for YOU?
+                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed mb-4">
+                        You&apos;ve worked too hard to trust your savings to the wrong company. These are the two names you&apos;ll hear the most&mdash;here&apos;s the honest comparison.
+                    </p>
+                    <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                        For someone with $500k built over 30 years, what matters isn&apos;t flashy ads or celebrity endorsements. It&apos;s complaint history, how they treat customers when problems arise, and whether they&apos;ll be straight with you.
                     </p>
                 </Container>
             </header>
@@ -120,11 +123,11 @@ export default function AugustaVsGoldcoPage() {
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
 
                         <p className="lead">
-                            If you are doing your research on Gold IRAs, you have undoubtedly narrowed it down to these two: <strong>Augusta Precious Metals</strong> and <strong>Goldco</strong>.
+                            Let&apos;s cut through the noise. If you&apos;ve been researching Gold IRAs, you&apos;ve probably seen these two names everywhere: <strong>Augusta Precious Metals</strong> and <strong>Goldco</strong>.
                         </p>
 
                         <p>
-                            Both are excellent. Both have A+ BBB ratings. Both have thousands of 5-star reviews. But they cater to slightly different investors.
+                            Both have A+ BBB ratings and thousands of positive reviews. But for someone who&apos;s spent decades building a $500k nest egg, the real question isn&apos;t &quot;which has better marketing?&quot;&mdash;it&apos;s &quot;which one can I actually trust with my life&apos;s savings?&quot;
                         </p>
 
                         {/* Quick Verdict */}
@@ -150,13 +153,13 @@ export default function AugustaVsGoldcoPage() {
                         <section id="augusta-overview" className="scroll-mt-32">
                             <h2>Augusta Precious Metals Overview</h2>
                             <p>
-                                Augusta is the &quot;Rolls-Royce&quot; of Gold IRA companies. They&apos;re famous for one thing above all else: <strong>zero complaints at the BBB</strong>. In an industry plagued by pushy salespeople and hidden fees, that&apos;s remarkable.
+                                Here&apos;s what matters most: Augusta has <strong>zero complaints at the BBB</strong>. In an industry where some companies rack up complaints like parking tickets, that track record says something.
                             </p>
                             <p>
-                                What makes them different? Their onboarding process. Before you invest a dime, they require you to watch a one-on-one webinar with Devlyn Steele, their Director of Education (and Harvard-trained economist). It&apos;s not a sales pitch—it&apos;s actual education about the economy, inflation, and why gold makes sense.
+                                Their approach is different. Before you move a dime, they want you to actually understand what you&apos;re doing. They set up a one-on-one education session with their Director of Education, Devlyn Steele (Harvard-trained economist). It&apos;s not a hard sell&mdash;it&apos;s real information about the economy, inflation, and whether gold makes sense for YOUR situation.
                             </p>
                             <p>
-                                The downside? That $50,000 minimum is steep. If you don&apos;t have that much, Augusta isn&apos;t for you.
+                                The honest downside? That $50,000 minimum is steep. If you&apos;re looking to roll over less than that, Augusta isn&apos;t going to work for you.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/augusta-precious-metals">Read Full Review</Link>
@@ -167,13 +170,13 @@ export default function AugustaVsGoldcoPage() {
                         <section id="goldco-overview" className="scroll-mt-32">
                             <h2>Goldco Overview</h2>
                             <p>
-                                Goldco is the 800-pound gorilla of the Gold IRA industry. They&apos;ve placed <strong>billions</strong> in precious metals for customers and have endorsements from Sean Hannity and other major conservative figures.
+                                Goldco is the biggest name in the business. They&apos;ve handled <strong>billions</strong> in precious metals rollovers. That kind of track record means something when you&apos;re trusting them with your retirement.
                             </p>
                             <p>
-                                Their big advantages? Lower minimum ($25,000 vs Augusta&apos;s $50,000), aggressive promotions (up to 10% in free silver on qualifying purchases), and a &quot;Highest Price Buyback Guarantee&quot; when you&apos;re ready to sell.
+                                The practical advantages: lower minimum ($25,000 vs Augusta&apos;s $50,000), promotions that can get you up to 10% in free silver, and a buyback guarantee when you need to sell. For someone with a $250k-$400k 401k who wants to move part of it, that lower minimum matters.
                             </p>
                             <p>
-                                The trade-off is that Goldco has more of a &quot;sales&quot; culture than Augusta. Not bad—just more traditional. You&apos;ll get follow-up calls. Some people love the attention, others find it annoying.
+                                What to expect: Goldco has more of a traditional sales approach. You&apos;ll get follow-up calls. Some folks appreciate the attention&mdash;they want someone checking in. Others find it pushy. Know yourself.
                             </p>
                             <Button variant="outline" asChild className="mr-4">
                                 <Link href="/reviews/goldco">Read Full Review</Link>
@@ -184,7 +187,7 @@ export default function AugustaVsGoldcoPage() {
                         <section id="fees" className="scroll-mt-32">
                             <h2>Fees & Minimums</h2>
                             <p>
-                                Here&apos;s where things get interesting:
+                                Let&apos;s talk real numbers. When you&apos;re moving $500k of your life&apos;s savings, you need to know exactly what you&apos;re paying:
                             </p>
                             <div className="not-prose my-8 overflow-x-auto">
                                 <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
@@ -204,7 +207,7 @@ export default function AugustaVsGoldcoPage() {
                                 </table>
                             </div>
                             <p>
-                                <strong>Bottom line:</strong> For accounts over $100k, Augusta&apos;s flat fee structure is usually cheaper. For accounts between $25k-$50k, Goldco wins by default since Augusta won&apos;t take you.
+                                <strong>The bottom line on fees:</strong> If you&apos;re rolling over $100k or more, Augusta&apos;s flat fee usually saves you money over time. If you&apos;ve got between $25k and $50k to move, Goldco is your only choice here&mdash;Augusta won&apos;t take accounts that small. Neither situation is bad; just pick the one that fits what you have.
                             </p>
                         </section>
 

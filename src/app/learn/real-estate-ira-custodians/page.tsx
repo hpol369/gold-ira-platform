@@ -115,8 +115,7 @@ export default function RealEstateIraCustodiansPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                            To invest in real estate with your IRA, you need a self-directed IRA custodian that allows
-                            alternative investments. Here are the best options compared.
+                            You've spent decades building your 401k or IRA. Now you're thinking about real estate—something you can see, touch, and understand. But your current broker won't let you buy property with retirement funds. You need a self-directed IRA custodian. Here's a no-BS comparison of your best options.
                         </p>
                     </div>
                 </Container>
@@ -275,7 +274,7 @@ export default function RealEstateIraCustodiansPage() {
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold text-white mb-8 text-center">
-                            What to Look for in a Real Estate IRA Custodian
+                            What to Look for in a Custodian (Before You Trust Them with Your Life Savings)
                         </h2>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -327,10 +326,10 @@ export default function RealEstateIraCustodiansPage() {
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-2xl font-bold text-white mb-6">
-                            Ready to Start Investing in Real Estate?
+                            Ready to Use Your IRA for Real Estate?
                         </h2>
                         <p className="text-lg text-slate-300 mb-8">
-                            Open a self-directed IRA with a top custodian and start building wealth through real estate.
+                            You've built your nest egg through years of hard work. A self-directed IRA lets you invest in something real—property that generates rental income and grows in value. No more watching Wall Street play games with your money.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

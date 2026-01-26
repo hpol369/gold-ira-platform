@@ -39,9 +39,7 @@ export default function Solo401kContributionLimitsPage() {
                         </h1>
 
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                            Maximize your retirement savings with up to <strong className="text-white">$70,000</strong> in
-                            annual contributions (or <strong className="text-white">$77,500</strong> if 50+). Learn exactly
-                            how much you can contribute and the strategies to optimize your Solo 401k.
+                            Ran your own plumbing business for 20 years? Electrician who went independent? Contractor tired of working for someone else? A Solo 401k lets you save up to <strong className="text-white">$70,000</strong> a year (or <strong className="text-white">$77,500</strong> if you&apos;re 50+)—way more than a regular IRA. Here&apos;s how it works.
                         </p>
 
                         {/* Quick Limits Summary */}
