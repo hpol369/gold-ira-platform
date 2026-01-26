@@ -6,6 +6,11 @@ import { getAllScenarioSlugs } from "@/data/scenarios";
 import { getAllAssetSlugs } from "@/data/assets";
 import { US_STATES } from "@/lib/states";
 import { getAllNewsSlugs } from "@/lib/news";
+import { getAllLearnArticleSlugs } from "@/data/learn-articles";
+import { getAllWidowGuideArticleSlugs } from "@/data/widow-guide";
+import { getAllMedicaidArticleSlugs } from "@/data/medicaid-planning";
+import { getAllGrandchildrenArticleSlugs } from "@/data/grandchildren";
+import { getAllSeniorProtectionArticleSlugs } from "@/data/senior-protection";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://richdadretirement.com";
@@ -85,6 +90,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/crash-simulator",
     "/tools/rmd-calculator",
     "/tools/fees-comparison",
+    "/tools/401k-risk-analyzer",
+    "/tools/retirement-calculator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -114,6 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/silver-stacking",
     "/guide/wealth-preservation-strategies",
     "/guide/noble-gold-fees",
+    "/guide/birch-gold-fees",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -159,8 +167,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/solo-401k-contribution-limits",
     "/learn/solo-401k-vs-sep-ira",
     "/learn/solo-401k-providers",
+    "/learn/why-401k-losing-money",
+    "/learn/is-401k-fdic-insured",
+    "/learn/too-late-to-save-retirement",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // LEARN ARTICLE PAGES (Dynamic from data)
+  // ============================================
+  const learnArticleSlugs = getAllLearnArticleSlugs();
+  const learnArticlePages = learnArticleSlugs.map((slug) => ({
+    url: `${baseUrl}/learn/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
@@ -271,6 +293,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/compare/gold-ira-vs-gold-etf",
     "/compare/gold-ira-vs-crypto",
     "/compare/gold-vs-silver-ira",
+    "/compare/goldco-vs-augusta",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -354,6 +377,90 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // WIDOW'S GUIDE PAGES
+  // ============================================
+  const widowGuideSlugs = getAllWidowGuideArticleSlugs();
+  const widowGuidePages = [
+    // Hub page
+    {
+      url: `${baseUrl}/widow-guide`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    // Article pages
+    ...widowGuideSlugs.map((slug) => ({
+      url: `${baseUrl}/widow-guide/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  // ============================================
+  // MEDICAID PLANNING PAGES
+  // ============================================
+  const medicaidSlugs = getAllMedicaidArticleSlugs();
+  const medicaidPages = [
+    // Hub page
+    {
+      url: `${baseUrl}/medicaid-planning`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    // Article pages
+    ...medicaidSlugs.map((slug) => ({
+      url: `${baseUrl}/medicaid-planning/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  // ============================================
+  // GRANDCHILDREN LEGACY PAGES
+  // ============================================
+  const grandchildrenSlugs = getAllGrandchildrenArticleSlugs();
+  const grandchildrenPages = [
+    // Hub page
+    {
+      url: `${baseUrl}/grandchildren`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    // Article pages
+    ...grandchildrenSlugs.map((slug) => ({
+      url: `${baseUrl}/grandchildren/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  // ============================================
+  // SENIOR PROTECTION PAGES
+  // ============================================
+  const seniorProtectionSlugs = getAllSeniorProtectionArticleSlugs();
+  const seniorProtectionPages = [
+    // Hub page
+    {
+      url: `${baseUrl}/senior-protection`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    // Article pages
+    ...seniorProtectionSlugs.map((slug) => ({
+      url: `${baseUrl}/senior-protection/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   // Deduplicate by URL to handle any overlaps
@@ -364,6 +471,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...toolsPages,
     ...guidePages,
     ...learnPages,
+    ...learnArticlePages,
     ...whyGoldPages,
     ...richDadPages,
     ...reviewStaticPages,
@@ -376,6 +484,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...scenarioPages,
     ...statePages,
     ...newsPages,
+    ...widowGuidePages,
+    ...medicaidPages,
+    ...grandchildrenPages,
+    ...seniorProtectionPages,
   ];
 
   // Deduplicate by URL

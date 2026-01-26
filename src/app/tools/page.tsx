@@ -12,6 +12,11 @@ import {
   ArrowRight,
   Wrench,
   AlertTriangle,
+  Timer,
+  Building,
+  Clock,
+  Hourglass,
+  Heart,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -71,6 +76,66 @@ const tools = [
     status: "available",
     color: "blue",
   },
+  {
+    id: "retirement-calculator",
+    name: "Retirement Readiness Calculator",
+    description:
+      "Calculate how much you need to retire comfortably. Factor in Social Security, expenses, and inflation to see if you're on track.",
+    icon: Calculator,
+    href: "/tools/retirement-calculator",
+    status: "available",
+    color: "green",
+  },
+  {
+    id: "72t-calculator",
+    name: "72(t) SEPP Calculator",
+    description:
+      "Calculate penalty-free early withdrawals using IRS Rule 72(t). Compare all three IRS-approved calculation methods.",
+    icon: Timer,
+    href: "/tools/72t-calculator",
+    status: "available",
+    color: "amber",
+  },
+  {
+    id: "fers-calculator",
+    name: "FERS Retirement Calculator",
+    description:
+      "Federal employees: Estimate your FERS pension, FERS Supplement, and TSP income in retirement.",
+    icon: Building,
+    href: "/tools/fers-calculator",
+    status: "available",
+    color: "blue",
+  },
+  {
+    id: "social-security-calculator",
+    name: "Social Security Optimizer",
+    description:
+      "Find your optimal Social Security claiming age. Compare benefits at 62, FRA, and 70 to maximize lifetime income.",
+    icon: Clock,
+    href: "/tools/social-security-calculator",
+    status: "available",
+    color: "green",
+  },
+  {
+    id: "money-longevity-calculator",
+    name: "Money Longevity Calculator",
+    description:
+      "How long will your savings last? Calculate when your retirement funds may run out based on expenses and income.",
+    icon: Hourglass,
+    href: "/tools/money-longevity-calculator",
+    status: "available",
+    color: "purple",
+  },
+  {
+    id: "medicaid-calculator",
+    name: "Medicaid Spend-Down Calculator",
+    description:
+      "Estimate Medicaid eligibility and learn legitimate strategies to protect assets while qualifying for long-term care.",
+    icon: Heart,
+    href: "/tools/medicaid-calculator",
+    status: "available",
+    color: "teal",
+  },
 ];
 
 export default function ToolsPage() {
@@ -110,6 +175,8 @@ export default function ToolsPage() {
                   amber: "bg-amber-500/20 text-amber-400 border-amber-500/30",
                   green: "bg-green-500/20 text-green-400 border-green-500/30",
                   blue: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+                  purple: "bg-purple-500/20 text-purple-400 border-purple-500/30",
+                  teal: "bg-teal-500/20 text-teal-400 border-teal-500/30",
                 };
 
                 const CardContent = (

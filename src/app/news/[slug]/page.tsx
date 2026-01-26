@@ -278,15 +278,16 @@ export default async function NewsArticlePage({ params }: Props) {
 // Helper to format guide path into readable name
 function formatGuideName(path: string): string {
     const names: Record<string, string> = {
-        "/gold-ira": "Gold IRA Guide",
-        "/silver-ira": "Silver IRA Guide",
+        "/guide/gold-ira-guide": "Gold IRA Guide",
+        "/guide/silver-ira-guide": "Silver IRA Guide",
         "/crypto-ira": "Crypto IRA Guide",
         "/self-directed-ira": "Self-Directed IRA Guide",
         "/solo-401k": "Solo 401k Guide",
         "/rollover": "Rollover Guide",
         "/quiz": "Take Our Quiz",
         "/best-gold-ira-companies": "Best Gold IRA Companies",
-        "/learn/inflation-protection": "Inflation Protection",
+        "/best-crypto-ira-companies": "Best Crypto IRA Companies",
+        "/reviews/itrustcapital": "iTrustCapital Review",
         "/learn/stock-market-crash-protection": "Market Crash Protection",
         "/why-gold": "Why Gold?",
         "/why-gold/inflation-protection": "Gold & Inflation",

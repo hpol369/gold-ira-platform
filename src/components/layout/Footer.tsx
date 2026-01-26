@@ -53,12 +53,16 @@ export function Footer() {
 
                     {/* Tools */}
                     <div>
-                        <h3 className="font-semibold text-white mb-4 text-sm">Tools</h3>
+                        <h3 className="font-semibold text-white mb-4 text-sm">Calculators</h3>
                         <ul className="space-y-2">
                             <li><Link href="/tools" className="text-gray-400 hover:text-white transition-colors text-sm">All Tools</Link></li>
-                            <li><Link href="/tools/crash-simulator" className="text-gray-400 hover:text-white transition-colors text-sm">Crash Simulator</Link></li>
+                            <li><Link href="/tools/retirement-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Retirement Calculator</Link></li>
+                            <li><Link href="/tools/social-security-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Social Security Optimizer</Link></li>
+                            <li><Link href="/tools/72t-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">72(t) SEPP Calculator</Link></li>
+                            <li><Link href="/tools/fers-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">FERS Calculator</Link></li>
                             <li><Link href="/tools/rmd-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">RMD Calculator</Link></li>
-                            <li><Link href="/tools/fees-comparison" className="text-gray-400 hover:text-white transition-colors text-sm">Fees Comparison</Link></li>
+                            <li><Link href="/tools/money-longevity-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Money Longevity</Link></li>
+                            <li><Link href="/tools/medicaid-calculator" className="text-gray-400 hover:text-white transition-colors text-sm">Medicaid Calculator</Link></li>
                         </ul>
                     </div>
 

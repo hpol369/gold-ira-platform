@@ -740,6 +740,299 @@ export const scenarios: Scenario[] = [
     ],
     relatedScenarios: ["silver-shortage", "dollar-collapse", "stock-market-crash"],
   },
+  {
+    slug: "great-depression-2",
+    title: "Great Depression 2.0: Are We Headed for Economic Collapse?",
+    subtitle: "Historical parallels, warning signs, and how to protect your wealth if history repeats.",
+    metaTitle: "Great Depression 2.0: Is Another Economic Collapse Coming? 2026",
+    metaDescription: "Are we heading for another Great Depression? Analyze the warning signs, historical parallels, and proven strategies to protect your retirement savings.",
+    threatLevel: "critical",
+    probability: "Growing concern",
+    timeframe: "Unknown",
+    sections: [
+      {
+        title: "Why People Are Worried About Great Depression 2.0",
+        content: "The term 'Great Depression 2.0' has gained traction as people see troubling parallels between today's economy and the conditions that preceded the 1929 crash. While no two economic crises are identical, the similarities are hard to ignore.",
+        bullets: [
+          "Record wealth inequality mirrors 1929 levels",
+          "Unsustainable debt levels across government, corporate, and personal sectors",
+          "Asset bubbles in stocks, bonds, and real estate",
+          "Unprecedented money printing and currency debasement",
+          "Banking system vulnerabilities exposed in 2023",
+        ],
+      },
+      {
+        title: "Parallels to 1929",
+        content: "Those who don't learn from history are doomed to repeat it. Here's how today compares to the lead-up to the original Great Depression:",
+        bullets: [
+          "Roaring 20s / Tech boom - both periods saw explosive speculation and 'new era' thinking",
+          "Margin debt at extremes - investors borrowing heavily to buy stocks",
+          "Income inequality peaked - top 1% held similar wealth share in 1929 and today",
+          "Agricultural stress / Regional bank stress - different sectors, same systemic risk",
+          "Federal Reserve policy errors - tightening into weakness",
+        ],
+      },
+      {
+        title: "What a Modern Depression Would Look Like",
+        content: "A 21st century depression would be different from 1929, but potentially worse due to our interconnected global economy and digital financial system.",
+        bullets: [
+          "Bank failures could spread instantly via social media-driven runs",
+          "Supply chain collapse could cause physical shortages",
+          "Digital money could be frozen or controlled",
+          "Government bailouts would further debase currency",
+          "Social safety nets would quickly become overwhelmed",
+        ],
+      },
+    ],
+    warningSignals: [
+      "Inverted yield curve (has predicted every recession since 1955)",
+      "Banking sector stress and failures",
+      "Widening credit spreads",
+      "Declining consumer confidence",
+      "Corporate earnings contraction",
+      "Rising unemployment claims",
+      "Flight to safety (gold, treasuries rising)",
+    ],
+    protectionSteps: [
+      {
+        step: 1,
+        title: "Reduce Exposure to Financial System",
+        description: "During the Great Depression, banks failed and took depositors' money with them. Today's FDIC helps but has limits. Reduce concentration in any single institution.",
+      },
+      {
+        step: 2,
+        title: "Own Hard Assets",
+        description: "In the 1930s, those who owned gold, farmland, and other hard assets preserved wealth. Stocks lost 89% of their value; gold maintained purchasing power.",
+      },
+      {
+        step: 3,
+        title: "Eliminate Debt",
+        description: "In deflation, debt becomes harder to repay as dollars become scarce. The Depression bankrupted those who were leveraged. Pay down debt now.",
+      },
+      {
+        step: 4,
+        title: "Build Multiple Income Streams",
+        description: "Jobs disappeared overnight in the Depression. Multiple income sources and skills provide resilience.",
+      },
+    ],
+    goldBenefit: "During the Great Depression, gold was one of the few assets that maintained value. While stocks crashed 89%, gold actually increased in value when FDR revalued it from $20.67 to $35 per ounce. Gold mining stocks were among the few investments that rose during the Depression years.",
+    stats: [
+      { label: "1929 Stock Crash", value: "-89%", subtext: "Dow Jones peak to trough" },
+      { label: "Bank Failures 1930-33", value: "9,000+", subtext: "Taking deposits with them" },
+      { label: "Unemployment Peak", value: "25%", subtext: "1933" },
+      { label: "Gold Performance", value: "+69%", subtext: "Revalued 1933-34" },
+    ],
+    faqs: [
+      {
+        question: "Is another Great Depression actually possible?",
+        answer: "Economists debate this, but many conditions are similar or worse than 1929: debt levels are higher, wealth inequality matches that era, and the banking system has shown recent stress. The difference is that governments now have experience with stimulus - but that creates its own risks of currency debasement.",
+      },
+      {
+        question: "Didn't we already survive 2008? Isn't the system safer now?",
+        answer: "The 2008 crisis was met with unprecedented intervention - trillions in bailouts, zero interest rates, and money printing. Many argue this didn't fix underlying problems but postponed them while creating new bubbles. Debt is higher now than in 2008, and the Fed has less room to cut rates.",
+      },
+      {
+        question: "How do I protect my retirement from a depression?",
+        answer: "Diversify outside paper assets into hard assets like gold and silver. Reduce debt. Maintain emergency funds outside the banking system. Consider a Gold IRA to protect retirement savings from both deflation (physical asset) and inflation (from government response to crisis).",
+      },
+    ],
+    relatedScenarios: ["dollar-collapse", "bank-failure", "stock-market-crash"],
+  },
+  {
+    slug: "is-vanguard-safe",
+    title: "Is Vanguard Safe? Understanding Brokerage Risk",
+    subtitle: "What happens to your investments if Vanguard or another major brokerage fails?",
+    metaTitle: "Is Vanguard Safe? Brokerage Failure Risks Explained 2026",
+    metaDescription: "Learn whether your investments at Vanguard (or Fidelity, Schwab) are truly safe. SIPC protection limits, brokerage failure scenarios, and how to protect your portfolio.",
+    threatLevel: "high",
+    probability: "Low but possible",
+    timeframe: "Unpredictable",
+    sections: [
+      {
+        title: "Are Your Investments Really Safe?",
+        content: "Most investors trust that their money at Vanguard, Fidelity, or Schwab is completely safe. While these are strong institutions with protections, there are risks that most people don't consider.",
+        bullets: [
+          "SIPC covers up to $500,000 per customer if brokerage fails",
+          "Cash is only protected up to $250,000",
+          "Your actual securities (stocks, ETFs) are held in your name",
+          "Complex financial products may have different protections",
+          "Systemic crises could overwhelm protection mechanisms",
+        ],
+      },
+      {
+        title: "What SIPC Does and Doesn't Cover",
+        content: "SIPC (Securities Investor Protection Corporation) is often confused with FDIC for banks. They're similar but not identical, and understanding the differences matters.",
+        bullets: [
+          "SIPC covers securities and cash up to $500,000 total",
+          "Cash-only coverage limited to $250,000",
+          "Does NOT protect against investment losses",
+          "Does NOT cover commodity futures, foreign exchange, or certain investment contracts",
+          "May take time to receive funds after brokerage failure",
+        ],
+      },
+      {
+        title: "When Big Brokerages Have Failed",
+        content: "While rare, major brokerage failures have occurred. Understanding these cases helps assess risks today.",
+        bullets: [
+          "MF Global (2011): $1.6 billion in customer funds went missing",
+          "Lehman Brothers (2008): Largest bankruptcy in US history",
+          "Bear Stearns (2008): Emergency sale to prevent collapse",
+          "In all cases, customer securities were eventually returned but with delays and stress",
+        ],
+      },
+    ],
+    warningSignals: [
+      "Brokerage stock price dropping significantly",
+      "Credit rating downgrades",
+      "Executive departures or insider selling",
+      "Regulatory actions or investigations",
+      "Significant litigation or settlement announcements",
+      "Difficulty reaching customer service or accessing accounts",
+    ],
+    protectionSteps: [
+      {
+        step: 1,
+        title: "Diversify Across Institutions",
+        description: "Don't keep all your investments at one brokerage. Spread across 2-3 major brokerages to reduce single-institution risk.",
+      },
+      {
+        step: 2,
+        title: "Understand Your Coverage",
+        description: "Know what's covered and what isn't. SIPC protects up to $500,000 per customer. If you have more, consider additional accounts or brokerages.",
+      },
+      {
+        step: 3,
+        title: "Hold Physical Assets Outside the System",
+        description: "Physical gold and silver in a secure depository aren't subject to brokerage risk. A Gold IRA provides tax-advantaged ownership of physical metals.",
+      },
+      {
+        step: 4,
+        title: "Keep Records",
+        description: "Maintain copies of your account statements and holdings. In a failure, documentation helps prove what you owned.",
+      },
+    ],
+    goldBenefit: "When you own physical gold in a Gold IRA, the metal is held in your name in a secure, insured depository. It's not on anyone's balance sheet. Unlike brokerage accounts where your 'assets' are entries in a database, physical gold exists regardless of what happens to financial institutions.",
+    stats: [
+      { label: "SIPC Coverage Maximum", value: "$500K", subtext: "Per customer" },
+      { label: "SIPC Cash Maximum", value: "$250K", subtext: "Portion for cash" },
+      { label: "MF Global Missing", value: "$1.6B", subtext: "Customer funds (2011)" },
+      { label: "Physical Gold Risk", value: "0", subtext: "No counterparty" },
+    ],
+    faqs: [
+      {
+        question: "Is Vanguard likely to fail?",
+        answer: "Vanguard is one of the largest and most stable investment companies in the world, with over $7 trillion in assets under management. Its unique ownership structure (owned by its funds) reduces some risks. While failure is unlikely, no institution is completely immune to systemic crises. Diversification is prudent.",
+      },
+      {
+        question: "What happens to my index funds if Vanguard fails?",
+        answer: "Your shares in Vanguard funds are held in your name and are separate from Vanguard's assets. In a failure, funds would likely be transferred to another manager. However, the process could take time, during which you couldn't access or trade your holdings.",
+      },
+      {
+        question: "Should I move my money out of Vanguard?",
+        answer: "There's no reason to panic about Vanguard specifically. However, diversifying across multiple brokerages and including non-financial-system assets (like physical gold in an IRA) is prudent risk management regardless of which brokerages you use.",
+      },
+    ],
+    relatedScenarios: ["bank-failure", "stock-market-crash", "dollar-collapse"],
+  },
+  {
+    slug: "banks-freeze-account",
+    title: "Can Banks Freeze Your Account? Know Your Rights",
+    subtitle: "When banks can (and do) freeze accounts, and how to protect your access to your own money.",
+    metaTitle: "Can Banks Freeze Your Account? What You Need to Know 2026",
+    metaDescription: "Learn when and why banks can freeze your account, how long they can hold your money, and strategies to ensure you always have access to funds.",
+    threatLevel: "high",
+    probability: "Common occurrence",
+    timeframe: "Immediate risk",
+    sections: [
+      {
+        title: "Yes, Banks Can Freeze Your Account",
+        content: "Many people assume their money in the bank is always accessible. In reality, banks have broad powers to freeze accounts, sometimes without warning. Understanding these risks is essential for financial planning.",
+        bullets: [
+          "Banks can freeze accounts for suspected fraud, court orders, or regulatory compliance",
+          "Government agencies can order freezes without prior notice",
+          "Freezes can happen instantly, leaving you without access",
+          "Even joint accounts can be frozen due to one account holder's issues",
+          "Unfreezing can take days, weeks, or months",
+        ],
+      },
+      {
+        title: "Common Reasons for Account Freezes",
+        content: "Bank account freezes happen more often than most people realize. Here are the most common triggers:",
+        bullets: [
+          "Suspected fraudulent activity on the account",
+          "IRS tax levy or state tax debt",
+          "Court judgment or lawsuit (creditor garnishment)",
+          "Child support or alimony arrears",
+          "Suspicious Activity Report (SAR) filing",
+          "Identity theft investigation",
+          "Regulatory compliance concerns (AML/KYC)",
+        ],
+      },
+      {
+        title: "Lessons from Banking Crises",
+        content: "History shows that during financial crises, account freezes can become widespread:",
+        bullets: [
+          "Cyprus 2013: Banks closed for two weeks; withdrawals limited to €100/day when reopened",
+          "Greece 2015: Banks closed for three weeks; €60/day ATM limit",
+          "Lebanon 2019-present: Dollar withdrawals frozen; currency lost 90%+ value",
+          "India 2016: Government demonetized 86% of currency overnight",
+          "Argentina 2001: Bank deposits frozen; converted to depreciated pesos",
+        ],
+      },
+    ],
+    warningSignals: [
+      "Receiving notifications about suspicious activity",
+      "Letters from IRS or state tax agency about debt",
+      "Legal notices about lawsuits or judgments",
+      "Bank asking for additional identity verification",
+      "Large or unusual transactions being questioned",
+      "Economic or banking sector instability in the news",
+    ],
+    protectionSteps: [
+      {
+        step: 1,
+        title: "Maintain Multiple Bank Accounts",
+        description: "Don't keep all your money in one account or bank. If one is frozen, you'll have access to others. Consider accounts at different types of institutions.",
+      },
+      {
+        step: 2,
+        title: "Keep Cash Emergency Fund",
+        description: "Maintain 2-4 weeks of expenses in physical cash at home. This provides access when banks are unavailable or accounts are frozen.",
+      },
+      {
+        step: 3,
+        title: "Own Assets Outside the Banking System",
+        description: "Physical gold and silver stored in a secure depository aren't subject to bank freezes. A Gold IRA provides tax-advantaged ownership outside the traditional banking system.",
+      },
+      {
+        step: 4,
+        title: "Stay Current on Obligations",
+        description: "Tax debts, child support, and court judgments are common freeze triggers. Stay current on legal obligations to reduce risk.",
+      },
+    ],
+    goldBenefit: "Physical gold in a private depository cannot be frozen by a bank because it's not in the banking system. Your gold is held in allocated, segregated storage in your name. While bank accounts can be frozen with a keystroke, accessing your physical gold requires proper verification and your authorization.",
+    stats: [
+      { label: "Cyprus Bank Holiday", value: "14 days", subtext: "Banks closed (2013)" },
+      { label: "Greece ATM Limit", value: "€60/day", subtext: "For weeks (2015)" },
+      { label: "Lebanon Currency Loss", value: "-90%", subtext: "While frozen" },
+      { label: "Gold Freeze Risk", value: "0", subtext: "Not in banking system" },
+    ],
+    faqs: [
+      {
+        question: "Can the government freeze bank accounts without warning?",
+        answer: "Yes. The IRS can issue a tax levy that freezes your account without prior notice. Court orders can also result in immediate freezes. Banks themselves can freeze accounts for suspected fraud. In all these cases, you may discover the freeze when your debit card is declined or a check bounces.",
+      },
+      {
+        question: "How long can a bank keep my account frozen?",
+        answer: "It depends on the reason. For suspected fraud, freezes typically last a few days while investigated. For tax levies, accounts may be frozen until you resolve the debt with the IRS. Court-ordered freezes can last until the legal matter is resolved, which could be months or years.",
+      },
+      {
+        question: "Could a Cyprus-style freeze happen in America?",
+        answer: "While the specific circumstances differ, the principle is the same: during financial crises, governments and banks prioritize system stability over individual account access. Bank holidays, withdrawal limits, and capital controls have occurred throughout history when systems are stressed.",
+      },
+    ],
+    relatedScenarios: ["bank-failure", "dollar-collapse", "cbdc-control"],
+  },
 ];
 
 export function getScenarioBySlug(slug: string): Scenario | undefined {
