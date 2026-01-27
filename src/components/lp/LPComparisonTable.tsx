@@ -2,6 +2,7 @@
 
 import { Star, Award, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { getTrackedAugustaLink } from "@/config/affiliates";
 
 interface Company {
   name: string;
@@ -10,12 +11,14 @@ interface Company {
   fees: string;
   highlight?: string;
   isWinner?: boolean;
+  link?: string;
 }
 
 interface LPComparisonTableProps {
   headline?: string;
   companies?: Company[];
   className?: string;
+  trackSource?: string;
 }
 
 const defaultCompanies: Company[] = [
@@ -54,7 +57,14 @@ export function LPComparisonTable({
   headline = "Quick Company Comparison",
   companies = defaultCompanies,
   className,
+  trackSource = "lp-comparison",
 }: LPComparisonTableProps) {
+  // Add Augusta link to companies that are winners (Augusta)
+  const companiesWithLinks = companies.map((company) => ({
+    ...company,
+    link: company.isWinner ? getTrackedAugustaLink("fees", trackSource) : company.link,
+  }));
+
   return (
     <section className={cn("bg-slate-900 py-12 md:py-16", className)}>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -85,7 +95,7 @@ export function LPComparisonTable({
               </tr>
             </thead>
             <tbody>
-              {companies.map((company, index) => (
+              {companiesWithLinks.map((company, index) => (
                 <tr
                   key={company.name}
                   className={cn(
@@ -100,14 +110,28 @@ export function LPComparisonTable({
                       {company.isWinner && (
                         <Award className="h-5 w-5 text-amber-400 flex-shrink-0" />
                       )}
-                      <span
-                        className={cn(
-                          "font-semibold",
-                          company.isWinner ? "text-amber-400" : "text-white"
-                        )}
-                      >
-                        {company.name}
-                      </span>
+                      {company.link ? (
+                        <a
+                          href={company.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(
+                            "font-semibold hover:underline",
+                            company.isWinner ? "text-amber-400" : "text-white"
+                          )}
+                        >
+                          {company.name}
+                        </a>
+                      ) : (
+                        <span
+                          className={cn(
+                            "font-semibold",
+                            company.isWinner ? "text-amber-400" : "text-white"
+                          )}
+                        >
+                          {company.name}
+                        </span>
+                      )}
                     </div>
                   </td>
                   <td className="text-center px-4 py-4">
@@ -144,7 +168,7 @@ export function LPComparisonTable({
 
         {/* Mobile Cards */}
         <div className="md:hidden space-y-4">
-          {companies.map((company, index) => (
+          {companiesWithLinks.map((company, index) => (
             <div
               key={company.name}
               className={cn(
@@ -159,14 +183,28 @@ export function LPComparisonTable({
                   {company.isWinner && (
                     <Award className="h-5 w-5 text-amber-400" />
                   )}
-                  <span
-                    className={cn(
-                      "font-semibold",
-                      company.isWinner ? "text-amber-400" : "text-white"
-                    )}
-                  >
-                    {company.name}
-                  </span>
+                  {company.link ? (
+                    <a
+                      href={company.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cn(
+                        "font-semibold hover:underline",
+                        company.isWinner ? "text-amber-400" : "text-white"
+                      )}
+                    >
+                      {company.name}
+                    </a>
+                  ) : (
+                    <span
+                      className={cn(
+                        "font-semibold",
+                        company.isWinner ? "text-amber-400" : "text-white"
+                      )}
+                    >
+                      {company.name}
+                    </span>
+                  )}
                 </div>
                 <div className="flex items-center gap-1">
                   <Star className="h-4 w-4 text-amber-400 fill-amber-400" />

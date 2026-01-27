@@ -130,7 +130,7 @@ export default function GoldIRAFeesLandingPage() {
       <LPFeeExpose />
 
       {/* Company Comparison Table */}
-      <LPComparisonTable headline="Compare Gold IRA Fees (2026)" />
+      <LPComparisonTable headline="Compare Gold IRA Fees (2026)" trackSource={TRACK_SOURCE} />
 
       {/* How It Works */}
       <LPProcess
