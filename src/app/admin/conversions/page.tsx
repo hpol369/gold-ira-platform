@@ -10,7 +10,11 @@ import {
   Bell,
   CheckCircle2,
   XCircle,
-  Lock
+  Lock,
+  BarChart3,
+  MousePointer2,
+  Eye,
+  ExternalLink
 } from "lucide-react";
 
 const ADMIN_PIN = "6903";
@@ -207,6 +211,60 @@ export default function ConversionsPage() {
                 </div>
               </div>
             )}
+          </div>
+
+          {/* Analytics Tools */}
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <BarChart3 className="h-5 w-5 text-purple-400" />
+              <span className="font-semibold text-white">Analytics & Tracking</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* Microsoft Clarity */}
+              <a
+                href="https://clarity.microsoft.com/projects/view/v816rr21t5/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-xl p-4 hover:border-purple-500/40 transition-all"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <Eye className="h-6 w-6 text-purple-400" />
+                  <ExternalLink className="h-4 w-4 text-slate-500 group-hover:text-purple-400 transition-colors" />
+                </div>
+                <h3 className="font-semibold text-white">Microsoft Clarity</h3>
+                <p className="text-sm text-slate-400 mt-1">Session recordings & heatmaps</p>
+              </a>
+
+              {/* Google Analytics */}
+              <a
+                href="https://analytics.google.com/analytics/web/#/p/G-5Q1485P9KS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 rounded-xl p-4 hover:border-orange-500/40 transition-all"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <BarChart3 className="h-6 w-6 text-orange-400" />
+                  <ExternalLink className="h-4 w-4 text-slate-500 group-hover:text-orange-400 transition-colors" />
+                </div>
+                <h3 className="font-semibold text-white">Google Analytics</h3>
+                <p className="text-sm text-slate-400 mt-1">Traffic, events & conversions</p>
+              </a>
+
+              {/* Google Tag Manager */}
+              <a
+                href="https://tagmanager.google.com/#/container/accounts/7873696963/containers/GTM-TPC628G9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-xl p-4 hover:border-blue-500/40 transition-all"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <MousePointer2 className="h-6 w-6 text-blue-400" />
+                  <ExternalLink className="h-4 w-4 text-slate-500 group-hover:text-blue-400 transition-colors" />
+                </div>
+                <h3 className="font-semibold text-white">Tag Manager</h3>
+                <p className="text-sm text-slate-400 mt-1">Manage tracking tags</p>
+              </a>
+            </div>
           </div>
 
           {/* Stats */}
