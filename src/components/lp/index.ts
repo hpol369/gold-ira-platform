@@ -8,3 +8,6 @@ export { LPStats } from "./LPStats";
 export { LPFAQ, type FAQItem } from "./LPFAQ";
 export { LPFinalCTA } from "./LPFinalCTA";
 export { LPFooter } from "./LPFooter";
+export { LPComparisonTable } from "./LPComparisonTable";
+export { LPAccountTypes } from "./LPAccountTypes";
+export { LPApprovedProducts } from "./LPApprovedProducts";

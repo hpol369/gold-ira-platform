@@ -158,15 +158,39 @@ export default function SilverIRALandingPage() {
 
       {/* Hero Section */}
       <LPHero
-        headline="Best Silver IRA Company of 2026"
-        subheadline="Protect your retirement with physical silver. No pushy sales. Education-first approach."
+        headline="Learn About Silver IRAs"
+        subheadline="Protect your retirement with physical silver. No pushy sales. Education-first approach. Free expert consultation."
         ctaText="Get Your Free Consultation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        urgencyBadge="Limited Spots for January Consultations"
       />
 
       {/* Trust Bar */}
       <LPTrustBar rating={4.9} reviewCount={2847} bbbRating="A+" />
+
+      {/* Featured Testimonial */}
+      <section className="bg-slate-900 py-8 md:py-12">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 md:p-8">
+            <div className="absolute -top-3 left-6 bg-slate-900 px-2">
+              <span className="text-amber-400 text-4xl">&ldquo;</span>
+            </div>
+            <blockquote className="text-slate-300 text-lg md:text-xl leading-relaxed mb-4">
+              Augusta made the entire process simple. No pressure, just education. I now feel confident about my silver IRA and my retirement is better protected.
+            </blockquote>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center">
+                <span className="text-amber-400 font-bold">RK</span>
+              </div>
+              <div>
+                <div className="text-white font-semibold">Robert K.</div>
+                <div className="text-slate-400 text-sm">Verified Augusta Customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Silver Section */}
       <LPBenefits headline="Why Silver for Your IRA?" benefits={silverBenefits} />

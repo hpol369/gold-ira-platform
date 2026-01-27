@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
 
@@ -11,6 +11,7 @@ interface LPHeroProps {
   linkContext?: AugustaContext;
   trackSource: string;
   className?: string;
+  urgencyBadge?: string;
 }
 
 export function LPHero({
@@ -20,6 +21,7 @@ export function LPHero({
   linkContext = "silver",
   trackSource,
   className,
+  urgencyBadge,
 }: LPHeroProps) {
   const ctaLink = getTrackedAugustaLink(linkContext, trackSource);
 
@@ -37,6 +39,12 @@ export function LPHero({
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        {urgencyBadge && (
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-400 text-sm font-medium">
+            <Clock className="h-4 w-4" />
+            {urgencyBadge}
+          </div>
+        )}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           {headline}
         </h1>
