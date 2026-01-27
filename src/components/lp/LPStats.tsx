@@ -25,13 +25,13 @@ export function LPStats({ headline, stats, className }: LPStatsProps) {
         <h2 className="text-xl md:text-2xl font-bold text-white text-center mb-8">
           {headline}
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-1 md:mb-2">
                 {stat.value}
               </div>
-              <div className="text-sm text-slate-400">{stat.label}</div>
+              <div className="text-xs md:text-sm text-slate-400">{stat.label}</div>
             </div>
           ))}
         </div>

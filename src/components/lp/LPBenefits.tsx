@@ -50,10 +50,10 @@ export function LPBenefits({ headline, benefits, className }: LPBenefitsProps) {
   return (
     <section className={cn("bg-slate-900 py-16 md:py-20", className)}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 md:mb-12">
           {headline}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {benefits.map((benefit, index) => {
             const Icon = iconMap[benefit.icon];
             return (
@@ -72,7 +72,7 @@ export function LPBenefits({ headline, benefits, className }: LPBenefitsProps) {
                 <h3 className="text-lg font-bold text-white mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-slate-400 text-sm">{benefit.description}</p>
+                <p className="text-slate-400 text-sm md:text-base">{benefit.description}</p>
               </div>
             );
           })}

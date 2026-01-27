@@ -67,16 +67,16 @@ export function LPAccountTypes({
   return (
     <section className={cn("bg-slate-900 py-12 md:py-16", className)}>
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+        <div className="text-center mb-6 md:mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">
             {headline}
           </h2>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-300 text-base md:text-lg max-w-2xl mx-auto">
             {subheadline}
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
           {accounts.map((account) => {
             const Icon = iconMap[account.icon];
             return (
@@ -92,10 +92,10 @@ export function LPAccountTypes({
                     <Icon className="h-5 w-5" />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-1">
+                <h3 className="text-base md:text-lg font-bold text-white mb-1">
                   {account.name}
                 </h3>
-                <p className="text-slate-400 text-sm">{account.description}</p>
+                <p className="text-slate-400 text-xs md:text-sm">{account.description}</p>
               </div>
             );
           })}

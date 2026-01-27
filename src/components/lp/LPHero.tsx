@@ -33,9 +33,9 @@ export function LPHero({
       )}
     >
       {/* Background effects */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-20 -left-20 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-slate-600/20 rounded-full blur-[100px]" />
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-20 -left-20 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-amber-500/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-slate-600/20 rounded-full blur-[100px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">

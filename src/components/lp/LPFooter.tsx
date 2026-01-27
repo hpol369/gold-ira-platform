@@ -22,22 +22,22 @@ export function LPFooter({ className }: LPFooterProps) {
           <div>
             &copy; {currentYear} Rich Dad Retirement. All rights reserved.
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <Link
               href="/privacy-policy"
-              className="hover:text-white transition-colors"
+              className="py-2 hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               href="/terms-of-service"
-              className="hover:text-white transition-colors"
+              className="py-2 hover:text-white transition-colors"
             >
               Terms of Service
             </Link>
             <Link
               href="/editorial-policy"
-              className="hover:text-white transition-colors"
+              className="py-2 hover:text-white transition-colors"
             >
               Editorial Policy
             </Link>

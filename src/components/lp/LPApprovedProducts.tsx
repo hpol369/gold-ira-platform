@@ -78,7 +78,7 @@ export function LPApprovedProducts({ className }: LPApprovedProductsProps) {
                         <div className="text-slate-400 text-sm">{coin.country}</div>
                       )}
                     </div>
-                    <div className="text-amber-400 font-mono text-sm bg-amber-500/10 px-2 py-1 rounded">
+                    <div className="text-amber-400 font-mono text-xs md:text-sm bg-amber-500/10 px-2 py-1 rounded">
                       {coin.purity}
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export function LPApprovedProducts({ className }: LPApprovedProductsProps) {
                     className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/[0.07] transition-colors"
                   >
                     <div className="text-white font-medium">{bar.name}</div>
-                    <div className="text-amber-400 font-mono text-sm bg-amber-500/10 px-2 py-1 rounded">
+                    <div className="text-amber-400 font-mono text-xs md:text-sm bg-amber-500/10 px-2 py-1 rounded">
                       {bar.purity}
                     </div>
                   </div>

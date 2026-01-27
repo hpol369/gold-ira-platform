@@ -174,17 +174,17 @@ export function LPComparisonTable({
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-2 text-sm">
+              <div className="grid grid-cols-2 gap-3 text-sm">
                 <div>
-                  <span className="text-slate-400 block">Minimum</span>
+                  <span className="text-slate-400 text-xs block">Minimum</span>
                   <span className="text-white font-medium">{company.minimum}</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block">Annual Fees</span>
+                  <span className="text-slate-400 text-xs block">Annual Fees</span>
                   <span className="text-white font-medium">{company.fees}</span>
                 </div>
-                <div>
-                  <span className="text-slate-400 block">Highlight</span>
+                <div className="col-span-2 pt-2 border-t border-white/10">
+                  <span className="text-slate-400 text-xs">Highlight: </span>
                   {company.isWinner ? (
                     <span className="text-amber-400 font-medium">
                       {company.highlight}

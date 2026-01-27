@@ -63,11 +63,11 @@ export function LPProcess({
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 md:mb-12">
           {headline}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
           {steps.map((step, index) => {
             const Icon = iconMap[step.icon];
             return (
@@ -89,7 +89,7 @@ export function LPProcess({
                   <h3 className="text-xl font-bold text-white mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-slate-400">{step.description}</p>
+                  <p className="text-slate-400 text-sm md:text-base">{step.description}</p>
                 </div>
               </div>
             );

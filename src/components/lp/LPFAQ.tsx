@@ -21,7 +21,7 @@ export function LPFAQ({ headline, faqs, className }: LPFAQProps) {
   return (
     <section className={cn("bg-slate-900 py-16 md:py-20", className)}>
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 md:mb-12">
           {headline}
         </h2>
         <div className="space-y-4">
@@ -51,10 +51,10 @@ export function LPFAQ({ headline, faqs, className }: LPFAQProps) {
               <div
                 className={cn(
                   "overflow-hidden transition-all duration-200",
-                  openIndex === index ? "max-h-96" : "max-h-0"
+                  openIndex === index ? "max-h-[60vh] md:max-h-[500px]" : "max-h-0"
                 )}
               >
-                <div className="px-5 pb-5 text-slate-400">{faq.answer}</div>
+                <div className="px-5 pb-5 text-slate-400 text-sm md:text-base">{faq.answer}</div>
               </div>
             </div>
           ))}

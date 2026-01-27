@@ -13,7 +13,7 @@ export function LPFeatures({ headline, features, className }: LPFeaturesProps) {
   return (
     <section className={cn("bg-slate-900 py-16 md:py-20", className)}>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 md:mb-12">
           {headline}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -29,7 +29,7 @@ export function LPFeatures({ headline, features, className }: LPFeaturesProps) {
               <div className="h-6 w-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
                 <Check className="h-4 w-4 text-green-400" />
               </div>
-              <span className="text-slate-300">{feature}</span>
+              <span className="text-slate-300 text-sm md:text-base">{feature}</span>
             </div>
           ))}
         </div>

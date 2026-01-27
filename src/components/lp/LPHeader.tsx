@@ -37,9 +37,9 @@ export function LPHeader({
           {/* Phone CTA */}
           <a
             href={`tel:${phone.replace(/[^0-9]/g, "")}`}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-3 md:px-4 md:py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors min-h-[44px]"
           >
-            <Phone className="h-4 w-4 text-amber-400" />
+            <Phone className="h-5 w-5 md:h-4 md:w-4 text-amber-400" />
             <span className="text-white font-medium">
               <span className="hidden sm:inline">Call Now: </span>
               {phone}

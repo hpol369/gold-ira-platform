@@ -24,7 +24,7 @@ export function LPTrustBar({
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 md:gap-10">
           {/* Star Rating */}
           <div className="flex items-center gap-2">
             <div className="flex text-amber-400">
@@ -32,14 +32,14 @@ export function LPTrustBar({
                 <Star
                   key={i}
                   className={cn(
-                    "h-5 w-5",
+                    "h-4 w-4 sm:h-5 sm:w-5",
                     i <= Math.floor(rating) ? "fill-current" : "fill-current opacity-30"
                   )}
                 />
               ))}
             </div>
-            <span className="text-white font-semibold">{rating}/5</span>
-            <span className="text-slate-400">({reviewCount.toLocaleString()} reviews)</span>
+            <span className="text-white font-semibold text-sm sm:text-base">{rating}/5</span>
+            <span className="text-slate-400 text-xs sm:text-sm">({reviewCount.toLocaleString()} reviews)</span>
           </div>
 
           {/* Divider */}
@@ -47,8 +47,8 @@ export function LPTrustBar({
 
           {/* BBB Rating */}
           <div className="flex items-center gap-2">
-            <Shield className="h-5 w-5 text-green-400" />
-            <span className="text-white font-semibold">{bbbRating} BBB Rating</span>
+            <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-green-400" />
+            <span className="text-white font-semibold text-sm sm:text-base">{bbbRating} BBB Rating</span>
           </div>
 
           {/* Divider */}
@@ -56,10 +56,10 @@ export function LPTrustBar({
 
           {/* Zero Complaints */}
           <div className="flex items-center gap-2">
-            <div className="h-5 w-5 rounded-full bg-green-500/20 flex items-center justify-center">
-              <span className="text-green-400 text-xs font-bold">0</span>
+            <div className="h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-green-500/20 flex items-center justify-center">
+              <span className="text-green-400 text-[10px] sm:text-xs font-bold">0</span>
             </div>
-            <span className="text-white font-semibold">Consumer Complaints</span>
+            <span className="text-white font-semibold text-sm sm:text-base">Consumer Complaints</span>
           </div>
         </div>
       </div>

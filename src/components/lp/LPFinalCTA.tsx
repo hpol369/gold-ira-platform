@@ -52,7 +52,8 @@ export function LPFinalCTA({
           rel="noopener noreferrer"
           className={cn(
             "inline-flex items-center justify-center gap-2",
-            "px-10 py-5 text-xl font-bold",
+            "w-full md:w-auto",
+            "px-6 py-3 text-lg md:px-10 md:py-5 md:text-xl font-bold",
             "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
             "text-slate-900 rounded-xl",
             "shadow-[0_0_80px_-5px_rgba(212,175,55,0.6)]",
@@ -63,7 +64,7 @@ export function LPFinalCTA({
         >
           <span className="relative z-10 flex items-center gap-2">
             {ctaText}
-            <ArrowRight className="h-6 w-6 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform" />
           </span>
           <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
         </a>
