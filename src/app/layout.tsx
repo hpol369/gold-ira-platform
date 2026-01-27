@@ -7,6 +7,7 @@ import { ExitIntentModal } from "@/components/widgets/ExitIntentModal";
 import { SocialProofTicker } from "@/components/widgets/SocialProofTicker";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
+const CLARITY_PROJECT_ID = "v816rr21t5";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
@@ -88,6 +89,16 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+        {/* Microsoft Clarity - Session Recording & Heatmaps */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
           `}
         </Script>
       </head>
