@@ -48,6 +48,7 @@ async function sendClickNotification(data: {
   referer: string;
   trafficType: TrafficType;
   campaign?: string;
+  location?: string;
 }) {
   // Traffic type indicators
   const trafficIndicators: Record<TrafficType, { emoji: string; label: string }> = {
@@ -58,11 +59,12 @@ async function sendClickNotification(data: {
 
   const indicator = trafficIndicators[data.trafficType];
   const campaignLine = data.campaign ? `\n🎯 <b>Campaign:</b> ${data.campaign}` : "";
+  const locationLine = data.location ? `\n🌍 <b>Location:</b> ${data.location}` : "";
 
   const message = `${indicator.emoji} <b>${indicator.label} - ${data.company.toUpperCase()}</b>
 
 📍 <b>Source:</b> ${data.source}
-${data.device}
+${data.device}${locationLine}
 🕐 ${data.timestamp}${campaignLine}
 
 💰 <i>Lead incoming...</i>`;
@@ -90,11 +92,26 @@ export async function GET(request: NextRequest) {
   const isMobile = /Mobile|Android|iPhone|iPad/i.test(userAgent);
   const device = isMobile ? "📱 Mobile" : "💻 Desktop";
 
+  // Get location from Vercel geo headers
+  const country = request.headers.get("x-vercel-ip-country") || "";
+  const city = request.headers.get("x-vercel-ip-city") || "";
+  const region = request.headers.get("x-vercel-ip-country-region") || "";
+
+  // Build location string
+  let location = "";
+  if (city && region && country) {
+    location = `${city}, ${region}, ${country}`;
+  } else if (city && country) {
+    location = `${city}, ${country}`;
+  } else if (country) {
+    location = country;
+  }
+
   // Detect traffic type
   const trafficType = detectTrafficType(referer, traffic);
 
   // Send notification (async, don't block redirect)
-  sendClickNotification({ company, source, device, timestamp, referer, trafficType, campaign });
+  sendClickNotification({ company, source, device, timestamp, referer, trafficType, campaign, location });
 
   // Log
   console.log(`[CLICK] ${trafficType.toUpperCase()} | ${company} | ${source} | ${device}`);
