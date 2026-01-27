@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, FileText, Building2, Clock } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 
 export const metadata: Metadata = {
     title: "Move Your 401(k) to Silver Tax-Free | 2026 Rollover Guide",
@@ -205,6 +206,9 @@ export default function SilverIRARolloverPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals involve risk. Past performance does not guarantee future results.</p>
                 </div>
             </footer>
+
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup

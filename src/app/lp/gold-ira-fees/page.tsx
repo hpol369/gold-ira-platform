@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees: What Wall Street Doesn't Want You to Know | 2026",
@@ -321,6 +322,10 @@ export default function GoldIRAFeesPatriotPage() {
                 </div>
             </footer>
 
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="gold" />
+
+            {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129"
                 variant="gold"

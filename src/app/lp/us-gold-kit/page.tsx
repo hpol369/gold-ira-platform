@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2 } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 import DebtInfographic from "@/components/lp/DebtInfographic";
 
 export const metadata: Metadata = {
@@ -156,6 +157,9 @@ export default function PatriotGoldKitPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Gold involves risk.</p>
                 </div>
             </footer>
+
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="gold" />
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup

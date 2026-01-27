@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, DollarSign, Factory, BarChart } from "lucide-react";
 import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 
 export const metadata: Metadata = {
     title: "Urgent Silver Alert | The 'Poor Man's Gold' Opportunity",
@@ -150,6 +151,10 @@ export default function PatriotSilverKitPage() {
                 </div>
             </footer>
 
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="silver" />
+
+            {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
                 variant="silver"

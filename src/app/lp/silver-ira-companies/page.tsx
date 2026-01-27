@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, Award, Users, Star } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies 2026 | Who Can You Trust?",
@@ -300,6 +301,10 @@ export default function SilverIRACompaniesPatriotPage() {
                 </div>
             </footer>
 
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="silver" />
+
+            {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
                 variant="silver"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, Star, ArrowRight, CheckCircle2, Award, Users, Phone, XCircle } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 
 export const metadata: Metadata = {
     title: "Augusta Precious Metals Review 2026 | Why We Recommend Them",
@@ -267,6 +268,9 @@ export default function AugustaSilverPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals involve risk. Past performance does not guarantee future results. We may receive compensation from Augusta.</p>
                 </div>
             </footer>
+
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup

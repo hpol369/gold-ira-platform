@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, Factory, Coins, BarChart3 } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies 2026 | Free Consultation",
@@ -272,6 +273,9 @@ export default function SilverIRAPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals involve risk. Past performance does not guarantee future results.</p>
                 </div>
             </footer>
+
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup

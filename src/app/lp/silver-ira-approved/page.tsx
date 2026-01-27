@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle, Award } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import SocialProofToast from "@/components/lp/SocialProofToast";
 
 export const metadata: Metadata = {
     title: "IRA-Approved Silver: What the IRS Allows | 2026 Guide",
@@ -356,6 +357,10 @@ export default function SilverIRAApprovedPatriotPage() {
                 </div>
             </footer>
 
+            {/* Social Proof Toast */}
+            <SocialProofToast variant="silver" />
+
+            {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
                 variant="silver"
