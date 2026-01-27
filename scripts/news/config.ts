@@ -42,6 +42,24 @@ export const CONFIG = {
             category: "gold" as const,
             priority: 1,
         },
+        {
+            name: "Kitco Silver",
+            url: "https://www.kitco.com/news/category/mining/rss",
+            category: "silver" as const,
+            priority: 1,
+        },
+        {
+            name: "SilverSeek",
+            url: "https://silverseek.com/rss.xml",
+            category: "silver" as const,
+            priority: 1,
+        },
+        {
+            name: "Money Metals",
+            url: "https://www.moneymetals.com/news/feed",
+            category: "silver" as const,
+            priority: 2,
+        },
     ],
 
     // Relevance scoring keywords
@@ -49,6 +67,9 @@ export const CONFIG = {
         highPriority: [
             "federal reserve", "fed", "interest rate", "inflation", "cpi",
             "gold price", "silver price", "precious metals", "bullion",
+            "silver demand", "silver industrial", "silver solar", "silver ev",
+            "silver shortage", "silver supply", "silver deficit", "silver institute",
+            "photovoltaic silver", "silver conductivity",
             "401k", "401(k)", "ira", "retirement", "pension", "social security",
             "recession", "market crash", "bank failure", "banking crisis",
             "dollar", "currency", "monetary policy", "quantitative easing",
@@ -80,6 +101,7 @@ export const CONFIG = {
     categoryGuides: {
         fed: ["/guide/gold-ira-guide", "/why-gold/inflation-protection", "/best-gold-ira-companies"],
         gold: ["/guide/gold-ira-guide", "/why-gold", "/best-gold-ira-companies"],
+        silver: ["/best-silver-ira-companies", "/lp/silver-ira", "/compare/gold-vs-silver-ira"],
         economy: ["/guide/protect-401k-from-crash", "/quiz", "/scenarios"],
         retirement: ["/rollover", "/self-directed-ira", "/solo-401k"],
         crypto: ["/crypto-ira", "/reviews/itrustcapital", "/best-crypto-ira-companies"],

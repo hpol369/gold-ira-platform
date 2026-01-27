@@ -118,6 +118,38 @@ function getCategoryGuidance(category: NewsCategory): string {
 - Discuss central bank gold buying
 - Link to: /guide/gold-ira-guide, /why-gold, /best-gold-ira-companies`,
 
+        silver: `## CATEGORY GUIDANCE: Silver - The Industrial Metal
+
+You're writing about SILVER - the most undervalued industrial metal on Earth.
+
+**Key Angles to Hit:**
+- Silver is BOTH a precious metal AND an industrial metal (unlike gold)
+- 50%+ of silver goes to industry - it gets CONSUMED, not hoarded
+- Solar panels need silver (600M oz projected by 2030)
+- Every EV uses 1-2 oz of silver
+- Your grandkids' phones and tablets need silver
+- Gold-silver ratio at 80:1 vs historical 15-20:1
+- Mining supply can't keep up with green tech demand
+
+**Kiyosaki Silver Voice:**
+- "Silver is poor man's gold - but that's EXACTLY why I love it"
+- "While everyone watches gold, silver is quietly powering the future"
+- "The green energy crowd doesn't realize they're silver bulls"
+- "When the ratio normalizes, silver holders will be laughing"
+
+**Headlines Should:**
+- Mention industrial demand when relevant
+- Use "silver" in first 3 words when possible
+- Include numbers/stats (80:1 ratio, 50% industrial, 600M oz)
+- Appeal to contrarian investors
+
+**Connect to:**
+- Silver IRA options
+- Physical silver vs ETFs
+- Why silver is historically cheap vs gold
+
+**Related Guides:** /best-silver-ira-companies, /lp/silver-ira, /compare/gold-vs-silver-ira`,
+
         economy: `## CATEGORY GUIDANCE: Economy
 - Question official statistics (real vs reported inflation)
 - Highlight wealth inequality implications
@@ -153,6 +185,7 @@ export function getRelatedGuidesForCategory(category: NewsCategory): string[] {
     const guides: Record<NewsCategory, string[]> = {
         fed: ["/guide/gold-ira-guide", "/why-gold/inflation-protection", "/best-gold-ira-companies"],
         gold: ["/guide/gold-ira-guide", "/why-gold", "/best-gold-ira-companies"],
+        silver: ["/best-silver-ira-companies", "/lp/silver-ira", "/compare/gold-vs-silver-ira"],
         economy: ["/guide/protect-401k-from-crash", "/quiz", "/scenarios"],
         retirement: ["/rollover", "/self-directed-ira", "/solo-401k"],
         crypto: ["/crypto-ira", "/reviews/itrustcapital", "/best-crypto-ira-companies"],

@@ -59,6 +59,7 @@ function determineCategory(keywords: string[], text: string): NewsCategory {
     const categoryScores: Record<NewsCategory, number> = {
         fed: 0,
         gold: 0,
+        silver: 0,
         economy: 0,
         retirement: 0,
         crypto: 0,
@@ -72,9 +73,28 @@ function determineCategory(keywords: string[], text: string): NewsCategory {
     }
 
     // Gold-related
-    const goldKeywords = ["gold", "silver", "precious metals", "bullion", "platinum", "palladium"];
+    const goldKeywords = ["gold", "precious metals", "bullion", "platinum", "palladium"];
     for (const kw of goldKeywords) {
         if (text.includes(kw)) categoryScores.gold += 2;
+    }
+
+    // Silver-related
+    const silverKeywords = [
+        "silver", "silver price", "silver demand",
+        "solar panel", "photovoltaic", "ev battery",
+        "industrial metal", "silver institute",
+        "silver eagle", "silver maple"
+    ];
+    for (const kw of silverKeywords) {
+        if (text.includes(kw)) categoryScores.silver += 2;
+    }
+
+    // Extra boost for industrial demand angles (silver + industrial combo)
+    const industrialKeywords = ["solar", "ev", "electric vehicle", "5g", "semiconductor", "electronics"];
+    for (const kw of industrialKeywords) {
+        if (text.includes(kw) && text.includes("silver")) {
+            categoryScores.silver += 3; // Strong boost for industrial + silver combo
+        }
     }
 
     // Economy-related

@@ -2,6 +2,7 @@
 // Track affiliate link clicks and send Telegram notifications
 
 import { NextRequest, NextResponse } from "next/server";
+import { sendTelegramNotification } from "@/lib/notifications";
 
 type TrafficType = "organic" | "paid" | "direct";
 
@@ -48,15 +49,6 @@ async function sendClickNotification(data: {
   trafficType: TrafficType;
   campaign?: string;
 }) {
-  // Read env vars inside function (required for Vercel serverless)
-  const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-  const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-
-  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
-    console.log("[CLICK] Telegram not configured");
-    return;
-  }
-
   // Traffic type indicators
   const trafficIndicators: Record<TrafficType, { emoji: string; label: string }> = {
     paid: { emoji: "💰", label: "PAID CLICK" },
@@ -75,20 +67,8 @@ ${data.device}
 
 💰 <i>Lead incoming...</i>`;
 
-  try {
-    await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text: message,
-        parse_mode: "HTML",
-        disable_notification: true, // Silent - don't spam for every click
-      }),
-    });
-  } catch (error) {
-    console.error("[CLICK] Telegram error:", error);
-  }
+  // Use shared notification function (uses same env vars as other notifications)
+  await sendTelegramNotification(message, false);
 }
 
 export async function GET(request: NextRequest) {

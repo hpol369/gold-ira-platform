@@ -1,6 +1,6 @@
 // News Article Types for Rich Dad Daily Briefing
 
-export type NewsCategory = "fed" | "gold" | "economy" | "retirement" | "crypto" | "weekly";
+export type NewsCategory = "fed" | "gold" | "silver" | "economy" | "retirement" | "crypto" | "weekly";
 
 export interface NewsArticle {
     // Core fields
@@ -90,9 +90,14 @@ export const NEWS_CATEGORIES: Record<NewsCategory, { label: string; color: strin
         description: "Fed policy, interest rates, and monetary policy news"
     },
     gold: {
-        label: "Gold & Silver",
+        label: "Gold",
         color: "amber",
-        description: "Precious metals prices, trends, and market analysis"
+        description: "Gold prices, trends, and market analysis"
+    },
+    silver: {
+        label: "Silver",
+        color: "sky",
+        description: "Silver prices, industrial demand, and market analysis"
     },
     economy: {
         label: "Economy",
