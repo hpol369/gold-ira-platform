@@ -1,246 +1,283 @@
 import type { Metadata } from "next";
-import {
-  LPHeader,
-  LPHero,
-  LPTrustBar,
-  LPBenefits,
-  LPProcess,
-  LPFeatures,
-  LPStats,
-  LPFAQ,
-  LPFinalCTA,
-  LPFooter,
-  LPSilverDemand,
-  type FAQItem,
-  type Benefit,
-  type Step,
-} from "@/components/lp";
-import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
+import Link from "next/link";
+import Image from "next/image";
+import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, Factory, Coins, BarChart3 } from "lucide-react";
+import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 
-// noindex for paid landing pages - don't compete with SEO pages
 export const metadata: Metadata = {
-  title: "Best Silver IRA Company 2026 | Free Consultation",
-  description:
-    "Compare top silver IRA companies. A+ BBB rated. No pushy sales. Get your free consultation today.",
-  robots: {
-    index: false,
-    follow: false,
-  },
+    title: "Best Silver IRA Companies 2026 | Free Consultation",
+    description: "Compare top silver IRA companies. A+ BBB rated. No pushy sales. Get your free consultation and silver investment guide today.",
+    robots: {
+        index: false,
+        follow: false,
+    },
 };
 
-// Track source for all CTAs on this page
-const TRACK_SOURCE = "lp-silver-ira";
+const AFFILIATE_LINK = "https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129";
 
-// Silver-specific benefits (using string icon names)
-const silverBenefits: Benefit[] = [
-  {
-    icon: "factory",
-    title: "Essential for Modern Tech",
-    description:
-      "Silver powers your grandkids' phones, your neighbor's solar panels, and electric cars. Over 50% goes to industry - it's not just precious, it's essential.",
-  },
-  {
-    icon: "trending-up",
-    title: "Demand Growing, Supply Limited",
-    description:
-      "Solar panel production alone needs 600 million oz by 2030. Mining can't keep up. Unlike gold, silver gets used up.",
-  },
-  {
-    icon: "bar-chart",
-    title: "Gold-Silver Ratio at 80:1",
-    description:
-      "Historically, the ratio averaged 15-20:1. Today's 80:1 ratio means silver is historically cheap compared to gold.",
-  },
-  {
-    icon: "dollar-sign",
-    title: "More Metal for Your Money",
-    description:
-      "With silver at ~$30/oz vs gold at ~$2,400/oz, you own significantly more physical metal. Easier to buy, easier to sell.",
-  },
-];
-
-// 3-step process (using string icon names)
-const processSteps: Step[] = [
-  {
-    icon: "phone",
-    title: "Free Consultation",
-    description:
-      "Speak with a silver specialist who will answer all your questions without any pressure or obligation.",
-  },
-  {
-    icon: "refresh-ccw",
-    title: "Easy Rollover",
-    description:
-      "We handle all the paperwork to transfer your existing 401k, IRA, or retirement account tax-free.",
-  },
-  {
-    icon: "coins",
-    title: "Own Physical Silver",
-    description:
-      "Your IRS-approved silver is stored in a secure depository with full insurance protection.",
-  },
-];
-
-// Augusta features
-const augustaFeatures = [
-  "A+ BBB Rating - Zero Consumer Complaints",
-  "No High-Pressure Sales Tactics",
-  "Lifetime Customer Support",
-  "Transparent Pricing - No Hidden Fees",
-  "IRS-Approved Silver Products",
-  "Free Silver IRA Guide",
-];
-
-// Silver stats
-const silverStats = [
-  { value: ".999", label: "Silver Purity Required" },
-  { value: "$50K", label: "Minimum Investment" },
-  { value: "80:1", label: "Gold-Silver Ratio" },
-  { value: "50%+", label: "Industrial Demand" },
-];
-
-// FAQ content
-const faqs: FAQItem[] = [
-  {
-    question: "What is a Silver IRA?",
-    answer:
-      "A Silver IRA is a self-directed retirement account that allows you to hold physical silver coins and bars as part of your retirement savings. It offers the same tax advantages as traditional IRAs while providing protection against inflation and market volatility.",
-  },
-  {
-    question: "How do I rollover my 401k to a Silver IRA?",
-    answer:
-      "The process is simple and tax-free. You open a self-directed IRA, initiate a direct rollover from your 401k, and then purchase IRS-approved silver. Augusta handles all the paperwork and guides you through each step.",
-  },
-  {
-    question: "What are the tax benefits of a Silver IRA?",
-    answer:
-      "Silver IRAs offer the same tax benefits as traditional IRAs - your contributions may be tax-deductible and your investments grow tax-deferred until retirement. Roth Silver IRAs offer tax-free growth and withdrawals.",
-  },
-  {
-    question: "What silver coins are IRA-approved?",
-    answer:
-      "IRS-approved silver includes American Silver Eagles, Canadian Silver Maple Leafs, Austrian Silver Philharmonics, and silver bars with .999 purity from approved refiners like PAMP Suisse and Johnson Matthey.",
-  },
-  {
-    question: "How much should I invest in silver?",
-    answer:
-      "Financial experts typically recommend allocating 5-15% of your portfolio to precious metals. Augusta's specialists can help you determine the right allocation based on your retirement goals and risk tolerance.",
-  },
-  {
-    question: "Why is silver used in so many industries?",
-    answer:
-      "Silver has the highest electrical conductivity of any metal, making it irreplaceable in electronics, solar panels, and medical devices. Unlike gold which mostly sits in vaults, over 50% of silver is consumed by industry each year. This industrial demand, combined with growing green technology adoption, creates consistent buying pressure.",
-  },
+// FAQ content for schema
+const faqs = [
+    {
+        question: "What is a Silver IRA?",
+        answer: "A Silver IRA is a self-directed retirement account that holds physical silver coins and bars instead of paper assets. It offers the same tax advantages as traditional IRAs while providing protection against inflation and currency devaluation.",
+    },
+    {
+        question: "What silver products are IRA-approved?",
+        answer: "IRS-approved silver must be .999 fine or better. Popular options include American Silver Eagles, Canadian Maple Leafs, Austrian Philharmonics, and silver bars from approved refiners like PAMP Suisse and Johnson Matthey.",
+    },
+    {
+        question: "How much should I invest in silver?",
+        answer: "Financial experts typically recommend allocating 5-15% of your portfolio to precious metals. Augusta's specialists can help determine the right allocation based on your retirement goals and risk tolerance.",
+    },
+    {
+        question: "Why is silver used in so many industries?",
+        answer: "Silver has the highest electrical conductivity of any metal, making it essential for electronics, solar panels, EVs, and medical devices. Over 50% of silver demand comes from industrial use, unlike gold which is primarily held as a store of value.",
+    },
+    {
+        question: "Can I transfer my existing IRA to silver?",
+        answer: "Yes. You can do a direct rollover from any existing IRA, 401(k), 403(b), TSP, or other qualified retirement account. The transfer is tax-free when done correctly. Augusta handles all the paperwork.",
+    },
 ];
 
 // Generate FAQPage schema
-function generateFAQSchema(faqItems: FAQItem[]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqItems.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
+function generateFAQSchema() {
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        })),
+    };
 }
 
-export default function SilverIRALandingPage() {
-  const faqSchema = generateFAQSchema(faqs);
+export default function SilverIRAPage() {
+    const faqSchema = generateFAQSchema();
 
-  return (
-    <div className="min-h-screen bg-slate-900">
-      {/* FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+    return (
+        <div className="min-h-screen bg-white text-slate-900 font-serif">
+            {/* FAQ Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
-      {/* Sticky Header */}
-      <LPHeader />
-
-      {/* Hero Section */}
-      <LPHero
-        headline="Best Silver IRA Company 2026"
-        subheadline="Protect your retirement with physical silver. No pushy sales. Education-first approach. Free expert consultation."
-        ctaText="See Our #1 Recommendation"
-        linkContext="silver"
-        trackSource={TRACK_SOURCE}
-        urgencyBadge="2026 Guide"
-        internalLink={INTERNAL_WARMUP_PAGES.silver}
-      />
-
-      {/* Trust Bar */}
-      <LPTrustBar rating={4.9} reviewCount={2847} bbbRating="A+" />
-
-      {/* Featured Testimonial */}
-      <section className="bg-slate-900 py-8 md:py-12">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 md:p-8">
-            <div className="absolute -top-3 left-6 bg-slate-900 px-2">
-              <span className="text-amber-400 text-4xl">&ldquo;</span>
+            {/* Top Warning Bar */}
+            <div className="bg-[#B22234] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
+                <span className="flex items-center justify-center gap-2">
+                    <AlertTriangle className="h-4 w-4" />
+                    Silver Supply Deficit: Industrial Demand Exceeds Mining Output
+                </span>
             </div>
-            <blockquote className="text-slate-300 text-lg md:text-xl leading-relaxed mb-4">
-              Augusta made the entire process simple. No pressure, just education. I now feel confident about my silver IRA and my retirement is better protected.
-            </blockquote>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center">
-                <span className="text-amber-400 font-bold">RK</span>
-              </div>
-              <div>
-                <div className="text-white font-semibold">Robert K.</div>
-                <div className="text-slate-400 text-sm">Verified Augusta Customer</div>
-              </div>
-            </div>
-          </div>
+
+            {/* Hero Section */}
+            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+                <div className="max-w-4xl mx-auto px-4 text-center">
+
+                    {/* Badge */}
+                    <div className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
+                        <ShieldCheck className="h-4 w-4" />
+                        2026 Silver IRA Guide
+                    </div>
+
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                        Protect Your Retirement <br />
+                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">With Physical Silver</span>
+                    </h1>
+
+                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                        Silver isn't just precious—it's <strong>essential</strong>. Over 50% goes to industry. Supply can't keep up with demand. Get our free 2026 silver investment guide.
+                    </p>
+
+                    {/* VSL / Image Area */}
+                    <div className="relative aspect-video bg-black rounded-xl shadow-2xl overflow-hidden mb-10 border-4 border-white max-w-3xl mx-auto group cursor-pointer">
+                        <Image
+                            src="/patriot_silver_hero.png"
+                            alt="Silver IRA Investment Guide"
+                            fill
+                            className="object-cover opacity-80 group-hover:opacity-60 transition-opacity"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-20 h-20 bg-[#B22234] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-white border-b-[15px] border-b-transparent ml-2"></div>
+                            </div>
+                        </div>
+                        <div className="absolute bottom-4 left-0 right-0 text-center">
+                            <span className="bg-black/70 text-white px-4 py-1 rounded text-sm font-sans font-bold">
+                                WATCH: Why Silver Is the Investment of 2026 (5 Min)
+                            </span>
+                        </div>
+                    </div>
+
+                    {/* CTA Area */}
+                    <div className="flex flex-col items-center gap-4">
+                        <Link
+                            href={AFFILIATE_LINK}
+                            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                        >
+                            Get Your Free Silver Guide
+                            <ArrowRight className="h-8 w-8" />
+                        </Link>
+                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                            <ShieldCheck className="h-4 w-4 text-green-600" />
+                            100% Free • No Obligation • Education First
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            {/* Trust Bar */}
+            <section className="py-8 bg-slate-100 border-b border-slate-200">
+                <div className="max-w-5xl mx-auto px-4 text-center">
+                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
+                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
+                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
+                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                    </div>
+                </div>
+            </section>
+
+            {/* Why Silver Section */}
+            <section className="py-16 bg-white font-sans">
+                <div className="max-w-5xl mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-[#000080] font-serif text-center mb-4">Why Silver for Your IRA?</h2>
+                    <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+                        Gold gets the headlines, but silver has fundamentals that make it equally compelling.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                            <Factory className="h-10 w-10 text-[#000080] mb-4" />
+                            <h3 className="text-xl font-bold text-[#000080] mb-3">Industrial Demand (50%+)</h3>
+                            <p className="text-slate-600">
+                                Silver powers solar panels, electric vehicles, smartphones, and medical devices. Unlike gold, silver gets consumed. Once it's in your iPhone, it's gone forever.
+                            </p>
+                        </div>
+
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                            <TrendingUp className="h-10 w-10 text-[#000080] mb-4" />
+                            <h3 className="text-xl font-bold text-[#000080] mb-3">Supply Deficit</h3>
+                            <p className="text-slate-600">
+                                For years, silver demand has exceeded mining supply. The deficit is covered by recycling and above-ground stockpiles—which are shrinking.
+                            </p>
+                        </div>
+
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                            <BarChart3 className="h-10 w-10 text-[#000080] mb-4" />
+                            <h3 className="text-xl font-bold text-[#000080] mb-3">Gold-Silver Ratio at 80:1</h3>
+                            <p className="text-slate-600">
+                                Historically, it took 15-20 ounces of silver to buy 1 ounce of gold. Today it takes 80+. If the ratio reverts, silver has room to outperform.
+                            </p>
+                        </div>
+
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                            <Coins className="h-10 w-10 text-[#000080] mb-4" />
+                            <h3 className="text-xl font-bold text-[#000080] mb-3">Accessible Entry Point</h3>
+                            <p className="text-slate-600">
+                                At ~$30/oz vs gold at ~$2,400/oz, you can own significantly more physical metal. Silver is easier to buy in small amounts—and easier to sell.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Silver Stats */}
+            <section className="py-12 bg-[#000080] text-white font-sans">
+                <div className="max-w-4xl mx-auto px-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        <div>
+                            <div className="text-4xl font-black text-amber-400">.999</div>
+                            <div className="text-sm text-slate-300 mt-1">IRS Purity Required</div>
+                        </div>
+                        <div>
+                            <div className="text-4xl font-black text-amber-400">$50K</div>
+                            <div className="text-sm text-slate-300 mt-1">Augusta Minimum</div>
+                        </div>
+                        <div>
+                            <div className="text-4xl font-black text-amber-400">80:1</div>
+                            <div className="text-sm text-slate-300 mt-1">Gold-Silver Ratio</div>
+                        </div>
+                        <div>
+                            <div className="text-4xl font-black text-amber-400">50%+</div>
+                            <div className="text-sm text-slate-300 mt-1">Industrial Demand</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="py-16 bg-white font-sans">
+                <div className="max-w-3xl mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-[#000080] font-serif text-center mb-10">
+                        Silver IRA Questions Answered
+                    </h2>
+
+                    <div className="space-y-6">
+                        {faqs.map((faq, index) => (
+                            <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                                <h3 className="text-lg font-bold text-[#000080] mb-3">{faq.question}</h3>
+                                <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Final CTA */}
+            <section className="py-16 bg-[#000080] text-center">
+                <div className="max-w-3xl mx-auto px-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
+                        Ready to Add Silver to Your Retirement?
+                    </h2>
+                    <p className="text-slate-300 text-lg mb-8 font-sans">
+                        Get a free consultation with a silver specialist. No pressure. Just education.
+                    </p>
+
+                    <div className="flex flex-wrap justify-center gap-4 mb-8 font-sans">
+                        <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                            <CheckCircle2 className="h-4 w-4 text-green-400" />
+                            Zero BBB Complaints
+                        </span>
+                        <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                            <CheckCircle2 className="h-4 w-4 text-green-400" />
+                            A+ BBB Rating
+                        </span>
+                        <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2">
+                            <CheckCircle2 className="h-4 w-4 text-green-400" />
+                            Tax-Free Rollover
+                        </span>
+                    </div>
+
+                    <Link
+                        href={AFFILIATE_LINK}
+                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                    >
+                        Get Your Free Silver Guide
+                    </Link>
+                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                        100% free. No obligation. Strictly confidential.
+                    </p>
+                </div>
+            </section>
+
+            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+                <div className="max-w-4xl mx-auto px-4">
+                    <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
+                    <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals involve risk. Past performance does not guarantee future results.</p>
+                </div>
+            </footer>
+
+            {/* Exit Intent Popup */}
+            <ExitIntentPopup
+                affiliateLink={AFFILIATE_LINK}
+                variant="silver"
+            />
         </div>
-      </section>
-
-      {/* Why Silver Section */}
-      <LPBenefits headline="Why Silver for Your IRA?" benefits={silverBenefits} />
-
-      {/* Silver Demand Drivers - Visual Section */}
-      <LPSilverDemand />
-
-      {/* How It Works */}
-      <LPProcess
-        headline="How It Works (3 Simple Steps)"
-        steps={processSteps}
-        ctaText="See Our #1 Recommendation"
-        linkContext="silver"
-        trackSource={TRACK_SOURCE}
-        internalLink={INTERNAL_WARMUP_PAGES.silver}
-      />
-
-      {/* Why Augusta Section */}
-      <LPFeatures
-        headline="Why Augusta Precious Metals?"
-        features={augustaFeatures}
-      />
-
-      {/* Silver Stats */}
-      <LPStats headline="Silver IRA Quick Facts" stats={silverStats} />
-
-      {/* FAQ Section */}
-      <LPFAQ headline="Frequently Asked Questions" faqs={faqs} />
-
-      {/* Final CTA */}
-      <LPFinalCTA
-        headline="Ready to Protect Your Retirement?"
-        subheadline="See why Augusta is our #1 pick for silver IRAs"
-        ctaText="See Our #1 Recommendation"
-        trustPoints={["No obligation", "100% free", "Takes 15 minutes"]}
-        linkContext="silver"
-        trackSource={TRACK_SOURCE}
-        internalLink={INTERNAL_WARMUP_PAGES.silver}
-      />
-
-      {/* Minimal Footer */}
-      <LPFooter />
-    </div>
-  );
+    );
 }
