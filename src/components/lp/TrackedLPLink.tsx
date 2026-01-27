@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ReactNode } from "react";
-import { trackAffiliateClick } from "@/lib/analytics";
+import { trackAffiliateClick, trackGoogleAdsConversion } from "@/lib/analytics";
 
 interface TrackedLPLinkProps {
     href: string;
@@ -29,9 +29,10 @@ export default function TrackedLPLink({
     // Build the tracked URL (for Telegram notification)
     const trackedUrl = `/api/track-click?url=${encodeURIComponent(href)}&source=${encodeURIComponent(source)}&company=${company}&traffic=${traffic}`;
 
-    // Fire GA4 event on click (for Google Ads optimization)
+    // Fire GA4 event + Google Ads conversion on click
     const handleClick = () => {
         trackAffiliateClick(company, source, "cta");
+        trackGoogleAdsConversion();
     };
 
     return (

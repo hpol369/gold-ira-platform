@@ -75,3 +75,14 @@ export function trackOutboundClick(url: string, linkText: string) {
     });
   }
 }
+
+// Track Google Ads conversion for affiliate clicks
+export function trackGoogleAdsConversion() {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-17807049464/OXQtCJnE-e0bEPiFiKtC',
+      value: 5.0,
+      currency: 'EUR',
+    });
+  }
+}

@@ -7,6 +7,7 @@ import { ExitIntentModal } from "@/components/widgets/ExitIntentModal";
 import { SocialProofTicker } from "@/components/widgets/SocialProofTicker";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
+const GOOGLE_ADS_ID = "AW-17807049464";
 const CLARITY_PROJECT_ID = "v816rr21t5";
 const GTM_ID = "GTM-TPC628G9";
 
@@ -100,6 +101,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', '${GOOGLE_ADS_ID}');
           `}
         </Script>
         {/* Microsoft Clarity - Session Recording & Heatmaps */}
