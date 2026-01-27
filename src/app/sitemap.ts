@@ -523,6 +523,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // ============================================
+  // SILVER SQUEEZE PAGES
+  // ============================================
+  const silverSqueezePages = [
+    "/silver-squeeze",
+    "/silver-squeeze/buy-physical-silver-guide",
+    "/silver-squeeze/silver-supply-deficit",
+    "/silver-squeeze/comex-silver-inventory",
+    "/silver-squeeze/silver-short-interest",
+    "/silver-squeeze/silver-manipulation",
+    "/silver-squeeze/banks-shorting-silver",
+    "/silver-squeeze/silver-backwardation",
+    "/silver-squeeze/paper-silver-vs-physical",
+    "/silver-squeeze/silver-stacking-guide",
+    "/silver-squeeze/silver-shortage",
+    "/silver-squeeze/silver-undervalued",
+    "/silver-squeeze/silver-to-gold-ratio-calculator",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   // Deduplicate by URL to handle any overlaps
@@ -551,6 +575,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...medicaidPages,
     ...grandchildrenPages,
     ...seniorProtectionPages,
+    ...silverSqueezePages,
   ];
 
   // Deduplicate by URL

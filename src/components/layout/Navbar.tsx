@@ -132,6 +132,9 @@ export function Navbar() {
                                                     <Link href="/best-silver-ira-companies" className="block py-1.5 text-sm text-slate-300 hover:text-white">
                                                         Best Silver IRA Companies
                                                     </Link>
+                                                    <Link href="/silver-squeeze" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                        Silver Squeeze Hub
+                                                    </Link>
 
                                                     <div className="border-t border-white/10 my-3"></div>
                                                     <span className="block text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2 flex items-center gap-1">
@@ -377,6 +380,9 @@ export function Navbar() {
                                 </Link>
                                 <Link href="/best-silver-ira-companies" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
                                     Best Silver IRA Companies
+                                </Link>
+                                <Link href="/silver-squeeze" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Silver Squeeze Hub
                                 </Link>
                             </div>
                         </div>

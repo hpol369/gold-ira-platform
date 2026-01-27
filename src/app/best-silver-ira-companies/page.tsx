@@ -437,6 +437,29 @@ export default function BestSilverIraCompaniesPage() {
                                 <p className="text-sm text-slate-400">Compare gold IRA providers for a diversified precious metals portfolio.</p>
                             </Link>
                         </div>
+
+                        {/* Silver Squeeze Resources */}
+                        <div className="mt-8 pt-8 border-t border-white/10">
+                            <h3 className="text-xl font-bold text-white mb-6 text-center">Silver Market Insights</h3>
+                            <div className="grid md:grid-cols-4 gap-4">
+                                <Link href="/silver-squeeze" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white text-sm mb-1 group-hover:text-amber-400 transition-colors">Silver Squeeze Hub</h4>
+                                    <p className="text-xs text-slate-400">Understand the silver squeeze movement</p>
+                                </Link>
+                                <Link href="/silver-squeeze/buy-physical-silver-guide" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white text-sm mb-1 group-hover:text-amber-400 transition-colors">Buy Physical Silver</h4>
+                                    <p className="text-xs text-slate-400">Guide to premiums, products & dealers</p>
+                                </Link>
+                                <Link href="/silver-squeeze/silver-supply-deficit" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white text-sm mb-1 group-hover:text-amber-400 transition-colors">Silver Supply Deficit</h4>
+                                    <p className="text-xs text-slate-400">Why silver supply is tightening</p>
+                                </Link>
+                                <Link href="/compare/gold-vs-silver-ira" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white text-sm mb-1 group-hover:text-amber-400 transition-colors">Gold vs Silver IRA</h4>
+                                    <p className="text-xs text-slate-400">Compare gold and silver for retirement</p>
+                                </Link>
+                            </div>
+                        </div>
                     </Container>
                 </section>
 

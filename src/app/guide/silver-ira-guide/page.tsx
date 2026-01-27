@@ -602,6 +602,29 @@ export default function SilverIraGuidePage() {
 
                         <AuthorBox />
 
+                        {/* Related Silver Content */}
+                        <div className="my-12 not-prose">
+                            <h3 className="text-xl font-serif font-bold text-white mb-6">Explore More Silver Resources</h3>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                <Link href="/silver-squeeze" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver Squeeze Hub</h4>
+                                    <p className="text-sm text-slate-400">Understand the silver squeeze movement and how it affects physical silver availability.</p>
+                                </Link>
+                                <Link href="/silver-squeeze/buy-physical-silver-guide" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">How to Buy Physical Silver</h4>
+                                    <p className="text-sm text-slate-400">Complete guide to buying silver: premiums, products, dealers, and storage options.</p>
+                                </Link>
+                                <Link href="/silver-squeeze/silver-supply-deficit" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver Supply Deficit</h4>
+                                    <p className="text-sm text-slate-400">Learn about the structural supply deficit driving silver prices.</p>
+                                </Link>
+                                <Link href="/best-silver-ira-companies" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Best Silver IRA Companies</h4>
+                                    <p className="text-sm text-slate-400">Compare top silver IRA providers for 2026.</p>
+                                </Link>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
             </Container>
