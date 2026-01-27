@@ -759,6 +759,24 @@ export default function SilverSqueezePage() {
                                 <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver IRA Hub</h4>
                                 <p className="text-xs text-slate-400">Complete guide to silver retirement accounts</p>
                             </Link>
+                            <Link href="/silver-dealer-reviews" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Dealer Reviews</h4>
+                                <p className="text-xs text-slate-400">Compare APMEX, JM Bullion & more</p>
+                            </Link>
+                            <Link href="/buy-sell-silver" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Buy & Sell Silver Guide</h4>
+                                <p className="text-xs text-slate-400">How to buy, sell & stack silver</p>
+                            </Link>
+                            <Link href="/silver-coin-values" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Coin Values</h4>
+                                <p className="text-xs text-slate-400">Morgan dollars, junk silver & more</p>
+                            </Link>
+                        </div>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                            <Link href="/silver-retirement" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Retirement Planning</h4>
+                                <p className="text-xs text-slate-400">IRA transfers, RMDs & inheritance</p>
+                            </Link>
                             <Link href="/silver-price" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
                                 <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Price Predictions</h4>
                                 <p className="text-xs text-slate-400">Expert forecasts 2026-2040</p>

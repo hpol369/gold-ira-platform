@@ -42,6 +42,22 @@ const predictionPages = [
         hot: true,
     },
     {
+        href: "/silver-coin-values",
+        title: "Silver Coin Values",
+        description: "Current melt values for Morgan dollars, Peace dollars, junk silver, and collectible coins.",
+        icon: DollarSign,
+        volume: "2,400",
+        hot: true,
+    },
+    {
+        href: "/silver-coin-values/melt-value-calculator",
+        title: "Silver Melt Value Calculator",
+        description: "Calculate the melt value of your silver coins based on current spot prices.",
+        icon: DollarSign,
+        volume: "800",
+        hot: true,
+    },
+    {
         href: "/silver-price/all-time-high",
         title: "Silver All-Time High",
         description: "Historical highs of $49.45 (1980) and $48.70 (2011). What caused the spikes and could it happen again?",

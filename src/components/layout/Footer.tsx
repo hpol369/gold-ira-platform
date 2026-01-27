@@ -50,12 +50,15 @@ export function Footer() {
                             <li><Link href="/crypto-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Crypto IRA Guide</Link></li>
                             <li><Link href="/self-directed-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Self-Directed IRA</Link></li>
                         </ul>
-                        <h3 className="font-semibold text-white mb-4 mt-6 text-sm">Silver IRA</h3>
+                        <h3 className="font-semibold text-white mb-4 mt-6 text-sm">Silver Guides</h3>
                         <ul className="space-y-2">
                             <li><Link href="/silver-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Silver IRA Hub</Link></li>
-                            <li><Link href="/silver-price" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Price Predictions</Link></li>
+                            <li><Link href="/silver-retirement" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Retirement Planning</Link></li>
+                            <li><Link href="/silver-coin-values" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Coin Values</Link></li>
+                            <li><Link href="/silver-dealer-reviews" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Dealer Reviews</Link></li>
+                            <li><Link href="/buy-sell-silver" className="text-gray-400 hover:text-white transition-colors text-sm">Buy & Sell Silver Guide</Link></li>
                             <li><Link href="/silver-products" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Products Guide</Link></li>
-                            <li><Link href="/silver-experts" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Experts</Link></li>
+                            <li><Link href="/silver-price" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Price Predictions</Link></li>
                             <li><Link href="/silver-squeeze" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Squeeze Hub</Link></li>
                             <li><Link href="/best-silver-ira-companies" className="text-gray-400 hover:text-white transition-colors text-sm">Best Silver IRA Companies</Link></li>
                         </ul>

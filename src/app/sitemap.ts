@@ -625,6 +625,132 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // SILVER COIN VALUES PAGES (9 pages) - Part 3
+  // ============================================
+  const silverCoinValuesHubPages = [
+    {
+      url: `${baseUrl}/silver-coin-values`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+  const silverCoinValuesSubPages = [
+    "/silver-coin-values/morgan-dollar",
+    "/silver-coin-values/walking-liberty-half",
+    "/silver-coin-values/silver-dimes",
+    "/silver-coin-values/peace-dollar",
+    "/silver-coin-values/silver-quarters",
+    "/silver-coin-values/war-nickels",
+    "/silver-coin-values/junk-silver",
+    "/silver-coin-values/melt-value-calculator",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // SILVER DEALER REVIEWS PAGES (8 pages) - Part 3
+  // ============================================
+  const silverDealerReviewsHubPages = [
+    {
+      url: `${baseUrl}/silver-dealer-reviews`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+  const silverDealerReviewsSubPages = [
+    "/silver-dealer-reviews/apmex",
+    "/silver-dealer-reviews/jm-bullion",
+    "/silver-dealer-reviews/sd-bullion",
+    "/silver-dealer-reviews/money-metals-exchange",
+    "/silver-dealer-reviews/hero-bullion",
+    "/silver-dealer-reviews/bold-precious-metals",
+    "/silver-dealer-reviews/comparison",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // BUY SELL SILVER PAGES (10 pages) - Part 3
+  // ============================================
+  const buySellSilverHubPages = [
+    {
+      url: `${baseUrl}/buy-sell-silver`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+  const buySellSilverSubPages = [
+    "/buy-sell-silver/best-place-to-sell",
+    "/buy-sell-silver/best-coins-to-buy",
+    "/buy-sell-silver/how-to-sell-coins",
+    "/buy-sell-silver/cleaning-coins",
+    "/buy-sell-silver/spot-fake-silver",
+    "/buy-sell-silver/silver-testing",
+    "/buy-sell-silver/when-to-sell",
+    "/buy-sell-silver/coins-vs-bars",
+    "/buy-sell-silver/stacking-beginners",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // SILVER RETIREMENT PAGES (9 pages) - Part 3
+  // ============================================
+  const silverRetirementHubPages = [
+    {
+      url: `${baseUrl}/silver-retirement`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+  const silverRetirementSubPages = [
+    "/silver-retirement/transfer-ira-to-silver",
+    "/silver-retirement/ira-approved-bars",
+    "/silver-retirement/ira-approved-coins",
+    "/silver-retirement/how-much-silver",
+    "/silver-retirement/silver-vs-bonds",
+    "/silver-retirement/silver-for-grandchildren",
+    "/silver-retirement/inheritance-planning",
+    "/silver-retirement/rmd-rules",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // SILVER PRODUCTS EXPANSION (7 NEW pages) - Part 3
+  // ============================================
+  const silverProductsExpansionPages = [
+    "/silver-products/monster-box",
+    "/silver-products/engelhard",
+    "/silver-products/sunshine-mint",
+    "/silver-products/fractional",
+    "/silver-products/johnson-matthey",
+    "/silver-products/pamp-suisse",
+    "/silver-products/generic-rounds",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   // Deduplicate by URL to handle any overlaps
@@ -658,6 +784,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...silverPricePages,
     ...silverProductsPages,
     ...silverExpertsPages,
+    // Silver Part 3 Content Hubs
+    ...silverCoinValuesHubPages,
+    ...silverCoinValuesSubPages,
+    ...silverDealerReviewsHubPages,
+    ...silverDealerReviewsSubPages,
+    ...buySellSilverHubPages,
+    ...buySellSilverSubPages,
+    ...silverRetirementHubPages,
+    ...silverRetirementSubPages,
+    ...silverProductsExpansionPages,
   ];
 
   // Deduplicate by URL

@@ -104,9 +104,24 @@ const silverIraPages = [
 
 const relatedResources = [
     {
-        title: "Silver IRA Guide",
-        description: "Our comprehensive guide to silver IRA investing.",
-        href: "/guide/silver-ira-guide",
+        title: "Silver Retirement Planning",
+        description: "IRA transfers, RMDs, and inheritance strategies.",
+        href: "/silver-retirement",
+    },
+    {
+        title: "IRA-Approved Silver Coins",
+        description: "Complete list of IRS-approved silver coins.",
+        href: "/silver-retirement/ira-approved-coins",
+    },
+    {
+        title: "IRA-Approved Silver Bars",
+        description: "Approved silver bars for your IRA.",
+        href: "/silver-retirement/ira-approved-bars",
+    },
+    {
+        title: "Silver Dealer Reviews",
+        description: "Compare APMEX, JM Bullion & top dealers.",
+        href: "/silver-dealer-reviews",
     },
     {
         title: "Best Silver IRA Companies",
@@ -119,9 +134,14 @@ const relatedResources = [
         href: "/silver-squeeze",
     },
     {
-        title: "IRA-Approved Silver",
-        description: "Which silver products qualify for IRAs.",
-        href: "/guide/ira-approved-silver",
+        title: "Buy & Sell Silver Guide",
+        description: "How to buy, sell & stack silver.",
+        href: "/buy-sell-silver",
+    },
+    {
+        title: "Silver Coin Values",
+        description: "Morgan dollars, junk silver values.",
+        href: "/silver-coin-values",
     },
 ];
 

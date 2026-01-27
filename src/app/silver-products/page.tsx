@@ -44,6 +44,14 @@ const silverProducts = [
     highlight: true,
   },
   {
+    slug: "monster-box",
+    title: "Monster Box Silver",
+    description: "500 oz sealed boxes of sovereign coins. Bulk buying at lower premiums.",
+    icon: Package,
+    keywords: "New",
+    highlight: true,
+  },
+  {
     slug: "constitutional-silver",
     title: "Constitutional Silver",
     description: "Pre-1965 US coins with 90% silver content. Highly recognizable and divisible.",
@@ -65,6 +73,54 @@ const silverProducts = [
     description: "Mercury dimes, Washington quarters, Walking Liberty halves. Classic American silver.",
     icon: CircleDollarSign,
     keywords: "150 monthly searches",
+    highlight: false,
+  },
+  {
+    slug: "engelhard",
+    title: "Engelhard Silver",
+    description: "Highly collectible vintage bars and rounds from the legendary refiner.",
+    icon: Gem,
+    keywords: "New",
+    highlight: true,
+  },
+  {
+    slug: "sunshine-mint",
+    title: "Sunshine Mint Silver",
+    description: "Popular American refiner with MintMark SI security feature.",
+    icon: Gem,
+    keywords: "New",
+    highlight: false,
+  },
+  {
+    slug: "johnson-matthey",
+    title: "Johnson Matthey Silver",
+    description: "Collectible bars from one of the world's premier refiners.",
+    icon: Layers,
+    keywords: "New",
+    highlight: false,
+  },
+  {
+    slug: "pamp-suisse",
+    title: "PAMP Suisse Silver",
+    description: "Swiss-made premium bars with iconic Lady Fortuna design.",
+    icon: Gem,
+    keywords: "New",
+    highlight: true,
+  },
+  {
+    slug: "fractional",
+    title: "Fractional Silver",
+    description: "Half-ounce, quarter-ounce, and 1/10 oz silver for affordability.",
+    icon: CircleDollarSign,
+    keywords: "New",
+    highlight: false,
+  },
+  {
+    slug: "generic-rounds",
+    title: "Generic Silver Rounds",
+    description: "Private mint rounds with the lowest premiums over spot.",
+    icon: Coins,
+    keywords: "New",
     highlight: false,
   },
   {
@@ -98,7 +154,13 @@ const productCategories = [
     name: "Large Bars",
     description: "For institutional investors and serious stackers",
     icon: Scale,
-    products: ["1000-oz-bar", "good-delivery", "kilo-bar"],
+    products: ["1000-oz-bar", "good-delivery", "kilo-bar", "monster-box"],
+  },
+  {
+    name: "Premium Refiners",
+    description: "Top-quality bars from legendary mints",
+    icon: Gem,
+    products: ["engelhard", "johnson-matthey", "pamp-suisse", "sunshine-mint"],
   },
   {
     name: "Sovereign Coins",
@@ -111,6 +173,12 @@ const productCategories = [
     description: "Pre-1965 American coins with 90% silver content",
     icon: Landmark,
     products: ["constitutional-silver", "90-percent-coins"],
+  },
+  {
+    name: "Budget Options",
+    description: "Lower premiums for stacking on a budget",
+    icon: CircleDollarSign,
+    products: ["generic-rounds", "fractional"],
   },
   {
     name: "Silver ETFs",
@@ -195,7 +263,7 @@ export default function SilverProductsHubPage() {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
               <span className="flex items-center gap-2">
                 <Scale className="h-4 w-4 text-slate-500" />
-                8 Product Types Covered
+                15 Product Types Covered
               </span>
               <span className="flex items-center gap-2">
                 <BarChart3 className="h-4 w-4 text-slate-500" />
