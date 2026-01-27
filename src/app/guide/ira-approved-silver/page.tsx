@@ -607,7 +607,7 @@ export default function IraApprovedSilverPage() {
                                     <Coins className="w-5 h-5 text-amber-400" />
                                     <span className="text-slate-300 hover:text-white">Complete Silver IRA Guide</span>
                                 </Link>
-                                <Link href="/guide/silver-ira-rollover" className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-colors">
+                                <Link href="/silver-ira/rollover" className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-colors">
                                     <ArrowRight className="w-5 h-5 text-amber-400" />
                                     <span className="text-slate-300 hover:text-white">Silver IRA Rollover Guide</span>
                                 </Link>

@@ -16,6 +16,9 @@ import {
     Coins,
     RefreshCw
 } from "lucide-react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -143,8 +146,9 @@ export default function GoldcoVsAugustaPage() {
     const augustaCTA = getTrackedLink(AFFILIATE_LINKS.augusta, "goldco-vs-augusta", "augusta");
 
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-900">
             <SchemaScript schema={schema} />
+            <Navbar />
 
             {/* Header */}
             <header className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 text-white py-20 relative overflow-hidden">
@@ -586,6 +590,20 @@ export default function GoldcoVsAugustaPage() {
                     </article>
                 </div>
             </Container>
+
+            {/* Augusta CTA */}
+            <section className="py-16 bg-slate-900">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        headline="Ready to Experience the Augusta Difference?"
+                        subheadline="Zero BBB complaints, lifetime support, and education-first approach. Get your free guide."
+                        trackSource="compare-goldco-vs-augusta"
+                    />
+                </Container>
+            </section>
+
+            <Footer />
         </main>
     );
 }

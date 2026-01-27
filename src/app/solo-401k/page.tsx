@@ -17,6 +17,9 @@ import {
     Clock
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
     title: "Solo 401k Guide 2026: Best Plan for Self-Employed",
@@ -89,6 +92,7 @@ export default function Solo401kPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
 
+            <Navbar />
             <main className="min-h-screen bg-slate-900">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden">
@@ -586,7 +590,20 @@ export default function Solo401kPage() {
                         </div>
                     </Container>
                 </section>
+
+                {/* Augusta CTA */}
+                <section className="py-16 bg-slate-900">
+                    <Container>
+                        <AugustaCTA
+                            variant="footer"
+                            headline="Diversify Your Solo 401k with Gold"
+                            subheadline="Many self-employed investors add precious metals to their Solo 401k for diversification and protection against market volatility."
+                            trackSource="solo-401k"
+                        />
+                    </Container>
+                </section>
             </main>
+            <Footer />
         </>
     );
 }

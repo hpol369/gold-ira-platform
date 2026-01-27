@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Container } from "@/components/ui/Container";
 import { CoastFIRECalculator } from "@/components/tools/CoastFIRECalculator";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
   title: "Coast FIRE Calculator - Calculate When You Can Stop Saving",
@@ -14,6 +16,16 @@ export default function CoastFIRECalculatorPage() {
     <div className="min-h-screen bg-slate-900 text-white">
       <Navbar />
       <CoastFIRECalculator />
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Protect Your Coast FIRE Savings"
+            subheadline="While your investments compound, gold can add stability and protect against market downturns."
+            trackSource="tools-coast-fire-calculator"
+          />
+        </Container>
+      </section>
       <Footer />
     </div>
   );

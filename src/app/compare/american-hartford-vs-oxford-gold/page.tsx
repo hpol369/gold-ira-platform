@@ -5,6 +5,9 @@ import { VerdictBox } from "@/components/compare/VerdictBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -81,8 +84,9 @@ const schema = {
 
 export default function AhgVsOxfordPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-900">
             <SchemaScript schema={schema} />
+            <Navbar />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-dark/50" />
@@ -183,6 +187,20 @@ export default function AhgVsOxfordPage() {
                     </article>
                 </div>
             </Container>
+
+            {/* Augusta CTA */}
+            <section className="py-16 bg-slate-900">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        headline="Want Premium Education & Support?"
+                        subheadline="Augusta Precious Metals offers zero-pressure service and zero BBB complaints. Get your free guide."
+                        trackSource="compare-american-hartford-vs-oxford"
+                    />
+                </Container>
+            </section>
+
+            <Footer />
         </main>
     );
 }

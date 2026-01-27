@@ -20,6 +20,7 @@ import {
   Wallet,
 } from "lucide-react";
 import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 // Provider options
 const providers = [
@@ -636,6 +637,18 @@ export default function RiskAnalyzerPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Augusta CTA */}
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Protect Your 401(k) With Gold"
+            subheadline="See how adding gold to your retirement portfolio can reduce risk and protect against market volatility."
+            trackSource="tools-401k-risk-analyzer"
+          />
         </Container>
       </section>
 

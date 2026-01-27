@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Container } from "@/components/ui/Container";
 import { GoldIRACalculator } from "@/components/tools/GoldIRACalculator";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
   title: "Gold IRA Calculator - Calculate Your Gold IRA Investment Returns",
@@ -45,6 +47,16 @@ export default function GoldIRACalculatorPage() {
       />
       <Navbar />
       <GoldIRACalculator />
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Ready to Add Gold to Your Portfolio?"
+            subheadline="See how gold can diversify your retirement savings and protect against market volatility."
+            trackSource="tools-gold-ira-calculator"
+          />
+        </Container>
+      </section>
       <Footer />
     </div>
   );

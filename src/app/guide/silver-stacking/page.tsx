@@ -495,7 +495,7 @@ export default function SilverStackingGuidePage() {
                                     The main difference from personal stacking is that IRA silver must meet IRS purity requirements and be stored in an approved depository—you can&apos;t keep IRA silver at home.
                                 </p>
                                 <p>
-                                    Learn more: <Link href="/guide/silver-ira-guide">Silver IRA Guide</Link> | <Link href="/guide/silver-ira-rollover">Silver IRA Rollover</Link>
+                                    Learn more: <Link href="/guide/silver-ira-guide">Silver IRA Guide</Link> | <Link href="/silver-ira/rollover">Silver IRA Rollover</Link>
                                 </p>
                             </section>
 

@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Container } from "@/components/ui/Container";
 import { GoldAllocationCalculator } from "@/components/tools/GoldAllocationCalculator";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
   title: "Gold Allocation Calculator | Optimal Portfolio %",
@@ -41,6 +43,16 @@ export default function GoldAllocationCalculatorPage() {
       />
       <Navbar />
       <GoldAllocationCalculator />
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Found Your Optimal Gold Allocation?"
+            subheadline="Learn how Augusta Precious Metals can help you add the right amount of gold to your retirement portfolio."
+            trackSource="tools-gold-allocation-calculator"
+          />
+        </Container>
+      </section>
       <Footer />
     </div>
   );

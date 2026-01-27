@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import {
     ArrowRight,
     Shield,
@@ -460,6 +461,18 @@ export default function CryptoIRAPage() {
                         </Button>
                         <p className="text-slate-500 text-sm mt-4">$1,000 minimum • 1% trading fee • No monthly fees</p>
                     </div>
+                </Container>
+            </section>
+
+            {/* Augusta CTA */}
+            <section className="py-16 bg-slate-900">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        headline="Diversify Beyond Crypto with Gold"
+                        subheadline="Many investors combine crypto IRAs with precious metals for true diversification. Gold offers stability when crypto markets are volatile."
+                        trackSource="crypto-ira"
+                    />
                 </Container>
             </section>
 

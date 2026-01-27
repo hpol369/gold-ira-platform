@@ -9,6 +9,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Metadata } from "next";
 import { CheckCircle2, XCircle, ArrowRight, Shield, Users, RefreshCw, DollarSign } from "lucide-react";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -317,6 +318,18 @@ export default function GoldcoVsAHGPage() {
                         </article>
                     </div>
                 </Container>
+
+                {/* Augusta CTA */}
+                <section className="py-16 bg-slate-900">
+                    <Container>
+                        <AugustaCTA
+                            variant="footer"
+                            headline="Want Zero-Pressure Service?"
+                            subheadline="Augusta Precious Metals has zero BBB complaints and a dedicated lifetime agent. Get your free guide."
+                            trackSource="compare-goldco-vs-american-hartford"
+                        />
+                    </Container>
+                </section>
             </div>
             <Footer />
         </main>

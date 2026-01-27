@@ -1,7 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import {
     Home,
     ArrowRight,
@@ -89,6 +92,7 @@ export default function RealEstateIraPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
 
+            <Navbar />
             <main className="min-h-screen bg-slate-900">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden">
@@ -593,7 +597,20 @@ export default function RealEstateIraPage() {
                         </div>
                     </Container>
                 </section>
+
+                {/* Augusta CTA */}
+                <section className="py-16 bg-slate-900">
+                    <Container>
+                        <AugustaCTA
+                            variant="footer"
+                            headline="Diversify Beyond Real Estate with Gold"
+                            subheadline="Many investors combine real estate IRAs with precious metals for true diversification. Gold provides liquidity when property markets are slow."
+                            trackSource="real-estate-ira"
+                        />
+                    </Container>
+                </section>
             </main>
+            <Footer />
         </>
     );
 }

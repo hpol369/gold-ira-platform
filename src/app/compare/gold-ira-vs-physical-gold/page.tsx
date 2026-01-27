@@ -6,6 +6,9 @@ import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Callout } from "@/components/ui/Callout";
 import { Metadata } from "next";
 import { ArrowRight, ShieldCheck, AlertTriangle, DollarSign, Lock, Home, Building2 } from "lucide-react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
@@ -103,8 +106,9 @@ const schema = {
 
 export default function GoldIraVsPhysicalGoldPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-900">
             <SchemaScript schema={schema} />
+            <Navbar />
             {/* Header */}
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
@@ -478,6 +482,20 @@ export default function GoldIraVsPhysicalGoldPage() {
                     </article>
                 </div>
             </Container>
+
+            {/* Augusta CTA */}
+            <section className="py-16 bg-slate-900">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        headline="Want Tax-Advantaged Gold Ownership?"
+                        subheadline="Get your free Gold IRA guide and learn about secure, insured storage."
+                        trackSource="compare-gold-ira-vs-physical-gold"
+                    />
+                </Container>
+            </section>
+
+            <Footer />
         </main>
     );
 }

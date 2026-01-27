@@ -10,6 +10,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Metadata } from "next";
 import { CheckCircle2, XCircle, ArrowRight, Trophy, Wallet, GraduationCap, Building2, Check, X, ShieldCheck, BadgeDollarSign, UserCheck, AlertTriangle } from "lucide-react";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -326,6 +327,18 @@ export default function AugustaVsNoblePage() {
                         </article>
                     </div>
                 </Container>
+
+                {/* Augusta CTA */}
+                <section className="py-16 bg-slate-900">
+                    <Container>
+                        <AugustaCTA
+                            variant="footer"
+                            headline="Have $50k+ to Invest?"
+                            subheadline="Get Augusta's free Gold IRA guide and experience their premium education-first approach."
+                            trackSource="compare-augusta-vs-noble-gold"
+                        />
+                    </Container>
+                </section>
             </div>
             <Footer />
         </main>

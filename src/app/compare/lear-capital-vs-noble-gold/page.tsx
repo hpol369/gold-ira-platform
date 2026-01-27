@@ -5,6 +5,9 @@ import { VerdictBox } from "@/components/compare/VerdictBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -48,8 +51,9 @@ const schema = {
 
 export default function LearVsNoblePage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-900">
             <SchemaScript schema={schema} />
+            <Navbar />
             <header className="bg-primary text-white py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
                     <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold text-secondary mb-6">
@@ -171,6 +175,20 @@ export default function LearVsNoblePage() {
                     </article>
                 </div>
             </Container>
+
+            {/* Augusta CTA */}
+            <section className="py-16 bg-slate-900">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        headline="Have a Larger Account? Consider Augusta"
+                        subheadline="For $50k+ investors, Augusta offers premium education and zero BBB complaints. Get your free guide."
+                        trackSource="compare-lear-vs-noble-gold"
+                    />
+                </Container>
+            </section>
+
+            <Footer />
         </main>
     );
 }

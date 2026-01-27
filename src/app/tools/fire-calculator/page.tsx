@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Container } from "@/components/ui/Container";
 import { FIRECalculator } from "@/components/tools/FIRECalculator";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
   title: "FIRE Calculator - Financial Independence Retire Early Calculator",
@@ -92,6 +94,16 @@ export default function FIRECalculatorPage() {
       />
       <Navbar />
       <FIRECalculator />
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Protect Your FIRE Portfolio"
+            subheadline="Gold can provide stability during market downturns and help protect your path to financial independence."
+            trackSource="tools-fire-calculator"
+          />
+        </Container>
+      </section>
       <Footer />
     </div>
   );

@@ -330,6 +330,17 @@ const tools: Tool[] = [
 
   // Retirement Planning (teal)
   {
+    id: "401k-calculator",
+    name: "401(k) Calculator",
+    description:
+      "Project your 401(k) growth with employer matching, contribution rates, and compound interest. See your retirement savings potential.",
+    icon: Calculator,
+    href: "/tools/401k-calculator",
+    status: "available",
+    color: "teal",
+    category: "retirement",
+  },
+  {
     id: "retirement-calculator",
     name: "Retirement Readiness Calculator",
     description:

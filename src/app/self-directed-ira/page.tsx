@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import {
     ArrowRight,
     Shield,
@@ -466,6 +467,18 @@ export default function SelfDirectedIRAPage() {
                         </Button>
                         <p className="text-slate-500 text-sm mt-4">$15/month flat fee • Checkbook control • No hidden fees</p>
                     </div>
+                </Container>
+            </section>
+
+            {/* Augusta CTA */}
+            <section className="py-16 bg-slate-900">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        headline="Add Gold to Your Self-Directed IRA"
+                        subheadline="Self-directed IRAs give you control over your investments. Many investors choose to include precious metals for diversification and protection."
+                        trackSource="self-directed-ira"
+                    />
                 </Container>
             </section>
 

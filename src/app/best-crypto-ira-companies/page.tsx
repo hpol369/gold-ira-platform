@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import {
     ArrowRight,
     Star,
@@ -383,6 +384,18 @@ export default function BestCryptoIRACompaniesPage() {
                             <p className="text-slate-400 text-sm">Compare precious metals and crypto for retirement.</p>
                         </Link>
                     </div>
+                </Container>
+            </section>
+
+            {/* Augusta CTA */}
+            <section className="py-16 bg-slate-900">
+                <Container>
+                    <AugustaCTA
+                        variant="footer"
+                        headline="Balance Crypto with Gold"
+                        subheadline="Smart investors diversify across asset classes. While crypto offers growth potential, gold provides stability during market volatility."
+                        trackSource="best-crypto-ira-companies"
+                    />
                 </Container>
             </section>
 

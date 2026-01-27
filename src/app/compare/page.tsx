@@ -10,6 +10,7 @@ import { getAllCompanies } from "@/data/companies";
 import { ComparisonBuilder } from "@/components/compare/ComparisonBuilder";
 import { assets } from "@/data/assets";
 import { Scale, ArrowRight, Star, Award, TrendingUp, BarChart3 } from "lucide-react";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
   title: "Gold IRA Company Comparisons 2026 | Side-by-Side Analysis",
@@ -461,6 +462,18 @@ export default function ComparePage() {
               View All {companies.length} Company Reviews &rarr;
             </Link>
           </div>
+        </Container>
+      </section>
+
+      {/* Augusta CTA */}
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Ready to Start Comparing?"
+            subheadline="Get your free Gold IRA guide and see why Augusta is rated #1 for transparency."
+            trackSource="compare-hub"
+          />
         </Container>
       </section>
 

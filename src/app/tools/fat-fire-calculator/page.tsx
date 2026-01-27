@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Container } from "@/components/ui/Container";
 import { FatFIRECalculator } from "@/components/tools/FatFIRECalculator";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
   title: "Fat FIRE Calculator - Calculate Your Luxury Retirement Number",
@@ -14,6 +16,16 @@ export default function FatFIRECalculatorPage() {
     <div className="min-h-screen bg-slate-900 text-white">
       <Navbar />
       <FatFIRECalculator />
+      <section className="py-16 bg-slate-900">
+        <Container>
+          <AugustaCTA
+            variant="footer"
+            headline="Protect Your Luxury Retirement"
+            subheadline="A Fat FIRE lifestyle deserves protection. Gold can help preserve your wealth for the retirement you envision."
+            trackSource="tools-fat-fire-calculator"
+          />
+        </Container>
+      </section>
       <Footer />
     </div>
   );

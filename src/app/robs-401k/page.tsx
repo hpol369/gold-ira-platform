@@ -17,6 +17,9 @@ import {
     Landmark
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 export const metadata: Metadata = {
     title: "ROBS 401k Guide 2026: Fund Your Business Tax-Free",
@@ -101,6 +104,7 @@ export default function Robs401kPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
 
+            <Navbar />
             <main className="min-h-screen bg-slate-900">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden">
@@ -615,7 +619,20 @@ export default function Robs401kPage() {
                         </div>
                     </Container>
                 </section>
+
+                {/* Augusta CTA */}
+                <section className="py-16 bg-slate-900">
+                    <Container>
+                        <AugustaCTA
+                            variant="footer"
+                            headline="Protect Remaining Retirement Funds with Gold"
+                            subheadline="After using ROBS for your business, consider diversifying any remaining retirement savings with precious metals for protection."
+                            trackSource="robs-401k"
+                        />
+                    </Container>
+                </section>
             </main>
+            <Footer />
         </>
     );
 }
