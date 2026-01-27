@@ -226,6 +226,22 @@ export default function GoldIraVsGoldEtfPage() {
                             </div>
                         </div>
 
+                        {/* Related Comparisons */}
+                        <section className="mt-12 not-prose">
+                            <h3 className="text-lg font-bold text-amber-400 mb-4">Related Comparisons</h3>
+                            <div className="grid md:grid-cols-3 gap-4">
+                                <Link href="/gold-stocks/" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold Stocks Guide &rarr;</span>
+                                </Link>
+                                <Link href="/compare/gold-ira-vs-401k" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold IRA vs. 401(k) &rarr;</span>
+                                </Link>
+                                <Link href="/compare/gold-ira-vs-physical-gold" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold IRA vs. Physical Gold &rarr;</span>
+                                </Link>
+                            </div>
+                        </section>
+
                         <section id="faq" className="scroll-mt-32">
                             <h2>Frequently Asked Questions</h2>
                             {/* FAQs will serve from Schema but displayed here for readers */}

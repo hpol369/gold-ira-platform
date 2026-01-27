@@ -4,175 +4,145 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { createPageMetadata } from "@/lib/metadata";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 import {
     Coins,
     ArrowRight,
-    Building2,
+    Factory,
     Scale,
-    BookOpen,
-    Star,
-    RefreshCw,
     Shield,
-    Award,
-    CheckCircle2,
     TrendingUp,
+    CheckCircle2,
+    BarChart3,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export const metadata = createPageMetadata({
-    title: "Silver IRA Hub: Complete Guide to Silver IRAs (2026)",
+    title: "Silver Stocks vs Physical Silver: Investment Guide (2026)",
     description:
-        "Everything you need to know about Silver IRAs. Compare companies, learn rules, understand rollovers, and find IRS-approved silver coins for your retirement.",
-    url: "https://www.richdadretirement.com/silver-ira",
-    imageAlt: "Silver IRA Hub - Rich Dad Retirement",
+        "Compare silver stocks vs physical silver investing. Learn why physical silver offers the purest exposure to silver prices with no counterparty risk.",
+    url: "https://www.richdadretirement.com/silver-stocks",
+    imageAlt: "Silver Stocks vs Physical Silver - Rich Dad Retirement",
 });
 
-const silverIraPages = [
+const silverStocksPages = [
     {
-        title: "Best Silver IRA Company",
-        description: "Our top pick for silver IRA investing with detailed analysis and comparison.",
-        href: "/silver-ira/best-company",
-        icon: Award,
-        badge: "High CPC",
-        cpc: "$13",
-    },
-    {
-        title: "Silver IRA Companies",
-        description: "Compare top Silver IRA companies including Augusta, Goldco, and Birch Gold.",
-        href: "/silver-ira/companies",
-        icon: Building2,
+        title: "Best Silver Stocks vs Physical Silver",
+        description: "Deep comparison of silver mining stocks, ETFs, and physical silver. Learn which option offers the best exposure to silver prices.",
+        href: "/silver-stocks/best-silver-stocks",
+        icon: BarChart3,
         badge: "Popular",
-        cpc: "$12",
-    },
-    {
-        title: "Silver IRA Rollover",
-        description: "Step-by-step guide to rolling over your 401k or IRA into physical silver.",
-        href: "/silver-ira/rollover",
-        icon: RefreshCw,
-        badge: null,
-        cpc: "$12",
-    },
-    {
-        title: "Convert 401k to Silver",
-        description: "Complete guide to converting your 401k into a Silver IRA tax-free.",
-        href: "/silver-ira/convert-401k-to-silver",
-        icon: TrendingUp,
-        badge: "Low Competition",
-        cpc: "$13",
-    },
-    {
-        title: "Silver IRA Custodian",
-        description: "How to choose the right custodian and top custodian recommendations.",
-        href: "/silver-ira/custodian",
-        icon: Shield,
-        badge: null,
-        cpc: "$14",
-    },
-    {
-        title: "Silver IRA Rules",
-        description: "IRS rules, purity requirements, and approved storage guidelines.",
-        href: "/silver-ira/rules",
-        icon: Scale,
-        badge: null,
-        cpc: "$9",
-    },
-    {
-        title: "IRA Approved Silver Coins",
-        description: "Complete list of IRS-approved silver coins and bars for your IRA.",
-        href: "/silver-ira/approved-coins",
-        icon: Coins,
-        badge: null,
-        cpc: null,
-    },
-    {
-        title: "Silver IRA Reviews",
-        description: "Honest reviews and ratings of Silver IRA companies.",
-        href: "/silver-ira/reviews",
-        icon: Star,
-        badge: null,
-        cpc: "$10",
-    },
-    {
-        title: "Silver IRA vs Gold IRA",
-        description: "Pros and cons of each metal. When to choose silver over gold.",
-        href: "/silver-ira/vs-gold-ira",
-        icon: Scale,
-        badge: null,
-        cpc: null,
     },
 ];
 
 const relatedResources = [
     {
-        title: "Silver Retirement Planning",
-        description: "IRA transfers, RMDs, and inheritance strategies.",
-        href: "/silver-retirement",
-    },
-    {
-        title: "IRA-Approved Silver Coins",
-        description: "Complete list of IRS-approved silver coins.",
-        href: "/silver-retirement/ira-approved-coins",
-    },
-    {
-        title: "IRA-Approved Silver Bars",
-        description: "Approved silver bars for your IRA.",
-        href: "/silver-retirement/ira-approved-bars",
-    },
-    {
-        title: "Silver Dealer Reviews",
-        description: "Compare APMEX, JM Bullion & top dealers.",
-        href: "/silver-dealer-reviews",
+        title: "Silver IRA Guide",
+        description: "Complete guide to Silver IRA investing.",
+        href: "/silver-ira",
     },
     {
         title: "Best Silver IRA Companies",
-        description: "Full company comparison and rankings.",
+        description: "Top-rated Silver IRA companies compared.",
         href: "/best-silver-ira-companies",
     },
     {
-        title: "Silver Squeeze Hub",
-        description: "Understanding the silver market dynamics.",
+        title: "Silver Squeeze",
+        description: "Understanding silver market dynamics.",
         href: "/silver-squeeze",
     },
     {
-        title: "Buy & Sell Silver Guide",
-        description: "How to buy, sell & stack silver.",
-        href: "/buy-sell-silver",
-    },
-    {
-        title: "Silver Coin Values",
-        description: "Morgan dollars, junk silver values.",
-        href: "/silver-coin-values",
-    },
-    {
-        title: "Silver Stocks Comparison",
-        description: "Compare silver mining stocks vs physical silver.",
-        href: "/silver-stocks/",
+        title: "Silver Price Analysis",
+        description: "Current silver prices and trends.",
+        href: "/silver-price",
     },
 ];
 
-const whySilverReasons = [
-    {
-        title: "30x Rarer Than Gold",
-        description: "Silver is consumed in industrial applications while gold is hoarded. This creates natural scarcity.",
-    },
+const whyPhysicalSilverReasons = [
     {
         title: "Industrial Demand Surge",
-        description: "Solar panels, EVs, and electronics are driving unprecedented silver demand.",
+        description: "50%+ of silver is consumed in industrial applications - solar panels, EVs, electronics. Mining stocks don't capture this fundamental demand.",
+        icon: Factory,
     },
     {
-        title: "Undervalued Ratio",
-        description: "The gold-to-silver ratio suggests silver is historically cheap compared to gold.",
+        title: "Undervalued vs Gold",
+        description: "The gold-to-silver ratio near 80:1 suggests silver is historically cheap. Physical silver lets you own the actual metal when the ratio normalizes.",
+        icon: Scale,
     },
     {
-        title: "Affordable Entry",
-        description: "At ~$30/oz vs $2,000+/oz for gold, silver allows gradual wealth building.",
+        title: "Tangible Asset Ownership",
+        description: "Physical silver is real wealth you can hold. Mining stocks are paper claims on company profits, not the metal itself.",
+        icon: Coins,
+    },
+    {
+        title: "No Counterparty Risk",
+        description: "Mining companies can go bankrupt, mismanage, or dilute shares. Physical silver has no CEO, no debt, no management risk.",
+        icon: Shield,
     },
 ];
 
-export default function SilverIraHubPage() {
+const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Silver Stocks vs Physical Silver: Investment Guide (2026)",
+    description: "Compare silver stocks vs physical silver investing. Learn why physical silver offers the purest exposure to silver prices.",
+    author: {
+        "@type": "Person",
+        name: "Thomas Richardson",
+    },
+    publisher: {
+        "@type": "Organization",
+        name: "Rich Dad Retirement",
+    },
+    datePublished: "2026-01-27",
+    dateModified: "2026-01-27",
+};
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+        {
+            "@type": "Question",
+            name: "Are silver stocks a good investment?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Silver stocks can provide leveraged exposure to silver prices but come with company-specific risks like management decisions, debt levels, and operational challenges. Physical silver provides direct exposure to the metal price without counterparty risk.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "What is the difference between silver stocks and physical silver?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Silver stocks are shares in companies that mine or produce silver - you own a piece of the company, not the metal. Physical silver means owning actual silver bars or coins that you can hold. Physical silver has no counterparty risk while stocks depend on company performance.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Why is physical silver considered safer than silver stocks?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Physical silver cannot go bankrupt, doesn't have management risk, and maintains intrinsic value regardless of market conditions. Silver mining stocks can lose value due to poor management, rising costs, accidents, or company bankruptcy - even when silver prices are rising.",
+            },
+        },
+        {
+            "@type": "Question",
+            name: "Can I hold physical silver in an IRA?",
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, through a Silver IRA (a type of self-directed IRA), you can hold IRS-approved physical silver coins and bars with the same tax advantages as a traditional IRA. The silver must meet .999 purity requirements and be stored at an approved depository.",
+            },
+        },
+    ],
+};
+
+export default function SilverStocksHubPage() {
     return (
         <main className="min-h-screen bg-slate-900">
             <Navbar />
+            <SchemaScript schema={articleSchema} />
+            <SchemaScript schema={faqSchema} />
 
             {/* Hero Section */}
             <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
@@ -184,23 +154,23 @@ export default function SilverIraHubPage() {
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-500/20 border border-slate-400/30 rounded-full text-slate-300 font-semibold text-sm mb-6">
                             <Coins className="h-4 w-4" />
-                            SILVER IRA RESOURCE CENTER
+                            SILVER INVESTMENT GUIDE
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                            Silver IRA Hub
+                            Silver Stocks
                         </h1>
                         <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
-                            Your complete resource for Silver IRA investing. Compare companies, understand IRS rules, learn about approved coins, and start protecting your retirement with physical silver.
+                            Should you invest in silver mining stocks or own physical silver? Compare the pros and cons of each approach and discover why physical silver offers the purest exposure to silver prices.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button variant="gold" size="lg" asChild>
-                                <Link href="/quiz">
-                                    Find Your Best Silver IRA Company <ArrowRight className="ml-2 h-4 w-4" />
+                                <Link href="/silver-stocks/best-silver-stocks">
+                                    Compare Silver Investments <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
                             <Button variant="outline" size="lg" className="border-white/20 text-slate-300 hover:bg-white/10" asChild>
-                                <Link href="/silver-ira/best-company">
-                                    See Our #1 Pick
+                                <Link href="/silver-ira">
+                                    Learn About Silver IRAs
                                 </Link>
                             </Button>
                         </div>
@@ -208,44 +178,47 @@ export default function SilverIraHubPage() {
                 </Container>
             </section>
 
-            {/* Why Silver Section */}
+            {/* Why Physical Silver Section */}
             <section className="py-16 bg-slate-800/50">
                 <Container>
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-4">Why Consider Silver for Your IRA?</h2>
+                        <h2 className="text-3xl font-bold text-white mb-4">Why Physical Silver Over Silver Stocks?</h2>
                         <p className="text-slate-400 max-w-2xl mx-auto">
-                            Silver offers unique advantages that make it an attractive addition to any precious metals portfolio.
+                            While silver stocks offer exposure to the silver market, physical silver provides unique advantages that paper investments simply cannot match.
                         </p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {whySilverReasons.map((reason, index) => (
-                            <div
-                                key={index}
-                                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
-                            >
-                                <div className="w-10 h-10 bg-slate-500/20 rounded-lg flex items-center justify-center mb-4">
-                                    <CheckCircle2 className="h-5 w-5 text-slate-300" />
+                        {whyPhysicalSilverReasons.map((reason, index) => {
+                            const Icon = reason.icon;
+                            return (
+                                <div
+                                    key={index}
+                                    className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+                                >
+                                    <div className="w-10 h-10 bg-slate-500/20 rounded-lg flex items-center justify-center mb-4">
+                                        <Icon className="h-5 w-5 text-slate-300" />
+                                    </div>
+                                    <h3 className="font-bold text-white mb-2">{reason.title}</h3>
+                                    <p className="text-sm text-slate-400">{reason.description}</p>
                                 </div>
-                                <h3 className="font-bold text-white mb-2">{reason.title}</h3>
-                                <p className="text-sm text-slate-400">{reason.description}</p>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </Container>
             </section>
 
-            {/* Silver IRA Pages Grid */}
+            {/* Sub-pages Grid */}
             <section className="py-16 bg-slate-900">
                 <Container>
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl font-bold text-white mb-4">Explore Silver IRA Topics</h2>
+                            <h2 className="text-3xl font-bold text-white mb-4">Explore Silver Investment Options</h2>
                             <p className="text-slate-400 max-w-2xl mx-auto">
-                                Everything you need to make informed decisions about Silver IRA investing.
+                                Get detailed comparisons to make an informed decision about your silver investments.
                             </p>
                         </div>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {silverIraPages.map((page) => {
+                        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-6 max-w-2xl mx-auto">
+                            {silverStocksPages.map((page) => {
                                 const Icon = page.icon;
                                 return (
                                     <Link
@@ -312,23 +285,23 @@ export default function SilverIraHubPage() {
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-white/10">
-                            <h2 className="text-2xl font-bold text-white text-center mb-8">Silver IRA Quick Facts</h2>
+                            <h2 className="text-2xl font-bold text-white text-center mb-8">Silver Market Quick Facts</h2>
                             <div className="grid md:grid-cols-4 gap-6 text-center">
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">.999</div>
-                                    <div className="text-sm text-slate-400">Minimum Purity Required</div>
-                                </div>
-                                <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">$2K</div>
-                                    <div className="text-sm text-slate-400">Lowest Minimum Investment</div>
-                                </div>
-                                <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">80:1</div>
-                                    <div className="text-sm text-slate-400">Current Gold-Silver Ratio</div>
+                                    <div className="text-3xl font-bold text-amber-400 mb-2">~$30</div>
+                                    <div className="text-sm text-slate-400">Silver Spot Price/oz</div>
                                 </div>
                                 <div>
                                     <div className="text-3xl font-bold text-amber-400 mb-2">50%+</div>
                                     <div className="text-sm text-slate-400">Industrial Demand Share</div>
+                                </div>
+                                <div>
+                                    <div className="text-3xl font-bold text-amber-400 mb-2">80:1</div>
+                                    <div className="text-sm text-slate-400">Gold-Silver Ratio</div>
+                                </div>
+                                <div>
+                                    <div className="text-3xl font-bold text-amber-400 mb-2">5,000+</div>
+                                    <div className="text-sm text-slate-400">Years as Money</div>
                                 </div>
                             </div>
                         </div>
@@ -341,9 +314,9 @@ export default function SilverIraHubPage() {
                 <Container>
                     <AugustaCTA
                         variant="footer"
-                        headline="Ready to Add Silver to Your Retirement?"
-                        subheadline="Augusta Precious Metals offers transparent silver pricing and expert guidance. Get a free consultation to learn about silver IRA investing."
-                        trackSource="silver-ira-hub"
+                        headline="Ready to Invest in Physical Silver?"
+                        subheadline="Augusta Precious Metals offers competitive silver pricing and expert guidance. Get a free consultation to learn about adding physical silver to your portfolio."
+                        trackSource="silver-stocks-hub"
                         linkContext="silver"
                     />
                 </Container>

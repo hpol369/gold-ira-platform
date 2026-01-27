@@ -390,7 +390,7 @@ export default function GoldIraVs401kPage() {
                                 <li>Maintain your tax-advantaged retirement status</li>
                             </ul>
                             <p>
-                                Learn more in our complete <Link href="/guide/401k-to-gold-rollover">401(k) to Gold rollover guide</Link>.
+                                Learn more in our complete <Link href="/guide/401k-to-gold-rollover">401(k) to Gold rollover guide</Link>. If you&apos;re ready to start, see our guide on <Link href="/guide/convert-401k-to-gold" className="text-secondary hover:underline">converting your 401k</Link> for step-by-step instructions.
                             </p>
                         </section>
 

@@ -365,7 +365,7 @@ export const scenarios: Scenario[] = [
         description: "When the market crashes, everyone panics. They sell at the bottom, locking in losses. The people who come out okay are the ones who had a plan before it happened. Know what percentage you want in gold, what percentage in stocks. Write it down. When the chaos hits, follow the plan.",
       },
     ],
-    goldBenefit: "Let me give you the numbers that matter. In 2008, the S&P 500 lost 57%. Gold gained 25%. In 2020, when COVID crashed the markets, gold hit all-time highs. When stocks go down, gold tends to go up. That's not magic - it's because scared money runs to gold. It's been that way for thousands of years. Having gold in your retirement isn't gambling. It's insurance for the crash you know is coming.",
+    goldBenefit: "Let me give you the numbers that matter. In 2008, the S&P 500 lost 57%. Gold gained 25%. In 2020, when COVID crashed the markets, gold hit all-time highs. When stocks go down, gold tends to go up. That's not magic - it's because scared money runs to gold. It's been that way for thousands of years. Having gold in your retirement isn't gambling. It's insurance for the crash you know is coming. For a deeper look at gold as stock alternative, see our gold stocks guide at /gold-stocks/.",
     stats: [
       { label: "Average Crash Decline", value: "-50%", subtext: "Major corrections" },
       { label: "Average Recovery Time", value: "7 yrs", subtext: "To break even" },

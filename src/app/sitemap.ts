@@ -158,6 +158,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/wealth-preservation-strategies",
     "/guide/noble-gold-fees",
     "/guide/birch-gold-fees",
+    "/guide/transfer-401k-to-gold",
+    "/guide/convert-401k-to-gold",
+    "/guide/move-401k-to-gold",
+    "/guide/can-i-buy-gold-with-401k",
+    "/guide/401k-to-gold-without-penalty",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -335,6 +340,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/compare/gold-ira-vs-crypto",
     "/compare/gold-vs-silver-ira",
     "/compare/goldco-vs-augusta",
+    "/compare/gold-stocks-vs-gold-ira",
+    "/compare/gold-etf-vs-physical-gold",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -749,6 +756,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // GOLD STOCKS HUB PAGES (4 pages)
+  // ============================================
+  const goldStocksPages = [
+    "/gold-stocks",
+    "/gold-stocks/best-gold-stocks",
+    "/gold-stocks/gold-stocks-to-buy",
+    "/gold-stocks/gold-mining-stocks-vs-physical-gold",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: route === "/gold-stocks" ? 0.8 : 0.7,
+  }));
+
+  // ============================================
+  // SILVER STOCKS HUB PAGES (2 pages)
+  // ============================================
+  const silverStocksPages = [
+    "/silver-stocks",
+    "/silver-stocks/best-silver-stocks",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: route === "/silver-stocks" ? 0.7 : 0.6,
+  }));
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   // Deduplicate by URL to handle any overlaps
@@ -792,6 +827,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...silverRetirementHubPages,
     ...silverRetirementSubPages,
     ...silverProductsExpansionPages,
+    // Gold & Silver Stocks Hubs
+    ...goldStocksPages,
+    ...silverStocksPages,
   ];
 
   // Deduplicate by URL

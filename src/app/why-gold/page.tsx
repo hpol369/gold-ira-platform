@@ -450,6 +450,21 @@ export default function WhyGoldPage() {
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </Link>
+            <Link
+              href="/gold-stocks/"
+              className="group block bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 hover:border-amber-500/50 hover:bg-white/10 transition-all"
+            >
+              <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors mb-2">
+                Gold Stocks Guide
+              </h3>
+              <p className="text-sm text-slate-300 mb-4">
+                Explore our guide to <Link href="/gold-stocks/" className="text-amber-400 hover:underline">comparing gold investment options</Link>.
+              </p>
+              <span className="text-amber-400 text-sm font-semibold flex items-center gap-1">
+                Read More
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Link>
           </div>
         </Container>
       </section>

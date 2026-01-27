@@ -132,7 +132,7 @@ export default function RolloverGuidePage() {
 
                         {/* Intro Content */}
                         <p className="lead text-xl text-slate-400">
-                            Thinking about moving your 401(k) into gold? You&apos;re not alone. With economic uncertainty and inflation concerns, millions of Americans are converting paper retirement assets into physical precious metals. This <strong>401(k) to gold IRA rollover guide</strong> shows you exactly how to do it—tax-free and penalty-free.
+                            Thinking about moving your 401(k) into gold? You&apos;re not alone. With economic uncertainty and inflation concerns, millions of Americans are converting paper retirement assets into physical precious metals. This <strong>401(k) to gold IRA rollover guide</strong> shows you exactly how to do it—tax-free and penalty-free. For a quick overview, check out our <Link href="/guide/transfer-401k-to-gold" className="text-secondary hover:underline">simple transfer guide</Link>.
                         </p>
 
                         <p>
