@@ -125,15 +125,26 @@ export function Navbar() {
 
                                                 {/* Column 2: Alternative IRAs */}
                                                 <div>
-                                                    <span className="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Silver IRA</span>
-                                                    <Link href="/guide/silver-ira-guide" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Silver IRA Guide
+                                                    <span className="block text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2 flex items-center gap-1">
+                                                        Silver IRA <span className="text-[10px] bg-slate-500/20 px-1 rounded">Expanded</span>
+                                                    </span>
+                                                    <Link href="/silver-ira" className="block py-1.5 text-sm text-slate-300 hover:text-white font-medium">
+                                                        Silver IRA Hub
                                                     </Link>
-                                                    <Link href="/best-silver-ira-companies" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Best Silver IRA Companies
+                                                    <Link href="/silver-price" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                        Silver Price Predictions
+                                                    </Link>
+                                                    <Link href="/silver-products" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                        Silver Products Guide
+                                                    </Link>
+                                                    <Link href="/silver-experts" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                        Silver Experts
                                                     </Link>
                                                     <Link href="/silver-squeeze" className="block py-1.5 text-sm text-slate-300 hover:text-white">
                                                         Silver Squeeze Hub
+                                                    </Link>
+                                                    <Link href="/best-silver-ira-companies" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                        Best Silver IRA Companies
                                                     </Link>
 
                                                     <div className="border-t border-white/10 my-3"></div>
@@ -373,16 +384,27 @@ export function Navbar() {
 
                         {/* Silver IRA Section */}
                         <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wide">Silver IRA</span>
+                            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wide flex items-center gap-1">
+                                Silver IRA <span className="text-[10px] bg-slate-500/20 px-1 rounded">Expanded</span>
+                            </span>
                             <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/guide/silver-ira-guide" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver IRA Guide
+                                <Link href="/silver-ira" className="text-sm text-slate-300 hover:text-white py-1 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Silver IRA Hub
                                 </Link>
-                                <Link href="/best-silver-ira-companies" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Best Silver IRA Companies
+                                <Link href="/silver-price" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Silver Price Predictions
+                                </Link>
+                                <Link href="/silver-products" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Silver Products Guide
+                                </Link>
+                                <Link href="/silver-experts" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Silver Experts
                                 </Link>
                                 <Link href="/silver-squeeze" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
                                     Silver Squeeze Hub
+                                </Link>
+                                <Link href="/best-silver-ira-companies" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
+                                    Best Silver IRA Companies
                                 </Link>
                             </div>
                         </div>

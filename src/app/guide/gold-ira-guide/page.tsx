@@ -693,6 +693,34 @@ export default function GoldIraGuidePage() {
 
                         <AuthorBox />
 
+                        {/* Also Consider Silver IRA Section */}
+                        <div className="my-12 not-prose bg-slate-400/10 backdrop-blur-sm p-8 rounded-2xl border border-slate-400/20">
+                            <h3 className="text-2xl font-serif font-bold text-white mb-4">Also Consider: Silver IRA</h3>
+                            <p className="text-slate-400 mb-6">
+                                While gold provides stability, many investors diversify with silver for higher growth potential.
+                                Silver&apos;s lower price point, industrial demand (solar, EVs), and historical outperformance during bull markets
+                                make it an attractive complement to gold in your precious metals portfolio.
+                            </p>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <Link href="/silver-ira" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver IRA Hub</h4>
+                                    <p className="text-xs text-slate-400">Complete silver retirement guide</p>
+                                </Link>
+                                <Link href="/silver-price" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Price Predictions</h4>
+                                    <p className="text-xs text-slate-400">2026-2040 expert forecasts</p>
+                                </Link>
+                                <Link href="/silver-products" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Products Guide</h4>
+                                    <p className="text-xs text-slate-400">Coins, bars & IRA-approved</p>
+                                </Link>
+                                <Link href="/silver-experts" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                    <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Experts</h4>
+                                    <p className="text-xs text-slate-400">Top analysts & their views</p>
+                                </Link>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
             </Container>

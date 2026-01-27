@@ -547,6 +547,84 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // SILVER IRA HUB PAGES (10 pages)
+  // ============================================
+  const silverIraPages = [
+    "/silver-ira",
+    "/silver-ira/rules-2026",
+    "/silver-ira/rollover-guide",
+    "/silver-ira/fees-explained",
+    "/silver-ira/vs-gold-ira",
+    "/silver-ira/tax-benefits",
+    "/silver-ira/storage-options",
+    "/silver-ira/minimum-investment",
+    "/silver-ira/for-beginners",
+    "/silver-ira/custodians",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  // ============================================
+  // SILVER PRICE PREDICTIONS PAGES (8 pages)
+  // ============================================
+  const silverPricePages = [
+    "/silver-price",
+    "/silver-price/prediction-2026",
+    "/silver-price/prediction-2027",
+    "/silver-price/prediction-2030",
+    "/silver-price/prediction-2040",
+    "/silver-price/gold-silver-ratio",
+    "/silver-price/historical-analysis",
+    "/silver-price/expert-forecasts",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  // ============================================
+  // SILVER PRODUCTS GUIDE PAGES (9 pages)
+  // ============================================
+  const silverProductsPages = [
+    "/silver-products",
+    "/silver-products/american-silver-eagle",
+    "/silver-products/canadian-maple-leaf",
+    "/silver-products/silver-bars",
+    "/silver-products/silver-rounds",
+    "/silver-products/junk-silver",
+    "/silver-products/ira-approved-silver",
+    "/silver-products/coins-vs-bars",
+    "/silver-products/premium-comparison",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // SILVER EXPERTS PAGES (7 pages)
+  // ============================================
+  const silverExpertsPages = [
+    "/silver-experts",
+    "/silver-experts/mike-maloney",
+    "/silver-experts/david-morgan",
+    "/silver-experts/keith-neumeyer",
+    "/silver-experts/peter-schiff-silver",
+    "/silver-experts/eric-sprott",
+    "/silver-experts/ted-butler",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   // Deduplicate by URL to handle any overlaps
@@ -576,6 +654,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...grandchildrenPages,
     ...seniorProtectionPages,
     ...silverSqueezePages,
+    ...silverIraPages,
+    ...silverPricePages,
+    ...silverProductsPages,
+    ...silverExpertsPages,
   ];
 
   // Deduplicate by URL

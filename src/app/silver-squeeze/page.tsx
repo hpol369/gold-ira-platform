@@ -753,7 +753,25 @@ export default function SilverSqueezePage() {
 
                     {/* Related Resources */}
                     <div className="mt-12 pt-8 border-t border-white/10">
-                        <h3 className="text-xl font-bold text-white mb-6 text-center">Related Silver Resources</h3>
+                        <h3 className="text-xl font-bold text-white mb-6 text-center">Explore Silver Content Hubs</h3>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                            <Link href="/silver-ira" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver IRA Hub</h4>
+                                <p className="text-xs text-slate-400">Complete guide to silver retirement accounts</p>
+                            </Link>
+                            <Link href="/silver-price" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Price Predictions</h4>
+                                <p className="text-xs text-slate-400">Expert forecasts 2026-2040</p>
+                            </Link>
+                            <Link href="/silver-products" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Products Guide</h4>
+                                <p className="text-xs text-slate-400">Coins, bars & IRA-approved silver</p>
+                            </Link>
+                            <Link href="/silver-experts" className="group bg-slate-400/10 border border-slate-400/20 rounded-lg p-4 hover:bg-slate-400/20 transition-colors">
+                                <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Experts</h4>
+                                <p className="text-xs text-slate-400">Leading silver analysts & their views</p>
+                            </Link>
+                        </div>
                         <div className="grid md:grid-cols-3 gap-4">
                             <Link href="/guide/silver-ira-guide" className="group flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
                                 <ShieldCheck className="w-5 h-5 text-amber-400" />

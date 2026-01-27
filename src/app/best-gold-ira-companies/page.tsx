@@ -242,6 +242,34 @@ export default function BestGoldIraCompaniesPage() {
                                 </Button>
                             </div>
 
+                            {/* Also Consider Silver IRA Section */}
+                            <div className="bg-slate-400/10 backdrop-blur-sm p-8 rounded-2xl border border-slate-400/20">
+                                <h3 className="text-2xl font-serif font-bold text-white mb-4">Also Consider: Silver IRA</h3>
+                                <p className="text-slate-400 mb-6">
+                                    Many gold investors diversify with silver. Silver offers higher volatility (bigger potential gains),
+                                    lower entry points, and strong industrial demand from solar and tech. Most Gold IRA companies also
+                                    offer silver—explore our silver resources to learn more.
+                                </p>
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    <Link href="/silver-ira" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                        <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver IRA Hub</h4>
+                                        <p className="text-xs text-slate-400">Complete silver retirement guide</p>
+                                    </Link>
+                                    <Link href="/silver-price" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                        <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Silver Price Predictions</h4>
+                                        <p className="text-xs text-slate-400">2026-2040 expert forecasts</p>
+                                    </Link>
+                                    <Link href="/best-silver-ira-companies" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                        <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Best Silver IRA Companies</h4>
+                                        <p className="text-xs text-slate-400">Top providers ranked</p>
+                                    </Link>
+                                    <Link href="/compare/gold-vs-silver-ira" className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-colors">
+                                        <h4 className="font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">Gold vs Silver IRA</h4>
+                                        <p className="text-xs text-slate-400">Side-by-side comparison</p>
+                                    </Link>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div className="relative">
