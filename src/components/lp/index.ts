@@ -12,3 +12,4 @@ export { LPComparisonTable } from "./LPComparisonTable";
 export { LPAccountTypes } from "./LPAccountTypes";
 export { LPApprovedProducts } from "./LPApprovedProducts";
 export { LPFeeExpose } from "./LPFeeExpose";
+export { LPSilverDemand } from "./LPSilverDemand";

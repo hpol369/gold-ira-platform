@@ -161,6 +161,33 @@ export default function SilverIRARolloverLandingPage() {
         benefits={rolloverBenefits}
       />
 
+      {/* Why Silver Now? Callout Section */}
+      <section className="bg-slate-800/50 py-12 md:py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Why Silver, Why Now?
+          </h2>
+          <p className="text-slate-300 text-lg md:text-xl mb-6 max-w-3xl mx-auto">
+            Your 401k may be sitting in stocks while silver demand keeps growing.
+            Over 50% of silver goes to industry &mdash; it&apos;s not sitting in vaults, it&apos;s powering the modern world.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-8">
+            <div className="p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="text-3xl font-bold text-sky-400 mb-2">50%+</div>
+              <div className="text-slate-300 text-sm">Of silver goes to industry (solar, EVs, electronics)</div>
+            </div>
+            <div className="p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="text-3xl font-bold text-sky-400 mb-2">600M oz</div>
+              <div className="text-slate-300 text-sm">Projected solar demand by 2030</div>
+            </div>
+            <div className="p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="text-3xl font-bold text-sky-400 mb-2">80:1</div>
+              <div className="text-slate-300 text-sm">Gold-silver ratio (historically 15-20:1)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Eligible Account Types */}
       <LPAccountTypes />
 

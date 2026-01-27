@@ -115,7 +115,7 @@ export default function SilverIRAApprovedLandingPage() {
       {/* Hero Section */}
       <LPHero
         headline="IRA-Approved Silver: What You Can Buy"
-        subheadline="Only .999 fine silver qualifies. Here's the complete list of approved coins and bars."
+        subheadline="With 50%+ of silver going to industry, it's more than precious - it's essential. Only .999 fine silver qualifies for IRAs. Here's what you need to know."
         ctaText="Get Your Free Consultation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}

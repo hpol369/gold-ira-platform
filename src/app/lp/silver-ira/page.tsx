@@ -11,6 +11,7 @@ import {
   LPFAQ,
   LPFinalCTA,
   LPFooter,
+  LPSilverDemand,
   type FAQItem,
   type Benefit,
   type Step,
@@ -33,28 +34,28 @@ const TRACK_SOURCE = "lp-silver-ira";
 // Silver-specific benefits (using string icon names)
 const silverBenefits: Benefit[] = [
   {
-    icon: "gem",
-    title: "30x Rarer Than Gold",
-    description:
-      "Silver is significantly rarer in investment form than gold, making it a unique opportunity for portfolio diversification.",
-  },
-  {
     icon: "factory",
-    title: "Industrial Demand",
+    title: "Essential for Modern Tech",
     description:
-      "Over 50% of silver demand comes from industrial applications including solar panels, electronics, and medical devices.",
+      "Silver powers your grandkids' phones, your neighbor's solar panels, and electric cars. Over 50% goes to industry - it's not just precious, it's essential.",
   },
   {
-    icon: "trending-down",
-    title: "Historically Undervalued",
+    icon: "trending-up",
+    title: "Demand Growing, Supply Limited",
     description:
-      "The gold-to-silver ratio of 80:1 is well above the historical average, suggesting silver may be undervalued.",
+      "Solar panel production alone needs 600 million oz by 2030. Mining can't keep up. Unlike gold, silver gets used up.",
+  },
+  {
+    icon: "bar-chart",
+    title: "Gold-Silver Ratio at 80:1",
+    description:
+      "Historically, the ratio averaged 15-20:1. Today's 80:1 ratio means silver is historically cheap compared to gold.",
   },
   {
     icon: "dollar-sign",
-    title: "More Affordable Entry",
+    title: "More Metal for Your Money",
     description:
-      "Silver offers a lower entry point than gold, making it accessible for investors at various budget levels.",
+      "With silver at ~$30/oz vs gold at ~$2,400/oz, you own significantly more physical metal. Easier to buy, easier to sell.",
   },
 ];
 
@@ -124,6 +125,11 @@ const faqs: FAQItem[] = [
     question: "How much should I invest in silver?",
     answer:
       "Financial experts typically recommend allocating 5-15% of your portfolio to precious metals. Augusta's specialists can help you determine the right allocation based on your retirement goals and risk tolerance.",
+  },
+  {
+    question: "Why is silver used in so many industries?",
+    answer:
+      "Silver has the highest electrical conductivity of any metal, making it irreplaceable in electronics, solar panels, and medical devices. Unlike gold which mostly sits in vaults, over 50% of silver is consumed by industry each year. This industrial demand, combined with growing green technology adoption, creates consistent buying pressure.",
   },
 ];
 
@@ -195,6 +201,9 @@ export default function SilverIRALandingPage() {
 
       {/* Why Silver Section */}
       <LPBenefits headline="Why Silver for Your IRA?" benefits={silverBenefits} />
+
+      {/* Silver Demand Drivers - Visual Section */}
+      <LPSilverDemand />
 
       {/* How It Works */}
       <LPProcess

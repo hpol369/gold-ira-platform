@@ -120,6 +120,17 @@ export default function SilverIRACompaniesLandingPage() {
       {/* Trust Bar */}
       <LPTrustBar rating={4.9} reviewCount={2847} bbbRating="A+" />
 
+      {/* Why Silver? Brief Intro */}
+      <section className="bg-slate-900 py-10 md:py-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
+            <span className="text-white font-semibold">With 50%+ going to industry, silver isn&apos;t just precious &mdash; it&apos;s essential.</span>
+            {" "}Solar panels, electric cars, smartphones, and medical devices all rely on silver.
+            Choose the right company to help you add this critical metal to your retirement.
+          </p>
+        </div>
+      </section>
+
       {/* Company Comparison Table */}
       <LPComparisonTable headline="Quick Company Comparison" />
 
