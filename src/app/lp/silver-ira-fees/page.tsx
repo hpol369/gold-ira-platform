@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle, DollarSign, TrendingDown, Building2 } from "lucide-react";
+import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 
 export const metadata: Metadata = {
     title: "Silver IRA Fees: The Truth They Don't Want You to Know | 2026",
@@ -345,6 +346,11 @@ export default function SilverIRAFeesPatriotPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals involve risk. Past performance does not guarantee future results.</p>
                 </div>
             </footer>
+
+            <ExitIntentPopup
+                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                variant="silver"
+            />
         </div>
     );
 }

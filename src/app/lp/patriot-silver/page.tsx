@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, DollarSign, Factory, BarChart } from "lucide-react";
 import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
+import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 
 export const metadata: Metadata = {
     title: "Urgent Silver Alert | The 'Poor Man's Gold' Opportunity",
@@ -148,6 +149,11 @@ export default function PatriotSilverKitPage() {
                     <p className="mt-2">Disclaimer: Past performance does not guarantee future results.</p>
                 </div>
             </footer>
+
+            <ExitIntentPopup
+                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                variant="silver"
+            />
         </div>
     );
 }

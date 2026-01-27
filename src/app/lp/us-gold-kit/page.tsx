@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2 } from "lucide-react";
+import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 
 export const metadata: Metadata = {
     title: "Is Your Retirement Safe From the $38 Trillion Debt? | 2026 Gold Guide",
@@ -171,6 +172,12 @@ export default function PatriotGoldKitPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Gold involves risk.</p>
                 </div>
             </footer>
+
+            {/* Exit Intent Popup */}
+            <ExitIntentPopup
+                affiliateLink="https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129"
+                variant="gold"
+            />
         </div>
     );
 }

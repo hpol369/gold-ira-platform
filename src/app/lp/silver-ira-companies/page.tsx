@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, Award, Users, Star } from "lucide-react";
+import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies 2026 | Who Can You Trust?",
@@ -298,6 +299,11 @@ export default function SilverIRACompaniesPatriotPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals investing involves risk. Past performance does not guarantee future results.</p>
                 </div>
             </footer>
+
+            <ExitIntentPopup
+                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                variant="silver"
+            />
         </div>
     );
 }

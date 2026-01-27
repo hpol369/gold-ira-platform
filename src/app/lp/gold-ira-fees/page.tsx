@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle } from "lucide-react";
+import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees: What Wall Street Doesn't Want You to Know | 2026",
@@ -319,6 +320,11 @@ export default function GoldIRAFeesPatriotPage() {
                     <p className="mt-2">Disclaimer: We are not financial advisors. Gold and precious metals involve risk. Past performance is not indicative of future results.</p>
                 </div>
             </footer>
+
+            <ExitIntentPopup
+                affiliateLink="https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129"
+                variant="gold"
+            />
         </div>
     );
 }
