@@ -4,8 +4,8 @@ import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Urgent Warning for American Retirees | 2026 Gold Guide",
-    description: "Protect your retirement from the failing dollar. Get your free 2026 Gold Investment Kit today.",
+    title: "Is Your Retirement Safe From the $38 Trillion Debt? | 2026 Gold Guide",
+    description: "With tariffs and national debt at record highs, protect your retirement savings. Get your free 2026 Gold Investment Kit today.",
     robots: {
         index: false,
         follow: false,
@@ -30,11 +30,11 @@ export default function PatriotGoldKitPage() {
                     {/* Headline Group */}
                     <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
                         Is Your Retirement <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">Safe From Bidenomics?</span>
+                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">Safe From the $38 Trillion Debt?</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
-                        Discover the <strong>"IRS Loophole"</strong> that smart patriots are using to move their 401(k) out of the crashing dollar and into Tax-Free Gold.
+                        With tariffs driving prices up and the national debt at record highs, discover the <strong>"IRS Loophole"</strong> smart Americans are using to protect their 401(k) with Tax-Free Gold.
                     </p>
 
                     {/* VSL / Image Area */}
@@ -92,12 +92,12 @@ export default function PatriotGoldKitPage() {
             {/* The Warning Content */}
             <section className="py-16 bg-white font-sans text-lg md:text-xl leading-relaxed text-slate-800">
                 <div className="max-w-3xl mx-auto px-4 prose prose-slate prose-lg">
-                    <h2 className="text-3xl font-bold text-[#000080] font-serif">They Are Printing Your Savings Away...</h2>
+                    <h2 className="text-3xl font-bold text-[#000080] font-serif">$38.45 Trillion in Debt. Who Pays?</h2>
                     <p>
-                        Take a look at your grocery bill. Look at the gas pump. <strong>This isn't an accident.</strong>
+                        Take a look at your grocery bill. Look at the gas pump. Tariffs have added <strong>$1,300 per household</strong> in 2026. <strong>This isn't going away.</strong>
                     </p>
                     <p>
-                        When "they" print trillions of dollars, the value of <em>your</em> hard-earned savings goes down. It's a hidden tax on every American retiree.
+                        With the national debt at record highs and 19% of federal spending just to pay interest, the value of <em>your</em> hard-earned savings is at risk.
                         But there is one asset that has stood the test of time for 5,000 years.
                     </p>
                     <p>
