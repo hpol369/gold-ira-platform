@@ -30,16 +30,16 @@ const TRACK_SOURCE = "lp-gold-ira-fees";
 // Fee-focused process steps
 const processSteps: Step[] = [
   {
-    icon: "file-text",
-    title: "Get Your Free Guide",
+    icon: "phone",
+    title: "Free Consultation",
     description:
-      "Download our fee comparison guide. See exactly what each company charges.",
+      "Speak with a specialist who will explain all fees honestly. No sales pressure.",
   },
   {
-    icon: "phone",
-    title: "Schedule Consultation",
+    icon: "file-text",
+    title: "Get Full Transparency",
     description:
-      "Speak with Augusta's team. Ask about any fee - they'll answer honestly.",
+      "See exactly what you'll pay - all costs laid out upfront before you decide.",
   },
   {
     icon: "check-circle",
@@ -117,7 +117,7 @@ export default function GoldIRAFeesLandingPage() {
       <LPHero
         headline="Gold IRA Fees: What Companies Don't Tell You"
         subheadline="Most providers hide costs in buyback spreads and premium markups. Get the truth before you invest."
-        ctaText="Get Free Fee Comparison Guide"
+        ctaText="Get Your Free Consultation"
         linkContext="fees"
         trackSource={TRACK_SOURCE}
         urgencyBadge="2026 Fee Guide"
@@ -136,7 +136,7 @@ export default function GoldIRAFeesLandingPage() {
       <LPProcess
         headline="Get Complete Fee Transparency"
         steps={processSteps}
-        ctaText="Get Your Free Guide"
+        ctaText="Get Your Free Consultation"
         linkContext="fees"
         trackSource={TRACK_SOURCE}
       />
