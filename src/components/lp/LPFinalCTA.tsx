@@ -1,0 +1,84 @@
+"use client";
+
+import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
+
+interface LPFinalCTAProps {
+  headline: string;
+  subheadline?: string;
+  ctaText?: string;
+  trustPoints?: string[];
+  linkContext?: AugustaContext;
+  trackSource: string;
+  className?: string;
+}
+
+export function LPFinalCTA({
+  headline,
+  subheadline,
+  ctaText = "Get Your Free Consultation",
+  trustPoints = ["No obligation", "100% free", "Takes 15 minutes"],
+  linkContext = "silver",
+  trackSource,
+  className,
+}: LPFinalCTAProps) {
+  const ctaLink = getTrackedAugustaLink(linkContext, trackSource);
+
+  return (
+    <section
+      className={cn(
+        "relative overflow-hidden bg-gradient-to-b from-slate-800 to-slate-900 py-16 md:py-24",
+        className
+      )}
+    >
+      {/* Background effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-amber-500/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-amber-500/5 rounded-full blur-[80px]" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          {headline}
+        </h2>
+        {subheadline && (
+          <p className="text-lg text-slate-300 mb-8">{subheadline}</p>
+        )}
+
+        <a
+          href={ctaLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={cn(
+            "inline-flex items-center justify-center gap-2",
+            "px-10 py-5 text-xl font-bold",
+            "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
+            "text-slate-900 rounded-xl",
+            "shadow-[0_0_80px_-5px_rgba(212,175,55,0.6)]",
+            "hover:shadow-[0_0_100px_-5px_rgba(212,175,55,0.8)]",
+            "hover:scale-105 transition-all duration-300",
+            "relative overflow-hidden group"
+          )}
+        >
+          <span className="relative z-10 flex items-center gap-2">
+            {ctaText}
+            <ArrowRight className="h-6 w-6 group-hover:translate-x-1 transition-transform" />
+          </span>
+          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+        </a>
+
+        {trustPoints.length > 0 && (
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
+            {trustPoints.map((point, index) => (
+              <span key={index} className="flex items-center gap-2">
+                {index > 0 && <span className="text-slate-600">|</span>}
+                {point}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
