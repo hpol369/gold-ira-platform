@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2 } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
+import DebtInfographic from "@/components/lp/DebtInfographic";
 
 export const metadata: Metadata = {
     title: "Is Your Retirement Safe From the $38 Trillion Debt? | 2026 Gold Guide",
@@ -38,25 +38,9 @@ export default function PatriotGoldKitPage() {
                         With tariffs driving prices up and the national debt at record highs, discover the <strong>"IRS Loophole"</strong> smart Americans are using to protect their 401(k) with Tax-Free Gold.
                     </p>
 
-                    {/* VSL / Image Area */}
-                    <div className="relative aspect-video bg-black rounded-xl shadow-2xl overflow-hidden mb-10 border-4 border-white max-w-3xl mx-auto group cursor-pointer">
-                        {/* Placeholder for VSL - using the generated image as thumbnail */}
-                        <Image
-                            src="/patriot_gold_hero.png"
-                            alt="Gold and American Flag"
-                            fill
-                            className="object-cover opacity-80 group-hover:opacity-60 transition-opacity"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-20 h-20 bg-[#B22234] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-white border-b-[15px] border-b-transparent ml-2"></div>
-                            </div>
-                        </div>
-                        <div className="absolute bottom-4 left-0 right-0 text-center">
-                            <span className="bg-black/70 text-white px-4 py-1 rounded text-sm font-sans font-bold">
-                                WATCH: How to Crisis-Proof Your Wealth (5 Min)
-                            </span>
-                        </div>
+                    {/* Debt Infographic */}
+                    <div className="mb-10">
+                        <DebtInfographic />
                     </div>
 
                     {/* CTA Area */}
