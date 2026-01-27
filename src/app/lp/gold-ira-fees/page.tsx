@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
+import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees: What Wall Street Doesn't Want You to Know | 2026",
@@ -114,13 +115,14 @@ export default function GoldIRAFeesPatriotPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <Link
+                        <TrackedLPLink
                             href={affiliateLink}
+                            source="lp-gold-ira-fees-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get The Truth About Fees
                             <ArrowRight className="h-8 w-8" />
-                        </Link>
+                        </TrackedLPLink>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             100% Free Fee Guide - Zero Obligation
@@ -302,12 +304,13 @@ export default function GoldIRAFeesPatriotPage() {
                     <p className="text-slate-300 text-lg mb-8 font-sans">
                         Get the free guide that exposes every fee trick in the industry - and shows you how to avoid them all.
                     </p>
-                    <Link
+                    <TrackedLPLink
                         href={affiliateLink}
+                        source="lp-gold-ira-fees-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Fee Guide
-                    </Link>
+                    </TrackedLPLink>
                     <p className="text-slate-400 mt-6 text-sm font-sans">
                         Strictly confidential. We respect your privacy.
                     </p>

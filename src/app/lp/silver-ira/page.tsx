@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, Factory, Coins, BarChart3 } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
+import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies 2026 | Free Consultation",
@@ -116,13 +117,14 @@ export default function SilverIRAPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <Link
+                        <TrackedLPLink
                             href={AFFILIATE_LINK}
+                            source="lp-silver-ira-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Silver Guide
                             <ArrowRight className="h-8 w-8" />
-                        </Link>
+                        </TrackedLPLink>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             100% Free • No Obligation • Education First
@@ -255,12 +257,13 @@ export default function SilverIRAPage() {
                         </span>
                     </div>
 
-                    <Link
+                    <TrackedLPLink
                         href={AFFILIATE_LINK}
+                        source="lp-silver-ira-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Silver Guide
-                    </Link>
+                    </TrackedLPLink>
                     <p className="text-slate-400 mt-6 text-sm font-sans">
                         100% free. No obligation. Strictly confidential.
                     </p>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, Award, Users, Star } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
+import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies 2026 | Who Can You Trust?",
@@ -118,13 +119,14 @@ export default function SilverIRACompaniesPatriotPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <Link
+                        <TrackedLPLink
                             href={AUGUSTA_SILVER_LINK}
+                            source="lp-silver-ira-companies-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             See Our #1 Pick
                             <ArrowRight className="h-8 w-8" />
-                        </Link>
+                        </TrackedLPLink>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Consultation • No Pressure • Education First
@@ -265,12 +267,13 @@ export default function SilverIRACompaniesPatriotPage() {
                         Get a free, no-pressure consultation with Augusta&apos;s silver specialists.
                     </p>
 
-                    <Link
+                    <TrackedLPLink
                         href={AUGUSTA_SILVER_LINK}
+                        source="lp-silver-ira-companies-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Consultation
-                    </Link>
+                    </TrackedLPLink>
 
                     <div className="flex flex-wrap justify-center gap-6 mt-8 text-white/80 text-sm font-sans">
                         <span className="flex items-center gap-2">
