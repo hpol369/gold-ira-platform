@@ -11,6 +11,7 @@ import {
   type Step,
 } from "@/components/lp";
 import { LPApprovedProducts } from "@/components/lp/LPApprovedProducts";
+import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
 
 // noindex for paid landing pages - don't compete with SEO pages
 export const metadata: Metadata = {
@@ -116,10 +117,11 @@ export default function SilverIRAApprovedLandingPage() {
       <LPHero
         headline="IRA-Approved Silver: What You Can Buy"
         subheadline="With 50%+ of silver going to industry, it's more than precious - it's essential. Only .999 fine silver qualifies for IRAs. Here's what you need to know."
-        ctaText="Get Your Free Consultation"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
         urgencyBadge="IRS Requirements 2026"
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Trust Bar */}
@@ -132,9 +134,10 @@ export default function SilverIRAApprovedLandingPage() {
       <LPProcess
         headline="Start Your Silver IRA"
         steps={processSteps}
-        ctaText="See Augusta's Silver Selection"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* FAQ Section */}
@@ -143,11 +146,12 @@ export default function SilverIRAApprovedLandingPage() {
       {/* Final CTA */}
       <LPFinalCTA
         headline="Ready to Invest in IRA-Approved Silver?"
-        subheadline="Expert guidance on which silver fits your goals"
-        ctaText="Get Your Free Consultation"
+        subheadline="See why Augusta is our #1 pick for silver products"
+        ctaText="See Our #1 Recommendation"
         trustPoints={["IRS-approved products", "Expert guidance", "Secure storage"]}
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Minimal Footer */}

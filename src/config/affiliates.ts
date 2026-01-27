@@ -177,6 +177,16 @@ export function getTrackedAugustaLink(
   return getTrackedLink(baseUrl, sourcePage, "augusta", trafficType, campaign);
 }
 
+// ============================================
+// INTERNAL WARMUP PAGES
+// ============================================
+// These are internal bridge pages that warm up visitors before sending to affiliate
+
+export const INTERNAL_WARMUP_PAGES = {
+  silver: "/lp/augusta-silver",
+  gold: "/lp/augusta-gold", // future
+} as const;
+
 export const COMPANY_DETAILS = {
     augusta: {
         name: "Augusta Precious Metals",

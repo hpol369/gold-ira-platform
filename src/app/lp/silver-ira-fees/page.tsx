@@ -4,7 +4,6 @@ import {
   LPHero,
   LPTrustBar,
   LPFeeExpose,
-  LPComparisonTable,
   LPProcess,
   LPFAQ,
   LPFinalCTA,
@@ -12,6 +11,7 @@ import {
   type FAQItem,
   type Step,
 } from "@/components/lp";
+import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
 
 // noindex for paid landing pages - don't compete with SEO pages
 export const metadata: Metadata = {
@@ -165,10 +165,11 @@ export default function SilverIRAFeesLandingPage() {
       <LPHero
         headline="Silver IRA Fees: What Companies Don't Tell You"
         subheadline="Most providers hide costs in buyback spreads and premium markups. Get the truth before you invest in silver."
-        ctaText="Get Your Free Consultation"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
         urgencyBadge="2026 Fee Guide"
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Trust Bar */}
@@ -182,16 +183,14 @@ export default function SilverIRAFeesLandingPage() {
         impactCallout="On a $50,000 silver IRA, hidden buyback spreads alone can cost you $7,500-$17,500 when you sell. Silver spreads are often wider than gold - choose a transparent provider."
       />
 
-      {/* Company Comparison Table */}
-      <LPComparisonTable headline="Compare Silver IRA Fees (2026)" trackSource={TRACK_SOURCE} />
-
       {/* How It Works */}
       <LPProcess
         headline="Get Complete Fee Transparency"
         steps={processSteps}
-        ctaText="Get Your Free Consultation"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* FAQ Section */}
@@ -200,8 +199,8 @@ export default function SilverIRAFeesLandingPage() {
       {/* Final CTA */}
       <LPFinalCTA
         headline="Stop Overpaying for Your Silver IRA"
-        subheadline="Get complete fee transparency with Augusta"
-        ctaText="Get Your Free Consultation"
+        subheadline="See why Augusta offers the most transparent pricing"
+        ctaText="See Our #1 Recommendation"
         trustPoints={[
           "100% transparent pricing",
           "No hidden buyback fees",
@@ -209,6 +208,7 @@ export default function SilverIRAFeesLandingPage() {
         ]}
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Minimal Footer */}

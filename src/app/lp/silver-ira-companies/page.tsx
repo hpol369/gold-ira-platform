@@ -10,7 +10,7 @@ import {
   type FAQItem,
   type Step,
 } from "@/components/lp";
-import { LPComparisonTable } from "@/components/lp/LPComparisonTable";
+import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
 
 // noindex for paid landing pages - don't compete with SEO pages
 export const metadata: Metadata = {
@@ -111,10 +111,11 @@ export default function SilverIRACompaniesLandingPage() {
       <LPHero
         headline="Best Silver IRA Companies Ranked (2026)"
         subheadline="We analyzed 15+ providers. Here's our #1 pick for education-first silver investing."
-        ctaText="See Our #1 Pick"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
         urgencyBadge="Updated January 2026"
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Trust Bar */}
@@ -131,16 +132,14 @@ export default function SilverIRACompaniesLandingPage() {
         </div>
       </section>
 
-      {/* Company Comparison Table */}
-      <LPComparisonTable headline="Quick Company Comparison" />
-
       {/* How to Get Started */}
       <LPProcess
         headline="How to Get Started with #1 Pick"
         steps={processSteps}
-        ctaText="Get Free Consultation with Augusta"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* FAQ Section */}
@@ -149,11 +148,12 @@ export default function SilverIRACompaniesLandingPage() {
       {/* Final CTA */}
       <LPFinalCTA
         headline="Ready to Work with the #1 Silver IRA Company?"
-        subheadline="Speak with Augusta's silver specialists today"
-        ctaText="Get Your Free Consultation"
+        subheadline="See why Augusta is our top recommendation"
+        ctaText="See Our #1 Recommendation"
         trustPoints={["No obligation", "Education-first", "Zero BBB complaints"]}
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Minimal Footer */}

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
@@ -12,6 +13,8 @@ interface LPFinalCTAProps {
   linkContext?: AugustaContext;
   trackSource: string;
   className?: string;
+  /** Internal link - if provided, links internally instead of to affiliate */
+  internalLink?: string;
 }
 
 export function LPFinalCTA({
@@ -22,9 +25,11 @@ export function LPFinalCTA({
   linkContext = "silver",
   trackSource,
   className,
+  internalLink,
 }: LPFinalCTAProps) {
   // LP pages are for paid campaigns, so we mark traffic as "paid"
-  const ctaLink = getTrackedAugustaLink(linkContext, trackSource, "paid");
+  const affiliateLink = getTrackedAugustaLink(linkContext, trackSource, "paid");
+  const isInternal = !!internalLink;
 
   return (
     <section
@@ -47,28 +52,51 @@ export function LPFinalCTA({
           <p className="text-lg text-slate-300 mb-8">{subheadline}</p>
         )}
 
-        <a
-          href={ctaLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={cn(
-            "inline-flex items-center justify-center gap-2",
-            "w-full md:w-auto",
-            "px-6 py-3 text-lg md:px-10 md:py-5 md:text-xl font-bold",
-            "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-            "text-slate-900 rounded-xl",
-            "shadow-[0_0_80px_-5px_rgba(212,175,55,0.6)]",
-            "hover:shadow-[0_0_100px_-5px_rgba(212,175,55,0.8)]",
-            "hover:scale-105 transition-all duration-300",
-            "relative overflow-hidden group"
-          )}
-        >
-          <span className="relative z-10 flex items-center gap-2">
-            {ctaText}
-            <ArrowRight className="h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform" />
-          </span>
-          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
-        </a>
+        {isInternal ? (
+          <Link
+            href={internalLink!}
+            className={cn(
+              "inline-flex items-center justify-center gap-2",
+              "w-full md:w-auto",
+              "px-6 py-3 text-lg md:px-10 md:py-5 md:text-xl font-bold",
+              "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
+              "text-slate-900 rounded-xl",
+              "shadow-[0_0_80px_-5px_rgba(212,175,55,0.6)]",
+              "hover:shadow-[0_0_100px_-5px_rgba(212,175,55,0.8)]",
+              "hover:scale-105 transition-all duration-300",
+              "relative overflow-hidden group"
+            )}
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              {ctaText}
+              <ArrowRight className="h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform" />
+            </span>
+            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+          </Link>
+        ) : (
+          <a
+            href={affiliateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "inline-flex items-center justify-center gap-2",
+              "w-full md:w-auto",
+              "px-6 py-3 text-lg md:px-10 md:py-5 md:text-xl font-bold",
+              "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
+              "text-slate-900 rounded-xl",
+              "shadow-[0_0_80px_-5px_rgba(212,175,55,0.6)]",
+              "hover:shadow-[0_0_100px_-5px_rgba(212,175,55,0.8)]",
+              "hover:scale-105 transition-all duration-300",
+              "relative overflow-hidden group"
+            )}
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              {ctaText}
+              <ArrowRight className="h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform" />
+            </span>
+            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+          </a>
+        )}
 
         {trustPoints.length > 0 && (
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">

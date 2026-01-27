@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   ArrowRight,
   Phone,
@@ -43,6 +44,8 @@ interface LPProcessProps {
   linkContext?: AugustaContext;
   trackSource: string;
   className?: string;
+  /** Internal link - if provided, links internally instead of to affiliate */
+  internalLink?: string;
 }
 
 export function LPProcess({
@@ -52,9 +55,11 @@ export function LPProcess({
   linkContext = "silver",
   trackSource,
   className,
+  internalLink,
 }: LPProcessProps) {
   // LP pages are for paid campaigns, so we mark traffic as "paid"
-  const ctaLink = getTrackedAugustaLink(linkContext, trackSource, "paid");
+  const affiliateLink = getTrackedAugustaLink(linkContext, trackSource, "paid");
+  const isInternal = !!internalLink;
 
   return (
     <section
@@ -98,27 +103,49 @@ export function LPProcess({
         </div>
 
         <div className="text-center">
-          <a
-            href={ctaLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              "inline-flex items-center justify-center gap-2",
-              "px-8 py-4 text-lg font-bold",
-              "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-              "text-slate-900 rounded-xl",
-              "shadow-[0_0_60px_-5px_rgba(212,175,55,0.5)]",
-              "hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7)]",
-              "hover:scale-105 transition-all duration-300",
-              "relative overflow-hidden group"
-            )}
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              {ctaText}
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </span>
-            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
-          </a>
+          {isInternal ? (
+            <Link
+              href={internalLink!}
+              className={cn(
+                "inline-flex items-center justify-center gap-2",
+                "px-8 py-4 text-lg font-bold",
+                "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
+                "text-slate-900 rounded-xl",
+                "shadow-[0_0_60px_-5px_rgba(212,175,55,0.5)]",
+                "hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7)]",
+                "hover:scale-105 transition-all duration-300",
+                "relative overflow-hidden group"
+              )}
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                {ctaText}
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+            </Link>
+          ) : (
+            <a
+              href={affiliateLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "inline-flex items-center justify-center gap-2",
+                "px-8 py-4 text-lg font-bold",
+                "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
+                "text-slate-900 rounded-xl",
+                "shadow-[0_0_60px_-5px_rgba(212,175,55,0.5)]",
+                "hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7)]",
+                "hover:scale-105 transition-all duration-300",
+                "relative overflow-hidden group"
+              )}
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                {ctaText}
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+            </a>
+          )}
         </div>
       </div>
     </section>

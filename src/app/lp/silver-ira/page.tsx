@@ -7,7 +7,6 @@ import {
   LPProcess,
   LPFeatures,
   LPStats,
-  LPComparisonTable,
   LPFAQ,
   LPFinalCTA,
   LPFooter,
@@ -16,6 +15,7 @@ import {
   type Benefit,
   type Step,
 } from "@/components/lp";
+import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
 
 // noindex for paid landing pages - don't compete with SEO pages
 export const metadata: Metadata = {
@@ -167,10 +167,11 @@ export default function SilverIRALandingPage() {
       <LPHero
         headline="Best Silver IRA Company 2026"
         subheadline="Protect your retirement with physical silver. No pushy sales. Education-first approach. Free expert consultation."
-        ctaText="Get Your Free Consultation"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
         urgencyBadge="2026 Guide"
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Trust Bar */}
@@ -209,9 +210,10 @@ export default function SilverIRALandingPage() {
       <LPProcess
         headline="How It Works (3 Simple Steps)"
         steps={processSteps}
-        ctaText="Start Free Consultation"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Why Augusta Section */}
@@ -223,20 +225,18 @@ export default function SilverIRALandingPage() {
       {/* Silver Stats */}
       <LPStats headline="Silver IRA Quick Facts" stats={silverStats} />
 
-      {/* Company Comparison Table */}
-      <LPComparisonTable headline="Compare Silver IRA Companies (2026)" trackSource={TRACK_SOURCE} />
-
       {/* FAQ Section */}
       <LPFAQ headline="Frequently Asked Questions" faqs={faqs} />
 
       {/* Final CTA */}
       <LPFinalCTA
         headline="Ready to Protect Your Retirement?"
-        subheadline="Speak with a silver specialist today"
-        ctaText="Get Your Free Consultation"
+        subheadline="See why Augusta is our #1 pick for silver IRAs"
+        ctaText="See Our #1 Recommendation"
         trustPoints={["No obligation", "100% free", "Takes 15 minutes"]}
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Minimal Footer */}

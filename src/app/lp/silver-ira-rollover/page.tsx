@@ -13,6 +13,7 @@ import {
   type Step,
 } from "@/components/lp";
 import { LPAccountTypes } from "@/components/lp/LPAccountTypes";
+import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
 
 // noindex for paid landing pages - don't compete with SEO pages
 export const metadata: Metadata = {
@@ -146,10 +147,11 @@ export default function SilverIRARolloverLandingPage() {
       <LPHero
         headline="Rollover Your 401k to Silver (Tax-Free)"
         subheadline="Keep your tax benefits. Own physical silver. We handle all the paperwork."
-        ctaText="Start Your Tax-Free Rollover"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
         urgencyBadge="No Taxes, No Penalties"
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Trust Bar */}
@@ -195,9 +197,10 @@ export default function SilverIRARolloverLandingPage() {
       <LPProcess
         headline="Rollover in 3 Simple Steps"
         steps={processSteps}
-        ctaText="Get Your Free Rollover Consultation"
+        ctaText="See Our #1 Recommendation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* FAQ Section */}
@@ -206,11 +209,12 @@ export default function SilverIRARolloverLandingPage() {
       {/* Final CTA */}
       <LPFinalCTA
         headline="Ready to Rollover to Silver?"
-        subheadline="Augusta handles everything - no paperwork hassle"
-        ctaText="Start Your Tax-Free Rollover"
+        subheadline="See why Augusta is our #1 pick for rollovers"
+        ctaText="See Our #1 Recommendation"
         trustPoints={["Tax-free transfer", "We handle paperwork", "A+ BBB rated"]}
         linkContext="silver"
         trackSource={TRACK_SOURCE}
+        internalLink={INTERNAL_WARMUP_PAGES.silver}
       />
 
       {/* Minimal Footer */}
