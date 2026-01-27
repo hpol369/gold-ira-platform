@@ -140,17 +140,26 @@ export function getAugustaLinkWithTracking(context: AugustaContext = "default", 
  * 3. Redirects to the destination
  *
  * Usage: getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-hero", "augusta")
+ * Usage with traffic type: getTrackedLink(AFFILIATE_LINKS.augusta, "lp-silver-ira", "augusta", "paid")
  */
 export function getTrackedLink(
   destinationUrl: string,
   sourcePage: string,
-  company: string = "augusta"
+  company: string = "augusta",
+  trafficType?: "organic" | "paid",
+  campaign?: string
 ): string {
   const params = new URLSearchParams({
     url: destinationUrl,
     source: sourcePage,
     company: company,
   });
+  if (trafficType) {
+    params.set("traffic", trafficType);
+  }
+  if (campaign) {
+    params.set("campaign", campaign);
+  }
   return `/api/track-click?${params.toString()}`;
 }
 
@@ -160,10 +169,12 @@ export function getTrackedLink(
  */
 export function getTrackedAugustaLink(
   context: AugustaContext = "default",
-  sourcePage: string
+  sourcePage: string,
+  trafficType?: "organic" | "paid",
+  campaign?: string
 ): string {
   const baseUrl = getAugustaLink(context);
-  return getTrackedLink(baseUrl, sourcePage, "augusta");
+  return getTrackedLink(baseUrl, sourcePage, "augusta", trafficType, campaign);
 }
 
 export const COMPANY_DETAILS = {

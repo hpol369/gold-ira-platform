@@ -7,6 +7,7 @@ import {
   LPProcess,
   LPFeatures,
   LPStats,
+  LPComparisonTable,
   LPFAQ,
   LPFinalCTA,
   LPFooter,
@@ -92,7 +93,7 @@ const augustaFeatures = [
 // Silver stats
 const silverStats = [
   { value: ".999", label: "Silver Purity Required" },
-  { value: "$2K", label: "Minimum Investment" },
+  { value: "$50K", label: "Minimum Investment" },
   { value: "80:1", label: "Gold-Silver Ratio" },
   { value: "50%+", label: "Industrial Demand" },
 ];
@@ -158,12 +159,12 @@ export default function SilverIRALandingPage() {
 
       {/* Hero Section */}
       <LPHero
-        headline="Learn About Silver IRAs"
+        headline="Best Silver IRA Company 2026"
         subheadline="Protect your retirement with physical silver. No pushy sales. Education-first approach. Free expert consultation."
         ctaText="Get Your Free Consultation"
         linkContext="silver"
         trackSource={TRACK_SOURCE}
-        urgencyBadge="Limited Spots for January Consultations"
+        urgencyBadge="2026 Guide"
       />
 
       {/* Trust Bar */}
@@ -212,6 +213,9 @@ export default function SilverIRALandingPage() {
 
       {/* Silver Stats */}
       <LPStats headline="Silver IRA Quick Facts" stats={silverStats} />
+
+      {/* Company Comparison Table */}
+      <LPComparisonTable headline="Compare Silver IRA Companies (2026)" trackSource={TRACK_SOURCE} />
 
       {/* FAQ Section */}
       <LPFAQ headline="Frequently Asked Questions" faqs={faqs} />

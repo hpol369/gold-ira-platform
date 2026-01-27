@@ -23,7 +23,8 @@ export function LPFinalCTA({
   trackSource,
   className,
 }: LPFinalCTAProps) {
-  const ctaLink = getTrackedAugustaLink(linkContext, trackSource);
+  // LP pages are for paid campaigns, so we mark traffic as "paid"
+  const ctaLink = getTrackedAugustaLink(linkContext, trackSource, "paid");
 
   return (
     <section

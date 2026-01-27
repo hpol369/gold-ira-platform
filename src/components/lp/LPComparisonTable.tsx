@@ -60,9 +60,10 @@ export function LPComparisonTable({
   trackSource = "lp-comparison",
 }: LPComparisonTableProps) {
   // Add Augusta link to companies that are winners (Augusta)
+  // LP pages are for paid campaigns, so we mark traffic as "paid"
   const companiesWithLinks = companies.map((company) => ({
     ...company,
-    link: company.isWinner ? getTrackedAugustaLink("fees", trackSource) : company.link,
+    link: company.isWinner ? getTrackedAugustaLink("fees", trackSource, "paid") : company.link,
   }));
 
   return (
