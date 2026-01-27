@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ReactNode } from "react";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface TrackedLPLinkProps {
     href: string;
@@ -14,7 +15,8 @@ interface TrackedLPLinkProps {
 
 /**
  * Tracked affiliate link for Landing Pages
- * Routes through /api/track-click to send Telegram notifications
+ * - Sends Telegram notification via /api/track-click
+ * - Fires GA4 event for Google Ads optimization
  */
 export default function TrackedLPLink({
     href,
@@ -24,13 +26,19 @@ export default function TrackedLPLink({
     className,
     children,
 }: TrackedLPLinkProps) {
-    // Build the tracked URL
+    // Build the tracked URL (for Telegram notification)
     const trackedUrl = `/api/track-click?url=${encodeURIComponent(href)}&source=${encodeURIComponent(source)}&company=${company}&traffic=${traffic}`;
+
+    // Fire GA4 event on click (for Google Ads optimization)
+    const handleClick = () => {
+        trackAffiliateClick(company, source, "cta");
+    };
 
     return (
         <Link
             href={trackedUrl}
             className={className}
+            onClick={handleClick}
         >
             {children}
         </Link>
