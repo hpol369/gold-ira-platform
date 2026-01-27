@@ -89,6 +89,33 @@ export default function PatriotGoldKitPage() {
                 </div>
             </section>
 
+            {/* Global Instability Section */}
+            <section className="py-12 bg-red-50 border-y border-red-200 font-sans">
+                <div className="max-w-4xl mx-auto px-4">
+                    <h2 className="text-2xl font-bold text-[#B22234] text-center mb-6 font-serif">2026: A World on Edge</h2>
+                    <div className="grid md:grid-cols-3 gap-4 text-center">
+                        <div className="bg-white p-4 rounded-lg border border-red-200">
+                            <div className="text-3xl mb-2">🇻🇪</div>
+                            <div className="font-bold text-[#000080]">Venezuela Crisis</div>
+                            <div className="text-sm text-slate-600">U.S. military intervention. Russia & China condemn action.</div>
+                        </div>
+                        <div className="bg-white p-4 rounded-lg border border-red-200">
+                            <div className="text-3xl mb-2">🇬🇱</div>
+                            <div className="font-bold text-[#000080]">Greenland Tensions</div>
+                            <div className="text-sm text-slate-600">NATO allies at odds. 25% tariff threats on Europe.</div>
+                        </div>
+                        <div className="bg-white p-4 rounded-lg border border-red-200">
+                            <div className="text-3xl mb-2">🇷🇺🇨🇳</div>
+                            <div className="font-bold text-[#000080]">Russia-China Alliance</div>
+                            <div className="text-sm text-slate-600">Deepening cooperation. De-dollarization accelerating.</div>
+                        </div>
+                    </div>
+                    <p className="text-center mt-6 text-slate-700 font-semibold">
+                        When the world gets chaotic, smart money moves to <span className="text-amber-600">gold</span>.
+                    </p>
+                </div>
+            </section>
+
             {/* The Warning Content */}
             <section className="py-16 bg-white font-sans text-lg md:text-xl leading-relaxed text-slate-800">
                 <div className="max-w-3xl mx-auto px-4 prose prose-slate prose-lg">
