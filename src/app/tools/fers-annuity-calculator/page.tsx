@@ -126,7 +126,7 @@ const faqSchema = {
 
 export default function FERSAnnuityCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -135,10 +135,10 @@ export default function FERSAnnuityCalculatorPage() {
       <FERSAnnuityCalculator />
 
       {/* Formula Reference */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               FERS Annuity Formulas
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -147,20 +147,20 @@ export default function FERSAnnuityCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-blue-400" />
+                        <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {formula.title}
                         </h3>
-                        <div className="bg-slate-800 rounded-lg px-3 py-2 mb-2">
-                          <code className="text-blue-400 text-sm">{formula.formula}</code>
+                        <div className="bg-slate-100 rounded-lg px-3 py-2 mb-2">
+                          <code className="text-blue-600 text-sm">{formula.formula}</code>
                         </div>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {formula.description}
                         </p>
                       </div>
@@ -174,14 +174,14 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* Retirement Eligibility */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
-                <CheckCircle2 className="h-6 w-6 text-green-400" />
+                <CheckCircle2 className="h-6 w-6 text-green-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 FERS Retirement Eligibility
               </h2>
             </div>
@@ -189,50 +189,50 @@ export default function FERSAnnuityCalculatorPage() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/10">
-                    <th className="py-3 px-4 text-left text-slate-400 font-semibold">Retirement Type</th>
-                    <th className="py-3 px-4 text-left text-slate-400 font-semibold">Age</th>
-                    <th className="py-3 px-4 text-left text-slate-400 font-semibold">Years of Service</th>
-                    <th className="py-3 px-4 text-left text-slate-400 font-semibold">Benefit Reduction</th>
+                  <tr className="border-b border-slate-200">
+                    <th className="py-3 px-4 text-left text-slate-500 font-semibold">Retirement Type</th>
+                    <th className="py-3 px-4 text-left text-slate-500 font-semibold">Age</th>
+                    <th className="py-3 px-4 text-left text-slate-500 font-semibold">Years of Service</th>
+                    <th className="py-3 px-4 text-left text-slate-500 font-semibold">Benefit Reduction</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5">
                   <tr className="bg-green-500/5">
-                    <td className="py-3 px-4 text-white font-medium">Immediate (MRA+30)</td>
-                    <td className="py-3 px-4 text-slate-300">MRA (56-57)</td>
-                    <td className="py-3 px-4 text-slate-300">30+ years</td>
-                    <td className="py-3 px-4 text-green-400">None</td>
+                    <td className="py-3 px-4 text-slate-900 font-medium">Immediate (MRA+30)</td>
+                    <td className="py-3 px-4 text-slate-600">MRA (56-57)</td>
+                    <td className="py-3 px-4 text-slate-600">30+ years</td>
+                    <td className="py-3 px-4 text-green-600">None</td>
                   </tr>
                   <tr className="bg-green-500/5">
-                    <td className="py-3 px-4 text-white font-medium">Immediate (60+20)</td>
-                    <td className="py-3 px-4 text-slate-300">60+</td>
-                    <td className="py-3 px-4 text-slate-300">20+ years</td>
-                    <td className="py-3 px-4 text-green-400">None</td>
+                    <td className="py-3 px-4 text-slate-900 font-medium">Immediate (60+20)</td>
+                    <td className="py-3 px-4 text-slate-600">60+</td>
+                    <td className="py-3 px-4 text-slate-600">20+ years</td>
+                    <td className="py-3 px-4 text-green-600">None</td>
                   </tr>
                   <tr className="bg-blue-500/5">
-                    <td className="py-3 px-4 text-white font-medium">Immediate (62+5)</td>
-                    <td className="py-3 px-4 text-slate-300">62+</td>
-                    <td className="py-3 px-4 text-slate-300">5+ years</td>
-                    <td className="py-3 px-4 text-blue-400">None (1.1% multiplier!)</td>
+                    <td className="py-3 px-4 text-slate-900 font-medium">Immediate (62+5)</td>
+                    <td className="py-3 px-4 text-slate-600">62+</td>
+                    <td className="py-3 px-4 text-slate-600">5+ years</td>
+                    <td className="py-3 px-4 text-blue-600">None (1.1% multiplier!)</td>
                   </tr>
                   <tr className="bg-amber-500/5">
-                    <td className="py-3 px-4 text-white font-medium">MRA+10 (Early)</td>
-                    <td className="py-3 px-4 text-slate-300">MRA (56-57)</td>
-                    <td className="py-3 px-4 text-slate-300">10+ years</td>
-                    <td className="py-3 px-4 text-amber-400">5% per year before 62</td>
+                    <td className="py-3 px-4 text-slate-900 font-medium">MRA+10 (Early)</td>
+                    <td className="py-3 px-4 text-slate-600">MRA (56-57)</td>
+                    <td className="py-3 px-4 text-slate-600">10+ years</td>
+                    <td className="py-3 px-4 text-[#B22234]">5% per year before 62</td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4 text-white font-medium">Deferred</td>
-                    <td className="py-3 px-4 text-slate-300">62</td>
-                    <td className="py-3 px-4 text-slate-300">5+ years</td>
-                    <td className="py-3 px-4 text-slate-400">None (no FEHB eligibility)</td>
+                    <td className="py-3 px-4 text-slate-900 font-medium">Deferred</td>
+                    <td className="py-3 px-4 text-slate-600">62</td>
+                    <td className="py-3 px-4 text-slate-600">5+ years</td>
+                    <td className="py-3 px-4 text-slate-500">None (no FEHB eligibility)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-6 bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-              <p className="text-blue-400 text-sm">
+            <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <p className="text-blue-600 text-sm">
                 <strong>Note:</strong> Your Minimum Retirement Age (MRA) depends on your birth year.
                 For those born in 1970 or later, the MRA is 57. Earlier birth years have MRAs between 55-57.
               </p>
@@ -242,44 +242,44 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* COLA Information */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                <TrendingUp className="h-6 w-6 text-amber-400" />
+              <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                <TrendingUp className="h-6 w-6 text-[#B22234]" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 FERS COLA (Cost-of-Living Adjustments)
               </h2>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">How FERS COLA Works</h3>
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-4">How FERS COLA Works</h3>
               <div className="space-y-4">
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <p className="text-slate-300 mb-2">
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <p className="text-slate-600 mb-2">
                     FERS COLAs are based on the Consumer Price Index (CPI-W) but are capped:
                   </p>
-                  <ul className="space-y-2 text-slate-400 text-sm">
+                  <ul className="space-y-2 text-slate-600 text-sm">
                     <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
-                      <span>If CPI increase is <strong className="text-white">2% or less</strong>: You get the full COLA</span>
+                      <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span>If CPI increase is <strong className="text-slate-900">2% or less</strong>: You get the full COLA</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-amber-400 mt-0.5 flex-shrink-0" />
-                      <span>If CPI increase is <strong className="text-white">2-3%</strong>: You get 2%</span>
+                      <CheckCircle2 className="h-4 w-4 text-[#B22234] mt-0.5 flex-shrink-0" />
+                      <span>If CPI increase is <strong className="text-slate-900">2-3%</strong>: You get 2%</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
-                      <span>If CPI increase is <strong className="text-white">over 3%</strong>: You get CPI minus 1%</span>
+                      <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>If CPI increase is <strong className="text-slate-900">over 3%</strong>: You get CPI minus 1%</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
-                  <p className="text-amber-400 font-semibold mb-2">Important: COLA Timing</p>
-                  <p className="text-slate-300 text-sm">
+                <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
+                  <p className="text-[#B22234] font-semibold mb-2">Important: COLA Timing</p>
+                  <p className="text-slate-600 text-sm">
                     FERS retirees under age 62 do not receive COLAs on their basic annuity (though COLAs
                     still apply to the FERS Supplement). Once you turn 62, your annuity will receive
                     annual COLAs each January.
@@ -292,36 +292,36 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* Gold Bridge Strategy */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-2xl p-8">
+            <div className="bg-[#B22234]/5 border border-[#B22234]/30 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                  <Info className="h-6 w-6 text-amber-400" />
+                <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                  <Info className="h-6 w-6 text-[#B22234]" />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-2xl font-bold text-slate-900">
                     Protect Your FERS Pension with Gold
                   </h2>
                 </div>
               </div>
-              <p className="text-slate-300 mb-6">
+              <p className="text-slate-600 mb-6">
                 Your FERS annuity provides stable income, but COLA caps mean inflation can erode purchasing power over time.
                 Federal employees should consider diversifying beyond TSP and FERS with a Gold IRA for inflation protection.
               </p>
               <div className="grid md:grid-cols-3 gap-4 mb-6">
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <p className="text-amber-400 font-semibold mb-1">COLA Gap</p>
-                  <p className="text-slate-400 text-sm">FERS COLAs are capped below true inflation in high-inflation years</p>
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <p className="text-[#B22234] font-semibold mb-1">COLA Gap</p>
+                  <p className="text-slate-600 text-sm">FERS COLAs are capped below true inflation in high-inflation years</p>
                 </div>
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <p className="text-amber-400 font-semibold mb-1">Gold Hedge</p>
-                  <p className="text-slate-400 text-sm">Gold historically rises during high inflation periods</p>
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <p className="text-[#B22234] font-semibold mb-1">Gold Hedge</p>
+                  <p className="text-slate-600 text-sm">Gold historically rises during high inflation periods</p>
                 </div>
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <p className="text-amber-400 font-semibold mb-1">TSP Rollover</p>
-                  <p className="text-slate-400 text-sm">Roll TSP to a Gold IRA after separation or at 59 1/2</p>
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <p className="text-[#B22234] font-semibold mb-1">TSP Rollover</p>
+                  <p className="text-slate-600 text-sm">Roll TSP to a Gold IRA after separation or at 59 1/2</p>
                 </div>
               </div>
             </div>
@@ -330,10 +330,10 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               FERS Annuity FAQ
             </h2>
 
@@ -362,16 +362,16 @@ export default function FERSAnnuityCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       {"\u25BC"}
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -381,43 +381,43 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* Related Tools */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Related Federal Employee Tools
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <a
                 href="/tools/fers-supplement-calculator"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
                   FERS Supplement Calculator
                 </h3>
-                <p className="text-slate-400 text-sm mt-2">
+                <p className="text-slate-600 text-sm mt-2">
                   Calculate your SRS bridge payment
                 </p>
               </a>
               <a
                 href="/tools/tsp-calculator"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
                   TSP Calculator
                 </h3>
-                <p className="text-slate-400 text-sm mt-2">
+                <p className="text-slate-600 text-sm mt-2">
                   Project your TSP balance at retirement
                 </p>
               </a>
               <a
                 href="/tools/fers-calculator"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
                   Complete FERS Calculator
                 </h3>
-                <p className="text-slate-400 text-sm mt-2">
+                <p className="text-slate-600 text-sm mt-2">
                   All-in-one FERS retirement planning
                 </p>
               </a>
@@ -427,17 +427,17 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates based on standard FERS formulas.
                     Your actual annuity is calculated by OPM and may differ based on your
                     specific employment history, sick leave credit, and other factors.
@@ -452,7 +452,7 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <AugustaCTA
             variant="footer"

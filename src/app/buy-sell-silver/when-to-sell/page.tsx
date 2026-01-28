@@ -222,12 +222,12 @@ const schema = {
 
 export default function WhenToSellPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-amber-400/5 rounded-full blur-[150px]" />
         </div>
@@ -235,7 +235,7 @@ export default function WhenToSellPage() {
           <div className="max-w-4xl mx-auto">
             <Link
               href="/buy-sell-silver"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
@@ -244,10 +244,10 @@ export default function WhenToSellPage() {
               <Clock className="h-4 w-4" />
               100 MONTHLY SEARCHES - DIFF 0 - $1.10 CPC
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               When to Sell Silver
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
               Knowing when NOT to sell is just as important as knowing when to sell.
               Most people sell at the worst times. Here&apos;s how to avoid that mistake
               and maximize your returns.
@@ -257,15 +257,15 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Key Insight */}
-      <section className="py-8 bg-amber-500/10 border-y border-amber-500/30">
+      <section className="py-8 bg-[#B22234]/10 border-y border-[#B22234]/30">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-xl font-bold text-amber-400 mb-4 flex items-center justify-center gap-2">
+            <h2 className="text-xl font-bold text-[#B22234] mb-4 flex items-center justify-center gap-2">
               <Lightbulb className="h-6 w-6" />
               Key Insight
             </h2>
-            <p className="text-slate-300">
-              <strong className="text-white">&quot;Be fearful when others are greedy, and greedy when others are fearful.&quot;</strong>
+            <p className="text-slate-600">
+              <strong className="text-slate-900">&quot;Be fearful when others are greedy, and greedy when others are fearful.&quot;</strong>
               {" "}- Warren Buffett. Sell when everyone is euphoric about silver, not when they&apos;re panicking.
             </p>
           </div>
@@ -273,7 +273,7 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Good vs Bad Reasons */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
@@ -293,8 +293,8 @@ export default function WhenToSellPage() {
                             <Icon className="h-5 w-5 text-green-400" />
                           </div>
                           <div>
-                            <h3 className="text-lg font-bold text-white mb-1">{item.reason}</h3>
-                            <p className="text-slate-400 text-sm mb-2">{item.description}</p>
+                            <h3 className="text-lg font-bold text-slate-900 mb-1">{item.reason}</h3>
+                            <p className="text-slate-600 text-sm mb-2">{item.description}</p>
                             <p className="text-green-400 text-xs">
                               <strong>Example:</strong> {item.example}
                             </p>
@@ -320,9 +320,9 @@ export default function WhenToSellPage() {
                           <XCircle className="h-5 w-5 text-red-400" />
                         </div>
                         <div>
-                          <h3 className="text-lg font-bold text-white mb-1">{item.reason}</h3>
-                          <p className="text-slate-400 text-sm mb-2">{item.description}</p>
-                          <p className="text-amber-400 text-xs">
+                          <h3 className="text-lg font-bold text-slate-900 mb-1">{item.reason}</h3>
+                          <p className="text-slate-600 text-sm mb-2">{item.description}</p>
+                          <p className="text-[#B22234] text-xs">
                             <strong>Better Approach:</strong> {item.better}
                           </p>
                         </div>
@@ -337,30 +337,30 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Market Indicators */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 flex items-center justify-center gap-2">
               <LineChart className="h-6 w-6 text-blue-400" />
               Market Indicators to Watch
             </h2>
             <div className="overflow-x-auto">
-              <table className="w-full bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                <thead className="bg-slate-800/50">
+              <table className="w-full bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                <thead className="bg-slate-50">
                   <tr>
-                    <th className="text-left p-4 text-white font-bold">Indicator</th>
+                    <th className="text-left p-4 text-slate-900 font-bold">Indicator</th>
                     <th className="text-center p-4 text-green-400 font-bold">Bullish (Buy)</th>
                     <th className="text-center p-4 text-red-400 font-bold">Bearish (Sell)</th>
-                    <th className="text-left p-4 text-amber-400 font-bold">Action</th>
+                    <th className="text-left p-4 text-[#B22234] font-bold">Action</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/10">
+                <tbody className="divide-y divide-slate-200">
                   {marketIndicators.map((row, index) => (
                     <tr key={index}>
-                      <td className="p-4 text-white font-semibold">{row.indicator}</td>
-                      <td className="p-4 text-center text-slate-300 text-sm">{row.bullish}</td>
-                      <td className="p-4 text-center text-slate-300 text-sm">{row.bearish}</td>
-                      <td className="p-4 text-slate-400 text-sm">{row.action}</td>
+                      <td className="p-4 text-slate-900 font-semibold">{row.indicator}</td>
+                      <td className="p-4 text-center text-slate-600 text-sm">{row.bullish}</td>
+                      <td className="p-4 text-center text-slate-600 text-sm">{row.bearish}</td>
+                      <td className="p-4 text-slate-600 text-sm">{row.action}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -371,23 +371,23 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Exit Strategies */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4 flex items-center justify-center gap-2">
-              <Target className="h-6 w-6 text-amber-400" />
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4 flex items-center justify-center gap-2">
+              <Target className="h-6 w-6 text-[#B22234]" />
               Exit Strategies
             </h2>
-            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
               Have a plan before you need to sell. These are proven approaches to taking profits or liquidating silver.
             </p>
             <div className="space-y-6">
               {exitStrategies.map((strategy, index) => (
-                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                   <div className="flex flex-col md:flex-row md:items-start gap-6">
                     <div className="md:w-64 flex-shrink-0">
-                      <h3 className="text-xl font-bold text-white mb-2">{strategy.name}</h3>
-                      <p className="text-slate-400 text-sm">{strategy.description}</p>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">{strategy.name}</h3>
+                      <p className="text-slate-600 text-sm">{strategy.description}</p>
                     </div>
                     <div className="flex-1 grid md:grid-cols-3 gap-4">
                       <div>
@@ -396,7 +396,7 @@ export default function WhenToSellPage() {
                         </h4>
                         <ul className="space-y-1">
                           {strategy.pros.map((pro, i) => (
-                            <li key={i} className="text-slate-300 text-sm">+ {pro}</li>
+                            <li key={i} className="text-slate-600 text-sm">+ {pro}</li>
                           ))}
                         </ul>
                       </div>
@@ -406,13 +406,13 @@ export default function WhenToSellPage() {
                         </h4>
                         <ul className="space-y-1">
                           {strategy.cons.map((con, i) => (
-                            <li key={i} className="text-slate-300 text-sm">- {con}</li>
+                            <li key={i} className="text-slate-600 text-sm">- {con}</li>
                           ))}
                         </ul>
                       </div>
-                      <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3">
-                        <h4 className="text-sm font-semibold text-amber-400 mb-1">Best For:</h4>
-                        <p className="text-slate-300 text-sm">{strategy.bestFor}</p>
+                      <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-3">
+                        <h4 className="text-sm font-semibold text-[#B22234] mb-1">Best For:</h4>
+                        <p className="text-slate-600 text-sm">{strategy.bestFor}</p>
                       </div>
                     </div>
                   </div>
@@ -424,25 +424,25 @@ export default function WhenToSellPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -453,30 +453,30 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/buy-sell-silver/best-place-to-sell" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Best Place to Sell</h3>
-              <p className="text-sm text-slate-400">Where to sell for best price</p>
+            <Link href="/buy-sell-silver/best-place-to-sell" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Best Place to Sell</h3>
+              <p className="text-sm text-slate-600">Where to sell for best price</p>
             </Link>
-            <Link href="/buy-sell-silver/how-to-sell-coins" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">How to Sell Coins</h3>
-              <p className="text-sm text-slate-400">Step-by-step selling guide</p>
+            <Link href="/buy-sell-silver/how-to-sell-coins" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">How to Sell Coins</h3>
+              <p className="text-sm text-slate-600">Step-by-step selling guide</p>
             </Link>
-            <Link href="/silver-squeeze/silver-to-gold-ratio-calculator" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Gold/Silver Ratio</h3>
-              <p className="text-sm text-slate-400">Calculator and strategy</p>
+            <Link href="/silver-squeeze/silver-to-gold-ratio-calculator" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Gold/Silver Ratio</h3>
+              <p className="text-sm text-slate-600">Calculator and strategy</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA
             variant="footer"

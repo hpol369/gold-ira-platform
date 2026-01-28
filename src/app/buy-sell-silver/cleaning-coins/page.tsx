@@ -97,7 +97,7 @@ const cleaningMethods = [
   {
     name: "Baking Soda Paste",
     safety: "Moderate Risk",
-    safetyColor: "text-amber-400",
+    safetyColor: "text-[#B22234]",
     description: "Make paste with water, apply gently with soft brush.",
     bestFor: "Stubborn tarnish on bullion rounds only",
     caution: "Mildly abrasive - can create hairline scratches",
@@ -105,7 +105,7 @@ const cleaningMethods = [
   {
     name: "Aluminum Foil Method",
     safety: "Moderate Risk",
-    safetyColor: "text-amber-400",
+    safetyColor: "text-[#B22234]",
     description: "Line bowl with foil, add hot water, baking soda, and salt. Chemical reaction removes tarnish.",
     bestFor: "Heavy tarnish on bullion",
     caution: "Can create uneven appearance, may damage some finishes",
@@ -196,12 +196,12 @@ const schema = {
 
 export default function CleaningCoinsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-amber-400/5 rounded-full blur-[150px]" />
         </div>
@@ -209,7 +209,7 @@ export default function CleaningCoinsPage() {
           <div className="max-w-4xl mx-auto">
             <Link
               href="/buy-sell-silver"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
@@ -218,10 +218,10 @@ export default function CleaningCoinsPage() {
               <Sparkles className="h-4 w-4" />
               390 MONTHLY SEARCHES - DIFF 0
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Cleaning Silver Coins
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
               One of the most common mistakes new collectors make is cleaning their coins.
               In most cases, you&apos;re destroying value, not adding it. Learn when cleaning
               is acceptable and how to do it safely.
@@ -238,17 +238,17 @@ export default function CleaningCoinsPage() {
               <AlertTriangle className="h-6 w-6" />
               Critical Warning
             </h2>
-            <p className="text-slate-300">
-              <strong className="text-white">Cleaning collectible coins can reduce their value by 50% or more.</strong>
+            <p className="text-slate-600">
+              <strong className="text-slate-900">Cleaning collectible coins can reduce their value by 50% or more.</strong>
               {" "}Dealers can instantly spot cleaned coins. Natural toning is valued by collectors.
-              When in doubt, <strong className="text-white">do not clean</strong>.
+              When in doubt, <strong className="text-slate-900">do not clean</strong>.
             </p>
           </div>
         </Container>
       </section>
 
       {/* Never Clean Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-red-400 text-center mb-8 flex items-center justify-center gap-2">
@@ -261,8 +261,8 @@ export default function CleaningCoinsPage() {
                   <div className="flex items-start gap-3">
                     <XCircle className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
                     <div>
-                      <h3 className="text-lg font-bold text-white mb-1">{item.type}</h3>
-                      <p className="text-slate-400 text-sm mb-2">{item.reason}</p>
+                      <h3 className="text-lg font-bold text-slate-900 mb-1">{item.type}</h3>
+                      <p className="text-slate-600 text-sm mb-2">{item.reason}</p>
                       <p className="text-red-400 text-sm font-semibold">{item.impact}</p>
                     </div>
                   </div>
@@ -274,7 +274,7 @@ export default function CleaningCoinsPage() {
       </section>
 
       {/* OK to Clean Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-green-400 text-center mb-8 flex items-center justify-center gap-2">
@@ -287,15 +287,15 @@ export default function CleaningCoinsPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 flex-shrink-0" />
                     <div>
-                      <h3 className="text-lg font-bold text-white mb-1">{item.type}</h3>
-                      <p className="text-slate-400 text-sm mb-2">{item.reason}</p>
+                      <h3 className="text-lg font-bold text-slate-900 mb-1">{item.type}</h3>
+                      <p className="text-slate-600 text-sm mb-2">{item.reason}</p>
                       <p className="text-green-400 text-sm font-semibold">{item.method}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-center text-slate-500 text-sm mt-6">
+            <p className="text-center text-slate-600 text-sm mt-6">
               Even in these cases, ask yourself: &quot;Do I really need to clean this?&quot;
             </p>
           </div>
@@ -303,14 +303,14 @@ export default function CleaningCoinsPage() {
       </section>
 
       {/* Cleaning Methods */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4 flex items-center justify-center gap-2">
               <Droplet className="h-6 w-6 text-blue-400" />
               Cleaning Methods: From Safest to Most Dangerous
             </h2>
-            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
               If you must clean generic bullion or personal keepsakes, use the safest method possible.
               For collectible coins, skip this section entirely.
             </p>
@@ -318,11 +318,11 @@ export default function CleaningCoinsPage() {
               {cleaningMethods.map((method, index) => (
                 <div
                   key={index}
-                  className={`bg-white/5 backdrop-blur-sm border rounded-xl p-6 ${
+                  className={`bg-slate-50 backdrop-blur-sm border rounded-xl p-6 ${
                     method.safety === "Dangerous" || method.safety === "High Risk"
                       ? "border-red-500/30"
                       : method.safety === "Moderate Risk"
-                      ? "border-amber-500/30"
+                      ? "border-[#B22234]/30"
                       : "border-green-500/30"
                   }`}
                 >
@@ -336,22 +336,22 @@ export default function CleaningCoinsPage() {
                           : "bg-green-400"
                       }`} />
                       <div>
-                        <h3 className="text-lg font-bold text-white">{method.name}</h3>
+                        <h3 className="text-lg font-bold text-slate-900">{method.name}</h3>
                         <span className={`text-sm font-semibold ${method.safetyColor}`}>
                           {method.safety}
                         </span>
                       </div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-slate-300 mb-3">{method.description}</p>
+                      <p className="text-slate-600 mb-3">{method.description}</p>
                       <div className="flex flex-col md:flex-row gap-4 text-sm">
                         <div>
                           <span className="text-green-400 font-semibold">Best For: </span>
-                          <span className="text-slate-400">{method.bestFor}</span>
+                          <span className="text-slate-600">{method.bestFor}</span>
                         </div>
                         <div>
-                          <span className="text-amber-400 font-semibold">Caution: </span>
-                          <span className="text-slate-400">{method.caution}</span>
+                          <span className="text-[#B22234] font-semibold">Caution: </span>
+                          <span className="text-slate-600">{method.caution}</span>
                         </div>
                       </div>
                     </div>
@@ -364,20 +364,20 @@ export default function CleaningCoinsPage() {
       </section>
 
       {/* Signs of Cleaned Coins */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               How Dealers Spot Cleaned Coins
             </h2>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-red-400 mb-4 flex items-center gap-2">
                     <AlertTriangle className="h-5 w-5" />
                     Signs of Cleaning
                   </h3>
-                  <ul className="space-y-2 text-slate-300">
+                  <ul className="space-y-2 text-slate-600">
                     <li className="flex items-start gap-2">
                       <span className="text-red-400">1.</span>
                       Unnatural, &quot;flat&quot; or overly bright luster
@@ -405,7 +405,7 @@ export default function CleaningCoinsPage() {
                     <Shield className="h-5 w-5" />
                     What Dealers Value
                   </h3>
-                  <ul className="space-y-2 text-slate-300">
+                  <ul className="space-y-2 text-slate-600">
                     <li className="flex items-start gap-2">
                       <span className="text-green-400">1.</span>
                       Natural, original surfaces
@@ -429,8 +429,8 @@ export default function CleaningCoinsPage() {
                   </ul>
                 </div>
               </div>
-              <div className="mt-6 pt-6 border-t border-white/10">
-                <p className="text-slate-400 text-center">
+              <div className="mt-6 pt-6 border-t border-slate-200">
+                <p className="text-slate-600 text-center">
                   Professional grading services (PCGS, NGC) will mark cleaned coins as &quot;Details&quot; grades,
                   which trade at significant discounts to problem-free coins.
                 </p>
@@ -441,25 +441,25 @@ export default function CleaningCoinsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -470,30 +470,30 @@ export default function CleaningCoinsPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
-          <h2 className="text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/buy-sell-silver/how-to-sell-coins" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">How to Sell Silver Coins</h3>
-              <p className="text-sm text-slate-400">Step-by-step selling guide</p>
+            <Link href="/buy-sell-silver/how-to-sell-coins" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">How to Sell Silver Coins</h3>
+              <p className="text-sm text-slate-600">Step-by-step selling guide</p>
             </Link>
-            <Link href="/buy-sell-silver/best-place-to-sell" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Best Place to Sell</h3>
-              <p className="text-sm text-slate-400">Compare selling options</p>
+            <Link href="/buy-sell-silver/best-place-to-sell" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Best Place to Sell</h3>
+              <p className="text-sm text-slate-600">Compare selling options</p>
             </Link>
-            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Spot Fake Silver</h3>
-              <p className="text-sm text-slate-400">Identify counterfeits</p>
+            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Spot Fake Silver</h3>
+              <p className="text-sm text-slate-600">Identify counterfeits</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

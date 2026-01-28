@@ -96,19 +96,19 @@ const schema = {
 
 export default function GoldIraVsCryptoPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold text-secondary mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
                         Asset Class Showdown
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Gold IRA vs. Crypto IRA
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         The battle between the "New Digital Gold" and the Ultimate Safe Haven. We compare stability, risk, and long-term viability for your retirement.
                     </p>
                 </Container>
@@ -122,7 +122,7 @@ export default function GoldIraVsCryptoPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <p className="lead">
                             Look, I get the appeal of crypto. I really do. The idea of 10x gains while you sleep is intoxicating. But here&apos;s the question nobody wants to ask: <em>can you afford to lose 80% of your retirement savings in a month?</em>
@@ -278,11 +278,11 @@ export default function GoldIraVsCryptoPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Protect Your Life Savings</h3>
-                                <p className="mb-6 text-gray-200">See why smart investors are moving to physical gold in 2026.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Protect Your Life Savings</h3>
+                                <p className="mb-6 text-slate-600">See why smart investors are moving to physical gold in 2026.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Get Your Free Gold Guide <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -294,14 +294,14 @@ export default function GoldIraVsCryptoPage() {
                             {/* FAQs will serve from Schema but displayed here for readers */}
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                    <details key={index} className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                                 <Scale className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-300">
+                                        <p className="mt-4 leading-relaxed text-slate-600">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -314,7 +314,7 @@ export default function GoldIraVsCryptoPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA
                         variant="footer"

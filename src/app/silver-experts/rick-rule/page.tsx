@@ -108,16 +108,16 @@ const investmentPrinciples = [
 
 export default function RickRulePage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 text-white py-20 relative overflow-hidden border-b border-white/10">
+            <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden border-b border-slate-200">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-900/20 via-transparent to-transparent" />
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <Link href="/silver-experts" className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors">
+                        <Link href="/silver-experts" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
                         <div className="inline-flex items-center gap-2 rounded-full bg-green-500/20 px-4 py-1.5 text-sm font-semibold text-green-400 mb-6 border border-green-500/30 ml-4">
@@ -130,7 +130,7 @@ export default function RickRulePage() {
                         <p className="text-xl text-green-400 font-semibold mb-4">
                             Legendary Mining Investor | Former President, Sprott U.S. Holdings
                         </p>
-                        <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
+                        <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
                             With over 50 years in resource investing, Rick Rule has financed hundreds of mining companies and generated legendary returns for investors. His insights on silver markets combine deep industry knowledge with contrarian investment wisdom.
                         </p>
                     </div>
@@ -144,27 +144,27 @@ export default function RickRulePage() {
                     <div className="lg:col-span-2 space-y-12">
 
                         {/* Who Is Rick Rule */}
-                        <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+                        <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
                                     <Mountain className="w-6 h-6 text-green-400" />
                                 </div>
-                                <h2 className="text-2xl font-bold font-serif text-white">Who Is Rick Rule?</h2>
+                                <h2 className="text-2xl font-bold font-serif text-slate-900">Who Is Rick Rule?</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
-                                <p className="text-slate-300">
-                                    Rick Rule is one of the most respected names in natural resource investing. With over <strong className="text-white">50 years of experience</strong>, he has been instrumental in financing hundreds of mining companies and has generated returns that have made him a legend in the industry.
+                                <p className="text-slate-600">
+                                    Rick Rule is one of the most respected names in natural resource investing. With over <strong className="text-slate-900">50 years of experience</strong>, he has been instrumental in financing hundreds of mining companies and has generated returns that have made him a legend in the industry.
                                 </p>
-                                <p className="text-slate-300">
+                                <p className="text-slate-600">
                                     Rule served as President of <strong className="text-green-400">Sprott U.S. Holdings</strong>, where he oversaw billions of dollars in resource investments. Before joining Sprott, he founded Global Resource Investments, which became the largest brokerage focused on natural resource companies.
                                 </p>
-                                <p className="text-slate-300">
+                                <p className="text-slate-600">
                                     Unlike analysts who only talk about markets, Rule has put his money where his mouth is throughout his career. His track record includes early investments in companies that became billion-dollar successes, as well as the discipline to avoid spectacular failures.
                                 </p>
 
-                                <div className="bg-slate-800/50 rounded-lg p-6 my-6 not-prose">
-                                    <h4 className="font-bold text-white mb-4">Rick Rule Quick Facts</h4>
-                                    <ul className="space-y-2 text-slate-300">
+                                <div className="bg-slate-50 rounded-lg p-6 my-6 not-prose">
+                                    <h4 className="font-bold text-slate-900 mb-4">Rick Rule Quick Facts</h4>
+                                    <ul className="space-y-2 text-slate-600">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
                                             <span>50+ years in natural resource investing</span>
@@ -191,73 +191,73 @@ export default function RickRulePage() {
                         </section>
 
                         {/* Silver Mining Thesis */}
-                        <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+                        <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
                                     <TrendingUp className="w-6 h-6 text-green-400" />
                                 </div>
-                                <h2 className="text-2xl font-bold font-serif text-white">Rick Rule&apos;s Silver Mining Thesis</h2>
+                                <h2 className="text-2xl font-bold font-serif text-slate-900">Rick Rule&apos;s Silver Mining Thesis</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
-                                <p className="text-slate-300">
-                                    Rule approaches silver differently than most precious metals investors. While he appreciates physical silver, his investment focus is on <strong className="text-white">silver mining stocks</strong> - where he believes the real leverage lies.
+                                <p className="text-slate-600">
+                                    Rule approaches silver differently than most precious metals investors. While he appreciates physical silver, his investment focus is on <strong className="text-slate-900">silver mining stocks</strong> - where he believes the real leverage lies.
                                 </p>
 
-                                <h3 className="text-xl font-bold text-white mt-8 mb-4">Leverage Through Mining Stocks</h3>
-                                <p className="text-slate-300">
+                                <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Leverage Through Mining Stocks</h3>
+                                <p className="text-slate-600">
                                     Rule&apos;s thesis is that quality silver mining stocks can provide <strong className="text-green-400">3-5x leverage</strong> to the underlying metal price. If silver doubles, a well-run miner with good cost structures could triple or quadruple. This leverage works both ways, which is why stock selection is critical.
                                 </p>
-                                <blockquote className="border-l-4 border-green-400 pl-4 my-6 text-slate-400 italic">
+                                <blockquote className="border-l-4 border-green-400 pl-4 my-6 text-slate-600 italic">
                                     &quot;Physical silver is insurance. Mining stocks are the lottery ticket. I want both, but I know which one offers the bigger payout potential.&quot;
                                 </blockquote>
 
-                                <h3 className="text-xl font-bold text-white mt-8 mb-4">Supply Deficit Thesis</h3>
-                                <p className="text-slate-300">
-                                    Rule points to the chronic underinvestment in silver mining during the 2013-2020 bear market. New deposits were not developed, existing mines were not expanded, and exploration was cut to the bone. This creates a <strong className="text-white">structural supply deficit</strong> that cannot be quickly fixed when demand rises.
+                                <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Supply Deficit Thesis</h3>
+                                <p className="text-slate-600">
+                                    Rule points to the chronic underinvestment in silver mining during the 2013-2020 bear market. New deposits were not developed, existing mines were not expanded, and exploration was cut to the bone. This creates a <strong className="text-slate-900">structural supply deficit</strong> that cannot be quickly fixed when demand rises.
                                 </p>
 
-                                <h3 className="text-xl font-bold text-white mt-8 mb-4">Industrial Demand Tailwind</h3>
-                                <p className="text-slate-300">
+                                <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Industrial Demand Tailwind</h3>
+                                <p className="text-slate-600">
                                     Unlike gold, silver has substantial industrial demand - solar panels, electronics, medical devices, and increasingly EVs. Rule sees this as a fundamental tailwind that gold does not have. As the world electrifies, silver demand will grow.
                                 </p>
                             </div>
                         </section>
 
                         {/* Investment Approach */}
-                        <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+                        <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
                                     <Target className="w-6 h-6 text-green-400" />
                                 </div>
-                                <h2 className="text-2xl font-bold font-serif text-white">Rick Rule&apos;s Investment Approach</h2>
+                                <h2 className="text-2xl font-bold font-serif text-slate-900">Rick Rule&apos;s Investment Approach</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none mb-8">
-                                <p className="text-slate-300">
+                                <p className="text-slate-600">
                                     Rule is a disciplined contrarian investor. His approach has been refined over five decades and has weathered multiple boom-bust cycles in the resource sector.
                                 </p>
                             </div>
                             <div className="grid md:grid-cols-2 gap-6">
                                 {investmentPrinciples.map((item, index) => (
-                                    <div key={index} className="bg-slate-800/50 rounded-lg p-6">
+                                    <div key={index} className="bg-slate-50 rounded-lg p-6">
                                         <h3 className="text-lg font-bold text-green-400 mb-2">{item.principle}</h3>
-                                        <p className="text-slate-300 text-sm">{item.description}</p>
+                                        <p className="text-slate-600 text-sm">{item.description}</p>
                                     </div>
                                 ))}
                             </div>
                         </section>
 
                         {/* Key Quotes */}
-                        <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+                        <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
                                     <Quote className="w-6 h-6 text-green-400" />
                                 </div>
-                                <h2 className="text-2xl font-bold font-serif text-white">Key Quotes & Insights</h2>
+                                <h2 className="text-2xl font-bold font-serif text-slate-900">Key Quotes & Insights</h2>
                             </div>
                             <div className="space-y-6">
                                 {keyQuotes.map((item, index) => (
-                                    <div key={index} className="bg-slate-800/50 rounded-lg p-6">
-                                        <p className="text-white text-lg italic mb-3">&quot;{item.quote}&quot;</p>
+                                    <div key={index} className="bg-slate-50 rounded-lg p-6">
+                                        <p className="text-slate-900 text-lg italic mb-3">&quot;{item.quote}&quot;</p>
                                         <p className="text-green-400 text-sm font-semibold">{item.context}</p>
                                     </div>
                                 ))}
@@ -265,23 +265,23 @@ export default function RickRulePage() {
                         </section>
 
                         {/* What Rick Rule Recommends */}
-                        <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+                        <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
                                     <DollarSign className="w-6 h-6 text-green-400" />
                                 </div>
-                                <h2 className="text-2xl font-bold font-serif text-white">What Rick Rule Recommends</h2>
+                                <h2 className="text-2xl font-bold font-serif text-slate-900">What Rick Rule Recommends</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
-                                <p className="text-slate-300">
+                                <p className="text-slate-600">
                                     Rule&apos;s recommendations blend practical wisdom with decades of experience:
                                 </p>
-                                <ul className="text-slate-300 space-y-3">
-                                    <li><strong className="text-white">Start with Physical:</strong> Hold physical gold and silver as insurance. This is your foundation, not your speculation.</li>
-                                    <li><strong className="text-white">Add Mining Stocks:</strong> For those willing to accept higher risk, quality mining stocks offer leverage to rising metal prices.</li>
-                                    <li><strong className="text-white">Focus on Quality:</strong> Own the best companies, not the cheapest. Cheap stocks can get much cheaper.</li>
-                                    <li><strong className="text-white">Be Patient:</strong> Resource cycles can last years. Position yourself and wait for the market to recognize value.</li>
-                                    <li><strong className="text-white">Diversify Within the Sector:</strong> Spread risk across multiple companies and sub-sectors within precious metals.</li>
+                                <ul className="text-slate-600 space-y-3">
+                                    <li><strong className="text-slate-900">Start with Physical:</strong> Hold physical gold and silver as insurance. This is your foundation, not your speculation.</li>
+                                    <li><strong className="text-slate-900">Add Mining Stocks:</strong> For those willing to accept higher risk, quality mining stocks offer leverage to rising metal prices.</li>
+                                    <li><strong className="text-slate-900">Focus on Quality:</strong> Own the best companies, not the cheapest. Cheap stocks can get much cheaper.</li>
+                                    <li><strong className="text-slate-900">Be Patient:</strong> Resource cycles can last years. Position yourself and wait for the market to recognize value.</li>
+                                    <li><strong className="text-slate-900">Diversify Within the Sector:</strong> Spread risk across multiple companies and sub-sectors within precious metals.</li>
                                 </ul>
 
                                 <Callout type="tip" title="Rule's Core Advice for Individual Investors">
@@ -291,24 +291,24 @@ export default function RickRulePage() {
                         </section>
 
                         {/* FAQ Section */}
-                        <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
-                            <h2 className="text-2xl font-bold font-serif text-white mb-6">Frequently Asked Questions</h2>
+                        <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
+                            <h2 className="text-2xl font-bold font-serif text-slate-900 mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-6">
-                                <div className="border-b border-white/10 pb-6">
+                                <div className="border-b border-slate-200 pb-6">
                                     <h3 className="text-lg font-bold text-green-400 mb-2">Who is Rick Rule?</h3>
-                                    <p className="text-slate-300">Rick Rule is a legendary resource investor with over 50 years of experience. He was formerly the President of Sprott U.S. Holdings and has been instrumental in financing hundreds of mining companies throughout his career.</p>
+                                    <p className="text-slate-600">Rick Rule is a legendary resource investor with over 50 years of experience. He was formerly the President of Sprott U.S. Holdings and has been instrumental in financing hundreds of mining companies throughout his career.</p>
                                 </div>
-                                <div className="border-b border-white/10 pb-6">
+                                <div className="border-b border-slate-200 pb-6">
                                     <h3 className="text-lg font-bold text-green-400 mb-2">What is Rick Rule&apos;s silver thesis?</h3>
-                                    <p className="text-slate-300">Rule believes silver offers compelling value, particularly through mining stocks which provide leveraged exposure to rising metal prices. He sees silver&apos;s industrial demand as a key differentiator from gold.</p>
+                                    <p className="text-slate-600">Rule believes silver offers compelling value, particularly through mining stocks which provide leveraged exposure to rising metal prices. He sees silver&apos;s industrial demand as a key differentiator from gold.</p>
                                 </div>
-                                <div className="border-b border-white/10 pb-6">
+                                <div className="border-b border-slate-200 pb-6">
                                     <h3 className="text-lg font-bold text-green-400 mb-2">How does Rick Rule invest in silver?</h3>
-                                    <p className="text-slate-300">Rule primarily invests in silver through mining stocks rather than physical metal, as he believes quality mining companies can generate 3-5x returns on metal price increases. He focuses on companies with strong balance sheets and quality management.</p>
+                                    <p className="text-slate-600">Rule primarily invests in silver through mining stocks rather than physical metal, as he believes quality mining companies can generate 3-5x returns on metal price increases. He focuses on companies with strong balance sheets and quality management.</p>
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold text-green-400 mb-2">What is Rick Rule&apos;s investment approach?</h3>
-                                    <p className="text-slate-300">Rule is a contrarian value investor who buys when sectors are out of favor and sells when they become popular. He emphasizes fundamental analysis, management quality, and buying at discounts to intrinsic value.</p>
+                                    <p className="text-slate-600">Rule is a contrarian value investor who buys when sectors are out of favor and sells when they become popular. He emphasizes fundamental analysis, management quality, and buying at discounts to intrinsic value.</p>
                                 </div>
                             </div>
                         </section>
@@ -318,21 +318,21 @@ export default function RickRulePage() {
                     <aside className="lg:col-span-1 space-y-8">
                         {/* CTA Box */}
                         <div className="bg-gradient-to-br from-green-900/30 to-slate-800/50 border border-green-500/30 rounded-xl p-6 sticky top-24">
-                            <h3 className="text-xl font-bold font-serif text-white mb-4">
+                            <h3 className="text-xl font-bold font-serif text-slate-900 mb-4">
                                 Want to Follow the Experts Into Silver?
                             </h3>
-                            <p className="text-slate-400 text-sm mb-6">
+                            <p className="text-slate-600 text-sm mb-6">
                                 Like Rick Rule, many experts recommend physical silver as a foundation. Find out if a Silver IRA is right for you.
                             </p>
-                            <Button variant="gold" className="w-full" size="lg" asChild>
+                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white w-full" size="lg" asChild>
                                 <Link href="/quiz">Take the 60-Second Quiz</Link>
                             </Button>
-                            <p className="text-xs text-slate-500 text-center mt-3">No commitment required</p>
+                            <p className="text-xs text-slate-600 text-center mt-3">No commitment required</p>
                         </div>
 
                         {/* Other Experts */}
-                        <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
-                            <h3 className="text-lg font-bold text-white mb-4">Other Silver Experts</h3>
+                        <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
+                            <h3 className="text-lg font-bold text-slate-900 mb-4">Other Silver Experts</h3>
                             <ul className="space-y-3">
                                 <li>
                                     <Link href="/silver-experts/andy-schectman" className="text-green-400 hover:text-green-300 font-medium">
@@ -363,26 +363,26 @@ export default function RickRulePage() {
                         </div>
 
                         {/* Related Resources */}
-                        <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
-                            <h3 className="text-lg font-bold text-white mb-4">Related Resources</h3>
+                        <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
+                            <h3 className="text-lg font-bold text-slate-900 mb-4">Related Resources</h3>
                             <ul className="space-y-3 text-sm">
                                 <li>
-                                    <Link href="/silver-squeeze/silver-supply-deficit" className="text-slate-400 hover:text-white">
+                                    <Link href="/silver-squeeze/silver-supply-deficit" className="text-slate-600 hover:text-slate-900">
                                         Silver Supply Deficit Analysis
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-squeeze" className="text-slate-400 hover:text-white">
+                                    <Link href="/silver-squeeze" className="text-slate-600 hover:text-slate-900">
                                         Silver Squeeze Explained
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/best-silver-ira-companies" className="text-slate-400 hover:text-white">
+                                    <Link href="/best-silver-ira-companies" className="text-slate-600 hover:text-slate-900">
                                         Best Silver IRA Companies
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/guide/silver-ira-guide" className="text-slate-400 hover:text-white">
+                                    <Link href="/guide/silver-ira-guide" className="text-slate-600 hover:text-slate-900">
                                         Complete Silver IRA Guide
                                     </Link>
                                 </li>
@@ -395,16 +395,16 @@ export default function RickRulePage() {
             {/* Disclaimer */}
             <section className="py-8">
                 <Container>
-                    <div className="bg-slate-800/50 border border-white/10 rounded-xl p-6 max-w-4xl mx-auto">
-                        <p className="text-slate-400 text-sm text-center">
-                            <strong className="text-white">Disclaimer:</strong> We are not affiliated with Rick Rule or Sprott. The information presented is for educational purposes only and represents our interpretation of publicly available statements. Always conduct your own research and consult with a financial advisor before making investment decisions.
+                    <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 max-w-4xl mx-auto">
+                        <p className="text-slate-600 text-sm text-center">
+                            <strong className="text-slate-900">Disclaimer:</strong> We are not affiliated with Rick Rule or Sprott. The information presented is for educational purposes only and represents our interpretation of publicly available statements. Always conduct your own research and consult with a financial advisor before making investment decisions.
                         </p>
                     </div>
                 </Container>
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" linkContext="silver" trackSource="rick-rule" />
                 </Container>

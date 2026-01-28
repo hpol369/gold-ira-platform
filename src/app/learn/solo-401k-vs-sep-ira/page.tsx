@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 
 export default function Solo401kVsSepIraPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-slate-900 to-slate-900"></div>
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-purple-500/5 to-transparent"></div>
+                <div className="absolute inset-0 bg-slate-50"></div>
+                <div className="absolute top-0 right-0 w-1/2 h-full hidden"></div>
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
@@ -32,21 +32,21 @@ export default function Solo401kVsSepIraPage() {
                             Self-Employed Retirement Comparison
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6 leading-tight">
                             Solo 401k vs SEP IRA:{" "}
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                                 Complete Guide
                             </span>
                         </h1>
 
-                        <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
+                        <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
                             You&apos;ve been running your own shop for years—maybe you&apos;re an electrician who went solo, a nurse practitioner with your own practice, or a trucker who bought your own rig. You know there are tax-advantaged ways to save for retirement, but which one actually lets you keep more of what you&apos;ve earned? Let&apos;s break it down.
                         </p>
 
                         {/* Quick Verdict */}
                         <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6">
-                            <h2 className="text-lg font-semibold text-white mb-3">Quick Verdict</h2>
-                            <p className="text-slate-300">
+                            <h2 className="text-lg font-semibold text-slate-900 mb-3">Quick Verdict</h2>
+                            <p className="text-slate-600">
                                 <strong className="text-purple-400">Solo 401k wins for most self-employed individuals</strong> because
                                 it allows higher contributions at lower income levels, offers Roth contributions, and includes
                                 loan provisions. SEP IRA is simpler to set up but lacks these key features.
@@ -57,34 +57,34 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* Side-by-Side Comparison */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-4 text-center">
                             Head-to-Head Comparison
                         </h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                             See exactly how these two retirement plans stack up across key features.
                         </p>
 
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
+                        <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
                             <div className="overflow-x-auto">
                                 <table className="w-full">
                                     <thead>
-                                        <tr className="border-b border-white/10 bg-white/5">
-                                            <th className="text-left p-4 text-slate-400 font-medium">Feature</th>
+                                        <tr className="border-b border-slate-200 bg-slate-100">
+                                            <th className="text-left p-4 text-slate-500 font-medium">Feature</th>
                                             <th className="text-center p-4 text-purple-400 font-bold">Solo 401k</th>
                                             <th className="text-center p-4 text-blue-400 font-bold">SEP IRA</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr className="border-b border-white/10">
-                                            <td className="p-4 text-white font-medium">2026 Max Contribution</td>
+                                        <tr className="border-b border-slate-200">
+                                            <td className="p-4 text-slate-900 font-medium">2026 Max Contribution</td>
                                             <td className="p-4 text-center text-purple-300">$70,000 ($77,500 if 50+)</td>
                                             <td className="p-4 text-center text-blue-300">$70,000</td>
                                         </tr>
-                                        <tr className="border-b border-white/10 bg-white/5">
-                                            <td className="p-4 text-white font-medium">Employee Deferral</td>
+                                        <tr className="border-b border-slate-200 bg-slate-100">
+                                            <td className="p-4 text-slate-900 font-medium">Employee Deferral</td>
                                             <td className="p-4 text-center">
                                                 <span className="inline-flex items-center gap-1 text-green-400">
                                                     <CheckCircle className="w-4 h-4" /> $23,500
@@ -96,8 +96,8 @@ export default function Solo401kVsSepIraPage() {
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr className="border-b border-white/10">
-                                            <td className="p-4 text-white font-medium">Catch-Up Contributions (50+)</td>
+                                        <tr className="border-b border-slate-200">
+                                            <td className="p-4 text-slate-900 font-medium">Catch-Up Contributions (50+)</td>
                                             <td className="p-4 text-center">
                                                 <span className="inline-flex items-center gap-1 text-green-400">
                                                     <CheckCircle className="w-4 h-4" /> $7,500
@@ -109,8 +109,8 @@ export default function Solo401kVsSepIraPage() {
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr className="border-b border-white/10 bg-white/5">
-                                            <td className="p-4 text-white font-medium">Roth Contributions</td>
+                                        <tr className="border-b border-slate-200 bg-slate-100">
+                                            <td className="p-4 text-slate-900 font-medium">Roth Contributions</td>
                                             <td className="p-4 text-center">
                                                 <span className="inline-flex items-center gap-1 text-green-400">
                                                     <CheckCircle className="w-4 h-4" /> Yes
@@ -122,8 +122,8 @@ export default function Solo401kVsSepIraPage() {
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr className="border-b border-white/10">
-                                            <td className="p-4 text-white font-medium">Loan Provision</td>
+                                        <tr className="border-b border-slate-200">
+                                            <td className="p-4 text-slate-900 font-medium">Loan Provision</td>
                                             <td className="p-4 text-center">
                                                 <span className="inline-flex items-center gap-1 text-green-400">
                                                     <CheckCircle className="w-4 h-4" /> Up to $50K
@@ -135,23 +135,23 @@ export default function Solo401kVsSepIraPage() {
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr className="border-b border-white/10 bg-white/5">
-                                            <td className="p-4 text-white font-medium">Setup Complexity</td>
+                                        <tr className="border-b border-slate-200 bg-slate-100">
+                                            <td className="p-4 text-slate-900 font-medium">Setup Complexity</td>
                                             <td className="p-4 text-center text-amber-300">Moderate</td>
                                             <td className="p-4 text-center text-green-400">Simple</td>
                                         </tr>
-                                        <tr className="border-b border-white/10">
-                                            <td className="p-4 text-white font-medium">Annual Filing Required</td>
-                                            <td className="p-4 text-center text-slate-300">Form 5500-EZ (if &gt;$250K)</td>
+                                        <tr className="border-b border-slate-200">
+                                            <td className="p-4 text-slate-900 font-medium">Annual Filing Required</td>
+                                            <td className="p-4 text-center text-slate-600">Form 5500-EZ (if &gt;$250K)</td>
                                             <td className="p-4 text-center text-green-400">None</td>
                                         </tr>
-                                        <tr className="border-b border-white/10 bg-white/5">
-                                            <td className="p-4 text-white font-medium">Can Have Employees</td>
-                                            <td className="p-4 text-center text-slate-300">No (except spouse)</td>
+                                        <tr className="border-b border-slate-200 bg-slate-100">
+                                            <td className="p-4 text-slate-900 font-medium">Can Have Employees</td>
+                                            <td className="p-4 text-center text-slate-600">No (except spouse)</td>
                                             <td className="p-4 text-center text-green-400">Yes (must cover all)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white font-medium">Best For</td>
+                                            <td className="p-4 text-slate-900 font-medium">Best For</td>
                                             <td className="p-4 text-center text-purple-300">Max savings, flexibility</td>
                                             <td className="p-4 text-center text-blue-300">Simplicity, businesses with employees</td>
                                         </tr>
@@ -164,13 +164,13 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* Contribution Comparison by Income */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-4 text-center">
                             Contribution Limits by Income Level
                         </h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                             The Solo 401k advantage is most significant at lower and moderate income levels.
                         </p>
 
@@ -185,13 +185,13 @@ export default function Solo401kVsSepIraPage() {
                             ].map((row, idx) => (
                                 <div
                                     key={idx}
-                                    className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 grid grid-cols-5 gap-4 items-center ${
+                                    className={`bg-slate-50 border border-slate-200 rounded-xl p-4 grid grid-cols-5 gap-4 items-center ${
                                         row.diff === "$0" ? "opacity-60" : ""
                                     }`}
                                 >
                                     <div>
-                                        <div className="text-xs text-slate-400 mb-1">Net SE Income</div>
-                                        <div className="text-white font-semibold">{row.income}</div>
+                                        <div className="text-xs text-slate-500 mb-1">Net SE Income</div>
+                                        <div className="text-slate-900 font-semibold">{row.income}</div>
                                     </div>
                                     <div className="text-center">
                                         <div className="text-xs text-purple-400 mb-1">Solo 401k</div>
@@ -202,14 +202,14 @@ export default function Solo401kVsSepIraPage() {
                                         <div className="text-blue-300 font-semibold">{row.sep}</div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-xs text-slate-400 mb-1">Solo 401k Advantage</div>
-                                        <div className={`font-bold ${row.diff === "$0" ? "text-slate-400" : "text-green-400"}`}>
+                                        <div className="text-xs text-slate-500 mb-1">Solo 401k Advantage</div>
+                                        <div className={`font-bold ${row.diff === "$0" ? "text-slate-500" : "text-green-400"}`}>
                                             {row.diff}
                                         </div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-xs text-slate-400 mb-1">More Savings</div>
-                                        <div className={`font-bold ${row.pct === "0%" ? "text-slate-400" : "text-green-400"}`}>
+                                        <div className="text-xs text-slate-500 mb-1">More Savings</div>
+                                        <div className={`font-bold ${row.pct === "0%" ? "text-slate-500" : "text-green-400"}`}>
                                             {row.pct}
                                         </div>
                                     </div>
@@ -217,7 +217,7 @@ export default function Solo401kVsSepIraPage() {
                             ))}
                         </div>
 
-                        <p className="text-slate-400 text-sm text-center mt-6">
+                        <p className="text-slate-500 text-sm text-center mt-6">
                             * Calculations for self-employed individuals under 50. Solo 401k includes $23,500 employee deferral + 20% employer contribution.
                         </p>
                     </div>
@@ -225,35 +225,35 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* Key Differences Explained */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-12 text-center">
                             Key Differences Explained
                         </h2>
 
                         <div className="space-y-8">
                             {/* Contribution Structure */}
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="flex items-start gap-4">
                                     <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
                                         <DollarSign className="w-6 h-6 text-purple-400" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-white mb-3">Contribution Structure</h3>
+                                        <h3 className="text-xl font-bold text-[#000080] mb-3">Contribution Structure</h3>
                                         <div className="grid md:grid-cols-2 gap-6">
                                             <div>
                                                 <h4 className="text-purple-400 font-semibold mb-2">Solo 401k</h4>
-                                                <p className="text-slate-400 text-sm">
-                                                    Allows <strong className="text-white">two types</strong> of contributions:
+                                                <p className="text-slate-500 text-sm">
+                                                    Allows <strong className="text-slate-900">two types</strong> of contributions:
                                                     employee deferrals (up to $23,500) plus employer profit-sharing (up to 25% of compensation).
                                                     This dual structure is why you can save more at lower income levels.
                                                 </p>
                                             </div>
                                             <div>
                                                 <h4 className="text-blue-400 font-semibold mb-2">SEP IRA</h4>
-                                                <p className="text-slate-400 text-sm">
-                                                    Only allows <strong className="text-white">employer contributions</strong> (up to 25% of compensation
+                                                <p className="text-slate-500 text-sm">
+                                                    Only allows <strong className="text-slate-900">employer contributions</strong> (up to 25% of compensation
                                                     or ~20% of net SE income). No employee deferral option means you need much higher income to
                                                     maximize contributions.
                                                 </p>
@@ -264,17 +264,17 @@ export default function Solo401kVsSepIraPage() {
                             </div>
 
                             {/* Roth Option */}
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="flex items-start gap-4">
                                     <div className="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center flex-shrink-0">
                                         <Shield className="w-6 h-6 text-green-400" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-white mb-3">Roth Contributions</h3>
+                                        <h3 className="text-xl font-bold text-[#000080] mb-3">Roth Contributions</h3>
                                         <div className="grid md:grid-cols-2 gap-6">
                                             <div>
                                                 <h4 className="text-purple-400 font-semibold mb-2">Solo 401k</h4>
-                                                <p className="text-slate-400 text-sm">
+                                                <p className="text-slate-500 text-sm">
                                                     <strong className="text-green-400">Roth option available.</strong> Your
                                                     employee deferrals ($23,500) can be designated as Roth contributions, growing
                                                     tax-free and providing tax-free withdrawals in retirement.
@@ -282,7 +282,7 @@ export default function Solo401kVsSepIraPage() {
                                             </div>
                                             <div>
                                                 <h4 className="text-blue-400 font-semibold mb-2">SEP IRA</h4>
-                                                <p className="text-slate-400 text-sm">
+                                                <p className="text-slate-500 text-sm">
                                                     <strong className="text-red-400">No Roth option.</strong> All SEP IRA
                                                     contributions are pre-tax only. If you want Roth benefits, you&apos;d need
                                                     a separate Roth IRA (with its lower $7,000 limit).
@@ -294,17 +294,17 @@ export default function Solo401kVsSepIraPage() {
                             </div>
 
                             {/* Loan Provision */}
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="flex items-start gap-4">
                                     <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0">
                                         <Banknote className="w-6 h-6 text-amber-400" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-white mb-3">Loan Provision</h3>
+                                        <h3 className="text-xl font-bold text-[#000080] mb-3">Loan Provision</h3>
                                         <div className="grid md:grid-cols-2 gap-6">
                                             <div>
                                                 <h4 className="text-purple-400 font-semibold mb-2">Solo 401k</h4>
-                                                <p className="text-slate-400 text-sm">
+                                                <p className="text-slate-500 text-sm">
                                                     <strong className="text-green-400">Loans allowed.</strong> Borrow up to
                                                     50% of your vested balance (max $50,000) without taxes or penalties.
                                                     Great for accessing funds in emergencies while keeping your retirement on track.
@@ -312,7 +312,7 @@ export default function Solo401kVsSepIraPage() {
                                             </div>
                                             <div>
                                                 <h4 className="text-blue-400 font-semibold mb-2">SEP IRA</h4>
-                                                <p className="text-slate-400 text-sm">
+                                                <p className="text-slate-500 text-sm">
                                                     <strong className="text-red-400">Loans not permitted.</strong> Any
                                                     withdrawal before age 59½ triggers income taxes plus a 10% early
                                                     withdrawal penalty (with limited exceptions).
@@ -324,17 +324,17 @@ export default function Solo401kVsSepIraPage() {
                             </div>
 
                             {/* Employees */}
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="flex items-start gap-4">
                                     <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                                         <Users className="w-6 h-6 text-blue-400" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-white mb-3">Having Employees</h3>
+                                        <h3 className="text-xl font-bold text-[#000080] mb-3">Having Employees</h3>
                                         <div className="grid md:grid-cols-2 gap-6">
                                             <div>
                                                 <h4 className="text-purple-400 font-semibold mb-2">Solo 401k</h4>
-                                                <p className="text-slate-400 text-sm">
+                                                <p className="text-slate-500 text-sm">
                                                     <strong className="text-amber-400">Solo owners only.</strong> You cannot
                                                     have employees (other than a spouse). If you hire employees, you&apos;ll need
                                                     to convert to a traditional 401k or use a different plan.
@@ -342,7 +342,7 @@ export default function Solo401kVsSepIraPage() {
                                             </div>
                                             <div>
                                                 <h4 className="text-blue-400 font-semibold mb-2">SEP IRA</h4>
-                                                <p className="text-slate-400 text-sm">
+                                                <p className="text-slate-500 text-sm">
                                                     <strong className="text-green-400">Can have employees.</strong> However,
                                                     you must provide the same contribution percentage to all eligible employees.
                                                     If you contribute 20% for yourself, employees get 20% too.
@@ -358,10 +358,10 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* Who Should Choose What */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-12 text-center">
                             Which Plan Is Right For You?
                         </h2>
 
@@ -372,29 +372,29 @@ export default function Solo401kVsSepIraPage() {
                                     <div className="w-12 h-12 rounded-xl bg-purple-500/30 flex items-center justify-center">
                                         <Trophy className="w-6 h-6 text-purple-400" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white">Choose Solo 401k If...</h3>
+                                    <h3 className="text-xl font-bold text-slate-900">Choose Solo 401k If...</h3>
                                 </div>
 
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You want to <strong className="text-white">maximize contributions</strong> at lower income levels</span>
+                                        <span className="text-slate-600">You want to <strong className="text-slate-900">maximize contributions</strong> at lower income levels</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You want <strong className="text-white">Roth contribution</strong> options for tax-free growth</span>
+                                        <span className="text-slate-600">You want <strong className="text-slate-900">Roth contribution</strong> options for tax-free growth</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You value the ability to <strong className="text-white">take loans</strong> from your retirement funds</span>
+                                        <span className="text-slate-600">You value the ability to <strong className="text-slate-900">take loans</strong> from your retirement funds</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You&apos;re <strong className="text-white">50 or older</strong> and want catch-up contributions</span>
+                                        <span className="text-slate-600">You&apos;re <strong className="text-slate-900">50 or older</strong> and want catch-up contributions</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You have <strong className="text-white">no employees</strong> (or only a spouse)</span>
+                                        <span className="text-slate-600">You have <strong className="text-slate-900">no employees</strong> (or only a spouse)</span>
                                     </li>
                                 </ul>
 
@@ -408,34 +408,34 @@ export default function Solo401kVsSepIraPage() {
                             </div>
 
                             {/* Choose SEP IRA */}
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center">
                                         <Briefcase className="w-6 h-6 text-blue-400" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white">Choose SEP IRA If...</h3>
+                                    <h3 className="text-xl font-bold text-slate-900">Choose SEP IRA If...</h3>
                                 </div>
 
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You prioritize <strong className="text-white">simplicity</strong> over flexibility</span>
+                                        <span className="text-slate-600">You prioritize <strong className="text-slate-900">simplicity</strong> over flexibility</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You have <strong className="text-white">employees</strong> and want a retirement plan for them</span>
+                                        <span className="text-slate-600">You have <strong className="text-slate-900">employees</strong> and want a retirement plan for them</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You have <strong className="text-white">very high income</strong> ($350K+) where limits are equal</span>
+                                        <span className="text-slate-600">You have <strong className="text-slate-900">very high income</strong> ($350K+) where limits are equal</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You want to <strong className="text-white">avoid paperwork</strong> (no Form 5500)</span>
+                                        <span className="text-slate-600">You want to <strong className="text-slate-900">avoid paperwork</strong> (no Form 5500)</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                                        <span className="text-slate-300">You need to <strong className="text-white">set up quickly</strong> before tax deadline</span>
+                                        <span className="text-slate-600">You need to <strong className="text-slate-900">set up quickly</strong> before tax deadline</span>
                                     </li>
                                 </ul>
 
@@ -453,26 +453,26 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* Can You Have Both? */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <div className="w-16 h-16 rounded-2xl bg-amber-500/20 flex items-center justify-center mx-auto mb-6">
                             <Building2 className="w-8 h-8 text-amber-400" />
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-4">
                             Can You Have Both a Solo 401k and SEP IRA?
                         </h2>
-                        <p className="text-slate-300 mb-8 leading-relaxed">
+                        <p className="text-slate-600 mb-8 leading-relaxed">
                             Technically yes, but it rarely makes sense. If you have both plans for the same business,
                             your total employer contributions across both plans are limited to 25% of compensation.
                             You don&apos;t get double the employer contribution limit.
                         </p>
                         <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6 text-left">
                             <p className="text-amber-200 font-medium mb-2">When it might make sense:</p>
-                            <ul className="text-slate-400 text-sm space-y-2">
-                                <li>• You have <strong className="text-white">two separate businesses</strong> - one with employees (SEP) and one solo (Solo 401k)</li>
-                                <li>• You&apos;re <strong className="text-white">transitioning</strong> from a SEP IRA to a Solo 401k</li>
-                                <li>• You want to <strong className="text-white">consolidate old SEP funds</strong> into a Solo 401k</li>
+                            <ul className="text-slate-500 text-sm space-y-2">
+                                <li>• You have <strong className="text-slate-900">two separate businesses</strong> - one with employees (SEP) and one solo (Solo 401k)</li>
+                                <li>• You&apos;re <strong className="text-slate-900">transitioning</strong> from a SEP IRA to a Solo 401k</li>
+                                <li>• You want to <strong className="text-slate-900">consolidate old SEP funds</strong> into a Solo 401k</li>
                             </ul>
                         </div>
                     </div>
@@ -480,13 +480,13 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-gradient-to-br from-purple-900/30 via-slate-900 to-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-4">
                             Ready to Maximize Your Self-Employed Retirement?
                         </h2>
-                        <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                        <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
                             For most self-employed individuals, a Solo 401k offers more flexibility and higher
                             contribution potential. Get expert guidance on setting up your plan.
                         </p>

@@ -51,13 +51,13 @@ const schema = {
 
 export default function RoslandLawsuitPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
+            <header className="bg-[#000080] text-white py-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-amber-500/20 border border-amber-500/30 text-sm font-semibold text-amber-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#B22234]/20 border border-[#B22234]/30 text-sm font-semibold text-red-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <Gavel className="w-4 h-4" /> Legal Investigation
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
@@ -77,7 +77,7 @@ export default function RoslandLawsuitPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
 
                         <p className="lead">
                             <strong>You&apos;re doing your homework—good.</strong> After decades of hard work, you&apos;ve earned the right to question everything. So you searched &quot;Rosland Capital lawsuit&quot; and found us. Here&apos;s the straight story: they DID have regulatory problems—a settlement with the CFTC. We&apos;ll give you the facts, not spin.
@@ -136,20 +136,20 @@ export default function RoslandLawsuitPage() {
                         <section id="safety" className="scroll-mt-32">
                             <h2>Is Rosland Capital Safe Today?</h2>
                             <div className="not-prose my-8 grid md:grid-cols-3 gap-6">
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-4xl font-bold text-primary mb-2">A+</div>
-                                    <div className="text-sm text-gray-600">BBB Rating</div>
-                                    <div className="text-xs text-gray-400 mt-1">Still Maintained</div>
+                                <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-[#000080] mb-2">A+</div>
+                                    <div className="text-sm text-slate-600">BBB Rating</div>
+                                    <div className="text-xs text-slate-400 mt-1">Still Maintained</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-amber-200 text-center">
+                                <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-amber-200 text-center">
                                     <div className="text-4xl font-bold text-amber-600 mb-2">1</div>
-                                    <div className="text-sm text-gray-600">CFTC Settlement</div>
-                                    <div className="text-xs text-gray-400 mt-1">Resolved</div>
+                                    <div className="text-sm text-slate-600">CFTC Settlement</div>
+                                    <div className="text-xs text-slate-400 mt-1">Resolved</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-4xl font-bold text-primary mb-2">$2k</div>
-                                    <div className="text-sm text-gray-600">Minimum</div>
-                                    <div className="text-xs text-gray-400 mt-1">Low Barrier</div>
+                                <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-[#000080] mb-2">$2k</div>
+                                    <div className="text-sm text-slate-600">Minimum</div>
+                                    <div className="text-xs text-slate-400 mt-1">Low Barrier</div>
                                 </div>
                             </div>
 
@@ -178,32 +178,32 @@ export default function RoslandLawsuitPage() {
                                 If you&apos;re considering Rosland Capital despite their history, here&apos;s how to protect yourself:
                             </p>
                             <div className="not-prose grid gap-3 my-6">
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Only buy standard bullion</h4>
-                                        <p className="text-gray-600 text-sm">American Gold Eagles, Canadian Maple Leafs, or gold/silver bars. Avoid &quot;exclusive,&quot; &quot;proof,&quot; or &quot;collectible&quot; coins.</p>
+                                        <h4 className="font-bold text-slate-900">Only buy standard bullion</h4>
+                                        <p className="text-slate-600 text-sm">American Gold Eagles, Canadian Maple Leafs, or gold/silver bars. Avoid &quot;exclusive,&quot; &quot;proof,&quot; or &quot;collectible&quot; coins.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Get the spread in writing</h4>
-                                        <p className="text-gray-600 text-sm">Before you buy, ask: &quot;What is the premium above spot price, and what would you pay me if I sold this back tomorrow?&quot;</p>
+                                        <h4 className="font-bold text-slate-900">Get the spread in writing</h4>
+                                        <p className="text-slate-600 text-sm">Before you buy, ask: &quot;What is the premium above spot price, and what would you pay me if I sold this back tomorrow?&quot;</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Don&apos;t succumb to urgency</h4>
-                                        <p className="text-gray-600 text-sm">If a sales rep says &quot;this deal expires today,&quot; it&apos;s a tactic. Legitimate offers can wait while you do your research.</p>
+                                        <h4 className="font-bold text-slate-900">Don&apos;t succumb to urgency</h4>
+                                        <p className="text-slate-600 text-sm">If a sales rep says &quot;this deal expires today,&quot; it&apos;s a tactic. Legitimate offers can wait while you do your research.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Compare prices</h4>
-                                        <p className="text-gray-600 text-sm">Get quotes from multiple companies before committing. A 5% difference in spread adds up quickly on large purchases.</p>
+                                        <h4 className="font-bold text-slate-900">Compare prices</h4>
+                                        <p className="text-slate-600 text-sm">Get quotes from multiple companies before committing. A 5% difference in spread adds up quickly on large purchases.</p>
                                     </div>
                                 </div>
                             </div>
@@ -216,9 +216,9 @@ export default function RoslandLawsuitPage() {
                                 There are companies with cleaner regulatory histories that offer similar or better service:
                             </p>
                             <ul>
-                                <li><Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link> – Zero BBB complaints, education-first approach, but $50k minimum</li>
-                                <li><Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> – A+ BBB, $25k minimum, strong buyback program</li>
-                                <li><Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> – Clean record, $20k minimum, Texas storage option</li>
+                                <li><Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta Precious Metals</Link> – Zero BBB complaints, education-first approach, but $50k minimum</li>
+                                <li><Link href="/reviews/goldco" className="text-[#B22234] hover:underline">Goldco</Link> – A+ BBB, $25k minimum, strong buyback program</li>
+                                <li><Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> – Clean record, $20k minimum, Texas storage option</li>
                             </ul>
                         </section>
 
@@ -235,13 +235,13 @@ export default function RoslandLawsuitPage() {
                                 Honestly? For most working folks looking to protect their retirement savings, <strong>there are better options</strong> with cleaner records. Companies that don&apos;t have a history of regulatory problems and don&apos;t push expensive collectibles.
                             </p>
                             <p>
-                                For our full company assessment, see our <Link href="/reviews/rosland-capital" className="text-secondary hover:underline">Rosland Capital Review</Link>.
+                                For our full company assessment, see our <Link href="/reviews/rosland-capital" className="text-[#B22234] hover:underline">Rosland Capital Review</Link>.
                             </p>
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want a Cleaner Alternative?</h3>
                                 <p className="mb-6 text-gray-200">Companies with zero regulatory actions and transparent pricing.</p>

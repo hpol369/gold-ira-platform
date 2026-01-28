@@ -98,7 +98,7 @@ export function CompanyHero({ company }: CompanyHeroProps) {
                   "inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all",
                   isFeatured
                     ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
-                    : "bg-slate-900 text-white hover:bg-slate-800"
+                    : "bg-[#000080] text-white hover:bg-[#000060]"
                 )}
               >
                 Visit {company.name}

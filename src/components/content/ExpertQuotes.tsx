@@ -42,21 +42,21 @@ export function ExpertQuotes({
     const quote = quotes[0];
     return (
       <div
-        className={`bg-gradient-to-br from-slate-800 to-slate-900 border border-white/10 rounded-2xl p-6 md:p-8 ${className}`}
+        className={`bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 md:p-8 ${className}`}
       >
-        <Quote className="h-8 w-8 text-amber-400/30 mb-4" />
-        <blockquote className="text-xl md:text-2xl text-white font-medium italic leading-relaxed mb-6">
+        <Quote className="h-8 w-8 text-[#B22234]/30 mb-4" />
+        <blockquote className="text-xl md:text-2xl text-[#000080] font-medium italic leading-relaxed mb-6">
           &ldquo;{quote.quote}&rdquo;
         </blockquote>
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center">
-            <span className="text-amber-400 font-bold text-lg">
+          <div className="w-12 h-12 bg-[#B22234]/10 rounded-full flex items-center justify-center">
+            <span className="text-[#B22234] font-bold text-lg">
               {quote.author[0]}
             </span>
           </div>
           <div>
-            <div className="text-white font-semibold">{quote.author}</div>
-            <div className="text-slate-400 text-sm">
+            <div className="text-[#000080] font-semibold">{quote.author}</div>
+            <div className="text-slate-500 text-sm">
               {quote.title}
               {quote.organization && `, ${quote.organization}`}
             </div>
@@ -73,20 +73,20 @@ export function ExpertQuotes({
         {quotes.map((quote) => (
           <div
             key={quote.id}
-            className="bg-white/5 border border-white/10 rounded-xl p-6"
+            className="bg-slate-50 border border-slate-200 rounded-xl p-6"
           >
-            <Quote className="h-6 w-6 text-amber-400/30 mb-3" />
-            <blockquote className="text-slate-300 italic mb-4 line-clamp-4">
+            <Quote className="h-6 w-6 text-[#B22234]/30 mb-3" />
+            <blockquote className="text-slate-600 italic mb-4 line-clamp-4">
               &ldquo;{quote.quote}&rdquo;
             </blockquote>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-amber-400 font-bold text-sm">
+              <div className="w-10 h-10 bg-[#B22234]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-[#B22234] font-bold text-sm">
                   {quote.author[0]}
                 </span>
               </div>
               <div>
-                <div className="text-white text-sm font-semibold">
+                <div className="text-[#000080] text-sm font-semibold">
                   {quote.author}
                 </div>
                 <div className="text-slate-500 text-xs">{quote.title}</div>
@@ -105,13 +105,13 @@ export function ExpertQuotes({
         {quotes.map((quote) => (
           <div
             key={quote.id}
-            className="bg-white/5 border border-white/10 rounded-xl p-5 w-80 flex-shrink-0"
+            className="bg-slate-50 border border-slate-200 rounded-xl p-5 w-80 flex-shrink-0"
           >
-            <Quote className="h-5 w-5 text-amber-400/30 mb-2" />
-            <blockquote className="text-slate-300 text-sm italic mb-3 line-clamp-3">
+            <Quote className="h-5 w-5 text-[#B22234]/30 mb-2" />
+            <blockquote className="text-slate-600 text-sm italic mb-3 line-clamp-3">
               &ldquo;{quote.quote}&rdquo;
             </blockquote>
-            <div className="text-white text-sm font-semibold">
+            <div className="text-[#000080] text-sm font-semibold">
               — {quote.author}
             </div>
           </div>
@@ -127,8 +127,8 @@ export function InlineQuote({ quoteId }: { quoteId: string }) {
   if (!quote) return null;
 
   return (
-    <blockquote className="border-l-4 border-amber-500 pl-4 my-6 py-2">
-      <p className="text-slate-300 italic">&ldquo;{quote.quote}&rdquo;</p>
+    <blockquote className="border-l-4 border-[#B22234] pl-4 my-6 py-2">
+      <p className="text-slate-600 italic">&ldquo;{quote.quote}&rdquo;</p>
       <footer className="text-slate-500 text-sm mt-2">
         — {quote.author}, {quote.title}
       </footer>

@@ -113,7 +113,7 @@ const faqSchema = {
 
 export default function PensionVsLumpSumCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -122,10 +122,10 @@ export default function PensionVsLumpSumCalculatorPage() {
       <PensionVsLumpSumCalculator />
 
       {/* Important Facts */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Key Factors in Your Pension Decision
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -134,17 +134,17 @@ export default function PensionVsLumpSumCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-blue-400" />
+                        <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -158,26 +158,26 @@ export default function PensionVsLumpSumCalculatorPage() {
       </section>
 
       {/* Inflation Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                 The Hidden Danger: Inflation Erosion
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
+              <p className="text-slate-600 max-w-2xl mx-auto">
                 Most pensions have no Cost-of-Living Adjustment. Here&apos;s what that means for your purchasing power over time.
               </p>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 overflow-x-auto">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/10">
-                    <th className="px-4 py-3 text-left text-slate-300">Years</th>
-                    <th className="px-4 py-3 text-right text-slate-300">$2,500/mo Pension</th>
-                    <th className="px-4 py-3 text-right text-slate-300">Real Value (3% Inflation)</th>
-                    <th className="px-4 py-3 text-right text-slate-300">Lost Purchasing Power</th>
+                  <tr className="border-b border-slate-200">
+                    <th className="px-4 py-3 text-left text-slate-600">Years</th>
+                    <th className="px-4 py-3 text-right text-slate-600">$2,500/mo Pension</th>
+                    <th className="px-4 py-3 text-right text-slate-600">Real Value (3% Inflation)</th>
+                    <th className="px-4 py-3 text-right text-slate-600">Lost Purchasing Power</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -185,11 +185,11 @@ export default function PensionVsLumpSumCalculatorPage() {
                     const realValue = Math.round(2500 / Math.pow(1.03, years));
                     const lost = 2500 - realValue;
                     return (
-                      <tr key={years} className="border-b border-white/5">
-                        <td className="px-4 py-3 text-white">{years} years</td>
-                        <td className="px-4 py-3 text-right text-slate-400">$2,500</td>
-                        <td className="px-4 py-3 text-right text-amber-400">${realValue.toLocaleString()}</td>
-                        <td className="px-4 py-3 text-right text-red-400">-${lost.toLocaleString()}</td>
+                      <tr key={years} className="border-b border-slate-200">
+                        <td className="px-4 py-3text-slate-900">{years} years</td>
+                        <td className="px-4 py-3 text-right text-slate-500">$2,500</td>
+                        <td className="px-4 py-3 text-right text-[#B22234]">${realValue.toLocaleString()}</td>
+                        <td className="px-4 py-3 text-right text-red-600">-${lost.toLocaleString()}</td>
                       </tr>
                     );
                   })}
@@ -200,14 +200,14 @@ export default function PensionVsLumpSumCalculatorPage() {
               </p>
             </div>
 
-            <div className="mt-8 bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
+            <div className="mt-8 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
               <div className="flex items-start gap-4">
-                <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-white font-semibold mb-2">
+                  <h4 className="text-slate-900 font-semibold mb-2">
                     Why Gold Protects What Pensions Can&apos;t
                   </h4>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     If you take the lump sum and roll it into a Gold IRA, physical gold can help maintain purchasing power as inflation rises. Gold has historically increased in value during inflationary periods, offering protection that fixed pensions cannot provide.
                   </p>
                 </div>
@@ -218,10 +218,10 @@ export default function PensionVsLumpSumCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Pension vs Lump Sum FAQ
             </h2>
 
@@ -250,16 +250,16 @@ export default function PensionVsLumpSumCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -269,17 +269,17 @@ export default function PensionVsLumpSumCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-800/30">
+      <section className="py-8 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates based on the inputs you provide. Actual results may vary based on investment performance, inflation rates, tax changes, and other factors. The pension vs lump sum decision is complex and depends on your personal circumstances. We recommend consulting with a qualified financial advisor before making this decision. This is not financial or tax advice.
                   </p>
                 </div>
@@ -290,7 +290,7 @@ export default function PensionVsLumpSumCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

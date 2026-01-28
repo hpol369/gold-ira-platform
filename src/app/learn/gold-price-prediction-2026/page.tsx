@@ -98,21 +98,21 @@ const bearishFactors = [
 
 export default function GoldPricePrediction2026Page() {
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
             {/* Header */}
-            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24 border-b border-white/10">
+            <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
                 <Container>
                     <div className="max-w-3xl">
-                        <div className="flex items-center gap-2 text-amber-400 font-bold tracking-widest uppercase text-xs mb-4">
+                        <div className="flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
                             <BarChart3 className="h-4 w-4" />
                             Market Analysis
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">
                             Gold Price Prediction 2026
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             Everyone wants to know where gold is headed. Here&apos;s what the big banks are saying, what&apos;s actually driving prices, and why you shouldn&apos;t wait for the &quot;perfect&quot; moment to protect your retirement.
                         </p>
                         <p className="text-sm text-slate-500 mt-4">Last Updated: January 2026</p>
@@ -121,32 +121,32 @@ export default function GoldPricePrediction2026Page() {
             </header>
 
             {/* Current Price Banner */}
-            <section className="bg-amber-500/10 border-b border-amber-500/30 py-6">
+            <section className="bg-[#B22234]/10 border-b border-[#B22234]/30 py-6">
                 <Container>
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4 max-w-4xl mx-auto">
                         <div className="text-center md:text-left">
-                            <p className="text-amber-300 text-sm">Current Gold Spot Price</p>
-                            <p className="text-3xl font-bold text-white">~$2,750/oz</p>
+                            <p className="text-[#B22234] text-sm">Current Gold Spot Price</p>
+                            <p className="text-3xl font-bold text-[#000080]">~$2,750/oz</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-amber-300 text-sm">2025 Performance</p>
-                            <p className="text-2xl font-bold text-green-400">+27%</p>
+                            <p className="text-[#B22234] text-sm">2025 Performance</p>
+                            <p className="text-2xl font-bold text-green-600">+27%</p>
                         </div>
                         <div className="text-center md:text-right">
-                            <p className="text-amber-300 text-sm">Consensus 2026 Target</p>
-                            <p className="text-3xl font-bold text-amber-400">$2,800 - $3,100</p>
+                            <p className="text-[#B22234] text-sm">Consensus 2026 Target</p>
+                            <p className="text-3xl font-bold text-[#B22234]">$2,800 - $3,100</p>
                         </div>
                     </div>
                 </Container>
             </section>
 
             {/* Disclaimer */}
-            <section className="py-6 bg-slate-800/50">
+            <section className="py-6 bg-slate-50 border-b border-slate-200">
                 <Container>
                     <div className="flex items-center gap-4 max-w-4xl mx-auto">
-                        <AlertTriangle className="h-6 w-6 text-amber-400 shrink-0" />
-                        <p className="text-slate-400 text-sm">
-                            <strong className="text-white">Disclaimer:</strong> Price predictions are speculative. No one can accurately predict future gold prices. This analysis is for educational purposes only, not investment advice.
+                        <AlertTriangle className="h-6 w-6 text-[#B22234] shrink-0" />
+                        <p className="text-slate-500 text-sm">
+                            <strong className="text-[#000080]">Disclaimer:</strong> Price predictions are speculative. No one can accurately predict future gold prices. This analysis is for educational purposes only, not investment advice.
                         </p>
                     </div>
                 </Container>
@@ -159,24 +159,24 @@ export default function GoldPricePrediction2026Page() {
 
                         {/* Expert Predictions */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-8">What the Experts Predict</h2>
-                            <p className="text-slate-300 mb-8">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-8">What the Experts Predict</h2>
+                            <p className="text-slate-600 mb-8">
                                 Major financial institutions have released their 2026 gold price forecasts. Here&apos;s what they&apos;re saying:
                             </p>
 
                             <div className="space-y-4">
                                 {predictions.map((pred, i) => (
-                                    <div key={i} className={`bg-white/5 border rounded-xl p-6 ${pred.stance === 'bullish' ? 'border-green-500/30' : 'border-white/10'}`}>
+                                    <div key={i} className={`bg-white border rounded-xl p-6 shadow-sm ${pred.stance === 'bullish' ? 'border-green-200' : 'border-slate-200'}`}>
                                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                                             <div>
-                                                <h3 className="text-xl font-bold text-white">{pred.source}</h3>
-                                                <p className="text-slate-400 text-sm">{pred.reasoning}</p>
+                                                <h3 className="text-xl font-bold text-[#000080]">{pred.source}</h3>
+                                                <p className="text-slate-500 text-sm">{pred.reasoning}</p>
                                             </div>
                                             <div className="text-right">
-                                                <p className={`text-2xl font-bold ${pred.stance === 'bullish' ? 'text-green-400' : 'text-amber-400'}`}>
+                                                <p className={`text-2xl font-bold ${pred.stance === 'bullish' ? 'text-green-600' : 'text-[#B22234]'}`}>
                                                     {pred.prediction}
                                                 </p>
-                                                <p className={`text-xs uppercase tracking-wide ${pred.stance === 'bullish' ? 'text-green-400' : 'text-amber-400'}`}>
+                                                <p className={`text-xs uppercase tracking-wide ${pred.stance === 'bullish' ? 'text-green-600' : 'text-[#B22234]'}`}>
                                                     {pred.stance}
                                                 </p>
                                             </div>
@@ -193,20 +193,20 @@ export default function GoldPricePrediction2026Page() {
                         {/* Bullish Factors */}
                         <div className="mb-16">
                             <div className="flex items-center gap-3 mb-8">
-                                <div className="p-3 bg-green-500/20 rounded-xl">
-                                    <TrendingUp className="h-6 w-6 text-green-400" />
+                                <div className="p-3 bg-green-100 rounded-xl">
+                                    <TrendingUp className="h-6 w-6 text-green-600" />
                                 </div>
-                                <h2 className="text-3xl font-bold text-white">Factors That Could Push Gold Higher</h2>
+                                <h2 className="text-3xl font-bold text-[#000080]">Factors That Could Push Gold Higher</h2>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 {bullishFactors.map((factor, i) => (
-                                    <div key={i} className="bg-green-500/5 border border-green-500/20 rounded-xl p-6">
+                                    <div key={i} className="bg-green-50 border border-green-200 rounded-xl p-6">
                                         <div className="flex items-center gap-3 mb-3">
-                                            <factor.icon className="h-5 w-5 text-green-400" />
-                                            <h3 className="font-bold text-white">{factor.title}</h3>
+                                            <factor.icon className="h-5 w-5 text-green-600" />
+                                            <h3 className="font-bold text-[#000080]">{factor.title}</h3>
                                         </div>
-                                        <p className="text-slate-300 text-sm">{factor.description}</p>
+                                        <p className="text-slate-600 text-sm">{factor.description}</p>
                                     </div>
                                 ))}
                             </div>
@@ -215,20 +215,20 @@ export default function GoldPricePrediction2026Page() {
                         {/* Bearish Factors */}
                         <div className="mb-16">
                             <div className="flex items-center gap-3 mb-8">
-                                <div className="p-3 bg-red-500/20 rounded-xl">
-                                    <TrendingDown className="h-6 w-6 text-red-400" />
+                                <div className="p-3 bg-red-100 rounded-xl">
+                                    <TrendingDown className="h-6 w-6 text-red-600" />
                                 </div>
-                                <h2 className="text-3xl font-bold text-white">Factors That Could Pressure Gold</h2>
+                                <h2 className="text-3xl font-bold text-[#000080]">Factors That Could Pressure Gold</h2>
                             </div>
 
                             <div className="grid md:grid-cols-3 gap-6">
                                 {bearishFactors.map((factor, i) => (
-                                    <div key={i} className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
+                                    <div key={i} className="bg-red-50 border border-red-200 rounded-xl p-6">
                                         <div className="flex items-center gap-3 mb-3">
-                                            <factor.icon className="h-5 w-5 text-red-400" />
-                                            <h3 className="font-bold text-white">{factor.title}</h3>
+                                            <factor.icon className="h-5 w-5 text-red-600" />
+                                            <h3 className="font-bold text-[#000080]">{factor.title}</h3>
                                         </div>
-                                        <p className="text-slate-300 text-sm">{factor.description}</p>
+                                        <p className="text-slate-600 text-sm">{factor.description}</p>
                                     </div>
                                 ))}
                             </div>
@@ -236,36 +236,36 @@ export default function GoldPricePrediction2026Page() {
 
                         {/* Historical Context */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">Historical Context</h2>
-                            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                                <h4 className="font-bold text-white mb-4">Gold&apos;s Recent Performance</h4>
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Historical Context</h2>
+                            <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                                <h4 className="font-bold text-[#000080] mb-4">Gold&apos;s Recent Performance</h4>
                                 <div className="space-y-4">
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">2020</span>
-                                        <span className="text-green-400 font-bold">+24.6%</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg border border-slate-200">
+                                        <span className="text-slate-600">2020</span>
+                                        <span className="text-green-600 font-bold">+24.6%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">2021</span>
-                                        <span className="text-red-400 font-bold">-3.6%</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg border border-slate-200">
+                                        <span className="text-slate-600">2021</span>
+                                        <span className="text-red-600 font-bold">-3.6%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">2022</span>
-                                        <span className="text-red-400 font-bold">-0.3%</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg border border-slate-200">
+                                        <span className="text-slate-600">2022</span>
+                                        <span className="text-red-600 font-bold">-0.3%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">2023</span>
-                                        <span className="text-green-400 font-bold">+13.1%</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg border border-slate-200">
+                                        <span className="text-slate-600">2023</span>
+                                        <span className="text-green-600 font-bold">+13.1%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">2024</span>
-                                        <span className="text-green-400 font-bold">+27.2%</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg border border-slate-200">
+                                        <span className="text-slate-600">2024</span>
+                                        <span className="text-green-600 font-bold">+27.2%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/30">
-                                        <span className="text-amber-300">2025 YTD</span>
-                                        <span className="text-green-400 font-bold">+4.8%</span>
+                                    <div className="flex justify-between items-center p-3 bg-[#B22234]/10 rounded-lg border border-[#B22234]/30">
+                                        <span className="text-[#B22234]">2025 YTD</span>
+                                        <span className="text-green-600 font-bold">+4.8%</span>
                                     </div>
                                 </div>
-                                <p className="text-slate-400 text-sm mt-4">
+                                <p className="text-slate-500 text-sm mt-4">
                                     Gold has delivered positive returns in 4 of the last 5 years, with 2024 being an exceptionally strong year.
                                 </p>
                             </div>
@@ -273,35 +273,35 @@ export default function GoldPricePrediction2026Page() {
 
                         {/* Key Events to Watch */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">Key Events to Watch in 2026</h2>
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Key Events to Watch in 2026</h2>
                             <div className="space-y-4">
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                                    <h3 className="font-bold text-white mb-2">Federal Reserve Policy</h3>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                                    <h3 className="font-bold text-[#000080] mb-2">Federal Reserve Policy</h3>
+                                    <p className="text-slate-600 text-sm">
                                         The pace and magnitude of rate cuts will significantly impact gold. More cuts = bullish for gold. Fewer cuts = headwind.
                                     </p>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                                    <h3 className="font-bold text-white mb-2">US Dollar Strength</h3>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                                    <h3 className="font-bold text-[#000080] mb-2">US Dollar Strength</h3>
+                                    <p className="text-slate-600 text-sm">
                                         Gold typically moves inversely to the dollar. Watch the DXY index—weakness in the dollar supports higher gold prices.
                                     </p>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                                    <h3 className="font-bold text-white mb-2">Central Bank Purchases</h3>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                                    <h3 className="font-bold text-[#000080] mb-2">Central Bank Purchases</h3>
+                                    <p className="text-slate-600 text-sm">
                                         China, Russia, and other central banks have been aggressive buyers. Continued accumulation supports prices.
                                     </p>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                                    <h3 className="font-bold text-white mb-2">Geopolitical Developments</h3>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                                    <h3 className="font-bold text-[#000080] mb-2">Geopolitical Developments</h3>
+                                    <p className="text-slate-600 text-sm">
                                         Escalation in global conflicts or trade tensions typically drives safe-haven demand for gold.
                                     </p>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                                    <h3 className="font-bold text-white mb-2">Inflation Data</h3>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                                    <h3 className="font-bold text-[#000080] mb-2">Inflation Data</h3>
+                                    <p className="text-slate-600 text-sm">
                                         Persistent inflation above the Fed&apos;s 2% target would be bullish for gold as an inflation hedge.
                                     </p>
                                 </div>
@@ -310,28 +310,28 @@ export default function GoldPricePrediction2026Page() {
 
                         {/* What This Means For You */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">What This Means If You&apos;re Near Retirement</h2>
-                            <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-8">
-                                <p className="text-slate-300 mb-6">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">What This Means If You&apos;re Near Retirement</h2>
+                            <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-2xl p-8">
+                                <p className="text-slate-600 mb-6">
                                     Here&apos;s the truth after 30+ years of watching markets: price predictions are a guessing game. But protecting what you&apos;ve built isn&apos;t about timing. Here&apos;s what matters:
                                 </p>
-                                <ul className="space-y-4 text-slate-300">
+                                <ul className="space-y-4 text-slate-600">
                                     <li className="flex items-start gap-3">
-                                        <Shield className="h-5 w-5 text-amber-400 mt-1 shrink-0" />
+                                        <Shield className="h-5 w-5 text-[#B22234] mt-1 shrink-0" />
                                         <div>
-                                            <strong className="text-white">Gold is insurance, not speculation.</strong> Focus on portfolio protection, not short-term price movements.
+                                            <strong className="text-[#000080]">Gold is insurance, not speculation.</strong> Focus on portfolio protection, not short-term price movements.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <BarChart3 className="h-5 w-5 text-amber-400 mt-1 shrink-0" />
+                                        <BarChart3 className="h-5 w-5 text-[#B22234] mt-1 shrink-0" />
                                         <div>
-                                            <strong className="text-white">Time in market beats timing the market.</strong> Dollar-cost averaging smooths out volatility.
+                                            <strong className="text-[#000080]">Time in market beats timing the market.</strong> Dollar-cost averaging smooths out volatility.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <Globe className="h-5 w-5 text-amber-400 mt-1 shrink-0" />
+                                        <Globe className="h-5 w-5 text-[#B22234] mt-1 shrink-0" />
                                         <div>
-                                            <strong className="text-white">Think long-term.</strong> Gold&apos;s value is in wealth preservation over decades, not months.
+                                            <strong className="text-[#000080]">Think long-term.</strong> Gold&apos;s value is in wealth preservation over decades, not months.
                                         </div>
                                     </li>
                                 </ul>
@@ -340,18 +340,18 @@ export default function GoldPricePrediction2026Page() {
 
                         {/* Our Take */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">Our Take</h2>
-                            <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
-                                <p className="text-slate-300 mb-4">
-                                    The consensus among major institutions is <strong className="text-green-400">moderately bullish</strong> for gold in 2026. Multiple structural factors support higher prices:
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Our Take</h2>
+                            <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+                                <p className="text-slate-600 mb-4">
+                                    The consensus among major institutions is <strong className="text-green-600">moderately bullish</strong> for gold in 2026. Multiple structural factors support higher prices:
                                 </p>
-                                <ul className="list-disc list-inside space-y-2 text-slate-300 mb-6">
+                                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-6">
                                     <li>Central banks continue to accumulate gold at record pace</li>
                                     <li>Geopolitical uncertainty remains elevated</li>
                                     <li>US national debt concerns growing</li>
                                     <li>De-dollarization trend accelerating</li>
                                 </ul>
-                                <p className="text-slate-300">
+                                <p className="text-slate-600">
                                     However, remember that experts have been wrong before—in both directions. The smartest approach is to allocate what makes sense for your risk tolerance and time horizon, regardless of short-term predictions.
                                 </p>
                             </div>
@@ -377,21 +377,21 @@ export default function GoldPricePrediction2026Page() {
             </section>
 
             {/* Related Content */}
-            <section className="py-12 bg-slate-800/50 border-t border-white/10">
+            <section className="py-12 bg-slate-50 border-t border-slate-200">
                 <Container>
-                    <h2 className="text-2xl font-bold text-white mb-8 text-center">Related Analysis</h2>
+                    <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">Related Analysis</h2>
                     <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        <Link href="/why-gold/central-banks-buying-gold" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-amber-500/50 transition-all">
-                            <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Why Central Banks Buy Gold</h3>
-                            <p className="text-slate-400 text-sm">Record accumulation explained</p>
+                        <Link href="/why-gold/central-banks-buying-gold" className="group bg-white border border-slate-200 rounded-xl p-6 hover:border-[#B22234]/50 transition-all shadow-sm">
+                            <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Why Central Banks Buy Gold</h3>
+                            <p className="text-slate-500 text-sm">Record accumulation explained</p>
                         </Link>
-                        <Link href="/why-gold/inflation-protection" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-amber-500/50 transition-all">
-                            <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Gold as Inflation Hedge</h3>
-                            <p className="text-slate-400 text-sm">Historical performance data</p>
+                        <Link href="/why-gold/inflation-protection" className="group bg-white border border-slate-200 rounded-xl p-6 hover:border-[#B22234]/50 transition-all shadow-sm">
+                            <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Gold as Inflation Hedge</h3>
+                            <p className="text-slate-500 text-sm">Historical performance data</p>
                         </Link>
-                        <Link href="/learn/how-much-gold-in-portfolio" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-amber-500/50 transition-all">
-                            <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">How Much Gold to Own</h3>
-                            <p className="text-slate-400 text-sm">Portfolio allocation guide</p>
+                        <Link href="/learn/how-much-gold-in-portfolio" className="group bg-white border border-slate-200 rounded-xl p-6 hover:border-[#B22234]/50 transition-all shadow-sm">
+                            <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">How Much Gold to Own</h3>
+                            <p className="text-slate-500 text-sm">Portfolio allocation guide</p>
                         </Link>
                     </div>
                 </Container>

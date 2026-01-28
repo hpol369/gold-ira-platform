@@ -50,18 +50,18 @@ const schema = {
 
 export default function GoldcoVsLearPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold text-secondary mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
                         Heavyweight Clash
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Goldco vs. Lear Capital
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         Two of the biggest names in the industry. One is the current market leader (Goldco); the other is a survivor with 25+ years of history (Lear).
                     </p>
                 </Container>
@@ -73,7 +73,7 @@ export default function GoldcoVsLearPage() {
                         <TableOfContents items={tocItems} />
                     </aside>
 
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
                         <p className="lead">
                             This is a clash between the current market leader and a seasoned veteran. <strong>Goldco</strong> dominates the Gold IRA industry with aggressive marketing, celebrity endorsements, and massive promotional offers. <strong>Lear Capital</strong> has been quietly operating since 1997—surviving recessions, lawsuits, and market crashes to become one of the most established names in the business. Which one deserves your retirement savings?
                         </p>
@@ -161,9 +161,9 @@ export default function GoldcoVsLearPage() {
                             </div>
                         </section>
 
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Find Your Match</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Find Your Match</h3>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Start Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -176,7 +176,7 @@ export default function GoldcoVsLearPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA
                         variant="footer"

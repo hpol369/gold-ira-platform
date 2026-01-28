@@ -105,27 +105,27 @@ const schema = {
 
 export default function SilverExpertsPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 text-white py-20 relative overflow-hidden border-b border-white/10">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-700/20 via-transparent to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/5 to-transparent animate-pulse" />
+            <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden border-b border-slate-200">
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-100/20 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-200/30 to-transparent animate-pulse" />
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-slate-400/10 px-4 py-1.5 text-sm font-semibold text-slate-300 mb-6 border border-slate-400/20">
-                            <Users className="w-4 h-4 text-slate-300" />
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-slate-600 mb-6 border border-[#B22234]/20">
+                            <Users className="w-4 h-4 text-slate-600" />
                             Authority Building Content
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
-                            What the <span className="text-slate-300">Silver Experts</span> Say About 2026
+                            What the <span className="text-slate-600">Silver Experts</span> Say About 2026
                         </h1>
-                        <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                        <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-8">
                             Meet the leading voices in the silver market. These analysts, investors, and industry veterans have decades of experience navigating precious metals markets. Here is what they see coming.
                         </p>
-                        <Button variant="gold" size="xl" asChild>
+                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                             <Link href="/quiz">Find Your Perfect Silver IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                         </Button>
                     </div>
@@ -142,21 +142,21 @@ export default function SilverExpertsPage() {
                                 <Link
                                     key={expert.slug}
                                     href={`/silver-experts/${expert.slug}`}
-                                    className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-slate-400/30 transition-all"
+                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8 hover:bg-slate-100 hover:border-slate-300 transition-all"
                                 >
                                     <div className={`w-14 h-14 rounded-xl bg-${expert.color}-500/20 flex items-center justify-center mb-6`}>
                                         <IconComponent className={`w-7 h-7 text-${expert.color}-400`} />
                                     </div>
-                                    <h2 className="text-2xl font-serif font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                                    <h2 className="text-2xl font-serif font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">
                                         {expert.name}
                                     </h2>
-                                    <p className="text-amber-400 font-semibold text-sm mb-4">{expert.title}</p>
-                                    <p className="text-slate-400 mb-4">{expert.description}</p>
-                                    <div className="bg-slate-800/50 rounded-lg p-4 mb-6">
-                                        <p className="text-sm text-slate-500 uppercase tracking-wide font-bold mb-1">Key Prediction</p>
-                                        <p className="text-slate-300 text-sm italic">&quot;{expert.keyPrediction}&quot;</p>
+                                    <p className="text-[#B22234] font-semibold text-sm mb-4">{expert.title}</p>
+                                    <p className="text-slate-600 mb-4">{expert.description}</p>
+                                    <div className="bg-slate-50 rounded-lg p-4 mb-6">
+                                        <p className="text-sm text-slate-600 uppercase tracking-wide font-bold mb-1">Key Prediction</p>
+                                        <p className="text-slate-600 text-sm italic">&quot;{expert.keyPrediction}&quot;</p>
                                     </div>
-                                    <div className="flex items-center gap-2 text-amber-400 font-semibold">
+                                    <div className="flex items-center gap-2 text-[#B22234] font-semibold">
                                         Read Full Analysis <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </div>
                                 </Link>
@@ -167,31 +167,31 @@ export default function SilverExpertsPage() {
             </section>
 
             {/* Why Follow Experts Section */}
-            <section className="py-16 bg-slate-800/30">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-white text-center mb-8">
+                        <h2 className="text-3xl font-serif font-bold text-slate-900 text-center mb-8">
                             Why Follow Silver Market Experts?
                         </h2>
                         <div className="prose prose-lg prose-invert max-w-none">
-                            <p className="text-slate-300 text-center mb-8">
+                            <p className="text-slate-600 text-center mb-8">
                                 The silver market is complex, with forces ranging from industrial demand to central bank policies to retail investor movements. These experts have spent decades studying these dynamics and have track records of accurate predictions.
                             </p>
                             <div className="grid md:grid-cols-3 gap-6 not-prose">
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                                    <Mic className="w-10 h-10 text-amber-400 mx-auto mb-4" />
-                                    <h3 className="font-bold text-white mb-2">Media Presence</h3>
-                                    <p className="text-slate-400 text-sm">Regularly featured on financial news channels, podcasts, and major publications.</p>
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+                                    <Mic className="w-10 h-10 text-[#B22234] mx-auto mb-4" />
+                                    <h3 className="font-bold text-slate-900 mb-2">Media Presence</h3>
+                                    <p className="text-slate-600 text-sm">Regularly featured on financial news channels, podcasts, and major publications.</p>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                                    <TrendingUp className="w-10 h-10 text-amber-400 mx-auto mb-4" />
-                                    <h3 className="font-bold text-white mb-2">Track Record</h3>
-                                    <p className="text-slate-400 text-sm">Decades of experience with documented predictions and market calls.</p>
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+                                    <TrendingUp className="w-10 h-10 text-[#B22234] mx-auto mb-4" />
+                                    <h3 className="font-bold text-slate-900 mb-2">Track Record</h3>
+                                    <p className="text-slate-600 text-sm">Decades of experience with documented predictions and market calls.</p>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                                    <Award className="w-10 h-10 text-amber-400 mx-auto mb-4" />
-                                    <h3 className="font-bold text-white mb-2">Industry Authority</h3>
-                                    <p className="text-slate-400 text-sm">Recognized leaders who have shaped how investors think about silver.</p>
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+                                    <Award className="w-10 h-10 text-[#B22234] mx-auto mb-4" />
+                                    <h3 className="font-bold text-slate-900 mb-2">Industry Authority</h3>
+                                    <p className="text-slate-600 text-sm">Recognized leaders who have shaped how investors think about silver.</p>
                                 </div>
                             </div>
                         </div>
@@ -202,20 +202,20 @@ export default function SilverExpertsPage() {
             {/* Mid-Page CTA */}
             <section className="py-16">
                 <Container>
-                    <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden border border-slate-400/20">
-                        <div className="absolute top-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                    <div className="bg-white rounded-2xl p-8 md:p-12 text-center relative overflow-hidden border border-[#B22234]/20">
+                        <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                         <div className="relative z-10">
-                            <h2 className="text-3xl font-serif font-bold text-white mb-4">
+                            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-4">
                                 Want to Follow the Experts Into Silver?
                             </h2>
-                            <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
                                 Many of these experts recommend physical silver in a tax-advantaged retirement account. Find out if a Silver IRA is right for your portfolio.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="gold" size="xl" asChild>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                     <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                 </Button>
-                                <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                     <Link href="/guide/silver-ira-guide">Silver IRA Guide</Link>
                                 </Button>
                             </div>
@@ -225,45 +225,45 @@ export default function SilverExpertsPage() {
             </section>
 
             {/* Expert Insights Summary */}
-            <section className="py-16 bg-slate-800/30">
+            <section className="py-16 bg-slate-100">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-white text-center mb-12">
+                    <h2 className="text-3xl font-serif font-bold text-slate-900 text-center mb-12">
                         Common Themes Among Silver Experts
                     </h2>
                     <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-xl mb-4">On Silver Supply</h3>
-                            <p className="text-slate-300 mb-4">
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-xl mb-4">On Silver Supply</h3>
+                            <p className="text-slate-600 mb-4">
                                 Nearly all leading silver analysts point to the same fundamental issue: demand is outpacing supply. Industrial demand from solar panels, EVs, and electronics continues to grow while mine supply stagnates.
                             </p>
-                            <p className="text-slate-400 text-sm italic">
+                            <p className="text-slate-600 text-sm italic">
                                 &quot;The silver market is in a structural deficit. Above-ground inventories are being depleted.&quot;
                             </p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-xl mb-4">On Price Manipulation</h3>
-                            <p className="text-slate-300 mb-4">
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-xl mb-4">On Price Manipulation</h3>
+                            <p className="text-slate-600 mb-4">
                                 Many experts believe silver prices are artificially suppressed through paper derivative contracts. JP Morgan&apos;s $920 million fine for precious metals manipulation adds credibility to these claims.
                             </p>
-                            <p className="text-slate-400 text-sm italic">
+                            <p className="text-slate-600 text-sm italic">
                                 &quot;When the paper market meets physical reality, prices will need to adjust dramatically.&quot;
                             </p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-xl mb-4">On Silver vs Gold</h3>
-                            <p className="text-slate-300 mb-4">
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-xl mb-4">On Silver vs Gold</h3>
+                            <p className="text-slate-600 mb-4">
                                 Experts frequently highlight the gold-to-silver ratio, currently around 80:1 versus the historical average of 15:1. Many see this as evidence that silver is dramatically undervalued relative to gold.
                             </p>
-                            <p className="text-slate-400 text-sm italic">
+                            <p className="text-slate-600 text-sm italic">
                                 &quot;Silver always outperforms gold in precious metals bull markets.&quot;
                             </p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-xl mb-4">On Physical Ownership</h3>
-                            <p className="text-slate-300 mb-4">
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-xl mb-4">On Physical Ownership</h3>
+                            <p className="text-slate-600 mb-4">
                                 Every expert on this list emphasizes the importance of owning physical silver rather than paper derivatives. They consistently recommend taking delivery or using allocated storage.
                             </p>
-                            <p className="text-slate-400 text-sm italic">
+                            <p className="text-slate-600 text-sm italic">
                                 &quot;If you can not hold it, you do not own it.&quot;
                             </p>
                         </div>
@@ -274,16 +274,16 @@ export default function SilverExpertsPage() {
             {/* Disclaimer */}
             <section className="py-8">
                 <Container>
-                    <div className="bg-slate-800/50 border border-white/10 rounded-xl p-6 max-w-4xl mx-auto">
-                        <p className="text-slate-400 text-sm text-center">
-                            <strong className="text-white">Disclaimer:</strong> We are not affiliated with any of the experts featured on this page. The information presented is for educational purposes only and represents our interpretation of publicly available statements. Always conduct your own research and consult with a financial advisor before making investment decisions.
+                    <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 max-w-4xl mx-auto">
+                        <p className="text-slate-600 text-sm text-center">
+                            <strong className="text-slate-900">Disclaimer:</strong> We are not affiliated with any of the experts featured on this page. The information presented is for educational purposes only and represents our interpretation of publicly available statements. Always conduct your own research and consult with a financial advisor before making investment decisions.
                         </p>
                     </div>
                 </Container>
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" linkContext="silver" trackSource="silver-experts-hub" />
                 </Container>

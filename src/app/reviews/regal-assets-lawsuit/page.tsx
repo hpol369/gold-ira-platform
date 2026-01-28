@@ -47,27 +47,27 @@ export default function RegalAssetsLawsuitPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
             />
-            <main className="min-h-screen flex flex-col bg-background">
+            <main className="min-h-screen flex flex-col bg-slate-50">
             <Navbar />
 
-            <div className="flex-grow bg-slate-900">
+            <div className="flex-grow">
                 {/* Header / Hero for Review */}
-                <header className="bg-red-950 text-white py-16 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-red-800/40 via-red-950 to-red-950 opacity-80 z-0"></div>
+                <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-1/3 h-full bg-red-500/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-red-200 text-sm font-bold uppercase tracking-wider mb-4">
-                                <span className="bg-white/10 px-2 py-1 rounded flex items-center gap-1">
+                            <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-red-50 px-2 py-1 rounded border border-red-100 flex items-center gap-1">
                                     <AlertTriangle className="w-4 h-4" /> Warning
                                 </span>
                                 <span>•</span>
                                 <span>Investigation</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
                                 Regal Assets: <br />
-                                <span className="text-red-300">The Rise and Collapse</span>
+                                <span className="text-[#B22234]">The Rise and Collapse</span>
                             </h1>
-                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
                                 Once one of the most-recommended Gold IRA companies in America. Now defunct. What happened, and what should former customers do?
                             </p>
                         </div>
@@ -98,7 +98,7 @@ export default function RegalAssetsLawsuitPage() {
                             </div>
 
                             {/* Main Body Content */}
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
                                 <h2>What Happened to Regal Assets?</h2>
                                 <p>
                                     <strong>Regal Assets</strong> was once one of the most-recommended Gold IRA companies in America. They had thousands of positive reviews, celebrity endorsements, and featured prominently on "best of" lists across the internet.
@@ -141,9 +141,9 @@ export default function RegalAssetsLawsuitPage() {
                                     If you have or had an account with Regal Assets, here's what you need to know:
                                 </p>
 
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
-                                    <h4 className="font-bold text-white mb-4">Action Steps for Former Customers</h4>
-                                    <ul className="space-y-3 text-slate-400">
+                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                    <h4 className="font-bold text-[#000080] mb-4">Action Steps for Former Customers</h4>
+                                    <ul className="space-y-3 text-slate-600">
                                         <li className="flex items-start gap-2">
                                             <span className="font-bold">1.</span>
                                             <span><strong>Your metals should still exist.</strong> IRA precious metals are held by custodians and depositories, not the dealer. Regal was an intermediary—assets should be held separately.</span>
@@ -187,7 +187,7 @@ export default function RegalAssetsLawsuitPage() {
                                     These companies have weathered multiple market cycles and continue to operate with strong reputations.
                                 </p>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Thoughts</h2>
                                 <p>
@@ -196,10 +196,10 @@ export default function RegalAssetsLawsuitPage() {
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-primary text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                            <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4">Looking for a Trustworthy Gold IRA Company?</h3>
-                                    <p className="mb-8 text-gray-200 max-w-lg mx-auto">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Looking for a Trustworthy Gold IRA Company?</h3>
+                                    <p className="mb-8 text-slate-600 max-w-lg mx-auto">
                                         Compare companies with proven track records and clean regulatory histories.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>

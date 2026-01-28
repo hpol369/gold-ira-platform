@@ -126,22 +126,22 @@ export default function BestGoldStocksPage() {
             <SchemaScript schema={faqSchema} />
 
             {/* Hero */}
-            <section className="bg-primary pt-24 pb-16">
+            <section className="bg-slate-50 pt-24 pb-16">
                 <Container>
                     <Link
                         href="/gold-stocks"
-                        className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition mb-6"
+                        className="inline-flex items-center gap-2 text-slate-600 hover:text-[#000080] transition mb-6"
                     >
                         <ArrowLeft className="w-4 h-4" /> Back to Gold Stocks
                     </Link>
                     <div className="max-w-3xl">
-                        <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
+                        <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4 block">
                             Gold Investment Comparison
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Best Gold Stocks vs Physical Gold Investments
                         </h1>
-                        <p className="text-xl text-gray-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             Mining stocks, ETFs, or physical gold? Each offers exposure to gold prices,
                             but with very different risk profiles. Here&apos;s what most investors get wrong
                             about &quot;the best gold stocks&quot; - and what actually matters for your retirement.
@@ -151,13 +151,13 @@ export default function BestGoldStocksPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 prose-a:text-secondary max-w-none">
+                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 prose-a:text-[#B22234] max-w-none">
 
                             {/* Introduction */}
-                            <p className="lead">
+                            <p className="lead text-slate-600">
                                 When people search for &quot;best gold stocks,&quot; they want gold exposure in their portfolio.
                                 But gold stocks are just one option - and they may not be the best choice for your goals.
                             </p>
@@ -172,7 +172,7 @@ export default function BestGoldStocksPage() {
                                 <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4 Ways to Invest in Gold</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4 Ways to Invest in Gold</h2>
                             </div>
 
                             <h3>1. Gold Mining Stocks</h3>
@@ -226,79 +226,79 @@ export default function BestGoldStocksPage() {
                                 <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Complete Comparison</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Complete Comparison</h2>
                             </div>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <thead className="bg-white/5">
+                                <table className="w-full text-left border-collapse bg-white rounded-xl border border-slate-200 shadow-sm">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Factor</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-purple-400">Mining Stocks</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-blue-400">Gold ETFs</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Physical Gold</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-green-400">Gold IRA</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Factor</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-purple-600">Mining Stocks</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-blue-600">Gold ETFs</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Physical Gold</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-green-600">Gold IRA</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-medium text-white">What You Own</td>
+                                            <td className="p-4 font-medium text-[#000080]">What You Own</td>
                                             <td className="p-4">Company shares</td>
                                             <td className="p-4">Fund shares</td>
-                                            <td className="p-4 text-green-400">Actual gold</td>
-                                            <td className="p-4 text-green-400">Actual gold</td>
+                                            <td className="p-4 text-green-600">Actual gold</td>
+                                            <td className="p-4 text-green-600">Actual gold</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Counterparty Risk</td>
-                                            <td className="p-4 text-red-400">High</td>
-                                            <td className="p-4 text-yellow-400">Moderate</td>
-                                            <td className="p-4 text-green-400">None</td>
-                                            <td className="p-4 text-green-400">Minimal</td>
+                                            <td className="p-4 font-medium text-[#000080]">Counterparty Risk</td>
+                                            <td className="p-4 text-red-600">High</td>
+                                            <td className="p-4 text-yellow-600">Moderate</td>
+                                            <td className="p-4 text-green-600">None</td>
+                                            <td className="p-4 text-green-600">Minimal</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Gold Price Correlation</td>
+                                            <td className="p-4 font-medium text-[#000080]">Gold Price Correlation</td>
                                             <td className="p-4">Leveraged (2-3x)</td>
                                             <td className="p-4">Direct (1:1)</td>
                                             <td className="p-4">Direct (1:1)</td>
                                             <td className="p-4">Direct (1:1)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Dividends/Income</td>
-                                            <td className="p-4 text-green-400">Yes (1-3%)</td>
+                                            <td className="p-4 font-medium text-[#000080]">Dividends/Income</td>
+                                            <td className="p-4 text-green-600">Yes (1-3%)</td>
                                             <td className="p-4">No</td>
                                             <td className="p-4">No</td>
                                             <td className="p-4">No</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Tax Advantages</td>
+                                            <td className="p-4 font-medium text-[#000080]">Tax Advantages</td>
                                             <td className="p-4">In IRA only</td>
                                             <td className="p-4">In IRA only</td>
                                             <td className="p-4">28% collectibles</td>
-                                            <td className="p-4 text-green-400">Tax-deferred</td>
+                                            <td className="p-4 text-green-600">Tax-deferred</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Liquidity</td>
-                                            <td className="p-4 text-green-400">Excellent</td>
-                                            <td className="p-4 text-green-400">Excellent</td>
+                                            <td className="p-4 font-medium text-[#000080]">Liquidity</td>
+                                            <td className="p-4 text-green-600">Excellent</td>
+                                            <td className="p-4 text-green-600">Excellent</td>
                                             <td className="p-4">Good</td>
                                             <td className="p-4">Good</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Storage Required</td>
-                                            <td className="p-4 text-green-400">No</td>
-                                            <td className="p-4 text-green-400">No</td>
+                                            <td className="p-4 font-medium text-[#000080]">Storage Required</td>
+                                            <td className="p-4 text-green-600">No</td>
+                                            <td className="p-4 text-green-600">No</td>
                                             <td className="p-4">Yes (home/vault)</td>
                                             <td className="p-4">Yes (depository)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Crisis Performance</td>
-                                            <td className="p-4 text-yellow-400">Unpredictable</td>
+                                            <td className="p-4 font-medium text-[#000080]">Crisis Performance</td>
+                                            <td className="p-4 text-yellow-600">Unpredictable</td>
                                             <td className="p-4">Tracks gold</td>
-                                            <td className="p-4 text-green-400">Excellent</td>
-                                            <td className="p-4 text-green-400">Excellent</td>
+                                            <td className="p-4 text-green-600">Excellent</td>
+                                            <td className="p-4 text-green-600">Excellent</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Best For</td>
+                                            <td className="p-4 font-medium text-[#000080]">Best For</td>
                                             <td className="p-4">Growth seekers</td>
                                             <td className="p-4">Convenience</td>
                                             <td className="p-4">Direct ownership</td>
@@ -313,23 +313,23 @@ export default function BestGoldStocksPage() {
                                 <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Pros and Cons of Each Option</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Pros and Cons of Each Option</h2>
                             </div>
 
                             <h3>Gold Mining Stocks</h3>
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-green-400 mb-3">Pros</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-green-700 mb-3">Pros</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Leveraged returns when gold rises</li>
                                         <li>Potential dividend income</li>
                                         <li>Easy to buy/sell in brokerage</li>
                                         <li>Can outperform gold in bull markets</li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-red-400 mb-3">Cons</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-red-700 mb-3">Cons</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Company-specific risks (management, costs)</li>
                                         <li>Can fall even when gold rises</li>
                                         <li>Affected by broader stock market</li>
@@ -340,18 +340,18 @@ export default function BestGoldStocksPage() {
 
                             <h3>Gold ETFs</h3>
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-green-400 mb-3">Pros</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-green-700 mb-3">Pros</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Tracks gold price closely</li>
                                         <li>Highly liquid, easy to trade</li>
                                         <li>No storage concerns</li>
                                         <li>Low expense ratios (0.25-0.40%)</li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-red-400 mb-3">Cons</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-red-700 mb-3">Cons</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>No direct gold ownership</li>
                                         <li>Annual management fees</li>
                                         <li>Counterparty risk with fund structure</li>
@@ -362,18 +362,18 @@ export default function BestGoldStocksPage() {
 
                             <h3>Physical Gold (Personal Possession)</h3>
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-green-400 mb-3">Pros</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-green-700 mb-3">Pros</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>True ownership - no counterparty risk</li>
                                         <li>Privacy of possession</li>
                                         <li>Tangible asset you can hold</li>
                                         <li>Ultimate crisis insurance</li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-red-400 mb-3">Cons</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-red-700 mb-3">Cons</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Storage and security costs</li>
                                         <li>28% collectibles tax rate</li>
                                         <li>Dealer premiums (3-8%)</li>
@@ -384,18 +384,18 @@ export default function BestGoldStocksPage() {
 
                             <h3>Gold IRA</h3>
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-green-400 mb-3">Pros</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-green-700 mb-3">Pros</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Physical gold ownership</li>
                                         <li>Tax-deferred or tax-free growth</li>
                                         <li>Rollover from 401(k) without penalty</li>
                                         <li>Professional secure storage</li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
-                                    <h4 className="font-bold text-red-400 mb-3">Cons</h4>
-                                    <ul className="space-y-2 text-sm text-slate-300">
+                                <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-red-700 mb-3">Cons</h4>
+                                    <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Annual custodian/storage fees</li>
                                         <li>IRS-approved products only</li>
                                         <li>Early withdrawal penalties</li>
@@ -409,7 +409,7 @@ export default function BestGoldStocksPage() {
                                 <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Physical Gold May Be Better for Retirement</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Physical Gold May Be Better for Retirement</h2>
                             </div>
 
                             <p>
@@ -454,7 +454,7 @@ export default function BestGoldStocksPage() {
                                 <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">When Gold Stocks Do Make Sense</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">When Gold Stocks Do Make Sense</h2>
                             </div>
 
                             <p>
@@ -479,52 +479,51 @@ export default function BestGoldStocksPage() {
                                 <div className="p-3 bg-green-50 rounded-lg text-green-600">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">How to Decide What&apos;s Best for You</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">How to Decide What&apos;s Best for You</h2>
                             </div>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <thead className="bg-white/5">
+                                <table className="w-full text-left border-collapse bg-white rounded-xl border border-slate-200 shadow-sm">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">If You...</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Consider...</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">If You...</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Consider...</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
                                             <td className="p-4">Want growth and can handle volatility</td>
-                                            <td className="p-4 text-purple-400 font-semibold">Gold Mining Stocks</td>
+                                            <td className="p-4 text-purple-600 font-semibold">Gold Mining Stocks</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4">Want easy gold exposure with no storage</td>
-                                            <td className="p-4 text-blue-400 font-semibold">Gold ETFs</td>
+                                            <td className="p-4 text-blue-600 font-semibold">Gold ETFs</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4">Want to hold gold in your hands</td>
-                                            <td className="p-4 text-amber-400 font-semibold">Physical Gold (Personal)</td>
+                                            <td className="p-4 text-[#B22234] font-semibold">Physical Gold (Personal)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4">Want physical gold with tax benefits</td>
-                                            <td className="p-4 text-green-400 font-semibold">Gold IRA</td>
+                                            <td className="p-4 text-green-600 font-semibold">Gold IRA</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4">Are 5-15 years from retirement</td>
-                                            <td className="p-4 text-green-400 font-semibold">Gold IRA (primary) + ETFs</td>
+                                            <td className="p-4 text-green-600 font-semibold">Gold IRA (primary) + ETFs</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4">Have 20+ years until retirement</td>
-                                            <td className="p-4 text-purple-400 font-semibold">Mining Stocks + Gold IRA</td>
+                                            <td className="p-4 text-purple-600 font-semibold">Mining Stocks + Gold IRA</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
                             {/* CTA */}
-                            <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="my-12 bg-slate-50 rounded-2xl p-8 text-center relative overflow-hidden not-prose border border-slate-200">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Explore Physical Gold?</h3>
-                                    <p className="mb-6 text-gray-200">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Ready to Explore Physical Gold?</h3>
+                                    <p className="mb-6 text-slate-600">
                                         A Gold IRA combines the security of physical gold with tax advantages.
                                         Learn if it&apos;s right for your retirement strategy.
                                     </p>
@@ -539,7 +538,7 @@ export default function BestGoldStocksPage() {
                                 <div className="p-3 bg-emerald-50 rounded-lg text-emerald-600">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Key Takeaways</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Key Takeaways</h2>
                             </div>
 
                             <ul>
@@ -561,17 +560,17 @@ export default function BestGoldStocksPage() {
                         </article>
 
                         {/* Navigation */}
-                        <div className="mt-16 pt-8 border-t border-white/10">
+                        <div className="mt-16 pt-8 border-t border-slate-200">
                             <div className="flex flex-col sm:flex-row gap-4 justify-between">
                                 <Link
                                     href="/gold-stocks/gold-stocks-to-buy"
-                                    className="flex items-center gap-2 text-primary hover:text-secondary transition"
+                                    className="flex items-center gap-2 text-[#000080] hover:text-[#B22234] transition"
                                 >
                                     <ArrowLeft className="w-4 h-4" /> Gold Stocks to Buy
                                 </Link>
                                 <Link
                                     href="/gold-stocks/gold-mining-stocks-vs-physical-gold"
-                                    className="flex items-center gap-2 text-primary hover:text-secondary transition justify-end"
+                                    className="flex items-center gap-2 text-[#000080] hover:text-[#B22234] transition justify-end"
                                 >
                                     Mining Stocks vs Physical Gold <ArrowRight className="w-4 h-4" />
                                 </Link>

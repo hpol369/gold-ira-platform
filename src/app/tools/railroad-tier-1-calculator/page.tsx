@@ -112,26 +112,26 @@ const faqSchema = {
 
 export default function RailroadTier1CalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+        <div className="absolute inset-0 bg-slate-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
 
         <Container>
           <div className="relative max-w-4xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-blue-500/10 text-blue-600 border border-blue-500/20 mb-4">
               <Train className="h-4 w-4" />
               Railroad Retirement Tool
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-4">
               Railroad Tier 1 Calculator
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Calculate your Tier I (Social Security equivalent) benefit with WEP and GPO
               considerations. See how mixed railroad and non-railroad work affects your benefits.
             </p>
@@ -143,10 +143,10 @@ export default function RailroadTier1CalculatorPage() {
       <RailroadTier1Calculator />
 
       {/* Key Facts Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Understanding Tier I Benefits
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -155,17 +155,17 @@ export default function RailroadTier1CalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-blue-400" />
+                        <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">{fact.description}</p>
+                        <p className="text-slate-600 text-sm">{fact.description}</p>
                       </div>
                     </div>
                   </div>
@@ -177,73 +177,73 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* WEP/GPO Explanation */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                <FileWarning className="h-6 w-6 text-amber-400" />
+              <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                <FileWarning className="h-6 w-6 text-[#B22234]" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 WEP and GPO: What Railroad Workers Need to Know
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-amber-400 mb-4">
+              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-[#B22234] mb-4">
                   Windfall Elimination Provision (WEP)
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     Applies if you receive a pension from work NOT covered by SS
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     Reduces the 90% factor in the benefit formula to as low as 40%
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     Maximum reduction: ~$587/month (2024)
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     30+ years of substantial SS-covered earnings eliminates WEP
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-red-400 mb-4">
+              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-red-600 mb-4">
                   Government Pension Offset (GPO)
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-red-400 mt-1">*</span>
+                    <span className="text-red-600 mt-1">*</span>
                     Affects spousal and survivor benefits only
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-400 mt-1">*</span>
+                    <span className="text-red-600 mt-1">*</span>
                     Reduces these benefits by 2/3 of your government pension
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-400 mt-1">*</span>
+                    <span className="text-red-600 mt-1">*</span>
                     Can completely eliminate spousal/survivor benefits
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-400 mt-1">*</span>
+                    <span className="text-red-600 mt-1">*</span>
                     Does NOT affect your own Tier I benefit
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-green-400 mb-3">
+            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-green-600 mb-3">
                 Good News for Railroad Workers
               </h3>
-              <p className="text-slate-300">
+              <p className="text-slate-600">
                 Your <strong>Tier II benefits</strong> (the railroad-specific pension) are{" "}
                 <strong>never affected</strong> by WEP or GPO. Even if WEP reduces your
                 Tier I, you still receive full Tier II benefits based on your railroad
@@ -256,46 +256,46 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* How Tier 1 is Calculated */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               How Tier I Is Calculated
             </h2>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 mb-8">
-              <h3 className="text-lg font-semibold text-white mb-4">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 mb-8">
+              <h3 className="text-lg font-semibold text-slate-900 mb-4">
                 The PIA Formula (2024)
               </h3>
-              <div className="bg-slate-800 rounded-lg p-4 mb-4">
-                <p className="text-blue-400 font-mono text-sm">
+              <div className="bg-slate-100 rounded-lg p-4 mb-4">
+                <p className="text-blue-600 font-mono text-sm">
                   PIA = 90% of first $1,174 AIME<br />
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ 32% of AIME from $1,174 to $7,077<br />
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ 15% of AIME above $7,077
                 </p>
               </div>
-              <p className="text-slate-400 text-sm">
+              <p className="text-slate-600 text-sm">
                 AIME = Average Indexed Monthly Earnings (your highest 35 years of
                 earnings, indexed for inflation)
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">35</div>
-                <p className="text-slate-400 text-sm">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">35</div>
+                <p className="text-slate-600 text-sm">
                   Highest earning years used in calculation
                 </p>
               </div>
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-2">62-70</div>
-                <p className="text-slate-400 text-sm">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-[#B22234] mb-2">62-70</div>
+                <p className="text-slate-600 text-sm">
                   Age range for claiming (with early/late adjustments)
                 </p>
               </div>
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-green-400 mb-2">8%</div>
-                <p className="text-slate-400 text-sm">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">8%</div>
+                <p className="text-slate-600 text-sm">
                   Annual increase for each year you delay past FRA
                 </p>
               </div>
@@ -305,57 +305,57 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* Railroad vs Non-Railroad Work */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Mixed Railroad and Non-Railroad Employment
             </h2>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-lg font-semibold text-blue-400 mb-4">
+                  <h3 className="text-lg font-semibold text-blue-600 mb-4">
                     How It Affects Tier I
                   </h3>
-                  <ul className="space-y-3 text-slate-300 text-sm">
+                  <ul className="space-y-3 text-slate-600 text-sm">
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">*</span>
+                      <span className="text-blue-600 mt-1">*</span>
                       Both types of earnings count toward your Tier I calculation
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">*</span>
+                      <span className="text-blue-600 mt-1">*</span>
                       Combined earnings determine your AIME
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">*</span>
+                      <span className="text-blue-600 mt-1">*</span>
                       More years of earnings = higher benefit
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">*</span>
+                      <span className="text-blue-600 mt-1">*</span>
                       Need 35 years for maximum Tier I benefit
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-amber-400 mb-4">
+                  <h3 className="text-lg font-semibold text-[#B22234] mb-4">
                     How It Affects Tier II
                   </h3>
-                  <ul className="space-y-3 text-slate-300 text-sm">
+                  <ul className="space-y-3 text-slate-600 text-sm">
                     <li className="flex items-start gap-2">
-                      <span className="text-amber-400 mt-1">*</span>
+                      <span className="text-[#B22234] mt-1">*</span>
                       Only railroad employment counts for Tier II
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-amber-400 mt-1">*</span>
+                      <span className="text-[#B22234] mt-1">*</span>
                       Non-railroad years do NOT add to Tier II
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-amber-400 mt-1">*</span>
+                      <span className="text-[#B22234] mt-1">*</span>
                       30 years of railroad service = maximum Tier II
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-amber-400 mt-1">*</span>
+                      <span className="text-[#B22234] mt-1">*</span>
                       This is the &quot;extra&quot; railroad workers receive
                     </li>
                   </ul>
@@ -367,10 +367,10 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Tier I Frequently Asked Questions
             </h2>
 
@@ -399,16 +399,16 @@ export default function RailroadTier1CalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       ^
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -418,17 +418,17 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-800/30">
+      <section className="py-8 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates based on simplified formulas and
                     current benefit calculations. Actual Tier I benefits depend on your
                     complete earnings record, WEP/GPO applicability, and RRB
@@ -443,7 +443,7 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

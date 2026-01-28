@@ -185,20 +185,20 @@ const schema = {
 
 export default function HowMuchSilverPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-slate-900 to-slate-900" />
+        <div className="absolute inset-0 bg-slate-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(168,85,247,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Link
               href="/silver-retirement"
-              className="inline-flex items-center gap-2 text-slate-400 text-sm hover:text-white transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-slate-600 text-sm hover:text-slate-900 transition-colors mb-6"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
@@ -207,16 +207,16 @@ export default function HowMuchSilverPage() {
               <Scale className="h-4 w-4" />
               ALLOCATION GUIDE
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
               How Much Silver Should a{" "}
               <span className="text-purple-400">Retiree Own?</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               Portfolio allocation guidelines, age-based strategies, and risk
               considerations for silver in your retirement.
             </p>
 
-            <Button variant="gold" size="lg" asChild>
+            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
               <a
                 href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "how-much-silver-hero", "augusta")}
                 target="_blank"
@@ -230,18 +230,18 @@ export default function HowMuchSilverPage() {
       </section>
 
       {/* Quick Answer */}
-      <section className="py-12 bg-slate-800/30 border-y border-white/10">
+      <section className="py-12 bg-slate-100 border-y border-slate-200">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-serif font-bold text-white mb-4">
+            <h2 className="text-2xl font-serif font-bold text-[#000080] mb-4">
               The Quick Answer
             </h2>
             <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6">
               <p className="text-3xl font-bold text-purple-400 mb-2">5-15%</p>
-              <p className="text-lg text-white mb-4">
+              <p className="text-lg text-slate-900 mb-4">
                 of your total portfolio in precious metals (gold + silver combined)
               </p>
-              <p className="text-slate-400">
+              <p className="text-slate-600">
                 Within that allocation, silver typically represents 20-40% depending
                 on your risk tolerance. So for a $500,000 portfolio, that's $25,000-$75,000
                 in precious metals with $5,000-$30,000 in silver.
@@ -254,10 +254,10 @@ export default function HowMuchSilverPage() {
       {/* Allocation Profiles */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
             Silver Allocation by Risk Profile
           </h2>
-          <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
             Your ideal silver allocation depends on your retirement timeline, risk
             tolerance, and overall financial situation.
           </p>
@@ -267,12 +267,12 @@ export default function HowMuchSilverPage() {
               const colorClasses: Record<string, string> = {
                 blue: "border-blue-500/30 bg-blue-500/10",
                 green: "border-green-500/30 bg-green-500/10",
-                amber: "border-amber-500/30 bg-amber-500/10",
+                amber: "border-[#B22234]/30 bg-[#B22234]/10",
               };
               const textColors: Record<string, string> = {
                 blue: "text-blue-400",
                 green: "text-green-400",
-                amber: "text-amber-400",
+                amber: "text-[#B22234]",
               };
 
               return (
@@ -283,22 +283,22 @@ export default function HowMuchSilverPage() {
                   <h3 className={`text-xl font-bold mb-2 ${textColors[profile.color]}`}>
                     {profile.profile}
                   </h3>
-                  <p className="text-sm text-slate-400 mb-4">{profile.description}</p>
+                  <p className="text-sm text-slate-600 mb-4">{profile.description}</p>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <span className="text-xs text-slate-500 block">Silver Allocation</span>
-                      <span className="text-2xl font-bold text-white">
+                      <span className="text-xs text-slate-600 block">Silver Allocation</span>
+                      <span className="text-2xl font-bold text-slate-900">
                         {profile.silverAllocation}
                       </span>
                     </div>
                     <div>
-                      <span className="text-xs text-slate-500 block">Total Precious Metals</span>
-                      <span className="text-lg font-semibold text-slate-300">
+                      <span className="text-xs text-slate-600 block">Total Precious Metals</span>
+                      <span className="text-lg font-semibold text-slate-600">
                         {profile.totalPrecious}
                       </span>
                     </div>
                   </div>
-                  <p className="text-sm text-slate-400">{profile.rationale}</p>
+                  <p className="text-sm text-slate-600">{profile.rationale}</p>
                 </div>
               );
             })}
@@ -307,29 +307,29 @@ export default function HowMuchSilverPage() {
       </section>
 
       {/* Age-Based Guidelines */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Age-Based Allocation Guidelines
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                <thead className="bg-slate-800/50">
+              <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                <thead className="bg-slate-50">
                   <tr>
-                    <th className="p-4 border-b border-white/10 font-bold text-white">Age Range</th>
-                    <th className="p-4 border-b border-white/10 font-bold text-white">Precious Metals</th>
-                    <th className="p-4 border-b border-white/10 font-bold text-white">Silver Note</th>
-                    <th className="p-4 border-b border-white/10 font-bold text-white">Reasoning</th>
+                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Age Range</th>
+                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Precious Metals</th>
+                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Silver Note</th>
+                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Reasoning</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/10 text-sm">
+                <tbody className="divide-y divide-slate-200 text-sm">
                   {ageGuidelines.map((row, index) => (
-                    <tr key={index} className={index % 2 === 0 ? "" : "bg-slate-800/30"}>
-                      <td className="p-4 font-semibold text-white">{row.age}</td>
+                    <tr key={index} className={index % 2 === 0 ? "" : "bg-slate-100"}>
+                      <td className="p-4 font-semibold text-slate-900">{row.age}</td>
                       <td className="p-4 text-purple-400 font-semibold">{row.recommendation}</td>
-                      <td className="p-4 text-slate-300">{row.silverNote}</td>
-                      <td className="p-4 text-slate-400">{row.reasoning}</td>
+                      <td className="p-4 text-slate-600">{row.silverNote}</td>
+                      <td className="p-4 text-slate-600">{row.reasoning}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -342,7 +342,7 @@ export default function HowMuchSilverPage() {
       {/* Key Considerations */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Key Factors to Consider
           </h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -351,15 +351,15 @@ export default function HowMuchSilverPage() {
               return (
                 <div
                   key={index}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+                  className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <div className="bg-purple-500/20 p-2 rounded-lg">
                       <Icon className="h-5 w-5 text-purple-400" />
                     </div>
-                    <h3 className="font-bold text-white">{item.factor}</h3>
+                    <h3 className="font-bold text-slate-900">{item.factor}</h3>
                   </div>
-                  <p className="text-sm text-slate-400">{item.description}</p>
+                  <p className="text-sm text-slate-600">{item.description}</p>
                 </div>
               );
             })}
@@ -368,18 +368,18 @@ export default function HowMuchSilverPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-900 via-amber-900/20 to-slate-900">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
               Want a Personalized Recommendation?
             </h3>
-            <p className="text-slate-300 mb-6">
+            <p className="text-slate-600 mb-6">
               Augusta's precious metals specialists can review your specific
               situation and recommend an appropriate silver allocation for your
               retirement goals. Free consultation, no obligation.
             </p>
-            <Button variant="gold" size="lg" asChild>
+            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
               <a
                 href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "how-much-silver-mid", "augusta")}
                 target="_blank"
@@ -393,65 +393,65 @@ export default function HowMuchSilverPage() {
       </section>
 
       {/* Portfolio Examples */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Sample Portfolio Allocations
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-              <h3 className="font-bold text-white mb-4">$250,000 Portfolio</h3>
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <h3 className="font-bold text-slate-900 mb-4">$250,000 Portfolio</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Stocks/Bonds</span>
-                  <span className="text-white">$212,500 (85%)</span>
+                  <span className="text-slate-600">Stocks/Bonds</span>
+                  <span className="text-slate-900">$212,500 (85%)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Gold</span>
-                  <span className="text-amber-400">$25,000 (10%)</span>
+                  <span className="text-slate-600">Gold</span>
+                  <span className="text-[#B22234]">$25,000 (10%)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Silver</span>
-                  <span className="text-slate-300">$12,500 (5%)</span>
+                  <span className="text-slate-600">Silver</span>
+                  <span className="text-slate-600">$12,500 (5%)</span>
                 </div>
               </div>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-              <h3 className="font-bold text-white mb-4">$500,000 Portfolio</h3>
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <h3 className="font-bold text-slate-900 mb-4">$500,000 Portfolio</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Stocks/Bonds</span>
-                  <span className="text-white">$400,000 (80%)</span>
+                  <span className="text-slate-600">Stocks/Bonds</span>
+                  <span className="text-slate-900">$400,000 (80%)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Gold</span>
-                  <span className="text-amber-400">$60,000 (12%)</span>
+                  <span className="text-slate-600">Gold</span>
+                  <span className="text-[#B22234]">$60,000 (12%)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Silver</span>
-                  <span className="text-slate-300">$40,000 (8%)</span>
+                  <span className="text-slate-600">Silver</span>
+                  <span className="text-slate-600">$40,000 (8%)</span>
                 </div>
               </div>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-              <h3 className="font-bold text-white mb-4">$1,000,000 Portfolio</h3>
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <h3 className="font-bold text-slate-900 mb-4">$1,000,000 Portfolio</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Stocks/Bonds</span>
-                  <span className="text-white">$850,000 (85%)</span>
+                  <span className="text-slate-600">Stocks/Bonds</span>
+                  <span className="text-slate-900">$850,000 (85%)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Gold</span>
-                  <span className="text-amber-400">$100,000 (10%)</span>
+                  <span className="text-slate-600">Gold</span>
+                  <span className="text-[#B22234]">$100,000 (10%)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Silver</span>
-                  <span className="text-slate-300">$50,000 (5%)</span>
+                  <span className="text-slate-600">Silver</span>
+                  <span className="text-slate-600">$50,000 (5%)</span>
                 </div>
               </div>
             </div>
           </div>
-          <p className="text-sm text-slate-500 text-center mt-6">
+          <p className="text-sm text-slate-600 text-center mt-6">
             These are examples only. Your ideal allocation depends on your specific
             circumstances, risk tolerance, and goals.
           </p>
@@ -461,12 +461,12 @@ export default function HowMuchSilverPage() {
       {/* Warning Section */}
       <section className="py-12">
         <Container>
-          <div className="max-w-3xl mx-auto bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
+          <div className="max-w-3xl mx-auto bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
             <div className="flex items-start gap-4">
-              <AlertTriangle className="h-6 w-6 text-amber-400 mt-1 flex-shrink-0" />
+              <AlertTriangle className="h-6 w-6 text-[#B22234] mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-bold text-white mb-2">Important Disclaimer</h3>
-                <p className="text-sm text-slate-400">
+                <h3 className="font-bold text-slate-900 mb-2">Important Disclaimer</h3>
+                <p className="text-sm text-slate-600">
                   These allocation guidelines are general recommendations, not
                   personalized financial advice. Silver is a volatile asset that
                   can lose significant value in short periods. Before making any
@@ -480,24 +480,24 @@ export default function HowMuchSilverPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 bg-slate-800/30 border-y border-white/10">
+      <section className="py-16 bg-slate-100 border-y border-slate-200">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Silver Allocation FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-white font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
                   {faq.question}
-                  <span className="text-amber-400 group-open:rotate-180 transition-transform">
+                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-400">{faq.answer}</p>
+                <p className="mt-4 text-slate-600">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -507,37 +507,37 @@ export default function HowMuchSilverPage() {
       {/* Related Pages */}
       <section className="py-12">
         <Container>
-          <h2 className="text-xl font-bold text-white text-center mb-6">
+          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
             Continue Your Research
           </h2>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link
               href="/silver-retirement/silver-vs-bonds"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">Silver vs Bonds</h3>
-              <p className="text-sm text-slate-400">Compare for retirement</p>
+              <h3 className="font-semibold text-slate-900 mb-1">Silver vs Bonds</h3>
+              <p className="text-sm text-slate-600">Compare for retirement</p>
             </Link>
             <Link
               href="/silver-retirement/transfer-ira-to-silver"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">Transfer IRA to Silver</h3>
-              <p className="text-sm text-slate-400">Step-by-step guide</p>
+              <h3 className="font-semibold text-slate-900 mb-1">Transfer IRA to Silver</h3>
+              <p className="text-sm text-slate-600">Step-by-step guide</p>
             </Link>
             <Link
               href="/silver-retirement/rmd-rules"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">Silver IRA RMD Rules</h3>
-              <p className="text-sm text-slate-400">Distribution planning</p>
+              <h3 className="font-semibold text-slate-900 mb-1">Silver IRA RMD Rules</h3>
+              <p className="text-sm text-slate-600">Distribution planning</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 border-t border-white/10">
+      <section className="py-16 border-t border-slate-200">
         <Container>
           <AugustaCTA
             variant="footer"

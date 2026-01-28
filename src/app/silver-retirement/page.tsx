@@ -183,35 +183,35 @@ const schema = {
 
 export default function SilverRetirementPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-800/50 via-slate-900 to-slate-900" />
+        <div className="absolute inset-0 bg-slate-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(148,163,184,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 text-slate-300 text-sm font-medium mb-4 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+            <div className="inline-flex items-center gap-2 text-slate-600 text-sm font-medium mb-4 bg-slate-100 px-4 py-2 rounded-full border border-slate-200">
               <Coins className="h-4 w-4" />
               SILVER RETIREMENT GUIDE
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
               Silver for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-white">
+              <span className="text-slate-500">
                 Retirement
               </span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               The complete guide to silver as a retirement investment. Learn how to
               protect your wealth, transfer your IRA to silver, and build a legacy
               for your family.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="gold" size="lg" asChild>
+              <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                 <Link href="/silver-retirement/transfer-ira-to-silver">
                   Transfer IRA to Silver <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -220,7 +220,7 @@ export default function SilverRetirementPage() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-white/20 text-white hover:bg-white/10"
+                className="border-slate-300 text-slate-900 hover:bg-slate-100"
               >
                 <a href="#guides">View All Guides</a>
               </Button>
@@ -230,12 +230,12 @@ export default function SilverRetirementPage() {
       </section>
 
       {/* Why Silver for Retirement */}
-      <section className="py-16 border-y border-white/10 bg-slate-800/30">
+      <section className="py-16 border-y border-slate-200 bg-slate-100">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
             Why Retirees Are Choosing Silver
           </h2>
-          <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
             Physical silver offers unique advantages for retirement portfolios that
             paper assets simply cannot match.
           </p>
@@ -245,13 +245,13 @@ export default function SilverRetirementPage() {
               return (
                 <div
                   key={index}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center"
+                  className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center"
                 >
-                  <div className="bg-slate-700/50 p-3 rounded-lg inline-block mb-4">
-                    <Icon className="h-6 w-6 text-slate-300" />
+                  <div className="bg-slate-100 p-3 rounded-lg inline-block mb-4">
+                    <Icon className="h-6 w-6 text-slate-600" />
                   </div>
-                  <h3 className="font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-slate-400 text-sm">{item.description}</p>
+                  <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                  <p className="text-slate-600 text-sm">{item.description}</p>
                 </div>
               );
             })}
@@ -260,14 +260,14 @@ export default function SilverRetirementPage() {
       </section>
 
       {/* Rich Dad Quote */}
-      <section className="py-12 bg-gradient-to-r from-amber-900/20 via-slate-900 to-amber-900/20">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
         <Container>
           <blockquote className="max-w-3xl mx-auto text-center">
-            <p className="text-2xl md:text-3xl font-serif italic text-white mb-4">
+            <p className="text-2xl md:text-3xl font-serif italic text-[#000080] mb-4">
               "Savers are losers. The system is designed to steal your wealth through
               inflation. Physical silver protects what you've worked a lifetime to build."
             </p>
-            <footer className="text-amber-400 font-semibold">
+            <footer className="text-[#B22234] font-semibold">
               - Robert Kiyosaki, Rich Dad Philosophy
             </footer>
           </blockquote>
@@ -277,10 +277,10 @@ export default function SilverRetirementPage() {
       {/* Guides Grid */}
       <section id="guides" className="py-16 scroll-mt-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
             Silver Retirement Guides
           </h2>
-          <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
             Everything you need to know about silver for retirement, from IRA transfers
             to inheritance planning.
           </p>
@@ -289,7 +289,7 @@ export default function SilverRetirementPage() {
             {hubPages.map((page, index) => {
               const Icon = page.icon;
               const colorClasses: Record<string, string> = {
-                amber: "bg-amber-500/20 text-amber-400 border-amber-500/30",
+                amber: "bg-[#B22234]/20 text-[#B22234] border-[#B22234]/30",
                 blue: "bg-blue-500/20 text-blue-400 border-blue-500/30",
                 green: "bg-green-500/20 text-green-400 border-green-500/30",
                 purple: "bg-purple-500/20 text-purple-400 border-purple-500/30",
@@ -304,14 +304,14 @@ export default function SilverRetirementPage() {
                 <Link
                   key={index}
                   href={page.href}
-                  className={`bg-white/5 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-6 transition-all group ${
+                  className={`bg-slate-50 hover:bg-slate-100 backdrop-blur-sm border rounded-xl p-6 transition-all group ${
                     page.featured
-                      ? "border-amber-500/30 ring-1 ring-amber-500/20 md:col-span-2 lg:col-span-1"
-                      : "border-white/10 hover:border-slate-500/30"
+                      ? "border-[#B22234]/30 ring-1 ring-amber-500/20 md:col-span-2 lg:col-span-1"
+                      : "border-slate-200 hover:border-slate-300"
                   }`}
                 >
                   {page.featured && (
-                    <div className="inline-flex items-center gap-1 text-amber-400 text-xs font-bold mb-3 bg-amber-500/20 px-2 py-1 rounded">
+                    <div className="inline-flex items-center gap-1 text-[#B22234] text-xs font-bold mb-3 bg-[#B22234]/20 px-2 py-1 rounded">
                       HIGH VALUE KEYWORD
                     </div>
                   )}
@@ -320,14 +320,14 @@ export default function SilverRetirementPage() {
                       <Icon className={`h-5 w-5 ${iconColor.split(" ")[2]}`} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors mb-2">
+                      <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors mb-2">
                         {page.title}
                       </h3>
-                      <p className="text-sm text-slate-400 line-clamp-2">
+                      <p className="text-sm text-slate-600 line-clamp-2">
                         {page.description}
                       </p>
                       {(page.cpc || page.volume) && (
-                        <div className="flex gap-3 mt-3 text-xs text-slate-500">
+                        <div className="flex gap-3 mt-3 text-xs text-slate-600">
                           {page.cpc && <span>CPC: {page.cpc}</span>}
                           {page.volume && <span>Vol: {page.volume}</span>}
                         </div>
@@ -342,10 +342,10 @@ export default function SilverRetirementPage() {
       </section>
 
       {/* Key Benefits Section */}
-      <section className="py-16 bg-slate-800/30 border-y border-white/10">
+      <section className="py-16 bg-slate-100 border-y border-slate-200">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-12">
               Silver IRA Benefits for Retirees
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -353,8 +353,8 @@ export default function SilverRetirementPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Tax-Advantaged Growth</h4>
-                    <p className="text-sm text-slate-400">
+                    <h4 className="font-semibold text-slate-900">Tax-Advantaged Growth</h4>
+                    <p className="text-sm text-slate-600">
                       Silver in an IRA grows tax-deferred (Traditional) or tax-free (Roth).
                     </p>
                   </div>
@@ -362,8 +362,8 @@ export default function SilverRetirementPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Protection from Counterparty Risk</h4>
-                    <p className="text-sm text-slate-400">
+                    <h4 className="font-semibold text-slate-900">Protection from Counterparty Risk</h4>
+                    <p className="text-sm text-slate-600">
                       Physical silver has no counterparty risk unlike stocks, bonds, or ETFs.
                     </p>
                   </div>
@@ -371,8 +371,8 @@ export default function SilverRetirementPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Easy Rollover Process</h4>
-                    <p className="text-sm text-slate-400">
+                    <h4 className="font-semibold text-slate-900">Easy Rollover Process</h4>
+                    <p className="text-sm text-slate-600">
                       Transfer existing IRA/401(k) funds to silver without tax penalties.
                     </p>
                   </div>
@@ -382,8 +382,8 @@ export default function SilverRetirementPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Tangible Asset</h4>
-                    <p className="text-sm text-slate-400">
+                    <h4 className="font-semibold text-slate-900">Tangible Asset</h4>
+                    <p className="text-sm text-slate-600">
                       Own real, physical silver stored securely in your name.
                     </p>
                   </div>
@@ -391,8 +391,8 @@ export default function SilverRetirementPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Legacy Planning</h4>
-                    <p className="text-sm text-slate-400">
+                    <h4 className="font-semibold text-slate-900">Legacy Planning</h4>
+                    <p className="text-sm text-slate-600">
                       Pass physical silver to heirs with step-up in cost basis.
                     </p>
                   </div>
@@ -400,8 +400,8 @@ export default function SilverRetirementPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Industrial Demand Upside</h4>
-                    <p className="text-sm text-slate-400">
+                    <h4 className="font-semibold text-slate-900">Industrial Demand Upside</h4>
+                    <p className="text-sm text-slate-600">
                       Silver's use in solar and electronics creates investment upside.
                     </p>
                   </div>
@@ -415,22 +415,22 @@ export default function SilverRetirementPage() {
       {/* FAQ Section */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Silver Retirement FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-white font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
                   {faq.name}
-                  <span className="text-amber-400 group-open:rotate-180 transition-transform">
+                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-400">{faq.acceptedAnswer.text}</p>
+                <p className="mt-4 text-slate-600">{faq.acceptedAnswer.text}</p>
               </details>
             ))}
           </div>
@@ -438,7 +438,7 @@ export default function SilverRetirementPage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-800/50 border-t border-white/10">
+      <section className="py-16 bg-slate-50 border-t border-slate-200">
         <Container>
           <AugustaCTA
             variant="footer"

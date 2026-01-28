@@ -93,30 +93,29 @@ export default function Solo401kPage() {
             />
 
             <Navbar />
-            <main className="min-h-screen bg-slate-900">
+            <main className="min-h-screen bg-white">
                 {/* Hero Section */}
-                <section className="relative py-16 lg:py-24 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent" />
+                <section className="relative py-16 lg:py-24 overflow-hidden bg-slate-50">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(128,90,213,0.08),transparent_50%)]" />
 
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-4 py-2 mb-6">
-                                <Briefcase className="w-4 h-4 text-purple-400" />
-                                <span className="text-purple-400 text-sm font-medium">Self-Employed Retirement</span>
+                            <div className="inline-flex items-center gap-2 bg-purple-100 border border-purple-200 rounded-full px-4 py-2 mb-6">
+                                <Briefcase className="w-4 h-4 text-purple-600" />
+                                <span className="text-purple-700 text-sm font-medium">Self-Employed Retirement</span>
                             </div>
 
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#000080] mb-6 leading-tight">
                                 Solo 401k Guide:{" "}
-                                <span className="text-purple-400">Built for People Who Work for Themselves</span>
+                                <span className="text-purple-600">Built for People Who Work for Themselves</span>
                             </h1>
 
-                            <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
-                                You work for yourself—whether as a contractor, consultant, or small business owner. You don&apos;t have an employer matching your contributions. A Solo 401k lets you put away up to <strong className="text-white">$70,000 a year</strong> ($77,500 if you&apos;re 50+). That&apos;s more than any IRA, and you can even borrow from it if you need to.
+                            <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
+                                You work for yourself—whether as a contractor, consultant, or small business owner. You don&apos;t have an employer matching your contributions. A Solo 401k lets you put away up to <strong className="text-slate-900">$70,000 a year</strong> ($77,500 if you&apos;re 50+). That&apos;s more than any IRA, and you can even borrow from it if you need to.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                                <Button variant="gold" size="lg" asChild>
+                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
                                     <a
                                         href={getTrackedLink(AFFILIATE_LINKS.rocketDollar, "solo401k-hero", "rocketdollar")}
                                         target="_blank"
@@ -126,7 +125,7 @@ export default function Solo401kPage() {
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="lg" asChild>
+                                <Button variant="outline" size="lg" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                     <Link href="#contribution-limits">
                                         See Contribution Limits
                                     </Link>
@@ -141,9 +140,9 @@ export default function Solo401kPage() {
                                     { value: "Roth", label: "Option Available" },
                                     { value: "Loans", label: "Allowed" },
                                 ].map((stat, index) => (
-                                    <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
-                                        <div className="text-2xl font-bold text-purple-400">{stat.value}</div>
-                                        <div className="text-sm text-slate-400">{stat.label}</div>
+                                    <div key={index} className="bg-white border border-slate-200 rounded-xl p-4 text-center">
+                                        <div className="text-2xl font-bold text-purple-600">{stat.value}</div>
+                                        <div className="text-sm text-slate-500">{stat.label}</div>
                                     </div>
                                 ))}
                             </div>
@@ -152,29 +151,29 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* What is Solo 401k Section */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
                                 What is a Solo 401k?
                             </h2>
 
-                            <div className="prose prose-lg prose-invert max-w-none">
-                                <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                                    A <strong className="text-white">Solo 401k</strong> is a retirement plan for self-employed people with no employees (except maybe your spouse). It goes by other names—Individual 401k, Self-Employed 401k—but it&apos;s all the same thing.
+                            <div className="prose prose-lg max-w-none">
+                                <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                                    A <strong className="text-slate-900">Solo 401k</strong> is a retirement plan for self-employed people with no employees (except maybe your spouse). It goes by other names—Individual 401k, Self-Employed 401k—but it&apos;s all the same thing.
                                 </p>
 
-                                <p className="text-slate-300 text-lg leading-relaxed mb-8">
+                                <p className="text-slate-600 text-lg leading-relaxed mb-8">
                                     Here&apos;s why the contribution limits are so high: you get to contribute as both the &quot;employer&quot; AND the &quot;employee&quot; of your own business. A regular IRA caps you at $7,000 a year. A Solo 401k lets you put away up to $70,000. If you&apos;ve been working for yourself for years and feel behind on retirement savings, this is how you catch up.
                                 </p>
                             </div>
 
                             {/* Who Qualifies */}
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-                                <h3 className="text-xl font-bold text-white mb-6">Who Qualifies for a Solo 401k?</h3>
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+                                <h3 className="text-xl font-bold text-[#000080] mb-6">Who Qualifies for a Solo 401k?</h3>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 className="text-green-400 font-semibold mb-3 flex items-center gap-2">
+                                        <h4 className="text-green-600 font-semibold mb-3 flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5" /> You Qualify If You Are:
                                         </h4>
                                         <ul className="space-y-2">
@@ -186,15 +185,15 @@ export default function Solo401kPage() {
                                                 "Business with only spouse as employee",
                                                 "Side hustler with self-employment income"
                                             ].map((item, index) => (
-                                                <li key={index} className="flex items-start gap-2 text-slate-300 text-sm">
-                                                    <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                                                <li key={index} className="flex items-start gap-2 text-slate-600 text-sm">
+                                                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                                                     {item}
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="text-red-400 font-semibold mb-3 flex items-center gap-2">
+                                        <h4 className="text-red-600 font-semibold mb-3 flex items-center gap-2">
                                             <AlertTriangle className="w-5 h-5" /> You Don&apos;t Qualify If You Have:
                                         </h4>
                                         <ul className="space-y-2">
@@ -203,8 +202,8 @@ export default function Solo401kPage() {
                                                 "Part-time employees working 1,000+ hours/year",
                                                 "No self-employment income"
                                             ].map((item, index) => (
-                                                <li key={index} className="flex items-start gap-2 text-slate-300 text-sm">
-                                                    <AlertTriangle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
+                                                <li key={index} className="flex items-start gap-2 text-slate-600 text-sm">
+                                                    <AlertTriangle className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
                                                     {item}
                                                 </li>
                                             ))}
@@ -217,66 +216,66 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Contribution Limits */}
-                <section id="contribution-limits" className="py-16 bg-slate-900">
+                <section id="contribution-limits" className="py-16 bg-slate-50">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4 text-center">
                                 Solo 401k Contribution Limits (2026)
                             </h2>
-                            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                            <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                                 The Solo 401k has the highest contribution limits of any self-employed retirement plan.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-8 mb-8">
                                 {/* Under 50 */}
-                                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-                                    <h3 className="text-xl font-bold text-white mb-6 text-center">Under Age 50</h3>
+                                <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                                    <h3 className="text-xl font-bold text-[#000080] mb-6 text-center">Under Age 50</h3>
                                     <div className="space-y-4">
-                                        <div className="flex justify-between items-center py-3 border-b border-white/10">
-                                            <span className="text-slate-400">Employee Deferral</span>
-                                            <span className="text-white font-bold">$23,500</span>
+                                        <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                                            <span className="text-slate-500">Employee Deferral</span>
+                                            <span className="text-slate-900 font-bold">$23,500</span>
                                         </div>
-                                        <div className="flex justify-between items-center py-3 border-b border-white/10">
-                                            <span className="text-slate-400">Employer Contribution</span>
-                                            <span className="text-white font-bold">Up to 25%*</span>
+                                        <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                                            <span className="text-slate-500">Employer Contribution</span>
+                                            <span className="text-slate-900 font-bold">Up to 25%*</span>
                                         </div>
-                                        <div className="flex justify-between items-center py-3 bg-purple-500/10 rounded-lg px-3">
-                                            <span className="text-purple-400 font-semibold">Total Maximum</span>
-                                            <span className="text-purple-400 font-bold text-xl">$70,000</span>
+                                        <div className="flex justify-between items-center py-3 bg-purple-50 rounded-lg px-3">
+                                            <span className="text-purple-700 font-semibold">Total Maximum</span>
+                                            <span className="text-purple-700 font-bold text-xl">$70,000</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* 50 and Over */}
-                                <div className="bg-white/5 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-8">
-                                    <h3 className="text-xl font-bold text-white mb-6 text-center">Age 50 or Older</h3>
+                                <div className="bg-white border border-purple-300 rounded-2xl p-8">
+                                    <h3 className="text-xl font-bold text-[#000080] mb-6 text-center">Age 50 or Older</h3>
                                     <div className="space-y-4">
-                                        <div className="flex justify-between items-center py-3 border-b border-white/10">
-                                            <span className="text-slate-400">Employee Deferral</span>
-                                            <span className="text-white font-bold">$23,500</span>
+                                        <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                                            <span className="text-slate-500">Employee Deferral</span>
+                                            <span className="text-slate-900 font-bold">$23,500</span>
                                         </div>
-                                        <div className="flex justify-between items-center py-3 border-b border-white/10">
-                                            <span className="text-slate-400">Catch-Up Contribution</span>
-                                            <span className="text-white font-bold">$7,500</span>
+                                        <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                                            <span className="text-slate-500">Catch-Up Contribution</span>
+                                            <span className="text-slate-900 font-bold">$7,500</span>
                                         </div>
-                                        <div className="flex justify-between items-center py-3 border-b border-white/10">
-                                            <span className="text-slate-400">Employer Contribution</span>
-                                            <span className="text-white font-bold">Up to 25%*</span>
+                                        <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                                            <span className="text-slate-500">Employer Contribution</span>
+                                            <span className="text-slate-900 font-bold">Up to 25%*</span>
                                         </div>
-                                        <div className="flex justify-between items-center py-3 bg-purple-500/10 rounded-lg px-3">
-                                            <span className="text-purple-400 font-semibold">Total Maximum</span>
-                                            <span className="text-purple-400 font-bold text-xl">$77,500</span>
+                                        <div className="flex justify-between items-center py-3 bg-purple-50 rounded-lg px-3">
+                                            <span className="text-purple-700 font-semibold">Total Maximum</span>
+                                            <span className="text-purple-700 font-bold text-xl">$77,500</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <p className="text-slate-400 text-sm text-center">
+                            <p className="text-slate-500 text-sm text-center">
                                 *25% of net self-employment income (20% of net profit after self-employment tax deduction for sole proprietors/LLCs)
                             </p>
 
                             <div className="mt-8 text-center">
-                                <Button variant="outline" asChild>
+                                <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                     <Link href="/learn/solo-401k-contribution-limits">
                                         View Detailed Contribution Rules
                                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -288,23 +287,23 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Solo 401k vs SEP IRA */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-white">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4 text-center">
                             Solo 401k vs SEP IRA
                         </h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                             The Solo 401k offers significant advantages over a SEP IRA for most self-employed individuals.
                         </p>
 
                         <div className="max-w-4xl mx-auto overflow-x-auto">
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
                                 <table className="w-full min-w-[600px]">
                                     <thead>
-                                        <tr className="border-b border-white/10">
-                                            <th className="text-left p-4 text-white font-semibold">Feature</th>
-                                            <th className="text-center p-4 text-purple-400 font-semibold bg-purple-500/5">Solo 401k</th>
-                                            <th className="text-center p-4 text-white font-semibold">SEP IRA</th>
+                                        <tr className="border-b border-slate-200">
+                                            <th className="text-left p-4 text-slate-900 font-semibold">Feature</th>
+                                            <th className="text-center p-4 text-purple-700 font-semibold bg-purple-50">Solo 401k</th>
+                                            <th className="text-center p-4 text-slate-900 font-semibold">SEP IRA</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -318,10 +317,10 @@ export default function Solo401kPage() {
                                             { feature: "Spouse Can Participate", solo: "Yes", sep: "Yes" },
                                             { feature: "Complexity", solo: "Moderate", sep: "Simple" },
                                         ].map((row, index) => (
-                                            <tr key={index} className="border-b border-white/5">
-                                                <td className="p-4 text-white">{row.feature}</td>
-                                                <td className="p-4 text-center text-slate-300 bg-purple-500/5">{row.solo}</td>
-                                                <td className="p-4 text-center text-slate-400">{row.sep}</td>
+                                            <tr key={index} className="border-b border-slate-100">
+                                                <td className="p-4 text-slate-900">{row.feature}</td>
+                                                <td className="p-4 text-center text-slate-600 bg-purple-50">{row.solo}</td>
+                                                <td className="p-4 text-center text-slate-500">{row.sep}</td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -330,7 +329,7 @@ export default function Solo401kPage() {
                         </div>
 
                         <div className="mt-8 text-center">
-                            <Button variant="outline" asChild>
+                            <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                 <Link href="/learn/solo-401k-vs-sep-ira">
                                     Full Solo 401k vs SEP IRA Comparison
                                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -341,9 +340,9 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Key Benefits */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-12 text-center">
                             Solo 401k Benefits
                         </h2>
 
@@ -380,10 +379,10 @@ export default function Solo401kPage() {
                                     description: "If your spouse works in the business, they can also participate and contribute."
                                 }
                             ].map((benefit, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                                    <benefit.icon className="w-8 h-8 text-purple-400 mb-4" />
-                                    <h3 className="text-lg font-bold text-white mb-2">{benefit.title}</h3>
-                                    <p className="text-slate-400 text-sm">{benefit.description}</p>
+                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-6">
+                                    <benefit.icon className="w-8 h-8 text-purple-600 mb-4" />
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">{benefit.title}</h3>
+                                    <p className="text-slate-500 text-sm">{benefit.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -391,12 +390,12 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Top Providers */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-white">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4 text-center">
                             Best Solo 401k Providers (2026)
                         </h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                             Choose a provider based on your needs: simple investing, checkbook control, or alternative investments.
                         </p>
 
@@ -432,32 +431,32 @@ export default function Solo401kPage() {
                             ].map((provider, index) => (
                                 <div
                                     key={index}
-                                    className={`bg-white/5 backdrop-blur-sm border rounded-2xl p-6 ${provider.featured ? 'border-purple-500/30' : 'border-white/10'
+                                    className={`bg-slate-50 border rounded-2xl p-6 ${provider.featured ? 'border-purple-400' : 'border-slate-200'
                                         }`}
                                 >
                                     {provider.featured && (
-                                        <div className="text-xs font-bold text-purple-400 uppercase tracking-wide mb-3">
+                                        <div className="text-xs font-bold text-purple-600 uppercase tracking-wide mb-3">
                                             Best for Alt Investments
                                         </div>
                                     )}
-                                    <h3 className="text-xl font-bold text-white mb-1">{provider.name}</h3>
+                                    <h3 className="text-xl font-bold text-slate-900 mb-1">{provider.name}</h3>
                                     <p className="text-slate-500 text-sm mb-3">{provider.type}</p>
-                                    <p className="text-slate-400 text-sm mb-4">{provider.description}</p>
+                                    <p className="text-slate-500 text-sm mb-4">{provider.description}</p>
 
                                     <div className="space-y-2 mb-6">
                                         <div className="flex justify-between text-sm">
-                                            <span className="text-slate-400">Fees:</span>
-                                            <span className="text-white">{provider.fee}</span>
+                                            <span className="text-slate-500">Fees:</span>
+                                            <span className="text-slate-900">{provider.fee}</span>
                                         </div>
                                         <div className="flex justify-between text-sm">
-                                            <span className="text-slate-400">Best For:</span>
-                                            <span className="text-white text-right">{provider.best}</span>
+                                            <span className="text-slate-500">Best For:</span>
+                                            <span className="text-slate-900 text-right">{provider.best}</span>
                                         </div>
                                     </div>
 
                                     <Button
                                         variant={provider.featured ? "gold" : "outline"}
-                                        className="w-full"
+                                        className={`w-full ${provider.featured ? 'bg-[#B22234] hover:bg-[#8b1c2a] text-white' : 'border-slate-300 text-slate-700 hover:bg-slate-100'}`}
                                         asChild
                                     >
                                         <a
@@ -473,7 +472,7 @@ export default function Solo401kPage() {
                         </div>
 
                         <div className="mt-8 text-center">
-                            <Button variant="outline" asChild>
+                            <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                 <Link href="/learn/solo-401k-providers">
                                     Compare All Solo 401k Providers
                                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -484,9 +483,9 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-12 text-center">
                             Solo 401k FAQ
                         </h2>
 
@@ -521,9 +520,9 @@ export default function Solo401kPage() {
                                     answer: "Yes, if your spouse earns income from your business, they can participate in the Solo 401k and make their own contributions, potentially doubling your household's retirement savings."
                                 }
                             ].map((faq, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-white mb-3">{faq.question}</h3>
-                                    <p className="text-slate-400">{faq.answer}</p>
+                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-6">
+                                    <h3 className="text-lg font-bold text-slate-900 mb-3">{faq.question}</h3>
+                                    <p className="text-slate-500">{faq.answer}</p>
                                 </div>
                             ))}
                         </div>
@@ -531,18 +530,18 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16 bg-gradient-to-br from-purple-500/10 via-slate-800 to-slate-900">
+                <section className="py-16 bg-gradient-to-r from-[#000080] to-[#000060]">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                                 Working for Yourself Shouldn&apos;t Mean Falling Behind
                             </h2>
-                            <p className="text-xl text-slate-300 mb-8">
+                            <p className="text-xl text-slate-200 mb-8">
                                 You took the risk of going independent. A Solo 401k lets you save for retirement like the big companies do—sometimes even better. If you&apos;ve got self-employment income, this is one of the best tax breaks available.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="gold" size="lg" asChild>
+                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
                                     <a
                                         href={getTrackedLink(AFFILIATE_LINKS.rocketDollar, "solo401k-bottom-cta", "rocketdollar")}
                                         target="_blank"
@@ -552,7 +551,7 @@ export default function Solo401kPage() {
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="lg" asChild>
+                                <Button variant="outline" size="lg" asChild className="border-white/30 text-white hover:bg-white/10">
                                     <Link href="/learn/solo-401k-vs-sep-ira">
                                         Compare to SEP IRA
                                     </Link>
@@ -563,9 +562,9 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Related Content */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-white">
                     <Container>
-                        <h2 className="text-2xl font-bold text-white mb-8 text-center">
+                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
                             Related Resources
                         </h2>
 
@@ -579,12 +578,12 @@ export default function Solo401kPage() {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors group"
+                                    className="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:bg-slate-100 transition-colors group"
                                 >
-                                    <h3 className="text-white font-semibold mb-1 group-hover:text-purple-400 transition-colors">
+                                    <h3 className="text-slate-900 font-semibold mb-1 group-hover:text-purple-600 transition-colors">
                                         {link.title}
                                     </h3>
-                                    <p className="text-slate-400 text-sm">{link.desc}</p>
+                                    <p className="text-slate-500 text-sm">{link.desc}</p>
                                 </Link>
                             ))}
                         </div>
@@ -592,7 +591,7 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Augusta CTA */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50">
                     <Container>
                         <AugustaCTA
                             variant="footer"

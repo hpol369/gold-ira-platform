@@ -50,24 +50,24 @@ export default function MillenniumTrustReviewPage() {
     const augustaLink = getTrackedLink(AFFILIATE_LINKS.augusta, "review-millennium-trust-cta", "augusta");
 
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 relative overflow-hidden">
+            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 text-purple-400 text-sm font-bold uppercase tracking-wider mb-4">
+                        <div className="flex items-center gap-2 text-purple-200 text-sm font-bold uppercase tracking-wider mb-4">
                             <span className="bg-purple-500/20 px-3 py-1 rounded-full">Custodian Reviews</span>
-                            <span className="text-slate-500">|</span>
-                            <span className="text-slate-400">Updated January 2026</span>
+                            <span className="text-white/50">|</span>
+                            <span className="text-white/70">Updated January 2026</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                             Millennium Trust Review 2026: <br />
-                            <span className="text-slate-400">Automatic Rollover Specialist</span>
+                            <span className="text-white/70">Automatic Rollover Specialist</span>
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                        <p className="text-xl text-white/80 max-w-2xl leading-relaxed">
                             Millennium Trust handles orphaned 401k accounts and automatic rollovers. If your former employer moved your retirement funds here, this is what you need to know.
                         </p>
                     </div>
@@ -92,12 +92,12 @@ export default function MillenniumTrustReviewPage() {
                             />
 
                             {/* Important Notice */}
-                            <div className="bg-amber-900/30 border border-amber-500/30 rounded-xl p-6 mb-8">
+                            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
                                 <div className="flex items-start gap-4">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 flex-shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="text-white font-bold mb-2">Important: You Likely Did Not Choose Millennium Trust</h3>
-                                        <p className="text-slate-300 text-sm">
+                                        <h3 className="text-amber-800 font-bold mb-2">Important: You Likely Did Not Choose Millennium Trust</h3>
+                                        <p className="text-amber-700 text-sm">
                                             Unlike other custodians, most Millennium Trust accounts are created automatically when former employers roll over unclaimed 401k funds. If you have money here, it was likely transferred without your active involvement.
                                         </p>
                                     </div>
@@ -105,56 +105,56 @@ export default function MillenniumTrustReviewPage() {
                             </div>
 
                             {/* Quick Facts */}
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 mb-8">
-                                <h2 className="text-xl font-serif font-bold text-white mb-4">Millennium Trust at a Glance</h2>
+                            <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8">
+                                <h2 className="text-xl font-serif font-bold text-[#000080] mb-4">Millennium Trust at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
-                                        <Building2 className="w-5 h-5 text-purple-400" />
+                                        <Building2 className="w-5 h-5 text-purple-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Founded</p>
-                                            <p className="text-white font-medium">{companyData.founded}</p>
+                                            <p className="text-slate-500 text-sm">Founded</p>
+                                            <p className="text-slate-900 font-medium">{companyData.founded}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <DollarSign className="w-5 h-5 text-green-400" />
+                                        <DollarSign className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Assets Under Custody</p>
-                                            <p className="text-white font-medium">{companyData.assetsUnderCustody}</p>
+                                            <p className="text-slate-500 text-sm">Assets Under Custody</p>
+                                            <p className="text-slate-900 font-medium">{companyData.assetsUnderCustody}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Users className="w-5 h-5 text-blue-400" />
+                                        <Users className="w-5 h-5 text-blue-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Total Accounts</p>
-                                            <p className="text-white font-medium">{companyData.accounts}</p>
+                                            <p className="text-slate-500 text-sm">Total Accounts</p>
+                                            <p className="text-slate-900 font-medium">{companyData.accounts}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Shield className="w-5 h-5 text-amber-400" />
+                                        <Shield className="w-5 h-5 text-[#B22234]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">BBB Rating</p>
-                                            <p className="text-white font-medium">{companyData.bbbRating}</p>
+                                            <p className="text-slate-500 text-sm">BBB Rating</p>
+                                            <p className="text-slate-900 font-medium">{companyData.bbbRating}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <RefreshCw className="w-5 h-5 text-teal-400" />
+                                        <RefreshCw className="w-5 h-5 text-teal-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Specialty</p>
-                                            <p className="text-white font-medium text-sm">{companyData.specialty}</p>
+                                            <p className="text-slate-500 text-sm">Specialty</p>
+                                            <p className="text-slate-900 font-medium text-sm">{companyData.specialty}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Briefcase className="w-5 h-5 text-orange-400" />
+                                        <Briefcase className="w-5 h-5 text-orange-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Headquarters</p>
-                                            <p className="text-white font-medium">{companyData.headquarters}</p>
+                                            <p className="text-slate-500 text-sm">Headquarters</p>
+                                            <p className="text-slate-900 font-medium">{companyData.headquarters}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Article Content */}
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-purple-400 hover:prose-a:text-purple-300">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-purple-600 hover:prose-a:text-purple-700">
 
                                 <h2>What is Millennium Trust?</h2>
                                 <p>
@@ -200,34 +200,34 @@ export default function MillenniumTrustReviewPage() {
                                     This is where Millennium Trust becomes problematic for small balances:
                                 </p>
 
-                                <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-white/5">
+                                        <thead className="bg-slate-100">
                                             <tr>
-                                                <th className="text-left p-4 text-white font-semibold">Fee Type</th>
-                                                <th className="text-left p-4 text-white font-semibold">Amount</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Amount</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-white/10">
+                                        <tbody className="divide-y divide-slate-200">
                                             <tr>
-                                                <td className="p-4 text-slate-300">Annual Account Fee</td>
-                                                <td className="p-4 text-amber-400 font-medium">$50</td>
+                                                <td className="p-4 text-slate-600">Annual Account Fee</td>
+                                                <td className="p-4 text-[#B22234] font-medium">$50</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Asset-Based Fee (some plans)</td>
-                                                <td className="p-4 text-slate-300">0.65% annually</td>
+                                                <td className="p-4 text-slate-600">Asset-Based Fee (some plans)</td>
+                                                <td className="p-4 text-slate-600">0.65% annually</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Distribution Fee</td>
-                                                <td className="p-4 text-slate-300">$35 - $50</td>
+                                                <td className="p-4 text-slate-600">Distribution Fee</td>
+                                                <td className="p-4 text-slate-600">$35 - $50</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Rollover Out Fee</td>
-                                                <td className="p-4 text-slate-300">$0 - $35</td>
+                                                <td className="p-4 text-slate-600">Rollover Out Fee</td>
+                                                <td className="p-4 text-slate-600">$0 - $35</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Paper Statement Fee</td>
-                                                <td className="p-4 text-slate-300">$2 per statement</td>
+                                                <td className="p-4 text-slate-600">Paper Statement Fee</td>
+                                                <td className="p-4 text-slate-600">$2 per statement</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -242,36 +242,36 @@ export default function MillenniumTrustReviewPage() {
 
                             {/* Action Steps */}
                             <div className="grid gap-4 my-8">
-                                <div className="bg-green-900/20 border border-green-500/20 rounded-lg p-5">
+                                <div className="bg-green-50 border border-green-200 rounded-lg p-5">
                                     <div className="flex items-start gap-4">
-                                        <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
+                                        <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                                         <div>
-                                            <h3 className="text-white font-bold mb-1">Option 1: Roll to Your Current Employer&apos;s 401k</h3>
-                                            <p className="text-slate-400 text-sm">If your new employer allows rollovers into their plan, this consolidates your accounts and may offer lower fees.</p>
+                                            <h3 className="text-green-800 font-bold mb-1">Option 1: Roll to Your Current Employer&apos;s 401k</h3>
+                                            <p className="text-green-700 text-sm">If your new employer allows rollovers into their plan, this consolidates your accounts and may offer lower fees.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-green-900/20 border border-green-500/20 rounded-lg p-5">
+                                <div className="bg-green-50 border border-green-200 rounded-lg p-5">
                                     <div className="flex items-start gap-4">
-                                        <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
+                                        <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                                         <div>
-                                            <h3 className="text-white font-bold mb-1">Option 2: Roll to a Low-Cost IRA</h3>
-                                            <p className="text-slate-400 text-sm">Transfer to Fidelity, Schwab, or Vanguard where annual fees are $0 for most accounts.</p>
+                                            <h3 className="text-green-800 font-bold mb-1">Option 2: Roll to a Low-Cost IRA</h3>
+                                            <p className="text-green-700 text-sm">Transfer to Fidelity, Schwab, or Vanguard where annual fees are $0 for most accounts.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-blue-900/20 border border-blue-500/20 rounded-lg p-5">
+                                <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
                                     <div className="flex items-start gap-4">
-                                        <Clock className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
+                                        <Clock className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                                         <div>
-                                            <h3 className="text-white font-bold mb-1">Option 3: Leave It (Small Balances Only)</h3>
-                                            <p className="text-slate-400 text-sm">If your balance is very small (under $500), the hassle of moving it may not be worth it. But fees will continue to erode the balance.</p>
+                                            <h3 className="text-blue-800 font-bold mb-1">Option 3: Leave It (Small Balances Only)</h3>
+                                            <p className="text-blue-700 text-sm">If your balance is very small (under $500), the hassle of moving it may not be worth it. But fees will continue to erode the balance.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-purple-400">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-purple-600">
 
                                 <h2>How to Roll Out of Millennium Trust</h2>
                                 <ol>
@@ -298,7 +298,7 @@ export default function MillenniumTrustReviewPage() {
                                     However, for these services, competitors like Equity Trust (SDIRAs) or Lively (HSAs) typically offer better value.
                                 </p>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict</h2>
                                 <p>
@@ -311,7 +311,7 @@ export default function MillenniumTrustReviewPage() {
 
                             {/* FAQ Section */}
                             <div className="mt-12">
-                                <h2 className="text-2xl font-serif font-bold text-white mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {[
                                         {
@@ -331,56 +331,59 @@ export default function MillenniumTrustReviewPage() {
                                             a: "Visit mtrustcompany.com and click 'Account Login' or 'Register.' You'll need identifying information from your former employer or the letter Millennium Trust should have sent you."
                                         },
                                     ].map((faq, i) => (
-                                        <div key={i} className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                            <h3 className="font-bold text-white mb-2">{faq.q}</h3>
-                                            <p className="text-slate-400 text-sm">{faq.a}</p>
+                                        <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
+                                            <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
+                                            <p className="text-slate-600 text-sm">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Augusta CTA */}
-                            <div className="bg-gradient-to-br from-amber-900/50 to-slate-900 text-white p-8 rounded-2xl text-center mt-12 border border-amber-500/20">
-                                <h3 className="text-2xl font-serif font-bold mb-4">Roll Your Orphaned 401k Into a Gold IRA</h3>
-                                <p className="mb-6 text-slate-300 max-w-lg mx-auto">
-                                    Instead of leaving your money in a high-fee automatic rollover account, consider converting to a Gold IRA with Augusta Precious Metals.
-                                </p>
-                                <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
-                                    <a href={augustaLink} target="_blank" rel="noopener noreferrer">
-                                        Get Augusta&apos;s Free Gold IRA Guide
-                                        <ArrowRight className="ml-2 w-5 h-5" />
-                                    </a>
-                                </Button>
-                                <p className="text-xs text-slate-500 mt-4">$50k minimum | Up to 10 years fees waived | A+ BBB Rating</p>
+                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                                <div className="relative z-10">
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Roll Your Orphaned 401k Into a Gold IRA</h3>
+                                    <p className="mb-6 text-white/80 max-w-lg mx-auto">
+                                        Instead of leaving your money in a high-fee automatic rollover account, consider converting to a Gold IRA with Augusta Precious Metals.
+                                    </p>
+                                    <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
+                                        <a href={augustaLink} target="_blank" rel="noopener noreferrer">
+                                            Get Augusta&apos;s Free Gold IRA Guide
+                                            <ArrowRight className="ml-2 w-5 h-5" />
+                                        </a>
+                                    </Button>
+                                    <p className="text-xs text-white/60 mt-4">$50k minimum | Up to 10 years fees waived | A+ BBB Rating</p>
+                                </div>
                             </div>
                         </article>
 
                         {/* Sidebar */}
                         <aside className="relative">
                             <div className="hidden lg:block sticky top-24 space-y-6">
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-white">Better Alternatives</h3>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Better Alternatives</h3>
                                     <div className="space-y-3">
-                                        <Link href="/reviews/equity-trust" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/reviews/equity-trust" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Equity Trust Review
                                         </Link>
-                                        <Link href="/reviews/rocket-dollar" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/reviews/rocket-dollar" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Rocket Dollar Review
                                         </Link>
-                                        <Link href="/rollover" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/rollover" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             How to Rollover Your 401k
                                         </Link>
                                     </div>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-xl border border-white/10 text-center">
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
                                     <div className="flex justify-center gap-1 mb-2">
                                         {[1,2,3,4,5].map(i => (
-                                            <Star key={i} className={`w-5 h-5 ${i <= 3 ? 'text-amber-400 fill-amber-400' : 'text-amber-400/30'}`} />
+                                            <Star key={i} className={`w-5 h-5 ${i <= 3 ? 'text-[#B22234] fill-[#B22234]' : 'text-[#B22234]/30'}`} />
                                         ))}
                                     </div>
-                                    <p className="text-white font-bold">3.5 / 5</p>
-                                    <p className="text-slate-400 text-xs mt-1">Our Rating</p>
+                                    <p className="text-[#000080] font-bold">3.5 / 5</p>
+                                    <p className="text-slate-500 text-xs mt-1">Our Rating</p>
                                 </div>
                             </div>
                         </aside>

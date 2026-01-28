@@ -91,19 +91,19 @@ const schema = {
 
 export default function PreciousMetalsIraRulesPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             IRS Guidelines
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Precious Metals IRA Rules
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             You've worked 30+ years to build your 401k. Before you move any of it to gold, you need to understand the IRS rules—because breaking them means taxes and penalties that could cost you thousands. Here's the straight talk, in plain English.
                         </p>
                     </div>
@@ -118,7 +118,7 @@ export default function PreciousMetalsIraRulesPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -132,7 +132,7 @@ export default function PreciousMetalsIraRulesPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Fineness (Purity) Requirements</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Fineness (Purity) Requirements</h2>
                             </div>
                             <p>
                                 Not all gold qualifies for an IRA. The IRS sets strict purity requirements—and if you buy the wrong coins, you could trigger taxes and penalties. Here are the minimums:
@@ -172,7 +172,7 @@ export default function PreciousMetalsIraRulesPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <Gavel className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Strict Storage Regulations</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Strict Storage Regulations</h2>
                             </div>
                             <p>
                                 This is where people get into trouble. <strong>You cannot hold the gold yourself—not in your safe, not in your closet, not buried in the backyard.</strong>
@@ -213,8 +213,8 @@ export default function PreciousMetalsIraRulesPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Don't Want to Navigate the Rules Alone?</h3>
                                 <p className="mb-6 text-gray-200">A good Gold IRA company handles all this compliance for you—the paperwork, the storage, the IRS requirements. That's what you're paying them for.</p>
@@ -229,14 +229,14 @@ export default function PreciousMetalsIraRulesPage() {
                             <h2>Rules & Regs FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                    <details key={index} className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                                 <FileText className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-400">
+                                        <p className="mt-4 leading-relaxed text-slate-600">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -251,7 +251,7 @@ export default function PreciousMetalsIraRulesPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-precious-metals-ira-rules" />
                 </Container>

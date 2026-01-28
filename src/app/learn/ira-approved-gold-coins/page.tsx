@@ -101,19 +101,19 @@ const schema = {
 
 export default function IraApprovedGoldCoinsPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Investment Guide
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             IRA-Approved Gold Coins & Bars
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             Not all gold qualifies for an IRA. Buy the wrong kind and the IRS will hit you with taxes and penalties. Here&apos;s exactly what you can and can&apos;t put in your retirement account.
                         </p>
                     </div>
@@ -128,7 +128,7 @@ export default function IraApprovedGoldCoinsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -141,24 +141,24 @@ export default function IraApprovedGoldCoinsPage() {
                                 Here&apos;s the simple version: the gold needs to be pure enough, and it needs to come from approved mints and refiners. Let&apos;s break it down.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">IRS Purity Requirements</h4>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">IRS Purity Requirements</h4>
                                 <div className="space-y-3">
-                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="font-medium text-white">Gold</span>
-                                        <span className="text-secondary font-bold">99.5% pure (0.995)</span>
+                                    <div className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg">
+                                        <span className="font-medium text-slate-900">Gold</span>
+                                        <span className="text-[#B22234] font-bold">99.5% pure (0.995)</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="font-medium text-white">Silver</span>
-                                        <span className="text-secondary font-bold">99.9% pure (0.999)</span>
+                                    <div className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg">
+                                        <span className="font-medium text-slate-900">Silver</span>
+                                        <span className="text-[#B22234] font-bold">99.9% pure (0.999)</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="font-medium text-white">Platinum</span>
-                                        <span className="text-secondary font-bold">99.95% pure (0.9995)</span>
+                                    <div className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg">
+                                        <span className="font-medium text-slate-900">Platinum</span>
+                                        <span className="text-[#B22234] font-bold">99.95% pure (0.9995)</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="font-medium text-white">Palladium</span>
-                                        <span className="text-secondary font-bold">99.95% pure (0.9995)</span>
+                                    <div className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg">
+                                        <span className="font-medium text-slate-900">Palladium</span>
+                                        <span className="text-[#B22234] font-bold">99.95% pure (0.9995)</span>
                                     </div>
                                 </div>
                             </div>
@@ -174,63 +174,63 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-secondary/10 rounded-lg text-secondary">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">IRA-Approved Gold Coins</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">IRA-Approved Gold Coins</h2>
                             </div>
                             <p>
                                 These gold coins meet IRS requirements and are commonly held in Gold IRAs:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Coin</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Purity</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Sizes</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Premium</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Coin</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Purity</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Sizes</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Premium</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm">
+                                    <tbody className="divide-y divide-slate-200 text-sm">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">American Gold Eagle</td>
-                                            <td className="p-4 text-slate-400">91.67% (22k)*</td>
-                                            <td className="p-4 text-slate-400">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
-                                            <td className="p-4 text-slate-400">4-8%</td>
+                                            <td className="p-4 font-semibold text-slate-900">American Gold Eagle</td>
+                                            <td className="p-4 text-slate-600">91.67% (22k)*</td>
+                                            <td className="p-4 text-slate-600">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
+                                            <td className="p-4 text-slate-600">4-8%</td>
                                         </tr>
-                                        <tr className="bg-slate-800/50">
-                                            <td className="p-4 font-semibold text-white">American Gold Buffalo</td>
-                                            <td className="p-4 text-slate-400">99.99% (24k)</td>
-                                            <td className="p-4 text-slate-400">1 oz</td>
-                                            <td className="p-4 text-slate-400">5-8%</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="p-4 font-semibold text-white">Canadian Gold Maple Leaf</td>
-                                            <td className="p-4 text-slate-400">99.99% (24k)</td>
-                                            <td className="p-4 text-slate-400">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
-                                            <td className="p-4 text-slate-400">3-6%</td>
-                                        </tr>
-                                        <tr className="bg-slate-800/50">
-                                            <td className="p-4 font-semibold text-white">Austrian Gold Philharmonic</td>
-                                            <td className="p-4 text-slate-400">99.99% (24k)</td>
-                                            <td className="p-4 text-slate-400">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
-                                            <td className="p-4 text-slate-400">3-6%</td>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">American Gold Buffalo</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">1 oz</td>
+                                            <td className="p-4 text-slate-600">5-8%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Australian Gold Kangaroo</td>
-                                            <td className="p-4 text-slate-400">99.99% (24k)</td>
-                                            <td className="p-4 text-slate-400">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
-                                            <td className="p-4 text-slate-400">3-6%</td>
+                                            <td className="p-4 font-semibold text-slate-900">Canadian Gold Maple Leaf</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
+                                            <td className="p-4 text-slate-600">3-6%</td>
                                         </tr>
-                                        <tr className="bg-slate-800/50">
-                                            <td className="p-4 font-semibold text-white">British Gold Britannia</td>
-                                            <td className="p-4 text-slate-400">99.99% (24k)</td>
-                                            <td className="p-4 text-slate-400">1 oz</td>
-                                            <td className="p-4 text-slate-400">3-6%</td>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">Austrian Gold Philharmonic</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
+                                            <td className="p-4 text-slate-600">3-6%</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 font-semibold text-slate-900">Australian Gold Kangaroo</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">1 oz, 1/2 oz, 1/4 oz, 1/10 oz</td>
+                                            <td className="p-4 text-slate-600">3-6%</td>
+                                        </tr>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">British Gold Britannia</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">1 oz</td>
+                                            <td className="p-4 text-slate-600">3-6%</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <p className="text-sm text-slate-400">*American Gold Eagle is specifically approved by Congress despite lower purity.</p>
+                            <p className="text-sm text-slate-600">*American Gold Eagle is specifically approved by Congress despite lower purity.</p>
 
                             <h3>Most Popular Choice: American Gold Eagle</h3>
                             <p>
@@ -255,7 +255,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-primary/10 rounded-lg text-primary">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">IRA-Approved Gold Bars</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">IRA-Approved Gold Bars</h2>
                             </div>
                             <p>
                                 Gold bars must meet two requirements: (1) 99.5% purity minimum, and (2) produced by a NYMEX/COMEX-approved refiner or national mint.
@@ -290,8 +290,8 @@ export default function IraApprovedGoldCoinsPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Let Someone Else Handle the Details</h3>
                                 <p className="mb-6 text-gray-200">A good Gold IRA company knows exactly which products are approved. They won&apos;t sell you anything that causes IRS problems.</p>
@@ -304,10 +304,10 @@ export default function IraApprovedGoldCoinsPage() {
                         {/* Approved Silver */}
                         <section id="silver" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-800/50 rounded-lg text-slate-400">
+                                <div className="p-3 bg-slate-100 rounded-lg text-slate-600">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">IRA-Approved Silver</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">IRA-Approved Silver</h2>
                             </div>
                             <p>
                                 Silver must be at least <strong>99.9% pure</strong> to qualify for an IRA. Here are the most popular options:
@@ -315,34 +315,34 @@ export default function IraApprovedGoldCoinsPage() {
 
                             <h3>Approved Silver Coins</h3>
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Coin</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Purity</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Premium</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Coin</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Purity</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Premium</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm">
+                                    <tbody className="divide-y divide-slate-200 text-sm">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">American Silver Eagle</td>
-                                            <td className="p-4 text-slate-400">99.9%</td>
-                                            <td className="p-4 text-slate-400">10-20%</td>
+                                            <td className="p-4 font-semibold text-slate-900">American Silver Eagle</td>
+                                            <td className="p-4 text-slate-600">99.9%</td>
+                                            <td className="p-4 text-slate-600">10-20%</td>
                                         </tr>
-                                        <tr className="bg-slate-800/50">
-                                            <td className="p-4 font-semibold text-white">Canadian Silver Maple Leaf</td>
-                                            <td className="p-4 text-slate-400">99.99%</td>
-                                            <td className="p-4 text-slate-400">8-15%</td>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">Canadian Silver Maple Leaf</td>
+                                            <td className="p-4 text-slate-600">99.99%</td>
+                                            <td className="p-4 text-slate-600">8-15%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Austrian Silver Philharmonic</td>
-                                            <td className="p-4 text-slate-400">99.9%</td>
-                                            <td className="p-4 text-slate-400">8-12%</td>
+                                            <td className="p-4 font-semibold text-slate-900">Austrian Silver Philharmonic</td>
+                                            <td className="p-4 text-slate-600">99.9%</td>
+                                            <td className="p-4 text-slate-600">8-12%</td>
                                         </tr>
-                                        <tr className="bg-slate-800/50">
-                                            <td className="p-4 font-semibold text-white">British Silver Britannia</td>
-                                            <td className="p-4 text-slate-400">99.9%</td>
-                                            <td className="p-4 text-slate-400">8-12%</td>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">British Silver Britannia</td>
+                                            <td className="p-4 text-slate-600">99.9%</td>
+                                            <td className="p-4 text-slate-600">8-12%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -369,7 +369,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Platinum & Palladium</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Platinum & Palladium</h2>
                             </div>
                             <p>
                                 Both platinum and palladium require <strong>99.95% purity</strong> for IRA eligibility.
@@ -399,7 +399,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <XCircle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What&apos;s NOT Allowed</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What&apos;s NOT Allowed</h2>
                             </div>
                             <p>
                                 These products do NOT qualify for a Gold IRA:
@@ -446,39 +446,39 @@ export default function IraApprovedGoldCoinsPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Shield className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Choose the Right Products</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">How to Choose the Right Products</h2>
                             </div>
                             <p>
                                 Consider these factors when selecting gold and silver for your IRA:
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-white">Consider Premiums</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Bars have lower premiums than coins. If you&apos;re maximizing gold per dollar, consider bars from reputable refiners.</p>
+                                        <h4 className="font-bold text-slate-900">Consider Premiums</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Bars have lower premiums than coins. If you&apos;re maximizing gold per dollar, consider bars from reputable refiners.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-white">Consider Liquidity</h4>
-                                        <p className="text-sm text-slate-400 mt-1">American Gold Eagles are the most recognized and liquid. They may sell faster and at better prices when you need to liquidate.</p>
+                                        <h4 className="font-bold text-slate-900">Consider Liquidity</h4>
+                                        <p className="text-sm text-slate-600 mt-1">American Gold Eagles are the most recognized and liquid. They may sell faster and at better prices when you need to liquidate.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-white">Consider Storage</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Smaller denominations (1/4 oz, 1/10 oz) offer flexibility for partial distributions but carry higher per-ounce premiums.</p>
+                                        <h4 className="font-bold text-slate-900">Consider Storage</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Smaller denominations (1/4 oz, 1/10 oz) offer flexibility for partial distributions but carry higher per-ounce premiums.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-sm">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-white">Consider Diversification</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Many investors hold a mix: gold for stability, silver for growth potential. Common allocations range from 60/40 to 80/20 gold/silver.</p>
+                                        <h4 className="font-bold text-slate-900">Consider Diversification</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Many investors hold a mix: gold for stability, silver for growth potential. Common allocations range from 60/40 to 80/20 gold/silver.</p>
                                     </div>
                                 </div>
                             </div>
@@ -499,58 +499,58 @@ export default function IraApprovedGoldCoinsPage() {
                             <h2>IRA-Approved Gold FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Can I put my existing gold coins in an IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         No. You cannot contribute physical gold you already own to an IRA. IRA purchases must go through your custodian using IRA funds. If you want to add personal gold to your retirement, you&apos;d need to sell it, contribute the cash (subject to limits), then repurchase gold through the IRA.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Why are Krugerrands not allowed?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         South African Krugerrands are only 91.67% gold (22 karat)—the same as American Eagles. However, Krugerrands don&apos;t have US legal tender status and weren&apos;t specifically approved by Congress like American Eagles were. It&apos;s a regulatory technicality, not a quality issue.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Are proof coins allowed in an IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Some proof versions of approved coins (like Proof American Gold Eagles) are allowed. However, proof coins carry significant premiums over bullion versions. Unless you specifically want them, standard bullion coins offer better value for an IRA.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What happens if I buy non-approved gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Buying non-approved products is considered a &quot;prohibited transaction&quot; that can disqualify your entire IRA. This would make the full account value immediately taxable, plus a 10% penalty if you&apos;re under 59½. Always verify products are IRS-approved before purchasing.
                                     </p>
                                 </details>
@@ -558,8 +558,8 @@ export default function IraApprovedGoldCoinsPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
                                 <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect Your Retirement?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find a company that&apos;ll guide you through this without the pressure tactics or confusing fees.</p>
@@ -581,7 +581,7 @@ export default function IraApprovedGoldCoinsPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-ira-approved-gold-coins" />
                 </Container>

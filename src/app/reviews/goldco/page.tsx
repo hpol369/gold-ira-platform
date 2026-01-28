@@ -17,24 +17,24 @@ export const metadata = {
 
 export default function GoldcoReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <main className="min-h-screen flex flex-col bg-slate-50">
             <Navbar />
 
-            <div className="flex-grow bg-slate-900">
-                <header className="bg-[#1e1e1e] text-white py-16 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/40 via-[#1e1e1e] to-[#1e1e1e] opacity-80 z-0"></div>
+            <div className="flex-grow">
+                <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[#000080]/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
-                                <span className="bg-white/10 px-2 py-1 rounded">Gold IRA Company Reviews</span>
+                            <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-white px-2 py-1 rounded border border-slate-200">Gold IRA Company Reviews</span>
                                 <span>•</span>
                                 <span>Updated Jan 2026</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
                                 Goldco Review: <br />
-                                <span className="text-gray-400">Marketing Giant or Solid Choice?</span>
+                                <span className="text-slate-500">Marketing Giant or Solid Choice?</span>
                             </h1>
-                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
                                 You've seen their ads everywhere. Sean Hannity, Chuck Norris, countless YouTube commercials. But does their service justify the hype? Here's what we found.
                             </p>
                         </div>
@@ -56,7 +56,7 @@ export default function GoldcoReviewPage() {
                                 ctaText="Request Information"
                             />
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
                                 <h2>Straight Talk About Goldco</h2>
                                 <p>
                                     <strong>We get it—you're skeptical.</strong> After 30+ years of watching companies make promises and disappear, you should be. So let's cut through the advertising and look at what Goldco actually delivers.
@@ -101,11 +101,11 @@ export default function GoldcoReviewPage() {
                                     <li><strong>Annual Fees:</strong> $175-$225 combined (custodian + storage)</li>
                                     <li><strong>Minimum Investment:</strong> $25,000</li>
                                 </ul>
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
-                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5 text-secondary" /> About Silver Bonuses
+                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                    <h4 className="font-bold text-[#000080] flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-[#B22234]" /> About Silver Bonuses
                                     </h4>
-                                    <p className="text-sm text-slate-400">
+                                    <p className="text-sm text-slate-600">
                                         Goldco frequently advertises "free silver" bonuses. These promotions change regularly and typically require larger investment amounts. The silver is real, but remember that promotional giveaways are built into their pricing structure somewhere. Always compare the total cost of ownership, not just promotional offers.
                                     </p>
                                 </div>
@@ -126,7 +126,7 @@ export default function GoldcoReviewPage() {
                                     If you have $50,000 or more to invest, Augusta's fee-waiver programs might save you more money. If you have less than $25,000, Goldco won't work for you anyway—their minimum is $25k. Look at Noble Gold or <a href="/reviews/orion-metal-exchange">Orion Metal Exchange</a> instead.
                                 </p>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict - A Decent Option, Not the Only Option</h2>
                                 <p>
@@ -137,10 +137,10 @@ export default function GoldcoReviewPage() {
                                 </p>
                             </div>
 
-                            <div className="bg-[#1e1e1e] text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                            <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4">Want to Compare Options?</h3>
-                                    <p className="mb-8 text-gray-300 max-w-lg mx-auto">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Want to Compare Options?</h3>
+                                    <p className="mb-8 text-slate-600 max-w-lg mx-auto">
                                         See how Goldco stacks up against other top-rated Gold IRA companies.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>

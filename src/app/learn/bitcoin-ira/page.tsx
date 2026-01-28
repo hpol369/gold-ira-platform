@@ -31,25 +31,25 @@ export const metadata: Metadata = {
 
 export default function BitcoinIRAPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
             {/* Hero */}
             <header className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 via-slate-900 to-slate-900"></div>
+                <div className="absolute inset-0 bg-slate-50"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 text-orange-400 text-sm font-medium mb-4">
-                            <span className="bg-orange-500/20 px-3 py-1 rounded-full">Educational Guide</span>
-                            <span className="text-slate-500">•</span>
-                            <span className="text-slate-400">Updated January 2026</span>
+                        <div className="flex items-center gap-2 text-[#B22234] text-sm font-medium mb-4">
+                            <span className="bg-[#B22234]/10 px-3 py-1 rounded-full">Educational Guide</span>
+                            <span className="text-slate-400">•</span>
+                            <span className="text-slate-500">Updated January 2026</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6 leading-tight">
                             What is a Bitcoin IRA?
                         </h1>
 
-                        <p className="text-xl text-slate-300 max-w-2xl leading-relaxed mb-8">
+                        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed mb-8">
                             After decades of building your 401k, you might be curious about cryptocurrency. A Bitcoin IRA lets you hold Bitcoin in a tax-advantaged retirement account—your gains can grow tax-free (Roth) or tax-deferred (Traditional). Here&apos;s what you need to know before putting any of your hard-earned savings into crypto.
                         </p>
 
@@ -66,26 +66,26 @@ export default function BitcoinIRAPage() {
             </header>
 
             {/* Key Takeaways */}
-            <section className="py-12 bg-slate-800/50">
+            <section className="py-12 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                            <h2 className="text-lg font-bold text-white mb-4">Key Takeaways</h2>
+                        <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+                            <h2 className="text-lg font-bold text-[#000080] mb-4">Key Takeaways</h2>
                             <ul className="space-y-2">
-                                <li className="flex items-start gap-2 text-slate-300">
-                                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                <li className="flex items-start gap-2 text-slate-600">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                     A Bitcoin IRA is a self-directed IRA that holds cryptocurrency instead of (or alongside) traditional assets
                                 </li>
-                                <li className="flex items-start gap-2 text-slate-300">
-                                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                <li className="flex items-start gap-2 text-slate-600">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                     Tax benefits: gains grow tax-deferred (Traditional) or tax-free (Roth IRA)
                                 </li>
-                                <li className="flex items-start gap-2 text-slate-300">
-                                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                <li className="flex items-start gap-2 text-slate-600">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                     You can rollover funds from a 401(k), IRA, or other retirement accounts
                                 </li>
-                                <li className="flex items-start gap-2 text-slate-300">
-                                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                <li className="flex items-start gap-2 text-slate-600">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                     Top providers include iTrustCapital (1% fee) and Alto IRA (200+ coins)
                                 </li>
                             </ul>
@@ -95,10 +95,10 @@ export default function BitcoinIRAPage() {
             </section>
 
             {/* Main Content */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-orange-400">
+                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-[#000080] prose-a:text-[#B22234]">
 
                             <h2>What is a Bitcoin IRA?</h2>
                             <p>
@@ -132,35 +132,35 @@ export default function BitcoinIRAPage() {
                                 The tax advantages can be significant for long-term Bitcoin holders:
                             </p>
 
-                            <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden not-prose my-8">
+                            <div className="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-8 shadow-sm">
                                 <table className="w-full text-sm">
-                                    <thead className="bg-white/5">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="text-left p-4 text-white font-semibold">Scenario</th>
-                                            <th className="text-left p-4 text-white font-semibold">Regular Exchange</th>
-                                            <th className="text-left p-4 text-white font-semibold">Bitcoin IRA</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Scenario</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Regular Exchange</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Bitcoin IRA</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10">
+                                    <tbody className="divide-y divide-slate-200">
                                         <tr>
-                                            <td className="p-4 text-slate-300">Buy $10,000 Bitcoin</td>
-                                            <td className="p-4 text-slate-300">$10,000</td>
-                                            <td className="p-4 text-slate-300">$10,000</td>
+                                            <td className="p-4 text-slate-600">Buy $10,000 Bitcoin</td>
+                                            <td className="p-4 text-slate-600">$10,000</td>
+                                            <td className="p-4 text-slate-600">$10,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Value grows to $100,000</td>
-                                            <td className="p-4 text-slate-300">$90,000 gain</td>
-                                            <td className="p-4 text-slate-300">$90,000 gain</td>
+                                            <td className="p-4 text-slate-600">Value grows to $100,000</td>
+                                            <td className="p-4 text-slate-600">$90,000 gain</td>
+                                            <td className="p-4 text-slate-600">$90,000 gain</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Tax on gain (selling)</td>
-                                            <td className="p-4 text-red-400">~$18,000 (20% cap gains)</td>
-                                            <td className="p-4 text-green-400">$0 (Roth) or deferred</td>
+                                            <td className="p-4 text-slate-600">Tax on gain (selling)</td>
+                                            <td className="p-4 text-red-600">~$18,000 (20% cap gains)</td>
+                                            <td className="p-4 text-green-600">$0 (Roth) or deferred</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Tax on trades/swaps</td>
-                                            <td className="p-4 text-red-400">Taxable events</td>
-                                            <td className="p-4 text-green-400">No tax impact</td>
+                                            <td className="p-4 text-slate-600">Tax on trades/swaps</td>
+                                            <td className="p-4 text-red-600">Taxable events</td>
+                                            <td className="p-4 text-green-600">No tax impact</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -172,14 +172,14 @@ export default function BitcoinIRAPage() {
 
                             <h2>Bitcoin IRA vs Regular Crypto Investing</h2>
 
-                            <div className="bg-white/5 border border-white/10 rounded-xl p-6 not-prose my-8">
+                            <div className="bg-white border border-slate-200 rounded-xl p-6 not-prose my-8 shadow-sm">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 className="font-bold text-green-400 mb-3 flex items-center gap-2">
+                                        <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5" />
                                             Bitcoin IRA Pros
                                         </h4>
-                                        <ul className="space-y-2 text-slate-300 text-sm">
+                                        <ul className="space-y-2 text-slate-600 text-sm">
                                             <li>• Tax-free or tax-deferred gains</li>
                                             <li>• No tax on rebalancing/trading</li>
                                             <li>• Institutional-grade custody</li>
@@ -188,11 +188,11 @@ export default function BitcoinIRAPage() {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-red-400 mb-3 flex items-center gap-2">
+                                        <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                             <XCircle className="w-5 h-5" />
                                             Bitcoin IRA Cons
                                         </h4>
-                                        <ul className="space-y-2 text-slate-300 text-sm">
+                                        <ul className="space-y-2 text-slate-600 text-sm">
                                             <li>• Contribution limits ($7,000-$8,000/year)</li>
                                             <li>• Early withdrawal penalties (before 59½)</li>
                                             <li>• Can't hold your own keys</li>
@@ -244,10 +244,10 @@ export default function BitcoinIRAPage() {
                         {/* Warning Box */}
                         <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6 my-12">
                             <div className="flex gap-4">
-                                <AlertTriangle className="w-8 h-8 text-amber-400 flex-shrink-0" />
+                                <AlertTriangle className="w-8 h-8 text-amber-600 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-lg font-bold text-white mb-2">Important Risks to Consider</h3>
-                                    <ul className="space-y-2 text-slate-300 text-sm">
+                                    <h3 className="text-lg font-bold text-[#000080] mb-2">Important Risks to Consider</h3>
+                                    <ul className="space-y-2 text-slate-600 text-sm">
                                         <li>• <strong>Volatility:</strong> Bitcoin can drop 50%+ in bear markets. Only invest what you can afford to lose.</li>
                                         <li>• <strong>Not FDIC Insured:</strong> Unlike bank accounts, crypto IRAs are not government insured.</li>
                                         <li>• <strong>Regulatory Risk:</strong> Crypto regulations could change, affecting IRA treatment.</li>
@@ -259,15 +259,15 @@ export default function BitcoinIRAPage() {
 
                         {/* Best Providers */}
                         <div className="my-12">
-                            <h2 className="text-2xl font-serif font-bold text-white mb-6">Best Bitcoin IRA Providers</h2>
+                            <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Best Bitcoin IRA Providers</h2>
                             <div className="grid md:grid-cols-2 gap-6">
-                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-amber-500/50 p-6">
+                                <div className="bg-white rounded-xl border-2 border-[#B22234] p-6 shadow-sm">
                                     <div className="flex items-center gap-2 mb-3">
-                                        <span className="bg-amber-500 text-slate-900 text-xs font-bold px-2 py-1 rounded">TOP PICK</span>
+                                        <span className="bg-[#B22234] text-white text-xs font-bold px-2 py-1 rounded">TOP PICK</span>
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-2">iTrustCapital</h3>
-                                    <p className="text-slate-400 text-sm mb-4">Best overall with 1% trading fee, no monthly charges, and gold/silver option.</p>
-                                    <ul className="space-y-1 text-sm text-slate-300 mb-4">
+                                    <h3 className="text-xl font-bold text-[#000080] mb-2">iTrustCapital</h3>
+                                    <p className="text-slate-500 text-sm mb-4">Best overall with 1% trading fee, no monthly charges, and gold/silver option.</p>
+                                    <ul className="space-y-1 text-sm text-slate-600 mb-4">
                                         <li>• 1% trading fee</li>
                                         <li>• $1,000 minimum</li>
                                         <li>• 30+ cryptocurrencies</li>
@@ -276,15 +276,15 @@ export default function BitcoinIRAPage() {
                                         <Link href="/reviews/itrustcapital">Read Review →</Link>
                                     </Button>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                    <h3 className="text-xl font-bold text-white mb-2">Alto IRA</h3>
-                                    <p className="text-slate-400 text-sm mb-4">Best for crypto variety with 200+ coins via Coinbase integration.</p>
-                                    <ul className="space-y-1 text-sm text-slate-300 mb-4">
+                                <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+                                    <h3 className="text-xl font-bold text-[#000080] mb-2">Alto IRA</h3>
+                                    <p className="text-slate-500 text-sm mb-4">Best for crypto variety with 200+ coins via Coinbase integration.</p>
+                                    <ul className="space-y-1 text-sm text-slate-600 mb-4">
                                         <li>• 1% + spread fee</li>
                                         <li>• $0 minimum</li>
                                         <li>• 200+ cryptocurrencies</li>
                                     </ul>
-                                    <Button variant="outline" className="w-full border-white/20 text-white hover:bg-white/10" asChild>
+                                    <Button variant="outline" className="w-full border-slate-300 text-slate-600 hover:bg-slate-50" asChild>
                                         <Link href="/reviews/alto-ira">Read Review →</Link>
                                     </Button>
                                 </div>
@@ -293,7 +293,7 @@ export default function BitcoinIRAPage() {
 
                         {/* FAQ */}
                         <div className="my-12">
-                            <h2 className="text-2xl font-serif font-bold text-white mb-6">Frequently Asked Questions</h2>
+                            <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-4">
                                 {[
                                     {
@@ -317,9 +317,9 @@ export default function BitcoinIRAPage() {
                                         a: "In a Traditional Bitcoin IRA, gains are tax-deferred until withdrawal (then taxed as income). In a Roth Bitcoin IRA, qualified withdrawals are completely tax-free—including all gains."
                                     },
                                 ].map((faq, i) => (
-                                    <div key={i} className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                        <h3 className="font-bold text-white mb-2">{faq.q}</h3>
-                                        <p className="text-slate-400 text-sm">{faq.a}</p>
+                                    <div key={i} className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+                                        <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
+                                        <p className="text-slate-500 text-sm">{faq.a}</p>
                                     </div>
                                 ))}
                             </div>
@@ -329,37 +329,37 @@ export default function BitcoinIRAPage() {
             </section>
 
             {/* Related Resources */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <h2 className="text-2xl font-serif font-bold text-white mb-8 text-center">Related Resources</h2>
+                    <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Related Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        <Link href="/crypto-ira" className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-orange-500/50 transition-colors group">
-                            <Coins className="w-8 h-8 text-orange-400 mb-3" />
-                            <h3 className="font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Crypto IRA Guide</h3>
-                            <p className="text-slate-400 text-sm">Complete guide to all cryptocurrency retirement options.</p>
+                        <Link href="/crypto-ira" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#B22234]/50 transition-colors group shadow-sm">
+                            <Coins className="w-8 h-8 text-[#B22234] mb-3" />
+                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-[#B22234] transition-colors">Crypto IRA Guide</h3>
+                            <p className="text-slate-500 text-sm">Complete guide to all cryptocurrency retirement options.</p>
                         </Link>
-                        <Link href="/best-crypto-ira-companies" className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-orange-500/50 transition-colors group">
-                            <Shield className="w-8 h-8 text-blue-400 mb-3" />
-                            <h3 className="font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Best Crypto IRA Companies</h3>
-                            <p className="text-slate-400 text-sm">Compare the top Bitcoin IRA providers side-by-side.</p>
+                        <Link href="/best-crypto-ira-companies" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#B22234]/50 transition-colors group shadow-sm">
+                            <Shield className="w-8 h-8 text-[#000080] mb-3" />
+                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-[#B22234] transition-colors">Best Crypto IRA Companies</h3>
+                            <p className="text-slate-500 text-sm">Compare the top Bitcoin IRA providers side-by-side.</p>
                         </Link>
-                        <Link href="/compare/gold-ira-vs-crypto" className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-orange-500/50 transition-colors group">
-                            <TrendingUp className="w-8 h-8 text-amber-400 mb-3" />
-                            <h3 className="font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Gold IRA vs Crypto IRA</h3>
-                            <p className="text-slate-400 text-sm">Which alternative asset is right for your retirement?</p>
+                        <Link href="/compare/gold-ira-vs-crypto" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#B22234]/50 transition-colors group shadow-sm">
+                            <TrendingUp className="w-8 h-8 text-[#B22234] mb-3" />
+                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-[#B22234] transition-colors">Gold IRA vs Crypto IRA</h3>
+                            <p className="text-slate-500 text-sm">Which alternative asset is right for your retirement?</p>
                         </Link>
                     </div>
                 </Container>
             </section>
 
             {/* Bottom CTA */}
-            <section className="py-16 bg-gradient-to-br from-orange-900/30 to-slate-900 border-t border-white/10">
+            <section className="py-16 bg-slate-100 border-t border-slate-200">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl font-serif font-bold text-white mb-4">
+                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-4">
                             Ready to Open a Bitcoin IRA?
                         </h2>
-                        <p className="text-xl text-slate-300 mb-8">
+                        <p className="text-xl text-slate-600 mb-8">
                             Compare the best providers and start investing tax-advantaged today.
                         </p>
                         <Button variant="gold" size="xl" asChild>

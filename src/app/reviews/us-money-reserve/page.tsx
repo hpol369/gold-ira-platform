@@ -62,18 +62,18 @@ const tocItems = [
 
 export default function UsMoneyReserveReviewPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-50 pb-24">
             <SchemaScript schema={schema} />
-            <header className="bg-primary text-white py-16 relative overflow-hidden">
+            <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 mb-6">
-                            <span className="font-bold text-secondary text-lg">3.8/5.0 Rating</span>
+                            <span className="font-bold text-[#B22234] text-lg">3.8/5.0 Rating</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">
                             US Money Reserve Review (2026)
                         </h1>
-                        <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
+                        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
                             Massive marketing budget, former Mint Director involvement, and TV commercials everywhere. But are their &quot;exclusive&quot; coins actually a good investment?
                         </p>
                     </div>
@@ -87,7 +87,7 @@ export default function UsMoneyReserveReviewPage() {
                             <div className="block lg:hidden">
                                 <ReviewSidebar {...companyData} />
                             </div>
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-900 prose-a:text-[#B22234] max-w-none">
 
                                 <section id="overview">
                                     <p className="lead">
@@ -156,7 +156,7 @@ export default function UsMoneyReserveReviewPage() {
                                 <section id="complaints" className="scroll-mt-32">
                                     <h2>Complaints to Be Aware Of</h2>
                                     <p>
-                                        We have a <Link href="/reviews/us-money-reserve-complaints" className="text-secondary hover:underline">dedicated page on US Money Reserve complaints</Link>, but here are the highlights:
+                                        We have a <Link href="/reviews/us-money-reserve-complaints" className="text-[#B22234] hover:underline">dedicated page on US Money Reserve complaints</Link>, but here are the highlights:
                                     </p>
                                     <ul>
                                         <li><strong>Persistent phone calls:</strong> Many customers report being called repeatedly after requesting a free guide</li>
@@ -174,7 +174,7 @@ export default function UsMoneyReserveReviewPage() {
                                         US Money Reserve is legitimate—they won&apos;t steal your money. But their business model seems built around selling expensive &quot;collectible&quot; coins with huge markups. That&apos;s not what you need when you&apos;re trying to protect your retirement.
                                     </p>
                                     <p>
-                                        <strong>Our honest recommendation:</strong> If you&apos;re a coin collector who knows what you&apos;re doing, maybe. But if you&apos;re a working person looking for a straightforward Gold IRA to protect your 401k? Look at companies like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> that focus on regular bullion without the markups.
+                                        <strong>Our honest recommendation:</strong> If you&apos;re a coin collector who knows what you&apos;re doing, maybe. But if you&apos;re a working person looking for a straightforward Gold IRA to protect your 401k? Look at companies like <Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-[#B22234] hover:underline">Goldco</Link> that focus on regular bullion without the markups.
                                     </p>
                                     <p>
                                         If you do call US Money Reserve, <strong>be firm:</strong> &quot;I only want standard IRS-approved bullion for my IRA—no collectibles, no &apos;exclusive&apos; coins.&quot; And get the premium over spot price in writing before you agree to anything.

@@ -137,14 +137,14 @@ export function ReverseMortgageCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-blue-500/30">
+        <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-blue-500/30">
           <Home className="h-4 w-4" />
           Reverse Mortgage Calculator
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
           Calculate Your Reverse Mortgage
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
           See how much home equity you could access with a reverse mortgage. Compare payout options and understand true costs.
         </p>
       </div>
@@ -153,18 +153,18 @@ export function ReverseMortgageCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Personal Info */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                <Calendar className="h-5 w-5 text-blue-400" />
+                <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Your Information</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
-                  Your Age (must be 62+): <span className="text-white font-semibold">{age}</span>
+                <label className="text-sm text-slate-500 mb-2 block">
+                  Your Age (must be 62+): <span className="text-slate-900 font-semibold">{age}</span>
                 </label>
                 <input
                   type="range"
@@ -184,17 +184,17 @@ export function ReverseMortgageCalculator() {
           </div>
 
           {/* Home Information */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
-                <Home className="h-5 w-5 text-green-400" />
+                <Home className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Home Details</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Home Value
                 </label>
                 <div className="relative">
@@ -203,7 +203,7 @@ export function ReverseMortgageCalculator() {
                     type="number"
                     value={homeValue}
                     onChange={(e) => setHomeValue(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-blue-500"
                     min="100000"
                     step="10000"
                   />
@@ -211,7 +211,7 @@ export function ReverseMortgageCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Current Mortgage Balance
                 </label>
                 <div className="relative">
@@ -220,7 +220,7 @@ export function ReverseMortgageCalculator() {
                     type="number"
                     value={mortgageBalance}
                     onChange={(e) => setMortgageBalance(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-blue-500"
                     min="0"
                     step="5000"
                   />
@@ -233,23 +233,23 @@ export function ReverseMortgageCalculator() {
           </div>
 
           {/* Loan Details */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-amber-500/20 rounded-lg border border-amber-500/30">
-                <Percent className="h-5 w-5 text-amber-400" />
+              <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/30">
+                <Percent className="h-5 w-5 text-[#B22234]" />
               </div>
               <h3 className="text-lg font-semibold">Loan Options</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Interest Rate (Expected)
                 </label>
                 <select
                   value={interestRate}
                   onChange={(e) => setInterestRate(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-blue-500"
                 >
                   <option value="5.0">5.0% (Low)</option>
                   <option value="5.5">5.5%</option>
@@ -260,7 +260,7 @@ export function ReverseMortgageCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Payout Type
                 </label>
                 <div className="grid grid-cols-2 gap-2">
@@ -275,8 +275,8 @@ export function ReverseMortgageCalculator() {
                       onClick={() => setPayoutType(option.value)}
                       className={`p-3 rounded-lg border text-left flex items-center gap-2 transition-all ${
                         payoutType === option.value
-                          ? "bg-blue-500/20 border-blue-500/50 text-blue-400"
-                          : "bg-slate-800 border-slate-700 text-slate-400 hover:border-slate-600"
+                          ? "bg-blue-500/20 border-blue-500/50 text-blue-600"
+                          : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
                       }`}
                     >
                       <option.icon className="h-4 w-4" />
@@ -288,8 +288,8 @@ export function ReverseMortgageCalculator() {
 
               {payoutType === "term" && (
                 <div>
-                  <label className="text-sm text-slate-400 mb-2 block">
-                    Term Length: <span className="text-white font-semibold">{termYears} years</span>
+                  <label className="text-sm text-slate-500 mb-2 block">
+                    Term Length: <span className="text-slate-900 font-semibold">{termYears} years</span>
                   </label>
                   <input
                     type="range"
@@ -309,8 +309,8 @@ export function ReverseMortgageCalculator() {
         <div className="space-y-6">
           {/* Main Results */}
           <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-sm rounded-xl p-8 border border-blue-500/30">
-            <h3 className="text-sm text-slate-400 mb-2">Available Proceeds</h3>
-            <div className="text-4xl font-bold text-blue-400 mb-4">
+            <h3 className="text-sm text-slate-500 mb-2">Available Proceeds</h3>
+            <div className="text-4xl font-bold text-blue-600 mb-4">
               {formatCurrency(calculations.availableProceeds)}
             </div>
 
@@ -327,41 +327,41 @@ export function ReverseMortgageCalculator() {
           </div>
 
           {/* Payout Options Comparison */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Calculator className="h-5 w-5 text-amber-400" />
+              <Calculator className="h-5 w-5 text-[#B22234]" />
               Payout Options
             </h3>
 
             <div className="space-y-3">
-              <div className={`p-4 rounded-lg border ${payoutType === "lump" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-800/50 border-slate-700"}`}>
+              <div className={`p-4 rounded-lg border ${payoutType === "lump" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-50 border-slate-700"}`}>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400">Lump Sum</span>
-                  <span className="text-xl font-bold text-white">{formatCurrency(calculations.availableProceeds)}</span>
+                  <span className="text-slate-500">Lump Sum</span>
+                  <span className="text-xl font-bold text-slate-900">{formatCurrency(calculations.availableProceeds)}</span>
                 </div>
                 <p className="text-xs text-slate-500 mt-1">One-time payment at closing</p>
               </div>
 
-              <div className={`p-4 rounded-lg border ${payoutType === "loc" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-800/50 border-slate-700"}`}>
+              <div className={`p-4 rounded-lg border ${payoutType === "loc" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-50 border-slate-700"}`}>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400">Line of Credit</span>
-                  <span className="text-xl font-bold text-white">{formatCurrency(calculations.availableProceeds)}</span>
+                  <span className="text-slate-500">Line of Credit</span>
+                  <span className="text-xl font-bold text-slate-900">{formatCurrency(calculations.availableProceeds)}</span>
                 </div>
                 <p className="text-xs text-slate-500 mt-1">Draw as needed, grows over time</p>
               </div>
 
-              <div className={`p-4 rounded-lg border ${payoutType === "tenure" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-800/50 border-slate-700"}`}>
+              <div className={`p-4 rounded-lg border ${payoutType === "tenure" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-50 border-slate-700"}`}>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400">Monthly (Lifetime)</span>
-                  <span className="text-xl font-bold text-white">{formatCurrency(calculations.tenureMonthlyPayment)}/mo</span>
+                  <span className="text-slate-500">Monthly (Lifetime)</span>
+                  <span className="text-xl font-bold text-slate-900">{formatCurrency(calculations.tenureMonthlyPayment)}/mo</span>
                 </div>
                 <p className="text-xs text-slate-500 mt-1">Payments for as long as you live in home</p>
               </div>
 
-              <div className={`p-4 rounded-lg border ${payoutType === "term" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-800/50 border-slate-700"}`}>
+              <div className={`p-4 rounded-lg border ${payoutType === "term" ? "bg-blue-500/10 border-blue-500/30" : "bg-slate-50 border-slate-700"}`}>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400">Monthly ({termYears} Year Term)</span>
-                  <span className="text-xl font-bold text-white">{formatCurrency(calculations.termMonthlyPayment)}/mo</span>
+                  <span className="text-slate-500">Monthly ({termYears} Year Term)</span>
+                  <span className="text-xl font-bold text-slate-900">{formatCurrency(calculations.termMonthlyPayment)}/mo</span>
                 </div>
                 <p className="text-xs text-slate-500 mt-1">Fixed payments for set period</p>
               </div>
@@ -369,7 +369,7 @@ export function ReverseMortgageCalculator() {
           </div>
 
           {/* Closing Costs */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <CreditCard className="h-5 w-5 text-orange-400" />
               Closing Costs (Estimated)
@@ -377,19 +377,19 @@ export function ReverseMortgageCalculator() {
 
             <div className="space-y-2">
               <div className="flex justify-between text-sm">
-                <span className="text-slate-400">Origination Fee</span>
-                <span className="text-white">{formatCurrency(calculations.originationFee)}</span>
+                <span className="text-slate-500">Origination Fee</span>
+                <span className="text-slate-900">{formatCurrency(calculations.originationFee)}</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-slate-400">Upfront MIP (2%)</span>
-                <span className="text-white">{formatCurrency(calculations.upfrontMIP)}</span>
+                <span className="text-slate-500">Upfront MIP (2%)</span>
+                <span className="text-slate-900">{formatCurrency(calculations.upfrontMIP)}</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-slate-400">Other Costs (est.)</span>
-                <span className="text-white">$3,000</span>
+                <span className="text-slate-500">Other Costs (est.)</span>
+                <span className="text-slate-900">$3,000</span>
               </div>
-              <div className="flex justify-between text-sm pt-2 border-t border-white/10">
-                <span className="text-slate-300 font-semibold">Total Closing Costs</span>
+              <div className="flex justify-between text-sm pt-2 border-t border-slate-200">
+                <span className="text-slate-600 font-semibold">Total Closing Costs</span>
                 <span className="text-orange-400 font-bold">{formatCurrency(calculations.totalClosingCosts)}</span>
               </div>
             </div>
@@ -397,16 +397,16 @@ export function ReverseMortgageCalculator() {
 
           {/* Line of Credit Growth */}
           {payoutType === "loc" && (
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
               <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-green-400" />
+                <TrendingUp className="h-5 w-5 text-green-600" />
                 Line of Credit Growth
               </h3>
 
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-white/10">
+                    <tr className="border-b border-slate-200">
                       <th className="py-2 text-left text-slate-500">Year</th>
                       <th className="py-2 text-right text-slate-500">Available Credit</th>
                       <th className="py-2 text-right text-slate-500">Growth</th>
@@ -414,10 +414,10 @@ export function ReverseMortgageCalculator() {
                   </thead>
                   <tbody>
                     {calculations.locProjections.slice(0, 11).map((proj, idx) => (
-                      <tr key={proj.year} className={idx % 2 === 0 ? "bg-white/[0.02]" : ""}>
-                        <td className="py-2 text-slate-300">{proj.year}</td>
-                        <td className="py-2 text-right text-white">{formatCurrency(proj.availableCredit)}</td>
-                        <td className="py-2 text-right text-green-400">
+                      <tr key={proj.year} className={idx % 2 === 0 ? "bg-slate-50" : ""}>
+                        <td className="py-2 text-slate-600">{proj.year}</td>
+                        <td className="py-2 text-righttext-slate-900">{formatCurrency(proj.availableCredit)}</td>
+                        <td className="py-2 text-right text-green-600">
                           {proj.growth > 0 ? `+${formatCurrency(proj.growth)}` : "-"}
                         </td>
                       </tr>
@@ -437,52 +437,52 @@ export function ReverseMortgageCalculator() {
       <div className="max-w-4xl mx-auto mt-16">
         <div className="bg-red-500/10 backdrop-blur-sm rounded-xl p-8 border border-red-500/30">
           <div className="flex items-center gap-3 mb-6">
-            <AlertTriangle className="h-8 w-8 text-red-400" />
-            <h2 className="text-2xl font-bold text-red-400">Important Risks to Consider</h2>
+            <AlertTriangle className="h-8 w-8 text-red-600" />
+            <h2 className="text-2xl font-bold text-red-600">Important Risks to Consider</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <div className="p-4 bg-slate-800/50 rounded-lg border border-red-500/20">
-                <h4 className="text-white font-semibold mb-2">Compound Interest</h4>
-                <p className="text-slate-400 text-sm">
+              <div className="p-4 bg-slate-50 rounded-lg border border-red-500/20">
+                <h4 className="text-slate-900 font-semibold mb-2">Compound Interest</h4>
+                <p className="text-slate-600 text-sm">
                   Interest compounds on your loan balance monthly. A {formatCurrency(calculations.availableProceeds)} loan at {interestRate}% could grow to {formatCurrency(calculations.interestProjections[10]?.loanBalance || 0)} in just 10 years.
                 </p>
               </div>
 
-              <div className="p-4 bg-slate-800/50 rounded-lg border border-red-500/20">
-                <h4 className="text-white font-semibold mb-2">Reduced Inheritance</h4>
-                <p className="text-slate-400 text-sm">
+              <div className="p-4 bg-slate-50 rounded-lg border border-red-500/20">
+                <h4 className="text-slate-900 font-semibold mb-2">Reduced Inheritance</h4>
+                <p className="text-slate-600 text-sm">
                   Your heirs will need to repay the full loan balance or sell the home. The longer you live, the more equity is consumed by interest.
                 </p>
               </div>
 
-              <div className="p-4 bg-slate-800/50 rounded-lg border border-red-500/20">
-                <h4 className="text-white font-semibold mb-2">Fees Are High</h4>
-                <p className="text-slate-400 text-sm">
+              <div className="p-4 bg-slate-50 rounded-lg border border-red-500/20">
+                <h4 className="text-slate-900 font-semibold mb-2">Fees Are High</h4>
+                <p className="text-slate-600 text-sm">
                   Closing costs of {formatCurrency(calculations.totalClosingCosts)} are significant. These costs are typically rolled into your loan, adding to the balance.
                 </p>
               </div>
             </div>
 
             <div className="space-y-4">
-              <div className="p-4 bg-slate-800/50 rounded-lg border border-red-500/20">
-                <h4 className="text-white font-semibold mb-2">Property Tax &amp; Insurance Required</h4>
-                <p className="text-slate-400 text-sm">
+              <div className="p-4 bg-slate-50 rounded-lg border border-red-500/20">
+                <h4 className="text-slate-900 font-semibold mb-2">Property Tax &amp; Insurance Required</h4>
+                <p className="text-slate-600 text-sm">
                   You must continue paying property taxes, homeowners insurance, and maintain the home. Failure to do so can trigger loan default.
                 </p>
               </div>
 
-              <div className="p-4 bg-slate-800/50 rounded-lg border border-red-500/20">
-                <h4 className="text-white font-semibold mb-2">Must Remain Primary Residence</h4>
-                <p className="text-slate-400 text-sm">
+              <div className="p-4 bg-slate-50 rounded-lg border border-red-500/20">
+                <h4 className="text-slate-900 font-semibold mb-2">Must Remain Primary Residence</h4>
+                <p className="text-slate-600 text-sm">
                   If you move out for more than 12 months (including nursing home care), the loan becomes due immediately.
                 </p>
               </div>
 
-              <div className="p-4 bg-slate-800/50 rounded-lg border border-red-500/20">
-                <h4 className="text-white font-semibold mb-2">Affects Benefits</h4>
-                <p className="text-slate-400 text-sm">
+              <div className="p-4 bg-slate-50 rounded-lg border border-red-500/20">
+                <h4 className="text-slate-900 font-semibold mb-2">Affects Benefits</h4>
+                <p className="text-slate-600 text-sm">
                   Reverse mortgage proceeds could affect eligibility for Medicaid, SSI, and other needs-based programs. Consult a benefits specialist.
                 </p>
               </div>
@@ -493,16 +493,16 @@ export function ReverseMortgageCalculator() {
 
       {/* Loan Balance Projection */}
       <div className="max-w-4xl mx-auto mt-8">
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
+        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
           <div className="flex items-center gap-3 mb-6">
-            <LineChart className="h-6 w-6 text-blue-400" />
+            <LineChart className="h-6 w-6 text-blue-600" />
             <h2 className="text-2xl font-bold">20-Year Equity Projection</h2>
           </div>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-slate-200">
                   <th className="py-2 text-left text-slate-500">Year</th>
                   <th className="py-2 text-right text-slate-500">Loan Balance</th>
                   <th className="py-2 text-right text-slate-500">Home Value</th>
@@ -511,11 +511,11 @@ export function ReverseMortgageCalculator() {
               </thead>
               <tbody>
                 {calculations.interestProjections.filter((_, i) => i % 2 === 0 || i === 10).slice(0, 11).map((proj, idx) => (
-                  <tr key={proj.year} className={idx % 2 === 0 ? "bg-white/[0.02]" : ""}>
-                    <td className="py-2 text-slate-300">{proj.year}</td>
-                    <td className="py-2 text-right text-red-400">{formatCurrency(proj.loanBalance)}</td>
-                    <td className="py-2 text-right text-green-400">{formatCurrency(homeValue * Math.pow(1.03, proj.year))}</td>
-                    <td className={`py-2 text-right font-semibold ${proj.homeEquity > 0 ? "text-white" : "text-red-400"}`}>
+                  <tr key={proj.year} className={idx % 2 === 0 ? "bg-slate-50" : ""}>
+                    <td className="py-2 text-slate-600">{proj.year}</td>
+                    <td className="py-2 text-right text-red-600">{formatCurrency(proj.loanBalance)}</td>
+                    <td className="py-2 text-right text-green-600">{formatCurrency(homeValue * Math.pow(1.03, proj.year))}</td>
+                    <td className={`py-2 text-right font-semibold ${proj.homeEquity > 0 ? "text-white" : "text-red-600"}`}>
                       {formatCurrency(proj.homeEquity)}
                     </td>
                   </tr>
@@ -531,23 +531,23 @@ export function ReverseMortgageCalculator() {
 
       {/* Gold IRA Alternative */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 backdrop-blur-sm rounded-xl p-8 border border-amber-500/20">
+        <div className="bg-[#B22234]/5 backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
           <div className="flex items-center gap-3 mb-6">
-            <PiggyBank className="h-6 w-6 text-amber-400" />
+            <PiggyBank className="h-6 w-6 text-[#B22234]" />
             <h2 className="text-2xl font-bold">Preserve Home Equity with Better Planning</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Reverse Mortgage Reality</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Reverse Mortgage Reality</div>
+              <p className="text-slate-600 text-sm">
                 Reverse mortgages can be useful in emergencies, but compound interest rapidly erodes your home equity - the wealth you spent decades building.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Gold IRA Alternative</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Gold IRA Alternative</div>
+              <p className="text-slate-600 text-sm">
                 A Gold IRA allows you to diversify retirement savings into physical precious metals that historically hold value against inflation - without risking your home.
               </p>
             </div>
@@ -564,22 +564,22 @@ export function ReverseMortgageCalculator() {
 
       {/* Educational Content */}
       <div className="max-w-4xl mx-auto mt-12">
-        <div className="prose prose-invert max-w-none">
+        <div className="prose max-w-none">
           <h2 className="text-3xl font-bold mb-6">Understanding Reverse Mortgages</h2>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-6">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
             <h3 className="text-xl font-semibold mb-4">What is a Reverse Mortgage?</h3>
-            <p className="text-slate-400 mb-4">
+            <p className="text-slate-500 mb-4">
               A reverse mortgage is a loan that allows homeowners 62+ to convert home equity into cash without selling their home or making monthly payments. Instead, the loan balance grows over time and is repaid when the borrower sells, moves out, or passes away.
             </p>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               The most common type is the Home Equity Conversion Mortgage (HECM), which is insured by the Federal Housing Administration (FHA). Proprietary reverse mortgages are also available for high-value homes exceeding HECM limits.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-6">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
             <h3 className="text-xl font-semibold mb-4">Key Requirements</h3>
-            <ul className="space-y-2 text-slate-400">
+            <ul className="space-y-2 text-slate-500">
               <li>- Must be 62 years of age or older</li>
               <li>- Must own home outright or have significant equity</li>
               <li>- Home must be your primary residence</li>
@@ -589,12 +589,12 @@ export function ReverseMortgageCalculator() {
             </ul>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-xl font-semibold mb-4">When to Consider Alternatives</h3>
-            <p className="text-slate-400 mb-4">
+            <p className="text-slate-500 mb-4">
               Reverse mortgages can be appropriate for seniors who need cash flow and plan to age in place, but they are expensive and reduce the inheritance you can leave. Consider alternatives first:
             </p>
-            <ul className="space-y-2 text-slate-400">
+            <ul className="space-y-2 text-slate-500">
               <li>- Home Equity Line of Credit (HELOC) - lower fees, more flexibility</li>
               <li>- Downsizing to a smaller home</li>
               <li>- Renting out part of your home</li>

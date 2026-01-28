@@ -97,19 +97,19 @@ export default function Is401kFDICInsuredPage() {
     const augustaLink = getTrackedLink(AFFILIATE_LINKS.augusta, "is-401k-fdic-insured", "augusta");
 
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Retirement Protection
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Is 401(k) FDIC Insured?
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             Short answer: <strong className="text-red-400">NO</strong>. But before you panic, there ARE protections in place. Here&apos;s what actually safeguards the retirement you&apos;ve spent 30 years building.
                         </p>
                     </div>
@@ -124,7 +124,7 @@ export default function Is401kFDICInsuredPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg  prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -134,7 +134,7 @@ export default function Is401kFDICInsuredPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <ShieldX className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Direct Answer: NO</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Direct Answer: NO</h2>
                             </div>
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
@@ -157,33 +157,33 @@ export default function Is401kFDICInsuredPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Protection Type</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">What It Covers</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">401(k)?</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Protection Type</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">What It Covers</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">401(k)?</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 text-white font-semibold">FDIC Insurance</td>
-                                            <td className="p-4 text-slate-400">Bank deposits (checking, savings, CDs)</td>
+                                            <td className="p-4 text-[#000080] font-semibold">FDIC Insurance</td>
+                                            <td className="p-4 text-slate-500">Bank deposits (checking, savings, CDs)</td>
                                             <td className="p-4 text-red-400 font-semibold">NO</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white font-semibold">SIPC Coverage</td>
-                                            <td className="p-4 text-slate-400">Brokerage account assets if broker fails</td>
+                                            <td className="p-4 text-[#000080] font-semibold">SIPC Coverage</td>
+                                            <td className="p-4 text-slate-500">Brokerage account assets if broker fails</td>
                                             <td className="p-4 text-green-400 font-semibold">YES (up to $500k)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white font-semibold">ERISA Protection</td>
-                                            <td className="p-4 text-slate-400">Employer bankruptcy, fiduciary duties</td>
+                                            <td className="p-4 text-[#000080] font-semibold">ERISA Protection</td>
+                                            <td className="p-4 text-slate-500">Employer bankruptcy, fiduciary duties</td>
                                             <td className="p-4 text-green-400 font-semibold">YES</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white font-semibold">Market Loss Protection</td>
-                                            <td className="p-4 text-slate-400">Stock market declines</td>
+                                            <td className="p-4 text-[#000080] font-semibold">Market Loss Protection</td>
+                                            <td className="p-4 text-slate-500">Stock market declines</td>
                                             <td className="p-4 text-red-400 font-semibold">NO - NOTHING</td>
                                         </tr>
                                     </tbody>
@@ -197,28 +197,28 @@ export default function Is401kFDICInsuredPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">ERISA Protection: Your Primary Safeguard</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">ERISA Protection: Your Primary Safeguard</h2>
                             </div>
                             <p>
                                 The Employee Retirement Income Security Act of 1974 (ERISA) is the primary federal law protecting your 401(k). Here&apos;s what it does:
                             </p>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                    <h4 className="font-bold text-white text-lg mb-2">Separation of Assets</h4>
-                                    <p className="text-slate-400">Your 401(k) assets must be held in a trust, completely separate from your employer&apos;s business assets. Your company can&apos;t touch your retirement funds, even if they&apos;re in financial trouble.</p>
+                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
+                                    <h4 className="font-bold text-[#000080] text-lg mb-2">Separation of Assets</h4>
+                                    <p className="text-slate-500">Your 401(k) assets must be held in a trust, completely separate from your employer&apos;s business assets. Your company can&apos;t touch your retirement funds, even if they&apos;re in financial trouble.</p>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                    <h4 className="font-bold text-white text-lg mb-2">Fiduciary Duty</h4>
-                                    <p className="text-slate-400">Plan administrators have a legal obligation to act in your best interest. They can be personally liable for breaches - not just fines, but personal financial responsibility.</p>
+                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
+                                    <h4 className="font-bold text-[#000080] text-lg mb-2">Fiduciary Duty</h4>
+                                    <p className="text-slate-500">Plan administrators have a legal obligation to act in your best interest. They can be personally liable for breaches - not just fines, but personal financial responsibility.</p>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                    <h4 className="font-bold text-white text-lg mb-2">Creditor Protection</h4>
-                                    <p className="text-slate-400">In most cases, your 401(k) is protected from creditors, lawsuits, and even bankruptcy proceedings. This is actually stronger protection than FDIC provides.</p>
+                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
+                                    <h4 className="font-bold text-[#000080] text-lg mb-2">Creditor Protection</h4>
+                                    <p className="text-slate-500">In most cases, your 401(k) is protected from creditors, lawsuits, and even bankruptcy proceedings. This is actually stronger protection than FDIC provides.</p>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                    <h4 className="font-bold text-white text-lg mb-2">Reporting Requirements</h4>
-                                    <p className="text-slate-400">Plan sponsors must provide regular statements, disclose fees, and file annual reports. Transparency is legally mandated.</p>
+                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
+                                    <h4 className="font-bold text-[#000080] text-lg mb-2">Reporting Requirements</h4>
+                                    <p className="text-slate-500">Plan sponsors must provide regular statements, disclose fees, and file annual reports. Transparency is legally mandated.</p>
                                 </div>
                             </div>
 
@@ -233,25 +233,25 @@ export default function Is401kFDICInsuredPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">SIPC Coverage: If Your Broker Fails</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">SIPC Coverage: If Your Broker Fails</h2>
                             </div>
                             <p>
                                 The Securities Investor Protection Corporation (SIPC) provides another layer of protection - specifically if the brokerage firm holding your 401(k) goes bankrupt.
                             </p>
 
                             <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">SIPC Coverage Limits</h4>
+                                <h4 className="font-bold text-[#000080] text-lg mb-4">SIPC Coverage Limits</h4>
                                 <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Total Coverage</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Total Coverage</span>
                                         <span className="font-semibold text-blue-400">$500,000 per customer</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Cash Coverage</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Cash Coverage</span>
                                         <span className="font-semibold text-blue-400">$250,000 (within total)</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Securities Coverage</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Securities Coverage</span>
                                         <span className="font-semibold text-blue-400">$500,000</span>
                                     </div>
                                 </div>
@@ -272,10 +272,10 @@ export default function Is401kFDICInsuredPage() {
                         {/* Employer Bankruptcy */}
                         <section id="employer-bankruptcy" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#B22234]">
                                     <Briefcase className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What Happens If Your Employer Goes Bankrupt?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What Happens If Your Employer Goes Bankrupt?</h2>
                             </div>
                             <p>
                                 This is a fear many workers have, especially after watching companies like Enron, Lehman Brothers, and others collapse. Here&apos;s the good news:
@@ -314,35 +314,35 @@ export default function Is401kFDICInsuredPage() {
                         {/* Broker/Custodian Failure */}
                         <section id="broker-failure" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-700/50 rounded-lg text-slate-400">
+                                <div className="p-3 bg-slate-100 rounded-lg text-slate-500">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What If Your Custodian or Broker Fails?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What If Your Custodian or Broker Fails?</h2>
                             </div>
                             <p>
                                 If the brokerage firm managing your 401(k) goes bankrupt, here&apos;s what happens:
                             </p>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-[#000080] flex items-center justify-center font-bold flex-shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-white">SIPC Steps In</h4>
-                                        <p className="text-sm text-slate-400 mt-1">SIPC works to recover and return customer assets. Most recoveries happen within 1-3 months.</p>
+                                        <h4 className="font-bold text-[#000080]">SIPC Steps In</h4>
+                                        <p className="text-sm text-slate-500 mt-1">SIPC works to recover and return customer assets. Most recoveries happen within 1-3 months.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-[#000080] flex items-center justify-center font-bold flex-shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Assets Are Transferred</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Your securities are typically transferred to another brokerage firm. The actual stocks and bonds still exist - they just change custodians.</p>
+                                        <h4 className="font-bold text-[#000080]">Assets Are Transferred</h4>
+                                        <p className="text-sm text-slate-500 mt-1">Your securities are typically transferred to another brokerage firm. The actual stocks and bonds still exist - they just change custodians.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-secondary text-[#000080] flex items-center justify-center font-bold flex-shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Coverage Fills Gaps</h4>
-                                        <p className="text-sm text-slate-400 mt-1">If securities are missing (fraud), SIPC coverage of up to $500,000 helps make you whole.</p>
+                                        <h4 className="font-bold text-[#000080]">Coverage Fills Gaps</h4>
+                                        <p className="text-sm text-slate-500 mt-1">If securities are missing (fraud), SIPC coverage of up to $500,000 helps make you whole.</p>
                                     </div>
                                 </div>
                             </div>
@@ -353,10 +353,10 @@ export default function Is401kFDICInsuredPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#000080] text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want Something You Can Actually Touch?</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Want Something You Can Actually Touch?</h3>
                                 <p className="mb-6 text-gray-200">A Gold IRA holds real gold in a vault with your name on it. Not paper, not promises, not computer numbers.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <a href={augustaLink} target="_blank" rel="noopener noreferrer">
@@ -372,7 +372,7 @@ export default function Is401kFDICInsuredPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What IS Actually at Risk: Market Losses</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What IS Actually at Risk: Market Losses</h2>
                             </div>
                             <p>
                                 Here&apos;s the uncomfortable truth that no one likes to discuss: <strong>The biggest risk to your 401(k) has zero insurance protection.</strong>
@@ -382,32 +382,32 @@ export default function Is401kFDICInsuredPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Market Event</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">S&P 500 Loss</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">$500k 401(k) Becomes</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Market Event</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">S&P 500 Loss</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">$500k 401(k) Becomes</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 text-white">Dot-Com Crash (2000-02)</td>
+                                            <td className="p-4 text-[#000080]">Dot-Com Crash (2000-02)</td>
                                             <td className="p-4 text-red-400 font-semibold">-49%</td>
                                             <td className="p-4 text-red-400 font-semibold">$255,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">Financial Crisis (2008)</td>
+                                            <td className="p-4 text-[#000080]">Financial Crisis (2008)</td>
                                             <td className="p-4 text-red-400 font-semibold">-57%</td>
                                             <td className="p-4 text-red-400 font-semibold">$215,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">COVID Crash (2020)</td>
+                                            <td className="p-4 text-[#000080]">COVID Crash (2020)</td>
                                             <td className="p-4 text-red-400 font-semibold">-34%</td>
                                             <td className="p-4 text-red-400 font-semibold">$330,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2022 Bear Market</td>
+                                            <td className="p-4 text-[#000080]">2022 Bear Market</td>
                                             <td className="p-4 text-red-400 font-semibold">-25%</td>
                                             <td className="p-4 text-red-400 font-semibold">$375,000</td>
                                         </tr>
@@ -427,43 +427,43 @@ export default function Is401kFDICInsuredPage() {
                         {/* Gold IRA Protection */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#B22234]">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Gold IRA: Tangible Asset Protection</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Gold IRA: Tangible Asset Protection</h2>
                             </div>
                             <p>
                                 A Gold IRA offers something that paper investments cannot: ownership of a physical, tangible asset that exists outside the paper financial system.
                             </p>
 
                             <div className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20 not-prose my-8">
-                                <h4 className="font-bold text-amber-400 text-xl mb-4">How Gold Provides Different Protection</h4>
+                                <h4 className="font-bold text-[#B22234] text-xl mb-4">How Gold Provides Different Protection</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="space-y-3">
                                         <div className="flex items-start gap-2">
-                                            <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                                            <ShieldCheck className="w-5 h-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                                             <span className="text-amber-200">Physical asset you actually own</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                                            <ShieldCheck className="w-5 h-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                                             <span className="text-amber-200">No counterparty risk</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                                            <ShieldCheck className="w-5 h-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                                             <span className="text-amber-200">Historically rises during market crashes</span>
                                         </div>
                                     </div>
                                     <div className="space-y-3">
                                         <div className="flex items-start gap-2">
-                                            <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                                            <ShieldCheck className="w-5 h-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                                             <span className="text-amber-200">Held in IRS-approved depositories</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                                            <ShieldCheck className="w-5 h-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                                             <span className="text-amber-200">Same tax advantages as traditional IRA</span>
                                         </div>
                                         <div className="flex items-start gap-2">
-                                            <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                                            <ShieldCheck className="w-5 h-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                                             <span className="text-amber-200">Can rollover from existing 401(k) tax-free</span>
                                         </div>
                                     </div>
@@ -476,29 +476,29 @@ export default function Is401kFDICInsuredPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Crisis</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">S&P 500</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Gold</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Crisis</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">S&P 500</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Gold</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 text-white">2008 Financial Crisis</td>
+                                            <td className="p-4 text-[#000080]">2008 Financial Crisis</td>
                                             <td className="p-4 text-red-400 font-semibold">-37%</td>
                                             <td className="p-4 text-green-400 font-semibold">+5.5%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2020 COVID Crash</td>
+                                            <td className="p-4 text-[#000080]">2020 COVID Crash</td>
                                             <td className="p-4 text-red-400 font-semibold">-34%</td>
                                             <td className="p-4 text-green-400 font-semibold">+25% (full year)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2022 Bear Market</td>
+                                            <td className="p-4 text-[#000080]">2022 Bear Market</td>
                                             <td className="p-4 text-red-400 font-semibold">-18%</td>
-                                            <td className="p-4 text-amber-400 font-semibold">+0.4%</td>
+                                            <td className="p-4 text-[#B22234] font-semibold">+0.4%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -518,72 +518,72 @@ export default function Is401kFDICInsuredPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Is my IRA FDIC insured?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         No, traditional IRAs and Roth IRAs are generally NOT FDIC insured. FDIC insurance only covers deposit accounts at banks (checking, savings, CDs). However, if your IRA holds cash in a bank deposit account (like an IRA CD or IRA savings), that portion may be FDIC insured up to $250,000. Investment holdings in your IRA (stocks, mutual funds, ETFs) are not FDIC insured but may be covered by SIPC if your brokerage fails.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What happens to my 401k if the stock market crashes?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         If the stock market crashes, your 401(k) will likely lose value proportional to your stock exposure. Neither FDIC nor SIPC insurance protects against market losses - they only protect against institutional failures. This is why diversification into non-correlated assets like gold is important. A 50% market crash means a 50% loss in your stock-heavy 401(k), which could take years to recover.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Is my 401k safe from bank failure?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         Your 401(k) is generally safe from bank failure because 401(k) assets are not held by banks - they&apos;re held in trust by custodians and are separate from the bank&apos;s assets. If the custodian or brokerage firm fails, SIPC provides up to $500,000 in protection ($250,000 for cash). Your 401(k) is also protected by ERISA, which requires that retirement funds be held separately from employer and custodian assets.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What protects my 401k from creditors?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         ERISA provides strong creditor protection for 401(k) accounts. In most cases, creditors and lawsuit judgments cannot touch your 401(k) savings. Even in bankruptcy, your 401(k) is generally protected. However, there are exceptions: the IRS can collect back taxes from your 401(k), and qualified domestic relations orders (QDROs) in divorce cases can divide your retirement assets.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Is a Gold IRA safer than a 401k?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         A Gold IRA offers different protection than a traditional 401(k). Gold is a tangible asset with no counterparty risk - it can&apos;t go bankrupt. It also tends to rise when stocks fall, providing crash protection that stock-based 401(k)s don&apos;t have. However, gold doesn&apos;t pay dividends and can be volatile in the short term. The safest approach is diversification: holding both traditional investments and precious metals for balanced protection.
                                     </p>
                                 </details>
@@ -591,10 +591,10 @@ export default function Is401kFDICInsuredPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Add Real Protection to What You&apos;ve Built</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">Add Real Protection to What You&apos;ve Built</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">You didn&apos;t work 30 years to watch a crash wipe it out. Physical gold doesn&apos;t care what the stock market does.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
@@ -602,7 +602,7 @@ export default function Is401kFDICInsuredPage() {
                                             Get Your Free Gold IRA Guide <ArrowRight className="ml-2 w-5 h-5" />
                                         </a>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#000080] hover:bg-slate-200">
                                         <Link href="/what-is-a-gold-ira">Learn About Gold IRAs</Link>
                                     </Button>
                                 </div>
@@ -616,7 +616,7 @@ export default function Is401kFDICInsuredPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="is-401k-fdic-insured" />
                 </Container>

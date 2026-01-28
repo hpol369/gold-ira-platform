@@ -28,20 +28,20 @@ const schema = {
 
 export default function GoldcoVsAHGPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-slate-50">
             <SchemaScript schema={schema} />
             <Navbar />
             <div className="flex-grow">
-                <header className="bg-primary text-white py-16">
+                <header className="bg-slate-50 border-b border-slate-200 py-16">
                     <Container>
                         <div className="max-w-3xl">
-                            <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
+                            <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4 block">
                                 Head-to-Head Comparison
                             </span>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">
                                 Goldco vs American Hartford Gold
                             </h1>
-                            <p className="text-xl text-gray-200">
+                            <p className="text-xl text-slate-600">
                                 Battle of the Customer Service Heavyweights. Which Gold IRA company deserves your business?
                             </p>
                         </div>
@@ -56,7 +56,7 @@ export default function GoldcoVsAHGPage() {
                         </aside>
 
                         {/* Content */}
-                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                             {/* Verdict */}
                             <VerdictBox
@@ -72,52 +72,52 @@ export default function GoldcoVsAHGPage() {
                             <section id="comparison" className="scroll-mt-32">
                                 <h2>At a Glance Comparison</h2>
                                 <div className="not-prose overflow-x-auto my-6">
-                                    <table className="w-full border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <table className="w-full border-collapse bg-white shadow-sm rounded-xl border border-slate-200">
                                         <thead>
-                                            <tr className="bg-white/10 text-white">
-                                                <th className="p-4 text-left font-bold text-amber-400">Feature</th>
-                                                <th className="p-4 text-center font-bold text-amber-400">Goldco</th>
-                                                <th className="p-4 text-center font-bold text-amber-400">American Hartford</th>
+                                            <tr className="bg-slate-100 text-slate-900">
+                                                <th className="p-4 text-left font-bold text-[#B22234]">Feature</th>
+                                                <th className="p-4 text-center font-bold text-[#B22234]">Goldco</th>
+                                                <th className="p-4 text-center font-bold text-[#B22234]">American Hartford</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="text-sm text-slate-300">
-                                            <tr className="border-b border-white/10">
-                                                <td className="p-4 font-medium text-white">Minimum Investment</td>
+                                        <tbody className="text-sm text-slate-600">
+                                            <tr className="border-b border-slate-200">
+                                                <td className="p-4 font-medium text-slate-900">Minimum Investment</td>
                                                 <td className="p-4 text-center">$25,000</td>
                                                 <td className="p-4 text-center text-green-400 font-bold">$5,000</td>
                                             </tr>
-                                            <tr className="border-b border-white/10 bg-white/5">
-                                                <td className="p-4 font-medium text-white">BBB Rating</td>
+                                            <tr className="border-b border-slate-200 bg-white/5">
+                                                <td className="p-4 font-medium text-slate-900">BBB Rating</td>
                                                 <td className="p-4 text-center">A+</td>
                                                 <td className="p-4 text-center">A+</td>
                                             </tr>
-                                            <tr className="border-b border-white/10">
-                                                <td className="p-4 font-medium text-white">Trustpilot Score</td>
+                                            <tr className="border-b border-slate-200">
+                                                <td className="p-4 font-medium text-slate-900">Trustpilot Score</td>
                                                 <td className="p-4 text-center">4.8/5</td>
                                                 <td className="p-4 text-center">4.9/5</td>
                                             </tr>
-                                            <tr className="border-b border-white/10 bg-white/5">
-                                                <td className="p-4 font-medium text-white">Buyback Guarantee</td>
+                                            <tr className="border-b border-slate-200 bg-white/5">
+                                                <td className="p-4 font-medium text-slate-900">Buyback Guarantee</td>
                                                 <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
                                                 <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
                                             </tr>
-                                            <tr className="border-b border-white/10">
-                                                <td className="p-4 font-medium text-white">Buyback Fees</td>
-                                                <td className="p-4 text-center text-amber-400">Varies</td>
+                                            <tr className="border-b border-slate-200">
+                                                <td className="p-4 font-medium text-slate-900">Buyback Fees</td>
+                                                <td className="p-4 text-center text-[#B22234]">Varies</td>
                                                 <td className="p-4 text-center text-green-400 font-bold">$0</td>
                                             </tr>
-                                            <tr className="border-b border-white/10 bg-white/5">
-                                                <td className="p-4 font-medium text-white">Free Silver Promo</td>
+                                            <tr className="border-b border-slate-200 bg-white/5">
+                                                <td className="p-4 font-medium text-slate-900">Free Silver Promo</td>
                                                 <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
                                                 <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
                                             </tr>
-                                            <tr className="border-b border-white/10">
-                                                <td className="p-4 font-medium text-white">Celebrity Endorsement</td>
+                                            <tr className="border-b border-slate-200">
+                                                <td className="p-4 font-medium text-slate-900">Celebrity Endorsement</td>
                                                 <td className="p-4 text-center text-sm">Sean Hannity</td>
                                                 <td className="p-4 text-center text-sm">Bill O&apos;Reilly</td>
                                             </tr>
                                             <tr className="bg-white/5">
-                                                <td className="p-4 font-medium text-white">Best For</td>
+                                                <td className="p-4 font-medium text-slate-900">Best For</td>
                                                 <td className="p-4 text-center text-sm">$25k+ investors wanting proven track record</td>
                                                 <td className="p-4 text-center text-sm">Smaller accounts, fee-free buybacks</td>
                                             </tr>
@@ -131,45 +131,45 @@ export default function GoldcoVsAHGPage() {
                                 <h2>Key Differences Explained</h2>
 
                                 <div className="not-prose grid gap-6 my-6">
-                                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
                                         <div className="flex items-center gap-3 mb-4">
                                             <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
                                                 <DollarSign className="w-5 h-5 text-green-400" />
                                             </div>
-                                            <h3 className="font-bold text-lg text-amber-400">Minimum Investment</h3>
+                                            <h3 className="font-bold text-lg text-[#B22234]">Minimum Investment</h3>
                                         </div>
-                                        <p className="text-slate-300 text-sm">
+                                        <p className="text-slate-600 text-sm">
                                             This is the biggest practical difference. <strong>Goldco requires $25,000</strong> to start, while <strong>American Hartford starts at just $5,000</strong>. If you&apos;re working with a smaller retirement account, AHG is clearly more accessible.
                                         </p>
                                     </div>
 
-                                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
                                         <div className="flex items-center gap-3 mb-4">
                                             <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
                                                 <RefreshCw className="w-5 h-5 text-blue-400" />
                                             </div>
-                                            <h3 className="font-bold text-lg text-amber-400">Buyback Programs</h3>
+                                            <h3 className="font-bold text-lg text-[#B22234]">Buyback Programs</h3>
                                         </div>
-                                        <p className="text-slate-300 text-sm mb-3">
+                                        <p className="text-slate-600 text-sm mb-3">
                                             Both companies will buy back your metals when you&apos;re ready to sell—but the terms differ:
                                         </p>
-                                        <ul className="space-y-2 text-sm text-slate-300">
+                                        <ul className="space-y-2 text-sm text-slate-600">
                                             <li><strong>Goldco:</strong> Famous &quot;Buyback Guarantee&quot; at competitive rates. May have small spread fees.</li>
                                             <li><strong>American Hartford:</strong> <strong>Zero buyback fees</strong>—they&apos;ll repurchase at current market prices with no deductions.</li>
                                         </ul>
                                     </div>
 
-                                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
                                         <div className="flex items-center gap-3 mb-4">
-                                            <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
-                                                <Users className="w-5 h-5 text-secondary" />
+                                            <div className="w-10 h-10 rounded-full bg-[#B22234]/10 flex items-center justify-center">
+                                                <Users className="w-5 h-5 text-[#B22234]" />
                                             </div>
-                                            <h3 className="font-bold text-lg text-amber-400">Company Culture</h3>
+                                            <h3 className="font-bold text-lg text-[#B22234]">Company Culture</h3>
                                         </div>
-                                        <p className="text-slate-300 text-sm mb-3">
+                                        <p className="text-slate-600 text-sm mb-3">
                                             Both are known for excellent customer service, but the vibes are slightly different:
                                         </p>
-                                        <ul className="space-y-2 text-sm text-slate-300">
+                                        <ul className="space-y-2 text-sm text-slate-600">
                                             <li><strong>Goldco:</strong> Larger, more corporate feel. Streamlined processes. Massive advertising presence.</li>
                                             <li><strong>American Hartford:</strong> Family-owned, more personal touch. Direct access to senior staff.</li>
                                         </ul>
@@ -185,24 +185,24 @@ export default function GoldcoVsAHGPage() {
                                 </p>
 
                                 <div className="not-prose grid md:grid-cols-2 gap-6 my-6">
-                                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
                                         <div className="flex items-center gap-2 mb-4">
-                                            <Shield className="w-6 h-6 text-secondary" />
-                                            <h3 className="font-bold text-amber-400">Goldco Fees</h3>
+                                            <Shield className="w-6 h-6 text-[#B22234]" />
+                                            <h3 className="font-bold text-[#B22234]">Goldco Fees</h3>
                                         </div>
-                                        <ul className="space-y-2 text-sm text-slate-300">
+                                        <ul className="space-y-2 text-sm text-slate-600">
                                             <li>• Setup: $50 (one-time)</li>
                                             <li>• Annual Admin: $80</li>
                                             <li>• Storage: $100-150/year</li>
                                             <li>• <strong>Total Year 1: ~$230-280</strong></li>
                                         </ul>
                                     </div>
-                                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
                                         <div className="flex items-center gap-2 mb-4">
                                             <Users className="w-6 h-6 text-blue-600" />
-                                            <h3 className="font-bold text-amber-400">American Hartford Fees</h3>
+                                            <h3 className="font-bold text-[#B22234]">American Hartford Fees</h3>
                                         </div>
-                                        <ul className="space-y-2 text-sm text-slate-300">
+                                        <ul className="space-y-2 text-sm text-slate-600">
                                             <li>• Setup: Varies (often waived)</li>
                                             <li>• Annual: ~$180/year combined</li>
                                             <li>• Storage: Included</li>
@@ -222,8 +222,8 @@ export default function GoldcoVsAHGPage() {
 
                                 <div className="not-prose grid md:grid-cols-2 gap-6 my-6">
                                     <div className="bg-secondary/5 p-6 rounded-xl border border-secondary/20">
-                                        <h3 className="font-bold text-amber-400 text-lg mb-3">Choose Goldco If:</h3>
-                                        <ul className="space-y-2 text-sm text-slate-300">
+                                        <h3 className="font-bold text-[#B22234] text-lg mb-3">Choose Goldco If:</h3>
+                                        <ul className="space-y-2 text-sm text-slate-600">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                                                 <span>You have $25,000+ to invest</span>
@@ -250,8 +250,8 @@ export default function GoldcoVsAHGPage() {
                                         </div>
                                     </div>
                                     <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
-                                        <h3 className="font-bold text-amber-400 text-lg mb-3">Choose American Hartford If:</h3>
-                                        <ul className="space-y-2 text-sm text-slate-300">
+                                        <h3 className="font-bold text-[#B22234] text-lg mb-3">Choose American Hartford If:</h3>
+                                        <ul className="space-y-2 text-sm text-slate-600">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                                                 <span>You have $5,000-$25,000 to invest</span>
@@ -298,16 +298,16 @@ export default function GoldcoVsAHGPage() {
                             </section>
 
                             {/* Related Links */}
-                            <div className="not-prose my-8 p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                <h4 className="font-bold text-amber-400 mb-4">Related Reviews</h4>
+                            <div className="not-prose my-8 p-6 bg-white shadow-sm rounded-xl border border-slate-200">
+                                <h4 className="font-bold text-[#B22234] mb-4">Related Reviews</h4>
                                 <div className="flex flex-wrap gap-3">
-                                    <Link href="/reviews/goldco" className="text-sm px-4 py-2 bg-white/10 rounded-lg border border-white/10 text-slate-300 hover:border-amber-500/50 hover:text-white transition-colors">
+                                    <Link href="/reviews/goldco" className="text-sm px-4 py-2 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:border-[#B22234]/50 hover:text-slate-900 transition-colors">
                                         Goldco Full Review →
                                     </Link>
-                                    <Link href="/reviews/american-hartford-gold" className="text-sm px-4 py-2 bg-white/10 rounded-lg border border-white/10 text-slate-300 hover:border-amber-500/50 hover:text-white transition-colors">
+                                    <Link href="/reviews/american-hartford-gold" className="text-sm px-4 py-2 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:border-[#B22234]/50 hover:text-slate-900 transition-colors">
                                         American Hartford Review →
                                     </Link>
-                                    <Link href="/compare/goldco-vs-lear-capital" className="text-sm px-4 py-2 bg-white/10 rounded-lg border border-white/10 text-slate-300 hover:border-amber-500/50 hover:text-white transition-colors">
+                                    <Link href="/compare/goldco-vs-lear-capital" className="text-sm px-4 py-2 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:border-[#B22234]/50 hover:text-slate-900 transition-colors">
                                         Goldco vs Lear Capital →
                                     </Link>
                                 </div>
@@ -320,7 +320,7 @@ export default function GoldcoVsAHGPage() {
                 </Container>
 
                 {/* Augusta CTA */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50">
                     <Container>
                         <AugustaCTA
                             variant="footer"

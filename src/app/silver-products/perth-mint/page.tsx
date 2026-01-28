@@ -163,29 +163,29 @@ const perthProducts = [
 
 export default function PerthMintPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/20 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Gem className="h-4 w-4" />
               60 MONTHLY SEARCHES - DIFFICULTY 1
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Perth Mint Silver: Australian Excellence
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               Since 1899, Perth Mint has been producing some of the world&apos;s finest bullion.
               Government-backed and known for exceptional quality, their Kangaroo coins and
               distinctive bars are favorites among silver investors worldwide.
@@ -209,29 +209,29 @@ export default function PerthMintPage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-800/50">
+      <section className="py-12 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Globe className="h-8 w-8 text-amber-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">1899</div>
-                <div className="text-sm text-slate-400">Founded</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Globe className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">1899</div>
+                <div className="text-sm text-slate-600">Founded</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                 <Shield className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">.9999</div>
-                <div className="text-sm text-slate-400">Coin Purity</div>
+                <div className="text-2xl font-bold text-slate-900">.9999</div>
+                <div className="text-sm text-slate-600">Coin Purity</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Award className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">Gov&apos;t</div>
-                <div className="text-sm text-slate-400">Backed</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Award className="h-8 w-8 text-slate-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">Gov&apos;t</div>
+                <div className="text-sm text-slate-600">Backed</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">3-12%</div>
-                <div className="text-sm text-slate-400">Premium Range</div>
+                <div className="text-2xl font-bold text-slate-900">3-12%</div>
+                <div className="text-sm text-slate-600">Premium Range</div>
               </div>
             </div>
           </div>
@@ -239,25 +239,25 @@ export default function PerthMintPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
               {/* About Perth Mint */}
-              <div className="not-prose bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-amber-500/20 rounded-lg">
-                    <Award className="h-6 w-6 text-amber-400" />
+                  <div className="p-2 bg-[#B22234]/20 rounded-lg">
+                    <Award className="h-6 w-6 text-[#B22234]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-white m-0">About Perth Mint</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 m-0">About Perth Mint</h2>
                 </div>
-                <p className="text-slate-300 mb-4">
+                <p className="text-slate-600 mb-4">
                   The Perth Mint is Australia&apos;s oldest operating mint, established in 1899 as a
                   branch of Britain&apos;s Royal Mint. Today it&apos;s wholly owned by the Government of
                   Western Australia, making it one of the most trusted mints in the world.
                 </p>
-                <p className="text-slate-300">
+                <p className="text-slate-600">
                   Unlike private refiners, Perth Mint&apos;s products are backed by a sovereign government.
                   This provides an extra layer of confidence in authenticity and quality—important
                   factors when building a silver position.
@@ -265,40 +265,40 @@ export default function PerthMintPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Package className="h-6 w-6 text-slate-400" />
+                <Package className="h-6 w-6 text-slate-600" />
                 Perth Mint Silver Products
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                  <thead className="bg-slate-800/50">
+                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <thead className="bg-slate-50">
                     <tr>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Product</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Type</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Purity</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Premium</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">IRA</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Type</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Purity</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Premium</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">IRA</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/10 text-sm">
+                  <tbody className="divide-y divide-slate-200 text-sm">
                     {perthProducts.map((product) => (
-                      <tr key={product.name} className={product.popular ? "bg-amber-500/5" : ""}>
-                        <td className="p-4 font-semibold text-white">
+                      <tr key={product.name} className={product.popular ? "bg-[#B22234]/5" : ""}>
+                        <td className="p-4 font-semibold text-slate-900">
                           {product.name}
                           {product.popular && (
-                            <span className="ml-2 text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded">
+                            <span className="ml-2 text-xs bg-[#B22234]/20 text-[#B22234] px-2 py-0.5 rounded">
                               Popular
                             </span>
                           )}
                         </td>
-                        <td className="p-4 text-slate-300">{product.type}</td>
-                        <td className="p-4 text-amber-400">{product.purity}</td>
-                        <td className="p-4 text-slate-300">{product.premium}</td>
+                        <td className="p-4 text-slate-600">{product.type}</td>
+                        <td className="p-4 text-[#B22234]">{product.purity}</td>
+                        <td className="p-4 text-slate-600">{product.premium}</td>
                         <td className="p-4">
                           {product.iraEligible ? (
                             <CheckCircle className="h-5 w-5 text-green-400" />
                           ) : (
-                            <span className="text-slate-500">No</span>
+                            <span className="text-slate-600">No</span>
                           )}
                         </td>
                       </tr>
@@ -308,20 +308,20 @@ export default function PerthMintPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Gem className="h-6 w-6 text-amber-400" />
+                <Gem className="h-6 w-6 text-[#B22234]" />
                 Featured: Silver Kangaroo
               </h2>
 
-              <div className="not-prose bg-white/5 backdrop-blur-sm border border-amber-500/30 rounded-xl p-6 my-8">
-                <h3 className="text-xl font-bold text-white mb-4">Australian Silver Kangaroo</h3>
+              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 my-8">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Australian Silver Kangaroo</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <p className="text-slate-300 mb-4">
+                    <p className="text-slate-600 mb-4">
                       Perth Mint&apos;s flagship silver coin features a new kangaroo design each year,
                       making it popular with both stackers and collectors. It&apos;s one of few
                       government coins struck in .9999 (four-nines) fine silver.
                     </p>
-                    <ul className="space-y-2 text-slate-300">
+                    <ul className="space-y-2 text-slate-600">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-green-400" />
                         Purity: .9999 fine silver
@@ -341,8 +341,8 @@ export default function PerthMintPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-amber-400 mb-2">Why Investors Like It</h4>
-                    <ul className="space-y-2 text-slate-300 text-sm">
+                    <h4 className="text-lg font-semibold text-[#B22234] mb-2">Why Investors Like It</h4>
+                    <ul className="space-y-2 text-slate-600 text-sm">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />
                         <span>Higher purity than Eagles (.999) or Maples (.9999 match)</span>
@@ -365,57 +365,57 @@ export default function PerthMintPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-400" />
+                <Scale className="h-6 w-6 text-slate-600" />
                 Cast vs Minted Bars
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">Perth Mint Cast Bars</h3>
-                  <p className="text-slate-300 mb-4">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">Perth Mint Cast Bars</h3>
+                  <p className="text-slate-600 mb-4">
                     Made by pouring molten silver into molds. Each bar has a unique, slightly
                     irregular appearance with the Perth Mint swan logo stamped on top.
                   </p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-slate-300">
+                    <li className="flex items-center gap-2 text-slate-600">
                       <CheckCircle className="h-4 w-4 text-green-400" />
                       Lower premiums (3-5%)
                     </li>
-                    <li className="flex items-center gap-2 text-slate-300">
+                    <li className="flex items-center gap-2 text-slate-600">
                       <CheckCircle className="h-4 w-4 text-green-400" />
                       Available: 1 kg, 100 oz
                     </li>
-                    <li className="flex items-center gap-2 text-slate-300">
+                    <li className="flex items-center gap-2 text-slate-600">
                       <CheckCircle className="h-4 w-4 text-green-400" />
                       Unique character each bar
                     </li>
-                    <li className="flex items-center gap-2 text-slate-300">
+                    <li className="flex items-center gap-2 text-slate-600">
                       <CheckCircle className="h-4 w-4 text-green-400" />
                       Serial numbered
                     </li>
                   </ul>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">Perth Mint Minted Bars</h3>
-                  <p className="text-slate-300 mb-4">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">Perth Mint Minted Bars</h3>
+                  <p className="text-slate-600 mb-4">
                     Stamped from rolled silver sheets with the kangaroo design. Uniform,
                     pristine finish with sharp edges. Often in sealed CertiCard packaging.
                   </p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-slate-300">
-                      <CheckCircle className="h-4 w-4 text-slate-400" />
+                    <li className="flex items-center gap-2 text-slate-600">
+                      <CheckCircle className="h-4 w-4 text-slate-600" />
                       Higher premiums (5-8%)
                     </li>
-                    <li className="flex items-center gap-2 text-slate-300">
-                      <CheckCircle className="h-4 w-4 text-slate-400" />
+                    <li className="flex items-center gap-2 text-slate-600">
+                      <CheckCircle className="h-4 w-4 text-slate-600" />
                       Available: 1 oz, 10 oz
                     </li>
-                    <li className="flex items-center gap-2 text-slate-300">
-                      <CheckCircle className="h-4 w-4 text-slate-400" />
+                    <li className="flex items-center gap-2 text-slate-600">
+                      <CheckCircle className="h-4 w-4 text-slate-600" />
                       Uniform appearance
                     </li>
-                    <li className="flex items-center gap-2 text-slate-300">
-                      <CheckCircle className="h-4 w-4 text-slate-400" />
+                    <li className="flex items-center gap-2 text-slate-600">
+                      <CheckCircle className="h-4 w-4 text-slate-600" />
                       Sealed security packaging
                     </li>
                   </ul>
@@ -444,7 +444,7 @@ export default function PerthMintPage() {
                   <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-green-400 mb-2">IRA Eligibility</h4>
-                    <p className="text-slate-300">
+                    <p className="text-slate-600">
                       All Perth Mint silver products meeting .999+ purity are IRA-eligible when
                       purchased new and stored at an approved depository. This includes Silver
                       Kangaroos, Koalas, Kookaburras, and Perth Mint silver bars.
@@ -469,25 +469,25 @@ export default function PerthMintPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -498,7 +498,7 @@ export default function PerthMintPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

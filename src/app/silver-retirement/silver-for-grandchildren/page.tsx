@@ -234,20 +234,20 @@ const schema = {
 
 export default function SilverForGrandchildrenPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-pink-900/20 via-slate-900 to-slate-900" />
+        <div className="absolute inset-0 bg-slate-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(236,72,153,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Link
               href="/silver-retirement"
-              className="inline-flex items-center gap-2 text-slate-400 text-sm hover:text-white transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-slate-600 text-sm hover:text-slate-900 transition-colors mb-6"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
@@ -256,17 +256,17 @@ export default function SilverForGrandchildrenPage() {
               <Gift className="h-4 w-4" />
               GENERATIONAL WEALTH
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
               Silver for{" "}
               <span className="text-pink-400">Grandchildren</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               Gift silver to your grandchildren and teach them about real money.
               Tax-efficient strategies, educational value, and building
               generational wealth.
             </p>
 
-            <Button variant="gold" size="lg" asChild>
+            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
               <a
                 href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "silver-grandchildren-hero", "augusta")}
                 target="_blank"
@@ -280,14 +280,14 @@ export default function SilverForGrandchildrenPage() {
       </section>
 
       {/* Emotional Value */}
-      <section className="py-12 bg-slate-800/30 border-y border-white/10">
+      <section className="py-12 bg-slate-100 border-y border-slate-200">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <Heart className="h-12 w-12 text-pink-400 mx-auto mb-4" />
-            <h2 className="text-2xl font-serif font-bold text-white mb-4">
+            <h2 className="text-2xl font-serif font-bold text-[#000080] mb-4">
               More Than Just an Investment
             </h2>
-            <p className="text-slate-400">
+            <p className="text-slate-600">
               When you gift silver to grandchildren, you're giving more than metal.
               You're teaching financial wisdom, creating memories, and leaving a
               tangible legacy they can hold in their hands long after you're gone.
@@ -299,10 +299,10 @@ export default function SilverForGrandchildrenPage() {
       {/* Gift Strategies */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
             Ways to Gift Silver to Grandchildren
           </h2>
-          <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
             Different strategies for different goals - from simple birthday gifts
             to structured trusts.
           </p>
@@ -314,13 +314,13 @@ export default function SilverForGrandchildrenPage() {
                 green: "bg-green-500/20 text-green-400",
                 blue: "bg-blue-500/20 text-blue-400",
                 purple: "bg-purple-500/20 text-purple-400",
-                amber: "bg-amber-500/20 text-amber-400",
+                amber: "bg-[#B22234]/20 text-[#B22234]",
               };
 
               return (
                 <div
                   key={index}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+                  className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6"
                 >
                   <div className="flex items-start gap-4">
                     <div className={`p-3 rounded-lg ${colorClasses[strategy.color]}`}>
@@ -328,12 +328,12 @@ export default function SilverForGrandchildrenPage() {
                     </div>
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <h3 className="font-bold text-white">{strategy.title}</h3>
-                        <span className="text-xs bg-slate-700/50 text-slate-300 px-2 py-1 rounded">
+                        <h3 className="font-bold text-slate-900">{strategy.title}</h3>
+                        <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">
                           {strategy.limit}
                         </span>
                       </div>
-                      <p className="text-sm text-slate-400">{strategy.description}</p>
+                      <p className="text-sm text-slate-600">{strategy.description}</p>
                     </div>
                   </div>
                 </div>
@@ -344,12 +344,12 @@ export default function SilverForGrandchildrenPage() {
       </section>
 
       {/* Best Silver for Kids */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
             Best Silver Coins for Grandchildren
           </h2>
-          <p className="text-slate-400 text-center max-w-2xl mx-auto mb-8">
+          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-8">
             Not all silver is created equal for gifts. Here are our top picks for
             grandchildren.
           </p>
@@ -358,22 +358,22 @@ export default function SilverForGrandchildrenPage() {
             {bestSilverForKids.map((item, index) => (
               <div
                 key={index}
-                className={`bg-white/5 border rounded-xl p-4 ${
+                className={`bg-slate-50 border rounded-xl p-4 ${
                   item.recommended
                     ? "border-pink-500/30"
-                    : "border-white/10"
+                    : "border-slate-200"
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-bold text-white">{item.product}</h3>
+                  <h3 className="font-bold text-slate-900">{item.product}</h3>
                   {item.recommended && (
                     <span className="text-xs text-pink-400 bg-pink-500/20 px-2 py-0.5 rounded">
                       TOP PICK
                     </span>
                   )}
                 </div>
-                <p className="text-sm text-slate-400 mb-2">{item.why}</p>
-                <p className="text-sm text-slate-500">{item.price}</p>
+                <p className="text-sm text-slate-600 mb-2">{item.why}</p>
+                <p className="text-sm text-slate-600">{item.price}</p>
               </div>
             ))}
           </div>
@@ -383,11 +383,11 @@ export default function SilverForGrandchildrenPage() {
       {/* Educational Value */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
             <GraduationCap className="h-8 w-8 text-pink-400 inline-block mr-3" />
             Educational Value of Silver Gifts
           </h2>
-          <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
             Silver isn't just a financial gift - it's a teaching tool that opens
             doors to important life lessons.
           </p>
@@ -396,10 +396,10 @@ export default function SilverForGrandchildrenPage() {
             {educationalValue.map((item, index) => (
               <div
                 key={index}
-                className="bg-white/5 border border-white/10 rounded-xl p-6"
+                className="bg-slate-50 border border-slate-200 rounded-xl p-6"
               >
-                <h3 className="font-bold text-white mb-2">{item.lesson}</h3>
-                <p className="text-sm text-slate-400">{item.description}</p>
+                <h3 className="font-bold text-slate-900 mb-2">{item.lesson}</h3>
+                <p className="text-sm text-slate-600">{item.description}</p>
               </div>
             ))}
           </div>
@@ -407,18 +407,18 @@ export default function SilverForGrandchildrenPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-900 via-amber-900/20 to-slate-900">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
               Ready to Start Their Collection?
             </h3>
-            <p className="text-slate-300 mb-6">
+            <p className="text-slate-600 mb-6">
               Augusta Precious Metals can help you select the perfect silver
               coins for your grandchildren. Quality coins, competitive prices,
               and gift packaging available.
             </p>
-            <Button variant="gold" size="lg" asChild>
+            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
               <a
                 href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "silver-grandchildren-mid", "augusta")}
                 target="_blank"
@@ -432,27 +432,27 @@ export default function SilverForGrandchildrenPage() {
       </section>
 
       {/* Tax Considerations */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Tax Considerations for Silver Gifts
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {taxConsiderations.map((item, index) => (
               <div
                 key={index}
-                className="bg-white/5 border border-white/10 rounded-xl p-4"
+                className="bg-slate-50 border border-slate-200 rounded-xl p-4"
               >
-                <h3 className="font-bold text-white mb-2">{item.topic}</h3>
-                <p className="text-sm text-slate-400">{item.details}</p>
+                <h3 className="font-bold text-slate-900 mb-2">{item.topic}</h3>
+                <p className="text-sm text-slate-600">{item.details}</p>
               </div>
             ))}
           </div>
-          <div className="max-w-3xl mx-auto mt-6 bg-amber-500/10 border border-amber-500/30 rounded-xl p-4">
+          <div className="max-w-3xl mx-auto mt-6 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-4">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
-              <p className="text-sm text-slate-400">
-                <strong className="text-white">Note:</strong> Tax rules are complex
+              <AlertTriangle className="h-5 w-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+              <p className="text-sm text-slate-600">
+                <strong className="text-slate-900">Note:</strong> Tax rules are complex
                 and change frequently. This is general information, not tax advice.
                 Consult a tax professional for your specific situation.
               </p>
@@ -464,28 +464,28 @@ export default function SilverForGrandchildrenPage() {
       {/* Gift Ideas by Occasion */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Silver Gift Ideas by Occasion
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">🎂</div>
-              <h3 className="font-bold text-white mb-2">Birthdays</h3>
-              <p className="text-sm text-slate-400">
+              <h3 className="font-bold text-slate-900 mb-2">Birthdays</h3>
+              <p className="text-sm text-slate-600">
                 One American Eagle per year - they'll have 18+ ounces by adulthood
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">🎄</div>
-              <h3 className="font-bold text-white mb-2">Christmas</h3>
-              <p className="text-sm text-slate-400">
+              <h3 className="font-bold text-slate-900 mb-2">Christmas</h3>
+              <p className="text-sm text-slate-600">
                 Silver ornament or holiday-themed coin from Perth or RCM
               </p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">🎓</div>
-              <h3 className="font-bold text-white mb-2">Graduation</h3>
-              <p className="text-sm text-slate-400">
+              <h3 className="font-bold text-slate-900 mb-2">Graduation</h3>
+              <p className="text-sm text-slate-600">
                 Larger gift - 10 oz bar or roll of Eagles to start adult life
               </p>
             </div>
@@ -494,24 +494,24 @@ export default function SilverForGrandchildrenPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 bg-slate-800/30 border-y border-white/10">
+      <section className="py-16 bg-slate-100 border-y border-slate-200">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Silver for Grandchildren FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-white font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
                   {faq.question}
-                  <span className="text-amber-400 group-open:rotate-180 transition-transform">
+                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-400">{faq.answer}</p>
+                <p className="mt-4 text-slate-600">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -521,37 +521,37 @@ export default function SilverForGrandchildrenPage() {
       {/* Related Pages */}
       <section className="py-12">
         <Container>
-          <h2 className="text-xl font-bold text-white text-center mb-6">
+          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link
               href="/silver-retirement/inheritance-planning"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">Silver Inheritance Planning</h3>
-              <p className="text-sm text-slate-400">Estate planning with silver</p>
+              <h3 className="font-semibold text-slate-900 mb-1">Silver Inheritance Planning</h3>
+              <p className="text-sm text-slate-600">Estate planning with silver</p>
             </Link>
             <Link
               href="/silver-retirement/ira-approved-coins"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">IRA-Approved Silver Coins</h3>
-              <p className="text-sm text-slate-400">Best coins for IRAs</p>
+              <h3 className="font-semibold text-slate-900 mb-1">IRA-Approved Silver Coins</h3>
+              <p className="text-sm text-slate-600">Best coins for IRAs</p>
             </Link>
             <Link
               href="/grandchildren"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">Grandchildren Legacy Hub</h3>
-              <p className="text-sm text-slate-400">More ways to gift wealth</p>
+              <h3 className="font-semibold text-slate-900 mb-1">Grandchildren Legacy Hub</h3>
+              <p className="text-sm text-slate-600">More ways to gift wealth</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 border-t border-white/10">
+      <section className="py-16 border-t border-slate-200">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -94,19 +94,19 @@ const schema = {
 
 export default function SafeHavenInvestmentsPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Wealth Protection
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Safe Haven Investments
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             6 proven assets that protect wealth during market crashes, geopolitical crises, and economic uncertainty.
                         </p>
                     </div>
@@ -121,7 +121,7 @@ export default function SafeHavenInvestmentsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg  prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -145,10 +145,10 @@ export default function SafeHavenInvestmentsPage() {
                         {/* 1. Gold */}
                         <section id="gold" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#B22234]">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Gold & Precious Metals</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. Gold & Precious Metals</h2>
                             </div>
                             <p>
                                 Gold is the original and most recognized safe haven investment. For thousands of years, humans have turned to gold during times of uncertainty—and that behavior continues today.
@@ -163,33 +163,33 @@ export default function SafeHavenInvestmentsPage() {
                             </ul>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Crisis Event</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">S&P 500</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Gold</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Crisis Event</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">S&P 500</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Gold</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 text-white">2008 Financial Crisis</td>
+                                            <td className="p-4 text-[#000080]">2008 Financial Crisis</td>
                                             <td className="p-4 text-red-400 font-semibold">-37%</td>
                                             <td className="p-4 text-green-400 font-semibold">+25%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2020 COVID Crash</td>
+                                            <td className="p-4 text-[#000080]">2020 COVID Crash</td>
                                             <td className="p-4 text-red-400 font-semibold">-34% (peak to trough)</td>
                                             <td className="p-4 text-green-400 font-semibold">+25% (full year)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2022 Rate Shock</td>
+                                            <td className="p-4 text-[#000080]">2022 Rate Shock</td>
                                             <td className="p-4 text-red-400 font-semibold">-18%</td>
                                             <td className="p-4 text-yellow-400 font-semibold">0% (held value)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2024-2025 Geopolitical Tensions</td>
-                                            <td className="p-4 text-slate-400 font-semibold">Volatile</td>
+                                            <td className="p-4 text-[#000080]">2024-2025 Geopolitical Tensions</td>
+                                            <td className="p-4 text-slate-500 font-semibold">Volatile</td>
                                             <td className="p-4 text-green-400 font-semibold">New all-time highs</td>
                                         </tr>
                                     </tbody>
@@ -207,7 +207,7 @@ export default function SafeHavenInvestmentsPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. US Treasury Bonds</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. US Treasury Bonds</h2>
                             </div>
                             <p>
                                 US Treasury bonds are backed by the &quot;full faith and credit&quot; of the US government—making them among the safest investments in the world. When crisis hits, investors globally flee to Treasuries.
@@ -232,7 +232,7 @@ export default function SafeHavenInvestmentsPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Globe className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Safe Haven Currencies</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Safe Haven Currencies</h2>
                             </div>
                             <p>
                                 Certain currencies are considered safe havens and tend to strengthen during global crises:
@@ -257,10 +257,10 @@ export default function SafeHavenInvestmentsPage() {
                         {/* 4. Cash */}
                         <section id="cash" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-700/50 rounded-lg text-slate-400">
+                                <div className="p-3 bg-slate-700/50 rounded-lg text-slate-500">
                                     <Lock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">4. Cash & Cash Equivalents</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. Cash & Cash Equivalents</h2>
                             </div>
                             <p>
                                 Cash doesn&apos;t rise during crises, but it doesn&apos;t fall either. Holding cash provides stability and—critically—the ability to buy assets at depressed prices when markets crash.
@@ -280,10 +280,10 @@ export default function SafeHavenInvestmentsPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#000080] text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Add the Ultimate Safe Haven to Your Portfolio</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Add the Ultimate Safe Haven to Your Portfolio</h3>
                                 <p className="mb-6 text-gray-200">A Gold IRA lets you hold physical precious metals in a tax-advantaged retirement account.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
@@ -297,7 +297,7 @@ export default function SafeHavenInvestmentsPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">5. Defensive Stocks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Defensive Stocks</h2>
                             </div>
                             <p>
                                 While stocks generally fall during crises, certain sectors are more resilient because they provide essential goods and services people need regardless of economic conditions:
@@ -325,7 +325,7 @@ export default function SafeHavenInvestmentsPage() {
                                 <div className="p-3 bg-emerald-500/20 rounded-lg text-emerald-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Farmland & Land</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">6. Farmland & Land</h2>
                             </div>
                             <p>
                                 &quot;They&apos;re not making more of it,&quot; as the saying goes. Farmland and land investments offer a tangible safe haven that produces real value:
@@ -347,37 +347,37 @@ export default function SafeHavenInvestmentsPage() {
                                 <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Building Your Safe Haven Strategy</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Building Your Safe Haven Strategy</h2>
                             </div>
                             <p>
                                 The key insight is that safe havens should be part of your portfolio <em>before</em> a crisis—not purchased during one. By the time crisis hits, safe haven prices have often already risen.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Sample Safe Haven Allocation</h4>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-[#000080] text-lg mb-4">Sample Safe Haven Allocation</h4>
                                 <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Gold & Precious Metals</span>
-                                        <span className="font-semibold text-amber-400">10-15%</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Gold & Precious Metals</span>
+                                        <span className="font-semibold text-[#B22234]">10-15%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Treasury Bonds</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Treasury Bonds</span>
                                         <span className="font-semibold text-blue-400">15-25%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Cash & Equivalents</span>
-                                        <span className="font-semibold text-slate-400">5-15%</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Cash & Equivalents</span>
+                                        <span className="font-semibold text-slate-500">5-15%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Defensive Stocks</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Defensive Stocks</span>
                                         <span className="font-semibold text-purple-400">10-20%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Growth Assets (Stocks)</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Growth Assets (Stocks)</span>
                                         <span className="font-semibold text-green-400">40-60%</span>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-400 mt-4">Adjust based on your risk tolerance, time horizon, and current market conditions.</p>
+                                <p className="text-sm text-slate-500 mt-4">Adjust based on your risk tolerance, time horizon, and current market conditions.</p>
                             </div>
                         </section>
 
@@ -386,8 +386,8 @@ export default function SafeHavenInvestmentsPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What is a safe haven investment?</h4>
                                         <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -395,13 +395,13 @@ export default function SafeHavenInvestmentsPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         A safe haven investment is an asset expected to retain or increase value during market turbulence or economic crisis. Examples include gold, US Treasury bonds, and the Swiss franc. These provide portfolio protection when stocks and risky assets decline.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Is gold a good safe haven?</h4>
                                         <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -409,13 +409,13 @@ export default function SafeHavenInvestmentsPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         Yes, gold is the quintessential safe haven asset. During the 2008 financial crisis, gold rose 25% while stocks fell 37%. Gold has no counterparty risk, limited supply, and 5,000+ years of history as a store of value. A <Link href="/what-is-a-gold-ira" className="text-secondary hover:underline">Gold IRA</Link> allows you to hold physical gold in a tax-advantaged retirement account.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What is the safest investment during a recession?</h4>
                                         <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -423,13 +423,13 @@ export default function SafeHavenInvestmentsPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         The safest investments during a recession include: gold and precious metals, US Treasury bonds, high-quality corporate bonds, cash and money market funds, and defensive stocks (utilities, healthcare, consumer staples). Diversifying across multiple safe haven assets provides the best protection.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">When should I buy safe haven assets?</h4>
                                         <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -437,7 +437,7 @@ export default function SafeHavenInvestmentsPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         The best time to buy safe haven assets is <em>before</em> a crisis—as part of a diversified portfolio. By the time a crisis hits, safe haven prices have often already risen as investors flee to safety. Maintain a consistent allocation to safe havens (10-30% depending on your risk profile) at all times.
                                     </p>
                                 </details>
@@ -445,16 +445,16 @@ export default function SafeHavenInvestmentsPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Build Your Safe Haven Portfolio</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">Build Your Safe Haven Portfolio</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">Add physical gold to your retirement account for time-tested crisis protection.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#000080] hover:bg-white/10">
                                         <Link href="/learn/recession-proof-investments">Recession-Proof Guide</Link>
                                     </Button>
                                 </div>
@@ -468,7 +468,7 @@ export default function SafeHavenInvestmentsPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-safe-haven-investments" />
                 </Container>

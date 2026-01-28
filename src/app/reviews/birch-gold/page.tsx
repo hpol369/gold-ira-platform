@@ -47,24 +47,24 @@ export default function BirchGoldReviewPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
             />
-            <main className="min-h-screen flex flex-col bg-background">
+            <main className="min-h-screen flex flex-col bg-slate-50">
             <Navbar />
 
-            <div className="flex-grow bg-slate-900">
-                <header className="bg-zinc-900 text-white py-16 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-900/40 via-zinc-900 to-zinc-900 opacity-80 z-0"></div>
+            <div className="flex-grow">
+                <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[#000080]/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-yellow-200 text-sm font-bold uppercase tracking-wider mb-4">
-                                <span className="bg-white/10 px-2 py-1 rounded">Gold IRA Company Reviews</span>
+                            <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-white px-2 py-1 rounded border border-slate-200">Gold IRA Company Reviews</span>
                                 <span>•</span>
                                 <span>Updated Jan 2026</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
                                 Birch Gold Group Review: <br />
-                                <span className="text-gray-400">20 Years in the Business</span>
+                                <span className="text-slate-500">20 Years in the Business</span>
                             </h1>
-                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
                                 One of the longest-operating Gold IRA companies still around. Here's what two decades of business history tells us about their service.
                             </p>
                         </div>
@@ -86,7 +86,7 @@ export default function BirchGoldReviewPage() {
                                 ctaText="Learn More"
                             />
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
                                 <h2>The Straight Story on Birch Gold</h2>
                                 <p>
                                     <strong>You've earned the right to be cautious.</strong> After decades of work, the last thing you need is to trust your retirement to a company that might not be around next year. So here's what matters about Birch Gold.
@@ -120,11 +120,11 @@ export default function BirchGoldReviewPage() {
                                 <p>
                                     Here's the math that matters: On a $200,000 account, that $200 fee is basically 0.1%—excellent value. But on a $20,000 account, it's 1% of your money going to fees every year. Randy, a retired plumber from Wisconsin, did the math: "With my account size, Birch's flat fee saved me compared to companies that charge percentages. But my buddy with a smaller account went somewhere else."
                                 </p>
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
-                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
+                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                    <h4 className="font-bold text-[#000080] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-secondary" /> Flat vs. Percentage Fees
                                     </h4>
-                                    <p className="text-sm text-slate-400">
+                                    <p className="text-sm text-slate-600">
                                         The flat fee model favors larger accounts significantly. If you're investing $100,000+, Birch's fee structure is competitive. For accounts under $50,000, you might find better value with companies whose fees are proportional to account size or who offer fee waivers.
                                     </p>
                                 </div>
@@ -153,7 +153,7 @@ export default function BirchGoldReviewPage() {
                                     <strong>If you've got $100,000+ saved</strong> and value working with a company that's survived multiple market crashes, Birch makes sense. If you have a smaller account, the flat fee structure might not work in your favor.
                                 </p>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict - Steady and Proven</h2>
                                 <p>
@@ -164,10 +164,10 @@ export default function BirchGoldReviewPage() {
                                 </p>
                             </div>
 
-                            <div className="bg-zinc-900 text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                            <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4">Compare Gold IRA Options</h3>
-                                    <p className="mb-8 text-zinc-300 max-w-lg mx-auto">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Compare Gold IRA Options</h3>
+                                    <p className="mb-8 text-slate-600 max-w-lg mx-auto">
                                         See how Birch Gold's 20-year track record compares to other established companies.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>

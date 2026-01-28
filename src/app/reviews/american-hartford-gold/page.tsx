@@ -17,24 +17,24 @@ export const metadata = {
 
 export default function AmericanHartfordGoldReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <main className="min-h-screen flex flex-col bg-slate-50">
             <Navbar />
 
-            <div className="flex-grow bg-slate-900">
-                <header className="bg-blue-950 text-white py-16 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-800/40 via-blue-950 to-blue-950 opacity-80 z-0"></div>
+            <div className="flex-grow">
+                <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[#000080]/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
-                                <span className="bg-white/10 px-2 py-1 rounded">Gold IRA Company Reviews</span>
+                            <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-white px-2 py-1 rounded border border-slate-200">Gold IRA Company Reviews</span>
                                 <span>•</span>
                                 <span>Updated Jan 2026</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
                                 American Hartford Gold Review: <br />
-                                <span className="text-gray-400">Fast-Growing Competitor</span>
+                                <span className="text-slate-500">Fast-Growing Competitor</span>
                             </h1>
-                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
                                 American Hartford has grown rapidly through TV advertising and celebrity endorsements. Here's our objective look at what they offer and who they're suited for.
                             </p>
                         </div>
@@ -56,7 +56,7 @@ export default function AmericanHartfordGoldReviewPage() {
                                 ctaText="Learn More"
                             />
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
                                 <h2>The Honest Take on American Hartford Gold</h2>
                                 <p>
                                     <strong>We know you've seen the commercials.</strong> Bill O'Reilly telling you to protect your retirement, promises of free silver, urgent warnings about the economy. After 30 years of working and saving, you've learned to question what you hear on TV. Good. That skepticism has served you well.
@@ -90,11 +90,11 @@ export default function AmericanHartfordGoldReviewPage() {
                                 <p>
                                     The catch: like most companies in this business, they don't publish prices on their website. You have to call. Some folks find this annoying—they'd rather research on their own time. Annual fees run $150-$225, which is typical for the industry.
                                 </p>
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
-                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5 text-secondary" /> About Price Guarantees
+                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                    <h4 className="font-bold text-[#000080] flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-[#B22234]" /> About Price Guarantees
                                     </h4>
-                                    <p className="text-sm text-slate-400">
+                                    <p className="text-sm text-slate-600">
                                         Price-match policies in this industry come with fine print. They typically apply to identical products (same coin, same condition, same quantity) from established competitors. Don't expect them to match prices from unknown dealers or auction sites.
                                     </p>
                                 </div>
@@ -123,7 +123,7 @@ export default function AmericanHartfordGoldReviewPage() {
                                     Their strength is the price-match policy. If you're the type who gets multiple quotes and isn't afraid to negotiate, American Hartford will work with you on price. That's not nothing.
                                 </p>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict - Good for Negotiators</h2>
                                 <p>
@@ -134,10 +134,10 @@ export default function AmericanHartfordGoldReviewPage() {
                                 </p>
                             </div>
 
-                            <div className="bg-blue-950 text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                            <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4">Compare Your Options</h3>
-                                    <p className="mb-8 text-blue-200 max-w-lg mx-auto">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Compare Your Options</h3>
+                                    <p className="mb-8 text-slate-600 max-w-lg mx-auto">
                                         See how American Hartford stacks up against other Gold IRA companies.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>

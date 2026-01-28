@@ -61,17 +61,17 @@ export function AuditWizard() {
                         exit={{ opacity: 0, scale: 1.05 }}
                         className="text-center py-20"
                     >
-                        <div className="inline-block px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-500 font-mono text-sm mb-6 border border-amber-500/20">
+                        <div className="inline-block px-4 py-1.5 rounded-full bg-[#B22234]/10 text-[#B22234] font-mono text-sm mb-6 border border-[#B22234]/20">
                             FREE PORTFOLIO DIAGNOSTIC
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
-                            Is Your Retrieval <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">Sovereign or Exposed?</span>
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#000080] mb-6 leading-tight">
+                            Is Your Retrieval <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B22234] to-[#8b1c2a]">Sovereign or Exposed?</span>
                         </h1>
-                        <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                        <p className="text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
                             Inflation has eroded 25% of the dollar's value since 2020.
                             Take this 60-second audit to calculate your <strong>Inflation Exposure Score</strong> and generate a custom protection blueprint.
                         </p>
-                        <Button size="xl" variant="gold" onClick={() => setStep("fear")} className="px-12 py-8 text-xl shadow-[0_0_40px_-5px_rgba(245,158,11,0.3)]">
+                        <Button size="xl" variant="gold" onClick={() => setStep("fear")} className="px-12 py-8 text-xl shadow-[0_0_40px_-5px_rgba(178,34,52,0.3)]">
                             Start Brief Audit <ArrowRight className="ml-3 w-6 h-6" />
                         </Button>
                         <p className="mt-6 text-sm text-slate-500">
@@ -159,32 +159,32 @@ function WizardStep({ question, helper, options, onSelect, onBack, stepIdx }: an
             {/* Progress */}
             <div className="flex items-center gap-2 mb-8 justify-center">
                 {[1, 2, 3].map((i) => (
-                    <div key={i} className={`h-1.5 w-12 rounded-full transition-colors ${i <= stepIdx ? 'bg-amber-500' : 'bg-slate-700'}`} />
+                    <div key={i} className={`h-1.5 w-12 rounded-full transition-colors ${i <= stepIdx ? 'bg-[#B22234]' : 'bg-slate-200'}`} />
                 ))}
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] text-center mb-4">
                 {question}
             </h2>
-            {helper && <p className="text-slate-400 text-center mb-8">{helper}</p>}
+            {helper && <p className="text-slate-500 text-center mb-8">{helper}</p>}
 
             <div className="space-y-4">
                 {options.map((opt: any) => (
                     <button
                         key={opt.value}
                         onClick={() => onSelect(opt.value)}
-                        className="w-full text-left p-6 bg-slate-800 hover:bg-slate-750 border-2 border-slate-700 hover:border-amber-500 rounded-xl transition-all group flex items-center justify-between"
+                        className="w-full text-left p-6 bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-[#B22234] rounded-xl transition-all group flex items-center justify-between"
                     >
-                        <span className="text-xl font-medium text-slate-200 group-hover:text-white flex items-center gap-4">
+                        <span className="text-xl font-medium text-slate-700 group-hover:text-[#000080] flex items-center gap-4">
                             <span className="text-2xl">{opt.icon}</span>
                             {opt.label}
                         </span>
-                        <ArrowRight className="w-5 h-5 text-slate-600 group-hover:text-amber-500 opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
+                        <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[#B22234] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
                     </button>
                 ))}
             </div>
 
-            <button onClick={onBack} className="mt-8 flex items-center gap-2 text-slate-500 hover:text-white transition-colors mx-auto">
+            <button onClick={onBack} className="mt-8 flex items-center gap-2 text-slate-500 hover:text-[#000080] transition-colors mx-auto">
                 <ArrowLeft className="w-4 h-4" /> Back
             </button>
         </motion.div>

@@ -112,22 +112,22 @@ const schema = {
 
 export default function GoldStocksVsGoldIraPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold text-secondary mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
                         Paper vs. Physical Showdown
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Gold Stocks vs. Gold IRA
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed mb-4">
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-4">
                         Two ways to invest in gold&mdash;but only one puts real metal in your hands. Which approach actually protects your retirement?
                     </p>
-                    <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         Gold mining stocks give you exposure to gold prices through company shares. A Gold IRA gives you physical ownership of the metal itself. The difference matters more than most people realize.
                     </p>
                 </Container>
@@ -141,7 +141,7 @@ export default function GoldStocksVsGoldIraPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <p className="lead">
                             A lot of people think buying gold stocks is the same as owning gold. <em>It&apos;s not.</em>
@@ -170,7 +170,7 @@ export default function GoldStocksVsGoldIraPage() {
                                 optionBName="Gold IRA"
                                 rows={comparisonRows}
                             />
-                            <p className="text-sm text-slate-300 mt-4">
+                            <p className="text-sm text-slate-600 mt-4">
                                 <strong>Key:</strong> Green highlighting indicates the better option for that category.
                             </p>
                         </section>
@@ -257,11 +257,11 @@ export default function GoldStocksVsGoldIraPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Not Sure Which Is Right for You?</h3>
-                                <p className="mb-6 text-gray-200">Take our quick quiz to see whether gold stocks, a Gold IRA, or both make sense for your retirement strategy.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Not Sure Which Is Right for You?</h3>
+                                <p className="mb-6 text-slate-600">Take our quick quiz to see whether gold stocks, a Gold IRA, or both make sense for your retirement strategy.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Take the 60-Second Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -273,58 +273,58 @@ export default function GoldStocksVsGoldIraPage() {
                             <h2>Key Differences: Gold Stocks vs. Gold IRA</h2>
 
                             <div className="not-prose space-y-6 my-8">
-                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
+                                    <div className="w-12 h-12 rounded-full bg-[#B22234]/10 text-[#B22234] flex items-center justify-center shrink-0">
                                         <Coins className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-amber-400 text-lg">1. What You Actually Own</h4>
-                                        <p className="text-slate-300 mt-1"><strong>Gold Stocks:</strong> Shares of a mining company. Your investment is in the business, not the metal.</p>
-                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Physical gold bars and coins. You own the actual precious metal.</p>
+                                        <h4 className="font-bold text-[#B22234] text-lg">1. What You Actually Own</h4>
+                                        <p className="text-slate-600 mt-1"><strong>Gold Stocks:</strong> Shares of a mining company. Your investment is in the business, not the metal.</p>
+                                        <p className="text-slate-600 mt-1"><strong>Gold IRA:</strong> Physical gold bars and coins. You own the actual precious metal.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
+                                    <div className="w-12 h-12 rounded-full bg-[#B22234]/10 text-[#B22234] flex items-center justify-center shrink-0">
                                         <AlertTriangle className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-amber-400 text-lg">2. Counterparty Risk</h4>
-                                        <p className="text-slate-300 mt-1"><strong>Gold Stocks:</strong> Yes. The company can go bankrupt, commit fraud, face lawsuits, or mismanage operations.</p>
-                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> No. Your gold exists regardless of what happens to any company or institution.</p>
+                                        <h4 className="font-bold text-[#B22234] text-lg">2. Counterparty Risk</h4>
+                                        <p className="text-slate-600 mt-1"><strong>Gold Stocks:</strong> Yes. The company can go bankrupt, commit fraud, face lawsuits, or mismanage operations.</p>
+                                        <p className="text-slate-600 mt-1"><strong>Gold IRA:</strong> No. Your gold exists regardless of what happens to any company or institution.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
                                     <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0">
                                         <TrendingUp className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-amber-400 text-lg">3. Crisis Performance</h4>
-                                        <p className="text-slate-300 mt-1"><strong>Gold Stocks:</strong> Often fall with the broader market during crises, even if gold rises.</p>
-                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Physical gold typically rises during market panics and economic uncertainty.</p>
+                                        <h4 className="font-bold text-[#B22234] text-lg">3. Crisis Performance</h4>
+                                        <p className="text-slate-600 mt-1"><strong>Gold Stocks:</strong> Often fall with the broader market during crises, even if gold rises.</p>
+                                        <p className="text-slate-600 mt-1"><strong>Gold IRA:</strong> Physical gold typically rises during market panics and economic uncertainty.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
                                     <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
                                         <DollarSign className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-amber-400 text-lg">4. Income & Growth Potential</h4>
-                                        <p className="text-slate-300 mt-1"><strong>Gold Stocks:</strong> Potential for dividends and leveraged gains. Can outperform gold in bull markets.</p>
-                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> No dividends. Returns tied directly to gold price movement.</p>
+                                        <h4 className="font-bold text-[#B22234] text-lg">4. Income & Growth Potential</h4>
+                                        <p className="text-slate-600 mt-1"><strong>Gold Stocks:</strong> Potential for dividends and leveraged gains. Can outperform gold in bull markets.</p>
+                                        <p className="text-slate-600 mt-1"><strong>Gold IRA:</strong> No dividends. Returns tied directly to gold price movement.</p>
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
                                     <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-amber-400 text-lg">5. Tax Treatment</h4>
-                                        <p className="text-slate-300 mt-1"><strong>Gold Stocks:</strong> Standard capital gains treatment. Long-term rate if held over a year.</p>
-                                        <p className="text-slate-300 mt-1"><strong>Gold IRA:</strong> Full IRA tax benefits. Tax-deferred (Traditional) or tax-free (Roth) growth.</p>
+                                        <h4 className="font-bold text-[#B22234] text-lg">5. Tax Treatment</h4>
+                                        <p className="text-slate-600 mt-1"><strong>Gold Stocks:</strong> Standard capital gains treatment. Long-term rate if held over a year.</p>
+                                        <p className="text-slate-600 mt-1"><strong>Gold IRA:</strong> Full IRA tax benefits. Tax-deferred (Traditional) or tax-free (Roth) growth.</p>
                                     </div>
                                 </div>
                             </div>
@@ -410,72 +410,72 @@ export default function GoldStocksVsGoldIraPage() {
                             <h2>Gold Stocks vs. Gold IRA FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Are gold stocks the same as owning gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         No. Gold stocks are shares of gold mining companies, not ownership of physical gold. Your investment depends on the company&apos;s management, operations, and profitability&mdash;not just the gold price. With a Gold IRA, you own actual physical gold bars and coins.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Do gold stocks protect against inflation like physical gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Gold stocks provide moderate inflation protection, but less than physical gold. Mining companies face rising costs during inflation (labor, energy, equipment), which can offset gold price gains. Physical gold has no operating costs and has maintained purchasing power for thousands of years.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What happens to gold stocks during a market crash?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Gold stocks often fall with the broader stock market during crashes, even if gold prices rise. In 2008, gold mining ETFs dropped over 30% while physical gold rose 5%. This is because gold stocks are still equities subject to market sentiment and selling pressure.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Can I hold gold stocks in a Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         A true Gold IRA holds physical precious metals, not stocks. However, you can hold gold mining stocks in a regular IRA or 401(k). Some self-directed IRAs allow both physical gold and stocks, giving you the option to diversify within one account.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Which is better for retirement: gold stocks or Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         For retirement protection, a Gold IRA is generally better because you own tangible assets without counterparty risk. Gold stocks may offer higher returns but come with company risk, stock market correlation, and less reliable crisis protection. Many investors use both for different purposes.
                                     </p>
                                 </details>
@@ -483,16 +483,16 @@ export default function GoldStocksVsGoldIraPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect Your Retirement with Physical Gold?</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Get your free Gold IRA guide and learn how to convert paper assets into physical protection.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Ready to Protect Your Retirement with Physical Gold?</h3>
+                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">Get your free Gold IRA guide and learn how to convert paper assets into physical protection.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">See If a Gold IRA Is Right for Me <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-slate-300 text-slate-900 hover:bg-slate-100">
                                         <Link href="/guide/gold-ira-basics">Read the Gold IRA Guide</Link>
                                     </Button>
                                 </div>
@@ -501,16 +501,16 @@ export default function GoldStocksVsGoldIraPage() {
 
                         {/* Related Comparisons */}
                         <section className="mt-12 not-prose">
-                            <h3 className="text-lg font-bold text-amber-400 mb-4">Related Comparisons</h3>
+                            <h3 className="text-lg font-bold text-[#B22234] mb-4">Related Comparisons</h3>
                             <div className="grid md:grid-cols-3 gap-4">
-                                <Link href="/compare/gold-ira-vs-gold-etf" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
-                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold IRA vs. Gold ETF &rarr;</span>
+                                <Link href="/compare/gold-ira-vs-gold-etf" className="p-4 bg-white/5 rounded-lg border border-slate-200 hover:border-[#B22234]/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-600 group-hover:text-[#B22234]">Gold IRA vs. Gold ETF &rarr;</span>
                                 </Link>
-                                <Link href="/compare/gold-ira-vs-401k" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
-                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold IRA vs. 401(k) &rarr;</span>
+                                <Link href="/compare/gold-ira-vs-401k" className="p-4 bg-white/5 rounded-lg border border-slate-200 hover:border-[#B22234]/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-600 group-hover:text-[#B22234]">Gold IRA vs. 401(k) &rarr;</span>
                                 </Link>
-                                <Link href="/compare/gold-etf-vs-physical-gold" className="p-4 bg-white/5 rounded-lg border border-white/10 hover:border-amber-500/50 transition-colors group">
-                                    <span className="text-sm font-semibold text-slate-300 group-hover:text-amber-400">Gold ETF vs. Physical Gold &rarr;</span>
+                                <Link href="/compare/gold-etf-vs-physical-gold" className="p-4 bg-white/5 rounded-lg border border-slate-200 hover:border-[#B22234]/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-slate-600 group-hover:text-[#B22234]">Gold ETF vs. Physical Gold &rarr;</span>
                                 </Link>
                             </div>
                         </section>
@@ -520,7 +520,7 @@ export default function GoldStocksVsGoldIraPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA
                         variant="footer"

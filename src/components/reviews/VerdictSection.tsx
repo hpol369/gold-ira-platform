@@ -32,7 +32,7 @@ export function VerdictSection({
         <div className="flex items-center gap-3 mb-6">
           <div className={cn(
             "p-3 rounded-xl",
-            isFeatured ? "bg-amber-500 text-white" : "bg-slate-900 text-white"
+            isFeatured ? "bg-amber-500 text-white" : "bg-[#000080] text-white"
           )}>
             <Award className="h-6 w-6" />
           </div>
@@ -110,7 +110,7 @@ export function VerdictSection({
               "inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all",
               isFeatured
                 ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
-                : "bg-slate-900 text-white hover:bg-slate-800"
+                : "bg-[#000080] text-white hover:bg-[#000060]"
             )}
           >
             Get Started with {company.name}

@@ -239,7 +239,7 @@ export function MonteCarloRetirementSimulator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
           Monte Carlo Retirement Simulator
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
           Run {numSimulations.toLocaleString()} simulations to see the probability of your retirement plan succeeding.
           Understand how asset allocation affects your odds.
         </p>
@@ -249,7 +249,7 @@ export function MonteCarloRetirementSimulator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Portfolio Value */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <DollarSign className="h-5 w-5 text-purple-400" />
@@ -259,7 +259,7 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Current Portfolio Value
                 </label>
                 <div className="relative">
@@ -271,7 +271,7 @@ export function MonteCarloRetirementSimulator() {
                       setPortfolioValue(Number(e.target.value));
                       setHasSimulated(false);
                     }}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-purple-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
                     min="0"
                     step="10000"
                   />
@@ -279,7 +279,7 @@ export function MonteCarloRetirementSimulator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Annual Contribution (while working)
                 </label>
                 <div className="relative">
@@ -291,7 +291,7 @@ export function MonteCarloRetirementSimulator() {
                       setAnnualContribution(Number(e.target.value));
                       setHasSimulated(false);
                     }}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-purple-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
                     min="0"
                     step="5000"
                   />
@@ -301,17 +301,17 @@ export function MonteCarloRetirementSimulator() {
           </div>
 
           {/* Timeline */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                <Calendar className="h-5 w-5 text-blue-400" />
+                <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Timeline</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Years Until Retirement: {yearsUntilRetirement}
                 </label>
                 <input
@@ -328,7 +328,7 @@ export function MonteCarloRetirementSimulator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Years In Retirement: {yearsInRetirement}
                 </label>
                 <input
@@ -345,7 +345,7 @@ export function MonteCarloRetirementSimulator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Annual Spending in Retirement
                 </label>
                 <div className="relative">
@@ -357,7 +357,7 @@ export function MonteCarloRetirementSimulator() {
                       setAnnualSpending(Number(e.target.value));
                       setHasSimulated(false);
                     }}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-purple-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
                     min="0"
                     step="5000"
                   />
@@ -367,10 +367,10 @@ export function MonteCarloRetirementSimulator() {
           </div>
 
           {/* Asset Allocation */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-amber-500/20 rounded-lg border border-amber-500/30">
-                <Target className="h-5 w-5 text-amber-400" />
+              <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/30">
+                <Target className="h-5 w-5 text-[#B22234]" />
               </div>
               <h3 className="text-lg font-semibold">Asset Allocation</h3>
             </div>
@@ -388,7 +388,7 @@ export function MonteCarloRetirementSimulator() {
                 return (
                   <div key={key}>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-slate-400">{asset.name}</span>
+                      <span className="text-slate-500">{asset.name}</span>
                       <span className="font-semibold">{allocation[key as keyof AllocationInputs]}%</span>
                     </div>
                     <input
@@ -406,19 +406,19 @@ export function MonteCarloRetirementSimulator() {
                 );
               })}
 
-              <div className={`bg-slate-800/50 rounded-lg p-4 ${
+              <div className={`bg-slate-50 rounded-lg p-4 ${
                 totalAllocation !== 100 ? "border border-amber-500/50" : ""
               }`}>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400">Total Allocation</span>
+                  <span className="text-slate-500">Total Allocation</span>
                   <span className={`text-xl font-bold ${
-                    totalAllocation === 100 ? "text-green-400" : "text-amber-400"
+                    totalAllocation === 100 ? "text-green-600" : "text-[#B22234]"
                   }`}>
                     {totalAllocation}%
                   </span>
                 </div>
                 {totalAllocation !== 100 && (
-                  <p className="text-xs text-amber-400 mt-1">
+                  <p className="text-xs text-[#B22234] mt-1">
                     Allocation will be normalized to 100%
                   </p>
                 )}
@@ -427,10 +427,10 @@ export function MonteCarloRetirementSimulator() {
           </div>
 
           {/* Simulation Settings & Run Button */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Number of Simulations: {numSimulations.toLocaleString()}
                 </label>
                 <input
@@ -450,7 +450,7 @@ export function MonteCarloRetirementSimulator() {
               <button
                 onClick={runSimulation}
                 disabled={isSimulating}
-                className="w-full py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-slate-900 font-bold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSimulating ? (
                   <>
@@ -479,44 +479,44 @@ export function MonteCarloRetirementSimulator() {
                   : statistics.successRate >= 75
                   ? "from-blue-500/20 to-blue-600/20 border-blue-500/30"
                   : statistics.successRate >= 50
-                  ? "from-amber-500/20 to-amber-600/20 border-amber-500/30"
+                  ? "bg-[#B22234]/10 border-[#B22234]/30"
                   : "from-red-500/20 to-red-600/20 border-red-500/30"
               }`}>
                 <div className="text-center">
-                  <div className="text-sm text-slate-400 mb-2">RETIREMENT SUCCESS PROBABILITY</div>
+                  <div className="text-sm text-slate-500 mb-2">RETIREMENT SUCCESS PROBABILITY</div>
                   <div className={`text-6xl font-bold mb-2 ${
                     statistics.successRate >= 90
-                      ? "text-green-400"
+                      ? "text-green-600"
                       : statistics.successRate >= 75
-                      ? "text-blue-400"
+                      ? "text-blue-600"
                       : statistics.successRate >= 50
-                      ? "text-amber-400"
-                      : "text-red-400"
+                      ? "text-[#B22234]"
+                      : "text-red-600"
                   }`}>
                     {statistics.successRate.toFixed(1)}%
                   </div>
-                  <div className="text-slate-400">
+                  <div className="text-slate-500">
                     {statistics.successCount.toLocaleString()} of {numSimulations.toLocaleString()} simulations succeeded
                   </div>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-white/10">
+                <div className="mt-6 pt-6 border-t border-slate-200">
                   <div className="grid grid-cols-3 gap-4 text-center">
                     <div>
                       <div className="text-xs text-slate-500 mb-1">10th Percentile</div>
-                      <div className="text-lg font-semibold text-red-400">
+                      <div className="text-lg font-semibold text-red-600">
                         {formatCurrency(statistics.percentile10)}
                       </div>
                     </div>
                     <div>
                       <div className="text-xs text-slate-500 mb-1">Median</div>
-                      <div className="text-lg font-semibold text-blue-400">
+                      <div className="text-lg font-semibold text-blue-600">
                         {formatCurrency(statistics.median)}
                       </div>
                     </div>
                     <div>
                       <div className="text-xs text-slate-500 mb-1">90th Percentile</div>
-                      <div className="text-lg font-semibold text-green-400">
+                      <div className="text-lg font-semibold text-green-600">
                         {formatCurrency(statistics.percentile90)}
                       </div>
                     </div>
@@ -525,7 +525,7 @@ export function MonteCarloRetirementSimulator() {
               </div>
 
               {/* Spaghetti Chart */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <BarChart3 className="h-5 w-5 text-purple-400" />
                   Simulation Paths (Sample of {visualizationPaths.length})
@@ -585,44 +585,44 @@ export function MonteCarloRetirementSimulator() {
                 <div className="flex justify-center gap-6 text-sm mt-4">
                   <div className="flex items-center gap-2">
                     <div className="w-4 h-4 bg-purple-500/30 rounded" />
-                    <span className="text-slate-400">10-90% Range</span>
+                    <span className="text-slate-500">10-90% Range</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-4 h-1 bg-purple-500 rounded" />
-                    <span className="text-slate-400">Median Path</span>
+                    <span className="text-slate-500">Median Path</span>
                   </div>
                 </div>
               </div>
 
               {/* Key Metrics */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                  <TrendingUp className="h-5 w-5 text-green-400" />
+                  <TrendingUp className="h-5 w-5 text-green-600" />
                   Simulation Results
                 </h3>
 
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center pb-3 border-b border-white/10">
-                    <span className="text-slate-400">Portfolio at Retirement (Median)</span>
-                    <span className="font-semibold text-blue-400">
+                  <div className="flex justify-between items-center pb-3 border-b border-slate-200">
+                    <span className="text-slate-500">Portfolio at Retirement (Median)</span>
+                    <span className="font-semibold text-blue-600">
                       {formatCurrency(statistics.medianAtRetirement)}
                     </span>
                   </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-white/10">
-                    <span className="text-slate-400">Final Value (Median)</span>
+                  <div className="flex justify-between items-center pb-3 border-b border-slate-200">
+                    <span className="text-slate-500">Final Value (Median)</span>
                     <span className="font-semibold text-purple-400">
                       {formatCurrency(statistics.median)}
                     </span>
                   </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-white/10">
-                    <span className="text-slate-400">Final Value (Mean)</span>
+                  <div className="flex justify-between items-center pb-3 border-b border-slate-200">
+                    <span className="text-slate-500">Final Value (Mean)</span>
                     <span className="font-semibold">
                       {formatCurrency(statistics.mean)}
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-400">Portfolio Expected Return</span>
-                    <span className="font-semibold text-green-400">
+                    <span className="text-slate-500">Portfolio Expected Return</span>
+                    <span className="font-semibold text-green-600">
                       {portfolioStats.mean.toFixed(1)}%
                     </span>
                   </div>
@@ -630,18 +630,18 @@ export function MonteCarloRetirementSimulator() {
               </div>
 
               {/* Gold Impact Analysis */}
-              <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
+              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <Shield className="h-6 w-6 text-amber-400 flex-shrink-0" />
+                  <Shield className="h-6 w-6 text-[#B22234] flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-amber-400 mb-2">
+                    <h3 className="font-semibold text-[#B22234] mb-2">
                       Gold Allocation Impact
                     </h3>
-                    <p className="text-slate-300 text-sm mb-3">
+                    <p className="text-slate-600 text-sm mb-3">
                       Your current gold allocation of <strong>{normalizedAllocation.gold.toFixed(0)}%</strong> helps
                       reduce portfolio volatility from pure stock/bond allocation.
                     </p>
-                    <div className="text-xs text-slate-400">
+                    <div className="text-xs text-slate-500">
                       <p>
                         Portfolio Volatility: <strong>{portfolioStats.stdDev.toFixed(1)}%</strong>
                       </p>
@@ -656,23 +656,23 @@ export function MonteCarloRetirementSimulator() {
             </>
           ) : (
             /* Pre-simulation state */
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 text-center">
+            <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200 text-center">
               <BarChart3 className="h-16 w-16 text-slate-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Ready to Simulate</h3>
-              <p className="text-slate-400 mb-6">
+              <p className="text-slate-500 mb-6">
                 Configure your inputs and click &quot;Run Monte Carlo Simulation&quot; to see
                 {numSimulations.toLocaleString()} possible retirement outcomes.
               </p>
-              <div className="bg-slate-800/50 rounded-lg p-4">
+              <div className="bg-slate-50 rounded-lg p-4">
                 <h4 className="font-semibold mb-2">Current Portfolio Stats</h4>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
-                    <div className="text-slate-400">Expected Return</div>
-                    <div className="font-semibold text-green-400">{portfolioStats.mean.toFixed(1)}%</div>
+                    <div className="text-slate-500">Expected Return</div>
+                    <div className="font-semibold text-green-600">{portfolioStats.mean.toFixed(1)}%</div>
                   </div>
                   <div>
-                    <div className="text-slate-400">Expected Volatility</div>
-                    <div className="font-semibold text-amber-400">{portfolioStats.stdDev.toFixed(1)}%</div>
+                    <div className="text-slate-500">Expected Volatility</div>
+                    <div className="font-semibold text-[#B22234]">{portfolioStats.stdDev.toFixed(1)}%</div>
                   </div>
                 </div>
               </div>
@@ -683,40 +683,40 @@ export function MonteCarloRetirementSimulator() {
 
       {/* Educational Content */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 mb-8">
+        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200 mb-8">
           <div className="flex items-center gap-3 mb-6">
-            <Info className="h-6 w-6 text-blue-400" />
+            <Info className="h-6 w-6 text-blue-600" />
             <h2 className="text-2xl font-bold">Understanding Monte Carlo Simulation</h2>
           </div>
 
-          <div className="space-y-6 text-slate-300">
+          <div className="space-y-6 text-slate-600">
             <p>
               Monte Carlo simulation is a powerful technique that runs thousands of possible scenarios
               to estimate the probability of different outcomes. For retirement planning, it helps answer
-              the critical question: <strong className="text-white">&quot;What are the odds my money will last?&quot;</strong>
+              the critical question: <strong className="text-slate-900">&quot;What are the odds my money will last?&quot;</strong>
             </p>
 
             <div className="grid md:grid-cols-3 gap-4">
-              <div className="bg-slate-800/50 rounded-lg p-4">
+              <div className="bg-slate-50 rounded-lg p-4">
                 <Percent className="h-6 w-6 text-purple-400 mb-2" />
-                <h4 className="font-semibold text-white mb-1">Probability-Based</h4>
-                <p className="text-sm text-slate-400">
+                <h4 className="font-semibold text-slate-900 mb-1">Probability-Based</h4>
+                <p className="text-sm text-slate-500">
                   Instead of a single projection, you get a range of outcomes with their probabilities.
                 </p>
               </div>
 
-              <div className="bg-slate-800/50 rounded-lg p-4">
-                <TrendingUp className="h-6 w-6 text-green-400 mb-2" />
-                <h4 className="font-semibold text-white mb-1">Market Variability</h4>
-                <p className="text-sm text-slate-400">
+              <div className="bg-slate-50 rounded-lg p-4">
+                <TrendingUp className="h-6 w-6 text-green-600 mb-2" />
+                <h4 className="font-semibold text-slate-900 mb-1">Market Variability</h4>
+                <p className="text-sm text-slate-500">
                   Accounts for the unpredictable nature of market returns year-over-year.
                 </p>
               </div>
 
-              <div className="bg-slate-800/50 rounded-lg p-4">
-                <Shield className="h-6 w-6 text-amber-400 mb-2" />
-                <h4 className="font-semibold text-white mb-1">Stress Testing</h4>
-                <p className="text-sm text-slate-400">
+              <div className="bg-slate-50 rounded-lg p-4">
+                <Shield className="h-6 w-6 text-[#B22234] mb-2" />
+                <h4 className="font-semibold text-slate-900 mb-1">Stress Testing</h4>
+                <p className="text-sm text-slate-500">
                   See how your plan holds up in worst-case scenarios, not just average ones.
                 </p>
               </div>
@@ -725,7 +725,7 @@ export function MonteCarloRetirementSimulator() {
         </div>
 
         {/* Success Rate Guide */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 mb-8">
+        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200 mb-8">
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
             <Target className="h-6 w-6 text-purple-400" />
             What Success Rate Should You Target?
@@ -734,13 +734,13 @@ export function MonteCarloRetirementSimulator() {
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
               <div className="w-24 flex-shrink-0">
-                <div className="bg-green-500/20 text-green-400 text-center py-2 rounded-lg font-bold">
+                <div className="bg-green-500/20 text-green-600 text-center py-2 rounded-lg font-bold">
                   90%+
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-green-400">Excellent</h4>
-                <p className="text-sm text-slate-400">
+                <h4 className="font-semibold text-green-600">Excellent</h4>
+                <p className="text-sm text-slate-500">
                   High confidence your money will last. You may have room for more aggressive growth
                   or increased spending.
                 </p>
@@ -749,13 +749,13 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="flex gap-4 items-start">
               <div className="w-24 flex-shrink-0">
-                <div className="bg-blue-500/20 text-blue-400 text-center py-2 rounded-lg font-bold">
+                <div className="bg-blue-500/20 text-blue-600 text-center py-2 rounded-lg font-bold">
                   75-89%
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-blue-400">Good</h4>
-                <p className="text-sm text-slate-400">
+                <h4 className="font-semibold text-blue-600">Good</h4>
+                <p className="text-sm text-slate-500">
                   Solid plan with reasonable buffer. Consider small adjustments for more safety margin.
                 </p>
               </div>
@@ -763,13 +763,13 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="flex gap-4 items-start">
               <div className="w-24 flex-shrink-0">
-                <div className="bg-amber-500/20 text-amber-400 text-center py-2 rounded-lg font-bold">
+                <div className="bg-[#B22234]/10 text-[#B22234] text-center py-2 rounded-lg font-bold">
                   50-74%
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-amber-400">Caution</h4>
-                <p className="text-sm text-slate-400">
+                <h4 className="font-semibold text-[#B22234]">Caution</h4>
+                <p className="text-sm text-slate-500">
                   Plan may work but has significant risk. Consider reducing spending, working longer,
                   or adjusting allocation.
                 </p>
@@ -778,13 +778,13 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="flex gap-4 items-start">
               <div className="w-24 flex-shrink-0">
-                <div className="bg-red-500/20 text-red-400 text-center py-2 rounded-lg font-bold">
+                <div className="bg-red-500/20 text-red-600 text-center py-2 rounded-lg font-bold">
                   &lt;50%
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-red-400">High Risk</h4>
-                <p className="text-sm text-slate-400">
+                <h4 className="font-semibold text-red-600">High Risk</h4>
+                <p className="text-sm text-slate-500">
                   Plan unlikely to succeed. Major adjustments needed to spending, savings, or timeline.
                 </p>
               </div>
@@ -793,29 +793,29 @@ export function MonteCarloRetirementSimulator() {
         </div>
 
         {/* Gold Bridge */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
+        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
           <div className="flex items-center gap-3 mb-6">
-            <Shield className="h-6 w-6 text-amber-400" />
+            <Shield className="h-6 w-6 text-[#B22234]" />
             <h2 className="text-2xl font-bold">How Gold Improves Success Rates</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="space-y-3">
               <div className="flex gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-white">Reduces Volatility</h4>
-                  <p className="text-sm text-slate-400">
+                  <h4 className="font-semibold text-slate-900">Reduces Volatility</h4>
+                  <p className="text-sm text-slate-500">
                     Gold&apos;s low correlation to stocks smooths out portfolio returns over time.
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-white">Protects Worst Cases</h4>
-                  <p className="text-sm text-slate-400">
+                  <h4 className="font-semibold text-slate-900">Protects Worst Cases</h4>
+                  <p className="text-sm text-slate-500">
                     In market crashes, gold often rises, protecting your 10th percentile outcomes.
                   </p>
                 </div>
@@ -824,20 +824,20 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="space-y-3">
               <div className="flex gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-white">Inflation Hedge</h4>
-                  <p className="text-sm text-slate-400">
+                  <h4 className="font-semibold text-slate-900">Inflation Hedge</h4>
+                  <p className="text-sm text-slate-500">
                     Gold maintains purchasing power over decades of retirement.
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-white">Sequence Risk Buffer</h4>
-                  <p className="text-sm text-slate-400">
+                  <h4 className="font-semibold text-slate-900">Sequence Risk Buffer</h4>
+                  <p className="text-sm text-slate-500">
                     Provides assets to draw from during early retirement market downturns.
                   </p>
                 </div>
@@ -850,7 +850,7 @@ export function MonteCarloRetirementSimulator() {
               <AlertTriangle className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
               <div className="text-sm">
                 <strong className="text-purple-400">Research Finding:</strong>{" "}
-                <span className="text-slate-300">
+                <span className="text-slate-600">
                   Adding 10% gold to a traditional 60/40 portfolio historically increased Monte Carlo
                   success rates by 3-5% while reducing the worst-case (10th percentile) outcomes by
                   up to 15%.

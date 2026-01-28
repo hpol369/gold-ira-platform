@@ -61,9 +61,9 @@ export default function Home() {
         <UrgencySection />
 
         {/* 11.5. QUICK NAVIGATION: Links to key resources */}
-        <section className="py-16 bg-slate-800/50 border-y border-white/10">
+        <section className="py-16 bg-slate-50 border-y border-slate-200">
           <Container>
-            <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
               Explore Our Resources
             </h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -72,13 +72,13 @@ export default function Home() {
                 className="group bg-red-500/10 border border-red-500/20 rounded-xl p-6 hover:bg-red-500/20 transition-all"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <AlertTriangle className="h-6 w-6 text-red-400" />
-                  <h3 className="font-bold text-white group-hover:text-red-400 transition-colors">Crisis Scenarios</h3>
+                  <AlertTriangle className="h-6 w-6 text-red-500" />
+                  <h3 className="font-bold text-[#000080] group-hover:text-red-500 transition-colors">Crisis Scenarios</h3>
                 </div>
-                <p className="text-slate-400 text-sm mb-3">
+                <p className="text-slate-600 text-sm mb-3">
                   Understand economic threats and how to protect your retirement from dollar collapse, inflation, and market crashes.
                 </p>
-                <span className="inline-flex items-center gap-1 text-red-400 text-sm font-medium">
+                <span className="inline-flex items-center gap-1 text-red-500 text-sm font-medium">
                   View Scenarios <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
@@ -87,13 +87,13 @@ export default function Home() {
                 className="group bg-amber-500/10 border border-amber-500/20 rounded-xl p-6 hover:bg-amber-500/20 transition-all"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <BookOpen className="h-6 w-6 text-amber-400" />
-                  <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors">Learning Center</h3>
+                  <BookOpen className="h-6 w-6 text-amber-500" />
+                  <h3 className="font-bold text-[#000080] group-hover:text-amber-500 transition-colors">Learning Center</h3>
                 </div>
-                <p className="text-slate-400 text-sm mb-3">
+                <p className="text-slate-600 text-sm mb-3">
                   Expert guides on 401k management, RMDs, fees, withdrawal strategies, and retirement planning.
                 </p>
-                <span className="inline-flex items-center gap-1 text-amber-400 text-sm font-medium">
+                <span className="inline-flex items-center gap-1 text-amber-500 text-sm font-medium">
                   Browse Articles <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
@@ -102,13 +102,13 @@ export default function Home() {
                 className="group bg-blue-500/10 border border-blue-500/20 rounded-xl p-6 hover:bg-blue-500/20 transition-all"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <RefreshCw className="h-6 w-6 text-blue-400" />
-                  <h3 className="font-bold text-white group-hover:text-blue-400 transition-colors">Rollover Guides</h3>
+                  <RefreshCw className="h-6 w-6 text-blue-500" />
+                  <h3 className="font-bold text-[#000080] group-hover:text-blue-500 transition-colors">Rollover Guides</h3>
                 </div>
-                <p className="text-slate-400 text-sm mb-3">
+                <p className="text-slate-600 text-sm mb-3">
                   Step-by-step instructions for rolling over your 401k, IRA, TSP, or other retirement account to gold.
                 </p>
-                <span className="inline-flex items-center gap-1 text-blue-400 text-sm font-medium">
+                <span className="inline-flex items-center gap-1 text-blue-500 text-sm font-medium">
                   Start Rollover <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>

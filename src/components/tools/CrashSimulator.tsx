@@ -101,7 +101,7 @@ export function CrashSimulator() {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+    <section className="py-16 md:py-24 bg-slate-50">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Header */}
@@ -111,14 +111,14 @@ export function CrashSimulator() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-600 font-semibold text-sm mb-6">
               <AlertTriangle className="h-4 w-4" />
               CRASH SIMULATOR
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               What Happens to Your Portfolio in a Crisis?
             </h2>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               See how gold allocation could protect your retirement during historical and hypothetical market crashes.
             </p>
           </motion.div>
@@ -129,13 +129,13 @@ export function CrashSimulator() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8"
+              className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8"
             >
-              <h3 className="text-xl font-bold text-white mb-6">Your Portfolio</h3>
+              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Portfolio</h3>
 
               {/* Portfolio Value */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Current Portfolio Value
                 </label>
                 <div className="relative">
@@ -144,15 +144,15 @@ export function CrashSimulator() {
                     type="number"
                     value={portfolioValue}
                     onChange={(e) => setPortfolioValue(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white text-lg focus:outline-none focus:border-amber-500"
+                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-[#B22234]"
                   />
                 </div>
               </div>
 
               {/* Gold Allocation */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
-                  Gold Allocation: <span className="text-amber-400 font-bold">{goldAllocation}%</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Gold Allocation: <span className="text-[#B22234] font-bold">{goldAllocation}%</span>
                 </label>
                 <input
                   type="range"
@@ -160,7 +160,7 @@ export function CrashSimulator() {
                   max="50"
                   value={goldAllocation}
                   onChange={(e) => setGoldAllocation(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
                 <div className="flex justify-between text-xs text-slate-500 mt-1">
                   <span>0% (No Gold)</span>
@@ -171,7 +171,7 @@ export function CrashSimulator() {
 
               {/* Scenario Selection */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Crisis Scenario
                 </label>
                 <div className="grid grid-cols-2 gap-2">
@@ -181,12 +181,12 @@ export function CrashSimulator() {
                       onClick={() => setSelectedScenario(scenario)}
                       className={`p-3 rounded-xl text-left transition-all ${
                         selectedScenario.id === scenario.id
-                          ? "bg-amber-500/20 border-amber-500/50 border"
-                          : "bg-slate-800 border border-white/5 hover:border-white/20"
+                          ? "bg-[#B22234]/10 border-[#B22234]/50 border"
+                          : "bg-slate-100 border border-slate-200 hover:border-slate-300"
                       }`}
                     >
                       <div className={`text-sm font-semibold ${
-                        selectedScenario.id === scenario.id ? "text-amber-400" : "text-white"
+                        selectedScenario.id === scenario.id ? "text-[#B22234]" : "text-slate-900"
                       }`}>
                         {scenario.name}
                       </div>
@@ -201,7 +201,7 @@ export function CrashSimulator() {
               {/* Run Button */}
               <button
                 onClick={runSimulation}
-                className="w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
               >
                 <RefreshCw className="h-5 w-5" />
                 Run Simulation
@@ -213,65 +213,65 @@ export function CrashSimulator() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8"
+              className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8"
             >
-              <h3 className="text-xl font-bold text-white mb-6">Simulation Results</h3>
+              <h3 className="text-xl font-bold text-[#000080] mb-6">Simulation Results</h3>
 
               {result ? (
                 <div className="space-y-6">
                   {/* Scenario Info */}
-                  <div className="bg-slate-800/50 rounded-xl p-4">
-                    <div className="text-amber-400 font-semibold mb-1">{result.scenario}</div>
+                  <div className="bg-slate-50 rounded-xl p-4">
+                    <div className="text-[#B22234] font-semibold mb-1">{result.scenario}</div>
                     <div className="flex gap-4 text-sm">
-                      <span className="text-red-400">Stocks: {result.stocksLoss}%</span>
-                      <span className={result.goldGain >= 0 ? "text-green-400" : "text-red-400"}>
+                      <span className="text-red-600">Stocks: {result.stocksLoss}%</span>
+                      <span className={result.goldGain >= 0 ? "text-green-600" : "text-red-600"}>
                         Gold: {result.goldGain >= 0 ? "+" : ""}{result.goldGain}%
                       </span>
                     </div>
                   </div>
 
                   {/* Without Gold */}
-                  <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
-                    <div className="flex items-center gap-2 text-red-400 text-sm mb-2">
+                  <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                    <div className="flex items-center gap-2 text-red-600 text-sm mb-2">
                       <TrendingDown className="h-4 w-4" />
                       WITHOUT GOLD PROTECTION
                     </div>
-                    <div className="text-2xl font-bold text-white">
+                    <div className="text-2xl font-bold text-slate-900">
                       ${result.portfolioWithoutGold.toLocaleString()}
                     </div>
-                    <div className="text-red-400 text-sm">
+                    <div className="text-red-600 text-sm">
                       Lost ${(portfolioValue - result.portfolioWithoutGold).toLocaleString()}
                     </div>
                   </div>
 
                   {/* With Gold */}
-                  <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4">
-                    <div className="flex items-center gap-2 text-green-400 text-sm mb-2">
+                  <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                    <div className="flex items-center gap-2 text-green-600 text-sm mb-2">
                       <Shield className="h-4 w-4" />
                       WITH {goldAllocation}% GOLD ALLOCATION
                     </div>
-                    <div className="text-2xl font-bold text-white">
+                    <div className="text-2xl font-bold text-slate-900">
                       ${result.portfolioWithGold.toLocaleString()}
                     </div>
-                    <div className={result.portfolioWithGold >= portfolioValue ? "text-green-400" : "text-amber-400"}>
+                    <div className={result.portfolioWithGold >= portfolioValue ? "text-green-600" : "text-[#B22234]"}>
                       {result.portfolioWithGold >= portfolioValue ? "Gained" : "Lost"} $
                       {Math.abs(portfolioValue - result.portfolioWithGold).toLocaleString()}
                     </div>
                   </div>
 
                   {/* Difference */}
-                  <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 text-center">
-                    <div className="text-amber-400 font-semibold mb-1">GOLD PROTECTED</div>
-                    <div className="text-3xl font-bold text-white">
+                  <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-4 text-center">
+                    <div className="text-[#B22234] font-semibold mb-1">GOLD PROTECTED</div>
+                    <div className="text-3xl font-bold text-slate-900">
                       ${result.difference.toLocaleString()}
                     </div>
-                    <div className="text-slate-400 text-sm">more of your retirement</div>
+                    <div className="text-slate-600 text-sm">more of your retirement</div>
                   </div>
 
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold text-center rounded-xl transition-all"
                   >
                     Protect Your Portfolio Now
                     <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -279,10 +279,10 @@ export function CrashSimulator() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
-                  <div className="w-16 h-16 bg-slate-800 rounded-2xl flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
                     <Percent className="h-8 w-8 text-slate-500" />
                   </div>
-                  <p className="text-slate-400">
+                  <p className="text-slate-500">
                     Configure your portfolio and select a scenario, then click &quot;Run Simulation&quot; to see the results.
                   </p>
                 </div>

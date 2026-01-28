@@ -128,21 +128,21 @@ export default function RothConversionCalculatorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-12 md:py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FREE ROTH CONVERSION CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               Roth Conversion Calculator
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               After decades of contributions, your 401(k) is subject to RMDs and taxes.
               A Roth conversion can lock in today's tax rates - see if it makes sense for your situation.
             </p>
@@ -156,8 +156,8 @@ export default function RothConversionCalculatorPage() {
           <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-8">
               {/* Input Section */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
-                <h2 className="text-xl font-bold text-white mb-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
+                <h2 className="text-xl font-bold text-[#000080] mb-6">
                   Conversion Details
                 </h2>
 
@@ -165,11 +165,11 @@ export default function RothConversionCalculatorPage() {
                   {/* Traditional IRA Balance */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-300 font-medium flex items-center gap-2">
-                        <PiggyBank className="h-4 w-4 text-amber-400" />
+                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                        <PiggyBank className="h-4 w-4 text-[#B22234]" />
                         Traditional IRA Balance
                       </label>
-                      <span className="text-amber-400 font-bold">
+                      <span className="text-[#B22234] font-bold">
                         {formatCurrency(iraBalance)}
                       </span>
                     </div>
@@ -180,7 +180,7 @@ export default function RothConversionCalculatorPage() {
                       step={10000}
                       value={iraBalance}
                       onChange={(e) => setIraBalance(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                     />
                     <div className="flex justify-between text-xs text-slate-500 mt-1">
                       <span>$50k</span>
@@ -191,11 +191,11 @@ export default function RothConversionCalculatorPage() {
                   {/* Conversion Amount */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-300 font-medium flex items-center gap-2">
-                        <DollarSign className="h-4 w-4 text-amber-400" />
+                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                        <DollarSign className="h-4 w-4 text-[#B22234]" />
                         Conversion Amount
                       </label>
-                      <span className="text-amber-400 font-bold">
+                      <span className="text-[#B22234] font-bold">
                         {formatCurrency(conversionAmount)}
                       </span>
                     </div>
@@ -208,13 +208,13 @@ export default function RothConversionCalculatorPage() {
                       onChange={(e) =>
                         setConversionAmount(Number(e.target.value))
                       }
-                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                     />
                     <div className="flex justify-between text-xs text-slate-500 mt-1">
                       <span>$10k</span>
                       <span>{formatCurrency(iraBalance)}</span>
                     </div>
-                    <div className="text-xs text-slate-400 mt-2">
+                    <div className="text-xs text-slate-500 mt-2">
                       {results.conversionPercentage.toFixed(0)}% of your IRA
                     </div>
                   </div>
@@ -222,11 +222,11 @@ export default function RothConversionCalculatorPage() {
                   {/* Current Tax Bracket */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-300 font-medium flex items-center gap-2">
-                        <Percent className="h-4 w-4 text-amber-400" />
+                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                        <Percent className="h-4 w-4 text-[#B22234]" />
                         Current Tax Bracket
                       </label>
-                      <span className="text-amber-400 font-bold">
+                      <span className="text-[#B22234] font-bold">
                         {currentTaxBracket}%
                       </span>
                     </div>
@@ -237,8 +237,8 @@ export default function RothConversionCalculatorPage() {
                           onClick={() => setCurrentTaxBracket(rate)}
                           className={`py-2 px-2 rounded-lg text-sm font-medium transition-all ${
                             currentTaxBracket === rate
-                              ? "bg-amber-500 text-slate-900"
-                              : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                              ? "bg-[#B22234] text-white"
+                              : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                           }`}
                         >
                           {rate}%
@@ -250,11 +250,11 @@ export default function RothConversionCalculatorPage() {
                   {/* Retirement Tax Bracket */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-300 font-medium flex items-center gap-2">
-                        <TrendingUp className="h-4 w-4 text-amber-400" />
+                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                        <TrendingUp className="h-4 w-4 text-[#B22234]" />
                         Expected Retirement Tax Bracket
                       </label>
-                      <span className="text-amber-400 font-bold">
+                      <span className="text-[#B22234] font-bold">
                         {retirementTaxBracket}%
                       </span>
                     </div>
@@ -265,8 +265,8 @@ export default function RothConversionCalculatorPage() {
                           onClick={() => setRetirementTaxBracket(rate)}
                           className={`py-2 px-2 rounded-lg text-sm font-medium transition-all ${
                             retirementTaxBracket === rate
-                              ? "bg-amber-500 text-slate-900"
-                              : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                              ? "bg-[#B22234] text-white"
+                              : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                           }`}
                         >
                           {rate}%
@@ -278,11 +278,11 @@ export default function RothConversionCalculatorPage() {
                   {/* Years Until Retirement */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-300 font-medium flex items-center gap-2">
-                        <Calendar className="h-4 w-4 text-amber-400" />
+                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                        <Calendar className="h-4 w-4 text-[#B22234]" />
                         Years Until Retirement
                       </label>
-                      <span className="text-amber-400 font-bold">
+                      <span className="text-[#B22234] font-bold">
                         {yearsUntilRetirement} years
                       </span>
                     </div>
@@ -295,7 +295,7 @@ export default function RothConversionCalculatorPage() {
                       onChange={(e) =>
                         setYearsUntilRetirement(Number(e.target.value))
                       }
-                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                     />
                     <div className="flex justify-between text-xs text-slate-500 mt-1">
                       <span>1 year</span>
@@ -306,7 +306,7 @@ export default function RothConversionCalculatorPage() {
                   {/* Calculate Button */}
                   <button
                     onClick={handleCalculate}
-                    className="w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
+                    className="w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 bg-[#B22234] text-slate-900 hover:bg-[#8b1c2a] shadow-lg shadow-amber-500/25"
                   >
                     Calculate Conversion Impact
                     <ArrowRight className="h-5 w-5" />
@@ -329,22 +329,22 @@ export default function RothConversionCalculatorPage() {
                         className={`rounded-2xl p-6 border ${
                           results.worthIt
                             ? "bg-green-500/10 border-green-500/30"
-                            : "bg-amber-500/10 border-amber-500/30"
+                            : "bg-[#B22234]/10 border-[#B22234]/30"
                         }`}
                       >
                         <div className="flex items-start gap-3 mb-4">
                           {results.worthIt ? (
-                            <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
+                            <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0" />
                           ) : (
-                            <Info className="h-6 w-6 text-amber-400 flex-shrink-0" />
+                            <Info className="h-6 w-6 text-[#B22234] flex-shrink-0" />
                           )}
                           <div>
-                            <h3 className="text-xl font-bold text-white mb-2">
+                            <h3 className="text-xl font-bold text-[#000080] mb-2">
                               {results.worthIt
                                 ? "Conversion Looks Beneficial"
                                 : "Conversion May Not Be Optimal"}
                             </h3>
-                            <p className="text-slate-300 text-sm">
+                            <p className="text-slate-600 text-sm">
                               {results.worthIt
                                 ? `You'll save ${formatCurrency(
                                     results.netBenefit
@@ -358,54 +358,54 @@ export default function RothConversionCalculatorPage() {
                       </div>
 
                       {/* Key Metrics */}
-                      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-                        <h3 className="text-lg font-bold text-white mb-4">
+                      <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
+                        <h3 className="text-lg font-bold text-[#000080] mb-4">
                           Conversion Analysis
                         </h3>
 
                         <div className="space-y-4">
                           {/* Tax Cost Now */}
-                          <div className="flex justify-between items-center p-4 bg-slate-800/50 rounded-xl">
+                          <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
                             <div>
-                              <div className="text-slate-400 text-sm mb-1">
+                              <div className="text-slate-600 text-sm mb-1">
                                 Tax Cost Now
                               </div>
-                              <div className="text-2xl font-bold text-red-400">
+                              <div className="text-2xl font-bold text-red-600">
                                 {formatCurrency(results.taxCostNow)}
                               </div>
                             </div>
-                            <div className="text-red-400 text-sm">
+                            <div className="text-red-600 text-sm">
                               {currentTaxBracket}% rate
                             </div>
                           </div>
 
                           {/* Future Savings */}
-                          <div className="flex justify-between items-center p-4 bg-slate-800/50 rounded-xl">
+                          <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
                             <div>
-                              <div className="text-slate-400 text-sm mb-1">
+                              <div className="text-slate-600 text-sm mb-1">
                                 Future Tax Savings
                               </div>
-                              <div className="text-2xl font-bold text-green-400">
+                              <div className="text-2xl font-bold text-green-600">
                                 {formatCurrency(results.taxSavingsInRetirement)}
                               </div>
                             </div>
-                            <div className="text-green-400 text-sm">
+                            <div className="text-green-600 text-sm">
                               {retirementTaxBracket}% rate
                             </div>
                           </div>
 
                           {/* Net Benefit */}
-                          <div className="p-4 bg-gradient-to-r from-amber-500/10 to-amber-600/10 border border-amber-500/30 rounded-xl">
+                          <div className="p-4 bg-[#B22234]/5 border border-[#B22234]/30 rounded-xl">
                             <div className="flex justify-between items-center">
                               <div>
-                                <div className="text-slate-300 text-sm mb-1">
+                                <div className="text-slate-600 text-sm mb-1">
                                   Net Benefit
                                 </div>
                                 <div
                                   className={`text-3xl font-bold ${
                                     results.netBenefit > 0
-                                      ? "text-green-400"
-                                      : "text-red-400"
+                                      ? "text-green-600"
+                                      : "text-red-600"
                                   }`}
                                 >
                                   {results.netBenefit > 0 ? "+" : ""}
@@ -413,14 +413,14 @@ export default function RothConversionCalculatorPage() {
                                 </div>
                               </div>
                               <div className="text-right">
-                                <div className="text-slate-400 text-xs mb-1">
+                                <div className="text-slate-500 text-xs mb-1">
                                   ROI
                                 </div>
                                 <div
                                   className={`text-lg font-bold ${
                                     results.totalTaxSavingsPercent > 0
-                                      ? "text-green-400"
-                                      : "text-red-400"
+                                      ? "text-green-600"
+                                      : "text-red-600"
                                   }`}
                                 >
                                   {results.totalTaxSavingsPercent > 0 ? "+" : ""}
@@ -432,16 +432,16 @@ export default function RothConversionCalculatorPage() {
 
                           {/* Break-even Years */}
                           {results.breakevenYears > 0 && (
-                            <div className="flex justify-between items-center p-4 bg-slate-800/50 rounded-xl">
-                              <div className="text-slate-300">
+                            <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
+                              <div className="text-slate-600">
                                 Break-even Timeline
                               </div>
                               <div
                                 className={`text-xl font-bold ${
                                   results.breakevenYears <=
                                   yearsUntilRetirement
-                                    ? "text-green-400"
-                                    : "text-amber-400"
+                                    ? "text-green-600"
+                                    : "text-[#B22234]"
                                 }`}
                               >
                                 {results.breakevenYears} years
@@ -453,17 +453,17 @@ export default function RothConversionCalculatorPage() {
 
                       {/* Optimal Conversion Suggestion */}
                       {results.bracketAdvice && (
-                        <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-5">
+                        <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
                           <div className="flex items-start gap-3">
-                            <Info className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                            <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                             <div>
-                              <h4 className="text-white font-semibold mb-1">
+                              <h4 className="text-slate-900 font-semibold mb-1">
                                 Optimization Tip
                               </h4>
-                              <p className="text-slate-300 text-sm mb-2">
+                              <p className="text-slate-600 text-sm mb-2">
                                 {results.bracketAdvice}
                               </p>
-                              <div className="text-blue-400 font-medium">
+                              <div className="text-blue-600 font-medium">
                                 Suggested amount: {formatCurrency(results.optimalAmount)}
                               </div>
                             </div>
@@ -472,21 +472,21 @@ export default function RothConversionCalculatorPage() {
                       )}
 
                       {/* Remaining Balance */}
-                      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+                      <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-5">
                         <div className="grid grid-cols-2 gap-4 text-center">
                           <div>
-                            <div className="text-slate-400 text-sm mb-1">
+                            <div className="text-slate-600 text-sm mb-1">
                               Remaining Traditional IRA
                             </div>
-                            <div className="text-xl font-bold text-white">
+                            <div className="text-xl font-bold text-slate-900">
                               {formatCurrency(results.remainingBalance)}
                             </div>
                           </div>
                           <div>
-                            <div className="text-slate-400 text-sm mb-1">
+                            <div className="text-slate-600 text-sm mb-1">
                               Future Roth Value
                             </div>
-                            <div className="text-xl font-bold text-green-400">
+                            <div className="text-xl font-bold text-green-600">
                               {formatCurrency(results.futureValue)}
                             </div>
                           </div>
@@ -496,7 +496,7 @@ export default function RothConversionCalculatorPage() {
                       {/* Reset Button */}
                       <button
                         onClick={resetCalculator}
-                        className="w-full py-3 bg-slate-800 border border-white/10 rounded-xl text-slate-400 font-medium hover:bg-slate-700 hover:text-white transition-all"
+                        className="w-full py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-500 font-medium hover:bg-slate-200 hover:text-slate-900 transition-all"
                       >
                         Calculate Different Scenario
                       </button>
@@ -505,13 +505,13 @@ export default function RothConversionCalculatorPage() {
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center h-full flex flex-col justify-center"
+                      className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8 text-center h-full flex flex-col justify-center"
                     >
-                      <Calculator className="h-16 w-16 text-amber-400 mx-auto mb-4" />
-                      <h3 className="text-xl font-bold text-white mb-2">
+                      <Calculator className="h-16 w-16 text-[#B22234] mx-auto mb-4" />
+                      <h3 className="text-xl font-bold text-[#000080] mb-2">
                         Ready to Calculate
                       </h3>
-                      <p className="text-slate-400">
+                      <p className="text-slate-500">
                         Enter your details on the left and click Calculate to see
                         your personalized Roth conversion analysis.
                       </p>
@@ -525,34 +525,34 @@ export default function RothConversionCalculatorPage() {
       </section>
 
       {/* Gold IRA Bridge Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/10 border border-amber-500/30 rounded-2xl p-8">
+            <div className="bg-[#B22234]/5 border border-[#B22234]/30 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-6">
-                <Shield className="h-8 w-8 text-amber-400 flex-shrink-0" />
+                <Shield className="h-8 w-8 text-[#B22234] flex-shrink-0" />
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-3">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-3">
                     Converting to Roth? Consider Gold IRA Diversification
                   </h2>
-                  <p className="text-slate-300 mb-4">
+                  <p className="text-slate-600 mb-4">
                     While you're thinking about tax-free growth with a Roth
                     conversion, consider diversifying with a Gold IRA for
                     inflation protection. Gold has historically maintained
                     purchasing power and can provide a hedge against market
                     volatility.
                   </p>
-                  <ul className="space-y-2 text-slate-300 text-sm mb-6">
+                  <ul className="space-y-2 text-slate-600 text-sm mb-6">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-400" />
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
                       Tax-free growth in Roth Gold IRA
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-400" />
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
                       Protection from inflation and currency devaluation
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-400" />
+                      <CheckCircle2 className="h-4 w-4 text-green-600" />
                       Portfolio diversification beyond stocks and bonds
                     </li>
                   </ul>
@@ -571,28 +571,28 @@ export default function RothConversionCalculatorPage() {
       </section>
 
       {/* Educational Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                 When to Consider a Roth Conversion
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
+              <p className="text-slate-600 max-w-2xl mx-auto">
                 Roth conversions can be powerful tax planning tools, but timing
                 and circumstances matter.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
-                  <CheckCircle2 className="h-6 w-6 text-green-400" />
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-[#000080] mb-3">
                   Good Scenarios
                 </h3>
-                <ul className="space-y-2 text-sm text-slate-300">
+                <ul className="space-y-2 text-sm text-slate-600">
                   <li>• Low-income year (job loss, sabbatical)</li>
                   <li>• Expect higher future tax rates</li>
                   <li>• Long time horizon (10+ years)</li>
@@ -600,14 +600,14 @@ export default function RothConversionCalculatorPage() {
                 </ul>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center mb-4">
-                  <AlertTriangle className="h-6 w-6 text-amber-400" />
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center mb-4">
+                  <AlertTriangle className="h-6 w-6 text-[#B22234]" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-[#000080] mb-3">
                   Be Cautious
                 </h3>
-                <ul className="space-y-2 text-sm text-slate-300">
+                <ul className="space-y-2 text-sm text-slate-600">
                   <li>• Near retirement age</li>
                   <li>• High current income</li>
                   <li>• Large conversion triggering higher brackets</li>
@@ -615,14 +615,14 @@ export default function RothConversionCalculatorPage() {
                 </ul>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
-                  <Info className="h-6 w-6 text-blue-400" />
+                  <Info className="h-6 w-6 text-blue-600" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-[#000080] mb-3">
                   Pro Tips
                 </h3>
-                <ul className="space-y-2 text-sm text-slate-300">
+                <ul className="space-y-2 text-sm text-slate-600">
                   <li>• Consider partial conversions over multiple years</li>
                   <li>• Convert during market dips</li>
                   <li>• Pay conversion tax from outside account</li>
@@ -635,7 +635,7 @@ export default function RothConversionCalculatorPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <AugustaCTA
@@ -650,17 +650,17 @@ export default function RothConversionCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <Shield className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <Shield className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates for educational purposes
                     only and is not tax or financial advice. Roth conversions
                     have complex tax implications. Tax brackets and rules change.

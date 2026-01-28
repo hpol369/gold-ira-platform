@@ -203,26 +203,26 @@ const schema = {
 
 export default function ScamsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-red-500/5 rounded-full blur-[150px]" />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#B22234]/5 rounded-full blur-[100px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 border border-red-200 rounded-full text-red-600 font-semibold text-sm mb-6">
               <ShieldAlert className="h-4 w-4" />
               SCAM PROTECTION CENTER
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-6">
               Verify Before You Invest
             </h1>
-            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
               The Gold IRA industry has its share of bad actors. Our research
               team investigates complaints, lawsuits, and red flags so you
               don&apos;t become a victim.
@@ -230,23 +230,23 @@ export default function ScamsPage() {
 
             {/* Trust Stats */}
             <div className="flex flex-wrap justify-center gap-6 mb-10">
-              <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/10">
-                <Search className="h-5 w-5 text-amber-400" />
-                <span className="text-white font-semibold">15+ Companies Investigated</span>
+              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-slate-200">
+                <Search className="h-5 w-5 text-[#B22234]" />
+                <span className="text-[#000080] font-semibold">15+ Companies Investigated</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/10">
-                <FileText className="h-5 w-5 text-amber-400" />
-                <span className="text-white font-semibold">Court Records Reviewed</span>
+              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-slate-200">
+                <FileText className="h-5 w-5 text-[#B22234]" />
+                <span className="text-[#000080] font-semibold">Court Records Reviewed</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/10">
-                <Eye className="h-5 w-5 text-amber-400" />
-                <span className="text-white font-semibold">Monthly Updates</span>
+              <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-slate-200">
+                <Eye className="h-5 w-5 text-[#B22234]" />
+                <span className="text-[#000080] font-semibold">Monthly Updates</span>
               </div>
             </div>
 
             <Link
               href="#verified"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg rounded-xl hover:from-green-600 hover:to-green-700 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white font-bold text-lg rounded-xl hover:bg-green-700 transition-all"
             >
               <ShieldCheck className="h-5 w-5" />
               See Verified Companies
@@ -256,18 +256,18 @@ export default function ScamsPage() {
       </section>
 
       {/* Scam Types */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="p-2 bg-red-500/20 rounded-lg border border-red-500/30">
-                <AlertTriangle className="h-5 w-5 text-red-400" />
+              <div className="p-2 bg-red-100 rounded-lg border border-red-200">
+                <AlertTriangle className="h-5 w-5 text-red-600" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="text-2xl font-bold text-[#000080]">
                   Common Gold IRA Scams
                 </h2>
-                <p className="text-slate-400">
+                <p className="text-slate-500">
                   Know what to watch for before you invest
                 </p>
               </div>
@@ -278,40 +278,40 @@ export default function ScamsPage() {
                 <Link
                   key={scam.title}
                   href={scam.link}
-                  className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-red-500/30 transition-all"
+                  className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-red-300 transition-all"
                 >
                   <div className="flex items-start gap-4">
                     <div
                       className={`p-3 rounded-xl ${
                         scam.severity === "critical"
-                          ? "bg-red-500/20 text-red-400"
+                          ? "bg-red-100 text-red-600"
                           : scam.severity === "high"
-                          ? "bg-orange-500/20 text-orange-400"
-                          : "bg-yellow-500/20 text-yellow-400"
+                          ? "bg-orange-100 text-orange-600"
+                          : "bg-yellow-100 text-yellow-600"
                       }`}
                     >
                       <scam.icon className="h-6 w-6" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
-                        <h3 className="font-bold text-white group-hover:text-red-400 transition-colors">
+                        <h3 className="font-bold text-[#000080] group-hover:text-red-600 transition-colors">
                           {scam.title}
                         </h3>
                         <span
                           className={`text-xs px-2 py-0.5 rounded-full ${
                             scam.severity === "critical"
-                              ? "bg-red-500/20 text-red-400"
+                              ? "bg-red-100 text-red-600"
                               : scam.severity === "high"
-                              ? "bg-orange-500/20 text-orange-400"
-                              : "bg-yellow-500/20 text-yellow-400"
+                              ? "bg-orange-100 text-orange-600"
+                              : "bg-yellow-100 text-yellow-600"
                           }`}
                         >
                           {scam.severity}
                         </span>
                       </div>
-                      <p className="text-slate-400 text-sm">{scam.description}</p>
+                      <p className="text-slate-500 text-sm">{scam.description}</p>
                     </div>
-                    <ArrowRight className="h-5 w-5 text-slate-500 group-hover:text-red-400 transition-colors flex-shrink-0" />
+                    <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-red-600 transition-colors flex-shrink-0" />
                   </div>
                 </Link>
               ))}
@@ -320,7 +320,7 @@ export default function ScamsPage() {
             <div className="mt-6 text-center">
               <Link
                 href="/learn/gold-ira-scams"
-                className="inline-flex items-center gap-2 text-amber-400 font-medium hover:text-amber-300"
+                className="inline-flex items-center gap-2 text-[#B22234] font-medium hover:text-[#8B1A28]"
               >
                 Read our complete scam guide
                 <ArrowRight className="h-4 w-4" />
@@ -331,45 +331,45 @@ export default function ScamsPage() {
       </section>
 
       {/* Red Flags vs Green Flags */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#000080] text-center mb-12">
               Red Flags vs. Green Flags
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Red Flags */}
-              <div className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
+              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <XCircle className="h-6 w-6 text-red-400" />
-                  <h3 className="text-xl font-bold text-red-400">
+                  <XCircle className="h-6 w-6 text-red-600" />
+                  <h3 className="text-xl font-bold text-red-600">
                     Warning Signs
                   </h3>
                 </div>
                 <ul className="space-y-3">
                   {redFlags.map((flag, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-300">{flag}</span>
+                      <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-600">{flag}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               {/* Green Flags */}
-              <div className="bg-green-500/5 border border-green-500/20 rounded-xl p-6">
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <CheckCircle2 className="h-6 w-6 text-green-400" />
-                  <h3 className="text-xl font-bold text-green-400">
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <h3 className="text-xl font-bold text-green-600">
                     Trust Signals
                   </h3>
                 </div>
                 <ul className="space-y-3">
                   {greenFlags.map((flag, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-300">{flag}</span>
+                      <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-600">{flag}</span>
                     </li>
                   ))}
                 </ul>
@@ -380,18 +380,18 @@ export default function ScamsPage() {
       </section>
 
       {/* Verified Companies */}
-      <section id="verified" className="py-16 bg-slate-900">
+      <section id="verified" className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
-                <ShieldCheck className="h-5 w-5 text-green-400" />
+              <div className="p-2 bg-green-100 rounded-lg border border-green-200">
+                <ShieldCheck className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="text-2xl font-bold text-[#000080]">
                   Verified Safe Companies
                 </h2>
-                <p className="text-slate-400">
+                <p className="text-slate-500">
                   These companies passed our background checks
                 </p>
               </div>
@@ -401,37 +401,37 @@ export default function ScamsPage() {
               {verifiedCompanies.map((company, index) => (
                 <div
                   key={company.slug}
-                  className={`bg-white/5 backdrop-blur-sm border rounded-xl p-6 ${
+                  className={`bg-slate-50 border rounded-xl p-6 ${
                     index === 0
-                      ? "border-green-500/30 bg-green-500/5"
-                      : "border-white/10"
+                      ? "border-green-300 bg-green-50/50"
+                      : "border-slate-200"
                   }`}
                 >
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
-                        <BadgeCheck className="h-6 w-6 text-green-400" />
+                      <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                        <BadgeCheck className="h-6 w-6 text-green-600" />
                       </div>
                       <div>
                         <div className="flex items-center gap-2">
-                          <h3 className="font-bold text-white text-lg">
+                          <h3 className="font-bold text-[#000080] text-lg">
                             {company.name}
                           </h3>
                           {index === 0 && (
-                            <span className="text-xs px-2 py-0.5 bg-amber-500/20 text-amber-400 rounded-full">
+                            <span className="text-xs px-2 py-0.5 bg-[#B22234]/10 text-[#B22234] rounded-full">
                               {company.highlight}
                             </span>
                           )}
                         </div>
                         <div className="flex flex-wrap gap-4 mt-1 text-sm">
-                          <span className="text-slate-400">
-                            BBB: <span className="text-green-400">{company.bbb}</span>
+                          <span className="text-slate-500">
+                            BBB: <span className="text-green-600">{company.bbb}</span>
                           </span>
-                          <span className="text-slate-400">
-                            Complaints: <span className="text-green-400">{company.complaints}</span>
+                          <span className="text-slate-500">
+                            Complaints: <span className="text-green-600">{company.complaints}</span>
                           </span>
-                          <span className="text-slate-400">
-                            Lawsuits: <span className="text-green-400">{company.lawsuits}</span>
+                          <span className="text-slate-500">
+                            Lawsuits: <span className="text-green-600">{company.lawsuits}</span>
                           </span>
                         </div>
                       </div>
@@ -440,8 +440,8 @@ export default function ScamsPage() {
                       href={`/reviews/${company.slug}`}
                       className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold transition-all ${
                         index === 0
-                          ? "bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 hover:from-amber-600 hover:to-amber-700"
-                          : "bg-white/10 text-white hover:bg-white/20"
+                          ? "bg-[#B22234] text-white hover:bg-[#8B1A28]"
+                          : "bg-slate-200 text-[#000080] hover:bg-slate-300"
                       }`}
                     >
                       View Full Review
@@ -455,7 +455,7 @@ export default function ScamsPage() {
             <div className="mt-8 text-center">
               <Link
                 href="/best-gold-ira-companies"
-                className="inline-flex items-center gap-2 text-amber-400 font-medium hover:text-amber-300"
+                className="inline-flex items-center gap-2 text-[#B22234] font-medium hover:text-[#8B1A28]"
               >
                 See all company rankings
                 <ArrowRight className="h-4 w-4" />
@@ -466,18 +466,18 @@ export default function ScamsPage() {
       </section>
 
       {/* Investigated Companies */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="p-2 bg-orange-500/20 rounded-lg border border-orange-500/30">
-                <Scale className="h-5 w-5 text-orange-400" />
+              <div className="p-2 bg-orange-100 rounded-lg border border-orange-200">
+                <Scale className="h-5 w-5 text-orange-600" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="text-2xl font-bold text-[#000080]">
                   Investigated Companies
                 </h2>
-                <p className="text-slate-400">
+                <p className="text-slate-500">
                   Companies with documented issues you should research
                 </p>
               </div>
@@ -488,18 +488,18 @@ export default function ScamsPage() {
                 <Link
                   key={company.slug}
                   href={`/reviews/${company.slug}`}
-                  className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 hover:border-orange-500/30 transition-all"
+                  className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-orange-300 transition-all"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <h3 className="font-bold text-white group-hover:text-orange-400 transition-colors">
+                      <h3 className="font-bold text-[#000080] group-hover:text-orange-600 transition-colors">
                         {company.name}
                       </h3>
-                      <p className="text-orange-400 text-sm mt-1">
+                      <p className="text-orange-600 text-sm mt-1">
                         {company.issue}
                       </p>
                     </div>
-                    <ArrowRight className="h-5 w-5 text-slate-500 group-hover:text-orange-400 transition-colors flex-shrink-0" />
+                    <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-orange-600 transition-colors flex-shrink-0" />
                   </div>
                 </Link>
               ))}
@@ -508,7 +508,7 @@ export default function ScamsPage() {
             <div className="mt-8 text-center">
               <Link
                 href="/investigative-hub"
-                className="inline-flex items-center gap-2 text-amber-400 font-medium hover:text-amber-300"
+                className="inline-flex items-center gap-2 text-[#B22234] font-medium hover:text-[#8B1A28]"
               >
                 View our full investigative research
                 <ArrowRight className="h-4 w-4" />
@@ -519,10 +519,10 @@ export default function ScamsPage() {
       </section>
 
       {/* How We Verify */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#000080] text-center mb-12">
               How We Verify Companies
             </h2>
 
@@ -550,11 +550,11 @@ export default function ScamsPage() {
                 },
               ].map((item) => (
                 <div key={item.step} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xl mx-auto mb-4 border border-amber-500/30">
+                  <div className="w-12 h-12 rounded-full bg-[#B22234]/10 text-[#B22234] flex items-center justify-center font-bold text-xl mx-auto mb-4 border border-[#B22234]/30">
                     {item.step}
                   </div>
-                  <h3 className="font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-slate-400">{item.desc}</p>
+                  <h3 className="font-bold text-[#000080] mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-500">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -563,35 +563,35 @@ export default function ScamsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
               Frequently Asked Questions
             </h2>
 
             <div className="space-y-4">
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <h3 className="font-bold text-white mb-2">
+              <div className="bg-white rounded-xl p-6 border border-slate-200">
+                <h3 className="font-bold text-[#000080] mb-2">
                   How do I know if a Gold IRA company is legitimate?
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-slate-500">
                   Check their BBB rating (should be A or higher), look for complaints on Consumer Affairs and Trustpilot, verify they use IRS-approved depositories, and confirm they provide transparent pricing. Legitimate companies educate first and never pressure you to decide immediately.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <h3 className="font-bold text-white mb-2">
+              <div className="bg-white rounded-xl p-6 border border-slate-200">
+                <h3 className="font-bold text-[#000080] mb-2">
                   What is the most common Gold IRA scam?
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-slate-500">
                   The &quot;home storage IRA&quot; scam is the most dangerous. Companies claim you can store IRA gold in your home safe. This violates IRS rules and can result in the entire IRA being treated as a distribution, triggering income taxes plus a 10% early withdrawal penalty.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <h3 className="font-bold text-white mb-2">
+              <div className="bg-white rounded-xl p-6 border border-slate-200">
+                <h3 className="font-bold text-[#000080] mb-2">
                   How do I report a Gold IRA scam?
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-slate-500">
                   Report to the BBB (bbb.org), FTC (reportfraud.ftc.gov), your state attorney general, and the CFPB. Also leave honest reviews on Google and Trustpilot to warn other investors.
                 </p>
               </div>
@@ -601,7 +601,7 @@ export default function ScamsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

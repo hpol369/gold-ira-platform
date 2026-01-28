@@ -59,16 +59,16 @@ function getProductTypeLabel(productType: string): string {
 
 function getProductTypeColor(productType: string): string {
   const colors: Record<string, string> = {
-    "gold-ira": "bg-amber-500/20 text-amber-400 border-amber-500/30",
-    "silver-ira": "bg-slate-400/20 text-slate-300 border-slate-400/30",
-    "precious-metals-ira": "bg-amber-500/20 text-amber-400 border-amber-500/30",
-    "crypto-ira": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-    "real-estate-ira": "bg-teal-500/20 text-teal-400 border-teal-500/30",
-    "self-directed-ira": "bg-green-500/20 text-green-400 border-green-500/30",
-    "solo-401k": "bg-purple-500/20 text-purple-400 border-purple-500/30",
-    "robs-401k": "bg-orange-500/20 text-orange-400 border-orange-500/30",
+    "gold-ira": "bg-[#B22234]/20 text-[#B22234] border-[#B22234]/30",
+    "silver-ira": "bg-slate-400/20 text-slate-600 border-slate-400/30",
+    "precious-metals-ira": "bg-[#B22234]/20 text-[#B22234] border-[#B22234]/30",
+    "crypto-ira": "bg-blue-500/20 text-blue-600 border-blue-500/30",
+    "real-estate-ira": "bg-teal-500/20 text-teal-600 border-teal-500/30",
+    "self-directed-ira": "bg-green-500/20 text-green-600 border-green-500/30",
+    "solo-401k": "bg-purple-500/20 text-purple-600 border-purple-500/30",
+    "robs-401k": "bg-orange-500/20 text-orange-600 border-orange-500/30",
   };
-  return colors[productType] || "bg-slate-500/20 text-slate-400 border-slate-500/30";
+  return colors[productType] || "bg-slate-500/20 text-slate-500 border-slate-500/30";
 }
 
 // ============================================
@@ -160,7 +160,7 @@ export function QuizResults({
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -185,11 +185,11 @@ export function QuizResults({
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#000080] mb-4">
             Your Personalized{" "}
-            <span className="text-amber-400">Recommendation</span>
+            <span className="text-[#B22234]">Recommendation</span>
           </h1>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-500 max-w-2xl mx-auto">
             Based on your answers, we&apos;ve found the perfect match for your retirement goals.
           </p>
         </motion.div>
@@ -202,13 +202,13 @@ export function QuizResults({
           className="relative mb-12"
         >
           {/* Glass-morphism Card */}
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl">
+          <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
             {/* Top Gradient Accent */}
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500" />
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#B22234] via-[#8b1c2a] to-[#B22234]" />
 
             {/* Best Match Badge */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-500 text-slate-900 text-sm font-bold shadow-lg">
+              <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#B22234] text-white text-sm font-bold shadow-lg">
                 <Star className="h-4 w-4 fill-current" />
                 Best Match
               </span>
@@ -217,16 +217,16 @@ export function QuizResults({
             <div className="p-6 sm:p-8 lg:p-10 pt-10">
               {/* Company Name */}
               <div className="text-center mb-8">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-white mb-2">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#000080] mb-2">
                   {recommendedCompany.name}
                 </h2>
-                <p className="text-slate-400">{recommendedCompany.bestFor}</p>
+                <p className="text-slate-500">{recommendedCompany.bestFor}</p>
               </div>
 
               {/* Why We Recommend Section */}
               <div className="mb-8">
-                <h3 className="flex items-center gap-2 text-lg font-semibold text-white mb-4">
-                  <Shield className="h-5 w-5 text-amber-400" />
+                <h3 className="flex items-center gap-2 text-lg font-semibold text-[#000080] mb-4">
+                  <Shield className="h-5 w-5 text-[#B22234]" />
                   Why we recommend {recommendedCompany.name}
                 </h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -236,9 +236,9 @@ export function QuizResults({
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 + index * 0.1 }}
-                      className="flex items-start gap-3 text-slate-300"
+                      className="flex items-start gap-3 text-slate-600"
                     >
-                      <CheckCircle className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                       <span>{highlight}</span>
                     </motion.li>
                   ))}
@@ -246,9 +246,9 @@ export function QuizResults({
               </div>
 
               {/* Minimum Investment */}
-              <div className="flex items-center justify-center gap-2 mb-8 text-slate-400">
+              <div className="flex items-center justify-center gap-2 mb-8 text-slate-500">
                 <span>Minimum Investment:</span>
-                <span className="font-semibold text-white">
+                <span className="font-semibold text-[#000080]">
                   {recommendedCompany.minInvestment}
                 </span>
               </div>
@@ -259,7 +259,7 @@ export function QuizResults({
                   size="xl"
                   variant="gold"
                   asChild
-                  className="w-full sm:w-auto min-w-[300px] text-lg shadow-xl hover:shadow-amber-500/20"
+                  className="w-full sm:w-auto min-w-[300px] text-lg shadow-xl hover:shadow-[#B22234]/20"
                 >
                   <a
                     href={primaryAffiliateLink}
@@ -280,7 +280,7 @@ export function QuizResults({
         {/* ============================================ */}
         {alternatives.length > 0 && (
           <motion.div variants={itemVariants} className="mb-12">
-            <h3 className="text-xl font-serif font-bold text-white mb-6 text-center">
+            <h3 className="text-xl font-serif font-bold text-[#000080] mb-6 text-center">
               Also Consider
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -297,12 +297,12 @@ export function QuizResults({
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 + index * 0.1 }}
-                    className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 hover:bg-white/10 transition-colors"
+                    className="relative overflow-hidden rounded-xl border border-slate-200 bg-white p-5 hover:bg-slate-50 transition-colors"
                   >
-                    <h4 className="text-lg font-semibold text-white mb-1">
+                    <h4 className="text-lg font-semibold text-[#000080] mb-1">
                       {company.name}
                     </h4>
-                    <p className="text-sm text-slate-400 mb-3">
+                    <p className="text-sm text-slate-500 mb-3">
                       {company.bestFor}
                     </p>
                     <div className="flex items-center justify-between">
@@ -313,7 +313,7 @@ export function QuizResults({
                         size="sm"
                         variant="outline"
                         asChild
-                        className="text-amber-400 border-amber-500/30 hover:bg-amber-500/10 hover:border-amber-500/50"
+                        className="text-[#B22234] border-[#B22234]/30 hover:bg-[#B22234]/10 hover:border-[#B22234]/50"
                       >
                         <a
                           href={affiliateLink}
@@ -337,30 +337,30 @@ export function QuizResults({
         {/* ============================================ */}
         {onSaveResults && (
           <motion.div variants={itemVariants}>
-            <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 sm:p-8">
+            <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 sm:p-8">
               {isSaved ? (
                 <div className="text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 mb-4">
-                    <CheckCircle className="h-6 w-6 text-emerald-400" />
+                    <CheckCircle className="h-6 w-6 text-emerald-500" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-[#000080] mb-2">
                     Results Saved!
                   </h3>
-                  <p className="text-slate-400">
+                  <p className="text-slate-500">
                     We&apos;ve sent your personalized recommendations to your email.
                   </p>
                 </div>
               ) : (
                 <>
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20">
-                      <Mail className="h-5 w-5 text-amber-400" />
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[#B22234]/10">
+                      <Mail className="h-5 w-5 text-[#B22234]" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-white">
+                      <h3 className="text-lg font-semibold text-[#000080]">
                         Save My Results
                       </h3>
-                      <p className="text-sm text-slate-400">
+                      <p className="text-sm text-slate-500">
                         Get your personalized recommendation sent to your inbox
                       </p>
                     </div>
@@ -377,16 +377,16 @@ export function QuizResults({
                         }}
                         placeholder="Enter your email address"
                         className={cn(
-                          "w-full px-4 py-3 rounded-lg bg-white/5 border text-white placeholder:text-slate-500",
-                          "focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50",
+                          "w-full px-4 py-3 rounded-lg bg-slate-50 border text-slate-900 placeholder:text-slate-500",
+                          "focus:outline-none focus:ring-2 focus:ring-[#B22234]/50 focus:border-[#B22234]/50",
                           "transition-colors",
                           emailError
                             ? "border-red-500/50"
-                            : "border-white/10"
+                            : "border-slate-200"
                         )}
                       />
                       {emailError && (
-                        <p className="mt-1 text-sm text-red-400">{emailError}</p>
+                        <p className="mt-1 text-sm text-red-500">{emailError}</p>
                       )}
                     </div>
                     <Button

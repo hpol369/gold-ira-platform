@@ -91,19 +91,19 @@ const schema = {
 
 export default function PlatinumIraPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Precious Metals Guide
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Platinum IRA Investment Guide
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             You've spent 30+ years building your 401k. Now you're looking at ways to protect it—and maybe grow it—without gambling on Wall Street. Platinum is 30 times rarer than gold. Here's the straight talk on whether it belongs in your retirement.
                         </p>
                     </div>
@@ -118,7 +118,7 @@ export default function PlatinumIraPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -132,7 +132,7 @@ export default function PlatinumIraPage() {
                                 <div className="p-3 bg-indigo-500/20 rounded-lg text-indigo-400">
                                     <Gem className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Platinum?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Platinum?</h2>
                             </div>
                             <p>
                                 Here's a fact that puts things in perspective: All the platinum ever mined in human history would fit in your living room. Meanwhile, all the gold ever mined would fill three Olympic-sized swimming pools. That scarcity matters when you're looking to protect wealth you've spent decades building.
@@ -145,7 +145,7 @@ export default function PlatinumIraPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Bull Case for Platinum</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Bull Case for Platinum</h2>
                             </div>
                             <p>
                                 Platinum is primarily an industrial metal, used heavily in:
@@ -164,29 +164,29 @@ export default function PlatinumIraPage() {
                         <section id="platinum-vs-gold" className="scroll-mt-32">
                             <h2>Platinum vs. Gold</h2>
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Feature</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Gold</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Platinum</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Feature</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Gold</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Platinum</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm">
+                                    <tbody className="divide-y divide-slate-200 text-sm">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Primary Use</td>
-                                            <td className="p-4 text-slate-400">Monetary / Investment</td>
-                                            <td className="p-4 text-slate-400">Industrial / Auto</td>
+                                            <td className="p-4 font-semibold text-slate-900">Primary Use</td>
+                                            <td className="p-4 text-slate-600">Monetary / Investment</td>
+                                            <td className="p-4 text-slate-600">Industrial / Auto</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Economic Sensitivity</td>
-                                            <td className="p-4 text-slate-400">Counter-cyclical (Safe Haven)</td>
-                                            <td className="p-4 text-slate-400">Pro-cyclical (Grows with Economy)</td>
+                                            <td className="p-4 font-semibold text-slate-900">Economic Sensitivity</td>
+                                            <td className="p-4 text-slate-600">Counter-cyclical (Safe Haven)</td>
+                                            <td className="p-4 text-slate-600">Pro-cyclical (Grows with Economy)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Volatility</td>
-                                            <td className="p-4 text-slate-400">Low/Moderate</td>
-                                            <td className="p-4 text-slate-400">High</td>
+                                            <td className="p-4 font-semibold text-slate-900">Volatility</td>
+                                            <td className="p-4 text-slate-600">Low/Moderate</td>
+                                            <td className="p-4 text-slate-600">High</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -222,7 +222,7 @@ export default function PlatinumIraPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Risks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Risks</h2>
                             </div>
                             <p>
                                 Let me be straight with you: platinum isn't the same as gold. Because it's tied to auto manufacturing, it takes a hit during recessions when people stop buying cars. Gold actually does <i>better</i> during economic downturns. So if you're 5-7 years from retirement and worried about protecting your $500k+ 401k from a crash, gold is your safer bet. Platinum is more of a growth play—something to consider as a smaller piece of a diversified precious metals IRA, not the foundation.
@@ -230,8 +230,8 @@ export default function PlatinumIraPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Considering Platinum for Your IRA?</h3>
                                 <p className="mb-6 text-gray-200">Work with a Gold IRA company that explains the real differences between metals—not one that just wants to make a sale.</p>
@@ -246,14 +246,14 @@ export default function PlatinumIraPage() {
                             <h2>Platinum IRA FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                    <details key={index} className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                                 <Factory className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-400">
+                                        <p className="mt-4 leading-relaxed text-slate-600">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -268,7 +268,7 @@ export default function PlatinumIraPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-platinum-ira" />
                 </Container>

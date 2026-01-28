@@ -278,7 +278,7 @@ const faqJsonLd = {
 
 export default function SilverIraReviewsPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -290,29 +290,29 @@ export default function SilverIraReviewsPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="py-16 md:py-20 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+            <header className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-500/20 border border-slate-400/30 rounded-full text-slate-300 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
                             <Star className="h-4 w-4" />
                             HONEST REVIEWS
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
                             Silver IRA Reviews: Real Ratings for 2026
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
                             Unbiased reviews of the top Silver IRA companies. We analyze silver selection, pricing, customer service, and more to help you make an informed decision.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button variant="gold" size="lg" asChild>
+                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Get Personalized Match <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="border-white/20 text-slate-300 hover:bg-white/10" asChild>
+                            <Button variant="outline" size="lg" className="border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
                                 <Link href="#augusta-precious-metals">
                                     See Top Rated Company
                                 </Link>
@@ -323,14 +323,14 @@ export default function SilverIraReviewsPage() {
             </header>
 
             {/* Rating Categories */}
-            <section className="py-12 bg-slate-800/50">
+            <section className="py-12 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-xl font-bold text-white text-center mb-6">How We Rate Silver IRA Companies</h2>
+                        <h2 className="text-xl font-bold text-slate-900 text-center mb-6">How We Rate Silver IRA Companies</h2>
                         <div className="flex flex-wrap justify-center gap-4">
                             {ratingCategories.map((category, index) => (
-                                <div key={index} className="bg-white/5 border border-white/10 rounded-lg px-4 py-2">
-                                    <span className="text-sm text-white font-semibold">{category.name}</span>
+                                <div key={index} className="bg-slate-50 border border-slate-200 rounded-lg px-4 py-2">
+                                    <span className="text-sm text-slate-900 font-semibold">{category.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -339,22 +339,22 @@ export default function SilverIraReviewsPage() {
             </section>
 
             {/* Company Reviews */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto space-y-12">
                         {companyReviews.map((company, index) => (
                             <div
                                 key={index}
                                 id={company.name.toLowerCase().replace(/\s+/g, '-')}
-                                className={`rounded-2xl overflow-hidden border ${company.featured ? 'border-amber-500/50 bg-gradient-to-br from-amber-500/10 to-slate-900' : 'border-white/10 bg-white/5'} scroll-mt-20`}
+                                className={`rounded-2xl overflow-hidden border ${company.featured ? 'border-[#B22234]/50 bg-gradient-to-br from-[#B22234]/10 to-slate-900' : 'border-slate-200 bg-slate-50'} scroll-mt-20`}
                             >
                                 {/* Header */}
-                                <div className={`p-6 ${company.featured ? 'bg-amber-500/20' : 'bg-slate-800/50'}`}>
+                                <div className={`p-6 ${company.featured ? 'bg-[#B22234]/20' : 'bg-slate-50'}`}>
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                                         <div>
                                             <div className="flex items-center gap-3 mb-2">
                                                 {company.featured && (
-                                                    <span className="px-2 py-1 bg-amber-500 text-slate-900 text-xs font-bold rounded">
+                                                    <span className="px-2 py-1 bg-[#B22234] text-slate-900 text-xs font-bold rounded">
                                                         EDITOR'S CHOICE
                                                     </span>
                                                 )}
@@ -362,22 +362,22 @@ export default function SilverIraReviewsPage() {
                                                     BBB: {company.bbbRating}
                                                 </span>
                                             </div>
-                                            <h3 className="text-2xl font-bold text-white">{company.name}</h3>
-                                            <p className="text-sm text-slate-400 mt-1">
+                                            <h3 className="text-2xl font-bold text-slate-900">{company.name}</h3>
+                                            <p className="text-sm text-slate-600 mt-1">
                                                 Est. {company.yearFounded} | {company.reviewCount.toLocaleString()} verified reviews
                                             </p>
                                         </div>
                                         <div className="text-center">
-                                            <div className="text-4xl font-bold text-amber-400">{company.overallRating}</div>
+                                            <div className="text-4xl font-bold text-[#B22234]">{company.overallRating}</div>
                                             <div className="flex justify-center mt-1">
                                                 {[1, 2, 3, 4, 5].map((star) => (
                                                     <Star
                                                         key={star}
-                                                        className={`h-5 w-5 ${star <= Math.floor(company.overallRating) ? 'text-amber-400 fill-amber-400' : 'text-slate-600'}`}
+                                                        className={`h-5 w-5 ${star <= Math.floor(company.overallRating) ? 'text-[#B22234] fill-[#B22234]' : 'text-slate-600'}`}
                                                     />
                                                 ))}
                                             </div>
-                                            <p className="text-xs text-slate-400 mt-1">Overall Rating</p>
+                                            <p className="text-xs text-slate-600 mt-1">Overall Rating</p>
                                         </div>
                                     </div>
                                 </div>
@@ -385,40 +385,40 @@ export default function SilverIraReviewsPage() {
                                 {/* Content */}
                                 <div className="p-6">
                                     {/* Verdict */}
-                                    <div className="bg-slate-800/50 rounded-lg p-4 mb-6 border-l-4 border-amber-500">
-                                        <p className="text-white font-medium">{company.verdict}</p>
+                                    <div className="bg-slate-50 rounded-lg p-4 mb-6 border-l-4 border-amber-500">
+                                        <p className="text-slate-900 font-medium">{company.verdict}</p>
                                     </div>
 
                                     {/* Quick Stats */}
                                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                                        <div className="bg-white/5 rounded-lg p-3 border border-white/10 text-center">
-                                            <div className="text-xs text-slate-500 mb-1">Minimum</div>
-                                            <div className="font-bold text-white">{company.minInvestment}</div>
+                                        <div className="bg-slate-50 rounded-lg p-3 border border-slate-200 text-center">
+                                            <div className="text-xs text-slate-600 mb-1">Minimum</div>
+                                            <div className="font-bold text-slate-900">{company.minInvestment}</div>
                                         </div>
-                                        <div className="bg-white/5 rounded-lg p-3 border border-white/10 text-center">
-                                            <div className="text-xs text-slate-500 mb-1">Annual Fee</div>
-                                            <div className="font-bold text-white">{company.annualFee}</div>
+                                        <div className="bg-slate-50 rounded-lg p-3 border border-slate-200 text-center">
+                                            <div className="text-xs text-slate-600 mb-1">Annual Fee</div>
+                                            <div className="font-bold text-slate-900">{company.annualFee}</div>
                                         </div>
-                                        <div className="bg-white/5 rounded-lg p-3 border border-white/10 text-center">
-                                            <div className="text-xs text-slate-500 mb-1">BBB Rating</div>
+                                        <div className="bg-slate-50 rounded-lg p-3 border border-slate-200 text-center">
+                                            <div className="text-xs text-slate-600 mb-1">BBB Rating</div>
                                             <div className="font-bold text-green-400">{company.bbbRating}</div>
                                         </div>
-                                        <div className="bg-white/5 rounded-lg p-3 border border-white/10 text-center">
-                                            <div className="text-xs text-slate-500 mb-1">Trustpilot</div>
-                                            <div className="font-bold text-white">{company.trustpilotRating}/5</div>
+                                        <div className="bg-slate-50 rounded-lg p-3 border border-slate-200 text-center">
+                                            <div className="text-xs text-slate-600 mb-1">Trustpilot</div>
+                                            <div className="font-bold text-slate-900">{company.trustpilotRating}/5</div>
                                         </div>
                                     </div>
 
                                     {/* Category Ratings */}
                                     <div className="mb-6">
-                                        <h4 className="font-semibold text-white mb-3">Category Ratings</h4>
+                                        <h4 className="font-semibold text-slate-900 mb-3">Category Ratings</h4>
                                         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
                                             {Object.entries(company.ratings).map(([key, value]) => (
-                                                <div key={key} className="bg-slate-800/50 rounded-lg p-3 text-center">
-                                                    <div className="text-xs text-slate-400 mb-1 capitalize">
+                                                <div key={key} className="bg-slate-50 rounded-lg p-3 text-center">
+                                                    <div className="text-xs text-slate-600 mb-1 capitalize">
                                                         {key.replace(/([A-Z])/g, ' $1').trim()}
                                                     </div>
-                                                    <div className="text-lg font-bold text-white">{value}</div>
+                                                    <div className="text-lg font-bold text-slate-900">{value}</div>
                                                 </div>
                                             ))}
                                         </div>
@@ -432,7 +432,7 @@ export default function SilverIraReviewsPage() {
                                             </h4>
                                             <ul className="space-y-2">
                                                 {company.pros.map((pro, idx) => (
-                                                    <li key={idx} className="flex items-start gap-2 text-sm text-slate-400">
+                                                    <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
                                                         <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
                                                         {pro}
                                                     </li>
@@ -445,7 +445,7 @@ export default function SilverIraReviewsPage() {
                                             </h4>
                                             <ul className="space-y-2">
                                                 {company.cons.map((con, idx) => (
-                                                    <li key={idx} className="text-sm text-slate-400">
+                                                    <li key={idx} className="text-sm text-slate-600">
                                                         * {con}
                                                     </li>
                                                 ))}
@@ -455,12 +455,12 @@ export default function SilverIraReviewsPage() {
 
                                     {/* Customer Quotes */}
                                     <div className="mb-6">
-                                        <h4 className="font-semibold text-white mb-3">What Customers Say</h4>
+                                        <h4 className="font-semibold text-slate-900 mb-3">What Customers Say</h4>
                                         <div className="grid md:grid-cols-2 gap-4">
                                             {company.customerQuotes.map((quote, idx) => (
-                                                <div key={idx} className="bg-slate-800/50 rounded-lg p-4 border border-white/5">
-                                                    <p className="text-slate-300 text-sm italic mb-2">"{quote.quote}"</p>
-                                                    <p className="text-xs text-slate-500">- {quote.author}</p>
+                                                <div key={idx} className="bg-slate-50 rounded-lg p-4 border border-white/5">
+                                                    <p className="text-slate-600 text-sm italic mb-2">"{quote.quote}"</p>
+                                                    <p className="text-xs text-slate-600">- {quote.author}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -468,12 +468,12 @@ export default function SilverIraReviewsPage() {
 
                                     {/* CTAs */}
                                     <div className="flex flex-col sm:flex-row gap-4">
-                                        <Button variant="gold" size="lg" className="flex-1" asChild>
+                                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white flex-1" size="lg" asChild>
                                             <a href={getTrackedLink(company.link, "silver-reviews", company.name.toLowerCase().replace(/\s+/g, '-'))} target="_blank" rel="noopener noreferrer">
                                                 Get Free Silver IRA Kit <ArrowRight className="ml-2 h-4 w-4" />
                                             </a>
                                         </Button>
-                                        <Button variant="outline" size="lg" className="flex-1 border-white/20 text-slate-300 hover:bg-white/10" asChild>
+                                        <Button variant="outline" size="lg" className="flex-1 border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
                                             <Link href={company.reviewLink}>Read Full Review</Link>
                                         </Button>
                                     </div>
@@ -485,14 +485,14 @@ export default function SilverIraReviewsPage() {
             </section>
 
             {/* Mid-page CTA */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-white/10">
-                        <h2 className="text-2xl font-bold text-white mb-4">Not Sure Which Company Is Right for You?</h2>
-                        <p className="text-slate-400 mb-6">
+                    <div className="max-w-3xl mx-auto text-center bg-white rounded-2xl p-8 border border-slate-200">
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">Not Sure Which Company Is Right for You?</h2>
+                        <p className="text-slate-600 mb-6">
                             Everyone's situation is different. Take our 60-second quiz to get a personalized recommendation based on your investment amount and preferences.
                         </p>
-                        <Button variant="gold" size="lg" asChild>
+                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                             <Link href="/quiz">
                                 Get My Personal Match <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
@@ -502,21 +502,21 @@ export default function SilverIraReviewsPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-8">Silver IRA Reviews FAQs</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Silver IRA Reviews FAQs</h2>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
                                 <details
                                     key={index}
-                                    className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl"
+                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
                                 >
-                                    <summary className="cursor-pointer p-6 font-semibold text-white flex justify-between items-center list-none">
+                                    <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
                                         {faq.question}
-                                        <span className="text-amber-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                                        <span className="text-[#B22234] group-open:rotate-180 transition-transform">&#9660;</span>
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-400">
+                                    <div className="px-6 pb-6 text-slate-600">
                                         {faq.answer}
                                     </div>
                                 </details>
@@ -527,28 +527,28 @@ export default function SilverIraReviewsPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <h2 className="text-2xl font-bold text-white text-center mb-8">More Silver IRA Resources</h2>
+                    <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">More Silver IRA Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/silver-ira/companies" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Companies</h3>
-                            <p className="text-sm text-slate-400">Compare top providers side by side.</p>
+                        <Link href="/silver-ira/companies" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Companies</h3>
+                            <p className="text-sm text-slate-600">Compare top providers side by side.</p>
                         </Link>
-                        <Link href="/silver-ira/best-company" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Best Silver IRA Company</h3>
-                            <p className="text-sm text-slate-400">Our top pick for silver IRA investing.</p>
+                        <Link href="/silver-ira/best-company" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Best Silver IRA Company</h3>
+                            <p className="text-sm text-slate-600">Our top pick for silver IRA investing.</p>
                         </Link>
-                        <Link href="/silver-ira/rollover" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Rollover</h3>
-                            <p className="text-sm text-slate-400">How to transfer your retirement funds.</p>
+                        <Link href="/silver-ira/rollover" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Rollover</h3>
+                            <p className="text-sm text-slate-600">How to transfer your retirement funds.</p>
                         </Link>
                     </div>
                 </Container>
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <AugustaCTA
                         variant="footer"

@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 
 export default function BaristaFIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-whitetext-slate-900">
       <Navbar />
       <BaristaFIRECalculator />
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

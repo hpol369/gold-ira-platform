@@ -97,19 +97,19 @@ const schema = {
 
 export default function RetirementPlanningMistakesPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Retirement Planning
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             10 Retirement Planning Mistakes That Destroy Wealth
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             You've spent 30+ years building your retirement savings. You've done what most Americans couldn't—you actually saved. Here are the mistakes that could undo all that hard work, and how to avoid them.
                         </p>
                     </div>
@@ -124,7 +124,7 @@ export default function RetirementPlanningMistakesPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg  prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -144,35 +144,35 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Clock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Starting Too Late</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. Starting Too Late</h2>
                             </div>
                             <p>
                                 If you're reading this at 55 or 60, you already know this isn't your issue. You started decades ago. You showed up every day, maxed out your contributions when you could, and built something real. But if you have kids or grandkids who haven't started? Show them these numbers:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Starting Age</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Monthly Savings</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">At Age 65 (7% return)</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Starting Age</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Monthly Savings</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">At Age 65 (7% return)</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 text-white">25</td>
-                                            <td className="p-4 text-slate-400">$500</td>
+                                            <td className="p-4 text-[#000080]">25</td>
+                                            <td className="p-4 text-slate-500">$500</td>
                                             <td className="p-4 text-green-400 font-semibold">$1,199,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">35</td>
-                                            <td className="p-4 text-slate-400">$500</td>
-                                            <td className="p-4 font-semibold text-slate-300">$566,000</td>
+                                            <td className="p-4 text-[#000080]">35</td>
+                                            <td className="p-4 text-slate-500">$500</td>
+                                            <td className="p-4 font-semibold text-slate-600">$566,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">45</td>
-                                            <td className="p-4 text-slate-400">$500</td>
+                                            <td className="p-4 text-[#000080]">45</td>
+                                            <td className="p-4 text-slate-500">$500</td>
                                             <td className="p-4 text-red-400 font-semibold">$246,000</td>
                                         </tr>
                                     </tbody>
@@ -190,7 +190,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
                                     <PieChart className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. Over-Concentration in Stocks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. Over-Concentration in Stocks</h2>
                             </div>
                             <p>
                                 This is the big one for people like you. You've got 80%, 90%, maybe 100% of your 401k in stocks. Your broker says "stay diversified"—but having 10 different stock funds isn't diversification. When the market drops, they all drop together.
@@ -206,10 +206,10 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 3. Ignoring Inflation */}
                         <section id="inflation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#B22234]">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Ignoring Inflation</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Ignoring Inflation</h2>
                             </div>
                             <p>
                                 You've watched grocery prices double. You've seen what happened to gas prices. You're not imagining it—your dollars buy less every year. At 3% inflation, your $600,000 becomes $300,000 in purchasing power over 24 years. At 7-9% like we saw in 2021-2023? Even faster.
@@ -232,7 +232,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">4. Ignoring Sequence of Returns Risk</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. Ignoring Sequence of Returns Risk</h2>
                             </div>
                             <p>
                                 <strong>Sequence of returns risk</strong> is the danger that poor returns early in retirement permanently deplete your portfolio—even if long-term average returns are good.
@@ -251,7 +251,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">5. Underestimating Healthcare Costs</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Underestimating Healthcare Costs</h2>
                             </div>
                             <p>
                                 Fidelity estimates a 65-year-old couple retiring in 2026 needs <strong>$315,000</strong> for healthcare costs in retirement—and that&apos;s not including long-term care.
@@ -265,10 +265,10 @@ export default function RetirementPlanningMistakesPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#000080] text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">You've Built It. Now Protect It.</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">You've Built It. Now Protect It.</h3>
                                 <p className="mb-6 text-gray-200">After 30+ years of work, your 401k isn't just a number—it's your freedom. A Gold IRA protects against the crashes, inflation, and timing risks that destroy retirements.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
@@ -282,7 +282,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Clock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Claiming Social Security Too Early</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">6. Claiming Social Security Too Early</h2>
                             </div>
                             <p>
                                 Here's where it gets complicated for people with physical jobs. The calculators say wait until 70. But if you're a nurse with 35 years on your feet, a trucker with a bad back, or a factory worker whose body is telling you it's time—waiting may not be an option.
@@ -298,10 +298,10 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 7. Fees */}
                         <section id="fees" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-700/50 rounded-lg text-slate-400">
+                                <div className="p-3 bg-slate-700/50 rounded-lg text-slate-500">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">7. Ignoring Investment Fees</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">7. Ignoring Investment Fees</h2>
                             </div>
                             <p>
                                 A 1% annual fee doesn&apos;t sound like much, but over 30 years it can consume 25-30% of your portfolio. Many 401(k) plans and actively managed funds charge 1-2%.
@@ -317,7 +317,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Target className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">8. Using the Wrong Withdrawal Rate</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">8. Using the Wrong Withdrawal Rate</h2>
                             </div>
                             <p>
                                 The traditional &quot;4% rule&quot; said you could withdraw 4% of your portfolio annually. But with longer lifespans and lower expected returns, many experts now recommend 3-3.5%.
@@ -336,7 +336,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">9. Tax Inefficiency</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">9. Tax Inefficiency</h2>
                             </div>
                             <p>
                                 Many retirees have all their savings in traditional 401(k)s/IRAs—meaning every withdrawal is taxed as ordinary income. This limits flexibility and can push you into higher tax brackets.
@@ -358,7 +358,7 @@ export default function RetirementPlanningMistakesPage() {
                                 <div className="p-3 bg-emerald-500/20 rounded-lg text-emerald-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">10. No Written Retirement Plan</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">10. No Written Retirement Plan</h2>
                             </div>
                             <p>
                                 Surprisingly, most Americans don&apos;t have a written retirement plan. They have a vague goal (&quot;retire at 65&quot;) but no specific strategy for getting there or maintaining their lifestyle.
@@ -384,8 +384,8 @@ export default function RetirementPlanningMistakesPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What is the biggest retirement planning mistake?</h4>
                                         <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -393,13 +393,13 @@ export default function RetirementPlanningMistakesPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         The biggest mistake is starting too late. Compound interest needs time—someone starting at 25 can save half as much as someone starting at 35 and end up with more. The second biggest is over-concentration in stocks, leaving retirees vulnerable to crashes.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">How do I avoid running out of money in retirement?</h4>
                                         <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -407,13 +407,13 @@ export default function RetirementPlanningMistakesPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         Use a safe withdrawal rate (3-4% annually), diversify beyond stocks into bonds, gold, and real assets, plan for sequence of returns risk with 2-3 years of cash/bonds, account for inflation, and have a written retirement plan reviewed annually.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What is sequence of returns risk?</h4>
                                         <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -421,7 +421,7 @@ export default function RetirementPlanningMistakesPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-500">
                                         Sequence of returns risk is the danger that poor returns early in retirement permanently deplete your portfolio—even if average returns are good. A 30% crash in year 1 is far more damaging than in year 20 because you&apos;re withdrawing from a depleted base.
                                     </p>
                                 </details>
@@ -429,16 +429,16 @@ export default function RetirementPlanningMistakesPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">You've Done the Hard Part. Don't Blow It Now.</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">You've Done the Hard Part. Don't Blow It Now.</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">30+ years of early mornings and hard work built your nest egg. Diversifying into gold protects it from the crashes that destroy retirements.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#000080] hover:bg-white/10">
                                         <Link href="/learn/sequence-of-returns-risk">Sequence Risk Guide</Link>
                                     </Button>
                                 </div>
@@ -452,7 +452,7 @@ export default function RetirementPlanningMistakesPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-retirement-planning-mistakes" />
                 </Container>

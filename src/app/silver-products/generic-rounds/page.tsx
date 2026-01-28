@@ -110,17 +110,17 @@ const schema = {
 
 export default function GenericRoundsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
@@ -129,10 +129,10 @@ export default function GenericRoundsPage() {
               <Coins className="h-4 w-4" />
               250 MONTHLY SEARCHES - DIFFICULTY 1
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Generic Silver Rounds: Maximum Silver for Your Dollar
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               For pure bullion investors who want the most silver ounces possible, generic
               rounds from private mints offer the lowest premiums available. Same .999 fine
               silver, same weight, just less markup.
@@ -156,29 +156,29 @@ export default function GenericRoundsPage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-800/50">
+      <section className="py-12 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Scale className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">1 oz</div>
-                <div className="text-sm text-slate-400">Standard Size</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Scale className="h-8 w-8 text-slate-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">1 oz</div>
+                <div className="text-sm text-slate-600">Standard Size</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Shield className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">.999</div>
-                <div className="text-sm text-slate-400">Purity</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Shield className="h-8 w-8 text-slate-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">.999</div>
+                <div className="text-sm text-slate-600">Purity</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">$2-4</div>
-                <div className="text-sm text-slate-400">Over Spot</div>
+                <div className="text-2xl font-bold text-slate-900">$2-4</div>
+                <div className="text-sm text-slate-600">Over Spot</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Building2 className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">Private</div>
-                <div className="text-sm text-slate-400">Mint Origin</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Building2 className="h-8 w-8 text-slate-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">Private</div>
+                <div className="text-sm text-slate-600">Mint Origin</div>
               </div>
             </div>
           </div>
@@ -186,25 +186,25 @@ export default function GenericRoundsPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
               {/* What are Generic Rounds */}
-              <div className="not-prose bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-slate-500/20 rounded-lg">
-                    <Coins className="h-6 w-6 text-slate-400" />
+                  <div className="p-2 bg-[#B22234]/10 rounded-lg">
+                    <Coins className="h-6 w-6 text-slate-600" />
                   </div>
-                  <h2 className="text-2xl font-bold text-white m-0">What Are Generic Silver Rounds?</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 m-0">What Are Generic Silver Rounds?</h2>
                 </div>
-                <p className="text-slate-300 mb-4">
+                <p className="text-slate-600 mb-4">
                   Generic silver rounds are 1 oz .999 fine silver bullion pieces produced by private mints
                   rather than government mints. They&apos;re called &quot;rounds&quot; instead of &quot;coins&quot; because they
                   have no face value or legal tender status—they&apos;re purely bullion.
                 </p>
-                <p className="text-slate-300">
+                <p className="text-slate-600">
                   The most common design is the Buffalo (based on the classic US nickel), but private mints
                   produce hundreds of designs. What they all share: 1 oz of .999 fine silver at the lowest
                   possible premium over spot price.
@@ -221,38 +221,38 @@ export default function GenericRoundsPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                  <thead className="bg-slate-800/50">
+                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <thead className="bg-slate-50">
                     <tr>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Product</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Premium Over Spot</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Cost at $25 Spot</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">oz per $1,000</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Premium Over Spot</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Cost at $25 Spot</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">oz per $1,000</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/10 text-sm">
+                  <tbody className="divide-y divide-slate-200 text-sm">
                     <tr className="bg-green-500/10">
-                      <td className="p-4 font-semibold text-white">Generic Buffalo Round</td>
+                      <td className="p-4 font-semibold text-slate-900">Generic Buffalo Round</td>
                       <td className="p-4 text-green-400 font-bold">$2-3 (8-12%)</td>
-                      <td className="p-4 text-slate-300">$27-28</td>
+                      <td className="p-4 text-slate-600">$27-28</td>
                       <td className="p-4 text-green-400 font-bold">35-37 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Sunshine Mint Round</td>
-                      <td className="p-4 text-slate-300">$3-4 (12-16%)</td>
-                      <td className="p-4 text-slate-300">$28-29</td>
-                      <td className="p-4 text-slate-300">34-36 oz</td>
+                      <td className="p-4 font-semibold text-slate-900">Sunshine Mint Round</td>
+                      <td className="p-4 text-slate-600">$3-4 (12-16%)</td>
+                      <td className="p-4 text-slate-600">$28-29</td>
+                      <td className="p-4 text-slate-600">34-36 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Canadian Maple Leaf</td>
-                      <td className="p-4 text-slate-300">$4-5 (16-20%)</td>
-                      <td className="p-4 text-slate-300">$29-30</td>
-                      <td className="p-4 text-slate-300">33-34 oz</td>
+                      <td className="p-4 font-semibold text-slate-900">Canadian Maple Leaf</td>
+                      <td className="p-4 text-slate-600">$4-5 (16-20%)</td>
+                      <td className="p-4 text-slate-600">$29-30</td>
+                      <td className="p-4 text-slate-600">33-34 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">American Silver Eagle</td>
-                      <td className="p-4 text-amber-400">$6-8 (24-32%)</td>
-                      <td className="p-4 text-slate-300">$31-33</td>
+                      <td className="p-4 font-semibold text-slate-900">American Silver Eagle</td>
+                      <td className="p-4 text-[#B22234]">$6-8 (24-32%)</td>
+                      <td className="p-4 text-slate-600">$31-33</td>
                       <td className="p-4 text-red-400">30-32 oz</td>
                     </tr>
                   </tbody>
@@ -264,7 +264,7 @@ export default function GenericRoundsPage() {
                   <TrendingDown className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-green-400 mb-2">The Stacker&apos;s Advantage</h4>
-                    <p className="text-slate-300">
+                    <p className="text-slate-600">
                       With $10,000 to invest: Generic rounds get you ~357 oz of silver. American Silver
                       Eagles get you ~303 oz. That&apos;s <strong>54 more ounces</strong> for the same money.
                       Over years of stacking, choosing generics can mean thousands of extra ounces.
@@ -274,7 +274,7 @@ export default function GenericRoundsPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Award className="h-6 w-6 text-amber-400" />
+                <Award className="h-6 w-6 text-[#B22234]" />
                 Popular Private Mints
               </h2>
 
@@ -284,44 +284,44 @@ export default function GenericRoundsPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                  <thead className="bg-slate-800/50">
+                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <thead className="bg-slate-50">
                     <tr>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Mint</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Location</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Notable Features</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Premium Level</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Mint</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Location</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Notable Features</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Premium Level</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/10 text-sm">
+                  <tbody className="divide-y divide-slate-200 text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-white">Sunshine Mint</td>
-                      <td className="p-4 text-slate-300">Idaho, USA</td>
-                      <td className="p-4 text-slate-300">MintMark SI security, US Mint contractor</td>
-                      <td className="p-4 text-slate-300">Mid-range</td>
+                      <td className="p-4 font-semibold text-slate-900">Sunshine Mint</td>
+                      <td className="p-4 text-slate-600">Idaho, USA</td>
+                      <td className="p-4 text-slate-600">MintMark SI security, US Mint contractor</td>
+                      <td className="p-4 text-slate-600">Mid-range</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">SilverTowne</td>
-                      <td className="p-4 text-slate-300">Indiana, USA</td>
-                      <td className="p-4 text-slate-300">Family-owned since 1949, wide selection</td>
+                      <td className="p-4 font-semibold text-slate-900">SilverTowne</td>
+                      <td className="p-4 text-slate-600">Indiana, USA</td>
+                      <td className="p-4 text-slate-600">Family-owned since 1949, wide selection</td>
                       <td className="p-4 text-green-400">Low</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Asahi Refining</td>
-                      <td className="p-4 text-slate-300">Utah, USA (formerly JM)</td>
-                      <td className="p-4 text-slate-300">Acquired Johnson Matthey, quality reputation</td>
-                      <td className="p-4 text-slate-300">Mid-range</td>
+                      <td className="p-4 font-semibold text-slate-900">Asahi Refining</td>
+                      <td className="p-4 text-slate-600">Utah, USA (formerly JM)</td>
+                      <td className="p-4 text-slate-600">Acquired Johnson Matthey, quality reputation</td>
+                      <td className="p-4 text-slate-600">Mid-range</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Highland Mint</td>
-                      <td className="p-4 text-slate-300">Florida, USA</td>
-                      <td className="p-4 text-slate-300">Licensed sports/entertainment designs</td>
-                      <td className="p-4 text-slate-300">Varies</td>
+                      <td className="p-4 font-semibold text-slate-900">Highland Mint</td>
+                      <td className="p-4 text-slate-600">Florida, USA</td>
+                      <td className="p-4 text-slate-600">Licensed sports/entertainment designs</td>
+                      <td className="p-4 text-slate-600">Varies</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Elemetal (OPM)</td>
-                      <td className="p-4 text-slate-300">Texas, USA</td>
-                      <td className="p-4 text-slate-300">Major refiner, Buffalo rounds</td>
+                      <td className="p-4 font-semibold text-slate-900">Elemetal (OPM)</td>
+                      <td className="p-4 text-slate-600">Texas, USA</td>
+                      <td className="p-4 text-slate-600">Major refiner, Buffalo rounds</td>
                       <td className="p-4 text-green-400">Lowest</td>
                     </tr>
                   </tbody>
@@ -329,7 +329,7 @@ export default function GenericRoundsPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Coins className="h-6 w-6 text-slate-400" />
+                <Coins className="h-6 w-6 text-slate-600" />
                 Most Popular Generic Designs
               </h2>
 
@@ -339,56 +339,56 @@ export default function GenericRoundsPage() {
               </p>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">Most Recognizable</h3>
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">Most Recognizable</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Buffalo:</strong> Based on Type 1 Buffalo nickel, most common</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Walking Liberty:</strong> Based on classic half dollar</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Eagle Design:</strong> Similar to Silver Eagle (not official)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Morgan Dollar:</strong> Based on classic silver dollar</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">Collector/Specialty</h3>
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">Collector/Specialty</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-300">
-                      <CheckCircle className="h-5 w-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-slate-600">
+                      <CheckCircle className="h-5 w-5 text-slate-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Holiday Designs:</strong> Christmas, seasonal themes</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
-                      <CheckCircle className="h-5 w-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-slate-600">
+                      <CheckCircle className="h-5 w-5 text-slate-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Sports/Entertainment:</strong> Licensed team logos</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
-                      <CheckCircle className="h-5 w-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-slate-600">
+                      <CheckCircle className="h-5 w-5 text-slate-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Patriotic:</strong> Flags, eagles, military themes</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
-                      <CheckCircle className="h-5 w-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-slate-600">
+                      <CheckCircle className="h-5 w-5 text-slate-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Zodiac/Artistic:</strong> Higher premium collectibles</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <div className="not-prose bg-amber-500/10 border border-amber-500/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
-                  <Info className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-lg font-bold text-amber-400 mb-2">Stick to Classic Designs</h4>
-                    <p className="text-slate-300">
+                    <h4 className="text-lg font-bold text-[#B22234] mb-2">Stick to Classic Designs</h4>
+                    <p className="text-slate-600">
                       For pure stacking purposes, Buffalo and Walking Liberty designs offer the best
                       combination of low premiums and high recognizability. Specialty designs often
                       carry higher premiums that you won&apos;t recoup on resale. Save the fancy designs
@@ -399,56 +399,56 @@ export default function GenericRoundsPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-400" />
+                <Scale className="h-6 w-6 text-slate-600" />
                 Generic Rounds: Pros and Cons
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                   <h3 className="text-lg font-bold text-green-400 mb-4">Advantages</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Lowest premiums over spot price</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Maximum silver per dollar invested</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Many options are IRA-eligible</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Wide availability from all dealers</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Easy to stack in quantity</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                   <h3 className="text-lg font-bold text-red-400 mb-4">Disadvantages</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>No government backing or face value</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Lower resale premium than sovereigns</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Some dealers pay less for generics</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>No collector/numismatic value</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-300">
+                    <li className="flex items-start gap-3 text-slate-600">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Less recognized internationally</span>
                     </li>
@@ -481,7 +481,7 @@ export default function GenericRoundsPage() {
                   <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-green-400 mb-2">IRA Eligibility Note</h4>
-                    <p className="text-slate-300">
+                    <p className="text-slate-600">
                       For Precious Metals IRAs, generic rounds from accredited mints like Sunshine Mint,
                       SilverTowne, and Asahi are eligible. Verify specific products with your IRA custodian.
                       Generics offer excellent IRA value because you&apos;re not paying for collector premiums
@@ -497,25 +497,25 @@ export default function GenericRoundsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -526,33 +526,33 @@ export default function GenericRoundsPage() {
       </section>
 
       {/* Related Products */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Related Silver Products
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
                 href="/silver-products/sunshine-mint"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
               >
-                <h3 className="text-lg font-bold text-white group-hover:text-slate-300 mb-2">Sunshine Mint</h3>
-                <p className="text-sm text-slate-400">Generic rounds with security features</p>
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Sunshine Mint</h3>
+                <p className="text-sm text-slate-600">Generic rounds with security features</p>
               </Link>
               <Link
                 href="/silver-products/monster-box"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
               >
-                <h3 className="text-lg font-bold text-white group-hover:text-slate-300 mb-2">Monster Box</h3>
-                <p className="text-sm text-slate-400">Bulk sovereign coins at lower premiums</p>
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Monster Box</h3>
+                <p className="text-sm text-slate-600">Bulk sovereign coins at lower premiums</p>
               </Link>
               <Link
                 href="/silver-products/fractional"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
               >
-                <h3 className="text-lg font-bold text-white group-hover:text-slate-300 mb-2">Fractional Silver</h3>
-                <p className="text-sm text-slate-400">Smaller sizes for divisibility</p>
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Fractional Silver</h3>
+                <p className="text-sm text-slate-600">Smaller sizes for divisibility</p>
               </Link>
             </div>
           </div>
@@ -560,7 +560,7 @@ export default function GenericRoundsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA
             variant="footer"

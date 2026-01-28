@@ -32,19 +32,19 @@ const schema = {
 
 export default function AuthorPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
 
             <Container className="pt-12 pb-24">
-                <Link href="/about-us" className="inline-flex items-center text-sm text-slate-400 hover:text-white mb-8 transition-colors">
+                <Link href="/about-us" className="inline-flex items-center text-sm text-slate-500 hover:text-[#B22234] mb-8 transition-colors">
                     <ArrowLeft className="w-4 h-4 mr-2" /> Back to About Us
                 </Link>
 
-                <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/10">
+                <div className="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-200">
                     <div className="flex flex-col md:flex-row gap-12 items-start">
                         {/* Profile Image Column */}
                         <div className="w-full md:w-1/3 flex flex-col items-center text-center">
-                            <div className="w-64 h-64 rounded-full border-8 border-slate-800 mb-8 shadow-xl relative overflow-hidden">
+                            <div className="w-64 h-64 rounded-full border-8 border-white mb-8 shadow-xl relative overflow-hidden">
                                 <Image
                                     src="/images/thomas-richardson.png"
                                     alt="Thomas Richardson"
@@ -52,38 +52,38 @@ export default function AuthorPage() {
                                     className="object-cover"
                                 />
                             </div>
-                            <h1 className="text-3xl font-serif font-bold text-white mb-2">Thomas Richardson</h1>
-                            <p className="text-amber-400 font-medium tracking-wide text-sm uppercase mb-6">Founder & Lead Analyst</p>
+                            <h1 className="text-3xl font-serif font-bold text-[#000080] mb-2">Thomas Richardson</h1>
+                            <p className="text-[#B22234] font-medium tracking-wide text-sm uppercase mb-6">Founder & Lead Analyst</p>
 
                             <div className="flex gap-4 mb-8">
-                                <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-blue-500/20 hover:text-blue-400 transition-colors text-slate-400">
+                                <a href="#" className="p-3 bg-slate-100 rounded-full hover:bg-blue-100 hover:text-blue-600 transition-colors text-slate-500">
                                     <Linkedin className="w-5 h-5" />
                                 </a>
-                                <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-blue-500/20 hover:text-blue-400 transition-colors text-slate-400">
+                                <a href="#" className="p-3 bg-slate-100 rounded-full hover:bg-blue-100 hover:text-blue-600 transition-colors text-slate-500">
                                     <Twitter className="w-5 h-5" />
                                 </a>
                             </div>
 
-                            <div className="w-full bg-white/5 backdrop-blur-sm rounded-xl p-6 text-left space-y-4 border border-white/10">
+                            <div className="w-full bg-white rounded-xl p-6 text-left space-y-4 border border-slate-200">
                                 <div className="flex items-start gap-3">
-                                    <Award className="w-5 h-5 text-amber-400 shrink-0 mt-1" />
+                                    <Award className="w-5 h-5 text-[#B22234] shrink-0 mt-1" />
                                     <div>
-                                        <p className="font-bold text-sm text-white">20+ Years Experience</p>
-                                        <p className="text-xs text-slate-400">Former Wealth Manager</p>
+                                        <p className="font-bold text-sm text-slate-900">20+ Years Experience</p>
+                                        <p className="text-xs text-slate-500">Former Wealth Manager</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0 mt-1" />
+                                    <ShieldCheck className="w-5 h-5 text-[#B22234] shrink-0 mt-1" />
                                     <div>
-                                        <p className="font-bold text-sm text-white">Fiduciary Standard</p>
-                                        <p className="text-xs text-slate-400">Always putting readers first</p>
+                                        <p className="font-bold text-sm text-slate-900">Fiduciary Standard</p>
+                                        <p className="text-xs text-slate-500">Always putting readers first</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Content Column */}
-                        <div className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                        <div className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
                             <h2 className="mt-0">My Philosophy: "If You Can't Touch It, You Don't Own It"</h2>
                             <p className="lead">
                                 I spent two decades in the corporate financial world. I saw how the sausage was made—high fees, complex derivatives, and "paper assets" that vanished when markets crashed.
@@ -110,18 +110,18 @@ export default function AuthorPage() {
                                 <li><strong>Unbiased Reviews:</strong> If a company has a bad reputation, we say so.</li>
                             </ul>
 
-                            <div className="not-prose mt-12 pt-12 border-t border-white/10">
-                                <h3 className="font-serif font-bold text-2xl text-white mb-6">Popular Articles by Thomas</h3>
+                            <div className="not-prose mt-12 pt-12 border-t border-slate-200">
+                                <h3 className="font-serif font-bold text-2xl text-[#000080] mb-6">Popular Articles by Thomas</h3>
                                 <div className="grid md:grid-cols-2 gap-6">
-                                    <Link href="/guide/gold-ira-guide" className="group block bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all border border-white/10 hover:border-white/20">
-                                        <BookOpen className="w-6 h-6 text-amber-400 mb-3 group-hover:scale-110 transition-transform" />
-                                        <h4 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Gold IRA Guide 2026</h4>
-                                        <p className="text-sm text-slate-400">The ultimate beginner's handbook to precious metals IRAs.</p>
+                                    <Link href="/guide/gold-ira-guide" className="group block bg-white rounded-xl p-6 hover:bg-slate-50 transition-all border border-slate-200 hover:border-[#B22234]">
+                                        <BookOpen className="w-6 h-6 text-[#B22234] mb-3 group-hover:scale-110 transition-transform" />
+                                        <h4 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Gold IRA Guide 2026</h4>
+                                        <p className="text-sm text-slate-500">The ultimate beginner's handbook to precious metals IRAs.</p>
                                     </Link>
-                                    <Link href="/guide/401k-to-gold-rollover" className="group block bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all border border-white/10 hover:border-white/20">
-                                        <BookOpen className="w-6 h-6 text-amber-400 mb-3 group-hover:scale-110 transition-transform" />
-                                        <h4 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">401k Rollover Rules</h4>
-                                        <p className="text-sm text-slate-400">How to move your funds without paying taxes or penalties.</p>
+                                    <Link href="/guide/401k-to-gold-rollover" className="group block bg-white rounded-xl p-6 hover:bg-slate-50 transition-all border border-slate-200 hover:border-[#B22234]">
+                                        <BookOpen className="w-6 h-6 text-[#B22234] mb-3 group-hover:scale-110 transition-transform" />
+                                        <h4 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">401k Rollover Rules</h4>
+                                        <p className="text-sm text-slate-500">How to move your funds without paying taxes or penalties.</p>
                                     </Link>
                                 </div>
                             </div>

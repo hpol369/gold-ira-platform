@@ -62,28 +62,28 @@ export default function GlossaryPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Book className="h-4 w-4" />
               REFERENCE
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#000080] mb-6">
               Gold IRA Glossary
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
               {glossaryTerms.length}+ terms explained in plain English. Understand
               every aspect of Gold IRA investing.
             </p>
 
             {/* Search Bar */}
             <div className="max-w-xl mx-auto relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
               <input
                 type="text"
                 value={searchQuery}
@@ -93,7 +93,7 @@ export default function GlossaryPage() {
                   setSelectedCategory(null);
                 }}
                 placeholder="Search terms..."
-                className="w-full pl-12 pr-4 py-4 bg-slate-800 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-amber-500"
+                className="w-full pl-12 pr-4 py-4 bg-white border border-slate-200 rounded-xl text-[#000080] placeholder-slate-400 focus:outline-none focus:border-[#B22234]"
               />
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function GlossaryPage() {
       </section>
 
       {/* Alphabet Navigation */}
-      <section className="py-4 bg-slate-900 border-b border-white/5 sticky top-0 z-10">
+      <section className="py-4 bg-white border-b border-slate-200 sticky top-0 z-10">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-wrap justify-center gap-1">
@@ -109,8 +109,8 @@ export default function GlossaryPage() {
                 onClick={clearFilters}
                 className={`px-3 py-1.5 rounded text-sm font-medium transition-all ${
                   !selectedLetter && !selectedCategory && !searchQuery
-                    ? "bg-amber-500 text-slate-900"
-                    : "bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white"
+                    ? "bg-[#B22234] text-white"
+                    : "bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-[#000080]"
                 }`}
               >
                 All
@@ -131,10 +131,10 @@ export default function GlossaryPage() {
                     disabled={!isAvailable}
                     className={`w-8 h-8 rounded text-sm font-medium transition-all ${
                       isSelected
-                        ? "bg-amber-500 text-slate-900"
+                        ? "bg-[#B22234] text-white"
                         : isAvailable
-                        ? "bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white"
-                        : "bg-transparent text-slate-700 cursor-not-allowed"
+                        ? "bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-[#000080]"
+                        : "bg-transparent text-slate-300 cursor-not-allowed"
                     }`}
                   >
                     {letter}
@@ -147,7 +147,7 @@ export default function GlossaryPage() {
       </section>
 
       {/* Category Pills */}
-      <section className="py-4 bg-slate-900 border-b border-white/5">
+      <section className="py-4 bg-white border-b border-slate-200">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-wrap justify-center gap-2">
@@ -165,8 +165,8 @@ export default function GlossaryPage() {
                     }}
                     className={`px-3 py-1.5 rounded-full text-sm transition-all ${
                       selectedCategory === category.id
-                        ? "bg-amber-500 text-slate-900"
-                        : "bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white"
+                        ? "bg-[#B22234] text-white"
+                        : "bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-[#000080]"
                     }`}
                   >
                     {category.name} ({count})
@@ -179,11 +179,11 @@ export default function GlossaryPage() {
       </section>
 
       {/* Terms List */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
             {searchQuery && (
-              <p className="text-slate-400 mb-6">
+              <p className="text-slate-500 mb-6">
                 Found {filteredTerms.length} result
                 {filteredTerms.length !== 1 ? "s" : ""} for &quot;{searchQuery}&quot;
               </p>
@@ -191,7 +191,7 @@ export default function GlossaryPage() {
 
             {selectedCategory && (
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-white mb-2">
+                <h2 className="text-2xl font-bold text-[#000080] mb-2">
                   {glossaryCategories.find((c) => c.id === selectedCategory)?.name}
                 </h2>
               </div>
@@ -203,7 +203,7 @@ export default function GlossaryPage() {
                   .sort(([a], [b]) => a.localeCompare(b))
                   .map(([letter, terms]) => (
                     <div key={letter} id={`letter-${letter}`}>
-                      <h2 className="text-3xl font-bold text-amber-400 mb-6 sticky top-20 bg-slate-900 py-2">
+                      <h2 className="text-3xl font-bold text-[#B22234] mb-6 sticky top-20 bg-white py-2">
                         {letter}
                       </h2>
                       <div className="space-y-4">
@@ -213,17 +213,17 @@ export default function GlossaryPage() {
                             <div
                               key={term.slug}
                               id={term.slug}
-                              className="bg-white/5 border border-white/10 rounded-xl p-5 scroll-mt-32"
+                              className="bg-slate-50 border border-slate-200 rounded-xl p-5 scroll-mt-32"
                             >
-                              <h3 className="text-lg font-bold text-white mb-2">
+                              <h3 className="text-lg font-bold text-[#000080] mb-2">
                                 {term.term}
                               </h3>
-                              <p className="text-slate-400 leading-relaxed mb-3">
+                              <p className="text-slate-500 leading-relaxed mb-3">
                                 {term.definition}
                               </p>
                               {term.relatedTerms && term.relatedTerms.length > 0 && (
                                 <div className="flex flex-wrap gap-2">
-                                  <span className="text-slate-500 text-sm">
+                                  <span className="text-slate-400 text-sm">
                                     Related:
                                   </span>
                                   {term.relatedTerms.map((related) => {
@@ -236,14 +236,14 @@ export default function GlossaryPage() {
                                       <a
                                         key={related}
                                         href={`#${relatedTerm.slug}`}
-                                        className="text-amber-400 text-sm hover:underline"
+                                        className="text-[#B22234] text-sm hover:underline"
                                       >
                                         {related}
                                       </a>
                                     ) : (
                                       <span
                                         key={related}
-                                        className="text-slate-500 text-sm"
+                                        className="text-slate-400 text-sm"
                                       >
                                         {related}
                                       </span>
@@ -259,12 +259,12 @@ export default function GlossaryPage() {
               </div>
             ) : (
               <div className="text-center py-12">
-                <Book className="h-12 w-12 text-slate-600 mx-auto mb-4" />
-                <p className="text-slate-400">
+                <Book className="h-12 w-12 text-slate-300 mx-auto mb-4" />
+                <p className="text-slate-500">
                   No terms found. Try a different search or{" "}
                   <button
                     onClick={clearFilters}
-                    className="text-amber-400 hover:underline"
+                    className="text-[#B22234] hover:underline"
                   >
                     browse all terms
                   </button>
@@ -277,7 +277,7 @@ export default function GlossaryPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -289,30 +289,30 @@ export default function GlossaryPage() {
       </section>
 
       {/* Related Resources */}
-      <section className="py-12 bg-slate-900">
+      <section className="py-12 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-lg font-semibold text-slate-400 text-center mb-6">
+            <h3 className="text-lg font-semibold text-slate-500 text-center mb-6">
               Continue Learning
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
                 href="/academy"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-slate-400 text-sm hover:bg-white/10 hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 border border-slate-200 rounded-full text-slate-500 text-sm hover:bg-slate-200 hover:text-[#000080] transition-all"
               >
                 Gold IRA Academy
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/faq"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-slate-400 text-sm hover:bg-white/10 hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 border border-slate-200 rounded-full text-slate-500 text-sm hover:bg-slate-200 hover:text-[#000080] transition-all"
               >
                 FAQ Hub
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/what-is-a-gold-ira"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-slate-400 text-sm hover:bg-white/10 hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 border border-slate-200 rounded-full text-slate-500 text-sm hover:bg-slate-200 hover:text-[#000080] transition-all"
               >
                 What is a Gold IRA?
                 <ArrowRight className="h-4 w-4" />

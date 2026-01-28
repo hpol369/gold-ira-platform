@@ -92,25 +92,25 @@ const schema = {
 
 export default function WhySilverIsCheapPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <Link href="/silver-price" className="text-gray-400 hover:text-gray-300 text-sm font-medium mb-4 inline-flex items-center gap-2">
+                        <Link href="/silver-price" className="text-gray-400 hover:text-slate-600 text-sm font-medium mb-4 inline-flex items-center gap-2">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="bg-green-500/20 text-green-400 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
-                            <span className="text-slate-500 text-sm">250 monthly searches | Easy to rank</span>
+                            <span className="text-slate-600 text-sm">250 monthly searches | Easy to rank</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Why Is Silver So Cheap? Here&apos;s What the Banks Don&apos;t Want You to Know
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
-                            Silver is in its 6th year of supply deficit. Industrial demand is exploding. Yet the price barely moves. Something doesn&apos;t add up—unless you understand <strong className="text-white">how the game is rigged</strong>.
+                        <p className="text-xl text-slate-600 leading-relaxed">
+                            Silver is in its 6th year of supply deficit. Industrial demand is exploding. Yet the price barely moves. Something doesn&apos;t add up—unless you understand <strong className="text-slate-900">how the game is rigged</strong>.
                         </p>
                     </div>
                 </Container>
@@ -118,7 +118,7 @@ export default function WhySilverIsCheapPage() {
 
             <Container className="py-12">
                 <div className="max-w-4xl mx-auto">
-                    <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -143,10 +143,10 @@ export default function WhySilverIsCheapPage() {
                         {/* Reason 1: Gold/Silver Ratio */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Reason #1: The Gold/Silver Ratio Is at Extremes</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #1: The Gold/Silver Ratio Is at Extremes</h2>
                             </div>
                             <p>
                                 The <strong>gold/silver ratio</strong> tells you how many ounces of silver it takes to buy one ounce of gold. It&apos;s currently around 80:1. That means gold is 80 times more expensive than silver, ounce for ounce.
@@ -156,53 +156,53 @@ export default function WhySilverIsCheapPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 font-bold text-white border-b border-white/10">Period</th>
-                                            <th className="p-4 font-bold text-white border-b border-white/10">Gold/Silver Ratio</th>
-                                            <th className="p-4 font-bold text-white border-b border-white/10">Notes</th>
+                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Period</th>
+                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Gold/Silver Ratio</th>
+                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Notes</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm">
+                                    <tbody className="divide-y divide-slate-200 text-sm">
                                         {goldSilverRatios.map((item, idx) => (
-                                            <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-800/30' : ''}>
-                                                <td className="p-4 text-white font-medium">{item.period}</td>
+                                            <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
+                                                <td className="p-4 text-slate-900 font-medium">{item.period}</td>
                                                 <td className={`p-4 font-bold ${
                                                     item.ratio === '80:1' ? 'text-red-400' :
                                                     item.ratio === '125:1' ? 'text-red-400' :
                                                     parseInt(item.ratio) <= 20 ? 'text-green-400' :
-                                                    'text-amber-400'
+                                                    'text-[#B22234]'
                                                 }`}>{item.ratio}</td>
-                                                <td className="p-4 text-slate-400">{item.notes}</td>
+                                                <td className="p-4 text-slate-600">{item.notes}</td>
                                             </tr>
                                         ))}
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">What Should Silver Be Worth?</h4>
-                                <p className="text-slate-400 text-sm mb-4">With gold at $2,600/oz, here&apos;s what silver would cost at different ratios:</p>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">What Should Silver Be Worth?</h4>
+                                <p className="text-slate-600 text-sm mb-4">With gold at $2,600/oz, here&apos;s what silver would cost at different ratios:</p>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                    <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-                                        <div className="text-sm text-slate-500 mb-1">Current (80:1)</div>
+                                    <div className="text-center p-4 bg-slate-50 rounded-lg">
+                                        <div className="text-sm text-slate-600 mb-1">Current (80:1)</div>
                                         <div className="text-xl font-bold text-red-400">$32.50</div>
                                     </div>
-                                    <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-                                        <div className="text-sm text-slate-500 mb-1">At 40:1</div>
-                                        <div className="text-xl font-bold text-amber-400">$65</div>
+                                    <div className="text-center p-4 bg-slate-50 rounded-lg">
+                                        <div className="text-sm text-slate-600 mb-1">At 40:1</div>
+                                        <div className="text-xl font-bold text-[#B22234]">$65</div>
                                     </div>
-                                    <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-                                        <div className="text-sm text-slate-500 mb-1">Historical 15:1</div>
+                                    <div className="text-center p-4 bg-slate-50 rounded-lg">
+                                        <div className="text-sm text-slate-600 mb-1">Historical 15:1</div>
                                         <div className="text-xl font-bold text-green-400">$173</div>
                                     </div>
-                                    <div className="text-center p-4 bg-slate-800/50 rounded-lg">
-                                        <div className="text-sm text-slate-500 mb-1">Geological 17:1</div>
+                                    <div className="text-center p-4 bg-slate-50 rounded-lg">
+                                        <div className="text-sm text-slate-600 mb-1">Geological 17:1</div>
                                         <div className="text-xl font-bold text-green-400">$153</div>
                                     </div>
                                 </div>
-                                <p className="text-xs text-slate-500 mt-4">Silver in the Earth&apos;s crust exists at roughly 17:1 to gold. For thousands of years, this informed monetary ratios.</p>
+                                <p className="text-xs text-slate-600 mt-4">Silver in the Earth&apos;s crust exists at roughly 17:1 to gold. For thousands of years, this informed monetary ratios.</p>
                             </div>
 
                             <p>
@@ -216,7 +216,7 @@ export default function WhySilverIsCheapPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Reason #2: Bank Manipulation (Yes, It&apos;s Real)</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #2: Bank Manipulation (Yes, It&apos;s Real)</h2>
                             </div>
                             <p>
                                 This isn&apos;t conspiracy theory. This is <strong>documented fact</strong>. Banks have been caught and fined billions for manipulating precious metals prices.
@@ -268,7 +268,7 @@ export default function WhySilverIsCheapPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Factory className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Reason #3: Industrial Users Want Low Prices</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #3: Industrial Users Want Low Prices</h2>
                             </div>
                             <p>
                                 Unlike gold (which is primarily monetary), silver is an <strong>industrial metal</strong>. About 50% of silver demand comes from industrial uses—electronics, solar panels, EVs, medical devices.
@@ -292,7 +292,7 @@ export default function WhySilverIsCheapPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Reason #4: Central Banks Don&apos;t Buy Silver</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #4: Central Banks Don&apos;t Buy Silver</h2>
                             </div>
                             <p>
                                 Central banks have been buying gold at record rates—over 1,000 tonnes per year recently. This buying puts a floor under gold prices and signals that even the money printers don&apos;t trust their own currencies.
@@ -313,10 +313,10 @@ export default function WhySilverIsCheapPage() {
                         {/* Reason 5: Paper Market Dominance */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Reason #5: Paper Trading Dominates Physical</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #5: Paper Trading Dominates Physical</h2>
                             </div>
                             <p>
                                 The silver price you see quoted is the <strong>paper price</strong>—set on COMEX and other futures exchanges. Physical silver transactions are priced off this benchmark.
@@ -325,29 +325,29 @@ export default function WhySilverIsCheapPage() {
                                 The problem? Paper silver trades at an estimated <strong>300:1 ratio</strong> to actual physical silver. For every ounce of real metal, there are 300+ ounces of paper claims.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Paper vs Physical Silver</h4>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Paper vs Physical Silver</h4>
                                 <div className="space-y-4">
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">COMEX Registered Silver</span>
-                                            <span className="text-white font-bold">~30M oz</span>
+                                            <span className="text-slate-600">COMEX Registered Silver</span>
+                                            <span className="text-slate-900 font-bold">~30M oz</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-gray-500 h-3 rounded-full" style={{ width: '5%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Open Interest (Paper Claims)</span>
-                                            <span className="text-white font-bold">~800M oz equivalent</span>
+                                            <span className="text-slate-600">Open Interest (Paper Claims)</span>
+                                            <span className="text-slate-900 font-bold">~800M oz equivalent</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-red-500 h-3 rounded-full" style={{ width: '100%' }}></div>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-400 mt-4">If even 10% of paper holders demanded delivery, the COMEX would default. This is why prices can be suppressed—most paper never converts to physical.</p>
+                                <p className="text-sm text-slate-600 mt-4">If even 10% of paper holders demanded delivery, the COMEX would default. This is why prices can be suppressed—most paper never converts to physical.</p>
                             </div>
 
                             <p>
@@ -356,12 +356,12 @@ export default function WhySilverIsCheapPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-gray-400/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Understand the Game. Position Yourself.</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Understand the Game. Position Yourself.</h3>
                                 <p className="mb-6 text-gray-200">Silver is cheap because of manipulation, not fundamentals. When the dam breaks, you&apos;ll want to already be positioned.</p>
-                                <Button variant="gold" size="lg" asChild>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                     <Link href="/quiz">Find Your Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -377,19 +377,19 @@ export default function WhySilverIsCheapPage() {
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-400 mb-3">Physical Demand Overwhelms Paper</h4>
-                                    <p className="text-sm text-slate-300">If enough investors demand physical delivery, the paper market breaks. India&apos;s 2024 import surge and retail stacking are moving in this direction.</p>
+                                    <p className="text-sm text-slate-600">If enough investors demand physical delivery, the paper market breaks. India&apos;s 2024 import surge and retail stacking are moving in this direction.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-400 mb-3">Industrial Supply Crunch</h4>
-                                    <p className="text-sm text-slate-300">If solar manufacturers can&apos;t get enough silver, they&apos;ll bid prices up regardless of paper market shenanigans. Physical scarcity trumps paper.</p>
+                                    <p className="text-sm text-slate-600">If solar manufacturers can&apos;t get enough silver, they&apos;ll bid prices up regardless of paper market shenanigans. Physical scarcity trumps paper.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-400 mb-3">Monetary Crisis</h4>
-                                    <p className="text-sm text-slate-300">A dollar crisis, debt default, or banking emergency could trigger a rush to hard assets that overwhelms the paper short sellers.</p>
+                                    <p className="text-sm text-slate-600">A dollar crisis, debt default, or banking emergency could trigger a rush to hard assets that overwhelms the paper short sellers.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-400 mb-3">Short Squeeze</h4>
-                                    <p className="text-sm text-slate-300">The massive concentrated short position is a coiled spring. If prices rise fast enough, shorts will be forced to cover, accelerating the move.</p>
+                                    <p className="text-sm text-slate-600">The massive concentrated short position is a coiled spring. If prices rise fast enough, shorts will be forced to cover, accelerating the move.</p>
                                 </div>
                             </div>
 
@@ -403,58 +403,58 @@ export default function WhySilverIsCheapPage() {
                             <h2>Why Is Silver Cheap: FAQ</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Why is silver so cheap compared to gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Silver is cheap relative to gold due to: 1) Massive short positions by large banks on COMEX that cap price rallies, 2) Industrial users wanting low prices for their products, 3) No central bank buying (unlike gold), 4) A 300:1 paper-to-physical trading ratio that allows prices to be set by paper speculation rather than physical supply/demand. The gold/silver ratio at 80:1 vs the historical 15:1 suggests severe undervaluation.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is the silver market really manipulated?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Yes, this is documented fact. JPMorgan paid $920 million in 2020 for manipulating precious metals markets through &quot;spoofing.&quot; Deutsche Bank settled manipulation lawsuits and provided evidence against other banks. CFTC data shows concentrated short positions by a few large traders. The London Fix was overhauled after collusion was discovered. Multiple banks have been fined for precious metals manipulation.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What should the silver price be based on fundamentals?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Based on different metrics: At the historical gold/silver ratio of 15:1 (with gold at $2,600), silver would be $173/oz. At the geological ratio of 17:1, silver would be $153. Even a modest return to 40:1 would put silver at $65. Adjusted for inflation since 1980, silver would need to be over $180 to match its all-time high. Current prices around $30-35 appear extremely undervalued by historical standards.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Will silver manipulation end?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Manipulation typically ends when physical demand overwhelms paper supply. Potential triggers include: a physical delivery crisis (too many holders demanding real metal), industrial supply shortages forcing manufacturers to bid up prices, a monetary crisis driving safe-haven buying, or a short squeeze as concentrated shorts are forced to cover. Many analysts believe current physical tightness (COMEX inventory drawdowns) suggests we&apos;re approaching this inflection point.
                                     </p>
                                 </details>
@@ -462,16 +462,16 @@ export default function WhySilverIsCheapPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-gray-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">The Opportunity of a Generation?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">The Opportunity of a Generation?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">Silver is cheap because of manipulation, not because it should be. When the manipulation ends, early investors could see extraordinary gains.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                         <Link href="/quiz">Find the Right Company <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/silver-price/will-silver-hit-100">When Will Silver Hit $100?</Link>
                                     </Button>
                                 </div>
@@ -485,7 +485,7 @@ export default function WhySilverIsCheapPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="why-silver-is-cheap" />
                 </Container>

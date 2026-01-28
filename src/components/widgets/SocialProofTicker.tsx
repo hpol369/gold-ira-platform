@@ -1,5 +1,5 @@
 // src/components/widgets/SocialProofTicker.tsx
-// Subtle social proof notification that shows recent activity
+// Subtle social proof notification with Patriot Light Theme
 // Fixed position bottom-left, desktop only (lg:block)
 // Shows cycling notifications with fade animations
 
@@ -153,11 +153,11 @@ export function SocialProofTicker() {
           }}
           className="fixed bottom-6 left-6 z-40 hidden lg:block"
         >
-          <div className="relative max-w-xs bg-slate-800/90 backdrop-blur-lg rounded-lg border border-white/10 shadow-xl overflow-hidden">
+          <div className="relative max-w-xs bg-white rounded-lg border border-slate-200 shadow-lg overflow-hidden">
             {/* Close button */}
             <button
               onClick={handleDismiss}
-              className="absolute top-2 right-2 p-1 text-slate-500 hover:text-white transition-colors rounded-full hover:bg-white/10"
+              className="absolute top-2 right-2 p-1 text-slate-400 hover:text-slate-700 transition-colors rounded-full hover:bg-slate-100"
               aria-label="Dismiss notifications"
             >
               <X className="w-3.5 h-3.5" />
@@ -165,12 +165,12 @@ export function SocialProofTicker() {
 
             <div className="p-4 pr-8">
               {/* Main notification text */}
-              <p className="text-sm text-white leading-relaxed">
-                <span className="font-semibold text-amber-400">
+              <p className="text-sm text-slate-700 leading-relaxed">
+                <span className="font-semibold text-[#B22234]">
                   {currentNotification.name}
                 </span>{" "}
                 from{" "}
-                <span className="font-medium">
+                <span className="font-medium text-slate-900">
                   {currentNotification.state}
                 </span>{" "}
                 {currentNotification.action}
@@ -178,15 +178,15 @@ export function SocialProofTicker() {
 
               {/* Time and location indicator */}
               <div className="flex items-center gap-2 mt-2">
-                <MapPin className="w-3 h-3 text-slate-500" />
+                <MapPin className="w-3 h-3 text-slate-400" />
                 <span className="text-xs text-slate-500">
                   {currentNotification.timeAgo}
                 </span>
               </div>
             </div>
 
-            {/* Subtle amber accent line at bottom */}
-            <div className="h-0.5 bg-gradient-to-r from-amber-500/50 via-amber-400/30 to-transparent" />
+            {/* Subtle red accent line at bottom */}
+            <div className="h-0.5 bg-gradient-to-r from-[#B22234]/50 via-[#B22234]/30 to-transparent" />
           </div>
         </motion.div>
       )}

@@ -205,7 +205,7 @@ const faqJsonLd = {
 
 export default function Convert401kToSilverPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -217,9 +217,9 @@ export default function Convert401kToSilverPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="py-16 md:py-20 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+            <header className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
@@ -227,19 +227,19 @@ export default function Convert401kToSilverPage() {
                             <TrendingUp className="h-4 w-4" />
                             LOW COMPETITION KEYWORD
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
                             Convert 401k to Silver: The Complete Guide
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
                             Learn exactly how to convert your 401k into physical silver tax-free. This step-by-step guide covers eligibility, the conversion process, and how to avoid costly mistakes.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button variant="gold" size="lg" asChild>
+                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Start My Conversion <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="border-white/20 text-slate-300 hover:bg-white/10" asChild>
+                            <Button variant="outline" size="lg" className="border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
                                 <Link href="#conversion-steps">
                                     See the Steps
                                 </Link>
@@ -250,23 +250,23 @@ export default function Convert401kToSilverPage() {
             </header>
 
             {/* Key Benefits */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">Why Convert Your 401k to Silver?</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Why Convert Your 401k to Silver?</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             Converting your 401k to a Silver IRA lets you diversify into physical precious metals while maintaining tax advantages.
                         </p>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {taxBenefits.map((benefit, index) => {
                                 const Icon = benefit.icon;
                                 return (
-                                    <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                                    <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                                         <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                                             <Icon className="h-6 w-6 text-green-400" />
                                         </div>
-                                        <h3 className="font-bold text-white mb-2">{benefit.benefit}</h3>
-                                        <p className="text-sm text-slate-400">{benefit.description}</p>
+                                        <h3 className="font-bold text-slate-900 mb-2">{benefit.benefit}</h3>
+                                        <p className="text-sm text-slate-600">{benefit.description}</p>
                                     </div>
                                 );
                             })}
@@ -276,11 +276,11 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Eligibility Section */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">Are You Eligible to Convert?</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Are You Eligible to Convert?</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             Your ability to convert depends on your employment status and 401k plan rules.
                         </p>
 
@@ -298,12 +298,12 @@ export default function Convert401kToSilverPage() {
                                         )}
                                         <div>
                                             <div className="flex items-center gap-3 mb-2">
-                                                <h3 className="font-bold text-white">{item.scenario}</h3>
-                                                <span className={`px-2 py-0.5 rounded text-xs font-bold ${item.eligible ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                                                <h3 className="font-bold text-slate-900">{item.scenario}</h3>
+                                                <span className={`px-2 py-0.5 rounded text-xs font-bold ${item.eligible ? 'bg-green-500 text-slate-900' : 'bg-red-500 text-slate-900'}`}>
                                                     {item.eligible ? 'ELIGIBLE' : 'NOT ELIGIBLE'}
                                                 </span>
                                             </div>
-                                            <p className="text-slate-400">{item.explanation}</p>
+                                            <p className="text-slate-600">{item.explanation}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -314,11 +314,11 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Conversion Steps */}
-            <section id="conversion-steps" className="py-16 bg-slate-800/50 scroll-mt-20">
+            <section id="conversion-steps" className="py-16 bg-slate-50 scroll-mt-20">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">6 Steps to Convert Your 401k to Silver</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">6 Steps to Convert Your 401k to Silver</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             Follow this proven process for a smooth, tax-free conversion.
                         </p>
 
@@ -328,18 +328,18 @@ export default function Convert401kToSilverPage() {
                                 return (
                                     <div key={step.step} className="flex gap-6">
                                         <div className="flex-shrink-0">
-                                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
+                                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#B22234] to-[#8b1c2a] flex items-center justify-center">
                                                 <span className="text-xl font-bold text-slate-900">{step.step}</span>
                                             </div>
                                         </div>
-                                        <div className="flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                        <div className="flex-1 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                             <div className="flex items-center gap-3 mb-3">
-                                                <Icon className="h-5 w-5 text-slate-400" />
-                                                <h3 className="text-xl font-bold text-white">{step.title}</h3>
+                                                <Icon className="h-5 w-5 text-slate-600" />
+                                                <h3 className="text-xl font-bold text-slate-900">{step.title}</h3>
                                             </div>
-                                            <p className="text-slate-400 mb-4">{step.description}</p>
-                                            <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg px-4 py-3">
-                                                <p className="text-sm text-amber-400">
+                                            <p className="text-slate-600 mb-4">{step.description}</p>
+                                            <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg px-4 py-3">
+                                                <p className="text-sm text-[#B22234]">
                                                     <strong>Action:</strong> {step.action}
                                                 </p>
                                             </div>
@@ -353,11 +353,11 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Common Mistakes */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">Common Mistakes to Avoid</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Common Mistakes to Avoid</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             These errors can cost you thousands in taxes and penalties. Here's how to avoid them.
                         </p>
 
@@ -367,7 +367,7 @@ export default function Convert401kToSilverPage() {
                                     <div className="flex items-start gap-4">
                                         <AlertTriangle className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
                                         <div className="flex-1">
-                                            <h3 className="font-bold text-white mb-2">{item.mistake}</h3>
+                                            <h3 className="font-bold text-slate-900 mb-2">{item.mistake}</h3>
                                             <p className="text-red-300 text-sm mb-3">
                                                 <strong>Consequence:</strong> {item.consequence}
                                             </p>
@@ -384,14 +384,14 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Mid-page CTA */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-white/10">
-                        <h2 className="text-2xl font-bold text-white mb-4">Ready to Convert Your 401k to Silver?</h2>
-                        <p className="text-slate-400 mb-6">
+                    <div className="max-w-3xl mx-auto text-center bg-white rounded-2xl p-8 border border-slate-200">
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">Ready to Convert Your 401k to Silver?</h2>
+                        <p className="text-slate-600 mb-6">
                             The right Silver IRA company will guide you through every step. Take our quiz to find a provider that handles 401k conversions smoothly.
                         </p>
-                        <Button variant="gold" size="lg" asChild>
+                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                             <Link href="/quiz">
                                 Find My 401k Conversion Expert <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
@@ -401,32 +401,32 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Timeline */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-8">Expected Timeline</h2>
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Expected Timeline</h2>
+                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="grid md:grid-cols-4 gap-6 text-center">
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">1-3 Days</div>
-                                    <p className="text-sm text-slate-400">Open your new Silver IRA account</p>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">1-3 Days</div>
+                                    <p className="text-sm text-slate-600">Open your new Silver IRA account</p>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">5-10 Days</div>
-                                    <p className="text-sm text-slate-400">401k funds transfer to IRA</p>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">5-10 Days</div>
+                                    <p className="text-sm text-slate-600">401k funds transfer to IRA</p>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">1-2 Days</div>
-                                    <p className="text-sm text-slate-400">Select and purchase silver</p>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">1-2 Days</div>
+                                    <p className="text-sm text-slate-600">Select and purchase silver</p>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">3-5 Days</div>
-                                    <p className="text-sm text-slate-400">Silver shipped to depository</p>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">3-5 Days</div>
+                                    <p className="text-sm text-slate-600">Silver shipped to depository</p>
                                 </div>
                             </div>
-                            <div className="mt-8 pt-6 border-t border-white/10 text-center">
-                                <p className="text-slate-300">
-                                    <strong className="text-white">Total Time:</strong> Approximately 2-4 weeks from start to finish
+                            <div className="mt-8 pt-6 border-t border-slate-200 text-center">
+                                <p className="text-slate-600">
+                                    <strong className="text-slate-900">Total Time:</strong> Approximately 2-4 weeks from start to finish
                                 </p>
                             </div>
                         </div>
@@ -435,21 +435,21 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-8">401k to Silver Conversion FAQs</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">401k to Silver Conversion FAQs</h2>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
                                 <details
                                     key={index}
-                                    className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl"
+                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
                                 >
-                                    <summary className="cursor-pointer p-6 font-semibold text-white flex justify-between items-center list-none">
+                                    <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
                                         {faq.question}
-                                        <span className="text-amber-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                                        <span className="text-[#B22234] group-open:rotate-180 transition-transform">&#9660;</span>
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-400">
+                                    <div className="px-6 pb-6 text-slate-600">
                                         {faq.answer}
                                     </div>
                                 </details>
@@ -460,28 +460,28 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
-                    <h2 className="text-2xl font-bold text-white text-center mb-8">Related Resources</h2>
+                    <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">Related Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/silver-ira/rollover" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Rollover Guide</h3>
-                            <p className="text-sm text-slate-400">More details on the rollover process.</p>
+                        <Link href="/silver-ira/rollover" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Rollover Guide</h3>
+                            <p className="text-sm text-slate-600">More details on the rollover process.</p>
                         </Link>
-                        <Link href="/silver-ira/approved-coins" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">IRA Approved Silver Coins</h3>
-                            <p className="text-sm text-slate-400">What silver you can buy with your funds.</p>
+                        <Link href="/silver-ira/approved-coins" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">IRA Approved Silver Coins</h3>
+                            <p className="text-sm text-slate-600">What silver you can buy with your funds.</p>
                         </Link>
-                        <Link href="/silver-ira/companies" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Companies</h3>
-                            <p className="text-sm text-slate-400">Compare top 401k conversion specialists.</p>
+                        <Link href="/silver-ira/companies" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Companies</h3>
+                            <p className="text-sm text-slate-600">Compare top 401k conversion specialists.</p>
                         </Link>
                     </div>
                 </Container>
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA
                         variant="footer"

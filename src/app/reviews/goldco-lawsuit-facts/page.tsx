@@ -73,19 +73,18 @@ const schema = {
 
 export default function GoldcoLawsuitPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-50 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
+            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-amber-500/20 border border-amber-500/30 text-sm font-semibold text-amber-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#000080] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <Gavel className="w-4 h-4" /> Legal Fact Check
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
+                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#000080]">
                         Goldco Lawsuit Rumors: The Truth
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         Internet rumors can be misleading. We examine the actual legal history of Goldco to see if your money is safe.
                     </p>
                 </Container>
@@ -99,7 +98,7 @@ export default function GoldcoLawsuitPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-900 prose-a:text-[#B22234] max-w-none">
                         <Breadcrumbs />
 
                         <p className="lead">
@@ -189,11 +188,10 @@ export default function GoldcoLawsuitPage() {
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center relative overflow-hidden not-prose">
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Trust But Verify</h3>
-                                <p className="mb-6 text-gray-200">See their compliance first-hand. Get their free gold kit today.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Trust But Verify</h3>
+                                <p className="mb-6 text-slate-600">See their compliance first-hand. Get their free gold kit today.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/reviews/goldco">Visit Official Site <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>

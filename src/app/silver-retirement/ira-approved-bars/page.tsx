@@ -216,20 +216,20 @@ const schema = {
 
 export default function IraApprovedBarsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 via-slate-900 to-slate-900" />
+        <div className="absolute inset-0 bg-slate-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Link
               href="/silver-retirement"
-              className="inline-flex items-center gap-2 text-slate-400 text-sm hover:text-white transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-slate-600 text-sm hover:text-slate-900 transition-colors mb-6"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
@@ -238,16 +238,16 @@ export default function IraApprovedBarsPage() {
               <Gem className="h-4 w-4" />
               IRS-APPROVED LIST
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
               IRA-Approved{" "}
               <span className="text-blue-400">Silver Bars</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               Complete guide to silver bars that qualify for your retirement account.
               Learn purity requirements, top brands, and what's NOT allowed.
             </p>
 
-            <Button variant="gold" size="lg" asChild>
+            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
               <a
                 href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "ira-approved-bars-hero", "augusta")}
                 target="_blank"
@@ -261,30 +261,30 @@ export default function IraApprovedBarsPage() {
       </section>
 
       {/* Purity Requirements */}
-      <section className="py-12 bg-slate-800/30 border-y border-white/10">
+      <section className="py-12 bg-slate-100 border-y border-slate-200">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
               IRS Purity Requirements for Silver Bars
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 text-center">
                 <CheckCircle2 className="h-8 w-8 text-green-400 mx-auto mb-3" />
-                <h3 className="font-bold text-white mb-2">Minimum Requirement</h3>
+                <h3 className="font-bold text-slate-900 mb-2">Minimum Requirement</h3>
                 <p className="text-2xl font-bold text-green-400 mb-2">.999 Fine</p>
-                <p className="text-sm text-slate-400">99.9% pure silver</p>
+                <p className="text-sm text-slate-600">99.9% pure silver</p>
               </div>
               <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 text-center">
                 <Award className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-                <h3 className="font-bold text-white mb-2">Premium Option</h3>
+                <h3 className="font-bold text-slate-900 mb-2">Premium Option</h3>
                 <p className="text-2xl font-bold text-blue-400 mb-2">.9999 Fine</p>
-                <p className="text-sm text-slate-400">99.99% pure (RCM bars)</p>
+                <p className="text-sm text-slate-600">99.99% pure (RCM bars)</p>
               </div>
               <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6 text-center">
                 <XCircle className="h-8 w-8 text-red-400 mx-auto mb-3" />
-                <h3 className="font-bold text-white mb-2">NOT Allowed</h3>
+                <h3 className="font-bold text-slate-900 mb-2">NOT Allowed</h3>
                 <p className="text-2xl font-bold text-red-400 mb-2">&lt;.999</p>
-                <p className="text-sm text-slate-400">Sterling, coin silver</p>
+                <p className="text-sm text-slate-600">Sterling, coin silver</p>
               </div>
             </div>
           </div>
@@ -294,10 +294,10 @@ export default function IraApprovedBarsPage() {
       {/* Approved Bars List */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
             IRS-Approved Silver Bars for IRAs
           </h2>
-          <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
             These silver bars from major refiners meet IRS requirements for precious
             metals IRAs. All feature proper hallmarks and come with authenticity
             guarantees.
@@ -307,32 +307,32 @@ export default function IraApprovedBarsPage() {
             {approvedBars.map((bar, index) => (
               <div
                 key={index}
-                className={`bg-white/5 backdrop-blur-sm border rounded-xl p-6 ${
+                className={`bg-slate-50 backdrop-blur-sm border rounded-xl p-6 ${
                   bar.recommended
                     ? "border-green-500/30"
-                    : "border-white/10"
+                    : "border-slate-200"
                 }`}
               >
                 <div className="flex flex-col md:flex-row md:items-center gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-lg font-bold text-white">{bar.name}</h3>
+                      <h3 className="text-lg font-bold text-slate-900">{bar.name}</h3>
                       {bar.recommended && (
                         <span className="text-xs font-semibold text-green-400 bg-green-500/20 px-2 py-1 rounded">
                           RECOMMENDED
                         </span>
                       )}
                     </div>
-                    <p className="text-sm text-slate-400 mb-3">{bar.notes}</p>
+                    <p className="text-sm text-slate-600 mb-3">{bar.notes}</p>
                     <div className="flex flex-wrap gap-4 text-sm">
-                      <span className="text-slate-300">
-                        <strong className="text-white">Purity:</strong> {bar.purity}
+                      <span className="text-slate-600">
+                        <strong className="text-slate-900">Purity:</strong> {bar.purity}
                       </span>
-                      <span className="text-slate-300">
-                        <strong className="text-white">Origin:</strong> {bar.origin}
+                      <span className="text-slate-600">
+                        <strong className="text-slate-900">Origin:</strong> {bar.origin}
                       </span>
-                      <span className="text-slate-300">
-                        <strong className="text-white">Premium:</strong> {bar.premium}
+                      <span className="text-slate-600">
+                        <strong className="text-slate-900">Premium:</strong> {bar.premium}
                       </span>
                     </div>
                   </div>
@@ -340,7 +340,7 @@ export default function IraApprovedBarsPage() {
                     {bar.weights.map((weight, i) => (
                       <span
                         key={i}
-                        className="text-xs bg-slate-700/50 text-slate-300 px-2 py-1 rounded"
+                        className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded"
                       >
                         {weight}
                       </span>
@@ -354,18 +354,18 @@ export default function IraApprovedBarsPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-900 via-amber-900/20 to-slate-900">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
               Need Help Choosing Silver Bars?
             </h3>
-            <p className="text-slate-300 mb-6">
+            <p className="text-slate-600 mb-6">
               Augusta's precious metals specialists can help you select the right
               silver bars based on your investment amount and goals. Free consultation,
               no pressure.
             </p>
-            <Button variant="gold" size="lg" asChild>
+            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
               <a
                 href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "ira-approved-bars-mid", "augusta")}
                 target="_blank"
@@ -379,26 +379,26 @@ export default function IraApprovedBarsPage() {
       </section>
 
       {/* NOT Approved Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-white text-center mb-8 flex items-center justify-center gap-3">
+            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8 flex items-center justify-center gap-3">
               <XCircle className="h-6 w-6 text-red-400" />
               What's NOT Allowed in a Silver IRA
             </h2>
             <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
               <ul className="space-y-3">
                 {notApproved.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-slate-300">
+                  <li key={index} className="flex items-start gap-3 text-slate-600">
                     <XCircle className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 p-4 bg-slate-900/50 rounded-lg flex items-start gap-3">
-                <Info className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-slate-400">
-                  <strong className="text-white">Important:</strong> You cannot
+              <div className="mt-6 p-4 bg-slate-100 rounded-lg flex items-start gap-3">
+                <Info className="h-5 w-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                <p className="text-sm text-slate-600">
+                  <strong className="text-slate-900">Important:</strong> You cannot
                   contribute silver bars you already own to your IRA. All purchases
                   must go through your IRA custodian and ship directly to an approved
                   depository.
@@ -412,69 +412,69 @@ export default function IraApprovedBarsPage() {
       {/* Bar Size Comparison */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             Which Bar Size Is Right for You?
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Scale className="h-6 w-6 text-slate-400" />
-                <h3 className="font-bold text-white">1 oz Bars</h3>
+                <Scale className="h-6 w-6 text-slate-600" />
+                <h3 className="font-bold text-slate-900">1 oz Bars</h3>
               </div>
-              <ul className="space-y-2 text-sm text-slate-400 mb-4">
+              <ul className="space-y-2 text-sm text-slate-600 mb-4">
                 <li>+ Maximum flexibility</li>
                 <li>+ Easy partial liquidation</li>
                 <li>- Higher premium per oz</li>
               </ul>
-              <p className="text-xs text-slate-500">Best for: Small investments under $5,000</p>
+              <p className="text-xs text-slate-600">Best for: Small investments under $5,000</p>
             </div>
-            <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
+            <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Scale className="h-6 w-6 text-amber-400" />
-                <h3 className="font-bold text-white">10 oz Bars</h3>
+                <Scale className="h-6 w-6 text-[#B22234]" />
+                <h3 className="font-bold text-slate-900">10 oz Bars</h3>
               </div>
-              <ul className="space-y-2 text-sm text-slate-400 mb-4">
+              <ul className="space-y-2 text-sm text-slate-600 mb-4">
                 <li>+ Good balance of premium/flexibility</li>
                 <li>+ Lower premium than 1 oz</li>
                 <li>+ Easy to store and handle</li>
               </ul>
-              <p className="text-xs text-amber-400 font-semibold">MOST POPULAR CHOICE</p>
+              <p className="text-xs text-[#B22234] font-semibold">MOST POPULAR CHOICE</p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Scale className="h-6 w-6 text-slate-400" />
-                <h3 className="font-bold text-white">100 oz Bars</h3>
+                <Scale className="h-6 w-6 text-slate-600" />
+                <h3 className="font-bold text-slate-900">100 oz Bars</h3>
               </div>
-              <ul className="space-y-2 text-sm text-slate-400 mb-4">
+              <ul className="space-y-2 text-sm text-slate-600 mb-4">
                 <li>+ Lowest premium per oz</li>
                 <li>+ Best for large investments</li>
                 <li>- Less flexibility for partial sales</li>
               </ul>
-              <p className="text-xs text-slate-500">Best for: Investments $25,000+</p>
+              <p className="text-xs text-slate-600">Best for: Investments $25,000+</p>
             </div>
           </div>
         </Container>
       </section>
 
       {/* FAQs */}
-      <section className="py-16 bg-slate-800/30 border-y border-white/10">
+      <section className="py-16 bg-slate-100 border-y border-slate-200">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
             IRA Silver Bar FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-white font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
                   {faq.question}
-                  <span className="text-amber-400 group-open:rotate-180 transition-transform">
+                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-400">{faq.answer}</p>
+                <p className="mt-4 text-slate-600">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -484,37 +484,37 @@ export default function IraApprovedBarsPage() {
       {/* Related Pages */}
       <section className="py-12">
         <Container>
-          <h2 className="text-xl font-bold text-white text-center mb-6">
+          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
             Related Silver IRA Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link
               href="/silver-retirement/ira-approved-coins"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">IRA-Approved Silver Coins</h3>
-              <p className="text-sm text-slate-400">Eagles, Maple Leafs & more</p>
+              <h3 className="font-semibold text-slate-900 mb-1">IRA-Approved Silver Coins</h3>
+              <p className="text-sm text-slate-600">Eagles, Maple Leafs & more</p>
             </Link>
             <Link
               href="/silver-retirement/transfer-ira-to-silver"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">Transfer IRA to Silver</h3>
-              <p className="text-sm text-slate-400">Step-by-step transfer guide</p>
+              <h3 className="font-semibold text-slate-900 mb-1">Transfer IRA to Silver</h3>
+              <p className="text-sm text-slate-600">Step-by-step transfer guide</p>
             </Link>
             <Link
               href="/silver-retirement/how-much-silver"
-              className="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-4 transition-colors"
+              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-white mb-1">How Much Silver?</h3>
-              <p className="text-sm text-slate-400">Portfolio allocation guide</p>
+              <h3 className="font-semibold text-slate-900 mb-1">How Much Silver?</h3>
+              <p className="text-sm text-slate-600">Portfolio allocation guide</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 border-t border-white/10">
+      <section className="py-16 border-t border-slate-200">
         <Container>
           <AugustaCTA
             variant="footer"

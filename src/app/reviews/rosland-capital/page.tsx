@@ -54,23 +54,23 @@ const tocItems = [
 
 export default function RoslandCapitalReviewPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-50 pb-24">
             <SchemaScript schema={schema} />
-            <header className="bg-primary text-white py-16 relative overflow-hidden">
+            <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="flex gap-1">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-secondary text-secondary' : 'text-gray-400'}`} />
+                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-[#B22234] text-[#B22234]' : 'text-slate-600'}`} />
                                 ))}
                             </div>
-                            <span className="font-bold text-secondary text-lg">3.9/5.0 Rating</span>
+                            <span className="font-bold text-[#B22234] text-lg">3.9/5.0 Rating</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">
                             Rosland Capital Review (2026)
                         </h1>
-                        <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
+                        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
                             You&apos;ve seen the William Devane commercials. But is Rosland Capital the best place for your money, or just the most advertised?
                         </p>
                     </div>
@@ -82,7 +82,7 @@ export default function RoslandCapitalReviewPage() {
                     <div className="flex-1">
                         <div className="flex flex-col-reverse lg:flex-col gap-8">
                             <div className="block lg:hidden"><ReviewSidebar {...companyData} /></div>
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-900 prose-a:text-[#B22234] max-w-none">
 
                                 <section>
                                     <p className="lead">
@@ -94,13 +94,13 @@ export default function RoslandCapitalReviewPage() {
                                 </section>
 
                                 <section id="verdict" className="scroll-mt-32">
-                                    <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose">
-                                        <h2 className="font-bold text-white m-0 mb-4 text-xl">The Verdict</h2>
-                                        <p className="text-slate-300 mb-4">
+                                    <div className="bg-white border border-slate-200 shadow-sm p-6 rounded-xl border border-slate-200 not-prose">
+                                        <h2 className="font-bold text-[#000080] m-0 mb-4 text-xl">The Verdict</h2>
+                                        <p className="text-slate-600 mb-4">
                                             Rosland Capital is a legitimate, established company with an A+ BBB rating. Their low entry point ($2,000 for non-IRA purchases) makes them accessible. However, customer reviews suggest their spreads on numismatic coins can be higher than competitors.
                                         </p>
-                                        <p className="text-slate-300">
-                                            <strong className="text-white">Best for:</strong> Small cash purchases or investors who want a recognizable brand. For larger Gold IRAs, you may find better value elsewhere.
+                                        <p className="text-slate-600">
+                                            <strong className="text-[#000080]">Best for:</strong> Small cash purchases or investors who want a recognizable brand. For larger Gold IRAs, you may find better value elsewhere.
                                         </p>
                                     </div>
                                 </section>
@@ -169,7 +169,7 @@ export default function RoslandCapitalReviewPage() {
                                         In transparency: Rosland Capital has had regulatory issues in the past. They settled with the CFTC (Commodity Futures Trading Commission) over allegations related to misleading customers about coin values.
                                     </p>
                                     <p>
-                                        We cover this in detail on our <Link href="/reviews/rosland-capital-lawsuit" className="text-secondary hover:underline">Rosland Capital Lawsuit page</Link>. The short version: they paid a fine, made compliance changes, and continue operating with an A+ BBB rating today.
+                                        We cover this in detail on our <Link href="/reviews/rosland-capital-lawsuit" className="text-[#B22234] hover:underline">Rosland Capital Lawsuit page</Link>. The short version: they paid a fine, made compliance changes, and continue operating with an A+ BBB rating today.
                                     </p>
                                     <p>
                                         Should this disqualify them? Not necessarily—many companies have had regulatory issues and cleaned up their act. But it&apos;s information you should have.
@@ -190,7 +190,7 @@ export default function RoslandCapitalReviewPage() {
                                         Robert, a retired heavy equipment operator from Texas, made it work: &quot;I bought a small amount of gold for cash just to see how it went. No problems. But when they tried to upsell me on &apos;rare&apos; coins, I said no thanks. You gotta be firm.&quot;
                                     </p>
                                     <p>
-                                        For larger Gold IRAs ($25k+), companies like <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> offer better overall value and don&apos;t push expensive collectibles.
+                                        For larger Gold IRAs ($25k+), companies like <Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta</Link> or <Link href="/reviews/goldco" className="text-[#B22234] hover:underline">Goldco</Link> offer better overall value and don&apos;t push expensive collectibles.
                                     </p>
                                 </section>
 

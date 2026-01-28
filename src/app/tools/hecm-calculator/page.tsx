@@ -114,7 +114,7 @@ const faqSchema = {
 
 export default function HECMCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -123,10 +123,10 @@ export default function HECMCalculatorPage() {
       <HECMCalculator />
 
       {/* Important HECM Facts */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Understanding HECM Reverse Mortgages
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -135,17 +135,17 @@ export default function HECMCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-emerald-400" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -159,39 +159,39 @@ export default function HECMCalculatorPage() {
       </section>
 
       {/* MIP Explained Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                <DollarSign className="h-6 w-6 text-amber-400" />
+              <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                <DollarSign className="h-6 w-6 text-[#B22234]" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 HECM Mortgage Insurance Premium (MIP) Explained
               </h2>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 mb-8">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 mb-8">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <h4 className="text-amber-400 font-semibold mb-2">Upfront MIP</h4>
-                  <div className="text-3xl font-bold text-white mb-2">2%</div>
-                  <p className="text-slate-400 text-sm">
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <h4 className="text-[#B22234] font-semibold mb-2">Upfront MIP</h4>
+                  <div className="text-3xl font-bold text-[#000080] mb-2">2%</div>
+                  <p className="text-slate-600 text-sm">
                     of appraised home value (or HECM limit, whichever is less). Typically financed into the loan.
                   </p>
                 </div>
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <h4 className="text-amber-400 font-semibold mb-2">Annual MIP</h4>
-                  <div className="text-3xl font-bold text-white mb-2">0.5%</div>
-                  <p className="text-slate-400 text-sm">
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <h4 className="text-[#B22234] font-semibold mb-2">Annual MIP</h4>
+                  <div className="text-3xl font-bold text-[#000080] mb-2">0.5%</div>
+                  <p className="text-slate-600 text-sm">
                     of outstanding loan balance per year, charged monthly. This adds up significantly over time.
                   </p>
                 </div>
               </div>
 
-              <div className="p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg">
-                <h4 className="text-amber-400 font-semibold mb-2">What Does MIP Pay For?</h4>
-                <ul className="text-slate-400 text-sm space-y-1">
+              <div className="p-4 bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg">
+                <h4 className="text-[#B22234] font-semibold mb-2">What Does MIP Pay For?</h4>
+                <ul className="text-slate-600 text-sm space-y-1">
                   <li>- Guarantees you receive your loan funds even if the lender fails</li>
                   <li>- Covers the &quot;non-recourse&quot; protection (you never owe more than home value)</li>
                   <li>- Pays the lender if your loan balance exceeds home value at sale</li>
@@ -203,10 +203,10 @@ export default function HECMCalculatorPage() {
       </section>
 
       {/* When to Choose Each Option */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
               HECM vs Proprietary: Which Should You Choose?
             </h2>
 
@@ -215,7 +215,7 @@ export default function HECMCalculatorPage() {
                 <h3 className="text-xl font-bold text-emerald-400 mb-4 flex items-center gap-2">
                   <Shield className="h-5 w-5" /> Choose HECM If...
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                     <span>Your home value is under $1,149,825</span>
@@ -243,7 +243,7 @@ export default function HECMCalculatorPage() {
                 <h3 className="text-xl font-bold text-purple-400 mb-4 flex items-center gap-2">
                   <Home className="h-5 w-5" /> Choose Proprietary If...
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
                     <span>Your home is worth over $1.5 million</span>
@@ -272,10 +272,10 @@ export default function HECMCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               HECM Frequently Asked Questions
             </h2>
 
@@ -304,16 +304,16 @@ export default function HECMCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -323,17 +323,17 @@ export default function HECMCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-800/30">
+      <section className="py-8 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates for educational purposes only. Actual HECM terms,
                     PLFs, and fees vary based on HUD guidelines, lender policies, and your specific situation.
                     The HECM lending limit is updated annually. This is not financial advice. Consult a
@@ -347,7 +347,7 @@ export default function HECMCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

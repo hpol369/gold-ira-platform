@@ -60,7 +60,7 @@ function getRiskAssessment(
   if (savingsYears < 10) {
     return {
       level: "High Risk",
-      color: "text-red-400",
+      color: "text-red-600",
       bgColor: "bg-red-500/20 border-red-500/30",
       message:
         "Your savings may not last through retirement. Consider delaying retirement, reducing expenses, or finding additional income sources.",
@@ -70,8 +70,8 @@ function getRiskAssessment(
   if (monthlyGap > 0) {
     return {
       level: "Moderate Risk",
-      color: "text-amber-400",
-      bgColor: "bg-amber-500/20 border-amber-500/30",
+      color: "text-[#B22234]",
+      bgColor: "bg-[#B22234]/10 border-[#B22234]/30",
       message:
         "You have a monthly income shortfall. Your savings will need to cover this gap, which accelerates depletion.",
     };
@@ -80,8 +80,8 @@ function getRiskAssessment(
   if (stockAllocation > 60 && savingsYears < 25) {
     return {
       level: "Market Vulnerable",
-      color: "text-amber-400",
-      bgColor: "bg-amber-500/20 border-amber-500/30",
+      color: "text-[#B22234]",
+      bgColor: "bg-[#B22234]/10 border-[#B22234]/30",
       message:
         "High stock market exposure with limited runway. A major market crash could significantly impact your retirement timeline.",
     };
@@ -90,7 +90,7 @@ function getRiskAssessment(
   if (savingsYears >= 30) {
     return {
       level: "Low Risk",
-      color: "text-green-400",
+      color: "text-green-600",
       bgColor: "bg-green-500/20 border-green-500/30",
       message:
         "Your retirement plan looks solid. Consider diversifying with inflation-protected assets like gold to maintain purchasing power.",
@@ -99,7 +99,7 @@ function getRiskAssessment(
 
   return {
     level: "Moderate",
-    color: "text-blue-400",
+    color: "text-blue-600",
     bgColor: "bg-blue-500/20 border-blue-500/30",
     message:
       "Your plan is reasonable but has some vulnerability. Consider ways to extend your runway and protect against inflation.",
@@ -233,21 +233,21 @@ export default function RetirementCalculatorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-12 md:py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FREE RETIREMENT CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               Can I Retire Calculator
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               After 30+ years of early mornings and physical work, you've built a real nest egg.
               This calculator shows if it's enough to stop working - especially if your body
               can't wait until 67.
@@ -278,10 +278,10 @@ export default function RetirementCalculatorPage() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 transition-all ${
                             isActive
-                              ? "bg-amber-500 text-slate-900"
+                              ? "bg-[#B22234] text-white"
                               : isCompleted
-                              ? "bg-green-500 text-white"
-                              : "bg-slate-800 text-slate-500"
+                              ? "bg-green-500text-slate-900"
+                              : "bg-slate-100 text-slate-500"
                           }`}
                         >
                           {isCompleted ? (
@@ -293,7 +293,7 @@ export default function RetirementCalculatorPage() {
                         <span
                           className={`text-xs text-center hidden sm:block ${
                             isActive
-                              ? "text-amber-400 font-medium"
+                              ? "text-[#B22234] font-medium"
                               : "text-slate-500"
                           }`}
                         >
@@ -317,9 +317,9 @@ export default function RetirementCalculatorPage() {
                 </div>
 
                 {/* Progress bar */}
-                <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
                   <motion.div
-                    className="h-full bg-gradient-to-r from-amber-500 to-amber-600"
+                    className="h-full bg-[#B22234]"
                     initial={{ width: 0 }}
                     animate={{ width: `${progress}%` }}
                     transition={{ duration: 0.3 }}
@@ -335,7 +335,7 @@ export default function RetirementCalculatorPage() {
             )}
 
             {/* Card Container */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
               <AnimatePresence mode="wait">
                 {!showResults ? (
                   <motion.div
@@ -349,26 +349,26 @@ export default function RetirementCalculatorPage() {
                     {currentStep === 1 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <PiggyBank className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <PiggyBank className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">
+                            <h2 className="text-xl font-bold text-slate-900">
                               What are your total retirement savings?
                             </h2>
-                            <p className="text-slate-400 text-sm">
+                            <p className="text-slate-600 text-sm">
                               Include 401(k), IRA, and other retirement accounts
                             </p>
                           </div>
                         </div>
 
                         {/* Savings Display */}
-                        <div className="bg-slate-800/50 rounded-xl p-6 mb-6">
+                        <div className="bg-slate-50 rounded-xl p-6 mb-6">
                           <div className="text-center mb-4">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                            <div className="text-4xl md:text-5xl font-bold text-[#000080] mb-2">
                               {formatFullCurrency(totalSavings)}
                             </div>
-                            <div className="text-slate-400">
+                            <div className="text-slate-500">
                               Total Retirement Savings
                             </div>
                           </div>
@@ -384,7 +384,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setTotalSavings(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                             />
                             <div className="flex justify-between text-xs text-slate-500 mt-2">
                               <span>$0</span>
@@ -406,8 +406,8 @@ export default function RetirementCalculatorPage() {
                                 onClick={() => setTotalSavings(amount)}
                                 className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${
                                   totalSavings === amount
-                                    ? "bg-amber-500 text-slate-900"
-                                    : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                                    ? "bg-[#B22234] text-white"
+                                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                                 }`}
                               >
                                 {formatCurrency(amount)}
@@ -422,14 +422,14 @@ export default function RetirementCalculatorPage() {
                     {currentStep === 2 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <Wallet className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <Wallet className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">
+                            <h2 className="text-xl font-bold text-slate-900">
                               Estimated monthly expenses in retirement?
                             </h2>
-                            <p className="text-slate-400 text-sm">
+                            <p className="text-slate-600 text-sm">
                               Include housing, healthcare, food, and lifestyle
                               costs
                             </p>
@@ -437,15 +437,15 @@ export default function RetirementCalculatorPage() {
                         </div>
 
                         {/* Expenses Display */}
-                        <div className="bg-slate-800/50 rounded-xl p-6 mb-6">
+                        <div className="bg-slate-50 rounded-xl p-6 mb-6">
                           <div className="text-center mb-4">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                            <div className="text-4xl md:text-5xl font-bold text-[#000080] mb-2">
                               {formatFullCurrency(monthlyExpenses)}
-                              <span className="text-lg text-slate-400 font-normal">
+                              <span className="text-lg text-slate-500 font-normal">
                                 /month
                               </span>
                             </div>
-                            <div className="text-slate-400">
+                            <div className="text-slate-500">
                               ={" "}
                               {formatFullCurrency(monthlyExpenses * 12)}{" "}
                               per year
@@ -463,7 +463,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setMonthlyExpenses(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                             />
                             <div className="flex justify-between text-xs text-slate-500 mt-2">
                               <span>$2k</span>
@@ -483,8 +483,8 @@ export default function RetirementCalculatorPage() {
                               onClick={() => setMonthlyExpenses(amount)}
                               className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${
                                 monthlyExpenses === amount
-                                  ? "bg-amber-500 text-slate-900"
-                                  : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                                  ? "bg-[#B22234] text-white"
+                                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                               }`}
                             >
                               {formatCurrency(amount)}
@@ -493,11 +493,11 @@ export default function RetirementCalculatorPage() {
                         </div>
 
                         {/* Expense guidance */}
-                        <div className="mt-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl">
+                        <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-xl">
                           <div className="flex items-start gap-3">
-                            <Info className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                            <div className="text-sm text-slate-300">
-                              <strong className="text-white">
+                            <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                            <div className="text-sm text-slate-600">
+                              <strong className="text-slate-900">
                                 Rule of thumb:
                               </strong>{" "}
                               Most retirees need 70-80% of their pre-retirement
@@ -513,14 +513,14 @@ export default function RetirementCalculatorPage() {
                     {currentStep === 3 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <Calendar className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <Calendar className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">
+                            <h2 className="text-xl font-bold text-slate-900">
                               Your age information
                             </h2>
-                            <p className="text-slate-400 text-sm">
+                            <p className="text-slate-600 text-sm">
                               This helps calculate your retirement timeline
                             </p>
                           </div>
@@ -528,8 +528,8 @@ export default function RetirementCalculatorPage() {
 
                         <div className="space-y-6">
                           {/* Current Age */}
-                          <div className="bg-slate-800/50 rounded-xl p-5">
-                            <label className="block text-sm text-slate-400 mb-3">
+                          <div className="bg-slate-50 rounded-xl p-5">
+                            <label className="block text-sm text-slate-500 mb-3">
                               Current Age
                             </label>
                             <div className="flex items-center gap-4">
@@ -541,9 +541,9 @@ export default function RetirementCalculatorPage() {
                                 onChange={(e) =>
                                   setCurrentAge(Number(e.target.value))
                                 }
-                                className="flex-1 bg-slate-700 border border-white/10 rounded-lg px-4 py-3 text-2xl font-bold text-white text-center focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                className="flex-1 bg-white border border-slate-200 rounded-lg px-4 py-3 text-2xl font-bold text-slate-900 text-center focus:outline-none focus:ring-2 focus:ring-[#B22234]"
                               />
-                              <span className="text-slate-400">years old</span>
+                              <span className="text-slate-500">years old</span>
                             </div>
                             <input
                               type="range"
@@ -553,13 +553,13 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setCurrentAge(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500 mt-3"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234] mt-3"
                             />
                           </div>
 
                           {/* Retirement Age */}
-                          <div className="bg-slate-800/50 rounded-xl p-5">
-                            <label className="block text-sm text-slate-400 mb-3">
+                          <div className="bg-slate-50 rounded-xl p-5">
+                            <label className="block text-sm text-slate-500 mb-3">
                               Desired Retirement Age
                             </label>
                             <div className="flex items-center gap-4">
@@ -571,9 +571,9 @@ export default function RetirementCalculatorPage() {
                                 onChange={(e) =>
                                   setRetirementAge(Number(e.target.value))
                                 }
-                                className="flex-1 bg-slate-700 border border-white/10 rounded-lg px-4 py-3 text-2xl font-bold text-white text-center focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                className="flex-1 bg-white border border-slate-200 rounded-lg px-4 py-3 text-2xl font-bold text-slate-900 text-center focus:outline-none focus:ring-2 focus:ring-[#B22234]"
                               />
-                              <span className="text-slate-400">years old</span>
+                              <span className="text-slate-500">years old</span>
                             </div>
                             <input
                               type="range"
@@ -583,15 +583,15 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setRetirementAge(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500 mt-3"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234] mt-3"
                             />
                           </div>
 
                           {/* Years until retirement indicator */}
-                          <div className="flex items-center justify-center gap-2 text-slate-300">
-                            <Clock className="h-5 w-5 text-amber-400" />
+                          <div className="flex items-center justify-center gap-2 text-slate-600">
+                            <Clock className="h-5 w-5 text-[#B22234]" />
                             <span>
-                              <strong className="text-white">
+                              <strong className="text-slate-900">
                                 {Math.max(0, retirementAge - currentAge)} years
                               </strong>{" "}
                               until retirement
@@ -605,14 +605,14 @@ export default function RetirementCalculatorPage() {
                     {currentStep === 4 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <TrendingUp className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <TrendingUp className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">
+                            <h2 className="text-xl font-bold text-slate-900">
                               Expected income in retirement
                             </h2>
-                            <p className="text-slate-400 text-sm">
+                            <p className="text-slate-600 text-sm">
                               Include all sources of retirement income
                             </p>
                           </div>
@@ -620,12 +620,12 @@ export default function RetirementCalculatorPage() {
 
                         <div className="space-y-4">
                           {/* Social Security */}
-                          <div className="bg-slate-800/50 rounded-xl p-5">
+                          <div className="bg-slate-50 rounded-xl p-5">
                             <div className="flex items-center justify-between mb-3">
-                              <label className="text-sm text-slate-300 font-medium">
+                              <label className="text-sm text-slate-600 font-medium">
                                 Social Security (monthly)
                               </label>
-                              <span className="text-amber-400 font-bold">
+                              <span className="text-[#B22234] font-bold">
                                 {formatFullCurrency(socialSecurity)}
                               </span>
                             </div>
@@ -638,7 +638,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setSocialSecurity(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                             />
                             <div className="flex justify-between text-xs text-slate-500 mt-1">
                               <span>$0</span>
@@ -647,12 +647,12 @@ export default function RetirementCalculatorPage() {
                           </div>
 
                           {/* Pension */}
-                          <div className="bg-slate-800/50 rounded-xl p-5">
+                          <div className="bg-slate-50 rounded-xl p-5">
                             <div className="flex items-center justify-between mb-3">
-                              <label className="text-sm text-slate-300 font-medium">
+                              <label className="text-sm text-slate-600 font-medium">
                                 Pension (monthly)
                               </label>
-                              <span className="text-amber-400 font-bold">
+                              <span className="text-[#B22234] font-bold">
                                 {formatFullCurrency(pension)}
                               </span>
                             </div>
@@ -665,7 +665,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setPension(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                             />
                             <div className="flex justify-between text-xs text-slate-500 mt-1">
                               <span>$0</span>
@@ -674,12 +674,12 @@ export default function RetirementCalculatorPage() {
                           </div>
 
                           {/* Part-time work */}
-                          <div className="bg-slate-800/50 rounded-xl p-5">
+                          <div className="bg-slate-50 rounded-xl p-5">
                             <div className="flex items-center justify-between mb-3">
-                              <label className="text-sm text-slate-300 font-medium">
+                              <label className="text-sm text-slate-600 font-medium">
                                 Part-time Work (monthly)
                               </label>
-                              <span className="text-amber-400 font-bold">
+                              <span className="text-[#B22234] font-bold">
                                 {formatFullCurrency(partTimeIncome)}
                               </span>
                             </div>
@@ -692,7 +692,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setPartTimeIncome(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                             />
                             <div className="flex justify-between text-xs text-slate-500 mt-1">
                               <span>$0</span>
@@ -701,12 +701,12 @@ export default function RetirementCalculatorPage() {
                           </div>
 
                           {/* Stock allocation (for risk assessment) */}
-                          <div className="bg-slate-800/50 rounded-xl p-5">
+                          <div className="bg-slate-50 rounded-xl p-5">
                             <div className="flex items-center justify-between mb-3">
-                              <label className="text-sm text-slate-300 font-medium">
+                              <label className="text-sm text-slate-600 font-medium">
                                 Current Stock Market Exposure
                               </label>
-                              <span className="text-amber-400 font-bold">
+                              <span className="text-[#B22234] font-bold">
                                 {stockAllocation}%
                               </span>
                             </div>
@@ -719,7 +719,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setStockAllocation(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                             />
                             <div className="flex justify-between text-xs text-slate-500 mt-1">
                               <span>0% (All bonds)</span>
@@ -728,12 +728,12 @@ export default function RetirementCalculatorPage() {
                           </div>
 
                           {/* Total income summary */}
-                          <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4 mt-4">
+                          <div className="bg-green-50 border border-green-200 rounded-xl p-4 mt-4">
                             <div className="flex items-center justify-between">
-                              <span className="text-slate-300">
+                              <span className="text-slate-600">
                                 Total Monthly Income:
                               </span>
-                              <span className="text-2xl font-bold text-green-400">
+                              <span className="text-2xl font-bold text-green-600">
                                 {formatFullCurrency(
                                   socialSecurity + pension + partTimeIncome
                                 )}
@@ -749,7 +749,7 @@ export default function RetirementCalculatorPage() {
                       {currentStep > 1 && (
                         <button
                           onClick={handleBack}
-                          className="px-6 py-3 bg-slate-800 border border-white/10 rounded-xl text-white font-medium hover:bg-slate-700 transition-all flex items-center gap-2"
+                          className="px-6 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 font-medium hover:bg-slate-200 transition-all flex items-center gap-2"
                         >
                           <ArrowLeft className="h-4 w-4" />
                           Back
@@ -757,7 +757,7 @@ export default function RetirementCalculatorPage() {
                       )}
                       <button
                         onClick={handleNext}
-                        className="flex-1 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 hover:from-amber-600 hover:to-amber-700"
+                        className="flex-1 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 bg-[#B22234] text-slate-900 hover:bg-[#8b1c2a]"
                       >
                         {currentStep === steps.length
                           ? "See My Results"
@@ -776,17 +776,17 @@ export default function RetirementCalculatorPage() {
                   >
                     {/* Main Result */}
                     <div className="text-center mb-8">
-                      <div className="text-slate-400 text-sm mb-2">
+                      <div className="text-slate-600 text-sm mb-2">
                         YOUR SAVINGS WILL LAST
                       </div>
                       <div className="relative inline-flex items-center justify-center mb-4">
                         <motion.div
                           className={`text-6xl md:text-7xl font-bold ${
                             results.yearsWithReturns >= 30
-                              ? "text-green-400"
+                              ? "text-green-600"
                               : results.yearsWithReturns >= 20
-                              ? "text-amber-400"
-                              : "text-red-400"
+                              ? "text-[#B22234]"
+                              : "text-red-600"
                           }`}
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
@@ -803,19 +803,19 @@ export default function RetirementCalculatorPage() {
                             : Math.round(results.yearsWithReturns)}
                         </motion.div>
                       </div>
-                      <div className="text-xl text-white font-medium">
+                      <div className="text-xl text-slate-900 font-medium">
                         years in retirement
                       </div>
                       {!results.incomeCoversExpenses && (
-                        <div className="text-slate-400 mt-2">
+                        <div className="text-slate-500 mt-2">
                           Money runs out around age {results.ageAtDepletion}
                         </div>
                       )}
                     </div>
 
                     {/* Visual Timeline */}
-                    <div className="bg-slate-800/50 rounded-xl p-5 mb-6">
-                      <div className="text-slate-400 text-sm mb-4">
+                    <div className="bg-slate-50 rounded-xl p-5 mb-6">
+                      <div className="text-slate-600 text-sm mb-4">
                         RETIREMENT TIMELINE
                       </div>
                       <div className="relative">
@@ -826,7 +826,7 @@ export default function RetirementCalculatorPage() {
                               results.yearsWithReturns >= 30
                                 ? "bg-gradient-to-r from-green-500 to-green-600"
                                 : results.yearsWithReturns >= 20
-                                ? "bg-gradient-to-r from-amber-500 to-amber-600"
+                                ? "bg-[#B22234]"
                                 : "bg-gradient-to-r from-red-500 to-red-600"
                             }`}
                             initial={{ width: 0 }}
@@ -845,25 +845,25 @@ export default function RetirementCalculatorPage() {
                         {/* Timeline markers */}
                         <div className="flex justify-between mt-2 text-xs">
                           <div className="text-center">
-                            <div className="text-white font-medium">
+                            <div className="text-slate-900 font-medium">
                               {retirementAge}
                             </div>
                             <div className="text-slate-500">Retire</div>
                           </div>
                           <div className="text-center">
-                            <div className="text-white font-medium">
+                            <div className="text-slate-900 font-medium">
                               {retirementAge + 10}
                             </div>
                             <div className="text-slate-500">+10 yrs</div>
                           </div>
                           <div className="text-center">
-                            <div className="text-white font-medium">
+                            <div className="text-slate-900 font-medium">
                               {retirementAge + 20}
                             </div>
                             <div className="text-slate-500">+20 yrs</div>
                           </div>
                           <div className="text-center">
-                            <div className="text-white font-medium">85</div>
+                            <div className="text-slate-900 font-medium">85</div>
                             <div className="text-slate-500">Life exp.</div>
                           </div>
                         </div>
@@ -873,12 +873,12 @@ export default function RetirementCalculatorPage() {
                     {/* Key Metrics Grid */}
                     <div className="grid md:grid-cols-2 gap-4 mb-6">
                       {/* Monthly Withdrawal */}
-                      <div className="bg-slate-800/50 rounded-xl p-4">
-                        <div className="flex items-center gap-2 text-slate-400 text-sm mb-2">
+                      <div className="bg-slate-50 rounded-xl p-4">
+                        <div className="flex items-center gap-2 text-slate-600 text-sm mb-2">
                           <DollarSign className="h-4 w-4" />
                           MONTHLY WITHDRAWAL (4% RULE)
                         </div>
-                        <div className="text-2xl font-bold text-white">
+                        <div className="text-2xl font-bold text-slate-900">
                           {formatFullCurrency(results.monthlyWithdrawal4Percent)}
                         </div>
                         <div className="text-slate-500 text-sm">
@@ -893,15 +893,15 @@ export default function RetirementCalculatorPage() {
                       <div
                         className={`rounded-xl p-4 ${
                           results.monthlyGap > 0
-                            ? "bg-red-500/10 border border-red-500/20"
-                            : "bg-green-500/10 border border-green-500/20"
+                            ? "bg-red-50 border border-red-200"
+                            : "bg-green-50 border border-green-200"
                         }`}
                       >
                         <div
                           className={`flex items-center gap-2 text-sm mb-2 ${
                             results.monthlyGap > 0
-                              ? "text-red-400"
-                              : "text-green-400"
+                              ? "text-red-600"
+                              : "text-green-600"
                           }`}
                         >
                           <Target className="h-4 w-4" />
@@ -910,8 +910,8 @@ export default function RetirementCalculatorPage() {
                         <div
                           className={`text-2xl font-bold ${
                             results.monthlyGap > 0
-                              ? "text-red-400"
-                              : "text-green-400"
+                              ? "text-red-600"
+                              : "text-green-600"
                           }`}
                         >
                           {results.monthlyGap > 0
@@ -927,16 +927,16 @@ export default function RetirementCalculatorPage() {
                     </div>
 
                     {/* Conservative Scenario */}
-                    <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4 mb-6">
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
                       <div className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                        <Shield className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                         <div>
-                          <h3 className="text-white font-semibold mb-1">
+                          <h3 className="text-slate-900 font-semibold mb-1">
                             Conservative 3% Rule Scenario
                           </h3>
-                          <p className="text-slate-300 text-sm">
+                          <p className="text-slate-600 text-sm">
                             Using a safer 3% withdrawal rate, you could withdraw{" "}
-                            <strong className="text-white">
+                            <strong className="text-slate-900">
                               {formatFullCurrency(
                                 results.monthlyWithdrawal3Percent
                               )}
@@ -959,7 +959,7 @@ export default function RetirementCalculatorPage() {
                         />
                         <div>
                           <div className="flex items-center gap-2 mb-2">
-                            <h3 className="text-white font-semibold">
+                            <h3 className="text-slate-900 font-semibold">
                               Risk Assessment
                             </h3>
                             <span
@@ -968,7 +968,7 @@ export default function RetirementCalculatorPage() {
                               {riskAssessment.level}
                             </span>
                           </div>
-                          <p className="text-slate-300 text-sm leading-relaxed">
+                          <p className="text-slate-600 text-sm leading-relaxed">
                             {riskAssessment.message}
                           </p>
                         </div>
@@ -977,44 +977,44 @@ export default function RetirementCalculatorPage() {
 
                     {/* Gold IRA Recommendation */}
                     {stockAllocation > 50 && (
-                      <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-5 mb-6">
+                      <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-5 mb-6">
                         <div className="flex items-start gap-3">
-                          <Shield className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                          <Shield className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                           <div>
-                            <h3 className="text-white font-semibold mb-2">
+                            <h3 className="text-slate-900 font-semibold mb-2">
                               Diversification Recommendation
                             </h3>
-                            <p className="text-slate-300 text-sm leading-relaxed mb-3">
+                            <p className="text-slate-600 text-sm leading-relaxed mb-3">
                               With{" "}
-                              <strong className="text-white">
+                              <strong className="text-slate-900">
                                 {stockAllocation}% in stocks
                               </strong>
                               , your retirement is heavily exposed to market
                               volatility. A 2008-style crash could reduce your
                               savings by{" "}
-                              <strong className="text-red-400">
+                              <strong className="text-red-600">
                                 {formatFullCurrency(
                                   totalSavings * (stockAllocation / 100) * 0.4
                                 )}
                               </strong>{" "}
                               or more.
                             </p>
-                            <p className="text-slate-300 text-sm">
+                            <p className="text-slate-600 text-sm">
                               Financial experts often recommend allocating 5-15%
                               of retirement savings to precious metals like gold
                               to:
                             </p>
-                            <ul className="mt-2 space-y-1 text-sm text-slate-300">
+                            <ul className="mt-2 space-y-1 text-sm text-slate-600">
                               <li className="flex items-center gap-2">
-                                <CheckCircle2 className="h-4 w-4 text-green-400" />
+                                <CheckCircle2 className="h-4 w-4 text-green-600" />
                                 Hedge against market crashes
                               </li>
                               <li className="flex items-center gap-2">
-                                <CheckCircle2 className="h-4 w-4 text-green-400" />
+                                <CheckCircle2 className="h-4 w-4 text-green-600" />
                                 Protect against inflation
                               </li>
                               <li className="flex items-center gap-2">
-                                <CheckCircle2 className="h-4 w-4 text-green-400" />
+                                <CheckCircle2 className="h-4 w-4 text-green-600" />
                                 Reduce overall portfolio volatility
                               </li>
                             </ul>
@@ -1025,35 +1025,35 @@ export default function RetirementCalculatorPage() {
 
                     {/* Summary Stats */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-                      <div className="bg-slate-800/50 rounded-lg p-3 text-center">
-                        <div className="text-slate-400 text-xs mb-1">
+                      <div className="bg-slate-50 rounded-lg p-3 text-center">
+                        <div className="text-slate-500 text-xs mb-1">
                           Total Savings
                         </div>
-                        <div className="text-white font-bold">
+                        <div className="text-slate-900 font-bold">
                           {formatCurrency(totalSavings)}
                         </div>
                       </div>
-                      <div className="bg-slate-800/50 rounded-lg p-3 text-center">
-                        <div className="text-slate-400 text-xs mb-1">
+                      <div className="bg-slate-50 rounded-lg p-3 text-center">
+                        <div className="text-slate-500 text-xs mb-1">
                           Monthly Expenses
                         </div>
-                        <div className="text-white font-bold">
+                        <div className="text-slate-900 font-bold">
                           {formatCurrency(monthlyExpenses)}
                         </div>
                       </div>
-                      <div className="bg-slate-800/50 rounded-lg p-3 text-center">
-                        <div className="text-slate-400 text-xs mb-1">
+                      <div className="bg-slate-50 rounded-lg p-3 text-center">
+                        <div className="text-slate-500 text-xs mb-1">
                           Monthly Income
                         </div>
-                        <div className="text-white font-bold">
+                        <div className="text-slate-900 font-bold">
                           {formatCurrency(results.monthlyIncome)}
                         </div>
                       </div>
-                      <div className="bg-slate-800/50 rounded-lg p-3 text-center">
-                        <div className="text-slate-400 text-xs mb-1">
+                      <div className="bg-slate-50 rounded-lg p-3 text-center">
+                        <div className="text-slate-500 text-xs mb-1">
                           Years to Retire
                         </div>
-                        <div className="text-white font-bold">
+                        <div className="text-slate-900 font-bold">
                           {results.yearsUntilRetirement}
                         </div>
                       </div>
@@ -1071,7 +1071,7 @@ export default function RetirementCalculatorPage() {
                     {/* Start Over */}
                     <button
                       onClick={resetCalculator}
-                      className="w-full mt-6 py-3 bg-slate-800 border border-white/10 rounded-xl text-slate-400 font-medium hover:bg-slate-700 hover:text-white transition-all"
+                      className="w-full mt-6 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-500 font-medium hover:bg-slate-200 hover:text-slate-900 transition-all"
                     >
                       Start Over with New Numbers
                     </button>
@@ -1084,18 +1084,18 @@ export default function RetirementCalculatorPage() {
       </section>
 
       {/* Educational Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm mb-4">
+              <div className="inline-flex items-center gap-2 text-[#B22234] font-semibold text-sm mb-4">
                 <Info className="h-4 w-4" />
                 RETIREMENT PLANNING BASICS
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                 Understanding the 4% Rule
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
+              <p className="text-slate-600 max-w-2xl mx-auto">
                 The 4% rule is a guideline suggesting you can withdraw 4% of
                 your savings annually without running out of money for 30 years.
               </p>
@@ -1127,21 +1127,21 @@ export default function RetirementCalculatorPage() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                 >
-                  <h3 className="text-lg font-bold text-amber-400 mb-3">
+                  <h3 className="text-lg font-bold text-[#B22234] mb-3">
                     {item.title}
                   </h3>
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between">
-                      <span className="text-slate-400">4% Withdrawal:</span>
-                      <span className="text-white font-medium">
+                      <span className="text-slate-500">4% Withdrawal:</span>
+                      <span className="text-slate-900 font-medium">
                         {item.withdrawal}
                       </span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-400">Monthly:</span>
-                      <span className="text-white font-medium">
+                      <span className="text-slate-500">Monthly:</span>
+                      <span className="text-slate-900 font-medium">
                         {item.monthly}
                       </span>
                     </div>
@@ -1155,17 +1155,17 @@ export default function RetirementCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <Shield className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <Shield className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates based on simplified
                     assumptions. Actual results will vary based on investment
                     returns, inflation, taxes, healthcare costs, and other

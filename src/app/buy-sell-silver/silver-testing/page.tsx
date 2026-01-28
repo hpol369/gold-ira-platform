@@ -258,12 +258,12 @@ const schema = {
 
 export default function SilverTestingPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-400/5 rounded-full blur-[150px]" />
         </div>
@@ -271,7 +271,7 @@ export default function SilverTestingPage() {
           <div className="max-w-4xl mx-auto">
             <Link
               href="/buy-sell-silver"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
@@ -280,10 +280,10 @@ export default function SilverTestingPage() {
               <FlaskConical className="h-4 w-4" />
               300 MONTHLY SEARCHES - DIFF 0
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Silver Testing Methods
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
               From the simple magnet test to advanced specific gravity measurements,
               learn every method for verifying silver authenticity. Protect your investment
               with knowledge.
@@ -293,31 +293,31 @@ export default function SilverTestingPage() {
       </section>
 
       {/* Quick Comparison Table */}
-      <section className="py-8 bg-slate-800/50 border-y border-white/10">
+      <section className="py-8 bg-slate-50 border-y border-slate-200">
         <Container>
           <div className="max-w-5xl mx-auto overflow-x-auto">
-            <table className="w-full bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-              <thead className="bg-slate-800/50">
+            <table className="w-full bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+              <thead className="bg-slate-50">
                 <tr>
-                  <th className="text-left p-4 text-white font-bold">Test</th>
-                  <th className="text-center p-4 text-white font-bold">Cost</th>
-                  <th className="text-center p-4 text-white font-bold">Time</th>
-                  <th className="text-center p-4 text-white font-bold">Skill</th>
-                  <th className="text-center p-4 text-white font-bold">Reliability</th>
-                  <th className="text-center p-4 text-white font-bold">Destructive</th>
+                  <th className="text-left p-4 text-slate-900 font-bold">Test</th>
+                  <th className="text-center p-4 text-slate-900 font-bold">Cost</th>
+                  <th className="text-center p-4 text-slate-900 font-bold">Time</th>
+                  <th className="text-center p-4 text-slate-900 font-bold">Skill</th>
+                  <th className="text-center p-4 text-slate-900 font-bold">Reliability</th>
+                  <th className="text-center p-4 text-slate-900 font-bold">Destructive</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-white/10">
+              <tbody className="divide-y divide-slate-200">
                 {testComparison.map((row, index) => (
                   <tr key={index}>
-                    <td className="p-4 text-slate-300 font-semibold">{row.test}</td>
+                    <td className="p-4 text-slate-600 font-semibold">{row.test}</td>
                     <td className="p-4 text-center text-green-400">{row.cost}</td>
-                    <td className="p-4 text-center text-slate-400">{row.time}</td>
-                    <td className="p-4 text-center text-slate-400">{row.skill}</td>
+                    <td className="p-4 text-center text-slate-600">{row.time}</td>
+                    <td className="p-4 text-center text-slate-600">{row.skill}</td>
                     <td className="p-4 text-center">
                       <span className={`font-semibold ${
                         row.reliability === "Excellent" ? "text-green-400" :
-                        row.reliability === "Good" ? "text-blue-400" : "text-amber-400"
+                        row.reliability === "Good" ? "text-blue-400" : "text-[#B22234]"
                       }`}>
                         {row.reliability}
                       </span>
@@ -338,17 +338,17 @@ export default function SilverTestingPage() {
       </section>
 
       {/* Detailed Testing Methods */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Complete Testing Guide
             </h2>
             <div className="space-y-8">
               {testingMethods.map((method, index) => {
                 const Icon = method.icon;
                 return (
-                  <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 md:p-8">
+                  <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 md:p-8">
                     <div className="flex flex-col md:flex-row md:items-start gap-6">
                       <div className="flex items-center gap-4 md:w-64 flex-shrink-0">
                         <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
@@ -359,9 +359,9 @@ export default function SilverTestingPage() {
                           }`} />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-white">{method.name}</h3>
+                          <h3 className="text-xl font-bold text-slate-900">{method.name}</h3>
                           <div className="flex flex-wrap gap-2 mt-1">
-                            <span className="text-xs bg-slate-700 text-slate-300 px-2 py-0.5 rounded">
+                            <span className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">
                               {method.difficulty}
                             </span>
                             <span className="flex gap-0.5">
@@ -369,7 +369,7 @@ export default function SilverTestingPage() {
                                 <Star
                                   key={star}
                                   className={`h-3 w-3 ${
-                                    star <= method.reliability ? "text-amber-400 fill-current" : "text-slate-600"
+                                    star <= method.reliability ? "text-[#B22234] fill-current" : "text-slate-600"
                                   }`}
                                 />
                               ))}
@@ -378,24 +378,24 @@ export default function SilverTestingPage() {
                         </div>
                       </div>
                       <div className="flex-1">
-                        <p className="text-slate-300 mb-4">{method.description}</p>
+                        <p className="text-slate-600 mb-4">{method.description}</p>
 
                         <div className="grid md:grid-cols-2 gap-4 mb-4">
                           <div>
-                            <h4 className="text-sm font-semibold text-white mb-2">Equipment Needed:</h4>
-                            <p className="text-slate-400 text-sm">{method.equipment}</p>
+                            <h4 className="text-sm font-semibold text-slate-900 mb-2">Equipment Needed:</h4>
+                            <p className="text-slate-600 text-sm">{method.equipment}</p>
                           </div>
                           <div>
-                            <h4 className="text-sm font-semibold text-white mb-2">Detects:</h4>
-                            <p className="text-slate-400 text-sm">{method.whatItDetects}</p>
+                            <h4 className="text-sm font-semibold text-slate-900 mb-2">Detects:</h4>
+                            <p className="text-slate-600 text-sm">{method.whatItDetects}</p>
                           </div>
                         </div>
 
                         <div className="mb-4">
-                          <h4 className="text-sm font-semibold text-white mb-2">How To:</h4>
+                          <h4 className="text-sm font-semibold text-slate-900 mb-2">How To:</h4>
                           <ol className="space-y-1">
                             {method.howTo.map((step, i) => (
-                              <li key={i} className="text-slate-400 text-sm flex items-start gap-2">
+                              <li key={i} className="text-slate-600 text-sm flex items-start gap-2">
                                 <span className="text-blue-400">{i + 1}.</span>
                                 {step}
                               </li>
@@ -408,21 +408,21 @@ export default function SilverTestingPage() {
                             <h4 className="text-sm font-semibold text-green-400 mb-1 flex items-center gap-1">
                               <CheckCircle2 className="h-3 w-3" /> Pass
                             </h4>
-                            <p className="text-slate-300 text-sm">{method.passResult}</p>
+                            <p className="text-slate-600 text-sm">{method.passResult}</p>
                           </div>
                           <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3">
                             <h4 className="text-sm font-semibold text-red-400 mb-1 flex items-center gap-1">
                               <XCircle className="h-3 w-3" /> Fail
                             </h4>
-                            <p className="text-slate-300 text-sm">{method.failResult}</p>
+                            <p className="text-slate-600 text-sm">{method.failResult}</p>
                           </div>
                         </div>
 
-                        <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3">
-                          <h4 className="text-sm font-semibold text-amber-400 mb-1 flex items-center gap-1">
+                        <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-3">
+                          <h4 className="text-sm font-semibold text-[#B22234] mb-1 flex items-center gap-1">
                             <AlertTriangle className="h-3 w-3" /> Limitations
                           </h4>
-                          <p className="text-slate-300 text-sm">{method.limitations}</p>
+                          <p className="text-slate-600 text-sm">{method.limitations}</p>
                         </div>
                       </div>
                     </div>
@@ -435,29 +435,29 @@ export default function SilverTestingPage() {
       </section>
 
       {/* Recommended Testing Sequence */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4 flex items-center justify-center gap-2">
-              <Zap className="h-6 w-6 text-amber-400" />
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4 flex items-center justify-center gap-2">
+              <Zap className="h-6 w-6 text-[#B22234]" />
               Recommended Testing Sequence
             </h2>
-            <p className="text-slate-400 text-center mb-12">
+            <p className="text-slate-600 text-center mb-12">
               Follow this order for efficient and thorough verification.
             </p>
             <div className="space-y-4">
               {testSequence.map((item) => (
-                <div key={item.step} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+                <div key={item.step} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-lg font-bold text-amber-400">{item.step}</span>
+                    <div className="w-10 h-10 bg-[#B22234]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-[#B22234]">{item.step}</span>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-white mb-1">{item.test}</h3>
-                      <p className="text-slate-400 text-sm mb-2">{item.description}</p>
+                      <h3 className="text-lg font-bold text-slate-900 mb-1">{item.test}</h3>
+                      <p className="text-slate-600 text-sm mb-2">{item.description}</p>
                       <p className="text-sm">
                         <span className="text-green-400 font-semibold">Action: </span>
-                        <span className="text-slate-300">{item.action}</span>
+                        <span className="text-slate-600">{item.action}</span>
                       </p>
                     </div>
                   </div>
@@ -469,25 +469,25 @@ export default function SilverTestingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -498,30 +498,30 @@ export default function SilverTestingPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
-          <h2 className="text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Spot Fake Silver</h3>
-              <p className="text-sm text-slate-400">Visual inspection guide</p>
+            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Spot Fake Silver</h3>
+              <p className="text-sm text-slate-600">Visual inspection guide</p>
             </Link>
-            <Link href="/buy-sell-silver/best-coins-to-buy" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Best Coins to Buy</h3>
-              <p className="text-sm text-slate-400">Stick to reputable sources</p>
+            <Link href="/buy-sell-silver/best-coins-to-buy" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Best Coins to Buy</h3>
+              <p className="text-sm text-slate-600">Stick to reputable sources</p>
             </Link>
-            <Link href="/buy-sell-silver/best-place-to-sell" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Best Place to Sell</h3>
-              <p className="text-sm text-slate-400">Dealers test for you</p>
+            <Link href="/buy-sell-silver/best-place-to-sell" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Best Place to Sell</h3>
+              <p className="text-sm text-slate-600">Dealers test for you</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

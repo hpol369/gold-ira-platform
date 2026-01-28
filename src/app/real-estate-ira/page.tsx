@@ -93,30 +93,29 @@ export default function RealEstateIraPage() {
             />
 
             <Navbar />
-            <main className="min-h-screen bg-slate-900">
+            <main className="min-h-screen bg-white">
                 {/* Hero Section */}
-                <section className="relative py-16 lg:py-24 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
+                <section className="relative py-16 lg:py-24 overflow-hidden bg-slate-50">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(16,185,129,0.08),transparent_50%)]" />
 
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 mb-6">
-                                <Home className="w-4 h-4 text-emerald-400" />
-                                <span className="text-emerald-400 text-sm font-medium">Invest in What You Understand</span>
+                            <div className="inline-flex items-center gap-2 bg-emerald-100 border border-emerald-200 rounded-full px-4 py-2 mb-6">
+                                <Home className="w-4 h-4 text-emerald-600" />
+                                <span className="text-emerald-700 text-sm font-medium">Invest in What You Understand</span>
                             </div>
 
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#000080] mb-6 leading-tight">
                                 Real Estate IRA Guide:{" "}
-                                <span className="text-emerald-400">Buy Property With Your Retirement</span>
+                                <span className="text-emerald-600">Buy Property With Your Retirement</span>
                             </h1>
 
-                            <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
+                            <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
                                 You&apos;ve spent decades watching real estate appreciate while your 401k rides the stock market rollercoaster. A Real Estate IRA lets you invest your retirement in rental properties, commercial buildings, or land—with the same tax advantages as your current accounts. Here&apos;s how it works.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                                <Button variant="gold" size="lg" asChild>
+                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
                                     <a
                                         href={getTrackedLink(AFFILIATE_LINKS.rocketDollar, "realestate-hero", "rocketdollar")}
                                         target="_blank"
@@ -126,7 +125,7 @@ export default function RealEstateIraPage() {
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="lg" asChild>
+                                <Button variant="outline" size="lg" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                     <Link href="#how-it-works">
                                         Learn How It Works
                                     </Link>
@@ -141,9 +140,9 @@ export default function RealEstateIraPage() {
                                     { value: "100%", label: "IRS Legal" },
                                     { value: "Unlimited", label: "Property Types" },
                                 ].map((stat, index) => (
-                                    <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
-                                        <div className="text-2xl font-bold text-emerald-400">{stat.value}</div>
-                                        <div className="text-sm text-slate-400">{stat.label}</div>
+                                    <div key={index} className="bg-white border border-slate-200 rounded-xl p-4 text-center">
+                                        <div className="text-2xl font-bold text-emerald-600">{stat.value}</div>
+                                        <div className="text-sm text-slate-500">{stat.label}</div>
                                     </div>
                                 ))}
                             </div>
@@ -152,26 +151,26 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* What is Real Estate IRA Section */}
-                <section id="how-it-works" className="py-16 bg-slate-800/50">
+                <section id="how-it-works" className="py-16 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
                                 What is a Real Estate IRA?
                             </h2>
 
-                            <div className="prose prose-lg prose-invert max-w-none">
-                                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                            <div className="prose prose-lg max-w-none prose-headings:text-[#000080] prose-p:text-slate-600">
+                                <p className="text-slate-600 text-lg leading-relaxed mb-6">
                                     Here&apos;s the simple version: A Real Estate IRA is a retirement account where you can buy actual property instead of stocks. Same tax benefits as your 401k—but instead of owning shares in some company, your IRA owns a rental house, a commercial building, or a piece of land.
                                 </p>
 
-                                <p className="text-slate-300 text-lg leading-relaxed mb-8">
+                                <p className="text-slate-600 text-lg leading-relaxed mb-8">
                                     If you&apos;ve spent 30 years understanding real estate in your area—watching what neighborhoods appreciate, knowing what makes a good rental—this lets you put that knowledge to work. The IRA legally owns the property, and all the rent goes back into your retirement account tax-deferred. You need a specialized custodian (not Fidelity or Vanguard), but the tax advantages are the same.
                                 </p>
                             </div>
 
                             {/* How It Works Steps */}
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 mb-8">
-                                <h3 className="text-xl font-bold text-white mb-6">How Real Estate IRAs Work</h3>
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-8">
+                                <h3 className="text-xl font-bold text-[#000080] mb-6">How Real Estate IRAs Work</h3>
                                 <div className="space-y-6">
                                     {[
                                         {
@@ -205,8 +204,8 @@ export default function RealEstateIraPage() {
                                                 {item.step}
                                             </div>
                                             <div>
-                                                <h4 className="text-white font-semibold mb-1">{item.title}</h4>
-                                                <p className="text-slate-400 text-sm">{item.description}</p>
+                                                <h4 className="text-slate-900 font-semibold mb-1">{item.title}</h4>
+                                                <p className="text-slate-500 text-sm">{item.description}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -217,12 +216,12 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Property Types */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4 text-center">
                             What Can You Actually Buy?
                         </h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                             If it&apos;s real estate, you can probably buy it with your IRA. Here&apos;s what most people invest in:
                         </p>
 
@@ -265,13 +264,13 @@ export default function RealEstateIraPage() {
                                     allowed: true
                                 }
                             ].map((item, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <item.icon className="w-8 h-8 text-emerald-400" />
-                                        <CheckCircle2 className="w-5 h-5 text-green-400" />
+                                        <item.icon className="w-8 h-8 text-emerald-600" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-500" />
                                     </div>
-                                    <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                                    <p className="text-slate-400 text-sm">{item.description}</p>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
+                                    <p className="text-slate-500 text-sm">{item.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -279,16 +278,16 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Pros and Cons */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-white">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-12 text-center">
                             Real Estate IRA: Pros and Cons
                         </h2>
 
                         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                             {/* Pros */}
-                            <div className="bg-green-500/5 border border-green-500/20 rounded-2xl p-8">
-                                <h3 className="text-xl font-bold text-green-400 mb-6 flex items-center gap-2">
+                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8">
+                                <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     Advantages
                                 </h3>
@@ -303,16 +302,16 @@ export default function RealEstateIraPage() {
                                         "Control over your investment decisions"
                                     ].map((pro, index) => (
                                         <li key={index} className="flex items-start gap-3">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                                            <span className="text-slate-300">{pro}</span>
+                                            <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                                            <span className="text-slate-600">{pro}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
 
                             {/* Cons */}
-                            <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8">
-                                <h3 className="text-xl font-bold text-red-400 mb-6 flex items-center gap-2">
+                            <div className="bg-red-50 border border-red-200 rounded-2xl p-8">
+                                <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     Challenges & Risks
                                 </h3>
@@ -327,8 +326,8 @@ export default function RealEstateIraPage() {
                                         "Requires real estate knowledge and due diligence"
                                     ].map((con, index) => (
                                         <li key={index} className="flex items-start gap-3">
-                                            <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
-                                            <span className="text-slate-300">{con}</span>
+                                            <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                                            <span className="text-slate-600">{con}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -338,12 +337,12 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Top Custodians */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4 text-center">
                             Best Real Estate IRA Custodians (2026)
                         </h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                             You need a self-directed IRA custodian that specializes in real estate investments.
                         </p>
 
@@ -376,31 +375,31 @@ export default function RealEstateIraPage() {
                             ].map((custodian, index) => (
                                 <div
                                     key={index}
-                                    className={`bg-white/5 backdrop-blur-sm border rounded-2xl p-6 ${custodian.featured ? 'border-emerald-500/30' : 'border-white/10'
+                                    className={`bg-white border rounded-2xl p-6 ${custodian.featured ? 'border-emerald-300' : 'border-slate-200'
                                         }`}
                                 >
                                     {custodian.featured && (
-                                        <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-3">
+                                        <div className="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-3">
                                             Recommended
                                         </div>
                                     )}
-                                    <h3 className="text-xl font-bold text-white mb-2">{custodian.name}</h3>
-                                    <p className="text-slate-400 text-sm mb-4">{custodian.description}</p>
+                                    <h3 className="text-xl font-bold text-slate-900 mb-2">{custodian.name}</h3>
+                                    <p className="text-slate-500 text-sm mb-4">{custodian.description}</p>
 
                                     <div className="space-y-2 mb-6">
                                         <div className="flex justify-between text-sm">
-                                            <span className="text-slate-400">Fees:</span>
-                                            <span className="text-white">{custodian.fee}</span>
+                                            <span className="text-slate-500">Fees:</span>
+                                            <span className="text-slate-900">{custodian.fee}</span>
                                         </div>
                                         <div className="flex justify-between text-sm">
-                                            <span className="text-slate-400">Best For:</span>
-                                            <span className="text-white">{custodian.best}</span>
+                                            <span className="text-slate-500">Best For:</span>
+                                            <span className="text-slate-900">{custodian.best}</span>
                                         </div>
                                     </div>
 
                                     <Button
                                         variant={custodian.featured ? "gold" : "outline"}
-                                        className="w-full"
+                                        className={`w-full ${custodian.featured ? 'bg-[#B22234] hover:bg-[#8b1c2a] text-white' : 'border-slate-300 text-slate-700 hover:bg-slate-100'}`}
                                         asChild
                                     >
                                         <a
@@ -416,7 +415,7 @@ export default function RealEstateIraPage() {
                         </div>
 
                         <div className="mt-8 text-center">
-                            <Button variant="outline" asChild>
+                            <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                 <Link href="/learn/real-estate-ira-custodians">
                                     Compare All Custodians
                                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -427,15 +426,15 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Key Rules */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8 text-center">
                                 Critical Real Estate IRA Rules
                             </h2>
 
-                            <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8 mb-8">
-                                <h3 className="text-xl font-bold text-red-400 mb-6 flex items-center gap-2">
+                            <div className="bg-red-50 border border-red-200 rounded-2xl p-8 mb-8">
+                                <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     Prohibited Transactions (AVOID THESE!)
                                 </h3>
@@ -448,16 +447,16 @@ export default function RealEstateIraPage() {
                                         "Using personal funds for repairs",
                                         "Personally guaranteeing an IRA mortgage"
                                     ].map((item, index) => (
-                                        <div key={index} className="flex items-center gap-3 bg-white/5 rounded-lg p-3">
-                                            <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0" />
-                                            <span className="text-slate-300 text-sm">{item}</span>
+                                        <div key={index} className="flex items-center gap-3 bg-white rounded-lg p-3 border border-red-100">
+                                            <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0" />
+                                            <span className="text-slate-600 text-sm">{item}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <div className="bg-green-500/5 border border-green-500/20 rounded-2xl p-8">
-                                <h3 className="text-xl font-bold text-green-400 mb-6 flex items-center gap-2">
+                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8">
+                                <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     What You CAN Do
                                 </h3>
@@ -470,16 +469,16 @@ export default function RealEstateIraPage() {
                                         "Take non-recourse loans",
                                         "Hold multiple properties"
                                     ].map((item, index) => (
-                                        <div key={index} className="flex items-center gap-3 bg-white/5 rounded-lg p-3">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                                            <span className="text-slate-300 text-sm">{item}</span>
+                                        <div key={index} className="flex items-center gap-3 bg-white rounded-lg p-3 border border-green-100">
+                                            <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                                            <span className="text-slate-600 text-sm">{item}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             <div className="mt-8 text-center">
-                                <Button variant="outline" asChild>
+                                <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                     <Link href="/learn/real-estate-ira-rules">
                                         Read Complete Rules Guide
                                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -491,9 +490,9 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-12 text-center">
                             Real Estate IRA FAQ
                         </h2>
 
@@ -528,9 +527,9 @@ export default function RealEstateIraPage() {
                                     answer: "Some custodians have no minimum, but you'll need enough to cover the property purchase, closing costs, and reserves for expenses. Many investors start with $50,000-$100,000 in their SDIRA for real estate."
                                 }
                             ].map((faq, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-white mb-3">{faq.question}</h3>
-                                    <p className="text-slate-400">{faq.answer}</p>
+                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-6">
+                                    <h3 className="text-lg font-bold text-slate-900 mb-3">{faq.question}</h3>
+                                    <p className="text-slate-500">{faq.answer}</p>
                                 </div>
                             ))}
                         </div>
@@ -538,18 +537,18 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16 bg-gradient-to-br from-emerald-500/10 via-slate-800 to-slate-900">
+                <section className="py-16 bg-gradient-to-r from-emerald-50 via-emerald-100/50 to-emerald-50 border-y border-emerald-200">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
                                 Know Real Estate Better Than Stocks?
                             </h2>
-                            <p className="text-xl text-slate-300 mb-8">
+                            <p className="text-xl text-slate-600 mb-8">
                                 If you&apos;ve spent your career understanding what makes property valuable, you don&apos;t have to hand your retirement over to Wall Street. A Real Estate IRA lets you invest in what you actually know.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="gold" size="lg" asChild>
+                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
                                     <a
                                         href={getTrackedLink(AFFILIATE_LINKS.rocketDollar, "realestate-bottom-cta", "rocketdollar")}
                                         target="_blank"
@@ -559,7 +558,7 @@ export default function RealEstateIraPage() {
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="lg" asChild>
+                                <Button variant="outline" size="lg" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
                                     <Link href="/learn/buy-rental-property-with-ira">
                                         How to Buy Rental Property
                                     </Link>
@@ -570,9 +569,9 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Related Content */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-white">
                     <Container>
-                        <h2 className="text-2xl font-bold text-white mb-8 text-center">
+                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
                             Related Resources
                         </h2>
 
@@ -586,12 +585,12 @@ export default function RealEstateIraPage() {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-colors group"
+                                    className="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:bg-white hover:border-emerald-300 transition-colors group"
                                 >
-                                    <h3 className="text-white font-semibold mb-1 group-hover:text-emerald-400 transition-colors">
+                                    <h3 className="text-slate-900 font-semibold mb-1 group-hover:text-emerald-600 transition-colors">
                                         {link.title}
                                     </h3>
-                                    <p className="text-slate-400 text-sm">{link.desc}</p>
+                                    <p className="text-slate-500 text-sm">{link.desc}</p>
                                 </Link>
                             ))}
                         </div>
@@ -599,7 +598,7 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Augusta CTA */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-slate-50 border-t border-slate-200">
                     <Container>
                         <AugustaCTA
                             variant="footer"

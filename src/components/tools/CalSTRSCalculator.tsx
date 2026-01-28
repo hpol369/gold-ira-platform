@@ -163,19 +163,19 @@ export function CalSTRSCalculator() {
     }).format(amount);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+    <section className="py-16 md:py-24 bg-slate-50">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-600 font-semibold text-sm mb-6">
               <GraduationCap className="h-4 w-4" />
               CALSTRS CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               CalSTRS Retirement Calculator
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Estimate your California State Teachers Retirement System pension
               for educators and school employees.
             </p>
@@ -183,12 +183,12 @@ export function CalSTRSCalculator() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Input Panel */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-white mb-6">Your Teaching Career</h3>
+            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Teaching Career</h3>
 
               {/* Membership Year */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Year You Became a CalSTRS Member
                 </label>
                 <input
@@ -202,14 +202,14 @@ export function CalSTRSCalculator() {
                   }}
                   min={1970}
                   max={2024}
-                  className="w-full px-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white text-lg focus:outline-none focus:border-blue-500"
+                  className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-blue-500"
                 />
                 {membershipYear >= 2013 ? (
-                  <p className="text-blue-400 text-sm mt-2">
+                  <p className="text-blue-600 text-sm mt-2">
                     PEPRA member - You are subject to the 2% @ 62 formula
                   </p>
                 ) : (
-                  <p className="text-green-400 text-sm mt-2">
+                  <p className="text-green-600 text-sm mt-2">
                     Classic member - You have the 2% @ 60 formula
                   </p>
                 )}
@@ -217,7 +217,7 @@ export function CalSTRSCalculator() {
 
               {/* Formula Selection */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Benefit Formula
                 </label>
                 <div className="grid grid-cols-2 gap-3">
@@ -226,26 +226,26 @@ export function CalSTRSCalculator() {
                     className={`p-4 rounded-xl border-2 text-left transition-all ${
                       formula === "2at60"
                         ? "border-blue-500 bg-blue-500/10"
-                        : "border-white/10 bg-slate-800/50 hover:border-white/20"
+                        : "border-slate-200 bg-slate-50 hover:border-slate-300"
                     }`}
                   >
-                    <span className="text-white font-semibold block">2% @ 60</span>
-                    <span className="text-slate-400 text-xs">Pre-2013 members</span>
+                    <span className="text-slate-900 font-semibold block">2% @ 60</span>
+                    <span className="text-slate-500 text-xs">Pre-2013 members</span>
                   </button>
                   <button
                     onClick={() => setFormula("2at62pepra")}
                     className={`p-4 rounded-xl border-2 text-left transition-all ${
                       formula === "2at62pepra"
                         ? "border-blue-500 bg-blue-500/10"
-                        : "border-white/10 bg-slate-800/50 hover:border-white/20"
+                        : "border-slate-200 bg-slate-50 hover:border-slate-300"
                     }`}
                   >
-                    <span className="text-white font-semibold block">2% @ 62</span>
-                    <span className="text-slate-400 text-xs">PEPRA (2013+)</span>
+                    <span className="text-slate-900 font-semibold block">2% @ 62</span>
+                    <span className="text-slate-500 text-xs">PEPRA (2013+)</span>
                   </button>
                 </div>
                 {formula !== suggestedFormula && (
-                  <p className="text-amber-400 text-xs mt-2">
+                  <p className="text-[#B22234] text-xs mt-2">
                     Note: Based on your membership year, {suggestedFormula === "2at60" ? "2% @ 60" : "PEPRA 2% @ 62"} may be your formula
                   </p>
                 )}
@@ -253,7 +253,7 @@ export function CalSTRSCalculator() {
 
               {/* Final Compensation */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Final Compensation
                 </label>
                 <div className="relative">
@@ -262,7 +262,7 @@ export function CalSTRSCalculator() {
                     type="number"
                     value={finalCompensation}
                     onChange={(e) => setFinalCompensation(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white text-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <p className="text-slate-500 text-sm mt-2">
@@ -274,8 +274,8 @@ export function CalSTRSCalculator() {
 
               {/* Service Credit */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
-                  Service Credit (Years): <span className="text-blue-400 font-bold">{serviceYears}</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Service Credit (Years): <span className="text-blue-600 font-bold">{serviceYears}</span>
                 </label>
                 <input
                   type="range"
@@ -295,8 +295,8 @@ export function CalSTRSCalculator() {
 
               {/* Retirement Age */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
-                  Retirement Age: <span className="text-blue-400 font-bold">{retirementAge}</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Retirement Age: <span className="text-blue-600 font-bold">{retirementAge}</span>
                 </label>
                 <input
                   type="range"
@@ -315,14 +315,14 @@ export function CalSTRSCalculator() {
               </div>
 
               {/* Age Factor Display */}
-              <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4 mb-6">
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <Info className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                  <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-blue-400 font-semibold text-sm">
+                    <p className="text-blue-600 font-semibold text-sm">
                       Age Factor at {retirementAge}: {getAgeFactor(formula, retirementAge).toFixed(2)}%
                     </p>
-                    <p className="text-slate-400 text-sm mt-1">
+                    <p className="text-slate-600 text-sm mt-1">
                       Max factor: {formula === "2at60" ? "2.4% at age 63+" : "2.3% at age 65+"}
                     </p>
                   </div>
@@ -332,7 +332,7 @@ export function CalSTRSCalculator() {
               {/* Calculate Button */}
               <button
                 onClick={calculateBenefit}
-                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
               >
                 <Calculator className="h-5 w-5" />
                 Calculate My CalSTRS Benefit
@@ -340,46 +340,46 @@ export function CalSTRSCalculator() {
             </div>
 
             {/* Results Panel */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-white mb-6">Your CalSTRS Estimate</h3>
+            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#000080] mb-6">Your CalSTRS Estimate</h3>
 
               {result ? (
                 <div className="space-y-6">
                   {/* Primary Result */}
-                  <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-5">
-                    <div className="flex items-center gap-2 text-blue-400 text-sm mb-2">
+                  <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                    <div className="flex items-center gap-2 text-blue-600 text-sm mb-2">
                       <Calendar className="h-4 w-4" />
                       ESTIMATED MONTHLY BENEFIT
                     </div>
-                    <div className="text-4xl font-bold text-white mb-2">
+                    <div className="text-4xl font-bold text-[#000080] mb-2">
                       {formatCurrency(result.monthlyBenefit)}
                     </div>
-                    <div className="text-slate-400 text-sm">
+                    <div className="text-slate-600 text-sm">
                       {formatCurrency(result.annualBenefit)} per year
                     </div>
                   </div>
 
                   {/* Formula Breakdown */}
-                  <div className="bg-slate-800/50 rounded-xl p-4">
-                    <h4 className="text-white font-semibold mb-3">Benefit Formula</h4>
+                  <div className="bg-slate-50 rounded-xl p-4">
+                    <h4 className="text-slate-900 font-semibold mb-3">Benefit Formula</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Formula</span>
-                        <span className="text-white">{result.formula}</span>
+                        <span className="text-slate-500">Formula</span>
+                        <span className="text-slate-900">{result.formula}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Service Credit</span>
-                        <span className="text-white">{serviceYears} years</span>
+                        <span className="text-slate-500">Service Credit</span>
+                        <span className="text-slate-900">{serviceYears} years</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Age Factor</span>
-                        <span className="text-blue-400">{result.ageFactor.toFixed(2)}%</span>
+                        <span className="text-slate-500">Age Factor</span>
+                        <span className="text-blue-600">{result.ageFactor.toFixed(2)}%</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Final Compensation</span>
-                        <span className="text-white">{formatCurrency(finalCompensation)}</span>
+                        <span className="text-slate-500">Final Compensation</span>
+                        <span className="text-slate-900">{formatCurrency(finalCompensation)}</span>
                       </div>
-                      <div className="border-t border-white/10 pt-2 mt-2">
+                      <div className="border-t border-slate-200 pt-2 mt-2">
                         <p className="text-slate-500 text-xs">
                           {serviceYears} x {result.ageFactor.toFixed(2)}% x {formatCurrency(finalCompensation)} = {formatCurrency(result.annualBenefit)}/year
                         </p>
@@ -388,50 +388,50 @@ export function CalSTRSCalculator() {
                   </div>
 
                   {/* Survivor Options */}
-                  <div className="bg-slate-800/50 rounded-xl p-4">
-                    <div className="flex items-center gap-2 text-white font-semibold mb-3">
-                      <Users className="h-5 w-5 text-blue-400" />
+                  <div className="bg-slate-50 rounded-xl p-4">
+                    <div className="flex items-center gap-2 text-slate-900 font-semibold mb-3">
+                      <Users className="h-5 w-5 text-blue-600" />
                       Survivor Benefit Options
                     </div>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between items-center">
                         <div>
-                          <span className="text-slate-300">100% Survivor</span>
+                          <span className="text-slate-600">100% Survivor</span>
                           <span className="text-slate-500 text-xs block">~12% reduction</span>
                         </div>
-                        <span className="text-white font-semibold">{formatCurrency(result.survivor100)}/mo</span>
+                        <span className="text-slate-900 font-semibold">{formatCurrency(result.survivor100)}/mo</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <div>
-                          <span className="text-slate-300">75% Survivor</span>
+                          <span className="text-slate-600">75% Survivor</span>
                           <span className="text-slate-500 text-xs block">~8% reduction</span>
                         </div>
-                        <span className="text-white font-semibold">{formatCurrency(result.survivor75)}/mo</span>
+                        <span className="text-slate-900 font-semibold">{formatCurrency(result.survivor75)}/mo</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <div>
-                          <span className="text-slate-300">50% Survivor</span>
+                          <span className="text-slate-600">50% Survivor</span>
                           <span className="text-slate-500 text-xs block">~5% reduction</span>
                         </div>
-                        <span className="text-white font-semibold">{formatCurrency(result.survivor50)}/mo</span>
+                        <span className="text-slate-900 font-semibold">{formatCurrency(result.survivor50)}/mo</span>
                       </div>
                     </div>
                   </div>
 
                   {/* COLA Projections */}
-                  <div className="bg-slate-800/50 rounded-xl p-4">
-                    <div className="flex items-center gap-2 text-white font-semibold mb-3">
-                      <TrendingUp className="h-5 w-5 text-green-400" />
+                  <div className="bg-slate-50 rounded-xl p-4">
+                    <div className="flex items-center gap-2 text-slate-900 font-semibold mb-3">
+                      <TrendingUp className="h-5 w-5 text-green-600" />
                       COLA Projections (2% per year)
                     </div>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">After 10 Years</span>
-                        <span className="text-green-400">{formatCurrency(result.colaAdjusted10yr)}/year</span>
+                        <span className="text-slate-500">After 10 Years</span>
+                        <span className="text-green-600">{formatCurrency(result.colaAdjusted10yr)}/year</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">After 20 Years</span>
-                        <span className="text-green-400">{formatCurrency(result.colaAdjusted20yr)}/year</span>
+                        <span className="text-slate-500">After 20 Years</span>
+                        <span className="text-green-600">{formatCurrency(result.colaAdjusted20yr)}/year</span>
                       </div>
                     </div>
                     <p className="text-slate-500 text-xs mt-2">
@@ -440,20 +440,20 @@ export function CalSTRSCalculator() {
                   </div>
 
                   {/* Lifetime Projections */}
-                  <div className="bg-slate-800/50 rounded-xl p-4">
-                    <h4 className="text-white font-semibold mb-3">Lifetime Benefit Projections</h4>
+                  <div className="bg-slate-50 rounded-xl p-4">
+                    <h4 className="text-slate-900 font-semibold mb-3">Lifetime Benefit Projections</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Total by Age 80</span>
-                        <span className="text-white">{formatCurrency(result.lifetimeBenefitAt80)}</span>
+                        <span className="text-slate-500">Total by Age 80</span>
+                        <span className="text-slate-900">{formatCurrency(result.lifetimeBenefitAt80)}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Total by Age 85</span>
-                        <span className="text-white">{formatCurrency(result.lifetimeBenefitAt85)}</span>
+                        <span className="text-slate-500">Total by Age 85</span>
+                        <span className="text-slate-900">{formatCurrency(result.lifetimeBenefitAt85)}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Total by Age 90</span>
-                        <span className="text-white">{formatCurrency(result.lifetimeBenefitAt90)}</span>
+                        <span className="text-slate-500">Total by Age 90</span>
+                        <span className="text-slate-900">{formatCurrency(result.lifetimeBenefitAt90)}</span>
                       </div>
                     </div>
                   </div>
@@ -461,7 +461,7 @@ export function CalSTRSCalculator() {
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-center rounded-xl transition-all"
                   >
                     Protect Your Teacher Pension
                     <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -469,10 +469,10 @@ export function CalSTRSCalculator() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
-                  <div className="w-16 h-16 bg-slate-800 rounded-2xl flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
                     <GraduationCap className="h-8 w-8 text-slate-500" />
                   </div>
-                  <p className="text-slate-400">
+                  <p className="text-slate-500">
                     Enter your teaching career information and click &quot;Calculate My CalSTRS Benefit&quot;
                     to see your estimated pension.
                   </p>
@@ -483,20 +483,20 @@ export function CalSTRSCalculator() {
 
           {/* Age Factor Table */}
           <div className="mt-12">
-            <h3 className="text-xl font-bold text-white mb-6 text-center">CalSTRS Age Factor Tables</h3>
+            <h3 className="text-xl font-bold text-[#000080] mb-6 text-center">CalSTRS Age Factor Tables</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {/* 2% @ 60 Table */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden">
-                <div className="bg-blue-500/10 p-4 border-b border-white/10">
-                  <h4 className="text-white font-semibold">2% @ 60 (Classic Members)</h4>
-                  <p className="text-slate-400 text-sm">For members hired before January 1, 2013</p>
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden">
+                <div className="bg-blue-500/10 p-4 border-b border-slate-200">
+                  <h4 className="text-slate-900 font-semibold">2% @ 60 (Classic Members)</h4>
+                  <p className="text-slate-600 text-sm">For members hired before January 1, 2013</p>
                 </div>
                 <div className="p-4">
                   <div className="grid grid-cols-4 gap-2 text-sm">
                     {Object.entries(AGE_FACTORS_2AT60).slice(0, 8).map(([age, factor]) => (
-                      <div key={age} className="flex justify-between p-2 bg-slate-800/50 rounded">
-                        <span className="text-slate-400">{age}</span>
-                        <span className="text-white font-medium">{factor}%</span>
+                      <div key={age} className="flex justify-between p-2 bg-slate-50 rounded">
+                        <span className="text-slate-500">{age}</span>
+                        <span className="text-slate-900 font-medium">{factor}%</span>
                       </div>
                     ))}
                   </div>
@@ -505,17 +505,17 @@ export function CalSTRSCalculator() {
               </div>
 
               {/* 2% @ 62 PEPRA Table */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden">
-                <div className="bg-amber-500/10 p-4 border-b border-white/10">
-                  <h4 className="text-white font-semibold">2% @ 62 (PEPRA Members)</h4>
-                  <p className="text-slate-400 text-sm">For members hired on/after January 1, 2013</p>
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden">
+                <div className="bg-[#B22234]/10 p-4 border-b border-slate-200">
+                  <h4 className="text-slate-900 font-semibold">2% @ 62 (PEPRA Members)</h4>
+                  <p className="text-slate-600 text-sm">For members hired on/after January 1, 2013</p>
                 </div>
                 <div className="p-4">
                   <div className="grid grid-cols-4 gap-2 text-sm">
                     {Object.entries(AGE_FACTORS_2AT62_PEPRA).slice(0, 8).map(([age, factor]) => (
-                      <div key={age} className="flex justify-between p-2 bg-slate-800/50 rounded">
-                        <span className="text-slate-400">{age}</span>
-                        <span className="text-white font-medium">{factor}%</span>
+                      <div key={age} className="flex justify-between p-2 bg-slate-50 rounded">
+                        <span className="text-slate-500">{age}</span>
+                        <span className="text-slate-900 font-medium">{factor}%</span>
                       </div>
                     ))}
                   </div>
@@ -527,24 +527,24 @@ export function CalSTRSCalculator() {
 
           {/* Key CalSTRS Facts */}
           <div className="mt-12 grid md:grid-cols-3 gap-6">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <CheckCircle2 className="h-8 w-8 text-green-400 mb-4" />
-              <h4 className="text-white font-semibold mb-2">No Social Security</h4>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <CheckCircle2 className="h-8 w-8 text-green-600 mb-4" />
+              <h4 className="text-slate-900 font-semibold mb-2">No Social Security</h4>
+              <p className="text-slate-600 text-sm">
                 Most CalSTRS members do not pay into Social Security. Your CalSTRS pension is your primary retirement income.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <TrendingUp className="h-8 w-8 text-amber-400 mb-4" />
-              <h4 className="text-white font-semibold mb-2">2% Annual COLA</h4>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <TrendingUp className="h-8 w-8 text-[#B22234] mb-4" />
+              <h4 className="text-slate-900 font-semibold mb-2">2% Annual COLA</h4>
+              <p className="text-slate-600 text-sm">
                 CalSTRS provides a 2% purchasing power protection benefit based on your initial benefit amount.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <Info className="h-8 w-8 text-blue-400 mb-4" />
-              <h4 className="text-white font-semibold mb-2">403(b) Supplement</h4>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <Info className="h-8 w-8 text-blue-600 mb-4" />
+              <h4 className="text-slate-900 font-semibold mb-2">403(b) Supplement</h4>
+              <p className="text-slate-600 text-sm">
                 Many teachers supplement CalSTRS with a 403(b) plan. Consider diversifying with different asset classes.
               </p>
             </div>

@@ -114,7 +114,7 @@ const faqSchema = {
 
 export default function ReverseMortgageCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -123,10 +123,10 @@ export default function ReverseMortgageCalculatorPage() {
       <ReverseMortgageCalculator />
 
       {/* Important Facts */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               What You Need to Know About Reverse Mortgages
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -135,17 +135,17 @@ export default function ReverseMortgageCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-blue-400" />
+                        <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -159,34 +159,34 @@ export default function ReverseMortgageCalculatorPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                <Calculator className="h-6 w-6 text-blue-400" />
+                <Calculator className="h-6 w-6 text-blue-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 How the Principal Limit Factor Works
               </h2>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 mb-8">
-              <h3 className="text-lg font-semibold text-white mb-4">The Reverse Mortgage Formula</h3>
-              <div className="bg-slate-800 rounded-lg p-4 mb-4">
-                <p className="text-blue-400 font-mono text-lg text-center">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 mb-8">
+              <h3 className="text-lg font-semibold text-slate-900 mb-4">The Reverse Mortgage Formula</h3>
+              <div className="bg-slate-100 rounded-lg p-4 mb-4">
+                <p className="text-blue-600 font-mono text-lg text-center">
                   Available Proceeds = (Home Value x PLF) - Mortgage Balance - Closing Costs
                 </p>
               </div>
-              <div className="space-y-3 text-slate-400">
-                <p><strong className="text-white">PLF (Principal Limit Factor):</strong> A percentage based on your age and expected interest rate. Older borrowers get higher PLFs.</p>
-                <p><strong className="text-white">Home Value:</strong> Appraised value or HECM limit ($1,149,825 for 2024), whichever is less.</p>
-                <p><strong className="text-white">Existing Mortgage:</strong> Must be paid off from proceeds, reducing available cash.</p>
+              <div className="space-y-3 text-slate-500">
+                <p><strong className="text-slate-900">PLF (Principal Limit Factor):</strong> A percentage based on your age and expected interest rate. Older borrowers get higher PLFs.</p>
+                <p><strong className="text-slate-900">Home Value:</strong> Appraised value or HECM limit ($1,149,825 for 2024), whichever is less.</p>
+                <p><strong className="text-slate-900">Existing Mortgage:</strong> Must be paid off from proceeds, reducing available cash.</p>
               </div>
               <div className="mt-4 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                <p className="text-blue-400 font-medium mb-1">Example:</p>
-                <p className="text-slate-300 text-sm">
-                  Age 75, $450,000 home, $50,000 mortgage, 6% rate: $450,000 x 52.7% - $50,000 - $17,000 = <strong className="text-white">$170,150 available</strong>
+                <p className="text-blue-600 font-medium mb-1">Example:</p>
+                <p className="text-slate-600 text-sm">
+                  Age 75, $450,000 home, $50,000 mortgage, 6% rate: $450,000 x 52.7% - $50,000 - $17,000 = <strong className="text-slate-900">$170,150 available</strong>
                 </p>
               </div>
             </div>
@@ -195,47 +195,47 @@ export default function ReverseMortgageCalculatorPage() {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
               Reverse Mortgage Payout Options Compared
             </h2>
 
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-white/5 border-b border-white/10">
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Option</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Best For</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Pros</th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Cons</th>
+                  <tr className="bg-slate-50 border-b border-slate-200">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Option</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Best For</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Pros</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Cons</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/5">
-                    <td className="px-6 py-4 text-white font-medium">Lump Sum</td>
-                    <td className="px-6 py-4 text-slate-400">Large immediate expense</td>
-                    <td className="px-6 py-4 text-green-400 text-sm">Full amount upfront, fixed rate available</td>
-                    <td className="px-6 py-4 text-red-400 text-sm">Interest accrues on full balance immediately</td>
+                  <tr className="border-b border-slate-200">
+                    <td className="px-6 py-4 text-slate-900 font-medium">Lump Sum</td>
+                    <td className="px-6 py-4 text-slate-500">Large immediate expense</td>
+                    <td className="px-6 py-4 text-green-600 text-sm">Full amount upfront, fixed rate available</td>
+                    <td className="px-6 py-4 text-red-600 text-sm">Interest accrues on full balance immediately</td>
                   </tr>
-                  <tr className="border-b border-white/5 bg-white/[0.02]">
-                    <td className="px-6 py-4 text-white font-medium">Line of Credit</td>
-                    <td className="px-6 py-4 text-slate-400">Emergency fund, flexibility</td>
-                    <td className="px-6 py-4 text-green-400 text-sm">Unused portion grows, draw as needed</td>
-                    <td className="px-6 py-4 text-red-400 text-sm">Variable rate only</td>
+                  <tr className="border-b border-slate-200 bg-slate-50">
+                    <td className="px-6 py-4 text-slate-900 font-medium">Line of Credit</td>
+                    <td className="px-6 py-4 text-slate-500">Emergency fund, flexibility</td>
+                    <td className="px-6 py-4 text-green-600 text-sm">Unused portion grows, draw as needed</td>
+                    <td className="px-6 py-4 text-red-600 text-sm">Variable rate only</td>
                   </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="px-6 py-4 text-white font-medium">Tenure (Lifetime)</td>
-                    <td className="px-6 py-4 text-slate-400">Long-term income supplement</td>
-                    <td className="px-6 py-4 text-green-400 text-sm">Guaranteed monthly income for life</td>
-                    <td className="px-6 py-4 text-red-400 text-sm">Lower payments than term option</td>
+                  <tr className="border-b border-slate-200">
+                    <td className="px-6 py-4 text-slate-900 font-medium">Tenure (Lifetime)</td>
+                    <td className="px-6 py-4 text-slate-500">Long-term income supplement</td>
+                    <td className="px-6 py-4 text-green-600 text-sm">Guaranteed monthly income for life</td>
+                    <td className="px-6 py-4 text-red-600 text-sm">Lower payments than term option</td>
                   </tr>
-                  <tr className="border-b border-white/5 bg-white/[0.02]">
-                    <td className="px-6 py-4 text-white font-medium">Term</td>
-                    <td className="px-6 py-4 text-slate-400">Bridge to other income</td>
-                    <td className="px-6 py-4 text-green-400 text-sm">Higher monthly payments</td>
-                    <td className="px-6 py-4 text-red-400 text-sm">Payments end after term</td>
+                  <tr className="border-b border-slate-200 bg-slate-50">
+                    <td className="px-6 py-4 text-slate-900 font-medium">Term</td>
+                    <td className="px-6 py-4 text-slate-500">Bridge to other income</td>
+                    <td className="px-6 py-4 text-green-600 text-sm">Higher monthly payments</td>
+                    <td className="px-6 py-4 text-red-600 text-sm">Payments end after term</td>
                   </tr>
                 </tbody>
               </table>
@@ -245,10 +245,10 @@ export default function ReverseMortgageCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Reverse Mortgage FAQs
             </h2>
 
@@ -277,16 +277,16 @@ export default function ReverseMortgageCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -296,17 +296,17 @@ export default function ReverseMortgageCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-800/30">
+      <section className="py-8 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates only. Actual reverse mortgage proceeds, rates, and fees
                     will vary based on your specific situation, lender, and market conditions. This is not
                     financial advice. Reverse mortgages are complex products with significant risks - consult
@@ -320,7 +320,7 @@ export default function ReverseMortgageCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

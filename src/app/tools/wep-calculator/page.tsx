@@ -123,7 +123,7 @@ const faqSchema = {
 
 export default function WEPCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -132,10 +132,10 @@ export default function WEPCalculatorPage() {
       <WEPCalculator />
 
       {/* WEP Facts Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Understanding the Windfall Elimination Provision
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -144,17 +144,17 @@ export default function WEPCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-red-400" />
+                        <Icon className="h-6 w-6 text-red-600" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -168,89 +168,89 @@ export default function WEPCalculatorPage() {
       </section>
 
       {/* How WEP Works */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                <Scale className="h-6 w-6 text-red-400" />
+                <Scale className="h-6 w-6 text-red-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 How the WEP Calculation Works
               </h2>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-white mb-4">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-slate-900 mb-4">
                   The WEP Formula
                 </h3>
-                <p className="text-slate-400 mb-4">
+                <p className="text-slate-500 mb-4">
                   Social Security normally replaces 90% of your first $1,174 (2024) of average monthly
                   earnings. WEP reduces this first &quot;bend point&quot; from 90% down to as low as 40%,
                   depending on your years of substantial earnings.
                 </p>
-                <div className="bg-slate-800 rounded-lg p-4 font-mono text-sm">
-                  <p className="text-slate-300 mb-2">Standard Formula: 90% of first $1,174 = $1,057</p>
-                  <p className="text-red-400">WEP Formula: 40% of first $1,174 = $470</p>
-                  <p className="text-amber-400 mt-2">Maximum Reduction: $587 (2024)</p>
+                <div className="bg-slate-100 rounded-lg p-4 font-mono text-sm">
+                  <p className="text-slate-600 mb-2">Standard Formula: 90% of first $1,174 = $1,057</p>
+                  <p className="text-red-600">WEP Formula: 40% of first $1,174 = $470</p>
+                  <p className="text-[#B22234] mt-2">Maximum Reduction: $587 (2024)</p>
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-white mb-4">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-slate-900 mb-4">
                   Years of Substantial Earnings Scale
                 </h3>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead>
-                      <tr className="border-b border-white/10">
-                        <th className="py-2 px-4 text-left text-slate-400">Years</th>
-                        <th className="py-2 px-4 text-left text-slate-400">WEP Percentage</th>
-                        <th className="py-2 px-4 text-left text-slate-400">First Bend Point Factor</th>
+                      <tr className="border-b border-slate-200">
+                        <th className="py-2 px-4 text-left text-slate-500">Years</th>
+                        <th className="py-2 px-4 text-left text-slate-500">WEP Percentage</th>
+                        <th className="py-2 px-4 text-left text-slate-500">First Bend Point Factor</th>
                       </tr>
                     </thead>
-                    <tbody className="text-slate-300">
-                      <tr className="border-b border-white/5">
+                    <tbody className="text-slate-600">
+                      <tr className="border-b border-slate-200">
                         <td className="py-2 px-4">20 or fewer</td>
-                        <td className="py-2 px-4 text-red-400">100% (Full WEP)</td>
+                        <td className="py-2 px-4 text-red-600">100% (Full WEP)</td>
                         <td className="py-2 px-4">40%</td>
                       </tr>
-                      <tr className="border-b border-white/5">
+                      <tr className="border-b border-slate-200">
                         <td className="py-2 px-4">21</td>
                         <td className="py-2 px-4">95%</td>
                         <td className="py-2 px-4">45%</td>
                       </tr>
-                      <tr className="border-b border-white/5">
+                      <tr className="border-b border-slate-200">
                         <td className="py-2 px-4">22</td>
                         <td className="py-2 px-4">90%</td>
                         <td className="py-2 px-4">50%</td>
                       </tr>
-                      <tr className="border-b border-white/5">
+                      <tr className="border-b border-slate-200">
                         <td className="py-2 px-4">...</td>
                         <td className="py-2 px-4">...</td>
                         <td className="py-2 px-4">...</td>
                       </tr>
-                      <tr className="border-b border-white/5">
+                      <tr className="border-b border-slate-200">
                         <td className="py-2 px-4">29</td>
                         <td className="py-2 px-4">55%</td>
                         <td className="py-2 px-4">85%</td>
                       </tr>
                       <tr className="bg-green-500/5">
-                        <td className="py-2 px-4 text-green-400 font-semibold">30+</td>
-                        <td className="py-2 px-4 text-green-400">0% (No WEP)</td>
-                        <td className="py-2 px-4 text-green-400">90% (Normal)</td>
+                        <td className="py-2 px-4 text-green-600 font-semibold">30+</td>
+                        <td className="py-2 px-4 text-green-600">0% (No WEP)</td>
+                        <td className="py-2 px-4 text-green-600">90% (Normal)</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-white mb-4">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-slate-900 mb-4">
                   The 50% Pension Guarantee
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-slate-500">
                   Your WEP reduction can never be more than 50% of your non-covered pension.
                   If you receive a $800/month government pension, your WEP reduction is capped
                   at $400 - even if the formula would otherwise produce a larger reduction.
@@ -262,49 +262,49 @@ export default function WEPCalculatorPage() {
       </section>
 
       {/* GPO Explained */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
                 <Users className="h-6 w-6 text-purple-400" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Government Pension Offset (GPO)
               </h2>
             </div>
 
             <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6 mb-6">
-              <p className="text-slate-300 mb-4">
+              <p className="text-slate-600 mb-4">
                 GPO is separate from WEP. While WEP reduces your <em>own</em> Social Security benefit,
                 GPO reduces <em>spousal or survivor</em> benefits you might receive based on a spouse&apos;s
                 Social Security record.
               </p>
-              <div className="bg-slate-800 rounded-lg p-4">
+              <div className="bg-slate-100 rounded-lg p-4">
                 <p className="text-purple-400 font-semibold">GPO Formula:</p>
-                <p className="text-slate-300 font-mono">
+                <p className="text-slate-600 font-mono">
                   Spousal Benefit - (Government Pension x 2/3) = Adjusted Benefit
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h4 className="text-white font-semibold mb-3">Example: GPO Elimination</h4>
-                <ul className="space-y-2 text-slate-400 text-sm">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h4 className="text-slate-900 font-semibold mb-3">Example: GPO Elimination</h4>
+                <ul className="space-y-2 text-slate-600 text-sm">
                   <li>Government pension: $2,400/month</li>
                   <li>Spousal benefit: $1,200/month</li>
                   <li>GPO reduction: $2,400 x 2/3 = $1,600</li>
-                  <li className="text-red-400 font-semibold">Adjusted benefit: $0 (completely eliminated)</li>
+                  <li className="text-red-600 font-semibold">Adjusted benefit: $0 (completely eliminated)</li>
                 </ul>
               </div>
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h4 className="text-white font-semibold mb-3">Example: Partial GPO</h4>
-                <ul className="space-y-2 text-slate-400 text-sm">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h4 className="text-slate-900 font-semibold mb-3">Example: Partial GPO</h4>
+                <ul className="space-y-2 text-slate-600 text-sm">
                   <li>Government pension: $900/month</li>
                   <li>Spousal benefit: $1,200/month</li>
                   <li>GPO reduction: $900 x 2/3 = $600</li>
-                  <li className="text-green-400 font-semibold">Adjusted benefit: $600/month</li>
+                  <li className="text-green-600 font-semibold">Adjusted benefit: $600/month</li>
                 </ul>
               </div>
             </div>
@@ -313,71 +313,71 @@ export default function WEPCalculatorPage() {
       </section>
 
       {/* Affected Workers */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Who Is Affected by WEP?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Building className="h-5 w-5 text-red-400" />
-                  <h3 className="text-lg font-semibold text-white">Commonly Affected</h3>
+                  <Building className="h-5 w-5 text-red-600" />
+                  <h3 className="text-lg font-semibold text-slate-900">Commonly Affected</h3>
                 </div>
-                <ul className="space-y-2 text-slate-400 text-sm">
+                <ul className="space-y-2 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Federal employees hired before 1984 (CSRS)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Some state and local government employees</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Teachers in certain states (15 states don&apos;t participate in SS)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Police officers and firefighters in some jurisdictions</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>People with foreign pensions</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Railroad employees (pre-1984)</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Briefcase className="h-5 w-5 text-green-400" />
-                  <h3 className="text-lg font-semibold text-white">Not Affected by WEP</h3>
+                  <Briefcase className="h-5 w-5 text-green-600" />
+                  <h3 className="text-lg font-semibold text-slate-900">Not Affected by WEP</h3>
                 </div>
-                <ul className="space-y-2 text-slate-400 text-sm">
+                <ul className="space-y-2 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Federal employees under FERS (hired after 1983)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>State/local employees who paid into Social Security</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Anyone with 30+ years of substantial SS earnings</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Most private sector workers</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span>Self-employed who paid SE tax</span>
                   </li>
                 </ul>
@@ -388,10 +388,10 @@ export default function WEPCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               WEP Frequently Asked Questions
             </h2>
 
@@ -424,16 +424,16 @@ export default function WEPCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -443,17 +443,17 @@ export default function WEPCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-800/30">
+      <section className="py-8 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates based on current WEP and GPO rules.
                     Actual Social Security calculations are complex and depend on your complete
                     earnings history. For an exact calculation, contact the Social Security
@@ -468,7 +468,7 @@ export default function WEPCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

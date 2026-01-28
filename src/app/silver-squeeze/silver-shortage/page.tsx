@@ -96,11 +96,11 @@ const schema = {
 
 export default function SilverShortagePage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
@@ -111,7 +111,7 @@ export default function SilverShortagePage() {
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
                             Silver Shortage 2026: Why Physical Silver Is Disappearing
                         </h1>
-                        <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
+                        <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
                             The numbers don&apos;t lie. Industrial demand is exploding. Investment buying is accelerating. Mine supply is flat. Physical silver is being drained from vaults faster than it can be replaced. Here&apos;s the evidence—and what it means for prices.
                         </p>
                     </div>
@@ -126,10 +126,10 @@ export default function SilverShortagePage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-secondary max-w-none">
 
                         {/* Intro Content */}
-                        <p className="lead text-xl text-slate-400">
+                        <p className="lead text-xl text-slate-600">
                             The global silver market has experienced consecutive years of supply deficits. What was once dismissed as a temporary imbalance is now looking increasingly permanent—and the implications for silver prices could be dramatic.
                         </p>
 
@@ -143,7 +143,7 @@ export default function SilverShortagePage() {
 
                         {/* Section 1: Evidence */}
                         <section id="shortage-evidence" className="scroll-mt-32">
-                            <h2 className="text-white">Current Silver Shortage Evidence</h2>
+                            <h2 className="text-slate-900">Current Silver Shortage Evidence</h2>
                             <p>
                                 The <strong>physical silver shortage</strong> isn&apos;t a prediction—it&apos;s happening now. Here are the key indicators:
                             </p>
@@ -151,60 +151,60 @@ export default function SilverShortagePage() {
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
                                     <TrendingDown className="w-8 h-8 text-red-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">COMEX Inventory Drain</h4>
-                                    <p className="text-sm text-slate-400">COMEX registered silver (available for delivery) has declined dramatically from peak levels. The drain accelerated after the 2021 silver squeeze movement began.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">COMEX Inventory Drain</h4>
+                                    <p className="text-sm text-slate-600">COMEX registered silver (available for delivery) has declined dramatically from peak levels. The drain accelerated after the 2021 silver squeeze movement began.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <BarChart3 className="w-8 h-8 text-amber-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Elevated Physical Premiums</h4>
-                                    <p className="text-sm text-slate-400">Physical silver consistently trades 15-30% above spot price. In a well-supplied market, premiums are typically 3-5%. The gap indicates physical scarcity.</p>
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 border border-amber-500/20">
+                                    <BarChart3 className="w-8 h-8 text-[#B22234] mb-4" />
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Elevated Physical Premiums</h4>
+                                    <p className="text-sm text-slate-600">Physical silver consistently trades 15-30% above spot price. In a well-supplied market, premiums are typically 3-5%. The gap indicates physical scarcity.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-orange-500/10 border border-orange-500/20">
                                     <Package className="w-8 h-8 text-orange-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Dealer Sellouts</h4>
-                                    <p className="text-sm text-slate-400">Major dealers regularly report being sold out of popular products. Wait times for silver Eagles and other coins have extended to weeks or months during demand surges.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Dealer Sellouts</h4>
+                                    <p className="text-sm text-slate-600">Major dealers regularly report being sold out of popular products. Wait times for silver Eagles and other coins have extended to weeks or months during demand surges.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-purple-500/10 border border-purple-500/20">
                                     <Factory className="w-8 h-8 text-purple-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Mint Rationing</h4>
-                                    <p className="text-sm text-slate-400">The US Mint has implemented allocation programs for Silver Eagles, limiting how many dealers can purchase. This is a direct admission of insufficient supply.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Mint Rationing</h4>
+                                    <p className="text-sm text-slate-600">The US Mint has implemented allocation programs for Silver Eagles, limiting how many dealers can purchase. This is a direct admission of insufficient supply.</p>
                                 </div>
                             </div>
 
-                            <h3 className="text-white">The Numbers Tell the Story</h3>
+                            <h3 className="text-slate-900">The Numbers Tell the Story</h3>
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Metric</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Status</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Trend</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Metric</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Status</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Trend</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Annual Supply/Demand</td>
+                                            <td className="p-4 font-semibold text-slate-900">Annual Supply/Demand</td>
                                             <td className="p-4 text-red-400 font-semibold">Deficit 200M+ oz</td>
                                             <td className="p-4">Deficit growing</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">COMEX Registered Silver</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">COMEX Registered Silver</td>
                                             <td className="p-4 text-red-400 font-semibold">Multi-year lows</td>
                                             <td className="p-4">Declining</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Physical Premiums</td>
-                                            <td className="p-4 text-amber-400 font-semibold">15-30% over spot</td>
+                                            <td className="p-4 font-semibold text-slate-900">Physical Premiums</td>
+                                            <td className="p-4 text-[#B22234] font-semibold">15-30% over spot</td>
                                             <td className="p-4">Elevated</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Industrial Demand</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">Industrial Demand</td>
                                             <td className="p-4 text-green-400 font-semibold">Record highs</td>
                                             <td className="p-4">Accelerating</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Mine Production</td>
-                                            <td className="p-4 text-slate-400">Flat</td>
+                                            <td className="p-4 font-semibold text-slate-900">Mine Production</td>
+                                            <td className="p-4 text-slate-600">Flat</td>
                                             <td className="p-4">Stagnant</td>
                                         </tr>
                                     </tbody>
@@ -214,25 +214,25 @@ export default function SilverShortagePage() {
 
                         {/* Section 2: Industrial Demand */}
                         <section id="industrial-demand" className="scroll-mt-32">
-                            <h2 className="text-white">Industrial Demand Surge: Solar, EVs, and Electronics</h2>
+                            <h2 className="text-slate-900">Industrial Demand Surge: Solar, EVs, and Electronics</h2>
                             <p>
                                 Silver isn&apos;t just a precious metal—it&apos;s an essential industrial commodity. And demand from green energy and technology is exploding at a rate that&apos;s outpacing new supply.
                             </p>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-6 flex items-center gap-2">
-                                    <Sun className="w-5 h-5 text-amber-400" />
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-6 flex items-center gap-2">
+                                    <Sun className="w-5 h-5 text-[#B22234]" />
                                     Silver&apos;s Critical Industrial Applications
                                 </h4>
 
                                 <div className="space-y-6">
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-12 h-12 rounded-lg bg-amber-500/20 flex items-center justify-center shrink-0">
-                                            <Sun className="w-6 h-6 text-amber-400" />
+                                        <div className="w-12 h-12 rounded-lg bg-[#B22234]/20 flex items-center justify-center shrink-0">
+                                            <Sun className="w-6 h-6 text-[#B22234]" />
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-white mb-1">Solar Panels</h5>
-                                            <p className="text-slate-400 text-sm">Each solar panel contains approximately 20 grams of silver paste for electrical contacts. With solar installations growing 25%+ annually, the industry is projected to consume 150-200 million ounces per year by decade&apos;s end—potentially 20%+ of total production.</p>
+                                            <h5 className="font-bold text-slate-900 mb-1">Solar Panels</h5>
+                                            <p className="text-slate-600 text-sm">Each solar panel contains approximately 20 grams of silver paste for electrical contacts. With solar installations growing 25%+ annually, the industry is projected to consume 150-200 million ounces per year by decade&apos;s end—potentially 20%+ of total production.</p>
                                         </div>
                                     </div>
 
@@ -241,8 +241,8 @@ export default function SilverShortagePage() {
                                             <Car className="w-6 h-6 text-green-400" />
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-white mb-1">Electric Vehicles</h5>
-                                            <p className="text-slate-400 text-sm">EVs use approximately 1-2 ounces of silver per vehicle—significantly more than traditional cars. As EV adoption accelerates toward 50%+ of new car sales, automotive silver demand could double or triple.</p>
+                                            <h5 className="font-bold text-slate-900 mb-1">Electric Vehicles</h5>
+                                            <p className="text-slate-600 text-sm">EVs use approximately 1-2 ounces of silver per vehicle—significantly more than traditional cars. As EV adoption accelerates toward 50%+ of new car sales, automotive silver demand could double or triple.</p>
                                         </div>
                                     </div>
 
@@ -251,8 +251,8 @@ export default function SilverShortagePage() {
                                             <Cpu className="w-6 h-6 text-blue-400" />
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-white mb-1">Electronics &amp; 5G</h5>
-                                            <p className="text-slate-400 text-sm">Silver&apos;s superior conductivity makes it essential for smartphones, computers, servers, and 5G infrastructure. The digital economy runs on silver.</p>
+                                            <h5 className="font-bold text-slate-900 mb-1">Electronics &amp; 5G</h5>
+                                            <p className="text-slate-600 text-sm">Silver&apos;s superior conductivity makes it essential for smartphones, computers, servers, and 5G infrastructure. The digital economy runs on silver.</p>
                                         </div>
                                     </div>
 
@@ -261,8 +261,8 @@ export default function SilverShortagePage() {
                                             <ShieldCheck className="w-6 h-6 text-purple-400" />
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-white mb-1">Medical &amp; Antimicrobial</h5>
-                                            <p className="text-slate-400 text-sm">Silver&apos;s antimicrobial properties are used in wound care, medical devices, and hospital surfaces. Post-pandemic, this application continues growing.</p>
+                                            <h5 className="font-bold text-slate-900 mb-1">Medical &amp; Antimicrobial</h5>
+                                            <p className="text-slate-600 text-sm">Silver&apos;s antimicrobial properties are used in wound care, medical devices, and hospital surfaces. Post-pandemic, this application continues growing.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -272,7 +272,7 @@ export default function SilverShortagePage() {
                                 Solar panel installations are growing exponentially as countries race to meet clean energy goals. The IEA projects solar capacity to triple by 2030. Even if silver content per panel decreases through technological advances, total silver demand from solar will likely multiply several times over.
                             </Callout>
 
-                            <h3 className="text-white">Silver Gets Consumed, Not Hoarded</h3>
+                            <h3 className="text-slate-900">Silver Gets Consumed, Not Hoarded</h3>
                             <p>
                                 Unlike gold (where 90%+ of all gold ever mined still exists), silver is consumed in industrial applications. Most electronics containing silver end up in landfills, where recovery is uneconomical. Solar panels have 25-30 year lifespans before recycling. This means:
                             </p>
@@ -285,12 +285,12 @@ export default function SilverShortagePage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose border border-slate-400/20">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose border border-[#B22234]/20">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Secure Your Silver Position</h3>
-                                <p className="mb-6 text-gray-300">Find out which precious metals company offers the best silver selection and pricing.</p>
-                                <Button variant="gold" size="lg" asChild>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Secure Your Silver Position</h3>
+                                <p className="mb-6 text-slate-600">Find out which precious metals company offers the best silver selection and pricing.</p>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                     <Link href="/quiz">Take the Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -298,27 +298,27 @@ export default function SilverShortagePage() {
 
                         {/* Section 3: Investment Demand */}
                         <section id="investment-demand" className="scroll-mt-32">
-                            <h2 className="text-white">Investment Demand Surge</h2>
+                            <h2 className="text-slate-900">Investment Demand Surge</h2>
                             <p>
                                 On top of record industrial demand, investment demand for silver has exploded. The <Link href="/silver-squeeze">silver squeeze movement</Link> awakened millions of retail investors to silver&apos;s potential—and they&apos;re accumulating physical metal at unprecedented rates.
                             </p>
 
                             <div className="grid md:grid-cols-3 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-center">
-                                    <div className="text-4xl font-bold text-white mb-2">200K+</div>
-                                    <div className="text-slate-400 text-sm">WallStreetSilver Reddit members stacking silver</div>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-slate-900 mb-2">200K+</div>
+                                    <div className="text-slate-600 text-sm">WallStreetSilver Reddit members stacking silver</div>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-center">
-                                    <div className="text-4xl font-bold text-amber-400 mb-2">Record</div>
-                                    <div className="text-slate-400 text-sm">Silver Eagle sales at US Mint (allocation limits in place)</div>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-[#B22234] mb-2">Record</div>
+                                    <div className="text-slate-600 text-sm">Silver Eagle sales at US Mint (allocation limits in place)</div>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-center">
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200 text-center">
                                     <div className="text-4xl font-bold text-green-400 mb-2">Global</div>
-                                    <div className="text-slate-400 text-sm">India silver imports at all-time highs</div>
+                                    <div className="text-slate-600 text-sm">India silver imports at all-time highs</div>
                                 </div>
                             </div>
 
-                            <h3 className="text-white">Why Investors Are Turning to Silver</h3>
+                            <h3 className="text-slate-900">Why Investors Are Turning to Silver</h3>
                             <ul>
                                 <li><strong>Inflation hedge:</strong> With inflation persistent, hard assets like silver preserve purchasing power</li>
                                 <li><strong>Undervalued vs gold:</strong> The gold-to-silver ratio suggests silver is historically cheap</li>
@@ -330,47 +330,47 @@ export default function SilverShortagePage() {
 
                         {/* Section 4: Supply Constraints */}
                         <section id="supply-constraints" className="scroll-mt-32">
-                            <h2 className="text-white">Mining Supply Constraints</h2>
+                            <h2 className="text-slate-900">Mining Supply Constraints</h2>
                             <p>
                                 While demand is surging, silver supply has barely budged. Global silver mine production has been essentially flat for the past decade, and there are fundamental reasons why this won&apos;t change quickly.
                             </p>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Why Silver Supply Can&apos;t Easily Increase</h4>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Why Silver Supply Can&apos;t Easily Increase</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <AlertTriangle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
+                                        <AlertTriangle className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
                                         <div>
-                                            <span className="text-white font-semibold">Byproduct Mining:</span>
-                                            <span className="text-slate-300"> 70% of silver comes as a byproduct from copper, zinc, and lead mining. You can&apos;t just &quot;mine more silver&quot;—you have to mine more base metals.</span>
+                                            <span className="text-slate-900 font-semibold">Byproduct Mining:</span>
+                                            <span className="text-slate-600"> 70% of silver comes as a byproduct from copper, zinc, and lead mining. You can&apos;t just &quot;mine more silver&quot;—you have to mine more base metals.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <AlertTriangle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
+                                        <AlertTriangle className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
                                         <div>
-                                            <span className="text-white font-semibold">Long Lead Times:</span>
-                                            <span className="text-slate-300"> New mines take 10-15 years from discovery to production. Even with higher prices, supply response is years away.</span>
+                                            <span className="text-slate-900 font-semibold">Long Lead Times:</span>
+                                            <span className="text-slate-600"> New mines take 10-15 years from discovery to production. Even with higher prices, supply response is years away.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <AlertTriangle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
+                                        <AlertTriangle className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
                                         <div>
-                                            <span className="text-white font-semibold">Declining Ore Grades:</span>
-                                            <span className="text-slate-300"> The easy silver has been found. Remaining deposits are lower grade, requiring more energy and processing per ounce.</span>
+                                            <span className="text-slate-900 font-semibold">Declining Ore Grades:</span>
+                                            <span className="text-slate-600"> The easy silver has been found. Remaining deposits are lower grade, requiring more energy and processing per ounce.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <AlertTriangle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
+                                        <AlertTriangle className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
                                         <div>
-                                            <span className="text-white font-semibold">ESG/Permitting Issues:</span>
-                                            <span className="text-slate-300"> Environmental regulations make new mining projects increasingly difficult to permit, especially in developed countries.</span>
+                                            <span className="text-slate-900 font-semibold">ESG/Permitting Issues:</span>
+                                            <span className="text-slate-600"> Environmental regulations make new mining projects increasingly difficult to permit, especially in developed countries.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <AlertTriangle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
+                                        <AlertTriangle className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
                                         <div>
-                                            <span className="text-white font-semibold">Underinvestment:</span>
-                                            <span className="text-slate-300"> Years of low silver prices discouraged exploration. There&apos;s a pipeline shortage of new projects ready to develop.</span>
+                                            <span className="text-slate-900 font-semibold">Underinvestment:</span>
+                                            <span className="text-slate-600"> Years of low silver prices discouraged exploration. There&apos;s a pipeline shortage of new projects ready to develop.</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -383,40 +383,40 @@ export default function SilverShortagePage() {
 
                         {/* Section 5: Price Implications */}
                         <section id="price-implications" className="scroll-mt-32">
-                            <h2 className="text-white">What This Means for Silver Prices</h2>
+                            <h2 className="text-slate-900">What This Means for Silver Prices</h2>
                             <p>
                                 Simple economics: when demand exceeds supply and inventories are depleting, prices must eventually rise to restore equilibrium. The question isn&apos;t <em>if</em> silver prices will respond to the shortage—it&apos;s <em>when</em> and <em>how much</em>.
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Scenario</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Price Implication</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Probability</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Scenario</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Price Implication</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Probability</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Status Quo</td>
+                                            <td className="p-4 font-semibold text-slate-900">Status Quo</td>
                                             <td className="p-4">Gradual rise to $40-50 as deficits persist</td>
-                                            <td className="p-4 text-amber-400">Moderate</td>
+                                            <td className="p-4 text-[#B22234]">Moderate</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Industrial Demand Surge</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">Industrial Demand Surge</td>
                                             <td className="p-4">$50-75 as solar/EV demand accelerates</td>
-                                            <td className="p-4 text-amber-400">Moderate-High</td>
+                                            <td className="p-4 text-[#B22234]">Moderate-High</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Investment Mania + Shortage</td>
+                                            <td className="p-4 font-semibold text-slate-900">Investment Mania + Shortage</td>
                                             <td className="p-4">$75-100+ (2011-style spike)</td>
                                             <td className="p-4 text-green-400">Possible</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Paper Market Break</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">Paper Market Break</td>
                                             <td className="p-4">$100-150+ if COMEX can&apos;t deliver</td>
-                                            <td className="p-4 text-slate-400">Lower (but growing)</td>
+                                            <td className="p-4 text-slate-600">Lower (but growing)</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -429,49 +429,49 @@ export default function SilverShortagePage() {
 
                         {/* Section 6: How to Secure Silver */}
                         <section id="secure-silver" className="scroll-mt-32">
-                            <h2 className="text-white">How to Secure Physical Silver Before Shortages Worsen</h2>
+                            <h2 className="text-slate-900">How to Secure Physical Silver Before Shortages Worsen</h2>
                             <p>
                                 If you believe a <strong>physical silver shortage</strong> will drive prices significantly higher, the time to act is before the shortage becomes acute. Here&apos;s how to position yourself:
                             </p>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4 flex items-center gap-2">
-                                    <Lock className="w-5 h-5 text-amber-400" />
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
+                                    <Lock className="w-5 h-5 text-[#B22234]" />
                                     Strategies for Securing Silver
                                 </h4>
                                 <div className="space-y-4">
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">1</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234]/20 text-[#B22234] flex items-center justify-center font-bold shrink-0">1</div>
                                         <div>
-                                            <strong className="text-white">Silver IRA</strong>
-                                            <p className="text-slate-400 text-sm mt-1">Roll over existing retirement funds into physical silver with tax advantages. See our <Link href="/guide/silver-ira-guide" className="text-secondary hover:underline">Silver IRA Guide</Link>.</p>
+                                            <strong className="text-slate-900">Silver IRA</strong>
+                                            <p className="text-slate-600 text-sm mt-1">Roll over existing retirement funds into physical silver with tax advantages. See our <Link href="/guide/silver-ira-guide" className="text-secondary hover:underline">Silver IRA Guide</Link>.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">2</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234]/20 text-[#B22234] flex items-center justify-center font-bold shrink-0">2</div>
                                         <div>
-                                            <strong className="text-white">Physical Stacking</strong>
-                                            <p className="text-slate-400 text-sm mt-1">Buy silver coins and bars for home storage or private vaulting. See our <Link href="/silver-squeeze/silver-stacking-guide" className="text-secondary hover:underline">Silver Stacking Guide</Link>.</p>
+                                            <strong className="text-slate-900">Physical Stacking</strong>
+                                            <p className="text-slate-600 text-sm mt-1">Buy silver coins and bars for home storage or private vaulting. See our <Link href="/silver-squeeze/silver-stacking-guide" className="text-secondary hover:underline">Silver Stacking Guide</Link>.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">3</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234]/20 text-[#B22234] flex items-center justify-center font-bold shrink-0">3</div>
                                         <div>
-                                            <strong className="text-white">PSLV</strong>
-                                            <p className="text-slate-400 text-sm mt-1">Sprott Physical Silver Trust holds allocated silver. Unlike SLV, Sprott actually takes delivery and drains COMEX inventory.</p>
+                                            <strong className="text-slate-900">PSLV</strong>
+                                            <p className="text-slate-600 text-sm mt-1">Sprott Physical Silver Trust holds allocated silver. Unlike SLV, Sprott actually takes delivery and drains COMEX inventory.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">4</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234]/20 text-[#B22234] flex items-center justify-center font-bold shrink-0">4</div>
                                         <div>
-                                            <strong className="text-white">Dollar-Cost Average</strong>
-                                            <p className="text-slate-400 text-sm mt-1">Buy regularly rather than all at once. This reduces timing risk and ensures you accumulate during dips.</p>
+                                            <strong className="text-slate-900">Dollar-Cost Average</strong>
+                                            <p className="text-slate-600 text-sm mt-1">Buy regularly rather than all at once. This reduces timing risk and ensures you accumulate during dips.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <h3 className="text-white">Avoid Paper Silver</h3>
+                            <h3 className="text-slate-900">Avoid Paper Silver</h3>
                             <p>
                                 In a true shortage, paper silver (like SLV) may not track physical prices. These products don&apos;t take delivery from COMEX—they&apos;re part of the problem, not the solution. Stick with:
                             </p>
@@ -484,61 +484,61 @@ export default function SilverShortagePage() {
 
                         {/* FAQ Section */}
                         <section id="faq" className="scroll-mt-32">
-                            <h2 className="text-white">Silver Shortage FAQs</h2>
+                            <h2 className="text-slate-900">Silver Shortage FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is there really a silver shortage in 2026?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Yes. The silver market has been in a supply deficit since 2021, with demand exceeding mine production by hundreds of millions of ounces annually. COMEX registered inventory has declined significantly, and physical premiums remain elevated 15-30% above spot prices—a clear indicator of physical scarcity.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Why is silver in short supply?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Three factors are driving the shortage: 1) Industrial demand has surged due to solar panels, EVs, and electronics—each growing at double-digit rates; 2) Investment demand has increased as millions of retail investors accumulate physical silver; 3) Mining supply has stagnated with few new major silver mines coming online and long lead times for new projects.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">How much silver do solar panels use?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         A typical solar panel uses approximately 20 grams of silver in its electrical contacts. With solar installation growing at 25%+ annually, the solar industry alone is projected to consume 150-200 million ounces per year by decade&apos;s end. Some projections suggest solar could eventually consume the majority of global silver production.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What happens when silver runs out?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Unlike gold (which is hoarded and recycled), silver is consumed in industrial applications and often uneconomical to recycle at current prices. If physical shortages become severe, prices would need to rise dramatically to: 1) incentivize more mining, 2) make recycling economical, and 3) reduce demand through substitution. In extreme scenarios, industrial users might face supply rationing or allocation.
                                     </p>
                                 </details>
@@ -546,16 +546,16 @@ export default function SilverShortagePage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white relative overflow-hidden not-prose border border-slate-400/20">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose border border-[#B22234]/20">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Secure Silver Before the Shortage Worsens</h3>
-                                <p className="mb-6 text-gray-300 max-w-xl mx-auto">Physical silver is disappearing from vaults. Position yourself with a Silver IRA before premiums rise further.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Secure Silver Before the Shortage Worsens</h3>
+                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">Physical silver is disappearing from vaults. Position yourself with a Silver IRA before premiums rise further.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                         <Link href="/quiz">Find the Right Company <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/silver-squeeze">Silver Squeeze Overview</Link>
                                     </Button>
                                 </div>
@@ -569,7 +569,7 @@ export default function SilverShortagePage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" linkContext="silver" trackSource="silver-shortage" />
                 </Container>

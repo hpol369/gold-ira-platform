@@ -49,24 +49,24 @@ export default function KingdomTrustReviewPage() {
     const augustaLink = getTrackedLink(AFFILIATE_LINKS.augusta, "review-kingdom-trust-cta", "augusta");
 
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 relative overflow-hidden">
+            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 text-blue-400 text-sm font-bold uppercase tracking-wider mb-4">
+                        <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
                             <span className="bg-blue-500/20 px-3 py-1 rounded-full">Crypto IRA Custodian Reviews</span>
-                            <span className="text-slate-500">|</span>
-                            <span className="text-slate-400">Updated January 2026</span>
+                            <span className="text-white/50">|</span>
+                            <span className="text-white/70">Updated January 2026</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                             Kingdom Trust Review 2026: <br />
-                            <span className="text-slate-400">Alternative Asset Specialist</span>
+                            <span className="text-white/70">Alternative Asset Specialist</span>
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                        <p className="text-xl text-white/80 max-w-2xl leading-relaxed">
                             Kingdom Trust specializes in alternative assets, particularly cryptocurrency. With $17+ billion in custody and support for 200+ cryptos, they are a major player in the crypto IRA space.
                         </p>
                     </div>
@@ -91,56 +91,56 @@ export default function KingdomTrustReviewPage() {
                             />
 
                             {/* Quick Facts */}
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 mb-8">
-                                <h2 className="text-xl font-serif font-bold text-white mb-4">Kingdom Trust at a Glance</h2>
+                            <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8">
+                                <h2 className="text-xl font-serif font-bold text-[#000080] mb-4">Kingdom Trust at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
-                                        <Building2 className="w-5 h-5 text-blue-400" />
+                                        <Building2 className="w-5 h-5 text-blue-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Founded</p>
-                                            <p className="text-white font-medium">{companyData.founded}</p>
+                                            <p className="text-slate-500 text-sm">Founded</p>
+                                            <p className="text-slate-900 font-medium">{companyData.founded}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <DollarSign className="w-5 h-5 text-green-400" />
+                                        <DollarSign className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Assets Under Custody</p>
-                                            <p className="text-white font-medium">{companyData.assetsUnderCustody}</p>
+                                            <p className="text-slate-500 text-sm">Assets Under Custody</p>
+                                            <p className="text-slate-900 font-medium">{companyData.assetsUnderCustody}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Bitcoin className="w-5 h-5 text-orange-400" />
+                                        <Bitcoin className="w-5 h-5 text-orange-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Crypto Support</p>
-                                            <p className="text-white font-medium">{companyData.cryptoSupport}</p>
+                                            <p className="text-slate-500 text-sm">Crypto Support</p>
+                                            <p className="text-slate-900 font-medium">{companyData.cryptoSupport}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Shield className="w-5 h-5 text-amber-400" />
+                                        <Shield className="w-5 h-5 text-[#B22234]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">BBB Rating</p>
-                                            <p className="text-white font-medium">{companyData.bbbRating}</p>
+                                            <p className="text-slate-500 text-sm">BBB Rating</p>
+                                            <p className="text-slate-900 font-medium">{companyData.bbbRating}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Lock className="w-5 h-5 text-purple-400" />
+                                        <Lock className="w-5 h-5 text-purple-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Specialty</p>
-                                            <p className="text-white font-medium">{companyData.specialty}</p>
+                                            <p className="text-slate-500 text-sm">Specialty</p>
+                                            <p className="text-slate-900 font-medium">{companyData.specialty}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Star className="w-5 h-5 text-teal-400" />
+                                        <Star className="w-5 h-5 text-teal-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Best For</p>
-                                            <p className="text-white font-medium text-sm">Crypto IRA investors</p>
+                                            <p className="text-slate-500 text-sm">Best For</p>
+                                            <p className="text-slate-900 font-medium text-sm">Crypto IRA investors</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Article Content */}
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-blue-400 hover:prose-a:text-blue-300">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-blue-600 hover:prose-a:text-blue-700">
 
                                 <h2>What is Kingdom Trust?</h2>
                                 <p>
@@ -173,34 +173,34 @@ export default function KingdomTrustReviewPage() {
                                     Kingdom Trust&apos;s fees vary depending on whether you access their services directly or through a partner platform like Choice:
                                 </p>
 
-                                <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-white/5">
+                                        <thead className="bg-slate-100">
                                             <tr>
-                                                <th className="text-left p-4 text-white font-semibold">Fee Type</th>
-                                                <th className="text-left p-4 text-white font-semibold">Amount</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Amount</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-white/10">
+                                        <tbody className="divide-y divide-slate-200">
                                             <tr>
-                                                <td className="p-4 text-slate-300">Account Setup</td>
-                                                <td className="p-4 text-slate-300">$0 - $50 (varies by partner)</td>
+                                                <td className="p-4 text-slate-600">Account Setup</td>
+                                                <td className="p-4 text-slate-600">$0 - $50 (varies by partner)</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Annual Custody Fee</td>
-                                                <td className="p-4 text-slate-300">0.5% - 1% of assets (or flat fee)</td>
+                                                <td className="p-4 text-slate-600">Annual Custody Fee</td>
+                                                <td className="p-4 text-slate-600">0.5% - 1% of assets (or flat fee)</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Trading Fee (via Choice)</td>
-                                                <td className="p-4 text-slate-300">1% per trade</td>
+                                                <td className="p-4 text-slate-600">Trading Fee (via Choice)</td>
+                                                <td className="p-4 text-slate-600">1% per trade</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Wire Transfer</td>
-                                                <td className="p-4 text-slate-300">$25 - $30</td>
+                                                <td className="p-4 text-slate-600">Wire Transfer</td>
+                                                <td className="p-4 text-slate-600">$25 - $30</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Account Termination</td>
-                                                <td className="p-4 text-slate-300">$75 - $100</td>
+                                                <td className="p-4 text-slate-600">Account Termination</td>
+                                                <td className="p-4 text-slate-600">$75 - $100</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -218,25 +218,25 @@ export default function KingdomTrustReviewPage() {
 
                             {/* Crypto Features Grid */}
                             <div className="grid sm:grid-cols-2 gap-4 my-8">
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <Bitcoin className="w-6 h-6 text-orange-400" />
-                                    <span className="text-white">Bitcoin (BTC)</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <Bitcoin className="w-6 h-6 text-orange-600" />
+                                    <span className="text-slate-900">Bitcoin (BTC)</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <TrendingUp className="w-6 h-6 text-blue-400" />
-                                    <span className="text-white">Ethereum (ETH)</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <TrendingUp className="w-6 h-6 text-blue-600" />
+                                    <span className="text-slate-900">Ethereum (ETH)</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <Coins className="w-6 h-6 text-green-400" />
-                                    <span className="text-white">200+ Altcoins</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <Coins className="w-6 h-6 text-green-600" />
+                                    <span className="text-slate-900">200+ Altcoins</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <Lock className="w-6 h-6 text-purple-400" />
-                                    <span className="text-white">Institutional Cold Storage</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <Lock className="w-6 h-6 text-purple-600" />
+                                    <span className="text-slate-900">Institutional Cold Storage</span>
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-blue-400">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-blue-600">
 
                                 <h2>Choice by Kingdom Trust</h2>
                                 <p>
@@ -256,46 +256,46 @@ export default function KingdomTrustReviewPage() {
                                 <h2>Kingdom Trust vs Competitors</h2>
                             </div>
 
-                            <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden my-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden my-8">
                                 <table className="w-full text-sm">
-                                    <thead className="bg-white/5">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="text-left p-4 text-white font-semibold">Feature</th>
-                                            <th className="text-left p-4 text-white font-semibold">Kingdom Trust</th>
-                                            <th className="text-left p-4 text-white font-semibold">iTrustCapital</th>
-                                            <th className="text-left p-4 text-white font-semibold">Alto IRA</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Kingdom Trust</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">iTrustCapital</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Alto IRA</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10">
+                                    <tbody className="divide-y divide-slate-200">
                                         <tr>
-                                            <td className="p-4 text-slate-300"># of Cryptos</td>
-                                            <td className="p-4 text-green-400 font-medium">200+</td>
-                                            <td className="p-4 text-slate-300">30+</td>
-                                            <td className="p-4 text-green-400 font-medium">200+</td>
+                                            <td className="p-4 text-slate-600"># of Cryptos</td>
+                                            <td className="p-4 text-green-600 font-medium">200+</td>
+                                            <td className="p-4 text-slate-600">30+</td>
+                                            <td className="p-4 text-green-600 font-medium">200+</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Trading Fee</td>
-                                            <td className="p-4 text-slate-300">1%</td>
-                                            <td className="p-4 text-green-400 font-medium">1% (flat)</td>
-                                            <td className="p-4 text-slate-300">1% + spread</td>
+                                            <td className="p-4 text-slate-600">Trading Fee</td>
+                                            <td className="p-4 text-slate-600">1%</td>
+                                            <td className="p-4 text-green-600 font-medium">1% (flat)</td>
+                                            <td className="p-4 text-slate-600">1% + spread</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Precious Metals</td>
-                                            <td className="p-4"><XCircle className="w-5 h-5 text-red-400" /></td>
-                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
-                                            <td className="p-4"><XCircle className="w-5 h-5 text-red-400" /></td>
+                                            <td className="p-4 text-slate-600">Precious Metals</td>
+                                            <td className="p-4"><XCircle className="w-5 h-5 text-red-500" /></td>
+                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
+                                            <td className="p-4"><XCircle className="w-5 h-5 text-red-500" /></td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Institutional Custody</td>
-                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
-                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
-                                            <td className="p-4 text-slate-300">Via Coinbase</td>
+                                            <td className="p-4 text-slate-600">Institutional Custody</td>
+                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
+                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
+                                            <td className="p-4 text-slate-600">Via Coinbase</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-blue-400">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-blue-600">
 
                                 <h2>Who Should Use Kingdom Trust?</h2>
                                 <ul>
@@ -312,7 +312,7 @@ export default function KingdomTrustReviewPage() {
                                     <li><strong>Traditional IRA investors</strong> - stick with Equity Trust or similar</li>
                                 </ul>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict</h2>
                                 <p>
@@ -325,7 +325,7 @@ export default function KingdomTrustReviewPage() {
 
                             {/* FAQ Section */}
                             <div className="mt-12">
-                                <h2 className="text-2xl font-serif font-bold text-white mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {[
                                         {
@@ -345,56 +345,59 @@ export default function KingdomTrustReviewPage() {
                                             a: "Choice is Kingdom Trust's consumer-facing platform for crypto IRA trading. It offers 24/7 trading, 30+ cryptocurrencies, and a 1% trading fee with no monthly account fees."
                                         },
                                     ].map((faq, i) => (
-                                        <div key={i} className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                            <h3 className="font-bold text-white mb-2">{faq.q}</h3>
-                                            <p className="text-slate-400 text-sm">{faq.a}</p>
+                                        <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
+                                            <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
+                                            <p className="text-slate-600 text-sm">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Augusta CTA */}
-                            <div className="bg-gradient-to-br from-amber-900/50 to-slate-900 text-white p-8 rounded-2xl text-center mt-12 border border-amber-500/20">
-                                <h3 className="text-2xl font-serif font-bold mb-4">Prefer Physical Gold Over Crypto?</h3>
-                                <p className="mb-6 text-slate-300 max-w-lg mx-auto">
-                                    If you want tangible assets in your retirement account, consider a Gold IRA. Augusta Precious Metals is our top-rated Gold IRA company.
-                                </p>
-                                <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
-                                    <a href={augustaLink} target="_blank" rel="noopener noreferrer">
-                                        Get Augusta&apos;s Free Gold IRA Guide
-                                        <ArrowRight className="ml-2 w-5 h-5" />
-                                    </a>
-                                </Button>
-                                <p className="text-xs text-slate-500 mt-4">$50k minimum | Up to 10 years fees waived | A+ BBB Rating</p>
+                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                                <div className="relative z-10">
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Prefer Physical Gold Over Crypto?</h3>
+                                    <p className="mb-6 text-white/80 max-w-lg mx-auto">
+                                        If you want tangible assets in your retirement account, consider a Gold IRA. Augusta Precious Metals is our top-rated Gold IRA company.
+                                    </p>
+                                    <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
+                                        <a href={augustaLink} target="_blank" rel="noopener noreferrer">
+                                            Get Augusta&apos;s Free Gold IRA Guide
+                                            <ArrowRight className="ml-2 w-5 h-5" />
+                                        </a>
+                                    </Button>
+                                    <p className="text-xs text-white/60 mt-4">$50k minimum | Up to 10 years fees waived | A+ BBB Rating</p>
+                                </div>
                             </div>
                         </article>
 
                         {/* Sidebar */}
                         <aside className="relative">
                             <div className="hidden lg:block sticky top-24 space-y-6">
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-white">Compare Crypto IRAs</h3>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Compare Crypto IRAs</h3>
                                     <div className="space-y-3">
-                                        <Link href="/reviews/itrustcapital" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/reviews/itrustcapital" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             iTrustCapital Review
                                         </Link>
-                                        <Link href="/reviews/alto-ira" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/reviews/alto-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Alto IRA Review
                                         </Link>
-                                        <Link href="/best-crypto-ira-companies" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/best-crypto-ira-companies" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Best Crypto IRA Companies
                                         </Link>
                                     </div>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-xl border border-white/10 text-center">
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
                                     <div className="flex justify-center gap-1 mb-2">
                                         {[1,2,3,4,5].map(i => (
-                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-amber-400 fill-amber-400' : 'text-amber-400/30'}`} />
+                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#B22234] fill-[#B22234]' : 'text-[#B22234]/30'}`} />
                                         ))}
                                     </div>
-                                    <p className="text-white font-bold">4.4 / 5</p>
-                                    <p className="text-slate-400 text-xs mt-1">Our Rating</p>
+                                    <p className="text-[#000080] font-bold">4.4 / 5</p>
+                                    <p className="text-slate-500 text-xs mt-1">Our Rating</p>
                                 </div>
                             </div>
                         </aside>

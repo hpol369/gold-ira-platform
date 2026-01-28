@@ -51,24 +51,24 @@ export default function ITrustCapitalReviewPage() {
     const affiliateLink = getTrackedLink(AFFILIATE_LINKS.itrustcapital, "review-itrustcapital", "itrustcapital");
 
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 relative overflow-hidden">
+            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 text-blue-400 text-sm font-bold uppercase tracking-wider mb-4">
+                        <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
                             <span className="bg-blue-500/20 px-3 py-1 rounded-full">Crypto IRA Reviews</span>
-                            <span className="text-slate-500">•</span>
-                            <span className="text-slate-400">Updated January 2026</span>
+                            <span className="text-white/50">•</span>
+                            <span className="text-white/70">Updated January 2026</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                             iTrustCapital Review 2026: <br />
-                            <span className="text-slate-400">The Best Crypto IRA?</span>
+                            <span className="text-white/70">The Best Crypto IRA?</span>
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                        <p className="text-xl text-white/80 max-w-2xl leading-relaxed">
                             With 1% trading fees and 24/7 access, iTrustCapital has become the go-to platform for crypto retirement accounts. But is it right for you? Here's our honest analysis.
                         </p>
                     </div>
@@ -93,56 +93,56 @@ export default function ITrustCapitalReviewPage() {
                             />
 
                             {/* Quick Facts Card */}
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 mb-8">
-                                <h2 className="text-xl font-serif font-bold text-white mb-4">iTrustCapital at a Glance</h2>
+                            <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8">
+                                <h2 className="text-xl font-serif font-bold text-[#000080] mb-4">iTrustCapital at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
-                                        <Building2 className="w-5 h-5 text-blue-400" />
+                                        <Building2 className="w-5 h-5 text-blue-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Founded</p>
-                                            <p className="text-white font-medium">{companyData.founded}</p>
+                                            <p className="text-slate-500 text-sm">Founded</p>
+                                            <p className="text-slate-900 font-medium">{companyData.founded}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <DollarSign className="w-5 h-5 text-green-400" />
+                                        <DollarSign className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Minimum Investment</p>
-                                            <p className="text-white font-medium">{companyData.minimum}</p>
+                                            <p className="text-slate-500 text-sm">Minimum Investment</p>
+                                            <p className="text-slate-900 font-medium">{companyData.minimum}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <TrendingUp className="w-5 h-5 text-amber-400" />
+                                        <TrendingUp className="w-5 h-5 text-[#B22234]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Trading Fee</p>
-                                            <p className="text-white font-medium">{companyData.tradingFee}</p>
+                                            <p className="text-slate-500 text-sm">Trading Fee</p>
+                                            <p className="text-slate-900 font-medium">{companyData.tradingFee}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Clock className="w-5 h-5 text-purple-400" />
+                                        <Clock className="w-5 h-5 text-purple-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Monthly Fee</p>
-                                            <p className="text-white font-medium">{companyData.monthlyFee}</p>
+                                            <p className="text-slate-500 text-sm">Monthly Fee</p>
+                                            <p className="text-slate-900 font-medium">{companyData.monthlyFee}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Coins className="w-5 h-5 text-orange-400" />
+                                        <Coins className="w-5 h-5 text-orange-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Assets</p>
-                                            <p className="text-white font-medium">{companyData.supportedAssets}</p>
+                                            <p className="text-slate-500 text-sm">Assets</p>
+                                            <p className="text-slate-900 font-medium">{companyData.supportedAssets}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Shield className="w-5 h-5 text-green-400" />
+                                        <Shield className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">BBB Rating</p>
-                                            <p className="text-white font-medium">{companyData.bbbRating}</p>
+                                            <p className="text-slate-500 text-sm">BBB Rating</p>
+                                            <p className="text-slate-900 font-medium">{companyData.bbbRating}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Article Content */}
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-blue-400 hover:prose-a:text-blue-300">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-blue-600 hover:prose-a:text-blue-700">
 
                                 <h2>What is iTrustCapital?</h2>
                                 <p>
@@ -177,35 +177,35 @@ export default function ITrustCapitalReviewPage() {
                                     iTrustCapital's fee structure is one of their biggest competitive advantages. Here's exactly what you'll pay:
                                 </p>
 
-                                <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-white/5">
+                                        <thead className="bg-slate-100">
                                             <tr>
-                                                <th className="text-left p-4 text-white font-semibold">Fee Type</th>
-                                                <th className="text-left p-4 text-white font-semibold">iTrustCapital</th>
-                                                <th className="text-left p-4 text-white font-semibold">Industry Average</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">iTrustCapital</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Industry Average</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-white/10">
+                                        <tbody className="divide-y divide-slate-200">
                                             <tr>
-                                                <td className="p-4 text-slate-300">Account Setup</td>
-                                                <td className="p-4 text-green-400 font-medium">$0</td>
-                                                <td className="p-4 text-slate-400">$50-$100</td>
+                                                <td className="p-4 text-slate-600">Account Setup</td>
+                                                <td className="p-4 text-green-600 font-medium">$0</td>
+                                                <td className="p-4 text-slate-500">$50-$100</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Monthly Fee</td>
-                                                <td className="p-4 text-green-400 font-medium">$0</td>
-                                                <td className="p-4 text-slate-400">$20-$50</td>
+                                                <td className="p-4 text-slate-600">Monthly Fee</td>
+                                                <td className="p-4 text-green-600 font-medium">$0</td>
+                                                <td className="p-4 text-slate-500">$20-$50</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Trading Fee</td>
-                                                <td className="p-4 text-amber-400 font-medium">1% per trade</td>
-                                                <td className="p-4 text-slate-400">1.5%-3%</td>
+                                                <td className="p-4 text-slate-600">Trading Fee</td>
+                                                <td className="p-4 text-[#B22234] font-medium">1% per trade</td>
+                                                <td className="p-4 text-slate-500">1.5%-3%</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Gold/Silver Fee</td>
-                                                <td className="p-4 text-amber-400 font-medium">1% over spot + $50/yr storage</td>
-                                                <td className="p-4 text-slate-400">Varies widely</td>
+                                                <td className="p-4 text-slate-600">Gold/Silver Fee</td>
+                                                <td className="p-4 text-[#B22234] font-medium">1% over spot + $50/yr storage</td>
+                                                <td className="p-4 text-slate-500">Varies widely</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -248,12 +248,12 @@ export default function ITrustCapitalReviewPage() {
                                     Rollovers typically take 1-3 weeks to complete. Once funded, you have full control to trade whenever you want—even nights and weekends when traditional markets are closed.
                                 </p>
 
-                                <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6 not-prose my-8">
+                                <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 not-prose my-8">
                                     <div className="flex gap-4">
-                                        <AlertTriangle className="w-6 h-6 text-amber-400 flex-shrink-0 mt-1" />
+                                        <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                                         <div>
-                                            <h4 className="font-bold text-white mb-2">Important: Tax Implications</h4>
-                                            <p className="text-slate-300 text-sm">
+                                            <h4 className="font-bold text-amber-800 mb-2">Important: Tax Implications</h4>
+                                            <p className="text-amber-700 text-sm">
                                                 While crypto IRAs offer tax advantages, there are specific rules. Early withdrawals (before 59½) may trigger penalties. Consult a tax professional before rolling over funds. iTrustCapital provides tax forms but not tax advice.
                                             </p>
                                         </div>
@@ -262,52 +262,52 @@ export default function ITrustCapitalReviewPage() {
 
                                 <h2>iTrustCapital vs Competitors</h2>
 
-                                <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-white/5">
+                                        <thead className="bg-slate-100">
                                             <tr>
-                                                <th className="text-left p-4 text-white font-semibold">Feature</th>
-                                                <th className="text-left p-4 text-white font-semibold">iTrustCapital</th>
-                                                <th className="text-left p-4 text-white font-semibold">Alto IRA</th>
-                                                <th className="text-left p-4 text-white font-semibold">Bitcoin IRA</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">iTrustCapital</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Alto IRA</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Bitcoin IRA</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-white/10">
+                                        <tbody className="divide-y divide-slate-200">
                                             <tr>
-                                                <td className="p-4 text-slate-300">Trading Fee</td>
-                                                <td className="p-4 text-green-400 font-medium">1%</td>
-                                                <td className="p-4 text-slate-300">1%</td>
-                                                <td className="p-4 text-red-400">2%+</td>
+                                                <td className="p-4 text-slate-600">Trading Fee</td>
+                                                <td className="p-4 text-green-600 font-medium">1%</td>
+                                                <td className="p-4 text-slate-600">1%</td>
+                                                <td className="p-4 text-red-600">2%+</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Monthly Fee</td>
-                                                <td className="p-4 text-green-400 font-medium">$0</td>
-                                                <td className="p-4 text-slate-300">$0</td>
-                                                <td className="p-4 text-red-400">$20+</td>
+                                                <td className="p-4 text-slate-600">Monthly Fee</td>
+                                                <td className="p-4 text-green-600 font-medium">$0</td>
+                                                <td className="p-4 text-slate-600">$0</td>
+                                                <td className="p-4 text-red-600">$20+</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Minimum</td>
-                                                <td className="p-4 text-slate-300">$1,000</td>
-                                                <td className="p-4 text-green-400 font-medium">$0</td>
-                                                <td className="p-4 text-slate-300">$3,000</td>
+                                                <td className="p-4 text-slate-600">Minimum</td>
+                                                <td className="p-4 text-slate-600">$1,000</td>
+                                                <td className="p-4 text-green-600 font-medium">$0</td>
+                                                <td className="p-4 text-slate-600">$3,000</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">24/7 Trading</td>
-                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
-                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
-                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
+                                                <td className="p-4 text-slate-600">24/7 Trading</td>
+                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
+                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
+                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Gold/Silver</td>
-                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
-                                                <td className="p-4"><XCircle className="w-5 h-5 text-red-400" /></td>
-                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
+                                                <td className="p-4 text-slate-600">Gold/Silver</td>
+                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
+                                                <td className="p-4"><XCircle className="w-5 h-5 text-red-500" /></td>
+                                                <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300"># of Cryptos</td>
-                                                <td className="p-4 text-slate-300">30+</td>
-                                                <td className="p-4 text-green-400 font-medium">200+</td>
-                                                <td className="p-4 text-slate-300">60+</td>
+                                                <td className="p-4 text-slate-600"># of Cryptos</td>
+                                                <td className="p-4 text-slate-600">30+</td>
+                                                <td className="p-4 text-green-600 font-medium">200+</td>
+                                                <td className="p-4 text-slate-600">60+</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -349,7 +349,7 @@ export default function ITrustCapitalReviewPage() {
                                     Common praise includes the intuitive platform, fast account setup, and competitive fees. Complaints typically mention customer support response times and the inability to transfer existing crypto holdings.
                                 </p>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict - For Tech-Savvy Folks</h2>
                                 <p>
@@ -368,7 +368,7 @@ export default function ITrustCapitalReviewPage() {
 
                             {/* FAQ Section */}
                             <div className="mt-12">
-                                <h2 className="text-2xl font-serif font-bold text-white mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {[
                                         {
@@ -396,27 +396,30 @@ export default function ITrustCapitalReviewPage() {
                                             a: "Yes, iTrustCapital allows you to hold cryptocurrencies and physical gold/silver in the same IRA. This is a unique feature that most crypto-only or gold-only IRAs don't offer."
                                         },
                                     ].map((faq, i) => (
-                                        <div key={i} className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                            <h3 className="font-bold text-white mb-2">{faq.q}</h3>
-                                            <p className="text-slate-400 text-sm">{faq.a}</p>
+                                        <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
+                                            <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
+                                            <p className="text-slate-600 text-sm">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-gradient-to-br from-blue-900/50 to-slate-900 text-white p-8 rounded-2xl text-center mt-12 border border-blue-500/20">
-                                <h3 className="text-2xl font-serif font-bold mb-4">Ready to Get Started?</h3>
-                                <p className="mb-6 text-slate-300 max-w-lg mx-auto">
-                                    Open your iTrustCapital crypto IRA and start investing tax-advantaged today.
-                                </p>
-                                <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
-                                    <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
-                                        Open iTrustCapital Account
-                                        <ArrowRight className="ml-2 w-5 h-5" />
-                                    </a>
-                                </Button>
-                                <p className="text-xs text-slate-500 mt-4">$1,000 minimum • 1% trading fee • No monthly fees</p>
+                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                                <div className="relative z-10">
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Ready to Get Started?</h3>
+                                    <p className="mb-6 text-white/80 max-w-lg mx-auto">
+                                        Open your iTrustCapital crypto IRA and start investing tax-advantaged today.
+                                    </p>
+                                    <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
+                                        <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
+                                            Open iTrustCapital Account
+                                            <ArrowRight className="ml-2 w-5 h-5" />
+                                        </a>
+                                    </Button>
+                                    <p className="text-xs text-white/60 mt-4">$1,000 minimum • 1% trading fee • No monthly fees</p>
+                                </div>
                             </div>
                         </article>
 
@@ -424,55 +427,55 @@ export default function ITrustCapitalReviewPage() {
                         <aside className="relative">
                             <div className="hidden lg:block sticky top-24 space-y-6">
                                 {/* Quick Navigation */}
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-white">Quick Jump</h3>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Quick Jump</h3>
                                     <nav className="flex flex-col gap-2 text-sm">
-                                        <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors font-medium">
+                                        <a href="#" className="text-blue-600 hover:text-blue-700 transition-colors font-medium">
                                             iTrustCapital Overview
                                         </a>
-                                        <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                                        <a href="#" className="text-slate-600 hover:text-[#000080] transition-colors">
                                             Fees Breakdown
                                         </a>
-                                        <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                                        <a href="#" className="text-slate-600 hover:text-[#000080] transition-colors">
                                             Supported Cryptos
                                         </a>
-                                        <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                                        <a href="#" className="text-slate-600 hover:text-[#000080] transition-colors">
                                             vs Competitors
                                         </a>
-                                        <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                                        <a href="#" className="text-slate-600 hover:text-[#000080] transition-colors">
                                             Final Verdict
                                         </a>
                                     </nav>
                                 </div>
 
                                 {/* Related Reviews */}
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-white">Compare Crypto IRAs</h3>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Compare Crypto IRAs</h3>
                                     <div className="space-y-3">
-                                        <Link href="/reviews/alto-ira" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/reviews/alto-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Alto IRA Review →
                                         </Link>
-                                        <Link href="/best-crypto-ira-companies" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/best-crypto-ira-companies" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Best Crypto IRA Companies →
                                         </Link>
-                                        <Link href="/crypto-ira" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/crypto-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Crypto IRA Guide →
                                         </Link>
-                                        <Link href="/learn/bitcoin-ira" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/learn/bitcoin-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             What is a Bitcoin IRA? →
                                         </Link>
                                     </div>
                                 </div>
 
                                 {/* Trust Signals */}
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-xl border border-white/10 text-center">
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
                                     <div className="flex justify-center gap-1 mb-2">
                                         {[1,2,3,4,5].map(i => (
-                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-amber-400 fill-amber-400' : 'text-amber-400/30'}`} />
+                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#B22234] fill-[#B22234]' : 'text-[#B22234]/30'}`} />
                                         ))}
                                     </div>
-                                    <p className="text-white font-bold">4.7 / 5</p>
-                                    <p className="text-slate-400 text-xs mt-1">Our Rating</p>
+                                    <p className="text-[#000080] font-bold">4.7 / 5</p>
+                                    <p className="text-slate-500 text-xs mt-1">Our Rating</p>
                                 </div>
                             </div>
                         </aside>
@@ -481,21 +484,21 @@ export default function ITrustCapitalReviewPage() {
             </div>
 
             {/* Related Content Section */}
-            <section className="bg-slate-800/50 py-16">
+            <section className="bg-slate-50 py-16">
                 <Container>
-                    <h2 className="text-2xl font-serif font-bold text-white mb-8 text-center">Related Crypto IRA Resources</h2>
+                    <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Related Crypto IRA Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/crypto-ira" className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-blue-500/50 transition-colors group">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Crypto IRA Guide</h3>
-                            <p className="text-slate-400 text-sm">Everything you need to know about investing in cryptocurrency through an IRA.</p>
+                        <Link href="/crypto-ira" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-blue-600 transition-colors">Crypto IRA Guide</h3>
+                            <p className="text-slate-600 text-sm">Everything you need to know about investing in cryptocurrency through an IRA.</p>
                         </Link>
-                        <Link href="/best-crypto-ira-companies" className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-blue-500/50 transition-colors group">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Best Crypto IRA Companies</h3>
-                            <p className="text-slate-400 text-sm">Compare the top crypto IRA providers side-by-side.</p>
+                        <Link href="/best-crypto-ira-companies" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-blue-600 transition-colors">Best Crypto IRA Companies</h3>
+                            <p className="text-slate-600 text-sm">Compare the top crypto IRA providers side-by-side.</p>
                         </Link>
-                        <Link href="/compare/gold-ira-vs-crypto" className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-blue-500/50 transition-colors group">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Gold IRA vs Crypto IRA</h3>
-                            <p className="text-slate-400 text-sm">Which is better for your retirement? We compare both options.</p>
+                        <Link href="/compare/gold-ira-vs-crypto" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-blue-600 transition-colors">Gold IRA vs Crypto IRA</h3>
+                            <p className="text-slate-600 text-sm">Which is better for your retirement? We compare both options.</p>
                         </Link>
                     </div>
                 </Container>

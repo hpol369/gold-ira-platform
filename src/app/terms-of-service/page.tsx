@@ -10,16 +10,16 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <FadeIn>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-4">
                                 Terms of Service
                             </h1>
-                            <p className="text-slate-400">
+                            <p className="text-slate-500">
                                 Last updated: January 2026
                             </p>
                         </div>
@@ -31,9 +31,9 @@ export default function TermsOfServicePage() {
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">
                     <FadeIn delay={0.1}>
-                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
-                            <p className="lead text-lg text-slate-300">
+                            <p className="lead text-lg text-slate-600">
                                 By using Rich Dad Retirement, you agree to these terms. We&apos;ve tried to make them readable while still covering the legal bases. If something doesn&apos;t make sense, feel free to ask.
                             </p>
 
@@ -67,7 +67,7 @@ export default function TermsOfServicePage() {
                                 That said, we don&apos;t let affiliate relationships dictate our rankings or recommendations. We rank companies based on our research, not based on who pays us the most. If a company has problems, we&apos;ll say so—even if they&apos;re a partner.
                             </p>
                             <p>
-                                For more details, see our <Link href="/editorial-policy" className="text-secondary hover:underline">Editorial Policy</Link>.
+                                For more details, see our <Link href="/editorial-policy" className="text-[#B22234] hover:underline">Editorial Policy</Link>.
                             </p>
 
                             <h2>No Investment Advice</h2>
@@ -108,7 +108,7 @@ export default function TermsOfServicePage() {
                                 We do our best to keep our content accurate and up to date. But things change—fees change, company policies change, regulations change. While we regularly review and update our content, we can&apos;t guarantee that every piece of information is current at the moment you read it.
                             </p>
                             <p>
-                                If you spot an error, please <Link href="/contact" className="text-secondary hover:underline">let us know</Link> and we&apos;ll correct it.
+                                If you spot an error, please <Link href="/contact" className="text-[#B22234] hover:underline">let us know</Link> and we&apos;ll correct it.
                             </p>
 
                             <h2>Intellectual Property</h2>
@@ -153,7 +153,7 @@ export default function TermsOfServicePage() {
 
                             <h2>Contact</h2>
                             <p>
-                                Questions about these terms? Email us at <a href="mailto:legal@richdadretirement.com" className="text-secondary hover:underline">legal@richdadretirement.com</a> or visit our <Link href="/contact" className="text-secondary hover:underline">contact page</Link>.
+                                Questions about these terms? Email us at <a href="mailto:legal@richdadretirement.com" className="text-[#B22234] hover:underline">legal@richdadretirement.com</a> or visit our <Link href="/contact" className="text-[#B22234] hover:underline">contact page</Link>.
                             </p>
 
                         </article>

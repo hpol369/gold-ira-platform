@@ -116,19 +116,19 @@ const schema = {
 
 export default function ComexSilverInventoryPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="text-slate-400 font-bold tracking-widest uppercase text-xs mb-4 block">
+                        <span className="text-slate-600 font-bold tracking-widest uppercase text-xs mb-4 block">
                             Silver Market Analysis
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             COMEX Silver Inventory: Tracking the Vault Drain
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             The COMEX vaults are emptying. Physical delivery demand is draining registered silver at an alarming rate. Here&apos;s what you need to know.
                         </p>
                     </div>
@@ -143,7 +143,7 @@ export default function ComexSilverInventoryPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -163,10 +163,10 @@ export default function ComexSilverInventoryPage() {
                         {/* Registered vs Eligible */}
                         <section id="registered-vs-eligible" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-400/20 rounded-lg text-slate-300">
+                                <div className="p-3 bg-[#B22234]/10 rounded-lg text-slate-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Registered vs Eligible Silver</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Registered vs Eligible Silver</h2>
                             </div>
                             <p>
                                 COMEX silver inventory is divided into two categories, and understanding the difference is crucial:
@@ -176,18 +176,18 @@ export default function ComexSilverInventoryPage() {
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
                                     <Lock className="w-8 h-8 text-green-400 mb-4" />
                                     <h4 className="font-bold text-green-400 text-lg mb-2">Registered Silver</h4>
-                                    <p className="text-sm text-slate-400 mb-4">Silver with warrants attached, available for delivery against futures contracts. This is the &quot;real&quot; inventory that backs the market.</p>
-                                    <ul className="text-sm text-slate-400 space-y-2">
+                                    <p className="text-sm text-slate-600 mb-4">Silver with warrants attached, available for delivery against futures contracts. This is the &quot;real&quot; inventory that backs the market.</p>
+                                    <ul className="text-sm text-slate-600 space-y-2">
                                         <li>Has attached warrant (delivery certificate)</li>
                                         <li>Can be demanded by long contract holders</li>
                                         <li>This is what matters for delivery</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-amber-500/10 border border-amber-500/30">
-                                    <Warehouse className="w-8 h-8 text-amber-400 mb-4" />
-                                    <h4 className="font-bold text-amber-400 text-lg mb-2">Eligible Silver</h4>
-                                    <p className="text-sm text-slate-400 mb-4">Silver that meets COMEX standards but isn&apos;t available for delivery. It&apos;s just stored there by private parties.</p>
-                                    <ul className="text-sm text-slate-400 space-y-2">
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 border border-[#B22234]/30">
+                                    <Warehouse className="w-8 h-8 text-[#B22234] mb-4" />
+                                    <h4 className="font-bold text-[#B22234] text-lg mb-2">Eligible Silver</h4>
+                                    <p className="text-sm text-slate-600 mb-4">Silver that meets COMEX standards but isn&apos;t available for delivery. It&apos;s just stored there by private parties.</p>
+                                    <ul className="text-sm text-slate-600 space-y-2">
                                         <li>No warrant attached</li>
                                         <li>Cannot be delivered until converted</li>
                                         <li>May belong to ETFs, dealers, or private storage</li>
@@ -206,44 +206,44 @@ export default function ComexSilverInventoryPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Current Inventory Levels</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Current Inventory Levels</h2>
                             </div>
                             <p>
                                 The numbers tell a stark story. COMEX registered silver has plummeted:
                             </p>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">COMEX Registered Silver Decline</h4>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">COMEX Registered Silver Decline</h4>
                                 <div className="space-y-4">
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">February 2021 (Peak)</span>
-                                            <span className="text-white font-bold">~152M oz</span>
+                                            <span className="text-slate-600">February 2021 (Peak)</span>
+                                            <span className="text-slate-900 font-bold">~152M oz</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-green-400 h-3 rounded-full" style={{ width: '100%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">January 2024</span>
-                                            <span className="text-white font-bold">~34M oz</span>
+                                            <span className="text-slate-600">January 2024</span>
+                                            <span className="text-slate-900 font-bold">~34M oz</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-amber-400 h-3 rounded-full" style={{ width: '22%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Current (2026)</span>
-                                            <span className="text-white font-bold">~28M oz</span>
+                                            <span className="text-slate-600">Current (2026)</span>
+                                            <span className="text-slate-900 font-bold">~28M oz</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-red-400 h-3 rounded-full" style={{ width: '18%' }}></div>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-400 mt-4">Registered inventory has declined over 80% from its 2021 peak. This represents genuine physical demand.</p>
+                                <p className="text-sm text-slate-600 mt-4">Registered inventory has declined over 80% from its 2021 peak. This represents genuine physical demand.</p>
                             </div>
 
                             <p>
@@ -251,17 +251,17 @@ export default function ComexSilverInventoryPage() {
                             </p>
 
                             <div className="grid md:grid-cols-3 gap-4 not-prose my-8">
-                                <div className="text-center p-4 bg-white/5 rounded-xl border border-white/10">
+                                <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-200">
                                     <div className="text-2xl font-bold text-red-400">-82%</div>
-                                    <div className="text-xs text-slate-400">Since 2021 Peak</div>
+                                    <div className="text-xs text-slate-600">Since 2021 Peak</div>
                                 </div>
-                                <div className="text-center p-4 bg-white/5 rounded-xl border border-white/10">
-                                    <div className="text-2xl font-bold text-amber-400">~28M oz</div>
-                                    <div className="text-xs text-slate-400">Current Registered</div>
+                                <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                    <div className="text-2xl font-bold text-[#B22234]">~28M oz</div>
+                                    <div className="text-xs text-slate-600">Current Registered</div>
                                 </div>
-                                <div className="text-center p-4 bg-white/5 rounded-xl border border-white/10">
-                                    <div className="text-2xl font-bold text-slate-400">~$900M</div>
-                                    <div className="text-xs text-slate-400">Total Value</div>
+                                <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                    <div className="text-2xl font-bold text-slate-600">~$900M</div>
+                                    <div className="text-xs text-slate-600">Total Value</div>
                                 </div>
                             </div>
                         </section>
@@ -272,7 +272,7 @@ export default function ComexSilverInventoryPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Historical Drawdowns</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Historical Drawdowns</h2>
                             </div>
                             <p>
                                 The current inventory decline is unprecedented in COMEX history. Previous drawdowns were smaller and shorter:
@@ -293,12 +293,12 @@ export default function ComexSilverInventoryPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose border border-white/10">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Own Real Silver, Not Paper Promises</h3>
-                                <p className="mb-6 text-slate-300">A Silver IRA lets you hold physical silver in your retirement account. Take our quiz to find the right company.</p>
-                                <Button variant="gold" size="lg" asChild>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Own Real Silver, Not Paper Promises</h3>
+                                <p className="mb-6 text-slate-600">A Silver IRA lets you hold physical silver in your retirement account. Take our quiz to find the right company.</p>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                     <Link href="/quiz">Get Your Free Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -310,7 +310,7 @@ export default function ComexSilverInventoryPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Warehouse className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How COMEX Delivery Works</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">How COMEX Delivery Works</h2>
                             </div>
                             <p>
                                 Understanding delivery mechanics reveals why inventory matters so much:
@@ -326,20 +326,20 @@ export default function ComexSilverInventoryPage() {
                                 The key insight: <strong>if more people demand delivery than there is registered silver, the system breaks</strong>. COMEX relies on most traders rolling contracts forward rather than taking physical metal.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">The Leverage Problem</h4>
-                                <p className="text-slate-300 mb-4">Open interest (outstanding contracts) often represents 10-20x the available registered inventory:</p>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">The Leverage Problem</h4>
+                                <p className="text-slate-600 mb-4">Open interest (outstanding contracts) often represents 10-20x the available registered inventory:</p>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="text-center p-4 bg-white/5 rounded-xl">
-                                        <div className="text-2xl font-bold text-amber-400">~140,000</div>
-                                        <div className="text-xs text-slate-400">Open Interest (contracts)</div>
+                                    <div className="text-center p-4 bg-slate-50 rounded-xl">
+                                        <div className="text-2xl font-bold text-[#B22234]">~140,000</div>
+                                        <div className="text-xs text-slate-600">Open Interest (contracts)</div>
                                     </div>
-                                    <div className="text-center p-4 bg-white/5 rounded-xl">
+                                    <div className="text-center p-4 bg-slate-50 rounded-xl">
                                         <div className="text-2xl font-bold text-red-400">~5,600</div>
-                                        <div className="text-xs text-slate-400">Contracts Covered by Registered</div>
+                                        <div className="text-xs text-slate-600">Contracts Covered by Registered</div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-400 mt-4">If even 5% of contract holders demanded delivery simultaneously, COMEX couldn&apos;t fulfill all requests.</p>
+                                <p className="text-sm text-slate-600 mt-4">If even 5% of contract holders demanded delivery simultaneously, COMEX couldn&apos;t fulfill all requests.</p>
                             </div>
                         </section>
 
@@ -349,31 +349,31 @@ export default function ComexSilverInventoryPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">What Depletion Means for Investors</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">What Depletion Means for Investors</h2>
                             </div>
                             <p>
                                 If COMEX registered inventory continues declining, several outcomes become increasingly likely:
                             </p>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <h4 className="font-bold text-white text-lg mb-2">Scenario 1: Conversion from Eligible</h4>
-                                    <p className="text-sm text-slate-400">Owners of eligible silver may convert to registered if premiums rise enough. This buys time but doesn&apos;t solve the fundamental demand issue.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Scenario 1: Conversion from Eligible</h4>
+                                    <p className="text-sm text-slate-600">Owners of eligible silver may convert to registered if premiums rise enough. This buys time but doesn&apos;t solve the fundamental demand issue.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <h4 className="font-bold text-white text-lg mb-2">Scenario 2: Price Spike</h4>
-                                    <p className="text-sm text-slate-400">Higher prices incentivize holders to deposit more silver and reduce industrial/investment demand. The market balances through price discovery.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Scenario 2: Price Spike</h4>
+                                    <p className="text-sm text-slate-600">Higher prices incentivize holders to deposit more silver and reduce industrial/investment demand. The market balances through price discovery.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-amber-500/10 border border-amber-500/30">
-                                    <h4 className="font-bold text-amber-400 text-lg mb-2">Scenario 3: Delivery Failure</h4>
-                                    <p className="text-sm text-slate-400">If delivery requests exceed available metal, COMEX may force cash settlement at potentially unfavorable rates. This would destroy confidence in paper silver markets.</p>
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 border border-[#B22234]/30">
+                                    <h4 className="font-bold text-[#B22234] text-lg mb-2">Scenario 3: Delivery Failure</h4>
+                                    <p className="text-sm text-slate-600">If delivery requests exceed available metal, COMEX may force cash settlement at potentially unfavorable rates. This would destroy confidence in paper silver markets.</p>
                                 </div>
 
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
                                     <h4 className="font-bold text-red-400 text-lg mb-2">Scenario 4: Paper/Physical Disconnect</h4>
-                                    <p className="text-sm text-slate-400">Physical silver prices could decouple from futures prices, with significant premiums for actual metal. We saw hints of this in 2020 and 2021.</p>
+                                    <p className="text-sm text-slate-600">Physical silver prices could decouple from futures prices, with significant premiums for actual metal. We saw hints of this in 2020 and 2021.</p>
                                 </div>
                             </div>
 
@@ -391,7 +391,7 @@ export default function ComexSilverInventoryPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Track COMEX Data</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">How to Track COMEX Data</h2>
                             </div>
                             <p>
                                 Investors can monitor COMEX inventory through several sources:
@@ -418,72 +418,72 @@ export default function ComexSilverInventoryPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What is COMEX silver inventory?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         COMEX silver inventory refers to physical silver stored in COMEX-approved vaults that backs futures contracts. It&apos;s divided into &quot;registered&quot; silver (available for delivery) and &quot;eligible&quot; silver (meets standards but isn&apos;t available for delivery). Total COMEX inventory represents a portion of global above-ground silver.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What is the difference between registered and eligible silver?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Registered silver has warrants attached and can be delivered against futures contracts. Eligible silver meets COMEX standards for purity and bar weight but lacks warrants, so it cannot be delivered until converted. Owners must pay fees to convert eligible to registered status.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Why is COMEX inventory declining?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         COMEX silver inventory is declining because more investors are taking physical delivery of their contracts rather than rolling them forward. This &quot;drain COMEX&quot; movement, combined with industrial demand exceeding mining supply, is reducing available silver in the vaults.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What happens if COMEX runs out of silver?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         If COMEX registered inventory drops to critical levels, the exchange could face delivery failures. This would likely trigger a massive disconnect between paper and physical silver prices, potentially causing silver spot prices to spike dramatically as the market reprices to reflect physical scarcity.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">How can I track COMEX silver inventory?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         COMEX publishes daily inventory reports on the CME Group website. Many financial websites and precious metals analysts also track and chart this data. Key metrics to watch include total registered ounces, daily changes, and the ratio of registered to open interest.
                                     </p>
                                 </details>
@@ -491,16 +491,16 @@ export default function ComexSilverInventoryPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white relative overflow-hidden not-prose border border-white/10">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Don&apos;t Rely on Paper Promises</h3>
-                                <p className="mb-6 text-slate-300 max-w-xl mx-auto">A Silver IRA gives you ownership of physical silver in an IRS-approved vault. Find the right company for your needs.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Don&apos;t Rely on Paper Promises</h3>
+                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">A Silver IRA gives you ownership of physical silver in an IRS-approved vault. Find the right company for your needs.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/silver-squeeze/silver-short-interest">Track Short Interest</Link>
                                     </Button>
                                 </div>
@@ -514,7 +514,7 @@ export default function ComexSilverInventoryPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="silver-squeeze-comex-inventory" />
                 </Container>

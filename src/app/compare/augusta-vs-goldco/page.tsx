@@ -94,23 +94,23 @@ const schema = {
 
 export default function AugustaVsGoldcoPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
+            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[#000080]-dark/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold text-secondary mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
                         Industry Titans Clash
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Augusta Precious Metals vs. Goldco
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed mb-4">
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-4">
                         You&apos;ve worked too hard to trust your savings to the wrong company. These are the two names you&apos;ll hear the most&mdash;here&apos;s the honest comparison.
                     </p>
-                    <p className="text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         For someone with $500k built over 30 years, what matters isn&apos;t flashy ads or celebrity endorsements. It&apos;s complaint history, how they treat customers when problems arise, and whether they&apos;ll be straight with you.
                     </p>
                 </Container>
@@ -124,7 +124,7 @@ export default function AugustaVsGoldcoPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <p className="lead">
                             Let&apos;s cut through the noise. If you&apos;ve been researching Gold IRAs, you&apos;ve probably seen these two names everywhere: <strong>Augusta Precious Metals</strong> and <strong>Goldco</strong>.
@@ -194,15 +194,15 @@ export default function AugustaVsGoldcoPage() {
                                 Let&apos;s talk real numbers. When you&apos;re moving $500k of your life&apos;s savings, you need to know exactly what you&apos;re paying:
                             </p>
                             <div className="not-prose my-8 overflow-x-auto">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                <table className="w-full text-left border-collapse bg-white shadow-sm rounded-xl border border-slate-200">
                                     <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Fee Type</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Augusta</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Goldco</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Fee Type</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Augusta</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Goldco</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-600">
                                         <tr><td className="p-4 font-medium">Minimum Investment</td><td className="p-4">$50,000</td><td className="p-4">$25,000</td></tr>
                                         <tr><td className="p-4 font-medium">Setup Fee</td><td className="p-4">$50 (often waived)</td><td className="p-4">$50 (often waived)</td></tr>
                                         <tr><td className="p-4 font-medium">Annual Storage</td><td className="p-4">~$100-$150 flat</td><td className="p-4">Scaled by account size</td></tr>
@@ -243,11 +243,11 @@ export default function AugustaVsGoldcoPage() {
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Still Undecided?</h3>
-                                <p className="mb-6 text-gray-200">Take our 30-second quiz to see which company matches your investment goals.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Still Undecided?</h3>
+                                <p className="mb-6 text-slate-600">Take our 30-second quiz to see which company matches your investment goals.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find My Perfect Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -261,7 +261,7 @@ export default function AugustaVsGoldcoPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA
                         variant="footer"

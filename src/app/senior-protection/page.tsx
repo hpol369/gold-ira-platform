@@ -28,46 +28,45 @@ export default function SeniorProtectionPage() {
   const articles = getAllSeniorProtectionArticles();
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-red-900/30 via-slate-900 to-slate-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.15),transparent_50%)]" />
+      <section className="relative pt-24 pb-16 overflow-hidden bg-slate-50">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.08),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 text-red-400 text-sm font-medium mb-4">
+            <div className="inline-flex items-center gap-2 text-red-600 text-sm font-medium mb-4">
               <ShieldAlert className="h-4 w-4" />
               PROTECTION & AWARENESS
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
               Senior Protection{" "}
-              <span className="text-red-400">Center</span>
+              <span className="text-red-600">Center</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               Scammers steal billions from seniors every year. Knowledge is your
               best defense. Learn to recognize, avoid, and report financial scams
               targeting older Americans.
             </p>
 
             {/* Emergency Resources */}
-            <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6 mb-8 text-left">
+            <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-8 text-left">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-red-400 flex-shrink-0 mt-1" />
+                <AlertTriangle className="h-5 w-5 text-red-600 flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-red-300 font-medium mb-2">
+                  <p className="text-red-800 font-medium mb-2">
                     Think You&apos;ve Been Scammed?
                   </p>
-                  <p className="text-slate-300 text-sm mb-3">
+                  <p className="text-slate-600 text-sm mb-3">
                     Act quickly. Stop all contact with the scammer and report immediately.
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm">
-                    <span className="bg-white/10 px-3 py-1 rounded text-slate-300">
+                    <span className="bg-slate-100 px-3 py-1 rounded text-slate-700">
                       FTC: reportfraud.ftc.gov
                     </span>
-                    <span className="bg-white/10 px-3 py-1 rounded text-slate-300">
+                    <span className="bg-slate-100 px-3 py-1 rounded text-slate-700">
                       FBI IC3: ic3.gov
                     </span>
                   </div>
@@ -76,7 +75,7 @@ export default function SeniorProtectionPage() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="gold" size="lg" asChild>
+              <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
                 <Link href="/quiz">
                   Protect Your Wealth <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -85,7 +84,7 @@ export default function SeniorProtectionPage() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-white/20 text-white hover:bg-white/10"
+                className="border-slate-300 text-slate-700 hover:bg-slate-100"
               >
                 <a href="#guides">View Protection Guides</a>
               </Button>
@@ -95,76 +94,76 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-8 border-y border-white/10 bg-slate-800/30">
+      <section className="py-8 border-y border-slate-200 bg-white">
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-red-400">$3.4B</div>
-              <div className="text-sm text-slate-400">Lost Annually (60+)</div>
+              <div className="text-3xl font-bold text-red-600">$3.4B</div>
+              <div className="text-sm text-slate-500">Lost Annually (60+)</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-red-400">$9,000</div>
-              <div className="text-sm text-slate-400">Avg. Grandparent Scam</div>
+              <div className="text-3xl font-bold text-red-600">$9,000</div>
+              <div className="text-sm text-slate-500">Avg. Grandparent Scam</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-red-400">1 in 10</div>
-              <div className="text-sm text-slate-400">Seniors Targeted</div>
+              <div className="text-3xl font-bold text-red-600">1 in 10</div>
+              <div className="text-sm text-slate-500">Seniors Targeted</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-red-400">60%+</div>
-              <div className="text-sm text-slate-400">By Family Members</div>
+              <div className="text-3xl font-bold text-red-600">60%+</div>
+              <div className="text-sm text-slate-500">By Family Members</div>
             </div>
           </div>
         </Container>
       </section>
 
       {/* Emergency Contacts */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white mb-8 text-center">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">
             If You Suspect Fraud or Exploitation
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <div className="bg-red-500/20 p-3 rounded-lg inline-block mb-4">
-                <Phone className="h-6 w-6 text-red-400" />
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <div className="bg-red-100 p-3 rounded-lg inline-block mb-4">
+                <Phone className="h-6 w-6 text-red-600" />
               </div>
-              <h3 className="font-bold text-white mb-2">Adult Protective Services</h3>
-              <p className="text-slate-400 text-sm mb-3">
+              <h3 className="font-bold text-slate-900 mb-2">Adult Protective Services</h3>
+              <p className="text-slate-500 text-sm mb-3">
                 Report elder abuse and exploitation to your state&apos;s APS office.
               </p>
-              <p className="text-sm text-red-400 font-medium">eldercare.acl.gov</p>
+              <p className="text-sm text-red-600 font-medium">eldercare.acl.gov</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <div className="bg-blue-500/20 p-3 rounded-lg inline-block mb-4">
-                <ShieldAlert className="h-6 w-6 text-blue-400" />
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4">
+                <ShieldAlert className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-bold text-white mb-2">AARP Fraud Helpline</h3>
-              <p className="text-slate-400 text-sm mb-3">
+              <h3 className="font-bold text-slate-900 mb-2">AARP Fraud Helpline</h3>
+              <p className="text-slate-500 text-sm mb-3">
                 Free helpline for scam victims and those who suspect fraud.
               </p>
-              <p className="text-lg font-semibold text-blue-400">877-908-3360</p>
+              <p className="text-lg font-semibold text-blue-600">877-908-3360</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <div className="bg-amber-500/20 p-3 rounded-lg inline-block mb-4">
-                <AlertTriangle className="h-6 w-6 text-amber-400" />
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
+                <AlertTriangle className="h-6 w-6 text-amber-600" />
               </div>
-              <h3 className="font-bold text-white mb-2">FTC Report Fraud</h3>
-              <p className="text-slate-400 text-sm mb-3">
+              <h3 className="font-bold text-slate-900 mb-2">FTC Report Fraud</h3>
+              <p className="text-slate-500 text-sm mb-3">
                 Federal Trade Commission fraud reporting portal.
               </p>
-              <p className="text-sm text-amber-400 font-medium">reportfraud.ftc.gov</p>
+              <p className="text-sm text-amber-600 font-medium">reportfraud.ftc.gov</p>
             </div>
           </div>
         </Container>
       </section>
 
       {/* Guides */}
-      <section id="guides" className="py-16 bg-slate-800/30 scroll-mt-16">
+      <section id="guides" className="py-16 bg-slate-50 scroll-mt-16">
         <Container>
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-serif font-bold text-white flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-red-400" />
+            <h2 className="text-2xl font-serif font-bold text-[#000080] flex items-center gap-2">
+              <BookOpen className="h-6 w-6 text-red-600" />
               Protection Guides
             </h2>
           </div>
@@ -174,15 +173,15 @@ export default function SeniorProtectionPage() {
               <Link
                 key={article.slug}
                 href={`/senior-protection/${article.slug}`}
-                className="bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-red-500/30 rounded-xl p-6 transition-all group"
+                className="bg-white hover:bg-slate-50 border border-slate-200 hover:border-red-300 rounded-xl p-6 transition-all group"
               >
-                <h3 className="text-lg font-bold text-white group-hover:text-red-400 transition-colors mb-2 leading-snug">
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors mb-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-sm text-slate-400 line-clamp-2">
+                <p className="text-sm text-slate-500 line-clamp-2">
                   {article.subtitle}
                 </p>
-                <div className="mt-4 flex items-center text-red-400 text-sm font-medium">
+                <div className="mt-4 flex items-center text-red-600 text-sm font-medium">
                   Read Guide <ArrowRight className="ml-1 h-4 w-4" />
                 </div>
               </Link>
@@ -192,19 +191,19 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Family Section */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <Users className="h-12 w-12 text-red-400 mx-auto mb-6" />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
+            <Users className="h-12 w-12 text-red-600 mx-auto mb-6" />
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
               Protecting Loved Ones
             </h2>
-            <p className="text-slate-400 mb-8">
+            <p className="text-slate-500 mb-8">
               If you&apos;re concerned about an elderly parent or grandparent, these
               guides can help you recognize warning signs and take appropriate
               action while respecting their autonomy.
             </p>
-            <Button variant="gold" size="xl" asChild>
+            <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
               <Link href="/quiz">
                 Get Protection Guidance <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -214,7 +213,7 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-800/50 border-t border-white/10">
+      <section className="py-16 bg-slate-50 border-t border-slate-200">
         <Container>
           <AugustaCTA
             variant="footer"

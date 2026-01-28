@@ -55,19 +55,18 @@ const schema = {
 
 export default function BirchGoldComplaintsPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-50 pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
+            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-blue-500/20 border border-blue-500/30 text-sm font-semibold text-blue-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#000080] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <AlertOctagon className="w-4 h-4" /> Complaint Investigation
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
+                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#000080]">
                         Birch Gold Complaints: The Full Picture
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         With celebrity endorsements and heavy advertising comes scrutiny. We analyzed BBB complaints, customer reviews, and regulatory records.
                     </p>
                 </Container>
@@ -81,7 +80,7 @@ export default function BirchGoldComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-900 prose-a:text-[#B22234] max-w-none">
 
                         <p className="lead">
                             Birch Gold Group is everywhere. If you listen to conservative talk radio or podcasts, you&apos;ve probably heard Ben Shapiro, Ron Paul, or other hosts endorse them. That kind of exposure brings in a lot of customers—and inevitably, some complaints.
@@ -223,16 +222,15 @@ export default function BirchGoldComplaintsPage() {
                                 The main thing to watch: fees can be a higher percentage of your investment when you&apos;re starting with $10-20k. Make sure you understand the spread and annual fees before committing.
                             </p>
                             <p>
-                                For our full review with fee breakdowns, see our <Link href="/reviews/birch-gold" className="text-secondary hover:underline">Birch Gold Group Review</Link>. Or compare them against <Link href="/compare/noble-gold-vs-birch-gold" className="text-secondary hover:underline">Noble Gold</Link> for similar minimums.
+                                For our full review with fee breakdowns, see our <Link href="/reviews/birch-gold" className="text-[#B22234] hover:underline">Birch Gold Group Review</Link>. Or compare them against <Link href="/compare/noble-gold-vs-birch-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> for similar minimums.
                             </p>
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center relative overflow-hidden not-prose">
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">20 Years. Zero Regulatory Actions.</h3>
-                                <p className="mb-6 text-gray-200">See why Ben Shapiro recommends Birch Gold. Get their free investor kit.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">20 Years. Zero Regulatory Actions.</h3>
+                                <p className="mb-6 text-slate-600">See why Ben Shapiro recommends Birch Gold. Get their free investor kit.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <a href={AFFILIATE_LINKS.birch} target="_blank" rel="noopener noreferrer">
                                         Get Free Kit <ArrowRight className="ml-2 w-4 h-4" />

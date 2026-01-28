@@ -93,15 +93,15 @@ export default function BenetrendsReviewPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
 
-            <main className="min-h-screen bg-slate-900">
+            <main className="min-h-screen bg-white">
                 {/* Hero Section */}
                 <section className="relative py-12 lg:py-16 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-[#000080]" />
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-400/10 via-transparent to-transparent" />
 
                     <Container className="relative z-10">
                         {/* Breadcrumb */}
-                        <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
+                        <nav className="flex items-center gap-2 text-sm text-blue-200 mb-6">
                             <Link href="/" className="hover:text-white transition-colors">Home</Link>
                             <span>/</span>
                             <Link href="/reviews" className="hover:text-white transition-colors">Reviews</Link>
@@ -112,17 +112,17 @@ export default function BenetrendsReviewPage() {
                         <div className="grid lg:grid-cols-3 gap-8">
                             {/* Main Content */}
                             <div className="lg:col-span-2">
-                                <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2 mb-4">
-                                    <History className="w-4 h-4 text-blue-400" />
-                                    <span className="text-blue-400 text-sm font-medium">ROBS Pioneer Since 1983</span>
+                                <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-4">
+                                    <History className="w-4 h-4 text-blue-200" />
+                                    <span className="text-blue-200 text-sm font-medium">ROBS Pioneer Since 1983</span>
                                 </div>
 
                                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
                                     Benetrends Review 2026:{" "}
-                                    <span className="text-blue-400">The Original ROBS Provider</span>
+                                    <span className="text-blue-200">The Original ROBS Provider</span>
                                 </h1>
 
-                                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                                <p className="text-lg text-blue-100 mb-6 leading-relaxed">
                                     Benetrends invented ROBS (Rollover for Business Startups) in 1983, making them the
                                     original pioneer in retirement-funded business financing. With 40+ years of experience,
                                     they&apos;ve helped over 15,000 entrepreneurs turn their retirement savings into successful businesses.
@@ -134,15 +134,15 @@ export default function BenetrendsReviewPage() {
                                         {[1, 2, 3, 4, 5].map((star) => (
                                             <Star
                                                 key={star}
-                                                className={`w-5 h-5 ${star <= 4 ? 'text-amber-400 fill-amber-400' : star === 5 ? 'text-amber-400 fill-amber-400/50' : 'text-slate-600'}`}
+                                                className={`w-5 h-5 ${star <= 4 ? 'text-[#B22234] fill-[#B22234]' : star === 5 ? 'text-[#B22234] fill-[#B22234]/50' : 'text-slate-400'}`}
                                             />
                                         ))}
                                         <span className="ml-2 text-white font-bold">4.5/5</span>
                                     </div>
-                                    <span className="text-slate-500">|</span>
-                                    <span className="text-slate-400">BBB Rating: A+</span>
-                                    <span className="text-slate-500">|</span>
-                                    <span className="text-slate-400">40+ Years Experience</span>
+                                    <span className="text-white/50">|</span>
+                                    <span className="text-blue-200">BBB Rating: A+</span>
+                                    <span className="text-white/50">|</span>
+                                    <span className="text-blue-200">40+ Years Experience</span>
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row gap-4">
@@ -156,7 +156,7 @@ export default function BenetrendsReviewPage() {
                                             <ArrowRight className="ml-2 h-5 w-5" />
                                         </a>
                                     </Button>
-                                    <Button variant="outline" size="lg" asChild>
+                                    <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10" asChild>
                                         <Link href="/reviews/guidant-financial">
                                             Compare to Guidant
                                         </Link>
@@ -180,9 +180,9 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* At a Glance */}
-                <section className="py-12 bg-slate-800/50">
+                <section className="py-12 bg-slate-50">
                     <Container>
-                        <h2 className="text-2xl font-bold text-white mb-8">Benetrends at a Glance</h2>
+                        <h2 className="text-2xl font-bold text-[#000080] mb-8">Benetrends at a Glance</h2>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                             {[
@@ -195,10 +195,10 @@ export default function BenetrendsReviewPage() {
                                 { label: "Experience", value: "40+ years", icon: History },
                                 { label: "Support", value: "Phone & Email", icon: Users },
                             ].map((item, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
-                                    <item.icon className="w-6 h-6 text-blue-400 mb-3" />
-                                    <div className="text-sm text-slate-400 mb-1">{item.label}</div>
-                                    <div className="text-lg font-bold text-white">{item.value}</div>
+                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-5">
+                                    <item.icon className="w-6 h-6 text-[#000080] mb-3" />
+                                    <div className="text-sm text-slate-500 mb-1">{item.label}</div>
+                                    <div className="text-lg font-bold text-slate-800">{item.value}</div>
                                 </div>
                             ))}
                         </div>
@@ -206,9 +206,9 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Pros and Cons */}
-                <section className="py-12 bg-slate-900">
+                <section className="py-12 bg-white">
                     <Container>
-                        <h2 className="text-2xl font-bold text-white mb-8">Benetrends: Pros and Cons</h2>
+                        <h2 className="text-2xl font-bold text-[#000080] mb-8">Benetrends: Pros and Cons</h2>
 
                         <ProsCons
                             pros={[
@@ -233,25 +233,25 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* The Benetrends Story */}
-                <section className="py-12 bg-slate-800/50">
+                <section className="py-12 bg-slate-50">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-2xl font-bold text-white mb-6">The Benetrends Story: ROBS Pioneers</h2>
+                            <h2 className="text-2xl font-bold text-[#000080] mb-6">The Benetrends Story: ROBS Pioneers</h2>
 
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-                                <div className="prose prose-lg prose-invert max-w-none">
-                                    <p className="text-slate-300 leading-relaxed mb-4">
-                                        In 1983, Benetrends founder <strong className="text-white">Leonard Fischer</strong> pioneered
+                            <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                                <div className="prose prose-lg max-w-none">
+                                    <p className="text-slate-600 leading-relaxed mb-4">
+                                        In 1983, Benetrends founder <strong className="text-slate-800">Leonard Fischer</strong> pioneered
                                         a revolutionary concept: using retirement funds to start a business without taxes or penalties.
                                         What became known as ROBS (Rollover for Business Startups) was born.
                                     </p>
-                                    <p className="text-slate-300 leading-relaxed mb-4">
+                                    <p className="text-slate-600 leading-relaxed mb-4">
                                         Before Benetrends, entrepreneurs had two options: take a taxable distribution from their
                                         retirement (losing 30-40% to taxes and penalties) or borrow money and take on debt.
                                         Benetrends created a third path.
                                     </p>
-                                    <p className="text-slate-300 leading-relaxed">
-                                        Today, Benetrends has helped over <strong className="text-white">15,000 entrepreneurs</strong> fund
+                                    <p className="text-slate-600 leading-relaxed">
+                                        Today, Benetrends has helped over <strong className="text-slate-800">15,000 entrepreneurs</strong> fund
                                         businesses ranging from franchises to independent startups. Their deep relationships with
                                         major franchise brands make them particularly strong for franchise buyers.
                                     </p>
@@ -262,18 +262,18 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Fees Breakdown */}
-                <section className="py-12 bg-slate-900">
+                <section className="py-12 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-2xl font-bold text-white mb-8">Benetrends Fees</h2>
+                            <h2 className="text-2xl font-bold text-[#000080] mb-8">Benetrends Fees</h2>
 
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
                                 <table className="w-full">
                                     <thead>
-                                        <tr className="border-b border-white/10">
-                                            <th className="text-left p-4 text-white font-semibold">Fee Type</th>
-                                            <th className="text-left p-4 text-white font-semibold">Amount</th>
-                                            <th className="text-left p-4 text-white font-semibold">Notes</th>
+                                        <tr className="border-b border-slate-200">
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Amount</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Notes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -284,18 +284,18 @@ export default function BenetrendsReviewPage() {
                                             { type: "State Filing Fees", amount: "Varies", notes: "Depends on state of incorporation" },
                                             { type: "SBA Loan Assistance", amount: "Included", notes: "No extra fee for SBA guidance" },
                                         ].map((fee, index) => (
-                                            <tr key={index} className="border-b border-white/5">
-                                                <td className="p-4 text-white">{fee.type}</td>
-                                                <td className="p-4 text-blue-400 font-semibold">{fee.amount}</td>
-                                                <td className="p-4 text-slate-400 text-sm">{fee.notes}</td>
+                                            <tr key={index} className="border-b border-slate-100">
+                                                <td className="p-4 text-slate-800">{fee.type}</td>
+                                                <td className="p-4 text-[#000080] font-semibold">{fee.amount}</td>
+                                                <td className="p-4 text-slate-500 text-sm">{fee.notes}</td>
                                             </tr>
                                         ))}
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div className="mt-6 bg-green-500/10 border border-green-500/20 rounded-xl p-4">
-                                <p className="text-green-400 text-sm flex items-center gap-2">
+                            <div className="mt-6 bg-green-50 border border-green-200 rounded-xl p-4">
+                                <p className="text-green-700 text-sm flex items-center gap-2">
                                     <CheckCircle2 className="w-5 h-5" />
                                     <span>Benetrends&apos; fees are slightly lower than Guidant Financial, saving ~$120/year on administration.</span>
                                 </p>
@@ -305,18 +305,18 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Comparison Table */}
-                <section className="py-12 bg-slate-800/50">
+                <section className="py-12 bg-slate-50">
                     <Container>
-                        <h2 className="text-2xl font-bold text-white mb-8 text-center">Benetrends vs. Guidant Financial</h2>
+                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">Benetrends vs. Guidant Financial</h2>
 
                         <div className="max-w-4xl mx-auto overflow-x-auto">
-                            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
+                            <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
                                 <table className="w-full min-w-[600px]">
                                     <thead>
-                                        <tr className="border-b border-white/10">
-                                            <th className="text-left p-4 text-white font-semibold">Feature</th>
-                                            <th className="text-center p-4 text-blue-400 font-semibold bg-blue-500/5">Benetrends</th>
-                                            <th className="text-center p-4 text-white font-semibold">Guidant Financial</th>
+                                        <tr className="border-b border-slate-200">
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
+                                            <th className="text-center p-4 text-[#000080] font-semibold bg-blue-50">Benetrends</th>
+                                            <th className="text-center p-4 text-slate-700 font-semibold">Guidant Financial</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -331,10 +331,10 @@ export default function BenetrendsReviewPage() {
                                             { feature: "Modern Dashboard", benetrends: "Limited", guidant: "Yes" },
                                             { feature: "Franchise Relationships", benetrends: "Strong", guidant: "Good" },
                                         ].map((row, index) => (
-                                            <tr key={index} className="border-b border-white/5">
-                                                <td className="p-4 text-white">{row.feature}</td>
-                                                <td className="p-4 text-center text-slate-300 bg-blue-500/5">{row.benetrends}</td>
-                                                <td className="p-4 text-center text-slate-400">{row.guidant}</td>
+                                            <tr key={index} className="border-b border-slate-100">
+                                                <td className="p-4 text-slate-800">{row.feature}</td>
+                                                <td className="p-4 text-center text-slate-600 bg-blue-50">{row.benetrends}</td>
+                                                <td className="p-4 text-center text-slate-500">{row.guidant}</td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -343,8 +343,8 @@ export default function BenetrendsReviewPage() {
                         </div>
 
                         <div className="max-w-2xl mx-auto mt-8 text-center">
-                            <p className="text-slate-400">
-                                <strong className="text-white">Bottom line:</strong> Benetrends offers lower fees and more experience,
+                            <p className="text-slate-600">
+                                <strong className="text-slate-800">Bottom line:</strong> Benetrends offers lower fees and more experience,
                                 while Guidant provides more comprehensive services. Choose Benetrends for straightforward ROBS needs;
                                 choose Guidant if you want additional services like payroll.
                             </p>
@@ -353,16 +353,16 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Who Should Use */}
-                <section className="py-12 bg-slate-900">
+                <section className="py-12 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-2xl font-bold text-white mb-8 text-center">
+                            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
                                 Who Should Use Benetrends?
                             </h2>
 
                             <div className="grid md:grid-cols-2 gap-8">
-                                <div className="bg-green-500/5 border border-green-500/20 rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-green-400 mb-4 flex items-center gap-2">
+                                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                                    <h3 className="text-lg font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Ideal For
                                     </h3>
@@ -375,16 +375,16 @@ export default function BenetrendsReviewPage() {
                                             "Simple ROBS needs without extra services",
                                             "Those combining ROBS with SBA loans"
                                         ].map((item, index) => (
-                                            <li key={index} className="flex items-start gap-2 text-slate-300 text-sm">
-                                                <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                                            <li key={index} className="flex items-start gap-2 text-slate-600 text-sm">
+                                                <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                                                 {item}
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
 
-                                <div className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-red-400 mb-4 flex items-center gap-2">
+                                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                    <h3 className="text-lg font-bold text-red-700 mb-4 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         May Not Be Ideal For
                                     </h3>
@@ -396,8 +396,8 @@ export default function BenetrendsReviewPage() {
                                             "Tech-savvy entrepreneurs wanting apps",
                                             "Those needing extensive hand-holding"
                                         ].map((item, index) => (
-                                            <li key={index} className="flex items-start gap-2 text-slate-300 text-sm">
-                                                <AlertTriangle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
+                                            <li key={index} className="flex items-start gap-2 text-slate-600 text-sm">
+                                                <AlertTriangle className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
                                                 {item}
                                             </li>
                                         ))}
@@ -409,9 +409,9 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="py-12 bg-slate-800/50">
+                <section className="py-12 bg-slate-50">
                     <Container>
-                        <h2 className="text-2xl font-bold text-white mb-8 text-center">
+                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
                             Benetrends FAQ
                         </h2>
 
@@ -442,9 +442,9 @@ export default function BenetrendsReviewPage() {
                                     answer: "Yes, Benetrends has particularly strong relationships with major franchise brands. They're one of the top choices for franchise buyers using ROBS funding."
                                 }
                             ].map((faq, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
-                                    <h3 className="text-white font-semibold mb-2">{faq.question}</h3>
-                                    <p className="text-slate-400 text-sm">{faq.answer}</p>
+                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-5">
+                                    <h3 className="text-[#000080] font-semibold mb-2">{faq.question}</h3>
+                                    <p className="text-slate-600 text-sm">{faq.answer}</p>
                                 </div>
                             ))}
                         </div>
@@ -452,23 +452,23 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Final Verdict */}
-                <section className="py-12 bg-slate-900">
+                <section className="py-12 bg-white">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h2 className="text-2xl font-bold text-white mb-6">Our Verdict: Benetrends</h2>
+                            <h2 className="text-2xl font-bold text-[#000080] mb-6">Our Verdict: Benetrends</h2>
 
-                            <div className="bg-white/5 backdrop-blur-sm border border-blue-500/30 rounded-2xl p-8 mb-8">
+                            <div className="bg-slate-50 border border-[#000080]/30 rounded-2xl p-8 mb-8">
                                 <div className="flex justify-center mb-4">
                                     {[1, 2, 3, 4, 5].map((star) => (
                                         <Star
                                             key={star}
-                                            className={`w-8 h-8 ${star <= 4 ? 'text-amber-400 fill-amber-400' : star === 5 ? 'text-amber-400 fill-amber-400/50' : 'text-slate-600'}`}
+                                            className={`w-8 h-8 ${star <= 4 ? 'text-[#B22234] fill-[#B22234]' : star === 5 ? 'text-[#B22234] fill-[#B22234]/50' : 'text-slate-300'}`}
                                         />
                                     ))}
                                 </div>
-                                <div className="text-3xl font-bold text-blue-400 mb-4">4.5 / 5</div>
-                                <p className="text-lg text-slate-300 leading-relaxed">
-                                    Benetrends is a <strong className="text-white">solid, proven ROBS provider</strong> with unmatched
+                                <div className="text-3xl font-bold text-[#000080] mb-4">4.5 / 5</div>
+                                <p className="text-lg text-slate-600 leading-relaxed">
+                                    Benetrends is a <strong className="text-slate-800">solid, proven ROBS provider</strong> with unmatched
                                     experience in the industry. If you want lower fees and don&apos;t need extra services like payroll,
                                     Benetrends is an excellent choice. Their 40+ years of experience and strong franchise relationships
                                     make them particularly good for franchise buyers.
@@ -497,9 +497,9 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Related Content */}
-                <section className="py-12 bg-slate-800/50">
+                <section className="py-12 bg-slate-50">
                     <Container>
-                        <h2 className="text-xl font-bold text-white mb-6 text-center">Related Resources</h2>
+                        <h2 className="text-xl font-bold text-[#000080] mb-6 text-center">Related Resources</h2>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
                             {[
@@ -511,12 +511,12 @@ export default function BenetrendsReviewPage() {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                                    className="bg-white border border-slate-200 rounded-xl p-4 hover:border-[#000080] transition-colors group"
                                 >
-                                    <h3 className="text-white font-semibold mb-1 group-hover:text-blue-400 transition-colors text-sm">
+                                    <h3 className="text-slate-800 font-semibold mb-1 group-hover:text-[#000080] transition-colors text-sm">
                                         {link.title}
                                     </h3>
-                                    <p className="text-slate-400 text-xs">{link.desc}</p>
+                                    <p className="text-slate-500 text-xs">{link.desc}</p>
                                 </Link>
                             ))}
                         </div>

@@ -123,7 +123,7 @@ const schema = {
 
 export default function BuyPhysicalSilverGuidePage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -131,21 +131,21 @@ export default function BuyPhysicalSilverGuidePage() {
             <Navbar />
 
             {/* Hero Header */}
-            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
-                    <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-500/10 rounded-full blur-[100px]" />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#B22234]/5 rounded-full blur-[150px]" />
+                    <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#000080]/5 rounded-full blur-[100px]" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-slate-400/10 px-4 py-1.5 text-sm font-semibold text-slate-300 mb-6 border border-slate-400/20">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-slate-600 mb-6 border border-[#B22234]/20">
                             <Coins className="w-4 h-4" />
                             Silver Squeeze Hub
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#000080]">
                             How to Buy Physical Silver: Complete 2026 Guide
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">
+                        <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
                             Master the art of buying physical silver. Learn to navigate premiums, choose the right products, find reputable dealers, and protect yourself from common scams.
                         </p>
                     </div>
@@ -160,10 +160,10 @@ export default function BuyPhysicalSilverGuidePage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-amber-400 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-[#B22234] max-w-none">
 
                         {/* Intro Content */}
-                        <p className="lead text-xl text-slate-300">
+                        <p className="lead text-xl text-slate-600">
                             With silver prices volatile and premiums at historic highs, knowing <strong>how to buy physical silver</strong> smartly has never been more important. This guide will teach you everything from understanding <strong>silver premiums over spot</strong> to identifying the best products for your investment goals.
                         </p>
 
@@ -173,8 +173,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 1: Why Buy Physical Silver */}
                         <section id="why-physical-silver" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <Shield className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <Shield className="w-8 h-8 text-slate-600" />
                                 Why Buy Physical Silver (vs. Paper)
                             </h2>
 
@@ -183,25 +183,25 @@ export default function BuyPhysicalSilverGuidePage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-slate-400/10 backdrop-blur-sm border border-slate-400/20">
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
                                     <CheckCircle2 className="w-8 h-8 text-green-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">No Counterparty Risk</h4>
-                                    <p className="text-sm text-slate-400">Physical silver in your possession doesn&apos;t depend on any institution&apos;s solvency. Unlike ETF shares or futures contracts, your silver remains yours regardless of market conditions.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">No Counterparty Risk</h4>
+                                    <p className="text-sm text-slate-600">Physical silver in your possession doesn&apos;t depend on any institution&apos;s solvency. Unlike ETF shares or futures contracts, your silver remains yours regardless of market conditions.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-slate-400/10 backdrop-blur-sm border border-slate-400/20">
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
                                     <Lock className="w-8 h-8 text-green-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">True Ownership</h4>
-                                    <p className="text-sm text-slate-400">When you hold physical silver, you have absolute ownership. No terms of service, no account restrictions, no potential for rehypothecation.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">True Ownership</h4>
+                                    <p className="text-sm text-slate-600">When you hold physical silver, you have absolute ownership. No terms of service, no account restrictions, no potential for rehypothecation.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-slate-400/10 backdrop-blur-sm border border-slate-400/20">
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
                                     <Globe className="w-8 h-8 text-green-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Universal Value</h4>
-                                    <p className="text-sm text-slate-400">Silver has been money for 5,000 years. Physical silver is recognized and valued worldwide, independent of any government or currency system.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Universal Value</h4>
+                                    <p className="text-sm text-slate-600">Silver has been money for 5,000 years. Physical silver is recognized and valued worldwide, independent of any government or currency system.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-slate-400/10 backdrop-blur-sm border border-slate-400/20">
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
                                     <TrendingUp className="w-8 h-8 text-green-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Supply Squeeze Exposure</h4>
-                                    <p className="text-sm text-slate-400">Physical silver buyers directly impact available supply. During the <Link href="/silver-squeeze" className="text-amber-400 hover:underline">silver squeeze</Link>, physical demand has exposed the disconnect between paper and physical markets.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Supply Squeeze Exposure</h4>
+                                    <p className="text-sm text-slate-600">Physical silver buyers directly impact available supply. During the <Link href="/silver-squeeze" className="text-[#B22234] hover:underline">silver squeeze</Link>, physical demand has exposed the disconnect between paper and physical markets.</p>
                                 </div>
                             </div>
 
@@ -212,8 +212,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 2: Types of Silver */}
                         <section id="types-of-silver" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <Package className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <Package className="w-8 h-8 text-slate-600" />
                                 Types of Silver to Buy
                             </h2>
 
@@ -221,7 +221,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 Physical silver comes in three main forms: <strong>coins, bars, and rounds</strong>. Each has distinct characteristics, premiums, and advantages. Understanding these differences helps you make smarter purchasing decisions.
                             </p>
 
-                            <h3 className="text-white">Government-Minted Silver Coins</h3>
+                            <h3 className="text-[#000080]">Government-Minted Silver Coins</h3>
                             <p>
                                 Sovereign coins are produced by national mints with guaranteed weight and purity. They carry the highest premiums but offer maximum liquidity, recognition, and legal tender status.
                             </p>
@@ -232,7 +232,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 <li><strong>British Silver Britannias:</strong> 1 oz .999 fine silver. Excellent design, good recognition.</li>
                             </ul>
 
-                            <h3 className="text-white">Silver Bars</h3>
+                            <h3 className="text-[#000080]">Silver Bars</h3>
                             <p>
                                 Silver bars offer the most metal per dollar due to their simple manufacturing process. They&apos;re ideal for investors focused purely on accumulating ounces rather than collectibility.
                             </p>
@@ -243,48 +243,48 @@ export default function BuyPhysicalSilverGuidePage() {
                                 <li><strong>1 kilo bars (32.15 oz):</strong> Popular internationally, good balance of size and liquidity.</li>
                             </ul>
 
-                            <h3 className="text-white">Silver Rounds</h3>
+                            <h3 className="text-[#000080]">Silver Rounds</h3>
                             <p>
                                 Rounds are privately minted, coin-shaped silver pieces. They look like coins but carry no face value or government backing. Their lower premiums make them attractive for pure investment purposes.
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Type</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Typical Premium</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Liquidity</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Best For</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Type</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Typical Premium</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Liquidity</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Best For</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">American Eagles</td>
+                                            <td className="p-4 font-semibold text-slate-900">American Eagles</td>
                                             <td className="p-4">15-30%</td>
                                             <td className="p-4">Excellent</td>
                                             <td className="p-4">Maximum liquidity, IRA</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Canadian Maples</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">Canadian Maples</td>
                                             <td className="p-4">12-25%</td>
                                             <td className="p-4">Excellent</td>
                                             <td className="p-4">Highest purity, IRA</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Generic Rounds</td>
+                                            <td className="p-4 font-semibold text-slate-900">Generic Rounds</td>
                                             <td className="p-4">5-12%</td>
                                             <td className="p-4">Good</td>
                                             <td className="p-4">Maximum ounces/dollar</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">10 oz Bars</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">10 oz Bars</td>
                                             <td className="p-4">4-10%</td>
                                             <td className="p-4">Good</td>
                                             <td className="p-4">Balance of premium & size</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">100 oz Bars</td>
+                                            <td className="p-4 font-semibold text-slate-900">100 oz Bars</td>
                                             <td className="p-4">3-7%</td>
                                             <td className="p-4">Moderate</td>
                                             <td className="p-4">Serious stackers, lowest premiums</td>
@@ -296,8 +296,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 3: Understanding Premiums */}
                         <section id="understanding-premiums" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <Scale className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <Scale className="w-8 h-8 text-slate-600" />
                                 Understanding Premiums Over Spot
                             </h2>
 
@@ -305,7 +305,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 The <strong>silver premium over spot</strong> is the additional cost above the spot price you pay when buying physical silver. Understanding premiums is crucial because they directly impact your break-even point and overall returns.
                             </p>
 
-                            <h3 className="text-white">What Creates Silver Premiums?</h3>
+                            <h3 className="text-[#000080]">What Creates Silver Premiums?</h3>
                             <p>
                                 Premiums exist because transforming raw silver into retail products costs money. They include:
                             </p>
@@ -321,20 +321,20 @@ export default function BuyPhysicalSilverGuidePage() {
                                 During the 2021 silver squeeze and subsequent waves, premiums on physical silver spiked dramatically. American Silver Eagles have traded at 50%+ premiums during peak demand. Always check current premiums before buying and compare across dealers.
                             </Callout>
 
-                            <h3 className="text-white">How to Calculate Silver Premium</h3>
+                            <h3 className="text-[#000080]">How to Calculate Silver Premium</h3>
                             <p>
                                 The <strong>silver coin premium</strong> or bar premium is calculated using this formula:
                             </p>
-                            <div className="bg-slate-800/50 rounded-xl p-6 border border-white/10 not-prose my-6">
-                                <p className="text-white font-mono text-center">
+                            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 not-prose my-6">
+                                <p className="text-slate-900 font-mono text-center">
                                     Premium % = ((Price Paid - Spot Price) / Spot Price) x 100
                                 </p>
-                                <p className="text-slate-400 text-sm mt-4 text-center">
+                                <p className="text-slate-600 text-sm mt-4 text-center">
                                     Example: If spot silver is $25/oz and you pay $30/oz, your premium is 20%
                                 </p>
                             </div>
 
-                            <h3 className="text-white">Current Premium Environment (2026)</h3>
+                            <h3 className="text-[#000080]">Current Premium Environment (2026)</h3>
                             <p>
                                 As of early 2026, premiums remain elevated compared to historical norms due to:
                             </p>
@@ -350,12 +350,12 @@ export default function BuyPhysicalSilverGuidePage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose border border-slate-700">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-slate-100 rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want Silver in Your IRA?</h3>
-                                <p className="mb-6 text-slate-300">If you&apos;re interested in holding physical silver in a tax-advantaged retirement account, take our quiz to find the right company for your needs.</p>
-                                <Button variant="gold" size="lg" asChild>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Want Silver in Your IRA?</h3>
+                                <p className="mb-6 text-slate-600">If you&apos;re interested in holding physical silver in a tax-advantaged retirement account, take our quiz to find the right company for your needs.</p>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                     <Link href="/quiz">Find My Silver IRA Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -363,8 +363,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 4: Best Products */}
                         <section id="best-products" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <Coins className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <Coins className="w-8 h-8 text-slate-600" />
                                 Best Silver Products for Investment
                             </h2>
 
@@ -372,44 +372,44 @@ export default function BuyPhysicalSilverGuidePage() {
                                 Not all silver products are equal for investment purposes. Here are our recommendations based on different investor goals:
                             </p>
 
-                            <h3 className="text-white">Top Picks: Government Coins</h3>
+                            <h3 className="text-[#000080]">Top Picks: Government Coins</h3>
                             <div className="not-prose my-6 space-y-4">
-                                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+                                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center shrink-0">
-                                            <span className="text-amber-400 font-bold">#1</span>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234]/20 flex items-center justify-center shrink-0">
+                                            <span className="text-[#B22234] font-bold">#1</span>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-white">American Silver Eagles</h4>
-                                            <p className="text-sm text-slate-400 mt-1">The gold standard of silver coins. Universally recognized, IRA-approved, and guaranteed by the US government. Higher premiums are offset by superior liquidity when selling.</p>
+                                            <h4 className="font-bold text-slate-900">American Silver Eagles</h4>
+                                            <p className="text-sm text-slate-600 mt-1">The gold standard of silver coins. Universally recognized, IRA-approved, and guaranteed by the US government. Higher premiums are offset by superior liquidity when selling.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+                                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-slate-400/20 flex items-center justify-center shrink-0">
-                                            <span className="text-slate-300 font-bold">#2</span>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234]/10 flex items-center justify-center shrink-0">
+                                            <span className="text-slate-600 font-bold">#2</span>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-white">Canadian Silver Maple Leafs</h4>
-                                            <p className="text-sm text-slate-400 mt-1">The purest (.9999) and arguably most beautiful silver coin. Slightly lower premiums than Eagles with excellent recognition. MintShield technology prevents milk spots.</p>
+                                            <h4 className="font-bold text-slate-900">Canadian Silver Maple Leafs</h4>
+                                            <p className="text-sm text-slate-600 mt-1">The purest (.9999) and arguably most beautiful silver coin. Slightly lower premiums than Eagles with excellent recognition. MintShield technology prevents milk spots.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+                                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-full bg-slate-400/20 flex items-center justify-center shrink-0">
-                                            <span className="text-slate-300 font-bold">#3</span>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234]/10 flex items-center justify-center shrink-0">
+                                            <span className="text-slate-600 font-bold">#3</span>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-white">Austrian Silver Philharmonics</h4>
-                                            <p className="text-sm text-slate-400 mt-1">Europe&apos;s most popular silver coin. Legal tender in the Eurozone. Beautiful musical design. Often available at lower premiums than Eagles or Maples.</p>
+                                            <h4 className="font-bold text-slate-900">Austrian Silver Philharmonics</h4>
+                                            <p className="text-sm text-slate-600 mt-1">Europe&apos;s most popular silver coin. Legal tender in the Eurozone. Beautiful musical design. Often available at lower premiums than Eagles or Maples.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <h3 className="text-white">Top Picks: Bars</h3>
+                            <h3 className="text-[#000080]">Top Picks: Bars</h3>
                             <p>
                                 For serious stackers focused on accumulating ounces, bars from recognized refiners offer the best value:
                             </p>
@@ -421,7 +421,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 <li><strong>Generic/secondary market bars:</strong> Lowest premiums for bulk accumulation</li>
                             </ul>
 
-                            <h3 className="text-white">Top Picks: Rounds</h3>
+                            <h3 className="text-[#000080]">Top Picks: Rounds</h3>
                             <p>
                                 For maximum silver per dollar without bar storage challenges:
                             </p>
@@ -434,8 +434,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 5: Where to Buy */}
                         <section id="where-to-buy" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <Store className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <Store className="w-8 h-8 text-slate-600" />
                                 Where to Buy Physical Silver
                             </h2>
 
@@ -443,15 +443,15 @@ export default function BuyPhysicalSilverGuidePage() {
                                 Choosing the right place to buy silver impacts both your cost and security. Here&apos;s a breakdown of your options:
                             </p>
 
-                            <h3 className="text-white">Online Dealers</h3>
+                            <h3 className="text-[#000080]">Online Dealers</h3>
                             <p>
                                 Online dealers offer the widest selection and often the best prices. Major reputable dealers include:
                             </p>
 
                             <div className="not-prose my-6 grid md:grid-cols-2 gap-4">
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-                                    <h4 className="font-bold text-white mb-2">Pros of Online Dealers</h4>
-                                    <ul className="text-sm text-slate-400 space-y-1">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-slate-900 mb-2">Pros of Online Dealers</h4>
+                                    <ul className="text-sm text-slate-600 space-y-1">
                                         <li>+ Lower premiums due to volume</li>
                                         <li>+ Extensive product selection</li>
                                         <li>+ Price comparison is easy</li>
@@ -459,9 +459,9 @@ export default function BuyPhysicalSilverGuidePage() {
                                         <li>+ Often offer free shipping thresholds</li>
                                     </ul>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-                                    <h4 className="font-bold text-white mb-2">Cons of Online Dealers</h4>
-                                    <ul className="text-sm text-slate-400 space-y-1">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-slate-900 mb-2">Cons of Online Dealers</h4>
+                                    <ul className="text-sm text-slate-600 space-y-1">
                                         <li>- Can&apos;t inspect before buying</li>
                                         <li>- Shipping time required</li>
                                         <li>- Must trust delivery process</li>
@@ -481,15 +481,15 @@ export default function BuyPhysicalSilverGuidePage() {
                                 <li>Verify secure checkout (HTTPS, reputable payment processors)</li>
                             </ul>
 
-                            <h3 className="text-white">Local Coin Shops (LCS)</h3>
+                            <h3 className="text-[#000080]">Local Coin Shops (LCS)</h3>
                             <p>
                                 Local coin shops offer unique advantages that online can&apos;t match:
                             </p>
 
                             <div className="not-prose my-6 grid md:grid-cols-2 gap-4">
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-                                    <h4 className="font-bold text-white mb-2">Pros of Local Shops</h4>
-                                    <ul className="text-sm text-slate-400 space-y-1">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-slate-900 mb-2">Pros of Local Shops</h4>
+                                    <ul className="text-sm text-slate-600 space-y-1">
                                         <li>+ Inspect products before buying</li>
                                         <li>+ Immediate possession</li>
                                         <li>+ Build relationship with dealer</li>
@@ -498,9 +498,9 @@ export default function BuyPhysicalSilverGuidePage() {
                                         <li>+ Cash transactions (privacy)</li>
                                     </ul>
                                 </div>
-                                <div className="bg-white/5 border border-white/10 rounded-xl p-4">
-                                    <h4 className="font-bold text-white mb-2">Cons of Local Shops</h4>
-                                    <ul className="text-sm text-slate-400 space-y-1">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                                    <h4 className="font-bold text-slate-900 mb-2">Cons of Local Shops</h4>
+                                    <ul className="text-sm text-slate-600 space-y-1">
                                         <li>- Often higher premiums</li>
                                         <li>- Limited selection</li>
                                         <li>- Quality varies widely</li>
@@ -509,7 +509,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 </div>
                             </div>
 
-                            <h3 className="text-white">Other Options</h3>
+                            <h3 className="text-[#000080]">Other Options</h3>
                             <ul>
                                 <li><strong>eBay:</strong> Can find deals, but counterfeit risk is real. Only buy from highly-rated sellers with buyer protection.</li>
                                 <li><strong>Coin shows:</strong> Great for building relationships and finding deals, especially on secondary market products.</li>
@@ -519,8 +519,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 6: Premium Limits */}
                         <section id="premium-limits" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <DollarSign className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <DollarSign className="w-8 h-8 text-slate-600" />
                                 How Much Premium Is Too Much?
                             </h2>
 
@@ -528,40 +528,40 @@ export default function BuyPhysicalSilverGuidePage() {
                                 This is one of the most debated topics in the silver community. The answer depends on your goals and the current market environment.
                             </p>
 
-                            <h3 className="text-white">General Premium Guidelines</h3>
+                            <h3 className="text-[#000080]">General Premium Guidelines</h3>
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Product</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Normal Premium</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">High Premium</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Avoid</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Normal Premium</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">High Premium</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Avoid</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Generic Bars/Rounds</td>
+                                            <td className="p-4 font-semibold text-slate-900">Generic Bars/Rounds</td>
                                             <td className="p-4 text-green-400">3-8%</td>
-                                            <td className="p-4 text-amber-400">8-15%</td>
+                                            <td className="p-4 text-[#B22234]">8-15%</td>
                                             <td className="p-4 text-red-400">15%+</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Silver Maples/Philharmonics</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">Silver Maples/Philharmonics</td>
                                             <td className="p-4 text-green-400">10-18%</td>
-                                            <td className="p-4 text-amber-400">18-30%</td>
+                                            <td className="p-4 text-[#B22234]">18-30%</td>
                                             <td className="p-4 text-red-400">30%+</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">American Silver Eagles</td>
+                                            <td className="p-4 font-semibold text-slate-900">American Silver Eagles</td>
                                             <td className="p-4 text-green-400">15-25%</td>
-                                            <td className="p-4 text-amber-400">25-40%</td>
+                                            <td className="p-4 text-[#B22234]">25-40%</td>
                                             <td className="p-4 text-red-400">40%+</td>
                                         </tr>
-                                        <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">100 oz Bars</td>
+                                        <tr className="bg-slate-100">
+                                            <td className="p-4 font-semibold text-slate-900">100 oz Bars</td>
                                             <td className="p-4 text-green-400">2-5%</td>
-                                            <td className="p-4 text-amber-400">5-10%</td>
+                                            <td className="p-4 text-[#B22234]">5-10%</td>
                                             <td className="p-4 text-red-400">10%+</td>
                                         </tr>
                                     </tbody>
@@ -572,7 +572,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 When premiums are elevated, consider switching to lower-premium products. During the silver squeeze, savvy stackers moved from Eagles to generic rounds and bars, accumulating 20-30% more silver for the same dollars.
                             </Callout>
 
-                            <h3 className="text-white">When Higher Premiums Make Sense</h3>
+                            <h3 className="text-[#000080]">When Higher Premiums Make Sense</h3>
                             <ul>
                                 <li><strong>IRA purchases:</strong> Government coins like Eagles and Maples are required for some IRA custodians</li>
                                 <li><strong>Liquidity priority:</strong> Recognized coins sell faster and easier in emergencies</li>
@@ -583,8 +583,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 7: Storage Options */}
                         <section id="storage-options" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <Warehouse className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <Warehouse className="w-8 h-8 text-slate-600" />
                                 Storage Options
                             </h2>
 
@@ -592,7 +592,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 Once you&apos;ve acquired physical silver, you need to store it safely. Your options range from home storage to professional depositories, each with distinct tradeoffs.
                             </p>
 
-                            <h3 className="text-white">Home Storage</h3>
+                            <h3 className="text-[#000080]">Home Storage</h3>
                             <p>
                                 Keeping silver at home provides immediate access but comes with security responsibilities:
                             </p>
@@ -607,7 +607,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 While home storage offers privacy and immediate access, the responsibility for security falls entirely on you. For larger holdings ($50,000+), many experts recommend professional storage for at least a portion.
                             </Callout>
 
-                            <h3 className="text-white">Professional Depository Storage</h3>
+                            <h3 className="text-[#000080]">Professional Depository Storage</h3>
                             <p>
                                 Third-party depositories offer institutional-grade security:
                             </p>
@@ -617,7 +617,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 <li><strong>Major depositories:</strong> Delaware Depository, Brink&apos;s, IDS of Delaware, Texas Precious Metals Depository</li>
                             </ul>
 
-                            <h3 className="text-white">IRA Storage (Required)</h3>
+                            <h3 className="text-[#000080]">IRA Storage (Required)</h3>
                             <p>
                                 If you hold silver in an IRA, it <strong>must</strong> be stored at an IRS-approved depository. You cannot store IRA silver at home or in a personal safe deposit box. This is a critical distinction from regular silver ownership.
                             </p>
@@ -628,8 +628,8 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 8: Silver in IRA */}
                         <section id="silver-in-ira" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
-                                <Building2 className="w-8 h-8 text-slate-400" />
+                            <h2 className="text-[#000080] flex items-center gap-3">
+                                <Building2 className="w-8 h-8 text-slate-600" />
                                 Buying Silver in Your IRA
                             </h2>
 
@@ -637,41 +637,41 @@ export default function BuyPhysicalSilverGuidePage() {
                                 A <strong>Silver IRA</strong> allows you to hold physical silver in a tax-advantaged retirement account. This is one of the most powerful ways to combine the benefits of physical ownership with the tax benefits of retirement accounts.
                             </p>
 
-                            <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-slate-700 not-prose my-8">
-                                <h4 className="text-xl font-bold text-white mb-4">Key Silver IRA Requirements</h4>
+                            <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200 not-prose my-8">
+                                <h4 className="text-xl font-bold text-slate-900 mb-4">Key Silver IRA Requirements</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
                                         <div>
-                                            <p className="text-white font-medium">Purity Standards</p>
-                                            <p className="text-sm text-slate-400">Silver must be .999 fine (99.9% pure) minimum</p>
+                                            <p className="text-slate-900 font-medium">Purity Standards</p>
+                                            <p className="text-sm text-slate-600">Silver must be .999 fine (99.9% pure) minimum</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
                                         <div>
-                                            <p className="text-white font-medium">Approved Products</p>
-                                            <p className="text-sm text-slate-400">Eagles, Maples, Philharmonics, and certain bars</p>
+                                            <p className="text-slate-900 font-medium">Approved Products</p>
+                                            <p className="text-sm text-slate-600">Eagles, Maples, Philharmonics, and certain bars</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
                                         <div>
-                                            <p className="text-white font-medium">Custodian Required</p>
-                                            <p className="text-sm text-slate-400">Self-directed IRA with precious metals custodian</p>
+                                            <p className="text-slate-900 font-medium">Custodian Required</p>
+                                            <p className="text-sm text-slate-600">Self-directed IRA with precious metals custodian</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
                                         <div>
-                                            <p className="text-white font-medium">Approved Depository</p>
-                                            <p className="text-sm text-slate-400">Must store at IRS-approved facility</p>
+                                            <p className="text-slate-900 font-medium">Approved Depository</p>
+                                            <p className="text-sm text-slate-600">Must store at IRS-approved facility</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <h3 className="text-white">How to Open a Silver IRA</h3>
+                            <h3 className="text-[#000080]">How to Open a Silver IRA</h3>
                             <p>
                                 The process is simpler than most people think:
                             </p>
@@ -694,7 +694,7 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* Section 9: Red Flags */}
                         <section id="red-flags" className="scroll-mt-32">
-                            <h2 className="text-white flex items-center gap-3">
+                            <h2 className="text-[#000080] flex items-center gap-3">
                                 <BadgeAlert className="w-8 h-8 text-red-400" />
                                 Red Flags to Avoid When Buying Silver
                             </h2>
@@ -748,7 +748,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                 </div>
                             </div>
 
-                            <h3 className="text-white">How to Protect Yourself</h3>
+                            <h3 className="text-[#000080]">How to Protect Yourself</h3>
                             <ul>
                                 <li>Buy from established dealers with verified track records</li>
                                 <li>Check BBB ratings and online reviews before purchasing</li>
@@ -765,75 +765,75 @@ export default function BuyPhysicalSilverGuidePage() {
 
                         {/* FAQ Section */}
                         <section id="faq" className="scroll-mt-32">
-                            <h2 className="text-white">Frequently Asked Questions</h2>
+                            <h2 className="text-[#000080]">Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What is a good premium to pay for silver?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         A reasonable premium depends on the product type. Generic silver bars typically carry 3-8% premiums, silver rounds 5-10%, and government-minted coins like American Silver Eagles can carry 15-30% premiums. During normal market conditions, lower is generally better for investment purposes. However, during high-demand periods like the silver squeeze, expect elevated premiums across all products.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Should I buy silver coins or bars?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         For pure investment purposes, silver bars offer the most silver per dollar due to lower premiums. However, government-minted coins offer superior liquidity, recognition, and potential numismatic value. Most experts recommend a mix: bars for bulk accumulation and coins for liquidity and divisibility. Consider your goals: if you might need to sell small amounts, coins are better. If you&apos;re long-term stacking, bars maximize your ounces.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Can I buy physical silver for my IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
-                                        Yes! You can hold physical silver in a self-directed IRA, also known as a Silver IRA. The silver must meet IRS purity requirements (99.9% pure) and be stored at an IRS-approved depository. You cannot store IRA silver at home. Popular choices include American Silver Eagles, Canadian Silver Maple Leafs, and certain silver bars. See our <Link href="/guide/silver-ira-guide" className="text-amber-400 hover:underline">Silver IRA Guide</Link> for complete details.
+                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                        Yes! You can hold physical silver in a self-directed IRA, also known as a Silver IRA. The silver must meet IRS purity requirements (99.9% pure) and be stored at an IRS-approved depository. You cannot store IRA silver at home. Popular choices include American Silver Eagles, Canadian Silver Maple Leafs, and certain silver bars. See our <Link href="/guide/silver-ira-guide" className="text-[#B22234] hover:underline">Silver IRA Guide</Link> for complete details.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is it better to buy silver online or locally?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Online dealers typically offer lower premiums and better selection, while local coin shops allow you to inspect products and avoid shipping. Many experienced silver stackers use both approaches: online for bulk purchases where premiums matter most, and local shops for smaller opportunistic buys, face-to-face relationships, and immediate possession. The best strategy depends on your priorities—price, convenience, or privacy.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">How do I know if silver is real?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Several tests can help verify authentic silver: 1) Magnet test—silver is not magnetic; 2) Ice test—silver conducts heat rapidly, causing ice to melt quickly; 3) Ring test—silver produces a distinctive ring when tapped; 4) Specific gravity test—silver&apos;s density is precisely 10.49 g/cm3; 5) Professional testing with devices like Sigma Metalytics. The best protection is buying from reputable dealers with authentication guarantees.
                                     </p>
                                 </details>
@@ -841,17 +841,17 @@ export default function BuyPhysicalSilverGuidePage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white relative overflow-hidden not-prose border border-slate-700">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-slate-100 rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <ShieldCheck className="w-12 h-12 text-slate-400 mx-auto mb-4" />
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Start Stacking Silver?</h3>
-                                <p className="mb-6 text-slate-300 max-w-xl mx-auto">Whether you&apos;re buying silver for personal ownership or your retirement account, we can help you find the right approach.</p>
+                                <ShieldCheck className="w-12 h-12 text-slate-600 mx-auto mb-4" />
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Ready to Start Stacking Silver?</h3>
+                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">Whether you&apos;re buying silver for personal ownership or your retirement account, we can help you find the right approach.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                         <Link href="/quiz">Find Your Silver IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-slate-300 text-slate-900 hover:bg-slate-200">
                                         <Link href="/silver-squeeze">Explore Silver Squeeze Hub</Link>
                                     </Button>
                                 </div>
@@ -865,21 +865,21 @@ export default function BuyPhysicalSilverGuidePage() {
             </Container>
 
             {/* Related Content */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <h2 className="text-2xl font-serif font-bold text-white mb-8 text-center">Continue Your Silver Education</h2>
+                    <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Continue Your Silver Education</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/silver-squeeze" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver Squeeze Hub</h3>
-                            <p className="text-sm text-slate-400">Learn about the silver squeeze movement and why it matters for investors.</p>
+                        <Link href="/silver-squeeze" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver Squeeze Hub</h3>
+                            <p className="text-sm text-slate-600">Learn about the silver squeeze movement and why it matters for investors.</p>
                         </Link>
-                        <Link href="/guide/silver-ira-guide" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Guide</h3>
-                            <p className="text-sm text-slate-400">Everything you need to know about holding silver in a retirement account.</p>
+                        <Link href="/guide/silver-ira-guide" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Guide</h3>
+                            <p className="text-sm text-slate-600">Everything you need to know about holding silver in a retirement account.</p>
                         </Link>
-                        <Link href="/best-silver-ira-companies" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Best Silver IRA Companies</h3>
-                            <p className="text-sm text-slate-400">Compare the top companies for silver IRA accounts in 2026.</p>
+                        <Link href="/best-silver-ira-companies" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Best Silver IRA Companies</h3>
+                            <p className="text-sm text-slate-600">Compare the top companies for silver IRA accounts in 2026.</p>
                         </Link>
                     </div>
                 </Container>

@@ -83,7 +83,7 @@ const faqSchema = {
 
 export default function FIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-white text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
@@ -94,7 +94,7 @@ export default function FIRECalculatorPage() {
       />
       <Navbar />
       <FIRECalculator />
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA
             variant="footer"

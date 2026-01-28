@@ -152,7 +152,7 @@ const faqJsonLd = {
 
 export default function SilverIraRolloverPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -164,29 +164,29 @@ export default function SilverIraRolloverPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="py-16 md:py-20 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+            <header className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-500/20 border border-slate-400/30 rounded-full text-slate-300 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
                             <RefreshCw className="h-4 w-4" />
                             ROLLOVER GUIDE
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
                             Silver IRA Rollover: Move Your 401k Into Physical Silver
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
                             Learn how to transfer your retirement funds into a Silver IRA tax-free. Our step-by-step guide covers direct vs. indirect rollovers, eligible accounts, and how to avoid costly mistakes.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button variant="gold" size="lg" asChild>
+                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Start Your Rollover <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="border-white/20 text-slate-300 hover:bg-white/10" asChild>
+                            <Button variant="outline" size="lg" className="border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
                                 <Link href="#rollover-steps">
                                     See the Process
                                 </Link>
@@ -197,39 +197,39 @@ export default function SilverIraRolloverPage() {
             </header>
 
             {/* Key Benefits */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="grid md:grid-cols-4 gap-6">
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                             <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-4" />
-                            <h3 className="font-bold text-white mb-2">100% Tax-Free</h3>
-                            <p className="text-sm text-slate-400">Direct rollovers avoid all taxes and penalties</p>
+                            <h3 className="font-bold text-slate-900 mb-2">100% Tax-Free</h3>
+                            <p className="text-sm text-slate-600">Direct rollovers avoid all taxes and penalties</p>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                             <Clock className="h-8 w-8 text-blue-400 mx-auto mb-4" />
-                            <h3 className="font-bold text-white mb-2">2-4 Weeks</h3>
-                            <p className="text-sm text-slate-400">Typical completion time for the full process</p>
+                            <h3 className="font-bold text-slate-900 mb-2">2-4 Weeks</h3>
+                            <p className="text-sm text-slate-600">Typical completion time for the full process</p>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                            <Shield className="h-8 w-8 text-amber-400 mx-auto mb-4" />
-                            <h3 className="font-bold text-white mb-2">Full Protection</h3>
-                            <p className="text-sm text-slate-400">Same IRA protections as your current account</p>
+                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                            <Shield className="h-8 w-8 text-[#B22234] mx-auto mb-4" />
+                            <h3 className="font-bold text-slate-900 mb-2">Full Protection</h3>
+                            <p className="text-sm text-slate-600">Same IRA protections as your current account</p>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                            <Coins className="h-8 w-8 text-slate-300 mx-auto mb-4" />
-                            <h3 className="font-bold text-white mb-2">Physical Silver</h3>
-                            <p className="text-sm text-slate-400">Own real silver, not paper promises</p>
+                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                            <Coins className="h-8 w-8 text-slate-600 mx-auto mb-4" />
+                            <h3 className="font-bold text-slate-900 mb-2">Physical Silver</h3>
+                            <p className="text-sm text-slate-600">Own real silver, not paper promises</p>
                         </div>
                     </div>
                 </Container>
             </section>
 
             {/* Rollover Steps */}
-            <section id="rollover-steps" className="py-16 bg-slate-900 scroll-mt-20">
+            <section id="rollover-steps" className="py-16 bg-white scroll-mt-20">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">5 Steps to Complete Your Silver IRA Rollover</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">5 Steps to Complete Your Silver IRA Rollover</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             The rollover process is straightforward when you work with the right company. Here's exactly what to expect.
                         </p>
 
@@ -239,21 +239,21 @@ export default function SilverIraRolloverPage() {
                                 return (
                                     <div key={step.step} className="flex gap-6">
                                         <div className="flex-shrink-0">
-                                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
+                                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#B22234] to-[#8b1c2a] flex items-center justify-center">
                                                 <span className="text-2xl font-bold text-slate-900">{step.step}</span>
                                             </div>
                                         </div>
-                                        <div className="flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                        <div className="flex-1 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                             <div className="flex items-center gap-3 mb-3">
-                                                <Icon className="h-6 w-6 text-slate-400" />
-                                                <h3 className="text-xl font-bold text-white">{step.title}</h3>
+                                                <Icon className="h-6 w-6 text-slate-600" />
+                                                <h3 className="text-xl font-bold text-slate-900">{step.title}</h3>
                                             </div>
-                                            <p className="text-slate-400 mb-4">{step.description}</p>
-                                            <div className="bg-slate-800/50 rounded-lg p-4">
-                                                <h4 className="text-sm font-semibold text-amber-400 mb-2">Pro Tips:</h4>
+                                            <p className="text-slate-600 mb-4">{step.description}</p>
+                                            <div className="bg-slate-50 rounded-lg p-4">
+                                                <h4 className="text-sm font-semibold text-[#B22234] mb-2">Pro Tips:</h4>
                                                 <ul className="space-y-1">
                                                     {step.tips.map((tip, idx) => (
-                                                        <li key={idx} className="flex items-center gap-2 text-sm text-slate-400">
+                                                        <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
                                                             <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0" />
                                                             {tip}
                                                         </li>
@@ -270,11 +270,11 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* Direct vs Indirect Rollover */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">Direct vs. Indirect Rollover</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Direct vs. Indirect Rollover</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             Understanding the difference is crucial. The wrong choice can cost you thousands in taxes and penalties.
                         </p>
 
@@ -282,24 +282,24 @@ export default function SilverIraRolloverPage() {
                             {rolloverTypes.map((type) => (
                                 <div
                                     key={type.type}
-                                    className={`rounded-xl p-6 border ${type.recommended ? 'bg-green-500/10 border-green-500/30' : 'bg-white/5 border-white/10'}`}
+                                    className={`rounded-xl p-6 border ${type.recommended ? 'bg-green-500/10 border-green-500/30' : 'bg-slate-50 border-slate-200'}`}
                                 >
                                     <div className="flex items-center gap-3 mb-4">
-                                        <h3 className="text-xl font-bold text-white">{type.type}</h3>
+                                        <h3 className="text-xl font-bold text-slate-900">{type.type}</h3>
                                         {type.recommended && (
-                                            <span className="px-2 py-1 bg-green-500 text-white text-xs font-bold rounded">
+                                            <span className="px-2 py-1 bg-green-500 text-slate-900 text-xs font-bold rounded">
                                                 RECOMMENDED
                                             </span>
                                         )}
                                     </div>
-                                    <p className="text-slate-400 mb-6">{type.description}</p>
+                                    <p className="text-slate-600 mb-6">{type.description}</p>
 
                                     <div className="space-y-4">
                                         <div>
                                             <h4 className="font-semibold text-green-400 mb-2">Advantages:</h4>
                                             <ul className="space-y-1">
                                                 {type.pros.map((pro, idx) => (
-                                                    <li key={idx} className="flex items-center gap-2 text-sm text-slate-400">
+                                                    <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
                                                         <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0" />
                                                         {pro}
                                                     </li>
@@ -307,11 +307,11 @@ export default function SilverIraRolloverPage() {
                                             </ul>
                                         </div>
                                         <div>
-                                            <h4 className="font-semibold text-amber-400 mb-2">Disadvantages:</h4>
+                                            <h4 className="font-semibold text-[#B22234] mb-2">Disadvantages:</h4>
                                             <ul className="space-y-1">
                                                 {type.cons.map((con, idx) => (
-                                                    <li key={idx} className="flex items-center gap-2 text-sm text-slate-400">
-                                                        <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0" />
+                                                    <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
+                                                        <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0" />
                                                         {con}
                                                     </li>
                                                 ))}
@@ -327,7 +327,7 @@ export default function SilverIraRolloverPage() {
                                 <AlertTriangle className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-red-400 mb-2">Critical Warning About Indirect Rollovers</h4>
-                                    <p className="text-slate-400">
+                                    <p className="text-slate-600">
                                         With an indirect rollover from a 401(k), your employer is required to withhold 20% for taxes.
                                         To complete the rollover tax-free, you must deposit the full original amount (including the 20% from your own pocket)
                                         within 60 days. If you only deposit what you received, you'll owe taxes and possibly penalties on the difference.
@@ -340,31 +340,31 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* Eligible Accounts */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">Accounts Eligible for Silver IRA Rollover</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Accounts Eligible for Silver IRA Rollover</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             Most employer-sponsored retirement plans and IRAs can be rolled over into a Silver IRA.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-4">
                             {eligibleAccounts.map((account) => (
-                                <div key={account.name} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                                <div key={account.name} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4">
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
                                         <div>
-                                            <h3 className="font-bold text-white">{account.name}</h3>
-                                            <p className="text-sm text-slate-400">{account.details}</p>
+                                            <h3 className="font-bold text-slate-900">{account.name}</h3>
+                                            <p className="text-sm text-slate-600">{account.details}</p>
                                         </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="mt-8 bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
-                            <h4 className="font-bold text-amber-400 mb-2">Note About Current Employer 401(k)s</h4>
-                            <p className="text-slate-400">
+                        <div className="mt-8 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+                            <h4 className="font-bold text-[#B22234] mb-2">Note About Current Employer 401(k)s</h4>
+                            <p className="text-slate-600">
                                 Most 401(k) plans don't allow rollovers while you're still employed. However, many plans permit
                                 "in-service distributions" after age 59.5. Contact your plan administrator to check your options.
                             </p>
@@ -374,14 +374,14 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* Mid-page CTA */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-white/10">
-                        <h2 className="text-2xl font-bold text-white mb-4">Ready to Start Your Silver IRA Rollover?</h2>
-                        <p className="text-slate-400 mb-6">
+                    <div className="max-w-3xl mx-auto text-center bg-white rounded-2xl p-8 border border-slate-200">
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">Ready to Start Your Silver IRA Rollover?</h2>
+                        <p className="text-slate-600 mb-6">
                             Take our quick quiz to find the best Silver IRA company for your specific situation. We'll match you with a provider that fits your rollover amount and goals.
                         </p>
-                        <Button variant="gold" size="lg" asChild>
+                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                             <Link href="/quiz">
                                 Find My Perfect Match <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
@@ -391,21 +391,21 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-8">Silver IRA Rollover FAQs</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Silver IRA Rollover FAQs</h2>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
                                 <details
                                     key={index}
-                                    className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl"
+                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
                                 >
-                                    <summary className="cursor-pointer p-6 font-semibold text-white flex justify-between items-center list-none">
+                                    <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
                                         {faq.question}
-                                        <span className="text-amber-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                                        <span className="text-[#B22234] group-open:rotate-180 transition-transform">&#9660;</span>
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-400">
+                                    <div className="px-6 pb-6 text-slate-600">
                                         {faq.answer}
                                     </div>
                                 </details>
@@ -416,28 +416,28 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <h2 className="text-2xl font-bold text-white text-center mb-8">Related Resources</h2>
+                    <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">Related Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/silver-ira/convert-401k-to-silver" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Convert 401k to Silver</h3>
-                            <p className="text-sm text-slate-400">Step-by-step guide specifically for 401k to Silver IRA conversions.</p>
+                        <Link href="/silver-ira/convert-401k-to-silver" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Convert 401k to Silver</h3>
+                            <p className="text-sm text-slate-600">Step-by-step guide specifically for 401k to Silver IRA conversions.</p>
                         </Link>
-                        <Link href="/silver-ira/companies" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Companies</h3>
-                            <p className="text-sm text-slate-400">Compare top Silver IRA providers to find the right fit for your rollover.</p>
+                        <Link href="/silver-ira/companies" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Companies</h3>
+                            <p className="text-sm text-slate-600">Compare top Silver IRA providers to find the right fit for your rollover.</p>
                         </Link>
-                        <Link href="/silver-ira/rules" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Rules</h3>
-                            <p className="text-sm text-slate-400">Understand IRS requirements for silver IRAs before you rollover.</p>
+                        <Link href="/silver-ira/rules" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Rules</h3>
+                            <p className="text-sm text-slate-600">Understand IRS requirements for silver IRAs before you rollover.</p>
                         </Link>
                     </div>
                 </Container>
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <AugustaCTA
                         variant="footer"

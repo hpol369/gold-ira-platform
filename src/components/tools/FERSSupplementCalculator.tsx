@@ -107,31 +107,31 @@ export function FERSSupplementCalculator() {
     }).format(amount);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+    <section className="py-16 md:py-24 bg-slate-50">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-600 font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FERS SUPPLEMENT CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               FERS Supplement Calculator 2026
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Estimate your SRS - the &quot;bridge&quot; payment that federal employees receive from retirement until age 62.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Input Panel */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-white mb-6">Your Information</h3>
+            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Information</h3>
 
               {/* High-3 Salary */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   High-3 Average Salary
                 </label>
                 <div className="relative">
@@ -140,7 +140,7 @@ export function FERSSupplementCalculator() {
                     type="number"
                     value={highThreeSalary}
                     onChange={(e) => setHighThreeSalary(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white text-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <p className="text-slate-500 text-sm mt-2">
@@ -150,8 +150,8 @@ export function FERSSupplementCalculator() {
 
               {/* Years of Service */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
-                  Years of Creditable Service: <span className="text-blue-400 font-bold">{yearsOfService} years</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Years of Creditable Service: <span className="text-blue-600 font-bold">{yearsOfService} years</span>
                 </label>
                 <input
                   type="range"
@@ -171,8 +171,8 @@ export function FERSSupplementCalculator() {
 
               {/* Retirement Age */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
-                  Retirement Age: <span className="text-blue-400 font-bold">{retirementAge}</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Retirement Age: <span className="text-blue-600 font-bold">{retirementAge}</span>
                 </label>
                 <input
                   type="range"
@@ -193,7 +193,7 @@ export function FERSSupplementCalculator() {
 
               {/* Estimated SS Benefit */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Estimated Social Security Benefit at Age 62
                 </label>
                 <div className="relative">
@@ -202,7 +202,7 @@ export function FERSSupplementCalculator() {
                     type="number"
                     value={estimatedSSBenefit}
                     onChange={(e) => setEstimatedSSBenefit(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white text-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-blue-500"
                   />
                 </div>
                 <p className="text-slate-500 text-sm mt-2">
@@ -213,22 +213,22 @@ export function FERSSupplementCalculator() {
               {/* Eligibility Check */}
               <div className={`rounded-xl p-4 mb-6 ${
                 checkEligibility.eligible
-                  ? 'bg-green-500/10 border border-green-500/20'
-                  : 'bg-amber-500/10 border border-amber-500/20'
+                  ? 'bg-green-50 border border-green-200'
+                  : 'bg-[#B22234]/10 border border-[#B22234]/30'
               }`}>
                 <div className="flex items-start gap-3">
                   {checkEligibility.eligible ? (
-                    <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                   ) : (
-                    <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                   )}
                   <div>
                     <p className={`font-semibold text-sm ${
-                      checkEligibility.eligible ? 'text-green-400' : 'text-amber-400'
+                      checkEligibility.eligible ? 'text-green-600' : 'text-[#B22234]'
                     }`}>
                       {checkEligibility.eligible ? 'Eligible for FERS Supplement' : 'Check Eligibility'}
                     </p>
-                    <p className="text-slate-400 text-sm mt-1">
+                    <p className="text-slate-600 text-sm mt-1">
                       {checkEligibility.reason}
                     </p>
                   </div>
@@ -238,7 +238,7 @@ export function FERSSupplementCalculator() {
               {/* Calculate Button */}
               <button
                 onClick={calculateSupplement}
-                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
               >
                 <Calculator className="h-5 w-5" />
                 Calculate FERS Supplement
@@ -246,80 +246,80 @@ export function FERSSupplementCalculator() {
             </div>
 
             {/* Results Panel */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-white mb-6">Your Results</h3>
+            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Results</h3>
 
               {result ? (
                 <div className="space-y-6">
                   {result.isEligible ? (
                     <>
                       {/* Monthly Supplement */}
-                      <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-5">
-                        <div className="flex items-center gap-2 text-blue-400 text-sm mb-2">
+                      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                        <div className="flex items-center gap-2 text-blue-600 text-sm mb-2">
                           <DollarSign className="h-4 w-4" />
                           MONTHLY SUPPLEMENT AMOUNT
                         </div>
-                        <div className="text-4xl font-bold text-white mb-2">
+                        <div className="text-4xl font-bold text-[#000080] mb-2">
                           {formatCurrency(result.monthlySupplementAmount)}
                         </div>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           per month until you reach age 62
                         </p>
                       </div>
 
                       {/* Key Metrics */}
                       <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-slate-800/50 rounded-xl p-4">
-                          <div className="flex items-center gap-2 text-slate-400 text-sm mb-1">
+                        <div className="bg-slate-50 rounded-xl p-4">
+                          <div className="flex items-center gap-2 text-slate-600 text-sm mb-1">
                             <Calendar className="h-4 w-4" />
                             Annual Amount
                           </div>
-                          <div className="text-xl font-bold text-white">
+                          <div className="text-xl font-bold text-slate-900">
                             {formatCurrency(result.annualSupplementAmount)}
                           </div>
                         </div>
-                        <div className="bg-slate-800/50 rounded-xl p-4">
-                          <div className="flex items-center gap-2 text-slate-400 text-sm mb-1">
+                        <div className="bg-slate-50 rounded-xl p-4">
+                          <div className="flex items-center gap-2 text-slate-600 text-sm mb-1">
                             <Clock className="h-4 w-4" />
                             Duration
                           </div>
-                          <div className="text-xl font-bold text-white">
+                          <div className="text-xl font-bold text-slate-900">
                             {Math.floor(result.monthsUntil62 / 12)} years {result.monthsUntil62 % 12} mo
                           </div>
                         </div>
                       </div>
 
                       {/* Total Value */}
-                      <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-5">
-                        <div className="flex items-center gap-2 text-green-400 text-sm mb-2">
+                      <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                        <div className="flex items-center gap-2 text-green-600 text-sm mb-2">
                           <TrendingUp className="h-4 w-4" />
                           TOTAL SUPPLEMENT VALUE
                         </div>
-                        <div className="text-3xl font-bold text-white mb-2">
+                        <div className="text-3xl font-bold text-[#000080] mb-2">
                           {formatCurrency(result.totalSupplementValue)}
                         </div>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           Total you&apos;ll receive from retirement until age 62
                         </p>
                       </div>
 
                       {/* Formula Explanation */}
-                      <div className="bg-slate-800/50 rounded-xl p-4">
-                        <p className="text-slate-400 text-sm">
-                          <strong className="text-white">Formula:</strong>{" "}
+                      <div className="bg-slate-50 rounded-xl p-4">
+                        <p className="text-slate-600 text-sm">
+                          <strong className="text-slate-900">Formula:</strong>{" "}
                           ({yearsOfService} years / 40) x {formatCurrency(estimatedSSBenefit)} = {formatCurrency(result.monthlySupplementAmount)}/month
                         </p>
                       </div>
                     </>
                   ) : (
-                    <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
+                    <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
                       <div className="flex items-start gap-3">
-                        <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0" />
+                        <AlertTriangle className="h-6 w-6 text-[#B22234] flex-shrink-0" />
                         <div>
-                          <p className="text-amber-400 font-semibold mb-2">
+                          <p className="text-[#B22234] font-semibold mb-2">
                             Not Eligible for FERS Supplement
                           </p>
-                          <p className="text-slate-300 text-sm">
+                          <p className="text-slate-600 text-sm">
                             {result.eligibilityReason}
                           </p>
                         </div>
@@ -330,7 +330,7 @@ export function FERSSupplementCalculator() {
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-center rounded-xl transition-all"
                   >
                     Protect Your Federal Retirement
                     <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -338,10 +338,10 @@ export function FERSSupplementCalculator() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
-                  <div className="w-16 h-16 bg-slate-800 rounded-2xl flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
                     <Calculator className="h-8 w-8 text-slate-500" />
                   </div>
-                  <p className="text-slate-400">
+                  <p className="text-slate-500">
                     Enter your information and click &quot;Calculate&quot; to see your FERS Supplement estimate.
                   </p>
                 </div>
@@ -350,16 +350,16 @@ export function FERSSupplementCalculator() {
           </div>
 
           {/* Important Notes */}
-          <div className="mt-8 bg-blue-500/10 border border-blue-500/20 rounded-2xl p-6">
+          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-2xl p-6">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Info className="h-6 w-6 text-blue-400" />
+                <Info className="h-6 w-6 text-blue-600" />
               </div>
               <div>
-                <h4 className="text-white font-semibold mb-2">
+                <h4 className="text-slate-900 font-semibold mb-2">
                   Important: Earnings Test
                 </h4>
-                <p className="text-slate-400 text-sm">
+                <p className="text-slate-600 text-sm">
                   The FERS Supplement is subject to an earnings test similar to Social Security.
                   If you work and earn above the annual exempt amount (${new Date().getFullYear() >= 2025 ? '23,400' : '22,320'} in 2025),
                   your supplement may be reduced. For every $2 earned above the limit, $1 is deducted from your supplement.

@@ -53,12 +53,12 @@ export function CompanyComparisonTable({
             </th>
             <th className={cn(
               "p-4 text-center border-b border-slate-200 w-1/3",
-              companyA.featured ? "bg-amber-50" : ""
+              companyA.featured ? "bg-[#B22234]/5" : ""
             )}>
-              <Link href={`/reviews/${companyA.slug}`} className="hover:text-amber-600 transition-colors">
+              <Link href={`/reviews/${companyA.slug}`} className="hover:text-[#B22234] transition-colors">
                 <div className="font-bold text-slate-900">{companyA.name}</div>
                 {companyA.featured && (
-                  <div className="inline-flex items-center gap-1 text-xs text-amber-700 mt-1">
+                  <div className="inline-flex items-center gap-1 text-xs text-[#B22234] mt-1">
                     <Award className="h-3 w-3" />
                     #1 Rated
                   </div>
@@ -67,12 +67,12 @@ export function CompanyComparisonTable({
             </th>
             <th className={cn(
               "p-4 text-center border-b border-slate-200 w-1/3",
-              companyB.featured ? "bg-amber-50" : ""
+              companyB.featured ? "bg-[#B22234]/5" : ""
             )}>
-              <Link href={`/reviews/${companyB.slug}`} className="hover:text-amber-600 transition-colors">
+              <Link href={`/reviews/${companyB.slug}`} className="hover:text-[#B22234] transition-colors">
                 <div className="font-bold text-slate-900">{companyB.name}</div>
                 {companyB.featured && (
-                  <div className="inline-flex items-center gap-1 text-xs text-amber-700 mt-1">
+                  <div className="inline-flex items-center gap-1 text-xs text-[#B22234] mt-1">
                     <Award className="h-3 w-3" />
                     #1 Rated
                   </div>
@@ -86,7 +86,7 @@ export function CompanyComparisonTable({
           <tr className="border-b border-slate-100">
             <td className="p-4 text-slate-600 font-medium">
               <div className="flex items-center gap-2">
-                <Star className="h-4 w-4 text-amber-500" />
+                <Star className="h-4 w-4 text-[#B22234]" />
                 Our Rating
               </div>
             </td>
@@ -227,8 +227,8 @@ export function CompanyComparisonTable({
                 className={cn(
                   "inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all",
                   companyA.featured
-                    ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700"
-                    : "bg-slate-900 text-white hover:bg-slate-800"
+                    ? "bg-[#B22234] text-white hover:bg-[#8b1c2a]"
+                    : "bg-[#000080] text-white hover:bg-[#000066]"
                 )}
               >
                 Visit Site
@@ -243,8 +243,8 @@ export function CompanyComparisonTable({
                 className={cn(
                   "inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all",
                   companyB.featured
-                    ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700"
-                    : "bg-slate-900 text-white hover:bg-slate-800"
+                    ? "bg-[#B22234] text-white hover:bg-[#8b1c2a]"
+                    : "bg-[#000080] text-white hover:bg-[#000066]"
                 )}
               >
                 Visit Site
@@ -270,12 +270,12 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
       {/* Company A */}
       <div className={cn(
         "rounded-xl p-6 border",
-        companyA.featured ? "bg-amber-50 border-amber-200" : "bg-white border-slate-200"
+        companyA.featured ? "bg-[#B22234]/5 border-[#B22234]/20" : "bg-white border-slate-200"
       )}>
         <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
           {companyA.name}
           {companyA.featured && (
-            <span className="text-xs bg-amber-500 text-white px-2 py-0.5 rounded-full">#1</span>
+            <span className="text-xs bg-[#B22234]/50 text-white px-2 py-0.5 rounded-full">#1</span>
           )}
         </h3>
         <div className="space-y-4">
@@ -307,12 +307,12 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
       {/* Company B */}
       <div className={cn(
         "rounded-xl p-6 border",
-        companyB.featured ? "bg-amber-50 border-amber-200" : "bg-white border-slate-200"
+        companyB.featured ? "bg-[#B22234]/5 border-[#B22234]/20" : "bg-white border-slate-200"
       )}>
         <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
           {companyB.name}
           {companyB.featured && (
-            <span className="text-xs bg-amber-500 text-white px-2 py-0.5 rounded-full">#1</span>
+            <span className="text-xs bg-[#B22234]/50 text-white px-2 py-0.5 rounded-full">#1</span>
           )}
         </h3>
         <div className="space-y-4">
@@ -371,13 +371,13 @@ export function ComparisonWinner({ companyA, companyB }: ComparisonWinnerProps) 
     <div className={cn(
       "rounded-xl p-8",
       winner.featured
-        ? "bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200"
-        : "bg-gradient-to-br from-green-50 to-green-100 border border-green-200"
+        ? "bg-[#B22234]/5 border border-[#B22234]/20"
+        : "bg-slate-50 border border-slate-200"
     )}>
       <div className="text-center">
         <div className={cn(
           "inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4",
-          winner.featured ? "bg-amber-500 text-white" : "bg-green-600 text-white"
+          winner.featured ? "bg-[#B22234] text-white" : "bg-[#000080] text-white"
         )}>
           <Award className="h-4 w-4" />
           OUR RECOMMENDATION
@@ -394,8 +394,8 @@ export function ComparisonWinner({ companyA, companyB }: ComparisonWinnerProps) 
           className={cn(
             "inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all",
             winner.featured
-              ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
-              : "bg-green-600 text-white hover:bg-green-700"
+              ? "bg-[#B22234] text-white hover:bg-[#8b1c2a] shadow-lg shadow-[#B22234]/25"
+              : "bg-[#000080] text-white hover:bg-[#000066]"
           )}
         >
           Get Started with {winner.name}

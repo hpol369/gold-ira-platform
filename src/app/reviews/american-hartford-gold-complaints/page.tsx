@@ -52,11 +52,11 @@ const schema = {
 
 export default function AmericanHartfordComplaintsPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
+            <header className="bg-[#000080] text-white py-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
                     <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <MessageSquareWarning className="w-4 h-4" /> Consumer Report
@@ -64,7 +64,7 @@ export default function AmericanHartfordComplaintsPage() {
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         American Hartford Gold Complaints: 2026 Analysis
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
                         Bill O&apos;Reilly calls them &quot;the only gold company he recommends.&quot; But what do actual customers say?
                     </p>
                 </Container>
@@ -78,7 +78,7 @@ export default function AmericanHartfordComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
 
                         <p className="lead">
                             American Hartford Gold is a family-owned company that&apos;s become a major player in the Gold IRA space. With endorsements from Bill O&apos;Reilly and a 4.9/5 rating on Trustpilot, they look great on paper. But no company is perfect—so I dug into the complaints to see if there are hidden problems.
@@ -104,21 +104,21 @@ export default function AmericanHartfordComplaintsPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <h4 className="font-bold text-white mb-2">1. Spot Price Confusion</h4>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] mb-2">1. Spot Price Confusion</h4>
+                                    <p className="text-slate-600 text-sm">
                                         This is the most common &quot;complaint&quot;—and it&apos;s really a misunderstanding. When you buy gold, you pay a premium above the spot price. When you check your account value, it shows the current metal value (at spot). The difference isn&apos;t a loss—it&apos;s the dealer&apos;s spread. This exists at every company.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <h4 className="font-bold text-white mb-2">2. Shipping Delays</h4>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] mb-2">2. Shipping Delays</h4>
+                                    <p className="text-slate-600 text-sm">
                                         A handful of customers mentioned delays in receiving their metals. Most of these were during high-demand periods. American Hartford typically resolved these by expediting shipping or providing clear timelines.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <h4 className="font-bold text-white mb-2">3. Premium Pricing on Some Products</h4>
-                                    <p className="text-slate-300 text-sm">
+                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] mb-2">3. Premium Pricing on Some Products</h4>
+                                    <p className="text-slate-600 text-sm">
                                         A few reviewers mentioned that certain coins had higher premiums than expected. This is worth noting—always compare premiums on specific products before buying.
                                     </p>
                                 </div>
@@ -133,21 +133,21 @@ export default function AmericanHartfordComplaintsPage() {
                         <section id="reputation" className="scroll-mt-32">
                             <h2>American Hartford&apos;s Reputation in 2026</h2>
                             <div className="not-prose my-8 grid md:grid-cols-4 gap-4">
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
-                                    <div className="text-3xl font-bold text-amber-400 mb-1">A+</div>
-                                    <div className="text-sm text-slate-400">BBB Rating</div>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+                                    <div className="text-3xl font-bold text-[#B22234] mb-1">A+</div>
+                                    <div className="text-sm text-slate-500">BBB Rating</div>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
-                                    <div className="text-3xl font-bold text-amber-400 mb-1">4.9/5</div>
-                                    <div className="text-sm text-slate-400">Trustpilot</div>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+                                    <div className="text-3xl font-bold text-[#B22234] mb-1">4.9/5</div>
+                                    <div className="text-sm text-slate-500">Trustpilot</div>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
-                                    <div className="text-3xl font-bold text-amber-400 mb-1">$5k</div>
-                                    <div className="text-sm text-slate-400">Minimum</div>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+                                    <div className="text-3xl font-bold text-[#B22234] mb-1">$5k</div>
+                                    <div className="text-sm text-slate-500">Minimum</div>
                                 </div>
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center">
-                                    <div className="text-3xl font-bold text-amber-400 mb-1">$0</div>
-                                    <div className="text-sm text-slate-400">Buyback Fees</div>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+                                    <div className="text-3xl font-bold text-[#B22234] mb-1">$0</div>
+                                    <div className="text-sm text-slate-500">Buyback Fees</div>
                                 </div>
                             </div>
                         </section>
@@ -160,17 +160,17 @@ export default function AmericanHartfordComplaintsPage() {
                             </p>
 
                             <div className="not-prose my-6 space-y-3">
-                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
-                                    <p className="text-slate-300"><strong className="text-white">100% Customer Satisfaction Guarantee:</strong> They&apos;ll buy back your metals at current prices if you&apos;re not happy</p>
+                                <div className="flex gap-3 items-start p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
+                                    <p className="text-slate-600"><strong className="text-slate-800">100% Customer Satisfaction Guarantee:</strong> They&apos;ll buy back your metals at current prices if you&apos;re not happy</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
-                                    <p className="text-slate-300"><strong className="text-white">Personal responses:</strong> Complaints typically get responses from senior staff, not form letters</p>
+                                <div className="flex gap-3 items-start p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
+                                    <p className="text-slate-600"><strong className="text-slate-800">Personal responses:</strong> Complaints typically get responses from senior staff, not form letters</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
-                                    <p className="text-slate-300"><strong className="text-white">No buyback fees:</strong> Unlike some competitors, they don&apos;t charge you to sell metals back to them</p>
+                                <div className="flex gap-3 items-start p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
+                                    <p className="text-slate-600"><strong className="text-slate-800">No buyback fees:</strong> Unlike some competitors, they don&apos;t charge you to sell metals back to them</p>
                                 </div>
                             </div>
                         </section>
@@ -185,16 +185,16 @@ export default function AmericanHartfordComplaintsPage() {
                                 Their low minimum ($5,000), no-fee buyback policy, and family-owned service model make them a solid choice—especially for investors who want personalized attention.
                             </p>
                             <p>
-                                For our full company review, see our <Link href="/reviews/american-hartford-gold" className="text-secondary hover:underline">American Hartford Gold Review</Link>. Or see how they compare: <Link href="/compare/goldco-vs-american-hartford-gold" className="text-secondary hover:underline">Goldco vs American Hartford Gold</Link>.
+                                For our full company review, see our <Link href="/reviews/american-hartford-gold" className="text-[#B22234] hover:underline">American Hartford Gold Review</Link>. Or see how they compare: <Link href="/compare/goldco-vs-american-hartford-gold" className="text-[#B22234] hover:underline">Goldco vs American Hartford Gold</Link>.
                             </p>
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Family-Owned. Customer-First.</h3>
-                                <p className="mb-6 text-gray-200">See why Bill O&apos;Reilly recommends them. Get their free gold guide.</p>
+                                <p className="mb-6 text-blue-100">See why Bill O&apos;Reilly recommends them. Get their free gold guide.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <a href={AFFILIATE_LINKS.americanHartford} target="_blank" rel="noopener noreferrer">
                                         Get Free Gold Guide <ArrowRight className="ml-2 w-4 h-4" />

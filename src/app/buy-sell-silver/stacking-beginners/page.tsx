@@ -227,20 +227,20 @@ const schema = {
 
 export default function StackingBeginnersPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
             <Link
               href="/buy-sell-silver"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
@@ -249,10 +249,10 @@ export default function StackingBeginnersPage() {
               <GraduationCap className="h-4 w-4" />
               DIFF 0 - EASY WIN KEYWORD
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Silver Stacking for Beginners
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
               Welcome to your silver stacking journey. Whether you have $50 or $5,000 to start,
               this guide will show you exactly what to buy, where to buy it, and how to build
               a solid silver position over time.
@@ -262,22 +262,22 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Rich Dad Quote */}
-      <section className="py-8 bg-amber-500/10 border-y border-amber-500/30">
+      <section className="py-8 bg-[#B22234]/10 border-y border-[#B22234]/30">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xl text-white italic">
+            <p className="text-xl text-slate-900 italic">
               &quot;Savers are losers. Save silver and gold, not paper dollars.&quot;
             </p>
-            <p className="text-amber-400 mt-2 font-semibold">- Robert Kiyosaki</p>
+            <p className="text-[#B22234] mt-2 font-semibold">- Robert Kiyosaki</p>
           </div>
         </Container>
       </section>
 
       {/* Getting Started Checklist */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 flex items-center justify-center gap-2">
               <Target className="h-6 w-6 text-green-400" />
               Getting Started Checklist
             </h2>
@@ -286,36 +286,36 @@ export default function StackingBeginnersPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
                   <div>
-                    <span className="font-bold text-white">Build an emergency fund first</span>
-                    <p className="text-slate-400 text-sm">3-6 months expenses in cash before serious stacking</p>
+                    <span className="font-bold text-slate-900">Build an emergency fund first</span>
+                    <p className="text-slate-600 text-sm">3-6 months expenses in cash before serious stacking</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
                   <div>
-                    <span className="font-bold text-white">Set a monthly budget</span>
-                    <p className="text-slate-400 text-sm">Decide what you can consistently invest - $50, $100, $500/month</p>
+                    <span className="font-bold text-slate-900">Set a monthly budget</span>
+                    <p className="text-slate-600 text-sm">Decide what you can consistently invest - $50, $100, $500/month</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
                   <div>
-                    <span className="font-bold text-white">Choose a reputable dealer</span>
-                    <p className="text-slate-400 text-sm">JM Bullion, SD Bullion, APMEX - compare prices before buying</p>
+                    <span className="font-bold text-slate-900">Choose a reputable dealer</span>
+                    <p className="text-slate-600 text-sm">JM Bullion, SD Bullion, APMEX - compare prices before buying</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
                   <div>
-                    <span className="font-bold text-white">Plan your storage</span>
-                    <p className="text-slate-400 text-sm">Home safe, bank box, or private vault - have a plan before buying</p>
+                    <span className="font-bold text-slate-900">Plan your storage</span>
+                    <p className="text-slate-600 text-sm">Home safe, bank box, or private vault - have a plan before buying</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
                   <div>
-                    <span className="font-bold text-white">Start with sovereign coins</span>
-                    <p className="text-slate-400 text-sm">Maple Leafs or Eagles - build a liquid foundation first</p>
+                    <span className="font-bold text-slate-900">Start with sovereign coins</span>
+                    <p className="text-slate-600 text-sm">Maple Leafs or Eagles - build a liquid foundation first</p>
                   </div>
                 </li>
               </ul>
@@ -325,29 +325,29 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Budget Recommendations */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4 flex items-center justify-center gap-2">
               <DollarSign className="h-6 w-6 text-green-400" />
               Monthly Budget Recommendations
             </h2>
-            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
               Whatever you can afford consistently is the right amount. Here&apos;s what to buy at different budget levels.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {monthlyBudgets.map((budget, index) => (
-                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                   <h3 className="text-xl font-bold text-green-400 mb-2">{budget.amount}</h3>
-                  <p className="text-slate-300 mb-3">{budget.strategy}</p>
+                  <p className="text-slate-600 mb-3">{budget.strategy}</p>
                   <div className="text-sm space-y-2">
                     <div className="flex items-center gap-2">
                       <Calendar className="h-4 w-4 text-blue-400" />
                       <span className="text-blue-400">{budget.timeline}</span>
                     </div>
                     <div className="flex items-start gap-2">
-                      <Lightbulb className="h-4 w-4 text-amber-400 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-400">{budget.recommendation}</span>
+                      <Lightbulb className="h-4 w-4 text-[#B22234] mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-600">{budget.recommendation}</span>
                     </div>
                   </div>
                 </div>
@@ -358,41 +358,41 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* First Purchases */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4 flex items-center justify-center gap-2">
-              <ShoppingCart className="h-6 w-6 text-amber-400" />
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4 flex items-center justify-center gap-2">
+              <ShoppingCart className="h-6 w-6 text-[#B22234]" />
               Recommended First Purchases (In Order)
             </h2>
-            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
               Follow this sequence to build a balanced, liquid silver position.
             </p>
             <div className="space-y-4">
               {firstPurchases.map((purchase) => (
-                <div key={purchase.order} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+                <div key={purchase.order} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5">
                   <div className="flex flex-col md:flex-row md:items-center gap-4">
                     <div className="flex items-center gap-4 md:w-16 flex-shrink-0">
-                      <div className="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center">
-                        <span className="text-lg font-bold text-amber-400">{purchase.order}</span>
+                      <div className="w-10 h-10 bg-[#B22234]/20 rounded-full flex items-center justify-center">
+                        <span className="text-lg font-bold text-[#B22234]">{purchase.order}</span>
                       </div>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
-                        <h3 className="text-lg font-bold text-white">{purchase.product}</h3>
+                        <h3 className="text-lg font-bold text-slate-900">{purchase.product}</h3>
                         <div className="flex gap-2">
                           <span className="text-green-400 text-sm font-semibold">{purchase.budget}</span>
                           <span className={`text-xs px-2 py-0.5 rounded ${
                             purchase.priority === "Essential" ? "bg-green-500/20 text-green-400" :
                             purchase.priority === "Recommended" ? "bg-blue-500/20 text-blue-400" :
-                            purchase.priority === "Optional" ? "bg-amber-500/20 text-amber-400" :
-                            "bg-slate-500/20 text-slate-400"
+                            purchase.priority === "Optional" ? "bg-[#B22234]/20 text-[#B22234]" :
+                            "bg-[#B22234]/10 text-slate-600"
                           }`}>
                             {purchase.priority}
                           </span>
                         </div>
                       </div>
-                      <p className="text-slate-400 text-sm">{purchase.reason}</p>
+                      <p className="text-slate-600 text-sm">{purchase.reason}</p>
                     </div>
                   </div>
                 </div>
@@ -403,23 +403,23 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Where to Buy */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 flex items-center justify-center gap-2">
               <Store className="h-6 w-6 text-blue-400" />
               Where to Buy Silver
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               {whereTobuys.map((source, index) => (
-                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">{source.source}</h3>
+                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">{source.source}</h3>
                   <div className="space-y-4 mb-4">
                     <div>
                       <h4 className="text-xs font-semibold text-green-400 mb-1">Pros</h4>
                       <ul className="space-y-1">
                         {source.pros.map((pro, i) => (
-                          <li key={i} className="text-slate-300 text-sm flex items-start gap-1">
+                          <li key={i} className="text-slate-600 text-sm flex items-start gap-1">
                             <span className="text-green-400">+</span>
                             {pro}
                           </li>
@@ -430,7 +430,7 @@ export default function StackingBeginnersPage() {
                       <h4 className="text-xs font-semibold text-red-400 mb-1">Cons</h4>
                       <ul className="space-y-1">
                         {source.cons.map((con, i) => (
-                          <li key={i} className="text-slate-300 text-sm flex items-start gap-1">
+                          <li key={i} className="text-slate-600 text-sm flex items-start gap-1">
                             <span className="text-red-400">-</span>
                             {con}
                           </li>
@@ -438,10 +438,10 @@ export default function StackingBeginnersPage() {
                       </ul>
                     </div>
                   </div>
-                  <div className="pt-4 border-t border-white/10 text-sm">
-                    <p className="text-slate-500 mb-1">Examples:</p>
-                    <p className="text-slate-400">{source.examples}</p>
-                    <p className="text-amber-400 mt-2 font-semibold">Best for: {source.bestFor}</p>
+                  <div className="pt-4 border-t border-slate-200 text-sm">
+                    <p className="text-slate-600 mb-1">Examples:</p>
+                    <p className="text-slate-600">{source.examples}</p>
+                    <p className="text-[#B22234] mt-2 font-semibold">Best for: {source.bestFor}</p>
                   </div>
                 </div>
               ))}
@@ -451,10 +451,10 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Common Mistakes */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 flex items-center justify-center gap-2">
               <AlertTriangle className="h-6 w-6 text-red-400" />
               Common Beginner Mistakes
             </h2>
@@ -462,7 +462,7 @@ export default function StackingBeginnersPage() {
               {commonMistakes.map((item, index) => (
                 <div key={index} className="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
                   <h3 className="text-lg font-bold text-red-400 mb-2">{item.mistake}</h3>
-                  <p className="text-slate-400 text-sm mb-2"><strong>Why it's bad:</strong> {item.why}</p>
+                  <p className="text-slate-600 text-sm mb-2"><strong>Why it's bad:</strong> {item.why}</p>
                   <p className="text-green-400 text-sm"><strong>Fix:</strong> {item.fix}</p>
                 </div>
               ))}
@@ -472,19 +472,19 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Milestones */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center gap-2">
-              <TrendingUp className="h-6 w-6 text-amber-400" />
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 flex items-center justify-center gap-2">
+              <TrendingUp className="h-6 w-6 text-[#B22234]" />
               Stacking Milestones to Celebrate
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {stackingMilestones.map((milestone, index) => (
-                <div key={index} className="bg-white/5 backdrop-blur-sm border border-amber-500/30 rounded-xl p-6 text-center">
-                  <div className="text-4xl font-bold text-amber-400 mb-2">{milestone.oz} oz</div>
-                  <h3 className="text-lg font-bold text-white mb-1">{milestone.achievement}</h3>
-                  <p className="text-slate-400 text-sm">{milestone.description}</p>
+                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 text-center">
+                  <div className="text-4xl font-bold text-[#B22234] mb-2">{milestone.oz} oz</div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-1">{milestone.achievement}</h3>
+                  <p className="text-slate-600 text-sm">{milestone.description}</p>
                 </div>
               ))}
             </div>
@@ -493,25 +493,25 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -522,30 +522,30 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
-          <h2 className="text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/buy-sell-silver/best-coins-to-buy" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Best Coins to Buy</h3>
-              <p className="text-sm text-slate-400">Detailed coin comparisons</p>
+            <Link href="/buy-sell-silver/best-coins-to-buy" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Best Coins to Buy</h3>
+              <p className="text-sm text-slate-600">Detailed coin comparisons</p>
             </Link>
-            <Link href="/buy-sell-silver/coins-vs-bars" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Coins vs Bars</h3>
-              <p className="text-sm text-slate-400">When to add bars to your stack</p>
+            <Link href="/buy-sell-silver/coins-vs-bars" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Coins vs Bars</h3>
+              <p className="text-sm text-slate-600">When to add bars to your stack</p>
             </Link>
-            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Spot Fake Silver</h3>
-              <p className="text-sm text-slate-400">Protect yourself from fakes</p>
+            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Spot Fake Silver</h3>
+              <p className="text-sm text-slate-600">Protect yourself from fakes</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

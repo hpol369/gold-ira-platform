@@ -149,7 +149,7 @@ const faqSchema = {
 
 export default function CalPERSRetirementCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -158,10 +158,10 @@ export default function CalPERSRetirementCalculatorPage() {
       <CalPERSRetirementCalculator />
 
       {/* Important CalPERS Facts */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Understanding CalPERS Retirement
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -170,17 +170,17 @@ export default function CalPERSRetirementCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-amber-400" />
+                      <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-[#B22234]" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -194,38 +194,38 @@ export default function CalPERSRetirementCalculatorPage() {
       </section>
 
       {/* Benefit Formula Comparison */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                <Calculator className="h-6 w-6 text-amber-400" />
+              <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                <Calculator className="h-6 w-6 text-[#B22234]" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 CalPERS Benefit Formulas Explained
               </h2>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-white/5 border-b border-white/10">
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Formula</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">For Who</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Min Age</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Max Factor</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Final Comp</th>
+                    <tr className="bg-slate-50 border-b border-slate-200">
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Formula</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">For Who</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Min Age</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Max Factor</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Final Comp</th>
                     </tr>
                   </thead>
                   <tbody>
                     {benefitFormulas.map((formula, index) => (
-                      <tr key={formula.name} className={`border-b border-white/5 ${index % 2 === 0 ? 'bg-white/[0.02]' : ''}`}>
-                        <td className="px-6 py-4 text-amber-400 font-medium">{formula.name}</td>
-                        <td className="px-6 py-4 text-slate-400 text-sm">{formula.forWho}</td>
-                        <td className="px-6 py-4 text-white">{formula.minAge}</td>
-                        <td className="px-6 py-4 text-green-400">{formula.maxFactor}</td>
-                        <td className="px-6 py-4 text-slate-400">{formula.finalComp}</td>
+                      <tr key={formula.name} className={`border-b border-slate-200 ${index % 2 === 0 ? 'bg-slate-50' : ''}`}>
+                        <td className="px-6 py-4 text-[#B22234] font-medium">{formula.name}</td>
+                        <td className="px-6 py-4 text-slate-600 text-sm">{formula.forWho}</td>
+                        <td className="px-6 py-4text-slate-900">{formula.minAge}</td>
+                        <td className="px-6 py-4 text-green-600">{formula.maxFactor}</td>
+                        <td className="px-6 py-4 text-slate-500">{formula.finalComp}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -233,12 +233,12 @@ export default function CalPERSRetirementCalculatorPage() {
               </div>
             </div>
 
-            <div className="mt-6 bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
+            <div className="mt-6 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <Info className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <Info className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-amber-400 font-semibold mb-2">Understanding the Formula</h3>
-                  <p className="text-slate-300 text-sm">
+                  <h3 className="text-[#B22234] font-semibold mb-2">Understanding the Formula</h3>
+                  <p className="text-slate-600 text-sm">
                     <strong>Age Factor % x Service Credit x Final Compensation = Annual Pension</strong>
                     <br /><br />
                     Example: 2.0% x 30 years x $100,000 = $60,000/year ($5,000/month)
@@ -251,28 +251,28 @@ export default function CalPERSRetirementCalculatorPage() {
       </section>
 
       {/* Gold IRA Protection Strategy */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                 Protecting Your CalPERS Pension from Inflation
               </h2>
-              <p className="text-slate-400">
+              <p className="text-slate-500">
                 While CalPERS provides a 2% COLA, actual inflation has averaged 3-4% historically.
                 Here is how California retirees protect their purchasing power.
               </p>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <AlertTriangle className="h-5 w-5 text-red-400" />
+                    <AlertTriangle className="h-5 w-5 text-red-600" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold mb-2">The Inflation Gap Problem</h3>
-                    <p className="text-slate-400 text-sm">
+                    <h3 className="text-slate-900 font-semibold mb-2">The Inflation Gap Problem</h3>
+                    <p className="text-slate-600 text-sm">
                       With a 2% COLA and 4% inflation, your pension loses 2% of purchasing power each year.
                       Over 20 years, this means your $5,000/month pension could feel like only $3,400 in
                       today&apos;s dollars. This is why supplementing your pension is crucial.
@@ -281,14 +281,14 @@ export default function CalPERSRetirementCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Shield className="h-5 w-5 text-amber-400" />
+                  <div className="w-10 h-10 bg-[#B22234]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Shield className="h-5 w-5 text-[#B22234]" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold mb-2">Gold IRA as Inflation Hedge</h3>
-                    <p className="text-slate-400 text-sm">
+                    <h3 className="text-slate-900 font-semibold mb-2">Gold IRA as Inflation Hedge</h3>
+                    <p className="text-slate-600 text-sm">
                       Many California state employees supplement their CalPERS pension with a Gold IRA.
                       Gold has historically maintained purchasing power during inflationary periods.
                       You can rollover a 457(b), 403(b), or other retirement accounts into a Gold IRA
@@ -298,14 +298,14 @@ export default function CalPERSRetirementCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-5 w-5 text-green-400" />
+                    <CheckCircle2 className="h-5 w-5 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold mb-2">Diversification Strategy</h3>
-                    <p className="text-slate-400 text-sm">
+                    <h3 className="text-slate-900 font-semibold mb-2">Diversification Strategy</h3>
+                    <p className="text-slate-600 text-sm">
                       Your CalPERS pension provides guaranteed monthly income. Adding gold to your
                       retirement portfolio provides a hedge against both inflation and market volatility.
                       This diversification helps ensure your retirement savings maintain real value
@@ -320,10 +320,10 @@ export default function CalPERSRetirementCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               CalPERS Calculator FAQ
             </h2>
 
@@ -352,16 +352,16 @@ export default function CalPERSRetirementCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       v
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -371,17 +371,17 @@ export default function CalPERSRetirementCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates only. Actual CalPERS benefits may vary based on your
                     specific employment history, employer contract, service credit purchases, and other factors.
                     For official benefit estimates, please contact CalPERS directly or use the myCalPERS
@@ -395,7 +395,7 @@ export default function CalPERSRetirementCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <AugustaCTA
             variant="footer"

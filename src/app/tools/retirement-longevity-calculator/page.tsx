@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RetirementLongevityCalculatorPage() {
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-whitetext-slate-900">
       <Navbar />
       <RetirementLongevityCalculator />
       <Footer />

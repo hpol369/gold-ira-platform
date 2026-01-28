@@ -74,21 +74,21 @@ const schema = {
 
 export default function CanIBuyGoldWith401kPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
-            <header className="bg-slate-800/50 py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/20 px-4 py-1.5 text-sm font-semibold text-blue-400 mb-6 border border-blue-500/30">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-200">
                             <HelpCircle className="w-4 h-4" />
                             QUICK ANSWER
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Can I Buy Gold With My 401k?
                         </h1>
-                        <p className="text-xl text-slate-400 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             The simple answer to one of the most common retirement questions, plus exactly how to do it.
                         </p>
                     </div>
@@ -97,20 +97,20 @@ export default function CanIBuyGoldWith401kPage() {
 
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">
-                    <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
+                    <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-[#B22234] max-w-none">
 
                         {/* Big Direct Answer */}
                         <div className="not-prose mb-10 p-8 md:p-10 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 border border-secondary/30 text-center">
-                            <p className="text-3xl md:text-4xl font-bold text-white mb-4">
+                            <p className="text-3xl md:text-4xl font-bold text-[#000080] mb-4">
                                 Yes, you can buy gold with your 401k.
                             </p>
-                            <p className="text-xl text-slate-300">
-                                You do this through a <strong className="text-secondary">&quot;Gold IRA Rollover.&quot;</strong>
+                            <p className="text-xl text-slate-600">
+                                You do this through a <strong className="text-[#B22234]">&quot;Gold IRA Rollover.&quot;</strong>
                             </p>
                         </div>
 
                         {/* The Short Answer */}
-                        <h2 className="text-white">The Short Answer</h2>
+                        <h2 className="text-[#000080]">The Short Answer</h2>
                         <p>
                             <strong className="text-green-400">Yes.</strong> You can absolutely use your 401(k) money to buy physical gold. The IRS has allowed this since 1997.
                         </p>
@@ -122,7 +122,7 @@ export default function CanIBuyGoldWith401kPage() {
                         </p>
 
                         {/* The Longer Answer */}
-                        <h2 className="text-white">The Longer Answer: How It Actually Works</h2>
+                        <h2 className="text-[#000080]">The Longer Answer: How It Actually Works</h2>
                         <p>
                             Most 401(k) plans only let you invest in stocks, bonds, and mutual funds. They don&apos;t offer physical gold as an option. That&apos;s just how traditional retirement plans work.
                         </p>
@@ -143,19 +143,19 @@ export default function CanIBuyGoldWith401kPage() {
                         </p>
 
                         {/* What Can You Buy */}
-                        <h2 className="text-white">What Gold Can You Buy?</h2>
+                        <h2 className="text-[#000080]">What Gold Can You Buy?</h2>
                         <p>
                             The IRS has specific rules about what precious metals qualify for IRAs. Here&apos;s what you can purchase:
                         </p>
 
                         <div className="not-prose my-8">
                             <div className="grid md:grid-cols-2 gap-4">
-                                <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                                    <h4 className="font-bold text-white text-lg mb-3 flex items-center gap-2">
-                                        <Coins className="w-5 h-5 text-secondary" />
+                                <div className="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] text-lg mb-3 flex items-center gap-2">
+                                        <Coins className="w-5 h-5 text-[#B22234]" />
                                         Gold Coins
                                     </h4>
-                                    <ul className="space-y-2 text-slate-400 text-sm">
+                                    <ul className="space-y-2 text-slate-600 text-sm">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
                                             American Gold Eagles
@@ -174,12 +174,12 @@ export default function CanIBuyGoldWith401kPage() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                                    <h4 className="font-bold text-white text-lg mb-3 flex items-center gap-2">
-                                        <Coins className="w-5 h-5 text-secondary" />
+                                <div className="p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] text-lg mb-3 flex items-center gap-2">
+                                        <Coins className="w-5 h-5 text-[#B22234]" />
                                         Gold Bars
                                     </h4>
-                                    <ul className="space-y-2 text-slate-400 text-sm">
+                                    <ul className="space-y-2 text-slate-600 text-sm">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
                                             Must be .995+ fineness
@@ -206,57 +206,57 @@ export default function CanIBuyGoldWith401kPage() {
                         </p>
 
                         {/* Steps to Do It */}
-                        <h2 className="text-white">Steps to Buy Gold With Your 401k</h2>
+                        <h2 className="text-[#000080]">Steps to Buy Gold With Your 401k</h2>
                         <p>
                             The process is simpler than most people expect:
                         </p>
 
                         <div className="not-prose my-8 space-y-4">
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/10">
-                                <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">1</div>
                                 <div>
-                                    <h4 className="font-bold text-white text-lg mb-1">Contact a Gold IRA Company</h4>
-                                    <p className="text-slate-400">They specialize in this exact process. Call them, tell them you want to move your 401k to gold, and they&apos;ll walk you through everything.</p>
+                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Contact a Gold IRA Company</h4>
+                                    <p className="text-slate-600">They specialize in this exact process. Call them, tell them you want to move your 401k to gold, and they&apos;ll walk you through everything.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/10">
-                                <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">2</div>
                                 <div>
-                                    <h4 className="font-bold text-white text-lg mb-1">Open Your Gold IRA Account</h4>
-                                    <p className="text-slate-400">Fill out an application (takes about 15 minutes). The company handles the custodian setup for you.</p>
+                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Open Your Gold IRA Account</h4>
+                                    <p className="text-slate-600">Fill out an application (takes about 15 minutes). The company handles the custodian setup for you.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/10">
-                                <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">3</div>
                                 <div>
-                                    <h4 className="font-bold text-white text-lg mb-1">Roll Over Your 401k Funds</h4>
-                                    <p className="text-slate-400">Your new custodian requests a direct transfer from your 401(k). This takes 1-3 weeks depending on your old plan.</p>
+                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Roll Over Your 401k Funds</h4>
+                                    <p className="text-slate-600">Your new custodian requests a direct transfer from your 401(k). This takes 1-3 weeks depending on your old plan.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/10">
-                                <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">4</div>
                                 <div>
-                                    <h4 className="font-bold text-white text-lg mb-1">Buy Your Gold</h4>
-                                    <p className="text-slate-400">Once funds arrive, work with your dealer to select your gold products. They ship directly to a secure depository.</p>
+                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Buy Your Gold</h4>
+                                    <p className="text-slate-600">Once funds arrive, work with your dealer to select your gold products. They ship directly to a secure depository.</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Learn More Links */}
-                        <div className="not-prose my-10 p-6 rounded-xl bg-white/5 border border-white/10">
-                            <h3 className="font-bold text-white text-lg mb-4 flex items-center gap-2">
-                                <FileText className="w-5 h-5 text-secondary" />
+                        <div className="not-prose my-10 p-6 rounded-xl bg-slate-50 border border-slate-200">
+                            <h3 className="font-bold text-[#000080] text-lg mb-4 flex items-center gap-2">
+                                <FileText className="w-5 h-5 text-[#B22234]" />
                                 Learn More
                             </h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/rollover/401k-to-gold-ira" className="flex items-center gap-2 text-secondary hover:text-secondary/80 transition-colors">
+                                    <Link href="/rollover/401k-to-gold-ira" className="flex items-center gap-2 text-[#B22234] hover:text-[#B22234]/80 transition-colors">
                                         <ArrowRight className="w-4 h-4" />
                                         <span>401k to Gold IRA Rollover: Complete Process</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/what-is-a-gold-ira" className="flex items-center gap-2 text-secondary hover:text-secondary/80 transition-colors">
+                                    <Link href="/what-is-a-gold-ira" className="flex items-center gap-2 text-[#B22234] hover:text-[#B22234]/80 transition-colors">
                                         <ArrowRight className="w-4 h-4" />
                                         <span>What is a Gold IRA? Beginner&apos;s Guide</span>
                                     </Link>
@@ -265,10 +265,10 @@ export default function CanIBuyGoldWith401kPage() {
                         </div>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#000080] text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Buy Gold With Your 401k?</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Ready to Buy Gold With Your 401k?</h3>
                                 <p className="mb-6 text-gray-200">Find out which Gold IRA company is the best fit for your situation.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find My Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
@@ -277,20 +277,20 @@ export default function CanIBuyGoldWith401kPage() {
                         </div>
 
                         {/* FAQ Section */}
-                        <h2 className="text-white">Common Questions</h2>
+                        <h2 className="text-[#000080]">Common Questions</h2>
 
                         <div className="space-y-4 not-prose">
                             {faqs.map((faq, index) => (
-                                <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details key={index} className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">{faq.question}</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         {faq.answer}
                                     </p>
                                 </details>
@@ -306,7 +306,7 @@ export default function CanIBuyGoldWith401kPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="guide-can-buy-gold-401k" />
                 </Container>

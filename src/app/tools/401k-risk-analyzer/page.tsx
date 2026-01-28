@@ -81,10 +81,10 @@ function calculateRiskScore(stockExposure: number, ageRange: string): number {
 }
 
 function getRiskLevel(score: number): { level: string; color: string; bgColor: string } {
-  if (score < 30) return { level: "Low", color: "text-green-400", bgColor: "bg-green-500/20 border-green-500/30" };
-  if (score < 50) return { level: "Medium", color: "text-blue-400", bgColor: "bg-blue-500/20 border-blue-500/30" };
-  if (score < 75) return { level: "High", color: "text-amber-400", bgColor: "bg-amber-500/20 border-amber-500/30" };
-  return { level: "Very High", color: "text-red-400", bgColor: "bg-red-500/20 border-red-500/30" };
+  if (score < 30) return { level: "Low", color: "text-green-600", bgColor: "bg-green-500/20 border-green-500/30" };
+  if (score < 50) return { level: "Medium", color: "text-blue-600", bgColor: "bg-blue-500/20 border-blue-500/30" };
+  if (score < 75) return { level: "High", color: "text-[#B22234]", bgColor: "bg-[#B22234]/10 border-[#B22234]/30" };
+  return { level: "Very High", color: "text-red-600", bgColor: "bg-red-500/20 border-red-500/30" };
 }
 
 function getRecommendation(riskScore: number, ageRange: string, stockExposure: number): string {
@@ -178,21 +178,21 @@ export default function RiskAnalyzerPage() {
   const affiliateLink = getTrackedLink(AFFILIATE_LINKS.augusta, "401k-risk-analyzer", "augusta");
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-12 md:py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-600 font-semibold text-sm mb-6">
               <AlertTriangle className="h-4 w-4" />
               FREE RISK ASSESSMENT
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               401(k) Risk Analyzer
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               You've worked too hard for 30+ years to lose half your 401(k) in the next crash.
               See exactly how exposed your savings are - and what you can do about it.
             </p>
@@ -207,13 +207,13 @@ export default function RiskAnalyzerPage() {
             {/* Progress Bar */}
             {!showResults && (
               <div className="mb-8">
-                <div className="flex justify-between text-sm text-slate-400 mb-2">
+                <div className="flex justify-between text-sm text-slate-500 mb-2">
                   <span>Step {step} of {totalSteps}</span>
                   <span>{Math.round(progress)}% Complete</span>
                 </div>
-                <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
                   <motion.div
-                    className="h-full bg-gradient-to-r from-amber-500 to-amber-600"
+                    className="h-full bg-[#B22234]"
                     initial={{ width: 0 }}
                     animate={{ width: `${progress}%` }}
                     transition={{ duration: 0.3 }}
@@ -223,7 +223,7 @@ export default function RiskAnalyzerPage() {
             )}
 
             {/* Card Container */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
               <AnimatePresence mode="wait">
                 {!showResults ? (
                   <motion.div
@@ -237,12 +237,12 @@ export default function RiskAnalyzerPage() {
                     {step === 1 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <Building2 className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <Building2 className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">Who is your 401(k) provider?</h2>
-                            <p className="text-slate-400 text-sm">Select your retirement plan administrator</p>
+                            <h2 className="text-xl font-bold text-slate-900">Who is your 401(k) provider?</h2>
+                            <p className="text-slate-600 text-sm">Select your retirement plan administrator</p>
                           </div>
                         </div>
 
@@ -253,16 +253,16 @@ export default function RiskAnalyzerPage() {
                               onClick={() => setProvider(p.id)}
                               className={`p-4 rounded-xl text-center transition-all ${
                                 provider === p.id
-                                  ? "bg-amber-500/20 border-2 border-amber-500"
-                                  : "bg-slate-800/50 border border-white/10 hover:border-white/30"
+                                  ? "bg-[#B22234]/10 border-2 border-amber-500"
+                                  : "bg-slate-50 border border-slate-200 hover:border-white/30"
                               }`}
                             >
                               <div className={`w-12 h-12 mx-auto mb-2 rounded-full flex items-center justify-center text-xl font-bold ${
-                                provider === p.id ? "bg-amber-500 text-slate-900" : "bg-slate-700 text-white"
+                                provider === p.id ? "bg-[#B22234] text-white" : "bg-slate-700text-slate-900"
                               }`}>
                                 {p.logo}
                               </div>
-                              <div className={`font-medium ${provider === p.id ? "text-amber-400" : "text-white"}`}>
+                              <div className={`font-medium ${provider === p.id ? "text-[#B22234]" : "text-white"}`}>
                                 {p.name}
                               </div>
                             </button>
@@ -275,12 +275,12 @@ export default function RiskAnalyzerPage() {
                     {step === 2 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <PieChart className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <PieChart className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">What type of fund is your money in?</h2>
-                            <p className="text-slate-400 text-sm">Select your primary investment type</p>
+                            <h2 className="text-xl font-bold text-slate-900">What type of fund is your money in?</h2>
+                            <p className="text-slate-600 text-sm">Select your primary investment type</p>
                           </div>
                         </div>
 
@@ -291,22 +291,22 @@ export default function RiskAnalyzerPage() {
                               onClick={() => setFundType(fund.id)}
                               className={`w-full p-4 rounded-xl text-left transition-all flex items-center justify-between ${
                                 fundType === fund.id
-                                  ? "bg-amber-500/20 border-2 border-amber-500"
-                                  : "bg-slate-800/50 border border-white/10 hover:border-white/30"
+                                  ? "bg-[#B22234]/10 border-2 border-amber-500"
+                                  : "bg-slate-50 border border-slate-200 hover:border-white/30"
                               }`}
                             >
                               <div>
-                                <div className={`font-medium ${fundType === fund.id ? "text-amber-400" : "text-white"}`}>
+                                <div className={`font-medium ${fundType === fund.id ? "text-[#B22234]" : "text-white"}`}>
                                   {fund.name}
                                 </div>
                                 <div className="text-slate-500 text-sm">{fund.description}</div>
                               </div>
                               {fund.id === "unknown" ? (
-                                <HelpCircle className={`h-5 w-5 ${fundType === fund.id ? "text-amber-400" : "text-slate-500"}`} />
+                                <HelpCircle className={`h-5 w-5 ${fundType === fund.id ? "text-[#B22234]" : "text-slate-500"}`} />
                               ) : (
                                 <div className={`text-sm font-mono ${
-                                  fund.stockExposure >= 75 ? "text-red-400" :
-                                  fund.stockExposure >= 50 ? "text-amber-400" : "text-green-400"
+                                  fund.stockExposure >= 75 ? "text-red-600" :
+                                  fund.stockExposure >= 50 ? "text-[#B22234]" : "text-green-600"
                                 }`}>
                                   {fund.stockExposure}% stocks
                                 </div>
@@ -321,12 +321,12 @@ export default function RiskAnalyzerPage() {
                     {step === 3 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <Calendar className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <Calendar className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">What is your age range?</h2>
-                            <p className="text-slate-400 text-sm">This helps us assess appropriate risk levels</p>
+                            <h2 className="text-xl font-bold text-slate-900">What is your age range?</h2>
+                            <p className="text-slate-600 text-sm">This helps us assess appropriate risk levels</p>
                           </div>
                         </div>
 
@@ -337,18 +337,18 @@ export default function RiskAnalyzerPage() {
                               onClick={() => setAgeRange(age.id)}
                               className={`w-full p-4 rounded-xl text-left transition-all flex items-center justify-between ${
                                 ageRange === age.id
-                                  ? "bg-amber-500/20 border-2 border-amber-500"
-                                  : "bg-slate-800/50 border border-white/10 hover:border-white/30"
+                                  ? "bg-[#B22234]/10 border-2 border-amber-500"
+                                  : "bg-slate-50 border border-slate-200 hover:border-white/30"
                               }`}
                             >
                               <div>
-                                <div className={`font-medium ${ageRange === age.id ? "text-amber-400" : "text-white"}`}>
+                                <div className={`font-medium ${ageRange === age.id ? "text-[#B22234]" : "text-white"}`}>
                                   {age.label}
                                 </div>
                                 <div className="text-slate-500 text-sm">{age.description}</div>
                               </div>
                               {ageRange === age.id && (
-                                <CheckCircle2 className="h-5 w-5 text-amber-400" />
+                                <CheckCircle2 className="h-5 w-5 text-[#B22234]" />
                               )}
                             </button>
                           ))}
@@ -360,12 +360,12 @@ export default function RiskAnalyzerPage() {
                     {step === 4 && (
                       <div>
                         <div className="flex items-center gap-3 mb-6">
-                          <div className="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                            <Wallet className="h-5 w-5 text-amber-400" />
+                          <div className="w-10 h-10 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                            <Wallet className="h-5 w-5 text-[#B22234]" />
                           </div>
                           <div>
-                            <h2 className="text-xl font-bold text-white">What is your approximate 401(k) balance?</h2>
-                            <p className="text-slate-400 text-sm">This helps calculate potential dollar impact</p>
+                            <h2 className="text-xl font-bold text-slate-900">What is your approximate 401(k) balance?</h2>
+                            <p className="text-slate-600 text-sm">This helps calculate potential dollar impact</p>
                           </div>
                         </div>
 
@@ -376,15 +376,15 @@ export default function RiskAnalyzerPage() {
                               onClick={() => setBalanceRange(balance.id)}
                               className={`w-full p-4 rounded-xl text-left transition-all flex items-center justify-between ${
                                 balanceRange === balance.id
-                                  ? "bg-amber-500/20 border-2 border-amber-500"
-                                  : "bg-slate-800/50 border border-white/10 hover:border-white/30"
+                                  ? "bg-[#B22234]/10 border-2 border-amber-500"
+                                  : "bg-slate-50 border border-slate-200 hover:border-white/30"
                               }`}
                             >
-                              <div className={`font-medium ${balanceRange === balance.id ? "text-amber-400" : "text-white"}`}>
+                              <div className={`font-medium ${balanceRange === balance.id ? "text-[#B22234]" : "text-white"}`}>
                                 {balance.label}
                               </div>
                               {balanceRange === balance.id && (
-                                <CheckCircle2 className="h-5 w-5 text-amber-400" />
+                                <CheckCircle2 className="h-5 w-5 text-[#B22234]" />
                               )}
                             </button>
                           ))}
@@ -397,7 +397,7 @@ export default function RiskAnalyzerPage() {
                       {step > 1 && (
                         <button
                           onClick={handleBack}
-                          className="px-6 py-3 bg-slate-800 border border-white/10 rounded-xl text-white font-medium hover:bg-slate-700 transition-all flex items-center gap-2"
+                          className="px-6 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 font-medium hover:bg-slate-200 transition-all flex items-center gap-2"
                         >
                           <ArrowLeft className="h-4 w-4" />
                           Back
@@ -408,7 +408,7 @@ export default function RiskAnalyzerPage() {
                         disabled={!canProceed()}
                         className={`flex-1 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 ${
                           canProceed()
-                            ? "bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 hover:from-amber-600 hover:to-amber-700"
+                            ? "bg-[#B22234] text-slate-900 hover:bg-[#8b1c2a]"
                             : "bg-slate-700 text-slate-500 cursor-not-allowed"
                         }`}
                       >
@@ -427,7 +427,7 @@ export default function RiskAnalyzerPage() {
                   >
                     {/* Risk Score Header */}
                     <div className="text-center mb-8">
-                      <div className="text-slate-400 text-sm mb-2">YOUR RISK SCORE</div>
+                      <div className="text-slate-600 text-sm mb-2">YOUR RISK SCORE</div>
                       <div className="relative inline-flex items-center justify-center">
                         <svg className="w-40 h-40" viewBox="0 0 100 100">
                           <circle
@@ -456,14 +456,14 @@ export default function RiskAnalyzerPage() {
                         </svg>
                         <div className="absolute inset-0 flex flex-col items-center justify-center">
                           <motion.span
-                            className="text-4xl font-bold text-white"
+                            className="text-4xl font-bold text-slate-900"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5 }}
                           >
                             {riskScore}
                           </motion.span>
-                          <span className="text-slate-400 text-sm">out of 100</span>
+                          <span className="text-slate-600 text-sm">out of 100</span>
                         </div>
                       </div>
                       <div className={`inline-flex items-center gap-2 px-4 py-2 ${riskLevel.bgColor} rounded-full ${riskLevel.color} font-semibold text-sm mt-4 border`}>
@@ -475,31 +475,31 @@ export default function RiskAnalyzerPage() {
                     {/* Key Stats */}
                     <div className="grid md:grid-cols-2 gap-4 mb-6">
                       {/* Stock Exposure */}
-                      <div className="bg-slate-800/50 rounded-xl p-4">
-                        <div className="flex items-center gap-2 text-slate-400 text-sm mb-2">
+                      <div className="bg-slate-50 rounded-xl p-4">
+                        <div className="flex items-center gap-2 text-slate-600 text-sm mb-2">
                           <TrendingDown className="h-4 w-4" />
                           ESTIMATED STOCK EXPOSURE
                         </div>
-                        <div className="text-3xl font-bold text-white">{stockExposure}%</div>
+                        <div className="text-3xl font-bold text-slate-900">{stockExposure}%</div>
                         <div className="text-slate-500 text-sm">of your portfolio</div>
                       </div>
 
                       {/* Potential Loss */}
-                      <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4">
-                        <div className="flex items-center gap-2 text-red-400 text-sm mb-2">
+                      <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                        <div className="flex items-center gap-2 text-red-600 text-sm mb-2">
                           <DollarSign className="h-4 w-4" />
                           IF MARKET DROPS 40%
                         </div>
-                        <div className="text-3xl font-bold text-white">
+                        <div className="text-3xl font-bold text-slate-900">
                           -${potentialLoss40.toLocaleString(undefined, { maximumFractionDigits: 0 })}
                         </div>
-                        <div className="text-red-400 text-sm">potential loss</div>
+                        <div className="text-red-600 text-sm">potential loss</div>
                       </div>
                     </div>
 
                     {/* Visual Pie Chart */}
-                    <div className="bg-slate-800/50 rounded-xl p-5 mb-6">
-                      <div className="text-slate-400 text-sm mb-4">ESTIMATED ALLOCATION BREAKDOWN</div>
+                    <div className="bg-slate-50 rounded-xl p-5 mb-6">
+                      <div className="text-slate-600 text-sm mb-4">ESTIMATED ALLOCATION BREAKDOWN</div>
                       <div className="flex items-center gap-6">
                         {/* Simple visual bar chart */}
                         <div className="flex-1">
@@ -519,7 +519,7 @@ export default function RiskAnalyzerPage() {
                             {estimatedAllocation.map((item) => (
                               <div key={item.label} className="flex items-center gap-2">
                                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: item.color }} />
-                                <span className="text-slate-400 text-sm">{item.label}: {Math.round(item.value)}%</span>
+                                <span className="text-slate-600 text-sm">{item.label}: {Math.round(item.value)}%</span>
                               </div>
                             ))}
                           </div>
@@ -528,29 +528,29 @@ export default function RiskAnalyzerPage() {
                     </div>
 
                     {/* Recommendation */}
-                    <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-5 mb-6">
+                    <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-5 mb-6">
                       <div className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <Shield className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                         <div>
-                          <h3 className="text-white font-semibold mb-2">Our Recommendation</h3>
-                          <p className="text-slate-300 text-sm leading-relaxed">{recommendation}</p>
+                          <h3 className="text-slate-900 font-semibold mb-2">Our Recommendation</h3>
+                          <p className="text-slate-600 text-sm leading-relaxed">{recommendation}</p>
                         </div>
                       </div>
                     </div>
 
                     {/* CTA */}
-                    <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/20 border border-amber-500/30 rounded-xl p-6 text-center">
-                      <h3 className="text-xl font-bold text-white mb-2">
+                    <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 text-center">
+                      <h3 className="text-xl font-bold text-[#000080] mb-2">
                         You've Worked Too Hard to Lose It Now
                       </h3>
-                      <p className="text-slate-300 text-sm mb-4">
+                      <p className="text-slate-600 text-sm mb-4">
                         After decades of contributions, you deserve protection. A Gold IRA can shield your savings from the next crash - no matter when it comes.
                       </p>
                       <a
                         href={affiliateLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-[#B22234] text-slate-900 font-bold text-lg rounded-xl hover:bg-[#8b1c2a] transition-all shadow-lg shadow-amber-500/25"
                       >
                         Get Your Free Gold IRA Guide
                         <ArrowRight className="h-5 w-5" />
@@ -563,7 +563,7 @@ export default function RiskAnalyzerPage() {
                     {/* Start Over */}
                     <button
                       onClick={resetAnalyzer}
-                      className="w-full mt-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-slate-400 font-medium hover:bg-slate-700 hover:text-white transition-all"
+                      className="w-full mt-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-500 font-medium hover:bg-slate-200 hover:text-slate-900 transition-all"
                     >
                       Start Over
                     </button>
@@ -576,18 +576,18 @@ export default function RiskAnalyzerPage() {
       </section>
 
       {/* Why Check Your Risk */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm mb-4">
+              <div className="inline-flex items-center gap-2 text-[#B22234] font-semibold text-sm mb-4">
                 <AlertTriangle className="h-4 w-4" />
                 WHY CHECK YOUR 401(K) RISK
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                 Most Americans Don&apos;t Know What&apos;s in Their 401(k)
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
+              <p className="text-slate-600 max-w-2xl mx-auto">
                 Studies show that over 60% of 401(k) participants couldn&apos;t identify their asset allocation. Understanding your risk exposure is the first step to protecting your retirement.
               </p>
             </div>
@@ -610,10 +610,10 @@ export default function RiskAnalyzerPage() {
                   description: "it took for many portfolios to recover from the 2008 crash",
                 },
               ].map((item, index) => (
-                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                  <div className="text-3xl font-bold text-amber-400 mb-1">{item.stat}</div>
-                  <div className="text-white font-medium mb-2">{item.label}</div>
-                  <div className="text-slate-400 text-sm">{item.description}</div>
+                <div key={index} className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 text-center">
+                  <div className="text-3xl font-bold text-[#B22234] mb-1">{item.stat}</div>
+                  <div className="text-slate-900 font-medium mb-2">{item.label}</div>
+                  <div className="text-slate-600 text-sm">{item.description}</div>
                 </div>
               ))}
             </div>
@@ -622,15 +622,15 @@ export default function RiskAnalyzerPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <Shield className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <Shield className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">Important Disclaimer</h3>
-                  <p className="text-slate-400 text-sm">
+                  <h3 className="text-slate-900 font-semibold mb-2">Important Disclaimer</h3>
+                  <p className="text-slate-600 text-sm">
                     This tool provides estimates based on general assumptions about typical fund allocations. Your actual allocation may differ. This is for educational purposes only and is not financial advice. Past performance does not guarantee future results. Consult with a qualified financial advisor before making investment decisions.
                   </p>
                 </div>
@@ -641,7 +641,7 @@ export default function RiskAnalyzerPage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

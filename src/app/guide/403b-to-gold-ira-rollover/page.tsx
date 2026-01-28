@@ -81,21 +81,20 @@ const schema = {
 
 export default function TsaRolloverPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-800/50 text-white py-20 relative overflow-hidden border-b border-white/10">
-                <div className="absolute inset-0 bg-primary-dark/50" />
-                <Container className="relative z-10">
+            <header className="bg-slate-50 py-20 border-b border-slate-200">
+                <Container>
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-secondary mb-6 border border-white/10">
-                            <span className="w-2 h-2 rounded-full bg-secondary"></span>
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-[#B22234] mb-6 border border-[#B22234]/20">
+                            <span className="w-2 h-2 rounded-full bg-[#B22234]"></span>
                             For Teachers, Nurses & Non-Profits
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-white">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#000080]">
                             403(b) to Gold IRA Rollover Guide
                         </h1>
-                        <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
+                        <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
                             How to move your Tax-Sheltered Annuity (TSA) into physical gold. Escape high fees and protect your retirement savings.
                         </p>
                     </div>
@@ -110,10 +109,10 @@ export default function TsaRolloverPage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-[#B22234] max-w-none">
 
-                        <p className="lead text-xl text-slate-400">
-                            If you&apos;re a teacher, nurse, or non-profit worker, you&apos;ve probably noticed something about your 403(b): <strong className="text-white">the options are terrible</strong>.
+                        <p className="lead text-xl text-slate-600">
+                            If you&apos;re a teacher, nurse, or non-profit worker, you&apos;ve probably noticed something about your 403(b): <strong className="text-[#000080]">the options are terrible</strong>.
                         </p>
 
                         <p>
@@ -180,7 +179,7 @@ export default function TsaRolloverPage() {
                                 Here&apos;s the dirty secret of 403(b) plans: unlike 401(k)s, they&apos;re often run by insurance companies selling annuity contracts. And these contracts come with strings attached.
                             </p>
                             <p>
-                                <strong className="text-white">Surrender charges</strong> are fees the insurance company charges if you move your money out before a certain period—typically 5-10 years. They can be as high as 7-8% of your balance in the early years.
+                                <strong className="text-[#000080]">Surrender charges</strong> are fees the insurance company charges if you move your money out before a certain period—typically 5-10 years. They can be as high as 7-8% of your balance in the early years.
                             </p>
                             <div className="not-prose my-8 p-6 bg-amber-500/10 rounded-xl border border-amber-500/20">
                                 <p className="font-bold text-amber-400 mb-3">Typical Surrender Charge Schedule:</p>
@@ -207,39 +206,39 @@ export default function TsaRolloverPage() {
                                 Rolling over a 403(b) is slightly more complicated than a 401(k) because you&apos;re often dealing with an insurance company, not just an HR department. Here&apos;s how to do it:
                             </p>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Open a Self-Directed Gold IRA</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Choose a Gold IRA company. They&apos;ll help you open an account with a custodian who can hold physical metals.</p>
+                                        <h4 className="font-bold text-[#000080]">Open a Self-Directed Gold IRA</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Choose a Gold IRA company. They&apos;ll help you open an account with a custodian who can hold physical metals.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Identify Your 403(b) Vendor</h4>
-                                        <p className="text-sm text-slate-400 mt-1">This is usually an insurance company (not your school district). Check your statements for names like VALIC, TIAA, AXA, or Lincoln Financial.</p>
+                                        <h4 className="font-bold text-[#000080]">Identify Your 403(b) Vendor</h4>
+                                        <p className="text-sm text-slate-600 mt-1">This is usually an insurance company (not your school district). Check your statements for names like VALIC, TIAA, AXA, or Lincoln Financial.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Request a Direct Rollover Form</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Call your vendor and ask for their &quot;rollover request form.&quot; Specify you want a <strong className="text-white">direct transfer</strong> to avoid withholding.</p>
+                                        <h4 className="font-bold text-[#000080]">Request a Direct Rollover Form</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Call your vendor and ask for their &quot;rollover request form.&quot; Specify you want a <strong className="text-[#000080]">direct transfer</strong> to avoid withholding.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">4</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Complete the Paperwork</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Fill out the form with your new Gold IRA custodian&apos;s information. Your Gold IRA company can help you with this.</p>
+                                        <h4 className="font-bold text-[#000080]">Complete the Paperwork</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Fill out the form with your new Gold IRA custodian&apos;s information. Your Gold IRA company can help you with this.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">5</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Wait for Transfer & Purchase Gold</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Funds typically arrive in 2-4 weeks (insurance companies are slower than 401k administrators). Then select your gold.</p>
+                                        <h4 className="font-bold text-[#000080]">Wait for Transfer & Purchase Gold</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Funds typically arrive in 2-4 weeks (insurance companies are slower than 401k administrators). Then select your gold.</p>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +248,7 @@ export default function TsaRolloverPage() {
                         <section id="tax-benefits" className="scroll-mt-32">
                             <h2>Tax Benefits</h2>
                             <p>
-                                A direct rollover from a 403(b) to a Traditional Gold IRA is <strong className="text-white">completely tax-free</strong>. No taxes owed. No penalties. The money simply moves from one tax-advantaged account to another.
+                                A direct rollover from a 403(b) to a Traditional Gold IRA is <strong className="text-[#000080]">completely tax-free</strong>. No taxes owed. No penalties. The money simply moves from one tax-advantaged account to another.
                             </p>
                             <p>
                                 Once in your Gold IRA, your investments grow tax-deferred—just like they did in your 403(b). You only pay taxes when you take distributions in retirement.
@@ -299,14 +298,14 @@ export default function TsaRolloverPage() {
                             <h2>403(b) Rollover FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                    <details key={index} className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                                 <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-400">
+                                        <p className="mt-4 leading-relaxed text-slate-600">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -315,10 +314,10 @@ export default function TsaRolloverPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Take Control of Your 403(b)</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">Take Control of Your 403(b)</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">Don't let high fees eat your retirement. See if you qualify for a penalty-free rollover today.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
@@ -335,7 +334,7 @@ export default function TsaRolloverPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="guide-403b-to-gold-ira-rollover" />
                 </Container>

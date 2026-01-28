@@ -87,7 +87,7 @@ const articleSchema = {
 
 export default function BirchGoldFeesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
             {/* Schema Markup */}
@@ -101,17 +101,17 @@ export default function BirchGoldFeesPage() {
             />
 
             {/* Header */}
-            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24 border-b border-white/10">
+            <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
                 <Container>
                     <div className="max-w-3xl">
-                        <div className="flex items-center gap-2 text-amber-400 font-bold tracking-widest uppercase text-xs mb-4">
+                        <div className="flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
                             <DollarSign className="h-4 w-4" />
                             Fee Analysis
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">
                             Birch Gold Fees Breakdown
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             Complete cost analysis of Birch Gold Group&apos;s Gold IRA fees. We break down every fee so you know exactly what you&apos;ll pay—and how it compares to our top-rated alternative.
                         </p>
                         <p className="text-sm text-slate-500 mt-4">Last Updated: January 2026</p>
@@ -120,29 +120,29 @@ export default function BirchGoldFeesPage() {
             </header>
 
             {/* Quick Summary */}
-            <section className="py-12 bg-slate-800/50 border-b border-white/10">
+            <section className="py-12 bg-slate-100 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="grid md:grid-cols-5 gap-6">
-                            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-5 text-center">
-                                <p className="text-slate-400 text-sm mb-1">Setup Fee</p>
-                                <p className="text-2xl font-bold text-white">$50</p>
+                            <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-5 text-center">
+                                <p className="text-slate-600 text-sm mb-1">Setup Fee</p>
+                                <p className="text-2xl font-bold text-[#000080]">$50</p>
                             </div>
-                            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-5 text-center">
-                                <p className="text-slate-400 text-sm mb-1">Annual Fee</p>
-                                <p className="text-2xl font-bold text-white">$100</p>
+                            <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-5 text-center">
+                                <p className="text-slate-600 text-sm mb-1">Annual Fee</p>
+                                <p className="text-2xl font-bold text-[#000080]">$100</p>
                             </div>
-                            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-5 text-center">
-                                <p className="text-slate-400 text-sm mb-1">Storage Fee</p>
-                                <p className="text-2xl font-bold text-white">$150/yr</p>
+                            <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-5 text-center">
+                                <p className="text-slate-600 text-sm mb-1">Storage Fee</p>
+                                <p className="text-2xl font-bold text-[#000080]">$150/yr</p>
                             </div>
-                            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-5 text-center">
-                                <p className="text-slate-400 text-sm mb-1">Wire Fee</p>
-                                <p className="text-2xl font-bold text-white">$30</p>
+                            <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-5 text-center">
+                                <p className="text-slate-600 text-sm mb-1">Wire Fee</p>
+                                <p className="text-2xl font-bold text-[#000080]">$30</p>
                             </div>
-                            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-5 text-center">
-                                <p className="text-slate-400 text-sm mb-1">Minimum</p>
-                                <p className="text-2xl font-bold text-white">$10,000</p>
+                            <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-5 text-center">
+                                <p className="text-slate-600 text-sm mb-1">Minimum</p>
+                                <p className="text-2xl font-bold text-[#000080]">$10,000</p>
                             </div>
                         </div>
                     </div>
@@ -156,52 +156,52 @@ export default function BirchGoldFeesPage() {
 
                         {/* Detailed Fee Breakdown */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-8">Birch Gold Fee Structure</h2>
+                            <h2 className="text-3xl font-bold text-[#000080] mb-8">Birch Gold Fee Structure</h2>
 
                             <div className="space-y-6">
                                 {/* Setup Fee */}
-                                <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
+                                <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
                                     <div className="flex items-start justify-between mb-4">
                                         <div>
-                                            <h3 className="text-xl font-bold text-white">Account Setup Fee</h3>
-                                            <p className="text-slate-400 text-sm">One-time fee when you open your Gold IRA</p>
+                                            <h3 className="text-xl font-bold text-[#000080]">Account Setup Fee</h3>
+                                            <p className="text-slate-600 text-sm">One-time fee when you open your Gold IRA</p>
                                         </div>
-                                        <span className="text-2xl font-bold text-amber-400">$50</span>
+                                        <span className="text-2xl font-bold text-[#B22234]">$50</span>
                                     </div>
-                                    <p className="text-slate-300 text-sm">
+                                    <p className="text-slate-600 text-sm">
                                         This covers the administrative costs of establishing your self-directed IRA with Birch Gold&apos;s custodian partner. This is competitive with industry standards of $50-$100.
                                     </p>
                                 </div>
 
                                 {/* Annual Fee */}
-                                <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
+                                <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
                                     <div className="flex items-start justify-between mb-4">
                                         <div>
-                                            <h3 className="text-xl font-bold text-white">Annual Maintenance Fee</h3>
-                                            <p className="text-slate-400 text-sm">Charged yearly by the custodian</p>
+                                            <h3 className="text-xl font-bold text-[#000080]">Annual Maintenance Fee</h3>
+                                            <p className="text-slate-600 text-sm">Charged yearly by the custodian</p>
                                         </div>
-                                        <span className="text-2xl font-bold text-amber-400">$100/year</span>
+                                        <span className="text-2xl font-bold text-[#B22234]">$100/year</span>
                                     </div>
-                                    <p className="text-slate-300 text-sm mb-4">
+                                    <p className="text-slate-600 text-sm mb-4">
                                         This is the IRA custodian&apos;s fee for maintaining your account, handling paperwork, and providing quarterly statements. This is slightly higher than the industry average of $75-$80.
                                     </p>
                                     <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
                                         <p className="text-amber-300 text-sm">
-                                            <strong className="text-amber-400">Note:</strong> Augusta Precious Metals charges only $80/year for annual maintenance—saving you $20 annually.
+                                            <strong className="text-[#B22234]">Note:</strong> Augusta Precious Metals charges only $80/year for annual maintenance—saving you $20 annually.
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Storage Fee */}
-                                <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
+                                <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
                                     <div className="flex items-start justify-between mb-4">
                                         <div>
-                                            <h3 className="text-xl font-bold text-white">Storage Fee</h3>
-                                            <p className="text-slate-400 text-sm">Annual fee for IRS-approved depository</p>
+                                            <h3 className="text-xl font-bold text-[#000080]">Storage Fee</h3>
+                                            <p className="text-slate-600 text-sm">Annual fee for IRS-approved depository</p>
                                         </div>
-                                        <span className="text-2xl font-bold text-amber-400">$150/year</span>
+                                        <span className="text-2xl font-bold text-[#B22234]">$150/year</span>
                                     </div>
-                                    <p className="text-slate-300 text-sm mb-4">
+                                    <p className="text-slate-600 text-sm mb-4">
                                         Your physical gold must be stored at an IRS-approved depository. Birch Gold uses Delaware Depository, a reputable facility. This flat fee applies regardless of how much gold you hold.
                                     </p>
                                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
@@ -212,29 +212,29 @@ export default function BirchGoldFeesPage() {
                                 </div>
 
                                 {/* Wire Fee */}
-                                <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
+                                <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
                                     <div className="flex items-start justify-between mb-4">
                                         <div>
-                                            <h3 className="text-xl font-bold text-white">Wire Transfer Fee</h3>
-                                            <p className="text-slate-400 text-sm">For incoming/outgoing wire transfers</p>
+                                            <h3 className="text-xl font-bold text-[#000080]">Wire Transfer Fee</h3>
+                                            <p className="text-slate-600 text-sm">For incoming/outgoing wire transfers</p>
                                         </div>
-                                        <span className="text-2xl font-bold text-amber-400">$30</span>
+                                        <span className="text-2xl font-bold text-[#B22234]">$30</span>
                                     </div>
-                                    <p className="text-slate-300 text-sm">
+                                    <p className="text-slate-600 text-sm">
                                         Standard industry fee for wire transfers. Only applies when you move money in or out via wire. Most rollovers can be done via check or direct transfer to avoid this fee.
                                     </p>
                                 </div>
 
                                 {/* Spreads */}
-                                <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
+                                <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
                                     <div className="flex items-start justify-between mb-4">
                                         <div>
-                                            <h3 className="text-xl font-bold text-white">Spreads (Markup)</h3>
-                                            <p className="text-slate-400 text-sm">Difference between buy and sell price</p>
+                                            <h3 className="text-xl font-bold text-[#000080]">Spreads (Markup)</h3>
+                                            <p className="text-slate-600 text-sm">Difference between buy and sell price</p>
                                         </div>
-                                        <span className="text-2xl font-bold text-amber-400">Varies</span>
+                                        <span className="text-2xl font-bold text-[#B22234]">Varies</span>
                                     </div>
-                                    <p className="text-slate-300 text-sm mb-4">
+                                    <p className="text-slate-600 text-sm mb-4">
                                         This is where the real cost is. Birch Gold (like all dealers) charges a spread—the difference between what you pay to buy gold and what they&apos;ll pay when you sell. This is typically 5-8% above spot price for gold coins.
                                     </p>
                                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
@@ -248,36 +248,36 @@ export default function BirchGoldFeesPage() {
 
                         {/* Total Annual Cost Example */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">Total Annual Cost Example</h2>
-                            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6">
-                                <h4 className="font-bold text-white mb-4">For a $50,000 Gold IRA with Birch Gold:</h4>
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Total Annual Cost Example</h2>
+                            <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-2xl p-6">
+                                <h4 className="font-bold text-[#000080] mb-4">For a $50,000 Gold IRA with Birch Gold:</h4>
                                 <div className="space-y-3 mb-6">
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">Year 1 Setup Fee</span>
-                                        <span className="font-bold text-white">$50</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
+                                        <span className="text-slate-600">Year 1 Setup Fee</span>
+                                        <span className="font-bold text-[#000080]">$50</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">Annual Maintenance Fee</span>
-                                        <span className="font-bold text-white">$100</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
+                                        <span className="text-slate-600">Annual Maintenance Fee</span>
+                                        <span className="font-bold text-[#000080]">$100</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300">Storage Fee</span>
-                                        <span className="font-bold text-white">$150</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
+                                        <span className="text-slate-600">Storage Fee</span>
+                                        <span className="font-bold text-[#000080]">$150</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/30">
                                         <span className="text-amber-300 font-medium">First Year Total (excluding spreads)</span>
-                                        <span className="font-bold text-amber-400">$300</span>
+                                        <span className="font-bold text-[#B22234]">$300</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-800/50 rounded-lg">
-                                        <span className="text-slate-300 font-medium">Ongoing Annual Cost (Birch Gold)</span>
-                                        <span className="font-bold text-white">$250/year</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
+                                        <span className="text-slate-600 font-medium">Ongoing Annual Cost (Birch Gold)</span>
+                                        <span className="font-bold text-[#000080]">$250/year</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-green-500/10 rounded-lg border border-green-500/30">
                                         <span className="text-green-300 font-medium">Ongoing Annual Cost (Augusta)</span>
                                         <span className="font-bold text-green-400">$180/year</span>
                                     </div>
                                 </div>
-                                <p className="text-slate-400 text-sm">
+                                <p className="text-slate-600 text-sm">
                                     By choosing Augusta over Birch Gold, you save $70/year on fees—that&apos;s $700 over 10 years not including potential savings on spreads.
                                 </p>
                             </div>
@@ -285,50 +285,50 @@ export default function BirchGoldFeesPage() {
 
                         {/* Comparison Table */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">Birch Gold Fees vs Augusta Precious Metals</h2>
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Birch Gold Fees vs Augusta Precious Metals</h2>
                             <div className="overflow-x-auto">
                                 <table className="w-full">
                                     <thead>
-                                        <tr className="border-b border-white/10">
-                                            <th className="text-left p-4 text-white font-bold">Fee Type</th>
-                                            <th className="text-left p-4 text-white font-bold">Birch Gold</th>
-                                            <th className="text-left p-4 text-white font-bold">Augusta</th>
-                                            <th className="text-left p-4 text-white font-bold">Savings</th>
+                                        <tr className="border-b border-slate-200">
+                                            <th className="text-left p-4 text-[#000080] font-bold">Fee Type</th>
+                                            <th className="text-left p-4 text-[#000080] font-bold">Birch Gold</th>
+                                            <th className="text-left p-4 text-[#000080] font-bold">Augusta</th>
+                                            <th className="text-left p-4 text-[#000080] font-bold">Savings</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="text-slate-300">
+                                    <tbody className="text-slate-600">
                                         <tr className="border-b border-white/5">
-                                            <td className="p-4 font-medium text-white">Account Setup</td>
+                                            <td className="p-4 font-medium text-[#000080]">Account Setup</td>
                                             <td className="p-4">$50</td>
                                             <td className="p-4 text-green-400">$50</td>
-                                            <td className="p-4 text-slate-400">$0</td>
+                                            <td className="p-4 text-slate-600">$0</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
-                                            <td className="p-4 font-medium text-white">Annual Maintenance</td>
+                                            <td className="p-4 font-medium text-[#000080]">Annual Maintenance</td>
                                             <td className="p-4">$100</td>
                                             <td className="p-4 text-green-400">$80</td>
                                             <td className="p-4 text-green-400">$20/year</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
-                                            <td className="p-4 font-medium text-white">Annual Storage</td>
+                                            <td className="p-4 font-medium text-[#000080]">Annual Storage</td>
                                             <td className="p-4">$150</td>
                                             <td className="p-4 text-green-400">$100</td>
                                             <td className="p-4 text-green-400">$50/year</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
-                                            <td className="p-4 font-medium text-white">Wire Transfer</td>
+                                            <td className="p-4 font-medium text-[#000080]">Wire Transfer</td>
                                             <td className="p-4">$30</td>
                                             <td className="p-4">$30</td>
-                                            <td className="p-4 text-slate-400">$0</td>
+                                            <td className="p-4 text-slate-600">$0</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
-                                            <td className="p-4 font-medium text-white">Minimum Investment</td>
+                                            <td className="p-4 font-medium text-[#000080]">Minimum Investment</td>
                                             <td className="p-4">$10,000</td>
                                             <td className="p-4">$50,000</td>
-                                            <td className="p-4 text-slate-400">—</td>
+                                            <td className="p-4 text-slate-600">—</td>
                                         </tr>
                                         <tr className="bg-amber-500/5 border-b border-white/5">
-                                            <td className="p-4 font-bold text-amber-400">Total Annual Fees</td>
+                                            <td className="p-4 font-bold text-[#B22234]">Total Annual Fees</td>
                                             <td className="p-4 font-bold">$250/year</td>
                                             <td className="p-4 font-bold text-green-400">$180/year</td>
                                             <td className="p-4 font-bold text-green-400">$70/year</td>
@@ -343,7 +343,7 @@ export default function BirchGoldFeesPage() {
 
                         {/* Pros and Cons */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6">Birch Gold Fees: Pros & Cons</h2>
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Birch Gold Fees: Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
                                     <h3 className="font-bold text-green-400 mb-4 flex items-center gap-2">
@@ -408,49 +408,49 @@ export default function BirchGoldFeesPage() {
                         <div className="mb-16">
                             <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/30 rounded-2xl p-8">
                                 <div className="flex items-center gap-3 mb-4">
-                                    <Award className="h-8 w-8 text-amber-400" />
-                                    <h2 className="text-2xl font-bold text-white">Why We Recommend Augusta Instead</h2>
+                                    <Award className="h-8 w-8 text-[#B22234]" />
+                                    <h2 className="text-2xl font-bold text-[#000080]">Why We Recommend Augusta Instead</h2>
                                 </div>
-                                <p className="text-slate-300 mb-6">
-                                    While Birch Gold has a lower minimum investment ($10,000 vs $50,000), for investors who qualify, <strong className="text-amber-400">Augusta Precious Metals</strong> offers significantly better value:
+                                <p className="text-slate-600 mb-6">
+                                    While Birch Gold has a lower minimum investment ($10,000 vs $50,000), for investors who qualify, <strong className="text-[#B22234]">Augusta Precious Metals</strong> offers significantly better value:
                                 </p>
                                 <div className="grid md:grid-cols-3 gap-6 mb-8">
-                                    <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4 text-center">
-                                        <Scale className="h-8 w-8 text-amber-400 mx-auto mb-2" />
-                                        <p className="text-2xl font-bold text-white mb-1">$70</p>
-                                        <p className="text-slate-400 text-sm">Annual Fee Savings</p>
+                                    <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-4 text-center">
+                                        <Scale className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
+                                        <p className="text-2xl font-bold text-[#000080] mb-1">$70</p>
+                                        <p className="text-slate-600 text-sm">Annual Fee Savings</p>
                                     </div>
-                                    <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4 text-center">
-                                        <Building2 className="h-8 w-8 text-amber-400 mx-auto mb-2" />
-                                        <p className="text-2xl font-bold text-white mb-1">$700+</p>
-                                        <p className="text-slate-400 text-sm">10-Year Savings</p>
+                                    <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-4 text-center">
+                                        <Building2 className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
+                                        <p className="text-2xl font-bold text-[#000080] mb-1">$700+</p>
+                                        <p className="text-slate-600 text-sm">10-Year Savings</p>
                                     </div>
-                                    <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-4 text-center">
+                                    <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-4 text-center">
                                         <CheckCircle2 className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                                        <p className="text-2xl font-bold text-white mb-1">A+ BBB</p>
-                                        <p className="text-slate-400 text-sm">Rating & 0 Complaints</p>
+                                        <p className="text-2xl font-bold text-[#000080] mb-1">A+ BBB</p>
+                                        <p className="text-slate-600 text-sm">Rating & 0 Complaints</p>
                                     </div>
                                 </div>
-                                <ul className="space-y-3 text-slate-300 mb-8">
+                                <ul className="space-y-3 text-slate-600 mb-8">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                                        <span><strong className="text-white">Lower annual fees:</strong> $180/year vs Birch Gold&apos;s $250/year</span>
+                                        <span><strong className="text-[#000080]">Lower annual fees:</strong> $180/year vs Birch Gold&apos;s $250/year</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                                        <span><strong className="text-white">Transparent pricing:</strong> Augusta is known for clear, upfront spread disclosure</span>
+                                        <span><strong className="text-[#000080]">Transparent pricing:</strong> Augusta is known for clear, upfront spread disclosure</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                                        <span><strong className="text-white">Education-first approach:</strong> Free one-on-one web conference to learn before you buy</span>
+                                        <span><strong className="text-[#000080]">Education-first approach:</strong> Free one-on-one web conference to learn before you buy</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                                        <span><strong className="text-white">Lifetime support:</strong> Dedicated account representative for life</span>
+                                        <span><strong className="text-[#000080]">Lifetime support:</strong> Dedicated account representative for life</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                                        <span><strong className="text-white">No pushy sales:</strong> Never pressured to buy—they let the education speak for itself</span>
+                                        <span><strong className="text-[#000080]">No pushy sales:</strong> Never pressured to buy—they let the education speak for itself</span>
                                     </li>
                                 </ul>
                                 <div className="flex flex-col sm:flex-row gap-4">
@@ -459,7 +459,7 @@ export default function BirchGoldFeesPage() {
                                             Get Free Augusta Consultation <ArrowRight className="ml-2 h-4 w-4" />
                                         </a>
                                     </Button>
-                                    <Button variant="outline" size="lg" asChild className="border-white/20 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="lg" asChild className="border-white/20 text-[#000080] hover:bg-slate-200">
                                         <Link href="/reviews/augusta-precious-metals">
                                             Read Full Augusta Review
                                         </Link>
@@ -470,18 +470,18 @@ export default function BirchGoldFeesPage() {
 
                         {/* FAQ Section */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
-                                <HelpCircle className="h-8 w-8 text-amber-400" />
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6 flex items-center gap-3">
+                                <HelpCircle className="h-8 w-8 text-[#B22234]" />
                                 Frequently Asked Questions
                             </h2>
                             <div className="space-y-4">
                                 {faqData.map((faq, index) => (
-                                    <details key={index} className="group bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
-                                        <summary className="flex cursor-pointer items-center justify-between text-white font-bold">
+                                    <details key={index} className="group bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
+                                        <summary className="flex cursor-pointer items-center justify-between text-[#000080] font-bold">
                                             {faq.question}
-                                            <span className="text-amber-400 group-open:rotate-45 transition-transform">+</span>
+                                            <span className="text-[#B22234] group-open:rotate-45 transition-transform">+</span>
                                         </summary>
-                                        <p className="mt-4 text-slate-300">
+                                        <p className="mt-4 text-slate-600">
                                             {faq.answer}
                                         </p>
                                     </details>
@@ -490,10 +490,10 @@ export default function BirchGoldFeesPage() {
                         </div>
 
                         {/* Bottom CTA */}
-                        <div className="bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div className="bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Want Lower Fees Than Birch Gold?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">Want Lower Fees Than Birch Gold?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">
                                     Augusta Precious Metals offers lower annual fees, transparent pricing, and world-class education. Get a free consultation to see exactly what you&apos;ll pay—no hidden costs.
                                 </p>
@@ -509,7 +509,7 @@ export default function BirchGoldFeesPage() {
             </section>
 
             {/* Footer CTA */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="guide-birch-gold-fees" />
                 </Container>

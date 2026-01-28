@@ -142,7 +142,7 @@ export function NUACalculator() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
+              className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8"
             >
               {/* Progress Steps */}
               <div className="flex items-center justify-center mb-8">
@@ -151,8 +151,8 @@ export function NUACalculator() {
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                         step >= s
-                          ? "bg-green-500 text-white"
-                          : "bg-slate-700 text-slate-400"
+                          ? "bg-green-500text-slate-900"
+                          : "bg-slate-700 text-slate-500"
                       }`}
                     >
                       {s}
@@ -175,24 +175,24 @@ export function NUACalculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                     Your Company Stock
                   </h2>
-                  <p className="text-slate-400 text-center mb-8">
+                  <p className="text-slate-500 text-center mb-8">
                     Enter details about your employer stock in your 401(k)
                   </p>
 
                   <div className="space-y-8">
                     {/* Number of Shares */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white text-center">
+                      <h3 className="text-lg font-semibold text-slate-900 text-center">
                         Total Shares of Company Stock
                       </h3>
                       <div className="text-center">
-                        <span className="text-5xl font-bold text-green-400">
+                        <span className="text-5xl font-bold text-green-600">
                           {totalShares.toLocaleString()}
                         </span>
-                        <span className="text-xl text-slate-400 ml-2">shares</span>
+                        <span className="text-xl text-slate-500 ml-2">shares</span>
                       </div>
                       <input
                         type="range"
@@ -210,8 +210,8 @@ export function NUACalculator() {
                             onClick={() => setTotalShares(shares)}
                             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                               totalShares === shares
-                                ? "bg-green-500 text-white"
-                                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                                ? "bg-green-500text-slate-900"
+                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                             }`}
                           >
                             {shares.toLocaleString()}
@@ -223,11 +223,11 @@ export function NUACalculator() {
                     {/* Cost Basis per Share */}
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-4">
-                        <h3 className="text-lg font-semibold text-white text-center">
+                        <h3 className="text-lg font-semibold text-slate-900 text-center">
                           Cost Basis Per Share
                         </h3>
                         <div className="text-center">
-                          <span className="text-4xl font-bold text-amber-400">
+                          <span className="text-4xl font-bold text-[#B22234]">
                             ${costBasisPerShare}
                           </span>
                         </div>
@@ -240,7 +240,7 @@ export function NUACalculator() {
                           onChange={(e) =>
                             setCostBasisPerShare(Number(e.target.value))
                           }
-                          className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                         />
                         <p className="text-slate-500 text-xs text-center">
                           What you paid / was contributed
@@ -248,11 +248,11 @@ export function NUACalculator() {
                       </div>
 
                       <div className="space-y-4">
-                        <h3 className="text-lg font-semibold text-white text-center">
+                        <h3 className="text-lg font-semibold text-slate-900 text-center">
                           Current Price Per Share
                         </h3>
                         <div className="text-center">
-                          <span className="text-4xl font-bold text-green-400">
+                          <span className="text-4xl font-bold text-green-600">
                             ${currentPricePerShare}
                           </span>
                         </div>
@@ -274,23 +274,23 @@ export function NUACalculator() {
                     </div>
 
                     {/* Summary */}
-                    <div className="bg-slate-800/50 rounded-xl p-4">
+                    <div className="bg-slate-50 rounded-xl p-4">
                       <div className="grid grid-cols-3 gap-4 text-center">
                         <div>
-                          <p className="text-slate-400 text-sm">Cost Basis</p>
-                          <p className="text-xl font-bold text-amber-400">
+                          <p className="text-slate-600 text-sm">Cost Basis</p>
+                          <p className="text-xl font-bold text-[#B22234]">
                             {formatCurrency(totalShares * costBasisPerShare)}
                           </p>
                         </div>
                         <div>
-                          <p className="text-slate-400 text-sm">Current Value</p>
-                          <p className="text-xl font-bold text-green-400">
+                          <p className="text-slate-600 text-sm">Current Value</p>
+                          <p className="text-xl font-bold text-green-600">
                             {formatCurrency(totalShares * currentPricePerShare)}
                           </p>
                         </div>
                         <div>
-                          <p className="text-slate-400 text-sm">NUA</p>
-                          <p className="text-xl font-bold text-white">
+                          <p className="text-slate-600 text-sm">NUA</p>
+                          <p className="text-xl font-bold text-slate-900">
                             {formatCurrency(
                               totalShares *
                                 (currentPricePerShare - costBasisPerShare)
@@ -304,7 +304,7 @@ export function NUACalculator() {
                   <div className="mt-8 flex justify-end">
                     <button
                       onClick={() => setStep(2)}
-                      className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                      className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -319,21 +319,21 @@ export function NUACalculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                     Your Tax Rates
                   </h2>
-                  <p className="text-slate-400 text-center mb-8">
+                  <p className="text-slate-500 text-center mb-8">
                     Enter your federal and state tax brackets
                   </p>
 
                   <div className="space-y-8">
                     {/* Ordinary Income Bracket */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white text-center">
+                      <h3 className="text-lg font-semibold text-slate-900 text-center">
                         Federal Ordinary Income Tax Bracket
                       </h3>
                       <div className="text-center">
-                        <span className="text-5xl font-bold text-red-400">
+                        <span className="text-5xl font-bold text-red-600">
                           {ordinaryIncomeBracket}%
                         </span>
                       </div>
@@ -355,8 +355,8 @@ export function NUACalculator() {
                             onClick={() => setOrdinaryIncomeBracket(rate)}
                             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                               ordinaryIncomeBracket === rate
-                                ? "bg-red-500 text-white"
-                                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                                ? "bg-red-500text-slate-900"
+                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                             }`}
                           >
                             {rate}%
@@ -367,11 +367,11 @@ export function NUACalculator() {
 
                     {/* LTCG Rate */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white text-center">
+                      <h3 className="text-lg font-semibold text-slate-900 text-center">
                         Federal Long-Term Capital Gains Rate
                       </h3>
                       <div className="text-center">
-                        <span className="text-5xl font-bold text-green-400">
+                        <span className="text-5xl font-bold text-green-600">
                           {longTermCapGainsRate}%
                         </span>
                       </div>
@@ -382,8 +382,8 @@ export function NUACalculator() {
                             onClick={() => setLongTermCapGainsRate(rate)}
                             className={`px-6 py-3 rounded-xl text-lg font-medium transition-colors ${
                               longTermCapGainsRate === rate
-                                ? "bg-green-500 text-white"
-                                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                                ? "bg-green-500text-slate-900"
+                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                             }`}
                           >
                             {rate}%
@@ -396,7 +396,7 @@ export function NUACalculator() {
                       </p>
                     </div>
 
-                    <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                       <p className="text-green-300 text-sm">
                         <strong>NUA Advantage:</strong> The difference between your
                         ordinary income rate ({ordinaryIncomeBracket}%) and capital
@@ -412,13 +412,13 @@ export function NUACalculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(1)}
-                      className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={() => setStep(3)}
-                      className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                      className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -433,10 +433,10 @@ export function NUACalculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                     State Income Tax
                   </h2>
-                  <p className="text-slate-400 text-center mb-8">
+                  <p className="text-slate-500 text-center mb-8">
                     Enter your state income tax rate (if applicable)
                   </p>
 
@@ -462,8 +462,8 @@ export function NUACalculator() {
                           onClick={() => setStateTaxRate(rate)}
                           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                             stateTaxRate === rate
-                              ? "bg-purple-500 text-white"
-                              : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                              ? "bg-purple-500text-slate-900"
+                              : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                           }`}
                         >
                           {rate}%
@@ -476,24 +476,24 @@ export function NUACalculator() {
                     </p>
 
                     {/* Tax Summary */}
-                    <div className="bg-slate-800/50 rounded-xl p-6 mt-8">
-                      <h3 className="text-lg font-semibold text-white mb-4 text-center">
+                    <div className="bg-slate-50 rounded-xl p-6 mt-8">
+                      <h3 className="text-lg font-semibold text-slate-900 mb-4 text-center">
                         Combined Tax Rates
                       </h3>
                       <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4 text-center">
-                          <p className="text-slate-400 text-sm mb-1">
+                        <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
+                          <p className="text-slate-600 text-sm mb-1">
                             Ordinary Income (Rollover)
                           </p>
-                          <p className="text-3xl font-bold text-red-400">
+                          <p className="text-3xl font-bold text-red-600">
                             {ordinaryIncomeBracket + stateTaxRate}%
                           </p>
                         </div>
-                        <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4 text-center">
-                          <p className="text-slate-400 text-sm mb-1">
+                        <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                          <p className="text-slate-600 text-sm mb-1">
                             Long-Term Cap Gains (NUA)
                           </p>
-                          <p className="text-3xl font-bold text-green-400">
+                          <p className="text-3xl font-bold text-green-600">
                             {longTermCapGainsRate + stateTaxRate}%
                           </p>
                         </div>
@@ -504,13 +504,13 @@ export function NUACalculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(2)}
-                      className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={handleCalculate}
-                      className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                      className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors"
                     >
                       Calculate NUA Strategy
                     </button>
@@ -531,14 +531,14 @@ export function NUACalculator() {
                 className={`rounded-2xl p-8 text-center border-2 ${
                   calculations.taxSavings > 0
                     ? "bg-gradient-to-b from-green-500/10 to-transparent border-green-500/30"
-                    : "bg-gradient-to-b from-amber-500/10 to-transparent border-amber-500/30"
+                    : "bg-[#B22234]/5 border-[#B22234]/30"
                 }`}
               >
                 <span
                   className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${
                     calculations.taxSavings > 0
-                      ? "bg-green-500/20 text-green-400"
-                      : "bg-amber-500/20 text-amber-400"
+                      ? "bg-green-500/20 text-green-600"
+                      : "bg-[#B22234]/10 text-[#B22234]"
                   }`}
                 >
                   {calculations.taxSavings > 0
@@ -548,13 +548,13 @@ export function NUACalculator() {
                 <div
                   className={`text-6xl font-bold mb-2 ${
                     calculations.taxSavings > 0
-                      ? "text-green-400"
-                      : "text-amber-400"
+                      ? "text-green-600"
+                      : "text-[#B22234]"
                   }`}
                 >
                   {formatCurrency(Math.abs(calculations.taxSavings))}
                 </div>
-                <p className="text-slate-300 mb-4">
+                <p className="text-slate-600 mb-4">
                   {calculations.taxSavings > 0
                     ? `That's ${calculations.savingsPercentage.toFixed(
                         1
@@ -564,8 +564,8 @@ export function NUACalculator() {
               </div>
 
               {/* Strategy Comparison */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-                <h2 className="text-2xl font-bold text-white mb-6 text-center">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
+                <h2 className="text-2xl font-bold text-[#000080] mb-6 text-center">
                   Strategy Comparison
                 </h2>
 
@@ -575,41 +575,41 @@ export function NUACalculator() {
                     className={`rounded-xl p-6 ${
                       calculations.recommendedStrategy === "nua"
                         ? "bg-green-500/10 border-2 border-green-500/30 relative"
-                        : "bg-slate-800/50 border border-slate-700"
+                        : "bg-slate-50 border border-slate-700"
                     }`}
                   >
                     {calculations.recommendedStrategy === "nua" && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                        <span className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        <span className="bg-green-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
                           RECOMMENDED
                         </span>
                       </div>
                     )}
-                    <h3 className="text-lg font-semibold text-white mb-4">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">
                       NUA Strategy
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Tax on Cost Basis</span>
-                        <span className="text-red-400 font-semibold">
+                        <span className="text-slate-500">Tax on Cost Basis</span>
+                        <span className="text-red-600 font-semibold">
                           {formatCurrency(calculations.nuaCostBasisTax)}
                         </span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Tax on NUA (LTCG)</span>
-                        <span className="text-amber-400 font-semibold">
+                        <span className="text-slate-500">Tax on NUA (LTCG)</span>
+                        <span className="text-[#B22234] font-semibold">
                           {formatCurrency(calculations.nuaAppreciationTax)}
                         </span>
                       </div>
-                      <div className="border-t border-white/10 pt-3 flex justify-between">
-                        <span className="text-white font-semibold">Total Tax</span>
-                        <span className="text-xl font-bold text-green-400">
+                      <div className="border-t border-slate-200 pt-3 flex justify-between">
+                        <span className="text-slate-900 font-semibold">Total Tax</span>
+                        <span className="text-xl font-bold text-green-600">
                           {formatCurrency(calculations.nuaTotalTax)}
                         </span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Effective Rate</span>
-                        <span className="text-slate-300">
+                        <span className="text-slate-500">Effective Rate</span>
+                        <span className="text-slate-600">
                           {calculations.nuaEffectiveRate.toFixed(1)}%
                         </span>
                       </div>
@@ -620,42 +620,42 @@ export function NUACalculator() {
                   <div
                     className={`rounded-xl p-6 ${
                       calculations.recommendedStrategy === "rollover"
-                        ? "bg-amber-500/10 border-2 border-amber-500/30 relative"
-                        : "bg-slate-800/50 border border-slate-700"
+                        ? "bg-[#B22234]/10 border-2 border-[#B22234]/30 relative"
+                        : "bg-slate-50 border border-slate-700"
                     }`}
                   >
                     {calculations.recommendedStrategy === "rollover" && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                        <span className="bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
+                        <span className="bg-[#B22234] text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
                           RECOMMENDED
                         </span>
                       </div>
                     )}
-                    <h3 className="text-lg font-semibold text-white mb-4">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">
                       Regular Rollover
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Roll to IRA (Tax Deferred)</span>
+                        <span className="text-slate-500">Roll to IRA (Tax Deferred)</span>
                         <span className="text-slate-500">$0 now</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">
+                        <span className="text-slate-500">
                           Tax at Distribution (ordinary)
                         </span>
-                        <span className="text-red-400 font-semibold">
+                        <span className="text-red-600 font-semibold">
                           {formatCurrency(calculations.rolloverTax)}
                         </span>
                       </div>
-                      <div className="border-t border-white/10 pt-3 flex justify-between">
-                        <span className="text-white font-semibold">Total Tax</span>
-                        <span className="text-xl font-bold text-red-400">
+                      <div className="border-t border-slate-200 pt-3 flex justify-between">
+                        <span className="text-slate-900 font-semibold">Total Tax</span>
+                        <span className="text-xl font-bold text-red-600">
                           {formatCurrency(calculations.rolloverTax)}
                         </span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Effective Rate</span>
-                        <span className="text-slate-300">
+                        <span className="text-slate-500">Effective Rate</span>
+                        <span className="text-slate-600">
                           {calculations.rolloverEffectiveRate.toFixed(1)}%
                         </span>
                       </div>
@@ -664,19 +664,19 @@ export function NUACalculator() {
                 </div>
 
                 {/* Visual Comparison */}
-                <div className="bg-slate-800/50 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold text-white mb-4">
+                <div className="bg-slate-50 rounded-xl p-6">
+                  <h3 className="text-lg font-semibold text-slate-900 mb-4">
                     Tax Comparison
                   </h3>
                   <div className="space-y-4">
                     <div>
                       <div className="flex justify-between mb-2">
-                        <span className="text-slate-400">NUA Strategy</span>
-                        <span className="text-green-400 font-semibold">
+                        <span className="text-slate-500">NUA Strategy</span>
+                        <span className="text-green-600 font-semibold">
                           {formatCurrency(calculations.nuaTotalTax)}
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-700 rounded-full overflow-hidden">
+                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
                         <div
                           className="h-full bg-green-500 rounded-full"
                           style={{
@@ -694,12 +694,12 @@ export function NUACalculator() {
                     </div>
                     <div>
                       <div className="flex justify-between mb-2">
-                        <span className="text-slate-400">Regular Rollover</span>
-                        <span className="text-red-400 font-semibold">
+                        <span className="text-slate-500">Regular Rollover</span>
+                        <span className="text-red-600 font-semibold">
                           {formatCurrency(calculations.rolloverTax)}
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-700 rounded-full overflow-hidden">
+                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
                         <div className="h-full bg-red-500 rounded-full w-full" />
                       </div>
                     </div>
@@ -708,32 +708,32 @@ export function NUACalculator() {
               </div>
 
               {/* Position Summary */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-                <h3 className="text-xl font-bold text-white mb-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
+                <h3 className="text-xl font-bold text-[#000080] mb-6">
                   Your Stock Position
                 </h3>
                 <div className="grid md:grid-cols-4 gap-4">
-                  <div className="bg-slate-800/50 rounded-lg p-4 text-center">
-                    <p className="text-slate-400 text-sm">Shares</p>
-                    <p className="text-xl font-bold text-white">
+                  <div className="bg-slate-50 rounded-lg p-4 text-center">
+                    <p className="text-slate-600 text-sm">Shares</p>
+                    <p className="text-xl font-bold text-slate-900">
                       {calculations.totalShares.toLocaleString()}
                     </p>
                   </div>
-                  <div className="bg-slate-800/50 rounded-lg p-4 text-center">
-                    <p className="text-slate-400 text-sm">Cost Basis</p>
-                    <p className="text-xl font-bold text-amber-400">
+                  <div className="bg-slate-50 rounded-lg p-4 text-center">
+                    <p className="text-slate-600 text-sm">Cost Basis</p>
+                    <p className="text-xl font-bold text-[#B22234]">
                       {formatCurrency(calculations.costBasis)}
                     </p>
                   </div>
-                  <div className="bg-slate-800/50 rounded-lg p-4 text-center">
-                    <p className="text-slate-400 text-sm">Current Value</p>
-                    <p className="text-xl font-bold text-green-400">
+                  <div className="bg-slate-50 rounded-lg p-4 text-center">
+                    <p className="text-slate-600 text-sm">Current Value</p>
+                    <p className="text-xl font-bold text-green-600">
                       {formatCurrency(calculations.currentValue)}
                     </p>
                   </div>
-                  <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4 text-center">
-                    <p className="text-green-400 text-sm">Net Unrealized Appreciation</p>
-                    <p className="text-xl font-bold text-white">
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                    <p className="text-green-600 text-sm">Net Unrealized Appreciation</p>
+                    <p className="text-xl font-bold text-slate-900">
                       {formatCurrency(calculations.nua)}
                     </p>
                   </div>
@@ -741,13 +741,13 @@ export function NUACalculator() {
               </div>
 
               {/* Important NUA Rules */}
-              <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-amber-400 mb-4">
+              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#B22234] mb-4">
                   Critical NUA Rules
                 </h3>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-slate-600">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1 font-bold">1.</span>
+                    <span className="text-[#B22234] mt-1 font-bold">1.</span>
                     <span>
                       <strong>Triggering Event Required:</strong> You must have a
                       qualifying event - separation from service, reaching age 59 1/2,
@@ -755,21 +755,21 @@ export function NUACalculator() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1 font-bold">2.</span>
+                    <span className="text-[#B22234] mt-1 font-bold">2.</span>
                     <span>
                       <strong>Lump-Sum Distribution:</strong> You must take your entire
                       401(k) balance (not just the stock) within ONE calendar year.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1 font-bold">3.</span>
+                    <span className="text-[#B22234] mt-1 font-bold">3.</span>
                     <span>
                       <strong>No Partial NUA:</strong> You cannot do NUA on only some of
                       your employer stock - it is all or nothing for the NUA election.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1 font-bold">4.</span>
+                    <span className="text-[#B22234] mt-1 font-bold">4.</span>
                     <span>
                       <strong>Tax Timing:</strong> You pay ordinary income tax on the
                       cost basis immediately. LTCG on NUA is due when you sell the stock.
@@ -779,26 +779,26 @@ export function NUACalculator() {
               </div>
 
               {/* Gold IRA Bridge */}
-              <div className="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-amber-400 mb-3">
+              <div className="bg-[#B22234]/5 border border-[#B22234]/30 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#B22234] mb-3">
                   After Your NUA Distribution
                 </h3>
-                <p className="text-slate-300 mb-4">
+                <p className="text-slate-600 mb-4">
                   After taking advantage of NUA, you may have a concentrated position in
                   your former employer&apos;s stock. Consider diversifying a portion of
                   your proceeds into a Gold IRA to:
                 </p>
-                <ul className="space-y-2 text-slate-300 mb-4">
+                <ul className="space-y-2 text-slate-600 mb-4">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400">*</span>
+                    <span className="text-[#B22234]">*</span>
                     Reduce single-stock concentration risk
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400">*</span>
+                    <span className="text-[#B22234]">*</span>
                     Protect against market volatility with physical gold
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400">*</span>
+                    <span className="text-[#B22234]">*</span>
                     Hedge against inflation as you approach retirement
                   </li>
                 </ul>
@@ -816,13 +816,13 @@ export function NUACalculator() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={handleReset}
-                  className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                  className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                 >
                   Calculate Again
                 </button>
                 <Link
                   href="/guide/401k-to-gold-rollover"
-                  className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
+                  className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
                 >
                   401k Rollover Guide
                 </Link>

@@ -171,34 +171,30 @@ const whySilverReasons = [
 
 export default function SilverIraHubPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <Navbar />
 
             {/* Hero Section */}
-            <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
-                <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
-                    <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-500/10 rounded-full blur-[100px]" />
-                </div>
+            <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-500/20 border border-slate-400/30 rounded-full text-slate-300 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
                             <Coins className="h-4 w-4" />
                             SILVER IRA RESOURCE CENTER
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-6xl font-bold text-[#000080] mb-6">
                             Silver IRA Hub
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
                             Your complete resource for Silver IRA investing. Compare companies, understand IRS rules, learn about approved coins, and start protecting your retirement with physical silver.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button variant="gold" size="lg" asChild>
+                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Find Your Best Silver IRA Company <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="border-white/20 text-slate-300 hover:bg-white/10" asChild>
+                            <Button variant="outline" size="lg" className="border-slate-300 text-slate-700 hover:bg-slate-100" asChild>
                                 <Link href="/silver-ira/best-company">
                                     See Our #1 Pick
                                 </Link>
@@ -209,11 +205,11 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Why Silver Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-4">Why Consider Silver for Your IRA?</h2>
-                        <p className="text-slate-400 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-[#000080] mb-4">Why Consider Silver for Your IRA?</h2>
+                        <p className="text-slate-600 max-w-2xl mx-auto">
                             Silver offers unique advantages that make it an attractive addition to any precious metals portfolio.
                         </p>
                     </div>
@@ -221,13 +217,13 @@ export default function SilverIraHubPage() {
                         {whySilverReasons.map((reason, index) => (
                             <div
                                 key={index}
-                                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+                                className="bg-slate-50 border border-slate-200 rounded-xl p-6"
                             >
-                                <div className="w-10 h-10 bg-slate-500/20 rounded-lg flex items-center justify-center mb-4">
-                                    <CheckCircle2 className="h-5 w-5 text-slate-300" />
+                                <div className="w-10 h-10 bg-[#B22234]/10 rounded-lg flex items-center justify-center mb-4">
+                                    <CheckCircle2 className="h-5 w-5 text-[#B22234]" />
                                 </div>
-                                <h3 className="font-bold text-white mb-2">{reason.title}</h3>
-                                <p className="text-sm text-slate-400">{reason.description}</p>
+                                <h3 className="font-bold text-slate-900 mb-2">{reason.title}</h3>
+                                <p className="text-sm text-slate-600">{reason.description}</p>
                             </div>
                         ))}
                     </div>
@@ -235,12 +231,12 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Silver IRA Pages Grid */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl font-bold text-white mb-4">Explore Silver IRA Topics</h2>
-                            <p className="text-slate-400 max-w-2xl mx-auto">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-4">Explore Silver IRA Topics</h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
                                 Everything you need to make informed decisions about Silver IRA investing.
                             </p>
                         </div>
@@ -251,28 +247,28 @@ export default function SilverIraHubPage() {
                                     <Link
                                         key={page.href}
                                         href={page.href}
-                                        className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-slate-500/30 transition-all"
+                                        className="group bg-white border border-slate-200 rounded-xl p-6 hover:bg-slate-50 hover:border-slate-300 transition-all"
                                     >
                                         <div className="flex items-start gap-4">
-                                            <div className="w-12 h-12 bg-slate-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                                                <Icon className="h-6 w-6 text-slate-300" />
+                                            <div className="w-12 h-12 bg-[#000080]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                                <Icon className="h-6 w-6 text-[#000080]" />
                                             </div>
                                             <div className="flex-1">
                                                 <div className="flex items-center gap-2 mb-1">
-                                                    <h3 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
+                                                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">
                                                         {page.title}
                                                     </h3>
                                                     {page.badge && (
-                                                        <span className="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">
+                                                        <span className="px-2 py-0.5 bg-[#B22234]/10 text-[#B22234] text-xs font-semibold rounded-full">
                                                             {page.badge}
                                                         </span>
                                                     )}
                                                 </div>
-                                                <p className="text-slate-400 text-sm">
+                                                <p className="text-slate-600 text-sm">
                                                     {page.description}
                                                 </p>
                                             </div>
-                                            <ArrowRight className="h-5 w-5 text-slate-500 group-hover:text-amber-400 transition-colors flex-shrink-0" />
+                                            <ArrowRight className="h-5 w-5 text-slate-600 group-hover:text-[#B22234] transition-colors flex-shrink-0" />
                                         </div>
                                     </Link>
                                 );
@@ -283,10 +279,10 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Related Resources */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-2xl font-bold text-white text-center mb-8">
+                        <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
                             Related Silver Resources
                         </h2>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -294,12 +290,12 @@ export default function SilverIraHubPage() {
                                 <Link
                                     key={resource.href}
                                     href={resource.href}
-                                    className="group bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 hover:border-slate-500/30 transition-all"
+                                    className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-white hover:border-slate-300 transition-all"
                                 >
-                                    <h3 className="font-bold text-white text-sm mb-1 group-hover:text-amber-400 transition-colors">
+                                    <h3 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-[#B22234] transition-colors">
                                         {resource.title}
                                     </h3>
-                                    <p className="text-xs text-slate-400">{resource.description}</p>
+                                    <p className="text-xs text-slate-600">{resource.description}</p>
                                 </Link>
                             ))}
                         </div>
@@ -308,27 +304,27 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Quick Stats */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-white/10">
-                            <h2 className="text-2xl font-bold text-white text-center mb-8">Silver IRA Quick Facts</h2>
+                        <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                            <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">Silver IRA Quick Facts</h2>
                             <div className="grid md:grid-cols-4 gap-6 text-center">
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">.999</div>
-                                    <div className="text-sm text-slate-400">Minimum Purity Required</div>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">.999</div>
+                                    <div className="text-sm text-slate-600">Minimum Purity Required</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">$2K</div>
-                                    <div className="text-sm text-slate-400">Lowest Minimum Investment</div>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">$2K</div>
+                                    <div className="text-sm text-slate-600">Lowest Minimum Investment</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">80:1</div>
-                                    <div className="text-sm text-slate-400">Current Gold-Silver Ratio</div>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">80:1</div>
+                                    <div className="text-sm text-slate-600">Current Gold-Silver Ratio</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-amber-400 mb-2">50%+</div>
-                                    <div className="text-sm text-slate-400">Industrial Demand Share</div>
+                                    <div className="text-3xl font-bold text-[#B22234] mb-2">50%+</div>
+                                    <div className="text-sm text-slate-600">Industrial Demand Share</div>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +333,7 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <AugustaCTA
                         variant="footer"

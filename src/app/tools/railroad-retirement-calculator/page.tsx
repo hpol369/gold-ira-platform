@@ -114,26 +114,26 @@ const faqSchema = {
 
 export default function RailroadRetirementCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+        <div className="absolute inset-0 bg-slate-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
 
         <Container>
           <div className="relative max-w-4xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-[#B22234]/10 text-[#B22234] border border-[#B22234]/30 mb-4">
               <Train className="h-4 w-4" />
               Railroad Retirement Tool
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-4">
               Railroad Retirement Calculator
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Calculate your Railroad Retirement Board benefits including Tier I, Tier II,
               and spousal benefits. See how much more you get compared to Social Security.
             </p>
@@ -145,10 +145,10 @@ export default function RailroadRetirementCalculatorPage() {
       <RailroadRetirementCalculator />
 
       {/* Key Facts Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Railroad Retirement Benefits Explained
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -157,17 +157,17 @@ export default function RailroadRetirementCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-amber-400" />
+                      <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-[#B22234]" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">{fact.description}</p>
+                        <p className="text-slate-600 text-sm">{fact.description}</p>
                       </div>
                     </div>
                   </div>
@@ -179,93 +179,93 @@ export default function RailroadRetirementCalculatorPage() {
       </section>
 
       {/* Tier Explanation */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                <Calculator className="h-6 w-6 text-amber-400" />
+              <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
+                <Calculator className="h-6 w-6 text-[#B22234]" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Understanding the Two Tiers
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-blue-600 mb-4">
                   Tier I: Social Security Equivalent
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     Calculated like Social Security using combined railroad and
                     non-railroad earnings
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     Subject to Social Security wage base limits
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     Receives annual COLA adjustments
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     Early retirement reductions similar to SS (up to 30% at 62)
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-amber-400 mb-4">
+              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+                <h3 className="text-xl font-bold text-[#B22234] mb-4">
                   Tier II: Railroad Pension
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     Based only on railroad service and earnings
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     Formula: ~0.7% x years x highest 60-month average
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     This is the &quot;extra&quot; that railroad workers get
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-amber-400 mt-1">*</span>
+                    <span className="text-[#B22234] mt-1">*</span>
                     Full benefits at 60 with 30 years of service
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-slate-900 mb-4">
                 Sample Calculation
               </h3>
-              <div className="bg-slate-800 rounded-lg p-4 mb-4">
-                <p className="text-amber-400 font-mono text-sm">
+              <div className="bg-slate-100 rounded-lg p-4 mb-4">
+                <p className="text-[#B22234] font-mono text-sm">
                   30 years service | $7,000/month average earnings | Age 62
                 </p>
               </div>
               <div className="grid md:grid-cols-3 gap-4 text-center">
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <p className="text-slate-400 text-sm">Tier I (approx)</p>
-                  <p className="text-2xl font-bold text-blue-400">$2,800</p>
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <p className="text-slate-600 text-sm">Tier I (approx)</p>
+                  <p className="text-2xl font-bold text-blue-600">$2,800</p>
                 </div>
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <p className="text-slate-400 text-sm">Tier II (approx)</p>
-                  <p className="text-2xl font-bold text-amber-400">$1,470</p>
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <p className="text-slate-600 text-sm">Tier II (approx)</p>
+                  <p className="text-2xl font-bold text-[#B22234]">$1,470</p>
                 </div>
-                <div className="bg-amber-500/10 rounded-lg p-4">
-                  <p className="text-slate-400 text-sm">Total Monthly</p>
-                  <p className="text-2xl font-bold text-white">$4,270</p>
+                <div className="bg-[#B22234]/10 rounded-lg p-4">
+                  <p className="text-slate-600 text-sm">Total Monthly</p>
+                  <p className="text-2xl font-bold text-slate-900">$4,270</p>
                 </div>
               </div>
-              <p className="text-green-400 text-sm mt-4 text-center">
+              <p className="text-green-600 text-sm mt-4 text-center">
                 That is $1,470/month more than Social Security alone would provide!
               </p>
             </div>
@@ -274,54 +274,54 @@ export default function RailroadRetirementCalculatorPage() {
       </section>
 
       {/* Eligibility Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Railroad Retirement Eligibility
             </h2>
 
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-white/5 border-b border-white/10">
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
+                  <tr className="bg-slate-50 border-b border-slate-200">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">
                       Years of Service
                     </th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">
                       Earliest Full Retirement
                     </th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">
                       Notes
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/5">
-                    <td className="px-6 py-4 text-white font-medium">30+ years</td>
-                    <td className="px-6 py-4 text-amber-400 font-semibold">Age 60</td>
-                    <td className="px-6 py-4 text-slate-400 text-sm">
+                  <tr className="border-b border-slate-200">
+                    <td className="px-6 py-4 text-slate-900 font-medium">30+ years</td>
+                    <td className="px-6 py-4 text-[#B22234] font-semibold">Age 60</td>
+                    <td className="px-6 py-4 text-slate-600 text-sm">
                       Full Tier I and Tier II - no reductions
                     </td>
                   </tr>
-                  <tr className="border-b border-white/5 bg-white/[0.02]">
-                    <td className="px-6 py-4 text-white font-medium">10-29 years</td>
-                    <td className="px-6 py-4 text-slate-300">Age 62 (reduced) / 67 (full)</td>
-                    <td className="px-6 py-4 text-slate-400 text-sm">
+                  <tr className="border-b border-slate-200 bg-slate-50">
+                    <td className="px-6 py-4 text-slate-900 font-medium">10-29 years</td>
+                    <td className="px-6 py-4 text-slate-600">Age 62 (reduced) / 67 (full)</td>
+                    <td className="px-6 py-4 text-slate-600 text-sm">
                       Tier I follows SS rules, Tier II has own schedule
                     </td>
                   </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="px-6 py-4 text-white font-medium">5-9 years</td>
-                    <td className="px-6 py-4 text-slate-300">Age 62 (reduced)</td>
-                    <td className="px-6 py-4 text-slate-400 text-sm">
+                  <tr className="border-b border-slate-200">
+                    <td className="px-6 py-4 text-slate-900 font-medium">5-9 years</td>
+                    <td className="px-6 py-4 text-slate-600">Age 62 (reduced)</td>
+                    <td className="px-6 py-4 text-slate-600 text-sm">
                       May receive Tier I only; credits transfer to SS
                     </td>
                   </tr>
-                  <tr className="border-b border-white/5 bg-white/[0.02]">
-                    <td className="px-6 py-4 text-white font-medium">&lt;5 years</td>
-                    <td className="px-6 py-4 text-slate-300">N/A</td>
-                    <td className="px-6 py-4 text-slate-400 text-sm">
+                  <tr className="border-b border-slate-200 bg-slate-50">
+                    <td className="px-6 py-4 text-slate-900 font-medium">&lt;5 years</td>
+                    <td className="px-6 py-4 text-slate-600">N/A</td>
+                    <td className="px-6 py-4 text-slate-600 text-sm">
                       Credits transfer to Social Security
                     </td>
                   </tr>
@@ -333,10 +333,10 @@ export default function RailroadRetirementCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Railroad Retirement FAQ
             </h2>
 
@@ -365,16 +365,16 @@ export default function RailroadRetirementCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       ^
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -384,17 +384,17 @@ export default function RailroadRetirementCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates based on simplified formulas.
                     Actual Railroad Retirement benefits depend on your complete earnings
                     record, specific service history, and RRB calculations. For accurate
@@ -409,7 +409,7 @@ export default function RailroadRetirementCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -92,19 +92,19 @@ const schema = {
 
 export default function AreGoldIrasSafePage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Safety Analysis
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Are Gold IRAs Safe?
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             After decades of hard work building your 401k, you deserve straight answers. We investigate the legal structure, insurance protections, and real risks of holding gold in a retirement account.
                         </p>
                     </div>
@@ -119,7 +119,7 @@ export default function AreGoldIrasSafePage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -136,7 +136,7 @@ export default function AreGoldIrasSafePage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Is It Even Legal?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Is It Even Legal?</h2>
                             </div>
                             <p>
                                 100% yes. Congress specifically authorized precious metals in IRAs back in 1997 with the Taxpayer Relief Act. This isn&apos;t some loophole or gray area. It&apos;s a legitimate, IRS-recognized retirement strategy that millions of Americans use.
@@ -149,7 +149,7 @@ export default function AreGoldIrasSafePage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Building className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Gold Can&apos;t Go to Zero</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Gold Can&apos;t Go to Zero</h2>
                             </div>
                             <p>
                                 Here&apos;s something your broker probably never told you: every stock you own is a claim on a company. If that company goes bankrupt, your stock is worth zero. Happened to Enron. Happened to Lehman Brothers. Folks who worked 30 years at those companies lost everything in their 401ks overnight.
@@ -190,7 +190,7 @@ export default function AreGoldIrasSafePage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Real Danger: Scams</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Real Danger: Scams</h2>
                             </div>
                             <p>
                                 The Gold IRA structure is safe. The danger lies in <strong>bad dealers</strong>.
@@ -217,8 +217,8 @@ export default function AreGoldIrasSafePage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Work with Vetted Companies Only</h3>
                                 <p className="mb-6 text-gray-200">Avoid the scams. We've vetted the top Gold IRA companies for safety, insurance, and reputation.</p>
@@ -233,14 +233,14 @@ export default function AreGoldIrasSafePage() {
                             <h2>Safety FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                    <details key={index} className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                                 <ShieldCheck className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-400">
+                                        <p className="mt-4 leading-relaxed text-slate-600">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -255,7 +255,7 @@ export default function AreGoldIrasSafePage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-are-gold-iras-safe" />
                 </Container>

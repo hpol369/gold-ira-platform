@@ -123,7 +123,7 @@ const faqSchema = {
 
 export default function CharitableRemainderTrustCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -132,10 +132,10 @@ export default function CharitableRemainderTrustCalculatorPage() {
       <CharitableRemainderTrustCalculator />
 
       {/* CRT Benefits Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Why Consider a Charitable Remainder Trust?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -144,17 +144,17 @@ export default function CharitableRemainderTrustCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-purple-400" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {benefit.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {benefit.description}
                         </p>
                       </div>
@@ -168,29 +168,29 @@ export default function CharitableRemainderTrustCalculatorPage() {
       </section>
 
       {/* How CRTs Work */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
                 <Gift className="h-6 w-6 text-purple-400" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 How a Charitable Remainder Trust Works
               </h2>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
                     1
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
                       You Contribute Assets
                     </h3>
-                    <p className="text-slate-400">
+                    <p className="text-slate-500">
                       Transfer cash, securities, real estate, or other appreciated assets to an irrevocable
                       trust. You receive an immediate income tax deduction based on the present value of
                       the charitable remainder.
@@ -199,16 +199,16 @@ export default function CharitableRemainderTrustCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
                     2
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
                       Trust Sells &amp; Reinvests Tax-Free
                     </h3>
-                    <p className="text-slate-400">
+                    <p className="text-slate-500">
                       The trust can sell appreciated assets without paying capital gains tax immediately.
                       This allows 100% of the proceeds to be reinvested, generating more income for you
                       than if you sold personally and paid taxes first.
@@ -217,16 +217,16 @@ export default function CharitableRemainderTrustCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
                     3
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
                       You Receive Income Payments
                     </h3>
-                    <p className="text-slate-400">
+                    <p className="text-slate-500">
                       The trust pays you (and/or other income beneficiaries) a percentage of the trust
                       value annually. Payments continue for your lifetime or a term up to 20 years.
                       These payments are partially taxable depending on the trust&apos;s income sources.
@@ -235,16 +235,16 @@ export default function CharitableRemainderTrustCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
                     4
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
                       Charity Receives the Remainder
                     </h3>
-                    <p className="text-slate-400">
+                    <p className="text-slate-500">
                       When the trust terminates (at your death or end of term), the remaining assets
                       pass to your designated charity. You&apos;ve created a meaningful charitable legacy
                       while enjoying income during your lifetime.
@@ -258,37 +258,37 @@ export default function CharitableRemainderTrustCalculatorPage() {
       </section>
 
       {/* CRAT vs CRUT Deep Dive */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               CRAT vs CRUT: Which Is Right for You?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">
+                <h3 className="text-xl font-bold text-blue-600 mb-4">
                   CRAT (Charitable Remainder Annuity Trust)
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Fixed dollar payment each year (e.g., $30,000/year)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Predictable, stable income regardless of market performance</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>No additional contributions allowed after initial funding</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
                     <span>Higher remainder to charity if investments outperform payout</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                    <AlertTriangle className="h-4 w-4 text-[#B22234] mt-0.5 flex-shrink-0" />
                     <span>Risk: Trust could be depleted if investments underperform</span>
                   </li>
                 </ul>
@@ -303,7 +303,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
                 <h3 className="text-xl font-bold text-purple-400 mb-4">
                   CRUT (Charitable Remainder Unitrust)
                 </h3>
-                <ul className="space-y-3 text-slate-300 text-sm">
+                <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
                     <span>Fixed percentage of trust value each year (e.g., 5% of current value)</span>
@@ -321,7 +321,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
                     <span>Trust is revalued annually - payments adjust automatically</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                    <AlertTriangle className="h-4 w-4 text-[#B22234] mt-0.5 flex-shrink-0" />
                     <span>Income decreases in down market years</span>
                   </li>
                 </ul>
@@ -337,10 +337,10 @@ export default function CharitableRemainderTrustCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Charitable Remainder Trust FAQ
             </h2>
 
@@ -373,16 +373,16 @@ export default function CharitableRemainderTrustCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -392,17 +392,17 @@ export default function CharitableRemainderTrustCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates for educational purposes only. Actual charitable
                     deductions depend on current IRS Section 7520 rates, trust terms, and individual circumstances.
                     CRTs are complex legal instruments with significant tax and estate planning implications.
@@ -417,7 +417,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -55,20 +55,20 @@ export default function Robs401kRulesPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
             />
 
-            <main className="min-h-screen bg-slate-900">
+            <main className="min-h-screen bg-white">
                 {/* Hero Section */}
                 <section className="relative py-12 lg:py-16 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-white" />
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent" />
 
                     <Container className="relative z-10">
                         {/* Breadcrumb */}
-                        <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
-                            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                        <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6">
+                            <Link href="/" className="hover:text-[#000080] transition-colors">Home</Link>
                             <span>/</span>
-                            <Link href="/robs-401k" className="hover:text-white transition-colors">ROBS 401k</Link>
+                            <Link href="/robs-401k" className="hover:text-[#000080] transition-colors">ROBS 401k</Link>
                             <span>/</span>
-                            <span className="text-white">Rules & Compliance</span>
+                            <span className="text-[#000080]">Rules & Compliance</span>
                         </nav>
 
                         <div className="max-w-4xl">
@@ -77,12 +77,12 @@ export default function Robs401kRulesPage() {
                                 <span className="text-orange-400 text-sm font-medium">IRS Compliance Guide</span>
                             </div>
 
-                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000080] mb-6 leading-tight">
                                 ROBS 401k Rules:{" "}
                                 <span className="text-orange-400">What You Need to Know</span>
                             </h1>
 
-                            <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
+                            <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
                                 You've spent 30 years building your 401k. Now you're thinking about using it to start a business—maybe a franchise, maybe something you've always dreamed of doing. ROBS makes that possible without paying early withdrawal penalties. But the IRS has strict rules. Here's the straight talk on what you can and can't do.
                             </p>
 
@@ -108,12 +108,12 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Key Requirements */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-slate-50">
                     <Container>
-                        <h2 className="text-3xl font-bold text-white mb-4 text-center">
+                        <h2 className="text-3xl font-bold text-[#000080] mb-4 text-center">
                             The Non-Negotiable Requirements
                         </h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                             These aren't suggestions—they're requirements. Miss any of these, and you could owe taxes and penalties on your entire 401k. The IRS doesn't care that you didn't know.
                         </p>
 
@@ -158,7 +158,7 @@ export default function Robs401kRulesPage() {
                             ].map((rule, index) => (
                                 <div
                                     key={index}
-                                    className={`bg-white/5 backdrop-blur-sm border rounded-xl p-6 ${rule.important ? 'border-orange-500/30' : 'border-white/10'
+                                    className={`bg-slate-50 backdrop-blur-sm border rounded-xl p-6 ${rule.important ? 'border-orange-500/30' : 'border-slate-200'
                                         }`}
                                 >
                                     {rule.important && (
@@ -166,9 +166,9 @@ export default function Robs401kRulesPage() {
                                             Critical Requirement
                                         </div>
                                     )}
-                                    <rule.icon className={`w-8 h-8 mb-4 ${rule.important ? 'text-orange-400' : 'text-slate-400'}`} />
-                                    <h3 className="text-lg font-bold text-white mb-2">{rule.title}</h3>
-                                    <p className="text-slate-400 text-sm">{rule.description}</p>
+                                    <rule.icon className={`w-8 h-8 mb-4 ${rule.important ? 'text-orange-400' : 'text-slate-500'}`} />
+                                    <h3 className="text-lg font-bold text-[#000080] mb-2">{rule.title}</h3>
+                                    <p className="text-slate-500 text-sm">{rule.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -176,13 +176,13 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Prohibited Transactions */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-bold text-white mb-4 text-center">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-4 text-center">
                                 What Will Get You in Trouble
                             </h2>
-                            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                            <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                                 These are the things that get people audited and penalized. Some seem like common sense; others trip up people who don't know the rules. Do any of these, and you could lose the tax benefits on your entire 401k.
                             </p>
 
@@ -223,11 +223,11 @@ export default function Robs401kRulesPage() {
                                             description: "The retirement funds must purchase company stock first. You cannot use the funds directly before the stock purchase completes."
                                         }
                                     ].map((item, index) => (
-                                        <div key={index} className="flex items-start gap-4 bg-white/5 rounded-xl p-4">
+                                        <div key={index} className="flex items-start gap-4 bg-slate-50 rounded-xl p-4">
                                             <XCircle className="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" />
                                             <div>
-                                                <h4 className="text-white font-semibold mb-1">{item.title}</h4>
-                                                <p className="text-slate-400 text-sm">{item.description}</p>
+                                                <h4 className="text-[#000080] font-semibold mb-1">{item.title}</h4>
+                                                <p className="text-slate-500 text-sm">{item.description}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -238,13 +238,13 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Allowed Activities */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-slate-50">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-bold text-white mb-4 text-center">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-4 text-center">
                                 What You CAN Do with ROBS Funds
                             </h2>
-                            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                            <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                                 Once the 401(k) purchases company stock and the funds are in the C-Corporation,
                                 you can use them for legitimate business purposes.
                             </p>
@@ -272,7 +272,7 @@ export default function Robs401kRulesPage() {
                                     ].map((item, index) => (
                                         <div key={index} className="flex items-center gap-3">
                                             <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                                            <span className="text-slate-300">{item}</span>
+                                            <span className="text-slate-600">{item}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -282,10 +282,10 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Ongoing Compliance */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-bold text-white mb-8 text-center">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
                                 Ongoing Compliance Requirements
                             </h2>
 
@@ -322,11 +322,11 @@ export default function Robs401kRulesPage() {
                                         deadline: "Before annual filing"
                                     }
                                 ].map((item, index) => (
-                                    <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                    <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                                             <div className="flex-1">
-                                                <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                                                <p className="text-slate-400 text-sm">{item.description}</p>
+                                                <h3 className="text-lg font-bold text-[#000080] mb-2">{item.title}</h3>
+                                                <p className="text-slate-500 text-sm">{item.description}</p>
                                             </div>
                                             <div className="md:text-right">
                                                 <div className="text-xs text-slate-500 uppercase tracking-wide mb-1">Deadline</div>
@@ -341,13 +341,13 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Penalties Section */}
-                <section className="py-16 bg-slate-800/50">
+                <section className="py-16 bg-slate-50">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-bold text-white mb-4 text-center">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-4 text-center">
                                 Penalties for Non-Compliance
                             </h2>
-                            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                            <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
                                 Failure to follow ROBS rules can result in severe penalties from the IRS and DOL.
                             </p>
 
@@ -374,7 +374,7 @@ export default function Robs401kRulesPage() {
                                         severity: "Severe"
                                     }
                                 ].map((item, index) => (
-                                    <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                    <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                         <div className="flex items-center gap-2 mb-3">
                                             <span className={`text-xs font-bold px-2 py-1 rounded ${item.severity === 'Severe'
                                                     ? 'bg-red-500/20 text-red-400'
@@ -383,8 +383,8 @@ export default function Robs401kRulesPage() {
                                                 {item.severity}
                                             </span>
                                         </div>
-                                        <h3 className="text-lg font-bold text-white mb-2">{item.penalty}</h3>
-                                        <p className="text-slate-400 text-sm">{item.description}</p>
+                                        <h3 className="text-lg font-bold text-[#000080] mb-2">{item.penalty}</h3>
+                                        <p className="text-slate-500 text-sm">{item.description}</p>
                                     </div>
                                 ))}
                             </div>
@@ -393,13 +393,13 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Why Professional Help */}
-                <section className="py-16 bg-slate-900">
+                <section className="py-16 bg-white">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h2 className="text-3xl font-bold text-white mb-6">
+                            <h2 className="text-3xl font-bold text-[#000080] mb-6">
                                 Don't Risk Your Life Savings on DIY
                             </h2>
-                            <p className="text-lg text-slate-300 mb-8 leading-relaxed">
+                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                                 You've spent 30 years building your 401k. The wrong setup—one missed filing, one prohibited transaction—and you could owe taxes and penalties on the entire amount. This isn't where you cut corners. A good ROBS provider handles:
                             </p>
 
@@ -414,9 +414,9 @@ export default function Robs401kRulesPage() {
                                     "Annual stock revaluation",
                                     "Non-discrimination testing"
                                 ].map((item, index) => (
-                                    <div key={index} className="flex items-center gap-3 bg-white/5 rounded-lg p-3">
+                                    <div key={index} className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                                        <span className="text-slate-300 text-sm">{item}</span>
+                                        <span className="text-slate-600 text-sm">{item}</span>
                                     </div>
                                 ))}
                             </div>
@@ -443,9 +443,9 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Related Content */}
-                <section className="py-12 bg-slate-800/50">
+                <section className="py-12 bg-slate-50">
                     <Container>
-                        <h2 className="text-xl font-bold text-white mb-6 text-center">Related Resources</h2>
+                        <h2 className="text-xl font-bold text-[#000080] mb-6 text-center">Related Resources</h2>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
                             {[
@@ -457,12 +457,12 @@ export default function Robs401kRulesPage() {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                                    className="bg-slate-50 border border-slate-200 rounded-xl p-4 hover:bg-white/10 transition-colors group"
                                 >
-                                    <h3 className="text-white font-semibold mb-1 group-hover:text-orange-400 transition-colors text-sm">
+                                    <h3 className="text-[#000080] font-semibold mb-1 group-hover:text-orange-400 transition-colors text-sm">
                                         {link.title}
                                     </h3>
-                                    <p className="text-slate-400 text-xs">{link.desc}</p>
+                                    <p className="text-slate-500 text-xs">{link.desc}</p>
                                 </Link>
                             ))}
                         </div>

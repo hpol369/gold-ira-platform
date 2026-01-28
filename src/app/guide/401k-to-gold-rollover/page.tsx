@@ -99,21 +99,20 @@ const schema = {
 
 export default function RolloverGuidePage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
-                <Container className="relative z-10">
+            <header className="bg-slate-50 py-20 border-b border-slate-200">
+                <Container>
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-secondary mb-6 border border-white/10">
-                            <span className="w-2 h-2 rounded-full bg-secondary"></span>
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-[#B22234] mb-6 border border-[#B22234]/20">
+                            <span className="w-2 h-2 rounded-full bg-[#B22234]"></span>
                             Updated for 2026 IRS Rules
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#000080]">
                             401(k) to Gold IRA Rollover Guide 2026
                         </h1>
-                        <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
+                        <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
                             How to transfer your 401(k) to physical gold without paying taxes or penalties. Complete step-by-step instructions.
                         </p>
                     </div>
@@ -128,11 +127,11 @@ export default function RolloverGuidePage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-[#B22234] max-w-none">
 
                         {/* Intro Content */}
-                        <p className="lead text-xl text-slate-400">
-                            Thinking about moving your 401(k) into gold? You&apos;re not alone. With economic uncertainty and inflation concerns, millions of Americans are converting paper retirement assets into physical precious metals. This <strong>401(k) to gold IRA rollover guide</strong> shows you exactly how to do it—tax-free and penalty-free. For a quick overview, check out our <Link href="/guide/transfer-401k-to-gold" className="text-secondary hover:underline">simple transfer guide</Link>.
+                        <p className="lead text-xl text-slate-600">
+                            Thinking about moving your 401(k) into gold? You&apos;re not alone. With economic uncertainty and inflation concerns, millions of Americans are converting paper retirement assets into physical precious metals. This <strong>401(k) to gold IRA rollover guide</strong> shows you exactly how to do it—tax-free and penalty-free. For a quick overview, check out our <Link href="/guide/transfer-401k-to-gold" className="text-[#B22234] hover:underline">simple transfer guide</Link>.
                         </p>
 
                         <p>
@@ -145,7 +144,7 @@ export default function RolloverGuidePage() {
 
                         {/* Section 1: What is a Rollover */}
                         <section id="what-is-rollover" className="scroll-mt-32">
-                            <h2 className="text-white">What is a 401(k) to Gold IRA Rollover?</h2>
+                            <h2 className="text-[#000080]">What is a 401(k) to Gold IRA Rollover?</h2>
                             <p>
                                 A <strong>401(k) to gold IRA rollover</strong> is the process of transferring retirement funds from a traditional 401(k) (or similar employer-sponsored plan) into a self-directed IRA that can hold physical precious metals.
                             </p>
@@ -159,36 +158,36 @@ export default function RolloverGuidePage() {
                                 <li>Maintain the tax-advantaged status of your retirement savings</li>
                             </ul>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Accounts You Can Roll Over:</h4>
+                            <div className="bg-slate-100 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-[#000080] text-lg mb-4">Accounts You Can Roll Over:</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <span className="text-slate-300"><strong>401(k)</strong> — Traditional and Roth employer plans</span>
+                                        <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-600"><strong>401(k)</strong> — Traditional and Roth employer plans</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <span className="text-slate-300"><strong>403(b)</strong> — Non-profit and education sector plans</span>
+                                        <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-600"><strong>403(b)</strong> — Non-profit and education sector plans</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <span className="text-slate-300"><strong>457(b)</strong> — Government employee plans</span>
+                                        <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-600"><strong>457(b)</strong> — Government employee plans</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <span className="text-slate-300"><strong>TSP</strong> — Thrift Savings Plan (federal employees)</span>
+                                        <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-600"><strong>TSP</strong> — Thrift Savings Plan (federal employees)</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <span className="text-slate-300"><strong>Traditional IRA</strong> — Personal retirement accounts</span>
+                                        <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-600"><strong>Traditional IRA</strong> — Personal retirement accounts</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <span className="text-slate-300"><strong>SEP IRA</strong> — Self-employed retirement plans</span>
+                                        <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-600"><strong>SEP IRA</strong> — Self-employed retirement plans</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                                        <span className="text-slate-300"><strong>SIMPLE IRA</strong> — Small business plans (after 2 years)</span>
+                                        <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-600"><strong>SIMPLE IRA</strong> — Small business plans (after 2 years)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -196,43 +195,43 @@ export default function RolloverGuidePage() {
 
                         {/* Section 2: Direct vs Indirect */}
                         <section id="rollover-types" className="scroll-mt-32">
-                            <h2 className="text-white">Direct vs. Indirect Rollover: Which to Choose</h2>
+                            <h2 className="text-[#000080]">Direct vs. Indirect Rollover: Which to Choose</h2>
                             <p>
                                 Understanding the difference between <strong>direct and indirect rollovers</strong> is crucial. One is simple and risk-free; the other can trigger unexpected taxes.
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Factor</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Direct Rollover</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Indirect Rollover</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Factor</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Direct Rollover</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Indirect Rollover</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">How It Works</td>
+                                            <td className="p-4 font-semibold text-[#000080]">How It Works</td>
                                             <td className="p-4">Funds transfer directly between custodians</td>
                                             <td className="p-4">Check sent to you; you deposit in new IRA</td>
                                         </tr>
                                         <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Tax Withholding</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Tax Withholding</td>
                                             <td className="p-4">None</td>
                                             <td className="p-4">20% mandatory withholding</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Time Limit</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Time Limit</td>
                                             <td className="p-4">None</td>
                                             <td className="p-4">60 days to complete</td>
                                         </tr>
                                         <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Risk Level</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Risk Level</td>
                                             <td className="p-4 text-green-400 font-medium">Low</td>
                                             <td className="p-4 text-red-400 font-medium">High</td>
                                         </tr>
-                                        <tr className="bg-secondary/10">
-                                            <td className="p-4 font-bold text-white">Recommendation</td>
+                                        <tr className="bg-[#B22234]/10">
+                                            <td className="p-4 font-bold text-[#000080]">Recommendation</td>
                                             <td className="p-4 font-bold text-green-400">✓ Always choose this</td>
                                             <td className="p-4 font-bold text-red-400">✗ Avoid if possible</td>
                                         </tr>
@@ -240,7 +239,7 @@ export default function RolloverGuidePage() {
                                 </table>
                             </div>
 
-                            <h3 className="text-white">Why Direct Rollover is Better</h3>
+                            <h3 className="text-[#000080]">Why Direct Rollover is Better</h3>
                             <p>
                                 With a <strong>direct rollover</strong> (also called a trustee-to-trustee transfer), your old custodian sends funds directly to your new gold IRA custodian. You never touch the money, so:
                             </p>
@@ -258,54 +257,54 @@ export default function RolloverGuidePage() {
 
                         {/* Section 3: Eligibility */}
                         <section id="eligibility" className="scroll-mt-32">
-                            <h2 className="text-white">Eligibility Requirements</h2>
+                            <h2 className="text-[#000080]">Eligibility Requirements</h2>
                             <p>
                                 Not everyone can roll over their 401(k) at any time. Your <strong>eligibility for a gold IRA rollover</strong> depends on your employment status and plan rules:
                             </p>
 
                             <div className="not-prose my-8">
                                 <div className="space-y-4">
-                                    <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                         <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold shrink-0">
                                             <CheckCircle2 className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <strong className="block text-white text-lg">Left Your Employer</strong>
-                                            <p className="text-slate-400 mt-1">If you&apos;ve quit, retired, or been laid off, you have full control over your 401(k) and can roll it over to a gold IRA at any time. This is the most common scenario.</p>
+                                            <strong className="block text-[#000080] text-lg">Left Your Employer</strong>
+                                            <p className="text-slate-600 mt-1">If you&apos;ve quit, retired, or been laid off, you have full control over your 401(k) and can roll it over to a gold IRA at any time. This is the most common scenario.</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                         <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold shrink-0">
                                             <CheckCircle2 className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <strong className="block text-white text-lg">Age 59½ or Older (Still Employed)</strong>
-                                            <p className="text-slate-400 mt-1">Most 401(k) plans allow &quot;in-service distributions&quot; once you reach 59½, even if you&apos;re still working. Check with your HR department or plan administrator.</p>
+                                            <strong className="block text-[#000080] text-lg">Age 59½ or Older (Still Employed)</strong>
+                                            <p className="text-slate-600 mt-1">Most 401(k) plans allow &quot;in-service distributions&quot; once you reach 59½, even if you&apos;re still working. Check with your HR department or plan administrator.</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                    <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                         <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">
                                             <AlertTriangle className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <strong className="block text-white text-lg">Under 59½ and Still Employed</strong>
-                                            <p className="text-slate-400 mt-1">This is the trickiest scenario. Some plans allow in-service withdrawals; many don&apos;t. You&apos;ll need to check your specific plan rules. Even if rollovers aren&apos;t allowed, you can still roll over when you eventually leave.</p>
+                                            <strong className="block text-[#000080] text-lg">Under 59½ and Still Employed</strong>
+                                            <p className="text-slate-600 mt-1">This is the trickiest scenario. Some plans allow in-service withdrawals; many don&apos;t. You&apos;ll need to check your specific plan rules. Even if rollovers aren&apos;t allowed, you can still roll over when you eventually leave.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <h3 className="text-white">What About Old 401(k)s From Previous Jobs?</h3>
+                            <h3 className="text-[#000080]">What About Old 401(k)s From Previous Jobs?</h3>
                             <p>
                                 If you have 401(k) accounts from previous employers, you can roll them over at any time. Many people have forgotten 401(k)s sitting with old employers—these are excellent candidates for gold IRA rollovers.
                             </p>
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#000080] text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Roll Over Your 401(k)?</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Ready to Roll Over Your 401(k)?</h3>
                                 <p className="mb-6 text-gray-200">Find out which gold IRA company can handle your rollover with the lowest fees and best service.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find My Best Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
@@ -315,7 +314,7 @@ export default function RolloverGuidePage() {
 
                         {/* Section 4: Step-by-Step */}
                         <section id="step-by-step" className="scroll-mt-32">
-                            <h2 className="text-white">Step-by-Step: How to Roll Over Your 401(k) to Gold</h2>
+                            <h2 className="text-[#000080]">Step-by-Step: How to Roll Over Your 401(k) to Gold</h2>
                             <p>
                                 Here&apos;s the complete process for executing a <strong>401(k) to gold IRA rollover</strong>:
                             </p>
@@ -323,45 +322,45 @@ export default function RolloverGuidePage() {
                             <div className="not-prose my-8">
                                 <div className="space-y-6">
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">1</div>
                                         <div>
-                                            <h4 className="font-bold text-white text-lg">Choose a Gold IRA Company</h4>
-                                            <p className="text-slate-400 mt-1">Select a reputable precious metals dealer to guide you through the process. They&apos;ll handle most of the paperwork. Top choices include <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link> (best for $50k+) and <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> (best for smaller rollovers).</p>
+                                            <h4 className="font-bold text-[#000080] text-lg">Choose a Gold IRA Company</h4>
+                                            <p className="text-slate-600 mt-1">Select a reputable precious metals dealer to guide you through the process. They&apos;ll handle most of the paperwork. Top choices include <Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta Precious Metals</Link> (best for $50k+) and <Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> (best for smaller rollovers).</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">2</div>
                                         <div>
-                                            <h4 className="font-bold text-white text-lg">Open a Self-Directed IRA</h4>
-                                            <p className="text-slate-400 mt-1">Your gold IRA company will help you open an account with an IRS-approved custodian. This typically involves completing an application and providing identification. Most companies handle this within 24-48 hours.</p>
+                                            <h4 className="font-bold text-[#000080] text-lg">Open a Self-Directed IRA</h4>
+                                            <p className="text-slate-600 mt-1">Your gold IRA company will help you open an account with an IRS-approved custodian. This typically involves completing an application and providing identification. Most companies handle this within 24-48 hours.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">3</div>
                                         <div>
-                                            <h4 className="font-bold text-white text-lg">Request the Rollover</h4>
-                                            <p className="text-slate-400 mt-1">Your new custodian sends a rollover request to your 401(k) administrator. For a direct rollover, specify that funds should be sent to your new IRA custodian—not to you personally. Your gold IRA company typically handles this paperwork.</p>
+                                            <h4 className="font-bold text-[#000080] text-lg">Request the Rollover</h4>
+                                            <p className="text-slate-600 mt-1">Your new custodian sends a rollover request to your 401(k) administrator. For a direct rollover, specify that funds should be sent to your new IRA custodian—not to you personally. Your gold IRA company typically handles this paperwork.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">4</div>
                                         <div>
-                                            <h4 className="font-bold text-white text-lg">Wait for Fund Transfer</h4>
-                                            <p className="text-slate-400 mt-1">The transfer typically takes 1-3 weeks depending on your old plan administrator. Some plans process quickly; others take the full time. Your gold IRA company will track the progress and notify you when funds arrive.</p>
+                                            <h4 className="font-bold text-[#000080] text-lg">Wait for Fund Transfer</h4>
+                                            <p className="text-slate-600 mt-1">The transfer typically takes 1-3 weeks depending on your old plan administrator. Some plans process quickly; others take the full time. Your gold IRA company will track the progress and notify you when funds arrive.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">5</div>
                                         <div>
-                                            <h4 className="font-bold text-white text-lg">Select Your Precious Metals</h4>
-                                            <p className="text-slate-400 mt-1">Once funds are in your new IRA, work with your dealer to choose IRS-approved gold, silver, platinum, or palladium products. They&apos;ll explain options, premiums, and help you build a diversified metals portfolio.</p>
+                                            <h4 className="font-bold text-[#000080] text-lg">Select Your Precious Metals</h4>
+                                            <p className="text-slate-600 mt-1">Once funds are in your new IRA, work with your dealer to choose IRS-approved gold, silver, platinum, or palladium products. They&apos;ll explain options, premiums, and help you build a diversified metals portfolio.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">6</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">6</div>
                                         <div>
-                                            <h4 className="font-bold text-white text-lg">Purchase & Storage</h4>
-                                            <p className="text-slate-400 mt-1">Your dealer purchases the metals and ships them directly to an IRS-approved depository. You&apos;ll receive confirmation of your purchase and can view your holdings at any time. The metals are stored, insured, and held in your name.</p>
+                                            <h4 className="font-bold text-[#000080] text-lg">Purchase & Storage</h4>
+                                            <p className="text-slate-600 mt-1">Your dealer purchases the metals and ships them directly to an IRS-approved depository. You&apos;ll receive confirmation of your purchase and can view your holdings at any time. The metals are stored, insured, and held in your name.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -370,17 +369,17 @@ export default function RolloverGuidePage() {
 
                         {/* Section 5: Tax Rules */}
                         <section id="tax-rules" className="scroll-mt-32">
-                            <h2 className="text-white">Tax Rules & Penalties to Understand</h2>
+                            <h2 className="text-[#000080]">Tax Rules & Penalties to Understand</h2>
                             <p>
                                 Understanding the <strong>tax implications of a gold IRA rollover</strong> is essential to avoid costly mistakes:
                             </p>
 
-                            <h3 className="text-white">Tax-Free Rollovers</h3>
+                            <h3 className="text-[#000080]">Tax-Free Rollovers</h3>
                             <p>
                                 A properly executed direct rollover from a 401(k) to a gold IRA is <strong>completely tax-free</strong>. You&apos;re not withdrawing money—you&apos;re simply moving it from one qualified retirement account to another.
                             </p>
 
-                            <h3 className="text-white">Traditional to Roth Conversion</h3>
+                            <h3 className="text-[#000080]">Traditional to Roth Conversion</h3>
                             <p>
                                 If you want to convert a traditional 401(k) to a Roth Gold IRA, you&apos;ll owe income taxes on the converted amount. This can make sense if you expect to be in a higher tax bracket in retirement or want tax-free withdrawals later.
                             </p>
@@ -417,49 +416,49 @@ export default function RolloverGuidePage() {
 
                         {/* Section 6: Timeline */}
                         <section id="timeline" className="scroll-mt-32">
-                            <h2 className="text-white">Timeline: How Long Does a Rollover Take?</h2>
+                            <h2 className="text-[#000080]">Timeline: How Long Does a Rollover Take?</h2>
                             <p>
                                 The <strong>gold IRA rollover timeline</strong> typically spans 2-4 weeks from start to finish:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Step</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Typical Time</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Notes</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Step</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Typical Time</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Notes</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Choose company & open IRA</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Choose company & open IRA</td>
                                             <td className="p-4">1-3 days</td>
                                             <td className="p-4">Quick once you&apos;ve decided</td>
                                         </tr>
                                         <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Rollover paperwork</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Rollover paperwork</td>
                                             <td className="p-4">1-2 days</td>
                                             <td className="p-4">Dealer handles most of it</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Fund transfer</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Fund transfer</td>
                                             <td className="p-4">5-15 business days</td>
                                             <td className="p-4">Depends on old plan administrator</td>
                                         </tr>
                                         <tr className="bg-slate-800/30">
-                                            <td className="p-4 font-semibold text-white">Metal selection & purchase</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Metal selection & purchase</td>
                                             <td className="p-4">1-2 days</td>
                                             <td className="p-4">Once funds arrive</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Shipping to depository</td>
+                                            <td className="p-4 font-semibold text-[#000080]">Shipping to depository</td>
                                             <td className="p-4">3-7 days</td>
                                             <td className="p-4">Fully insured shipping</td>
                                         </tr>
-                                        <tr className="bg-secondary/10">
-                                            <td className="p-4 font-bold text-white">Total</td>
-                                            <td className="p-4 font-bold text-white">2-4 weeks</td>
+                                        <tr className="bg-[#B22234]/10">
+                                            <td className="p-4 font-bold text-[#000080]">Total</td>
+                                            <td className="p-4 font-bold text-[#000080]">2-4 weeks</td>
                                             <td className="p-4">Most time is fund transfer</td>
                                         </tr>
                                     </tbody>
@@ -473,7 +472,7 @@ export default function RolloverGuidePage() {
 
                         {/* Section 7: Mistakes */}
                         <section id="mistakes" className="scroll-mt-32">
-                            <h2 className="text-white">Common Rollover Mistakes to Avoid</h2>
+                            <h2 className="text-[#000080]">Common Rollover Mistakes to Avoid</h2>
                             <p>
                                 These <strong>gold IRA rollover mistakes</strong> can cost you thousands in taxes and penalties:
                             </p>
@@ -511,7 +510,7 @@ export default function RolloverGuidePage() {
                                     <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-400">Ignoring Fees</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Gold IRAs have fees that standard IRAs don&apos;t (storage, custodian). Make sure you understand all fees before proceeding. See our <Link href="/guide/gold-ira-fees" className="text-secondary hover:underline">fee guide</Link> for details.</p>
+                                        <p className="text-sm text-amber-300 mt-1">Gold IRAs have fees that standard IRAs don&apos;t (storage, custodian). Make sure you understand all fees before proceeding. See our <Link href="/guide/gold-ira-fees" className="text-[#B22234] hover:underline">fee guide</Link> for details.</p>
                                     </div>
                                 </div>
                             </div>
@@ -519,12 +518,12 @@ export default function RolloverGuidePage() {
 
                         {/* 403(b) and TSP Section */}
                         <section id="other-accounts" className="scroll-mt-32">
-                            <h2 className="text-white">403(b) and TSP Rollovers to Gold</h2>
+                            <h2 className="text-[#000080]">403(b) and TSP Rollovers to Gold</h2>
                             <p>
                                 Not everyone has a 401(k). If you work for a school, hospital, nonprofit, or the federal government, you might have a 403(b) or Thrift Savings Plan (TSP) instead. Good news: the rollover process is essentially the same.
                             </p>
 
-                            <h3 className="text-white">403(b) to Gold IRA Rollover</h3>
+                            <h3 className="text-[#000080]">403(b) to Gold IRA Rollover</h3>
                             <p>
                                 A 403(b) is the nonprofit and education sector&apos;s version of the 401(k). Teachers, nurses, university employees, and nonprofit workers typically have these accounts. Rolling over a 403(b) to a Gold IRA works exactly like a 401(k) rollover:
                             </p>
@@ -538,7 +537,7 @@ export default function RolloverGuidePage() {
                                 The only difference: 403(b) plans sometimes have unique provisions or annuity components that can complicate the process. Your Gold IRA company will help navigate these.
                             </p>
 
-                            <h3 className="text-white">TSP to Gold IRA Rollover (Federal Employees)</h3>
+                            <h3 className="text-[#000080]">TSP to Gold IRA Rollover (Federal Employees)</h3>
                             <p>
                                 If you work for the federal government or military, your retirement savings are in the Thrift Savings Plan (TSP). The TSP is actually one of the best retirement plans available—ultra-low fees and solid investment options.
                             </p>
@@ -559,92 +558,92 @@ export default function RolloverGuidePage() {
 
                         {/* FAQ Section */}
                         <section id="faq" className="scroll-mt-32">
-                            <h2 className="text-white">401(k) to Gold Rollover FAQs</h2>
+                            <h2 className="text-[#000080]">401(k) to Gold Rollover FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Can I rollover my 401(k) while still employed?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         It depends on your plan and age. Most plans allow &quot;in-service distributions&quot; once you reach 59½. Some plans allow them earlier. Check with your HR department or plan administrator. If your current plan doesn&apos;t allow it, you can roll over 401(k)s from previous employers at any time.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Will I pay taxes on a 401(k) to gold IRA rollover?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         No, a direct rollover from a traditional 401(k) to a traditional gold IRA is completely tax-free. You&apos;re simply moving retirement funds between qualified accounts. However, if you convert to a Roth gold IRA, you&apos;ll owe taxes on the converted amount.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">How much of my 401(k) should I roll into gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Most financial advisors recommend allocating 10-20% of your retirement portfolio to precious metals. This provides meaningful protection without over-concentrating in a single asset class. You can roll over a portion of your 401(k) to gold while leaving the rest in traditional investments.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Can I roll over a Roth 401(k) to a gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Yes! A Roth 401(k) can be rolled over to a Roth gold IRA, and a traditional 401(k) can be rolled over to a traditional gold IRA—both tax-free. You can also convert a traditional 401(k) to a Roth gold IRA, but you&apos;ll owe taxes on the conversion.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What&apos;s the minimum amount I can roll over?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
-                                        There&apos;s no IRS minimum, but gold IRA companies have their own minimums. <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> accepts as little as $2,000. <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> starts at $25,000. <Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link> requires $50,000+. Choose a company based on your investment amount.
+                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                        There&apos;s no IRS minimum, but gold IRA companies have their own minimums. <Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> accepts as little as $2,000. <Link href="/reviews/goldco" className="text-[#B22234] hover:underline">Goldco</Link> starts at $25,000. <Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta Precious Metals</Link> requires $50,000+. Choose a company based on your investment amount.
                                     </p>
                                 </details>
                             </div>
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Roll Over Your 401(k)?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">Ready to Roll Over Your 401(k)?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find the best gold IRA company for your rollover amount. Our quiz matches you with companies based on your specific needs.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find My Best Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#000080] hover:bg-slate-200">
                                         <Link href="/reviews">Compare All Companies</Link>
                                     </Button>
                                 </div>
@@ -658,7 +657,7 @@ export default function RolloverGuidePage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <AugustaCTA variant="footer" linkContext="fees" trackSource="guide-401k-to-gold-rollover" />
                 </Container>

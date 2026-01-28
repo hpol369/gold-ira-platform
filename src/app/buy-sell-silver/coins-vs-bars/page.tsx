@@ -212,20 +212,20 @@ const schema = {
 
 export default function CoinsVsBarsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
             <Link
               href="/buy-sell-silver"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
@@ -234,10 +234,10 @@ export default function CoinsVsBarsPage() {
               <Scale className="h-4 w-4" />
               80 MONTHLY SEARCHES - DIFF 0
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Silver Coins vs Bars
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
               The coins vs bars debate has a simple answer: you should own both.
               But the ratio depends on your experience level, portfolio size, and goals.
               Here&apos;s how to think about it.
@@ -247,68 +247,68 @@ export default function CoinsVsBarsPage() {
       </section>
 
       {/* Quick Answer */}
-      <section className="py-8 bg-amber-500/10 border-y border-amber-500/30">
+      <section className="py-8 bg-[#B22234]/10 border-y border-[#B22234]/30">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-xl font-bold text-amber-400 mb-4">Quick Answer</h2>
-            <p className="text-slate-300">
-              <strong className="text-white">Start with coins</strong> for liquidity and recognition.
-              <strong className="text-white"> Add bars</strong> as your stack grows to reduce premiums.
-              <strong className="text-white"> Most investors should hold both</strong> - coins for liquidity, bars for cost efficiency.
+            <h2 className="text-xl font-bold text-[#B22234] mb-4">Quick Answer</h2>
+            <p className="text-slate-600">
+              <strong className="text-slate-900">Start with coins</strong> for liquidity and recognition.
+              <strong className="text-slate-900"> Add bars</strong> as your stack grows to reduce premiums.
+              <strong className="text-slate-900"> Most investors should hold both</strong> - coins for liquidity, bars for cost efficiency.
             </p>
           </div>
         </Container>
       </section>
 
       {/* Visual Comparison */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Coins */}
-            <div className="bg-amber-500/10 backdrop-blur-sm border border-amber-500/30 rounded-2xl p-8">
+            <div className="bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/30 rounded-2xl p-8">
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-amber-500/20 rounded-xl">
-                  <Coins className="w-8 h-8 text-amber-400" />
+                <div className="p-3 bg-[#B22234]/20 rounded-xl">
+                  <Coins className="w-8 h-8 text-[#B22234]" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Silver Coins</h3>
+                <h3 className="text-2xl font-bold text-slate-900">Silver Coins</h3>
               </div>
 
               <ul className="space-y-3 mb-6">
                 {coinsAdvantages.map((adv, index) => (
-                  <li key={index} className="flex items-start gap-3 text-slate-300">
+                  <li key={index} className="flex items-start gap-3 text-slate-600">
                     <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <span>{adv}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="bg-white/5 rounded-lg p-4 text-sm">
-                <span className="text-amber-400 font-bold">Best For:</span>
-                <span className="text-slate-300"> Beginners, liquidity, easy selling, IRA holdings</span>
+              <div className="bg-slate-50 rounded-lg p-4 text-sm">
+                <span className="text-[#B22234] font-bold">Best For:</span>
+                <span className="text-slate-600"> Beginners, liquidity, easy selling, IRA holdings</span>
               </div>
             </div>
 
             {/* Bars */}
-            <div className="bg-slate-400/10 backdrop-blur-sm border border-slate-400/30 rounded-2xl p-8">
+            <div className="bg-[#B22234]/10 backdrop-blur-sm border border-slate-300 rounded-2xl p-8">
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-slate-400/20 rounded-xl">
-                  <SquareStack className="w-8 h-8 text-slate-300" />
+                <div className="p-3 bg-[#B22234]/10 rounded-xl">
+                  <SquareStack className="w-8 h-8 text-slate-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Silver Bars</h3>
+                <h3 className="text-2xl font-bold text-slate-900">Silver Bars</h3>
               </div>
 
               <ul className="space-y-3 mb-6">
                 {barsAdvantages.map((adv, index) => (
-                  <li key={index} className="flex items-start gap-3 text-slate-300">
+                  <li key={index} className="flex items-start gap-3 text-slate-600">
                     <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <span>{adv}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="bg-white/5 rounded-lg p-4 text-sm">
-                <span className="text-slate-300 font-bold">Best For:</span>
-                <span className="text-slate-300"> Experienced stackers, large purchases, maximum ounces</span>
+              <div className="bg-slate-50 rounded-lg p-4 text-sm">
+                <span className="text-slate-600 font-bold">Best For:</span>
+                <span className="text-slate-600"> Experienced stackers, large purchases, maximum ounces</span>
               </div>
             </div>
           </div>
@@ -316,36 +316,36 @@ export default function CoinsVsBarsPage() {
       </section>
 
       {/* Detailed Comparison Table */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Head-to-Head Comparison
             </h2>
             <div className="overflow-x-auto">
-              <table className="w-full bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                <thead className="bg-slate-800/50">
+              <table className="w-full bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                <thead className="bg-slate-50">
                   <tr>
-                    <th className="text-left p-4 text-white font-bold">Factor</th>
-                    <th className="text-center p-4 text-amber-400 font-bold">Coins</th>
-                    <th className="text-center p-4 text-slate-300 font-bold">Bars</th>
-                    <th className="text-center p-4 text-white font-bold">Winner</th>
+                    <th className="text-left p-4 text-slate-900 font-bold">Factor</th>
+                    <th className="text-center p-4 text-[#B22234] font-bold">Coins</th>
+                    <th className="text-center p-4 text-slate-600 font-bold">Bars</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Winner</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/10">
+                <tbody className="divide-y divide-slate-200">
                   {comparisonFactors.map((row, index) => (
                     <tr key={index}>
                       <td className="p-4">
-                        <span className="font-semibold text-white">{row.factor}</span>
-                        <p className="text-slate-500 text-xs mt-1">{row.explanation}</p>
+                        <span className="font-semibold text-slate-900">{row.factor}</span>
+                        <p className="text-slate-600 text-xs mt-1">{row.explanation}</p>
                       </td>
-                      <td className="p-4 text-center text-slate-300 text-sm">{row.coins}</td>
-                      <td className="p-4 text-center text-slate-300 text-sm">{row.bars}</td>
+                      <td className="p-4 text-center text-slate-600 text-sm">{row.coins}</td>
+                      <td className="p-4 text-center text-slate-600 text-sm">{row.bars}</td>
                       <td className="p-4 text-center">
                         <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                          row.winner === "coins" ? "bg-amber-500/20 text-amber-400" :
-                          row.winner === "bars" ? "bg-slate-400/20 text-slate-300" :
-                          "bg-white/10 text-slate-400"
+                          row.winner === "coins" ? "bg-[#B22234]/20 text-[#B22234]" :
+                          row.winner === "bars" ? "bg-[#B22234]/10 text-slate-600" :
+                          "bg-slate-100 text-slate-600"
                         }`}>
                           {row.winner === "coins" ? "Coins" : row.winner === "bars" ? "Bars" : "Tie"}
                         </span>
@@ -360,30 +360,30 @@ export default function CoinsVsBarsPage() {
       </section>
 
       {/* Recommendations by Portfolio Size */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Recommended Mix by Portfolio Size
             </h2>
             <div className="space-y-4">
               {recommendations.map((rec, index) => {
                 const Icon = rec.icon;
                 return (
-                  <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                  <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                     <div className="flex flex-col md:flex-row md:items-center gap-4">
                       <div className="flex items-center gap-4 md:w-48 flex-shrink-0">
-                        <div className="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center">
-                          <Icon className="h-5 w-5 text-amber-400" />
+                        <div className="w-10 h-10 bg-[#B22234]/20 rounded-lg flex items-center justify-center">
+                          <Icon className="h-5 w-5 text-[#B22234]" />
                         </div>
-                        <span className="text-white font-bold">{rec.portfolio}</span>
+                        <span className="text-slate-900 font-bold">{rec.portfolio}</span>
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col md:flex-row md:items-center gap-4">
-                          <span className="text-amber-400 font-bold text-lg md:w-48">
+                          <span className="text-[#B22234] font-bold text-lg md:w-48">
                             {rec.recommendation}
                           </span>
-                          <p className="text-slate-400 text-sm">{rec.reasoning}</p>
+                          <p className="text-slate-600 text-sm">{rec.reasoning}</p>
                         </div>
                       </div>
                     </div>
@@ -396,27 +396,27 @@ export default function CoinsVsBarsPage() {
       </section>
 
       {/* Popular Products */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Popular Products
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Coins */}
               <div>
-                <h3 className="text-lg font-bold text-amber-400 mb-4 flex items-center gap-2">
+                <h3 className="text-lg font-bold text-[#B22234] mb-4 flex items-center gap-2">
                   <Coins className="h-5 w-5" />
                   Top Silver Coins
                 </h3>
                 <div className="space-y-3">
                   {popularProducts.coins.map((coin, index) => (
-                    <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4">
+                    <div key={index} className="bg-slate-50 border border-slate-200 rounded-lg p-4">
                       <div className="flex justify-between items-start mb-1">
-                        <span className="font-bold text-white">{coin.name}</span>
-                        <span className="text-amber-400 text-sm">{coin.premium}</span>
+                        <span className="font-bold text-slate-900">{coin.name}</span>
+                        <span className="text-[#B22234] text-sm">{coin.premium}</span>
                       </div>
-                      <p className="text-slate-500 text-xs">{coin.notes}</p>
+                      <p className="text-slate-600 text-xs">{coin.notes}</p>
                     </div>
                   ))}
                 </div>
@@ -424,18 +424,18 @@ export default function CoinsVsBarsPage() {
 
               {/* Bars */}
               <div>
-                <h3 className="text-lg font-bold text-slate-300 mb-4 flex items-center gap-2">
+                <h3 className="text-lg font-bold text-slate-600 mb-4 flex items-center gap-2">
                   <SquareStack className="h-5 w-5" />
                   Top Silver Bars
                 </h3>
                 <div className="space-y-3">
                   {popularProducts.bars.map((bar, index) => (
-                    <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4">
+                    <div key={index} className="bg-slate-50 border border-slate-200 rounded-lg p-4">
                       <div className="flex justify-between items-start mb-1">
-                        <span className="font-bold text-white">{bar.name}</span>
+                        <span className="font-bold text-slate-900">{bar.name}</span>
                         <span className="text-green-400 text-sm">{bar.premium}</span>
                       </div>
-                      <p className="text-slate-500 text-xs">{bar.notes}</p>
+                      <p className="text-slate-600 text-xs">{bar.notes}</p>
                     </div>
                   ))}
                 </div>
@@ -446,25 +446,25 @@ export default function CoinsVsBarsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -475,30 +475,30 @@ export default function CoinsVsBarsPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
-          <h2 className="text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/buy-sell-silver/best-coins-to-buy" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Best Coins to Buy</h3>
-              <p className="text-sm text-slate-400">Top picks for investors</p>
+            <Link href="/buy-sell-silver/best-coins-to-buy" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Best Coins to Buy</h3>
+              <p className="text-sm text-slate-600">Top picks for investors</p>
             </Link>
-            <Link href="/buy-sell-silver/stacking-beginners" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Stacking for Beginners</h3>
-              <p className="text-sm text-slate-400">How to start your stack</p>
+            <Link href="/buy-sell-silver/stacking-beginners" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Stacking for Beginners</h3>
+              <p className="text-sm text-slate-600">How to start your stack</p>
             </Link>
-            <Link href="/learn/silver-coins-vs-bars" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">In-Depth Comparison</h3>
-              <p className="text-sm text-slate-400">Extended analysis for IRA holders</p>
+            <Link href="/learn/silver-coins-vs-bars" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">In-Depth Comparison</h3>
+              <p className="text-sm text-slate-600">Extended analysis for IRA holders</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -116,19 +116,19 @@ const schema = {
 
 export default function IsSilverGoodInvestmentPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="text-slate-400 font-bold tracking-widest uppercase text-xs mb-4 block">
+                        <span className="text-slate-600 font-bold tracking-widest uppercase text-xs mb-4 block">
                             Silver Investment Guide
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Is Silver a Good Investment?
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             Silver isn&apos;t just &quot;poor man&apos;s gold.&quot; It&apos;s got industrial demand that gold doesn&apos;t have. Here&apos;s whether it makes sense for your retirement portfolio.
                         </p>
                     </div>
@@ -143,7 +143,7 @@ export default function IsSilverGoodInvestmentPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -163,35 +163,35 @@ export default function IsSilverGoodInvestmentPage() {
                         {/* Bull Case */}
                         <section id="bull-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-400/20 rounded-lg text-slate-300">
+                                <div className="p-3 bg-[#B22234]/10 rounded-lg text-slate-600">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Bull Case for Silver</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Bull Case for Silver</h2>
                             </div>
                             <p>
                                 Silver bulls point to several factors that could drive prices higher:
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <Scale className="w-8 h-8 text-slate-300 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Undervalued vs Gold</h4>
-                                    <p className="text-sm text-slate-400">The silver-to-gold ratio has been historically elevated, suggesting silver may be cheap relative to gold. When this ratio normalizes, silver typically outperforms.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <Scale className="w-8 h-8 text-slate-600 mb-4" />
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Undervalued vs Gold</h4>
+                                    <p className="text-sm text-slate-600">The silver-to-gold ratio has been historically elevated, suggesting silver may be cheap relative to gold. When this ratio normalizes, silver typically outperforms.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <Factory className="w-8 h-8 text-slate-300 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Industrial Demand Growth</h4>
-                                    <p className="text-sm text-slate-400">Solar panel production is exploding, and each panel requires silver. Electric vehicles, 5G networks, and electronics all need silver. Demand is growing while supply plateaus.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <Factory className="w-8 h-8 text-slate-600 mb-4" />
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Industrial Demand Growth</h4>
+                                    <p className="text-sm text-slate-600">Solar panel production is exploding, and each panel requires silver. Electric vehicles, 5G networks, and electronics all need silver. Demand is growing while supply plateaus.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <Coins className="w-8 h-8 text-slate-300 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Monetary Demand</h4>
-                                    <p className="text-sm text-slate-400">Like gold, silver is a monetary metal. When investors lose faith in paper currencies, they turn to precious metals. Silver benefits from the same macro trends driving gold.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <Coins className="w-8 h-8 text-slate-600 mb-4" />
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Monetary Demand</h4>
+                                    <p className="text-sm text-slate-600">Like gold, silver is a monetary metal. When investors lose faith in paper currencies, they turn to precious metals. Silver benefits from the same macro trends driving gold.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <BarChart3 className="w-8 h-8 text-slate-300 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Supply Constraints</h4>
-                                    <p className="text-sm text-slate-400">Most silver is mined as a byproduct of other metals. When base metal mining slows, silver supply drops. Meanwhile, above-ground silver stockpiles have declined significantly.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <BarChart3 className="w-8 h-8 text-slate-600 mb-4" />
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Supply Constraints</h4>
+                                    <p className="text-sm text-slate-600">Most silver is mined as a byproduct of other metals. When base metal mining slows, silver supply drops. Meanwhile, above-ground silver stockpiles have declined significantly.</p>
                                 </div>
                             </div>
 
@@ -206,7 +206,7 @@ export default function IsSilverGoodInvestmentPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Zap className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Industrial Demand: Silver&apos;s Secret Weapon</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Industrial Demand: Silver&apos;s Secret Weapon</h2>
                             </div>
                             <p>
                                 Unlike gold, which is mostly used for jewelry and investment, over 50% of silver demand comes from industrial applications:
@@ -222,42 +222,42 @@ export default function IsSilverGoodInvestmentPage() {
                                 This industrial demand creates a &quot;floor&quot; for silver prices that gold doesn&apos;t have. Even if investment demand drops, industrial users still need silver. And as green energy adoption accelerates, this industrial demand should continue growing.
                             </p>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Silver Demand Breakdown (2024)</h4>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Silver Demand Breakdown (2024)</h4>
                                 <div className="space-y-4">
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Industrial Applications</span>
-                                            <span className="text-white font-bold">54%</span>
+                                            <span className="text-slate-600">Industrial Applications</span>
+                                            <span className="text-slate-900 font-bold">54%</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-slate-400 h-3 rounded-full" style={{ width: '54%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Jewelry</span>
-                                            <span className="text-white font-bold">17%</span>
+                                            <span className="text-slate-600">Jewelry</span>
+                                            <span className="text-slate-900 font-bold">17%</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-amber-400 h-3 rounded-full" style={{ width: '17%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Investment (Coins & Bars)</span>
-                                            <span className="text-white font-bold">18%</span>
+                                            <span className="text-slate-600">Investment (Coins & Bars)</span>
+                                            <span className="text-slate-900 font-bold">18%</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-green-400 h-3 rounded-full" style={{ width: '18%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Silverware & Other</span>
-                                            <span className="text-white font-bold">11%</span>
+                                            <span className="text-slate-600">Silverware & Other</span>
+                                            <span className="text-slate-900 font-bold">11%</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-blue-400 h-3 rounded-full" style={{ width: '11%' }}></div>
                                         </div>
                                     </div>
@@ -268,10 +268,10 @@ export default function IsSilverGoodInvestmentPage() {
                         {/* Silver-to-Gold Ratio */}
                         <section id="silver-gold-ratio" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Silver-to-Gold Ratio</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Silver-to-Gold Ratio</h2>
                             </div>
                             <p>
                                 The silver-to-gold ratio tells you how many ounces of silver it takes to buy one ounce of gold. This ratio is one of the most important tools for silver investors.
@@ -295,12 +295,12 @@ export default function IsSilverGoodInvestmentPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose border border-white/10">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want to Own Real Silver in Your Retirement?</h3>
-                                <p className="mb-6 text-slate-300">A Silver IRA holds actual silver bars and coins in a vault with your name on it. Same tax benefits as your regular IRA.</p>
-                                <Button variant="gold" size="lg" asChild>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Want to Own Real Silver in Your Retirement?</h3>
+                                <p className="mb-6 text-slate-600">A Silver IRA holds actual silver bars and coins in a vault with your name on it. Same tax benefits as your regular IRA.</p>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                     <Link href="/best-silver-ira-companies">Compare Silver IRA Companies <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -312,7 +312,7 @@ export default function IsSilverGoodInvestmentPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Risks to Consider</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Risks to Consider</h2>
                             </div>
                             <p>
                                 Silver investing isn&apos;t without risks. Before investing, understand these potential downsides:
@@ -336,43 +336,43 @@ export default function IsSilverGoodInvestmentPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Invest in Silver</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">How to Invest in Silver</h2>
                             </div>
                             <p>
                                 There are several ways to gain exposure to silver:
                             </p>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <h4 className="font-bold text-white text-lg mb-2">Physical Silver (Coins & Bars)</h4>
-                                    <p className="text-sm text-slate-400 mb-3">Direct ownership of silver coins (like American Silver Eagles) or bars. You own the metal itself, with no counterparty risk.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Physical Silver (Coins & Bars)</h4>
+                                    <p className="text-sm text-slate-600 mb-3">Direct ownership of silver coins (like American Silver Eagles) or bars. You own the metal itself, with no counterparty risk.</p>
                                     <div className="flex gap-4 text-xs">
                                         <span className="text-green-400">+ True ownership</span>
                                         <span className="text-red-400">- Storage & premiums</span>
                                     </div>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <h4 className="font-bold text-white text-lg mb-2">Silver ETFs</h4>
-                                    <p className="text-sm text-slate-400 mb-3">Exchange-traded funds like SLV that track the silver price. Easy to buy/sell through a brokerage account.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Silver ETFs</h4>
+                                    <p className="text-sm text-slate-600 mb-3">Exchange-traded funds like SLV that track the silver price. Easy to buy/sell through a brokerage account.</p>
                                     <div className="flex gap-4 text-xs">
                                         <span className="text-green-400">+ Liquidity & convenience</span>
                                         <span className="text-red-400">- Counterparty risk</span>
                                     </div>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <h4 className="font-bold text-white text-lg mb-2">Silver Mining Stocks</h4>
-                                    <p className="text-sm text-slate-400 mb-3">Shares in companies that mine silver. Offers leverage to silver prices but adds company-specific risk.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Silver Mining Stocks</h4>
+                                    <p className="text-sm text-slate-600 mb-3">Shares in companies that mine silver. Offers leverage to silver prices but adds company-specific risk.</p>
                                     <div className="flex gap-4 text-xs">
                                         <span className="text-green-400">+ Leverage & dividends</span>
                                         <span className="text-red-400">- Company risk</span>
                                     </div>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-amber-500/10 border border-amber-500/30">
-                                    <h4 className="font-bold text-amber-400 text-lg mb-2">Silver IRA</h4>
-                                    <p className="text-sm text-slate-400 mb-3">Hold physical silver in a tax-advantaged retirement account. Combines the benefits of real ownership with IRA tax benefits.</p>
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 border border-[#B22234]/30">
+                                    <h4 className="font-bold text-[#B22234] text-lg mb-2">Silver IRA</h4>
+                                    <p className="text-sm text-slate-600 mb-3">Hold physical silver in a tax-advantaged retirement account. Combines the benefits of real ownership with IRA tax benefits.</p>
                                     <div className="flex gap-4 text-xs">
                                         <span className="text-green-400">+ Tax advantages + True ownership</span>
                                         <span className="text-red-400">- IRS rules & custodian fees</span>
@@ -387,7 +387,7 @@ export default function IsSilverGoodInvestmentPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Sparkles className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Silver IRA Option</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Silver IRA Option</h2>
                             </div>
                             <p>
                                 For retirement investors, a Silver IRA offers a compelling way to own physical silver with tax advantages:
@@ -411,72 +411,72 @@ export default function IsSilverGoodInvestmentPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is silver a good investment in 2026?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Silver has strong investment potential in 2026 due to growing industrial demand (especially solar panels), a historically high silver-to-gold ratio suggesting undervaluation, and increasing monetary demand. However, silver is more volatile than gold, so position sizing is important.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is silver better than gold as an investment?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Silver and gold serve different roles. Gold is more stable and liquid, while silver offers higher upside potential during precious metals bull markets. Many investors hold both—gold for stability and silver for growth potential. The current silver-to-gold ratio favors silver accumulation.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What is the silver-to-gold ratio and why does it matter?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         The silver-to-gold ratio shows how many ounces of silver it takes to buy one ounce of gold. Historically, this ratio averaged 15:1 to 40:1. When the ratio exceeds 80:1, silver is considered historically cheap relative to gold and may offer better value. Investors use this ratio to time their silver purchases.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">How much silver should I have in my portfolio?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Financial advisors who recommend precious metals typically suggest 10-20% of a portfolio in gold and silver combined. Within that allocation, some investors use the silver-to-gold ratio to guide their split. A common approach is 70-80% gold and 20-30% silver, though silver bulls may hold more.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Can I hold silver in an IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Yes, you can hold physical silver in a self-directed IRA (Silver IRA). The silver must meet IRS purity requirements (.999 fine). Popular options include American Silver Eagles, Canadian Silver Maple Leafs, and various silver bars from approved refineries. A Silver IRA offers the same tax advantages as traditional retirement accounts.
                                     </p>
                                 </details>
@@ -484,16 +484,16 @@ export default function IsSilverGoodInvestmentPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white relative overflow-hidden not-prose border border-white/10">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Diversify Your Retirement?</h3>
-                                <p className="mb-6 text-slate-300 max-w-xl mx-auto">Adding silver to your retirement mix doesn&apos;t have to be complicated. Find a company that&apos;ll walk you through it without the high-pressure sales tactics.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Ready to Diversify Your Retirement?</h3>
+                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">Adding silver to your retirement mix doesn&apos;t have to be complicated. Find a company that&apos;ll walk you through it without the high-pressure sales tactics.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                         <Link href="/best-silver-ira-companies">Compare Silver IRA Companies <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/guide/silver-ira-guide">Read Silver IRA Guide</Link>
                                     </Button>
                                 </div>
@@ -507,7 +507,7 @@ export default function IsSilverGoodInvestmentPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-is-silver-good-investment" />
                 </Container>

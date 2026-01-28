@@ -100,7 +100,7 @@ export default function BestSilverStocksPage() {
                 <Container>
                     <Link
                         href="/silver-stocks"
-                        className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition mb-6"
+                        className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition mb-6"
                     >
                         <ArrowLeft className="w-4 h-4" /> Back to Silver Stocks
                     </Link>
@@ -108,10 +108,10 @@ export default function BestSilverStocksPage() {
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Silver Investment Comparison
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Best Silver Stocks vs Physical Silver Investments
                         </h1>
-                        <p className="text-xl text-gray-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             Mining stocks, ETFs, or physical metal - which gives you the best exposure to silver&apos;s potential?
                             We break down each option so you can make an informed decision for your portfolio.
                         </p>
@@ -120,10 +120,10 @@ export default function BestSilverStocksPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 prose-a:text-secondary max-w-none">
+                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 prose-a:text-secondary max-w-none">
 
                             {/* Introduction */}
                             <p className="lead">
@@ -186,67 +186,67 @@ export default function BestSilverStocksPage() {
 
                             {/* Comparison Table */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-slate-700 rounded-lg text-slate-300">
+                                <div className="p-3 bg-slate-100 rounded-lg text-slate-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Head-to-Head Comparison</h2>
                             </div>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <thead className="bg-white/5">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Factor</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-blue-400">Mining Stocks</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-purple-400">Silver ETFs</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Physical Silver</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Factor</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-blue-400">Mining Stocks</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-purple-400">Silver ETFs</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Physical Silver</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Direct silver exposure</td>
+                                            <td className="p-4 font-medium text-slate-900">Direct silver exposure</td>
                                             <td className="p-4 text-red-400">No - company exposure</td>
                                             <td className="p-4 text-yellow-400">Indirect - fund owns silver</td>
                                             <td className="p-4 text-green-400 font-semibold">Yes - you own it</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Counterparty risk</td>
+                                            <td className="p-4 font-medium text-slate-900">Counterparty risk</td>
                                             <td className="p-4 text-red-400">High - company can fail</td>
                                             <td className="p-4 text-yellow-400">Medium - fund structure</td>
                                             <td className="p-4 text-green-400 font-semibold">None</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Upside potential</td>
+                                            <td className="p-4 font-medium text-slate-900">Upside potential</td>
                                             <td className="p-4 text-green-400">High (leveraged)</td>
                                             <td className="p-4">Matches silver price</td>
                                             <td className="p-4">Matches silver price</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Downside risk</td>
+                                            <td className="p-4 font-medium text-slate-900">Downside risk</td>
                                             <td className="p-4 text-red-400">Can go to $0</td>
                                             <td className="p-4">Matches silver price</td>
                                             <td className="p-4 text-green-400 font-semibold">Silver always has value</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Ongoing fees</td>
+                                            <td className="p-4 font-medium text-slate-900">Ongoing fees</td>
                                             <td className="p-4">Trading commissions</td>
                                             <td className="p-4 text-yellow-400">0.5% annual fee</td>
                                             <td className="p-4 text-green-400 font-semibold">None (one-time premium)</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Can take delivery</td>
+                                            <td className="p-4 font-medium text-slate-900">Can take delivery</td>
                                             <td className="p-4 text-red-400">No</td>
                                             <td className="p-4 text-red-400">No (most funds)</td>
                                             <td className="p-4 text-green-400 font-semibold">Yes</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">Dividend/income</td>
+                                            <td className="p-4 font-medium text-slate-900">Dividend/income</td>
                                             <td className="p-4">Some pay dividends</td>
                                             <td className="p-4 text-red-400">No</td>
                                             <td className="p-4 text-red-400">No</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-medium text-white">IRA eligible</td>
+                                            <td className="p-4 font-medium text-slate-900">IRA eligible</td>
                                             <td className="p-4 text-green-400">Yes</td>
                                             <td className="p-4 text-green-400">Yes</td>
                                             <td className="p-4 text-green-400 font-semibold">Yes (Silver IRA)</td>
@@ -324,22 +324,22 @@ export default function BestSilverStocksPage() {
                                 but your physical silver remains yours.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Physical Silver in a Tax-Advantaged Account</h4>
-                                <p className="text-slate-300 mb-4">
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Physical Silver in a Tax-Advantaged Account</h4>
+                                <p className="text-slate-600 mb-4">
                                     Through a Silver IRA, you can hold IRS-approved physical silver coins and bars with tax-advantaged growth.
                                     Your silver grows tax-free (Roth) or tax-deferred (Traditional), and you own the actual metal.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link
                                         href="/silver-ira"
-                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-black font-semibold rounded-lg transition"
+                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#B22234] hover:bg-[#8b1c2a] text-black font-semibold rounded-lg transition"
                                     >
                                         Learn About Silver IRAs <ArrowRight className="w-4 h-4" />
                                     </Link>
                                     <Link
                                         href="/best-silver-ira-companies"
-                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition"
+                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 hover:bg-white/20 text-slate-900 font-semibold rounded-lg transition"
                                     >
                                         Compare Silver IRA Companies
                                     </Link>
@@ -371,14 +371,14 @@ export default function BestSilverStocksPage() {
                             </p>
 
                             {/* CTA */}
-                            <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="my-12 bg-primary rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Own Real Silver?</h3>
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Ready to Own Real Silver?</h3>
                                     <p className="mb-6 text-gray-200">
                                         Skip the mining stock risks. Own physical silver in a tax-advantaged IRA with the help of precious metals experts.
                                     </p>
-                                    <Button variant="gold" size="lg" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                         <Link href="/quiz">Find the Best Silver IRA Company <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                     </Button>
                                 </div>
@@ -408,7 +408,7 @@ export default function BestSilverStocksPage() {
                         </article>
 
                         {/* Navigation */}
-                        <div className="mt-16 pt-8 border-t border-white/10">
+                        <div className="mt-16 pt-8 border-t border-slate-200">
                             <div className="flex flex-col sm:flex-row gap-4 justify-between">
                                 <Link
                                     href="/silver-stocks"

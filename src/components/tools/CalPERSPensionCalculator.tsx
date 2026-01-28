@@ -240,19 +240,19 @@ export function CalPERSPensionCalculator() {
     }).format(amount);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+    <section className="py-16 md:py-24 bg-slate-50">
       <Container>
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               ADVANCED CALPERS CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               CalPERS Pension Calculator
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Advanced CalPERS benefit estimator with employer-specific formulas,
               reciprocity support, and optimal retirement age analysis.
             </p>
@@ -260,18 +260,18 @@ export function CalPERSPensionCalculator() {
 
           <div className="grid lg:grid-cols-5 gap-8">
             {/* Input Panel - 2 columns */}
-            <div className="lg:col-span-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-white mb-6">Your CalPERS Details</h3>
+            <div className="lg:col-span-2 bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#000080] mb-6">Your CalPERS Details</h3>
 
               {/* Employer Type */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Employer Type
                 </label>
                 <select
                   value={employerType}
                   onChange={(e) => setEmployerType(e.target.value as EmployerKey)}
-                  className="w-full px-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white focus:outline-none focus:border-amber-500"
+                  className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-[#B22234]"
                 >
                   {Object.entries(EMPLOYER_TYPES).map(([key, data]) => (
                     <option key={key} value={key}>
@@ -286,7 +286,7 @@ export function CalPERSPensionCalculator() {
 
               {/* Membership Year */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   CalPERS Membership Year
                 </label>
                 <input
@@ -295,16 +295,16 @@ export function CalPERSPensionCalculator() {
                   onChange={(e) => setMembershipYear(Number(e.target.value))}
                   min={1970}
                   max={2024}
-                  className="w-full px-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white focus:outline-none focus:border-amber-500"
+                  className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-[#B22234]"
                 />
-                <div className={`text-sm mt-2 ${membershipYear >= 2013 ? "text-amber-400" : "text-green-400"}`}>
+                <div className={`text-sm mt-2 ${membershipYear >= 2013 ? "text-[#B22234]" : "text-green-600"}`}>
                   {membershipYear >= 2013 ? "PEPRA Member" : "Classic Member"} - {formulaData.name}
                 </div>
               </div>
 
               {/* Final Compensation */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
+                <label className="block text-slate-600 text-sm mb-2">
                   Final Compensation
                 </label>
                 <div className="relative">
@@ -313,15 +313,15 @@ export function CalPERSPensionCalculator() {
                     type="number"
                     value={finalCompensation}
                     onChange={(e) => setFinalCompensation(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-800 border border-white/10 rounded-xl text-white focus:outline-none focus:border-amber-500"
+                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-[#B22234]"
                   />
                 </div>
               </div>
 
               {/* Service Years */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
-                  CalPERS Service Credit: <span className="text-amber-400 font-bold">{serviceYears} years</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  CalPERS Service Credit: <span className="text-[#B22234] font-bold">{serviceYears} years</span>
                 </label>
                 <input
                   type="range"
@@ -330,14 +330,14 @@ export function CalPERSPensionCalculator() {
                   step={0.5}
                   value={serviceYears}
                   onChange={(e) => setServiceYears(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
               </div>
 
               {/* Retirement Age */}
               <div className="mb-6">
-                <label className="block text-slate-400 text-sm mb-2">
-                  Retirement Age: <span className="text-amber-400 font-bold">{retirementAge}</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Retirement Age: <span className="text-[#B22234] font-bold">{retirementAge}</span>
                 </label>
                 <input
                   type="range"
@@ -346,28 +346,28 @@ export function CalPERSPensionCalculator() {
                   step={1}
                   value={retirementAge}
                   onChange={(e) => setRetirementAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
               </div>
 
               {/* Reciprocity Section */}
-              <div className="mb-6 p-4 bg-slate-800/50 rounded-xl">
+              <div className="mb-6 p-4 bg-slate-50 rounded-xl">
                 <div className="flex items-center gap-3 mb-3">
-                  <Scale className="h-5 w-5 text-blue-400" />
-                  <h4 className="text-white font-semibold">Reciprocity with Other CA Systems</h4>
+                  <Scale className="h-5 w-5 text-blue-600" />
+                  <h4 className="text-slate-900 font-semibold">Reciprocity with Other CA Systems</h4>
                 </div>
                 <label className="flex items-center gap-2 mb-3 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={hasReciprocity}
                     onChange={(e) => setHasReciprocity(e.target.checked)}
-                    className="w-4 h-4 rounded bg-slate-700 border-slate-600 text-amber-500 focus:ring-amber-500"
+                    className="w-4 h-4 rounded bg-white border-slate-600 text-[#B22234] focus:ring-[#B22234]"
                   />
-                  <span className="text-slate-300 text-sm">I have reciprocity with CalSTRS, UCRS, or 37 Act</span>
+                  <span className="text-slate-600 text-sm">I have reciprocity with CalSTRS, UCRS, or 37 Act</span>
                 </label>
                 {hasReciprocity && (
                   <div>
-                    <label className="block text-slate-400 text-xs mb-1">
+                    <label className="block text-slate-500 text-xs mb-1">
                       Reciprocal Service Years
                     </label>
                     <input
@@ -376,7 +376,7 @@ export function CalPERSPensionCalculator() {
                       onChange={(e) => setReciprocityYears(Number(e.target.value))}
                       min={0}
                       max={35}
-                      className="w-full px-3 py-2 bg-slate-700 border border-white/10 rounded-lg text-white text-sm"
+                      className="w-full px-3 py-2 bg-white border border-slate-200 rounded-lg text-slate-900 text-sm"
                     />
                   </div>
                 )}
@@ -385,7 +385,7 @@ export function CalPERSPensionCalculator() {
               {/* Calculate Button */}
               <button
                 onClick={calculateBenefit}
-                className="w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
               >
                 <Calculator className="h-5 w-5" />
                 Calculate Pension
@@ -397,23 +397,23 @@ export function CalPERSPensionCalculator() {
               {result ? (
                 <>
                   {/* Primary Result */}
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                  <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-bold text-white">Your Pension Estimate</h3>
-                      <span className="px-3 py-1 bg-amber-500/20 text-amber-400 text-sm font-semibold rounded-full">
+                      <h3 className="text-xl font-bold text-slate-900">Your Pension Estimate</h3>
+                      <span className="px-3 py-1 bg-[#B22234]/10 text-[#B22234] text-sm font-semibold rounded-full">
                         {result.formula}
                       </span>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                      <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-5">
-                        <div className="text-amber-400 text-sm mb-1">Monthly Benefit at Age {retirementAge}</div>
-                        <div className="text-4xl font-bold text-white">{formatCurrency(result.monthlyBenefit)}</div>
-                        <div className="text-slate-400 text-sm mt-1">{formatCurrency(result.annualBenefit)}/year</div>
+                      <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-5">
+                        <div className="text-[#B22234] text-sm mb-1">Monthly Benefit at Age {retirementAge}</div>
+                        <div className="text-4xl font-bold text-slate-900">{formatCurrency(result.monthlyBenefit)}</div>
+                        <div className="text-slate-600 text-sm mt-1">{formatCurrency(result.annualBenefit)}/year</div>
                       </div>
-                      <div className="bg-slate-800/50 rounded-xl p-5">
-                        <div className="text-slate-400 text-sm mb-1">Age Factor Used</div>
-                        <div className="text-3xl font-bold text-white">{result.ageFactor.toFixed(3)}%</div>
+                      <div className="bg-slate-50 rounded-xl p-5">
+                        <div className="text-slate-600 text-sm mb-1">Age Factor Used</div>
+                        <div className="text-3xl font-bold text-slate-900">{result.ageFactor.toFixed(3)}%</div>
                         <div className="text-slate-500 text-sm mt-1">
                           Max: {formulaData.maxFactor}% at age {formulaData.maxAge}+
                         </div>
@@ -421,9 +421,9 @@ export function CalPERSPensionCalculator() {
                     </div>
 
                     {result.reciprocityNote && (
-                      <div className="mt-4 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
+                      <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                         <div className="flex items-start gap-2">
-                          <Scale className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                          <Scale className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                           <p className="text-blue-300 text-sm">{result.reciprocityNote}</p>
                         </div>
                       </div>
@@ -431,21 +431,21 @@ export function CalPERSPensionCalculator() {
                   </div>
 
                   {/* Optimal Retirement Analysis */}
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                  <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <Clock className="h-5 w-5 text-green-400" />
-                      <h3 className="text-lg font-bold text-white">Optimal Retirement Age Analysis</h3>
+                      <Clock className="h-5 w-5 text-green-600" />
+                      <h3 className="text-lg font-bold text-slate-900">Optimal Retirement Age Analysis</h3>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-4 mb-4">
-                      <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4">
-                        <div className="text-green-400 text-sm mb-1">Optimal Retirement Age</div>
-                        <div className="text-3xl font-bold text-white">{result.optimalAge}</div>
-                        <div className="text-slate-400 text-xs mt-1">Maximizes lifetime benefits to age 85</div>
+                      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                        <div className="text-green-600 text-sm mb-1">Optimal Retirement Age</div>
+                        <div className="text-3xl font-bold text-slate-900">{result.optimalAge}</div>
+                        <div className="text-slate-500 text-xs mt-1">Maximizes lifetime benefits to age 85</div>
                       </div>
-                      <div className="bg-slate-800/50 rounded-xl p-4">
-                        <div className="text-slate-400 text-sm mb-1">Lifetime Benefit to 85</div>
-                        <div className="text-2xl font-bold text-white">{formatCurrency(result.optimalBenefit)}</div>
+                      <div className="bg-slate-50 rounded-xl p-4">
+                        <div className="text-slate-600 text-sm mb-1">Lifetime Benefit to 85</div>
+                        <div className="text-2xl font-bold text-slate-900">{formatCurrency(result.optimalBenefit)}</div>
                         <div className="text-slate-500 text-xs mt-1">At optimal age {result.optimalAge}</div>
                       </div>
                     </div>
@@ -454,11 +454,11 @@ export function CalPERSPensionCalculator() {
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <thead>
-                          <tr className="border-b border-white/10">
-                            <th className="py-2 px-3 text-left text-slate-400">Age</th>
-                            <th className="py-2 px-3 text-right text-slate-400">Factor</th>
-                            <th className="py-2 px-3 text-right text-slate-400">Monthly</th>
-                            <th className="py-2 px-3 text-right text-slate-400">Lifetime to 85</th>
+                          <tr className="border-b border-slate-200">
+                            <th className="py-2 px-3 text-left text-slate-500">Age</th>
+                            <th className="py-2 px-3 text-right text-slate-500">Factor</th>
+                            <th className="py-2 px-3 text-right text-slate-500">Monthly</th>
+                            <th className="py-2 px-3 text-right text-slate-500">Lifetime to 85</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -467,19 +467,19 @@ export function CalPERSPensionCalculator() {
                             .map((comp) => (
                             <tr
                               key={comp.age}
-                              className={`border-b border-white/5 ${
-                                comp.age === retirementAge ? "bg-amber-500/10" :
+                              className={`border-b border-slate-200 ${
+                                comp.age === retirementAge ? "bg-[#B22234]/10" :
                                 comp.age === result.optimalAge ? "bg-green-500/10" : ""
                               }`}
                             >
-                              <td className="py-2 px-3 text-white">
+                              <td className="py-2 px-3text-slate-900">
                                 {comp.age}
-                                {comp.age === retirementAge && <span className="text-amber-400 ml-1">(selected)</span>}
-                                {comp.age === result.optimalAge && <span className="text-green-400 ml-1">(optimal)</span>}
+                                {comp.age === retirementAge && <span className="text-[#B22234] ml-1">(selected)</span>}
+                                {comp.age === result.optimalAge && <span className="text-green-600 ml-1">(optimal)</span>}
                               </td>
-                              <td className="py-2 px-3 text-right text-slate-300">{comp.ageFactor.toFixed(2)}%</td>
-                              <td className="py-2 px-3 text-right text-slate-300">{formatCurrency(comp.monthlyBenefit)}</td>
-                              <td className="py-2 px-3 text-right text-slate-300">{formatCurrency(comp.lifetimeBenefitTo85)}</td>
+                              <td className="py-2 px-3 text-right text-slate-600">{comp.ageFactor.toFixed(2)}%</td>
+                              <td className="py-2 px-3 text-right text-slate-600">{formatCurrency(comp.monthlyBenefit)}</td>
+                              <td className="py-2 px-3 text-right text-slate-600">{formatCurrency(comp.lifetimeBenefitTo85)}</td>
                             </tr>
                           ))}
                         </tbody>
@@ -488,23 +488,23 @@ export function CalPERSPensionCalculator() {
                   </div>
 
                   {/* Health Benefits Eligibility */}
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                  <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <Heart className="h-5 w-5 text-red-400" />
-                      <h3 className="text-lg font-bold text-white">Health Benefits Eligibility</h3>
+                      <Heart className="h-5 w-5 text-red-600" />
+                      <h3 className="text-lg font-bold text-slate-900">Health Benefits Eligibility</h3>
                     </div>
 
                     <div className={`p-4 rounded-xl ${
                       result.healthBenefitsEligible
-                        ? "bg-green-500/10 border border-green-500/20"
-                        : "bg-amber-500/10 border border-amber-500/20"
+                        ? "bg-green-50 border border-green-200"
+                        : "bg-[#B22234]/10 border border-[#B22234]/30"
                     }`}>
                       {result.healthBenefitsEligible ? (
                         <div className="flex items-start gap-3">
-                          <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
+                          <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0" />
                           <div>
-                            <p className="text-green-400 font-semibold">You are vested for health benefits</p>
-                            <p className="text-slate-400 text-sm mt-1">
+                            <p className="text-green-600 font-semibold">You are vested for health benefits</p>
+                            <p className="text-slate-600 text-sm mt-1">
                               With {serviceYears + (hasReciprocity ? reciprocityYears : 0)} years of service,
                               you meet the {result.healthVestingYears}-year vesting requirement for your employer type.
                               You may be eligible for CalPERS health coverage in retirement.
@@ -513,10 +513,10 @@ export function CalPERSPensionCalculator() {
                         </div>
                       ) : (
                         <div className="flex items-start gap-3">
-                          <Info className="h-6 w-6 text-amber-400 flex-shrink-0" />
+                          <Info className="h-6 w-6 text-[#B22234] flex-shrink-0" />
                           <div>
-                            <p className="text-amber-400 font-semibold">Not yet vested for health benefits</p>
-                            <p className="text-slate-400 text-sm mt-1">
+                            <p className="text-[#B22234] font-semibold">Not yet vested for health benefits</p>
+                            <p className="text-slate-600 text-sm mt-1">
                               You need {result.healthVestingYears - (serviceYears + (hasReciprocity ? reciprocityYears : 0))} more years
                               to meet the {result.healthVestingYears}-year requirement for {EMPLOYER_TYPES[employerType].name} employees.
                             </p>
@@ -529,20 +529,20 @@ export function CalPERSPensionCalculator() {
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-center rounded-xl transition-all"
                   >
                     Protect Your CalPERS Pension with Gold
                     <ArrowRight className="inline ml-2 h-5 w-5" />
                   </Link>
                 </>
               ) : (
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+                <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
                   <div className="flex flex-col items-center justify-center text-center py-12">
-                    <div className="w-20 h-20 bg-slate-800 rounded-2xl flex items-center justify-center mb-6">
+                    <div className="w-20 h-20 bg-slate-100 rounded-2xl flex items-center justify-center mb-6">
                       <Building2 className="h-10 w-10 text-slate-500" />
                     </div>
-                    <h3 className="text-xl font-semibold text-white mb-2">Advanced CalPERS Analysis</h3>
-                    <p className="text-slate-400 max-w-md">
+                    <h3 className="text-xl font-semibold text-slate-900 mb-2">Advanced CalPERS Analysis</h3>
+                    <p className="text-slate-600 max-w-md">
                       Enter your CalPERS details and click &quot;Calculate Pension&quot; to see your
                       benefit estimate, optimal retirement age, and health benefits eligibility.
                     </p>
@@ -554,31 +554,31 @@ export function CalPERSPensionCalculator() {
 
           {/* Educational Cards */}
           <div className="mt-12 grid md:grid-cols-4 gap-6">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
-              <Building2 className="h-7 w-7 text-amber-400 mb-3" />
-              <h4 className="text-white font-semibold mb-2">Employer-Specific</h4>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-5">
+              <Building2 className="h-7 w-7 text-[#B22234] mb-3" />
+              <h4 className="text-slate-900 font-semibold mb-2">Employer-Specific</h4>
+              <p className="text-slate-600 text-sm">
                 Different employers have different CalPERS formulas. State and school employees typically have 2%@55 vs local government 2%@60.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
-              <Scale className="h-7 w-7 text-blue-400 mb-3" />
-              <h4 className="text-white font-semibold mb-2">Reciprocity</h4>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-5">
+              <Scale className="h-7 w-7 text-blue-600 mb-3" />
+              <h4 className="text-slate-900 font-semibold mb-2">Reciprocity</h4>
+              <p className="text-slate-600 text-sm">
                 Service credit from CalSTRS, UC Retirement, or 37 Act systems can be combined with CalPERS for a larger pension.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
-              <Heart className="h-7 w-7 text-red-400 mb-3" />
-              <h4 className="text-white font-semibold mb-2">Health Coverage</h4>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-5">
+              <Heart className="h-7 w-7 text-red-600 mb-3" />
+              <h4 className="text-slate-900 font-semibold mb-2">Health Coverage</h4>
+              <p className="text-slate-600 text-sm">
                 Vesting for retiree health benefits varies by employer - typically 10 years for state, 20 years for local government.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
-              <Clock className="h-7 w-7 text-green-400 mb-3" />
-              <h4 className="text-white font-semibold mb-2">Timing Matters</h4>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-5">
+              <Clock className="h-7 w-7 text-green-600 mb-3" />
+              <h4 className="text-slate-900 font-semibold mb-2">Timing Matters</h4>
+              <p className="text-slate-600 text-sm">
                 The optimal retirement age balances higher monthly benefits (waiting) vs more years of payments (retiring earlier).
               </p>
             </div>

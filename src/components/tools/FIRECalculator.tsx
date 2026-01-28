@@ -266,7 +266,7 @@ export function FIRECalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-amber-400 to-orange-400 bg-clip-text text-transparent">
           FIRE Calculator
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
           Calculate your path to Financial Independence and Retire Early. Find your FIRE number, timeline, and explore scenarios to reach freedom faster.
         </p>
       </div>
@@ -275,17 +275,17 @@ export function FIRECalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Personal Information */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                <Calendar className="h-5 w-5 text-blue-400" />
+                <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Personal Information</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Current Age: {currentAge}
                 </label>
                 <input
@@ -301,17 +301,17 @@ export function FIRECalculator() {
           </div>
 
           {/* Income & Expenses */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
-                <DollarSign className="h-5 w-5 text-green-400" />
+                <DollarSign className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Income & Expenses</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Annual Income (before taxes)
                 </label>
                 <div className="relative">
@@ -320,7 +320,7 @@ export function FIRECalculator() {
                     type="number"
                     value={annualIncome}
                     onChange={(e) => setAnnualIncome(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-orange-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-orange-500"
                     min="0"
                     step="5000"
                   />
@@ -331,7 +331,7 @@ export function FIRECalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Annual Expenses
                 </label>
                 <div className="relative">
@@ -340,7 +340,7 @@ export function FIRECalculator() {
                     type="number"
                     value={annualExpenses}
                     onChange={(e) => setAnnualExpenses(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-orange-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-orange-500"
                     min="0"
                     step="5000"
                   />
@@ -350,16 +350,16 @@ export function FIRECalculator() {
                 </p>
               </div>
 
-              <div className="bg-slate-800/50 rounded-lg p-3 border border-slate-700">
+              <div className="bg-slate-50 rounded-lg p-3 border border-slate-700">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-slate-400">Annual Savings</span>
-                  <span className="font-semibold text-green-400">
+                  <span className="text-sm text-slate-500">Annual Savings</span>
+                  <span className="font-semibold text-green-600">
                     {formatFullCurrency(calculations.annualSavings)}
                   </span>
                 </div>
                 <div className="flex justify-between items-center mt-1">
-                  <span className="text-sm text-slate-400">Savings Rate</span>
-                  <span className="font-semibold text-green-400">
+                  <span className="text-sm text-slate-500">Savings Rate</span>
+                  <span className="font-semibold text-green-600">
                     {calculations.savingsRate.toFixed(1)}%
                   </span>
                 </div>
@@ -368,7 +368,7 @@ export function FIRECalculator() {
           </div>
 
           {/* Current Savings */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <PiggyBank className="h-5 w-5 text-purple-400" />
@@ -377,7 +377,7 @@ export function FIRECalculator() {
             </div>
 
             <div>
-              <label className="text-sm text-slate-400 mb-2 block">
+              <label className="text-sm text-slate-500 mb-2 block">
                 Total Retirement Savings
               </label>
               <div className="relative">
@@ -386,7 +386,7 @@ export function FIRECalculator() {
                   type="number"
                   value={currentSavings}
                   onChange={(e) => setCurrentSavings(Number(e.target.value))}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-orange-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-orange-500"
                   min="0"
                   step="10000"
                 />
@@ -398,7 +398,7 @@ export function FIRECalculator() {
           </div>
 
           {/* Investment Assumptions */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-orange-500/20 rounded-lg border border-orange-500/30">
                 <TrendingUp className="h-5 w-5 text-orange-400" />
@@ -408,7 +408,7 @@ export function FIRECalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Expected Annual Return: {expectedReturn}%
                 </label>
                 <input
@@ -427,7 +427,7 @@ export function FIRECalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Safe Withdrawal Rate: {withdrawalRate}%
                 </label>
                 <input
@@ -449,7 +449,7 @@ export function FIRECalculator() {
           </div>
 
           {/* Social Security (Optional) */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-teal-500/20 rounded-lg border border-teal-500/30">
                 <Briefcase className="h-5 w-5 text-teal-400" />
@@ -459,7 +459,7 @@ export function FIRECalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Expected Monthly Social Security
                 </label>
                 <div className="relative">
@@ -468,7 +468,7 @@ export function FIRECalculator() {
                     type="number"
                     value={socialSecurity}
                     onChange={(e) => setSocialSecurity(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-orange-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-orange-500"
                     min="0"
                     step="100"
                     placeholder="0"
@@ -481,7 +481,7 @@ export function FIRECalculator() {
 
               {socialSecurity > 0 && (
                 <div>
-                  <label className="text-sm text-slate-400 mb-2 block">
+                  <label className="text-sm text-slate-500 mb-2 block">
                     Social Security Start Age: {socialSecurityAge}
                   </label>
                   <input
@@ -508,14 +508,14 @@ export function FIRECalculator() {
             <div className="flex items-center gap-3 mb-4">
               <Flame className="h-10 w-10 text-orange-400" />
               <div>
-                <h3 className="text-sm text-slate-400">Your FIRE Number</h3>
+                <h3 className="text-sm text-slate-500">Your FIRE Number</h3>
                 <div className="text-4xl font-bold text-orange-400">
                   {formatCurrency(calculations.fireNumber)}
                 </div>
               </div>
             </div>
 
-            <p className="text-sm text-slate-400 mb-4">
+            <p className="text-sm text-slate-500 mb-4">
               This is the amount you need invested to live off {withdrawalRate}% annual withdrawals
             </p>
 
@@ -524,13 +524,13 @@ export function FIRECalculator() {
                 <span>Progress to FIRE</span>
                 <span className="font-semibold">{calculations.progressPercent.toFixed(1)}%</span>
               </div>
-              <div className="w-full bg-slate-800 rounded-full h-4 overflow-hidden">
+              <div className="w-full bg-slate-100 rounded-full h-4 overflow-hidden">
                 <div
                   className="h-full bg-gradient-to-r from-orange-500 to-amber-500 transition-all duration-500 relative"
                   style={{ width: `${Math.min(100, calculations.progressPercent)}%` }}
                 >
                   {calculations.progressPercent >= 10 && (
-                    <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white">
+                    <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-slate-900">
                       {calculations.progressPercent.toFixed(0)}%
                     </span>
                   )}
@@ -549,13 +549,13 @@ export function FIRECalculator() {
               ? 'bg-green-500/20 border-green-500/30'
               : calculations.yearsToFIRE < 100
               ? 'bg-blue-500/20 border-blue-500/30'
-              : 'bg-amber-500/20 border-amber-500/30'
+              : 'bg-[#B22234]/10 border-[#B22234]/30'
           }`}>
             <div className="flex items-center gap-3 mb-4">
               {calculations.hasReachedFIRE ? (
-                <CheckCircle2 className="h-8 w-8 text-green-400" />
+                <CheckCircle2 className="h-8 w-8 text-green-600" />
               ) : (
-                <Clock className="h-8 w-8 text-blue-400" />
+                <Clock className="h-8 w-8 text-blue-600" />
               )}
               <div>
                 <h3 className="text-xl font-bold">
@@ -565,7 +565,7 @@ export function FIRECalculator() {
                     ? `${calculations.yearsToFIRE} Years to FIRE`
                     : "Adjust Your Plan"}
                 </h3>
-                <p className="text-sm text-slate-300">
+                <p className="text-sm text-slate-600">
                   {calculations.hasReachedFIRE
                     ? "You're financially independent"
                     : calculations.yearsToFIRE < 100
@@ -576,20 +576,20 @@ export function FIRECalculator() {
             </div>
 
             {!calculations.hasReachedFIRE && calculations.yearsToFIRE < 100 && (
-              <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-white/10">
+              <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-200">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400">{calculations.yearsToFIRE}</div>
-                  <div className="text-xs text-slate-400">Years</div>
+                  <div className="text-2xl font-bold text-blue-600">{calculations.yearsToFIRE}</div>
+                  <div className="text-xs text-slate-500">Years</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-400">{calculations.fireAge}</div>
-                  <div className="text-xs text-slate-400">FIRE Age</div>
+                  <div className="text-2xl font-bold text-green-600">{calculations.fireAge}</div>
+                  <div className="text-xs text-slate-500">FIRE Age</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-orange-400">
                     {new Date().getFullYear() + calculations.yearsToFIRE}
                   </div>
-                  <div className="text-xs text-slate-400">Target Year</div>
+                  <div className="text-xs text-slate-500">Target Year</div>
                 </div>
               </div>
             )}
@@ -597,29 +597,29 @@ export function FIRECalculator() {
 
           {/* Monthly Savings Needed */}
           {!calculations.hasReachedFIRE && (
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
               <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                <Target className="h-5 w-5 text-amber-400" />
+                <Target className="h-5 w-5 text-[#B22234]" />
                 Savings Analysis
               </h3>
 
               <div className="space-y-4">
-                <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                  <span className="text-slate-400">Current Monthly Savings</span>
-                  <span className="text-xl font-bold text-green-400">
+                <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+                  <span className="text-slate-500">Current Monthly Savings</span>
+                  <span className="text-xl font-bold text-green-600">
                     {formatFullCurrency(calculations.monthlySavings)}
                   </span>
                 </div>
 
-                <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                  <span className="text-slate-400">Needed for 10-Year FIRE</span>
+                <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+                  <span className="text-slate-500">Needed for 10-Year FIRE</span>
                   <span className="text-xl font-bold text-orange-400">
                     {formatFullCurrency(calculations.monthlyNeededFor10Years)}
                   </span>
                 </div>
 
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400">Current Savings Rate</span>
+                  <span className="text-slate-500">Current Savings Rate</span>
                   <span className="text-xl font-bold text-purple-400">
                     {calculations.savingsRate.toFixed(1)}%
                   </span>
@@ -629,7 +629,7 @@ export function FIRECalculator() {
           )}
 
           {/* What-If Scenarios */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <Lightbulb className="h-5 w-5 text-yellow-400" />
               What-If Scenarios
@@ -639,21 +639,21 @@ export function FIRECalculator() {
               {scenarios.map((scenario, index) => (
                 <div
                   key={index}
-                  className="bg-slate-800/50 rounded-lg p-4 border border-slate-700"
+                  className="bg-slate-50 rounded-lg p-4 border border-slate-700"
                 >
                   <div className="flex justify-between items-start mb-2">
                     <div>
-                      <div className="font-semibold text-white">{scenario.name}</div>
-                      <div className="text-xs text-slate-400">{scenario.description}</div>
+                      <div className="font-semibold text-slate-900">{scenario.name}</div>
+                      <div className="text-xs text-slate-500">{scenario.description}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-lg font-bold text-green-400">
+                      <div className="text-lg font-bold text-green-600">
                         Age {scenario.fireAge}
                       </div>
-                      <div className="text-xs text-green-400">{scenario.difference}</div>
+                      <div className="text-xs text-green-600">{scenario.difference}</div>
                     </div>
                   </div>
-                  <div className="flex justify-between text-sm text-slate-400 mt-2 pt-2 border-t border-slate-700">
+                  <div className="flex justify-between text-sm text-slate-500 mt-2 pt-2 border-t border-slate-700">
                     <span>FIRE Number: {formatCurrency(scenario.fireNumber)}</span>
                     <span>{scenario.yearsToFIRE} years</span>
                   </div>
@@ -663,19 +663,19 @@ export function FIRECalculator() {
           </div>
 
           {/* Year-by-Year Projection Table */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <button
               onClick={() => setShowProjectionTable(!showProjectionTable)}
               className="w-full flex items-center justify-between text-lg font-semibold"
             >
               <span className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-blue-400" />
+                <TrendingUp className="h-5 w-5 text-blue-600" />
                 Year-by-Year Projection
               </span>
               {showProjectionTable ? (
-                <ChevronUp className="h-5 w-5 text-slate-400" />
+                <ChevronUp className="h-5 w-5 text-slate-500" />
               ) : (
-                <ChevronDown className="h-5 w-5 text-slate-400" />
+                <ChevronDown className="h-5 w-5 text-slate-500" />
               )}
             </button>
 
@@ -683,14 +683,14 @@ export function FIRECalculator() {
               <div className="mt-4 overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-slate-700">
-                      <th className="text-left py-2 px-2 text-slate-400">Year</th>
-                      <th className="text-left py-2 px-2 text-slate-400">Age</th>
-                      <th className="text-right py-2 px-2 text-slate-400">Start</th>
-                      <th className="text-right py-2 px-2 text-slate-400">+ Savings</th>
-                      <th className="text-right py-2 px-2 text-slate-400">+ Returns</th>
-                      <th className="text-right py-2 px-2 text-slate-400">End Balance</th>
-                      <th className="text-right py-2 px-2 text-slate-400">% to FIRE</th>
+                    <tr className="border-b border-slate-200">
+                      <th className="text-left py-2 px-2 text-slate-500">Year</th>
+                      <th className="text-left py-2 px-2 text-slate-500">Age</th>
+                      <th className="text-right py-2 px-2 text-slate-500">Start</th>
+                      <th className="text-right py-2 px-2 text-slate-500">+ Savings</th>
+                      <th className="text-right py-2 px-2 text-slate-500">+ Returns</th>
+                      <th className="text-right py-2 px-2 text-slate-500">End Balance</th>
+                      <th className="text-right py-2 px-2 text-slate-500">% to FIRE</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -703,20 +703,20 @@ export function FIRECalculator() {
                       >
                         <td className="py-2 px-2">{proj.year}</td>
                         <td className="py-2 px-2">{proj.age}</td>
-                        <td className="text-right py-2 px-2 text-slate-400">
+                        <td className="text-right py-2 px-2 text-slate-500">
                           {formatCurrency(proj.startBalance)}
                         </td>
-                        <td className="text-right py-2 px-2 text-green-400">
+                        <td className="text-right py-2 px-2 text-green-600">
                           +{formatCurrency(proj.contributions)}
                         </td>
-                        <td className="text-right py-2 px-2 text-blue-400">
+                        <td className="text-right py-2 px-2 text-blue-600">
                           +{formatCurrency(proj.returns)}
                         </td>
                         <td className="text-right py-2 px-2 font-semibold">
                           {formatCurrency(proj.endBalance)}
                         </td>
                         <td className="text-right py-2 px-2">
-                          <span className={proj.percentToFIRE >= 100 ? 'text-green-400 font-bold' : 'text-orange-400'}>
+                          <span className={proj.percentToFIRE >= 100 ? 'text-green-600 font-bold' : 'text-orange-400'}>
                             {proj.percentToFIRE.toFixed(0)}%
                           </span>
                         </td>
@@ -732,30 +732,30 @@ export function FIRECalculator() {
 
       {/* Augusta CTA Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
+        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
           <div className="flex items-center gap-3 mb-6">
-            <Shield className="h-6 w-6 text-amber-400" />
+            <Shield className="h-6 w-6 text-[#B22234]" />
             <h2 className="text-2xl font-bold">Protect Your FIRE Number from Market Crashes</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Sequence of Returns Risk</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Sequence of Returns Risk</div>
+              <p className="text-slate-600 text-sm">
                 A market crash in your first years of FIRE can devastate your plan. Gold often rises when stocks fall, providing crucial protection.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">30+ Year Horizon</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">30+ Year Horizon</div>
+              <p className="text-slate-600 text-sm">
                 Early retirement means your portfolio must last decades. Gold has preserved wealth through every economic crisis in history.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">True Diversification</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">True Diversification</div>
+              <p className="text-slate-600 text-sm">
                 Most FIRE portfolios are 100% paper assets. Physical gold in an IRA adds real diversification beyond stocks and bonds.
               </p>
             </div>
@@ -776,73 +776,73 @@ export function FIRECalculator() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <Link
             href="/tools/coast-fire-calculator"
-            className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-amber-500/50 transition-colors group"
+            className="bg-slate-50 backdrop-blur-sm rounded-xl p-4 border border-slate-200 hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                <TrendingUp className="h-5 w-5 text-blue-400" />
+                <TrendingUp className="h-5 w-5 text-blue-600" />
               </div>
               <div>
-                <div className="font-semibold group-hover:text-amber-400 transition-colors">
+                <div className="font-semibold group-hover:text-[#B22234] transition-colors">
                   Coast FIRE
                 </div>
-                <div className="text-xs text-slate-400">Stop saving, let it grow</div>
+                <div className="text-xs text-slate-500">Stop saving, let it grow</div>
               </div>
-              <ArrowRight className="h-4 w-4 ml-auto text-slate-400 group-hover:text-amber-400 transition-colors" />
+              <ArrowRight className="h-4 w-4 ml-auto text-slate-500 group-hover:text-[#B22234] transition-colors" />
             </div>
           </Link>
 
           <Link
             href="/tools/barista-fire-calculator"
-            className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-amber-500/50 transition-colors group"
+            className="bg-slate-50 backdrop-blur-sm rounded-xl p-4 border border-slate-200 hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <Briefcase className="h-5 w-5 text-purple-400" />
               </div>
               <div>
-                <div className="font-semibold group-hover:text-amber-400 transition-colors">
+                <div className="font-semibold group-hover:text-[#B22234] transition-colors">
                   Barista FIRE
                 </div>
-                <div className="text-xs text-slate-400">Part-time work + benefits</div>
+                <div className="text-xs text-slate-500">Part-time work + benefits</div>
               </div>
-              <ArrowRight className="h-4 w-4 ml-auto text-slate-400 group-hover:text-amber-400 transition-colors" />
+              <ArrowRight className="h-4 w-4 ml-auto text-slate-500 group-hover:text-[#B22234] transition-colors" />
             </div>
           </Link>
 
           <Link
             href="/tools/fat-fire-calculator"
-            className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-amber-500/50 transition-colors group"
+            className="bg-slate-50 backdrop-blur-sm rounded-xl p-4 border border-slate-200 hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-amber-500/20 rounded-lg border border-amber-500/30">
-                <DollarSign className="h-5 w-5 text-amber-400" />
+              <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/30">
+                <DollarSign className="h-5 w-5 text-[#B22234]" />
               </div>
               <div>
-                <div className="font-semibold group-hover:text-amber-400 transition-colors">
+                <div className="font-semibold group-hover:text-[#B22234] transition-colors">
                   Fat FIRE
                 </div>
-                <div className="text-xs text-slate-400">Luxury retirement</div>
+                <div className="text-xs text-slate-500">Luxury retirement</div>
               </div>
-              <ArrowRight className="h-4 w-4 ml-auto text-slate-400 group-hover:text-amber-400 transition-colors" />
+              <ArrowRight className="h-4 w-4 ml-auto text-slate-500 group-hover:text-[#B22234] transition-colors" />
             </div>
           </Link>
 
           <Link
             href="/tools/lean-fire-calculator"
-            className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-amber-500/50 transition-colors group"
+            className="bg-slate-50 backdrop-blur-sm rounded-xl p-4 border border-slate-200 hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
-                <PiggyBank className="h-5 w-5 text-green-400" />
+                <PiggyBank className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <div className="font-semibold group-hover:text-amber-400 transition-colors">
+                <div className="font-semibold group-hover:text-[#B22234] transition-colors">
                   Lean FIRE
                 </div>
-                <div className="text-xs text-slate-400">Minimalist approach</div>
+                <div className="text-xs text-slate-500">Minimalist approach</div>
               </div>
-              <ArrowRight className="h-4 w-4 ml-auto text-slate-400 group-hover:text-amber-400 transition-colors" />
+              <ArrowRight className="h-4 w-4 ml-auto text-slate-500 group-hover:text-[#B22234] transition-colors" />
             </div>
           </Link>
         </div>
@@ -850,52 +850,52 @@ export function FIRECalculator() {
 
       {/* Educational Content */}
       <div className="max-w-4xl mx-auto mt-12">
-        <div className="prose prose-invert max-w-none">
+        <div className="prose max-w-none">
           <h2 className="text-3xl font-bold mb-6">Understanding FIRE</h2>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-6">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
             <h3 className="text-xl font-semibold mb-4">What is FIRE?</h3>
-            <p className="text-slate-400 mb-4">
+            <p className="text-slate-500 mb-4">
               FIRE (Financial Independence, Retire Early) is a lifestyle movement dedicated to extreme savings and investment. The goal is to accumulate assets until the returns from your investments can cover your living expenses indefinitely, allowing you to retire decades before the traditional age of 65.
             </p>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               The core principle is simple: save aggressively (typically 50-70% of income), invest in low-cost index funds, and live below your means. Once your invested assets reach 25 times your annual expenses (your &quot;FIRE number&quot;), you can safely withdraw 4% annually without depleting your principal.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-6">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
             <h3 className="text-xl font-semibold mb-4">The FIRE Number Formula</h3>
-            <div className="bg-slate-800 rounded-lg p-4 font-mono text-sm mb-4">
+            <div className="bg-slate-100 rounded-lg p-4 font-mono text-sm mb-4">
               FIRE Number = Annual Expenses / Safe Withdrawal Rate
             </div>
-            <p className="text-slate-400 mb-4">
+            <p className="text-slate-500 mb-4">
               With a standard 4% withdrawal rate, this simplifies to:
             </p>
-            <div className="bg-slate-800 rounded-lg p-4 font-mono text-sm mb-4">
+            <div className="bg-slate-100 rounded-lg p-4 font-mono text-sm mb-4">
               FIRE Number = Annual Expenses x 25
             </div>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               For example, if you spend $50,000 per year, your FIRE number is $1,250,000. Once you reach this amount, you can withdraw $50,000 annually (4% of $1.25M) to cover your expenses.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-xl font-semibold mb-4">Types of FIRE</h3>
-            <ul className="space-y-3 text-slate-400">
+            <ul className="space-y-3 text-slate-500">
               <li className="flex gap-2">
                 <Flame className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                 <span><strong>Traditional FIRE:</strong> Standard approach targeting 25x expenses for moderate lifestyle</span>
               </li>
               <li className="flex gap-2">
-                <Flame className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <Flame className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <span><strong>Lean FIRE:</strong> Minimalist lifestyle with annual expenses under $40,000</span>
               </li>
               <li className="flex gap-2">
-                <Flame className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <Flame className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <span><strong>Fat FIRE:</strong> Luxury retirement with $100,000+ annual spending</span>
               </li>
               <li className="flex gap-2">
-                <Flame className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <Flame className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <span><strong>Coast FIRE:</strong> Save enough early, then coast without additional contributions</span>
               </li>
               <li className="flex gap-2">
@@ -911,37 +911,37 @@ export function FIRECalculator() {
       <div className="max-w-4xl mx-auto mt-12">
         <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
         <div className="space-y-4">
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-2">What is FIRE?</h3>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               FIRE stands for Financial Independence, Retire Early. It&apos;s a lifestyle movement focused on extreme savings and investment to achieve financial freedom earlier than traditional retirement age. The goal is to accumulate enough assets to live off investment returns indefinitely.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-2">How is the FIRE number calculated?</h3>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               Your FIRE number is calculated by dividing your annual expenses by your safe withdrawal rate (typically 4%). For example, if you spend $50,000 per year and use a 4% withdrawal rate, your FIRE number is $1,250,000 ($50,000 / 0.04).
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-2">What is a safe withdrawal rate?</h3>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               A safe withdrawal rate (SWR) is the percentage of your portfolio you can withdraw annually without running out of money. The most common SWR is 4%, based on the Trinity Study, which found this rate historically sustained portfolios for 30+ years.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-2">How does Social Security affect my FIRE plan?</h3>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               Social Security can reduce your FIRE number because it provides guaranteed income starting at age 62-70. You can factor in expected Social Security benefits to lower the amount you need to save, though early retirees should plan for years before SS kicks in.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-2">What is the difference between FIRE, Lean FIRE, and Fat FIRE?</h3>
-            <p className="text-slate-400">
+            <p className="text-slate-500">
               Lean FIRE targets minimal expenses (typically under $40,000/year), standard FIRE targets moderate expenses ($40,000-$100,000/year), and Fat FIRE targets higher spending ($100,000+/year) for a more luxurious retirement lifestyle.
             </p>
           </div>

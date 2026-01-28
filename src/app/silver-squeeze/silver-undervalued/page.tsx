@@ -116,19 +116,19 @@ const schema = {
 
 export default function SilverUndervaluedPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="text-slate-400 font-bold tracking-widest uppercase text-xs mb-4 block">
+                        <span className="text-slate-600 font-bold tracking-widest uppercase text-xs mb-4 block">
                             Silver Market Analysis
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Is Silver Undervalued? Fair Value Analysis
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             By multiple measures, silver appears to be one of the most undervalued assets on the planet. Here&apos;s the data behind that bold claim.
                         </p>
                     </div>
@@ -143,7 +143,7 @@ export default function SilverUndervaluedPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -163,60 +163,60 @@ export default function SilverUndervaluedPage() {
                         {/* Gold-Silver Ratio */}
                         <section id="gold-silver-ratio" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Silver-to-Gold Ratio</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Silver-to-Gold Ratio</h2>
                             </div>
                             <p>
                                 The silver-to-gold ratio measures how many ounces of silver equal one ounce of gold in value. This ratio provides historical context for silver&apos;s relative value:
                             </p>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Historical Silver-to-Gold Ratios</h4>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Historical Silver-to-Gold Ratios</h4>
                                 <div className="space-y-4">
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Ancient/Medieval Average</span>
-                                            <span className="text-white font-bold">12:1 to 15:1</span>
+                                            <span className="text-slate-600">Ancient/Medieval Average</span>
+                                            <span className="text-slate-900 font-bold">12:1 to 15:1</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-green-400 h-3 rounded-full" style={{ width: '15%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">20th Century Average</span>
-                                            <span className="text-white font-bold">~40:1</span>
+                                            <span className="text-slate-600">20th Century Average</span>
+                                            <span className="text-slate-900 font-bold">~40:1</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-amber-400 h-3 rounded-full" style={{ width: '40%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">1980 Ratio (Silver Spike)</span>
-                                            <span className="text-white font-bold">~16:1</span>
+                                            <span className="text-slate-600">1980 Ratio (Silver Spike)</span>
+                                            <span className="text-slate-900 font-bold">~16:1</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-green-400 h-3 rounded-full" style={{ width: '16%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">2011 Ratio (Silver Rally)</span>
-                                            <span className="text-white font-bold">~32:1</span>
+                                            <span className="text-slate-600">2011 Ratio (Silver Rally)</span>
+                                            <span className="text-slate-900 font-bold">~32:1</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-green-400 h-3 rounded-full" style={{ width: '32%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Current (2026)</span>
+                                            <span className="text-slate-600">Current (2026)</span>
                                             <span className="text-red-400 font-bold">~80:1 to 90:1</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-red-400 h-3 rounded-full" style={{ width: '85%' }}></div>
                                         </div>
                                     </div>
@@ -242,22 +242,22 @@ export default function SilverUndervaluedPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <History className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Inflation-Adjusted Silver Price</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Inflation-Adjusted Silver Price</h2>
                             </div>
                             <p>
                                 Silver&apos;s nominal all-time high was $50/oz in January 1980 (and again briefly in 2011). But what would that price be worth in today&apos;s dollars?
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 text-center">
-                                    <div className="text-4xl font-bold text-amber-400 mb-2">$50</div>
-                                    <div className="text-slate-400 text-sm mb-4">1980 Nominal High</div>
-                                    <div className="text-xs text-slate-500">January 21, 1980</div>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-[#B22234] mb-2">$50</div>
+                                    <div className="text-slate-600 text-sm mb-4">1980 Nominal High</div>
+                                    <div className="text-xs text-slate-600">January 21, 1980</div>
                                 </div>
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30 text-center">
                                     <div className="text-4xl font-bold text-green-400 mb-2">$185+</div>
-                                    <div className="text-slate-400 text-sm mb-4">Inflation-Adjusted (2026)</div>
-                                    <div className="text-xs text-slate-500">Using CPI calculation</div>
+                                    <div className="text-slate-600 text-sm mb-4">Inflation-Adjusted (2026)</div>
+                                    <div className="text-xs text-slate-600">Using CPI calculation</div>
                                 </div>
                             </div>
 
@@ -268,20 +268,20 @@ export default function SilverUndervaluedPage() {
                                 Of course, 1980 was an exceptional period (Hunt Brothers squeeze, high inflation fears). But that&apos;s precisely the point&mdash;if similar conditions return (which many believe are developing), silver has significant upside.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Silver vs Gold: Inflation-Adjusted Performance</h4>
-                                <p className="text-slate-300 mb-4">Gold has reached new all-time highs in nominal AND inflation-adjusted terms. Silver hasn&apos;t come close.</p>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Silver vs Gold: Inflation-Adjusted Performance</h4>
+                                <p className="text-slate-600 mb-4">Gold has reached new all-time highs in nominal AND inflation-adjusted terms. Silver hasn&apos;t come close.</p>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="text-center p-4 bg-white/5 rounded-xl">
+                                    <div className="text-center p-4 bg-slate-50 rounded-xl">
                                         <div className="text-lg font-bold text-green-400">Gold: Yes</div>
-                                        <div className="text-xs text-slate-400">New ATH (nominal & real)</div>
+                                        <div className="text-xs text-slate-600">New ATH (nominal & real)</div>
                                     </div>
-                                    <div className="text-center p-4 bg-white/5 rounded-xl">
+                                    <div className="text-center p-4 bg-slate-50 rounded-xl">
                                         <div className="text-lg font-bold text-red-400">Silver: No</div>
-                                        <div className="text-xs text-slate-400">Far below ATH (both)</div>
+                                        <div className="text-xs text-slate-600">Far below ATH (both)</div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-amber-400 mt-4">This divergence suggests silver has significant catch-up potential.</p>
+                                <p className="text-sm text-[#B22234] mt-4">This divergence suggests silver has significant catch-up potential.</p>
                             </div>
                         </section>
 
@@ -291,7 +291,7 @@ export default function SilverUndervaluedPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Factory className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Industrial Utility Value</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Industrial Utility Value</h2>
                             </div>
                             <p>
                                 Here&apos;s a fundamental question: Why does silver trade at 1/80th the price of gold when it has <strong>far more industrial utility</strong>?
@@ -321,7 +321,7 @@ export default function SilverUndervaluedPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Production Cost Floor</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Production Cost Floor</h2>
                             </div>
                             <p>
                                 Silver mining costs have increased substantially due to:
@@ -333,23 +333,23 @@ export default function SilverUndervaluedPage() {
                                 <li><strong>Regulatory costs:</strong> Environmental and safety compliance adds expense</li>
                             </ul>
 
-                            <div className="bg-slate-800/50 rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Silver Mining Cost Estimates</h4>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Silver Mining Cost Estimates</h4>
                                 <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
-                                        <span className="text-slate-400">Cash Cost (Direct)</span>
-                                        <span className="text-white font-bold">$10-15/oz</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                                        <span className="text-slate-600">Cash Cost (Direct)</span>
+                                        <span className="text-slate-900 font-bold">$10-15/oz</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
-                                        <span className="text-slate-400">All-In Sustaining Cost (AISC)</span>
-                                        <span className="text-white font-bold">$18-24/oz</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                                        <span className="text-slate-600">All-In Sustaining Cost (AISC)</span>
+                                        <span className="text-slate-900 font-bold">$18-24/oz</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
-                                        <span className="text-slate-400">All-In Cost (Including Growth)</span>
-                                        <span className="text-white font-bold">$22-28/oz</span>
+                                    <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                                        <span className="text-slate-600">All-In Cost (Including Growth)</span>
+                                        <span className="text-slate-900 font-bold">$22-28/oz</span>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-400 mt-4">Many primary silver miners need $25+/oz to be profitable long-term and fund exploration.</p>
+                                <p className="text-sm text-slate-600 mt-4">Many primary silver miners need $25+/oz to be profitable long-term and fund exploration.</p>
                             </div>
 
                             <p>
@@ -361,12 +361,12 @@ export default function SilverUndervaluedPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose border border-white/10">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Position for Silver&apos;s Revaluation</h3>
-                                <p className="mb-6 text-slate-300">A Silver IRA lets you hold physical silver with tax advantages. Find the right company for you.</p>
-                                <Button variant="gold" size="lg" asChild>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Position for Silver&apos;s Revaluation</h3>
+                                <p className="mb-6 text-slate-600">A Silver IRA lets you hold physical silver with tax advantages. Find the right company for you.</p>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                     <Link href="/quiz">Get Your Free Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -378,35 +378,35 @@ export default function SilverUndervaluedPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <Target className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Expert Price Targets</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Expert Price Targets</h2>
                             </div>
                             <p>
                                 Analysts and investors have offered various price targets for silver based on different methodologies and scenarios:
                             </p>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                     <div className="flex justify-between items-center mb-2">
-                                        <h4 className="font-bold text-white text-lg">Conservative Target</h4>
+                                        <h4 className="font-bold text-slate-900 text-lg">Conservative Target</h4>
                                         <span className="text-2xl font-bold text-green-400">$40-50/oz</span>
                                     </div>
-                                    <p className="text-sm text-slate-400">Based on modest ratio compression and continued supply deficit. Achievable in normal market conditions.</p>
+                                    <p className="text-sm text-slate-600">Based on modest ratio compression and continued supply deficit. Achievable in normal market conditions.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                     <div className="flex justify-between items-center mb-2">
-                                        <h4 className="font-bold text-white text-lg">Moderate Bull Target</h4>
-                                        <span className="text-2xl font-bold text-amber-400">$75-100/oz</span>
+                                        <h4 className="font-bold text-slate-900 text-lg">Moderate Bull Target</h4>
+                                        <span className="text-2xl font-bold text-[#B22234]">$75-100/oz</span>
                                     </div>
-                                    <p className="text-sm text-slate-400">Based on gold-silver ratio returning to 40:1, or inflation-adjusted pricing. Likely requires broader precious metals bull market.</p>
+                                    <p className="text-sm text-slate-600">Based on gold-silver ratio returning to 40:1, or inflation-adjusted pricing. Likely requires broader precious metals bull market.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-amber-500/10 border border-amber-500/30">
+                                <div className="p-6 rounded-xl bg-[#B22234]/10 border border-[#B22234]/30">
                                     <div className="flex justify-between items-center mb-2">
-                                        <h4 className="font-bold text-amber-400 text-lg">Aggressive Target</h4>
+                                        <h4 className="font-bold text-[#B22234] text-lg">Aggressive Target</h4>
                                         <span className="text-2xl font-bold text-red-400">$100-300/oz</span>
                                     </div>
-                                    <p className="text-sm text-slate-400">Requires currency crisis, industrial squeeze, or paper market failure. High conviction silver bulls cite these targets.</p>
+                                    <p className="text-sm text-slate-600">Requires currency crisis, industrial squeeze, or paper market failure. High conviction silver bulls cite these targets.</p>
                                 </div>
                             </div>
 
@@ -422,35 +422,35 @@ export default function SilverUndervaluedPage() {
                         {/* Investment Case */}
                         <section id="investment-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-400/20 rounded-lg text-slate-300">
+                                <div className="p-3 bg-[#B22234]/10 rounded-lg text-slate-600">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Investment Case for Silver</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Investment Case for Silver</h2>
                             </div>
                             <p>
                                 Summarizing the undervaluation thesis:
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <BarChart3 className="w-8 h-8 text-amber-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Relative Value</h4>
-                                    <p className="text-sm text-slate-400">Gold-silver ratio at historic extremes. Mean reversion suggests silver outperforms gold significantly.</p>
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <BarChart3 className="w-8 h-8 text-[#B22234] mb-4" />
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Relative Value</h4>
+                                    <p className="text-sm text-slate-600">Gold-silver ratio at historic extremes. Mean reversion suggests silver outperforms gold significantly.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                     <History className="w-8 h-8 text-red-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Historical Context</h4>
-                                    <p className="text-sm text-slate-400">Inflation-adjusted price far below 1980 peak. Silver hasn&apos;t kept pace with money supply growth.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Historical Context</h4>
+                                    <p className="text-sm text-slate-600">Inflation-adjusted price far below 1980 peak. Silver hasn&apos;t kept pace with money supply growth.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                     <Factory className="w-8 h-8 text-blue-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Fundamental Demand</h4>
-                                    <p className="text-sm text-slate-400">Industrial demand growing (solar, EVs). Supply deficit persisting. COMEX inventory depleting.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Fundamental Demand</h4>
+                                    <p className="text-sm text-slate-600">Industrial demand growing (solar, EVs). Supply deficit persisting. COMEX inventory depleting.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+                                <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                     <Scale className="w-8 h-8 text-purple-400 mb-4" />
-                                    <h4 className="font-bold text-white text-lg mb-2">Market Structure</h4>
-                                    <p className="text-sm text-slate-400">Concentrated short positions. Paper market dominant. Physical market tightening.</p>
+                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Market Structure</h4>
+                                    <p className="text-sm text-slate-600">Concentrated short positions. Paper market dominant. Physical market tightening.</p>
                                 </div>
                             </div>
 
@@ -472,72 +472,72 @@ export default function SilverUndervaluedPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is silver undervalued in 2026?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Multiple metrics suggest silver is undervalued: the silver-to-gold ratio is historically elevated, inflation-adjusted prices are far below 1980 highs, industrial demand is growing while supply stagnates, and expert analysts cite fair values well above current prices. The structural supply deficit adds fundamental support.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What is the fair value of silver?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Fair value estimates vary by methodology. Using the historical gold-silver ratio (40:1 vs current 80:1), silver should be $60-70/oz. Inflation-adjusted from 1980, silver&apos;s fair value exceeds $180/oz. Analysts&apos; targets range from $50-100/oz based on various fundamentals.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Why is the silver-to-gold ratio important?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         The silver-to-gold ratio shows how many ounces of silver equal one ounce of gold in value. The historical average is roughly 40:1. When the ratio exceeds 80:1 (as it often has recently), silver is historically cheap relative to gold. Investors use this ratio to time silver purchases.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What would silver be worth adjusted for inflation?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Silver hit $50/oz in January 1980. Adjusted for inflation, that price equals approximately $180-200/oz in 2026 dollars. Current silver prices around $30-35/oz represent a fraction of this inflation-adjusted peak, suggesting significant upside potential if silver revisits previous mania levels.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What do experts predict for silver prices?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Expert price targets vary widely. Conservative analysts see $40-50/oz as achievable. Moderate bulls target $75-100/oz based on ratio normalization and supply deficit. Aggressive forecasters predict $100-300/oz in a currency crisis or industrial squeeze scenario. Most agree current prices undervalue silver.
                                     </p>
                                 </details>
@@ -545,16 +545,16 @@ export default function SilverUndervaluedPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white relative overflow-hidden not-prose border border-white/10">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-slate-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose border border-slate-200">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Accumulate Silver at Today&apos;s Prices</h3>
-                                <p className="mb-6 text-slate-300 max-w-xl mx-auto">If silver is indeed undervalued, current prices represent an opportunity. A Silver IRA offers tax-advantaged physical ownership.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Accumulate Silver at Today&apos;s Prices</h3>
+                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">If silver is indeed undervalued, current prices represent an opportunity. A Silver IRA offers tax-advantaged physical ownership.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/learn/is-silver-a-good-investment">Silver Investment Guide</Link>
                                     </Button>
                                 </div>
@@ -568,7 +568,7 @@ export default function SilverUndervaluedPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="silver-squeeze-undervalued" />
                 </Container>

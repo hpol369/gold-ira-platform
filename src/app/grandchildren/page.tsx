@@ -28,32 +28,31 @@ export default function GrandchildrenPage() {
   const articles = getAllGrandchildrenArticles();
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-green-900/30 via-slate-900 to-slate-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(34,197,94,0.15),transparent_50%)]" />
+      <section className="relative pt-24 pb-16 overflow-hidden bg-slate-50">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(34,197,94,0.08),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 text-green-400 text-sm font-medium mb-4">
+            <div className="inline-flex items-center gap-2 text-green-600 text-sm font-medium mb-4">
               <Gift className="h-4 w-4" />
               GENERATIONAL WEALTH
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
               Grandchildren{" "}
-              <span className="text-green-400">Legacy Hub</span>
+              <span className="text-green-600">Legacy Hub</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               Building wealth for the next generation is one of the greatest gifts
               you can give. Learn smart ways to gift, save, and invest for your
               grandchildren&apos;s future.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="gold" size="lg" asChild>
+              <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
                 <Link href="/quiz">
                   Plan Your Legacy <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -62,7 +61,7 @@ export default function GrandchildrenPage() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-white/20 text-white hover:bg-white/10"
+                className="border-slate-300 text-slate-700 hover:bg-slate-100"
               >
                 <a href="#guides">View Guides</a>
               </Button>
@@ -72,62 +71,62 @@ export default function GrandchildrenPage() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-8 border-y border-white/10 bg-slate-800/30">
+      <section className="py-8 border-y border-slate-200 bg-white">
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-green-400">$18K</div>
-              <div className="text-sm text-slate-400">Annual Gift Exclusion</div>
+              <div className="text-3xl font-bold text-green-600">$18K</div>
+              <div className="text-sm text-slate-500">Annual Gift Exclusion</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-green-400">$90K</div>
-              <div className="text-sm text-slate-400">5-Year Superfunding</div>
+              <div className="text-3xl font-bold text-green-600">$90K</div>
+              <div className="text-sm text-slate-500">5-Year Superfunding</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-green-400">Tax-Free</div>
-              <div className="text-sm text-slate-400">529 Growth</div>
+              <div className="text-3xl font-bold text-green-600">Tax-Free</div>
+              <div className="text-sm text-slate-500">529 Growth</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-green-400">∞</div>
-              <div className="text-sm text-slate-400">Direct Tuition Gifts</div>
+              <div className="text-3xl font-bold text-green-600">∞</div>
+              <div className="text-sm text-slate-500">Direct Tuition Gifts</div>
             </div>
           </div>
         </Container>
       </section>
 
       {/* Strategies Overview */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-white mb-8 text-center">
+          <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">
             Ways to Build Grandchildren&apos;s Wealth
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <div className="bg-green-500/20 p-3 rounded-lg inline-block mb-4">
-                <GraduationCap className="h-6 w-6 text-green-400" />
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <div className="bg-green-100 p-3 rounded-lg inline-block mb-4">
+                <GraduationCap className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="font-bold text-white mb-2">529 Education Plans</h3>
-              <p className="text-slate-400 text-sm">
+              <h3 className="font-bold text-slate-900 mb-2">529 Education Plans</h3>
+              <p className="text-slate-500 text-sm">
                 Tax-free growth for education. Superfund up to $90K at once.
                 New FAFSA rules make grandparent 529s more attractive than ever.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <div className="bg-blue-500/20 p-3 rounded-lg inline-block mb-4">
-                <Briefcase className="h-6 w-6 text-blue-400" />
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4">
+                <Briefcase className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-bold text-white mb-2">Trust Funds</h3>
-              <p className="text-slate-400 text-sm">
+              <h3 className="font-bold text-slate-900 mb-2">Trust Funds</h3>
+              <p className="text-slate-500 text-sm">
                 Control when and how grandchildren receive money. Protect from
                 creditors, divorce, and poor decisions with proper trust structure.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-              <div className="bg-amber-500/20 p-3 rounded-lg inline-block mb-4">
-                <DollarSign className="h-6 w-6 text-amber-400" />
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+              <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
+                <DollarSign className="h-6 w-6 text-amber-600" />
               </div>
-              <h3 className="font-bold text-white mb-2">Direct Gifts</h3>
-              <p className="text-slate-400 text-sm">
+              <h3 className="font-bold text-slate-900 mb-2">Direct Gifts</h3>
+              <p className="text-slate-500 text-sm">
                 Annual gifts up to $18K per grandchild tax-free. Pay tuition
                 directly to schools with no limit. Start building wealth now.
               </p>
@@ -137,11 +136,11 @@ export default function GrandchildrenPage() {
       </section>
 
       {/* Guides */}
-      <section id="guides" className="py-16 bg-slate-800/30 scroll-mt-16">
+      <section id="guides" className="py-16 bg-slate-50 scroll-mt-16">
         <Container>
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-serif font-bold text-white flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-green-400" />
+            <h2 className="text-2xl font-serif font-bold text-[#000080] flex items-center gap-2">
+              <BookOpen className="h-6 w-6 text-green-600" />
               Legacy Planning Guides
             </h2>
           </div>
@@ -151,20 +150,20 @@ export default function GrandchildrenPage() {
               <Link
                 key={article.slug}
                 href={`/grandchildren/${article.slug}`}
-                className="bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-green-500/30 rounded-xl p-6 transition-all group"
+                className="bg-white hover:bg-slate-50 border border-slate-200 hover:border-green-300 rounded-xl p-6 transition-all group"
               >
-                <h3 className="text-lg font-bold text-white group-hover:text-green-400 transition-colors mb-2 leading-snug">
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-green-600 transition-colors mb-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-sm text-slate-400 line-clamp-2">
+                <p className="text-sm text-slate-500 line-clamp-2">
                   {article.subtitle}
                 </p>
                 {article.volume && (
-                  <div className="mt-4 text-xs text-slate-500">
+                  <div className="mt-4 text-xs text-slate-400">
                     {article.volume.toLocaleString()} monthly searches
                   </div>
                 )}
-                <div className="mt-4 flex items-center text-green-400 text-sm font-medium">
+                <div className="mt-4 flex items-center text-green-600 text-sm font-medium">
                   Read Guide <ArrowRight className="ml-1 h-4 w-4" />
                 </div>
               </Link>
@@ -174,19 +173,19 @@ export default function GrandchildrenPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <Heart className="h-12 w-12 text-green-400 mx-auto mb-6" />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
+            <Heart className="h-12 w-12 text-green-600 mx-auto mb-6" />
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
               More Than Money
             </h2>
-            <p className="text-slate-400 mb-8">
+            <p className="text-slate-500 mb-8">
               The greatest legacy isn&apos;t just financial—it&apos;s the values,
               wisdom, and love you pass on. These guides help you build both
               financial wealth and family connections across generations.
             </p>
-            <Button variant="gold" size="xl" asChild>
+            <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
               <Link href="/quiz">
                 Start Planning Today <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -196,7 +195,7 @@ export default function GrandchildrenPage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-800/50 border-t border-white/10">
+      <section className="py-16 bg-slate-50 border-t border-slate-200">
         <Container>
           <AugustaCTA
             variant="footer"

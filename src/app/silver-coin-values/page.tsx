@@ -168,27 +168,27 @@ const schema = {
 
 export default function SilverCoinValuesHubPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-500/20 border border-slate-500/30 rounded-full text-slate-300 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
               <Coins className="h-4 w-4" />
               SILVER COIN PRICE GUIDE
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
               Silver Coin Values
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
               Discover what your silver coins are really worth. From Morgan dollars to junk silver,
               we reveal the values the banks and coin dealers hope you never learn.
-              <span className="text-amber-400 font-semibold"> Real money vs paper promises.</span>
+              <span className="text-[#B22234] font-semibold"> Real money vs paper promises.</span>
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-600">
               <span className="flex items-center gap-2">
                 <TrendingUp className="h-4 w-4 text-green-400" />
                 13,900+ Monthly Searches
@@ -198,7 +198,7 @@ export default function SilverCoinValuesHubPage() {
                 Free Melt Calculator
               </span>
               <span className="flex items-center gap-2">
-                <Star className="h-4 w-4 text-amber-400" />
+                <Star className="h-4 w-4 text-[#B22234]" />
                 8 Coin Types Covered
               </span>
             </div>
@@ -207,17 +207,17 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* Why Silver Coins Matter */}
-      <section className="py-12 bg-slate-900 border-y border-white/10">
+      <section className="py-12 bg-white border-y border-slate-200">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
-              <h2 className="text-lg font-bold text-white mb-2">
+            <div className="bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
+              <h2 className="text-lg font-bold text-slate-900 mb-2">
                 What the Banks Don&apos;t Want You to Know About Silver
               </h2>
-              <p className="text-slate-300">
+              <p className="text-slate-600">
                 While the Federal Reserve prints trillions in paper currency, old silver coins hold their
                 purchasing power. A silver quarter from 1964 had 25 cents of buying power then - today,
-                its silver content is worth over <span className="text-amber-400 font-semibold">$4.50</span>.
+                its silver content is worth over <span className="text-[#B22234] font-semibold">$4.50</span>.
                 That&apos;s not the coin increasing in value - it&apos;s the dollar losing 95% of its purchasing power.
                 Understanding silver coin values is the first step to protecting your wealth with real assets.
               </p>
@@ -227,13 +227,13 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* Featured Pages */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
               Silver Coin Value Guides
             </h2>
-            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
               Each guide includes value charts by year and condition, grading tips,
               key dates to look for, and current market prices.
             </p>
@@ -244,33 +244,33 @@ export default function SilverCoinValuesHubPage() {
                   <Link
                     key={page.slug}
                     href={`/silver-coin-values/${page.slug}`}
-                    className={`group bg-white/5 backdrop-blur-sm border rounded-xl p-6 hover:bg-white/10 transition-all ${
+                    className={`group bg-slate-50 backdrop-blur-sm border rounded-xl p-6 hover:bg-slate-100 transition-all ${
                       page.highlight
-                        ? "border-amber-500/30 hover:border-amber-500/50"
-                        : "border-white/10 hover:border-slate-500/30"
+                        ? "border-[#B22234]/30 hover:border-[#B22234]/50"
+                        : "border-slate-200 hover:border-slate-300"
                     }`}
                   >
                     <div className="flex items-start gap-4">
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
                         page.highlight
-                          ? "bg-amber-500/20"
-                          : "bg-white/10"
+                          ? "bg-[#B22234]/20"
+                          : "bg-slate-100"
                       }`}>
                         <Icon className={`h-6 w-6 ${
-                          page.highlight ? "text-amber-400" : "text-slate-400"
+                          page.highlight ? "text-[#B22234]" : "text-slate-600"
                         }`} />
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <h3 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
+                          <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">
                             {page.title}
                           </h3>
                         </div>
-                        <p className="text-slate-400 text-sm mb-3">
+                        <p className="text-slate-600 text-sm mb-3">
                           {page.description}
                         </p>
                         <div className="flex items-center gap-3 text-xs">
-                          <span className="text-slate-500">
+                          <span className="text-slate-600">
                             {page.volume} searches/mo
                           </span>
                           {page.difficulty <= 3 && (
@@ -279,14 +279,14 @@ export default function SilverCoinValuesHubPage() {
                             </span>
                           )}
                           {page.highlight && (
-                            <span className="bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded">
+                            <span className="bg-[#B22234]/20 text-[#B22234] px-2 py-0.5 rounded">
                               Popular
                             </span>
                           )}
                         </div>
                       </div>
                     </div>
-                    <div className="flex items-center gap-1 mt-4 text-slate-400 group-hover:text-amber-400 transition-colors text-sm">
+                    <div className="flex items-center gap-1 mt-4 text-slate-600 group-hover:text-[#B22234] transition-colors text-sm">
                       View Price Guide
                       <ArrowRight className="h-4 w-4" />
                     </div>
@@ -299,70 +299,70 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* Quick Reference Table */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Silver Coin Quick Value Reference
             </h2>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[600px]">
-                <thead className="bg-slate-800/50">
+                <thead className="bg-slate-50">
                   <tr>
-                    <th className="text-left p-4 text-white font-bold">Coin Type</th>
-                    <th className="text-center p-4 text-white font-bold">Years</th>
-                    <th className="text-center p-4 text-white font-bold">Silver Content</th>
-                    <th className="text-center p-4 text-white font-bold">Melt Value*</th>
-                    <th className="text-center p-4 text-white font-bold">Typical Premium</th>
+                    <th className="text-left p-4 text-slate-900 font-bold">Coin Type</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Years</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Silver Content</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Melt Value*</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Typical Premium</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/10">
+                <tbody className="divide-y divide-slate-200">
                   <tr>
-                    <td className="p-4 text-slate-300 font-medium">Morgan Dollar</td>
-                    <td className="p-4 text-center text-slate-400">1878-1921</td>
-                    <td className="p-4 text-center text-slate-400">0.7734 oz</td>
+                    <td className="p-4 text-slate-600 font-medium">Morgan Dollar</td>
+                    <td className="p-4 text-center text-slate-600">1878-1921</td>
+                    <td className="p-4 text-center text-slate-600">0.7734 oz</td>
                     <td className="p-4 text-center text-green-400">$19.34</td>
-                    <td className="p-4 text-center text-amber-400">50-200%+</td>
+                    <td className="p-4 text-center text-[#B22234]">50-200%+</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-300 font-medium">Peace Dollar</td>
-                    <td className="p-4 text-center text-slate-400">1921-1935</td>
-                    <td className="p-4 text-center text-slate-400">0.7734 oz</td>
+                    <td className="p-4 text-slate-600 font-medium">Peace Dollar</td>
+                    <td className="p-4 text-center text-slate-600">1921-1935</td>
+                    <td className="p-4 text-center text-slate-600">0.7734 oz</td>
                     <td className="p-4 text-center text-green-400">$19.34</td>
-                    <td className="p-4 text-center text-amber-400">30-100%+</td>
+                    <td className="p-4 text-center text-[#B22234]">30-100%+</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-300 font-medium">Walking Liberty Half</td>
-                    <td className="p-4 text-center text-slate-400">1916-1947</td>
-                    <td className="p-4 text-center text-slate-400">0.3617 oz</td>
+                    <td className="p-4 text-slate-600 font-medium">Walking Liberty Half</td>
+                    <td className="p-4 text-center text-slate-600">1916-1947</td>
+                    <td className="p-4 text-center text-slate-600">0.3617 oz</td>
                     <td className="p-4 text-center text-green-400">$9.04</td>
-                    <td className="p-4 text-center text-amber-400">10-50%</td>
+                    <td className="p-4 text-center text-[#B22234]">10-50%</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-300 font-medium">Silver Quarter</td>
-                    <td className="p-4 text-center text-slate-400">1932-1964</td>
-                    <td className="p-4 text-center text-slate-400">0.1808 oz</td>
+                    <td className="p-4 text-slate-600 font-medium">Silver Quarter</td>
+                    <td className="p-4 text-center text-slate-600">1932-1964</td>
+                    <td className="p-4 text-center text-slate-600">0.1808 oz</td>
                     <td className="p-4 text-center text-green-400">$4.52</td>
-                    <td className="p-4 text-center text-amber-400">5-15%</td>
+                    <td className="p-4 text-center text-[#B22234]">5-15%</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-300 font-medium">Silver Dime</td>
-                    <td className="p-4 text-center text-slate-400">1946-1964</td>
-                    <td className="p-4 text-center text-slate-400">0.0723 oz</td>
+                    <td className="p-4 text-slate-600 font-medium">Silver Dime</td>
+                    <td className="p-4 text-center text-slate-600">1946-1964</td>
+                    <td className="p-4 text-center text-slate-600">0.0723 oz</td>
                     <td className="p-4 text-center text-green-400">$1.81</td>
-                    <td className="p-4 text-center text-amber-400">5-15%</td>
+                    <td className="p-4 text-center text-[#B22234]">5-15%</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-300 font-medium">War Nickel</td>
-                    <td className="p-4 text-center text-slate-400">1942-1945</td>
-                    <td className="p-4 text-center text-slate-400">0.0563 oz</td>
+                    <td className="p-4 text-slate-600 font-medium">War Nickel</td>
+                    <td className="p-4 text-center text-slate-600">1942-1945</td>
+                    <td className="p-4 text-center text-slate-600">0.0563 oz</td>
                     <td className="p-4 text-center text-green-400">$1.41</td>
-                    <td className="p-4 text-center text-amber-400">5-20%</td>
+                    <td className="p-4 text-center text-[#B22234]">5-20%</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-slate-500 mt-4 text-center">
+            <p className="text-xs text-slate-600 mt-4 text-center">
               *Melt values based on $25/oz silver spot price. Actual values fluctuate with market prices.
               Premium percentages vary by condition, date, and market demand.
             </p>
@@ -371,10 +371,10 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* Grading Quick Guide */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Coin Grading Quick Guide
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -390,17 +390,17 @@ export default function SilverCoinValuesHubPage() {
               ].map((item) => (
                 <div
                   key={item.grade}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4"
+                  className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4"
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-white font-bold">{item.grade}</span>
-                    <span className="text-amber-400 text-sm">{item.value}</span>
+                    <span className="text-slate-900 font-bold">{item.grade}</span>
+                    <span className="text-[#B22234] text-sm">{item.value}</span>
                   </div>
-                  <p className="text-slate-400 text-sm">{item.desc}</p>
+                  <p className="text-slate-600 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
-            <p className="text-sm text-slate-400 text-center mt-6">
+            <p className="text-sm text-slate-600 text-center mt-6">
               Higher grades command exponentially higher premiums. A Morgan dollar in MS-65 condition
               can be worth 10x or more than the same coin in VF-20.
             </p>
@@ -409,25 +409,25 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -438,7 +438,7 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

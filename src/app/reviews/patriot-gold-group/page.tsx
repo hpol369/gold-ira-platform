@@ -93,18 +93,18 @@ const tocItems = [
 
 export default function PatriotGoldReviewPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
-            <header className="bg-primary text-white py-16 relative overflow-hidden">
+            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="flex gap-1">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className={`w-5 h-5 ${i < 5 ? 'fill-secondary text-secondary' : 'text-gray-400'}`} />
+                                    <Star key={i} className={`w-5 h-5 ${i < 5 ? 'fill-[#B22234] text-[#B22234]' : 'text-gray-400'}`} />
                                 ))}
                             </div>
-                            <span className="font-bold text-secondary text-lg">4.7/5.0 Rating</span>
+                            <span className="font-bold text-[#B22234] text-lg">4.7/5.0 Rating</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
                             Patriot Gold Group Review (2026)
@@ -125,7 +125,7 @@ export default function PatriotGoldReviewPage() {
                                 <ReviewSidebar {...companyData} />
                             </div>
 
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
 
                                 <section>
                                     <p className="lead">
@@ -141,15 +141,15 @@ export default function PatriotGoldReviewPage() {
 
                                 {/* Verdict Section */}
                                 <section id="verdict" className="scroll-mt-32">
-                                    <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 not-prose">
+                                    <div className="bg-slate-50 backdrop-blur-sm p-8 rounded-2xl border border-slate-200 not-prose">
                                         <div className="flex items-center gap-4 mb-4">
-                                            <TrendingUp className="w-10 h-10 text-secondary" />
-                                            <h2 className="text-2xl font-bold text-white m-0">The Verdict</h2>
+                                            <TrendingUp className="w-10 h-10 text-[#B22234]" />
+                                            <h2 className="text-2xl font-bold text-[#000080] m-0">The Verdict</h2>
                                         </div>
-                                        <p className="text-slate-300 mb-4">
-                                            Patriot Gold Group is legitimate and well-reviewed. Their &quot;No-Fee for Life&quot; program is real—but you&apos;ll need at least <strong className="text-white">$100,000</strong> to qualify. For smaller accounts, you&apos;ll pay standard industry fees.
+                                        <p className="text-slate-600 mb-4">
+                                            Patriot Gold Group is legitimate and well-reviewed. Their &quot;No-Fee for Life&quot; program is real—but you&apos;ll need at least <strong className="text-slate-800">$100,000</strong> to qualify. For smaller accounts, you&apos;ll pay standard industry fees.
                                         </p>
-                                        <p className="text-slate-300 mb-6">
+                                        <p className="text-slate-600 mb-6">
                                             Their direct dealer model can save you money on coin premiums, and their A+ BBB rating shows they deliver on promises. A solid choice for investors with six figures to roll over.
                                         </p>
                                         <Button variant="gold" asChild>
@@ -260,45 +260,45 @@ export default function PatriotGoldReviewPage() {
                                         Here&apos;s how Patriot Gold stacks up against the other top-rated companies:
                                     </p>
                                     <div className="overflow-x-auto not-prose my-6">
-                                        <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
-                                            <thead className="bg-gray-50">
+                                        <table className="w-full text-sm border border-slate-200 rounded-lg overflow-hidden">
+                                            <thead className="bg-slate-50">
                                                 <tr>
-                                                    <th className="px-4 py-3 text-left font-bold text-gray-900">Feature</th>
-                                                    <th className="px-4 py-3 text-left font-bold text-gray-900">Patriot Gold</th>
-                                                    <th className="px-4 py-3 text-left font-bold text-gray-900">Augusta</th>
-                                                    <th className="px-4 py-3 text-left font-bold text-gray-900">Goldco</th>
+                                                    <th className="px-4 py-3 text-left font-bold text-slate-900">Feature</th>
+                                                    <th className="px-4 py-3 text-left font-bold text-slate-900">Patriot Gold</th>
+                                                    <th className="px-4 py-3 text-left font-bold text-slate-900">Augusta</th>
+                                                    <th className="px-4 py-3 text-left font-bold text-slate-900">Goldco</th>
                                                 </tr>
                                             </thead>
-                                            <tbody className="divide-y divide-gray-200">
+                                            <tbody className="divide-y divide-slate-200">
                                                 <tr>
-                                                    <td className="px-4 py-3 font-medium">Minimum</td>
-                                                    <td className="px-4 py-3">$25,000</td>
-                                                    <td className="px-4 py-3">$50,000</td>
-                                                    <td className="px-4 py-3">$25,000</td>
+                                                    <td className="px-4 py-3 font-medium text-slate-800">Minimum</td>
+                                                    <td className="px-4 py-3 text-slate-600">$25,000</td>
+                                                    <td className="px-4 py-3 text-slate-600">$50,000</td>
+                                                    <td className="px-4 py-3 text-slate-600">$25,000</td>
                                                 </tr>
-                                                <tr className="bg-gray-50">
-                                                    <td className="px-4 py-3 font-medium">Annual Fees</td>
+                                                <tr className="bg-slate-50">
+                                                    <td className="px-4 py-3 font-medium text-slate-800">Annual Fees</td>
                                                     <td className="px-4 py-3 text-green-700 font-bold">$0 (if $100k+)</td>
-                                                    <td className="px-4 py-3">$200 (often waived)</td>
-                                                    <td className="px-4 py-3">$180/year</td>
+                                                    <td className="px-4 py-3 text-slate-600">$200 (often waived)</td>
+                                                    <td className="px-4 py-3 text-slate-600">$180/year</td>
                                                 </tr>
                                                 <tr>
-                                                    <td className="px-4 py-3 font-medium">BBB Rating</td>
-                                                    <td className="px-4 py-3">A+</td>
-                                                    <td className="px-4 py-3">A+</td>
-                                                    <td className="px-4 py-3">A+</td>
+                                                    <td className="px-4 py-3 font-medium text-slate-800">BBB Rating</td>
+                                                    <td className="px-4 py-3 text-slate-600">A+</td>
+                                                    <td className="px-4 py-3 text-slate-600">A+</td>
+                                                    <td className="px-4 py-3 text-slate-600">A+</td>
                                                 </tr>
-                                                <tr className="bg-gray-50">
-                                                    <td className="px-4 py-3 font-medium">Education</td>
-                                                    <td className="px-4 py-3">Basic</td>
-                                                    <td className="px-4 py-3 font-bold">Excellent</td>
-                                                    <td className="px-4 py-3">Good</td>
+                                                <tr className="bg-slate-50">
+                                                    <td className="px-4 py-3 font-medium text-slate-800">Education</td>
+                                                    <td className="px-4 py-3 text-slate-600">Basic</td>
+                                                    <td className="px-4 py-3 font-bold text-slate-800">Excellent</td>
+                                                    <td className="px-4 py-3 text-slate-600">Good</td>
                                                 </tr>
                                                 <tr>
-                                                    <td className="px-4 py-3 font-medium">Best For</td>
-                                                    <td className="px-4 py-3">Fee savings</td>
-                                                    <td className="px-4 py-3">High net worth</td>
-                                                    <td className="px-4 py-3">All-around</td>
+                                                    <td className="px-4 py-3 font-medium text-slate-800">Best For</td>
+                                                    <td className="px-4 py-3 text-slate-600">Fee savings</td>
+                                                    <td className="px-4 py-3 text-slate-600">High net worth</td>
+                                                    <td className="px-4 py-3 text-slate-600">All-around</td>
                                                 </tr>
                                             </tbody>
                                         </table>

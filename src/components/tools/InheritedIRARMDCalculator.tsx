@@ -345,14 +345,14 @@ export function InheritedIRARMDCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-500/30">
+        <div className="inline-flex items-center gap-2 bg-[#B22234]/10 text-[#B22234] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#B22234]/30">
           <Calculator className="h-4 w-4" />
           Inherited IRA Calculator
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 bg-clip-text text-transparent">
           Inherited IRA RMD Calculator
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
           Calculate Required Minimum Distributions for inherited IRAs under SECURE Act rules.
           Understand your options based on your beneficiary status.
         </p>
@@ -362,29 +362,29 @@ export function InheritedIRARMDCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Death Date Info */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-slate-500/20 rounded-lg border border-slate-500/30">
-                <Calendar className="h-5 w-5 text-slate-400" />
+                <Calendar className="h-5 w-5 text-slate-500" />
               </div>
               <h3 className="text-lg font-semibold">Account Owner Details</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Year of Original Owner&apos;s Death
                 </label>
                 <input
                   type="number"
                   value={deathYear}
                   onChange={(e) => setDeathYear(Number(e.target.value))}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-[#B22234]"
                   min={2010}
                   max={currentYear}
                 />
                 {isPreSecureAct && (
-                  <div className="mt-2 flex items-center gap-2 text-green-400 text-sm">
+                  <div className="mt-2 flex items-center gap-2 text-green-600 text-sm">
                     <CheckCircle2 className="h-4 w-4" />
                     Pre-SECURE Act rules may apply (death before 2020)
                   </div>
@@ -392,14 +392,14 @@ export function InheritedIRARMDCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Owner&apos;s Age at Death
                 </label>
                 <input
                   type="number"
                   value={ownerAge}
                   onChange={(e) => setOwnerAge(Number(e.target.value))}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-[#B22234]"
                   min={30}
                   max={110}
                 />
@@ -409,7 +409,7 @@ export function InheritedIRARMDCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Inherited IRA Balance
                 </label>
                 <div className="relative">
@@ -418,7 +418,7 @@ export function InheritedIRARMDCalculator() {
                     type="number"
                     value={accountBalance}
                     onChange={(e) => setAccountBalance(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-amber-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-[#B22234]"
                     min="0"
                     step="10000"
                   />
@@ -428,23 +428,23 @@ export function InheritedIRARMDCalculator() {
           </div>
 
           {/* Beneficiary Type */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                <Users className="h-5 w-5 text-blue-400" />
+                <Users className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Beneficiary Information</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Beneficiary Type
                 </label>
                 <select
                   value={beneficiaryType}
                   onChange={(e) => setBeneficiaryType(e.target.value as BeneficiaryType)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-[#B22234]"
                 >
                   <option value="spouse">Surviving Spouse</option>
                   <option value="edb">Eligible Designated Beneficiary (Non-Spouse)</option>
@@ -456,11 +456,11 @@ export function InheritedIRARMDCalculator() {
               {/* Spouse Options */}
               {beneficiaryType === "spouse" && (
                 <div>
-                  <label className="text-sm text-slate-400 mb-2 block">
+                  <label className="text-sm text-slate-500 mb-2 block">
                     Spouse Distribution Option
                   </label>
                   <div className="space-y-2">
-                    <label className="flex items-center gap-3 p-3 bg-slate-800 rounded-lg cursor-pointer border border-slate-700 hover:border-amber-500/50">
+                    <label className="flex items-center gap-3 p-3 bg-slate-100 rounded-lg cursor-pointer border border-slate-700 hover:border-amber-500/50">
                       <input
                         type="radio"
                         name="spouseOption"
@@ -470,11 +470,11 @@ export function InheritedIRARMDCalculator() {
                         className="accent-amber-500"
                       />
                       <div>
-                        <span className="text-white font-medium">Spousal Rollover</span>
-                        <p className="text-xs text-slate-400">Treat as your own IRA</p>
+                        <span className="text-slate-900 font-medium">Spousal Rollover</span>
+                        <p className="text-xs text-slate-500">Treat as your own IRA</p>
                       </div>
                     </label>
-                    <label className="flex items-center gap-3 p-3 bg-slate-800 rounded-lg cursor-pointer border border-slate-700 hover:border-amber-500/50">
+                    <label className="flex items-center gap-3 p-3 bg-slate-100 rounded-lg cursor-pointer border border-slate-700 hover:border-amber-500/50">
                       <input
                         type="radio"
                         name="spouseOption"
@@ -484,8 +484,8 @@ export function InheritedIRARMDCalculator() {
                         className="accent-amber-500"
                       />
                       <div>
-                        <span className="text-white font-medium">Keep as Inherited IRA</span>
-                        <p className="text-xs text-slate-400">Stretch over your life expectancy</p>
+                        <span className="text-slate-900 font-medium">Keep as Inherited IRA</span>
+                        <p className="text-xs text-slate-500">Stretch over your life expectancy</p>
                       </div>
                     </label>
                   </div>
@@ -506,7 +506,7 @@ export function InheritedIRARMDCalculator() {
               )}
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Your Current Age: {beneficiaryAge}
                 </label>
                 <input
@@ -515,24 +515,24 @@ export function InheritedIRARMDCalculator() {
                   max={90}
                   value={beneficiaryAge}
                   onChange={(e) => setBeneficiaryAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
               </div>
             </div>
           </div>
 
           {/* Growth & Tax Assumptions */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
-                <TrendingDown className="h-5 w-5 text-green-400" />
+                <TrendingDown className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Assumptions</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Expected Annual Growth: {growthRate}%
                 </label>
                 <input
@@ -542,12 +542,12 @@ export function InheritedIRARMDCalculator() {
                   step={0.5}
                   value={growthRate}
                   onChange={(e) => setGrowthRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Estimated Tax Rate: {taxRate}%
                 </label>
                 <input
@@ -557,7 +557,7 @@ export function InheritedIRARMDCalculator() {
                   step={1}
                   value={taxRate}
                   onChange={(e) => setTaxRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
               </div>
             </div>
@@ -567,31 +567,31 @@ export function InheritedIRARMDCalculator() {
         {/* Results Section */}
         <div className="space-y-6">
           {/* Strategy Overview */}
-          <div className="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 backdrop-blur-sm rounded-xl p-8 border border-amber-500/30">
+          <div className="bg-[#B22234]/5 backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
             <div className="flex items-center gap-3 mb-4">
-              <Clock className="h-10 w-10 text-amber-400" />
+              <Clock className="h-10 w-10 text-[#B22234]" />
               <div>
-                <h3 className="text-sm text-slate-400">Your Distribution Rule</h3>
-                <div className="text-2xl font-bold text-amber-400">
+                <h3 className="text-sm text-slate-500">Your Distribution Rule</h3>
+                <div className="text-2xl font-bold text-[#B22234]">
                   {calculations.strategy}
                 </div>
               </div>
             </div>
 
-            <p className="text-slate-300 text-sm mb-4">
+            <p className="text-slate-600 text-sm mb-4">
               {calculations.ruleExplanation}
             </p>
 
-            <div className="grid grid-cols-2 gap-4 bg-slate-800/50 rounded-lg p-4">
+            <div className="grid grid-cols-2 gap-4 bg-slate-50 rounded-lg p-4">
               <div>
-                <div className="text-xs text-slate-400">First Year RMD</div>
-                <div className="text-xl font-bold text-white">
+                <div className="text-xs text-slate-500">First Year RMD</div>
+                <div className="text-xl font-bold text-slate-900">
                   {formatCurrency(calculations.firstYearRMD)}
                 </div>
               </div>
               <div>
-                <div className="text-xs text-slate-400">Years to Deplete</div>
-                <div className="text-xl font-bold text-white">
+                <div className="text-xs text-slate-500">Years to Deplete</div>
+                <div className="text-xl font-bold text-slate-900">
                   {calculations.yearsToDeplete}
                 </div>
               </div>
@@ -599,28 +599,28 @@ export function InheritedIRARMDCalculator() {
           </div>
 
           {/* Tax Impact */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-4">
-              <AlertTriangle className="h-6 w-6 text-red-400" />
+              <AlertTriangle className="h-6 w-6 text-red-600" />
               <h3 className="text-lg font-semibold">Estimated Tax Impact</h3>
             </div>
 
             <div className="space-y-4">
-              <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                <span className="text-slate-400">Total Distributions</span>
-                <span className="text-xl font-bold text-white">
+              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+                <span className="text-slate-500">Total Distributions</span>
+                <span className="text-xl font-bold text-slate-900">
                   {formatCurrency(calculations.totalDistributions)}
                 </span>
               </div>
-              <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                <span className="text-slate-400">Estimated Total Taxes ({taxRate}%)</span>
-                <span className="text-xl font-bold text-red-400">
+              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+                <span className="text-slate-500">Estimated Total Taxes ({taxRate}%)</span>
+                <span className="text-xl font-bold text-red-600">
                   {formatCurrency(calculations.totalTaxes)}
                 </span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-slate-400">Net After Taxes</span>
-                <span className="text-xl font-bold text-green-400">
+                <span className="text-slate-500">Net After Taxes</span>
+                <span className="text-xl font-bold text-green-600">
                   {formatCurrency(calculations.totalDistributions - calculations.totalTaxes)}
                 </span>
               </div>
@@ -628,16 +628,16 @@ export function InheritedIRARMDCalculator() {
           </div>
 
           {/* 10-Year Projection Table */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Calendar className="h-5 w-5 text-blue-400" />
+              <Calendar className="h-5 w-5 text-blue-600" />
               Distribution Schedule (10 Years)
             </h3>
 
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/10">
+                  <tr className="border-b border-slate-200">
                     <th className="py-2 px-2 text-left text-slate-500">Year</th>
                     <th className="py-2 px-2 text-right text-slate-500">Balance</th>
                     <th className="py-2 px-2 text-right text-slate-500">RMD</th>
@@ -648,18 +648,18 @@ export function InheritedIRARMDCalculator() {
                   {calculations.projections.map((proj, idx) => (
                     <tr
                       key={proj.year}
-                      className={`border-b border-white/5 ${idx === 0 ? "bg-amber-500/5" : ""}`}
+                      className={`border-b border-slate-200 ${idx === 0 ? "bg-amber-500/5" : ""}`}
                     >
-                      <td className="py-2 px-2 text-slate-300">
+                      <td className="py-2 px-2 text-slate-600">
                         {proj.year} (Age {proj.age})
                       </td>
-                      <td className="py-2 px-2 text-right text-slate-400">
+                      <td className="py-2 px-2 text-right text-slate-500">
                         {formatCurrency(proj.startingBalance)}
                       </td>
-                      <td className="py-2 px-2 text-right text-amber-400 font-medium">
+                      <td className="py-2 px-2 text-right text-[#B22234] font-medium">
                         {formatCurrency(proj.rmd)}
                       </td>
-                      <td className="py-2 px-2 text-right text-red-400">
+                      <td className="py-2 px-2 text-right text-red-600">
                         {formatCurrency(proj.rmd * (taxRate / 100))}
                       </td>
                     </tr>
@@ -674,14 +674,14 @@ export function InheritedIRARMDCalculator() {
 
           {/* Strategy Tips */}
           {beneficiaryType === "designated" && !isPreSecureAct && (
-            <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
+            <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <Info className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <Info className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-amber-400 mb-2">
+                  <h4 className="font-semibold text-[#B22234] mb-2">
                     10-Year Rule Strategy Tips
                   </h4>
-                  <ul className="text-sm text-slate-300 space-y-2">
+                  <ul className="text-sm text-slate-600 space-y-2">
                     <li>- Consider spreading distributions to manage tax brackets</li>
                     <li>- Front-load distributions in lower-income years</li>
                     <li>- Coordinate with other income (retirement, Social Security)</li>
@@ -696,30 +696,30 @@ export function InheritedIRARMDCalculator() {
 
       {/* Gold Bridge Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
+        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
           <div className="flex items-center gap-3 mb-6">
-            <Heart className="h-6 w-6 text-amber-400" />
+            <Heart className="h-6 w-6 text-[#B22234]" />
             <h2 className="text-2xl font-bold">Preserve Your Inherited Wealth</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Long-Term Protection</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Long-Term Protection</div>
+              <p className="text-slate-600 text-sm">
                 If you&apos;re inheriting a traditional IRA, consider rolling eligible portions into a Gold IRA for long-term wealth preservation across generations.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Inflation Hedge</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Inflation Hedge</div>
+              <p className="text-slate-600 text-sm">
                 With required distributions forcing taxable withdrawals, gold&apos;s inflation hedge can help protect the purchasing power of your remaining balance.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Estate Planning</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Estate Planning</div>
+              <p className="text-slate-600 text-sm">
                 Physical gold in an IRA can be part of your own estate plan, potentially passing real assets to your beneficiaries.
               </p>
             </div>

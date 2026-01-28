@@ -89,18 +89,18 @@ const schema = {
 
 export default function Page457bRolloverPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-800/50 text-white py-20 relative overflow-hidden border-b border-white/10">
+            <header className="bg-slate-100 text-[#000080] py-20 relative overflow-hidden border-b border-slate-200">
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-secondary mb-6 border border-white/10">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-1.5 text-sm font-semibold text-[#B22234] mb-6 border border-slate-200">
                             <Briefcase className="w-4 h-4" />
                             For Government Employees
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-white">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#000080]">
                             457(b) to Gold IRA Rollover Guide
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
@@ -118,14 +118,14 @@ export default function Page457bRolloverPage() {
                     </aside>
 
                     {/* Main Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-400 prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-[#B22234] max-w-none">
 
-                        <p className="lead text-xl text-slate-400">
-                            If you work for a state or local government, you probably have a 457(b) deferred compensation plan. And you might not realize it has a <strong className="text-white">unique advantage</strong> that no other retirement account offers.
+                        <p className="lead text-xl text-slate-600">
+                            If you work for a state or local government, you probably have a 457(b) deferred compensation plan. And you might not realize it has a <strong className="text-[#000080]">unique advantage</strong> that no other retirement account offers.
                         </p>
 
                         <p>
-                            Unlike 401(k)s and 403(b)s, governmental 457(b) plans have <strong className="text-white">no 10% early withdrawal penalty</strong>—at any age. This makes them incredibly flexible for early retirees and those looking to diversify into gold before traditional retirement age.
+                            Unlike 401(k)s and 403(b)s, governmental 457(b) plans have <strong className="text-[#000080]">no 10% early withdrawal penalty</strong>—at any age. This makes them incredibly flexible for early retirees and those looking to diversify into gold before traditional retirement age.
                         </p>
 
                         {/* Section 1: What is 457(b) */}
@@ -154,7 +154,7 @@ export default function Page457bRolloverPage() {
                         <section id="457b-advantage" className="scroll-mt-32">
                             <h2>The 457(b) Advantage: No Early Withdrawal Penalty</h2>
                             <p>
-                                Here&apos;s what makes 457(b) plans special: <strong className="text-white">there is no 10% early withdrawal penalty</strong> for governmental 457(b) plans, regardless of your age.
+                                Here&apos;s what makes 457(b) plans special: <strong className="text-[#000080]">there is no 10% early withdrawal penalty</strong> for governmental 457(b) plans, regardless of your age.
                             </p>
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-6">
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
@@ -219,39 +219,39 @@ export default function Page457bRolloverPage() {
                                 Rolling over a 457(b) to a Gold IRA follows a similar process to other retirement account rollovers:
                             </p>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">1</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Open a Self-Directed Gold IRA</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Choose a reputable Gold IRA company. They&apos;ll set up your account with an IRS-approved custodian.</p>
+                                        <h4 className="font-bold text-[#000080]">Open a Self-Directed Gold IRA</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Choose a reputable Gold IRA company. They&apos;ll set up your account with an IRS-approved custodian.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">2</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Contact Your 457(b) Administrator</h4>
-                                        <p className="text-sm text-slate-400 mt-1">This is usually your state or city&apos;s deferred compensation department, not HR. Request rollover forms and confirm eligibility.</p>
+                                        <h4 className="font-bold text-[#000080]">Contact Your 457(b) Administrator</h4>
+                                        <p className="text-sm text-slate-600 mt-1">This is usually your state or city&apos;s deferred compensation department, not HR. Request rollover forms and confirm eligibility.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">3</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Request a Direct Rollover</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Always choose &quot;direct rollover&quot; or &quot;trustee-to-trustee transfer.&quot; This avoids the 20% mandatory withholding.</p>
+                                        <h4 className="font-bold text-[#000080]">Request a Direct Rollover</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Always choose &quot;direct rollover&quot; or &quot;trustee-to-trustee transfer.&quot; This avoids the 20% mandatory withholding.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">4</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">4</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Complete & Submit Paperwork</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Your Gold IRA company will provide the receiving account details. Submit forms to your 457(b) plan.</p>
+                                        <h4 className="font-bold text-[#000080]">Complete & Submit Paperwork</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Your Gold IRA company will provide the receiving account details. Submit forms to your 457(b) plan.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shrink-0">5</div>
+                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
+                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">5</div>
                                     <div>
-                                        <h4 className="font-bold text-white">Purchase Your Gold</h4>
-                                        <p className="text-sm text-slate-400 mt-1">Once funds arrive (typically 2-4 weeks), work with your Gold IRA company to select IRS-approved precious metals.</p>
+                                        <h4 className="font-bold text-[#000080]">Purchase Your Gold</h4>
+                                        <p className="text-sm text-slate-600 mt-1">Once funds arrive (typically 2-4 weeks), work with your Gold IRA company to select IRS-approved precious metals.</p>
                                     </div>
                                 </div>
                             </div>
@@ -261,18 +261,18 @@ export default function Page457bRolloverPage() {
                         <section id="governmental-vs-non" className="scroll-mt-32">
                             <h2>Governmental vs Non-Governmental 457(b)</h2>
                             <p>
-                                This is critical: <strong className="text-white">not all 457(b) plans are created equal</strong>. The IRS treats them very differently.
+                                This is critical: <strong className="text-[#000080]">not all 457(b) plans are created equal</strong>. The IRS treats them very differently.
                             </p>
                             <div className="not-prose my-8 overflow-x-auto">
                                 <table className="w-full text-sm">
                                     <thead>
-                                        <tr className="border-b border-white/10">
-                                            <th className="text-left p-4 text-white font-bold">Feature</th>
+                                        <tr className="border-b border-slate-200">
+                                            <th className="text-left p-4 text-[#000080] font-bold">Feature</th>
                                             <th className="text-left p-4 text-green-400 font-bold">Governmental 457(b)</th>
                                             <th className="text-left p-4 text-amber-400 font-bold">Non-Governmental 457(b)</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="text-slate-400">
+                                    <tbody className="text-slate-600">
                                         <tr className="border-b border-white/5">
                                             <td className="p-4">Employers</td>
                                             <td className="p-4">State/local government</td>
@@ -310,7 +310,7 @@ export default function Page457bRolloverPage() {
                         <section id="tax-benefits" className="scroll-mt-32">
                             <h2>Tax Benefits</h2>
                             <p>
-                                A direct rollover from a governmental 457(b) to a Traditional Gold IRA is <strong className="text-white">completely tax-free</strong>. No taxes owed. No penalties. The money moves from one tax-advantaged account to another.
+                                A direct rollover from a governmental 457(b) to a Traditional Gold IRA is <strong className="text-[#000080]">completely tax-free</strong>. No taxes owed. No penalties. The money moves from one tax-advantaged account to another.
                             </p>
                             <p>
                                 Once in your Gold IRA:
@@ -365,14 +365,14 @@ export default function Page457bRolloverPage() {
                             <h2>457(b) Rollover FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                    <details key={index} className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
                                                 <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-400">
+                                        <p className="mt-4 leading-relaxed text-slate-600">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -381,10 +381,10 @@ export default function Page457bRolloverPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Protect Your Government Pension</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">Protect Your Government Pension</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">See if you qualify to move your 457(b) into physical gold—without penalties or taxes.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
@@ -401,7 +401,7 @@ export default function Page457bRolloverPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-100">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="guide-457b-to-gold-ira-rollover" />
                 </Container>

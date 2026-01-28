@@ -110,19 +110,19 @@ const schema = {
 
 export default function GoldIraBenefitsPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Financial Education
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             7 Critical Benefits of a Gold IRA
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             You&apos;ve spent 30+ years building your nest egg. Now it&apos;s time to protect it. Here&apos;s why hard-working Americans are moving part of their retirement into something that can&apos;t be printed away.
                         </p>
                     </div>
@@ -137,7 +137,7 @@ export default function GoldIraBenefitsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -160,7 +160,7 @@ export default function GoldIraBenefitsPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1. Inflation Protection</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. Inflation Protection</h2>
                             </div>
                             <p>
                                 Since the Federal Reserve was created in 1913, the US dollar has lost over <strong>96% of its purchasing power</strong>. What cost $1 in 1913 now costs over $30. Your dollars are constantly losing value—every single day.
@@ -169,24 +169,24 @@ export default function GoldIraBenefitsPage() {
                                 Gold, on the other hand, has maintained its purchasing power across centuries. Here&apos;s a striking example: In 1920, an ounce of gold (~$20) could buy a high-quality men&apos;s suit. Today, an ounce of gold (~$2,000+) still buys a high-quality men&apos;s suit. The gold didn&apos;t change—the dollar collapsed.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">The Inflation Math</h4>
-                                <p className="text-slate-300 mb-4">Consider what happens to $100,000 in savings over 20 years at different inflation rates:</p>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">The Inflation Math</h4>
+                                <p className="text-slate-600 mb-4">Consider what happens to $100,000 in savings over 20 years at different inflation rates:</p>
                                 <div className="grid grid-cols-3 gap-4 text-center">
-                                    <div className="p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <div className="p-4 bg-white rounded-xl border border-slate-200">
                                         <div className="text-2xl font-bold text-red-400">$67,297</div>
                                         <div className="text-xs text-text-muted">@ 2% inflation</div>
                                     </div>
-                                    <div className="p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <div className="p-4 bg-white rounded-xl border border-slate-200">
                                         <div className="text-2xl font-bold text-red-400">$45,639</div>
-                                        <div className="text-xs text-text-muted">@ 4% inflation</div>
+                                        <div className="text-xs text-slate-500">@ 4% inflation</div>
                                     </div>
-                                    <div className="p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                    <div className="p-4 bg-white rounded-xl border border-slate-200">
                                         <div className="text-2xl font-bold text-red-400">$31,180</div>
-                                        <div className="text-xs text-text-muted">@ 6% inflation</div>
+                                        <div className="text-xs text-slate-500">@ 6% inflation</div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-400 mt-4">Your savings lose purchasing power even when the balance stays the same. Gold protects against this erosion.</p>
+                                <p className="text-sm text-slate-600 mt-4">Your savings lose purchasing power even when the balance stays the same. Gold protects against this erosion.</p>
                             </div>
 
                             <p>
@@ -200,7 +200,7 @@ export default function GoldIraBenefitsPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2. True Portfolio Diversification</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. True Portfolio Diversification</h2>
                             </div>
                             <p>
                                 Most people think they&apos;re diversified because they own multiple mutual funds. But here&apos;s the problem: <strong>owning 5 different stock funds isn&apos;t diversification</strong>. If the stock market crashes, they all go down together.
@@ -224,7 +224,7 @@ export default function GoldIraBenefitsPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">3. Powerful Tax Advantages</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Powerful Tax Advantages</h2>
                             </div>
                             <p>
                                 One of the most overlooked <strong>gold IRA benefits</strong> is the tax treatment. Gold IRAs offer the same tax advantages as regular IRAs:
@@ -245,8 +245,8 @@ export default function GoldIraBenefitsPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Explore Your Options?</h3>
                                 <p className="mb-6 text-gray-200">Take our 60-second quiz to find the best gold IRA company for your situation.</p>
@@ -262,7 +262,7 @@ export default function GoldIraBenefitsPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Lock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">4. True Ownership & Control</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. True Ownership & Control</h2>
                             </div>
                             <p>
                                 With a Gold IRA, you are buying <strong>specific, physical bars and coins</strong> that are allocated to you. You&apos;re not buying a paper &quot;promise&quot; or an ETF share that can be diluted. You own the metal directly.
@@ -287,36 +287,36 @@ export default function GoldIraBenefitsPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">5. Protection During Crises</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Protection During Crises</h2>
                             </div>
                             <p>
                                 Gold has a proven track record as a &quot;safe haven&quot; during times of economic, political, and geopolitical turmoil. When fear rises, investors flee to gold:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Crisis Event</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Stock Performance</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Gold Performance</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Crisis Event</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Stock Performance</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Gold Performance</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm">
+                                    <tbody className="divide-y divide-slate-200 text-sm">
                                         <tr>
-                                            <td className="p-4 text-white">2008 Financial Crisis</td>
-                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+5.5%</td>
+                                            <td className="p-4 text-slate-900">2008 Financial Crisis</td>
+                                            <td className="p-4 text-red-600 font-semibold">-37%</td>
+                                            <td className="p-4 text-green-600 font-semibold">+5.5%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2020 COVID Crash (Feb-Mar)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+3.6%</td>
+                                            <td className="p-4 text-slate-900">2020 COVID Crash (Feb-Mar)</td>
+                                            <td className="p-4 text-red-600 font-semibold">-34%</td>
+                                            <td className="p-4 text-green-600 font-semibold">+3.6%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2022 Bear Market</td>
-                                            <td className="p-4 text-red-400 font-semibold">-18%</td>
-                                            <td className="p-4 text-amber-400 font-semibold">+0.4%</td>
+                                            <td className="p-4 text-slate-900">2022 Bear Market</td>
+                                            <td className="p-4 text-red-600 font-semibold">-18%</td>
+                                            <td className="p-4 text-[#B22234] font-semibold">+0.4%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -333,7 +333,7 @@ export default function GoldIraBenefitsPage() {
                                 <div className="p-3 bg-indigo-500/20 rounded-lg text-indigo-400">
                                     <Users className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">6. Generational Wealth Transfer</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">6. Generational Wealth Transfer</h2>
                             </div>
                             <p>
                                 Gold is the ultimate legacy asset. It is tangible wealth that can be passed down to children and grandchildren with minimal complications:
@@ -356,7 +356,7 @@ export default function GoldIraBenefitsPage() {
                                 <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <Globe className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">7. The Central Bank Signal</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">7. The Central Bank Signal</h2>
                             </div>
                             <p>
                                 Here&apos;s something most investors don&apos;t realize: <strong>central banks around the world are buying record amounts of gold</strong>. In 2022-2024, global central bank gold purchases reached all-time highs.
@@ -379,72 +379,72 @@ export default function GoldIraBenefitsPage() {
                             <h2>Gold IRA Benefits: Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What are the main benefits of a Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         The main benefits include: inflation protection, true portfolio diversification, tax advantages (same as traditional IRAs), tangible ownership of physical assets, crisis protection during market crashes, wealth transfer to heirs, and alignment with central bank strategies. Gold IRAs give you something most retirement accounts can&apos;t—real assets that aren&apos;t dependent on the stock market or the dollar&apos;s value.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is a Gold IRA a good investment?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         A Gold IRA can be an excellent investment for those seeking to protect against inflation, diversify away from stocks, and preserve wealth long-term. However, it&apos;s typically recommended as 10-20% of a retirement portfolio—not 100%. Gold is better for preservation than growth, so it complements stocks rather than replacing them entirely.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What are the disadvantages of a Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
-                                        Gold IRAs have some drawbacks: higher fees than regular IRAs (storage and custodian costs), no dividends or interest income, price volatility in the short term, no employer matching (unlike 401(k)s), and lower contribution limits. They also require working with specialized custodians. For a balanced view, see our <Link href="/guide/gold-ira-guide" className="text-secondary hover:underline">complete Gold IRA guide</Link>.
+                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                        Gold IRAs have some drawbacks: higher fees than regular IRAs (storage and custodian costs), no dividends or interest income, price volatility in the short term, no employer matching (unlike 401(k)s), and lower contribution limits. They also require working with specialized custodians. For a balanced view, see our <Link href="/guide/gold-ira-guide" className="text-[#B22234] hover:underline">complete Gold IRA guide</Link>.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">How does gold protect against inflation?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         When governments print more money (inflation), each dollar becomes worth less. But gold is finite—you can&apos;t print more of it. As dollars lose purchasing power, it takes more dollars to buy the same amount of gold. This means gold&apos;s price tends to rise with inflation, preserving your real purchasing power over time.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">How much of my portfolio should be in gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Most financial advisors who recommend precious metals suggest 10-20% of your total retirement portfolio. Conservative investors might stick to 5-10%, while those more concerned about economic instability might go up to 25%. The exact amount depends on your risk tolerance, time horizon, and overall financial situation.
                                     </p>
                                 </details>
@@ -452,8 +452,8 @@ export default function GoldIraBenefitsPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
                                 <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect What You&apos;ve Built?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">You&apos;ve worked too hard to watch another crash wipe out your retirement. Find out which company fits your situation.</p>
@@ -475,7 +475,7 @@ export default function GoldIraBenefitsPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-gold-ira-benefits" />
                 </Container>

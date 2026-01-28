@@ -55,11 +55,11 @@ const schema = {
 
 export default function AugustaLawsuitPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
+            <header className="bg-[#000080] text-white py-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
                     <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <ShieldCheck className="w-4 h-4" /> Legal Fact Check
@@ -67,7 +67,7 @@ export default function AugustaLawsuitPage() {
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Augusta Precious Metals Lawsuit: The Truth
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
                         You searched &quot;Augusta lawsuit&quot; because you&apos;re being careful with your money. Good. Here&apos;s what we actually found.
                     </p>
                 </Container>
@@ -81,7 +81,7 @@ export default function AugustaLawsuitPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
 
                         <p className="lead">
                             When you&apos;re thinking about moving $50,000 or more into a Gold IRA, seeing the word &quot;lawsuit&quot; anywhere near the company name will make your stomach drop. That&apos;s a normal reaction—it&apos;s your money, and you should be skeptical.
@@ -125,7 +125,7 @@ export default function AugustaLawsuitPage() {
                                 <li><strong>Regal Assets</strong> – <Link href="/reviews/regal-assets-lawsuit">Collapsed entirely</Link> after failing to deliver customer metals.</li>
                             </ul>
 
-                            <div className="bg-amber-50 p-6 rounded-xl border border-amber-100 flex gap-4 not-prose my-6">
+                            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
                                 <AlertTriangle className="w-6 h-6 text-amber-600 shrink-0" />
                                 <div>
                                     <h4 className="font-bold text-amber-800">What Got Other Companies in Trouble</h4>
@@ -151,25 +151,25 @@ export default function AugustaLawsuitPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">The Confirmation Call</h4>
-                                        <p className="text-gray-600 text-sm">Before any purchase, a compliance team member calls to verify you understand what you&apos;re buying and that no one pressured you. This catches problems before they happen.</p>
+                                        <h4 className="font-bold text-slate-800">The Confirmation Call</h4>
+                                        <p className="text-slate-600 text-sm">Before any purchase, a compliance team member calls to verify you understand what you&apos;re buying and that no one pressured you. This catches problems before they happen.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Transparent Pricing</h4>
-                                        <p className="text-gray-600 text-sm">They show you exactly what you&apos;re paying above spot price. No hidden fees, no surprise markups. If you don&apos;t like the price, they don&apos;t guilt trip you.</p>
+                                        <h4 className="font-bold text-slate-800">Transparent Pricing</h4>
+                                        <p className="text-slate-600 text-sm">They show you exactly what you&apos;re paying above spot price. No hidden fees, no surprise markups. If you don&apos;t like the price, they don&apos;t guilt trip you.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-slate-50 rounded-lg border border-slate-200">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">$50k Minimum Actually Helps</h4>
-                                        <p className="text-gray-600 text-sm">By focusing on serious investors, Augusta avoids the &quot;volume game&quot; that pushes other companies to use aggressive tactics. They&apos;d rather have fewer, happier customers.</p>
+                                        <h4 className="font-bold text-slate-800">$50k Minimum Actually Helps</h4>
+                                        <p className="text-slate-600 text-sm">By focusing on serious investors, Augusta avoids the &quot;volume game&quot; that pushes other companies to use aggressive tactics. They&apos;d rather have fewer, happier customers.</p>
                                     </div>
                                 </div>
                             </div>
@@ -179,20 +179,20 @@ export default function AugustaLawsuitPage() {
                         <section id="customer-reviews" className="scroll-mt-32">
                             <h2>Augusta&apos;s Reputation in 2026</h2>
                             <div className="not-prose my-8 grid md:grid-cols-3 gap-6">
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-4xl font-bold text-primary mb-2">4.9/5</div>
-                                    <div className="text-sm text-gray-600">TrustPilot Rating</div>
-                                    <div className="text-xs text-gray-400 mt-1">1,000+ Reviews</div>
+                                <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-[#000080] mb-2">4.9/5</div>
+                                    <div className="text-sm text-slate-600">TrustPilot Rating</div>
+                                    <div className="text-xs text-slate-400 mt-1">1,000+ Reviews</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-4xl font-bold text-primary mb-2">A+</div>
-                                    <div className="text-sm text-gray-600">BBB Rating</div>
-                                    <div className="text-xs text-gray-400 mt-1">Zero Complaints</div>
+                                <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-[#000080] mb-2">A+</div>
+                                    <div className="text-sm text-slate-600">BBB Rating</div>
+                                    <div className="text-xs text-slate-400 mt-1">Zero Complaints</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
-                                    <div className="text-4xl font-bold text-primary mb-2">0</div>
-                                    <div className="text-sm text-gray-600">Lawsuits Filed</div>
-                                    <div className="text-xs text-gray-400 mt-1">Clean Record</div>
+                                <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
+                                    <div className="text-4xl font-bold text-[#000080] mb-2">0</div>
+                                    <div className="text-sm text-slate-600">Lawsuits Filed</div>
+                                    <div className="text-xs text-slate-400 mt-1">Clean Record</div>
                                 </div>
                             </div>
                         </section>
@@ -207,16 +207,16 @@ export default function AugustaLawsuitPage() {
                                 The &quot;lawsuit&quot; searches are mostly from cautious investors doing their homework—which is exactly what you should do. The good news is that Augusta passes the test.
                             </p>
                             <p>
-                                If you have less than $50k, check out our reviews of <Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link> ($25k min) or <Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link> ($20k min).
+                                If you have less than $50k, check out our reviews of <Link href="/reviews/goldco" className="text-[#B22234] hover:underline">Goldco</Link> ($25k min) or <Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> ($20k min).
                             </p>
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Verified Clean Record</h3>
-                                <p className="mb-6 text-gray-200">See why Augusta has zero complaints. Get their free investor kit.</p>
+                                <p className="mb-6 text-blue-100">See why Augusta has zero complaints. Get their free investor kit.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-lawsuit", "augusta")} target="_blank" rel="noopener noreferrer">
                                         Get Free Gold Guide <ArrowRight className="ml-2 w-4 h-4" />

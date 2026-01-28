@@ -201,12 +201,12 @@ const schema = {
 
 export default function BestPlaceToSellPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-green-400/5 rounded-full blur-[150px]" />
         </div>
@@ -214,7 +214,7 @@ export default function BestPlaceToSellPage() {
           <div className="max-w-4xl mx-auto">
             <Link
               href="/buy-sell-silver"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
@@ -223,10 +223,10 @@ export default function BestPlaceToSellPage() {
               <DollarSign className="h-4 w-4" />
               500 MONTHLY SEARCHES - DIFF 0 - $1.40 CPC
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Best Place to Sell Silver
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
               Where you sell your silver matters more than you think. The difference between a
               pawn shop and an online dealer could be 40% of your silver&apos;s value. Here&apos;s
               how to get maximum return on your precious metals.
@@ -240,52 +240,52 @@ export default function BestPlaceToSellPage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl font-bold text-green-400 mb-4">Quick Answer</h2>
-            <p className="text-slate-300">
-              <strong className="text-white">Online precious metal dealers</strong> pay the most for common bullion (95-98% of spot).
-              <strong className="text-white"> Local coin shops</strong> offer convenience at slightly lower prices (90-95%).
-              <strong className="text-white"> Never use pawn shops</strong> - you&apos;ll lose 30-50% of your value.
+            <p className="text-slate-600">
+              <strong className="text-slate-900">Online precious metal dealers</strong> pay the most for common bullion (95-98% of spot).
+              <strong className="text-slate-900"> Local coin shops</strong> offer convenience at slightly lower prices (90-95%).
+              <strong className="text-slate-900"> Never use pawn shops</strong> - you&apos;ll lose 30-50% of your value.
             </p>
           </div>
         </Container>
       </section>
 
       {/* Comparison Table */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Selling Options Compared
             </h2>
             <div className="overflow-x-auto">
-              <table className="w-full bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                <thead className="bg-slate-800/50">
+              <table className="w-full bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                <thead className="bg-slate-50">
                   <tr>
-                    <th className="text-left p-4 text-white font-bold">Selling Option</th>
-                    <th className="text-center p-4 text-white font-bold">Payout</th>
-                    <th className="text-center p-4 text-white font-bold">Speed</th>
-                    <th className="text-center p-4 text-white font-bold">Rating</th>
+                    <th className="text-left p-4 text-slate-900 font-bold">Selling Option</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Payout</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Speed</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Rating</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/10">
+                <tbody className="divide-y divide-slate-200">
                   {sellingOptions.map((option, index) => (
                     <tr key={index} className={option.rating === 1 ? "bg-red-500/5" : ""}>
-                      <td className="p-4 text-slate-300 font-semibold">{option.name}</td>
+                      <td className="p-4 text-slate-600 font-semibold">{option.name}</td>
                       <td className="p-4 text-center">
                         <span className={`font-bold ${
                           option.rating >= 4 ? "text-green-400" :
-                          option.rating >= 3 ? "text-amber-400" : "text-red-400"
+                          option.rating >= 3 ? "text-[#B22234]" : "text-red-400"
                         }`}>
                           {option.payout}
                         </span>
                       </td>
-                      <td className="p-4 text-center text-slate-400">{option.speed}</td>
+                      <td className="p-4 text-center text-slate-600">{option.speed}</td>
                       <td className="p-4 text-center">
                         <div className="flex justify-center gap-1">
                           {[1, 2, 3, 4, 5].map((star) => (
                             <Star
                               key={star}
                               className={`h-4 w-4 ${
-                                star <= option.rating ? "text-amber-400 fill-current" : "text-slate-600"
+                                star <= option.rating ? "text-[#B22234] fill-current" : "text-slate-600"
                               }`}
                             />
                           ))}
@@ -301,10 +301,10 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* Detailed Options */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Detailed Breakdown
             </h2>
             <div className="space-y-8">
@@ -314,28 +314,28 @@ export default function BestPlaceToSellPage() {
                 return (
                   <div
                     key={index}
-                    className={`bg-white/5 backdrop-blur-sm border rounded-xl p-6 md:p-8 ${
-                      isWarning ? "border-red-500/30" : "border-white/10"
+                    className={`bg-slate-50 backdrop-blur-sm border rounded-xl p-6 md:p-8 ${
+                      isWarning ? "border-red-500/30" : "border-slate-200"
                     }`}
                   >
                     <div className="flex flex-col md:flex-row md:items-start gap-6">
                       <div className={`w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                        isWarning ? "bg-red-500/20" : "bg-slate-400/20"
+                        isWarning ? "bg-red-500/20" : "bg-[#B22234]/10"
                       }`}>
-                        <Icon className={`h-8 w-8 ${isWarning ? "text-red-400" : "text-slate-300"}`} />
+                        <Icon className={`h-8 w-8 ${isWarning ? "text-red-400" : "text-slate-600"}`} />
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
                           <div>
-                            <h3 className="text-xl font-bold text-white">{option.name}</h3>
+                            <h3 className="text-xl font-bold text-slate-900">{option.name}</h3>
                             <div className="flex items-center gap-4 mt-1">
                               <span className={`text-sm font-semibold ${
                                 option.rating >= 4 ? "text-green-400" :
-                                option.rating >= 3 ? "text-amber-400" : "text-red-400"
+                                option.rating >= 3 ? "text-[#B22234]" : "text-red-400"
                               }`}>
                                 {option.payout}
                               </span>
-                              <span className="text-sm text-slate-400 flex items-center gap-1">
+                              <span className="text-sm text-slate-600 flex items-center gap-1">
                                 <Clock className="h-3 w-3" />
                                 {option.speed}
                               </span>
@@ -346,7 +346,7 @@ export default function BestPlaceToSellPage() {
                               <Star
                                 key={star}
                                 className={`h-5 w-5 ${
-                                  star <= option.rating ? "text-amber-400 fill-current" : "text-slate-600"
+                                  star <= option.rating ? "text-[#B22234] fill-current" : "text-slate-600"
                                 }`}
                               />
                             ))}
@@ -361,7 +361,7 @@ export default function BestPlaceToSellPage() {
                             </h4>
                             <ul className="space-y-1">
                               {option.pros.map((pro, i) => (
-                                <li key={i} className="text-slate-300 text-sm flex items-start gap-2">
+                                <li key={i} className="text-slate-600 text-sm flex items-start gap-2">
                                   <span className="text-green-400 mt-1">+</span>
                                   {pro}
                                 </li>
@@ -375,7 +375,7 @@ export default function BestPlaceToSellPage() {
                             </h4>
                             <ul className="space-y-1">
                               {option.cons.map((con, i) => (
-                                <li key={i} className="text-slate-300 text-sm flex items-start gap-2">
+                                <li key={i} className="text-slate-600 text-sm flex items-start gap-2">
                                   <span className="text-red-400 mt-1">-</span>
                                   {con}
                                 </li>
@@ -384,13 +384,13 @@ export default function BestPlaceToSellPage() {
                           </div>
                         </div>
 
-                        <div className="flex flex-col md:flex-row md:items-center gap-4 pt-4 border-t border-white/10">
+                        <div className="flex flex-col md:flex-row md:items-center gap-4 pt-4 border-t border-slate-200">
                           <div className="flex-1">
-                            <span className="text-amber-400 font-semibold">Best For: </span>
-                            <span className="text-slate-300">{option.bestFor}</span>
+                            <span className="text-[#B22234] font-semibold">Best For: </span>
+                            <span className="text-slate-600">{option.bestFor}</span>
                           </div>
                           {option.examples[0] !== "Avoid pawn shops for silver sales" && (
-                            <div className="text-sm text-slate-500">
+                            <div className="text-sm text-slate-600">
                               Examples: {option.examples.join(", ")}
                             </div>
                           )}
@@ -406,19 +406,19 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* Tips for Maximum Value */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Tips for Maximum Value
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
                   <TrendingUp className="h-5 w-5 text-green-400" />
                   Before You Sell
                 </h3>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-slate-600">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-400 mt-1 flex-shrink-0" />
                     Check current spot price (use Kitco or similar)
@@ -441,12 +441,12 @@ export default function BestPlaceToSellPage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                  <AlertTriangle className="h-5 w-5 text-amber-400" />
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <AlertTriangle className="h-5 w-5 text-[#B22234]" />
                   Common Mistakes to Avoid
                 </h3>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-slate-600">
                   <li className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-red-400 mt-1 flex-shrink-0" />
                     Selling to the first buyer without comparing
@@ -475,25 +475,25 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -504,30 +504,30 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/buy-sell-silver/how-to-sell-coins" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">How to Sell Silver Coins</h3>
-              <p className="text-sm text-slate-400">Step-by-step selling process</p>
+            <Link href="/buy-sell-silver/how-to-sell-coins" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">How to Sell Silver Coins</h3>
+              <p className="text-sm text-slate-600">Step-by-step selling process</p>
             </Link>
-            <Link href="/buy-sell-silver/when-to-sell" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">When to Sell Silver</h3>
-              <p className="text-sm text-slate-400">Market timing strategies</p>
+            <Link href="/buy-sell-silver/when-to-sell" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">When to Sell Silver</h3>
+              <p className="text-sm text-slate-600">Market timing strategies</p>
             </Link>
-            <Link href="/buy-sell-silver/silver-testing" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Silver Testing Methods</h3>
-              <p className="text-sm text-slate-400">Verify before you sell</p>
+            <Link href="/buy-sell-silver/silver-testing" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Silver Testing Methods</h3>
+              <p className="text-sm text-slate-600">Verify before you sell</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA
             variant="footer"

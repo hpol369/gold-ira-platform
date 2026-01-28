@@ -120,10 +120,10 @@ export default function FERSCalculatorPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-slate-900">
+      <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+          <div className="absolute inset-0 bg-slate-50" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
 
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -132,13 +132,13 @@ export default function FERSCalculatorPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-4">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/10 text-blue-600 border border-blue-500/20 mb-4">
                 Federal Employee Tool
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-4">
                 FERS Retirement Calculator
               </h1>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                 After 25+ years of federal service, you've earned a solid pension.
                 This calculator shows exactly what you'll get - and how to protect your TSP from the next market downturn.
               </p>
@@ -156,7 +156,7 @@ export default function FERSCalculatorPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
+                  className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8"
                 >
                   {/* Progress Steps */}
                   <div className="flex items-center justify-center mb-8">
@@ -165,8 +165,8 @@ export default function FERSCalculatorPage() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                             step >= s
-                              ? 'bg-blue-500 text-white'
-                              : 'bg-slate-700 text-slate-400'
+                              ? 'bg-blue-500 text-slate-900'
+                              : 'bg-slate-700 text-slate-500'
                           }`}
                         >
                           {s}
@@ -189,16 +189,16 @@ export default function FERSCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                         What is your High-3 average salary?
                       </h2>
-                      <p className="text-slate-400 text-center mb-8">
+                      <p className="text-slate-500 text-center mb-8">
                         The average of your highest 3 consecutive years of basic pay
                       </p>
 
                       <div className="space-y-6">
                         <div className="text-center">
-                          <span className="text-5xl font-bold text-blue-400">
+                          <span className="text-5xl font-bold text-blue-600">
                             {formatCurrency(highThreeSalary)}
                           </span>
                         </div>
@@ -213,7 +213,7 @@ export default function FERSCalculatorPage() {
                           className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-400">
+                        <div className="flex justify-between text-sm text-slate-500">
                           <span>$40,000</span>
                           <span>$250,000</span>
                         </div>
@@ -225,8 +225,8 @@ export default function FERSCalculatorPage() {
                               onClick={() => setHighThreeSalary(amount)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 highThreeSalary === amount
-                                  ? 'bg-blue-500 text-white'
-                                  : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                  ? 'bg-blue-500 text-slate-900'
+                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
                               }`}
                             >
                               {formatCurrency(amount)}
@@ -238,7 +238,7 @@ export default function FERSCalculatorPage() {
                       <div className="mt-8 flex justify-end">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -253,20 +253,20 @@ export default function FERSCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                         Service & Retirement Age
                       </h2>
-                      <p className="text-slate-400 text-center mb-8">
+                      <p className="text-slate-500 text-center mb-8">
                         Enter your years of creditable service and planned retirement age
                       </p>
 
                       <div className="grid md:grid-cols-2 gap-8">
                         {/* Years of Service */}
                         <div className="space-y-4">
-                          <h3 className="text-lg font-semibold text-white text-center">Years of Service</h3>
+                          <h3 className="text-lg font-semibold text-slate-900 text-center">Years of Service</h3>
                           <div className="text-center">
-                            <span className="text-4xl font-bold text-blue-400">{yearsOfService}</span>
-                            <span className="text-xl text-slate-400 ml-2">years</span>
+                            <span className="text-4xl font-bold text-blue-600">{yearsOfService}</span>
+                            <span className="text-xl text-slate-500 ml-2">years</span>
                           </div>
                           <input
                             type="range"
@@ -284,8 +284,8 @@ export default function FERSCalculatorPage() {
                                 onClick={() => setYearsOfService(y)}
                                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                                   yearsOfService === y
-                                    ? 'bg-blue-500 text-white'
-                                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                    ? 'bg-blue-500 text-slate-900'
+                                    : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
                                 }`}
                               >
                                 {y} yrs
@@ -296,10 +296,10 @@ export default function FERSCalculatorPage() {
 
                         {/* Retirement Age */}
                         <div className="space-y-4">
-                          <h3 className="text-lg font-semibold text-white text-center">Retirement Age</h3>
+                          <h3 className="text-lg font-semibold text-slate-900 text-center">Retirement Age</h3>
                           <div className="text-center">
-                            <span className="text-4xl font-bold text-blue-400">{retirementAge}</span>
-                            <span className="text-xl text-slate-400 ml-2">years old</span>
+                            <span className="text-4xl font-bold text-blue-600">{retirementAge}</span>
+                            <span className="text-xl text-slate-500 ml-2">years old</span>
                           </div>
                           <input
                             type="range"
@@ -317,8 +317,8 @@ export default function FERSCalculatorPage() {
                                 onClick={() => setRetirementAge(a)}
                                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                                   retirementAge === a
-                                    ? 'bg-blue-500 text-white'
-                                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                    ? 'bg-blue-500 text-slate-900'
+                                    : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
                                 }`}
                               >
                                 {a}
@@ -331,10 +331,10 @@ export default function FERSCalculatorPage() {
                       {/* Eligibility Status */}
                       <div className={`mt-6 rounded-lg p-4 ${
                         calculations.canRetireImmediate
-                          ? 'bg-green-500/10 border border-green-500/20'
+                          ? 'bg-green-50 border border-green-200'
                           : calculations.canRetireMRAPlus10
-                            ? 'bg-amber-500/10 border border-amber-500/20'
-                            : 'bg-red-500/10 border border-red-500/20'
+                            ? 'bg-[#B22234]/10 border border-[#B22234]/30'
+                            : 'bg-red-50 border border-red-200'
                       }`}>
                         <p className={`text-sm ${
                           calculations.canRetireImmediate
@@ -354,13 +354,13 @@ export default function FERSCalculatorPage() {
                       <div className="mt-8 flex justify-between">
                         <button
                           onClick={() => setStep(1)}
-                          className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                          className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                         >
                           Back
                         </button>
                         <button
                           onClick={() => setStep(3)}
-                          className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -375,16 +375,16 @@ export default function FERSCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                         What is your TSP balance?
                       </h2>
-                      <p className="text-slate-400 text-center mb-8">
+                      <p className="text-slate-500 text-center mb-8">
                         Your Thrift Savings Plan balance (we'll estimate income using 4% withdrawal rate)
                       </p>
 
                       <div className="space-y-6">
                         <div className="text-center">
-                          <span className="text-5xl font-bold text-blue-400">
+                          <span className="text-5xl font-bold text-blue-600">
                             {formatCurrency(tspBalance)}
                           </span>
                         </div>
@@ -399,7 +399,7 @@ export default function FERSCalculatorPage() {
                           className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-400">
+                        <div className="flex justify-between text-sm text-slate-500">
                           <span>$0</span>
                           <span>$3,000,000</span>
                         </div>
@@ -411,8 +411,8 @@ export default function FERSCalculatorPage() {
                               onClick={() => setTspBalance(amount)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 tspBalance === amount
-                                  ? 'bg-blue-500 text-white'
-                                  : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                                  ? 'bg-blue-500 text-slate-900'
+                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
                               }`}
                             >
                               {formatCurrency(amount)}
@@ -424,13 +424,13 @@ export default function FERSCalculatorPage() {
                       <div className="mt-8 flex justify-between">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                          className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                         >
                           Back
                         </button>
                         <button
                           onClick={() => setStep(4)}
-                          className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -445,10 +445,10 @@ export default function FERSCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                         Survivor Benefit Election
                       </h2>
-                      <p className="text-slate-400 text-center mb-8">
+                      <p className="text-slate-500 text-center mb-8">
                         Choose a survivor benefit for your spouse (reduces your pension)
                       </p>
 
@@ -458,14 +458,14 @@ export default function FERSCalculatorPage() {
                           className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
                             survivorBenefit === 'none'
                               ? 'border-blue-500 bg-blue-500/10'
-                              : 'border-slate-700 bg-slate-800/50 hover:border-slate-600'
+                              : 'border-slate-700 bg-slate-50 hover:border-slate-600'
                           }`}
                         >
-                          <h3 className="text-lg font-semibold text-white">No Survivor Benefit</h3>
-                          <p className="text-slate-400 text-sm mt-1">
+                          <h3 className="text-lg font-semibold text-slate-900">No Survivor Benefit</h3>
+                          <p className="text-slate-600 text-sm mt-1">
                             Full pension amount with no reduction. Pension stops at your death.
                           </p>
-                          <p className="text-blue-400 font-semibold mt-2">0% reduction</p>
+                          <p className="text-blue-600 font-semibold mt-2">0% reduction</p>
                         </button>
 
                         <button
@@ -473,14 +473,14 @@ export default function FERSCalculatorPage() {
                           className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
                             survivorBenefit === 'partial'
                               ? 'border-blue-500 bg-blue-500/10'
-                              : 'border-slate-700 bg-slate-800/50 hover:border-slate-600'
+                              : 'border-slate-700 bg-slate-50 hover:border-slate-600'
                           }`}
                         >
-                          <h3 className="text-lg font-semibold text-white">Partial Survivor (25%)</h3>
-                          <p className="text-slate-400 text-sm mt-1">
+                          <h3 className="text-lg font-semibold text-slate-900">Partial Survivor (25%)</h3>
+                          <p className="text-slate-600 text-sm mt-1">
                             Spouse receives 25% of your pension after your death.
                           </p>
-                          <p className="text-amber-400 font-semibold mt-2">5% reduction in your pension</p>
+                          <p className="text-[#B22234] font-semibold mt-2">5% reduction in your pension</p>
                         </button>
 
                         <button
@@ -488,27 +488,27 @@ export default function FERSCalculatorPage() {
                           className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
                             survivorBenefit === 'full'
                               ? 'border-blue-500 bg-blue-500/10'
-                              : 'border-slate-700 bg-slate-800/50 hover:border-slate-600'
+                              : 'border-slate-700 bg-slate-50 hover:border-slate-600'
                           }`}
                         >
-                          <h3 className="text-lg font-semibold text-white">Full Survivor (50%)</h3>
-                          <p className="text-slate-400 text-sm mt-1">
+                          <h3 className="text-lg font-semibold text-slate-900">Full Survivor (50%)</h3>
+                          <p className="text-slate-600 text-sm mt-1">
                             Spouse receives 50% of your pension after your death.
                           </p>
-                          <p className="text-red-400 font-semibold mt-2">10% reduction in your pension</p>
+                          <p className="text-red-600 font-semibold mt-2">10% reduction in your pension</p>
                         </button>
                       </div>
 
                       <div className="mt-8 flex justify-between">
                         <button
                           onClick={() => setStep(3)}
-                          className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                          className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                         >
                           Back
                         </button>
                         <button
                           onClick={handleCalculate}
-                          className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Calculate FERS
                         </button>
@@ -525,27 +525,27 @@ export default function FERSCalculatorPage() {
                   className="space-y-8"
                 >
                   {/* Summary Card */}
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-                    <h2 className="text-2xl font-bold text-white mb-6 text-center">
+                  <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
+                    <h2 className="text-2xl font-bold text-[#000080] mb-6 text-center">
                       Your FERS Retirement Estimate
                     </h2>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                      <div className="bg-slate-800/50 rounded-lg p-4 text-center">
-                        <p className="text-slate-400 text-sm">High-3 Salary</p>
-                        <p className="text-xl font-bold text-white">{formatCurrency(highThreeSalary)}</p>
+                      <div className="bg-slate-50 rounded-lg p-4 text-center">
+                        <p className="text-slate-600 text-sm">High-3 Salary</p>
+                        <p className="text-xl font-bold text-slate-900">{formatCurrency(highThreeSalary)}</p>
                       </div>
-                      <div className="bg-slate-800/50 rounded-lg p-4 text-center">
-                        <p className="text-slate-400 text-sm">Years of Service</p>
-                        <p className="text-xl font-bold text-white">{yearsOfService}</p>
+                      <div className="bg-slate-50 rounded-lg p-4 text-center">
+                        <p className="text-slate-600 text-sm">Years of Service</p>
+                        <p className="text-xl font-bold text-slate-900">{yearsOfService}</p>
                       </div>
-                      <div className="bg-slate-800/50 rounded-lg p-4 text-center">
-                        <p className="text-slate-400 text-sm">Retirement Age</p>
-                        <p className="text-xl font-bold text-white">{retirementAge}</p>
+                      <div className="bg-slate-50 rounded-lg p-4 text-center">
+                        <p className="text-slate-600 text-sm">Retirement Age</p>
+                        <p className="text-xl font-bold text-slate-900">{retirementAge}</p>
                       </div>
-                      <div className="bg-slate-800/50 rounded-lg p-4 text-center">
-                        <p className="text-slate-400 text-sm">Multiplier</p>
-                        <p className="text-xl font-bold text-white">{(calculations.multiplier * 100).toFixed(1)}%</p>
+                      <div className="bg-slate-50 rounded-lg p-4 text-center">
+                        <p className="text-slate-600 text-sm">Multiplier</p>
+                        <p className="text-xl font-bold text-slate-900">{(calculations.multiplier * 100).toFixed(1)}%</p>
                       </div>
                     </div>
 
@@ -553,53 +553,53 @@ export default function FERSCalculatorPage() {
                     <div className="grid md:grid-cols-2 gap-6 mb-8">
                       {/* Monthly Income */}
                       <div className="bg-gradient-to-b from-blue-500/10 to-transparent border-2 border-blue-500/30 rounded-xl p-6">
-                        <h3 className="text-lg font-semibold text-white mb-4">Monthly Income</h3>
+                        <h3 className="text-lg font-semibold text-slate-900 mb-4">Monthly Income</h3>
                         <div className="space-y-3">
                           <div className="flex justify-between">
-                            <span className="text-slate-400">FERS Basic Benefit</span>
-                            <span className="text-white font-semibold">{formatCurrency(calculations.netMonthlyBenefit)}</span>
+                            <span className="text-slate-500">FERS Basic Benefit</span>
+                            <span className="text-slate-900 font-semibold">{formatCurrency(calculations.netMonthlyBenefit)}</span>
                           </div>
                           {calculations.fersSupplementMonthly > 0 && (
                             <div className="flex justify-between">
-                              <span className="text-slate-400">FERS Supplement</span>
-                              <span className="text-white font-semibold">{formatCurrency(calculations.fersSupplementMonthly)}</span>
+                              <span className="text-slate-500">FERS Supplement</span>
+                              <span className="text-slate-900 font-semibold">{formatCurrency(calculations.fersSupplementMonthly)}</span>
                             </div>
                           )}
                           <div className="flex justify-between">
-                            <span className="text-slate-400">TSP (4% rate)</span>
-                            <span className="text-white font-semibold">{formatCurrency(calculations.tspMonthlyWithdrawal)}</span>
+                            <span className="text-slate-500">TSP (4% rate)</span>
+                            <span className="text-slate-900 font-semibold">{formatCurrency(calculations.tspMonthlyWithdrawal)}</span>
                           </div>
                           <div className="border-t border-slate-700 pt-3">
                             <div className="flex justify-between">
-                              <span className="text-white font-semibold">Total Monthly</span>
-                              <span className="text-2xl font-bold text-blue-400">{formatCurrency(calculations.totalMonthly)}</span>
+                              <span className="text-slate-900 font-semibold">Total Monthly</span>
+                              <span className="text-2xl font-bold text-blue-600">{formatCurrency(calculations.totalMonthly)}</span>
                             </div>
                           </div>
                         </div>
                       </div>
 
                       {/* Annual Income */}
-                      <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
-                        <h3 className="text-lg font-semibold text-white mb-4">Annual Income</h3>
+                      <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-slate-900 mb-4">Annual Income</h3>
                         <div className="space-y-3">
                           <div className="flex justify-between">
-                            <span className="text-slate-400">FERS Basic Benefit</span>
-                            <span className="text-white font-semibold">{formatCurrency(calculations.netAnnualBenefit)}</span>
+                            <span className="text-slate-500">FERS Basic Benefit</span>
+                            <span className="text-slate-900 font-semibold">{formatCurrency(calculations.netAnnualBenefit)}</span>
                           </div>
                           {calculations.fersSupplementAnnual > 0 && (
                             <div className="flex justify-between">
-                              <span className="text-slate-400">FERS Supplement</span>
-                              <span className="text-white font-semibold">{formatCurrency(calculations.fersSupplementAnnual)}</span>
+                              <span className="text-slate-500">FERS Supplement</span>
+                              <span className="text-slate-900 font-semibold">{formatCurrency(calculations.fersSupplementAnnual)}</span>
                             </div>
                           )}
                           <div className="flex justify-between">
-                            <span className="text-slate-400">TSP (4% rate)</span>
-                            <span className="text-white font-semibold">{formatCurrency(calculations.tspAnnualWithdrawal)}</span>
+                            <span className="text-slate-500">TSP (4% rate)</span>
+                            <span className="text-slate-900 font-semibold">{formatCurrency(calculations.tspAnnualWithdrawal)}</span>
                           </div>
                           <div className="border-t border-slate-700 pt-3">
                             <div className="flex justify-between">
-                              <span className="text-white font-semibold">Total Annual</span>
-                              <span className="text-2xl font-bold text-white">{formatCurrency(calculations.totalAnnual)}</span>
+                              <span className="text-slate-900 font-semibold">Total Annual</span>
+                              <span className="text-2xl font-bold text-slate-900">{formatCurrency(calculations.totalAnnual)}</span>
                             </div>
                           </div>
                         </div>
@@ -607,17 +607,17 @@ export default function FERSCalculatorPage() {
                     </div>
 
                     {/* Replacement Ratio */}
-                    <div className="bg-slate-800/50 rounded-lg p-6">
+                    <div className="bg-slate-50 rounded-lg p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <span className="text-slate-300">Income Replacement Ratio</span>
+                        <span className="text-slate-600">Income Replacement Ratio</span>
                         <span className={`text-2xl font-bold ${
-                          calculations.replacementRatio >= 80 ? 'text-green-400' :
-                          calculations.replacementRatio >= 60 ? 'text-amber-400' : 'text-red-400'
+                          calculations.replacementRatio >= 80 ? 'text-green-600' :
+                          calculations.replacementRatio >= 60 ? 'text-[#B22234]' : 'text-red-600'
                         }`}>
                           {calculations.replacementRatio.toFixed(0)}%
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-700 rounded-full overflow-hidden">
+                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
                         <div
                           className={`h-full rounded-full transition-all ${
                             calculations.replacementRatio >= 80 ? 'bg-green-500' :
@@ -626,7 +626,7 @@ export default function FERSCalculatorPage() {
                           style={{ width: `${Math.min(100, calculations.replacementRatio)}%` }}
                         />
                       </div>
-                      <p className="text-slate-400 text-sm mt-2">
+                      <p className="text-slate-600 text-sm mt-2">
                         Financial advisors often recommend 70-80% replacement of pre-retirement income
                       </p>
                     </div>
@@ -634,20 +634,20 @@ export default function FERSCalculatorPage() {
 
                   {/* Survivor Benefit Impact */}
                   {survivorBenefit !== 'none' && (
-                    <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-                      <h3 className="text-lg font-semibold text-white mb-4">Survivor Benefit Impact</h3>
+                    <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
+                      <h3 className="text-lg font-semibold text-slate-900 mb-4">Survivor Benefit Impact</h3>
                       <div className="grid md:grid-cols-3 gap-4">
-                        <div className="bg-slate-800/50 rounded-lg p-4">
-                          <p className="text-slate-400 text-sm">Gross Annual Benefit</p>
-                          <p className="text-lg font-semibold text-white">{formatCurrency(calculations.annualBasicBenefit)}</p>
+                        <div className="bg-slate-50 rounded-lg p-4">
+                          <p className="text-slate-600 text-sm">Gross Annual Benefit</p>
+                          <p className="text-lg font-semibold text-slate-900">{formatCurrency(calculations.annualBasicBenefit)}</p>
                         </div>
-                        <div className="bg-slate-800/50 rounded-lg p-4">
-                          <p className="text-slate-400 text-sm">Survivor Reduction</p>
-                          <p className="text-lg font-semibold text-red-400">-{formatCurrency(calculations.survivorReduction)}</p>
+                        <div className="bg-slate-50 rounded-lg p-4">
+                          <p className="text-slate-600 text-sm">Survivor Reduction</p>
+                          <p className="text-lg font-semibold text-red-600">-{formatCurrency(calculations.survivorReduction)}</p>
                         </div>
-                        <div className="bg-slate-800/50 rounded-lg p-4">
-                          <p className="text-slate-400 text-sm">Net Annual Benefit</p>
-                          <p className="text-lg font-semibold text-blue-400">{formatCurrency(calculations.netAnnualBenefit)}</p>
+                        <div className="bg-slate-50 rounded-lg p-4">
+                          <p className="text-slate-600 text-sm">Net Annual Benefit</p>
+                          <p className="text-lg font-semibold text-blue-600">{formatCurrency(calculations.netAnnualBenefit)}</p>
                         </div>
                       </div>
                     </div>
@@ -655,9 +655,9 @@ export default function FERSCalculatorPage() {
 
                   {/* FERS Supplement Notice */}
                   {calculations.fersSupplementAnnual > 0 && (
-                    <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
-                      <h3 className="text-lg font-semibold text-amber-400 mb-2">FERS Supplement</h3>
-                      <p className="text-slate-300">
+                    <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+                      <h3 className="text-lg font-semibold text-[#B22234] mb-2">FERS Supplement</h3>
+                      <p className="text-slate-600">
                         You may be eligible for the FERS Supplement of approximately <strong>{formatCurrency(calculations.fersSupplementMonthly)}/month</strong>.
                         This is paid from retirement until age 62 to bridge the gap before Social Security.
                         The supplement is subject to an earnings test if you work in retirement.
@@ -676,13 +676,13 @@ export default function FERSCalculatorPage() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button
                       onClick={handleReset}
-                      className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Calculate Again
                     </button>
                     <Link
                       href="/learn/fers-pension-gold-ira"
-                      className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors text-center"
+                      className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors text-center"
                     >
                       FERS & Gold IRA Guide
                     </Link>
@@ -694,25 +694,25 @@ export default function FERSCalculatorPage() {
         </section>
 
         {/* Educational Section */}
-        <section className="py-16 bg-slate-800/50">
+        <section className="py-16 bg-slate-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-white mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
               Understanding FERS Retirement
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-blue-400 mb-3">FERS Basic Benefit Formula</h3>
-                <p className="text-slate-300">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-blue-600 mb-3">FERS Basic Benefit Formula</h3>
+                <p className="text-slate-600">
                   <strong>1%</strong> × High-3 × Years of Service<br />
                   Or <strong>1.1%</strong> if age 62+ with 20+ years<br /><br />
                   Example: 1% × $100,000 × 30 years = $30,000/year
                 </p>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-blue-400 mb-3">Retirement Eligibility</h3>
-                <p className="text-slate-300">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-blue-600 mb-3">Retirement Eligibility</h3>
+                <p className="text-slate-600">
                   <strong>MRA + 30:</strong> Minimum Retirement Age with 30 years<br />
                   <strong>Age 60 + 20:</strong> Age 60 with 20 years<br />
                   <strong>Age 62 + 5:</strong> Age 62 with 5 years<br />
@@ -720,18 +720,18 @@ export default function FERSCalculatorPage() {
                 </p>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-blue-400 mb-3">Three Legs of FERS</h3>
-                <p className="text-slate-300">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-blue-600 mb-3">Three Legs of FERS</h3>
+                <p className="text-slate-600">
                   <strong>1. FERS Basic Benefit:</strong> The pension calculated above<br />
                   <strong>2. Social Security:</strong> Full benefits at your FRA<br />
                   <strong>3. TSP:</strong> Your Thrift Savings Plan investments
                 </p>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-blue-400 mb-3">TSP Rollover Options</h3>
-                <p className="text-slate-300">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-blue-600 mb-3">TSP Rollover Options</h3>
+                <p className="text-slate-600">
                   After separation or at age 59½, you can roll TSP funds into:<br />
                   • Traditional IRA<br />
                   • Roth IRA (with tax consequences)<br />
@@ -745,40 +745,40 @@ export default function FERSCalculatorPage() {
         {/* Related Tools */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-white mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
               Related Retirement Tools
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
                 href="/tools/72t-calculator"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-white group-hover:text-amber-400 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
                   72(t) Calculator
                 </h3>
-                <p className="text-slate-400 text-sm mt-2">
+                <p className="text-slate-600 text-sm mt-2">
                   Calculate early withdrawal options
                 </p>
               </Link>
               <Link
                 href="/tools/retirement-calculator"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-white group-hover:text-amber-400 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
                   Retirement Calculator
                 </h3>
-                <p className="text-slate-400 text-sm mt-2">
+                <p className="text-slate-600 text-sm mt-2">
                   See if you have enough saved
                 </p>
               </Link>
               <Link
                 href="/tools/rmd-calculator"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-white group-hover:text-amber-400 transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
                   RMD Calculator
                 </h3>
-                <p className="text-slate-400 text-sm mt-2">
+                <p className="text-slate-600 text-sm mt-2">
                   Required Minimum Distributions
                 </p>
               </Link>

@@ -154,7 +154,7 @@ export function RailroadTier1Calculator() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
+              className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8"
             >
               {/* Progress Steps */}
               <div className="flex items-center justify-center mb-8">
@@ -163,8 +163,8 @@ export function RailroadTier1Calculator() {
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                         step >= s
-                          ? "bg-blue-500 text-white"
-                          : "bg-slate-700 text-slate-400"
+                          ? "bg-blue-500text-slate-900"
+                          : "bg-slate-700 text-slate-500"
                       }`}
                     >
                       {s}
@@ -187,24 +187,24 @@ export function RailroadTier1Calculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                     Your Work History
                   </h2>
-                  <p className="text-slate-400 text-center mb-8">
+                  <p className="text-slate-500 text-center mb-8">
                     Enter your years of railroad and non-railroad employment
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-8">
                     {/* Railroad Years */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white text-center">
+                      <h3 className="text-lg font-semibold text-slate-900 text-center">
                         Railroad Service
                       </h3>
                       <div className="text-center">
-                        <span className="text-4xl font-bold text-blue-400">
+                        <span className="text-4xl font-bold text-blue-600">
                           {railroadYears}
                         </span>
-                        <span className="text-xl text-slate-400 ml-2">years</span>
+                        <span className="text-xl text-slate-500 ml-2">years</span>
                       </div>
                       <input
                         type="range"
@@ -222,8 +222,8 @@ export function RailroadTier1Calculator() {
                             onClick={() => setRailroadYears(y)}
                             className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                               railroadYears === y
-                                ? "bg-blue-500 text-white"
-                                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                                ? "bg-blue-500text-slate-900"
+                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                             }`}
                           >
                             {y} yrs
@@ -234,14 +234,14 @@ export function RailroadTier1Calculator() {
 
                     {/* Non-Railroad Years */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white text-center">
+                      <h3 className="text-lg font-semibold text-slate-900 text-center">
                         Non-Railroad Work
                       </h3>
                       <div className="text-center">
-                        <span className="text-4xl font-bold text-amber-400">
+                        <span className="text-4xl font-bold text-[#B22234]">
                           {nonRailroadYears}
                         </span>
-                        <span className="text-xl text-slate-400 ml-2">years</span>
+                        <span className="text-xl text-slate-500 ml-2">years</span>
                       </div>
                       <input
                         type="range"
@@ -250,7 +250,7 @@ export function RailroadTier1Calculator() {
                         step="1"
                         value={nonRailroadYears}
                         onChange={(e) => setNonRailroadYears(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                       />
                       <div className="flex flex-wrap gap-2 justify-center">
                         {[0, 5, 10, 15].map((y) => (
@@ -259,8 +259,8 @@ export function RailroadTier1Calculator() {
                             onClick={() => setNonRailroadYears(y)}
                             className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                               nonRailroadYears === y
-                                ? "bg-amber-500 text-slate-900"
-                                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                                ? "bg-[#B22234] text-white"
+                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                             }`}
                           >
                             {y} yrs
@@ -270,7 +270,7 @@ export function RailroadTier1Calculator() {
                     </div>
                   </div>
 
-                  <div className="mt-6 bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
+                  <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
                     <p className="text-blue-300 text-sm">
                       <strong>Total Coverage:</strong> {railroadYears + nonRailroadYears}{" "}
                       years
@@ -283,7 +283,7 @@ export function RailroadTier1Calculator() {
                   <div className="mt-8 flex justify-end">
                     <button
                       onClick={() => setStep(2)}
-                      className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                      className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -298,21 +298,21 @@ export function RailroadTier1Calculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                     Earnings & Retirement Age
                   </h2>
-                  <p className="text-slate-400 text-center mb-8">
+                  <p className="text-slate-500 text-center mb-8">
                     Average indexed monthly earnings and planned retirement age
                   </p>
 
                   <div className="space-y-8">
                     {/* Average Earnings */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white text-center">
+                      <h3 className="text-lg font-semibold text-slate-900 text-center">
                         Average Indexed Monthly Earnings (AIME)
                       </h3>
                       <div className="text-center">
-                        <span className="text-5xl font-bold text-blue-400">
+                        <span className="text-5xl font-bold text-blue-600">
                           {formatCurrency(averageMonthlyEarnings)}
                         </span>
                       </div>
@@ -334,8 +334,8 @@ export function RailroadTier1Calculator() {
                             onClick={() => setAverageMonthlyEarnings(amount)}
                             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                               averageMonthlyEarnings === amount
-                                ? "bg-blue-500 text-white"
-                                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                                ? "bg-blue-500text-slate-900"
+                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                             }`}
                           >
                             {formatCurrency(amount)}
@@ -346,14 +346,14 @@ export function RailroadTier1Calculator() {
 
                     {/* Retirement Age */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white text-center">
+                      <h3 className="text-lg font-semibold text-slate-900 text-center">
                         Retirement Age
                       </h3>
                       <div className="text-center">
-                        <span className="text-4xl font-bold text-blue-400">
+                        <span className="text-4xl font-bold text-blue-600">
                           {retirementAge}
                         </span>
-                        <span className="text-xl text-slate-400 ml-2">years old</span>
+                        <span className="text-xl text-slate-500 ml-2">years old</span>
                       </div>
                       <input
                         type="range"
@@ -371,8 +371,8 @@ export function RailroadTier1Calculator() {
                             onClick={() => setRetirementAge(age)}
                             className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                               retirementAge === age
-                                ? "bg-blue-500 text-white"
-                                : "bg-slate-700 text-slate-300 hover:bg-slate-600"
+                                ? "bg-blue-500text-slate-900"
+                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
                             }`}
                           >
                             {age}
@@ -384,10 +384,10 @@ export function RailroadTier1Calculator() {
                     <div
                       className={`rounded-lg p-4 ${
                         retirementAge < 67
-                          ? "bg-amber-500/10 border border-amber-500/20"
+                          ? "bg-[#B22234]/10 border border-[#B22234]/30"
                           : retirementAge > 67
-                          ? "bg-green-500/10 border border-green-500/20"
-                          : "bg-blue-500/10 border border-blue-500/20"
+                          ? "bg-green-50 border border-green-200"
+                          : "bg-blue-50 border border-blue-200"
                       }`}
                     >
                       <p
@@ -413,13 +413,13 @@ export function RailroadTier1Calculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(1)}
-                      className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={() => setStep(3)}
-                      className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                      className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -434,16 +434,16 @@ export function RailroadTier1Calculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                     WEP Considerations
                   </h2>
-                  <p className="text-slate-400 text-center mb-8">
+                  <p className="text-slate-500 text-center mb-8">
                     Windfall Elimination Provision may affect mixed employment
                   </p>
 
                   <div className="space-y-6">
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white">
+                      <h3 className="text-lg font-semibold text-slate-900">
                         Do you receive a pension from work not covered by Social Security?
                       </h3>
                       <div className="grid grid-cols-2 gap-4">
@@ -452,11 +452,11 @@ export function RailroadTier1Calculator() {
                           className={`p-4 rounded-xl border-2 text-center transition-colors ${
                             !hasNonCoveredPension
                               ? "border-blue-500 bg-blue-500/10"
-                              : "border-slate-700 bg-slate-800/50 hover:border-slate-600"
+                              : "border-slate-700 bg-slate-50 hover:border-slate-600"
                           }`}
                         >
-                          <p className="font-semibold text-white">No</p>
-                          <p className="text-slate-400 text-sm mt-1">
+                          <p className="font-semibold text-slate-900">No</p>
+                          <p className="text-slate-600 text-sm mt-1">
                             All work was SS-covered
                           </p>
                         </button>
@@ -465,11 +465,11 @@ export function RailroadTier1Calculator() {
                           className={`p-4 rounded-xl border-2 text-center transition-colors ${
                             hasNonCoveredPension
                               ? "border-blue-500 bg-blue-500/10"
-                              : "border-slate-700 bg-slate-800/50 hover:border-slate-600"
+                              : "border-slate-700 bg-slate-50 hover:border-slate-600"
                           }`}
                         >
-                          <p className="font-semibold text-white">Yes</p>
-                          <p className="text-slate-400 text-sm mt-1">
+                          <p className="font-semibold text-slate-900">Yes</p>
+                          <p className="text-slate-600 text-sm mt-1">
                             Some non-covered work
                           </p>
                         </button>
@@ -482,11 +482,11 @@ export function RailroadTier1Calculator() {
                         animate={{ opacity: 1, height: "auto" }}
                         className="space-y-4"
                       >
-                        <h3 className="text-lg font-semibold text-white">
+                        <h3 className="text-lg font-semibold text-slate-900">
                           Monthly non-covered pension amount:
                         </h3>
                         <div className="text-center">
-                          <span className="text-4xl font-bold text-amber-400">
+                          <span className="text-4xl font-bold text-[#B22234]">
                             {formatCurrency(nonCoveredPensionAmount)}
                           </span>
                         </div>
@@ -499,10 +499,10 @@ export function RailroadTier1Calculator() {
                           onChange={(e) =>
                             setNonCoveredPensionAmount(Number(e.target.value))
                           }
-                          className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                         />
 
-                        <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                        <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
                           <p className="text-amber-300 text-sm">
                             <strong>WEP Impact:</strong> If you receive a pension from
                             work not covered by Social Security (e.g., some government
@@ -517,13 +517,13 @@ export function RailroadTier1Calculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(2)}
-                      className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={() => setStep(4)}
-                      className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                      className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -538,16 +538,16 @@ export function RailroadTier1Calculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-white mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
                     GPO Considerations
                   </h2>
-                  <p className="text-slate-400 text-center mb-8">
+                  <p className="text-slate-500 text-center mb-8">
                     Government Pension Offset affects spousal/survivor benefits
                   </p>
 
                   <div className="space-y-6">
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-white">
+                      <h3 className="text-lg font-semibold text-slate-900">
                         Were you a federal, state, or local government employee?
                       </h3>
                       <div className="grid grid-cols-2 gap-4">
@@ -556,11 +556,11 @@ export function RailroadTier1Calculator() {
                           className={`p-4 rounded-xl border-2 text-center transition-colors ${
                             !isGovernmentEmployee
                               ? "border-blue-500 bg-blue-500/10"
-                              : "border-slate-700 bg-slate-800/50 hover:border-slate-600"
+                              : "border-slate-700 bg-slate-50 hover:border-slate-600"
                           }`}
                         >
-                          <p className="font-semibold text-white">No</p>
-                          <p className="text-slate-400 text-sm mt-1">
+                          <p className="font-semibold text-slate-900">No</p>
+                          <p className="text-slate-600 text-sm mt-1">
                             Private sector only
                           </p>
                         </button>
@@ -569,11 +569,11 @@ export function RailroadTier1Calculator() {
                           className={`p-4 rounded-xl border-2 text-center transition-colors ${
                             isGovernmentEmployee
                               ? "border-blue-500 bg-blue-500/10"
-                              : "border-slate-700 bg-slate-800/50 hover:border-slate-600"
+                              : "border-slate-700 bg-slate-50 hover:border-slate-600"
                           }`}
                         >
-                          <p className="font-semibold text-white">Yes</p>
-                          <p className="text-slate-400 text-sm mt-1">
+                          <p className="font-semibold text-slate-900">Yes</p>
+                          <p className="text-slate-600 text-sm mt-1">
                             Government work history
                           </p>
                         </button>
@@ -584,7 +584,7 @@ export function RailroadTier1Calculator() {
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
-                        className="bg-red-500/10 border border-red-500/20 rounded-lg p-4"
+                        className="bg-red-50 border border-red-200 rounded-lg p-4"
                       >
                         <p className="text-red-300 text-sm">
                           <strong>GPO Warning:</strong> If you receive a government
@@ -596,7 +596,7 @@ export function RailroadTier1Calculator() {
                       </motion.div>
                     )}
 
-                    <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
+                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                       <p className="text-blue-300 text-sm">
                         <strong>Note:</strong> GPO primarily affects spousal and
                         survivor benefits. If you are claiming your own Tier I benefit
@@ -609,13 +609,13 @@ export function RailroadTier1Calculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(3)}
-                      className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={handleCalculate}
-                      className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                      className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                     >
                       Calculate Tier I
                     </button>
@@ -633,44 +633,44 @@ export function RailroadTier1Calculator() {
             >
               {/* Main Result Card */}
               <div className="bg-gradient-to-b from-blue-500/10 to-transparent border-2 border-blue-500/30 rounded-2xl p-8 text-center">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/20 text-blue-400 mb-4">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/20 text-blue-600 mb-4">
                   Your Tier I Benefit
                 </span>
-                <div className="text-6xl font-bold text-blue-400 mb-2">
+                <div className="text-6xl font-bold text-blue-600 mb-2">
                   {formatCurrency(calculations.finalBenefit)}
                 </div>
-                <p className="text-slate-300 mb-4">
+                <p className="text-slate-600 mb-4">
                   Monthly at age {calculations.retirementAge} with{" "}
                   {calculations.railroadYears + calculations.nonRailroadYears} years of
                   combined earnings
                 </p>
                 {calculations.hasWEP && (
-                  <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-500/20 text-amber-400">
+                  <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#B22234]/10 text-[#B22234]">
                     WEP Reduction Applied: -{formatCurrency(calculations.wepReduction)}
                   </div>
                 )}
               </div>
 
               {/* Benefit Breakdown */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-                <h2 className="text-2xl font-bold text-white mb-6 text-center">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
+                <h2 className="text-2xl font-bold text-[#000080] mb-6 text-center">
                   Tier I Calculation Breakdown
                 </h2>
 
                 <div className="space-y-4 mb-8">
                   {/* Base Calculation */}
-                  <div className="flex justify-between items-center py-3 border-b border-white/10">
-                    <span className="text-slate-400">Base Tier I (before adjustments)</span>
-                    <span className="text-white font-semibold">
+                  <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                    <span className="text-slate-500">Base Tier I (before adjustments)</span>
+                    <span className="text-slate-900 font-semibold">
                       {formatCurrency(calculations.tierIBenefit + calculations.wepReduction)}
                     </span>
                   </div>
 
                   {/* WEP Reduction */}
                   {calculations.hasWEP && (
-                    <div className="flex justify-between items-center py-3 border-b border-white/10">
-                      <span className="text-amber-400">WEP Reduction</span>
-                      <span className="text-amber-400 font-semibold">
+                    <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                      <span className="text-[#B22234]">WEP Reduction</span>
+                      <span className="text-[#B22234] font-semibold">
                         -{formatCurrency(calculations.wepReduction)}
                       </span>
                     </div>
@@ -678,8 +678,8 @@ export function RailroadTier1Calculator() {
 
                   {/* Final Amount */}
                   <div className="flex justify-between items-center py-3 bg-blue-500/10 rounded-lg px-4">
-                    <span className="text-white font-semibold">Final Tier I Benefit</span>
-                    <span className="text-2xl font-bold text-blue-400">
+                    <span className="text-slate-900 font-semibold">Final Tier I Benefit</span>
+                    <span className="text-2xl font-bold text-blue-600">
                       {formatCurrency(calculations.finalBenefit)}
                     </span>
                   </div>
@@ -687,52 +687,52 @@ export function RailroadTier1Calculator() {
 
                 {/* Comparison */}
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-slate-800/50 rounded-xl p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">
+                  <div className="bg-slate-50 rounded-xl p-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">
                       Employment Breakdown
                     </h3>
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Railroad Years</span>
-                        <span className="text-blue-400 font-semibold">
+                        <span className="text-slate-500">Railroad Years</span>
+                        <span className="text-blue-600 font-semibold">
                           {calculations.railroadYears}
                         </span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Non-Railroad Years</span>
-                        <span className="text-amber-400 font-semibold">
+                        <span className="text-slate-500">Non-Railroad Years</span>
+                        <span className="text-[#B22234] font-semibold">
                           {calculations.nonRailroadYears}
                         </span>
                       </div>
-                      <div className="flex justify-between border-t border-white/10 pt-3">
-                        <span className="text-white">Total Coverage</span>
-                        <span className="text-white font-bold">
+                      <div className="flex justify-between border-t border-slate-200 pt-3">
+                        <span className="text-slate-900">Total Coverage</span>
+                        <span className="text-slate-900 font-bold">
                           {calculations.railroadYears + calculations.nonRailroadYears} years
                         </span>
                       </div>
                     </div>
                   </div>
 
-                  <div className="bg-slate-800/50 rounded-xl p-6">
-                    <h3 className="text-lg font-semibold text-white mb-4">
+                  <div className="bg-slate-50 rounded-xl p-6">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-4">
                       Annual Benefit
                     </h3>
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Monthly</span>
-                        <span className="text-white font-semibold">
+                        <span className="text-slate-500">Monthly</span>
+                        <span className="text-slate-900 font-semibold">
                           {formatCurrency(calculations.finalBenefit)}
                         </span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-400">Annual</span>
-                        <span className="text-blue-400 font-bold">
+                        <span className="text-slate-500">Annual</span>
+                        <span className="text-blue-600 font-bold">
                           {formatCurrency(calculations.finalBenefit * 12)}
                         </span>
                       </div>
-                      <div className="flex justify-between border-t border-white/10 pt-3">
-                        <span className="text-slate-400">SS Equivalent</span>
-                        <span className="text-slate-300">
+                      <div className="flex justify-between border-t border-slate-200 pt-3">
+                        <span className="text-slate-500">SS Equivalent</span>
+                        <span className="text-slate-600">
                           {formatCurrency(calculations.ssEquivalent)}
                         </span>
                       </div>
@@ -743,14 +743,14 @@ export function RailroadTier1Calculator() {
 
               {/* WEP/GPO Explanation */}
               {(calculations.hasWEP || calculations.hasGPO) && (
-                <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold text-amber-400 mb-4">
+                <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+                  <h3 className="text-lg font-semibold text-[#B22234] mb-4">
                     WEP/GPO Impact on Your Benefits
                   </h3>
-                  <ul className="space-y-3 text-slate-300">
+                  <ul className="space-y-3 text-slate-600">
                     {calculations.hasWEP && (
                       <li className="flex items-start gap-2">
-                        <span className="text-amber-400 mt-1">*</span>
+                        <span className="text-[#B22234] mt-1">*</span>
                         <span>
                           <strong>WEP Reduction:</strong> Your Tier I is reduced by{" "}
                           {formatCurrency(calculations.wepReduction)}/month because you
@@ -761,7 +761,7 @@ export function RailroadTier1Calculator() {
                     )}
                     {calculations.hasGPO && (
                       <li className="flex items-start gap-2">
-                        <span className="text-amber-400 mt-1">*</span>
+                        <span className="text-[#B22234] mt-1">*</span>
                         <span>
                           <strong>GPO Reduction:</strong> If claiming spousal/survivor
                           benefits, they would be reduced by{" "}
@@ -771,13 +771,13 @@ export function RailroadTier1Calculator() {
                       </li>
                     )}
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">*</span>
+                      <span className="text-blue-600 mt-1">*</span>
                       <span>
                         <strong>Good News:</strong> Your Tier II benefit (railroad pension)
                         is NOT affected by WEP or GPO. Use our{" "}
                         <Link
                           href="/tools/railroad-retirement-calculator"
-                          className="text-amber-400 hover:underline"
+                          className="text-[#B22234] hover:underline"
                         >
                           full RRB calculator
                         </Link>{" "}
@@ -789,34 +789,34 @@ export function RailroadTier1Calculator() {
               )}
 
               {/* Important Notes */}
-              <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-blue-400 mb-4">
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-blue-600 mb-4">
                   Important Information
                 </h3>
-                <ul className="space-y-2 text-slate-300">
+                <ul className="space-y-2 text-slate-600">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     <span>
                       Tier I is the Social Security equivalent portion of Railroad
                       Retirement. It is calculated similarly to Social Security benefits.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     <span>
                       Both railroad and non-railroad earnings count toward your Tier I
                       benefit calculation.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     <span>
                       Tier I benefits receive annual COLA (cost-of-living adjustments)
                       just like Social Security.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">*</span>
+                    <span className="text-blue-600 mt-1">*</span>
                     <span>
                       This is only your Tier I portion. Railroad workers also receive
                       Tier II benefits based on railroad service only.
@@ -837,13 +837,13 @@ export function RailroadTier1Calculator() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={handleReset}
-                  className="px-8 py-3 bg-slate-700 text-slate-300 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                  className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                 >
                   Calculate Again
                 </button>
                 <Link
                   href="/tools/railroad-retirement-calculator"
-                  className="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition-colors text-center"
+                  className="px-8 py-3 bg-blue-500 text-slate-900 font-semibold rounded-lg hover:bg-blue-400 transition-colors text-center"
                 >
                   Full RRB Calculator (Tier I + II)
                 </Link>

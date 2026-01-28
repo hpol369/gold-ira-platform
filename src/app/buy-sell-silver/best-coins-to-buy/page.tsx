@@ -257,20 +257,20 @@ const schema = {
 
 export default function BestCoinsToBuyPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
             <Link
               href="/buy-sell-silver"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
@@ -279,10 +279,10 @@ export default function BestCoinsToBuyPage() {
               <Coins className="h-4 w-4" />
               400 MONTHLY SEARCHES - DIFF 0
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Best Silver Coins to Buy
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl">
+            <p className="text-xl text-slate-600 max-w-2xl">
               Not all silver coins are created equal. The right choice depends on your goals:
               maximum liquidity, lowest premiums, or IRA eligibility. Here&apos;s what to buy
               based on decades of precious metals experience.
@@ -292,15 +292,15 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Quick Recommendation */}
-      <section className="py-8 bg-amber-500/10 border-y border-amber-500/30">
+      <section className="py-8 bg-[#B22234]/10 border-y border-[#B22234]/30">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-xl font-bold text-amber-400 mb-4 flex items-center justify-center gap-2">
+            <h2 className="text-xl font-bold text-[#B22234] mb-4 flex items-center justify-center gap-2">
               <Trophy className="h-5 w-5" />
               Our Top Pick
             </h2>
-            <p className="text-slate-300">
-              <strong className="text-white">Canadian Silver Maple Leaf</strong> -
+            <p className="text-slate-600">
+              <strong className="text-slate-900">Canadian Silver Maple Leaf</strong> -
               The best all-around silver coin. Highest purity (.9999), reasonable premiums (15-25%),
               globally recognized, and IRA-eligible. If you buy one silver coin, make it a Maple Leaf.
             </p>
@@ -309,13 +309,13 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Top Coins Grid */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
               Top Silver Coins for Investors
             </h2>
-            <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
               Sovereign mint coins offer the best combination of liquidity, recognition, and security.
               All coins below are IRA-eligible.
             </p>
@@ -323,30 +323,30 @@ export default function BestCoinsToBuyPage() {
               {topCoins.map((coin, index) => (
                 <div
                   key={index}
-                  className={`bg-white/5 backdrop-blur-sm border rounded-xl p-6 ${
-                    coin.featured ? "border-amber-500/30" : "border-white/10"
+                  className={`bg-slate-50 backdrop-blur-sm border rounded-xl p-6 ${
+                    coin.featured ? "border-[#B22234]/30" : "border-slate-200"
                   }`}
                 >
                   {coin.featured && (
-                    <div className="text-xs font-bold text-amber-400 mb-2 flex items-center gap-1">
+                    <div className="text-xs font-bold text-[#B22234] mb-2 flex items-center gap-1">
                       <Star className="h-3 w-3 fill-current" />
                       FEATURED
                     </div>
                   )}
-                  <h3 className="text-lg font-bold text-white mb-1">{coin.name}</h3>
-                  <p className="text-sm text-slate-400 mb-4">{coin.country}</p>
+                  <h3 className="text-lg font-bold text-slate-900 mb-1">{coin.name}</h3>
+                  <p className="text-sm text-slate-600 mb-4">{coin.country}</p>
 
                   <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
-                    <div className="bg-white/5 rounded-lg p-2">
-                      <span className="text-slate-500 block text-xs">Purity</span>
-                      <span className="text-white font-semibold">{coin.purity}</span>
+                    <div className="bg-slate-50 rounded-lg p-2">
+                      <span className="text-slate-600 block text-xs">Purity</span>
+                      <span className="text-slate-900 font-semibold">{coin.purity}</span>
                     </div>
-                    <div className="bg-white/5 rounded-lg p-2">
-                      <span className="text-slate-500 block text-xs">Premium</span>
-                      <span className="text-amber-400 font-semibold">{coin.premium}</span>
+                    <div className="bg-slate-50 rounded-lg p-2">
+                      <span className="text-slate-600 block text-xs">Premium</span>
+                      <span className="text-[#B22234] font-semibold">{coin.premium}</span>
                     </div>
-                    <div className="bg-white/5 rounded-lg p-2">
-                      <span className="text-slate-500 block text-xs">Liquidity</span>
+                    <div className="bg-slate-50 rounded-lg p-2">
+                      <span className="text-slate-600 block text-xs">Liquidity</span>
                       <div className="flex gap-0.5">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <Star
@@ -358,8 +358,8 @@ export default function BestCoinsToBuyPage() {
                         ))}
                       </div>
                     </div>
-                    <div className="bg-white/5 rounded-lg p-2">
-                      <span className="text-slate-500 block text-xs">Recognition</span>
+                    <div className="bg-slate-50 rounded-lg p-2">
+                      <span className="text-slate-600 block text-xs">Recognition</span>
                       <div className="flex gap-0.5">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <Star
@@ -374,10 +374,10 @@ export default function BestCoinsToBuyPage() {
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-xs text-slate-400 mb-1 font-semibold">Pros:</p>
+                    <p className="text-xs text-slate-600 mb-1 font-semibold">Pros:</p>
                     <ul className="space-y-1">
                       {coin.pros.slice(0, 2).map((pro, i) => (
-                        <li key={i} className="text-xs text-slate-300 flex items-start gap-1">
+                        <li key={i} className="text-xs text-slate-600 flex items-start gap-1">
                           <CheckCircle2 className="h-3 w-3 text-green-400 mt-0.5 flex-shrink-0" />
                           {pro}
                         </li>
@@ -385,10 +385,10 @@ export default function BestCoinsToBuyPage() {
                     </ul>
                   </div>
 
-                  <div className="pt-4 border-t border-white/10">
+                  <div className="pt-4 border-t border-slate-200">
                     <p className="text-xs">
-                      <span className="text-amber-400 font-semibold">Best For: </span>
-                      <span className="text-slate-400">{coin.bestFor}</span>
+                      <span className="text-[#B22234] font-semibold">Best For: </span>
+                      <span className="text-slate-600">{coin.bestFor}</span>
                     </p>
                   </div>
 
@@ -406,22 +406,22 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Beginner Recommendation */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8 flex items-center justify-center gap-2">
-              <Target className="h-6 w-6 text-amber-400" />
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8 flex items-center justify-center gap-2">
+              <Target className="h-6 w-6 text-[#B22234]" />
               Beginner&apos;s Guide to First Purchases
             </h2>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
+            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-green-400 font-bold">1</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2">Start with 10-20 oz of Sovereign Coins</h3>
-                    <p className="text-slate-400">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Start with 10-20 oz of Sovereign Coins</h3>
+                    <p className="text-slate-600">
                       Begin with Canadian Maple Leafs or American Eagles. Pay the premium for liquidity
                       and recognition. This is your foundation - don&apos;t cheap out here.
                     </p>
@@ -433,8 +433,8 @@ export default function BestCoinsToBuyPage() {
                     <span className="text-blue-400 font-bold">2</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2">Add Lower-Premium Coins (20-50 oz)</h3>
-                    <p className="text-slate-400">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Add Lower-Premium Coins (20-50 oz)</h3>
+                    <p className="text-slate-600">
                       Expand with Philharmonics or Britannias at lower premiums. Still sovereign,
                       still liquid, but more ounces per dollar.
                     </p>
@@ -442,24 +442,24 @@ export default function BestCoinsToBuyPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-amber-400 font-bold">3</span>
+                  <div className="w-10 h-10 bg-[#B22234]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-[#B22234] font-bold">3</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2">Consider Bars (50+ oz)</h3>
-                    <p className="text-slate-400">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Consider Bars (50+ oz)</h3>
+                    <p className="text-slate-600">
                       Once you have a coin foundation, add 10 oz or kilo bars for lowest premiums.
                       Your coin stack provides liquidity; bars maximize total ounces.
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 mt-6">
-                  <p className="text-amber-400 font-semibold mb-1 flex items-center gap-2">
+                <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4 mt-6">
+                  <p className="text-[#B22234] font-semibold mb-1 flex items-center gap-2">
                     <Sparkles className="h-4 w-4" />
                     Pro Tip
                   </p>
-                  <p className="text-slate-300 text-sm">
+                  <p className="text-slate-600 text-sm">
                     If you&apos;re planning a Silver IRA, stick exclusively to IRA-eligible coins from the start.
                     This makes future rollovers seamless and ensures all your silver can be part of your
                     retirement strategy.
@@ -472,22 +472,22 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Budget Options */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-4 flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4 flex items-center justify-center gap-2">
               <DollarSign className="h-6 w-6 text-green-400" />
               Budget-Friendly Alternatives
             </h2>
-            <p className="text-slate-400 text-center mb-8">
+            <p className="text-slate-600 text-center mb-8">
               Lower premiums, but trade-offs in liquidity and IRA eligibility.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {budgetOptions.map((option, index) => (
-                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-1">{option.name}</h3>
+                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-1">{option.name}</h3>
                   <p className="text-green-400 font-semibold text-sm mb-3">{option.premium} premium</p>
-                  <p className="text-slate-400 text-sm mb-4">{option.description}</p>
+                  <p className="text-slate-600 text-sm mb-4">{option.description}</p>
                   <div className={`text-xs font-semibold flex items-center gap-1 ${
                     option.iraEligible ? "text-green-400" : "text-red-400"
                   }`}>
@@ -511,25 +511,25 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -540,30 +540,30 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-bold text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
             Related Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Link href="/buy-sell-silver/coins-vs-bars" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Silver Coins vs Bars</h3>
-              <p className="text-sm text-slate-400">Detailed comparison of pros/cons</p>
+            <Link href="/buy-sell-silver/coins-vs-bars" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Silver Coins vs Bars</h3>
+              <p className="text-sm text-slate-600">Detailed comparison of pros/cons</p>
             </Link>
-            <Link href="/buy-sell-silver/stacking-beginners" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Stacking for Beginners</h3>
-              <p className="text-sm text-slate-400">How to build your silver position</p>
+            <Link href="/buy-sell-silver/stacking-beginners" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Stacking for Beginners</h3>
+              <p className="text-sm text-slate-600">How to build your silver position</p>
             </Link>
-            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-              <h3 className="font-bold text-white mb-2 group-hover:text-amber-400">Spot Fake Silver</h3>
-              <p className="text-sm text-slate-400">Protect yourself from counterfeits</p>
+            <Link href="/buy-sell-silver/spot-fake-silver" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Spot Fake Silver</h3>
+              <p className="text-sm text-slate-600">Protect yourself from counterfeits</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA
             variant="footer"

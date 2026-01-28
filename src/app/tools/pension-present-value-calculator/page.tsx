@@ -113,7 +113,7 @@ const faqSchema = {
 
 export default function PensionPresentValueCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -122,10 +122,10 @@ export default function PensionPresentValueCalculatorPage() {
       <PensionPresentValueCalculator />
 
       {/* Important Facts */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Understanding Pension Present Value
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -134,17 +134,17 @@ export default function PensionPresentValueCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-purple-400" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -158,47 +158,47 @@ export default function PensionPresentValueCalculatorPage() {
       </section>
 
       {/* Discount Rate Guide */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                 Choosing Your Discount Rate
               </h2>
-              <p className="text-slate-400 max-w-2xl mx-auto">
+              <p className="text-slate-600 max-w-2xl mx-auto">
                 The discount rate significantly impacts your pension&apos;s present value. Here&apos;s how different rates affect a $2,500/month pension over 20 years.
               </p>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 overflow-x-auto">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/10">
-                    <th className="px-4 py-3 text-left text-slate-300">Discount Rate</th>
-                    <th className="px-4 py-3 text-left text-slate-300">Use Case</th>
-                    <th className="px-4 py-3 text-right text-slate-300">Est. Present Value</th>
+                  <tr className="border-b border-slate-200">
+                    <th className="px-4 py-3 text-left text-slate-600">Discount Rate</th>
+                    <th className="px-4 py-3 text-left text-slate-600">Use Case</th>
+                    <th className="px-4 py-3 text-right text-slate-600">Est. Present Value</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/5">
-                    <td className="px-4 py-3 text-white font-semibold">3% (Conservative)</td>
-                    <td className="px-4 py-3 text-slate-400">Risk-free, Treasury bonds</td>
-                    <td className="px-4 py-3 text-right text-green-400">~$475,000</td>
+                  <tr className="border-b border-slate-200">
+                    <td className="px-4 py-3 text-slate-900 font-semibold">3% (Conservative)</td>
+                    <td className="px-4 py-3 text-slate-500">Risk-free, Treasury bonds</td>
+                    <td className="px-4 py-3 text-right text-green-600">~$475,000</td>
                   </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="px-4 py-3 text-white font-semibold">5% (Moderate)</td>
-                    <td className="px-4 py-3 text-slate-400">Balanced portfolio returns</td>
-                    <td className="px-4 py-3 text-right text-blue-400">~$390,000</td>
+                  <tr className="border-b border-slate-200">
+                    <td className="px-4 py-3 text-slate-900 font-semibold">5% (Moderate)</td>
+                    <td className="px-4 py-3 text-slate-500">Balanced portfolio returns</td>
+                    <td className="px-4 py-3 text-right text-blue-600">~$390,000</td>
                   </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="px-4 py-3 text-white font-semibold">6% (Standard)</td>
-                    <td className="px-4 py-3 text-slate-400">Common actuarial rate</td>
+                  <tr className="border-b border-slate-200">
+                    <td className="px-4 py-3 text-slate-900 font-semibold">6% (Standard)</td>
+                    <td className="px-4 py-3 text-slate-500">Common actuarial rate</td>
                     <td className="px-4 py-3 text-right text-purple-400">~$355,000</td>
                   </tr>
-                  <tr className="border-b border-white/5">
-                    <td className="px-4 py-3 text-white font-semibold">7% (Aggressive)</td>
-                    <td className="px-4 py-3 text-slate-400">Stock market returns</td>
-                    <td className="px-4 py-3 text-right text-amber-400">~$325,000</td>
+                  <tr className="border-b border-slate-200">
+                    <td className="px-4 py-3 text-slate-900 font-semibold">7% (Aggressive)</td>
+                    <td className="px-4 py-3 text-slate-500">Stock market returns</td>
+                    <td className="px-4 py-3 text-right text-[#B22234]">~$325,000</td>
                   </tr>
                 </tbody>
               </table>
@@ -211,38 +211,38 @@ export default function PensionPresentValueCalculatorPage() {
       </section>
 
       {/* Divorce Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="bg-purple-500/10 border border-purple-500/20 rounded-xl p-8">
-              <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+              <h2 className="text-2xl font-bold text-[#000080] mb-4 flex items-center gap-3">
                 <Scale className="h-6 w-6 text-purple-400" />
                 Pension Present Value in Divorce
               </h2>
 
-              <div className="space-y-4 text-slate-400">
+              <div className="space-y-4 text-slate-500">
                 <p>
                   Pensions earned during marriage are marital property in most states. The present value calculation determines how much the pension is worth for division purposes.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-4 my-6">
-                  <div className="bg-slate-800/50 rounded-lg p-4">
-                    <h4 className="text-white font-semibold mb-2">Option 1: QDRO</h4>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="text-slate-900 font-semibold mb-2">Option 1: QDRO</h4>
                     <p className="text-sm">
                       A Qualified Domestic Relations Order divides the actual pension payments. Ex-spouse receives their share directly from the pension plan at retirement.
                     </p>
                   </div>
 
-                  <div className="bg-slate-800/50 rounded-lg p-4">
-                    <h4 className="text-white font-semibold mb-2">Option 2: Offset</h4>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="text-slate-900 font-semibold mb-2">Option 2: Offset</h4>
                     <p className="text-sm">
                       Use present value to offset against other assets. Keep your full pension but give up equivalent value in home equity, investments, or other property.
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
-                  <p className="text-amber-400 text-sm">
+                <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
+                  <p className="text-[#B22234] text-sm">
                     <strong>Important:</strong> Courts may use different discount rates or methodologies. Consult a divorce attorney and actuary for legal proceedings. This calculator is for educational purposes only.
                   </p>
                 </div>
@@ -253,10 +253,10 @@ export default function PensionPresentValueCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Pension Present Value FAQ
             </h2>
 
@@ -285,16 +285,16 @@ export default function PensionPresentValueCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -304,17 +304,17 @@ export default function PensionPresentValueCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-900">
+      <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates for educational purposes. The actual present value of your pension depends on actuarial assumptions, mortality tables, discount rates, and other factors that may differ from this simplified model. For legal proceedings (divorce, buyouts), consult a qualified actuary. This is not financial, legal, or tax advice.
                   </p>
                 </div>
@@ -325,7 +325,7 @@ export default function PensionPresentValueCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <AugustaCTA
             variant="footer"

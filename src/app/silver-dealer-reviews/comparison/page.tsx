@@ -185,7 +185,7 @@ function StarRating({ rating }: { rating: number }) {
                 <Star
                     key={star}
                     className={`w-4 h-4 ${star <= Math.floor(rating)
-                            ? 'text-amber-400 fill-amber-400'
+                            ? 'text-[#B22234] fill-[#B22234]'
                             : 'text-slate-600'
                         }`}
                 />
@@ -196,24 +196,24 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function ComparisonPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <SchemaScript schema={faqSchema} />
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 text-white py-20 relative overflow-hidden border-b border-white/10">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent" />
+            <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden border-b border-slate-200">
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#B22234]/10 via-transparent to-transparent" />
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/20 px-4 py-1.5 text-sm font-semibold text-amber-400 mb-6 border border-amber-500/30">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/20 px-4 py-1.5 text-sm font-semibold text-[#B22234] mb-6 border border-[#B22234]/30">
                             <Award className="w-4 h-4" />
                             750+ Monthly Searches
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
-                            Best Place to Buy <span className="text-amber-400">Silver</span> Online
+                            Best Place to Buy <span className="text-[#B22234]">Silver</span> Online
                         </h1>
-                        <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                        <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-8">
                             We compared the top online silver dealers head-to-head. Here are our findings and recommendations for 2026.
                         </p>
                     </div>
@@ -221,33 +221,33 @@ export default function ComparisonPage() {
             </header>
 
             {/* Our Top Picks Section */}
-            <section className="py-16 bg-slate-800/30">
+            <section className="py-16 bg-slate-100">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-white text-center mb-4">
+                    <h2 className="text-3xl font-serif font-bold text-slate-900 text-center mb-4">
                         Our Top Picks
                     </h2>
-                    <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                    <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                         Quick recommendations based on your priorities
                     </p>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {/* Best Overall */}
-                        <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/10 border border-amber-500/30 rounded-xl p-6">
-                            <div className="flex items-center gap-2 text-amber-400 font-semibold text-sm mb-4">
+                        <div className="bg-gradient-to-br from-[#B22234]/20 to-[#8b1c2a]/10 border border-[#B22234]/30 rounded-xl p-6">
+                            <div className="flex items-center gap-2 text-[#B22234] font-semibold text-sm mb-4">
                                 <Crown className="w-5 h-5" />
                                 BEST OVERALL
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-2">JM Bullion</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">JM Bullion</h3>
                             <div className="flex items-center gap-2 mb-4">
                                 <StarRating rating={4.8} />
-                                <span className="text-white font-semibold">4.8</span>
+                                <span className="text-slate-900 font-semibold">4.8</span>
                             </div>
-                            <p className="text-slate-300 text-sm mb-4">
+                            <p className="text-slate-600 text-sm mb-4">
                                 Best balance of price, selection, service, and reliability. Our top recommendation for most silver buyers.
                             </p>
                             <Link
                                 href="/silver-dealer-reviews/jm-bullion"
-                                className="inline-flex items-center gap-2 text-amber-400 font-semibold text-sm hover:text-amber-300"
+                                className="inline-flex items-center gap-2 text-[#B22234] font-semibold text-sm hover:text-[#B22234]"
                             >
                                 Read Review <ArrowRight className="w-4 h-4" />
                             </Link>
@@ -259,12 +259,12 @@ export default function ComparisonPage() {
                                 <DollarSign className="w-5 h-5" />
                                 LOWEST PREMIUMS
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-2">SD Bullion</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">SD Bullion</h3>
                             <div className="flex items-center gap-2 mb-4">
                                 <StarRating rating={4.6} />
-                                <span className="text-white font-semibold">4.6</span>
+                                <span className="text-slate-900 font-semibold">4.6</span>
                             </div>
-                            <p className="text-slate-300 text-sm mb-4">
+                            <p className="text-slate-600 text-sm mb-4">
                                 Lowest premiums in the industry. Perfect for budget-focused stackers who prioritize price above all else.
                             </p>
                             <Link
@@ -281,12 +281,12 @@ export default function ComparisonPage() {
                                 <Package className="w-5 h-5" />
                                 BEST SELECTION
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-2">APMEX</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">APMEX</h3>
                             <div className="flex items-center gap-2 mb-4">
                                 <StarRating rating={4.7} />
-                                <span className="text-white font-semibold">4.7</span>
+                                <span className="text-slate-900 font-semibold">4.7</span>
                             </div>
-                            <p className="text-slate-300 text-sm mb-4">
+                            <p className="text-slate-600 text-sm mb-4">
                                 20,000+ products. Unmatched variety for collectors and anyone who wants the widest selection available.
                             </p>
                             <Link
@@ -303,12 +303,12 @@ export default function ComparisonPage() {
                                 <Users className="w-5 h-5" />
                                 BEST FOR BEGINNERS
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-2">Money Metals</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">Money Metals</h3>
                             <div className="flex items-center gap-2 mb-4">
                                 <StarRating rating={4.5} />
-                                <span className="text-white font-semibold">4.5</span>
+                                <span className="text-slate-900 font-semibold">4.5</span>
                             </div>
-                            <p className="text-slate-300 text-sm mb-4">
+                            <p className="text-slate-600 text-sm mb-4">
                                 No minimum order, Starter Portfolios, and monthly savings programs. Perfect entry point for new investors.
                             </p>
                             <Link
@@ -325,12 +325,12 @@ export default function ComparisonPage() {
                                 <Truck className="w-5 h-5" />
                                 BEST FOR SMALL ORDERS
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-2">Bold Precious Metals</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">Bold Precious Metals</h3>
                             <div className="flex items-center gap-2 mb-4">
                                 <StarRating rating={4.3} />
-                                <span className="text-white font-semibold">4.3</span>
+                                <span className="text-slate-900 font-semibold">4.3</span>
                             </div>
-                            <p className="text-slate-300 text-sm mb-4">
+                            <p className="text-slate-600 text-sm mb-4">
                                 Free shipping at just $99&mdash;lowest threshold in the industry. No minimum order requirement.
                             </p>
                             <Link
@@ -347,12 +347,12 @@ export default function ComparisonPage() {
                                 <Zap className="w-5 h-5" />
                                 RISING STAR
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-2">Hero Bullion</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-2">Hero Bullion</h3>
                             <div className="flex items-center gap-2 mb-4">
                                 <StarRating rating={4.4} />
-                                <span className="text-white font-semibold">4.4</span>
+                                <span className="text-slate-900 font-semibold">4.4</span>
                             </div>
-                            <p className="text-slate-300 text-sm mb-4">
+                            <p className="text-slate-600 text-sm mb-4">
                                 Newer dealer with competitive pricing, fast shipping, and excellent customer service. Worth watching.
                             </p>
                             <Link
@@ -369,74 +369,74 @@ export default function ComparisonPage() {
             {/* Full Comparison Table */}
             <section className="py-16">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-white text-center mb-4">
+                    <h2 className="text-3xl font-serif font-bold text-slate-900 text-center mb-4">
                         Full Head-to-Head Comparison
                     </h2>
-                    <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                    <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                         Detailed comparison of all major factors across all dealers
                     </p>
 
                     <div className="overflow-x-auto">
-                        <table className="w-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden text-sm">
+                        <table className="w-full bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden text-sm">
                             <thead>
-                                <tr className="bg-slate-800/50">
-                                    <th className="text-left p-4 text-white font-bold">Dealer</th>
-                                    <th className="text-center p-4 text-white font-bold">Rating</th>
-                                    <th className="text-center p-4 text-white font-bold">Est.</th>
-                                    <th className="text-center p-4 text-white font-bold">Min Order</th>
-                                    <th className="text-center p-4 text-white font-bold">Free Ship</th>
-                                    <th className="text-center p-4 text-white font-bold">Premiums</th>
-                                    <th className="text-center p-4 text-white font-bold">Selection</th>
-                                    <th className="text-center p-4 text-white font-bold">Service</th>
-                                    <th className="text-center p-4 text-white font-bold">Buyback</th>
+                                <tr className="bg-slate-50">
+                                    <th className="text-left p-4 text-slate-900 font-bold">Dealer</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Rating</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Est.</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Min Order</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Free Ship</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Premiums</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Selection</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Service</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Buyback</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {dealers.map((dealer, index) => (
-                                    <tr key={dealer.slug} className={`border-t border-white/10 ${index === 0 ? 'bg-amber-500/5' : ''}`}>
+                                    <tr key={dealer.slug} className={`border-t border-slate-200 ${index === 0 ? 'bg-[#B22234]/5' : ''}`}>
                                         <td className="p-4">
-                                            <Link href={`/silver-dealer-reviews/${dealer.slug}`} className="hover:text-amber-400 transition-colors">
+                                            <Link href={`/silver-dealer-reviews/${dealer.slug}`} className="hover:text-[#B22234] transition-colors">
                                                 <div className="flex items-center gap-2">
-                                                    {index === 0 && <Crown className="w-4 h-4 text-amber-400" />}
-                                                    <span className="text-white font-semibold">{dealer.name}</span>
+                                                    {index === 0 && <Crown className="w-4 h-4 text-[#B22234]" />}
+                                                    <span className="text-slate-900 font-semibold">{dealer.name}</span>
                                                 </div>
-                                                <span className="text-xs text-slate-500">{dealer.specialty}</span>
+                                                <span className="text-xs text-slate-600">{dealer.specialty}</span>
                                             </Link>
                                         </td>
                                         <td className="p-4 text-center">
                                             <div className="flex items-center justify-center gap-1">
-                                                <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
-                                                <span className="text-white font-semibold">{dealer.rating}</span>
+                                                <Star className="w-4 h-4 text-[#B22234] fill-[#B22234]" />
+                                                <span className="text-slate-900 font-semibold">{dealer.rating}</span>
                                             </div>
                                         </td>
-                                        <td className="p-4 text-center text-slate-300">{dealer.established}</td>
+                                        <td className="p-4 text-center text-slate-600">{dealer.established}</td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.minOrder === "None" ? "text-green-400 font-semibold" : "text-slate-300"}>
+                                            <span className={dealer.minOrder === "None" ? "text-green-400 font-semibold" : "text-slate-600"}>
                                                 {dealer.minOrder}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.freeShipping === "$99" ? "text-green-400 font-semibold" : "text-slate-300"}>
+                                            <span className={dealer.freeShipping === "$99" ? "text-green-400 font-semibold" : "text-slate-600"}>
                                                 {dealer.freeShipping}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.premiums === "Lowest" ? "text-green-400 font-semibold" : dealer.premiums === "Higher" ? "text-amber-400" : "text-slate-300"}>
+                                            <span className={dealer.premiums === "Lowest" ? "text-green-400 font-semibold" : dealer.premiums === "Higher" ? "text-[#B22234]" : "text-slate-600"}>
                                                 {dealer.premiums}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.selection.includes("Massive") ? "text-blue-400 font-semibold" : "text-slate-300"}>
+                                            <span className={dealer.selection.includes("Massive") ? "text-blue-400 font-semibold" : "text-slate-600"}>
                                                 {dealer.selection}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.service === "Excellent" ? "text-green-400 font-semibold" : "text-slate-300"}>
+                                            <span className={dealer.service === "Excellent" ? "text-green-400 font-semibold" : "text-slate-600"}>
                                                 {dealer.service}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.buyback === "Excellent" ? "text-green-400 font-semibold" : "text-slate-300"}>
+                                            <span className={dealer.buyback === "Excellent" ? "text-green-400 font-semibold" : "text-slate-600"}>
                                                 {dealer.buyback}
                                             </span>
                                         </td>
@@ -449,37 +449,37 @@ export default function ComparisonPage() {
             </section>
 
             {/* Feature Comparison */}
-            <section className="py-16 bg-slate-800/30">
+            <section className="py-16 bg-slate-100">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-white text-center mb-12">
+                    <h2 className="text-3xl font-serif font-bold text-slate-900 text-center mb-12">
                         Feature Comparison
                     </h2>
 
                     <div className="overflow-x-auto">
-                        <table className="w-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden">
+                        <table className="w-full bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden">
                             <thead>
-                                <tr className="bg-slate-800/50">
-                                    <th className="text-left p-4 text-white font-bold">Feature</th>
-                                    <th className="text-center p-4 text-white font-bold">JM Bullion</th>
-                                    <th className="text-center p-4 text-white font-bold">APMEX</th>
-                                    <th className="text-center p-4 text-white font-bold">SD Bullion</th>
-                                    <th className="text-center p-4 text-white font-bold">Money Metals</th>
-                                    <th className="text-center p-4 text-white font-bold">Hero Bullion</th>
-                                    <th className="text-center p-4 text-white font-bold">Bold PM</th>
+                                <tr className="bg-slate-50">
+                                    <th className="text-left p-4 text-slate-900 font-bold">Feature</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">JM Bullion</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">APMEX</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">SD Bullion</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Money Metals</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Hero Bullion</th>
+                                    <th className="text-center p-4 text-slate-900 font-bold">Bold PM</th>
                                 </tr>
                             </thead>
                             <tbody className="text-sm">
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">A+ BBB Rating</td>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">A+ BBB Rating</td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><span className="text-slate-500">N/A</span></td>
-                                    <td className="p-4 text-center"><span className="text-slate-500">N/A</span></td>
+                                    <td className="p-4 text-center"><span className="text-slate-600">N/A</span></td>
+                                    <td className="p-4 text-center"><span className="text-slate-600">N/A</span></td>
                                 </tr>
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">No Minimum Order</td>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">No Minimum Order</td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
@@ -487,35 +487,26 @@ export default function ComparisonPage() {
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                 </tr>
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">Price Match Guarantee</td>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">Price Match Guarantee</td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                </tr>
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">No Credit Card Fees</td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                 </tr>
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">Monthly Savings Program</td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">No Credit Card Fees</td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                 </tr>
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">Own Depository</td>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">Monthly Savings Program</td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
@@ -523,8 +514,8 @@ export default function ComparisonPage() {
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                 </tr>
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">Starter Portfolios</td>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">Own Depository</td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
@@ -532,8 +523,17 @@ export default function ComparisonPage() {
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                     <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
                                 </tr>
-                                <tr className="border-t border-white/10">
-                                    <td className="p-4 text-slate-300">IRA-Eligible Products</td>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">Starter Portfolios</td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                </tr>
+                                <tr className="border-t border-slate-200">
+                                    <td className="p-4 text-slate-600">IRA-Eligible Products</td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
                                     <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
@@ -552,31 +552,31 @@ export default function ComparisonPage() {
                 <Container>
                     <div className="bg-gradient-to-br from-amber-900/20 to-amber-800/10 border border-amber-500/20 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
                         <div className="text-center">
-                            <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-400 font-semibold text-sm px-4 py-2 rounded-full mb-6 border border-amber-500/30">
+                            <div className="inline-flex items-center gap-2 bg-[#B22234]/20 text-[#B22234] font-semibold text-sm px-4 py-2 rounded-full mb-6 border border-[#B22234]/30">
                                 <Shield className="w-4 h-4" />
                                 FOR IRA ACCOUNTS
                             </div>
-                            <h2 className="text-3xl font-serif font-bold text-white mb-4">
+                            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-4">
                                 Want Silver in a Retirement Account?
                             </h2>
-                            <p className="text-slate-300 max-w-2xl mx-auto mb-8">
-                                The dealers above are excellent for direct silver purchases. However, if you want silver in a tax-advantaged IRA, you need a specialized custodian. For Silver IRAs, we recommend <strong className="text-amber-400">Augusta Precious Metals</strong> for their:
+                            <p className="text-slate-600 max-w-2xl mx-auto mb-8">
+                                The dealers above are excellent for direct silver purchases. However, if you want silver in a tax-advantaged IRA, you need a specialized custodian. For Silver IRAs, we recommend <strong className="text-[#B22234]">Augusta Precious Metals</strong> for their:
                             </p>
                             <div className="grid md:grid-cols-3 gap-6 mb-8">
                                 <div className="flex flex-col items-center">
                                     <CheckCircle className="w-8 h-8 text-green-400 mb-2" />
-                                    <span className="text-white font-semibold">Education-First Approach</span>
+                                    <span className="text-slate-900 font-semibold">Education-First Approach</span>
                                 </div>
                                 <div className="flex flex-col items-center">
                                     <CheckCircle className="w-8 h-8 text-green-400 mb-2" />
-                                    <span className="text-white font-semibold">Lifetime Support</span>
+                                    <span className="text-slate-900 font-semibold">Lifetime Support</span>
                                 </div>
                                 <div className="flex flex-col items-center">
                                     <CheckCircle className="w-8 h-8 text-green-400 mb-2" />
-                                    <span className="text-white font-semibold">A+ BBB Rating</span>
+                                    <span className="text-slate-900 font-semibold">A+ BBB Rating</span>
                                 </div>
                             </div>
-                            <Button variant="gold" size="xl" asChild>
+                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                 <Link href="/quiz">Find Your Perfect IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                             </Button>
                         </div>
@@ -585,31 +585,31 @@ export default function ComparisonPage() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 bg-slate-800/30">
+            <section className="py-16 bg-slate-100">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-white text-center mb-12">
+                    <h2 className="text-3xl font-serif font-bold text-slate-900 text-center mb-12">
                         Frequently Asked Questions
                     </h2>
                     <div className="max-w-3xl mx-auto space-y-6">
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-lg mb-3">What is the best place to buy silver online?</h3>
-                            <p className="text-slate-400">JM Bullion is our top recommendation for most silver buyers due to their excellent balance of competitive pricing, great selection, fast shipping, and outstanding customer service. For the absolute lowest premiums, consider SD Bullion.</p>
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-lg mb-3">What is the best place to buy silver online?</h3>
+                            <p className="text-slate-600">JM Bullion is our top recommendation for most silver buyers due to their excellent balance of competitive pricing, great selection, fast shipping, and outstanding customer service. For the absolute lowest premiums, consider SD Bullion.</p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-lg mb-3">Which silver dealer has the lowest prices?</h3>
-                            <p className="text-slate-400">SD Bullion consistently offers the lowest premiums over spot on common silver products. They also do not charge credit card fees on many items, which can save an additional 3-4%.</p>
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-lg mb-3">Which silver dealer has the lowest prices?</h3>
+                            <p className="text-slate-600">SD Bullion consistently offers the lowest premiums over spot on common silver products. They also do not charge credit card fees on many items, which can save an additional 3-4%.</p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-lg mb-3">Is it safe to buy silver online?</h3>
-                            <p className="text-slate-400">Yes, buying silver from reputable online dealers is safe. Look for dealers with A+ BBB ratings, positive customer reviews, secure checkout processes, and fully insured shipping.</p>
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-lg mb-3">Is it safe to buy silver online?</h3>
+                            <p className="text-slate-600">Yes, buying silver from reputable online dealers is safe. Look for dealers with A+ BBB ratings, positive customer reviews, secure checkout processes, and fully insured shipping.</p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-lg mb-3">Which dealer is best for Silver IRA accounts?</h3>
-                            <p className="text-slate-400">While all dealers on our list sell IRA-eligible products, none specialize in IRA services. For Silver IRAs, we recommend Augusta Precious Metals due to their dedicated IRA expertise and lifetime customer support.</p>
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-lg mb-3">Which dealer is best for Silver IRA accounts?</h3>
+                            <p className="text-slate-600">While all dealers on our list sell IRA-eligible products, none specialize in IRA services. For Silver IRAs, we recommend Augusta Precious Metals due to their dedicated IRA expertise and lifetime customer support.</p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                            <h3 className="font-bold text-white text-lg mb-3">What is the minimum order for buying silver online?</h3>
-                            <p className="text-slate-400">Minimum orders vary by dealer. Money Metals Exchange and Bold Precious Metals have no minimum order requirement. Most other dealers have minimums around $99.</p>
+                        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                            <h3 className="font-bold text-slate-900 text-lg mb-3">What is the minimum order for buying silver online?</h3>
+                            <p className="text-slate-600">Minimum orders vary by dealer. Money Metals Exchange and Bold Precious Metals have no minimum order requirement. Most other dealers have minimums around $99.</p>
                         </div>
                     </div>
                 </Container>

@@ -228,7 +228,7 @@ const faqJsonLd = {
 
 export default function SilverIraCustodianPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -240,24 +240,24 @@ export default function SilverIraCustodianPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="py-16 md:py-20 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+            <header className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-400/5 rounded-full blur-[150px]" />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-500/20 border border-slate-400/30 rounded-full text-slate-300 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
                             <Shield className="h-4 w-4" />
                             CUSTODIAN GUIDE
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
                             Silver IRA Custodian: Your Essential Guide
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
                             Every Silver IRA needs a custodian to handle administration and ensure IRS compliance. Learn what custodians do, how to choose the right one, and which custodians specialize in precious metals.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button variant="gold" size="lg" asChild>
+                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Get Matched With a Provider <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
@@ -268,11 +268,11 @@ export default function SilverIraCustodianPage() {
             </header>
 
             {/* What Does a Custodian Do */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">What Does a Silver IRA Custodian Do?</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">What Does a Silver IRA Custodian Do?</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             A custodian is the IRS-required administrator that holds your IRA and ensures regulatory compliance.
                         </p>
 
@@ -280,14 +280,14 @@ export default function SilverIraCustodianPage() {
                             {custodianRoles.map((role, index) => {
                                 const Icon = role.icon;
                                 return (
-                                    <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                    <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                         <div className="flex items-start gap-4">
-                                            <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center flex-shrink-0">
-                                                <Icon className="h-6 w-6 text-slate-300" />
+                                            <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                <Icon className="h-6 w-6 text-slate-600" />
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-white mb-2">{role.role}</h3>
-                                                <p className="text-sm text-slate-400">{role.description}</p>
+                                                <h3 className="font-bold text-slate-900 mb-2">{role.role}</h3>
+                                                <p className="text-sm text-slate-600">{role.description}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -295,12 +295,12 @@ export default function SilverIraCustodianPage() {
                             })}
                         </div>
 
-                        <div className="mt-8 bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
+                        <div className="mt-8 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
                             <div className="flex items-start gap-4">
-                                <Users className="h-6 w-6 text-amber-400 flex-shrink-0 mt-1" />
+                                <Users className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-1" />
                                 <div>
-                                    <h4 className="font-bold text-amber-400 mb-2">Custodian vs. Precious Metals Company</h4>
-                                    <p className="text-slate-400">
+                                    <h4 className="font-bold text-[#B22234] mb-2">Custodian vs. Precious Metals Company</h4>
+                                    <p className="text-slate-600">
                                         The custodian handles administration; the precious metals company helps you buy silver.
                                         When you work with Augusta, Goldco, or similar companies, they coordinate with a custodian on your behalf.
                                         You typically don't need to find a custodian yourself.
@@ -313,41 +313,41 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Top Custodians */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">Top Silver IRA Custodians</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Top Silver IRA Custodians</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             These custodians specialize in self-directed IRAs and have experience with precious metals.
                         </p>
 
                         <div className="space-y-6">
                             {topCustodians.map((custodian, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden">
-                                    <div className="bg-slate-800/50 p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden">
+                                    <div className="bg-slate-50 p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
                                         <div>
-                                            <h3 className="text-xl font-bold text-white">{custodian.name}</h3>
-                                            <p className="text-sm text-slate-400">Est. {custodian.established} | {custodian.specialty}</p>
+                                            <h3 className="text-xl font-bold text-slate-900">{custodian.name}</h3>
+                                            <p className="text-sm text-slate-600">Est. {custodian.established} | {custodian.specialty}</p>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             {[1, 2, 3, 4, 5].map((star) => (
                                                 <Star
                                                     key={star}
-                                                    className={`h-4 w-4 ${star <= Math.floor(custodian.rating) ? 'text-amber-400 fill-amber-400' : 'text-slate-600'}`}
+                                                    className={`h-4 w-4 ${star <= Math.floor(custodian.rating) ? 'text-[#B22234] fill-[#B22234]' : 'text-slate-600'}`}
                                                 />
                                             ))}
-                                            <span className="text-white font-semibold ml-1">{custodian.rating}</span>
+                                            <span className="text-slate-900 font-semibold ml-1">{custodian.rating}</span>
                                         </div>
                                     </div>
                                     <div className="p-6">
                                         <div className="grid md:grid-cols-2 gap-6">
                                             <div>
-                                                <h4 className="font-semibold text-white mb-3 flex items-center gap-2">
+                                                <h4 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
                                                     <CheckCircle2 className="h-4 w-4 text-green-400" /> Strengths
                                                 </h4>
                                                 <ul className="space-y-2">
                                                     {custodian.strengths.map((strength, idx) => (
-                                                        <li key={idx} className="flex items-center gap-2 text-sm text-slate-400">
+                                                        <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
                                                             <CheckCircle2 className="h-3 w-3 text-green-400 flex-shrink-0" />
                                                             {strength}
                                                         </li>
@@ -356,12 +356,12 @@ export default function SilverIraCustodianPage() {
                                             </div>
                                             <div>
                                                 <div className="mb-4">
-                                                    <h4 className="font-semibold text-white mb-2">Assets Under Custody</h4>
-                                                    <p className="text-amber-400 font-bold">{custodian.assetsUnderCustody}</p>
+                                                    <h4 className="font-semibold text-slate-900 mb-2">Assets Under Custody</h4>
+                                                    <p className="text-[#B22234] font-bold">{custodian.assetsUnderCustody}</p>
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-semibold text-white mb-2">Typical Fees</h4>
-                                                    <p className="text-sm text-slate-400">{custodian.fees}</p>
+                                                    <h4 className="font-semibold text-slate-900 mb-2">Typical Fees</h4>
+                                                    <p className="text-sm text-slate-600">{custodian.fees}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -374,30 +374,30 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Selection Criteria */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">How to Choose a Silver IRA Custodian</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">How to Choose a Silver IRA Custodian</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             Key factors to evaluate when selecting a custodian for your precious metals IRA.
                         </p>
 
                         <div className="space-y-4">
                             {selectionCriteria.map((item, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                     <div className="flex items-start justify-between gap-4">
                                         <div className="flex-1">
                                             <div className="flex items-center gap-3 mb-2">
-                                                <h3 className="font-bold text-white">{item.criterion}</h3>
+                                                <h3 className="font-bold text-slate-900">{item.criterion}</h3>
                                                 <span className={`px-2 py-0.5 rounded text-xs font-semibold ${
                                                     item.importance === 'Critical' ? 'bg-red-500/20 text-red-400' :
-                                                    item.importance === 'High' ? 'bg-amber-500/20 text-amber-400' :
-                                                    'bg-slate-500/20 text-slate-400'
+                                                    item.importance === 'High' ? 'bg-[#B22234]/20 text-[#B22234]' :
+                                                    'bg-[#B22234]/10 text-slate-600'
                                                 }`}>
                                                     {item.importance}
                                                 </span>
                                             </div>
-                                            <p className="text-sm text-slate-400">{item.description}</p>
+                                            <p className="text-sm text-slate-600">{item.description}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -408,11 +408,11 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Warning Signs */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-4">Red Flags to Avoid</h2>
-                        <p className="text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Red Flags to Avoid</h2>
+                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
                             Watch out for these warning signs when evaluating Silver IRA custodians.
                         </p>
 
@@ -423,7 +423,7 @@ export default function SilverIraCustodianPage() {
                                         <AlertTriangle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                                         <div>
                                             <h3 className="font-bold text-red-400 mb-2">{item.sign}</h3>
-                                            <p className="text-sm text-slate-400">{item.explanation}</p>
+                                            <p className="text-sm text-slate-600">{item.explanation}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -434,15 +434,15 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Mid-page CTA */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-white/10">
-                        <h2 className="text-2xl font-bold text-white mb-4">Let Experts Handle the Custodian Coordination</h2>
-                        <p className="text-slate-400 mb-6">
+                    <div className="max-w-3xl mx-auto text-center bg-white rounded-2xl p-8 border border-slate-200">
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">Let Experts Handle the Custodian Coordination</h2>
+                        <p className="text-slate-600 mb-6">
                             Top Silver IRA companies work with trusted custodians and handle all the coordination for you.
                             Take our quiz to find the right precious metals company for your needs.
                         </p>
-                        <Button variant="gold" size="lg" asChild>
+                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                             <Link href="/quiz">
                                 Find My Silver IRA Company <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
@@ -452,21 +452,21 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl font-bold text-white text-center mb-8">Silver IRA Custodian FAQs</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Silver IRA Custodian FAQs</h2>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
                                 <details
                                     key={index}
-                                    className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl"
+                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
                                 >
-                                    <summary className="cursor-pointer p-6 font-semibold text-white flex justify-between items-center list-none">
+                                    <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
                                         {faq.question}
-                                        <span className="text-amber-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                                        <span className="text-[#B22234] group-open:rotate-180 transition-transform">&#9660;</span>
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-400">
+                                    <div className="px-6 pb-6 text-slate-600">
                                         {faq.answer}
                                     </div>
                                 </details>
@@ -477,28 +477,28 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
-                    <h2 className="text-2xl font-bold text-white text-center mb-8">Related Resources</h2>
+                    <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">Related Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/silver-ira/rules" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Rules</h3>
-                            <p className="text-sm text-slate-400">Understand all IRS requirements for Silver IRAs.</p>
+                        <Link href="/silver-ira/rules" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Rules</h3>
+                            <p className="text-sm text-slate-600">Understand all IRS requirements for Silver IRAs.</p>
                         </Link>
-                        <Link href="/silver-ira/companies" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Companies</h3>
-                            <p className="text-sm text-slate-400">Compare top precious metals companies that work with custodians.</p>
+                        <Link href="/silver-ira/companies" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Companies</h3>
+                            <p className="text-sm text-slate-600">Compare top precious metals companies that work with custodians.</p>
                         </Link>
-                        <Link href="/silver-ira/rollover" className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Silver IRA Rollover</h3>
-                            <p className="text-sm text-slate-400">Learn how to transfer funds to your new Silver IRA.</p>
+                        <Link href="/silver-ira/rollover" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
+                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Rollover</h3>
+                            <p className="text-sm text-slate-600">Learn how to transfer funds to your new Silver IRA.</p>
                         </Link>
                     </div>
                 </Container>
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-white">
                 <Container>
                     <AugustaCTA
                         variant="footer"

@@ -161,14 +161,14 @@ export function WEPCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-500/30">
+        <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-500/30">
           <Building className="h-4 w-4" />
           WEP Calculator
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-red-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
           WEP Calculator
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
           Calculate how the Windfall Elimination Provision affects your Social Security benefits
           if you have a pension from non-covered employment.
         </p>
@@ -178,21 +178,21 @@ export function WEPCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Earnings History */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                <Briefcase className="h-5 w-5 text-blue-400" />
+                <Briefcase className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Your Earnings History</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 flex items-center gap-2">
+                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
                   Years of Substantial Earnings: {yearsSubstantialEarnings}
                   <div className="group relative">
                     <Info className="h-4 w-4 text-slate-500 cursor-help" />
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-slate-800 text-xs text-slate-300 rounded-lg p-3 border border-slate-700 z-10">
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-slate-100 text-xs text-slate-600 rounded-lg p-3 border border-slate-700 z-10">
                       Years where you paid Social Security taxes on earnings above the substantial earnings threshold (about $31,275 in 2024). 30+ years eliminates WEP entirely.
                     </div>
                   </div>
@@ -207,11 +207,11 @@ export function WEPCalculator() {
                 />
                 <div className="flex justify-between text-xs text-slate-500 mt-1">
                   <span>0 years</span>
-                  <span className="text-green-400 font-medium">30+ eliminates WEP</span>
+                  <span className="text-green-600 font-medium">30+ eliminates WEP</span>
                   <span>40 years</span>
                 </div>
                 {yearsSubstantialEarnings >= 30 && (
-                  <div className="mt-2 flex items-center gap-2 text-green-400 text-sm">
+                  <div className="mt-2 flex items-center gap-2 text-green-600 text-sm">
                     <CheckCircle2 className="h-4 w-4" />
                     WEP does not apply with 30+ years of substantial earnings!
                   </div>
@@ -219,7 +219,7 @@ export function WEPCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Your Estimated PIA (Primary Insurance Amount)
                 </label>
                 <div className="relative">
@@ -228,7 +228,7 @@ export function WEPCalculator() {
                     type="number"
                     value={estimatedPIA}
                     onChange={(e) => setEstimatedPIA(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-blue-500"
                     min="0"
                     step="100"
                   />
@@ -241,7 +241,7 @@ export function WEPCalculator() {
           </div>
 
           {/* Non-Covered Pension */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-orange-500/20 rounded-lg border border-orange-500/30">
                 <Building className="h-5 w-5 text-orange-400" />
@@ -251,7 +251,7 @@ export function WEPCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Monthly Non-Covered Pension Amount
                 </label>
                 <div className="relative">
@@ -260,7 +260,7 @@ export function WEPCalculator() {
                     type="number"
                     value={nonCoveredPension}
                     onChange={(e) => setNonCoveredPension(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-orange-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-orange-500"
                     min="0"
                     step="100"
                   />
@@ -271,13 +271,13 @@ export function WEPCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Year of Social Security Eligibility
                 </label>
                 <select
                   value={yearOfEligibility}
                   onChange={(e) => setYearOfEligibility(Number(e.target.value))}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-orange-500"
                 >
                   <option value={2024}>2024</option>
                   <option value={2025}>2025</option>
@@ -289,7 +289,7 @@ export function WEPCalculator() {
           </div>
 
           {/* GPO Section */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
@@ -304,7 +304,7 @@ export function WEPCalculator() {
                   onChange={(e) => setShowGPO(e.target.checked)}
                   className="w-5 h-5 rounded accent-purple-500"
                 />
-                <span className="text-sm text-slate-400">Include GPO</span>
+                <span className="text-sm text-slate-500">Include GPO</span>
               </label>
             </div>
 
@@ -318,7 +318,7 @@ export function WEPCalculator() {
                 </div>
 
                 <div>
-                  <label className="text-sm text-slate-400 mb-2 block">
+                  <label className="text-sm text-slate-500 mb-2 block">
                     Expected Spousal/Survivor Benefit (before GPO)
                   </label>
                   <div className="relative">
@@ -327,7 +327,7 @@ export function WEPCalculator() {
                       type="number"
                       value={spouseBenefit}
                       onChange={(e) => setSpouseBenefit(Number(e.target.value))}
-                      className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-purple-500"
+                      className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
                       min="0"
                       step="100"
                     />
@@ -348,16 +348,16 @@ export function WEPCalculator() {
           } backdrop-blur-sm rounded-xl p-8 border`}>
             <div className="flex items-center gap-3 mb-6">
               {calculations.isWEPEliminated ? (
-                <CheckCircle2 className="h-10 w-10 text-green-400" />
+                <CheckCircle2 className="h-10 w-10 text-green-600" />
               ) : (
-                <TrendingDown className="h-10 w-10 text-red-400" />
+                <TrendingDown className="h-10 w-10 text-red-600" />
               )}
               <div>
-                <h3 className="text-sm text-slate-400">
+                <h3 className="text-sm text-slate-500">
                   {calculations.isWEPEliminated ? "WEP Status" : "WEP Reduction"}
                 </h3>
                 <div className={`text-3xl font-bold ${
-                  calculations.isWEPEliminated ? "text-green-400" : "text-red-400"
+                  calculations.isWEPEliminated ? "text-green-600" : "text-red-600"
                 }`}>
                   {calculations.isWEPEliminated
                     ? "Eliminated!"
@@ -367,22 +367,22 @@ export function WEPCalculator() {
             </div>
 
             {!calculations.isWEPEliminated && (
-              <div className="space-y-3 bg-slate-800/50 rounded-lg p-4">
+              <div className="space-y-3 bg-slate-50 rounded-lg p-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 text-sm">Your PIA (before WEP)</span>
-                  <span className="font-semibold text-white">
+                  <span className="text-slate-600 text-sm">Your PIA (before WEP)</span>
+                  <span className="font-semibold text-slate-900">
                     {formatCurrency(calculations.estimatedPIA)}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 text-sm">WEP Reduction ({calculations.wepPercentage}%)</span>
-                  <span className="font-semibold text-red-400">
+                  <span className="text-slate-600 text-sm">WEP Reduction ({calculations.wepPercentage}%)</span>
+                  <span className="font-semibold text-red-600">
                     -{formatCurrency(calculations.wepReduction)}
                   </span>
                 </div>
-                <div className="flex justify-between items-center pt-2 border-t border-white/10">
-                  <span className="text-slate-400 text-sm font-semibold">Adjusted Benefit</span>
-                  <span className="font-bold text-white text-lg">
+                <div className="flex justify-between items-center pt-2 border-t border-slate-200">
+                  <span className="text-slate-600 text-sm font-semibold">Adjusted Benefit</span>
+                  <span className="font-bold text-slate-900 text-lg">
                     {formatCurrency(calculations.adjustedBenefit)}
                   </span>
                 </div>
@@ -390,7 +390,7 @@ export function WEPCalculator() {
             )}
 
             {!calculations.isWEPEliminated && (
-              <div className="mt-4 text-xs text-slate-400">
+              <div className="mt-4 text-xs text-slate-500">
                 WEP Maximum ({yearOfEligibility}): {formatCurrency(calculations.wepMaximum)}/mo |
                 50% Pension Limit: {formatCurrency(calculations.pensionLimit)}/mo
               </div>
@@ -407,19 +407,19 @@ export function WEPCalculator() {
 
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 text-sm">Spousal Benefit (before GPO)</span>
-                  <span className="font-semibold text-white">
+                  <span className="text-slate-600 text-sm">Spousal Benefit (before GPO)</span>
+                  <span className="font-semibold text-slate-900">
                     {formatCurrency(spouseBenefit)}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 text-sm">GPO Reduction (2/3 of pension)</span>
-                  <span className="font-semibold text-red-400">
+                  <span className="text-slate-600 text-sm">GPO Reduction (2/3 of pension)</span>
+                  <span className="font-semibold text-red-600">
                     -{formatCurrency(calculations.gpoReduction)}
                   </span>
                 </div>
-                <div className="flex justify-between items-center pt-2 border-t border-white/10">
-                  <span className="text-slate-400 text-sm">Adjusted Spousal Benefit</span>
+                <div className="flex justify-between items-center pt-2 border-t border-slate-200">
+                  <span className="text-slate-600 text-sm">Adjusted Spousal Benefit</span>
                   <span className="font-bold text-purple-400">
                     {formatCurrency(calculations.adjustedSpouseBenefit)}
                   </span>
@@ -439,28 +439,28 @@ export function WEPCalculator() {
 
           {/* Total Impact */}
           {!calculations.isWEPEliminated && (
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
               <div className="flex items-center gap-3 mb-4">
-                <AlertTriangle className="h-6 w-6 text-amber-400" />
+                <AlertTriangle className="h-6 w-6 text-[#B22234]" />
                 <h3 className="text-lg font-semibold">Total Financial Impact</h3>
               </div>
 
               <div className="space-y-4">
-                <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                  <span className="text-slate-400">Monthly Loss</span>
-                  <span className="text-xl font-bold text-red-400">
+                <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+                  <span className="text-slate-500">Monthly Loss</span>
+                  <span className="text-xl font-bold text-red-600">
                     {formatCurrency(calculations.totalMonthlyLoss)}
                   </span>
                 </div>
-                <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                  <span className="text-slate-400">Annual Loss</span>
-                  <span className="text-xl font-bold text-red-400">
+                <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+                  <span className="text-slate-500">Annual Loss</span>
+                  <span className="text-xl font-bold text-red-600">
                     {formatCurrency(calculations.totalMonthlyLoss * 12)}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400">20-Year Lifetime Loss</span>
-                  <span className="text-xl font-bold text-red-400">
+                  <span className="text-slate-500">20-Year Lifetime Loss</span>
+                  <span className="text-xl font-bold text-red-600">
                     {formatCurrency(calculations.lifetimeLoss)}
                   </span>
                 </div>
@@ -470,16 +470,16 @@ export function WEPCalculator() {
 
           {/* Impact of Additional Years */}
           {!calculations.isWEPEliminated && (
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
               <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                <Briefcase className="h-5 w-5 text-green-400" />
+                <Briefcase className="h-5 w-5 text-green-600" />
                 Impact of Additional Years of Work
               </h3>
 
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-white/10">
+                    <tr className="border-b border-slate-200">
                       <th className="py-2 px-2 text-left text-slate-500">+Years</th>
                       <th className="py-2 px-2 text-right text-slate-500">Total</th>
                       <th className="py-2 px-2 text-right text-slate-500">WEP %</th>
@@ -490,18 +490,18 @@ export function WEPCalculator() {
                     {calculations.additionalYearsImpact.slice(0, 8).map((row, idx) => (
                       <tr
                         key={row.years}
-                        className={`border-b border-white/5 ${row.wepEliminated ? "bg-green-500/5" : ""}`}
+                        className={`border-b border-slate-200 ${row.wepEliminated ? "bg-green-500/5" : ""}`}
                       >
-                        <td className="py-2 px-2 text-slate-300">+{row.years}</td>
-                        <td className="py-2 px-2 text-right text-slate-400">{row.totalYears} yrs</td>
-                        <td className="py-2 px-2 text-right text-slate-400">
+                        <td className="py-2 px-2 text-slate-600">+{row.years}</td>
+                        <td className="py-2 px-2 text-right text-slate-500">{row.totalYears} yrs</td>
+                        <td className="py-2 px-2 text-right text-slate-500">
                           {row.wepEliminated ? (
-                            <span className="text-green-400">0%</span>
+                            <span className="text-green-600">0%</span>
                           ) : (
                             `${row.wepPercentage}%`
                           )}
                         </td>
-                        <td className="py-2 px-2 text-right text-green-400 font-medium">
+                        <td className="py-2 px-2 text-right text-green-600 font-medium">
                           +{formatCurrency(row.monthlyGain)}
                         </td>
                       </tr>
@@ -519,32 +519,32 @@ export function WEPCalculator() {
 
       {/* Gold Bridge Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
+        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
           <div className="flex items-center gap-3 mb-6">
-            <Shield className="h-6 w-6 text-amber-400" />
+            <Shield className="h-6 w-6 text-[#B22234]" />
             <h2 className="text-2xl font-bold">Protecting Your Retirement from WEP</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Income Diversification</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Income Diversification</div>
+              <p className="text-slate-600 text-sm">
                 Government retirees affected by WEP should build additional retirement income sources.
                 A Gold IRA provides tax-advantaged growth independent of Social Security.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Inflation Protection</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Inflation Protection</div>
+              <p className="text-slate-600 text-sm">
                 With reduced Social Security benefits, protecting your purchasing power becomes critical.
                 Gold historically maintains value during inflationary periods.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Legacy Planning</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Legacy Planning</div>
+              <p className="text-slate-600 text-sm">
                 Unlike Social Security, a Gold IRA can be passed to heirs. Build a tangible asset
                 portfolio that benefits your family for generations.
               </p>

@@ -131,73 +131,73 @@ export default async function ComparisonPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen flex flex-col bg-slate-900">
+      <main className="min-h-screen flex flex-col bg-white">
         <Navbar />
 
         {/* Header */}
-        <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-20">
+        <header className="bg-slate-50 py-16 md:py-20 border-b border-slate-200">
           <Container>
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
-              <Link href="/" className="hover:text-white">Home</Link>
+            <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6">
+              <Link href="/" className="hover:text-slate-900">Home</Link>
               <span>/</span>
-              <Link href="/compare" className="hover:text-white">Compare</Link>
+              <Link href="/compare" className="hover:text-slate-900">Compare</Link>
               <span>/</span>
-              <span className="text-white">{companyA.name} vs {companyB.name}</span>
+              <span className="text-slate-900">{companyA.name} vs {companyB.name}</span>
             </nav>
 
-            <div className="flex items-center gap-2 text-amber-400 font-bold tracking-widest uppercase text-xs mb-4">
+            <div className="flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
               <Scale className="h-4 w-4" />
               Head-to-Head Comparison
             </div>
 
-            <h1 className="text-3xl md:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#000080]">
               {companyA.name} vs {companyB.name}
             </h1>
 
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mb-4">
+            <p className="text-xl text-slate-700 leading-relaxed max-w-2xl mb-4">
               When you&apos;ve spent 30 years building your retirement savings, you can&apos;t afford to trust it to the wrong company. Let&apos;s look at what actually matters.
             </p>
-            <p className="text-base text-slate-400 leading-relaxed max-w-2xl mb-8">
+            <p className="text-base text-slate-600 leading-relaxed max-w-2xl mb-8">
               For someone with $500k saved over a lifetime of hard work, we focus on the things that count: BBB complaint history, how they handle problems, and whether customers actually recommend them to friends&mdash;not just flashy marketing.
             </p>
 
             {/* Quick Stats */}
             <div className="grid sm:grid-cols-2 gap-4 max-w-2xl">
-              <div className={`rounded-xl p-4 ${companyA.featured ? "bg-amber-500/20 border border-amber-500/30" : "bg-white/10"}`}>
+              <div className={`rounded-xl p-4 ${companyA.featured ? "bg-[#B22234]/10 border border-[#B22234]/20" : "bg-white border border-slate-200"}`}>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-bold text-white">{companyA.name}</span>
-                  {companyA.featured && <Award className="h-4 w-4 text-amber-400" />}
+                  <span className="font-bold text-slate-900">{companyA.name}</span>
+                  {companyA.featured && <Award className="h-4 w-4 text-[#B22234]" />}
                 </div>
                 <div className="flex items-center gap-4 text-sm">
-                  <span className="flex items-center gap-1">
-                    <Star className="h-4 w-4 text-amber-400" />
+                  <span className="flex items-center gap-1 text-slate-700">
+                    <Star className="h-4 w-4 text-[#B22234]" />
                     {companyA.rating}
                   </span>
-                  <span className="flex items-center gap-1">
-                    <Shield className="h-4 w-4 text-blue-400" />
+                  <span className="flex items-center gap-1 text-slate-700">
+                    <Shield className="h-4 w-4 text-blue-600" />
                     {companyA.bbbRating}
                   </span>
-                  <span className="text-slate-400">
+                  <span className="text-slate-600">
                     ${companyA.minInvestment.toLocaleString()} min
                   </span>
                 </div>
               </div>
-              <div className={`rounded-xl p-4 ${companyB.featured ? "bg-amber-500/20 border border-amber-500/30" : "bg-white/10"}`}>
+              <div className={`rounded-xl p-4 ${companyB.featured ? "bg-[#B22234]/10 border border-[#B22234]/20" : "bg-white border border-slate-200"}`}>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-bold text-white">{companyB.name}</span>
-                  {companyB.featured && <Award className="h-4 w-4 text-amber-400" />}
+                  <span className="font-bold text-slate-900">{companyB.name}</span>
+                  {companyB.featured && <Award className="h-4 w-4 text-[#B22234]" />}
                 </div>
                 <div className="flex items-center gap-4 text-sm">
-                  <span className="flex items-center gap-1">
-                    <Star className="h-4 w-4 text-amber-400" />
+                  <span className="flex items-center gap-1 text-slate-700">
+                    <Star className="h-4 w-4 text-[#B22234]" />
                     {companyB.rating}
                   </span>
-                  <span className="flex items-center gap-1">
-                    <Shield className="h-4 w-4 text-blue-400" />
+                  <span className="flex items-center gap-1 text-slate-700">
+                    <Shield className="h-4 w-4 text-blue-600" />
                     {companyB.bbbRating}
                   </span>
-                  <span className="text-slate-400">
+                  <span className="text-slate-600">
                     ${companyB.minInvestment.toLocaleString()} min
                   </span>
                 </div>
@@ -217,9 +217,9 @@ export default async function ComparisonPage({ params }: Props) {
 
                 {/* Comparison Table */}
                 <section>
-                  <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                    <div className="p-2 bg-white/10 rounded-lg">
-                      <Scale className="h-5 w-5 text-amber-400" />
+                  <h2 className="text-2xl font-bold text-[#000080] mb-6 flex items-center gap-3">
+                    <div className="p-2 bg-slate-100 rounded-lg border border-slate-200">
+                      <Scale className="h-5 w-5 text-[#B22234]" />
                     </div>
                     Side-by-Side Comparison
                   </h2>
@@ -238,9 +238,9 @@ export default async function ComparisonPage({ params }: Props) {
 
                 {/* Pros & Cons */}
                 <section>
-                  <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                    <div className="p-2 bg-white/10 rounded-lg">
-                      <CheckCircle2 className="h-5 w-5 text-amber-400" />
+                  <h2 className="text-2xl font-bold text-[#000080] mb-6 flex items-center gap-3">
+                    <div className="p-2 bg-slate-100 rounded-lg border border-slate-200">
+                      <CheckCircle2 className="h-5 w-5 text-[#B22234]" />
                     </div>
                     Pros & Cons Comparison
                   </h2>
@@ -249,41 +249,41 @@ export default async function ComparisonPage({ params }: Props) {
 
                 {/* Company Summaries */}
                 <section className="space-y-8">
-                  <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-                    <div className="p-2 bg-white/10 rounded-lg">
-                      <DollarSign className="h-5 w-5 text-amber-400" />
+                  <h2 className="text-2xl font-bold text-[#000080] flex items-center gap-3">
+                    <div className="p-2 bg-slate-100 rounded-lg border border-slate-200">
+                      <DollarSign className="h-5 w-5 text-[#B22234]" />
                     </div>
                     Company Overviews
                   </h2>
 
                   {/* Company A Summary */}
-                  <div className={`rounded-xl p-6 border ${companyA.featured ? "bg-amber-500/10 border-amber-500/30" : "bg-white/5 border-white/10"}`}>
+                  <div className={`rounded-xl p-6 border ${companyA.featured ? "bg-[#B22234]/5 border-[#B22234]/20" : "bg-white border-slate-200"}`}>
                     <div className="flex items-center gap-3 mb-4">
-                      <h3 className="text-xl font-bold text-white">{companyA.name}</h3>
+                      <h3 className="text-xl font-bold text-slate-900">{companyA.name}</h3>
                       {companyA.featured && (
-                        <span className="text-xs bg-amber-500 text-white px-2 py-1 rounded-full font-bold">
+                        <span className="text-xs bg-[#B22234] text-white px-2 py-1 rounded-full font-bold">
                           #1 Pick
                         </span>
                       )}
                     </div>
-                    <p className="text-slate-300 mb-4">{companyA.description}</p>
+                    <p className="text-slate-600 mb-4">{companyA.description}</p>
                     <div className="flex flex-wrap gap-4 mb-4 text-sm">
-                      <span className="flex items-center gap-1 text-slate-300">
-                        <Star className="h-4 w-4 text-amber-500" />
+                      <span className="flex items-center gap-1 text-slate-700">
+                        <Star className="h-4 w-4 text-[#B22234]" />
                         {companyA.rating}/5 rating
                       </span>
-                      <span className="flex items-center gap-1 text-slate-300">
+                      <span className="flex items-center gap-1 text-slate-700">
                         <Shield className="h-4 w-4 text-blue-600" />
                         {companyA.bbbRating} BBB
                       </span>
-                      <span className="text-slate-300">
+                      <span className="text-slate-600">
                         Founded {companyA.founded}
                       </span>
                     </div>
                     <div className="flex gap-3">
                       <Link
                         href={`/reviews/${companyA.slug}`}
-                        className="text-amber-600 font-semibold hover:text-amber-700"
+                        className="text-[#B22234] font-semibold hover:text-[#8b1c2a]"
                       >
                         Read Full Review →
                       </Link>
@@ -291,7 +291,7 @@ export default async function ComparisonPage({ params }: Props) {
                         href={getTrackedLink(companyA.affiliateLink, `compare-${comparison}`, companyA.slug)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-slate-300 font-semibold hover:text-white"
+                        className="text-slate-600 font-semibold hover:text-slate-900"
                       >
                         Visit Website →
                       </a>
@@ -299,33 +299,33 @@ export default async function ComparisonPage({ params }: Props) {
                   </div>
 
                   {/* Company B Summary */}
-                  <div className={`rounded-xl p-6 border ${companyB.featured ? "bg-amber-500/10 border-amber-500/30" : "bg-white/5 border-white/10"}`}>
+                  <div className={`rounded-xl p-6 border ${companyB.featured ? "bg-[#B22234]/5 border-[#B22234]/20" : "bg-white border-slate-200"}`}>
                     <div className="flex items-center gap-3 mb-4">
-                      <h3 className="text-xl font-bold text-white">{companyB.name}</h3>
+                      <h3 className="text-xl font-bold text-slate-900">{companyB.name}</h3>
                       {companyB.featured && (
-                        <span className="text-xs bg-amber-500 text-white px-2 py-1 rounded-full font-bold">
+                        <span className="text-xs bg-[#B22234] text-white px-2 py-1 rounded-full font-bold">
                           #1 Pick
                         </span>
                       )}
                     </div>
-                    <p className="text-slate-300 mb-4">{companyB.description}</p>
+                    <p className="text-slate-600 mb-4">{companyB.description}</p>
                     <div className="flex flex-wrap gap-4 mb-4 text-sm">
-                      <span className="flex items-center gap-1 text-slate-300">
-                        <Star className="h-4 w-4 text-amber-500" />
+                      <span className="flex items-center gap-1 text-slate-700">
+                        <Star className="h-4 w-4 text-[#B22234]" />
                         {companyB.rating}/5 rating
                       </span>
-                      <span className="flex items-center gap-1 text-slate-300">
+                      <span className="flex items-center gap-1 text-slate-700">
                         <Shield className="h-4 w-4 text-blue-600" />
                         {companyB.bbbRating} BBB
                       </span>
-                      <span className="text-slate-300">
+                      <span className="text-slate-600">
                         Founded {companyB.founded}
                       </span>
                     </div>
                     <div className="flex gap-3">
                       <Link
                         href={`/reviews/${companyB.slug}`}
-                        className="text-amber-600 font-semibold hover:text-amber-700"
+                        className="text-[#B22234] font-semibold hover:text-[#8b1c2a]"
                       >
                         Read Full Review →
                       </Link>
@@ -333,7 +333,7 @@ export default async function ComparisonPage({ params }: Props) {
                         href={getTrackedLink(companyB.affiliateLink, `compare-${comparison}`, companyB.slug)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-slate-300 font-semibold hover:text-white"
+                        className="text-slate-600 font-semibold hover:text-slate-900"
                       >
                         Visit Website →
                       </a>
@@ -342,12 +342,12 @@ export default async function ComparisonPage({ params }: Props) {
                 </section>
 
                 {/* Bottom Line */}
-                <section className="bg-slate-900 rounded-2xl p-8 text-white">
-                  <h2 className="text-2xl font-bold mb-4">The Bottom Line</h2>
-                  <p className="text-slate-300 mb-6">
+                <section className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                  <h2 className="text-2xl font-bold mb-4 text-[#000080]">The Bottom Line</h2>
+                  <p className="text-slate-600 mb-6">
                     {winner ? (
                       <>
-                        Look, you didn&apos;t work 30 years to hand your savings over to a company that might let you down. Based on complaint history, customer service track record, and how they treat people with real money on the line, <strong className="text-white">{winner.name}</strong> edges ahead ({winner.rating}/5 rating). That said, your situation matters:
+                        Look, you didn&apos;t work 30 years to hand your savings over to a company that might let you down. Based on complaint history, customer service track record, and how they treat people with real money on the line, <strong className="text-slate-900">{winner.name}</strong> edges ahead ({winner.rating}/5 rating). That said, your situation matters:
                       </>
                     ) : (
                       <>
@@ -356,13 +356,13 @@ export default async function ComparisonPage({ params }: Props) {
                     )}
                   </p>
                   <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <div className="font-bold text-white mb-2">Choose {companyA.name} if:</div>
-                      <p className="text-sm text-slate-300">{companyA.bestFor}</p>
+                    <div className="bg-white rounded-lg p-4 border border-slate-200">
+                      <div className="font-bold text-slate-900 mb-2">Choose {companyA.name} if:</div>
+                      <p className="text-sm text-slate-600">{companyA.bestFor}</p>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-4">
-                      <div className="font-bold text-white mb-2">Choose {companyB.name} if:</div>
-                      <p className="text-sm text-slate-300">{companyB.bestFor}</p>
+                    <div className="bg-white rounded-lg p-4 border border-slate-200">
+                      <div className="font-bold text-slate-900 mb-2">Choose {companyB.name} if:</div>
+                      <p className="text-sm text-slate-600">{companyB.bestFor}</p>
                     </div>
                   </div>
                 </section>
@@ -373,14 +373,14 @@ export default async function ComparisonPage({ params }: Props) {
                 <div className="sticky top-24 space-y-6">
                   {/* Winner CTA */}
                   {winner && (
-                    <div className={`rounded-xl p-6 ${winner.featured ? "bg-amber-500/20 border border-amber-500/30" : "bg-white/5 backdrop-blur-sm border border-white/10"}`}>
-                      <div className="text-xs font-bold text-amber-400 mb-2 flex items-center gap-1">
+                    <div className={`rounded-xl p-6 ${winner.featured ? "bg-[#B22234]/10 border border-[#B22234]/20" : "bg-white border border-slate-200 shadow-sm"}`}>
+                      <div className="text-xs font-bold text-[#B22234] mb-2 flex items-center gap-1">
                         <Award className="h-3 w-3" />
                         COMPARISON WINNER
                       </div>
-                      <h3 className="font-bold text-white mb-2">{winner.name}</h3>
-                      <div className="flex items-center gap-2 mb-4 text-sm text-slate-300">
-                        <Star className="h-4 w-4 text-amber-500" />
+                      <h3 className="font-bold text-slate-900 mb-2">{winner.name}</h3>
+                      <div className="flex items-center gap-2 mb-4 text-sm text-slate-600">
+                        <Star className="h-4 w-4 text-[#B22234]" />
                         {winner.rating}/5 • {winner.bbbRating} BBB
                       </div>
                       <a
@@ -389,8 +389,8 @@ export default async function ComparisonPage({ params }: Props) {
                         rel="noopener noreferrer"
                         className={`block w-full text-center py-3 font-bold rounded-lg transition-all ${
                           winner.featured
-                            ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700"
-                            : "bg-slate-900 text-white hover:bg-slate-800"
+                            ? "bg-[#B22234] text-white hover:bg-[#8b1c2a]"
+                            : "bg-[#000080] text-white hover:bg-[#000066]"
                         }`}
                       >
                         Get Started
@@ -404,18 +404,18 @@ export default async function ComparisonPage({ params }: Props) {
                   )}
 
                   {/* Related Comparisons */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <h3 className="font-bold text-white mb-4">Related Comparisons</h3>
+                  <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h3 className="font-bold text-slate-900 mb-4">Related Comparisons</h3>
                     <div className="space-y-3">
                       <Link
                         href={`/compare/augusta-precious-metals-vs-${companyA.slug === "augusta-precious-metals" ? companyB.slug : companyA.slug}`}
-                        className="block text-sm text-slate-300 hover:text-amber-400"
+                        className="block text-sm text-slate-600 hover:text-[#B22234]"
                       >
                         Augusta vs {companyA.slug === "augusta-precious-metals" ? companyB.name : companyA.name} →
                       </Link>
                       <Link
                         href="/compare"
-                        className="block text-sm text-amber-400 font-semibold hover:text-amber-300"
+                        className="block text-sm text-[#B22234] font-semibold hover:text-[#8b1c2a]"
                       >
                         See All Comparisons →
                       </Link>
@@ -423,18 +423,18 @@ export default async function ComparisonPage({ params }: Props) {
                   </div>
 
                   {/* Quick Links */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <h3 className="font-bold text-white mb-4">Individual Reviews</h3>
+                  <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h3 className="font-bold text-slate-900 mb-4">Individual Reviews</h3>
                     <div className="space-y-2">
                       <Link
                         href={`/reviews/${companyA.slug}`}
-                        className="block text-sm text-slate-300 hover:text-amber-400"
+                        className="block text-sm text-slate-600 hover:text-[#B22234]"
                       >
                         {companyA.name} Review →
                       </Link>
                       <Link
                         href={`/reviews/${companyB.slug}`}
-                        className="block text-sm text-slate-300 hover:text-amber-400"
+                        className="block text-sm text-slate-600 hover:text-[#B22234]"
                       >
                         {companyB.name} Review →
                       </Link>
@@ -447,16 +447,16 @@ export default async function ComparisonPage({ params }: Props) {
         </section>
 
         {/* Footer CTA */}
-        <section className="py-16 bg-slate-800">
+        <section className="py-16 bg-slate-50 border-t border-slate-200">
           <Container>
             {showAugustaCTA ? (
               <AugustaCTA variant="footer" linkContext="comparison" trackSource={`compare-${comparison}`} />
             ) : (
               <div className="text-center max-w-2xl mx-auto">
-                <h2 className="text-2xl font-bold text-white mb-4">
+                <h2 className="text-2xl font-bold text-[#000080] mb-4">
                   Ready to Take the Next Step?
                 </h2>
-                <p className="text-slate-300 mb-8">
+                <p className="text-slate-600 mb-8">
                   You&apos;ve done your homework. Both companies offer free consultations with no pressure&mdash;just straight answers about whether a Gold IRA makes sense for what you&apos;ve built.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
@@ -466,8 +466,8 @@ export default async function ComparisonPage({ params }: Props) {
                     rel="noopener noreferrer"
                     className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${
                       companyA.featured
-                        ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700"
-                        : "bg-slate-900 text-white hover:bg-slate-800"
+                        ? "bg-[#B22234] text-white hover:bg-[#8b1c2a]"
+                        : "bg-[#000080] text-white hover:bg-[#000066]"
                     }`}
                   >
                     Visit {companyA.name}
@@ -479,8 +479,8 @@ export default async function ComparisonPage({ params }: Props) {
                     rel="noopener noreferrer"
                     className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${
                       companyB.featured
-                        ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700"
-                        : "bg-slate-900 text-white hover:bg-slate-800"
+                        ? "bg-[#B22234] text-white hover:bg-[#8b1c2a]"
+                        : "bg-[#000080] text-white hover:bg-[#000066]"
                     }`}
                   >
                     Visit {companyB.name}

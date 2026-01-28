@@ -53,21 +53,21 @@ const tocItems = [
 
 export default function MonetaryGoldReviewPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-slate-50 pb-24">
             <SchemaScript schema={schema} />
-            <header className="bg-primary text-white py-16">
+            <header className="bg-slate-50 border-b border-slate-200 py-16">
                 <Container>
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="flex gap-1">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-secondary text-secondary' : i < 5 ? 'fill-secondary/50 text-secondary' : 'text-gray-400'}`} />
+                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-[#B22234] text-[#B22234]' : i < 5 ? 'fill-slate-300 text-slate-300' : 'text-slate-300'}`} />
                                 ))}
                             </div>
-                            <span className="font-bold text-secondary text-lg">4.5/5.0 Rating</span>
+                            <span className="font-bold text-[#B22234] text-lg">4.5/5.0 Rating</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Monetary Gold Review (2026)</h1>
-                        <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">Monetary Gold Review (2026)</h1>
+                        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
                             A smaller company claiming &quot;direct to the source&quot; pricing. Is cutting out the middleman actually saving you money?
                         </p>
                     </div>
@@ -81,7 +81,7 @@ export default function MonetaryGoldReviewPage() {
                             <div className="block lg:hidden">
                                 <ReviewSidebar {...companyData} />
                             </div>
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-900 prose-a:text-[#B22234] max-w-none">
 
                                 <section id="overview">
                                     <p className="lead">

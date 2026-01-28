@@ -162,31 +162,31 @@ export function FeesComparison() {
   const lowestTotal = calculations[0]?.totalFees || 0;
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+    <section className="py-16 md:py-24 bg-slate-50">
       <Container>
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Scale className="h-4 w-4" />
               FEES COMPARISON TOOL
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
               Gold IRA Fees Comparison Tool
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               See the true cost of each Gold IRA company over time. Adjust your
               account size and holding period to find the best value.
             </p>
           </div>
 
           {/* Input Controls */}
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 mb-8">
+          <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8 mb-8">
             <div className="grid md:grid-cols-2 gap-6">
               {/* Account Size */}
               <div>
-                <label className="block text-slate-400 text-sm mb-2">
-                  Account Size: <span className="text-amber-400 font-bold">{formatCurrency(accountSize)}</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Account Size: <span className="text-[#B22234] font-bold">{formatCurrency(accountSize)}</span>
                 </label>
                 <input
                   type="range"
@@ -195,7 +195,7 @@ export function FeesComparison() {
                   step={5000}
                   value={accountSize}
                   onChange={(e) => setAccountSize(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
                 <div className="flex justify-between text-xs text-slate-500 mt-1">
                   <span>$25K</span>
@@ -206,8 +206,8 @@ export function FeesComparison() {
 
               {/* Years Held */}
               <div>
-                <label className="block text-slate-400 text-sm mb-2">
-                  Years Held: <span className="text-amber-400 font-bold">{yearsHeld} years</span>
+                <label className="block text-slate-600 text-sm mb-2">
+                  Years Held: <span className="text-[#B22234] font-bold">{yearsHeld} years</span>
                 </label>
                 <input
                   type="range"
@@ -215,7 +215,7 @@ export function FeesComparison() {
                   max={30}
                   value={yearsHeld}
                   onChange={(e) => setYearsHeld(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
                 <div className="flex justify-between text-xs text-slate-500 mt-1">
                   <span>1 year</span>
@@ -227,7 +227,7 @@ export function FeesComparison() {
 
             {/* Company Selection */}
             <div className="mt-6">
-              <label className="block text-slate-400 text-sm mb-3">
+              <label className="block text-slate-600 text-sm mb-3">
                 Select Companies to Compare:
               </label>
               <div className="flex flex-wrap gap-2">
@@ -237,8 +237,8 @@ export function FeesComparison() {
                     onClick={() => toggleCompany(company.id)}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                       selectedCompanies.includes(company.id)
-                        ? "bg-amber-500 text-slate-900"
-                        : "bg-white/5 text-slate-400 hover:bg-white/10"
+                        ? "bg-[#B22234] text-white"
+                        : "bg-slate-50 text-slate-500 hover:bg-white/10"
                     }`}
                   >
                     {company.name}
@@ -255,10 +255,10 @@ export function FeesComparison() {
               return (
                 <div
                   key={calc.company.id}
-                  className={`bg-white/5 border rounded-2xl p-6 ${
+                  className={`bg-slate-50 border rounded-2xl p-6 ${
                     isLowest
                       ? "border-green-500/30 bg-green-500/5"
-                      : "border-white/10"
+                      : "border-slate-200"
                   }`}
                 >
                   <div className="flex flex-col md:flex-row md:items-center gap-4">
@@ -270,15 +270,15 @@ export function FeesComparison() {
                             LOWEST COST
                           </span>
                         )}
-                        <h3 className="text-lg font-bold text-white">
+                        <h3 className="text-lg font-bold text-slate-900">
                           {calc.company.name}
                         </h3>
-                        <div className="flex items-center gap-1 text-amber-400">
+                        <div className="flex items-center gap-1 text-[#B22234]">
                           <Star className="h-4 w-4 fill-current" />
                           <span className="text-sm">{calc.company.rating}</span>
                         </div>
                       </div>
-                      <div className="flex flex-wrap gap-4 text-sm text-slate-400">
+                      <div className="flex flex-wrap gap-4 text-sm text-slate-500">
                         <span>Min: {formatCurrency(calc.company.minimum)}</span>
                         <span>
                           Year 1: {formatCurrency(calc.yearOneFees)}
@@ -288,7 +288,7 @@ export function FeesComparison() {
                         </span>
                       </div>
                       {calc.company.promoNote && (
-                        <p className="text-green-400 text-sm mt-2 flex items-center gap-1">
+                        <p className="text-green-600 text-sm mt-2 flex items-center gap-1">
                           <CheckCircle2 className="h-4 w-4" />
                           {calc.company.promoNote}
                         </p>
@@ -297,10 +297,10 @@ export function FeesComparison() {
 
                     {/* Total Cost */}
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-white">
+                      <div className="text-2xl font-bold text-slate-900">
                         {formatCurrency(calc.totalFees)}
                       </div>
-                      <div className="text-slate-400 text-sm">
+                      <div className="text-slate-600 text-sm">
                         over {yearsHeld} years
                       </div>
                       <div className="text-slate-500 text-xs">
@@ -311,7 +311,7 @@ export function FeesComparison() {
                     {/* View Review */}
                     <Link
                       href={calc.company.reviewUrl}
-                      className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-lg transition-colors flex items-center gap-2"
+                      className="px-4 py-2 bg-white/10 hover:bg-white/20 text-slate-900 text-sm font-medium rounded-lg transition-colors flex items-center gap-2"
                     >
                       View Review
                       <ArrowRight className="h-4 w-4" />
@@ -323,32 +323,32 @@ export function FeesComparison() {
           </div>
 
           {/* Fee Breakdown Table */}
-          <div className="mt-12 bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-xl font-bold text-white">
+          <div className="mt-12 bg-white border border-slate-200 shadow-sm rounded-2xl overflow-hidden">
+            <div className="p-6 border-b border-slate-200">
+              <h3 className="text-xl font-bold text-slate-900">
                 Detailed Fee Breakdown
               </h3>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/10 bg-white/5">
-                    <th className="py-3 px-4 text-left text-slate-400 font-medium">
+                  <tr className="border-b border-slate-200 bg-slate-50">
+                    <th className="py-3 px-4 text-left text-slate-500 font-medium">
                       Company
                     </th>
-                    <th className="py-3 px-4 text-right text-slate-400 font-medium">
+                    <th className="py-3 px-4 text-right text-slate-500 font-medium">
                       Setup Fee
                     </th>
-                    <th className="py-3 px-4 text-right text-slate-400 font-medium">
+                    <th className="py-3 px-4 text-right text-slate-500 font-medium">
                       Annual Fee
                     </th>
-                    <th className="py-3 px-4 text-right text-slate-400 font-medium">
+                    <th className="py-3 px-4 text-right text-slate-500 font-medium">
                       Storage Fee
                     </th>
-                    <th className="py-3 px-4 text-right text-slate-400 font-medium">
+                    <th className="py-3 px-4 text-right text-slate-500 font-medium">
                       Wire Fee
                     </th>
-                    <th className="py-3 px-4 text-left text-slate-400 font-medium">
+                    <th className="py-3 px-4 text-left text-slate-500 font-medium">
                       Buyback
                     </th>
                   </tr>
@@ -359,36 +359,36 @@ export function FeesComparison() {
                     .map((company) => (
                       <tr
                         key={company.id}
-                        className="border-b border-white/5 hover:bg-white/5"
+                        className="border-b border-slate-200 hover:bg-slate-50"
                       >
-                        <td className="py-3 px-4 text-white font-medium">
+                        <td className="py-3 px-4 text-slate-900 font-medium">
                           {company.name}
                         </td>
-                        <td className="py-3 px-4 text-right text-slate-300">
+                        <td className="py-3 px-4 text-right text-slate-600">
                           {company.setupFee.waived ? (
-                            <span className="text-green-400">Waived</span>
+                            <span className="text-green-600">Waived</span>
                           ) : (
                             formatCurrency(company.setupFee.amount as number)
                           )}
                         </td>
-                        <td className="py-3 px-4 text-right text-slate-300">
+                        <td className="py-3 px-4 text-right text-slate-600">
                           {company.annualFee.amount === 0 ? (
-                            <span className="text-green-400">$0</span>
+                            <span className="text-green-600">$0</span>
                           ) : (
                             formatCurrency(company.annualFee.amount)
                           )}
                         </td>
-                        <td className="py-3 px-4 text-right text-slate-300">
+                        <td className="py-3 px-4 text-right text-slate-600">
                           {formatCurrency(company.storageFee.amount)}/yr
                         </td>
-                        <td className="py-3 px-4 text-right text-slate-300">
+                        <td className="py-3 px-4 text-right text-slate-600">
                           {company.wireFee === 0 ? (
-                            <span className="text-green-400">$0</span>
+                            <span className="text-green-600">$0</span>
                           ) : (
                             formatCurrency(company.wireFee)
                           )}
                         </td>
-                        <td className="py-3 px-4 text-slate-400 text-xs">
+                        <td className="py-3 px-4 text-slate-500 text-xs">
                           {company.buybackSpread}
                         </td>
                       </tr>
@@ -399,28 +399,28 @@ export function FeesComparison() {
           </div>
 
           {/* Important Notes */}
-          <div className="mt-8 bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6">
+          <div className="mt-8 bg-[#B22234]/10 border border-[#B22234]/30 rounded-2xl p-6">
             <div className="flex items-start gap-4">
-              <Info className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+              <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="text-white font-semibold mb-2">
+                <h4 className="text-slate-900 font-semibold mb-2">
                   Understanding Gold IRA Fees
                 </h4>
-                <ul className="text-slate-400 text-sm space-y-2">
+                <ul className="text-slate-600 text-sm space-y-2">
                   <li>
-                    <strong className="text-slate-300">Setup fees</strong> are one-time charges
+                    <strong className="text-slate-600">Setup fees</strong> are one-time charges
                     when opening your account. Many companies waive these for larger accounts.
                   </li>
                   <li>
-                    <strong className="text-slate-300">Annual fees</strong> cover account
+                    <strong className="text-slate-600">Annual fees</strong> cover account
                     administration and are charged yearly by the custodian.
                   </li>
                   <li>
-                    <strong className="text-slate-300">Storage fees</strong> pay for secure vault
+                    <strong className="text-slate-600">Storage fees</strong> pay for secure vault
                     storage and insurance of your physical metals.
                   </li>
                   <li>
-                    <strong className="text-slate-300">Premiums</strong> (not shown) are added to
+                    <strong className="text-slate-600">Premiums</strong> (not shown) are added to
                     the spot price when purchasing gold. Compare before buying.
                   </li>
                 </ul>

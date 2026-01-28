@@ -647,25 +647,25 @@ const categoryHeaderColors: Record<string, string> = {
 
 export default function ToolsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Wrench className="h-4 w-4" />
               FREE TOOLS
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#000080] mb-6">
               Retirement Tools Built for Real Workers
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-4">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-4">
               After 30+ years of showing up every day, you've built something real.
               These free calculators help you protect what you've earned. No signup required.
             </p>
-            <p className="text-lg text-amber-400 font-semibold">
+            <p className="text-lg text-[#B22234] font-semibold">
               {tools.length} Free Calculators Available
             </p>
           </div>
@@ -673,7 +673,7 @@ export default function ToolsPage() {
       </section>
 
       {/* Tools by Category */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-6xl mx-auto space-y-16">
             {categoryOrder.map((categoryKey) => {
@@ -704,9 +704,9 @@ export default function ToolsPage() {
 
                       const CardContent = (
                         <div
-                          className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full transition-all ${
+                          className={`bg-white border border-slate-200 rounded-2xl p-6 h-full transition-all shadow-sm ${
                             isAvailable
-                              ? "hover:bg-white/10 hover:border-amber-500/30 cursor-pointer"
+                              ? "hover:bg-slate-50 hover:border-[#B22234]/30 cursor-pointer"
                               : "opacity-60"
                           }`}
                         >
@@ -720,20 +720,20 @@ export default function ToolsPage() {
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 mb-2">
-                                <h3 className="text-base font-bold text-white truncate">
+                                <h3 className="text-base font-bold text-slate-900 truncate">
                                   {tool.name}
                                 </h3>
                                 {!isAvailable && (
-                                  <span className="px-2 py-0.5 bg-slate-700 text-slate-400 text-xs rounded-full shrink-0">
+                                  <span className="px-2 py-0.5 bg-slate-200 text-slate-500 text-xs rounded-full shrink-0">
                                     Coming Soon
                                   </span>
                                 )}
                               </div>
-                              <p className="text-slate-400 text-sm mb-4 line-clamp-3">
+                              <p className="text-slate-600 text-sm mb-4 line-clamp-3">
                                 {tool.description}
                               </p>
                               {isAvailable && (
-                                <div className="flex items-center gap-2 text-amber-400 font-semibold text-sm">
+                                <div className="flex items-center gap-2 text-[#B22234] font-semibold text-sm">
                                   Use Tool
                                   <ArrowRight className="h-4 w-4" />
                                 </div>
@@ -760,7 +760,7 @@ export default function ToolsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA
             variant="footer"

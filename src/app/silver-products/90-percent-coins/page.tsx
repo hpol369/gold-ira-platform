@@ -165,29 +165,29 @@ const coinTypes = [
 
 export default function NinetyPercentCoinsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-500/20 border border-slate-500/30 rounded-full text-slate-300 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
               <CircleDollarSign className="h-4 w-4" />
               150 MONTHLY SEARCHES - DIFFICULTY 2
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               90% Silver Coins: America&apos;s Pre-1965 Treasure
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               Mercury dimes. Walking Liberty halves. Washington quarters. These aren&apos;t just coins—
               they&apos;re pieces of American history that happen to contain real silver. Here&apos;s
               everything you need to know about collecting and investing in 90% silver.
@@ -211,29 +211,29 @@ export default function NinetyPercentCoinsPage() {
       </section>
 
       {/* Quick Reference */}
-      <section className="py-12 bg-slate-800/50">
+      <section className="py-12 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Scale className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">90%</div>
-                <div className="text-sm text-slate-400">Silver Content</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Scale className="h-8 w-8 text-slate-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">90%</div>
+                <div className="text-sm text-slate-600">Silver Content</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Calculator className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">0.715 oz</div>
-                <div className="text-sm text-slate-400">Per $1 Face</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Calculator className="h-8 w-8 text-slate-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">0.715 oz</div>
+                <div className="text-sm text-slate-600">Per $1 Face</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <History className="h-8 w-8 text-amber-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">1892-1964</div>
-                <div className="text-sm text-slate-400">Era of 90% Silver</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <History className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">1892-1964</div>
+                <div className="text-sm text-slate-600">Era of 90% Silver</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">5-15%</div>
-                <div className="text-sm text-slate-400">Typical Premium</div>
+                <div className="text-2xl font-bold text-slate-900">5-15%</div>
+                <div className="text-sm text-slate-600">Typical Premium</div>
               </div>
             </div>
           </div>
@@ -241,14 +241,14 @@ export default function NinetyPercentCoinsPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
               {/* Coin Types Grid */}
               <h2 className="flex items-center gap-3">
-                <CircleDollarSign className="h-6 w-6 text-slate-400" />
+                <CircleDollarSign className="h-6 w-6 text-slate-600" />
                 Types of 90% Silver Coins
               </h2>
 
@@ -256,33 +256,33 @@ export default function NinetyPercentCoinsPage() {
                 {coinTypes.map((coin) => (
                   <div
                     key={coin.name}
-                    className={`bg-white/5 backdrop-blur-sm border rounded-xl p-5 ${
-                      coin.highlight ? "border-amber-500/30" : "border-white/10"
+                    className={`bg-slate-50 backdrop-blur-sm border rounded-xl p-5 ${
+                      coin.highlight ? "border-[#B22234]/30" : "border-slate-200"
                     }`}
                   >
                     <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-lg font-bold text-white">{coin.name}</h3>
+                      <h3 className="text-lg font-bold text-slate-900">{coin.name}</h3>
                       {coin.highlight && (
-                        <span className="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded">
+                        <span className="text-xs bg-[#B22234]/20 text-[#B22234] px-2 py-0.5 rounded">
                           Collector Favorite
                         </span>
                       )}
                     </div>
                     <div className="flex gap-4 text-sm mb-2">
-                      <span className="text-slate-400">Years: <span className="text-slate-300">{coin.years}</span></span>
-                      <span className="text-slate-400">Silver: <span className="text-amber-400">{coin.silverOz} oz</span></span>
+                      <span className="text-slate-600">Years: <span className="text-slate-600">{coin.years}</span></span>
+                      <span className="text-slate-600">Silver: <span className="text-[#B22234]">{coin.silverOz} oz</span></span>
                     </div>
-                    <p className="text-slate-400 text-sm mb-2">{coin.notes}</p>
+                    <p className="text-slate-600 text-sm mb-2">{coin.notes}</p>
                     <div className="flex items-center gap-1">
                       {[1, 2, 3, 4, 5].map((star) => (
                         <Star
                           key={star}
                           className={`h-3 w-3 ${
-                            star <= coin.popularity ? "text-amber-400 fill-amber-400" : "text-slate-600"
+                            star <= coin.popularity ? "text-[#B22234] fill-[#B22234]" : "text-slate-600"
                           }`}
                         />
                       ))}
-                      <span className="text-xs text-slate-500 ml-1">Popularity</span>
+                      <span className="text-xs text-slate-600 ml-1">Popularity</span>
                     </div>
                   </div>
                 ))}
@@ -295,73 +295,73 @@ export default function NinetyPercentCoinsPage() {
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                  <thead className="bg-slate-800/50">
+                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <thead className="bg-slate-50">
                     <tr>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Coin</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Face Value</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Silver (oz)</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Melt Value*</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Per $1 Face</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Coin</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Face Value</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Silver (oz)</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Melt Value*</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Per $1 Face</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/10 text-sm">
+                  <tbody className="divide-y divide-slate-200 text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-white">Dime</td>
-                      <td className="p-4 text-slate-300">$0.10</td>
-                      <td className="p-4 text-amber-400">0.0715 oz</td>
-                      <td className="p-4 text-slate-300">$1.79</td>
-                      <td className="p-4 text-slate-400">10 coins</td>
+                      <td className="p-4 font-semibold text-slate-900">Dime</td>
+                      <td className="p-4 text-slate-600">$0.10</td>
+                      <td className="p-4 text-[#B22234]">0.0715 oz</td>
+                      <td className="p-4 text-slate-600">$1.79</td>
+                      <td className="p-4 text-slate-600">10 coins</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Quarter</td>
-                      <td className="p-4 text-slate-300">$0.25</td>
-                      <td className="p-4 text-amber-400">0.1788 oz</td>
-                      <td className="p-4 text-slate-300">$4.47</td>
-                      <td className="p-4 text-slate-400">4 coins</td>
+                      <td className="p-4 font-semibold text-slate-900">Quarter</td>
+                      <td className="p-4 text-slate-600">$0.25</td>
+                      <td className="p-4 text-[#B22234]">0.1788 oz</td>
+                      <td className="p-4 text-slate-600">$4.47</td>
+                      <td className="p-4 text-slate-600">4 coins</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Half Dollar</td>
-                      <td className="p-4 text-slate-300">$0.50</td>
-                      <td className="p-4 text-amber-400">0.3575 oz</td>
-                      <td className="p-4 text-slate-300">$8.94</td>
-                      <td className="p-4 text-slate-400">2 coins</td>
+                      <td className="p-4 font-semibold text-slate-900">Half Dollar</td>
+                      <td className="p-4 text-slate-600">$0.50</td>
+                      <td className="p-4 text-[#B22234]">0.3575 oz</td>
+                      <td className="p-4 text-slate-600">$8.94</td>
+                      <td className="p-4 text-slate-600">2 coins</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Silver Dollar</td>
-                      <td className="p-4 text-slate-300">$1.00</td>
-                      <td className="p-4 text-amber-400">0.7734 oz</td>
-                      <td className="p-4 text-slate-300">$19.34</td>
-                      <td className="p-4 text-slate-400">1 coin</td>
+                      <td className="p-4 font-semibold text-slate-900">Silver Dollar</td>
+                      <td className="p-4 text-slate-600">$1.00</td>
+                      <td className="p-4 text-[#B22234]">0.7734 oz</td>
+                      <td className="p-4 text-slate-600">$19.34</td>
+                      <td className="p-4 text-slate-600">1 coin</td>
                     </tr>
                     <tr className="bg-green-500/10">
-                      <td className="p-4 font-semibold text-white">$1 Face Mixed</td>
-                      <td className="p-4 text-slate-300">$1.00</td>
+                      <td className="p-4 font-semibold text-slate-900">$1 Face Mixed</td>
+                      <td className="p-4 text-slate-600">$1.00</td>
                       <td className="p-4 text-green-400 font-bold">0.715 oz</td>
-                      <td className="p-4 text-slate-300">$17.88</td>
-                      <td className="p-4 text-slate-400">Any combo</td>
+                      <td className="p-4 text-slate-600">$17.88</td>
+                      <td className="p-4 text-slate-600">Any combo</td>
                     </tr>
                   </tbody>
                 </table>
-                <p className="text-xs text-slate-500 mt-2">*Melt value at $25/oz spot. Silver dollars (Morgan/Peace) are slightly different.</p>
+                <p className="text-xs text-slate-600 mt-2">*Melt value at $25/oz spot. Silver dollars (Morgan/Peace) are slightly different.</p>
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Star className="h-6 w-6 text-amber-400" />
+                <Star className="h-6 w-6 text-[#B22234]" />
                 Featured Coins: The Classics
               </h2>
 
               {/* Mercury Dime */}
-              <div className="not-prose bg-white/5 backdrop-blur-sm border border-amber-500/30 rounded-xl p-6 my-8">
-                <h3 className="text-xl font-bold text-white mb-4">Mercury Dime (1916-1945)</h3>
+              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 my-8">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Mercury Dime (1916-1945)</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <p className="text-slate-300 mb-4">
+                    <p className="text-slate-600 mb-4">
                       Despite its name, the coin actually depicts Lady Liberty wearing a winged cap
                       symbolizing freedom of thought—not the Roman god Mercury. Designer Adolph Weinman
                       created what many consider the most beautiful dime ever minted.
                     </p>
-                    <ul className="space-y-2 text-slate-300">
+                    <ul className="space-y-2 text-slate-600">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-green-400" />
                         Silver content: 0.0715 oz
@@ -377,13 +377,13 @@ export default function NinetyPercentCoinsPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-amber-400 mb-2">Key Dates</h4>
-                    <ul className="space-y-1 text-slate-300 text-sm">
+                    <h4 className="text-lg font-semibold text-[#B22234] mb-2">Key Dates</h4>
+                    <ul className="space-y-1 text-slate-600 text-sm">
                       <li>1916-D: Most valuable ($1,000+)</li>
                       <li>1921, 1921-D: Low mintage</li>
                       <li>1942/41: Overdate error</li>
                     </ul>
-                    <p className="text-slate-400 text-sm mt-3">
+                    <p className="text-slate-600 text-sm mt-3">
                       Common dates (1940s) trade at slight premiums over melt. Key dates
                       command significant collector premiums.
                     </p>
@@ -392,16 +392,16 @@ export default function NinetyPercentCoinsPage() {
               </div>
 
               {/* Walking Liberty Half */}
-              <div className="not-prose bg-white/5 backdrop-blur-sm border border-amber-500/30 rounded-xl p-6 my-8">
-                <h3 className="text-xl font-bold text-white mb-4">Walking Liberty Half Dollar (1916-1947)</h3>
+              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 my-8">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Walking Liberty Half Dollar (1916-1947)</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <p className="text-slate-300 mb-4">
+                    <p className="text-slate-600 mb-4">
                       Often called the most beautiful US coin ever made. The design shows Lady Liberty
                       striding toward the rising sun, draped in an American flag. So beloved that it
                       was revived for the American Silver Eagle in 1986.
                     </p>
-                    <ul className="space-y-2 text-slate-300">
+                    <ul className="space-y-2 text-slate-600">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-green-400" />
                         Silver content: 0.3575 oz
@@ -417,13 +417,13 @@ export default function NinetyPercentCoinsPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-amber-400 mb-2">Key Dates</h4>
-                    <ul className="space-y-1 text-slate-300 text-sm">
+                    <h4 className="text-lg font-semibold text-[#B22234] mb-2">Key Dates</h4>
+                    <ul className="space-y-1 text-slate-600 text-sm">
                       <li>1916-S, 1921-S, 1921-D: Rare</li>
                       <li>1938-D: Low mintage</li>
                       <li>1919-D: Scarce in high grades</li>
                     </ul>
-                    <p className="text-slate-400 text-sm mt-3">
+                    <p className="text-slate-600 text-sm mt-3">
                       Common dates (1940s) trade 10-20% above melt for their beauty.
                       High-grade specimens are highly sought after.
                     </p>
@@ -436,7 +436,7 @@ export default function NinetyPercentCoinsPage() {
                   <XCircle className="h-6 w-6 text-red-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-red-400 mb-2">NOT IRA Eligible</h4>
-                    <p className="text-slate-300">
+                    <p className="text-slate-600">
                       90% silver coins do NOT qualify for Precious Metals IRAs. The IRS requires
                       .999 fine silver for IRA holdings. If you want silver in your retirement account,
                       consider American Silver Eagles or .999 fine bars instead.
@@ -448,18 +448,18 @@ export default function NinetyPercentCoinsPage() {
               <h2>Where to Buy 90% Silver Coins</h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">For Bulk (Face Value)</h3>
-                  <ul className="space-y-2 text-slate-300">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">For Bulk (Face Value)</h3>
+                  <ul className="space-y-2 text-slate-600">
                     <li><strong>SD Bullion</strong> - Best prices on bags</li>
                     <li><strong>JM Bullion</strong> - Good selection</li>
                     <li><strong>APMEX</strong> - Premium options</li>
                     <li><strong>Monument Metals</strong> - Competitive</li>
                   </ul>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">For Specific Dates</h3>
-                  <ul className="space-y-2 text-slate-300">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">For Specific Dates</h3>
+                  <ul className="space-y-2 text-slate-600">
                     <li><strong>Local coin shops</strong> - Browse inventory</li>
                     <li><strong>eBay</strong> - Key dates (verify seller)</li>
                     <li><strong>Heritage Auctions</strong> - High-grade coins</li>
@@ -468,12 +468,12 @@ export default function NinetyPercentCoinsPage() {
                 </div>
               </div>
 
-              <div className="not-prose bg-amber-500/10 border border-amber-500/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
-                  <Info className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-lg font-bold text-amber-400 mb-2">Buying Tip</h4>
-                    <p className="text-slate-300">
+                    <h4 className="text-lg font-bold text-[#B22234] mb-2">Buying Tip</h4>
+                    <p className="text-slate-600">
                       If you&apos;re buying for silver value (not collecting), stick to &quot;junk&quot; bags of
                       common dates. Mercury dimes and Walking Liberties in bags trade near melt value—
                       you get beautiful historic coins without paying collector premiums.
@@ -488,25 +488,25 @@ export default function NinetyPercentCoinsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -517,7 +517,7 @@ export default function NinetyPercentCoinsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

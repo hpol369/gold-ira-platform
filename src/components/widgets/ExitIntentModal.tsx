@@ -67,12 +67,12 @@ export function ExitIntentModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="relative w-full max-w-md bg-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-white/10"
+            className="relative w-full max-w-md bg-[#000080]/95 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-white/20"
           >
             {/* Close button */}
             <button
               onClick={handleClose}
-              className="absolute top-4 right-4 p-2 text-slate-400 hover:text-white transition-colors z-20 rounded-full hover:bg-white/10"
+              className="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors z-20 rounded-full hover:bg-white/10"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -80,8 +80,8 @@ export function ExitIntentModal() {
 
             <div className="p-8 text-center">
               {/* Icon */}
-              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-amber-500/20 border border-amber-500/30 flex items-center justify-center">
-                <FileText className="w-8 h-8 text-amber-400" />
+              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#B22234]/20 border border-[#B22234]/30 flex items-center justify-center">
+                <FileText className="w-8 h-8 text-white" />
               </div>
 
               {/* Headline */}
@@ -90,22 +90,22 @@ export function ExitIntentModal() {
               </h2>
 
               {/* Subheadline */}
-              <p className="text-lg text-slate-300 mb-6">
-                Get our free <span className="text-amber-400 font-semibold">Gold IRA Investor's Guide</span>
+              <p className="text-lg text-white/80 mb-6">
+                Get our free <span className="text-white font-semibold">Gold IRA Investor's Guide</span>
               </p>
 
               {/* Benefits */}
               <ul className="text-left space-y-2 mb-8 max-w-xs mx-auto">
-                <li className="flex items-center gap-2 text-sm text-slate-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                <li className="flex items-center gap-2 text-sm text-white/80">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B22234] shrink-0" />
                   Learn how to protect your retirement from inflation
                 </li>
-                <li className="flex items-center gap-2 text-sm text-slate-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                <li className="flex items-center gap-2 text-sm text-white/80">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B22234] shrink-0" />
                   Discover the IRS-approved gold you can hold
                 </li>
-                <li className="flex items-center gap-2 text-sm text-slate-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                <li className="flex items-center gap-2 text-sm text-white/80">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B22234] shrink-0" />
                   Compare top Gold IRA companies side-by-side
                 </li>
               </ul>
@@ -113,10 +113,10 @@ export function ExitIntentModal() {
               {/* CTA Buttons */}
               <div className="space-y-3">
                 <Button
-                  variant="gold"
+                  variant="default"
                   size="lg"
                   asChild
-                  className="w-full shadow-lg"
+                  className="w-full shadow-lg bg-[#B22234] hover:bg-[#8b1c2a] text-white border-0"
                 >
                   <a
                     href={getTrackedLink(AFFILIATE_LINKS.augusta, "exit-intent-modal", "augusta")}
@@ -131,7 +131,7 @@ export function ExitIntentModal() {
                   variant="ghost"
                   size="default"
                   asChild
-                  className="w-full text-slate-400 hover:text-white"
+                  className="w-full text-white/70 hover:text-white hover:bg-white/10"
                 >
                   <Link href="/audit">
                     Or take our free portfolio audit
@@ -140,11 +140,11 @@ export function ExitIntentModal() {
               </div>
 
               {/* Dismissal text */}
-              <p className="mt-6 text-xs text-slate-500">
+              <p className="mt-6 text-xs text-white/50">
                 No thanks, I'll figure it out myself
                 <button
                   onClick={handleClose}
-                  className="ml-1 underline hover:text-slate-400 transition-colors"
+                  className="ml-1 underline hover:text-white/70 transition-colors"
                 >
                   Close
                 </button>

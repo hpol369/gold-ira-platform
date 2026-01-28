@@ -88,20 +88,20 @@ const custodians = [
 
 export default function RealEstateIraCustodiansPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+                <div className="absolute inset-0 bg-slate-50" />
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
 
                 <Container className="relative z-10">
                     {/* Breadcrumb */}
-                    <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
-                        <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                    <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6">
+                        <Link href="/" className="hover:text-[#000080] transition-colors">Home</Link>
                         <span>/</span>
-                        <Link href="/real-estate-ira" className="hover:text-white transition-colors">Real Estate IRA</Link>
+                        <Link href="/real-estate-ira" className="hover:text-[#000080] transition-colors">Real Estate IRA</Link>
                         <span>/</span>
-                        <span className="text-white">Best Custodians</span>
+                        <span className="text-[#000080]">Best Custodians</span>
                     </nav>
 
                     <div className="max-w-4xl">
@@ -110,12 +110,12 @@ export default function RealEstateIraCustodiansPage() {
                             <span className="text-emerald-400 text-sm font-medium">Custodian Comparison</span>
                         </div>
 
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000080] mb-6 leading-tight">
                             Best Real Estate IRA Custodians{" "}
                             <span className="text-emerald-400">(2026)</span>
                         </h1>
 
-                        <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
+                        <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
                             You've spent decades building your 401k or IRA. Now you're thinking about real estate—something you can see, touch, and understand. But your current broker won't let you buy property with retirement funds. You need a self-directed IRA custodian. Here's a no-BS comparison of your best options.
                         </p>
                     </div>
@@ -123,29 +123,29 @@ export default function RealEstateIraCustodiansPage() {
             </section>
 
             {/* Quick Comparison Table */}
-            <section className="py-12 bg-slate-800/50">
+            <section className="py-12 bg-slate-50">
                 <Container>
-                    <h2 className="text-2xl font-bold text-white mb-8">Quick Comparison</h2>
+                    <h2 className="text-2xl font-bold text-[#000080] mb-8">Quick Comparison</h2>
 
                     <div className="overflow-x-auto">
-                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
+                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl overflow-hidden">
                             <table className="w-full min-w-[800px]">
                                 <thead>
-                                    <tr className="border-b border-white/10">
-                                        <th className="text-left p-4 text-white font-semibold">Custodian</th>
-                                        <th className="text-center p-4 text-white font-semibold">Rating</th>
-                                        <th className="text-center p-4 text-white font-semibold">Setup Fee</th>
-                                        <th className="text-center p-4 text-white font-semibold">Monthly Fee</th>
-                                        <th className="text-center p-4 text-white font-semibold">Checkbook Control</th>
-                                        <th className="text-center p-4 text-white font-semibold">Best For</th>
+                                    <tr className="border-b border-slate-200">
+                                        <th className="text-left p-4 text-[#000080] font-semibold">Custodian</th>
+                                        <th className="text-center p-4 text-[#000080] font-semibold">Rating</th>
+                                        <th className="text-center p-4 text-[#000080] font-semibold">Setup Fee</th>
+                                        <th className="text-center p-4 text-[#000080] font-semibold">Monthly Fee</th>
+                                        <th className="text-center p-4 text-[#000080] font-semibold">Checkbook Control</th>
+                                        <th className="text-center p-4 text-[#000080] font-semibold">Best For</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {custodians.map((custodian, index) => (
-                                        <tr key={index} className={`border-b border-white/5 ${custodian.featured ? 'bg-emerald-500/5' : ''}`}>
+                                        <tr key={index} className={`border-b border-slate-100 ${custodian.featured ? 'bg-emerald-500/5' : ''}`}>
                                             <td className="p-4">
                                                 <div className="flex items-center gap-2">
-                                                    <span className="text-white font-semibold">{custodian.name}</span>
+                                                    <span className="text-[#000080] font-semibold">{custodian.name}</span>
                                                     {custodian.featured && (
                                                         <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full">Top Pick</span>
                                                     )}
@@ -153,12 +153,12 @@ export default function RealEstateIraCustodiansPage() {
                                             </td>
                                             <td className="p-4 text-center">
                                                 <div className="flex items-center justify-center gap-1">
-                                                    <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
-                                                    <span className="text-white">{custodian.rating}</span>
+                                                    <Star className="w-4 h-4 text-[#B22234] fill-amber-400" />
+                                                    <span className="text-[#000080]">{custodian.rating}</span>
                                                 </div>
                                             </td>
-                                            <td className="p-4 text-center text-slate-300">{custodian.setupFee}</td>
-                                            <td className="p-4 text-center text-slate-300">{custodian.monthlyFee}</td>
+                                            <td className="p-4 text-center text-slate-600">{custodian.setupFee}</td>
+                                            <td className="p-4 text-center text-slate-600">{custodian.monthlyFee}</td>
                                             <td className="p-4 text-center">
                                                 {custodian.checkbookControl ? (
                                                     <CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" />
@@ -166,7 +166,7 @@ export default function RealEstateIraCustodiansPage() {
                                                     <span className="text-slate-500">—</span>
                                                 )}
                                             </td>
-                                            <td className="p-4 text-center text-slate-400 text-sm">{custodian.bestFor}</td>
+                                            <td className="p-4 text-center text-slate-500 text-sm">{custodian.bestFor}</td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -177,15 +177,15 @@ export default function RealEstateIraCustodiansPage() {
             </section>
 
             {/* Detailed Reviews */}
-            <section className="py-12 bg-slate-900">
+            <section className="py-12 bg-white">
                 <Container>
-                    <h2 className="text-2xl font-bold text-white mb-8">Detailed Custodian Reviews</h2>
+                    <h2 className="text-2xl font-bold text-[#000080] mb-8">Detailed Custodian Reviews</h2>
 
                     <div className="space-y-8 max-w-4xl mx-auto">
                         {custodians.map((custodian, index) => (
                             <div
                                 key={index}
-                                className={`bg-white/5 backdrop-blur-sm border rounded-2xl p-8 ${custodian.featured ? 'border-emerald-500/30' : 'border-white/10'
+                                className={`bg-slate-50 backdrop-blur-sm border rounded-2xl p-8 ${custodian.featured ? 'border-emerald-500/30' : 'border-slate-200'
                                     }`}
                             >
                                 {custodian.featured && (
@@ -197,32 +197,32 @@ export default function RealEstateIraCustodiansPage() {
 
                                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                                     <div>
-                                        <h3 className="text-2xl font-bold text-white mb-2">{custodian.name}</h3>
-                                        <p className="text-slate-400">{custodian.description}</p>
+                                        <h3 className="text-2xl font-bold text-[#000080] mb-2">{custodian.name}</h3>
+                                        <p className="text-slate-500">{custodian.description}</p>
                                     </div>
-                                    <div className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg">
-                                        <Star className="w-5 h-5 text-amber-400 fill-amber-400" />
-                                        <span className="text-xl font-bold text-white">{custodian.rating}/5</span>
+                                    <div className="flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-lg">
+                                        <Star className="w-5 h-5 text-[#B22234] fill-amber-400" />
+                                        <span className="text-xl font-bold text-[#000080]">{custodian.rating}/5</span>
                                     </div>
                                 </div>
 
                                 {/* Key Details */}
                                 <div className="grid sm:grid-cols-4 gap-4 mb-6">
-                                    <div className="bg-white/5 rounded-lg p-3">
-                                        <div className="text-xs text-slate-400 mb-1">Setup Fee</div>
-                                        <div className="text-white font-semibold">{custodian.setupFee}</div>
+                                    <div className="bg-slate-50 rounded-lg p-3">
+                                        <div className="text-xs text-slate-500 mb-1">Setup Fee</div>
+                                        <div className="text-[#000080] font-semibold">{custodian.setupFee}</div>
                                     </div>
-                                    <div className="bg-white/5 rounded-lg p-3">
-                                        <div className="text-xs text-slate-400 mb-1">Monthly Fee</div>
-                                        <div className="text-white font-semibold text-sm">{custodian.monthlyFee}</div>
+                                    <div className="bg-slate-50 rounded-lg p-3">
+                                        <div className="text-xs text-slate-500 mb-1">Monthly Fee</div>
+                                        <div className="text-[#000080] font-semibold text-sm">{custodian.monthlyFee}</div>
                                     </div>
-                                    <div className="bg-white/5 rounded-lg p-3">
-                                        <div className="text-xs text-slate-400 mb-1">Minimum</div>
-                                        <div className="text-white font-semibold">{custodian.minInvestment}</div>
+                                    <div className="bg-slate-50 rounded-lg p-3">
+                                        <div className="text-xs text-slate-500 mb-1">Minimum</div>
+                                        <div className="text-[#000080] font-semibold">{custodian.minInvestment}</div>
                                     </div>
-                                    <div className="bg-white/5 rounded-lg p-3">
-                                        <div className="text-xs text-slate-400 mb-1">Checkbook Control</div>
-                                        <div className="text-white font-semibold">{custodian.checkbookControl ? 'Yes' : 'No'}</div>
+                                    <div className="bg-slate-50 rounded-lg p-3">
+                                        <div className="text-xs text-slate-500 mb-1">Checkbook Control</div>
+                                        <div className="text-[#000080] font-semibold">{custodian.checkbookControl ? 'Yes' : 'No'}</div>
                                     </div>
                                 </div>
 
@@ -234,7 +234,7 @@ export default function RealEstateIraCustodiansPage() {
                                         </h4>
                                         <ul className="space-y-2">
                                             {custodian.pros.map((pro, i) => (
-                                                <li key={i} className="flex items-start gap-2 text-slate-300 text-sm">
+                                                <li key={i} className="flex items-start gap-2 text-slate-600 text-sm">
                                                     <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
                                                     {pro}
                                                 </li>
@@ -242,10 +242,10 @@ export default function RealEstateIraCustodiansPage() {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="text-slate-400 font-semibold mb-3">Cons</h4>
+                                        <h4 className="text-slate-500 font-semibold mb-3">Cons</h4>
                                         <ul className="space-y-2">
                                             {custodian.cons.map((con, i) => (
-                                                <li key={i} className="flex items-start gap-2 text-slate-400 text-sm">
+                                                <li key={i} className="flex items-start gap-2 text-slate-500 text-sm">
                                                     <span className="text-slate-500">•</span>
                                                     {con}
                                                 </li>
@@ -271,10 +271,10 @@ export default function RealEstateIraCustodiansPage() {
             </section>
 
             {/* What to Look For */}
-            <section className="py-12 bg-slate-800/50">
+            <section className="py-12 bg-slate-50">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold text-white mb-8 text-center">
+                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
                             What to Look for in a Custodian (Before You Trust Them with Your Life Savings)
                         </h2>
 
@@ -311,10 +311,10 @@ export default function RealEstateIraCustodiansPage() {
                                     description: "Ensure they allow the specific type of real estate you want to invest in (rentals, land, notes, etc.)."
                                 }
                             ].map((item, index) => (
-                                <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                     <item.icon className="w-8 h-8 text-emerald-400 mb-4" />
-                                    <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                                    <p className="text-slate-400 text-sm">{item.description}</p>
+                                    <h3 className="text-lg font-bold text-[#000080] mb-2">{item.title}</h3>
+                                    <p className="text-slate-500 text-sm">{item.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -323,13 +323,13 @@ export default function RealEstateIraCustodiansPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-12 bg-slate-900">
+            <section className="py-12 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-2xl font-bold text-white mb-6">
+                        <h2 className="text-2xl font-bold text-[#000080] mb-6">
                             Ready to Use Your IRA for Real Estate?
                         </h2>
-                        <p className="text-lg text-slate-300 mb-8">
+                        <p className="text-lg text-slate-600 mb-8">
                             You've built your nest egg through years of hard work. A self-directed IRA lets you invest in something real—property that generates rental income and grows in value. No more watching Wall Street play games with your money.
                         </p>
 
@@ -355,9 +355,9 @@ export default function RealEstateIraCustodiansPage() {
             </section>
 
             {/* Related Content */}
-            <section className="py-12 bg-slate-800/50">
+            <section className="py-12 bg-slate-50">
                 <Container>
-                    <h2 className="text-xl font-bold text-white mb-6 text-center">Related Resources</h2>
+                    <h2 className="text-xl font-bold text-[#000080] mb-6 text-center">Related Resources</h2>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
                         {[
@@ -369,12 +369,12 @@ export default function RealEstateIraCustodiansPage() {
                             <Link
                                 key={index}
                                 href={link.href}
-                                className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                                className="bg-slate-50 border border-slate-200 rounded-xl p-4 hover:bg-white/10 transition-colors group"
                             >
-                                <h3 className="text-white font-semibold mb-1 group-hover:text-emerald-400 transition-colors text-sm">
+                                <h3 className="text-[#000080] font-semibold mb-1 group-hover:text-emerald-400 transition-colors text-sm">
                                     {link.title}
                                 </h3>
-                                <p className="text-slate-400 text-xs">{link.desc}</p>
+                                <p className="text-slate-500 text-xs">{link.desc}</p>
                             </Link>
                         ))}
                     </div>

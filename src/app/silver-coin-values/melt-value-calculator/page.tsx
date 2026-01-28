@@ -118,32 +118,32 @@ export default function MeltValueCalculatorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-20 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-coin-values"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6 ml-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/20 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6 ml-4">
               <Star className="h-4 w-4" />
               INTERACTIVE TOOL - 1,200 SEARCHES
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Silver Melt Value Calculator
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mb-8">
+            <p className="text-xl text-slate-600 max-w-2xl mb-8">
               Calculate the true silver value of any coin instantly.
               Enter your coin type, quantity, and current spot price to discover
-              <span className="text-amber-400 font-semibold"> what your silver is really worth</span> -
+              <span className="text-[#B22234] font-semibold"> what your silver is really worth</span> -
               not what the banks want you to think.
             </p>
           </div>
@@ -151,17 +151,17 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* Calculator Section */}
-      <section className="py-12 bg-slate-900">
+      <section className="py-12 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
+            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                  <Calculator className="h-6 w-6 text-amber-400" />
+                <div className="w-12 h-12 bg-[#B22234]/20 rounded-xl flex items-center justify-center">
+                  <Calculator className="h-6 w-6 text-[#B22234]" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-white">Melt Value Calculator</h2>
-                  <p className="text-slate-400 text-sm">Calculate the silver content value of your coins</p>
+                  <h2 className="text-xl font-bold text-slate-900">Melt Value Calculator</h2>
+                  <p className="text-slate-600 text-sm">Calculate the silver content value of your coins</p>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@ export default function MeltValueCalculatorPage() {
                 <div className="space-y-5">
                   {/* Coin Type Selector */}
                   <div>
-                    <label className="block text-white font-semibold mb-2">
+                    <label className="block text-slate-900 font-semibold mb-2">
                       Coin Type
                     </label>
                     <div className="relative">
@@ -180,7 +180,7 @@ export default function MeltValueCalculatorPage() {
                           const coin = coinTypes.find(c => c.id === e.target.value);
                           if (coin) setSelectedCoin(coin);
                         }}
-                        className="w-full bg-slate-800 border border-white/20 rounded-xl px-4 py-3 text-white appearance-none focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500"
+                        className="w-full bg-slate-800 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 appearance-none focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500"
                       >
                         {coinTypes.map((coin) => (
                           <option key={coin.id} value={coin.id}>
@@ -188,16 +188,16 @@ export default function MeltValueCalculatorPage() {
                           </option>
                         ))}
                       </select>
-                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 pointer-events-none" />
+                      <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-600 pointer-events-none" />
                     </div>
-                    <p className="text-xs text-slate-500 mt-1">
+                    <p className="text-xs text-slate-600 mt-1">
                       {selectedCoin.purity}% silver, {selectedCoin.silverOz} oz per coin
                     </p>
                   </div>
 
                   {/* Quantity Input */}
                   <div>
-                    <label className="block text-white font-semibold mb-2">
+                    <label className="block text-slate-900 font-semibold mb-2">
                       Quantity
                     </label>
                     <input
@@ -206,17 +206,17 @@ export default function MeltValueCalculatorPage() {
                       max="100000"
                       value={quantity}
                       onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
-                      className="w-full bg-slate-800 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500"
+                      className="w-full bg-slate-800 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500"
                     />
                   </div>
 
                   {/* Spot Price Input */}
                   <div>
-                    <label className="block text-white font-semibold mb-2">
+                    <label className="block text-slate-900 font-semibold mb-2">
                       Silver Spot Price ($/oz)
                     </label>
                     <div className="relative">
-                      <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">$</span>
+                      <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600">$</span>
                       <input
                         type="number"
                         min="1"
@@ -224,10 +224,10 @@ export default function MeltValueCalculatorPage() {
                         step="0.01"
                         value={spotPrice}
                         onChange={(e) => setSpotPrice(Math.max(1, parseFloat(e.target.value) || 25))}
-                        className="w-full bg-slate-800 border border-white/20 rounded-xl pl-8 pr-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500"
+                        className="w-full bg-slate-800 border border-slate-300 rounded-xl pl-8 pr-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500"
                       />
                     </div>
-                    <p className="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                    <p className="text-xs text-slate-600 mt-1 flex items-center gap-1">
                       <Info className="h-3 w-3" />
                       Check Kitco or APMEX for current spot prices
                     </p>
@@ -237,14 +237,14 @@ export default function MeltValueCalculatorPage() {
                   <div className="flex gap-3 pt-2">
                     <button
                       onClick={handleCalculate}
-                      className="flex-1 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2"
+                      className="flex-1 bg-gradient-to-r from-[#B22234] to-[#8b1c2a] hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2"
                     >
                       <Calculator className="h-5 w-5" />
                       Calculate Value
                     </button>
                     <button
                       onClick={handleReset}
-                      className="bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-4 rounded-xl transition-all"
+                      className="bg-slate-100 hover:bg-white/20 text-slate-900 font-semibold py-3 px-4 rounded-xl transition-all"
                     >
                       <RefreshCw className="h-5 w-5" />
                     </button>
@@ -253,41 +253,41 @@ export default function MeltValueCalculatorPage() {
 
                 {/* Right Column - Results */}
                 <div className={`transition-all duration-300 ${showResults ? 'opacity-100' : 'opacity-50'}`}>
-                  <div className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/30 rounded-xl p-6 h-full">
-                    <h3 className="text-lg font-bold text-amber-400 mb-4">Results</h3>
+                  <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6 h-full">
+                    <h3 className="text-lg font-bold text-[#B22234] mb-4">Results</h3>
 
                     {/* Main Result */}
                     <div className="mb-6">
-                      <p className="text-slate-400 text-sm mb-1">Total Melt Value</p>
-                      <p className="text-4xl font-bold text-white">
+                      <p className="text-slate-600 text-sm mb-1">Total Melt Value</p>
+                      <p className="text-4xl font-bold text-slate-900">
                         ${calculations.totalMeltValue.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                       </p>
                     </div>
 
                     {/* Breakdown */}
-                    <div className="space-y-3 pt-4 border-t border-white/10">
+                    <div className="space-y-3 pt-4 border-t border-slate-200">
                       <div className="flex justify-between text-sm">
-                        <span className="text-slate-400">Value per coin:</span>
-                        <span className="text-white font-semibold">
+                        <span className="text-slate-600">Value per coin:</span>
+                        <span className="text-slate-900 font-semibold">
                           ${calculations.meltValuePer.toFixed(2)}
                         </span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-slate-400">Total silver content:</span>
-                        <span className="text-white font-semibold">
+                        <span className="text-slate-600">Total silver content:</span>
+                        <span className="text-slate-900 font-semibold">
                           {calculations.totalSilverOz.toFixed(4)} oz
                         </span>
                       </div>
                       {calculations.totalFaceValue > 0 && (
                         <div className="flex justify-between text-sm">
-                          <span className="text-slate-400">Total face value:</span>
-                          <span className="text-white font-semibold">
+                          <span className="text-slate-600">Total face value:</span>
+                          <span className="text-slate-900 font-semibold">
                             ${calculations.totalFaceValue.toFixed(2)}
                           </span>
                         </div>
                       )}
-                      <div className="flex justify-between text-sm pt-2 border-t border-white/10">
-                        <span className="text-slate-400">Value over face:</span>
+                      <div className="flex justify-between text-sm pt-2 border-t border-slate-200">
+                        <span className="text-slate-600">Value over face:</span>
                         <span className="text-green-400 font-semibold">
                           {calculations.totalFaceValue > 0
                             ? `${((calculations.totalMeltValue / calculations.totalFaceValue - 1) * 100).toFixed(0)}% more`
@@ -298,9 +298,9 @@ export default function MeltValueCalculatorPage() {
                     </div>
 
                     {/* Premium Note */}
-                    <div className="mt-4 p-3 bg-white/5 rounded-lg">
-                      <p className="text-xs text-slate-400">
-                        <span className="text-amber-400 font-semibold">Note:</span> Actual selling prices
+                    <div className="mt-4 p-3 bg-slate-50 rounded-lg">
+                      <p className="text-xs text-slate-600">
+                        <span className="text-[#B22234] font-semibold">Note:</span> Actual selling prices
                         are typically 5-15% above melt value for common coins. Key dates and
                         high-grade specimens can command much higher premiums.
                       </p>
@@ -314,28 +314,28 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* Quick Reference */}
-      <section className="py-12 bg-slate-800/50">
+      <section className="py-12 bg-slate-50">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Quick Reference: Silver Content by Coin
             </h2>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[600px] text-sm">
                 <thead className="bg-slate-800/80">
                   <tr>
-                    <th className="text-left p-4 text-white font-bold">Coin Type</th>
-                    <th className="text-center p-4 text-white font-bold">Silver Content</th>
-                    <th className="text-center p-4 text-white font-bold">Purity</th>
-                    <th className="text-center p-4 text-amber-400 font-bold">Melt @ $25/oz</th>
+                    <th className="text-left p-4 text-slate-900 font-bold">Coin Type</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Silver Content</th>
+                    <th className="text-center p-4 text-slate-900 font-bold">Purity</th>
+                    <th className="text-center p-4 text-[#B22234] font-bold">Melt @ $25/oz</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/10">
+                <tbody className="divide-y divide-slate-200">
                   {coinTypes.slice(0, 13).map((coin) => (
                     <tr key={coin.id}>
-                      <td className="p-4 text-white">{coin.name}</td>
-                      <td className="p-4 text-center text-slate-300">{coin.silverOz} oz</td>
-                      <td className="p-4 text-center text-slate-400">{coin.purity}%</td>
+                      <td className="p-4 text-slate-900">{coin.name}</td>
+                      <td className="p-4 text-center text-slate-600">{coin.silverOz} oz</td>
+                      <td className="p-4 text-center text-slate-600">{coin.purity}%</td>
                       <td className="p-4 text-center text-green-400 font-semibold">
                         ${(coin.silverOz * 25).toFixed(2)}
                       </td>
@@ -349,48 +349,48 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               How Melt Value Is Calculated
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <div className="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-xl font-bold text-amber-400">1</span>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <div className="w-12 h-12 bg-[#B22234]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-xl font-bold text-[#B22234]">1</span>
                 </div>
-                <h3 className="text-white font-bold mb-2">Silver Content</h3>
-                <p className="text-slate-400 text-sm">
+                <h3 className="text-slate-900 font-bold mb-2">Silver Content</h3>
+                <p className="text-slate-600 text-sm">
                   Each coin has a specific amount of pure silver. A Morgan dollar contains
                   0.7734 oz, while a dime contains 0.0723 oz.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <div className="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-xl font-bold text-amber-400">2</span>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <div className="w-12 h-12 bg-[#B22234]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-xl font-bold text-[#B22234]">2</span>
                 </div>
-                <h3 className="text-white font-bold mb-2">Spot Price</h3>
-                <p className="text-slate-400 text-sm">
+                <h3 className="text-slate-900 font-bold mb-2">Spot Price</h3>
+                <p className="text-slate-600 text-sm">
                   The spot price is the current market price for one troy ounce of silver.
                   It fluctuates based on supply, demand, and economic factors.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <div className="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-xl font-bold text-amber-400">3</span>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <div className="w-12 h-12 bg-[#B22234]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-xl font-bold text-[#B22234]">3</span>
                 </div>
-                <h3 className="text-white font-bold mb-2">The Formula</h3>
-                <p className="text-slate-400 text-sm">
+                <h3 className="text-slate-900 font-bold mb-2">The Formula</h3>
+                <p className="text-slate-600 text-sm">
                   Melt Value = Silver Content x Spot Price x Quantity.
                   This gives you the intrinsic metal value of your coins.
                 </p>
               </div>
             </div>
-            <div className="mt-8 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-4">
-              <p className="text-slate-300 text-sm">
-                <span className="font-semibold text-white">Pro Tip:</span> For 90% silver coins,
-                you can also use this shortcut: <span className="text-amber-400 font-mono">Face Value x 0.7234 x Spot Price</span>.
+            <div className="mt-8 bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-4">
+              <p className="text-slate-600 text-sm">
+                <span className="font-semibold text-slate-900">Pro Tip:</span> For 90% silver coins,
+                you can also use this shortcut: <span className="text-[#B22234] font-mono">Face Value x 0.7234 x Spot Price</span>.
                 This works because all 90% silver coins contain the same silver-to-face-value ratio.
               </p>
             </div>
@@ -399,25 +399,25 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {schema.mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -428,40 +428,40 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-slate-900">
+      <section className="py-12 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold text-white text-center mb-6">
+            <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
               Explore Silver Coin Values
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <Link
                 href="/silver-coin-values/morgan-dollar"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
               >
-                <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors">Morgan Dollars</h3>
-                <p className="text-sm text-slate-400">1878-1921 values</p>
+                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Morgan Dollars</h3>
+                <p className="text-sm text-slate-600">1878-1921 values</p>
               </Link>
               <Link
                 href="/silver-coin-values/peace-dollar"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
               >
-                <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors">Peace Dollars</h3>
-                <p className="text-sm text-slate-400">1921-1935 values</p>
+                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Peace Dollars</h3>
+                <p className="text-sm text-slate-600">1921-1935 values</p>
               </Link>
               <Link
                 href="/silver-coin-values/junk-silver"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
               >
-                <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors">Junk Silver</h3>
-                <p className="text-sm text-slate-400">Constitutional silver</p>
+                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Junk Silver</h3>
+                <p className="text-sm text-slate-600">Constitutional silver</p>
               </Link>
               <Link
                 href="/silver-coin-values"
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
               >
-                <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors">All Coin Values</h3>
-                <p className="text-sm text-slate-400">Complete guide</p>
+                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">All Coin Values</h3>
+                <p className="text-sm text-slate-600">Complete guide</p>
               </Link>
             </div>
           </div>
@@ -469,7 +469,7 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

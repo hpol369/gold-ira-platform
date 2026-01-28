@@ -80,21 +80,21 @@ const schema = {
 
 export default function AboutUsPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero - The Manifesto */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[150px]" />
+          <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-[#B22234]/5 rounded-full blur-[150px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               {/* Photo */}
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl border-4 border-amber-500/30 shadow-2xl overflow-hidden flex-shrink-0 bg-slate-700">
-                <div className="w-full h-full flex items-center justify-center text-slate-500">
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl border-4 border-[#B22234]/30 shadow-2xl overflow-hidden flex-shrink-0 bg-slate-200">
+                <div className="w-full h-full flex items-center justify-center text-slate-400">
                   {/* Placeholder - replace with actual photo */}
                   <Users className="w-20 h-20 opacity-50" />
                 </div>
@@ -102,16 +102,16 @@ export default function AboutUsPage() {
 
               {/* Intro */}
               <div className="text-center md:text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 text-xs font-semibold mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] text-xs font-semibold mb-4">
                   <Briefcase className="h-3 w-3" />
                   20+ YEARS IN FINANCE
                 </div>
-                <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h1 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4">
                   I&apos;m Thomas Richardson.
                 </h1>
-                <p className="text-xl text-slate-300 leading-relaxed">
+                <p className="text-xl text-slate-600 leading-relaxed">
                   I got sick of watching scammers prey on retirees.
-                  <span className="text-white font-semibold">
+                  <span className="text-[#000080] font-semibold">
                     {" "}This site is my response.
                   </span>
                 </p>
@@ -122,13 +122,13 @@ export default function AboutUsPage() {
       </section>
 
       {/* The Story */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:font-bold prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
-              <h2 className="text-2xl text-white flex items-center gap-3 not-prose mb-6">
+            <article className="prose prose-lg prose-slate prose-headings:font-bold prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 max-w-none">
+              <h2 className="text-2xl text-[#000080] flex items-center gap-3 not-prose mb-6">
                 <div className="p-2 bg-red-500/20 rounded-lg">
-                  <AlertTriangle className="h-5 w-5 text-red-400" />
+                  <AlertTriangle className="h-5 w-5 text-red-500" />
                 </div>
                 The Moment I Snapped
               </h2>
@@ -152,30 +152,30 @@ export default function AboutUsPage() {
                 realized I couldn&apos;t stay silent anymore.
               </p>
 
-              <h2 className="text-2xl text-white flex items-center gap-3 not-prose mt-12 mb-6">
-                <div className="p-2 bg-amber-500/20 rounded-lg">
-                  <Scale className="h-5 w-5 text-amber-400" />
+              <h2 className="text-2xl text-[#000080] flex items-center gap-3 not-prose mt-12 mb-6">
+                <div className="p-2 bg-[#B22234]/10 rounded-lg">
+                  <Scale className="h-5 w-5 text-[#B22234]" />
                 </div>
                 The Problem: Two Dangerous Extremes
               </h2>
 
               <div className="grid md:grid-cols-2 gap-4 not-prose my-8">
-                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-5">
-                  <div className="flex items-center gap-2 text-red-400 font-bold mb-2">
+                <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+                  <div className="flex items-center gap-2 text-red-600 font-bold mb-2">
                     <XCircle className="h-5 w-5" />
                     The Gold Sharks
                   </div>
-                  <p className="text-slate-400 text-sm m-0">
+                  <p className="text-slate-500 text-sm m-0">
                     Use fear tactics. Push overpriced coins. Pressure seniors
                     into bad decisions. Give the whole industry a bad name.
                   </p>
                 </div>
-                <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-5">
-                  <div className="flex items-center gap-2 text-blue-400 font-bold mb-2">
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                  <div className="flex items-center gap-2 text-blue-600 font-bold mb-2">
                     <XCircle className="h-5 w-5" />
                     The Traditionalists
                   </div>
-                  <p className="text-slate-400 text-sm m-0">
+                  <p className="text-slate-500 text-sm m-0">
                     Dismiss gold entirely. Keep you 100% in stocks and bonds.
                     Leave you exposed when inflation spikes and markets crash.
                   </p>
@@ -189,9 +189,9 @@ export default function AboutUsPage() {
                 investigation of the companies in this space.
               </p>
 
-              <h2 className="text-2xl text-white flex items-center gap-3 not-prose mt-12 mb-6">
-                <div className="p-2 bg-green-500/20 rounded-lg">
-                  <ShieldCheck className="h-5 w-5 text-green-400" />
+              <h2 className="text-2xl text-[#000080] flex items-center gap-3 not-prose mt-12 mb-6">
+                <div className="p-2 bg-green-100 rounded-lg">
+                  <ShieldCheck className="h-5 w-5 text-green-600" />
                 </div>
                 What I Actually Do
               </h2>
@@ -206,7 +206,7 @@ export default function AboutUsPage() {
                   <strong>I call out the bad actors</strong>—companies with
                   lawsuits, deceptive pricing, or aggressive sales tactics. See
                   our{" "}
-                  <Link href="/investigative-hub" className="text-amber-400">
+                  <Link href="/investigative-hub" className="text-[#B22234]">
                     Investigative Hub
                   </Link>
                   .
@@ -218,7 +218,7 @@ export default function AboutUsPage() {
                 </li>
                 <li>
                   <strong>I teach</strong>—through our{" "}
-                  <Link href="/academy" className="text-amber-400">
+                  <Link href="/academy" className="text-[#B22234]">
                     Gold IRA Academy
                   </Link>
                   , guides, and comparison tools. Free, no strings attached.
@@ -230,39 +230,39 @@ export default function AboutUsPage() {
       </section>
 
       {/* My Credentials */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
               My Background
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-2">20+</div>
-                <div className="text-white font-semibold mb-1">
+              <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-[#B22234] mb-2">20+</div>
+                <div className="text-[#000080] font-semibold mb-1">
                   Years in Finance
                 </div>
-                <p className="text-slate-400 text-sm">
+                <p className="text-slate-500 text-sm">
                   Wealth management, retirement planning, portfolio construction
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-2">15+</div>
-                <div className="text-white font-semibold mb-1">
+              <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-[#B22234] mb-2">15+</div>
+                <div className="text-[#000080] font-semibold mb-1">
                   Companies Investigated
                 </div>
-                <p className="text-slate-400 text-sm">
+                <p className="text-slate-500 text-sm">
                   Deep dives into fees, complaints, lawsuits, and business
                   practices
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-2">0</div>
-                <div className="text-white font-semibold mb-1">
+              <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-[#B22234] mb-2">0</div>
+                <div className="text-[#000080] font-semibold mb-1">
                   Sales Pressure
                 </div>
-                <p className="text-slate-400 text-sm">
+                <p className="text-slate-500 text-sm">
                   Education first. I&apos;ll tell you when gold ISN&apos;T
                   right for you.
                 </p>
@@ -273,23 +273,23 @@ export default function AboutUsPage() {
       </section>
 
       {/* How We Make Money (Transparency) */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
               How I Keep the Lights On
             </h2>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
-              <p className="text-slate-300 text-lg mb-6">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-8">
+              <p className="text-slate-600 text-lg mb-6">
                 Let me be direct: I earn referral fees when you request
                 information from companies I recommend. That&apos;s how this
                 site exists.
               </p>
 
-              <p className="text-slate-300 text-lg mb-6">
+              <p className="text-slate-600 text-lg mb-6">
                 But here&apos;s my promise:{" "}
-                <span className="text-white font-semibold">
+                <span className="text-[#000080] font-semibold">
                   I will never recommend a company I wouldn&apos;t trust with my
                   own father&apos;s retirement.
                 </span>
@@ -297,29 +297,29 @@ export default function AboutUsPage() {
 
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-600">
                     Rankings are based on research, not who pays the most
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-600">
                     I publish negative reviews of companies with problems
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">
+                  <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-600">
                     I&apos;ll tell you when a Gold IRA isn&apos;t right for your
                     situation
                   </span>
                 </div>
               </div>
 
-              <p className="text-slate-400 mt-6">
+              <p className="text-slate-500 mt-6">
                 Read our full{" "}
-                <Link href="/editorial-policy" className="text-amber-400 hover:underline">
+                <Link href="/editorial-policy" className="text-[#B22234] hover:underline">
                   Editorial Policy
                 </Link>{" "}
                 for details on how we research and rate companies.
@@ -330,10 +330,10 @@ export default function AboutUsPage() {
       </section>
 
       {/* What I Stand Against */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
               What I Stand Against
             </h2>
 
@@ -348,17 +348,17 @@ export default function AboutUsPage() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 bg-red-500/10 border border-red-500/20 rounded-lg px-5 py-3"
+                  className="flex items-center gap-3 bg-red-50 border border-red-200 rounded-lg px-5 py-3"
                 >
-                  <XCircle className="h-5 w-5 text-red-400 flex-shrink-0" />
-                  <span className="text-slate-300">{item}</span>
+                  <XCircle className="h-5 w-5 text-red-500 flex-shrink-0" />
+                  <span className="text-slate-600">{item}</span>
                 </div>
               ))}
             </div>
 
-            <p className="text-center text-slate-400 mt-8">
+            <p className="text-center text-slate-500 mt-8">
               If you&apos;ve experienced any of these, report it to our{" "}
-              <Link href="/scams" className="text-amber-400 hover:underline">
+              <Link href="/scams" className="text-[#B22234] hover:underline">
                 Scam Protection Center
               </Link>
               .
@@ -368,13 +368,13 @@ export default function AboutUsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">
+            <h2 className="text-2xl font-bold text-[#000080] mb-4">
               Ready to Do Your Own Research?
             </h2>
-            <p className="text-slate-400 mb-8">
+            <p className="text-slate-500 mb-8">
               Start with our guides. No sales pitch, no pressure—just the
               information you need to make an informed decision.
             </p>
@@ -389,7 +389,7 @@ export default function AboutUsPage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white/20 text-white hover:bg-white/10"
+                className="border-slate-300 text-[#000080] hover:bg-slate-50"
                 asChild
               >
                 <Link href="/best-gold-ira-companies">

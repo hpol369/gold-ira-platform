@@ -110,29 +110,29 @@ const approvedRefiners = [
 
 export default function GoodDeliveryPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/20 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <Building2 className="h-4 w-4" />
               30 MONTHLY SEARCHES - $1.90 CPC
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Good Delivery Silver Bars: The LBMA Standard
             </h1>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-slate-600 mb-8">
               &quot;Good Delivery&quot; is the gold standard for silver bars—literally. These LBMA-certified
               1000 oz bars are the backbone of the global silver market, traded between central
               banks, bullion banks, and institutional investors.
@@ -146,7 +146,7 @@ export default function GoodDeliveryPage() {
                 <CheckCircle className="h-4 w-4" />
                 Lowest Premiums
               </span>
-              <span className="flex items-center gap-2 text-amber-400">
+              <span className="flex items-center gap-2 text-[#B22234]">
                 <Landmark className="h-4 w-4" />
                 Institutional Grade
               </span>
@@ -156,29 +156,29 @@ export default function GoodDeliveryPage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-800/50">
+      <section className="py-12 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Scale className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">750-1100</div>
-                <div className="text-sm text-slate-400">Troy Ounces</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Scale className="h-8 w-8 text-slate-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">750-1100</div>
+                <div className="text-sm text-slate-600">Troy Ounces</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                 <Shield className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">.999+</div>
-                <div className="text-sm text-slate-400">Minimum Purity</div>
+                <div className="text-2xl font-bold text-slate-900">.999+</div>
+                <div className="text-sm text-slate-600">Minimum Purity</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">1-3%</div>
-                <div className="text-sm text-slate-400">Premium</div>
+                <div className="text-2xl font-bold text-slate-900">1-3%</div>
+                <div className="text-sm text-slate-600">Premium</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
-                <Globe className="h-8 w-8 text-amber-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">Global</div>
-                <div className="text-sm text-slate-400">Acceptance</div>
+              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+                <Globe className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-slate-900">Global</div>
+                <div className="text-sm text-slate-600">Acceptance</div>
               </div>
             </div>
           </div>
@@ -186,26 +186,26 @@ export default function GoodDeliveryPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
               {/* What is Good Delivery */}
-              <div className="not-prose bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-amber-500/20 rounded-lg">
-                    <Award className="h-6 w-6 text-amber-400" />
+                  <div className="p-2 bg-[#B22234]/20 rounded-lg">
+                    <Award className="h-6 w-6 text-[#B22234]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-white m-0">What is Good Delivery?</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 m-0">What is Good Delivery?</h2>
                 </div>
-                <p className="text-slate-300 mb-4">
+                <p className="text-slate-600 mb-4">
                   &quot;Good Delivery&quot; is a quality standard established by the London Bullion Market
                   Association (LBMA). It specifies the exact requirements a silver bar must meet
                   to be accepted for trading in the London wholesale market—the world&apos;s largest
                   over-the-counter market for precious metals.
                 </p>
-                <p className="text-slate-300">
+                <p className="text-slate-600">
                   When a bar is &quot;Good Delivery,&quot; it means any LBMA member will accept it without
                   question. This fungibility is what makes the global silver market work—a Good
                   Delivery bar in London is equivalent to one in Zurich or Hong Kong.
@@ -213,56 +213,56 @@ export default function GoodDeliveryPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-400" />
+                <Scale className="h-6 w-6 text-slate-600" />
                 Good Delivery Specifications
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                  <thead className="bg-slate-800/50">
+                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <thead className="bg-slate-50">
                     <tr>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Requirement</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">LBMA Good Delivery</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">COMEX Deliverable</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Requirement</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">LBMA Good Delivery</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">COMEX Deliverable</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/10 text-sm">
+                  <tbody className="divide-y divide-slate-200 text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-white">Weight Range</td>
-                      <td className="p-4 text-slate-300">750-1,100 troy oz (ideal: 900-1,100)</td>
-                      <td className="p-4 text-slate-300">1,000 oz +/- 6%</td>
+                      <td className="p-4 font-semibold text-slate-900">Weight Range</td>
+                      <td className="p-4 text-slate-600">750-1,100 troy oz (ideal: 900-1,100)</td>
+                      <td className="p-4 text-slate-600">1,000 oz +/- 6%</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Minimum Purity</td>
+                      <td className="p-4 font-semibold text-slate-900">Minimum Purity</td>
                       <td className="p-4 text-green-400">.999 fine (99.9%)</td>
                       <td className="p-4 text-green-400">.999 fine (99.9%)</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Required Markings</td>
-                      <td className="p-4 text-slate-300">Serial #, refiner, fineness, year, weight</td>
-                      <td className="p-4 text-slate-300">Serial #, refiner, fineness, weight</td>
+                      <td className="p-4 font-semibold text-slate-900">Required Markings</td>
+                      <td className="p-4 text-slate-600">Serial #, refiner, fineness, year, weight</td>
+                      <td className="p-4 text-slate-600">Serial #, refiner, fineness, weight</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Refiner Requirement</td>
-                      <td className="p-4 text-slate-300">LBMA Good Delivery List</td>
-                      <td className="p-4 text-slate-300">COMEX-approved brands</td>
+                      <td className="p-4 font-semibold text-slate-900">Refiner Requirement</td>
+                      <td className="p-4 text-slate-600">LBMA Good Delivery List</td>
+                      <td className="p-4 text-slate-600">COMEX-approved brands</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Appearance</td>
-                      <td className="p-4 text-slate-300">No cavities, cracks, or excessive defects</td>
-                      <td className="p-4 text-slate-300">No specific requirements</td>
+                      <td className="p-4 font-semibold text-slate-900">Appearance</td>
+                      <td className="p-4 text-slate-600">No cavities, cracks, or excessive defects</td>
+                      <td className="p-4 text-slate-600">No specific requirements</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Physical Weight</td>
-                      <td className="p-4 text-slate-300">~62-75 lbs (28-34 kg)</td>
-                      <td className="p-4 text-slate-300">~62-75 lbs (28-34 kg)</td>
+                      <td className="p-4 font-semibold text-slate-900">Physical Weight</td>
+                      <td className="p-4 text-slate-600">~62-75 lbs (28-34 kg)</td>
+                      <td className="p-4 text-slate-600">~62-75 lbs (28-34 kg)</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Building2 className="h-6 w-6 text-slate-400" />
+                <Building2 className="h-6 w-6 text-slate-600" />
                 LBMA-Accredited Refiners
               </h2>
 
@@ -272,24 +272,24 @@ export default function GoodDeliveryPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                  <thead className="bg-slate-800/50">
+                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <thead className="bg-slate-50">
                     <tr>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Refiner</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Country</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Status</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Refiner</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Country</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Status</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/10 text-sm">
+                  <tbody className="divide-y divide-slate-200 text-sm">
                     {approvedRefiners.map((refiner) => (
                       <tr key={refiner.name}>
-                        <td className="p-4 font-semibold text-white">{refiner.name}</td>
-                        <td className="p-4 text-slate-300">{refiner.country}</td>
+                        <td className="p-4 font-semibold text-slate-900">{refiner.name}</td>
+                        <td className="p-4 text-slate-600">{refiner.country}</td>
                         <td className="p-4">
                           <span className={`px-2 py-1 rounded text-xs ${
                             refiner.status === "Active"
                               ? "bg-green-500/20 text-green-400"
-                              : "bg-slate-500/20 text-slate-400"
+                              : "bg-[#B22234]/10 text-slate-600"
                           }`}>
                             {refiner.status}
                           </span>
@@ -306,9 +306,9 @@ export default function GoodDeliveryPage() {
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                   <h3 className="text-lg font-bold text-green-400 mb-4">Lowest Cost Per Ounce</h3>
-                  <ul className="space-y-3 text-slate-300">
+                  <ul className="space-y-3 text-slate-600">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Manufacturing costs spread over 1000 oz</span>
@@ -327,23 +327,23 @@ export default function GoodDeliveryPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-amber-400 mb-4">Trade-offs</h3>
-                  <ul className="space-y-3 text-slate-300">
+                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#B22234] mb-4">Trade-offs</h3>
+                  <ul className="space-y-3 text-slate-600">
                     <li className="flex items-start gap-3">
-                      <XCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                       <span>High minimum investment (~$25,000)</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <XCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                       <span>Requires specialized storage</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <XCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                       <span>Not divisible (all-or-nothing)</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <XCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                       <span>Heavy (~70 lbs) - impractical for home</span>
                     </li>
                   </ul>
@@ -351,7 +351,7 @@ export default function GoodDeliveryPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Landmark className="h-6 w-6 text-slate-400" />
+                <Landmark className="h-6 w-6 text-slate-600" />
                 Institutional vs Retail Markets
               </h2>
 
@@ -361,39 +361,39 @@ export default function GoodDeliveryPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                  <thead className="bg-slate-800/50">
+                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <thead className="bg-slate-50">
                     <tr>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Aspect</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Institutional</th>
-                      <th className="p-4 border-b border-white/10 font-bold text-white">Retail</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Aspect</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Institutional</th>
+                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Retail</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/10 text-sm">
+                  <tbody className="divide-y divide-slate-200 text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-white">Typical Buyer</td>
-                      <td className="p-4 text-slate-300">Banks, ETFs, governments</td>
-                      <td className="p-4 text-slate-300">High-net-worth individuals, IRA holders</td>
+                      <td className="p-4 font-semibold text-slate-900">Typical Buyer</td>
+                      <td className="p-4 text-slate-600">Banks, ETFs, governments</td>
+                      <td className="p-4 text-slate-600">High-net-worth individuals, IRA holders</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Minimum Purchase</td>
-                      <td className="p-4 text-slate-300">Usually 100+ bars</td>
-                      <td className="p-4 text-slate-300">1 bar</td>
+                      <td className="p-4 font-semibold text-slate-900">Minimum Purchase</td>
+                      <td className="p-4 text-slate-600">Usually 100+ bars</td>
+                      <td className="p-4 text-slate-600">1 bar</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Premium</td>
+                      <td className="p-4 font-semibold text-slate-900">Premium</td>
                       <td className="p-4 text-green-400">Spot + 0.25-0.50%</td>
-                      <td className="p-4 text-slate-300">Spot + 1-3%</td>
+                      <td className="p-4 text-slate-600">Spot + 1-3%</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Storage</td>
-                      <td className="p-4 text-slate-300">LBMA-approved vaults</td>
-                      <td className="p-4 text-slate-300">IRA depository or private vault</td>
+                      <td className="p-4 font-semibold text-slate-900">Storage</td>
+                      <td className="p-4 text-slate-600">LBMA-approved vaults</td>
+                      <td className="p-4 text-slate-600">IRA depository or private vault</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-white">Selling</td>
-                      <td className="p-4 text-slate-300">OTC market, instant</td>
-                      <td className="p-4 text-slate-300">Back to dealer, may take days</td>
+                      <td className="p-4 font-semibold text-slate-900">Selling</td>
+                      <td className="p-4 text-slate-600">OTC market, instant</td>
+                      <td className="p-4 text-slate-600">Back to dealer, may take days</td>
                     </tr>
                   </tbody>
                 </table>
@@ -404,7 +404,7 @@ export default function GoodDeliveryPage() {
                   <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-green-400 mb-2">IRA Eligibility</h4>
-                    <p className="text-slate-300">
+                    <p className="text-slate-600">
                       Good Delivery silver bars are IRA-eligible when they meet the standard
                       IRS requirements (.999+ purity, from approved refiner). They must be stored
                       at an IRS-approved depository—you cannot take home delivery for IRA holdings.
@@ -438,25 +438,25 @@ export default function GoodDeliveryPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6"
+                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-slate-400">
+                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-400">
+                  <p className="mt-4 leading-relaxed text-slate-600">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -467,7 +467,7 @@ export default function GoodDeliveryPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -148,7 +148,7 @@ const faqSchema = {
 
 export default function CalSTRSCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -157,10 +157,10 @@ export default function CalSTRSCalculatorPage() {
       <CalSTRSCalculator />
 
       {/* Important CalSTRS Facts */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Understanding CalSTRS Retirement
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -169,17 +169,17 @@ export default function CalSTRSCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-blue-400" />
+                        <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -193,14 +193,14 @@ export default function CalSTRSCalculatorPage() {
       </section>
 
       {/* CalSTRS History Timeline */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                <Calendar className="h-6 w-6 text-blue-400" />
+                <Calendar className="h-6 w-6 text-blue-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 CalSTRS Benefit Changes Timeline
               </h2>
             </div>
@@ -209,14 +209,14 @@ export default function CalSTRSCalculatorPage() {
               {calstrsTimeline.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col md:flex-row md:items-center gap-4"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl p-5 flex flex-col md:flex-row md:items-center gap-4"
                 >
                   <div className="md:w-32 flex-shrink-0">
-                    <span className="text-blue-400 font-bold">{item.year}</span>
+                    <span className="text-blue-600 font-bold">{item.year}</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-white font-semibold mb-1">{item.change}</h4>
-                    <p className="text-slate-400 text-sm">{item.impact}</p>
+                    <h4 className="text-slate-900 font-semibold mb-1">{item.change}</h4>
+                    <p className="text-slate-600 text-sm">{item.impact}</p>
                   </div>
                 </div>
               ))}
@@ -226,35 +226,35 @@ export default function CalSTRSCalculatorPage() {
       </section>
 
       {/* No Social Security Warning */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-8">
+            <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-2xl p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <AlertTriangle className="h-6 w-6 text-amber-400" />
+                <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <AlertTriangle className="h-6 w-6 text-[#B22234]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-amber-400 mb-3">
+                  <h3 className="text-xl font-bold text-[#B22234] mb-3">
                     Important: Most CalSTRS Members Have No Social Security
                   </h3>
-                  <p className="text-slate-300 mb-4">
+                  <p className="text-slate-600 mb-4">
                     Unlike workers in most professions, California public school educators typically do not
                     participate in Social Security. This means your CalSTRS pension is your primary
                     (and often only) guaranteed retirement income. This makes supplemental savings
                     even more critical.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4 mt-6">
-                    <div className="bg-slate-800/50 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">Windfall Elimination Provision</h4>
-                      <p className="text-slate-400 text-sm">
+                    <div className="bg-slate-50 rounded-lg p-4">
+                      <h4 className="text-slate-900 font-semibold mb-2">Windfall Elimination Provision</h4>
+                      <p className="text-slate-600 text-sm">
                         If you have Social Security credits from other employment, your SS benefit
                         may be reduced due to WEP. Plan accordingly.
                       </p>
                     </div>
-                    <div className="bg-slate-800/50 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">Government Pension Offset</h4>
-                      <p className="text-slate-400 text-sm">
+                    <div className="bg-slate-50 rounded-lg p-4">
+                      <h4 className="text-slate-900 font-semibold mb-2">Government Pension Offset</h4>
+                      <p className="text-slate-600 text-sm">
                         Spousal Social Security benefits may also be reduced. Understanding these
                         rules is essential for retirement planning.
                       </p>
@@ -268,26 +268,26 @@ export default function CalSTRSCalculatorPage() {
       </section>
 
       {/* Supplementing CalSTRS */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                 Supplementing Your Teacher Pension
               </h2>
-              <p className="text-slate-400">
+              <p className="text-slate-500">
                 Since most California teachers don&apos;t have Social Security, building additional
                 retirement savings is essential.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <CheckCircle2 className="h-6 w-6 text-green-400" />
-                  <h3 className="text-white font-semibold">403(b) Plans</h3>
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <h3 className="text-slate-900 font-semibold">403(b) Plans</h3>
                 </div>
-                <p className="text-slate-400 text-sm mb-3">
+                <p className="text-slate-600 text-sm mb-3">
                   Available to most school employees, a 403(b) allows pre-tax contributions
                   up to $23,000/year ($30,500 if 50+).
                 </p>
@@ -296,12 +296,12 @@ export default function CalSTRSCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <CheckCircle2 className="h-6 w-6 text-green-400" />
-                  <h3 className="text-white font-semibold">457(b) Deferred Compensation</h3>
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <h3 className="text-slate-900 font-semibold">457(b) Deferred Compensation</h3>
                 </div>
-                <p className="text-slate-400 text-sm mb-3">
+                <p className="text-slate-600 text-sm mb-3">
                   Some districts offer 457(b) plans with an additional $23,000 contribution
                   limit - on top of your 403(b)!
                 </p>
@@ -310,12 +310,12 @@ export default function CalSTRSCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <CheckCircle2 className="h-6 w-6 text-green-400" />
-                  <h3 className="text-white font-semibold">Roth IRA</h3>
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <h3 className="text-slate-900 font-semibold">Roth IRA</h3>
                 </div>
-                <p className="text-slate-400 text-sm mb-3">
+                <p className="text-slate-600 text-sm mb-3">
                   Contribute up to $7,000/year ($8,000 if 50+) with after-tax dollars.
                   Qualified withdrawals are tax-free in retirement.
                 </p>
@@ -324,16 +324,16 @@ export default function CalSTRSCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
+              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <Shield className="h-6 w-6 text-amber-400" />
-                  <h3 className="text-white font-semibold">Gold IRA</h3>
+                  <Shield className="h-6 w-6 text-[#B22234]" />
+                  <h3 className="text-slate-900 font-semibold">Gold IRA</h3>
                 </div>
-                <p className="text-slate-400 text-sm mb-3">
+                <p className="text-slate-600 text-sm mb-3">
                   Roll over 403(b), 457(b), or other retirement funds into physical gold.
                   Provides inflation protection beyond CalSTRS&apos;s 2% COLA.
                 </p>
-                <div className="text-xs text-amber-400">
+                <div className="text-xs text-[#B22234]">
                   Hedge against inflation and market volatility
                 </div>
               </div>
@@ -343,10 +343,10 @@ export default function CalSTRSCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               CalSTRS Calculator FAQ
             </h2>
 
@@ -375,16 +375,16 @@ export default function CalSTRSCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       v
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -394,17 +394,17 @@ export default function CalSTRSCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-800/30">
+      <section className="py-8 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <Info className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates only. Actual CalSTRS benefits depend on your
                     specific employment history, service credit purchases, unused sick leave,
                     and other factors. For official benefit estimates, please use the myCalSTRS
@@ -418,7 +418,7 @@ export default function CalSTRSCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

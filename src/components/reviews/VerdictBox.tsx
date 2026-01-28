@@ -12,34 +12,34 @@ interface VerdictBoxProps {
 
 export function VerdictBox({ companyName: _companyName, rating, isRecommended, bottomLine, ctaUrl, ctaText = "Get Free Gold Kit" }: VerdictBoxProps) {
     return (
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden my-8 not-prose">
-            <div className="bg-slate-800/50 p-6 border-b border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden my-8 not-prose shadow-sm">
+            <div className="bg-slate-50 p-6 border-b border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-4">
-                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold text-slate-900 shadow-sm ${rating >= 4.5 ? 'bg-amber-400' : 'bg-slate-500'}`}>
+                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold text-white shadow-sm ${rating >= 4.5 ? 'bg-[#000080]' : 'bg-slate-500'}`}>
                         {rating}
                     </div>
                     <div>
-                        <h3 className="font-serif font-bold text-xl text-white m-0">The Verdict</h3>
-                        <div className="flex items-center gap-1 text-amber-400">
+                        <h3 className="font-serif font-bold text-xl text-[#000080] m-0">The Verdict</h3>
+                        <div className="flex items-center gap-1 text-[#B22234]">
                             {[...Array(5)].map((_, i) => (
-                                <Star key={i} className={`w-4 h-4 ${i < Math.floor(rating) ? 'fill-current' : 'text-slate-600'}`} />
+                                <Star key={i} className={`w-4 h-4 ${i < Math.floor(rating) ? 'fill-current' : 'text-slate-300'}`} />
                             ))}
                         </div>
                     </div>
                 </div>
                 {isRecommended ? (
-                    <div className="flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-2 rounded-full font-bold text-sm border border-green-500/30">
+                    <div className="flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full font-bold text-sm border border-green-200">
                         <CheckCircle className="w-5 h-5" /> Recommended
                     </div>
                 ) : (
-                    <div className="flex items-center gap-2 bg-red-500/20 text-red-400 px-4 py-2 rounded-full font-bold text-sm border border-red-500/30">
+                    <div className="flex items-center gap-2 bg-red-50 text-red-700 px-4 py-2 rounded-full font-bold text-sm border border-red-200">
                         <XCircle className="w-5 h-5" /> Not Recommended
                     </div>
                 )}
             </div>
 
             <div className="p-6 md:p-8">
-                <p className="text-lg text-slate-300 leading-relaxed mb-6 font-medium">
+                <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">
                     {bottomLine}
                 </p>
 

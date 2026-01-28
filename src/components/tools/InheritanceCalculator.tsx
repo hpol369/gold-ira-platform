@@ -205,7 +205,7 @@ export function InheritanceCalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-300 to-purple-400 bg-clip-text text-transparent">
           Inheritance Tax Calculator
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
           Calculate taxes on your inheritance, understand the 10-year rule for inherited IRAs, and explore smart investment strategies.
         </p>
       </div>
@@ -214,7 +214,7 @@ export function InheritanceCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Inheritance Details */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <Gift className="h-5 w-5 text-purple-400" />
@@ -224,7 +224,7 @@ export function InheritanceCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Inheritance Amount
                 </label>
                 <div className="relative">
@@ -233,7 +233,7 @@ export function InheritanceCalculator() {
                     type="number"
                     value={inheritanceAmount}
                     onChange={(e) => setInheritanceAmount(Number(e.target.value))}
-                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-purple-500"
+                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
                     min="10000"
                     step="10000"
                   />
@@ -241,13 +241,13 @@ export function InheritanceCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Asset Type
                 </label>
                 <select
                   value={assetType}
                   onChange={(e) => setAssetType(e.target.value as AssetType)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
                 >
                   <option value="cash">Cash / Bank Accounts</option>
                   <option value="inherited_ira">Traditional IRA / 401(k)</option>
@@ -260,7 +260,7 @@ export function InheritanceCalculator() {
 
               {(assetType === "property" || assetType === "stocks") && (
                 <div>
-                  <label className="text-sm text-slate-400 mb-2 block">
+                  <label className="text-sm text-slate-500 mb-2 block">
                     Decedent&apos;s Original Cost Basis
                   </label>
                   <div className="relative">
@@ -269,7 +269,7 @@ export function InheritanceCalculator() {
                       type="number"
                       value={originalCostBasis}
                       onChange={(e) => setOriginalCostBasis(Number(e.target.value))}
-                      className="w-full bg-slate-800 border border-slate-700 rounded-lg px-10 py-3 text-white focus:outline-none focus:border-purple-500"
+                      className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
                       min="0"
                       step="10000"
                     />
@@ -284,10 +284,10 @@ export function InheritanceCalculator() {
 
           {/* Beneficiary Info */}
           {assetType === "inherited_ira" && (
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                  <Users className="h-5 w-5 text-blue-400" />
+                  <Users className="h-5 w-5 text-blue-600" />
                 </div>
                 <h3 className="text-lg font-semibold">Beneficiary Type</h3>
               </div>
@@ -304,11 +304,11 @@ export function InheritanceCalculator() {
                     className={`w-full p-4 rounded-lg border text-left transition-all ${
                       beneficiaryType === option.value
                         ? "bg-blue-500/20 border-blue-500/50"
-                        : "bg-slate-800/50 border-slate-700 hover:border-slate-600"
+                        : "bg-slate-50 border-slate-700 hover:border-slate-600"
                     }`}
                   >
-                    <div className="font-semibold text-white">{option.label}</div>
-                    <div className="text-sm text-slate-400">{option.desc}</div>
+                    <div className="font-semibold text-slate-900">{option.label}</div>
+                    <div className="text-sm text-slate-500">{option.desc}</div>
                   </button>
                 ))}
               </div>
@@ -316,18 +316,18 @@ export function InheritanceCalculator() {
           )}
 
           {/* Your Tax Info */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
-                <Percent className="h-5 w-5 text-green-400" />
+                <Percent className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Your Tax Situation</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
-                  Your Marginal Tax Bracket: <span className="text-white font-semibold">{yourTaxBracket}%</span>
+                <label className="text-sm text-slate-500 mb-2 block">
+                  Your Marginal Tax Bracket: <span className="text-slate-900 font-semibold">{yourTaxBracket}%</span>
                 </label>
                 <input
                   type="range"
@@ -345,13 +345,13 @@ export function InheritanceCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
+                <label className="text-sm text-slate-500 mb-2 block">
                   Your State (Inheritance Tax)
                 </label>
                 <select
                   value={state}
                   onChange={(e) => setState(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-green-500"
+                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-green-500"
                 >
                   <option value="none">No State Inheritance Tax</option>
                   <option value="IA">Iowa</option>
@@ -362,15 +362,15 @@ export function InheritanceCalculator() {
                   <option value="PA">Pennsylvania</option>
                 </select>
                 {calculations.stateInfo && (
-                  <p className="text-xs text-amber-400 mt-2">
+                  <p className="text-xs text-[#B22234] mt-2">
                     {calculations.stateInfo.name}: {calculations.stateInfo.rates} | {calculations.stateInfo.exemptions}
                   </p>
                 )}
               </div>
 
               <div>
-                <label className="text-sm text-slate-400 mb-2 block">
-                  Your Current Age: <span className="text-white font-semibold">{currentAge}</span>
+                <label className="text-sm text-slate-500 mb-2 block">
+                  Your Current Age: <span className="text-slate-900 font-semibold">{currentAge}</span>
                 </label>
                 <input
                   type="range"
@@ -389,32 +389,32 @@ export function InheritanceCalculator() {
         <div className="space-y-6">
           {/* Main Results */}
           <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
-            <h3 className="text-sm text-slate-400 mb-2">After-Tax Value</h3>
+            <h3 className="text-sm text-slate-500 mb-2">After-Tax Value</h3>
             <div className="text-4xl font-bold text-purple-400 mb-4">
               {formatCurrency(calculations.afterTaxValue)}
             </div>
 
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-slate-400">Gross Inheritance</span>
-                <span className="text-white">{formatCurrency(inheritanceAmount)}</span>
+                <span className="text-slate-500">Gross Inheritance</span>
+                <span className="text-slate-900">{formatCurrency(inheritanceAmount)}</span>
               </div>
               {calculations.immediatesTax > 0 && (
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Income Tax (over 10 years)</span>
-                  <span className="text-red-400">-{formatCurrency(calculations.immediatesTax)}</span>
+                  <span className="text-slate-500">Income Tax (over 10 years)</span>
+                  <span className="text-red-600">-{formatCurrency(calculations.immediatesTax)}</span>
                 </div>
               )}
               {calculations.stateInheritanceTax > 0 && (
                 <div className="flex justify-between">
-                  <span className="text-slate-400">State Inheritance Tax</span>
-                  <span className="text-red-400">-{formatCurrency(calculations.stateInheritanceTax)}</span>
+                  <span className="text-slate-500">State Inheritance Tax</span>
+                  <span className="text-red-600">-{formatCurrency(calculations.stateInheritanceTax)}</span>
                 </div>
               )}
               {calculations.stepUpBenefit > 0 && (
-                <div className="flex justify-between pt-2 border-t border-white/10">
-                  <span className="text-slate-400">Step-Up in Basis Benefit</span>
-                  <span className="text-green-400">+{formatCurrency(calculations.stepUpBenefit)} saved</span>
+                <div className="flex justify-between pt-2 border-t border-slate-200">
+                  <span className="text-slate-500">Step-Up in Basis Benefit</span>
+                  <span className="text-green-600">+{formatCurrency(calculations.stepUpBenefit)} saved</span>
                 </div>
               )}
             </div>
@@ -422,13 +422,13 @@ export function InheritanceCalculator() {
 
           {/* Asset Type Specific Info */}
           {assetType === "inherited_ira" && beneficiaryType !== "spouse" && (
-            <div className="bg-amber-500/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
+            <div className="bg-[#B22234]/10 backdrop-blur-sm rounded-xl p-6 border border-[#B22234]/30">
               <div className="flex items-center gap-2 mb-4">
-                <Clock className="h-5 w-5 text-amber-400" />
-                <h3 className="text-lg font-semibold text-amber-400">10-Year Distribution Rule</h3>
+                <Clock className="h-5 w-5 text-[#B22234]" />
+                <h3 className="text-lg font-semibold text-[#B22234]">10-Year Distribution Rule</h3>
               </div>
 
-              <p className="text-slate-400 text-sm mb-4">
+              <p className="text-slate-600 text-sm mb-4">
                 Under the SECURE Act, non-spouse beneficiaries must withdraw all funds within 10 years.
                 Here&apos;s an equal distribution strategy:
               </p>
@@ -436,7 +436,7 @@ export function InheritanceCalculator() {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-white/10">
+                    <tr className="border-b border-slate-200">
                       <th className="py-2 text-left text-slate-500">Year</th>
                       <th className="py-2 text-right text-slate-500">Distribution</th>
                       <th className="py-2 text-right text-slate-500">Tax ({yourTaxBracket}%)</th>
@@ -445,18 +445,18 @@ export function InheritanceCalculator() {
                   </thead>
                   <tbody>
                     {calculations.iraDistributions.slice(0, 5).map((dist) => (
-                      <tr key={dist.year} className={dist.year % 2 === 0 ? "bg-white/[0.02]" : ""}>
-                        <td className="py-2 text-slate-300">{dist.year}</td>
-                        <td className="py-2 text-right text-white">{formatCurrency(dist.rmd)}</td>
-                        <td className="py-2 text-right text-red-400">{formatCurrency(dist.tax)}</td>
-                        <td className="py-2 text-right text-green-400">{formatCurrency(dist.afterTax)}</td>
+                      <tr key={dist.year} className={dist.year % 2 === 0 ? "bg-slate-50" : ""}>
+                        <td className="py-2 text-slate-600">{dist.year}</td>
+                        <td className="py-2 text-righttext-slate-900">{formatCurrency(dist.rmd)}</td>
+                        <td className="py-2 text-right text-red-600">{formatCurrency(dist.tax)}</td>
+                        <td className="py-2 text-right text-green-600">{formatCurrency(dist.afterTax)}</td>
                       </tr>
                     ))}
-                    <tr className="border-t border-white/10 font-semibold">
-                      <td className="py-2 text-white">Total (10 yr)</td>
-                      <td className="py-2 text-right text-white">{formatCurrency(inheritanceAmount)}</td>
-                      <td className="py-2 text-right text-red-400">{formatCurrency(calculations.totalIraTax)}</td>
-                      <td className="py-2 text-right text-green-400">{formatCurrency(calculations.totalAfterTax)}</td>
+                    <tr className="border-t border-slate-200 font-semibold">
+                      <td className="py-2text-slate-900">Total (10 yr)</td>
+                      <td className="py-2 text-righttext-slate-900">{formatCurrency(inheritanceAmount)}</td>
+                      <td className="py-2 text-right text-red-600">{formatCurrency(calculations.totalIraTax)}</td>
+                      <td className="py-2 text-right text-green-600">{formatCurrency(calculations.totalAfterTax)}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -467,17 +467,17 @@ export function InheritanceCalculator() {
           {assetType === "roth_ira" && (
             <div className="bg-green-500/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
               <div className="flex items-center gap-2 mb-4">
-                <ShieldCheck className="h-5 w-5 text-green-400" />
-                <h3 className="text-lg font-semibold text-green-400">Roth IRA Advantage</h3>
+                <ShieldCheck className="h-5 w-5 text-green-600" />
+                <h3 className="text-lg font-semibold text-green-600">Roth IRA Advantage</h3>
               </div>
-              <p className="text-slate-400 text-sm">
+              <p className="text-slate-600 text-sm">
                 Inherited Roth IRAs are income tax-free if the account was open 5+ years. Non-spouse beneficiaries
                 still follow the 10-year rule but can let it grow tax-free and withdraw in year 10.
               </p>
-              <div className="mt-4 p-3 bg-slate-800/50 rounded-lg">
+              <div className="mt-4 p-3 bg-slate-50 rounded-lg">
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Tax Savings vs Traditional IRA</span>
-                  <span className="text-green-400 font-bold">{formatCurrency(inheritanceAmount * (yourTaxBracket / 100))}</span>
+                  <span className="text-slate-500">Tax Savings vs Traditional IRA</span>
+                  <span className="text-green-600 font-bold">{formatCurrency(inheritanceAmount * (yourTaxBracket / 100))}</span>
                 </div>
               </div>
             </div>
@@ -486,63 +486,63 @@ export function InheritanceCalculator() {
           {(assetType === "property" || assetType === "stocks") && calculations.stepUpBenefit > 0 && (
             <div className="bg-green-500/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
               <div className="flex items-center gap-2 mb-4">
-                <Scale className="h-5 w-5 text-green-400" />
-                <h3 className="text-lg font-semibold text-green-400">Step-Up in Basis Benefit</h3>
+                <Scale className="h-5 w-5 text-green-600" />
+                <h3 className="text-lg font-semibold text-green-600">Step-Up in Basis Benefit</h3>
               </div>
-              <p className="text-slate-400 text-sm mb-4">
+              <p className="text-slate-600 text-sm mb-4">
                 When you inherit {assetType === "property" ? "property" : "stocks"}, your cost basis &quot;steps up&quot;
                 to the fair market value at death. This eliminates capital gains on appreciation during the
                 decedent&apos;s lifetime!
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Original Cost Basis</span>
-                  <span className="text-white">{formatCurrency(originalCostBasis)}</span>
+                  <span className="text-slate-500">Original Cost Basis</span>
+                  <span className="text-slate-900">{formatCurrency(originalCostBasis)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Value at Inheritance</span>
-                  <span className="text-white">{formatCurrency(inheritanceAmount)}</span>
+                  <span className="text-slate-500">Value at Inheritance</span>
+                  <span className="text-slate-900">{formatCurrency(inheritanceAmount)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-400">Gain Avoided</span>
-                  <span className="text-white">{formatCurrency(inheritanceAmount - originalCostBasis)}</span>
+                  <span className="text-slate-500">Gain Avoided</span>
+                  <span className="text-slate-900">{formatCurrency(inheritanceAmount - originalCostBasis)}</span>
                 </div>
-                <div className="flex justify-between pt-2 border-t border-white/10">
-                  <span className="text-slate-300 font-semibold">Tax Savings (at {yourTaxBracket}%)</span>
-                  <span className="text-green-400 font-bold">{formatCurrency(calculations.stepUpBenefit)}</span>
+                <div className="flex justify-between pt-2 border-t border-slate-200">
+                  <span className="text-slate-600 font-semibold">Tax Savings (at {yourTaxBracket}%)</span>
+                  <span className="text-green-600 font-bold">{formatCurrency(calculations.stepUpBenefit)}</span>
                 </div>
               </div>
             </div>
           )}
 
           {/* Investment Projections */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-2 mb-4">
-              <TrendingUp className="h-5 w-5 text-blue-400" />
+              <TrendingUp className="h-5 w-5 text-blue-600" />
               <h3 className="text-lg font-semibold">Investment Growth Scenarios</h3>
             </div>
 
-            <p className="text-slate-400 text-sm mb-4">
+            <p className="text-slate-600 text-sm mb-4">
               How your {formatCurrency(calculations.afterTaxValue)} after-tax inheritance could grow:
             </p>
 
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-white/10">
+                  <tr className="border-b border-slate-200">
                     <th className="py-2 text-left text-slate-500">Year</th>
-                    <th className="py-2 text-right text-blue-400">Conservative (4%)</th>
-                    <th className="py-2 text-right text-green-400">Moderate (7%)</th>
-                    <th className="py-2 text-right text-amber-400">Gold IRA (6%)</th>
+                    <th className="py-2 text-right text-blue-600">Conservative (4%)</th>
+                    <th className="py-2 text-right text-green-600">Moderate (7%)</th>
+                    <th className="py-2 text-right text-[#B22234]">Gold IRA (6%)</th>
                   </tr>
                 </thead>
                 <tbody>
                   {calculations.projections.filter((_, i) => i === 0 || i === 5 || i === 10 || i === 20).map((proj, idx) => (
-                    <tr key={proj.year} className={idx % 2 === 0 ? "bg-white/[0.02]" : ""}>
-                      <td className="py-2 text-slate-300">{proj.year}</td>
-                      <td className="py-2 text-right text-blue-400">{formatCurrency(proj.conservative)}</td>
-                      <td className="py-2 text-right text-green-400">{formatCurrency(proj.moderate)}</td>
-                      <td className="py-2 text-right text-amber-400">{formatCurrency(proj.goldIra)}</td>
+                    <tr key={proj.year} className={idx % 2 === 0 ? "bg-slate-50" : ""}>
+                      <td className="py-2 text-slate-600">{proj.year}</td>
+                      <td className="py-2 text-right text-blue-600">{formatCurrency(proj.conservative)}</td>
+                      <td className="py-2 text-right text-green-600">{formatCurrency(proj.moderate)}</td>
+                      <td className="py-2 text-right text-[#B22234]">{formatCurrency(proj.goldIra)}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -554,37 +554,37 @@ export function InheritanceCalculator() {
 
       {/* What to Do With Inheritance Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <h2 className="text-2xl font-bold text-white text-center mb-8">
+        <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
           Smart Steps When You Receive an Inheritance
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-              <Clock className="h-5 w-5 text-blue-400" />
+              <Clock className="h-5 w-5 text-blue-600" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">1. Don&apos;t Rush</h3>
-            <p className="text-slate-400 text-sm">
+            <h3 className="text-lg font-semibold text-slate-900 mb-2">1. Don&apos;t Rush</h3>
+            <p className="text-slate-600 text-sm">
               Take 6-12 months before making major decisions. Park funds in a high-yield savings account while you plan.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
-              <FileText className="h-5 w-5 text-green-400" />
+              <FileText className="h-5 w-5 text-green-600" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">2. Understand Tax Rules</h3>
-            <p className="text-slate-400 text-sm">
+            <h3 className="text-lg font-semibold text-slate-900 mb-2">2. Understand Tax Rules</h3>
+            <p className="text-slate-600 text-sm">
               Different assets have different tax treatments. Inherited IRAs require action within timelines. Consult a CPA.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-            <div className="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center mb-4">
-              <Scale className="h-5 w-5 text-amber-400" />
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+            <div className="w-10 h-10 bg-[#B22234]/10 rounded-lg flex items-center justify-center mb-4">
+              <Scale className="h-5 w-5 text-[#B22234]" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">3. Diversify Wisely</h3>
-            <p className="text-slate-400 text-sm">
+            <h3 className="text-lg font-semibold text-slate-900 mb-2">3. Diversify Wisely</h3>
+            <p className="text-slate-600 text-sm">
               Don&apos;t put all inherited assets in one place. Consider a mix of stocks, bonds, real estate, and precious metals.
             </p>
           </div>
@@ -593,23 +593,23 @@ export function InheritanceCalculator() {
 
       {/* Gold IRA Bridge */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-gradient-to-br from-amber-500/20 to-orange-500/20 backdrop-blur-sm rounded-xl p-8 border border-amber-500/30">
+        <div className="bg-[#B22234]/5 backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
           <div className="flex items-center gap-3 mb-6">
-            <PiggyBank className="h-6 w-6 text-amber-400" />
+            <PiggyBank className="h-6 w-6 text-[#B22234]" />
             <h2 className="text-2xl font-bold">Preserve Your Inheritance Across Generations</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Wealth Preservation</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Wealth Preservation</div>
+              <p className="text-slate-600 text-sm">
                 An inheritance represents a lifetime of someone&apos;s work. Protect it from inflation and market volatility with physical gold that has held value for 5,000+ years.
               </p>
             </div>
 
             <div>
-              <div className="text-amber-400 font-semibold mb-2">Tax-Advantaged Growth</div>
-              <p className="text-slate-400 text-sm">
+              <div className="text-[#B22234] font-semibold mb-2">Tax-Advantaged Growth</div>
+              <p className="text-slate-600 text-sm">
                 A Gold IRA lets you grow your inheritance tax-deferred (or tax-free with Roth). Pass wealth to the next generation with built-in inflation protection.
               </p>
             </div>
@@ -626,45 +626,45 @@ export function InheritanceCalculator() {
 
       {/* Educational Content */}
       <div className="max-w-4xl mx-auto mt-12">
-        <div className="prose prose-invert max-w-none">
+        <div className="prose max-w-none">
           <h2 className="text-3xl font-bold mb-6">Understanding Inheritance Taxes</h2>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-6">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
             <h3 className="text-xl font-semibold mb-4">Estate Tax vs Inheritance Tax</h3>
-            <p className="text-slate-400 mb-4">
-              <strong className="text-white">Estate Tax:</strong> Federal tax paid by the estate before distribution.
+            <p className="text-slate-500 mb-4">
+              <strong className="text-slate-900">Estate Tax:</strong> Federal tax paid by the estate before distribution.
               In 2024, estates under $13.61 million ($27.22 million for married couples) are exempt - meaning
               99.9% of Americans pay zero federal estate tax.
             </p>
-            <p className="text-slate-400">
-              <strong className="text-white">Inheritance Tax:</strong> State tax paid by the beneficiary after
+            <p className="text-slate-500">
+              <strong className="text-slate-900">Inheritance Tax:</strong> State tax paid by the beneficiary after
               receiving assets. Only 6 states have inheritance tax (Iowa, Kentucky, Maryland, Nebraska, New Jersey,
               Pennsylvania), and most exempt spouses and direct descendants.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-6">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
             <h3 className="text-xl font-semibold mb-4">The SECURE Act &amp; Inherited IRAs</h3>
-            <p className="text-slate-400 mb-4">
+            <p className="text-slate-500 mb-4">
               The SECURE Act of 2019 eliminated the &quot;stretch IRA&quot; for most non-spouse beneficiaries. Now,
               inherited traditional IRAs must be emptied within 10 years of the original owner&apos;s death.
             </p>
-            <ul className="space-y-2 text-slate-400">
-              <li>- <strong className="text-white">Spouse beneficiaries:</strong> Can roll over to their own IRA and follow normal RMD rules</li>
-              <li>- <strong className="text-white">Non-spouse beneficiaries:</strong> Must withdraw all funds within 10 years (all distributions are taxable income)</li>
-              <li>- <strong className="text-white">Eligible Designated Beneficiaries:</strong> Minor children, disabled/chronically ill, and those within 10 years of the decedent&apos;s age can still stretch</li>
+            <ul className="space-y-2 text-slate-500">
+              <li>- <strong className="text-slate-900">Spouse beneficiaries:</strong> Can roll over to their own IRA and follow normal RMD rules</li>
+              <li>- <strong className="text-slate-900">Non-spouse beneficiaries:</strong> Must withdraw all funds within 10 years (all distributions are taxable income)</li>
+              <li>- <strong className="text-slate-900">Eligible Designated Beneficiaries:</strong> Minor children, disabled/chronically ill, and those within 10 years of the decedent&apos;s age can still stretch</li>
             </ul>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-xl font-semibold mb-4">Step-Up in Basis Explained</h3>
-            <p className="text-slate-400 mb-4">
+            <p className="text-slate-500 mb-4">
               One of the most valuable tax benefits in inheritance law: when you inherit appreciated assets
               (real estate, stocks), your cost basis &quot;steps up&quot; to the fair market value at the date of death.
             </p>
-            <div className="bg-slate-800 rounded-lg p-4">
-              <p className="text-sm text-slate-400">
-                <strong className="text-white">Example:</strong> Parent bought stock for $50,000, now worth $500,000.
+            <div className="bg-slate-100 rounded-lg p-4">
+              <p className="text-sm text-slate-500">
+                <strong className="text-slate-900">Example:</strong> Parent bought stock for $50,000, now worth $500,000.
                 If sold during their lifetime: $450,000 taxable gain. If inherited: your basis becomes $500,000 -
                 sell immediately and pay zero capital gains tax!
               </p>
@@ -675,12 +675,12 @@ export function InheritanceCalculator() {
 
       {/* Disclaimer */}
       <div className="max-w-3xl mx-auto mt-12">
-        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+        <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
           <div className="flex items-start gap-3">
-            <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+            <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
             <div>
-              <h3 className="text-white font-semibold mb-2">Important Disclaimer</h3>
-              <p className="text-slate-400 text-sm">
+              <h3 className="text-slate-900 font-semibold mb-2">Important Disclaimer</h3>
+              <p className="text-slate-600 text-sm">
                 This calculator provides estimates for educational purposes only. Tax laws are complex and vary
                 by situation. Inherited IRA rules depend on your relationship to the decedent and account type.
                 This is not tax or legal advice. Consult a qualified tax professional or estate attorney for

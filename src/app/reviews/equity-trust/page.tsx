@@ -50,24 +50,24 @@ export default function EquityTrustReviewPage() {
     const augustaLink = getTrackedLink(AFFILIATE_LINKS.augusta, "review-equity-trust-cta", "augusta");
 
     return (
-        <main className="min-h-screen flex flex-col bg-slate-900">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-500/10 via-transparent to-transparent"></div>
+            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-400/10 via-transparent to-transparent"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 text-green-400 text-sm font-bold uppercase tracking-wider mb-4">
-                            <span className="bg-green-500/20 px-3 py-1 rounded-full">Self-Directed IRA Custodian Reviews</span>
-                            <span className="text-slate-500">|</span>
-                            <span className="text-slate-400">Updated January 2026</span>
+                        <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
+                            <span className="bg-white/10 px-3 py-1 rounded-full">Self-Directed IRA Custodian Reviews</span>
+                            <span className="text-white/50">|</span>
+                            <span className="text-white/70">Updated January 2026</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                             Equity Trust Review 2026: <br />
-                            <span className="text-slate-400">50+ Years as a SDIRA Leader</span>
+                            <span className="text-blue-200">50+ Years as a SDIRA Leader</span>
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                        <p className="text-xl text-blue-100 max-w-2xl leading-relaxed">
                             Equity Trust has been a self-directed IRA custodian since 1974. With $34+ billion in assets under custody, they are one of the largest in the industry. Here is our complete analysis.
                         </p>
                     </div>
@@ -75,7 +75,7 @@ export default function EquityTrustReviewPage() {
             </header>
 
             {/* Main Content */}
-            <div className="flex-grow">
+            <div className="flex-grow bg-white">
                 <Container className="py-12">
                     <div className="grid lg:grid-cols-3 gap-12">
                         {/* Main Article */}
@@ -92,56 +92,56 @@ export default function EquityTrustReviewPage() {
                             />
 
                             {/* Quick Facts */}
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 mb-8">
-                                <h2 className="text-xl font-serif font-bold text-white mb-4">Equity Trust at a Glance</h2>
+                            <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8">
+                                <h2 className="text-xl font-serif font-bold text-[#000080] mb-4">Equity Trust at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
-                                        <Building2 className="w-5 h-5 text-green-400" />
+                                        <Building2 className="w-5 h-5 text-[#000080]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Founded</p>
-                                            <p className="text-white font-medium">{companyData.founded}</p>
+                                            <p className="text-slate-500 text-sm">Founded</p>
+                                            <p className="text-slate-800 font-medium">{companyData.founded}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <DollarSign className="w-5 h-5 text-green-400" />
+                                        <DollarSign className="w-5 h-5 text-[#000080]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Assets Under Custody</p>
-                                            <p className="text-white font-medium">{companyData.assetsUnderCustody}</p>
+                                            <p className="text-slate-500 text-sm">Assets Under Custody</p>
+                                            <p className="text-slate-800 font-medium">{companyData.assetsUnderCustody}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Users className="w-5 h-5 text-blue-400" />
+                                        <Users className="w-5 h-5 text-[#000080]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Headquarters</p>
-                                            <p className="text-white font-medium">{companyData.headquarters}</p>
+                                            <p className="text-slate-500 text-sm">Headquarters</p>
+                                            <p className="text-slate-800 font-medium">{companyData.headquarters}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Shield className="w-5 h-5 text-amber-400" />
+                                        <Shield className="w-5 h-5 text-[#B22234]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">BBB Rating</p>
-                                            <p className="text-white font-medium">{companyData.bbbRating}</p>
+                                            <p className="text-slate-500 text-sm">BBB Rating</p>
+                                            <p className="text-slate-800 font-medium">{companyData.bbbRating}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Clock className="w-5 h-5 text-purple-400" />
+                                        <Clock className="w-5 h-5 text-[#000080]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Years in Business</p>
-                                            <p className="text-white font-medium">50+ years</p>
+                                            <p className="text-slate-500 text-sm">Years in Business</p>
+                                            <p className="text-slate-800 font-medium">50+ years</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Star className="w-5 h-5 text-orange-400" />
+                                        <Star className="w-5 h-5 text-[#B22234]" />
                                         <div>
-                                            <p className="text-slate-400 text-sm">Best For</p>
-                                            <p className="text-white font-medium text-sm">Established custodian seekers</p>
+                                            <p className="text-slate-500 text-sm">Best For</p>
+                                            <p className="text-slate-800 font-medium text-sm">Established custodian seekers</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Article Content */}
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-green-400 hover:prose-a:text-green-300">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-800 prose-a:text-[#B22234] hover:prose-a:text-[#8B0000]">
 
                                 <h2>What is Equity Trust?</h2>
                                 <p>
@@ -177,34 +177,34 @@ export default function EquityTrustReviewPage() {
                                     Equity Trust uses a tiered fee structure based on your account value. Here are the typical fees:
                                 </p>
 
-                                <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-white/5">
+                                        <thead className="bg-slate-100">
                                             <tr>
-                                                <th className="text-left p-4 text-white font-semibold">Fee Type</th>
-                                                <th className="text-left p-4 text-white font-semibold">Amount</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
+                                                <th className="text-left p-4 text-[#000080] font-semibold">Amount</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-white/10">
+                                        <tbody className="divide-y divide-slate-200">
                                             <tr>
-                                                <td className="p-4 text-slate-300">Account Setup</td>
-                                                <td className="p-4 text-slate-300">$50</td>
+                                                <td className="p-4 text-slate-600">Account Setup</td>
+                                                <td className="p-4 text-slate-600">$50</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Annual Administration Fee</td>
-                                                <td className="p-4 text-slate-300">$225 - $2,250 (based on account value)</td>
+                                                <td className="p-4 text-slate-600">Annual Administration Fee</td>
+                                                <td className="p-4 text-slate-600">$225 - $2,250 (based on account value)</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Transaction Fees</td>
-                                                <td className="p-4 text-slate-300">$75 - $250 per transaction</td>
+                                                <td className="p-4 text-slate-600">Transaction Fees</td>
+                                                <td className="p-4 text-slate-600">$75 - $250 per transaction</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Wire Transfer</td>
-                                                <td className="p-4 text-slate-300">$25</td>
+                                                <td className="p-4 text-slate-600">Wire Transfer</td>
+                                                <td className="p-4 text-slate-600">$25</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-300">Precious Metals Storage</td>
-                                                <td className="p-4 text-slate-300">Varies by depository</td>
+                                                <td className="p-4 text-slate-600">Precious Metals Storage</td>
+                                                <td className="p-4 text-slate-600">Varies by depository</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -222,33 +222,33 @@ export default function EquityTrustReviewPage() {
 
                             {/* Account Types Grid */}
                             <div className="grid sm:grid-cols-2 gap-4 my-8">
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
-                                    <span className="text-white">Traditional IRA</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                                    <span className="text-slate-800">Traditional IRA</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
-                                    <span className="text-white">Roth IRA</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                                    <span className="text-slate-800">Roth IRA</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
-                                    <span className="text-white">SEP IRA</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                                    <span className="text-slate-800">SEP IRA</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
-                                    <span className="text-white">SIMPLE IRA</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                                    <span className="text-slate-800">SIMPLE IRA</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
-                                    <span className="text-white">Solo 401(k)</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                                    <span className="text-slate-800">Solo 401(k)</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
-                                    <span className="text-white">HSA & ESA</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <CheckCircle2 className="w-6 h-6 text-green-600" />
+                                    <span className="text-slate-800">HSA & ESA</span>
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-green-400">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-800 prose-a:text-[#B22234]">
 
                                 <h2>Investment Options</h2>
                                 <p>
@@ -258,25 +258,25 @@ export default function EquityTrustReviewPage() {
 
                             {/* Investment Types Grid */}
                             <div className="grid sm:grid-cols-2 gap-4 my-8">
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <Home className="w-6 h-6 text-teal-400" />
-                                    <span className="text-white">Real Estate (rental, commercial, land)</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <Home className="w-6 h-6 text-[#000080]" />
+                                    <span className="text-slate-800">Real Estate (rental, commercial, land)</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <Coins className="w-6 h-6 text-amber-400" />
-                                    <span className="text-white">Precious Metals (gold, silver, platinum)</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <Coins className="w-6 h-6 text-[#B22234]" />
+                                    <span className="text-slate-800">Precious Metals (gold, silver, platinum)</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <TrendingUp className="w-6 h-6 text-blue-400" />
-                                    <span className="text-white">Private Equity & Startups</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <TrendingUp className="w-6 h-6 text-[#000080]" />
+                                    <span className="text-slate-800">Private Equity & Startups</span>
                                 </div>
-                                <div className="bg-white/5 rounded-lg p-4 flex items-center gap-3">
-                                    <Shield className="w-6 h-6 text-purple-400" />
-                                    <span className="text-white">Tax Liens & Promissory Notes</span>
+                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                    <Shield className="w-6 h-6 text-[#000080]" />
+                                    <span className="text-slate-800">Tax Liens & Promissory Notes</span>
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-green-400">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-800 prose-a:text-[#B22234]">
 
                                 <h2>Customer Reviews Summary</h2>
                                 <p>
@@ -297,46 +297,46 @@ export default function EquityTrustReviewPage() {
                                 <h2>Equity Trust vs Competitors</h2>
                             </div>
 
-                            <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden my-8">
+                            <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden my-8">
                                 <table className="w-full text-sm">
-                                    <thead className="bg-white/5">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="text-left p-4 text-white font-semibold">Feature</th>
-                                            <th className="text-left p-4 text-white font-semibold">Equity Trust</th>
-                                            <th className="text-left p-4 text-white font-semibold">Rocket Dollar</th>
-                                            <th className="text-left p-4 text-white font-semibold">Entrust</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Equity Trust</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Rocket Dollar</th>
+                                            <th className="text-left p-4 text-[#000080] font-semibold">Entrust</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10">
+                                    <tbody className="divide-y divide-slate-200">
                                         <tr>
-                                            <td className="p-4 text-slate-300">Founded</td>
-                                            <td className="p-4 text-green-400 font-medium">1974</td>
-                                            <td className="p-4 text-slate-300">2018</td>
-                                            <td className="p-4 text-slate-300">1982</td>
+                                            <td className="p-4 text-slate-600">Founded</td>
+                                            <td className="p-4 text-green-600 font-medium">1974</td>
+                                            <td className="p-4 text-slate-600">2018</td>
+                                            <td className="p-4 text-slate-600">1982</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Pricing Model</td>
-                                            <td className="p-4 text-slate-300">Per-transaction</td>
-                                            <td className="p-4 text-green-400 font-medium">Flat monthly</td>
-                                            <td className="p-4 text-slate-300">Per-transaction</td>
+                                            <td className="p-4 text-slate-600">Pricing Model</td>
+                                            <td className="p-4 text-slate-600">Per-transaction</td>
+                                            <td className="p-4 text-green-600 font-medium">Flat monthly</td>
+                                            <td className="p-4 text-slate-600">Per-transaction</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Checkbook Control</td>
-                                            <td className="p-4 text-slate-300">Extra fee</td>
-                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-400" /></td>
-                                            <td className="p-4"><XCircle className="w-5 h-5 text-red-400" /></td>
+                                            <td className="p-4 text-slate-600">Checkbook Control</td>
+                                            <td className="p-4 text-slate-600">Extra fee</td>
+                                            <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
+                                            <td className="p-4"><XCircle className="w-5 h-5 text-red-500" /></td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-300">Best For</td>
-                                            <td className="p-4 text-slate-300">Buy-and-hold</td>
-                                            <td className="p-4 text-slate-300">Active investors</td>
-                                            <td className="p-4 text-slate-300">Real estate focus</td>
+                                            <td className="p-4 text-slate-600">Best For</td>
+                                            <td className="p-4 text-slate-600">Buy-and-hold</td>
+                                            <td className="p-4 text-slate-600">Active investors</td>
+                                            <td className="p-4 text-slate-600">Real estate focus</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-green-400">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-800 prose-a:text-[#B22234]">
 
                                 <h2>Who Should Use Equity Trust?</h2>
                                 <ul>
@@ -353,7 +353,7 @@ export default function EquityTrustReviewPage() {
                                     <li><strong>Budget-conscious investors</strong> - newer custodians may be cheaper</li>
                                 </ul>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict - Steady and Established</h2>
                                 <p>
@@ -372,7 +372,7 @@ export default function EquityTrustReviewPage() {
 
                             {/* FAQ Section */}
                             <div className="mt-12">
-                                <h2 className="text-2xl font-serif font-bold text-white mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {[
                                         {
@@ -392,56 +392,59 @@ export default function EquityTrustReviewPage() {
                                             a: "Yes, Equity Trust allows you to hold IRS-approved precious metals in your SDIRA. They work with approved depositories for secure storage."
                                         },
                                     ].map((faq, i) => (
-                                        <div key={i} className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6">
-                                            <h3 className="font-bold text-white mb-2">{faq.q}</h3>
-                                            <p className="text-slate-400 text-sm">{faq.a}</p>
+                                        <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
+                                            <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
+                                            <p className="text-slate-600 text-sm">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Augusta CTA */}
-                            <div className="bg-gradient-to-br from-amber-900/50 to-slate-900 text-white p-8 rounded-2xl text-center mt-12 border border-amber-500/20">
-                                <h3 className="text-2xl font-serif font-bold mb-4">Looking for a Gold IRA Instead?</h3>
-                                <p className="mb-6 text-slate-300 max-w-lg mx-auto">
-                                    Custodians like Equity Trust work with Gold IRA companies. If you want a premium Gold IRA experience with fee waivers, consider Augusta Precious Metals.
-                                </p>
-                                <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
-                                    <a href={augustaLink} target="_blank" rel="noopener noreferrer">
-                                        Get Augusta&apos;s Free Gold IRA Guide
-                                        <ArrowRight className="ml-2 w-5 h-5" />
-                                    </a>
-                                </Button>
-                                <p className="text-xs text-slate-500 mt-4">$50k minimum | Up to 10 years fees waived | A+ BBB Rating</p>
+                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 border border-[#000080] relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                                <div className="relative z-10">
+                                    <h3 className="text-2xl font-serif font-bold mb-4">Looking for a Gold IRA Instead?</h3>
+                                    <p className="mb-6 text-blue-100 max-w-lg mx-auto">
+                                        Custodians like Equity Trust work with Gold IRA companies. If you want a premium Gold IRA experience with fee waivers, consider Augusta Precious Metals.
+                                    </p>
+                                    <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
+                                        <a href={augustaLink} target="_blank" rel="noopener noreferrer">
+                                            Get Augusta&apos;s Free Gold IRA Guide
+                                            <ArrowRight className="ml-2 w-5 h-5" />
+                                        </a>
+                                    </Button>
+                                    <p className="text-xs text-blue-200 mt-4">$50k minimum | Up to 10 years fees waived | A+ BBB Rating</p>
+                                </div>
                             </div>
                         </article>
 
                         {/* Sidebar */}
                         <aside className="relative">
                             <div className="hidden lg:block sticky top-24 space-y-6">
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-white">Related Resources</h3>
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Related Resources</h3>
                                     <div className="space-y-3">
-                                        <Link href="/self-directed-ira" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/self-directed-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Self-Directed IRA Guide
                                         </Link>
-                                        <Link href="/reviews/rocket-dollar" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/reviews/rocket-dollar" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Rocket Dollar Review
                                         </Link>
-                                        <Link href="/best-gold-ira-companies" className="block text-sm text-slate-400 hover:text-white transition-colors">
+                                        <Link href="/best-gold-ira-companies" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
                                             Best Gold IRA Companies
                                         </Link>
                                     </div>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-xl border border-white/10 text-center">
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
                                     <div className="flex justify-center gap-1 mb-2">
                                         {[1,2,3,4,5].map(i => (
-                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-amber-400 fill-amber-400' : 'text-amber-400/30'}`} />
+                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#B22234] fill-[#B22234]' : 'text-slate-300'}`} />
                                         ))}
                                     </div>
-                                    <p className="text-white font-bold">4.3 / 5</p>
-                                    <p className="text-slate-400 text-xs mt-1">Our Rating</p>
+                                    <p className="text-[#000080] font-bold">4.3 / 5</p>
+                                    <p className="text-slate-500 text-xs mt-1">Our Rating</p>
                                 </div>
                             </div>
                         </aside>

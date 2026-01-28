@@ -17,25 +17,25 @@ export const metadata = {
 
 export default function OrionMetalExchangeReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-background">
+        <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
 
-            <div className="flex-grow bg-slate-900">
+            <div className="flex-grow bg-white">
                 {/* Header / Hero for Review */}
-                <header className="bg-indigo-950 text-white py-16 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-800/40 via-indigo-950 to-indigo-950 opacity-80 z-0"></div>
+                <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-400/10 via-transparent to-transparent opacity-80 z-0"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-indigo-200 text-sm font-bold uppercase tracking-wider mb-4">
+                            <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
                                 <span className="bg-white/10 px-2 py-1 rounded">Gold IRA Company Reviews</span>
                                 <span>•</span>
                                 <span>Updated Jan 2026</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                                 Orion Metal Exchange Review: <br />
-                                <span className="text-gray-400">The Small Investor's Friend?</span>
+                                <span className="text-blue-200">The Small Investor's Friend?</span>
                             </h1>
-                            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-blue-100 max-w-2xl leading-relaxed">
                                 With the lowest minimum in the industry at just $5,000, Orion Metal Exchange has opened doors for investors who don't have six figures. But does a lower barrier mean lower quality?
                             </p>
                         </div>
@@ -61,7 +61,7 @@ export default function OrionMetalExchangeReviewPage() {
                             />
 
                             {/* Main Body Content - TYPOGRAPHY PROSE */}
-                            <div className="prose prose-lg max-w-none text-slate-300 prose-headings:text-white prose-strong:text-white prose-a:text-secondary">
+                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-800 prose-a:text-[#B22234]">
                                 <h2>The Executive Summary</h2>
                                 <p>
                                     <strong>Orion Metal Exchange</strong> has built a reputation as the "small investor's friend" in the Gold IRA space. While Augusta requires $50,000 and Goldco asks for $25,000, Orion welcomes you with just <strong>$5,000</strong>—the lowest entry point in the industry.
@@ -99,11 +99,11 @@ export default function OrionMetalExchangeReviewPage() {
                                     This makes Orion accessible to younger investors, those testing the waters, or anyone who wants to start small and add over time. You don't need to be rich to start protecting your retirement with gold.
                                 </p>
 
-                                <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose my-8">
-                                    <h4 className="font-bold text-white flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5 text-secondary" /> Fee Consideration
+                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 not-prose my-8">
+                                    <h4 className="font-bold text-[#000080] flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-[#B22234]" /> Fee Consideration
                                     </h4>
-                                    <p className="text-sm text-slate-400">
+                                    <p className="text-sm text-slate-600">
                                         While the minimum is low, remember that flat annual fees ($150-$250) represent a higher percentage of smaller accounts. We recommend investing at least $10,000 to make the fee math work in your favor long-term.
                                     </p>
                                 </div>
@@ -124,7 +124,7 @@ export default function OrionMetalExchangeReviewPage() {
                                     The majority of negative feedback relates to shipping times during high-demand periods (like when gold prices spike). This is an industry-wide issue, not unique to Orion.
                                 </p>
 
-                                <hr className="my-12 border-white/10" />
+                                <hr className="my-12 border-slate-200" />
 
                                 <h2>Final Verdict: Are They Worth It?</h2>
                                 <p>
@@ -136,10 +136,11 @@ export default function OrionMetalExchangeReviewPage() {
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-indigo-950 text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4">Ready to Start Your Gold IRA?</h3>
-                                    <p className="mb-8 text-indigo-200 max-w-lg mx-auto">
+                                    <p className="mb-8 text-blue-100 max-w-lg mx-auto">
                                         Compare Orion with other top-rated companies to find your best fit.
                                     </p>
                                     <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>

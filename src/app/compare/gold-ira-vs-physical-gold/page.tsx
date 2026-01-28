@@ -106,19 +106,19 @@ const schema = {
 
 export default function GoldIraVsPhysicalGoldPage() {
     return (
-        <main className="min-h-screen bg-slate-900">
+        <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
+            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-sm font-semibold text-secondary mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
                         Gold Ownership Comparison
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Gold IRA vs. Physical Gold
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         Should you hold gold in a tax-advantaged retirement account or keep it in your own possession? We compare both approaches.
                     </p>
                 </Container>
@@ -132,7 +132,7 @@ export default function GoldIraVsPhysicalGoldPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-invert prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <p className="lead">
                             Here&apos;s a question I get all the time: <em>&quot;Why would I lock my gold in some IRA when I could just buy coins and keep them in my safe?&quot;</em>
@@ -228,37 +228,37 @@ export default function GoldIraVsPhysicalGoldPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                                <table className="w-full text-left border-collapse bg-white shadow-sm rounded-xl border border-slate-200">
                                     <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Tax Aspect</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Gold IRA</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-amber-400">Physical Gold</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Tax Aspect</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Gold IRA</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Physical Gold</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-300">
+                                    <tbody className="divide-y divide-white/10 text-sm text-slate-600">
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Purchase</td>
+                                            <td className="p-4 font-semibold text-slate-900">Purchase</td>
                                             <td className="p-4">Pre-tax (Traditional) or after-tax (Roth)</td>
                                             <td className="p-4">After-tax dollars only</td>
                                         </tr>
                                         <tr className="bg-white/5">
-                                            <td className="p-4 font-semibold text-white">Growth</td>
+                                            <td className="p-4 font-semibold text-slate-900">Growth</td>
                                             <td className="p-4">Tax-deferred or tax-free</td>
                                             <td className="p-4">Taxable when sold</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-white">Sale/Withdrawal</td>
+                                            <td className="p-4 font-semibold text-slate-900">Sale/Withdrawal</td>
                                             <td className="p-4">Ordinary income tax (Traditional) or tax-free (Roth)</td>
                                             <td className="p-4">Collectibles tax: 28% max capital gains</td>
                                         </tr>
                                         <tr className="bg-white/5">
-                                            <td className="p-4 font-semibold text-white">Held &lt; 1 Year</td>
+                                            <td className="p-4 font-semibold text-slate-900">Held &lt; 1 Year</td>
                                             <td className="p-4">N/A (retirement account)</td>
                                             <td className="p-4">Ordinary income tax rates</td>
                                         </tr>
                                         <tr className="bg-amber-500/10">
-                                            <td className="p-4 font-bold text-amber-400">Winner</td>
+                                            <td className="p-4 font-bold text-[#B22234]">Winner</td>
                                             <td className="p-4 font-bold text-green-400">Better for long-term</td>
                                             <td className="p-4">Simpler but higher tax burden</td>
                                         </tr>
@@ -281,11 +281,11 @@ export default function GoldIraVsPhysicalGoldPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Find the Best Gold IRA Company</h3>
-                                <p className="mb-6 text-gray-200">Take our 60-second quiz to get matched with a company that fits your investment goals.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Find the Best Gold IRA Company</h3>
+                                <p className="mb-6 text-slate-600">Take our 60-second quiz to get matched with a company that fits your investment goals.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -300,13 +300,13 @@ export default function GoldIraVsPhysicalGoldPage() {
                             </p>
 
                             <div className="not-prose space-y-6 my-8">
-                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
+                                    <div className="w-12 h-12 rounded-full bg-[#B22234]/10 text-[#B22234] flex items-center justify-center shrink-0">
                                         <Building2 className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-amber-400 text-lg">Gold IRA Storage</h4>
-                                        <ul className="text-slate-300 mt-2 space-y-1 text-sm">
+                                        <h4 className="font-bold text-[#B22234] text-lg">Gold IRA Storage</h4>
+                                        <ul className="text-slate-600 mt-2 space-y-1 text-sm">
                                             <li>• Stored in IRS-approved depositories (Delaware Depository, Brink&apos;s, etc.)</li>
                                             <li>• Armed security, 24/7 surveillance, climate control</li>
                                             <li>• Fully insured by Lloyd&apos;s of London or similar</li>
@@ -316,13 +316,13 @@ export default function GoldIraVsPhysicalGoldPage() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+                                <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
+                                    <div className="w-12 h-12 rounded-full bg-[#B22234]/10 text-[#B22234] flex items-center justify-center shrink-0">
                                         <Home className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-amber-400 text-lg">Physical Gold Storage (Home)</h4>
-                                        <ul className="text-slate-300 mt-2 space-y-1 text-sm">
+                                        <h4 className="font-bold text-[#B22234] text-lg">Physical Gold Storage (Home)</h4>
+                                        <ul className="text-slate-600 mt-2 space-y-1 text-sm">
                                             <li>• Home safe, hidden location, or bank safe deposit box</li>
                                             <li>• Security is your responsibility</li>
                                             <li>• Insurance required (homeowner&apos;s policy may not cover bullion)</li>
@@ -373,10 +373,10 @@ export default function GoldIraVsPhysicalGoldPage() {
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/30">
-                                    <DollarSign className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <DollarSign className="w-6 h-6 text-[#B22234] shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Consider Both if...</h4>
-                                        <ul className="text-sm text-slate-300 mt-2 space-y-1">
+                                        <h4 className="font-bold text-[#B22234]">Consider Both if...</h4>
+                                        <ul className="text-sm text-slate-600 mt-2 space-y-1">
                                             <li>• You want tax-advantaged retirement gold AND immediate-access gold</li>
                                             <li>• You believe in diversifying how you hold assets</li>
                                             <li>• You want professional storage for most gold, but some at home for emergencies</li>
@@ -404,75 +404,75 @@ export default function GoldIraVsPhysicalGoldPage() {
                             <h2>Gold IRA vs. Physical Gold FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Can I keep my Gold IRA gold at home?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         No. The IRS requires Gold IRA metals to be stored at an approved depository. &quot;Home storage Gold IRA&quot; schemes are risky and can result in the IRS treating your entire IRA as a distribution—triggering immediate taxes plus a 10% penalty if you&apos;re under 59½. If you want gold at home, buy it outside of an IRA.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Is physical gold a good investment?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Gold is excellent for wealth preservation and inflation protection, but not designed for aggressive growth. It&apos;s best used as a portfolio diversifier (10-20% allocation). Gold tends to hold value during crashes when stocks fall—that&apos;s its main appeal. Whether in an IRA or physical form, the underlying value is the same.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">How do taxes compare between Gold IRA and physical gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
-                                        Physical gold held outside an IRA is taxed as a collectible—28% max on long-term gains (or ordinary income for short-term). A Roth Gold IRA offers tax-free withdrawals. A Traditional Gold IRA defers taxes until withdrawal. For long-term holdings, a Gold IRA typically results in lower overall taxes. See our <Link href="/learn/gold-ira-tax-rules" className="text-secondary hover:underline">tax rules guide</Link> for details.
+                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                        Physical gold held outside an IRA is taxed as a collectible—28% max on long-term gains (or ordinary income for short-term). A Roth Gold IRA offers tax-free withdrawals. A Traditional Gold IRA defers taxes until withdrawal. For long-term holdings, a Gold IRA typically results in lower overall taxes. See our <Link href="/learn/gold-ira-tax-rules" className="text-[#B22234] hover:underline">tax rules guide</Link> for details.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What&apos;s the best way to buy physical gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-amber-500/20 p-1.5 text-amber-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-300">
-                                        Buy from reputable dealers with transparent pricing. Stick to well-known coins (American Gold Eagles, Canadian Maple Leafs) or bars from recognized mints. Avoid eBay and unverified sellers. Many Gold IRA companies also sell physical gold for direct ownership—they&apos;re vetted and reliable. See our <Link href="/reviews" className="text-secondary hover:underline">company reviews</Link>.
+                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                        Buy from reputable dealers with transparent pricing. Stick to well-known coins (American Gold Eagles, Canadian Maple Leafs) or bars from recognized mints. Avoid eBay and unverified sellers. Many Gold IRA companies also sell physical gold for direct ownership—they&apos;re vetted and reliable. See our <Link href="/reviews" className="text-[#B22234] hover:underline">company reviews</Link>.
                                     </p>
                                 </details>
                             </div>
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Explore Gold IRAs?</h3>
-                                <p className="mb-6 text-gray-200 max-w-xl mx-auto">Find the best gold IRA company for your retirement savings with our free quiz.</p>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Ready to Explore Gold IRAs?</h3>
+                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">Find the best gold IRA company for your retirement savings with our free quiz.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-slate-300 text-slate-900 hover:bg-slate-100">
                                         <Link href="/guide/gold-ira-guide">Read the Full Guide</Link>
                                     </Button>
                                 </div>
@@ -484,7 +484,7 @@ export default function GoldIraVsPhysicalGoldPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-900">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA
                         variant="footer"

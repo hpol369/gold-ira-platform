@@ -88,22 +88,22 @@ const schema = {
 
 export default function SilverAllTimeHighPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <Link href="/silver-price" className="text-gray-400 hover:text-gray-300 text-sm font-medium mb-4 inline-flex items-center gap-2">
+                        <Link href="/silver-price" className="text-gray-400 hover:text-slate-600 text-sm font-medium mb-4 inline-flex items-center gap-2">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
-                        <span className="text-slate-500 text-sm block mb-4">400 monthly searches</span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <span className="text-slate-600 text-sm block mb-4">400 monthly searches</span>
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
                             Silver All-Time High: The $49.45 Record That Still Stands
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
-                            On January 18, 1980, silver hit <strong className="text-white">$49.45 per ounce</strong>—a record that has stood for over 45 years. What caused that epic spike? And could it happen again?
+                        <p className="text-xl text-slate-600 leading-relaxed">
+                            On January 18, 1980, silver hit <strong className="text-slate-900">$49.45 per ounce</strong>—a record that has stood for over 45 years. What caused that epic spike? And could it happen again?
                         </p>
                     </div>
                 </Container>
@@ -111,7 +111,7 @@ export default function SilverAllTimeHighPage() {
 
             <Container className="py-12">
                 <div className="max-w-4xl mx-auto">
-                    <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -119,22 +119,22 @@ export default function SilverAllTimeHighPage() {
                         <section className="scroll-mt-32">
                             <h2>Silver&apos;s Historic Price Highs</h2>
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-50">
                                         <tr>
-                                            <th className="p-4 font-bold text-white border-b border-white/10">Date</th>
-                                            <th className="p-4 font-bold text-white border-b border-white/10">Price</th>
-                                            <th className="p-4 font-bold text-white border-b border-white/10">Inflation-Adjusted</th>
-                                            <th className="p-4 font-bold text-white border-b border-white/10">Cause</th>
+                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Date</th>
+                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Price</th>
+                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Inflation-Adjusted</th>
+                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Cause</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm">
+                                    <tbody className="divide-y divide-slate-200 text-sm">
                                         {silverHighs.map((high, idx) => (
-                                            <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-800/30' : ''}>
-                                                <td className="p-4 text-white font-medium">{high.date}</td>
+                                            <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
+                                                <td className="p-4 text-slate-900 font-medium">{high.date}</td>
                                                 <td className="p-4 text-green-400 font-bold text-lg">{high.price}</td>
-                                                <td className="p-4 text-amber-400">{high.inflationAdjusted}</td>
-                                                <td className="p-4 text-slate-400">{high.cause}</td>
+                                                <td className="p-4 text-[#B22234]">{high.inflationAdjusted}</td>
+                                                <td className="p-4 text-slate-600">{high.cause}</td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -145,10 +145,10 @@ export default function SilverAllTimeHighPage() {
                         {/* 1980 Story */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
                                     <Calendar className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">1980: The Hunt Brothers Silver Corner</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">1980: The Hunt Brothers Silver Corner</h2>
                             </div>
                             <p>
                                 The story of <strong>silver&apos;s all-time high</strong> is one of the most dramatic episodes in commodities history. It involves Texas oil billionaires, market manipulation, and a spectacular crash that nearly destroyed Wall Street.
@@ -170,27 +170,27 @@ export default function SilverAllTimeHighPage() {
                                 As they bought more, prices rose. And as prices rose, more speculators piled in. Silver went from $6 in early 1979 to $49.45 by January 1980—an <strong>8x gain in about a year</strong>.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Silver&apos;s 1979-1980 Price Explosion</h4>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Silver&apos;s 1979-1980 Price Explosion</h4>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-400">January 1979</span>
-                                        <span className="text-white font-bold">$6.00</span>
+                                        <span className="text-slate-600">January 1979</span>
+                                        <span className="text-slate-900 font-bold">$6.00</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-400">July 1979</span>
-                                        <span className="text-white font-bold">$9.00</span>
+                                        <span className="text-slate-600">July 1979</span>
+                                        <span className="text-slate-900 font-bold">$9.00</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-400">October 1979</span>
-                                        <span className="text-amber-400 font-bold">$17.00</span>
+                                        <span className="text-slate-600">October 1979</span>
+                                        <span className="text-[#B22234] font-bold">$17.00</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-400">December 1979</span>
-                                        <span className="text-amber-400 font-bold">$34.00</span>
+                                        <span className="text-slate-600">December 1979</span>
+                                        <span className="text-[#B22234] font-bold">$34.00</span>
                                     </div>
-                                    <div className="flex justify-between items-center border-t border-white/10 pt-3">
-                                        <span className="text-slate-400">January 18, 1980</span>
+                                    <div className="flex justify-between items-center border-t border-slate-200 pt-3">
+                                        <span className="text-slate-600">January 18, 1980</span>
                                         <span className="text-green-400 font-bold text-xl">$49.45 (ALL-TIME HIGH)</span>
                                     </div>
                                 </div>
@@ -215,7 +215,7 @@ export default function SilverAllTimeHighPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">2011: The Post-Crisis Rally</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">2011: The Post-Crisis Rally</h2>
                             </div>
                             <p>
                                 Silver&apos;s second major run came in 2010-2011, in the aftermath of the 2008 financial crisis. Unlike 1980, this rally was driven by broad investor participation, not a small group of buyers.
@@ -234,12 +234,12 @@ export default function SilverAllTimeHighPage() {
                                 Silver rose from $17 in August 2010 to <strong>$48.70 on April 25, 2011</strong>—just $0.75 shy of the 1980 all-time high. Then it crashed, falling to $26 by September 2011 after margin requirements were raised and selling accelerated.
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">2010-2011 Rally vs 2024-2026?</h4>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">2010-2011 Rally vs 2024-2026?</h4>
                                 <div className="grid md:grid-cols-2 gap-6 text-sm">
                                     <div>
-                                        <h5 className="font-bold text-amber-400 mb-2">2010-2011 Conditions</h5>
-                                        <ul className="space-y-1 text-slate-400">
+                                        <h5 className="font-bold text-[#B22234] mb-2">2010-2011 Conditions</h5>
+                                        <ul className="space-y-1 text-slate-600">
                                             <li>Fed QE (trillions printed)</li>
                                             <li>US debt ceiling crisis</li>
                                             <li>Eurozone debt fears</li>
@@ -249,7 +249,7 @@ export default function SilverAllTimeHighPage() {
                                     </div>
                                     <div>
                                         <h5 className="font-bold text-green-400 mb-2">2024-2026 Conditions</h5>
-                                        <ul className="space-y-1 text-slate-400">
+                                        <ul className="space-y-1 text-slate-600">
                                             <li>$35T+ national debt</li>
                                             <li>De-dollarization accelerating</li>
                                             <li>Supply deficits growing</li>
@@ -267,7 +267,7 @@ export default function SilverAllTimeHighPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Inflation-Adjusted All-Time High</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Inflation-Adjusted All-Time High</h2>
                             </div>
                             <p>
                                 Here&apos;s what most people miss: <strong>silver hasn&apos;t come close to its inflation-adjusted high</strong>. That $49.45 in 1980 is equivalent to over $180 in today&apos;s purchasing power.
@@ -276,38 +276,38 @@ export default function SilverAllTimeHighPage() {
                                 In other words, for silver to reach its &quot;real&quot; all-time high in today&apos;s dollars, it would need to rise <strong>5-6x from current levels</strong>. That&apos;s the magnitude of the opportunity some investors see.
                             </p>
 
-                            <div className="bg-gradient-to-r from-amber-500/10 to-green-500/10 rounded-2xl p-6 border border-amber-500/20 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">What Silver Prices &quot;Should Be&quot; If They Kept Pace</h4>
+                            <div className="bg-gradient-to-r from-[#B22234]/10 to-green-500/10 rounded-2xl p-6 border border-amber-500/20 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">What Silver Prices &quot;Should Be&quot; If They Kept Pace</h4>
                                 <div className="space-y-4">
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">1980 High Adjusted for CPI Inflation</span>
+                                            <span className="text-slate-600">1980 High Adjusted for CPI Inflation</span>
                                             <span className="text-green-400 font-bold">$180+</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-green-500 h-3 rounded-full" style={{ width: '100%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">1980 High Adjusted for M2 Money Supply</span>
-                                            <span className="text-amber-400 font-bold">$400+</span>
+                                            <span className="text-slate-600">1980 High Adjusted for M2 Money Supply</span>
+                                            <span className="text-[#B22234] font-bold">$400+</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
-                                            <div className="bg-amber-500 h-3 rounded-full" style={{ width: '100%' }}></div>
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
+                                            <div className="bg-[#B22234] h-3 rounded-full" style={{ width: '100%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-400">Current Silver Price</span>
+                                            <span className="text-slate-600">Current Silver Price</span>
                                             <span className="text-gray-400 font-bold">~$32</span>
                                         </div>
-                                        <div className="w-full bg-slate-700 rounded-full h-3">
+                                        <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-gray-500 h-3 rounded-full" style={{ width: '18%' }}></div>
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-xs text-slate-500 mt-4">If silver matched its 1980 high in terms of money supply growth (M2), it would be over $400/oz today.</p>
+                                <p className="text-xs text-slate-600 mt-4">If silver matched its 1980 high in terms of money supply growth (M2), it would be over $400/oz today.</p>
                             </div>
 
                             <Callout type="tip" title="Rich Dad Insight">
@@ -321,7 +321,7 @@ export default function SilverAllTimeHighPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
                                     <Zap className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Could Silver Hit a New All-Time High?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Could Silver Hit a New All-Time High?</h2>
                             </div>
                             <p>
                                 The million-dollar question: <strong>can silver break $50 and set a new record?</strong> Many analysts believe not only is it possible—it&apos;s likely. Here&apos;s why:
@@ -343,28 +343,28 @@ export default function SilverAllTimeHighPage() {
                                 <li><strong>Recession risk:</strong> A severe recession could crush industrial demand short-term.</li>
                             </ul>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Timeline Scenarios for New All-Time High</h4>
+                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-slate-900 text-lg mb-4">Timeline Scenarios for New All-Time High</h4>
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-4">
                                         <span className="text-green-400 font-bold w-24">Aggressive</span>
                                         <div className="flex-1 bg-green-500/20 rounded-full h-8 relative">
                                             <div className="absolute inset-y-0 left-0 w-1/3 bg-green-500 rounded-full"></div>
-                                            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-white">2026-2027</span>
+                                            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-900">2026-2027</span>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
-                                        <span className="text-amber-400 font-bold w-24">Base Case</span>
-                                        <div className="flex-1 bg-amber-500/20 rounded-full h-8 relative">
-                                            <div className="absolute inset-y-0 left-0 w-1/2 bg-amber-500 rounded-full"></div>
-                                            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-white">2027-2029</span>
+                                        <span className="text-[#B22234] font-bold w-24">Base Case</span>
+                                        <div className="flex-1 bg-[#B22234]/20 rounded-full h-8 relative">
+                                            <div className="absolute inset-y-0 left-0 w-1/2 bg-[#B22234] rounded-full"></div>
+                                            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-900">2027-2029</span>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
-                                        <span className="text-slate-400 font-bold w-24">Conservative</span>
-                                        <div className="flex-1 bg-slate-500/20 rounded-full h-8 relative">
+                                        <span className="text-slate-600 font-bold w-24">Conservative</span>
+                                        <div className="flex-1 bg-[#B22234]/10 rounded-full h-8 relative">
                                             <div className="absolute inset-y-0 left-0 w-2/3 bg-slate-500 rounded-full"></div>
-                                            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-white">2029-2032</span>
+                                            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-900">2029-2032</span>
                                         </div>
                                     </div>
                                 </div>
@@ -372,12 +372,12 @@ export default function SilverAllTimeHighPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-gray-400/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-white">Position Before the Breakout</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Position Before the Breakout</h3>
                                 <p className="mb-6 text-gray-200">If silver reaches a new all-time high, you&apos;ll want to already own it. Find the right precious metals company for your situation.</p>
-                                <Button variant="gold" size="lg" asChild>
+                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
                                     <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -388,58 +388,58 @@ export default function SilverAllTimeHighPage() {
                             <h2>Silver All-Time High: FAQ</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What is silver&apos;s all-time high price?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Silver&apos;s all-time high was <strong>$49.45 per ounce</strong> on January 18, 1980. This was during the Hunt Brothers&apos; attempt to corner the silver market. The second-highest price was $48.70 on April 25, 2011. Adjusted for inflation, the 1980 high would be equivalent to over $180 in today&apos;s dollars.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What caused the 1980 silver spike?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         The 1980 spike was caused by the Hunt Brothers—Texas oil billionaires who accumulated an estimated 100-200 million ounces of silver (roughly half of world deliverable supply) because they believed the US dollar would collapse after Nixon ended dollar-gold convertibility. Their massive buying drove prices from $6 to $49.45 in about a year. The rally ended when COMEX changed the rules to allow only liquidation of contracts.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">Could silver reach a new all-time high?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Many analysts believe silver will eventually reach new all-time highs due to: structural supply deficits (6th consecutive year), exploding industrial demand from solar and EVs, depleting COMEX inventories, a potential monetary crisis with $35T+ in debt, and the fact that gold has already broken to new highs while silver lags. Some predict $50-100+ silver within the next 3-5 years.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
                                         <h4 className="text-lg font-bold">What would silver be worth adjusted for inflation?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Adjusted for official CPI inflation, the 1980 high of $49.45 would be over $180 in today&apos;s dollars. If you adjust for M2 money supply growth (a more aggressive measure), the 1980 high would be equivalent to $400+ today. Current silver prices around $30-35 represent a small fraction of these inflation-adjusted highs.
                                     </p>
                                 </details>
@@ -447,16 +447,16 @@ export default function SilverAllTimeHighPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-gray-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-white">Will You Be Ready When Silver Breaks Out?</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Will You Be Ready When Silver Breaks Out?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">The 1980 and 2011 rallies made fortunes for those who were positioned early. Find out which precious metals company is right for you.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
+                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/silver-price/will-silver-hit-100">Will Silver Hit $100?</Link>
                                     </Button>
                                 </div>
@@ -470,7 +470,7 @@ export default function SilverAllTimeHighPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="silver-all-time-high" />
                 </Container>

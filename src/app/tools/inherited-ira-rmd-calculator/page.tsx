@@ -123,7 +123,7 @@ const faqSchema = {
 
 export default function InheritedIRARMDCalculatorPage() {
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -132,10 +132,10 @@ export default function InheritedIRARMDCalculatorPage() {
       <InheritedIRARMDCalculator />
 
       {/* Key Rules Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Inherited IRA Rules You Need to Know
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -144,17 +144,17 @@ export default function InheritedIRARMDCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-amber-400" />
+                      <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-[#B22234]" />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold mb-2">
+                        <h3 className="text-slate-900 font-semibold mb-2">
                           {rule.title}
                         </h3>
-                        <p className="text-slate-400 text-sm">
+                        <p className="text-slate-600 text-sm">
                           {rule.description}
                         </p>
                       </div>
@@ -168,99 +168,99 @@ export default function InheritedIRARMDCalculatorPage() {
       </section>
 
       {/* Beneficiary Types Explained */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-100/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                <Scale className="h-6 w-6 text-blue-400" />
+                <Scale className="h-6 w-6 text-blue-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Beneficiary Categories Explained
               </h2>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-green-400 mb-3">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-green-600 mb-3">
                   Eligible Designated Beneficiaries (EDBs)
                 </h3>
-                <p className="text-slate-400 mb-4">
+                <p className="text-slate-500 mb-4">
                   These beneficiaries can still use the &quot;stretch&quot; method based on life expectancy:
                 </p>
-                <ul className="space-y-2 text-slate-300 text-sm">
+                <ul className="space-y-2 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span><strong>Surviving Spouse:</strong> Most flexible options including rollover</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span><strong>Minor Children:</strong> Until age of majority (then 10-year rule kicks in)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span><strong>Disabled Individuals:</strong> As defined by IRS code section 72(m)(7)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span><strong>Chronically Ill:</strong> Unable to perform daily living activities</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
                     <span><strong>Not More Than 10 Years Younger:</strong> Siblings, friends, etc. close in age</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-amber-400 mb-3">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#B22234] mb-3">
                   Designated Beneficiaries (10-Year Rule)
                 </h3>
-                <p className="text-slate-400 mb-4">
+                <p className="text-slate-500 mb-4">
                   Most non-spouse individual beneficiaries fall into this category:
                 </p>
-                <ul className="space-y-2 text-slate-300 text-sm">
+                <ul className="space-y-2 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <Clock className="h-4 w-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                    <Clock className="h-4 w-4 text-[#B22234] mt-0.5 flex-shrink-0" />
                     <span>Adult children, grandchildren, nieces, nephews</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Clock className="h-4 w-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                    <Clock className="h-4 w-4 text-[#B22234] mt-0.5 flex-shrink-0" />
                     <span>Friends or non-family members named as beneficiary</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Clock className="h-4 w-4 text-amber-400 mt-0.5 flex-shrink-0" />
+                    <Clock className="h-4 w-4 text-[#B22234] mt-0.5 flex-shrink-0" />
                     <span>Must empty account by December 31 of 10th year after death</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <AlertTriangle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span className="text-red-300">If owner died after RBD, annual RMDs are REQUIRED in years 1-9</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-red-400 mb-3">
+              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-red-600 mb-3">
                   Non-Designated Beneficiaries (5-Year Rule)
                 </h3>
-                <p className="text-slate-400 mb-4">
+                <p className="text-slate-500 mb-4">
                   Entities that are not individuals:
                 </p>
-                <ul className="space-y-2 text-slate-300 text-sm">
+                <ul className="space-y-2 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <AlertTriangle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Estates named as beneficiary</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <AlertTriangle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Charities and non-profit organizations</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <AlertTriangle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Non-qualifying trusts</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
+                    <AlertTriangle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
                     <span>Must distribute entire account within 5 years</span>
                   </li>
                 </ul>
@@ -271,10 +271,10 @@ export default function InheritedIRARMDCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
               Inherited IRA FAQ
             </h2>
 
@@ -303,16 +303,16 @@ export default function InheritedIRARMDCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden group"
+                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
                     <span className="text-slate-500 group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-white/5 pt-4">
-                    <p className="text-slate-400">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
+                    <p className="text-slate-500">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -322,17 +322,17 @@ export default function InheritedIRARMDCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-800/30">
+      <section className="py-8 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">
+                  <h3 className="text-slate-900 font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-400 text-sm">
+                  <p className="text-slate-600 text-sm">
                     This calculator provides estimates based on SECURE Act and SECURE 2.0 rules.
                     Inherited IRA rules are complex and depend on many factors including the date
                     of death, beneficiary relationship, and whether the owner had started RMDs.
@@ -347,7 +347,7 @@ export default function InheritedIRARMDCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

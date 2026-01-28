@@ -111,43 +111,43 @@ export default function AcademyPage() {
   const totalDuration = modules.reduce((acc, m) => acc + parseInt(m.duration), 0);
 
   return (
-    <main className="min-h-screen bg-slate-900">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
+      <section className="py-16 md:py-24 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full text-amber-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
               <GraduationCap className="h-4 w-4" />
               FREE COURSE
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#000080] mb-6">
               Gold IRA Academy
             </h1>
-            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
               You&apos;ve worked 30+ years building your retirement. Before you move any of it, you deserve to understand exactly how Gold IRAs work—the good, the bad, and what the sales reps won&apos;t tell you. 10 modules. Completely free. No email required.
             </p>
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-8 mb-10">
-              <div className="flex items-center gap-2 text-slate-300">
-                <BookOpen className="h-5 w-5 text-amber-400" />
+              <div className="flex items-center gap-2 text-slate-600">
+                <BookOpen className="h-5 w-5 text-[#B22234]" />
                 <span>10 Modules</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <Clock className="h-5 w-5 text-amber-400" />
+              <div className="flex items-center gap-2 text-slate-600">
+                <Clock className="h-5 w-5 text-[#B22234]" />
                 <span>{totalDuration} Minutes Total</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <Users className="h-5 w-5 text-amber-400" />
+              <div className="flex items-center gap-2 text-slate-600">
+                <Users className="h-5 w-5 text-[#B22234]" />
                 <span>50,000+ Students</span>
               </div>
             </div>
 
             <Link
               href="#module-1"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-lg rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#B22234] text-white font-bold text-lg rounded-xl hover:bg-[#8B1A28] transition-all"
             >
               Start Learning Free
               <ArrowRight className="h-5 w-5" />
@@ -157,10 +157,10 @@ export default function AcademyPage() {
       </section>
 
       {/* Course Modules */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
               Course Curriculum
             </h2>
 
@@ -172,18 +172,18 @@ export default function AcademyPage() {
                   id={`module-${module.number}`}
                   className="block group"
                 >
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-amber-500/30 transition-all">
+                  <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-[#B22234]/30 transition-all">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 font-bold">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center text-[#B22234] font-bold">
                         {module.number}
                       </div>
                       <div className="flex-1">
                         <div className="flex items-start justify-between gap-4">
                           <div>
-                            <h3 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
+                            <h3 className="text-lg font-bold text-[#000080] group-hover:text-[#B22234] transition-colors">
                               {module.title}
                             </h3>
-                            <p className="text-slate-400 mt-1">
+                            <p className="text-slate-500 mt-1">
                               {module.description}
                             </p>
                           </div>
@@ -193,7 +193,7 @@ export default function AcademyPage() {
                           </div>
                         </div>
                       </div>
-                      <ArrowRight className="h-5 w-5 text-slate-500 group-hover:text-amber-400 transition-colors flex-shrink-0" />
+                      <ArrowRight className="h-5 w-5 text-slate-500 group-hover:text-[#B22234] transition-colors flex-shrink-0" />
                     </div>
                   </div>
                 </Link>
@@ -204,40 +204,40 @@ export default function AcademyPage() {
       </section>
 
       {/* Bonus Content */}
-      <section className="py-16 bg-slate-800/30">
+      <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-4">
               Bonus Resources
             </h2>
-            <p className="text-slate-400 text-center mb-12">
+            <p className="text-slate-500 text-center mb-12">
               Deep-dive guides on specific topics
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <Link href="/learn/how-much-gold-in-portfolio" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/30 transition-all">
-                <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Portfolio Allocation</h3>
-                <p className="text-slate-400 text-sm">How much gold should be in your portfolio?</p>
+              <Link href="/learn/how-much-gold-in-portfolio" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
+                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Portfolio Allocation</h3>
+                <p className="text-slate-500 text-sm">How much gold should be in your portfolio?</p>
               </Link>
-              <Link href="/learn/gold-price-prediction-2026" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/30 transition-all">
-                <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Gold Price Outlook</h3>
-                <p className="text-slate-400 text-sm">Expert predictions for 2026</p>
+              <Link href="/learn/gold-price-prediction-2026" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
+                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Gold Price Outlook</h3>
+                <p className="text-slate-500 text-sm">Expert predictions for 2026</p>
               </Link>
-              <Link href="/learn/gold-bullion-vs-gold-coins" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/30 transition-all">
-                <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Bullion vs Coins</h3>
-                <p className="text-slate-400 text-sm">Which is better for your IRA?</p>
+              <Link href="/learn/gold-bullion-vs-gold-coins" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
+                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Bullion vs Coins</h3>
+                <p className="text-slate-500 text-sm">Which is better for your IRA?</p>
               </Link>
-              <Link href="/learn/indirect-vs-direct-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/30 transition-all">
-                <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Rollover Types</h3>
-                <p className="text-slate-400 text-sm">Direct vs indirect explained</p>
+              <Link href="/learn/indirect-vs-direct-rollover" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
+                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Rollover Types</h3>
+                <p className="text-slate-500 text-sm">Direct vs indirect explained</p>
               </Link>
-              <Link href="/guide/457b-to-gold-ira-rollover" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/30 transition-all">
-                <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">457(b) Rollover</h3>
-                <p className="text-slate-400 text-sm">Guide for government employees</p>
+              <Link href="/guide/457b-to-gold-ira-rollover" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
+                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">457(b) Rollover</h3>
+                <p className="text-slate-500 text-sm">Guide for government employees</p>
               </Link>
-              <Link href="/guide/noble-gold-fees" className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-amber-500/30 transition-all">
-                <h3 className="font-bold text-white group-hover:text-amber-400 mb-2">Fee Comparison</h3>
-                <p className="text-slate-400 text-sm">Noble Gold fees breakdown</p>
+              <Link href="/guide/noble-gold-fees" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
+                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Fee Comparison</h3>
+                <p className="text-slate-500 text-sm">Noble Gold fees breakdown</p>
               </Link>
             </div>
           </div>
@@ -245,10 +245,10 @@ export default function AcademyPage() {
       </section>
 
       {/* What You'll Learn */}
-      <section className="py-16 bg-slate-800/50">
+      <section className="py-16 bg-slate-100">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
               What You&apos;ll Actually Learn
             </h2>
 
@@ -264,8 +264,8 @@ export default function AcademyPage() {
                 "Real examples of what this looks like for people like you",
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">{item}</span>
+                  <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-600">{item}</span>
                 </div>
               ))}
             </div>
@@ -274,7 +274,7 @@ export default function AcademyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
             variant="footer"

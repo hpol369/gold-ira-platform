@@ -98,19 +98,19 @@ const schema = {
 
 export default function SequenceOfReturnsRiskPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Retirement Planning
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
                             Sequence of Returns Risk
                         </h1>
-                        <p className="text-xl text-slate-300 leading-relaxed">
+                        <p className="text-xl text-slate-600 leading-relaxed">
                             The hidden danger that can destroy your retirement—even with &quot;average&quot; market returns. Here&apos;s what you need to know.
                         </p>
                     </div>
@@ -125,7 +125,7 @@ export default function SequenceOfReturnsRiskPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -148,16 +148,16 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
                                     <Calculator className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The Math That Will Shock You</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Math That Will Shock You</h2>
                             </div>
                             <p>
                                 Let&apos;s look at two retirees who both have $1,000,000 and withdraw $50,000 per year. Both experience the same returns over 15 years—just in different order:
                             </p>
 
-                            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 not-prose my-8">
-                                <h4 className="font-bold text-white text-lg mb-4">Same Average Returns, Different Outcomes</h4>
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                                <h4 className="font-bold text-[#000080] text-lg mb-4">Same Average Returns, Different Outcomes</h4>
                                 <div className="grid md:grid-cols-2 gap-6">
-                                    <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-green-500/20">
+                                    <div className="bg-white p-4 rounded-xl border border-green-500/20">
                                         <h5 className="font-semibold text-green-400 mb-3">Retiree A: Good Returns First</h5>
                                         <p className="text-sm text-slate-400 mb-3">Years 1-5: +15%, +12%, +18%, +10%, +8%</p>
                                         <p className="text-sm text-slate-400 mb-3">Years 6-15: Mix of gains and losses</p>
@@ -166,7 +166,7 @@ export default function SequenceOfReturnsRiskPage() {
                                             <div className="text-2xl font-bold text-green-400">$1,240,000</div>
                                         </div>
                                     </div>
-                                    <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-red-500/20">
+                                    <div className="bg-white p-4 rounded-xl border border-red-500/20">
                                         <h5 className="font-semibold text-red-400 mb-3">Retiree B: Bad Returns First</h5>
                                         <p className="text-sm text-slate-400 mb-3">Years 1-5: -15%, -12%, -18%, +5%, +3%</p>
                                         <p className="text-sm text-slate-400 mb-3">Years 6-15: Strong recovery</p>
@@ -190,7 +190,7 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Why Sequence Risk Is So Dangerous</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Sequence Risk Is So Dangerous</h2>
                             </div>
                             <p>
                                 During the accumulation phase (when you&apos;re saving for retirement), sequence of returns doesn&apos;t matter much. In fact, crashes are beneficial—you buy more shares at lower prices.
@@ -213,10 +213,10 @@ export default function SequenceOfReturnsRiskPage() {
                         {/* The Danger Zone */}
                         <section id="danger-zone" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
                                     <Clock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">The &quot;Danger Zone&quot;: Years 1-10</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The &quot;Danger Zone&quot;: Years 1-10</h2>
                             </div>
                             <p>
                                 Research shows that the first 5-10 years of retirement are critical. This period is often called the &quot;retirement red zone&quot; or &quot;sequence risk danger zone.&quot;
@@ -234,17 +234,17 @@ export default function SequenceOfReturnsRiskPage() {
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
                                 <h4 className="font-bold text-red-400 text-lg mb-4">Historical Danger Zone Examples</h4>
                                 <div className="space-y-4 text-sm">
-                                    <div className="flex justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Retired January 2000 (Dot-Com Crash)</span>
+                                    <div className="flex justify-between p-3 bg-white border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Retired January 2000 (Dot-Com Crash)</span>
                                         <span className="text-red-400 font-semibold">49% loss in first 3 years</span>
                                     </div>
-                                    <div className="flex justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Retired January 2008 (Financial Crisis)</span>
+                                    <div className="flex justify-between p-3 bg-white border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Retired January 2008 (Financial Crisis)</span>
                                         <span className="text-red-400 font-semibold">57% loss in first 2 years</span>
                                     </div>
-                                    <div className="flex justify-between p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                                        <span className="text-slate-300">Retired January 2020 (COVID Crash)</span>
-                                        <span className="text-amber-400 font-semibold">34% loss (recovered quickly)</span>
+                                    <div className="flex justify-between p-3 bg-white border border-slate-200 rounded-lg">
+                                        <span className="text-slate-600">Retired January 2020 (COVID Crash)</span>
+                                        <span className="text-[#B22234] font-semibold">34% loss (recovered quickly)</span>
                                     </div>
                                 </div>
                                 <p className="text-red-300 text-sm mt-4">Retirees who started withdrawals during these crashes faced devastating sequence risk.</p>
@@ -269,7 +269,7 @@ export default function SequenceOfReturnsRiskPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">How to Protect Against Sequence Risk</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">How to Protect Against Sequence Risk</h2>
                             </div>
                             <p>
                                 While you can&apos;t control market returns, you can take steps to minimize sequence risk:
@@ -304,32 +304,32 @@ export default function SequenceOfReturnsRiskPage() {
                         {/* Gold's Role */}
                         <section id="gold-role" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-white m-0">Gold&apos;s Role in Sequence Risk Protection</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Gold&apos;s Role in Sequence Risk Protection</h2>
                             </div>
                             <p>
                                 Gold is particularly valuable for managing sequence risk because of its behavior during crises:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-white/5 backdrop-blur-sm rounded-xl shadow-sm border border-white/10">
-                                    <thead className="bg-slate-800/50">
+                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Crisis</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">S&P 500</th>
-                                            <th className="p-4 border-b border-white/10 font-bold text-white">Gold</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Crisis</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">S&P 500</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Gold</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm">
+                                    <tbody className="divide-y divide-slate-200 text-sm">
                                         <tr>
-                                            <td className="p-4 text-white">2008 Financial Crisis</td>
+                                            <td className="p-4 text-[#000080]">2008 Financial Crisis</td>
                                             <td className="p-4 text-red-400 font-semibold">-37%</td>
                                             <td className="p-4 text-green-400 font-semibold">+5.5%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-white">2020 COVID Crash</td>
+                                            <td className="p-4 text-[#000080]">2020 COVID Crash</td>
                                             <td className="p-4 text-red-400 font-semibold">-34%</td>
                                             <td className="p-4 text-green-400 font-semibold">+25% (full year)</td>
                                         </tr>
@@ -360,58 +360,58 @@ export default function SequenceOfReturnsRiskPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">What is sequence of returns risk?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Sequence of returns risk is the danger that poor investment returns early in retirement will permanently damage your portfolio. When you&apos;re withdrawing money, the ORDER of returns matters as much as the average return. A crash early in retirement forces you to sell shares at low prices, leaving fewer shares to benefit from eventual recovery.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">How can I protect against sequence risk?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         Key protection strategies include: 1) Maintaining 2-3 years of cash reserves so you don&apos;t have to sell during crashes, 2) Diversifying into non-correlated assets like gold that may rise when stocks fall, 3) Using a flexible withdrawal strategy that reduces spending during down markets, 4) Building a &quot;bond tent&quot; with higher fixed-income allocation in early retirement.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Why are the first years of retirement so critical?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         The first 5-10 years of retirement are the &quot;danger zone&quot; for sequence risk because your portfolio is at its largest and you&apos;re starting to withdraw. A major crash during this period depletes your portfolio when it matters most, leaving fewer assets to compound over the remaining 20-30 years of retirement.
                                     </p>
                                 </details>
 
-                                <details className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-white">
+                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
                                         <h4 className="text-lg font-bold">Does sequence risk affect everyone?</h4>
-                                        <span className="shrink-0 rounded-full bg-white/10 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-400">
+                                    <p className="mt-4 leading-relaxed text-slate-600">
                                         No—sequence risk primarily affects those who are withdrawing from their portfolios (retirees). During the accumulation phase, crashes are actually beneficial because you buy more shares at lower prices. The risk only becomes critical when you start taking money out rather than putting it in.
                                     </p>
                                 </details>
@@ -442,7 +442,7 @@ export default function SequenceOfReturnsRiskPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-800/50">
+            <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-sequence-of-returns-risk" />
                 </Container>

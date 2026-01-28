@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 
 export default function EditorialPolicyPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             {/* Header */}
-            <header className="bg-white/5 backdrop-blur-sm py-16 border-b border-white/10">
+            <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
                     <FadeIn>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-4">
                                 Editorial Policy
                             </h1>
-                            <p className="text-lg text-slate-400">
+                            <p className="text-lg text-slate-500">
                                 How we research, review, and rank Gold IRA companies
                             </p>
                         </div>
@@ -32,9 +32,9 @@ export default function EditorialPolicyPage() {
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">
                     <FadeIn delay={0.1}>
-                        <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-strong:text-white prose-li:text-slate-300 max-w-none">
+                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
 
-                            <p className="lead text-lg text-slate-300">
+                            <p className="lead text-lg text-slate-600">
                                 We built Rich Dad Retirement because finding honest information about Gold IRAs is harder than it should be. Most review sites are just sales funnels in disguise. We wanted to do better.
                             </p>
 
@@ -73,11 +73,11 @@ export default function EditorialPolicyPage() {
                             <h2>What We Look For</h2>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex items-start gap-4 p-5 bg-green-500/10 border border-green-500/20 rounded-xl">
-                                    <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
+                                <div className="flex items-start gap-4 p-5 bg-green-50 border border-green-200 rounded-xl">
+                                    <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                                     <div>
-                                        <h4 className="font-bold text-green-400 mb-1">Green Flags</h4>
-                                        <ul className="text-sm text-green-300 space-y-1">
+                                        <h4 className="font-bold text-green-700 mb-1">Green Flags</h4>
+                                        <ul className="text-sm text-green-700 space-y-1">
                                             <li>Clear, upfront fee disclosures</li>
                                             <li>Strong BBB rating (A or higher) with good complaint resolution</li>
                                             <li>No high-pressure sales tactics</li>
@@ -88,11 +88,11 @@ export default function EditorialPolicyPage() {
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4 p-5 bg-red-500/10 border border-red-500/20 rounded-xl">
-                                    <XCircle className="h-6 w-6 text-red-400 flex-shrink-0 mt-0.5" />
+                                <div className="flex items-start gap-4 p-5 bg-red-50 border border-red-200 rounded-xl">
+                                    <XCircle className="h-6 w-6 text-red-600 flex-shrink-0 mt-0.5" />
                                     <div>
-                                        <h4 className="font-bold text-red-400 mb-1">Red Flags</h4>
-                                        <ul className="text-sm text-red-300 space-y-1">
+                                        <h4 className="font-bold text-red-700 mb-1">Red Flags</h4>
+                                        <ul className="text-sm text-red-700 space-y-1">
                                             <li>Hidden or unclear fees</li>
                                             <li>Aggressive cold calling or scare tactics</li>
                                             <li>Pushing &quot;rare&quot; or &quot;exclusive&quot; coins with huge markups</li>
@@ -131,11 +131,11 @@ export default function EditorialPolicyPage() {
                             </p>
 
                             <div className="not-prose my-8">
-                                <div className="flex items-start gap-4 p-5 bg-amber-500/10 border border-amber-500/20 rounded-xl">
-                                    <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                                <div className="flex items-start gap-4 p-5 bg-amber-50 border border-amber-200 rounded-xl">
+                                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400 mb-1">A Note About Sponsored Content</h4>
-                                        <p className="text-sm text-amber-300">
+                                        <h4 className="font-bold text-amber-700 mb-1">A Note About Sponsored Content</h4>
+                                        <p className="text-sm text-amber-700">
                                             We don&apos;t accept payment for better reviews or rankings. Companies can&apos;t pay to be featured more prominently or to have negative information removed. If we ever publish sponsored content (like a company-provided article), it will be clearly labeled as such.
                                         </p>
                                     </div>
@@ -153,7 +153,7 @@ export default function EditorialPolicyPage() {
                                 <li>Listening to reader feedback about their experiences</li>
                             </ul>
                             <p>
-                                That said, we&apos;re a small team and can&apos;t catch everything instantly. If you notice something outdated or incorrect, please <Link href="/contact" className="text-secondary hover:underline">let us know</Link>.
+                                That said, we&apos;re a small team and can&apos;t catch everything instantly. If you notice something outdated or incorrect, please <Link href="/contact" className="text-[#B22234] hover:underline">let us know</Link>.
                             </p>
 
                             <h2>Corrections Policy</h2>
@@ -180,7 +180,7 @@ export default function EditorialPolicyPage() {
 
                             <h2>Questions?</h2>
                             <p>
-                                If you have questions about our editorial process or want to report a concern, email us at <a href="mailto:editorial@richdadretirement.com" className="text-secondary hover:underline">editorial@richdadretirement.com</a>.
+                                If you have questions about our editorial process or want to report a concern, email us at <a href="mailto:editorial@richdadretirement.com" className="text-[#B22234] hover:underline">editorial@richdadretirement.com</a>.
                             </p>
 
                         </article>

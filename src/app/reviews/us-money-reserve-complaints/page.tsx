@@ -51,19 +51,19 @@ const schema = {
 
 export default function UsMoneyReserveComplaintsPage() {
     return (
-        <main className="min-h-screen bg-slate-900 pb-24">
+        <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-primary text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-dark/50" />
+            <header className="bg-[#000080] text-white py-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-red-500/20 border border-red-500/30 text-sm font-semibold text-red-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#B22234]/20 border border-[#B22234]/30 text-sm font-semibold text-red-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <AlertTriangle className="w-4 h-4" /> Consumer Warning
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         US Money Reserve Complaints: What You Should Know
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
                         Requested a free guide and now getting non-stop calls? You&apos;re not alone. Here&apos;s what&apos;s happening and how to handle it.
                     </p>
                 </Container>
@@ -77,7 +77,7 @@ export default function UsMoneyReserveComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-white prose-p:text-slate-300 prose-li:text-slate-300 prose-strong:text-white prose-a:text-secondary max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
 
                         <p className="lead">
                             If you&apos;ve ever downloaded a free gold guide from US Money Reserve, you probably know what comes next: phone calls. Lots of them. Sometimes multiple times a day. This is the number one complaint we see about this company.
@@ -106,25 +106,25 @@ export default function UsMoneyReserveComplaintsPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <h4 className="font-bold text-white mb-2">Persistent Calling</h4>
-                                    <p className="text-slate-300 text-sm">Multiple calls per day, sometimes for weeks after requesting information. Even after asking them to stop.</p>
+                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] mb-2">Persistent Calling</h4>
+                                    <p className="text-slate-600 text-sm">Multiple calls per day, sometimes for weeks after requesting information. Even after asking them to stop.</p>
                                 </div>
-                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <h4 className="font-bold text-white mb-2">Urgency Tactics</h4>
-                                    <p className="text-slate-300 text-sm">&quot;This price is only good for today&quot; or &quot;We only have a few of these left.&quot; Classic pressure tactics.</p>
+                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] mb-2">Urgency Tactics</h4>
+                                    <p className="text-slate-600 text-sm">&quot;This price is only good for today&quot; or &quot;We only have a few of these left.&quot; Classic pressure tactics.</p>
                                 </div>
-                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <h4 className="font-bold text-white mb-2">Fear-Based Selling</h4>
-                                    <p className="text-slate-300 text-sm">Warnings about economic collapse, dollar devaluation, or government confiscation to create urgency.</p>
+                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] mb-2">Fear-Based Selling</h4>
+                                    <p className="text-slate-600 text-sm">Warnings about economic collapse, dollar devaluation, or government confiscation to create urgency.</p>
                                 </div>
-                                <div className="p-5 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-                                    <h4 className="font-bold text-white mb-2">Numismatic Upselling</h4>
-                                    <p className="text-slate-300 text-sm">Pushing expensive &quot;exclusive&quot; or &quot;limited edition&quot; coins instead of standard bullion.</p>
+                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <h4 className="font-bold text-[#000080] mb-2">Numismatic Upselling</h4>
+                                    <p className="text-slate-600 text-sm">Pushing expensive &quot;exclusive&quot; or &quot;limited edition&quot; coins instead of standard bullion.</p>
                                 </div>
                             </div>
 
-                            <div className="bg-amber-50 p-6 rounded-xl border border-amber-100 flex gap-4 not-prose my-6">
+                            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
                                 <ShieldAlert className="w-6 h-6 text-amber-600 shrink-0" />
                                 <div>
                                     <h4 className="font-bold text-amber-800">Red Flag: &quot;Limited Edition&quot; Coins</h4>
@@ -168,27 +168,27 @@ export default function UsMoneyReserveComplaintsPage() {
 
                         {/* How to Stop Calls */}
                         <section id="stop-calls" className="scroll-mt-32">
-                            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 not-prose">
-                                <h3 className="flex items-center gap-2 font-bold text-white text-xl mb-4">
+                            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 not-prose">
+                                <h3 className="flex items-center gap-2 font-bold text-[#000080] text-xl mb-4">
                                     <PhoneOff className="w-5 h-5" /> How to Stop the Calls
                                 </h3>
-                                <p className="text-slate-300 mb-4">If you&apos;re getting unwanted calls from US Money Reserve, here&apos;s what to do:</p>
+                                <p className="text-slate-600 mb-4">If you&apos;re getting unwanted calls from US Money Reserve, here&apos;s what to do:</p>
                                 <div className="space-y-3">
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                                        <p className="text-slate-300"><strong className="text-white">Ask to be removed:</strong> Tell the caller directly, &quot;Please remove me from your call list.&quot; They&apos;re legally required to comply.</p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                                        <p className="text-slate-600"><strong className="text-slate-800">Ask to be removed:</strong> Tell the caller directly, &quot;Please remove me from your call list.&quot; They&apos;re legally required to comply.</p>
                                     </div>
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                                        <p className="text-slate-300"><strong className="text-white">Send an email:</strong> Write to their customer service requesting removal in writing. Keep a copy.</p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                                        <p className="text-slate-600"><strong className="text-slate-800">Send an email:</strong> Write to their customer service requesting removal in writing. Keep a copy.</p>
                                     </div>
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                                        <p className="text-slate-300"><strong className="text-white">Register with Do Not Call:</strong> Add your number to the National Do Not Call Registry at <a href="https://www.donotcall.gov" className="text-secondary underline" target="_blank" rel="noopener noreferrer">donotcall.gov</a></p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                                        <p className="text-slate-600"><strong className="text-slate-800">Register with Do Not Call:</strong> Add your number to the National Do Not Call Registry at <a href="https://www.donotcall.gov" className="text-[#B22234] underline" target="_blank" rel="noopener noreferrer">donotcall.gov</a></p>
                                     </div>
                                     <div className="flex gap-3 items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                                        <p className="text-slate-300"><strong className="text-white">File a BBB complaint:</strong> If calls continue after you&apos;ve asked to stop, file a complaint. Companies care about their BBB rating.</p>
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                                        <p className="text-slate-600"><strong className="text-slate-800">File a BBB complaint:</strong> If calls continue after you&apos;ve asked to stop, file a complaint. Companies care about their BBB rating.</p>
                                     </div>
                                 </div>
                             </div>
@@ -201,19 +201,19 @@ export default function UsMoneyReserveComplaintsPage() {
                                 If the US Money Reserve experience has turned you off, here are alternatives known for low-pressure sales:
                             </p>
                             <ul>
-                                <li><strong><Link href="/reviews/augusta-precious-metals" className="text-secondary hover:underline">Augusta Precious Metals</Link>:</strong> Education-first approach, no hard sells. Zero BBB complaints. Higher minimum ($50k).</li>
-                                <li><strong><Link href="/reviews/goldco" className="text-secondary hover:underline">Goldco</Link>:</strong> Strong customer service reputation. $25k minimum.</li>
-                                <li><strong><Link href="/reviews/noble-gold" className="text-secondary hover:underline">Noble Gold</Link>:</strong> Laid-back sales approach, $20k minimum, Texas storage option.</li>
-                                <li><strong><Link href="/reviews/birch-gold" className="text-secondary hover:underline">Birch Gold Group</Link>:</strong> Lower minimum ($10k), straightforward process.</li>
+                                <li><strong><Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta Precious Metals</Link>:</strong> Education-first approach, no hard sells. Zero BBB complaints. Higher minimum ($50k).</li>
+                                <li><strong><Link href="/reviews/goldco" className="text-[#B22234] hover:underline">Goldco</Link>:</strong> Strong customer service reputation. $25k minimum.</li>
+                                <li><strong><Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link>:</strong> Laid-back sales approach, $20k minimum, Texas storage option.</li>
+                                <li><strong><Link href="/reviews/birch-gold" className="text-[#B22234] hover:underline">Birch Gold Group</Link>:</strong> Lower minimum ($10k), straightforward process.</li>
                             </ul>
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Want a Better Experience?</h3>
-                                <p className="mb-6 text-gray-200">Companies with education-first approach and no high-pressure calls.</p>
+                                <p className="mb-6 text-blue-100">Companies with education-first approach and no high-pressure calls.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/best-gold-ira-companies">
                                         See Top Rated Companies <ArrowRight className="ml-2 w-4 h-4" />
