@@ -167,6 +167,7 @@ export default function PatriotGoldKitPage() {
             {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129"
+                source="lp-us-gold-kit-exit"
                 variant="gold"
             />
         </div>

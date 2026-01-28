@@ -366,6 +366,7 @@ export default function SilverIRAApprovedPatriotPage() {
             {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                source="lp-silver-ira-approved-exit"
                 variant="silver"
             />
         </div>

@@ -331,6 +331,7 @@ export default function GoldIRAFeesPatriotPage() {
             {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129"
+                source="lp-gold-ira-fees-exit"
                 variant="gold"
             />
         </div>

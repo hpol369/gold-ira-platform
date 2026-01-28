@@ -211,6 +211,7 @@ export default function SilverIRARolloverPage() {
             {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink={AFFILIATE_LINK}
+                source="lp-silver-ira-rollover-exit"
                 variant="silver"
             />
         </div>

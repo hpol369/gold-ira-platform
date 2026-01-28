@@ -154,6 +154,7 @@ export default function PatriotSilverKitPage() {
             {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                source="lp-patriot-silver-exit"
                 variant="silver"
             />
         </div>

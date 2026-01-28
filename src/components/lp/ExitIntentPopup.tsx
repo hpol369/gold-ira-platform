@@ -3,13 +3,15 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { X, FileText, ArrowRight } from "lucide-react";
+import TrackedLPLink from "./TrackedLPLink";
 
 interface ExitIntentPopupProps {
     affiliateLink: string;
+    source: string;
     variant?: "gold" | "silver";
 }
 
-export default function ExitIntentPopup({ affiliateLink, variant = "gold" }: ExitIntentPopupProps) {
+export default function ExitIntentPopup({ affiliateLink, source, variant = "gold" }: ExitIntentPopupProps) {
     const [isVisible, setIsVisible] = useState(false);
     const [hasShown, setHasShown] = useState(false);
 
@@ -110,14 +112,14 @@ export default function ExitIntentPopup({ affiliateLink, variant = "gold" }: Exi
                 </ul>
 
                 {/* CTA Button */}
-                <Link
+                <TrackedLPLink
                     href={affiliateLink}
+                    source={source}
                     className="block w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-4 px-6 rounded-lg transition-colors text-lg flex items-center justify-center gap-2"
-                    onClick={handleClose}
                 >
                     Get Free Guide
                     <ArrowRight className="h-5 w-5" />
-                </Link>
+                </TrackedLPLink>
 
                 {/* Secondary Link */}
                 <p className="mt-4 text-slate-400 text-sm">

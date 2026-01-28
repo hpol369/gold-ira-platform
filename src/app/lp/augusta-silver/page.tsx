@@ -278,6 +278,7 @@ export default function AugustaSilverPage() {
             {/* Exit Intent Popup */}
             <ExitIntentPopup
                 affiliateLink={AFFILIATE_LINK}
+                source="lp-augusta-silver-exit"
                 variant="silver"
             />
         </div>
