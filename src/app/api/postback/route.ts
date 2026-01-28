@@ -11,6 +11,7 @@ export interface PostbackEvent {
   timestamp: string;
   ip?: string;
   user_agent?: string;
+  location?: string;      // Geo location from Vercel headers
   // Additional fields Augusta might send
   [key: string]: string | undefined;
 }
@@ -61,6 +62,20 @@ async function handlePostback(request: NextRequest, method: string) {
     // Augusta might use different parameter names - adjust as needed
     const eventType = determineEventType(params);
 
+    // Get location from Vercel geo headers
+    const country = request.headers.get("x-vercel-ip-country") || "";
+    const city = request.headers.get("x-vercel-ip-city") || "";
+    const region = request.headers.get("x-vercel-ip-country-region") || "";
+
+    let location = "";
+    if (city && region && country) {
+      location = `${city}, ${region}, ${country}`;
+    } else if (city && country) {
+      location = `${city}, ${country}`;
+    } else if (country) {
+      location = country;
+    }
+
     const event: PostbackEvent = {
       type: eventType,
       sub_id: params.sub_id || params.subid || params.source || "unknown",
@@ -68,6 +83,7 @@ async function handlePostback(request: NextRequest, method: string) {
       timestamp: new Date().toISOString(),
       ip: request.headers.get("x-forwarded-for") || "unknown",
       user_agent: request.headers.get("user-agent") || "unknown",
+      location: location || undefined,
       ...params,
     };
 

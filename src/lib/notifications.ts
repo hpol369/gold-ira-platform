@@ -57,12 +57,16 @@ function formatMessage(
     `📄 Source: ${event.sub_id || "Unknown"}`,
   ];
 
+  if (event.location) {
+    lines.push(`🌍 Location: ${event.location}`);
+  }
+
   if (event.lead_id) {
     lines.push(`🆔 Lead ID: ${event.lead_id}`);
   }
 
   // Add any extra fields
-  const skipFields = ["type", "sub_id", "lead_id", "timestamp", "ip", "user_agent"];
+  const skipFields = ["type", "sub_id", "lead_id", "timestamp", "ip", "user_agent", "location"];
   Object.entries(event).forEach(([key, value]) => {
     if (!skipFields.includes(key) && value) {
       lines.push(`📌 ${key}: ${value}`);
