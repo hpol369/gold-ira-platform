@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle } from "lucide-react";
-import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
 import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
@@ -329,11 +328,6 @@ export default function GoldIRAFeesPatriotPage() {
             <SocialProofToast variant="gold" />
 
             {/* Exit Intent Popup */}
-            <ExitIntentPopup
-                affiliateLink="https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129"
-                source="lp-gold-ira-fees-exit"
-                variant="gold"
-            />
         </div>
     );
 }

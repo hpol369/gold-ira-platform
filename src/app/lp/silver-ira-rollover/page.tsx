@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, FileText, Building2, Clock } from "lucide-react";
-import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
 import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
@@ -209,11 +208,6 @@ export default function SilverIRARolloverPage() {
             <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
-            <ExitIntentPopup
-                affiliateLink={AFFILIATE_LINK}
-                source="lp-silver-ira-rollover-exit"
-                variant="silver"
-            />
         </div>
     );
 }

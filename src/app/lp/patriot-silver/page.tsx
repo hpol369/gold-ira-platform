@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, DollarSign, Factory, BarChart } from "lucide-react";
 import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
-import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
 import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
@@ -152,11 +151,6 @@ export default function PatriotSilverKitPage() {
             <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
-            <ExitIntentPopup
-                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
-                source="lp-patriot-silver-exit"
-                variant="silver"
-            />
         </div>
     );
 }

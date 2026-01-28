@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle, DollarSign, TrendingDown, Building2 } from "lucide-react";
-import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
 import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
@@ -355,11 +354,6 @@ export default function SilverIRAFeesPatriotPage() {
             <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
-            <ExitIntentPopup
-                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
-                source="lp-silver-ira-fees-exit"
-                variant="silver"
-            />
         </div>
     );
 }

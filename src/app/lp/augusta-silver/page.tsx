@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, Star, ArrowRight, CheckCircle2, Award, Users, Phone, XCircle } from "lucide-react";
-import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
 import TrackedLPLink from "@/components/lp/TrackedLPLink";
 
@@ -276,11 +275,6 @@ export default function AugustaSilverPage() {
             <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
-            <ExitIntentPopup
-                affiliateLink={AFFILIATE_LINK}
-                source="lp-augusta-silver-exit"
-                variant="silver"
-            />
         </div>
     );
 }
