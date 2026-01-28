@@ -114,7 +114,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={cn(inter.variable, playfair.variable, "antialiased")}>
+      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900")}>
         {/* Google Tag Manager (noscript) - must be first in body */}
         <noscript>
           <iframe

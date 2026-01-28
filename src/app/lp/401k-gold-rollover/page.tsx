@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ShieldCheck, CheckCircle2, ArrowRight, FileText, Building2, Coins, Clock, DollarSign, Phone, Award, ArrowRightCircle } from "lucide-react";
-import SocialProofToast from "@/components/lp/SocialProofToast";
-import TrackedLPLink from "@/components/lp/TrackedLPLink";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Move Your 401(k) to Gold Tax-Free | 2026 Rollover Guide",
@@ -11,9 +10,6 @@ export const metadata: Metadata = {
         follow: false,
     },
 };
-
-// Augusta affiliate link for gold
-const AUGUSTA_GOLD_LINK = "https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129";
 
 // FAQ content specific to 401k rollovers
 const faqs = [
@@ -117,14 +113,14 @@ export default function GoldRolloverPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <TrackedLPLink
-                            href={AUGUSTA_GOLD_LINK}
+                        <LeadCaptureButton
+                            variant="401k"
                             source="lp-401k-gold-rollover-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Rollover Guide
                             <ArrowRight className="h-6 w-6" />
-                        </TrackedLPLink>
+                        </LeadCaptureButton>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Guide • No Obligation • Takes 2 Minutes
@@ -340,13 +336,13 @@ export default function GoldRolloverPage() {
                         </ul>
 
                         <div className="text-center mt-8">
-                            <TrackedLPLink
-                                href={AUGUSTA_GOLD_LINK}
+                            <LeadCaptureButton
+                                variant="401k"
                                 source="lp-401k-gold-rollover-middle"
                                 className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                             >
                                 Get Your Free Rollover Guide
-                            </TrackedLPLink>
+                            </LeadCaptureButton>
                         </div>
                     </div>
                 </div>
@@ -380,13 +376,13 @@ export default function GoldRolloverPage() {
                         Get your free rollover guide and learn how to move your retirement to gold — tax-free.
                     </p>
 
-                    <TrackedLPLink
-                        href={AUGUSTA_GOLD_LINK}
+                    <LeadCaptureButton
+                        variant="401k"
                         source="lp-401k-gold-rollover-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Rollover Guide
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
 
                     <div className="flex flex-wrap justify-center gap-6 mt-8 text-white/80 text-sm font-sans">
                         <span className="flex items-center gap-2">
@@ -418,7 +414,6 @@ export default function GoldRolloverPage() {
             </footer>
 
             {/* Social Proof Toast */}
-            <SocialProofToast variant="gold" />
         </div>
     );
 }

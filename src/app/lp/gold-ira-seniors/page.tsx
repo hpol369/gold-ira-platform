@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ShieldCheck, CheckCircle2, ArrowRight, Heart, Phone, Users, Clock, Shield, Award, Gem, HandHeart, Moon } from "lucide-react";
-import SocialProofToast from "@/components/lp/SocialProofToast";
-import TrackedLPLink from "@/components/lp/TrackedLPLink";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Gold IRA for Seniors Over 60 | The Safe-Haven Investment Guide",
@@ -11,9 +10,6 @@ export const metadata: Metadata = {
         follow: false,
     },
 };
-
-// Augusta affiliate link for gold
-const AUGUSTA_GOLD_LINK = "https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129";
 
 // FAQ content specific to seniors
 const faqs = [
@@ -121,14 +117,14 @@ export default function GoldIRASeniorsPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <TrackedLPLink
-                            href={AUGUSTA_GOLD_LINK}
+                        <LeadCaptureButton
+                            variant="seniors"
                             source="lp-gold-ira-seniors-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Senior&apos;s Guide
                             <ArrowRight className="h-6 w-6" />
-                        </TrackedLPLink>
+                        </LeadCaptureButton>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Guide • Phone Support • No Obligation
@@ -298,13 +294,13 @@ export default function GoldIRASeniorsPage() {
                         </ul>
 
                         <div className="text-center mt-8">
-                            <TrackedLPLink
-                                href={AUGUSTA_GOLD_LINK}
+                            <LeadCaptureButton
+                                variant="seniors"
                                 source="lp-gold-ira-seniors-middle"
                                 className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                             >
                                 Get Your Free Senior&apos;s Guide
-                            </TrackedLPLink>
+                            </LeadCaptureButton>
                         </div>
                     </div>
                 </div>
@@ -338,13 +334,13 @@ export default function GoldIRASeniorsPage() {
                         Join thousands of seniors who&apos;ve found peace of mind with a Gold IRA.
                     </p>
 
-                    <TrackedLPLink
-                        href={AUGUSTA_GOLD_LINK}
+                    <LeadCaptureButton
+                        variant="seniors"
                         source="lp-gold-ira-seniors-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Senior&apos;s Guide
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
 
                     <div className="flex flex-wrap justify-center gap-6 mt-8 text-white/80 text-sm font-sans">
                         <span className="flex items-center gap-2">
@@ -376,7 +372,6 @@ export default function GoldIRASeniorsPage() {
             </footer>
 
             {/* Social Proof Toast */}
-            <SocialProofToast variant="gold" />
         </div>
     );
 }

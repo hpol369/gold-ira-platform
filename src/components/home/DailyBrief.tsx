@@ -12,18 +12,19 @@ import {
   ExternalLink,
 } from "lucide-react";
 import type { DailyBriefData, SpotPrice } from "@/app/api/daily-brief/route";
+import Link from "next/link";
 
 function PriceCard({ data }: { data: SpotPrice }) {
   const isPositive = data.change > 0;
   const isNegative = data.change < 0;
 
-  const metalLabels = {
+  const metalLabels: Record<string, string> = {
     gold: "Gold",
     silver: "Silver",
     platinum: "Platinum",
   };
 
-  const metalColors = {
+  const metalColors: Record<string, string> = {
     gold: "amber",
     silver: "slate",
     platinum: "blue",
@@ -32,22 +33,21 @@ function PriceCard({ data }: { data: SpotPrice }) {
   const color = metalColors[data.metal];
 
   return (
-    <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 flex-1 min-w-[140px]">
-      <div className="flex items-center justify-between mb-2">
-        <span className={`text-${color}-400 font-semibold text-sm`}>
+    <div className="bg-white border border-slate-200 rounded-xl p-5 flex-1 min-w-[140px] shadow-sm hover:shadow-md transition-shadow">
+      <div className="flex items-center justify-between mb-3">
+        <span className="text-slate-600 font-bold text-sm uppercase tracking-wider">
           {metalLabels[data.metal]}
         </span>
-        {isPositive && <TrendingUp className="h-4 w-4 text-green-400" />}
-        {isNegative && <TrendingDown className="h-4 w-4 text-red-400" />}
+        {isPositive && <TrendingUp className="h-4 w-4 text-green-600" />}
+        {isNegative && <TrendingDown className="h-4 w-4 text-[#B22234]" />}
         {!isPositive && !isNegative && <Minus className="h-4 w-4 text-slate-400" />}
       </div>
-      <div className="text-xl md:text-2xl font-bold text-white">
+      <div className="text-2xl md:text-3xl font-serif font-black text-[#000080] mb-1">
         ${data.price.toLocaleString("en-US", { minimumFractionDigits: 2 })}
       </div>
       <div
-        className={`text-sm font-medium ${
-          isPositive ? "text-green-400" : isNegative ? "text-red-400" : "text-slate-400"
-        }`}
+        className={`text-sm font-bold ${isPositive ? "text-green-600" : isNegative ? "text-[#B22234]" : "text-slate-500"
+          }`}
       >
         {isPositive ? "+" : ""}
         {data.change.toFixed(2)} ({isPositive ? "+" : ""}
@@ -69,20 +69,20 @@ function HeadlineItem({
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="flex gap-4 items-start"
+      className="flex gap-4 items-start pb-4 border-b border-slate-100 last:border-0 last:pb-0"
     >
-      <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-sm">
+      <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#000080]/10 flex items-center justify-center text-[#000080] font-bold text-sm mt-0.5">
         {index + 1}
       </div>
       <div className="flex-1">
-        <h4 className="text-white font-semibold text-sm md:text-base mb-1">
+        <h4 className="text-[#000080] font-bold text-base mb-1 hover:text-[#B22234] transition-colors cursor-pointer">
           {headline.title}
         </h4>
-        <p className="text-slate-400 text-sm leading-relaxed">
+        <p className="text-slate-600 text-sm leading-relaxed font-medium">
           {headline.summary}
         </p>
         {headline.source && (
-          <span className="text-slate-500 text-xs mt-1 inline-block">
+          <span className="text-slate-400 text-xs mt-1.5 inline-block font-semibold">
             Source: {headline.source}
           </span>
         )}
@@ -118,47 +118,45 @@ export function DailyBrief() {
     return () => clearInterval(interval);
   }, []);
 
-  const sentimentColors = {
-    bullish: "text-green-400",
-    bearish: "text-red-400",
-    neutral: "text-slate-400",
+  const sentimentColors: Record<string, string> = {
+    bullish: "text-green-600 bg-green-50 border-green-200",
+    bearish: "text-[#B22234] bg-red-50 border-red-200",
+    neutral: "text-slate-600 bg-slate-50 border-slate-200",
   };
 
-  const sentimentLabels = {
+  const sentimentLabels: Record<string, string> = {
     bullish: "Bullish",
     bearish: "Bearish",
     neutral: "Neutral",
   };
 
   return (
-    <section className="py-12 md:py-16 bg-gradient-to-b from-slate-800/50 to-slate-900">
+    <section className="py-20 bg-slate-50 border-y border-slate-200">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-5xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
           {/* Header */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 border-b border-slate-200 pb-8">
             <div>
-              <div className="flex items-center gap-2 mb-2">
-                <Newspaper className="h-5 w-5 text-amber-400" />
-                <span className="text-amber-400 font-semibold text-sm uppercase tracking-wide">
+              <div className="flex items-center gap-2 mb-3">
+                <Newspaper className="h-5 w-5 text-[#B22234]" />
+                <span className="text-[#B22234] font-bold text-sm uppercase tracking-wide">
                   Daily Market Brief
                 </span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">
+              <h2 className="text-3xl md:text-4xl font-serif font-black text-[#000080]">
                 Today&apos;s Precious Metals Snapshot
               </h2>
             </div>
             {data && (
-              <div className="flex items-center gap-3 text-sm">
-                <span className="text-slate-400">Market Sentiment:</span>
-                <span
-                  className={`font-bold ${sentimentColors[data.marketSentiment]}`}
-                >
+              <div className={`flex items-center gap-3 px-4 py-2 rounded-lg border ${sentimentColors[data.marketSentiment]}`}>
+                <span className="text-sm font-bold text-slate-700">Market Sentiment:</span>
+                <span className="font-black text-sm uppercase">
                   {sentimentLabels[data.marketSentiment]}
                 </span>
               </div>
@@ -166,35 +164,42 @@ export function DailyBrief() {
           </div>
 
           {loading ? (
-            <div className="flex items-center justify-center py-12">
-              <RefreshCw className="h-8 w-8 text-amber-400 animate-spin" />
+            <div className="flex items-center justify-center py-20">
+              <RefreshCw className="h-10 w-10 text-[#000080] animate-spin" />
             </div>
           ) : error ? (
-            <div className="text-center py-12 text-slate-400">{error}</div>
+            <div className="text-center py-12 text-slate-500 font-medium">{error}</div>
           ) : data ? (
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-10">
               {/* Spot Prices */}
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-4">
+              <div className="bg-[#000080] rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+                {/* Texture */}
+                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 pointer-events-none"></div>
+
+                <h3 className="text-xl font-bold text-white mb-6 relative z-10 flex items-center gap-2">
+                  <TrendingUp className="h-5 w-5 text-amber-400" />
                   Live Spot Prices
                 </h3>
-                <div className="flex flex-wrap gap-4">
+
+                <div className="flex flex-col gap-4 relative z-10">
                   {data.spotPrices.map((price) => (
                     <PriceCard key={price.metal} data={price} />
                   ))}
                 </div>
-                <p className="text-slate-500 text-xs mt-4">
-                  Live prices • Auto-updates every 5 min. Last update:{" "}
-                  {new Date(data.generatedAt).toLocaleTimeString()}
-                </p>
+
+                <div className="mt-6 flex items-center gap-2 text-blue-200 text-xs font-medium relative z-10">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  Live prices • Auto-updates every 5 min
+                </div>
               </div>
 
               {/* Headlines */}
-              <div>
-                <h3 className="text-lg font-semibold text-white mb-4">
+              <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-bold text-[#000080] mb-6 flex items-center gap-2">
+                  <Newspaper className="h-5 w-5 text-slate-400" />
                   Key Market Developments
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-6">
                   {data.headlines.map((headline, index) => (
                     <HeadlineItem
                       key={index}
@@ -208,18 +213,18 @@ export function DailyBrief() {
           ) : null}
 
           {/* Bottom CTA */}
-          <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-slate-400 text-sm">
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+            <p className="text-slate-600 font-medium sm:text-lg">
               Understanding market trends helps you make informed decisions about
               protecting your retirement.
             </p>
-            <a
+            <Link
               href="/why-gold"
-              className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 font-semibold text-sm transition-colors"
+              className="inline-flex items-center gap-2 text-[#000080] hover:text-[#B22234] font-bold transition-colors whitespace-nowrap"
             >
               Learn Why Gold Matters
               <ExternalLink className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
         </motion.div>
       </Container>

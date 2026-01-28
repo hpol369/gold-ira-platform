@@ -1,50 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-  /* HOCKROLL THEME - Dark Forest / Fintech Glass */
+  /* PATRIOT THEME - Americana / Trust / Clarity */
+  /* Replaces previous "Hockroll" Dark Theme */
 
   /* Backgrounds */
-  --color-primary: #02040a;
-  /* Zero Black (Main BG) */
-  --color-primary-light: #0d1f18;
-  /* Deep Emerald (Cards) */
-  --color-primary-dark: #000000;
-  /* Pure Black */
+  --color-primary: #000080;
+  /* NAVY BLUE (Headers) */
+  --color-primary-light: #1a1a90;
+  --color-primary-dark: #000050;
 
   /* Accents */
-  --color-secondary: #d4af37;
-  /* Rich Gold (Brand Retention) */
-  --color-secondary-light: #f3e5ab;
-  --color-secondary-dark: #b8860b;
+  --color-secondary: #B22234;
+  /* WARNING RED (Buttons/Alerts) */
+  --color-secondary-light: #d44455;
+  --color-secondary-dark: #8b0000;
 
-  --color-accent: #10b981;
-  /* Electric Emerald (Primary Actions) */
-  --color-accent-light: #34d399;
-  /* Glows */
-  --color-accent-dark: #047857;
+  /* We keep the "Zero Black" available for footer/legacy but default is White */
+  --color-slate-900: #0f172a;
 
   /* Semantic Colors */
-  --color-background: #02040a;
-  /* Zero Black */
-  --color-background-paper: rgba(255, 255, 255, 0.03);
-  /* Glass Card */
-  --color-background-subtle: rgba(16, 185, 129, 0.1);
-  /* Emerald Tint */
+  --color-background: #ffffff;
+  /* Pure White */
+  --color-background-paper: #f8fafc;
+  /* Slate 50 (Cards) */
 
   /* Typography */
-  --color-text: #ffffff;
-  --color-text-muted: #94a3b8;
-  /* Slate 400 */
+  --color-text: #0f172a;
+  /* Slate 900 (Main Text) */
+  --color-text-muted: #475569;
+  /* Slate 600 (Subtext) */
   --color-text-light: #64748b;
   /* Slate 500 */
 
   --font-serif: var(--font-playfair), serif;
   --font-sans: var(--font-inter), sans-serif;
 
-  /* Animations */
+  /* Animations - Kept from previous theme for components that need it */
   --animate-fade-up: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-glow: glow 4s ease-in-out infinite alternate;
-  --animate-shimmer: shimmer 2.5s linear infinite;
 
   @keyframes fadeUp {
     from {
@@ -57,26 +51,6 @@
       transform: translateY(0);
     }
   }
-
-  @keyframes glow {
-    from {
-      box-shadow: 0 0 20px -10px rgba(16, 185, 129, 0.3);
-    }
-
-    to {
-      box-shadow: 0 0 30px 0px rgba(16, 185, 129, 0.6);
-    }
-  }
-
-  @keyframes shimmer {
-    0% {
-      background-position: -200% 0;
-    }
-
-    100% {
-      background-position: 200% 0;
-    }
-  }
 }
 
 @layer base {
@@ -87,11 +61,7 @@
 
   body {
     background-color: var(--color-background);
-    background-image:
-      radial-gradient(ellipse at 50% -10%, rgba(212, 175, 55, 0.12), transparent 50%),
-      radial-gradient(ellipse at 100% 30%, rgba(212, 175, 55, 0.06), transparent 40%),
-      radial-gradient(ellipse at 0% 70%, rgba(16, 185, 129, 0.04), transparent 40%);
-    background-attachment: fixed;
+    /* REMOVED: Dark Forest Gradient */
     color: var(--color-text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -105,45 +75,44 @@
   h6 {
     font-family: var(--font-serif);
     font-weight: 700;
-    color: var(--color-text);
+    color: var(--color-primary);
+    /* Headers are now Navy */
     letter-spacing: -0.02em;
   }
 
-  /* Float card hover effect */
-  .float-card:hover {
-    transform: translateY(-8px);
-    box-shadow:
-      0 20px 60px rgba(0, 0, 0, 0.4),
-      0 0 40px rgba(212, 175, 55, 0.15);
+  /* Patriot Card Utility */
+  .patriot-card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
   }
 
-  /* Glass premium hover */
-  .glass-premium:hover {
-    border-color: rgba(212, 175, 55, 0.3);
-    box-shadow:
-      0 12px 40px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.15),
-      0 0 30px rgba(212, 175, 55, 0.1);
+  .patriot-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
   }
 
-  /* Improved Prose for Glass Dark Mode */
+  /* Improved Prose for Light Mode */
   .prose {
     --tw-prose-body: var(--color-text-muted);
-    --tw-prose-headings: var(--color-text);
+    --tw-prose-headings: var(--color-primary);
     --tw-prose-lead: var(--color-text-muted);
-    --tw-prose-links: var(--color-accent);
+    --tw-prose-links: var(--color-secondary);
     --tw-prose-bold: var(--color-text);
     --tw-prose-counters: var(--color-text-muted);
-    --tw-prose-bullets: var(--color-text-light);
-    --tw-prose-hr: rgba(255, 255, 255, 0.1);
-    --tw-prose-quotes: var(--color-text);
-    --tw-prose-quote-borders: var(--color-accent);
+    --tw-prose-bullets: var(--color-secondary);
+    --tw-prose-hr: #e2e8f0;
+    --tw-prose-quotes: var(--color-primary);
+    --tw-prose-quote-borders: var(--color-primary);
     --tw-prose-captions: var(--color-text-light);
-    --tw-prose-code: var(--color-accent);
-    --tw-prose-pre-code: var(--color-text);
-    --tw-prose-pre-bg: rgba(0, 0, 0, 0.5);
-    --tw-prose-th-borders: rgba(255, 255, 255, 0.1);
-    --tw-prose-td-borders: rgba(255, 255, 255, 0.05);
+    --tw-prose-code: var(--color-secondary);
+    --tw-prose-pre-code: #e2e8f0;
+    --tw-prose-pre-bg: #1e293b;
+    --tw-prose-th-borders: #e2e8f0;
+    --tw-prose-td-borders: #f1f5f9;
   }
 }
 
@@ -151,91 +120,24 @@
   text-wrap: balance;
 }
 
-/* --- GLASS UTILITIES --- */
+/* --- COMPATIBILITY UTILITIES --- */
+/* Kept to prevent crashing components that use the old names */
 
-/* Base Glass Card */
 @utility glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
 }
 
-/* Hover Effect for Interactive Cards */
-@utility glass-card-hover {
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(16, 185, 129, 0.3);
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
-    transform: translateY(-2px);
-  }
-}
-
-/* High Visibility Panel (Sidebar/Verify) */
-@utility glass-panel {
-  background: rgba(13, 31, 24, 0.7);
-  /* Tinted Green Black */
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(16, 185, 129, 0.2);
-}
-
-/* Legacy Support - Mapping old utilities to new ones if needed */
-@utility section-dark {
-  background-color: transparent;
-  /* Let body gradient show through */
-}
-
-@utility section-dark-alt {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* ========================================
-   PREMIUM VISUAL UPGRADE UTILITIES
-   ======================================== */
-
-/* Premium Glass Card - Stronger effect */
 @utility glass-premium {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0.02) 100%
-  );
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border-radius: 1.5rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
 }
 
-/* Gold Glow Effect for CTAs */
+/* Gold Glow now becomes Red Shadow for urgency */
 @utility gold-glow {
-  box-shadow:
-    0 0 40px -10px rgba(212, 175, 55, 0.4),
-    0 0 80px -20px rgba(212, 175, 55, 0.2);
-}
-
-/* Soft Gold Glow - Subtler version */
-@utility gold-glow-soft {
-  box-shadow: 0 0 30px -10px rgba(212, 175, 55, 0.3);
-}
-
-/* Floating Card Animation */
-@utility float-card {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Note: hover effects need to be in regular CSS, not @utility */
-
-/* Gradient Border Effect */
-@utility gradient-border-gold {
-  position: relative;
-  border: 1px solid transparent;
-  background:
-    linear-gradient(var(--color-background), var(--color-background)) padding-box,
-    linear-gradient(135deg, rgba(212, 175, 55, 0.5), rgba(255, 255, 255, 0.1)) border-box;
+  box-shadow: 0 0 20px rgba(178, 34, 52, 0.2);
 }

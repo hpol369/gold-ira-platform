@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle, DollarSign, Building2, Percent, Info } from "lucide-react";
-import SocialProofToast from "@/components/lp/SocialProofToast";
-import TrackedLPLink from "@/components/lp/TrackedLPLink";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees Exposed: What Companies Don't Tell You | 2026",
@@ -58,7 +57,6 @@ function generateFAQSchema() {
 
 export default function GoldIRAFeesLandingPage() {
     const faqSchema = generateFAQSchema();
-    const affiliateLink = "https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129";
 
     return (
         <div className="min-h-screen bg-white text-slate-900 font-sans">
@@ -112,14 +110,14 @@ export default function GoldIRAFeesLandingPage() {
                     </div>
 
                     {/* CTA */}
-                    <TrackedLPLink
-                        href={affiliateLink}
+                    <LeadCaptureButton
+                        variant="fees"
                         source="lp-gold-ira-fees-hero"
                         className="inline-flex items-center gap-3 bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-lg hover:shadow-xl transition-all"
                     >
                         See Full Fee Breakdown
                         <ArrowRight className="h-6 w-6" />
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
                     <p className="text-sm text-slate-500 mt-4 flex items-center justify-center gap-2">
                         <ShieldCheck className="h-4 w-4 text-green-600" />
                         Free Guide - Zero Obligation
@@ -345,14 +343,14 @@ export default function GoldIRAFeesLandingPage() {
                         </div>
 
                         <div className="mt-8 pt-6 border-t border-slate-200 text-center">
-                            <TrackedLPLink
-                                href={affiliateLink}
+                            <LeadCaptureButton
+                                variant="fees"
                                 source="lp-gold-ira-fees-mid"
                                 className="inline-flex items-center gap-3 bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors"
                             >
                                 Get Augusta&apos;s Free Fee Guide
                                 <ArrowRight className="h-5 w-5" />
-                            </TrackedLPLink>
+                            </LeadCaptureButton>
                         </div>
                     </div>
                 </div>
@@ -382,14 +380,14 @@ export default function GoldIRAFeesLandingPage() {
                     <p className="text-slate-300 text-lg mb-8">
                         See exactly what each company charges—including the fees they don&apos;t advertise. Make an informed decision with complete transparency.
                     </p>
-                    <TrackedLPLink
-                        href={affiliateLink}
+                    <LeadCaptureButton
+                        variant="fees"
                         source="lp-gold-ira-fees-footer"
                         className="inline-flex items-center gap-3 bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all border-2 border-white/20"
                     >
                         Get Your Free Guide Now
                         <ArrowRight className="h-6 w-6" />
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
                     <p className="text-slate-400 mt-6 text-sm">
                         Strictly confidential. We respect your privacy.
                     </p>
@@ -405,7 +403,6 @@ export default function GoldIRAFeesLandingPage() {
             </footer>
 
             {/* Social Proof Toast */}
-            <SocialProofToast variant="gold" />
         </div>
     );
 }

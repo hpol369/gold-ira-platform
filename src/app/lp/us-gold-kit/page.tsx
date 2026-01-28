@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2 } from "lucide-react";
-import SocialProofToast from "@/components/lp/SocialProofToast";
-import TrackedLPLink from "@/components/lp/TrackedLPLink";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import DebtInfographic from "@/components/lp/DebtInfographic";
 
 export const metadata: Metadata = {
@@ -46,14 +44,14 @@ export default function PatriotGoldKitPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <TrackedLPLink
-                            href="https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129"
+                        <LeadCaptureButton
+                            variant="default"
                             source="lp-us-gold-kit-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Gold Kit
                             <ArrowRight className="h-8 w-8" />
-                        </TrackedLPLink>
+                        </LeadCaptureButton>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             100% Free & Secure • Zero Obligation
@@ -140,13 +138,13 @@ export default function PatriotGoldKitPage() {
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 font-serif">
                         Claim Your Free 2026 Wealth Protection Kit
                     </h2>
-                    <TrackedLPLink
-                        href="https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129"
+                    <LeadCaptureButton
+                        variant="default"
                         source="lp-us-gold-kit-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Send Me The Free Guide
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
                     <p className="text-slate-400 mt-6 text-sm">
                         Strictly confidential. We respect your privacy.
                     </p>
@@ -161,7 +159,6 @@ export default function PatriotGoldKitPage() {
             </footer>
 
             {/* Social Proof Toast */}
-            <SocialProofToast variant="gold" />
 
             {/* Exit Intent Popup */}
         </div>

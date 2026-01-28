@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, Menu, X, ChevronDown } from "lucide-react";
+import { ArrowRight, ShieldCheck, Menu, X, ChevronDown, Flag, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
@@ -19,28 +19,31 @@ export function Navbar() {
     const freshnessBadge = `Updated: ${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-900/95 backdrop-blur supports-[backdrop-filter]:bg-slate-900/80">
-            {/* Top Bar - Trust & Contact */}
-            <div className="bg-slate-800 py-2 text-white">
+        <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+            {/* Top Bar - Trust & Contact - PATRIOT STYLE */}
+            <div className="bg-slate-100 py-2 text-slate-600 border-b border-slate-200">
                 <Container>
-                    <div className="flex flex-col items-center justify-between gap-2 sm:flex-row text-xs sm:text-sm">
-                        <div className="flex items-center gap-4 opacity-90">
-                            <span className="flex items-center gap-1">
-                                <ShieldCheck className="h-3 w-3 sm:h-4 sm:w-4 text-amber-400" />
-                                <span className="text-slate-300">Secure & Private</span>
+                    <div className="flex flex-col items-center justify-between gap-2 sm:flex-row text-xs sm:text-sm font-medium">
+                        <div className="flex items-center gap-4">
+                            <span className="flex items-center gap-1.5 text-emerald-700 font-bold">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                </span>
+                                Live Market: Gold $2,421.50 (+1.2%)
                             </span>
-                            <span className="hidden sm:inline text-slate-600">|</span>
-                            <span className="hidden sm:inline text-slate-400">{freshnessBadge}</span>
+                            <span className="hidden sm:inline text-slate-300">|</span>
+                            <span className="hidden sm:flex items-center gap-1 text-[#000080]">
+                                <Flag className="h-3 w-3 fill-current" />
+                                American Owned & Operated
+                            </span>
                         </div>
-                        <a
-                            href={getTrackedLink(AFFILIATE_LINKS.augusta, "navbar-cta", "augusta")}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 font-semibold text-amber-400 hover:text-amber-300 transition-colors group"
-                        >
-                            <span>Free Gold IRA Kit + Guide</span>
-                            <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
-                        </a>
+                        <div className="flex items-center gap-4">
+                            <a href="tel:800-123-4567" className="flex items-center gap-1 hover:text-[#000080]">
+                                <Phone className="h-3 w-3" />
+                                <span className="hidden sm:inline">800-123-4567</span>
+                            </a>
+                        </div>
                     </div>
                 </Container>
             </div>
@@ -49,25 +52,26 @@ export function Navbar() {
             <div className="py-4">
                 <Container>
                     <div className="flex items-center justify-between">
-                        {/* Logo */}
+                        {/* Logo - PATRIOT STYLE (Navy/Red) */}
                         <Link href="/" className="flex items-center gap-2 group">
-                            <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-amber-500 text-slate-900 group-hover:bg-amber-400 transition-colors">
+                            <div className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-[#000080] text-white shadow-md shadow-blue-900/20 group-hover:bg-[#000060] transition-colors">
                                 <span className="font-serif font-bold text-lg">R</span>
                             </div>
-                            <span className="text-xl font-serif font-bold text-white tracking-tight hidden sm:block">
-                                Rich<span className="text-amber-400">Dad</span>Retirement
-                            </span>
+                            <div className="leading-tight">
+                                <div className="font-serif font-bold text-[#000080] text-lg tracking-tight">RICH DAD</div>
+                                <div className="text-[10px] font-bold text-[#B22234] tracking-widest uppercase">Retirement</div>
+                            </div>
                         </Link>
 
-                        {/* Desktop Navigation - Golden Circle: WHY → HOW → WHAT */}
+                        {/* Desktop Navigation - PATRIOT STYLE (Slate-600) */}
                         <nav className="hidden lg:flex items-center gap-6">
-                            <Link href="/why-gold" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                            <Link href="/why-gold" className="text-sm font-semibold text-slate-600 hover:text-[#000080] transition-colors">
                                 Why Gold?
                             </Link>
-                            <Link href="/what-is-a-gold-ira" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                            <Link href="/what-is-a-gold-ira" className="text-sm font-semibold text-slate-600 hover:text-[#000080] transition-colors">
                                 How It Works
                             </Link>
-                            <Link href="/best-gold-ira-companies" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                            <Link href="/best-gold-ira-companies" className="text-sm font-semibold text-slate-600 hover:text-[#000080] transition-colors">
                                 Best Companies
                             </Link>
 
@@ -77,155 +81,96 @@ export function Navbar() {
                                 onMouseEnter={() => setIsLearnOpen(true)}
                                 onMouseLeave={() => setIsLearnOpen(false)}
                             >
-                                <button className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors py-2">
+                                <button className="flex items-center gap-1 text-sm font-semibold text-slate-600 hover:text-[#000080] transition-colors py-2">
                                     Learn
                                     <ChevronDown className={`h-4 w-4 transition-transform ${isLearnOpen ? 'rotate-180' : ''}`} />
                                 </button>
                                 {isLearnOpen && (
                                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
-                                        <div className="w-[660px] bg-slate-800 border border-white/10 rounded-xl shadow-xl p-4">
-                                            <div className="grid grid-cols-3 gap-6">
+                                        <div className="w-[660px] bg-white border border-slate-200 rounded-xl shadow-xl p-6 ring-1 ring-slate-900/5">
+                                            <div className="grid grid-cols-3 gap-8">
                                                 {/* Column 1: Gold IRA Essentials */}
                                                 <div>
-                                                    <span className="block text-xs font-semibold text-amber-400 uppercase tracking-wide mb-2">Gold IRA Essentials</span>
-                                                    <Link href="/scenarios" className="block py-1.5 text-sm text-red-400 hover:text-red-300 font-medium">
+                                                    <span className="block text-xs font-bold text-[#000080] uppercase tracking-wide mb-3 border-b border-slate-100 pb-1">Gold IRA Essentials</span>
+                                                    <Link href="/scenarios" className="block py-1.5 text-sm text-[#B22234] hover:text-red-700 font-medium">
                                                         Crisis Scenarios
                                                     </Link>
-                                                    <Link href="/scams" className="block py-1.5 text-sm text-red-400 hover:text-red-300 font-medium">
+                                                    <Link href="/scams" className="block py-1.5 text-sm text-[#B22234] hover:text-red-700 font-medium">
                                                         Scam Protection Center
                                                     </Link>
-                                                    <Link href="/investigative-hub" className="block py-1.5 text-sm text-red-400 hover:text-red-300">
+                                                    <Link href="/investigative-hub" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Industry Red Flags
                                                     </Link>
-                                                    <Link href="/academy" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/academy" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Gold IRA Academy
                                                     </Link>
-                                                    <Link href="/learn" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/learn" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Learning Center
                                                     </Link>
-                                                    <Link href="/faq" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/faq" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         FAQ (60+ Questions)
                                                     </Link>
-                                                    <Link href="/glossary" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Glossary of Terms
-                                                    </Link>
 
-                                                    <div className="border-t border-white/10 my-3"></div>
-                                                    <span className="block text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2">401k & Rollovers</span>
-                                                    <Link href="/rollover" className="block py-1.5 text-sm text-blue-400 hover:text-blue-300 font-medium">
+                                                    <div className="border-t border-slate-100 my-3"></div>
+                                                    <span className="block text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">401k & Rollovers</span>
+                                                    <Link href="/rollover" className="block py-1.5 text-sm text-blue-600 hover:text-blue-800 font-medium">
                                                         401k Rollover Hub
                                                     </Link>
-                                                    <Link href="/best-gold-ira-for" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/best-gold-ira-for" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Best For Your Situation
-                                                    </Link>
-                                                    <Link href="/reviews" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Company Reviews
                                                     </Link>
                                                 </div>
 
                                                 {/* Column 2: Alternative IRAs */}
                                                 <div>
-                                                    <span className="block text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2 flex items-center gap-1">
-                                                        Silver Guides <span className="text-[10px] bg-slate-500/20 px-1 rounded">Part 3</span>
+                                                    <span className="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-3 border-b border-slate-100 pb-1">
+                                                        Silver & Crypto
                                                     </span>
-                                                    <Link href="/silver-ira" className="block py-1.5 text-sm text-slate-300 hover:text-white font-medium">
+                                                    <Link href="/silver-ira" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080] font-medium">
                                                         Silver IRA Hub
                                                     </Link>
-                                                    <Link href="/silver-retirement" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/silver-retirement" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Silver Retirement Planning
                                                     </Link>
-                                                    <Link href="/silver-coin-values" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/silver-coin-values" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Silver Coin Values
                                                     </Link>
-                                                    <Link href="/silver-dealer-reviews" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/silver-dealer-reviews" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Silver Dealer Reviews
                                                     </Link>
-                                                    <Link href="/buy-sell-silver" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Buy & Sell Silver Guide
-                                                    </Link>
-                                                    <Link href="/silver-products" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Silver Products Guide
-                                                    </Link>
-                                                    <Link href="/silver-price" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/silver-price" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Silver Price Predictions
                                                     </Link>
-                                                    <Link href="/silver-squeeze" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Silver Squeeze Hub
-                                                    </Link>
-                                                    <Link href="/best-silver-ira-companies" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Best Silver IRA Companies
-                                                    </Link>
 
-                                                    <div className="border-t border-white/10 my-3"></div>
-                                                    <span className="block text-xs font-semibold text-blue-400 uppercase tracking-wide mb-2 flex items-center gap-1">
-                                                        Crypto IRA <span className="text-[10px] bg-blue-500/20 px-1 rounded">New</span>
-                                                    </span>
-                                                    <Link href="/crypto-ira" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <div className="border-t border-slate-100 my-3"></div>
+                                                    <span className="block text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">Crypto IRA</span>
+                                                    <Link href="/crypto-ira" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Crypto IRA Guide
                                                     </Link>
-                                                    <Link href="/best-crypto-ira-companies" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Best Crypto IRA Companies
-                                                    </Link>
-                                                    <Link href="/reviews/itrustcapital" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        iTrustCapital Review
-                                                    </Link>
-
-                                                    <div className="border-t border-white/10 my-3"></div>
-                                                    <span className="block text-xs font-semibold text-green-400 uppercase tracking-wide mb-2 flex items-center gap-1">
-                                                        Self-Directed IRA <span className="text-[10px] bg-green-500/20 px-1 rounded">New</span>
-                                                    </span>
-                                                    <Link href="/self-directed-ira" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Self-Directed IRA Guide
-                                                    </Link>
-                                                    <Link href="/learn/checkbook-ira" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Checkbook IRA Explained
-                                                    </Link>
-                                                    <Link href="/reviews/rocket-dollar" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Rocket Dollar Review
+                                                    <Link href="/best-crypto-ira-companies" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
+                                                        Best Crypto Companies
                                                     </Link>
                                                 </div>
 
                                                 {/* Column 3: Business & Real Estate */}
                                                 <div>
-                                                    <span className="block text-xs font-semibold text-orange-400 uppercase tracking-wide mb-2 flex items-center gap-1">
-                                                        ROBS 401k <span className="text-[10px] bg-orange-500/20 px-1 rounded">New</span>
+                                                    <span className="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-3 border-b border-slate-100 pb-1">
+                                                        Self-Directed
                                                     </span>
-                                                    <Link href="/robs-401k" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/robs-401k" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         ROBS 401k Guide
                                                     </Link>
-                                                    <Link href="/reviews/guidant-financial" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Guidant Financial Review
-                                                    </Link>
-                                                    <Link href="/reviews/benetrends" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Benetrends Review
-                                                    </Link>
-
-                                                    <div className="border-t border-white/10 my-3"></div>
-                                                    <span className="block text-xs font-semibold text-teal-400 uppercase tracking-wide mb-2 flex items-center gap-1">
-                                                        Real Estate IRA <span className="text-[10px] bg-teal-500/20 px-1 rounded">New</span>
-                                                    </span>
-                                                    <Link href="/real-estate-ira" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/real-estate-ira" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Real Estate IRA Guide
                                                     </Link>
-                                                    <Link href="/learn/real-estate-ira-custodians" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Best RE IRA Custodians
-                                                    </Link>
-
-                                                    <div className="border-t border-white/10 my-3"></div>
-                                                    <span className="block text-xs font-semibold text-purple-400 uppercase tracking-wide mb-2 flex items-center gap-1">
-                                                        Solo 401k <span className="text-[10px] bg-purple-500/20 px-1 rounded">New</span>
-                                                    </span>
-                                                    <Link href="/solo-401k" className="block py-1.5 text-sm text-slate-300 hover:text-white">
+                                                    <Link href="/solo-401k" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
                                                         Solo 401k Guide
                                                     </Link>
-                                                    <Link href="/learn/solo-401k-contribution-limits" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Contribution Limits 2026
+                                                    <Link href="/learn/checkbook-ira" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
+                                                        Checkbook IRA
                                                     </Link>
-                                                    <Link href="/learn/solo-401k-vs-sep-ira" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Solo 401k vs SEP IRA
-                                                    </Link>
-                                                    <Link href="/learn/solo-401k-providers" className="block py-1.5 text-sm text-slate-300 hover:text-white">
-                                                        Best Providers
+                                                    <Link href="/self-directed-ira" className="block py-1.5 text-sm text-slate-600 hover:text-[#000080]">
+                                                        SDIRA Guide
                                                     </Link>
                                                 </div>
                                             </div>
@@ -234,7 +179,7 @@ export function Navbar() {
                                 )}
                             </div>
 
-                            <Link href="/news" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">
+                            <Link href="/news" className="text-sm font-semibold text-slate-600 hover:text-[#000080] transition-colors">
                                 News
                             </Link>
 
@@ -244,81 +189,67 @@ export function Navbar() {
                                 onMouseEnter={() => setIsToolsOpen(true)}
                                 onMouseLeave={() => setIsToolsOpen(false)}
                             >
-                                <button className="flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-white transition-colors py-2">
+                                <button className="flex items-center gap-1 text-sm font-semibold text-slate-600 hover:text-[#000080] transition-colors py-2">
                                     Tools
                                     <ChevronDown className={`h-4 w-4 transition-transform ${isToolsOpen ? 'rotate-180' : ''}`} />
                                 </button>
                                 {isToolsOpen && (
                                     <div className="absolute top-full right-0 pt-2 z-50">
-                                        <div className="w-72 bg-slate-800 border border-white/10 rounded-xl shadow-xl py-2">
+                                        <div className="w-72 bg-white border border-slate-200 rounded-xl shadow-xl py-2 ring-1 ring-slate-900/5">
                                             {/* FIRE Calculators */}
-                                            <span className="block px-4 py-1 text-xs font-semibold text-orange-400 uppercase tracking-wide">FIRE Calculators</span>
-                                            <Link href="/tools/fire-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                            <span className="block px-4 py-1 text-xs font-bold text-orange-500 uppercase tracking-wide">FIRE Calculators</span>
+                                            <Link href="/tools/fire-calculator" className="block px-4 py-2 text-sm text-slate-600 hover:text-[#000080] hover:bg-slate-50">
                                                 FIRE Calculator
                                             </Link>
-                                            <Link href="/tools/coast-fire-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                            <Link href="/tools/coast-fire-calculator" className="block px-4 py-2 text-sm text-slate-600 hover:text-[#000080] hover:bg-slate-50">
                                                 Coast FIRE Calculator
                                             </Link>
 
-                                            <div className="border-t border-white/10 my-2"></div>
+                                            <div className="border-t border-slate-100 my-2"></div>
 
                                             {/* Retirement Planning */}
-                                            <span className="block px-4 py-1 text-xs font-semibold text-blue-400 uppercase tracking-wide">Retirement Planning</span>
-                                            <Link href="/tools/retirement-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                            <span className="block px-4 py-1 text-xs font-bold text-blue-600 uppercase tracking-wide">Retirement Planning</span>
+                                            <Link href="/tools/retirement-calculator" className="block px-4 py-2 text-sm text-slate-600 hover:text-[#000080] hover:bg-slate-50">
                                                 Retirement Calculator
                                             </Link>
-                                            <Link href="/tools/rmd-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                            <Link href="/tools/rmd-calculator" className="block px-4 py-2 text-sm text-slate-600 hover:text-[#000080] hover:bg-slate-50">
                                                 RMD Calculator
                                             </Link>
 
-                                            <div className="border-t border-white/10 my-2"></div>
-
-                                            {/* Social Security */}
-                                            <span className="block px-4 py-1 text-xs font-semibold text-green-400 uppercase tracking-wide">Social Security</span>
-                                            <Link href="/tools/social-security-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                                Social Security Calculator
-                                            </Link>
-                                            <Link href="/tools/wep-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                                WEP Calculator
-                                            </Link>
-
-                                            <div className="border-t border-white/10 my-2"></div>
+                                            <div className="border-t border-slate-100 my-2"></div>
 
                                             {/* Gold IRA Tools */}
-                                            <span className="block px-4 py-1 text-xs font-semibold text-amber-400 uppercase tracking-wide">Gold IRA Tools</span>
-                                            <Link href="/tools/gold-ira-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
+                                            <span className="block px-4 py-1 text-xs font-bold text-[#000080] uppercase tracking-wide">Gold IRA Tools</span>
+                                            <Link href="/tools/gold-ira-calculator" className="block px-4 py-2 text-sm text-slate-600 hover:text-[#000080] hover:bg-slate-50">
                                                 Gold IRA Calculator
                                             </Link>
-                                            <Link href="/tools/gold-allocation-calculator" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                                Gold Allocation Calculator
-                                            </Link>
-
-                                            <div className="border-t border-white/10 my-2"></div>
-
-                                            <Link href="/tools" className="block px-4 py-2 text-sm text-amber-400 hover:text-amber-300 hover:bg-white/5 font-medium flex items-center gap-1">
+                                            <Link href="/tools" className="block px-4 py-2 text-sm text-[#B22234] hover:text-red-700 hover:bg-slate-50 font-medium flex items-center gap-1">
                                                 View All Tools
                                                 <ArrowRight className="h-3 w-3" />
-                                            </Link>
-                                            <Link href="/resources" className="block px-4 py-2 text-sm text-slate-300 hover:text-white hover:bg-white/5">
-                                                Resources & Guides
                                             </Link>
                                         </div>
                                     </div>
                                 )}
                             </div>
-                            <Button variant="gold" size="sm" asChild>
-                                <Link href="/get-started">Get Started</Link>
+
+                            {/* PATRIOT BUTTON */}
+                            <Button
+                                className="bg-[#B22234] hover:bg-[#8b1c2a] text-white shadow-md shadow-red-900/10 font-bold border-b-4 border-[#8b1c2a] active:border-b-0 active:translate-y-1 transition-all"
+                                size="sm"
+                                asChild
+                            >
+                                <Link href="/get-started">Get Free Gold Kit</Link>
                             </Button>
                         </nav>
 
                         {/* Mobile Controls */}
                         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
-                            <Button variant="gold" size="sm" asChild className="flex">
-                                <Link href="/get-started">Get Started</Link>
+                            <Button className="bg-[#B22234] text-white font-bold text-xs px-3" size="sm" asChild>
+                                <Link href="/get-started">Free Kit</Link>
                             </Button>
                             {/* Mobile Menu Button */}
                             <button
-                                className="p-2 text-white"
+                                className="p-2 text-slate-700"
                                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             >
                                 {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -330,280 +261,13 @@ export function Navbar() {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 w-full bg-slate-800 border-b border-white/10 py-4 px-4 shadow-xl max-h-[80vh] overflow-y-auto">
+                <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 py-4 px-4 shadow-xl max-h-[80vh] overflow-y-auto">
                     <div className="flex flex-col gap-2">
-                        <Link
-                            href="/why-gold"
-                            className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Why Gold?
-                        </Link>
-                        <Link
-                            href="/what-is-a-gold-ira"
-                            className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            How It Works
-                        </Link>
-                        <Link
-                            href="/best-gold-ira-companies"
-                            className="text-sm font-medium text-slate-300 hover:text-white py-2 border-b border-white/5"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Best Companies
-                        </Link>
-
-                        {/* Learn Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide">Learn</span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/scenarios" className="text-sm text-red-400 hover:text-red-300 py-1 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Crisis Scenarios
-                                </Link>
-                                <Link href="/scams" className="text-sm text-red-400 hover:text-red-300 py-1 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Scam Protection Center
-                                </Link>
-                                <Link href="/investigative-hub" className="text-sm text-red-400 hover:text-red-300 py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Industry Red Flags
-                                </Link>
-                                <Link href="/academy" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Gold IRA Academy
-                                </Link>
-                                <Link href="/learn" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Learning Center
-                                </Link>
-                                <Link href="/rollover" className="text-sm text-blue-400 hover:text-blue-300 py-1 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                                    401k Rollover Hub
-                                </Link>
-                                <Link href="/faq" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    FAQ Hub
-                                </Link>
-                                <Link href="/glossary" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Glossary
-                                </Link>
-                                <Link href="/best-gold-ira-for" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Best For You
-                                </Link>
-                                <Link href="/reviews" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Reviews
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Silver Guides Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wide flex items-center gap-1">
-                                Silver Guides <span className="text-[10px] bg-slate-500/20 px-1 rounded">Part 3</span>
-                            </span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/silver-ira" className="text-sm text-slate-300 hover:text-white py-1 font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver IRA Hub
-                                </Link>
-                                <Link href="/silver-retirement" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver Retirement Planning
-                                </Link>
-                                <Link href="/silver-coin-values" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver Coin Values
-                                </Link>
-                                <Link href="/silver-dealer-reviews" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver Dealer Reviews
-                                </Link>
-                                <Link href="/buy-sell-silver" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Buy & Sell Silver Guide
-                                </Link>
-                                <Link href="/silver-products" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver Products Guide
-                                </Link>
-                                <Link href="/silver-price" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver Price Predictions
-                                </Link>
-                                <Link href="/silver-squeeze" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Silver Squeeze Hub
-                                </Link>
-                                <Link href="/best-silver-ira-companies" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Best Silver IRA Companies
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Crypto IRA Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-blue-400 uppercase tracking-wide flex items-center gap-1">
-                                Crypto IRA <span className="text-[10px] bg-blue-500/20 px-1 rounded">New</span>
-                            </span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/crypto-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Crypto IRA Guide
-                                </Link>
-                                <Link href="/best-crypto-ira-companies" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Best Crypto IRA Companies
-                                </Link>
-                                <Link href="/reviews/itrustcapital" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    iTrustCapital Review
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Self-Directed IRA Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-green-400 uppercase tracking-wide flex items-center gap-1">
-                                Self-Directed IRA <span className="text-[10px] bg-green-500/20 px-1 rounded">New</span>
-                            </span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/self-directed-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Self-Directed IRA Guide
-                                </Link>
-                                <Link href="/learn/checkbook-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Checkbook IRA Explained
-                                </Link>
-                                <Link href="/reviews/rocket-dollar" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Rocket Dollar Review
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* ROBS 401k Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-orange-400 uppercase tracking-wide flex items-center gap-1">
-                                ROBS 401k <span className="text-[10px] bg-orange-500/20 px-1 rounded">New</span>
-                            </span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/robs-401k" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    ROBS 401k Guide
-                                </Link>
-                                <Link href="/reviews/guidant-financial" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Guidant Financial Review
-                                </Link>
-                                <Link href="/reviews/benetrends" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Benetrends Review
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Real Estate IRA Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-teal-400 uppercase tracking-wide flex items-center gap-1">
-                                Real Estate IRA <span className="text-[10px] bg-teal-500/20 px-1 rounded">New</span>
-                            </span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/real-estate-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Real Estate IRA Guide
-                                </Link>
-                                <Link href="/learn/real-estate-ira-custodians" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Best RE IRA Custodians
-                                </Link>
-                                <Link href="/learn/buy-rental-property-with-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Buy Rental Property
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Solo 401k Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-purple-400 uppercase tracking-wide flex items-center gap-1">
-                                Solo 401k <span className="text-[10px] bg-purple-500/20 px-1 rounded">New</span>
-                            </span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/solo-401k" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Solo 401k Guide
-                                </Link>
-                                <Link href="/learn/solo-401k-contribution-limits" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Contribution Limits 2026
-                                </Link>
-                                <Link href="/learn/solo-401k-vs-sep-ira" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Solo 401k vs SEP IRA
-                                </Link>
-                                <Link href="/learn/solo-401k-providers" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Best Providers
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* News Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide flex items-center gap-1">
-                                Daily Briefing <span className="text-[10px] bg-amber-500/20 px-1 rounded">Live</span>
-                            </span>
-                            <div className="mt-2 flex flex-col gap-1 pl-2">
-                                <Link href="/news" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Latest News
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Tools Section */}
-                        <div className="py-2 border-b border-white/5">
-                            <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide">Tools</span>
-
-                            {/* FIRE Calculators */}
-                            <div className="mt-2 pl-2">
-                                <span className="text-xs text-orange-400 font-medium">FIRE Calculators</span>
-                                <div className="flex flex-col gap-1 pl-2 mt-1">
-                                    <Link href="/tools/fire-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        FIRE Calculator
-                                    </Link>
-                                    <Link href="/tools/coast-fire-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        Coast FIRE Calculator
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Retirement Planning */}
-                            <div className="mt-2 pl-2">
-                                <span className="text-xs text-blue-400 font-medium">Retirement Planning</span>
-                                <div className="flex flex-col gap-1 pl-2 mt-1">
-                                    <Link href="/tools/retirement-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        Retirement Calculator
-                                    </Link>
-                                    <Link href="/tools/rmd-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        RMD Calculator
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Social Security */}
-                            <div className="mt-2 pl-2">
-                                <span className="text-xs text-green-400 font-medium">Social Security</span>
-                                <div className="flex flex-col gap-1 pl-2 mt-1">
-                                    <Link href="/tools/social-security-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        Social Security Calculator
-                                    </Link>
-                                    <Link href="/tools/wep-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        WEP Calculator
-                                    </Link>
-                                </div>
-                            </div>
-
-                            {/* Gold IRA Tools */}
-                            <div className="mt-2 pl-2">
-                                <span className="text-xs text-amber-400 font-medium">Gold IRA Tools</span>
-                                <div className="flex flex-col gap-1 pl-2 mt-1">
-                                    <Link href="/tools/gold-ira-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        Gold IRA Calculator
-                                    </Link>
-                                    <Link href="/tools/gold-allocation-calculator" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                        Gold Allocation Calculator
-                                    </Link>
-                                </div>
-                            </div>
-
-                            <div className="mt-2 pl-2">
-                                <Link href="/tools" className="text-sm text-amber-400 hover:text-amber-300 py-1 font-medium flex items-center gap-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    View All Tools
-                                    <ArrowRight className="h-3 w-3" />
-                                </Link>
-                                <Link href="/resources" className="text-sm text-slate-400 hover:text-white py-1" onClick={() => setIsMobileMenuOpen(false)}>
-                                    Resources & Guides
-                                </Link>
-                            </div>
-                        </div>
-
-                        <Button variant="gold" className="w-full mt-2" asChild>
-                            <Link href="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
-                                Get Started
-                            </Link>
-                        </Button>
+                        <Link href="/" className="text-slate-900 font-bold border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+                        <Link href="/guide/gold-ira-guide" className="text-slate-600 font-medium border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Gold IRA Guide</Link>
+                        <Link href="/reviews" className="text-slate-600 font-medium border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
+                        <Link href="/news" className="text-slate-600 font-medium border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>News</Link>
+                        <Button className="w-full bg-[#B22234] text-white mt-4">Get Free Gold Kit</Button>
                     </div>
                 </div>
             )}

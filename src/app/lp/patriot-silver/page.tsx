@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, DollarSign, Factory, BarChart } from "lucide-react";
-import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
-import SocialProofToast from "@/components/lp/SocialProofToast";
-import TrackedLPLink from "@/components/lp/TrackedLPLink";
+import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, DollarSign, Factory, BarChart } from "lucide-react";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Urgent Silver Alert | The 'Poor Man's Gold' Opportunity",
@@ -57,14 +54,14 @@ export default function PatriotSilverKitPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <TrackedLPLink
-                            href="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                        <LeadCaptureButton
+                            variant="silver"
                             source="lp-patriot-silver-hero"
                             className="bg-[#000080] hover:bg-[#000060] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(0,0,50)] hover:shadow-[0_2px_0_rgb(0,0,50)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Silver Kit
                             <ArrowRight className="h-8 w-8" />
-                        </TrackedLPLink>
+                        </LeadCaptureButton>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             100% Free • Zero Obligation • A+ BBB Rated
@@ -127,13 +124,13 @@ export default function PatriotSilverKitPage() {
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 font-serif">
                         Claim Your Free 2026 Silver Guide
                     </h2>
-                    <TrackedLPLink
-                        href="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                    <LeadCaptureButton
+                        variant="silver"
                         source="lp-patriot-silver-footer"
                         className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Yes! Send Me The Guide
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
                     <p className="text-white/80 mt-6 text-sm">
                         Join 50,000+ Americans who have switched to physical metals.
                     </p>
@@ -148,7 +145,6 @@ export default function PatriotSilverKitPage() {
             </footer>
 
             {/* Social Proof Toast */}
-            <SocialProofToast variant="silver" />
 
             {/* Exit Intent Popup */}
         </div>

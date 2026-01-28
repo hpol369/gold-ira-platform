@@ -1,7 +1,9 @@
 // src/app/api/submit-lead/route.ts
-// Submits lead to Augusta's form and stores locally
+// Stores lead in Supabase, sends Telegram notification, and submits to Augusta
 
 import { NextRequest, NextResponse } from "next/server";
+import { sendTelegramNotification } from "@/lib/notifications";
+import { insertLead, updateLeadStatus, Lead } from "@/lib/supabase";
 
 const AUGUSTA_FORM_URL = "https://www.augustapreciousmetals.com/instant-download-thank-you-high/";
 
@@ -20,61 +22,122 @@ interface LeadData {
   source?: string;
 }
 
+async function sendLeadNotification(lead: Lead, isNew: boolean = true) {
+  const timestamp = new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" });
+
+  const message = `🎯 <b>${isNew ? "NEW LEAD CAPTURED" : "LEAD SENT TO AUGUSTA"}</b>
+
+👤 <b>Name:</b> ${lead.first_name} ${lead.last_name || ""}
+📧 <b>Email:</b> ${lead.email}
+📱 <b>Phone:</b> ${lead.phone}
+📍 <b>Source:</b> ${lead.source || "unknown"}
+🕐 <b>Time:</b> ${timestamp}
+🆔 <b>Lead ID:</b> ${lead.id?.slice(0, 8)}...
+
+${isNew ? "💾 <i>Saved to database</i>" : "✅ <i>Submitted to Augusta - they will call!</i>"}`;
+
+  await sendTelegramNotification(message, true); // urgent = true
+}
+
+async function submitToAugusta(lead: Lead, userAgent: string): Promise<boolean> {
+  const formData = new URLSearchParams({
+    first_name: lead.first_name,
+    last_name: lead.last_name || "",
+    email: lead.email,
+    phone_number: lead.phone,
+    ...AFFILIATE_PARAMS,
+    optin_page: lead.source || "richdadretirement.com/get-started",
+  });
+
+  try {
+    const augustaResponse = await fetch(AUGUSTA_FORM_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": userAgent,
+        "Origin": "https://learn.augustapreciousmetals.com",
+        "Referer": "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3",
+      },
+      body: formData.toString(),
+      redirect: "manual",
+    });
+
+    // Log full response for debugging
+    const responseText = await augustaResponse.text();
+    console.log("[AUGUSTA] Status:", augustaResponse.status);
+    console.log("[AUGUSTA] Headers:", Object.fromEntries(augustaResponse.headers.entries()));
+    console.log("[AUGUSTA] Body (first 500 chars):", responseText.slice(0, 500));
+
+    // Augusta typically redirects on success (302/303)
+    return augustaResponse.status >= 200 && augustaResponse.status < 400;
+  } catch (error) {
+    console.error("[AUGUSTA] Submit error:", error);
+    return false;
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body: LeadData = await request.json();
 
     // Validate required fields
-    if (!body.firstName || !body.lastName || !body.email || !body.phone) {
+    if (!body.firstName || !body.email || !body.phone) {
       return NextResponse.json(
         { success: false, error: "Missing required fields" },
         { status: 400 }
       );
     }
 
-    // Build form data for Augusta
-    const formData = new URLSearchParams({
+    // Get request metadata
+    const userAgent = request.headers.get("user-agent") || "Mozilla/5.0";
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0] ||
+               request.headers.get("x-real-ip") ||
+               "unknown";
+
+    // 1. Insert lead into Supabase
+    const leadData: Omit<Lead, "id" | "created_at"> = {
       first_name: body.firstName,
-      last_name: body.lastName,
+      last_name: body.lastName || "",
       email: body.email,
-      phone_number: body.phone,
-      ...AFFILIATE_PARAMS,
-      // Additional tracking
-      optin_page: body.source || "richdadretirement.com",
-    });
+      phone: body.phone,
+      source: body.source || "unknown",
+      ip_address: ip,
+      user_agent: userAgent,
+      status: "new",
+    };
 
-    // Submit to Augusta
-    const augustaResponse = await fetch(AUGUSTA_FORM_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": request.headers.get("user-agent") || "Mozilla/5.0",
-        "Origin": "https://learn.augustapreciousmetals.com",
-        "Referer": "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3",
-      },
-      body: formData.toString(),
-      redirect: "manual", // Don't follow redirects
-    });
+    const lead = await insertLead(leadData);
 
-    // Augusta typically redirects on success (302/303)
-    const isSuccess = augustaResponse.status >= 200 && augustaResponse.status < 400;
-
-    if (isSuccess) {
-      return NextResponse.json({
-        success: true,
-        message: "Lead submitted successfully",
-        augustaStatus: augustaResponse.status,
-      });
-    } else {
-      // Log for debugging but don't expose to client
-      console.error("Augusta submission failed:", augustaResponse.status);
-
-      return NextResponse.json({
-        success: false,
-        error: "Submission failed",
-        augustaStatus: augustaResponse.status,
-      }, { status: 500 });
+    if (!lead) {
+      console.error("[LEAD] Failed to insert into Supabase");
+      return NextResponse.json(
+        { success: false, error: "Database error" },
+        { status: 500 }
+      );
     }
+
+    // 2. Send Telegram notification (new lead captured)
+    sendLeadNotification(lead, true).catch(err =>
+      console.error("[TELEGRAM ERROR]", err)
+    );
+
+    // 3. Augusta submission DISABLED - waiting for correct endpoint from Frieda
+    // TODO: Re-enable once Augusta confirms the correct API endpoint
+    // const augustaSuccess = await submitToAugusta(lead, userAgent);
+
+    console.log("[AUGUSTA DISABLED] Lead saved to Supabase for manual upload:", lead.email);
+
+    // Update status to indicate manual upload needed
+    await updateLeadStatus(lead.id!, "new", {
+      notes: "Augusta auto-submit disabled - upload manually to Augusta dashboard",
+    });
+
+    return NextResponse.json({
+      success: true,
+      message: "Lead captured - pending manual upload to Augusta",
+      leadId: lead.id,
+    });
+
   } catch (error) {
     console.error("Lead submission error:", error);
     return NextResponse.json(

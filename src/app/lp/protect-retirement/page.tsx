@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingDown, DollarSign, Shield, Clock, Phone, Award } from "lucide-react";
-import SocialProofToast from "@/components/lp/SocialProofToast";
-import TrackedLPLink from "@/components/lp/TrackedLPLink";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Is Your Retirement Protected From the Next Crash? | 2026 Guide",
@@ -11,9 +10,6 @@ export const metadata: Metadata = {
         follow: false,
     },
 };
-
-// Augusta affiliate link for gold
-const AUGUSTA_GOLD_LINK = "https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129";
 
 // FAQ content specific to retirement protection
 const faqs = [
@@ -117,14 +113,14 @@ export default function ProtectRetirementPage() {
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
-                        <TrackedLPLink
-                            href={AUGUSTA_GOLD_LINK}
+                        <LeadCaptureButton
+                            variant="protect"
                             source="lp-protect-retirement-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             See How to Protect Your Retirement
                             <ArrowRight className="h-6 w-6" />
-                        </TrackedLPLink>
+                        </LeadCaptureButton>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Guide • No Obligation • Takes 2 Minutes
@@ -262,13 +258,13 @@ export default function ProtectRetirementPage() {
                         </ul>
 
                         <div className="text-center mt-8">
-                            <TrackedLPLink
-                                href={AUGUSTA_GOLD_LINK}
+                            <LeadCaptureButton
+                                variant="protect"
                                 source="lp-protect-retirement-middle"
                                 className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                             >
                                 Get Your Free Protection Guide
-                            </TrackedLPLink>
+                            </LeadCaptureButton>
                         </div>
                     </div>
                 </div>
@@ -302,13 +298,13 @@ export default function ProtectRetirementPage() {
                         The best time to protect your retirement was yesterday. The second best time is now.
                     </p>
 
-                    <TrackedLPLink
-                        href={AUGUSTA_GOLD_LINK}
+                    <LeadCaptureButton
+                        variant="protect"
                         source="lp-protect-retirement-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Protect Your Retirement Now
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
 
                     <div className="flex flex-wrap justify-center gap-6 mt-8 text-white/80 text-sm font-sans">
                         <span className="flex items-center gap-2">
@@ -340,7 +336,6 @@ export default function ProtectRetirementPage() {
             </footer>
 
             {/* Social Proof Toast */}
-            <SocialProofToast variant="gold" />
         </div>
     );
 }

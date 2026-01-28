@@ -1,5 +1,5 @@
 // src/components/cta/StickyMobileCTA.tsx
-// Sticky bottom CTA bar for mobile - appears after scrolling
+// Sticky bottom CTA bar for mobile - Patriot Light Theme
 // Logic: Augusta review = direct CTA, competitor review = steal traffic to Augusta
 
 "use client";
@@ -39,16 +39,15 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
-      {/* Gradient fade effect */}
-      <div className="absolute -top-8 left-0 right-0 h-8 bg-gradient-to-t from-slate-900 to-transparent pointer-events-none" />
+    <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
+      {/* Gradient fade effect removed for clean look */}
 
-      <div className="bg-slate-900/95 backdrop-blur-lg border-t border-white/10 px-4 py-3 safe-area-pb">
+      <div className="bg-white/95 backdrop-blur-lg border-t border-slate-200 px-4 py-3 safe-area-pb">
         <div className="flex items-center gap-3">
           {/* Dismiss button */}
           <button
             onClick={() => setIsDismissed(true)}
-            className="p-1.5 text-slate-500 hover:text-slate-300 transition-colors"
+            className="p-1.5 text-slate-400 hover:text-slate-600 transition-colors"
             aria-label="Dismiss"
           >
             <X className="h-4 w-4" />
@@ -58,11 +57,11 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
             // Augusta review - Direct CTA
             <>
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-1.5 text-amber-400 text-xs font-semibold">
-                  <Star className="h-3 w-3 fill-amber-400" />
+                <div className="flex items-center gap-1.5 text-amber-600 text-xs font-bold">
+                  <Star className="h-3 w-3 fill-amber-500 text-amber-500" />
                   <span>Our #1 Pick</span>
                 </div>
-                <p className="text-white text-sm font-medium truncate">
+                <p className="text-slate-900 text-sm font-bold truncate">
                   Get Your Free Gold IRA Kit
                 </p>
               </div>
@@ -70,7 +69,7 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                 href={trackedLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-bold text-sm rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all whitespace-nowrap"
+                className="flex items-center gap-2 px-4 py-2.5 bg-[#B22234] text-white font-bold text-sm rounded-lg hover:bg-[#8b1c2a] transition-all whitespace-nowrap shadow-sm"
               >
                 Get Free Kit
                 <ArrowRight className="h-4 w-4" />
@@ -80,11 +79,11 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
             // Competitor review - Steal traffic to Augusta
             <>
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-1.5 text-green-400 text-xs font-semibold">
-                  <Shield className="h-3 w-3" />
+                <div className="flex items-center gap-1.5 text-green-600 text-xs font-bold">
+                  <Shield className="h-3 w-3 fill-green-100" />
                   <span>Better Alternative?</span>
                 </div>
-                <p className="text-white text-sm font-medium truncate">
+                <p className="text-slate-900 text-sm font-bold truncate">
                   See why Augusta is rated #1
                 </p>
               </div>
@@ -92,7 +91,7 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                 href={trackedLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-sm rounded-lg hover:from-green-600 hover:to-green-700 transition-all whitespace-nowrap"
+                className="flex items-center gap-2 px-4 py-2.5 bg-green-600 text-white font-bold text-sm rounded-lg hover:bg-green-700 transition-all whitespace-nowrap shadow-sm"
               >
                 Compare
                 <ArrowRight className="h-4 w-4" />

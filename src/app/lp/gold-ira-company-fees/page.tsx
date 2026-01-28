@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, XCircle, Star, Trophy, ChevronDown } from "lucide-react";
-import SocialProofToast from "@/components/lp/SocialProofToast";
-import TrackedLPLink from "@/components/lp/TrackedLPLink";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Gold IRA Company Fees Compared: Birch vs Goldco vs Augusta | 2026",
@@ -128,7 +127,6 @@ function generateFAQSchema() {
 
 export default function GoldIRACompanyFeesPage() {
     const faqSchema = generateFAQSchema();
-    const affiliateLink = "https://learn.augustapreciousmetals.com/gold-ira-2?apmtrkr_cid=1696&aff_id=5129";
 
     return (
         <div className="min-h-screen bg-white text-slate-900 font-sans">
@@ -181,14 +179,14 @@ export default function GoldIRACompanyFeesPage() {
                     </div>
 
                     {/* CTA */}
-                    <TrackedLPLink
-                        href={affiliateLink}
+                    <LeadCaptureButton
+                        variant="compare"
                         source="lp-gold-ira-company-fees-hero"
                         className="inline-flex items-center gap-3 bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-lg hover:shadow-xl transition-all"
                     >
                         See The Comparison
                         <ArrowRight className="h-6 w-6" />
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
                     <p className="text-sm text-slate-500 mt-4 flex items-center justify-center gap-2">
                         <ShieldCheck className="h-4 w-4 text-green-600" />
                         Free Comparison Guide - Zero Obligation
@@ -338,14 +336,14 @@ export default function GoldIRACompanyFeesPage() {
 
                                     {company.highlight && (
                                         <div className="mt-6 pt-4 border-t border-slate-100 text-center">
-                                            <TrackedLPLink
-                                                href={affiliateLink}
+                                            <LeadCaptureButton
+                                                variant="compare"
                                                 source="lp-gold-ira-company-fees-augusta"
                                                 className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                                             >
                                                 Learn More About Augusta
                                                 <ArrowRight className="h-4 w-4" />
-                                            </TrackedLPLink>
+                                            </LeadCaptureButton>
                                         </div>
                                     )}
                                 </div>
@@ -392,14 +390,14 @@ export default function GoldIRACompanyFeesPage() {
                         <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
                             While other companies may have lower minimums or advertise lower fees, Augusta&apos;s combination of transparency, zero complaints, and fee waivers makes them the best long-term value for serious investors ($50K+).
                         </p>
-                        <TrackedLPLink
-                            href={affiliateLink}
+                        <LeadCaptureButton
+                            variant="compare"
                             source="lp-gold-ira-company-fees-mid"
                             className="inline-flex items-center gap-3 bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors"
                         >
                             Get Your Free Consultation
                             <ArrowRight className="h-5 w-5" />
-                        </TrackedLPLink>
+                        </LeadCaptureButton>
                     </div>
                 </div>
             </section>
@@ -428,14 +426,14 @@ export default function GoldIRACompanyFeesPage() {
                     <p className="text-slate-300 text-lg mb-8">
                         Stop wondering about fees. Talk to Augusta&apos;s team and get transparent pricing for your specific situation—no obligation.
                     </p>
-                    <TrackedLPLink
-                        href={affiliateLink}
+                    <LeadCaptureButton
+                        variant="compare"
                         source="lp-gold-ira-company-fees-footer"
                         className="inline-flex items-center gap-3 bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all border-2 border-white/20"
                     >
                         Get Your Free Consultation
                         <ArrowRight className="h-6 w-6" />
-                    </TrackedLPLink>
+                    </LeadCaptureButton>
                     <p className="text-slate-400 mt-6 text-sm">
                         Strictly confidential. We respect your privacy.
                     </p>
@@ -451,7 +449,6 @@ export default function GoldIRACompanyFeesPage() {
             </footer>
 
             {/* Social Proof Toast */}
-            <SocialProofToast variant="gold" />
         </div>
     );
 }

@@ -3,7 +3,6 @@
 import { Star } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 
 const testimonials = [
     {
@@ -30,73 +29,80 @@ const testimonials = [
         rating: 5,
         highlight: "Stability",
     },
+    {
+        id: 4,
+        name: "Gary P.",
+        location: "Ohio",
+        text: "My 401(k) took a beating in 2008. I swore I wouldn't let it happen again. Now I have physical gold in a secure depository and I sleep much better at night.",
+        rating: 5,
+        highlight: "Secure protection",
+    },
+    {
+        id: 5,
+        name: "Linda K.",
+        location: "Michigan",
+        text: "The tax benefits of the Gold IRA were explained clearly. I was able to transfer funds without paying a cent in penalty or taxes.",
+        rating: 5,
+        highlight: "Tax advantages",
+    },
+    {
+        id: 6,
+        name: "Thomas B.",
+        location: "North Carolina",
+        text: "Professional, courteous, and no pressure. They answered all my questions and guided me through the paperwork. First class service.",
+        rating: 5,
+        highlight: "No pressure",
+    }
 ];
 
 export function Testimonials() {
     return (
-        <section className="relative py-32 bg-slate-800/50 overflow-hidden">
-            {/* Ambient gold glow behind section */}
-            <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-amber-500/5 via-amber-400/10 to-amber-500/5 blur-3xl rounded-full" />
-            </div>
-
-            {/* Floating orbs for subtle decoration */}
-            <FloatingOrbs variant="minimal" />
+        <section className="relative py-24 bg-slate-50 border-t border-slate-200 overflow-hidden">
+            {/* Patriot Wash */}
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/noise.png')] opacity-[0.015] pointer-events-none"></div>
 
             <Container className="relative z-10">
                 <FadeIn>
                     <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-3xl font-serif font-bold text-white md:text-4xl">
+                        <h2 className="text-3xl font-serif font-black text-[#000080] md:text-5xl">
                             Trusted by American Retirees
                         </h2>
-                        <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+                        <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
                             See why thousands of investors have switched to physical precious metals for their retirement security.
                         </p>
                     </div>
                 </FadeIn>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {testimonials.map((t, i) => (
+                    {testimonials.slice(0, 3).map((t, i) => (
                         <FadeIn key={t.id} delay={i * 0.1} className="h-full">
-                            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8
-                                           shadow-[0_8px_32px_rgba(0,0,0,0.3)]
-                                           hover:bg-white/[0.08] hover:-translate-y-1
-                                           hover:shadow-[0_12px_40px_rgba(0,0,0,0.4),0_0_30px_rgba(212,175,55,0.1)]
-                                           transition-all duration-300 h-full flex flex-col">
-                                {/* Quote mark with gold gradient */}
-                                <div className="text-5xl font-serif text-transparent bg-clip-text
-                                               bg-gradient-to-br from-amber-400 to-amber-600 opacity-50 leading-none mb-2">
-                                    &ldquo;
+                            <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-[#000080]/20 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col relative group">
+                                {/* Quote mark */}
+                                <div className="text-6xl font-serif text-slate-100 absolute top-4 right-6 group-hover:text-[#000080]/5 transition-colors">
+                                    &rdquo;
                                 </div>
 
-                                {/* Star ratings with gold glow animation */}
+                                {/* Star ratings */}
                                 <div className="flex gap-1 mb-6">
                                     {[...Array(5)].map((_, starIndex) => (
                                         <Star
                                             key={starIndex}
-                                            className="h-5 w-5 fill-amber-400 text-amber-400 drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]"
-                                            style={{
-                                                animation: `pulse 2s ease-in-out infinite`,
-                                                animationDelay: `${starIndex * 0.1}s`
-                                            }}
+                                            className="h-4 w-4 fill-amber-500 text-amber-500"
                                         />
                                     ))}
                                 </div>
 
-                                <p className="text-slate-300 leading-relaxed italic mb-6 flex-grow">
-                                    {t.text}
+                                <p className="text-slate-700 leading-relaxed font-medium mb-6 flex-grow relative z-10">
+                                    &ldquo;{t.text}&rdquo;
                                 </p>
 
-                                <div className="border-t border-white/10 pt-6 flex items-center gap-4">
-                                    {/* Avatar with gold ring glow */}
-                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400/20 to-amber-600/20
-                                                   flex items-center justify-center text-amber-400 font-bold text-lg
-                                                   ring-2 ring-amber-400/50 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                                <div className="border-t border-slate-100 pt-6 flex items-center gap-4">
+                                    <div className="w-10 h-10 rounded-full bg-[#000080]/10 flex items-center justify-center text-[#000080] font-bold">
                                         {t.name.charAt(0)}
                                     </div>
                                     <div>
-                                        <p className="font-bold text-white">{t.name}</p>
-                                        <p className="text-sm text-slate-500">{t.location}</p>
+                                        <p className="font-bold text-[#000080]">{t.name}</p>
+                                        <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">{t.location}</p>
                                     </div>
                                 </div>
                             </div>
