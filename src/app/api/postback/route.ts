@@ -91,10 +91,18 @@ async function handlePostback(request: NextRequest, method: string) {
     conversions.push(event);
 
     // Log for debugging (visible in Vercel logs)
-    console.log(`[POSTBACK] ${eventType}:`, JSON.stringify(event, null, 2));
+    console.log(`[POSTBACK] Received ${method} request`);
+    console.log(`[POSTBACK] Raw params:`, JSON.stringify(params, null, 2));
+    console.log(`[POSTBACK] Processed event:`, JSON.stringify(event, null, 2));
 
-    // Send notification
-    await sendNotification(event);
+    // Send notification (wrapped in try/catch to not lose postback on notification error)
+    try {
+      await sendNotification(event);
+      console.log(`[POSTBACK] Notification sent successfully`);
+    } catch (notifyError) {
+      console.error(`[POSTBACK] Notification failed:`, notifyError);
+      // Continue - don't fail the whole postback just because notification failed
+    }
 
     // Return success (Augusta expects 200 OK)
     return NextResponse.json({

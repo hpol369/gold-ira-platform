@@ -26,7 +26,9 @@ const eventConfig: Record<PostbackType, { emoji: string; label: string; priority
 };
 
 export async function sendNotification(event: PostbackEvent): Promise<void> {
-  const config = eventConfig[event.type];
+  // Fallback config for unknown event types
+  const defaultConfig = { emoji: "📩", label: "New Event", priority: "normal" };
+  const config = eventConfig[event.type] || defaultConfig;
 
   // Build message
   const message = formatMessage(event, config);
