@@ -65,7 +65,7 @@ export default function PatriotSilverKitPage() {
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
                         <TrackedLPLink
-                            href="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                            href="/lp/augusta-silver"
                             source="lp-patriot-silver-hero"
                             className="bg-[#000080] hover:bg-[#000060] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(0,0,50)] hover:shadow-[0_2px_0_rgb(0,0,50)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
@@ -135,7 +135,7 @@ export default function PatriotSilverKitPage() {
                         Claim Your Free 2026 Silver Guide
                     </h2>
                     <TrackedLPLink
-                        href="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                        href="/lp/augusta-silver"
                         source="lp-patriot-silver-footer"
                         className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
@@ -159,7 +159,7 @@ export default function PatriotSilverKitPage() {
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup
-                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                affiliateLink="/lp/augusta-silver"
                 variant="silver"
             />
         </div>

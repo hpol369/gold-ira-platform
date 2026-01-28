@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
 };
 
-const AFFILIATE_LINK = "https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129";
+const AFFILIATE_LINK = "/lp/augusta-silver";
 
 export default function SilverIRARolloverPage() {
     return (

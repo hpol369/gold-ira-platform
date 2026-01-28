@@ -58,7 +58,7 @@ function generateFAQSchema() {
     };
 }
 
-const AFFILIATE_LINK = "https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129";
+const AFFILIATE_LINK = "/lp/augusta-silver";
 
 export default function SilverIRAFeesPatriotPage() {
     const faqSchema = generateFAQSchema();
@@ -356,7 +356,7 @@ export default function SilverIRAFeesPatriotPage() {
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup
-                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
+                affiliateLink="/lp/augusta-silver"
                 variant="silver"
             />
         </div>
