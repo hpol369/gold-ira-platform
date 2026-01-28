@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { ReactNode, useMemo } from "react";
+import { ReactNode, useMemo, useRef } from "react";
 import { trackAffiliateClick, trackGoogleAdsConversion } from "@/lib/analytics";
 
 // Generate a short unique click ID
@@ -39,6 +38,9 @@ export default function TrackedLPLink({
     // Generate a unique click ID for tracking (stable per component instance)
     const clickId = useMemo(() => generateClickId(), []);
 
+    // Debounce: prevent multiple clicks
+    const hasClicked = useRef(false);
+
     // Combine source with click ID for tracking
     const sourceWithClickId = `${source}_${clickId}`;
 
@@ -50,19 +52,33 @@ export default function TrackedLPLink({
     // Build the tracked URL (for Telegram notification)
     const trackedUrl = `/api/track-click?url=${encodeURIComponent(destinationWithSubId)}&source=${encodeURIComponent(source)}&company=${company}&traffic=${traffic}&click_id=${clickId}`;
 
-    // Fire GA4 event + Google Ads conversion on click
-    const handleClick = () => {
+    // Fire GA4 event + Google Ads conversion on click (with debounce)
+    const handleClick = (e: React.MouseEvent) => {
+        // Prevent duplicate clicks
+        if (hasClicked.current) {
+            e.preventDefault();
+            return;
+        }
+        hasClicked.current = true;
+
+        // Fire analytics
         trackAffiliateClick(company, source, "cta");
         trackGoogleAdsConversion();
+
+        // Navigation will happen naturally via href
+        // Reset after 10 seconds in case user comes back
+        setTimeout(() => {
+            hasClicked.current = false;
+        }, 10000);
     };
 
     return (
-        <Link
+        <a
             href={trackedUrl}
             className={className}
             onClick={handleClick}
         >
             {children}
-        </Link>
+        </a>
     );
 }
