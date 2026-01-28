@@ -119,6 +119,16 @@ export async function GET(request: NextRequest) {
   // Log
   console.log(`[CLICK] ${trafficType.toUpperCase()} | ${company} | ${source} | ${device}`);
 
+  // Convert relative URLs to absolute (NextResponse.redirect requires absolute URLs)
+  let redirectUrl = destination;
+  if (destination.startsWith("/")) {
+    // Internal link - construct absolute URL from request
+    const protocol = request.headers.get("x-forwarded-proto") || "https";
+    const host = request.headers.get("host") || "richdadretirement.com";
+    redirectUrl = `${protocol}://${host}${destination}`;
+    console.log(`[CLICK] Internal redirect: ${redirectUrl}`);
+  }
+
   // Redirect
-  return NextResponse.redirect(destination, { status: 302 });
+  return NextResponse.redirect(redirectUrl, { status: 302 });
 }
