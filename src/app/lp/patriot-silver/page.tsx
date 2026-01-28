@@ -93,12 +93,12 @@ export default function PatriotSilverKitPage() {
                     <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                         <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
                             <Factory className="h-8 w-8 text-[#000080] mb-3" />
-                            <h3 className="font-bold text-lg mb-2">It Gets Used Up</h3>
+                            <h3 className="font-bold text-lg mb-2 text-[#000080]">It Gets Used Up</h3>
                             <p className="text-base text-slate-600">Unlike gold, 50%+ of all silver is consumed by industry (Solar, EVs, Tech). It's disappearing.</p>
                         </div>
                         <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
                             <BarChart className="h-8 w-8 text-[#000080] mb-3" />
-                            <h3 className="font-bold text-lg mb-2">The 80:1 Gap</h3>
+                            <h3 className="font-bold text-lg mb-2 text-[#000080]">The 80:1 Gap</h3>
                             <p className="text-base text-slate-600">Historically, 1oz Gold = 15oz Silver. Today it's 1oz Gold = 80oz Silver. That gap must close.</p>
                         </div>
                     </div>
