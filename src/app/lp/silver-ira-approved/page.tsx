@@ -169,7 +169,7 @@ export default function SilverIRAApprovedPatriotPage() {
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
                         <TrackedLPLink
-                            href="/lp/augusta-silver"
+                            href="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
                             source="lp-silver-ira-approved-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
@@ -340,7 +340,7 @@ export default function SilverIRAApprovedPatriotPage() {
                     </div>
 
                     <TrackedLPLink
-                        href="/lp/augusta-silver"
+                        href="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
                         source="lp-silver-ira-approved-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
@@ -365,7 +365,7 @@ export default function SilverIRAApprovedPatriotPage() {
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup
-                affiliateLink="/lp/augusta-silver"
+                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
                 variant="silver"
             />
         </div>

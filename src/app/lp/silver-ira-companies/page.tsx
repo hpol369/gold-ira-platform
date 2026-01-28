@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 // Augusta affiliate link for silver
-const AUGUSTA_SILVER_LINK = "/lp/augusta-silver";
+const AUGUSTA_SILVER_LINK = "https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129";
 
 // FAQ content specific to company comparison
 const faqs = [
@@ -309,7 +309,7 @@ export default function SilverIRACompaniesPatriotPage() {
 
             {/* Exit Intent Popup */}
             <ExitIntentPopup
-                affiliateLink="/lp/augusta-silver"
+                affiliateLink="https://learn.augustapreciousmetals.com/silver-ira?apmtrkr_cid=1696&aff_id=5129"
                 variant="silver"
             />
         </div>
