@@ -49,6 +49,7 @@ async function sendClickNotification(data: {
   trafficType: TrafficType;
   campaign?: string;
   location?: string;
+  clickId?: string;
 }) {
   // Traffic type indicators
   const trafficIndicators: Record<TrafficType, { emoji: string; label: string }> = {
@@ -60,10 +61,11 @@ async function sendClickNotification(data: {
   const indicator = trafficIndicators[data.trafficType];
   const campaignLine = data.campaign ? `\n🎯 <b>Campaign:</b> ${data.campaign}` : "";
   const locationLine = data.location ? `\n🌍 <b>Location:</b> ${data.location}` : "";
+  const clickIdLine = data.clickId ? `\n🔑 <b>Click ID:</b> ${data.clickId}` : "";
 
   const message = `${indicator.emoji} <b>${indicator.label} - ${data.company.toUpperCase()}</b>
 
-📍 <b>Source:</b> ${data.source}
+📍 <b>Source:</b> ${data.source}${clickIdLine}
 ${data.device}${locationLine}
 🕐 ${data.timestamp}${campaignLine}
 
@@ -80,6 +82,7 @@ export async function GET(request: NextRequest) {
   const company = searchParams.get("company") || "augusta";
   const traffic = searchParams.get("traffic") || undefined;
   const campaign = searchParams.get("campaign") || undefined;
+  const clickId = searchParams.get("click_id") || undefined;
 
   if (!destination) {
     return NextResponse.json({ error: "Missing url parameter" }, { status: 400 });
@@ -111,7 +114,7 @@ export async function GET(request: NextRequest) {
   const trafficType = detectTrafficType(referer, traffic);
 
   // Send notification (async, don't block redirect)
-  sendClickNotification({ company, source, device, timestamp, referer, trafficType, campaign, location });
+  sendClickNotification({ company, source, device, timestamp, referer, trafficType, campaign, location, clickId });
 
   // Log
   console.log(`[CLICK] ${trafficType.toUpperCase()} | ${company} | ${source} | ${device}`);

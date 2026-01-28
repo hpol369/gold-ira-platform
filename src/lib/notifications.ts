@@ -50,12 +50,26 @@ function formatMessage(
   event: PostbackEvent,
   config: { emoji: string; label: string }
 ): string {
+  // Extract click ID from sub_id if present (format: source_CLK-abc123)
+  let source = event.sub_id || "Unknown";
+  let clickId = "";
+
+  if (source.includes("_CLK-")) {
+    const parts = source.split("_CLK-");
+    source = parts[0];
+    clickId = `CLK-${parts[1]}`;
+  }
+
   const lines = [
     `${config.emoji} ${config.label}`,
     ``,
     `📅 Time: ${new Date(event.timestamp).toLocaleString()}`,
-    `📄 Source: ${event.sub_id || "Unknown"}`,
+    `📄 Source: ${source}`,
   ];
+
+  if (clickId) {
+    lines.push(`🔑 Click ID: ${clickId}`);
+  }
 
   if (event.location) {
     lines.push(`🌍 Location: ${event.location}`);
