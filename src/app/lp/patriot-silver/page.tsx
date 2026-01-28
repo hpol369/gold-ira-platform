@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, DollarSign, Factory, BarChart } from "lucide-react";
 import { INTERNAL_WARMUP_PAGES } from "@/config/affiliates";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
@@ -41,24 +40,19 @@ export default function PatriotSilverKitPage() {
                         Gold is for the wealthy. <strong>Silver is for the people.</strong> Discover why this "Essential Metal" might be the most undervalued asset in America.
                     </p>
 
-                    {/* VSL / Image Area */}
-                    <div className="relative aspect-video bg-black rounded-xl shadow-2xl overflow-hidden mb-10 border-4 border-white max-w-3xl mx-auto group cursor-pointer">
-                        {/* Placeholder for VSL - using the generated image as thumbnail */}
-                        <Image
-                            src="/patriot_silver_hero.png"
-                            alt="Silver and American Flag"
-                            fill
-                            className="object-cover opacity-80 group-hover:opacity-60 transition-opacity"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-20 h-20 bg-[#000080] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-white border-b-[15px] border-b-transparent ml-2"></div>
-                            </div>
+                    {/* Quick Stats */}
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans">
+                        <div className="text-center">
+                            <div className="text-3xl md:text-4xl font-black text-[#000080]">~$30</div>
+                            <div className="text-sm text-slate-600">Per Ounce (vs $2,400 Gold)</div>
                         </div>
-                        <div className="absolute bottom-4 left-0 right-0 text-center">
-                            <span className="bg-black/70 text-white px-4 py-1 rounded text-sm font-sans font-bold">
-                                WATCH: The 80:1 Silver Signal (3 Min)
-                            </span>
+                        <div className="text-center">
+                            <div className="text-3xl md:text-4xl font-black text-[#B22234]">80:1</div>
+                            <div className="text-sm text-slate-600">Historic Ratio Gap</div>
+                        </div>
+                        <div className="text-center">
+                            <div className="text-3xl md:text-4xl font-black text-[#000080]">50%+</div>
+                            <div className="text-sm text-slate-600">Industrial Use</div>
                         </div>
                     </div>
 

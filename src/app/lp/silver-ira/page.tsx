@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, Factory, Coins, BarChart3 } from "lucide-react";
 import ExitIntentPopup from "@/components/lp/ExitIntentPopup";
 import SocialProofToast from "@/components/lp/SocialProofToast";
@@ -95,23 +94,19 @@ export default function SilverIRAPage() {
                         Silver isn't just precious—it's <strong>essential</strong>. Over 50% goes to industry. Supply can't keep up with demand. Get our free 2026 silver investment guide.
                     </p>
 
-                    {/* VSL / Image Area */}
-                    <div className="relative aspect-video bg-black rounded-xl shadow-2xl overflow-hidden mb-10 border-4 border-white max-w-3xl mx-auto group cursor-pointer">
-                        <Image
-                            src="/patriot_silver_hero.png"
-                            alt="Silver IRA Investment Guide"
-                            fill
-                            className="object-cover opacity-80 group-hover:opacity-60 transition-opacity"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-20 h-20 bg-[#B22234] rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-white border-b-[15px] border-b-transparent ml-2"></div>
-                            </div>
+                    {/* Quick Stats */}
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans">
+                        <div className="text-center">
+                            <div className="text-3xl md:text-4xl font-black text-[#000080]">50%+</div>
+                            <div className="text-sm text-slate-600">Industrial Demand</div>
                         </div>
-                        <div className="absolute bottom-4 left-0 right-0 text-center">
-                            <span className="bg-black/70 text-white px-4 py-1 rounded text-sm font-sans font-bold">
-                                WATCH: Why Silver Is the Investment of 2026 (5 Min)
-                            </span>
+                        <div className="text-center">
+                            <div className="text-3xl md:text-4xl font-black text-[#B22234]">80:1</div>
+                            <div className="text-sm text-slate-600">Gold-Silver Ratio</div>
+                        </div>
+                        <div className="text-center">
+                            <div className="text-3xl md:text-4xl font-black text-[#000080]">$50K</div>
+                            <div className="text-sm text-slate-600">Minimum Investment</div>
                         </div>
                     </div>
 
