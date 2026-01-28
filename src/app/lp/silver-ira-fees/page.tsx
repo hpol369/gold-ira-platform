@@ -264,21 +264,21 @@ export default function SilverIRAFeesPatriotPage() {
                         <div className="flex items-start gap-4">
                             <div className="bg-[#B22234] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
                             <div>
-                                <h3 className="font-bold text-lg">Silver Takes 100x More Storage Space</h3>
+                                <h3 className="font-bold text-lg text-slate-900">Silver Takes 100x More Storage Space</h3>
                                 <p className="text-slate-600">A $50,000 silver investment weighs about 100 lbs vs just 1 lb for gold. This means higher shipping costs, more vault space, and potentially higher insurance.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
                             <div className="bg-[#B22234] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
                             <div>
-                                <h3 className="font-bold text-lg">Lower Liquidity = Wider Spreads</h3>
+                                <h3 className="font-bold text-lg text-slate-900">Lower Liquidity = Wider Spreads</h3>
                                 <p className="text-slate-600">Silver markets are less liquid than gold, giving dealers an excuse to charge wider buyback spreads of 15-35% vs gold's 3-10%.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
                             <div className="bg-[#B22234] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
                             <div>
-                                <h3 className="font-bold text-lg">Percentage-Based Fees Punish Silver</h3>
+                                <h3 className="font-bold text-lg text-slate-900">Percentage-Based Fees Punish Silver</h3>
                                 <p className="text-slate-600">Companies charging 0.5% of holdings for storage penalize silver investors more because of the bulk. Augusta's flat fee solves this.</p>
                             </div>
                         </div>
