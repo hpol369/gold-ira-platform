@@ -26,8 +26,13 @@ export default function TrackedLPLink({
     className,
     children,
 }: TrackedLPLinkProps) {
+    // Add sub_id to the destination URL for Augusta postback tracking
+    const destinationWithSubId = href.includes('?')
+        ? `${href}&sub_id=${encodeURIComponent(source)}`
+        : `${href}?sub_id=${encodeURIComponent(source)}`;
+
     // Build the tracked URL (for Telegram notification)
-    const trackedUrl = `/api/track-click?url=${encodeURIComponent(href)}&source=${encodeURIComponent(source)}&company=${company}&traffic=${traffic}`;
+    const trackedUrl = `/api/track-click?url=${encodeURIComponent(destinationWithSubId)}&source=${encodeURIComponent(source)}&company=${company}&traffic=${traffic}`;
 
     // Fire GA4 event + Google Ads conversion on click
     const handleClick = () => {
