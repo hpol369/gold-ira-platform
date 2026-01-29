@@ -116,10 +116,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 2. Send Telegram notification (new lead captured)
-    sendLeadNotification(lead, true).catch(err =>
-      console.error("[TELEGRAM ERROR]", err)
-    );
+    // 2. Send Telegram notification (new lead captured) - must await in serverless!
+    console.log("[LEAD] Sending Telegram notification for lead:", lead.email);
+    try {
+      await sendLeadNotification(lead, true);
+      console.log("[LEAD] Telegram notification completed");
+    } catch (err) {
+      console.error("[TELEGRAM ERROR]", err);
+    }
 
     // 3. Augusta submission DISABLED - waiting for correct endpoint from Frieda
     // TODO: Re-enable once Augusta confirms the correct API endpoint

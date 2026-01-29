@@ -1,10 +1,14 @@
 import type { PostbackEvent, PostbackType } from "@/app/api/postback/route";
 
-// Configuration - Set these in your .env.local file
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-const EMAIL_TO = process.env.NOTIFICATION_EMAIL;
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
+// Configuration - Environment variables are read at call time for serverless compatibility
+function getConfig() {
+  return {
+    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
+    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
+    EMAIL_TO: process.env.NOTIFICATION_EMAIL,
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
+  };
+}
 
 // Emoji and labels for different event types
 const eventConfig: Record<PostbackType, { emoji: string; label: string; priority: string }> = {
@@ -26,6 +30,8 @@ const eventConfig: Record<PostbackType, { emoji: string; label: string; priority
 };
 
 export async function sendNotification(event: PostbackEvent): Promise<void> {
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, RESEND_API_KEY, EMAIL_TO } = getConfig();
+
   // Fallback config for unknown event types
   const defaultConfig = { emoji: "📩", label: "New Event", priority: "normal" };
   const config = eventConfig[event.type] || defaultConfig;
@@ -99,8 +105,10 @@ function formatMessage(
 }
 
 async function sendTelegram(message: string, urgent: boolean): Promise<void> {
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } = getConfig();
+
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
-    console.log("[TELEGRAM] Not configured, skipping");
+    console.log("[TELEGRAM] Not configured, skipping. Token:", !!TELEGRAM_BOT_TOKEN, "ChatID:", !!TELEGRAM_CHAT_ID);
     return;
   }
 
@@ -134,6 +142,8 @@ async function sendEmail(
   event: PostbackEvent,
   config: { emoji: string; label: string; priority: string }
 ): Promise<void> {
+  const { RESEND_API_KEY, EMAIL_TO } = getConfig();
+
   if (!RESEND_API_KEY || !EMAIL_TO) {
     console.log("[EMAIL] Not configured, skipping");
     return;
@@ -239,6 +249,10 @@ export async function sendTestNotification(): Promise<void> {
  * Used for high-value lead alerts and other direct notifications
  */
 export async function sendTelegramNotification(message: string, urgent: boolean = false): Promise<void> {
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } = getConfig();
+
+  console.log("[TELEGRAM] Attempting to send notification. Token present:", !!TELEGRAM_BOT_TOKEN, "ChatID present:", !!TELEGRAM_CHAT_ID);
+
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
     console.log("[TELEGRAM] Not configured, skipping notification");
     return;
@@ -260,11 +274,11 @@ export async function sendTelegramNotification(message: string, urgent: boolean 
 
     if (!response.ok) {
       const error = await response.text();
-      console.error("[TELEGRAM ERROR]", error);
+      console.error("[TELEGRAM ERROR] Response not OK:", response.status, error);
     } else {
-      console.log("[TELEGRAM] Direct notification sent");
+      console.log("[TELEGRAM] Direct notification sent successfully");
     }
   } catch (error) {
-    console.error("[TELEGRAM ERROR]", error);
+    console.error("[TELEGRAM ERROR] Exception:", error);
   }
 }
