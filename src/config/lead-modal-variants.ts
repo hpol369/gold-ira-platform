@@ -59,6 +59,15 @@ export const leadModalVariants: Record<string, VariantConfig> = {
       "No minimum age requirements",
     ],
   },
+  "silver-seniors": {
+    headline: "Get Your Silver Retirement Guide",
+    subtext: "Protect your savings with affordable silver",
+    benefits: [
+      "Silver costs less than gold per ounce",
+      "Higher growth potential in bull markets",
+      "Same tax benefits as gold IRAs",
+    ],
+  },
   protect: {
     headline: "Protect Your Retirement Savings",
     subtext: "See how gold shields your wealth",

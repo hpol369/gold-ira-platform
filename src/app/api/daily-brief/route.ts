@@ -48,10 +48,10 @@ async function fetchSpotPrices(): Promise<SpotPrice[]> {
         changePercent: p.changePercent24h,
       }));
   } catch {
-    // Fallback to basic prices
+    // Fallback to basic prices (updated Jan 2026)
     return [
-      { metal: "gold", price: 2415.50, change: 8.30, changePercent: 0.34 },
-      { metal: "silver", price: 28.45, change: 0.25, changePercent: 0.89 },
+      { metal: "gold", price: 5350.00, change: 45.00, changePercent: 0.85 },
+      { metal: "silver", price: 114.00, change: 2.10, changePercent: 1.88 },
       { metal: "platinum", price: 985.00, change: -5.00, changePercent: -0.51 },
     ];
   }
