@@ -61,20 +61,46 @@ export function LeadCaptureForm() {
 
     setIsSubmitting(true);
 
-    // Track in Google Analytics
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "lead_capture", {
-        event_category: "conversion",
-        event_label: formData.investmentAmount,
-        value: 1,
+    try {
+      // 1. Submit lead to our API (saves to Supabase)
+      const response = await fetch("/api/submit-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          investmentAmount: formData.investmentAmount,
+          source: "lead-capture-form",
+        }),
       });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // 2. Fire Google Ads conversion
+        if (typeof window !== "undefined" && (window as any).gtag) {
+          (window as any).gtag("event", "conversion", {
+            send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
+            value: 50.0,
+            currency: "USD",
+          });
+        }
+
+        // 3. Small delay for tracking to fire, then redirect
+        await new Promise((resolve) => setTimeout(resolve, 500));
+        window.location.href = AUGUSTA_AFFILIATE_URL;
+      } else {
+        console.error("Lead submission failed:", result.error);
+        // Still redirect even if our API fails - don't lose the lead
+        window.location.href = AUGUSTA_AFFILIATE_URL;
+      }
+    } catch (error) {
+      console.error("Lead submission error:", error);
+      // Still redirect on error - don't lose the lead
+      window.location.href = AUGUSTA_AFFILIATE_URL;
     }
-
-    // Small delay for UX
-    await new Promise((resolve) => setTimeout(resolve, 500));
-
-    // Redirect to Augusta's landing page with affiliate tracking
-    window.location.href = AUGUSTA_AFFILIATE_URL;
   };
 
   const handleChange = (

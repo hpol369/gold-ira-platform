@@ -116,6 +116,14 @@ export default function LeadCaptureModal() {
       const result = await response.json();
 
       if (result.success) {
+        // Fire Google Ads conversion
+        if (typeof window !== "undefined" && (window as any).gtag) {
+          (window as any).gtag("event", "conversion", {
+            send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
+            value: 50.0,
+            currency: "USD",
+          });
+        }
         setStep("success");
       } else {
         setError("Something went wrong. Please try again.");
