@@ -76,13 +76,9 @@ export function trackOutboundClick(url: string, linkText: string) {
   }
 }
 
-// Track Google Ads conversion for affiliate clicks
+// DISABLED: Old affiliate click conversion - now tracking form submits instead
+// The new lead form conversion (b4n5CImJ3O4bEPiFiKtC) fires in LeadCaptureModal.tsx
 export function trackGoogleAdsConversion() {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-17807049464/OXQtCJnE-e0bEPiFiKtC',
-      value: 5.0,
-      currency: 'EUR',
-    });
-  }
+  // Intentionally empty - conversion tracking moved to form submission
+  // Old tag was: AW-17807049464/OXQtCJnE-e0bEPiFiKtC
 }
