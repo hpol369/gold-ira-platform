@@ -15,6 +15,7 @@ export default function LeadCaptureModal() {
   const [step, setStep] = useState<Step>(1);
   const [formData, setFormData] = useState({
     firstName: "",
+    lastName: "",
     email: "",
     phone: "",
   });
@@ -29,7 +30,7 @@ export default function LeadCaptureModal() {
       // Delay reset to allow exit animation
       const timer = setTimeout(() => {
         setStep(1);
-        setFormData({ firstName: "", email: "", phone: "" });
+        setFormData({ firstName: "", lastName: "", email: "", phone: "" });
         setError("");
       }, 300);
       return () => clearTimeout(timer);
@@ -76,7 +77,7 @@ export default function LeadCaptureModal() {
   );
 
   const handleNext = () => {
-    if (step === 1 && formData.firstName.trim()) {
+    if (step === 1 && formData.firstName.trim() && formData.lastName.trim()) {
       setStep(2);
     } else if (step === 2 && formData.email.includes("@")) {
       setStep(3);
@@ -106,7 +107,7 @@ export default function LeadCaptureModal() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           firstName: formData.firstName,
-          lastName: "",
+          lastName: formData.lastName,
           email: formData.email,
           phone: formData.phone,
           source: source || `lp-modal-${variant}`,
@@ -227,23 +228,36 @@ export default function LeadCaptureModal() {
                     <p className="text-white/70">{config.subtext}</p>
                   </div>
 
-                  <div className="relative">
-                    <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
-                    <input
-                      ref={inputRef}
-                      type="text"
-                      autoFocus
-                      value={formData.firstName}
-                      onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                      onKeyDown={handleKeyDown}
-                      className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
-                      placeholder="Your first name"
-                    />
+                  <div className="space-y-3">
+                    <div className="relative">
+                      <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                      <input
+                        ref={inputRef}
+                        type="text"
+                        autoFocus
+                        value={formData.firstName}
+                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                        onKeyDown={handleKeyDown}
+                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div className="relative">
+                      <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                      <input
+                        type="text"
+                        value={formData.lastName}
+                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                        onKeyDown={handleKeyDown}
+                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                        placeholder="Last name"
+                      />
+                    </div>
                   </div>
 
                   <button
                     onClick={handleNext}
-                    disabled={!formData.firstName.trim()}
+                    disabled={!formData.firstName.trim() || !formData.lastName.trim()}
                     className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 disabled:cursor-not-allowed text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                   >
                     Continue
