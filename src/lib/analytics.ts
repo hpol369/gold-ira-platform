@@ -76,9 +76,7 @@ export function trackOutboundClick(url: string, linkText: string) {
   }
 }
 
-// DISABLED: Old affiliate click conversion - now tracking form submits instead
-// The new lead form conversion (b4n5CImJ3O4bEPiFiKtC) fires in LeadCaptureModal.tsx
-export function trackGoogleAdsConversion() {
-  // Intentionally empty - conversion tracking moved to form submission
-  // Old tag was: AW-17807049464/OXQtCJnE-e0bEPiFiKtC
-}
+// NOTE: Google Ads conversion tracking is now handled directly in:
+// - LeadCaptureModal.tsx (LP forms)
+// - LeadCaptureForm.tsx (main site form)
+// Conversion tag: AW-17807049464/b4n5CImJ3O4bEPiFiKtC

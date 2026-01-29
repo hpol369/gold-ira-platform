@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useMemo, useRef } from "react";
-import { trackAffiliateClick, trackGoogleAdsConversion } from "@/lib/analytics";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 // Generate a short unique click ID
 function generateClickId(): string {
@@ -61,9 +61,8 @@ export default function TrackedLPLink({
         }
         hasClicked.current = true;
 
-        // Fire analytics
+        // Fire analytics (no conversion here - only on form submit)
         trackAffiliateClick(company, source, "cta");
-        trackGoogleAdsConversion();
 
         // Navigation will happen naturally via href
         // Reset after 10 seconds in case user comes back

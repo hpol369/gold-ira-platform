@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react";
 import { useLeadModal } from "@/context/LeadModalContext";
-import { trackAffiliateClick, trackGoogleAdsConversion } from "@/lib/analytics";
+import { trackAffiliateClick } from "@/lib/analytics";
 
 interface LeadCaptureButtonProps {
   variant: string;
@@ -20,9 +20,8 @@ export default function LeadCaptureButton({
   const { openModal } = useLeadModal();
 
   const handleClick = () => {
-    // Fire analytics
+    // Fire analytics (conversion tracking happens in modal on form submit)
     trackAffiliateClick("augusta", source, "cta");
-    trackGoogleAdsConversion();
 
     // Open the modal
     openModal(variant, source);
