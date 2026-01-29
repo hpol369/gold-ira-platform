@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, User, Mail, Phone, ArrowRight, CheckCircle2, Loader2, ShieldCheck, Star } from "lucide-react";
+import { X, User, Mail, Phone, ArrowRight, ArrowLeft, CheckCircle2, Loader2, ShieldCheck, Star } from "lucide-react";
 import { useLeadModal } from "@/context/LeadModalContext";
 import { leadModalVariants } from "@/config/lead-modal-variants";
 
@@ -127,13 +127,20 @@ export default function LeadCaptureModal() {
         }
         setStep("success");
       } else {
-        setError("Something went wrong. Please try again.");
+        setError("We couldn't process your request. Please verify your phone number includes the area code, or call us at 1-800-700-1008.");
       }
     } catch {
-      setError("Connection error. Please try again.");
+      setError("Connection issue — your information is safe. Please check your internet and try again.");
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, '').slice(0, 10);
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+    return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
   };
 
   const progressWidth = step === "success" ? 100 : ((step as number) / 3) * 100;
@@ -159,7 +166,7 @@ export default function LeadCaptureModal() {
             {/* Close button */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 p-2 text-white/60 hover:text-white transition-colors z-20 rounded-full hover:bg-white/10"
+              className="absolute top-4 right-4 p-2 text-white/80 hover:text-white transition-colors z-20 rounded-full hover:bg-white/10"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -171,8 +178,8 @@ export default function LeadCaptureModal() {
               {step !== "success" && (
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-white/60 text-sm">Step {step} of 3</span>
-                    <span className="text-white/60 text-sm">30 seconds</span>
+                    <span className="text-white/80 text-sm">Step {step} of 3</span>
+                    <span className="text-white/80 text-sm">30 seconds</span>
                   </div>
                   <div className="h-2 bg-white/20 rounded-full overflow-hidden">
                     <motion.div
@@ -192,26 +199,33 @@ export default function LeadCaptureModal() {
                     <CheckCircle2 className="h-10 w-10 text-green-400" />
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                    You&apos;re All Set, {formData.firstName}!
+                    Your Free Guide is Being Sent!
                   </h2>
                   <p className="text-lg text-white/80 mb-6">
-                    A specialist from Augusta will reach out shortly to answer your questions. <strong className="text-white">This is not a sales call</strong> — just helpful guidance.
+                    Check your phone for a text with your personalized Gold IRA report, {formData.firstName}.
                   </p>
-                  <div className="bg-amber-500/20 border border-amber-500/30 rounded-xl p-4 mb-6">
-                    <p className="text-amber-300 font-semibold text-lg">
-                      Expect a call within 24 hours
+                  <div className="bg-green-500/20 border border-green-500/30 rounded-xl p-4 mb-6">
+                    <p className="text-green-300 font-semibold text-lg">
+                      Your guide is on its way!
                     </p>
-                    <p className="text-amber-200/80 text-sm mt-2">
-                      Have questions ready — the team is happy to answer all of them.
+                    <p className="text-green-200/80 text-sm mt-2">
+                      A specialist may follow up to answer questions — only if you&apos;d like.
                     </p>
                   </div>
+                  <a
+                    href="/"
+                    className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                  >
+                    Join Thousands of Smart Retirees
+                    <ArrowRight className="h-5 w-5" />
+                  </a>
                   <button
                     onClick={closeModal}
-                    className="w-full bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+                    className="w-full text-white/70 hover:text-white text-sm py-2 transition-colors"
                   >
                     Close
                   </button>
-                  <div className="flex items-center justify-center gap-2 text-white/50 text-sm mt-6">
+                  <div className="flex items-center justify-center gap-2 text-white/70 text-sm mt-4">
                     <ShieldCheck className="h-4 w-4" />
                     Your information is secure
                   </div>
@@ -225,33 +239,47 @@ export default function LeadCaptureModal() {
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
                       {config.headline}
                     </h2>
-                    <p className="text-white/70">{config.subtext}</p>
+                    <p className="text-white/90">{config.subtext}</p>
                   </div>
 
                   <div className="space-y-3">
-                    <div className="relative">
-                      <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
-                      <input
-                        ref={inputRef}
-                        type="text"
-                        autoFocus
-                        value={formData.firstName}
-                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                        onKeyDown={handleKeyDown}
-                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
-                        placeholder="First name"
-                      />
+                    <div>
+                      <label htmlFor="firstName" className="block text-sm font-medium text-white/90 mb-1.5">
+                        First Name
+                      </label>
+                      <div className="relative">
+                        <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                        <input
+                          id="firstName"
+                          ref={inputRef}
+                          type="text"
+                          autoFocus
+                          autoComplete="given-name"
+                          value={formData.firstName}
+                          onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                          onKeyDown={handleKeyDown}
+                          className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                          placeholder="First name"
+                        />
+                      </div>
                     </div>
-                    <div className="relative">
-                      <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
-                      <input
-                        type="text"
-                        value={formData.lastName}
-                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                        onKeyDown={handleKeyDown}
-                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
-                        placeholder="Last name"
-                      />
+                    <div>
+                      <label htmlFor="lastName" className="block text-sm font-medium text-white/90 mb-1.5">
+                        Last Name
+                      </label>
+                      <div className="relative">
+                        <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                        <input
+                          id="lastName"
+                          type="text"
+                          autoComplete="family-name"
+                          value={formData.lastName}
+                          onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                          onKeyDown={handleKeyDown}
+                          className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                          placeholder="Last name"
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -283,21 +311,29 @@ export default function LeadCaptureModal() {
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
                       Hi {formData.firstName}!
                     </h2>
-                    <p className="text-white/70">Where should we send your info?</p>
+                    <p className="text-white/90">Where should we send your info?</p>
                   </div>
 
-                  <div className="relative">
-                    <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
-                    <input
-                      ref={inputRef}
-                      type="email"
-                      autoFocus
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      onKeyDown={handleKeyDown}
-                      className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
-                      placeholder="your@email.com"
-                    />
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-white/90 mb-1.5">
+                      Email Address
+                    </label>
+                    <div className="relative">
+                      <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                      <input
+                        id="email"
+                        ref={inputRef}
+                        type="email"
+                        autoFocus
+                        inputMode="email"
+                        autoComplete="email"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        onKeyDown={handleKeyDown}
+                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                        placeholder="your@email.com"
+                      />
+                    </div>
                   </div>
 
                   <button
@@ -311,9 +347,10 @@ export default function LeadCaptureModal() {
 
                   <button
                     onClick={() => setStep(1)}
-                    className="w-full text-white/60 hover:text-white text-sm py-2 transition-colors"
+                    className="w-full text-white/80 hover:text-white text-base py-3 px-4 rounded-lg hover:bg-white/10 flex items-center justify-center gap-2 transition-colors"
                   >
-                    Go back
+                    <ArrowLeft className="h-4 w-4" />
+                    Go Back
                   </button>
                 </div>
               )}
@@ -323,23 +360,32 @@ export default function LeadCaptureModal() {
                 <div className="space-y-6">
                   <div className="text-center">
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                      Last step, {formData.firstName}!
+                      Almost done, {formData.firstName}!
                     </h2>
-                    <p className="text-white/70">Best number to reach you?</p>
+                    <p className="text-white/90">Where should we text your free guide?</p>
+                    <p className="text-white/70 text-sm mt-1">We&apos;ll send a link to your personalized report. No surprise calls.</p>
                   </div>
 
-                  <div className="relative">
-                    <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
-                    <input
-                      ref={inputRef}
-                      type="tel"
-                      autoFocus
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      onKeyDown={handleKeyDown}
-                      className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
-                      placeholder="(555) 123-4567"
-                    />
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-white/90 mb-1.5">
+                      Phone Number
+                    </label>
+                    <div className="relative">
+                      <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                      <input
+                        id="phone"
+                        ref={inputRef}
+                        type="tel"
+                        autoFocus
+                        inputMode="tel"
+                        autoComplete="tel"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
+                        onKeyDown={handleKeyDown}
+                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                        placeholder="(555) 123-4567"
+                      />
+                    </div>
                   </div>
 
                   {error && (
@@ -368,12 +414,13 @@ export default function LeadCaptureModal() {
 
                   <button
                     onClick={() => setStep(2)}
-                    className="w-full text-white/60 hover:text-white text-sm py-2 transition-colors"
+                    className="w-full text-white/80 hover:text-white text-base py-3 px-4 rounded-lg hover:bg-white/10 flex items-center justify-center gap-2 transition-colors"
                   >
-                    Go back
+                    <ArrowLeft className="h-4 w-4" />
+                    Go Back
                   </button>
 
-                  <p className="text-center text-xs text-white/50">
+                  <p className="text-center text-xs text-white/70">
                     By clicking above, you agree to be contacted by Augusta Precious Metals.
                   </p>
                 </div>
@@ -387,7 +434,7 @@ export default function LeadCaptureModal() {
                       <Star key={i} className="h-4 w-4 fill-amber-400" />
                     ))}
                   </div>
-                  <div className="flex items-center justify-center gap-4 text-white/50 text-xs">
+                  <div className="flex items-center justify-center gap-4 text-white/70 text-xs">
                     <span className="flex items-center gap-1">
                       <ShieldCheck className="h-4 w-4" />
                       256-bit SSL
