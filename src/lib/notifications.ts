@@ -18,9 +18,9 @@ const eventConfig: Record<PostbackType, { emoji: string; label: string; priority
     priority: "normal"
   },
   qualified_lead: {
-    emoji: "⭐",
-    label: "Lead Qualified",
-    priority: "high"
+    emoji: "💵",
+    label: "KA-CHING! QUALIFIED LEAD",
+    priority: "urgent"
   },
   trade_complete: {
     emoji: "💰",
@@ -95,10 +95,18 @@ function formatMessage(
     }
   });
 
+  // Add motivational message for qualified lead
+  if (event.type === "qualified_lead") {
+    lines.push(``);
+    lines.push(`💵💵💵 +$200 GUARANTEED! 💵💵💵`);
+    lines.push(`🔥 They passed the phone screening!`);
+  }
+
   // Add motivational message for trade complete
   if (event.type === "trade_complete") {
     lines.push(``);
     lines.push(`🎉🎉🎉 NICE! Commission incoming! 🎉🎉🎉`);
+    lines.push(`💰 BIG BAG SECURED 💰`);
   }
 
   return lines.join("\n");
