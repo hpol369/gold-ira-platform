@@ -5,9 +5,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { sendTelegramNotification } from "@/lib/notifications";
 import { insertLead, updateLeadStatus, Lead } from "@/lib/supabase";
 
-// Augusta Zapier webhook (from Meghana)
-const AUGUSTA_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/23459703/ug0phj9/";
-const AFFILIATE_ID = "5129";
+// Augusta Zapier webhook - stored in env for security
+const AUGUSTA_WEBHOOK_URL = process.env.AUGUSTA_WEBHOOK_URL!;
+const AFFILIATE_ID = process.env.AUGUSTA_AFFILIATE_ID || "5129";
 
 interface LeadData {
   firstName: string;
