@@ -5,13 +5,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { sendTelegramNotification } from "@/lib/notifications";
 import { insertLead, updateLeadStatus, Lead } from "@/lib/supabase";
 
-const AUGUSTA_FORM_URL = "https://www.augustapreciousmetals.com/instant-download-thank-you-high/";
-
-// Your affiliate tracking IDs
-const AFFILIATE_PARAMS = {
-  aff_id: "5129",
-  apmtrkr_cid: "1696",
-};
+// Augusta Zapier webhook (from Meghana)
+const AUGUSTA_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/23459703/ug0phj9/";
+const AFFILIATE_ID = "5129";
 
 interface LeadData {
   firstName: string;
@@ -39,37 +35,35 @@ ${isNew ? "💾 <i>Saved to database</i>" : "✅ <i>Submitted to Augusta - they 
   await sendTelegramNotification(message, true); // urgent = true
 }
 
-async function submitToAugusta(lead: Lead, userAgent: string): Promise<boolean> {
-  const formData = new URLSearchParams({
-    first_name: lead.first_name,
-    last_name: lead.last_name || "",
+async function submitToAugusta(lead: Lead): Promise<boolean> {
+  const payload = {
+    firstname: lead.first_name,
+    lastname: lead.last_name || "",
+    phone: lead.phone,
     email: lead.email,
-    phone_number: lead.phone,
-    ...AFFILIATE_PARAMS,
-    optin_page: lead.source || "richdadretirement.com/get-started",
-  });
+    affiliate_id: AFFILIATE_ID,
+  };
 
   try {
-    const augustaResponse = await fetch(AUGUSTA_FORM_URL, {
+    console.log("[AUGUSTA] Submitting to webhook:", lead.email);
+    const augustaResponse = await fetch(AUGUSTA_WEBHOOK_URL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": userAgent,
-        "Origin": "https://learn.augustapreciousmetals.com",
-        "Referer": "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3",
+        "Content-Type": "application/json",
       },
-      body: formData.toString(),
-      redirect: "manual",
+      body: JSON.stringify(payload),
     });
 
-    // Log full response for debugging
-    const responseText = await augustaResponse.text();
-    console.log("[AUGUSTA] Status:", augustaResponse.status);
-    console.log("[AUGUSTA] Headers:", Object.fromEntries(augustaResponse.headers.entries()));
-    console.log("[AUGUSTA] Body (first 500 chars):", responseText.slice(0, 500));
+    console.log("[AUGUSTA] Response status:", augustaResponse.status);
 
-    // Augusta typically redirects on success (302/303)
-    return augustaResponse.status >= 200 && augustaResponse.status < 400;
+    if (augustaResponse.ok) {
+      console.log("[AUGUSTA] ✅ Lead submitted successfully:", lead.email);
+      return true;
+    } else {
+      const errorText = await augustaResponse.text();
+      console.error("[AUGUSTA] ❌ Submission failed:", errorText);
+      return false;
+    }
   } catch (error) {
     console.error("[AUGUSTA] Submit error:", error);
     return false;
@@ -125,21 +119,34 @@ export async function POST(request: NextRequest) {
       console.error("[TELEGRAM ERROR]", err);
     }
 
-    // 3. Augusta submission DISABLED - waiting for correct endpoint from Frieda
-    // TODO: Re-enable once Augusta confirms the correct API endpoint
-    // const augustaSuccess = await submitToAugusta(lead, userAgent);
+    // 3. Submit to Augusta via Zapier webhook
+    const augustaSuccess = await submitToAugusta(lead);
 
-    console.log("[AUGUSTA DISABLED] Lead saved to Supabase for manual upload:", lead.email);
+    if (augustaSuccess) {
+      // Update status and send success notification
+      await updateLeadStatus(lead.id!, "sent_to_augusta", {
+        augusta_submitted_at: new Date().toISOString(),
+        notes: "Auto-submitted to Augusta via webhook",
+      });
 
-    // Update status to indicate manual upload needed
-    await updateLeadStatus(lead.id!, "new", {
-      notes: "Augusta auto-submit disabled - upload manually to Augusta dashboard",
-    });
+      // Send second notification confirming Augusta submission
+      try {
+        await sendLeadNotification(lead, false);
+      } catch (err) {
+        console.error("[TELEGRAM ERROR]", err);
+      }
+    } else {
+      // Keep as new, flag for manual review
+      await updateLeadStatus(lead.id!, "new", {
+        notes: "Augusta webhook failed - needs manual upload",
+      });
+    }
 
     return NextResponse.json({
       success: true,
-      message: "Lead captured - pending manual upload to Augusta",
+      message: augustaSuccess ? "Lead submitted to Augusta" : "Lead captured - Augusta submission pending",
       leadId: lead.id,
+      augustaSubmitted: augustaSuccess,
     });
 
   } catch (error) {
