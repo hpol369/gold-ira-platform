@@ -176,24 +176,43 @@ export function generateSlug(title: string, date: string): string {
 }
 
 /**
+ * Sanitize string for YAML frontmatter
+ * - Remove nested quotes that break YAML parsing
+ * - Escape special characters
+ */
+function sanitizeYamlString(str: string): string {
+    // Replace smart quotes and nested double quotes with single quotes
+    return str
+        .replace(/[""]/g, "'")  // Smart quotes to single
+        .replace(/"([^"]+)"/g, "'$1'");  // Nested double quotes to single
+}
+
+/**
  * Create MDX content for a new article
  */
 export function createArticleMDX(article: Omit<NewsArticle, "slug" | "status">): string {
+    // Sanitize text fields that might have problematic characters
+    const safeTitle = sanitizeYamlString(article.title);
+    const safeHeadline = sanitizeYamlString(article.headline);
+    const safeExcerpt = sanitizeYamlString(article.excerpt);
+    const safeMetaTitle = sanitizeYamlString(article.metaTitle || article.title);
+    const safeMetaDescription = sanitizeYamlString(article.metaDescription || article.excerpt);
+
     const frontmatter = {
-        title: article.title,
-        headline: article.headline,
-        excerpt: article.excerpt,
+        title: safeTitle,
+        headline: safeHeadline,
+        excerpt: safeExcerpt,
         category: article.category,
         publishedAt: article.publishedAt,
         author: article.author,
         readTime: article.readTime,
         featuredImage: article.featuredImage || "",
         featuredImageAlt: article.featuredImageAlt || "",
-        metaTitle: article.metaTitle || article.title,
-        metaDescription: article.metaDescription || article.excerpt,
-        relatedGuides: article.relatedGuides,
+        metaTitle: safeMetaTitle,
+        metaDescription: safeMetaDescription,
+        relatedGuides: article.relatedGuides || [],
         relatedNews: article.relatedNews || [],
-        status: "review" as const,
+        status: "published" as const,  // Auto-publish instead of review
         sourceUrl: article.sourceUrl || "",
         sourceName: article.sourceName || "",
     };
@@ -202,12 +221,16 @@ export function createArticleMDX(article: Omit<NewsArticle, "slug" | "status">):
 ${Object.entries(frontmatter)
     .map(([key, value]) => {
         if (Array.isArray(value)) {
+            if (value.length === 0) {
+                return `${key}: []`;  // Empty array as []
+            }
             return `${key}:\n${value.map((v) => `  - "${v}"`).join("\n")}`;
         }
-        if (typeof value === "string" && value.includes(":")) {
-            return `${key}: "${value}"`;
+        if (typeof value === "number") {
+            return `${key}: ${value}`;
         }
-        return `${key}: ${value}`;
+        // Always quote strings to be safe
+        return `${key}: "${value}"`;
     })
     .join("\n")}
 ---
