@@ -4,13 +4,45 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, Menu, X, ChevronDown, Flag, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+
+// Gold price state
+interface GoldPrice {
+    price: number;
+    changePercent: number;
+}
 
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isLearnOpen, setIsLearnOpen] = useState(false);
     const [isToolsOpen, setIsToolsOpen] = useState(false);
+    const [goldPrice, setGoldPrice] = useState<GoldPrice | null>(null);
+
+    // Fetch live gold price on mount
+    useEffect(() => {
+        async function fetchGoldPrice() {
+            try {
+                const res = await fetch("/api/spot-prices");
+                const data = await res.json();
+                const gold = data.prices?.find((p: any) => p.metal === "gold");
+                if (gold) {
+                    setGoldPrice({
+                        price: gold.price,
+                        changePercent: gold.changePercent24h,
+                    });
+                }
+            } catch (error) {
+                console.error("Failed to fetch gold price:", error);
+            }
+        }
+        fetchGoldPrice();
+    }, []);
+
+    // Format price with commas
+    const formatPrice = (price: number) => {
+        return price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    };
 
     // Auto-update freshness badge
     const currentDate = new Date();
@@ -30,7 +62,11 @@ export function Navbar() {
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                                 </span>
-                                Live Market: Gold $2,421.50 (+1.2%)
+                                {goldPrice ? (
+                                    <>Live Market: Gold ${formatPrice(goldPrice.price)} ({goldPrice.changePercent >= 0 ? "+" : ""}{goldPrice.changePercent.toFixed(1)}%)</>
+                                ) : (
+                                    <>Live Market: Loading...</>
+                                )}
                             </span>
                             <span className="hidden sm:inline text-slate-300">|</span>
                             <span className="hidden sm:flex items-center gap-1 text-[#000080]">

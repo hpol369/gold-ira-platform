@@ -1,0 +1,20 @@
+name: Refresh Gold Prices
+
+on:
+  schedule:
+    # Run every day at 6 AM EST (11:00 UTC) - before US market open
+    - cron: '0 11 * * *'
+    # Run every day at 9:30 AM EST (14:30 UTC) - at US market open
+    - cron: '30 14 * * 1-5'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  refresh-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Warm price cache
+        run: |
+          echo "Refreshing gold prices cache..."
+          curl -s "https://richdadretirement.com/api/spot-prices" | head -c 200
+          echo ""
+          echo "Price cache refreshed at $(date)"
