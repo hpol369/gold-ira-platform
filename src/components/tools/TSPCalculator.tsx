@@ -495,7 +495,7 @@ export function TSPCalculator() {
                               <td className="py-2 px-2 text-right text-blue-600">
                                 {formatCurrency(row.contribution)}
                               </td>
-                              <td className="py-2 px-2 text-right text-purple-400">
+                              <td className="py-2 px-2 text-right text-purple-700">
                                 {formatCurrency(row.match)}
                               </td>
                               <td className="py-2 px-2 text-right text-slate-900 font-medium">

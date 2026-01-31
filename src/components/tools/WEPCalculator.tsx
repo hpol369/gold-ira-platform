@@ -293,7 +293,7 @@ export function WEPCalculator() {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                  <Users className="h-5 w-5 text-purple-400" />
+                  <Users className="h-5 w-5 text-purple-700" />
                 </div>
                 <h3 className="text-lg font-semibold">GPO (Spousal/Survivor Benefits)</h3>
               </div>
@@ -311,7 +311,7 @@ export function WEPCalculator() {
             {showGPO && (
               <div className="space-y-4">
                 <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-3 mb-4">
-                  <p className="text-sm text-purple-300">
+                  <p className="text-sm text-purple-800">
                     <strong>Government Pension Offset (GPO)</strong> reduces spousal or survivor
                     Social Security benefits by 2/3 of your government pension.
                   </p>
@@ -401,7 +401,7 @@ export function WEPCalculator() {
           {showGPO && (
             <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Users className="h-6 w-6 text-purple-400" />
+                <Users className="h-6 w-6 text-purple-700" />
                 <h3 className="text-lg font-semibold">GPO Impact on Spousal Benefits</h3>
               </div>
 
@@ -420,7 +420,7 @@ export function WEPCalculator() {
                 </div>
                 <div className="flex justify-between items-center pt-2 border-t border-slate-200">
                   <span className="text-slate-600 text-sm">Adjusted Spousal Benefit</span>
-                  <span className="font-bold text-purple-400">
+                  <span className="font-bold text-purple-700">
                     {formatCurrency(calculations.adjustedSpouseBenefit)}
                   </span>
                 </div>
@@ -428,7 +428,7 @@ export function WEPCalculator() {
 
               {calculations.adjustedSpouseBenefit === 0 && (
                 <div className="mt-4 bg-red-500/20 rounded-lg p-3">
-                  <p className="text-red-300 text-sm">
+                  <p className="text-red-800 text-sm">
                     <AlertTriangle className="inline h-4 w-4 mr-1" />
                     GPO completely eliminates your spousal/survivor benefit.
                   </p>

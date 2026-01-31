@@ -174,8 +174,8 @@ export default function ComexSilverInventoryPage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
-                                    <Lock className="w-8 h-8 text-green-400 mb-4" />
-                                    <h4 className="font-bold text-green-400 text-lg mb-2">Registered Silver</h4>
+                                    <Lock className="w-8 h-8 text-green-700 mb-4" />
+                                    <h4 className="font-bold text-green-700 text-lg mb-2">Registered Silver</h4>
                                     <p className="text-sm text-slate-600 mb-4">Silver with warrants attached, available for delivery against futures contracts. This is the &quot;real&quot; inventory that backs the market.</p>
                                     <ul className="text-sm text-slate-600 space-y-2">
                                         <li>Has attached warrant (delivery certificate)</li>
@@ -203,7 +203,7 @@ export default function ComexSilverInventoryPage() {
                         {/* Current Levels */}
                         <section id="current-levels" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Current Inventory Levels</h2>
@@ -252,7 +252,7 @@ export default function ComexSilverInventoryPage() {
 
                             <div className="grid md:grid-cols-3 gap-4 not-prose my-8">
                                 <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-200">
-                                    <div className="text-2xl font-bold text-red-400">-82%</div>
+                                    <div className="text-2xl font-bold text-red-700">-82%</div>
                                     <div className="text-xs text-slate-600">Since 2021 Peak</div>
                                 </div>
                                 <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-200">
@@ -269,7 +269,7 @@ export default function ComexSilverInventoryPage() {
                         {/* Historical Drawdowns */}
                         <section id="historical-drawdowns" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Historical Drawdowns</h2>
@@ -307,7 +307,7 @@ export default function ComexSilverInventoryPage() {
                         {/* Delivery Mechanics */}
                         <section id="delivery-mechanics" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Warehouse className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">How COMEX Delivery Works</h2>
@@ -335,7 +335,7 @@ export default function ComexSilverInventoryPage() {
                                         <div className="text-xs text-slate-600">Open Interest (contracts)</div>
                                     </div>
                                     <div className="text-center p-4 bg-slate-50 rounded-xl">
-                                        <div className="text-2xl font-bold text-red-400">~5,600</div>
+                                        <div className="text-2xl font-bold text-red-700">~5,600</div>
                                         <div className="text-xs text-slate-600">Contracts Covered by Registered</div>
                                     </div>
                                 </div>
@@ -346,7 +346,7 @@ export default function ComexSilverInventoryPage() {
                         {/* What Depletion Means */}
                         <section id="what-depletion-means" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">What Depletion Means for Investors</h2>
@@ -372,7 +372,7 @@ export default function ComexSilverInventoryPage() {
                                 </div>
 
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
-                                    <h4 className="font-bold text-red-400 text-lg mb-2">Scenario 4: Paper/Physical Disconnect</h4>
+                                    <h4 className="font-bold text-red-700 text-lg mb-2">Scenario 4: Paper/Physical Disconnect</h4>
                                     <p className="text-sm text-slate-600">Physical silver prices could decouple from futures prices, with significant premiums for actual metal. We saw hints of this in 2020 and 2021.</p>
                                 </div>
                             </div>
@@ -388,7 +388,7 @@ export default function ComexSilverInventoryPage() {
                         {/* How to Track */}
                         <section id="how-to-track" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">How to Track COMEX Data</h2>

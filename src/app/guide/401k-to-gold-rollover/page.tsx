@@ -227,13 +227,13 @@ export default function RolloverGuidePage() {
                                         </tr>
                                         <tr className="bg-slate-800/30">
                                             <td className="p-4 font-semibold text-[#000080]">Risk Level</td>
-                                            <td className="p-4 text-green-400 font-medium">Low</td>
-                                            <td className="p-4 text-red-400 font-medium">High</td>
+                                            <td className="p-4 text-green-700 font-medium">Low</td>
+                                            <td className="p-4 text-red-700 font-medium">High</td>
                                         </tr>
                                         <tr className="bg-[#B22234]/10">
                                             <td className="p-4 font-bold text-[#000080]">Recommendation</td>
-                                            <td className="p-4 font-bold text-green-400">✓ Always choose this</td>
-                                            <td className="p-4 font-bold text-red-400">✗ Avoid if possible</td>
+                                            <td className="p-4 font-bold text-green-700">✓ Always choose this</td>
+                                            <td className="p-4 font-bold text-red-700">✗ Avoid if possible</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -265,7 +265,7 @@ export default function RolloverGuidePage() {
                             <div className="not-prose my-8">
                                 <div className="space-y-4">
                                     <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center font-bold shrink-0">
                                             <CheckCircle2 className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -274,7 +274,7 @@ export default function RolloverGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center font-bold shrink-0">
                                             <CheckCircle2 className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -283,7 +283,7 @@ export default function RolloverGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                        <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-700 flex items-center justify-center font-bold shrink-0">
                                             <AlertTriangle className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -385,11 +385,11 @@ export default function RolloverGuidePage() {
                             </p>
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
-                                <h4 className="font-bold text-red-400 text-lg mb-4 flex items-center gap-2">
+                                <h4 className="font-bold text-red-700 text-lg mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     Potential Tax Traps to Avoid
                                 </h4>
-                                <ul className="space-y-3 text-red-300">
+                                <ul className="space-y-3 text-red-800">
                                     <li className="flex items-start gap-3">
                                         <span className="w-2 h-2 rounded-full bg-red-400 mt-2 flex-shrink-0"></span>
                                         <span><strong>Missing the 60-day deadline</strong> on an indirect rollover = full taxable distribution</span>
@@ -479,38 +479,38 @@ export default function RolloverGuidePage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Choosing Indirect Rollover</h4>
-                                        <p className="text-sm text-red-300 mt-1">Unless you have a specific reason, always choose direct rollover. The 60-day deadline and 20% withholding create unnecessary risk and complications.</p>
+                                        <h4 className="font-bold text-red-700">Choosing Indirect Rollover</h4>
+                                        <p className="text-sm text-red-800 mt-1">Unless you have a specific reason, always choose direct rollover. The 60-day deadline and 20% withholding create unnecessary risk and complications.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Falling for &quot;Home Storage&quot; Schemes</h4>
-                                        <p className="text-sm text-red-300 mt-1">Some companies promote &quot;home storage gold IRAs.&quot; This is extremely risky and can trigger a full taxable distribution. Always use IRS-approved depositories.</p>
+                                        <h4 className="font-bold text-red-700">Falling for &quot;Home Storage&quot; Schemes</h4>
+                                        <p className="text-sm text-red-800 mt-1">Some companies promote &quot;home storage gold IRAs.&quot; This is extremely risky and can trigger a full taxable distribution. Always use IRS-approved depositories.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Not Comparing Companies</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Fees and service vary dramatically between gold IRA companies. A few hours of research (or taking our quiz) can save you thousands over the life of your account.</p>
+                                        <h4 className="font-bold text-amber-700">Not Comparing Companies</h4>
+                                        <p className="text-sm text-amber-800 mt-1">Fees and service vary dramatically between gold IRA companies. A few hours of research (or taking our quiz) can save you thousands over the life of your account.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Rolling Over Everything at Once</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Most advisors recommend keeping 10-20% of your portfolio in precious metals, not 100%. Consider rolling over a portion while maintaining diversification.</p>
+                                        <h4 className="font-bold text-amber-700">Rolling Over Everything at Once</h4>
+                                        <p className="text-sm text-amber-800 mt-1">Most advisors recommend keeping 10-20% of your portfolio in precious metals, not 100%. Consider rolling over a portion while maintaining diversification.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Ignoring Fees</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Gold IRAs have fees that standard IRAs don&apos;t (storage, custodian). Make sure you understand all fees before proceeding. See our <Link href="/guide/gold-ira-fees" className="text-[#B22234] hover:underline">fee guide</Link> for details.</p>
+                                        <h4 className="font-bold text-amber-700">Ignoring Fees</h4>
+                                        <p className="text-sm text-amber-800 mt-1">Gold IRAs have fees that standard IRAs don&apos;t (storage, custodian). Make sure you understand all fees before proceeding. See our <Link href="/guide/gold-ira-fees" className="text-[#B22234] hover:underline">fee guide</Link> for details.</p>
                                     </div>
                                 </div>
                             </div>

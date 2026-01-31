@@ -167,7 +167,7 @@ export default function BoldPreciousMetalsReviewPage() {
                                 <div className="text-5xl font-bold text-slate-900 mb-2">4.3</div>
                                 <StarRating rating={4.3} />
                                 <div className="mt-4 pt-4 border-t border-slate-200">
-                                    <div className="flex items-center justify-center gap-2 text-green-400">
+                                    <div className="flex items-center justify-center gap-2 text-green-700">
                                         <CheckCircle className="w-5 h-5" />
                                         <span className="font-semibold">Recommended</span>
                                     </div>
@@ -199,7 +199,7 @@ export default function BoldPreciousMetalsReviewPage() {
                                     <div className="text-sm text-slate-600">Year Founded</div>
                                 </div>
                                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                    <div className="text-2xl font-bold text-green-400">$0</div>
+                                    <div className="text-2xl font-bold text-green-700">$0</div>
                                     <div className="text-sm text-slate-600">Minimum Order</div>
                                 </div>
                                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
@@ -295,12 +295,12 @@ export default function BoldPreciousMetalsReviewPage() {
                                 <div className="text-sm text-slate-600">Orders over $99</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Clock className="w-8 h-8 text-green-400 mx-auto mb-3" />
+                                <Clock className="w-8 h-8 text-green-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Processing</div>
                                 <div className="text-sm text-slate-600">1-3 business days</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Shield className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+                                <Shield className="w-8 h-8 text-purple-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Fully Insured</div>
                                 <div className="text-sm text-slate-600">Every shipment</div>
                             </div>
@@ -396,7 +396,7 @@ export default function BoldPreciousMetalsReviewPage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">Min Order</span>
-                                        <span className="text-green-400 font-bold">None</span>
+                                        <span className="text-green-700 font-bold">None</span>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">Free Shipping</span>

@@ -232,7 +232,7 @@ export function MonteCarloRetirementSimulator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
           <BarChart3 className="h-4 w-4" />
           High Volume Keyword (600-1,100 searches/mo)
         </div>
@@ -252,7 +252,7 @@ export function MonteCarloRetirementSimulator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <DollarSign className="h-5 w-5 text-purple-400" />
+                <DollarSign className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Current Situation</h3>
             </div>
@@ -527,7 +527,7 @@ export function MonteCarloRetirementSimulator() {
               {/* Spaghetti Chart */}
               <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                  <BarChart3 className="h-5 w-5 text-purple-400" />
+                  <BarChart3 className="h-5 w-5 text-purple-700" />
                   Simulation Paths (Sample of {visualizationPaths.length})
                 </h3>
 
@@ -610,7 +610,7 @@ export function MonteCarloRetirementSimulator() {
                   </div>
                   <div className="flex justify-between items-center pb-3 border-b border-slate-200">
                     <span className="text-slate-500">Final Value (Median)</span>
-                    <span className="font-semibold text-purple-400">
+                    <span className="font-semibold text-purple-700">
                       {formatCurrency(statistics.median)}
                     </span>
                   </div>
@@ -698,7 +698,7 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-slate-50 rounded-lg p-4">
-                <Percent className="h-6 w-6 text-purple-400 mb-2" />
+                <Percent className="h-6 w-6 text-purple-700 mb-2" />
                 <h4 className="font-semibold text-slate-900 mb-1">Probability-Based</h4>
                 <p className="text-sm text-slate-500">
                   Instead of a single projection, you get a range of outcomes with their probabilities.
@@ -727,7 +727,7 @@ export function MonteCarloRetirementSimulator() {
         {/* Success Rate Guide */}
         <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200 mb-8">
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-            <Target className="h-6 w-6 text-purple-400" />
+            <Target className="h-6 w-6 text-purple-700" />
             What Success Rate Should You Target?
           </h2>
 
@@ -847,9 +847,9 @@ export function MonteCarloRetirementSimulator() {
 
           <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-4 mb-6">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
               <div className="text-sm">
-                <strong className="text-purple-400">Research Finding:</strong>{" "}
+                <strong className="text-purple-700">Research Finding:</strong>{" "}
                 <span className="text-slate-600">
                   Adding 10% gold to a traditional 60/40 portfolio historically increased Monte Carlo
                   success rates by 3-5% while reducing the worst-case (10th percentile) outcomes by

@@ -132,7 +132,7 @@ export default function SilverAllTimeHighPage() {
                                         {silverHighs.map((high, idx) => (
                                             <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                                 <td className="p-4 text-slate-900 font-medium">{high.date}</td>
-                                                <td className="p-4 text-green-400 font-bold text-lg">{high.price}</td>
+                                                <td className="p-4 text-green-700 font-bold text-lg">{high.price}</td>
                                                 <td className="p-4 text-[#B22234]">{high.inflationAdjusted}</td>
                                                 <td className="p-4 text-slate-600">{high.cause}</td>
                                             </tr>
@@ -191,7 +191,7 @@ export default function SilverAllTimeHighPage() {
                                     </div>
                                     <div className="flex justify-between items-center border-t border-slate-200 pt-3">
                                         <span className="text-slate-600">January 18, 1980</span>
-                                        <span className="text-green-400 font-bold text-xl">$49.45 (ALL-TIME HIGH)</span>
+                                        <span className="text-green-700 font-bold text-xl">$49.45 (ALL-TIME HIGH)</span>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +212,7 @@ export default function SilverAllTimeHighPage() {
                         {/* 2011 Story */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">2011: The Post-Crisis Rally</h2>
@@ -248,7 +248,7 @@ export default function SilverAllTimeHighPage() {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h5 className="font-bold text-green-400 mb-2">2024-2026 Conditions</h5>
+                                        <h5 className="font-bold text-green-700 mb-2">2024-2026 Conditions</h5>
                                         <ul className="space-y-1 text-slate-600">
                                             <li>$35T+ national debt</li>
                                             <li>De-dollarization accelerating</li>
@@ -264,7 +264,7 @@ export default function SilverAllTimeHighPage() {
                         {/* Inflation Adjusted */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Inflation-Adjusted All-Time High</h2>
@@ -282,7 +282,7 @@ export default function SilverAllTimeHighPage() {
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
                                             <span className="text-slate-600">1980 High Adjusted for CPI Inflation</span>
-                                            <span className="text-green-400 font-bold">$180+</span>
+                                            <span className="text-green-700 font-bold">$180+</span>
                                         </div>
                                         <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-green-500 h-3 rounded-full" style={{ width: '100%' }}></div>
@@ -318,7 +318,7 @@ export default function SilverAllTimeHighPage() {
                         {/* Could It Happen Again? */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Zap className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Could Silver Hit a New All-Time High?</h2>
@@ -347,7 +347,7 @@ export default function SilverAllTimeHighPage() {
                                 <h4 className="font-bold text-slate-900 text-lg mb-4">Timeline Scenarios for New All-Time High</h4>
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-4">
-                                        <span className="text-green-400 font-bold w-24">Aggressive</span>
+                                        <span className="text-green-700 font-bold w-24">Aggressive</span>
                                         <div className="flex-1 bg-green-500/20 rounded-full h-8 relative">
                                             <div className="absolute inset-y-0 left-0 w-1/3 bg-green-500 rounded-full"></div>
                                             <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-900">2026-2027</span>

@@ -174,23 +174,23 @@ export default function SafeHavenInvestmentsPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-[#000080]">2008 Financial Crisis</td>
-                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+25%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-37%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+25%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2020 COVID Crash</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34% (peak to trough)</td>
-                                            <td className="p-4 text-green-400 font-semibold">+25% (full year)</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34% (peak to trough)</td>
+                                            <td className="p-4 text-green-700 font-semibold">+25% (full year)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2022 Rate Shock</td>
-                                            <td className="p-4 text-red-400 font-semibold">-18%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-18%</td>
                                             <td className="p-4 text-yellow-400 font-semibold">0% (held value)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2024-2025 Geopolitical Tensions</td>
                                             <td className="p-4 text-slate-500 font-semibold">Volatile</td>
-                                            <td className="p-4 text-green-400 font-semibold">New all-time highs</td>
+                                            <td className="p-4 text-green-700 font-semibold">New all-time highs</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -204,7 +204,7 @@ export default function SafeHavenInvestmentsPage() {
                         {/* 2. Treasury Bonds */}
                         <section id="bonds" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. US Treasury Bonds</h2>
@@ -229,7 +229,7 @@ export default function SafeHavenInvestmentsPage() {
                         {/* 3. Safe Haven Currencies */}
                         <section id="currencies" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Globe className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Safe Haven Currencies</h2>
@@ -294,7 +294,7 @@ export default function SafeHavenInvestmentsPage() {
                         {/* 5. Defensive Stocks */}
                         <section id="defensive" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Defensive Stocks</h2>
@@ -362,7 +362,7 @@ export default function SafeHavenInvestmentsPage() {
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Treasury Bonds</span>
-                                        <span className="font-semibold text-blue-400">15-25%</span>
+                                        <span className="font-semibold text-blue-700">15-25%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Cash & Equivalents</span>
@@ -370,11 +370,11 @@ export default function SafeHavenInvestmentsPage() {
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Defensive Stocks</span>
-                                        <span className="font-semibold text-purple-400">10-20%</span>
+                                        <span className="font-semibold text-purple-700">10-20%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Growth Assets (Stocks)</span>
-                                        <span className="font-semibold text-green-400">40-60%</span>
+                                        <span className="font-semibold text-green-700">40-60%</span>
                                     </div>
                                 </div>
                                 <p className="text-sm text-slate-500 mt-4">Adjust based on your risk tolerance, time horizon, and current market conditions.</p>

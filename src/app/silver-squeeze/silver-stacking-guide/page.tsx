@@ -166,42 +166,42 @@ export default function SilverStackingGuidePage() {
                                 <h4 className="font-bold text-slate-900 text-lg mb-4">Why People Stack Silver</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Inflation Protection</span>
                                             <p className="text-sm text-slate-600 mt-1">Silver preserves purchasing power as currencies are debased</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Financial Independence</span>
                                             <p className="text-sm text-slate-600 mt-1">Wealth outside the banking system that&apos;s truly yours</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Crisis Insurance</span>
                                             <p className="text-sm text-slate-600 mt-1">Physical assets that work when digital systems don&apos;t</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Undervalued Asset</span>
                                             <p className="text-sm text-slate-600 mt-1">The gold-silver ratio suggests silver may be historically cheap</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Silver Squeeze</span>
                                             <p className="text-sm text-slate-600 mt-1">Participating in exposing bank manipulation</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Generational Wealth</span>
                                             <p className="text-sm text-slate-600 mt-1">Passing down real assets to children and grandchildren</p>
@@ -231,38 +231,38 @@ export default function SilverStackingGuidePage() {
                                     <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">American Silver Eagles</td>
-                                            <td className="p-4 text-red-400">High (20-35%)</td>
-                                            <td className="p-4 text-green-400">Excellent</td>
+                                            <td className="p-4 text-red-700">High (20-35%)</td>
+                                            <td className="p-4 text-green-700">Excellent</td>
                                             <td className="p-4">Recognition, liquidity, gifting</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">Canadian Maple Leafs</td>
                                             <td className="p-4 text-[#B22234]">Moderate (15-25%)</td>
-                                            <td className="p-4 text-green-400">Excellent</td>
+                                            <td className="p-4 text-green-700">Excellent</td>
                                             <td className="p-4">Pure .9999 silver, good value</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Generic Rounds</td>
-                                            <td className="p-4 text-green-400">Low (8-15%)</td>
+                                            <td className="p-4 text-green-700">Low (8-15%)</td>
                                             <td className="p-4 text-[#B22234]">Good</td>
                                             <td className="p-4">Maximum oz per dollar</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">10 oz Bars</td>
-                                            <td className="p-4 text-green-400">Low (5-10%)</td>
+                                            <td className="p-4 text-green-700">Low (5-10%)</td>
                                             <td className="p-4 text-[#B22234]">Good</td>
                                             <td className="p-4">Efficient stacking, low premium</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">100 oz Bars</td>
-                                            <td className="p-4 text-green-400">Lowest (3-7%)</td>
+                                            <td className="p-4 text-green-700">Lowest (3-7%)</td>
                                             <td className="p-4 text-slate-600">Lower</td>
                                             <td className="p-4">Serious stackers, IRA purchases</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">Junk Silver (90%)</td>
                                             <td className="p-4 text-[#B22234]">Variable</td>
-                                            <td className="p-4 text-green-400">Excellent</td>
+                                            <td className="p-4 text-green-700">Excellent</td>
                                             <td className="p-4">Fractional, barter-ready</td>
                                         </tr>
                                     </tbody>
@@ -330,7 +330,7 @@ export default function SilverStackingGuidePage() {
                                     <p className="text-sm text-slate-600">Decide how much you can allocate to silver monthly. Even $50-100/month adds up—that&apos;s 2-4 ounces consistently building over time.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <TrendingUp className="w-8 h-8 text-green-400 mb-4" />
+                                    <TrendingUp className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">2. Dollar-Cost Average</h4>
                                     <p className="text-sm text-slate-600">Buy regularly regardless of price. This removes emotion from the equation and ensures you accumulate during both dips and rallies.</p>
                                 </div>
@@ -340,7 +340,7 @@ export default function SilverStackingGuidePage() {
                                     <p className="text-sm text-slate-600">Compare premiums across dealers. Use &quot;any quantity&quot; pricing. Consider dealer sales. Buy larger bars when it makes sense. Every dollar saved is another fraction of an ounce.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Scale className="w-8 h-8 text-purple-400 mb-4" />
+                                    <Scale className="w-8 h-8 text-purple-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">4. Diversify Products</h4>
                                     <p className="text-sm text-slate-600">Don&apos;t put all your stack in one type. Mix coins, rounds, bars, and junk silver for different situations and liquidity needs.</p>
                                 </div>
@@ -411,14 +411,14 @@ export default function SilverStackingGuidePage() {
                                 <div className="space-y-6">
                                     <div className="flex gap-4 items-start">
                                         <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0">
-                                            <Building2 className="w-6 h-6 text-blue-400" />
+                                            <Building2 className="w-6 h-6 text-blue-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-slate-900 mb-1">Online Dealers</h5>
                                             <p className="text-slate-600 text-sm mb-2">Major dealers like JM Bullion, SD Bullion, APMEX, and Silver Gold Bull offer competitive pricing, wide selection, and regular sales. Best for: Largest selection, easy price comparison.</p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">Good prices</span>
-                                                <span className="text-xs bg-blue-500/20 text-blue-400 px-2 py-1 rounded">Large selection</span>
+                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">Good prices</span>
+                                                <span className="text-xs bg-blue-500/20 text-blue-700 px-2 py-1 rounded">Large selection</span>
                                                 <span className="text-xs bg-[#B22234]/20 text-[#B22234] px-2 py-1 rounded">Shipping costs</span>
                                             </div>
                                         </div>
@@ -426,14 +426,14 @@ export default function SilverStackingGuidePage() {
 
                                     <div className="flex gap-4 items-start">
                                         <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center shrink-0">
-                                            <Wallet className="w-6 h-6 text-green-400" />
+                                            <Wallet className="w-6 h-6 text-green-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-slate-900 mb-1">Local Coin Shops (LCS)</h5>
                                             <p className="text-slate-600 text-sm mb-2">Local dealers vary widely in pricing. Some are very competitive, others charge high premiums. Best for: No shipping, instant possession, building relationships.</p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">No shipping</span>
-                                                <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">See before buying</span>
+                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">No shipping</span>
+                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">See before buying</span>
                                                 <span className="text-xs bg-[#B22234]/20 text-[#B22234] px-2 py-1 rounded">Prices vary</span>
                                             </div>
                                         </div>
@@ -441,14 +441,14 @@ export default function SilverStackingGuidePage() {
 
                                     <div className="flex gap-4 items-start">
                                         <div className="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0">
-                                            <Package className="w-6 h-6 text-purple-400" />
+                                            <Package className="w-6 h-6 text-purple-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-slate-900 mb-1">eBay/Secondary Market</h5>
                                             <p className="text-slate-600 text-sm mb-2">Can find deals from other stackers, but requires caution about authenticity. Best for: Potential bargains, specific items, selling your stack.</p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">Potential deals</span>
-                                                <span className="text-xs bg-red-500/20 text-red-400 px-2 py-1 rounded">Counterfeit risk</span>
+                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">Potential deals</span>
+                                                <span className="text-xs bg-red-500/20 text-red-700 px-2 py-1 rounded">Counterfeit risk</span>
                                                 <span className="text-xs bg-[#B22234]/20 text-[#B22234] px-2 py-1 rounded">Buyer fees</span>
                                             </div>
                                         </div>
@@ -485,31 +485,31 @@ export default function SilverStackingGuidePage() {
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Home Safe</h4>
                                     <p className="text-sm text-slate-600 mb-3">A quality safe (fire-rated, bolted down) provides immediate access to your stack. Best for smaller to medium stacks.</p>
                                     <div className="space-y-1 text-sm">
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Direct possession</div>
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Immediate access</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Direct possession</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Immediate access</div>
                                         <div className="flex items-center gap-2 text-[#B22234]"><AlertTriangle className="w-4 h-4" /> Theft/fire risk</div>
                                         <div className="flex items-center gap-2 text-[#B22234]"><AlertTriangle className="w-4 h-4" /> Insurance needed</div>
                                     </div>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Building2 className="w-8 h-8 text-blue-400 mb-4" />
+                                    <Building2 className="w-8 h-8 text-blue-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Bank Safe Deposit Box</h4>
                                     <p className="text-sm text-slate-600 mb-3">Secure storage at your bank. Note: Contents are NOT insured by the bank and not FDIC covered.</p>
                                     <div className="space-y-1 text-sm">
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Bank-level security</div>
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Low annual cost</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Bank-level security</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Low annual cost</div>
                                         <div className="flex items-center gap-2 text-[#B22234]"><AlertTriangle className="w-4 h-4" /> Limited access hours</div>
-                                        <div className="flex items-center gap-2 text-red-400"><AlertTriangle className="w-4 h-4" /> In the banking system</div>
+                                        <div className="flex items-center gap-2 text-red-700"><AlertTriangle className="w-4 h-4" /> In the banking system</div>
                                     </div>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Shield className="w-8 h-8 text-purple-400 mb-4" />
+                                    <Shield className="w-8 h-8 text-purple-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Private Vault Storage</h4>
                                     <p className="text-sm text-slate-600 mb-3">Third-party vaults offer allocated storage with full insurance. Popular options include Brink&apos;s, Delaware Depository, and various private vaults.</p>
                                     <div className="space-y-1 text-sm">
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Professional security</div>
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Full insurance</div>
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Outside banking system</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Professional security</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Full insurance</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Outside banking system</div>
                                         <div className="flex items-center gap-2 text-[#B22234]"><AlertTriangle className="w-4 h-4" /> Annual storage fees</div>
                                     </div>
                                 </div>
@@ -518,10 +518,10 @@ export default function SilverStackingGuidePage() {
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Silver IRA Depository</h4>
                                     <p className="text-sm text-slate-600 mb-3">IRS-approved depositories hold your IRA silver. Professional storage with tax advantages—ideal for serious stackers.</p>
                                     <div className="space-y-1 text-sm">
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Tax-deferred growth</div>
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Professional storage</div>
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Full insurance</div>
-                                        <div className="flex items-center gap-2 text-green-400"><CheckCircle2 className="w-4 h-4" /> Rollover existing retirement</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Tax-deferred growth</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Professional storage</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Full insurance</div>
+                                        <div className="flex items-center gap-2 text-green-700"><CheckCircle2 className="w-4 h-4" /> Rollover existing retirement</div>
                                     </div>
                                 </div>
                             </div>
@@ -551,35 +551,35 @@ export default function SilverStackingGuidePage() {
                                 </h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Tax-Deferred Growth:</span>
                                             <span className="text-slate-600"> When silver rises, you don&apos;t pay taxes on gains until withdrawal. If silver triples, you keep all the gains working for you.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Larger Positions:</span>
                                             <span className="text-slate-600"> Rolling over a 401(k) or IRA can give you a much larger silver position than you could afford out-of-pocket.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">No Collectibles Tax:</span>
                                             <span className="text-slate-600"> Physical silver held outside an IRA is taxed as a collectible (28%). IRA silver gets standard income tax treatment at withdrawal.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Professional Storage:</span>
                                             <span className="text-slate-600"> Your IRA silver is insured and stored at approved depositories—no home security concerns for large positions.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Physical Allocated Silver:</span>
                                             <span className="text-slate-600"> Your IRA silver is real, physical metal held in your name—not paper claims. It drains supply just like home storage.</span>

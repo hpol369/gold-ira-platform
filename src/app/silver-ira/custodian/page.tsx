@@ -343,12 +343,12 @@ export default function SilverIraCustodianPage() {
                                         <div className="grid md:grid-cols-2 gap-6">
                                             <div>
                                                 <h4 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
-                                                    <CheckCircle2 className="h-4 w-4 text-green-400" /> Strengths
+                                                    <CheckCircle2 className="h-4 w-4 text-green-700" /> Strengths
                                                 </h4>
                                                 <ul className="space-y-2">
                                                     {custodian.strengths.map((strength, idx) => (
                                                         <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                                                            <CheckCircle2 className="h-3 w-3 text-green-400 flex-shrink-0" />
+                                                            <CheckCircle2 className="h-3 w-3 text-green-700 flex-shrink-0" />
                                                             {strength}
                                                         </li>
                                                     ))}
@@ -390,7 +390,7 @@ export default function SilverIraCustodianPage() {
                                             <div className="flex items-center gap-3 mb-2">
                                                 <h3 className="font-bold text-slate-900">{item.criterion}</h3>
                                                 <span className={`px-2 py-0.5 rounded text-xs font-semibold ${
-                                                    item.importance === 'Critical' ? 'bg-red-500/20 text-red-400' :
+                                                    item.importance === 'Critical' ? 'bg-red-500/20 text-red-700' :
                                                     item.importance === 'High' ? 'bg-[#B22234]/20 text-[#B22234]' :
                                                     'bg-[#B22234]/10 text-slate-600'
                                                 }`}>
@@ -420,9 +420,9 @@ export default function SilverIraCustodianPage() {
                             {warningSignsToAvoid.map((item, index) => (
                                 <div key={index} className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
                                     <div className="flex items-start gap-3">
-                                        <AlertTriangle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                                        <AlertTriangle className="h-5 w-5 text-red-700 flex-shrink-0 mt-0.5" />
                                         <div>
-                                            <h3 className="font-bold text-red-400 mb-2">{item.sign}</h3>
+                                            <h3 className="font-bold text-red-700 mb-2">{item.sign}</h3>
                                             <p className="text-sm text-slate-600">{item.explanation}</p>
                                         </div>
                                     </div>

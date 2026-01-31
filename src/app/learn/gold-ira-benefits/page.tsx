@@ -157,7 +157,7 @@ export default function GoldIraBenefitsPage() {
                         {/* Benefit 1: Inflation Protection */}
                         <section id="inflation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. Inflation Protection</h2>
@@ -174,15 +174,15 @@ export default function GoldIraBenefitsPage() {
                                 <p className="text-slate-600 mb-4">Consider what happens to $100,000 in savings over 20 years at different inflation rates:</p>
                                 <div className="grid grid-cols-3 gap-4 text-center">
                                     <div className="p-4 bg-white rounded-xl border border-slate-200">
-                                        <div className="text-2xl font-bold text-red-400">$67,297</div>
+                                        <div className="text-2xl font-bold text-red-700">$67,297</div>
                                         <div className="text-xs text-text-muted">@ 2% inflation</div>
                                     </div>
                                     <div className="p-4 bg-white rounded-xl border border-slate-200">
-                                        <div className="text-2xl font-bold text-red-400">$45,639</div>
+                                        <div className="text-2xl font-bold text-red-700">$45,639</div>
                                         <div className="text-xs text-slate-500">@ 4% inflation</div>
                                     </div>
                                     <div className="p-4 bg-white rounded-xl border border-slate-200">
-                                        <div className="text-2xl font-bold text-red-400">$31,180</div>
+                                        <div className="text-2xl font-bold text-red-700">$31,180</div>
                                         <div className="text-xs text-slate-500">@ 6% inflation</div>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@ export default function GoldIraBenefitsPage() {
                         {/* Benefit 2: True Diversification */}
                         <section id="diversification" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. True Portfolio Diversification</h2>
@@ -221,7 +221,7 @@ export default function GoldIraBenefitsPage() {
                         {/* Benefit 3: Tax Advantages */}
                         <section id="tax-benefits" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Powerful Tax Advantages</h2>
@@ -259,7 +259,7 @@ export default function GoldIraBenefitsPage() {
                         {/* Benefit 4: Control & Ownership */}
                         <section id="control" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Lock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. True Ownership & Control</h2>
@@ -284,7 +284,7 @@ export default function GoldIraBenefitsPage() {
                         {/* Benefit 5: Crisis Protection */}
                         <section id="crisis-protection" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Protection During Crises</h2>

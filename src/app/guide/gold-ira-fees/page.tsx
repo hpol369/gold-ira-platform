@@ -221,7 +221,7 @@ export default function GoldIraFeesGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                        <div className="w-12 h-12 rounded-full bg-green-900/50 text-green-400 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-green-900/50 text-green-700 flex items-center justify-center font-bold shrink-0">
                                             <Building2 className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -231,7 +231,7 @@ export default function GoldIraFeesGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                        <div className="w-12 h-12 rounded-full bg-amber-900/50 text-amber-400 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-amber-900/50 text-amber-700 flex items-center justify-center font-bold shrink-0">
                                             <Percent className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -274,7 +274,7 @@ export default function GoldIraFeesGuidePage() {
                                             <td className="p-4 font-semibold"><Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta Precious Metals</Link></td>
                                             <td className="p-4 text-slate-600">$50</td>
                                             <td className="p-4 text-slate-600">$225 (custodian + storage)</td>
-                                            <td className="p-4 text-green-400 font-medium">Up to 10 years waived ($50k+)</td>
+                                            <td className="p-4 text-green-700 font-medium">Up to 10 years waived ($50k+)</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold"><Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link></td>
@@ -336,38 +336,38 @@ export default function GoldIraFeesGuidePage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Excessive Premiums</h4>
-                                        <p className="text-sm text-amber-300/80 mt-1">The biggest &quot;hidden&quot; cost is often inflated premiums over spot price. A company might have low fees but charge 15% over spot when competitors charge 5%. Always ask for total purchase price, not just fees.</p>
+                                        <h4 className="font-bold text-amber-700">Excessive Premiums</h4>
+                                        <p className="text-sm text-amber-800/80 mt-1">The biggest &quot;hidden&quot; cost is often inflated premiums over spot price. A company might have low fees but charge 15% over spot when competitors charge 5%. Always ask for total purchase price, not just fees.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Percentage-Based Storage</h4>
-                                        <p className="text-sm text-amber-300/80 mt-1">Some depositories charge a percentage of your holdings (e.g., 0.5%/year) instead of a flat fee. For large accounts, this can mean hundreds or thousands more per year than flat-rate storage.</p>
+                                        <h4 className="font-bold text-amber-700">Percentage-Based Storage</h4>
+                                        <p className="text-sm text-amber-800/80 mt-1">Some depositories charge a percentage of your holdings (e.g., 0.5%/year) instead of a flat fee. For large accounts, this can mean hundreds or thousands more per year than flat-rate storage.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Poor Buyback Pricing</h4>
-                                        <p className="text-sm text-amber-300/80 mt-1">Some companies offer low purchase premiums but buy back at deep discounts. Ask about the &quot;spread&quot; between buy and sell prices. Reputable companies buy back at competitive rates.</p>
+                                        <h4 className="font-bold text-amber-700">Poor Buyback Pricing</h4>
+                                        <p className="text-sm text-amber-800/80 mt-1">Some companies offer low purchase premiums but buy back at deep discounts. Ask about the &quot;spread&quot; between buy and sell prices. Reputable companies buy back at competitive rates.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Liquidation Fees</h4>
-                                        <p className="text-sm text-amber-300/80 mt-1">Some companies charge fees when you sell your metals or take a distribution. These can range from $50 to several hundred dollars. Ask about all exit costs upfront.</p>
+                                        <h4 className="font-bold text-amber-700">Liquidation Fees</h4>
+                                        <p className="text-sm text-amber-800/80 mt-1">Some companies charge fees when you sell your metals or take a distribution. These can range from $50 to several hundred dollars. Ask about all exit costs upfront.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-900/20 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Minimum Balance Fees</h4>
-                                        <p className="text-sm text-amber-300/80 mt-1">Some custodians charge extra if your account falls below a certain value. Make sure you understand any minimum balance requirements.</p>
+                                        <h4 className="font-bold text-amber-700">Minimum Balance Fees</h4>
+                                        <p className="text-sm text-amber-800/80 mt-1">Some custodians charge extra if your account falls below a certain value. Make sure you understand any minimum balance requirements.</p>
                                     </div>
                                 </div>
                             </div>

@@ -139,7 +139,7 @@ export default function SilverPrediction2026Page() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
+                            <span className="bg-red-500/20 text-red-700 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
                             <span className="text-slate-600 text-sm">1,700+ monthly searches</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
@@ -185,7 +185,7 @@ export default function SilverPrediction2026Page() {
                         {/* Bank Forecasts */}
                         <section id="bank-forecasts" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Major Bank Forecasts for 2026</h2>
@@ -208,10 +208,10 @@ export default function SilverPrediction2026Page() {
                                         {bankForecasts.map((forecast, idx) => (
                                             <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                                 <td className="p-4 text-slate-900 font-medium">{forecast.bank}</td>
-                                                <td className="p-4 text-green-400 font-bold text-lg">{forecast.target}</td>
+                                                <td className="p-4 text-green-700 font-bold text-lg">{forecast.target}</td>
                                                 <td className="p-4">
                                                     <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                        forecast.confidence === 'High' ? 'bg-green-500/20 text-green-400' :
+                                                        forecast.confidence === 'High' ? 'bg-green-500/20 text-green-700' :
                                                         'bg-[#B22234]/20 text-[#B22234]'
                                                     }`}>
                                                         {forecast.confidence}
@@ -232,7 +232,7 @@ export default function SilverPrediction2026Page() {
                         {/* Analyst Predictions */}
                         <section id="analyst-predictions" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Industry Expert Predictions</h2>
@@ -251,12 +251,12 @@ export default function SilverPrediction2026Page() {
                                             </div>
                                             <div className="flex items-center gap-4">
                                                 <div className="text-right">
-                                                    <div className="text-2xl font-bold text-green-400">{analyst.target}</div>
+                                                    <div className="text-2xl font-bold text-green-700">{analyst.target}</div>
                                                     <div className="text-xs text-slate-600">{analyst.timeframe}</div>
                                                 </div>
                                                 <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                                                    analyst.stance === 'Extremely Bullish' ? 'bg-green-500/30 text-green-400' :
-                                                    analyst.stance === 'Very Bullish' ? 'bg-green-500/20 text-green-400' :
+                                                    analyst.stance === 'Extremely Bullish' ? 'bg-green-500/30 text-green-700' :
+                                                    analyst.stance === 'Very Bullish' ? 'bg-green-500/20 text-green-700' :
                                                     'bg-emerald-500/20 text-emerald-400'
                                                 }`}>
                                                     {analyst.stance}
@@ -278,7 +278,7 @@ export default function SilverPrediction2026Page() {
                         {/* Bullish Case */}
                         <section id="bullish-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Bullish Case: Why Silver Could Soar</h2>
@@ -289,7 +289,7 @@ export default function SilverPrediction2026Page() {
 
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
                                 <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Industrial Demand Explosion</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Industrial Demand Explosion</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Solar panel demand growing 25%+ annually</li>
                                         <li>Each EV uses 25-50g of silver (vs 15-28g for ICE)</li>
@@ -298,7 +298,7 @@ export default function SilverPrediction2026Page() {
                                     </ul>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Supply Constraints</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Supply Constraints</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Mine production has plateaued since 2016</li>
                                         <li>Above-ground stockpiles at multi-decade lows</li>
@@ -307,7 +307,7 @@ export default function SilverPrediction2026Page() {
                                     </ul>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Monetary Factors</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Monetary Factors</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Fed rate cuts expected in 2026</li>
                                         <li>Real interest rates still negative</li>
@@ -316,7 +316,7 @@ export default function SilverPrediction2026Page() {
                                     </ul>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Technical Breakout</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Technical Breakout</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li>Multi-year cup-and-handle formation</li>
                                         <li>$30 resistance becoming support</li>
@@ -330,7 +330,7 @@ export default function SilverPrediction2026Page() {
                         {/* Bearish Case */}
                         <section id="bearish-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Bearish Case: What Could Go Wrong</h2>
@@ -341,10 +341,10 @@ export default function SilverPrediction2026Page() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Fed Stays Hawkish</h4>
-                                        <p className="text-sm text-red-300 mt-1">If inflation proves sticky and the Fed keeps rates elevated or hikes again, the dollar could strengthen, pressuring silver prices. Higher real rates reduce the appeal of non-yielding assets.</p>
+                                        <h4 className="font-bold text-red-700">Fed Stays Hawkish</h4>
+                                        <p className="text-sm text-red-800 mt-1">If inflation proves sticky and the Fed keeps rates elevated or hikes again, the dollar could strengthen, pressuring silver prices. Higher real rates reduce the appeal of non-yielding assets.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-[#B22234]/10 border border-amber-500/20">
@@ -398,9 +398,9 @@ export default function SilverPrediction2026Page() {
                                             <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                                 <td className="p-4 font-medium">
                                                     <span className={
-                                                        scenario.scenario === 'Bear Case' ? 'text-red-400' :
+                                                        scenario.scenario === 'Bear Case' ? 'text-red-700' :
                                                         scenario.scenario === 'Base Case' ? 'text-[#B22234]' :
-                                                        scenario.scenario === 'Bull Case' ? 'text-green-400' :
+                                                        scenario.scenario === 'Bull Case' ? 'text-green-700' :
                                                         'text-emerald-400'
                                                     }>
                                                         {scenario.scenario}
@@ -492,7 +492,7 @@ export default function SilverPrediction2026Page() {
                             <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 className="font-bold text-green-400 mb-3">Resistance Levels (Upside Targets)</h4>
+                                        <h4 className="font-bold text-green-700 mb-3">Resistance Levels (Upside Targets)</h4>
                                         <ul className="space-y-2 text-sm">
                                             <li className="flex justify-between text-slate-600">
                                                 <span>$35.00</span>
@@ -513,7 +513,7 @@ export default function SilverPrediction2026Page() {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-red-400 mb-3">Support Levels (Downside Risk)</h4>
+                                        <h4 className="font-bold text-red-700 mb-3">Support Levels (Downside Risk)</h4>
                                         <ul className="space-y-2 text-sm">
                                             <li className="flex justify-between text-slate-600">
                                                 <span>$30.00</span>

@@ -237,7 +237,7 @@ export default function GoldIraVsRothIraPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
-                                    <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -248,7 +248,7 @@ export default function GoldIraVsRothIraPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-white shadow-sm border border-slate-200">
-                                    <div className="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-purple-500/20 text-purple-700 flex items-center justify-center shrink-0">
                                         <DollarSign className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -353,10 +353,10 @@ export default function GoldIraVsRothIraPage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-green-500/10 border border-green-500/30">
-                                    <ShieldCheck className="w-6 h-6 text-green-400 shrink-0 mt-1" />
+                                    <ShieldCheck className="w-6 h-6 text-green-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-green-400">Choose a Gold IRA if...</h4>
-                                        <ul className="text-sm text-green-300 mt-2 space-y-1">
+                                        <h4 className="font-bold text-green-700">Choose a Gold IRA if...</h4>
+                                        <ul className="text-sm text-green-800 mt-2 space-y-1">
                                             <li>• You&apos;re concerned about inflation eating your savings</li>
                                             <li>• You want protection against stock market crashes</li>
                                             <li>• You&apos;re nearing retirement and need stability</li>
@@ -366,10 +366,10 @@ export default function GoldIraVsRothIraPage() {
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-blue-500/10 border border-blue-500/30">
-                                    <TrendingUp className="w-6 h-6 text-blue-400 shrink-0 mt-1" />
+                                    <TrendingUp className="w-6 h-6 text-blue-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-blue-400">Choose a Traditional Roth IRA if...</h4>
-                                        <ul className="text-sm text-blue-300 mt-2 space-y-1">
+                                        <h4 className="font-bold text-blue-700">Choose a Traditional Roth IRA if...</h4>
+                                        <ul className="text-sm text-blue-800 mt-2 space-y-1">
                                             <li>• You have 20+ years until retirement</li>
                                             <li>• You want maximum growth potential</li>
                                             <li>• You can tolerate significant volatility</li>

@@ -403,7 +403,7 @@ export default function SilverVsGoldIraPage() {
                                     <ul className="space-y-2">
                                         {section.items.map((item, idx) => (
                                             <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
-                                                <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                                                <CheckCircle2 className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
                                                 {item}
                                             </li>
                                         ))}
@@ -432,10 +432,10 @@ export default function SilverVsGoldIraPage() {
                                             <div className="flex items-center gap-3 mb-2">
                                                 <h3 className="font-bold text-slate-900">{item.strategy}</h3>
                                                 <span className={`px-2 py-0.5 rounded text-xs font-bold ${
-                                                    item.riskLevel === 'Lower' ? 'bg-green-500/20 text-green-400' :
+                                                    item.riskLevel === 'Lower' ? 'bg-green-500/20 text-green-700' :
                                                     item.riskLevel === 'Moderate' ? 'bg-[#B22234]/20 text-[#B22234]' :
-                                                    item.riskLevel === 'Higher' ? 'bg-red-500/20 text-red-400' :
-                                                    'bg-purple-500/20 text-purple-400'
+                                                    item.riskLevel === 'Higher' ? 'bg-red-500/20 text-red-700' :
+                                                    'bg-purple-500/20 text-purple-700'
                                                 }`}>
                                                     {item.riskLevel} Risk
                                                 </span>

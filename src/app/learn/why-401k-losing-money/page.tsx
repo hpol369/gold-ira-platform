@@ -177,7 +177,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* Market Volatility */}
                         <section id="market-volatility" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #1: Market Volatility & Corrections</h2>
@@ -191,15 +191,15 @@ export default function Why401kLosingMoneyPage() {
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
                                         <span className="text-slate-600">2022 Bear Market</span>
-                                        <span className="text-red-400 font-semibold">S&P 500 down 25%</span>
+                                        <span className="text-red-700 font-semibold">S&P 500 down 25%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
                                         <span className="text-slate-600">2020 COVID Crash</span>
-                                        <span className="text-red-400 font-semibold">S&P 500 down 34%</span>
+                                        <span className="text-red-700 font-semibold">S&P 500 down 34%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
                                         <span className="text-slate-600">2008 Financial Crisis</span>
-                                        <span className="text-red-400 font-semibold">S&P 500 down 57%</span>
+                                        <span className="text-red-700 font-semibold">S&P 500 down 57%</span>
                                     </div>
                                 </div>
                             </div>
@@ -240,18 +240,18 @@ export default function Why401kLosingMoneyPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-slate-900">0.25% (Low-cost index)</td>
-                                            <td className="p-4 text-green-400 font-semibold">$1,540,000</td>
+                                            <td className="p-4 text-green-700 font-semibold">$1,540,000</td>
                                             <td className="p-4 text-slate-500">$45,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">1.0% (Average 401k)</td>
                                             <td className="p-4 text-[#B22234] font-semibold">$1,340,000</td>
-                                            <td className="p-4 text-red-400">$245,000</td>
+                                            <td className="p-4 text-red-700">$245,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">1.5% (High-fee plan)</td>
-                                            <td className="p-4 text-red-400 font-semibold">$1,195,000</td>
-                                            <td className="p-4 text-red-400">$390,000</td>
+                                            <td className="p-4 text-red-700 font-semibold">$1,195,000</td>
+                                            <td className="p-4 text-red-700">$390,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -278,7 +278,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* Poor Fund Selection */}
                         <section id="poor-funds" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <PieChart className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #3: Poor Fund Selection</h2>
@@ -303,19 +303,19 @@ export default function Why401kLosingMoneyPage() {
                                 </h4>
                                 <ul className="space-y-3 text-slate-600">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                                         <span>What is the expense ratio of each fund I&apos;m invested in?</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                                         <span>How has each fund performed compared to its benchmark index?</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                                         <span>Are there low-cost index fund options available?</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                                         <span>When was the last time the plan&apos;s investment menu was updated?</span>
                                     </li>
                                 </ul>
@@ -338,19 +338,19 @@ export default function Why401kLosingMoneyPage() {
                             </p>
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
-                                <h4 className="font-bold text-red-400 text-lg mb-4">The Danger Zone</h4>
-                                <p className="text-red-300 mb-4">Consider someone retiring in 2008 with $1 million, 80% in stocks:</p>
+                                <h4 className="font-bold text-red-700 text-lg mb-4">The Danger Zone</h4>
+                                <p className="text-red-800 mb-4">Consider someone retiring in 2008 with $1 million, 80% in stocks:</p>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl">
                                         <h5 className="font-semibold text-slate-900 mb-2">January 2008</h5>
-                                        <p className="text-2xl font-bold text-green-400">$1,000,000</p>
+                                        <p className="text-2xl font-bold text-green-700">$1,000,000</p>
                                     </div>
                                     <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl">
                                         <h5 className="font-semibold text-slate-900 mb-2">March 2009</h5>
-                                        <p className="text-2xl font-bold text-red-400">$544,000</p>
+                                        <p className="text-2xl font-bold text-red-700">$544,000</p>
                                     </div>
                                 </div>
-                                <p className="text-sm text-red-400 mt-4">A 45% loss right at retirement could mean working 5-10 more years or drastically reducing lifestyle.</p>
+                                <p className="text-sm text-red-700 mt-4">A 45% loss right at retirement could mean working 5-10 more years or drastically reducing lifestyle.</p>
                             </div>
 
                             <p>
@@ -361,7 +361,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* Target Date Fund Issues */}
                         <section id="target-date-issues" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #5: Target Date Fund Issues</h2>
@@ -374,28 +374,28 @@ export default function Why401kLosingMoneyPage() {
 
                             <div className="space-y-4 not-prose my-8">
                                 <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold flex-shrink-0">1</div>
+                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">1</div>
                                     <div>
                                         <h4 className="font-bold text-slate-900">Still Too Much Stock Exposure</h4>
                                         <p className="text-sm text-slate-500 mt-1">Many target date funds still hold 40-50% stocks at the target date. That&apos;s a lot of risk when you&apos;re ready to retire.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold flex-shrink-0">2</div>
+                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">2</div>
                                     <div>
                                         <h4 className="font-bold text-slate-900">One-Size-Fits-All Approach</h4>
                                         <p className="text-sm text-slate-500 mt-1">Your risk tolerance, other savings, and retirement plans are unique. Target date funds assume everyone with the same retirement year has identical needs.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold flex-shrink-0">3</div>
+                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">3</div>
                                     <div>
                                         <h4 className="font-bold text-slate-900">Hidden Fees</h4>
                                         <p className="text-sm text-slate-500 mt-1">Many target date funds have higher expense ratios than simple index funds, especially those from major brokerages.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold flex-shrink-0">4</div>
+                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">4</div>
                                     <div>
                                         <h4 className="font-bold text-slate-900">No Protection from Correlated Assets</h4>
                                         <p className="text-sm text-slate-500 mt-1">Stocks and bonds sometimes fall together (like in 2022). Target date funds rarely include truly non-correlated assets like gold.</p>
@@ -427,7 +427,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* What You Can Do */}
                         <section id="what-to-do" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What You Can Do About It</h2>
@@ -468,15 +468,15 @@ export default function Why401kLosingMoneyPage() {
                                 </p>
                                 <div className="grid md:grid-cols-3 gap-4 text-center">
                                     <div className="p-4 bg-white/5 rounded-xl">
-                                        <p className="text-2xl font-bold text-green-400">+5.5%</p>
+                                        <p className="text-2xl font-bold text-green-700">+5.5%</p>
                                         <p className="text-xs text-slate-500">Gold in 2008 crash</p>
                                     </div>
                                     <div className="p-4 bg-white/5 rounded-xl">
-                                        <p className="text-2xl font-bold text-green-400">+25%</p>
+                                        <p className="text-2xl font-bold text-green-700">+25%</p>
                                         <p className="text-xs text-slate-500">Gold in 2020</p>
                                     </div>
                                     <div className="p-4 bg-white/5 rounded-xl">
-                                        <p className="text-2xl font-bold text-green-400">Tax-Free</p>
+                                        <p className="text-2xl font-bold text-green-700">Tax-Free</p>
                                         <p className="text-xs text-slate-500">401k to Gold IRA rollover</p>
                                     </div>
                                 </div>

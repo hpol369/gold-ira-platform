@@ -259,7 +259,7 @@ export default function AndySchectmanPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
+                                    <CheckCircle2 className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">What Andy Schectman Recommends</h2>
                             </div>

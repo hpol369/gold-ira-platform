@@ -166,7 +166,7 @@ export default function SilverPriceHubPage() {
                                     <span className="text-4xl font-bold text-slate-900">${currentSilverPrice.toFixed(2)}</span>
                                     <span className="text-lg text-slate-600">/oz</span>
                                 </div>
-                                <div className={`flex items-center gap-2 ${priceChange24h >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+                                <div className={`flex items-center gap-2 ${priceChange24h >= 0 ? 'text-green-700' : 'text-red-700'}`}>
                                     {priceChange24h >= 0 ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
                                     <span className="font-semibold">${priceChange24h.toFixed(2)} ({priceChangePercent}%)</span>
                                     <span className="text-slate-600 text-sm">24h</span>
@@ -199,12 +199,12 @@ export default function SilverPriceHubPage() {
                                 {expertPredictions.map((pred, idx) => (
                                     <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                         <td className="p-4 text-slate-900 font-medium">{pred.source}</td>
-                                        <td className="p-4 text-green-400 font-bold text-lg">{pred.target}</td>
+                                        <td className="p-4 text-green-700 font-bold text-lg">{pred.target}</td>
                                         <td className="p-4 text-slate-600">{pred.timeframe}</td>
                                         <td className="p-4">
                                             <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                                                pred.stance === 'Extremely Bullish' ? 'bg-green-500/20 text-green-400' :
-                                                pred.stance === 'Very Bullish' ? 'bg-green-500/20 text-green-400' :
+                                                pred.stance === 'Extremely Bullish' ? 'bg-green-500/20 text-green-700' :
+                                                pred.stance === 'Very Bullish' ? 'bg-green-500/20 text-green-700' :
                                                 pred.stance === 'Bullish' ? 'bg-emerald-500/20 text-emerald-400' :
                                                 'bg-[#B22234]/20 text-[#B22234]'
                                             }`}>
@@ -235,7 +235,7 @@ export default function SilverPriceHubPage() {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         {page.hot && (
-                                            <span className="bg-red-500/20 text-red-400 text-xs font-bold px-2 py-1 rounded-full">HOT</span>
+                                            <span className="bg-red-500/20 text-red-700 text-xs font-bold px-2 py-1 rounded-full">HOT</span>
                                         )}
                                         <span className="text-xs text-slate-600">{page.volume} searches/mo</span>
                                     </div>

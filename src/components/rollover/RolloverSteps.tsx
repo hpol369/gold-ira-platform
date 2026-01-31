@@ -21,7 +21,7 @@ export function RolloverSteps({ steps, providerName }: RolloverStepsProps) {
       <div className="space-y-4">
         {steps.map((step, index) => (
           <div key={index} className="flex gap-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm border border-amber-500/30">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-700 flex items-center justify-center font-bold text-sm border border-amber-500/30">
               {index + 1}
             </div>
             <div className="flex-1 pt-1">
@@ -44,14 +44,14 @@ export function TipsWarnings({ tips, warnings }: TipsWarningsProps) {
     <div className="grid md:grid-cols-2 gap-6">
       {/* Tips */}
       <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
-        <h3 className="font-bold text-green-400 mb-4 flex items-center gap-2">
+        <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
           <Lightbulb className="h-5 w-5" />
           What Helps
         </h3>
         <ul className="space-y-3">
           {tips.map((tip, index) => (
-            <li key={index} className="flex items-start gap-2 text-sm text-green-300">
-              <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />
+            <li key={index} className="flex items-start gap-2 text-sm text-green-800">
+              <CheckCircle2 className="h-4 w-4 text-green-700 flex-shrink-0 mt-0.5" />
               <span>{tip}</span>
             </li>
           ))}
@@ -60,14 +60,14 @@ export function TipsWarnings({ tips, warnings }: TipsWarningsProps) {
 
       {/* Warnings */}
       <div className="bg-amber-500/10 rounded-xl p-6 border border-amber-500/20">
-        <h3 className="font-bold text-amber-400 mb-4 flex items-center gap-2">
+        <h3 className="font-bold text-amber-700 mb-4 flex items-center gap-2">
           <AlertTriangle className="h-5 w-5" />
           Things to Avoid
         </h3>
         <ul className="space-y-3">
           {warnings.map((warning, index) => (
-            <li key={index} className="flex items-start gap-2 text-sm text-amber-300">
-              <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0 mt-0.5" />
+            <li key={index} className="flex items-start gap-2 text-sm text-amber-800">
+              <AlertTriangle className="h-4 w-4 text-amber-700 flex-shrink-0 mt-0.5" />
               <span>{warning}</span>
             </li>
           ))}
@@ -90,13 +90,13 @@ export function RolloverTimeline({ timeline, directRollover, onlineRollover }: R
       <p className="text-slate-400 text-sm mb-4">Here&apos;s what to expect once you start the process.</p>
       <div className="grid sm:grid-cols-3 gap-4">
         <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
-          <div className="text-2xl font-bold text-amber-400">{timeline}</div>
+          <div className="text-2xl font-bold text-amber-700">{timeline}</div>
           <div className="text-sm text-slate-400">Start to Finish</div>
         </div>
         <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
           <div className={cn(
             "text-2xl font-bold",
-            directRollover ? "text-green-400" : "text-slate-500"
+            directRollover ? "text-green-700" : "text-slate-500"
           )}>
             {directRollover ? "Yes" : "No"}
           </div>
@@ -105,7 +105,7 @@ export function RolloverTimeline({ timeline, directRollover, onlineRollover }: R
         <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
           <div className={cn(
             "text-2xl font-bold",
-            onlineRollover ? "text-green-400" : "text-slate-500"
+            onlineRollover ? "text-green-700" : "text-slate-500"
           )}>
             {onlineRollover ? "Yes" : "No"}
           </div>

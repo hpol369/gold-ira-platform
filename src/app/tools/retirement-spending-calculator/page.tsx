@@ -37,7 +37,7 @@ const categories = [
   { id: "housing", label: "Housing", icon: Home, color: "text-blue-600" },
   { id: "healthcare", label: "Healthcare", icon: Heart, color: "text-red-600" },
   { id: "food", label: "Food & Groceries", icon: Utensils, color: "text-green-600" },
-  { id: "transportation", label: "Transportation", icon: Car, color: "text-purple-400" },
+  { id: "transportation", label: "Transportation", icon: Car, color: "text-purple-700" },
   { id: "entertainment", label: "Entertainment", icon: ShoppingCart, color: "text-[#B22234]" },
   { id: "travel", label: "Travel", icon: Plane, color: "text-teal-400" },
 ];
@@ -257,7 +257,7 @@ export default function RetirementSpendingCalculatorPage() {
                   <div>
                     <div className="flex items-center justify-between mb-3">
                       <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
-                        <Car className="h-4 w-4 text-purple-400" />
+                        <Car className="h-4 w-4 text-purple-700" />
                         Transportation (car, gas, maintenance)
                       </label>
                       <span className="text-[#B22234] font-bold">

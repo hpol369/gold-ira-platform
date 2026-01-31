@@ -187,7 +187,7 @@ export default function Robs401kRulesPage() {
                             </p>
 
                             <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8">
-                                <h3 className="text-xl font-bold text-red-400 mb-6 flex items-center gap-2">
+                                <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     You CANNOT Do These Things
                                 </h3>
@@ -224,7 +224,7 @@ export default function Robs401kRulesPage() {
                                         }
                                     ].map((item, index) => (
                                         <div key={index} className="flex items-start gap-4 bg-slate-50 rounded-xl p-4">
-                                            <XCircle className="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" />
+                                            <XCircle className="w-6 h-6 text-red-700 flex-shrink-0 mt-0.5" />
                                             <div>
                                                 <h4 className="text-[#000080] font-semibold mb-1">{item.title}</h4>
                                                 <p className="text-slate-500 text-sm">{item.description}</p>
@@ -250,7 +250,7 @@ export default function Robs401kRulesPage() {
                             </p>
 
                             <div className="bg-green-500/5 border border-green-500/20 rounded-2xl p-8">
-                                <h3 className="text-xl font-bold text-green-400 mb-6 flex items-center gap-2">
+                                <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     Legitimate Business Uses
                                 </h3>
@@ -271,7 +271,7 @@ export default function Robs401kRulesPage() {
                                         "Working capital for operations"
                                     ].map((item, index) => (
                                         <div key={index} className="flex items-center gap-3">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                             <span className="text-slate-600">{item}</span>
                                         </div>
                                     ))}
@@ -377,7 +377,7 @@ export default function Robs401kRulesPage() {
                                     <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
                                         <div className="flex items-center gap-2 mb-3">
                                             <span className={`text-xs font-bold px-2 py-1 rounded ${item.severity === 'Severe'
-                                                    ? 'bg-red-500/20 text-red-400'
+                                                    ? 'bg-red-500/20 text-red-700'
                                                     : 'bg-yellow-500/20 text-yellow-400'
                                                 }`}>
                                                 {item.severity}
@@ -415,7 +415,7 @@ export default function Robs401kRulesPage() {
                                     "Non-discrimination testing"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600 text-sm">{item}</span>
                                     </div>
                                 ))}

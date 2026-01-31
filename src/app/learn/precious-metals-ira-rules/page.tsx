@@ -129,7 +129,7 @@ export default function PreciousMetalsIraRulesPage() {
                         {/* Purity Standards */}
                         <section id="purity" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Fineness (Purity) Requirements</h2>
@@ -169,7 +169,7 @@ export default function PreciousMetalsIraRulesPage() {
                         {/* Storage Rules */}
                         <section id="storage-rules" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Gavel className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Strict Storage Regulations</h2>

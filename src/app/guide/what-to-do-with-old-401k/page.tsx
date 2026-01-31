@@ -187,20 +187,20 @@ export default function WhatToDoWithOld401kPage() {
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
                                 <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
-                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-300 space-y-1">
+                                    <ul className="text-sm text-green-800 space-y-1">
                                         <li>* No action required</li>
                                         <li>* Money keeps growing tax-deferred</li>
                                         <li>* May have good investment options</li>
                                     </ul>
                                 </div>
                                 <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
-                                    <h4 className="font-semibold text-red-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-red-700 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
-                                    <ul className="text-sm text-red-300 space-y-1">
+                                    <ul className="text-sm text-red-800 space-y-1">
                                         <li>* Can&apos;t contribute more</li>
                                         <li>* Limited investment options</li>
                                         <li>* Harder to track multiple accounts</li>
@@ -217,7 +217,7 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 2: Roll to New Employer */}
                         <section id="rollover-new" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <RefreshCw className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Option 2: Roll to New Employer&apos;s 401(k)</h2>
@@ -228,10 +228,10 @@ export default function WhatToDoWithOld401kPage() {
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
                                 <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
-                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-300 space-y-1">
+                                    <ul className="text-sm text-green-800 space-y-1">
                                         <li>* Consolidates accounts in one place</li>
                                         <li>* Continues tax-deferred growth</li>
                                         <li>* Can still contribute to it</li>
@@ -239,10 +239,10 @@ export default function WhatToDoWithOld401kPage() {
                                     </ul>
                                 </div>
                                 <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
-                                    <h4 className="font-semibold text-red-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-red-700 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
-                                    <ul className="text-sm text-red-300 space-y-1">
+                                    <ul className="text-sm text-red-800 space-y-1">
                                         <li>* Limited to plan&apos;s investment options</li>
                                         <li>* No gold or precious metals allowed</li>
                                         <li>* Still stuck with stocks/bonds/funds</li>
@@ -255,7 +255,7 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 3: Traditional IRA */}
                         <section id="rollover-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Option 3: Roll to a Traditional IRA</h2>
@@ -266,10 +266,10 @@ export default function WhatToDoWithOld401kPage() {
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
                                 <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
-                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-300 space-y-1">
+                                    <ul className="text-sm text-green-800 space-y-1">
                                         <li>* Thousands of investment options</li>
                                         <li>* Often lower fees than 401(k)</li>
                                         <li>* Full control over investments</li>
@@ -277,10 +277,10 @@ export default function WhatToDoWithOld401kPage() {
                                     </ul>
                                 </div>
                                 <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
-                                    <h4 className="font-semibold text-red-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-red-700 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
-                                    <ul className="text-sm text-red-300 space-y-1">
+                                    <ul className="text-sm text-red-800 space-y-1">
                                         <li>* No employer matching</li>
                                         <li>* Lower contribution limits than 401(k)</li>
                                         <li>* Still limited to paper assets (stocks, bonds, ETFs)</li>
@@ -293,7 +293,7 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 4: Cash Out */}
                         <section id="cash-out" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Option 4: Cash It Out (Not Recommended)</h2>
@@ -303,27 +303,27 @@ export default function WhatToDoWithOld401kPage() {
                             </p>
 
                             <div className="bg-red-500/10 border-2 border-red-500/20 rounded-xl p-6 not-prose my-6">
-                                <h4 className="font-bold text-red-400 mb-4">The True Cost of Cashing Out</h4>
-                                <p className="text-red-300 mb-4">If you cash out a $50,000 401(k) before age 59½:</p>
+                                <h4 className="font-bold text-red-700 mb-4">The True Cost of Cashing Out</h4>
+                                <p className="text-red-800 mb-4">If you cash out a $50,000 401(k) before age 59½:</p>
                                 <div className="space-y-2 text-sm">
                                     <div className="flex justify-between p-2 bg-slate-100 rounded">
                                         <span className="text-slate-600">Federal income tax (24% bracket)</span>
-                                        <span className="text-red-400 font-bold">-$12,000</span>
+                                        <span className="text-red-700 font-bold">-$12,000</span>
                                     </div>
                                     <div className="flex justify-between p-2 bg-slate-100 rounded">
                                         <span className="text-slate-600">Early withdrawal penalty (10%)</span>
-                                        <span className="text-red-400 font-bold">-$5,000</span>
+                                        <span className="text-red-700 font-bold">-$5,000</span>
                                     </div>
                                     <div className="flex justify-between p-2 bg-slate-100 rounded">
                                         <span className="text-slate-600">State income tax (~5%)</span>
-                                        <span className="text-red-400 font-bold">-$2,500</span>
+                                        <span className="text-red-700 font-bold">-$2,500</span>
                                     </div>
                                     <div className="flex justify-between p-2 bg-red-500/20 rounded font-bold">
                                         <span className="text-[#000080]">You actually receive</span>
-                                        <span className="text-red-300">$30,500</span>
+                                        <span className="text-red-800">$30,500</span>
                                     </div>
                                 </div>
-                                <p className="text-red-400 text-sm mt-4">You lose nearly 40% immediately—plus decades of tax-deferred growth.</p>
+                                <p className="text-red-700 text-sm mt-4">You lose nearly 40% immediately—plus decades of tax-deferred growth.</p>
                             </div>
 
                             <p>
@@ -346,7 +346,7 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 5: Gold IRA */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Option 5: Roll to a Gold IRA</h2>
@@ -357,10 +357,10 @@ export default function WhatToDoWithOld401kPage() {
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
                                 <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
-                                    <h4 className="font-semibold text-green-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
-                                    <ul className="text-sm text-green-300 space-y-1">
+                                    <ul className="text-sm text-green-800 space-y-1">
                                         <li>* Own real, physical gold</li>
                                         <li>* Diversify away from stocks</li>
                                         <li>* Protection against crashes & inflation</li>
@@ -369,10 +369,10 @@ export default function WhatToDoWithOld401kPage() {
                                     </ul>
                                 </div>
                                 <div className="p-4 bg-amber-500/10 rounded-xl border border-amber-500/20">
-                                    <h4 className="font-semibold text-amber-400 mb-2 flex items-center gap-2">
+                                    <h4 className="font-semibold text-amber-700 mb-2 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" /> Considerations
                                     </h4>
-                                    <ul className="text-sm text-amber-300 space-y-1">
+                                    <ul className="text-sm text-amber-800 space-y-1">
                                         <li>* Annual storage fees (~$100-300)</li>
                                         <li>* Must use IRS-approved custodian</li>
                                         <li>* Can&apos;t store at home (IRS rules)</li>
@@ -407,31 +407,31 @@ export default function WhatToDoWithOld401kPage() {
                                     <tbody className="divide-y divide-white/10 text-sm text-slate-600">
                                         <tr>
                                             <td className="p-4 font-medium text-[#000080]">Leave It</td>
-                                            <td className="p-4 text-green-400">None</td>
+                                            <td className="p-4 text-green-700">None</td>
                                             <td className="p-4">Limited to plan options</td>
                                             <td className="p-4">Happy with current investments</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-medium text-[#000080]">New Employer 401(k)</td>
-                                            <td className="p-4 text-green-400">None (direct rollover)</td>
+                                            <td className="p-4 text-green-700">None (direct rollover)</td>
                                             <td className="p-4">Limited to plan options</td>
                                             <td className="p-4">Consolidation, simplicity</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-medium text-[#000080]">Traditional IRA</td>
-                                            <td className="p-4 text-green-400">None (direct rollover)</td>
+                                            <td className="p-4 text-green-700">None (direct rollover)</td>
                                             <td className="p-4">Stocks, bonds, ETFs, mutual funds</td>
                                             <td className="p-4">More control, lower fees</td>
                                         </tr>
                                         <tr className="bg-red-500/10">
-                                            <td className="p-4 font-medium text-red-400">Cash Out</td>
-                                            <td className="p-4 text-red-400">Taxes + 10% penalty</td>
+                                            <td className="p-4 font-medium text-red-700">Cash Out</td>
+                                            <td className="p-4 text-red-700">Taxes + 10% penalty</td>
                                             <td className="p-4">N/A (liquidated)</td>
                                             <td className="p-4">Emergencies only</td>
                                         </tr>
                                         <tr className="bg-amber-500/10">
-                                            <td className="p-4 font-medium text-amber-400">Gold IRA</td>
-                                            <td className="p-4 text-green-400">None (direct rollover)</td>
+                                            <td className="p-4 font-medium text-amber-700">Gold IRA</td>
+                                            <td className="p-4 text-green-700">None (direct rollover)</td>
                                             <td className="p-4">Physical gold, silver, platinum, palladium</td>
                                             <td className="p-4">Diversification, crash protection</td>
                                         </tr>

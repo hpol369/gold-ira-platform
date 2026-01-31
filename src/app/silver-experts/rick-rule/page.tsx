@@ -120,14 +120,14 @@ export default function RickRulePage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-green-500/20 px-4 py-1.5 text-sm font-semibold text-green-400 mb-6 border border-green-500/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-green-500/20 px-4 py-1.5 text-sm font-semibold text-green-700 mb-6 border border-green-500/30 ml-4">
                             <TrendingUp className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-4">
                             Rick Rule on Silver
                         </h1>
-                        <p className="text-xl text-green-400 font-semibold mb-4">
+                        <p className="text-xl text-green-700 font-semibold mb-4">
                             Legendary Mining Investor | Former President, Sprott U.S. Holdings
                         </p>
                         <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
@@ -147,7 +147,7 @@ export default function RickRulePage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <Mountain className="w-6 h-6 text-green-400" />
+                                    <Mountain className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Who Is Rick Rule?</h2>
                             </div>
@@ -156,7 +156,7 @@ export default function RickRulePage() {
                                     Rick Rule is one of the most respected names in natural resource investing. With over <strong className="text-slate-900">50 years of experience</strong>, he has been instrumental in financing hundreds of mining companies and has generated returns that have made him a legend in the industry.
                                 </p>
                                 <p className="text-slate-600">
-                                    Rule served as President of <strong className="text-green-400">Sprott U.S. Holdings</strong>, where he oversaw billions of dollars in resource investments. Before joining Sprott, he founded Global Resource Investments, which became the largest brokerage focused on natural resource companies.
+                                    Rule served as President of <strong className="text-green-700">Sprott U.S. Holdings</strong>, where he oversaw billions of dollars in resource investments. Before joining Sprott, he founded Global Resource Investments, which became the largest brokerage focused on natural resource companies.
                                 </p>
                                 <p className="text-slate-600">
                                     Unlike analysts who only talk about markets, Rule has put his money where his mouth is throughout his career. His track record includes early investments in companies that became billion-dollar successes, as well as the discipline to avoid spectacular failures.
@@ -166,23 +166,23 @@ export default function RickRulePage() {
                                     <h4 className="font-bold text-slate-900 mb-4">Rick Rule Quick Facts</h4>
                                     <ul className="space-y-2 text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
                                             <span>50+ years in natural resource investing</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
                                             <span>Former President of Sprott U.S. Holdings</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
                                             <span>Founder of Global Resource Investments</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
                                             <span>Financed hundreds of mining companies</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
                                             <span>Known for contrarian value investing approach</span>
                                         </li>
                                     </ul>
@@ -194,7 +194,7 @@ export default function RickRulePage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <TrendingUp className="w-6 h-6 text-green-400" />
+                                    <TrendingUp className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Rick Rule&apos;s Silver Mining Thesis</h2>
                             </div>
@@ -205,7 +205,7 @@ export default function RickRulePage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Leverage Through Mining Stocks</h3>
                                 <p className="text-slate-600">
-                                    Rule&apos;s thesis is that quality silver mining stocks can provide <strong className="text-green-400">3-5x leverage</strong> to the underlying metal price. If silver doubles, a well-run miner with good cost structures could triple or quadruple. This leverage works both ways, which is why stock selection is critical.
+                                    Rule&apos;s thesis is that quality silver mining stocks can provide <strong className="text-green-700">3-5x leverage</strong> to the underlying metal price. If silver doubles, a well-run miner with good cost structures could triple or quadruple. This leverage works both ways, which is why stock selection is critical.
                                 </p>
                                 <blockquote className="border-l-4 border-green-400 pl-4 my-6 text-slate-600 italic">
                                     &quot;Physical silver is insurance. Mining stocks are the lottery ticket. I want both, but I know which one offers the bigger payout potential.&quot;
@@ -227,7 +227,7 @@ export default function RickRulePage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <Target className="w-6 h-6 text-green-400" />
+                                    <Target className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Rick Rule&apos;s Investment Approach</h2>
                             </div>
@@ -239,7 +239,7 @@ export default function RickRulePage() {
                             <div className="grid md:grid-cols-2 gap-6">
                                 {investmentPrinciples.map((item, index) => (
                                     <div key={index} className="bg-slate-50 rounded-lg p-6">
-                                        <h3 className="text-lg font-bold text-green-400 mb-2">{item.principle}</h3>
+                                        <h3 className="text-lg font-bold text-green-700 mb-2">{item.principle}</h3>
                                         <p className="text-slate-600 text-sm">{item.description}</p>
                                     </div>
                                 ))}
@@ -250,7 +250,7 @@ export default function RickRulePage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <Quote className="w-6 h-6 text-green-400" />
+                                    <Quote className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Key Quotes & Insights</h2>
                             </div>
@@ -258,7 +258,7 @@ export default function RickRulePage() {
                                 {keyQuotes.map((item, index) => (
                                     <div key={index} className="bg-slate-50 rounded-lg p-6">
                                         <p className="text-slate-900 text-lg italic mb-3">&quot;{item.quote}&quot;</p>
-                                        <p className="text-green-400 text-sm font-semibold">{item.context}</p>
+                                        <p className="text-green-700 text-sm font-semibold">{item.context}</p>
                                     </div>
                                 ))}
                             </div>
@@ -268,7 +268,7 @@ export default function RickRulePage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <DollarSign className="w-6 h-6 text-green-400" />
+                                    <DollarSign className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">What Rick Rule Recommends</h2>
                             </div>
@@ -295,19 +295,19 @@ export default function RickRulePage() {
                             <h2 className="text-2xl font-bold font-serif text-slate-900 mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-6">
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-green-400 mb-2">Who is Rick Rule?</h3>
+                                    <h3 className="text-lg font-bold text-green-700 mb-2">Who is Rick Rule?</h3>
                                     <p className="text-slate-600">Rick Rule is a legendary resource investor with over 50 years of experience. He was formerly the President of Sprott U.S. Holdings and has been instrumental in financing hundreds of mining companies throughout his career.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-green-400 mb-2">What is Rick Rule&apos;s silver thesis?</h3>
+                                    <h3 className="text-lg font-bold text-green-700 mb-2">What is Rick Rule&apos;s silver thesis?</h3>
                                     <p className="text-slate-600">Rule believes silver offers compelling value, particularly through mining stocks which provide leveraged exposure to rising metal prices. He sees silver&apos;s industrial demand as a key differentiator from gold.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-green-400 mb-2">How does Rick Rule invest in silver?</h3>
+                                    <h3 className="text-lg font-bold text-green-700 mb-2">How does Rick Rule invest in silver?</h3>
                                     <p className="text-slate-600">Rule primarily invests in silver through mining stocks rather than physical metal, as he believes quality mining companies can generate 3-5x returns on metal price increases. He focuses on companies with strong balance sheets and quality management.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-green-400 mb-2">What is Rick Rule&apos;s investment approach?</h3>
+                                    <h3 className="text-lg font-bold text-green-700 mb-2">What is Rick Rule&apos;s investment approach?</h3>
                                     <p className="text-slate-600">Rule is a contrarian value investor who buys when sectors are out of favor and sells when they become popular. He emphasizes fundamental analysis, management quality, and buying at discounts to intrinsic value.</p>
                                 </div>
                             </div>
@@ -335,27 +335,27 @@ export default function RickRulePage() {
                             <h3 className="text-lg font-bold text-slate-900 mb-4">Other Silver Experts</h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/silver-experts/andy-schectman" className="text-green-400 hover:text-green-300 font-medium">
+                                    <Link href="/silver-experts/andy-schectman" className="text-green-700 hover:text-green-800 font-medium">
                                         Andy Schectman - Miles Franklin CEO
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/david-morgan" className="text-green-400 hover:text-green-300 font-medium">
+                                    <Link href="/silver-experts/david-morgan" className="text-green-700 hover:text-green-800 font-medium">
                                         David Morgan - The Silver Guru
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/mike-maloney" className="text-green-400 hover:text-green-300 font-medium">
+                                    <Link href="/silver-experts/mike-maloney" className="text-green-700 hover:text-green-800 font-medium">
                                         Mike Maloney - GoldSilver.com
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/ted-butler" className="text-green-400 hover:text-green-300 font-medium">
+                                    <Link href="/silver-experts/ted-butler" className="text-green-700 hover:text-green-800 font-medium">
                                         Ted Butler - Manipulation Researcher
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/eric-sprott" className="text-green-400 hover:text-green-300 font-medium">
+                                    <Link href="/silver-experts/eric-sprott" className="text-green-700 hover:text-green-800 font-medium">
                                         Eric Sprott - PSLV Creator
                                     </Link>
                                 </li>

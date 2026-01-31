@@ -291,7 +291,7 @@ export function PensionVsLumpSumCalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Calendar className="h-5 w-5 text-purple-400" />
+                <Calendar className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Personal Information</h3>
             </div>
@@ -468,7 +468,7 @@ export function PensionVsLumpSumCalculator() {
               ) : calculations.recommendation === "lumpsum" ? (
                 <CheckCircle2 className="h-8 w-8 text-[#B22234]" />
               ) : (
-                <Scale className="h-8 w-8 text-purple-400" />
+                <Scale className="h-8 w-8 text-purple-700" />
               )}
               <div>
                 <h3 className="text-xl font-bold">
@@ -504,7 +504,7 @@ export function PensionVsLumpSumCalculator() {
               </div>
 
               <div className="bg-slate-50 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-purple-400">
+                <div className="text-2xl font-bold text-purple-700">
                   {formatCurrency(calculations.pensionPV)}
                 </div>
                 <div className="text-sm text-slate-500">Pension Present Value</div>

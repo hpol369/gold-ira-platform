@@ -101,26 +101,26 @@ export default function PaperSilverVsPhysicalPage() {
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="bg-red-900/20 backdrop-blur border border-red-500/30 rounded-xl p-6">
                             <div className="flex items-center gap-3 mb-4">
-                                <FileWarning className="w-8 h-8 text-red-400" />
-                                <h3 className="text-xl font-bold text-red-400">Paper Silver</h3>
+                                <FileWarning className="w-8 h-8 text-red-700" />
+                                <h3 className="text-xl font-bold text-red-700">Paper Silver</h3>
                             </div>
                             <ul className="space-y-2 text-slate-600 text-sm">
-                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-400" /> May not be backed by physical metal</li>
-                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-400" /> Counterparty risk exposure</li>
-                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-400" /> Can be manipulated by banks</li>
-                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-400" /> 100:1 leverage problem</li>
+                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-700" /> May not be backed by physical metal</li>
+                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-700" /> Counterparty risk exposure</li>
+                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-700" /> Can be manipulated by banks</li>
+                                <li className="flex items-center gap-2"><XCircle className="w-4 h-4 text-red-700" /> 100:1 leverage problem</li>
                             </ul>
                         </div>
                         <div className="bg-green-900/20 backdrop-blur border border-green-500/30 rounded-xl p-6">
                             <div className="flex items-center gap-3 mb-4">
-                                <Coins className="w-8 h-8 text-green-400" />
-                                <h3 className="text-xl font-bold text-green-400">Physical Silver</h3>
+                                <Coins className="w-8 h-8 text-green-700" />
+                                <h3 className="text-xl font-bold text-green-700">Physical Silver</h3>
                             </div>
                             <ul className="space-y-2 text-slate-600 text-sm">
-                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> Real asset you legally own</li>
-                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> No counterparty risk</li>
-                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> Cannot be manipulated away</li>
-                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> Benefits from price discovery</li>
+                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-700" /> Real asset you legally own</li>
+                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-700" /> No counterparty risk</li>
+                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-700" /> Cannot be manipulated away</li>
+                                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-700" /> Benefits from price discovery</li>
                             </ul>
                         </div>
                     </div>
@@ -136,19 +136,19 @@ export default function PaperSilverVsPhysicalPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <FileWarning className="w-6 h-6 text-red-400" />
+                                    <FileWarning className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">What Is Paper Silver?</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong className="text-red-400">&quot;Paper silver&quot;</strong> refers to financial products that represent claims on silver but may not be backed 1:1 by physical metal. When you own paper silver, you own a promise - not the metal itself.
+                                    <strong className="text-red-700">&quot;Paper silver&quot;</strong> refers to financial products that represent claims on silver but may not be backed 1:1 by physical metal. When you own paper silver, you own a promise - not the metal itself.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Types of Paper Silver</h3>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">Silver ETFs (like SLV)</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">Silver ETFs (like SLV)</h4>
                                     <p className="text-slate-600 text-sm mb-2">
                                         Exchange-traded funds that claim to hold silver. However, many ETF prospectuses contain concerning language:
                                     </p>
@@ -160,7 +160,7 @@ export default function PaperSilverVsPhysicalPage() {
                                 </div>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">Futures Contracts</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">Futures Contracts</h4>
                                     <p className="text-slate-600 text-sm mb-2">
                                         Promises to buy or sell silver at a future date. Most are settled in cash, not metal:
                                     </p>
@@ -172,7 +172,7 @@ export default function PaperSilverVsPhysicalPage() {
                                 </div>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">Unallocated Accounts</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">Unallocated Accounts</h4>
                                     <p className="text-slate-600 text-sm mb-2">
                                         Bank accounts denominated in silver ounces. Critical problems:
                                     </p>
@@ -184,7 +184,7 @@ export default function PaperSilverVsPhysicalPage() {
                                 </div>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">Pool Accounts</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">Pool Accounts</h4>
                                     <p className="text-slate-600 text-sm mb-2">
                                         Your &quot;silver&quot; is commingled with other investors:
                                     </p>
@@ -201,19 +201,19 @@ export default function PaperSilverVsPhysicalPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <Coins className="w-6 h-6 text-green-400" />
+                                    <Coins className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">What Is Physical Silver?</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong className="text-green-400">Physical silver</strong> means actual silver metal that you legally own. It exists in the real world, can be touched, weighed, and verified. No promises, no counterparties, no games.
+                                    <strong className="text-green-700">Physical silver</strong> means actual silver metal that you legally own. It exists in the real world, can be touched, weighed, and verified. No promises, no counterparties, no games.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Forms of Physical Silver</h3>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-green-400 mb-3">Silver Coins</h4>
+                                    <h4 className="text-lg font-bold text-green-700 mb-3">Silver Coins</h4>
                                     <p className="text-slate-600 text-sm">
                                         Government-minted coins like American Silver Eagles, Canadian Maple Leafs, or Austrian Philharmonics. Coins offer:
                                     </p>
@@ -225,7 +225,7 @@ export default function PaperSilverVsPhysicalPage() {
                                 </div>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-green-400 mb-3">Silver Bars</h4>
+                                    <h4 className="text-lg font-bold text-green-700 mb-3">Silver Bars</h4>
                                     <p className="text-slate-600 text-sm">
                                         Refined silver bars from recognized mints and refiners. Available in sizes from 1 oz to 1,000 oz:
                                     </p>
@@ -237,7 +237,7 @@ export default function PaperSilverVsPhysicalPage() {
                                 </div>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-green-400 mb-3">Allocated Storage</h4>
+                                    <h4 className="text-lg font-bold text-green-700 mb-3">Allocated Storage</h4>
                                     <p className="text-slate-600 text-sm">
                                         Physical silver held in your name at a secure depository:
                                     </p>
@@ -259,20 +259,20 @@ export default function PaperSilverVsPhysicalPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <Scale className="w-6 h-6 text-red-400" />
+                                    <Scale className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">The 100:1 Leverage Problem</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600 leading-relaxed">
-                                    Here is the core problem with paper silver: <strong className="text-red-400">there is not enough physical silver to back all the paper claims</strong>.
+                                    Here is the core problem with paper silver: <strong className="text-red-700">there is not enough physical silver to back all the paper claims</strong>.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     Industry analysts estimate that paper silver contracts (futures, ETFs, unallocated accounts, derivatives) exceed physical silver by ratios of <strong className="text-[#B22234]">100:1 or higher</strong>.
                                 </p>
 
                                 <div className="bg-gradient-to-r from-red-500/20 to-red-600/10 border border-red-500/30 rounded-lg p-6 my-8">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">What 100:1 Means</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">What 100:1 Means</h4>
                                     <p className="text-slate-600">
                                         For every <strong className="text-slate-900">1 ounce</strong> of physical silver that exists, there are claims on <strong className="text-slate-900">100+ ounces</strong>. This is a game of musical chairs. When the music stops, 99 out of 100 paper silver holders will not get their metal.
                                     </p>
@@ -291,7 +291,7 @@ export default function PaperSilverVsPhysicalPage() {
                                     We have seen glimpses of this. In early 2021, a Reddit-driven silver squeeze caused physical silver premiums to spike 30-50% above spot price. Dealers ran out of inventory. The COMEX raised margin requirements.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    If even 2% of paper silver holders demanded physical delivery, <strong className="text-red-400">there would not be enough silver to deliver</strong>. Prices would have to rise dramatically to equilibrate supply and demand.
+                                    If even 2% of paper silver holders demanded physical delivery, <strong className="text-red-700">there would not be enough silver to deliver</strong>. Prices would have to rise dramatically to equilibrate supply and demand.
                                 </p>
                             </div>
                         </section>
@@ -326,7 +326,7 @@ export default function PaperSilverVsPhysicalPage() {
                                 </div>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6 border-l-4 border-red-400">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">Warning #3: JP Morgan Is the Custodian</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">Warning #3: JP Morgan Is the Custodian</h4>
                                     <p className="text-slate-600 text-sm">
                                         Yes, <strong className="text-slate-900">JP Morgan</strong> - the same bank that paid $920 million for manipulating silver markets - is the custodian of SLV. They hold the silver (or claim to) for the world&apos;s largest silver ETF.
                                     </p>
@@ -346,7 +346,7 @@ export default function PaperSilverVsPhysicalPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <AlertTriangle className="w-6 h-6 text-red-400" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Counterparty Risk Explained</h2>
                             </div>
@@ -357,19 +357,19 @@ export default function PaperSilverVsPhysicalPage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Paper Silver Counterparty Risks</h3>
                                 <ul className="text-slate-600 space-y-3">
-                                    <li><strong className="text-red-400">Bank Failure:</strong> Unallocated accounts make you an unsecured creditor</li>
-                                    <li><strong className="text-red-400">Broker Failure:</strong> Your futures positions may not survive a broker bankruptcy</li>
-                                    <li><strong className="text-red-400">Custodian Risk:</strong> ETF custodians could fail or refuse delivery</li>
-                                    <li><strong className="text-red-400">Clearinghouse Risk:</strong> Derivatives depend on clearinghouse solvency</li>
+                                    <li><strong className="text-red-700">Bank Failure:</strong> Unallocated accounts make you an unsecured creditor</li>
+                                    <li><strong className="text-red-700">Broker Failure:</strong> Your futures positions may not survive a broker bankruptcy</li>
+                                    <li><strong className="text-red-700">Custodian Risk:</strong> ETF custodians could fail or refuse delivery</li>
+                                    <li><strong className="text-red-700">Clearinghouse Risk:</strong> Derivatives depend on clearinghouse solvency</li>
                                 </ul>
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Physical Silver: Zero Counterparty Risk</h3>
                                 <p className="text-slate-600 leading-relaxed">
-                                    When you own physical silver - whether in your possession or in allocated storage - there is <strong className="text-green-400">no counterparty</strong>. The silver is yours. No one can default on their obligation because there is no obligation - you already have the metal.
+                                    When you own physical silver - whether in your possession or in allocated storage - there is <strong className="text-green-700">no counterparty</strong>. The silver is yours. No one can default on their obligation because there is no obligation - you already have the metal.
                                 </p>
 
                                 <div className="bg-gradient-to-r from-green-500/20 to-green-600/10 border border-green-500/30 rounded-lg p-6 my-8">
-                                    <h4 className="text-lg font-bold text-green-400 mb-3">The 2008 Lesson</h4>
+                                    <h4 className="text-lg font-bold text-green-700 mb-3">The 2008 Lesson</h4>
                                     <p className="text-slate-600">
                                         During the 2008 financial crisis, Lehman Brothers held precious metals for clients in unallocated accounts. When Lehman failed, those clients became unsecured creditors - recovering cents on the dollar. Physical metal holders? They kept their metal.
                                     </p>
@@ -381,7 +381,7 @@ export default function PaperSilverVsPhysicalPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <Shield className="w-6 h-6 text-green-400" />
+                                    <Shield className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Why Physical Silver in IRA Is Superior</h2>
                             </div>
@@ -394,27 +394,27 @@ export default function PaperSilverVsPhysicalPage() {
 
                                 <div className="grid md:grid-cols-2 gap-4 my-6">
                                     <div className="bg-slate-50 rounded-lg p-4">
-                                        <h4 className="text-green-400 font-bold mb-2">Real Ownership</h4>
+                                        <h4 className="text-green-700 font-bold mb-2">Real Ownership</h4>
                                         <p className="text-slate-600 text-sm">You legally own specific coins and bars. Serial numbers tracked. Fully insured.</p>
                                     </div>
                                     <div className="bg-slate-50 rounded-lg p-4">
-                                        <h4 className="text-green-400 font-bold mb-2">Allocated Storage</h4>
+                                        <h4 className="text-green-700 font-bold mb-2">Allocated Storage</h4>
                                         <p className="text-slate-600 text-sm">Your silver is segregated from other investors. Never commingled.</p>
                                     </div>
                                     <div className="bg-slate-50 rounded-lg p-4">
-                                        <h4 className="text-green-400 font-bold mb-2">IRS-Approved Facilities</h4>
+                                        <h4 className="text-green-700 font-bold mb-2">IRS-Approved Facilities</h4>
                                         <p className="text-slate-600 text-sm">Stored in approved depositories like Brinks, Delaware Depository, or HSBC vaults.</p>
                                     </div>
                                     <div className="bg-slate-50 rounded-lg p-4">
-                                        <h4 className="text-green-400 font-bold mb-2">Tax Advantages</h4>
+                                        <h4 className="text-green-700 font-bold mb-2">Tax Advantages</h4>
                                         <p className="text-slate-600 text-sm">Tax-deferred growth (Traditional) or tax-free growth (Roth). Same benefits as any IRA.</p>
                                     </div>
                                     <div className="bg-slate-50 rounded-lg p-4">
-                                        <h4 className="text-green-400 font-bold mb-2">Take Delivery</h4>
+                                        <h4 className="text-green-700 font-bold mb-2">Take Delivery</h4>
                                         <p className="text-slate-600 text-sm">When you retire, you can take physical possession of your silver.</p>
                                     </div>
                                     <div className="bg-slate-50 rounded-lg p-4">
-                                        <h4 className="text-green-400 font-bold mb-2">Zero Counterparty Risk</h4>
+                                        <h4 className="text-green-700 font-bold mb-2">Zero Counterparty Risk</h4>
                                         <p className="text-slate-600 text-sm">The metal is yours. No bank, broker, or ETF can fail and take it from you.</p>
                                     </div>
                                 </div>
@@ -484,27 +484,27 @@ export default function PaperSilverVsPhysicalPage() {
                             <div className="space-y-3 text-sm">
                                 <div className="flex justify-between items-center border-b border-slate-200 pb-2">
                                     <span className="text-slate-600">Ownership</span>
-                                    <span className="text-red-400">Paper: Claim</span>
+                                    <span className="text-red-700">Paper: Claim</span>
                                 </div>
                                 <div className="flex justify-between items-center border-b border-slate-200 pb-2">
                                     <span className="text-slate-600"></span>
-                                    <span className="text-green-400">Physical: Real</span>
+                                    <span className="text-green-700">Physical: Real</span>
                                 </div>
                                 <div className="flex justify-between items-center border-b border-slate-200 pb-2">
                                     <span className="text-slate-600">Counterparty</span>
-                                    <span className="text-red-400">Paper: Yes</span>
+                                    <span className="text-red-700">Paper: Yes</span>
                                 </div>
                                 <div className="flex justify-between items-center border-b border-slate-200 pb-2">
                                     <span className="text-slate-600"></span>
-                                    <span className="text-green-400">Physical: None</span>
+                                    <span className="text-green-700">Physical: None</span>
                                 </div>
                                 <div className="flex justify-between items-center border-b border-slate-200 pb-2">
                                     <span className="text-slate-600">Manipulation</span>
-                                    <span className="text-red-400">Paper: Vulnerable</span>
+                                    <span className="text-red-700">Paper: Vulnerable</span>
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <span className="text-slate-600"></span>
-                                    <span className="text-green-400">Physical: Protected</span>
+                                    <span className="text-green-700">Physical: Protected</span>
                                 </div>
                             </div>
                         </div>

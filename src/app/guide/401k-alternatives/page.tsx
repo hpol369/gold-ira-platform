@@ -135,7 +135,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 1: Traditional IRA */}
                         <section id="traditional-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. Traditional IRA</h2>
@@ -177,7 +177,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 2: Roth IRA */}
                         <section id="roth-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. Roth IRA</h2>
@@ -219,7 +219,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 3: Gold IRA */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Gold IRA (Self-Directed Precious Metals IRA)</h2>
@@ -229,8 +229,8 @@ export default function FourOhOneKAlternativesPage() {
                             </p>
 
                             <div className="bg-amber-500/10 rounded-xl p-6 border border-amber-500/20 not-prose my-6">
-                                <h4 className="font-bold text-amber-400 mb-4">Why Consider a Gold IRA?</h4>
-                                <ul className="space-y-2 text-sm text-amber-300">
+                                <h4 className="font-bold text-amber-700 mb-4">Why Consider a Gold IRA?</h4>
+                                <ul className="space-y-2 text-sm text-amber-800">
                                     <li className="flex items-start gap-2">
                                         <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
                                         <span><strong className="text-amber-200">Own physical gold</strong> — real coins and bars, not paper derivatives</span>
@@ -273,7 +273,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 4: HSA */}
                         <section id="hsa" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. Health Savings Account (HSA)</h2>
@@ -315,7 +315,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 5: Real Estate */}
                         <section id="real-estate" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Home className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Real Estate Investments</h2>
@@ -414,7 +414,7 @@ export default function FourOhOneKAlternativesPage() {
                                             <td className="p-3">Higher taxes in retirement</td>
                                         </tr>
                                         <tr className="bg-amber-500/10">
-                                            <td className="p-3 font-medium text-amber-400">Gold IRA</td>
+                                            <td className="p-3 font-medium text-amber-700">Gold IRA</td>
                                             <td className="p-3">$7,000 (or rollover)</td>
                                             <td className="p-3">Same as Traditional/Roth</td>
                                             <td className="p-3">Diversification, crash protection</td>

@@ -338,10 +338,10 @@ export default function FERSCalculatorPage() {
                       }`}>
                         <p className={`text-sm ${
                           calculations.canRetireImmediate
-                            ? 'text-green-300'
+                            ? 'text-green-800'
                             : calculations.canRetireMRAPlus10
-                              ? 'text-amber-300'
-                              : 'text-red-300'
+                              ? 'text-amber-800'
+                              : 'text-red-800'
                         }`}>
                           {calculations.canRetireImmediate
                             ? '✓ Eligible for immediate unreduced retirement'

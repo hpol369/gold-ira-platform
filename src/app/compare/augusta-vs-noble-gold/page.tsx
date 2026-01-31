@@ -85,8 +85,8 @@ export default function AugustaVsNoblePage() {
                                         <tbody className="text-sm text-slate-600">
                                             <tr className="border-b border-slate-200">
                                                 <td className="p-4 font-medium text-slate-900">Minimum Investment</td>
-                                                <td className="p-4 text-center text-red-400 font-bold">$50,000</td>
-                                                <td className="p-4 text-center text-green-400 font-bold">$20,000</td>
+                                                <td className="p-4 text-center text-red-700 font-bold">$50,000</td>
+                                                <td className="p-4 text-center text-green-700 font-bold">$20,000</td>
                                             </tr>
                                             <tr className="border-b border-slate-200 bg-white/5">
                                                 <td className="p-4 font-medium text-slate-900">BBB Rating</td>
@@ -95,7 +95,7 @@ export default function AugustaVsNoblePage() {
                                             </tr>
                                             <tr className="border-b border-slate-200">
                                                 <td className="p-4 font-medium text-slate-900">BBB Complaints</td>
-                                                <td className="p-4 text-center text-green-400 font-bold">0</td>
+                                                <td className="p-4 text-center text-green-700 font-bold">0</td>
                                                 <td className="p-4 text-center">Very Few</td>
                                             </tr>
                                             <tr className="border-b border-slate-200 bg-white/5">
@@ -110,13 +110,13 @@ export default function AugustaVsNoblePage() {
                                             </tr>
                                             <tr className="border-b border-slate-200 bg-white/5">
                                                 <td className="p-4 font-medium text-slate-900">Texas Storage</td>
-                                                <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
-                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
+                                                <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-700 mx-auto" /></td>
+                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
                                             </tr>
                                             <tr className="border-b border-slate-200">
                                                 <td className="p-4 font-medium text-slate-900">Free Webinar Education</td>
-                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                                <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
+                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                                <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-700 mx-auto" /></td>
                                             </tr>
                                             <tr className="bg-white/5">
                                                 <td className="p-4 font-medium text-slate-900">Best For</td>
@@ -218,8 +218,8 @@ export default function AugustaVsNoblePage() {
                                 </p>
                                 <div className="not-prose bg-blue-500/10 p-6 rounded-xl border border-blue-500/30 my-6">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <Building2 className="w-6 h-6 text-blue-400" />
-                                        <h4 className="font-bold text-blue-300">Noble Gold&apos;s Texas Advantage</h4>
+                                        <Building2 className="w-6 h-6 text-blue-700" />
+                                        <h4 className="font-bold text-blue-800">Noble Gold&apos;s Texas Advantage</h4>
                                     </div>
                                     <p className="text-blue-200 text-sm">
                                         Noble Gold partners with the Texas Precious Metals Depository—one of the only state-run depositories in the US. Some investors prefer this for perceived extra security and state-level oversight. Augusta uses Delaware Depository (also excellent, but privately run).
@@ -261,7 +261,7 @@ export default function AugustaVsNoblePage() {
                                         </div>
                                     </div>
                                     <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">
-                                        <h3 className="font-bold text-blue-400 text-lg mb-3">Choose Noble Gold If:</h3>
+                                        <h3 className="font-bold text-blue-700 text-lg mb-3">Choose Noble Gold If:</h3>
                                         <ul className="space-y-2 text-sm text-slate-600">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />

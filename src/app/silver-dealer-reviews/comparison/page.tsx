@@ -255,7 +255,7 @@ export default function ComparisonPage() {
 
                         {/* Best Price */}
                         <div className="bg-gradient-to-br from-green-500/20 to-green-600/10 border border-green-500/30 rounded-xl p-6">
-                            <div className="flex items-center gap-2 text-green-400 font-semibold text-sm mb-4">
+                            <div className="flex items-center gap-2 text-green-700 font-semibold text-sm mb-4">
                                 <DollarSign className="w-5 h-5" />
                                 LOWEST PREMIUMS
                             </div>
@@ -269,7 +269,7 @@ export default function ComparisonPage() {
                             </p>
                             <Link
                                 href="/silver-dealer-reviews/sd-bullion"
-                                className="inline-flex items-center gap-2 text-green-400 font-semibold text-sm hover:text-green-300"
+                                className="inline-flex items-center gap-2 text-green-700 font-semibold text-sm hover:text-green-800"
                             >
                                 Read Review <ArrowRight className="w-4 h-4" />
                             </Link>
@@ -277,7 +277,7 @@ export default function ComparisonPage() {
 
                         {/* Best Selection */}
                         <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 rounded-xl p-6">
-                            <div className="flex items-center gap-2 text-blue-400 font-semibold text-sm mb-4">
+                            <div className="flex items-center gap-2 text-blue-700 font-semibold text-sm mb-4">
                                 <Package className="w-5 h-5" />
                                 BEST SELECTION
                             </div>
@@ -291,7 +291,7 @@ export default function ComparisonPage() {
                             </p>
                             <Link
                                 href="/silver-dealer-reviews/apmex"
-                                className="inline-flex items-center gap-2 text-blue-400 font-semibold text-sm hover:text-blue-300"
+                                className="inline-flex items-center gap-2 text-blue-700 font-semibold text-sm hover:text-blue-800"
                             >
                                 Read Review <ArrowRight className="w-4 h-4" />
                             </Link>
@@ -299,7 +299,7 @@ export default function ComparisonPage() {
 
                         {/* Best for Beginners */}
                         <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 border border-purple-500/30 rounded-xl p-6">
-                            <div className="flex items-center gap-2 text-purple-400 font-semibold text-sm mb-4">
+                            <div className="flex items-center gap-2 text-purple-700 font-semibold text-sm mb-4">
                                 <Users className="w-5 h-5" />
                                 BEST FOR BEGINNERS
                             </div>
@@ -313,7 +313,7 @@ export default function ComparisonPage() {
                             </p>
                             <Link
                                 href="/silver-dealer-reviews/money-metals-exchange"
-                                className="inline-flex items-center gap-2 text-purple-400 font-semibold text-sm hover:text-purple-300"
+                                className="inline-flex items-center gap-2 text-purple-700 font-semibold text-sm hover:text-purple-800"
                             >
                                 Read Review <ArrowRight className="w-4 h-4" />
                             </Link>
@@ -411,32 +411,32 @@ export default function ComparisonPage() {
                                         </td>
                                         <td className="p-4 text-center text-slate-600">{dealer.established}</td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.minOrder === "None" ? "text-green-400 font-semibold" : "text-slate-600"}>
+                                            <span className={dealer.minOrder === "None" ? "text-green-700 font-semibold" : "text-slate-600"}>
                                                 {dealer.minOrder}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.freeShipping === "$99" ? "text-green-400 font-semibold" : "text-slate-600"}>
+                                            <span className={dealer.freeShipping === "$99" ? "text-green-700 font-semibold" : "text-slate-600"}>
                                                 {dealer.freeShipping}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.premiums === "Lowest" ? "text-green-400 font-semibold" : dealer.premiums === "Higher" ? "text-[#B22234]" : "text-slate-600"}>
+                                            <span className={dealer.premiums === "Lowest" ? "text-green-700 font-semibold" : dealer.premiums === "Higher" ? "text-[#B22234]" : "text-slate-600"}>
                                                 {dealer.premiums}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.selection.includes("Massive") ? "text-blue-400 font-semibold" : "text-slate-600"}>
+                                            <span className={dealer.selection.includes("Massive") ? "text-blue-700 font-semibold" : "text-slate-600"}>
                                                 {dealer.selection}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.service === "Excellent" ? "text-green-400 font-semibold" : "text-slate-600"}>
+                                            <span className={dealer.service === "Excellent" ? "text-green-700 font-semibold" : "text-slate-600"}>
                                                 {dealer.service}
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className={dealer.buyback === "Excellent" ? "text-green-400 font-semibold" : "text-slate-600"}>
+                                            <span className={dealer.buyback === "Excellent" ? "text-green-700 font-semibold" : "text-slate-600"}>
                                                 {dealer.buyback}
                                             </span>
                                         </td>
@@ -471,75 +471,75 @@ export default function ComparisonPage() {
                             <tbody className="text-sm">
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">A+ BBB Rating</td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
                                     <td className="p-4 text-center"><span className="text-slate-600">N/A</span></td>
                                     <td className="p-4 text-center"><span className="text-slate-600">N/A</span></td>
                                 </tr>
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">No Minimum Order</td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
                                 </tr>
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">Price Match Guarantee</td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
                                 </tr>
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">No Credit Card Fees</td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
                                 </tr>
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">Monthly Savings Program</td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
                                 </tr>
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">Own Depository</td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
                                 </tr>
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">Starter Portfolios</td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
-                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-400/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
+                                    <td className="p-4 text-center"><X className="w-5 h-5 text-red-700/50 mx-auto" /></td>
                                 </tr>
                                 <tr className="border-t border-slate-200">
                                     <td className="p-4 text-slate-600">IRA-Eligible Products</td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-400 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                    <td className="p-4 text-center"><Check className="w-5 h-5 text-green-700 mx-auto" /></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -564,15 +564,15 @@ export default function ComparisonPage() {
                             </p>
                             <div className="grid md:grid-cols-3 gap-6 mb-8">
                                 <div className="flex flex-col items-center">
-                                    <CheckCircle className="w-8 h-8 text-green-400 mb-2" />
+                                    <CheckCircle className="w-8 h-8 text-green-700 mb-2" />
                                     <span className="text-slate-900 font-semibold">Education-First Approach</span>
                                 </div>
                                 <div className="flex flex-col items-center">
-                                    <CheckCircle className="w-8 h-8 text-green-400 mb-2" />
+                                    <CheckCircle className="w-8 h-8 text-green-700 mb-2" />
                                     <span className="text-slate-900 font-semibold">Lifetime Support</span>
                                 </div>
                                 <div className="flex flex-col items-center">
-                                    <CheckCircle className="w-8 h-8 text-green-400 mb-2" />
+                                    <CheckCircle className="w-8 h-8 text-green-700 mb-2" />
                                     <span className="text-slate-900 font-semibold">A+ BBB Rating</span>
                                 </div>
                             </div>

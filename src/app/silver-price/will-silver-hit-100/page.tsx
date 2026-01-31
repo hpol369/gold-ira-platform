@@ -173,7 +173,7 @@ export default function WillSilverHit100Page() {
                         {/* What the Math Says */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Math Behind $100 Silver</h2>
@@ -185,28 +185,28 @@ export default function WillSilverHit100Page() {
                                     <div className="p-4 bg-slate-50 rounded-lg">
                                         <div className="flex justify-between items-center mb-2">
                                             <span className="text-slate-600 font-medium">Path 1: Inflation Adjustment</span>
-                                            <span className="text-green-400 font-bold">$180+</span>
+                                            <span className="text-green-700 font-bold">$180+</span>
                                         </div>
                                         <p className="text-xs text-slate-600">1980 high of $49.45 adjusted for CPI inflation = $180+. $100 is 55% of that.</p>
                                     </div>
                                     <div className="p-4 bg-slate-50 rounded-lg">
                                         <div className="flex justify-between items-center mb-2">
                                             <span className="text-slate-600 font-medium">Path 2: Gold/Silver Ratio to 25:1</span>
-                                            <span className="text-green-400 font-bold">$104</span>
+                                            <span className="text-green-700 font-bold">$104</span>
                                         </div>
                                         <p className="text-xs text-slate-600">With gold at $2,600, ratio falling from 80:1 to 25:1 = $104 silver.</p>
                                     </div>
                                     <div className="p-4 bg-slate-50 rounded-lg">
                                         <div className="flex justify-between items-center mb-2">
                                             <span className="text-slate-600 font-medium">Path 3: Gold at $4,000, Ratio 40:1</span>
-                                            <span className="text-green-400 font-bold">$100</span>
+                                            <span className="text-green-700 font-bold">$100</span>
                                         </div>
                                         <p className="text-xs text-slate-600">Gold rises to $4,000 (up 50%), ratio compresses to 40:1 = $100 silver.</p>
                                     </div>
                                     <div className="p-4 bg-slate-50 rounded-lg">
                                         <div className="flex justify-between items-center mb-2">
                                             <span className="text-slate-600 font-medium">Path 4: M2 Money Supply Adjustment</span>
-                                            <span className="text-green-400 font-bold">$400+</span>
+                                            <span className="text-green-700 font-bold">$400+</span>
                                         </div>
                                         <p className="text-xs text-slate-600">1980 high adjusted for money supply growth = $400+. $100 is only 25% of that.</p>
                                     </div>
@@ -242,7 +242,7 @@ export default function WillSilverHit100Page() {
                                                 </div>
                                                 <div className="text-center">
                                                     <div className="text-xs text-slate-600">Timeline</div>
-                                                    <div className="font-bold text-green-400">{scenario.timeline}</div>
+                                                    <div className="font-bold text-green-700">{scenario.timeline}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,7 +259,7 @@ export default function WillSilverHit100Page() {
                         {/* Expert Predictions */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Experts Who Predict $100+ Silver</h2>
@@ -278,7 +278,7 @@ export default function WillSilverHit100Page() {
                                             </div>
                                             <div className="flex items-center gap-4">
                                                 <div className="text-center px-4 py-2 bg-green-500/20 rounded-lg">
-                                                    <div className="text-2xl font-bold text-green-400">{expert.target}</div>
+                                                    <div className="text-2xl font-bold text-green-700">{expert.target}</div>
                                                     <div className="text-xs text-slate-600">{expert.timeline}</div>
                                                 </div>
                                             </div>
@@ -298,7 +298,7 @@ export default function WillSilverHit100Page() {
                         {/* Timeline */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Timeline: When Could Silver Hit $100?</h2>
@@ -309,7 +309,7 @@ export default function WillSilverHit100Page() {
                                 <div className="space-y-6">
                                     <div>
                                         <div className="flex items-center justify-between mb-2">
-                                            <span className="font-bold text-green-400">Aggressive: 2026-2027</span>
+                                            <span className="font-bold text-green-700">Aggressive: 2026-2027</span>
                                             <span className="text-sm text-slate-600">Requires crisis catalyst</span>
                                         </div>
                                         <div className="w-full bg-slate-100 rounded-full h-3">
@@ -355,29 +355,29 @@ export default function WillSilverHit100Page() {
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <Zap className="w-5 h-5 text-green-400" />
-                                        <h4 className="font-bold text-green-400">Gold Breaks $4,000</h4>
+                                        <Zap className="w-5 h-5 text-green-700" />
+                                        <h4 className="font-bold text-green-700">Gold Breaks $4,000</h4>
                                     </div>
                                     <p className="text-sm text-slate-600">Silver follows gold. If gold rises 50% to $4,000, silver at even 40:1 ratio would be $100.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <Zap className="w-5 h-5 text-green-400" />
-                                        <h4 className="font-bold text-green-400">Industrial Supply Crisis</h4>
+                                        <Zap className="w-5 h-5 text-green-700" />
+                                        <h4 className="font-bold text-green-700">Industrial Supply Crisis</h4>
                                     </div>
                                     <p className="text-sm text-slate-600">If solar/EV makers can&apos;t get silver, they&apos;ll pay any price. Physical scarcity trumps paper shorts.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <Zap className="w-5 h-5 text-green-400" />
-                                        <h4 className="font-bold text-green-400">Dollar Crisis</h4>
+                                        <Zap className="w-5 h-5 text-green-700" />
+                                        <h4 className="font-bold text-green-700">Dollar Crisis</h4>
                                     </div>
                                     <p className="text-sm text-slate-600">A loss of confidence in the dollar would drive panic buying of hard assets. Silver is the &quot;poor man&apos;s gold.&quot;</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <Zap className="w-5 h-5 text-green-400" />
-                                        <h4 className="font-bold text-green-400">COMEX Delivery Failure</h4>
+                                        <Zap className="w-5 h-5 text-green-700" />
+                                        <h4 className="font-bold text-green-700">COMEX Delivery Failure</h4>
                                     </div>
                                     <p className="text-sm text-slate-600">If COMEX can&apos;t deliver physical metal, the paper price becomes irrelevant. Physical sets the price.</p>
                                 </div>
@@ -387,7 +387,7 @@ export default function WillSilverHit100Page() {
                         {/* Risks */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Why $100 Silver Might NOT Happen</h2>

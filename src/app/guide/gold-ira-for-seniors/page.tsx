@@ -132,7 +132,7 @@ export default function GoldIraForSeniorsPage() {
                         {/* Why Seniors */}
                         <section id="why-seniors" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Gold Makes Sense for Seniors</h2>
@@ -157,7 +157,7 @@ export default function GoldIraForSeniorsPage() {
                         {/* RMD Rules */}
                         <section id="rmd-rules" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Calendar className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Navigating RMDs</h2>
@@ -189,7 +189,7 @@ export default function GoldIraForSeniorsPage() {
                         {/* Scams */}
                         <section id="scams" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Senior Fraud Alert</h2>

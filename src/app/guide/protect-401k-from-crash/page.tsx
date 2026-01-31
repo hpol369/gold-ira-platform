@@ -147,7 +147,7 @@ export default function Protect401kFromCrashPage() {
                         {/* 1. Diversify */}
                         <section id="diversify" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <PieChart className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. Diversify Beyond Stocks</h2>
@@ -170,7 +170,7 @@ export default function Protect401kFromCrashPage() {
                         {/* 2. Age-Appropriate Allocation */}
                         <section id="age-allocation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. Use Age-Appropriate Allocation</h2>
@@ -222,7 +222,7 @@ export default function Protect401kFromCrashPage() {
                         {/* 3. Gold Allocation */}
                         <section id="gold" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Add a Gold Allocation</h2>
@@ -245,7 +245,7 @@ export default function Protect401kFromCrashPage() {
                         {/* 4. Rebalance */}
                         <section id="rebalance" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. Rebalance Regularly</h2>
@@ -327,7 +327,7 @@ export default function Protect401kFromCrashPage() {
                         {/* 8. Don't Panic */}
                         <section id="dont-panic" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">8. Don&apos;t Panic Sell</h2>
@@ -340,8 +340,8 @@ export default function Protect401kFromCrashPage() {
                             </p>
 
                             <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6 not-prose my-6">
-                                <h4 className="font-bold text-red-400 mb-2">The Cost of Panic Selling</h4>
-                                <p className="text-red-300 text-sm">
+                                <h4 className="font-bold text-red-700 mb-2">The Cost of Panic Selling</h4>
+                                <p className="text-red-800 text-sm">
                                     An investor who sold at the March 2009 bottom and stayed in cash for just one year missed a 68% recovery. That one decision likely cost hundreds of thousands in retirement wealth.
                                 </p>
                             </div>
@@ -350,7 +350,7 @@ export default function Protect401kFromCrashPage() {
                         {/* 9. Consider Rollover */}
                         <section id="rollover" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">9. Consider a Gold IRA Rollover</h2>

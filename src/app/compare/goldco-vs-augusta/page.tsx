@@ -218,7 +218,7 @@ export default function GoldcoVsAugustaPage() {
                         {/* Goldco Overview */}
                         <section id="goldco-overview" className="scroll-mt-32">
                             <h2 className="flex items-center gap-3">
-                                <Coins className="w-8 h-8 text-blue-400" />
+                                <Coins className="w-8 h-8 text-blue-700" />
                                 Goldco Overview
                             </h2>
                             <p>
@@ -231,19 +231,19 @@ export default function GoldcoVsAugustaPage() {
                                 </h3>
                                 <ul className="space-y-3 text-slate-600">
                                     <li className="flex items-start gap-3">
-                                        <BadgeCheck className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <BadgeCheck className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>A+ BBB Rating with some resolved complaints</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <BadgeCheck className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <BadgeCheck className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Lower minimum investment ($25,000)</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <BadgeCheck className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <BadgeCheck className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Promotional offers up to 10% in free silver</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <BadgeCheck className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <BadgeCheck className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>&quot;Highest Price Buyback Guarantee&quot;</span>
                                     </li>
                                 </ul>
@@ -270,23 +270,23 @@ export default function GoldcoVsAugustaPage() {
                                 </h3>
                                 <ul className="space-y-3 text-slate-600">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span><strong className="text-slate-900">Zero BBB complaints</strong> - Unheard of in this industry</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>4.9/5 TrustPilot rating from thousands of reviews</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Dedicated lifetime customer success agent</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Transparent, flat-fee pricing structure</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Free 1-on-1 web conference with economist</span>
                                     </li>
                                 </ul>
@@ -309,7 +309,7 @@ export default function GoldcoVsAugustaPage() {
                                     <thead className="bg-white/5">
                                         <tr>
                                             <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Fee Type</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-blue-400">Goldco</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-blue-700">Goldco</th>
                                             <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Augusta</th>
                                         </tr>
                                     </thead>
@@ -317,7 +317,7 @@ export default function GoldcoVsAugustaPage() {
                                         <tr>
                                             <td className="p-4 font-medium">Minimum Investment</td>
                                             <td className="p-4">$25,000</td>
-                                            <td className="p-4 text-green-400 font-semibold">$50,000</td>
+                                            <td className="p-4 text-green-700 font-semibold">$50,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-medium">Setup Fee</td>
@@ -332,7 +332,7 @@ export default function GoldcoVsAugustaPage() {
                                         <tr>
                                             <td className="p-4 font-medium">Annual Storage Fee</td>
                                             <td className="p-4">Scales with balance</td>
-                                            <td className="p-4 text-green-400 font-semibold">$100-$150 flat</td>
+                                            <td className="p-4 text-green-700 font-semibold">$100-$150 flat</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-medium">First Year Fees</td>
@@ -361,7 +361,7 @@ export default function GoldcoVsAugustaPage() {
                                 {/* Goldco Pros/Cons */}
                                 <div className="space-y-6">
                                     <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">
-                                        <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2">
+                                        <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5" /> Goldco Pros
                                         </h3>
                                         <ul className="space-y-2 text-slate-600">
@@ -373,7 +373,7 @@ export default function GoldcoVsAugustaPage() {
                                         </ul>
                                     </div>
                                     <div className="bg-red-500/10 p-6 rounded-xl border border-red-500/30">
-                                        <h3 className="text-xl font-bold text-red-400 mb-4 flex items-center gap-2">
+                                        <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
                                             <XCircle className="w-5 h-5" /> Goldco Cons
                                         </h3>
                                         <ul className="space-y-2 text-slate-600">
@@ -402,7 +402,7 @@ export default function GoldcoVsAugustaPage() {
                                         </ul>
                                     </div>
                                     <div className="bg-red-500/10 p-6 rounded-xl border border-red-500/30">
-                                        <h3 className="text-xl font-bold text-red-400 mb-4 flex items-center gap-2">
+                                        <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
                                             <XCircle className="w-5 h-5" /> Augusta Cons
                                         </h3>
                                         <ul className="space-y-2 text-slate-600">
@@ -430,19 +430,19 @@ export default function GoldcoVsAugustaPage() {
                                 <h3 className="text-lg font-bold text-slate-900 mb-4">Augusta&apos;s Customer Service Model</h3>
                                 <ul className="space-y-3 text-slate-600">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Dedicated agent assigned for life of your account</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>No pressure to make additional purchases</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Ongoing market updates and education</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Transparent communication at every step</span>
                                     </li>
                                 </ul>
@@ -462,7 +462,7 @@ export default function GoldcoVsAugustaPage() {
 
                             <div className="not-prose grid md:grid-cols-2 gap-8 my-8">
                                 <div className="bg-white shadow-sm rounded-xl p-6 border border-slate-200">
-                                    <h3 className="text-xl font-bold text-blue-400 mb-4">Choose Goldco If:</h3>
+                                    <h3 className="text-xl font-bold text-blue-700 mb-4">Choose Goldco If:</h3>
                                     <ul className="space-y-3 text-slate-600">
                                         <li>+ You have $25,000-$50,000 to invest</li>
                                         <li>+ You want promotional silver offers</li>
@@ -488,7 +488,7 @@ export default function GoldcoVsAugustaPage() {
                         <div className="not-prose my-12 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-8 border border-amber-500/30 text-center relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-400 mb-4">
+                                <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-700 mb-4">
                                     Our Recommendation
                                 </span>
                                 <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4 text-slate-900">

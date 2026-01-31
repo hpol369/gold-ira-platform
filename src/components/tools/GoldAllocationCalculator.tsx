@@ -282,7 +282,7 @@ export function GoldAllocationCalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Scale className="h-5 w-5 text-purple-400" />
+                <Scale className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Risk Tolerance</h3>
             </div>
@@ -518,7 +518,7 @@ export function GoldAllocationCalculator() {
           {/* Comparison with Famous Portfolios */}
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
-              <Scale className="h-5 w-5 text-purple-400" />
+              <Scale className="h-5 w-5 text-purple-700" />
               <h3 className="text-lg font-semibold">Compare to Famous Portfolios</h3>
             </div>
 

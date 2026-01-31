@@ -168,19 +168,19 @@ export function WhatSection() {
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-8">
                     <div className="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-amber-700 flex-shrink-0" />
                       <span className="text-white font-medium">Zero BBB complaints (7+ years)</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-amber-700 flex-shrink-0" />
                       <span className="text-white font-medium">4.97/5 Trustpilot rating</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-amber-700 flex-shrink-0" />
                       <span className="text-white font-medium">Fee waiver programs available</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-amber-700 flex-shrink-0" />
                       <span className="text-white font-medium">Lifetime customer support</span>
                     </div>
                   </div>
@@ -224,7 +224,7 @@ export function WhatSection() {
                           </div>
                           <span className="text-white font-bold">BBB Rating</span>
                         </div>
-                        <span className="text-amber-400 font-black text-xl">A+</span>
+                        <span className="text-amber-700 font-black text-xl">A+</span>
                       </div>
 
                       <div className="flex items-center justify-between p-4 bg-black/20 rounded-xl">
@@ -234,15 +234,15 @@ export function WhatSection() {
                           </div>
                           <span className="text-white font-bold">Trustpilot</span>
                         </div>
-                        <span className="text-amber-400 font-black text-xl whitespace-nowrap">4.97/5</span>
+                        <span className="text-amber-700 font-black text-xl whitespace-nowrap">4.97/5</span>
                       </div>
 
                       <div className="flex items-center justify-between p-4 bg-black/20 rounded-xl">
                         <div className="flex items-center gap-3">
-                          <Award className="h-10 w-10 text-amber-400" />
+                          <Award className="h-10 w-10 text-amber-700" />
                           <span className="text-white font-bold">Our Rating</span>
                         </div>
-                        <span className="text-amber-400 font-black text-xl whitespace-nowrap">4.98/5</span>
+                        <span className="text-amber-700 font-black text-xl whitespace-nowrap">4.98/5</span>
                       </div>
 
                       <div className="flex items-center justify-between p-4 bg-black/20 rounded-xl">
@@ -273,7 +273,7 @@ export function WhatSection() {
                   href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-what-section", "augusta")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-amber-400 font-bold text-sm hover:text-amber-300 transition-colors uppercase tracking-wide"
+                  className="text-amber-700 font-bold text-sm hover:text-amber-800 transition-colors uppercase tracking-wide"
                 >
                   Request Your Free Kit →
                 </a>

@@ -110,7 +110,7 @@ export default function Is401kFDICInsuredPage() {
                             Is 401(k) FDIC Insured?
                         </h1>
                         <p className="text-xl text-slate-600 leading-relaxed">
-                            Short answer: <strong className="text-red-400">NO</strong>. But before you panic, there ARE protections in place. Here&apos;s what actually safeguards the retirement you&apos;ve spent 30 years building.
+                            Short answer: <strong className="text-red-700">NO</strong>. But before you panic, there ARE protections in place. Here&apos;s what actually safeguards the retirement you&apos;ve spent 30 years building.
                         </p>
                     </div>
                 </Container>
@@ -131,7 +131,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* Direct Answer */}
                         <section id="answer" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <ShieldX className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Direct Answer: NO</h2>
@@ -139,10 +139,10 @@ export default function Is401kFDICInsuredPage() {
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
                                 <div className="flex items-start gap-4">
-                                    <AlertTriangle className="w-8 h-8 text-red-400 flex-shrink-0 mt-1" />
+                                    <AlertTriangle className="w-8 h-8 text-red-700 flex-shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400 text-xl mb-2">401(k)s Are NOT FDIC Insured</h4>
-                                        <p className="text-red-300">
+                                        <h4 className="font-bold text-red-700 text-xl mb-2">401(k)s Are NOT FDIC Insured</h4>
+                                        <p className="text-red-800">
                                             The Federal Deposit Insurance Corporation (FDIC) only insures <em>bank deposits</em> - checking accounts, savings accounts, and CDs at FDIC-member banks. Your 401(k) is an <em>investment account</em>, not a bank deposit, so it falls completely outside FDIC coverage.
                                         </p>
                                     </div>
@@ -169,22 +169,22 @@ export default function Is401kFDICInsuredPage() {
                                         <tr>
                                             <td className="p-4 text-[#000080] font-semibold">FDIC Insurance</td>
                                             <td className="p-4 text-slate-500">Bank deposits (checking, savings, CDs)</td>
-                                            <td className="p-4 text-red-400 font-semibold">NO</td>
+                                            <td className="p-4 text-red-700 font-semibold">NO</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080] font-semibold">SIPC Coverage</td>
                                             <td className="p-4 text-slate-500">Brokerage account assets if broker fails</td>
-                                            <td className="p-4 text-green-400 font-semibold">YES (up to $500k)</td>
+                                            <td className="p-4 text-green-700 font-semibold">YES (up to $500k)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080] font-semibold">ERISA Protection</td>
                                             <td className="p-4 text-slate-500">Employer bankruptcy, fiduciary duties</td>
-                                            <td className="p-4 text-green-400 font-semibold">YES</td>
+                                            <td className="p-4 text-green-700 font-semibold">YES</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080] font-semibold">Market Loss Protection</td>
                                             <td className="p-4 text-slate-500">Stock market declines</td>
-                                            <td className="p-4 text-red-400 font-semibold">NO - NOTHING</td>
+                                            <td className="p-4 text-red-700 font-semibold">NO - NOTHING</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -194,7 +194,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* ERISA Protection */}
                         <section id="erisa" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">ERISA Protection: Your Primary Safeguard</h2>
@@ -230,7 +230,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* SIPC Coverage */}
                         <section id="sipc" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">SIPC Coverage: If Your Broker Fails</h2>
@@ -244,15 +244,15 @@ export default function Is401kFDICInsuredPage() {
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Total Coverage</span>
-                                        <span className="font-semibold text-blue-400">$500,000 per customer</span>
+                                        <span className="font-semibold text-blue-700">$500,000 per customer</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Cash Coverage</span>
-                                        <span className="font-semibold text-blue-400">$250,000 (within total)</span>
+                                        <span className="font-semibold text-blue-700">$250,000 (within total)</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Securities Coverage</span>
-                                        <span className="font-semibold text-blue-400">$500,000</span>
+                                        <span className="font-semibold text-blue-700">$500,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -282,11 +282,11 @@ export default function Is401kFDICInsuredPage() {
                             </p>
 
                             <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
-                                <h4 className="font-bold text-green-400 text-xl mb-4">Your 401(k) Is Safe From Employer Bankruptcy</h4>
-                                <p className="text-green-300 mb-4">
+                                <h4 className="font-bold text-green-700 text-xl mb-4">Your 401(k) Is Safe From Employer Bankruptcy</h4>
+                                <p className="text-green-800 mb-4">
                                     Thanks to ERISA, your 401(k) assets are held in a trust that is legally separate from your employer. When a company files for bankruptcy, creditors cannot touch employee retirement accounts.
                                 </p>
-                                <ul className="space-y-2 text-green-300">
+                                <ul className="space-y-2 text-green-800">
                                     <li className="flex items-start gap-2">
                                         <ShieldCheck className="w-5 h-5 flex-shrink-0 mt-0.5" />
                                         <span>Your vested contributions remain 100% yours</span>
@@ -369,7 +369,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* What IS at Risk */}
                         <section id="market-risk" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What IS Actually at Risk: Market Losses</h2>
@@ -393,23 +393,23 @@ export default function Is401kFDICInsuredPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-[#000080]">Dot-Com Crash (2000-02)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-49%</td>
-                                            <td className="p-4 text-red-400 font-semibold">$255,000</td>
+                                            <td className="p-4 text-red-700 font-semibold">-49%</td>
+                                            <td className="p-4 text-red-700 font-semibold">$255,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">Financial Crisis (2008)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-57%</td>
-                                            <td className="p-4 text-red-400 font-semibold">$215,000</td>
+                                            <td className="p-4 text-red-700 font-semibold">-57%</td>
+                                            <td className="p-4 text-red-700 font-semibold">$215,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">COVID Crash (2020)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34%</td>
-                                            <td className="p-4 text-red-400 font-semibold">$330,000</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34%</td>
+                                            <td className="p-4 text-red-700 font-semibold">$330,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2022 Bear Market</td>
-                                            <td className="p-4 text-red-400 font-semibold">-25%</td>
-                                            <td className="p-4 text-red-400 font-semibold">$375,000</td>
+                                            <td className="p-4 text-red-700 font-semibold">-25%</td>
+                                            <td className="p-4 text-red-700 font-semibold">$375,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -487,17 +487,17 @@ export default function Is401kFDICInsuredPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-[#000080]">2008 Financial Crisis</td>
-                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+5.5%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-37%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+5.5%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2020 COVID Crash</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+25% (full year)</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+25% (full year)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2022 Bear Market</td>
-                                            <td className="p-4 text-red-400 font-semibold">-18%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-18%</td>
                                             <td className="p-4 text-[#B22234] font-semibold">+0.4%</td>
                                         </tr>
                                     </tbody>

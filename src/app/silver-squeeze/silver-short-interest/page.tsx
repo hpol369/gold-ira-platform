@@ -163,7 +163,7 @@ export default function SilverShortInterestPage() {
                         {/* COT Reports */}
                         <section id="cot-reports" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <FileText className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">CFTC Commitment of Traders Reports</h2>
@@ -180,7 +180,7 @@ export default function SilverShortInterestPage() {
                                         <p className="text-sm text-slate-600">Producers, merchants, processors, and swap dealers. These are the &quot;big boys&quot; - banks and large institutions. They typically hold the largest short positions.</p>
                                     </div>
                                     <div className="p-4 bg-slate-50 rounded-xl">
-                                        <h5 className="font-bold text-green-400 mb-2">Non-Commercial (Managed Money)</h5>
+                                        <h5 className="font-bold text-green-700 mb-2">Non-Commercial (Managed Money)</h5>
                                         <p className="text-sm text-slate-600">Hedge funds, CTAs, and other speculators. They tend to follow trends and are often net long when prices rise.</p>
                                     </div>
                                     <div className="p-4 bg-slate-50 rounded-xl">
@@ -198,7 +198,7 @@ export default function SilverShortInterestPage() {
                         {/* Commercial Shorts */}
                         <section id="commercial-shorts" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Commercial Short Positions</h2>
@@ -209,7 +209,7 @@ export default function SilverShortInterestPage() {
 
                             <div className="grid md:grid-cols-3 gap-4 not-prose my-8">
                                 <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-200">
-                                    <div className="text-2xl font-bold text-red-400">300-400M oz</div>
+                                    <div className="text-2xl font-bold text-red-700">300-400M oz</div>
                                     <div className="text-xs text-slate-600">Typical Commercial Net Short</div>
                                 </div>
                                 <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-200">
@@ -234,7 +234,7 @@ export default function SilverShortInterestPage() {
                         {/* Bank Positions */}
                         <section id="bank-positions" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Bank Positions in Silver</h2>
@@ -253,11 +253,11 @@ export default function SilverShortInterestPage() {
                                 <h4 className="font-bold text-slate-900 text-lg mb-4">Why Do Banks Hold These Shorts?</h4>
                                 <div className="space-y-4">
                                     <div className="p-4 bg-slate-50 rounded-xl border-l-4 border-green-500">
-                                        <h5 className="font-bold text-green-400 mb-2">The Official Story (Hedging)</h5>
+                                        <h5 className="font-bold text-green-700 mb-2">The Official Story (Hedging)</h5>
                                         <p className="text-sm text-slate-600">Banks claim shorts offset long positions in physical silver, client OTC exposure, or ETF hedging. They&apos;re supposedly market-neutral.</p>
                                     </div>
                                     <div className="p-4 bg-slate-50 rounded-xl border-l-4 border-red-500">
-                                        <h5 className="font-bold text-red-400 mb-2">The Critic&apos;s View (Manipulation)</h5>
+                                        <h5 className="font-bold text-red-700 mb-2">The Critic&apos;s View (Manipulation)</h5>
                                         <p className="text-sm text-slate-600">Critics argue shorts exceed hedging needs and are used to suppress prices, benefiting short sellers at investors&apos; expense. The concentration makes manipulation easier.</p>
                                     </div>
                                 </div>
@@ -294,7 +294,7 @@ export default function SilverShortInterestPage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Target className="w-8 h-8 text-red-400 mb-4" />
+                                    <Target className="w-8 h-8 text-red-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Large Concentrated Shorts</h4>
                                     <p className="text-sm text-slate-600">Check. Commercial shorts are massive and concentrated among few traders. These positions MUST eventually be covered.</p>
                                 </div>
@@ -304,12 +304,12 @@ export default function SilverShortInterestPage() {
                                     <p className="text-sm text-slate-600">Check. COMEX inventory depleting, supply deficit growing. If physical isn&apos;t available to deliver, shorts have nowhere to hide.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <TrendingDown className="w-8 h-8 text-purple-400 mb-4" />
+                                    <TrendingDown className="w-8 h-8 text-purple-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Catalyst for Price Rise</h4>
                                     <p className="text-sm text-slate-600">Pending. Could be industrial demand spike, investment surge, currency crisis, or loss of confidence in paper silver.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <BarChart3 className="w-8 h-8 text-green-400 mb-4" />
+                                    <BarChart3 className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Momentum Traders Pile In</h4>
                                     <p className="text-sm text-slate-600">The final stage. When managed money goes aggressively long as commercials cover, the feedback loop begins.</p>
                                 </div>
@@ -327,7 +327,7 @@ export default function SilverShortInterestPage() {
                         {/* How to Track */}
                         <section id="how-to-track" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">How to Track COT Data</h2>

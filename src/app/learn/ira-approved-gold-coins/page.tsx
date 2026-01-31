@@ -366,7 +366,7 @@ export default function IraApprovedGoldCoinsPage() {
                         {/* Platinum & Palladium */}
                         <section id="platinum-palladium" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Platinum & Palladium</h2>
@@ -396,7 +396,7 @@ export default function IraApprovedGoldCoinsPage() {
                         {/* Not Allowed */}
                         <section id="not-allowed" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <XCircle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What&apos;s NOT Allowed</h2>
@@ -406,31 +406,31 @@ export default function IraApprovedGoldCoinsPage() {
                             </p>
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
-                                <h4 className="font-bold text-red-400 text-lg mb-4">Prohibited Products</h4>
+                                <h4 className="font-bold text-red-700 text-lg mb-4">Prohibited Products</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-300"><strong>Collectible/Numismatic coins</strong> — Pre-1933 coins, rare dates, proof sets valued for rarity</span>
+                                        <XCircle className="w-5 h-5 text-red-700 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-800"><strong>Collectible/Numismatic coins</strong> — Pre-1933 coins, rare dates, proof sets valued for rarity</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-300"><strong>South African Krugerrands</strong> — Only 91.67% gold with no US legal tender status</span>
+                                        <XCircle className="w-5 h-5 text-red-700 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-800"><strong>South African Krugerrands</strong> — Only 91.67% gold with no US legal tender status</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-300"><strong>Pre-1933 US Gold coins</strong> — Considered collectibles</span>
+                                        <XCircle className="w-5 h-5 text-red-700 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-800"><strong>Pre-1933 US Gold coins</strong> — Considered collectibles</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-300"><strong>British Sovereigns</strong> — Only 91.67% gold</span>
+                                        <XCircle className="w-5 h-5 text-red-700 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-800"><strong>British Sovereigns</strong> — Only 91.67% gold</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-300"><strong>Most jewelry</strong> — Doesn&apos;t meet purity requirements</span>
+                                        <XCircle className="w-5 h-5 text-red-700 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-800"><strong>Most jewelry</strong> — Doesn&apos;t meet purity requirements</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <XCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
-                                        <span className="text-red-300"><strong>Bars from non-approved refiners</strong> — Must be NYMEX/COMEX approved</span>
+                                        <XCircle className="w-5 h-5 text-red-700 mt-0.5 flex-shrink-0" />
+                                        <span className="text-red-800"><strong>Bars from non-approved refiners</strong> — Must be NYMEX/COMEX approved</span>
                                     </li>
                                 </ul>
                             </div>
@@ -443,7 +443,7 @@ export default function IraApprovedGoldCoinsPage() {
                         {/* How to Choose */}
                         <section id="how-to-choose" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Shield className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">How to Choose the Right Products</h2>

@@ -114,14 +114,14 @@ export default function DavidMorganPage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/20 px-4 py-1.5 text-sm font-semibold text-blue-400 mb-6 border border-blue-500/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/20 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-500/30 ml-4">
                             <BookOpen className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-4">
                             David Morgan on Silver
                         </h1>
-                        <p className="text-xl text-blue-400 font-semibold mb-4">
+                        <p className="text-xl text-blue-700 font-semibold mb-4">
                             &quot;The Silver Guru&quot; - Publisher of The Morgan Report
                         </p>
                         <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
@@ -141,13 +141,13 @@ export default function DavidMorganPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-blue-500/20 rounded-lg">
-                                    <BookOpen className="w-6 h-6 text-blue-400" />
+                                    <BookOpen className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Who Is David Morgan?</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600">
-                                    David Morgan is a precious metals analyst and educator who has earned the nickname <strong className="text-slate-900">&quot;The Silver Guru&quot;</strong> through decades of focused research and accurate market analysis. He publishes <strong className="text-blue-400">The Morgan Report</strong>, a subscription newsletter that provides in-depth analysis of silver, gold, and mining stocks.
+                                    David Morgan is a precious metals analyst and educator who has earned the nickname <strong className="text-slate-900">&quot;The Silver Guru&quot;</strong> through decades of focused research and accurate market analysis. He publishes <strong className="text-blue-700">The Morgan Report</strong>, a subscription newsletter that provides in-depth analysis of silver, gold, and mining stocks.
                                 </p>
                                 <p className="text-slate-600">
                                     Morgan&apos;s journey into precious metals began in the 1990s when he recognized the disconnect between fiat currency creation and real economic growth. His educational background in engineering gives him an analytical approach that sets him apart from many market commentators.
@@ -160,23 +160,23 @@ export default function DavidMorganPage() {
                                     <h4 className="font-bold text-slate-900 mb-4">David Morgan Quick Facts</h4>
                                     <ul className="space-y-2 text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                                             <span>Publisher of The Morgan Report since 2000</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                                             <span>Author of &quot;The Silver Manifesto&quot;</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                                             <span>Featured in documentaries including &quot;Four Horsemen&quot;</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                                             <span>Regular contributor to major financial publications</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
                                             <span>Engineering background - analytical approach to markets</span>
                                         </li>
                                     </ul>
@@ -188,7 +188,7 @@ export default function DavidMorganPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-blue-500/20 rounded-lg">
-                                    <BarChart3 className="w-6 h-6 text-blue-400" />
+                                    <BarChart3 className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">David Morgan&apos;s Analysis Methodology</h2>
                             </div>
@@ -226,7 +226,7 @@ export default function DavidMorganPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-blue-500/20 rounded-lg">
-                                    <Quote className="w-6 h-6 text-blue-400" />
+                                    <Quote className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Key Quotes & Predictions</h2>
                             </div>
@@ -234,7 +234,7 @@ export default function DavidMorganPage() {
                                 {keyQuotes.map((item, index) => (
                                     <div key={index} className="bg-slate-50 rounded-lg p-6">
                                         <p className="text-slate-900 text-lg italic mb-3">&quot;{item.quote}&quot;</p>
-                                        <p className="text-blue-400 text-sm font-semibold">{item.context}</p>
+                                        <p className="text-blue-700 text-sm font-semibold">{item.context}</p>
                                     </div>
                                 ))}
                             </div>
@@ -244,7 +244,7 @@ export default function DavidMorganPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-blue-500/20 rounded-lg">
-                                    <BookOpen className="w-6 h-6 text-blue-400" />
+                                    <BookOpen className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Books & Resources</h2>
                             </div>
@@ -253,7 +253,7 @@ export default function DavidMorganPage() {
                                     <div key={index} className="bg-slate-50 rounded-lg p-6">
                                         <h3 className="text-xl font-bold text-slate-900 mb-2">{book.title}</h3>
                                         {book.coAuthor && (
-                                            <p className="text-blue-400 text-sm mb-3">Co-authored with {book.coAuthor}</p>
+                                            <p className="text-blue-700 text-sm mb-3">Co-authored with {book.coAuthor}</p>
                                         )}
                                         <p className="text-slate-600">{book.description}</p>
                                     </div>
@@ -269,7 +269,7 @@ export default function DavidMorganPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-blue-500/20 rounded-lg">
-                                    <Mic className="w-6 h-6 text-blue-400" />
+                                    <Mic className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Media Appearances</h2>
                             </div>
@@ -302,7 +302,7 @@ export default function DavidMorganPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <TrendingUp className="w-6 h-6 text-green-400" />
+                                    <TrendingUp className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">David Morgan&apos;s Investment Philosophy</h2>
                             </div>
@@ -329,19 +329,19 @@ export default function DavidMorganPage() {
                             <h2 className="text-2xl font-bold font-serif text-slate-900 mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-6">
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-blue-400 mb-2">Who is David Morgan?</h3>
+                                    <h3 className="text-lg font-bold text-blue-700 mb-2">Who is David Morgan?</h3>
                                     <p className="text-slate-600">David Morgan is a precious metals analyst known as &quot;The Silver Guru.&quot; He publishes The Morgan Report, a newsletter focused on precious metals and mining stocks, and authored &quot;The Silver Manifesto&quot; with Chris Marchese.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-blue-400 mb-2">What is The Morgan Report?</h3>
+                                    <h3 className="text-lg font-bold text-blue-700 mb-2">What is The Morgan Report?</h3>
                                     <p className="text-slate-600">The Morgan Report is a subscription-based newsletter published by David Morgan that provides analysis on silver, gold, and mining stocks. It includes investment recommendations, market analysis, and economic commentary.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-blue-400 mb-2">What does David Morgan predict for silver prices?</h3>
+                                    <h3 className="text-lg font-bold text-blue-700 mb-2">What does David Morgan predict for silver prices?</h3>
                                     <p className="text-slate-600">David Morgan has consistently predicted that silver will significantly outperform gold during precious metals bull markets. He believes the gold-to-silver ratio will contract dramatically, potentially to 20:1 or lower.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-blue-400 mb-2">What is David Morgan&apos;s investment philosophy?</h3>
+                                    <h3 className="text-lg font-bold text-blue-700 mb-2">What is David Morgan&apos;s investment philosophy?</h3>
                                     <p className="text-slate-600">Morgan advocates for owning physical silver as the foundation of a precious metals portfolio, supplemented by carefully selected mining stocks for leverage. He emphasizes patience and long-term thinking.</p>
                                 </div>
                             </div>
@@ -369,27 +369,27 @@ export default function DavidMorganPage() {
                             <h3 className="text-lg font-bold text-slate-900 mb-4">Other Silver Experts</h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/silver-experts/andy-schectman" className="text-blue-400 hover:text-blue-300 font-medium">
+                                    <Link href="/silver-experts/andy-schectman" className="text-blue-700 hover:text-blue-800 font-medium">
                                         Andy Schectman - Miles Franklin CEO
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/mike-maloney" className="text-blue-400 hover:text-blue-300 font-medium">
+                                    <Link href="/silver-experts/mike-maloney" className="text-blue-700 hover:text-blue-800 font-medium">
                                         Mike Maloney - GoldSilver.com
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/ted-butler" className="text-blue-400 hover:text-blue-300 font-medium">
+                                    <Link href="/silver-experts/ted-butler" className="text-blue-700 hover:text-blue-800 font-medium">
                                         Ted Butler - Manipulation Researcher
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/rick-rule" className="text-blue-400 hover:text-blue-300 font-medium">
+                                    <Link href="/silver-experts/rick-rule" className="text-blue-700 hover:text-blue-800 font-medium">
                                         Rick Rule - Mining Investor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/eric-sprott" className="text-blue-400 hover:text-blue-300 font-medium">
+                                    <Link href="/silver-experts/eric-sprott" className="text-blue-700 hover:text-blue-800 font-medium">
                                         Eric Sprott - PSLV Creator
                                     </Link>
                                 </li>

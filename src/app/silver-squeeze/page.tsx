@@ -236,12 +236,12 @@ export default function SilverSqueezePage() {
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Industrial Use</td>
-                                            <td className="p-4 text-green-400 font-semibold">~50% of demand</td>
+                                            <td className="p-4 text-green-700 font-semibold">~50% of demand</td>
                                             <td className="p-4">~10% of demand</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">Consumed vs Hoarded</td>
-                                            <td className="p-4 text-green-400 font-semibold">Consumed (gone forever)</td>
+                                            <td className="p-4 text-green-700 font-semibold">Consumed (gone forever)</td>
                                             <td className="p-4">Hoarded (still exists)</td>
                                         </tr>
                                         <tr>
@@ -256,7 +256,7 @@ export default function SilverSqueezePage() {
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Squeeze Potential</td>
-                                            <td className="p-4 text-green-400 font-semibold">Extreme</td>
+                                            <td className="p-4 text-green-700 font-semibold">Extreme</td>
                                             <td className="p-4">Moderate</td>
                                         </tr>
                                     </tbody>
@@ -306,19 +306,19 @@ export default function SilverSqueezePage() {
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Paper Silver</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-400">-</span>
+                                            <span className="text-red-700">-</span>
                                             Contracts can be created out of thin air
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-400">-</span>
+                                            <span className="text-red-700">-</span>
                                             Most contracts are cash-settled, never delivered
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-400">-</span>
+                                            <span className="text-red-700">-</span>
                                             Banks can &quot;naked short&quot; (sell what they don&apos;t have)
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-400">-</span>
+                                            <span className="text-red-700">-</span>
                                             Unlimited supply = suppressed prices
                                         </li>
                                     </ul>
@@ -328,19 +328,19 @@ export default function SilverSqueezePage() {
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Physical Silver</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-400">+</span>
+                                            <span className="text-green-700">+</span>
                                             Must be mined from the earth
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-400">+</span>
+                                            <span className="text-green-700">+</span>
                                             Takes physical delivery out of the system
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-400">+</span>
+                                            <span className="text-green-700">+</span>
                                             Cannot be rehypothecated or borrowed
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-400">+</span>
+                                            <span className="text-green-700">+</span>
                                             Limited supply = real price discovery
                                         </li>
                                     </ul>
@@ -370,31 +370,31 @@ export default function SilverSqueezePage() {
                             </p>
 
                             <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6 not-prose my-8">
-                                <h4 className="font-bold text-red-400 text-lg mb-4 flex items-center gap-2">
+                                <h4 className="font-bold text-red-700 text-lg mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     Documented Manipulation Tactics
                                 </h4>
                                 <ul className="space-y-3 text-slate-600">
                                     <li className="flex items-start gap-3">
-                                        <span className="text-red-400 font-bold">1.</span>
+                                        <span className="text-red-700 font-bold">1.</span>
                                         <div>
                                             <strong className="text-slate-900">Spoofing:</strong> Placing massive sell orders with no intention to fill them, creating the illusion of selling pressure, then canceling before execution. This artificially drives prices down.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <span className="text-red-400 font-bold">2.</span>
+                                        <span className="text-red-700 font-bold">2.</span>
                                         <div>
                                             <strong className="text-slate-900">Naked Shorting:</strong> Selling silver contracts without having the physical metal to deliver, effectively creating supply out of thin air.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <span className="text-red-400 font-bold">3.</span>
+                                        <span className="text-red-700 font-bold">3.</span>
                                         <div>
                                             <strong className="text-slate-900">Concentrated Short Positions:</strong> JP Morgan and a handful of other banks hold short positions that represent months of global silver production. This gives them power to suppress prices at will.
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <span className="text-red-400 font-bold">4.</span>
+                                        <span className="text-red-700 font-bold">4.</span>
                                         <div>
                                             <strong className="text-slate-900">Tamp Downs:</strong> Coordinated selling during thin trading hours (especially Sunday night) to trigger stop-losses and create downward momentum.
                                         </div>
@@ -427,45 +427,45 @@ export default function SilverSqueezePage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
-                                    <CheckCircle2 className="w-8 h-8 text-green-400 mb-4" />
+                                    <CheckCircle2 className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">DO: Physical Silver</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Silver coins (Eagles, Maples, etc.)
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Silver bars (1 oz to 100 oz)
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             PSLV (Sprott Physical Silver Trust)
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Silver IRA (tax-advantaged)
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-8 h-8 text-red-400 mb-4" />
+                                    <AlertTriangle className="w-8 h-8 text-red-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">AVOID: Paper Silver</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <AlertTriangle className="w-4 h-4 text-red-400 mt-0.5 shrink-0" />
+                                            <AlertTriangle className="w-4 h-4 text-red-700 mt-0.5 shrink-0" />
                                             SLV (iShares Silver ETF) - doesn&apos;t take delivery
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <AlertTriangle className="w-4 h-4 text-red-400 mt-0.5 shrink-0" />
+                                            <AlertTriangle className="w-4 h-4 text-red-700 mt-0.5 shrink-0" />
                                             COMEX futures (unless taking delivery)
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <AlertTriangle className="w-4 h-4 text-red-400 mt-0.5 shrink-0" />
+                                            <AlertTriangle className="w-4 h-4 text-red-700 mt-0.5 shrink-0" />
                                             Unallocated pool accounts
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <AlertTriangle className="w-4 h-4 text-red-400 mt-0.5 shrink-0" />
+                                            <AlertTriangle className="w-4 h-4 text-red-700 mt-0.5 shrink-0" />
                                             Bank-issued silver certificates
                                         </li>
                                     </ul>
@@ -495,35 +495,35 @@ export default function SilverSqueezePage() {
                                 </h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Tax-Deferred Growth:</span>
                                             <span className="text-slate-600"> Your silver gains compound tax-free until withdrawal. When silver rises 200-500% (as it could), you keep more.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Physical Allocated Silver:</span>
                                             <span className="text-slate-600"> Your IRA silver is real, physical metal stored in an approved depository in your name. It drains supply just like home storage.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Larger Positions:</span>
                                             <span className="text-slate-600"> Rolling over a 401(k) or IRA lets you take a much larger silver position than most can afford out-of-pocket.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Professional Storage:</span>
                                             <span className="text-slate-600"> Insured, secure storage means you don&apos;t have to worry about home security for large silver holdings.</span>
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                         <div>
                                             <span className="text-slate-900 font-semibold">Rollover Tax-Free:</span>
                                             <span className="text-slate-600"> Move funds from your 401(k) or existing IRA without triggering taxes or penalties.</span>
@@ -655,7 +655,7 @@ export default function SilverSqueezePage() {
                         {/* Market Analysis */}
                         <Link href="/silver-squeeze/silver-supply-deficit" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-slate-300 transition-all">
                             <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center mb-4">
-                                <TrendingUp className="w-5 h-5 text-red-400" />
+                                <TrendingUp className="w-5 h-5 text-red-700" />
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver Supply Deficit</h3>
                             <p className="text-sm text-slate-600">Understand the structural supply deficit driving the squeeze thesis.</p>
@@ -671,7 +671,7 @@ export default function SilverSqueezePage() {
 
                         <Link href="/silver-squeeze/silver-short-interest" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-slate-300 transition-all">
                             <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-4">
-                                <Target className="w-5 h-5 text-purple-400" />
+                                <Target className="w-5 h-5 text-purple-700" />
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver Short Interest</h3>
                             <p className="text-sm text-slate-600">Analyze bank short positions and squeeze potential.</p>
@@ -679,7 +679,7 @@ export default function SilverSqueezePage() {
 
                         <Link href="/silver-squeeze/silver-manipulation" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-slate-300 transition-all">
                             <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center mb-4">
-                                <AlertTriangle className="w-5 h-5 text-red-400" />
+                                <AlertTriangle className="w-5 h-5 text-red-700" />
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver Manipulation Exposed</h3>
                             <p className="text-sm text-slate-600">Documented evidence of bank price manipulation.</p>
@@ -687,7 +687,7 @@ export default function SilverSqueezePage() {
 
                         <Link href="/silver-squeeze/banks-shorting-silver" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-slate-300 transition-all">
                             <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
-                                <Building2 className="w-5 h-5 text-blue-400" />
+                                <Building2 className="w-5 h-5 text-blue-700" />
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Banks Shorting Silver</h3>
                             <p className="text-sm text-slate-600">Why major banks maintain massive silver short positions.</p>
@@ -695,7 +695,7 @@ export default function SilverSqueezePage() {
 
                         <Link href="/silver-squeeze/silver-backwardation" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-slate-300 transition-all">
                             <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mb-4">
-                                <Scale className="w-5 h-5 text-green-400" />
+                                <Scale className="w-5 h-5 text-green-700" />
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver Backwardation</h3>
                             <p className="text-sm text-slate-600">What backwardation signals about physical silver scarcity.</p>
@@ -728,7 +728,7 @@ export default function SilverSqueezePage() {
 
                         <Link href="/silver-squeeze/silver-shortage" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-slate-300 transition-all">
                             <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center mb-4">
-                                <AlertTriangle className="w-5 h-5 text-red-400" />
+                                <AlertTriangle className="w-5 h-5 text-red-700" />
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver Shortage 2026</h3>
                             <p className="text-sm text-slate-600">Current state of physical silver availability.</p>
@@ -736,7 +736,7 @@ export default function SilverSqueezePage() {
 
                         <Link href="/silver-squeeze/silver-undervalued" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-slate-300 transition-all">
                             <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mb-4">
-                                <TrendingUp className="w-5 h-5 text-green-400" />
+                                <TrendingUp className="w-5 h-5 text-green-700" />
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Is Silver Undervalued?</h3>
                             <p className="text-sm text-slate-600">Analysis of silver&apos;s price relative to historical ratios.</p>

@@ -201,12 +201,12 @@ export default function SilverIraRolloverPage() {
                 <Container>
                     <div className="grid md:grid-cols-4 gap-6">
                         <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                            <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-4" />
+                            <DollarSign className="h-8 w-8 text-green-700 mx-auto mb-4" />
                             <h3 className="font-bold text-slate-900 mb-2">100% Tax-Free</h3>
                             <p className="text-sm text-slate-600">Direct rollovers avoid all taxes and penalties</p>
                         </div>
                         <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                            <Clock className="h-8 w-8 text-blue-400 mx-auto mb-4" />
+                            <Clock className="h-8 w-8 text-blue-700 mx-auto mb-4" />
                             <h3 className="font-bold text-slate-900 mb-2">2-4 Weeks</h3>
                             <p className="text-sm text-slate-600">Typical completion time for the full process</p>
                         </div>
@@ -254,7 +254,7 @@ export default function SilverIraRolloverPage() {
                                                 <ul className="space-y-1">
                                                     {step.tips.map((tip, idx) => (
                                                         <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                                                            <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0" />
+                                                            <CheckCircle2 className="h-4 w-4 text-green-700 flex-shrink-0" />
                                                             {tip}
                                                         </li>
                                                     ))}
@@ -296,11 +296,11 @@ export default function SilverIraRolloverPage() {
 
                                     <div className="space-y-4">
                                         <div>
-                                            <h4 className="font-semibold text-green-400 mb-2">Advantages:</h4>
+                                            <h4 className="font-semibold text-green-700 mb-2">Advantages:</h4>
                                             <ul className="space-y-1">
                                                 {type.pros.map((pro, idx) => (
                                                     <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                                                        <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0" />
+                                                        <CheckCircle2 className="h-4 w-4 text-green-700 flex-shrink-0" />
                                                         {pro}
                                                     </li>
                                                 ))}
@@ -324,9 +324,9 @@ export default function SilverIraRolloverPage() {
 
                         <div className="mt-8 bg-red-500/10 border border-red-500/30 rounded-xl p-6">
                             <div className="flex items-start gap-4">
-                                <AlertTriangle className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+                                <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                 <div>
-                                    <h4 className="font-bold text-red-400 mb-2">Critical Warning About Indirect Rollovers</h4>
+                                    <h4 className="font-bold text-red-700 mb-2">Critical Warning About Indirect Rollovers</h4>
                                     <p className="text-slate-600">
                                         With an indirect rollover from a 401(k), your employer is required to withhold 20% for taxes.
                                         To complete the rollover tax-free, you must deposit the full original amount (including the 20% from your own pocket)
@@ -352,7 +352,7 @@ export default function SilverIraRolloverPage() {
                             {eligibleAccounts.map((account) => (
                                 <div key={account.name} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4">
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="h-5 w-5 text-green-700 flex-shrink-0" />
                                         <div>
                                             <h3 className="font-bold text-slate-900">{account.name}</h3>
                                             <p className="text-sm text-slate-600">{account.details}</p>

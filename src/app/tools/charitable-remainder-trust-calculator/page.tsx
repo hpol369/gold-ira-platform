@@ -148,7 +148,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-purple-400" />
+                        <Icon className="h-6 w-6 text-purple-700" />
                       </div>
                       <div>
                         <h3 className="text-slate-900 font-semibold mb-2">
@@ -173,7 +173,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                <Gift className="h-6 w-6 text-purple-400" />
+                <Gift className="h-6 w-6 text-purple-700" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 How a Charitable Remainder Trust Works
@@ -183,7 +183,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
             <div className="space-y-6">
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-700 font-bold">
                     1
                   </div>
                   <div>
@@ -201,7 +201,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
 
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-700 font-bold">
                     2
                   </div>
                   <div>
@@ -219,7 +219,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
 
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-700 font-bold">
                     3
                   </div>
                   <div>
@@ -237,7 +237,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
 
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-400 font-bold">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 text-purple-700 font-bold">
                     4
                   </div>
                   <div>
@@ -293,31 +293,31 @@ export default function CharitableRemainderTrustCalculatorPage() {
                   </li>
                 </ul>
                 <div className="mt-4 p-3 bg-blue-500/10 rounded-lg">
-                  <p className="text-blue-300 text-xs">
+                  <p className="text-blue-800 text-xs">
                     <strong>Best for:</strong> Those wanting predictable income, older donors, or when funding with assets expected to have modest growth.
                   </p>
                 </div>
               </div>
 
               <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-400 mb-4">
+                <h3 className="text-xl font-bold text-purple-700 mb-4">
                   CRUT (Charitable Remainder Unitrust)
                 </h3>
                 <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     <span>Fixed percentage of trust value each year (e.g., 5% of current value)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     <span>Income increases if trust investments grow - inflation hedge</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     <span>Can make additional contributions to the trust</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     <span>Trust is revalued annually - payments adjust automatically</span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -326,7 +326,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
                   </li>
                 </ul>
                 <div className="mt-4 p-3 bg-purple-500/10 rounded-lg">
-                  <p className="text-purple-300 text-xs">
+                  <p className="text-purple-800 text-xs">
                     <strong>Best for:</strong> Younger donors, those wanting growth potential, long-term trusts, or when planning additional contributions.
                   </p>
                 </div>

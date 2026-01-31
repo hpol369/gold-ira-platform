@@ -103,7 +103,7 @@ export default function WhySilverIsCheapPage() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-green-500/20 text-green-400 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
+                            <span className="bg-green-500/20 text-green-700 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
                             <span className="text-slate-600 text-sm">250 monthly searches | Easy to rank</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
@@ -169,9 +169,9 @@ export default function WhySilverIsCheapPage() {
                                             <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                                 <td className="p-4 text-slate-900 font-medium">{item.period}</td>
                                                 <td className={`p-4 font-bold ${
-                                                    item.ratio === '80:1' ? 'text-red-400' :
-                                                    item.ratio === '125:1' ? 'text-red-400' :
-                                                    parseInt(item.ratio) <= 20 ? 'text-green-400' :
+                                                    item.ratio === '80:1' ? 'text-red-700' :
+                                                    item.ratio === '125:1' ? 'text-red-700' :
+                                                    parseInt(item.ratio) <= 20 ? 'text-green-700' :
                                                     'text-[#B22234]'
                                                 }`}>{item.ratio}</td>
                                                 <td className="p-4 text-slate-600">{item.notes}</td>
@@ -187,7 +187,7 @@ export default function WhySilverIsCheapPage() {
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                     <div className="text-center p-4 bg-slate-50 rounded-lg">
                                         <div className="text-sm text-slate-600 mb-1">Current (80:1)</div>
-                                        <div className="text-xl font-bold text-red-400">$32.50</div>
+                                        <div className="text-xl font-bold text-red-700">$32.50</div>
                                     </div>
                                     <div className="text-center p-4 bg-slate-50 rounded-lg">
                                         <div className="text-sm text-slate-600 mb-1">At 40:1</div>
@@ -195,11 +195,11 @@ export default function WhySilverIsCheapPage() {
                                     </div>
                                     <div className="text-center p-4 bg-slate-50 rounded-lg">
                                         <div className="text-sm text-slate-600 mb-1">Historical 15:1</div>
-                                        <div className="text-xl font-bold text-green-400">$173</div>
+                                        <div className="text-xl font-bold text-green-700">$173</div>
                                     </div>
                                     <div className="text-center p-4 bg-slate-50 rounded-lg">
                                         <div className="text-sm text-slate-600 mb-1">Geological 17:1</div>
-                                        <div className="text-xl font-bold text-green-400">$153</div>
+                                        <div className="text-xl font-bold text-green-700">$153</div>
                                     </div>
                                 </div>
                                 <p className="text-xs text-slate-600 mt-4">Silver in the Earth&apos;s crust exists at roughly 17:1 to gold. For thousands of years, this informed monetary ratios.</p>
@@ -213,7 +213,7 @@ export default function WhySilverIsCheapPage() {
                         {/* Reason 2: Bank Manipulation */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #2: Bank Manipulation (Yes, It&apos;s Real)</h2>
@@ -224,24 +224,24 @@ export default function WhySilverIsCheapPage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">JPMorgan Chase: $920 Million Fine (2020)</h4>
-                                        <p className="text-sm text-red-300 mt-1">JPMorgan paid the largest CFTC fine in history for &quot;spoofing&quot; gold and silver markets from 2008-2016. Their traders placed fake orders to manipulate prices, then canceled them.</p>
+                                        <h4 className="font-bold text-red-700">JPMorgan Chase: $920 Million Fine (2020)</h4>
+                                        <p className="text-sm text-red-800 mt-1">JPMorgan paid the largest CFTC fine in history for &quot;spoofing&quot; gold and silver markets from 2008-2016. Their traders placed fake orders to manipulate prices, then canceled them.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Deutsche Bank: Settlement (2016)</h4>
-                                        <p className="text-sm text-red-300 mt-1">Deutsche Bank settled silver manipulation lawsuits and agreed to help expose other banks involved in the scheme. They literally turned state&apos;s evidence.</p>
+                                        <h4 className="font-bold text-red-700">Deutsche Bank: Settlement (2016)</h4>
+                                        <p className="text-sm text-red-800 mt-1">Deutsche Bank settled silver manipulation lawsuits and agreed to help expose other banks involved in the scheme. They literally turned state&apos;s evidence.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Multiple Banks: London Fix Manipulation</h4>
-                                        <p className="text-sm text-red-300 mt-1">The &quot;London Fix&quot; price-setting mechanism was found to be rigged, leading to its complete overhaul in 2014. Banks were colluding to set benchmark prices.</p>
+                                        <h4 className="font-bold text-red-700">Multiple Banks: London Fix Manipulation</h4>
+                                        <p className="text-sm text-red-800 mt-1">The &quot;London Fix&quot; price-setting mechanism was found to be rigged, leading to its complete overhaul in 2014. Banks were colluding to set benchmark prices.</p>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@ export default function WhySilverIsCheapPage() {
                         {/* Reason 3: Industrial Pricing */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Factory className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #3: Industrial Users Want Low Prices</h2>
@@ -289,7 +289,7 @@ export default function WhySilverIsCheapPage() {
                         {/* Reason 4: No Central Bank Buying */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Reason #4: Central Banks Don&apos;t Buy Silver</h2>
@@ -376,19 +376,19 @@ export default function WhySilverIsCheapPage() {
 
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Physical Demand Overwhelms Paper</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Physical Demand Overwhelms Paper</h4>
                                     <p className="text-sm text-slate-600">If enough investors demand physical delivery, the paper market breaks. India&apos;s 2024 import surge and retail stacking are moving in this direction.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Industrial Supply Crunch</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Industrial Supply Crunch</h4>
                                     <p className="text-sm text-slate-600">If solar manufacturers can&apos;t get enough silver, they&apos;ll bid prices up regardless of paper market shenanigans. Physical scarcity trumps paper.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Monetary Crisis</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Monetary Crisis</h4>
                                     <p className="text-sm text-slate-600">A dollar crisis, debt default, or banking emergency could trigger a rush to hard assets that overwhelms the paper short sellers.</p>
                                 </div>
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Short Squeeze</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Short Squeeze</h4>
                                     <p className="text-sm text-slate-600">The massive concentrated short position is a coiled spring. If prices rise fast enough, shorts will be forced to cover, accelerating the move.</p>
                                 </div>
                             </div>

@@ -203,7 +203,7 @@ export default function IsSilverGoodInvestmentPage() {
                         {/* Industrial Demand */}
                         <section id="industrial-demand" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Zap className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Industrial Demand: Silver&apos;s Secret Weapon</h2>
@@ -309,7 +309,7 @@ export default function IsSilverGoodInvestmentPage() {
                         {/* Risks */}
                         <section id="risks" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Risks to Consider</h2>
@@ -333,7 +333,7 @@ export default function IsSilverGoodInvestmentPage() {
                         {/* How to Invest */}
                         <section id="how-to-invest" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">How to Invest in Silver</h2>
@@ -347,8 +347,8 @@ export default function IsSilverGoodInvestmentPage() {
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Physical Silver (Coins & Bars)</h4>
                                     <p className="text-sm text-slate-600 mb-3">Direct ownership of silver coins (like American Silver Eagles) or bars. You own the metal itself, with no counterparty risk.</p>
                                     <div className="flex gap-4 text-xs">
-                                        <span className="text-green-400">+ True ownership</span>
-                                        <span className="text-red-400">- Storage & premiums</span>
+                                        <span className="text-green-700">+ True ownership</span>
+                                        <span className="text-red-700">- Storage & premiums</span>
                                     </div>
                                 </div>
 
@@ -356,8 +356,8 @@ export default function IsSilverGoodInvestmentPage() {
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Silver ETFs</h4>
                                     <p className="text-sm text-slate-600 mb-3">Exchange-traded funds like SLV that track the silver price. Easy to buy/sell through a brokerage account.</p>
                                     <div className="flex gap-4 text-xs">
-                                        <span className="text-green-400">+ Liquidity & convenience</span>
-                                        <span className="text-red-400">- Counterparty risk</span>
+                                        <span className="text-green-700">+ Liquidity & convenience</span>
+                                        <span className="text-red-700">- Counterparty risk</span>
                                     </div>
                                 </div>
 
@@ -365,8 +365,8 @@ export default function IsSilverGoodInvestmentPage() {
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Silver Mining Stocks</h4>
                                     <p className="text-sm text-slate-600 mb-3">Shares in companies that mine silver. Offers leverage to silver prices but adds company-specific risk.</p>
                                     <div className="flex gap-4 text-xs">
-                                        <span className="text-green-400">+ Leverage & dividends</span>
-                                        <span className="text-red-400">- Company risk</span>
+                                        <span className="text-green-700">+ Leverage & dividends</span>
+                                        <span className="text-red-700">- Company risk</span>
                                     </div>
                                 </div>
 
@@ -374,8 +374,8 @@ export default function IsSilverGoodInvestmentPage() {
                                     <h4 className="font-bold text-[#B22234] text-lg mb-2">Silver IRA</h4>
                                     <p className="text-sm text-slate-600 mb-3">Hold physical silver in a tax-advantaged retirement account. Combines the benefits of real ownership with IRA tax benefits.</p>
                                     <div className="flex gap-4 text-xs">
-                                        <span className="text-green-400">+ Tax advantages + True ownership</span>
-                                        <span className="text-red-400">- IRS rules & custodian fees</span>
+                                        <span className="text-green-700">+ Tax advantages + True ownership</span>
+                                        <span className="text-red-700">- IRS rules & custodian fees</span>
                                     </div>
                                 </div>
                             </div>
@@ -384,7 +384,7 @@ export default function IsSilverGoodInvestmentPage() {
                         {/* Silver IRA */}
                         <section id="silver-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Sparkles className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Silver IRA Option</h2>

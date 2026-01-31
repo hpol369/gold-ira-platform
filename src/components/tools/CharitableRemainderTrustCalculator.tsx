@@ -192,7 +192,7 @@ export function CharitableRemainderTrustCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
           <Heart className="h-4 w-4" />
           CRT Calculator
         </div>
@@ -212,7 +212,7 @@ export function CharitableRemainderTrustCalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Gift className="h-5 w-5 text-purple-400" />
+                <Gift className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Contribution Details</h3>
             </div>
@@ -267,7 +267,7 @@ export function CharitableRemainderTrustCalculator() {
                     onClick={() => setTrustType("crut")}
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       trustType === "crut"
-                        ? "bg-purple-500/20 border-purple-500 text-purple-400"
+                        ? "bg-purple-500/20 border-purple-500 text-purple-700"
                         : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
                     }`}
                   >
@@ -278,7 +278,7 @@ export function CharitableRemainderTrustCalculator() {
                     onClick={() => setTrustType("crat")}
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       trustType === "crat"
-                        ? "bg-purple-500/20 border-purple-500 text-purple-400"
+                        ? "bg-purple-500/20 border-purple-500 text-purple-700"
                         : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
                     }`}
                   >
@@ -474,10 +474,10 @@ export function CharitableRemainderTrustCalculator() {
           {/* Tax Benefits Summary */}
           <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
             <div className="flex items-center gap-3 mb-6">
-              <Shield className="h-10 w-10 text-purple-400" />
+              <Shield className="h-10 w-10 text-purple-700" />
               <div>
                 <h3 className="text-sm text-slate-500">Immediate Tax Benefits</h3>
-                <div className="text-3xl font-bold text-purple-400">
+                <div className="text-3xl font-bold text-purple-700">
                   {formatCurrency(calculations.totalTaxBenefits)}
                 </div>
               </div>
@@ -616,18 +616,18 @@ export function CharitableRemainderTrustCalculator() {
                 </ul>
               </div>
               <div className="space-y-3">
-                <h4 className="font-semibold text-purple-400">CRUT (Unitrust)</h4>
+                <h4 className="font-semibold text-purple-700">CRUT (Unitrust)</h4>
                 <ul className="space-y-1 text-slate-500">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     % of annual value
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     Inflation protection
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     Can add contributions
                   </li>
                 </ul>

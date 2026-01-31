@@ -153,7 +153,7 @@ export default function StockMarketCrashProtectionPage() {
                         {/* History of Crashes */}
                         <section id="history" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <History className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">A History of Market Crashes</h2>
@@ -174,22 +174,22 @@ export default function StockMarketCrashProtectionPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-slate-900">Dot-Com Crash (2000-2002)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-49%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-49%</td>
                                             <td className="p-4 text-slate-500">7 years</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">Financial Crisis (2007-2009)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-57%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-57%</td>
                                             <td className="p-4 text-slate-500">5.5 years</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">COVID Crash (2020)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34%</td>
                                             <td className="p-4 text-slate-500">6 months</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">2022 Bear Market</td>
-                                            <td className="p-4 text-red-400 font-semibold">-25%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-25%</td>
                                             <td className="p-4 text-slate-500">~2 years</td>
                                         </tr>
                                     </tbody>
@@ -221,19 +221,19 @@ export default function StockMarketCrashProtectionPage() {
                             </p>
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
-                                <h4 className="font-bold text-red-400 text-lg mb-4">The Devastating Math</h4>
-                                <p className="text-red-300 mb-4">Consider two retirees with $1,000,000 portfolios, both withdrawing $40,000/year:</p>
+                                <h4 className="font-bold text-red-700 text-lg mb-4">The Devastating Math</h4>
+                                <p className="text-red-800 mb-4">Consider two retirees with $1,000,000 portfolios, both withdrawing $40,000/year:</p>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl">
-                                        <h5 className="font-semibold text-green-400 mb-2">Retiree A: Crash in Year 20</h5>
+                                        <h5 className="font-semibold text-green-700 mb-2">Retiree A: Crash in Year 20</h5>
                                         <p className="text-sm text-slate-500">Portfolio lasts 30+ years</p>
                                     </div>
                                     <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl">
-                                        <h5 className="font-semibold text-red-400 mb-2">Retiree B: Crash in Year 1</h5>
+                                        <h5 className="font-semibold text-red-700 mb-2">Retiree B: Crash in Year 1</h5>
                                         <p className="text-sm text-slate-500">Portfolio depleted by year 18</p>
                                     </div>
                                 </div>
-                                <p className="text-sm text-red-400 mt-4">Same returns, same withdrawals—but sequence matters enormously.</p>
+                                <p className="text-sm text-red-700 mt-4">Same returns, same withdrawals—but sequence matters enormously.</p>
                             </div>
 
                             <p>
@@ -265,17 +265,17 @@ export default function StockMarketCrashProtectionPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-slate-900">2008 Financial Crisis</td>
-                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+5.5%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-37%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+5.5%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">2020 COVID Crash</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+3.6%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+3.6%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">2022 Bear Market</td>
-                                            <td className="p-4 text-red-400 font-semibold">-18%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-18%</td>
                                             <td className="p-4 text-[#B22234] font-semibold">+0.4%</td>
                                         </tr>
                                     </tbody>
@@ -306,7 +306,7 @@ export default function StockMarketCrashProtectionPage() {
                         {/* Protection Strategies */}
                         <section id="strategies" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Crash Protection Strategies</h2>
@@ -362,7 +362,7 @@ export default function StockMarketCrashProtectionPage() {
                         {/* Action Plan */}
                         <section id="action-plan" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Your Action Plan</h2>

@@ -271,7 +271,7 @@ export function RailroadTier1Calculator() {
                   </div>
 
                   <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <p className="text-blue-300 text-sm">
+                    <p className="text-blue-800 text-sm">
                       <strong>Total Coverage:</strong> {railroadYears + nonRailroadYears}{" "}
                       years
                       {railroadYears + nonRailroadYears >= 35
@@ -393,10 +393,10 @@ export function RailroadTier1Calculator() {
                       <p
                         className={`text-sm ${
                           retirementAge < 67
-                            ? "text-amber-300"
+                            ? "text-amber-800"
                             : retirementAge > 67
-                            ? "text-green-300"
-                            : "text-blue-300"
+                            ? "text-green-800"
+                            : "text-blue-800"
                         }`}
                       >
                         {retirementAge < 67
@@ -503,7 +503,7 @@ export function RailroadTier1Calculator() {
                         />
 
                         <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
-                          <p className="text-amber-300 text-sm">
+                          <p className="text-amber-800 text-sm">
                             <strong>WEP Impact:</strong> If you receive a pension from
                             work not covered by Social Security (e.g., some government
                             positions), your Tier I benefit may be reduced. The maximum
@@ -586,7 +586,7 @@ export function RailroadTier1Calculator() {
                         animate={{ opacity: 1, height: "auto" }}
                         className="bg-red-50 border border-red-200 rounded-lg p-4"
                       >
-                        <p className="text-red-300 text-sm">
+                        <p className="text-red-800 text-sm">
                           <strong>GPO Warning:</strong> If you receive a government
                           pension from non-SS-covered work, your spousal or survivor
                           benefits will be reduced by 2/3 of that pension amount. Your
@@ -597,7 +597,7 @@ export function RailroadTier1Calculator() {
                     )}
 
                     <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                      <p className="text-blue-300 text-sm">
+                      <p className="text-blue-800 text-sm">
                         <strong>Note:</strong> GPO primarily affects spousal and
                         survivor benefits. If you are claiming your own Tier I benefit
                         based on your own work record, GPO does not apply to your

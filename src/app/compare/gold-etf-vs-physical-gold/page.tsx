@@ -270,22 +270,22 @@ export default function GoldEtfVsPhysicalGoldPage() {
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Expense Ratio</td>
                                             <td className="p-4">0.40%</td>
-                                            <td className="p-4 text-green-400">0.25%</td>
+                                            <td className="p-4 text-green-700">0.25%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Assets Under Management</td>
-                                            <td className="p-4 text-green-400">$55+ billion</td>
+                                            <td className="p-4 text-green-700">$55+ billion</td>
                                             <td className="p-4">$28+ billion</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Average Daily Volume</td>
-                                            <td className="p-4 text-green-400">~7 million shares</td>
+                                            <td className="p-4 text-green-700">~7 million shares</td>
                                             <td className="p-4">~5 million shares</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Share Price</td>
                                             <td className="p-4">~$180-200</td>
-                                            <td className="p-4 text-green-400">~$35-40</td>
+                                            <td className="p-4 text-green-700">~$35-40</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Best For</td>

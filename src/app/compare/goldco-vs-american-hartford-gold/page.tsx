@@ -84,7 +84,7 @@ export default function GoldcoVsAHGPage() {
                                             <tr className="border-b border-slate-200">
                                                 <td className="p-4 font-medium text-slate-900">Minimum Investment</td>
                                                 <td className="p-4 text-center">$25,000</td>
-                                                <td className="p-4 text-center text-green-400 font-bold">$5,000</td>
+                                                <td className="p-4 text-center text-green-700 font-bold">$5,000</td>
                                             </tr>
                                             <tr className="border-b border-slate-200 bg-white/5">
                                                 <td className="p-4 font-medium text-slate-900">BBB Rating</td>
@@ -98,18 +98,18 @@ export default function GoldcoVsAHGPage() {
                                             </tr>
                                             <tr className="border-b border-slate-200 bg-white/5">
                                                 <td className="p-4 font-medium text-slate-900">Buyback Guarantee</td>
-                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
+                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
                                             </tr>
                                             <tr className="border-b border-slate-200">
                                                 <td className="p-4 font-medium text-slate-900">Buyback Fees</td>
                                                 <td className="p-4 text-center text-[#B22234]">Varies</td>
-                                                <td className="p-4 text-center text-green-400 font-bold">$0</td>
+                                                <td className="p-4 text-center text-green-700 font-bold">$0</td>
                                             </tr>
                                             <tr className="border-b border-slate-200 bg-white/5">
                                                 <td className="p-4 font-medium text-slate-900">Free Silver Promo</td>
-                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
-                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" /></td>
+                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
+                                                <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
                                             </tr>
                                             <tr className="border-b border-slate-200">
                                                 <td className="p-4 font-medium text-slate-900">Celebrity Endorsement</td>
@@ -134,7 +134,7 @@ export default function GoldcoVsAHGPage() {
                                     <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
                                         <div className="flex items-center gap-3 mb-4">
                                             <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
-                                                <DollarSign className="w-5 h-5 text-green-400" />
+                                                <DollarSign className="w-5 h-5 text-green-700" />
                                             </div>
                                             <h3 className="font-bold text-lg text-[#B22234]">Minimum Investment</h3>
                                         </div>
@@ -146,7 +146,7 @@ export default function GoldcoVsAHGPage() {
                                     <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
                                         <div className="flex items-center gap-3 mb-4">
                                             <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
-                                                <RefreshCw className="w-5 h-5 text-blue-400" />
+                                                <RefreshCw className="w-5 h-5 text-blue-700" />
                                             </div>
                                             <h3 className="font-bold text-lg text-[#B22234]">Buyback Programs</h3>
                                         </div>

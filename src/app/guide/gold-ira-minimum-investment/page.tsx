@@ -131,7 +131,7 @@ export default function GoldIraMinimumInvestmentPage() {
                         {/* Typical Minimums */}
                         <section id="typical-minimums" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Wallet className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Typical Industry Minimums</h2>
@@ -179,7 +179,7 @@ export default function GoldIraMinimumInvestmentPage() {
                         {/* Small Account Problem */}
                         <section id="small-account-problem" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The "Fees Trap" for Small Accounts</h2>
@@ -191,13 +191,13 @@ export default function GoldIraMinimumInvestmentPage() {
                                 Most accounts have valid flat fees of ~$200/year for storage and maintenance.
                             </p>
                             <div className="not-prose my-6 p-6 bg-red-500/10 rounded-xl border border-red-500/20">
-                                <p className="font-bold text-red-400">Fee Impact Example:</p>
-                                <ul className="mt-2 space-y-2 text-red-300">
+                                <p className="font-bold text-red-700">Fee Impact Example:</p>
+                                <ul className="mt-2 space-y-2 text-red-800">
                                     <li><strong>$100,000 Account:</strong> $200 fee = 0.2% (Negligible)</li>
                                     <li><strong>$50,000 Account:</strong> $200 fee = 0.4% (Reasonable)</li>
                                     <li><strong>$5,000 Account:</strong> $200 fee = 4.0% (HIGH)</li>
                                 </ul>
-                                <p className="mt-4 text-sm text-red-400">
+                                <p className="mt-4 text-sm text-red-700">
                                     If your account loses 4% strictly to fees every year, gold would need to skyrocket just for you to break even. This is why we recommend at least $25,000.
                                 </p>
                             </div>

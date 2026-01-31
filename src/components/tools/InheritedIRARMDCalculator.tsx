@@ -495,7 +495,7 @@ export function InheritedIRARMDCalculator() {
               {/* EDB Explanation */}
               {beneficiaryType === "edb" && (
                 <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3">
-                  <p className="text-sm text-blue-300">
+                  <p className="text-sm text-blue-800">
                     <strong>Eligible Designated Beneficiaries include:</strong>
                     <br />- Minor children (until age of majority)
                     <br />- Disabled individuals

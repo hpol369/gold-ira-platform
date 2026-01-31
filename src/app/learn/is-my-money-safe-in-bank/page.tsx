@@ -140,7 +140,7 @@ export default function IsMyMoneySafeInBankPage() {
                         {/* FDIC Section */}
                         <section id="fdic" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">FDIC Insurance Explained</h2>
@@ -154,19 +154,19 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Single Accounts</span>
-                                        <span className="font-semibold text-blue-400">$250,000 per depositor</span>
+                                        <span className="font-semibold text-blue-700">$250,000 per depositor</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Joint Accounts</span>
-                                        <span className="font-semibold text-blue-400">$250,000 per co-owner</span>
+                                        <span className="font-semibold text-blue-700">$250,000 per co-owner</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Retirement Accounts (IRAs)</span>
-                                        <span className="font-semibold text-blue-400">$250,000 per owner</span>
+                                        <span className="font-semibold text-blue-700">$250,000 per owner</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Trust Accounts</span>
-                                        <span className="font-semibold text-blue-400">$250,000 per beneficiary</span>
+                                        <span className="font-semibold text-blue-700">$250,000 per beneficiary</span>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@ export default function IsMyMoneySafeInBankPage() {
                         {/* Real Risks */}
                         <section id="risks" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Real Risks to Your Bank Deposits</h2>
@@ -240,25 +240,25 @@ export default function IsMyMoneySafeInBankPage() {
                                             <td className="p-4 text-[#000080]">2021</td>
                                             <td className="p-4 text-slate-500">0.06%</td>
                                             <td className="p-4 text-slate-500">7.0%</td>
-                                            <td className="p-4 text-red-400 font-semibold">-6.94%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-6.94%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2022</td>
                                             <td className="p-4 text-slate-500">0.30%</td>
                                             <td className="p-4 text-slate-500">6.5%</td>
-                                            <td className="p-4 text-red-400 font-semibold">-6.20%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-6.20%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2023</td>
                                             <td className="p-4 text-slate-500">0.45%</td>
                                             <td className="p-4 text-slate-500">3.4%</td>
-                                            <td className="p-4 text-red-400 font-semibold">-2.95%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-2.95%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2024</td>
                                             <td className="p-4 text-slate-500">4.50%</td>
                                             <td className="p-4 text-slate-500">2.9%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+1.60%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+1.60%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -323,7 +323,7 @@ export default function IsMyMoneySafeInBankPage() {
                         {/* Protection Strategies */}
                         <section id="protection" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Lock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Strategies to Protect Your Money</h2>

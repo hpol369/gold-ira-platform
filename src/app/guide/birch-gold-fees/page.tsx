@@ -186,7 +186,7 @@ export default function BirchGoldFeesPage() {
                                         This is the IRA custodian&apos;s fee for maintaining your account, handling paperwork, and providing quarterly statements. This is slightly higher than the industry average of $75-$80.
                                     </p>
                                     <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
-                                        <p className="text-amber-300 text-sm">
+                                        <p className="text-amber-800 text-sm">
                                             <strong className="text-[#B22234]">Note:</strong> Augusta Precious Metals charges only $80/year for annual maintenance—saving you $20 annually.
                                         </p>
                                     </div>
@@ -205,8 +205,8 @@ export default function BirchGoldFeesPage() {
                                         Your physical gold must be stored at an IRS-approved depository. Birch Gold uses Delaware Depository, a reputable facility. This flat fee applies regardless of how much gold you hold.
                                     </p>
                                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
-                                        <p className="text-red-300 text-sm">
-                                            <strong className="text-red-400">Comparison:</strong> Augusta Precious Metals charges only $100/year for storage—saving you $50 annually on this fee alone.
+                                        <p className="text-red-800 text-sm">
+                                            <strong className="text-red-700">Comparison:</strong> Augusta Precious Metals charges only $100/year for storage—saving you $50 annually on this fee alone.
                                         </p>
                                     </div>
                                 </div>
@@ -238,8 +238,8 @@ export default function BirchGoldFeesPage() {
                                         This is where the real cost is. Birch Gold (like all dealers) charges a spread—the difference between what you pay to buy gold and what they&apos;ll pay when you sell. This is typically 5-8% above spot price for gold coins.
                                     </p>
                                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
-                                        <p className="text-red-300 text-sm">
-                                            <strong className="text-red-400">Important:</strong> Spreads are the largest cost in any Gold IRA and are often not clearly disclosed. Always request a specific price quote before purchasing. Augusta is known for transparent, competitive pricing on spreads.
+                                        <p className="text-red-800 text-sm">
+                                            <strong className="text-red-700">Important:</strong> Spreads are the largest cost in any Gold IRA and are often not clearly disclosed. Always request a specific price quote before purchasing. Augusta is known for transparent, competitive pricing on spreads.
                                         </p>
                                     </div>
                                 </div>
@@ -265,7 +265,7 @@ export default function BirchGoldFeesPage() {
                                         <span className="font-bold text-[#000080]">$150</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/30">
-                                        <span className="text-amber-300 font-medium">First Year Total (excluding spreads)</span>
+                                        <span className="text-amber-800 font-medium">First Year Total (excluding spreads)</span>
                                         <span className="font-bold text-[#B22234]">$300</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
@@ -273,8 +273,8 @@ export default function BirchGoldFeesPage() {
                                         <span className="font-bold text-[#000080]">$250/year</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-green-500/10 rounded-lg border border-green-500/30">
-                                        <span className="text-green-300 font-medium">Ongoing Annual Cost (Augusta)</span>
-                                        <span className="font-bold text-green-400">$180/year</span>
+                                        <span className="text-green-800 font-medium">Ongoing Annual Cost (Augusta)</span>
+                                        <span className="font-bold text-green-700">$180/year</span>
                                     </div>
                                 </div>
                                 <p className="text-slate-600 text-sm">
@@ -300,20 +300,20 @@ export default function BirchGoldFeesPage() {
                                         <tr className="border-b border-white/5">
                                             <td className="p-4 font-medium text-[#000080]">Account Setup</td>
                                             <td className="p-4">$50</td>
-                                            <td className="p-4 text-green-400">$50</td>
+                                            <td className="p-4 text-green-700">$50</td>
                                             <td className="p-4 text-slate-600">$0</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
                                             <td className="p-4 font-medium text-[#000080]">Annual Maintenance</td>
                                             <td className="p-4">$100</td>
-                                            <td className="p-4 text-green-400">$80</td>
-                                            <td className="p-4 text-green-400">$20/year</td>
+                                            <td className="p-4 text-green-700">$80</td>
+                                            <td className="p-4 text-green-700">$20/year</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
                                             <td className="p-4 font-medium text-[#000080]">Annual Storage</td>
                                             <td className="p-4">$150</td>
-                                            <td className="p-4 text-green-400">$100</td>
-                                            <td className="p-4 text-green-400">$50/year</td>
+                                            <td className="p-4 text-green-700">$100</td>
+                                            <td className="p-4 text-green-700">$50/year</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
                                             <td className="p-4 font-medium text-[#000080]">Wire Transfer</td>
@@ -330,8 +330,8 @@ export default function BirchGoldFeesPage() {
                                         <tr className="bg-amber-500/5 border-b border-white/5">
                                             <td className="p-4 font-bold text-[#B22234]">Total Annual Fees</td>
                                             <td className="p-4 font-bold">$250/year</td>
-                                            <td className="p-4 font-bold text-green-400">$180/year</td>
-                                            <td className="p-4 font-bold text-green-400">$70/year</td>
+                                            <td className="p-4 font-bold text-green-700">$180/year</td>
+                                            <td className="p-4 font-bold text-green-700">$70/year</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -346,11 +346,11 @@ export default function BirchGoldFeesPage() {
                             <h2 className="text-3xl font-bold text-[#000080] mb-6">Birch Gold Fees: Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
-                                    <h3 className="font-bold text-green-400 mb-4 flex items-center gap-2">
+                                    <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="h-5 w-5" />
                                         Advantages
                                     </h3>
-                                    <ul className="space-y-3 text-green-300">
+                                    <ul className="space-y-3 text-green-800">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="h-4 w-4 mt-1 shrink-0" />
                                             Low $10,000 minimum (accessible for beginners)
@@ -374,11 +374,11 @@ export default function BirchGoldFeesPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                                    <h3 className="font-bold text-red-400 mb-4 flex items-center gap-2">
+                                    <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
                                         <XCircle className="h-5 w-5" />
                                         Disadvantages
                                     </h3>
-                                    <ul className="space-y-3 text-red-300">
+                                    <ul className="space-y-3 text-red-800">
                                         <li className="flex items-start gap-2">
                                             <XCircle className="h-4 w-4 mt-1 shrink-0" />
                                             $100 annual fee is above average
@@ -426,30 +426,30 @@ export default function BirchGoldFeesPage() {
                                         <p className="text-slate-600 text-sm">10-Year Savings</p>
                                     </div>
                                     <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-4 text-center">
-                                        <CheckCircle2 className="h-8 w-8 text-green-400 mx-auto mb-2" />
+                                        <CheckCircle2 className="h-8 w-8 text-green-700 mx-auto mb-2" />
                                         <p className="text-2xl font-bold text-[#000080] mb-1">A+ BBB</p>
                                         <p className="text-slate-600 text-sm">Rating & 0 Complaints</p>
                                     </div>
                                 </div>
                                 <ul className="space-y-3 text-slate-600 mb-8">
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="h-5 w-5 text-green-700 mt-0.5 shrink-0" />
                                         <span><strong className="text-[#000080]">Lower annual fees:</strong> $180/year vs Birch Gold&apos;s $250/year</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="h-5 w-5 text-green-700 mt-0.5 shrink-0" />
                                         <span><strong className="text-[#000080]">Transparent pricing:</strong> Augusta is known for clear, upfront spread disclosure</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="h-5 w-5 text-green-700 mt-0.5 shrink-0" />
                                         <span><strong className="text-[#000080]">Education-first approach:</strong> Free one-on-one web conference to learn before you buy</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="h-5 w-5 text-green-700 mt-0.5 shrink-0" />
                                         <span><strong className="text-[#000080]">Lifetime support:</strong> Dedicated account representative for life</span>
                                     </li>
                                     <li className="flex items-start gap-3">
-                                        <CheckCircle2 className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="h-5 w-5 text-green-700 mt-0.5 shrink-0" />
                                         <span><strong className="text-[#000080]">No pushy sales:</strong> Never pressured to buy—they let the education speak for itself</span>
                                     </li>
                                 </ul>

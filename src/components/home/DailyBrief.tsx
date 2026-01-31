@@ -177,7 +177,7 @@ export function DailyBrief() {
                 <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 pointer-events-none"></div>
 
                 <h3 className="text-xl font-bold text-white mb-6 relative z-10 flex items-center gap-2">
-                  <TrendingUp className="h-5 w-5 text-amber-400" />
+                  <TrendingUp className="h-5 w-5 text-amber-700" />
                   Live Spot Prices
                 </h3>
 

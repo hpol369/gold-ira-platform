@@ -104,7 +104,7 @@ export default function SilverShortagePage() {
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-1.5 text-sm font-semibold text-red-400 mb-6 border border-red-500/20">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-1.5 text-sm font-semibold text-red-700 mb-6 border border-red-500/20">
                             <AlertTriangle className="w-4 h-4" />
                             Supply Crisis Escalating
                         </div>
@@ -150,7 +150,7 @@ export default function SilverShortagePage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <TrendingDown className="w-8 h-8 text-red-400 mb-4" />
+                                    <TrendingDown className="w-8 h-8 text-red-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">COMEX Inventory Drain</h4>
                                     <p className="text-sm text-slate-600">COMEX registered silver (available for delivery) has declined dramatically from peak levels. The drain accelerated after the 2021 silver squeeze movement began.</p>
                                 </div>
@@ -165,7 +165,7 @@ export default function SilverShortagePage() {
                                     <p className="text-sm text-slate-600">Major dealers regularly report being sold out of popular products. Wait times for silver Eagles and other coins have extended to weeks or months during demand surges.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-purple-500/10 border border-purple-500/20">
-                                    <Factory className="w-8 h-8 text-purple-400 mb-4" />
+                                    <Factory className="w-8 h-8 text-purple-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Mint Rationing</h4>
                                     <p className="text-sm text-slate-600">The US Mint has implemented allocation programs for Silver Eagles, limiting how many dealers can purchase. This is a direct admission of insufficient supply.</p>
                                 </div>
@@ -184,12 +184,12 @@ export default function SilverShortagePage() {
                                     <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Annual Supply/Demand</td>
-                                            <td className="p-4 text-red-400 font-semibold">Deficit 200M+ oz</td>
+                                            <td className="p-4 text-red-700 font-semibold">Deficit 200M+ oz</td>
                                             <td className="p-4">Deficit growing</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">COMEX Registered Silver</td>
-                                            <td className="p-4 text-red-400 font-semibold">Multi-year lows</td>
+                                            <td className="p-4 text-red-700 font-semibold">Multi-year lows</td>
                                             <td className="p-4">Declining</td>
                                         </tr>
                                         <tr>
@@ -199,7 +199,7 @@ export default function SilverShortagePage() {
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">Industrial Demand</td>
-                                            <td className="p-4 text-green-400 font-semibold">Record highs</td>
+                                            <td className="p-4 text-green-700 font-semibold">Record highs</td>
                                             <td className="p-4">Accelerating</td>
                                         </tr>
                                         <tr>
@@ -238,7 +238,7 @@ export default function SilverShortagePage() {
 
                                     <div className="flex gap-4 items-start">
                                         <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center shrink-0">
-                                            <Car className="w-6 h-6 text-green-400" />
+                                            <Car className="w-6 h-6 text-green-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-slate-900 mb-1">Electric Vehicles</h5>
@@ -248,7 +248,7 @@ export default function SilverShortagePage() {
 
                                     <div className="flex gap-4 items-start">
                                         <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0">
-                                            <Cpu className="w-6 h-6 text-blue-400" />
+                                            <Cpu className="w-6 h-6 text-blue-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-slate-900 mb-1">Electronics &amp; 5G</h5>
@@ -258,7 +258,7 @@ export default function SilverShortagePage() {
 
                                     <div className="flex gap-4 items-start">
                                         <div className="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0">
-                                            <ShieldCheck className="w-6 h-6 text-purple-400" />
+                                            <ShieldCheck className="w-6 h-6 text-purple-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-slate-900 mb-1">Medical &amp; Antimicrobial</h5>
@@ -313,7 +313,7 @@ export default function SilverShortagePage() {
                                     <div className="text-slate-600 text-sm">Silver Eagle sales at US Mint (allocation limits in place)</div>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200 text-center">
-                                    <div className="text-4xl font-bold text-green-400 mb-2">Global</div>
+                                    <div className="text-4xl font-bold text-green-700 mb-2">Global</div>
                                     <div className="text-slate-600 text-sm">India silver imports at all-time highs</div>
                                 </div>
                             </div>
@@ -411,7 +411,7 @@ export default function SilverShortagePage() {
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Investment Mania + Shortage</td>
                                             <td className="p-4">$75-100+ (2011-style spike)</td>
-                                            <td className="p-4 text-green-400">Possible</td>
+                                            <td className="p-4 text-green-700">Possible</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">Paper Market Break</td>

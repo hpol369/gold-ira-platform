@@ -110,7 +110,7 @@ export default function WillSilverHit50Page() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-green-500/20 text-green-400 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
+                            <span className="bg-green-500/20 text-green-700 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
                             <span className="text-slate-600 text-sm">60 monthly searches | Easy to rank</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
@@ -154,7 +154,7 @@ export default function WillSilverHit50Page() {
                         {/* Technical Levels */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Technical Levels: The Path to $50</h2>
@@ -176,14 +176,14 @@ export default function WillSilverHit50Page() {
                                         {technicalLevels.map((level, idx) => (
                                             <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                                 <td className={`p-4 font-bold text-lg ${
-                                                    level.level === '$50.00' ? 'text-green-400' :
+                                                    level.level === '$50.00' ? 'text-green-700' :
                                                     level.level === '$49.45' || level.level === '$48.70' ? 'text-[#B22234]' :
                                                     'text-slate-900'
                                                 }`}>{level.level}</td>
                                                 <td className="p-4">
                                                     <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                        level.type === 'Target' ? 'bg-green-500/20 text-green-400' :
-                                                        'bg-red-500/20 text-red-400'
+                                                        level.type === 'Target' ? 'bg-green-500/20 text-green-700' :
+                                                        'bg-red-500/20 text-red-700'
                                                     }`}>
                                                         {level.type}
                                                     </span>
@@ -213,7 +213,7 @@ export default function WillSilverHit50Page() {
                                         <div className="w-1/6 h-1/2 border-r-2 border-dashed border-green-500"></div>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-600">The multi-year cup (2011-2020) and handle (2020-present) pattern has a measured move target of <strong className="text-green-400">$50-55</strong>. This is a powerful bullish formation.</p>
+                                <p className="text-sm text-slate-600">The multi-year cup (2011-2020) and handle (2020-present) pattern has a measured move target of <strong className="text-green-700">$50-55</strong>. This is a powerful bullish formation.</p>
                             </div>
                         </section>
 
@@ -236,8 +236,8 @@ export default function WillSilverHit50Page() {
                                             <h4 className="font-bold text-slate-900">{item.catalyst}</h4>
                                             <div className="flex items-center gap-3">
                                                 <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                    item.impact === 'Very High' ? 'bg-green-500/30 text-green-400' :
-                                                    item.impact === 'High' ? 'bg-green-500/20 text-green-400' :
+                                                    item.impact === 'Very High' ? 'bg-green-500/30 text-green-700' :
+                                                    item.impact === 'High' ? 'bg-green-500/20 text-green-700' :
                                                     'bg-[#B22234]/20 text-[#B22234]'
                                                 }`}>
                                                     {item.impact} Impact
@@ -258,7 +258,7 @@ export default function WillSilverHit50Page() {
                         {/* Timeline */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Timeline: When Could Silver Hit $50?</h2>
@@ -269,7 +269,7 @@ export default function WillSilverHit50Page() {
                                 <div className="space-y-6">
                                     <div>
                                         <div className="flex items-center justify-between mb-2">
-                                            <span className="font-bold text-green-400">Aggressive: Late 2026</span>
+                                            <span className="font-bold text-green-700">Aggressive: Late 2026</span>
                                             <span className="text-xs text-slate-600">20-25% probability</span>
                                         </div>
                                         <div className="w-full bg-slate-100 rounded-full h-3">
@@ -308,7 +308,7 @@ export default function WillSilverHit50Page() {
                         {/* What Happens After $50 */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">What Happens If Silver Breaks $50?</h2>
@@ -324,7 +324,7 @@ export default function WillSilverHit50Page() {
                             </ul>
 
                             <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
-                                <h4 className="font-bold text-green-400 mb-4">$50 as a Launch Pad</h4>
+                                <h4 className="font-bold text-green-700 mb-4">$50 as a Launch Pad</h4>
                                 <p className="text-slate-600 mb-4">In both 1980 and 2011, silver rallied sharply before hitting resistance near $50. The difference this time could be:</p>
                                 <ul className="space-y-2 text-sm text-slate-600">
                                     <li>Structural supply deficits (not speculation-driven)</li>

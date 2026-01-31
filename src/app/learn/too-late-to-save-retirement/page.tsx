@@ -147,7 +147,7 @@ export default function TooLateToSaveRetirementPage() {
                         <p className="text-xl text-slate-600 leading-relaxed mb-6">
                             <span className="text-[#B22234] font-semibold">30 years of early mornings. Overtime. Skipped vacations.</span> Your $500K-$1M nest egg proves you did everything right. Now the only question is: how do you make sure Wall Street doesn&apos;t take it away in the final stretch?
                         </p>
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-700 font-semibold text-sm">
                             <Heart className="h-4 w-4" />
                             For Factory Workers, Nurses, Teachers, Union Members & Trades
                         </div>
@@ -170,7 +170,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Hope Section */}
                         <section id="hope" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Sparkles className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">First: You&apos;ve Already Won the Hard Part</h2>
@@ -188,11 +188,11 @@ export default function TooLateToSaveRetirementPage() {
                                 <h4 className="font-bold text-slate-900 text-lg mb-4">The Reality for Workers Like You</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                        <div className="text-3xl font-bold text-green-400 mb-2">$672K</div>
+                                        <div className="text-3xl font-bold text-green-700 mb-2">$672K</div>
                                         <p className="text-sm text-slate-500">Average savings for disciplined blue-collar workers at 58. You&apos;re in good company.</p>
                                     </div>
                                     <div className="bg-red-500/10 p-4 rounded-xl border border-red-500/20">
-                                        <div className="text-3xl font-bold text-red-400 mb-2">-57%</div>
+                                        <div className="text-3xl font-bold text-red-700 mb-2">-57%</div>
                                         <p className="text-sm text-slate-500">How much the market dropped in 2008. Turning $672K into $289K overnight.</p>
                                     </div>
                                     <div className="bg-amber-500/10 p-4 rounded-xl border border-amber-500/20">
@@ -200,7 +200,7 @@ export default function TooLateToSaveRetirementPage() {
                                         <p className="text-sm text-slate-500">How long it took to recover. Can your body wait that long?</p>
                                     </div>
                                     <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                        <div className="text-3xl font-bold text-green-400 mb-2">+5.5%</div>
+                                        <div className="text-3xl font-bold text-green-700 mb-2">+5.5%</div>
                                         <p className="text-sm text-slate-500">What gold did during that same 2008 crash. Protection when you need it most.</p>
                                     </div>
                                 </div>
@@ -238,19 +238,19 @@ export default function TooLateToSaveRetirementPage() {
                                         <tr>
                                             <td className="p-4 text-slate-900">401(k) / 403(b)</td>
                                             <td className="p-4 text-slate-500">$23,000</td>
-                                            <td className="p-4 text-green-400 font-semibold">+$7,500</td>
+                                            <td className="p-4 text-green-700 font-semibold">+$7,500</td>
                                             <td className="p-4 text-[#B22234] font-bold">$30,500</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">Traditional/Roth IRA</td>
                                             <td className="p-4 text-slate-500">$7,000</td>
-                                            <td className="p-4 text-green-400 font-semibold">+$1,000</td>
+                                            <td className="p-4 text-green-700 font-semibold">+$1,000</td>
                                             <td className="p-4 text-[#B22234] font-bold">$8,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">SIMPLE IRA</td>
                                             <td className="p-4 text-slate-500">$16,000</td>
-                                            <td className="p-4 text-green-400 font-semibold">+$3,500</td>
+                                            <td className="p-4 text-green-700 font-semibold">+$3,500</td>
                                             <td className="p-4 text-[#B22234] font-bold">$19,500</td>
                                         </tr>
                                     </tbody>
@@ -269,7 +269,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Social Security Timing */}
                         <section id="social-security" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Strategy #2: Maximize Social Security Timing</h2>
@@ -288,8 +288,8 @@ export default function TooLateToSaveRetirementPage() {
                                             <span className="text-slate-500 text-sm ml-2">(earliest)</span>
                                         </div>
                                         <div className="text-right">
-                                            <div className="text-red-400 font-bold">$1,400/month</div>
-                                            <div className="text-xs text-red-400">30% reduction</div>
+                                            <div className="text-red-700 font-bold">$1,400/month</div>
+                                            <div className="text-xs text-red-700">30% reduction</div>
                                         </div>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/20">
@@ -308,8 +308,8 @@ export default function TooLateToSaveRetirementPage() {
                                             <span className="text-slate-500 text-sm ml-2">(maximum)</span>
                                         </div>
                                         <div className="text-right">
-                                            <div className="text-green-400 font-bold">$2,480/month</div>
-                                            <div className="text-xs text-green-400">24% increase</div>
+                                            <div className="text-green-700 font-bold">$2,480/month</div>
+                                            <div className="text-xs text-green-700">24% increase</div>
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +326,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Lifestyle Adjustments */}
                         <section id="lifestyle" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Home className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Strategy #3: Lifestyle Adjustments & Downsizing</h2>
@@ -452,7 +452,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Age-Specific Sections */}
                         <section id="age-50" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Starting at 50: Your 15-Year Sprint</h2>
@@ -463,27 +463,27 @@ export default function TooLateToSaveRetirementPage() {
                             </p>
 
                             <div className="bg-slate-50 rounded-2xl p-6 border border-blue-500/20 not-prose my-6">
-                                <h4 className="font-bold text-blue-400 mb-4">The 50-Year-Old Action Plan</h4>
+                                <h4 className="font-bold text-blue-700 mb-4">The 50-Year-Old Action Plan</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-blue-700 flex-shrink-0 mt-0.5" />
                                         <span>Max out 401(k) with catch-up: <strong className="text-slate-900">$30,500/year</strong></span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-blue-700 flex-shrink-0 mt-0.5" />
                                         <span>Max out IRA with catch-up: <strong className="text-slate-900">$8,000/year</strong></span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-blue-700 flex-shrink-0 mt-0.5" />
                                         <span>Add 10-15% to Gold IRA for protection</span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-blue-700 flex-shrink-0 mt-0.5" />
                                         <span>Plan to work until 67 and delay Social Security</span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                                        <span>15 years at $38,500/year + 7% returns = <strong className="text-green-400">$400,000-$600,000</strong></span>
+                                        <CheckCircle2 className="h-5 w-5 text-blue-700 flex-shrink-0 mt-0.5" />
+                                        <span>15 years at $38,500/year + 7% returns = <strong className="text-green-700">$400,000-$600,000</strong></span>
                                     </li>
                                 </ul>
                             </div>
@@ -495,7 +495,7 @@ export default function TooLateToSaveRetirementPage() {
 
                         <section id="age-55" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Starting at 55: Your 10-Year Power Play</h2>
@@ -506,27 +506,27 @@ export default function TooLateToSaveRetirementPage() {
                             </p>
 
                             <div className="bg-slate-50 rounded-2xl p-6 border border-purple-500/20 not-prose my-6">
-                                <h4 className="font-bold text-purple-400 mb-4">The 55-Year-Old Action Plan</h4>
+                                <h4 className="font-bold text-purple-700 mb-4">The 55-Year-Old Action Plan</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
                                         <span>Max contributions: <strong className="text-slate-900">$38,500/year possible</strong></span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
                                         <span>Seriously consider downsizing your home now</span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
                                         <span>Plan for part-time work in early retirement</span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                                        <CheckCircle2 className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
                                         <span>Allocate 15-20% to Gold IRA for crash protection</span>
                                     </li>
                                     <li className="flex items-start gap-3 text-slate-600">
-                                        <CheckCircle2 className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
-                                        <span>10 years at max savings = <strong className="text-green-400">$250,000-$350,000</strong></span>
+                                        <CheckCircle2 className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
+                                        <span>10 years at max savings = <strong className="text-green-700">$250,000-$350,000</strong></span>
                                     </li>
                                 </ul>
                             </div>
@@ -616,18 +616,18 @@ export default function TooLateToSaveRetirementPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-slate-900">2008 Financial Crisis</td>
-                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+5.5%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-37%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+5.5%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">2020 COVID Crash</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+25%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+25%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">2022 Bear Market</td>
-                                            <td className="p-4 text-red-400 font-semibold">-19%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+0.4%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-19%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+0.4%</td>
                                         </tr>
                                     </tbody>
                                 </table>

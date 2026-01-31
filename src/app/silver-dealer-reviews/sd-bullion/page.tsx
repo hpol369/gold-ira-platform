@@ -132,7 +132,7 @@ export default function SDBullionReviewPage() {
                             <span>/</span>
                             <span>SD Bullion</span>
                         </div>
-                        <div className="inline-block bg-green-500/20 text-green-400 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-green-500/30">
+                        <div className="inline-block bg-green-500/20 text-green-700 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-green-500/30">
                             High CPC Keyword: $1.90
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
@@ -159,7 +159,7 @@ export default function SDBullionReviewPage() {
                     <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 md:p-8">
                         <div className="grid md:grid-cols-3 gap-8 items-center">
                             <div className="md:col-span-2">
-                                <div className="flex items-center gap-2 text-green-400 font-semibold text-sm mb-2">
+                                <div className="flex items-center gap-2 text-green-700 font-semibold text-sm mb-2">
                                     <DollarSign className="w-4 h-4" />
                                     BEST FOR BUDGET STACKERS
                                 </div>
@@ -172,7 +172,7 @@ export default function SDBullionReviewPage() {
                                 <div className="text-5xl font-bold text-slate-900 mb-2">4.6</div>
                                 <StarRating rating={4.6} />
                                 <div className="mt-4 pt-4 border-t border-green-500/30">
-                                    <div className="flex items-center justify-center gap-2 text-green-400">
+                                    <div className="flex items-center justify-center gap-2 text-green-700">
                                         <CheckCircle className="w-5 h-5" />
                                         <span className="font-semibold">Recommended</span>
                                     </div>
@@ -208,7 +208,7 @@ export default function SDBullionReviewPage() {
                                     <div className="text-sm text-slate-600">BBB Rating</div>
                                 </div>
                                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                    <div className="text-2xl font-bold text-green-400">Lowest</div>
+                                    <div className="text-2xl font-bold text-green-700">Lowest</div>
                                     <div className="text-sm text-slate-600">Industry Premiums</div>
                                 </div>
                             </div>
@@ -243,7 +243,7 @@ export default function SDBullionReviewPage() {
 
                             <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
-                                    <Percent className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                                    <Percent className="w-5 h-5 text-green-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-slate-900 mb-2">Real Price Comparison</h4>
                                         <p className="text-sm text-slate-600 mb-4">
@@ -251,7 +251,7 @@ export default function SDBullionReviewPage() {
                                         </p>
                                         <div className="space-y-2">
                                             <div className="flex justify-between items-center">
-                                                <span className="text-green-400 font-semibold">SD Bullion:</span>
+                                                <span className="text-green-700 font-semibold">SD Bullion:</span>
                                                 <span className="text-slate-900 font-bold">$4-5 over spot</span>
                                             </div>
                                             <div className="flex justify-between items-center">
@@ -300,17 +300,17 @@ export default function SDBullionReviewPage() {
 
                         <div className="grid md:grid-cols-3 gap-4 my-8">
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Truck className="w-8 h-8 text-blue-400 mx-auto mb-3" />
+                                <Truck className="w-8 h-8 text-blue-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Free Shipping</div>
                                 <div className="text-sm text-slate-600">Orders over $199</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Clock className="w-8 h-8 text-green-400 mx-auto mb-3" />
+                                <Clock className="w-8 h-8 text-green-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Processing</div>
                                 <div className="text-sm text-slate-600">1-5 business days</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Shield className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+                                <Shield className="w-8 h-8 text-purple-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Fully Insured</div>
                                 <div className="text-sm text-slate-600">Every shipment</div>
                             </div>
@@ -426,7 +426,7 @@ export default function SDBullionReviewPage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">CC Fees</span>
-                                        <span className="text-green-400 font-bold">Often None</span>
+                                        <span className="text-green-700 font-bold">Often None</span>
                                     </div>
                                 </div>
                             </div>

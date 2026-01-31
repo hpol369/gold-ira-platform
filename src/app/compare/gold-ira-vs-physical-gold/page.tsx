@@ -259,7 +259,7 @@ export default function GoldIraVsPhysicalGoldPage() {
                                         </tr>
                                         <tr className="bg-amber-500/10">
                                             <td className="p-4 font-bold text-[#B22234]">Winner</td>
-                                            <td className="p-4 font-bold text-green-400">Better for long-term</td>
+                                            <td className="p-4 font-bold text-green-700">Better for long-term</td>
                                             <td className="p-4">Simpler but higher tax burden</td>
                                         </tr>
                                     </tbody>
@@ -347,10 +347,10 @@ export default function GoldIraVsPhysicalGoldPage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-green-500/10 border border-green-500/30">
-                                    <ShieldCheck className="w-6 h-6 text-green-400 shrink-0 mt-1" />
+                                    <ShieldCheck className="w-6 h-6 text-green-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-green-400">Choose a Gold IRA if...</h4>
-                                        <ul className="text-sm text-green-300 mt-2 space-y-1">
+                                        <h4 className="font-bold text-green-700">Choose a Gold IRA if...</h4>
+                                        <ul className="text-sm text-green-800 mt-2 space-y-1">
                                             <li>• Your primary goal is retirement savings</li>
                                             <li>• You want tax-advantaged growth</li>
                                             <li>• You prefer professional security and insurance</li>
@@ -360,10 +360,10 @@ export default function GoldIraVsPhysicalGoldPage() {
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-blue-500/10 border border-blue-500/30">
-                                    <Lock className="w-6 h-6 text-blue-400 shrink-0 mt-1" />
+                                    <Lock className="w-6 h-6 text-blue-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-blue-400">Choose Physical Gold if...</h4>
-                                        <ul className="text-sm text-blue-300 mt-2 space-y-1">
+                                        <h4 className="font-bold text-blue-700">Choose Physical Gold if...</h4>
+                                        <ul className="text-sm text-blue-800 mt-2 space-y-1">
                                             <li>• You want immediate, direct access to your gold</li>
                                             <li>• Emergency preparedness is a priority</li>
                                             <li>• You value maximum privacy</li>

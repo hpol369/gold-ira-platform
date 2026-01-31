@@ -141,7 +141,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 1. Starting Too Late */}
                         <section id="starting-late" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. Starting Too Late</h2>
@@ -163,7 +163,7 @@ export default function RetirementPlanningMistakesPage() {
                                         <tr>
                                             <td className="p-4 text-[#000080]">25</td>
                                             <td className="p-4 text-slate-500">$500</td>
-                                            <td className="p-4 text-green-400 font-semibold">$1,199,000</td>
+                                            <td className="p-4 text-green-700 font-semibold">$1,199,000</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">35</td>
@@ -173,7 +173,7 @@ export default function RetirementPlanningMistakesPage() {
                                         <tr>
                                             <td className="p-4 text-[#000080]">45</td>
                                             <td className="p-4 text-slate-500">$500</td>
-                                            <td className="p-4 text-red-400 font-semibold">$246,000</td>
+                                            <td className="p-4 text-red-700 font-semibold">$246,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -229,7 +229,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 4. Sequence of Returns */}
                         <section id="sequence" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. Ignoring Sequence of Returns Risk</h2>
@@ -248,7 +248,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 5. Healthcare */}
                         <section id="healthcare" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Underestimating Healthcare Costs</h2>
@@ -279,7 +279,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 6. Social Security */}
                         <section id="social-security" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">6. Claiming Social Security Too Early</h2>
@@ -314,7 +314,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 8. Withdrawal Rate */}
                         <section id="withdrawal" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">8. Using the Wrong Withdrawal Rate</h2>

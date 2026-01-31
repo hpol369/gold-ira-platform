@@ -223,7 +223,7 @@ export default function Convert401kToSilverPage() {
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-400/30 rounded-full text-green-300 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-400/30 rounded-full text-green-800 font-semibold text-sm mb-6">
                             <TrendingUp className="h-4 w-4" />
                             LOW COMPETITION KEYWORD
                         </div>
@@ -263,7 +263,7 @@ export default function Convert401kToSilverPage() {
                                 return (
                                     <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
                                         <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <Icon className="h-6 w-6 text-green-400" />
+                                            <Icon className="h-6 w-6 text-green-700" />
                                         </div>
                                         <h3 className="font-bold text-slate-900 mb-2">{benefit.benefit}</h3>
                                         <p className="text-sm text-slate-600">{benefit.description}</p>
@@ -292,9 +292,9 @@ export default function Convert401kToSilverPage() {
                                 >
                                     <div className="flex items-start gap-4">
                                         {item.eligible ? (
-                                            <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0 mt-1" />
+                                            <CheckCircle2 className="h-6 w-6 text-green-700 flex-shrink-0 mt-1" />
                                         ) : (
-                                            <AlertTriangle className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+                                            <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                         )}
                                         <div>
                                             <div className="flex items-center gap-3 mb-2">
@@ -365,13 +365,13 @@ export default function Convert401kToSilverPage() {
                             {commonMistakes.map((item, index) => (
                                 <div key={index} className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
                                     <div className="flex items-start gap-4">
-                                        <AlertTriangle className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+                                        <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                         <div className="flex-1">
                                             <h3 className="font-bold text-slate-900 mb-2">{item.mistake}</h3>
-                                            <p className="text-red-300 text-sm mb-3">
+                                            <p className="text-red-800 text-sm mb-3">
                                                 <strong>Consequence:</strong> {item.consequence}
                                             </p>
-                                            <p className="text-green-400 text-sm">
+                                            <p className="text-green-700 text-sm">
                                                 <strong>Solution:</strong> {item.solution}
                                             </p>
                                         </div>

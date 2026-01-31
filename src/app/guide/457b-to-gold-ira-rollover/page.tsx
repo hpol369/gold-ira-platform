@@ -158,16 +158,16 @@ export default function Page457bRolloverPage() {
                             </p>
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-6">
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <h4 className="font-bold text-red-400 mb-3">401(k) / 403(b) / IRA</h4>
-                                    <ul className="space-y-2 text-red-300 text-sm">
+                                    <h4 className="font-bold text-red-700 mb-3">401(k) / 403(b) / IRA</h4>
+                                    <ul className="space-y-2 text-red-800 text-sm">
                                         <li>Withdraw before 59½ = 10% penalty</li>
                                         <li>Plus regular income tax</li>
                                         <li>Limited exceptions (hardship, etc.)</li>
                                     </ul>
                                 </div>
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Governmental 457(b)</h4>
-                                    <ul className="space-y-2 text-green-300 text-sm">
+                                    <h4 className="font-bold text-green-700 mb-3">Governmental 457(b)</h4>
+                                    <ul className="space-y-2 text-green-800 text-sm">
                                         <li>Withdraw at any age = NO penalty</li>
                                         <li>Only regular income tax owed</li>
                                         <li>Access money after separation</li>
@@ -187,11 +187,11 @@ export default function Page457bRolloverPage() {
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3 flex items-center gap-2">
+                                    <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         You Can Roll Over If:
                                     </h4>
-                                    <ul className="space-y-2 text-green-300 text-sm">
+                                    <ul className="space-y-2 text-green-800 text-sm">
                                         <li>You&apos;ve separated from service (retired, quit, laid off)</li>
                                         <li>You&apos;re still employed but 59½ or older (some plans)</li>
                                         <li>You have a governmental 457(b) plan</li>
@@ -199,11 +199,11 @@ export default function Page457bRolloverPage() {
                                     </ul>
                                 </div>
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <h4 className="font-bold text-red-400 mb-3 flex items-center gap-2">
+                                    <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         You Probably Can&apos;t If:
                                     </h4>
-                                    <ul className="space-y-2 text-red-300 text-sm">
+                                    <ul className="space-y-2 text-red-800 text-sm">
                                         <li>You&apos;re under 59½ AND still working</li>
                                         <li>You have a non-governmental 457(b)</li>
                                         <li>Your plan restricts in-service distributions</li>
@@ -268,8 +268,8 @@ export default function Page457bRolloverPage() {
                                     <thead>
                                         <tr className="border-b border-slate-200">
                                             <th className="text-left p-4 text-[#000080] font-bold">Feature</th>
-                                            <th className="text-left p-4 text-green-400 font-bold">Governmental 457(b)</th>
-                                            <th className="text-left p-4 text-amber-400 font-bold">Non-Governmental 457(b)</th>
+                                            <th className="text-left p-4 text-green-700 font-bold">Governmental 457(b)</th>
+                                            <th className="text-left p-4 text-amber-700 font-bold">Non-Governmental 457(b)</th>
                                         </tr>
                                     </thead>
                                     <tbody className="text-slate-600">
@@ -280,23 +280,23 @@ export default function Page457bRolloverPage() {
                                         </tr>
                                         <tr className="border-b border-white/5">
                                             <td className="p-4">Rollover to IRA?</td>
-                                            <td className="p-4 text-green-400">Yes</td>
-                                            <td className="p-4 text-red-400">Generally No</td>
+                                            <td className="p-4 text-green-700">Yes</td>
+                                            <td className="p-4 text-red-700">Generally No</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
                                             <td className="p-4">Early withdrawal penalty?</td>
-                                            <td className="p-4 text-green-400">No</td>
-                                            <td className="p-4 text-green-400">No</td>
+                                            <td className="p-4 text-green-700">No</td>
+                                            <td className="p-4 text-green-700">No</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
                                             <td className="p-4">Assets protected in bankruptcy?</td>
-                                            <td className="p-4 text-green-400">Yes (held in trust)</td>
-                                            <td className="p-4 text-red-400">No (employer&apos;s asset)</td>
+                                            <td className="p-4 text-green-700">Yes (held in trust)</td>
+                                            <td className="p-4 text-red-700">No (employer&apos;s asset)</td>
                                         </tr>
                                         <tr className="border-b border-white/5">
                                             <td className="p-4">Can roll to Gold IRA?</td>
-                                            <td className="p-4 text-green-400">Yes</td>
-                                            <td className="p-4 text-red-400">No</td>
+                                            <td className="p-4 text-green-700">Yes</td>
+                                            <td className="p-4 text-red-700">No</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -330,31 +330,31 @@ export default function Page457bRolloverPage() {
                             <h2>Common Mistakes</h2>
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Taking an indirect rollover</h4>
-                                        <p className="text-sm text-red-300 mt-1">If the check is made out to you, 20% is withheld for taxes. Always request a direct trustee-to-trustee transfer.</p>
+                                        <h4 className="font-bold text-red-700">Taking an indirect rollover</h4>
+                                        <p className="text-sm text-red-800 mt-1">If the check is made out to you, 20% is withheld for taxes. Always request a direct trustee-to-trustee transfer.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Not realizing IRA rules apply after rollover</h4>
-                                        <p className="text-sm text-red-300 mt-1">Your 457(b)&apos;s penalty-free withdrawals disappear once in an IRA. If you&apos;re under 59½ and might need the money, consider leaving some in the 457(b).</p>
+                                        <h4 className="font-bold text-red-700">Not realizing IRA rules apply after rollover</h4>
+                                        <p className="text-sm text-red-800 mt-1">Your 457(b)&apos;s penalty-free withdrawals disappear once in an IRA. If you&apos;re under 59½ and might need the money, consider leaving some in the 457(b).</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Assuming all 457(b)s can roll over</h4>
-                                        <p className="text-sm text-red-300 mt-1">Non-governmental 457(b) plans generally cannot be rolled to an IRA. Verify your plan type first.</p>
+                                        <h4 className="font-bold text-red-700">Assuming all 457(b)s can roll over</h4>
+                                        <p className="text-sm text-red-800 mt-1">Non-governmental 457(b) plans generally cannot be rolled to an IRA. Verify your plan type first.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Forgetting about your 401(a) or 403(b)</h4>
-                                        <p className="text-sm text-red-300 mt-1">Many government employees have multiple retirement accounts. Don&apos;t forget to review and potentially roll over all eligible accounts.</p>
+                                        <h4 className="font-bold text-red-700">Forgetting about your 401(a) or 403(b)</h4>
+                                        <p className="text-sm text-red-800 mt-1">Many government employees have multiple retirement accounts. Don&apos;t forget to review and potentially roll over all eligible accounts.</p>
                                     </div>
                                 </div>
                             </div>

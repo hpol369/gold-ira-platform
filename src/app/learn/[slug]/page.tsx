@@ -171,11 +171,11 @@ const iconMap: Record<string, LucideIcon> = {
 
 // Color classes for icons
 const iconColorClasses: Record<IconColor, string> = {
-  red: "text-red-400 bg-red-500/20",
-  amber: "text-amber-400 bg-amber-500/20",
-  green: "text-green-400 bg-green-500/20",
-  blue: "text-blue-400 bg-blue-500/20",
-  purple: "text-purple-400 bg-purple-500/20",
+  red: "text-red-700 bg-red-500/20",
+  amber: "text-amber-700 bg-amber-500/20",
+  green: "text-green-700 bg-green-500/20",
+  blue: "text-blue-700 bg-blue-500/20",
+  purple: "text-purple-700 bg-purple-500/20",
   slate: "text-slate-400 bg-slate-500/20",
 };
 
@@ -240,7 +240,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
               {section.bullets.map((bullet, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm group">
                   <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-amber-500/20 flex items-center justify-center mt-0.5 group-hover:bg-amber-500/30 transition-colors">
-                    <ChevronRight className="h-4 w-4 text-amber-400" />
+                    <ChevronRight className="h-4 w-4 text-amber-700" />
                   </span>
                   <span className="text-slate-300 pt-0.5">{bullet}</span>
                 </li>
@@ -253,7 +253,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
               {section.numberedList.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm group">
                   <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gradient-to-br from-amber-500/30 to-amber-600/20
-                                   text-amber-400 text-xs font-bold flex items-center justify-center
+                                   text-amber-700 text-xs font-bold flex items-center justify-center
                                    shadow-lg ring-1 ring-amber-500/20 group-hover:from-amber-500/40 group-hover:to-amber-600/30 transition-all">
                     {i + 1}
                   </span>
@@ -269,7 +269,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                 <thead>
                   <tr className="border-b border-white/10 bg-white/[0.03]">
                     {section.table.headers.map((header, i) => (
-                      <th key={i} className="text-left py-4 px-5 text-amber-400/90 font-semibold uppercase text-xs tracking-wider">
+                      <th key={i} className="text-left py-4 px-5 text-amber-700/90 font-semibold uppercase text-xs tracking-wider">
                         {header}
                       </th>
                     ))}
@@ -321,18 +321,18 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                   section.callout.type === 'tip' && "bg-green-500/20",
                   section.callout.type === 'example' && "bg-purple-500/20"
                 )}>
-                  {section.callout.type === 'info' && <Info className="h-5 w-5 text-blue-400" />}
-                  {section.callout.type === 'warning' && <AlertTriangle className="h-5 w-5 text-amber-400" />}
-                  {section.callout.type === 'tip' && <Lightbulb className="h-5 w-5 text-green-400" />}
-                  {section.callout.type === 'example' && <FileText className="h-5 w-5 text-purple-400" />}
+                  {section.callout.type === 'info' && <Info className="h-5 w-5 text-blue-700" />}
+                  {section.callout.type === 'warning' && <AlertTriangle className="h-5 w-5 text-amber-700" />}
+                  {section.callout.type === 'tip' && <Lightbulb className="h-5 w-5 text-green-700" />}
+                  {section.callout.type === 'example' && <FileText className="h-5 w-5 text-purple-700" />}
                 </div>
                 <div>
                   <h4 className={cn(
                     "font-bold text-sm mb-1.5",
-                    section.callout.type === 'info' && "text-blue-400",
-                    section.callout.type === 'warning' && "text-amber-400",
-                    section.callout.type === 'tip' && "text-green-400",
-                    section.callout.type === 'example' && "text-purple-400"
+                    section.callout.type === 'info' && "text-blue-700",
+                    section.callout.type === 'warning' && "text-amber-700",
+                    section.callout.type === 'tip' && "text-green-700",
+                    section.callout.type === 'example' && "text-purple-700"
                   )}>{section.callout.title}</h4>
                   <p className="text-slate-300 text-sm leading-relaxed">{section.callout.content}</p>
                 </div>
@@ -420,7 +420,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               <Link
                 href="/learn"
                 className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-1.5
-                           text-amber-400 text-sm font-medium hover:bg-white/10 transition-colors"
+                           text-amber-700 text-sm font-medium hover:bg-white/10 transition-colors"
               >
                 {catMeta.label}
               </Link>
@@ -428,9 +428,9 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 "bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-1.5",
                 "inline-flex items-center gap-1.5 text-sm font-medium"
               )}>
-                {article.threatLevel === 'critical' && <AlertTriangle className="h-3.5 w-3.5 text-red-400" />}
-                {article.threatLevel === 'warning' && <Info className="h-3.5 w-3.5 text-amber-400" />}
-                {article.threatLevel === 'info' && <CheckCircle2 className="h-3.5 w-3.5 text-green-400" />}
+                {article.threatLevel === 'critical' && <AlertTriangle className="h-3.5 w-3.5 text-red-700" />}
+                {article.threatLevel === 'warning' && <Info className="h-3.5 w-3.5 text-amber-700" />}
+                {article.threatLevel === 'info' && <CheckCircle2 className="h-3.5 w-3.5 text-green-700" />}
                 <span className={threatMeta.color}>{threatMeta.label}</span>
               </div>
             </div>
@@ -508,10 +508,10 @@ export default async function LearnArticlePage({ params }: PageProps) {
                     )}>
                       <AlertTriangle className={cn(
                         "h-6 w-6",
-                        article.warningBox.type === 'red' && "text-red-400",
-                        article.warningBox.type === 'amber' && "text-amber-400",
-                        article.warningBox.type === 'blue' && "text-blue-400",
-                        article.warningBox.type === 'green' && "text-green-400"
+                        article.warningBox.type === 'red' && "text-red-700",
+                        article.warningBox.type === 'amber' && "text-amber-700",
+                        article.warningBox.type === 'blue' && "text-blue-700",
+                        article.warningBox.type === 'green' && "text-green-700"
                       )} />
                     </div>
                     <div>
@@ -533,7 +533,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 <div className="relative">
                   <h2 className="text-2xl font-serif font-bold text-white mb-4 flex items-center gap-3">
                     <div className="p-2 rounded-xl bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
-                      <Shield className="h-6 w-6 text-amber-400" />
+                      <Shield className="h-6 w-6 text-amber-700" />
                     </div>
                     {article.goldBridge.title}
                   </h2>
@@ -545,7 +545,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                       <li key={i} className="flex items-start gap-3 text-sm group">
                         <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-amber-500/20 flex items-center justify-center mt-0.5
                                          group-hover:bg-amber-500/30 transition-colors ring-1 ring-amber-500/20">
-                          <CheckCircle2 className="h-4 w-4 text-amber-400" />
+                          <CheckCircle2 className="h-4 w-4 text-amber-700" />
                         </span>
                         <span className="text-slate-300 pt-0.5">{bullet}</span>
                       </li>
@@ -564,7 +564,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 <div className="mb-12">
                   <h2 className="text-2xl font-serif font-bold text-white mb-6 flex items-center gap-3">
                     <div className="p-2 rounded-xl bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
-                      <HelpCircle className="h-5 w-5 text-amber-400" />
+                      <HelpCircle className="h-5 w-5 text-amber-700" />
                     </div>
                     Frequently Asked Questions
                   </h2>
@@ -580,7 +580,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                       >
                         <h3 className="font-bold text-white mb-3 text-lg group-hover:text-amber-100 transition-colors flex items-start gap-3">
                           <span className="flex-shrink-0 w-7 h-7 rounded-lg bg-gradient-to-br from-amber-500/30 to-amber-600/20
-                                           text-amber-400 text-sm font-bold flex items-center justify-center mt-0.5
+                                           text-amber-700 text-sm font-bold flex items-center justify-center mt-0.5
                                            shadow-lg ring-1 ring-amber-500/20">
                             {i + 1}
                           </span>
@@ -598,7 +598,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 <div className="mb-12">
                   <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
                     <div className="p-2 rounded-xl bg-blue-500/20 shadow-lg ring-1 ring-blue-500/30">
-                      <FileText className="h-5 w-5 text-blue-400" />
+                      <FileText className="h-5 w-5 text-blue-700" />
                     </div>
                     Related Articles
                   </h2>
@@ -615,13 +615,13 @@ export default async function LearnArticlePage({ params }: PageProps) {
                                      hover:border-amber-400/30 transition-all duration-300 group"
                         >
                           <div className="text-xs font-medium uppercase tracking-wider mb-2 text-slate-400
-                                          group-hover:text-amber-400/80 transition-colors">
+                                          group-hover:text-amber-700/80 transition-colors">
                             {relatedCat.label}
                           </div>
-                          <h3 className="font-bold text-white group-hover:text-amber-400 transition-colors text-sm leading-snug">
+                          <h3 className="font-bold text-white group-hover:text-amber-700 transition-colors text-sm leading-snug">
                             {related.title}
                           </h3>
-                          <div className="mt-3 flex items-center gap-1 text-xs text-slate-500 group-hover:text-amber-400/60 transition-colors">
+                          <div className="mt-3 flex items-center gap-1 text-xs text-slate-500 group-hover:text-amber-700/60 transition-colors">
                             <span>Read more</span>
                             <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
                           </div>
@@ -637,7 +637,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 <div className="mb-12">
                   <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
                     <div className="p-1.5 rounded-lg bg-green-500/20 shadow-lg ring-1 ring-green-500/30">
-                      <FileText className="h-4 w-4 text-green-400" />
+                      <FileText className="h-4 w-4 text-green-700" />
                     </div>
                     Helpful Guides
                   </h2>
@@ -653,7 +653,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                                    hover:-translate-y-0.5 hover:shadow-[0_4px_20px_-5px_rgba(212,175,55,0.2)]
                                    transition-all duration-300 group"
                       >
-                        <FileText className="h-4 w-4 text-amber-400 group-hover:text-amber-300" />
+                        <FileText className="h-4 w-4 text-amber-700 group-hover:text-amber-800" />
                         {guide.split('/').pop()?.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
                       </Link>
                     ))}
@@ -666,7 +666,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 <div className="mb-12">
                   <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
                     <div className="p-1.5 rounded-lg bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
-                      <Calculator className="h-4 w-4 text-amber-400" />
+                      <Calculator className="h-4 w-4 text-amber-700" />
                     </div>
                     Interactive Tools
                   </h2>
@@ -678,9 +678,9 @@ export default async function LearnArticlePage({ params }: PageProps) {
                         className="inline-flex items-center gap-2 px-4 py-2.5
                                    bg-gradient-to-br from-amber-500/15 to-amber-600/10
                                    backdrop-blur-xl border border-amber-500/30 rounded-xl
-                                   text-sm text-amber-400 font-medium
+                                   text-sm text-amber-700 font-medium
                                    hover:from-amber-500/25 hover:to-amber-600/15
-                                   hover:border-amber-400/50 hover:text-amber-300
+                                   hover:border-amber-400/50 hover:text-amber-800
                                    hover:-translate-y-0.5 hover:shadow-[0_4px_20px_-5px_rgba(212,175,55,0.3)]
                                    transition-all duration-300 group"
                       >

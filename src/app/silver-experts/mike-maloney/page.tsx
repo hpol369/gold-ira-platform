@@ -129,14 +129,14 @@ export default function MikeMaloneyPage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-purple-500/20 px-4 py-1.5 text-sm font-semibold text-purple-400 mb-6 border border-purple-500/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-purple-500/20 px-4 py-1.5 text-sm font-semibold text-purple-700 mb-6 border border-purple-500/30 ml-4">
                             <Star className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-4">
                             Mike Maloney on Silver
                         </h1>
-                        <p className="text-xl text-purple-400 font-semibold mb-4">
+                        <p className="text-xl text-purple-700 font-semibold mb-4">
                             Founder of GoldSilver.com | Creator of &quot;Hidden Secrets of Money&quot;
                         </p>
                         <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
@@ -156,13 +156,13 @@ export default function MikeMaloneyPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-purple-500/20 rounded-lg">
-                                    <Star className="w-6 h-6 text-purple-400" />
+                                    <Star className="w-6 h-6 text-purple-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Who Is Mike Maloney?</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600">
-                                    Mike Maloney is the founder of <strong className="text-purple-400">GoldSilver.com</strong>, one of the world&apos;s leading precious metals dealers, and the creator of the acclaimed documentary series <strong className="text-slate-900">&quot;Hidden Secrets of Money.&quot;</strong> His work has been viewed by tens of millions of people and has fundamentally changed how a generation thinks about money.
+                                    Mike Maloney is the founder of <strong className="text-purple-700">GoldSilver.com</strong>, one of the world&apos;s leading precious metals dealers, and the creator of the acclaimed documentary series <strong className="text-slate-900">&quot;Hidden Secrets of Money.&quot;</strong> His work has been viewed by tens of millions of people and has fundamentally changed how a generation thinks about money.
                                 </p>
                                 <p className="text-slate-600">
                                     Maloney&apos;s journey into precious metals began after studying wealth cycles and monetary history. He discovered that throughout history, all fiat currencies eventually return to their intrinsic value: zero. This insight led him to dedicate his career to educating others about real money and wealth preservation.
@@ -175,23 +175,23 @@ export default function MikeMaloneyPage() {
                                     <h4 className="font-bold text-slate-900 mb-4">Mike Maloney Quick Facts</h4>
                                     <ul className="space-y-2 text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-purple-700 shrink-0 mt-0.5" />
                                             <span>Founder of GoldSilver.com</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-purple-700 shrink-0 mt-0.5" />
                                             <span>Creator of &quot;Hidden Secrets of Money&quot; documentary series</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-purple-700 shrink-0 mt-0.5" />
                                             <span>Author of &quot;Guide to Investing in Gold and Silver&quot;</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-purple-700 shrink-0 mt-0.5" />
                                             <span>Advisor to Robert Kiyosaki (Rich Dad, Poor Dad)</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-purple-700 shrink-0 mt-0.5" />
                                             <span>Tens of millions of views on his educational content</span>
                                         </li>
                                     </ul>
@@ -203,7 +203,7 @@ export default function MikeMaloneyPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-purple-500/20 rounded-lg">
-                                    <History className="w-6 h-6 text-purple-400" />
+                                    <History className="w-6 h-6 text-purple-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Maloney&apos;s Monetary History Analysis</h2>
                             </div>
@@ -214,7 +214,7 @@ export default function MikeMaloneyPage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Currency vs. Money</h3>
                                 <p className="text-slate-600">
-                                    Maloney makes a critical distinction between <strong className="text-purple-400">currency</strong> (government-issued paper that functions as a medium of exchange) and <strong className="text-slate-900">money</strong> (a store of value that maintains purchasing power over time). He argues that only gold and silver meet the true definition of money.
+                                    Maloney makes a critical distinction between <strong className="text-purple-700">currency</strong> (government-issued paper that functions as a medium of exchange) and <strong className="text-slate-900">money</strong> (a store of value that maintains purchasing power over time). He argues that only gold and silver meet the true definition of money.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">The Seven Stages of Empire</h3>
@@ -245,7 +245,7 @@ export default function MikeMaloneyPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-purple-500/20 rounded-lg">
-                                    <PlayCircle className="w-6 h-6 text-purple-400" />
+                                    <PlayCircle className="w-6 h-6 text-purple-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Hidden Secrets of Money Documentary</h2>
                             </div>
@@ -258,7 +258,7 @@ export default function MikeMaloneyPage() {
                                 {documentarySeries.map((ep, index) => (
                                     <div key={index} className="bg-slate-50 rounded-lg p-4">
                                         <div className="flex items-center gap-2 mb-2">
-                                            <span className="text-purple-400 font-bold">{ep.episode}</span>
+                                            <span className="text-purple-700 font-bold">{ep.episode}</span>
                                             <span className="text-slate-900 font-semibold">: {ep.title}</span>
                                         </div>
                                         <p className="text-slate-600 text-sm">{ep.description}</p>
@@ -274,7 +274,7 @@ export default function MikeMaloneyPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-purple-500/20 rounded-lg">
-                                    <Quote className="w-6 h-6 text-purple-400" />
+                                    <Quote className="w-6 h-6 text-purple-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Key Quotes & Predictions</h2>
                             </div>
@@ -282,7 +282,7 @@ export default function MikeMaloneyPage() {
                                 {keyQuotes.map((item, index) => (
                                     <div key={index} className="bg-slate-50 rounded-lg p-6">
                                         <p className="text-slate-900 text-lg italic mb-3">&quot;{item.quote}&quot;</p>
-                                        <p className="text-purple-400 text-sm font-semibold">{item.context}</p>
+                                        <p className="text-purple-700 text-sm font-semibold">{item.context}</p>
                                     </div>
                                 ))}
                             </div>
@@ -292,7 +292,7 @@ export default function MikeMaloneyPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <TrendingUp className="w-6 h-6 text-green-400" />
+                                    <TrendingUp className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Maloney&apos;s Silver Predictions</h2>
                             </div>
@@ -313,7 +313,7 @@ export default function MikeMaloneyPage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Price Targets</h3>
                                 <p className="text-slate-600">
-                                    While Maloney is careful about specific price predictions, he has suggested that silver could reach <strong className="text-purple-400">triple-digit prices</strong> during the coming monetary crisis. He bases this on historical precedents where precious metals experienced dramatic price increases during currency crises.
+                                    While Maloney is careful about specific price predictions, he has suggested that silver could reach <strong className="text-purple-700">triple-digit prices</strong> during the coming monetary crisis. He bases this on historical precedents where precious metals experienced dramatic price increases during currency crises.
                                 </p>
 
                                 <Callout type="tip" title="Maloney's Key Insight">
@@ -327,19 +327,19 @@ export default function MikeMaloneyPage() {
                             <h2 className="text-2xl font-bold font-serif text-slate-900 mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-6">
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-purple-400 mb-2">Who is Mike Maloney?</h3>
+                                    <h3 className="text-lg font-bold text-purple-700 mb-2">Who is Mike Maloney?</h3>
                                     <p className="text-slate-600">Mike Maloney is the founder of GoldSilver.com and creator of the &quot;Hidden Secrets of Money&quot; documentary series. He is a bestselling author and one of the most influential precious metals educators in the world.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-purple-400 mb-2">What is Hidden Secrets of Money?</h3>
+                                    <h3 className="text-lg font-bold text-purple-700 mb-2">What is Hidden Secrets of Money?</h3>
                                     <p className="text-slate-600">Hidden Secrets of Money is a free documentary series created by Mike Maloney that explores monetary history, the difference between money and currency, and why gold and silver have been money for thousands of years.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-purple-400 mb-2">What does Mike Maloney predict for silver?</h3>
+                                    <h3 className="text-lg font-bold text-purple-700 mb-2">What does Mike Maloney predict for silver?</h3>
                                     <p className="text-slate-600">Mike Maloney believes we are in the greatest wealth transfer in history and that silver is poised for dramatic price increases. He has predicted silver could reach three-digit prices during the coming monetary crisis.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-purple-400 mb-2">What are wealth cycles according to Mike Maloney?</h3>
+                                    <h3 className="text-lg font-bold text-purple-700 mb-2">What are wealth cycles according to Mike Maloney?</h3>
                                     <p className="text-slate-600">Maloney teaches that wealth cycles transfer value from one asset class to another over time. He believes we are in a cycle that will transfer wealth from overvalued paper assets to undervalued hard assets like gold and silver.</p>
                                 </div>
                             </div>
@@ -367,27 +367,27 @@ export default function MikeMaloneyPage() {
                             <h3 className="text-lg font-bold text-slate-900 mb-4">Other Silver Experts</h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/silver-experts/andy-schectman" className="text-purple-400 hover:text-purple-300 font-medium">
+                                    <Link href="/silver-experts/andy-schectman" className="text-purple-700 hover:text-purple-800 font-medium">
                                         Andy Schectman - Miles Franklin CEO
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/david-morgan" className="text-purple-400 hover:text-purple-300 font-medium">
+                                    <Link href="/silver-experts/david-morgan" className="text-purple-700 hover:text-purple-800 font-medium">
                                         David Morgan - The Silver Guru
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/ted-butler" className="text-purple-400 hover:text-purple-300 font-medium">
+                                    <Link href="/silver-experts/ted-butler" className="text-purple-700 hover:text-purple-800 font-medium">
                                         Ted Butler - Manipulation Researcher
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/rick-rule" className="text-purple-400 hover:text-purple-300 font-medium">
+                                    <Link href="/silver-experts/rick-rule" className="text-purple-700 hover:text-purple-800 font-medium">
                                         Rick Rule - Mining Investor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/eric-sprott" className="text-purple-400 hover:text-purple-300 font-medium">
+                                    <Link href="/silver-experts/eric-sprott" className="text-purple-700 hover:text-purple-800 font-medium">
                                         Eric Sprott - PSLV Creator
                                     </Link>
                                 </li>

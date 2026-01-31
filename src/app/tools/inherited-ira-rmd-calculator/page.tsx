@@ -234,7 +234,7 @@ export default function InheritedIRARMDCalculatorPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-red-300">If owner died after RBD, annual RMDs are REQUIRED in years 1-9</span>
+                    <span className="text-red-800">If owner died after RBD, annual RMDs are REQUIRED in years 1-9</span>
                   </li>
                 </ul>
               </div>

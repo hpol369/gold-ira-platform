@@ -140,7 +140,7 @@ export default function InheritanceCalculatorPage() {
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-purple-400" />
+                        <Icon className="h-6 w-6 text-purple-700" />
                       </div>
                       <div>
                         <h3 className="text-slate-900 font-semibold mb-2">

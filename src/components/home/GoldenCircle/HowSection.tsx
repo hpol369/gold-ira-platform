@@ -130,7 +130,7 @@ export function HowSection() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4">
-                    <Scale className="h-6 w-6 text-amber-300" />
+                    <Scale className="h-6 w-6 text-amber-800" />
                   </div>
                   <h4 className="font-bold text-lg mb-2">Unbiased Comparisons</h4>
                   <p className="text-blue-100 text-sm font-medium">
@@ -141,7 +141,7 @@ export function HowSection() {
 
                 <div className="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4">
-                    <BookOpen className="h-6 w-6 text-blue-300" />
+                    <BookOpen className="h-6 w-6 text-blue-800" />
                   </div>
                   <h4 className="font-bold text-lg mb-2">Education First</h4>
                   <p className="text-blue-100 text-sm font-medium">
@@ -152,7 +152,7 @@ export function HowSection() {
 
                 <div className="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4">
-                    <Users className="h-6 w-6 text-green-300" />
+                    <Users className="h-6 w-6 text-green-800" />
                   </div>
                   <h4 className="font-bold text-lg mb-2">For Real People</h4>
                   <p className="text-blue-100 text-sm font-medium">

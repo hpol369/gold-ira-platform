@@ -150,7 +150,7 @@ export function Solo401kCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
           <Briefcase className="h-4 w-4" />
           Self-Employed Retirement Calculator
         </div>
@@ -169,7 +169,7 @@ export function Solo401kCalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Building2 className="h-5 w-5 text-purple-400" />
+                <Building2 className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Business Type</h3>
             </div>
@@ -363,7 +363,7 @@ export function Solo401kCalculator() {
           <div className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
             <div className="text-center mb-6">
               <div className="text-sm text-slate-500 mb-2">Maximum Solo 401(k) Contribution</div>
-              <div className="text-5xl font-bold text-purple-400">
+              <div className="text-5xl font-bold text-purple-700">
                 {formatCurrency(calculations.totalMaxContribution)}
               </div>
               <div className="text-sm text-slate-500 mt-2">
@@ -421,7 +421,7 @@ export function Solo401kCalculator() {
 
               <div className="flex justify-between items-center">
                 <span className="text-slate-500">% of income sheltered</span>
-                <span className="font-semibold text-purple-400">
+                <span className="font-semibold text-purple-700">
                   {calculations.percentOfIncome.toFixed(1)}%
                 </span>
               </div>
@@ -439,7 +439,7 @@ export function Solo401kCalculator() {
               <div>
                 <div className="flex justify-between mb-1">
                   <span className="text-slate-500">Solo 401(k) Max</span>
-                  <span className="font-semibold text-purple-400">
+                  <span className="font-semibold text-purple-700">
                     {formatFullCurrency(calculations.totalMaxContribution)}
                   </span>
                 </div>
@@ -470,7 +470,7 @@ export function Solo401kCalculator() {
 
               {calculations.solo401kAdvantage > 0 && (
                 <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-3">
-                  <p className="text-sm text-purple-400">
+                  <p className="text-sm text-purple-700">
                     <strong>Solo 401(k) Advantage:</strong>{" "}
                     {formatFullCurrency(calculations.solo401kAdvantage)} more per year vs SEP IRA
                   </p>
@@ -653,7 +653,7 @@ export function Solo401kCalculator() {
 
             <div className="space-y-4">
               <div className="bg-slate-50 rounded-lg p-4">
-                <h4 className="text-purple-400 font-semibold mb-2">Sole Proprietor / Single-Member LLC</h4>
+                <h4 className="text-purple-700 font-semibold mb-2">Sole Proprietor / Single-Member LLC</h4>
                 <p className="text-slate-600 text-sm mb-2">
                   Compensation = Net SE Income - (1/2 of SE Tax)
                 </p>
@@ -663,7 +663,7 @@ export function Solo401kCalculator() {
               </div>
 
               <div className="bg-slate-50 rounded-lg p-4">
-                <h4 className="text-purple-400 font-semibold mb-2">S-Corporation</h4>
+                <h4 className="text-purple-700 font-semibold mb-2">S-Corporation</h4>
                 <p className="text-slate-600 text-sm mb-2">
                   Compensation = W-2 wages paid to yourself
                 </p>
@@ -686,7 +686,7 @@ export function Solo401kCalculator() {
               </thead>
               <tbody>
                 <tr className="border-b border-slate-200">
-                  <td className="px-3 py-2 text-purple-400 font-semibold">Solo 401(k)</td>
+                  <td className="px-3 py-2 text-purple-700 font-semibold">Solo 401(k)</td>
                   <td className="px-3 py-2 text-righttext-slate-900">$69,000 ($76,500 if 50+)</td>
                   <td className="px-3 py-2 text-slate-500">No employees, max savings</td>
                 </tr>

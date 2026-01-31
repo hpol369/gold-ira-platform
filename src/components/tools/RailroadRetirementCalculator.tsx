@@ -230,7 +230,7 @@ export function RailroadRetirementCalculator() {
                     </div>
 
                     <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
-                      <p className="text-amber-300 text-sm">
+                      <p className="text-amber-800 text-sm">
                         <strong>Note:</strong> You need at least 10 years of railroad service to
                         qualify for Railroad Retirement benefits. With 30+ years, you can retire
                         at age 60 with full benefits.
@@ -305,7 +305,7 @@ export function RailroadRetirementCalculator() {
                     </div>
 
                     <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                      <p className="text-blue-300 text-sm">
+                      <p className="text-blue-800 text-sm">
                         <strong>Tip:</strong> This is your average monthly compensation during
                         your highest-earning 60-month period, which is used to calculate your
                         Tier II benefit.
@@ -392,7 +392,7 @@ export function RailroadRetirementCalculator() {
                     >
                       <p
                         className={`text-sm ${
-                          yearsOfService >= 30 ? "text-green-300" : "text-amber-300"
+                          yearsOfService >= 30 ? "text-green-800" : "text-amber-800"
                         }`}
                       >
                         {yearsOfService >= 30

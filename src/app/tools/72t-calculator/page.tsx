@@ -290,7 +290,7 @@ export default function SEPP72tCalculatorPage() {
                         </div>
 
                         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                          <p className="text-blue-300 text-sm">
+                          <p className="text-blue-800 text-sm">
                             <strong>Note:</strong> At age {age}, you must continue SEPP distributions for at least{' '}
                             <strong>{calculations.minimumYears} years</strong> (until age {calculations.endAge})
                           </p>
@@ -365,7 +365,7 @@ export default function SEPP72tCalculatorPage() {
                         </div>
 
                         <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
-                          <p className="text-amber-300 text-sm">
+                          <p className="text-amber-800 text-sm">
                             <strong>Tip:</strong> A higher interest rate results in larger annual distributions.
                             The IRS publishes updated rates monthly.
                           </p>

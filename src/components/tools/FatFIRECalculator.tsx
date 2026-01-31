@@ -386,7 +386,7 @@ export function FatFIRECalculator() {
           {/* Lifestyle Breakdown */}
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Sparkles className="h-5 w-5 text-purple-400" />
+              <Sparkles className="h-5 w-5 text-purple-700" />
               Luxury Budget Breakdown
             </h3>
 
@@ -403,10 +403,10 @@ export function FatFIRECalculator() {
 
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-2">
-                  <Plane className="h-4 w-4 text-purple-400" />
+                  <Plane className="h-4 w-4 text-purple-700" />
                   <span className="text-sm text-slate-500">Travel (20%)</span>
                 </div>
-                <span className="font-semibold text-purple-400">
+                <span className="font-semibold text-purple-700">
                   {formatCurrency(calculations.luxuryBreakdown.travel)}/yr
                 </span>
               </div>

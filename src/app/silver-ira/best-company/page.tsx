@@ -362,7 +362,7 @@ export default function BestSilverIraCompanyPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-white rounded-2xl p-8 border border-slate-200">
                             <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-                                <ThumbsUp className="h-6 w-6 text-green-400" />
+                                <ThumbsUp className="h-6 w-6 text-green-700" />
                                 The Bottom Line
                             </h2>
                             <div className="prose prose-lg max-w-none text-slate-600">

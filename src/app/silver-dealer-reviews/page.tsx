@@ -317,7 +317,7 @@ export default function SilverDealerReviewsPage() {
                                 <ul className="space-y-2 mb-6">
                                     {dealer.pros.map((pro, i) => (
                                         <li key={i} className="flex items-center gap-2 text-slate-600 text-sm">
-                                            <CheckCircle className="w-4 h-4 text-green-400 shrink-0" />
+                                            <CheckCircle className="w-4 h-4 text-green-700 shrink-0" />
                                             {pro}
                                         </li>
                                     ))}
@@ -345,7 +345,7 @@ export default function SilverDealerReviewsPage() {
                     </h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                            <DollarSign className="w-12 h-12 text-green-400 mx-auto mb-4" />
+                            <DollarSign className="w-12 h-12 text-green-700 mx-auto mb-4" />
                             <h3 className="font-bold text-slate-900 mb-2">Pricing & Premiums</h3>
                             <p className="text-slate-600 text-sm">We compare premiums over spot on popular silver products to find the best deals.</p>
                         </div>
@@ -355,12 +355,12 @@ export default function SilverDealerReviewsPage() {
                             <p className="text-slate-600 text-sm">BBB ratings, customer reviews, and industry standing all factor into our analysis.</p>
                         </div>
                         <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                            <Truck className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                            <Truck className="w-12 h-12 text-blue-700 mx-auto mb-4" />
                             <h3 className="font-bold text-slate-900 mb-2">Shipping & Handling</h3>
                             <p className="text-slate-600 text-sm">Free shipping thresholds, packaging quality, and delivery times matter.</p>
                         </div>
                         <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                            <Shield className="w-12 h-12 text-purple-400 mx-auto mb-4" />
+                            <Shield className="w-12 h-12 text-purple-700 mx-auto mb-4" />
                             <h3 className="font-bold text-slate-900 mb-2">Buyback Programs</h3>
                             <p className="text-slate-600 text-sm">We evaluate how easy it is to sell back your silver when needed.</p>
                         </div>

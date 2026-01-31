@@ -314,7 +314,7 @@ export default function SilverToGoldRatioCalculatorPage() {
               <div className="bg-slate-50 backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                    <History className="h-5 w-5 text-purple-400" />
+                    <History className="h-5 w-5 text-purple-700" />
                   </div>
                   <h2 className="text-xl font-semibold">
                     Historical Comparison
@@ -335,7 +335,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                         {calculations.longTermAverage}:1
                       </p>
                       <p
-                        className={`text-sm ${calculations.vsLongTermAvg > 0 ? "text-red-400" : "text-green-400"}`}
+                        className={`text-sm ${calculations.vsLongTermAvg > 0 ? "text-red-700" : "text-green-700"}`}
                       >
                         {calculations.vsLongTermAvg > 0 ? "+" : ""}
                         {calculations.vsLongTermAvg}% vs current
@@ -354,7 +354,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                         {calculations.twentyYearAverage}:1
                       </p>
                       <p
-                        className={`text-sm ${calculations.vs20YearAvg > 0 ? "text-red-400" : "text-green-400"}`}
+                        className={`text-sm ${calculations.vs20YearAvg > 0 ? "text-red-700" : "text-green-700"}`}
                       >
                         {calculations.vs20YearAvg > 0 ? "+" : ""}
                         {calculations.vs20YearAvg}% vs current
@@ -412,7 +412,7 @@ export default function SilverToGoldRatioCalculatorPage() {
               <div className="bg-slate-50 backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
-                    <Target className="h-5 w-5 text-green-400" />
+                    <Target className="h-5 w-5 text-green-700" />
                   </div>
                   <h2 className="text-xl font-semibold">
                     If the Ratio Normalizes...
@@ -424,7 +424,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                   <div className="p-5 bg-gradient-to-r from-green-500/10 to-emerald-500/5 rounded-xl border border-green-500/20">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
-                        <TrendingUp className="h-5 w-5 text-green-400" />
+                        <TrendingUp className="h-5 w-5 text-green-700" />
                         <span className="font-semibold">
                           If ratio returns to 50:1
                         </span>
@@ -438,13 +438,13 @@ export default function SilverToGoldRatioCalculatorPage() {
                         <p className="text-sm text-slate-600">
                           Silver would be worth
                         </p>
-                        <p className="text-2xl font-bold text-green-400">
+                        <p className="text-2xl font-bold text-green-700">
                           ${calculations.silverAt50Ratio.toFixed(2)}
                         </p>
                       </div>
                       <div className="text-right">
                         <p className="text-sm text-slate-600">Potential gain</p>
-                        <p className="text-2xl font-bold text-green-400">
+                        <p className="text-2xl font-bold text-green-700">
                           +{calculations.gainAt50Ratio}%
                         </p>
                       </div>
@@ -486,7 +486,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                   <div className="p-5 bg-gradient-to-r from-purple-500/10 to-pink-500/5 rounded-xl border border-purple-500/20">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
-                        <TrendingUp className="h-5 w-5 text-purple-400" />
+                        <TrendingUp className="h-5 w-5 text-purple-700" />
                         <span className="font-semibold">
                           If ratio returns to 30:1
                         </span>
@@ -500,13 +500,13 @@ export default function SilverToGoldRatioCalculatorPage() {
                         <p className="text-sm text-slate-600">
                           Silver would be worth
                         </p>
-                        <p className="text-2xl font-bold text-purple-400">
+                        <p className="text-2xl font-bold text-purple-700">
                           ${calculations.silverAt30Ratio.toFixed(2)}
                         </p>
                       </div>
                       <div className="text-right">
                         <p className="text-sm text-slate-600">Potential gain</p>
-                        <p className="text-2xl font-bold text-purple-400">
+                        <p className="text-2xl font-bold text-purple-700">
                           +{calculations.gainAt30Ratio}%
                         </p>
                       </div>
@@ -525,33 +525,33 @@ export default function SilverToGoldRatioCalculatorPage() {
               {/* Quick Facts */}
               <div className="bg-slate-50 backdrop-blur-xl rounded-2xl p-6 border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
                 <div className="flex items-center gap-3 mb-4">
-                  <Info className="h-5 w-5 text-blue-400" />
+                  <Info className="h-5 w-5 text-blue-700" />
                   <h3 className="text-lg font-semibold">Key Ratio Facts</h3>
                 </div>
                 <ul className="space-y-3 text-sm">
                   <li className="flex gap-3 text-slate-600">
-                    <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-green-700 flex-shrink-0" />
                     <span>
                       All-time low: <strong>14:1</strong> (1980, Hunt Brothers
                       squeeze)
                     </span>
                   </li>
                   <li className="flex gap-3 text-slate-600">
-                    <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-green-700 flex-shrink-0" />
                     <span>
                       All-time high: <strong>125:1</strong> (March 2020, COVID
                       panic)
                     </span>
                   </li>
                   <li className="flex gap-3 text-slate-600">
-                    <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-green-700 flex-shrink-0" />
                     <span>
                       Natural occurrence in Earth&apos;s crust:{" "}
                       <strong>~17:1</strong>
                     </span>
                   </li>
                   <li className="flex gap-3 text-slate-600">
-                    <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-green-700 flex-shrink-0" />
                     <span>
                       US Coinage Act of 1792: <strong>15:1</strong> (legal
                       ratio)
@@ -567,7 +567,7 @@ export default function SilverToGoldRatioCalculatorPage() {
             <div className="bg-slate-50 backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                  <TrendingDown className="h-5 w-5 text-blue-400" />
+                  <TrendingDown className="h-5 w-5 text-blue-700" />
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold">
@@ -752,7 +752,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                 {/* Historical Significance */}
                 <div className="bg-slate-50 backdrop-blur-xl rounded-xl p-6 border border-slate-200">
                   <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                    <History className="h-5 w-5 text-purple-400" />
+                    <History className="h-5 w-5 text-purple-700" />
                     Historical Significance
                   </h3>
                   <p className="text-slate-600 text-sm mb-4">
@@ -771,7 +771,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                 {/* Why It Matters */}
                 <div className="bg-slate-50 backdrop-blur-xl rounded-xl p-6 border border-slate-200">
                   <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                    <TrendingUp className="h-5 w-5 text-green-400" />
+                    <TrendingUp className="h-5 w-5 text-green-700" />
                     Why the Ratio Matters for Investors
                   </h3>
                   <p className="text-slate-600 text-sm mb-4">
@@ -781,17 +781,17 @@ export default function SilverToGoldRatioCalculatorPage() {
                   </p>
                   <ul className="text-slate-600 text-sm space-y-2">
                     <li className="flex gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-4 w-4 text-green-700 flex-shrink-0 mt-0.5" />
                       <span>
                         High ratio: Consider buying silver over gold
                       </span>
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-4 w-4 text-green-700 flex-shrink-0 mt-0.5" />
                       <span>Low ratio: Consider buying gold over silver</span>
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-4 w-4 text-green-700 flex-shrink-0 mt-0.5" />
                       <span>Mean reversion: Ratio tends to return to averages</span>
                     </li>
                   </ul>
@@ -800,7 +800,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                 {/* Expert Opinions */}
                 <div className="bg-slate-50 backdrop-blur-xl rounded-xl p-6 border border-slate-200">
                   <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                    <BookOpen className="h-5 w-5 text-blue-400" />
+                    <BookOpen className="h-5 w-5 text-blue-700" />
                     Expert Opinions on &ldquo;Fair Value&rdquo;
                   </h3>
                   <p className="text-slate-600 text-sm mb-4">

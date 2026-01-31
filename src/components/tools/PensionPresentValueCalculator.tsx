@@ -159,7 +159,7 @@ export function PensionPresentValueCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
           <PiggyBank className="h-4 w-4" />
           Pension Value Calculator
         </div>
@@ -178,7 +178,7 @@ export function PensionPresentValueCalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <DollarSign className="h-5 w-5 text-purple-400" />
+                <DollarSign className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Pension Details</h3>
             </div>
@@ -414,7 +414,7 @@ export function PensionPresentValueCalculator() {
           <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
             <div className="text-center mb-6">
               <div className="text-sm text-slate-500 mb-2">Your Pension Present Value</div>
-              <div className="text-5xl font-bold text-purple-400">
+              <div className="text-5xl font-bold text-purple-700">
                 {formatCurrency(calculations.totalPV)}
               </div>
               <div className="text-sm text-slate-500 mt-2">
@@ -425,7 +425,7 @@ export function PensionPresentValueCalculator() {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-slate-50 rounded-lg p-4 text-center">
                 <div className="text-sm text-slate-500">Pension Portion</div>
-                <div className="text-xl font-bold text-purple-400">
+                <div className="text-xl font-bold text-purple-700">
                   {formatCurrency(calculations.pensionPV)}
                 </div>
               </div>
@@ -481,7 +481,7 @@ export function PensionPresentValueCalculator() {
                   <span className="text-slate-500">Monthly Income from PV</span>
                   <div className="text-xs text-slate-500">At {discountRate}% return</div>
                 </div>
-                <span className="text-xl font-bold text-purple-400">
+                <span className="text-xl font-bold text-purple-700">
                   {formatFullCurrency(calculations.monthlyFromPV)}/mo
                 </span>
               </div>
@@ -491,7 +491,7 @@ export function PensionPresentValueCalculator() {
           {/* Pension Wealth Context */}
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Target className="h-5 w-5 text-purple-400" />
+              <Target className="h-5 w-5 text-purple-700" />
               Pension as Part of Net Worth
             </h3>
 
@@ -503,7 +503,7 @@ export function PensionPresentValueCalculator() {
               {[100000, 250000, 500000, 1000000].map((netWorth) => (
                 <div key={netWorth} className="flex justify-between items-center">
                   <span className="text-slate-500">{formatCurrency(netWorth)} net worth</span>
-                  <span className="font-semibold text-purple-400">
+                  <span className="font-semibold text-purple-700">
                     +{Math.round((calculations.totalPV / netWorth) * 100)}% pension wealth
                   </span>
                 </div>
@@ -512,7 +512,7 @@ export function PensionPresentValueCalculator() {
 
             <div className="mt-4 pt-4 border-t border-slate-200 bg-purple-500/10 rounded-lg p-3">
               <p className="text-sm text-slate-600">
-                <strong className="text-purple-400">Important:</strong> For divorce settlements or estate planning, pension present value should be included in total marital assets.
+                <strong className="text-purple-700">Important:</strong> For divorce settlements or estate planning, pension present value should be included in total marital assets.
               </p>
             </div>
           </div>
@@ -542,7 +542,7 @@ export function PensionPresentValueCalculator() {
                       <td className="px-2 py-2 text-right text-green-600">
                         {formatCurrency(row.payment)}
                       </td>
-                      <td className="px-2 py-2 text-right text-purple-400">
+                      <td className="px-2 py-2 text-right text-purple-700">
                         {formatCurrency(row.presentValue)}
                       </td>
                     </tr>
@@ -561,7 +561,7 @@ export function PensionPresentValueCalculator() {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
-              <Scale className="h-6 w-6 text-purple-400" />
+              <Scale className="h-6 w-6 text-purple-700" />
             </div>
             <h3 className="text-slate-900 font-semibold mb-2">Divorce Settlements</h3>
             <p className="text-slate-600 text-sm">

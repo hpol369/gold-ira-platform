@@ -129,7 +129,7 @@ export default function SilverForecast2026Page() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
+                            <span className="bg-red-500/20 text-red-700 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
                             <span className="text-slate-600 text-sm">1,200+ monthly searches</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
@@ -195,13 +195,13 @@ export default function SilverForecast2026Page() {
                                         <tr>
                                             <td className="p-4 text-slate-900 font-medium">Mine Production</td>
                                             <td className="p-4 text-slate-600">{supplyData.mineProduction.amount}</td>
-                                            <td className="p-4 text-red-400">{supplyData.mineProduction.change}</td>
+                                            <td className="p-4 text-red-700">{supplyData.mineProduction.change}</td>
                                             <td className="p-4 text-slate-600">{supplyData.mineProduction.notes}</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 text-slate-900 font-medium">Recycling</td>
                                             <td className="p-4 text-slate-600">{supplyData.recycling.amount}</td>
-                                            <td className="p-4 text-green-400">{supplyData.recycling.change}</td>
+                                            <td className="p-4 text-green-700">{supplyData.recycling.change}</td>
                                             <td className="p-4 text-slate-600">{supplyData.recycling.notes}</td>
                                         </tr>
                                         <tr className="bg-[#B22234]/10">
@@ -226,7 +226,7 @@ export default function SilverForecast2026Page() {
                         {/* Demand Analysis */}
                         <section id="demand-analysis" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Factory className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Demand Analysis: The Green Revolution</h2>
@@ -253,7 +253,7 @@ export default function SilverForecast2026Page() {
                                                 <div className="text-xs text-slate-600">2026 estimate</div>
                                             </div>
                                             <div className={`px-2 py-1 rounded text-xs font-bold ${
-                                                parseInt(item.growth) >= 20 ? 'bg-green-500/30 text-green-400' :
+                                                parseInt(item.growth) >= 20 ? 'bg-green-500/30 text-green-700' :
                                                 parseInt(item.growth) >= 10 ? 'bg-emerald-500/20 text-emerald-400' :
                                                 'bg-[#B22234]/10 text-slate-600'
                                             }`}>
@@ -313,8 +313,8 @@ export default function SilverForecast2026Page() {
                                     </div>
                                     <div className="pt-4 border-t border-slate-200">
                                         <div className="flex justify-between">
-                                            <span className="text-red-400 font-bold">Supply Deficit</span>
-                                            <span className="text-red-400 font-bold text-xl">-180M oz</span>
+                                            <span className="text-red-700 font-bold">Supply Deficit</span>
+                                            <span className="text-red-700 font-bold text-xl">-180M oz</span>
                                         </div>
                                         <p className="text-xs text-slate-600 mt-2">The deficit is being filled by above-ground stockpiles, which are at multi-decade lows.</p>
                                     </div>
@@ -329,7 +329,7 @@ export default function SilverForecast2026Page() {
                         {/* Technical Analysis */}
                         <section id="technical-analysis" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Technical Analysis</h2>
@@ -360,7 +360,7 @@ export default function SilverForecast2026Page() {
                                         </svg>
                                         <div className="absolute top-2 left-2 text-xs text-slate-600">2011 High</div>
                                         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-xs text-slate-600">2015 Low</div>
-                                        <div className="absolute top-2 right-2 text-xs text-green-400">Handle forming</div>
+                                        <div className="absolute top-2 right-2 text-xs text-green-700">Handle forming</div>
                                     </div>
                                     <div className="absolute bottom-0 left-12 right-0 flex justify-between text-xs text-slate-600 pt-2">
                                         <span>2011</span>
@@ -375,7 +375,7 @@ export default function SilverForecast2026Page() {
                             <h3>Key Technical Levels</h3>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3">Resistance (Upside Targets)</h4>
+                                    <h4 className="font-bold text-green-700 mb-3">Resistance (Upside Targets)</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li className="flex justify-between"><span>$35.00</span><span className="text-slate-600">2024 high</span></li>
                                         <li className="flex justify-between"><span>$40.00</span><span className="text-slate-600">Round number</span></li>
@@ -385,7 +385,7 @@ export default function SilverForecast2026Page() {
                                     </ul>
                                 </div>
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
-                                    <h4 className="font-bold text-red-400 mb-3">Support (Downside Risk)</h4>
+                                    <h4 className="font-bold text-red-700 mb-3">Support (Downside Risk)</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li className="flex justify-between"><span>$30.00</span><span className="text-slate-600">Psychological</span></li>
                                         <li className="flex justify-between"><span>$28.00</span><span className="text-slate-600">200-day MA</span></li>
@@ -400,7 +400,7 @@ export default function SilverForecast2026Page() {
                         {/* Macro Factors */}
                         <section id="macro-factors" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Globe className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Macro Factors</h2>
@@ -468,7 +468,7 @@ export default function SilverForecast2026Page() {
                         {/* Fed Policy */}
                         <section id="fed-policy" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Fed Policy Impact</h2>
@@ -490,17 +490,17 @@ export default function SilverForecast2026Page() {
                                         <tr>
                                             <td className="p-4 text-slate-900">2001-2003</td>
                                             <td className="p-4 text-slate-600">Cutting cycle (6.5% to 1%)</td>
-                                            <td className="p-4 text-green-400 font-bold">+75% ($4 to $7)</td>
+                                            <td className="p-4 text-green-700 font-bold">+75% ($4 to $7)</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 text-slate-900">2007-2008</td>
                                             <td className="p-4 text-slate-600">Emergency cuts</td>
-                                            <td className="p-4 text-green-400 font-bold">+80% ($12 to $21)</td>
+                                            <td className="p-4 text-green-700 font-bold">+80% ($12 to $21)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">2019-2020</td>
                                             <td className="p-4 text-slate-600">Cuts + QE</td>
-                                            <td className="p-4 text-green-400 font-bold">+140% ($12 to $29)</td>
+                                            <td className="p-4 text-green-700 font-bold">+140% ($12 to $29)</td>
                                         </tr>
                                         <tr className="bg-[#B22234]/10">
                                             <td className="p-4 text-slate-900 font-bold">2025-2026?</td>
@@ -538,9 +538,9 @@ export default function SilverForecast2026Page() {
                                         {quarterlyForecast.map((q, idx) => (
                                             <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                                 <td className="p-4 text-slate-900 font-bold">{q.quarter}</td>
-                                                <td className="p-4 text-red-400">{q.low}</td>
+                                                <td className="p-4 text-red-700">{q.low}</td>
                                                 <td className="p-4 text-[#B22234] font-bold">{q.base}</td>
-                                                <td className="p-4 text-green-400">{q.high}</td>
+                                                <td className="p-4 text-green-700">{q.high}</td>
                                                 <td className="p-4 text-slate-600">{q.notes}</td>
                                             </tr>
                                         ))}

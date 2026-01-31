@@ -140,7 +140,7 @@ export default function ReviewsPage() {
                 #1 Pick
               </div>
               <div>
-                <h2 className="text-xl font-bold text-white group-hover:text-amber-300 transition-colors whitespace-nowrap">
+                <h2 className="text-xl font-bold text-white group-hover:text-amber-800 transition-colors whitespace-nowrap">
                   {featuredCompany.name}
                 </h2>
                 <p className="text-sm text-white/80">{featuredCompany.bestFor}</p>
@@ -148,7 +148,7 @@ export default function ReviewsPage() {
             </div>
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
-                <div className="flex text-amber-400">
+                <div className="flex text-amber-700">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
@@ -156,10 +156,10 @@ export default function ReviewsPage() {
                 <span className="font-bold text-white">{featuredCompany.rating}</span>
               </div>
               <div className="flex items-center gap-1 text-sm text-white/80">
-                <Shield className="h-4 w-4 text-green-400" />
+                <Shield className="h-4 w-4 text-green-700" />
                 {featuredCompany.bbbRating} BBB
               </div>
-              <span className="text-amber-400 font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+              <span className="text-amber-700 font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
                 Read Review
                 <ArrowRight className="h-4 w-4" />
               </span>

@@ -172,7 +172,7 @@ export default function MoneyMetalsExchangeReviewPage() {
                                 <div className="text-5xl font-bold text-slate-900 mb-2">4.5</div>
                                 <StarRating rating={4.5} />
                                 <div className="mt-4 pt-4 border-t border-slate-200">
-                                    <div className="flex items-center justify-center gap-2 text-green-400">
+                                    <div className="flex items-center justify-center gap-2 text-green-700">
                                         <CheckCircle className="w-5 h-5" />
                                         <span className="font-semibold">Recommended</span>
                                     </div>
@@ -251,19 +251,19 @@ export default function MoneyMetalsExchangeReviewPage() {
                                         </p>
                                         <ul className="space-y-2 text-sm text-slate-600">
                                             <li className="flex items-center gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-400" />
+                                                <CheckCircle className="w-4 h-4 text-green-700" />
                                                 Gold coins or bars
                                             </li>
                                             <li className="flex items-center gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-400" />
+                                                <CheckCircle className="w-4 h-4 text-green-700" />
                                                 Silver rounds or coins
                                             </li>
                                             <li className="flex items-center gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-400" />
+                                                <CheckCircle className="w-4 h-4 text-green-700" />
                                                 Platinum pieces (in larger portfolios)
                                             </li>
                                             <li className="flex items-center gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-400" />
+                                                <CheckCircle className="w-4 h-4 text-green-700" />
                                                 Palladium pieces (in larger portfolios)
                                             </li>
                                         </ul>
@@ -285,7 +285,7 @@ export default function MoneyMetalsExchangeReviewPage() {
 
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
-                                    <Repeat className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                                    <Repeat className="w-5 h-5 text-green-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-slate-900 mb-2">Dollar-Cost Averaging Benefits</h4>
                                         <p className="text-sm text-slate-600">
@@ -325,17 +325,17 @@ export default function MoneyMetalsExchangeReviewPage() {
 
                         <div className="grid md:grid-cols-3 gap-4 my-8">
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Truck className="w-8 h-8 text-blue-400 mx-auto mb-3" />
+                                <Truck className="w-8 h-8 text-blue-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Free Shipping</div>
                                 <div className="text-sm text-slate-600">Orders over $500</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Clock className="w-8 h-8 text-green-400 mx-auto mb-3" />
+                                <Clock className="w-8 h-8 text-green-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Processing</div>
                                 <div className="text-sm text-slate-600">1-5 business days</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Shield className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+                                <Shield className="w-8 h-8 text-purple-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Fully Insured</div>
                                 <div className="text-sm text-slate-600">Every shipment</div>
                             </div>
@@ -435,7 +435,7 @@ export default function MoneyMetalsExchangeReviewPage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">Min Order</span>
-                                        <span className="text-green-400 font-bold">None</span>
+                                        <span className="text-green-700 font-bold">None</span>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">Free Shipping</span>
@@ -443,7 +443,7 @@ export default function MoneyMetalsExchangeReviewPage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">Depository</span>
-                                        <span className="text-green-400 font-bold">Yes</span>
+                                        <span className="text-green-700 font-bold">Yes</span>
                                     </div>
                                 </div>
                             </div>

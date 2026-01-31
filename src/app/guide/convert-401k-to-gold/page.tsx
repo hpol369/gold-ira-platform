@@ -227,21 +227,21 @@ export default function Convert401kToGoldPage() {
                         </p>
 
                         <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
-                            <h4 className="font-bold text-green-400 text-lg mb-4 flex items-center gap-2">
+                            <h4 className="font-bold text-green-700 text-lg mb-4 flex items-center gap-2">
                                 <CheckCircle2 className="w-5 h-5" />
                                 Direct Rollover = Tax-Free
                             </h4>
-                            <ul className="space-y-3 text-green-300">
+                            <ul className="space-y-3 text-green-800">
                                 <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                    <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                     <span>Money transfers custodian to custodian</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                    <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                     <span>You never receive a check or touch the funds</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                                    <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
                                     <span>Zero taxes. Zero penalties. Zero hassle.</span>
                                 </li>
                             </ul>

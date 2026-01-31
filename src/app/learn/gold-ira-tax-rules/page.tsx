@@ -139,7 +139,7 @@ export default function GoldIraTaxRulesPage() {
                         {/* Contribution Rules */}
                         <section id="contributions" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Contribution Rules & Limits</h2>
@@ -190,7 +190,7 @@ export default function GoldIraTaxRulesPage() {
                         {/* Traditional vs Roth */}
                         <section id="traditional-vs-roth" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <FileText className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Traditional vs. Roth Gold IRA Taxes</h2>
@@ -264,7 +264,7 @@ export default function GoldIraTaxRulesPage() {
                         {/* Withdrawal Taxes */}
                         <section id="withdrawals" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Calendar className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Withdrawal Tax Rules</h2>
@@ -308,7 +308,7 @@ export default function GoldIraTaxRulesPage() {
                         {/* RMDs */}
                         <section id="rmds" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Calendar className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Required Minimum Distributions (RMDs)</h2>
@@ -334,7 +334,7 @@ export default function GoldIraTaxRulesPage() {
                         {/* Rollovers */}
                         <section id="rollovers" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Tax-Free Rollover Rules</h2>
@@ -370,7 +370,7 @@ export default function GoldIraTaxRulesPage() {
                         {/* Penalties */}
                         <section id="penalties" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Penalties to Avoid</h2>
@@ -381,38 +381,38 @@ export default function GoldIraTaxRulesPage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Early Withdrawal (Before 59½)</h4>
-                                        <p className="text-sm text-red-300 mt-1">Taking distributions before age 59½ triggers a 10% penalty PLUS ordinary income taxes (for Traditional IRAs). A $50,000 early withdrawal could cost you $15,000+ in taxes and penalties.</p>
+                                        <h4 className="font-bold text-red-700">Early Withdrawal (Before 59½)</h4>
+                                        <p className="text-sm text-red-800 mt-1">Taking distributions before age 59½ triggers a 10% penalty PLUS ordinary income taxes (for Traditional IRAs). A $50,000 early withdrawal could cost you $15,000+ in taxes and penalties.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Home Storage of IRA Gold</h4>
-                                        <p className="text-sm text-red-300 mt-1">Storing IRA metals at home is treated as a distribution. The IRS considers this &quot;taking possession,&quot; triggering immediate taxes and potentially the 10% early withdrawal penalty. Always use IRS-approved depositories.</p>
+                                        <h4 className="font-bold text-red-700">Home Storage of IRA Gold</h4>
+                                        <p className="text-sm text-red-800 mt-1">Storing IRA metals at home is treated as a distribution. The IRS considers this &quot;taking possession,&quot; triggering immediate taxes and potentially the 10% early withdrawal penalty. Always use IRS-approved depositories.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Missing the 60-Day Rollover Deadline</h4>
-                                        <p className="text-sm text-amber-300 mt-1">With indirect rollovers, failing to deposit funds within 60 days makes the entire amount a taxable distribution. Use direct rollovers to avoid this risk entirely.</p>
+                                        <h4 className="font-bold text-amber-700">Missing the 60-Day Rollover Deadline</h4>
+                                        <p className="text-sm text-amber-800 mt-1">With indirect rollovers, failing to deposit funds within 60 days makes the entire amount a taxable distribution. Use direct rollovers to avoid this risk entirely.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Missing RMDs</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Failing to take Required Minimum Distributions results in a 25% penalty on the amount not withdrawn. Set reminders and work with your custodian to ensure compliance.</p>
+                                        <h4 className="font-bold text-amber-700">Missing RMDs</h4>
+                                        <p className="text-sm text-amber-800 mt-1">Failing to take Required Minimum Distributions results in a 25% penalty on the amount not withdrawn. Set reminders and work with your custodian to ensure compliance.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Prohibited Transactions</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Using IRA funds for personal benefit (like borrowing against them) or investing in non-approved assets can disqualify your entire IRA, making the full amount immediately taxable.</p>
+                                        <h4 className="font-bold text-amber-700">Prohibited Transactions</h4>
+                                        <p className="text-sm text-amber-800 mt-1">Using IRA funds for personal benefit (like borrowing against them) or investing in non-approved assets can disqualify your entire IRA, making the full amount immediately taxable.</p>
                                     </div>
                                 </div>
                             </div>

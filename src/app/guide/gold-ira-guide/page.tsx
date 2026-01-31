@@ -211,7 +211,7 @@ export default function GoldIraGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center font-bold shrink-0">
                                             <Lock className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -539,31 +539,31 @@ export default function GoldIraGuidePage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Price Volatility</h4>
-                                        <p className="text-sm text-red-300 mt-1">Gold prices can fluctuate significantly in the short term. While gold tends to hold value over decades, you could see your account value drop 20-30% during gold bear markets.</p>
+                                        <h4 className="font-bold text-red-700">Price Volatility</h4>
+                                        <p className="text-sm text-red-800 mt-1">Gold prices can fluctuate significantly in the short term. While gold tends to hold value over decades, you could see your account value drop 20-30% during gold bear markets.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">No Dividends or Interest</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Unlike stocks or bonds, gold generates no income. Your returns come solely from price appreciation. This makes gold better for preservation than growth.</p>
+                                        <h4 className="font-bold text-amber-700">No Dividends or Interest</h4>
+                                        <p className="text-sm text-amber-800 mt-1">Unlike stocks or bonds, gold generates no income. Your returns come solely from price appreciation. This makes gold better for preservation than growth.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-amber-400">Higher Fees Than Traditional IRAs</h4>
-                                        <p className="text-sm text-amber-300 mt-1">Storage, insurance, and custodian fees add up. Make sure the benefits of holding gold outweigh these costs for your situation.</p>
+                                        <h4 className="font-bold text-amber-700">Higher Fees Than Traditional IRAs</h4>
+                                        <p className="text-sm text-amber-800 mt-1">Storage, insurance, and custodian fees add up. Make sure the benefits of holding gold outweigh these costs for your situation.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Scams and Unscrupulous Dealers</h4>
-                                        <p className="text-sm text-red-300 mt-1">The gold IRA industry has its share of bad actors. Always verify BBB ratings, read reviews, and never work with a company that pressures you. See our guide on <Link href="/learn/gold-ira-scams" className="text-[#B22234] hover:underline">gold IRA scams to avoid</Link>.</p>
+                                        <h4 className="font-bold text-red-700">Scams and Unscrupulous Dealers</h4>
+                                        <p className="text-sm text-red-800 mt-1">The gold IRA industry has its share of bad actors. Always verify BBB ratings, read reviews, and never work with a company that pressures you. See our guide on <Link href="/learn/gold-ira-scams" className="text-[#B22234] hover:underline">gold IRA scams to avoid</Link>.</p>
                                     </div>
                                 </div>
                             </div>
@@ -703,19 +703,19 @@ export default function GoldIraGuidePage() {
                             </p>
                             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                                 <Link href="/silver-ira" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-200 transition-colors">
-                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-400 transition-colors">Silver IRA Hub</h4>
+                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-700 transition-colors">Silver IRA Hub</h4>
                                     <p className="text-xs text-slate-600">Complete silver retirement guide</p>
                                 </Link>
                                 <Link href="/silver-price" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-200 transition-colors">
-                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-400 transition-colors">Silver Price Predictions</h4>
+                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-700 transition-colors">Silver Price Predictions</h4>
                                     <p className="text-xs text-slate-600">2026-2040 expert forecasts</p>
                                 </Link>
                                 <Link href="/silver-products" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-200 transition-colors">
-                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-400 transition-colors">Silver Products Guide</h4>
+                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-700 transition-colors">Silver Products Guide</h4>
                                     <p className="text-xs text-slate-600">Coins, bars & IRA-approved</p>
                                 </Link>
                                 <Link href="/silver-experts" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-200 transition-colors">
-                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-400 transition-colors">Silver Experts</h4>
+                                    <h4 className="font-bold text-[#000080] mb-1 group-hover:text-amber-700 transition-colors">Silver Experts</h4>
                                     <p className="text-xs text-slate-600">Top analysts & their views</p>
                                 </Link>
                             </div>

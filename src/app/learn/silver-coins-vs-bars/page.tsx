@@ -207,19 +207,19 @@ export default function SilverCoinsVsBarsPage() {
 
                                 <div className="space-y-4 mb-6">
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Higher liquidity</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Universal recognition</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Harder to counterfeit</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Best for beginners</span>
                                     </div>
                                     <div className="flex items-center gap-3">
@@ -245,19 +245,19 @@ export default function SilverCoinsVsBarsPage() {
 
                                 <div className="space-y-4 mb-6">
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Lower premiums (5-15%)</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">More oz per dollar</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Efficient storage</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Best for large positions</span>
                                     </div>
                                     <div className="flex items-center gap-3">
@@ -352,7 +352,7 @@ export default function SilverCoinsVsBarsPage() {
                                             <div key={index} className="bg-slate-50 border border-slate-200 rounded-lg p-4">
                                                 <div className="flex justify-between items-start mb-2">
                                                     <span className="font-bold text-slate-900">{bar.name}</span>
-                                                    <span className="text-green-400 text-sm">{bar.premium}</span>
+                                                    <span className="text-green-700 text-sm">{bar.premium}</span>
                                                 </div>
                                                 <p className="text-sm text-slate-600">{bar.use}</p>
                                             </div>
@@ -380,7 +380,7 @@ export default function SilverCoinsVsBarsPage() {
                                 <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
                                         <span className="w-8 h-8 rounded-full bg-green-400 text-slate-900 flex items-center justify-center font-bold">1</span>
-                                        <h4 className="font-bold text-green-400">Foundation (0-100 oz): 100% Coins</h4>
+                                        <h4 className="font-bold text-green-700">Foundation (0-100 oz): 100% Coins</h4>
                                     </div>
                                     <p className="text-slate-600 text-sm ml-11">
                                         Start with sovereign mint coins like American Eagles or Canadian Maple Leafs. Maximum liquidity while you learn the market.
@@ -390,7 +390,7 @@ export default function SilverCoinsVsBarsPage() {
                                 <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
                                         <span className="w-8 h-8 rounded-full bg-blue-400 text-slate-900 flex items-center justify-center font-bold">2</span>
-                                        <h4 className="font-bold text-blue-400">Growth (100-500 oz): 70% Coins / 30% Bars</h4>
+                                        <h4 className="font-bold text-blue-700">Growth (100-500 oz): 70% Coins / 30% Bars</h4>
                                     </div>
                                     <p className="text-slate-600 text-sm ml-11">
                                         Add 10 oz bars to reduce premiums while maintaining coin liquidity. Consider generic rounds for even lower premiums.

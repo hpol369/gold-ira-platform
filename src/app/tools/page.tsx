@@ -620,11 +620,11 @@ const categoryOrder: ToolCategory[] = [
 ];
 
 const colorClasses: Record<string, string> = {
-  red: "bg-red-500/20 text-red-400 border-red-500/30",
-  amber: "bg-amber-500/20 text-amber-400 border-amber-500/30",
-  green: "bg-green-500/20 text-green-400 border-green-500/30",
-  blue: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  purple: "bg-purple-500/20 text-purple-400 border-purple-500/30",
+  red: "bg-red-500/20 text-red-700 border-red-500/30",
+  amber: "bg-amber-500/20 text-amber-700 border-amber-500/30",
+  green: "bg-green-500/20 text-green-700 border-green-500/30",
+  blue: "bg-blue-500/20 text-blue-700 border-blue-500/30",
+  purple: "bg-purple-500/20 text-purple-700 border-purple-500/30",
   teal: "bg-teal-500/20 text-teal-400 border-teal-500/30",
   orange: "bg-orange-500/20 text-orange-400 border-orange-500/30",
   slate: "bg-slate-500/20 text-slate-400 border-slate-500/30",
@@ -633,13 +633,13 @@ const colorClasses: Record<string, string> = {
 };
 
 const categoryHeaderColors: Record<string, string> = {
-  amber: "text-amber-400 border-amber-500/30",
-  blue: "text-blue-400 border-blue-500/30",
-  purple: "text-purple-400 border-purple-500/30",
-  green: "text-green-400 border-green-500/30",
+  amber: "text-amber-700 border-amber-500/30",
+  blue: "text-blue-700 border-blue-500/30",
+  purple: "text-purple-700 border-purple-500/30",
+  green: "text-green-700 border-green-500/30",
   teal: "text-teal-400 border-teal-500/30",
   orange: "text-orange-400 border-orange-500/30",
-  red: "text-red-400 border-red-500/30",
+  red: "text-red-700 border-red-500/30",
   slate: "text-slate-400 border-slate-500/30",
   cyan: "text-cyan-400 border-cyan-500/30",
   violet: "text-violet-400 border-violet-500/30",

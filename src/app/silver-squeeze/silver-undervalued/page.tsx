@@ -214,7 +214,7 @@ export default function SilverUndervaluedPage() {
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
                                             <span className="text-slate-600">Current (2026)</span>
-                                            <span className="text-red-400 font-bold">~80:1 to 90:1</span>
+                                            <span className="text-red-700 font-bold">~80:1 to 90:1</span>
                                         </div>
                                         <div className="w-full bg-slate-100 rounded-full h-3">
                                             <div className="bg-red-400 h-3 rounded-full" style={{ width: '85%' }}></div>
@@ -239,7 +239,7 @@ export default function SilverUndervaluedPage() {
                         {/* Inflation-Adjusted */}
                         <section id="inflation-adjusted" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <History className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Inflation-Adjusted Silver Price</h2>
@@ -255,7 +255,7 @@ export default function SilverUndervaluedPage() {
                                     <div className="text-xs text-slate-600">January 21, 1980</div>
                                 </div>
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30 text-center">
-                                    <div className="text-4xl font-bold text-green-400 mb-2">$185+</div>
+                                    <div className="text-4xl font-bold text-green-700 mb-2">$185+</div>
                                     <div className="text-slate-600 text-sm mb-4">Inflation-Adjusted (2026)</div>
                                     <div className="text-xs text-slate-600">Using CPI calculation</div>
                                 </div>
@@ -273,11 +273,11 @@ export default function SilverUndervaluedPage() {
                                 <p className="text-slate-600 mb-4">Gold has reached new all-time highs in nominal AND inflation-adjusted terms. Silver hasn&apos;t come close.</p>
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="text-center p-4 bg-slate-50 rounded-xl">
-                                        <div className="text-lg font-bold text-green-400">Gold: Yes</div>
+                                        <div className="text-lg font-bold text-green-700">Gold: Yes</div>
                                         <div className="text-xs text-slate-600">New ATH (nominal & real)</div>
                                     </div>
                                     <div className="text-center p-4 bg-slate-50 rounded-xl">
-                                        <div className="text-lg font-bold text-red-400">Silver: No</div>
+                                        <div className="text-lg font-bold text-red-700">Silver: No</div>
                                         <div className="text-xs text-slate-600">Far below ATH (both)</div>
                                     </div>
                                 </div>
@@ -288,7 +288,7 @@ export default function SilverUndervaluedPage() {
                         {/* Industrial Value */}
                         <section id="industrial-value" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Factory className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Industrial Utility Value</h2>
@@ -318,7 +318,7 @@ export default function SilverUndervaluedPage() {
                         {/* Mining Costs */}
                         <section id="mining-costs" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Production Cost Floor</h2>
@@ -375,7 +375,7 @@ export default function SilverUndervaluedPage() {
                         {/* Expert Targets */}
                         <section id="expert-targets" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Expert Price Targets</h2>
@@ -388,7 +388,7 @@ export default function SilverUndervaluedPage() {
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
                                     <div className="flex justify-between items-center mb-2">
                                         <h4 className="font-bold text-slate-900 text-lg">Conservative Target</h4>
-                                        <span className="text-2xl font-bold text-green-400">$40-50/oz</span>
+                                        <span className="text-2xl font-bold text-green-700">$40-50/oz</span>
                                     </div>
                                     <p className="text-sm text-slate-600">Based on modest ratio compression and continued supply deficit. Achievable in normal market conditions.</p>
                                 </div>
@@ -404,7 +404,7 @@ export default function SilverUndervaluedPage() {
                                 <div className="p-6 rounded-xl bg-[#B22234]/10 border border-[#B22234]/30">
                                     <div className="flex justify-between items-center mb-2">
                                         <h4 className="font-bold text-[#B22234] text-lg">Aggressive Target</h4>
-                                        <span className="text-2xl font-bold text-red-400">$100-300/oz</span>
+                                        <span className="text-2xl font-bold text-red-700">$100-300/oz</span>
                                     </div>
                                     <p className="text-sm text-slate-600">Requires currency crisis, industrial squeeze, or paper market failure. High conviction silver bulls cite these targets.</p>
                                 </div>
@@ -438,17 +438,17 @@ export default function SilverUndervaluedPage() {
                                     <p className="text-sm text-slate-600">Gold-silver ratio at historic extremes. Mean reversion suggests silver outperforms gold significantly.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <History className="w-8 h-8 text-red-400 mb-4" />
+                                    <History className="w-8 h-8 text-red-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Historical Context</h4>
                                     <p className="text-sm text-slate-600">Inflation-adjusted price far below 1980 peak. Silver hasn&apos;t kept pace with money supply growth.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Factory className="w-8 h-8 text-blue-400 mb-4" />
+                                    <Factory className="w-8 h-8 text-blue-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Fundamental Demand</h4>
                                     <p className="text-sm text-slate-600">Industrial demand growing (solar, EVs). Supply deficit persisting. COMEX inventory depleting.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Scale className="w-8 h-8 text-purple-400 mb-4" />
+                                    <Scale className="w-8 h-8 text-purple-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Market Structure</h4>
                                     <p className="text-sm text-slate-600">Concentrated short positions. Paper market dominant. Physical market tightening.</p>
                                 </div>

@@ -152,20 +152,20 @@ export default function TspRolloverPage() {
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
-                                    <h4 className="font-bold text-green-400 mb-3 flex items-center gap-2">
+                                    <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Separated from Service
                                     </h4>
-                                    <p className="text-green-300 text-sm mb-3">If you&apos;ve left federal employment (retired, resigned, or separated), you can roll over your entire TSP at any age, no restrictions.</p>
-                                    <p className="text-green-400 text-xs">This is the easiest path. Most people do rollovers after they leave government service.</p>
+                                    <p className="text-green-800 text-sm mb-3">If you&apos;ve left federal employment (retired, resigned, or separated), you can roll over your entire TSP at any age, no restrictions.</p>
+                                    <p className="text-green-700 text-xs">This is the easiest path. Most people do rollovers after they leave government service.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-blue-500/10 border border-blue-500/20">
-                                    <h4 className="font-bold text-blue-400 mb-3 flex items-center gap-2">
+                                    <h4 className="font-bold text-blue-700 mb-3 flex items-center gap-2">
                                         <Clock className="w-5 h-5" />
                                         Still Working (Age 59½+)
                                     </h4>
-                                    <p className="text-blue-300 text-sm mb-3">If you&apos;re still employed but over 59½, you can take an &quot;age-based in-service withdrawal&quot; and roll it into a Gold IRA while continuing to work.</p>
-                                    <p className="text-blue-400 text-xs">You keep your job, keep getting matching, and diversify part of your savings into gold.</p>
+                                    <p className="text-blue-800 text-sm mb-3">If you&apos;re still employed but over 59½, you can take an &quot;age-based in-service withdrawal&quot; and roll it into a Gold IRA while continuing to work.</p>
+                                    <p className="text-blue-700 text-xs">You keep your job, keep getting matching, and diversify part of your savings into gold.</p>
                                 </div>
                             </div>
                             <Callout type="warning" title="Under 59½ and Still Working?">
@@ -277,9 +277,9 @@ export default function TspRolloverPage() {
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm text-slate-600">
-                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Traditional Gold IRA</td><td className="p-4 text-green-400 font-semibold">Tax-Free</td></tr>
-                                        <tr><td className="p-4">Roth TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-green-400 font-semibold">Tax-Free</td></tr>
-                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-amber-400 font-semibold">Taxable (Conversion)</td></tr>
+                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Traditional Gold IRA</td><td className="p-4 text-green-700 font-semibold">Tax-Free</td></tr>
+                                        <tr><td className="p-4">Roth TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-green-700 font-semibold">Tax-Free</td></tr>
+                                        <tr><td className="p-4">Traditional TSP</td><td className="p-4">Roth Gold IRA</td><td className="p-4 text-amber-700 font-semibold">Taxable (Conversion)</td></tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -293,31 +293,31 @@ export default function TspRolloverPage() {
                             <h2>Common Mistakes to Avoid</h2>
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Taking a check instead of direct transfer</h4>
-                                        <p className="text-sm text-red-300 mt-1">Triggers 20% withholding and creates a 60-day deadline. Always choose direct transfer.</p>
+                                        <h4 className="font-bold text-red-700">Taking a check instead of direct transfer</h4>
+                                        <p className="text-sm text-red-800 mt-1">Triggers 20% withholding and creates a 60-day deadline. Always choose direct transfer.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Rolling over while under 59½ and still employed</h4>
-                                        <p className="text-sm text-red-300 mt-1">You&apos;re not eligible for a rollover unless you&apos;ve separated from service or qualify for age-based withdrawal.</p>
+                                        <h4 className="font-bold text-red-700">Rolling over while under 59½ and still employed</h4>
+                                        <p className="text-sm text-red-800 mt-1">You&apos;re not eligible for a rollover unless you&apos;ve separated from service or qualify for age-based withdrawal.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Rolling Traditional TSP to Roth IRA without planning</h4>
-                                        <p className="text-sm text-red-300 mt-1">This is a taxable conversion. You&apos;ll owe income taxes on the entire amount that year. Plan accordingly.</p>
+                                        <h4 className="font-bold text-red-700">Rolling Traditional TSP to Roth IRA without planning</h4>
+                                        <p className="text-sm text-red-800 mt-1">This is a taxable conversion. You&apos;ll owe income taxes on the entire amount that year. Plan accordingly.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Choosing the wrong Gold IRA company</h4>
-                                        <p className="text-sm text-red-300 mt-1">High fees, pushy sales tactics, or non-IRA-approved products can ruin your rollover. Research thoroughly.</p>
+                                        <h4 className="font-bold text-red-700">Choosing the wrong Gold IRA company</h4>
+                                        <p className="text-sm text-red-800 mt-1">High fees, pushy sales tactics, or non-IRA-approved products can ruin your rollover. Research thoroughly.</p>
                                     </div>
                                 </div>
                             </div>

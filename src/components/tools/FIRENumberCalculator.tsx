@@ -264,7 +264,7 @@ export function FIRENumberCalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <TrendingUp className="h-5 w-5 text-purple-400" />
+                <TrendingUp className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Investment Assumptions</h3>
             </div>
@@ -399,7 +399,7 @@ export function FIRENumberCalculator() {
             <div className="space-y-4">
               <div className="flex justify-between items-center pb-4 border-b border-slate-200">
                 <span className="text-slate-500">FI Ratio</span>
-                <span className="text-xl font-bold text-purple-400">
+                <span className="text-xl font-bold text-purple-700">
                   {calculations.fiRatio.toFixed(1)}x
                 </span>
               </div>

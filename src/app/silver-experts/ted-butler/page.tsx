@@ -120,14 +120,14 @@ export default function TedButlerPage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-red-500/20 px-4 py-1.5 text-sm font-semibold text-red-400 mb-6 border border-red-500/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-red-500/20 px-4 py-1.5 text-sm font-semibold text-red-700 mb-6 border border-red-500/30 ml-4">
                             <AlertTriangle className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-4">
                             Ted Butler on Silver
                         </h1>
-                        <p className="text-xl text-red-400 font-semibold mb-4">
+                        <p className="text-xl text-red-700 font-semibold mb-4">
                             The Pioneer of Silver Manipulation Research
                         </p>
                         <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
@@ -147,13 +147,13 @@ export default function TedButlerPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <Search className="w-6 h-6 text-red-400" />
+                                    <Search className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Who Is Ted Butler?</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600">
-                                    Ted Butler is an independent precious metals analyst who has spent over three decades researching and documenting <strong className="text-red-400">silver price manipulation</strong>. He is widely credited as the pioneer of silver manipulation research, having first identified suspicious trading patterns in the 1980s.
+                                    Ted Butler is an independent precious metals analyst who has spent over three decades researching and documenting <strong className="text-red-700">silver price manipulation</strong>. He is widely credited as the pioneer of silver manipulation research, having first identified suspicious trading patterns in the 1980s.
                                 </p>
                                 <p className="text-slate-600">
                                     Unlike many commentators who speak in generalities about &quot;the banks&quot; or &quot;the system,&quot; Butler names names. His research specifically identifies <strong className="text-slate-900">JP Morgan</strong> as holding the largest concentrated short position in silver market history, a position he argues is used to artificially suppress prices.
@@ -166,23 +166,23 @@ export default function TedButlerPage() {
                                     <h4 className="font-bold text-slate-900 mb-4">Ted Butler Quick Facts</h4>
                                     <ul className="space-y-2 text-slate-600">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                                             <span>30+ years researching silver manipulation</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                                             <span>First to identify JP Morgan&apos;s silver short position</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                                             <span>Filed numerous CFTC complaints on manipulation</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                                             <span>Publishes weekly COT analysis for subscribers</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                                             <span>Claims vindicated by 2020 JP Morgan settlement</span>
                                         </li>
                                     </ul>
@@ -194,7 +194,7 @@ export default function TedButlerPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <BarChart3 className="w-6 h-6 text-red-400" />
+                                    <BarChart3 className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Butler&apos;s COMEX Analysis</h2>
                             </div>
@@ -205,7 +205,7 @@ export default function TedButlerPage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Concentrated Short Positions</h3>
                                 <p className="text-slate-600">
-                                    Butler&apos;s key insight is that a small number of banks hold <strong className="text-red-400">massive concentrated short positions</strong> in silver - positions that are larger relative to market size than in any other commodity. He argues these positions are not legitimate hedges but rather tools for price suppression.
+                                    Butler&apos;s key insight is that a small number of banks hold <strong className="text-red-700">massive concentrated short positions</strong> in silver - positions that are larger relative to market size than in any other commodity. He argues these positions are not legitimate hedges but rather tools for price suppression.
                                 </p>
                                 <blockquote className="border-l-4 border-red-400 pl-4 my-6 text-slate-600 italic">
                                     &quot;No legitimate market participant needs to short more silver than exists in annual global mine production. These are not hedges. These are tools of manipulation.&quot;
@@ -227,7 +227,7 @@ export default function TedButlerPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <AlertTriangle className="w-6 h-6 text-red-400" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">The JP Morgan Accusations</h2>
                             </div>
@@ -243,7 +243,7 @@ export default function TedButlerPage() {
                                 </ul>
 
                                 <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6 my-8 not-prose">
-                                    <h4 className="font-bold text-red-400 text-lg mb-3">The 2020 Vindication</h4>
+                                    <h4 className="font-bold text-red-700 text-lg mb-3">The 2020 Vindication</h4>
                                     <p className="text-slate-600">
                                         In September 2020, JP Morgan paid <strong className="text-slate-900">$920 million</strong> to settle charges of manipulating precious metals and Treasury markets. While the settlement cited &quot;spoofing&quot; rather than concentrated short positions, it confirmed what Butler had been saying for years: JP Morgan was manipulating precious metals markets.
                                     </p>
@@ -258,7 +258,7 @@ export default function TedButlerPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <Quote className="w-6 h-6 text-red-400" />
+                                    <Quote className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Key Quotes & Predictions</h2>
                             </div>
@@ -266,7 +266,7 @@ export default function TedButlerPage() {
                                 {keyQuotes.map((item, index) => (
                                     <div key={index} className="bg-slate-50 rounded-lg p-6">
                                         <p className="text-slate-900 text-lg italic mb-3">&quot;{item.quote}&quot;</p>
-                                        <p className="text-red-400 text-sm font-semibold">{item.context}</p>
+                                        <p className="text-red-700 text-sm font-semibold">{item.context}</p>
                                     </div>
                                 ))}
                             </div>
@@ -276,7 +276,7 @@ export default function TedButlerPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <FileText className="w-6 h-6 text-red-400" />
+                                    <FileText className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Key Articles & Research</h2>
                             </div>
@@ -297,7 +297,7 @@ export default function TedButlerPage() {
                         <section className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <CheckCircle2 className="w-6 h-6 text-green-400" />
+                                    <CheckCircle2 className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">What Ted Butler Recommends</h2>
                             </div>
@@ -323,19 +323,19 @@ export default function TedButlerPage() {
                             <h2 className="text-2xl font-bold font-serif text-slate-900 mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-6">
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-red-400 mb-2">Who is Ted Butler?</h3>
+                                    <h3 className="text-lg font-bold text-red-700 mb-2">Who is Ted Butler?</h3>
                                     <p className="text-slate-600">Ted Butler is an independent precious metals analyst who has spent over 30 years researching and documenting silver price manipulation. He is widely credited as the pioneer of silver manipulation research and has filed numerous complaints with the CFTC.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-red-400 mb-2">What is Ted Butler&apos;s thesis on silver manipulation?</h3>
+                                    <h3 className="text-lg font-bold text-red-700 mb-2">What is Ted Butler&apos;s thesis on silver manipulation?</h3>
                                     <p className="text-slate-600">Butler argues that silver prices are artificially suppressed through concentrated short positions held by major banks on the COMEX. He has specifically named JP Morgan as holding the largest short position in silver market history.</p>
                                 </div>
                                 <div className="border-b border-slate-200 pb-6">
-                                    <h3 className="text-lg font-bold text-red-400 mb-2">Was Ted Butler right about JP Morgan?</h3>
+                                    <h3 className="text-lg font-bold text-red-700 mb-2">Was Ted Butler right about JP Morgan?</h3>
                                     <p className="text-slate-600">In 2020, JP Morgan paid $920 million to settle charges of manipulating precious metals markets. While regulators cited spoofing rather than concentrated shorts, the settlement validated years of Butler&apos;s claims that major banks were manipulating silver prices.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-red-400 mb-2">What does Ted Butler predict for silver?</h3>
+                                    <h3 className="text-lg font-bold text-red-700 mb-2">What does Ted Butler predict for silver?</h3>
                                     <p className="text-slate-600">Butler believes silver is the most undervalued asset in the world and predicts explosive price increases when the manipulation ends. He has suggested silver could reach several hundred dollars per ounce when true price discovery occurs.</p>
                                 </div>
                             </div>
@@ -363,27 +363,27 @@ export default function TedButlerPage() {
                             <h3 className="text-lg font-bold text-slate-900 mb-4">Other Silver Experts</h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/silver-experts/andy-schectman" className="text-red-400 hover:text-red-300 font-medium">
+                                    <Link href="/silver-experts/andy-schectman" className="text-red-700 hover:text-red-800 font-medium">
                                         Andy Schectman - Miles Franklin CEO
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/david-morgan" className="text-red-400 hover:text-red-300 font-medium">
+                                    <Link href="/silver-experts/david-morgan" className="text-red-700 hover:text-red-800 font-medium">
                                         David Morgan - The Silver Guru
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/mike-maloney" className="text-red-400 hover:text-red-300 font-medium">
+                                    <Link href="/silver-experts/mike-maloney" className="text-red-700 hover:text-red-800 font-medium">
                                         Mike Maloney - GoldSilver.com
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/rick-rule" className="text-red-400 hover:text-red-300 font-medium">
+                                    <Link href="/silver-experts/rick-rule" className="text-red-700 hover:text-red-800 font-medium">
                                         Rick Rule - Mining Investor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/silver-experts/eric-sprott" className="text-red-400 hover:text-red-300 font-medium">
+                                    <Link href="/silver-experts/eric-sprott" className="text-red-700 hover:text-red-800 font-medium">
                                         Eric Sprott - PSLV Creator
                                     </Link>
                                 </li>

@@ -371,7 +371,7 @@ export function FIRECalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <PiggyBank className="h-5 w-5 text-purple-400" />
+                <PiggyBank className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Current Savings/Investments</h3>
             </div>
@@ -620,7 +620,7 @@ export function FIRECalculator() {
 
                 <div className="flex justify-between items-center">
                   <span className="text-slate-500">Current Savings Rate</span>
-                  <span className="text-xl font-bold text-purple-400">
+                  <span className="text-xl font-bold text-purple-700">
                     {calculations.savingsRate.toFixed(1)}%
                   </span>
                 </div>
@@ -798,7 +798,7 @@ export function FIRECalculator() {
           >
             <div className="flex items-center gap-3">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Briefcase className="h-5 w-5 text-purple-400" />
+                <Briefcase className="h-5 w-5 text-purple-700" />
               </div>
               <div>
                 <div className="font-semibold group-hover:text-[#B22234] transition-colors">
@@ -899,7 +899,7 @@ export function FIRECalculator() {
                 <span><strong>Coast FIRE:</strong> Save enough early, then coast without additional contributions</span>
               </li>
               <li className="flex gap-2">
-                <Flame className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <Flame className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
                 <span><strong>Barista FIRE:</strong> Semi-retirement with part-time work for healthcare benefits</span>
               </li>
             </ul>

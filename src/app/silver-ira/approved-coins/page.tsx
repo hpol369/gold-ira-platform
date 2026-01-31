@@ -355,7 +355,7 @@ export default function ApprovedCoinsPage() {
                                     <div className="space-y-1">
                                         {coin.pros.map((pro, idx) => (
                                             <div key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                                                <CheckCircle2 className="h-4 w-4 text-green-400" />
+                                                <CheckCircle2 className="h-4 w-4 text-green-700" />
                                                 {pro}
                                             </div>
                                         ))}
@@ -420,9 +420,9 @@ export default function ApprovedCoinsPage() {
                             {notApproved.map((item, index) => (
                                 <div key={index} className="bg-red-500/10 border border-red-500/30 rounded-xl p-4">
                                     <div className="flex items-start gap-3">
-                                        <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
+                                        <XCircle className="h-5 w-5 text-red-700 flex-shrink-0 mt-0.5" />
                                         <div>
-                                            <h3 className="font-bold text-red-300">{item.name}</h3>
+                                            <h3 className="font-bold text-red-800">{item.name}</h3>
                                             <p className="text-sm text-slate-600">{item.reason}</p>
                                         </div>
                                     </div>

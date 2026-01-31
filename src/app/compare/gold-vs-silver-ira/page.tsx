@@ -170,8 +170,8 @@ export default function GoldVsSilverIraPage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
-                                    <h4 className="font-bold text-green-400 mb-3">Gold Strengths</h4>
-                                    <ul className="space-y-2 text-sm text-green-300">
+                                    <h4 className="font-bold text-green-700 mb-3">Gold Strengths</h4>
+                                    <ul className="space-y-2 text-sm text-green-800">
                                         <li>• Superior stability and crash protection</li>
                                         <li>• Lower storage costs per dollar</li>
                                         <li>• More liquid (easier to sell large amounts)</li>
@@ -180,8 +180,8 @@ export default function GoldVsSilverIraPage() {
                                     </ul>
                                 </div>
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
-                                    <h4 className="font-bold text-red-400 mb-3">Gold Weaknesses</h4>
-                                    <ul className="space-y-2 text-sm text-red-300">
+                                    <h4 className="font-bold text-red-700 mb-3">Gold Weaknesses</h4>
+                                    <ul className="space-y-2 text-sm text-red-800">
                                         <li>• Higher price per ounce (barrier to entry)</li>
                                         <li>• Lower growth potential than silver</li>
                                         <li>• Less industrial demand</li>
@@ -204,8 +204,8 @@ export default function GoldVsSilverIraPage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
-                                    <h4 className="font-bold text-green-400 mb-3">Silver Strengths</h4>
-                                    <ul className="space-y-2 text-sm text-green-300">
+                                    <h4 className="font-bold text-green-700 mb-3">Silver Strengths</h4>
+                                    <ul className="space-y-2 text-sm text-green-800">
                                         <li>• Higher growth potential in bull markets</li>
                                         <li>• Lower price = more accessible</li>
                                         <li>• Strong industrial demand (solar, electronics)</li>
@@ -214,8 +214,8 @@ export default function GoldVsSilverIraPage() {
                                     </ul>
                                 </div>
                                 <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
-                                    <h4 className="font-bold text-red-400 mb-3">Silver Weaknesses</h4>
-                                    <ul className="space-y-2 text-sm text-red-300">
+                                    <h4 className="font-bold text-red-700 mb-3">Silver Weaknesses</h4>
+                                    <ul className="space-y-2 text-sm text-red-800">
                                         <li>• Higher volatility (bigger drops possible)</li>
                                         <li>• Higher storage costs per dollar</li>
                                         <li>• More affected by economic recessions</li>

@@ -168,18 +168,18 @@ export default function RecessionProofInvestmentsPage() {
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
                                             <td className="p-4 text-[#000080]">2007-2009 (Great Recession)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+25%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-37%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+25%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2001 (Dot-Com Recession)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-13%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+2%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-13%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+2%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2020 (COVID Recession)</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34% (Feb-Mar)</td>
-                                            <td className="p-4 text-green-400 font-semibold">+25% (full year)</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34% (Feb-Mar)</td>
+                                            <td className="p-4 text-green-700 font-semibold">+25% (full year)</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -196,7 +196,7 @@ export default function RecessionProofInvestmentsPage() {
                         {/* 2. Bonds */}
                         <section id="bonds" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. Treasury Bonds</h2>
@@ -238,7 +238,7 @@ export default function RecessionProofInvestmentsPage() {
                         {/* 4. Healthcare */}
                         <section id="healthcare" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <Pill className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. Healthcare Stocks</h2>
@@ -269,7 +269,7 @@ export default function RecessionProofInvestmentsPage() {
                         {/* 5. Consumer Staples */}
                         <section id="staples" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Consumer Staples</h2>
@@ -311,7 +311,7 @@ export default function RecessionProofInvestmentsPage() {
                         {/* 7. REITs */}
                         <section id="reits" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">7. Essential Real Estate (REITs)</h2>
@@ -348,11 +348,11 @@ export default function RecessionProofInvestmentsPage() {
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Treasury Bonds</span>
-                                        <span className="font-semibold text-blue-400">20%</span>
+                                        <span className="font-semibold text-blue-700">20%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Defensive Stocks (Utilities, Healthcare, Staples)</span>
-                                        <span className="font-semibold text-green-400">35%</span>
+                                        <span className="font-semibold text-green-700">35%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Cash & Equivalents</span>
@@ -360,7 +360,7 @@ export default function RecessionProofInvestmentsPage() {
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Growth Stocks (Reduced)</span>
-                                        <span className="font-semibold text-purple-400">15%</span>
+                                        <span className="font-semibold text-purple-700">15%</span>
                                     </div>
                                 </div>
                                 <p className="text-sm text-slate-500 mt-4">This is a defensive allocation. Adjust based on your risk tolerance and time horizon.</p>

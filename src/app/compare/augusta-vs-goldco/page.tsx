@@ -220,20 +220,20 @@ export default function AugustaVsGoldcoPage() {
                             <h2>Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-8 not-prose">
                                 <div className="bg-green-500/10 p-6 rounded-xl border border-green-500/30">
-                                    <h3 className="text-xl font-bold text-green-400 mb-4 flex items-center gap-2">
+                                    <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Augusta Pros
                                     </h3>
-                                    <ul className="space-y-2 text-green-300">
+                                    <ul className="space-y-2 text-green-800">
                                         <li>• Zero BBB complaints history</li>
                                         <li>• Incredible educational materials</li>
                                         <li>• Lifetime account support</li>
                                     </ul>
                                 </div>
                                 <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">
-                                    <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2">
+                                    <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Goldco Pros
                                     </h3>
-                                    <ul className="space-y-2 text-blue-300">
+                                    <ul className="space-y-2 text-blue-800">
                                         <li>• Lower minimum ($25k)</li>
                                         <li>• Great buyback guarantee</li>
                                         <li>• Huge promotional silver giveaways</li>

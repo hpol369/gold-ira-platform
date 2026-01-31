@@ -100,7 +100,7 @@ export default function BanksShortingSilverPage() {
                 <Container className="py-8">
                     <div className="grid md:grid-cols-4 gap-6 text-center">
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
-                            <div className="text-4xl font-bold text-red-400 mb-2">$920M</div>
+                            <div className="text-4xl font-bold text-red-700 mb-2">$920M</div>
                             <div className="text-sm text-slate-600 uppercase tracking-wide font-bold">JP Morgan Settlement</div>
                         </div>
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
@@ -108,7 +108,7 @@ export default function BanksShortingSilverPage() {
                             <div className="text-sm text-slate-600 uppercase tracking-wide font-bold">Years of Manipulation</div>
                         </div>
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
-                            <div className="text-4xl font-bold text-red-400 mb-2">1000s</div>
+                            <div className="text-4xl font-bold text-red-700 mb-2">1000s</div>
                             <div className="text-sm text-slate-600 uppercase tracking-wide font-bold">Spoofing Incidents</div>
                         </div>
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
@@ -154,7 +154,7 @@ export default function BanksShortingSilverPage() {
                                 </div>
 
                                 <p className="text-slate-600 leading-relaxed">
-                                    Here is what few people discuss: while maintaining massive short positions publicly, <strong className="text-red-400">JP Morgan was quietly accumulating physical silver</strong>. The bank&apos;s vaults reportedly hold hundreds of millions of ounces of physical silver.
+                                    Here is what few people discuss: while maintaining massive short positions publicly, <strong className="text-red-700">JP Morgan was quietly accumulating physical silver</strong>. The bank&apos;s vaults reportedly hold hundreds of millions of ounces of physical silver.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     Short the paper market to suppress prices. Buy physical at suppressed prices. When manipulation ends, profit from both. This is the accumulation theory that many silver analysts believe explains bank behavior.
@@ -166,13 +166,13 @@ export default function BanksShortingSilverPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <TrendingDown className="w-6 h-6 text-red-400" />
+                                    <TrendingDown className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">The Spoofing Conviction: Federal Crimes Admitted</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600 leading-relaxed">
-                                    In 2020, JP Morgan entered into a <strong className="text-red-400">deferred prosecution agreement</strong> with the Department of Justice. The bank admitted that its traders engaged in widespread spoofing and market manipulation.
+                                    In 2020, JP Morgan entered into a <strong className="text-red-700">deferred prosecution agreement</strong> with the Department of Justice. The bank admitted that its traders engaged in widespread spoofing and market manipulation.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     The settlement included:
@@ -216,7 +216,7 @@ export default function BanksShortingSilverPage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Deutsche Bank</h3>
                                 <p className="text-slate-600 leading-relaxed">
-                                    In 2016, <strong className="text-red-400">Deutsche Bank settled lawsuits</strong> alleging it conspired to manipulate silver prices. As part of the settlement, Deutsche Bank agreed to <strong className="text-slate-900">provide evidence</strong> against other banks involved in the scheme.
+                                    In 2016, <strong className="text-red-700">Deutsche Bank settled lawsuits</strong> alleging it conspired to manipulate silver prices. As part of the settlement, Deutsche Bank agreed to <strong className="text-slate-900">provide evidence</strong> against other banks involved in the scheme.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     This evidence reportedly included chat logs, emails, and trading records showing coordination among major banks in the London silver fix.
@@ -234,11 +234,11 @@ export default function BanksShortingSilverPage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">Bank of Nova Scotia (Scotiabank)</h3>
                                 <p className="text-slate-600 leading-relaxed">
-                                    Scotiabank paid <strong className="text-red-400">$127.4 million</strong> in 2020 to settle CFTC charges that its traders manipulated precious metals futures markets through spoofing.
+                                    Scotiabank paid <strong className="text-red-700">$127.4 million</strong> in 2020 to settle CFTC charges that its traders manipulated precious metals futures markets through spoofing.
                                 </p>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">Pattern of Bank Manipulation Settlements</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">Pattern of Bank Manipulation Settlements</h4>
                                     <ul className="text-slate-600 space-y-2">
                                         <li><strong className="text-slate-900">JP Morgan:</strong> $920 million (2020)</li>
                                         <li><strong className="text-slate-900">Scotiabank:</strong> $127.4 million (2020)</li>
@@ -253,7 +253,7 @@ export default function BanksShortingSilverPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <Target className="w-6 h-6 text-red-400" />
+                                    <Target className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Why Do Banks Short Silver?</h2>
                             </div>
@@ -330,7 +330,7 @@ export default function BanksShortingSilverPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <Shield className="w-6 h-6 text-green-400" />
+                                    <Shield className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Protecting Yourself from Bank Manipulation</h2>
                             </div>

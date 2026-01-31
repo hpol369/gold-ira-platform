@@ -460,7 +460,7 @@ export default function Calculator401kPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                      <Building2 className="h-5 w-5 text-purple-400" />
+                      <Building2 className="h-5 w-5 text-purple-700" />
                     </div>
                     <h2 className="text-lg font-semibold text-slate-900">Employer Match</h2>
                   </div>

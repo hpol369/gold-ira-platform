@@ -179,7 +179,7 @@ export default function GoldIraVsTraditionalIraPage() {
                                     </ul>
                                 </div>
                                 <div className="p-6 rounded-xl bg-white shadow-sm border border-slate-200">
-                                    <h4 className="font-bold text-blue-400 mb-2">Traditional Stock IRA</h4>
+                                    <h4 className="font-bold text-blue-700 mb-2">Traditional Stock IRA</h4>
                                     <ul className="list-disc pl-5 space-y-2 text-sm text-slate-600">
                                         <li><strong className="text-slate-900">Goal:</strong> Wealth Accumulation</li>
                                         <li><strong className="text-slate-900">Asset:</strong> Shares of companies (paper)</li>

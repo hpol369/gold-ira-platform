@@ -67,7 +67,7 @@ export function FeaturedPartner() {
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-amber-400 border border-white/20 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-amber-700 border border-white/20 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
                                             <Star className="w-6 h-6 fill-amber-400" />
                                         </div>
                                         <div>

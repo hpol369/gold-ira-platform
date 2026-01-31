@@ -424,7 +424,7 @@ export function CalPERSPensionCalculator() {
                       <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                         <div className="flex items-start gap-2">
                           <Scale className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                          <p className="text-blue-300 text-sm">{result.reciprocityNote}</p>
+                          <p className="text-blue-800 text-sm">{result.reciprocityNote}</p>
                         </div>
                       </div>
                     )}

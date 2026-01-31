@@ -358,7 +358,7 @@ export default function SilverIraReviewsPage() {
                                                         EDITOR'S CHOICE
                                                     </span>
                                                 )}
-                                                <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-bold rounded">
+                                                <span className="px-2 py-1 bg-green-500/20 text-green-700 text-xs font-bold rounded">
                                                     BBB: {company.bbbRating}
                                                 </span>
                                             </div>
@@ -401,7 +401,7 @@ export default function SilverIraReviewsPage() {
                                         </div>
                                         <div className="bg-slate-50 rounded-lg p-3 border border-slate-200 text-center">
                                             <div className="text-xs text-slate-600 mb-1">BBB Rating</div>
-                                            <div className="font-bold text-green-400">{company.bbbRating}</div>
+                                            <div className="font-bold text-green-700">{company.bbbRating}</div>
                                         </div>
                                         <div className="bg-slate-50 rounded-lg p-3 border border-slate-200 text-center">
                                             <div className="text-xs text-slate-600 mb-1">Trustpilot</div>
@@ -427,20 +427,20 @@ export default function SilverIraReviewsPage() {
                                     {/* Pros & Cons */}
                                     <div className="grid md:grid-cols-2 gap-4 mb-6">
                                         <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-                                            <h4 className="font-bold text-green-400 mb-3 flex items-center gap-2">
+                                            <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                                 <ThumbsUp className="h-4 w-4" /> What We Like
                                             </h4>
                                             <ul className="space-y-2">
                                                 {company.pros.map((pro, idx) => (
                                                     <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
-                                                        <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
+                                                        <CheckCircle2 className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
                                                         {pro}
                                                     </li>
                                                 ))}
                                             </ul>
                                         </div>
                                         <div className="bg-red-500/10 p-4 rounded-xl border border-red-500/20">
-                                            <h4 className="font-bold text-red-400 mb-3 flex items-center gap-2">
+                                            <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                                 <ThumbsDown className="h-4 w-4" /> Room for Improvement
                                             </h4>
                                             <ul className="space-y-2">

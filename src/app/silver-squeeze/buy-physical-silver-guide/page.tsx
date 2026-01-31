@@ -184,22 +184,22 @@ export default function BuyPhysicalSilverGuidePage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
-                                    <CheckCircle2 className="w-8 h-8 text-green-400 mb-4" />
+                                    <CheckCircle2 className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">No Counterparty Risk</h4>
                                     <p className="text-sm text-slate-600">Physical silver in your possession doesn&apos;t depend on any institution&apos;s solvency. Unlike ETF shares or futures contracts, your silver remains yours regardless of market conditions.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
-                                    <Lock className="w-8 h-8 text-green-400 mb-4" />
+                                    <Lock className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">True Ownership</h4>
                                     <p className="text-sm text-slate-600">When you hold physical silver, you have absolute ownership. No terms of service, no account restrictions, no potential for rehypothecation.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
-                                    <Globe className="w-8 h-8 text-green-400 mb-4" />
+                                    <Globe className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Universal Value</h4>
                                     <p className="text-sm text-slate-600">Silver has been money for 5,000 years. Physical silver is recognized and valued worldwide, independent of any government or currency system.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-[#B22234]/10 backdrop-blur-sm border border-[#B22234]/20">
-                                    <TrendingUp className="w-8 h-8 text-green-400 mb-4" />
+                                    <TrendingUp className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Supply Squeeze Exposure</h4>
                                     <p className="text-sm text-slate-600">Physical silver buyers directly impact available supply. During the <Link href="/silver-squeeze" className="text-[#B22234] hover:underline">silver squeeze</Link>, physical demand has exposed the disconnect between paper and physical markets.</p>
                                 </div>
@@ -542,27 +542,27 @@ export default function BuyPhysicalSilverGuidePage() {
                                     <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">Generic Bars/Rounds</td>
-                                            <td className="p-4 text-green-400">3-8%</td>
+                                            <td className="p-4 text-green-700">3-8%</td>
                                             <td className="p-4 text-[#B22234]">8-15%</td>
-                                            <td className="p-4 text-red-400">15%+</td>
+                                            <td className="p-4 text-red-700">15%+</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">Silver Maples/Philharmonics</td>
-                                            <td className="p-4 text-green-400">10-18%</td>
+                                            <td className="p-4 text-green-700">10-18%</td>
                                             <td className="p-4 text-[#B22234]">18-30%</td>
-                                            <td className="p-4 text-red-400">30%+</td>
+                                            <td className="p-4 text-red-700">30%+</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-slate-900">American Silver Eagles</td>
-                                            <td className="p-4 text-green-400">15-25%</td>
+                                            <td className="p-4 text-green-700">15-25%</td>
                                             <td className="p-4 text-[#B22234]">25-40%</td>
-                                            <td className="p-4 text-red-400">40%+</td>
+                                            <td className="p-4 text-red-700">40%+</td>
                                         </tr>
                                         <tr className="bg-slate-100">
                                             <td className="p-4 font-semibold text-slate-900">100 oz Bars</td>
-                                            <td className="p-4 text-green-400">2-5%</td>
+                                            <td className="p-4 text-green-700">2-5%</td>
                                             <td className="p-4 text-[#B22234]">5-10%</td>
-                                            <td className="p-4 text-red-400">10%+</td>
+                                            <td className="p-4 text-red-700">10%+</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -641,28 +641,28 @@ export default function BuyPhysicalSilverGuidePage() {
                                 <h4 className="text-xl font-bold text-slate-900 mb-4">Key Silver IRA Requirements</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <div>
                                             <p className="text-slate-900 font-medium">Purity Standards</p>
                                             <p className="text-sm text-slate-600">Silver must be .999 fine (99.9% pure) minimum</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <div>
                                             <p className="text-slate-900 font-medium">Approved Products</p>
                                             <p className="text-sm text-slate-600">Eagles, Maples, Philharmonics, and certain bars</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <div>
                                             <p className="text-slate-900 font-medium">Custodian Required</p>
                                             <p className="text-sm text-slate-600">Self-directed IRA with precious metals custodian</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <div>
                                             <p className="text-slate-900 font-medium">Approved Depository</p>
                                             <p className="text-sm text-slate-600">Must store at IRS-approved facility</p>
@@ -695,7 +695,7 @@ export default function BuyPhysicalSilverGuidePage() {
                         {/* Section 9: Red Flags */}
                         <section id="red-flags" className="scroll-mt-32">
                             <h2 className="text-[#000080] flex items-center gap-3">
-                                <BadgeAlert className="w-8 h-8 text-red-400" />
+                                <BadgeAlert className="w-8 h-8 text-red-700" />
                                 Red Flags to Avoid When Buying Silver
                             </h2>
 
@@ -705,45 +705,45 @@ export default function BuyPhysicalSilverGuidePage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Prices Too Good to Be True</h4>
-                                        <p className="text-sm text-red-300 mt-1">If someone is selling silver significantly below spot price or with abnormally low premiums, it&apos;s likely counterfeit, stolen, or a scam. Always verify current spot prices.</p>
+                                        <h4 className="font-bold text-red-700">Prices Too Good to Be True</h4>
+                                        <p className="text-sm text-red-800 mt-1">If someone is selling silver significantly below spot price or with abnormally low premiums, it&apos;s likely counterfeit, stolen, or a scam. Always verify current spot prices.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">High-Pressure Sales Tactics</h4>
-                                        <p className="text-sm text-red-300 mt-1">&quot;Buy now or lose this deal forever!&quot; Legitimate dealers don&apos;t need to pressure you. Take your time to research and compare.</p>
+                                        <h4 className="font-bold text-red-700">High-Pressure Sales Tactics</h4>
+                                        <p className="text-sm text-red-800 mt-1">&quot;Buy now or lose this deal forever!&quot; Legitimate dealers don&apos;t need to pressure you. Take your time to research and compare.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Pushing &quot;Rare&quot; or Numismatic Coins</h4>
-                                        <p className="text-sm text-red-300 mt-1">Unscrupulous dealers often push numismatic coins at massive markups to beginners. Stick with bullion products until you understand numismatics.</p>
+                                        <h4 className="font-bold text-red-700">Pushing &quot;Rare&quot; or Numismatic Coins</h4>
+                                        <p className="text-sm text-red-800 mt-1">Unscrupulous dealers often push numismatic coins at massive markups to beginners. Stick with bullion products until you understand numismatics.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">No Physical Address or Phone</h4>
-                                        <p className="text-sm text-red-300 mt-1">Reputable dealers have verifiable business locations and customer service. Anonymous sellers are high risk.</p>
+                                        <h4 className="font-bold text-red-700">No Physical Address or Phone</h4>
+                                        <p className="text-sm text-red-800 mt-1">Reputable dealers have verifiable business locations and customer service. Anonymous sellers are high risk.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">&quot;Allocated&quot; Storage Without Proof</h4>
-                                        <p className="text-sm text-red-300 mt-1">If a dealer offers to store your silver but can&apos;t provide audited proof of allocated holdings, your silver may not exist.</p>
+                                        <h4 className="font-bold text-red-700">&quot;Allocated&quot; Storage Without Proof</h4>
+                                        <p className="text-sm text-red-800 mt-1">If a dealer offers to store your silver but can&apos;t provide audited proof of allocated holdings, your silver may not exist.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Counterfeit Products</h4>
-                                        <p className="text-sm text-red-300 mt-1">Fake silver is increasingly sophisticated. Buy only from reputable sources. Use tools like Sigma Metalytics or specific gravity tests to verify. Learn to spot fakes.</p>
+                                        <h4 className="font-bold text-red-700">Counterfeit Products</h4>
+                                        <p className="text-sm text-red-800 mt-1">Fake silver is increasingly sophisticated. Buy only from reputable sources. Use tools like Sigma Metalytics or specific gravity tests to verify. Learn to spot fakes.</p>
                                     </div>
                                 </div>
                             </div>

@@ -288,7 +288,7 @@ export function LeanFIRECalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Calculator className="h-5 w-5 text-purple-400" />
+                <Calculator className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Assumptions</h3>
             </div>
@@ -446,7 +446,7 @@ export function LeanFIRECalculator() {
           {/* Expense Breakdown */}
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <ShoppingCart className="h-5 w-5 text-purple-400" />
+              <ShoppingCart className="h-5 w-5 text-purple-700" />
               Expense Breakdown
             </h3>
 

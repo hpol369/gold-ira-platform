@@ -212,7 +212,7 @@ export default function SilverSupplyDeficitPage() {
                         {/* Industrial Demand */}
                         <section id="industrial-demand" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Factory className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Industrial Demand Explosion</h2>
@@ -223,7 +223,7 @@ export default function SilverSupplyDeficitPage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Zap className="w-8 h-8 text-blue-400 mb-4" />
+                                    <Zap className="w-8 h-8 text-blue-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Electronics</h4>
                                     <p className="text-sm text-slate-600">Silver is the best electrical conductor. Every smartphone, computer, and electronic device contains silver. 5G infrastructure requires substantial silver.</p>
                                 </div>
@@ -233,12 +233,12 @@ export default function SilverSupplyDeficitPage() {
                                     <p className="text-sm text-slate-600">Each solar panel contains 20 grams of silver. Global solar capacity is growing 20-25% annually, consuming ever more silver.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Car className="w-8 h-8 text-green-400 mb-4" />
+                                    <Car className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Electric Vehicles</h4>
                                     <p className="text-sm text-slate-600">EVs use roughly 1.5-2 oz of silver each, nearly double traditional vehicles. EV production is scaling exponentially.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <TrendingUp className="w-8 h-8 text-purple-400 mb-4" />
+                                    <TrendingUp className="w-8 h-8 text-purple-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Medical & Industrial</h4>
                                     <p className="text-sm text-slate-600">Silver&apos;s antibacterial properties make it essential in medical devices. Industrial uses include brazing, soldering, and catalysts.</p>
                                 </div>
@@ -294,7 +294,7 @@ export default function SilverSupplyDeficitPage() {
                         {/* EV Demand */}
                         <section id="ev-demand" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Car className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Electric Vehicles: The Next Wave</h2>
@@ -332,7 +332,7 @@ export default function SilverSupplyDeficitPage() {
                         {/* Investment Demand */}
                         <section id="investment-demand" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Investment Demand: The Wild Card</h2>
@@ -360,7 +360,7 @@ export default function SilverSupplyDeficitPage() {
                         {/* Price Implications */}
                         <section id="price-implications" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Price Implications: What Happens Next?</h2>

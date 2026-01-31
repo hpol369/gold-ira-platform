@@ -198,7 +198,7 @@ export function InheritanceCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
           <Gift className="h-4 w-4" />
           Inheritance Calculator
         </div>
@@ -217,7 +217,7 @@ export function InheritanceCalculator() {
           <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Gift className="h-5 w-5 text-purple-400" />
+                <Gift className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Inheritance Details</h3>
             </div>
@@ -390,7 +390,7 @@ export function InheritanceCalculator() {
           {/* Main Results */}
           <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
             <h3 className="text-sm text-slate-500 mb-2">After-Tax Value</h3>
-            <div className="text-4xl font-bold text-purple-400 mb-4">
+            <div className="text-4xl font-bold text-purple-700 mb-4">
               {formatCurrency(calculations.afterTaxValue)}
             </div>
 

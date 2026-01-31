@@ -137,13 +137,13 @@ export default function GoldWithoutPenaltyGuidePage() {
                         <div className="bg-green-500/10 border-2 border-green-500/30 rounded-2xl p-8 mb-12 not-prose">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 bg-green-500/20 rounded-full shrink-0">
-                                    <CheckCircle2 className="w-8 h-8 text-green-400" />
+                                    <CheckCircle2 className="w-8 h-8 text-green-700" />
                                 </div>
                                 <div>
                                     <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
                                         Yes, you can move your 401k to gold without any penalty or taxes.
                                     </h2>
-                                    <p className="text-lg text-green-300">
+                                    <p className="text-lg text-green-800">
                                         The key is using a <strong className="text-[#000080]">&quot;direct rollover&quot;</strong> (also called a trustee-to-trustee transfer). When done correctly, your retirement funds transfer directly from your 401(k) to a Gold IRA without you ever touching the money. No taxes. No penalties. No withholding.
                                     </p>
                                 </div>
@@ -176,15 +176,15 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 There&apos;s another way to roll over your 401(k) called an <strong className="text-[#000080]">indirect rollover</strong>. With this method, your old plan sends you a check, and you have 60 days to deposit it into your new IRA.
                             </p>
                             <p>
-                                <strong className="text-red-400">This is where people get into trouble.</strong>
+                                <strong className="text-red-700">This is where people get into trouble.</strong>
                             </p>
 
                             <div className="bg-red-500/10 rounded-xl p-6 border border-red-500/20 not-prose my-6">
-                                <h4 className="font-bold text-red-400 mb-3 flex items-center gap-2">
+                                <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     Indirect Rollover Dangers
                                 </h4>
-                                <ul className="space-y-2 text-red-300 text-sm">
+                                <ul className="space-y-2 text-red-800 text-sm">
                                     <li className="flex items-start gap-2">
                                         <XCircle className="w-4 h-4 mt-0.5 shrink-0" />
                                         <span><strong>20% mandatory withholding</strong> - Your old plan must withhold 20% for taxes, even if you plan to complete the rollover</span>
@@ -218,30 +218,30 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <div className="bg-green-500/10 border-2 border-green-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="p-2 bg-green-500/20 rounded-lg">
-                                            <CheckCircle2 className="w-6 h-6 text-green-400" />
+                                            <CheckCircle2 className="w-6 h-6 text-green-700" />
                                         </div>
                                         <h3 className="text-xl font-bold text-[#000080] m-0">Direct Rollover</h3>
                                     </div>
-                                    <p className="text-green-300 font-semibold mb-4">RECOMMENDED</p>
+                                    <p className="text-green-800 font-semibold mb-4">RECOMMENDED</p>
                                     <ul className="space-y-3">
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">No taxes</strong> - funds transfer tax-free</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">No penalties</strong> - no early withdrawal penalty</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">No withholding</strong> - 100% of your money transfers</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">No deadline</strong> - no 60-day rule to worry about</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <CheckCircle2 className="w-5 h-5 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">You never touch the money</strong> - lowest risk</span>
                                         </li>
                                     </ul>
@@ -251,30 +251,30 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <div className="bg-red-500/10 border-2 border-red-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="p-2 bg-red-500/20 rounded-lg">
-                                            <XCircle className="w-6 h-6 text-red-400" />
+                                            <XCircle className="w-6 h-6 text-red-700" />
                                         </div>
                                         <h3 className="text-xl font-bold text-[#000080] m-0">Indirect Rollover</h3>
                                     </div>
-                                    <p className="text-red-300 font-semibold mb-4">AVOID IF POSSIBLE</p>
+                                    <p className="text-red-800 font-semibold mb-4">AVOID IF POSSIBLE</p>
                                     <ul className="space-y-3">
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <XCircle className="w-5 h-5 text-red-400 mt-0.5 shrink-0" />
+                                            <XCircle className="w-5 h-5 text-red-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">20% withholding</strong> - taken from your check</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <XCircle className="w-5 h-5 text-red-400 mt-0.5 shrink-0" />
+                                            <XCircle className="w-5 h-5 text-red-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">60-day deadline</strong> - miss it and face taxes</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <XCircle className="w-5 h-5 text-red-400 mt-0.5 shrink-0" />
+                                            <XCircle className="w-5 h-5 text-red-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">10% penalty risk</strong> - if under 59 1/2</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <XCircle className="w-5 h-5 text-red-400 mt-0.5 shrink-0" />
+                                            <XCircle className="w-5 h-5 text-red-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">Must replace withheld funds</strong> - from pocket</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-slate-600">
-                                            <XCircle className="w-5 h-5 text-red-400 mt-0.5 shrink-0" />
+                                            <XCircle className="w-5 h-5 text-red-700 mt-0.5 shrink-0" />
                                             <span><strong className="text-[#000080]">Only one per year</strong> - IRS limitation</span>
                                         </li>
                                     </ul>
@@ -311,9 +311,9 @@ export default function GoldWithoutPenaltyGuidePage() {
                                     <div>
                                         <h4 className="font-bold text-[#000080] text-lg flex items-center gap-2">
                                             Request a DIRECT Rollover
-                                            <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">KEY STEP</span>
+                                            <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">KEY STEP</span>
                                         </h4>
-                                        <p className="text-green-300 mt-1">This is the critical step. Specifically request a <strong>&quot;direct rollover&quot;</strong> or <strong>&quot;trustee-to-trustee transfer.&quot;</strong> Your new custodian sends the rollover request to your 401(k) administrator. Make sure funds are sent directly to your new IRA custodian, not to you personally.</p>
+                                        <p className="text-green-800 mt-1">This is the critical step. Specifically request a <strong>&quot;direct rollover&quot;</strong> or <strong>&quot;trustee-to-trustee transfer.&quot;</strong> Your new custodian sends the rollover request to your 401(k) administrator. Make sure funds are sent directly to your new IRA custodian, not to you personally.</p>
                                     </div>
                                 </div>
 
@@ -380,7 +380,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                         </span>
                                     </summary>
                                     <p className="mt-4 leading-relaxed text-slate-600">
-                                        <strong className="text-green-400">No.</strong> A direct rollover from a 401(k) to a Gold IRA is completely tax-free. The funds transfer directly between custodians without you ever touching the money. No taxes, no withholding, no penalties. The key is using a direct rollover rather than an indirect rollover.
+                                        <strong className="text-green-700">No.</strong> A direct rollover from a 401(k) to a Gold IRA is completely tax-free. The funds transfer directly between custodians without you ever touching the money. No taxes, no withholding, no penalties. The key is using a direct rollover rather than an indirect rollover.
                                     </p>
                                 </details>
 
@@ -394,7 +394,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                         </span>
                                     </summary>
                                     <p className="mt-4 leading-relaxed text-slate-600">
-                                        If you cash out before age 59 1/2, you face a <strong className="text-red-400">10% early withdrawal penalty</strong> plus income taxes (typically 20-40% depending on your bracket). This means you could lose 30-50% of your savings. A direct rollover to a Gold IRA avoids all of these penalties and taxes.
+                                        If you cash out before age 59 1/2, you face a <strong className="text-red-700">10% early withdrawal penalty</strong> plus income taxes (typically 20-40% depending on your bracket). This means you could lose 30-50% of your savings. A direct rollover to a Gold IRA avoids all of these penalties and taxes.
                                     </p>
                                 </details>
 
@@ -436,7 +436,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                         </span>
                                     </summary>
                                     <p className="mt-4 leading-relaxed text-slate-600">
-                                        If you do an <em>indirect</em> rollover and miss the 60-day deadline, the entire amount is treated as a taxable distribution. You&apos;ll owe income taxes plus a 10% penalty if under 59 1/2. This is exactly why we recommend <strong className="text-green-400">direct rollovers</strong> - there&apos;s no deadline because you never take possession of the funds.
+                                        If you do an <em>indirect</em> rollover and miss the 60-day deadline, the entire amount is treated as a taxable distribution. You&apos;ll owe income taxes plus a 10% penalty if under 59 1/2. This is exactly why we recommend <strong className="text-green-700">direct rollovers</strong> - there&apos;s no deadline because you never take possession of the funds.
                                     </p>
                                 </details>
 
@@ -450,7 +450,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                         </span>
                                     </summary>
                                     <p className="mt-4 leading-relaxed text-slate-600">
-                                        <strong className="text-green-400">No limit.</strong> There is no IRS cap on rollover amounts. You can transfer your entire 401(k) balance or just a portion. The rollover is tax-free and penalty-free regardless of the amount, as long as you use the direct rollover method.
+                                        <strong className="text-green-700">No limit.</strong> There is no IRS cap on rollover amounts. You can transfer your entire 401(k) balance or just a portion. The rollover is tax-free and penalty-free regardless of the amount, as long as you use the direct rollover method.
                                     </p>
                                 </details>
 

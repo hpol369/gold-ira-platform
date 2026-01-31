@@ -184,7 +184,7 @@ export default function SilverStackingGuidePage() {
                                     <span>Physical Silver</span>
                                 </div>
                                 <div className="flex items-center gap-2 bg-slate-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-200">
-                                    <Target className="h-4 w-4 text-green-400" />
+                                    <Target className="h-4 w-4 text-green-700" />
                                     <span>Low Premium Focus</span>
                                 </div>
                                 <div className="flex items-center gap-2 bg-slate-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-200">
@@ -229,7 +229,7 @@ export default function SilverStackingGuidePage() {
                             {/* Why Stack */}
                             <section id="why-stack" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                    <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Stack Silver?</h2>
@@ -321,7 +321,7 @@ export default function SilverStackingGuidePage() {
                             {/* Stacking Strategies */}
                             <section id="strategies" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                    <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                         <Target className="w-6 h-6" />
                                     </div>
                                     <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Stacking Strategies</h2>
@@ -458,7 +458,7 @@ export default function SilverStackingGuidePage() {
                             {/* Common Mistakes */}
                             <section id="mistakes" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                    <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                         <AlertTriangle className="w-6 h-6" />
                                     </div>
                                     <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Common Stacking Mistakes</h2>

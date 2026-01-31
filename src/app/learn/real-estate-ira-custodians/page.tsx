@@ -161,7 +161,7 @@ export default function RealEstateIraCustodiansPage() {
                                             <td className="p-4 text-center text-slate-600">{custodian.monthlyFee}</td>
                                             <td className="p-4 text-center">
                                                 {custodian.checkbookControl ? (
-                                                    <CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" />
+                                                    <CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" />
                                                 ) : (
                                                     <span className="text-slate-500">—</span>
                                                 )}
@@ -229,13 +229,13 @@ export default function RealEstateIraCustodiansPage() {
                                 {/* Pros and Cons */}
                                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                                     <div>
-                                        <h4 className="text-green-400 font-semibold mb-3 flex items-center gap-2">
+                                        <h4 className="text-green-700 font-semibold mb-3 flex items-center gap-2">
                                             <CheckCircle2 className="w-4 h-4" /> Pros
                                         </h4>
                                         <ul className="space-y-2">
                                             {custodian.pros.map((pro, i) => (
                                                 <li key={i} className="flex items-start gap-2 text-slate-600 text-sm">
-                                                    <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                                                    <CheckCircle2 className="w-4 h-4 text-green-700 flex-shrink-0 mt-0.5" />
                                                     {pro}
                                                 </li>
                                             ))}

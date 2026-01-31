@@ -147,7 +147,7 @@ export default function MoneyLongevityCalculatorPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-500/10 text-purple-700 border border-purple-500/20 mb-4">
                 Retirement Planning Tool
               </span>
               <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-4">
@@ -216,7 +216,7 @@ export default function MoneyLongevityCalculatorPage() {
                         <div className="space-y-4">
                           <h3 className="text-lg font-semibold text-slate-900 text-center">Total Retirement Savings</h3>
                           <div className="text-center">
-                            <span className="text-4xl font-bold text-purple-400">
+                            <span className="text-4xl font-bold text-purple-700">
                               {formatCurrency(currentSavings)}
                             </span>
                           </div>
@@ -250,7 +250,7 @@ export default function MoneyLongevityCalculatorPage() {
                         <div className="space-y-4">
                           <h3 className="text-lg font-semibold text-slate-900 text-center">Current Age</h3>
                           <div className="text-center">
-                            <span className="text-4xl font-bold text-purple-400">{currentAge}</span>
+                            <span className="text-4xl font-bold text-purple-700">{currentAge}</span>
                             <span className="text-xl text-slate-500 ml-2">years old</span>
                           </div>
                           <input
@@ -436,7 +436,7 @@ export default function MoneyLongevityCalculatorPage() {
                         <div className="space-y-4">
                           <h3 className="text-lg font-semibold text-slate-900 text-center">Expected Annual Return</h3>
                           <div className="text-center">
-                            <span className="text-4xl font-bold text-purple-400">{expectedReturn}%</span>
+                            <span className="text-4xl font-bold text-purple-700">{expectedReturn}%</span>
                           </div>
                           <input
                             type="range"
@@ -497,7 +497,7 @@ export default function MoneyLongevityCalculatorPage() {
                         </div>
 
                         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                          <p className="text-blue-300 text-sm">
+                          <p className="text-blue-800 text-sm">
                             <strong>Real Return:</strong> {(expectedReturn - inflationRate).toFixed(1)}% (return after inflation)<br />
                             <strong>Historical Average:</strong> S&P 500 has returned ~10% nominal, ~7% real
                           </p>
@@ -731,7 +731,7 @@ export default function MoneyLongevityCalculatorPage() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-purple-400 mb-3">The 4% Rule</h3>
+                <h3 className="text-lg font-semibold text-purple-700 mb-3">The 4% Rule</h3>
                 <p className="text-slate-600">
                   The classic guideline suggests withdrawing 4% of your initial savings annually
                   (adjusted for inflation) to make your money last 30 years. More conservative
@@ -740,7 +740,7 @@ export default function MoneyLongevityCalculatorPage() {
               </div>
 
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-purple-400 mb-3">Sequence of Returns Risk</h3>
+                <h3 className="text-lg font-semibold text-purple-700 mb-3">Sequence of Returns Risk</h3>
                 <p className="text-slate-600">
                   Poor market returns early in retirement can dramatically shorten how long your
                   money lasts. This is why diversification with assets like gold can provide
@@ -749,7 +749,7 @@ export default function MoneyLongevityCalculatorPage() {
               </div>
 
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-purple-400 mb-3">Inflation Impact</h3>
+                <h3 className="text-lg font-semibold text-purple-700 mb-3">Inflation Impact</h3>
                 <p className="text-slate-600">
                   At 3% inflation, your purchasing power is cut in half every 24 years.
                   Your $4,000/month expenses could become $8,000/month in 24 years.
@@ -758,7 +758,7 @@ export default function MoneyLongevityCalculatorPage() {
               </div>
 
               <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-purple-400 mb-3">Longevity Risk</h3>
+                <h3 className="text-lg font-semibold text-purple-700 mb-3">Longevity Risk</h3>
                 <p className="text-slate-600">
                   A 65-year-old couple has a 50% chance of one spouse living to 90+.
                   Planning for a 30+ year retirement is increasingly important.

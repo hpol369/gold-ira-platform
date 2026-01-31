@@ -130,7 +130,7 @@ export default function HeroBullionReviewPage() {
                             <span>/</span>
                             <span>Hero Bullion</span>
                         </div>
-                        <div className="inline-block bg-purple-500/20 text-purple-400 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-purple-500/30">
+                        <div className="inline-block bg-purple-500/20 text-purple-700 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-purple-500/30">
                             High CPC Keyword: $2.50
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
@@ -157,7 +157,7 @@ export default function HeroBullionReviewPage() {
                     <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 md:p-8">
                         <div className="grid md:grid-cols-3 gap-8 items-center">
                             <div className="md:col-span-2">
-                                <div className="flex items-center gap-2 text-purple-400 font-semibold text-sm mb-2">
+                                <div className="flex items-center gap-2 text-purple-700 font-semibold text-sm mb-2">
                                     <TrendingUp className="w-4 h-4" />
                                     RISING STAR
                                 </div>
@@ -170,7 +170,7 @@ export default function HeroBullionReviewPage() {
                                 <div className="text-5xl font-bold text-slate-900 mb-2">4.4</div>
                                 <StarRating rating={4.4} />
                                 <div className="mt-4 pt-4 border-t border-slate-200">
-                                    <div className="flex items-center justify-center gap-2 text-green-400">
+                                    <div className="flex items-center justify-center gap-2 text-green-700">
                                         <CheckCircle className="w-5 h-5" />
                                         <span className="font-semibold">Recommended</span>
                                     </div>
@@ -202,11 +202,11 @@ export default function HeroBullionReviewPage() {
                                     <div className="text-sm text-slate-600">Year Founded</div>
                                 </div>
                                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                    <div className="text-2xl font-bold text-green-400">Fast</div>
+                                    <div className="text-2xl font-bold text-green-700">Fast</div>
                                     <div className="text-sm text-slate-600">Shipping Speed</div>
                                 </div>
                                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                    <div className="text-2xl font-bold text-purple-400">Growing</div>
+                                    <div className="text-2xl font-bold text-purple-700">Growing</div>
                                     <div className="text-sm text-slate-600">Reputation</div>
                                 </div>
                             </div>
@@ -241,7 +241,7 @@ export default function HeroBullionReviewPage() {
 
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
-                                    <Zap className="w-5 h-5 text-purple-400 shrink-0 mt-1" />
+                                    <Zap className="w-5 h-5 text-purple-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-slate-900 mb-2">Why Hero Bullion Can Offer Low Prices</h4>
                                         <p className="text-sm text-slate-600">
@@ -280,17 +280,17 @@ export default function HeroBullionReviewPage() {
 
                         <div className="grid md:grid-cols-3 gap-4 my-8">
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Truck className="w-8 h-8 text-blue-400 mx-auto mb-3" />
+                                <Truck className="w-8 h-8 text-blue-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Free Shipping</div>
                                 <div className="text-sm text-slate-600">Orders over $199</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Clock className="w-8 h-8 text-green-400 mx-auto mb-3" />
+                                <Clock className="w-8 h-8 text-green-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Fast Processing</div>
                                 <div className="text-sm text-slate-600">1-2 business days</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
-                                <Shield className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+                                <Shield className="w-8 h-8 text-purple-700 mx-auto mb-3" />
                                 <div className="font-bold text-slate-900 mb-1">Fully Insured</div>
                                 <div className="text-sm text-slate-600">Every shipment</div>
                             </div>
@@ -402,11 +402,11 @@ export default function HeroBullionReviewPage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">Ship Speed</span>
-                                        <span className="text-green-400 font-bold">Very Fast</span>
+                                        <span className="text-green-700 font-bold">Very Fast</span>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-600">Service</span>
-                                        <span className="text-green-400 font-bold">Excellent</span>
+                                        <span className="text-green-700 font-bold">Excellent</span>
                                     </div>
                                 </div>
                             </div>

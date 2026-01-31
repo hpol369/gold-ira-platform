@@ -27,7 +27,7 @@ export default function Solo401kContributionLimitsPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
                             <Calendar className="w-4 h-4" />
                             Updated for 2026 Tax Year
                         </div>
@@ -46,15 +46,15 @@ export default function Solo401kContributionLimitsPage() {
                         {/* Quick Limits Summary */}
                         <div className="grid sm:grid-cols-3 gap-4 mb-8">
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                <div className="text-3xl font-bold text-purple-400 mb-1">$23,500</div>
+                                <div className="text-3xl font-bold text-purple-700 mb-1">$23,500</div>
                                 <div className="text-sm text-slate-500">Employee Deferral</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                <div className="text-3xl font-bold text-purple-400 mb-1">25%</div>
+                                <div className="text-3xl font-bold text-purple-700 mb-1">25%</div>
                                 <div className="text-sm text-slate-500">Employer Contribution</div>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                <div className="text-3xl font-bold text-purple-400 mb-1">$70,000</div>
+                                <div className="text-3xl font-bold text-purple-700 mb-1">$70,000</div>
                                 <div className="text-sm text-slate-500">Total Maximum</div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default function Solo401kContributionLimitsPage() {
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
-                                        <Users className="w-6 h-6 text-purple-400" />
+                                        <Users className="w-6 h-6 text-purple-700" />
                                     </div>
                                     <h3 className="text-xl font-bold text-slate-900">Under Age 50</h3>
                                 </div>
@@ -97,8 +97,8 @@ export default function Solo401kContributionLimitsPage() {
                                         <span className="text-slate-500">N/A</span>
                                     </div>
                                     <div className="flex justify-between items-center py-3 bg-purple-500/10 rounded-lg px-4 -mx-4">
-                                        <span className="text-purple-300 font-semibold">Total Maximum</span>
-                                        <span className="text-purple-400 font-bold text-xl">$70,000</span>
+                                        <span className="text-purple-800 font-semibold">Total Maximum</span>
+                                        <span className="text-purple-700 font-bold text-xl">$70,000</span>
                                     </div>
                                 </div>
                             </div>
@@ -107,11 +107,11 @@ export default function Solo401kContributionLimitsPage() {
                             <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-8">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="w-12 h-12 rounded-xl bg-purple-500/30 flex items-center justify-center">
-                                        <TrendingUp className="w-6 h-6 text-purple-400" />
+                                        <TrendingUp className="w-6 h-6 text-purple-700" />
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-slate-900">Age 50 and Over</h3>
-                                        <span className="text-xs text-purple-400">Catch-Up Eligible</span>
+                                        <span className="text-xs text-purple-700">Catch-Up Eligible</span>
                                     </div>
                                 </div>
 
@@ -126,11 +126,11 @@ export default function Solo401kContributionLimitsPage() {
                                     </div>
                                     <div className="flex justify-between items-center py-3 border-b border-slate-200">
                                         <span className="text-slate-600">Catch-Up Contribution</span>
-                                        <span className="text-green-400 font-semibold">+ $7,500</span>
+                                        <span className="text-green-700 font-semibold">+ $7,500</span>
                                     </div>
                                     <div className="flex justify-between items-center py-3 bg-purple-500/20 rounded-lg px-4 -mx-4">
-                                        <span className="text-purple-300 font-semibold">Total Maximum</span>
-                                        <span className="text-purple-400 font-bold text-xl">$77,500</span>
+                                        <span className="text-purple-800 font-semibold">Total Maximum</span>
+                                        <span className="text-purple-700 font-bold text-xl">$77,500</span>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@ export default function Solo401kContributionLimitsPage() {
 
                         <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
                             <div className="flex items-start gap-3">
-                                <AlertCircle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                                <AlertCircle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
                                 <div>
                                     <p className="text-amber-200 font-medium mb-1">*Important Note on Employer Contributions</p>
                                     <p className="text-slate-500 text-sm">
@@ -168,7 +168,7 @@ export default function Solo401kContributionLimitsPage() {
                             {/* Employee Deferral */}
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-6">
-                                    <DollarSign className="w-7 h-7 text-blue-400" />
+                                    <DollarSign className="w-7 h-7 text-blue-700" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-[#000080] mb-4">Employee Deferral</h3>
                                 <p className="text-slate-500 mb-6">
@@ -178,19 +178,19 @@ export default function Solo401kContributionLimitsPage() {
 
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Fixed at $23,500 for 2026</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Can be Traditional (pre-tax) or Roth</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">No income requirement to max out</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">+$7,500 catch-up if 50+</span>
                                     </div>
                                 </div>
@@ -199,7 +199,7 @@ export default function Solo401kContributionLimitsPage() {
                             {/* Employer Contribution */}
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-6">
-                                    <Percent className="w-7 h-7 text-purple-400" />
+                                    <Percent className="w-7 h-7 text-purple-700" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-[#000080] mb-4">Employer Contribution</h3>
                                 <p className="text-slate-500 mb-6">
@@ -209,19 +209,19 @@ export default function Solo401kContributionLimitsPage() {
 
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Up to 25% of W-2 wages</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">~20% of net SE income (sole props)</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Always pre-tax (Traditional only)</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0" />
                                         <span className="text-slate-600">Scales with your business income</span>
                                     </div>
                                 </div>
@@ -236,7 +236,7 @@ export default function Solo401kContributionLimitsPage() {
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 justify-center mb-4">
-                            <Calculator className="w-8 h-8 text-purple-400" />
+                            <Calculator className="w-8 h-8 text-purple-700" />
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900">
                                 Contribution Calculation Examples
                             </h2>
@@ -249,7 +249,7 @@ export default function Solo401kContributionLimitsPage() {
                         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-6">
                             <div className="flex items-center justify-between mb-6">
                                 <h3 className="text-xl font-bold text-slate-900">Example 1: High-Income Consultant (Under 50)</h3>
-                                <span className="px-3 py-1 bg-green-500/20 text-green-400 text-sm rounded-full">Max Contribution</span>
+                                <span className="px-3 py-1 bg-green-500/20 text-green-700 text-sm rounded-full">Max Contribution</span>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-8">
@@ -276,7 +276,7 @@ export default function Solo401kContributionLimitsPage() {
                                 <div className="bg-purple-500/10 rounded-xl p-6 flex flex-col justify-center">
                                     <div className="text-center">
                                         <div className="text-sm text-slate-500 mb-1">Total Contribution</div>
-                                        <div className="text-4xl font-bold text-purple-400 mb-2">$63,500</div>
+                                        <div className="text-4xl font-bold text-purple-700 mb-2">$63,500</div>
                                         <div className="text-sm text-slate-500">
                                             $6,500 below $70K max (needs ~$232K income for full max)
                                         </div>
@@ -289,7 +289,7 @@ export default function Solo401kContributionLimitsPage() {
                         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-6">
                             <div className="flex items-center justify-between mb-6">
                                 <h3 className="text-xl font-bold text-slate-900">Example 2: Part-Time Freelancer (Age 52)</h3>
-                                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 text-sm rounded-full">Catch-Up Eligible</span>
+                                <span className="px-3 py-1 bg-purple-500/20 text-purple-700 text-sm rounded-full">Catch-Up Eligible</span>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-8">
@@ -309,7 +309,7 @@ export default function Solo401kContributionLimitsPage() {
                                         </div>
                                         <div className="flex justify-between py-2 border-b border-slate-200">
                                             <span className="text-slate-500">Catch-Up (50+)</span>
-                                            <span className="text-green-400">+ $7,500</span>
+                                            <span className="text-green-700">+ $7,500</span>
                                         </div>
                                         <div className="flex justify-between py-2 border-b border-slate-200">
                                             <span className="text-slate-500">Employer (20% of $75K)</span>
@@ -320,7 +320,7 @@ export default function Solo401kContributionLimitsPage() {
                                 <div className="bg-purple-500/10 rounded-xl p-6 flex flex-col justify-center">
                                     <div className="text-center">
                                         <div className="text-sm text-slate-500 mb-1">Total Contribution</div>
-                                        <div className="text-4xl font-bold text-purple-400 mb-2">$46,000</div>
+                                        <div className="text-4xl font-bold text-purple-700 mb-2">$46,000</div>
                                         <div className="text-sm text-slate-500">
                                             61% of their income saved tax-advantaged!
                                         </div>
@@ -333,7 +333,7 @@ export default function Solo401kContributionLimitsPage() {
                         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                             <div className="flex items-center justify-between mb-6">
                                 <h3 className="text-xl font-bold text-slate-900">Example 3: S-Corp Owner (Under 50)</h3>
-                                <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-sm rounded-full">W-2 Wages</span>
+                                <span className="px-3 py-1 bg-blue-500/20 text-blue-700 text-sm rounded-full">W-2 Wages</span>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-8">
@@ -360,7 +360,7 @@ export default function Solo401kContributionLimitsPage() {
                                 <div className="bg-purple-500/10 rounded-xl p-6 flex flex-col justify-center">
                                     <div className="text-center">
                                         <div className="text-sm text-slate-500 mb-1">Total Contribution</div>
-                                        <div className="text-4xl font-bold text-purple-400 mb-2">$53,500</div>
+                                        <div className="text-4xl font-bold text-purple-700 mb-2">$53,500</div>
                                         <div className="text-sm text-slate-500">
                                             S-Corps use 25% (vs 20%) for employer portion
                                         </div>
@@ -386,10 +386,10 @@ export default function Solo401kContributionLimitsPage() {
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4">
-                                    <Calendar className="w-6 h-6 text-blue-400" />
+                                    <Calendar className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h3 className="text-xl font-bold text-[#000080] mb-3">Employee Deferral Deadline</h3>
-                                <div className="text-2xl font-bold text-blue-400 mb-3">December 31, 2026</div>
+                                <div className="text-2xl font-bold text-blue-700 mb-3">December 31, 2026</div>
                                 <p className="text-slate-500 text-sm">
                                     Employee salary deferrals must be made by the end of the calendar year. You cannot
                                     retroactively elect to defer income after December 31st.
@@ -398,10 +398,10 @@ export default function Solo401kContributionLimitsPage() {
 
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
                                 <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4">
-                                    <Calendar className="w-6 h-6 text-purple-400" />
+                                    <Calendar className="w-6 h-6 text-purple-700" />
                                 </div>
                                 <h3 className="text-xl font-bold text-[#000080] mb-3">Employer Contribution Deadline</h3>
-                                <div className="text-2xl font-bold text-purple-400 mb-3">Tax Filing Deadline*</div>
+                                <div className="text-2xl font-bold text-purple-700 mb-3">Tax Filing Deadline*</div>
                                 <p className="text-slate-500 text-sm">
                                     Employer profit-sharing contributions can be made up until your tax filing deadline,
                                     including extensions. For most: April 15, 2027 (or October 15 with extension).
@@ -411,7 +411,7 @@ export default function Solo401kContributionLimitsPage() {
 
                         <div className="mt-8 bg-green-500/10 border border-green-500/20 rounded-xl p-6">
                             <div className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                                <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                                 <div>
                                     <p className="text-green-200 font-medium mb-1">Pro Tip: Plan Establishment Deadline</p>
                                     <p className="text-slate-500 text-sm">
@@ -443,34 +443,34 @@ export default function Solo401kContributionLimitsPage() {
                                     <thead>
                                         <tr className="border-b border-slate-200">
                                             <th className="text-left p-4 text-slate-500 font-medium">Net SE Income</th>
-                                            <th className="text-center p-4 text-purple-400 font-medium">Solo 401k Max</th>
-                                            <th className="text-center p-4 text-blue-400 font-medium">SEP IRA Max</th>
-                                            <th className="text-center p-4 text-green-400 font-medium">Difference</th>
+                                            <th className="text-center p-4 text-purple-700 font-medium">Solo 401k Max</th>
+                                            <th className="text-center p-4 text-blue-700 font-medium">SEP IRA Max</th>
+                                            <th className="text-center p-4 text-green-700 font-medium">Difference</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr className="border-b border-slate-200">
                                             <td className="p-4 text-slate-900">$50,000</td>
-                                            <td className="p-4 text-center text-purple-300">$33,500</td>
-                                            <td className="p-4 text-center text-blue-300">$10,000</td>
-                                            <td className="p-4 text-center text-green-400 font-semibold">+$23,500</td>
+                                            <td className="p-4 text-center text-purple-800">$33,500</td>
+                                            <td className="p-4 text-center text-blue-800">$10,000</td>
+                                            <td className="p-4 text-center text-green-700 font-semibold">+$23,500</td>
                                         </tr>
                                         <tr className="border-b border-slate-200">
                                             <td className="p-4 text-slate-900">$100,000</td>
-                                            <td className="p-4 text-center text-purple-300">$43,500</td>
-                                            <td className="p-4 text-center text-blue-300">$20,000</td>
-                                            <td className="p-4 text-center text-green-400 font-semibold">+$23,500</td>
+                                            <td className="p-4 text-center text-purple-800">$43,500</td>
+                                            <td className="p-4 text-center text-blue-800">$20,000</td>
+                                            <td className="p-4 text-center text-green-700 font-semibold">+$23,500</td>
                                         </tr>
                                         <tr className="border-b border-slate-200">
                                             <td className="p-4 text-slate-900">$150,000</td>
-                                            <td className="p-4 text-center text-purple-300">$53,500</td>
-                                            <td className="p-4 text-center text-blue-300">$30,000</td>
-                                            <td className="p-4 text-center text-green-400 font-semibold">+$23,500</td>
+                                            <td className="p-4 text-center text-purple-800">$53,500</td>
+                                            <td className="p-4 text-center text-blue-800">$30,000</td>
+                                            <td className="p-4 text-center text-green-700 font-semibold">+$23,500</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">$350,000+</td>
-                                            <td className="p-4 text-center text-purple-300">$70,000</td>
-                                            <td className="p-4 text-center text-blue-300">$70,000</td>
+                                            <td className="p-4 text-center text-purple-800">$70,000</td>
+                                            <td className="p-4 text-center text-blue-800">$70,000</td>
                                             <td className="p-4 text-center text-slate-500">$0</td>
                                         </tr>
                                     </tbody>

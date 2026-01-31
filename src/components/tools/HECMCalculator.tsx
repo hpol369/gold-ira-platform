@@ -377,7 +377,7 @@ export function HECMCalculator() {
           }`}>
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
-                <Building2 className="h-5 w-5 text-purple-400" />
+                <Building2 className="h-5 w-5 text-purple-700" />
                 <h3 className="text-lg font-semibold">Proprietary Reverse Mortgage</h3>
               </div>
               {(!calculations.hecmIsBetter || calculations.exceedsHECMLimit) && (
@@ -387,7 +387,7 @@ export function HECMCalculator() {
               )}
             </div>
 
-            <div className="text-4xl font-bold text-purple-400 mb-4">
+            <div className="text-4xl font-bold text-purple-700 mb-4">
               {formatCurrency(calculations.proprietaryProceeds)}
             </div>
 
@@ -440,8 +440,8 @@ export function HECMCalculator() {
                     </>
                   ) : (
                     <>
-                      <span className="text-purple-400 font-semibold">Proprietary</span>
-                      <span className="text-purple-400">+{formatCurrency(calculations.proprietaryProceeds - calculations.hecmProceeds)}</span>
+                      <span className="text-purple-700 font-semibold">Proprietary</span>
+                      <span className="text-purple-700">+{formatCurrency(calculations.proprietaryProceeds - calculations.hecmProceeds)}</span>
                     </>
                   )}
                 </div>
@@ -457,8 +457,8 @@ export function HECMCalculator() {
                     </>
                   ) : (
                     <>
-                      <span className="text-purple-400 font-semibold">Proprietary</span>
-                      <span className="text-purple-400">Lower</span>
+                      <span className="text-purple-700 font-semibold">Proprietary</span>
+                      <span className="text-purple-700">Lower</span>
                     </>
                   )}
                 </div>
@@ -494,7 +494,7 @@ export function HECMCalculator() {
                 <tr className="border-b border-slate-200">
                   <th className="py-2 text-left text-slate-500">Year</th>
                   <th className="py-2 text-right text-emerald-400">HECM Balance</th>
-                  <th className="py-2 text-right text-purple-400">Proprietary Balance</th>
+                  <th className="py-2 text-right text-purple-700">Proprietary Balance</th>
                   <th className="py-2 text-right text-[#B22234]">MIP Paid (HECM)</th>
                 </tr>
               </thead>
@@ -503,7 +503,7 @@ export function HECMCalculator() {
                   <tr key={proj.year} className={idx % 2 === 0 ? "bg-slate-50" : ""}>
                     <td className="py-2 text-slate-600">{proj.year}</td>
                     <td className="py-2 text-right text-emerald-400">{formatCurrency(proj.balance)}</td>
-                    <td className="py-2 text-right text-purple-400">
+                    <td className="py-2 text-right text-purple-700">
                       {formatCurrency(calculations.proprietaryProjection[proj.year].balance)}
                     </td>
                     <td className="py-2 text-right text-[#B22234]">{formatCurrency(proj.mipPaid)}</td>
@@ -550,28 +550,28 @@ export function HECMCalculator() {
           </div>
 
           <div className="bg-purple-500/10 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
-            <h3 className="text-xl font-bold text-purple-400 mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-bold text-purple-700 mb-4 flex items-center gap-2">
               <Building2 className="h-5 w-5" /> Proprietary Advantages
             </h3>
             <ul className="space-y-3 text-slate-600 text-sm">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                 <span>No HECM limit - access equity on high-value homes</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                 <span>No annual MIP - lower ongoing costs</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                 <span>Potentially faster closing process</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                 <span>May accept condos that don&apos;t meet FHA requirements</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                 <span>Flexibility in property types</span>
               </li>
             </ul>

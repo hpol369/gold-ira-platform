@@ -119,7 +119,7 @@ export default function NobleGoldFeesPage() {
                                         Your physical gold must be stored at an IRS-approved depository. Noble Gold uses Delaware Depository, one of the most reputable facilities. This flat fee applies regardless of how much gold you hold.
                                     </p>
                                     <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
-                                        <p className="text-amber-300 text-sm">
+                                        <p className="text-amber-800 text-sm">
                                             <strong className="text-[#B22234]">Note:</strong> Some companies charge percentage-based storage (0.5% of holdings), which becomes much more expensive as your portfolio grows. Noble Gold&apos;s flat fee is an advantage for larger accounts.
                                         </p>
                                     </div>
@@ -152,8 +152,8 @@ export default function NobleGoldFeesPage() {
                                         This is where the real cost is. Noble Gold (like all dealers) charges a spread—the difference between what you pay to buy gold and what they&apos;ll pay when you sell. This is typically 5-8% above spot price.
                                     </p>
                                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
-                                        <p className="text-red-300 text-sm">
-                                            <strong className="text-red-400">Important:</strong> Spreads are the largest cost in any Gold IRA and are often not clearly disclosed. Always ask for a price quote on specific products before purchasing.
+                                        <p className="text-red-800 text-sm">
+                                            <strong className="text-red-700">Important:</strong> Spreads are the largest cost in any Gold IRA and are often not clearly disclosed. Always ask for a price quote on specific products before purchasing.
                                         </p>
                                     </div>
                                 </div>
@@ -179,12 +179,12 @@ export default function NobleGoldFeesPage() {
                                         <span className="font-bold text-[#000080]">$150</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/30">
-                                        <span className="text-amber-300 font-medium">First Year Total (excluding spreads)</span>
+                                        <span className="text-amber-800 font-medium">First Year Total (excluding spreads)</span>
                                         <span className="font-bold text-[#B22234]">$310</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-green-500/10 rounded-lg border border-green-500/30">
-                                        <span className="text-green-300 font-medium">Ongoing Annual Cost</span>
-                                        <span className="font-bold text-green-400">$230/year</span>
+                                        <span className="text-green-800 font-medium">Ongoing Annual Cost</span>
+                                        <span className="font-bold text-green-700">$230/year</span>
                                     </div>
                                 </div>
                                 <p className="text-slate-600 text-sm">
@@ -259,11 +259,11 @@ export default function NobleGoldFeesPage() {
                             <h2 className="text-3xl font-bold text-[#000080] mb-6">Noble Gold Fees: Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
-                                    <h3 className="font-bold text-green-400 mb-4 flex items-center gap-2">
+                                    <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="h-5 w-5" />
                                         Advantages
                                     </h3>
-                                    <ul className="space-y-3 text-green-300">
+                                    <ul className="space-y-3 text-green-800">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="h-4 w-4 mt-1 shrink-0" />
                                             Flat storage fee (better for large accounts)
@@ -287,11 +287,11 @@ export default function NobleGoldFeesPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
-                                    <h3 className="font-bold text-red-400 mb-4 flex items-center gap-2">
+                                    <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
                                         <XCircle className="h-5 w-5" />
                                         Disadvantages
                                     </h3>
-                                    <ul className="space-y-3 text-red-300">
+                                    <ul className="space-y-3 text-red-800">
                                         <li className="flex items-start gap-2">
                                             <XCircle className="h-4 w-4 mt-1 shrink-0" />
                                             Higher setup fee than some competitors

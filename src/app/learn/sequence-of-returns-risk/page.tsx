@@ -145,7 +145,7 @@ export default function SequenceOfReturnsRiskPage() {
                         {/* The Math Example */}
                         <section id="example" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Calculator className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Math That Will Shock You</h2>
@@ -158,21 +158,21 @@ export default function SequenceOfReturnsRiskPage() {
                                 <h4 className="font-bold text-[#000080] text-lg mb-4">Same Average Returns, Different Outcomes</h4>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="bg-white p-4 rounded-xl border border-green-500/20">
-                                        <h5 className="font-semibold text-green-400 mb-3">Retiree A: Good Returns First</h5>
+                                        <h5 className="font-semibold text-green-700 mb-3">Retiree A: Good Returns First</h5>
                                         <p className="text-sm text-slate-400 mb-3">Years 1-5: +15%, +12%, +18%, +10%, +8%</p>
                                         <p className="text-sm text-slate-400 mb-3">Years 6-15: Mix of gains and losses</p>
                                         <div className="mt-4 p-3 bg-green-500/10 rounded-lg">
-                                            <span className="text-xs text-green-400 font-semibold">After 15 years:</span>
-                                            <div className="text-2xl font-bold text-green-400">$1,240,000</div>
+                                            <span className="text-xs text-green-700 font-semibold">After 15 years:</span>
+                                            <div className="text-2xl font-bold text-green-700">$1,240,000</div>
                                         </div>
                                     </div>
                                     <div className="bg-white p-4 rounded-xl border border-red-500/20">
-                                        <h5 className="font-semibold text-red-400 mb-3">Retiree B: Bad Returns First</h5>
+                                        <h5 className="font-semibold text-red-700 mb-3">Retiree B: Bad Returns First</h5>
                                         <p className="text-sm text-slate-400 mb-3">Years 1-5: -15%, -12%, -18%, +5%, +3%</p>
                                         <p className="text-sm text-slate-400 mb-3">Years 6-15: Strong recovery</p>
                                         <div className="mt-4 p-3 bg-red-500/10 rounded-lg">
-                                            <span className="text-xs text-red-400 font-semibold">After 15 years:</span>
-                                            <div className="text-2xl font-bold text-red-400">$540,000</div>
+                                            <span className="text-xs text-red-700 font-semibold">After 15 years:</span>
+                                            <div className="text-2xl font-bold text-red-700">$540,000</div>
                                         </div>
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@ export default function SequenceOfReturnsRiskPage() {
                         {/* Why So Dangerous */}
                         <section id="why-dangerous" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Sequence Risk Is So Dangerous</h2>
@@ -232,22 +232,22 @@ export default function SequenceOfReturnsRiskPage() {
                             </ul>
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
-                                <h4 className="font-bold text-red-400 text-lg mb-4">Historical Danger Zone Examples</h4>
+                                <h4 className="font-bold text-red-700 text-lg mb-4">Historical Danger Zone Examples</h4>
                                 <div className="space-y-4 text-sm">
                                     <div className="flex justify-between p-3 bg-white border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Retired January 2000 (Dot-Com Crash)</span>
-                                        <span className="text-red-400 font-semibold">49% loss in first 3 years</span>
+                                        <span className="text-red-700 font-semibold">49% loss in first 3 years</span>
                                     </div>
                                     <div className="flex justify-between p-3 bg-white border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Retired January 2008 (Financial Crisis)</span>
-                                        <span className="text-red-400 font-semibold">57% loss in first 2 years</span>
+                                        <span className="text-red-700 font-semibold">57% loss in first 2 years</span>
                                     </div>
                                     <div className="flex justify-between p-3 bg-white border border-slate-200 rounded-lg">
                                         <span className="text-slate-600">Retired January 2020 (COVID Crash)</span>
                                         <span className="text-[#B22234] font-semibold">34% loss (recovered quickly)</span>
                                     </div>
                                 </div>
-                                <p className="text-red-300 text-sm mt-4">Retirees who started withdrawals during these crashes faced devastating sequence risk.</p>
+                                <p className="text-red-800 text-sm mt-4">Retirees who started withdrawals during these crashes faced devastating sequence risk.</p>
                             </div>
                         </section>
 
@@ -266,7 +266,7 @@ export default function SequenceOfReturnsRiskPage() {
                         {/* Protection Strategies */}
                         <section id="protection" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">How to Protect Against Sequence Risk</h2>
@@ -325,13 +325,13 @@ export default function SequenceOfReturnsRiskPage() {
                                     <tbody className="divide-y divide-slate-200 text-sm">
                                         <tr>
                                             <td className="p-4 text-[#000080]">2008 Financial Crisis</td>
-                                            <td className="p-4 text-red-400 font-semibold">-37%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+5.5%</td>
+                                            <td className="p-4 text-red-700 font-semibold">-37%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+5.5%</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-[#000080]">2020 COVID Crash</td>
-                                            <td className="p-4 text-red-400 font-semibold">-34%</td>
-                                            <td className="p-4 text-green-400 font-semibold">+25% (full year)</td>
+                                            <td className="p-4 text-red-700 font-semibold">-34%</td>
+                                            <td className="p-4 text-green-700 font-semibold">+25% (full year)</td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -202,7 +202,7 @@ export default function WhyIsGoldValuablePage() {
                         {/* Historical Significance */}
                         <section id="history" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5,000 Years of History</h2>
@@ -241,7 +241,7 @@ export default function WhyIsGoldValuablePage() {
                         {/* Natural Scarcity */}
                         <section id="scarcity" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Gem className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Natural Scarcity You Can&apos;t Fake</h2>
@@ -279,7 +279,7 @@ export default function WhyIsGoldValuablePage() {
                         {/* Store of Value */}
                         <section id="store-of-value" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Gold as the Ultimate Store of Value</h2>
@@ -301,7 +301,7 @@ export default function WhyIsGoldValuablePage() {
                         {/* Modern Relevance */}
                         <section id="modern-relevance" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Gold Matters Today</h2>

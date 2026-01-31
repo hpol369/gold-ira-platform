@@ -194,12 +194,12 @@ export default function SilverForecast5YearsPage() {
                                         {yearlyProjections.map((year, idx) => (
                                             <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
                                                 <td className="p-4 text-slate-900 font-bold">{year.year}</td>
-                                                <td className="p-4 text-red-400">{year.low}</td>
+                                                <td className="p-4 text-red-700">{year.low}</td>
                                                 <td className="p-4 text-[#B22234] font-bold">{year.base}</td>
-                                                <td className="p-4 text-green-400">{year.high}</td>
+                                                <td className="p-4 text-green-700">{year.high}</td>
                                                 <td className="p-4 text-slate-600">
                                                     <span className="text-xs">{year.supply} / {year.demand}</span>
-                                                    <span className="text-red-400 font-bold ml-2">{year.deficit}</span>
+                                                    <span className="text-red-700 font-bold ml-2">{year.deficit}</span>
                                                 </td>
                                             </tr>
                                         ))}
@@ -215,7 +215,7 @@ export default function SilverForecast5YearsPage() {
                         {/* Megatrends */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Megatrends Driving Silver Demand</h2>
@@ -228,7 +228,7 @@ export default function SilverForecast5YearsPage() {
                                 {megatrends.map((trend, idx) => (
                                     <div key={idx} className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
                                         <div className="flex items-start gap-4">
-                                            <div className="p-3 bg-green-500/20 rounded-lg text-green-400 shrink-0">
+                                            <div className="p-3 bg-green-500/20 rounded-lg text-green-700 shrink-0">
                                                 <trend.icon className="w-6 h-6" />
                                             </div>
                                             <div className="flex-1">
@@ -239,12 +239,12 @@ export default function SilverForecast5YearsPage() {
                                                             <div className="text-xs text-slate-600">2026</div>
                                                             <div className="text-sm font-bold text-slate-600">{trend.current}</div>
                                                         </div>
-                                                        <div className="text-green-400">→</div>
+                                                        <div className="text-green-700">→</div>
                                                         <div className="text-center">
                                                             <div className="text-xs text-slate-600">2030</div>
-                                                            <div className="text-sm font-bold text-green-400">{trend.by2030}</div>
+                                                            <div className="text-sm font-bold text-green-700">{trend.by2030}</div>
                                                         </div>
-                                                        <span className="px-2 py-1 bg-green-500/20 rounded text-xs font-bold text-green-400">{trend.growth}</span>
+                                                        <span className="px-2 py-1 bg-green-500/20 rounded text-xs font-bold text-green-700">{trend.growth}</span>
                                                     </div>
                                                 </div>
                                                 <p className="text-sm text-slate-600">{trend.details}</p>
@@ -262,7 +262,7 @@ export default function SilverForecast5YearsPage() {
                         {/* Supply Constraints */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <Pickaxe className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Supply Problem: Why Production Can&apos;t Keep Up</h2>
@@ -273,19 +273,19 @@ export default function SilverForecast5YearsPage() {
 
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
-                                    <h4 className="font-bold text-red-400 mb-3">No Major New Mines</h4>
+                                    <h4 className="font-bold text-red-700 mb-3">No Major New Mines</h4>
                                     <p className="text-sm text-slate-600">It takes 10-15 years and $500M+ to develop a primary silver mine. There are no significant projects coming online before 2030 at the earliest.</p>
                                 </div>
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
-                                    <h4 className="font-bold text-red-400 mb-3">Byproduct Dependency</h4>
+                                    <h4 className="font-bold text-red-700 mb-3">Byproduct Dependency</h4>
                                     <p className="text-sm text-slate-600">70% of silver comes as a byproduct of zinc, copper, and lead mining. Silver supply is tied to base metal demand, not silver prices.</p>
                                 </div>
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
-                                    <h4 className="font-bold text-red-400 mb-3">Declining Ore Grades</h4>
+                                    <h4 className="font-bold text-red-700 mb-3">Declining Ore Grades</h4>
                                     <p className="text-sm text-slate-600">Average ore grades have fallen 30% over 20 years. Miners must process more rock to get the same silver, increasing costs and limiting production growth.</p>
                                 </div>
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
-                                    <h4 className="font-bold text-red-400 mb-3">ESG and Permitting</h4>
+                                    <h4 className="font-bold text-red-700 mb-3">ESG and Permitting</h4>
                                     <p className="text-sm text-slate-600">Environmental regulations and permitting challenges make new mine development increasingly difficult and expensive.</p>
                                 </div>
                             </div>
@@ -318,11 +318,11 @@ export default function SilverForecast5YearsPage() {
                                         </div>
                                         <div className="flex justify-between mt-1">
                                             <span className="text-slate-600">Total 5-Year Demand (projected)</span>
-                                            <span className="text-green-400 font-bold">~6.6B oz</span>
+                                            <span className="text-green-700 font-bold">~6.6B oz</span>
                                         </div>
                                         <div className="flex justify-between mt-2 pt-2 border-t border-slate-200">
-                                            <span className="text-red-400 font-bold">Cumulative Deficit</span>
-                                            <span className="text-red-400 font-bold text-lg">~1.5B oz</span>
+                                            <span className="text-red-700 font-bold">Cumulative Deficit</span>
+                                            <span className="text-red-700 font-bold text-lg">~1.5B oz</span>
                                         </div>
                                     </div>
                                 </div>
@@ -351,7 +351,7 @@ export default function SilverForecast5YearsPage() {
                             <div className="not-prose my-8 space-y-4">
                                 <div className="bg-red-500/10 rounded-xl p-6 border border-red-500/20">
                                     <div className="flex items-center justify-between mb-3">
-                                        <h4 className="font-bold text-red-400 text-lg">Bear Case: $50-60</h4>
+                                        <h4 className="font-bold text-red-700 text-lg">Bear Case: $50-60</h4>
                                         <span className="text-xs text-slate-600">20% probability</span>
                                     </div>
                                     <p className="text-sm text-slate-600 mb-3">Manipulation continues, recession hits industrial demand, Fed stays hawkish longer than expected. Silver grinds higher but underperforms vs fundamentals.</p>
@@ -369,7 +369,7 @@ export default function SilverForecast5YearsPage() {
 
                                 <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
                                     <div className="flex items-center justify-between mb-3">
-                                        <h4 className="font-bold text-green-400 text-lg">Bull Case: $100-200+</h4>
+                                        <h4 className="font-bold text-green-700 text-lg">Bull Case: $100-200+</h4>
                                         <span className="text-xs text-slate-600">30% probability</span>
                                     </div>
                                     <p className="text-sm text-slate-600 mb-3">Industrial supply crunch forces physical price discovery. Dollar crisis drives safe-haven buying. Gold ratio reverts toward 20:1-30:1. Paper manipulation breaks.</p>

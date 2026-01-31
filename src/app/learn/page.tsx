@@ -275,7 +275,7 @@ export default function LearnPage() {
         <Container>
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-blue-500/20 text-blue-400">
+              <div className="p-2 rounded-lg bg-blue-500/20 text-blue-700">
                 <RefreshCcw className="h-5 w-5" />
               </div>
               <div>
@@ -289,40 +289,40 @@ export default function LearnPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <Link href="/learn/t-rowe-price-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">T. Rowe Price</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">T. Rowe Price</span>
             </Link>
             <Link href="/learn/transamerica-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Transamerica</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Transamerica</span>
             </Link>
             <Link href="/learn/principal-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Principal</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Principal</span>
             </Link>
             <Link href="/learn/empower-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Empower</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Empower</span>
             </Link>
             <Link href="/learn/paychex-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Paychex</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Paychex</span>
             </Link>
             <Link href="/learn/wells-fargo-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Wells Fargo</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Wells Fargo</span>
             </Link>
             <Link href="/learn/nationwide-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Nationwide</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Nationwide</span>
             </Link>
             <Link href="/learn/voya-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Voya</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Voya</span>
             </Link>
             <Link href="/learn/john-hancock-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">John Hancock</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">John Hancock</span>
             </Link>
             <Link href="/learn/adp-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">ADP</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">ADP</span>
             </Link>
             <Link href="/learn/merrill-lynch-401k-rollover" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Merrill Lynch</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Merrill Lynch</span>
             </Link>
             <Link href="/learn/goldman-sachs-401k" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all text-center">
-              <span className="font-medium text-slate-900 group-hover:text-blue-400 text-sm">Goldman Sachs</span>
+              <span className="font-medium text-slate-900 group-hover:text-blue-700 text-sm">Goldman Sachs</span>
             </Link>
           </div>
         </Container>
@@ -332,7 +332,7 @@ export default function LearnPage() {
       <section className="py-16 bg-slate-50">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-red-500/20 text-red-400">
+            <div className="p-2 rounded-lg bg-red-500/20 text-red-700">
               <AlertTriangle className="h-5 w-5" />
             </div>
             <div>
@@ -346,7 +346,7 @@ export default function LearnPage() {
               href="/learn/crash-proof-retirement"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 Crash-Proof Retirement
               </h4>
               <p className="text-xs text-slate-500 mt-1">Complete protection strategy</p>
@@ -355,7 +355,7 @@ export default function LearnPage() {
               href="/learn/should-i-move-401k-before-market-crash"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 Should I Move 401k Before Crash?
               </h4>
               <p className="text-xs text-slate-500 mt-1">Timing considerations</p>
@@ -364,7 +364,7 @@ export default function LearnPage() {
               href="/learn/protecting-retirement-market-crash"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 Protecting from Market Crash
               </h4>
               <p className="text-xs text-slate-500 mt-1">Defensive strategies</p>
@@ -373,7 +373,7 @@ export default function LearnPage() {
               href="/learn/401k-lost-20-percent-what-do-i-do"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 401k Lost 20%: What to Do
               </h4>
               <p className="text-xs text-slate-500 mt-1">Recovery options</p>
@@ -382,7 +382,7 @@ export default function LearnPage() {
               href="/learn/how-to-prepare-economic-collapse"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 Prepare for Economic Collapse
               </h4>
               <p className="text-xs text-slate-500 mt-1">Worst-case preparation</p>
@@ -391,7 +391,7 @@ export default function LearnPage() {
               href="/learn/sequence-of-returns-risk"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 Sequence of Returns Risk
               </h4>
               <p className="text-xs text-slate-500 mt-1">Retirement timing risk</p>
@@ -400,7 +400,7 @@ export default function LearnPage() {
               href="/learn/depression-proof-investments"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 Depression-Proof Investments
               </h4>
               <p className="text-xs text-slate-500 mt-1">Safe haven assets</p>
@@ -409,7 +409,7 @@ export default function LearnPage() {
               href="/learn/why-did-my-401k-drop-so-much"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-red-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-red-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-red-700 transition-colors text-sm leading-snug">
                 Why Did My 401k Drop?
               </h4>
               <p className="text-xs text-slate-500 mt-1">Understanding losses</p>
@@ -422,7 +422,7 @@ export default function LearnPage() {
       <section className="py-16">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-green-500/20 text-green-400">
+            <div className="p-2 rounded-lg bg-green-500/20 text-green-700">
               <Wallet className="h-5 w-5" />
             </div>
             <div>
@@ -436,7 +436,7 @@ export default function LearnPage() {
               href="/learn/checkbook-ira-gold"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-green-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-green-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-green-700 transition-colors text-sm leading-snug">
                 Checkbook IRA Gold
               </h4>
               <p className="text-xs text-slate-500 mt-1">Direct control precious metals</p>
@@ -445,7 +445,7 @@ export default function LearnPage() {
               href="/learn/checkbook-ira-reviews"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-green-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-green-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-green-700 transition-colors text-sm leading-snug">
                 Checkbook IRA Reviews
               </h4>
               <p className="text-xs text-slate-500 mt-1">Best providers compared</p>
@@ -454,7 +454,7 @@ export default function LearnPage() {
               href="/learn/checkbook-ira-real-estate"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-green-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-green-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-green-700 transition-colors text-sm leading-snug">
                 Checkbook IRA Real Estate
               </h4>
               <p className="text-xs text-slate-500 mt-1">Property investing guide</p>
@@ -463,7 +463,7 @@ export default function LearnPage() {
               href="/learn/solo-401k-checkbook-control"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-green-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-green-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-green-700 transition-colors text-sm leading-snug">
                 Solo 401k Checkbook Control
               </h4>
               <p className="text-xs text-slate-500 mt-1">Self-employed investors</p>
@@ -472,7 +472,7 @@ export default function LearnPage() {
               href="/learn/self-directed-ira-llc-operating-agreement"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-green-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-green-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-green-700 transition-colors text-sm leading-snug">
                 SDIRA LLC Operating Agreement
               </h4>
               <p className="text-xs text-slate-500 mt-1">Legal requirements</p>
@@ -481,7 +481,7 @@ export default function LearnPage() {
               href="/learn/checkbook-ira-prohibited-transactions"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-green-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-green-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-green-700 transition-colors text-sm leading-snug">
                 Prohibited Transactions
               </h4>
               <p className="text-xs text-slate-500 mt-1">IRS rules to follow</p>
@@ -494,7 +494,7 @@ export default function LearnPage() {
       <section className="py-16 bg-slate-50">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-purple-500/20 text-purple-400">
+            <div className="p-2 rounded-lg bg-purple-500/20 text-purple-700">
               <Train className="h-5 w-5" />
             </div>
             <div>
@@ -508,7 +508,7 @@ export default function LearnPage() {
               href="/learn/railroad-retirement-calculator"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-purple-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-purple-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Retirement Calculator
               </h4>
               <p className="text-xs text-slate-500 mt-1">Estimate your benefits</p>
@@ -517,7 +517,7 @@ export default function LearnPage() {
               href="/learn/tier-1-vs-tier-2-railroad"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-purple-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-purple-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Tier 1 vs Tier 2 Railroad
               </h4>
               <p className="text-xs text-slate-500 mt-1">Key differences explained</p>
@@ -526,7 +526,7 @@ export default function LearnPage() {
               href="/learn/railroad-retirement-vs-social-security"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-purple-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-purple-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad vs Social Security
               </h4>
               <p className="text-xs text-slate-500 mt-1">Complete comparison</p>
@@ -535,7 +535,7 @@ export default function LearnPage() {
               href="/learn/railroad-retirement-spouse-benefits"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-purple-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-purple-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Spouse Benefits
               </h4>
               <p className="text-xs text-slate-500 mt-1">Spousal annuity guide</p>
@@ -544,7 +544,7 @@ export default function LearnPage() {
               href="/learn/railroad-retirement-survivor-benefits"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-purple-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-purple-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Survivor Benefits
               </h4>
               <p className="text-xs text-slate-500 mt-1">For surviving spouses</p>
@@ -553,7 +553,7 @@ export default function LearnPage() {
               href="/learn/railroad-retirement-disability"
               className="group bg-white border border-slate-200 rounded-lg p-4 hover:border-purple-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-purple-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Retirement Disability
               </h4>
               <p className="text-xs text-slate-500 mt-1">Disability benefits guide</p>
@@ -710,7 +710,7 @@ export default function LearnPage() {
       <section className="py-16">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-blue-500/20 text-blue-400">
+            <div className="p-2 rounded-lg bg-blue-500/20 text-blue-700">
               <FileText className="h-5 w-5" />
             </div>
             <div>
@@ -724,7 +724,7 @@ export default function LearnPage() {
               href="/learn/can-i-retire-at-60-with-500k"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 Retire at 60 with $500k?
               </h4>
               <p className="text-xs text-slate-500 mt-1">Reality check</p>
@@ -733,7 +733,7 @@ export default function LearnPage() {
               href="/learn/how-long-will-500k-last-retirement"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 How Long Will $500k Last?
               </h4>
               <p className="text-xs text-slate-500 mt-1">Withdrawal scenarios</p>
@@ -742,7 +742,7 @@ export default function LearnPage() {
               href="/learn/bucket-strategy-retirement"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 Bucket Strategy
               </h4>
               <p className="text-xs text-slate-500 mt-1">Organize your withdrawals</p>
@@ -751,7 +751,7 @@ export default function LearnPage() {
               href="/learn/variable-percentage-withdrawal"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 Variable Percentage Withdrawal
               </h4>
               <p className="text-xs text-slate-500 mt-1">VPW method explained</p>
@@ -760,7 +760,7 @@ export default function LearnPage() {
               href="/learn/qualified-longevity-annuity-contract"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 QLAC Guide
               </h4>
               <p className="text-xs text-slate-500 mt-1">Longevity annuity explained</p>
@@ -769,7 +769,7 @@ export default function LearnPage() {
               href="/learn/self-directed-ira-prohibited-transactions"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 Prohibited Transactions
               </h4>
               <p className="text-xs text-slate-500 mt-1">IRA rules you must follow</p>
@@ -778,7 +778,7 @@ export default function LearnPage() {
               href="/learn/fixed-vs-variable-annuity"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 Fixed vs Variable Annuity
               </h4>
               <p className="text-xs text-slate-500 mt-1">Which is better?</p>
@@ -787,7 +787,7 @@ export default function LearnPage() {
               href="/learn/pension-lump-sum-vs-monthly"
               className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-blue-500/30 transition-all"
             >
-              <h4 className="font-medium text-slate-900 group-hover:text-blue-400 transition-colors text-sm leading-snug">
+              <h4 className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors text-sm leading-snug">
                 Pension: Lump Sum vs Monthly
               </h4>
               <p className="text-xs text-slate-500 mt-1">Critical decision guide</p>

@@ -272,26 +272,26 @@ export default function SilverIraRulesPage() {
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
-                                <h3 className="font-bold text-green-400 mb-4 flex items-center gap-2">
+                                <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                                     <CheckCircle2 className="h-5 w-5" /> IRS-Approved Silver Products
                                 </h3>
                                 <ul className="space-y-2">
                                     {purityRules.approved.map((item, idx) => (
                                         <li key={idx} className="flex items-center gap-2 text-slate-600">
-                                            <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0" />
+                                            <CheckCircle2 className="h-4 w-4 text-green-700 flex-shrink-0" />
                                             {item}
                                         </li>
                                     ))}
                                 </ul>
                             </div>
                             <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
-                                <h3 className="font-bold text-red-400 mb-4 flex items-center gap-2">
+                                <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
                                     <XCircle className="h-5 w-5" /> NOT Approved for IRAs
                                 </h3>
                                 <ul className="space-y-2">
                                     {purityRules.notApproved.map((item, idx) => (
                                         <li key={idx} className="flex items-center gap-2 text-slate-600">
-                                            <XCircle className="h-4 w-4 text-red-400 flex-shrink-0" />
+                                            <XCircle className="h-4 w-4 text-red-700 flex-shrink-0" />
                                             {item}
                                         </li>
                                     ))}
@@ -329,9 +329,9 @@ export default function SilverIraRulesPage() {
 
                         <div className="mt-8 bg-red-500/10 border border-red-500/30 rounded-xl p-6">
                             <div className="flex items-start gap-4">
-                                <AlertTriangle className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+                                <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                 <div>
-                                    <h4 className="font-bold text-red-400 mb-2">Warning: "Home Storage IRA" Schemes</h4>
+                                    <h4 className="font-bold text-red-700 mb-2">Warning: "Home Storage IRA" Schemes</h4>
                                     <p className="text-slate-600">
                                         Some promoters advertise "home storage" or "checkbook IRA" schemes for precious metals.
                                         These are not approved by the IRS and can result in your entire IRA being treated as
@@ -372,12 +372,12 @@ export default function SilverIraRulesPage() {
                             </div>
                             <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
                                 <div className="flex items-center gap-2 mb-4">
-                                    <DollarSign className="h-5 w-5 text-green-400" />
+                                    <DollarSign className="h-5 w-5 text-green-700" />
                                     <h3 className="font-bold text-slate-900">Rollover Amounts</h3>
                                 </div>
                                 <div className="space-y-4">
                                     <div className="text-center">
-                                        <span className="text-3xl font-bold text-green-400">{contributionLimits.rollover.limit}</span>
+                                        <span className="text-3xl font-bold text-green-700">{contributionLimits.rollover.limit}</span>
                                         <p className="text-slate-600 mt-2">No limit on rollover amounts</p>
                                     </div>
                                     <p className="text-sm text-slate-600 pt-2 border-t border-slate-200">
@@ -411,7 +411,7 @@ export default function SilverIraRulesPage() {
                                                     <ul className="space-y-1">
                                                         {rule.exceptions.map((exception, idx) => (
                                                             <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                                                                <CheckCircle2 className="h-3 w-3 text-green-400" />
+                                                                <CheckCircle2 className="h-3 w-3 text-green-700" />
                                                                 {exception}
                                                             </li>
                                                         ))}
@@ -437,13 +437,13 @@ export default function SilverIraRulesPage() {
                             {commonViolations.map((item, index) => (
                                 <div key={index} className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
                                     <div className="flex items-start gap-4">
-                                        <AlertTriangle className="h-6 w-6 text-red-400 flex-shrink-0 mt-1" />
+                                        <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                         <div className="flex-1">
                                             <h3 className="font-bold text-slate-900 mb-2">{item.violation}</h3>
-                                            <p className="text-red-300 text-sm mb-3">
+                                            <p className="text-red-800 text-sm mb-3">
                                                 <strong>Consequence:</strong> {item.consequence}
                                             </p>
-                                            <p className="text-green-400 text-sm">
+                                            <p className="text-green-700 text-sm">
                                                 <strong>How to avoid:</strong> {item.avoid}
                                             </p>
                                         </div>

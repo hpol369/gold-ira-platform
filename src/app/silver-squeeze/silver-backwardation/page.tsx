@@ -163,7 +163,7 @@ export default function SilverBackwardationPage() {
                         {/* Contango */}
                         <section id="contango" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">What Is Contango? (Normal Market)</h2>
@@ -186,15 +186,15 @@ export default function SilverBackwardationPage() {
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                                         <span className="text-slate-600">1-Month Futures</span>
-                                        <span className="text-green-400 font-bold">$32.15</span>
+                                        <span className="text-green-700 font-bold">$32.15</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                                         <span className="text-slate-600">3-Month Futures</span>
-                                        <span className="text-green-400 font-bold">$32.45</span>
+                                        <span className="text-green-700 font-bold">$32.45</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                                         <span className="text-slate-600">6-Month Futures</span>
-                                        <span className="text-green-400 font-bold">$32.90</span>
+                                        <span className="text-green-700 font-bold">$32.90</span>
                                     </div>
                                 </div>
                                 <p className="text-sm text-slate-600 mt-4">In contango, prices rise with delivery date - this is normal and expected.</p>
@@ -208,7 +208,7 @@ export default function SilverBackwardationPage() {
                         {/* Backwardation */}
                         <section id="backwardation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">What Is Backwardation? (Abnormal Market)</h2>
@@ -218,7 +218,7 @@ export default function SilverBackwardationPage() {
                             </p>
 
                             <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/30 not-prose my-8">
-                                <h4 className="font-bold text-red-400 text-lg mb-4">Backwardation Example (Abnormal Market)</h4>
+                                <h4 className="font-bold text-red-700 text-lg mb-4">Backwardation Example (Abnormal Market)</h4>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                                         <span className="text-slate-600">Spot Price (Today)</span>
@@ -226,15 +226,15 @@ export default function SilverBackwardationPage() {
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                                         <span className="text-slate-600">1-Month Futures</span>
-                                        <span className="text-red-400 font-bold">$31.85</span>
+                                        <span className="text-red-700 font-bold">$31.85</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                                         <span className="text-slate-600">3-Month Futures</span>
-                                        <span className="text-red-400 font-bold">$31.55</span>
+                                        <span className="text-red-700 font-bold">$31.55</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
                                         <span className="text-slate-600">6-Month Futures</span>
-                                        <span className="text-red-400 font-bold">$31.10</span>
+                                        <span className="text-red-700 font-bold">$31.10</span>
                                     </div>
                                 </div>
                                 <p className="text-sm text-slate-600 mt-4">In backwardation, spot exceeds futures - a warning sign of immediate shortage.</p>
@@ -264,7 +264,7 @@ export default function SilverBackwardationPage() {
                                     <p className="text-sm text-slate-600">Industrial users, mints, or investors urgently need silver now. They&apos;ll pay a premium for immediate delivery rather than wait for futures settlement.</p>
                                 </div>
                                 <div className="p-6 rounded-xl bg-slate-50 backdrop-blur-sm border border-slate-200">
-                                    <Zap className="w-8 h-8 text-red-400 mb-4" />
+                                    <Zap className="w-8 h-8 text-red-700 mb-4" />
                                     <h4 className="font-bold text-slate-900 text-lg mb-2">Supply Tightness</h4>
                                     <p className="text-sm text-slate-600">If ample silver were available, arbitrageurs would sell spot and buy futures for risk-free profit. Persistent backwardation means the arbitrage isn&apos;t possible&mdash;physical silver is scarce.</p>
                                 </div>
@@ -290,7 +290,7 @@ export default function SilverBackwardationPage() {
                         {/* Historical Instances */}
                         <section id="historical-instances" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Historical Instances of Silver Backwardation</h2>
@@ -312,12 +312,12 @@ export default function SilverBackwardationPage() {
                                         <tr>
                                             <td className="p-4 text-slate-900">Early 2011</td>
                                             <td className="p-4 text-slate-600">Silver approached $50/oz, extreme retail demand</td>
-                                            <td className="p-4 text-green-400">Silver hit $49.82 (near all-time high)</td>
+                                            <td className="p-4 text-green-700">Silver hit $49.82 (near all-time high)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">March 2020</td>
                                             <td className="p-4 text-slate-600">COVID supply chain disruptions</td>
-                                            <td className="p-4 text-green-400">Silver rallied from $12 to $30 within months</td>
+                                            <td className="p-4 text-green-700">Silver rallied from $12 to $30 within months</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 text-slate-900">Feb 2021</td>
@@ -353,7 +353,7 @@ export default function SilverBackwardationPage() {
                         {/* Trading Implications */}
                         <section id="trading-implications" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Trading Implications</h2>
@@ -392,7 +392,7 @@ export default function SilverBackwardationPage() {
                         {/* Current Market */}
                         <section id="current-market" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Current Market Structure</h2>

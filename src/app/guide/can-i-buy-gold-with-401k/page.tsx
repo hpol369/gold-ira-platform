@@ -112,7 +112,7 @@ export default function CanIBuyGoldWith401kPage() {
                         {/* The Short Answer */}
                         <h2 className="text-[#000080]">The Short Answer</h2>
                         <p>
-                            <strong className="text-green-400">Yes.</strong> You can absolutely use your 401(k) money to buy physical gold. The IRS has allowed this since 1997.
+                            <strong className="text-green-700">Yes.</strong> You can absolutely use your 401(k) money to buy physical gold. The IRS has allowed this since 1997.
                         </p>
                         <p>
                             Here&apos;s the catch: you can&apos;t buy gold directly <em>inside</em> your existing 401(k). Instead, you transfer some or all of your 401(k) funds to a special type of IRA that&apos;s designed to hold physical precious metals. This is called a <strong>Gold IRA</strong> or <strong>Precious Metals IRA</strong>.
@@ -157,19 +157,19 @@ export default function CanIBuyGoldWith401kPage() {
                                     </h4>
                                     <ul className="space-y-2 text-slate-600 text-sm">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             American Gold Eagles
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Canadian Gold Maple Leafs
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             American Gold Buffalos
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Australian Gold Kangaroos
                                         </li>
                                     </ul>
@@ -181,19 +181,19 @@ export default function CanIBuyGoldWith401kPage() {
                                     </h4>
                                     <ul className="space-y-2 text-slate-600 text-sm">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Must be .995+ fineness
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             From COMEX/NYMEX approved refiners
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Any size (1 oz, 10 oz, kilo, etc.)
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 shrink-0" />
+                                            <CheckCircle2 className="w-4 h-4 text-green-700 mt-0.5 shrink-0" />
                                             Popular brands: PAMP, Credit Suisse
                                         </li>
                                     </ul>

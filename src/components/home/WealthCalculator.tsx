@@ -167,7 +167,7 @@ export function WealthCalculator() {
                                     />
                                 </div>
                                 <p className="text-sm text-blue-100 mt-4 font-medium">
-                                    Your wealth grew by <strong className="text-amber-400 border-b-2 border-amber-400/40">{Math.round(((goldValue - amount) / amount) * 100)}%</strong>.
+                                    Your wealth grew by <strong className="text-amber-700 border-b-2 border-amber-400/40">{Math.round(((goldValue - amount) / amount) * 100)}%</strong>.
                                 </p>
                             </div>
                         </div>

@@ -291,7 +291,7 @@ export default function IraApprovedSilverPage() {
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-8">
                                 <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-5">
-                                    <div className="flex items-center gap-2 text-green-400 font-bold mb-3">
+                                    <div className="flex items-center gap-2 text-green-700 font-bold mb-3">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Required
                                     </div>
@@ -303,7 +303,7 @@ export default function IraApprovedSilverPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
-                                    <div className="flex items-center gap-2 text-red-400 font-bold mb-3">
+                                    <div className="flex items-center gap-2 text-red-700 font-bold mb-3">
                                         <XCircle className="w-5 h-5" />
                                         NOT Allowed
                                     </div>
@@ -350,7 +350,7 @@ export default function IraApprovedSilverPage() {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="p-4 text-green-400 font-semibold">{coin.purity}</td>
+                                                <td className="p-4 text-green-700 font-semibold">{coin.purity}</td>
                                                 <td className="p-4">{coin.premium}</td>
                                                 <td className="p-4 hidden md:table-cell text-xs">{coin.notes}</td>
                                             </tr>
@@ -369,12 +369,12 @@ export default function IraApprovedSilverPage() {
                                     <p className="text-slate-600 text-sm mt-2">Maximum liquidity and recognition. The &quot;gold standard&quot; of silver coins (ironic, we know). Higher premiums but easiest to sell.</p>
                                 </div>
                                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
-                                    <div className="text-green-400 font-bold text-sm mb-2">#2 Best Value</div>
+                                    <div className="text-green-700 font-bold text-sm mb-2">#2 Best Value</div>
                                     <h4 className="font-bold text-slate-900">Canadian Maple Leaf</h4>
                                     <p className="text-slate-600 text-sm mt-2">Highest purity (99.99%), lower premiums than Eagles, excellent security features. Best bang for your buck.</p>
                                 </div>
                                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
-                                    <div className="text-blue-400 font-bold text-sm mb-2">#3 Budget Pick</div>
+                                    <div className="text-blue-700 font-bold text-sm mb-2">#3 Budget Pick</div>
                                     <h4 className="font-bold text-slate-900">Austrian Philharmonic</h4>
                                     <p className="text-slate-600 text-sm mt-2">Lowest premiums among major government coins. Beautiful design. EU legal tender status.</p>
                                 </div>
@@ -403,7 +403,7 @@ export default function IraApprovedSilverPage() {
                                             <tr key={bar.refiner} className={index % 2 === 1 ? "bg-slate-100" : ""}>
                                                 <td className="p-4 font-semibold text-slate-900">{bar.refiner}</td>
                                                 <td className="p-4">{bar.sizes}</td>
-                                                <td className="p-4 text-green-400">{bar.premium}</td>
+                                                <td className="p-4 text-green-700">{bar.premium}</td>
                                                 <td className="p-4 hidden md:table-cell text-xs">{bar.notes}</td>
                                             </tr>
                                         ))}
@@ -440,7 +440,7 @@ export default function IraApprovedSilverPage() {
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
                                             <span className="text-slate-600">100 oz Silver Bars</span>
-                                            <span className="text-green-400 font-semibold">3-5%</span>
+                                            <span className="text-green-700 font-semibold">3-5%</span>
                                         </div>
                                         <div className="h-2 bg-slate-100 rounded-full">
                                             <div className="h-2 bg-green-500 rounded-full" style={{ width: '15%' }}></div>
@@ -449,7 +449,7 @@ export default function IraApprovedSilverPage() {
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
                                             <span className="text-slate-600">10 oz Silver Bars</span>
-                                            <span className="text-green-400 font-semibold">5-8%</span>
+                                            <span className="text-green-700 font-semibold">5-8%</span>
                                         </div>
                                         <div className="h-2 bg-slate-100 rounded-full">
                                             <div className="h-2 bg-green-500 rounded-full" style={{ width: '25%' }}></div>
@@ -467,7 +467,7 @@ export default function IraApprovedSilverPage() {
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
                                             <span className="text-slate-600">American Silver Eagles</span>
-                                            <span className="text-red-400 font-semibold">15-25%</span>
+                                            <span className="text-red-700 font-semibold">15-25%</span>
                                         </div>
                                         <div className="h-2 bg-slate-100 rounded-full">
                                             <div className="h-2 bg-red-500 rounded-full" style={{ width: '70%' }}></div>
@@ -488,10 +488,10 @@ export default function IraApprovedSilverPage() {
                             <div className="space-y-3 not-prose my-8">
                                 {notAllowedSilver.map((item) => (
                                     <div key={item.type} className="flex gap-4 p-4 rounded-xl bg-red-500/10 border border-red-500/20">
-                                        <XCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                                        <XCircle className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="font-bold text-red-400">{item.type}</h4>
-                                            <p className="text-sm text-red-300 mt-1">{item.reason}</p>
+                                            <h4 className="font-bold text-red-700">{item.type}</h4>
+                                            <p className="text-sm text-red-800 mt-1">{item.reason}</p>
                                         </div>
                                     </div>
                                 ))}

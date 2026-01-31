@@ -218,7 +218,7 @@ export default function Solo401kProvidersPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
                             <Award className="w-4 h-4" />
                             2026 Provider Comparison
                         </div>
@@ -237,7 +237,7 @@ export default function Solo401kProvidersPage() {
                         {/* Quick Decision */}
                         <div className="grid sm:grid-cols-2 gap-4">
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                                <div className="flex items-center gap-2 text-green-400 mb-2">
+                                <div className="flex items-center gap-2 text-green-700 mb-2">
                                     <DollarSign className="w-5 h-5" />
                                     <span className="font-semibold">Want $0 Fees?</span>
                                 </div>
@@ -246,7 +246,7 @@ export default function Solo401kProvidersPage() {
                                 </p>
                             </div>
                             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                                <div className="flex items-center gap-2 text-purple-400 mb-2">
+                                <div className="flex items-center gap-2 text-purple-700 mb-2">
                                     <Coins className="w-5 h-5" />
                                     <span className="font-semibold">Want Alt Investments?</span>
                                 </div>
@@ -264,7 +264,7 @@ export default function Solo401kProvidersPage() {
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-4">
-                            <Building2 className="w-8 h-8 text-blue-400" />
+                            <Building2 className="w-8 h-8 text-blue-700" />
                             <h2 className="text-3xl font-serif font-bold text-[#000080]">
                                 Traditional Brokerage Providers
                             </h2>
@@ -287,7 +287,7 @@ export default function Solo401kProvidersPage() {
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-4">
-                            <Shield className="w-8 h-8 text-purple-400" />
+                            <Shield className="w-8 h-8 text-purple-700" />
                             <h2 className="text-3xl font-serif font-bold text-[#000080]">
                                 Self-Directed Solo 401k Providers
                             </h2>
@@ -338,28 +338,28 @@ export default function Solo401kProvidersPage() {
                                                 <td className="p-4 text-center text-slate-600">{provider.annualFee}</td>
                                                 <td className="p-4 text-center">
                                                     {provider.rothOption ? (
-                                                        <CheckCircle className="w-5 h-5 text-green-400 mx-auto" />
+                                                        <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
                                                         <span className="text-slate-500">—</span>
                                                     )}
                                                 </td>
                                                 <td className="p-4 text-center">
                                                     {provider.loanOption ? (
-                                                        <CheckCircle className="w-5 h-5 text-green-400 mx-auto" />
+                                                        <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
                                                         <span className="text-slate-500">—</span>
                                                     )}
                                                 </td>
                                                 <td className="p-4 text-center">
                                                     {provider.checkbookControl ? (
-                                                        <CheckCircle className="w-5 h-5 text-green-400 mx-auto" />
+                                                        <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
                                                         <span className="text-slate-500">—</span>
                                                     )}
                                                 </td>
                                                 <td className="p-4 text-center">
                                                     {provider.altInvestments ? (
-                                                        <CheckCircle className="w-5 h-5 text-green-400 mx-auto" />
+                                                        <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
                                                         <span className="text-slate-500">—</span>
                                                     )}
@@ -385,24 +385,24 @@ export default function Solo401kProvidersPage() {
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6">
                                 <div className="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center mb-4">
-                                    <DollarSign className="w-6 h-6 text-green-400" />
+                                    <DollarSign className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h3 className="text-xl font-bold text-[#000080] mb-3">Choose Free Brokerage If...</h3>
                                 <ul className="space-y-2 text-slate-500">
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-green-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-green-700 mt-1 flex-shrink-0" />
                                         <span>You want to invest in stocks, bonds, ETFs, mutual funds</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-green-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-green-700 mt-1 flex-shrink-0" />
                                         <span>You prefer zero fees and simple setup</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-green-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-green-700 mt-1 flex-shrink-0" />
                                         <span>You don&apos;t need to borrow from your account</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-green-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-green-700 mt-1 flex-shrink-0" />
                                         <span>You want a well-known, established provider</span>
                                     </li>
                                 </ul>
@@ -410,24 +410,24 @@ export default function Solo401kProvidersPage() {
 
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6">
                                 <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4">
-                                    <Coins className="w-6 h-6 text-purple-400" />
+                                    <Coins className="w-6 h-6 text-purple-700" />
                                 </div>
                                 <h3 className="text-xl font-bold text-[#000080] mb-3">Choose Self-Directed If...</h3>
                                 <ul className="space-y-2 text-slate-500">
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-purple-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-purple-700 mt-1 flex-shrink-0" />
                                         <span>You want to invest in crypto, real estate, or startups</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-purple-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-purple-700 mt-1 flex-shrink-0" />
                                         <span>You want checkbook control over investments</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-purple-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-purple-700 mt-1 flex-shrink-0" />
                                         <span>You may need to take a loan from your 401k</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-purple-400 mt-1 flex-shrink-0" />
+                                        <CheckCircle className="w-4 h-4 text-purple-700 mt-1 flex-shrink-0" />
                                         <span>You&apos;re comfortable managing investments yourself</span>
                                     </li>
                                 </ul>
@@ -447,11 +447,11 @@ export default function Solo401kProvidersPage() {
 
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 backdrop-blur-sm border border-green-500/20 rounded-2xl p-6 text-center">
-                                <div className="text-sm text-green-400 font-medium mb-2">Best Overall (Free)</div>
+                                <div className="text-sm text-green-700 font-medium mb-2">Best Overall (Free)</div>
                                 <div className="text-2xl font-bold text-[#000080] mb-2">Fidelity</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-400 fill-amber-400" : "text-slate-600"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-slate-600"}`} />
                                     ))}
                                 </div>
                                 <p className="text-slate-500 text-sm">
@@ -460,11 +460,11 @@ export default function Solo401kProvidersPage() {
                             </div>
 
                             <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 text-center">
-                                <div className="text-sm text-purple-400 font-medium mb-2">Best Self-Directed</div>
+                                <div className="text-sm text-purple-700 font-medium mb-2">Best Self-Directed</div>
                                 <div className="text-2xl font-bold text-[#000080] mb-2">Rocket Dollar</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-400 fill-amber-400" : "text-slate-600"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-slate-600"}`} />
                                     ))}
                                 </div>
                                 <p className="text-slate-500 text-sm">
@@ -473,11 +473,11 @@ export default function Solo401kProvidersPage() {
                             </div>
 
                             <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6 text-center">
-                                <div className="text-sm text-blue-400 font-medium mb-2">Best for Index Funds</div>
+                                <div className="text-sm text-blue-700 font-medium mb-2">Best for Index Funds</div>
                                 <div className="text-2xl font-bold text-[#000080] mb-2">Vanguard</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-400 fill-amber-400" : "text-slate-600"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-slate-600"}`} />
                                     ))}
                                 </div>
                                 <p className="text-slate-500 text-sm">
@@ -571,7 +571,7 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                 {/* Rank & Basic Info */}
                 <div className="flex items-start gap-4">
                     <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg ${
-                        rank === 1 ? "bg-amber-500/20 text-amber-400" : "bg-slate-200 text-slate-500"
+                        rank === 1 ? "bg-amber-500/20 text-amber-700" : "bg-slate-200 text-slate-500"
                     }`}>
                         {rank}
                     </div>
@@ -584,9 +584,9 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                                         key={i}
                                         className={`w-4 h-4 ${
                                             i <= Math.floor(provider.rating)
-                                                ? "text-amber-400 fill-amber-400"
+                                                ? "text-amber-700 fill-amber-400"
                                                 : i <= provider.rating
-                                                ? "text-amber-400 fill-amber-400/50"
+                                                ? "text-amber-700 fill-amber-400/50"
                                                 : "text-slate-600"
                                         }`}
                                     />
@@ -595,8 +595,8 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                             <span className="text-sm text-slate-500">{provider.rating}/5</span>
                             <span className={`text-xs px-2 py-0.5 rounded-full ${
                                 provider.type === "self-directed"
-                                    ? "bg-purple-500/20 text-purple-400"
-                                    : "bg-blue-500/20 text-blue-400"
+                                    ? "bg-purple-500/20 text-purple-700"
+                                    : "bg-blue-500/20 text-blue-700"
                             }`}>
                                 {provider.type === "self-directed" ? "Self-Directed" : "Brokerage"}
                             </span>
@@ -609,13 +609,13 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                 <div className="flex gap-4 md:ml-auto text-sm">
                     <div className="text-center">
                         <div className="text-slate-500 text-xs mb-1">Setup</div>
-                        <div className={`font-semibold ${provider.setupFee === "$0" ? "text-green-400" : "text-slate-900"}`}>
+                        <div className={`font-semibold ${provider.setupFee === "$0" ? "text-green-700" : "text-slate-900"}`}>
                             {provider.setupFee}
                         </div>
                     </div>
                     <div className="text-center">
                         <div className="text-slate-500 text-xs mb-1">Annual</div>
-                        <div className={`font-semibold ${provider.annualFee === "$0" ? "text-green-400" : "text-slate-900"}`}>
+                        <div className={`font-semibold ${provider.annualFee === "$0" ? "text-green-700" : "text-slate-900"}`}>
                             {provider.annualFee}
                         </div>
                     </div>
@@ -633,22 +633,22 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
             {/* Pros/Cons */}
             <div className="grid md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-200">
                 <div>
-                    <div className="text-sm font-medium text-green-400 mb-2">Pros</div>
+                    <div className="text-sm font-medium text-green-700 mb-2">Pros</div>
                     <ul className="space-y-1">
                         {provider.pros.map((pro, idx) => (
                             <li key={idx} className="flex items-start gap-2 text-sm text-slate-500">
-                                <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                                <CheckCircle className="w-4 h-4 text-green-700 mt-0.5 flex-shrink-0" />
                                 {pro}
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div>
-                    <div className="text-sm font-medium text-red-400 mb-2">Cons</div>
+                    <div className="text-sm font-medium text-red-700 mb-2">Cons</div>
                     <ul className="space-y-1">
                         {provider.cons.map((con, idx) => (
                             <li key={idx} className="flex items-start gap-2 text-sm text-slate-500">
-                                <span className="text-red-400 mt-0.5 flex-shrink-0">•</span>
+                                <span className="text-red-700 mt-0.5 flex-shrink-0">•</span>
                                 {con}
                             </li>
                         ))}
@@ -663,7 +663,7 @@ function FeatureBadge({ label, enabled }: { label: string; enabled: boolean }) {
     return (
         <div className={`flex items-center gap-2 text-sm ${enabled ? "text-slate-600" : "text-slate-500"}`}>
             {enabled ? (
-                <CheckCircle className="w-4 h-4 text-green-400" />
+                <CheckCircle className="w-4 h-4 text-green-700" />
             ) : (
                 <span className="w-4 h-4 flex items-center justify-center text-slate-600">—</span>
             )}

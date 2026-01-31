@@ -476,10 +476,10 @@ export default function SilverIraGuidePage() {
 
                             <div className="not-prose my-8 space-y-4">
                                 <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
-                                    <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-red-400">Higher Volatility</h4>
-                                        <p className="text-sm text-red-300 mt-1">Silver can drop 30-50% during bear markets. In 2011-2015, silver fell from ~$49 to ~$14. Be prepared for significant swings and have a long time horizon.</p>
+                                        <h4 className="font-bold text-red-700">Higher Volatility</h4>
+                                        <p className="text-sm text-red-800 mt-1">Silver can drop 30-50% during bear markets. In 2011-2015, silver fell from ~$49 to ~$14. Be prepared for significant swings and have a long time horizon.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-[#B22234]/10 border border-amber-500/20">

@@ -74,11 +74,11 @@ export default function SilverManipulationPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-slate-900 to-slate-900 z-0"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="inline-block py-1 px-3 rounded-full bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-bold tracking-widest uppercase mb-4">
+                        <span className="inline-block py-1 px-3 rounded-full bg-red-500/20 text-red-700 border border-red-500/30 text-xs font-bold tracking-widest uppercase mb-4">
                             EXPOSE
                         </span>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
-                            Silver Manipulation: <span className="text-red-400">How Banks Suppress Prices</span>
+                            Silver Manipulation: <span className="text-red-700">How Banks Suppress Prices</span>
                         </h1>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
                             The $920 million fine. The convicted traders. The paper silver scheme. Here is what Wall Street does not want you to know about the silver market.
@@ -100,7 +100,7 @@ export default function SilverManipulationPage() {
                 <Container className="py-8">
                     <div className="grid md:grid-cols-4 gap-6 text-center">
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
-                            <div className="text-4xl font-bold text-red-400 mb-2">$920M</div>
+                            <div className="text-4xl font-bold text-red-700 mb-2">$920M</div>
                             <div className="text-sm text-slate-600 uppercase tracking-wide font-bold">JP Morgan Fine (2020)</div>
                         </div>
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
@@ -108,7 +108,7 @@ export default function SilverManipulationPage() {
                             <div className="text-sm text-slate-600 uppercase tracking-wide font-bold">Paper to Physical Ratio</div>
                         </div>
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
-                            <div className="text-4xl font-bold text-red-400 mb-2">8</div>
+                            <div className="text-4xl font-bold text-red-700 mb-2">8</div>
                             <div className="text-sm text-slate-600 uppercase tracking-wide font-bold">Traders Convicted</div>
                         </div>
                         <div className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-6">
@@ -128,13 +128,13 @@ export default function SilverManipulationPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <Gavel className="w-6 h-6 text-red-400" />
+                                    <Gavel className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">The $920 Million Fine: JP Morgan Caught Red-Handed</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600 leading-relaxed">
-                                    In September 2020, JP Morgan Chase agreed to pay <strong className="text-red-400">$920.2 million</strong> to settle charges that its traders manipulated precious metals and Treasury markets for nearly a decade. This was not speculation. This was not conspiracy theory. This was a federal settlement.
+                                    In September 2020, JP Morgan Chase agreed to pay <strong className="text-red-700">$920.2 million</strong> to settle charges that its traders manipulated precious metals and Treasury markets for nearly a decade. This was not speculation. This was not conspiracy theory. This was a federal settlement.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     The Department of Justice called it &quot;the largest spoofing resolution in history.&quot; The Commodity Futures Trading Commission documented <strong className="text-slate-900">thousands of instances of manipulation</strong> between 2008 and 2016.
@@ -175,7 +175,7 @@ export default function SilverManipulationPage() {
 
                                 <h3 className="text-xl font-bold text-slate-900 mt-8 mb-4">The Concentrated Short Position</h3>
                                 <p className="text-slate-600 leading-relaxed">
-                                    Beyond spoofing, a small number of banks hold <strong className="text-red-400">concentrated short positions</strong> in silver futures. At times, these positions have exceeded the entire annual mining supply of silver. How can you short more silver than exists?
+                                    Beyond spoofing, a small number of banks hold <strong className="text-red-700">concentrated short positions</strong> in silver futures. At times, these positions have exceeded the entire annual mining supply of silver. How can you short more silver than exists?
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     You cannot - unless you are creating &quot;paper&quot; silver that does not exist. This is the paper silver vs physical silver problem that regulators have failed to address for decades.
@@ -195,20 +195,20 @@ export default function SilverManipulationPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <FileWarning className="w-6 h-6 text-red-400" />
+                                    <FileWarning className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">Paper Silver vs Physical: The 100:1 Leverage Problem</h2>
                             </div>
                             <div className="prose prose-lg prose-invert max-w-none">
                                 <p className="text-slate-600 leading-relaxed">
-                                    Here is the dirty secret of the silver market: <strong className="text-red-400">there is far more &quot;silver&quot; trading on paper than actually exists</strong>.
+                                    Here is the dirty secret of the silver market: <strong className="text-red-700">there is far more &quot;silver&quot; trading on paper than actually exists</strong>.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     Industry estimates suggest that paper silver contracts (futures, ETFs, unallocated accounts) exceed physical silver by ratios of <strong className="text-[#B22234]">100:1 or higher</strong>. This means for every ounce of real silver, there are 100+ ounces of claims.
                                 </p>
 
                                 <div className="bg-slate-50 rounded-lg p-6 my-6">
-                                    <h4 className="text-lg font-bold text-red-400 mb-3">What Counts as &quot;Paper Silver&quot;?</h4>
+                                    <h4 className="text-lg font-bold text-red-700 mb-3">What Counts as &quot;Paper Silver&quot;?</h4>
                                     <ul className="text-slate-600 space-y-2">
                                         <li><strong className="text-slate-900">Futures Contracts:</strong> Promises to deliver silver that often never settle in physical metal</li>
                                         <li><strong className="text-slate-900">Silver ETFs:</strong> Some ETFs allow authorized participants to substitute cash for silver</li>
@@ -239,7 +239,7 @@ export default function SilverManipulationPage() {
                                     For over a century, silver prices were set daily by a small group of banks in London through a process called &quot;the Fix.&quot; Three banks would get on a phone call and agree on a price. That was it. No open market. No transparency.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    In 2014, <strong className="text-red-400">Deutsche Bank admitted to manipulating the silver fix</strong> as part of a settlement with regulators. The bank provided evidence that implicated other banks in a coordinated scheme.
+                                    In 2014, <strong className="text-red-700">Deutsche Bank admitted to manipulating the silver fix</strong> as part of a settlement with regulators. The bank provided evidence that implicated other banks in a coordinated scheme.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
                                     The silver fix was abolished in 2014 and replaced with an electronic auction. But the damage was done - decades of manipulation had suppressed silver prices and enriched insiders at the expense of ordinary investors.
@@ -254,7 +254,7 @@ export default function SilverManipulationPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-red-500/20 rounded-lg">
-                                    <Shield className="w-6 h-6 text-red-400" />
+                                    <Shield className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">CFTC Investigation History: 13 Years of &quot;Nothing to See Here&quot;</h2>
                             </div>
@@ -323,7 +323,7 @@ export default function SilverManipulationPage() {
                         <section className="bg-slate-50 backdrop-blur border border-slate-200 rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="p-3 bg-green-500/20 rounded-lg">
-                                    <TrendingUp className="w-6 h-6 text-green-400" />
+                                    <TrendingUp className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-slate-900">How to Profit When Manipulation Ends</h2>
                             </div>
@@ -383,8 +383,8 @@ export default function SilverManipulationPage() {
                         {/* CTA Box */}
                         <div className="bg-gradient-to-br from-red-900/30 to-slate-800/50 border border-red-500/30 rounded-xl p-6 sticky top-24">
                             <div className="flex items-center gap-2 mb-4">
-                                <AlertTriangle className="w-5 h-5 text-red-400" />
-                                <span className="text-red-400 font-bold text-sm uppercase tracking-wide">Take Action</span>
+                                <AlertTriangle className="w-5 h-5 text-red-700" />
+                                <span className="text-red-700 font-bold text-sm uppercase tracking-wide">Take Action</span>
                             </div>
                             <h3 className="text-xl font-bold font-serif text-slate-900 mb-4">
                                 Do Not Let Banks Manipulate YOUR Retirement
@@ -430,19 +430,19 @@ export default function SilverManipulationPage() {
                             <h3 className="text-lg font-bold text-slate-900 mb-4">Key Facts</h3>
                             <ul className="space-y-4 text-sm">
                                 <li className="flex items-start gap-3">
-                                    <span className="text-red-400 font-bold">01</span>
+                                    <span className="text-red-700 font-bold">01</span>
                                     <span className="text-slate-600">JP Morgan paid $920 million in manipulation settlement (2020)</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="text-red-400 font-bold">02</span>
+                                    <span className="text-red-700 font-bold">02</span>
                                     <span className="text-slate-600">8+ traders convicted of federal crimes</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="text-red-400 font-bold">03</span>
+                                    <span className="text-red-700 font-bold">03</span>
                                     <span className="text-slate-600">Deutsche Bank admitted to manipulating the London Fix</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <span className="text-red-400 font-bold">04</span>
+                                    <span className="text-red-700 font-bold">04</span>
                                     <span className="text-slate-600">Paper silver estimated at 100:1 ratio to physical</span>
                                 </li>
                             </ul>

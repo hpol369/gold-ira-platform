@@ -240,28 +240,28 @@ export default function HECMCalculatorPage() {
               </div>
 
               <div className="bg-purple-500/10 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
-                <h3 className="text-xl font-bold text-purple-400 mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-bold text-purple-700 mb-4 flex items-center gap-2">
                   <Home className="h-5 w-5" /> Choose Proprietary If...
                 </h3>
                 <ul className="space-y-3 text-slate-600 text-sm">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                     <span>Your home is worth over $1.5 million</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                     <span>You want to avoid ongoing MIP charges</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                     <span>Your property doesn&apos;t meet FHA requirements</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                     <span>You want a faster closing process</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                     <span>You own a high-rise condo or unique property</span>
                   </li>
                 </ul>

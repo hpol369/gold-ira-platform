@@ -152,7 +152,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 1. Diversification */}
                         <section id="diversification" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400">
+                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <PieChart className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">1. True Diversification</h2>
@@ -173,19 +173,19 @@ export default function WealthPreservationStrategiesPage() {
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
                                         <span className="text-slate-600">Stocks (Domestic & International)</span>
-                                        <span className="font-semibold text-blue-400">30-40%</span>
+                                        <span className="font-semibold text-blue-700">30-40%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
                                         <span className="text-slate-600">Bonds & Fixed Income</span>
-                                        <span className="font-semibold text-green-400">20-30%</span>
+                                        <span className="font-semibold text-green-700">20-30%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
                                         <span className="text-slate-600">Real Estate</span>
-                                        <span className="font-semibold text-purple-400">15-25%</span>
+                                        <span className="font-semibold text-purple-700">15-25%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
                                         <span className="text-slate-600">Gold & Precious Metals</span>
-                                        <span className="font-semibold text-amber-400">10-20%</span>
+                                        <span className="font-semibold text-amber-700">10-20%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-slate-100 rounded-lg">
                                         <span className="text-slate-600">Cash & Alternatives</span>
@@ -198,7 +198,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 2. Precious Metals */}
                         <section id="gold" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">2. Precious Metals Allocation</h2>
@@ -228,7 +228,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 3. Real Assets */}
                         <section id="real-assets" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-400">
+                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">3. Real Asset Ownership</h2>
@@ -254,7 +254,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 4. Tax Planning */}
                         <section id="tax-planning" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-400">
+                                <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">4. Tax-Efficient Planning</h2>
@@ -277,7 +277,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 5. Asset Protection */}
                         <section id="asset-protection" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-400">
+                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5. Asset Protection</h2>
@@ -389,7 +389,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* Framework */}
                         <section id="framework" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-400">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Building Your Wealth Preservation Framework</h2>

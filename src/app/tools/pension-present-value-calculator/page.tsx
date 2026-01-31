@@ -138,7 +138,7 @@ export default function PensionPresentValueCalculatorPage() {
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-purple-400" />
+                        <Icon className="h-6 w-6 text-purple-700" />
                       </div>
                       <div>
                         <h3 className="text-slate-900 font-semibold mb-2">
@@ -193,7 +193,7 @@ export default function PensionPresentValueCalculatorPage() {
                   <tr className="border-b border-slate-200">
                     <td className="px-4 py-3 text-slate-900 font-semibold">6% (Standard)</td>
                     <td className="px-4 py-3 text-slate-500">Common actuarial rate</td>
-                    <td className="px-4 py-3 text-right text-purple-400">~$355,000</td>
+                    <td className="px-4 py-3 text-right text-purple-700">~$355,000</td>
                   </tr>
                   <tr className="border-b border-slate-200">
                     <td className="px-4 py-3 text-slate-900 font-semibold">7% (Aggressive)</td>
@@ -216,7 +216,7 @@ export default function PensionPresentValueCalculatorPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-purple-500/10 border border-purple-500/20 rounded-xl p-8">
               <h2 className="text-2xl font-bold text-[#000080] mb-4 flex items-center gap-3">
-                <Scale className="h-6 w-6 text-purple-400" />
+                <Scale className="h-6 w-6 text-purple-700" />
                 Pension Present Value in Divorce
               </h2>
 

@@ -307,7 +307,7 @@ export default function SocialSecurityBreakEvenCalculatorPage() {
                           href="https://www.ssa.gov/myaccount/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 hover:text-blue-300 underline"
+                          className="text-blue-600 hover:text-blue-800 underline"
                         >
                           ssa.gov/myaccount
                         </a>{" "}

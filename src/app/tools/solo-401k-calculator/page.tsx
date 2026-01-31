@@ -138,7 +138,7 @@ export default function Solo401kCalculatorPage() {
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-purple-400" />
+                        <Icon className="h-6 w-6 text-purple-700" />
                       </div>
                       <div>
                         <h3 className="text-slate-900 font-semibold mb-2">
@@ -199,10 +199,10 @@ export default function Solo401kCalculatorPage() {
                     </tr>
                     <tr className="bg-purple-500/10">
                       <td className="px-6 py-4">
-                        <div className="font-bold text-purple-400">Total Maximum</div>
+                        <div className="font-bold text-purple-700">Total Maximum</div>
                       </td>
-                      <td className="px-6 py-4 text-right text-purple-400 font-bold text-lg">$69,000</td>
-                      <td className="px-6 py-4 text-right text-purple-400 font-bold text-lg">$76,500</td>
+                      <td className="px-6 py-4 text-right text-purple-700 font-bold text-lg">$69,000</td>
+                      <td className="px-6 py-4 text-right text-purple-700 font-bold text-lg">$76,500</td>
                     </tr>
                   </tbody>
                 </table>

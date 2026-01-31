@@ -267,7 +267,7 @@ export default function WEPCalculatorPage() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                <Users className="h-6 w-6 text-purple-400" />
+                <Users className="h-6 w-6 text-purple-700" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
                 Government Pension Offset (GPO)
@@ -281,7 +281,7 @@ export default function WEPCalculatorPage() {
                 Social Security record.
               </p>
               <div className="bg-slate-100 rounded-lg p-4">
-                <p className="text-purple-400 font-semibold">GPO Formula:</p>
+                <p className="text-purple-700 font-semibold">GPO Formula:</p>
                 <p className="text-slate-600 font-mono">
                   Spousal Benefit - (Government Pension x 2/3) = Adjusted Benefit
                 </p>
