@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ShieldCheck, CheckCircle2, ArrowRight, FileText, Building2, Coins, Clock, DollarSign, Phone, Award, ArrowRightCircle } from "lucide-react";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { MoneyMagazineBadge, ZeroFeesBadge } from "@/components/lp/AwardBadges";
 
 export const metadata: Metadata = {
     title: "Move Your 401(k) to Gold Tax-Free | 2026 Rollover Guide",
@@ -90,6 +91,12 @@ export default function GoldRolloverPage() {
                         Move Your 401(k) to Gold — <br />
                         <span className="text-green-600 underline decoration-4 underline-offset-8">Tax-Free</span>
                     </h1>
+
+                    {/* Award Badge */}
+                    <div className="mb-4 flex flex-wrap justify-center gap-3">
+                        <MoneyMagazineBadge />
+                        <ZeroFeesBadge />
+                    </div>
 
                     <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
                         Most Americans don&apos;t know they can <strong>protect their retirement</strong> with physical gold without paying taxes or penalties.
@@ -345,6 +352,20 @@ export default function GoldRolloverPage() {
                             </LeadCaptureButton>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Joe Montana Section */}
+            <section className="py-12 bg-[#000080]/5 border-y border-[#000080]/20 font-sans">
+                <div className="max-w-3xl mx-auto px-4 text-center">
+                    <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <Award className="h-4 w-4" />
+                        Celebrity Endorsement That Means Something
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#000080] mb-4">Joe Montana Isn&apos;t Just a Spokesman</h3>
+                    <p className="text-slate-700 text-lg">
+                        Hall of Fame quarterback Joe Montana asked his personal financial team to find the best precious metals company in the nation and they chose Augusta Precious Metals for him over others. He loved the company&apos;s mission so much that he became a customer and paid ambassador.
+                    </p>
                 </div>
             </section>
 

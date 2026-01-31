@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, Factory, Coins, BarChart3 } from "lucide-react";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { MoneyMagazineBadge, ZeroFeesBadge } from "@/components/lp/AwardBadges";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies 2026 | Free Consultation",
@@ -85,6 +86,12 @@ export default function SilverIRAPage() {
                         Protect Your Retirement <br />
                         <span className="text-[#B22234] underline decoration-4 underline-offset-8">With Physical Silver</span>
                     </h1>
+
+                    {/* Award Badge */}
+                    <div className="mb-4 flex flex-wrap justify-center gap-3">
+                        <MoneyMagazineBadge />
+                        <ZeroFeesBadge />
+                    </div>
 
                     <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
                         Silver isn't just precious—it's <strong>essential</strong>. Over 50% goes to industry. Supply can't keep up with demand. Get our free 2026 silver investment guide.

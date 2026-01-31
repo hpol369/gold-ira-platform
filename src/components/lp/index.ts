@@ -1,6 +1,7 @@
 export { LPHeader } from "./LPHeader";
 export { LPHero } from "./LPHero";
 export { LPTrustBar } from "./LPTrustBar";
+export { AwardBadges, MoneyMagazineBadge, ZeroFeesBadge } from "./AwardBadges";
 export { LPBenefits, type Benefit, type IconName } from "./LPBenefits";
 export { LPProcess, type Step, type ProcessIconName } from "./LPProcess";
 export { LPFeatures } from "./LPFeatures";

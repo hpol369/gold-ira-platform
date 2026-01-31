@@ -306,6 +306,20 @@ export default function SilverIRASeniorsPage() {
                 </div>
             </section>
 
+            {/* Joe Montana Section */}
+            <section className="py-12 bg-[#000080]/5 border-y border-[#000080]/20 font-sans">
+                <div className="max-w-3xl mx-auto px-4 text-center">
+                    <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <Award className="h-4 w-4" />
+                        Celebrity Endorsement That Means Something
+                    </div>
+                    <h3 className="text-2xl font-bold text-[#000080] mb-4">Joe Montana Isn&apos;t Just a Spokesman</h3>
+                    <p className="text-slate-700 text-lg">
+                        Hall of Fame quarterback Joe Montana asked his personal financial team to find the best precious metals company in the nation and they chose Augusta Precious Metals for him over others. He loved the company&apos;s mission so much that he became a customer and paid ambassador.
+                    </p>
+                </div>
+            </section>
+
             {/* FAQ Section */}
             <section className="py-16 bg-slate-100 font-sans">
                 <div className="max-w-3xl mx-auto px-4">

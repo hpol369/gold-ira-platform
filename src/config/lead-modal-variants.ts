@@ -9,9 +9,9 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Get Your Free Fee Breakdown",
     subtext: "See exactly what Gold IRAs cost — no hidden fees",
     benefits: [
-      "Full fee transparency — no surprises",
-      "Compare costs across top providers",
-      "Understand setup, storage & annual fees",
+      "Money Magazine's Best Overall 2024",
+      "Zero BBB Complaints",
+      "Zero Setup Fees for 10 Years",
     ],
   },
   compare: {
@@ -27,9 +27,9 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Get Your Silver IRA Kit",
     subtext: "Discover how to protect wealth with silver",
     benefits: [
-      "Learn why silver outperforms in downturns",
-      "IRS-approved silver options explained",
-      "Diversify beyond just gold",
+      "Money Magazine's Best Overall 2024",
+      "Zero BBB Complaints",
+      "No Obligation Consultation",
     ],
   },
   "silver-fees": {
@@ -45,27 +45,27 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Start Your 401k Rollover",
     subtext: "Move your 401k to gold — tax-free",
     benefits: [
-      "Tax-free rollover process explained",
-      "Keep your retirement tax-advantaged",
-      "Step-by-step guidance provided",
+      "Money Magazine's Best Overall 2024",
+      "Zero BBB Complaints",
+      "Zero Setup Fees for 10 Years",
     ],
   },
   seniors: {
     headline: "Get Your Retirement Protection Guide",
     subtext: "Secure your retirement with precious metals",
     benefits: [
-      "Protect savings from market volatility",
-      "Inflation-proof your retirement",
-      "No minimum age requirements",
+      "Money Magazine's Best Overall 2024",
+      "Zero BBB Complaints",
+      "No Obligation Consultation",
     ],
   },
   "silver-seniors": {
     headline: "Get Your Silver Retirement Guide",
     subtext: "Protect your savings with affordable silver",
     benefits: [
-      "Silver costs less than gold per ounce",
-      "Higher growth potential in bull markets",
-      "Same tax benefits as gold IRAs",
+      "Money Magazine's Best Overall 2024",
+      "Zero BBB Complaints",
+      "No Obligation Consultation",
     ],
   },
   protect: {
@@ -81,9 +81,9 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Get Your Free Consultation",
     subtext: "Speak with a Gold IRA specialist",
     benefits: [
-      "No-obligation consultation",
-      "Expert answers to your questions",
-      "Personalized retirement guidance",
+      "Money Magazine's Best Overall 2024",
+      "Zero BBB Complaints",
+      "Zero Setup Fees for 10 Years",
     ],
   },
 };

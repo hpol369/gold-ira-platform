@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
 
@@ -49,8 +49,24 @@ export function LPFinalCTA({
           {headline}
         </h2>
         {subheadline && (
-          <p className="text-lg text-slate-300 mb-8">{subheadline}</p>
+          <p className="text-lg text-slate-300 mb-6">{subheadline}</p>
         )}
+
+        {/* Guarantees Row */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-white">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="h-5 w-5 text-green-500" />
+            <span>100% Satisfaction Guarantee</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="h-5 w-5 text-green-500" />
+            <span>7-Day Money-Back Guarantee</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="h-5 w-5 text-green-500" />
+            <span>Highest Buyback Guarantee</span>
+          </div>
+        </div>
 
         {isInternal ? (
           <Link
