@@ -16,7 +16,8 @@ import {
     getCategoryInfo,
     getRelatedNews,
 } from "@/lib/news";
-import { ArrowRight, ArrowLeft, Clock, Calendar, ExternalLink, Share2, TrendingUp, Newspaper } from "lucide-react";
+import { ArrowRight, ArrowLeft, Clock, Calendar, ExternalLink, Share2 } from "lucide-react";
+import { SpotPriceWidget } from "@/components/widgets/SpotPriceWidget";
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -267,14 +268,9 @@ export default async function NewsArticlePage({ params }: Props) {
                                 </div>
                             )}
 
-                            {/* Gold Price Widget Placeholder */}
-                            <div className="bg-white border border-slate-200 rounded-xl p-6 mb-6 shadow-sm">
-                                <h3 className="text-lg font-bold text-[#000080] mb-4">Gold Price Today</h3>
-                                <div className="text-3xl font-black text-[#B22234] mb-2">$2,650</div>
-                                <div className="text-sm text-green-600 font-bold">+$12.50 (+0.47%)</div>
-                                <p className="text-xs text-slate-400 mt-3 font-medium">
-                                    Updated hourly. For informational purposes only.
-                                </p>
+                            {/* Gold Price Widget - Live from API */}
+                            <div className="mb-6">
+                                <SpotPriceWidget metal="gold" />
                             </div>
 
                             {/* Newsletter Signup */}
