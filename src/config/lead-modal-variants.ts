@@ -77,6 +77,15 @@ export const leadModalVariants: Record<string, VariantConfig> = {
       "Physical assets you can trust",
     ],
   },
+  "retirement-number": {
+    headline: "Get Your Personalized Retirement Number",
+    subtext: "See exactly how much you need — and how to protect it",
+    benefits: [
+      "Personalized retirement calculation",
+      "Inflation protection strategies",
+      "Tax-free rollover options explained",
+    ],
+  },
   default: {
     headline: "Get Your Free Consultation",
     subtext: "Speak with a Gold IRA specialist",
