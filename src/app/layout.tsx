@@ -3,15 +3,25 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { SocialProofTicker } from "@/components/widgets/SocialProofTicker";
+import { SocialProofTickerClient } from "@/components/widgets/SocialProofTickerClient";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
 const GOOGLE_ADS_ID = "AW-17807049464";
 const CLARITY_PROJECT_ID = "v816rr21t5";
 const GTM_ID = "GTM-TPC628G9";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: 'swap',
+  preload: true,
+});
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: 'swap',
+  preload: true,
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.richdadretirement.com"),
@@ -104,7 +114,7 @@ export default function RootLayout({
           `}
         </Script>
         {/* Microsoft Clarity - Session Recording & Heatmaps */}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -129,7 +139,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
-        <SocialProofTicker />
+        <SocialProofTickerClient />
       </body>
     </html>
   );

@@ -1,21 +1,67 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { TrustBadges } from "@/components/home/TrustBadges";
-import { Testimonials } from "@/components/home/Testimonials";
-import { ValueProps } from "@/components/home/ValueProps";
-import { FeaturedPartner } from "@/components/home/FeaturedPartner";
-import { QuizCTA } from "@/components/home/QuizCTA";
-import { WealthCalculator } from "@/components/home/WealthCalculator";
-import { DailyBrief } from "@/components/home/DailyBrief";
 import { WhySection, DeepWhySection } from "@/components/home/GoldenCircle";
-import { HowSection } from "@/components/home/GoldenCircle";
 import { AuthoritySection } from "@/components/home/AuthoritySection";
-import { UrgencySection } from "@/components/home/UrgencySection";
-import { ComparisonTable } from "@/components/home/ComparisonTable";
-import { NewsletterSignup } from "@/components/email/NewsletterSignup";
 import { Container } from "@/components/ui/Container";
 import { AlertTriangle, BookOpen, RefreshCw, ArrowRight } from "lucide-react";
+
+// Lazy load below-fold components for better performance
+const WealthCalculator = dynamic(
+  () => import("@/components/home/WealthCalculator").then(mod => ({ default: mod.WealthCalculator })),
+  { ssr: true, loading: () => <div className="h-96 bg-slate-100 animate-pulse" /> }
+);
+
+const QuizCTA = dynamic(
+  () => import("@/components/home/QuizCTA").then(mod => ({ default: mod.QuizCTA })),
+  { ssr: true }
+);
+
+const DailyBrief = dynamic(
+  () => import("@/components/home/DailyBrief").then(mod => ({ default: mod.DailyBrief })),
+  { ssr: true }
+);
+
+const ValueProps = dynamic(
+  () => import("@/components/home/ValueProps").then(mod => ({ default: mod.ValueProps })),
+  { ssr: true }
+);
+
+const HowSection = dynamic(
+  () => import("@/components/home/GoldenCircle").then(mod => ({ default: mod.HowSection })),
+  { ssr: true }
+);
+
+const FeaturedPartner = dynamic(
+  () => import("@/components/home/FeaturedPartner").then(mod => ({ default: mod.FeaturedPartner })),
+  { ssr: true }
+);
+
+const Testimonials = dynamic(
+  () => import("@/components/home/Testimonials").then(mod => ({ default: mod.Testimonials })),
+  { ssr: true }
+);
+
+const UrgencySection = dynamic(
+  () => import("@/components/home/UrgencySection").then(mod => ({ default: mod.UrgencySection })),
+  { ssr: true }
+);
+
+const NewsletterSignup = dynamic(
+  () => import("@/components/email/NewsletterSignup").then(mod => ({ default: mod.NewsletterSignup })),
+  { ssr: true }
+);
+
+const ComparisonTable = dynamic(
+  () => import("@/components/home/ComparisonTable").then(mod => ({ default: mod.ComparisonTable })),
+  { ssr: true }
+);
+
+const TrustBadges = dynamic(
+  () => import("@/components/home/TrustBadges").then(mod => ({ default: mod.TrustBadges })),
+  { ssr: true }
+);
 
 export default function Home() {
   return (

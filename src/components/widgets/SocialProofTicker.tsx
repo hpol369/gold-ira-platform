@@ -1,12 +1,11 @@
 // src/components/widgets/SocialProofTicker.tsx
 // Subtle social proof notification with Patriot Light Theme
 // Fixed position bottom-left, desktop only (lg:block)
-// Shows cycling notifications with fade animations
+// Shows cycling notifications with CSS animations (optimized for performance)
 
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect, useCallback, useTransition } from "react";
 import { X, MapPin } from "lucide-react";
 
 // Common first names for realistic fake data
@@ -81,8 +80,10 @@ function generateNotification(id: number): Notification {
 export function SocialProofTicker() {
   const [currentNotification, setCurrentNotification] = useState<Notification | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [isExiting, setIsExiting] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
   const [notificationId, setNotificationId] = useState(0);
+  const [, startTransition] = useTransition();
 
   // Show a new notification
   const showNotification = useCallback(() => {
@@ -91,11 +92,19 @@ export function SocialProofTicker() {
     const newId = notificationId + 1;
     setNotificationId(newId);
     setCurrentNotification(generateNotification(newId));
+    setIsExiting(false);
     setIsVisible(true);
 
     // Hide after 4 seconds
     setTimeout(() => {
-      setIsVisible(false);
+      setIsExiting(true);
+      // Wait for exit animation to complete
+      setTimeout(() => {
+        startTransition(() => {
+          setIsVisible(false);
+          setIsExiting(false);
+        });
+      }, 300);
     }, 4000);
   }, [isDismissed, notificationId]);
 
@@ -132,26 +141,23 @@ export function SocialProofTicker() {
 
   // Handle dismiss
   const handleDismiss = () => {
-    setIsVisible(false);
-    setIsDismissed(true);
+    setIsExiting(true);
+    setTimeout(() => {
+      setIsVisible(false);
+      setIsDismissed(true);
+    }, 300);
   };
 
   // Don't render anything if permanently dismissed
   if (isDismissed && !isVisible) return null;
 
   return (
-    <AnimatePresence>
+    <>
       {isVisible && currentNotification && (
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -100, opacity: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 30,
-          }}
-          className="fixed bottom-6 left-6 z-40 hidden lg:block"
+        <div
+          className={`fixed bottom-6 left-6 z-40 hidden lg:block ${
+            isExiting ? 'notification-exit' : 'notification-enter'
+          }`}
         >
           <div className="relative max-w-xs bg-white rounded-lg border border-slate-200 shadow-lg overflow-hidden">
             {/* Close button */}
@@ -188,8 +194,8 @@ export function SocialProofTicker() {
             {/* Subtle red accent line at bottom */}
             <div className="h-0.5 bg-gradient-to-r from-[#B22234]/50 via-[#B22234]/30 to-transparent" />
           </div>
-        </motion.div>
+        </div>
       )}
-    </AnimatePresence>
+    </>
   );
 }

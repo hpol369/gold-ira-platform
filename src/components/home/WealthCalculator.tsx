@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { Container } from "@/components/ui/Container";
 import { Slider } from "@/components/ui/Slider";
 import { Button } from "@/components/ui/Button";
@@ -11,21 +11,18 @@ import { cn } from "@/lib/utils";
 export function WealthCalculator() {
     const [amount, setAmount] = useState(100000);
     const [years, setYears] = useState(10);
-    const [cashValue, setCashValue] = useState(0);
-    const [goldValue, setGoldValue] = useState(0);
 
     // Assumptions
     const INFLATION_RATE = 0.035; // 3.5% decay
     const GOLD_GROWTH_RATE = 0.08; // 8% growth
 
-    useEffect(() => {
-        // Calculate Cash Decay
+    const { cashValue, goldValue } = useMemo(() => {
         const futureCash = amount * Math.pow(1 - INFLATION_RATE, years);
-        setCashValue(Math.round(futureCash));
-
-        // Calculate Gold Growth
         const futureGold = amount * Math.pow(1 + GOLD_GROWTH_RATE, years);
-        setGoldValue(Math.round(futureGold));
+        return {
+            cashValue: Math.round(futureCash),
+            goldValue: Math.round(futureGold)
+        };
     }, [amount, years]);
 
     const formatCurrency = (val: number) => {

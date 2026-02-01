@@ -22,14 +22,18 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
   const trackedLink = getTrackedLink(AFFILIATE_LINKS.augusta, trackSource, "augusta");
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      // Show after scrolling 300px (user is engaged)
-      const scrolled = window.scrollY > 300;
-
-      // Hide when near bottom (sidebar is visible)
-      const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 500;
-
-      setIsVisible(scrolled && !nearBottom && !isDismissed);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrolled = window.scrollY > 300;
+          const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 500;
+          setIsVisible(scrolled && !nearBottom && !isDismissed);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });

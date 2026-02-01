@@ -141,3 +141,49 @@
 @utility gold-glow {
   box-shadow: 0 0 20px rgba(178, 34, 52, 0.2);
 }
+
+/* --- PERFORMANCE OPTIMIZATIONS --- */
+
+/* CSS Containment for isolated repaints */
+.patriot-card {
+  contain: layout style paint;
+}
+
+section {
+  contain: layout style;
+}
+
+.fixed {
+  contain: strict;
+}
+
+/* Notification animations (replacing Framer Motion) */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+.notification-enter {
+  animation: slideInLeft 0.3s ease-out forwards;
+}
+
+.notification-exit {
+  animation: slideOutLeft 0.3s ease-in forwards;
+}
