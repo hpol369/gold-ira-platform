@@ -9,9 +9,9 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Get Your Free Fee Breakdown",
     subtext: "See exactly what Gold IRAs cost — no hidden fees",
     benefits: [
-      "Money Magazine's Best Overall 2024",
-      "Zero BBB Complaints",
-      "Zero Setup Fees for 10 Years",
+      "Full fee transparency — no surprises",
+      "Compare costs across top providers",
+      "Understand setup, storage & annual fees",
     ],
   },
   compare: {
@@ -27,9 +27,9 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Get Your Silver IRA Kit",
     subtext: "Discover how to protect wealth with silver",
     benefits: [
-      "Money Magazine's Best Overall 2024",
-      "Zero BBB Complaints",
-      "No Obligation Consultation",
+      "Learn why silver outperforms in downturns",
+      "IRS-approved silver options explained",
+      "Diversify beyond just gold",
     ],
   },
   "silver-fees": {
@@ -45,27 +45,27 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Start Your 401k Rollover",
     subtext: "Move your 401k to gold — tax-free",
     benefits: [
-      "Money Magazine's Best Overall 2024",
-      "Zero BBB Complaints",
-      "Zero Setup Fees for 10 Years",
+      "Tax-free rollover process explained",
+      "Keep your retirement tax-advantaged",
+      "Step-by-step guidance provided",
     ],
   },
   seniors: {
     headline: "Get Your Retirement Protection Guide",
     subtext: "Secure your retirement with precious metals",
     benefits: [
-      "Money Magazine's Best Overall 2024",
-      "Zero BBB Complaints",
-      "No Obligation Consultation",
+      "Protect savings from market volatility",
+      "Inflation-proof your retirement",
+      "No minimum age requirements",
     ],
   },
   "silver-seniors": {
     headline: "Get Your Silver Retirement Guide",
     subtext: "Protect your savings with affordable silver",
     benefits: [
-      "Money Magazine's Best Overall 2024",
-      "Zero BBB Complaints",
-      "No Obligation Consultation",
+      "Silver: more affordable than gold",
+      "Same tax benefits as Gold IRA",
+      "Protect against inflation",
     ],
   },
   protect: {
@@ -81,9 +81,9 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     headline: "Get Your Free Consultation",
     subtext: "Speak with a Gold IRA specialist",
     benefits: [
-      "Money Magazine's Best Overall 2024",
-      "Zero BBB Complaints",
-      "Zero Setup Fees for 10 Years",
+      "No-obligation consultation",
+      "Expert answers to your questions",
+      "Personalized retirement guidance",
     ],
   },
 };
