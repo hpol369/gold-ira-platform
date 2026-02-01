@@ -59,6 +59,25 @@ export async function updateLeadStatus(
   return true;
 }
 
+// Generic update lead
+export async function updateLead(
+  id: string,
+  updates: Partial<Lead>
+): Promise<boolean> {
+  const { error } = await supabase
+    .from("leads")
+    .update(updates)
+    .eq("id", id);
+
+  if (error) {
+    console.error("[SUPABASE] Update error:", error);
+    return false;
+  }
+
+  console.log("[SUPABASE] Lead updated generic:", id);
+  return true;
+}
+
 // Get lead by ID
 export async function getLeadById(id: string): Promise<Lead | null> {
   const { data, error } = await supabase

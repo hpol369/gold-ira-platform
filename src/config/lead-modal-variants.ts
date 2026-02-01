@@ -51,7 +51,7 @@ export const leadModalVariants: Record<string, VariantConfig> = {
     ],
   },
   seniors: {
-    headline: "Get Your Retirement Protection Guide",
+    headline: "Send Me The Free 2026 Gold IRA Kit",
     subtext: "Secure your retirement with precious metals",
     benefits: [
       "Protect savings from market volatility",

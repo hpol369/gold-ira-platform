@@ -1,4 +1,5 @@
 import type { PostbackEvent, PostbackType } from "@/app/api/postback/route";
+import { getLeadByEmail } from "@/lib/supabase";
 
 // Configuration - Environment variables are read at call time for serverless compatibility
 function getConfig() {
@@ -36,8 +37,25 @@ export async function sendNotification(event: PostbackEvent): Promise<void> {
   const defaultConfig = { emoji: "📩", label: "New Event", priority: "normal" };
   const config = eventConfig[event.type] || defaultConfig;
 
+  // For qualified_lead or trade_complete, try to look up original signup date
+  let daysSinceSignup: number | null = null;
+  let leadName: string | null = null;
+  if ((event.type === "qualified_lead" || event.type === "trade_complete") && event.email) {
+    try {
+      const lead = await getLeadByEmail(event.email);
+      if (lead?.created_at) {
+        const signupDate = new Date(lead.created_at);
+        const now = new Date();
+        daysSinceSignup = Math.floor((now.getTime() - signupDate.getTime()) / (1000 * 60 * 60 * 24));
+        leadName = `${lead.first_name} ${lead.last_name || ""}`.trim();
+      }
+    } catch (err) {
+      console.error("[NOTIFICATION] Failed to lookup lead:", err);
+    }
+  }
+
   // Build message
-  const message = formatMessage(event, config);
+  const message = formatMessage(event, config, daysSinceSignup, leadName);
 
   // Send to all configured channels in parallel
   const promises: Promise<void>[] = [];
@@ -56,7 +74,9 @@ export async function sendNotification(event: PostbackEvent): Promise<void> {
 
 function formatMessage(
   event: PostbackEvent,
-  config: { emoji: string; label: string }
+  config: { emoji: string; label: string },
+  daysSinceSignup?: number | null,
+  leadName?: string | null
 ): string {
   // Extract click ID from sub_id if present (format: source_CLK-abc123)
   let source = event.sub_id || "Unknown";
@@ -69,34 +89,49 @@ function formatMessage(
   }
 
   const lines = [
-    `${config.emoji} ${config.label}`,
+    `${config.emoji} <b>${config.label}</b>`,
     ``,
-    `📅 Time: ${new Date(event.timestamp).toLocaleString()}`,
-    `📄 Source: ${source}`,
   ];
 
+  // Add lead name if available
+  if (leadName) {
+    lines.push(`👤 <b>Name:</b> ${leadName}`);
+  }
+
+  lines.push(`📅 <b>Time:</b> ${new Date(event.timestamp).toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" })}`);
+  lines.push(`📄 <b>Source:</b> ${source}`);
+
   if (clickId) {
-    lines.push(`🔑 Click ID: ${clickId}`);
+    lines.push(`🔑 <b>Click ID:</b> ${clickId}`);
   }
 
   if (event.location) {
-    lines.push(`🌍 Location: ${event.location}`);
+    lines.push(`🌍 <b>Location:</b> ${event.location}`);
+  }
+
+  if (event.ip && event.ip !== "unknown") {
+    lines.push(`🔗 <b>IP:</b> ${event.ip}`);
   }
 
   if (event.lead_id) {
-    lines.push(`🆔 Lead ID: ${event.lead_id}`);
+    lines.push(`🆔 <b>Lead ID:</b> ${event.lead_id}`);
   }
 
   // Add any extra fields
-  const skipFields = ["type", "sub_id", "lead_id", "timestamp", "ip", "user_agent", "location"];
+  const skipFields = ["type", "sub_id", "lead_id", "timestamp", "ip", "user_agent", "location", "email"];
   Object.entries(event).forEach(([key, value]) => {
     if (!skipFields.includes(key) && value) {
-      lines.push(`📌 ${key}: ${value}`);
+      lines.push(`📌 <b>${key}:</b> ${value}`);
     }
   });
 
   // Add motivational message for qualified lead
   if (event.type === "qualified_lead") {
+    lines.push(``);
+    if (daysSinceSignup !== null && daysSinceSignup !== undefined) {
+      const daysText = daysSinceSignup === 0 ? "vandaag" : daysSinceSignup === 1 ? "1 dag geleden" : `${daysSinceSignup} dagen geleden`;
+      lines.push(`⏱️ <b>Signed up:</b> ${daysText}`);
+    }
     lines.push(``);
     lines.push(`💵💵💵 +$200 GUARANTEED! 💵💵💵`);
     lines.push(`🔥 They passed the phone screening!`);
@@ -104,6 +139,11 @@ function formatMessage(
 
   // Add motivational message for trade complete
   if (event.type === "trade_complete") {
+    lines.push(``);
+    if (daysSinceSignup !== null && daysSinceSignup !== undefined) {
+      const daysText = daysSinceSignup === 0 ? "vandaag" : daysSinceSignup === 1 ? "1 dag geleden" : `${daysSinceSignup} dagen geleden`;
+      lines.push(`⏱️ <b>Signed up:</b> ${daysText}`);
+    }
     lines.push(``);
     lines.push(`🎉🎉🎉 NICE! Commission incoming! 🎉🎉🎉`);
     lines.push(`💰 BIG BAG SECURED 💰`);

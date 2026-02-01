@@ -6,7 +6,7 @@ import { X, User, Mail, Phone, ArrowRight, ArrowLeft, CheckCircle2, Loader2, Shi
 import { useLeadModal } from "@/context/LeadModalContext";
 import { leadModalVariants } from "@/config/lead-modal-variants";
 
-type Step = 1 | 2 | 3 | "success";
+type Step = 1 | 2 | 3 | "enrichment" | "success";
 
 export default function LeadCaptureModal() {
   const { isOpen, variant, source, closeModal } = useLeadModal();
@@ -19,6 +19,11 @@ export default function LeadCaptureModal() {
     email: "",
     phone: "",
   });
+  const [enrichmentData, setEnrichmentData] = useState({
+    investmentAmount: "",
+    percentageToProtect: "",
+  });
+  const [leadId, setLeadId] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
 
@@ -31,6 +36,8 @@ export default function LeadCaptureModal() {
       const timer = setTimeout(() => {
         setStep(1);
         setFormData({ firstName: "", lastName: "", email: "", phone: "" });
+        setEnrichmentData({ investmentAmount: "", percentageToProtect: "" });
+        setLeadId(null);
         setError("");
       }, 300);
       return () => clearTimeout(timer);
@@ -117,7 +124,11 @@ export default function LeadCaptureModal() {
       const result = await response.json();
 
       if (result.success) {
-        // Fire Google Ads conversion
+        if (result.leadId) {
+          setLeadId(result.leadId);
+        }
+
+        // Fire Google Ads conversion immediately on initial capture (don't wait for enrichment)
         if (typeof window !== "undefined" && (window as any).gtag) {
           (window as any).gtag("event", "conversion", {
             send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
@@ -125,12 +136,41 @@ export default function LeadCaptureModal() {
             currency: "USD",
           });
         }
-        setStep("success");
+        // Move to Enrichment instead of immediately success
+        setStep("enrichment");
       } else {
         setError("We couldn't process your request. Please verify your phone number includes the area code, or call us at 1-800-700-1008.");
       }
     } catch {
       setError("Connection issue — your information is safe. Please check your internet and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleEnrichmentSubmit = async () => {
+    // If no leadId captured, just go to success (fallback)
+    if (!leadId) {
+      setStep("success");
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      await fetch("/api/submit-lead", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          leadId,
+          investmentAmount: enrichmentData.investmentAmount,
+          percentageToProtect: enrichmentData.percentageToProtect,
+        }),
+      });
+      // Regardless of success/fail of enrichment, show success page
+      setStep("success");
+    } catch (e) {
+      console.error("Enrichment failed", e);
+      setStep("success");
     } finally {
       setIsSubmitting(false);
     }
@@ -426,8 +466,88 @@ export default function LeadCaptureModal() {
                 </div>
               )}
 
+
+              {/* Step 4: Enrichment (Post-Capture) */}
+              {step === "enrichment" && (
+                <div className="space-y-6">
+                  <div className="text-center">
+                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                      Help your specialist prepare
+                    </h2>
+                    <p className="text-white/90">2 quick questions to customize your kit.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    {/* Q1: Investment Amount */}
+                    <div>
+                      <label className="block text-sm font-medium text-amber-400 mb-2">
+                        Approximate Retirement Savings?
+                      </label>
+                      <select
+                        value={enrichmentData.investmentAmount}
+                        onChange={(e) => setEnrichmentData({ ...enrichmentData, investmentAmount: e.target.value })}
+                        className="w-full px-4 py-3 text-lg text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all appearance-none"
+                      >
+                        <option value="">Select an amount...</option>
+                        <option value="$25k-$50k">$25,000 - $50,000</option>
+                        <option value="$50k-$100k">$50,000 - $100,000</option>
+                        <option value="$100k-$250k">$100,000 - $250,000</option>
+                        <option value="$250k-$500k">$250,000 - $500,000</option>
+                        <option value="$500k+">$500,000+</option>
+                      </select>
+                    </div>
+
+                    {/* Q2: Percentage to Protect */}
+                    <div>
+                      <label className="block text-sm font-medium text-amber-400 mb-2">
+                        % you are considering to protect?
+                      </label>
+                      <div className="grid grid-cols-3 gap-2">
+                        {["10-20%", "20-50%", "50%+"].map((pct) => (
+                          <button
+                            key={pct}
+                            onClick={() => setEnrichmentData({ ...enrichmentData, percentageToProtect: pct })}
+                            className={`py-3 px-2 rounded-lg text-sm font-semibold border-2 transition-all ${enrichmentData.percentageToProtect === pct
+                                ? "bg-amber-400 border-amber-400 text-slate-900"
+                                : "bg-white/5 border-white/20 text-white hover:bg-white/10"
+                              }`}
+                          >
+                            {pct}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={handleEnrichmentSubmit}
+                    disabled={isSubmitting}
+                    className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="h-5 w-5 animate-spin" />
+                        Saving...
+                      </>
+                    ) : (
+                      <>
+                        Complete Customization
+                        <ArrowRight className="h-5 w-5" />
+                      </>
+                    )}
+                  </button>
+
+                  <button
+                    onClick={() => setStep("success")}
+                    className="w-full text-white/50 hover:text-white text-sm py-2 transition-colors uppercase tracking-wider font-medium"
+                  >
+                    Skip & Show My Kit
+                  </button>
+                </div>
+              )}
+
               {/* Trust signals (only on steps 1-3) */}
-              {step !== "success" && (
+              {step !== "success" && step !== "enrichment" && (
                 <div className="mt-6 pt-4 border-t border-white/10 space-y-3">
                   {/* Stars */}
                   <div className="flex items-center justify-center gap-1 text-amber-400">

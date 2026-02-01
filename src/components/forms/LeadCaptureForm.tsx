@@ -139,6 +139,7 @@ export function LeadCaptureForm() {
         {/* Name Row */}
         <div className="grid grid-cols-2 gap-4">
           <div>
+            <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">First Name</label>
             <input
               type="text"
               name="firstName"
@@ -150,6 +151,7 @@ export function LeadCaptureForm() {
             {errors.firstName && <p className={errorStyles}>{errors.firstName}</p>}
           </div>
           <div>
+            <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Last Name</label>
             <input
               type="text"
               name="lastName"
@@ -164,6 +166,7 @@ export function LeadCaptureForm() {
 
         {/* Email */}
         <div>
+          <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Email Address</label>
           <input
             type="email"
             name="email"
@@ -177,6 +180,7 @@ export function LeadCaptureForm() {
 
         {/* Phone */}
         <div>
+          <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Phone Number</label>
           <input
             type="tel"
             name="phone"
@@ -190,6 +194,7 @@ export function LeadCaptureForm() {
 
         {/* Investment Amount */}
         <div>
+          <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Investment Amount</label>
           <select
             name="investmentAmount"
             value={formData.investmentAmount}
