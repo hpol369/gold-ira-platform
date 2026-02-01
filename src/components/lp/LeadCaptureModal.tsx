@@ -429,33 +429,20 @@ export default function LeadCaptureModal() {
               {/* Trust signals (only on steps 1-3) */}
               {step !== "success" && (
                 <div className="mt-6 pt-4 border-t border-white/10 space-y-3">
-                  {/* Guarantees Row */}
-                  <div className="flex flex-wrap justify-center gap-2 text-xs">
-                    <span className="flex items-center gap-1 bg-amber-500/20 text-amber-300 px-2 py-1 rounded">
-                      <CheckCircle2 className="h-3 w-3" />
-                      Money Magazine "Best Overall" 2024
-                    </span>
-                    <span className="flex items-center gap-1 bg-green-500/20 text-green-300 px-2 py-1 rounded">
-                      <CheckCircle2 className="h-3 w-3" />
-                      No Obligation
-                    </span>
-                  </div>
-
-                  {/* Existing Stars & Security */}
+                  {/* Stars */}
                   <div className="flex items-center justify-center gap-1 text-amber-400">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 fill-amber-400" />
                     ))}
                   </div>
+                  {/* Security */}
                   <div className="flex items-center justify-center gap-4 text-white/70 text-xs">
                     <span className="flex items-center gap-1">
                       <ShieldCheck className="h-4 w-4" />
                       256-bit SSL
                     </span>
                     <span>|</span>
-                    <span>Zero BBB Complaints</span>
-                    <span>|</span>
-                    <span>A+ Rating</span>
+                    <span>A+ BBB Rating</span>
                   </div>
                 </div>
               )}
