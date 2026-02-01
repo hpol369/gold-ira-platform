@@ -76,6 +76,23 @@ export function trackOutboundClick(url: string, linkText: string) {
   }
 }
 
+// Track calculator interactions (for Google Ads optimization)
+export function trackCalculatorInteraction(
+  action: 'slider_change' | 'view_result' | 'time_on_calc',
+  data: { amount?: number; years?: number; timeSpent?: number; source?: string }
+) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', `calc_${action}`, {
+      event_category: 'calculator',
+      event_label: data.source || 'wealth_calculator',
+      calc_amount: data.amount,
+      calc_years: data.years,
+      time_spent: data.timeSpent,
+      value: 1,
+    });
+  }
+}
+
 // NOTE: Google Ads conversion tracking is now handled directly in:
 // - LeadCaptureModal.tsx (LP forms)
 // - LeadCaptureForm.tsx (main site form)

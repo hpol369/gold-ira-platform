@@ -1,16 +1,57 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { Container } from "@/components/ui/Container";
 import { Slider } from "@/components/ui/Slider";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, TrendingUp, TrendingDown, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { trackCalculatorInteraction } from "@/lib/analytics";
 
-export function WealthCalculator() {
-    const [amount, setAmount] = useState(100000);
-    const [years, setYears] = useState(10);
+interface WealthCalculatorProps {
+    initialAmount?: number;
+    initialYears?: number;
+}
+
+export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: WealthCalculatorProps) {
+    const [amount, setAmount] = useState(initialAmount);
+    const [years, setYears] = useState(initialYears);
+    const [hasInteracted, setHasInteracted] = useState(false);
+    const startTimeRef = useRef<number>(Date.now());
+
+    // Track time spent on calculator (at 30s and 60s)
+    useEffect(() => {
+        const timer30 = setTimeout(() => {
+            trackCalculatorInteraction('time_on_calc', { timeSpent: 30, amount, years });
+        }, 30000);
+
+        const timer60 = setTimeout(() => {
+            trackCalculatorInteraction('time_on_calc', { timeSpent: 60, amount, years });
+        }, 60000);
+
+        return () => {
+            clearTimeout(timer30);
+            clearTimeout(timer60);
+        };
+    }, []);
+
+    // Track first interaction
+    useEffect(() => {
+        if (hasInteracted) {
+            trackCalculatorInteraction('slider_change', { amount, years });
+        }
+    }, [hasInteracted, amount, years]);
+
+    const handleAmountChange = (val: number[]) => {
+        setAmount(val[0]);
+        if (!hasInteracted) setHasInteracted(true);
+    };
+
+    const handleYearsChange = (val: number[]) => {
+        setYears(val[0]);
+        if (!hasInteracted) setHasInteracted(true);
+    };
 
     // Assumptions
     const INFLATION_RATE = 0.035; // 3.5% decay
@@ -64,14 +105,14 @@ export function WealthCalculator() {
                                     <Slider
                                         value={[amount]}
                                         min={50000}
-                                        max={1000000}
+                                        max={3000000}
                                         step={10000}
-                                        onValueChange={(val) => setAmount(val[0])}
+                                        onValueChange={handleAmountChange}
                                         className="py-4 cursor-pointer"
                                     />
                                     <div className="flex justify-between text-xs text-slate-400 font-bold">
                                         <span>$50k</span>
-                                        <span>$1M+</span>
+                                        <span>$3M+</span>
                                     </div>
                                 </div>
 
@@ -87,7 +128,7 @@ export function WealthCalculator() {
                                         min={5}
                                         max={30}
                                         step={1}
-                                        onValueChange={(val) => setYears(val[0])}
+                                        onValueChange={handleYearsChange}
                                         className="py-4 cursor-pointer"
                                     />
                                     <div className="flex justify-between text-xs text-slate-400 font-bold">
