@@ -74,12 +74,6 @@ export function Navbar() {
                                 American Owned & Operated
                             </span>
                         </div>
-                        <div className="flex items-center gap-4">
-                            <a href="tel:800-123-4567" className="flex items-center gap-1 hover:text-[#000080]">
-                                <Phone className="h-3 w-3" />
-                                <span className="hidden sm:inline">800-123-4567</span>
-                            </a>
-                        </div>
                     </div>
                 </Container>
             </div>

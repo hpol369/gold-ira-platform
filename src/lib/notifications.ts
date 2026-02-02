@@ -3,9 +3,11 @@ import { getLeadByEmail } from "@/lib/supabase";
 
 // Configuration - Environment variables are read at call time for serverless compatibility
 function getConfig() {
+  // Support multiple chat IDs separated by comma
+  const chatIds = process.env.TELEGRAM_CHAT_IDS || process.env.TELEGRAM_CHAT_ID || "";
   return {
     TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
-    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
+    TELEGRAM_CHAT_IDS: chatIds.split(",").map(id => id.trim()).filter(Boolean),
     EMAIL_TO: process.env.NOTIFICATION_EMAIL,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
   };
@@ -31,7 +33,7 @@ const eventConfig: Record<PostbackType, { emoji: string; label: string; priority
 };
 
 export async function sendNotification(event: PostbackEvent): Promise<void> {
-  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, RESEND_API_KEY, EMAIL_TO } = getConfig();
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS, RESEND_API_KEY, EMAIL_TO } = getConfig();
 
   // Fallback config for unknown event types
   const defaultConfig = { emoji: "📩", label: "New Event", priority: "normal" };
@@ -60,7 +62,7 @@ export async function sendNotification(event: PostbackEvent): Promise<void> {
   // Send to all configured channels in parallel
   const promises: Promise<void>[] = [];
 
-  if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
+  if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_IDS.length > 0) {
     promises.push(sendTelegram(message, config.priority === "urgent"));
   }
 
@@ -153,36 +155,39 @@ function formatMessage(
 }
 
 async function sendTelegram(message: string, urgent: boolean): Promise<void> {
-  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } = getConfig();
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS } = getConfig();
 
-  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
-    console.log("[TELEGRAM] Not configured, skipping. Token:", !!TELEGRAM_BOT_TOKEN, "ChatID:", !!TELEGRAM_CHAT_ID);
+  if (!TELEGRAM_BOT_TOKEN || TELEGRAM_CHAT_IDS.length === 0) {
+    console.log("[TELEGRAM] Not configured, skipping. Token:", !!TELEGRAM_BOT_TOKEN, "ChatIDs:", TELEGRAM_CHAT_IDS.length);
     return;
   }
 
-  try {
-    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text: message,
-        parse_mode: "HTML",
-        // Disable notification sound for normal leads, enable for urgent
-        disable_notification: !urgent
-      })
-    });
+  // Send to all configured chat IDs
+  for (const chatId of TELEGRAM_CHAT_IDS) {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+          parse_mode: "HTML",
+          // Disable notification sound for normal leads, enable for urgent
+          disable_notification: !urgent
+        })
+      });
 
-    if (!response.ok) {
-      const error = await response.text();
-      console.error("[TELEGRAM ERROR]", error);
-    } else {
-      console.log("[TELEGRAM] Notification sent");
+      if (!response.ok) {
+        const error = await response.text();
+        console.error(`[TELEGRAM ERROR] Chat ${chatId}:`, error);
+      } else {
+        console.log(`[TELEGRAM] Notification sent to ${chatId}`);
+      }
+    } catch (error) {
+      console.error(`[TELEGRAM ERROR] Chat ${chatId}:`, error);
     }
-  } catch (error) {
-    console.error("[TELEGRAM ERROR]", error);
   }
 }
 
@@ -297,36 +302,39 @@ export async function sendTestNotification(): Promise<void> {
  * Used for high-value lead alerts and other direct notifications
  */
 export async function sendTelegramNotification(message: string, urgent: boolean = false): Promise<void> {
-  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } = getConfig();
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS } = getConfig();
 
-  console.log("[TELEGRAM] Attempting to send notification. Token present:", !!TELEGRAM_BOT_TOKEN, "ChatID present:", !!TELEGRAM_CHAT_ID);
+  console.log("[TELEGRAM] Attempting to send notification. Token present:", !!TELEGRAM_BOT_TOKEN, "ChatIDs:", TELEGRAM_CHAT_IDS.length);
 
-  if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+  if (!TELEGRAM_BOT_TOKEN || TELEGRAM_CHAT_IDS.length === 0) {
     console.log("[TELEGRAM] Not configured, skipping notification");
     return;
   }
 
-  try {
-    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text: message,
-        parse_mode: "HTML",
-        disable_notification: !urgent
-      })
-    });
+  // Send to all configured chat IDs
+  for (const chatId of TELEGRAM_CHAT_IDS) {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+          parse_mode: "HTML",
+          disable_notification: !urgent
+        })
+      });
 
-    if (!response.ok) {
-      const error = await response.text();
-      console.error("[TELEGRAM ERROR] Response not OK:", response.status, error);
-    } else {
-      console.log("[TELEGRAM] Direct notification sent successfully");
+      if (!response.ok) {
+        const error = await response.text();
+        console.error(`[TELEGRAM ERROR] Chat ${chatId}:`, response.status, error);
+      } else {
+        console.log(`[TELEGRAM] Direct notification sent to ${chatId}`);
+      }
+    } catch (error) {
+      console.error(`[TELEGRAM ERROR] Chat ${chatId}:`, error);
     }
-  } catch (error) {
-    console.error("[TELEGRAM ERROR] Exception:", error);
   }
 }

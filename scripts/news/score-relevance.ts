@@ -131,6 +131,7 @@ function determineCategory(keywords: string[], text: string): NewsCategory {
 
 /**
  * Filter and sort items by relevance
+ * Ensures category diversity: at least 1 silver article per run
  */
 export function filterByRelevance(items: RSSFeedItem[]): ScoredNewsItem[] {
     const scoredItems = items.map(scoreNewsItem);
@@ -143,8 +144,33 @@ export function filterByRelevance(items: RSSFeedItem[]): ScoredNewsItem[] {
     // Sort by score (highest first)
     relevantItems.sort((a, b) => b.relevanceScore - a.relevanceScore);
 
-    // Limit to max articles per run
-    return relevantItems.slice(0, CONFIG.scoring.maxArticlesPerRun);
+    // Ensure category diversity: at least 1 silver article
+    const silverItems = relevantItems.filter(item => item.suggestedCategory === "silver");
+    const nonSilverItems = relevantItems.filter(item => item.suggestedCategory !== "silver");
+
+    const result: ScoredNewsItem[] = [];
+    const maxArticles = CONFIG.scoring.maxArticlesPerRun;
+
+    // Always include at least 1 silver article if available
+    if (silverItems.length > 0) {
+        result.push(silverItems[0]);
+    }
+
+    // Fill remaining slots with highest scoring items (any category)
+    for (const item of nonSilverItems) {
+        if (result.length >= maxArticles) break;
+        result.push(item);
+    }
+
+    // If we still have room and more silver items, add them
+    for (let i = 1; i < silverItems.length && result.length < maxArticles; i++) {
+        result.push(silverItems[i]);
+    }
+
+    // Sort final result by score
+    result.sort((a, b) => b.relevanceScore - a.relevanceScore);
+
+    return result.slice(0, maxArticles);
 }
 
 /**

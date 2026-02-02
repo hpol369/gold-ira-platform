@@ -190,7 +190,6 @@ export const INTERNAL_WARMUP_PAGES = {
 export const COMPANY_DETAILS = {
     augusta: {
         name: "Augusta Precious Metals",
-        phone: "800-123-4567",
         minInvestment: "$50,000",
     },
     noble: {

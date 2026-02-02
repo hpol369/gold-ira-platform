@@ -58,7 +58,19 @@ export const CONFIG = {
             name: "Money Metals",
             url: "https://www.moneymetals.com/news/feed",
             category: "silver" as const,
-            priority: 2,
+            priority: 1,
+        },
+        {
+            name: "Silver Doctors",
+            url: "https://www.silverdoctors.com/feed/",
+            category: "silver" as const,
+            priority: 1,
+        },
+        {
+            name: "Investing.com Silver",
+            url: "https://www.investing.com/rss/news_302.rss",
+            category: "silver" as const,
+            priority: 1,
         },
     ],
 
@@ -88,7 +100,7 @@ export const CONFIG = {
     // Scoring thresholds
     scoring: {
         minimumScore: 3, // Minimum relevance score to consider (out of 10)
-        maxArticlesPerRun: 3, // Maximum articles to generate per run
+        maxArticlesPerRun: 4, // Maximum articles to generate per run (increased for silver coverage)
     },
 
     // Output paths

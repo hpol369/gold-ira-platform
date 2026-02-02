@@ -37,9 +37,6 @@ export default function DesignConceptPage() {
                         <span className="hidden md:inline">Updated: January 2026</span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <span className="flex items-center gap-1">
-                            <Phone className="h-3 w-3" /> 800-123-4567
-                        </span>
                         <Link href="#" className="hover:text-[#000080] underline">Member Login</Link>
                     </div>
                 </div>
