@@ -43,20 +43,8 @@ export const CONFIG = {
             priority: 1,
         },
         {
-            name: "Kitco Silver",
-            url: "https://www.kitco.com/news/category/mining/rss",
-            category: "silver" as const,
-            priority: 1,
-        },
-        {
             name: "SilverSeek",
             url: "https://silverseek.com/rss.xml",
-            category: "silver" as const,
-            priority: 1,
-        },
-        {
-            name: "Money Metals",
-            url: "https://www.moneymetals.com/news/feed",
             category: "silver" as const,
             priority: 1,
         },
@@ -67,8 +55,14 @@ export const CONFIG = {
             priority: 1,
         },
         {
-            name: "Investing.com Silver",
-            url: "https://www.investing.com/rss/news_302.rss",
+            name: "Kitco News",
+            url: "https://www.kitco.com/rss/news.xml",
+            category: "silver" as const,
+            priority: 1,
+        },
+        {
+            name: "Sprott Money",
+            url: "https://www.sprottmoney.com/blog/rss",
             category: "silver" as const,
             priority: 1,
         },
