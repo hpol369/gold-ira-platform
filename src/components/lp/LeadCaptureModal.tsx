@@ -522,24 +522,33 @@ export default function LeadCaptureModal() {
       </div>
     </div>
 
-    {/* Question 2: Savings - Dropdown */}
+    {/* Question 2: Indirect savings question */}
     <div>
       <label className="block text-sm font-medium text-white/90 mb-2">
-        What are your total retirement savings?
+        What would a 10% market crash mean for your 401(k)?
       </label>
-      <select
-        value={enrichmentData.totalRetirementSavings}
-        onChange={(e) => setEnrichmentData({ ...enrichmentData, totalRetirementSavings: e.target.value })}
-        className="w-full py-3 px-4 rounded-xl border-2 border-white/20 bg-white/5 text-white text-base focus:border-amber-400 focus:ring-0 outline-none transition-all appearance-none cursor-pointer"
-        style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center', backgroundSize: '20px' }}
-      >
-        <option value="" className="bg-slate-800">Select amount...</option>
-        <option value="50k_100k" className="bg-slate-800">$50,000 - $100,000</option>
-        <option value="100k_250k" className="bg-slate-800">$100,000 - $250,000</option>
-        <option value="250k_500k" className="bg-slate-800">$250,000 - $500,000</option>
-        <option value="500k_1m" className="bg-slate-800">$500,000 - $1 Million</option>
-        <option value="over_1m" className="bg-slate-800">Over $1 Million</option>
-      </select>
+      <div className="space-y-2">
+        {[
+          { value: "under_50k", label: "I'd lose less than $5,000", savings: "Under $50K" },
+          { value: "50k_100k", label: "I'd lose $5,000 - $10,000", savings: "$50K-$100K" },
+          { value: "100k_250k", label: "I'd lose $10,000 - $25,000", savings: "$100K-$250K" },
+          { value: "250k_500k", label: "I'd lose $25,000 - $50,000", savings: "$250K-$500K" },
+          { value: "500k_1m", label: "I'd lose $50,000 - $100,000", savings: "$500K-$1M" },
+          { value: "over_1m", label: "I'd lose over $100,000", savings: "$1M+" },
+        ].map((option) => (
+          <button
+            key={option.value}
+            onClick={() => setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value })}
+            className={`w-full py-2.5 px-4 rounded-lg border text-left text-sm transition-all ${
+              enrichmentData.totalRetirementSavings === option.value
+                ? "border-amber-400 bg-amber-400/20 text-amber-300"
+                : "border-white/20 bg-white/5 text-white hover:border-white/40"
+            }`}
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
     </div>
 
     {/* Submit Button */}
