@@ -485,82 +485,68 @@ export default function LeadCaptureModal() {
               )}
 
 
-{/* Step: Enrichment - Single Screen (Senior-Friendly Large Buttons) */}
+{/* Step: Enrichment - Compact Single Screen */}
 {step === "enrichment" && (
-  <div className="space-y-6">
+  <div className="space-y-5">
     <div className="text-center">
-      <div className="w-14 h-14 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-green-500/30">
-        <CheckCircle2 className="h-7 w-7 text-green-400" />
+      <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-green-500/30">
+        <CheckCircle2 className="h-6 w-6 text-green-400" />
       </div>
-      <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">
+      <h2 className="text-xl md:text-2xl font-bold text-white mb-1">
         You&apos;re All Set, {formData.firstName}!
       </h2>
       <p className="text-white/60 text-sm">
-        2 quick questions to help your specialist prepare
+        Help your specialist prepare (optional)
       </p>
     </div>
 
-    {/* Question 1: Percentage to Protect - 2x2 Grid */}
+    {/* Question 1: Percentage - Small inline buttons */}
     <div>
-      <label className="block text-base font-semibold text-white mb-3">
-        How much would you like to protect?
+      <label className="block text-sm font-medium text-white/90 mb-2">
+        How much would you like to protect with gold?
       </label>
-      <div className="grid grid-cols-2 gap-3">
-        {[
-          { value: "10", label: "10%", desc: "Test the waters" },
-          { value: "25", label: "25%", desc: "Conservative" },
-          { value: "50", label: "50%", desc: "Balanced" },
-          { value: "75", label: "75%+", desc: "Aggressive" },
-        ].map((option) => (
+      <div className="flex gap-2">
+        {["10%", "25%", "50%", "75%+"].map((pct) => (
           <button
-            key={option.value}
-            onClick={() => setEnrichmentData({ ...enrichmentData, percentageToProtect: option.value })}
-            className={`p-4 rounded-xl border-2 text-center transition-all min-h-[80px] flex flex-col items-center justify-center ${
-              enrichmentData.percentageToProtect === option.value
-                ? "border-amber-400 bg-gradient-to-br from-amber-400/25 to-amber-600/35 shadow-lg shadow-amber-500/25"
-                : "border-amber-400/40 bg-gradient-to-br from-amber-400/10 to-amber-600/20 hover:border-amber-400"
+            key={pct}
+            onClick={() => setEnrichmentData({ ...enrichmentData, percentageToProtect: pct.replace('%', '').replace('+', '') })}
+            className={`flex-1 py-2 px-3 rounded-lg border text-sm font-medium transition-all ${
+              enrichmentData.percentageToProtect === pct.replace('%', '').replace('+', '')
+                ? "border-amber-400 bg-amber-400/20 text-amber-300"
+                : "border-white/20 bg-white/5 text-white hover:border-white/40"
             }`}
           >
-            <span className={`text-3xl font-bold ${enrichmentData.percentageToProtect === option.value ? "text-amber-300" : "text-amber-200"}`}>{option.label}</span>
-            <span className="text-xs text-white/60 mt-1">{option.desc}</span>
+            {pct}
           </button>
         ))}
       </div>
     </div>
 
-    {/* Question 2: Total Retirement Savings - Large Stacked Buttons */}
+    {/* Question 2: Savings - Dropdown */}
     <div>
-      <label className="block text-base font-semibold text-white mb-3">
+      <label className="block text-sm font-medium text-white/90 mb-2">
         What are your total retirement savings?
       </label>
-      <div className="space-y-2">
-        {[
-          { value: "50k_100k", label: "$50K - $100K" },
-          { value: "100k_250k", label: "$100K - $250K" },
-          { value: "250k_500k", label: "$250K - $500K" },
-          { value: "500k_1m", label: "$500K - $1M" },
-          { value: "over_1m", label: "Over $1 Million" },
-        ].map((option) => (
-          <button
-            key={option.value}
-            onClick={() => setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value })}
-            className={`w-full p-4 rounded-xl border-2 text-left transition-all min-h-[56px] flex items-center ${
-              enrichmentData.totalRetirementSavings === option.value
-                ? "border-amber-400 bg-gradient-to-r from-amber-400/25 to-amber-600/35 shadow-lg shadow-amber-500/25"
-                : "border-amber-400/40 bg-gradient-to-r from-amber-400/10 to-amber-600/20 hover:border-amber-400"
-            }`}
-          >
-            <span className={`text-lg font-semibold ${enrichmentData.totalRetirementSavings === option.value ? "text-amber-300" : "text-amber-100"}`}>{option.label}</span>
-          </button>
-        ))}
-      </div>
+      <select
+        value={enrichmentData.totalRetirementSavings}
+        onChange={(e) => setEnrichmentData({ ...enrichmentData, totalRetirementSavings: e.target.value })}
+        className="w-full py-3 px-4 rounded-xl border-2 border-white/20 bg-white/5 text-white text-base focus:border-amber-400 focus:ring-0 outline-none transition-all appearance-none cursor-pointer"
+        style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center', backgroundSize: '20px' }}
+      >
+        <option value="" className="bg-slate-800">Select amount...</option>
+        <option value="50k_100k" className="bg-slate-800">$50,000 - $100,000</option>
+        <option value="100k_250k" className="bg-slate-800">$100,000 - $250,000</option>
+        <option value="250k_500k" className="bg-slate-800">$250,000 - $500,000</option>
+        <option value="500k_1m" className="bg-slate-800">$500,000 - $1 Million</option>
+        <option value="over_1m" className="bg-slate-800">Over $1 Million</option>
+      </select>
     </div>
 
     {/* Submit Button */}
     <button
       onClick={() => handleEnrichmentSubmit()}
       disabled={isSubmitting}
-      className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+      className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 text-white text-lg font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
     >
       {isSubmitting ? (
         <>
@@ -578,7 +564,7 @@ export default function LeadCaptureModal() {
     {/* Skip Option */}
     <button
       onClick={() => setStep("success")}
-      className="w-full text-white/50 hover:text-white/70 text-sm py-2 transition-colors"
+      className="w-full text-white/60 hover:text-white/80 text-sm py-2 transition-colors"
     >
       Skip for now
     </button>
