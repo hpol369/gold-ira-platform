@@ -487,109 +487,92 @@ export default function LeadCaptureModal() {
 
 {/* Step: Enrichment Q1 - Percentage to Protect */}
 {step === "enrichment-q1" && (
-  <div className="space-y-6">
+  <div className="space-y-5">
     <div className="text-center">
-      <div className="w-16 h-16 bg-amber-400/20 rounded-full flex items-center justify-center mx-auto mb-4">
+      <div className="w-16 h-16 bg-gradient-to-br from-amber-400/30 to-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-400/50">
         <ShieldCheck className="h-8 w-8 text-amber-400" />
       </div>
       <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
         How much would you like to protect?
       </h2>
-      <p className="text-white/80 text-lg">
-        What percentage of your retirement savings?
+      <p className="text-white/60 text-sm px-4">
+        Just to help your specialist prepare — completely non-binding.
       </p>
     </div>
 
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-3">
       {[
+        { value: "10", label: "10%", desc: "Test the waters" },
         { value: "25", label: "25%", desc: "Conservative" },
         { value: "50", label: "50%", desc: "Balanced" },
-        { value: "75", label: "75%", desc: "Aggressive" },
-        { value: "100", label: "100%", desc: "All-In" },
-      ].map((option) => (
+        { value: "75", label: "75%+", desc: "Aggressive" },
+      ].map((option, idx) => (
         <button
           key={option.value}
           onClick={() => {
             setEnrichmentData({ ...enrichmentData, percentageToProtect: option.value });
             setStep("enrichment-q2");
           }}
-          className={`p-6 rounded-xl border-2 transition-all text-center min-h-[100px] flex flex-col items-center justify-center ${
-            enrichmentData.percentageToProtect === option.value
-              ? "bg-amber-400 border-amber-400 text-slate-900"
-              : "bg-white/5 border-white/30 text-white hover:bg-white/10 hover:border-white/50"
-          }`}
+          className="p-5 rounded-xl border-2 border-amber-400/40 bg-gradient-to-br from-amber-400/10 to-amber-600/20 text-white hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/20 transition-all text-center min-h-[100px] flex flex-col items-center justify-center"
+          style={{ opacity: 0.85 + (idx * 0.05) }}
         >
-          <span className="text-3xl font-bold">{option.label}</span>
-          <span className="text-sm opacity-80 mt-1">{option.desc}</span>
+          <span className="text-3xl font-bold text-amber-300">{option.label}</span>
+          <span className="text-sm text-white/70 mt-1">{option.desc}</span>
         </button>
       ))}
     </div>
 
-    <button
-      onClick={() => setStep("success")}
-      className="w-full text-white/50 hover:text-white text-base py-3 transition-colors"
-    >
-      Skip this step
-    </button>
+    <p className="text-center text-amber-300/70 text-sm">
+      It would really help us if you take 10 seconds for these 2 quick questions
+    </p>
   </div>
 )}
 
 {/* Step: Enrichment Q2 - Total Retirement Savings */}
 {step === "enrichment-q2" && (
-  <div className="space-y-6">
+  <div className="space-y-5">
     <div className="text-center">
-      <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-        <CheckCircle2 className="h-8 w-8 text-green-400" />
+      <div className="w-16 h-16 bg-gradient-to-br from-amber-400/30 to-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-400/50">
+        <CheckCircle2 className="h-8 w-8 text-amber-400" />
       </div>
       <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
         What are your total savings?
       </h2>
-      <p className="text-white/80 text-lg">
-        This helps us customize your free kit.
+      <p className="text-white/60 text-sm px-4">
+        This is just for preparation — no commitments whatsoever.
       </p>
     </div>
 
-    <div className="space-y-3">
+    <div className="space-y-2.5">
       {[
-        { value: "50k_100k", label: "$50,000 - $100,000" },
-        { value: "100k_250k", label: "$100,000 - $250,000" },
-        { value: "250k_500k", label: "$250,000 - $500,000" },
-        { value: "500k_1m", label: "$500,000 - $1 Million" },
+        { value: "50k_100k", label: "$50K - $100K" },
+        { value: "100k_250k", label: "$100K - $250K" },
+        { value: "250k_500k", label: "$250K - $500K" },
+        { value: "500k_1m", label: "$500K - $1 Million" },
         { value: "over_1m", label: "Over $1 Million" },
-      ].map((option) => (
+      ].map((option, idx) => (
         <button
           key={option.value}
           onClick={() => {
             setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value });
             handleEnrichmentSubmit(option.value);
           }}
-          className={`w-full p-5 rounded-xl border-2 transition-all text-left min-h-[64px] flex items-center justify-between ${
-            enrichmentData.totalRetirementSavings === option.value
-              ? "bg-amber-400 border-amber-400 text-slate-900"
-              : "bg-white/5 border-white/30 text-white hover:bg-white/10 hover:border-white/50"
-          }`}
+          className="w-full p-4 rounded-xl border-2 border-amber-400/40 bg-gradient-to-r from-amber-400/10 to-amber-600/20 text-white hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/20 transition-all text-left min-h-[56px] flex items-center justify-between"
+          style={{ opacity: 0.8 + (idx * 0.05) }}
         >
-          <span className="text-xl font-semibold">{option.label}</span>
-          <ArrowRight className="h-5 w-5 opacity-50" />
+          <span className="text-lg font-semibold text-amber-100">{option.label}</span>
+          <ArrowRight className="h-5 w-5 text-amber-400/60" />
         </button>
       ))}
     </div>
 
-    <div className="flex gap-4">
-      <button
-        onClick={() => setStep("enrichment-q1")}
-        className="flex-1 text-white/70 hover:text-white text-base py-3 flex items-center justify-center gap-2"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        Back
-      </button>
-      <button
-        onClick={() => setStep("success")}
-        className="flex-1 text-white/50 hover:text-white text-base py-3"
-      >
-        Skip
-      </button>
-    </div>
+    <button
+      onClick={() => setStep("enrichment-q1")}
+      className="w-full text-white/60 hover:text-white text-base py-2 flex items-center justify-center gap-2 transition-colors"
+    >
+      <ArrowLeft className="h-4 w-4" />
+      Back
+    </button>
   </div>
 )}
 
