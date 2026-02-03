@@ -104,10 +104,10 @@ export async function updateLeadNotification(
   const message = buildLeadNotification(lead, location);
 
   // Determine if urgent (qualified, converted, or high value)
-  const isUrgent =
+  const isUrgent: boolean =
     lead.status === "qualified" ||
     lead.status === "converted" ||
-    (lead.potential_deal_max && lead.potential_deal_max >= 100000);
+    (lead.potential_deal_max !== undefined && lead.potential_deal_max >= 100000);
 
   // If we have a message_id, edit it. Otherwise send new.
   if (lead.telegram_message_id) {
