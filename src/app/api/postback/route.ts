@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendNotification } from "@/lib/notifications";
+import { getLeadByEmail, updateLead } from "@/lib/supabase";
+import { updateLeadNotification } from "@/lib/lead-notification";
 
 // Types for Augusta postback events
 export type PostbackType = "lead_capture" | "qualified_lead" | "trade_complete";
@@ -95,12 +96,31 @@ async function handlePostback(request: NextRequest, method: string) {
     console.log(`[POSTBACK] Raw params:`, JSON.stringify(params, null, 2));
     console.log(`[POSTBACK] Processed event:`, JSON.stringify(event, null, 2));
 
-    // Send notification (wrapped in try/catch to not lose postback on notification error)
+    // Try to update the living notification
     try {
-      await sendNotification(event);
-      console.log(`[POSTBACK] Notification sent successfully`);
+      const email = params.email || params.Email || params.EMAIL;
+
+      if (email && (eventType === "qualified_lead" || eventType === "trade_complete")) {
+        console.log(`[POSTBACK] Looking up lead by email:`, email);
+        const lead = await getLeadByEmail(email);
+
+        if (lead) {
+          // Update lead status
+          const newStatus = eventType === "trade_complete" ? "converted" : "qualified";
+          await updateLead(lead.id!, { status: newStatus });
+          lead.status = newStatus;
+
+          console.log(`[POSTBACK] Lead found, updating status to:`, newStatus);
+
+          // Update the Telegram notification
+          await updateLeadNotification(lead);
+          console.log(`[POSTBACK] Telegram notification updated`);
+        } else {
+          console.log(`[POSTBACK] Lead not found for email:`, email);
+        }
+      }
     } catch (notifyError) {
-      console.error(`[POSTBACK] Notification failed:`, notifyError);
+      console.error(`[POSTBACK] Notification update failed:`, notifyError);
       // Continue - don't fail the whole postback just because notification failed
     }
 
