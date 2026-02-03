@@ -300,18 +300,20 @@ export async function sendTestNotification(): Promise<void> {
 /**
  * Simple function to send a Telegram notification message
  * Used for high-value lead alerts and other direct notifications
+ * Returns the message_id of the first sent message (for editing later)
  */
-export async function sendTelegramNotification(message: string, urgent: boolean = false): Promise<void> {
+export async function sendTelegramNotification(message: string, urgent: boolean = false): Promise<number | null> {
   const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS } = getConfig();
 
   console.log("[TELEGRAM] Attempting to send notification. Token present:", !!TELEGRAM_BOT_TOKEN, "ChatIDs:", TELEGRAM_CHAT_IDS.length);
 
   if (!TELEGRAM_BOT_TOKEN || TELEGRAM_CHAT_IDS.length === 0) {
     console.log("[TELEGRAM] Not configured, skipping notification");
-    return;
+    return null;
   }
 
   const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+  let firstMessageId: number | null = null;
 
   // Send to all configured chat IDs
   for (const chatId of TELEGRAM_CHAT_IDS) {
@@ -331,10 +333,62 @@ export async function sendTelegramNotification(message: string, urgent: boolean 
         const error = await response.text();
         console.error(`[TELEGRAM ERROR] Chat ${chatId}:`, response.status, error);
       } else {
-        console.log(`[TELEGRAM] Direct notification sent to ${chatId}`);
+        const data = await response.json();
+        console.log(`[TELEGRAM] Direct notification sent to ${chatId}, message_id:`, data.result?.message_id);
+        // Save the first message_id (usually the main chat)
+        if (firstMessageId === null && data.result?.message_id) {
+          firstMessageId = data.result.message_id;
+        }
       }
     } catch (error) {
       console.error(`[TELEGRAM ERROR] Chat ${chatId}:`, error);
     }
   }
+
+  return firstMessageId;
+}
+
+/**
+ * Edit an existing Telegram message
+ * Used to update lead notifications with enrichment data
+ */
+export async function editTelegramMessage(messageId: number, newMessage: string): Promise<boolean> {
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS } = getConfig();
+
+  if (!TELEGRAM_BOT_TOKEN || TELEGRAM_CHAT_IDS.length === 0 || !messageId) {
+    console.log("[TELEGRAM] Cannot edit - not configured or no messageId");
+    return false;
+  }
+
+  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/editMessageText`;
+
+  // Edit in all configured chat IDs
+  for (const chatId of TELEGRAM_CHAT_IDS) {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          message_id: messageId,
+          text: newMessage,
+          parse_mode: "HTML"
+        })
+      });
+
+      if (!response.ok) {
+        const error = await response.text();
+        // Don't log error if message wasn't found in this chat (different message IDs per chat)
+        if (!error.includes("message to edit not found")) {
+          console.error(`[TELEGRAM EDIT ERROR] Chat ${chatId}:`, response.status, error);
+        }
+      } else {
+        console.log(`[TELEGRAM] Message ${messageId} edited in chat ${chatId}`);
+      }
+    } catch (error) {
+      console.error(`[TELEGRAM EDIT ERROR] Chat ${chatId}:`, error);
+    }
+  }
+
+  return true;
 }

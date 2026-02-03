@@ -2,8 +2,8 @@
 // Stores lead in Supabase, sends Telegram notification, and submits to Augusta
 
 import { NextRequest, NextResponse } from "next/server";
-import { sendTelegramNotification } from "@/lib/notifications";
-import { insertLead, updateLeadStatus, Lead } from "@/lib/supabase";
+import { sendTelegramNotification, editTelegramMessage } from "@/lib/notifications";
+import { insertLead, updateLeadStatus, updateLead, Lead } from "@/lib/supabase";
 
 // Augusta Zapier webhook - stored in env for security
 const AUGUSTA_WEBHOOK_URL = process.env.AUGUSTA_WEBHOOK_URL!;
@@ -53,7 +53,7 @@ function getTrafficSourceDisplay(source: string): { emoji: string; label: string
   return { emoji: "🌐", label: source || "Direct" };
 }
 
-async function sendLeadNotification(lead: Lead, isNew: boolean = true, location?: string) {
+async function sendLeadNotification(lead: Lead, isNew: boolean = true, location?: string): Promise<number | null> {
   const timestamp = new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" });
   const trafficSource = getTrafficSourceDisplay(lead.source || "unknown");
 
@@ -68,9 +68,9 @@ async function sendLeadNotification(lead: Lead, isNew: boolean = true, location?
 ${trafficSource.emoji} <b>Source:</b> ${trafficSource.label}${locationLine}${ipLine}
 🕐 <b>Time:</b> ${timestamp}
 
-${isNew ? "💾 <i>Saved to database</i>" : "✅ <i>Submitted to Augusta - they will call!</i>"}`;
+${isNew ? "⏳ <i>Waiting for enrichment...</i>" : "✅ <i>Submitted to Augusta - they will call!</i>"}`;
 
-  await sendTelegramNotification(message, true); // urgent = true
+  return await sendTelegramNotification(message, true); // urgent = true, returns message_id
 }
 
 async function submitToAugusta(lead: Lead): Promise<boolean> {
@@ -163,9 +163,15 @@ export async function POST(request: NextRequest) {
 
     // 2. Send Telegram notification (new lead captured) - must await in serverless!
     console.log("[LEAD] Sending Telegram notification for lead:", lead.email);
+    let telegramMessageId: number | null = null;
     try {
-      await sendLeadNotification(lead, true, location);
-      console.log("[LEAD] Telegram notification completed");
+      telegramMessageId = await sendLeadNotification(lead, true, location);
+      console.log("[LEAD] Telegram notification completed, message_id:", telegramMessageId);
+
+      // Save message_id for later editing when enrichment comes in
+      if (telegramMessageId && lead.id) {
+        await updateLead(lead.id, { telegram_message_id: telegramMessageId });
+      }
     } catch (err) {
       console.error("[TELEGRAM ERROR]", err);
     }
@@ -223,14 +229,20 @@ export async function PATCH(request: NextRequest) {
     }
 
     // Import utilities
-    const { getLeadById, updateLead } = await import("@/lib/supabase");
+    const { getLeadById, updateLead: updateLeadDb } = await import("@/lib/supabase");
     const { calculatePotentialDeal, formatCurrency, getSavingsLabel, getHotLeadIndicator } = await import("@/lib/deal-calculator");
+
+    // Get lead first to access telegram_message_id
+    const lead = await getLeadById(leadId);
+    if (!lead) {
+      return NextResponse.json({ success: false, error: "Lead not found" }, { status: 404 });
+    }
 
     // Calculate deal potential
     const deal = calculatePotentialDeal(totalRetirementSavings, percentageToProtect);
 
     // Update lead with dedicated columns
-    const success = await updateLead(leadId, {
+    const success = await updateLeadDb(leadId, {
       total_retirement_savings: totalRetirementSavings,
       percentage_to_protect: percentageToProtect,
       potential_deal_min: deal.min,
@@ -242,25 +254,37 @@ export async function PATCH(request: NextRequest) {
       return NextResponse.json({ success: false, error: "Update failed" }, { status: 500 });
     }
 
-    // Send enrichment notification to Telegram
-    const lead = await getLeadById(leadId);
-    if (lead && totalRetirementSavings && percentageToProtect) {
+    // Edit existing Telegram message or send new one
+    if (totalRetirementSavings && percentageToProtect) {
+      const timestamp = new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" });
+      const trafficSource = getTrafficSourceDisplay(lead.source || "unknown");
       const savingsLabel = getSavingsLabel(totalRetirementSavings);
       const dealRange = `${formatCurrency(deal.min)} - ${formatCurrency(deal.max)}`;
       const hotIndicator = getHotLeadIndicator(deal.max);
 
-      const message = `💰 <b>ENRICHMENT RECEIVED</b>
+      // Build updated message with all info
+      const updatedMessage = `🎯 <b>NEW LEAD CAPTURED</b>
 
 👤 <b>Name:</b> ${lead.first_name} ${lead.last_name || ""}
-📱 <b>Phone:</b> ${lead.phone}
+📧 <b>Email:</b> ${lead.email}
+📱 <b>Phone:</b> <a href="tel:${lead.phone.replace(/\D/g, '')}">${lead.phone}</a>
+${trafficSource.emoji} <b>Source:</b> ${trafficSource.label}
+🕐 <b>Time:</b> ${timestamp}
 
-💵 <b>Total Savings:</b> ${savingsLabel}
+💵 <b>Savings:</b> ${savingsLabel}
 📊 <b>% to Protect:</b> ${percentageToProtect}%
 💎 <b>Potential Deal:</b> ${dealRange}
 
-✅ QUALIFIED${hotIndicator ? `\n\n${hotIndicator}` : ""}`;
+✅ <b>QUALIFIED</b>${hotIndicator ? `\n${hotIndicator}` : ""}`;
 
-      await sendTelegramNotification(message, deal.max >= 100000);
+      // Try to edit existing message, fall back to new message
+      if (lead.telegram_message_id) {
+        console.log("[TELEGRAM] Editing message:", lead.telegram_message_id);
+        await editTelegramMessage(lead.telegram_message_id, updatedMessage);
+      } else {
+        console.log("[TELEGRAM] No message_id found, sending new message");
+        await sendTelegramNotification(updatedMessage, deal.max >= 100000);
+      }
     }
 
     return NextResponse.json({ success: true, message: "Lead enriched" });
