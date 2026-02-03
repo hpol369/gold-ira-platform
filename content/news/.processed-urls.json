@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-stuck-near-88k-as-traders-await-fed-cues-4466440",
-    "timestamp": 1769498625782
-  },
-  {
     "url": "https://www.marketwatch.com/story/why-shares-of-unitedhealth-humana-and-others-are-tanking-and-taking-the-dow-with-it-0e4e5c7f?mod=mw_rss_topstories",
     "timestamp": 1769505720002
   },
@@ -8242,5 +8238,9 @@
   {
     "url": "https://www.marketwatch.com/story/teradynes-stock-soars-after-this-absolute-blowout-forecast-that-was-fueled-by-ai-2dfc3d8a?mod=mw_rss_topstories",
     "timestamp": 1770090132297
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-rises-above-78k-after-weekend-rout-fed-worries-linger-4480644",
+    "timestamp": 1770105189285
   }
 ]
