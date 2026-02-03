@@ -6,11 +6,29 @@ import { X, User, Mail, Phone, ArrowRight, ArrowLeft, CheckCircle2, Loader2, Shi
 import { useLeadModal } from "@/context/LeadModalContext";
 import { leadModalVariants } from "@/config/lead-modal-variants";
 
-type Step = 1 | 2 | 3 | "enrichment" | "success";
+type Step = 1 | 2 | 3 | "enrichment-q1" | "enrichment-q2" | "success";
 
 export default function LeadCaptureModal() {
   const { isOpen, variant, source, closeModal } = useLeadModal();
   const config = leadModalVariants[variant] || leadModalVariants.default;
+
+  // Get UTM params from URL on client side only
+  const [finalSource, setFinalSource] = useState(source || `lp-modal-${variant}`);
+
+  useEffect(() => {
+    // Read UTM params from URL after mount (client-side only)
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const utmSource = params.get("utm_source");
+      const utmCampaign = params.get("utm_campaign");
+
+      if (utmSource) {
+        setFinalSource(utmCampaign ? `${utmSource}-${utmCampaign}` : utmSource);
+      } else if (source) {
+        setFinalSource(source);
+      }
+    }
+  }, [source, variant]);
 
   const [step, setStep] = useState<Step>(1);
   const [formData, setFormData] = useState({
@@ -20,8 +38,8 @@ export default function LeadCaptureModal() {
     phone: "",
   });
   const [enrichmentData, setEnrichmentData] = useState({
-    investmentAmount: "",
     percentageToProtect: "",
+    totalRetirementSavings: "",
   });
   const [leadId, setLeadId] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,7 +54,7 @@ export default function LeadCaptureModal() {
       const timer = setTimeout(() => {
         setStep(1);
         setFormData({ firstName: "", lastName: "", email: "", phone: "" });
-        setEnrichmentData({ investmentAmount: "", percentageToProtect: "" });
+        setEnrichmentData({ percentageToProtect: "", totalRetirementSavings: "" });
         setLeadId(null);
         setError("");
       }, 300);
@@ -117,7 +135,7 @@ export default function LeadCaptureModal() {
           lastName: formData.lastName,
           email: formData.email,
           phone: formData.phone,
-          source: source || `lp-modal-${variant}`,
+          source: finalSource,
         }),
       });
 
@@ -137,7 +155,7 @@ export default function LeadCaptureModal() {
           });
         }
         // Move to Enrichment instead of immediately success
-        setStep("enrichment");
+        setStep("enrichment-q1");
       } else {
         setError("We couldn't process your request. Please verify your phone number includes the area code, or call us at 1-800-700-1008.");
       }
@@ -148,7 +166,7 @@ export default function LeadCaptureModal() {
     }
   };
 
-  const handleEnrichmentSubmit = async () => {
+  const handleEnrichmentSubmit = async (totalSavings?: string) => {
     // If no leadId captured, just go to success (fallback)
     if (!leadId) {
       setStep("success");
@@ -162,7 +180,7 @@ export default function LeadCaptureModal() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           leadId,
-          investmentAmount: enrichmentData.investmentAmount,
+          totalRetirementSavings: totalSavings || enrichmentData.totalRetirementSavings,
           percentageToProtect: enrichmentData.percentageToProtect,
         }),
       });
@@ -467,87 +485,116 @@ export default function LeadCaptureModal() {
               )}
 
 
-              {/* Step 4: Enrichment (Post-Capture) */}
-              {step === "enrichment" && (
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                      Help your specialist prepare
-                    </h2>
-                    <p className="text-white/90">2 quick questions to customize your kit.</p>
-                  </div>
+{/* Step: Enrichment Q1 - Percentage to Protect */}
+{step === "enrichment-q1" && (
+  <div className="space-y-6">
+    <div className="text-center">
+      <div className="w-16 h-16 bg-amber-400/20 rounded-full flex items-center justify-center mx-auto mb-4">
+        <ShieldCheck className="h-8 w-8 text-amber-400" />
+      </div>
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+        How much would you like to protect?
+      </h2>
+      <p className="text-white/80 text-lg">
+        What percentage of your retirement savings?
+      </p>
+    </div>
 
-                  <div className="space-y-4">
-                    {/* Q1: Investment Amount */}
-                    <div>
-                      <label className="block text-sm font-medium text-amber-400 mb-2">
-                        Approximate Retirement Savings?
-                      </label>
-                      <select
-                        value={enrichmentData.investmentAmount}
-                        onChange={(e) => setEnrichmentData({ ...enrichmentData, investmentAmount: e.target.value })}
-                        className="w-full px-4 py-3 text-lg text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all appearance-none"
-                      >
-                        <option value="">Select an amount...</option>
-                        <option value="$25k-$50k">$25,000 - $50,000</option>
-                        <option value="$50k-$100k">$50,000 - $100,000</option>
-                        <option value="$100k-$250k">$100,000 - $250,000</option>
-                        <option value="$250k-$500k">$250,000 - $500,000</option>
-                        <option value="$500k+">$500,000+</option>
-                      </select>
-                    </div>
+    <div className="grid grid-cols-2 gap-4">
+      {[
+        { value: "25", label: "25%", desc: "Conservative" },
+        { value: "50", label: "50%", desc: "Balanced" },
+        { value: "75", label: "75%", desc: "Aggressive" },
+        { value: "100", label: "100%", desc: "All-In" },
+      ].map((option) => (
+        <button
+          key={option.value}
+          onClick={() => {
+            setEnrichmentData({ ...enrichmentData, percentageToProtect: option.value });
+            setStep("enrichment-q2");
+          }}
+          className={`p-6 rounded-xl border-2 transition-all text-center min-h-[100px] flex flex-col items-center justify-center ${
+            enrichmentData.percentageToProtect === option.value
+              ? "bg-amber-400 border-amber-400 text-slate-900"
+              : "bg-white/5 border-white/30 text-white hover:bg-white/10 hover:border-white/50"
+          }`}
+        >
+          <span className="text-3xl font-bold">{option.label}</span>
+          <span className="text-sm opacity-80 mt-1">{option.desc}</span>
+        </button>
+      ))}
+    </div>
 
-                    {/* Q2: Percentage to Protect */}
-                    <div>
-                      <label className="block text-sm font-medium text-amber-400 mb-2">
-                        % you are considering to protect?
-                      </label>
-                      <div className="grid grid-cols-3 gap-2">
-                        {["10-20%", "20-50%", "50%+"].map((pct) => (
-                          <button
-                            key={pct}
-                            onClick={() => setEnrichmentData({ ...enrichmentData, percentageToProtect: pct })}
-                            className={`py-3 px-2 rounded-lg text-sm font-semibold border-2 transition-all ${enrichmentData.percentageToProtect === pct
-                                ? "bg-amber-400 border-amber-400 text-slate-900"
-                                : "bg-white/5 border-white/20 text-white hover:bg-white/10"
-                              }`}
-                          >
-                            {pct}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+    <button
+      onClick={() => setStep("success")}
+      className="w-full text-white/50 hover:text-white text-base py-3 transition-colors"
+    >
+      Skip this step
+    </button>
+  </div>
+)}
 
-                  <button
-                    onClick={handleEnrichmentSubmit}
-                    disabled={isSubmitting}
-                    className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 className="h-5 w-5 animate-spin" />
-                        Saving...
-                      </>
-                    ) : (
-                      <>
-                        Complete Customization
-                        <ArrowRight className="h-5 w-5" />
-                      </>
-                    )}
-                  </button>
+{/* Step: Enrichment Q2 - Total Retirement Savings */}
+{step === "enrichment-q2" && (
+  <div className="space-y-6">
+    <div className="text-center">
+      <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+        <CheckCircle2 className="h-8 w-8 text-green-400" />
+      </div>
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+        What are your total savings?
+      </h2>
+      <p className="text-white/80 text-lg">
+        This helps us customize your free kit.
+      </p>
+    </div>
 
-                  <button
-                    onClick={() => setStep("success")}
-                    className="w-full text-white/50 hover:text-white text-sm py-2 transition-colors uppercase tracking-wider font-medium"
-                  >
-                    Skip & Show My Kit
-                  </button>
-                </div>
-              )}
+    <div className="space-y-3">
+      {[
+        { value: "50k_100k", label: "$50,000 - $100,000" },
+        { value: "100k_250k", label: "$100,000 - $250,000" },
+        { value: "250k_500k", label: "$250,000 - $500,000" },
+        { value: "500k_1m", label: "$500,000 - $1 Million" },
+        { value: "over_1m", label: "Over $1 Million" },
+      ].map((option) => (
+        <button
+          key={option.value}
+          onClick={() => {
+            setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value });
+            handleEnrichmentSubmit(option.value);
+          }}
+          className={`w-full p-5 rounded-xl border-2 transition-all text-left min-h-[64px] flex items-center justify-between ${
+            enrichmentData.totalRetirementSavings === option.value
+              ? "bg-amber-400 border-amber-400 text-slate-900"
+              : "bg-white/5 border-white/30 text-white hover:bg-white/10 hover:border-white/50"
+          }`}
+        >
+          <span className="text-xl font-semibold">{option.label}</span>
+          <ArrowRight className="h-5 w-5 opacity-50" />
+        </button>
+      ))}
+    </div>
+
+    <div className="flex gap-4">
+      <button
+        onClick={() => setStep("enrichment-q1")}
+        className="flex-1 text-white/70 hover:text-white text-base py-3 flex items-center justify-center gap-2"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        Back
+      </button>
+      <button
+        onClick={() => setStep("success")}
+        className="flex-1 text-white/50 hover:text-white text-base py-3"
+      >
+        Skip
+      </button>
+    </div>
+  </div>
+)}
 
               {/* Trust signals (only on steps 1-3) */}
-              {step !== "success" && step !== "enrichment" && (
+              {step !== "success" && step !== "enrichment-q1" && step !== "enrichment-q2" && (
                 <div className="mt-6 pt-4 border-t border-white/10 space-y-3">
                   {/* Stars */}
                   <div className="flex items-center justify-center gap-1 text-amber-400">

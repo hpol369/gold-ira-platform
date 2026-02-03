@@ -20,6 +20,11 @@ export interface Lead {
   status?: "new" | "sent_to_augusta" | "contacted" | "qualified" | "unqualified" | "converted";
   augusta_submitted_at?: string;
   notes?: string;
+  total_retirement_savings?: string;
+  percentage_to_protect?: string;
+  potential_deal_min?: number;
+  potential_deal_max?: number;
+  is_qualified?: boolean;
 }
 
 // Insert a new lead
@@ -110,4 +115,59 @@ export async function getLeadByEmail(email: string): Promise<Lead | null> {
   }
 
   return data;
+}
+
+// Source click tracking
+export interface SourceClick {
+  id?: string;
+  created_at?: string;
+  source: string;
+  campaign?: string;
+  ip_address?: string;
+  user_agent?: string;
+  device?: string;
+  country?: string;
+  city?: string;
+  referer?: string;
+}
+
+// Track a source click (YouTube, Facebook, etc.)
+export async function trackSourceClick(click: Omit<SourceClick, "id" | "created_at">): Promise<boolean> {
+  const { error } = await supabase
+    .from("source_clicks")
+    .insert([click]);
+
+  if (error) {
+    console.error("[SUPABASE] Track click error:", error);
+    return false;
+  }
+
+  console.log("[SUPABASE] Click tracked:", click.source, click.campaign);
+  return true;
+}
+
+// Get click stats by source
+export async function getClickStats(source?: string): Promise<{ source: string; count: number }[]> {
+  let query = supabase
+    .from("source_clicks")
+    .select("source");
+
+  if (source) {
+    query = query.eq("source", source);
+  }
+
+  const { data, error } = await query;
+
+  if (error) {
+    console.error("[SUPABASE] Get click stats error:", error);
+    return [];
+  }
+
+  // Count by source
+  const counts: Record<string, number> = {};
+  for (const row of data || []) {
+    counts[row.source] = (counts[row.source] || 0) + 1;
+  }
+
+  return Object.entries(counts).map(([source, count]) => ({ source, count }));
 }

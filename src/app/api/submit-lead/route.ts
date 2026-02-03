@@ -18,8 +18,44 @@ interface LeadData {
   source?: string;
 }
 
+// Detect traffic source and return emoji + label
+function getTrafficSourceDisplay(source: string): { emoji: string; label: string } {
+  const sourceLower = source.toLowerCase();
+
+  if (sourceLower.includes("youtube")) {
+    return { emoji: "🎬", label: "YouTube" };
+  }
+  if (sourceLower.includes("google") || sourceLower.includes("organic")) {
+    return { emoji: "🔍", label: "Google Search" };
+  }
+  if (sourceLower.includes("facebook") || sourceLower.includes("fb")) {
+    return { emoji: "📘", label: "Facebook" };
+  }
+  if (sourceLower.includes("instagram") || sourceLower.includes("ig")) {
+    return { emoji: "📸", label: "Instagram" };
+  }
+  if (sourceLower.includes("tiktok")) {
+    return { emoji: "🎵", label: "TikTok" };
+  }
+  if (sourceLower.includes("twitter") || sourceLower.includes("x.com")) {
+    return { emoji: "🐦", label: "Twitter/X" };
+  }
+  if (sourceLower.includes("email") || sourceLower.includes("newsletter")) {
+    return { emoji: "📧", label: "Email" };
+  }
+  if (sourceLower.includes("quiz")) {
+    return { emoji: "📝", label: "Quiz" };
+  }
+  if (sourceLower.includes("lp-") || sourceLower.includes("landing")) {
+    return { emoji: "📄", label: "Landing Page" };
+  }
+
+  return { emoji: "🌐", label: source || "Direct" };
+}
+
 async function sendLeadNotification(lead: Lead, isNew: boolean = true, location?: string) {
   const timestamp = new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" });
+  const trafficSource = getTrafficSourceDisplay(lead.source || "unknown");
 
   const locationLine = location ? `\n🌍 <b>Location:</b> ${location}` : "";
   const ipLine = lead.ip_address && lead.ip_address !== "unknown" ? `\n🔗 <b>IP:</b> ${lead.ip_address}` : "";
@@ -29,7 +65,7 @@ async function sendLeadNotification(lead: Lead, isNew: boolean = true, location?
 👤 <b>Name:</b> ${lead.first_name} ${lead.last_name || ""}
 📧 <b>Email:</b> ${lead.email}
 📱 <b>Phone:</b> <a href="tel:${lead.phone.replace(/\D/g, '')}">${lead.phone}</a>
-📍 <b>Source:</b> ${lead.source || "unknown"}${locationLine}${ipLine}
+${trafficSource.emoji} <b>Source:</b> ${trafficSource.label}${locationLine}${ipLine}
 🕐 <b>Time:</b> ${timestamp}
 
 ${isNew ? "💾 <i>Saved to database</i>" : "✅ <i>Submitted to Augusta - they will call!</i>"}`;
@@ -177,7 +213,7 @@ export async function POST(request: NextRequest) {
 export async function PATCH(request: NextRequest) {
   try {
     const body = await request.json();
-    const { leadId, notes, investmentAmount, percentageToProtect } = body;
+    const { leadId, totalRetirementSavings, percentageToProtect } = body;
 
     if (!leadId) {
       return NextResponse.json(
@@ -186,33 +222,48 @@ export async function PATCH(request: NextRequest) {
       );
     }
 
-    // Determine what to append to notes
-    let noteAppend = "\n[ENRICHMENT DATA]";
-    if (investmentAmount) noteAppend += `\nInvestment Amount: ${investmentAmount}`;
-    if (percentageToProtect) noteAppend += `\n% To Protect: ${percentageToProtect}`;
-    if (notes) noteAppend += `\nUser Notes: ${notes}`;
-
-    // Here we would ideally fetch the current notes first to append, but for speed we'll just use a Supabase RPC or just overwrite if we accept that risk.
-    // Actually, we can just update. But wait, if we overwrite 'notes', we lose previous auto-notes.
-    // We should fetch first? Or rely on the fact that usually 'notes' is empty or system generated.
-    // Let's safe-guard by using `updateLead` directly. Supabase doesn't support 'append' easily without SQL function.
-    // We will assume 'notes' field is the place.
-
-    // To be safe: just send the new data as text to the notes field.
-    // Ideally we import getLeadById but it wasn't exported? It was.
+    // Import utilities
     const { getLeadById, updateLead } = await import("@/lib/supabase");
+    const { calculatePotentialDeal, formatCurrency, getSavingsLabel, getHotLeadIndicator } = await import("@/lib/deal-calculator");
 
-    const currentLead = await getLeadById(leadId);
-    let finalNotes = currentLead?.notes || "";
-    finalNotes += noteAppend;
+    // Calculate deal potential
+    const deal = calculatePotentialDeal(totalRetirementSavings, percentageToProtect);
 
-    const success = await updateLead(leadId, { notes: finalNotes });
+    // Update lead with dedicated columns
+    const success = await updateLead(leadId, {
+      total_retirement_savings: totalRetirementSavings,
+      percentage_to_protect: percentageToProtect,
+      potential_deal_min: deal.min,
+      potential_deal_max: deal.max,
+      is_qualified: true, // All enrichment completers are qualified (no under_50k option)
+    });
 
-    if (success) {
-      return NextResponse.json({ success: true, message: "Lead enriched" });
-    } else {
+    if (!success) {
       return NextResponse.json({ success: false, error: "Update failed" }, { status: 500 });
     }
+
+    // Send enrichment notification to Telegram
+    const lead = await getLeadById(leadId);
+    if (lead && totalRetirementSavings && percentageToProtect) {
+      const savingsLabel = getSavingsLabel(totalRetirementSavings);
+      const dealRange = `${formatCurrency(deal.min)} - ${formatCurrency(deal.max)}`;
+      const hotIndicator = getHotLeadIndicator(deal.max);
+
+      const message = `💰 <b>ENRICHMENT RECEIVED</b>
+
+👤 <b>Name:</b> ${lead.first_name} ${lead.last_name || ""}
+📱 <b>Phone:</b> ${lead.phone}
+
+💵 <b>Total Savings:</b> ${savingsLabel}
+📊 <b>% to Protect:</b> ${percentageToProtect}%
+💎 <b>Potential Deal:</b> ${dealRange}
+
+✅ QUALIFIED${hotIndicator ? `\n\n${hotIndicator}` : ""}`;
+
+      await sendTelegramNotification(message, deal.max >= 100000);
+    }
+
+    return NextResponse.json({ success: true, message: "Lead enriched" });
 
   } catch (error) {
     console.error("Lead update error:", error);
