@@ -6,7 +6,7 @@ import { X, User, Mail, Phone, ArrowRight, ArrowLeft, CheckCircle2, Loader2, Shi
 import { useLeadModal } from "@/context/LeadModalContext";
 import { leadModalVariants } from "@/config/lead-modal-variants";
 
-type Step = 1 | 2 | 3 | "confirmed" | "enrichment-q1" | "enrichment-q2" | "success";
+type Step = 1 | 2 | 3 | "enrichment" | "success";
 
 export default function LeadCaptureModal() {
   const { isOpen, variant, source, closeModal } = useLeadModal();
@@ -154,8 +154,8 @@ export default function LeadCaptureModal() {
             currency: "USD",
           });
         }
-        // Move to confirmation screen first
-        setStep("confirmed");
+        // Move to enrichment screen
+        setStep("enrichment");
       } else {
         setError("We couldn't process your request. Please verify your phone number includes the area code, or call us at 1-800-700-1008.");
       }
@@ -233,7 +233,7 @@ export default function LeadCaptureModal() {
             {/* Content */}
             <div className="p-6 md:p-8">
               {/* Progress bar */}
-              {step !== "success" && step !== "confirmed" && step !== "enrichment-q1" && step !== "enrichment-q2" && (
+              {step !== "success" && step !== "enrichment" && (
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-white/80 text-sm">Step {step} of 3</span>
@@ -485,139 +485,107 @@ export default function LeadCaptureModal() {
               )}
 
 
-{/* Step: Confirmed - You're All Set */}
-{step === "confirmed" && (
-  <div className="text-center py-4">
-    <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-green-500/30">
-      <CheckCircle2 className="h-10 w-10 text-green-400" />
-    </div>
-    <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-      You&apos;re All Set, {formData.firstName}!
-    </h2>
-    <p className="text-white/80 text-lg mb-2">
-      We&apos;ve locked in a spot for you today.
-    </p>
-    <p className="text-white/70 mb-6">
-      <strong className="text-white">This will not be a sales call</strong> — a specialist from Augusta will reach out to answer your questions and see if a Gold IRA is right for you.
-    </p>
-
-    <div className="bg-amber-500/20 border border-amber-500/30 rounded-xl p-4 mb-6">
-      <p className="text-amber-300 font-semibold text-lg">
-        Expect a call within 24 hours
-      </p>
-      <p className="text-amber-200/80 text-sm mt-1">
-        Have questions ready — the team is happy to answer all of them. No pressure, just answers.
+{/* Step: Enrichment - Single Screen with Both Questions */}
+{step === "enrichment" && (
+  <div className="space-y-5">
+    <div className="text-center">
+      <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-green-500/30">
+        <CheckCircle2 className="h-8 w-8 text-green-400" />
+      </div>
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+        You&apos;re All Set, {formData.firstName}!
+      </h2>
+      <p className="text-white/70 text-sm">
+        Help your specialist prepare with 2 quick questions (optional)
       </p>
     </div>
 
+    {/* Question 1: Percentage to Protect */}
+    <div>
+      <label className="block text-sm font-medium text-white/90 mb-2">
+        How much of your savings would you like to protect with gold?
+      </label>
+      <div className="grid grid-cols-4 gap-2">
+        {[
+          { value: "10", label: "10%" },
+          { value: "25", label: "25%" },
+          { value: "50", label: "50%" },
+          { value: "75", label: "75%+" },
+        ].map((option) => (
+          <button
+            key={option.value}
+            onClick={() => setEnrichmentData({ ...enrichmentData, percentageToProtect: option.value })}
+            className={`p-3 rounded-xl border-2 text-center transition-all min-h-[56px] flex items-center justify-center ${
+              enrichmentData.percentageToProtect === option.value
+                ? "border-amber-400 bg-amber-400/20 text-amber-300"
+                : "border-white/20 bg-white/5 text-white hover:border-amber-400/50"
+            }`}
+          >
+            <span className="text-lg font-bold">{option.label}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    {/* Question 2: Total Retirement Savings */}
+    <div>
+      <label className="block text-sm font-medium text-white/90 mb-2">
+        What are your total retirement savings?
+      </label>
+      <div className="space-y-2">
+        {[
+          { value: "50k_100k", label: "$50K - $100K" },
+          { value: "100k_250k", label: "$100K - $250K" },
+          { value: "250k_500k", label: "$250K - $500K" },
+          { value: "500k_1m", label: "$500K - $1 Million" },
+          { value: "over_1m", label: "Over $1 Million" },
+        ].map((option) => (
+          <button
+            key={option.value}
+            onClick={() => setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value })}
+            className={`w-full p-3 rounded-xl border-2 text-left transition-all min-h-[48px] flex items-center ${
+              enrichmentData.totalRetirementSavings === option.value
+                ? "border-amber-400 bg-amber-400/20 text-amber-300"
+                : "border-white/20 bg-white/5 text-white hover:border-amber-400/50"
+            }`}
+          >
+            <span className="text-base font-medium">{option.label}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    {/* Submit Button */}
     <button
-      onClick={() => setStep("enrichment-q1")}
-      className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+      onClick={() => handleEnrichmentSubmit()}
+      disabled={isSubmitting}
+      className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
     >
-      Continue
-      <ArrowRight className="h-5 w-5" />
+      {isSubmitting ? (
+        <>
+          <Loader2 className="h-5 w-5 animate-spin" />
+          Saving...
+        </>
+      ) : (
+        <>
+          Continue
+          <ArrowRight className="h-5 w-5" />
+        </>
+      )}
     </button>
 
-    <p className="text-white/50 text-sm mt-4 flex items-center justify-center gap-2">
-      <ShieldCheck className="h-4 w-4" />
-      Your information is secure and will never be shared
-    </p>
-  </div>
-)}
-
-{/* Step: Enrichment Q1 - Percentage to Protect */}
-{step === "enrichment-q1" && (
-  <div className="space-y-5">
-    <div className="text-center">
-      <div className="w-16 h-16 bg-gradient-to-br from-amber-400/30 to-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-400/50">
-        <ShieldCheck className="h-8 w-8 text-amber-400" />
-      </div>
-      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-        How much would you like to protect?
-      </h2>
-      <p className="text-white/60 text-sm px-4">
-        Just to help your specialist prepare — completely non-binding.
-      </p>
-    </div>
-
-    <div className="grid grid-cols-2 gap-3">
-      {[
-        { value: "10", label: "10%", desc: "Test the waters" },
-        { value: "25", label: "25%", desc: "Conservative" },
-        { value: "50", label: "50%", desc: "Balanced" },
-        { value: "75", label: "75%+", desc: "Aggressive" },
-      ].map((option, idx) => (
-        <button
-          key={option.value}
-          onClick={() => {
-            setEnrichmentData({ ...enrichmentData, percentageToProtect: option.value });
-            setStep("enrichment-q2");
-          }}
-          className="p-5 rounded-xl border-2 border-amber-400/40 bg-gradient-to-br from-amber-400/10 to-amber-600/20 text-white hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/20 transition-all text-center min-h-[100px] flex flex-col items-center justify-center"
-          style={{ opacity: 0.85 + (idx * 0.05) }}
-        >
-          <span className="text-3xl font-bold text-amber-300">{option.label}</span>
-          <span className="text-sm text-white/70 mt-1">{option.desc}</span>
-        </button>
-      ))}
-    </div>
-
-    <p className="text-center text-amber-300/70 text-sm">
-      It would really help us if you take 10 seconds for these 2 quick questions
-    </p>
-  </div>
-)}
-
-{/* Step: Enrichment Q2 - Total Retirement Savings */}
-{step === "enrichment-q2" && (
-  <div className="space-y-5">
-    <div className="text-center">
-      <div className="w-16 h-16 bg-gradient-to-br from-amber-400/30 to-amber-600/30 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-400/50">
-        <CheckCircle2 className="h-8 w-8 text-amber-400" />
-      </div>
-      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-        What are your total savings?
-      </h2>
-      <p className="text-white/60 text-sm px-4">
-        This is just for preparation — no commitments whatsoever.
-      </p>
-    </div>
-
-    <div className="space-y-2.5">
-      {[
-        { value: "50k_100k", label: "$50K - $100K" },
-        { value: "100k_250k", label: "$100K - $250K" },
-        { value: "250k_500k", label: "$250K - $500K" },
-        { value: "500k_1m", label: "$500K - $1 Million" },
-        { value: "over_1m", label: "Over $1 Million" },
-      ].map((option, idx) => (
-        <button
-          key={option.value}
-          onClick={() => {
-            setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value });
-            handleEnrichmentSubmit(option.value);
-          }}
-          className="w-full p-4 rounded-xl border-2 border-amber-400/40 bg-gradient-to-r from-amber-400/10 to-amber-600/20 text-white hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/20 transition-all text-left min-h-[56px] flex items-center justify-between"
-          style={{ opacity: 0.8 + (idx * 0.05) }}
-        >
-          <span className="text-lg font-semibold text-amber-100">{option.label}</span>
-          <ArrowRight className="h-5 w-5 text-amber-400/60" />
-        </button>
-      ))}
-    </div>
-
+    {/* Skip Option */}
     <button
-      onClick={() => setStep("enrichment-q1")}
-      className="w-full text-white/60 hover:text-white text-base py-2 flex items-center justify-center gap-2 transition-colors"
+      onClick={() => setStep("success")}
+      className="w-full text-white/50 hover:text-white/70 text-sm py-2 transition-colors"
     >
-      <ArrowLeft className="h-4 w-4" />
-      Back
+      Skip for now
     </button>
   </div>
 )}
 
               {/* Trust signals (only on steps 1-3) */}
-              {step !== "success" && step !== "confirmed" && step !== "enrichment-q1" && step !== "enrichment-q2" && (
+              {step !== "success" && step !== "enrichment" && (
                 <div className="mt-6 pt-4 border-t border-white/10 space-y-3">
                   {/* Stars */}
                   <div className="flex items-center justify-center gap-1 text-amber-400">
