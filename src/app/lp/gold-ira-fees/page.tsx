@@ -77,24 +77,45 @@ export default function GoldIRAFeesLandingPage() {
             {/* Hero Section */}
             <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                    {/* Badge - Clickable */}
+                    <LeadCaptureButton
+                        variant="fees"
+                        source="lp-fees-badge-click"
+                        className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-1.5 rounded-full text-sm font-semibold mb-6 hover:bg-[#000080]/20 transition-colors cursor-pointer"
+                    >
                         <span className="w-2 h-2 rounded-full bg-[#000080] animate-pulse"></span>
                         2026 Fee Guide
-                    </div>
+                    </LeadCaptureButton>
 
-                    {/* Headline */}
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight">
-                        Gold IRA Fees <span className="text-[#B22234]">Exposed</span>: <br className="hidden md:block" />
-                        What They Don&apos;t Tell You
-                    </h1>
+                    {/* Headline - Clickable */}
+                    <LeadCaptureButton
+                        variant="fees"
+                        source="lp-fees-headline-click"
+                        className="block cursor-pointer hover:opacity-90 transition-opacity"
+                    >
+                        <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight">
+                            Gold IRA Fees <span className="text-[#B22234]">Exposed</span>: <br className="hidden md:block" />
+                            What They Don&apos;t Tell You
+                        </h1>
+                    </LeadCaptureButton>
 
-                    <p className="text-xl md:text-2xl text-slate-700 mb-8 max-w-2xl mx-auto">
-                        Not all Gold IRA companies are transparent about fees. Here&apos;s what you need to know before investing.
-                    </p>
+                    {/* Subheadline - Clickable */}
+                    <LeadCaptureButton
+                        variant="fees"
+                        source="lp-fees-subheadline-click"
+                        className="block cursor-pointer hover:opacity-80 transition-opacity mb-8"
+                    >
+                        <p className="text-xl md:text-2xl text-slate-700 max-w-2xl mx-auto">
+                            Not all Gold IRA companies are transparent about fees. Here&apos;s what you need to know before investing.
+                        </p>
+                    </LeadCaptureButton>
 
-                    {/* Stats Row */}
-                    <div className="flex flex-wrap justify-center gap-6 md:gap-12 mb-10">
+                    {/* Stats Row - Clickable */}
+                    <LeadCaptureButton
+                        variant="fees"
+                        source="lp-fees-stats-click"
+                        className="flex flex-wrap justify-center gap-6 md:gap-12 mb-10 cursor-pointer hover:opacity-80 transition-opacity"
+                    >
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-[#000080]">3</div>
                             <div className="text-sm text-slate-600">Fee Types</div>
@@ -107,7 +128,7 @@ export default function GoldIRAFeesLandingPage() {
                             <div className="text-3xl md:text-4xl font-bold text-[#B22234]">0</div>
                             <div className="text-sm text-slate-600">Hidden Fees</div>
                         </div>
-                    </div>
+                    </LeadCaptureButton>
 
                     {/* CTA */}
                     <LeadCaptureButton

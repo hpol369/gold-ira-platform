@@ -80,24 +80,45 @@ export default function SilverIRACompaniesPatriotPage() {
             <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
 
-                    {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
+                    {/* Badge - Clickable */}
+                    <LeadCaptureButton
+                        variant="silver"
+                        source="lp-silver-badge-click"
+                        className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6 hover:bg-[#000080]/20 transition-colors cursor-pointer"
+                    >
                         <Award className="h-4 w-4" />
                         Updated January 2026
-                    </div>
+                    </LeadCaptureButton>
 
-                    {/* Headline Group */}
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
-                        Best Silver IRA Companies: <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">Who Can You Trust?</span>
-                    </h1>
+                    {/* Headline Group - Clickable */}
+                    <LeadCaptureButton
+                        variant="silver"
+                        source="lp-silver-headline-click"
+                        className="block cursor-pointer hover:opacity-90 transition-opacity"
+                    >
+                        <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                            Best Silver IRA Companies: <br />
+                            <span className="text-[#B22234] underline decoration-4 underline-offset-8">Who Can You Trust?</span>
+                        </h1>
+                    </LeadCaptureButton>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
-                        We analyzed <strong>15+ providers</strong> to find the most trustworthy choice for American retirees looking to add silver to their retirement.
-                    </p>
+                    {/* Subheadline - Clickable */}
+                    <LeadCaptureButton
+                        variant="silver"
+                        source="lp-silver-subheadline-click"
+                        className="block cursor-pointer hover:opacity-80 transition-opacity mb-8"
+                    >
+                        <p className="text-xl md:text-2xl text-slate-700 font-sans max-w-2xl mx-auto">
+                            We analyzed <strong>15+ providers</strong> to find the most trustworthy choice for American retirees looking to add silver to their retirement.
+                        </p>
+                    </LeadCaptureButton>
 
-                    {/* Quick Stats */}
-                    <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans">
+                    {/* Quick Stats - Clickable */}
+                    <LeadCaptureButton
+                        variant="silver"
+                        source="lp-silver-stats-click"
+                        className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans cursor-pointer hover:opacity-80 transition-opacity"
+                    >
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-black text-[#000080]">15+</div>
                             <div className="text-sm text-slate-600">Companies Reviewed</div>
@@ -110,7 +131,7 @@ export default function SilverIRACompaniesPatriotPage() {
                             <div className="text-3xl md:text-4xl font-black text-[#000080]">4.9★</div>
                             <div className="text-sm text-slate-600">Customer Rating</div>
                         </div>
-                    </div>
+                    </LeadCaptureButton>
 
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
