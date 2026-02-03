@@ -485,7 +485,7 @@ export default function LeadCaptureModal() {
               )}
 
 
-{/* Step: Enrichment - Compact Single Screen */}
+{/* Step: Enrichment - Single Question (Positive Framing) */}
 {step === "enrichment" && (
   <div className="space-y-5">
     <div className="text-center">
@@ -496,54 +496,31 @@ export default function LeadCaptureModal() {
         You&apos;re All Set, {formData.firstName}!
       </h2>
       <p className="text-white/60 text-sm">
-        Help your specialist prepare (optional)
+        One quick question to help your specialist
       </p>
     </div>
 
-    {/* Question 1: Percentage - Small inline buttons */}
+    {/* Single Question: Positive framing about gains */}
     <div>
-      <label className="block text-sm font-medium text-white/90 mb-2">
-        How much would you like to protect with gold?
-      </label>
-      <div className="flex gap-2">
-        {["10%", "25%", "50%", "75%+"].map((pct) => (
-          <button
-            key={pct}
-            onClick={() => setEnrichmentData({ ...enrichmentData, percentageToProtect: pct.replace('%', '').replace('+', '') })}
-            className={`flex-1 py-2 px-3 rounded-lg border text-sm font-medium transition-all ${
-              enrichmentData.percentageToProtect === pct.replace('%', '').replace('+', '')
-                ? "border-amber-400 bg-amber-400/20 text-amber-300"
-                : "border-white/20 bg-white/5 text-white hover:border-white/40"
-            }`}
-          >
-            {pct}
-          </button>
-        ))}
-      </div>
-    </div>
-
-    {/* Question 2: Indirect savings question */}
-    <div>
-      <label className="block text-sm font-medium text-white/90 mb-2">
-        What would a 10% market crash mean for your 401(k)?
+      <label className="block text-base font-medium text-white mb-3">
+        If gold gives you a 10% return this year, how much would your retirement grow?
       </label>
       <div className="space-y-2">
         {[
-          { value: "under_50k", label: "I'd lose less than $5,000", savings: "Under $50K" },
-          { value: "50k_100k", label: "I'd lose $5,000 - $10,000", savings: "$50K-$100K" },
-          { value: "100k_250k", label: "I'd lose $10,000 - $25,000", savings: "$100K-$250K" },
-          { value: "250k_500k", label: "I'd lose $25,000 - $50,000", savings: "$250K-$500K" },
-          { value: "500k_1m", label: "I'd lose $50,000 - $100,000", savings: "$500K-$1M" },
-          { value: "over_1m", label: "I'd lose over $100,000", savings: "$1M+" },
+          { value: "under_50k", label: "Less than $5,000" },
+          { value: "50k_100k", label: "$5,000 - $10,000" },
+          { value: "100k_250k", label: "$10,000 - $25,000" },
+          { value: "250k_500k", label: "$25,000 - $50,000" },
+          { value: "500k_1m", label: "$50,000 - $100,000" },
+          { value: "over_1m", label: "Over $100,000" },
         ].map((option) => (
           <button
             key={option.value}
-            onClick={() => setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value })}
-            className={`w-full py-2.5 px-4 rounded-lg border text-left text-sm transition-all ${
-              enrichmentData.totalRetirementSavings === option.value
-                ? "border-amber-400 bg-amber-400/20 text-amber-300"
-                : "border-white/20 bg-white/5 text-white hover:border-white/40"
-            }`}
+            onClick={() => {
+              setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value });
+              handleEnrichmentSubmit(option.value);
+            }}
+            className="w-full py-3 px-4 rounded-xl border-2 border-white/20 bg-white/5 text-white text-left text-base hover:border-amber-400 hover:bg-amber-400/10 transition-all"
           >
             {option.label}
           </button>
@@ -551,29 +528,10 @@ export default function LeadCaptureModal() {
       </div>
     </div>
 
-    {/* Submit Button */}
-    <button
-      onClick={() => handleEnrichmentSubmit()}
-      disabled={isSubmitting}
-      className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 text-white text-lg font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
-    >
-      {isSubmitting ? (
-        <>
-          <Loader2 className="h-5 w-5 animate-spin" />
-          Saving...
-        </>
-      ) : (
-        <>
-          Continue
-          <ArrowRight className="h-5 w-5" />
-        </>
-      )}
-    </button>
-
     {/* Skip Option */}
     <button
       onClick={() => setStep("success")}
-      className="w-full text-white/60 hover:text-white/80 text-sm py-2 transition-colors"
+      className="w-full text-white/50 hover:text-white/70 text-sm py-2 transition-colors"
     >
       Skip for now
     </button>
