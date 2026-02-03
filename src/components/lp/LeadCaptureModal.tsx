@@ -6,7 +6,7 @@ import { X, User, Mail, Phone, ArrowRight, ArrowLeft, CheckCircle2, Loader2, Shi
 import { useLeadModal } from "@/context/LeadModalContext";
 import { leadModalVariants } from "@/config/lead-modal-variants";
 
-type Step = 1 | 2 | 3 | "enrichment-q1" | "enrichment-q2" | "success";
+type Step = 1 | 2 | 3 | "confirmed" | "enrichment-q1" | "enrichment-q2" | "success";
 
 export default function LeadCaptureModal() {
   const { isOpen, variant, source, closeModal } = useLeadModal();
@@ -154,8 +154,8 @@ export default function LeadCaptureModal() {
             currency: "USD",
           });
         }
-        // Move to Enrichment instead of immediately success
-        setStep("enrichment-q1");
+        // Move to confirmation screen first
+        setStep("confirmed");
       } else {
         setError("We couldn't process your request. Please verify your phone number includes the area code, or call us at 1-800-700-1008.");
       }
@@ -233,7 +233,7 @@ export default function LeadCaptureModal() {
             {/* Content */}
             <div className="p-6 md:p-8">
               {/* Progress bar */}
-              {step !== "success" && (
+              {step !== "success" && step !== "confirmed" && step !== "enrichment-q1" && step !== "enrichment-q2" && (
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-white/80 text-sm">Step {step} of 3</span>
@@ -485,6 +485,46 @@ export default function LeadCaptureModal() {
               )}
 
 
+{/* Step: Confirmed - You're All Set */}
+{step === "confirmed" && (
+  <div className="text-center py-4">
+    <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-green-500/30">
+      <CheckCircle2 className="h-10 w-10 text-green-400" />
+    </div>
+    <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+      You&apos;re All Set, {formData.firstName}!
+    </h2>
+    <p className="text-white/80 text-lg mb-2">
+      We&apos;ve locked in a spot for you today.
+    </p>
+    <p className="text-white/70 mb-6">
+      <strong className="text-white">This will not be a sales call</strong> — a specialist from Augusta will reach out to answer your questions and see if a Gold IRA is right for you.
+    </p>
+
+    <div className="bg-amber-500/20 border border-amber-500/30 rounded-xl p-4 mb-6">
+      <p className="text-amber-300 font-semibold text-lg">
+        Expect a call within 24 hours
+      </p>
+      <p className="text-amber-200/80 text-sm mt-1">
+        Have questions ready — the team is happy to answer all of them. No pressure, just answers.
+      </p>
+    </div>
+
+    <button
+      onClick={() => setStep("enrichment-q1")}
+      className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+    >
+      Continue
+      <ArrowRight className="h-5 w-5" />
+    </button>
+
+    <p className="text-white/50 text-sm mt-4 flex items-center justify-center gap-2">
+      <ShieldCheck className="h-4 w-4" />
+      Your information is secure and will never be shared
+    </p>
+  </div>
+)}
+
 {/* Step: Enrichment Q1 - Percentage to Protect */}
 {step === "enrichment-q1" && (
   <div className="space-y-5">
@@ -577,7 +617,7 @@ export default function LeadCaptureModal() {
 )}
 
               {/* Trust signals (only on steps 1-3) */}
-              {step !== "success" && step !== "enrichment-q1" && step !== "enrichment-q2" && (
+              {step !== "success" && step !== "confirmed" && step !== "enrichment-q1" && step !== "enrichment-q2" && (
                 <div className="mt-6 pt-4 border-t border-white/10 space-y-3">
                   {/* Stars */}
                   <div className="flex items-center justify-center gap-1 text-amber-400">
