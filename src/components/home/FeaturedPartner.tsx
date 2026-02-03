@@ -43,7 +43,7 @@ export function FeaturedPartner() {
 
                     <div className="grid md:grid-cols-2 gap-0">
                         {/* Left Side: Visual/Brand */}
-                        <div className="bg-[#000080] text-white p-10 md:p-14 flex flex-col justify-center relative overflow-hidden ring-1 ring-slate-200">
+                        <div className="bg-[#000080] text-white p-6 md:p-14 flex flex-col justify-center relative overflow-hidden ring-1 ring-slate-200">
                             {/* Radial Gradient for Depth */}
                             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#000080] via-[#000060] to-[#000040]"></div>
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
@@ -52,7 +52,7 @@ export function FeaturedPartner() {
                                 <span className="text-[#B22234] font-bold tracking-widest uppercase text-sm mb-2 block drop-shadow-[0_0_20px_rgba(178,34,52,0.4)]">
                                     #1 Rated Gold IRA Company
                                 </span>
-                                <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                                <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                                     Augusta Precious Metals
                                 </h3>
 
@@ -86,21 +86,26 @@ export function FeaturedPartner() {
                                     </div>
                                 </div>
 
-                                <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 text-sm text-slate-200">
+                                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 text-sm text-slate-200">
                                     <span className="text-[#B22234] font-bold">Best For:</span> Investors with $50,000+ wanting VIP service.
                                 </div>
                             </div>
                         </div>
 
                         {/* Right Side: Copy/Direct CTA */}
-                        <div className="p-10 md:p-14 flex flex-col justify-center bg-white relative">
-                            {/* Exclusive Banner */}
-                            <div className="absolute top-6 right-6 flex items-center gap-1.5 bg-[#B22234]/10 text-[#B22234] px-3 py-1 rounded-full text-xs font-bold border border-[#B22234]/20 shadow-sm">
+                        <div className="p-6 md:p-14 flex flex-col justify-center bg-white relative">
+                            {/* Exclusive Banner - hidden on mobile, shown on md+ */}
+                            <div className="hidden md:flex absolute top-6 right-6 items-center gap-1.5 bg-[#B22234]/10 text-[#B22234] px-3 py-1 rounded-full text-xs font-bold border border-[#B22234]/20 shadow-sm">
                                 <Lock className="w-3 h-3" />
                                 Private Client Access ($50k Min)
                             </div>
+                            {/* Mobile version - inline badge */}
+                            <div className="flex md:hidden items-center gap-1.5 bg-[#B22234]/10 text-[#B22234] px-3 py-1.5 rounded-full text-xs font-bold border border-[#B22234]/20 shadow-sm mb-4 w-fit">
+                                <Lock className="w-3 h-3" />
+                                $50k Minimum
+                            </div>
 
-                            <h4 className="text-2xl font-bold text-[#000080] mb-4">
+                            <h4 className="text-xl md:text-2xl font-bold text-[#000080] mb-4">
                                 Education First, Not Sales Pressure
                             </h4>
                             <p className="text-slate-600 mb-6 leading-relaxed">

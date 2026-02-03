@@ -133,7 +133,7 @@ export function ComparisonTable() {
                                         #{company.rank}
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-slate-900 text-lg leading-tight whitespace-nowrap">{company.name}</h3>
+                                        <h3 className="font-bold text-slate-900 text-base sm:text-lg leading-tight">{company.name}</h3>
                                         <div className="flex items-center gap-1 text-sm mt-1">
                                             <span className={`font-bold ${company.rank === 1 ? 'text-[#B22234]' : 'text-amber-600'}`}>
                                                 {company.rating}/5
