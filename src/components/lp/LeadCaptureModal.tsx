@@ -485,51 +485,52 @@ export default function LeadCaptureModal() {
               )}
 
 
-{/* Step: Enrichment - Single Screen with Both Questions */}
+{/* Step: Enrichment - Single Screen (Senior-Friendly Large Buttons) */}
 {step === "enrichment" && (
-  <div className="space-y-5">
+  <div className="space-y-6">
     <div className="text-center">
-      <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-green-500/30">
-        <CheckCircle2 className="h-8 w-8 text-green-400" />
+      <div className="w-14 h-14 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-green-500/30">
+        <CheckCircle2 className="h-7 w-7 text-green-400" />
       </div>
-      <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">
         You&apos;re All Set, {formData.firstName}!
       </h2>
-      <p className="text-white/70 text-sm">
-        Help your specialist prepare with 2 quick questions (optional)
+      <p className="text-white/60 text-sm">
+        2 quick questions to help your specialist prepare
       </p>
     </div>
 
-    {/* Question 1: Percentage to Protect */}
+    {/* Question 1: Percentage to Protect - 2x2 Grid */}
     <div>
-      <label className="block text-sm font-medium text-white/90 mb-2">
-        How much of your savings would you like to protect with gold?
+      <label className="block text-base font-semibold text-white mb-3">
+        How much would you like to protect?
       </label>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 gap-3">
         {[
-          { value: "10", label: "10%" },
-          { value: "25", label: "25%" },
-          { value: "50", label: "50%" },
-          { value: "75", label: "75%+" },
+          { value: "10", label: "10%", desc: "Test the waters" },
+          { value: "25", label: "25%", desc: "Conservative" },
+          { value: "50", label: "50%", desc: "Balanced" },
+          { value: "75", label: "75%+", desc: "Aggressive" },
         ].map((option) => (
           <button
             key={option.value}
             onClick={() => setEnrichmentData({ ...enrichmentData, percentageToProtect: option.value })}
-            className={`p-3 rounded-xl border-2 text-center transition-all min-h-[56px] flex items-center justify-center ${
+            className={`p-4 rounded-xl border-2 text-center transition-all min-h-[80px] flex flex-col items-center justify-center ${
               enrichmentData.percentageToProtect === option.value
-                ? "border-amber-400 bg-amber-400/20 text-amber-300"
-                : "border-white/20 bg-white/5 text-white hover:border-amber-400/50"
+                ? "border-amber-400 bg-gradient-to-br from-amber-400/25 to-amber-600/35 shadow-lg shadow-amber-500/25"
+                : "border-amber-400/40 bg-gradient-to-br from-amber-400/10 to-amber-600/20 hover:border-amber-400"
             }`}
           >
-            <span className="text-lg font-bold">{option.label}</span>
+            <span className={`text-3xl font-bold ${enrichmentData.percentageToProtect === option.value ? "text-amber-300" : "text-amber-200"}`}>{option.label}</span>
+            <span className="text-xs text-white/60 mt-1">{option.desc}</span>
           </button>
         ))}
       </div>
     </div>
 
-    {/* Question 2: Total Retirement Savings */}
+    {/* Question 2: Total Retirement Savings - Large Stacked Buttons */}
     <div>
-      <label className="block text-sm font-medium text-white/90 mb-2">
+      <label className="block text-base font-semibold text-white mb-3">
         What are your total retirement savings?
       </label>
       <div className="space-y-2">
@@ -537,19 +538,19 @@ export default function LeadCaptureModal() {
           { value: "50k_100k", label: "$50K - $100K" },
           { value: "100k_250k", label: "$100K - $250K" },
           { value: "250k_500k", label: "$250K - $500K" },
-          { value: "500k_1m", label: "$500K - $1 Million" },
+          { value: "500k_1m", label: "$500K - $1M" },
           { value: "over_1m", label: "Over $1 Million" },
         ].map((option) => (
           <button
             key={option.value}
             onClick={() => setEnrichmentData({ ...enrichmentData, totalRetirementSavings: option.value })}
-            className={`w-full p-3 rounded-xl border-2 text-left transition-all min-h-[48px] flex items-center ${
+            className={`w-full p-4 rounded-xl border-2 text-left transition-all min-h-[56px] flex items-center ${
               enrichmentData.totalRetirementSavings === option.value
-                ? "border-amber-400 bg-amber-400/20 text-amber-300"
-                : "border-white/20 bg-white/5 text-white hover:border-amber-400/50"
+                ? "border-amber-400 bg-gradient-to-r from-amber-400/25 to-amber-600/35 shadow-lg shadow-amber-500/25"
+                : "border-amber-400/40 bg-gradient-to-r from-amber-400/10 to-amber-600/20 hover:border-amber-400"
             }`}
           >
-            <span className="text-base font-medium">{option.label}</span>
+            <span className={`text-lg font-semibold ${enrichmentData.totalRetirementSavings === option.value ? "text-amber-300" : "text-amber-100"}`}>{option.label}</span>
           </button>
         ))}
       </div>
