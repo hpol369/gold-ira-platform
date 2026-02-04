@@ -163,7 +163,7 @@ export async function POST(request: NextRequest) {
 export async function PATCH(request: NextRequest) {
   try {
     const body = await request.json();
-    const { leadId, totalRetirementSavings, percentageToProtect } = body;
+    const { leadId, totalRetirementSavings, percentageToProtect, notes } = body;
 
     if (!leadId) {
       return NextResponse.json(
@@ -178,31 +178,48 @@ export async function PATCH(request: NextRequest) {
       return NextResponse.json({ success: false, error: "Lead not found" }, { status: 404 });
     }
 
-    // Calculate deal potential
-    const deal = calculatePotentialDeal(totalRetirementSavings, percentageToProtect);
+    // Calculate deal potential (default to 100% if no percentage provided)
+    const effectivePercentage = percentageToProtect || "100";
+    const deal = calculatePotentialDeal(totalRetirementSavings, effectivePercentage);
+
+    // Build update object
+    const updateData: Partial<Lead> = {
+      is_qualified: true,
+    };
+
+    if (totalRetirementSavings) {
+      updateData.total_retirement_savings = totalRetirementSavings;
+      updateData.percentage_to_protect = effectivePercentage;
+      updateData.potential_deal_min = deal.min;
+      updateData.potential_deal_max = deal.max;
+    }
+
+    if (notes) {
+      // Append to existing notes if any
+      updateData.notes = lead.notes ? `${lead.notes} | ${notes}` : notes;
+    }
 
     // Update lead with enrichment data
-    const success = await updateLead(leadId, {
-      total_retirement_savings: totalRetirementSavings,
-      percentage_to_protect: percentageToProtect,
-      potential_deal_min: deal.min,
-      potential_deal_max: deal.max,
-      is_qualified: true,
-    });
+    const success = await updateLead(leadId, updateData);
 
     if (!success) {
       return NextResponse.json({ success: false, error: "Update failed" }, { status: 500 });
     }
 
     // Update lead object for notification
-    lead.total_retirement_savings = totalRetirementSavings;
-    lead.percentage_to_protect = percentageToProtect;
-    lead.potential_deal_min = deal.min;
-    lead.potential_deal_max = deal.max;
+    if (totalRetirementSavings) {
+      lead.total_retirement_savings = totalRetirementSavings;
+      lead.percentage_to_protect = effectivePercentage;
+      lead.potential_deal_min = deal.min;
+      lead.potential_deal_max = deal.max;
+    }
     lead.is_qualified = true;
+    if (notes) {
+      lead.notes = updateData.notes;
+    }
 
     // Update the Telegram notification with enrichment data
-    if (totalRetirementSavings && percentageToProtect) {
+    if (totalRetirementSavings) {
       try {
         await updateLeadNotification(lead);
       } catch (err) {

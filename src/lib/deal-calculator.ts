@@ -1,5 +1,6 @@
-// Savings range mapping (no under_50k - all leads are qualified)
+// Savings range mapping
 export const SAVINGS_RANGES: Record<string, { min: number; max: number; label: string }> = {
+  "under_50k": { min: 10000, max: 50000, label: "Under $50K" },
   "50k_100k": { min: 50000, max: 100000, label: "$50K - $100K" },
   "100k_250k": { min: 100000, max: 250000, label: "$100K - $250K" },
   "250k_500k": { min: 250000, max: 500000, label: "$250K - $500K" },
