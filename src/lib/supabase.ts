@@ -26,6 +26,7 @@ export interface Lead {
   potential_deal_max?: number;
   is_qualified?: boolean;
   telegram_message_id?: number;
+  telegram_message_ids?: string; // JSON: {"chatId": messageId, ...}
 }
 
 // Insert a new lead

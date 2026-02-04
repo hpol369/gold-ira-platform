@@ -111,10 +111,10 @@ export async function POST(request: NextRequest) {
       const messageId = await updateLeadNotification(lead, location);
       console.log("[LEAD] Telegram notification sent, message_id:", messageId);
 
-      // Save message_id for later updates
+      // Save message_ids for later updates (JSON: {"chatId": messageId, ...})
       if (messageId && lead.id) {
-        await updateLead(lead.id, { telegram_message_id: messageId });
-        lead.telegram_message_id = messageId;
+        await updateLead(lead.id, { telegram_message_ids: messageId });
+        lead.telegram_message_ids = messageId;
       }
     } catch (err) {
       console.error("[TELEGRAM ERROR]", err);

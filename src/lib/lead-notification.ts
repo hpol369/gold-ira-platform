@@ -1,6 +1,6 @@
 // Living Lead Notification - One message that evolves with the lead lifecycle
 import { Lead } from "@/lib/supabase";
-import { sendTelegramNotification, editTelegramMessage } from "@/lib/notifications";
+import { sendTelegramNotification, editTelegramMessages } from "@/lib/notifications";
 import { formatCurrency, getSavingsLabel, getHotLeadIndicator } from "@/lib/deal-calculator";
 
 // Detect traffic source and return emoji + label
@@ -97,11 +97,11 @@ export function buildLeadNotification(lead: Lead, location?: string): string {
 }
 
 // Send or edit the lead notification
+// Returns JSON string of message IDs: {"chatId": messageId, ...}
 export async function updateLeadNotification(
   lead: Lead,
-  location?: string,
-  forceNewMessage: boolean = false
-): Promise<number | null> {
+  location?: string
+): Promise<string | null> {
   const message = buildLeadNotification(lead, location);
 
   // Determine if urgent (qualified, converted, or high value)
@@ -110,23 +110,25 @@ export async function updateLeadNotification(
     lead.status === "converted" ||
     (lead.potential_deal_max !== undefined && lead.potential_deal_max >= 100000);
 
-  // If enrichment data present and we have a message_id, send a NEW message
-  // (editing doesn't work across multiple chat IDs - each has different message_id)
-  const hasEnrichment = lead.total_retirement_savings && lead.potential_deal_min;
-
-  if (forceNewMessage || (hasEnrichment && lead.telegram_message_id)) {
-    console.log("[TELEGRAM] Sending enrichment update as new message");
-    return await sendTelegramNotification(message, isUrgent);
+  // If we have message_ids stored, edit them
+  if (lead.telegram_message_ids) {
+    try {
+      const messageIds = JSON.parse(lead.telegram_message_ids) as Record<string, number>;
+      console.log("[TELEGRAM] Editing messages in all chats:", messageIds);
+      await editTelegramMessages(messageIds, message);
+      return lead.telegram_message_ids;
+    } catch (e) {
+      console.error("[TELEGRAM] Failed to parse message_ids:", e);
+    }
   }
 
-  // If we have a message_id and no enrichment, try to edit (initial status update)
-  if (lead.telegram_message_id) {
-    console.log("[TELEGRAM] Editing message:", lead.telegram_message_id);
-    await editTelegramMessage(lead.telegram_message_id, message);
-    return lead.telegram_message_id;
+  // Otherwise send new messages to all chats
+  console.log("[TELEGRAM] Sending new notification to all chats");
+  const messageIds = await sendTelegramNotification(message, isUrgent);
+
+  if (messageIds) {
+    return JSON.stringify(messageIds);
   }
 
-  // Otherwise send new
-  console.log("[TELEGRAM] Sending new notification");
-  return await sendTelegramNotification(message, isUrgent);
+  return null;
 }

@@ -300,9 +300,9 @@ export async function sendTestNotification(): Promise<void> {
 /**
  * Simple function to send a Telegram notification message
  * Used for high-value lead alerts and other direct notifications
- * Returns the message_id of the first sent message (for editing later)
+ * Returns object with all message_ids per chat: {"chatId": messageId, ...}
  */
-export async function sendTelegramNotification(message: string, urgent: boolean = false): Promise<number | null> {
+export async function sendTelegramNotification(message: string, urgent: boolean = false): Promise<Record<string, number> | null> {
   const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS } = getConfig();
 
   console.log("[TELEGRAM] Attempting to send notification. Token present:", !!TELEGRAM_BOT_TOKEN, "ChatIDs:", TELEGRAM_CHAT_IDS.length);
@@ -313,7 +313,7 @@ export async function sendTelegramNotification(message: string, urgent: boolean 
   }
 
   const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-  let firstMessageId: number | null = null;
+  const messageIds: Record<string, number> = {};
 
   // Send to all configured chat IDs
   for (const chatId of TELEGRAM_CHAT_IDS) {
@@ -335,9 +335,8 @@ export async function sendTelegramNotification(message: string, urgent: boolean 
       } else {
         const data = await response.json();
         console.log(`[TELEGRAM] Direct notification sent to ${chatId}, message_id:`, data.result?.message_id);
-        // Save the first message_id (usually the main chat)
-        if (firstMessageId === null && data.result?.message_id) {
-          firstMessageId = data.result.message_id;
+        if (data.result?.message_id) {
+          messageIds[chatId] = data.result.message_id;
         }
       }
     } catch (error) {
@@ -345,11 +344,54 @@ export async function sendTelegramNotification(message: string, urgent: boolean 
     }
   }
 
-  return firstMessageId;
+  return Object.keys(messageIds).length > 0 ? messageIds : null;
 }
 
 /**
- * Edit an existing Telegram message
+ * Edit existing Telegram messages across multiple chats
+ * @param messageIds - Object with chatId as key and messageId as value: {"chatId": messageId}
+ * @param newMessage - The new message content
+ */
+export async function editTelegramMessages(messageIds: Record<string, number>, newMessage: string): Promise<boolean> {
+  const { TELEGRAM_BOT_TOKEN } = getConfig();
+
+  if (!TELEGRAM_BOT_TOKEN || Object.keys(messageIds).length === 0) {
+    console.log("[TELEGRAM] Cannot edit - not configured or no messageIds");
+    return false;
+  }
+
+  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/editMessageText`;
+
+  // Edit each message with its correct chatId and messageId
+  for (const [chatId, messageId] of Object.entries(messageIds)) {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          message_id: messageId,
+          text: newMessage,
+          parse_mode: "HTML"
+        })
+      });
+
+      if (!response.ok) {
+        const error = await response.text();
+        console.error(`[TELEGRAM EDIT ERROR] Chat ${chatId}:`, response.status, error);
+      } else {
+        console.log(`[TELEGRAM] Message ${messageId} edited in chat ${chatId}`);
+      }
+    } catch (error) {
+      console.error(`[TELEGRAM EDIT ERROR] Chat ${chatId}:`, error);
+    }
+  }
+
+  return true;
+}
+
+/**
+ * Edit an existing Telegram message (legacy - single message_id)
  * Used to update lead notifications with enrichment data
  */
 export async function editTelegramMessage(messageId: number, newMessage: string): Promise<boolean> {
@@ -362,7 +404,7 @@ export async function editTelegramMessage(messageId: number, newMessage: string)
 
   const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/editMessageText`;
 
-  // Edit in all configured chat IDs
+  // Try to edit in all configured chat IDs (legacy behavior)
   for (const chatId of TELEGRAM_CHAT_IDS) {
     try {
       const response = await fetch(url, {
