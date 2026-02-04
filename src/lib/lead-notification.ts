@@ -99,7 +99,8 @@ export function buildLeadNotification(lead: Lead, location?: string): string {
 // Send or edit the lead notification
 export async function updateLeadNotification(
   lead: Lead,
-  location?: string
+  location?: string,
+  forceNewMessage: boolean = false
 ): Promise<number | null> {
   const message = buildLeadNotification(lead, location);
 
@@ -109,13 +110,23 @@ export async function updateLeadNotification(
     lead.status === "converted" ||
     (lead.potential_deal_max !== undefined && lead.potential_deal_max >= 100000);
 
-  // If we have a message_id, edit it. Otherwise send new.
+  // If enrichment data present and we have a message_id, send a NEW message
+  // (editing doesn't work across multiple chat IDs - each has different message_id)
+  const hasEnrichment = lead.total_retirement_savings && lead.potential_deal_min;
+
+  if (forceNewMessage || (hasEnrichment && lead.telegram_message_id)) {
+    console.log("[TELEGRAM] Sending enrichment update as new message");
+    return await sendTelegramNotification(message, isUrgent);
+  }
+
+  // If we have a message_id and no enrichment, try to edit (initial status update)
   if (lead.telegram_message_id) {
     console.log("[TELEGRAM] Editing message:", lead.telegram_message_id);
     await editTelegramMessage(lead.telegram_message_id, message);
     return lead.telegram_message_id;
-  } else {
-    console.log("[TELEGRAM] Sending new notification");
-    return await sendTelegramNotification(message, isUrgent);
   }
+
+  // Otherwise send new
+  console.log("[TELEGRAM] Sending new notification");
+  return await sendTelegramNotification(message, isUrgent);
 }
