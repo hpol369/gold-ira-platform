@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://www.cnbc.com/2026/01/30/china-services-consumption-plan-domestic-demand-reform.html",
-    "timestamp": 1769754453082
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-slumps-to-83k-as-heavy-liquidations-fed-uncertainty-weigh-4475157",
-    "timestamp": 1769759622928
-  },
-  {
     "url": "https://www.marketwatch.com/story/gold-falls-as-expectations-of-warsh-to-fed-hits-the-dollar-debasement-trade-854fd28e?mod=mw_rss_topstories",
     "timestamp": 1769763760561
   },
@@ -7558,5 +7550,9 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/dipcoin-launches-season-1-horizon-points--referral-system-an-incentive-framework-for-perpetual-trading-4489322",
     "timestamp": 1770348657677
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-from-16mth-low-but-set-for-steep-weekly-loss-as-crypto-prices-slide-4489409",
+    "timestamp": 1770364471656
   }
 ]
