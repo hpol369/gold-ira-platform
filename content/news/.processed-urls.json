@@ -1,81 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/spotify-upgraded-pinterest-downgraded-wall-145401507.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/tronox-price-target-raised-8-145048931.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/packaging-corp-price-target-raised-145041978.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/greif-price-target-raised-75-145030490.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/tesla-price-target-lowered-438-145018555.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/low-cost-vanguard-fund-could-145000482.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/verizon-posts-strong-subscriber-gains-122200514.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://www.investors.com/news/chevron-exxon-mobil-q4-earnings-oil-prices-venezuela-in-focus/?src=A00220&yptr=yahoo",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/tesla-price-target-raised-519-144620592.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/55-her-590k-house-paid-144614186.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-fall-as-wall-street-digests-warsh-as-trumps-fed-pick-234128307.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://www.marketwatch.com/story/sandisks-stock-gets-one-of-the-most-delayed-upgrades-in-history-after-blowout-earnings-ef9abb6b?mod=mw_rss_topstories",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/american-express-ceo-says-a-credit-card-rate-cap-wouldnt-be-good-for-the-economy-143632627.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://www.investors.com/news/tesla-stock-rises-elon-musk-spacex-reportedly-mulls-merger-xai/?src=A00220&yptr=yahoo",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-giverny-capital-asset-management-142550112.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/giverny-capital-asset-management-exited-142405033.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-giverny-capital-asset-management-142050486.html",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://www.investors.com/news/technology/klac-stock-kla-fiscal-q2-2026-earnings/?src=A00220&yptr=yahoo",
-    "timestamp": 1769785222388
-  },
-  {
-    "url": "https://finance.yahoo.com/news/apple-tops-q1-earnings-estimates-on-record-breaking-iphone-sales-stock-falls-after-cooks-memory-warning-213019588.html",
-    "timestamp": 1769785222388
-  },
-  {
     "url": "https://www.marketwatch.com/story/why-apples-blockbuster-earnings-werent-enough-to-move-the-stock-b198948f?mod=mw_rss_topstories",
     "timestamp": 1769787394836
   },
@@ -7618,5 +7542,61 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/china-intensifies-crypto-crackdown-central-bank-bans-overseas-issuance-4490514",
     "timestamp": 1770387985668
+  },
+  {
+    "url": "https://finance.yahoo.com/news/3-things-every-meta-platforms-144700811.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/la-mom-2-faces-180k-144500792.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://www.investors.com/news/iren-earnings-q2-2026-bitcoin-miner-ai-artificial-intelligence-iren-stock/?src=A00220&yptr=yahoo",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/analysis-ecbs-safety-net-part-143648052.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-bitcoin-price-amazon-stock-amzn/?src=A00220&yptr=yahoo",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/amazon-downgraded-roblox-upgraded-wall-144121688.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/stellantis-slumps-ev-missteps-trigger-144100837.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/bitcoin-bloodbath-erases-trump-gains-144030772.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/proto-labs-prlb-q4-2025-143858488.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/fortinet-fourth-quarter-earnings-beat-143600837.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/rxo-rxo-q4-2025-earnings-143555975.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/palantir-good-stock-buy-143500049.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/bitcoin-bounces-traders-buy-dip-090740601.html",
+    "timestamp": 1770390388329
+  },
+  {
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-after-tech-rout-as-wall-street-rethinks-ai-risks-000711263.html",
+    "timestamp": 1770390388329
   }
 ]
