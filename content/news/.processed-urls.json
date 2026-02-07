@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/magnificent-seven-stock-577-over-191000176.html",
-    "timestamp": 1769887914945
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-ceo-jensen-huang-says-190159787.html",
-    "timestamp": 1769887914945
-  },
-  {
     "url": "https://finance.yahoo.com/news/bellring-brands-annual-meeting-directors-193525234.html",
     "timestamp": 1769888979607
   },
@@ -7478,5 +7470,17 @@
   {
     "url": "https://finance.yahoo.com/news/vti-vs-spy-popular-broad-183703039.html",
     "timestamp": 1770491951364
+  },
+  {
+    "url": "https://finance.yahoo.com/news/veteran-analysts-drop-shock-call-191700347.html",
+    "timestamp": 1770493330832
+  },
+  {
+    "url": "https://finance.yahoo.com/news/ai-stock-could-one-most-190900911.html",
+    "timestamp": 1770493330832
+  },
+  {
+    "url": "https://finance.yahoo.com/news/t-plans-return-45-billion-190500319.html",
+    "timestamp": 1770493330832
   }
 ]
