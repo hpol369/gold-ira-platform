@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/rivian-stock-buy-2026-184300767.html",
-    "timestamp": 1769886746445
-  },
-  {
     "url": "https://finance.yahoo.com/news/magnificent-seven-stock-577-over-191000176.html",
     "timestamp": 1769887914945
   },
@@ -7474,5 +7470,13 @@
   {
     "url": "https://finance.yahoo.com/news/2-top-healthcare-stocks-buy-175900145.html",
     "timestamp": 1770490651357
+  },
+  {
+    "url": "https://finance.yahoo.com/news/applied-digital-stock-going-0-185300023.html",
+    "timestamp": 1770491951364
+  },
+  {
+    "url": "https://finance.yahoo.com/news/vti-vs-spy-popular-broad-183703039.html",
+    "timestamp": 1770491951364
   }
 ]
