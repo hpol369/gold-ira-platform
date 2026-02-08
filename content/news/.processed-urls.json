@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/january-barometer-stocks-comes-big-143000269.html",
-    "timestamp": 1769979434185
-  },
-  {
-    "url": "https://finance.yahoo.com/news/2-electric-vehicle-stocks-could-203500304.html",
-    "timestamp": 1769979434185
-  },
-  {
-    "url": "https://finance.yahoo.com/news/russias-lukoil-reaches-tentative-deal-203301323.html",
-    "timestamp": 1769979434185
-  },
-  {
     "url": "https://finance.yahoo.com/news/5-etfs-robinhood-investors-cant-210800056.html",
     "timestamp": 1769980627158
   },
@@ -7242,5 +7230,9 @@
   {
     "url": "https://finance.yahoo.com/news/kyle-samani-slams-hyperliquid-days-201204264.html",
     "timestamp": 1770583555347
+  },
+  {
+    "url": "https://finance.yahoo.com/news/laid-off-55-heres-know-204100456.html",
+    "timestamp": 1770584463917
   }
 ]
