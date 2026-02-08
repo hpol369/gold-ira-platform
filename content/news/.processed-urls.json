@@ -1,193 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/microsoft-sends-wall-street-625-180700960.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/1-nuclear-stock-could-power-180500697.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/maxes-401-k-roth-ira-180112738.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/apple-inc-aapl-acquires-israeli-175510473.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analysts-lift-price-targets-lam-175434491.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/applied-materials-inc-amat-strong-175432586.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/adobe-inc-adbe-moderate-buy-175431993.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/truist-securities-raises-price-target-175429481.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/freedom-capital-markets-upgrades-netflix-175428993.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/mizuho-lifts-micron-technology-inc-175426672.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/wall-street-projects-38-upside-175425192.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cantor-fitzgerald-hikes-price-target-175423886.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-most-profitable-175422639.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rbc-capital-reiterates-outperform-rating-175419379.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/wall-street-bullish-alphabet-inc-175417926.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/comcast-hopes-bold-offer-lure-174700126.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/yieldmax-mstr-option-income-strategy-174500467.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nancy-pelosi-just-sold-disney-150002334.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rare-spacex-bet-turns-1-130000974.html",
-    "timestamp": 1769970295384
-  },
-  {
-    "url": "https://finance.yahoo.com/news/apple-ceo-sends-blunt-message-184700202.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/once-decade-investment-opportunity-1-184600976.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/2-monster-stocks-hold-next-183500786.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/visa-shareholders-approve-directors-pay-183405524.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/m-66-old-retired-homeowner-183300174.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/silver-gold-tumble-triggers-major-183300200.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/earn-500-month-disney-stock-183112316.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/coreweave-buy-big-news-nvidia-183000235.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/jim-cramer-discusses-kimberly-clark-182848080.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/jim-cramer-wonders-high-ge-182841103.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/jim-cramer-believes-international-business-182829015.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/piper-sandler-raises-bristol-myers-182745069.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/morgan-stanley-updates-five9-fivn-182718894.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/truist-trims-capital-one-cof-182628641.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/baird-slashes-adobe-adb-pt-182617053.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://www.barrons.com/articles/waymo-valuation-doubling-tesla-2a61e237?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bernstein-doubles-down-asml-holding-182515472.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/citizens-downgrades-sap-se-sap-182401440.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bofa-stays-bearish-c3-ai-182324286.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bmo-maintains-outperform-datadog-ddog-182244866.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-stifel-says-international-business-182242124.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/da-davidson-reiterates-buy-snowflake-182145425.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-piper-sandler-sees-servicenow-181908540.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/tesla-tsla-seen-physical-ai-181856565.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-jpmorgan-says-apple-aapl-181848584.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/meta-platforms-meta-price-target-181836974.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cathie-wood-buys-1-9-181700745.html",
-    "timestamp": 1769972242237
-  },
-  {
-    "url": "https://finance.yahoo.com/news/polymarket-wagerers-predict-us-strike-181606218.html",
-    "timestamp": 1769972242237
-  },
-  {
     "url": "https://finance.yahoo.com/news/avoiding-risk-racking-debt-people-190142430.html",
     "timestamp": 1769973551940
   },
@@ -7306,5 +7118,93 @@
   {
     "url": "https://finance.yahoo.com/news/1-magnificent-high-yield-pipeline-173700254.html",
     "timestamp": 1770574791780
+  },
+  {
+    "url": "https://www.marketwatch.com/story/my-brother-in-law-invested-30k-in-our-california-condo-it-has-a-3-mortgage-rate-hes-pushing-me-to-sell-is-now-a-good-time-0f1ac56b?mod=mw_rss_topstories",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/goldman-sachs-revamps-nvidia-stock-184524432.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/cathie-wood-goes-ai-bargain-183500248.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/tax-season-tax-filing-deadline-183317539.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/jim-cramer-shares-details-texas-183228532.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/ralph-lauren-rl-ceo-doing-183220463.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/eli-lilly-lly-great-drug-183156570.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/siriusxm-loses-301-000-self-183141257.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/took-over-commercial-gym-says-183141522.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/home-depot-hd-stock-coming-183137551.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/oracle-orcl-balance-sheet-hell-183118758.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/broadcom-avgo-lot-says-jim-183022745.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/apple-aapl-again-says-jim-183009101.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/tapestry-tpr-done-remarkable-things-182957773.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/estee-lauder-el-doesn-t-182945812.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/qualcomm-qcom-hurt-memory-says-182935774.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/nvidia-nvda-memory-world-says-182926639.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/mckesson-mck-more-powerful-president-182916588.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/bsv-vs-scho-short-term-182744046.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/where-nvidia-5-years-182000338.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/major-shoe-retailer-cuts-jobs-181700209.html",
+    "timestamp": 1770577125500
+  },
+  {
+    "url": "https://finance.yahoo.com/news/voo-mgk-better-vanguard-etf-181501196.html",
+    "timestamp": 1770577125500
   }
 ]
