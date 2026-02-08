@@ -1,25 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/3-dates-disney-stock-investors-162700448.html",
-    "timestamp": 1769964481517
-  },
-  {
-    "url": "https://finance.yahoo.com/news/5-reasons-why-nvidia-incredible-162000957.html",
-    "timestamp": 1769964481517
-  },
-  {
-    "url": "https://finance.yahoo.com/news/3-ways-mark-cuban-other-183828098.html",
-    "timestamp": 1769964481517
-  },
-  {
-    "url": "https://finance.yahoo.com/news/afraid-ai-boom-overheated-infrastructure-160500553.html",
-    "timestamp": 1769964481517
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bye-bye-corporate-conglomerates-hello-153908426.html",
-    "timestamp": 1769964481517
-  },
-  {
     "url": "https://www.marketwatch.com/story/theres-now-a-bigger-risk-for-stocks-than-the-economy-or-corporate-earnings-cff2eee0?mod=mw_rss_topstories",
     "timestamp": 1769966094915
   },
@@ -7278,5 +7258,17 @@
   {
     "url": "https://finance.yahoo.com/news/tariffs-evs-destroy-top-stocks-154400485.html",
     "timestamp": 1770567618274
+  },
+  {
+    "url": "https://finance.yahoo.com/news/bitcoin-crash-sends-shock-401-161655759.html",
+    "timestamp": 1770569629043
+  },
+  {
+    "url": "https://finance.yahoo.com/news/walmart-surprises-shoppers-bold-restaurant-160700520.html",
+    "timestamp": 1770569629043
+  },
+  {
+    "url": "https://finance.yahoo.com/news/gambling-stocks-sag-prediction-markets-150000883.html",
+    "timestamp": 1770569629043
   }
 ]
