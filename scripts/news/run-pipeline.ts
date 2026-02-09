@@ -22,6 +22,8 @@ import { filterByRelevance, deduplicateItems } from "./score-relevance.js";
 import { generateArticles } from "./generate-article.js";
 import { writeArticle, addToReviewQueue } from "./write-article.js";
 import { CONFIG } from "./config.js";
+import { generateTweet } from "./generate-tweet.js";
+import { postTweet } from "./post-tweet.js";
 
 const PROCESSED_URLS_FILE = path.join(process.cwd(), "content/news/.processed-urls.json");
 
@@ -182,6 +184,39 @@ async function runPipeline() {
         }
     }
 
+    // Step 5: Tweet silver articles
+    console.log("");
+    console.log("STEP 5: Posting silver tweets...");
+    console.log("-".repeat(40));
+
+    const silverArticles = articles.filter((a) => a.category === "silver");
+    let tweetsPosted = 0;
+
+    if (silverArticles.length === 0) {
+        console.log("No silver articles to tweet");
+    } else {
+        for (let i = 0; i < silverArticles.length; i++) {
+            const article = silverArticles[i];
+            const slug = writtenSlugs[articles.indexOf(article)];
+            console.log(`  Generating tweet for: ${article.title}`);
+
+            const tweetText = await generateTweet(article.title, article.excerpt, slug);
+            if (tweetText) {
+                console.log(`  Tweet (${tweetText.length} chars): ${tweetText.split("\n")[0]}...`);
+                const posted = await postTweet(tweetText);
+                if (posted) tweetsPosted++;
+            } else {
+                console.log("  Failed to generate tweet, skipping");
+            }
+
+            // Small delay between tweets
+            if (i < silverArticles.length - 1) {
+                await new Promise((resolve) => setTimeout(resolve, 2000));
+            }
+        }
+        console.log(`Tweets posted: ${tweetsPosted}/${silverArticles.length}`);
+    }
+
     // Mark all processed URLs (including ones that weren't relevant enough)
     saveProcessedUrls(processedUrls, newItems.map(i => i.link));
 
@@ -191,6 +226,7 @@ async function runPipeline() {
     console.log("PIPELINE COMPLETE");
     console.log("=".repeat(60));
     console.log(`Articles generated: ${articles.length}`);
+    console.log(`Silver tweets posted: ${tweetsPosted}/${silverArticles.length}`);
     console.log(`Status: ${autoPublish ? "Published" : "In review queue"}`);
     console.log("");
     console.log("Written files:");

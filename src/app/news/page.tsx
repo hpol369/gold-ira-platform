@@ -20,6 +20,9 @@ export const metadata: Metadata = {
         description: "Daily financial news analysis with Robert Kiyosaki's perspective. What the mainstream won't tell you about your retirement.",
         type: "website",
     },
+    twitter: {
+        card: "summary",
+    },
     alternates: {
         canonical: "https://www.richdadretirement.com/news",
     },

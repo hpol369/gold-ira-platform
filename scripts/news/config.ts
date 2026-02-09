@@ -117,6 +117,15 @@ export const CONFIG = {
         reviewQueue: "content/news/.review-queue.json",
     },
 
+    // Twitter/X API for auto-tweeting silver articles
+    twitter: {
+        apiKey: process.env.TWITTER_API_KEY || "",
+        apiSecret: process.env.TWITTER_API_SECRET || "",
+        accessToken: process.env.TWITTER_ACCESS_TOKEN || "",
+        accessSecret: process.env.TWITTER_ACCESS_SECRET || "",
+        enabled: !!process.env.TWITTER_API_KEY,
+    },
+
     // Category to related guides mapping (only use existing pages!)
     categoryGuides: {
         fed: ["/guide/gold-ira-guide", "/why-gold/inflation-protection", "/best-gold-ira-companies"],
