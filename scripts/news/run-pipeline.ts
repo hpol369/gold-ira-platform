@@ -184,37 +184,40 @@ async function runPipeline() {
         }
     }
 
-    // Step 5: Tweet silver articles
+    // Step 5: Queue silver tweets (posted after deploy by GitHub Actions)
     console.log("");
-    console.log("STEP 5: Posting silver tweets...");
+    console.log("STEP 5: Generating silver tweets...");
     console.log("-".repeat(40));
 
     const silverArticles = articles.filter((a) => a.category === "silver");
-    let tweetsPosted = 0;
+    const tweetQueue: Array<{ title: string; text: string }> = [];
 
     if (silverArticles.length === 0) {
         console.log("No silver articles to tweet");
     } else {
-        for (let i = 0; i < silverArticles.length; i++) {
-            const article = silverArticles[i];
+        for (const article of silverArticles) {
             const slug = writtenSlugs[articles.indexOf(article)];
             console.log(`  Generating tweet for: ${article.title}`);
 
             const tweetText = await generateTweet(article.title, article.excerpt, slug);
             if (tweetText) {
                 console.log(`  Tweet (${tweetText.length} chars): ${tweetText.split("\n")[0]}...`);
-                const posted = await postTweet(tweetText);
-                if (posted) tweetsPosted++;
+                tweetQueue.push({ title: article.title, text: tweetText });
             } else {
                 console.log("  Failed to generate tweet, skipping");
             }
 
-            // Small delay between tweets
-            if (i < silverArticles.length - 1) {
-                await new Promise((resolve) => setTimeout(resolve, 2000));
-            }
+            // Small delay between API calls
+            await new Promise((resolve) => setTimeout(resolve, 1000));
         }
-        console.log(`Tweets posted: ${tweetsPosted}/${silverArticles.length}`);
+        console.log(`Tweets queued: ${tweetQueue.length}/${silverArticles.length}`);
+    }
+
+    // Save tweet queue to file (GitHub Actions will post after deploy)
+    const tweetQueueFile = path.join(process.cwd(), "content/news/.tweet-queue.json");
+    if (tweetQueue.length > 0) {
+        fs.writeFileSync(tweetQueueFile, JSON.stringify(tweetQueue, null, 2), "utf-8");
+        console.log(`  Saved tweet queue to .tweet-queue.json`);
     }
 
     // Mark all processed URLs (including ones that weren't relevant enough)
@@ -226,7 +229,7 @@ async function runPipeline() {
     console.log("PIPELINE COMPLETE");
     console.log("=".repeat(60));
     console.log(`Articles generated: ${articles.length}`);
-    console.log(`Silver tweets posted: ${tweetsPosted}/${silverArticles.length}`);
+    console.log(`Silver tweets queued: ${tweetQueue.length}/${silverArticles.length}`);
     console.log(`Status: ${autoPublish ? "Published" : "In review queue"}`);
     console.log("");
     console.log("Written files:");
