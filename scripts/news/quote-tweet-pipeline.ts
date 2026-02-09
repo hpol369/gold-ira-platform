@@ -163,25 +163,26 @@ async function fetchCandidateTweets(client: TwitterApi): Promise<CandidateTweet[
             const searchResult = await client.v2.search(query, {
                 max_results: 20,
                 "tweet.fields": ["created_at", "author_id"],
+                expansions: ["author_id"],
+                "user.fields": ["username", "name"],
                 start_time: sixHoursAgo.toISOString(),
             });
 
-            // Build author lookup
-            const authorLookup = new Map<string, string>();
-            for (const account of CONFIG.quoteTweets.accounts) {
-                if (account.userId) {
-                    authorLookup.set(account.userId, account.username);
-                }
+            // Build author lookup from API includes (resolves the @unknown issue)
+            const authorLookup = new Map<string, { username: string; name: string }>();
+            for (const user of searchResult.includes?.users || []) {
+                authorLookup.set(user.id, { username: user.username, name: user.name });
             }
 
             for (const tweet of searchResult.data?.data || []) {
-                const username = authorLookup.get(tweet.author_id || "") || "unknown";
+                const author = authorLookup.get(tweet.author_id || "");
+                const username = author?.username || "unknown";
                 if (isRelevantTweet(tweet.text)) {
                     candidates.push({
                         id: tweet.id,
                         text: tweet.text,
                         authorUsername: username,
-                        authorDisplayName: username,
+                        authorDisplayName: author?.name || username,
                         createdAt: tweet.created_at || new Date().toISOString(),
                     });
                 }
