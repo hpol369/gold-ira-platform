@@ -13,9 +13,10 @@ const anthropic = new Anthropic({
 
 // Twitter wraps all URLs to 23 chars via t.co
 // Total limit: 280 chars
-// URL (23) + 2 newlines before URL (2) = 25 chars overhead
-// Leaves ~255 chars for tweet text
-const MAX_TWEET_TEXT = 255;
+// URL (23) + hashtags line (~35) + newlines (4) = ~62 chars overhead
+// Leaves ~218 chars for tweet text
+const HASHTAGS = "#SilverIRA #Retirement #PreciousMetals";
+const MAX_TWEET_TEXT = 218;
 
 /**
  * Generate a tweet for a silver article
@@ -54,7 +55,7 @@ TWEET FORMULA (use one of these proven structures):
 4. CONTRARIAN TRUTH: "Everyone's watching gold. The real story? Silver. Industrial demand is exploding and supply can't keep up."
 
 RULES:
-- Maximum ${MAX_TWEET_TEXT} characters (a URL will be appended automatically)
+- Maximum ${MAX_TWEET_TEXT} characters (a URL and hashtags will be appended automatically)
 - Write like you're telling a friend the truth over coffee — direct, personal, urgent
 - MUST reference "your 401(k)", "your IRA", or "your retirement" at least once
 - End with a line that makes them NEED to click the link
@@ -93,8 +94,8 @@ RULES:
             }
         }
 
-        // Build final tweet: text + URL (no hashtags — cleaner, more authentic)
-        const fullTweet = `${tweetText}\n\n${articleUrl}`;
+        // Build final tweet: text + URL + hashtags
+        const fullTweet = `${tweetText}\n\n${articleUrl}\n\n${HASHTAGS}`;
 
         return fullTweet;
     } catch (error) {
