@@ -195,11 +195,12 @@ async function runPipeline() {
     if (silverArticles.length === 0) {
         console.log("No silver articles to tweet");
     } else {
-        for (const article of silverArticles) {
+        for (let i = 0; i < silverArticles.length; i++) {
+            const article = silverArticles[i];
             const slug = writtenSlugs[articles.indexOf(article)];
             console.log(`  Generating tweet for: ${article.title}`);
 
-            const tweetText = await generateTweet(article.title, article.excerpt, slug);
+            const tweetText = await generateTweet(article.title, article.excerpt, slug, i);
             if (tweetText) {
                 console.log(`  Tweet (${tweetText.length} chars): ${tweetText.split("\n")[0]}...`);
                 tweetQueue.push({ title: article.title, text: tweetText });
