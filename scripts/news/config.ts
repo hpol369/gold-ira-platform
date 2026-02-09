@@ -66,6 +66,18 @@ export const CONFIG = {
             category: "silver" as const,
             priority: 1,
         },
+        {
+            name: "Mining.com",
+            url: "https://www.mining.com/feed/",
+            category: "silver" as const,
+            priority: 2,
+        },
+        {
+            name: "Investing.com Silver",
+            url: "https://www.investing.com/rss/news_300.rss",
+            category: "silver" as const,
+            priority: 1,
+        },
     ],
 
     // Relevance scoring keywords
@@ -75,7 +87,9 @@ export const CONFIG = {
             "gold price", "silver price", "precious metals", "bullion",
             "silver demand", "silver industrial", "silver solar", "silver ev",
             "silver shortage", "silver supply", "silver deficit", "silver institute",
-            "photovoltaic silver", "silver conductivity",
+            "photovoltaic silver", "silver conductivity", "silver mining",
+            "silver ira", "silver investment", "silver etf", "silver futures",
+            "silver market", "silver rally", "silver ounce", "silver coins",
             "401k", "401(k)", "ira", "retirement", "pension", "social security",
             "recession", "market crash", "bank failure", "banking crisis",
             "dollar", "currency", "monetary policy", "quantitative easing",

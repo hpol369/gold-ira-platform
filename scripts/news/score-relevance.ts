@@ -78,15 +78,18 @@ function determineCategory(keywords: string[], text: string): NewsCategory {
         if (text.includes(kw)) categoryScores.gold += 2;
     }
 
-    // Silver-related
+    // Silver-related (boosted for blue ocean strategy)
     const silverKeywords = [
         "silver", "silver price", "silver demand",
         "solar panel", "photovoltaic", "ev battery",
         "industrial metal", "silver institute",
-        "silver eagle", "silver maple"
+        "silver eagle", "silver maple", "silver mining",
+        "silver ira", "silver investment", "silver etf",
+        "silver futures", "silver market", "silver rally",
+        "silver ounce", "silver coins"
     ];
     for (const kw of silverKeywords) {
-        if (text.includes(kw)) categoryScores.silver += 2;
+        if (text.includes(kw)) categoryScores.silver += 3;
     }
 
     // Extra boost for industrial demand angles (silver + industrial combo)
@@ -131,7 +134,7 @@ function determineCategory(keywords: string[], text: string): NewsCategory {
 
 /**
  * Filter and sort items by relevance
- * Ensures category diversity: at least 1 silver article per run
+ * Ensures category diversity: at least 2 silver articles per run (blue ocean strategy)
  */
 export function filterByRelevance(items: RSSFeedItem[]): ScoredNewsItem[] {
     const scoredItems = items.map(scoreNewsItem);
@@ -144,26 +147,27 @@ export function filterByRelevance(items: RSSFeedItem[]): ScoredNewsItem[] {
     // Sort by score (highest first)
     relevantItems.sort((a, b) => b.relevanceScore - a.relevanceScore);
 
-    // Ensure category diversity: at least 1 silver article
+    // Ensure category diversity: at least 2 silver articles (blue ocean)
     const silverItems = relevantItems.filter(item => item.suggestedCategory === "silver");
     const nonSilverItems = relevantItems.filter(item => item.suggestedCategory !== "silver");
 
     const result: ScoredNewsItem[] = [];
     const maxArticles = CONFIG.scoring.maxArticlesPerRun;
+    const minSilver = 2;
 
-    // Always include at least 1 silver article if available
-    if (silverItems.length > 0) {
-        result.push(silverItems[0]);
+    // Always include up to 2 silver articles first
+    for (let i = 0; i < Math.min(minSilver, silverItems.length); i++) {
+        result.push(silverItems[i]);
     }
 
-    // Fill remaining slots with highest scoring items (any category)
+    // Fill remaining slots with highest scoring non-silver items
     for (const item of nonSilverItems) {
         if (result.length >= maxArticles) break;
         result.push(item);
     }
 
-    // If we still have room and more silver items, add them
-    for (let i = 1; i < silverItems.length && result.length < maxArticles; i++) {
+    // If we still have room, add more silver items
+    for (let i = minSilver; i < silverItems.length && result.length < maxArticles; i++) {
         result.push(silverItems[i]);
     }
 
