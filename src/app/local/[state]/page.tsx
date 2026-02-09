@@ -6,6 +6,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { US_STATES } from "@/lib/states";
 import { STATE_CONTENT } from "@/lib/state-content";
+import { getCitiesByState } from "@/lib/cities";
 import { Metadata } from "next";
 import { MapPin, Building2, AlertTriangle, ShieldCheck, CheckCircle2, Landmark } from "lucide-react";
 import { notFound } from "next/navigation";
@@ -345,6 +346,32 @@ export default async function StatePage({ params }: Props) {
                                     </Button>
                                 </div>
                             </div>
+
+                            {/* City Guides Section */}
+                            {(() => {
+                                const cities = getCitiesByState(state);
+                                if (cities.length === 0) return null;
+                                return (
+                                    <section className="mt-12">
+                                        <h2>5. Gold IRA Guides for {stateName} Cities</h2>
+                                        <p>
+                                            Explore city-specific Gold IRA guides for {stateName} residents:
+                                        </p>
+                                        <div className="not-prose grid grid-cols-2 md:grid-cols-3 gap-2 my-6">
+                                            {cities.map((c) => (
+                                                <Link
+                                                    key={c.slug}
+                                                    href={`/local/${state}/${c.slug}`}
+                                                    className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-3 text-sm text-slate-700 hover:text-[#000080] transition-colors flex items-center gap-2"
+                                                >
+                                                    <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                                                    {c.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </section>
+                                );
+                            })()}
 
                             <AuthorBox />
 

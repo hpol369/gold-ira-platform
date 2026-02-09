@@ -7,6 +7,7 @@ import { getAllAssetSlugs } from "@/data/assets";
 import { US_STATES } from "@/lib/states";
 import { getAllNewsSlugs } from "@/lib/news";
 import { getAllLearnArticleSlugs } from "@/data/learn-articles";
+import { getAllCitySlugs } from "@/lib/cities";
 import { getAllWidowGuideArticleSlugs } from "@/data/widow-guide";
 import { getAllMedicaidArticleSlugs } from "@/data/medicaid-planning";
 import { getAllGrandchildrenArticleSlugs } from "@/data/grandchildren";
@@ -433,6 +434,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // LOCAL CITY PAGES
+  // ============================================
+  const citySlugs = getAllCitySlugs();
+  const cityPages = citySlugs.map(({ state, city }) => ({
+    url: `${baseUrl}/local/${state}/${city}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  // ============================================
   // NEWS ARTICLE PAGES
   // ============================================
   const newsSlugs = getAllNewsSlugs();
@@ -807,6 +819,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...audiencePages,
     ...scenarioPages,
     ...statePages,
+    ...cityPages,
     ...newsPages,
     ...widowGuidePages,
     ...medicaidPages,

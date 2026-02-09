@@ -79,6 +79,10 @@ import { layoffRetirementArticles } from './layoff-retirement-cluster';
 import { retirementPsychologyArticles } from './retirement-psychology-cluster';
 import { goldIraDecisionsArticles } from './gold-ira-decisions-cluster';
 import { custodianFinalArticles } from './custodian-final-cluster';
+import { howGoldBenefitsArticles } from './how-gold-benefits-cluster';
+import { howGoldBenefitsArticles2 } from './how-gold-benefits-cluster-2';
+import { howStrategyArticles } from './how-strategy-cluster';
+import { howStrategyArticles2 } from './how-strategy-cluster-2';
 
 // Merge all articles into one registry
 export const learnArticles: LearnArticleRegistry = {
@@ -157,6 +161,10 @@ export const learnArticles: LearnArticleRegistry = {
   ...retirementPsychologyArticles,
   ...goldIraDecisionsArticles,
   ...custodianFinalArticles,
+  ...howGoldBenefitsArticles,
+  ...howGoldBenefitsArticles2,
+  ...howStrategyArticles,
+  ...howStrategyArticles2,
 };
 
 // ============================================

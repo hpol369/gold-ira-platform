@@ -15,7 +15,9 @@ export type ArticleCategory =
   | 'protection'    // Creditor/government protection
   | 'gold-ira'      // Gold IRA comparisons, fees, minimums
   | 'healthcare'    // Healthcare gap, COBRA, ACA, early retirement health insurance
-  | 'robs';         // ROBS, 401k business financing, franchise funding
+  | 'robs'          // ROBS, 401k business financing, franchise funding
+  | 'how-gold'      // Gold vs X comparisons
+  | 'how-strategy'; // Retirement planning strategies
 
 export type ThreatLevel = 'info' | 'warning' | 'critical';
 
@@ -181,6 +183,16 @@ export const categoryMeta: Record<ArticleCategory, { label: string; color: IconC
     label: 'ROBS & Business Financing',
     color: 'amber',
     description: '401k business financing, franchise funding, ROBS strategies'
+  },
+  'how-gold': {
+    label: 'Gold Comparisons',
+    color: 'amber',
+    description: 'How gold compares to other investments'
+  },
+  'how-strategy': {
+    label: 'Retirement Strategy',
+    color: 'green',
+    description: 'Strategic retirement planning guides'
   },
 };
 

@@ -519,6 +519,696 @@ export const audiences: Record<string, AudienceData> = {
       },
     ],
   },
+  firefighters: {
+    slug: "firefighters",
+    title: "Firefighters",
+    metaTitle: "Best Gold IRA for Firefighters (2026) | Pension & Deferred Comp Guide",
+    metaDescription:
+      "Firefighters: protect your pension and deferred comp with a Gold IRA. Learn rollover strategies designed for first responders.",
+    heroHeadline: "You Run Into Danger. Let Gold Protect Your Future.",
+    heroSubheadline:
+      "Firefighters deserve bulletproof retirement plans. Diversify your pension and deferred comp with physical gold.",
+    painPoints: [
+      "Municipal pension systems facing funding shortfalls",
+      "Deferred compensation plans have limited investment options",
+      "Early retirement age means more years to fund",
+      "Disability risk makes backup savings critical",
+    ],
+    benefits: [
+      "Diversify beyond your city's pension system",
+      "Roll over deferred comp into Gold IRA at retirement",
+      "Physical assets independent of municipal finances",
+      "Hedge against inflation on fixed pension payments",
+    ],
+    specificAdvice:
+      "Firefighters often retire in their 50s with a pension that doesn't keep pace with inflation. A Gold IRA funded by rolling over your 457(b) deferred compensation at retirement provides a critical inflation hedge. We recommend allocating 15-25% of your deferred comp to gold to protect purchasing power over a potentially 30+ year retirement.",
+    relatedLinks: [
+      { title: "457b to Gold IRA Rollover", href: "/guide/457b-to-gold-ira-rollover" },
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+      { title: "Augusta Precious Metals Review", href: "/reviews/augusta-precious-metals" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I roll over my 457(b) deferred comp into a Gold IRA?",
+        answer:
+          "Yes! Once you separate from service (retire or leave the department), you can roll over your 457(b) into a Gold IRA tax-free. Some plans even allow in-service rollovers at certain ages.",
+      },
+      {
+        question: "Will a Gold IRA affect my fire department pension?",
+        answer:
+          "No. Your pension is completely separate from any IRA or deferred comp accounts. A Gold IRA is an additional layer of protection, not a replacement.",
+      },
+      {
+        question: "I'm retiring at 52—is a Gold IRA a good idea?",
+        answer:
+          "Absolutely. Early retirement means more years to fund and more exposure to inflation. Gold has historically maintained purchasing power over decades, making it ideal for a 30+ year retirement.",
+      },
+    ],
+  },
+  nurses: {
+    slug: "nurses",
+    title: "Nurses",
+    metaTitle: "Best Gold IRA for Nurses (2026) | 403b & Pension Rollover Guide",
+    metaDescription:
+      "Nurses: learn how to diversify your 403b and hospital pension with a Gold IRA. Protect your hard-earned retirement savings.",
+    heroHeadline: "You Care for Everyone Else. Now Protect Your Own Future.",
+    heroSubheadline:
+      "Roll over your 403b or hospital pension into gold. You've earned rock-solid retirement security.",
+    painPoints: [
+      "Hospital 403b plans have limited fund choices",
+      "Nursing burnout leads to earlier-than-planned retirement",
+      "Shift differentials end at retirement—fixed income begins",
+      "Healthcare workers often prioritize others over own finances",
+    ],
+    benefits: [
+      "Diversify beyond your hospital's 403b options",
+      "Physical gold protects against healthcare cost inflation",
+      "Easy rollover from previous employer 403b plans",
+      "Tangible assets that grow independently of the stock market",
+    ],
+    specificAdvice:
+      "Nurses often accumulate 403b balances across multiple hospital systems. Rolling old 403b accounts into a Gold IRA consolidates your retirement and adds diversification. We recommend 15-20% in gold, especially if your hospital pension is your primary retirement income—gold hedges against inflation eroding that fixed payment.",
+    relatedLinks: [
+      { title: "403b to Gold IRA Rollover", href: "/rollover/403b-to-gold-ira" },
+      { title: "Gold IRA Tax Rules", href: "/learn/gold-ira-tax-rules" },
+      { title: "Compare Top Companies", href: "/compare" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I roll over my hospital 403b while still working?",
+        answer:
+          "It depends on your plan rules. Many 403b plans allow in-service rollovers once you reach 59½. For 403b accounts from previous employers, you can roll over at any time.",
+      },
+      {
+        question: "I'm a travel nurse with multiple 403b accounts—what should I do?",
+        answer:
+          "Consolidation is key. You can roll over old 403b accounts from previous hospitals into a single Gold IRA, simplifying management while adding gold diversification.",
+      },
+      {
+        question: "How does a Gold IRA protect against healthcare inflation?",
+        answer:
+          "Healthcare costs rise 5-7% annually—faster than general inflation. Gold has historically outpaced inflation over long periods, helping preserve purchasing power for medical expenses in retirement.",
+      },
+    ],
+  },
+  "police-officers": {
+    slug: "police-officers",
+    title: "Police Officers",
+    metaTitle: "Best Gold IRA for Police Officers (2026) | Pension Protection Guide",
+    metaDescription:
+      "Police officers: protect your retirement beyond your pension. Learn how a Gold IRA can safeguard your deferred comp and savings.",
+    heroHeadline: "Protect and Serve Your Retirement",
+    heroSubheadline:
+      "You've protected your community. Now protect your pension with physical gold diversification.",
+    painPoints: [
+      "Police pensions depend on city/county financial health",
+      "Early retirement means decades of living on fixed income",
+      "Deferred comp plans offer limited investment choices",
+      "High-stress career makes financial security essential",
+    ],
+    benefits: [
+      "Independence from municipal pension funding risks",
+      "Roll over 457(b) deferred comp into Gold IRA",
+      "Inflation protection for 30+ year retirements",
+      "Tangible assets outside the financial system",
+    ],
+    specificAdvice:
+      "Law enforcement officers typically retire in their early 50s with a pension. But 30+ years of retirement means inflation can cut your purchasing power in half. Rolling your 457(b) deferred compensation into a Gold IRA at retirement adds critical inflation protection. Consider allocating 20% to gold.",
+    relatedLinks: [
+      { title: "457b to Gold IRA Rollover", href: "/guide/457b-to-gold-ira-rollover" },
+      { title: "Protect 401k from Crash", href: "/guide/protect-401k-from-crash" },
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I roll over my police pension into a Gold IRA?",
+        answer:
+          "Defined benefit pensions generally can't be rolled over. However, your 457(b) deferred comp, any 401(a) plans, or DROP program lump sums can be rolled into a Gold IRA tax-free at retirement.",
+      },
+      {
+        question: "What about my DROP lump sum?",
+        answer:
+          "DROP (Deferred Retirement Option Plan) lump sums are perfect candidates for a Gold IRA rollover. This one-time distribution can be rolled over tax-free, converting paper assets into physical gold.",
+      },
+      {
+        question: "I retire at 50—should I worry about early withdrawal penalties?",
+        answer:
+          "Not with a rollover. When you roll over retirement funds into a Gold IRA, there's no early withdrawal penalty. You can begin taking distributions penalty-free from the Gold IRA using the Rule of 55 or 72(t) exceptions.",
+      },
+    ],
+  },
+  doctors: {
+    slug: "doctors",
+    title: "Doctors & Physicians",
+    metaTitle: "Best Gold IRA for Doctors (2026) | High-Income Retirement Strategy",
+    metaDescription:
+      "Physicians: diversify your retirement beyond stocks with a Gold IRA. Strategies for high-income professionals with $500K+ portfolios.",
+    heroHeadline: "Prescribe Yourself Financial Security",
+    heroSubheadline:
+      "High-income physicians need sophisticated diversification. Gold protects the wealth you've worked decades to build.",
+    painPoints: [
+      "Large portfolios heavily concentrated in equities",
+      "Late career start due to medical training and debt",
+      "High income means high tax exposure in retirement",
+      "Malpractice and liability risks threaten accumulated wealth",
+    ],
+    benefits: [
+      "Diversify large portfolios with uncorrelated assets",
+      "Asset protection—Gold IRAs have creditor protections",
+      "Tax-advantaged growth on physical gold",
+      "Hedge against the market concentration in your 401k/403b",
+    ],
+    specificAdvice:
+      "Physicians often have large 401k/403b balances concentrated in equity funds. A Gold IRA rollover adds true diversification with an asset that's uncorrelated to stocks. For portfolios over $500K, we recommend 10-20% in gold. Consider a Roth Gold IRA conversion to reduce future tax exposure.",
+    relatedLinks: [
+      { title: "Gold IRA for High Net Worth", href: "/best-gold-ira-for/high-net-worth" },
+      { title: "Roth Gold IRA Guide", href: "/rollover/roth-ira-to-gold-ira" },
+      { title: "Augusta Precious Metals", href: "/reviews/augusta-precious-metals" },
+    ],
+    faqQuestions: [
+      {
+        question: "I have $1M+ in retirement accounts—how much should go to gold?",
+        answer:
+          "For portfolios over $1M, financial advisors typically recommend 10-15% in precious metals. This provides meaningful diversification without sacrificing growth potential. That's $100K-$150K in gold, which qualifies for premium service and segregated storage.",
+      },
+      {
+        question: "Can I protect my Gold IRA from malpractice lawsuits?",
+        answer:
+          "IRA assets receive varying levels of creditor protection depending on your state. Federal law protects up to approximately $1.5M in IRA assets from bankruptcy. Consult with your asset protection attorney about your state's specific protections.",
+      },
+      {
+        question: "I'm still paying off medical school loans—should I wait?",
+        answer:
+          "If you have retirement savings in a 401k or 403b from a previous employer and it exceeds $50K, you can roll that into a Gold IRA now. This doesn't affect your loan payments and adds diversification you likely lack.",
+      },
+    ],
+  },
+  "age-50": {
+    slug: "age-50",
+    title: "Age 50",
+    metaTitle: "Best Gold IRA at Age 50 (2026) | 15-Year Retirement Strategy",
+    metaDescription:
+      "Turning 50? Learn how a Gold IRA can protect your retirement savings during the critical 15 years before retirement.",
+    heroHeadline: "50 Is the New Starting Line for Retirement Protection",
+    heroSubheadline:
+      "You have 15 years to fortify your retirement. Make every year count with gold diversification.",
+    painPoints: [
+      "Peak earning years but retirement feels suddenly close",
+      "One major market crash could devastate your timeline",
+      "Catch-up contributions alone may not be enough",
+      "Social Security uncertainty adds pressure to save more",
+    ],
+    benefits: [
+      "Catch-up contributions: extra $7,500/year to IRA after 50",
+      "15 years of gold appreciation potential",
+      "Protection against the next inevitable market crash",
+      "Still time to build a meaningful gold position",
+    ],
+    specificAdvice:
+      "At 50, you're in the sweet spot—enough time for gold to appreciate but close enough to retirement that crash protection matters. Start with 15% in gold and increase to 20-25% as you approach 60. Take advantage of catch-up contributions to accelerate your gold position.",
+    relatedLinks: [
+      { title: "Retirement Planning at 50", href: "/learn/retirement-planning-at-50" },
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+      { title: "401k to Gold Rollover", href: "/guide/401k-to-gold-rollover" },
+    ],
+    faqQuestions: [
+      {
+        question: "Is 50 too late to start a Gold IRA?",
+        answer:
+          "Not at all. 50 is actually an ideal time. You likely have significant retirement savings to roll over, and 15 years provides ample time for gold to protect and grow. Many of our most satisfied clients started at 50.",
+      },
+      {
+        question: "How much should I allocate to gold at age 50?",
+        answer:
+          "Financial experts recommend 15-20% of your retirement portfolio in precious metals at age 50. This provides meaningful crash protection while maintaining growth potential from your other investments.",
+      },
+      {
+        question: "Can I use catch-up contributions for a Gold IRA?",
+        answer:
+          "Yes! After age 50, you can contribute an extra $7,500 per year to your IRA (2024 limits). You can direct these catch-up contributions into a Gold IRA, accelerating your precious metals allocation.",
+      },
+    ],
+  },
+  "age-55": {
+    slug: "age-55",
+    title: "Age 55",
+    metaTitle: "Best Gold IRA at Age 55 (2026) | Decade-to-Retirement Guide",
+    metaDescription:
+      "At 55, retirement is just 10 years away. Learn how a Gold IRA can protect your savings during this critical decade.",
+    heroHeadline: "55 and Counting? Lock Down Your Retirement Now.",
+    heroSubheadline:
+      "With a decade until retirement, crash protection becomes essential. Gold provides the safety net you need.",
+    painPoints: [
+      "A 2008-style crash now could delay retirement by years",
+      "Sequence-of-returns risk is real at this stage",
+      "Pension cuts and Social Security uncertainty",
+      "Healthcare gap before Medicare at 65 requires more savings",
+    ],
+    benefits: [
+      "Rule of 55 allows penalty-free 401k withdrawals",
+      "Gold protects against sequence-of-returns risk",
+      "10 years of compound protection before retirement",
+      "Physical assets can't go bankrupt",
+    ],
+    specificAdvice:
+      "At 55, protecting what you have becomes as important as growing it. A market crash now could push retirement back 5-7 years. We recommend shifting 20-25% into gold. If you leave your employer, the Rule of 55 lets you access 401k funds penalty-free—consider rolling a portion into a Gold IRA.",
+    relatedLinks: [
+      { title: "Retirement Planning at 55", href: "/learn/retirement-planning-at-55" },
+      { title: "Protect 401k from Crash", href: "/guide/protect-401k-from-crash" },
+      { title: "Compare Top Companies", href: "/compare" },
+    ],
+    faqQuestions: [
+      {
+        question: "What is the Rule of 55 and how does it help?",
+        answer:
+          "If you leave your employer at age 55 or later, you can access your 401k penalty-free (normally you'd pay 10% before 59½). This makes it an ideal time to roll a portion into a Gold IRA without penalties or taxes.",
+      },
+      {
+        question: "Should I shift more to gold as I approach retirement?",
+        answer:
+          "Yes. The closer you are to retirement, the more devastating a market crash becomes. At 55, financial advisors recommend 20-25% in precious metals, increasing slightly each year toward retirement.",
+      },
+      {
+        question: "What is sequence-of-returns risk?",
+        answer:
+          "It's the risk that poor market returns in the first years of retirement permanently damage your portfolio. Gold helps mitigate this by providing stable assets you can draw from if stocks crash early in retirement.",
+      },
+    ],
+  },
+  "age-60": {
+    slug: "age-60",
+    title: "Age 60",
+    metaTitle: "Best Gold IRA at Age 60 (2026) | Pre-Retirement Protection Guide",
+    metaDescription:
+      "Age 60 and approaching retirement? A Gold IRA provides the crash protection you need in these final pre-retirement years.",
+    heroHeadline: "60 and Retirement-Ready? Don't Let a Crash Ruin It.",
+    heroSubheadline:
+      "You're 5 years from the finish line. One bad crash could erase decades of saving. Gold is your insurance.",
+    painPoints: [
+      "Can't afford to lose 30-40% in a market crash this close to retirement",
+      "Recovery time from a crash is now just 5 years or less",
+      "Social Security timing decisions approaching",
+      "Healthcare costs until Medicare are a major concern",
+    ],
+    benefits: [
+      "Maximum crash protection at the most vulnerable moment",
+      "Gold provides stable assets to bridge to Social Security",
+      "No RMDs yet—optimal time to position gold",
+      "Penalty-free IRA access at 59½ provides flexibility",
+    ],
+    specificAdvice:
+      "At 60, capital preservation is paramount. You can't afford a 2008 repeat with only 5 years to recover. We recommend 25-30% in gold. Since you're past 59½, you can access your IRA penalty-free, making a Gold IRA rollover seamless. Consider this your retirement insurance policy.",
+    relatedLinks: [
+      { title: "Retirement Planning at 60", href: "/learn/retirement-planning-at-60" },
+      { title: "Gold IRA for Retirees", href: "/best-gold-ira-for/retirees" },
+      { title: "RMD Calculator", href: "/tools/rmd-calculator" },
+    ],
+    faqQuestions: [
+      {
+        question: "Is 25-30% in gold too much at age 60?",
+        answer:
+          "Not at all. Many financial advisors recommend increasing precious metals allocation as you approach retirement. At 60, protecting against a crash is more important than maximum growth. 25-30% in gold provides strong downside protection.",
+      },
+      {
+        question: "Should I do the rollover before or after I retire?",
+        answer:
+          "If your employer allows in-service rollovers (many do after age 59½), do it now to get protection in place. If not, plan to roll over immediately upon retirement before the next market downturn.",
+      },
+      {
+        question: "How does this affect my Social Security timing?",
+        answer:
+          "Having gold as a stable asset pool can allow you to delay Social Security to age 67 or even 70, increasing your monthly benefit by 24-32%. You draw from gold while waiting for the higher Social Security payout.",
+      },
+    ],
+  },
+  "age-65": {
+    slug: "age-65",
+    title: "Age 65",
+    metaTitle: "Best Gold IRA at Age 65 (2026) | Retirement Income Protection",
+    metaDescription:
+      "Just retired at 65? Protect your nest egg with a Gold IRA. Learn strategies for preserving wealth through a 20+ year retirement.",
+    heroHeadline: "Retired at 65? Now the Real Protection Begins.",
+    heroSubheadline:
+      "You'll spend 20-30 years in retirement. Gold ensures your savings last as long as you do.",
+    painPoints: [
+      "20-30 years of retirement to fund from savings",
+      "Inflation will double prices over 20 years",
+      "RMDs start at 73—forced to sell into down markets",
+      "Healthcare costs average $315,000 per retired couple",
+    ],
+    benefits: [
+      "Inflation hedge for 20+ years of rising costs",
+      "Stable assets to sell during market downturns",
+      "Roth Gold IRA avoids RMD requirements",
+      "Physical gold passes to heirs tax-efficiently",
+    ],
+    specificAdvice:
+      "At 65, your priority shifts to making your money last. Gold provides a stable asset pool you can draw from when stocks are down, avoiding selling low. We recommend 20-25% in gold, with a Roth Gold IRA to avoid RMDs at 73. This gives you maximum flexibility in managing withdrawals.",
+    relatedLinks: [
+      { title: "Retirement Planning at 65", href: "/learn/retirement-planning-at-65" },
+      { title: "Gold IRA RMD Rules", href: "/learn/gold-ira-tax-rules" },
+      { title: "Estate Planning", href: "/best-gold-ira-for/estate-planning" },
+    ],
+    faqQuestions: [
+      {
+        question: "Is it too late to start a Gold IRA at 65?",
+        answer:
+          "Absolutely not. With 20-30 years of retirement ahead, gold's inflation protection is more valuable than ever. Many retirees open Gold IRAs at 65 to protect against the rising costs they'll face over the next two decades.",
+      },
+      {
+        question: "How do RMDs work with a Gold IRA?",
+        answer:
+          "Traditional Gold IRAs have the same RMD rules as regular IRAs—starting at age 73. You can satisfy RMDs by selling gold or taking an in-kind distribution of physical metals. A Roth Gold IRA has no RMDs.",
+      },
+      {
+        question: "Can I still contribute to a Gold IRA at 65?",
+        answer:
+          "Yes, if you have earned income. You can contribute up to $8,000/year (with catch-up) to an IRA. You can also roll over unlimited amounts from old 401k/403b/TSP accounts into a Gold IRA.",
+      },
+    ],
+  },
+  "age-70": {
+    slug: "age-70",
+    title: "Age 70",
+    metaTitle: "Best Gold IRA at Age 70 (2026) | Legacy & Wealth Preservation",
+    metaDescription:
+      "At 70, protect your retirement savings and build a legacy. Learn how a Gold IRA preserves wealth through inflation and market cycles.",
+    heroHeadline: "70 and Focused on What Matters: Preservation & Legacy",
+    heroSubheadline:
+      "Protect your savings from inflation and leave tangible wealth for your family.",
+    painPoints: [
+      "RMDs force selling assets even in bad markets",
+      "Inflation has already eroded significant purchasing power",
+      "Want to leave a meaningful inheritance",
+      "Market volatility feels increasingly dangerous",
+    ],
+    benefits: [
+      "Roth Gold IRA eliminates RMD requirements",
+      "Physical gold is a tangible inheritance for heirs",
+      "Gold holds value through inflationary periods",
+      "Peace of mind with real, physical assets",
+    ],
+    specificAdvice:
+      "At 70, a Roth conversion to a Gold IRA can be powerful—you eliminate future RMDs while giving heirs tax-free physical gold. Even with RMDs, a Gold IRA provides stability. Allocate 20-30% to gold, focusing on wealth preservation and legacy planning over growth.",
+    relatedLinks: [
+      { title: "Estate Planning with Gold", href: "/best-gold-ira-for/estate-planning" },
+      { title: "RMD Calculator", href: "/tools/rmd-calculator" },
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I open a Gold IRA at 70?",
+        answer:
+          "Yes. There is no age limit for opening or funding a Gold IRA. You can roll over existing IRA or 401k funds at any age. Many clients in their 70s and 80s open Gold IRAs for wealth preservation and estate planning.",
+      },
+      {
+        question: "How do I handle RMDs with gold?",
+        answer:
+          "You can satisfy RMDs from a Gold IRA by selling gold for cash or taking an in-kind distribution of physical metals. Alternatively, a Roth Gold IRA conversion eliminates RMDs entirely.",
+      },
+      {
+        question: "Is gold a good inheritance for my children?",
+        answer:
+          "Physical gold is an excellent inheritance. It's tangible, has held value for millennia, and when held in a Roth Gold IRA, passes to heirs completely tax-free. It's wealth they can hold in their hands.",
+      },
+    ],
+  },
+  "small-business-owners": {
+    slug: "small-business-owners",
+    title: "Small Business Owners",
+    metaTitle: "Best Gold IRA for Small Business Owners (2026) | SEP & Solo 401k",
+    metaDescription:
+      "Small business owners: maximize retirement savings with SEP Gold IRA or Solo 401k. Higher limits and more control over your investments.",
+    heroHeadline: "You Built Your Business. Now Build an Unshakeable Retirement.",
+    heroSubheadline:
+      "Higher contribution limits. Tax deductions. Physical gold. The entrepreneur's retirement playbook.",
+    painPoints: [
+      "Business value tied to one asset—need diversification",
+      "No employer match means every dollar must work harder",
+      "Business risks shouldn't threaten retirement",
+      "Variable income makes consistent saving challenging",
+    ],
+    benefits: [
+      "SEP IRA: up to $69,000/year in tax-deductible contributions",
+      "Solo 401k: employee + employer contributions for maximum savings",
+      "Separate retirement assets from business liabilities",
+      "Flexible contribution amounts year to year",
+    ],
+    specificAdvice:
+      "As a business owner, your biggest risk is having all your wealth in one basket—your business. A SEP Gold IRA lets you shelter up to $69,000/year while building assets completely independent of your business. In good years, max out contributions with gold. This gives you a retirement that survives even if your business doesn't.",
+    relatedLinks: [
+      { title: "SEP IRA Rollover", href: "/rollover/sep-ira-to-gold-ira" },
+      { title: "Solo 401k Guide", href: "/solo-401k" },
+      { title: "Self-Employed Gold IRA", href: "/best-gold-ira-for/self-employed" },
+    ],
+    faqQuestions: [
+      {
+        question: "SEP IRA vs Solo 401k—which is better for gold?",
+        answer:
+          "Both work excellently. SEP IRAs are simpler to set up and maintain. Solo 401k allows higher total contributions (employee + employer) and Roth contributions. If simplicity matters, go SEP. If you want maximum flexibility, go Solo 401k.",
+      },
+      {
+        question: "Can I have both a business retirement plan and a Gold IRA?",
+        answer:
+          "Yes! You can maintain your SEP or Solo 401k while also having a separate Gold IRA. Alternatively, you can invest your SEP/Solo 401k directly in gold through a self-directed custodian.",
+      },
+      {
+        question: "What if my business has a bad year?",
+        answer:
+          "That's the beauty of SEP IRAs—contributions are optional and flexible. In lean years, contribute less or nothing. In profitable years, maximize contributions. Your Gold IRA continues to protect your savings regardless.",
+      },
+    ],
+  },
+  "union-workers": {
+    slug: "union-workers",
+    title: "Union Workers",
+    metaTitle: "Best Gold IRA for Union Workers (2026) | Pension & Annuity Guide",
+    metaDescription:
+      "Union members: protect your retirement beyond your union pension. Learn how a Gold IRA adds security to your multiemployer pension and annuity.",
+    heroHeadline: "Your Union Fought for Your Pension. Gold Protects It.",
+    heroSubheadline:
+      "Multiemployer pensions face challenges. Add gold as your personal backup plan.",
+    painPoints: [
+      "Multiemployer pension plans face funding challenges",
+      "PBGC guarantees are lower for multiemployer plans",
+      "Annuity payouts don't increase with inflation",
+      "Limited control over union pension investments",
+    ],
+    benefits: [
+      "Personal assets you control, independent of union finances",
+      "Inflation hedge for fixed pension and annuity payments",
+      "Roll over old 401k or individual savings into Gold IRA",
+      "Physical gold can't be affected by pension plan decisions",
+    ],
+    specificAdvice:
+      "Union workers with multiemployer pensions should consider a Gold IRA as a personal safety net. While your pension provides a foundation, gold adds protection against inflation and pension funding risks. Roll over any 401k from previous non-union work or fund a new Gold IRA with annual contributions.",
+    relatedLinks: [
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+      { title: "Protect 401k from Crash", href: "/guide/protect-401k-from-crash" },
+      { title: "Compare Companies", href: "/compare" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I roll over my union pension into a Gold IRA?",
+        answer:
+          "Defined benefit pensions typically can't be rolled over while active. However, if your union also offers a 401(k) or 401(a), those can be rolled over when you leave or retire. You can also fund a Gold IRA separately.",
+      },
+      {
+        question: "Is my multiemployer pension safe?",
+        answer:
+          "The PBGC's multiemployer program has faced challenges, though recent legislation has helped. A Gold IRA provides personal backup protection independent of your plan's funding status.",
+      },
+      {
+        question: "I'm in a trade union—how much should I put in gold?",
+        answer:
+          "If your pension is well-funded, 15-20% in gold provides good diversification. If your plan has funding concerns, consider 20-25% for additional protection against potential benefit cuts.",
+      },
+    ],
+  },
+  "truck-drivers": {
+    slug: "truck-drivers",
+    title: "Truck Drivers",
+    metaTitle: "Best Gold IRA for Truck Drivers (2026) | Teamsters & Owner-Operators",
+    metaDescription:
+      "Truck drivers: protect your retirement with a Gold IRA. Strategies for Teamsters pension holders and owner-operators alike.",
+    heroHeadline: "You've Hauled the Load. Now Secure Your Retirement.",
+    heroSubheadline:
+      "Whether you're Teamsters or owner-operator, gold adds the financial security every trucker deserves.",
+    painPoints: [
+      "Teamsters Central States pension had significant cuts",
+      "Owner-operators have no employer retirement plan",
+      "Physical demands limit career longevity",
+      "Irregular income for independent drivers",
+    ],
+    benefits: [
+      "Personal retirement assets independent of Teamsters pension",
+      "SEP IRA option for owner-operators ($69K/year limit)",
+      "Physical gold as inflation hedge for fixed pension income",
+      "Simple setup—managed for you while you're on the road",
+    ],
+    specificAdvice:
+      "Truck drivers face unique retirement challenges. Teamsters members should treat a Gold IRA as backup protection for their pension. Owner-operators can use a SEP Gold IRA to shelter up to $69,000/year tax-free. Either way, gold provides security you control, regardless of what happens to pension plans or the trucking industry.",
+    relatedLinks: [
+      { title: "SEP IRA Rollover", href: "/rollover/sep-ira-to-gold-ira" },
+      { title: "Self-Employed Gold IRA", href: "/best-gold-ira-for/self-employed" },
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+    ],
+    faqQuestions: [
+      {
+        question: "I'm a Teamster—can I also have a Gold IRA?",
+        answer:
+          "Yes! Your Teamsters pension and a Gold IRA are completely separate. You can fund a Gold IRA with personal savings, roll over a 401k from previous non-Teamsters work, or both.",
+      },
+      {
+        question: "I'm an owner-operator—what's my best option?",
+        answer:
+          "A SEP Gold IRA is ideal. You can contribute up to 25% of net self-employment income (max $69,000). Contributions are tax-deductible, reducing your tax burden while building gold-backed retirement savings.",
+      },
+      {
+        question: "I'm on the road all the time—is this complicated to manage?",
+        answer:
+          "Not at all. The Gold IRA company handles everything—account setup, gold purchases, and secure storage. You can manage your account with a phone call or online. It's designed for busy professionals.",
+      },
+    ],
+  },
+  "government-employees": {
+    slug: "government-employees",
+    title: "Government Employees",
+    metaTitle: "Best Gold IRA for Government Employees (2026) | TSP & Pension Guide",
+    metaDescription:
+      "State and local government employees: diversify your retirement beyond TSP and pensions. Learn Gold IRA strategies for public servants.",
+    heroHeadline: "Public Service Deserves Private Retirement Security",
+    heroSubheadline:
+      "Your pension and deferred comp are a great start. Gold IRA completes the picture.",
+    painPoints: [
+      "State/local pensions vary widely in funding levels",
+      "457(b) deferred comp has limited investment options",
+      "Government pay often trails private sector",
+      "Budget cuts can affect pension promises",
+    ],
+    benefits: [
+      "Tax-free 457(b) to Gold IRA rollover at retirement",
+      "Independence from state/local government finances",
+      "Inflation protection for fixed pension payments",
+      "No early withdrawal penalty on 457(b) rollovers",
+    ],
+    specificAdvice:
+      "State and local government employees can roll over their 457(b) deferred compensation into a Gold IRA at separation—with no early withdrawal penalty regardless of age. This is a major advantage. We recommend rolling over 20-25% into gold, especially if your state pension plan has below-average funding.",
+    relatedLinks: [
+      { title: "Federal Employees", href: "/best-gold-ira-for/federal-employees" },
+      { title: "457b Rollover Guide", href: "/guide/457b-to-gold-ira-rollover" },
+      { title: "Compare Companies", href: "/compare" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I roll over my 457(b) while still employed?",
+        answer:
+          "Most governmental 457(b) plans allow rollovers only at separation. However, some plans permit in-service rollovers. Check with your plan administrator. The big advantage: no 10% early withdrawal penalty at any age.",
+      },
+      {
+        question: "Is my state pension at risk?",
+        answer:
+          "Pension funding varies dramatically by state. Some states are well-funded (Wisconsin, South Dakota) while others face challenges. A Gold IRA provides personal protection regardless of your state's fiscal health.",
+      },
+      {
+        question: "I have both a pension and a 457(b)—what should I do?",
+        answer:
+          "Your pension provides the income foundation. Roll over a portion of your 457(b) into a Gold IRA for inflation protection and diversification. This gives you three income streams: pension, Social Security, and gold-backed savings.",
+      },
+    ],
+  },
+  divorced: {
+    slug: "divorced",
+    title: "Divorced Individuals",
+    metaTitle: "Best Gold IRA After Divorce (2026) | Rebuild Your Retirement",
+    metaDescription:
+      "Divorced and rebuilding retirement? A Gold IRA can help you protect your settlement and build independent financial security.",
+    heroHeadline: "Starting Over? Build a Retirement That's Truly Yours.",
+    heroSubheadline:
+      "After divorce, your financial future is in your hands. Gold provides the stability you need to rebuild.",
+    painPoints: [
+      "Retirement savings split in divorce settlement",
+      "Starting over with a smaller nest egg",
+      "Need to catch up on retirement savings quickly",
+      "Want financial independence and security",
+    ],
+    benefits: [
+      "QDRO transfers into Gold IRA are tax-free",
+      "Independent assets in your name only",
+      "Catch-up contributions after 50 to rebuild faster",
+      "Tangible wealth that provides emotional security",
+    ],
+    specificAdvice:
+      "If you received retirement assets through a QDRO (Qualified Domestic Relations Order) in your divorce, you can roll them directly into a Gold IRA tax-free. This is an excellent opportunity to diversify into gold while rebuilding. We recommend putting 20-25% of your settlement in gold for stability while you rebuild.",
+    relatedLinks: [
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+      { title: "Gold IRA Tax Rules", href: "/learn/gold-ira-tax-rules" },
+      { title: "Women's Guide", href: "/best-gold-ira-for/women" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I roll over my QDRO funds into a Gold IRA?",
+        answer:
+          "Yes! Funds received through a QDRO can be rolled directly into an IRA, including a Gold IRA, completely tax-free. This is one of the most efficient ways to transition divorce settlement funds into gold.",
+      },
+      {
+        question: "I'm starting over at 55 with half my savings—what should I do?",
+        answer:
+          "Focus on protection and catch-up. A Gold IRA protects what you have while catch-up contributions ($7,500/year extra after 50) help you rebuild. Gold's stability means you won't lose more ground to market volatility.",
+      },
+      {
+        question: "Is it better to invest my settlement in stocks or gold?",
+        answer:
+          "Both. But after a life upheaval like divorce, the stability of gold is psychologically and financially valuable. We recommend 20-25% in gold for protection, with the rest in growth investments to rebuild your portfolio.",
+      },
+    ],
+  },
+  "widows-widowers": {
+    slug: "widows-widowers",
+    title: "Widows & Widowers",
+    metaTitle: "Best Gold IRA for Widows & Widowers (2026) | Inherited IRA Guide",
+    metaDescription:
+      "Recently widowed? Learn how to protect inherited retirement accounts with a Gold IRA. Compassionate guidance for your financial future.",
+    heroHeadline: "Honoring Their Legacy. Securing Your Future.",
+    heroSubheadline:
+      "Protecting inherited retirement savings with the stability and permanence of physical gold.",
+    painPoints: [
+      "Suddenly managing finances alone for the first time",
+      "Inherited IRA/401k decisions feel overwhelming",
+      "Worried about making costly mistakes with inheritance",
+      "Living on one income instead of two",
+    ],
+    benefits: [
+      "Spousal inherited IRA can roll into your own Gold IRA",
+      "No rush—take time to decide with stable gold assets",
+      "Physical gold provides emotional and financial security",
+      "Simplified management with professional custodian",
+    ],
+    specificAdvice:
+      "As a surviving spouse, you have a unique advantage: you can roll your spouse's IRA into your own name and then into a Gold IRA. Take your time—there's no deadline for the rollover. When you're ready, gold provides stability during this transition. We recommend 20-25% in gold, providing a stable foundation while you adjust to new financial realities.",
+    relatedLinks: [
+      { title: "Widow's Financial Guide", href: "/widow-guide" },
+      { title: "Inherited IRA Rules", href: "/learn/gold-ira-tax-rules" },
+      { title: "Gold IRA Guide", href: "/guide/gold-ira-guide" },
+    ],
+    faqQuestions: [
+      {
+        question: "Can I roll my spouse's IRA into a Gold IRA?",
+        answer:
+          "Yes. As a surviving spouse, you can treat the inherited IRA as your own and roll it into a Gold IRA. This is the most flexible option and gives you full control over distributions and investment choices.",
+      },
+      {
+        question: "Is there a deadline for the rollover?",
+        answer:
+          "No. As a surviving spouse, there's no time limit for rolling over an inherited IRA into your own. Take whatever time you need to grieve and make informed decisions. The funds remain protected while you decide.",
+      },
+      {
+        question: "I've never managed investments before—can I handle a Gold IRA?",
+        answer:
+          "Gold IRAs are actually one of the simplest retirement accounts. The company handles all purchases, storage, and paperwork. You just make decisions—and a good company will educate you every step of the way with no pressure.",
+      },
+    ],
+  },
 };
 
 export const audienceSlugs = Object.keys(audiences);

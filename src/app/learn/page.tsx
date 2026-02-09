@@ -67,6 +67,8 @@ const categoryIcons: Record<ArticleCategory, typeof Shield> = {
   "gold-ira": Coins,
   healthcare: Heart,
   robs: Briefcase,
+  "how-gold": Coins,
+  "how-strategy": Target,
 };
 
 export default function LearnPage() {
