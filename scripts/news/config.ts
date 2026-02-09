@@ -126,6 +126,29 @@ export const CONFIG = {
         enabled: !!process.env.TWITTER_API_KEY,
     },
 
+    // Quote tweet pipeline - quote big accounts tweeting about gold/retirement
+    quoteTweets: {
+        enabled: !!process.env.TWITTER_API_KEY,
+        maxPerDay: 2,
+        keywords: [
+            "gold", "silver", "401k", "401(k)", "retirement", "inflation",
+            "fed", "federal reserve", "interest rate", "dollar", "currency",
+            "precious metals", "ira", "pension", "social security",
+            "recession", "market crash", "economy", "debt",
+        ],
+        // Note: userIds can be populated via Twitter API lookup for timeline access.
+        // Without valid userIds, the pipeline uses search fallback (works on free tier).
+        accounts: [
+            { username: "theRealKiyosaki", userId: "" },
+            { username: "PeterSchiff", userId: "" },
+            { username: "Jim_Rickards", userId: "" },
+            { username: "WallStreetSilv", userId: "" },
+            { username: "FirstMajestic", userId: "" },
+            { username: "RealDonaldTrump", userId: "25073877" },
+            { username: "TuckerCarlson", userId: "" },
+        ],
+    },
+
     // Facebook Page API for auto-posting silver articles
     facebook: {
         pageId: process.env.FACEBOOK_PAGE_ID || "",
