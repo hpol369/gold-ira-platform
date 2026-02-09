@@ -19,7 +19,7 @@ import {
   Calendar,
   Wallet,
 } from "lucide-react";
-import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 
 // Provider options
@@ -174,8 +174,6 @@ export default function RiskAnalyzerPage() {
     setBalanceRange("");
     setShowResults(false);
   };
-
-  const affiliateLink = getTrackedLink(AFFILIATE_LINKS.augusta, "401k-risk-analyzer", "augusta");
 
   return (
     <main className="min-h-screen bg-white">
@@ -546,15 +544,14 @@ export default function RiskAnalyzerPage() {
                       <p className="text-slate-600 text-sm mb-4">
                         After decades of contributions, you deserve protection. A Gold IRA can shield your savings from the next crash - no matter when it comes.
                       </p>
-                      <a
-                        href={affiliateLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <LeadCaptureButton
+                        variant="gold"
+                        source="401k-risk-analyzer-cta"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-[#B22234] text-slate-900 font-bold text-lg rounded-xl hover:bg-[#8b1c2a] transition-all shadow-lg shadow-amber-500/25"
                       >
                         Get Your Free Gold IRA Guide
                         <ArrowRight className="h-5 w-5" />
-                      </a>
+                      </LeadCaptureButton>
                       <p className="text-slate-500 text-xs mt-3">
                         From Augusta Precious Metals - #1 Rated Gold IRA Company
                       </p>

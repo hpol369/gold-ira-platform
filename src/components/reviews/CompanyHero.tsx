@@ -9,6 +9,7 @@ import { CompanyRating } from "./CompanyRating";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 import { getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 import Link from "next/link";
 import { useMemo } from "react";
 
@@ -18,6 +19,8 @@ interface CompanyHeroProps {
 
 export function CompanyHero({ company }: CompanyHeroProps) {
   const isFeatured = company.featured;
+  const isAugusta = company.slug === "augusta-precious-metals";
+  const { openModal } = useLeadModal();
 
   // Generate a consistent "random" viewer count based on company slug (50-200)
   const viewerCount = useMemo(() => {
@@ -28,6 +31,10 @@ export function CompanyHero({ company }: CompanyHeroProps) {
     }
     return 50 + Math.abs(hash) % 151;
   }, [company.slug]);
+
+  const handleVisitClick = () => {
+    openModal("default", `company-hero-${company.slug}`);
+  };
 
   return (
     <section className={cn(
@@ -90,20 +97,35 @@ export function CompanyHero({ company }: CompanyHeroProps) {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
-              <a
-                href={getTrackedLink(company.affiliateLink, `company-hero-${company.slug}`, company.slug)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(
-                  "inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all",
-                  isFeatured
-                    ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
-                    : "bg-[#000080] text-white hover:bg-[#000060]"
-                )}
-              >
-                Visit {company.name}
-                <ExternalLink className="h-4 w-4" />
-              </a>
+              {isAugusta ? (
+                <button
+                  onClick={handleVisitClick}
+                  className={cn(
+                    "inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all",
+                    isFeatured
+                      ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
+                      : "bg-[#000080] text-white hover:bg-[#000060]"
+                  )}
+                >
+                  Visit {company.name}
+                  <ExternalLink className="h-4 w-4" />
+                </button>
+              ) : (
+                <a
+                  href={getTrackedLink(company.affiliateLink, `company-hero-${company.slug}`, company.slug)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all",
+                    isFeatured
+                      ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
+                      : "bg-[#000080] text-white hover:bg-[#000060]"
+                  )}
+                >
+                  Visit {company.name}
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              )}
               <a
                 href="#verdict"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all"

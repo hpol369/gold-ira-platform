@@ -9,6 +9,7 @@ import { Company } from "@/data/companies";
 import { CompanyRating } from "./CompanyRating";
 import { cn } from "@/lib/utils";
 import { getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 interface CompanyCardProps {
   company: Company;
@@ -24,6 +25,12 @@ export function CompanyCard({
   showCTA = true,
 }: CompanyCardProps) {
   const isFeatured = company.featured || variant === "featured";
+  const isAugusta = company.slug === "augusta-precious-metals";
+  const { openModal } = useLeadModal();
+
+  const handleVisitClick = () => {
+    openModal("default", `company-card-${company.slug}`);
+  };
 
   if (variant === "compact") {
     return (
@@ -140,14 +147,23 @@ export function CompanyCard({
             >
               Read Full Review
             </Link>
-            <a
-              href={getTrackedLink(company.affiliateLink, `company-card-${company.slug}`, company.slug)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 text-center py-3 px-4 rounded-lg font-semibold border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all text-sm"
-            >
-              Visit Website
-            </a>
+            {isAugusta ? (
+              <button
+                onClick={handleVisitClick}
+                className="flex-1 text-center py-3 px-4 rounded-lg font-semibold border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all text-sm"
+              >
+                Visit Website
+              </button>
+            ) : (
+              <a
+                href={getTrackedLink(company.affiliateLink, `company-card-${company.slug}`, company.slug)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 text-center py-3 px-4 rounded-lg font-semibold border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all text-sm"
+              >
+                Visit Website
+              </a>
+            )}
           </div>
         )}
       </div>

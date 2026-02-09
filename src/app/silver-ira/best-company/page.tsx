@@ -20,6 +20,7 @@ import {
     ThumbsUp,
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata = createPageMetadata({
     title: "Best Silver IRA Company 2026: Our #1 Pick Revealed",
@@ -219,11 +220,9 @@ export default function BestSilverIraCompanyPage() {
                                 Zero BBB complaints, transparent pricing, lifetime customer support, and the industry's best educational resources. Augusta sets the standard for Silver IRA service.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
-                                    <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "best-silver-company", "augusta-winner")} target="_blank" rel="noopener noreferrer">
-                                        Get Free Silver IRA Kit <ArrowRight className="ml-2 h-5 w-5" />
-                                    </a>
-                                </Button>
+                                <LeadCaptureButton variant="default" source="best-silver-company" className="bg-[#B22234] hover:bg-[#8b1c2a] text-white px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                    Get Free Silver IRA Kit <ArrowRight className="ml-2 h-5 w-5" />
+                                </LeadCaptureButton>
                                 <Button variant="outline" size="xl" className="border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
                                     <Link href="/reviews/augusta-precious-metals">Read Full Review</Link>
                                 </Button>

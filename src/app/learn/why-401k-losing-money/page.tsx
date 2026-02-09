@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Why Is My 401k Losing Money? Causes & Solutions",
@@ -580,15 +580,9 @@ export default function Why401kLosingMoneyPage() {
                                 <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Take Control of Your Retirement</h3>
                                 <p className="mb-6 text-slate-600 max-w-xl mx-auto">Don&apos;t let market volatility derail your retirement plans. Learn how gold can provide the stability your portfolio needs.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
-                                        <a
-                                            href={getTrackedLink(AFFILIATE_LINKS.augusta, "why-401k-losing-money", "augusta")}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Get Free Gold IRA Guide <ArrowRight className="ml-2 w-5 h-5" />
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton variant="default" source="learn-why-401k" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                        Get Free Gold IRA Guide <ArrowRight className="ml-2 w-5 h-5" />
+                                    </LeadCaptureButton>
                                     <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/tools/401k-risk-analyzer">Analyze Your 401k Risk</Link>
                                     </Button>

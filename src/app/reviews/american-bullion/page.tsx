@@ -1,13 +1,12 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -56,7 +55,7 @@ export default function AmericanBullionReviewPage() {
                                 rating={4.2}
                                 isRecommended={true}
                                 bottomLine="American Bullion is a solid, experienced player with a long track record and A+ BBB rating. They know what they're doing. The tradeoff: their website and educational resources feel dated compared to Augusta or Goldco. Good choice if you value experience over polish."
-                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.augusta, "review-american-bullion", "augusta")}
+                                companySlug="augusta-precious-metals"
                                 ctaText="Compare With Our #1 Pick"
                             />
 
@@ -142,11 +141,13 @@ export default function AmericanBullionReviewPage() {
                                     <p className="mb-8 text-slate-600 max-w-lg mx-auto">
                                         Compare American Bullion with our top-rated companies.
                                     </p>
-                                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-american-bullion", "augusta")} target="_blank" rel="noopener noreferrer">
-                                            See Our #1 Recommendation
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton
+                                        variant="gold"
+                                        source="review-american-bullion-cta"
+                                        className="inline-flex items-center justify-center rounded-md font-medium bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:scale-105 transition-transform h-14 px-10 text-lg w-full sm:w-auto"
+                                    >
+                                        See Our #1 Recommendation
+                                    </LeadCaptureButton>
                                 </div>
                             </div>
                         </article>

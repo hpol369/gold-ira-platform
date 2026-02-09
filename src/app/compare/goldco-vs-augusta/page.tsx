@@ -22,7 +22,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Goldco vs Augusta Precious Metals: In-Depth 2026 Comparison",
@@ -143,8 +143,6 @@ const schema = {
 };
 
 export default function GoldcoVsAugustaPage() {
-    const augustaCTA = getTrackedLink(AFFILIATE_LINKS.augusta, "goldco-vs-augusta", "augusta");
-
     return (
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
@@ -192,7 +190,7 @@ export default function GoldcoVsAugustaPage() {
                                 summary="For investors with $50,000+, Augusta wins on transparency, education, and customer service. Their zero-complaint BBB record is unmatched in the industry. However, if you have less than $50k, Goldco is a solid alternative with a lower minimum."
                                 bestFor="High-net-worth investors prioritizing transparency & education"
                                 ctaText="Get Augusta's Free Guide"
-                                ctaLink={augustaCTA}
+                                ctaLink="/quiz"
                             />
                         </section>
 
@@ -497,11 +495,9 @@ export default function GoldcoVsAugustaPage() {
                                 <p className="mb-6 text-slate-600 max-w-2xl mx-auto">
                                     Request your free Gold IRA guide and learn how Augusta&apos;s education-first approach can help protect your retirement savings.
                                 </p>
-                                <Button variant="gold" size="lg" asChild>
-                                    <Link href={augustaCTA}>
-                                        Get Your Free Augusta Guide <ArrowRight className="ml-2 w-5 h-5" />
-                                    </Link>
-                                </Button>
+                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                    Get Your Free Augusta Guide <ArrowRight className="ml-2 w-5 h-5" />
+                                </LeadCaptureButton>
                                 <p className="mt-4 text-xs text-slate-500">
                                     No obligation. Free educational materials.
                                 </p>
@@ -574,11 +570,9 @@ export default function GoldcoVsAugustaPage() {
                             <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Still Have Questions?</h3>
                             <p className="mb-6 text-slate-600">Take our free quiz to see which Gold IRA company best matches your investment goals.</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="gold" size="lg" asChild>
-                                    <Link href={augustaCTA}>
-                                        Get Augusta&apos;s Free Guide <ArrowRight className="ml-2 w-4 h-4" />
-                                    </Link>
-                                </Button>
+                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                    Get Augusta&apos;s Free Guide <ArrowRight className="ml-2 w-4 h-4" />
+                                </LeadCaptureButton>
                                 <Button variant="outline" size="lg" asChild>
                                     <Link href="/quiz">Take the Quiz</Link>
                                 </Button>

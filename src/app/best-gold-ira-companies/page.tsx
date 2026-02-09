@@ -8,6 +8,7 @@ import { Sparkles, Trophy, Star, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata = {
     title: "Best Gold IRA Companies of 2026 | Independent Reviews",
@@ -114,11 +115,13 @@ export default function BestGoldIraCompaniesPage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <Button variant="gold" size="lg" className="w-full" asChild>
-                                            <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "best-companies", "augusta")} target="_blank" rel="noopener noreferrer">
-                                                Request Information
-                                            </a>
-                                        </Button>
+                                        <LeadCaptureButton
+                                            variant="gold"
+                                            source="best-companies-augusta"
+                                            className="inline-flex items-center justify-center rounded-md font-medium bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:scale-105 transition-transform h-12 px-8 text-lg w-full"
+                                        >
+                                            Request Information
+                                        </LeadCaptureButton>
                                         <Button variant="outline" size="lg" className="w-full border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
                                             <Link href="/reviews/augusta-precious-metals">Read Full Review</Link>
                                         </Button>

@@ -6,10 +6,9 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import {
   ArrowRight,
   Scale,
@@ -216,15 +215,13 @@ export default function HowMuchSilverPage() {
               considerations for silver in your retirement.
             </p>
 
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "how-much-silver-hero", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Personalized Guidance <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-howmuch-hero"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Get Personalized Guidance <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>
@@ -379,15 +376,13 @@ export default function HowMuchSilverPage() {
               situation and recommend an appropriate silver allocation for your
               retirement goals. Free consultation, no obligation.
             </p>
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "how-much-silver-mid", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-howmuch-mid"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Get Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>

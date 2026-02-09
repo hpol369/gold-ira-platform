@@ -6,7 +6,7 @@
 
 import { useState, useEffect } from "react";
 import { ArrowRight, Star, Shield, X } from "lucide-react";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 interface StickyMobileCTAProps {
   companySlug: string;
@@ -16,10 +16,10 @@ interface StickyMobileCTAProps {
 export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
+  const { openModal } = useLeadModal();
 
   const isAugusta = companySlug === "augusta-precious-metals";
   const trackSource = `mobile-sticky-${companySlug}`;
-  const trackedLink = getTrackedLink(AFFILIATE_LINKS.augusta, trackSource, "augusta");
 
   useEffect(() => {
     let ticking = false;
@@ -42,10 +42,12 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
 
   if (!isVisible) return null;
 
+  const handleCtaClick = () => {
+    openModal("default", trackSource);
+  };
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
-      {/* Gradient fade effect removed for clean look */}
-
       <div className="bg-white/95 backdrop-blur-lg border-t border-slate-200 px-4 py-3 safe-area-pb">
         <div className="flex items-center gap-3">
           {/* Dismiss button */}
@@ -69,15 +71,13 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                   Get Your Free Gold IRA Kit
                 </p>
               </div>
-              <a
-                href={trackedLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleCtaClick}
                 className="flex items-center gap-2 px-4 py-2.5 bg-[#B22234] text-white font-bold text-sm rounded-lg hover:bg-[#8b1c2a] transition-all whitespace-nowrap shadow-sm"
               >
                 Get Free Kit
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </button>
             </>
           ) : (
             // Competitor review - Steal traffic to Augusta
@@ -91,15 +91,13 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                   See why Augusta is rated #1
                 </p>
               </div>
-              <a
-                href={trackedLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleCtaClick}
                 className="flex items-center gap-2 px-4 py-2.5 bg-green-600 text-white font-bold text-sm rounded-lg hover:bg-green-700 transition-all whitespace-nowrap shadow-sm"
               >
                 Compare
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </button>
             </>
           )}
         </div>

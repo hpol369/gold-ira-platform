@@ -5,17 +5,17 @@
 
 import { ArrowRight, Award, Phone, Shield, Star } from "lucide-react";
 import { getFeaturedCompany } from "@/data/companies";
-import { getAugustaLink, getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
 import { cn } from "@/lib/utils";
 import { trackAffiliateClick } from "@/lib/analytics";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 interface AugustaCTAProps {
   variant?: "default" | "sidebar" | "inline" | "footer" | "banner";
   headline?: string;
   subheadline?: string;
-  linkContext?: AugustaContext; // Which Augusta landing page to use
-  trackSource?: string; // If provided, enables click tracking with Telegram notifications
+  linkContext?: string; // Kept for backwards compatibility, no longer used (modal replaces direct links)
+  trackSource?: string;
   className?: string;
 }
 
@@ -23,23 +23,19 @@ export function AugustaCTA({
   variant = "default",
   headline,
   subheadline,
-  linkContext = "default",
   trackSource,
   className,
 }: AugustaCTAProps) {
   const augusta = getFeaturedCompany();
-  // Use tracked link if trackSource is provided, otherwise use direct link
-  const affiliateLink = trackSource
-    ? getTrackedAugustaLink(linkContext, trackSource)
-    : getAugustaLink(linkContext);
+  const { openModal } = useLeadModal();
 
-  // Fire GA4 event on click
   const handleClick = () => {
     const linkType = variant === "sidebar" ? "sidebar"
       : variant === "inline" ? "inline"
       : variant === "banner" ? "cta"
       : "cta";
     trackAffiliateClick("augusta", trackSource || "direct", linkType);
+    openModal("default", trackSource || `augusta-cta-${variant}`);
   };
 
   // Premium button with patriot glow and shine effect
@@ -59,10 +55,7 @@ export function AugustaCTA({
     };
 
     return (
-      <a
-        href={affiliateLink}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
         onClick={handleClick}
         className={cn(
           "group relative overflow-hidden inline-flex items-center justify-center gap-2 rounded-xl font-bold",
@@ -77,7 +70,7 @@ export function AugustaCTA({
         {/* Shine effect overlay */}
         <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
         <span className="relative z-10 flex items-center gap-2">{children}</span>
-      </a>
+      </button>
     );
   };
 

@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Birch Gold Fees 2026: Complete Fee Breakdown & Cost Analysis",
@@ -454,11 +454,9 @@ export default function BirchGoldFeesPage() {
                                     </li>
                                 </ul>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Button variant="gold" size="lg" asChild>
-                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "birch-gold-fees", "augusta")} target="_blank" rel="noopener noreferrer">
-                                            Get Free Augusta Consultation <ArrowRight className="ml-2 h-4 w-4" />
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton variant="default" source="birch-gold-fees" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                        Get Free Augusta Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                                    </LeadCaptureButton>
                                     <Button variant="outline" size="lg" asChild className="border-white/20 text-[#000080] hover:bg-slate-200">
                                         <Link href="/reviews/augusta-precious-metals">
                                             Read Full Augusta Review
@@ -497,11 +495,9 @@ export default function BirchGoldFeesPage() {
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">
                                     Augusta Precious Metals offers lower annual fees, transparent pricing, and world-class education. Get a free consultation to see exactly what you&apos;ll pay—no hidden costs.
                                 </p>
-                                <Button variant="gold" size="xl" asChild>
-                                    <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "birch-gold-fees-bottom", "augusta")} target="_blank" rel="noopener noreferrer">
-                                        Get Free Fee Comparison <ArrowRight className="ml-2 w-5 h-5" />
-                                    </a>
-                                </Button>
+                                <LeadCaptureButton variant="default" source="birch-gold-fees" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                    Get Free Fee Comparison <ArrowRight className="ml-2 w-5 h-5" />
+                                </LeadCaptureButton>
                             </div>
                         </div>
                     </div>

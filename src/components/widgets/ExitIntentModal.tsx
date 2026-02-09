@@ -5,12 +5,13 @@ import { X, FileText, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 const SESSION_KEY = "exitIntentModalShown";
 
 export function ExitIntentModal() {
   const [isVisible, setIsVisible] = useState(false);
+  const { openModal } = useLeadModal();
 
   const handleClose = useCallback(() => {
     setIsVisible(false);
@@ -49,6 +50,11 @@ export function ExitIntentModal() {
     if (e.target === e.currentTarget) {
       handleClose();
     }
+  };
+
+  const handleGetGuide = () => {
+    handleClose();
+    openModal("default", "exit-intent-modal");
   };
 
   return (
@@ -91,7 +97,7 @@ export function ExitIntentModal() {
 
               {/* Subheadline */}
               <p className="text-lg text-white/80 mb-6">
-                Get our free <span className="text-white font-semibold">Gold IRA Investor's Guide</span>
+                Get our free <span className="text-white font-semibold">Gold IRA Investor&apos;s Guide</span>
               </p>
 
               {/* Benefits */}
@@ -115,16 +121,10 @@ export function ExitIntentModal() {
                 <Button
                   variant="default"
                   size="lg"
-                  asChild
                   className="w-full shadow-lg bg-[#B22234] hover:bg-[#8b1c2a] text-white border-0"
+                  onClick={handleGetGuide}
                 >
-                  <a
-                    href={getTrackedLink(AFFILIATE_LINKS.augusta, "exit-intent-modal", "augusta")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Get Free Guide <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  Get Free Guide <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
 
                 <Button
@@ -141,7 +141,7 @@ export function ExitIntentModal() {
 
               {/* Dismissal text */}
               <p className="mt-6 text-xs text-white/50">
-                No thanks, I'll figure it out myself
+                No thanks, I&apos;ll figure it out myself
                 <button
                   onClick={handleClose}
                   className="ml-1 underline hover:text-white/70 transition-colors"

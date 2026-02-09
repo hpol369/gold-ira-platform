@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Noble Gold Fees Breakdown 2026: Setup, Storage & Annual Costs",
@@ -324,11 +324,9 @@ export default function NobleGoldFeesPage() {
                                     Noble Gold&apos;s fees are competitive but not the lowest. Their $20,000 minimum makes them accessible to more investors than Augusta ($50,000 minimum). However, for serious retirement investors with $50,000+, we recommend <strong className="text-[#B22234]">Augusta Precious Metals</strong> for their superior education, lower storage fees, and transparent pricing.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Button variant="gold" size="lg" asChild>
-                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "guide-noble-fees", "augusta")} target="_blank" rel="noopener noreferrer">
-                                            Compare with Augusta <ArrowRight className="ml-2 h-4 w-4" />
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton variant="default" source="guide-noble-fees" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                        Compare with Augusta <ArrowRight className="ml-2 h-4 w-4" />
+                                    </LeadCaptureButton>
                                     <Button variant="outline" size="lg" asChild className="border-white/20 text-[#000080] hover:bg-slate-200">
                                         <Link href="/reviews/noble-gold">
                                             Full Noble Gold Review

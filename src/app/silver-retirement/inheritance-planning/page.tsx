@@ -6,10 +6,9 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import {
   ArrowRight,
   FileText,
@@ -277,15 +276,13 @@ export default function SilverInheritancePlanningPage() {
               Step-up in basis, trust strategies, and IRA beneficiary rules explained.
             </p>
 
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "inheritance-planning-hero", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Build Your Silver Legacy <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-inheritance-hero"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Build Your Silver Legacy <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>
@@ -444,15 +441,13 @@ export default function SilverInheritancePlanningPage() {
               implications of different silver investment strategies. Free
               consultation with no pressure.
             </p>
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "inheritance-planning-mid", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Expert Guidance <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-inheritance-mid"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Get Expert Guidance <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, AlertTriangle, TrendingDown, ShieldCheck, Lock, Download, CheckCircle2 } from "lucide-react";
-import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 interface AuditResultProps {
     score: number;
@@ -13,6 +13,7 @@ interface AuditResultProps {
 }
 
 export function AuditResults({ score, riskLabel, projectedLoss, primaryFear }: AuditResultProps) {
+    const { openModal } = useLeadModal();
     const isHighRisk = score > 70;
     const scoreColor = isHighRisk ? "text-red-500" : "text-[#B22234]";
     const barColor = isHighRisk ? "bg-red-500" : "bg-[#B22234]";
@@ -125,10 +126,8 @@ export function AuditResults({ score, riskLabel, projectedLoss, primaryFear }: A
                 <p className="text-red-50 mb-8 max-w-xl mx-auto text-lg">
                     We've prepared a comprehensive guide explaining exactly how to execute this hedge strategy with zero tax implications.
                 </p>
-                <Button size="xl" className="bg-white text-[#B22234] hover:bg-slate-50 font-bold text-lg min-w-[280px]" asChild>
-                    <a href={AFFILIATE_LINKS.augusta} target="_blank" rel="noopener noreferrer">
-                        Download Free Kit & Report <Download className="ml-2 w-5 h-5" />
-                    </a>
+                <Button size="xl" className="bg-white text-[#B22234] hover:bg-slate-50 font-bold text-lg min-w-[280px]" onClick={() => openModal("default", "audit-results")}>
+                    Download Free Kit & Report <Download className="ml-2 w-5 h-5" />
                 </Button>
                 <p className="text-xs text-red-100 mt-4 opacity-80">
                     Includes: 2026 Gold Forecast, Zero-Tax Guide, and Trusted Dealer List.

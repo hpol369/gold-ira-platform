@@ -1,14 +1,13 @@
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { ArrowRight, ShieldCheck, AlertTriangle, Gavel, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Augusta Precious Metals Lawsuit (2026 Update): The Truth",
@@ -94,7 +93,7 @@ export default function AugustaLawsuitPage() {
                                 rating={4.9}
                                 isRecommended={true}
                                 bottomLine="Our investigation found NO lawsuits, NO CFTC actions, and ZERO BBB complaints against Augusta. This is the cleanest regulatory record in the industry. The 'lawsuit' searches come from people confusing Augusta with other dealers who DID get sued."
-                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-lawsuit", "augusta")}
+                                companySlug="augusta-precious-metals"
                                 ctaText="Get Augusta's Free Gold Guide"
                             />
                         </section>
@@ -217,11 +216,13 @@ export default function AugustaLawsuitPage() {
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Verified Clean Record</h3>
                                 <p className="mb-6 text-blue-100">See why Augusta has zero complaints. Get their free investor kit.</p>
-                                <Button variant="gold" size="lg" asChild>
-                                    <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-lawsuit", "augusta")} target="_blank" rel="noopener noreferrer">
-                                        Get Free Gold Guide <ArrowRight className="ml-2 w-4 h-4" />
-                                    </a>
-                                </Button>
+                                <LeadCaptureButton
+                                    variant="gold"
+                                    source="review-augusta-lawsuit-cta"
+                                    className="inline-flex items-center justify-center rounded-md font-medium bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:scale-105 transition-transform h-12 px-8 text-lg"
+                                >
+                                    Get Free Gold Guide <ArrowRight className="ml-2 w-4 h-4" />
+                                </LeadCaptureButton>
                             </div>
                         </div>
 

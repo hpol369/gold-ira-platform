@@ -3,11 +3,10 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import {
     CheckCircle2,
     Shield,
@@ -47,8 +46,6 @@ const companyData = {
 };
 
 export default function PreferredTrustReviewPage() {
-    const augustaLink = getTrackedLink(AFFILIATE_LINKS.augusta, "review-preferred-trust-cta", "augusta");
-
     return (
         <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
@@ -393,12 +390,14 @@ export default function PreferredTrustReviewPage() {
                                     <p className="mb-6 text-white/80 max-w-lg mx-auto">
                                         Custodians like Preferred Trust work with Gold IRA companies. For a premium Gold IRA experience with fee waivers and education-first approach, consider Augusta Precious Metals.
                                     </p>
-                                    <Button variant="gold" size="xl" className="shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={augustaLink} target="_blank" rel="noopener noreferrer">
-                                            Get Augusta&apos;s Free Gold IRA Guide
-                                            <ArrowRight className="ml-2 w-5 h-5" />
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton
+                                        variant="gold"
+                                        source="review-preferred-trust-cta"
+                                        className="inline-flex items-center justify-center rounded-md font-medium bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:scale-105 transition-transform h-14 px-10 text-lg"
+                                    >
+                                        Get Augusta&apos;s Free Gold IRA Guide
+                                        <ArrowRight className="ml-2 w-5 h-5" />
+                                    </LeadCaptureButton>
                                     <p className="text-xs text-white/60 mt-4">$50k minimum | Up to 10 years fees waived | A+ BBB Rating</p>
                                 </div>
                             </div>

@@ -6,10 +6,9 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import {
   ArrowRight,
   CheckCircle2,
@@ -247,15 +246,13 @@ export default function IraApprovedBarsPage() {
               Learn purity requirements, top brands, and what's NOT allowed.
             </p>
 
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "ira-approved-bars-hero", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Shop IRA Silver Bars <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-bars-hero"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Shop IRA Silver Bars <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>
@@ -365,15 +362,13 @@ export default function IraApprovedBarsPage() {
               silver bars based on your investment amount and goals. Free consultation,
               no pressure.
             </p>
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "ira-approved-bars-mid", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Expert Guidance <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-bars-mid"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Get Expert Guidance <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>

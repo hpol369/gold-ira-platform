@@ -6,10 +6,9 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import {
   ArrowRight,
   Gift,
@@ -266,15 +265,13 @@ export default function SilverForGrandchildrenPage() {
               generational wealth.
             </p>
 
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "silver-grandchildren-hero", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Explore Silver Gifts <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-grandchildren-hero"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Explore Silver Gifts <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>
@@ -418,15 +415,13 @@ export default function SilverForGrandchildrenPage() {
               coins for your grandchildren. Quality coins, competitive prices,
               and gift packaging available.
             </p>
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "silver-grandchildren-mid", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Shop Silver Coins <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-grandchildren-mid"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Shop Silver Coins <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>

@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SocialProofTickerClient } from "@/components/widgets/SocialProofTickerClient";
+import Providers from "@/components/providers/Providers";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
 const GOOGLE_ADS_ID = "AW-17807049464";
@@ -138,8 +139,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
-        <SocialProofTickerClient />
+        <Providers>
+          {children}
+          <SocialProofTickerClient />
+        </Providers>
       </body>
     </html>
   );

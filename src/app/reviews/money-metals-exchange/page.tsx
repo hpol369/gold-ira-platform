@@ -1,13 +1,13 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -140,11 +140,13 @@ export default function MoneyMetalsExchangePage() {
                                     <p className="mb-8 text-blue-100 max-w-lg mx-auto">
                                         Compare companies that specialize in Gold IRA rollovers.
                                     </p>
-                                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-money-metals", "augusta")} target="_blank" rel="noopener noreferrer">
-                                            See Our Top IRA Picks
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton
+                                        variant="gold"
+                                        source="review-money-metals-cta"
+                                        className="inline-flex items-center justify-center rounded-md font-medium bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:scale-105 transition-transform h-14 px-10 text-lg w-full sm:w-auto"
+                                    >
+                                        See Our Top IRA Picks
+                                    </LeadCaptureButton>
                                 </div>
                             </div>
                         </article>

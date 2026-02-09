@@ -8,7 +8,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 import {
   Star,
   Award,
@@ -23,6 +23,12 @@ import {
 } from "lucide-react";
 
 export function WhatSection() {
+  const { openModal } = useLeadModal();
+
+  const handleCtaClick = () => {
+    openModal("default", "homepage-what-section");
+  };
+
   return (
     <section className="py-20 md:py-28 bg-white border-b border-slate-200">
       <Container>
@@ -189,14 +195,12 @@ export function WhatSection() {
                     <Button
                       size="lg"
                       className="bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold shadow-lg text-lg px-8"
-                      asChild
+                      onClick={handleCtaClick}
                     >
-                      <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-what-section", "augusta")} target="_blank" rel="noopener noreferrer">
-                        <span className="flex items-center gap-2">
-                          Get Free Gold IRA Kit
-                          <ArrowRight className="h-4 w-4" />
-                        </span>
-                      </a>
+                      <span className="flex items-center gap-2">
+                        Get Free Gold IRA Kit
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
                     </Button>
                     <Button
                       size="lg"
@@ -269,14 +273,12 @@ export function WhatSection() {
                   <Phone className="h-4 w-4 inline mr-2" />
                   Free consultation with no obligation—just education
                 </p>
-                <a
-                  href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-what-section", "augusta")}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={handleCtaClick}
                   className="text-amber-700 font-bold text-sm hover:text-amber-800 transition-colors uppercase tracking-wide"
                 >
                   Request Your Free Kit →
-                </a>
+                </button>
               </div>
             </div>
           </motion.div>

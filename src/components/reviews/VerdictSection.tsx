@@ -1,11 +1,14 @@
 // src/components/reviews/VerdictSection.tsx
 // P1-022: Final verdict section component
 
+"use client";
+
 import { Award, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Company, getFeaturedCompany } from "@/data/companies";
 import { CompanyRating } from "./CompanyRating";
 import { cn } from "@/lib/utils";
 import { getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 interface VerdictSectionProps {
   company: Company;
@@ -19,6 +22,12 @@ export function VerdictSection({
   const augusta = getFeaturedCompany();
   const isFeatured = company.featured;
   const showAlternative = showAugustaAlternative && !isFeatured;
+  const isAugusta = company.slug === "augusta-precious-metals";
+  const { openModal } = useLeadModal();
+
+  const handleCtaClick = (source: string) => {
+    openModal("default", source);
+  };
 
   return (
     <section id="verdict" className="scroll-mt-24">
@@ -102,20 +111,35 @@ export function VerdictSection({
 
         {/* CTA */}
         <div className="flex flex-wrap gap-4">
-          <a
-            href={getTrackedLink(company.affiliateLink, `verdict-${company.slug}`, company.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              "inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all",
-              isFeatured
-                ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
-                : "bg-[#000080] text-white hover:bg-[#000060]"
-            )}
-          >
-            Get Started with {company.name}
-            <ArrowRight className="h-5 w-5" />
-          </a>
+          {isAugusta ? (
+            <button
+              onClick={() => handleCtaClick(`verdict-${company.slug}`)}
+              className={cn(
+                "inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all",
+                isFeatured
+                  ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
+                  : "bg-[#000080] text-white hover:bg-[#000060]"
+              )}
+            >
+              Get Started with {company.name}
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          ) : (
+            <a
+              href={getTrackedLink(company.affiliateLink, `verdict-${company.slug}`, company.slug)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all",
+                isFeatured
+                  ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25"
+                  : "bg-[#000080] text-white hover:bg-[#000060]"
+              )}
+            >
+              Get Started with {company.name}
+              <ArrowRight className="h-5 w-5" />
+            </a>
+          )}
         </div>
       </div>
 
@@ -148,15 +172,13 @@ export function VerdictSection({
               </div>
             </div>
             <div className="flex-shrink-0">
-              <a
-                href={getTrackedLink(augusta.affiliateLink, `verdict-${company.slug}`, "augusta-precious-metals")}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleCtaClick(`verdict-alt-${company.slug}`)}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-xl hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25"
               >
                 See Why Augusta is #1
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </button>
             </div>
           </div>
         </div>

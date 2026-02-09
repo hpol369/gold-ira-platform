@@ -167,32 +167,24 @@ export default function LeadCaptureModal() {
     }
   };
 
-  // Calculate savings bracket from goal and progress
-  const calculateSavingsBracket = (goal: string, progress: string): string => {
-    const goalValues: Record<string, number> = {
-      "500k": 500000,
-      "1m": 1000000,
-      "2m": 2000000,
-      "5m": 5000000,
-    };
-    const progressValues: Record<string, number> = {
-      "25": 0.25,
-      "50": 0.50,
-      "75": 0.75,
-      "100": 1.0,
-    };
+  // Calculate savings bracket - DIRECT MAPPING now
+  const calculateSavingsBracket = (savingsRange: string, _allocation: string): string => {
+    // We now get the range directly from the user
+    // { value: "under-50k", label: "Under $50k" },
+    // { value: "50k-100k", label: "$50k - $100k" },
+    // { value: "100k-250k", label: "$100k - $250k" },
+    // { value: "250k-500k", label: "$250k - $500k" },
+    // { value: "500k+", label: "$500k+" },
 
-    const goalAmount = goalValues[goal] || 500000;
-    const progressPercent = progressValues[progress] || 0.5;
-    const estimatedSavings = goalAmount * progressPercent;
+    // Map to the database/API expected values if they differ, or pass through
+    if (savingsRange === "under-50k") return "under_50k";
+    if (savingsRange === "50k-100k") return "50k_100k";
+    if (savingsRange === "100k-250k") return "100k_250k";
+    if (savingsRange === "250k-500k") return "250k_500k";
+    if (savingsRange === "500k+") return "over_500k";
 
-    // Map to our existing brackets
-    if (estimatedSavings < 50000) return "under_50k";
-    if (estimatedSavings < 100000) return "50k_100k";
-    if (estimatedSavings < 250000) return "100k_250k";
-    if (estimatedSavings < 500000) return "250k_500k";
-    if (estimatedSavings < 1000000) return "500k_1m";
-    return "over_1m";
+    // Fallback
+    return "under_50k";
   };
 
   const handleCalculatorSubmit = async () => {
@@ -215,7 +207,7 @@ export default function LeadCaptureModal() {
         body: JSON.stringify({
           leadId,
           totalRetirementSavings: calculatedBracket,
-          notes: `Goal: $${enrichmentData.retirementGoal}, Progress: ${enrichmentData.progressToGoal}%`,
+          notes: `Current Savings: ${enrichmentData.retirementGoal}, Protect Intent: ${enrichmentData.progressToGoal}%`,
         }),
       });
       setStep("success");
@@ -518,189 +510,188 @@ export default function LeadCaptureModal() {
               )}
 
 
-{/* Step: Thank You - After phone submit */}
-{step === "thank-you" && (
-  <div className="space-y-5">
-    <div className="text-center">
-      <div className="w-14 h-14 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-green-500/30">
-        <CheckCircle2 className="h-7 w-7 text-green-400" />
-      </div>
-      <h2 className="text-xl md:text-2xl font-bold text-white mb-2">
-        Thank You, {formData.firstName}!
-      </h2>
-      <p className="text-white/80 text-sm leading-relaxed">
-        A specialist from Augusta will reach out shortly.
-      </p>
-    </div>
+              {/* Step: Thank You - After phone submit */}
+              {step === "thank-you" && (
+                <div className="space-y-5">
+                  <div className="text-center">
+                    <div className="w-14 h-14 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-green-500/30">
+                      <CheckCircle2 className="h-7 w-7 text-green-400" />
+                    </div>
+                    <h2 className="text-xl md:text-2xl font-bold text-white mb-2">
+                      Thank You, {formData.firstName}!
+                    </h2>
+                    <p className="text-white/80 text-sm leading-relaxed">
+                      A specialist from Augusta will reach out shortly.
+                    </p>
+                  </div>
 
-    {/* Important info box */}
-    <div className="bg-white/5 border border-white/10 rounded-xl p-4 space-y-3">
-      <div className="flex items-start gap-3">
-        <MessageCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
-        <div>
-          <p className="text-white font-medium text-sm">This is NOT a sales call</p>
-          <p className="text-white/60 text-xs mt-0.5">
-            It&apos;s an educational consultation to answer your questions.
-          </p>
-        </div>
-      </div>
-      <div className="flex items-start gap-3">
-        <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
-        <div>
-          <p className="text-white font-medium text-sm">Prepare your questions</p>
-          <p className="text-white/60 text-xs mt-0.5">
-            Write down anything you want to know — they&apos;ll be happy to help.
-          </p>
-        </div>
-      </div>
-    </div>
+                  {/* Important info box */}
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 space-y-3">
+                    <div className="flex items-start gap-3">
+                      <MessageCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white font-medium text-sm">This is NOT a sales call</p>
+                        <p className="text-white/60 text-xs mt-0.5">
+                          It&apos;s an educational consultation to answer your questions.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white font-medium text-sm">Prepare your questions</p>
+                        <p className="text-white/60 text-xs mt-0.5">
+                          Write down anything you want to know — they&apos;ll be happy to help.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-    {/* Calculator CTA */}
-    <div className="pt-2">
-      <p className="text-white/60 text-xs text-center mb-3">While you wait...</p>
-      <button
-        onClick={() => setStep("calculator")}
-        className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3"
-      >
-        <Calculator className="h-5 w-5" />
-        <span>See Your Gold Protection Potential</span>
-      </button>
-      <p className="text-white/50 text-xs text-center mt-2">
-        Quick 2-question calculator
-      </p>
-    </div>
+                  {/* Calculator CTA */}
+                  <div className="pt-2">
+                    <p className="text-white/60 text-xs text-center mb-3">While you wait...</p>
+                    <button
+                      onClick={() => setStep("calculator")}
+                      className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3"
+                    >
+                      <Calculator className="h-5 w-5" />
+                      <span>See Your Gold Protection Potential</span>
+                    </button>
+                    <p className="text-white/50 text-xs text-center mt-2">
+                      Quick 2-question calculator
+                    </p>
+                  </div>
 
-    {/* Skip to close */}
-    <button
-      onClick={closeModal}
-      className="w-full text-white/50 hover:text-white/70 text-sm py-2 transition-colors"
-    >
-      Close
-    </button>
-  </div>
-)}
+                  {/* Skip to close */}
+                  <button
+                    onClick={closeModal}
+                    className="w-full text-white/50 hover:text-white/70 text-sm py-2 transition-colors"
+                  >
+                    Close
+                  </button>
+                </div>
+              )}
 
-{/* Step: Calculator - 2 Smart Questions */}
-{step === "calculator" && (
-  <div className="space-y-5">
-    <div className="text-center">
-      <div className="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-amber-500/30">
-        <TrendingUp className="h-6 w-6 text-amber-400" />
-      </div>
-      <h2 className="text-xl md:text-2xl font-bold text-white mb-1">
-        Your Protection Potential
-      </h2>
-      <p className="text-white/60 text-sm">
-        Answer 2 quick questions
-      </p>
-    </div>
+              {/* Step: Calculator - 2 Smart Questions */}
+              {step === "calculator" && (
+                <div className="space-y-5">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-amber-500/30">
+                      <TrendingUp className="h-6 w-6 text-amber-400" />
+                    </div>
+                    <h2 className="text-xl md:text-2xl font-bold text-white mb-1">
+                      Your Protection Potential
+                    </h2>
+                    <p className="text-white/60 text-sm">
+                      Answer 2 quick questions
+                    </p>
+                  </div>
 
-    {/* Question 1: Retirement Goal */}
-    <div>
-      <label className="block text-sm font-medium text-white mb-2">
-        What&apos;s your retirement savings goal?
-      </label>
-      <div className="grid grid-cols-2 gap-2">
-        {[
-          { value: "500k", label: "$500K" },
-          { value: "1m", label: "$1 Million" },
-          { value: "2m", label: "$2 Million" },
-          { value: "5m", label: "$5 Million+" },
-        ].map((option) => (
-          <button
-            key={option.value}
-            onClick={() => setEnrichmentData({ ...enrichmentData, retirementGoal: option.value })}
-            className={`py-3 px-4 rounded-xl border-2 text-center font-medium transition-all ${
-              enrichmentData.retirementGoal === option.value
-                ? "border-amber-400 bg-amber-400/20 text-amber-400"
-                : "border-white/20 bg-white/5 text-white hover:border-white/40"
-            }`}
-          >
-            {option.label}
-          </button>
-        ))}
-      </div>
-    </div>
+                  {/* Question 1: Current Savings (Reality Check) */}
+                  <div>
+                    <label className="block text-sm font-medium text-white mb-2">
+                      What is your current IRA/401(k) balance?
+                    </label>
+                    <div className="grid grid-cols-2 gap-2">
+                      {[
+                        { value: "under-50k", label: "Under $50k" },
+                        { value: "50k-100k", label: "$50k - $100k" },
+                        { value: "100k-250k", label: "$100k - $250k" },
+                        { value: "250k-500k", label: "$250k - $500k" },
+                        { value: "500k+", label: "$500k+" },
+                      ].map((option) => (
+                        <button
+                          key={option.value}
+                          onClick={() => setEnrichmentData({ ...enrichmentData, retirementGoal: option.value })}
+                          className={`py-3 px-4 rounded-xl border-2 text-center font-medium transition-all ${enrichmentData.retirementGoal === option.value
+                            ? "border-amber-400 bg-amber-400/20 text-amber-400"
+                            : "border-white/20 bg-white/5 text-white hover:border-white/40"
+                            }`}
+                        >
+                          {option.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
-    {/* Question 2: Progress to Goal */}
-    {enrichmentData.retirementGoal && (
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        <label className="block text-sm font-medium text-white mb-2">
-          How close are you to that goal?
-        </label>
-        <div className="grid grid-cols-2 gap-2">
-          {[
-            { value: "25", label: "Just starting", subtext: "~25%" },
-            { value: "50", label: "Halfway", subtext: "~50%" },
-            { value: "75", label: "Almost there", subtext: "~75%" },
-            { value: "100", label: "Already there", subtext: "100%" },
-          ].map((option) => (
-            <button
-              key={option.value}
-              onClick={() => setEnrichmentData({ ...enrichmentData, progressToGoal: option.value })}
-              className={`py-3 px-3 rounded-xl border-2 text-center transition-all ${
-                enrichmentData.progressToGoal === option.value
-                  ? "border-amber-400 bg-amber-400/20 text-amber-400"
-                  : "border-white/20 bg-white/5 text-white hover:border-white/40"
-              }`}
-            >
-              <span className="font-medium text-sm block">{option.label}</span>
-              <span className="text-xs opacity-60">{option.subtext}</span>
-            </button>
-          ))}
-        </div>
-      </motion.div>
-    )}
+                  {/* Question 2: Progress to Goal */}
+                  {enrichmentData.retirementGoal && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <label className="block text-sm font-medium text-white mb-2">
+                        How much of this would you like to protect?
+                      </label>
+                      <div className="grid grid-cols-2 gap-2">
+                        {[
+                          { value: "25", label: "10-25%", subtext: "Conservative" },
+                          { value: "50", label: "25-50%", subtext: "Balanced" },
+                          { value: "75", label: "50%+", subtext: "Maximum Protection" },
+                          { value: "100", label: "Not sure yet", subtext: "Need Advice" },
+                        ].map((option) => (
+                          <button
+                            key={option.value}
+                            onClick={() => setEnrichmentData({ ...enrichmentData, progressToGoal: option.value })}
+                            className={`py-3 px-3 rounded-xl border-2 text-center transition-all ${enrichmentData.progressToGoal === option.value
+                              ? "border-amber-400 bg-amber-400/20 text-amber-400"
+                              : "border-white/20 bg-white/5 text-white hover:border-white/40"
+                              }`}
+                          >
+                            <span className="font-medium text-sm block">{option.label}</span>
+                            <span className="text-xs opacity-60">{option.subtext}</span>
+                          </button>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
 
-    {/* Submit Button */}
-    {enrichmentData.retirementGoal && enrichmentData.progressToGoal && (
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        <button
-          onClick={handleCalculatorSubmit}
-          disabled={isSubmitting}
-          className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
-        >
-          {isSubmitting ? (
-            <>
-              <Loader2 className="h-5 w-5 animate-spin" />
-              Calculating...
-            </>
-          ) : (
-            <>
-              See My Results
-              <ArrowRight className="h-5 w-5" />
-            </>
-          )}
-        </button>
-      </motion.div>
-    )}
+                  {/* Submit Button */}
+                  {enrichmentData.retirementGoal && enrichmentData.progressToGoal && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <button
+                        onClick={handleCalculatorSubmit}
+                        disabled={isSubmitting}
+                        className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <Loader2 className="h-5 w-5 animate-spin" />
+                            Calculating...
+                          </>
+                        ) : (
+                          <>
+                            See My Results
+                            <ArrowRight className="h-5 w-5" />
+                          </>
+                        )}
+                      </button>
+                    </motion.div>
+                  )}
 
-    {/* Back / Skip */}
-    <div className="flex items-center justify-between pt-2">
-      <button
-        onClick={() => setStep("thank-you")}
-        className="text-white/50 hover:text-white/70 text-sm py-2 transition-colors flex items-center gap-1"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        Back
-      </button>
-      <button
-        onClick={() => setStep("success")}
-        className="text-white/50 hover:text-white/70 text-sm py-2 transition-colors"
-      >
-        Skip
-      </button>
-    </div>
-  </div>
-)}
+                  {/* Back / Skip */}
+                  <div className="flex items-center justify-between pt-2">
+                    <button
+                      onClick={() => setStep("thank-you")}
+                      className="text-white/50 hover:text-white/70 text-sm py-2 transition-colors flex items-center gap-1"
+                    >
+                      <ArrowLeft className="h-4 w-4" />
+                      Back
+                    </button>
+                    <button
+                      onClick={() => setStep("success")}
+                      className="text-white/50 hover:text-white/70 text-sm py-2 transition-colors"
+                    >
+                      Skip
+                    </button>
+                  </div>
+                </div>
+              )}
 
               {/* Trust signals (only on steps 1-3) */}
               {step !== "success" && step !== "thank-you" && step !== "calculator" && (

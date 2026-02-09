@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { getQuizResult, type QuizState, type QuizResult } from "@/types/quiz";
 import { Container } from "@/components/ui/Container";
 import { getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 // Updated for "Rich Dad" style scoring
 const steps = [
@@ -72,6 +73,7 @@ export function QuizWizard() {
     const [currentStepIndex, setCurrentStepIndex] = useState(0);
     const [answers, setAnswers] = useState<Partial<QuizState>>({});
     const [result, setResult] = useState<QuizResult | null>(null);
+    const { openModal } = useLeadModal();
 
     const currentStep = steps[currentStepIndex];
     const progress = ((currentStepIndex) / (steps.length - 1)) * 100;
@@ -210,12 +212,19 @@ export function QuizWizard() {
                             </ul>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button size="xl" variant="gold" asChild className="w-full">
-                                    <a href={getTrackedLink(result.affiliateLink, "quiz-result", result.partnerId)} target="_blank" rel="noopener noreferrer">
+                                {result.partnerId === "augusta" ? (
+                                    <Button size="xl" variant="gold" className="w-full" onClick={() => openModal("default", "quiz-result")}>
                                         Get Free "Rich Dad" Investment Kit
                                         <ArrowRight className="ml-2 h-5 w-5" />
-                                    </a>
-                                </Button>
+                                    </Button>
+                                ) : (
+                                    <Button size="xl" variant="gold" asChild className="w-full">
+                                        <a href={getTrackedLink(result.affiliateLink, "quiz-result", result.partnerId)} target="_blank" rel="noopener noreferrer">
+                                            Get Free "Rich Dad" Investment Kit
+                                            <ArrowRight className="ml-2 h-5 w-5" />
+                                        </a>
+                                    </Button>
+                                )}
                                 <div className="text-center sm:text-left px-2">
                                     <p className="text-xs text-slate-500 mt-2">100% Free • No Obligation • Educational Only</p>
                                 </div>

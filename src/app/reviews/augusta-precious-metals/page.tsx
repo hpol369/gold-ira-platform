@@ -1,13 +1,12 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -52,7 +51,7 @@ export default function AugustaReviewPage() {
                                 rating={4.9}
                                 isRecommended={true}
                                 bottomLine="Augusta is the premium choice for investors with $50,000+. Their education-first approach, transparent fees, and fee-waiver program make them stand out. Not the cheapest, but arguably the best service in the industry."
-                                ctaUrl={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-static", "augusta")}
+                                companySlug="augusta-precious-metals"
                                 ctaText="Get Free Gold IRA Guide"
                             />
 
@@ -168,11 +167,13 @@ export default function AugustaReviewPage() {
                                     <p className="mb-8 text-slate-600 max-w-lg mx-auto">
                                         Learn how Gold IRAs work and whether they fit your retirement strategy.
                                     </p>
-                                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-lg hover:scale-105 transition-transform" asChild>
-                                        <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "review-augusta-static", "augusta")} target="_blank" rel="noopener noreferrer">
-                                            Request Free Guide
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton
+                                        variant="gold"
+                                        source="review-augusta-cta"
+                                        className="inline-flex items-center justify-center rounded-md font-medium bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:scale-105 transition-transform h-14 px-10 text-lg w-full sm:w-auto"
+                                    >
+                                        Request Free Guide
+                                    </LeadCaptureButton>
                                 </div>
                             </div>
                         </article>

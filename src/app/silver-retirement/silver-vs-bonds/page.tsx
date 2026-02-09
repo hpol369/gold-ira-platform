@@ -6,10 +6,9 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import {
   ArrowRight,
   TrendingUp,
@@ -267,15 +266,13 @@ export default function SilverVsBondsPage() {
               comparison of inflation protection, income, risk, and more.
             </p>
 
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "silver-vs-bonds-hero", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Explore Silver IRAs <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-bonds-hero"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Explore Silver IRAs <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>
@@ -469,15 +466,13 @@ export default function SilverVsBondsPage() {
               your existing bond holdings. Free educational consultation with no
               sales pressure.
             </p>
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "silver-vs-bonds-mid", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn About Silver IRAs <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-bonds-mid"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Learn About Silver IRAs <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>

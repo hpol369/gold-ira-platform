@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 // Generate static params for all states
 export async function generateStaticParams() {
@@ -274,9 +275,13 @@ export default async function StatePage({ params }: Props) {
                                             <p className="text-sm text-slate-600 mb-2">Best for: High-net-worth investors ($50k+) who want education-first approach</p>
                                             <p className="text-xs text-green-600 font-semibold">A+ BBB Rating | Zero Complaints | Serves {stateName}</p>
                                         </div>
-                                        <Button variant="gold" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
-                                            <a href={getTrackedLink(AFFILIATE_LINKS.augusta, `local-${state}`, "augusta")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
-                                        </Button>
+                                        <LeadCaptureButton
+                                            variant="gold"
+                                            source={`local-${state}-augusta`}
+                                            className="inline-flex items-center justify-center rounded-md font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-10 px-4 text-sm"
+                                        >
+                                            Get Free Kit
+                                        </LeadCaptureButton>
                                     </div>
 
                                     <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">

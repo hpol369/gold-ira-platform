@@ -5,9 +5,15 @@ import { ArrowRight, Star, ShieldCheck, Trophy, Phone, UserCheck, Lock, Check } 
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 export function FeaturedPartner() {
+    const { openModal } = useLeadModal();
+
+    const handleCtaClick = () => {
+        openModal("default", "homepage-featured");
+    };
+
     return (
         <section className="py-16 md:py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden" id="featured-partner">
             {/* Ambient red glow behind section */}
@@ -141,26 +147,42 @@ export function FeaturedPartner() {
                                          shadow-[0_0_60px_-5px_rgba(178,34,52,0.5),0_0_100px_-10px_rgba(178,34,52,0.3)]
                                          hover:shadow-[0_0_80px_-5px_rgba(178,34,52,0.7),0_0_120px_-10px_rgba(178,34,52,0.4)]
                                          hover:scale-[1.02] transition-all duration-300"
-                                asChild
+                                onClick={handleCtaClick}
                             >
-                                <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-featured", "augusta")} target="_blank" rel="noopener noreferrer">
-                                    {/* Shine animation overlay */}
-                                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
-                                    <div className="flex flex-col items-center relative z-10">
-                                        <span className="flex items-center gap-2">
-                                            Get Your Free Gold IRA Kit
-                                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                        </span>
-                                        <span className="text-[10px] font-normal opacity-80 uppercase tracking-widest mt-1 text-white/80">
-                                            No cost - No obligation
-                                        </span>
-                                    </div>
-                                </a>
+                                {/* Shine animation overlay */}
+                                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+                                <div className="flex flex-col items-center relative z-10">
+                                    <span className="flex items-center gap-2">
+                                        Get Your Free Gold IRA Kit
+                                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                    </span>
+                                    <span className="text-[10px] font-normal opacity-80 uppercase tracking-widest mt-1 text-white/80">
+                                        No cost - No obligation
+                                    </span>
+                                </div>
                             </Button>
 
                             <p className="text-center text-xs text-slate-500 mt-4">
                                 Minimum investment: <span className="whitespace-nowrap">$50,000</span>
                             </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Bottom Bar */}
+                <div className="max-w-5xl mx-auto mt-0 bg-white border border-t-0 border-slate-200 rounded-b-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.1)]">
+                    <div className="bg-[#000080] border-t border-white/10 px-8 py-4">
+                        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <p className="text-blue-100 text-sm font-medium">
+                                <Phone className="h-4 w-4 inline mr-2" />
+                                Free consultation with no obligation—just education
+                            </p>
+                            <button
+                                onClick={handleCtaClick}
+                                className="text-amber-700 font-bold text-sm hover:text-amber-800 transition-colors uppercase tracking-wide"
+                            >
+                                Request Your Free Kit →
+                            </button>
                         </div>
                     </div>
                 </div>

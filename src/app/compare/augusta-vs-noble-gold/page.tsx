@@ -8,6 +8,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Metadata } from "next";
 import { CheckCircle2, XCircle, ArrowRight, Trophy, Wallet, GraduationCap, Building2, Check, X, ShieldCheck, BadgeDollarSign, UserCheck, AlertTriangle } from "lucide-react";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
@@ -253,11 +254,9 @@ export default function AugustaVsNoblePage() {
                                             </li>
                                         </ul>
                                         <div className="mt-4">
-                                            <Button variant="gold" size="sm" asChild>
-                                                <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "compare-augusta-vs-noble", "augusta")} target="_blank" rel="noopener noreferrer">
-                                                    Get Augusta Free Kit <ArrowRight className="ml-2 w-4 h-4" />
-                                                </a>
-                                            </Button>
+                                            <LeadCaptureButton variant="default" source="compare-augusta-vs-noble" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold inline-flex items-center">
+                                                Get Augusta Free Kit <ArrowRight className="ml-2 w-4 h-4" />
+                                            </LeadCaptureButton>
                                         </div>
                                     </div>
                                     <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">

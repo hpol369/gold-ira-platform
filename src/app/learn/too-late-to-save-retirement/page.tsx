@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 
 export const metadata: Metadata = {
     title: "Is It Too Late to Save for Retirement? Strategies",
@@ -128,8 +128,6 @@ const schema = {
 };
 
 export default function TooLateToSaveRetirementPage() {
-    const augustaLink = getTrackedLink(AFFILIATE_LINKS.augusta, "too-late-save-retirement", "augusta");
-
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
@@ -728,12 +726,10 @@ export default function TooLateToSaveRetirementPage() {
                                     You&apos;ve read this far - that proves you&apos;re serious about your future. Now let&apos;s turn that intention into action.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button variant="gold" size="xl" asChild>
-                                        <a href={augustaLink} target="_blank" rel="noopener noreferrer">
-                                            Get Free Gold IRA Guide
-                                            <ArrowRight className="ml-2 w-5 h-5" />
-                                        </a>
-                                    </Button>
+                                    <LeadCaptureButton variant="default" source="too-late-save-retirement" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                        Get Free Gold IRA Guide
+                                        <ArrowRight className="ml-2 w-5 h-5" />
+                                    </LeadCaptureButton>
                                     <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
                                         <Link href="/quiz">Take Our Quiz</Link>
                                     </Button>

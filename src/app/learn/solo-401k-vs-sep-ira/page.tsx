@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { ArrowRight, CheckCircle, XCircle, Trophy, Users, DollarSign, Briefcase, Building2, Shield, Banknote } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -492,11 +492,9 @@ export default function Solo401kVsSepIraPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href={getTrackedLink(AFFILIATE_LINKS.augusta, "solo-vs-sep-cta", "augusta")}>
-                                <Button variant="gold" size="xl">
-                                    Get Free Retirement Guide <ArrowRight className="ml-2 w-5 h-5" />
-                                </Button>
-                            </Link>
+                            <LeadCaptureButton variant="default" source="solo-vs-sep" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                Get Free Retirement Guide <ArrowRight className="ml-2 w-5 h-5" />
+                            </LeadCaptureButton>
                             <Link href="/learn/solo-401k-contribution-limits">
                                 <Button variant="secondary" size="xl">
                                     View 2026 Contribution Limits

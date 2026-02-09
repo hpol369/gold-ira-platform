@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import {
   ArrowRight,
   CheckCircle2,
@@ -260,15 +260,13 @@ export default function TransferIraToSilverPage() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-                <a
-                  href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "transfer-ira-to-silver-hero", "augusta")}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Start Your Silver Transfer <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
+              <LeadCaptureButton
+                variant="silver"
+                source="silver-retirement-transfer-hero"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              >
+                Start Your Silver Transfer <ArrowRight className="ml-2 h-4 w-4" />
+              </LeadCaptureButton>
               <Button
                 variant="outline"
                 size="lg"
@@ -375,15 +373,13 @@ export default function TransferIraToSilverPage() {
                 Lifetime Support
               </div>
             </div>
-            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
-              <a
-                href={getTrackedLink(AFFILIATE_LINKS.augustaSilver, "transfer-ira-to-silver-mid", "augusta")}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Your Free Silver IRA Kit <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+            <LeadCaptureButton
+              variant="silver"
+              source="silver-retirement-transfer-mid"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+            >
+              Get Your Free Silver IRA Kit <ArrowRight className="ml-2 h-4 w-4" />
+            </LeadCaptureButton>
           </div>
         </Container>
       </section>

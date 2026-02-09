@@ -6,7 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import {
@@ -239,11 +239,9 @@ export default async function NewsArticlePage({ params }: Props) {
                                     Thousands of Americans are diversifying into physical gold to protect their
                                     purchasing power from inflation and market volatility.
                                 </p>
-                                <Link href={getTrackedLink(AFFILIATE_LINKS.augusta, `news-${slug}`, "augusta")}>
-                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold" size="lg">
-                                        Get Your Free Gold IRA Guide <ArrowRight className="ml-2 w-4 h-4" />
-                                    </Button>
-                                </Link>
+                                <LeadCaptureButton variant="default" source={`news-${slug}`} className="bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold px-6 py-3 rounded-lg inline-flex items-center">
+                                    Get Your Free Gold IRA Guide <ArrowRight className="ml-2 w-4 h-4" />
+                                </LeadCaptureButton>
                             </div>
                         </article>
 

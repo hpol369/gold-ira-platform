@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { ArrowRight, Calculator, Calendar, DollarSign, TrendingUp, AlertCircle, CheckCircle, Users, Percent } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -506,11 +506,9 @@ export default function Solo401kContributionLimitsPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href={getTrackedLink(AFFILIATE_LINKS.augusta, "solo-401k-limits-cta", "augusta")}>
-                                <Button variant="gold" size="xl">
-                                    Get Free Solo 401k Guide <ArrowRight className="ml-2 w-5 h-5" />
-                                </Button>
-                            </Link>
+                            <LeadCaptureButton variant="default" source="solo-401k-limits" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                Get Free Solo 401k Guide <ArrowRight className="ml-2 w-5 h-5" />
+                            </LeadCaptureButton>
                             <Link href="/solo-401k">
                                 <Button variant="secondary" size="xl">
                                     Learn More About Solo 401k

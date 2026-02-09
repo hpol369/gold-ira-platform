@@ -1,16 +1,27 @@
+"use client";
+
 import { Star, CheckCircle, XCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 interface VerdictBoxProps {
     companyName: string;
+    companySlug?: string;
     rating: number; // 0 to 5
     isRecommended: boolean;
     bottomLine: string;
-    ctaUrl: string;
+    ctaUrl?: string;
     ctaText?: string;
 }
 
-export function VerdictBox({ companyName: _companyName, rating, isRecommended, bottomLine, ctaUrl, ctaText = "Get Free Gold Kit" }: VerdictBoxProps) {
+export function VerdictBox({ companyName: _companyName, companySlug, rating, isRecommended, bottomLine, ctaUrl, ctaText = "Get Free Gold Kit" }: VerdictBoxProps) {
+    const { openModal } = useLeadModal();
+    const isAugusta = companySlug === "augusta-precious-metals";
+
+    const handleCtaClick = () => {
+        openModal("default", `verdict-box-${companySlug || "unknown"}`);
+    };
+
     return (
         <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden my-8 not-prose shadow-sm">
             <div className="bg-slate-50 p-6 border-b border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -43,11 +54,17 @@ export function VerdictBox({ companyName: _companyName, rating, isRecommended, b
                     {bottomLine}
                 </p>
 
-                <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-md" asChild>
-                    <a href={ctaUrl} target="_blank" rel="noopener noreferrer">
+                {isAugusta ? (
+                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-md" onClick={handleCtaClick}>
                         {ctaText} <ArrowRight className="ml-2 w-5 h-5" />
-                    </a>
-                </Button>
+                    </Button>
+                ) : (
+                    <Button variant="gold" size="xl" className="w-full sm:w-auto shadow-md" asChild>
+                        <a href={ctaUrl} target="_blank" rel="noopener noreferrer">
+                            {ctaText} <ArrowRight className="ml-2 w-5 h-5" />
+                        </a>
+                    </Button>
+                )}
 
                 <p className="text-xs text-slate-500 mt-4 text-center sm:text-left">
                     Official Link • Secure & Verified

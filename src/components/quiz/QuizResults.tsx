@@ -13,6 +13,7 @@ import {
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 // ============================================
 // TYPE DEFINITIONS
@@ -125,6 +126,7 @@ export function QuizResults({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
   const [emailError, setEmailError] = useState("");
+  const { openModal } = useLeadModal();
 
   // Get affiliate link for primary recommendation
   const primaryAffiliateLink = getTrackedLink(
@@ -255,21 +257,33 @@ export function QuizResults({
 
               {/* Primary CTA */}
               <div className="flex justify-center">
-                <Button
-                  size="xl"
-                  variant="gold"
-                  asChild
-                  className="w-full sm:w-auto min-w-[300px] text-lg shadow-xl hover:shadow-[#B22234]/20"
-                >
-                  <a
-                    href={primaryAffiliateLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                {recommendedCompany.affiliateKey.startsWith("augusta") ? (
+                  <Button
+                    size="xl"
+                    variant="gold"
+                    className="w-full sm:w-auto min-w-[300px] text-lg shadow-xl hover:shadow-[#B22234]/20"
+                    onClick={() => openModal("default", `quiz-results-${productType}`)}
                   >
                     Get Your Free Investment Kit
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
+                  </Button>
+                ) : (
+                  <Button
+                    size="xl"
+                    variant="gold"
+                    asChild
+                    className="w-full sm:w-auto min-w-[300px] text-lg shadow-xl hover:shadow-[#B22234]/20"
+                  >
+                    <a
+                      href={primaryAffiliateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Get Your Free Investment Kit
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           </div>
@@ -285,11 +299,12 @@ export function QuizResults({
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {alternatives.slice(0, 2).map((company, index) => {
-                const affiliateLink = getTrackedLink(
+                const isAugusta = company.affiliateKey.startsWith("augusta");
+                const affiliateLink = !isAugusta ? getTrackedLink(
                   AFFILIATE_LINKS[company.affiliateKey as keyof typeof AFFILIATE_LINKS] || "",
                   `quiz-results-alt-${productType}`,
                   company.id
-                );
+                ) : "";
 
                 return (
                   <motion.div
@@ -309,21 +324,33 @@ export function QuizResults({
                       <span className="text-xs text-slate-500">
                         Min: {company.minInvestment}
                       </span>
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        asChild
-                        className="text-[#B22234] border-[#B22234]/30 hover:bg-[#B22234]/10 hover:border-[#B22234]/50"
-                      >
-                        <a
-                          href={affiliateLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      {isAugusta ? (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="text-[#B22234] border-[#B22234]/30 hover:bg-[#B22234]/10 hover:border-[#B22234]/50"
+                          onClick={() => openModal("default", `quiz-results-alt-${productType}`)}
                         >
                           Learn More
                           <ArrowRight className="ml-1 h-3 w-3" />
-                        </a>
-                      </Button>
+                        </Button>
+                      ) : (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          asChild
+                          className="text-[#B22234] border-[#B22234]/30 hover:bg-[#B22234]/10 hover:border-[#B22234]/50"
+                        >
+                          <a
+                            href={affiliateLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Learn More
+                            <ArrowRight className="ml-1 h-3 w-3" />
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </motion.div>
                 );

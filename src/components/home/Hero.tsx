@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, Phone, CheckCircle2, TrendingUp, Lock } from "lucide-react";
+import { ArrowRight, ShieldCheck, Phone, TrendingUp, Lock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
-import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { useLeadModal } from "@/context/LeadModalContext";
 
 export function Hero() {
+    const { openModal } = useLeadModal();
+
     return (
         <section className="relative overflow-hidden bg-slate-50 pb-20 pt-20 md:pb-32 md:pt-32 border-b border-slate-200">
             {/* Abstract Background Element - Patriot Navy/Red Wash */}
@@ -46,7 +48,7 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                         className="max-w-2xl text-lg text-slate-600 md:text-2xl leading-relaxed mb-10 font-medium"
                     >
-                        The dollar is losing value. Discover the <strong className="text-[#000080]">"IRS Loophole"</strong> that allows you to move your 401(k) into physical gold—tax-free and penalty-free.
+                        The dollar is losing value. Discover the <strong className="text-[#000080]">&quot;IRS Loophole&quot;</strong> that allows you to move your 401(k) into physical gold—tax-free and penalty-free.
                     </motion.p>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
@@ -73,14 +75,12 @@ export function Hero() {
                             size="xl"
                             variant="outline"
                             className="bg-white hover:bg-slate-50 text-[#000080] border-2 border-[#000080]/10 hover:border-[#000080]/30 w-full sm:w-auto min-w-[280px] h-16 text-lg transition-all duration-300 shadow-md hover:shadow-lg group"
-                            asChild
+                            onClick={() => openModal("default", "homepage-hero")}
                         >
-                            <a href={getTrackedLink(AFFILIATE_LINKS.augusta, "homepage-hero", "augusta")} target="_blank" rel="noopener noreferrer">
-                                <span className="flex items-center justify-center gap-2">
-                                    <Phone className="h-5 w-5 text-[#B22234]" />
-                                    Free Consultation
-                                </span>
-                            </a>
+                            <span className="flex items-center justify-center gap-2">
+                                <Phone className="h-5 w-5 text-[#B22234]" />
+                                Free Consultation
+                            </span>
                         </Button>
                     </div>
 
