@@ -24,6 +24,7 @@ import { writeArticle, addToReviewQueue } from "./write-article.js";
 import { CONFIG } from "./config.js";
 import { generateTweet } from "./generate-tweet.js";
 import { postTweet } from "./post-tweet.js";
+import { generateFacebookPost } from "./generate-facebook-post.js";
 
 const PROCESSED_URLS_FILE = path.join(process.cwd(), "content/news/.processed-urls.json");
 
@@ -214,11 +215,40 @@ async function runPipeline() {
         console.log(`Tweets queued: ${tweetQueue.length}/${silverArticles.length}`);
     }
 
-    // Save tweet queue to file (GitHub Actions will post after deploy)
-    const tweetQueueFile = path.join(process.cwd(), "content/news/.tweet-queue.json");
-    if (tweetQueue.length > 0) {
-        fs.writeFileSync(tweetQueueFile, JSON.stringify(tweetQueue, null, 2), "utf-8");
-        console.log(`  Saved tweet queue to .tweet-queue.json`);
+    // Step 6: Queue Facebook posts for silver articles
+    console.log("");
+    console.log("STEP 6: Generating Facebook posts...");
+    console.log("-".repeat(40));
+
+    const fbQueue: Array<{ title: string; text: string; url: string }> = [];
+
+    if (silverArticles.length === 0) {
+        console.log("No silver articles for Facebook");
+    } else {
+        for (const article of silverArticles) {
+            const slug = writtenSlugs[articles.indexOf(article)];
+            const articleUrl = `https://richdadretirement.com/news/${slug}`;
+            console.log(`  Generating Facebook post for: ${article.title}`);
+
+            const fbText = await generateFacebookPost(article.title, article.excerpt, slug);
+            if (fbText) {
+                console.log(`  FB post (${fbText.length} chars): ${fbText.split("\n")[0]}...`);
+                fbQueue.push({ title: article.title, text: fbText, url: articleUrl });
+            } else {
+                console.log("  Failed to generate Facebook post, skipping");
+            }
+
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+        }
+        console.log(`Facebook posts queued: ${fbQueue.length}/${silverArticles.length}`);
+    }
+
+    // Save social media queues to file (GitHub Actions will post after deploy)
+    const socialQueueFile = path.join(process.cwd(), "content/news/.social-queue.json");
+    const socialQueue = { tweets: tweetQueue, facebook: fbQueue };
+    if (tweetQueue.length > 0 || fbQueue.length > 0) {
+        fs.writeFileSync(socialQueueFile, JSON.stringify(socialQueue, null, 2), "utf-8");
+        console.log(`  Saved social queue (${tweetQueue.length} tweets, ${fbQueue.length} FB posts)`);
     }
 
     // Mark all processed URLs (including ones that weren't relevant enough)
@@ -231,6 +261,7 @@ async function runPipeline() {
     console.log("=".repeat(60));
     console.log(`Articles generated: ${articles.length}`);
     console.log(`Silver tweets queued: ${tweetQueue.length}/${silverArticles.length}`);
+    console.log(`Facebook posts queued: ${fbQueue.length}/${silverArticles.length}`);
     console.log(`Status: ${autoPublish ? "Published" : "In review queue"}`);
     console.log("");
     console.log("Written files:");

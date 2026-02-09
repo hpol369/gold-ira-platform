@@ -126,6 +126,13 @@ export const CONFIG = {
         enabled: !!process.env.TWITTER_API_KEY,
     },
 
+    // Facebook Page API for auto-posting silver articles
+    facebook: {
+        pageId: process.env.FACEBOOK_PAGE_ID || "",
+        pageToken: process.env.FACEBOOK_PAGE_TOKEN || "",
+        enabled: !!process.env.FACEBOOK_PAGE_ID && !!process.env.FACEBOOK_PAGE_TOKEN,
+    },
+
     // Category to related guides mapping (only use existing pages!)
     categoryGuides: {
         fed: ["/guide/gold-ira-guide", "/why-gold/inflation-protection", "/best-gold-ira-companies"],
