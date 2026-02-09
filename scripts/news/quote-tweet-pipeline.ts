@@ -65,6 +65,17 @@ function isAlreadyQuoted(entries: QuotedTweet[], tweetId: string): boolean {
     return entries.some((e) => e.tweetId === tweetId);
 }
 
+/**
+ * Check if we've already quoted the same author within the last 24 hours.
+ * Prevents quoting the same person's different tweets back-to-back.
+ */
+function hasQuotedAuthorRecently(entries: QuotedTweet[], authorUsername: string): boolean {
+    const twentyFourHoursAgo = Date.now() - 24 * 60 * 60 * 1000;
+    return entries.some(
+        (e) => e.authorUsername === authorUsername && e.quotedAt > twentyFourHoursAgo
+    );
+}
+
 // --- Twitter Client ---
 
 function createTwitterClient(): TwitterApi | null {
@@ -203,9 +214,12 @@ async function fetchCandidateTweets(client: TwitterApi): Promise<CandidateTweet[
 async function pickBestTweet(
     candidates: CandidateTweet[],
     alreadyQuoted: Set<string>,
+    quotedTweets: QuotedTweet[],
 ): Promise<CandidateTweet | null> {
-    // Filter out already quoted tweets
-    const fresh = candidates.filter((c) => !alreadyQuoted.has(c.id));
+    // Filter out already quoted tweets AND authors quoted in last 24h
+    const fresh = candidates.filter(
+        (c) => !alreadyQuoted.has(c.id) && !hasQuotedAuthorRecently(quotedTweets, c.authorUsername)
+    );
     if (fresh.length === 0) return null;
     if (fresh.length === 1) return fresh[0];
 
@@ -318,7 +332,7 @@ async function runQuoteTweetPipeline() {
     let quotesPosted = 0;
 
     for (let i = 0; i < remaining; i++) {
-        const bestTweet = await pickBestTweet(candidates, alreadyQuotedIds);
+        const bestTweet = await pickBestTweet(candidates, alreadyQuotedIds, quotedTweets);
         if (!bestTweet) {
             console.log("  No more unquoted candidates available.");
             break;
