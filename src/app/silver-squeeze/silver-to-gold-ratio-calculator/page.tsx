@@ -713,7 +713,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="/learn/silver-ira"
+                  href="/silver-ira"
                   className="flex items-center justify-center gap-2 bg-slate-100 text-slate-900 font-semibold py-4 px-6 rounded-xl border border-slate-300 hover:bg-white/20 transition-colors"
                 >
                   Read Our Silver IRA Guide

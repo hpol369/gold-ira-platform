@@ -759,7 +759,7 @@ export default function BuyPhysicalSilverGuidePage() {
                             </ul>
 
                             <p>
-                                For more on avoiding scams, see our <Link href="/scams">Scam Protection Center</Link> and <Link href="/silver-squeeze/reddit-wallstreetsilver-review">WallStreetSilver Review</Link>.
+                                For more on avoiding scams, see our <Link href="/scams">Scam Protection Center</Link>.
                             </p>
                         </section>
 

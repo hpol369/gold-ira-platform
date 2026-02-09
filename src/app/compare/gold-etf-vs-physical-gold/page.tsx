@@ -557,7 +557,7 @@ export default function GoldEtfVsPhysicalGoldPage() {
                                         </span>
                                     </summary>
                                     <p className="mt-4 leading-relaxed text-slate-600">
-                                        Yes, through a Gold IRA (also called a precious metals IRA). This allows you to own physical gold coins and bars with the same tax advantages as a regular IRA. The gold is stored in an IRS-approved depository. You can roll over existing 401(k) or IRA funds tax-free. See our <Link href="/guide/gold-ira-basics" className="text-[#B22234] hover:underline">Gold IRA guide</Link> to learn more.
+                                        Yes, through a Gold IRA (also called a precious metals IRA). This allows you to own physical gold coins and bars with the same tax advantages as a regular IRA. The gold is stored in an IRS-approved depository. You can roll over existing 401(k) or IRA funds tax-free. See our <Link href="/guide/gold-ira-guide" className="text-[#B22234] hover:underline">Gold IRA guide</Link> to learn more.
                                     </p>
                                 </details>
                             </div>

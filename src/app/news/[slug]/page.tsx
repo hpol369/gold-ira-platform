@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: article.metaTitle || `${article.title} | Rich Dad Daily Briefing`,
+        title: article.headline || article.metaTitle || `${article.title} | Rich Dad Daily Briefing`,
         description: article.metaDescription || article.excerpt,
         openGraph: {
             title: article.title,
@@ -45,7 +45,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: "article",
             publishedTime: article.publishedAt,
             authors: [article.author],
-            images: article.featuredImage ? [article.featuredImage] : [],
+            images: (article.featuredImage && article.featuredImage.length > 0)
+                ? [article.featuredImage]
+                : [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Daily Briefing" }],
         },
         twitter: {
             card: article.featuredImage ? "summary_large_image" : "summary",

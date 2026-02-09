@@ -493,7 +493,7 @@ export default function GoldStocksVsGoldIraPage() {
                                         <Link href="/quiz">See If a Gold IRA Is Right for Me <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
                                     <Button variant="outline" size="xl" asChild className="border-slate-300 text-slate-900 hover:bg-slate-100">
-                                        <Link href="/guide/gold-ira-basics">Read the Gold IRA Guide</Link>
+                                        <Link href="/guide/gold-ira-guide">Read the Gold IRA Guide</Link>
                                     </Button>
                                 </div>
                             </div>

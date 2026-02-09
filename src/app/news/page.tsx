@@ -135,6 +135,42 @@ export default function NewsPage() {
                 </section>
             )}
 
+            {/* All Briefings Archive */}
+            {articles.length > 7 && (
+                <section className="py-12 bg-white border-b border-slate-200">
+                    <Container>
+                        <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8">All Briefings</h2>
+
+                        {(() => {
+                            const grouped: Record<string, typeof articles> = {};
+                            for (const article of articles) {
+                                const d = new Date(article.publishedAt);
+                                const key = `${d.toLocaleString("en-US", { month: "long" })} ${d.getFullYear()}`;
+                                if (!grouped[key]) grouped[key] = [];
+                                grouped[key].push(article);
+                            }
+                            return Object.entries(grouped).map(([month, items]) => (
+                                <div key={month} className="mb-6">
+                                    <h3 className="text-lg font-bold text-slate-700 mb-3 border-b border-slate-200 pb-2">{month}</h3>
+                                    <ul className="space-y-1.5">
+                                        {items.map((article) => (
+                                            <li key={article.slug} className="flex items-baseline gap-3">
+                                                <span className="text-xs text-slate-400 font-medium whitespace-nowrap">
+                                                    {new Date(article.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                                                </span>
+                                                <Link href={`/news/${article.slug}`} className="text-sm text-[#000080] hover:text-blue-700 hover:underline font-medium line-clamp-1">
+                                                    {article.headline || article.title}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ));
+                        })()}
+                    </Container>
+                </section>
+            )}
+
             {/* Categories */}
             <section className="py-12 bg-white">
                 <Container>

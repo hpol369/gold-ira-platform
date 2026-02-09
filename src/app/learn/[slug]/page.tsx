@@ -197,11 +197,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: article.metaTitle,
-    description: article.metaDescription,
+    description: article.metaDescription.length > 155
+      ? article.metaDescription.slice(0, 152) + "..."
+      : article.metaDescription,
     keywords: article.keywords,
     openGraph: {
       title: article.metaTitle,
-      description: article.metaDescription,
+      description: article.metaDescription.length > 155
+        ? article.metaDescription.slice(0, 152) + "..."
+        : article.metaDescription,
       type: "article",
       images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
