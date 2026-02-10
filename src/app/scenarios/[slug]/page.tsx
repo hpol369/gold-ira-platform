@@ -47,6 +47,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: scenario.metaTitle,
     description: scenario.metaDescription,
+    alternates: {
+      canonical: `/scenarios/${slug}`,
+    },
   };
 }
 

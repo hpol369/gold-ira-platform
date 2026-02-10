@@ -35,6 +35,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: `Gold IRA ${stateName}: Local Dealers vs Online (2026 Guide)`,
         description: `Thinking about buying gold in ${stateName}? Compare local coin shops vs tax-free Gold IRAs. Learn ${stateName} sales tax rules and home storage risks.`,
+        alternates: {
+            canonical: `/local/${state}`,
+        },
     };
 }
 

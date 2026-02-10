@@ -201,6 +201,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ? article.metaDescription.slice(0, 152) + "..."
       : article.metaDescription,
     keywords: article.keywords,
+    alternates: {
+      canonical: `/learn/${slug}`,
+    },
     openGraph: {
       title: article.metaTitle,
       description: article.metaDescription.length > 155

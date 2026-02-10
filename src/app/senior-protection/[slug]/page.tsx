@@ -82,6 +82,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: article.metaTitle,
     description: article.metaDescription,
     keywords: article.keywords,
+    alternates: {
+      canonical: `/senior-protection/${slug}`,
+    },
   };
 }
 

@@ -18,6 +18,7 @@ import {
 } from "@/lib/news";
 import { ArrowRight, ArrowLeft, Clock, Calendar, ExternalLink, Share2 } from "lucide-react";
 import { SpotPriceWidget } from "@/components/widgets/SpotPriceWidget";
+import { SchemaScript } from "@/components/seo/SchemaScript";
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -39,6 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: article.headline || article.metaTitle || `${article.title} | Rich Dad Daily Briefing`,
         description: article.metaDescription || article.excerpt,
+        alternates: {
+            canonical: `/news/${slug}`,
+        },
         openGraph: {
             title: article.title,
             description: article.excerpt,
@@ -141,8 +145,29 @@ export default async function NewsArticlePage({ params }: Props) {
             .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
     }
 
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        headline: article.title,
+        description: article.metaDescription || article.excerpt,
+        datePublished: article.publishedAt,
+        dateModified: article.updatedAt || article.publishedAt,
+        author: { "@type": "Organization", name: "Rich Dad Retirement" },
+        publisher: {
+            "@type": "Organization",
+            name: "Rich Dad Retirement",
+            logo: { "@type": "ImageObject", url: "https://www.richdadretirement.com/logo.png" },
+        },
+        mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": `https://www.richdadretirement.com/news/${slug}`,
+        },
+        image: article.featuredImage || "/og-default.jpg",
+    };
+
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema} />
             <Navbar />
 
             {/* Article Header - Patriot Style */}
@@ -323,36 +348,6 @@ export default async function NewsArticlePage({ params }: Props) {
 
             <Footer />
 
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "NewsArticle",
-                        headline: article.title,
-                        description: article.excerpt,
-                        datePublished: article.publishedAt,
-                        dateModified: article.updatedAt || article.publishedAt,
-                        author: {
-                            "@type": "Organization",
-                            name: article.author,
-                        },
-                        publisher: {
-                            "@type": "Organization",
-                            name: "Rich Dad Retirement",
-                            logo: {
-                                "@type": "ImageObject",
-                                url: "https://richdadretirement.com/logo.png",
-                            },
-                        },
-                        image: article.featuredImage || "https://richdadretirement.com/og-image.jpg",
-                        mainEntityOfPage: {
-                            "@type": "WebPage",
-                            "@id": `https://richdadretirement.com/news/${article.slug}`,
-                        },
-                    }),
-                }}
-            />
         </main>
     );
 }

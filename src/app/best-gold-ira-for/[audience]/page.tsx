@@ -39,6 +39,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: data.metaTitle,
     description: data.metaDescription,
+    alternates: {
+      canonical: `/best-gold-ira-for/${audience}`,
+    },
   };
 }
 

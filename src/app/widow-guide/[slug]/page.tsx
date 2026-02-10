@@ -132,6 +132,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: article.metaTitle,
     description: article.metaDescription,
     keywords: article.keywords,
+    alternates: {
+      canonical: `/widow-guide/${slug}`,
+    },
     openGraph: {
       title: article.metaTitle,
       description: article.metaDescription,
