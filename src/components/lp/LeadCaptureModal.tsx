@@ -155,8 +155,8 @@ export default function LeadCaptureModal() {
             currency: "USD",
           });
         }
-        // Move to thank you screen
-        setStep("thank-you");
+        // Redirect to Augusta's high-intent scheduling page
+        window.location.href = "https://www.augustapreciousmetals.com/instant-download-thank-you-high";
       } else {
         setError("We couldn't process your request. Please verify your phone number includes the area code, or call us at 1-800-700-1008.");
       }
