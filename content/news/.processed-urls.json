@@ -1,173 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/devon-energy-coterra-energy-merge-111043687.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bank-england-explores-alternatives-card-110701628.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/michael-saylor-uses-dry-powder-110109523.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-tuesday-february-3-2026-110058520.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-tuesday-february-3-2026-110047695.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-tuesday-february-3-2026-110046412.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-tuesday-february-3-2026-110035861.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-tuesday-february-3-2026-110020538.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/sanctuary-snags-chief-marketing-officer-110000093.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/seeking-shelter-trumps-fury-u-105853097.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/southwest-airlines-luv-posts-7-105646327.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/coeur-mining-cde-gold-merger-105645632.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/v2x-vvx-partners-amazon-ai-105643952.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analysts-mixed-cargurus-carg-amid-105642613.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analysts-differ-opinion-jakafi-drug-105640261.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bp-bp-seeks-natural-gas-105638914.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/lyft-lyft-launch-rideshare-teenagers-105637772.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/radian-completes-1-67bn-inigo-105637844.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/qorvo-qrvo-posts-bullish-q3-105635430.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/antero-resources-ar-completes-750m-105634711.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/natural-gas-player-eqt-eqt-105632259.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/newly-public-bank-just-got-105533546.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/agentic-ai-audit-platform-fieldguide-105050716.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/could-buying-fluor-stock-today-105000429.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/us-brokers-may-charge-fee-104942737.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/franklin-resources-ben-reports-first-104928485.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/t-rowe-price-trow-introduces-104926529.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/td-cowen-maintains-buy-rating-104925515.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rbc-boosts-morgan-stanley-ms-104923801.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/sei-investments-seic-surpasses-revenue-104921270.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/deutsche-bank-db-reports-highest-104920479.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rbc-capital-projects-37-38-104918951.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analysts-cut-bank-america-bac-104917588.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bny-mellon-bk-eps-growth-104915175.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rbc-highlights-wells-fargo-wfc-104913548.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/goldman-sachs-gs-sees-strong-104912722.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/jpmorgan-chase-jpm-q4-earnings-104910518.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/state-street-stt-beats-q4-104908331.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ubs-sees-strong-cash-generation-104907356.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://finance.yahoo.com/news/blackrock-blk-delivers-strong-organic-104905800.html",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://www.marketwatch.com/story/gold-and-silver-rally-after-13-fall-over-two-sessions-for-yellow-metal-39b85097?mod=mw_rss_topstories",
-    "timestamp": 1770117680672
-  },
-  {
-    "url": "https://www.cnbc.com/2026/02/03/trump-us-india-trade-deal-europe-india-deal-compared.html",
-    "timestamp": 1770117680672
-  },
-  {
     "url": "https://finance.yahoo.com/news/oracle-may-slash-30-000-114418881.html",
     "timestamp": 1770119673976
   },
@@ -7182,5 +7014,73 @@
   {
     "url": "https://finance.yahoo.com/news/ford-q4-earnings-preview-ev-losses-f-150-pickup-business-crucial-for-investors-193034322.html",
     "timestamp": 1770719794623
+  },
+  {
+    "url": "https://finance.yahoo.com/news/goldman-sachs-leads-construction-m-112304042.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/renewable-energy-company-zelestra-agrees-112153145.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/funds-funds-112000437.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/vanguards-best-performing-etf-2026-112000161.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/novo-nordisk-opens-front-patent-110824134.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/made-money-crypto-5-tax-111150823.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/transocean-signs-agreement-acquire-valaris-110911497.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/sofi-technologies-making-significant-moves-110500639.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/spotify-expects-profit-above-estimates-110217848.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-tuesday-february-10-2026-110057179.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/south-korea-report-domestic-vehicle-110039532.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-tuesday-february-10-2026-110028687.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-tuesday-february-10-2026-110019141.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-tuesday-february-10-2026-110011276.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-tuesday-february-10-2026-110011823.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/23-old-inherited-450k-parked-110000785.html",
+    "timestamp": 1770723317747
+  },
+  {
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-put-rally-on-hold-as-wall-street-braces-for-start-of-data-deluge-235207637.html",
+    "timestamp": 1770723317747
   }
 ]
