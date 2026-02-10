@@ -61,10 +61,10 @@ export default function ContactPage() {
                                         For general questions, corrections, or feedback, drop us a line. We try to respond within a couple business days.
                                     </p>
                                     <a
-                                        href="mailto:hello@richdadretirement.com"
+                                        href="mailto:hugo@cc-community.com"
                                         className="text-[#B22234] font-semibold hover:underline"
                                     >
-                                        hello@richdadretirement.com
+                                        hugo@cc-community.com
                                     </a>
                                 </div>
                             </FadeIn>
@@ -79,10 +79,10 @@ export default function ContactPage() {
                                         Are you with a Gold IRA company interested in being reviewed? We&apos;re selective, but we&apos;re always open to hearing from reputable businesses.
                                     </p>
                                     <a
-                                        href="mailto:partners@richdadretirement.com"
+                                        href="mailto:hugo@cc-community.com"
                                         className="text-[#B22234] font-semibold hover:underline"
                                     >
-                                        partners@richdadretirement.com
+                                        hugo@cc-community.com
                                     </a>
                                 </div>
                             </FadeIn>
