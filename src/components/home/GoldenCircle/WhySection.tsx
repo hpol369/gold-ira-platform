@@ -1,14 +1,9 @@
-"use client";
-
 // Golden Circle: WHY Section (Hero)
 // Patriot Light Theme
 // Speaking to 55+ blue collar workers who HAVE saved and need protection
 
-import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
-import { Shield, Clock, Briefcase, ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { Shield, Clock, Briefcase } from "lucide-react";
 
 export function WhySection() {
   return (
@@ -20,12 +15,7 @@ export function WhySection() {
       <Container className="relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           {/* Acknowledgment Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div style={{ animation: "fadeInUp 0.6s ease-out both" }}>
             <span className="inline-block px-4 py-1.5 bg-[#000080]/10 border border-[#000080]/20 rounded-full text-[#000080] text-sm font-bold mb-8 shadow-sm">
               For Hard-Working Americans Who&apos;ve Done It Right
             </span>
@@ -45,14 +35,11 @@ export function WhySection() {
               But one market crash in your final years before retirement could wipe out decades of sacrifice.<br className="hidden md:block" />
               <strong className="text-[#000080]">A Gold IRA protects what you&apos;ve built. No Wall Street games. No BS.</strong>
             </p>
-          </motion.div>
+          </div>
 
           {/* Stats That Reflect Their Reality */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+          <div
+            style={{ animation: "fadeInUp 0.6s ease-out 0.2s both" }}
             className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12"
           >
             <div className="bg-white border border-slate-200 rounded-xl p-6 text-center hover:border-[#000080]/30 hover:shadow-lg transition-all duration-300 group">
@@ -84,14 +71,11 @@ export function WhySection() {
               <div className="text-3xl font-black text-green-700 mb-2">5,000+ Years</div>
               <p className="text-slate-500 text-sm font-medium">Gold has held its value</p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Protective CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+          <div
+            style={{ animation: "fadeInUp 0.6s ease-out 0.4s both" }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <a
@@ -107,18 +91,15 @@ export function WhySection() {
             >
               See Protection Options
             </a>
-          </motion.div>
+          </div>
 
           {/* Trust Signal */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+          <p
+            style={{ animation: "fadeInUp 0.6s ease-out 0.6s both" }}
             className="mt-8 text-slate-500 text-sm font-medium"
           >
             Straight talk. No pushy sales. Just honest information to protect your life&apos;s work.
-          </motion.p>
+          </p>
         </div>
       </Container>
     </section>

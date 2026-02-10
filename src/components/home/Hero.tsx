@@ -4,7 +4,6 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, Phone, TrendingUp, Lock } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { motion } from "framer-motion";
 import { useLeadModal } from "@/context/LeadModalContext";
 
 export function Hero() {
@@ -20,36 +19,30 @@ export function Hero() {
                 <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
 
                     {/* Warning Badge */}
-                    <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
+                    <div
+                        style={{ animation: "fadeInUp 0.5s ease-out both" }}
                         className="inline-flex items-center gap-2 bg-red-50 border border-red-100 text-[#B22234] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-8 shadow-sm"
                     >
                         <ShieldCheck className="h-4 w-4" />
                         <span>Wealth Protection Alert: 2026 Update</span>
-                    </motion.div>
+                    </div>
 
                     {/* Main Headline */}
-                    <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.1, ease: [0.2, 0.65, 0.3, 0.9] }}
+                    <h1
+                        style={{ animation: "fadeInUp 0.8s ease-out 0.1s both" }}
                         className="text-5xl md:text-7xl lg:text-8xl font-serif font-black tracking-tight text-[#000080] mb-8 leading-[1.1]"
                     >
                         Protect Your <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B22234] to-red-600 decoration-[#B22234] underline decoration-4 underline-offset-8">Retirement.</span>
-                    </motion.h1>
+                    </h1>
 
                     {/* Subheadline */}
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                    <p
+                        style={{ animation: "fadeInUp 0.8s ease-out 0.2s both" }}
                         className="max-w-2xl text-lg text-slate-600 md:text-2xl leading-relaxed mb-10 font-medium"
                     >
                         The dollar is losing value. Discover the <strong className="text-[#000080]">&quot;IRS Loophole&quot;</strong> that allows you to move your 401(k) into physical gold—tax-free and penalty-free.
-                    </motion.p>
+                    </p>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
                         <Button
@@ -85,10 +78,8 @@ export function Hero() {
                     </div>
 
                     {/* Trust Factors */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.4 }}
+                    <div
+                        style={{ animation: "fadeInUp 1s ease-out 0.4s both" }}
                         className="mt-16 w-full max-w-4xl"
                     >
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-sm text-left">
@@ -122,7 +113,7 @@ export function Hero() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
 
                 </div>
             </Container>

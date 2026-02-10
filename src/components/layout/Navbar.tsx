@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, Menu, X, ChevronDown, Flag, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { useState, useEffect } from "react";
+import { useState, useEffect, startTransition } from "react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 
 // Gold price state
@@ -19,7 +19,7 @@ export function Navbar() {
     const [isToolsOpen, setIsToolsOpen] = useState(false);
     const [goldPrice, setGoldPrice] = useState<GoldPrice | null>(null);
 
-    // Fetch live gold price on mount
+    // Fetch live gold price on mount (non-blocking)
     useEffect(() => {
         async function fetchGoldPrice() {
             try {
@@ -27,9 +27,11 @@ export function Navbar() {
                 const data = await res.json();
                 const gold = data.prices?.find((p: any) => p.metal === "gold");
                 if (gold) {
-                    setGoldPrice({
-                        price: gold.price,
-                        changePercent: gold.changePercent24h,
+                    startTransition(() => {
+                        setGoldPrice({
+                            price: gold.price,
+                            changePercent: gold.changePercent24h,
+                        });
                     });
                 }
             } catch (error) {
