@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 
 // Augusta customer landing page with affiliate tracking
-const AUGUSTA_AFFILIATE_URL = "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129";
+const AUGUSTA_AFFILIATE_URL = "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908";
 
 const investmentOptions = [
   { value: "25k-50k", label: "$25,000 - $50,000" },

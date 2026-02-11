@@ -29,7 +29,7 @@ export interface QuizResult {
 const AFFILIATE_LINKS = {
     orion: "https://orionmetalexchange.com", // TODO: Replace with your Orion affiliate link
     noble: "https://noblegoldinvestments.com", // TODO: Replace with your Noble Gold affiliate link
-    augusta: "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129",
+    augusta: "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908",
 };
 
 export function getQuizResult(answers: Partial<QuizState>): QuizResult {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     },
 };
 
-const AUGUSTA_BASE_URL = "https://learn.augustapreciousmetals.com/company-checklist-1/?apmtrkr_cid=1696&aff_id=5129";
+const AUGUSTA_BASE_URL = "https://learn.augustapreciousmetals.com/company-checklist-1/?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908";
 
 function augustaLink(subId: string) {
     return `${AUGUSTA_BASE_URL}&sub_id=${subId}`;
