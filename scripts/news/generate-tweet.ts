@@ -1,8 +1,8 @@
 /**
  * Tweet Generator
- * Uses Claude API to generate compelling tweets for silver articles
+ * Uses Claude API to generate controversial, engagement-driving tweets
  * Targets: Americans 55-75, fiscally conservative, $50K+ in 401(k)/IRA
- * Varies tweet style: short punchy, medium, and long educational
+ * Goal: Spark conversation, debate, and replies — NOT just promote articles
  */
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -12,33 +12,60 @@ const anthropic = new Anthropic({
     apiKey: CONFIG.claude.apiKey,
 });
 
-const HASHTAGS = "#SilverIRA #Retirement #PreciousMetals";
-
-// Tweet style variations
+// Tweet style variations — designed to provoke engagement
 const TWEET_STYLES = [
     {
-        name: "short",
-        maxChars: 120,
-        instruction: `Write a SHORT, punchy tweet (max 120 characters). One or two hard-hitting sentences. Like a headline that stops the scroll.
+        name: "hot-take",
+        maxChars: 150,
+        includeLink: false,
+        instruction: `Write a HOT TAKE tweet (max 150 chars). A bold, slightly provocative opinion that will make people either nod aggressively or argue in the replies. Pick a side. Be unapologetic.
 
-Example style:
-"Silver supply deficit just hit 182 million ounces. Your 401(k) doesn't own a single one."`,
+Examples:
+"Your financial advisor makes money whether your 401(k) goes up or down. Think about that for a second."
+"Unpopular opinion: keeping 100% of your retirement in stocks at 60+ isn't brave. It's reckless."
+"The Fed just admitted inflation isn't transitory. Your 401(k) lost 20% in purchasing power and nobody told you."`,
     },
     {
-        name: "medium",
+        name: "uncomfortable-truth",
+        maxChars: 200,
+        includeLink: false,
+        instruction: `Write an UNCOMFORTABLE TRUTH tweet (max 200 chars). Say the thing nobody in finance wants to say out loud. Make it feel like forbidden knowledge. The kind of tweet people screenshot and share.
+
+Examples:
+"Wall Street doesn't want you owning physical gold. You know why? Because they can't charge you fees on a bar sitting in a vault. That's the whole game."
+"Every dollar the government prints makes your retirement savings worth less. They know this. They just hope you don't figure it out before you hit 70."
+"Your 401(k) is denominated in dollars. The dollar has lost 97% of its value since 1913. But sure, keep 'staying the course.'"`,
+    },
+    {
+        name: "debate-starter",
         maxChars: 180,
-        instruction: `Write a MEDIUM-LENGTH tweet (around 140-180 characters). Set up the problem, then deliver the punch. Three to four sentences.
+        includeLink: false,
+        instruction: `Write a DEBATE STARTER tweet (max 180 chars). Ask a provocative question or make a statement that DEMANDS a reply. The goal is maximum replies and quote tweets. End with something people can't ignore.
 
-Example style:
-"China is stockpiling silver while the Fed prints dollars. They know what's coming. The question is whether your 401(k) is ready. Most aren't."`,
+Examples:
+"Name one financial advisor who told their clients to buy gold in 2019. I'll wait."
+"If the stock market is so safe, why does every billionaire own physical gold? Serious question."
+"At what point do we admit that a 60/40 portfolio is a strategy from the 1990s that doesn't work anymore?"`,
     },
     {
-        name: "long",
-        maxChars: 218,
-        instruction: `Write a LONG, EDUCATIONAL tweet (around 180-218 characters). Teach them something specific about silver they didn't know, then connect it to their retirement. This should feel like insider knowledge from a trusted advisor.
+        name: "spicy-stat",
+        maxChars: 200,
+        includeLink: true,
+        instruction: `Write a SPICY STAT tweet (max 200 chars). Lead with a shocking, specific fact from the article, then twist the knife with a personal jab at the reader's portfolio. Make them feel like they're missing out or being played.
 
-Example style:
-"Here's what your financial advisor won't tell you: silver demand for solar panels hit 600M ounces last year. Mines can't keep up. Every EV needs 1-2oz of silver. Your 401(k) is betting against the biggest industrial shift in decades."`,
+Examples:
+"Central banks bought more gold in 2024 than any year in history. Meanwhile your 401(k) advisor is telling you to buy more index funds. Who do you trust more?"
+"Silver supply deficit: 182 million ounces. Silver in your retirement account: zero. Somebody's going to feel stupid in 5 years."`,
+    },
+    {
+        name: "contrarian",
+        maxChars: 180,
+        includeLink: true,
+        instruction: `Write a CONTRARIAN tweet (max 180 chars). Go against conventional financial wisdom. Challenge something that "everyone knows." Make people who disagree feel compelled to argue.
+
+Examples:
+"Diversification doesn't mean owning 5 different stock ETFs. It means owning assets your financial advisor doesn't get a commission on."
+"'Just keep contributing to your 401(k)' is financial advice designed for 30-year-olds. If you're 60, you need a different playbook."`,
     },
 ];
 
@@ -50,7 +77,7 @@ function pickStyle(articleIndex: number): (typeof TWEET_STYLES)[number] {
 }
 
 /**
- * Generate a tweet for a silver article
+ * Generate a tweet for a news article
  */
 export async function generateTweet(
     title: string,
@@ -62,7 +89,7 @@ export async function generateTweet(
         const articleUrl = `https://richdadretirement.com/news/${slug}`;
         const style = pickStyle(articleIndex);
 
-        console.log(`  Tweet style: ${style.name} (max ${style.maxChars} chars)`);
+        console.log(`  Tweet style: ${style.name} (max ${style.maxChars} chars, link: ${style.includeLink})`);
 
         const response = await anthropic.messages.create({
             model: CONFIG.claude.model,
@@ -70,29 +97,31 @@ export async function generateTweet(
             messages: [
                 {
                     role: "user",
-                    content: `You write viral tweets for a precious metals retirement platform. Your tweets consistently get high engagement from conservative Americans aged 55-75.
+                    content: `You write VIRAL tweets that spark arguments and conversation. You're the account everyone loves or loves to hate. Your tweets get hundreds of replies because you say what nobody else will.
 
-ARTICLE TITLE: ${title}
-ARTICLE EXCERPT: ${excerpt}
+ARTICLE FOR INSPIRATION (use the topic, but you're NOT promoting this article):
+Title: ${title}
+Excerpt: ${excerpt}
 
 YOUR AUDIENCE:
 - Americans 55-75 with $50K-$500K+ in their 401(k) or IRA
 - Fiscally conservative, Republican-leaning, many Trump supporters
 - Deeply worried about: inflation, national debt, government overspending, dollar collapse
 - Distrustful of: Wall Street, big banks, the Fed, mainstream financial media
-- They value: self-reliance, hard work, protecting family wealth, tangible assets
-- They respond to: straight talk, contrarian wisdom, "what THEY don't want you to know"
+- They love: straight talk, contrarian takes, calling out the system, being "in the know"
 
 TWEET STYLE FOR THIS ONE:
 ${style.instruction}
 
 RULES:
-- Maximum ${style.maxChars} characters (a URL and hashtags will be appended automatically)
-- Write like you're telling a friend the truth over coffee — direct, personal, urgent
-- MUST reference "your 401(k)", "your IRA", or "your retirement" at least once
-- End with a line that makes them NEED to click the link
-- No hashtags, no emojis, no URLs
-- No generic financial advice language. Be SPECIFIC about the article topic.
+- Maximum ${style.maxChars} characters
+- The GOAL is replies and engagement, NOT clicks. Write something people HAVE to respond to.
+- Be opinionated. Pick a side. Don't hedge.
+- You can be slightly confrontational, sarcastic, or provocative — but never mean-spirited
+- Reference "your 401(k)", "your retirement", or "your financial advisor" when it fits naturally
+- NO hashtags, NO emojis, NO URLs, NO "thread" or "1/"
+- NO generic financial platitudes. Be SPECIFIC and sharp.
+- CRITICAL: NEVER invent statistics or dollar amounts. If you reference a number, it must come directly from the article excerpt. When in doubt, make your point without numbers — attitude beats accuracy.
 - Output ONLY the tweet text, nothing else. No quotes around it.`,
                 },
             ],
@@ -125,8 +154,10 @@ RULES:
             }
         }
 
-        // Build final tweet: text + URL + hashtags
-        const fullTweet = `${tweetText}\n\n${articleUrl}\n\n${HASHTAGS}`;
+        // Only append article link for styles that want it
+        const fullTweet = style.includeLink
+            ? `${tweetText}\n\n${articleUrl}`
+            : tweetText;
 
         return fullTweet;
     } catch (error) {

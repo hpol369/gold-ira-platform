@@ -353,9 +353,12 @@ async function runQuoteTweetPipeline() {
             continue;
         }
 
-        const fullQuoteText = `${quoteResult.text}\n\n${quoteResult.articleUrl}`;
+        const fullQuoteText = quoteResult.articleUrl
+            ? `${quoteResult.text}\n\n${quoteResult.articleUrl}`
+            : quoteResult.text;
         console.log(`  Quote text: ${quoteResult.text}`);
-        console.log(`  Article: ${quoteResult.articleUrl}`);
+        console.log(`  Article: ${quoteResult.articleUrl || "(no link — standalone tweet)"}`);
+
 
         // Step 3: Post the quote tweet
         console.log("");

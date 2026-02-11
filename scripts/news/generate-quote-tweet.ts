@@ -57,7 +57,7 @@ export async function generateQuoteTweet(
     originalTweet: string,
     authorUsername: string,
     authorDisplayName: string,
-): Promise<{ text: string; articleUrl: string } | null> {
+): Promise<{ text: string; articleUrl: string | null } | null> {
     try {
         const topic = detectTopic(originalTweet);
         const relevantPages = SITE_PAGES[topic as keyof typeof SITE_PAGES] || SITE_PAGES.economy;
@@ -65,44 +65,51 @@ export async function generateQuoteTweet(
             .map((p) => `- richdadretirement.com${p.path} (${p.title})`)
             .join("\n");
 
+        // Randomly decide if we include a link (40% chance)
+        const includeLink = Math.random() < 0.4;
+
         const response = await anthropic.messages.create({
             model: CONFIG.claude.model,
             max_tokens: 500,
             messages: [
                 {
                     role: "user",
-                    content: `You write quote tweets for @TheIRAAdvisor, a trusted retirement advisor account. You're quoting a tweet from @${authorUsername} (${authorDisplayName}).
+                    content: `You write SPICY quote tweets for @TheIRAAdvisor. You're not a boring financial account — you're the one who says what the suits won't. You're quoting @${authorUsername} (${authorDisplayName}).
 
 ORIGINAL TWEET:
 "${originalTweet}"
 
 YOUR AUDIENCE:
 - Americans 55-75 with $50K-$500K+ in their 401(k) or IRA
-- Fiscally conservative, worried about inflation, dollar collapse, retirement security
-- They follow ${authorDisplayName} because they distrust mainstream financial advice
-- They value: straight talk, data-backed insights, actionable advice
+- Fiscally conservative, many Trump supporters, distrust mainstream finance
+- They follow ${authorDisplayName} because they want the truth, not corporate talking points
+- They LOVE seeing someone call out BS, challenge the narrative, or say the quiet part loud
 
-RELEVANT ARTICLES ON OUR SITE:
-${pagesText}
+YOUR APPROACH — randomly pick ONE:
+1. AGREE AND ESCALATE: Take their point further than they dared. "He's being polite about it. Here's the real number..."
+2. RESPECTFULLY CHALLENGE: Push back on one specific thing. "He's right about X, but wrong about Y. Here's why..."
+3. ADD THE MISSING PIECE: Point out what they left unsaid. "What he's not telling you is..."
+4. MAKE IT PERSONAL: Connect their macro point to the individual's retirement. "Cool stat. Now look at what that means for your 401(k)."
+5. PROVOCATIVE QUESTION: Respond with a question that forces people to think. "So if that's true, why is your financial advisor still telling you to..."
 
 RULES:
-1. Write a quote tweet that ADDS VALUE to the original tweet (max 200 characters)
-2. Don't just agree — add a specific fact, stat, or insight they didn't mention
-3. End with a subtle nudge to learn more (the URL will be appended separately)
-4. NO hashtags, NO emojis, NO @mentions
-5. Don't be sycophantic ("Great point!") or spammy ("Check out our...")
-6. Sound like a knowledgeable peer, not a marketer
-7. Reference "your 401(k)" or "your retirement" naturally when possible
-8. Keep it conversational and direct
-9. CRITICAL: NEVER invent statistics, percentages, or dollar amounts. Only use facts you are 100% certain about. If unsure, make your point without specific numbers. Vague but honest beats specific but wrong.
+1. Max 200 characters. Every word must earn its place.
+2. NO sycophancy ("Great point!", "So true!") — that's weak
+3. NO hashtags, NO emojis, NO @mentions
+4. Don't sound like a marketer. Sound like someone at a bar who happens to know a lot about finance.
+5. Be slightly confrontational or sarcastic when it fits — but always smart, never dumb
+6. It's OK to mildly disagree with ${authorDisplayName} if it makes for better engagement
+7. CRITICAL: NEVER invent statistics, percentages, or dollar amounts. Only use facts you are 100% certain about. Attitude and sharp writing beats fake numbers every time.
+${includeLink ? `8. End with something that makes people want to learn more (a link will be appended)` : `8. End with a punch, not a call to action. No link will be added — this tweet should stand alone.`}
 
 STYLE EXAMPLES:
-- "He's right. Silver supply deficit hit 182M oz last year while your 401(k) sits in paper."
-- "This is exactly why 401(k) holders are moving to physical assets. The math doesn't lie."
-- "What he's not saying: the Fed printed 40% of all dollars in existence since 2020. Your retirement felt every one."
+- "Bold of your financial advisor to assume the dollar will still be worth something when you retire."
+- "He's being nice about it. The real question is why your 401(k) provider doesn't even offer gold as an option. Follow the money."
+- "Everyone's talking about the stock market. Nobody's asking why central banks are hoarding gold like it's 1971 all over again."
+- "Respectfully, this undersells it. The silver deficit isn't a blip — it's structural. And your retirement portfolio has zero exposure."
 
 OUTPUT FORMAT (JSON):
-{"text": "your quote tweet text here", "articlePath": "/the/best/matching/path"}
+{"text": "your quote tweet text here"${includeLink ? ', "articlePath": "/the/best/matching/path"' : ''}}
 
 Output ONLY the JSON, nothing else.`,
                 },
@@ -124,7 +131,7 @@ Output ONLY the JSON, nothing else.`,
 
         const parsed = JSON.parse(rawText);
         let quoteText = parsed.text as string;
-        const articlePath = parsed.articlePath as string;
+        const articlePath = parsed.articlePath as string | undefined;
 
         // Remove quotes if Claude wrapped it
         if (
@@ -145,7 +152,9 @@ Output ONLY the JSON, nothing else.`,
             }
         }
 
-        const articleUrl = `https://richdadretirement.com${articlePath}`;
+        const articleUrl = articlePath
+            ? `https://richdadretirement.com${articlePath}`
+            : null;
 
         return { text: quoteText, articleUrl };
     } catch (error) {
