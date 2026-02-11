@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-down-at-76k-after-hitting-15mth-lows-on-heavy-liquidations-4483677",
-    "timestamp": 1770190057377
-  },
-  {
     "url": "https://www.marketwatch.com/story/explain-this-financial-paradox-to-me-like-im-16-why-would-i-or-anyone-lease-a-car-82109210?mod=mw_rss_topstories",
     "timestamp": 1770200706675
   },
@@ -7102,5 +7098,9 @@
   {
     "url": "https://www.marketwatch.com/story/super-bowl-lx-and-bad-bunny-draw-huge-ratings-but-fall-short-of-records-13666449?mod=mw_rss_topstories",
     "timestamp": 1770774907042
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-drops-to-67k-as-traders-await-us-jobs-data-for-fed-rate-cues-4498786",
+    "timestamp": 1770798518678
   }
 ]
