@@ -114,6 +114,15 @@ export const leadModalVariants: Record<string, VariantConfig> = {
       "Dedicated specialist walks you through it",
     ],
   },
+  rollover: {
+    headline: "Get Your Free Rollover Checklist",
+    subtext: "Step-by-step: move your retirement to physical gold",
+    benefits: [
+      "Tax-free direct rollover — $0 penalties",
+      "Works with 401k, 403b, TSP, IRA & more",
+      "Most rollovers complete in 2-3 weeks",
+    ],
+  },
   default: {
     headline: "Get Your Free Consultation",
     subtext: "Speak with a Gold IRA specialist",
