@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { ShieldCheck, CheckCircle2, ArrowRight, Phone, Shield, ArrowRightLeft, Building2, DollarSign, Clock, ClipboardCheck, FileCheck, Landmark } from "lucide-react";
-import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { ShieldCheck, CheckCircle2, ArrowRight, Shield, ArrowRightLeft, Building2, DollarSign, ClipboardCheck, FileCheck, Landmark } from "lucide-react";
 import { MoneyMagazineBadge, ZeroFeesBadge } from "@/components/lp/AwardBadges";
 
 export const metadata: Metadata = {
@@ -11,6 +10,12 @@ export const metadata: Metadata = {
         follow: false,
     },
 };
+
+const AUGUSTA_BASE_URL = "https://learn.augustapreciousmetals.com/company-checklist-1/?apmtrkr_cid=1696&aff_id=5129";
+
+function augustaLink(subId: string) {
+    return `${AUGUSTA_BASE_URL}&sub_id=${subId}`;
+}
 
 const faqs = [
     {
@@ -108,14 +113,15 @@ export default function GoldIRARolloverPage() {
 
                     {/* CTA */}
                     <div className="flex flex-col items-center gap-4">
-                        <LeadCaptureButton
-                            variant="rollover"
-                            source="lp-gold-ira-rollover-hero"
+                        <a
+                            href={augustaLink("lp-gold-ira-rollover-hero")}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get My Free Rollover Checklist
                             <ArrowRight className="h-6 w-6" />
-                        </LeadCaptureButton>
+                        </a>
                         <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free • No Obligation • Tax-Free Transfer
@@ -224,13 +230,14 @@ export default function GoldIRARolloverPage() {
                     </div>
 
                     <div className="text-center mt-10">
-                        <LeadCaptureButton
-                            variant="rollover"
-                            source="lp-gold-ira-rollover-steps"
+                        <a
+                            href={augustaLink("lp-gold-ira-rollover-steps")}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                         >
                             Start My Rollover — Free
-                        </LeadCaptureButton>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -341,13 +348,14 @@ export default function GoldIRARolloverPage() {
                         </span>
                     </div>
 
-                    <LeadCaptureButton
-                        variant="rollover"
-                        source="lp-gold-ira-rollover-footer"
+                    <a
+                        href={augustaLink("lp-gold-ira-rollover-footer")}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get My Free Rollover Checklist
-                    </LeadCaptureButton>
+                    </a>
 
                     <p className="text-slate-400 mt-6 text-sm font-sans">
                         100% free. No obligation. Your information is secure.
