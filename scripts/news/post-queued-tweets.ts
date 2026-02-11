@@ -40,34 +40,38 @@ async function postQueuedSocial() {
         return;
     }
 
-    // Post tweets
+    // Post max 1 tweet per run to avoid spamming the timeline
     if (queue.tweets.length > 0) {
-        console.log(`\nPosting ${queue.tweets.length} tweets...`);
-        let tweetsPosted = 0;
-        for (const tweet of queue.tweets) {
-            console.log(`  Posting tweet for: ${tweet.title}`);
-            const success = await postTweet(tweet.text);
-            if (success) tweetsPosted++;
-            await new Promise((resolve) => setTimeout(resolve, 2000));
-        }
-        console.log(`Tweets: ${tweetsPosted}/${queue.tweets.length} posted`);
+        const tweet = queue.tweets[0];
+        console.log(`\nPosting 1 tweet (${queue.tweets.length} in queue, rest saved for next run)...`);
+        console.log(`  Posting tweet for: ${tweet.title}`);
+        const success = await postTweet(tweet.text);
+        console.log(`Tweet: ${success ? "posted" : "failed"}`);
+
+        // Remove the posted tweet, keep the rest for next run
+        queue.tweets.shift();
     }
 
-    // Post to Facebook
+    // Post max 1 Facebook post per run
     if (queue.facebook.length > 0) {
-        console.log(`\nPosting ${queue.facebook.length} Facebook posts...`);
-        let fbPosted = 0;
-        for (const post of queue.facebook) {
-            console.log(`  Posting to Facebook: ${post.title}`);
-            const success = await postToFacebook(post.text, post.url);
-            if (success) fbPosted++;
-            await new Promise((resolve) => setTimeout(resolve, 2000));
-        }
-        console.log(`Facebook: ${fbPosted}/${queue.facebook.length} posted`);
+        const post = queue.facebook[0];
+        console.log(`\nPosting 1 Facebook post (${queue.facebook.length} in queue)...`);
+        console.log(`  Posting to Facebook: ${post.title}`);
+        const success = await postToFacebook(post.text, post.url);
+        console.log(`Facebook: ${success ? "posted" : "failed"}`);
+
+        // Remove the posted one, keep rest for next run
+        queue.facebook.shift();
     }
 
-    cleanup();
-    console.log("\nDone posting all queued social media");
+    // Save remaining items for next run, or clean up if all done
+    if (queue.tweets.length > 0 || queue.facebook.length > 0) {
+        fs.writeFileSync(SOCIAL_QUEUE_FILE, JSON.stringify(queue, null, 2), "utf-8");
+        console.log(`\nRemaining: ${queue.tweets.length} tweet(s), ${queue.facebook.length} FB post(s) — saved for next run`);
+    } else {
+        cleanup();
+    }
+    console.log("\nDone posting queued social media");
 }
 
 function cleanup() {
