@@ -86,6 +86,34 @@ export const leadModalVariants: Record<string, VariantConfig> = {
       "Tax-free rollover options explained",
     ],
   },
+  // --- V2 Campaign Variants ---
+  "free-gold-kit": {
+    headline: "Get Your Free 2026 Gold IRA Kit",
+    subtext: "Everything you need to know about protecting your retirement with gold",
+    benefits: [
+      "Complete Gold IRA guide & fee chart",
+      "2026 tax rules & rollover steps",
+      "Zero obligation — 100% free",
+    ],
+  },
+  "seniors-v2": {
+    headline: "Your Senior\u2019s Gold IRA Guide",
+    subtext: "The safe-haven strategy trusted by Americans 60+",
+    benefits: [
+      "Designed for retirees & pre-retirees",
+      "Phone-based support — no apps needed",
+      "No age limit to get started",
+    ],
+  },
+  "convert-401k": {
+    headline: "Convert Your 401(k) to Gold",
+    subtext: "Tax-free rollover in as little as 3 steps",
+    benefits: [
+      "Tax-free 401(k) to Gold IRA rollover",
+      "Works with 401k, 403b, TSP & IRA",
+      "Dedicated specialist walks you through it",
+    ],
+  },
   default: {
     headline: "Get Your Free Consultation",
     subtext: "Speak with a Gold IRA specialist",

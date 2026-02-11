@@ -5,10 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { insertLead, updateLeadStatus, updateLead, getLeadById, Lead } from "@/lib/supabase";
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { calculatePotentialDeal } from "@/lib/deal-calculator";
-
-// Augusta Zapier webhook - stored in env for security
-const AUGUSTA_WEBHOOK_URL = process.env.AUGUSTA_WEBHOOK_URL!;
-const AFFILIATE_ID = process.env.AUGUSTA_AFFILIATE_ID || "5129";
+import { submitToAugusta } from "@/lib/augusta";
 
 interface LeadData {
   firstName: string;
@@ -17,39 +14,7 @@ interface LeadData {
   phone: string;
   investmentAmount?: string;
   source?: string;
-}
-
-async function submitToAugusta(lead: Lead): Promise<boolean> {
-  const payload = {
-    firstname: lead.first_name,
-    lastname: lead.last_name || "",
-    phone: lead.phone,
-    email: lead.email,
-    affiliate_id: AFFILIATE_ID,
-  };
-
-  try {
-    console.log("[AUGUSTA] Submitting to webhook:", lead.email);
-    const augustaResponse = await fetch(AUGUSTA_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-
-    console.log("[AUGUSTA] Response status:", augustaResponse.status);
-
-    if (augustaResponse.ok) {
-      console.log("[AUGUSTA] ✅ Lead submitted successfully:", lead.email);
-      return true;
-    } else {
-      const errorText = await augustaResponse.text();
-      console.error("[AUGUSTA] ❌ Submission failed:", errorText);
-      return false;
-    }
-  } catch (error) {
-    console.error("[AUGUSTA] Submit error:", error);
-    return false;
-  }
+  skipAugusta?: boolean;
 }
 
 export async function POST(request: NextRequest) {
@@ -120,7 +85,17 @@ export async function POST(request: NextRequest) {
       console.error("[TELEGRAM ERROR]", err);
     }
 
-    // 3. Submit to Augusta via Zapier webhook
+    // 3. Submit to Augusta via Zapier webhook (unless skipAugusta is true)
+    if (body.skipAugusta) {
+      // New confirmation flow: save lead but don't send to Augusta yet
+      return NextResponse.json({
+        success: true,
+        message: "Lead captured — awaiting confirmation",
+        leadId: lead.id,
+        augustaSubmitted: false,
+      });
+    }
+
     const augustaSuccess = await submitToAugusta(lead);
 
     if (augustaSuccess) {
@@ -163,7 +138,7 @@ export async function POST(request: NextRequest) {
 export async function PATCH(request: NextRequest) {
   try {
     const body = await request.json();
-    const { leadId, totalRetirementSavings, percentageToProtect, notes } = body;
+    const { leadId, action, totalRetirementSavings, percentageToProtect, notes } = body;
 
     if (!leadId) {
       return NextResponse.json(
@@ -176,6 +151,20 @@ export async function PATCH(request: NextRequest) {
     const lead = await getLeadById(leadId);
     if (!lead) {
       return NextResponse.json({ success: false, error: "Lead not found" }, { status: 404 });
+    }
+
+    // Handle decline_call action
+    if (action === "decline_call") {
+      await updateLeadStatus(leadId, "declined_call");
+      lead.status = "declined_call";
+
+      try {
+        await updateLeadNotification(lead);
+      } catch (err) {
+        console.error("[TELEGRAM ERROR]", err);
+      }
+
+      return NextResponse.json({ success: true, message: "Lead declined call" });
     }
 
     // Calculate deal potential (default to 100% if no percentage provided)

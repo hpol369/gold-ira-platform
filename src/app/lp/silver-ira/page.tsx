@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, TrendingUp, Factory, Coins, BarChart3 } from "lucide-react";
+import { ShieldCheck, ArrowRight, CheckCircle2, TrendingUp, Factory, Coins, BarChart3, Shield } from "lucide-react";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { MoneyMagazineBadge, ZeroFeesBadge } from "@/components/lp/AwardBadges";
 
@@ -64,10 +63,10 @@ export default function SilverIRAPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
 
-            {/* Top Warning Bar */}
-            <div className="bg-[#B22234] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
+            {/* Top Alert Bar */}
+            <div className="bg-[#000080] text-white p-3 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
-                    <AlertTriangle className="h-4 w-4" />
+                    <Shield className="h-4 w-4" />
                     Silver Supply Deficit: Industrial Demand Exceeds Mining Output
                 </span>
             </div>
@@ -153,32 +152,40 @@ export default function SilverIRAPage() {
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
-                            <Factory className="h-10 w-10 text-[#000080] mb-4" />
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
+                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <Factory className="h-8 w-8 text-[#000080]" />
+                            </div>
                             <h3 className="text-xl font-bold text-[#000080] mb-3">Industrial Demand (50%+)</h3>
                             <p className="text-slate-600">
-                                Silver powers solar panels, electric vehicles, smartphones, and medical devices. Unlike gold, silver gets consumed. Once it's in your iPhone, it's gone forever.
+                                Silver powers solar panels, electric vehicles, smartphones, and medical devices. Unlike gold, silver gets consumed. Once it&apos;s in your iPhone, it&apos;s gone forever.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
-                            <TrendingUp className="h-10 w-10 text-[#000080] mb-4" />
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
+                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <TrendingUp className="h-8 w-8 text-[#000080]" />
+                            </div>
                             <h3 className="text-xl font-bold text-[#000080] mb-3">Supply Deficit</h3>
                             <p className="text-slate-600">
                                 For years, silver demand has exceeded mining supply. The deficit is covered by recycling and above-ground stockpiles—which are shrinking.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
-                            <BarChart3 className="h-10 w-10 text-[#000080] mb-4" />
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
+                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <BarChart3 className="h-8 w-8 text-[#000080]" />
+                            </div>
                             <h3 className="text-xl font-bold text-[#000080] mb-3">Gold-Silver Ratio at 80:1</h3>
                             <p className="text-slate-600">
                                 Historically, it took 15-20 ounces of silver to buy 1 ounce of gold. Today it takes 80+. If the ratio reverts, silver has room to outperform.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
-                            <Coins className="h-10 w-10 text-[#000080] mb-4" />
+                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
+                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <Coins className="h-8 w-8 text-[#000080]" />
+                            </div>
                             <h3 className="text-xl font-bold text-[#000080] mb-3">Accessible Entry Point</h3>
                             <p className="text-slate-600">
                                 At ~$30/oz vs gold at ~$2,400/oz, you can own significantly more physical metal. Silver is easier to buy in small amounts—and easier to sell.
@@ -213,16 +220,16 @@ export default function SilverIRAPage() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 bg-white font-sans">
+            <section className="py-16 bg-slate-100 font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-[#000080] font-serif text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-10">
                         Silver IRA Questions Answered
                     </h2>
 
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                <h3 className="text-lg font-bold text-[#000080] mb-3">{faq.question}</h3>
+                            <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
+                                <h3 className="text-lg font-bold text-[#000080] mb-2">{faq.question}</h3>
                                 <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
@@ -275,9 +282,6 @@ export default function SilverIRAPage() {
                 </div>
             </footer>
 
-            {/* Social Proof Toast */}
-
-            {/* Exit Intent Popup */}
         </div>
     );
 }

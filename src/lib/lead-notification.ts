@@ -32,16 +32,16 @@ function getStatusLine(lead: Lead): string {
     return "✅ <b>QUALIFIED AT AUGUSTA</b>\n💵💵 +$200 GUARANTEED! 💵💵";
   }
 
-  if (status === "sent_to_augusta") {
-    // Check if we have enrichment data
-    if (lead.total_retirement_savings && lead.percentage_to_protect) {
-      return "📤 <b>Sent to Augusta</b>";
-    }
-    return "📤 <b>Sent to Augusta</b>\n⏳ <i>Waiting for enrichment...</i>";
+  if (status === "declined_call") {
+    return "❌ <b>DECLINED CALL</b> — 📧 Added to nurture list";
   }
 
-  // New lead
-  return "⏳ <i>Waiting for enrichment...</i>";
+  if (status === "sent_to_augusta") {
+    return "📤 <b>Sent to Augusta</b> ✅ Wants to be called";
+  }
+
+  // New lead — waiting for confirmation step
+  return "⏳ <i>Waiting for call confirmation...</i>";
 }
 
 // Build the complete notification message

@@ -6,7 +6,7 @@ import { X, User, Mail, Phone, ArrowRight, ArrowLeft, CheckCircle2, Loader2, Shi
 import { useLeadModal } from "@/context/LeadModalContext";
 import { leadModalVariants } from "@/config/lead-modal-variants";
 
-type Step = 1 | 2 | 3 | "thank-you" | "calculator" | "success";
+type Step = 1 | 2 | 3 | "thank-you" | "calculator" | "success" | "confirmation" | "declined-guide";
 
 export default function LeadCaptureModal() {
   const { isOpen, variant, source, closeModal } = useLeadModal();
@@ -137,6 +137,7 @@ export default function LeadCaptureModal() {
           email: formData.email,
           phone: formData.phone,
           source: finalSource,
+          skipAugusta: true,
         }),
       });
 
@@ -147,16 +148,8 @@ export default function LeadCaptureModal() {
           setLeadId(result.leadId);
         }
 
-        // Fire Google Ads conversion immediately on initial capture (don't wait for enrichment)
-        if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "conversion", {
-            send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
-            value: 50.0,
-            currency: "USD",
-          });
-        }
-        // Redirect to Augusta's high-intent scheduling page
-        window.location.href = "https://www.augustapreciousmetals.com/instant-download-thank-you-high";
+        // Show confirmation step (conversion pixel fires on "Yes, Call Me")
+        setStep("confirmation");
       } else {
         setError("We couldn't process your request. Please verify your phone number includes the area code, or call us at 1-800-700-1008.");
       }
@@ -167,23 +160,56 @@ export default function LeadCaptureModal() {
     }
   };
 
+  const handleConfirmCall = async () => {
+    if (!leadId) return;
+
+    setIsSubmitting(true);
+
+    try {
+      await fetch("/api/submit-to-augusta", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ leadId }),
+      });
+    } catch {
+      // Lead is already saved — redirect anyway
+    }
+
+    // Fire Google Ads conversion pixel on "Yes, Call Me"
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
+        value: 50.0,
+        currency: "USD",
+      });
+    }
+
+    setIsSubmitting(false);
+
+    // Redirect to Augusta
+    window.location.href = "https://www.augustapreciousmetals.com/instant-download-thank-you-high";
+  };
+
+  const handleDeclineCall = () => {
+    if (leadId) {
+      // Fire-and-forget: update status to declined_call
+      fetch("/api/submit-lead", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ leadId, action: "decline_call" }),
+      }).catch(() => {});
+    }
+
+    setStep("declined-guide");
+  };
+
   // Calculate savings bracket - DIRECT MAPPING now
   const calculateSavingsBracket = (savingsRange: string, _allocation: string): string => {
-    // We now get the range directly from the user
-    // { value: "under-50k", label: "Under $50k" },
-    // { value: "50k-100k", label: "$50k - $100k" },
-    // { value: "100k-250k", label: "$100k - $250k" },
-    // { value: "250k-500k", label: "$250k - $500k" },
-    // { value: "500k+", label: "$500k+" },
-
-    // Map to the database/API expected values if they differ, or pass through
     if (savingsRange === "under-50k") return "under_50k";
     if (savingsRange === "50k-100k") return "50k_100k";
     if (savingsRange === "100k-250k") return "100k_250k";
     if (savingsRange === "250k-500k") return "250k_500k";
     if (savingsRange === "500k+") return "over_500k";
-
-    // Fallback
     return "under_50k";
   };
 
@@ -226,7 +252,10 @@ export default function LeadCaptureModal() {
     return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
   };
 
-  const progressWidth = step === "success" ? 100 : ((step as number) / 3) * 100;
+  const progressWidth =
+    step === "success" || step === "confirmation" || step === "declined-guide"
+      ? 100
+      : ((step as number) / 3) * 100;
 
   return (
     <AnimatePresence>
@@ -258,7 +287,7 @@ export default function LeadCaptureModal() {
             {/* Content */}
             <div className="p-6 md:p-8">
               {/* Progress bar */}
-              {step !== "success" && step !== "thank-you" && step !== "calculator" && (
+              {step !== "success" && step !== "thank-you" && step !== "calculator" && step !== "confirmation" && step !== "declined-guide" && (
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-white/80 text-sm">Step {step} of 3</span>
@@ -271,6 +300,95 @@ export default function LeadCaptureModal() {
                       animate={{ width: `${progressWidth}%` }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
                     />
+                  </div>
+                </div>
+              )}
+
+              {/* Confirmation Step — "Would you like a specialist to call you?" */}
+              {step === "confirmation" && (
+                <div className="text-center py-4">
+                  <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-green-500/30">
+                    <CheckCircle2 className="h-10 w-10 text-green-400" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                    Great, {formData.firstName}!
+                  </h2>
+                  <p className="text-lg text-white/90 mb-8">
+                    Would you like a specialist to call you for a free, no-pressure consultation?
+                  </p>
+
+                  {/* Yes, Call Me — GREEN button */}
+                  <button
+                    onClick={handleConfirmCall}
+                    disabled={isSubmitting}
+                    className="w-full bg-green-600 hover:bg-green-700 disabled:bg-green-800 text-white text-xl font-bold py-5 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 mb-4"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="h-6 w-6 animate-spin" />
+                        Connecting...
+                      </>
+                    ) : (
+                      <>
+                        <Phone className="h-6 w-6" />
+                        Yes, Call Me — It&apos;s Free
+                      </>
+                    )}
+                  </button>
+
+                  {/* Trust signals */}
+                  <div className="flex flex-wrap items-center justify-center gap-4 text-white/70 text-sm mb-6">
+                    <span className="flex items-center gap-1.5">
+                      <ShieldCheck className="h-4 w-4 text-green-400" />
+                      No obligation
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Star className="h-4 w-4 text-amber-400" />
+                      Zero BBB complaints
+                    </span>
+                  </div>
+
+                  {/* No thanks link */}
+                  <button
+                    onClick={handleDeclineCall}
+                    className="text-white/50 hover:text-white/70 text-sm py-2 transition-colors underline underline-offset-2"
+                  >
+                    No thanks, I&apos;ll explore on my own
+                  </button>
+                </div>
+              )}
+
+              {/* Declined Step — redirect to homepage */}
+              {step === "declined-guide" && (
+                <div className="text-center py-4">
+                  <div className="w-20 h-20 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-amber-500/30">
+                    <CheckCircle2 className="h-10 w-10 text-amber-400" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                    No Problem, {formData.firstName}!
+                  </h2>
+                  <p className="text-lg text-white/80 mb-6">
+                    Feel free to explore our resources — everything you need to make an informed decision.
+                  </p>
+
+                  <a
+                    href="/"
+                    className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                  >
+                    Explore Our Resources
+                    <ArrowRight className="h-5 w-5" />
+                  </a>
+
+                  <button
+                    onClick={closeModal}
+                    className="w-full text-white/50 hover:text-white/70 text-sm py-3 transition-colors mt-3"
+                  >
+                    Close
+                  </button>
+
+                  <div className="flex items-center justify-center gap-2 text-white/60 text-sm mt-4">
+                    <ShieldCheck className="h-4 w-4" />
+                    Your information is secure
                   </div>
                 </div>
               )}
@@ -694,7 +812,7 @@ export default function LeadCaptureModal() {
               )}
 
               {/* Trust signals (only on steps 1-3) */}
-              {step !== "success" && step !== "thank-you" && step !== "calculator" && (
+              {step !== "success" && step !== "thank-you" && step !== "calculator" && step !== "confirmation" && step !== "declined-guide" && (
                 <div className="mt-6 pt-4 border-t border-white/10 space-y-3">
                   {/* Stars */}
                   <div className="flex items-center justify-center gap-1 text-amber-400">

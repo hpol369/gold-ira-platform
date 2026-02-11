@@ -17,7 +17,7 @@ export interface Lead {
   source: string;
   ip_address?: string;
   user_agent?: string;
-  status?: "new" | "sent_to_augusta" | "contacted" | "qualified" | "unqualified" | "converted";
+  status?: "new" | "sent_to_augusta" | "contacted" | "qualified" | "unqualified" | "converted" | "declined_call";
   augusta_submitted_at?: string;
   notes?: string;
   total_retirement_savings?: string;

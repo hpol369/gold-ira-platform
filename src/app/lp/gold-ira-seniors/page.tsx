@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ShieldCheck, CheckCircle2, ArrowRight, Heart, Phone, Users, Clock, Shield, Award, Gem, HandHeart, Moon } from "lucide-react";
+import { ShieldCheck, CheckCircle2, ArrowRight, Heart, Phone, Users, Shield, Award, HandHeart, Moon } from "lucide-react";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { MoneyMagazineBadge, ZeroFeesBadge } from "@/components/lp/AwardBadges";
 
@@ -18,6 +18,11 @@ const faqs = [
         question: "Is there an age limit for opening a Gold IRA?",
         answer:
             "No! There's no upper age limit for opening or contributing to a Gold IRA. Whether you're 60, 70, or 80+, you can open a Gold IRA. You can also roll over existing retirement accounts at any age. Many of Augusta's clients are in their 60s, 70s, and beyond.",
+    },
+    {
+        question: "Am I too old at 70 to start a Gold IRA?",
+        answer:
+            "Absolutely not. Many of Augusta's most successful clients started in their 70s. Gold isn't a growth play — it's a preservation play. Whether you have 5 years or 25 years left in retirement, protecting your wealth from inflation and market crashes is always smart.",
     },
     {
         question: "What about Required Minimum Distributions (RMDs)?",
@@ -125,7 +130,7 @@ export default function GoldIRASeniorsPage() {
                     {/* CTA Area */}
                     <div className="flex flex-col items-center gap-4">
                         <LeadCaptureButton
-                            variant="seniors"
+                            variant="seniors-v2"
                             source="lp-gold-ira-seniors-hero"
                             className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
@@ -302,7 +307,7 @@ export default function GoldIRASeniorsPage() {
 
                         <div className="text-center mt-8">
                             <LeadCaptureButton
-                                variant="seniors"
+                                variant="seniors-v2"
                                 source="lp-gold-ira-seniors-middle"
                                 className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                             >
@@ -356,7 +361,7 @@ export default function GoldIRASeniorsPage() {
                     </p>
 
                     <LeadCaptureButton
-                        variant="seniors"
+                        variant="seniors-v2"
                         source="lp-gold-ira-seniors-footer"
                         className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
