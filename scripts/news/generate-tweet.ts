@@ -83,7 +83,7 @@ What's YOUR retirement actually allocated to right now?"`,
     {
         name: "spicy-stat",
         maxChars: 700,
-        includeLink: true,
+        includeLink: false,
         instruction: `Write a SPICY STAT post (500-700 chars). Lead with a shocking fact from the article, then build a narrative around it. Make the reader feel like they're missing something everyone else already knows.
 
 FORMAT:
@@ -107,7 +107,7 @@ One of them is lying to you."`,
     {
         name: "contrarian",
         maxChars: 600,
-        includeLink: true,
+        includeLink: false,
         instruction: `Write a CONTRARIAN post (400-600 chars). Challenge conventional financial wisdom with a well-structured argument. Use a quote or common saying, then dismantle it.
 
 FORMAT:

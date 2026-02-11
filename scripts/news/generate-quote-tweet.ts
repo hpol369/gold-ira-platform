@@ -65,8 +65,8 @@ export async function generateQuoteTweet(
             .map((p) => `- richdadretirement.com${p.path} (${p.title})`)
             .join("\n");
 
-        // Randomly decide if we include a link (40% chance)
-        const includeLink = Math.random() < 0.4;
+        // Never include site links in quote tweets
+        const includeLink = false;
 
         const response = await anthropic.messages.create({
             model: CONFIG.claude.model,
