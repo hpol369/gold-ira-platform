@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getLeadByEmail, updateLead } from "@/lib/supabase";
 import { updateLeadNotification } from "@/lib/lead-notification";
+import { sendNotification } from "@/lib/notifications";
 
 // Types for Augusta postback events
 export type PostbackType = "lead_capture" | "qualified_lead" | "trade_complete";
@@ -95,6 +96,16 @@ async function handlePostback(request: NextRequest, method: string) {
     console.log(`[POSTBACK] Received ${method} request`);
     console.log(`[POSTBACK] Raw params:`, JSON.stringify(params, null, 2));
     console.log(`[POSTBACK] Processed event:`, JSON.stringify(event, null, 2));
+
+    // Send Telegram notification for lead_capture postbacks (direct Augusta link leads)
+    if (eventType === "lead_capture") {
+      try {
+        await sendNotification(event);
+        console.log(`[POSTBACK] Telegram notification sent for lead_capture`);
+      } catch (notifyError) {
+        console.error(`[POSTBACK] lead_capture notification failed:`, notifyError);
+      }
+    }
 
     // Try to update the living notification
     try {
