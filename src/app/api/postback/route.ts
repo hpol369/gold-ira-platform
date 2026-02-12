@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getLeadByEmail, updateLead } from "@/lib/supabase";
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { sendNotification } from "@/lib/notifications";
+import { uploadClickConversion } from "@/lib/google-ads";
 
 // Types for Augusta postback events
 export type PostbackType = "lead_capture" | "qualified_lead" | "trade_complete";
@@ -104,6 +105,31 @@ async function handlePostback(request: NextRequest, method: string) {
         console.log(`[POSTBACK] Telegram notification sent for lead_capture`);
       } catch (notifyError) {
         console.error(`[POSTBACK] lead_capture notification failed:`, notifyError);
+      }
+    }
+
+    // Fire Google Ads offline conversion using gclid (passed as sub_id)
+    // This is needed when traffic goes directly to Augusta's landing page via Google Ads
+    const gclid = event.sub_id;
+    if (gclid && gclid !== "unknown") {
+      const conversionValues: Record<PostbackType, number> = {
+        lead_capture: 50,       // Lead captured - $50 value
+        qualified_lead: 200,    // Qualified by Augusta - $200 value
+        trade_complete: 1000,   // Trade completed - $1000+ value
+      };
+
+      const conversionValue = conversionValues[eventType] || 50;
+
+      try {
+        const result = await uploadClickConversion(gclid, conversionValue);
+        if (result.success) {
+          console.log(`[POSTBACK] Google Ads conversion uploaded: ${eventType}, gclid=${gclid}, value=$${conversionValue}`);
+        } else {
+          console.warn(`[POSTBACK] Google Ads conversion upload failed: ${result.error}`);
+        }
+      } catch (gadsError) {
+        console.error(`[POSTBACK] Google Ads conversion error:`, gadsError);
+        // Don't fail the postback - Google Ads upload is non-critical
       }
     }
 

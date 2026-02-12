@@ -115,7 +115,7 @@ interface CandidateTweet {
  */
 async function fetchCandidateTweets(client: TwitterApi): Promise<CandidateTweet[]> {
     const candidates: CandidateTweet[] = [];
-    const sixHoursAgo = new Date(Date.now() - 6 * 60 * 60 * 1000);
+    const twelveHoursAgo = new Date(Date.now() - 12 * 60 * 60 * 1000);
 
     // Strategy 1: Try userTimeline for each account
     let useTimeline = true;
@@ -126,7 +126,7 @@ async function fetchCandidateTweets(client: TwitterApi): Promise<CandidateTweet[
                 const timeline = await client.v2.userTimeline(account.userId, {
                     max_results: 10,
                     "tweet.fields": ["created_at", "text"],
-                    start_time: sixHoursAgo.toISOString(),
+                    start_time: twelveHoursAgo.toISOString(),
                     exclude: ["retweets", "replies"],
                 });
 

@@ -2,8 +2,12 @@ name: Quote Tweet Pipeline
 
 on:
   schedule:
-    # Run every 4 hours (6x per day)
-    - cron: '0 */4 * * *'
+    # 5x per day at US peak engagement times (EST → UTC)
+    - cron: '0 13 * * *'   # 8:00 AM EST - morning coffee
+    - cron: '30 15 * * *'  # 10:30 AM EST - mid-morning
+    - cron: '0 18 * * *'   # 1:00 PM EST - lunch break
+    - cron: '0 21 * * *'   # 4:00 PM EST - afternoon
+    - cron: '0 0 * * *'    # 7:00 PM EST - evening
   workflow_dispatch: # Allow manual trigger
 
 permissions:

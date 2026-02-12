@@ -129,7 +129,7 @@ export const CONFIG = {
     // Quote tweet pipeline - quote big accounts tweeting about gold/retirement
     quoteTweets: {
         enabled: !!process.env.TWITTER_API_KEY,
-        maxPerDay: 2,
+        maxPerDay: 5,
         keywords: [
             "gold", "silver", "401k", "401(k)", "retirement", "inflation",
             "fed", "federal reserve", "interest rate", "dollar", "currency",
