@@ -1,25 +1,5 @@
 [
   {
-    "url": "https://www.marketwatch.com/story/this-ai-stock-just-got-called-up-to-the-s-p-500-8b5407a9?mod=mw_rss_topstories",
-    "timestamp": 1770248850724
-  },
-  {
-    "url": "https://www.marketwatch.com/story/arms-stock-falls-after-earnings-showing-how-high-the-bar-is-for-ai-companies-now-960a93d0?mod=mw_rss_topstories",
-    "timestamp": 1770253430520
-  },
-  {
-    "url": "https://www.cnbc.com/2026/02/05/chinas-xi-taiwan-trump-trade-talks-iran-russia.html",
-    "timestamp": 1770262837731
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-plunges-below-71k-as-global-tech-selloff-hits-risk-assets-4486483",
-    "timestamp": 1770271756735
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/xrp-falls-10-in-rout-4486508",
-    "timestamp": 1770275668586
-  },
-  {
     "url": "https://silverseek.com/article/silvers-sudden-17-plunge-wipes-out-two-day-recovery-rout-bloomberg",
     "timestamp": 1770280347151
   },
@@ -6878,5 +6858,13 @@
   {
     "url": "https://www.marketwatch.com/story/ciscos-stock-falls-as-investors-pan-a-seemingly-upbeat-earnings-report-17f46ba4?mod=mw_rss_topstories",
     "timestamp": 1770850560347
+  },
+  {
+    "url": "https://www.cnbc.com/2026/02/12/uk-q4-gdp-economy.html",
+    "timestamp": 1770881869158
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-muted-near-67k-after-strong-us-jobs-data-cpi-awaited-4501696",
+    "timestamp": 1770881869158
   }
 ]
