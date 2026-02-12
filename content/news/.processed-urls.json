@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://www.marketwatch.com/story/why-microsofts-stock-just-lost-a-big-fan-in-the-wake-of-alphabets-earnings-8e744c93?mod=mw_rss_topstories",
-    "timestamp": 1770321017524
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_3645_AnalystReport_1770316218000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1770321017524
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_5946_AnalystReport_1770316218000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1770321017524
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_2942_AnalystReport_1770316218000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1770321017524
-  },
-  {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-hits-low-at-64944-432SI-4488777",
     "timestamp": 1770322821302
   },
@@ -6914,5 +6898,9 @@
   {
     "url": "https://finance.yahoo.com/research/reports/ARGUS_46147_MarketUpdate_1770919003000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
     "timestamp": 1770925086203
+  },
+  {
+    "url": "https://www.cnbc.com/2026/02/12/the-january-cpi-inflation-report-is-due-out-friday-morning-heres-what-its-expected-to-show.html",
+    "timestamp": 1770926483744
   }
 ]
