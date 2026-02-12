@@ -176,7 +176,7 @@ async function fetchCandidateTweets(client: TwitterApi): Promise<CandidateTweet[
                 "tweet.fields": ["created_at", "author_id"],
                 expansions: ["author_id"],
                 "user.fields": ["username", "name"],
-                start_time: sixHoursAgo.toISOString(),
+                start_time: twelveHoursAgo.toISOString(),
             });
 
             // Build author lookup from API includes (resolves the @unknown issue)
