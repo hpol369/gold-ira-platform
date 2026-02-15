@@ -1,41 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/worried-amazons-ai-spending-9-233000738.html",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://finance.yahoo.com/news/kairos-receives-final-10m-mt-232900363.html",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://finance.yahoo.com/news/lindian-moves-kangankunde-execution-phase-232400949.html",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://www.barrons.com/articles/stock-futures-sunday-trading-63952c9e?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://finance.yahoo.com/news/where-xrp-3-years-231300661.html",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-amazon-stock-dropped-week-230830419.html",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://finance.yahoo.com/news/2-rich-quick-attempts-went-230804778.html",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://finance.yahoo.com/news/no-reasonable-scenario-forces-strategy-230111948.html",
-    "timestamp": 1770594686561
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bitx-investors-face-stunning-33-222735749.html",
-    "timestamp": 1770594686561
-  },
-  {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-steadies-above-70k-japan-election-lifts-sentiment-4492641",
     "timestamp": 1770622847268
   },
@@ -6646,5 +6610,13 @@
   {
     "url": "https://finance.yahoo.com/news/markets-don-t-bottom-fear-201825716.html",
     "timestamp": 1771198950353
+  },
+  {
+    "url": "https://finance.yahoo.com/news/does-coinbases-ceo-know-dont-233138605.html",
+    "timestamp": 1771199893634
+  },
+  {
+    "url": "https://finance.yahoo.com/news/invested-10-000-palantir-during-233000653.html",
+    "timestamp": 1771199893634
   }
 ]
