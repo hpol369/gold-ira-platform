@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-slips-below-70k-in-rangebound-trade-key-us-data-loom-4495509",
-    "timestamp": 1770706042831
-  },
-  {
     "url": "https://www.marketwatch.com/story/bp-to-halt-stock-buybacks-as-profit-slumps-0457cb71?mod=mw_rss_topstories",
     "timestamp": 1770709835303
   },
@@ -6438,5 +6434,9 @@
   {
     "url": "https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories",
     "timestamp": 1771285770829
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-steady-at-68k-in-holidaythinned-trade-4507894",
+    "timestamp": 1771312432174
   }
 ]
