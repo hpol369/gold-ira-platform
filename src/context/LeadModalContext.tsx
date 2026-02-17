@@ -18,9 +18,7 @@ export function LeadModalProvider({ children }: { children: ReactNode }) {
   const [source, setSource] = useState("");
 
   const openModal = useCallback((newVariant: string, newSource: string) => {
-    setVariant(newVariant);
-    setSource(newSource);
-    setIsOpen(true);
+    window.location.href = "https://learn.augustapreciousmetals.com/company-checklist-1/?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908";
   }, []);
 
   const closeModal = useCallback(() => {

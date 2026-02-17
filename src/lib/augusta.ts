@@ -23,12 +23,14 @@ export async function submitToAugusta(lead: Lead): Promise<boolean> {
 
     console.log("[AUGUSTA] Response status:", augustaResponse.status);
 
+    const responseBody = await augustaResponse.text();
+    console.log("[AUGUSTA] Response body:", responseBody);
+
     if (augustaResponse.ok) {
       console.log("[AUGUSTA] ✅ Lead submitted successfully:", lead.email);
       return true;
     } else {
-      const errorText = await augustaResponse.text();
-      console.error("[AUGUSTA] ❌ Submission failed:", errorText);
+      console.error("[AUGUSTA] ❌ Submission failed:", responseBody);
       return false;
     }
   } catch (error) {
