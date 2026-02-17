@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://www.marketwatch.com/story/bp-to-halt-stock-buybacks-as-profit-slumps-0457cb71?mod=mw_rss_topstories",
-    "timestamp": 1770709835303
-  },
-  {
-    "url": "https://www.marketwatch.com/story/astrazeneca-profit-climbs-on-cancer-and-heart-drug-demand-b673c908?mod=mw_rss_topstories",
-    "timestamp": 1770709835303
-  },
-  {
     "url": "https://finance.yahoo.com/news/heres-dow-jones-industrial-average-092600663.html",
     "timestamp": 1770716507632
   },
@@ -6438,5 +6430,9 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-steady-at-68k-in-holidaythinned-trade-4507894",
     "timestamp": 1771312432174
+  },
+  {
+    "url": "https://www.marketwatch.com/story/gold-prices-tumble-below-5-000-as-china-holidays-dent-support-d093e677?mod=mw_rss_topstories",
+    "timestamp": 1771317544939
   }
 ]
