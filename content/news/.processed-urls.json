@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.marketwatch.com/story/super-bowl-lx-and-bad-bunny-draw-huge-ratings-but-fall-short-of-records-13666449?mod=mw_rss_topstories",
-    "timestamp": 1770774907042
-  },
-  {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-drops-to-67k-as-traders-await-us-jobs-data-for-fed-rate-cues-4498786",
     "timestamp": 1770798518678
   },
@@ -6382,5 +6378,9 @@
   {
     "url": "https://www.marketwatch.com/story/palo-alto-networks-stock-slides-as-underwhelming-outlook-overshadows-ai-messaging-7bb6ad12?mod=mw_rss_topstories",
     "timestamp": 1771376724916
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/insurance/article/how-much-does-a-vet-visit-cost-205934739.html",
+    "timestamp": 1771396529534
   }
 ]
