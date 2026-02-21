@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/kiltearn-bought-265-000-lkq-203921418.html",
-    "timestamp": 1771102683260
-  },
-  {
-    "url": "https://finance.yahoo.com/news/3-signs-youre-better-off-203800910.html",
-    "timestamp": 1771102683260
-  },
-  {
     "url": "https://finance.yahoo.com/news/principal-financial-ceo-lifts-roe-210429080.html",
     "timestamp": 1771103906647
   },
@@ -6586,5 +6578,9 @@
   {
     "url": "https://finance.yahoo.com/news/whetstone-dumps-79-000-monday-202530325.html",
     "timestamp": 1771707350136
+  },
+  {
+    "url": "https://finance.yahoo.com/news/low-cost-index-funds-beginner-180616867.html",
+    "timestamp": 1771708331040
   }
 ]
