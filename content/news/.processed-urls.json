@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/wendys-making-big-change-no-195119593.html",
-    "timestamp": 1771186381467
-  },
-  {
-    "url": "https://finance.yahoo.com/news/1-important-thing-duolingo-must-194800442.html",
-    "timestamp": 1771186381467
-  },
-  {
     "url": "https://finance.yahoo.com/news/one-artificial-intelligence-ai-stock-202500254.html",
     "timestamp": 1771188204017
   },
@@ -6638,5 +6630,17 @@
   {
     "url": "https://www.barrons.com/articles/nvidia-warner-bros-berkshire-hathaway-home-depot-and-more-stocks-to-watch-this-week-87338ad3?siteid=yhoof2&yptr=yahoo",
     "timestamp": 1771790101229
+  },
+  {
+    "url": "https://finance.yahoo.com/news/crowdstrike-stock-buy-falling-17-195100622.html",
+    "timestamp": 1771791213514
+  },
+  {
+    "url": "https://finance.yahoo.com/news/betting-against-wall-street-inverse-194300014.html",
+    "timestamp": 1771791213514
+  },
+  {
+    "url": "https://finance.yahoo.com/news/5-critical-factors-could-end-191545888.html",
+    "timestamp": 1771791213514
   }
 ]
