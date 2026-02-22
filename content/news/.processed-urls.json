@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/xrp-climbs-10-as-investors-gain-confidence-4507271",
-    "timestamp": 1771132680949
-  },
-  {
     "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-sunday-february-15-2026-110031400.html",
     "timestamp": 1771161925300
   },
@@ -6530,5 +6526,9 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/ripple-ceo-predicts-90-chance-of-us-crypto-bill-passage-by-april-4517544",
     "timestamp": 1771731845163
+  },
+  {
+    "url": "https://finance.yahoo.com/news/plug-power-plug-confronts-legal-105001462.html",
+    "timestamp": 1771751995649
   }
 ]
