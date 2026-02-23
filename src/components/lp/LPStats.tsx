@@ -22,7 +22,7 @@ export function LPStats({ headline, stats, className }: LPStatsProps) {
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl md:text-2xl font-bold text-white text-center mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">
           {headline}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
@@ -31,7 +31,7 @@ export function LPStats({ headline, stats, className }: LPStatsProps) {
               <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-1 md:mb-2">
                 {stat.value}
               </div>
-              <div className="text-xs md:text-sm text-slate-400">{stat.label}</div>
+              <div className="text-sm md:text-base text-slate-200">{stat.label}</div>
             </div>
           ))}
         </div>

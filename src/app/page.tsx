@@ -13,54 +13,59 @@ const WealthCalculator = dynamic(
   { ssr: true, loading: () => <div className="h-96 bg-slate-100 animate-pulse" /> }
 );
 
+// Loading skeleton component for consistent CLS prevention
+function SectionSkeleton({ height = "h-64" }: { height?: string }) {
+  return <div className={`${height} bg-slate-100 animate-pulse rounded-lg`} />;
+}
+
 const QuizCTA = dynamic(
   () => import("@/components/home/QuizCTA").then(mod => ({ default: mod.QuizCTA })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-48" /> }
 );
 
 const DailyBrief = dynamic(
   () => import("@/components/home/DailyBrief").then(mod => ({ default: mod.DailyBrief })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-72" /> }
 );
 
 const ValueProps = dynamic(
   () => import("@/components/home/ValueProps").then(mod => ({ default: mod.ValueProps })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-64" /> }
 );
 
 const HowSection = dynamic(
   () => import("@/components/home/GoldenCircle").then(mod => ({ default: mod.HowSection })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-80" /> }
 );
 
 const FeaturedPartner = dynamic(
   () => import("@/components/home/FeaturedPartner").then(mod => ({ default: mod.FeaturedPartner })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-72" /> }
 );
 
 const Testimonials = dynamic(
   () => import("@/components/home/Testimonials").then(mod => ({ default: mod.Testimonials })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-64" /> }
 );
 
 const UrgencySection = dynamic(
   () => import("@/components/home/UrgencySection").then(mod => ({ default: mod.UrgencySection })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-64" /> }
 );
 
 const NewsletterSignup = dynamic(
   () => import("@/components/email/NewsletterSignup").then(mod => ({ default: mod.NewsletterSignup })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-48" /> }
 );
 
 const ComparisonTable = dynamic(
   () => import("@/components/home/ComparisonTable").then(mod => ({ default: mod.ComparisonTable })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
 );
 
 const TrustBadges = dynamic(
   () => import("@/components/home/TrustBadges").then(mod => ({ default: mod.TrustBadges })),
-  { ssr: true }
+  { ssr: true, loading: () => <SectionSkeleton height="h-32" /> }
 );
 
 export default function Home() {

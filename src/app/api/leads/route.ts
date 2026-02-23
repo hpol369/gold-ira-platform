@@ -123,9 +123,20 @@ export async function POST(request: NextRequest) {
 
 /**
  * GET /api/leads
- * Retrieve all leads (for admin/debugging purposes)
+ * Retrieve all leads (protected - requires API key)
  */
-export async function GET() {
+export async function GET(request: NextRequest) {
+  // Require API key for admin access
+  const apiKey = request.headers.get("x-api-key");
+  const expectedKey = process.env.ADMIN_API_KEY;
+
+  if (!expectedKey || apiKey !== expectedKey) {
+    return NextResponse.json(
+      { success: false, error: "Unauthorized" },
+      { status: 401 }
+    );
+  }
+
   try {
     const leads = await getAllLeads();
 

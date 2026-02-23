@@ -2,10 +2,41 @@
 // Stores lead in Supabase, sends Telegram notification, and submits to Augusta
 
 import { NextRequest, NextResponse } from "next/server";
-import { insertLead, updateLeadStatus, updateLead, getLeadById, Lead } from "@/lib/supabase";
+import { insertLead, updateLeadStatus, updateLead, getLeadById, getLeadByEmail, Lead } from "@/lib/supabase";
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { calculatePotentialDeal } from "@/lib/deal-calculator";
 import { submitToAugusta } from "@/lib/augusta";
+
+// Simple rate limiting (per IP, resets on deploy)
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT = 10; // max submissions per window
+const RATE_WINDOW = 60 * 60 * 1000; // 1 hour
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_WINDOW });
+    return false;
+  }
+  entry.count++;
+  return entry.count > RATE_LIMIT;
+}
+
+// Validation helpers
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+function isValidEmail(email: string): boolean {
+  return EMAIL_REGEX.test(email) && email.length <= 254;
+}
+
+function normalizePhone(phone: string): string {
+  return phone.replace(/\D/g, "").slice(-10);
+}
+
+function isValidPhone(phone: string): boolean {
+  const digits = normalizePhone(phone);
+  return digits.length === 10 && /^[2-9]/.test(digits);
+}
 
 interface LeadData {
   firstName: string;
@@ -19,6 +50,16 @@ interface LeadData {
 
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      request.headers.get("x-real-ip") || "unknown";
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { success: false, error: "Too many requests" },
+        { status: 429 }
+      );
+    }
+
     const body: LeadData = await request.json();
 
     // Validate required fields
@@ -29,11 +70,43 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate email format
+    if (!isValidEmail(body.email)) {
+      return NextResponse.json(
+        { success: false, error: "Invalid email format" },
+        { status: 400 }
+      );
+    }
+
+    // Validate phone (must be 10 digits US number)
+    if (!isValidPhone(body.phone)) {
+      return NextResponse.json(
+        { success: false, error: "Invalid phone number - must be 10 digit US number" },
+        { status: 400 }
+      );
+    }
+
+    // Sanitize inputs (strip HTML/script tags)
+    body.firstName = body.firstName.replace(/<[^>]*>/g, "").trim().slice(0, 100);
+    body.lastName = (body.lastName || "").replace(/<[^>]*>/g, "").trim().slice(0, 100);
+    body.email = body.email.trim().toLowerCase().slice(0, 254);
+    body.phone = normalizePhone(body.phone);
+
+    // Deduplication: check if email already exists
+    const existingLead = await getLeadByEmail(body.email);
+    if (existingLead) {
+      console.log("[LEAD] Duplicate email detected:", body.email);
+      // Return success to user but don't create duplicate
+      return NextResponse.json({
+        success: true,
+        message: "Lead received",
+        leadId: existingLead.id,
+        augustaSubmitted: existingLead.status === "sent_to_augusta",
+      });
+    }
+
     // Get request metadata
     const userAgent = request.headers.get("user-agent") || "Mozilla/5.0";
-    const ip = request.headers.get("x-forwarded-for")?.split(",")[0] ||
-      request.headers.get("x-real-ip") ||
-      "unknown";
 
     // Get location from Vercel geo headers
     const country = request.headers.get("x-vercel-ip-country") || "";
@@ -140,9 +213,9 @@ export async function PATCH(request: NextRequest) {
     const body = await request.json();
     const { leadId, action, totalRetirementSavings, percentageToProtect, notes } = body;
 
-    if (!leadId) {
+    if (!leadId || !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(leadId)) {
       return NextResponse.json(
-        { success: false, error: "Missing leadId" },
+        { success: false, error: "Missing or invalid leadId" },
         { status: 400 }
       );
     }

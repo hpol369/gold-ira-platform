@@ -88,6 +88,33 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Missing url parameter" }, { status: 400 });
   }
 
+  // Validate redirect URL - only allow known domains and internal paths
+  const ALLOWED_DOMAINS = [
+    "augustapreciousmetals.com",
+    "learn.augustapreciousmetals.com",
+    "noblegoldinvestments.com",
+    "goldco.com",
+    "birchgold.com",
+    "americanhartfordgold.com",
+    "richdadretirement.com",
+    "www.richdadretirement.com",
+  ];
+
+  if (!destination.startsWith("/")) {
+    try {
+      const destUrl = new URL(destination);
+      const isAllowed = ALLOWED_DOMAINS.some(domain =>
+        destUrl.hostname === domain || destUrl.hostname.endsWith("." + domain)
+      );
+      if (!isAllowed || !["http:", "https:"].includes(destUrl.protocol)) {
+        console.warn(`[CLICK] Blocked redirect to disallowed URL: ${destination}`);
+        return NextResponse.json({ error: "Invalid redirect URL" }, { status: 400 });
+      }
+    } catch {
+      return NextResponse.json({ error: "Invalid URL format" }, { status: 400 });
+    }
+  }
+
   // Get visitor info
   const userAgent = request.headers.get("user-agent") || "";
   const referer = request.headers.get("referer") || "direct";

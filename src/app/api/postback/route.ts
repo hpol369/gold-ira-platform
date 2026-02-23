@@ -193,10 +193,14 @@ function determineEventType(params: Record<string, string>): PostbackType {
   return "lead_capture";
 }
 
-// Endpoint to view recent conversions (protected in production)
+// OPTIONS - CORS preflight only, no data exposure
 export async function OPTIONS() {
-  return NextResponse.json({
-    conversions: conversions.slice(-50), // Last 50
-    total: conversions.length
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "https://www.richdadretirement.com",
+      "Access-Control-Allow-Methods": "GET, POST",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
   });
 }

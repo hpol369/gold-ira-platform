@@ -30,7 +30,7 @@ export function createPageMetadata(params: {
     title,
     description,
     url,
-    image = "/og-image.png",
+    image = "/og-default.jpg",
     imageAlt = "Rich Dad Retirement - Gold IRA Reviews & Comparisons",
     type = "website",
   } = params;

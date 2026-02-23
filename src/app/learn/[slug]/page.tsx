@@ -371,20 +371,22 @@ export default async function LearnArticlePage({ params }: PageProps) {
     headline: article.title,
     description: article.metaDescription,
     author: {
-      "@type": "Organization",
-      name: "Rich Dad Retirement",
+      "@type": "Person",
+      name: "Thomas Richardson",
+      url: "https://www.richdadretirement.com/author/thomas-richardson",
     },
     publisher: {
       "@type": "Organization",
       name: "Rich Dad Retirement",
       logo: {
         "@type": "ImageObject",
-        url: "https://richdadretirement.com/logo.png",
+        url: "https://www.richdadretirement.com/logo.png",
       },
     },
+    datePublished: new Date().toISOString(),
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://richdadretirement.com/learn/${slug}`,
+      "@id": `https://www.richdadretirement.com/learn/${slug}`,
     },
   };
 

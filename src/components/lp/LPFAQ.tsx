@@ -21,7 +21,7 @@ export function LPFAQ({ headline, faqs, className }: LPFAQProps) {
   return (
     <section className={cn("bg-slate-900 py-16 md:py-20", className)}>
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8 md:mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8 md:mb-12">
           {headline}
         </h2>
         <div className="space-y-4">
@@ -37,8 +37,9 @@ export function LPFAQ({ headline, faqs, className }: LPFAQProps) {
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between p-5 text-left"
+                aria-expanded={openIndex === index}
               >
-                <span className="font-semibold text-white pr-4">
+                <span className="font-semibold text-white pr-4 text-base md:text-lg">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -54,7 +55,7 @@ export function LPFAQ({ headline, faqs, className }: LPFAQProps) {
                   openIndex === index ? "max-h-[60vh] md:max-h-[500px]" : "max-h-0"
                 )}
               >
-                <div className="px-5 pb-5 text-slate-400 text-sm md:text-base">{faq.answer}</div>
+                <div className="px-5 pb-5 text-slate-200 text-base md:text-lg leading-relaxed">{faq.answer}</div>
               </div>
             </div>
           ))}

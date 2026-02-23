@@ -73,7 +73,7 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             {/* Backdrop */}
             <div
-                className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+                className="absolute inset-0 bg-black/40 backdrop-blur-sm"
                 onClick={handleClose}
             />
 
@@ -121,21 +121,17 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                     <ArrowRight className="h-5 w-5" />
                 </TrackedLPLink>
 
-                {/* Secondary Link */}
+                {/* Trust signal */}
                 <p className="mt-4 text-slate-400 text-sm">
-                    Or take our{" "}
-                    <Link href="/tools/gold-allocation-calculator" className="text-amber-500 hover:underline">
-                        free portfolio audit
-                    </Link>
+                    100% free, no commitment required
                 </p>
 
                 {/* Dismiss Link */}
                 <button
                     onClick={handleClose}
-                    className="mt-4 text-slate-500 text-sm hover:text-slate-400 transition-colors"
+                    className="mt-3 text-slate-500 text-sm hover:text-slate-400 transition-colors underline"
                 >
-                    No thanks, I'll figure it out myself{" "}
-                    <span className="underline">Close</span>
+                    Close
                 </button>
             </div>
         </div>

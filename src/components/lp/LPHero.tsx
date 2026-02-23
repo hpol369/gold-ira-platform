@@ -54,7 +54,7 @@ export function LPHero({
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           {headline}
         </h1>
-        <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl mx-auto leading-relaxed">
           {subheadline}
         </p>
         {isInternal ? (
