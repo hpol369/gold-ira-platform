@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/does-coinbases-ceo-know-dont-233138605.html",
-    "timestamp": 1771199893634
-  },
-  {
-    "url": "https://finance.yahoo.com/news/invested-10-000-palantir-during-233000653.html",
-    "timestamp": 1771199893634
-  },
-  {
     "url": "https://www.investing.com/news/cryptocurrency-news/xrp-falls-11-in-rout-4507387",
     "timestamp": 1771227665747
   },
@@ -6622,5 +6614,9 @@
   {
     "url": "https://finance.yahoo.com/news/why-feb-26-could-huge-233000898.html",
     "timestamp": 1771804621813
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-tumbles-below-65k-amid-whale-selling-us-tariff-jitters-4517703",
+    "timestamp": 1771818534397
   }
 ]
