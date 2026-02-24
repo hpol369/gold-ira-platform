@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-steady-at-68k-in-holidaythinned-trade-4507894",
-    "timestamp": 1771312432174
-  },
-  {
     "url": "https://www.marketwatch.com/story/gold-prices-tumble-below-5-000-as-china-holidays-dent-support-d093e677?mod=mw_rss_topstories",
     "timestamp": 1771317544939
   },
@@ -6822,5 +6818,9 @@
   {
     "url": "https://finance.yahoo.com/research/reports/ARGUS_3723_AnalystReport_1771871585000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
     "timestamp": 1771904698592
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-below-63k-wipes-out-50-from-oct-record-high-4520550",
+    "timestamp": 1771917360203
   }
 ]
