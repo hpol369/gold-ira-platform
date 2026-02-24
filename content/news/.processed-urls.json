@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.marketwatch.com/story/gold-prices-tumble-below-5-000-as-china-holidays-dent-support-d093e677?mod=mw_rss_topstories",
-    "timestamp": 1771317544939
-  },
-  {
     "url": "https://finance.yahoo.com/news/aker-solutions-wins-five-mmo-091705009.html",
     "timestamp": 1771320727015
   },
@@ -6822,5 +6818,9 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-below-63k-wipes-out-50-from-oct-record-high-4520550",
     "timestamp": 1771917360203
+  },
+  {
+    "url": "https://www.marketwatch.com/story/this-award-winning-hedge-fund-manager-is-betting-the-era-of-capital-abundance-becomes-one-of-capital-scarcity-fe6ae3c7?mod=mw_rss_topstories",
+    "timestamp": 1771922939501
   }
 ]
