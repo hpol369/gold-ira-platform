@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://www.cnbc.com/2026/02/18/uk-inflation-cools-jan-2026-boe-cut.html",
-    "timestamp": 1771400238134
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-dips-below-68k-altcoins-lag-with-us-data-in-focus-4510080",
-    "timestamp": 1771400238134
-  },
-  {
     "url": "https://finance.yahoo.com/news/ftse-100-live-london-index-071700017.html",
     "timestamp": 1771409099078
   },
@@ -7006,5 +6998,9 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-recovers-to-65k-amid-bargain-buying-wall-st-gains-4523276",
     "timestamp": 1772004692876
+  },
+  {
+    "url": "https://www.marketwatch.com/story/american-tequila-sales-are-collapsing-diageo-is-cutting-its-dividend-in-half-3fc34adb?mod=mw_rss_topstories",
+    "timestamp": 1772010731429
   }
 ]
