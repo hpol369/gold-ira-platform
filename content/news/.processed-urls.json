@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/goldman-sachs-ceo-david-solomon-reveals-he-owns-bitcoin--bloomberg-93CH-4511919",
-    "timestamp": 1771444912868
-  },
-  {
     "url": "https://www.marketwatch.com/story/u-s-stocks-are-falling-behind-it-could-be-the-beginning-of-an-epic-shift-toward-global-markets-832e2785?mod=mw_rss_topstories",
     "timestamp": 1771448156727
   },
@@ -7110,5 +7106,9 @@
   {
     "url": "https://www.cnbc.com/2026/02/25/top-earners-are-more-afraid-for-their-employment-than-lower-income-as-ai-threat-increases.html",
     "timestamp": 1772048646653
+  },
+  {
+    "url": "https://www.marketwatch.com/story/silver-tops-gold-as-investors-go-to-hedge-against-trade-tensions-d750a574?mod=mw_rss_topstories",
+    "timestamp": 1772049920141
   }
 ]
