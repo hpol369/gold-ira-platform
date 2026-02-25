@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/personal-finance/insurance/article/how-much-does-a-vet-visit-cost-205934739.html",
-    "timestamp": 1771396529534
-  },
-  {
     "url": "https://www.cnbc.com/2026/02/18/uk-inflation-cools-jan-2026-boe-cut.html",
     "timestamp": 1771400238134
   },
@@ -7006,5 +7002,9 @@
   {
     "url": "https://www.marketwatch.com/story/trump-backs-stock-trade-ban-for-congress-during-state-of-the-union-heres-where-the-effort-stands-6cd6fbd8?mod=mw_rss_topstories",
     "timestamp": 1771996503672
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-recovers-to-65k-amid-bargain-buying-wall-st-gains-4523276",
+    "timestamp": 1772004692876
   }
 ]
