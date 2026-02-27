@@ -1,165 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/blue-owl-capital-bdcs-sell-175128417.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/longshot-lawsuit-landmark-ruling-family-174811814.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://www.investors.com/research/ibd-stock-of-the-day/asml-stock-gets-rock-star-treatment/?src=A00220&yptr=yahoo",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/100-old-sandwich-chain-closes-174700663.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://www.investors.com/news/stoneco-stock-scores-relative-strength-rating-upgrade/?src=A00220&yptr=yahoo",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/goldman-flags-limited-rating-potential-174310741.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cabot-corporation-cbt-expands-circular-174241821.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/avient-corporation-avnt-target-boosted-174157470.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ooredoo-separates-fibre-subsea-assets-174142231.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/morgan-stanley-adjusts-ashland-inc-174109656.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/forum-energy-fet-earnings-call-174100929.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ppg-industries-inc-ppg-gains-174030000.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/strategy-mstr-bitcoin-treasury-company-174002541.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analysts-see-signs-commodity-bottoming-173934871.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://www.investors.com/research/best-stocks-to-buy-now/?src=A00220&yptr=yahoo",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analysts-highlight-celanese-corporation-ce-173853827.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/balchem-bcpc-q4-2025-earnings-173848595.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rbc-sees-modest-growth-momentum-173804456.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://www.investors.com/research/options/costco-cost-stock-bull-put-spread-options/?src=A00220&yptr=yahoo",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/international-flavors-fragrances-inc-iff-173712744.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://www.wsj.com/tech/ai/google-is-exploring-ways-to-use-its-financial-might-to-take-on-nvidia-0fbadc84?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-iran-tensions-u-s-data-in-focus-cb8d772f?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/fidelity-national-fnf-earnings-call-173323624.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/western-union-company-q4-2025-173242984.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/oil-states-international-inc-q4-173233818.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/telephone-data-systems-inc-q4-173209688.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/lamar-advertising-company-q4-2025-173208034.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/dnow-inc-q4-2025-earnings-173206841.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cogent-communications-holdings-inc-q4-173201589.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/advansix-inc-q4-2025-earnings-173139468.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/array-digital-infrastructure-inc-q4-173138946.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/diebold-nixdorf-dbd-reports-2025-171520673.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/remitly-global-rely-reports-2025-171511626.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/netskope-ntsk-introduces-netskope-one-171456818.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ralliant-corp-ral-reports-q4-171447502.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/klarna-group-klar-achieves-first-171437509.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/procore-tech-pcor-reports-q4-171430980.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rubrik-rbrk-promotes-jesse-green-171423292.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/figma-fig-reports-q4-2025-171412156.html",
-    "timestamp": 1771610918833
-  },
-  {
-    "url": "https://finance.yahoo.com/news/toast-tost-reports-q4-2025-171341921.html",
-    "timestamp": 1771610918833
-  },
-  {
     "url": "https://www.marketwatch.com/story/retailers-could-be-big-winners-in-a-repeal-of-trumps-tariffs-heres-why-the-stocks-arent-rising-224ed022?mod=mw_rss_topstories",
     "timestamp": 1771614320663
   },
@@ -7034,5 +6874,13 @@
   {
     "url": "https://finance.yahoo.com/news/documentation-required-personal-loans-004023967.html",
     "timestamp": 1772214731669
+  },
+  {
+    "url": "https://www.marketwatch.com/story/medicare-will-run-out-of-money-12-years-earlier-than-expected-23b24c83?mod=mw_rss_topstories",
+    "timestamp": 1772216743942
+  },
+  {
+    "url": "https://www.marketwatch.com/story/did-paramount-overpay-and-netflix-get-away-scot-free-taking-stock-of-the-warner-bros-deal-98ee934d?mod=mw_rss_topstories",
+    "timestamp": 1772216743942
   }
 ]
