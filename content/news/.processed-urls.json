@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/word-salad-nonsense-fed-president-223109736.html",
-    "timestamp": 1771714649517
-  },
-  {
-    "url": "https://finance.yahoo.com/news/redwire-director-sells-1-4m-224454517.html",
-    "timestamp": 1771715792512
-  },
-  {
-    "url": "https://finance.yahoo.com/news/1-stock-id-buy-american-223900448.html",
-    "timestamp": 1771715792512
-  },
-  {
-    "url": "https://finance.yahoo.com/news/history-says-now-time-buy-223900051.html",
-    "timestamp": 1771715792512
-  },
-  {
     "url": "https://finance.yahoo.com/news/congressman-sold-nvidia-stock-since-230116900.html",
     "timestamp": 1771717401560
   },
@@ -7990,5 +7974,9 @@
   {
     "url": "https://finance.yahoo.com/news/arcus-biosciences-q4-earnings-call-220542000.html",
     "timestamp": 1772319232629
+  },
+  {
+    "url": "https://finance.yahoo.com/news/us-attacked-iran-heres-means-225121752.html",
+    "timestamp": 1772321634017
   }
 ]
