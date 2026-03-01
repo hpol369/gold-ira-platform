@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/praxis-stock-surges-320-one-193611951.html",
-    "timestamp": 1771790101229
-  },
-  {
-    "url": "https://www.barrons.com/articles/nvidia-warner-bros-berkshire-hathaway-home-depot-and-more-stocks-to-watch-this-week-87338ad3?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1771790101229
-  },
-  {
     "url": "https://finance.yahoo.com/news/crowdstrike-stock-buy-falling-17-195100622.html",
     "timestamp": 1771791213514
   },
@@ -7850,5 +7842,21 @@
   {
     "url": "https://finance.yahoo.com/news/surprise-pizza-brand-consumers-most-192600728.html",
     "timestamp": 1772394664534
+  },
+  {
+    "url": "https://finance.yahoo.com/news/opec-boosts-oil-production-attacks-195550407.html",
+    "timestamp": 1772395997189
+  },
+  {
+    "url": "https://finance.yahoo.com/news/rush-street-interactive-ceo-sells-195523556.html",
+    "timestamp": 1772395997189
+  },
+  {
+    "url": "https://finance.yahoo.com/news/socorro-dumps-entire-alexandria-real-195010331.html",
+    "timestamp": 1772395997189
+  },
+  {
+    "url": "https://finance.yahoo.com/news/2-top-artificial-intelligence-stocks-194300545.html",
+    "timestamp": 1772395997189
   }
 ]
