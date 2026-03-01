@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/jim-cramer-says-cryptos-getting-233120436.html",
-    "timestamp": 1771718179755
-  },
-  {
-    "url": "https://finance.yahoo.com/news/forget-berkshire-hathaway-stock-buy-232500537.html",
-    "timestamp": 1771718179755
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/ripple-ceo-predicts-90-chance-of-us-crypto-bill-passage-by-april-4517544",
-    "timestamp": 1771731845163
-  },
-  {
     "url": "https://finance.yahoo.com/news/plug-power-plug-confronts-legal-105001462.html",
     "timestamp": 1771751995649
   },
@@ -8006,5 +7994,9 @@
   {
     "url": "https://finance.yahoo.com/news/range-resources-q4-earnings-call-230702077.html",
     "timestamp": 1772322748811
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-recovers-above-67000-as-markets-digest-khameneis-death-4533464",
+    "timestamp": 1772336868130
   }
 ]
