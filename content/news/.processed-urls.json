@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-tumbles-below-65k-amid-whale-selling-us-tariff-jitters-4517703",
-    "timestamp": 1771818534397
-  },
-  {
     "url": "https://www.cnbc.com/2026/02/23/trumps-tariff-setback-in-supreme-court-ruling-boosts-china-april-summit-leverage-xi.html",
     "timestamp": 1771828730801
   },
@@ -7846,5 +7842,9 @@
   {
     "url": "https://www.marketwatch.com/story/anthropics-claude-tops-app-store-charts-as-backlash-builds-against-openais-chatgpt-3fdce792?mod=mw_rss_topstories",
     "timestamp": 1772422663985
+  },
+  {
+    "url": "https://www.cnbc.com/2026/03/02/iran-israel-us-conflict-oil-jumps-trump-netanyahu-what-is-next.html",
+    "timestamp": 1772428017224
   }
 ]
