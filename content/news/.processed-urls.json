@@ -1,121 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/nab-launches-integrated-banking-centre-111103885.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/starling-engine-expands-zealand-sbs-110559787.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/2-ipo-stocks-hit-market-110307844.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-tuesday-february-24-2026-110055242.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/adapt-stagnate-accenture-makes-ai-110042095.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-tuesday-february-24-2026-110021903.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-tuesday-february-24-2026-110020458.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/study-finds-796bn-total-retail-110020968.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-february-24-2026-lock-in-up-to-4-apy-today-110013035.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-tuesday-february-24-2026-110008451.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/1-2b-bard-financial-moves-110005503.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/25b-integrated-partners-launches-division-110000561.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://www.marketwatch.com/story/not-all-treasurys-are-a-reliable-haven-for-investors-right-now-blackrock-bond-chief-rick-rieder-says-5dba3ad8?mod=mw_rss_topstories",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://www.marketwatch.com/story/co-author-of-viral-post-on-ai-impact-says-he-was-shorting-those-stocks-b7235f1b?mod=mw_rss_topstories",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/could-ripple-buy-paypal-rumors-105215677.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/saas-leaders-ceo-just-announced-105200488.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bitcoin-heads-worst-month-since-081936819.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/j-j-eyes-mega-sale-104523553.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/better-buy-bitcoin-vs-ethereum-104500643.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/marelli-motherson-opens-sanand-lighting-104415835.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-results-ai-markets-biggest-104159138.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/want-1-million-retirement-invest-103900580.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/polaris-renewable-energy-q4-earnings-103622452.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/secure-energy-services-q4-earnings-103622732.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/sienna-senior-living-q4-earnings-103622410.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/unite-group-h2-earnings-call-103621994.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/croda-international-h2-earnings-call-103620137.html",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://www.marketwatch.com/story/tariffs-have-peaked-after-supreme-court-ruling-says-morgan-stanley-expert-87f6677b?mod=mw_rss_topstories",
-    "timestamp": 1771932521124
-  },
-  {
-    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-edge-up-after-sell-off-as-trumps-global-tariff-comes-in-234004841.html",
-    "timestamp": 1771932521124
-  },
-  {
     "url": "https://www.marketwatch.com/story/home-depots-stock-set-to-surge-as-sales-growth-provides-signs-of-a-turnaround-dd4fe20e?mod=mw_rss_topstories",
     "timestamp": 1771934508966
   },
@@ -8010,5 +7894,49 @@
   {
     "url": "https://www.barrons.com/livecoverage/stock-market-news-today-030326/card/stock-futures-drop-oil-extends-rally-as-iran-conflict-escalates-vqspdT4RxKEqCtlnbj8d?siteid=yhoof2&yptr=yahoo",
     "timestamp": 1772536767560
+  },
+  {
+    "url": "https://finance.yahoo.com/news/xeinadin-acquires-accountancy-cloud-bolster-113714284.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/central-asia-metals-shares-drop-113007983.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/target-sales-fall-25-during-holiday-quarter-to-cap-challenging-2025-as-new-ceo-michael-fiddelke-takes-over-113005762.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/target-aims-grow-sales-2025-113000889.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/nvidia-no-brainer-buy-now-113000622.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/reach-h2-earnings-call-highlights-112819025.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/morgan-advanced-materials-h2-earnings-112818387.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/kier-group-h1-earnings-call-112817179.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/iwg-q4-earnings-call-highlights-112817559.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/tariff-refund-seekers-flock-little-110510954.html",
+    "timestamp": 1772538666792
+  },
+  {
+    "url": "https://finance.yahoo.com/news/analysis-buyback-plans-arent-enough-110522150.html",
+    "timestamp": 1772538666792
   }
 ]
