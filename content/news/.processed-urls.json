@@ -1,13 +1,5 @@
 [
   {
-    "url": "https://www.marketwatch.com/story/workdays-stock-dives-as-earnings-reveal-the-cost-of-competing-in-ai-3578985b?mod=mw_rss_topstories",
-    "timestamp": 1771977119267
-  },
-  {
-    "url": "https://www.marketwatch.com/story/could-stripe-salvage-paypal-what-wall-street-has-to-say-about-the-latest-takeover-talk-815c4e9a?mod=mw_rss_topstories",
-    "timestamp": 1771981601836
-  },
-  {
     "url": "https://finance.yahoo.com/research/reports/ARGUS_4042_AnalystReport_1771956836000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
     "timestamp": 1771991100261
   },
@@ -7778,5 +7770,9 @@
   {
     "url": "https://www.marketwatch.com/story/here-are-the-u-s-airlines-most-vulnerable-to-rising-fuel-prices-b3ed82b3?mod=mw_rss_topstories",
     "timestamp": 1772581338199
+  },
+  {
+    "url": "https://www.marketwatch.com/story/crowdstrike-gives-upbeat-earnings-outlook-as-ai-raises-the-stakes-around-cyberthreats-087a4b2e?mod=mw_rss_topstories",
+    "timestamp": 1772587163849
   }
 ]
