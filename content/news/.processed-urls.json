@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/us-attacked-iran-heres-means-225121752.html",
-    "timestamp": 1772321634017
-  },
-  {
     "url": "https://finance.yahoo.com/news/lsi-industries-buy-royston-group-230705650.html",
     "timestamp": 1772322748811
   },
@@ -6854,5 +6850,17 @@
   {
     "url": "https://finance.yahoo.com/news/media-mogul-byron-allen-acquires-220000422.html",
     "timestamp": 1772924079279
+  },
+  {
+    "url": "https://finance.yahoo.com/news/wall-street-wrong-hp-stock-231200041.html",
+    "timestamp": 1772926487936
+  },
+  {
+    "url": "https://finance.yahoo.com/news/paycheck-risk-workers-overlooking-230006860.html",
+    "timestamp": 1772926487936
+  },
+  {
+    "url": "https://finance.yahoo.com/news/much-higher-micron-stock-225600079.html",
+    "timestamp": 1772926487936
   }
 ]
