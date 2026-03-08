@@ -1,141 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/heres-first-energy-stock-plan-152200816.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/side-gig-threshold-where-taxes-151122093.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/significant-insider-activity-east-west-150518225.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/sei-investments-seic-partners-pravati-150516721.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/wells-fargo-raises-globe-life-150514746.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bank-america-downgrades-fox-fox-150513137.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cognizant-ctsh-partners-google-cloud-150511541.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/2-best-prediction-market-stocks-150500034.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/keybanc-raises-zoom-zm-target-150449980.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/significant-insider-activity-travelers-trv-150448112.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/h-c-wainwright-raises-united-150446215.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bernstein-upgrades-newmont-nem-outperform-150445303.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/barclays-reiterates-buy-rating-charles-150443261.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/truist-raises-target-bill-holdings-150441604.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analysts-maintain-hold-rating-pepsico-150440987.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/barclays-upgrades-etsy-etsy-overweight-150438672.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/uniti-group-unit-accelerates-2026-150436078.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/wells-fargo-maintains-hold-hewlett-150435634.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/goldman-sachs-cuts-pinterest-pins-150433362.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ubs-upgrades-southwest-airlines-luv-150432418.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/veritas-downgrades-suncor-energy-su-150430714.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/barclays-raises-phillips-66-psx-150428438.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/stifel-raises-triple-flag-precious-150427508.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/acadia-realty-trust-tpg-tpg-150119422.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/she-trusted-her-dad-invest-150028677.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/einride-raises-113m-oversubscribed-pipe-150000303.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/beone-medicines-onc-reports-1-145949886.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analyst-cautious-zillow-z-ahead-145925702.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bmo-capital-needham-cut-costar-145916753.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/stifel-lowers-credo-crdo-price-145849254.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/kratos-ktos-prices-common-stock-145838912.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/coupang-cpng-records-8-8b-145829772.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/legal-strategy-behind-crypto-exchange-145825619.html",
-    "timestamp": 1772379386302
-  },
-  {
-    "url": "https://finance.yahoo.com/news/crypto-loses-grip-retail-army-143000513.html",
-    "timestamp": 1772379386302
-  },
-  {
     "url": "https://finance.yahoo.com/news/perplexity-ai-just-turned-30-153122212.html",
     "timestamp": 1772380354482
   },
@@ -6854,5 +6718,17 @@
   {
     "url": "https://finance.yahoo.com/news/war-escalation-jobs-report-fallout-and-oracle-earnings-what-to-watch-this-week-114534070.html",
     "timestamp": 1772982985520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/strategy-stock-beat-market-151000114.html",
+    "timestamp": 1772984309546
+  },
+  {
+    "url": "https://finance.yahoo.com/news/costco-cfo-answers-special-dividend-150700801.html",
+    "timestamp": 1772984309546
+  },
+  {
+    "url": "https://finance.yahoo.com/news/could-13-stock-ticket-millionaire-150100571.html",
+    "timestamp": 1772984309546
   }
 ]
