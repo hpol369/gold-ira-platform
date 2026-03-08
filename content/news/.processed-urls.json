@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/history-says-stocks-always-rebound-215000773.html",
-    "timestamp": 1772403093630
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-rigetti-computing-stock-surged-214725177.html",
-    "timestamp": 1772403093630
-  },
-  {
-    "url": "https://finance.yahoo.com/news/luxury-good-resellers-cfo-sold-213826630.html",
-    "timestamp": 1772403093630
-  },
-  {
     "url": "https://finance.yahoo.com/news/stock-market-crash-coming-2026-222000955.html",
     "timestamp": 1772404810708
   },
@@ -6986,5 +6974,9 @@
   {
     "url": "https://finance.yahoo.com/news/goldman-says-hedge-funds-add-202310069.html",
     "timestamp": 1773006766601
+  },
+  {
+    "url": "https://finance.yahoo.com/news/cathie-wood-stock-47-too-214800978.html",
+    "timestamp": 1773007900791
   }
 ]
