@@ -1,137 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/ifac-study-flags-growing-private-094756618.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/grant-thornton-uk-names-frederik-093734924.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://www.marketwatch.com/story/gold-can-be-called-many-things-just-dont-say-its-an-inflation-hedge-468ef2b2?mod=mw_rss_topstories",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/retiring-warren-buffett-dumped-shares-093500039.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/buy-3-vanguard-index-funds-093200732.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/visa-inc-v-q1-2026-093056114.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/morgan-stanley-names-citigroup-inc-093054788.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/charles-schwab-corporation-schw-projects-093053465.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/chevron-corporation-cvx-upgraded-buy-093051641.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bernstein-sees-limited-upside-paypal-093049851.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/piper-sandler-names-apollo-global-093048804.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/beiersdorf-aktiengesellschaft-q4-earnings-call-093047004.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/baird-sees-reduced-downside-risk-093046969.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/wells-fargo-boosts-williams-companies-093044932.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/kinder-morgan-inc-kmi-adds-093043162.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/mizuho-reaffirms-outperform-rating-devon-093041798.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/totalenergies-se-tte-expands-power-093040308.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/paradex-signals-upcoming-dime-token-generation-event-4536987",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-dumped-stakes-arm-holdings-092600833.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/gip-eqt-led-consortium-agree-092348459.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/vong-vs-voog-similar-large-092003945.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/3-cryptocurrencies-id-buy-pullback-092000757.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://www.marketwatch.com/story/worlds-hottest-stock-market-suddenly-blows-cold-with-a-7-tumble-c1f15650?mod=mw_rss_topstories",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/heico-corporation-hei-achieves-record-072236772.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/zscaler-zs-reports-record-fq2-072228374.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/flutter-entertainment-flut-reports-strong-072217069.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/samsara-iot-expands-iot-portfolio-072209678.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ionq-ionq-achieves-record-2025-072158383.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bridgebio-pharma-bbio-achieves-record-072153033.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/summit-therapeutics-smmt-ends-2025-072145089.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/chewy-chwy-appoints-internal-veteran-072138845.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/equitable-holdings-eqh-hits-record-072131729.html",
-    "timestamp": 1772531969855
-  },
-  {
-    "url": "https://finance.yahoo.com/news/madrigal-pharmaceuticals-mdgl-reports-record-072113675.html",
-    "timestamp": 1772531969855
-  },
-  {
     "url": "https://finance.yahoo.com/news/nvidia-invests-2bn-lumentum-coherent-102923105.html",
     "timestamp": 1772534248132
   },
@@ -7150,5 +7018,61 @@
   {
     "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-oil-slides-after-volatile-day-on-wall-street-224255037.html",
     "timestamp": 1773133613319
+  },
+  {
+    "url": "https://www.marketwatch.com/story/ozempic-maker-novo-nordisk-gets-another-downgrade-the-ends-in-sight-for-its-duopoly-status-says-td-cowen-6b09b4d8?mod=mw_rss_topstories",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/thermo-fisher-scientific-inc-tmo-093823896.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/intuitive-surgical-inc-isrg-announces-093600725.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://www.marketwatch.com/story/european-bonds-join-treasury-rally-as-lower-oil-prices-ease-inflation-fears-c317b735?mod=mw_rss_topstories",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/lockton-appoints-aon-livy-dai-093006113.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/physiomics-shares-fall-27-discounted-093005684.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/billionaire-philippe-laffont-dumped-funds-092600944.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/zurich-buy-generali-irish-non-092555742.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/agn-international-names-regional-director-092104010.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/bitcoin-steadies-around-70-000-061452473.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/where-could-robinhood-3-years-092000666.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/poland-tightens-fruit-vegetable-origin-091842482.html",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://www.marketwatch.com/story/i-promised-my-parents-i-take-care-of-my-brother-who-is-developmentally-disabled-im-now-retired-am-i-doing-enough-c3d926a9?mod=mw_rss_topstories",
+    "timestamp": 1773136806103
+  },
+  {
+    "url": "https://finance.yahoo.com/news/oracle-to-report-q3-earnings-as-wall-street-questions-ai-spending-203555557.html",
+    "timestamp": 1773136806103
   }
 ]
