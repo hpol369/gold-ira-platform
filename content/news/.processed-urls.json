@@ -1,257 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/mongodb-mdb-rose-overall-positive-123431689.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/kraken-secures-access-fed-core-123430229.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/xrp-price-heading-3-former-123215420.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://www.wsj.com/business/retail/bath-body-works-reports-lower-profit-dea798e9?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/elon-musk-says-yes-1-123048291.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-could-be-weighed-by-middle-east-conflict-f4e8c269?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/wall-st-futures-inch-report-122802849.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/home-depot-buy-sell-hold-122500524.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ultimate-diversified-portfolio-just-2-122000309.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/strong-results-lifted-ross-stores-121949458.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/carpenter-technology-corporation-crs-gained-121709119.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/us-cities-strongest-short-term-121500548.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/teradyne-ter-rose-following-demand-121326658.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/inflation-biggest-risk-debt-markets-121200454.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/signatera-oncology-test-drives-natera-121023663.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://www.marketwatch.com/story/how-this-top-performing-trend-following-manager-got-ahead-of-the-iran-conflict-and-a-software-rout-8110f662?mod=mw_rss_topstories",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/makes-kadant-kai-high-quality-120144108.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/byreal-launches-first-ai-copy-farming-skillset-becoming-most-agentnative-on-solana-dex-4540605",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/down-payment-aid-programs-average-120000123.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/iran-strike-bets-spark-scrutiny-120000365.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://www.investors.com/news/technology/crowdstrike-stock-crwd-crowdstrike-earnings-q42025/?src=A00220&yptr=yahoo",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/morning-bid-seoul-sapping-selloff-114534136.html",
-    "timestamp": 1772628424936
-  },
-  {
-    "url": "https://finance.yahoo.com/news/home-bancshares-price-target-lowered-134014593.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/does-live-oak-bancshares-lob-133303905.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/moderna-rises-2-25-billion-132602379.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/extreme-networks-extr-more-straightforward-133114718.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-jobs-data-nvidia-tesla-rebound/?src=A00220&yptr=yahoo",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/southernsun-sold-trex-company-trex-132813928.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/offers-api-group-corp-apg-132633156.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/adp-private-employers-added-63000-jobs-last-in-february-the-best-monthly-showing-since-july-132604389.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ai-energy-crisis-real-2-132500163.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.barrons.com/articles/adp-jobs-report-february-private-payrolls-33a2d214?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/morning-minute-cftc-chair-says-132225532.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/doing-roth-conversion-63-beware-132200132.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.barrons.com/articles/abercrombie-fitch-earnings-stock-price-55225410?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.marketwatch.com/story/adp-says-businesses-add-63-000-jobs-in-february-as-hiring-picks-up-93f1ab7c?mod=mw_rss_topstories",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/uk-spring-forecast-raises-retail-131935534.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/coinbase-ceo-the-business-of-crypto-has-never-been-stronger-131831021.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/youd-invested-100-xrp-5-131600404.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.cnbc.com/2026/03/04/private-companies-added-63000-jobs-in-february-january-revised-to-just-11000-additions-adp-says.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://silverseek.com/article/seven-silver-investing-mistakes",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://silverseek.com/article/seven-silver-investing-mistakes",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/unexpected-surge-health-costs-impacted-131156332.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/autozone-azo-hurt-weak-margins-130832074.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.marketwatch.com/story/theres-a-new-record-number-of-401-k-millionaires-and-the-iran-conflict-will-test-their-discipline-fae185b8?mod=mw_rss_topstories",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/veeva-systems-veev-retreated-following-130100808.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.investors.com/etfs-and-funds/sectors/sp500-we-told-you-so-these-ibd-50-stocks-dominate-this-year/?src=A00220&yptr=yahoo",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/risk-management-stock-market-us-iran-attacks/?src=A00220&yptr=yahoo",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/focus-consumers-household-pessimism-increases-130000504.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/hurt-vistra-corp-vst-q4-125831256.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/softer-anticipated-bookings-growth-weighed-125602575.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/market-sentiments-royal-caribbean-cruises-125349121.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.marketwatch.com/story/shares-in-adidas-slump-on-weak-profit-guidance-as-tariffs-exchange-rate-bites-f711a372?mod=mw_rss_topstories",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/oil-prices-steady-after-president-trump-offers-tankers-protection-through-strait-of-hormuz-124828108.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://www.investors.com/news/tesla-europe-sales-elon-musk-byd/?src=A00220&yptr=yahoo",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/best-thing-50k-revealed-uncle-124700181.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/roblox-rblx-fell-due-concerns-123743888.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_46325_MarketOutlook_1772627104000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_46323_MarketSummary_1772626587000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/kraken-wins-access-feds-core-120100901.html",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_46321_InsiderActivity_1772624752000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_46322_TopBottomInsiderActivity_1772624752000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1772632148711
-  },
-  {
-    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-as-iran-reportedly-calls-for-talks-to-end-conflict-234948851.html",
-    "timestamp": 1772632148711
-  },
-  {
     "url": "https://finance.yahoo.com/news/live/earnings-live-abercrombie--fitch-stock-sinks-despite-earnings-beat-crowdstrike-ceo-touts-best-year-yet-141916238.html",
     "timestamp": 1772634629840
   },
@@ -7190,5 +6938,129 @@
   {
     "url": "https://finance.yahoo.com/news/live/earnings-live-oracle-stock-jumps-on-full-year-outlook-groupon-stock-plunges-211941981.html",
     "timestamp": 1773232385068
+  },
+  {
+    "url": "https://www.marketwatch.com/story/i-have-lost-nearly-everything-my-mothers-trustee-changed-her-1-million-will-and-my-attorney-fleeced-me-what-can-i-do-37768a2a?mod=mw_rss_topstories",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/brown-brown-bro-fell-management-134328041.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/oracle-nike-upgraded-wall-streets-134055988.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/scm-16-5-yield-looks-134012107.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/auna-q4-earnings-call-highlights-133657248.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/align-technology-cfo-sees-market-133657677.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/tss-q4-earnings-call-highlights-133656401.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/groupon-q4-earnings-call-highlights-133656077.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/kamada-q4-earnings-call-highlights-133656227.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/pangaea-logistics-solutions-q4-earnings-133656357.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/commercial-vehicle-group-q4-earnings-133655829.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-and-nasdaq-rise-dow-slips-amid-fresh-inflation-data-continued-iran-fallout-133543921.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/ups-navigates-amazon-draw-down-133445533.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investors.com/news/oil-prices-investors-iran-chevron-shell-venezuela/?src=A00220&yptr=yahoo",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://silverseek.com/article/why-gold-silver-havent-rallied-after-breakout-iran-war",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://silverseek.com/article/why-gold-silver-havent-rallied-after-breakout-iran-war",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.cnbc.com/2026/03/11/cpi-inflation-report-february-2026.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/xrp-price-outlook-research-report-sees-potential-move-toward-2504-in-2026-4554671",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/o-smith-aos-poised-benefit-132220077.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/msa-safety-msa-derives-value-131439732.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investors.com/news/carmax-starboard-activist-investor-autos-car-sales/?src=A00220&yptr=yahoo",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/madison-mid-cap-fund-exited-131118777.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investors.com/news/economy/cpi-inflation-oil-prices-tariffs-federal-reserve-sp-500/?src=A00220&yptr=yahoo",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investors.com/news/technology/nvidia-stock-nebius-investment-partnership/?src=A00220&yptr=yahoo",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investors.com/news/technology/oracle-stock-orcl-news-q3-2026-earnings/?src=A00220&yptr=yahoo",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/third-avenue-small-cap-value-125716792.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investors.com/news/technology/uber-stock-zoox-amazon-partnership/?src=A00220&yptr=yahoo",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://www.investors.com/news/nike-stock-dow-jones-upgrade-target-hike-turnaround-efforts-nke-stock/?src=A00220&yptr=yahoo",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/live/earnings-live-oracle-stock-jumps-on-upbeat-outlook-campbells-slides-on-cautious-guidance-123156046.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/analysis-ongoing-case-unifirst-corp-122858047.html",
+    "timestamp": 1773237110520
+  },
+  {
+    "url": "https://finance.yahoo.com/news/prices-held-steady-last-month-cpi-data-shows-185810466.html",
+    "timestamp": 1773237110520
   }
 ]
