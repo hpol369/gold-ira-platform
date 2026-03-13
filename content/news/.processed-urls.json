@@ -1,161 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/kingstone-companies-inc-q4-2025-173252097.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cohen-company-inc-q4-2025-173136460.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/blackrock-inc-blk-one-stocks-172920784.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/zoom-communications-inc-zm-price-172918621.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/agilent-technologies-inc-price-target-172916984.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/thomson-reuters-corporation-tri-announces-172915953.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/workday-inc-wday-price-target-172913277.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/crowdstrike-holdings-inc-crwd-price-172912898.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-price-target-172908747.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/hamilton-lane-incorporated-hlne-price-172907530.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/credo-technology-group-holding-ltd-172905567.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/capital-one-schedules-further-layoffs-172550723.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/investors-etf-earned-far-more-172300707.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/methanex-meoh-q4-2025-earnings-172125765.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/scotiabank-cuts-essex-property-trust-171557309.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/blackstone-bx-coverage-reinstated-barclays-171542474.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/piper-sandler-lifts-chord-energy-171528033.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/scotiabank-cuts-mid-america-apartment-171524382.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bofa-resumes-coverage-ford-f-171518339.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/lincoln-national-lnc-price-target-171459019.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/barclays-lifts-extra-space-storage-171416268.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/vici-properties-vici-price-target-171410280.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ups-gets-price-target-increase-171403879.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/western-union-partners-wu-crossmint-171356879.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/b-g-foods-bgs-price-171346921.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-pauses-ai-startup-bets-171345076.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/kbw-raises-arbor-realty-trust-171336603.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/granite-ridge-grnt-earnings-call-171328556.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rbc-lifts-mfa-financial-target-171300867.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://www.investors.com/news/stock-market-falls-oil-prices-skyrocket-iran-conflict/?src=A00220&yptr=yahoo",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cronos-group-cron-q4-2025-170223431.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/osisko-development-odv-resums-activities-170216762.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ubs-raises-pt-iovance-biotherapeutics-170158127.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bofa-lowers-pt-recursion-pharmaceuticals-170151495.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/baytex-energy-bte-releases-fq4-170143736.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cosan-csan-jv-raizen-discussing-170136508.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ultrapar-participa-es-ugp-reports-170128997.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/enel-chile-enic-partners-senapred-170122170.html",
-    "timestamp": 1772819504651
-  },
-  {
-    "url": "https://finance.yahoo.com/news/us-bonds-see-worst-week-163723051.html",
-    "timestamp": 1772819504651
-  },
-  {
     "url": "https://www.marketwatch.com/story/this-is-whats-cutting-into-your-pay-raise-if-you-get-a-bump-at-all-c07b4e59?mod=mw_rss_topstories",
     "timestamp": 1772821687078
   },
@@ -6946,5 +6790,109 @@
   {
     "url": "https://finance.yahoo.com/news/wingstop-inc-wing-good-stock-164817655.html",
     "timestamp": 1773422853652
+  },
+  {
+    "url": "https://finance.yahoo.com/news/concorde-financial-exits-howard-hughes-173656025.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/cf-industries-76-fertilizer-supply-173524366.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/gossamer-bio-options-imply-46-173515542.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/buy-dip-oklo-stock-173500650.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/option-traders-moderately-bearish-microsoft-173018435.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/analysts-send-blunt-warning-bitcoin-172738400.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://www.investors.com/research/options/tesla-stock-tsla-options-ev-china-sales-trade-iron-condor-markets/?src=A00220&yptr=yahoo",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/energy-is-no-longer-dead-money--heres-what-investors-are-really-buying-172553987.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/ollie-bargain-outlet-price-target-172540142.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/stifel-says-marvell-mojo-vision-172525027.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/mizuho-raises-sustainable-infrastructure-capital-172334987.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/brookfield-asset-management-bam-launches-172332925.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/raymond-james-financial-rjf-completes-172331696.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/td-cowen-cut-corebridge-financial-172329621.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/evercore-isi-lowers-invesco-ivz-172327247.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/bank-america-raises-affiliated-managers-172326468.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/barclays-cuts-ares-management-ares-172324852.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/barclays-cuts-apollo-global-management-172323964.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/kkr-kkr-explores-3-billion-172321395.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/blackstone-bx-commits-400-million-172320311.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/workiva-stock-buy-investment-firm-172118432.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/iran-war-could-wreak-havoc-on-farmers-create-a-potential-bottleneck-for-the-entire-ai-story-171240723.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/exclusive-spacex-taps-gibson-dunn-170805906.html",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://www.investors.com/research/ibd-stock-of-the-day/cardinal-health-buy-zone-medical-wholesale/?src=A00220&yptr=yahoo",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://www.investors.com/news/exxon-mobil-stock-xom-tremendous-run/?src=A00220&yptr=yahoo",
+    "timestamp": 1773424705232
+  },
+  {
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-give-up-gains-as-oil-rises-gdp-growth-slows-more-than-expected-225332847.html",
+    "timestamp": 1773424705232
   }
 ]
