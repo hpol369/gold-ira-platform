@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/heres-top-2-dividend-stocks-221100378.html",
-    "timestamp": 1772923051827
-  },
-  {
-    "url": "https://finance.yahoo.com/news/broadcom-buy-ai-revenue-continues-220600077.html",
-    "timestamp": 1772923051827
-  },
-  {
-    "url": "https://finance.yahoo.com/news/caredx-details-transplant-roadmap-alloheme-220227742.html",
-    "timestamp": 1772923051827
-  },
-  {
     "url": "https://finance.yahoo.com/news/why-trade-desk-stock-plunged-223500250.html",
     "timestamp": 1772924079279
   },
@@ -6926,5 +6914,9 @@
   {
     "url": "https://finance.yahoo.com/news/fedex-just-took-upss-spot-213500153.html",
     "timestamp": 1773526477415
+  },
+  {
+    "url": "https://finance.yahoo.com/news/3-ways-side-hustle-might-221104230.html",
+    "timestamp": 1773528356575
   }
 ]
