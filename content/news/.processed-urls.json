@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-to-67000-as-extreme-fear-grips-crypto-markets-4548565",
-    "timestamp": 1772956073191
-  },
-  {
     "url": "https://finance.yahoo.com/news/why-zeta-global-zeta-strong-110030644.html",
     "timestamp": 1772964815614
   },
@@ -6906,5 +6902,17 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-institutional-interest-provides-buffer-as-btc-eyes-73000-resistance-4561528",
     "timestamp": 1773553372488
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-strategy-and-etf-demand-provide-6-weekly-lift-amid-regional-conflict-4561542",
+    "timestamp": 1773566540303
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/primexbt-launches-pxtrader-20-bringing-crypto-and-traditional-markets-into-one-trading-platform-4561539",
+    "timestamp": 1773566540303
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bydfi-perpetual-futures-data-now-live-on-tradingview-4561538",
+    "timestamp": 1773566540303
   }
 ]
