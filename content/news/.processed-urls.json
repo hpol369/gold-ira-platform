@@ -1,21 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/cathie-wood-goes-bargain-hunting-233000596.html",
-    "timestamp": 1772927595149
-  },
-  {
-    "url": "https://finance.yahoo.com/news/best-magnificent-seven-stocks-buy-232600949.html",
-    "timestamp": 1772927595149
-  },
-  {
-    "url": "https://finance.yahoo.com/news/alphabet-owns-8-9-million-232500300.html",
-    "timestamp": 1772927595149
-  },
-  {
-    "url": "https://finance.yahoo.com/news/4-wealth-saving-investment-moves-231119853.html",
-    "timestamp": 1772927595149
-  },
-  {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-to-67000-as-extreme-fear-grips-crypto-markets-4548565",
     "timestamp": 1772956073191
   },
@@ -6918,5 +6902,9 @@
   {
     "url": "https://finance.yahoo.com/news/most-expensive-stock-market-over-230500591.html",
     "timestamp": 1773532038728
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-institutional-interest-provides-buffer-as-btc-eyes-73000-resistance-4561528",
+    "timestamp": 1773553372488
   }
 ]
