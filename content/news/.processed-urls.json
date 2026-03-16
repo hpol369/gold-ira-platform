@@ -1,193 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/oil-prices-surge-15-strait-094021564.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/dont-polymarket-winning-bet-just-093800835.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/first-time-13-quarters-billionaire-092600458.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/market-meltdown-odds-35-092435662.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/us-oil-prices-jump-supply-223911453.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/prediction-prediction-market-etfs-huge-092000302.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/us-deploy-20bn-maritime-reinsurance-091947916.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/prudential-japan-unit-finds-unauthorised-091149740.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-stock-ticket-becoming-millionaire-091100659.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/mp-materials-aims-eliminate-americas-090700637.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/crowe-appoints-bhavin-bharakda-consulting-090601625.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/aletheia-lifts-pt-micron-technology-085051254.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/formula-1-salesforce-inc-crm-084831853.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/abbvie-inc-abbv-announces-positive-084634735.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/barclays-cuts-pt-blackstone-inc-084445815.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/qualcomm-inc-qcom-t-mobile-084137728.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/citi-lifts-pt-newmont-corporation-083537002.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/morgan-stanley-upgrades-novo-nordisk-083221266.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/jpmorgan-lifts-pt-shell-plc-082908422.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rio-tinto-group-rio-wa-082533060.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/royal-bank-canada-ry-buy-082248181.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/scotiabank-lifts-pt-toronto-dominion-081952805.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/totalenergies-se-tte-best-undervalued-081533896.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bapco-energies-declares-force-majeure-081126421.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/expand-energy-corporation-exe-announces-080506715.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/solaris-energy-infrastructure-inc-sei-080235603.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/goldman-sachs-lifts-pt-weatherford-075942315.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/iran-conflict-forces-central-banks-060811096.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nextdecade-corporation-next-provides-fiscal-072909627.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/does-street-think-national-energy-072632626.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/street-thinks-select-water-solutions-072314582.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/citi-lifts-pt-cactus-inc-071908897.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/flowco-holdings-inc-floc-completes-071255166.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/northland-cuts-pt-vitesse-energy-070954642.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/goldman-sachs-lifts-pt-vista-070701280.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/riley-exploration-permian-inc-repx-070435902.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bill-ackman-sees-upside-brookfield-065826650.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/uber-technologies-inc-uber-outlines-065601585.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/amazon-com-inc-amzn-among-065258319.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bill-ackman-bullish-alphabet-inc-064951041.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/bill-ackman-eyes-meta-platforms-064655552.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/analyst-sentiment-reinforces-bill-ackman-064400532.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/howard-hughes-holdings-inc-hhh-064133208.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/ackman-remains-largest-institutional-shareholder-063750644.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/iraq-oil-output-plunges-70-061233038.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/hertz-global-holdings-inc-htz-060403057.html",
-    "timestamp": 1773050128692
-  },
-  {
-    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-sell-off-as-oil-prices-surge-to-over-110-a-barrel-224103624.html",
-    "timestamp": 1773050128692
-  },
-  {
     "url": "https://www.marketwatch.com/story/g-7-scrambles-emergency-meeting-and-could-deploy-unprecedented-oil-reserves-as-prices-soar-report-1a5aa206?mod=mw_rss_topstories",
     "timestamp": 1773052502254
   },
@@ -7130,5 +6942,77 @@
   {
     "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-climb-as-oil-rises-with-us-and-iran-targeting-energy-infrastructure-224643319.html",
     "timestamp": 1773652503133
+  },
+  {
+    "url": "https://finance.yahoo.com/news/venture-global-secures-8-6bn-100930190.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/3-monster-dividend-stocks-hold-100300427.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-monday-march-16-2026-100026225.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-monday-march-16-2026-100013190.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-monday-march-16-2026-100009884.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-march-16-2026-100000348.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-rates-today-monday-march-16-2026-100000533.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/n-trl-founders-invests-low-095148799.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/mapfre-targets-roe-above-13-094714713.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/gold-wavers-near-5-000-005652913.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/oaktree-plans-stake-atlantic-coast-093816314.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/bitcoin-trades-above-50-day-093603972.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/1-no-brainer-artificial-intelligence-093500293.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://www.wsj.com/finance/oil-holds-above-100-stocks-mixed-as-global-markets-look-for-direction-a5228507?siteid=yhoof2&yptr=yahoo",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/pcaob-launches-audit-practitioner-fellowship-093046588.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/one-stock-watch-rare-earth-090000189.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/brown-formans-stock-performance-compared-070649097.html",
+    "timestamp": 1773656138254
+  },
+  {
+    "url": "https://finance.yahoo.com/news/weyerhaeuser-stock-wy-underperforming-real-070257525.html",
+    "timestamp": 1773656138254
   }
 ]
