@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-muted-near-67k-as-oil-surge-stokes-inflation-fears-4548687",
-    "timestamp": 1773033065738
-  },
-  {
     "url": "https://www.marketwatch.com/story/oil-shatters-100-ceiling-hitting-levels-not-seen-since-2022-as-iran-conflict-escalates-47add83b?mod=mw_rss_topstories",
     "timestamp": 1773046845073
   },
@@ -7070,5 +7066,13 @@
   {
     "url": "https://www.cnbc.com/2026/03/16/trump-possible-delay-beijing-summit-china-iran-strait-of-hormuz-.html",
     "timestamp": 1773634239788
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/cardano-climbs-10-in-a-green-day-4561721",
+    "timestamp": 1773644601914
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-hits-6wk-high-above-74k-as-short-liquidations-provide-boost-4561705",
+    "timestamp": 1773644601914
   }
 ]
