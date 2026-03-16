@@ -1,137 +1,5 @@
 [
   {
-    "url": "https://finance.yahoo.com/news/mitsui-partners-kaynes-osat-facility-122247655.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/black-veatch-engineering-design-power-122126596.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/got-1-000-invest-tech-122000611.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/youd-invested-1-000-newmont-122000030.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/5-dividend-stocks-60-berkshire-121808099.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://www.marketwatch.com/story/airline-stocks-dive-as-oil-price-spike-could-trigger-a-tipping-point-for-travelers-2be814ea?mod=mw_rss_topstories",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/defense-stock-ve-never-heard-121557924.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-news-oil-prices-nvidia-stock/?src=A00220&yptr=yahoo",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cade-approves-ig4-acquisition-controlling-121358390.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://www.marketwatch.com/story/treasury-yields-climb-as-investors-fear-stagflation-75212d5d?mod=mw_rss_topstories",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/schellman-secures-investment-goldman-sachs-120110919.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://www.investors.com/news/technology/oracle-stock-earnings-preview-q3-2026-ai/?src=A00220&yptr=yahoo",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/sports-betting-crypto-bigger-gamble-120100694.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://www.marketwatch.com/story/this-uncanny-s-p-500-chart-suggests-a-bubble-is-bursting-and-not-just-because-of-iran-77d45514?mod=mw_rss_topstories",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/3-tips-suze-orman-help-120017747.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/colorado-home-insurance-rates-spiking-120000104.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/o-glass-oi-reports-1-114813084.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/kkr-co-kkr-reports-129b-114802305.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/american-airlines-aal-unveils-1b-114754696.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/information-services-group-iii-reports-114745095.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/quanex-building-products-nx-reports-114734248.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/blue-owl-capital-owl-surpasses-114726242.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/peloton-interactive-pton-reports-81m-114717436.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/gibraltar-industries-rock-reports-17-114708221.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/shutterstock-sstk-reports-989-9m-114655765.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/vistra-vst-expands-virtual-power-114645195.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/alight-alit-integrates-vb-scout-114635120.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/cooper-standard-holdings-cps-reports-114627941.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/genasys-gnss-secures-2-0m-114616003.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/gorilla-technology-group-grrr-hits-114609617.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/regional-management-rm-partners-column-114558963.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/news/live-nation-settles-us-antitrust-114457235.html",
-    "timestamp": 1773059623621
-  },
-  {
-    "url": "https://finance.yahoo.com/research/reports/ARGUS_46358_InsiderActivity_1773052593000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
-    "timestamp": 1773059623621
-  },
-  {
     "url": "https://www.marketwatch.com/story/can-my-wife-switch-to-my-social-security-benefits-if-shes-born-after-1954-i-receive-a-lot-more-than-she-does-7a73b77e?mod=mw_rss_topstories",
     "timestamp": 1773064290222
   },
@@ -6954,5 +6822,93 @@
   {
     "url": "https://finance.yahoo.com/research/reports/ARGUS_46431_TopBottomInsiderActivity_1773656081000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
     "timestamp": 1773662172261
+  },
+  {
+    "url": "https://www.cnbc.com/2026/03/16/bessent-says-treasury-is-not-intervening-in-oil-commodities-markets-and-has-no-authority-to-do-so.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://www.marketwatch.com/story/this-biotech-is-working-on-an-glp-1-drug-that-could-be-better-than-the-wegovy-pill-94c8572c?mod=mw_rss_topstories",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/madison-small-cap-fund-exited-122505700.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/sell-avoid-xrp-due-conflict-122000281.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/southern-company-expected-become-dividend-121512392.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/julius-baer-announces-board-overhaul-121116493.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/building-beyond-core-ceiling-open-121059468.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://www.marketwatch.com/story/the-irs-has-changed-the-tax-rules-for-2026-heres-how-to-keep-more-money-and-not-overpay-da5a97bf?mod=mw_rss_topstories",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-nvidia-stock-nvda/?src=A00220&yptr=yahoo",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/nebius-just-landed-27-billion-120751166.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/9-strategies-americans-using-minimize-130040574.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/vong-vs-qqq-growth-etf-120500150.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/perpetual-agrees-sell-wealth-management-120422125.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/nebius-meta-agree-27-billion-120400445.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://www.marketwatch.com/story/trump-has-15-days-to-end-the-iran-war-or-markets-face-a-brutal-april-repricing-from-oil-to-the-s-p-500-995fd2fa?mod=mw_rss_topstories",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/frog-dead-north-america-power-114843990.html",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://www.investors.com/news/technology/nebius-stock-pops-meta-expanded-ai-cloud-computing-agreement/?src=A00220&yptr=yahoo",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/research/reports/ARGUS_46435_MarketOutlook_1773660333000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/research/reports/ARGUS_46434_TechnicalAnalysis_1773660296000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/research/reports/ARGUS_2675_AnalystReport_1773659061000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/research/reports/ARGUS_3176_AnalystReport_1773659061000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+    "timestamp": 1773665101437
+  },
+  {
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-as-wall-street-crosses-fingers-for-hormuz-reopening-224643780.html",
+    "timestamp": 1773665101437
   }
 ]
