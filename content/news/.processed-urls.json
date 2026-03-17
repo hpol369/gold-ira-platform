@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-rebounds-above-70k-as-trump-remarks-lift-risk-appetite-4551058",
-    "timestamp": 1773121124603
-  },
-  {
     "url": "https://finance.yahoo.com/news/prediction-popular-stock-tumble-1-085500390.html",
     "timestamp": 1773133613319
   },
@@ -6790,5 +6786,9 @@
   {
     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-pulls-back-after-jumping-near-76k-iran-war-fed-meet-eyed-4564635",
     "timestamp": 1773725812667
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bybit-institutional-shows-structural-advantages-in-neutral-strategy-new-crypto-quant-strategy-index-report-4564640",
+    "timestamp": 1773729788132
   }
 ]
