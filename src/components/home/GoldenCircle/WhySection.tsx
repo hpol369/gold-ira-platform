@@ -17,7 +17,7 @@ export function WhySection() {
           {/* Acknowledgment Badge */}
           <div style={{ animation: "fadeInUp 0.6s ease-out both" }}>
             <span className="inline-block px-4 py-1.5 bg-[#000080]/10 border border-[#000080]/20 rounded-full text-[#000080] text-sm font-bold mb-8 shadow-sm">
-              For Hard-Working Americans Who&apos;ve Done It Right
+              For Americans With $50,000+ in Retirement Savings
             </span>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-black leading-tight mb-8 text-[#000080]">

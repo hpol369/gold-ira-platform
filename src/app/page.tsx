@@ -2,7 +2,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { WhySection, DeepWhySection } from "@/components/home/GoldenCircle";
+import { WhySection } from "@/components/home/GoldenCircle";
 import { AuthoritySection } from "@/components/home/AuthoritySection";
 import { Container } from "@/components/ui/Container";
 import { AlertTriangle, BookOpen, RefreshCw, ArrowRight } from "lucide-react";
@@ -18,9 +18,19 @@ function SectionSkeleton({ height = "h-64" }: { height?: string }) {
   return <div className={`${height} bg-slate-100 animate-pulse rounded-lg`} />;
 }
 
-const QuizCTA = dynamic(
-  () => import("@/components/home/QuizCTA").then(mod => ({ default: mod.QuizCTA })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-48" /> }
+const FeaturedPartner = dynamic(
+  () => import("@/components/home/FeaturedPartner").then(mod => ({ default: mod.FeaturedPartner })),
+  { ssr: true, loading: () => <SectionSkeleton height="h-72" /> }
+);
+
+const HowSection = dynamic(
+  () => import("@/components/home/GoldenCircle").then(mod => ({ default: mod.HowSection })),
+  { ssr: true, loading: () => <SectionSkeleton height="h-80" /> }
+);
+
+const ComparisonTable = dynamic(
+  () => import("@/components/home/ComparisonTable").then(mod => ({ default: mod.ComparisonTable })),
+  { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
 );
 
 const DailyBrief = dynamic(
@@ -31,16 +41,6 @@ const DailyBrief = dynamic(
 const ValueProps = dynamic(
   () => import("@/components/home/ValueProps").then(mod => ({ default: mod.ValueProps })),
   { ssr: true, loading: () => <SectionSkeleton height="h-64" /> }
-);
-
-const HowSection = dynamic(
-  () => import("@/components/home/GoldenCircle").then(mod => ({ default: mod.HowSection })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-80" /> }
-);
-
-const FeaturedPartner = dynamic(
-  () => import("@/components/home/FeaturedPartner").then(mod => ({ default: mod.FeaturedPartner })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-72" /> }
 );
 
 const Testimonials = dynamic(
@@ -58,11 +58,6 @@ const NewsletterSignup = dynamic(
   { ssr: true, loading: () => <SectionSkeleton height="h-48" /> }
 );
 
-const ComparisonTable = dynamic(
-  () => import("@/components/home/ComparisonTable").then(mod => ({ default: mod.ComparisonTable })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
-);
-
 const TrustBadges = dynamic(
   () => import("@/components/home/TrustBadges").then(mod => ({ default: mod.TrustBadges })),
   { ssr: true, loading: () => <SectionSkeleton height="h-32" /> }
@@ -74,44 +69,37 @@ export default function Home() {
       <Navbar />
 
       <div className="flex-grow">
-        {/* ============================================ */}
-        {/* GOLDEN CIRCLE CONVERSION FLOW               */}
-        {/* ============================================ */}
-
-        {/* 1. VISCERAL WHY: Emotional hook - "Your Retirement Is Under Attack" */}
+        {/* 1. EMOTIONAL HOOK: "Your Retirement Is Under Attack" */}
         <WhySection />
 
-        {/* 2. AUTHORITY: Instant credibility - Stats & Rich Dad philosophy */}
+        {/* 2. CREDIBILITY: Instant trust — stats & Rich Dad philosophy */}
         <AuthoritySection />
 
-        {/* 3. DEEP WHY: Our mission - "Why We Do This" */}
-        <DeepWhySection />
-
-        {/* 4. AGITATION: Make the pain real - Wealth Calculator */}
+        {/* 3. AGITATION: Make the pain real — Wealth Calculator */}
         <WealthCalculator />
 
-        {/* 5. QUIZ CTA: Capture intent right after pain point */}
-        <QuizCTA />
-
-        {/* 6. CURRENT MARKET: Daily Brief - Spot prices & headlines */}
-        <DailyBrief />
-
-        {/* 7. SOLUTION LOGIC: Why gold works - Rich Dad framework */}
-        <ValueProps />
-
-        {/* 8. HOW: Reduce anxiety - "3 Simple Steps" */}
-        <HowSection />
-
-        {/* 9. WHAT: The recommendation - Augusta Featured Partner */}
+        {/* 4. THE ANSWER: Augusta showcase — right after the pain */}
         <FeaturedPartner />
 
-        {/* 10. SOCIAL PROOF: "People like me" - Testimonials */}
+        {/* 5. HOW IT WORKS: Reduce anxiety — "3 Simple Steps" */}
+        <HowSection />
+
+        {/* 6. COMPARE: For researchers — all companies ranked */}
+        <ComparisonTable />
+
+        {/* 7. SOCIAL PROOF: "People like me" — Testimonials */}
         <Testimonials />
 
-        {/* 11. URGENCY: Why act NOW - Gold prices, central banks */}
+        {/* 8. MARKET CONTEXT: Daily Brief — spot prices & headlines */}
+        <DailyBrief />
+
+        {/* 9. EDUCATION: Why gold works — Rich Dad framework */}
+        <ValueProps />
+
+        {/* 10. URGENCY: Why act NOW — gold prices, central banks */}
         <UrgencySection />
 
-        {/* 11.5. QUICK NAVIGATION: Links to key resources */}
+        {/* 11. RESOURCES: Quick nav to key content */}
         <section className="py-16 bg-slate-50 border-y border-slate-200">
           <Container>
             <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
@@ -167,17 +155,14 @@ export default function Home() {
           </Container>
         </section>
 
-        {/* 12. NEWSLETTER: Stay informed - Weekly insights */}
+        {/* 12. NEWSLETTER */}
         <section className="py-16 bg-transparent">
           <Container>
             <NewsletterSignup variant="footer" />
           </Container>
         </section>
 
-        {/* 13. COMPARISON: For researchers - All roads lead to Augusta */}
-        <ComparisonTable />
-
-        {/* 14. TRUST: Final reassurance - Badges */}
+        {/* 13. TRUST: Final reassurance */}
         <TrustBadges />
       </div>
 
