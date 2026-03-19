@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { Star, CheckCircle2, ArrowRight, ShieldCheck, Trophy, BadgeCheck } from "lucide-react";
 import Link from "next/link";
-import { AFFILIATE_LINKS, getAugustaLink } from "@/config/affiliates";
+import { AFFILIATE_LINKS, getTrackedLink, getTrackedAugustaLink } from "@/config/affiliates";
 
 interface Company {
     rank: number;
@@ -31,7 +31,7 @@ const companies: Company[] = [
         bestFor: "High Net Worth Investors ($100k+)",
         bestForBadge: "Best Overall 2026",
         pros: ["Zero fees for up to 10 years", "1-on-1 education w/ Harvard Economist", "Money Magazine's #1 Rated"],
-        ctaUrl: getAugustaLink("comparison"), // Comparison-focused landing page
+        ctaUrl: getTrackedAugustaLink("comparison", "homepage-comparison-augusta"),
         reviewUrl: "/reviews/augusta-precious-metals",
         badgeColor: "gold"
     },
@@ -45,7 +45,7 @@ const companies: Company[] = [
         bestFor: "Smaller Accounts (<$50k)",
         bestForBadge: "Lowest Minimum",
         pros: ["Low $2,000 minimum investment", "No-questions-asked buyback program", "Free 'Survival Pack' with purchase"],
-        ctaUrl: AFFILIATE_LINKS.noble,
+        ctaUrl: getTrackedLink(AFFILIATE_LINKS.noble, "homepage-comparison-noble", "noble"),
         reviewUrl: "/reviews/noble-gold",
         badgeColor: "silver"
     },
@@ -59,7 +59,7 @@ const companies: Company[] = [
         bestFor: "Customer Service",
         bestForBadge: "Best Service",
         pros: ["Thousands of 5-star reviews", "White-glove account setup", "Up to $10k in free silver"],
-        ctaUrl: AFFILIATE_LINKS.goldco,
+        ctaUrl: getTrackedLink(AFFILIATE_LINKS.goldco, "homepage-comparison-goldco", "goldco"),
         reviewUrl: "/reviews/goldco",
         badgeColor: "blue"
     },
@@ -73,7 +73,7 @@ const companies: Company[] = [
         bestFor: "Price Match Guarantee",
         bestForBadge: "Best Price Match",
         pros: ["Price Match Guarantee", "No buyback fees", "Family-owned company"],
-        ctaUrl: AFFILIATE_LINKS.americanHartford,
+        ctaUrl: getTrackedLink(AFFILIATE_LINKS.americanHartford, "homepage-comparison-ahg", "american-hartford"),
         reviewUrl: "/reviews/american-hartford-gold",
         badgeColor: "bronze"
     },
@@ -87,7 +87,7 @@ const companies: Company[] = [
         bestFor: "Diversification",
         bestForBadge: "Most Educational",
         pros: ["Endorsed by Ben Shapiro", "Specializes in silver & palladium", "Flat fees on large accounts"],
-        ctaUrl: AFFILIATE_LINKS.birch,
+        ctaUrl: getTrackedLink(AFFILIATE_LINKS.birch, "homepage-comparison-birch", "birch"),
         reviewUrl: "/reviews/birch-gold",
         badgeColor: "blue"
     }
