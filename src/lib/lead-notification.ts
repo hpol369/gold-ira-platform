@@ -69,6 +69,23 @@ export function buildLeadNotification(lead: Lead, location?: string): string {
 
   lines.push(`🕐 ${timestamp}`);
 
+  // Qualification funnel data
+  if (lead.savings_tier) {
+    lines.push("");
+    const tierLabels: Record<string, string> = {
+      "augusta-white-glove": "🏆 AUGUSTA WHITE GLOVE",
+      "augusta-private": "⭐ AUGUSTA PRIVATE CLIENT",
+      "augusta-standard": "✅ AUGUSTA STANDARD",
+      "secondary": "🔄 SECONDARY (Goldco/AHG)",
+      "starter": "🌱 STARTER (Noble Gold)",
+    };
+    const tierLabel = lead.qualification_tier ? (tierLabels[lead.qualification_tier] || lead.qualification_tier) : "";
+    lines.push(`💰 <b>Savings:</b> ${lead.savings_tier}`);
+    if (lead.concern) lines.push(`⚠️ <b>Concern:</b> ${lead.concern}`);
+    if (tierLabel) lines.push(`🎯 <b>Tier:</b> ${tierLabel}`);
+    if (lead.routed_to) lines.push(`➡️ <b>Routed to:</b> ${lead.routed_to}`);
+  }
+
   // Enrichment data if available
   if (lead.total_retirement_savings && lead.percentage_to_protect) {
     lines.push("");

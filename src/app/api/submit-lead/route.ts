@@ -46,6 +46,11 @@ interface LeadData {
   investmentAmount?: string;
   source?: string;
   skipAugusta?: boolean;
+  // Qualification funnel fields
+  savingsTier?: string;
+  concern?: string;
+  qualificationTier?: string;
+  routedTo?: string;
 }
 
 export async function POST(request: NextRequest) {
@@ -131,6 +136,11 @@ export async function POST(request: NextRequest) {
       ip_address: ip,
       user_agent: userAgent,
       status: "new",
+      // Qualification funnel fields (columns must exist in Supabase)
+      ...(body.savingsTier && { savings_tier: body.savingsTier }),
+      ...(body.concern && { concern: body.concern }),
+      ...(body.qualificationTier && { qualification_tier: body.qualificationTier }),
+      ...(body.routedTo && { routed_to: body.routedTo }),
     };
 
     const lead = await insertLead(leadData);
