@@ -1,13 +1,13 @@
 // src/components/widgets/MobileStickyBar.tsx
 // Mobile-only sticky bottom CTA bar
-// Appears after scrolling past hero, links to Augusta affiliate LP
+// Appears after scrolling past hero, links to /get-started qualification funnel
 
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
 
 export function MobileStickyBar() {
   const [visible, setVisible] = useState(false);
@@ -21,8 +21,6 @@ export function MobileStickyBar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const augustaLink = getTrackedLink(AFFILIATE_LINKS.augusta, "mobile-sticky", "augusta");
 
   return (
     <AnimatePresence>
@@ -39,10 +37,8 @@ export function MobileStickyBar() {
           }}
           className="fixed bottom-0 left-0 right-0 z-50 md:hidden"
         >
-          <a
-            href={augustaLink}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/get-started?ref=mobile-sticky"
             className="flex items-center justify-center gap-2 bg-[#B22234] text-white font-bold py-3.5 px-6 w-full text-center shadow-lg"
             style={{
               paddingBottom: "calc(0.875rem + env(safe-area-inset-bottom, 0px))"
@@ -50,7 +46,7 @@ export function MobileStickyBar() {
           >
             Get Your Free Gold IRA Kit
             <ArrowRight className="h-5 w-5" />
-          </a>
+          </Link>
         </motion.div>
       )}
     </AnimatePresence>

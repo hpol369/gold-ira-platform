@@ -27,6 +27,12 @@ export interface Lead {
   is_qualified?: boolean;
   telegram_message_id?: number;
   telegram_message_ids?: string; // JSON: {"chatId": messageId, ...}
+  // Qualification funnel fields
+  savings_tier?: string;
+  concern?: string;
+  qualification_tier?: string;
+  routed_to?: string;
+  email_sequence?: string;
 }
 
 // Insert a new lead
