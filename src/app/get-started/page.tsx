@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { Suspense, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2 } from "lucide-react";
@@ -22,6 +22,18 @@ const slideVariants = {
 };
 
 export default function GetStartedPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-b from-[#000040] via-[#000060] to-[#000080] flex items-center justify-center">
+        <Loader2 className="h-8 w-8 text-white animate-spin" />
+      </div>
+    }>
+      <GetStartedContent />
+    </Suspense>
+  );
+}
+
+function GetStartedContent() {
   const searchParams = useSearchParams();
   const ref = searchParams.get("ref") || "direct";
 
