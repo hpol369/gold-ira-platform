@@ -286,7 +286,7 @@ export default function BestGoldIraCompaniesPage() {
                     <Container>
                         <AugustaCTA
                             variant="footer"
-                            linkContext="comparison"
+                            linkContext="comparison" directToAugusta
                             headline="You've Earned the Right to Be Careful With Your Money"
                             subheadline="Augusta Precious Metals has zero BBB complaints because they treat people right. No pressure, no gimmicks—just honest folks who will answer your questions and let you decide on your own timeline. After 30 years of hard work, that's the least you deserve."
                             trackSource="best-companies"

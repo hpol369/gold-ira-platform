@@ -488,7 +488,7 @@ export default function BestSilverIraCompaniesPage() {
                     <Container>
                         <AugustaCTA
                             variant="footer"
-                            linkContext="comparison"
+                            linkContext="comparison" directToAugusta
                             headline="Ready to Start Your Silver IRA?"
                             subheadline="Augusta Precious Metals earned our #1 ranking for their transparent silver premiums and education-first approach. Request your free precious metals IRA kit today."
                             trackSource="best-silver-companies"

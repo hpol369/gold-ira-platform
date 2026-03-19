@@ -507,7 +507,7 @@ export default function GoldVsSilverIraPage() {
                 <Container>
                     <AugustaCTA
                         variant="footer"
-                        linkContext="comparison"
+                        linkContext="comparison" directToAugusta
                         headline="Ready to Invest in Gold & Silver?"
                         subheadline="Augusta Precious Metals offers both gold and silver IRAs with transparent pricing and expert guidance. Get started with a free consultation."
                         trackSource="gold-vs-silver-compare"

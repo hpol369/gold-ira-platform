@@ -563,7 +563,7 @@ export default function SilverVsGoldIraPage() {
                         headline="Get Expert Guidance on Gold & Silver Allocation"
                         subheadline="Augusta Precious Metals offers both gold and silver IRAs. Their specialists help you determine the right mix based on your goals, timeline, and risk tolerance."
                         trackSource="silver-vs-gold-ira"
-                        linkContext="comparison"
+                        linkContext="comparison" directToAugusta
                     />
                 </Container>
             </section>

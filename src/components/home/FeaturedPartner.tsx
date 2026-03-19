@@ -5,13 +5,13 @@ import { ArrowRight, Star, ShieldCheck, Trophy, Phone, UserCheck, Lock, Check } 
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
-import { useLeadModal } from "@/context/LeadModalContext";
+import { trackAffiliateClick } from "@/lib/analytics";
+import { getTrackedAugustaLink } from "@/config/affiliates";
 
 export function FeaturedPartner() {
-    const { openModal } = useLeadModal();
-
     const handleCtaClick = () => {
-        openModal("default", "homepage-featured");
+        trackAffiliateClick("augusta", "homepage-featured", "cta");
+        window.location.href = getTrackedAugustaLink("default", "homepage-featured");
     };
 
     return (

@@ -1,5 +1,7 @@
 // src/components/cta/AugustaCTA.tsx
-// Augusta Precious Metals CTA component for use across the site
+// Augusta Precious Metals CTA component — two-path routing
+// Path A (default): /get-started qualification funnel
+// Path B (directToAugusta): context-aware Augusta LP via /api/track-click
 
 "use client";
 
@@ -9,33 +11,77 @@ import { cn } from "@/lib/utils";
 import { trackAffiliateClick } from "@/lib/analytics";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { useLeadModal } from "@/context/LeadModalContext";
+import { getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
 
 interface AugustaCTAProps {
   variant?: "default" | "sidebar" | "inline" | "footer" | "banner";
   headline?: string;
   subheadline?: string;
-  linkContext?: string; // Kept for backwards compatibility, no longer used (modal replaces direct links)
+  /** When true, clicks go directly to Augusta LP instead of /get-started funnel */
+  directToAugusta?: boolean;
+  /** Which Augusta LP variant to use when directToAugusta is true */
+  augustaContext?: AugustaContext;
+  /** @deprecated Use augustaContext instead. Auto-mapped for backward compatibility. */
+  linkContext?: string;
   trackSource?: string;
   className?: string;
 }
+
+// Valid AugustaContext values for auto-mapping from legacy linkContext
+const VALID_CONTEXTS = new Set<string>([
+  "default", "comparison", "fees", "silver", "scam",
+  "buyer-beware", "mid-intent", "fees-mid", "silver-mid",
+]);
 
 export function AugustaCTA({
   variant = "default",
   headline,
   subheadline,
+  directToAugusta = false,
+  augustaContext,
+  linkContext,
   trackSource,
   className,
 }: AugustaCTAProps) {
   const augusta = getFeaturedCompany();
   const { openModal } = useLeadModal();
 
+  // Resolve context: explicit augustaContext > legacy linkContext > "default"
+  const resolvedContext: AugustaContext = augustaContext
+    || (linkContext && VALID_CONTEXTS.has(linkContext) ? linkContext as AugustaContext : undefined)
+    || "default";
+
   const handleClick = () => {
     const linkType = variant === "sidebar" ? "sidebar"
       : variant === "inline" ? "inline"
-      : variant === "banner" ? "cta"
       : "cta";
-    trackAffiliateClick("augusta", trackSource || "direct", linkType);
-    openModal("default", trackSource || `augusta-cta-${variant}`);
+    const source = trackSource || `augusta-cta-${variant}`;
+
+    trackAffiliateClick("augusta", source, linkType);
+
+    if (directToAugusta) {
+      // Path B: Direct to context-aware Augusta LP (tracked via /api/track-click)
+      window.location.href = getTrackedAugustaLink(resolvedContext, source);
+    } else {
+      // Path A: Qualification funnel at /get-started
+      openModal("default", source);
+    }
+  };
+
+  // Button text adapts to the routing path
+  const getButtonText = () => {
+    if (directToAugusta) {
+      if (variant === "sidebar") return "Get Free Kit";
+      if (variant === "inline") return "Visit Augusta";
+      if (variant === "banner") return "Get Free Kit";
+      return "Get Your Free Gold IRA Kit";
+    }
+    // Path A defaults
+    if (variant === "sidebar") return "Free Consultation";
+    if (variant === "inline") return "Learn More";
+    if (variant === "banner") return "Get Free Guide";
+    if (variant === "footer") return "Get Your Free Consultation";
+    return "Get Free Consultation";
   };
 
   // Premium button with patriot glow and shine effect
@@ -73,6 +119,8 @@ export function AugustaCTA({
       </button>
     );
   };
+
+  const buttonText = getButtonText();
 
   // Sidebar variant - compact for sidebars
   if (variant === "sidebar") {
@@ -118,7 +166,7 @@ export function AugustaCTA({
             </li>
           </ul>
           <PremiumButton size="sm" className="w-full justify-center">
-            Free Consultation
+            {buttonText}
           </PremiumButton>
         </div>
       </div>
@@ -145,7 +193,7 @@ export function AugustaCTA({
             </p>
           </div>
           <PremiumButton size="sm" className="whitespace-nowrap">
-            Learn More
+            {buttonText}
             <ArrowRight className="h-4 w-4" />
           </PremiumButton>
         </div>
@@ -175,7 +223,7 @@ export function AugustaCTA({
             </span>
           </div>
           <PremiumButton size="sm">
-            Get Free Guide
+            {buttonText}
             <ArrowRight className="h-4 w-4" />
           </PremiumButton>
         </div>
@@ -224,7 +272,7 @@ export function AugustaCTA({
             </div>
           </div>
           <PremiumButton size="lg">
-            Get Your Free Consultation
+            {buttonText}
             <ArrowRight className="h-5 w-5" />
           </PremiumButton>
         </div>
@@ -273,7 +321,7 @@ export function AugustaCTA({
             </li>
           </ul>
           <PremiumButton size="lg">
-            Get Free Consultation
+            {buttonText}
             <ArrowRight className="h-5 w-5" />
           </PremiumButton>
         </div>
