@@ -573,3 +573,4 @@ GOOD: "A Gold IRA costs between $200-$300 per year in fees, including storage ($
 5. Track progress in `.ralph/status.json`
 
 **START WITH TIER 1.1 — the lead modal rebuild. Everything else builds on qualified leads.**
+
