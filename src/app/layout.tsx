@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SocialProofTickerClient } from "@/components/widgets/SocialProofTickerClient";
+import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
 import Providers from "@/components/providers/Providers";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
@@ -125,7 +126,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900")}>
+      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900 pb-14 md:pb-0")}>
         {/* Google Tag Manager (noscript) - must be first in body */}
         <noscript>
           <iframe
@@ -142,6 +143,7 @@ export default function RootLayout({
         <Providers>
           {children}
           <SocialProofTickerClient />
+          <MobileStickyBar />
         </Providers>
       </body>
     </html>
