@@ -1,9 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-dips-below-70k-as-oil-surges-again-stokes-inflation-fears-4556085",
-    "timestamp": 1773299499938
-  },
-  {
     "url": "https://www.mining.com/lynas-japan-deal-offers-insulation-from-china-rare-earth-pricing/",
     "timestamp": 1773304146006
   },
@@ -6634,5 +6630,9 @@
   {
     "url": "https://www.cnbc.com/2026/03/19/ecb-boe-swiss-national-bank-riksbank-interest-rate-decisions.html",
     "timestamp": 1773900929700
+  },
+  {
+    "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-slides-below-71k-as-traders-pare-fed-cut-bets-4569793",
+    "timestamp": 1773904491985
   }
 ]
