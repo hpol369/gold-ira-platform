@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SocialProofTickerClient } from "@/components/widgets/SocialProofTickerClient";
 import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
+import { ExitIntentPopup } from "@/components/layout/ExitIntentPopup";
 import Providers from "@/components/providers/Providers";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
@@ -144,6 +145,7 @@ export default function RootLayout({
           {children}
           <SocialProofTickerClient />
           <MobileStickyBar />
+          <ExitIntentPopup />
         </Providers>
       </body>
     </html>

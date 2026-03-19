@@ -1,146 +1,194 @@
+// Exit Intent Popup — captures email for nurture sequence
+// Triggers when mouse leaves viewport top (desktop) or after 45s idle (mobile)
+// Shows once per session, stores email in Supabase via /api/newsletter
+
 "use client";
 
-import { useState, useEffect } from "react";
-import { X, FileText, CheckCircle, Loader2 } from "lucide-react";
-import { Button } from "@/components/ui/Button";
-import Link from "next/link";
+import { useState, useEffect, useCallback } from "react";
+import { X, Shield, CheckCircle, Loader2, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { emailService } from "@/lib/email-service";
-import { useABTest } from "@/lib/ab-testing";
+
+const SESSION_KEY = "exitIntentShown";
 
 export function ExitIntentPopup() {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-    const [hasTriggered, setHasTriggered] = useState(false);
-    const [email, setEmail] = useState("");
-    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-    const variant = useABTest("popup-offer");
+  const handleClose = useCallback(() => {
+    setIsVisible(false);
+  }, []);
 
-    const handleSubscribe = async (e: React.FormEvent) => {
-        e.preventDefault();
-        if (!email) return;
+  useEffect(() => {
+    if (sessionStorage.getItem(SESSION_KEY)) return;
 
-        setStatus("loading");
-        try {
-            await emailService.subscribe(email, "exit-popup");
-            setStatus("success");
-            // Delay closing to show success message
-            setTimeout(() => setIsVisible(false), 2000);
-        } catch (error) {
-            console.error(error);
-            setStatus("error");
-        }
+    // Desktop: mouse leaves viewport top
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (e.clientY <= 0) {
+        setIsVisible(true);
+        sessionStorage.setItem(SESSION_KEY, "true");
+        document.removeEventListener("mouseleave", handleMouseLeave);
+      }
     };
 
-    useEffect(() => {
-        const handleMouseLeave = (e: MouseEvent) => {
-            if (e.clientY <= 0 && !hasTriggered) {
-                setIsVisible(true);
-                setHasTriggered(true);
-            }
-        };
+    // Mobile: show after 45s of browsing (no mouse events on mobile)
+    const mobileTimer = setTimeout(() => {
+      if (!sessionStorage.getItem(SESSION_KEY) && window.innerWidth < 768) {
+        setIsVisible(true);
+        sessionStorage.setItem(SESSION_KEY, "true");
+      }
+    }, 45000);
 
-        document.addEventListener("mouseleave", handleMouseLeave);
-        return () => document.removeEventListener("mouseleave", handleMouseLeave);
-    }, [hasTriggered]);
+    document.addEventListener("mouseleave", handleMouseLeave);
+    return () => {
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      clearTimeout(mobileTimer);
+    };
+  }, []);
 
-    // Close on ESC key
-    useEffect(() => {
-        const handleEsc = (e: KeyboardEvent) => {
-            if (e.key === "Escape") setIsVisible(false);
-        };
-        window.addEventListener("keydown", handleEsc);
-        return () => window.removeEventListener("keydown", handleEsc);
-    }, []);
+  // ESC to close
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") handleClose();
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [handleClose]);
 
-    return (
-        <AnimatePresence>
-            {isVisible && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.9 }}
-                        className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200"
-                    >
-                        <button
-                            onClick={() => setIsVisible(false)}
-                            className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-900 transition-colors z-20"
-                        >
-                            <X className="w-6 h-6" />
-                        </button>
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.trim()) return;
 
-                        <div className="flex flex-col md:flex-row">
-                            {/* Visual Side */}
-                            <div className="bg-gradient-to-br from-slate-50 to-white p-8 text-[#000080] md:w-2/5 flex flex-col justify-center items-center text-center relative overflow-hidden">
-                                <div className="absolute inset-0 bg-[#B22234]/5 opacity-30" />
-                                <div className="z-10 bg-[#B22234]/10 p-4 rounded-full mb-4 border border-[#B22234]/30">
-                                    <FileText className="w-10 h-10 text-[#B22234]" />
-                                </div>
-                                <h3 className="z-10 font-serif font-bold text-xl mb-2">Wait!</h3>
-                                <p className="z-10 text-sm text-slate-500">Don't lose 30% of your savings to inflation.</p>
-                            </div>
+    setStatus("loading");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim(), source: "exit-intent" }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("success");
+        setTimeout(() => setIsVisible(false), 2500);
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
 
-                            {/* Content Side */}
-                            <div className="p-8 md:w-3/5 relative">
-                                {status === "success" ? (
-                                    <div className="h-full flex flex-col justify-center items-center text-center animate-in fade-in zoom-in">
-                                        <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
-                                        <h3 className="text-2xl font-bold text-[#000080] mb-2">Success!</h3>
-                                        <p className="text-slate-500">Check your inbox for the guide.</p>
-                                    </div>
-                                ) : (
-                                    <>
-                                        <h2 className="text-2xl font-bold text-[#000080] mb-2">
-                                            {variant === "control" ? "Get the 2026 Gold IRA Guide" : "Free Wealth Protection Kit"}
-                                        </h2>
-                                        <p className="text-slate-500 text-sm mb-6 leading-relaxed">
-                                            {variant === "control"
-                                                ? <span>Learn the <span className="font-semibold text-[#B22234]">#1 tax loophole</span> the rich use to move their 401(k) to gold tax-free.</span>
-                                                : <span>Don't let inflation eat your retirement. Get the complete kit to protect your hard-earned savings.</span>
-                                            }
-                                        </p>
+  return (
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+          onClick={(e) => { if (e.target === e.currentTarget) handleClose(); }}
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: -20 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200"
+          >
+            {/* Close button */}
+            <button
+              onClick={handleClose}
+              className="absolute top-3 right-3 p-2 text-slate-400 hover:text-slate-600 transition-colors z-20 rounded-full hover:bg-slate-100"
+              aria-label="Close"
+            >
+              <X className="w-5 h-5" />
+            </button>
 
-                                        <ul className="space-y-3 mb-6">
-                                            <li className="flex items-start gap-2 text-sm text-slate-600">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                                                <span>Avoid IRS Penalties</span>
-                                            </li>
-                                            <li className="flex items-start gap-2 text-sm text-slate-600">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                                                <span>Best Companies Ranked</span>
-                                            </li>
-                                        </ul>
+            {/* Red accent bar */}
+            <div className="h-1 bg-gradient-to-r from-[#B22234] via-[#B22234] to-[#8b1c2a]" />
 
-                                        <form onSubmit={handleSubscribe} className="space-y-3">
-                                            <input
-                                                type="email"
-                                                placeholder="Enter your email address"
-                                                className="w-full px-4 py-3 rounded-md border border-slate-200 bg-slate-50 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#B22234]/50 focus:border-[#B22234]/50 placeholder:text-slate-500"
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                                required
-                                            />
-                                            <Button
-                                                size="lg"
-                                                variant="gold"
-                                                className="w-full shadow-lg"
-                                                type="submit"
-                                                disabled={status === "loading"}
-                                            >
-                                                {status === "loading" ? <Loader2 className="w-4 h-4 animate-spin" /> : "Download Free PDF"}
-                                            </Button>
-                                        </form>
-                                        <p className="mt-4 text-xs text-center text-slate-500">
-                                            No spam. Unsubscribe anytime.
-                                        </p>
-                                    </>
-                                )}
-                            </div>
-                        </div>
-                    </motion.div>
+            <div className="p-6 md:p-8">
+              {status === "success" ? (
+                <div className="text-center py-4">
+                  <CheckCircle className="w-14 h-14 text-green-500 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold text-[#000080] mb-2">You&apos;re In!</h3>
+                  <p className="text-slate-500 text-sm">Check your inbox for the Gold IRA guide.</p>
                 </div>
-            )}
-        </AnimatePresence>
-    );
+              ) : (
+                <>
+                  {/* Icon + Header */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2.5 rounded-xl bg-[#B22234]/10 border border-[#B22234]/20">
+                      <Shield className="w-6 h-6 text-[#B22234]" />
+                    </div>
+                    <div>
+                      <h2 className="font-serif text-xl font-bold text-[#000080]">
+                        Wait — Don&apos;t Leave Empty-Handed
+                      </h2>
+                    </div>
+                  </div>
+
+                  <p className="text-slate-500 text-sm mb-5 leading-relaxed">
+                    Get our free <span className="font-semibold text-slate-700">2026 Gold IRA Investor&apos;s Guide</span> — the same research that helped 10,000+ Americans protect their retirement.
+                  </p>
+
+                  {/* Benefits */}
+                  <ul className="space-y-2.5 mb-6">
+                    <li className="flex items-start gap-2.5 text-sm text-slate-600">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                      How to roll over your 401(k) tax-free
+                    </li>
+                    <li className="flex items-start gap-2.5 text-sm text-slate-600">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                      Top 5 Gold IRA companies ranked
+                    </li>
+                    <li className="flex items-start gap-2.5 text-sm text-slate-600">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                      IRS rules you need to know before investing
+                    </li>
+                  </ul>
+
+                  {/* Email form */}
+                  <form onSubmit={handleSubmit} className="space-y-3">
+                    <input
+                      type="email"
+                      placeholder="Enter your email address"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#B22234]/30 focus:border-[#B22234]/40 placeholder:text-slate-400"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      autoFocus
+                    />
+                    <button
+                      type="submit"
+                      disabled={status === "loading"}
+                      className="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl font-bold text-white bg-[#B22234] hover:bg-[#8b1c2a] transition-all shadow-lg disabled:opacity-60"
+                    >
+                      {status === "loading" ? (
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                      ) : (
+                        <>
+                          Send Me the Free Guide
+                          <ArrowRight className="w-4 h-4" />
+                        </>
+                      )}
+                    </button>
+                  </form>
+
+                  {status === "error" && (
+                    <p className="mt-3 text-xs text-red-500 text-center">Something went wrong. Please try again.</p>
+                  )}
+
+                  <p className="mt-4 text-xs text-center text-slate-400">
+                    No spam, ever. Unsubscribe anytime.
+                  </p>
+                </>
+              )}
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
 }
