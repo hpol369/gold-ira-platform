@@ -476,7 +476,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 items={article.tocItems}
                 className="static block"
               />
-              <SidebarAuditWidget />
+              <SidebarAuditWidget trackSource={`learn-${article.slug}`} />
             </div>
 
             {/* Article Content */}
@@ -485,7 +485,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {article.sections.map((section, index) => (
                 <Fragment key={section.id}>
                   <ArticleSectionComponent section={section} />
-                  {index === 2 && <InContentCTA />}
+                  {index === 2 && <InContentCTA trackSource={`learn-${article.slug}`} />}
                 </Fragment>
               ))}
 

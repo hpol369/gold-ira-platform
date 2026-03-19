@@ -1,5 +1,5 @@
 // src/components/widgets/InContentCTA.tsx
-// In-content CTA widget with Patriot Light Theme design
+// In-content CTA widget — links to /get-started qualification funnel
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -9,6 +9,8 @@ export type InContentCTAVariant = "default" | "minimal" | "emphasized";
 
 interface InContentCTAProps {
   variant?: InContentCTAVariant;
+  /** Source page for tracking (e.g. "learn-gold-ira-fees") */
+  trackSource?: string;
   className?: string;
 }
 
@@ -34,8 +36,12 @@ const variantStyles: Record<InContentCTAVariant, {
   },
 };
 
-export function InContentCTA({ variant = "default", className }: InContentCTAProps) {
+export function InContentCTA({ variant = "default", trackSource, className }: InContentCTAProps) {
   const styles = variantStyles[variant];
+
+  const href = trackSource
+    ? `/get-started?ref=${encodeURIComponent(trackSource)}`
+    : "/get-started";
 
   return (
     <div
@@ -47,17 +53,17 @@ export function InContentCTA({ variant = "default", className }: InContentCTAPro
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className={cn("text-sm leading-relaxed", styles.text)}>
-          <p className="font-semibold text-[#000080]">Exploring your retirement options?</p>
-          <p>Our 60-second quiz matches you with the right account type</p>
+          <p className="font-semibold text-[#000080]">Thinking about protecting your retirement?</p>
+          <p>Get matched with the right Gold IRA company for your situation — free, no obligation.</p>
         </div>
         <Link
-          href="/audit"
+          href={href}
           className={cn(
             "inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 whitespace-nowrap flex-shrink-0",
             styles.button
           )}
         >
-          Get Matched
+          Get Free Kit
           <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>
