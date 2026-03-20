@@ -17,8 +17,8 @@ import { LoadingAnalysis } from "@/components/audit/LoadingAnalysis";
 // import { RobsFlowSteps } from "./steps/RobsFlowSteps";
 // import { SdiraFlowSteps } from "./steps/SdiraFlowSteps";
 // import { QuizResults } from "./QuizResults";
-import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
-import { useLeadModal } from "@/context/LeadModalContext";
+import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { useRouter } from "next/navigation";
 
 // ============================================
 // TYPE DEFINITIONS
@@ -411,7 +411,7 @@ const pageTransition = {
 // ============================================
 
 export function UniversalQuiz() {
-  const { openModal } = useLeadModal();
+  const router = useRouter();
   const [state, setState] = useState<QuizState>({
     step: 'intro',
     productType: null,
@@ -727,12 +727,6 @@ export function UniversalQuiz() {
   };
 
   const renderResults = () => {
-    const isAugusta = recommendedCompany.affiliateKey.startsWith("augusta");
-    const affiliateLink = !isAugusta ? getTrackedLink(
-      AFFILIATE_LINKS[recommendedCompany.affiliateKey],
-      "universal-quiz-result",
-      recommendedCompany.id
-    ) : "";
 
     return (
       <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12
@@ -846,33 +840,26 @@ export function UniversalQuiz() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              {isAugusta ? (
-                <Button
-                  size="xl"
-                  variant="gold"
-                  className="flex-1 shadow-[0_8px_30px_rgba(212,175,55,0.3),0_0_60px_rgba(212,175,55,0.15)]
-                             hover:shadow-[0_12px_40px_rgba(212,175,55,0.4),0_0_80px_rgba(212,175,55,0.2)]
-                             transition-shadow duration-300"
-                  onClick={() => openModal("default", "universal-quiz-result")}
-                >
-                  Get Free Investment Kit
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              ) : (
-                <Button
-                  size="xl"
-                  variant="gold"
-                  asChild
-                  className="flex-1 shadow-[0_8px_30px_rgba(212,175,55,0.3),0_0_60px_rgba(212,175,55,0.15)]
-                             hover:shadow-[0_12px_40px_rgba(212,175,55,0.4),0_0_80px_rgba(212,175,55,0.2)]
-                             transition-shadow duration-300"
-                >
-                  <a href={affiliateLink} target="_blank" rel="noopener noreferrer">
-                    Get Free Investment Kit
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-              )}
+              <Button
+                size="xl"
+                variant="gold"
+                className="flex-1 shadow-[0_8px_30px_rgba(212,175,55,0.3),0_0_60px_rgba(212,175,55,0.15)]
+                           hover:shadow-[0_12px_40px_rgba(212,175,55,0.4),0_0_80px_rgba(212,175,55,0.2)]
+                           transition-shadow duration-300"
+                onClick={() => {
+                  const quizParams = new URLSearchParams({
+                    ref: "universal-quiz",
+                    savings: state.answers.budget || "",
+                    concern: state.answers["primary-concern"] || state.answers["crypto-experience"] || "",
+                    product: state.productType || "gold-ira",
+                    match: recommendedCompany.id,
+                  });
+                  router.push(`/get-started?${quizParams.toString()}`);
+                }}
+              >
+                Get Free Investment Kit
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
               <Button
                 size="lg"
                 variant="outline"

@@ -35,20 +35,75 @@ export default function GetStartedPage() {
   );
 }
 
+// Map quiz savings values to funnel SavingsTier
+function mapSavingsParam(value: string): SavingsTier | null {
+  const mapping: Record<string, SavingsTier> = {
+    "under-25k": "under-25k",
+    "<25k": "under-25k",
+    "25k-50k": "25k-50k",
+    "50k-100k": "50k-100k",
+    "100k-250k": "100k-250k",
+    "100k-500k": "250k-500k",
+    "250k-500k": "250k-500k",
+    "250k+": "250k-500k",
+    "500k-plus": "500k-plus",
+    "500k+": "500k-plus",
+  };
+  return mapping[value] || null;
+}
+
+// Map quiz concern values to funnel Concern
+function mapConcernParam(value: string): Concern | null {
+  const mapping: Record<string, Concern> = {
+    "inflation": "inflation",
+    "market-crash": "market-crash",
+    "economy": "market-crash",
+    "diversification": "market-crash",
+    "outliving-savings": "outliving-savings",
+    "legacy": "legacy",
+  };
+  return mapping[value] || null;
+}
+
 function GetStartedContent() {
   const searchParams = useSearchParams();
   const ref = searchParams.get("ref") || "direct";
   const variant = useABTest("funnel-order-v1");
 
+  // Read pre-filled params from quiz/calculator
+  const savingsParam = searchParams.get("savings");
+  const concernParam = searchParams.get("concern");
+  const prefillSavings = savingsParam ? mapSavingsParam(savingsParam) : null;
+  const prefillConcern = concernParam ? mapConcernParam(concernParam) : null;
+
   // Variant B: concern-first (emotional hook), then savings
   const firstStep = variant === "variant" ? "concern" : "savings";
   const secondStep = variant === "variant" ? "savings" : "concern";
 
+  // Determine initial step based on pre-filled params
+  function getInitialStep(): FunnelState["step"] {
+    if (prefillSavings && prefillConcern) {
+      // Both pre-filled (from quiz) → skip to result
+      return "result";
+    }
+    if (prefillSavings) {
+      // Savings pre-filled → skip to concern
+      return variant === "variant" ? "concern" : "concern";
+    }
+    if (prefillConcern) {
+      // Concern pre-filled → skip to savings
+      return variant === "variant" ? "savings" : "savings";
+    }
+    return firstStep as FunnelState["step"];
+  }
+
+  const initialQualification = prefillSavings ? getQualificationResult(prefillSavings) : null;
+
   const [state, setState] = useState<FunnelState>({
-    step: firstStep as FunnelState["step"],
-    savingsTier: null,
-    concern: null,
-    qualificationTier: null,
+    step: getInitialStep(),
+    savingsTier: prefillSavings,
+    concern: prefillConcern,
+    qualificationTier: initialQualification?.tier || null,
     firstName: "",
     email: "",
     phone: "",

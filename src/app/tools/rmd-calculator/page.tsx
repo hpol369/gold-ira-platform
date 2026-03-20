@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { RMDCalculator } from "@/components/tools/RMDCalculator";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import {
@@ -399,6 +400,13 @@ export default function RMDCalculatorPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Contextual CTA */}
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="rmd" trackSource="tools-rmd-calculator" />
         </Container>
       </section>
 

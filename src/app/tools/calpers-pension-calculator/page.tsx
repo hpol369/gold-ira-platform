@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CalPERSPensionCalculator } from "@/components/tools/CalPERSPensionCalculator";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import {
   AlertTriangle,
@@ -537,6 +538,13 @@ export default function CalPERSPensionCalculatorPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Contextual CTA */}
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="calpers" trackSource="tools-calpers-pension-calculator" />
         </Container>
       </section>
 
