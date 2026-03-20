@@ -12,6 +12,7 @@ import { getAllWidowGuideArticleSlugs } from "@/data/widow-guide";
 import { getAllMedicaidArticleSlugs } from "@/data/medicaid-planning";
 import { getAllGrandchildrenArticleSlugs } from "@/data/grandchildren";
 import { getAllSeniorProtectionArticleSlugs } from "@/data/senior-protection";
+import { getAllFederalRetirementArticleSlugs } from "@/data/federal-retirement";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.richdadretirement.com";
@@ -798,6 +799,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // FEDERAL RETIREMENT PAGES
+  // ============================================
+  const federalRetirementSlugs = getAllFederalRetirementArticleSlugs();
+  const federalRetirementPages = [
+    {
+      url: `${baseUrl}/federal-retirement`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    ...federalRetirementSlugs.map((slug) => ({
+      url: `${baseUrl}/federal-retirement/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   // Deduplicate by URL to handle any overlaps
@@ -845,6 +865,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Gold & Silver Stocks Hubs
     ...goldStocksPages,
     ...silverStocksPages,
+    // Federal Retirement Hub
+    ...federalRetirementPages,
   ];
 
   // Deduplicate by URL

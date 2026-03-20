@@ -49,6 +49,7 @@ export function Footer() {
                             <li><Link href="/guide/gold-ira-minimum-investment" className="text-gray-400 hover:text-white transition-colors text-sm">Gold IRA Minimum Investment</Link></li>
                             <li><Link href="/crypto-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Crypto IRA Guide</Link></li>
                             <li><Link href="/self-directed-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Self-Directed IRA</Link></li>
+                            <li><Link href="/federal-retirement" className="text-gray-400 hover:text-white transition-colors text-sm">Federal Retirement Guide</Link></li>
                         </ul>
                         <h3 className="font-semibold text-white mb-4 mt-6 text-sm">Silver Guides</h3>
                         <ul className="space-y-2">
