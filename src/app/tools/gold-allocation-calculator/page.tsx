@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { GoldAllocationCalculator } from "@/components/tools/GoldAllocationCalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -52,6 +53,11 @@ export default function GoldAllocationCalculatorPage() {
       <SchemaScript schema={breadcrumbs} />
       <Navbar />
       <GoldAllocationCalculator />
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="gold-allocation" trackSource="tools-gold-allocation-calculator" />
+        </Container>
+      </section>
       <section className="py-16 bg-white">
         <Container>
           <AugustaCTA

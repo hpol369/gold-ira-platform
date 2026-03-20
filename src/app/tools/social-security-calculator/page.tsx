@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { AugustaCTA } from '@/components/cta/AugustaCTA';
+import { CalculatorCTA } from '@/components/widgets/CalculatorCTA';
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -627,6 +628,9 @@ export default function SocialSecurityCalculatorPage() {
                       </li>
                     </ul>
                   </div>
+
+                  {/* Contextual CTA */}
+                  <CalculatorCTA calculatorType="social-security" trackSource="tools-social-security-calculator" />
 
                   {/* CTA */}
                   <AugustaCTA

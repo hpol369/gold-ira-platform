@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 
 // Provider options
 const providers = [
@@ -634,6 +635,13 @@ export default function RiskAnalyzerPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Contextual CTA */}
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="general" trackSource="tools-401k-risk-analyzer" />
         </Container>
       </section>
 

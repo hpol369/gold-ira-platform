@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { getQuizResult, type QuizState, type QuizResult } from "@/types/quiz";
 import { Container } from "@/components/ui/Container";
-import { getTrackedLink } from "@/config/affiliates";
-import { useLeadModal } from "@/context/LeadModalContext";
+import { useRouter } from "next/navigation";
 
 // Updated for "Rich Dad" style scoring
 const steps = [
@@ -73,7 +72,7 @@ export function QuizWizard() {
     const [currentStepIndex, setCurrentStepIndex] = useState(0);
     const [answers, setAnswers] = useState<Partial<QuizState>>({});
     const [result, setResult] = useState<QuizResult | null>(null);
-    const { openModal } = useLeadModal();
+    const router = useRouter();
 
     const currentStep = steps[currentStepIndex];
     const progress = ((currentStepIndex) / (steps.length - 1)) * 100;
@@ -212,19 +211,19 @@ export function QuizWizard() {
                             </ul>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                {result.partnerId === "augusta" ? (
-                                    <Button size="xl" variant="gold" className="w-full" onClick={() => openModal("default", "quiz-result")}>
-                                        Get Free "Rich Dad" Investment Kit
-                                        <ArrowRight className="ml-2 h-5 w-5" />
-                                    </Button>
-                                ) : (
-                                    <Button size="xl" variant="gold" asChild className="w-full">
-                                        <a href={getTrackedLink(result.affiliateLink, "quiz-result", result.partnerId)} target="_blank" rel="noopener noreferrer">
-                                            Get Free "Rich Dad" Investment Kit
-                                            <ArrowRight className="ml-2 h-5 w-5" />
-                                        </a>
-                                    </Button>
-                                )}
+                                <Button size="xl" variant="gold" className="w-full" onClick={() => {
+                                    const quizParams = new URLSearchParams({
+                                        ref: "quiz-wizard",
+                                        savings: answers.savingsAmount || "",
+                                        concern: answers.investmentGoal || "",
+                                        product: "gold-ira",
+                                        match: result.partnerId,
+                                    });
+                                    router.push(`/get-started?${quizParams.toString()}`);
+                                }}>
+                                    Get Free &ldquo;Rich Dad&rdquo; Investment Kit
+                                    <ArrowRight className="ml-2 h-5 w-5" />
+                                </Button>
                                 <div className="text-center sm:text-left px-2">
                                     <p className="text-xs text-slate-500 mt-2">100% Free • No Obligation • Educational Only</p>
                                 </div>

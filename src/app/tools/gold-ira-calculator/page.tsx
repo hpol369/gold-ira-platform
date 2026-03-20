@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { GoldIRACalculator } from "@/components/tools/GoldIRACalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -56,6 +57,11 @@ export default function GoldIRACalculatorPage() {
       <SchemaScript schema={breadcrumbs} />
       <Navbar />
       <GoldIRACalculator />
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="gold-ira" trackSource="tools-gold-ira-calculator" />
+        </Container>
+      </section>
       <section className="py-16 bg-slate-50">
         <Container>
           <AugustaCTA

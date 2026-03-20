@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import {
@@ -1067,6 +1068,9 @@ export default function RetirementCalculatorPage() {
                         </div>
                       </div>
                     </div>
+
+                    {/* Contextual CTA */}
+                    <CalculatorCTA calculatorType="retirement" trackSource="tools-retirement-calculator" />
 
                     {/* Augusta CTA */}
                     <AugustaCTA
