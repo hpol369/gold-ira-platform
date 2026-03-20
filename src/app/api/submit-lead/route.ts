@@ -70,8 +70,8 @@ export async function POST(request: NextRequest) {
 
     const body: LeadData = await request.json();
 
-    // Validate required fields
-    if (!body.firstName || !body.email || !body.phone) {
+    // Validate required fields (phone is optional for sub-$50k leads)
+    if (!body.firstName || !body.email) {
       return NextResponse.json(
         { success: false, error: "Missing required fields" },
         { status: 400 }
@@ -86,19 +86,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate phone (must be 10 digits US number)
-    if (!isValidPhone(body.phone)) {
-      return NextResponse.json(
-        { success: false, error: "Invalid phone number - must be 10 digit US number" },
-        { status: 400 }
-      );
+    // Validate phone only if provided (required for Augusta $50k+ leads, optional for others)
+    if (body.phone && body.phone.trim()) {
+      if (!isValidPhone(body.phone)) {
+        return NextResponse.json(
+          { success: false, error: "Invalid phone number - must be 10 digit US number" },
+          { status: 400 }
+        );
+      }
     }
 
     // Sanitize inputs (strip HTML/script tags)
     body.firstName = body.firstName.replace(/<[^>]*>/g, "").trim().slice(0, 100);
     body.lastName = (body.lastName || "").replace(/<[^>]*>/g, "").trim().slice(0, 100);
     body.email = body.email.trim().toLowerCase().slice(0, 254);
-    body.phone = normalizePhone(body.phone);
+    body.phone = body.phone ? normalizePhone(body.phone) : "";
 
     // Deduplication: check if email already exists
     const existingLead = await getLeadByEmail(body.email);

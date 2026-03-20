@@ -14,7 +14,6 @@ import { KeyTakeaways } from "@/components/learn/KeyTakeaways";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
-import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import {
@@ -717,9 +716,6 @@ export default async function LearnArticlePage({ params }: PageProps) {
           />
         </Container>
       </section>
-
-      {/* Mobile Sticky CTA Bar */}
-      <MobileStickyBar />
 
       <Footer />
     </main>

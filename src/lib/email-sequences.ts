@@ -427,15 +427,25 @@ export const SEQUENCES: Record<string, Sequence> = {
 
 /**
  * Get the appropriate sequence for a lead based on savings tier
+ * Handles both funnel format ("50k-100k") and display format ("$50k-$100k")
  */
 export function getSequenceForTier(savingsTier: string): string {
-  switch (savingsTier) {
-    case "$250k+":
-    case "$100k-$250k":
-    case "$50k-$100k":
+  // Normalize: strip $ and whitespace, lowercase
+  const normalized = savingsTier.replace(/[$\s]/g, "").toLowerCase();
+
+  switch (normalized) {
+    // $50k+ tiers → Augusta "Gold IRA Primer" sequence
+    case "500k-plus":
+    case "500k+":
+    case "250k-500k":
+    case "250k+":
+    case "100k-250k":
+    case "50k-100k":
       return "gold-ira-primer";
-    case "$25k-$50k":
-    case "Under $25k":
+    // Sub-$50k tiers → "Starter Path" sequence
+    case "25k-50k":
+    case "under-25k":
+    case "under25k":
     default:
       return "starter-path";
   }

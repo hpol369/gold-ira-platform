@@ -159,7 +159,7 @@ function GetStartedContent() {
       setError("Network error. Please try again.");
       setState(prev => ({ ...prev, step: "contact" }));
     }
-  }, [state, ref]);
+  }, [state, ref, variant]);
 
   const result = state.savingsTier ? getQualificationResult(state.savingsTier) : null;
 
