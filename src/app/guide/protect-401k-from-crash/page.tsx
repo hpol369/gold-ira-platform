@@ -7,7 +7,9 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, ShieldCheck, TrendingDown, Coins, BarChart3, AlertTriangle, PieChart } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import { Metadata } from "next";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "How to Protect Your 401(k) From a Stock Market Crash",
@@ -96,10 +98,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Protect 401k From Crash", url: "/guide/protect-401k-from-crash" },
+]);
+
 export default function Protect401kFromCrashPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-100 py-16 border-b border-slate-200">
                 <Container>
@@ -116,6 +125,18 @@ export default function Protect401kFromCrashPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="The most effective ways to protect your 401(k) from a market crash are diversifying into gold (10-20% allocation), shifting to stable value funds or bond funds within your plan, and considering a Gold IRA rollover for funds in old employer plans. Gold has historically risen during the 7 major market crashes since 1973."
+                keyFacts={[
+                    "Gold gained 25% during the 2008 financial crisis while the S&P 500 lost 37%",
+                    "A 10-15% gold allocation reduced portfolio volatility by 20% over 20-year periods",
+                    "You can diversify within your current 401(k) AND roll over old plans to gold",
+                    "Target-date funds provide automatic rebalancing but still carry stock market risk",
+                    "Consider stable value funds for the portion you can't afford to lose",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

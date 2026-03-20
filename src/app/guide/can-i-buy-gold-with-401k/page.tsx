@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, HelpCircle, Coins, FileText } from "lucide-re
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Can I Buy Gold With My 401k? Yes, Here's How (2026)",
@@ -72,10 +73,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Can I Buy Gold With 401k", url: "/guide/can-i-buy-gold-with-401k" },
+]);
+
 export default function CanIBuyGoldWith401kPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

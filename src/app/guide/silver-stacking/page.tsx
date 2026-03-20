@@ -8,6 +8,8 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Coins, Target, Scale, ShieldCheck, TrendingUp, ArrowRight, CheckCircle2, AlertTriangle, Layers, Calculator, Sparkles } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Silver Stacking Guide 2026: How to Build Your Silver Stack",
@@ -150,6 +152,12 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Silver Stacking", url: "/guide/silver-stacking" },
+]);
+
 export default function SilverStackingGuidePage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
@@ -157,6 +165,7 @@ export default function SilverStackingGuidePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
+            <SchemaScript schema={breadcrumbs} />
             <Navbar />
 
             <div className="flex-grow">

@@ -8,6 +8,8 @@ import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, 
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "401k to Gold IRA Rollover Guide 2026: Tax-Free Transfer Steps",
@@ -97,10 +99,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "401k to Gold Rollover", url: "/guide/401k-to-gold-rollover" },
+]);
+
 export default function RolloverGuidePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>
@@ -118,6 +127,18 @@ export default function RolloverGuidePage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="You can roll over your 401(k) to a Gold IRA tax-free and penalty-free through a direct rollover. The process takes 2-3 weeks: open a self-directed IRA with a gold custodian, request a direct transfer from your 401(k) provider, then select IRS-approved metals once funds arrive."
+                keyFacts={[
+                    "Rollover is 100% tax-free (direct transfer)",
+                    "No early withdrawal penalty regardless of age",
+                    "You can roll over all or part of your 401(k)",
+                    "Minimum investment: $2,000-$50,000 depending on custodian",
+                    "Process typically completes in 10-15 business days",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">

@@ -6,6 +6,8 @@ import { WhySection } from "@/components/home/GoldenCircle";
 import { AuthoritySection } from "@/components/home/AuthoritySection";
 import { Container } from "@/components/ui/Container";
 import { AlertTriangle, BookOpen, RefreshCw, ArrowRight } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { webSiteSchema, siteNavigationSchema } from "@/lib/schema";
 
 // Lazy load below-fold components for better performance
 const WealthCalculator = dynamic(
@@ -63,9 +65,22 @@ const TrustBadges = dynamic(
   { ssr: true, loading: () => <SectionSkeleton height="h-32" /> }
 );
 
+const siteNavItems = [
+  { name: "Gold IRA Guide", url: "/guide/gold-ira-guide" },
+  { name: "Best Gold IRA Companies", url: "/best-gold-ira-companies" },
+  { name: "Reviews", url: "/reviews" },
+  { name: "Calculators", url: "/tools" },
+  { name: "Learn", url: "/learn" },
+  { name: "News", url: "/news" },
+  { name: "Rollover Guide", url: "/rollover" },
+  { name: "Get Started", url: "/get-started" },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col bg-transparent">
+      <SchemaScript schema={webSiteSchema()} />
+      <SchemaScript schema={siteNavigationSchema(siteNavItems)} />
       <Navbar />
 
       <div className="flex-grow">

@@ -8,6 +8,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, 
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "403(b) to Gold IRA Rollover Guide: For Teachers & Nurses (2026)",
@@ -79,10 +80,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "403b to Gold IRA Rollover", url: "/guide/403b-to-gold-ira-rollover" },
+]);
+
 export default function TsaRolloverPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>

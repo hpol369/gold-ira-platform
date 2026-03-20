@@ -7,9 +7,11 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, DollarSign, Building2, Lock, Scale, Coins } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Silver IRA Guide 2026: How to Invest in Silver for Retirement",
@@ -95,10 +97,17 @@ const schema = {
     }
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Silver IRA Guide", url: "/guide/silver-ira-guide" },
+]);
+
 export default function SilverIraGuidePage() {
     return (
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             <Navbar />
             {/* Header */}
             <header className="bg-primary text-slate-900 py-20 relative overflow-hidden">
@@ -118,6 +127,18 @@ export default function SilverIraGuidePage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="A Silver IRA is a self-directed IRA that holds IRS-approved physical silver bars and coins. Silver must be at least 99.9% pure to qualify. You fund it by rolling over an existing IRA or 401(k) tax-free, with minimum investments starting at $2,000 at Noble Gold and $10,000 at most other custodians."
+                keyFacts={[
+                    "IRS-approved silver: American Silver Eagles, Canadian Maple Leafs, and .999+ bars",
+                    "Silver is more volatile than gold but has higher upside potential (gold-to-silver ratio ~80:1)",
+                    "Annual storage fees: $100-$200/year for silver (slightly more than gold due to volume)",
+                    "2024-2026 silver demand has exceeded supply for 3 consecutive years",
+                    "Many Gold IRA companies handle silver too — same account, same custodian",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">

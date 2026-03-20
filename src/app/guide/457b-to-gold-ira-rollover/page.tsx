@@ -8,6 +8,7 @@ import { ArrowRight, CheckCircle2, AlertTriangle, Building2, RefreshCw, Briefcas
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "457(b) to Gold IRA Rollover Guide: For Government Employees (2026)",
@@ -87,10 +88,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "457b to Gold IRA Rollover", url: "/guide/457b-to-gold-ira-rollover" },
+]);
+
 export default function Page457bRolloverPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-100 text-[#000080] py-20 relative overflow-hidden border-b border-slate-200">
                 <div className="absolute inset-0 bg-primary-dark/50" />

@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Clock, FileText } from "lucide-r
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How to Transfer 401k to Gold: Simple Guide (2026)",
@@ -83,10 +84,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Transfer 401k to Gold", url: "/guide/transfer-401k-to-gold" },
+]);
+
 export default function Transfer401kToGoldPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { FIRECalculator } from "@/components/tools/FIRECalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "FIRE Calculator - Financial Independence Retire Early Calculator",
@@ -81,6 +83,12 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "FIRE Calculator", url: "/tools/fire-calculator" },
+]);
+
 export default function FIRECalculatorPage() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
@@ -92,6 +100,7 @@ export default function FIRECalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <SchemaScript schema={breadcrumbs} />
       <Navbar />
       <FIRECalculator />
       <section className="py-16 bg-slate-50">

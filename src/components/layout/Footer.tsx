@@ -140,9 +140,9 @@ export function Footer() {
                         <Link href="/scenarios" className="text-gray-400 hover:text-white transition-colors text-sm">Crisis Scenarios</Link>
                         <Link href="/guide/401k-alternatives" className="text-gray-400 hover:text-white transition-colors text-sm">401k Alternatives</Link>
                         <Link href="/guide/what-to-do-with-old-401k" className="text-gray-400 hover:text-white transition-colors text-sm">What to Do with Old 401k</Link>
-                        <Link href="/learn/qualified-longevity-annuity-contract" className="text-gray-400 hover:text-white transition-colors text-sm">QLAC Guide</Link>
-                        <Link href="/learn/variable-percentage-withdrawal" className="text-gray-400 hover:text-white transition-colors text-sm">VPW Strategy</Link>
-                        <Link href="/learn/fixed-vs-variable-annuity" className="text-gray-400 hover:text-white transition-colors text-sm">Annuity Comparison</Link>
+                        <Link href="/is-enough-to-retire" className="text-gray-400 hover:text-white transition-colors text-sm">Is $X Enough to Retire?</Link>
+                        <Link href="/grandchildren" className="text-gray-400 hover:text-white transition-colors text-sm">Grandchildren Planning</Link>
+                        <Link href="/senior-protection" className="text-gray-400 hover:text-white transition-colors text-sm">Senior Protection</Link>
                         <Link href="/learn/indirect-vs-direct-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Direct vs Indirect Rollover</Link>
                     </div>
                 </div>

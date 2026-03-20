@@ -8,6 +8,8 @@ import { ArrowRight, CheckCircle2, AlertTriangle, DollarSign, Calculator, Percen
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees Guide 2026: Complete Fee Breakdown & Comparison",
@@ -95,10 +97,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Gold IRA Fees", url: "/guide/gold-ira-fees" },
+]);
+
 export default function GoldIraFeesGuidePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>
@@ -118,6 +127,17 @@ export default function GoldIraFeesGuidePage() {
             </header>
 
             <Container className="py-12">
+                <AnswerFirst
+                  answer="A Gold IRA costs between $200-$350 per year in fees, including storage ($100-$150/year), custodian fees ($50-$100/year), and a one-time setup fee ($50-$100). The biggest hidden cost is the dealer markup on metals, which ranges from 5-33% over spot price depending on the company and product type."
+                  keyFacts={[
+                    "Augusta Precious Metals: No fees for up to 10 years on qualifying accounts ($50k+)",
+                    "Goldco: $175/year flat fee (storage + custodian combined)",
+                    "Noble Gold: $80/year custodian + $150/year storage ($230 total)",
+                    "Segregated storage costs $50-$150 more per year than commingled",
+                    "On a $50,000 account, annual fees equal roughly 0.45% — comparable to many ETFs",
+                  ]}
+                  className="mb-8 max-w-3xl"
+                />
                 <div className="flex flex-col lg:flex-row gap-12">
                     {/* Sidebar (TOC) */}
                     <aside className="lg:w-64 flex-shrink-0">

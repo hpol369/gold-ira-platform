@@ -7,6 +7,8 @@ import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Sc
 import Link from "next/link";
 import { Metadata } from "next";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Birch Gold Fees 2026: Complete Fee Breakdown & Cost Analysis",
@@ -85,6 +87,12 @@ const articleSchema = {
     }
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Birch Gold Fees", url: "/guide/birch-gold-fees" },
+]);
+
 export default function BirchGoldFeesPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
@@ -99,6 +107,7 @@ export default function BirchGoldFeesPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
+            <SchemaScript schema={breadcrumbs} />
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

@@ -7,6 +7,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, XCircle, AlertTriangle, DollarSign, Building2, Coins, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
 
@@ -103,10 +104,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "What to Do With Old 401k", url: "/guide/what-to-do-with-old-401k" },
+]);
+
 export default function WhatToDoWithOld401kPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-100 text-[#000080] py-20 relative overflow-hidden border-b border-slate-200">
                 <div className="absolute inset-0 bg-primary-dark/50" />

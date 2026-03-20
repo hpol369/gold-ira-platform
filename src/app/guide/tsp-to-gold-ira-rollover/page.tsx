@@ -8,6 +8,8 @@ import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, 
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "TSP to Gold IRA Rollover Guide: Federal & Military Rules (2026)",
@@ -80,10 +82,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "TSP to Gold IRA Rollover", url: "/guide/tsp-to-gold-ira-rollover" },
+]);
+
 export default function TspRolloverPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>
@@ -101,6 +110,18 @@ export default function TspRolloverPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="You can roll over your TSP (Thrift Savings Plan) to a Gold IRA tax-free if you've separated from federal service or are age 59½+. Active employees can do an in-service withdrawal of the civilian portion. The process takes 2-4 weeks through a direct rollover to avoid the mandatory 20% withholding."
+                keyFacts={[
+                    "Must have separated from service OR be 59½+ for full rollover",
+                    "Active employees: partial in-service withdrawal available for civilian contributions",
+                    "Direct rollover avoids the mandatory 20% federal tax withholding",
+                    "TSP to Gold IRA transfers are reported on Form 1099-R but are not taxable events",
+                    "FERS and CSRS employees are both eligible",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">

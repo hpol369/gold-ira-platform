@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/audit",
     "/learn",
     "/local",
+    "/is-enough-to-retire",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

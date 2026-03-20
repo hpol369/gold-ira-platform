@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { DollarSign, Wallet, TrendingUp, AlertTriangle, ArrowRight, Layers } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Gold IRA Minimum Investment: How Much Do You Need? (2026)",
@@ -88,10 +90,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Gold IRA Minimum Investment", url: "/guide/gold-ira-minimum-investment" },
+]);
+
 export default function GoldIraMinimumInvestmentPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
@@ -108,6 +117,18 @@ export default function GoldIraMinimumInvestmentPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="Gold IRA minimum investments range from $2,000 (Noble Gold) to $50,000 (Augusta Precious Metals). The industry average minimum is $10,000-$25,000. Higher minimums often come with lower fees and better service — Augusta waives up to 10 years of fees for accounts over $50,000."
+                keyFacts={[
+                    "Noble Gold: $2,000 minimum — best for small accounts",
+                    "American Hartford Gold: $10,000 minimum",
+                    "Goldco: $25,000 minimum",
+                    "Augusta Precious Metals: $50,000 minimum — best service and education",
+                    "IRS has no official minimum for Gold IRAs — it's set by each company",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

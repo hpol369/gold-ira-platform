@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { GoldIRACalculator } from "@/components/tools/GoldIRACalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Gold IRA Calculator - Calculate Your Gold IRA Investment Returns",
@@ -38,6 +40,12 @@ const schemaMarkup = {
   ],
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Gold IRA Calculator", url: "/tools/gold-ira-calculator" },
+]);
+
 export default function GoldIRACalculatorPage() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
@@ -45,6 +53,7 @@ export default function GoldIRACalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
+      <SchemaScript schema={breadcrumbs} />
       <Navbar />
       <GoldIRACalculator />
       <section className="py-16 bg-slate-50">

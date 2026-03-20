@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import { Coins, CheckCircle2, XCircle, ArrowRight, Shield, Scale, DollarSign, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
@@ -239,10 +240,17 @@ const notAllowedSilver = [
     },
 ];
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "IRA Approved Silver", url: "/guide/ira-approved-silver" },
+]);
+
 export default function IraApprovedSilverPage() {
     return (
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             <Navbar />
 
             {/* Header */}

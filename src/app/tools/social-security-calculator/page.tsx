@@ -6,6 +6,14 @@ import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { AugustaCTA } from '@/components/cta/AugustaCTA';
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Social Security Calculator", url: "/tools/social-security-calculator" },
+]);
 
 export default function SocialSecurityCalculatorPage() {
   // Form state
@@ -137,6 +145,7 @@ export default function SocialSecurityCalculatorPage() {
   return (
     <>
       <Navbar />
+      <SchemaScript schema={breadcrumbs} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">

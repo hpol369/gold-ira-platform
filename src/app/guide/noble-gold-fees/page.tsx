@@ -7,6 +7,8 @@ import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Sc
 import Link from "next/link";
 import { Metadata } from "next";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Noble Gold Fees Breakdown 2026: Setup, Storage & Annual Costs",
@@ -18,9 +20,16 @@ export const metadata: Metadata = {
     },
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Noble Gold Fees", url: "/guide/noble-gold-fees" },
+]);
+
 export default function NobleGoldFeesPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
+            <SchemaScript schema={breadcrumbs} />
             <Navbar />
 
             {/* Header */}

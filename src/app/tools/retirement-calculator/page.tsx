@@ -6,6 +6,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import {
   Calculator,
   ArrowRight,
@@ -105,6 +107,12 @@ function getRiskAssessment(
       "Your plan is reasonable but has some vulnerability. Consider ways to extend your runway and protect against inflation.",
   };
 }
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Retirement Calculator", url: "/tools/retirement-calculator" },
+]);
 
 export default function RetirementCalculatorPage() {
   // Step state
@@ -235,6 +243,7 @@ export default function RetirementCalculatorPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
+      <SchemaScript schema={breadcrumbs} />
 
       {/* Hero Section */}
       <section className="py-12 md:py-16 bg-slate-50">

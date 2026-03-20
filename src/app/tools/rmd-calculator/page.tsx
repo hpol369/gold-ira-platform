@@ -5,6 +5,7 @@ import { RMDCalculator } from "@/components/tools/RMDCalculator";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import {
   AlertTriangle,
   CheckCircle2,
@@ -134,12 +135,19 @@ const faqSchema = {
   ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "RMD Calculator", url: "/tools/rmd-calculator" },
+]);
+
 export default function RMDCalculatorPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
+      <SchemaScript schema={breadcrumbs} />
 
       {/* Calculator Section */}
       <RMDCalculator />

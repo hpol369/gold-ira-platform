@@ -9,6 +9,8 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { createPageMetadata } from "@/lib/metadata";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata = createPageMetadata({
     title: "Rich Dad Retirement 2026: Complete Beginner's Guide to Gold IRAs",
@@ -96,10 +98,31 @@ const schema = {
     }
 };
 
+const howTo = howToSchema({
+    name: "How to Open a Gold IRA in 5 Steps",
+    description: "Step-by-step guide to opening a Gold IRA and rolling over your 401(k) or traditional IRA into physical gold.",
+    totalTime: "PT7D",
+    steps: [
+        { name: "Choose a Gold IRA company", text: "Compare top custodians like Augusta Precious Metals, Goldco, and Noble Gold. Look at minimum investments, fees, storage options, and customer reviews." },
+        { name: "Open a self-directed IRA account", text: "Complete the application with your chosen custodian. Provide identification and beneficiary information. Most companies complete this in 1-2 business days." },
+        { name: "Fund your account", text: "Transfer funds via direct rollover from a 401(k), 403(b), TSP, or IRA. Direct rollovers are tax-free and penalty-free. You can also make a new cash contribution." },
+        { name: "Select your precious metals", text: "Work with your account representative to choose IRS-approved gold, silver, platinum, or palladium products. Minimum purity: 99.5% for gold, 99.9% for silver." },
+        { name: "Secure storage at an approved depository", text: "Your metals are shipped to an IRS-approved depository such as Delaware Depository or Brink's. Choose segregated or commingled storage." },
+    ],
+});
+
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Gold IRA Guide", url: "/guide/gold-ira-guide" },
+]);
+
 export default function GoldIraGuidePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={howTo} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-100 text-[#000080] py-20 relative overflow-hidden border-b border-slate-200">
                 <div className="absolute inset-0 bg-primary-dark/50" />
@@ -120,6 +143,17 @@ export default function GoldIraGuidePage() {
             </header>
 
             <Container className="py-12">
+                <AnswerFirst
+                  answer="A Gold IRA is a self-directed Individual Retirement Account that holds IRS-approved physical gold, silver, platinum, or palladium instead of paper assets. You can open one by rolling over funds from an existing 401(k) or IRA — tax-free and penalty-free — with a minimum investment of $2,000-$50,000 depending on the custodian. Annual fees typically run $200-$300 for storage and administration."
+                  keyFacts={[
+                    "Tax benefits: Same as traditional/Roth IRAs — tax-deferred or tax-free growth",
+                    "Minimum purity: 99.5% for gold, 99.9% for silver (IRS requirement)",
+                    "Storage: Must be held at an IRS-approved depository (not at home)",
+                    "Top custodians: Augusta Precious Metals ($50k min), Goldco ($25k), Noble Gold ($2k)",
+                    "2026 contribution limit: $7,000 ($8,000 if age 50+)",
+                  ]}
+                  className="mb-8 max-w-3xl"
+                />
                 <div className="flex flex-col lg:flex-row gap-12">
                     {/* Sidebar (TOC) */}
                     <aside className="lg:w-64 flex-shrink-0">

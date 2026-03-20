@@ -17,6 +17,11 @@ import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import {
+  articleSchema as buildArticleSchema,
+  faqSchema as buildFaqSchema,
+  breadcrumbSchema,
+} from "@/lib/schema";
+import {
   getLearnArticleBySlug,
   getAllLearnArticleSlugs,
   getRelatedLearnArticles,
@@ -363,49 +368,26 @@ export default async function LearnArticlePage({ params }: PageProps) {
   const threatMeta = threatLevelMeta[article.threatLevel];
   const catMeta = categoryMeta[article.category];
 
-  // JSON-LD Schema
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: article.title,
+  // JSON-LD Schemas (centralized generators)
+  const articleSchemaData = buildArticleSchema({
+    title: article.title,
     description: article.metaDescription,
-    author: {
-      "@type": "Person",
-      name: "Thomas Richardson",
-      url: "https://www.richdadretirement.com/author/thomas-richardson",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Rich Dad Retirement",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.richdadretirement.com/logo.png",
-      },
-    },
-    datePublished: new Date().toISOString(),
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.richdadretirement.com/learn/${slug}`,
-    },
-  };
+    slug: `/learn/${slug}`,
+  });
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: article.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
+  const faqSchemaData = buildFaqSchema(article.faqs);
+
+  const breadcrumbData = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Learn", url: "/learn" },
+    { name: article.title, url: `/learn/${slug}` },
+  ]);
 
   return (
     <main className="min-h-screen bg-transparent">
-      <SchemaScript schema={articleSchema} />
-      <SchemaScript schema={faqSchema} />
+      <SchemaScript schema={articleSchemaData} />
+      <SchemaScript schema={faqSchemaData} />
+      <SchemaScript schema={breadcrumbData} />
       <Navbar />
 
       {/* Hero Section - Premium Visual Styling */}

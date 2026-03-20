@@ -19,6 +19,7 @@ import {
 import { ArrowRight, ArrowLeft, Clock, Calendar, ExternalLink, Share2 } from "lucide-react";
 import { SpotPriceWidget } from "@/components/widgets/SpotPriceWidget";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -168,6 +169,11 @@ export default async function NewsArticlePage({ params }: Props) {
     return (
         <main className="min-h-screen bg-white">
             <SchemaScript schema={articleSchema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "News", url: "/news" },
+                { name: article.title, url: `/news/${slug}` },
+            ])} />
             <Navbar />
 
             {/* Article Header - Patriot Style */}
