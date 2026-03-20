@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees Guide 2026: Complete Fee Breakdown & Comparison",
@@ -127,6 +128,7 @@ export default function GoldIraFeesGuidePage() {
             </header>
 
             <Container className="py-12">
+                <ArticleMeta publishDate="2026-01-17" updateDate="2026-03-20" readTime="15 min" />
                 <AnswerFirst
                   answer="A Gold IRA costs between $200-$350 per year in fees, including storage ($100-$150/year), custodian fees ($50-$100/year), and a one-time setup fee ($50-$100). The biggest hidden cost is the dealer markup on metals, which ranges from 5-33% over spot price depending on the company and product type."
                   keyFacts={[

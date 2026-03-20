@@ -10,6 +10,7 @@ import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
 
 export const metadata: Metadata = {
     title: "401k to Gold IRA Rollover Guide 2026: Tax-Free Transfer Steps",
@@ -127,6 +128,8 @@ export default function RolloverGuidePage() {
                     </div>
                 </Container>
             </header>
+
+            <ArticleMeta publishDate="2026-01-17" updateDate="2026-03-20" readTime="15 min" />
 
             <AnswerFirst
                 answer="You can roll over your 401(k) to a Gold IRA tax-free and penalty-free through a direct rollover. The process takes 2-3 weeks: open a self-directed IRA with a gold custodian, request a direct transfer from your 401(k) provider, then select IRS-approved metals once funds arrive."

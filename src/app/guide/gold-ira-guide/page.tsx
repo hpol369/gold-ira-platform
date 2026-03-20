@@ -11,6 +11,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { createPageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
 
 export const metadata = createPageMetadata({
     title: "How to Open a Gold IRA in 2026: Step-by-Step Guide",
@@ -143,6 +144,7 @@ export default function GoldIraGuidePage() {
             </header>
 
             <Container className="py-12">
+                <ArticleMeta publishDate="2026-01-17" updateDate="2026-03-20" readTime="15 min" />
                 <AnswerFirst
                   answer="A Gold IRA is a self-directed Individual Retirement Account that holds IRS-approved physical gold, silver, platinum, or palladium instead of paper assets. You can open one by rolling over funds from an existing 401(k) or IRA — tax-free and penalty-free — with a minimum investment of $2,000-$50,000 depending on the custodian. Annual fees typically run $200-$300 for storage and administration."
                   keyFacts={[

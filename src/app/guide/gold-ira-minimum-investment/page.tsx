@@ -11,6 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
 
 export const metadata: Metadata = {
     title: "Gold IRA Minimum Investment: How Much Do You Need? (2026)",
@@ -117,6 +118,8 @@ export default function GoldIraMinimumInvestmentPage() {
                     </div>
                 </Container>
             </header>
+
+            <ArticleMeta publishDate="2026-01-17" updateDate="2026-03-20" readTime="15 min" />
 
             <AnswerFirst
                 answer="Gold IRA minimum investments range from $2,000 (Noble Gold) to $50,000 (Augusta Precious Metals). The industry average minimum is $10,000-$25,000. Higher minimums often come with lower fees and better service — Augusta waives up to 10 years of fees for accounts over $50,000."

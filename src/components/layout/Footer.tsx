@@ -113,6 +113,8 @@ export function Footer() {
                             <li><Link href="/about-us" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</Link></li>
                             <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</Link></li>
                             <li><Link href="/editorial-policy" className="text-gray-400 hover:text-white transition-colors text-sm">Editorial Policy</Link></li>
+                            <li><Link href="/editorial-standards" className="text-gray-400 hover:text-white transition-colors text-sm">Editorial Standards</Link></li>
+                            <li><Link href="/editorial-board" className="text-gray-400 hover:text-white transition-colors text-sm">Editorial Board</Link></li>
                             <li><Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy</Link></li>
                         </ul>
                     </div>
@@ -180,6 +182,7 @@ export function Footer() {
                         <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
                         <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/editorial-policy" className="hover:text-white transition-colors">Editorial Policy</Link>
+                        <Link href="/editorial-standards" className="hover:text-white transition-colors">Editorial Standards</Link>
                     </div>
                 </div>
             </Container>

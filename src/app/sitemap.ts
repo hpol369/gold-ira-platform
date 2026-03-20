@@ -68,6 +68,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const legalPages = [
     "/privacy-policy",
     "/editorial-policy",
+    "/editorial-standards",
+    "/editorial-board",
     "/terms-of-service",
   ].map((route) => ({
     url: `${baseUrl}${route}`,

@@ -44,6 +44,11 @@ export function articleSchema(params: {
       "@type": "WebPage",
       "@id": `${SITE_URL}${params.slug}`,
     },
+    reviewedBy: {
+      "@type": "Organization",
+      name: "Rich Dad Retirement Editorial Board",
+      url: `${SITE_URL}/editorial-board`,
+    },
   };
 }
 

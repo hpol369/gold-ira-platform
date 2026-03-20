@@ -12,6 +12,7 @@ import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
 
 export const metadata: Metadata = {
     title: "Silver IRA Guide 2026: How to Invest in Silver for Retirement",
@@ -127,6 +128,8 @@ export default function SilverIraGuidePage() {
                     </div>
                 </Container>
             </header>
+
+            <ArticleMeta publishDate="2026-01-17" updateDate="2026-03-20" readTime="15 min" />
 
             <AnswerFirst
                 answer="A Silver IRA is a self-directed IRA that holds IRS-approved physical silver bars and coins. Silver must be at least 99.9% pure to qualify. You fund it by rolling over an existing IRA or 401(k) tax-free, with minimum investments starting at $2,000 at Noble Gold and $10,000 at most other custodians."

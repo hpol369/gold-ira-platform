@@ -12,6 +12,9 @@ import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
+import { TrustBar } from "@/components/content/TrustBar";
+import { SourcesSection } from "@/components/content/SourcesSection";
 import { RelatedContent } from "@/components/content/RelatedContent";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import {
@@ -197,6 +200,7 @@ export default async function RetirementAmountSubPage({
       <SchemaScript schema={breadcrumbs} />
       <SchemaScript schema={faqJsonLd} />
       <Navbar />
+      <TrustBar updateDate="2026-03-20" />
 
       {/* Hero */}
       <header className="bg-slate-50 py-14 md:py-20 border-b border-slate-200">
@@ -231,6 +235,15 @@ export default async function RetirementAmountSubPage({
       </header>
 
       <Container className="py-10 md:py-14">
+        {/* Article Meta */}
+        <div className="max-w-4xl mb-6">
+          <ArticleMeta
+            publishDate="2026-02-15"
+            updateDate="2026-03-20"
+            readTime="12 min"
+          />
+        </div>
+
         {/* Answer First */}
         <AnswerFirst
           answer={page.answerFirst}
@@ -550,6 +563,20 @@ export default async function RetirementAmountSubPage({
           variant="cards"
           className="mb-14 max-w-4xl"
         />
+
+        {/* Sources */}
+        <div className="max-w-4xl mb-12">
+          <SourcesSection
+            sources={[
+              { name: "Employee Benefit Research Institute — Retirement Confidence Survey", url: "https://www.ebri.org/retirement/retirement-confidence-survey" },
+              { name: "U.S. Bureau of Labor Statistics — Consumer Expenditure Survey", url: "https://www.bls.gov/cex/" },
+              { name: "Social Security Administration — Benefit Calculators", url: "https://www.ssa.gov/benefits/retirement/estimator.html" },
+              { name: "IRS — Retirement Topics: Required Minimum Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
+              { name: "World Gold Council — Gold Performance Data", url: "https://www.gold.org/goldhub/data/gold-prices" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
 
         {/* Section 14: Footer CTA */}
         <div className="max-w-4xl">

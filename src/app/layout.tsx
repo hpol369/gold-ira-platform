@@ -87,7 +87,8 @@ export default function RootLayout({
       "url": "https://www.richdadretirement.com/get-started",
       "contactType": "customer service",
       "availableLanguage": "English"
-    }
+    },
+    "publishingPrinciples": "https://www.richdadretirement.com/editorial-standards"
   };
 
   return (

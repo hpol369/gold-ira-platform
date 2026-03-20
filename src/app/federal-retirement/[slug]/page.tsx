@@ -15,6 +15,9 @@ import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
+import { TrustBar } from "@/components/content/TrustBar";
+import { SourcesSection } from "@/components/content/SourcesSection";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import {
   getFederalRetirementArticleBySlug,
@@ -270,6 +273,7 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
+      <TrustBar updateDate="2026-03-20" />
 
       <SchemaScript
         schema={articleSchema({
@@ -349,6 +353,13 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
 
           {/* Main Content */}
           <article className="flex-1 min-w-0 order-1 lg:order-2">
+            {/* Article Meta */}
+            <ArticleMeta
+              publishDate="2026-03-20"
+              updateDate="2026-03-20"
+              readTime="10 min"
+            />
+
             {/* Answer First */}
             <AnswerFirst answer={answerFirstText} className="mb-8" />
 
@@ -380,6 +391,18 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
                 </Link>
               </Button>
             </div>
+
+            {/* Sources */}
+            <SourcesSection
+              sources={[
+                { name: "OPM.gov — Federal Employees Retirement System", url: "https://www.opm.gov/retirement-center/fers-information/" },
+                { name: "TSP.gov — Thrift Savings Plan Fund Information", url: "https://www.tsp.gov/fund-performance/" },
+                { name: "IRS Publication 590 — Individual Retirement Arrangements", url: "https://www.irs.gov/publications/p590a" },
+                { name: "SSA.gov — Social Security Benefits", url: "https://www.ssa.gov/benefits/retirement/" },
+                { name: "World Gold Council — Gold as a Strategic Asset", url: "https://www.gold.org/goldhub/research/relevance-of-gold-as-a-strategic-asset" },
+              ]}
+              lastVerified="March 2026"
+            />
 
             {/* FAQ Section */}
             <FAQSection

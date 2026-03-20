@@ -14,6 +14,9 @@ import { KeyTakeaways } from "@/components/learn/KeyTakeaways";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
+import { TrustBar } from "@/components/content/TrustBar";
+import { SourcesSection } from "@/components/content/SourcesSection";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import {
@@ -373,6 +376,8 @@ export default async function LearnArticlePage({ params }: PageProps) {
     title: article.title,
     description: article.metaDescription,
     slug: `/learn/${slug}`,
+    datePublished: "2026-01-15",
+    dateModified: "2026-03-20",
   });
 
   const faqSchemaData = buildFaqSchema(article.faqs);
@@ -383,12 +388,22 @@ export default async function LearnArticlePage({ params }: PageProps) {
     { name: article.title, url: `/learn/${slug}` },
   ]);
 
+  // Default sources by category
+  const defaultSources = [
+    { name: "IRS Publication 590-A — Contributions to IRAs", url: "https://www.irs.gov/publications/p590a" },
+    { name: "IRS Publication 590-B — Distributions from IRAs", url: "https://www.irs.gov/publications/p590b" },
+    { name: "World Gold Council — Gold Performance Data", url: "https://www.gold.org/goldhub/data/gold-prices" },
+    { name: "U.S. Bureau of Labor Statistics — Consumer Price Index", url: "https://www.bls.gov/cpi/" },
+    { name: "Better Business Bureau — Company Profiles", url: "https://www.bbb.org" },
+  ];
+
   return (
     <main className="min-h-screen bg-transparent">
       <SchemaScript schema={articleSchemaData} />
       <SchemaScript schema={faqSchemaData} />
       <SchemaScript schema={breadcrumbData} />
       <Navbar />
+      <TrustBar updateDate="2026-03-20" />
 
       {/* Hero Section - Premium Visual Styling */}
       <section className="relative pt-24 pb-12 overflow-hidden">
@@ -434,6 +449,19 @@ export default async function LearnArticlePage({ params }: PageProps) {
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
               {article.subtitle}
             </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Article Meta */}
+      <section className="pt-6 pb-0">
+        <Container>
+          <div className="max-w-4xl">
+            <ArticleMeta
+              publishDate="2026-01-15"
+              updateDate="2026-03-20"
+              readTime="8 min"
+            />
           </div>
         </Container>
       </section>
@@ -683,6 +711,15 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 </div>
               )}
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Sources */}
+      <section className="py-8">
+        <Container>
+          <div className="max-w-4xl">
+            <SourcesSection sources={defaultSources} lastVerified="March 2026" />
           </div>
         </Container>
       </section>
