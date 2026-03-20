@@ -9,6 +9,10 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "Goldco Review 2026: Celebrity Hype vs Reality",
@@ -18,6 +22,10 @@ export const metadata = {
 export default function GoldcoReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
+            <SchemaScript schema={reviewSchema({ itemName: "Goldco", reviewBody: "Goldco is one of the largest Gold IRA companies with billions in transactions and a strong buyback guarantee.", ratingValue: 4.6, author: "Thomas Richardson", url: "/reviews/goldco" })} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "Goldco", ratingValue: 4.6, reviewCount: 956 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Goldco", url: "/reviews/goldco" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/goldco"))} />
             <Navbar />
 
             <div className="flex-grow">
@@ -159,6 +167,11 @@ export default function GoldcoReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/goldco")} title="Goldco FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="goldco" companyName="Goldco" />
         </main>

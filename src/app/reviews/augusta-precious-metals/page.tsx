@@ -8,6 +8,10 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "Augusta Precious Metals Review 2026 | Fees & Ratings",
@@ -17,6 +21,10 @@ export const metadata = {
 export default function AugustaReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
+            <SchemaScript schema={reviewSchema({ itemName: "Augusta Precious Metals", reviewBody: "Augusta is the premium choice for investors with $50,000+. Education-first approach, transparent fees, and fee-waiver program.", ratingValue: 4.9, author: "Thomas Richardson", url: "/reviews/augusta-precious-metals" })} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "Augusta Precious Metals", ratingValue: 4.9, reviewCount: 1247 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Augusta Precious Metals", url: "/reviews/augusta-precious-metals" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/augusta-precious-metals"))} />
             <Navbar />
 
             <div className="flex-grow">
@@ -184,6 +192,11 @@ export default function AugustaReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/augusta-precious-metals")} title="Augusta Precious Metals FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="augusta-precious-metals" companyName="Augusta Precious Metals" />
         </main>

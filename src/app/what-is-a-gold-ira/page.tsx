@@ -7,6 +7,10 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 import {
   Shield,
   CheckCircle2,
@@ -36,6 +40,9 @@ export const metadata: Metadata = {
 export default function WhatIsGoldIRAPage() {
   return (
     <main className="min-h-screen flex flex-col bg-white">
+      <SchemaScript schema={articleSchema({ title: "What Is a Gold IRA? Complete Guide 2026", description: "Learn what a Gold IRA is, how it works, IRS rules, custodians, storage requirements, and if it's right for your retirement.", slug: "/what-is-a-gold-ira" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "What Is a Gold IRA?", url: "/what-is-a-gold-ira" }])} />
+      <SchemaScript schema={faqSchema(getPageFAQs("what-is-a-gold-ira"))} />
       <Navbar />
 
       {/* Header */}
@@ -492,6 +499,18 @@ export default function WhatIsGoldIRAPage() {
             headline="You've Done the Hard Part. Let's Protect It."
             subheadline="Augusta Precious Metals has zero BBB complaints and no pushy salespeople. Their team will explain everything in plain English—no Wall Street jargon, no pressure. Just honest answers from people who respect what you've built."
             trackSource="what-is-gold-ira"
+          />
+        </Container>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <Container>
+          <FAQSection
+            faqs={getPageFAQs("what-is-a-gold-ira")}
+            title="Gold IRA Frequently Asked Questions"
+            className="max-w-3xl"
+            includeSchema={false}
           />
         </Container>
       </section>

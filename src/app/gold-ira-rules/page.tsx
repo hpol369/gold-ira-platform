@@ -7,6 +7,10 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 import {
   Shield,
   CheckCircle2,
@@ -34,6 +38,9 @@ export const metadata: Metadata = {
 export default function GoldIRARulesPage() {
   return (
     <main className="min-h-screen flex flex-col bg-white">
+      <SchemaScript schema={articleSchema({ title: "Gold IRA Rules 2026 | IRS Regulations & Requirements", description: "Gold IRA rules guide covering contribution limits, eligible metals, storage requirements, and distribution rules.", slug: "/gold-ira-rules" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Gold IRA Rules", url: "/gold-ira-rules" }])} />
+      <SchemaScript schema={faqSchema(getPageFAQs("gold-ira-rules"))} />
       <Navbar />
 
       {/* Header */}
@@ -534,6 +541,17 @@ export default function GoldIRARulesPage() {
             headline="Open a Compliant Gold IRA Today"
             subheadline="Augusta Precious Metals ensures your Gold IRA meets all IRS requirements. Their team handles custodian setup, depository selection, and helps you choose eligible metals."
             trackSource="gold-ira-rules"
+          />
+        </Container>
+      </section>
+
+      <section className="py-16 bg-white">
+        <Container>
+          <FAQSection
+            faqs={getPageFAQs("gold-ira-rules")}
+            title="Gold IRA Rules FAQ"
+            className="max-w-3xl"
+            includeSchema={false}
           />
         </Container>
       </section>

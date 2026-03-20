@@ -7,6 +7,10 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 import {
   Shield,
   TrendingUp,
@@ -34,6 +38,9 @@ export const metadata: Metadata = {
 export default function WhyGoldPage() {
   return (
     <main className="min-h-screen flex flex-col bg-white">
+      <SchemaScript schema={articleSchema({ title: "Why Gold for Retirement? Inflation Protection & Portfolio Safety", description: "Why add gold to your retirement? Learn about inflation protection, portfolio diversification, and wealth preservation.", slug: "/why-gold" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Why Gold", url: "/why-gold" }])} />
+      <SchemaScript schema={faqSchema(getPageFAQs("why-gold"))} />
       <Navbar />
 
       {/* Header */}
@@ -477,6 +484,17 @@ export default function WhyGoldPage() {
             headline="Want Straight Answers About Gold?"
             subheadline="Augusta Precious Metals offers free one-on-one conversations with specialists who will answer your questions honestly. No pressure, no sales pitch - just real information from people who actually know this stuff."
             trackSource="why-gold-hub"
+          />
+        </Container>
+      </section>
+
+      <section className="py-16 bg-white">
+        <Container>
+          <FAQSection
+            faqs={getPageFAQs("why-gold")}
+            title="Gold Investment FAQ"
+            className="max-w-3xl"
+            includeSchema={false}
           />
         </Container>
       </section>

@@ -9,6 +9,10 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "Birch Gold Group Review (2026): Veteran Dealer Analysis",
@@ -48,6 +52,10 @@ export default function BirchGoldReviewPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
             />
             <main className="min-h-screen flex flex-col bg-slate-50">
+            <SchemaScript schema={reviewSchema({ itemName: "Birch Gold Group", reviewBody: "Birch Gold Group has been in business since 2003 with a flat-fee structure and strong track record.", ratingValue: 4.5, author: "Thomas Richardson", url: "/reviews/birch-gold" })} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "Birch Gold Group", ratingValue: 4.5, reviewCount: 523 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Birch Gold", url: "/reviews/birch-gold" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/birch-gold"))} />
             <Navbar />
 
             <div className="flex-grow">
@@ -186,6 +194,11 @@ export default function BirchGoldReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/birch-gold")} title="Birch Gold Group FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="birch-gold-group" companyName="Birch Gold" />
         </main>
