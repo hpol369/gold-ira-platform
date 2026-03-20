@@ -124,10 +124,23 @@ export const LINK_HUBS: Record<string, HubConfig> = {
     spokes: [
       { url: "/learn/too-late-to-save-retirement", title: "Is It Too Late to Save for Retirement?" },
       { url: "/learn/retirement-planning-mistakes", title: "Retirement Planning Mistakes" },
+      { url: "/learn/sequence-of-returns-risk", title: "Sequence of Returns Risk" },
       { url: "/learn/are-gold-iras-safe", title: "Are Gold IRAs Safe?" },
       { url: "/learn/why-is-gold-valuable", title: "Why Is Gold Valuable?" },
       { url: "/learn/precious-metals-ira-rules", title: "Precious Metals IRA Rules" },
-      { url: "/learn/platinum-ira", title: "Platinum IRA" },
+      { url: "/tools/retirement-calculator", title: "Retirement Calculator" },
+    ],
+  },
+  "retirement-adequacy": {
+    hub: { url: "/is-enough-to-retire", title: "Is Your Savings Enough to Retire?" },
+    spokes: [
+      { url: "/is-enough-to-retire/retire-with-300k-at-55", title: "Retire with $300K at 55" },
+      { url: "/is-enough-to-retire/retire-with-400k-at-60", title: "Retire with $400K at 60" },
+      { url: "/is-enough-to-retire/retire-with-500k-at-62", title: "Retire with $500K at 62" },
+      { url: "/is-enough-to-retire/retire-with-600k-at-65", title: "Retire with $600K at 65" },
+      { url: "/is-enough-to-retire/retire-with-750k", title: "Retire with $750K" },
+      { url: "/is-enough-to-retire/retire-with-800k", title: "Retire with $800K" },
+      { url: "/is-enough-to-retire/retire-with-1-million", title: "Retire with $1 Million" },
     ],
   },
 };

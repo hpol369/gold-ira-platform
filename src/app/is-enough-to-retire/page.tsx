@@ -110,6 +110,17 @@ const amounts = [
     bg: "bg-green-50",
     border: "border-green-200",
   },
+  {
+    amount: "$1M",
+    slug: "retire-with-1-million",
+    monthly: "$3,333",
+    annual: "$40,000",
+    withSS: "$61,756",
+    verdict: "Classic milestone — inflation is the real threat",
+    color: "text-green-600",
+    bg: "bg-green-50",
+    border: "border-green-200",
+  },
 ];
 
 const faqs = [
@@ -177,7 +188,7 @@ export default function IsEnoughToRetirePage() {
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               Find out exactly how far your savings will go — from $300k to
-              $800k+. Real math, real scenarios, no fluff.
+              $1M+. Real math, real scenarios, no fluff.
             </p>
           </div>
         </Container>
@@ -199,7 +210,7 @@ export default function IsEnoughToRetirePage() {
         {/* Comparison Table */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-8">
-            Retirement Savings Breakdown: $300k to $800k
+            Retirement Savings Breakdown: $300k to $1M
           </h2>
 
           {/* Desktop Table */}
@@ -246,7 +257,7 @@ export default function IsEnoughToRetirePage() {
                     </td>
                     <td className="py-4 px-5">
                       <Link
-                        href={`/learn/${row.slug}`}
+                        href={`/is-enough-to-retire/${row.slug}`}
                         className="inline-flex items-center gap-1 text-[#B22234] font-medium hover:underline"
                       >
                         Full Analysis
@@ -264,7 +275,7 @@ export default function IsEnoughToRetirePage() {
             {amounts.map((row) => (
               <Link
                 key={row.slug}
-                href={`/learn/${row.slug}`}
+                href={`/is-enough-to-retire/${row.slug}`}
                 className={`block ${row.bg} ${row.border} border rounded-xl p-5 hover:shadow-md transition-shadow`}
               >
                 <div className="flex items-center justify-between mb-3">
