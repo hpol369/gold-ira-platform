@@ -56,8 +56,9 @@
 - **GitHub:** `hpol369/gold-ira-platform` — push directly to `main`, no PRs needed
 - **Auth:** Fine-grained PAT (starts with `github_pat_11BNF7HAY0...`) — configured in git
 - **Vercel:** Auto-deploys from `main`. CLI linked. Project: `gold-ira-platform`
-- **Supabase:** Project ref `sxnwjpjqzegfweohzifi`, access token in `.env.local`
-  - To run SQL: `curl -X POST "https://api.supabase.com/v1/projects/sxnwjpjqzegfweohzifi/database/query" -H "Authorization: Bearer sbp_8586ac5fd8b1c9d811ffd6e33b553f0c9b041044" -H "Content-Type: application/json" -d '{"query": "YOUR SQL HERE"}'`
+- **Supabase:** Project ref `sxnwjpjqzegfweohzifi`, access token in `.env.local` (DO NOT commit tokens)
+  - To run SQL: `curl -X POST "https://api.supabase.com/v1/projects/sxnwjpjqzegfweohzifi/database/query" -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" -H "Content-Type: application/json" -d '{"query": "YOUR SQL HERE"}'`
+  - Load token from `.env.local`: `source .env.local` first
 - **Working directory:** `/Users/boef/Documents/projects/gold-ira-platform-main/.claude/worktrees/pedantic-lovelace`
 
 ### Env vars in Vercel (confirmed working):
