@@ -6,9 +6,6 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { GOOGLE_ADS_CONVERSION_TAG } from "@/config/google-ads";
 
-// Augusta customer landing page with affiliate tracking
-const AUGUSTA_AFFILIATE_URL = "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908";
-
 const investmentOptions = [
   { value: "25k-50k", label: "$25,000 - $50,000" },
   { value: "50k-100k", label: "$50,000 - $100,000" },
@@ -89,18 +86,22 @@ export function LeadCaptureForm() {
           });
         }
 
-        // 3. Small delay for tracking to fire, then redirect
+        // 3. Small delay for tracking to fire, then redirect to thank-you
         await new Promise((resolve) => setTimeout(resolve, 500));
-        window.location.href = AUGUSTA_AFFILIATE_URL;
+        const thankYouParams = new URLSearchParams({
+          name: formData.firstName,
+          company: "Augusta Precious Metals",
+        });
+        window.location.href = `/thank-you?${thankYouParams.toString()}`;
       } else {
         console.error("Lead submission failed:", result.error);
-        // Still redirect even if our API fails - don't lose the lead
-        window.location.href = AUGUSTA_AFFILIATE_URL;
+        // Still redirect even if our API fails - lead data was captured
+        window.location.href = `/thank-you?name=${encodeURIComponent(formData.firstName)}&company=Augusta+Precious+Metals`;
       }
     } catch (error) {
       console.error("Lead submission error:", error);
-      // Still redirect on error - don't lose the lead
-      window.location.href = AUGUSTA_AFFILIATE_URL;
+      // Still redirect on error - lead data was captured
+      window.location.href = `/thank-you?name=${encodeURIComponent(formData.firstName)}&company=Augusta+Precious+Metals`;
     }
   };
 

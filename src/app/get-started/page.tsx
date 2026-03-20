@@ -4,7 +4,6 @@ import { Suspense, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2 } from "lucide-react";
-import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
 import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
 import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
 import { useABTest } from "@/lib/ab-testing";
@@ -210,14 +209,14 @@ function GetStartedContent() {
 
       setState(prev => ({ ...prev, step: "success" }));
 
-      // Redirect to partner LP after brief success message
-      const affiliateUrl = AFFILIATE_LINKS[result.affiliateKey as keyof typeof AFFILIATE_LINKS];
-      if (affiliateUrl) {
-        const trackedUrl = getTrackedLink(affiliateUrl, `get-started_${ref}`, result.affiliateKey);
-        setTimeout(() => {
-          window.location.href = trackedUrl;
-        }, 2000);
-      }
+      // Redirect to thank-you page (lead already sent to partner via webhook)
+      const thankYouParams = new URLSearchParams({
+        name: state.firstName.trim(),
+        company: result.companyName,
+      });
+      setTimeout(() => {
+        window.location.href = `/thank-you?${thankYouParams.toString()}`;
+      }, 2000);
     } catch {
       setError("Network error. Please try again.");
       setState(prev => ({ ...prev, step: "contact" }));

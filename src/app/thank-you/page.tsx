@@ -12,10 +12,18 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Thank You | Your Free Kit is On The Way | Rich Dad Retirement",
   description: "Your free Gold IRA information kit is on its way. Download your instant guide while you wait.",
-  robots: { index: false, follow: false }, // Don't index thank you pages
+  robots: { index: false, follow: false },
 };
 
-export default function ThankYouPage() {
+interface ThankYouPageProps {
+  searchParams: Promise<{ name?: string; company?: string }>;
+}
+
+export default async function ThankYouPage({ searchParams }: ThankYouPageProps) {
+  const params = await searchParams;
+  const firstName = params.name || "";
+  const companyName = params.company || "your matched partner";
+
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
@@ -31,11 +39,11 @@ export default function ThankYouPage() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-4">
-              You&apos;re All Set!
+              {firstName ? `You're All Set, ${firstName}!` : "You're All Set!"}
             </h1>
 
             <p className="text-xl text-slate-600 mb-8">
-              Your free Gold IRA kit is being prepared. A specialist from Augusta Precious Metals will contact you within 24 hours.
+              Your free Gold IRA kit is being prepared. A specialist from {companyName} will contact you within 24 hours.
             </p>
 
             {/* What Happens Next */}
@@ -46,7 +54,7 @@ export default function ThankYouPage() {
                   {
                     icon: Phone,
                     title: "Expect a Call",
-                    desc: "A Gold IRA specialist will reach out within 24 hours to answer your questions.",
+                    desc: `A specialist from ${companyName} will reach out within 24 hours to answer your questions.`,
                   },
                   {
                     icon: Download,
@@ -99,7 +107,7 @@ export default function ThankYouPage() {
                 className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-xl p-6 text-left transition-all"
               >
                 <h3 className="font-semibold text-slate-900 mb-2">Compare Companies</h3>
-                <p className="text-slate-500 text-sm">See how Augusta stacks up against other providers.</p>
+                <p className="text-slate-500 text-sm">See how the top Gold IRA providers stack up.</p>
               </Link>
               <Link
                 href="/rollover"
