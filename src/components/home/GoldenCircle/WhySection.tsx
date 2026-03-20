@@ -1,107 +1,122 @@
 // Golden Circle: WHY Section (Hero)
-// Patriot Light Theme
+// Sprint 11: Conversion-focused hero with split layout, single CTA to /get-started
 // Speaking to 55+ blue collar workers who HAVE saved and need protection
 
+import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { Shield, Clock, Briefcase } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 export function WhySection() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 border-b border-slate-200 py-20 md:py-32">
-      {/* Patriot Wash */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-[#000080]/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
-      <div className="absolute top-0 left-0 w-full h-full bg-[url('/noise.png')] opacity-[0.015] pointer-events-none"></div>
+    <section className="relative overflow-hidden bg-[#000080] min-h-[90vh] flex items-center">
+      {/* Background texture */}
+      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none" />
+      {/* Warm gold radial glow */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center_right,_rgba(197,165,90,0.15)_0%,_transparent_70%)] pointer-events-none" />
 
-      <Container className="relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
-          {/* Acknowledgment Badge */}
-          <div style={{ animation: "fadeInUp 0.6s ease-out both" }}>
-            <span className="inline-block px-4 py-1.5 bg-[#000080]/10 border border-[#000080]/20 rounded-full text-[#000080] text-sm font-bold mb-8 shadow-sm">
-              For Americans With $50,000+ in Retirement Savings
-            </span>
+      <Container className="relative z-10 py-16 md:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left: Copy + CTA */}
+          <div className="text-center lg:text-left">
+            {/* Acknowledgment Badge */}
+            <div style={{ animation: "fadeInUp 0.6s ease-out both" }}>
+              <span className="inline-block px-4 py-1.5 bg-[#C5A55A]/20 border border-[#C5A55A]/30 rounded-full text-[#C5A55A] text-sm font-bold mb-6">
+                For Americans With $50,000+ in Retirement Savings
+              </span>
+            </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-black leading-tight mb-8 text-[#000080]">
-              You&apos;ve Worked 30 Years for This.<br className="hidden md:block" />
-              <span className="text-[#B22234] underline decoration-4 underline-offset-8 decoration-[#B22234]">
+            <h1
+              style={{ animation: "fadeInUp 0.6s ease-out 0.1s both" }}
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-black leading-tight mb-6 text-white"
+            >
+              You&apos;ve Worked 30 Years for This.{" "}
+              <span className="text-[#C5A55A]">
                 Don&apos;t Let Wall Street Take It Now.
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-700 leading-relaxed max-w-3xl mx-auto mb-6 font-medium">
-              You put in the hours. You skipped the vacations. You built a nest egg most people only dream about.
+            <p
+              style={{ animation: "fadeInUp 0.6s ease-out 0.2s both" }}
+              className="text-lg md:text-xl text-blue-100 leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0"
+            >
+              One market crash could wipe out decades of sacrifice.
             </p>
 
-            <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-12">
-              But one market crash in your final years before retirement could wipe out decades of sacrifice.<br className="hidden md:block" />
-              <strong className="text-[#000080]">A Gold IRA protects what you&apos;ve built. No Wall Street games. No BS.</strong>
+            <p
+              style={{ animation: "fadeInUp 0.6s ease-out 0.25s both" }}
+              className="text-base md:text-lg text-[#C5A55A] font-semibold mb-8 max-w-xl mx-auto lg:mx-0"
+            >
+              Gold has protected wealth for 5,000 years. It can protect yours.
             </p>
-          </div>
 
-          {/* Stats That Reflect Their Reality */}
-          <div
-            style={{ animation: "fadeInUp 0.6s ease-out 0.2s both" }}
-            className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12"
-          >
-            <div className="bg-white border border-slate-200 rounded-xl p-6 text-center hover:border-[#000080]/30 hover:shadow-lg transition-all duration-300 group">
-              <div className="flex justify-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-[#000080]/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Briefcase className="h-6 w-6 text-[#000080]" />
-                </div>
-              </div>
-              <div className="text-3xl font-black text-[#000080] mb-2">30+ Years</div>
-              <p className="text-slate-500 text-sm font-medium">Of early mornings, overtime, and sacrifice</p>
-            </div>
-
-            <div className="bg-white border border-slate-200 rounded-xl p-6 text-center hover:border-[#B22234]/30 hover:shadow-lg transition-all duration-300 group">
-              <div className="flex justify-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-[#B22234]/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Clock className="h-6 w-6 text-[#B22234]" />
-                </div>
-              </div>
-              <div className="text-3xl font-black text-[#B22234] mb-2">5-10 Years</div>
-              <p className="text-slate-500 text-sm font-medium">The danger zone before retirement</p>
-            </div>
-
-            <div className="bg-white border border-slate-200 rounded-xl p-6 text-center hover:border-green-600/30 hover:shadow-lg transition-all duration-300 group">
-              <div className="flex justify-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Shield className="h-6 w-6 text-green-700" />
-                </div>
-              </div>
-              <div className="text-3xl font-black text-green-700 mb-2">5,000+ Years</div>
-              <p className="text-slate-500 text-sm font-medium">Gold has held its value</p>
-            </div>
-          </div>
-
-          {/* Protective CTA */}
-          <div
-            style={{ animation: "fadeInUp 0.6s ease-out 0.4s both" }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
-            <a
-              href="#how-it-works"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#000080] hover:bg-[#000060] text-white font-bold text-lg rounded-xl transition-all duration-300 shadow-xl hover:-translate-y-1"
+            {/* Primary CTA */}
+            <div
+              style={{ animation: "fadeInUp 0.6s ease-out 0.35s both" }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8"
             >
-              <Shield className="w-5 h-5 mr-2" />
-              Protect What You&apos;ve Built
-            </a>
-            <a
-              href="#compare"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-slate-200 hover:border-[#000080] text-[#000080] font-bold text-lg rounded-xl transition-all duration-300 shadow-sm hover:shadow-md"
+              <Link
+                href="/get-started?ref=homepage-hero"
+                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#C5A55A] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#B8860B] text-[#000080] font-bold text-lg rounded-xl transition-all duration-300 shadow-[0_0_40px_rgba(197,165,90,0.4)] hover:shadow-[0_0_60px_rgba(197,165,90,0.6)] hover:-translate-y-1 group"
+              >
+                Get Your Free Gold IRA Kit
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <a
+                href="#social-proof"
+                className="inline-flex items-center justify-center px-6 py-3 text-blue-200 hover:text-white font-medium text-base transition-colors"
+              >
+                See How It Works
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </a>
+            </div>
+
+            {/* Trust Strip */}
+            <div
+              style={{ animation: "fadeInUp 0.6s ease-out 0.45s both" }}
+              className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-blue-200"
             >
-              See Protection Options
-            </a>
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-[#C5A55A]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+                50,000+ Educated
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-[#C5A55A]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+                A+ BBB Partners
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-[#C5A55A]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+                Free, No Obligation
+              </span>
+            </div>
           </div>
 
-          {/* Trust Signal */}
-          <p
-            style={{ animation: "fadeInUp 0.6s ease-out 0.6s both" }}
-            className="mt-8 text-slate-500 text-sm font-medium"
+          {/* Right: Hero Image */}
+          <div
+            style={{ animation: "fadeInUp 0.6s ease-out 0.3s both" }}
+            className="hidden lg:block relative"
           >
-            Straight talk. No pushy sales. Just honest information to protect your life&apos;s work.
-          </p>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
+              <Image
+                src="/images/homepage/hero-gold-bars.jpg"
+                alt="Gold bars and coins — physical assets that protect retirement wealth"
+                width={640}
+                height={480}
+                priority
+                className="w-full h-auto object-cover"
+              />
+              {/* Blend overlay to merge with navy bg */}
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#000080]/40 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#000080]/60 via-transparent to-transparent pointer-events-none" />
+            </div>
+          </div>
         </div>
       </Container>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-blue-300/50">
+        <ChevronDown className="w-6 h-6" />
+      </div>
     </section>
   );
 }

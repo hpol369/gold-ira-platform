@@ -6,12 +6,11 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { trackAffiliateClick } from "@/lib/analytics";
-import { getTrackedAugustaLink } from "@/config/affiliates";
 
 export function FeaturedPartner() {
     const handleCtaClick = () => {
         trackAffiliateClick("augusta", "homepage-featured", "cta");
-        window.location.href = getTrackedAugustaLink("default", "homepage-featured");
+        window.location.href = "/get-started?ref=homepage-featured";
     };
 
     return (
@@ -162,9 +161,19 @@ export function FeaturedPartner() {
                                 </div>
                             </Button>
 
-                            <p className="text-center text-xs text-slate-500 mt-4">
+                            <p className="text-center text-xs text-slate-500 mt-3">
                                 Minimum investment: <span className="whitespace-nowrap">$50,000</span>
                             </p>
+
+                            {/* Micro-testimonial */}
+                            <div className="mt-6 pt-5 border-t border-slate-100">
+                                <p className="text-sm text-slate-600 italic text-center">
+                                    &ldquo;The best financial decision we ever made.&rdquo;
+                                </p>
+                                <p className="text-xs text-slate-400 text-center mt-1 font-medium">
+                                    — Robert & Sarah M., Florida
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
