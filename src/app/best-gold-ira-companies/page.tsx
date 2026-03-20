@@ -6,6 +6,7 @@ import { ComparisonTable } from "@/components/home/ComparisonTable";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { Sparkles, Trophy, Star, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 import Link from "next/link";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
@@ -88,8 +89,8 @@ export default function BestGoldIraCompaniesPage() {
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">
-                                        <div className="w-full md:w-1/3 bg-white rounded-xl h-40 flex items-center justify-center text-slate-400 border border-slate-200">
-                                            [Logo/Image]
+                                        <div className="w-full md:w-1/3 bg-white rounded-xl h-40 flex items-center justify-center border border-slate-200 p-4">
+                                            <Image src="/images/companies/augusta-logo.svg" alt="Augusta Precious Metals Logo" width={240} height={68} className="w-full h-auto" />
                                         </div>
                                         <div className="w-full md:w-2/3">
                                             <p className="text-slate-500 mb-4">
@@ -148,8 +149,8 @@ export default function BestGoldIraCompaniesPage() {
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">
-                                        <div className="w-full md:w-1/3 bg-white rounded-xl h-40 flex items-center justify-center text-slate-400 border border-slate-200">
-                                            [Logo/Image]
+                                        <div className="w-full md:w-1/3 bg-white rounded-xl h-40 flex items-center justify-center border border-slate-200 p-4">
+                                            <Image src="/images/companies/noble-gold-logo.svg" alt="Noble Gold Investments Logo" width={240} height={68} className="w-full h-auto" />
                                         </div>
                                         <div className="w-full md:w-2/3">
                                             <p className="text-slate-500 mb-4">

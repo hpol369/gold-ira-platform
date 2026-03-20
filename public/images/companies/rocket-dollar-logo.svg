@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" fill="none">
+  <rect width="280" height="80" rx="8" fill="#0D1B2A"/>
+  <text x="140" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#FF6B35">Rocket</text>
+  <text x="140" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Dollar</text>
+</svg>
