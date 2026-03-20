@@ -105,14 +105,14 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                                     <Slider
                                         value={[amount]}
                                         min={50000}
-                                        max={3000000}
+                                        max={1000000}
                                         step={10000}
                                         onValueChange={handleAmountChange}
                                         className="py-4 cursor-pointer"
                                     />
                                     <div className="flex justify-between text-xs text-slate-400 font-bold">
                                         <span>$50k</span>
-                                        <span>$3M+</span>
+                                        <span>$1M+</span>
                                     </div>
                                 </div>
 
