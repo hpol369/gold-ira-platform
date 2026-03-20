@@ -213,8 +213,8 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
 
                     {/* Footer CTA */}
                     <div className="p-8 bg-slate-50 border-t border-slate-200 text-center">
-                        <Button className="bg-[#B22234] text-white font-bold text-lg px-8 py-6 h-auto shadow-lg hover:bg-[#8b1c2a] hover:-translate-y-0.5 transition-all" asChild>
-                            <Link href="/quiz">
+                        <Button className="bg-gradient-to-r from-[#C5A55A] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#B8860B] text-[#000080] font-bold text-lg px-8 py-6 h-auto shadow-[0_0_30px_rgba(197,165,90,0.3)] hover:shadow-[0_0_40px_rgba(197,165,90,0.5)] hover:-translate-y-0.5 transition-all" asChild>
+                            <Link href="/get-started?ref=calculator">
                                 Lock In These {formatCurrency(goldValue)} Gains <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
                         </Button>
