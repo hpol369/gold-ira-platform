@@ -9,6 +9,10 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "Noble Gold Review (2026): Low Minimums & Texas Storage Explained",
@@ -18,6 +22,10 @@ export const metadata = {
 export default function NobleGoldReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
+            <SchemaScript schema={reviewSchema({ itemName: "Noble Gold Investments", reviewBody: "Noble Gold offers the lowest minimum in the industry at $2,000, making Gold IRAs accessible to everyone.", ratingValue: 4.7, author: "Thomas Richardson", url: "/reviews/noble-gold" })} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "Noble Gold Investments", ratingValue: 4.7, reviewCount: 834 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Noble Gold", url: "/reviews/noble-gold" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/noble-gold"))} />
             <Navbar />
 
             <div className="flex-grow">
@@ -165,6 +173,11 @@ export default function NobleGoldReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/noble-gold")} title="Noble Gold FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="noble-gold" companyName="Noble Gold" />
         </main>

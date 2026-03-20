@@ -8,6 +8,11 @@ import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Metadata } from "next";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata: Metadata = {
     title: "Best Silver IRA Companies of 2026 | Top Providers",
@@ -199,6 +204,9 @@ export default function BestSilverIraCompaniesPage() {
 
     return (
         <main className="min-h-screen flex flex-col bg-white">
+            <SchemaScript schema={articleSchema({ title: "Best Silver IRA Companies of 2026", description: "Compare the best Silver IRA companies. Analysis of silver selection, premiums, storage options, and fees.", slug: "/best-silver-ira-companies" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Best Silver IRA Companies", url: "/best-silver-ira-companies" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("best-silver-ira-companies"))} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -496,6 +504,26 @@ export default function BestSilverIraCompaniesPage() {
                     </Container>
                 </section>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The best Silver IRA companies in 2026 are Augusta Precious Metals (widest silver selection, $50k min), Noble Gold (lowest minimum at $2,000), and American Hartford Gold (price match guarantee, $10k min). Silver must be .999 fine to qualify for an IRA."
+                        keyFacts={[
+                            "Silver IRA purity requirement: .999 fine (99.9% pure)",
+                            "Augusta: Widest silver selection, fee waivers up to 10 years",
+                            "Noble Gold: $2,000 minimum — lowest in the industry",
+                            "Popular silver: American Eagles, Canadian Maple Leafs, approved bars",
+                        ]}
+                        className="mb-12 max-w-3xl"
+                    />
+                    <FAQSection
+                        faqs={getPageFAQs("best-silver-ira-companies")}
+                        title="Silver IRA FAQs"
+                        className="max-w-3xl"
+                        includeSchema={false}
+                    />
+                </Container>
+            </section>
             <Footer />
         </main>
     );

@@ -8,6 +8,10 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 import {
   Shield,
   AlertTriangle,
@@ -204,6 +208,9 @@ const schema = {
 export default function ScamsPage() {
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Gold IRA Scam Protection Center", description: "Protect yourself from Gold IRA scams. Investigate complaints, lawsuits, and red flags before investing.", slug: "/scams" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Scam Protection", url: "/scams" }])} />
+      <SchemaScript schema={faqSchema(getPageFAQs("scams"))} />
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -608,6 +615,27 @@ export default function ScamsPage() {
             headline="Want Personalized Guidance from a Verified Company?"
             subheadline="Augusta Precious Metals offers free, no-pressure consultations. Get expert advice on protecting your retirement—with zero obligation."
             trackSource="scams-hub"
+          />
+        </Container>
+      </section>
+
+      <section className="py-16 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="The most common Gold IRA scams include home storage schemes (illegal — IRS requires approved depositories), excessive premiums (15%+ over spot price), bait-and-switch from numismatic coins, high-pressure sales tactics, and fake reviews. Here are the red flags to watch for and how to verify a company is legitimate."
+            keyFacts={[
+              "Home storage Gold IRAs are illegal — IRS requires approved depositories",
+              "Legitimate gold coin premiums are 3-8% over spot price",
+              "Augusta Precious Metals: zero BBB complaints in 7+ years",
+              "Always verify BBB rating, BCA rating, and state registration independently",
+            ]}
+            className="mb-12 max-w-3xl"
+          />
+          <FAQSection
+            faqs={getPageFAQs("scams")}
+            title="Gold IRA Scam FAQ"
+            className="max-w-3xl"
+            includeSchema={false}
           />
         </Container>
       </section>
