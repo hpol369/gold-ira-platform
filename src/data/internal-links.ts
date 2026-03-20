@@ -131,6 +131,18 @@ export const LINK_HUBS: Record<string, HubConfig> = {
       { url: "/tools/retirement-calculator", title: "Retirement Calculator" },
     ],
   },
+  "federal-retirement": {
+    hub: { url: "/federal-retirement", title: "Federal Employee Retirement Guide" },
+    spokes: [
+      { url: "/federal-retirement/fers-pension-and-gold", title: "FERS Pension + Gold IRA" },
+      { url: "/federal-retirement/tsp-to-gold-diversification", title: "TSP to Gold Diversification" },
+      { url: "/federal-retirement/fehb-retirement-healthcare", title: "FEHB Healthcare in Retirement" },
+      { url: "/federal-retirement/social-security-fairness-act", title: "Social Security Fairness Act" },
+      { url: "/federal-retirement/military-tsp-rollover", title: "Military TSP Rollover" },
+      { url: "/guide/tsp-to-gold-ira-rollover", title: "TSP to Gold IRA Rollover Steps" },
+      { url: "/guide/457b-to-gold-ira-rollover", title: "457(b) Rollover Guide" },
+    ],
+  },
   "retirement-adequacy": {
     hub: { url: "/is-enough-to-retire", title: "Is Your Savings Enough to Retire?" },
     spokes: [

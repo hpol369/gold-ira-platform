@@ -14,7 +14,8 @@ export type ContentHubSlug =
   | 'grandchildren'
   | 'senior-protection'
   | 'wealthy-secrets'
-  | 'kiyosaki';
+  | 'kiyosaki'
+  | 'federal-retirement';
 
 export type HubArticleType =
   | 'guide'           // Educational content
@@ -175,6 +176,34 @@ export interface SeniorProtectionArticle extends HubArticle {
 }
 
 // ============================================
+// FEDERAL RETIREMENT SPECIFIC
+// ============================================
+
+export interface FederalRetirementArticle extends HubArticle {
+  hubSlug: 'federal-retirement';
+  /** Federal pay grade examples for scenarios */
+  payGradeExamples?: {
+    grade: string;
+    salary: number;
+    tspBalance: number;
+    pensionEstimate: number;
+  }[];
+  /** Key government program references */
+  programReferences?: {
+    program: string;
+    agency: string;
+    url?: string;
+  }[];
+  /** Comparison scenarios (e.g., "Federal employee with $300k TSP at age 60") */
+  retirementScenarios?: {
+    title: string;
+    description: string;
+    withGold: string;
+    withoutGold: string;
+  }[];
+}
+
+// ============================================
 // WEALTHY SECRETS SPECIFIC
 // ============================================
 
@@ -282,6 +311,15 @@ export const hubMeta: Record<ContentHubSlug, HubMeta> = {
     color: 'amber',
     basePath: '/rich-dad-strategy',
   },
+  'federal-retirement': {
+    slug: 'federal-retirement',
+    title: "Federal Employee Retirement Guide",
+    subtitle: "FERS, TSP & Gold IRA Protection",
+    description: "Complete retirement planning guide for federal employees covering FERS pension, TSP diversification, FEHB healthcare, and gold IRA protection.",
+    icon: 'Building2',
+    color: 'blue',
+    basePath: '/federal-retirement',
+  },
 };
 
 // ============================================
@@ -294,7 +332,8 @@ export type AnyHubArticle =
   | GrandchildrenArticle
   | SeniorProtectionArticle
   | WealthySecretsArticle
-  | KiyosakiArticle;
+  | KiyosakiArticle
+  | FederalRetirementArticle;
 
 // Registry type for article lookups
 export type HubArticleRegistry<T extends HubArticle = HubArticle> = Record<string, T>;
