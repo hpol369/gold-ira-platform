@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 import { sendTelegramNotification } from "@/lib/notifications";
+import { enrollInSequence } from "@/lib/email-queue";
 
 export async function POST(request: NextRequest) {
   try {
@@ -32,6 +33,13 @@ export async function POST(request: NextRequest) {
         { success: false, message: "Database error" },
         { status: 500 }
       );
+    }
+
+    // Enroll in newsletter welcome sequence (sends confirmation email immediately)
+    try {
+      await enrollInSequence(cleanEmail, "newsletter-welcome", cleanSource);
+    } catch (err) {
+      console.error("[NEWSLETTER] Sequence enrollment failed:", err);
     }
 
     // Send Telegram notification

@@ -6,6 +6,8 @@ import { insertLead, updateLeadStatus, updateLead, getLeadById, getLeadByEmail, 
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { calculatePotentialDeal } from "@/lib/deal-calculator";
 import { submitToAugusta } from "@/lib/augusta";
+import { enrollInSequence } from "@/lib/email-queue";
+import { getSequenceForTier } from "@/lib/email-sequences";
 
 // Simple rate limiting (per IP, resets on deploy)
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -153,7 +155,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 2. Send initial Telegram notification
+    // 2. Enroll in email nurture sequence based on savings tier
+    if (body.savingsTier) {
+      try {
+        const sequenceId = getSequenceForTier(body.savingsTier);
+        await enrollInSequence(lead.email, sequenceId, body.source, body.firstName);
+        console.log(`[LEAD] Enrolled ${lead.email} in sequence: ${sequenceId}`);
+      } catch (err) {
+        console.error("[LEAD] Sequence enrollment failed:", err);
+      }
+    }
+
+    // 3. Send initial Telegram notification
     console.log("[LEAD] Sending Telegram notification for lead:", lead.email);
     try {
       const messageId = await updateLeadNotification(lead, location);
@@ -168,7 +181,7 @@ export async function POST(request: NextRequest) {
       console.error("[TELEGRAM ERROR]", err);
     }
 
-    // 3. Submit to Augusta via Zapier webhook (unless skipAugusta is true)
+    // 4. Submit to Augusta via Zapier webhook (unless skipAugusta is true)
     if (body.skipAugusta) {
       // New confirmation flow: save lead but don't send to Augusta yet
       return NextResponse.json({
