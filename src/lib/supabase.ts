@@ -33,6 +33,7 @@ export interface Lead {
   qualification_tier?: string;
   routed_to?: string;
   email_sequence?: string;
+  ab_variant?: string;
 }
 
 // Insert a new lead

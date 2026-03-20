@@ -7,6 +7,7 @@ import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, Ch
 import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
 import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
 import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
+import { useABTest } from "@/lib/ab-testing";
 
 const CONCERN_ICONS = {
   TrendingDown,
@@ -36,9 +37,14 @@ export default function GetStartedPage() {
 function GetStartedContent() {
   const searchParams = useSearchParams();
   const ref = searchParams.get("ref") || "direct";
+  const variant = useABTest("funnel-order-v1");
+
+  // Variant B: concern-first (emotional hook), then savings
+  const firstStep = variant === "variant" ? "concern" : "savings";
+  const secondStep = variant === "variant" ? "savings" : "concern";
 
   const [state, setState] = useState<FunnelState>({
-    step: "savings",
+    step: firstStep as FunnelState["step"],
     savingsTier: null,
     concern: null,
     qualificationTier: null,
@@ -49,18 +55,31 @@ function GetStartedContent() {
   const [error, setError] = useState("");
 
   const selectSavings = useCallback((tier: SavingsTier) => {
-    setState(prev => ({ ...prev, savingsTier: tier, step: "concern" }));
-  }, []);
+    if (variant === "variant") {
+      // Variant B: savings is step 2, go to result
+      const result = getQualificationResult(tier);
+      setState(prev => ({ ...prev, savingsTier: tier, qualificationTier: result.tier, step: "result" }));
+    } else {
+      // Control: savings is step 1, go to concern
+      setState(prev => ({ ...prev, savingsTier: tier, step: "concern" }));
+    }
+  }, [variant]);
 
   const selectConcern = useCallback((concern: Concern) => {
-    const result = getQualificationResult(state.savingsTier!);
-    setState(prev => ({
-      ...prev,
-      concern,
-      qualificationTier: result.tier,
-      step: "result",
-    }));
-  }, [state.savingsTier]);
+    if (variant === "variant") {
+      // Variant B: concern is step 1, go to savings
+      setState(prev => ({ ...prev, concern, step: "savings" }));
+    } else {
+      // Control: concern is step 2, go to result
+      const result = getQualificationResult(state.savingsTier!);
+      setState(prev => ({
+        ...prev,
+        concern,
+        qualificationTier: result.tier,
+        step: "result",
+      }));
+    }
+  }, [state.savingsTier, variant]);
 
   const proceedToContact = useCallback(() => {
     setState(prev => ({ ...prev, step: "contact" }));
@@ -105,6 +124,7 @@ function GetStartedContent() {
           qualificationTier: state.qualificationTier,
           routedTo: result.companyName,
           skipAugusta: !isAugusta,
+          abVariant: `funnel-order-v1:${variant}`,
         }),
       });
 
@@ -184,7 +204,7 @@ function GetStartedContent() {
                 </div>
 
                 <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 md:p-8">
-                  <p className="text-white/80 text-sm font-medium mb-1">Question 1 of 2</p>
+                  <p className="text-white/80 text-sm font-medium mb-1">Question {firstStep === "savings" ? "1" : "2"} of 2</p>
                   <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
                     How much do you have in retirement savings?
                   </h2>
@@ -222,7 +242,7 @@ function GetStartedContent() {
                 </div>
 
                 <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 md:p-8">
-                  <p className="text-white/80 text-sm font-medium mb-1">Question 2 of 2</p>
+                  <p className="text-white/80 text-sm font-medium mb-1">Question {secondStep === "concern" ? "2" : "1"} of 2</p>
                   <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
                     What concerns you most about your retirement?
                   </h2>

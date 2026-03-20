@@ -53,6 +53,7 @@ interface LeadData {
   concern?: string;
   qualificationTier?: string;
   routedTo?: string;
+  abVariant?: string;
 }
 
 export async function POST(request: NextRequest) {
@@ -143,6 +144,7 @@ export async function POST(request: NextRequest) {
       ...(body.concern && { concern: body.concern }),
       ...(body.qualificationTier && { qualification_tier: body.qualificationTier }),
       ...(body.routedTo && { routed_to: body.routedTo }),
+      ...(body.abVariant && { ab_variant: body.abVariant }),
     };
 
     const lead = await insertLead(leadData);

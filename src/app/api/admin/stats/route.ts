@@ -35,6 +35,15 @@ interface LeadRow {
   potential_deal_min: number | null;
   potential_deal_max: number | null;
   is_qualified: boolean | null;
+  ab_variant: string | null;
+}
+
+interface PostbackRow {
+  id: string;
+  type: string;
+  sub_id: string | null;
+  lead_id: string | null;
+  created_at: string;
 }
 
 interface SubscriberRow {
@@ -59,16 +68,18 @@ export async function GET(request: NextRequest) {
 
   try {
     // Fetch all data in parallel
-    const [leadsResult, subscribersResult, clicksResult, emailStats] = await Promise.all([
+    const [leadsResult, subscribersResult, clicksResult, postbacksResult, emailStats] = await Promise.all([
       supabase.from("leads").select("*").order("created_at", { ascending: false }).limit(200),
       supabase.from("email_subscribers").select("*").order("created_at", { ascending: false }).limit(500),
       supabase.from("source_clicks").select("*").order("created_at", { ascending: false }).limit(1000),
+      supabase.from("postback_events").select("*").order("created_at", { ascending: false }).limit(200),
       getQueueStats(),
     ]);
 
     const leads = (leadsResult.data || []) as LeadRow[];
     const subscribers = (subscribersResult.data || []) as SubscriberRow[];
     const clicks = (clicksResult.data || []) as ClickRow[];
+    const postbacks = (postbacksResult.data || []) as PostbackRow[];
 
     // Calculate lead metrics
     const now = new Date();
@@ -160,6 +171,37 @@ export async function GET(request: NextRequest) {
       if (dailySubs[key] !== undefined) dailySubs[key]++;
     }
 
+    // Postback stats
+    const postbackStats = {
+      total: postbacks.length,
+      leadCapture: postbacks.filter((p) => p.type === "lead_capture").length,
+      qualifiedLead: postbacks.filter((p) => p.type === "qualified_lead").length,
+      tradeComplete: postbacks.filter((p) => p.type === "trade_complete").length,
+    };
+
+    const recentPostbacks = postbacks.slice(0, 10).map((p) => ({
+      type: p.type,
+      subId: p.sub_id,
+      leadId: p.lead_id,
+      createdAt: p.created_at,
+    }));
+
+    // A/B test stats
+    const abVariants: Record<string, { total: number; qualified: number; submitted: number }> = {};
+    for (const lead of leads) {
+      const variant = lead.ab_variant || "none";
+      if (!abVariants[variant]) {
+        abVariants[variant] = { total: 0, qualified: 0, submitted: 0 };
+      }
+      abVariants[variant].total++;
+      if (lead.savings_tier && qualifiedTiers.includes(lead.savings_tier)) {
+        abVariants[variant].qualified++;
+      }
+      if (lead.status === "sent_to_augusta") {
+        abVariants[variant].submitted++;
+      }
+    }
+
     // Recent leads for the table (last 20)
     const recentLeadsList = leads.slice(0, 20).map((l) => ({
       id: l.id,
@@ -204,6 +246,9 @@ export async function GET(request: NextRequest) {
         dailySubs,
       },
       emailSequences: emailStats,
+      postbacks: postbackStats,
+      recentPostbacks,
+      abTest: abVariants,
       recentLeads: recentLeadsList,
       timestamp: now.toISOString(),
     });

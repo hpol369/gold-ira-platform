@@ -60,6 +60,26 @@ interface EmailSequenceStats {
   bySequence: Record<string, { pending: number; sent: number }>;
 }
 
+interface PostbackStats {
+  total: number;
+  leadCapture: number;
+  qualifiedLead: number;
+  tradeComplete: number;
+}
+
+interface RecentPostback {
+  type: string;
+  subId: string | null;
+  leadId: string | null;
+  createdAt: string;
+}
+
+interface ABVariantStats {
+  total: number;
+  qualified: number;
+  submitted: number;
+}
+
 interface DashboardData {
   overview: OverviewData;
   breakdowns: {
@@ -76,6 +96,9 @@ interface DashboardData {
     dailySubs: Record<string, number>;
   };
   emailSequences: EmailSequenceStats;
+  postbacks: PostbackStats;
+  recentPostbacks: RecentPostback[];
+  abTest: Record<string, ABVariantStats>;
   recentLeads: RecentLead[];
   timestamp: string;
 }
@@ -284,7 +307,7 @@ export default function DashboardPage() {
     );
   }
 
-  const { overview, breakdowns, trends, emailSequences, recentLeads } = data;
+  const { overview, breakdowns, trends, emailSequences, postbacks, recentPostbacks, abTest, recentLeads } = data;
 
   return (
     <main className="min-h-screen bg-slate-900 py-8">
@@ -517,6 +540,93 @@ export default function DashboardPage() {
                 <h3 className="text-sm font-medium text-white">Top Click Sources</h3>
               </div>
               <BreakdownBar data={breakdowns.clickSource} />
+            </div>
+          </div>
+
+          {/* Augusta Postbacks + A/B Test */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {/* Postback Stats */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+              <div className="flex items-center gap-2 mb-4">
+                <DollarSign className="h-4 w-4 text-green-400" />
+                <h3 className="text-sm font-medium text-white">Augusta Postbacks</h3>
+                <a href="/admin/conversions" className="ml-auto text-xs text-slate-500 hover:text-slate-300">Details →</a>
+              </div>
+              <div className="grid grid-cols-3 gap-3 mb-4">
+                <div className="text-center p-3 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                  <div className="text-xl font-bold text-white">{postbacks.leadCapture}</div>
+                  <div className="text-xs text-blue-300">Captured</div>
+                </div>
+                <div className="text-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/20">
+                  <div className="text-xl font-bold text-white">{postbacks.qualifiedLead}</div>
+                  <div className="text-xs text-amber-300">Qualified</div>
+                </div>
+                <div className="text-center p-3 bg-green-500/10 rounded-lg border border-green-500/20">
+                  <div className="text-xl font-bold text-white">{postbacks.tradeComplete}</div>
+                  <div className="text-xs text-green-300">Traded</div>
+                </div>
+              </div>
+              {recentPostbacks.length > 0 && (
+                <div className="space-y-2">
+                  <p className="text-xs text-slate-500 uppercase font-medium">Recent</p>
+                  {recentPostbacks.slice(0, 5).map((pb, i) => (
+                    <div key={i} className="flex items-center justify-between text-xs">
+                      <span className={`font-medium ${
+                        pb.type === "trade_complete" ? "text-green-400" :
+                        pb.type === "qualified_lead" ? "text-amber-400" : "text-blue-400"
+                      }`}>
+                        {pb.type.replace(/_/g, " ")}
+                      </span>
+                      <span className="text-slate-500">{formatDate(pb.createdAt)}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* A/B Test Results */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+              <div className="flex items-center gap-2 mb-4">
+                <BarChart3 className="h-4 w-4 text-pink-400" />
+                <h3 className="text-sm font-medium text-white">A/B Test: Funnel Order</h3>
+              </div>
+              <p className="text-xs text-slate-500 mb-4">Control = savings first · Variant = concern first</p>
+              {Object.keys(abTest).length === 0 || (Object.keys(abTest).length === 1 && abTest["none"]) ? (
+                <p className="text-sm text-slate-500">No A/B test data yet. Results will appear when leads come through the funnel.</p>
+              ) : (
+                <div className="space-y-3">
+                  {Object.entries(abTest)
+                    .filter(([key]) => key !== "none")
+                    .map(([variantName, stats]) => {
+                      const convRate = stats.total > 0 ? ((stats.submitted / stats.total) * 100).toFixed(1) : "0.0";
+                      const qualRate = stats.total > 0 ? ((stats.qualified / stats.total) * 100).toFixed(1) : "0.0";
+                      const label = variantName.includes("control") ? "Control (savings→concern)" : "Variant (concern→savings)";
+                      const isWinning = parseFloat(convRate) > 0;
+
+                      return (
+                        <div key={variantName} className="p-3 bg-white/5 rounded-lg border border-white/10">
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-sm font-medium text-white">{label}</span>
+                            <span className="text-xs text-slate-400">{stats.total} leads</span>
+                          </div>
+                          <div className="grid grid-cols-2 gap-2">
+                            <div>
+                              <div className="text-xs text-slate-500">Qualified Rate</div>
+                              <div className={`text-sm font-bold ${isWinning ? "text-green-400" : "text-slate-300"}`}>{qualRate}%</div>
+                            </div>
+                            <div>
+                              <div className="text-xs text-slate-500">Augusta Submit</div>
+                              <div className={`text-sm font-bold ${isWinning ? "text-green-400" : "text-slate-300"}`}>{convRate}%</div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  {abTest["none"] && abTest["none"].total > 0 && (
+                    <p className="text-xs text-slate-500">{abTest["none"].total} leads without A/B variant (pre-test)</p>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getLeadByEmail, updateLead } from "@/lib/supabase";
+import { supabase, getLeadByEmail, updateLead } from "@/lib/supabase";
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { sendNotification } from "@/lib/notifications";
 import { uploadClickConversion } from "@/lib/google-ads";
@@ -18,10 +18,6 @@ export interface PostbackEvent {
   // Additional fields Augusta might send
   [key: string]: string | undefined;
 }
-
-// Simple file-based storage (upgrade to DB later)
-// In production, use Vercel KV, Supabase, or similar
-const conversions: PostbackEvent[] = [];
 
 export async function GET(request: NextRequest) {
   // Augusta might use GET for postbacks
@@ -90,8 +86,21 @@ async function handlePostback(request: NextRequest, method: string) {
       ...params,
     };
 
-    // Store the conversion
-    conversions.push(event);
+    // Persist to Supabase
+    try {
+      await supabase.from("postback_events").insert({
+        type: event.type,
+        sub_id: event.sub_id,
+        lead_id: event.lead_id,
+        email: params.email || params.Email || params.EMAIL || null,
+        ip: event.ip,
+        user_agent: event.user_agent,
+        location: event.location || null,
+        raw_params: params,
+      });
+    } catch (dbError) {
+      console.error("[POSTBACK] Supabase insert failed:", dbError);
+    }
 
     // Log for debugging (visible in Vercel logs)
     console.log(`[POSTBACK] Received ${method} request`);
@@ -193,14 +202,42 @@ function determineEventType(params: Record<string, string>): PostbackType {
   return "lead_capture";
 }
 
-// OPTIONS - CORS preflight only, no data exposure
+// OPTIONS — returns recent conversions from Supabase (used by /admin/conversions)
 export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 204,
-    headers: {
-      "Access-Control-Allow-Origin": "https://www.richdadretirement.com",
-      "Access-Control-Allow-Methods": "GET, POST",
-      "Access-Control-Allow-Headers": "Content-Type",
-    },
-  });
+  try {
+    const { data } = await supabase
+      .from("postback_events")
+      .select("type, sub_id, lead_id, created_at")
+      .order("created_at", { ascending: false })
+      .limit(100);
+
+    const conversions = (data || []).map((row: { type: string; sub_id: string; lead_id: string; created_at: string }) => ({
+      type: row.type,
+      sub_id: row.sub_id,
+      lead_id: row.lead_id,
+      timestamp: row.created_at,
+    }));
+
+    return NextResponse.json(
+      { conversions },
+      {
+        headers: {
+          "Access-Control-Allow-Origin": "https://www.richdadretirement.com",
+          "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type",
+        },
+      }
+    );
+  } catch {
+    return NextResponse.json(
+      { conversions: [] },
+      {
+        headers: {
+          "Access-Control-Allow-Origin": "https://www.richdadretirement.com",
+          "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type",
+        },
+      }
+    );
+  }
 }
