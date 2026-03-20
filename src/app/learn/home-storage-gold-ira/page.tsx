@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { AlertTriangle, ShieldX, Scale, Gavel, ArrowRight, XCircle, Home } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Home Storage Gold IRA: Why It's a Terrible Idea (2026 Warning)",
@@ -124,6 +127,9 @@ export default function HomeStorageGoldIraPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-home-storage-gold-ira" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -184,6 +190,8 @@ export default function HomeStorageGoldIraPage() {
                                 Some promoters will tell you the IRS hasn&apos;t &quot;explicitly banned&quot; home storage. This is technically true in the same way the IRS hasn&apos;t explicitly banned keeping your IRA in a shoebox. The rules require approved custodians and depositories. Your home meets neither requirement.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-home-storage-gold-ira" />
 
                         {/* Court Cases */}
                         <section id="court-cases" className="scroll-mt-32">
@@ -304,6 +312,8 @@ export default function HomeStorageGoldIraPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/home-storage-gold-ira" />
 
                         <AuthorBox />
 

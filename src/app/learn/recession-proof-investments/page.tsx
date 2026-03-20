@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { ShieldCheck, TrendingDown, Coins, Building2, Droplets, Pill, ArrowRight, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Recession-Proof Investments: 7 Assets That Survive",
@@ -120,6 +123,9 @@ export default function RecessionProofInvestmentsPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-recession-proof-investments" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -192,6 +198,8 @@ export default function RecessionProofInvestmentsPage() {
                                 <strong>How to add it to your retirement:</strong> You can move part of your 401k or IRA into physical gold through a <Link href="/what-is-a-gold-ira">Gold IRA</Link>. The gold is held in a secure depository, you maintain the tax advantages, and you own real metal—not a piece of paper.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-recession-proof-investments" />
 
                         {/* 2. Bonds */}
                         <section id="bonds" className="scroll-mt-32">
@@ -432,6 +440,8 @@ export default function RecessionProofInvestmentsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/recession-proof-investments" />
 
                         <AuthorBox />
 

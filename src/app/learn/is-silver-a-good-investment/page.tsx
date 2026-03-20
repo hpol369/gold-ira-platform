@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { TrendingUp, Factory, Coins, ShieldCheck, Scale, ArrowRight, Sparkles, BarChart3, Zap } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Is Silver a Good Investment in 2026? Full Analysis",
@@ -140,6 +143,9 @@ export default function IsSilverGoodInvestmentPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-is-silver-a-good-investment" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -199,6 +205,8 @@ export default function IsSilverGoodInvestmentPage() {
                                 Historically, when gold rises, silver rises faster. During the 2008-2011 precious metals bull market, gold rose about 170% while silver rose over 400%. This &quot;leverage&quot; to gold makes silver attractive to investors who believe precious metals will continue higher.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-is-silver-a-good-investment" />
 
                         {/* Industrial Demand */}
                         <section id="industrial-demand" className="scroll-mt-32">
@@ -499,6 +507,8 @@ export default function IsSilverGoodInvestmentPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/is-silver-a-good-investment" />
 
                         <AuthorBox />
 

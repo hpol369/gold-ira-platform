@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { FileText, DollarSign, AlertTriangle, Calendar, ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Gold IRA Tax Rules 2026: Complete Guide to Taxes & Penalties",
@@ -119,6 +122,9 @@ export default function GoldIraTaxRulesPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-gold-ira-tax-rules" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -186,6 +192,8 @@ export default function GoldIraTaxRulesPage() {
                                 Here&apos;s where it gets interesting. That $7,000 limit only applies to new contributions. Rollovers from 401(k)s, 403(b)s, or other IRAs? No limit whatsoever. You could roll over $500,000 in one transaction if you wanted. Completely tax-free. This is how most people fund their Gold IRAs—they move existing retirement money, not new savings. Check out our <Link href="/guide/401k-to-gold-rollover">401(k) rollover guide</Link> for the how-to.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-gold-ira-tax-rules" />
 
                         {/* Traditional vs Roth */}
                         <section id="traditional-vs-roth" className="scroll-mt-32">
@@ -497,6 +505,8 @@ export default function GoldIraTaxRulesPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/gold-ira-tax-rules" />
 
                         <AuthorBox />
 

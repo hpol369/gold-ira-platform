@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, PieChart, Shield, AlertTriangle, Target, TrendingUp, Clock, CheckCircle2, User } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "How Much Gold Should I Have in My Portfolio? (2026 Guide)",
@@ -76,6 +79,8 @@ export default function HowMuchGoldPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-how-much-gold-in-portfolio" />
 
             {/* Main Content */}
             <section className="py-16">
@@ -379,6 +384,8 @@ export default function HowMuchGoldPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/how-much-gold-in-portfolio" />
 
             {/* Footer CTA */}
             <section className="py-16 bg-slate-50 border-t border-slate-200">

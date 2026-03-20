@@ -96,4 +96,4 @@ export function trackCalculatorInteraction(
 // NOTE: Google Ads conversion tracking is now handled directly in:
 // - LeadCaptureModal.tsx (LP forms)
 // - LeadCaptureForm.tsx (main site form)
-// Conversion tag: AW-17807049464/b4n5CImJ3O4bEPiFiKtC
+// Conversion tag configured in: src/config/google-ads.ts

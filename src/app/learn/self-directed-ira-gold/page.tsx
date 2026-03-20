@@ -9,10 +9,13 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, Building2, Scale, Lock, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata = {
-    title: "Self-Directed IRA Gold Guide (2026): Rules, Setup & Best Custodians",
-    description: "Complete guide to self-directed gold IRAs. Learn what they are, IRS rules, how to set one up, and which custodians to use. Updated for 2026.",
+    title: "Self-Directed IRA Gold Investing: Rules, Benefits & How It Works (2026)",
+    description: "Learn how self-directed IRA gold investing works. Understand IRS rules, tax benefits, eligible metals, and how a SDIRA differs from a standard Gold IRA.",
 };
 
 const tocItems = [
@@ -56,7 +59,7 @@ export default function SelfDirectedIraGoldPage() {
                                 Educational Guide
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-6">
-                                Self-Directed IRA Gold: <br />The Complete 2026 Guide
+                                Self-Directed IRA Gold Investing: <br />Rules, Benefits & How It Works
                             </h1>
                             <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
                                 Your company 401(k) limits you to whatever funds they picked—and you&apos;ve seen how that works out when markets crash. A Self-Directed IRA puts YOU in control. Hold physical gold, real estate, and assets that Wall Street can&apos;t gamble away.
@@ -68,8 +71,11 @@ export default function SelfDirectedIraGoldPage() {
                 <Container className="py-12">
                     <div className="flex flex-col lg:flex-row gap-12">
                         {/* Sidebar (TOC) */}
-                        <aside className="lg:w-64 flex-shrink-0">
+                        <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                             <TableOfContents items={tocItems} />
+                            <div className="mt-8">
+                                <SidebarAuditWidget trackSource="learn-self-directed-ira-gold" />
+                            </div>
                         </aside>
 
                         {/* Main Content */}
@@ -150,6 +156,8 @@ export default function SelfDirectedIraGoldPage() {
                                     Once funded, you direct your custodian to purchase specific precious metals from an authorized dealer. The metals ship directly to an IRS-approved depository—not to your home. The custodian holds the paperwork; the depository holds the physical gold.
                                 </p>
                             </section>
+
+                            <InContentCTA trackSource="learn-self-directed-ira-gold" />
 
                             {/* Mid-Article CTA */}
                             <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
@@ -297,6 +305,8 @@ export default function SelfDirectedIraGoldPage() {
                                     </div>
                                 </div>
                             </div>
+
+                            <AutoRelatedContent currentUrl="/learn/self-directed-ira-gold" />
 
                             <AuthorBox />
 

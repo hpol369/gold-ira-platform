@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { AlertTriangle, Shield, Search, Phone, CheckCircle2, ArrowRight, XCircle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Gold IRA Scams to Avoid in 2026: Protect Your Retirement",
@@ -126,6 +129,9 @@ export default function GoldIraScamsPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-gold-ira-scams" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -192,6 +198,8 @@ export default function GoldIraScamsPage() {
                                 <strong>How to Protect Yourself:</strong> Any company promoting home storage should be avoided entirely. Legitimate companies always use IRS-approved depositories like Delaware Depository, Brink&apos;s, or IDS.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-gold-ira-scams" />
 
                         {/* Excessive Premiums */}
                         <section id="excessive-premiums" className="scroll-mt-32">
@@ -535,6 +543,8 @@ export default function GoldIraScamsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/gold-ira-scams" />
 
                         <AuthorBox />
 

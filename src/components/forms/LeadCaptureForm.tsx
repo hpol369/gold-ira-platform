@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ArrowRight, Loader2, Lock } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { GOOGLE_ADS_CONVERSION_TAG } from "@/config/google-ads";
 
 // Augusta customer landing page with affiliate tracking
 const AUGUSTA_AFFILIATE_URL = "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908";
@@ -80,9 +81,9 @@ export function LeadCaptureForm() {
 
       if (result.success) {
         // 2. Fire Google Ads conversion
-        if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "conversion", {
-            send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
+        if (typeof window !== "undefined" && (window as { gtag?: (...args: unknown[]) => void }).gtag) {
+          (window as { gtag: (...args: unknown[]) => void }).gtag("event", "conversion", {
+            send_to: GOOGLE_ADS_CONVERSION_TAG,
             value: 50.0,
             currency: "USD",
           });

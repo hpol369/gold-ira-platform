@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { Scale, FileText, CheckCircle2, XCircle, ArrowRight, Gavel } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Precious Metals IRA Rules: IRS Regulations You Must Know (2026)",
@@ -115,6 +118,9 @@ export default function PreciousMetalsIraRulesPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-precious-metals-ira-rules" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -165,6 +171,8 @@ export default function PreciousMetalsIraRulesPage() {
                                 <strong>NOT Allowed:</strong> South African Krugerrands, Pre-1933 Gold Coins (unless deemed bullion), Numismatic/Collectible Coins (generally).
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-precious-metals-ira-rules" />
 
                         {/* Storage Rules */}
                         <section id="storage-rules" className="scroll-mt-32">
@@ -243,6 +251,8 @@ export default function PreciousMetalsIraRulesPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/precious-metals-ira-rules" />
 
                         <AuthorBox />
 

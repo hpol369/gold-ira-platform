@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, TrendingUp, TrendingDown, AlertTriangle, BarChart3, Globe, DollarSign, Building2, Shield, Zap } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Gold Price Prediction 2026: Expert Forecasts & Analysis",
@@ -151,6 +154,8 @@ export default function GoldPricePrediction2026Page() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-gold-price-prediction-2026" />
 
             {/* Main Content */}
             <section className="py-16">
@@ -375,6 +380,8 @@ export default function GoldPricePrediction2026Page() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/gold-price-prediction-2026" />
 
             {/* Related Content */}
             <section className="py-12 bg-slate-50 border-t border-slate-200">

@@ -4,6 +4,9 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { ArrowRight, CheckCircle, Star, DollarSign, Shield, Zap, Award, Building2, Coins, BarChart3 } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Best Solo 401k Providers 2026 | Compare Plans & Fees",
@@ -282,6 +285,8 @@ export default function Solo401kProvidersPage() {
                 </Container>
             </section>
 
+            <InContentCTA trackSource="learn-solo-401k-providers" />
+
             {/* Self-Directed Providers */}
             <section className="py-16 bg-slate-100">
                 <Container>
@@ -488,6 +493,8 @@ export default function Solo401kProvidersPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/solo-401k-providers" />
 
             {/* CTA Section */}
             <section className="py-16 bg-slate-50">

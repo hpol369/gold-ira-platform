@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { Coins, Building2, Home, BarChart3, ArrowRight, ShieldCheck, TrendingUp, Landmark } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Stock Market Alternatives: 8 Ways to Invest Beyond",
@@ -120,6 +123,9 @@ export default function StockMarketAlternativesPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-stock-market-alternatives" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -176,6 +182,8 @@ export default function StockMarketAlternativesPage() {
                                 A <Link href="/what-is-a-gold-ira">Gold IRA</Link> is particularly compelling for retirement investors—it combines the diversification benefits of physical gold with the tax advantages of an IRA.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-stock-market-alternatives" />
 
                         {/* 2. Real Estate */}
                         <section id="realestate" className="scroll-mt-32">
@@ -479,6 +487,8 @@ export default function StockMarketAlternativesPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/stock-market-alternatives" />
 
                         <AuthorBox />
 

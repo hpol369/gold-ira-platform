@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, AlertTriangle, ArrowLeftRight, Building2, User, Clock, DollarSign, Shield } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Direct vs Indirect Rollover: Which Should You Choose? (2026 Guide)",
@@ -68,6 +71,8 @@ export default function IndirectVsDirectRolloverPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-indirect-vs-direct-rollover" />
 
             {/* Main Content */}
             <section className="py-16">
@@ -402,6 +407,8 @@ export default function IndirectVsDirectRolloverPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/indirect-vs-direct-rollover" />
 
             {/* Related Content */}
             <section className="py-12 bg-slate-50 border-t border-slate-200">

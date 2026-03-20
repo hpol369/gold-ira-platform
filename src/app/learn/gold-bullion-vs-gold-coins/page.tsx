@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, Scale, Coins, Box, Shield, TrendingUp, DollarSign } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Gold Bullion vs Gold Coins: Which Is Better for Your IRA? (2026)",
@@ -171,6 +174,8 @@ export default function GoldBullionVsCoinsPage() {
                                 <ArrowRight className="h-4 w-4" />
                             </Link>
                         </div>
+
+                        <InContentCTA trackSource="learn-gold-bullion-vs-gold-coins" />
 
                         {/* Comparison Table */}
                         <div className="mb-16">
@@ -398,6 +403,8 @@ export default function GoldBullionVsCoinsPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/gold-bullion-vs-gold-coins" />
 
             {/* Footer CTA */}
             <section className="py-16 bg-slate-50 border-t border-slate-200">

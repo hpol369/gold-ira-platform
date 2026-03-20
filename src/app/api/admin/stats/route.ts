@@ -5,11 +5,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 import { getQueueStats } from "@/lib/email-queue";
 
-const ADMIN_PIN = "6903";
-
 function isAuthorized(request: NextRequest): boolean {
   const authHeader = request.headers.get("x-admin-pin");
-  if (authHeader === ADMIN_PIN) return true;
+  if (process.env.ADMIN_PIN && authHeader === process.env.ADMIN_PIN) return true;
 
   const cronSecret = request.headers.get("authorization");
   if (cronSecret === `Bearer ${process.env.CRON_SECRET}`) return true;

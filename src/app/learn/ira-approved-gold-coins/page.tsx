@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { Coins, CheckCircle2, XCircle, ArrowRight, Shield, Scale } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "IRA-Approved Gold Coins & Bars 2026: Complete List & Guide",
@@ -125,6 +128,9 @@ export default function IraApprovedGoldCoinsPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-ira-approved-gold-coins" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -248,6 +254,8 @@ export default function IraApprovedGoldCoinsPage() {
                                 For investors prioritizing purity and lower premiums, the Canadian Gold Maple Leaf offers 99.99% purity at typically lower premiums than American Eagles.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-ira-approved-gold-coins" />
 
                         {/* Approved Gold Bars */}
                         <section id="gold-bars" className="scroll-mt-32">
@@ -573,6 +581,8 @@ export default function IraApprovedGoldCoinsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/ira-approved-gold-coins" />
 
                         <AuthorBox />
 

@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { TrendingDown, AlertTriangle, Calculator, ShieldCheck, ArrowRight, BarChart3, Clock, Coins } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Sequence of Returns Risk: Hidden Retirement Danger",
@@ -122,6 +125,9 @@ export default function SequenceOfReturnsRiskPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-sequence-of-returns-risk" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -183,6 +189,8 @@ export default function SequenceOfReturnsRiskPage() {
                                 Both retirees experienced the same mathematical average return. But Retiree B faced a crash early—while withdrawing $50,000 per year. Those early withdrawals at low prices depleted shares that could never recover.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-sequence-of-returns-risk" />
 
                         {/* Why So Dangerous */}
                         <section id="why-dangerous" className="scroll-mt-32">
@@ -434,6 +442,8 @@ export default function SequenceOfReturnsRiskPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/sequence-of-returns-risk" />
 
                         <AuthorBox />
 

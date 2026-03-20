@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { Gem, Clock, Globe, ShieldCheck, TrendingUp, ArrowRight, Sparkles, Coins, Building2 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Why Is Gold Valuable? Science & History Explained",
@@ -139,6 +142,9 @@ export default function WhyIsGoldValuablePage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-why-is-gold-valuable" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -198,6 +204,8 @@ export default function WhyIsGoldValuablePage() {
                                 In his book &quot;The Power of Gold,&quot; chemist Peter Bernstein explains why gold became money: Start with all 118 elements. Eliminate gases, liquids, radioactive elements, reactive metals, and those too rare or too common. You&apos;re left with gold—the only element that perfectly balances scarcity, durability, and practicality.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-why-is-gold-valuable" />
 
                         {/* Historical Significance */}
                         <section id="history" className="scroll-mt-32">
@@ -444,6 +452,8 @@ export default function WhyIsGoldValuablePage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/why-is-gold-valuable" />
 
                         <AuthorBox />
 

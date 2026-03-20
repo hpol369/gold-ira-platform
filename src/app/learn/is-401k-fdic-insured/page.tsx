@@ -10,6 +10,9 @@ import { ShieldX, ShieldCheck, Building2, AlertTriangle, ArrowRight, Coins, Scal
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Is 401k FDIC Insured? What Actually Protects You",
@@ -119,6 +122,9 @@ export default function Is401kFDICInsuredPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-is-401k-fdic-insured" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -224,6 +230,8 @@ export default function Is401kFDICInsuredPage() {
                                 While FDIC protects against bank failure (institutional risk), ERISA protects against employer misconduct, bankruptcy, and creditor claims. For many people, ERISA protection is actually more relevant than FDIC would be.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-is-401k-fdic-insured" />
 
                         {/* SIPC Coverage */}
                         <section id="sipc" className="scroll-mt-32">
@@ -602,6 +610,8 @@ export default function Is401kFDICInsuredPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/is-401k-fdic-insured" />
 
                         <AuthorBox />
 

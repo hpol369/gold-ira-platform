@@ -8,8 +8,9 @@ import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
 import { ExitIntentPopup } from "@/components/layout/ExitIntentPopup";
 import Providers from "@/components/providers/Providers";
 
+import { GOOGLE_ADS_ID } from "@/config/google-ads";
+
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
-const GOOGLE_ADS_ID = "AW-17807049464";
 const CLARITY_PROJECT_ID = "v816rr21t5";
 const GTM_ID = "GTM-TPC628G9";
 

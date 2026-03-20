@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { ShieldCheck, Coins, Building2, Globe, ArrowRight, TrendingUp, Lock, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Safe Haven Investments: 6 Assets for Crisis",
@@ -118,6 +121,9 @@ export default function SafeHavenInvestmentsPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-safe-haven-investments" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -200,6 +206,8 @@ export default function SafeHavenInvestmentsPage() {
                                 <strong>How to invest:</strong> Physical gold (coins/bars), <Link href="/what-is-a-gold-ira">Gold IRAs</Link>, gold ETFs (GLD, IAU), or gold mining stocks. Physical gold in an IRA offers the best combination of safe haven protection and tax advantages.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-safe-haven-investments" />
 
                         {/* 2. Treasury Bonds */}
                         <section id="bonds" className="scroll-mt-32">
@@ -460,6 +468,8 @@ export default function SafeHavenInvestmentsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/safe-haven-investments" />
 
                         <AuthorBox />
 

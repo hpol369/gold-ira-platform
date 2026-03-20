@@ -8,6 +8,7 @@ import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
 import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
 import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
 import { useABTest } from "@/lib/ab-testing";
+import { GOOGLE_ADS_CONVERSION_TAG } from "@/config/google-ads";
 
 const CONCERN_ICONS = {
   TrendingDown,
@@ -53,6 +54,13 @@ function GetStartedContent() {
     phone: "",
   });
   const [error, setError] = useState("");
+
+  function formatPhone(value: string): string {
+    const digits = value.replace(/\D/g, "").slice(0, 10);
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+    return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+  }
 
   const selectSavings = useCallback((tier: SavingsTier) => {
     if (variant === "variant") {
@@ -140,7 +148,7 @@ function GetStartedContent() {
         try {
           const w = window as unknown as { gtag?: (...args: unknown[]) => void };
           w.gtag?.("event", "conversion", {
-            send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
+            send_to: GOOGLE_ADS_CONVERSION_TAG,
           });
         } catch { /* gtag not available */ }
       }
@@ -210,7 +218,7 @@ function GetStartedContent() {
                   </h2>
                   <p className="text-white/50 text-sm mb-6">IRA, 401(k), TSP, pension — all combined</p>
 
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {SAVINGS_OPTIONS.map((option) => (
                       <button
                         key={option.value}
@@ -377,7 +385,7 @@ function GetStartedContent() {
                           id="phone"
                           type="tel"
                           value={state.phone}
-                          onChange={(e) => setState(prev => ({ ...prev, phone: e.target.value }))}
+                          onChange={(e) => setState(prev => ({ ...prev, phone: formatPhone(e.target.value) }))}
                           placeholder="(555) 123-4567"
                           className="w-full px-4 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/30 focus:outline-none focus:border-amber-400/50 focus:ring-1 focus:ring-amber-400/30 text-lg"
                           autoComplete="tel"

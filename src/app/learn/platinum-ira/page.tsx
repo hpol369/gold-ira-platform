@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { Gem, TrendingUp, AlertTriangle, ArrowRight, BarChart3, Factory } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Platinum IRA: A Complete Guide to Investing in White Gold (2026)",
@@ -115,6 +118,9 @@ export default function PlatinumIraPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-platinum-ira" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -159,6 +165,8 @@ export default function PlatinumIraPage() {
                                 <strong>The Supply Crunch:</strong> Most platinum comes from South Africa and Russia. Geopolitical instability in these regions can cut off supply overnight, leading to explosive price growth.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-platinum-ira" />
 
                         {/* Platinum vs Gold */}
                         <section id="platinum-vs-gold" className="scroll-mt-32">
@@ -260,6 +268,8 @@ export default function PlatinumIraPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/platinum-ira" />
 
                         <AuthorBox />
 

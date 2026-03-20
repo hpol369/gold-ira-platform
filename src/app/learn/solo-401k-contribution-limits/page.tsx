@@ -4,6 +4,9 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { ArrowRight, Calculator, Calendar, DollarSign, TrendingUp, AlertCircle, CheckCircle, Users, Percent } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Solo 401k Contribution Limits 2026 | Max Contribution",
@@ -152,6 +155,8 @@ export default function Solo401kContributionLimitsPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-solo-401k-contribution-limits" />
 
             {/* Two Types of Contributions */}
             <section className="py-16 bg-slate-100">
@@ -492,6 +497,8 @@ export default function Solo401kContributionLimitsPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/solo-401k-contribution-limits" />
 
             {/* CTA Section */}
             <section className="py-16 bg-slate-50">

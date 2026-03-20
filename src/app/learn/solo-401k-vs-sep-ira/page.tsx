@@ -4,6 +4,9 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { ArrowRight, CheckCircle, XCircle, Trophy, Users, DollarSign, Briefcase, Building2, Shield, Banknote } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Solo 401k vs SEP IRA: Which is Better for Self-Employed? (2026)",
@@ -162,6 +165,8 @@ export default function Solo401kVsSepIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-solo-401k-vs-sep-ira" />
 
             {/* Contribution Comparison by Income */}
             <section className="py-16 bg-slate-100">
@@ -478,6 +483,8 @@ export default function Solo401kVsSepIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/solo-401k-vs-sep-ira" />
 
             {/* CTA Section */}
             <section className="py-16 bg-slate-50">

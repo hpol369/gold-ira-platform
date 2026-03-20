@@ -23,6 +23,9 @@ import {
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Why Is My 401k Losing Money? Causes & Solutions",
@@ -154,6 +157,9 @@ export default function Why401kLosingMoneyPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-why-401k-losing-money" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -212,6 +218,8 @@ export default function Why401kLosingMoneyPage() {
                                 A 30-year-old has decades to recover from a market crash. A 60-year-old doesn&apos;t. If you&apos;re within 10 years of retirement, market volatility poses a much greater risk to your plans. This is called <Link href="/learn/sequence-of-returns-risk">sequence of returns risk</Link>.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-why-401k-losing-money" />
 
                         {/* Hidden Fees */}
                         <section id="hidden-fees" className="scroll-mt-32">
@@ -589,6 +597,8 @@ export default function Why401kLosingMoneyPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/why-401k-losing-money" />
 
                         <AuthorBox />
 

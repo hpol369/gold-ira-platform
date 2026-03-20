@@ -30,8 +30,17 @@ export async function POST(request: NextRequest) {
 
 async function handlePostback(request: NextRequest, method: string) {
   try {
-    // Get parameters from query string or body
     const url = new URL(request.url);
+
+    // Verify postback secret if configured
+    const secret = url.searchParams.get("secret");
+    const expectedSecret = process.env.POSTBACK_SECRET;
+    if (expectedSecret && secret !== expectedSecret) {
+      console.warn(`[POSTBACK] Unauthorized request from ${request.headers.get("x-forwarded-for")}`);
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
+    // Get parameters from query string or body
     let params: Record<string, string> = {};
 
     // Get query params

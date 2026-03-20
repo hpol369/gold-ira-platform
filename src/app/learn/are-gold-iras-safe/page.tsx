@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { ShieldCheck, Lock, AlertTriangle, Scale, Building, FileCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Are Gold IRAs Safe? Legitimacy, Risks & Protections (2026)",
@@ -116,6 +119,9 @@ export default function AreGoldIrasSafePage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-are-gold-iras-safe" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -158,6 +164,8 @@ export default function AreGoldIrasSafePage() {
                                 Gold doesn&apos;t work that way. It&apos;s not a claim on anything. It just <em>is</em>. There&apos;s no CEO who can run it into the ground, no board making bad decisions. Gold has been valuable for 5,000 years and it&apos;ll be valuable 5,000 years from now. That&apos;s why workers like Tom, a retired trucker from Indiana, moved part of his $580k savings to gold—to protect what he built, not gamble with it.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-are-gold-iras-safe" />
 
                         {/* Custodian Safety */}
                         <section id="custodian-safety" className="scroll-mt-32">
@@ -247,6 +255,8 @@ export default function AreGoldIrasSafePage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/are-gold-iras-safe" />
 
                         <AuthorBox />
 

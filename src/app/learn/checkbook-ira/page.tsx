@@ -15,6 +15,9 @@ import {
     AlertTriangle,
     FileText
 } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Checkbook IRA Guide 2026: What is Checkbook Control?",
@@ -90,6 +93,8 @@ export default function CheckbookIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-checkbook-ira" />
 
             {/* Main Content */}
             <section className="py-16 bg-white">
@@ -347,6 +352,8 @@ export default function CheckbookIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/checkbook-ira" />
 
             {/* Related */}
             <section className="py-16 bg-slate-50">

@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { AlertTriangle, TrendingDown, Clock, PieChart, ArrowRight, DollarSign, ShieldCheck, Target } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "10 Retirement Planning Mistakes That Destroy Wealth",
@@ -121,6 +124,9 @@ export default function RetirementPlanningMistakesPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-retirement-planning-mistakes" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -183,6 +189,8 @@ export default function RetirementPlanningMistakesPage() {
                                 <strong>For you:</strong> If you're 55+ and have $500k or more saved, you're not "behind"—you're ahead of most Americans. Your focus now should be protecting what you have, not chasing returns.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-retirement-planning-mistakes" />
 
                         {/* 2. Over-Concentration */}
                         <section id="concentration" className="scroll-mt-32">
@@ -444,6 +452,8 @@ export default function RetirementPlanningMistakesPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/retirement-planning-mistakes" />
 
                         <AuthorBox />
 

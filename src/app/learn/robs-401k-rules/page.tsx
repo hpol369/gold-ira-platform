@@ -17,6 +17,9 @@ import {
     Landmark
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "ROBS 401k Rules 2026: IRS Compliance Guide",
@@ -106,6 +109,14 @@ export default function Robs401kRulesPage() {
                         </div>
                     </Container>
                 </section>
+
+                <div className="py-8 bg-white">
+                    <Container>
+                        <div className="max-w-sm mx-auto lg:mx-0">
+                            <SidebarAuditWidget trackSource="learn-robs-401k-rules" />
+                        </div>
+                    </Container>
+                </div>
 
                 {/* Key Requirements */}
                 <section className="py-16 bg-slate-50">
@@ -236,6 +247,8 @@ export default function Robs401kRulesPage() {
                         </div>
                     </Container>
                 </section>
+
+                <InContentCTA trackSource="learn-robs-401k-rules" />
 
                 {/* Allowed Activities */}
                 <section className="py-16 bg-slate-50">
@@ -441,6 +454,8 @@ export default function Robs401kRulesPage() {
                         </div>
                     </Container>
                 </section>
+
+                <AutoRelatedContent currentUrl="/learn/robs-401k-rules" />
 
                 {/* Related Content */}
                 <section className="py-12 bg-slate-50">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Container } from "@/components/ui/Container";
 import {
   Lock,
@@ -20,7 +20,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-const ADMIN_PIN = "6903";
+// PIN verified server-side via /api/admin/auth
 
 // Types for API response
 interface OverviewData {
@@ -212,17 +212,22 @@ export default function DashboardPage() {
   const [data, setData] = useState<DashboardData | null>(null);
   const [loading, setLoading] = useState(true);
   const [lastRefresh, setLastRefresh] = useState<Date | null>(null);
+  const pinRef = useRef<string>("");
 
   useEffect(() => {
     const saved = sessionStorage.getItem("admin_auth");
-    if (saved === "true") setIsAuthenticated(true);
+    const savedPin = sessionStorage.getItem("admin_pin");
+    if (saved === "true" && savedPin) {
+      pinRef.current = savedPin;
+      setIsAuthenticated(true);
+    }
   }, []);
 
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
       const res = await fetch("/api/admin/stats", {
-        headers: { "x-admin-pin": ADMIN_PIN },
+        headers: { "x-admin-pin": pinRef.current },
       });
       const json = await res.json();
       if (json.success) {
@@ -240,13 +245,25 @@ export default function DashboardPage() {
     if (isAuthenticated) fetchData();
   }, [isAuthenticated, fetchData]);
 
-  function handlePinSubmit(e: React.FormEvent) {
+  async function handlePinSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (pin === ADMIN_PIN) {
-      setIsAuthenticated(true);
-      sessionStorage.setItem("admin_auth", "true");
-      setPinError(false);
-    } else {
+    try {
+      const res = await fetch("/api/admin/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pin }),
+      });
+      if (res.ok) {
+        pinRef.current = pin;
+        setIsAuthenticated(true);
+        sessionStorage.setItem("admin_auth", "true");
+        sessionStorage.setItem("admin_pin", pin);
+        setPinError(false);
+      } else {
+        setPinError(true);
+        setPin("");
+      }
+    } catch {
       setPinError(true);
       setPin("");
     }

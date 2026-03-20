@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { AlertTriangle, FileText, Scale, Building, ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Checkbook IRA Rules: What You Need to Know (2026 Guide)",
@@ -123,6 +126,9 @@ export default function CheckbookIraRulesPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-checkbook-ira-rules" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -174,6 +180,8 @@ export default function CheckbookIraRulesPage() {
                                 The appeal is obvious: instead of submitting paperwork to your custodian every time you want to make an investment, you just write a check. Faster, more flexible.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-checkbook-ira-rules" />
 
                         {/* Gold IRA Problems */}
                         <section id="gold-ira-problems" className="scroll-mt-32">
@@ -317,6 +325,8 @@ export default function CheckbookIraRulesPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/checkbook-ira-rules" />
 
                         <AuthorBox />
 

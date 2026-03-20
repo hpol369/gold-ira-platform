@@ -17,7 +17,7 @@ import {
   ExternalLink
 } from "lucide-react";
 
-const ADMIN_PIN = "6903";
+// PIN verified server-side via /api/admin/auth
 
 interface Conversion {
   type: "lead_capture" | "qualified_lead" | "trade_complete";
@@ -55,13 +55,24 @@ export default function ConversionsPage() {
     }
   }, [isAuthenticated]);
 
-  function handlePinSubmit(e: React.FormEvent) {
+  async function handlePinSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (pin === ADMIN_PIN) {
-      setIsAuthenticated(true);
-      sessionStorage.setItem("admin_auth", "true");
-      setPinError(false);
-    } else {
+    try {
+      const res = await fetch("/api/admin/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pin }),
+      });
+      if (res.ok) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem("admin_auth", "true");
+        sessionStorage.setItem("admin_pin", pin);
+        setPinError(false);
+      } else {
+        setPinError(true);
+        setPin("");
+      }
+    } catch {
       setPinError(true);
       setPin("");
     }

@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { TrendingDown, ShieldCheck, BarChart3, AlertTriangle, ArrowRight, Coins, PieChart, History } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Stock Market Crash Protection for Your Retirement",
@@ -130,6 +133,9 @@ export default function StockMarketCrashProtectionPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-stock-market-crash-protection" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -204,6 +210,8 @@ export default function StockMarketCrashProtectionPage() {
                                 A 50% loss requires a 100% gain just to break even. If your $500,000 portfolio drops to $250,000, you need to double your money to get back to where you started. For retirees withdrawing funds, recovery may never happen.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-stock-market-crash-protection" />
 
                         {/* Retirement Risk */}
                         <section id="retirement-risk" className="scroll-mt-32">
@@ -482,6 +490,8 @@ export default function StockMarketCrashProtectionPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/stock-market-crash-protection" />
 
                         <AuthorBox />
 

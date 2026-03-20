@@ -24,6 +24,9 @@ import {
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Is It Too Late to Save for Retirement? Strategies",
@@ -158,6 +161,9 @@ export default function TooLateToSaveRetirementPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-too-late-to-save-retirement" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -263,6 +269,8 @@ export default function TooLateToSaveRetirementPage() {
                                 <strong>Action step:</strong> Log into your 401(k) or HR portal today and increase your contribution percentage. Even an extra 2-3% helps. If you can&apos;t hit the max, contribute what you can and increase it every time you get a raise.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-too-late-to-save-retirement" />
 
                         {/* Social Security Timing */}
                         <section id="social-security" className="scroll-mt-32">
@@ -737,6 +745,8 @@ export default function TooLateToSaveRetirementPage() {
                                 <p className="mt-4 text-sm text-gray-400">No pressure. No commitment. Just information to help you decide.</p>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/too-late-to-save-retirement" />
 
                         <AuthorBox />
 

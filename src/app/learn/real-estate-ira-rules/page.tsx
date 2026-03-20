@@ -15,6 +15,9 @@ import {
     Shield
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Real Estate IRA Rules 2026: IRS Requirements Guide",
@@ -63,6 +66,14 @@ export default function RealEstateIraRulesPage() {
                     </div>
                 </Container>
             </section>
+
+            <div className="py-8 bg-white">
+                <Container>
+                    <div className="max-w-sm mx-auto lg:mx-0">
+                        <SidebarAuditWidget trackSource="learn-real-estate-ira-rules" />
+                    </div>
+                </Container>
+            </div>
 
             {/* Prohibited Transactions */}
             <section className="py-16 bg-slate-50">
@@ -171,6 +182,8 @@ export default function RealEstateIraRulesPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-real-estate-ira-rules" />
 
             {/* What You CAN Do */}
             <section className="py-16 bg-slate-50">
@@ -350,6 +363,8 @@ export default function RealEstateIraRulesPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/real-estate-ira-rules" />
 
             {/* Related Content */}
             <section className="py-12 bg-slate-50">

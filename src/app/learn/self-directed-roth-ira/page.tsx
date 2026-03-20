@@ -15,6 +15,9 @@ import {
     Home,
     Lock
 } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Self-Directed Roth IRA Guide 2026: Tax-Free Alternative Investments",
@@ -100,6 +103,8 @@ export default function SelfDirectedRothIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-self-directed-roth-ira" />
 
             {/* Main Content */}
             <section className="py-16 bg-white">
@@ -322,6 +327,8 @@ export default function SelfDirectedRothIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/self-directed-roth-ira" />
 
             {/* Related */}
             <section className="py-16 bg-slate-50">

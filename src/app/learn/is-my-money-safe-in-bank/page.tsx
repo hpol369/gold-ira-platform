@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { Building2, ShieldCheck, AlertTriangle, DollarSign, ArrowRight, Lock, TrendingDown, Coins } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Is My Money Safe in the Bank? FDIC Limits Guide",
@@ -117,6 +120,9 @@ export default function IsMyMoneySafeInBankPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-is-my-money-safe-in-bank" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -182,6 +188,8 @@ export default function IsMyMoneySafeInBankPage() {
                                 If you have $500,000 in one bank, only $250,000 is insured. The rest is at risk if that bank fails. However, if you spread $250,000 across two different banks, you&apos;re fully covered at each.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-is-my-money-safe-in-bank" />
 
                         {/* Real Risks */}
                         <section id="risks" className="scroll-mt-32">
@@ -466,6 +474,8 @@ export default function IsMyMoneySafeInBankPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/is-my-money-safe-in-bank" />
 
                         <AuthorBox />
 

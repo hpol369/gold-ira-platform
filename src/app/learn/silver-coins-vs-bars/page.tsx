@@ -5,6 +5,9 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Coins, SquareStack, Scale, CheckCircle2, AlertTriangle, ArrowRight, DollarSign, ShieldCheck, TrendingUp } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Silver Coins vs Bars: Which is Better for Your IRA? (2026)",
@@ -275,6 +278,8 @@ export default function SilverCoinsVsBarsPage() {
                     </Container>
                 </section>
 
+                <InContentCTA trackSource="learn-silver-coins-vs-bars" />
+
                 {/* Detailed Comparison Table */}
                 <section className="py-16 bg-slate-50">
                     <Container>
@@ -438,6 +443,8 @@ export default function SilverCoinsVsBarsPage() {
                         </div>
                     </Container>
                 </section>
+
+                <AutoRelatedContent currentUrl="/learn/silver-coins-vs-bars" />
 
                 {/* Related */}
                 <section className="py-16 bg-slate-50">

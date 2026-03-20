@@ -13,8 +13,8 @@ import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata = createPageMetadata({
-    title: "Rich Dad Retirement 2026: Complete Beginner's Guide to Gold IRAs",
-    description: "The definitive gold IRA guide for 2026. Learn what a gold IRA is, how it works, tax benefits, fees, and how to open one. Updated for current IRS rules.",
+    title: "How to Open a Gold IRA in 2026: Step-by-Step Guide",
+    description: "Step-by-step guide to opening a Gold IRA in 2026. Learn how to choose a custodian, fund your account, select IRS-approved metals, and avoid common mistakes.",
     url: "https://www.richdadretirement.com/guide/gold-ira-guide",
     type: "article",
     imageAlt: "Complete Gold IRA Guide for 2026 - Rich Dad Retirement",
@@ -133,7 +133,7 @@ export default function GoldIraGuidePage() {
                             Updated for 2026 Tax Rules
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#000080]">
-                            The Complete Rich Dad Retirement for 2026
+                            How to Open a Gold IRA in 2026: Step-by-Step
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
                             Everything you need to know about protecting your retirement with physical gold—from tax advantages to choosing the right custodian.

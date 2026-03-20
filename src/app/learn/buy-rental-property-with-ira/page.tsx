@@ -16,6 +16,9 @@ import {
     Calculator
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Buy Rental Property with Your IRA: 2026 Guide",
@@ -213,6 +216,8 @@ export default function BuyRentalPropertyWithIraPage() {
                 </Container>
             </section>
 
+            <InContentCTA trackSource="learn-buy-rental-property-with-ira" />
+
             {/* Financing Options */}
             <section className="py-16 bg-white">
                 <Container>
@@ -355,6 +360,8 @@ export default function BuyRentalPropertyWithIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/buy-rental-property-with-ira" />
 
             {/* Related Content */}
             <section className="py-12 bg-slate-50">

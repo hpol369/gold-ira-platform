@@ -16,6 +16,9 @@ import {
     Clock,
     Coins
 } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "What is a Bitcoin IRA? Complete Guide to Bitcoin Retirement Accounts (2026)",
@@ -93,6 +96,8 @@ export default function BitcoinIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-bitcoin-ira" />
 
             {/* Main Content */}
             <section className="py-16 bg-white">
@@ -327,6 +332,8 @@ export default function BitcoinIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/bitcoin-ira" />
 
             {/* Related Resources */}
             <section className="py-16 bg-slate-50">

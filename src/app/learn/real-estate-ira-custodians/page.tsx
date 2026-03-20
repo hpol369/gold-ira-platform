@@ -14,6 +14,9 @@ import {
     Clock
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Best Real Estate IRA Custodians 2026: Top Providers",
@@ -121,6 +124,14 @@ export default function RealEstateIraCustodiansPage() {
                     </div>
                 </Container>
             </section>
+
+            <div className="py-8 bg-white">
+                <Container>
+                    <div className="max-w-sm mx-auto lg:mx-0">
+                        <SidebarAuditWidget trackSource="learn-real-estate-ira-custodians" />
+                    </div>
+                </Container>
+            </div>
 
             {/* Quick Comparison Table */}
             <section className="py-12 bg-slate-50">
@@ -270,6 +281,8 @@ export default function RealEstateIraCustodiansPage() {
                 </Container>
             </section>
 
+            <InContentCTA trackSource="learn-real-estate-ira-custodians" />
+
             {/* What to Look For */}
             <section className="py-12 bg-slate-50">
                 <Container>
@@ -353,6 +366,8 @@ export default function RealEstateIraCustodiansPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/real-estate-ira-custodians" />
 
             {/* Related Content */}
             <section className="py-12 bg-slate-50">

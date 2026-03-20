@@ -9,6 +9,9 @@ import { Metadata } from "next";
 import { TrendingUp, ShieldCheck, Lock, DollarSign, Users, ArrowRight, BarChart3, Globe } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "7 Key Benefits of a Gold IRA in 2026 | Why Investors Choose Gold",
@@ -134,6 +137,9 @@ export default function GoldIraBenefitsPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-gold-ira-benefits" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -193,6 +199,8 @@ export default function GoldIraBenefitsPage() {
                                 A Gold IRA locks in your purchasing power. When the cost of living goes up, the price of gold typically rises proportionally, preserving your wealth in real terms.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-gold-ira-benefits" />
 
                         {/* Benefit 2: True Diversification */}
                         <section id="diversification" className="scroll-mt-32">
@@ -467,6 +475,8 @@ export default function GoldIraBenefitsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/gold-ira-benefits" />
 
                         <AuthorBox />
 
