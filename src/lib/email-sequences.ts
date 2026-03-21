@@ -297,18 +297,18 @@ const highIntent: Sequence = {
   description: "Supports Augusta call for $50k+ leads — NEVER uses Augusta affiliate links",
   emails: [
     // === THE AUGUSTA SUPPORT WINDOW (Hours 0-24) ===
-    // Step 0: Immediate — guide + "save this number" callout
+    // Step 0: Immediate — guide + expect-a-call callout
     {
       step: 0,
       delayDays: 0,
-      subject: "{{firstName}}, your guide + save this number",
+      subject: "{{firstName}}, your guide + what happens next",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "Augusta calls within 24hrs. Save their number so you don't miss it.",
+        preheader: "Augusta will call within 24hrs. 15 minutes, zero obligation.",
         body: `
           ${p(`${firstName || "Hey"}, you're in. Two things are happening right now:`)}
-          ${callout(`<strong>&#128222; SAVE THIS NUMBER:</strong> Augusta will call from <strong>(844) 405-3908</strong> within 24 hours. Save it to your phone as "Augusta Precious Metals" so you don't miss it. The call takes 15 minutes and there's zero obligation.`, "warning")}
+          ${callout(`<strong>&#128222; EXPECT A CALL:</strong> An Augusta Precious Metals specialist will call you within 24 hours. It's a 15-minute educational call — zero obligation, zero pressure. <strong>Please answer even if you don't recognize the number.</strong>`, "warning")}
           ${h2("1. Your Free Guide")}
           ${p("Download the 2026 Gold IRA Protection Guide below. Short on time? Read Chapter 10 first — it has the 10 questions to ask your specialist.")}
           ${h2("2. Quick Prep (2 minutes)")}
@@ -336,7 +336,7 @@ const highIntent: Sequence = {
         preheader: "No surprises. Here's the exact 15-minute agenda.",
         body: `
           ${p(`${firstName || "Hey"}, your Augusta specialist will be reaching out soon. Here's exactly what the call looks like — no surprises:`)}
-          ${callout(`<strong>Remember:</strong> Augusta calls from <strong>(844) 405-3908</strong>. If you see that number, pick up — it's your specialist.`, "info")}
+          ${callout(`<strong>Heads up:</strong> The call may come from a number you don't recognize. If you get a call in the next 24 hours and you're not sure — <strong>pick up.</strong> It's likely your Augusta specialist.`, "info")}
           ${h2("Minute 1-3: Your Situation")}
           ${p("They'll ask about your savings — how much, where it's held, when you're planning to retire. They don't need account numbers.")}
           ${h2("Minute 4-8: Education")}
@@ -360,12 +360,12 @@ const highIntent: Sequence = {
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: `Look for (844) 405-3908 on your caller ID.`,
+        preheader: "If you get an unfamiliar call today, pick up — it's your specialist.",
         body: `
           ${p(`Quick reminder, ${firstName || "hey"} — Augusta's team may reach out today.`)}
-          ${callout(`Look for <strong>(844) 405-3908</strong> on your caller ID. It's a 15-minute educational call, not a sales pitch.`, "info")}
+          ${callout(`If you get a call from a number you don't recognize today — <strong>pick up.</strong> It's a 15-minute educational call, not a sales pitch. They won't leave you hanging on hold or try to sell you anything.`, "info")}
           ${p("If you miss it, no stress — they'll try again. Or you can call them directly anytime:")}
-          ${p(`<strong><a href="tel:8444053908" style="color:#B22234;text-decoration:underline;font-size:18px;">&#128222; (844) 405-3908</a></strong><br><span style="font-size:13px;color:#64748b;">Ask for the Gold IRA education team</span>`)}
+          ${p(`<strong><a href="tel:${AUGUSTA_PHONE.replace(/-/g, "")}" style="color:#B22234;text-decoration:underline;font-size:18px;">&#128222; ${AUGUSTA_PHONE}</a></strong><br><span style="font-size:13px;color:#64748b;">Ask for the Gold IRA education team</span>`)}
         `,
         ctaText: "Review Your Guide →",
         ctaUrl: GUIDE_PDF,
