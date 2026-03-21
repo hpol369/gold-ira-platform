@@ -105,13 +105,65 @@ export async function POST(request: NextRequest) {
     // Deduplication: check if email already exists
     const existingLead = await getLeadByEmail(body.email);
     if (existingLead) {
-      console.log("[LEAD] Duplicate email detected:", body.email);
-      // Return success to user but don't create duplicate
+      // If already sent to Augusta, truly a duplicate — don't resubmit
+      if (existingLead.status === "sent_to_augusta" || existingLead.status === "contacted" || existingLead.status === "qualified" || existingLead.status === "converted") {
+        console.log("[LEAD] Already processed:", body.email, existingLead.status);
+        return NextResponse.json({
+          success: true,
+          message: "Lead received",
+          leadId: existingLead.id,
+          augustaSubmitted: true,
+        });
+      }
+
+      // Guide-downloader or newsletter sub upgrading to full lead — enrich and continue
+      console.log("[LEAD] Upgrading existing lead:", body.email, existingLead.status);
+      const enrichUpdates: Partial<Lead> = {};
+      if (body.phone && !existingLead.phone) enrichUpdates.phone = normalizePhone(body.phone);
+      if (body.lastName && !existingLead.last_name) enrichUpdates.last_name = body.lastName;
+      if (body.savingsTier) enrichUpdates.savings_tier = body.savingsTier;
+      if (body.concern) enrichUpdates.concern = body.concern;
+      if (body.qualificationTier) enrichUpdates.qualification_tier = body.qualificationTier;
+      if (body.routedTo) enrichUpdates.routed_to = body.routedTo;
+      if (body.source) enrichUpdates.source = body.source;
+
+      if (Object.keys(enrichUpdates).length > 0) {
+        await updateLead(existingLead.id!, enrichUpdates);
+        Object.assign(existingLead, enrichUpdates);
+      }
+
+      // Upgrade their email sequence
+      try {
+        const { upgradeSequence } = await import("@/lib/email-queue");
+        const { getSequenceForContext } = await import("@/lib/email-sequences");
+        const sequenceId = getSequenceForContext("lead-form", body.savingsTier);
+        await upgradeSequence(body.email, sequenceId, body.source, body.firstName);
+        console.log(`[LEAD] Upgraded ${body.email} sequence to ${sequenceId}`);
+      } catch (err) {
+        console.error("[LEAD] Sequence upgrade failed:", err);
+      }
+
+      // Submit to Augusta if high-intent and not already submitted
+      if (!body.skipAugusta && existingLead.phone) {
+        const augustaSuccess = await submitToAugusta(existingLead);
+        if (augustaSuccess) {
+          await updateLeadStatus(existingLead.id!, "sent_to_augusta", {
+            augusta_submitted_at: new Date().toISOString(),
+          });
+        }
+        return NextResponse.json({
+          success: true,
+          message: augustaSuccess ? "Lead submitted to Augusta" : "Lead captured - Augusta submission pending",
+          leadId: existingLead.id,
+          augustaSubmitted: augustaSuccess,
+        });
+      }
+
       return NextResponse.json({
         success: true,
-        message: "Lead received",
+        message: "Lead updated",
         leadId: existingLead.id,
-        augustaSubmitted: existingLead.status === "sent_to_augusta",
+        augustaSubmitted: false,
       });
     }
 
