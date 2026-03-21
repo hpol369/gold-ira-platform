@@ -8,6 +8,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Button } from "@/components/ui/Button";
 import { KeyTakeaways } from "@/components/learn/KeyTakeaways";
 import { TableOfContents } from "@/components/guide/TableOfContents";
@@ -451,6 +452,12 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
         variant="banner"
         trackSource={`federal-retirement-${slug}`}
       />
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl={`/federal-retirement/${slug}`} />
+        </Container>
+      </section>
 
       <Footer />
     </main>

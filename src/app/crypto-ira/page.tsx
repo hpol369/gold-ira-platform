@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import {
     ArrowRight,
     Shield,
@@ -472,6 +473,12 @@ export default function CryptoIRAPage() {
                         subheadline="Many investors combine crypto IRAs with precious metals for true diversification. Gold offers stability when crypto markets are volatile."
                         trackSource="crypto-ira"
                     />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/crypto-ira" />
                 </Container>
             </section>
 

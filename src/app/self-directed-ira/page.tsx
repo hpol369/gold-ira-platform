@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import {
     ArrowRight,
     Shield,
@@ -478,6 +479,12 @@ export default function SelfDirectedIRAPage() {
                         subheadline="Self-directed IRAs give you control over your investments. Many investors choose to include precious metals for diversification and protection."
                         trackSource="self-directed-ira"
                     />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/self-directed-ira" />
                 </Container>
             </section>
 

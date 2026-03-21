@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Metadata } from "next";
 import { TrendingUp, TrendingDown, DollarSign, Calendar, ArrowRight, BarChart3, Target, Clock, HelpCircle, Zap } from "lucide-react";
 import Link from "next/link";
@@ -376,6 +377,12 @@ export default function SilverPriceHubPage() {
             <section className="py-16 bg-slate-50">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="silver-price-hub" />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/silver-price" />
                 </Container>
             </section>
         </main>

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { GoldIRACalculator } from "@/components/tools/GoldIRACalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
@@ -70,6 +71,11 @@ export default function GoldIRACalculatorPage() {
             subheadline="See how gold can diversify your retirement savings and protect against market volatility."
             trackSource="tools-gold-ira-calculator"
           />
+        </Container>
+      </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/gold-ira-calculator" />
         </Container>
       </section>
       <Footer />

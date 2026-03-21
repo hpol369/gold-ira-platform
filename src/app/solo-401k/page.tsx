@@ -20,6 +20,7 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Solo 401k Guide 2026: Best Plan for Self-Employed",
@@ -599,6 +600,11 @@ export default function Solo401kPage() {
                             subheadline="Many self-employed investors add precious metals to their Solo 401k for diversification and protection against market volatility."
                             trackSource="solo-401k"
                         />
+                    </Container>
+                </section>
+                <section className="py-12 bg-white">
+                    <Container>
+                        <AutoRelatedContent currentUrl="/solo-401k" />
                     </Container>
                 </section>
             </main>

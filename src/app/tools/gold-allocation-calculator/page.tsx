@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { GoldAllocationCalculator } from "@/components/tools/GoldAllocationCalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -66,6 +67,11 @@ export default function GoldAllocationCalculatorPage() {
             subheadline="Learn how Augusta Precious Metals can help you add the right amount of gold to your retirement portfolio."
             trackSource="tools-gold-allocation-calculator"
           />
+        </Container>
+      </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/gold-allocation-calculator" />
         </Container>
       </section>
       <Footer />

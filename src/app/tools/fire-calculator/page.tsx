@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { FIRECalculator } from "@/components/tools/FIRECalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -117,6 +118,11 @@ export default function FIRECalculatorPage() {
             subheadline="Gold can provide stability during market downturns and help protect your path to financial independence."
             trackSource="tools-fire-calculator"
           />
+        </Container>
+      </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/fire-calculator" />
         </Container>
       </section>
       <Footer />

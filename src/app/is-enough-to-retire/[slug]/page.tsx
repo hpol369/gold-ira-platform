@@ -8,6 +8,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
@@ -590,6 +591,12 @@ export default async function RetirementAmountSubPage({
           />
         </div>
       </Container>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl={`/is-enough-to-retire/${slug}`} />
+        </Container>
+      </section>
 
       <Footer />
     </main>

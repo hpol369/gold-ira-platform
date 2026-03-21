@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Navbar } from "@/components/layout/Navbar";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
@@ -1191,6 +1192,12 @@ export default function RetirementCalculatorPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/retirement-calculator" />
         </Container>
       </section>
 

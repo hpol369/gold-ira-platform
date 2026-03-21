@@ -10,6 +10,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 import {
   Calculator,
@@ -439,6 +440,12 @@ export default function IsEnoughToRetirePage() {
           className="mb-16 max-w-3xl"
         />
       </Container>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/is-enough-to-retire" />
+        </Container>
+      </section>
 
       <Footer />
     </main>

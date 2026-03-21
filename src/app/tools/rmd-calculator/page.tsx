@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { RMDCalculator } from "@/components/tools/RMDCalculator";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -419,6 +420,12 @@ export default function RMDCalculatorPage() {
             subheadline="You have to take withdrawals - but you don't have to watch your balance shrink from market crashes. A Gold IRA can help preserve what's left."
             trackSource="tools-rmd-calculator"
           />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/rmd-calculator" />
         </Container>
       </section>
 

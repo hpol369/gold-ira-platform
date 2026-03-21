@@ -12,6 +12,7 @@ import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { getAllFederalRetirementArticles } from "@/data/federal-retirement";
 import {
   ArrowRight,
@@ -468,6 +469,12 @@ export default function FederalRetirementPage() {
           <div className="max-w-3xl mx-auto">
             <FAQSection faqs={hubFAQs} title="Federal Retirement & Gold IRA FAQs" />
           </div>
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/federal-retirement" />
         </Container>
       </section>
 

@@ -13,6 +13,7 @@ import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 
@@ -327,6 +328,12 @@ export default function BestGoldIraCompaniesPage() {
                     />
                 </Container>
             </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/best-gold-ira-companies" />
+                </Container>
+            </section>
+
             <Footer />
         </main>
     );

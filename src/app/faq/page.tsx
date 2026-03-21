@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { faqs, faqCategories, getFAQsByCategory } from "@/config/faqs";
 import {
   HelpCircle,
@@ -306,6 +307,12 @@ export default function FAQPage() {
               </Link>
             </div>
           </div>
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/faq" />
         </Container>
       </section>
 

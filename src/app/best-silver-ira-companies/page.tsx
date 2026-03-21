@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { Sparkles, Trophy, Star, CheckCircle2, ArrowRight, Coins, TrendingUp, Shield, Award } from "lucide-react";
 import { Button } from "@/components/ui/Button";
@@ -488,6 +489,11 @@ export default function BestSilverIraCompaniesPage() {
                         className="max-w-3xl"
                         includeSchema={false}
                     />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/best-silver-ira-companies" />
                 </Container>
             </section>
             <Footer />

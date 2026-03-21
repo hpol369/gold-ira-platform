@@ -11,6 +11,7 @@ import { ComparisonBuilder } from "@/components/compare/ComparisonBuilder";
 import { assets } from "@/data/assets";
 import { Scale, ArrowRight, Star, Award, TrendingUp, BarChart3 } from "lucide-react";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
@@ -505,6 +506,12 @@ export default function ComparePage() {
                     />
                 </Container>
             </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/compare" />
+        </Container>
+      </section>
+
       <Footer />
     </main>
   );

@@ -11,6 +11,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 import { getAllProviders, getAllAccountTypes, getProvidersByType } from "@/data/rollovers";
@@ -427,6 +428,12 @@ export default function RolloverPage() {
             className="max-w-3xl"
             includeSchema={false}
           />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/rollover" />
         </Container>
       </section>
 

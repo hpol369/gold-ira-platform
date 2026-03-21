@@ -4,6 +4,8 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
+import { Container } from '@/components/ui/Container';
+import { AutoRelatedContent } from '@/components/content/RelatedContent';
 import { Footer } from '@/components/layout/Footer';
 import { AugustaCTA } from '@/components/cta/AugustaCTA';
 import { CalculatorCTA } from '@/components/widgets/CalculatorCTA';
@@ -754,6 +756,11 @@ export default function SocialSecurityCalculatorPage() {
               </Link>
             </div>
           </div>
+        </section>
+        <section className="py-12 bg-white">
+          <Container>
+            <AutoRelatedContent currentUrl="/tools/social-security-calculator" />
+          </Container>
         </section>
       </main>
       <Footer />

@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
@@ -193,6 +194,11 @@ export default function NobleGoldReviewPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/noble-gold")} title="Noble Gold FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/reviews/noble-gold" />
                 </Container>
             </section>
             <Footer />

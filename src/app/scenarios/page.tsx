@@ -7,6 +7,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Button } from "@/components/ui/Button";
 import { scenarios } from "@/data/scenarios";
 import {
@@ -245,6 +246,12 @@ export default function ScenariosPage() {
             subheadline="Teachers, nurses, steelworkers, truckers - people who spent their careers building something real. They moved part of their retirement into gold before the next 2008 hits. Augusta Precious Metals specializes in helping folks like you do it right."
             trackSource="scenarios-hub"
           />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/scenarios" />
         </Container>
       </section>
 

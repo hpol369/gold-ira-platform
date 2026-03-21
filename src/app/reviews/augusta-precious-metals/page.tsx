@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
@@ -213,6 +214,11 @@ export default function AugustaReviewPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/augusta-precious-metals")} title="Augusta Precious Metals FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/reviews/augusta-precious-metals" />
                 </Container>
             </section>
             <Footer />

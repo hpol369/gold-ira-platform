@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { createPageMetadata } from "@/lib/metadata";
 import {
@@ -496,6 +497,12 @@ export default function SilverProductsHubPage() {
             linkContext="silver"
             trackSource="silver-products-hub"
           />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/silver-products" />
         </Container>
       </section>
 

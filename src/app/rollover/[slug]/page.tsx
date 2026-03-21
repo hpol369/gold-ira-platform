@@ -8,6 +8,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { RolloverSteps, TipsWarnings, RolloverTimeline } from "@/components/rollover/RolloverSteps";
 import { ProviderCard } from "@/components/rollover/ProviderCard";
 import {
@@ -515,6 +516,12 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
         </Container>
       </section>
 
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl={`/rollover/${accountType.slug}`} />
+        </Container>
+      </section>
+
       <Footer />
     </main>
   );
@@ -813,6 +820,12 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
             subheadline={`After years of saving with ${provider.name}, your retirement deserves real protection. Augusta handles everything—they call ${provider.name}, complete the paperwork, and make sure your money is safe every step of the way.`}
             trackSource={`rollover-${provider.slug}`}
           />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl={`/rollover/${provider.slug}`} />
         </Container>
       </section>
 

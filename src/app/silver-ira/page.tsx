@@ -20,6 +20,7 @@ import {
 import { Button } from "@/components/ui/Button";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata = createPageMetadata({
     title: "Silver IRA Hub: Complete Guide to Silver IRAs (2026)",
@@ -346,6 +347,12 @@ export default function SilverIraHubPage() {
                         trackSource="silver-ira-hub"
                         linkContext="silver"
                     />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/silver-ira" />
                 </Container>
             </section>
 

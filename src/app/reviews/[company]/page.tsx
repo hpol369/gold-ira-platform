@@ -13,6 +13,7 @@ import { SingleCompanyFees } from "@/components/reviews/FeesTable";
 import { VerdictSection } from "@/components/reviews/VerdictSection";
 import { BestForSection } from "@/components/reviews/BestForSection";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import {
   getCompanyBySlug,
@@ -354,6 +355,11 @@ export default async function CompanyReviewPage({ params }: Props) {
           </section>
         )}
 
+        <section className="py-12 bg-white">
+          <Container>
+            <AutoRelatedContent currentUrl={`/reviews/${slug}`} />
+          </Container>
+        </section>
         <Footer />
         <StickyMobileCTA companySlug={company.slug} companyName={company.name} />
       </main>
