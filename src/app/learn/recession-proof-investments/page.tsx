@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { ShieldCheck, TrendingDown, Coins, Building2, Droplets, Pill, ArrowRight, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -101,6 +103,11 @@ export default function RecessionProofInvestmentsPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Recession-Proof Investments", url: "/learn/recession-proof-investments" }
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
@@ -117,6 +124,21 @@ export default function RecessionProofInvestmentsPage() {
                     </div>
                 </Container>
             </header>
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The 7 most recession-proof investments are gold and precious metals, Treasury bonds, utility stocks, healthcare stocks, consumer staples, cash equivalents, and essential REITs. During the 2008 recession, gold rose 25% while the S&P 500 fell 37%, making it the strongest defensive asset for retirement portfolios."
+                        keyFacts={[
+                            "Gold gained 25% during the 2008 Great Recession while stocks dropped 37%",
+                            "Treasury bonds rise when the Fed cuts rates during economic downturns",
+                            "Utilities and healthcare stocks have inelastic demand — people need power and medicine regardless",
+                            "A sample defensive portfolio: 15% gold, 20% bonds, 35% defensive stocks, 15% cash, 15% growth"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

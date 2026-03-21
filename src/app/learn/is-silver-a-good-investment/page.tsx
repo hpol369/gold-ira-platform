@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { TrendingUp, Factory, Coins, ShieldCheck, Scale, ArrowRight, Sparkles, BarChart3, Zap } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -121,6 +123,11 @@ export default function IsSilverGoodInvestmentPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Is Silver a Good Investment?", url: "/learn/is-silver-a-good-investment" }
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
@@ -137,6 +144,21 @@ export default function IsSilverGoodInvestmentPage() {
                     </div>
                 </Container>
             </header>
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Silver is a strong investment in 2026 due to surging industrial demand from solar panels, EVs, and electronics, combined with a historically elevated gold-to-silver ratio above 80:1 (long-term average is 50:1). Silver offers both monetary store-of-value properties like gold and critical industrial applications that drive price growth."
+                        keyFacts={[
+                            "Over 50% of silver demand is industrial — solar panels alone consumed 140M+ ounces in 2023",
+                            "The gold-to-silver ratio above 80:1 suggests silver may be historically undervalued",
+                            "Silver rose 47% in 2020 and has outperformed gold in every major precious metals bull market",
+                            "A Silver IRA lets you hold physical silver with tax-deferred or tax-free growth"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

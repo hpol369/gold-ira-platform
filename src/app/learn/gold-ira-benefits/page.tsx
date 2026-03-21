@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { TrendingUp, ShieldCheck, Lock, DollarSign, Users, ArrowRight, BarChart3, Globe } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -115,6 +117,11 @@ export default function GoldIraBenefitsPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Gold IRA Benefits", url: "/learn/gold-ira-benefits" }
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
@@ -131,6 +138,21 @@ export default function GoldIraBenefitsPage() {
                     </div>
                 </Container>
             </header>
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The top benefits of a Gold IRA include inflation protection, true portfolio diversification, tax-deferred or tax-free growth, and direct ownership of physical gold. During the 2008 crash, gold rose 5.5% while stocks fell 37%, and you can roll over existing 401(k) funds into gold tax-free."
+                        keyFacts={[
+                            "Gold has maintained purchasing power for 5,000+ years while the dollar lost 96% since 1913",
+                            "A 10-20% gold allocation can reduce portfolio volatility by 20-30%",
+                            "Roth Gold IRAs offer tax-free withdrawals and no required minimum distributions",
+                            "Central banks bought record amounts of gold in 2022-2024 — a strong institutional signal"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { TrendingDown, ShieldCheck, BarChart3, AlertTriangle, ArrowRight, Coins, PieChart, History } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -111,6 +113,11 @@ export default function StockMarketCrashProtectionPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Stock Market Crash Protection", url: "/learn/stock-market-crash-protection" }
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
@@ -127,6 +134,21 @@ export default function StockMarketCrashProtectionPage() {
                     </div>
                 </Container>
             </header>
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="To protect your retirement from a stock market crash, diversify 10-20% of your portfolio into non-correlated assets like physical gold, maintain 1-2 years of cash reserves, and reduce stock exposure as you approach retirement. Gold rose 5.5% during the 2008 crash while stocks fell 37%, providing proven downside protection."
+                        keyFacts={[
+                            "Major crashes of 25-57% occur roughly every 7-10 years — they are a certainty, not a risk",
+                            "A 50% portfolio loss requires a 100% gain just to break even",
+                            "Retirees face 'sequence of returns risk' — a crash in year 1 can deplete savings 12 years early",
+                            "A 15% gold allocation with 30% bonds, 45% stocks, and 10% cash provides resilient protection"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

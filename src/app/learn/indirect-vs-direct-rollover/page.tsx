@@ -7,6 +7,8 @@ import { Metadata } from "next";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Direct vs Indirect Rollover: Which Should You Choose? (2026 Guide)",
@@ -21,7 +23,18 @@ export const metadata: Metadata = {
 export default function IndirectVsDirectRolloverPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            
+            <SchemaScript schema={articleSchema({
+                title: "Direct vs Indirect Rollover: Which Should You Choose?",
+                description: "Understand the critical differences between direct and indirect rollovers. Avoid the 20% withholding trap and 60-day deadline.",
+                slug: "/learn/indirect-vs-direct-rollover",
+                datePublished: "2026-01-01",
+                dateModified: "2026-01-25",
+            })} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Direct vs Indirect Rollover", url: "/learn/indirect-vs-direct-rollover" },
+            ])} />
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { Gem, TrendingUp, AlertTriangle, ArrowRight, BarChart3, Factory } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -96,6 +97,11 @@ export default function PlatinumIraPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Platinum IRA Investment Guide", url: "/learn/platinum-ira" },
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>

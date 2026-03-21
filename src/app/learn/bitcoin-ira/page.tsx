@@ -17,6 +17,8 @@ import {
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "What is a Bitcoin IRA? Complete Guide to Bitcoin Retirement Accounts (2026)",
@@ -33,7 +35,23 @@ export const metadata: Metadata = {
 export default function BitcoinIRAPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            
+            <SchemaScript schema={articleSchema({
+                title: "What is a Bitcoin IRA? Complete Guide to Bitcoin Retirement Accounts",
+                description: "Learn what a Bitcoin IRA is, how it works, tax benefits, risks, and whether it's right for your retirement.",
+                slug: "/learn/bitcoin-ira",
+                datePublished: "2026-01-01",
+                dateModified: "2026-01-25",
+            })} />
+            <SchemaScript schema={faqSchema([
+                { question: "Is a Bitcoin IRA a good idea?", answer: "It can be for long-term investors who believe in Bitcoin and want tax advantages. The Roth IRA option is especially attractive—potentially tax-free gains forever." },
+                { question: "What is the minimum for a Bitcoin IRA?", answer: "Minimums vary by provider. iTrustCapital requires $1,000, Alto IRA has no minimum, and Bitcoin IRA requires $3,000." },
+                { question: "Are Bitcoin IRA gains taxed?", answer: "In a Traditional Bitcoin IRA, gains are tax-deferred until withdrawal. In a Roth Bitcoin IRA, qualified withdrawals are completely tax-free—including all gains." },
+            ])} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "What is a Bitcoin IRA?", url: "/learn/bitcoin-ira" },
+            ])} />
 
             {/* Hero */}
             <header className="relative py-20 overflow-hidden">
@@ -377,61 +395,6 @@ export default function BitcoinIRAPage() {
                 </Container>
             </section>
 
-            
-
-            {/* Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Article",
-                        "headline": "What is a Bitcoin IRA? Complete Guide to Bitcoin Retirement Accounts",
-                        "description": "Learn what a Bitcoin IRA is, how it works, tax benefits, risks, and whether it's right for your retirement.",
-                        "author": {
-                            "@type": "Organization",
-                            "name": "Rich Dad Retirement"
-                        },
-                        "datePublished": "2026-01-01",
-                        "dateModified": "2026-01-25"
-                    })
-                }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "Is a Bitcoin IRA a good idea?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "It can be for long-term investors who believe in Bitcoin and want tax advantages. The Roth IRA option is especially attractive—potentially tax-free gains forever."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What is the minimum for a Bitcoin IRA?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Minimums vary by provider. iTrustCapital requires $1,000, Alto IRA has no minimum, and Bitcoin IRA requires $3,000."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Are Bitcoin IRA gains taxed?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "In a Traditional Bitcoin IRA, gains are tax-deferred until withdrawal. In a Roth Bitcoin IRA, qualified withdrawals are completely tax-free—including all gains."
-                                }
-                            }
-                        ]
-                    })
-                }}
-            />
         </main>
     );
 }

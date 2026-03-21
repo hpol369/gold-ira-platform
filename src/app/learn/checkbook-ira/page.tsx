@@ -16,6 +16,8 @@ import {
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Checkbook IRA Guide 2026: What is Checkbook Control?",
@@ -32,7 +34,24 @@ export const metadata: Metadata = {
 export default function CheckbookIRAPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            
+            <SchemaScript schema={articleSchema({
+                title: "What is a Checkbook IRA? Complete Guide to Checkbook Control",
+                description: "Learn what a Checkbook IRA is, how it works, pros and cons, and whether checkbook control is right for your self-directed retirement investing.",
+                slug: "/learn/checkbook-ira",
+                datePublished: "2026-01-01",
+                dateModified: "2026-01-25",
+            })} />
+            <SchemaScript schema={faqSchema([
+                { question: "Is a Checkbook IRA legal?", answer: "Yes, Checkbook IRAs are completely legal and IRS-approved. The structure has been validated by multiple IRS rulings and tax court cases. The key is following all prohibited transaction rules." },
+                { question: "How much does it cost to set up a Checkbook IRA?", answer: "Setup costs typically range from $500-$1,500 for LLC formation, registered agent, and account setup. Ongoing costs are usually $15-$50/month. Providers like Rocket Dollar include setup in their pricing." },
+                { question: "Can I have checkbook control for a Roth IRA?", answer: "Yes, you can have checkbook control with either a Traditional or Roth Self-Directed IRA. The tax treatment follows the same rules as any IRA—Roth grows tax-free, Traditional is tax-deferred." },
+                { question: "What can I invest in with a Checkbook IRA?", answer: "The same investments allowed in any Self-Directed IRA: real estate, precious metals, cryptocurrency, private equity, tax liens, promissory notes, and more. The only difference is you have direct checkbook access." },
+            ])} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "What is a Checkbook IRA?", url: "/learn/checkbook-ira" },
+            ])} />
 
             {/* Hero */}
             <header className="relative py-20 overflow-hidden">
@@ -374,23 +393,6 @@ export default function CheckbookIRAPage() {
                 </Container>
             </section>
 
-            
-
-            {/* Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Article",
-                        "headline": "What is a Checkbook IRA? Complete Guide to Checkbook Control",
-                        "description": "Learn what a Checkbook IRA is, how it works, pros and cons, and whether checkbook control is right for your self-directed retirement investing.",
-                        "author": { "@type": "Organization", "name": "Rich Dad Retirement" },
-                        "datePublished": "2026-01-01",
-                        "dateModified": "2026-01-25"
-                    })
-                }}
-            />
         </main>
     );
 }

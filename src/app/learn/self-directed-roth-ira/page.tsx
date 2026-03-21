@@ -16,6 +16,8 @@ import {
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Self-Directed Roth IRA Guide 2026: Tax-Free Alternative Investments",
@@ -32,7 +34,18 @@ export const metadata: Metadata = {
 export default function SelfDirectedRothIRAPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            
+            <SchemaScript schema={articleSchema({
+                title: "Self-Directed Roth IRA Guide: Tax-Free Alternative Investments",
+                description: "Learn how a Self-Directed Roth IRA lets you invest in real estate, crypto, and gold completely tax-free.",
+                slug: "/learn/self-directed-roth-ira",
+                datePublished: "2026-01-01",
+                dateModified: "2026-01-25",
+            })} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Self-Directed Roth IRA Guide", url: "/learn/self-directed-roth-ira" },
+            ])} />
 
             {/* Hero */}
             <header className="relative py-20 overflow-hidden">
@@ -349,23 +362,6 @@ export default function SelfDirectedRothIRAPage() {
                 </Container>
             </section>
 
-            
-
-            {/* Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Article",
-                        "headline": "Self-Directed Roth IRA Guide: Tax-Free Alternative Investments",
-                        "description": "Learn how a Self-Directed Roth IRA lets you invest in real estate, crypto, and gold completely tax-free.",
-                        "author": { "@type": "Organization", "name": "Rich Dad Retirement" },
-                        "datePublished": "2026-01-01",
-                        "dateModified": "2026-01-25"
-                    })
-                }}
-            />
         </main>
     );
 }

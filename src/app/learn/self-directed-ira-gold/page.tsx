@@ -7,6 +7,7 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, Building2, Scale, Lock, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -45,6 +46,17 @@ export default function SelfDirectedIraGoldPage() {
         <main className="min-h-screen flex flex-col bg-white">
             
             <SchemaScript schema={schema} />
+            <SchemaScript schema={faqSchema([
+                { question: "Can I store Gold IRA metals at home?", answer: "No. The IRS requires precious metals IRA assets to be stored by an approved custodian or depository. Home storage constitutes a distribution, triggering taxes and potential 10% early withdrawal penalties." },
+                { question: "What's the difference between a Gold IRA and a Self-Directed IRA?", answer: "A Gold IRA is a type of Self-Directed IRA. 'Self-directed' is the category that allows alternative investments; 'Gold IRA' is a self-directed account specifically used for precious metals." },
+                { question: "Can I roll over my 401(k) into a Self-Directed Gold IRA?", answer: "Yes, in most cases. If you've left your employer, you can roll over your 401(k) tax-free. If still employed, check if your plan allows 'in-service' rollovers." },
+                { question: "What happens when I retire?", answer: "At age 59½, you can take distributions without penalty. Options: receive physical gold (taxed on value), sell and take cash, or take Required Minimum Distributions starting at age 73." },
+            ])} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Self-Directed IRA Gold Investing", url: "/learn/self-directed-ira-gold" },
+            ])} />
 
             <div className="flex-grow">
                 {/* Header */}

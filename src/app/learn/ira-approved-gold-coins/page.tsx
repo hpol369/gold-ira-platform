@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { Coins, CheckCircle2, XCircle, ArrowRight, Shield, Scale } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -106,6 +108,11 @@ export default function IraApprovedGoldCoinsPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "IRA-Approved Gold Coins", url: "/learn/ira-approved-gold-coins" }
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
@@ -122,6 +129,21 @@ export default function IraApprovedGoldCoinsPage() {
                     </div>
                 </Container>
             </header>
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="IRA-approved gold must be at least 99.5% pure (0.995 fineness) per IRS rules, with one exception: American Gold Eagles (91.67% gold) are specifically permitted. The most popular IRA-eligible coins are American Gold Eagles, Canadian Maple Leafs, and Austrian Philharmonics. Gold bars must be produced by NYMEX/COMEX-approved refiners."
+                        keyFacts={[
+                            "Minimum purity: 99.5% for gold, 99.9% for silver, 99.95% for platinum and palladium",
+                            "American Gold Eagles are the only exception — IRA-approved despite 22-karat (91.67%) purity",
+                            "Collectible, numismatic, and rare coins do NOT qualify for IRA inclusion",
+                            "Bars typically offer 1-3% lower premiums than coins but may be harder to liquidate"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

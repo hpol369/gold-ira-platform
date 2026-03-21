@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { FileText, DollarSign, AlertTriangle, Calendar, ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -100,6 +102,11 @@ export default function GoldIraTaxRulesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Gold IRA Tax Rules", url: "/learn/gold-ira-tax-rules" }
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>
@@ -116,6 +123,21 @@ export default function GoldIraTaxRulesPage() {
                     </div>
                 </Container>
             </header>
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Gold IRAs follow the same IRS tax rules as traditional and Roth IRAs. Contributions are limited to $7,000/year ($8,000 if 50+), but rollovers from 401(k)s have no limit and are tax-free when done as direct transfers. Early withdrawals before age 59½ trigger a 10% penalty plus income taxes, and Traditional Gold IRA RMDs begin at age 73."
+                        keyFacts={[
+                            "2026 contribution limits: $7,000 (under 50) or $8,000 (50+) across all IRAs",
+                            "Direct rollovers from 401(k), 403(b), or TSP are 100% tax-free with no cap",
+                            "Roth Gold IRAs offer tax-free withdrawals and zero lifetime RMDs",
+                            "Home storage of IRA gold is treated as a distribution — avoid this costly mistake"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

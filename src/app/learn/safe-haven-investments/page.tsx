@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { ShieldCheck, Coins, Building2, Globe, ArrowRight, TrendingUp, Lock, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -99,6 +100,11 @@ export default function SafeHavenInvestmentsPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Safe Haven Investments", url: "/learn/safe-haven-investments" },
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>

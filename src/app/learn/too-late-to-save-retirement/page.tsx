@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
@@ -134,6 +135,11 @@ export default function TooLateToSaveRetirementPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Too Late to Save for Retirement?", url: "/learn/too-late-to-save-retirement" },
+            ])} />
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

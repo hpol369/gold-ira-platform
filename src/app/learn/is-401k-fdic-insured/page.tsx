@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { ShieldX, ShieldCheck, Building2, AlertTriangle, ArrowRight, Coins, Scale, TrendingDown, Briefcase } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
@@ -100,6 +101,11 @@ export default function Is401kFDICInsuredPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Is 401(k) FDIC Insured?", url: "/learn/is-401k-fdic-insured" },
+            ])} />
             {/* Header */}
             <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>
