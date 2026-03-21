@@ -9,6 +9,8 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllMedicaidArticles } from "@/data/medicaid-planning";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Shield, ArrowRight, Clock, Home, AlertTriangle, BookOpen, Scale } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -29,6 +31,8 @@ export default function MedicaidPlanningPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Medicaid Planning Guide | Protect Assets & Qualify for Care", description: "Learn how to protect your assets while qualifying for Medicaid long-term care. Irrevocable trusts, lookback periods, estate recovery, and legal strategies.", slug: "/medicaid-planning" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Medicaid Planning Guide", url: "/medicaid-planning" }])} />
       <Navbar />
 
       {/* Hero Section */}

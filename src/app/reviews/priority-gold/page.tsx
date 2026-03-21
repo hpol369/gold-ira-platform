@@ -7,6 +7,8 @@ import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { reviewSchema, breadcrumbSchema } from "@/lib/schema";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -17,6 +19,8 @@ export const metadata = {
 export default function PriorityGoldReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
+            <SchemaScript schema={reviewSchema({ itemName: "Priority Gold", reviewBody: "Priority Gold has carved out a niche in the precious metals industry by putting customer service first. With an A+ BBB rating and a $10,000 minimum, they target investors who value personalized service.", ratingValue: 4.3, url: "/reviews/priority-gold" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Priority Gold", url: "/reviews/priority-gold" }])} />
             <Navbar />
 
             <div className="flex-grow">

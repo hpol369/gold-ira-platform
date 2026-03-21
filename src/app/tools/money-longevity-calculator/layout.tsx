@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Money Longevity Calculator — Will Your Retirement Savings Last?",
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
     "sustainable withdrawal rate calculator",
     "retirement runway calculator",
   ],
+  alternates: { canonical: "/tools/money-longevity-calculator" },
   openGraph: {
     title: "Money Longevity Calculator — Will Your Retirement Savings Last?",
     description:
@@ -31,5 +34,11 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <SchemaScript schema={articleSchema({ title: "Money Longevity Calculator — Will Your Retirement Savings Last?", description: "Free calculator to see how long your retirement savings will last. Projects year-by-year depletion with inflation, Social Security, pensions, and withdrawal rates.", slug: "/tools/money-longevity-calculator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Money Longevity Calculator", url: "/tools/money-longevity-calculator" }])} />
+      {children}
+    </>
+  );
 }

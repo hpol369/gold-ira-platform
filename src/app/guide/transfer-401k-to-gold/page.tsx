@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Clock, FileText } from "lucide-r
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -95,6 +96,21 @@ export default function Transfer401kToGoldPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You can transfer your 401k to a Gold IRA through a direct rollover, which is 100% tax-free and penalty-free. The IRS calls this a rollover, and it takes 3 simple steps: open a Gold IRA, request the transfer, and select your gold. The process takes 2-4 weeks."
+                        keyFacts={[
+                            "Direct rollovers (trustee-to-trustee) incur zero taxes and zero penalties",
+                            "The transfer process takes 2-4 weeks with about 15 minutes of your time",
+                            "Gold must be .995+ fineness and stored in an IRS-approved depository",
+                            "You can transfer all or a portion of your 401k balance at any time",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

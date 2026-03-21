@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Retirement Spending Calculator — Budget Your Retirement Expenses",
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
     "retirement healthcare costs calculator",
     "retirement expense categories",
   ],
+  alternates: { canonical: "/tools/retirement-spending-calculator" },
   openGraph: {
     title: "Retirement Spending Calculator — Budget Your Retirement Expenses",
     description:
@@ -31,5 +34,11 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <SchemaScript schema={articleSchema({ title: "Retirement Spending Calculator — Budget Your Retirement Expenses", description: "Free retirement spending calculator. Budget expenses by category, project 30-year inflation-adjusted costs, and see your lifetime spending total.", slug: "/tools/retirement-spending-calculator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Retirement Spending Calculator", url: "/tools/retirement-spending-calculator" }])} />
+      {children}
+    </>
+  );
 }

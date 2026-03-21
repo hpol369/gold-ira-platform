@@ -9,6 +9,8 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllSeniorProtectionArticles } from "@/data/senior-protection";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { ShieldAlert, ArrowRight, Phone, AlertTriangle, BookOpen, Users, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -29,6 +31,8 @@ export default function SeniorProtectionPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Senior Protection Center | Scam Prevention & Financial Safety", description: "Protect yourself and loved ones from financial scams targeting seniors. Learn to identify grandparent scams, romance scams, and financial exploitation.", slug: "/senior-protection" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Senior Protection Center", url: "/senior-protection" }])} />
       <Navbar />
 
       {/* Hero Section */}

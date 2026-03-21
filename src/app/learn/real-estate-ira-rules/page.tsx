@@ -18,6 +18,8 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Real Estate IRA Rules 2026: IRS Requirements Guide",
@@ -34,6 +36,8 @@ export const metadata: Metadata = {
 export default function RealEstateIraRulesPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Real Estate IRA Rules 2026: IRS Requirements Guide", description: "Complete guide to real estate IRA rules. Learn about prohibited transactions, disqualified persons, UBIT, and how to stay IRS compliant with your SDIRA.", slug: "/learn/real-estate-ira-rules" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Real Estate IRA Rules", url: "/learn/real-estate-ira-rules" }])} />
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-white" />

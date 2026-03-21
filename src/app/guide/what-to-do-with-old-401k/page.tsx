@@ -7,6 +7,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, XCircle, AlertTriangle, DollarSign, Building2, Coins, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
@@ -115,6 +116,21 @@ export default function WhatToDoWithOld401kPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You have 5 options for an old 401k from a previous employer: leave it, roll it to your new employer's plan, roll it to a Traditional IRA, cash it out (not recommended — 10% penalty plus income tax), or convert it to a Gold IRA for physical precious metals diversification."
+                        keyFacts={[
+                            "Rolling to an IRA gives you the most investment options and typically lower fees",
+                            "Cashing out costs 20-37% in taxes plus a 10% penalty if you're under 59 1/2",
+                            "Employers may force-distribute balances under $5,000 if you do nothing",
+                            "A Gold IRA rollover is tax-free and lets you diversify into physical gold and silver",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-100 text-[#000080] py-20 relative overflow-hidden border-b border-slate-200">
                 <div className="absolute inset-0 bg-primary-dark/50" />

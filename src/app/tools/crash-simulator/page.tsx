@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { CrashSimulator } from "@/components/tools/CrashSimulator";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import {
   TrendingDown,
   Shield,
@@ -60,6 +62,8 @@ const historicalCrashes = [
 export default function CrashSimulatorPage() {
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Market Crash Simulator - Test Your Portfolio", description: "See how your retirement portfolio would perform in historical market crashes. Simulate 2008, COVID, and other crises to understand gold's protective power.", slug: "/tools/crash-simulator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Market Crash Simulator", url: "/tools/crash-simulator" }])} />
       <Navbar />
 
       {/* Hero Section */}

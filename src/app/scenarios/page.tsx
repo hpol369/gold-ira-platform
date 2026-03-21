@@ -22,6 +22,8 @@ import {
   PiggyBank,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Economic Crisis Scenarios: Protect Your Wealth",
@@ -58,6 +60,8 @@ export default function ScenariosPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Economic Crisis Scenarios: Protect Your Wealth", description: "Prepare for economic uncertainty. Understand threats to your retirement: dollar collapse, hyperinflation, bank failures, and how to protect yourself.", slug: "/scenarios" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Economic Crisis Scenarios", url: "/scenarios" }])} />
       <Navbar />
 
       {/* Hero Section */}

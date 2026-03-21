@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import { Coins, CheckCircle2, XCircle, ArrowRight, Shield, Scale, DollarSign, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -250,6 +251,21 @@ export default function IraApprovedSilverPage() {
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="IRA-approved silver must be at least 99.9% pure (.999 fineness) and produced by a NYMEX/COMEX-approved refiner or national government mint. Popular IRA-eligible options include American Silver Eagles, Canadian Maple Leafs, and .999+ silver bars from approved refiners."
+                        keyFacts={[
+                            "IRS requires minimum 99.9% purity for silver in an IRA (higher than gold's 99.5%)",
+                            "American Silver Eagles carry 25-40% premiums; Canadian Maple Leafs run 8-15% over spot",
+                            "Junk silver (pre-1965 US coins at 90% purity) is NOT eligible for a Silver IRA",
+                            "All IRA silver must be stored in an IRS-approved depository, not at home",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-white text-slate-900 py-20 relative overflow-hidden">

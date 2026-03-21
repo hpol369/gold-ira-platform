@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -106,6 +107,21 @@ export default function BirchGoldFeesPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
             <SchemaScript schema={breadcrumbs} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Birch Gold Group charges a $50 setup fee, $100/year annual maintenance, and $150/year for storage — totaling $250/year in ongoing fees. Their $10,000 minimum is lower than competitors, but their total annual cost is $70 more than Augusta Precious Metals ($180/year)."
+                        keyFacts={[
+                            "Setup fee: $50 one-time; annual maintenance: $100/year; storage: $150/year",
+                            "Total ongoing cost: $250/year (excluding spreads of 5-8% on gold purchases)",
+                            "Minimum investment: $10,000 — lower than Augusta ($50,000) or Goldco ($25,000)",
+                            "Augusta saves $70/year on fees: $80 maintenance + $100 storage = $180/year total",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
