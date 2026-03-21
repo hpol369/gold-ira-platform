@@ -18,6 +18,13 @@ export const enrollmentArticles: LearnArticleRegistry = {
       '401k deducted but not deposited',
       'missing 401k contributions'
     ],
+    answerFirst: 'Missing 401k deposits are a violation of federal law (ERISA). Employers must deposit your contributions within 7 business days for small plans. Start by checking timing and verifying with HR in writing, then escalate to the plan administrator and Department of Labor if not resolved.',
+    answerFirstFacts: [
+      'Under ERISA, employers must deposit contributions "as soon as reasonably possible" — typically within 7 business days',
+      'Using employee 401k contributions for company cash flow is potentially a federal crime',
+      'You are entitled to lost earnings on any delayed contributions',
+      'File a DOL complaint if contributions aren\'t deposited within 2-3 pay periods of raising the issue',
+    ],
     targetKeyword: 'hr not depositing 401k',
     volume: 30,
     difficulty: 15,
@@ -175,6 +182,13 @@ export const enrollmentArticles: LearnArticleRegistry = {
       'where is my employer match',
       '401k match missing',
       'employer not matching 401k'
+    ],
+    answerFirst: 'Most missing match issues have simple explanations. The top reasons are eligibility requirements (you haven\'t worked enough hours or months), the match is deposited quarterly or annually instead of each paycheck, or you\'re confusing vesting with missing contributions.',
+    answerFirstFacts: [
+      'Many employers require 1 year of service or 1,000 hours worked before match eligibility begins',
+      'Some employers deposit matching contributions quarterly or annually, not every paycheck',
+      'Vesting schedules make the match appear "locked" — it\'s there but not fully yours yet',
+      'True matching may use complex formulas (like matching 50% of first 6%) that aren\'t a simple 1:1 match',
     ],
     targetKeyword: 'company match not showing',
     volume: 25,
@@ -338,6 +352,13 @@ export const enrollmentArticles: LearnArticleRegistry = {
       'employer no 401k',
       '401k alternative',
       'retirement without 401k'
+    ],
+    answerFirst: 'No 401k at work? You still have great options. Open a Traditional or Roth IRA to save $7,000/year ($8,000 if 50+). If you have any self-employment income, a Solo 401k lets you save up to $69,000/year. An HSA offers a triple tax advantage if you have a high-deductible health plan.',
+    answerFirstFacts: [
+      'Traditional and Roth IRAs let you save $7,000/year ($8,000 if 50+) with no employer needed',
+      'Solo 401k allows up to $69,000/year in contributions for self-employed workers',
+      'HSA offers triple tax advantage: deductible contributions, tax-free growth, tax-free withdrawals for medical expenses',
+      'A Gold IRA provides both tax advantages and portfolio diversification without an employer plan',
     ],
     targetKeyword: '401k not offered at work',
     volume: 35,

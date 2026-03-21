@@ -18,6 +18,13 @@ export const howGoldBenefitsArticles2: LearnArticleRegistry = {
       'gold allocation by age',
       'gold percentage retirement portfolio'
     ],
+    answerFirst: 'Most financial experts recommend holding 5-25% of your retirement portfolio in gold, depending on your age and risk tolerance. If you are in your 50s, aim for 10-15%. In your 60s and beyond, 15-20% provides stronger protection against market crashes when you cannot afford to wait for a recovery.',
+    answerFirstFacts: [
+      'Ray Dalio recommends 7.5% gold in his All Weather Portfolio',
+      'Conservative investors near retirement generally benefit from 15-20% gold allocation',
+      'Gold allocation should increase as you approach and enter retirement',
+      'A Gold IRA lets you hold physical gold with tax-deferred or tax-free growth',
+    ],
     targetKeyword: 'gold portfolio allocation',
     category: 'how-gold',
     threatLevel: 'info',
@@ -154,6 +161,13 @@ export const howGoldBenefitsArticles2: LearnArticleRegistry = {
       'gold vs TIPS',
       'gold vs bonds retirement',
       'safe haven assets comparison'
+    ],
+    answerFirst: 'Gold and Treasury bonds are both considered safe havens, but they protect against different threats. Treasury bonds protect against deflation and stock market crashes. Gold protects against inflation and currency debasement. Since 2000, gold has outperformed Treasuries by a wide margin as inflation has eroded bond yields.',
+    answerFirstFacts: [
+      'Gold has outperformed 10-year Treasury bonds significantly since 2000',
+      'TIPS (Treasury Inflation-Protected Securities) have underperformed gold during high inflation periods',
+      'Treasury bonds pay interest income; gold does not but appreciates in price',
+      'The best retirement portfolios often hold both: Treasuries for income stability and gold for inflation protection',
     ],
     targetKeyword: 'gold vs treasury bonds',
     category: 'how-gold',
@@ -304,6 +318,13 @@ export const howGoldBenefitsArticles2: LearnArticleRegistry = {
       'dollar vs gold purchasing power',
       'gold value over time',
       'gold inflation protection history'
+    ],
+    answerFirst: 'Since 1971 when the US left the gold standard, the dollar has lost over 85% of its purchasing power while gold has increased more than 5,000%. What cost $100 in 1971 now costs over $750 in dollars — but still costs roughly the same in gold. This is why retirees use gold to protect their savings from currency debasement.',
+    answerFirstFacts: [
+      'Gold was $35/oz in 1971; it trades above $2,000/oz today — more than a 5,000% increase',
+      'The US dollar has lost over 85% of its purchasing power since 1971',
+      'An ounce of gold has bought roughly the same amount of goods for thousands of years',
+      'The Federal Reserve has printed trillions of dollars since 2008, accelerating dollar debasement',
     ],
     targetKeyword: 'gold purchasing power history',
     category: 'how-gold',
@@ -458,6 +479,13 @@ export const howGoldBenefitsArticles2: LearnArticleRegistry = {
       'annuity vs gold IRA',
       'retirement income alternatives'
     ],
+    answerFirst: 'Annuities guarantee income but lock up your money and get eaten alive by inflation. A $1,000/month annuity payment will buy half as much in 20 years due to inflation. Gold does not pay income, but it protects your purchasing power and you can sell anytime. Many retirees are better off with a Gold IRA than an expensive annuity.',
+    answerFirstFacts: [
+      'Most fixed annuities do not adjust for inflation — your payment buys less every year',
+      'Annuity surrender charges can lock up your money for 5-10 years with penalties of 7-10%',
+      'Annuity fees (mortality charges, admin fees, rider costs) often total 2-3% annually',
+      'Gold has no surrender charges, no annual expense ratios, and can be sold at market price anytime',
+    ],
     targetKeyword: 'gold vs annuities',
     category: 'how-gold',
     threatLevel: 'info',
@@ -599,6 +627,13 @@ export const howGoldBenefitsArticles2: LearnArticleRegistry = {
       'gold vs savings account',
       'CDs vs gold IRA',
       'best place for retirement savings'
+    ],
+    answerFirst: 'CDs and savings accounts feel safe, but after inflation and taxes you are often losing money. A 5% CD yield minus 3% inflation minus income tax leaves you barely breaking even. Gold has averaged 7-8% annual returns over the long term and is not subject to annual taxation in an IRA.',
+    answerFirstFacts: [
+      'A 5% CD yield minus 3% inflation minus taxes at 22% bracket nets you roughly 0.9% real return',
+      'FDIC insurance covers only $250,000 per depositor per bank — not unlimited',
+      'Gold averaged roughly 7-8% annual returns since 1971, outpacing most CD rates',
+      'In a Gold IRA, gains grow tax-deferred (Traditional) or tax-free (Roth) — unlike taxable CD interest',
     ],
     targetKeyword: 'gold vs CDs',
     category: 'how-gold',
@@ -750,6 +785,13 @@ export const howGoldBenefitsArticles2: LearnArticleRegistry = {
       'money market vs gold IRA',
       'retirement cash alternatives'
     ],
+    answerFirst: 'Money market funds offer stability and modest yields (4-5% in 2025-2026), but they barely keep up with inflation and their yields drop when the Fed cuts rates. Gold offers long-term inflation protection and crisis hedging. Retirees should keep 3-6 months of expenses in money markets for liquidity, and hold gold for long-term wealth preservation.',
+    answerFirstFacts: [
+      'Money market yields follow the Fed funds rate — they dropped to near 0% during 2009-2015 and 2020-2022',
+      'Money market funds are not FDIC insured, though they rarely lose value',
+      'Gold has outperformed money market returns over every 20-year rolling period since 1971',
+      'The best strategy: money markets for short-term cash needs, gold for long-term purchasing power protection',
+    ],
     targetKeyword: 'gold vs money market funds',
     category: 'how-gold',
     threatLevel: 'info',
@@ -897,6 +939,13 @@ export const howGoldBenefitsArticles2: LearnArticleRegistry = {
       'gold vs dividend stocks retirement',
       'dividend investing vs gold',
       'retirement income gold or dividends'
+    ],
+    answerFirst: 'Dividend stocks provide income and growth, while gold provides crash protection and inflation hedging. They serve different roles and work best together. In 2008, many dividend stocks cut or eliminated dividends while gold surged 25%. A portfolio with both gives you income from dividends and insurance from gold.',
+    answerFirstFacts: [
+      'During 2008, many blue-chip companies cut dividends while gold rose 25%',
+      'Dividend stocks average 7-10% total returns (including reinvested dividends) vs gold at 7-8%',
+      'Gold pays no dividends or income — its value comes from price appreciation and crisis protection',
+      'A balanced approach: 70-80% dividend stocks for income, 10-20% gold for crash insurance',
     ],
     targetKeyword: 'gold vs dividend stocks',
     category: 'how-gold',

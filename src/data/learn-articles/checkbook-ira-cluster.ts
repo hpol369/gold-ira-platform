@@ -18,6 +18,13 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'checkbook ira providers',
       'self directed ira llc providers'
     ],
+    answerFirst: 'A checkbook IRA (also called an IRA LLC) gives you direct control over your retirement investments by creating an LLC owned by your IRA. Instead of waiting for your custodian to process every transaction, you write checks directly from the LLC bank account. Top providers include Broad Financial, IRA Financial Group, and Madison Trust.',
+    answerFirstFacts: [
+      'Checkbook IRA setup costs $1,500-$5,000 (LLC formation + custodian fees)',
+      'Annual fees range from $300-$600/year depending on the provider',
+      'Top providers: Broad Financial (most popular), IRA Financial Group (best education), Madison Trust',
+      'Checkbook control means faster transactions — no waiting for custodian approval on each investment',
+    ],
     targetKeyword: 'checkbook ira reviews',
     volume: 80,
     difficulty: 0,
@@ -210,6 +217,13 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'self directed ira real estate',
       'buy real estate with ira',
       'ira rental property'
+    ],
+    answerFirst: 'A checkbook IRA lets you buy real estate faster and more flexibly than a regular self-directed IRA. You write checks directly from your IRA-owned LLC to purchase properties, pay for repairs, and collect rent — without waiting for custodian approval. All income goes back into the LLC, and all expenses are paid from it.',
+    answerFirstFacts: [
+      'Checkbook IRA real estate uses an LLC structure: Your IRA owns the LLC, the LLC owns the property',
+      'All rental income must flow into the LLC bank account — never your personal account',
+      'Prohibited transactions still apply: you cannot live in, use, or rent to family members',
+      'If the LLC uses debt financing (mortgage), UDFI tax applies on the financed portion of income',
     ],
     targetKeyword: 'checkbook ira real estate',
     volume: 30,
@@ -413,6 +427,13 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'checkbook ira operating agreement',
       'ira llc setup'
     ],
+    answerFirst: 'Your self-directed IRA LLC operating agreement must specify that the IRA is the sole member of the LLC, name you as the manager (not member), prohibit disqualified person transactions, and comply with your state\'s LLC laws. Getting this document wrong can disqualify your entire IRA, so use an attorney experienced in IRA LLCs.',
+    answerFirstFacts: [
+      'The operating agreement must name the IRA (not you personally) as the sole member of the LLC',
+      'You are listed as manager with investment authority — but you are NOT a member',
+      'The agreement must include prohibited transaction restrictions and IRS compliance language',
+      'State requirements vary — some states require annual LLC filings and franchise taxes',
+    ],
     targetKeyword: 'self directed ira llc operating agreement',
     volume: 90,
     difficulty: 0,
@@ -613,6 +634,13 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'self directed solo 401k',
       'solo 401k vs checkbook ira'
     ],
+    answerFirst: 'A Solo 401(k) with checkbook control is often better than a checkbook IRA for self-employed investors. Solo 401(k) allows much higher contributions ($69,000/year in 2024 vs $7,000 for IRA), includes a Roth option, allows participant loans, and does not require UBIT tax on leveraged real estate until the plan exceeds $250,000.',
+    answerFirstFacts: [
+      'Solo 401(k) contribution limit: $69,000/year in 2024 (employee + employer) vs $7,000 IRA limit',
+      'Solo 401(k) does not require an LLC for checkbook control — the plan itself provides it',
+      'Solo 401(k) is exempt from UBIT/UDFI on leveraged real estate until plan assets exceed $250,000',
+      'You must be self-employed with no full-time employees (other than a spouse) to qualify',
+    ],
     targetKeyword: 'solo 401k checkbook control',
     volume: 50,
     difficulty: 1,
@@ -808,6 +836,13 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'self directed ira gold',
       'ira llc gold'
     ],
+    answerFirst: 'A checkbook IRA lets you buy gold and silver directly from dealers without waiting for custodian approval on each purchase. However, IRS rules still apply: gold must be 99.5% pure, it must be stored at an IRS-approved depository (not your home), and you cannot take personal possession until you take a distribution.',
+    answerFirstFacts: [
+      'Checkbook IRA gold must meet IRS purity requirements: 99.5% gold, 99.9% silver',
+      'Gold must be stored at an IRS-approved depository — home storage is prohibited and risks IRA disqualification',
+      'The checkbook advantage: buy from any dealer instantly without custodian processing delays',
+      'Traditional Gold IRA through companies like Augusta is simpler and handles all compliance for you',
+    ],
     targetKeyword: 'checkbook ira gold',
     volume: 30,
     difficulty: 2,
@@ -999,6 +1034,13 @@ export const checkbookIraArticles: LearnArticleRegistry = {
       'disqualified persons ira',
       'checkbook ira compliance',
       'self directed ira prohibited transactions'
+    ],
+    answerFirst: 'Checkbook IRA prohibited transactions are the same as regular IRA rules but the risk is higher because you have direct control. You cannot buy from, sell to, or do business with "disqualified persons" (you, spouse, parents, children). You cannot use IRA assets for personal benefit. One violation disqualifies your entire IRA — the full balance becomes taxable immediately.',
+    answerFirstFacts: [
+      'Disqualified persons: you, your spouse, parents, grandparents, children, grandchildren, and their spouses',
+      'One prohibited transaction disqualifies your ENTIRE IRA — full balance becomes taxable as of January 1st of violation year',
+      'With checkbook control, you bear full responsibility for compliance — no custodian gatekeeper',
+      'Common violations: paying yourself a management fee, lending IRA funds to family, using IRA property personally',
     ],
     targetKeyword: 'checkbook ira prohibited transactions',
     volume: 20,

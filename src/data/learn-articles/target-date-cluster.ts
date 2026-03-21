@@ -18,6 +18,13 @@ export const targetDateArticles: LearnArticleRegistry = {
       'target date fund review',
       'TDF 401k'
     ],
+    answerFirst: 'Target date funds are a decent "set it and forget it" option, but they\'re not great for everyone. They charge higher fees than building your own portfolio with index funds (0.40-1.00% vs 0.03-0.10%), and their one-size-fits-all approach may not match your specific needs.',
+    answerFirstFacts: [
+      'TDF expense ratios are typically 0.40-1.00% vs 0.03-0.10% for basic index funds',
+      'The fee difference on a $500,000 portfolio over 20 years can exceed $75,000',
+      'TDFs automatically become more conservative as retirement approaches via a "glide path"',
+      'They don\'t include gold or alternative assets — only stocks and bonds, which can fall together',
+    ],
     targetKeyword: 'are target date funds a good idea',
     volume: 45,
     difficulty: 32,
@@ -178,6 +185,13 @@ export const targetDateArticles: LearnArticleRegistry = {
       'target date fund cost',
       'are target date funds overpriced'
     ],
+    answerFirst: 'If your target date fund charges more than 0.50%, you\'re overpaying. Vanguard and Fidelity offer TDFs at 0.08-0.15%, while many 401k plans use expensive TDFs charging 0.75-1.50%. That fee difference can cost you $100,000+ over a career.',
+    answerFirstFacts: [
+      'TDF fees range from 0.08% (Vanguard) to 1.50% (insurance company plans) — a 19x difference',
+      'The difference between 0.08% and 1.00% fees on $500,000 over 25 years: $115,000',
+      'Many 401k plans use expensive TDFs because of revenue-sharing deals with providers',
+      'You get essentially the same investment strategy whether you pay 0.08% or 1.50%',
+    ],
     targetKeyword: 'target date fund fees too high',
     volume: 25,
     difficulty: 28,
@@ -322,6 +336,13 @@ export const targetDateArticles: LearnArticleRegistry = {
       'change target date fund',
       'target date fund too conservative',
       'target date fund too aggressive'
+    ],
+    answerFirst: 'The "right" target date fund year depends on your risk tolerance, not just when you plan to retire. If your fund feels too conservative, pick a later year (e.g., 2050 instead of 2035) for more stock exposure. If it feels too risky, pick an earlier year.',
+    answerFirstFacts: [
+      'You can choose any target date year — it doesn\'t have to match your actual retirement date',
+      'A 2025 target date fund is very conservative now (heavy on bonds), which may cost you growth',
+      'Consider your full financial picture: pension, Social Security, other savings all affect the right allocation',
+      'Working beyond 65 usually means you need a more aggressive allocation than your age suggests',
     ],
     targetKeyword: 'target date fund wrong year',
     volume: 20,

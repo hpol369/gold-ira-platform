@@ -12,6 +12,13 @@ export const rmdArticles: LearnArticleRegistry = {
     metaTitle: 'Can I Reinvest My RMD? Strategies for Required Distributions | 2026',
     metaDescription: 'Can you reinvest your Required Minimum Distribution? Learn the rules, tax implications, and what wealthy retirees do with their RMDs.',
     keywords: ['can i reinvest my rmd', 'reinvest rmd', 'what to do with rmd', 'rmd reinvestment'],
+    answerFirst: 'You cannot put your RMD back into the same IRA — that would violate contribution limits. But once you receive the distribution, you can invest it anywhere: a taxable brokerage account, physical gold, real estate, or give it to charity tax-free through a QCD.',
+    answerFirstFacts: [
+      'RMDs cannot be reinvested back into any IRA — the IRS requires the money to leave tax-advantaged accounts',
+      'You CAN invest RMD money in a taxable brokerage account with no contribution limits',
+      'Qualified Charitable Distributions (QCD) let you donate up to $105,000 directly from your IRA tax-free',
+      'Roth IRAs have NO required minimum distributions during your lifetime',
+    ],
 
     targetKeyword: 'can i reinvest my rmd',
     volume: 90,
@@ -165,6 +172,13 @@ export const rmdArticles: LearnArticleRegistry = {
     metaTitle: 'RMD Penalty for Forgetting: How Much & How to Fix | 2026',
     metaDescription: 'Forgot to take your RMD? Learn the current 25% penalty, how to reduce it to 10%, and steps to fix a missed Required Minimum Distribution.',
     keywords: ['rmd penalty', 'forgot rmd', 'missed rmd penalty', 'rmd late withdrawal penalty'],
+    answerFirst: 'The penalty for missing an RMD is 25% of the amount you should have withdrawn. If you fix it quickly, the penalty drops to just 10%. The IRS often waives the penalty entirely for first-time mistakes with reasonable cause.',
+    answerFirstFacts: [
+      'The RMD penalty dropped from 50% to 25% under SECURE 2.0 (effective 2023)',
+      'Quick correction reduces the penalty to 10% — fix it within 2 years of the deadline',
+      'File IRS Form 5329 and attach a letter explaining why you missed the deadline',
+      'Converting to a Roth IRA before age 73 eliminates RMD requirements entirely',
+    ],
 
     targetKeyword: 'rmd penalty if i forget',
 
@@ -326,6 +340,13 @@ export const rmdArticles: LearnArticleRegistry = {
     metaTitle: 'Missed RMD Deadline? What to Do Now | 2026 Guide',
     metaDescription: 'Missed your Required Minimum Distribution deadline? Learn the penalty, how to fix it, request a waiver, and prevent future misses.',
     keywords: ['missed rmd deadline', 'rmd deadline', 'late rmd', 'rmd after december 31'],
+    answerFirst: 'Take the missed distribution immediately — don\'t wait until next year. Then file IRS Form 5329 and request a penalty waiver for reasonable cause. The IRS often waives first-time mistakes when you correct them quickly.',
+    answerFirstFacts: [
+      'The annual RMD deadline is December 31 (April 1 only for your very first RMD)',
+      'The penalty is 25% of the amount you should have withdrawn — reduced to 10% if corrected quickly',
+      'Contact your custodian TODAY and request the full missed distribution',
+      'The IRS frequently waives penalties for first-time mistakes with a reasonable cause letter',
+    ],
 
     targetKeyword: 'what if i miss rmd deadline',
 
@@ -477,6 +498,13 @@ export const rmdArticles: LearnArticleRegistry = {
     metaTitle: '10-Year Rule Inherited IRA Explained Simply | 2026 Guide',
     metaDescription: 'Understand the 10-year rule for inherited IRAs. Learn who it applies to, when to take distributions, and strategies to minimize the tax hit.',
     keywords: ['10 year rule inherited ira', 'inherited ira rules', 'secure act inherited ira', 'beneficiary ira'],
+    answerFirst: 'The 10-year rule means most non-spouse beneficiaries must withdraw the entire inherited IRA within 10 years of the original owner\'s death. Surviving spouses, minor children, and disabled individuals are exempt and can still stretch distributions over their lifetime.',
+    answerFirstFacts: [
+      'The SECURE Act of 2019 replaced the old "stretch IRA" with the 10-year rule for most beneficiaries',
+      'If the original owner was already taking RMDs, you must also take annual distributions within the 10 years',
+      'Surviving spouses can do a spousal rollover — they are NOT subject to the 10-year rule',
+      'Spreading withdrawals evenly over 10 years minimizes the total tax hit vs. waiting until year 10',
+    ],
 
     targetKeyword: '10 year rule inherited ira explained',
 
@@ -620,6 +648,13 @@ export const rmdArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With Small Inherited IRA | Options for $10k-$50k',
     metaDescription: 'Inherited a small IRA? Learn whether to cash out, stretch, or keep it - and the tax implications of each choice for amounts under $50,000.',
     keywords: ['small inherited ira', 'what to do with inherited ira', 'inherited ira options', 'cash out inherited ira'],
+    answerFirst: 'For a small inherited IRA ($10k-$50k), cashing out often makes the most sense. The tax hit is manageable, and you avoid 10 years of tracking requirements. If it would spike your tax bracket, spread withdrawals over a few years instead.',
+    answerFirstFacts: [
+      'Cashing out a $30,000 inherited IRA in the 22% bracket costs about $6,600 in taxes',
+      'The 10-year rule still applies — you can\'t stretch it over your lifetime',
+      'Spreading $30,000 over 10 years means $3,000/year with minimal tax impact',
+      'You can use the after-tax funds to buy physical gold or invest in a taxable account',
+    ],
 
     targetKeyword: 'what to do with small inherited ira',
 

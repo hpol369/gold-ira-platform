@@ -12,7 +12,13 @@ export const railroadRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Railroad Retirement Spouse Benefits Guide | RRB Spousal Annuity 2026',
     metaDescription: 'Complete guide to railroad retirement spouse benefits. Learn about RRB spousal annuity eligibility, benefit amounts, and how it compares to Social Security.',
     keywords: ['railroad retirement spouse benefits', 'rrb spouse benefits', 'railroad spouse annuity', 'railroad retirement board spousal benefits'],
-
+    answerFirst: 'Railroad retirement spouses can receive up to 50% of the worker\'s Tier 1 benefit at full retirement age. You can start collecting as early as age 60 — two years earlier than Social Security spousal benefits. Tier 2 benefits are not available to spouses, only to the retired railroad worker.',
+    answerFirstFacts: [
+      'Spousal benefit equals up to 50% of the railroad worker\'s Tier 1 benefit at full retirement age',
+      'Available starting at age 60 — earlier than Social Security\'s age 62',
+      'Divorced spouses may qualify if married for at least 10 years',
+      'No Tier 2 spousal benefits — spouses only receive a portion of Tier 1',
+    ],
     targetKeyword: 'railroad retirement spouse benefits',
     volume: 200,
     difficulty: 0,
@@ -213,7 +219,13 @@ export const railroadRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Railroad Medicare Enrollment Guide | RRB Medicare 2026',
     metaDescription: 'Complete guide to Medicare enrollment for railroad workers. Learn about automatic enrollment through RRB, Part B costs, and key deadlines for railroad retirees.',
     keywords: ['railroad medicare enrollment', 'rrb medicare', 'railroad retirement medicare', 'railroad retirement board medicare'],
-
+    answerFirst: 'If you are receiving Railroad Retirement benefits at age 65, you are automatically enrolled in Medicare Part A. But Medicare Part B is NOT automatic — you must actively enroll and pay the premium (about $174.70/month in 2024). Missing the enrollment window means penalties and coverage gaps.',
+    answerFirstFacts: [
+      'Medicare Part A enrollment is automatic for railroad retirees already receiving RRB benefits at 65',
+      'Medicare Part B requires active enrollment and costs $174.70/month base premium (2024)',
+      'Railroad Retirement Board handles Medicare enrollment instead of Social Security Administration',
+      'Late enrollment in Part B triggers a 10% penalty for each year you were eligible but did not enroll',
+    ],
     targetKeyword: 'railroad medicare enrollment',
     volume: 150,
     difficulty: 2,
@@ -425,7 +437,13 @@ export const railroadRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Railroad Retirement Tier 1 & Tier 2 Explained | RRB Benefits 2026',
     metaDescription: 'Complete guide to railroad retirement tiers. Learn how Tier 1 and Tier 2 benefits are calculated, taxed, and how to maximize your railroad retirement income.',
     keywords: ['railroad retirement tier 1', 'tier 2 railroad retirement', 'railroad retirement tiers explained', 'rrb tier 1 tier 2'],
-
+    answerFirst: 'Railroad Retirement has two tiers. Tier 1 equals what Social Security would pay and gets the same COLA. Tier 2 is an extra railroad-only pension worth about 0.7% per year of service times your average earnings — but its COLA is only 32.5% of the CPI increase, meaning it loses ground to inflation over time.',
+    answerFirstFacts: [
+      'Tier 1 uses the exact same benefit formula as Social Security and gets the same annual COLA',
+      'Tier 2 adds approximately 0.7% per year of railroad service times average monthly earnings',
+      'Tier 1 is taxed like Social Security (up to 85% taxable); Tier 2 is fully taxable as pension income',
+      'With 30 years of service, you can retire at 60 with full unreduced benefits from both tiers',
+    ],
     targetKeyword: 'railroad retirement tier 1 tier 2',
     volume: 100,
     difficulty: 0,
@@ -636,7 +654,13 @@ export const railroadRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Railroad Retirement Survivor Benefits | RRB Widow Benefits 2026',
     metaDescription: 'Complete guide to railroad retirement survivor benefits. Learn about widow/widower annuities, eligibility requirements, benefit amounts, and application process.',
     keywords: ['railroad retirement survivor benefits', 'rrb widow benefits', 'railroad widow pension', 'railroad retirement death benefits'],
-
+    answerFirst: 'Surviving spouses of railroad workers can receive 100% of the worker\'s Tier 1 benefit plus a portion of Tier 2. Widows and widowers can start collecting as early as age 60 (or 50 if disabled). You must report the death to the Railroad Retirement Board within 30 days to avoid overpayment issues.',
+    answerFirstFacts: [
+      'Widow/widower benefits equal 100% of the worker\'s Tier 1 plus a portion of Tier 2',
+      'Survivor benefits available at age 60 for widows/widowers (age 50 if disabled)',
+      'Minor children under 18 may also receive survivor benefits',
+      'Report the death to RRB within 30 days — call 1-877-772-5772',
+    ],
     targetKeyword: 'railroad retirement survivor benefits',
     volume: 30,
     difficulty: 0,
@@ -855,7 +879,13 @@ export const railroadRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Railroad Retirement Disability Benefits | RRB Disability 2026',
     metaDescription: 'Complete guide to railroad retirement disability benefits. Learn about occupational and total disability, eligibility, benefit amounts, and how to apply for RRB disability.',
     keywords: ['railroad retirement disability', 'rrb disability benefits', 'railroad disability annuity', 'railroad retirement board disability'],
-
+    answerFirst: 'Railroad workers can receive two types of disability benefits: occupational disability (you cannot do your railroad job) or total disability (you cannot do any work). Occupational disability requires 20 years of railroad service, while total disability requires 10 years. Benefits start after a 5-month waiting period.',
+    answerFirstFacts: [
+      'Occupational disability: cannot perform your railroad job — requires 20 years of service',
+      'Total disability: cannot perform any regular work — requires 10 years of service (or 5 after 1995)',
+      'Benefits begin after a 5-month waiting period from the onset of disability',
+      'Disability annuity automatically converts to age-based retirement at full retirement age',
+    ],
     targetKeyword: 'railroad retirement disability',
     volume: 30,
     difficulty: 1,
@@ -1094,7 +1124,13 @@ export const railroadRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Railroad Retirement vs Social Security | RRB vs SSA Comparison 2026',
     metaDescription: 'Complete comparison of railroad retirement vs Social Security. Learn about benefit differences, dual entitlement, coordination rules, and which system provides better benefits.',
     keywords: ['railroad retirement vs social security', 'rrb vs ssa', 'railroad vs social security comparison', 'railroad retirement better than social security'],
-
+    answerFirst: 'Railroad Retirement is significantly better than Social Security for most workers. Total benefits run 30-40% higher thanks to the extra Tier 2 pension, and you can retire at 60 with 30 years of service instead of waiting until 62-67. The tradeoff is higher payroll taxes — railroad workers pay about 12.55% compared to 7.65% for Social Security.',
+    answerFirstFacts: [
+      'Railroad Retirement total benefits are approximately 30-40% higher than Social Security',
+      'Railroad workers can retire at age 60 with 30 years vs age 62 earliest for SS',
+      'Railroad payroll tax rate is 12.55% vs 7.65% for Social Security',
+      'You cannot receive full benefits from both systems — railroad and SS credits are combined for Tier 1',
+    ],
     targetKeyword: 'railroad retirement vs social security',
     volume: 50,
     difficulty: 3,

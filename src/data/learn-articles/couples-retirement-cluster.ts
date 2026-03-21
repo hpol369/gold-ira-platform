@@ -12,7 +12,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Husband Wants to Retire But Wife Doesn\'t: Compromise Guide | 2026',
     metaDescription: 'Husband ready to retire but wife isn\'t? Learn strategies for couples with different retirement timelines, compromise solutions, financial planning, and communication tips.',
     keywords: ['husband wants to retire wife doesnt', 'spouse disagrees retirement', 'retirement disagreement couples', 'one spouse wants to retire'],
-
+    answerFirst: 'When one spouse wants to retire and the other does not, the root issue is usually financial fear, not lifestyle disagreement. Start by listening to WHY your spouse is resistant, then run the numbers together. Compromise options include phased retirement, part-time work, or agreeing on a specific future date that satisfies both.',
+    answerFirstFacts: [
+      'Financial anxiety is the most common reason a spouse resists the other\'s retirement',
+      'A neutral financial advisor can help both spouses see the real numbers objectively',
+      'Phased retirement or part-time work is often the best compromise for couples who disagree',
+      'Ultimatums damage trust — retirement should always be a joint decision',
+    ],
     targetKeyword: 'husband wants to retire wife doesnt',
     volume: 20,
     difficulty: 0,
@@ -185,7 +191,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Wife Retiring Before Husband: Planning & Healthcare Guide | 2026',
     metaDescription: 'Wife retiring before husband? Learn to manage role reversal, healthcare considerations, income planning, and emotional adjustment when she retires first.',
     keywords: ['wife retiring before husband', 'wife retires first', 'woman retires before man', 'wife early retirement'],
-
+    answerFirst: 'When the wife retires before the husband, the biggest challenges are healthcare coverage, income planning, and avoiding the trap of the retired spouse doing all the housework. Keep the husband\'s employer health insurance for both spouses, delay her retirement account withdrawals if possible, and set clear expectations about household responsibilities.',
+    answerFirstFacts: [
+      'The husband\'s employer health insurance typically covers both spouses until he retires or turns 65',
+      'Delaying the wife\'s retirement account withdrawals lets those savings continue growing',
+      'The retired wife should not be expected to take on all domestic responsibilities',
+      'Having a planned timeline for the husband\'s retirement reduces tension and uncertainty',
+    ],
     targetKeyword: 'wife retiring before husband',
     volume: 15,
     difficulty: 0,
@@ -370,7 +382,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'One Spouse Retired Other Working: Schedule & Life Balance Guide | 2026',
     metaDescription: 'One spouse retired while other works? Learn to manage different schedules, identity shifts, financial coordination, and maintain your relationship during staggered retirement.',
     keywords: ['one spouse retired other working', 'spouse still working', 'retired while spouse works', 'staggered retirement couple'],
-
+    answerFirst: 'When one spouse is retired and the other is still working, you are essentially living in two different worlds. The retired spouse has open days while the working spouse comes home tired. Success depends on the retired spouse finding purpose and activities during work hours, protecting transition time when the working spouse comes home, and coordinating finances as a team.',
+    answerFirstFacts: [
+      'The retired spouse needs independent activities — relying solely on the working spouse for social life breeds resentment',
+      'Protect the working spouse\'s evening transition time — do not bombard them with plans the moment they walk in',
+      'Coordinate finances jointly — the working spouse should not unilaterally control money decisions',
+      'Set a clear timeline for when the working spouse will also retire',
+    ],
     targetKeyword: 'one spouse retired other working',
     volume: 20,
     difficulty: 0,
@@ -548,7 +566,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Coordinating Retirement Dates: Couples Timing Guide | 2026',
     metaDescription: 'Learn how to coordinate retirement dates as a couple. Optimize healthcare bridge, Social Security timing, income planning, and find the perfect retirement timing for both spouses.',
     keywords: ['coordinating retirement dates', 'when should we retire', 'couples retirement timing', 'planning retirement together'],
-
+    answerFirst: 'The best retirement timing for couples depends on three things: healthcare coverage, Social Security optimization, and personal readiness. Many couples benefit from staggering retirements by 1-3 years so one spouse\'s employer insurance covers both until Medicare. The higher earner should generally delay Social Security to age 70 for the biggest monthly checks.',
+    answerFirstFacts: [
+      'Staggering retirements lets employer health insurance cover both spouses until Medicare at 65',
+      'The higher-earning spouse delaying Social Security to 70 increases monthly benefits by 24-32%',
+      'Retiring together sounds romantic but may not be the smartest financial move',
+      'Create a month-by-month timeline showing income sources, insurance changes, and SS claiming dates',
+    ],
     targetKeyword: 'coordinating retirement dates',
     volume: 25,
     difficulty: 0,
@@ -729,7 +753,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Breadwinner Spouse Retires First: Income Replacement Guide | 2026',
     metaDescription: 'Higher-earning spouse retiring first? Learn income replacement strategies, budget adjustments, Social Security optimization, and how to maintain financial stability.',
     keywords: ['breadwinner spouse retirement', 'higher earner retires first', 'main income earner retirement', 'primary earner retirement'],
-
+    answerFirst: 'When the higher-earning spouse retires first, household income drops dramatically and you need a clear plan to fill the gap. Use retirement account withdrawals, pension, and the lower earner\'s salary strategically. Avoid claiming Social Security early — the breadwinner should delay to maximize the survivor benefit for the other spouse.',
+    answerFirstFacts: [
+      'Losing the breadwinner\'s salary can mean a 50-70% drop in household income',
+      'The breadwinner should delay Social Security as long as possible to maximize the survivor benefit',
+      'Try living on the lower earner\'s salary for 6 months before the breadwinner retires',
+      'Healthcare is critical — keep the working spouse\'s employer insurance if possible',
+    ],
     targetKeyword: 'breadwinner spouse retirement',
     volume: 15,
     difficulty: 0,
@@ -914,7 +944,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Stay-at-Home Spouse Social Security: Spousal Benefits Guide | 2026',
     metaDescription: 'Learn how stay-at-home spouses qualify for Social Security. Understand spousal benefits, ex-spouse benefits, survivor benefits, and strategies to maximize household SS income.',
     keywords: ['stay at home spouse social security', 'spousal social security benefits', 'non-working spouse SS', 'homemaker social security'],
-
+    answerFirst: 'A stay-at-home spouse who never worked or earned little can still receive Social Security through spousal benefits — up to 50% of the working spouse\'s benefit at full retirement age. You need to be married at least 1 year and be age 62 or older. Even divorced spouses qualify if the marriage lasted 10+ years.',
+    answerFirstFacts: [
+      'Spousal benefits equal up to 50% of the working spouse\'s full retirement age benefit',
+      'You must be at least 62 and married for at least 1 year to claim spousal benefits',
+      'Divorced spouses qualify if the marriage lasted 10+ years and they have not remarried',
+      'There is no benefit to the stay-at-home spouse delaying past full retirement age — spousal benefits do not grow after FRA',
+    ],
     targetKeyword: 'stay at home spouse social security',
     volume: 40,
     difficulty: 0,
@@ -1097,7 +1133,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Supporting Spouse in Retirement: Working & Retired Couple Guide | 2026',
     metaDescription: 'Still working while spouse is retired? Learn to manage finances, emotions, household responsibilities, and maintain a strong relationship during staggered retirement.',
     keywords: ['supporting spouse in retirement', 'spouse retired me working', 'one working one retired', 'support retired spouse'],
-
+    answerFirst: 'Supporting a retired spouse while you still work means balancing financial responsibilities, emotional support, and your own needs. Encourage your retired spouse to find purpose through activities, volunteering, or part-time work. Share finances as a team, protect your own downtime, and start planning your own retirement so there is a light at the end of the tunnel.',
+    answerFirstFacts: [
+      'The retired spouse typically takes 6-12 months to fully adjust to retirement',
+      'The working spouse needs protected downtime — do not let the retired spouse fill every evening and weekend',
+      'Financial decisions should be made jointly regardless of who is earning',
+      'Start planning your own retirement timeline so both spouses have a shared goal',
+    ],
     targetKeyword: 'supporting spouse in retirement',
     volume: 15,
     difficulty: 0,
@@ -1272,7 +1314,13 @@ export const couplesRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Spouse Different Retirement Timeline: Planning for 5-10 Year Gaps | 2026',
     metaDescription: 'Spouses planning to retire 5-10 years apart? Learn how to communicate, plan finances, maintain your relationship, and bridge the gap when retirement timelines differ significantly.',
     keywords: ['spouse different retirement timeline', 'years apart retirement', 'big gap retirement', 'retirement timeline mismatch'],
-
+    answerFirst: 'When spouses have 5-10 years between their retirement dates, the biggest risks are relationship drift and financial complexity. You need regular communication about shared goals, careful healthcare planning for the gap years, and strategies to stay connected despite living very different daily lives. Scheduled couple time becomes essential.',
+    answerFirstFacts: [
+      'Large retirement gaps are increasingly common when there is a significant age difference or career stage difference',
+      'The first spouse to retire often builds a completely new routine that may not include the working spouse',
+      'Healthcare coverage is the biggest practical challenge during a 5-10 year gap before both reach Medicare',
+      'Couples who schedule regular date nights and shared activities report stronger relationships during the gap',
+    ],
     targetKeyword: 'spouse different retirement timeline',
     volume: 15,
     difficulty: 0,
