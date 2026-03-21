@@ -38,17 +38,17 @@ export default async function ThankYouPage({ searchParams }: ThankYouPageProps) 
         {
           icon: Phone,
           title: "Expect a Call",
-          desc: `A specialist from ${companyName} will reach out within 24 hours to answer your questions.`,
+          desc: `A specialist from ${companyName} will call you within 24 hours for a free info call — they'll walk you through how a Gold IRA works for your situation.`,
         },
         {
-          icon: Download,
-          title: "Your Kit Ships Free",
-          desc: "A physical information kit will be mailed to you at no cost.",
+          icon: Clock,
+          title: "15 Minutes, Educational",
+          desc: "It's an info call, not a sales pitch. They'll explain the process, answer your questions, and that's it.",
         },
         {
           icon: Shield,
-          title: "No Obligation",
-          desc: "This is purely educational. No pressure, no commitment required.",
+          title: "Zero Obligation",
+          desc: "100% free. No contracts. Your decision, your timeline.",
         },
       ]
     : [
@@ -65,7 +65,7 @@ export default async function ThankYouPage({ searchParams }: ThankYouPageProps) 
         {
           icon: Shield,
           title: "No Obligation",
-          desc: `When you're ready, ${companyName} offers a free, no-pressure consultation.`,
+          desc: `When you're ready, ${companyName} offers a free info call — educational, not sales.`,
         },
       ];
 
@@ -89,7 +89,7 @@ export default async function ThankYouPage({ searchParams }: ThankYouPageProps) 
 
             <p className="text-xl text-slate-600 mb-8">
               {isAugustaLead
-                ? `Your free Gold IRA kit is being prepared. A specialist from ${companyName} will contact you within 24 hours.`
+                ? `A specialist from ${companyName} will call you within 24 hours for a free, educational info call about how a Gold IRA works for your situation.`
                 : `Your free Gold IRA guide and personalized recommendation are on the way to your inbox.`}
             </p>
 

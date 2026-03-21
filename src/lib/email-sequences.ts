@@ -51,7 +51,7 @@ const newsletterWelcome: Sequence = {
     {
       step: 0,
       delayDays: 0,
-      subject: "Welcome — here's your unfair advantage",
+      subject: "Welcome — 3 free resources inside",
       buildHtml: (email) => emailLayout({
         email,
         sequence: "newsletter-welcome",
@@ -256,7 +256,7 @@ const guideNurture: Sequence = {
     {
       step: 4,
       delayDays: 16,
-      subject: "Everything in one place (last email)",
+      subject: "Your complete Gold IRA toolkit (bookmark this)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "guide-nurture",
@@ -272,7 +272,7 @@ const guideNurture: Sequence = {
             `<a href="${SITE}/get-started" style="color:#B22234;text-decoration:underline;">Find your match</a>`,
           ])}
           ${p("Whatever you decide, that's your call. We built this site because every hardworking American who saved smart deserves honest info.")}
-          ${p(`If you ever want a no-obligation conversation with a Gold IRA specialist, Augusta's number is <strong>${AUGUSTA_PHONE}</strong>. Free call. No pressure.`)}
+          ${p(`If you ever want a free info call with a Gold IRA specialist, Augusta's number is <strong>${AUGUSTA_PHONE}</strong>. 15 minutes, purely educational.`)}
           ${p("Wishing you a retirement you've earned,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
         ctaText: "Find Your Match →",
@@ -308,7 +308,7 @@ const highIntent: Sequence = {
         preheader: "Augusta will call within 24hrs. 15 minutes, zero obligation.",
         body: `
           ${p(`${firstName || "Hey"}, you're in. Two things are happening right now:`)}
-          ${callout(`<strong>&#128222; EXPECT A CALL:</strong> An Augusta Precious Metals specialist will call you within 24 hours. It's a 15-minute educational call — zero obligation, zero pressure. <strong>Please answer even if you don't recognize the number.</strong>`, "warning")}
+          ${callout(`<strong>&#128222; EXPECT A CALL:</strong> An Augusta specialist will call you within 24 hours to walk you through how a Gold IRA works for your situation. It's a <strong>free info call</strong> — 15 minutes, purely educational. <strong>Please answer even if you don't recognize the number.</strong>`, "warning")}
           ${h2("1. Your Free Guide")}
           ${p("Download the 2026 Gold IRA Protection Guide below. Short on time? Read Chapter 10 first — it has the 10 questions to ask your specialist.")}
           ${h2("2. Quick Prep (2 minutes)")}
@@ -336,7 +336,7 @@ const highIntent: Sequence = {
         preheader: "No surprises. Here's the exact 15-minute agenda.",
         body: `
           ${p(`${firstName || "Hey"}, your Augusta specialist will be reaching out soon. Here's exactly what the call looks like — no surprises:`)}
-          ${callout(`<strong>Heads up:</strong> The call may come from a number you don't recognize. If you get a call in the next 24 hours and you're not sure — <strong>pick up.</strong> It's likely your Augusta specialist.`, "info")}
+          ${callout(`<strong>Heads up:</strong> The call may come from a number you don't recognize. If you get a call in the next 24 hours and you're not sure — <strong>pick up.</strong> It's your Augusta specialist with a free info call about how a Gold IRA works.`, "info")}
           ${h2("Minute 1-3: Your Situation")}
           ${p("They'll ask about your savings — how much, where it's held, when you're planning to retire. They don't need account numbers.")}
           ${h2("Minute 4-8: Education")}
@@ -363,7 +363,7 @@ const highIntent: Sequence = {
         preheader: "If you get an unfamiliar call today, pick up — it's your specialist.",
         body: `
           ${p(`Quick reminder, ${firstName || "hey"} — Augusta's team may reach out today.`)}
-          ${callout(`If you get a call from a number you don't recognize today — <strong>pick up.</strong> It's a 15-minute educational call, not a sales pitch. They won't leave you hanging on hold or try to sell you anything.`, "info")}
+          ${callout(`If you get a call from a number you don't recognize today — <strong>pick up.</strong> It's a 15-minute info call where they'll explain exactly how a Gold IRA works for your situation. Educational, not sales.`, "info")}
           ${p("If you miss it, no stress — they'll try again. Or you can call them directly anytime:")}
           ${p(`<strong><a href="tel:${AUGUSTA_PHONE.replace(/-/g, "")}" style="color:#B22234;text-decoration:underline;font-size:18px;">&#128222; ${AUGUSTA_PHONE}</a></strong><br><span style="font-size:13px;color:#64748b;">Ask for the Gold IRA education team</span>`)}
         `,
@@ -386,8 +386,8 @@ const highIntent: Sequence = {
           ${p(`<a href="${SITE}/api/email/status?action=connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here to let us know</a> — Great! If you have follow-up questions, reply to this email. We read every response.`)}
           ${h2("→ Not Yet / I Missed the Call")}
           ${p(`<a href="${SITE}/api/email/status?action=not-connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here</a> — No problem. You can call Augusta directly at <strong>${AUGUSTA_PHONE}</strong> (ask for the Gold IRA education team). Or just wait — they'll try again.`)}
-          ${h2("→ I Changed My Mind")}
-          ${p("Totally fine. No hard feelings. You'll stay on our newsletter unless you unsubscribe below.")}
+          ${h2("→ Still Thinking It Over")}
+          ${p("Completely normal. Most people who end up moving forward took a few weeks to decide. There's no rush — your free info call with Augusta stays open. When you're ready, call them at <strong>" + AUGUSTA_PHONE + "</strong>.")}
           ${hr()}
           ${p("Either way, you've already done more research than 95% of people. That puts you in a strong position no matter what you decide.")}
         `,
@@ -484,7 +484,7 @@ const highIntent: Sequence = {
     {
       step: 7,
       delayDays: 21,
-      subject: "Everything in one place (last email)",
+      subject: "Your Gold IRA toolkit — one last thing",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
@@ -494,12 +494,12 @@ const highIntent: Sequence = {
           ${p("<strong>Here's where things stand:</strong>")}
           ${ul([
             `<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;">Your free guide</a>`,
-            `Your free consultation → still available (<strong>${AUGUSTA_PHONE}</strong>)`,
+            `Your free info call → still available (<strong>${AUGUSTA_PHONE}</strong>)`,
             `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Your tools</a> (43 calculators)`,
             `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Company reviews</a>`,
           ])}
           ${p("If now isn't the right time, that's fine. Bookmark our site. We publish daily and we'll always be here when you're ready.")}
-          ${p("If now IS the right time — one call. 15 minutes. Zero obligation.")}
+          ${p("If now IS the right time — one call. 15 minutes. They'll explain how it works for your situation.")}
           ${p("Wishing you the retirement you've earned,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
         ctaText: "Visit richdadretirement.com →",
@@ -544,8 +544,8 @@ const midNurture: Sequence = {
             "Strong buyback program when you're ready to sell",
             "No high-pressure sales",
           ])}
-          ${p("A Goldco specialist will reach out for a free consultation. Like Augusta, it's educational — not a pitch. They'll explain exactly how a Gold IRA works for your situation.")}
-          ${p("The call takes about 15 minutes. Zero obligation.")}
+          ${quote("I was nervous about the minimums. Goldco made it easy — started with $25k, the whole process took two weeks. No surprises, no pressure.", "Patricia R., retired office manager, Georgia")}
+          ${p("Click below to request Goldco's free info kit. They'll walk you through how a Gold IRA works for your situation — it's educational, not a sales pitch.")}
           ${p("— The Rich Dad Retirement Team")}
         `,
         ctaText: "Learn More About Goldco →",
@@ -653,7 +653,7 @@ const midNurture: Sequence = {
     {
       step: 4,
       delayDays: 16,
-      subject: "Your complete kit (last email)",
+      subject: "Your Gold IRA starter kit (save this)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "mid-nurture",
@@ -711,6 +711,7 @@ const starterNurture: Sequence = {
             "Fast account setup",
             "No high-pressure sales",
           ])}
+          ${quote("I started with just $3,000. Noble Gold treated me the same as if I'd walked in with $300,000. Two weeks later, I had real gold in a real vault. Best decision I've made.", "Tony M., retired machinist, Indiana")}
           ${p("Noble Gold has the lowest minimum in the entire industry. Start with what you have and build from there.")}
           ${p("— The Rich Dad Retirement Team")}
         `,
@@ -776,23 +777,21 @@ const starterNurture: Sequence = {
     {
       step: 3,
       delayDays: 11,
-      subject: "4 moves that accelerate your retirement",
+      subject: "3 ways to build your gold position faster",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "starter-nurture",
-        preheader: "Catch-up contributions, old 401(k)s, Roth conversions + one more.",
+        preheader: "Old 401(k)s, catch-up contributions, and one smart trick.",
         body: `
-          ${p(`${firstName || "Hey"}, while you're building your gold position, here are 4 ways to accelerate your retirement savings:`)}
-          ${h2("1. Max Your Catch-Up Contributions")}
-          ${p("If you're 50+, you can contribute $8,000/year to your IRA (vs the normal $7,000). That extra $1,000/year = $10,000+ over a decade.")}
-          ${h2("2. Consolidate Old 401(k)s")}
-          ${p("Have a forgotten 401(k) from a previous job? Roll it into your Gold IRA. Stop paying fees on accounts you're not watching.")}
-          ${h2("3. Consider a Roth Conversion")}
-          ${p("If you expect higher tax rates in retirement (most experts do, given $36T in debt), converting some funds to a Roth Gold IRA could save you thousands in taxes later.")}
-          ${h2("4. Diversify Across Metals")}
-          ${p("Silver is undervalued relative to gold right now. A 70/30 gold/silver split gives you more upside potential.")}
+          ${p(`${firstName || "Hey"}, starting small is smart. But here's how to build faster:`)}
+          ${h2("1. Roll Over Forgotten 401(k)s")}
+          ${p("Changed jobs in the last 20 years? You might have an old 401(k) sitting with a former employer — still paying fees, still exposed to the market. Roll it into your Gold IRA. Even a $5,000 old account makes a difference.")}
+          ${h2("2. Use Your Annual IRA Limit")}
+          ${p("You can contribute $7,000/year to your IRA ($8,000 if you're 50+). That's $667/month. Even half of that — $333/month — adds $4,000/year to your gold position.")}
+          ${h2("3. Put Windfalls to Work")}
+          ${p("Tax refund? Bonus? Inheritance? Instead of letting it sit in a savings account losing value to inflation, move it into gold. A $3,000 tax refund in gold today could be worth $4,500+ in 3 years.")}
           ${hr()}
-          ${p("These aren't tricks. They're the same strategies financial planners use for their own accounts.")}
+          ${p("<strong>The key:</strong> you don't need to start big. You need to start consistent. Even $200/month changes your retirement picture.")}
         `,
         ctaText: "Explore Our Free Calculators →",
         ctaUrl: utmLink(`${SITE}/tools`, "starter-nurture", 3),
@@ -895,7 +894,7 @@ const reEngage: Sequence = {
             `<a href="${SITE}/guide/free" style="color:#B22234;text-decoration:underline;">Guide</a> — Free Gold IRA Protection Guide`,
             `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Calculators</a> — 43 free tools`,
             `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Reviews</a> — Full company comparison`,
-            `Talk to Augusta: <strong>${AUGUSTA_PHONE}</strong> (free, no obligation)`,
+            `Free info call with Augusta: <strong>${AUGUSTA_PHONE}</strong> (15 min, educational)`,
           ])}
           ${p("All the best,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,

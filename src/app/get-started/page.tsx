@@ -520,7 +520,7 @@ function GetStartedContent() {
 
                     <p className="text-white/80 text-lg mb-6">
                       A Gold IRA specialist from Augusta Precious Metals will reach out shortly
-                      for your free, no-pressure consultation.
+                      for a free info call about how a Gold IRA works for your situation.
                     </p>
 
                     {/* PDF Guide Delivery Confirmation */}
