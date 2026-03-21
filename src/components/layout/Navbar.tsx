@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, Menu, X, ChevronDown, Flag, Phone } from "lucide-react";
+import { ArrowRight, ShieldCheck, ChevronDown, Flag, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { useState, useEffect, startTransition } from "react";
@@ -14,7 +14,7 @@ interface GoldPrice {
 }
 
 export function Navbar() {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    // Mobile navigation handled by MobileBottomNav in layout.tsx
     const [isLearnOpen, setIsLearnOpen] = useState(false);
     const [isToolsOpen, setIsToolsOpen] = useState(false);
     const [goldPrice, setGoldPrice] = useState<GoldPrice | null>(null);
@@ -274,53 +274,13 @@ export function Navbar() {
                             </Button>
                         </nav>
 
-                        {/* Mobile Controls */}
-                        <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
-                            <Button className="bg-[#B22234] text-white font-bold text-xs px-3" size="sm" asChild>
-                                <Link href="/get-started">Free Kit</Link>
-                            </Button>
-                            {/* Mobile Menu Button */}
-                            <button
-                                className="p-2 text-slate-700"
-                                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            >
-                                {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                            </button>
-                        </div>
+                        {/* Mobile: clean header — bottom nav handles navigation */}
+                        <div className="lg:hidden" />
                     </div>
                 </Container>
             </div>
 
-            {/* Mobile Menu */}
-            {isMobileMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 py-4 px-4 shadow-xl max-h-[80vh] overflow-y-auto">
-                    <div className="flex flex-col gap-1">
-                        <Link href="/" className="text-slate-900 font-bold border-b border-slate-100 py-2.5" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-
-                        <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-2 mb-1 px-1">Research</p>
-                        <Link href="/guide/gold-ira-guide" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Gold IRA Guide</Link>
-                        <Link href="/best-gold-ira-companies" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Best Companies</Link>
-                        <Link href="/compare" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Compare Companies</Link>
-                        <Link href="/reviews" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
-
-                        <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-3 mb-1 px-1">Learn</p>
-                        <Link href="/learn" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Learning Center</Link>
-                        <Link href="/news" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Daily News</Link>
-                        <Link href="/tools" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Calculators & Tools</Link>
-                        <Link href="/faq" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link>
-
-                        <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-3 mb-1 px-1">Get Started</p>
-                        <Link href="/quiz" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Find Your Match Quiz</Link>
-                        <Link href="/guide/free" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Free Gold IRA Guide</Link>
-
-                        <Link href="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Button className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white mt-4 py-3 text-base font-bold">
-                                Get Your Free Gold IRA Kit →
-                            </Button>
-                        </Link>
-                    </div>
-                </div>
-            )}
+            {/* Mobile navigation is handled by MobileBottomNav in layout.tsx */}
         </header>
     );
 }

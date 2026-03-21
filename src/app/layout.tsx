@@ -4,7 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SocialProofTickerClient } from "@/components/widgets/SocialProofTickerClient";
-import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
+import { MobileBottomNav } from "@/components/layout/MobileBottomNav";
 import { ExitIntentPopup } from "@/components/layout/ExitIntentPopup";
 import Providers from "@/components/providers/Providers";
 
@@ -129,7 +129,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900 pb-14 md:pb-0")}>
+      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900 pb-16 lg:pb-0")}>
         {/* Google Tag Manager (noscript) - must be first in body */}
         <noscript>
           <iframe
@@ -146,7 +146,7 @@ export default function RootLayout({
         <Providers>
           {children}
           <SocialProofTickerClient />
-          <MobileStickyBar />
+          <MobileBottomNav />
           <ExitIntentPopup />
         </Providers>
       </body>
