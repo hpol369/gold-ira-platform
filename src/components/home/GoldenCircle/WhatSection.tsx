@@ -271,7 +271,7 @@ export function WhatSection() {
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p className="text-blue-100 text-sm font-medium">
                   <Phone className="h-4 w-4 inline mr-2" />
-                  Free consultation with no obligation—just education
+                  Free info call — educational, not sales
                 </p>
                 <button
                   onClick={handleCtaClick}

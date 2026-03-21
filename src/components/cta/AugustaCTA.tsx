@@ -77,11 +77,11 @@ export function AugustaCTA({
       return "Get Your Free Gold IRA Kit";
     }
     // Path A defaults
-    if (variant === "sidebar") return "Free Consultation";
+    if (variant === "sidebar") return "Free Info Call";
     if (variant === "inline") return "Learn More";
     if (variant === "banner") return "Get Free Guide";
-    if (variant === "footer") return "Get Your Free Consultation";
-    return "Get Free Consultation";
+    if (variant === "footer") return "Get Your Free Info Kit";
+    return "Get Free Info Kit";
   };
 
   // Premium button with patriot glow and shine effect
@@ -255,7 +255,7 @@ export function AugustaCTA({
             {headline || "Ready to Protect Your Retirement?"}
           </h3>
           <p className="text-slate-500 max-w-2xl mx-auto mb-6">
-            {subheadline || "Augusta Precious Metals has been rated #1 in our comprehensive review. Their education-first approach means you'll never feel pressured. Get a free consultation today."}
+            {subheadline || "Augusta Precious Metals has been rated #1 in our comprehensive review. Their education-first approach means you'll never feel pressured. Request a free info kit today."}
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="flex items-center gap-2 text-slate-600">

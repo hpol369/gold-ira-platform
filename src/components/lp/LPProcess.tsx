@@ -51,7 +51,7 @@ interface LPProcessProps {
 export function LPProcess({
   headline,
   steps,
-  ctaText = "Start Free Consultation",
+  ctaText = "Start Free Info Call",
   linkContext = "silver",
   trackSource,
   className,

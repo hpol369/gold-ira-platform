@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 const trustPoints = [
-  "Free consultation",
+  "Free info call",
   "No obligation",
   "Takes 2 minutes",
   "A+ BBB Rated Partners",

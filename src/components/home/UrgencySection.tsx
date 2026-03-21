@@ -124,7 +124,7 @@ export function UrgencySection() {
               </Link>
             </Button>
             <p className="text-slate-500 text-sm mt-4">
-              Free consultation • No obligation • Takes 2 minutes
+              Free info call • Educational, not sales • Takes 2 minutes
             </p>
           </div>
         </motion.div>

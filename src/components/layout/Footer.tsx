@@ -153,6 +153,7 @@ export function Footer() {
                         <Link href="/grandchildren" className="text-gray-400 hover:text-white transition-colors text-sm">Grandchildren Planning</Link>
                         <Link href="/senior-protection" className="text-gray-400 hover:text-white transition-colors text-sm">Senior Protection</Link>
                         <Link href="/learn/indirect-vs-direct-rollover" className="text-gray-400 hover:text-white transition-colors text-sm">Direct vs Indirect Rollover</Link>
+                        <Link href="/widow-guide" className="text-gray-400 hover:text-white transition-colors text-sm">Widow&apos;s Guide</Link>
                     </div>
                 </div>
 

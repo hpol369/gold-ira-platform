@@ -20,7 +20,7 @@ interface LPFinalCTAProps {
 export function LPFinalCTA({
   headline,
   subheadline,
-  ctaText = "Get Your Free Consultation",
+  ctaText = "Get Your Free Info Kit",
   trustPoints = ["No obligation", "100% free", "Takes 15 minutes"],
   linkContext = "silver",
   trackSource,

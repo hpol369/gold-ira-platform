@@ -61,7 +61,7 @@ const CTA_MESSAGES: Record<string, { headline: string; subtext: string; buttonTe
   },
   general: {
     headline: "Ready to Protect What You've Built?",
-    subtext: "Get matched with the right Gold IRA company for your situation. Free, no-obligation consultation.",
+    subtext: "Get matched with the right Gold IRA company for your situation. Free info call — educational, not sales.",
     buttonText: "Find Your Best Option",
   },
 };

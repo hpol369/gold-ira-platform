@@ -34,7 +34,7 @@ const ACTIONS = [
   { text: "requested their free kit", icon: "kit" },
   { text: "started their retirement audit", icon: "audit" },
   { text: "downloaded the 2026 guide", icon: "guide" },
-  { text: "requested a free consultation", icon: "consultation" },
+  { text: "requested a free info kit", icon: "consultation" },
   { text: "compared Gold IRA companies", icon: "compare" },
 ];
 

@@ -72,7 +72,7 @@ export function Hero() {
                         >
                             <span className="flex items-center justify-center gap-2">
                                 <Phone className="h-5 w-5 text-[#B22234]" />
-                                Free Consultation
+                                Free Info Call
                             </span>
                         </Button>
                     </div>
