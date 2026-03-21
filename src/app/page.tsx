@@ -34,6 +34,12 @@ const HowSection = dynamic(
   { ssr: true, loading: () => <SectionSkeleton height="h-80" /> }
 );
 
+// Section 5b: What We Offer (Golden Circle: WHAT)
+const WhatSection = dynamic(
+  () => import("@/components/home/GoldenCircle").then(mod => ({ default: mod.WhatSection })),
+  { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
+);
+
 // Section 6: Company Comparison
 const ComparisonTable = dynamic(
   () => import("@/components/home/ComparisonTable").then(mod => ({ default: mod.ComparisonTable })),
@@ -85,6 +91,9 @@ export default function Home() {
 
         {/* 5. HOW IT WORKS: 3 simple steps — reduce anxiety */}
         <HowSection />
+
+        {/* 5b. WHAT: The tangible offerings — Golden Circle complete */}
+        <WhatSection />
 
         {/* 6. COMPANY COMPARISON: For researchers */}
         <ComparisonTable />

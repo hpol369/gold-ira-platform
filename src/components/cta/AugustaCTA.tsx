@@ -5,6 +5,8 @@
 
 "use client";
 
+import { useABTest } from "@/lib/ab-testing";
+
 import { ArrowRight, Award, Phone, Shield, Star } from "lucide-react";
 import { getFeaturedCompany } from "@/data/companies";
 import { cn } from "@/lib/utils";
@@ -68,7 +70,10 @@ export function AugustaCTA({
     }
   };
 
-  // Button text adapts to the routing path
+  // A/B test: CTA button text variant
+  const ctaVariant = useABTest("cta-text-v1");
+
+  // Button text adapts to the routing path + A/B test
   const getButtonText = () => {
     if (directToAugusta) {
       if (variant === "sidebar") return "Get Free Kit";
@@ -76,12 +81,12 @@ export function AugustaCTA({
       if (variant === "banner") return "Get Free Kit";
       return "Get Your Free Gold IRA Kit";
     }
-    // Path A defaults
-    if (variant === "sidebar") return "Free Info Call";
+    // Path A: A/B test on main CTA text
+    if (variant === "sidebar") return ctaVariant === "variant" ? "Check Your Options" : "Free Info Call";
     if (variant === "inline") return "Learn More";
     if (variant === "banner") return "Get Free Guide";
-    if (variant === "footer") return "Get Your Free Info Kit";
-    return "Get Free Info Kit";
+    if (variant === "footer") return ctaVariant === "variant" ? "See If Gold Is Right For You" : "Get Your Free Info Kit";
+    return ctaVariant === "variant" ? "See If Gold Is Right For You" : "Get Free Info Kit";
   };
 
   // Premium button with patriot glow and shine effect
