@@ -18,6 +18,13 @@ export const protectionArticles: LearnArticleRegistry = {
       'can creditors take 401k',
       '401k asset protection'
     ],
+    answerFirst: 'Yes, your 401k has strong federal protection under ERISA. Most creditors cannot touch it, even in bankruptcy — there is no dollar limit on this protection. However, the IRS, divorce court orders (QDROs), and child support are exceptions that can reach your 401k.',
+    answerFirstFacts: [
+      'ERISA provides unlimited federal protection for 401k accounts — no dollar cap',
+      'Your 401k is protected in both Chapter 7 and Chapter 13 bankruptcy',
+      'Exceptions: IRS tax liens, divorce (QDRO), child/spousal support, and criminal restitution can access your 401k',
+      'IRAs have weaker protection — only about $1.5 million in bankruptcy, and state laws vary',
+    ],
     targetKeyword: '401k protected from creditors',
     volume: 40,
     difficulty: 30,
@@ -190,6 +197,13 @@ export const protectionArticles: LearnArticleRegistry = {
       'protect 401k in divorce',
       'spouse take 401k divorce'
     ],
+    answerFirst: 'Your 401k is typically considered marital property and subject to division in divorce. Only the portion earned during the marriage is usually divisible. Division requires a Qualified Domestic Relations Order (QDRO), which is a court order directing the plan to pay part of your 401k to your ex-spouse.',
+    answerFirstFacts: [
+      'Only the 401k growth during the marriage is typically divisible — pre-marriage contributions may be protected',
+      'A QDRO (Qualified Domestic Relations Order) is required to divide a 401k — it\'s a specific court order',
+      'Your ex-spouse can take their share as a rollover (no taxes) or lump sum (taxable, no 10% penalty)',
+      'Negotiate — your 401k doesn\'t have to be split 50/50; you can offset with other marital assets',
+    ],
     targetKeyword: '401k protected in divorce',
     volume: 35,
     difficulty: 28,
@@ -349,6 +363,13 @@ export const protectionArticles: LearnArticleRegistry = {
       '200k retirement savings',
       'can I retire with 200k',
       'early retirement 200000'
+    ],
+    answerFirst: '$200,000 alone is tight but possible if you combine it with Social Security and keep expenses low. At the 4% withdrawal rate, $200k provides only $8,000/year. Adding Social Security at 62 (reduced 30% from full benefit) and part-time work can make it viable.',
+    answerFirstFacts: [
+      'At the 4% withdrawal rate, $200,000 provides only $8,000/year ($667/month) in income',
+      'Social Security at 62 is reduced 30% from your full retirement age benefit',
+      'Healthcare before Medicare at 65 is a major expense — ACA marketplace plans can cost $500-1,500/month',
+      'Delaying Social Security from 62 to 70 increases your monthly benefit by 77%',
     ],
     targetKeyword: 'is 200k enough to retire at 62',
     volume: 30,

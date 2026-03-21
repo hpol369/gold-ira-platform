@@ -68,6 +68,8 @@ export function Footer() {
                             <li><Link href="/silver-price" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Price Predictions</Link></li>
                             <li><Link href="/silver-squeeze" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Squeeze Hub</Link></li>
                             <li><Link href="/best-silver-ira-companies" className="text-gray-400 hover:text-white transition-colors text-sm">Best Silver IRA Companies</Link></li>
+                            <li><Link href="/silver-experts" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Expert Analysis</Link></li>
+                            <li><Link href="/silver-stocks" className="text-gray-400 hover:text-white transition-colors text-sm">Silver Stocks Guide</Link></li>
                         </ul>
                     </div>
 

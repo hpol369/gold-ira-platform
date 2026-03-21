@@ -19,6 +19,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'itrustcapital vs goldco fees',
       'itrustcapital trading fees'
     ],
+    answerFirst: 'iTrustCapital charges a flat 1% trading fee on every buy and sell — no monthly fees, no annual fees, and no storage fees. The catch is you never own physical gold: your holdings are digital claims on pooled gold at HSBC, and you cannot take physical delivery.',
+    answerFirstFacts: [
+      'iTrustCapital charges 1% per trade with no monthly, annual, or storage fees',
+      'Round-trip cost (buy + sell) is effectively 2% of your investment',
+      'Minimum investment is $1,000 — much lower than traditional Gold IRA companies ($25,000+)',
+      'You cannot take physical delivery of gold — it is sold for cash at withdrawal',
+    ],
     targetKeyword: 'itrustcapital fees',
     volume: 150,
     difficulty: 1,
@@ -211,6 +218,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'precious metals storage fees',
       'segregated storage cost'
     ],
+    answerFirst: 'Delaware Depository storage fees typically range from $100-$200 per year for Gold IRA accounts under $100,000, depending on whether you choose segregated or commingled storage. Segregated storage (your gold stored separately) costs about $50-$150 more per year than commingled (pooled) storage.',
+    answerFirstFacts: [
+      'Segregated storage costs $150-$200/year for accounts under $100,000; commingled is $100-$150/year',
+      'Delaware Depository is the largest precious metals depository in North America, owned by Loomis Group',
+      'Full insurance through Lloyd\'s of London is included in storage fees',
+      'Delaware has no state sales tax on precious metals purchases',
+    ],
     targetKeyword: 'delaware depository fees',
     volume: 50,
     difficulty: 2,
@@ -402,6 +416,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'gold ira distribution',
       'sell precious metals ira',
       'gold ira withdrawal'
+    ],
+    answerFirst: 'To liquidate a Gold IRA, contact your custodian and request either a cash distribution (they sell the gold and send you the proceeds) or an in-kind distribution (you receive the physical gold). After age 59 1/2, there is no penalty — you just pay income tax on Traditional IRA withdrawals.',
+    answerFirstFacts: [
+      'Cash liquidation takes 5-10 business days through your custodian',
+      'In-kind distribution lets you receive the actual physical gold instead of cash',
+      'No 10% penalty after age 59 1/2 — only ordinary income tax on Traditional IRA withdrawals',
+      'Many Gold IRA companies like Augusta offer buyback programs for competitive pricing when you sell',
     ],
     targetKeyword: 'liquidate gold ira',
     volume: 70,
@@ -603,6 +624,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'gold ira penalty exceptions',
       'gold ira 10% penalty'
     ],
+    answerFirst: 'If you withdraw from a Gold IRA before age 59 1/2, you pay a 10% early withdrawal penalty plus regular income tax on the full amount. On a $50,000 withdrawal in the 22% tax bracket, that means roughly $16,000 in combined taxes and penalties — losing nearly a third of your money.',
+    answerFirstFacts: [
+      'Early withdrawal penalty is 10% of the distribution amount, on top of income taxes',
+      'Exceptions include disability, first-time home purchase ($10,000 max), and SEPP/72(t) distributions',
+      'Roth Gold IRA contributions (not earnings) can be withdrawn penalty-free anytime',
+      'SEPP (Substantially Equal Periodic Payments) allows penalty-free access at any age but locks you in for 5 years or until 59 1/2',
+    ],
     targetKeyword: 'sell gold ira penalty',
     volume: 40,
     difficulty: 4,
@@ -803,6 +831,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'ira approved silver coins',
       'ira eligible precious metals',
       'gold ira approved bars'
+    ],
+    answerFirst: 'IRS-approved gold coins for IRAs include American Gold Eagles, Canadian Gold Maple Leafs, and Australian Gold Kangaroos, plus any gold bar or round that is 99.5% pure (0.995 fineness). American Gold Eagles are the only exception to the purity rule — they are 91.67% gold but specifically allowed by law.',
+    answerFirstFacts: [
+      'Gold must be 99.5% pure (0.995 fineness) — the only exception is American Gold Eagles at 91.67%',
+      'Silver must be 99.9% pure; platinum and palladium must be 99.95% pure',
+      'Popular approved coins: American Eagle, Canadian Maple Leaf, Australian Kangaroo, Austrian Philharmonic',
+      'Collectible or numismatic coins are NOT allowed in IRAs — only bullion-grade coins and bars',
     ],
     targetKeyword: 'gold ira approved coins list',
     volume: 90,
@@ -1019,6 +1054,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'long term care insurance alternatives',
       'self insure long term care'
     ],
+    answerFirst: 'Long-term care insurance is worth it for people with $200,000-$2,000,000 in assets — enough to protect but not enough to easily self-insure. If you have under $200,000, Medicaid may cover you. If you have over $2 million, you can likely pay out of pocket. The average nursing home costs $108,000 per year, and most people need care for 2-3 years.',
+    answerFirstFacts: [
+      'Average nursing home costs $108,000/year; assisted living averages $54,000/year',
+      'The average long-term care need lasts 2-3 years, but 20% of people need care for 5+ years',
+      'LTC insurance premiums for a 55-year-old couple average $3,000-$5,000/year',
+      'Premiums can increase 40-60% over the life of the policy — they are not locked in',
+    ],
     targetKeyword: 'long-term-care-insurance-worth-it',
     volume: 70,
     difficulty: 5,
@@ -1220,6 +1262,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'retirement planning tips',
       'biggest retirement mistakes'
     ],
+    answerFirst: 'The biggest retirement planning mistakes are not saving enough early, underestimating healthcare costs (average couple needs $315,000+), ignoring inflation that cuts your purchasing power in half over 20 years, poor diversification, and claiming Social Security too early — which permanently reduces your benefit by up to 30%.',
+    answerFirstFacts: [
+      'The average couple needs $315,000+ for healthcare costs in retirement (Fidelity estimate)',
+      'At 3% inflation, $100,000 in purchasing power drops to about $55,000 in 20 years',
+      'Claiming Social Security at 62 instead of 67 reduces your benefit permanently by about 30%',
+      'Having more than 60% of your portfolio in a single asset class is a dangerous concentration risk',
+    ],
     targetKeyword: 'biggest retirement planning mistakes',
     volume: 30,
     difficulty: 4,
@@ -1419,6 +1468,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'supplement teacher pension',
       'teacher retirement savings',
       'educator pension'
+    ],
+    answerFirst: 'Most teacher pensions replace 50-70% of your final salary, which usually is not enough to maintain your lifestyle in retirement. You should supplement your pension with a 403(b) or 457(b) plan — and be careful of high-fee 403(b) plans that charge 1-2% annually. Teachers in 15 states do not receive Social Security, making supplemental savings even more critical.',
+    answerFirstFacts: [
+      'Average teacher pension replaces 50-70% of final salary — most retirees need 80-90%',
+      'Teachers in 15 states are not covered by Social Security and rely entirely on pensions',
+      'Many 403(b) plans sold to teachers have annual fees of 1-2%, which can eat $100,000+ over a career',
+      'Teachers with 457(b) access can contribute to both 403(b) and 457(b) — up to $46,000 combined in 2025',
     ],
     targetKeyword: 'teacher pension vs 401k',
     volume: 60,
@@ -1626,6 +1682,13 @@ export const goldIraDecisionsArticles: LearnArticleRegistry = {
       'asset based long term care',
       'life insurance with long term care benefits',
       'linked benefit ltc'
+    ],
+    answerFirst: 'A hybrid life insurance/long-term care policy combines life insurance with LTC coverage — if you need long-term care, it pays for that; if you never need care, your beneficiaries get a death benefit. Unlike traditional LTC insurance, premiums are typically guaranteed not to increase and you get a benefit either way.',
+    answerFirstFacts: [
+      'Hybrid policies typically cost $50,000-$150,000 as a single premium or $5,000-$15,000/year',
+      'Unlike traditional LTC insurance, hybrid premiums are usually guaranteed never to increase',
+      'If you never need LTC, your beneficiaries receive a death benefit — money is not wasted',
+      'Most hybrid policies provide 2-6 years of LTC coverage with a typical benefit pool of $200,000-$500,000',
     ],
     targetKeyword: 'hybrid life insurance long term care',
     volume: 100,

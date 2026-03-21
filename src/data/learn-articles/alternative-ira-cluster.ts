@@ -18,6 +18,13 @@ export const alternativeIraArticles: LearnArticleRegistry = {
       'self directed ira private equity',
       'invest in private equity with ira'
     ],
+    answerFirst: 'You can invest in private equity through a self-directed IRA, but most PE funds require accredited investor status ($200k+ income or $1M+ net worth) and minimums of $25,000 to $250,000. PE investments are locked up for 7-10 years, making them impractical for most retirement savers.',
+    answerFirstFacts: [
+      'Private equity IRA requires a self-directed IRA custodian that allows alternative investments',
+      'Most PE funds require accredited investor status: $200,000+ income or $1,000,000+ net worth',
+      'Typical PE fee structure is "2 and 20" — 2% annual management fee plus 20% of profits',
+      'Lockup periods of 7-10 years mean you cannot access your money during that time',
+    ],
     targetKeyword: 'private equity ira',
     volume: 200,
     difficulty: 0,
@@ -227,6 +234,13 @@ export const alternativeIraArticles: LearnArticleRegistry = {
       'ira real estate investment rules',
       'self directed ira property rules',
       'ira rental property rules'
+    ],
+    answerFirst: 'Self-directed IRA real estate rules center on prohibited transactions: you cannot buy from, sell to, or rent to yourself or family members (spouse, parents, children). You cannot live in or personally use the property, and you cannot do repairs yourself. One violation disqualifies your entire IRA.',
+    answerFirstFacts: [
+      'Property must be titled in the IRA name, not your personal name (format: "Custodian FBO Your Name IRA")',
+      'Prohibited transactions with disqualified persons (you, spouse, parents, children) disqualify your entire IRA',
+      'UDFI tax applies when using mortgage financing — taxed on the debt-financed portion of income',
+      'All income must go into the IRA and all expenses must be paid from the IRA — no personal funds',
     ],
     targetKeyword: 'self directed ira real estate rules',
     volume: 100,
@@ -451,6 +465,13 @@ export const alternativeIraArticles: LearnArticleRegistry = {
       'self directed ira investments',
       'alternative investments retirement account',
       'sdira investment options'
+    ],
+    answerFirst: 'IRA alternative investments include real estate, private equity, cryptocurrency, and precious metals — all held through a self-directed IRA. Gold and precious metals are the most accessible option for average retirement savers, with low minimums ($5,000-$10,000), no accredited investor requirements, and high liquidity.',
+    answerFirstFacts: [
+      'You need a self-directed IRA (SDIRA) custodian to invest in alternatives — Fidelity and Vanguard do not allow them',
+      'Real estate IRA requires $50,000+ minimum and has complex prohibited transaction rules',
+      'Private equity requires accredited investor status ($200k income or $1M net worth) and 7-10 year lockups',
+      'Gold IRA has the lowest barriers: $5,000-$10,000 minimum, no accreditation needed, sell anytime',
     ],
     targetKeyword: 'ira alternative investments',
     volume: 150,

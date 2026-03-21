@@ -19,6 +19,13 @@ export const goldIraComparisonArticles: LearnArticleRegistry = {
       'gold ira compared to physical gold',
       'physical gold retirement'
     ],
+    answerFirst: 'For retirement savings, a Gold IRA is usually better than buying physical gold because of the tax advantages. Gold in a Traditional IRA grows tax-deferred, and in a Roth IRA it grows tax-free. Physical gold held outside an IRA gets hit with up to 28% collectibles capital gains tax when you sell.',
+    answerFirstFacts: [
+      'Gold IRA offers tax-deferred or tax-free growth; physical gold faces up to 28% capital gains tax',
+      'Gold IRA metals must be stored at an IRS-approved depository — home storage is not allowed',
+      'You can take physical possession of Gold IRA metals when you take a distribution in retirement',
+      'Many investors hold both: a Gold IRA for retirement tax benefits and a small physical position for emergency access',
+    ],
     targetKeyword: 'gold ira vs physical gold',
     volume: 600,
     difficulty: 2,
@@ -208,6 +215,13 @@ export const goldIraComparisonArticles: LearnArticleRegistry = {
       'gold etf for retirement',
       'gold ira vs gld'
     ],
+    answerFirst: 'A Gold IRA holds physical gold bars and coins in your name, while a gold ETF like GLD gives you shares in a fund — you never own the actual metal. For long-term retirement security, a Gold IRA is better because you own real gold with no counterparty risk. Gold ETFs are better for short-term trading.',
+    answerFirstFacts: [
+      'Gold ETF (GLD) charges 0.40% annually, which compounds — on $500,000 that is $2,000/year vs $150-$450 flat for Gold IRA',
+      'GLD shareholders cannot redeem shares for physical gold unless they own 100,000+ shares',
+      'In a financial crisis, paper gold (ETFs) has historically traded at a discount to physical gold',
+      'Gold IRA flat fees become more economical as your balance grows, while ETF percentage fees grow with your balance',
+    ],
     targetKeyword: 'gold ira vs gold etf',
     volume: 90,
     difficulty: 0,
@@ -396,6 +410,13 @@ export const goldIraComparisonArticles: LearnArticleRegistry = {
       'gold ira annual fees',
       'gold ira custodian fees',
       'gold ira depository fees'
+    ],
+    answerFirst: 'Gold IRA storage fees typically total $150-$450 per year, which includes custodian fees ($50-$150/year) and depository storage fees ($100-$300/year). These are flat annual fees that stay the same regardless of how much gold you have, making them more economical as your account grows.',
+    answerFirstFacts: [
+      'Total annual Gold IRA fees: custodian fee ($50-$150) + storage fee ($100-$300) = $150-$450/year',
+      'Segregated storage (your gold stored separately) costs $150-$300/year; commingled costs $75-$150/year',
+      'Setup fees range from $0 to $50 — many companies waive them for accounts over $50,000',
+      'Augusta Precious Metals offers no fees for up to 10 years on qualifying accounts',
     ],
     targetKeyword: 'gold ira storage fees',
     volume: 70,
@@ -597,6 +618,13 @@ export const goldIraComparisonArticles: LearnArticleRegistry = {
       'gold ira minimum deposit',
       'how much to start gold ira',
       'gold ira minimum balance'
+    ],
+    answerFirst: 'Gold IRA minimum investments range from $10,000 to $50,000 depending on the company. Augusta Precious Metals requires $50,000 but offers premium service and no fees for up to 10 years. Goldco and American Hartford Gold accept $25,000 minimums. For smaller amounts, Noble Gold starts at around $10,000.',
+    answerFirstFacts: [
+      'Augusta Precious Metals: $50,000 minimum with premium white-glove service',
+      'Goldco and American Hartford Gold: $25,000 minimum for most account types',
+      'Noble Gold and Birch Gold: $10,000-$20,000 minimums for budget-conscious investors',
+      'Rollover minimums (from 401k/IRA) may differ from direct cash contribution minimums',
     ],
     targetKeyword: 'gold ira minimum investment',
     volume: 100,

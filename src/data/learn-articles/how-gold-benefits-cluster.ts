@@ -22,6 +22,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'gold CPI comparison',
       'gold purchasing power'
     ],
+    answerFirst: 'Yes, gold works as an inflation hedge over the long run. Since 1971, the US dollar has lost over 85% of its purchasing power while gold has risen more than 5,000%. In every major inflationary period (1970s, 2008, 2020-2023), gold significantly outperformed cash and bonds.',
+    answerFirstFacts: [
+      'Gold rose over 2,300% from 1971-2024 while the dollar lost 85%+ of its purchasing power',
+      'During the 1970s inflation crisis, gold surged from $35/oz to $850/oz — a 2,300% gain',
+      'Financial advisors typically recommend 5-15% of retirement portfolios in gold for inflation protection',
+      'Gold is priced in dollars, so when the dollar weakens from inflation, gold prices tend to rise',
+    ],
     targetKeyword: 'gold vs inflation',
     category: 'how-gold',
     threatLevel: 'info',
@@ -181,6 +188,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'does gold go up in recession',
       'gold bear market returns'
     ],
+    answerFirst: 'Gold has risen during most US recessions since 1970. During the 2008 financial crisis, gold gained 25% while the S&P 500 dropped 57%. In the 2020 COVID crash, gold hit all-time highs. Gold tends to surge when fear rises and investors flee to safety.',
+    answerFirstFacts: [
+      'Gold gained 25% during the 2008 financial crisis while stocks fell 57%',
+      'Gold rose during 6 of the last 8 US recessions since 1970',
+      'During the 2020 COVID crash, gold reached new all-time highs above $2,000/oz',
+      'The exception was the 1981 recession when gold fell due to extremely high interest rates (20%)',
+    ],
     targetKeyword: 'gold during recession',
     category: 'how-gold',
     threatLevel: 'warning',
@@ -323,6 +337,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'gold vs stock market returns',
       'should retirees buy gold or stocks',
       'gold stock allocation retirement'
+    ],
+    answerFirst: 'Stocks deliver better long-term growth (averaging 10%/year), but gold provides better crash protection. For retirees, the answer is both: stocks for growth and gold for protection. A portfolio with 10-20% gold alongside stocks has historically delivered smoother returns with smaller drawdowns.',
+    answerFirstFacts: [
+      'The S&P 500 averages about 10% annual returns; gold averages 7-8% long-term',
+      'Gold has negative correlation to stocks — it tends to rise when stocks fall',
+      'During 2008, gold gained 25% while the S&P 500 lost 57%',
+      'A 20% gold / 80% stock portfolio reduced max drawdown by about 30% historically',
     ],
     targetKeyword: 'gold vs stocks retirement',
     category: 'how-gold',
@@ -480,6 +501,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'gold vs corporate bonds',
       'should retirees buy gold or bonds',
       'gold bond comparison'
+    ],
+    answerFirst: 'Gold has outperformed bonds over the last 25 years, and the 2022 bond crash proved bonds are no longer the safe haven they used to be. Gold provides better inflation protection, while bonds offer income. For retirees, holding both makes sense, but many advisors now recommend increasing gold allocation.',
+    answerFirstFacts: [
+      'In 2022, bonds (AGG) lost 13% — the worst bond year in decades — while gold held steady',
+      'The classic 60/40 stock/bond portfolio lost about 16% in 2022, its worst year since 2008',
+      'Gold outperformed 10-year Treasury bonds by about 4% annually over the last 25 years',
+      'Bonds generate income; gold does not — but gold protects purchasing power better during inflation',
     ],
     targetKeyword: 'gold vs bonds',
     category: 'how-gold',
@@ -640,6 +668,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'gold vs real estate returns',
       'should retirees invest in gold or real estate'
     ],
+    answerFirst: 'Real estate can build wealth, but it comes with headaches gold never will: tenants, repairs, property taxes, and illiquidity. For retirees over 55, gold offers similar diversification benefits without being a landlord. Gold is also far more liquid — you can sell in days, not months.',
+    answerFirstFacts: [
+      'Real estate returns average 8-12% (including rental income) vs gold at 7-8% long-term',
+      'Selling a house takes 2-6 months and costs 5-6% in commissions; gold sells in 5-10 days',
+      'Real estate requires ongoing management, maintenance, and capital expenditures',
+      'Gold has zero maintenance costs, no tenants, and no property taxes',
+    ],
     targetKeyword: 'gold vs real estate',
     category: 'how-gold',
     threatLevel: 'info',
@@ -797,6 +832,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'gold crisis protection',
       'gold wealth preservation'
     ],
+    answerFirst: 'Gold is the ultimate safe haven because it has preserved wealth for over 5,000 years across every economic system, currency collapse, and financial crisis in human history. Central banks hold over 36,000 tonnes of gold as reserves — they trust it more than any other asset when things go wrong.',
+    answerFirstFacts: [
+      'Central banks bought a record 1,136 tonnes of gold in 2022 and continued buying in 2023-2024',
+      'Gold has maintained purchasing power for 5,000+ years — an ounce bought a fine Roman toga and still buys a quality suit today',
+      'During every major financial crisis since 1970, gold has risen while most other assets fell',
+      'Gold cannot be printed, devalued by governments, or go bankrupt — unlike currencies and stocks',
+    ],
     targetKeyword: 'gold as safe haven',
     category: 'how-gold',
     threatLevel: 'info',
@@ -945,6 +987,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'bitcoin vs gold investment',
       'should retirees buy bitcoin or gold',
       'crypto vs gold for seniors'
+    ],
+    answerFirst: 'For retirement investors over 55, gold is the safer choice over Bitcoin and crypto. Bitcoin has dropped 77% or more three times, which could devastate a retirement portfolio. Gold has 5,000 years of track record; Bitcoin has 15 years. A small crypto allocation (1-5%) alongside a larger gold position (10-20%) is the prudent approach.',
+    answerFirstFacts: [
+      'Bitcoin has experienced drawdowns of 77-85% three times (2014, 2018, 2022)',
+      'Gold\'s worst drawdown in the modern era was about 45% (1980-1982)',
+      'Bitcoin has a 15-year track record; gold has a 5,000-year track record',
+      'Financial advisors generally recommend no more than 1-5% in crypto for retirement portfolios',
     ],
     targetKeyword: 'gold vs crypto retirement',
     category: 'how-gold',
@@ -1106,6 +1155,13 @@ export const howGoldBenefitsArticles: LearnArticleRegistry = {
       'gold vs silver retirement',
       'should I buy gold or silver',
       'gold silver comparison'
+    ],
+    answerFirst: 'Gold is the better core retirement holding because it is more stable and acts as a pure monetary metal. Silver is more volatile (often swinging 2-3x as much as gold) because about 50% of silver demand comes from industrial use. Most advisors recommend starting with gold and adding silver as a secondary position.',
+    answerFirstFacts: [
+      'Silver is roughly 2-3 times more volatile than gold due to its industrial demand (50% of use)',
+      'The gold-to-silver ratio averages about 60-80; when it is above 80, silver may be undervalued',
+      'Gold is easier to store — $100,000 in gold weighs about 2 pounds vs 180+ pounds for silver',
+      'Both gold and silver are available in Gold IRA accounts through the same custodians',
     ],
     targetKeyword: 'gold vs silver investment',
     category: 'how-gold',

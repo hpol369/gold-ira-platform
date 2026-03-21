@@ -12,7 +12,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Husband Retired Wife Still Working: Marriage & Financial Guide | 2026',
     metaDescription: 'Husband retired but wife still working? Learn to manage household dynamics, finances, expectations, and emotional adjustment when spouses retire at different times.',
     keywords: ['husband retired wife still working', 'spouse still working', 'retired while spouse works', 'husband retired wife works'],
-
+    answerFirst: 'When your husband retires but you are still working, you need to renegotiate household responsibilities, coordinate finances, and manage the emotional dynamics of living on different schedules. The biggest mistake couples make is not talking about expectations — especially who handles chores, how money is spent, and what the retired spouse does all day.',
+    answerFirstFacts: [
+      'The working spouse should keep employer health insurance to cover both spouses until Medicare',
+      'Delay the retired spouse\'s retirement account withdrawals if the salary covers expenses',
+      'The retired spouse needs independent activities — sitting around waiting causes resentment',
+      'Set a target date for when the working spouse will also retire so there is an end in sight',
+    ],
     targetKeyword: 'husband retired wife still working',
     volume: 20,
     difficulty: 0,
@@ -182,7 +188,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Wife Retired Husband Still Working: Emotional & Financial Guide | 2026',
     metaDescription: 'Wife retired but husband still working? Manage role reversal, household dynamics, financial planning, and emotional adjustment in this less common retirement scenario.',
     keywords: ['wife retired husband still working', 'wife retires first', 'woman retired man working'],
-
+    answerFirst: 'When the wife retires first, traditional gender role expectations can create friction. The key is to avoid falling into old patterns where the retired wife is expected to handle all household duties. Both spouses need to communicate openly about expectations, finances, and what the retired spouse\'s daily life will look like.',
+    answerFirstFacts: [
+      'Women increasingly retire before their husbands as more women have full careers',
+      'The retired wife should not be expected to take on all cooking, cleaning, and errands',
+      'Keep the working husband\'s health insurance active if it covers both spouses',
+      'Plan together for when the husband will retire — having a timeline reduces tension',
+    ],
     targetKeyword: 'wife retired husband still working',
     volume: 10,
     difficulty: 0,
@@ -348,7 +360,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Staggered Retirement Strategy: Benefits & Planning Guide | 2026',
     metaDescription: 'Staggered retirement planning for couples. Learn healthcare bridge strategies, income coordination, Social Security optimization when retiring at different times.',
     keywords: ['staggered retirement', 'retiring different times', 'sequential retirement', 'phased retirement couples'],
-
+    answerFirst: 'Staggering your retirements — where one spouse retires first — can actually be a smart financial strategy. It keeps employer health insurance active longer, lets you delay Social Security for bigger checks, and provides continued income while the first retiree adjusts. More couples are doing this intentionally rather than just by circumstance.',
+    answerFirstFacts: [
+      'The working spouse\'s employer health insurance can cover both spouses until Medicare at 65',
+      'Having one income stream allows the other spouse to delay Social Security for 8% annual increase',
+      'Staggered retirement provides a trial period for the first retiree to adjust',
+      'The couple can live on one salary while letting retirement accounts continue growing',
+    ],
     targetKeyword: 'staggered retirement',
     volume: 10,
     difficulty: 2,
@@ -523,7 +541,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'One More Year Syndrome: Overcoming Retirement Paralysis | 2026',
     metaDescription: 'Can\'t pull the trigger on retirement? Learn about one more year syndrome, psychological barriers to retiring, signs you\'re ready, and how to overcome retirement fear.',
     keywords: ['one more year syndrome', 'afraid to retire', 'can\'t pull the trigger retirement', 'retirement paralysis'],
-
+    answerFirst: 'One More Year Syndrome is when you are financially ready to retire but keep pushing it back because of fear, perfectionism, or identity attachment to work. The real cost is trading years of healthy retirement for money you do not need. If your financial plan works, the problem is not money — it is psychology.',
+    answerFirstFacts: [
+      'Studies show retirees who delayed unnecessarily often regretted not retiring sooner',
+      'Common root causes: fear of running out of money, loss of identity, moving the goalpost',
+      'If your financial plan supports retirement, working "one more year" rarely changes the math meaningfully',
+      'The average American retires at 64 but reports optimal happiness retiring between 60-62',
+    ],
     targetKeyword: 'one more year syndrome',
     volume: 70,
     difficulty: 0,
@@ -695,7 +719,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Fear of Retiring: Overcoming Retirement Anxiety & Worry | 2026',
     metaDescription: 'Scared to retire? Learn to address retirement anxiety, common fears (money, identity, boredom), coping strategies, and how to retire with confidence.',
     keywords: ['fear of retiring', 'scared to retire', 'retirement anxiety', 'worried about retirement'],
-
+    answerFirst: 'Fear of retiring is completely normal and affects most people approaching this major life change. The most common fears are running out of money, losing your identity, becoming bored, and social isolation. Address each fear practically — run your financial numbers, build a retirement routine before you leave work, and start social activities now.',
+    answerFirstFacts: [
+      'Financial fear is the number one retirement anxiety — even among people with enough savings',
+      'Loss of work identity hits hardest in the first 6-12 months of retirement',
+      'Social isolation increases health risks equivalent to smoking 15 cigarettes per day',
+      'People who plan activities and social connections before retiring report much higher satisfaction',
+    ],
     targetKeyword: 'fear of retiring',
     volume: 10,
     difficulty: 1,
@@ -873,7 +903,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Making Friends in Retirement: Social Life After Retiring | 2026',
     metaDescription: 'How to make friends in retirement. Learn strategies for building social connections, activities, community involvement, and maintaining friendships after leaving the workforce.',
     keywords: ['making friends in retirement', 'retirement social life', 'friends after retirement', 'social connections retirement'],
-
+    answerFirst: 'Most work friendships fade within months of retirement because they were based on proximity, not deep connection. To build new friendships, join regular group activities — volunteering, classes, clubs, or fitness groups. The key is showing up consistently to the same activity, because friendships form through repeated casual contact over time.',
+    answerFirstFacts: [
+      'Research shows adults need 50+ hours of interaction to go from acquaintance to casual friend',
+      'Group activities with regular schedules (weekly classes, volunteer shifts) build friendships fastest',
+      'Men struggle more than women with retirement friendships — often their only social network was work',
+      'Social isolation in retirement increases mortality risk by 26% according to research',
+    ],
     targetKeyword: 'making friends in retirement',
     volume: 30,
     difficulty: 0,
@@ -1049,7 +1085,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Retirement Identity Crisis: Finding Purpose After Career | 2026',
     metaDescription: 'Struggling with identity after retirement? Learn to overcome "who am I without work" crisis, find purpose post-career, and build meaningful retirement identity.',
     keywords: ['retirement identity crisis', 'who am i without work', 'purpose after retirement', 'retirement purpose'],
-
+    answerFirst: 'Retirement identity crisis happens when your entire sense of self was tied to your job title, and suddenly that is gone. It is most common in the first year of retirement. The solution is building a new identity before you leave work — through hobbies, volunteering, mentoring, or part-time work that gives you purpose without the grind.',
+    answerFirstFacts: [
+      'Identity crisis is most intense in the first 6-12 months of retirement',
+      'People who defined themselves primarily by career title struggle most',
+      'Starting hobbies and volunteer work BEFORE retirement makes the transition much smoother',
+      'Retirees with 3+ sources of purpose (hobbies, volunteering, social groups) report highest satisfaction',
+    ],
     targetKeyword: 'retirement identity crisis',
     volume: 20,
     difficulty: 3,
@@ -1228,7 +1270,13 @@ export const couplesPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Lonely in Retirement: Overcoming Isolation & Loneliness | 2026',
     metaDescription: 'Feeling lonely in retirement? Learn warning signs of retirement loneliness, health impacts, strategies to combat isolation, and how to stay socially connected.',
     keywords: ['lonely in retirement', 'retirement loneliness', 'isolated in retirement', 'alone in retirement'],
-
+    answerFirst: 'Retirement loneliness is a serious problem that affects your physical and mental health. When you lose the daily structure and social contact of work, isolation can creep in fast. The fix is proactive — join groups, volunteer, take classes, and schedule regular social activities before loneliness takes hold.',
+    answerFirstFacts: [
+      'Loneliness increases mortality risk by 26% — comparable to smoking 15 cigarettes daily',
+      'Men are more likely to experience retirement loneliness because work was often their primary social outlet',
+      'The transition from work to retirement is when loneliness risk is highest',
+      'Having just 3-5 close social connections significantly reduces loneliness and improves health outcomes',
+    ],
     targetKeyword: 'lonely in retirement',
     volume: 10,
     difficulty: 2,
