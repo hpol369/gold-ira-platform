@@ -8,6 +8,7 @@ import { calculatePotentialDeal } from "@/lib/deal-calculator";
 import { submitToAugusta } from "@/lib/augusta";
 import { enrollInSequence, upgradeSequence, checkActiveSequence } from "@/lib/email-queue";
 import { getSequenceForContext } from "@/lib/email-sequences";
+import { sendHighIntentSMS, isTwilioConfigured } from "@/lib/sms";
 
 // Simple rate limiting (per IP, resets on deploy)
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -251,7 +252,21 @@ export async function POST(request: NextRequest) {
       console.error("[TELEGRAM ERROR]", err);
     }
 
-    // 4. Submit to Augusta via Zapier webhook (unless skipAugusta is true)
+    // 4. Send SMS confirmation for high-intent leads (they gave us their phone)
+    if (lead.phone && isTwilioConfigured()) {
+      const sequenceId = getSequenceForContext("lead-form", body.savingsTier);
+      if (sequenceId === "high-intent") {
+        try {
+          await sendHighIntentSMS(lead.phone, body.firstName);
+          console.log("[LEAD] High-intent SMS sent to", lead.phone);
+        } catch (err) {
+          console.error("[SMS] Failed for lead:", lead.email, err);
+          // Non-critical — don't fail the lead submission
+        }
+      }
+    }
+
+    // 5. Submit to Augusta via Zapier webhook (unless skipAugusta is true)
     if (body.skipAugusta) {
       // New confirmation flow: save lead but don't send to Augusta yet
       return NextResponse.json({

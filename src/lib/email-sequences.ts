@@ -296,69 +296,83 @@ const highIntent: Sequence = {
   name: "Augusta Support",
   description: "Supports Augusta call for $50k+ leads — NEVER uses Augusta affiliate links",
   emails: [
-    // === THE AUGUSTA SUPPORT WINDOW (Days 0-3) ===
+    // === THE AUGUSTA SUPPORT WINDOW (Hours 0-24) ===
+    // Step 0: Immediate — guide + "save this number" callout
     {
       step: 0,
       delayDays: 0,
-      subject: "{{firstName}}, your guide + 3 things to know",
+      subject: "{{firstName}}, your guide + save this number",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "A 15-min call is coming. Here's how to get the most out of it.",
+        preheader: "Augusta calls within 24hrs. Save their number so you don't miss it.",
         body: `
-          ${p(`${firstName || "Hey"}, you're in.`)}
-          ${p("<strong>Two things are happening right now:</strong>")}
+          ${p(`${firstName || "Hey"}, you're in. Two things are happening right now:`)}
+          ${callout(`<strong>&#128222; SAVE THIS NUMBER:</strong> Augusta will call from <strong>(844) 405-3908</strong> within 24 hours. Save it to your phone as "Augusta Precious Metals" so you don't miss it. The call takes 15 minutes and there's zero obligation.`, "warning")}
           ${h2("1. Your Free Guide")}
-          ${p("Download the 2026 Gold IRA Protection Guide below. If you're short on time, read Chapter 10 first — it has the 10 questions to ask your specialist.")}
-          ${h2("2. Your Specialist Call")}
-          ${p("An Augusta Precious Metals specialist will reach out within 24 hours. Here's what to expect:")}
-          ${ul([
-            "It takes about 15 minutes",
-            "It's educational, not a sales pitch",
-            "They'll explain how a Gold IRA works for YOUR situation",
-            "There's zero obligation",
-          ])}
-          ${p("Augusta has an A+ BBB rating with zero complaints in 6+ years. They didn't get that rating by being pushy.")}
-          ${hr()}
-          ${p("<strong>If you want to prep (takes 2 minutes):</strong>")}
+          ${p("Download the 2026 Gold IRA Protection Guide below. Short on time? Read Chapter 10 first — it has the 10 questions to ask your specialist.")}
+          ${h2("2. Quick Prep (2 minutes)")}
           ${ul([
             "Know your total retirement savings (rough number is fine)",
-            "Know where it's held (Fidelity, Vanguard, employer plan)",
+            "Know where it's held (Fidelity, Vanguard, employer plan, etc.)",
             "Have one question ready (the guide has 10 good ones)",
           ])}
+          ${p("Augusta has an A+ BBB rating with zero complaints in 6+ years. They didn't get that by being pushy.")}
           ${p("Talk soon,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
         ctaText: "Download Your Free Guide (PDF) →",
         ctaUrl: GUIDE_PDF,
       }),
     },
+    // Step 1: 4 HOURS later — "call is coming soon" + minute-by-minute preview
+    // This is the KEY email — arrives while they're still warm, BEFORE the call
     {
       step: 1,
-      delayDays: 1,
-      subject: "Exactly what happens on the call (no surprises)",
+      delayDays: 0.17, // ~4 hours (0.17 * 24 = 4.08hrs)
+      subject: "Your call with Augusta — what to expect (minute by minute)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "Minute by minute — so you know what to expect.",
+        preheader: "No surprises. Here's the exact 15-minute agenda.",
         body: `
-          ${p(`${firstName || "Hey"}, your Augusta specialist is reaching out today or tomorrow. Here's exactly what the call looks like so there are no surprises:`)}
+          ${p(`${firstName || "Hey"}, your Augusta specialist will be reaching out soon. Here's exactly what the call looks like — no surprises:`)}
+          ${callout(`<strong>Remember:</strong> Augusta calls from <strong>(844) 405-3908</strong>. If you see that number, pick up — it's your specialist.`, "info")}
           ${h2("Minute 1-3: Your Situation")}
-          ${p("They'll ask about your savings — how much, where it's held, and when you're planning to retire. They don't need account numbers.")}
+          ${p("They'll ask about your savings — how much, where it's held, when you're planning to retire. They don't need account numbers.")}
           ${h2("Minute 4-8: Education")}
-          ${p("They'll explain how a Gold IRA rollover works, the IRS rules, and what it actually costs. This is the part most people find valuable even if they don't move forward.")}
+          ${p("They'll explain how a Gold IRA rollover works, the IRS rules, and what it actually costs. This is the part most people find valuable <em>even if they don't move forward.</em>")}
           ${h2("Minute 9-12: Your Questions")}
-          ${p("Your turn. Ask anything. The 10 questions from your guide are perfect for this.")}
+          ${p("Your turn. Ask anything. The 10 questions from your guide are perfect here.")}
           ${h2("Minute 13-15: Next Steps (only if YOU want)")}
           ${p("If you want to proceed, they'll explain the paperwork. If not, they'll say thanks and mean it.")}
           ${hr()}
-          ${p("Nobody will pressure you. Nobody will call you 47 times afterward.")}
+          ${p("<strong>Bottom line:</strong> Nobody will pressure you. Nobody will call you 47 times afterward. Augusta has zero BBB complaints in 6+ years — they don't operate that way.")}
         `,
         ctaText: "Review Your Guide Before the Call →",
         ctaUrl: GUIDE_PDF,
       }),
     },
+    // Step 2: Day 1 — morning-of reminder (in case they submitted late evening)
     {
       step: 2,
+      delayDays: 1,
+      subject: "Heads up — Augusta may call today",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: `Look for (844) 405-3908 on your caller ID.`,
+        body: `
+          ${p(`Quick reminder, ${firstName || "hey"} — Augusta's team may reach out today.`)}
+          ${callout(`Look for <strong>(844) 405-3908</strong> on your caller ID. It's a 15-minute educational call, not a sales pitch.`, "info")}
+          ${p("If you miss it, no stress — they'll try again. Or you can call them directly anytime:")}
+          ${p(`<strong><a href="tel:8444053908" style="color:#B22234;text-decoration:underline;font-size:18px;">&#128222; (844) 405-3908</a></strong><br><span style="font-size:13px;color:#64748b;">Ask for the Gold IRA education team</span>`)}
+        `,
+        ctaText: "Review Your Guide →",
+        ctaUrl: GUIDE_PDF,
+      }),
+    },
+    {
+      step: 3,
       delayDays: 3,
       subject: "Quick check-in (3 options inside)",
       buildHtml: (email, firstName) => emailLayout({
@@ -383,7 +397,7 @@ const highIntent: Sequence = {
     },
     // === POST-SUPPORT WINDOW (Days 7+) — education + value ===
     {
-      step: 3,
+      step: 4,
       delayDays: 7,
       skipIfConnected: true,
       subject: "Why your advisor steers you away from gold",
@@ -410,7 +424,7 @@ const highIntent: Sequence = {
       }),
     },
     {
-      step: 4,
+      step: 5,
       delayDays: 11,
       skipIfConnected: true,
       subject: "\"My wife thought I was nuts\"",
@@ -432,7 +446,7 @@ const highIntent: Sequence = {
       }),
     },
     {
-      step: 5,
+      step: 6,
       delayDays: 16,
       subject: "Kiyosaki is half right about gold",
       buildHtml: (email, firstName) => emailLayout({
@@ -468,7 +482,7 @@ const highIntent: Sequence = {
       }),
     },
     {
-      step: 6,
+      step: 7,
       delayDays: 21,
       subject: "Everything in one place (last email)",
       buildHtml: (email, firstName) => emailLayout({
@@ -935,17 +949,24 @@ export function getSequenceForTier(savingsTier: string): string {
 
 /**
  * Calculate the next send time for a sequence step
+ * Supports fractional days: 0.17 = ~4 hours, 0.5 = 12 hours
  */
 export function getNextSendTime(delayDays: number): Date {
   const now = new Date();
-  // Send at 10 AM ET (14:00 UTC) on the target day
-  const targetDate = new Date(now.getTime() + delayDays * 24 * 60 * 60 * 1000);
-  targetDate.setUTCHours(14, 0, 0, 0);
 
   // If delay is 0 (immediate), send right now
   if (delayDays === 0) {
     return now;
   }
 
+  // Sub-day delays (< 1 day): send X hours from now (don't snap to 10 AM)
+  if (delayDays < 1) {
+    const delayMs = delayDays * 24 * 60 * 60 * 1000;
+    return new Date(now.getTime() + delayMs);
+  }
+
+  // Full-day delays: send at 10 AM ET (14:00 UTC) on the target day
+  const targetDate = new Date(now.getTime() + delayDays * 24 * 60 * 60 * 1000);
+  targetDate.setUTCHours(14, 0, 0, 0);
   return targetDate;
 }
