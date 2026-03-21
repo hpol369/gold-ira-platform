@@ -88,6 +88,10 @@ const nextConfig: NextConfig = {
       { source: '/silver-experts/keith-neumeyer', destination: '/silver-experts', permanent: true },
       { source: '/silver-experts/peter-schiff-silver', destination: '/silver-experts', permanent: true },
       { source: '/silver-squeeze/reddit-wallstreetsilver-review', destination: '/silver-squeeze', permanent: true },
+      // 401k-to-gold cannibalization fix — consolidate to single authority page
+      { source: '/guide/transfer-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
+      { source: '/guide/convert-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
+      { source: '/guide/move-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
     ];
   },
 };
