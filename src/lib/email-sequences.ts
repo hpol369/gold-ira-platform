@@ -8,7 +8,7 @@
 // 3. No separate sendGuideEmail() — sequence step 0 IS the guide delivery
 // 4. Days 0-3 of high-intent = Augusta Support Window (prep for the call)
 
-import { emailLayout, p, h2, ul, hr, trustBadge } from "./email-templates";
+import { emailLayout, p, h2, ul, hr, trustBadge, utmLink, callout, quote, statRow, secondaryCta } from "./email-templates";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 const SITE = "https://richdadretirement.com";
@@ -51,11 +51,11 @@ const newsletterWelcome: Sequence = {
     {
       step: 0,
       delayDays: 0,
-      subject: "You're in. Here's what to expect.",
+      subject: "Welcome — here's your unfair advantage",
       buildHtml: (email) => emailLayout({
         email,
         sequence: "newsletter-welcome",
-        preheader: "Weekly gold & silver updates, guides, and exclusive tools.",
+        preheader: "3 resources most retirees never find. You just got them free.",
         body: `
           ${h2("Welcome to Rich Dad Retirement.")}
           ${p("Here's what you'll get from us:")}
@@ -75,17 +75,17 @@ const newsletterWelcome: Sequence = {
           ${p("See you in your inbox,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
         ctaText: "Visit richdadretirement.com →",
-        ctaUrl: SITE,
+        ctaUrl: utmLink(SITE, "newsletter-welcome", 0),
       }),
     },
     {
       step: 1,
       delayDays: 3,
-      subject: "The free guide 10,000+ Americans have downloaded",
+      subject: "The guide Wall Street hopes you never read",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "newsletter-welcome",
-        preheader: "10 chapters. Zero sales pitch. Just the facts about Gold IRAs.",
+        preheader: "Chapter 9 alone could save you $10,000+. It's free.",
         body: `
           ${h2(`${firstName ? `Hey ${firstName}` : "Hey"},`)}
           ${p("Our most popular resource is the 2026 Gold IRA Protection Guide.")}
@@ -102,17 +102,17 @@ const newsletterWelcome: Sequence = {
           ${p("We built it because we got tired of seeing retirees get ripped off by shady gold companies.")}
         `,
         ctaText: "Download the Free Guide →",
-        ctaUrl: `${SITE}/guide/free`,
+        ctaUrl: utmLink(`${SITE}/guide/free`, "newsletter-welcome", 1),
       }),
     },
     {
       step: 2,
       delayDays: 7,
-      subject: "One number that should worry every saver",
+      subject: "$36,000,000,000,000",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "newsletter-welcome",
-        preheader: "$36,000,000,000,000. And it's growing.",
+        preheader: "This number just hit a record. Here's what it means for your 401(k).",
         body: `
           ${p(`${firstName || "Hey"}, here's a number: <strong>$36 trillion.</strong>`)}
           ${p("That's the U.S. national debt. It was $10 trillion in 2008. $20 trillion in 2017. $36 trillion today.")}
@@ -127,7 +127,7 @@ const newsletterWelcome: Sequence = {
           ${p("If you want to learn more, our free guide covers everything:")}
         `,
         ctaText: "Get the Free Gold IRA Guide →",
-        ctaUrl: `${SITE}/guide/free`,
+        ctaUrl: utmLink(`${SITE}/guide/free`, "newsletter-welcome", 2),
       }),
     },
   ],
@@ -148,11 +148,11 @@ const guideNurture: Sequence = {
     {
       step: 0,
       delayDays: 0,
-      subject: "Your Gold IRA Protection Guide is here",
+      subject: "Your guide is ready (start with Ch. 9)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "guide-nurture",
-        preheader: "The 2026 guide — 10 chapters, zero sales pitch.",
+        preheader: "The chapter on scams alone could save you thousands.",
         body: `
           ${p(`${firstName || "Hey"}, here's your guide.`)}
           ${p("We built the 2026 Gold IRA Protection Guide because every American deserves straight answers about protecting their retirement. No sales pitch. Just facts.")}
@@ -174,11 +174,11 @@ const guideNurture: Sequence = {
     {
       step: 1,
       delayDays: 3,
-      subject: "Did you get to Chapter 4?",
+      subject: "The $47,000 difference nobody talks about",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "guide-nurture",
-        preheader: "If you only read one chapter, make it the one about fees.",
+        preheader: "Some companies charge 3%. Others charge 50%. Same gold.",
         body: `
           ${p(`${firstName || "Hey"}, quick follow-up on your guide.`)}
           ${p("Chapter 4 breaks down exactly what Gold IRA companies charge. Most people are shocked at the range.")}
@@ -194,17 +194,17 @@ const guideNurture: Sequence = {
           ${p("P.S. If you're curious what your savings could look like with gold, our calculator does the math in 60 seconds.")}
         `,
         ctaText: "Try the Gold IRA Calculator →",
-        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+        ctaUrl: utmLink(`${SITE}/tools/gold-ira-calculator`, "guide-nurture", 1),
       }),
     },
     {
       step: 2,
       delayDays: 7,
-      subject: "We ranked every Gold IRA company (honest results)",
+      subject: "15 companies reviewed. 3 made our list.",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "guide-nurture",
-        preheader: "15+ companies reviewed. 3 made our list.",
+        preheader: "We called every one. Here's who passed.",
         body: `
           ${p(`${firstName || "Hey"}, if you're comparing Gold IRA companies, we did the work for you.`)}
           ${p("We reviewed 15+ companies on fees, BBB ratings, customer reviews, minimum investments, and how they treat people on the phone.")}
@@ -230,17 +230,17 @@ const guideNurture: Sequence = {
           ${p("The full comparison with fee tables, real customer experiences, and detailed breakdowns is on our site.")}
         `,
         ctaText: "Read the Full Comparison →",
-        ctaUrl: `${SITE}/best-gold-ira-companies`,
+        ctaUrl: utmLink(`${SITE}/best-gold-ira-companies`, "guide-nurture", 2),
       }),
     },
     {
       step: 3,
       delayDays: 11,
-      subject: '"I expected it to be a nightmare" — Jennifer H.',
+      subject: "Two phone calls. 12 days. Done.",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "guide-nurture",
-        preheader: "What real people say after their Gold IRA rollover.",
+        preheader: "Jennifer expected a nightmare. Here's what actually happened.",
         body: `
           ${p(`${firstName || "Hey"}, one of the biggest questions we hear: "What do people actually think AFTER they've done the rollover?"`)}
           ${p("Fair question. Here's what verified customers told us:")}
@@ -250,17 +250,17 @@ const guideNurture: Sequence = {
           ${p("If you want to find out which company is right for YOUR situation, our free matching tool takes about 2 minutes.")}
         `,
         ctaText: "Find Your Match →",
-        ctaUrl: `${SITE}/get-started`,
+        ctaUrl: utmLink(`${SITE}/get-started`, "guide-nurture", 3),
       }),
     },
     {
       step: 4,
       delayDays: 16,
-      subject: "Your guide. Your decision. No pressure.",
+      subject: "Everything in one place (last email)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "guide-nurture",
-        preheader: "This is the last email in this series.",
+        preheader: "Your guide, our reviews, 43 calculators — all here.",
         body: `
           ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
           ${p("You downloaded our Gold IRA Protection Guide. You now know more about gold, IRAs, fees, and scams than 95% of Americans.")}
@@ -276,7 +276,7 @@ const guideNurture: Sequence = {
           ${p("Wishing you a retirement you've earned,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
         ctaText: "Find Your Match →",
-        ctaUrl: `${SITE}/get-started`,
+        ctaUrl: utmLink(`${SITE}/get-started`, "guide-nurture", 4),
       }),
     },
   ],
@@ -300,11 +300,11 @@ const highIntent: Sequence = {
     {
       step: 0,
       delayDays: 0,
-      subject: "{{firstName}}, here's your guide + what happens next",
+      subject: "{{firstName}}, your guide + 3 things to know",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "A specialist will reach out within 24 hours. Here's how to prep.",
+        preheader: "A 15-min call is coming. Here's how to get the most out of it.",
         body: `
           ${p(`${firstName || "Hey"}, you're in.`)}
           ${p("<strong>Two things are happening right now:</strong>")}
@@ -335,11 +335,11 @@ const highIntent: Sequence = {
     {
       step: 1,
       delayDays: 1,
-      subject: "Quick heads up: what the call looks like",
+      subject: "Exactly what happens on the call (no surprises)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "15 minutes. Here's the agenda so there are no surprises.",
+        preheader: "Minute by minute — so you know what to expect.",
         body: `
           ${p(`${firstName || "Hey"}, your Augusta specialist is reaching out today or tomorrow. Here's exactly what the call looks like so there are no surprises:`)}
           ${h2("Minute 1-3: Your Situation")}
@@ -360,11 +360,11 @@ const highIntent: Sequence = {
     {
       step: 2,
       delayDays: 3,
-      subject: "Did you connect with Augusta yet?",
+      subject: "Quick check-in (3 options inside)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "Just checking in — either way, we've got you covered.",
+        preheader: "Connected? Missed the call? Changed your mind? All good.",
         body: `
           ${p(`${firstName || "Hey"}, quick check-in.`)}
           ${p("By now, your Augusta specialist should have reached out. Did you get a chance to talk?")}
@@ -386,11 +386,11 @@ const highIntent: Sequence = {
       step: 3,
       delayDays: 7,
       skipIfConnected: true,
-      subject: "3 things your financial advisor won't tell you about gold",
+      subject: "Why your advisor steers you away from gold",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "Why most advisors steer you away — and why that matters.",
+        preheader: "Follow the commissions. The answer is always the commissions.",
         body: `
           ${p(`${firstName || "Hey"}, while you're thinking things over, here's something worth knowing.`)}
           ${p("Most financial advisors won't recommend physical gold. Not because it's bad — but because they don't earn commissions on it.")}
@@ -406,18 +406,18 @@ const highIntent: Sequence = {
           ${p(`Augusta's team includes a Harvard-trained economist who can show you exactly how gold fits into your portfolio. The call is still free: <strong>${AUGUSTA_PHONE}</strong>`)}
         `,
         ctaText: "See Your Personalized Numbers →",
-        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+        ctaUrl: utmLink(`${SITE}/tools/gold-ira-calculator`, "high-intent", 3),
       }),
     },
     {
       step: 4,
       delayDays: 11,
       skipIfConnected: true,
-      subject: "Real people. Real rollovers. Zero regrets.",
+      subject: "\"My wife thought I was nuts\"",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "What actual customers say after the fact.",
+        preheader: "Then gold went up 27% while their stocks went sideways.",
         body: `
           ${p(`${firstName || "Hey"}, the hardest part of a Gold IRA rollover is making the decision. The actual process? Easy.`)}
           ${p("<em>\"I was terrified of the paperwork. Augusta did everything. I signed three forms and it was done in two weeks.\"</em><br>— Richard M., retired factory supervisor, Michigan")}
@@ -434,11 +434,11 @@ const highIntent: Sequence = {
     {
       step: 5,
       delayDays: 16,
-      subject: "What Robert Kiyosaki gets right (and wrong) about gold",
+      subject: "Kiyosaki is half right about gold",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "The Rich Dad author's take — with our honest commentary.",
+        preheader: "What he nails. What he exaggerates. The middle ground.",
         body: `
           ${p(`${firstName || "Hey"}, if you follow Robert Kiyosaki, you've heard him say:`)}
           ${ul([
@@ -464,17 +464,17 @@ const highIntent: Sequence = {
           ${p("That's what we recommend. That's what the data supports.")}
         `,
         ctaText: "See Your Personalized Numbers →",
-        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+        ctaUrl: utmLink(`${SITE}/tools/gold-ira-calculator`, "high-intent", 5),
       }),
     },
     {
       step: 6,
       delayDays: 21,
-      subject: "Your consultation is still available",
+      subject: "Everything in one place (last email)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "Last email in this series. Everything in one place.",
+        preheader: "Your guide, your tools, Augusta's number. Bookmark this one.",
         body: `
           ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
           ${p("<strong>Here's where things stand:</strong>")}
@@ -510,11 +510,11 @@ const midNurture: Sequence = {
     {
       step: 0,
       delayDays: 0,
-      subject: "{{firstName}}, your Gold IRA guide + your best match",
+      subject: "{{firstName}}, your guide + the company we'd pick",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "mid-nurture",
-        preheader: "We found the right company for your savings level.",
+        preheader: "Based on your range, one company stands out. Here's why.",
         body: `
           ${p(`${firstName || "Hey"}, welcome to Rich Dad Retirement.`)}
           ${p("<strong>Here's your free 2026 Gold IRA Protection Guide:</strong>")}
@@ -541,11 +541,11 @@ const midNurture: Sequence = {
     {
       step: 1,
       delayDays: 3,
-      subject: "You don't need $50k to protect your retirement",
+      subject: "The $300/month strategy nobody mentions",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "mid-nurture",
-        preheader: "The strategy that works at any savings level.",
+        preheader: "$25k now + $300/month = $35,800 in gold by year 3.",
         body: `
           ${p(`${firstName || "Hey"}, here's something most Gold IRA sites won't tell you: you don't need $50,000 to get meaningful protection.`)}
           ${h2("The Dollar-Cost Averaging Approach")}
@@ -572,11 +572,11 @@ const midNurture: Sequence = {
     {
       step: 2,
       delayDays: 7,
-      subject: "Augusta vs Goldco — honest comparison for your range",
+      subject: "Augusta vs Goldco (honest take for your range)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "mid-nurture",
-        preheader: "Both are A+ rated. Here's which one fits you.",
+        preheader: "Both are A+ rated. But one fits your savings level better.",
         body: `
           ${p(`${firstName || "Hey"}, you might be wondering: should I stretch for Augusta or go with Goldco?`)}
           ${p("<strong>Here's the honest comparison:</strong>")}
@@ -614,11 +614,11 @@ const midNurture: Sequence = {
     {
       step: 3,
       delayDays: 11,
-      subject: "4 ways to grow your retirement faster",
+      subject: "4 moves that accelerate your retirement",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "mid-nurture",
-        preheader: "Proven strategies that work at any income level.",
+        preheader: "Catch-up contributions, old 401(k)s, Roth conversions + one more.",
         body: `
           ${p(`${firstName || "Hey"}, while you're building your gold position, here are 4 ways to accelerate your retirement savings:`)}
           ${h2("1. Max Your Catch-Up Contributions")}
@@ -633,17 +633,17 @@ const midNurture: Sequence = {
           ${p("These aren't tricks. They're the same strategies financial planners use for their own accounts.")}
         `,
         ctaText: "Explore Our Free Calculators →",
-        ctaUrl: `${SITE}/tools`,
+        ctaUrl: utmLink(`${SITE}/tools`, "mid-nurture", 3),
       }),
     },
     {
       step: 4,
       delayDays: 16,
-      subject: "Your path forward",
+      subject: "Your complete kit (last email)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "mid-nurture",
-        preheader: "Everything you need, in one place.",
+        preheader: "Guide, company match, 43 calculators — all bookmarked for you.",
         body: `
           ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
           ${p("<strong>Your complete resource kit:</strong>")}
@@ -679,11 +679,11 @@ const starterNurture: Sequence = {
     {
       step: 0,
       delayDays: 0,
-      subject: "Good news: you can start with $2,000",
+      subject: "You can start protecting your savings today",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "starter-nurture",
-        preheader: "Your free guide + the best company for your savings level.",
+        preheader: "Lowest minimum in the industry: $2,000. Here's your match.",
         body: `
           ${p(`${firstName || "Hey"}, welcome to Rich Dad Retirement.`)}
           ${p("<strong>First — your free 2026 Gold IRA Protection Guide:</strong>")}
@@ -707,11 +707,11 @@ const starterNurture: Sequence = {
     {
       step: 1,
       delayDays: 3,
-      subject: "The $200/month strategy",
+      subject: "$200/month → $15,800 in gold by year 3",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "starter-nurture",
-        preheader: "How small, consistent moves build real protection.",
+        preheader: "The math behind small, consistent moves. It works.",
         body: `
           ${p(`${firstName || "Hey"}, here's a strategy that works at any savings level:`)}
           ${ul([
@@ -737,11 +737,11 @@ const starterNurture: Sequence = {
     {
       step: 2,
       delayDays: 7,
-      subject: "Why Noble Gold works for new gold investors",
+      subject: "A $5k account gets the same respect as $500k",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "starter-nurture",
-        preheader: "Low minimums. No pressure. Here's the full picture.",
+        preheader: "That's rare in this industry. Here's the full picture on Noble Gold.",
         body: `
           ${p(`${firstName || "Hey"}, here's why we recommend Noble Gold:`)}
           ${ul([
@@ -762,11 +762,11 @@ const starterNurture: Sequence = {
     {
       step: 3,
       delayDays: 11,
-      subject: "4 ways to grow your retirement faster",
+      subject: "4 moves that accelerate your retirement",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "starter-nurture",
-        preheader: "Same strategies the pros use for their own money.",
+        preheader: "Catch-up contributions, old 401(k)s, Roth conversions + one more.",
         body: `
           ${p(`${firstName || "Hey"}, while you're building your gold position, here are 4 ways to accelerate your retirement savings:`)}
           ${h2("1. Max Your Catch-Up Contributions")}
@@ -781,17 +781,17 @@ const starterNurture: Sequence = {
           ${p("These aren't tricks. They're the same strategies financial planners use for their own accounts.")}
         `,
         ctaText: "Explore Our Free Calculators →",
-        ctaUrl: `${SITE}/tools`,
+        ctaUrl: utmLink(`${SITE}/tools`, "starter-nurture", 3),
       }),
     },
     {
       step: 4,
       delayDays: 16,
-      subject: "Your path forward",
+      subject: "$2,000 today > $0 tomorrow (last email)",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "starter-nurture",
-        preheader: "Everything in one place. Start when you're ready.",
+        preheader: "Your guide, your match, 43 calculators. All here.",
         body: `
           ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
           ${p("<strong>Your complete resource kit:</strong>")}
@@ -826,11 +826,11 @@ const reEngage: Sequence = {
     {
       step: 0,
       delayDays: 0,
-      subject: "Gold just crossed another milestone",
+      subject: "$100k in gold 3 years ago → $155k today",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "re-engage",
-        preheader: "Here's what it means for your retirement savings.",
+        preheader: "Meanwhile, your savings account lost 15% to inflation.",
         body: `
           ${p(`${firstName || "Hey"}, it's been a while since we connected.`)}
           ${p("Gold has been making moves. Here's what that means in plain English: if you had moved $100,000 into gold three years ago, it would be worth roughly $155,000 today. Without dividends. Without compounding. Just the metal sitting in a vault.")}
@@ -838,17 +838,17 @@ const reEngage: Sequence = {
           ${p("If you've been thinking about protecting your retirement with gold but haven't taken the step — the information hasn't changed. Gold is still gold. And your savings still need protection.")}
         `,
         ctaText: "See Today's Gold Prices →",
-        ctaUrl: `${SITE}/tools/gold-price`,
+        ctaUrl: utmLink(`${SITE}/tools/gold-price`, "re-engage", 0),
       }),
     },
     {
       step: 1,
       delayDays: 5,
-      subject: "60 seconds to see your numbers",
+      subject: "60 seconds. Your numbers. No login.",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "re-engage",
-        preheader: "Our most popular calculator — 50,000+ people have used it.",
+        preheader: "50,000+ people have used this calculator. Zero personal info needed.",
         body: `
           ${p(`${firstName || "Hey"}, we updated our Gold IRA Calculator for 2026.`)}
           ${p("<strong>In 60 seconds, you can see:</strong>")}
@@ -862,17 +862,17 @@ const reEngage: Sequence = {
           ${p("Sometimes seeing your own numbers is what makes it click.")}
         `,
         ctaText: "Try the Calculator →",
-        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+        ctaUrl: utmLink(`${SITE}/tools/gold-ira-calculator`, "re-engage", 1),
       }),
     },
     {
       step: 2,
       delayDays: 10,
-      subject: "The door's always open",
+      subject: "Last personal email from us",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "re-engage",
-        preheader: "Last nudge. Then just our regular newsletter.",
+        preheader: "Everything bookmarked for you. Pick up whenever you're ready.",
         body: `
           ${p(`${firstName || "Hey"}, this is the last personal email from us.`)}
           ${p("You'll still get our regular newsletter with market updates and new guides. But no more one-on-one emails unless you take a new action on our site.")}
