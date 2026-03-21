@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { FatFIRECalculator } from "@/components/tools/FatFIRECalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Fat FIRE Calculator - Calculate Your Luxury Retirement Number",
@@ -14,6 +16,8 @@ export const metadata: Metadata = {
 export default function FatFIRECalculatorPage() {
   return (
     <div className="min-h-screen bg-whitetext-slate-900">
+      <SchemaScript schema={articleSchema({ title: "Fat FIRE Calculator - Calculate Your Luxury Retirement Number", description: "Free Fat FIRE calculator to determine how much you need for a luxurious early retirement. Plan for the lifestyle you want without compromise.", slug: "/tools/fat-fire-calculator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Fat FIRE Calculator", url: "/tools/fat-fire-calculator" }])} />
       <Navbar />
       <FatFIRECalculator />
       <section className="py-16 bg-white">

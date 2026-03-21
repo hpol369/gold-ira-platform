@@ -10,6 +10,8 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllWidowGuideArticles } from "@/data/widow-guide";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Heart, ArrowRight, Phone, BookOpen, Clock, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -30,6 +32,8 @@ export default function WidowGuidePage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Widow's Financial Guide | Navigating Finances After Loss", description: "Compassionate guidance for managing finances after losing a spouse. Survivor benefits, estate planning, insurance, and protecting your financial future.", slug: "/widow-guide" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Widow's Financial Guide", url: "/widow-guide" }])} />
       <Navbar />
 
       {/* Hero Section - Emotional, Supportive */}

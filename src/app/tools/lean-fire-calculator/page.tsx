@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { LeanFIRECalculator } from "@/components/tools/LeanFIRECalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Lean FIRE Calculator - Minimalist Early Retirement Calculator",
@@ -14,6 +16,8 @@ export const metadata: Metadata = {
 export default function LeanFIRECalculatorPage() {
   return (
     <div className="min-h-screen bg-whitetext-slate-900">
+      <SchemaScript schema={articleSchema({ title: "Lean FIRE Calculator - Minimalist Early Retirement Calculator", description: "Free Lean FIRE calculator to plan minimalist early retirement. Calculate how much you need to retire with essential expenses only.", slug: "/tools/lean-fire-calculator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Lean FIRE Calculator", url: "/tools/lean-fire-calculator" }])} />
       <Navbar />
       <LeanFIRECalculator />
       <section className="py-16 bg-white">

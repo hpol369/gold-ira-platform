@@ -17,6 +17,8 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Best Real Estate IRA Custodians 2026: Top Providers",
@@ -92,6 +94,8 @@ const custodians = [
 export default function RealEstateIraCustodiansPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Best Real Estate IRA Custodians 2026: Top Providers", description: "Compare the best self-directed IRA custodians for real estate investing. Fees, features, and reviews of Rocket Dollar, Equity Trust, Entrust, and more.", slug: "/learn/real-estate-ira-custodians" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Real Estate IRA Custodians", url: "/learn/real-estate-ira-custodians" }])} />
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
                 <div className="absolute inset-0 bg-slate-50" />

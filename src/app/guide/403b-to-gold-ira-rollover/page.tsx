@@ -8,6 +8,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, 
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -91,6 +92,21 @@ export default function TsaRolloverPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You can roll over a 403(b) to a Gold IRA tax-free using a direct rollover. Teachers, nurses, and non-profit workers are eligible once they leave their employer or reach age 59 1/2. Watch for annuity surrender charges of 2-7% that many 403(b) plans carry."
+                        keyFacts={[
+                            "Direct rollovers from 403(b) to Gold IRA are 100% tax-free and penalty-free",
+                            "Most 403(b) plans are annuity contracts with 5-10 year surrender charge schedules (up to 7%)",
+                            "You can roll over if you've left the employer or are 59 1/2+ while still working",
+                            "The rollover process takes 2-4 weeks; insurance companies are slower than 401k administrators",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>

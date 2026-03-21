@@ -18,6 +18,8 @@ import {
     TrendingUp,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata = createPageMetadata({
     title: "Silver IRA Hub: Complete Guide to Silver IRAs (2026)",
@@ -172,6 +174,8 @@ const whySilverReasons = [
 export default function SilverIraHubPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Silver IRA Hub: Complete Guide to Silver IRAs (2026)", description: "Everything you need to know about Silver IRAs. Compare companies, learn rules, understand rollovers, and find IRS-approved silver coins for your retirement.", slug: "/silver-ira" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Silver IRA Hub", url: "/silver-ira" }])} />
             <Navbar />
 
             {/* Hero Section */}

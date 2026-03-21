@@ -7,6 +7,8 @@ import { Metadata } from "next";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Gold Price Prediction 2026: Expert Forecasts & Analysis",
@@ -100,7 +102,9 @@ const bearishFactors = [
 export default function GoldPricePrediction2026Page() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            
+            <SchemaScript schema={articleSchema({ title: "Gold Price Prediction 2026: Expert Forecasts & Analysis", description: "What will gold prices do in 2026? Expert predictions from major banks, analysts, and market factors driving gold. Updated analysis for investors.", slug: "/learn/gold-price-prediction-2026" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Gold Price Prediction 2026", url: "/learn/gold-price-prediction-2026" }])} />
+
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

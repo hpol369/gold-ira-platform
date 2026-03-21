@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, HelpCircle, Coins, FileText } from "lucide-re
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -84,6 +85,21 @@ export default function CanIBuyGoldWith401kPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Yes, you can buy gold with your 401k money. You do this through a Gold IRA rollover — transferring funds from your 401k to a Self-Directed IRA that holds physical gold. The process is tax-free and has been permitted by the IRS since 1997."
+                        keyFacts={[
+                            "You cannot buy gold directly inside a 401k — you need a Gold IRA rollover first",
+                            "Gold must be .995+ fineness (American Eagles, Maple Leafs, approved bars)",
+                            "Setup fees range from $50-$80; annual storage and maintenance costs $150-$300/year",
+                            "2026 IRA contribution limit is $7,000/year ($8,000 if 50+), plus unlimited rollovers",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

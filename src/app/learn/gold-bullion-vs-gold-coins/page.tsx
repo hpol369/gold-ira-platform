@@ -7,6 +7,8 @@ import { Metadata } from "next";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Gold Bullion vs Gold Coins: Which Is Better for Your IRA? (2026)",
@@ -66,7 +68,9 @@ const comparisonData = [
 export default function GoldBullionVsCoinsPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            
+            <SchemaScript schema={articleSchema({ title: "Gold Bullion vs Gold Coins: Which Is Better for Your IRA? (2026)", description: "Compare gold bullion bars vs gold coins for your IRA. Learn the pros, cons, premiums, and liquidity differences. Expert guide for retirement investors.", slug: "/learn/gold-bullion-vs-gold-coins" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Gold Bullion vs Gold Coins", url: "/learn/gold-bullion-vs-gold-coins" }])} />
+
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

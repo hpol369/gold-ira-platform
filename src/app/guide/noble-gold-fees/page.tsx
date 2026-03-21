@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -29,6 +30,21 @@ export default function NobleGoldFeesPage() {
         <main className="min-h-screen flex flex-col bg-white">
             <SchemaScript schema={breadcrumbs} />
             
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Noble Gold charges an $80 setup fee, $80/year annual maintenance, and $150/year for storage at Delaware Depository — totaling $230/year in ongoing fees. Their $20,000 minimum is mid-range. Augusta Precious Metals offers lower total fees at $180/year for accounts over $50,000."
+                        keyFacts={[
+                            "Setup fee: $80 one-time; annual maintenance: $80/year; storage: $150/year",
+                            "Total ongoing cost: $230/year — about 0.46% of a $50,000 portfolio",
+                            "Minimum investment: $20,000 — lower than Augusta ($50,000) but higher than Birch Gold ($10,000)",
+                            "Augusta saves $50/year: $80 maintenance + $100 storage = $180/year total",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

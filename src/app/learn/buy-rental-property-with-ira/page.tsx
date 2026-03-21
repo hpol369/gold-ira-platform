@@ -19,6 +19,8 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Buy Rental Property with Your IRA: 2026 Guide",
@@ -35,6 +37,8 @@ export const metadata: Metadata = {
 export default function BuyRentalPropertyWithIraPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Buy Rental Property with Your IRA: 2026 Guide", description: "Complete guide to buying rental property with your IRA. Learn the step-by-step process, financing options, and what to watch out for.", slug: "/learn/buy-rental-property-with-ira" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Buy Rental Property with IRA", url: "/learn/buy-rental-property-with-ira" }])} />
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
                 <div className="absolute inset-0 bg-slate-50" />

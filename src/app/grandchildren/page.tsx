@@ -9,6 +9,8 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllGrandchildrenArticles } from "@/data/grandchildren";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Gift, ArrowRight, GraduationCap, Briefcase, Heart, BookOpen, DollarSign } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -29,6 +31,8 @@ export default function GrandchildrenPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Grandchildren Legacy Hub | Gift, Save & Invest for Grandkids", description: "Smart ways to gift money, set up trusts, and invest for your grandchildren's future. 529 plans, trust funds, and tax-efficient wealth transfer strategies.", slug: "/grandchildren" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Grandchildren Legacy Hub", url: "/grandchildren" }])} />
       <Navbar />
 
       {/* Hero Section */}

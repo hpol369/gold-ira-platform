@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Shield, BookOpen, AlertTriangle, Lock, CheckCircle, Loader2, Download } from "lucide-react";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export default function FreeGuidePage() {
   const [firstName, setFirstName] = useState("");
@@ -69,6 +70,44 @@ export default function FreeGuidePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#000040] via-[#000060] to-[#000080]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "headline": "Free 2026 Gold IRA Protection Guide",
+              "description": "Free 10-chapter Gold IRA guide covering rollovers, fees, scams to avoid, and IRS rules. No phone call required.",
+              "author": { "@type": "Organization", "name": "Rich Dad Retirement" },
+              "publisher": { "@type": "Organization", "name": "Rich Dad Retirement", "logo": { "@type": "ImageObject", "url": "https://richdadretirement.com/logo.png" } },
+              "datePublished": "2026-01-01",
+              "dateModified": "2026-03-01"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://richdadretirement.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://richdadretirement.com/guide" },
+                { "@type": "ListItem", "position": 3, "name": "Free Gold IRA Kit", "item": "https://richdadretirement.com/guide/free" }
+              ]
+            }
+          ]
+        }) }}
+      />
+      <div className="max-w-6xl mx-auto px-4 pt-8 pb-4">
+        <AnswerFirst
+          answer="Our free 2026 Gold IRA Protection Guide is a 10-chapter PDF covering how rollovers work, what fees are fair, and scams to avoid. No phone call required — just enter your email for instant download."
+          keyFacts={[
+            "10 chapters covering Gold IRA rollovers, fees, IRS rules, and scam prevention",
+            "Instant PDF download — no phone call, no sales pitch required",
+            "Chapter 9 on scams alone could save you thousands in hidden dealer markups",
+            "Over 10,000 downloads from A+ BBB-rated partner companies",
+          ]}
+          variant="dark"
+          className="max-w-3xl mx-auto"
+        />
+      </div>
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left — Copy */}

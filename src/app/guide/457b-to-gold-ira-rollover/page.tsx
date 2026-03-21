@@ -8,6 +8,7 @@ import { ArrowRight, CheckCircle2, AlertTriangle, Building2, RefreshCw, Briefcas
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -99,6 +100,21 @@ export default function Page457bRolloverPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Governmental 457(b) plans can be rolled over to a Gold IRA tax-free through a direct rollover. The 457(b) has a unique advantage: no 10% early withdrawal penalty at any age. However, once rolled to an IRA, standard IRA penalty rules apply."
+                        keyFacts={[
+                            "Governmental 457(b) plans have NO 10% early withdrawal penalty at any age",
+                            "Direct rollovers to a Gold IRA are 100% tax-free for governmental 457(b) plans",
+                            "Non-governmental 457(b) plans (non-profits, hospitals) generally cannot roll to an IRA",
+                            "Many government employees have both a 457(b) and 401(a) — each can be rolled separately",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-100 text-[#000080] py-20 relative overflow-hidden border-b border-slate-200">
                 <div className="absolute inset-0 bg-primary-dark/50" />

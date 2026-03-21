@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, Shield, Clock, FileText } from "lucide-react"
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -84,6 +85,21 @@ export default function Move401kToGoldPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You can move your 401k to gold without penalty by doing a direct rollover into a Gold IRA. The IRS allows this tax-free transfer, and the entire process takes 2-4 weeks with most of the work handled by your Gold IRA company."
+                        keyFacts={[
+                            "Direct rollovers from 401k to Gold IRA are 100% tax-free and penalty-free",
+                            "The process takes 2-4 weeks; your paperwork takes about 15-30 minutes",
+                            "You can move a portion (commonly 10-20%) or all of your 401k balance",
+                            "Most Gold IRA companies offer free consultations and handle the transfer paperwork",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

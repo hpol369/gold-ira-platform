@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Coins, TrendingUp, Lock, FileTex
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -95,6 +96,21 @@ export default function Convert401kToGoldPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Yes, you can convert your 401k to gold through a tax-free direct rollover into a Gold IRA. The process takes 2-4 weeks, costs $0 in taxes or penalties, and most Gold IRA companies handle the paperwork for you."
+                        keyFacts={[
+                            "Direct rollovers are 100% tax-free and penalty-free under IRS rules",
+                            "Most Gold IRA companies charge $50-$80 setup fees and $150-$300/year for storage and maintenance",
+                            "Financial advisors typically recommend allocating 10-20% of retirement savings to precious metals",
+                            "The entire conversion process takes 2-4 weeks from start to finish",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Medicaid Spend-Down Calculator — Asset Protection Planning",
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
     "protect assets from nursing home",
     "medicaid asset protection",
   ],
+  alternates: { canonical: "/tools/medicaid-calculator" },
   openGraph: {
     title: "Medicaid Spend-Down Calculator — Asset Protection Planning",
     description:
@@ -31,5 +34,11 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <SchemaScript schema={articleSchema({ title: "Medicaid Spend-Down Calculator — Asset Protection Planning", description: "Free Medicaid spend-down calculator. Estimate your nursing home spend-down timeline and learn legal asset protection strategies.", slug: "/tools/medicaid-calculator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Medicaid Spend-Down Calculator", url: "/tools/medicaid-calculator" }])} />
+      {children}
+    </>
+  );
 }

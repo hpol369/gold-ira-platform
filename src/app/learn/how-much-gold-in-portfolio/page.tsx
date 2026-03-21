@@ -7,6 +7,8 @@ import { Metadata } from "next";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How Much Gold Should I Have in My Portfolio? (2026 Guide)",
@@ -43,7 +45,8 @@ const expertQuotes = [
 export default function HowMuchGoldPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            
+            <SchemaScript schema={articleSchema({ title: "How Much Gold Should I Have in My Portfolio? (2026 Guide)", description: "Expert recommendations on gold allocation for retirement portfolios. Learn the 5-15% rule, age-based strategies, and how to rebalance your holdings.", slug: "/learn/how-much-gold-in-portfolio" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "How Much Gold in Portfolio", url: "/learn/how-much-gold-in-portfolio" }])} />
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

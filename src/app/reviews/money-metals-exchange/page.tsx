@@ -8,6 +8,8 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { reviewSchema, breadcrumbSchema } from "@/lib/schema";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -18,6 +20,8 @@ export const metadata = {
 export default function MoneyMetalsExchangePage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
+            <SchemaScript schema={reviewSchema({ itemName: "Money Metals Exchange", reviewBody: "Named Best Overall by Investopedia, Money Metals Exchange is famous for their Starter Portfolios. We analyze their pricing and whether they are a good choice for Gold IRAs.", ratingValue: 4.5, url: "/reviews/money-metals-exchange" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Money Metals Exchange", url: "/reviews/money-metals-exchange" }])} />
             <Navbar />
 
             <div className="flex-grow bg-white">
