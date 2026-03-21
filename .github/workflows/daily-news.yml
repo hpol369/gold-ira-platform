@@ -2,8 +2,12 @@ name: News Pipeline
 
 on:
   schedule:
-    # Run every 15 minutes
-    - cron: '*/15 * * * *'
+  
+    # Run 3x daily: 7AM, 12PM, 5PM ET
+    - cron: '0 11 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 21 * * *'
+
   workflow_dispatch: # Allow manual trigger
 
 # Required for pushing changes back to the repository
