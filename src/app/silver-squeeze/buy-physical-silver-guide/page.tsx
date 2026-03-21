@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Button } from "@/components/ui/Button";
@@ -128,7 +126,7 @@ export default function BuyPhysicalSilverGuidePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
-            <Navbar />
+            
 
             {/* Hero Header */}
             <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden">
@@ -892,7 +890,7 @@ export default function BuyPhysicalSilverGuidePage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

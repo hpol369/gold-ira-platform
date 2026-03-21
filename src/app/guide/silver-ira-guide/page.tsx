@@ -9,8 +9,6 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { Metadata } from "next";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { ArticleMeta } from "@/components/content/ArticleMeta";
 
@@ -109,7 +107,7 @@ export default function SilverIraGuidePage() {
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
-            <Navbar />
+            
             {/* Header */}
             <header className="bg-primary text-slate-900 py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-primary-dark/50" />
@@ -679,7 +677,7 @@ export default function SilverIraGuidePage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

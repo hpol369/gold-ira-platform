@@ -8,8 +8,6 @@ import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, Dolla
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Metadata } from "next";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: "Silver Stacking Guide: Build Your Physical Silver Position | 2026",
@@ -106,7 +104,7 @@ export default function SilverStackingGuidePage() {
     return (
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
-            <Navbar />
+            
             {/* Header */}
             <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-600/20 via-transparent to-transparent" />
@@ -704,7 +702,7 @@ export default function SilverStackingGuidePage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

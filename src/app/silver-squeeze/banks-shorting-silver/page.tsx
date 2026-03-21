@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AlertTriangle, Building2, TrendingDown, Users, Target, Shield } from "lucide-react";
@@ -62,7 +60,7 @@ const faqSchema = {
 export default function BanksShortingSilverPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
 
             <script
                 type="application/ld+json"
@@ -478,7 +476,7 @@ export default function BanksShortingSilverPage() {
                 </Container>
             </div>
 
-            <Footer />
+            
         </main>
     );
 }

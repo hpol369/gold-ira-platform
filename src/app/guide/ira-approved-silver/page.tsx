@@ -9,8 +9,6 @@ import { Coins, CheckCircle2, XCircle, ArrowRight, Shield, Scale, DollarSign, Al
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: "IRA Approved Silver: IRS-Eligible Coins & Bars List",
@@ -251,7 +249,7 @@ export default function IraApprovedSilverPage() {
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
-            <Navbar />
+            
 
             {/* Header */}
             <header className="bg-white text-slate-900 py-20 relative overflow-hidden">
@@ -643,7 +641,7 @@ export default function IraApprovedSilverPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

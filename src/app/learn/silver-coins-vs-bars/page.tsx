@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Metadata } from "next";
@@ -162,7 +160,7 @@ export default function SilverCoinsVsBarsPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
-            <Navbar />
+            
 
             <div className="flex-grow">
                 {/* Hero */}
@@ -481,7 +479,7 @@ export default function SilverCoinsVsBarsPage() {
                 </section>
             </div>
 
-            <Footer />
+            
         </main>
     );
 }

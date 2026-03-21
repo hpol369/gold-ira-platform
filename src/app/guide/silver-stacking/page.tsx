@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
@@ -166,7 +164,7 @@ export default function SilverStackingGuidePage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <SchemaScript schema={breadcrumbs} />
-            <Navbar />
+            
 
             <div className="flex-grow">
                 {/* Hero Header */}
@@ -572,7 +570,7 @@ export default function SilverStackingGuidePage() {
                 </section>
             </div>
 
-            <Footer />
+            
         </main>
     );
 }

@@ -1,8 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, TrendingUp, TrendingDown, AlertTriangle, BarChart3, Globe, DollarSign, Building2, Shield, Zap } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -102,7 +100,7 @@ const bearishFactors = [
 export default function GoldPricePrediction2026Page() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
@@ -411,7 +409,7 @@ export default function GoldPricePrediction2026Page() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

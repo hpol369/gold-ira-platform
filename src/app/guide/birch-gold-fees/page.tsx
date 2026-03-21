@@ -1,8 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -96,7 +94,7 @@ const breadcrumbs = breadcrumbSchema([
 export default function BirchGoldFeesPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
 
             {/* Schema Markup */}
             <script
@@ -520,7 +518,7 @@ export default function BirchGoldFeesPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

@@ -1,8 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, Scale, Coins, Box, Shield, TrendingUp, DollarSign } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -68,7 +66,7 @@ const comparisonData = [
 export default function GoldBullionVsCoinsPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
@@ -413,7 +411,7 @@ export default function GoldBullionVsCoinsPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

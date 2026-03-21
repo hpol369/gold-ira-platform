@@ -5,8 +5,6 @@ import { Fragment } from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Button } from "@/components/ui/Button";
@@ -402,7 +400,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
       <SchemaScript schema={articleSchemaData} />
       <SchemaScript schema={faqSchemaData} />
       <SchemaScript schema={breadcrumbData} />
-      <Navbar />
+      
       <TrustBar updateDate="2026-03-20" />
 
       {/* Hero Section - Premium Visual Styling */}
@@ -736,7 +734,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
         </Container>
       </section>
 
-      <Footer />
+      
     </main>
   );
 }

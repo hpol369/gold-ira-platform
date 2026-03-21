@@ -294,12 +294,30 @@ export function Navbar() {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
                 <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 py-4 px-4 shadow-xl max-h-[80vh] overflow-y-auto">
-                    <div className="flex flex-col gap-2">
-                        <Link href="/" className="text-slate-900 font-bold border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-                        <Link href="/guide/gold-ira-guide" className="text-slate-600 font-medium border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Gold IRA Guide</Link>
-                        <Link href="/reviews" className="text-slate-600 font-medium border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
-                        <Link href="/news" className="text-slate-600 font-medium border-b border-slate-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>News</Link>
-                        <Button className="w-full bg-[#B22234] text-white mt-4">Get Free Gold Kit</Button>
+                    <div className="flex flex-col gap-1">
+                        <Link href="/" className="text-slate-900 font-bold border-b border-slate-100 py-2.5" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+
+                        <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-2 mb-1 px-1">Research</p>
+                        <Link href="/guide/gold-ira-guide" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Gold IRA Guide</Link>
+                        <Link href="/best-gold-ira-companies" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Best Companies</Link>
+                        <Link href="/compare" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Compare Companies</Link>
+                        <Link href="/reviews" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
+
+                        <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-3 mb-1 px-1">Learn</p>
+                        <Link href="/learn" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Learning Center</Link>
+                        <Link href="/news" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Daily News</Link>
+                        <Link href="/tools" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Calculators & Tools</Link>
+                        <Link href="/faq" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link>
+
+                        <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-3 mb-1 px-1">Get Started</p>
+                        <Link href="/quiz" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Find Your Match Quiz</Link>
+                        <Link href="/guide/free" className="text-slate-600 font-medium border-b border-slate-100 py-2.5 pl-2" onClick={() => setIsMobileMenuOpen(false)}>Free Gold IRA Guide</Link>
+
+                        <Link href="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Button className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white mt-4 py-3 text-base font-bold">
+                                Get Your Free Gold IRA Kit →
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             )}

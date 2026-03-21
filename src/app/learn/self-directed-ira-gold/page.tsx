@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
@@ -45,7 +43,7 @@ const schema = {
 export default function SelfDirectedIraGoldPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
             <SchemaScript schema={schema} />
 
             <div className="flex-grow">
@@ -322,7 +320,7 @@ export default function SelfDirectedIraGoldPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

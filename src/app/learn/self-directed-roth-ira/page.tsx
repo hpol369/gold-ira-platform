@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import {
@@ -34,7 +32,7 @@ export const metadata: Metadata = {
 export default function SelfDirectedRothIRAPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
 
             {/* Hero */}
             <header className="relative py-20 overflow-hidden">
@@ -351,7 +349,7 @@ export default function SelfDirectedRothIRAPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
 
             {/* Schema */}
             <script
