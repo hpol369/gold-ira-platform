@@ -70,7 +70,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/editorial-policy",
     "/editorial-standards",
     "/editorial-board",
-    "/terms-of-service",
+    "/terms",
+    "/disclaimer",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -260,6 +261,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  // ============================================
+  // HUB SUB-PAGES (Self-Directed, Crypto, Real Estate, ROBS)
+  // ============================================
+  const hubSubPages = [
+    // Self-Directed IRA Hub
+    "/self-directed-ira/prohibited-transactions",
+    "/self-directed-ira/custodian-comparison",
+    "/self-directed-ira/alternative-assets",
+    "/self-directed-ira/llc-structure",
+    // Crypto IRA Hub
+    "/crypto-ira/best-companies",
+    "/crypto-ira/tax-rules",
+    "/crypto-ira/bitcoin-vs-gold-ira",
+    // Real Estate IRA Hub
+    "/real-estate-ira/ubit-rules",
+    "/real-estate-ira/rental-property-rules",
+    "/real-estate-ira/non-recourse-loans",
+    // ROBS 401k Hub
+    "/robs-401k/qualification-rules",
+    "/robs-401k/vs-sba-loan",
+    "/robs-401k/success-rates",
+    // Comparison
+    "/compare/gold-ira-vs-annuity",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
   }));
 
   // ============================================
@@ -869,6 +900,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...silverStocksPages,
     // Federal Retirement Hub
     ...federalRetirementPages,
+    // Hub Sub-Pages (SDIRA, Crypto, Real Estate, ROBS)
+    ...hubSubPages,
   ];
 
   // Deduplicate by URL

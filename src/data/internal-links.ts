@@ -83,13 +83,14 @@ export const LINK_HUBS: Record<string, HubConfig> = {
   "self-directed": {
     hub: { url: "/self-directed-ira", title: "Self-Directed IRA Guide" },
     spokes: [
+      { url: "/self-directed-ira/prohibited-transactions", title: "Prohibited Transactions" },
+      { url: "/self-directed-ira/custodian-comparison", title: "SDIRA Custodian Comparison" },
+      { url: "/self-directed-ira/alternative-assets", title: "Alternative Assets Guide" },
+      { url: "/self-directed-ira/llc-structure", title: "SDIRA LLC Structure" },
       { url: "/learn/self-directed-ira-gold", title: "Self-Directed IRA Gold" },
       { url: "/learn/self-directed-roth-ira", title: "Self-Directed Roth IRA" },
       { url: "/learn/checkbook-ira", title: "Checkbook IRA" },
       { url: "/learn/checkbook-ira-rules", title: "Checkbook IRA Rules" },
-      { url: "/learn/buy-rental-property-with-ira", title: "Buy Rental Property with IRA" },
-      { url: "/learn/real-estate-ira-rules", title: "Real Estate IRA Rules" },
-      { url: "/learn/real-estate-ira-custodians", title: "Real Estate IRA Custodians" },
     ],
   },
   "solo-401k": {
@@ -101,9 +102,32 @@ export const LINK_HUBS: Record<string, HubConfig> = {
       { url: "/learn/robs-401k-rules", title: "ROBS 401k Rules" },
     ],
   },
+  "real-estate-ira": {
+    hub: { url: "/real-estate-ira", title: "Real Estate IRA Guide" },
+    spokes: [
+      { url: "/real-estate-ira/ubit-rules", title: "UBIT Rules for IRA Real Estate" },
+      { url: "/real-estate-ira/rental-property-rules", title: "Rental Property IRA Rules" },
+      { url: "/real-estate-ira/non-recourse-loans", title: "Non-Recourse IRA Loans" },
+      { url: "/learn/real-estate-ira-rules", title: "Real Estate IRA Rules" },
+      { url: "/learn/real-estate-ira-custodians", title: "Real Estate IRA Custodians" },
+      { url: "/learn/buy-rental-property-with-ira", title: "Buy Rental Property with IRA" },
+    ],
+  },
+  "robs-401k": {
+    hub: { url: "/robs-401k", title: "ROBS 401k Guide" },
+    spokes: [
+      { url: "/robs-401k/qualification-rules", title: "ROBS Qualification Rules" },
+      { url: "/robs-401k/vs-sba-loan", title: "ROBS vs SBA Loan" },
+      { url: "/robs-401k/success-rates", title: "ROBS Success Rates" },
+      { url: "/learn/robs-401k-rules", title: "ROBS 401k Rules" },
+    ],
+  },
   "crypto": {
     hub: { url: "/crypto-ira", title: "Crypto IRA Guide" },
     spokes: [
+      { url: "/crypto-ira/best-companies", title: "Best Crypto IRA Companies 2026" },
+      { url: "/crypto-ira/tax-rules", title: "Crypto IRA Tax Rules" },
+      { url: "/crypto-ira/bitcoin-vs-gold-ira", title: "Bitcoin IRA vs Gold IRA" },
       { url: "/best-crypto-ira-companies", title: "Best Crypto IRA Companies" },
       { url: "/learn/bitcoin-ira", title: "Bitcoin IRA" },
     ],
