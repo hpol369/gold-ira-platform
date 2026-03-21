@@ -6,9 +6,8 @@ import { insertLead, updateLeadStatus, updateLead, getLeadById, getLeadByEmail, 
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { calculatePotentialDeal } from "@/lib/deal-calculator";
 import { submitToAugusta } from "@/lib/augusta";
-import { enrollInSequence } from "@/lib/email-queue";
-import { getSequenceForTier } from "@/lib/email-sequences";
-import { sendGuideEmail } from "@/lib/guide-email";
+import { enrollInSequence, upgradeSequence, checkActiveSequence } from "@/lib/email-queue";
+import { getSequenceForContext } from "@/lib/email-sequences";
 
 // Simple rate limiting (per IP, resets on deploy)
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -161,14 +160,28 @@ export async function POST(request: NextRequest) {
     }
 
     // 2. Enroll in email nurture sequence based on savings tier
-    if (body.savingsTier) {
-      try {
-        const sequenceId = getSequenceForTier(body.savingsTier);
-        await enrollInSequence(lead.email, sequenceId, body.source, body.firstName);
+    //    V2.1: Uses getSequenceForContext, handles sequence upgrades
+    //    (e.g., guide-nurture reader submits lead form → upgrades to high-intent)
+    try {
+      const sequenceId = getSequenceForContext("lead-form", body.savingsTier);
+      const metadata = {
+        ...(body.savingsTier && { savings_tier: body.savingsTier }),
+        ...(body.concern && { concern: body.concern }),
+        ...(body.qualificationTier && { qualification_tier: body.qualificationTier }),
+        ...(body.routedTo && { routed_to: body.routedTo }),
+      };
+
+      // Check if already in a sequence (e.g., guide-nurture) and upgrade
+      const activeSequence = await checkActiveSequence(lead.email);
+      if (activeSequence && activeSequence !== sequenceId) {
+        await upgradeSequence(lead.email, sequenceId, body.source, body.firstName, metadata);
+        console.log(`[LEAD] Upgraded ${lead.email} from ${activeSequence} to ${sequenceId}`);
+      } else {
+        await enrollInSequence(lead.email, sequenceId, body.source, body.firstName, metadata);
         console.log(`[LEAD] Enrolled ${lead.email} in sequence: ${sequenceId}`);
-      } catch (err) {
-        console.error("[LEAD] Sequence enrollment failed:", err);
       }
+    } catch (err) {
+      console.error("[LEAD] Sequence enrollment failed:", err);
     }
 
     // 3. Send initial Telegram notification
@@ -219,23 +232,11 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // 5. Send the free Gold IRA Protection Guide via email
-    // Fire-and-forget: don't block the lead response if email fails
-    if (body.email && body.firstName) {
-      sendGuideEmail(body.email, body.firstName, body.savingsTier).catch((err) => {
-        console.error("[GUIDE EMAIL ERROR]", err);
-      });
-    }
-
-    // Determine if this is an Augusta lead (for client-side routing)
-    const isAugustaLead = body.qualificationTier?.startsWith("augusta") || false;
-
     return NextResponse.json({
       success: true,
       message: augustaSuccess ? "Lead submitted to Augusta" : "Lead captured - Augusta submission pending",
       leadId: lead.id,
       augustaSubmitted: augustaSuccess,
-      affiliateKey: isAugustaLead ? "augusta" : (body.routedTo || "other"),
     });
 
   } catch (error) {
