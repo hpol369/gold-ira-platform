@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 import { sendTelegramNotification } from "@/lib/notifications";
+import { sendMissedCallSMS, isTwilioConfigured } from "@/lib/sms";
 
 /**
  * Email status feedback endpoint
@@ -84,9 +85,27 @@ export async function GET(request: Request) {
         .update({ status: "new", notes: "Hasn't connected with Augusta yet — email check-in Day 3" })
         .eq("id", lead.id);
 
+      // Send missed-call SMS if we have their phone number
+      if (isTwilioConfigured()) {
+        const { data: fullLead } = await supabase
+          .from("leads")
+          .select("phone")
+          .eq("id", lead.id)
+          .single();
+
+        if (fullLead?.phone) {
+          try {
+            await sendMissedCallSMS(fullLead.phone, lead.first_name || undefined);
+            console.log("[EMAIL-STATUS] Missed-call SMS sent to", fullLead.phone);
+          } catch (err) {
+            console.error("[EMAIL-STATUS] SMS failed:", err);
+          }
+        }
+      }
+
       // Telegram notification
       await sendTelegramNotification(
-        `📞 <b>Lead Hasn't Connected Yet</b>\n\n👤 ${lead.first_name || "Unknown"}\n📧 ${email}\n\n🔄 Status → call-pending\n📧 Continuing nurture emails`,
+        `📞 <b>Lead Hasn't Connected Yet</b>\n\n👤 ${lead.first_name || "Unknown"}\n📧 ${email}\n\n🔄 Status → call-pending\n📧 Continuing nurture emails\n📱 Missed-call SMS sent`,
         false
       );
 

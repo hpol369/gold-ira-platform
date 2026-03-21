@@ -244,6 +244,41 @@ export async function processEmailQueue(): Promise<{
       continue;
     }
 
+    // Check subscriber status — skip paused or unsubscribed
+    const { data: subscriber } = await supabase
+      .from("email_subscribers")
+      .select("status, paused_until")
+      .eq("email", entry.email)
+      .maybeSingle();
+
+    if (subscriber) {
+      // Fully unsubscribed
+      if (subscriber.status === "unsubscribed") {
+        stats.skipped++;
+        continue;
+      }
+
+      // Paused — check if pause has expired
+      if (subscriber.status === "paused" && subscriber.paused_until) {
+        const pausedUntil = new Date(subscriber.paused_until);
+        if (pausedUntil > new Date()) {
+          stats.skipped++;
+          continue; // Still paused
+        }
+        // Pause expired — reactivate and continue sending
+        await supabase
+          .from("email_subscribers")
+          .update({ status: "active", paused_until: null })
+          .eq("email", entry.email);
+      }
+
+      // Newsletter-only — skip sequence emails (they're not newsletter)
+      if (subscriber.status === "newsletter-only") {
+        stats.skipped++;
+        continue;
+      }
+    }
+
     const success = await processQueueEntry(
       entry.email,
       entry.sequence,
