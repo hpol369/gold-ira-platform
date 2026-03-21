@@ -17,6 +17,14 @@ export const annuityArticles: LearnArticleRegistry = {
     metaTitle: 'Fixed vs Variable Annuity | Complete Comparison (2026)',
     metaDescription: 'Compare fixed and variable annuities. Learn the pros, cons, fees, and which annuity type is best for your retirement income needs.',
     keywords: ['fixed vs variable annuity', 'fixed annuity vs variable annuity', 'variable annuity vs fixed', 'annuity comparison', 'types of annuities'],
+    answerFirst: 'Fixed annuities guarantee a set interest rate (typically 3-5%) with no market risk, while variable annuities invest in market sub-accounts with growth potential but possible losses. The biggest difference is fees: fixed annuities cost 0-1% annually, while variable annuities often charge 2-4%+ in combined fees. Fixed annuities are best for conservative investors near retirement; variable annuities suit those with longer time horizons who can tolerate market risk.',
+    answerFirstFacts: [
+      'Fixed annuity fees: 0-1% annually; variable annuity fees: 2-4%+ annually',
+      'Fixed annuities guarantee principal; variable annuities can lose value in market downturns',
+      'Surrender charges apply to both types, typically lasting 5-10 years',
+      'A 3% annual fee on a variable annuity means investments must earn 3% just to break even',
+    ],
+
     targetKeyword: 'fixed vs variable annuity',
     volume: 800,
     difficulty: 8,
@@ -192,6 +200,14 @@ export const annuityArticles: LearnArticleRegistry = {
     metaTitle: 'Immediate vs Deferred Annuity | Which Is Right? (2026)',
     metaDescription: 'Compare immediate and deferred annuities. Understand when each makes sense based on your retirement timeline and income needs.',
     keywords: ['immediate vs deferred annuity', 'immediate annuity', 'deferred annuity', 'spia vs dia', 'annuity timing'],
+    answerFirst: 'Immediate annuities (SPIAs) start paying income within 12 months of purchase, converting a lump sum into guaranteed lifetime payments. Deferred annuities accumulate tax-deferred for years before income begins. A 65-year-old investing $200,000 in a SPIA receives approximately $1,100-1,300/month for life. Deferred annuities offer more flexibility but require waiting years for income.',
+    answerFirstFacts: [
+      'Immediate annuities (SPIAs) begin payments within 12 months — typically within 30 days',
+      'A 65-year-old investing $200,000 in a SPIA receives approximately $1,100-1,300/month for life',
+      'Deferred annuities grow tax-deferred and can be annuitized or withdrawn later',
+      'A Qualified Longevity Annuity Contract (QLAC) is a special deferred annuity with payments starting as late as age 85',
+    ],
+
     targetKeyword: 'immediate vs deferred annuity',
     volume: 400,
     difficulty: 5,
@@ -347,6 +363,14 @@ export const annuityArticles: LearnArticleRegistry = {
     metaTitle: 'Annuity vs CD | Compare Safe Investment Options (2026)',
     metaDescription: 'Compare fixed annuities to CDs. Learn which is better for your conservative savings based on rates, taxes, and liquidity needs.',
     keywords: ['annuity vs cd', 'cd vs annuity', 'fixed annuity vs cd', 'annuity or cd', 'myga vs cd'],
+    answerFirst: 'Both CDs and fixed annuities offer guaranteed returns with low risk, but they differ in tax treatment, insurance, and liquidity. CDs are FDIC insured up to $250,000 and tax interest annually; fixed annuities (MYGAs) are backed by insurance companies and grow tax-deferred. MYGAs sometimes offer rates 0.25-0.75% higher than CDs, and in a high tax bracket, the tax deferral can result in 10-15% more after 10 years.',
+    answerFirstFacts: [
+      'CDs are FDIC insured up to $250,000; annuities are backed by state guaranty associations',
+      'Fixed annuity (MYGA) rates are often 0.25-0.75% higher than comparable CD rates',
+      'CD interest is taxed annually; annuity growth is tax-deferred until withdrawal',
+      'Annuity surrender charges (5-10%) are much higher than CD early withdrawal penalties',
+    ],
+
     targetKeyword: 'annuity vs cd',
     volume: 300,
     difficulty: 4,
@@ -494,6 +518,14 @@ export const annuityArticles: LearnArticleRegistry = {
     metaTitle: 'Annuity Surrender Charges Explained | Avoid Traps (2026)',
     metaDescription: 'Learn how annuity surrender charges work. Understand typical surrender periods, free withdrawal provisions, and how to exit an annuity.',
     keywords: ['annuity surrender charges', 'annuity surrender period', 'annuity surrender fees', 'exit annuity early', 'annuity early withdrawal'],
+    answerFirst: 'Annuity surrender charges are penalties for withdrawing money during the surrender period, typically lasting 5-10 years. Charges usually start at 7-10% in year one and decline by 1% annually until reaching zero. Most annuities allow a 10% free withdrawal each year without penalty, and many waive surrender charges for nursing home admission, terminal illness, or death.',
+    answerFirstFacts: [
+      'Surrender charges typically start at 7-10% and decline by 1% annually over 5-10 years',
+      'Most annuities allow 10% of the account value to be withdrawn annually without penalty',
+      'Surrender charges are separate from the IRS 10% early withdrawal penalty for those under 59\u00BD',
+      'Nursing home and terminal illness waivers eliminate surrender charges in many contracts',
+    ],
+
     targetKeyword: 'annuity surrender charges',
     volume: 150,
     difficulty: 2,
@@ -653,6 +685,14 @@ export const annuityArticles: LearnArticleRegistry = {
     metaTitle: 'SPIA vs DIA | Income Annuity Comparison (2026)',
     metaDescription: 'Compare SPIA and DIA income annuities. Learn which type of income annuity is right for your retirement income needs.',
     keywords: ['spia vs dia', 'spia annuity', 'dia annuity', 'deferred income annuity', 'single premium immediate annuity'],
+    answerFirst: 'A SPIA (Single Premium Immediate Annuity) starts lifetime income payments within 12 months of purchase, while a DIA (Deferred Income Annuity) delays payments to a future date, often years or decades later. SPIAs are best for retirees who need income now; DIAs provide higher future payments due to the deferral period and serve as longevity insurance for late-life income starting at age 80-85.',
+    answerFirstFacts: [
+      'SPIA payments start within 12 months; DIA payments start years or decades in the future',
+      'DIAs provide higher monthly payments than SPIAs because the insurance company keeps your money longer',
+      'A QLAC (Qualified Longevity Annuity Contract) is a special DIA funded with IRA money',
+      'SPIAs are generally irrevocable — you cannot access the lump sum once annuitized',
+    ],
+
     targetKeyword: 'spia vs dia',
     volume: 100,
     difficulty: 0,

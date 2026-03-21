@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { faqs, faqCategories, getFAQsByCategory } from "@/config/faqs";
 import {
   HelpCircle,
@@ -85,6 +86,24 @@ export default function FAQPage() {
                 className="w-full pl-12 pr-4 py-4 bg-white border border-slate-200 rounded-xl text-[#000080] placeholder-slate-400 focus:outline-none focus:border-[#B22234]"
               />
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Answer-First GEO Block */}
+      <section className="py-6 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="A Gold IRA is a self-directed retirement account that holds physical gold, silver, platinum, or palladium. You fund it by rolling over your existing 401(k) or IRA tax-free, choose IRS-approved metals (minimum 99.5% pure for gold), and a licensed custodian stores them in an approved depository. Contribution limits for 2026 are $7,000 ($8,000 if 50+), and rollovers have no dollar limit."
+              keyFacts={[
+                "Gold IRA rollovers from 401(k)s and IRAs are 100% tax-free when done as direct transfers",
+                "IRS requires metals be stored in an approved depository — home storage is illegal",
+                "Minimum investments range from $2,000 (Noble Gold) to $50,000 (Augusta Precious Metals)",
+                "Annual fees typically run $200-$300 for storage and custodian services",
+              ]}
+              variant="light"
+            />
           </div>
         </Container>
       </section>

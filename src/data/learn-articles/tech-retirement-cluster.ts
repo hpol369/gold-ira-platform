@@ -13,6 +13,13 @@ export const techRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Google Retirement Benefits: 401k Match & RSU Guide | 2026',
     metaDescription: 'Complete guide to Google retirement benefits. Learn about Google 401k match percentage, mega backdoor Roth, RSU vesting, and retirement age policies for Googlers.',
     keywords: ['google retirement benefits', 'google 401k match', 'google employee retirement'],
+    answerFirst: 'Google matches 50% of 401k contributions up to IRS limits, effectively providing approximately $11,500 in employer match for 2024, with immediate vesting and no waiting period. Google\'s 401k plan also supports the mega backdoor Roth strategy, allowing total contributions up to $69,000 per year including after-tax contributions converted to Roth.',
+    answerFirstFacts: [
+      'Google 401k match is 50% of employee contributions up to IRS limits, vesting immediately',
+      'Mega backdoor Roth at Google allows up to $69,000 total 401k contributions in 2024',
+      'Long-tenured Googlers (6-10 years) often accumulate $500,000-$2 million+ in RSU value',
+      'Financial advisors recommend no more than 10-15% of portfolio in any single stock including GOOGL',
+    ],
 
     targetKeyword: 'google retirement benefits',
     volume: 60,
@@ -191,6 +198,13 @@ export const techRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Tech Layoff Retirement Planning: 401k & Severance Guide | 2026',
     metaDescription: 'Essential guide for tech workers facing layoffs. Learn severance optimization, 401k rollover decisions, COBRA vs ACA, and how to protect retirement during job search.',
     keywords: ['tech layoff retirement planning', 'laid off tech worker retirement', 'tech layoff 401k'],
+    answerFirst: 'After a tech layoff, prioritize severance negotiation (packages are often negotiable, especially RSU acceleration and COBRA coverage), then carefully decide your 401k rollover strategy. COBRA costs $1,500-3,000 per month for family coverage versus ACA marketplace plans that offer income-based subsidies, potentially saving $14,400-21,600 per year.',
+    answerFirstFacts: [
+      'Tech severance is typically 2 weeks to 1 month per year of service, negotiable to 4 weeks per year',
+      'COBRA family coverage costs $1,500-3,000/month versus ACA plans at $600-1,200/month with subsidies',
+      'Workers over 40 have 21-45 days to review severance before signing under federal law',
+      'Withdrawing from 401k before age 59.5 incurs a 10% penalty plus income taxes totaling 35-45% cost',
+    ],
 
     targetKeyword: 'tech layoff retirement planning',
 
@@ -388,6 +402,13 @@ export const techRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Should I Move 401k to Bonds? Age-Based Allocation Guide | 2026',
     metaDescription: 'Should you move your 401k to bonds? Learn bond allocation by age, market timing risks, bond fund types, and why gold may be better diversification than bonds alone.',
     keywords: ['should i move 401k to bonds', 'move 401k to bonds', '401k all in bonds'],
+    answerFirst: 'Moving your entire 401k to bonds is rarely advisable because inflation at 3%+ erodes purchasing power even with 4-5% bond yields, and bonds are not risk-free as proven in 2022 when the Vanguard Total Bond Market fund lost 13%. A moderate bond allocation of 40-60% near retirement combined with diversifiers like gold provides better protection than 100% bonds.',
+    answerFirstFacts: [
+      'In 2022, the Vanguard Total Bond Market fund (BND) lost 13% while gold held steady at -0.3%',
+      'Missing just 10 of the best stock market days over 20 years cuts total returns by more than 50%',
+      'The traditional rule of thumb is bond allocation equals your age, but modern advice suggests age minus 20',
+      'A 60/40 stock/bond portfolio lost 16% in 2022, its worst performance since 2008',
+    ],
 
     targetKeyword: 'should i move 401k to bonds',
     volume: 40,
@@ -595,6 +616,13 @@ export const techRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'RSU Concentrated Position: Diversification Strategies | 2026',
     metaDescription: 'How to manage a concentrated RSU position. Learn diversification strategies, 10b5-1 plans, tax-efficient selling, and the 10-15% rule for company stock exposure.',
     keywords: ['rsu concentrated position', 'concentrated stock position', 'too much company stock'],
+    answerFirst: 'Financial advisors recommend no more than 10-15% of your portfolio in any single stock, yet many tech workers hold 50%+ of their net worth in employer stock from RSU accumulation. This concentration creates dangerous double risk: a company downturn threatens both your job income and investment portfolio simultaneously, as demonstrated by Meta\'s 77% stock decline in 2021-2022.',
+    answerFirstFacts: [
+      'Meta stock dropped 77% from peak to trough in 2021-2022, devastating concentrated holders',
+      'Single stocks are 3-5x more volatile than diversified portfolios over time',
+      '10b5-1 plans allow pre-scheduled stock selling to avoid insider trading concerns',
+      'Selling RSUs at vest and diversifying immediately eliminates concentration risk at no additional tax cost',
+    ],
 
     targetKeyword: 'rsu concentrated position',
 
@@ -790,6 +818,13 @@ export const techRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Stock Compensation Retirement Planning: RSU ISO NSO Guide | 2026',
     metaDescription: 'Master stock compensation retirement planning. Learn RSU vs ISO vs NSO tax treatment, exercise strategies, retirement account coordination, and when to diversify equity.',
     keywords: ['stock compensation retirement planning', 'equity compensation retirement', 'rsu iso retirement'],
+    answerFirst: 'RSUs are taxed as ordinary income at vesting with automatic withholding, ISOs can qualify for favorable long-term capital gains if held 2+ years from grant and 1+ year from exercise, and NSOs are taxed as ordinary income on the spread at exercise. Coordination with 401k contributions is essential: always max your 401k first since tax-advantaged space is limited and more valuable than holding concentrated stock.',
+    answerFirstFacts: [
+      'RSUs are taxed as ordinary income when shares vest, with the company withholding taxes automatically',
+      'ISOs require a 2-year grant holding period plus 1-year exercise holding period for capital gains treatment',
+      'Unvested stock options typically expire 90 days after termination, forfeiting any remaining value',
+      'Priority order: 401k to match, max HSA, max 401k, mega backdoor Roth, then Roth IRA',
+    ],
 
     targetKeyword: 'stock compensation retirement planning',
 

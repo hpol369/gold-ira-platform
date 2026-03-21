@@ -12,6 +12,13 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
     metaTitle: 'Pension Risk Transfer & Buyout Offers Explained | 2026 Guide',
     metaDescription: 'Received a pension buyout offer? Learn what pension risk transfer means, how to evaluate lump sum offers, and whether rolling to a Gold IRA makes sense.',
     keywords: ['pension risk transfer', 'pension buyout offer', 'lump sum pension buyout'],
+    answerFirst: 'Pension Risk Transfer (PRT) is when a company offloads its pension obligations to an insurance company or offers employees a lump-sum buyout. About 500+ PRT transactions worth over $250 billion have occurred since 2012. Accepting a lump sum gives you control but shifts longevity risk to you, and the offer amount depends on current interest rates and mortality tables.',
+    answerFirstFacts: [
+      'Lump-sum buyout offers are calculated using current interest rates and IRS mortality tables',
+      'Higher interest rates result in lower lump-sum offers because the present value of future payments decreases',
+      'A lump sum can be rolled tax-free to an IRA or Gold IRA via direct rollover',
+      'Buyout offers typically have 30-90 day deadlines to accept or decline',
+    ],
 
     targetKeyword: 'pension risk transfer',
     volume: 600,
@@ -185,6 +192,13 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
     metaTitle: 'Pension vs Lump Sum Decision Guide | Which Is Better for You?',
     metaDescription: 'Choosing between pension and lump sum? Learn break-even analysis, health factors, spouse considerations, and inflation risk to make the right choice.',
     keywords: ['pension vs lump sum', 'take pension or lump sum', 'pension lump sum decision'],
+    answerFirst: 'The pension vs lump sum decision depends on your health, spouse needs, and break-even timeline. A typical break-even point is 12-15 years, meaning if you live beyond that point, the monthly pension wins mathematically. The average 65-year-old lives 18-20 more years, which generally favors the pension for healthy retirees.',
+    answerFirstFacts: [
+      'Break-even calculation: divide lump sum by annual pension amount to find the number of years needed',
+      'A $300,000 lump sum vs $24,000/year pension has a 12.5-year break-even point',
+      'Fixed pensions lose roughly 50% of purchasing power over 24 years at 3% inflation',
+      'Investing a lump sum at 6% return extends the break-even to 18+ years',
+    ],
 
     targetKeyword: 'pension vs lump sum',
     volume: 90,
@@ -366,6 +380,13 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
     metaTitle: 'Sears Pension After Bankruptcy: PBGC Takeover Explained | 2026',
     metaDescription: 'What happened to Sears pensions after bankruptcy? Learn about the PBGC takeover, what retirees receive now, and lessons for protecting your own pension.',
     keywords: ['sears pension', 'sears retiree benefits', 'sears pension pbgc'],
+    answerFirst: 'Sears pensions were taken over by the PBGC (Pension Benefit Guaranty Corporation) after Sears Holdings filed Chapter 11 bankruptcy in 2018. Most of the approximately 90,000 Sears pension participants receive their full benefits because the average pension was below PBGC maximum limits of about $6,750 per month at age 65 in 2026.',
+    answerFirstFacts: [
+      'Sears Holdings filed for Chapter 11 bankruptcy in 2018 with approximately 90,000 pension participants',
+      'PBGC insures pensions up to about $6,750 per month for those retiring at age 65 in 2026',
+      'Early retirees face lower PBGC limits: approximately $3,038/month at age 55',
+      'PBGC does not cover retiree health insurance, only the pension itself',
+    ],
 
     targetKeyword: 'sears pension',
     volume: 50,
@@ -518,6 +539,13 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
     metaTitle: 'Northrop Grumman Retirement & Pension Guide | NGC Benefits 2026',
     metaDescription: 'Complete guide to Northrop Grumman retirement benefits including pension, 401k match, retiree benefits, and how to roll over to an IRA.',
     keywords: ['northrop grumman retirement', 'northrop grumman pension', 'ngc retirement benefits'],
+    answerFirst: 'Northrop Grumman offers both a defined benefit pension and a 401k savings plan with company matching of 4-6% of salary. Pension benefits depend on your hire date, years of service, and which NGC division you work for, as legacy plans from TRW, Litton Industries, and Orbital ATK acquisitions have different rules.',
+    answerFirstFacts: [
+      'NGC 401k contribution limit is $23,500 in 2026 ($31,000 if age 50+) with 4-6% employer match',
+      'Company match typically vests over 3 years in the NGC 401k plan',
+      'Pension eligibility thresholds include age 55 with 10+ years or the Rule of 85 (age + years = 85)',
+      'Legacy plans from TRW, Litton Industries, and Orbital ATK acquisitions may have different calculation methods',
+    ],
 
     targetKeyword: 'northrop grumman retirement',
     volume: 80,
@@ -696,6 +724,13 @@ export const pensionDecisionsArticles: LearnArticleRegistry = {
     metaTitle: 'Joint Survivor vs Single Life Pension: Complete Decision Guide',
     metaDescription: 'Choosing joint survivor or single life pension? Learn how to protect your spouse, pension maximization with life insurance, and what happens if spouse dies first.',
     keywords: ['joint survivor pension', 'single life pension', 'pension survivor option'],
+    answerFirst: 'Joint survivor pension pays 10-25% less per month than single life but continues paying your spouse after your death. Single life pays the highest monthly amount but stops completely when you die, leaving your spouse with nothing. The pension maximization strategy uses the difference to buy life insurance as an alternative to joint survivor.',
+    answerFirstFacts: [
+      'Joint & 100% survivor typically pays 75-80% of the single life amount',
+      'Joint & 50% survivor typically pays 85-90% of the single life amount',
+      'If your spouse dies first under a standard joint survivor plan, your payment stays reduced forever',
+      'A pop-up provision restores the single-life payment amount if your spouse predeceases you',
+    ],
 
     targetKeyword: 'joint survivor pension',
     volume: 40,

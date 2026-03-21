@@ -9,6 +9,7 @@ import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 import {
@@ -44,6 +45,22 @@ export default function WhatIsGoldIRAPage() {
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "What Is a Gold IRA?", url: "/what-is-a-gold-ira" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("what-is-a-gold-ira"))} />
       <Navbar />
+
+      {/* Answer-First GEO Block */}
+      <section className="pt-8 pb-4 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="A Gold IRA is a self-directed Individual Retirement Account that holds physical gold, silver, platinum, or palladium instead of paper assets like stocks and bonds. It offers the same tax advantages as a traditional IRA — tax-deferred growth or tax-free withdrawals (Roth) — but with the added security of tangible precious metals stored in an IRS-approved depository."
+            keyFacts={[
+              "Same tax benefits as traditional or Roth IRAs — just different assets inside",
+              "Metals must be 99.5% pure (gold) or 99.9% pure (silver) to qualify",
+              "IRS requires storage in an approved depository — home storage is illegal",
+              "2026 contribution limits: $7,000/year ($8,000 if 50+), rollovers have no limit",
+            ]}
+            className="max-w-3xl mx-auto"
+          />
+        </Container>
+      </section>
 
       {/* Header */}
       <header className="bg-slate-50 text-[#000080] py-16 md:py-20">

@@ -12,6 +12,14 @@ export const retirementPlanningFinalArticles: LearnArticleRegistry = {
     metaTitle: 'Is Vanguard Safe? Security & SIPC Protection Explained | 2026',
     metaDescription: 'Is Vanguard safe for your retirement savings? Learn about SIPC protection, Vanguard\'s mutual ownership structure, and what happens if Vanguard fails.',
     keywords: ['is vanguard safe', 'vanguard security', 'is vanguard fdic insured'],
+    answerFirst: 'Yes, Vanguard is one of the safest places to hold retirement investments. Your accounts are protected by SIPC up to $500,000 per customer if the brokerage fails, and Vanguard\'s unique mutual ownership structure (owned by its fund investors, not outside shareholders) makes bankruptcy extremely unlikely. However, SIPC does not protect against market losses — a 50% stock crash receives zero reimbursement.',
+    answerFirstFacts: [
+      'SIPC covers up to $500,000 per customer if Vanguard fails and assets go missing',
+      'Vanguard manages over $8 trillion and is owned by its funds, not outside shareholders',
+      'Vanguard is NOT FDIC insured — it is a brokerage, not a bank',
+      'No protection exists for market losses: the S&P 500 lost 57% in 2008 with zero insurance coverage',
+    ],
+
 
     targetKeyword: 'is vanguard safe',
     volume: 600,
@@ -185,6 +193,14 @@ export const retirementPlanningFinalArticles: LearnArticleRegistry = {
     metaTitle: 'Can I Retire at 60 with $500k? Realistic Guide | 2026',
     metaDescription: 'Can you retire at 60 with $500,000? Learn about the 4% rule, healthcare costs before Medicare, Social Security timing, and strategies to make it work.',
     keywords: ['retire at 60 with 500k', 'can i retire with 500000'],
+    answerFirst: '$500,000 alone is probably not enough for a comfortable early retirement at 60. At the 4% rule, it provides only $20,000/year ($1,667/month), and healthcare costs before Medicare can run $500-1,500/month. However, combined with Social Security, a pension, part-time work, or a paid-off home, $500k can be part of a workable retirement plan.',
+    answerFirstFacts: [
+      '$500,000 at 4% withdrawal provides only $20,000/year or $1,667/month',
+      'Healthcare before Medicare (ages 60-65) costs $500-1,500/month per person',
+      'Claiming Social Security at 62 permanently reduces benefits by approximately 30%',
+      'Part-time work of $1,000/month dramatically extends portfolio longevity',
+    ],
+
 
     targetKeyword: 'can i retire at 60 with 500k',
     volume: 100,
@@ -373,6 +389,14 @@ export const retirementPlanningFinalArticles: LearnArticleRegistry = {
     metaTitle: 'How Long Will $500k Last in Retirement? Calculator & Guide | 2026',
     metaDescription: 'How long will $500,000 last in retirement? Explore withdrawal rate scenarios, inflation impact, and strategies to extend your retirement savings.',
     keywords: ['how long will 500k last in retirement', '500k retirement'],
+    answerFirst: 'At a 4% withdrawal rate ($20,000/year), $500,000 should last 30+ years with a diversified portfolio based on historical data. At 5% withdrawal ($25,000/year), expect 20-25 years; at 6% ($30,000/year), only 15-20 years. Inflation and sequence of returns risk are the two biggest factors that can shorten portfolio life beyond these estimates.',
+    answerFirstFacts: [
+      'At 4% withdrawal ($20,000/year), $500k has historically lasted 30+ years',
+      'At 3% inflation, $500k loses 45% of its purchasing power over 20 years',
+      'A 30% market crash early in retirement can permanently damage portfolio longevity',
+      'Social Security and pensions reduce what you need from savings, effectively extending portfolio life',
+    ],
+
 
     targetKeyword: 'how long will 500k last in retirement',
     volume: 300,
@@ -565,6 +589,14 @@ export const retirementPlanningFinalArticles: LearnArticleRegistry = {
     metaTitle: 'Downsizing in Retirement: Complete Strategy Guide | 2026',
     metaDescription: 'Should you downsize in retirement? Learn when to sell your home, tax implications of home sales, emotional considerations, and how to use the equity wisely.',
     keywords: ['downsizing in retirement', 'retire and downsize', 'selling home in retirement'],
+    answerFirst: 'Downsizing in retirement can free up $100,000 or more in home equity and reduce monthly expenses by $500-1,500. The capital gains exclusion allows $250,000 (single) or $500,000 (married) in home sale profit to be completely tax-free. However, hidden costs including realtor commissions, closing costs, and moving expenses can eat 10-15% of sale proceeds.',
+    answerFirstFacts: [
+      'Capital gains exclusion: $250k single/$500k married on home sale profit is tax-free',
+      'Typical savings from downsizing: $500-1,500/month in reduced housing costs',
+      'Hidden costs (commissions, moving, repairs) can consume 10-15% of sale proceeds',
+      'Property taxes alone can drop from $6,000-15,000/year to $2,000-5,000/year',
+    ],
+
 
     targetKeyword: 'downsizing in retirement',
     volume: 200,
@@ -774,6 +806,14 @@ export const retirementPlanningFinalArticles: LearnArticleRegistry = {
     metaTitle: '10 Retirement Mistakes to Avoid | Complete Guide 2026',
     metaDescription: 'Avoid these 10 common retirement mistakes: claiming Social Security early, no diversification, underestimating healthcare, and more. Protect your retirement.',
     keywords: ['retirement mistakes', 'retirement planning mistakes', 'avoid retirement errors'],
+    answerFirst: 'The 10 most costly retirement mistakes include claiming Social Security too early (costing up to 30% in lifetime benefits), not diversifying beyond stocks and bonds, and underestimating healthcare costs. The average couple retiring at 65 faces $315,000 in lifetime healthcare expenses. These mistakes compound: a market crash combined with early Social Security and no withdrawal strategy is how retirements fail.',
+    answerFirstFacts: [
+      'Claiming Social Security at 62 vs. 70 can cost $60,000+ in lifetime benefits',
+      'Average couple retiring at 65 faces $315,000 in lifetime healthcare costs',
+      'The traditional 60/40 portfolio lost 17% in 2022 when both stocks and bonds fell',
+      'At 3% inflation, $500k buys only $250k worth of goods in 24 years',
+    ],
+
 
     targetKeyword: 'retirement mistakes to avoid',
     volume: 150,

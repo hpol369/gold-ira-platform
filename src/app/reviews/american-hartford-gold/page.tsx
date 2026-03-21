@@ -11,6 +11,7 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 
@@ -27,6 +28,22 @@ export default function AmericanHartfordGoldReviewPage() {
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "American Hartford Gold", url: "/reviews/american-hartford-gold" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/american-hartford-gold"))} />
             <Navbar />
+
+            <section className="pt-8 pb-4 bg-slate-50">
+                <Container>
+                    <AnswerFirst
+                        answer="American Hartford Gold earns a 4.5/5 rating with a $10,000 minimum — the sweet spot for mid-budget investors. They're an Inc. 5000 company with an A+ BBB rating and offer a price match guarantee: if you find a lower price on the same product elsewhere, they'll match it."
+                        keyFacts={[
+                            "Minimum investment: $10,000 — accessible for mid-range investors",
+                            "Price match guarantee on all precious metals purchases",
+                            "A+ BBB rating; Inc. 5000 fastest-growing company; endorsed by Bill O'Reilly",
+                            "Also offers direct (non-IRA) precious metals purchases from $5,000",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">

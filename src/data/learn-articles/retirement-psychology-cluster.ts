@@ -12,6 +12,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Who Am I Without Work? Finding Identity After Career | 2026',
     metaDescription: 'Struggling with "who am I without work" after retirement? Discover why this identity crisis is completely normal, how others navigate it, and practical ways to find purpose and meaning.',
     keywords: ['who am i without work', 'identity after retirement', 'lost without work', 'no longer working identity', 'retirement who am i'],
+    answerFirst: 'Feeling lost without work is one of the most common retirement experiences, affecting more than half of retirees in the first year. Your job title was never who you are — it was what you did. The identity crisis typically follows predictable stages: honeymoon (0-3 months), letdown (3-6 months), identity crisis (6-12 months), reorientation (12-18 months), and stability (18+ months).',
+    answerFirstFacts: [
+      'More than 50% of retirees experience identity confusion in the first year after retirement',
+      'High achievers and those with long careers often struggle the most with post-work identity',
+      'The deepest identity crisis typically occurs 6-12 months after retirement',
+      'Most retirees report a satisfying new sense of self by 18-24 months after retiring',
+    ],
+
 
     targetKeyword: 'who am i without work',
     volume: 40,
@@ -177,6 +185,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Fear of Running Out of Money in Retirement: Managing Money Anxiety | 2026',
     metaDescription: 'Afraid of running out of money in retirement? Learn when financial fear is rational vs irrational, how to create realistic spending plans, and find peace of mind.',
     keywords: ['fear of running out of money', 'retirement money anxiety', 'scared to spend retirement savings', 'will my money last'],
+    answerFirst: 'Fear of running out of money in retirement is incredibly common and affects people at all savings levels — even millionaires worry. Research shows the amount of money saved only weakly correlates with financial anxiety. The key distinction is whether your fear is rational (fixable with planning) or irrational (persisting despite adequate savings). Concrete planning with budgets and guardrails reduces anxiety more than just having more money.',
+    answerFirstFacts: [
+      'People with $2 million often worry as much as those with $500,000 saved',
+      'Loss aversion causes humans to feel losses 2x more intensely than equivalent gains',
+      'The guardrails approach allows spending more in good years and less in bad years',
+      'If fear persists despite a financial advisor confirming adequacy, it is an emotional issue, not financial',
+    ],
+
 
     targetKeyword: 'fear of running out of money',
     volume: 320,
@@ -352,6 +368,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Retirement Identity Crisis: Stages of Adjustment & Finding Yourself | 2026',
     metaDescription: 'Experiencing a retirement identity crisis? Understand the stages of adjustment after losing work identity, how to rebuild your sense of self, and when to seek help.',
     keywords: ['retirement identity crisis', 'loss of work identity', 'who am i in retirement', 'retirement adjustment stages'],
+    answerFirst: 'Retirement identity crisis is a recognized psychological phenomenon affecting 40-50% of retirees, triggered by the loss of work-based identity, status, and daily structure. The adjustment typically follows five stages over 12-24 months: honeymoon, disenchantment, identity vacuum, reorientation, and stability. Most people who work through this crisis emerge with a richer, more authentic sense of self than their career identity provided.',
+    answerFirstFacts: [
+      'Retirement identity crisis affects 40-50% of retirees and is a recognized psychological phenomenon',
+      'The five stages of adjustment span approximately 12-24 months from retirement date',
+      'The identity vacuum (6-18 months) is the deepest and most challenging phase',
+      'Volunteering, mentoring, and helping others provide the deepest new sense of purpose for most retirees',
+    ],
+
 
     targetKeyword: 'retirement identity crisis',
     volume: 70,
@@ -527,6 +551,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Retirement Depression First Year: Signs, Causes & Getting Help | 2026',
     metaDescription: 'Depression after retirement affects up to 30% of new retirees. Learn warning signs, why retirement triggers depression, coping strategies, and when to seek professional help.',
     keywords: ['retirement depression', 'depression after retirement', 'first year retirement depression', 'sad after retiring'],
+    answerFirst: 'Up to 30% of new retirees experience clinically significant depression in the first year. Retirement depression is underdiagnosed because people expect retirement to be happy and feel ashamed when it is not. Warning signs include persistent sadness lasting 2+ weeks, loss of interest in activities, sleep changes, and withdrawal from social life. Depression in retirement is treatable with therapy and sometimes medication.',
+    answerFirstFacts: [
+      'Up to 30% of new retirees experience clinically significant depression in the first year',
+      'Men are at higher risk partly because they are less likely to seek professional help',
+      'Key warning signs: persistent sadness for 2+ weeks, loss of interest, sleep and appetite changes',
+      'Depression is treatable — therapy and sometimes medication help significantly',
+    ],
+
 
     targetKeyword: 'retirement depression first year',
     volume: 90,
@@ -716,6 +748,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Retirement Boredom Solutions: 50+ Ways to Stay Engaged & Fulfilled | 2026',
     metaDescription: 'Bored in retirement? Discover practical solutions including volunteering, part-time work, hobbies, learning, and ways to create meaningful structure in your retired life.',
     keywords: ['retirement boredom', 'bored in retirement', 'what to do in retirement', 'retirement activities', 'bored after retiring'],
+    answerFirst: 'Retirement boredom typically hits 3-6 months after the initial honeymoon phase when the novelty of freedom wears off. The solution is not filling every hour with activities, but finding 2-3 sources of genuine meaning and engagement. Structured volunteering, learning new skills, part-time work, and building community provide the sense of purpose that combats boredom most effectively.',
+    answerFirstFacts: [
+      'Retirement boredom typically peaks 3-6 months after the initial honeymoon phase',
+      'Structured weekly commitments (volunteering, classes, groups) combat boredom more than spontaneous activities',
+      'Retirees who volunteer report 44% lower mortality risk than non-volunteers',
+      'Most retirees need 3-5 different activities to replace the 40+ hours work previously filled',
+    ],
+
 
     targetKeyword: 'retirement boredom solutions',
     volume: 140,
@@ -898,6 +938,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Retirement Spending Anxiety: Why Spending Feels Wrong & How to Cope | 2026',
     metaDescription: 'Struggling with retirement spending anxiety? Learn why spending savings feels so hard, the psychology of decumulation, and practical guardrails that let you spend with confidence.',
     keywords: ['retirement spending anxiety', 'afraid to spend retirement savings', 'decumulation anxiety', 'spending in retirement'],
+    answerFirst: 'Retirement spending anxiety affects retirees who struggle to shift from saving mode to spending mode, even when they have adequate savings. The psychological shift from watching account balances grow to watching them decline triggers deep discomfort rooted in loss aversion and decades of saving habits. Creating separate "permission to spend" accounts and using the guardrails approach can help overcome this anxiety.',
+    answerFirstFacts: [
+      'Lifelong savers find spending psychologically difficult because watching balances decline feels wrong',
+      'Loss aversion makes humans feel losses approximately 2x more intensely than gains',
+      'The guardrails approach provides built-in permission to spend more when portfolio grows',
+      'Many retirees die with more money than they retired with because they cannot bring themselves to spend',
+    ],
+
 
     targetKeyword: 'retirement spending anxiety',
     volume: 50,
@@ -1072,6 +1120,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Permission to Spend in Retirement: Die With Zero Philosophy Guide | 2026',
     metaDescription: 'Give yourself permission to spend in retirement. Explore the Die With Zero philosophy, balancing security with enjoyment, and why your money is meant to be used.',
     keywords: ['permission to spend retirement', 'die with zero', 'enjoy retirement savings', 'spending retirement money'],
+    answerFirst: 'Many retirees need explicit permission to spend their savings, even when financially secure. Decades of disciplined saving create a psychological barrier to spending that logic alone cannot overcome. Practical strategies include creating a separate "fun money" account, automating discretionary withdrawals, and reframing spending as "converting deferred earnings into the life you earned." Financial therapists increasingly specialize in this common retirement challenge.',
+    answerFirstFacts: [
+      'Studies show many retirees die with 80%+ of their retirement savings still intact',
+      'Automating monthly transfers to a "fun money" account removes the psychological barrier of each withdrawal',
+      'Reframing: you are not spending savings — you are converting deferred earnings into life experiences',
+      'Financial therapy specializing in retirement spending permission is a growing field of practice',
+    ],
+
 
     targetKeyword: 'permission to spend retirement',
     volume: 30,
@@ -1244,6 +1300,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'Things I Wish I Knew Before Retiring: Retiree Wisdom & Advice | 2026',
     metaDescription: 'Real retirees share what they wish they knew before retiring. Common surprises, preparation tips, emotional challenges, and hard-won advice for your retirement transition.',
     keywords: ['things i wish i knew before retiring', 'retirement advice from retirees', 'retirement surprises', 'preparing for retirement'],
+    answerFirst: 'The most common regrets from recent retirees center on underestimating the emotional transition, not the finances. Many wish they had prepared for the loss of daily structure and social connections that work provided. Other frequent regrets include not starting hobbies before retirement, underestimating healthcare costs, and claiming Social Security too early. Financial preparation is necessary but not sufficient for a successful retirement.',
+    answerFirstFacts: [
+      'The #1 surprise for new retirees is the emotional adjustment, not the financial adjustment',
+      'Most retirees wish they had developed hobbies and social connections before their last day of work',
+      'Healthcare costs are the most commonly underestimated expense in retirement planning',
+      'Retirees who planned only finances (not lifestyle) report lower satisfaction than those who planned both',
+    ],
+
 
     targetKeyword: 'things i wish i knew before retiring',
     volume: 210,
@@ -1402,6 +1466,14 @@ export const retirementPsychologyArticles: LearnArticleRegistry = {
     metaTitle: 'First Year Retirement Mistakes: 10 Pitfalls to Avoid | 2026',
     metaDescription: 'Avoid common first year retirement mistakes. Learn about overspending, underspending, losing structure, relationship strain, and how to navigate your first year successfully.',
     keywords: ['first year retirement mistakes', 'retirement mistakes', 'early retirement pitfalls', 'retirement first year'],
+    answerFirst: 'The most costly first-year retirement mistakes include overspending during the "honeymoon phase," making major irreversible decisions too quickly, and failing to establish a withdrawal strategy. Many new retirees also underestimate the emotional adjustment period and isolate themselves socially. Financial planners recommend making no major decisions — moving, large purchases, or portfolio changes — in the first 6-12 months of retirement.',
+    answerFirstFacts: [
+      'Overspending in the first year of retirement is the #1 financial mistake new retirees make',
+      'Financial planners recommend no major decisions in the first 6-12 months of retirement',
+      'Social isolation in the first year is linked to higher rates of depression and cognitive decline',
+      'Establishing a withdrawal strategy before retiring prevents both overspending and unnecessary frugality',
+    ],
+
 
     targetKeyword: 'first year retirement mistakes',
     volume: 170,

@@ -9,6 +9,7 @@ import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 import {
@@ -42,6 +43,22 @@ export default function GoldIRARulesPage() {
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Gold IRA Rules", url: "/gold-ira-rules" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("gold-ira-rules"))} />
       <Navbar />
+
+      {/* Answer-First GEO Block */}
+      <section className="pt-8 pb-4 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="Gold IRA rules require that metals be at least 99.5% pure (.995 fineness), stored in an IRS-approved depository (not at home), and held by a licensed custodian. Contribution limits for 2026 are $7,000 ($8,000 if 50+). Withdrawals before 59½ incur a 10% penalty plus income tax. Required Minimum Distributions begin at age 73."
+            keyFacts={[
+              "Gold purity: minimum 99.5% (.995 fineness) — American Eagles are the exception at 91.67%",
+              "Home storage is a prohibited transaction — triggers full tax liability + 10% penalty",
+              "2026 contribution limits: $7,000/year ($8,000 if 50+), rollovers unlimited",
+              "RMDs start at age 73 for Traditional; Roth Gold IRAs have no RMDs during owner\'s lifetime",
+            ]}
+            className="max-w-3xl mx-auto"
+          />
+        </Container>
+      </section>
 
       {/* Header */}
       <header className="bg-slate-50 text-[#000080] py-16 md:py-20">

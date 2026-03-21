@@ -11,6 +11,7 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 
@@ -27,6 +28,22 @@ export default function NobleGoldReviewPage() {
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Noble Gold", url: "/reviews/noble-gold" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/noble-gold"))} />
             <Navbar />
+
+            <section className="pt-8 pb-4 bg-slate-50">
+                <Container>
+                    <AnswerFirst
+                        answer="Noble Gold Investments earns a 4.7/5 rating with an A+ BBB rating and the industry's lowest minimum at $2,000. They're the best choice for investors with smaller portfolios who want to start a Gold IRA without committing $25,000-$50,000 upfront. Storage is at their Texas depository or the Delaware Depository."
+                        keyFacts={[
+                            "Lowest minimum in the industry: $2,000 (vs. $10k-$50k at competitors)",
+                            "A+ BBB rating with solid customer reviews since 2016",
+                            "Annual fees: $80 custodian + $150 storage = $230/year ongoing",
+                            "Offers both gold and silver IRAs with buyback program",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">

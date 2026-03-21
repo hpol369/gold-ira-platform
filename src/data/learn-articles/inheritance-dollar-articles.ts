@@ -12,7 +12,13 @@ export const inheritanceDollarArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With $50K Inheritance | Smart Money Guide 2026',
     metaDescription: 'Inherited $50,000? Learn the smartest ways to invest, pay off debt, build an emergency fund, and protect a portion with gold.',
     keywords: ['what to do with 50k inheritance', '50000 inheritance', 'inherited 50000'],
-
+    answerFirst: 'With a $50,000 inheritance, build a 3-6 month emergency fund ($10,000-$15,000), pay off high-interest credit card debt, allocate 10-15% ($5,000-$7,500) to a Gold IRA for inflation protection, and invest the remainder in low-cost index funds. Wait at least 30 days before making any major decisions — grief and excitement lead to costly mistakes.',
+    answerFirstFacts: [
+      'A $50k inheritance invested at 7% average returns grows to approximately $200,000 in 20 years',
+      'Credit card debt at 20% interest costs a guaranteed loss — pay it off before investing anything',
+      'Allocating $5,000-$7,500 (10-15%) to a Gold IRA provides inflation insurance for the remaining portfolio',
+      'Direct cash inheritances are generally not taxable income in most states',
+    ],
     targetKeyword: 'what to do with 50k inheritance',
     volume: 70,
     difficulty: 0,
@@ -183,7 +189,13 @@ export const inheritanceDollarArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With $150K Inheritance | Smart Planning Guide 2026',
     metaDescription: 'Inherited $150,000? Learn diversification strategies, tax considerations, and how to allocate this significant windfall for long-term security.',
     keywords: ['what to do with 150k inheritance', '150000 inheritance'],
-
+    answerFirst: 'A $150,000 inheritance requires professional guidance — consult a fee-only fiduciary financial advisor ($1,500-$3,000 for a comprehensive plan). Wait 60-90 days before investing, allocate 10-15% ($15,000-$22,500) to a Gold IRA, diversify across US stocks, international stocks, and bonds, and keep $15,000-$25,000 as an emergency fund. Under the SECURE Act, inherited IRAs must be distributed within 10 years.',
+    answerFirstFacts: [
+      'Federal estate tax only applies to estates exceeding $13.61 million — most inheritances are not taxed',
+      'A fee-only fiduciary financial advisor costs $1,500-$3,000 for a comprehensive inheritance plan',
+      'Using the 4% rule, $150k generates about $6,000/year — not enough alone for retirement but can accelerate it by 2-5 years',
+      'Six states have inheritance taxes: Iowa, Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania',
+    ],
     targetKeyword: 'what to do with 150k inheritance',
     volume: 30,
     difficulty: 0,
@@ -353,7 +365,13 @@ export const inheritanceDollarArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With $300K Inheritance | Wealth Protection Guide 2026',
     metaDescription: 'Inherited $300,000? Learn tax-efficient strategies, estate planning considerations, and how to preserve this wealth for generations.',
     keywords: ['what to do with 300k inheritance', '300000 inheritance'],
-
+    answerFirst: 'A $300,000 inheritance demands professional wealth management, estate planning, and at least 6 months before major decisions. Allocate $30,000-$45,000 (10-15%) to a Gold IRA, establish a revocable living trust ($1,500-$3,000) to avoid probate costs of $15,000-$30,000+, and diversify across US stocks, international stocks, bonds, and REITs. Tax-efficient strategies like asset location and tax-loss harvesting can save $3,000-$9,000 annually.',
+    answerFirstFacts: [
+      'Parking $300k in Treasury bills during a 6-month planning period earns roughly $7,500 in risk-free interest',
+      'A revocable living trust costs $1,500-$3,000 to establish but saves heirs $15,000-$30,000+ in probate',
+      'Using the 4% rule, $300k generates about $12,000/year sustainably — supplementing Social Security',
+      'Tax-efficient investing strategies (asset location, tax-loss harvesting) can save $3,000-$9,000 per year',
+    ],
     targetKeyword: 'what to do with 300k inheritance',
     volume: 60,
     difficulty: 0,
@@ -536,7 +554,13 @@ export const inheritanceDollarArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With $400K Inheritance | Wealth Management Guide 2026',
     metaDescription: 'Inherited $400,000? Learn wealth management strategies, when to hire professional advisors, and how to diversify this significant windfall.',
     keywords: ['what to do with 400k inheritance', '400000 inheritance'],
-
+    answerFirst: 'A $400,000 inheritance requires assembling a professional advisory team: fee-only financial planner ($2,500-$5,000), estate planning attorney ($2,000-$5,000), and CPA ($500-$1,500/year). Wait at least 6 months before major decisions. Allocate $40,000-$60,000 (10-15%) to a Gold IRA, diversify across multiple asset classes and geographies, and protect against lifestyle inflation — the biggest risk to large inheritances.',
+    answerFirstFacts: [
+      'Using the 4% rule, $400k generates about $16,000/year — not enough to replace most incomes',
+      'A fee-only financial planner costs $2,500-$5,000 for a comprehensive plan — tiny vs potential mistakes',
+      'The biggest risk to a $400k inheritance is emotional decisions and lifestyle inflation, not market returns',
+      'Multi-dimensional diversification across asset classes, account types, and geographies is essential at this level',
+    ],
     targetKeyword: 'what to do with 400k inheritance',
     volume: 30,
     difficulty: 0,

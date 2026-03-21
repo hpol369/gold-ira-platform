@@ -40,6 +40,22 @@ export default function RolloverPage() {
       <SchemaScript schema={faqSchema(getPageFAQs("rollover"))} />
       <Navbar />
 
+      {/* Answer-First GEO Block */}
+      <section className="pt-8 pb-4 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="A Gold IRA rollover transfers funds from your existing 401(k), IRA, TSP, or other retirement account into a self-directed IRA that holds physical gold. Direct rollovers are 100% tax-free with zero penalties. The process takes 2-3 weeks and your current custodian handles the transfer."
+            keyFacts={[
+              "Direct rollovers: 100% tax-free, zero penalties, no dollar limit",
+              "Timeline: 2-3 weeks from start to finish",
+              "Works with 401(k), IRA, TSP, 403(b), 457(b), and more",
+              "Your Gold IRA company handles all paperwork",
+            ]}
+            className="max-w-3xl mx-auto"
+          />
+        </Container>
+      </section>
+
       {/* Header */}
       <header className="bg-slate-50 py-16 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
@@ -405,16 +421,6 @@ export default function RolloverPage() {
 
       <section className="py-16 bg-white">
         <Container>
-          <AnswerFirst
-            answer="A Gold IRA rollover transfers funds from your existing 401(k), IRA, TSP, or other retirement account into a self-directed IRA that holds physical gold. Direct rollovers are 100% tax-free with zero penalties. The process takes 2-3 weeks and your current custodian handles the transfer."
-            keyFacts={[
-              "Direct rollovers: 100% tax-free, zero penalties, no dollar limit",
-              "Timeline: 2-3 weeks from start to finish",
-              "Works with 401(k), IRA, TSP, 403(b), 457(b), and more",
-              "Your Gold IRA company handles all paperwork",
-            ]}
-            className="mb-12 max-w-3xl"
-          />
           <FAQSection
             faqs={getPageFAQs("rollover")}
             title="Gold IRA Rollover FAQ"

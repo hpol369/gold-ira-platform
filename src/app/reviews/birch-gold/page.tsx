@@ -11,6 +11,7 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 
@@ -19,44 +20,30 @@ export const metadata = {
     description: "An honest review of Birch Gold Group covering their 20+ year history, fee structure, conservative media partnerships, and how they compare to competitors.",
 };
 
-const reviewJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-        "@type": "Organization",
-        "name": "Birch Gold Group"
-    },
-    "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.5",
-        "bestRating": "5",
-        "worstRating": "1"
-    },
-    "author": {
-        "@type": "Person",
-        "name": "Thomas Richardson"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement"
-    },
-    "datePublished": "2026-01-26",
-    "reviewBody": "Birch Gold Group has been around since 2003 with over 20 years of operating history. They offer flat annual fees which benefit larger accounts, maintain an A+ BBB rating, and provide a broad selection of precious metals including platinum and palladium."
-};
-
 export default function BirchGoldReviewPage() {
     return (
-        <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
-            />
             <main className="min-h-screen flex flex-col bg-slate-50">
             <SchemaScript schema={reviewSchema({ itemName: "Birch Gold Group", reviewBody: "Birch Gold Group has been in business since 2003 with a flat-fee structure and strong track record.", ratingValue: 4.5, author: "Thomas Richardson", url: "/reviews/birch-gold" })} />
             <SchemaScript schema={aggregateRatingSchema({ itemName: "Birch Gold Group", ratingValue: 4.5, reviewCount: 523 })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Birch Gold", url: "/reviews/birch-gold" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/birch-gold"))} />
             <Navbar />
+
+            <section className="pt-8 pb-4 bg-slate-50">
+                <Container>
+                    <AnswerFirst
+                        answer="Birch Gold Group earns a 4.5/5 rating as one of the most established Gold IRA dealers, operating since 2003. Their flat-fee structure ($50 setup, $80 custodian, $100 storage = $180/year after first year) benefits larger accounts where percentage-based fees would cost more. Endorsed by Ben Shapiro."
+                        keyFacts={[
+                            "In business since 2003 — over 20 years of operating history",
+                            "Flat fees: $180/year after setup — advantageous for larger accounts",
+                            "Minimum investment: $10,000 for IRA accounts",
+                            "A+ BBB rating with broad metals selection including platinum and palladium",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
@@ -202,6 +189,5 @@ export default function BirchGoldReviewPage() {
             <Footer />
             <StickyMobileCTA companySlug="birch-gold-group" companyName="Birch Gold" />
         </main>
-        </>
     );
 }

@@ -165,44 +165,11 @@ const greenFlags = [
 
 const schema = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      name: "Gold IRA Scam Protection Center",
-      description:
-        "Comprehensive resource for protecting yourself from Gold IRA scams and verifying companies before investing.",
-      url: "https://richdadretirement.com/scams",
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How do I know if a Gold IRA company is legitimate?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Check their BBB rating (should be A or higher), look for complaints on Consumer Affairs and Trustpilot, verify they use IRS-approved depositories, and confirm they provide transparent pricing. Legitimate companies educate first and never pressure you to decide immediately.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the most common Gold IRA scam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The 'home storage IRA' scam is the most dangerous. Companies claim you can store IRA gold in your home safe. This violates IRS rules and can result in the entire IRA being treated as a distribution, triggering income taxes plus a 10% early withdrawal penalty.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do I report a Gold IRA scam?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Report to the BBB (bbb.org), FTC (reportfraud.ftc.gov), your state attorney general, and the CFPB. Also leave honest reviews on Google and Trustpilot to warn other investors.",
-          },
-        },
-      ],
-    },
-  ],
+  "@type": "WebPage",
+  name: "Gold IRA Scam Protection Center",
+  description:
+    "Comprehensive resource for protecting yourself from Gold IRA scams and verifying companies before investing.",
+  url: "https://richdadretirement.com/scams",
 };
 
 export default function ScamsPage() {
@@ -213,6 +180,22 @@ export default function ScamsPage() {
       <SchemaScript schema={faqSchema(getPageFAQs("scams"))} />
       <SchemaScript schema={schema} />
       <Navbar />
+
+      {/* Answer-First GEO Block */}
+      <section className="pt-8 pb-4 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="The most common Gold IRA scams include home storage schemes (illegal — IRS requires approved depositories), excessive premiums (15%+ over spot price), bait-and-switch from numismatic coins, high-pressure sales tactics, and fake reviews. Here are the red flags to watch for and how to verify a company is legitimate."
+            keyFacts={[
+              "Home storage Gold IRAs are illegal — IRS requires approved depositories",
+              "Legitimate gold coin premiums are 3-8% over spot price",
+              "Augusta Precious Metals: zero BBB complaints in 7+ years",
+              "Always verify BBB rating, BCA rating, and state registration independently",
+            ]}
+            className="max-w-3xl mx-auto"
+          />
+        </Container>
+      </section>
 
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
@@ -621,16 +604,6 @@ export default function ScamsPage() {
 
       <section className="py-16 bg-white">
         <Container>
-          <AnswerFirst
-            answer="The most common Gold IRA scams include home storage schemes (illegal — IRS requires approved depositories), excessive premiums (15%+ over spot price), bait-and-switch from numismatic coins, high-pressure sales tactics, and fake reviews. Here are the red flags to watch for and how to verify a company is legitimate."
-            keyFacts={[
-              "Home storage Gold IRAs are illegal — IRS requires approved depositories",
-              "Legitimate gold coin premiums are 3-8% over spot price",
-              "Augusta Precious Metals: zero BBB complaints in 7+ years",
-              "Always verify BBB rating, BCA rating, and state registration independently",
-            ]}
-            className="mb-12 max-w-3xl"
-          />
           <FAQSection
             faqs={getPageFAQs("scams")}
             title="Gold IRA Scam FAQ"

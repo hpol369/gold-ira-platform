@@ -18,6 +18,13 @@ export const scamMiscArticles: LearnArticleRegistry = {
       'predatory reverse mortgage',
       'reverse mortgage fraud'
     ],
+    answerFirst: 'Reverse mortgage scams cost seniors billions annually through foreclosure rescue fraud, contractor partnerships with inflated costs, title theft, and investment schemes pressuring seniors to invest proceeds in risky products. The number one red flag is high-pressure sales tactics. Legitimate lenders are FHA-approved (verify at HUD.gov), require HUD counseling before proceeding, and never charge upfront fees before counseling.',
+    answerFirstFacts: [
+      'Reverse mortgage scams cost seniors billions of dollars annually across the United States',
+      'HUD-approved counseling is legally required before any reverse mortgage and cannot be skipped',
+      'Legitimate lenders never charge upfront fees before the mandatory HUD counseling session',
+      'You can verify any lender\'s FHA approval status at HUD.gov before speaking with them',
+    ],
     targetKeyword: 'reverse mortgage scam',
     volume: 250,
     difficulty: 6,
@@ -193,6 +200,13 @@ export const scamMiscArticles: LearnArticleRegistry = {
       'medicaid planning annuity',
       'mca annuity',
       'medicaid spend down annuity'
+    ],
+    answerFirst: 'A Medicaid Compliant Annuity (MCA) converts countable assets into an income stream to help you qualify for Medicaid long-term care faster. The annuity must be irrevocable, non-transferable, actuarially sound, and make equal payments. The state must be named as beneficiary to recover costs after death. The half-a-loaf strategy can preserve 40-50% of assets for family members.',
+    answerFirstFacts: [
+      'MCAs convert countable assets into income to meet Medicaid asset limits faster',
+      'The half-a-loaf strategy can preserve 40-50% of assets for family members while qualifying for Medicaid',
+      'MCAs must be irrevocable, non-transferable, actuarially sound, and make equal payments to comply',
+      'State Medicaid rules vary significantly and not every state accepts Medicaid Compliant Annuities',
     ],
     targetKeyword: 'medicaid compliant annuity',
     volume: 1200,
@@ -376,6 +390,13 @@ export const scamMiscArticles: LearnArticleRegistry = {
       'retiree drug plan',
       'employer medicare drug coverage'
     ],
+    answerFirst: 'An EGWP (Employer Group Waiver Plan) is a Medicare Part D alternative where your employer provides subsidized prescription drug coverage to retirees. Coverage is typically better and cheaper than individual Part D plans because the employer receives Medicare subsidies to offset costs. If you have EGWP coverage, you do not need to enroll in a separate Part D plan.',
+    answerFirstFacts: [
+      'EGWP stands for Employer Group Waiver Plan, a Medicare Part D alternative for retirees',
+      'EGWP coverage is often better and cheaper than individual Part D plans due to employer subsidies',
+      'Employers receive Medicare subsidies to offset the cost of providing EGWP drug coverage',
+      'Retirees with EGWP coverage do not need to separately enroll in Medicare Part D',
+    ],
     targetKeyword: 'egwp medicare',
     volume: 30,
     difficulty: 0,
@@ -548,6 +569,13 @@ export const scamMiscArticles: LearnArticleRegistry = {
       'rental property retirement strategy',
       'passive income retirement',
       'self directed ira real estate'
+    ],
+    answerFirst: 'A rental income retirement strategy uses investment properties to generate passive monthly cash flow that replaces or supplements Social Security and 401(k) withdrawals. The 1% rule states monthly rent should equal approximately 1% of property value for good cash flow. Self-Directed IRAs allow tax-advantaged real estate investing, but property management becomes more challenging with age.',
+    answerFirstFacts: [
+      'The 1% rule: monthly rent should equal approximately 1% of the property\'s purchase price for positive cash flow',
+      'Self-Directed IRAs allow tax-advantaged real estate investing inside a retirement account',
+      'Rental income can replace or supplement Social Security and 401(k) withdrawals in retirement',
+      'Leveraged returns amplify both gains and risks, so diversification beyond real estate is critical',
     ],
     targetKeyword: 'rental income retirement strategy',
     volume: 30,

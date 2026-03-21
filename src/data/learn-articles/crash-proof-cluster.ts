@@ -19,6 +19,14 @@ export const crashProofArticles: LearnArticleRegistry = {
       'crash proof portfolio',
       'recession proof retirement'
     ],
+    answerFirst: 'A crash-proof retirement requires building a portfolio that can weather severe market downturns without forcing you to change your plans. No portfolio is 100% crash-proof, but the right asset allocation can minimize damage: gold has risen during every major crash in modern history, including +25% in 2008 when stocks fell 56%. Financial advisors recommend shifting 10-20% to gold in the 5 years before retirement for optimal crash protection.',
+    answerFirstFacts: [
+      'Gold rose during the 2008 crisis (+25%), 1987 Black Monday (+21%), and 1973-74 recession (+73%)',
+      'Studies show 15-20% gold allocation provides optimal crash protection without sacrificing too much growth',
+      'Asset allocation — not market timing — is the first line of defense against crashes',
+      'The bucket strategy with 2-3 years of cash prevents forced stock sales during downturns',
+    ],
+
     targetKeyword: 'crash proof retirement',
     volume: 500,
     difficulty: 1,
@@ -222,6 +230,14 @@ export const crashProofArticles: LearnArticleRegistry = {
       'financial collapse preparation',
       'how to prepare for economic crisis'
     ],
+    answerFirst: 'Financial preparation for economic collapse means building resilience across a spectrum of scenarios — from mild recession to severe currency crisis. The priority order is: 6-12 months emergency fund, eliminate high-interest debt, allocate 10-25% of net worth to tangible assets like gold and silver, develop multiple income streams, and build practical skills. Gold and silver have preserved wealth through every economic collapse in human history.',
+    answerFirstFacts: [
+      'Financial experts recommend 6-12 months of emergency fund as the baseline for preparedness',
+      'Gold has preserved wealth through every major collapse: the Great Depression, Weimar hyperinflation, and Venezuela\'s crisis',
+      'During Argentina\'s 2001 collapse, the government froze all bank accounts — only physical assets were accessible',
+      'The recommended allocation for economic preparedness is 10-25% of net worth in gold and silver',
+    ],
+
     targetKeyword: 'prepare for economic collapse',
     volume: 150,
     difficulty: 1,
@@ -422,6 +438,14 @@ export const crashProofArticles: LearnArticleRegistry = {
       '1929 crash vs 2008 crash',
       'great depression great recession differences'
     ],
+    answerFirst: 'The Great Depression (1929) was significantly worse than the Great Recession (2008): stocks fell 89% vs. 56%, unemployment hit 25% vs. 10%, and recovery took 25 years vs. 4 years. Gold gained in both crises — up 69% during the Great Depression and 25% during the 2008 crash (reaching +137% by 2011). The consistent lesson: diversification into gold protects wealth when paper assets fail.',
+    answerFirstFacts: [
+      'Great Depression: stocks fell 89%, 25% unemployment, 9,000+ banks failed, 25-year stock recovery',
+      'Great Recession: stocks fell 56%, 10% unemployment, 465 banks failed, 4-year stock recovery',
+      'Gold gained in both crises: +69% in the Great Depression and +25% (later +137%) in the Great Recession',
+      'Housing prices declined roughly equally in both: -30% (Depression) vs. -33% (Recession)',
+    ],
+
     targetKeyword: 'great depression vs great recession',
     volume: 150,
     difficulty: 0,
@@ -621,6 +645,14 @@ export const crashProofArticles: LearnArticleRegistry = {
       'recession proof assets',
       'depression proof stocks'
     ],
+    answerFirst: 'Gold is the #1 depression-proof investment, having risen 69% during the Great Depression while stocks crashed 89%, and gained 25% during the 2008 Financial Crisis while stocks fell 56%. Other depression-proof assets include Treasury bonds, defensive stocks (utilities, consumer staples), and paid-off real estate. No single asset is 100% safe — diversification across non-correlated asset classes is mandatory.',
+    answerFirstFacts: [
+      'Gold rose 69% during the Great Depression, +25% in 2008, and +2,300% during 1970s stagflation',
+      'Treasury bonds provided stability in both 1929 (+4%) and 2008 (+5%) crises',
+      'Defensive stocks (utilities, consumer staples) outperform but still lose money during depressions',
+      'Financial advisors studying depression risk recommend 15-25% gold allocation for retirement portfolios',
+    ],
+
     targetKeyword: 'depression proof investments',
     volume: 20,
     difficulty: 0,
@@ -829,6 +861,14 @@ export const crashProofArticles: LearnArticleRegistry = {
       'protect retirement savings crash',
       'market crash retirement protection'
     ],
+    answerFirst: 'Protecting retirement savings from a market crash requires action before the crash occurs — not during it. The most effective strategies are maintaining 2-3 years of expenses in cash or bonds, allocating 10-20% to gold (which historically rises during crashes), using a flexible withdrawal strategy that reduces spending in down years, and avoiding panic selling. The first 5-10 years of retirement are the most vulnerable to crash damage.',
+    answerFirstFacts: [
+      'A 2-3 year cash buffer prevents selling stocks at crash lows for living expenses',
+      'Gold allocation of 10-20% has historically reduced portfolio losses during every major crash since 1971',
+      'The first 5-10 years of retirement are the "danger zone" where crash damage is most permanent',
+      'Flexible withdrawal strategies (reducing spending 10-20% in bad years) dramatically improve portfolio survival',
+    ],
+
     targetKeyword: 'protecting retirement from market crash',
     volume: 100,
     difficulty: 3,

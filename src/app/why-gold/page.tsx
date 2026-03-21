@@ -9,6 +9,7 @@ import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 import {
@@ -42,6 +43,22 @@ export default function WhyGoldPage() {
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Why Gold", url: "/why-gold" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("why-gold"))} />
       <Navbar />
+
+      {/* Answer-First GEO Block */}
+      <section className="pt-8 pb-4 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="Gold protects retirement savings because it moves inversely to stocks and the dollar. During the 2008 financial crisis, gold gained 25.5% while the S&P 500 lost 37%. Central banks bought 1,037 tons of gold in 2023 alone — the third consecutive year of record purchases — signaling that institutions see gold as essential protection against currency devaluation."
+            keyFacts={[
+              "Gold gained 25.5% during 2008 while the S&P 500 lost 37%",
+              "Central banks bought 1,037 tons of gold in 2023 — a record year",
+              "$100 of gold in 1971 would be worth over $5,000 today",
+              "Most advisors recommend 5-15% of retirement portfolio in precious metals",
+            ]}
+            className="max-w-3xl mx-auto"
+          />
+        </Container>
+      </section>
 
       {/* Header */}
       <header className="bg-slate-50 text-[#000080] py-16 md:py-24">

@@ -18,6 +18,13 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'tennessee no income tax',
       'tennessee retiree taxes'
     ],
+    answerFirst: 'Tennessee has no state income tax on any retirement income — Social Security, pensions, 401(k) withdrawals, and investment gains are all tax-free at the state level. However, Tennessee has one of the highest combined sales tax rates in the nation at 9-9.75%, and the overall cost of living is 10-15% below the national average.',
+    answerFirstFacts: [
+      'Tennessee charges zero state income tax on wages, Social Security, pensions, 401(k)/IRA withdrawals, and capital gains',
+      'Combined state and local sales tax runs 9-9.75% — among the highest in the nation',
+      'Property taxes vary from 0.45% in Sevier County to 1.45% in Shelby County (Memphis)',
+      'Tennessee eliminated its Hall Tax on dividends and interest income completely in 2021',
+    ],
     targetKeyword: 'tennessee retirement taxes',
     volume: 100,
     difficulty: 4,
@@ -191,6 +198,13 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'retire in north carolina',
       'bailey settlement nc',
       'nc pension taxes'
+    ],
+    answerFirst: 'North Carolina exempts Social Security and military retirement pay from state income tax, and the Bailey Settlement exempts certain government pensions for retirees vested by August 12, 1989. Other retirement income is taxed at a flat 5.25% rate, with a $10,000 deduction available for those 65 and older.',
+    answerFirstFacts: [
+      'Social Security benefits and military retirement pay are 100% exempt from NC state income tax',
+      'The Bailey Settlement exempts government pensions for those with 5 years of service by August 12, 1989',
+      'All other retirement income (401k, IRA, private pensions) is taxed at a flat 5.25% rate',
+      'Seniors 65+ receive a $10,000 deduction on government retirement income not covered by Bailey',
     ],
     targetKeyword: 'north carolina retirement taxes',
     volume: 200,
@@ -374,6 +388,13 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'delaware tax benefits',
       'delaware no sales tax retirement',
       'delaware pension exclusion'
+    ],
+    answerFirst: 'Delaware has no sales tax, exempts Social Security benefits from state income tax, and offers a $12,500 pension/retirement income exclusion for residents age 60+ ($25,000 for married couples). Property taxes are also among the lowest in the Northeast, averaging 0.35-0.56% depending on county.',
+    answerFirstFacts: [
+      'Delaware is one of only 5 states with zero sales tax, saving retirees $2,800-$4,000/year on spending',
+      'Residents age 60+ receive a $12,500 exclusion on pension and retirement income ($25,000 for couples)',
+      'Property taxes average just 0.35-0.56% — far below neighboring Pennsylvania (1.5%) and New Jersey (2.2%)',
+      'Delaware\'s top income tax rate is 6.6% on income over $60,000, but retirement exclusions reduce the effective rate',
     ],
     targetKeyword: 'delaware retirement taxes',
     volume: 150,
@@ -566,6 +587,13 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'social security tax by state',
       'best states for social security income'
     ],
+    answerFirst: '38 states plus Washington D.C. do not tax Social Security benefits, including all 8 no-income-tax states (Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Washington, and Wyoming). Only 12 states tax Social Security, and most offer exemptions for low-to-moderate-income retirees. The best overall states combine Social Security exemption with low property taxes and affordable cost of living.',
+    answerFirstFacts: [
+      '38 states plus D.C. fully exempt Social Security benefits from state income tax',
+      'Only 12 states tax Social Security, and most exempt retirees earning under $75,000-$100,000',
+      'Wyoming ranks #1 for lowest overall retiree tax burden with no income tax, low property and sales taxes',
+      'West Virginia and Nebraska are phasing out Social Security taxation entirely by 2026',
+    ],
     targetKeyword: 'best states retire social security',
     volume: 250,
     difficulty: 6,
@@ -754,6 +782,13 @@ export const stateRetirementTaxesArticles: LearnArticleRegistry = {
       'high tax states retirees',
       'worst states for retirement taxes',
       'why retirees leave california'
+    ],
+    answerFirst: 'California (13.3% top income tax rate), New York (10.9% state plus 3.876% NYC), and New Jersey (2.47% property tax — highest in the nation) rank as the worst states for retirees due to taxes. California lost 340,000 residents in 2022 alone, many of them retirees relocating to no-income-tax states like Florida and Tennessee.',
+    answerFirstFacts: [
+      'California\'s 13.3% top income tax rate is the highest in the nation and applies to all retirement income except Social Security',
+      'New Jersey has the highest property taxes in the U.S. at an average of 2.47%, with bills exceeding $12,000/year in many counties',
+      'New York City residents face a combined state and city income tax rate of up to 14.776%',
+      'California lost 340,000 residents in 2022 and New York lost 300,000 — many were retirees fleeing high taxes',
     ],
     targetKeyword: 'worst states to retire taxes',
     volume: 100,

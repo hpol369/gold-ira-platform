@@ -12,6 +12,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'Power of Attorney vs Guardianship: Complete Comparison 2026',
     metaDescription: 'Learn the key differences between power of attorney and guardianship, including costs, legal process, and when to use each. Expert guide for families.',
     keywords: ['power of attorney vs guardianship', 'poa vs guardianship', 'difference power attorney guardianship'],
+    answerFirst: 'Power of Attorney is a voluntary legal document created while you are mentally competent that costs $150-500, while guardianship is a court-ordered process used when someone lacks capacity that costs $3,000-10,000+ and takes 2-6 months. Setting up a POA now prevents the need for costly guardianship proceedings later.',
+    answerFirstFacts: [
+      'POA setup costs $150-500 and takes 1-2 weeks; guardianship costs $3,000-10,000+ and takes 2-6 months',
+      'A durable POA remains in effect even if you become incapacitated',
+      'You cannot create a POA after losing mental capacity, making guardianship the only option',
+      'Guardianship involves ongoing court supervision and annual reporting requirements',
+    ],
 
     targetKeyword: 'power of attorney vs guardianship',
     volume: 1100,
@@ -231,6 +238,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'Per Stirpes Life Insurance Explained | Beneficiary Guide 2026',
     metaDescription: 'Learn how per stirpes life insurance beneficiary designations work, with real examples of how your grandchildren inherit if your child predeceases you.',
     keywords: ['per stirpes life insurance', 'per stirpes beneficiary', 'per stirpes designation'],
+    answerFirst: 'Per stirpes means "by branch" in Latin and ensures that if your child dies before you, their share of your life insurance passes to their children (your grandchildren) rather than being split among your surviving children only. Without per stirpes designation, a deceased child\'s share is redistributed to living beneficiaries, potentially disinheriting your grandchildren entirely.',
+    answerFirstFacts: [
+      'Per stirpes ensures grandchildren inherit their deceased parent\'s share of the benefit',
+      'Without per stirpes, a deceased child\'s share goes only to surviving children',
+      'Per stirpes applies to life insurance, IRAs, 401ks, and other beneficiary-designated accounts',
+      'Always verify your beneficiary form language as some insurers use different terminology',
+    ],
 
     targetKeyword: 'per stirpes life insurance',
     volume: 70,
@@ -427,6 +441,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'Per Stirpes vs Per Capita vs By Representation | 2026 Guide',
     metaDescription: 'Learn the key differences between per stirpes, per capita, and by representation distribution methods for retirement accounts and life insurance.',
     keywords: ['per stirpes vs per capita', 'by representation vs per stirpes', 'per stirpes meaning'],
+    answerFirst: 'Per stirpes divides inheritance by family branch at the children\'s level, meaning grandchildren inherit their deceased parent\'s share. Per capita divides equally among all living beneficiaries only, potentially excluding grandchildren entirely. By representation (modern per stirpes) divides at the generation closest to you with living members, producing different results in some family structures.',
+    answerFirstFacts: [
+      'Per stirpes divides by branch: grandchildren inherit their deceased parent\'s exact share',
+      'Per capita divides equally among living beneficiaries only, excluding grandchildren of deceased children',
+      'By representation divides at the first generation with living members, then splits equally',
+      'Most retirement accounts and insurance policies use per stirpes as the default distribution method',
+    ],
 
     targetKeyword: 'per stirpes vs per capita',
     volume: 50,
@@ -623,6 +644,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'How to Designate Per Stirpes on IRA and 401k | 2026 Guide',
     metaDescription: 'Step-by-step guide to adding per stirpes beneficiary designation to IRAs, 401ks, and retirement accounts, with examples and common mistakes to avoid.',
     keywords: ['per stirpes beneficiary designation', 'per stirpes ira', 'per stirpes 401k'],
+    answerFirst: 'To designate per stirpes on an IRA or 401k, write "per stirpes" after each beneficiary\'s name on the designation form, or check the per stirpes box if available. Not all 401k plans include per stirpes options, so you may need to request a special form or attach a written addendum. Always name contingent beneficiaries per stirpes as well as primary beneficiaries.',
+    answerFirstFacts: [
+      'Write "per stirpes" after each beneficiary name on IRA/401k designation forms',
+      'Not all 401k plan forms include per stirpes options and may require a special request',
+      'Per stirpes designation on retirement accounts overrides instructions in your will',
+      'Review beneficiary designations every 3-5 years or after marriage, divorce, birth, or death',
+    ],
 
     targetKeyword: 'per stirpes beneficiary designation',
     volume: 60,
@@ -852,6 +880,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'Contingent Beneficiary Life Insurance Explained | 2026 Guide',
     metaDescription: 'Learn what a contingent beneficiary is for life insurance, why it matters, common mistakes to avoid, and how to set it up properly.',
     keywords: ['contingent beneficiary life insurance', 'secondary beneficiary life insurance', 'contingent beneficiary'],
+    answerFirst: 'A contingent beneficiary receives your life insurance death benefit if the primary beneficiary cannot collect, such as if they predecease you or decline the inheritance. Without a contingent beneficiary, life insurance proceeds may go to your estate and through probate, adding months of delay and thousands in legal costs that proper beneficiary designation avoids.',
+    answerFirstFacts: [
+      'Without a contingent beneficiary, life insurance proceeds go to your estate and through probate',
+      'You can name multiple contingent beneficiaries with specific percentage splits',
+      'Beneficiary designations on life insurance override your will',
+      'Name contingent beneficiaries per stirpes to protect grandchildren if your child predeceases you',
+    ],
 
     targetKeyword: 'contingent beneficiary life insurance',
     volume: 350,
@@ -1109,6 +1144,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'How to Get Guardianship of Elderly Parent | Complete Guide 2026',
     metaDescription: 'Learn the guardianship process for elderly parents, costs ($5k-10k+), alternatives (POA), and state-by-state variations. Expert legal guide.',
     keywords: ['guardianship of elderly parent', 'how to get guardianship elderly parent', 'guardianship process'],
+    answerFirst: 'Getting guardianship of an elderly parent is a court-supervised process that costs $5,000-10,000+ in legal fees and takes 2-6 months, requiring medical proof of incapacity and ongoing annual reporting to the court. Power of Attorney set up while your parent is still competent is faster, cheaper ($150-500), and less restrictive than guardianship.',
+    answerFirstFacts: [
+      'Guardianship costs $5,000-10,000+ in legal fees and takes 2-6 months to establish',
+      'Medical evaluation proving incapacity is required before a court will grant guardianship',
+      'Guardians must file annual reports with the court detailing financial and care decisions',
+      'Power of Attorney costs $150-500 and avoids the guardianship process entirely if set up in advance',
+    ],
 
     targetKeyword: 'guardianship of elderly parent',
     volume: 200,
@@ -1373,6 +1415,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'Charitable Remainder Trust (CRT) Explained | Complete Guide 2026',
     metaDescription: 'Learn how charitable remainder trusts work, tax benefits, CRAT vs CRUT types, funding strategies, and whether a CRT fits your retirement plan.',
     keywords: ['charitable remainder trust', 'crt explained', 'charitable trust retirement'],
+    answerFirst: 'A Charitable Remainder Trust (CRT) provides lifetime income to you, gives an immediate income tax deduction when funded, avoids capital gains tax on appreciated assets, and donates the remainder to charity at death. There are two types: CRAT pays a fixed annuity amount, while CRUT pays a variable percentage (typically 5-8%) of trust assets revalued annually.',
+    answerFirstFacts: [
+      'CRT provides an immediate income tax deduction based on the present value of the charitable remainder',
+      'Funding a CRT with appreciated stock or real estate avoids capital gains tax entirely',
+      'CRAT pays a fixed annuity while CRUT pays a variable 5-8% of annually revalued trust assets',
+      'CRTs are best suited for high-income earners with $500,000+ in appreciated assets',
+    ],
 
     targetKeyword: 'charitable remainder trust',
     volume: 3900,
@@ -1624,6 +1673,13 @@ export const estateLegalArticles: LearnArticleRegistry = {
     metaTitle: 'Qualified Charitable Distribution (QCD) Rules 2026 | Complete Guide',
     metaDescription: 'Learn QCD rules, how to donate IRA funds tax-free to charity, RMD benefits, eligible charities, and 2026 limits ($105,000). Expert tax planning guide.',
     keywords: ['qualified charitable distribution', 'qcd from ira', 'qcd rules 2026'],
+    answerFirst: 'A Qualified Charitable Distribution (QCD) allows IRA owners age 70.5 and older to donate up to $105,000 per year directly to charity, excluded from taxable income and counted toward Required Minimum Distributions. The money must go directly from the IRA custodian to a qualified 501(c)(3) charity and cannot pass through your personal account.',
+    answerFirstFacts: [
+      'QCD limit is $105,000 per person ($210,000 for married couples) in 2026',
+      'You must be age 70.5 or older to make QCDs, even though RMDs now start at age 73',
+      'QCDs satisfy Required Minimum Distributions without increasing taxable income',
+      'Funds must transfer directly from IRA custodian to charity, not through your personal account',
+    ],
 
     targetKeyword: 'qualified charitable distribution',
     volume: 3200,

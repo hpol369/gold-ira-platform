@@ -12,6 +12,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Laid Off at 55: Too Young to Retire? Your Options | 2026 Guide',
     metaDescription: 'Laid off at 55 with years until Social Security and Medicare? Discover realistic options, the Rule of 55, and how to protect your retirement savings.',
     keywords: ['laid off at 55', 'too young to retire', 'job loss at 55', 'laid off before retirement', 'rule of 55 layoff', 'early retirement forced'],
+    answerFirst: 'Being laid off at 55 puts you in a difficult gap: 7 years until Social Security at 62 and 10 years until Medicare at 65, while facing a job market where workers over 50 take 20-40% longer to find comparable employment. The Rule of 55 is your biggest advantage, allowing penalty-free 401k withdrawals from your most recent employer\'s plan.',
+    answerFirstFacts: [
+      'The Rule of 55 allows penalty-free 401k withdrawals if you left your employer at age 55 or older',
+      'Workers over 50 face job searches that are 20-40% longer than younger workers on average',
+      'Rolling your 401k to an IRA before 59.5 eliminates Rule of 55 penalty-free access',
+      'Early retirement at 55 typically requires $2 million or more in savings to cover healthcare and expenses',
+    ],
 
     targetKeyword: 'laid off at 55 too young to retire',
 
@@ -176,6 +183,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Laid Off at 58 With No Savings? Realistic Options | 2026',
     metaDescription: 'Lost your job at 58 with little or no retirement savings? Real strategies for catching up, maximizing Social Security, and building security in your final working years.',
     keywords: ['laid off at 58 no savings', 'no retirement savings at 58', 'catch up retirement late', 'job loss no 401k', 'late start retirement'],
+    answerFirst: 'At 58 with no retirement savings, you have 4 years until Social Security (at 62) and 7 years until Medicare, but you can still build meaningful security. About 25% of Americans have zero retirement savings, and the median for ages 55-64 is only $134,000. IRS catch-up contributions let you save $31,500 per year in a 401k and $8,000 in an IRA after age 50.',
+    answerFirstFacts: [
+      'Catch-up contributions allow $31,500 total in 401k ($23,500 + $8,000 catch-up) in 2026',
+      '25% of Americans have zero retirement savings according to the Federal Reserve',
+      'Delaying Social Security from 62 to 67 increases your benefit by approximately 43%',
+      'Even 5 years of maxing out catch-up contributions equals $197,500 contributed, plus investment growth',
+    ],
 
     targetKeyword: 'laid off at 58 no retirement savings',
 
@@ -343,6 +357,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Laid Off at 60: Can I Retire Early? Bridge Strategies | 2026',
     metaDescription: 'Lost your job at 60 and wondering if you can retire? Calculate the healthcare gap, Social Security timing, and bridge strategies to make early retirement work.',
     keywords: ['laid off at 60', 'can i retire at 60', 'early retirement 60', 'job loss at 60', 'retire early layoff'],
+    answerFirst: 'At 60, you are 2 years from Social Security and 5 years from Medicare, making early retirement bridgeable but challenging. Healthcare costs of $1,200-2,000 per month until Medicare at 65 are the biggest hurdle. Using the 4% rule, you need roughly 25x your annual expenses gap (expenses minus Social Security) in savings to retire safely.',
+    answerFirstFacts: [
+      'Five years of pre-Medicare retirement costs approximately $246,000 in basic expenses alone',
+      'Part-time work earning $2,000/month can preserve $220,000 in savings over the 5-year bridge',
+      'ACA marketplace subsidies are based on income not wealth, so a large 401k does not disqualify you',
+      'The 4% rule: multiply total savings by 4% to find your annual safe withdrawal amount',
+    ],
 
     targetKeyword: 'laid off at 60 can i retire',
 
@@ -520,6 +541,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Forced Early Retirement at 62? Social Security & Options | 2026',
     metaDescription: 'Involuntarily retiring at 62? Understand early Social Security implications, the healthcare gap to Medicare, and how to make forced early retirement work.',
     keywords: ['forced early retirement', 'involuntary retirement 62', 'early retirement layoff', 'retire at 62', 'early social security'],
+    answerFirst: 'Forced retirement at 62 means you can start Social Security but at a permanently reduced rate of approximately 30% less than your full retirement age benefit. Over 50% of Americans retire earlier than planned, with job loss being the most common reason. You face a 3-year healthcare gap until Medicare at 65 that can cost $600-2,500 per month.',
+    answerFirstFacts: [
+      'Claiming Social Security at 62 permanently reduces benefits by about 30% compared to full retirement age of 67',
+      'The average actual retirement age in the US is 62, not 65 or 67',
+      'Over 50% of Americans retire earlier than they planned',
+      'The Social Security earnings limit at 62 is $22,320 in 2026 before benefits are reduced',
+    ],
 
     targetKeyword: 'forced early retirement at 62',
 
@@ -695,6 +723,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Job Loss Near Retirement: Age-by-Age Guide | 2026',
     metaDescription: 'Lost your job in your 50s or 60s? Get age-specific guidance on 401k options, healthcare, Social Security timing, and how to protect your retirement.',
     keywords: ['job loss near retirement', 'laid off in 50s', 'job loss 60s', 'retirement age layoff', 'older worker layoff'],
+    answerFirst: 'Job loss near retirement age triggers different options depending on your specific age: Rule of 55 unlocks penalty-free 401k access at 55, IRA withdrawals become penalty-free at 59.5, Social Security starts at 62, and Medicare begins at 65. Studies show workers over 50 face 20-40% longer job searches due to age discrimination.',
+    answerFirstFacts: [
+      'Age 55 unlocks Rule of 55 for penalty-free 401k withdrawals from your separated employer',
+      'Age 59.5 removes the 10% early withdrawal penalty on all IRA withdrawals',
+      'Workers over 50 take 6-12 months on average to find new comparable employment',
+      '80% of jobs for workers over 50 are found through networking and personal connections',
+    ],
 
     targetKeyword: 'job loss near retirement age',
 
@@ -865,6 +900,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Severance Package & Retirement: Tax Strategies | 2026 Guide',
     metaDescription: 'Received a severance package? Learn how to use it wisely for retirement - rollover opportunities, tax strategies, and protecting your financial future.',
     keywords: ['severance retirement planning', 'severance tax strategy', 'severance rollover', 'layoff severance', 'severance 401k'],
+    answerFirst: 'Severance pay is taxable ordinary income typically calculated at 1-2 weeks per year of service, and a lower-income year after job loss creates valuable opportunities for Roth conversions and tax planning. Workers over 40 are legally entitled to 21-45 days to review severance agreements under the ADEA before signing.',
+    answerFirstFacts: [
+      'Typical severance is 1-2 weeks of pay per year of service, though negotiable to 4 weeks per year',
+      'Workers over 40 get at least 21 days to consider severance (45 days for group layoffs) under ADEA',
+      'Severance creates a lower tax bracket year ideal for Roth IRA conversions at reduced tax rates',
+      'A 401k direct rollover from a separated employer avoids the mandatory 20% withholding on indirect rollovers',
+    ],
 
     targetKeyword: 'severance and retirement planning',
 
@@ -1044,6 +1086,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Early Retirement Package Calculator: Evaluate Your Offer | 2026',
     metaDescription: 'How to calculate if your early retirement package is enough. Present value analysis, pension vs. lump sum, and what to look for in buyout offers.',
     keywords: ['early retirement package calculator', 'evaluate buyout offer', 'early retirement offer', 'pension buyout calculator', 'retirement package value'],
+    answerFirst: 'Evaluate an early retirement package by calculating its present value against what you give up by leaving: lost salary, 401k match, pension accrual, and employer health insurance. The 4% rule test determines if the package plus your savings is enough: multiply total assets by 4% and compare to annual expenses. Healthcare costs until Medicare at 65 are often the hidden deal-breaker.',
+    answerFirstFacts: [
+      'Quick 4% rule: (package + existing savings) x 4% must equal or exceed your annual expenses',
+      'Healthcare from early retirement to Medicare at 65 can cost $15,000-30,000 per year',
+      'A pension enhancement of $500 per month for life has a present value of $100,000 or more at age 60',
+      'Leaving 5 years early forfeits roughly $650,000 in salary, match, pension accrual, and insurance value',
+    ],
 
     targetKeyword: 'early retirement package calculator',
 
@@ -1223,6 +1272,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Should I Take the Buyout? Retirement Decision Guide | 2026',
     metaDescription: 'How to decide if you should take an early retirement buyout offer. A systematic framework covering finances, healthcare, career, and quality of life factors.',
     keywords: ['should i take buyout', 'early retirement buyout', 'buyout offer retirement', 'accept buyout', 'voluntary separation package'],
+    answerFirst: 'A retirement buyout decision requires four key questions: Can you afford to retire today? Do you want to retire? What happens if you decline? And what would you regret more? The financial test uses the 4% rule: total assets after buyout times 4% must cover annual expenses. At ages 60-64, buyouts are often viable; at 50-54, you likely need more years of income.',
+    answerFirstFacts: [
+      'Workers over 40 get 21-45 days legally to review buyout offers under the ADEA',
+      'The 4% rule test: (savings + buyout) x 4% must cover annual retirement expenses including healthcare',
+      'Healthcare costs from buyout to Medicare at 65 can exceed $100,000 for a couple',
+      'Age 55-59 is the pivot point where the Rule of 55 makes early retirement more feasible',
+    ],
 
     targetKeyword: 'buyout offer analysis retirement',
 
@@ -1396,6 +1452,13 @@ export const layoffRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'VERA VSIP Decision: Federal Early Retirement Guide | 2026',
     metaDescription: 'Federal employees: should you take the VERA/VSIP early out? Understand FERS pension impact, FEHB, TSP, and how to evaluate voluntary early retirement.',
     keywords: ['VERA VSIP', 'federal early retirement', 'voluntary separation incentive', 'federal buyout', 'FERS early retirement'],
+    answerFirst: 'VERA (Voluntary Early Retirement Authority) allows federal employees to retire before their Minimum Retirement Age with 25 years at any age or at age 50 with 20 years, while VSIP provides up to $25,000 (taxable) as a cash incentive to leave. The biggest downside of VERA is losing the FERS Supplement, which is worth $60,000-90,000 over 5-6 years.',
+    answerFirstFacts: [
+      'VSIP maximum is $25,000 gross, netting approximately $17,000-19,000 after taxes',
+      'VERA retirees do not receive the FERS Supplement, a loss of approximately $1,000-1,500 per month until age 62',
+      'FEHB continuation into retirement saves $8,400+ per year in government-subsidized health insurance',
+      'Federal employees separated at age 55+ can access TSP penalty-free, similar to the Rule of 55',
+    ],
 
     targetKeyword: 'vera vsip decision',
 

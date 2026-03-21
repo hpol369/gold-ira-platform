@@ -12,6 +12,14 @@ export const retireWithAmountArticles: LearnArticleRegistry = {
     metaTitle: 'Can You Retire With $750,000? 2026 Analysis & Calculator',
     metaDescription: 'Is $750,000 enough to retire? At 4% withdrawal rate, you get $30,000/year. Learn how Social Security, healthcare costs, and lifestyle choices affect whether $750k works for your retirement.',
     keywords: ['retire with 750k', 'can i retire with 750000', '750k retirement', 'is 750000 enough to retire', 'retirement with 750k savings'],
+    answerFirst: 'Yes, you can retire with $750,000 if you have Social Security and a paid-off home. At the 4% withdrawal rate, $750k generates $30,000/year, and combined with average Social Security ($21,756/year), your total income reaches $51,756/year. The biggest risk is a market crash early in retirement wiping out your nest egg before it can recover.',
+    answerFirstFacts: [
+      '$750,000 at 4% withdrawal provides $30,000/year or $2,500/month',
+      'Combined with average Social Security, total income reaches $51,756/year',
+      'Healthcare before Medicare (ages 55-65) can consume $12,000-18,000/year',
+      'A 10-15% gold allocation ($75k-112k) helps protect against sequence of returns risk',
+    ],
+
 
     targetKeyword: 'retire with 750k',
     volume: 30,
@@ -226,6 +234,14 @@ export const retireWithAmountArticles: LearnArticleRegistry = {
     metaTitle: 'Can You Retire With $800,000? Complete 2026 Guide',
     metaDescription: 'Is $800,000 enough to retire? At 4% rule, $800k provides $32,000/year. Learn when $800k works, when it doesn\'t, and how gold allocation protects against sequence risk.',
     keywords: ['retire with 800k', 'can i retire with 800000', '800k retirement savings', 'is 800000 enough to retire'],
+    answerFirst: 'Yes, $800,000 is generally enough to retire comfortably at 65 with Social Security and a paid-off home. At a 4% withdrawal rate, $800k provides $32,000/year, and combined with average Social Security you reach approximately $54,000/year. You are in the top 25% of retirement savers nationally with more than 3x the median 401k balance of $255,000.',
+    answerFirstFacts: [
+      '$800,000 at 4% withdrawal provides $32,000/year or $2,667/month',
+      'With average Social Security ($21,756/year), combined income reaches $53,756',
+      'The median 401k balance for Americans 65+ is just $255,000',
+      'A 30-40% market crash in year one of retirement is the biggest threat to an $800k portfolio',
+    ],
+
 
     targetKeyword: 'retire with 800k',
     volume: 30,
@@ -436,6 +452,14 @@ export const retireWithAmountArticles: LearnArticleRegistry = {
     metaTitle: 'Is $1 Million Enough to Retire at 60? 2026 Analysis',
     metaDescription: 'Can you retire at 60 with $1 million? Learn about the 5-year Medicare gap, $40k/year withdrawal rate, healthcare costs, and sequence of returns risk for early retirees.',
     keywords: ['is 1 million enough to retire at 60', 'retire at 60 with 1 million', 'can i retire at 60 with a million dollars', '$1 million retirement at 60'],
+    answerFirst: 'Yes, $1 million can be enough to retire at 60, but the 5-year Medicare gap and 35-year timeline make it challenging. At 4% withdrawal, you get $40,000/year, but healthcare costs of $12,000-20,000/year before Medicare at 65 eat a huge portion of that income. The 4% rule has only about 85% success rate over 35 years, so consider using a 3.5% withdrawal rate instead.',
+    answerFirstFacts: [
+      '$1 million at 4% withdrawal provides $40,000/year or $3,333/month',
+      'Healthcare costs from ages 60-65 total approximately $75,000 before Medicare kicks in',
+      'The 4% rule drops from 95% to about 85% success rate over a 35-year retirement',
+      'A 30% market crash at age 60 reduces the portfolio to $660,000 after first-year withdrawal',
+    ],
+
 
     targetKeyword: 'is 1 million enough to retire at 60',
     volume: 20,
@@ -647,6 +671,14 @@ export const retireWithAmountArticles: LearnArticleRegistry = {
     metaTitle: 'Is 1.5 Million Enough to Retire? 2026 Complete Guide',
     metaDescription: 'Is $1.5 million enough to retire comfortably? At 4% rule, $1.5M provides $60,000/year. Learn about comfortable retirement, inflation protection, and longevity risk management.',
     keywords: ['is 1.5 million enough to retire', '1.5 million retirement', 'can i retire with 1.5 million', 'retire on 1.5 million dollars'],
+    answerFirst: '$1.5 million is enough for a comfortable retirement for most people. At the 4% withdrawal rate, you receive $60,000/year, and combined with average Social Security your total income exceeds $81,000/year. You are in the top 10% of retirement savers nationally with nearly 6x the average 401k balance for 65-year-olds ($255,000).',
+    answerFirstFacts: [
+      '$1.5 million at 4% withdrawal provides $60,000/year or $5,000/month',
+      'Combined with Social Security, total income exceeds $81,756/year',
+      'At 3% inflation, $60,000/year loses 45% of its purchasing power over 20 years',
+      'A 65-year-old woman has a 25% chance of living to age 93, requiring 28+ years of withdrawals',
+    ],
+
 
     targetKeyword: 'is 1.5 million enough to retire',
     volume: 700,
@@ -867,6 +899,14 @@ export const retireWithAmountArticles: LearnArticleRegistry = {
     metaTitle: 'Is $2 Million Enough to Retire at 55? Early Retirement Guide',
     metaDescription: 'Can you retire at 55 with $2 million? At 4% withdrawal, you get $80,000/year. Learn about the 10-year Medicare gap, FIRE principles, and protecting your early retirement nest egg.',
     keywords: ['is 2 million enough to retire at 55', 'retire at 55 with 2 million', 'early retirement 2 million', 'can i retire at 55 with 2m'],
+    answerFirst: 'Yes, $2 million is generally enough to retire at 55, but a 40-year retirement horizon demands careful planning. At 4% withdrawal, you receive $80,000/year, though the traditional 4% rule only has about 80% success over 40 years. The 10-year Medicare gap (ages 55-65) could cost $150,000-200,000 in healthcare alone.',
+    answerFirstFacts: [
+      '$2 million at 4% withdrawal provides $80,000/year or $6,667/month',
+      'The 4% rule success rate drops from 95% (30 years) to about 80% (40 years)',
+      '10 years without Medicare costs $150,000-200,000 in healthcare expenses',
+      'Using 3.5% withdrawal ($70,000/year) increases 40-year success rate to approximately 95%',
+    ],
+
 
     targetKeyword: 'is 2 million enough to retire at 55',
     volume: 100,

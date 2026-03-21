@@ -11,6 +11,7 @@ import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 
@@ -27,6 +28,22 @@ export default function GoldcoReviewPage() {
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Goldco", url: "/reviews/goldco" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/goldco"))} />
             <Navbar />
+
+            <section className="pt-8 pb-4 bg-slate-50">
+                <Container>
+                    <AnswerFirst
+                        answer="Goldco earns a 4.6/5 rating as one of the longest-running Gold IRA companies (est. 2006). With a $25,000 minimum, A+ BBB rating, and endorsement by Sean Hannity, they're a solid mid-range option. They offer a buyback guarantee and have processed billions in precious metals transactions."
+                        keyFacts={[
+                            "In business since 2006 — one of the longest track records in the industry",
+                            "Minimum investment: $25,000 (between Noble Gold's $2k and Augusta's $50k)",
+                            "A+ BBB rating with buyback guarantee on all metals purchased",
+                            "Annual fees typically $225-$325 depending on account size",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">

@@ -19,6 +19,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'what to do with rmd',
       'rmd investment strategies'
     ],
+    answerFirst: 'Yes, you can reinvest your Required Minimum Distribution, but not back into the same tax-deferred IRA or 401k. RMDs must be withdrawn and taxed as ordinary income first. After taxes, the money can go into a taxable brokerage account, Roth IRA (if you have earned income), I Bonds, 529 plans, or physical gold.',
+    answerFirstFacts: [
+      'RMDs are "ineligible rollover distributions" and cannot be put back into a Traditional IRA',
+      'The penalty for missing an RMD is 25% of the amount not withdrawn (reduced from 50% by SECURE 2.0)',
+      'Qualified Charitable Distributions (QCDs) let you donate up to $105,000 directly from your IRA tax-free',
+      'Annual IRA contribution limit is $7,000 ($8,000 if 50+), requiring earned income',
+    ],
+
     targetKeyword: 'can i reinvest my rmd',
     volume: 90,
     difficulty: 1,
@@ -199,6 +207,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'ira rollover rules',
       'rollover deadline'
     ],
+    answerFirst: 'The 60-day IRA rollover rule gives you exactly 60 calendar days to redeposit funds from an indirect rollover into another retirement account. Miss the deadline by even one day, and the entire distribution becomes taxable income plus a 10% penalty if you are under 59\u00BD. Only one indirect rollover is allowed per 12-month period across all your IRAs.',
+    answerFirstFacts: [
+      'You have exactly 60 calendar days to complete an indirect rollover — weekends and holidays count',
+      'Only one indirect rollover allowed per 12-month period across all IRAs combined',
+      '401k indirect rollovers withhold 20% that you must replace from other funds',
+      'Direct (trustee-to-trustee) rollovers have no 60-day limit and no frequency restriction',
+    ],
+
     targetKeyword: '60 day ira rollover rule',
     volume: 80,
     difficulty: 5,
@@ -396,6 +412,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'roth contribution retired',
       'roth ira rules retirement'
     ],
+    answerFirst: 'Yes, you can contribute to a Roth IRA at any age after retirement, but you must have earned income from wages or self-employment. Pension income, Social Security, and investment income do not qualify. The 2024 contribution limit is $7,000 ($8,000 if 50+) or your earned income, whichever is less. Even $8,000 from part-time work qualifies you for the full catch-up contribution.',
+    answerFirstFacts: [
+      'There is no age limit for Roth IRA contributions — you can contribute at 75, 85, or older',
+      'You must have earned income (wages or self-employment) — pensions and SS do not count',
+      'Roth conversions from Traditional IRA have no income requirement and no limits',
+      'A spousal IRA lets a non-working spouse contribute based on the working spouse\'s income',
+    ],
+
     targetKeyword: 'can i contribute to roth ira after retirement',
     volume: 70,
     difficulty: 5,
@@ -576,6 +600,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'forgot to take rmd',
       'rmd excise tax'
     ],
+    answerFirst: 'The penalty for missing a Required Minimum Distribution is 25% of the amount you failed to withdraw, reduced from 50% by the SECURE 2.0 Act. If you correct the missed RMD within the 2-year Correction Window, the penalty drops to just 10%. The IRS can waive the penalty entirely for "reasonable cause" if you file Form 5329 with a good explanation.',
+    answerFirstFacts: [
+      'SECURE 2.0 reduced the RMD penalty from 50% to 25% of the missed amount',
+      'Correcting a missed RMD within 2 years reduces the penalty to just 10%',
+      'The IRS often waives penalties for first-time mistakes corrected promptly',
+      'RMDs begin at age 73 (born 1951-1959) or age 75 (born 1960+) under current law',
+    ],
+
     targetKeyword: 'rmd penalty for not taking',
     volume: 70,
     difficulty: 6,
@@ -759,6 +791,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'inherited ira rules',
       'beneficiary ira distribution'
     ],
+    answerFirst: 'The traditional stretch IRA ended for most beneficiaries in 2020 under the SECURE Act. Most non-spouse beneficiaries must now empty inherited IRAs within 10 years of the original owner\'s death. Only Eligible Designated Beneficiaries — surviving spouses, minor children, disabled individuals, chronically ill, and those not more than 10 years younger — can still stretch distributions over their lifetime.',
+    answerFirstFacts: [
+      'The SECURE Act (2020) replaced lifetime stretch with a 10-year distribution rule for most beneficiaries',
+      'Surviving spouses have the most flexibility and can treat the inherited IRA as their own',
+      'Minor children can stretch until age 21, then the 10-year clock starts',
+      'Inherited Roth IRAs also face the 10-year rule, but distributions are tax-free',
+    ],
+
     targetKeyword: 'stretch ira rules',
     volume: 100,
     difficulty: 8,
@@ -939,6 +979,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'bucket approach retirement',
       'retirement income buckets'
     ],
+    answerFirst: 'The bucket strategy divides retirement savings into three time-based segments: Bucket 1 holds 1-2 years of expenses in cash for immediate needs, Bucket 2 holds 3-7 years in bonds for medium-term stability, and Bucket 3 holds the remainder in stocks for long-term growth. This approach reduces sequence of returns risk by ensuring you never need to sell stocks during a market crash.',
+    answerFirstFacts: [
+      'Bucket 1 (cash/CDs) covers 1-2 years of living expenses for immediate income needs',
+      'Bucket 2 (bonds) provides 3-7 years of stable income to replenish Bucket 1',
+      'Bucket 3 (stocks/growth) funds the other buckets over 8+ years through periodic rebalancing',
+      'The strategy was popularized by Harold Evensky and Christine Benz of Morningstar',
+    ],
+
     targetKeyword: 'bucket strategy retirement',
     volume: 80,
     difficulty: 9,
@@ -1123,6 +1171,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'early retirement market risk',
       'sequence of returns'
     ],
+    answerFirst: 'Sequence of returns risk is the danger that poor investment returns early in retirement will permanently damage your portfolio, even if long-term average returns are adequate. Two identical portfolios with the same average returns can have vastly different outcomes depending on when the losses occur. A 30% crash in year one combined with $50,000 withdrawals can leave a $1 million portfolio $210,000 worse off than if the crash happened later.',
+    answerFirstFacts: [
+      'A bad sequence (early losses) can leave a portfolio $210,000 worse than a good sequence with identical average returns',
+      'The first 5-10 years of retirement are the critical "danger zone" for sequence risk',
+      'Sequence risk only affects people withdrawing from portfolios, not those still accumulating',
+      'Retirees who started withdrawing in 2000 or 2008 experienced devastating, often permanent portfolio damage',
+    ],
+
     targetKeyword: 'sequence of returns risk',
     volume: 2100,
     difficulty: 14,
@@ -1310,6 +1366,14 @@ export const retirementIraArticles: LearnArticleRegistry = {
       'how long will money last retirement',
       'retirement longevity calculator'
     ],
+    answerFirst: 'At a 4% withdrawal rate, retirement savings should last 25-30 years based on historical data, with a 95% success rate over 30 years. The three key variables are your withdrawal rate, investment returns, and inflation. At 3% withdrawal, savings may last indefinitely; at 6%, expect 17-20 years. Social Security and pensions dramatically extend portfolio life by reducing how much you need from savings.',
+    answerFirstFacts: [
+      'At 4% withdrawal with 6% average returns, savings have historically lasted 30+ years',
+      'At 5% withdrawal, expect savings to last 20-25 years; at 6%, only 17-20 years',
+      'Social Security covering half your income effectively doubles your portfolio\'s longevity',
+      'The first decade of retirement determines long-term success more than total average returns',
+    ],
+
     targetKeyword: 'how long will my retirement savings last',
     volume: 2400,
     difficulty: 8,

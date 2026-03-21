@@ -19,6 +19,13 @@ export const custodianFinalArticles: LearnArticleRegistry = {
       'pacific premier trust pensco',
       'pensco trust fees'
     ],
+    answerFirst: 'PENSCO Trust merged with Pacific Premier Trust in 2021 and no longer operates independently. Former PENSCO accounts (which managed over $16 billion in assets) now operate under the Pacific Premier Trust brand. Annual fees range from $275-$395 depending on account type, with account minimums starting at $1,500. Customer reviews are mixed post-merger, averaging 3.2-3.8 stars.',
+    answerFirstFacts: [
+      'PENSCO Trust merged with Pacific Premier Trust in 2021 after managing over $16 billion in assets',
+      'Pacific Premier Trust charges $275-$395 annual fees with account minimums starting at $1,500',
+      'Customer reviews post-merger average 3.2-3.8 stars with some reporting slow response times',
+      'Transaction fees range from $95-$250 per investment and account termination costs $150',
+    ],
     targetKeyword: 'pensco trust reviews',
     volume: 320,
     difficulty: 5,
@@ -200,6 +207,13 @@ export const custodianFinalArticles: LearnArticleRegistry = {
       'nuview trust reviews',
       'nuview ira fees',
       'nuview real estate ira'
+    ],
+    answerFirst: 'NuView Trust Company is an Orlando-based self-directed IRA custodian that specializes in real estate investments. They charge a $295 annual fee for standard accounts and are known for strong customer service with dedicated account managers. NuView is particularly well-suited for real estate IRA investors due to their specialized expertise and educational resources including webinars and investor guides.',
+    answerFirstFacts: [
+      'NuView Trust Company is headquartered in Orlando, Florida and specializes in real estate IRAs',
+      'Standard annual account fee is $295 with dedicated account managers for each client',
+      'NuView offers extensive educational resources including webinars and investor guides',
+      'The custodian is particularly well-suited for real estate investors due to specialized expertise',
     ],
     targetKeyword: 'nuview ira reviews',
     volume: 260,
@@ -392,6 +406,13 @@ export const custodianFinalArticles: LearnArticleRegistry = {
       'entrust custodian fees',
       'entrust account fees'
     ],
+    answerFirst: 'The Entrust Group charges $199-$399 in annual fees depending on account type and assets held. Transaction fees range from $95-$250 per investment depending on complexity. Precious metals storage adds $100-$250 annually through their depository partners. Entrust fees are competitive but not the lowest in the SDIRA market.',
+    answerFirstFacts: [
+      'The Entrust Group charges $199-$399 annually depending on account type and assets held',
+      'Transaction fees range from $95 to $250 per investment based on complexity',
+      'Precious metals storage adds $100-$250 per year through Entrust\'s depository partners',
+      'Entrust fees are middle-of-the-road compared to other SDIRA custodians like Equity Trust and Kingdom Trust',
+    ],
     targetKeyword: 'entrust ira fees',
     volume: 210,
     difficulty: 4,
@@ -580,6 +601,13 @@ export const custodianFinalArticles: LearnArticleRegistry = {
       'compare ira custodians',
       'sdira custodian fees comparison',
       'self directed ira custodian reviews'
+    ],
+    answerFirst: 'The top self-directed IRA custodians are Equity Trust (largest, most resources, higher fees), Kingdom Trust (competitive fees, strong crypto support), Entrust (good service, mid-range pricing), NuView Trust (real estate specialist), and Millennium Trust (employer plan focus). Annual fees range from $195-$395 across providers, with transaction fees of $50-$250 per investment.',
+    answerFirstFacts: [
+      'Equity Trust is the largest SDIRA custodian but charges higher fees than smaller competitors',
+      'Kingdom Trust offers the strongest cryptocurrency custody and competitive pricing',
+      'NuView Trust specializes in real estate IRAs with $295 annual fees and dedicated account managers',
+      'Millennium Trust focuses on employer-sponsored plan rollovers and automatic rollovers',
     ],
     targetKeyword: 'ira custodian comparison',
     volume: 480,
@@ -783,6 +811,13 @@ export const custodianFinalArticles: LearnArticleRegistry = {
       'best ira custodian for real estate',
       'best ira custodian for crypto',
       'self directed ira custodian reviews'
+    ],
+    answerFirst: 'The best self-directed IRA custodian depends on your investment type. For real estate: Equity Trust (resources) or NuView Trust (personalized service). For cryptocurrency: Kingdom Trust leads with specialized crypto custody. For precious metals: Augusta Precious Metals handles Gold IRA setup with trusted custodians. For low fees: Kingdom Trust. For beginners: Entrust provides excellent education and support.',
+    answerFirstFacts: [
+      'Best for real estate IRAs: Equity Trust (largest resources) or NuView Trust ($295/year, dedicated managers)',
+      'Best for cryptocurrency IRAs: Kingdom Trust offers specialized crypto custody and competitive fees',
+      'Best for precious metals: Augusta Precious Metals handles all custodian setup and paperwork',
+      'Best for beginners: The Entrust Group provides extensive educational resources and guided support',
     ],
     targetKeyword: 'best self directed ira custodian',
     volume: 720,

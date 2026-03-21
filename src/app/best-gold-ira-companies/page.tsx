@@ -28,6 +28,20 @@ export default function BestGoldIraCompaniesPage() {
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Best Gold IRA Companies", url: "/best-gold-ira-companies" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("best-gold-ira-companies"))} />
             <Navbar />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The best Gold IRA companies in 2026 are Augusta Precious Metals (#1 — zero fees for 10 years, $50k minimum), Noble Gold (#2 — lowest minimum at $2,000), and Goldco (#3 — best customer service). We analyzed 20+ companies across fees, BBB ratings, complaint history, and customer reviews."
+                        keyFacts={[
+                            "Augusta Precious Metals: #1 pick — zero BBB complaints, fee waivers up to 10 years",
+                            "Noble Gold: Lowest minimum at $2,000 — best for smaller portfolios",
+                            "American Hartford Gold: $10,000 minimum with price match guarantee",
+                            "Goldco: $25,000 minimum — largest brand with buyback guarantee",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-slate-50 text-[#000080] py-20 relative overflow-hidden">
@@ -305,16 +319,6 @@ export default function BestGoldIraCompaniesPage() {
             </div>
             <section className="py-16 bg-white">
                 <Container>
-                    <AnswerFirst
-                        answer="The best Gold IRA companies in 2026 are Augusta Precious Metals (#1 — zero fees for 10 years, $50k minimum), Noble Gold (#2 — lowest minimum at $2,000), and Goldco (#3 — best customer service). We analyzed 20+ companies across fees, BBB ratings, complaint history, and customer reviews."
-                        keyFacts={[
-                            "Augusta Precious Metals: #1 pick — zero BBB complaints, fee waivers up to 10 years",
-                            "Noble Gold: Lowest minimum at $2,000 — best for smaller portfolios",
-                            "American Hartford Gold: $10,000 minimum with price match guarantee",
-                            "Goldco: $25,000 minimum — largest brand with buyback guarantee",
-                        ]}
-                        className="mb-12 max-w-3xl"
-                    />
                     <FAQSection
                         faqs={getPageFAQs("best-gold-ira-companies")}
                         title="Gold IRA Company FAQs"
