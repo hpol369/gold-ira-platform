@@ -7,7 +7,7 @@ export const CONFIG = {
     claude: {
         apiKey: process.env.ANTHROPIC_API_KEY || "",
         model: "claude-sonnet-4-20250514",
-        maxTokens: 2000,
+        maxTokens: 4000, // Longer, more in-depth articles (was 2000 = thin content)
     },
 
     // RSS Feeds to monitor
@@ -107,8 +107,8 @@ export const CONFIG = {
 
     // Scoring thresholds
     scoring: {
-        minimumScore: 3, // Minimum relevance score to consider (out of 10)
-        maxArticlesPerRun: 4, // Maximum articles to generate per run (increased for silver coverage)
+        minimumScore: 6, // Only genuinely relevant stories (was 3 = too permissive)
+        maxArticlesPerRun: 1, // 1 quality article per run, 3 runs/day = 2-3 articles/day
     },
 
     // Output paths
