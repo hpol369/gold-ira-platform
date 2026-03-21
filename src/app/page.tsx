@@ -1,9 +1,23 @@
+import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhySection } from "@/components/home/GoldenCircle";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { webSiteSchema, siteNavigationSchema } from "@/lib/schema";
+
+export const metadata: Metadata = {
+  title: "Best Gold IRA Companies 2026 | Compare Reviews, Fees & Ratings",
+  description: "Compare the top Gold IRA companies for 2026. Independent reviews, fee breakdowns, and expert analysis to help you protect your retirement savings with precious metals.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Best Gold IRA Companies 2026 | Rich Dad Retirement",
+    description: "Compare top Gold IRA companies. Independent reviews, fee comparisons, and retirement protection strategies from experts who understand blue-collar retirement.",
+    type: "website",
+  },
+};
 
 // Loading skeleton for consistent CLS prevention
 function SectionSkeleton({ height = "h-64" }: { height?: string }) {

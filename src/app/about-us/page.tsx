@@ -3,34 +3,36 @@
 
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import {
   ShieldCheck,
   AlertTriangle,
   BookOpen,
   Scale,
-  ArrowRight,
   CheckCircle2,
   XCircle,
   Award,
-  FileSearch,
   Users,
   Briefcase,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Thomas Richardson | Rich Dad Retirement",
+  title: "About Rich Dad Retirement | Our Mission & Team",
   description:
-    "I'm Thomas Richardson. After 20 years in wealth management, I got sick of watching scammers prey on retirees. This site is my response.",
+    "Rich Dad Retirement is the definitive IRA information hub helping 55+ Americans protect retirement savings through independent research, transparent reviews, and education — not sales pressure.",
+  alternates: {
+    canonical: "/about-us",
+  },
   openGraph: {
-    title: "About Thomas Richardson | Rich Dad Retirement",
+    title: "About Rich Dad Retirement | Our Mission & Team",
     description:
-      "After 20 years in wealth management, I got sick of watching scammers prey on retirees. This site is my response.",
+      "Helping 55+ Americans protect retirement savings through independent research, transparent reviews, and education — not sales pressure.",
     images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
   },
 };
@@ -71,17 +73,32 @@ const schema = {
     },
     {
       "@type": "WebPage",
-      name: "About Thomas Richardson",
-      description: "The story behind Rich Dad Retirement and our mission.",
+      name: "About Rich Dad Retirement",
+      description: "Our mission, team, editorial standards, and how we make money.",
       url: "https://richdadretirement.com/about-us",
     },
   ],
 };
 
+const aboutArticle = articleSchema({
+  title: "About Rich Dad Retirement | Our Mission & Team",
+  description: "Rich Dad Retirement is the definitive IRA information hub helping 55+ Americans protect retirement savings through independent research and education.",
+  slug: "/about-us",
+  datePublished: "2024-06-01",
+  dateModified: "2026-03-19",
+});
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "About Us", url: "/about-us" },
+]);
+
 export default function AboutUsPage() {
   return (
     <main className="min-h-screen bg-white">
       <SchemaScript schema={schema} />
+      <SchemaScript schema={aboutArticle} />
+      <SchemaScript schema={breadcrumbs} />
       <Navbar />
 
       {/* Hero - The Manifesto */}
@@ -402,6 +419,7 @@ export default function AboutUsPage() {
         </Container>
       </section>
 
+      <AugustaCTA />
       <Footer />
     </main>
   );

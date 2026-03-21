@@ -6,6 +6,7 @@ import { QuizWizard } from "@/components/quiz/QuizWizard";
 export const metadata: Metadata = {
     title: "Gold IRA Quiz: Find Your Best Company Match | Rich Dad Retirement",
     description: "Take our 60-second quiz to find the best Gold IRA company for your retirement goals. Get personalized recommendations based on your investment needs.",
+    alternates: { canonical: "/quiz" },
 };
 
 export default function QuizPage() {
