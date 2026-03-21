@@ -14,6 +14,7 @@ import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { ArticleMeta } from "@/components/content/ArticleMeta";
 import { TrustBar } from "@/components/content/TrustBar";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SourcesSection } from "@/components/content/SourcesSection";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
@@ -463,6 +464,21 @@ export default async function LearnArticlePage({ params }: PageProps) {
           </div>
         </Container>
       </section>
+
+      {/* Answer First - GEO optimization for AI snippets */}
+      {article.answerFirst && (
+        <section className="pb-4">
+          <Container>
+            <div className="max-w-4xl">
+              <AnswerFirst
+                answer={article.answerFirst}
+                keyFacts={article.answerFirstFacts}
+                variant="dark"
+              />
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* Key Takeaways */}
       <section className="pb-8">
