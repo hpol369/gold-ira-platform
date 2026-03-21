@@ -3,7 +3,7 @@
 import { Suspense, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2 } from "lucide-react";
+import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2, Mail } from "lucide-react";
 import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
 import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
 import { useABTest } from "@/lib/ab-testing";
@@ -108,6 +108,7 @@ function GetStartedContent() {
     phone: "",
   });
   const [error, setError] = useState("");
+  const [isAugustaResult, setIsAugustaResult] = useState(false);
 
   function formatPhone(value: string): string {
     const digits = value.replace(/\D/g, "").slice(0, 10);
@@ -207,16 +208,25 @@ function GetStartedContent() {
         } catch { /* gtag not available */ }
       }
 
+      setIsAugustaResult(isAugusta);
       setState(prev => ({ ...prev, step: "success" }));
 
-      // Redirect to thank-you page (lead already sent to partner via webhook)
-      const thankYouParams = new URLSearchParams({
-        name: state.firstName.trim(),
-        company: result.companyName,
-      });
-      setTimeout(() => {
-        window.location.href = `/thank-you?${thankYouParams.toString()}`;
-      }, 2000);
+      // Route based on partner type
+      if (isAugusta) {
+        // Augusta leads: Stay on our success screen.
+        // Lead already submitted via Zapier — Augusta will call them.
+        // We send our own PDF guide via Resend (triggered server-side).
+        // No redirect needed.
+      } else {
+        // Non-Augusta partners: redirect to thank-you page
+        const thankYouParams = new URLSearchParams({
+          name: state.firstName.trim(),
+          company: result.companyName,
+        });
+        setTimeout(() => {
+          window.location.href = `/thank-you?${thankYouParams.toString()}`;
+        }, 3000);
+      }
     } catch {
       setError("Network error. Please try again.");
       setState(prev => ({ ...prev, step: "contact" }));
@@ -486,7 +496,7 @@ function GetStartedContent() {
               </motion.div>
             )}
 
-            {/* STEP 6: Success */}
+            {/* STEP 6: Success — Augusta leads get enhanced screen, others redirect */}
             {state.step === "success" && result && (
               <motion.div
                 key="success"
@@ -495,21 +505,85 @@ function GetStartedContent() {
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.3 }}
-                className="text-center py-16"
+                className={isAugustaResult ? "py-10" : "text-center py-16"}
               >
-                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="h-8 w-8 text-green-400" />
-                </div>
-                <h2 className="text-3xl font-serif font-bold text-white mb-4">
-                  You&apos;re all set, {state.firstName}!
-                </h2>
-                <p className="text-white/70 text-lg mb-2">
-                  {result.companyName} is preparing your personalized kit.
-                </p>
-                <p className="text-white/50 text-sm">
-                  Redirecting you now...
-                </p>
-                <Loader2 className="h-5 w-5 text-white/30 animate-spin mx-auto mt-6" />
+                {isAugustaResult ? (
+                  /* Enhanced Augusta success screen */
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <CheckCircle className="h-10 w-10 text-green-400" />
+                    </div>
+
+                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-3">
+                      You&apos;re All Set, {state.firstName}!
+                    </h2>
+
+                    <p className="text-white/80 text-lg mb-6">
+                      A Gold IRA specialist from Augusta Precious Metals will reach out shortly
+                      for your free, no-pressure consultation.
+                    </p>
+
+                    {/* PDF Guide Delivery Confirmation */}
+                    <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-6 text-left">
+                      <div className="flex items-start gap-3 mb-4">
+                        <Mail className="h-5 w-5 text-[#C5A55A] mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-white font-semibold">Your Free Gold IRA Guide</p>
+                          <p className="text-white/60 text-sm">
+                            We just sent the 2026 Gold IRA Protection Guide to{" "}
+                            <span className="text-white/80">{state.email}</span>.
+                            Check your inbox (and spam folder).
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3 mb-4">
+                        <Phone className="h-5 w-5 text-green-400 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-white font-semibold">What to Expect</p>
+                          <p className="text-white/60 text-sm">
+                            A friendly specialist will call to answer your questions.
+                            It&apos;s educational, not a sales pitch. Average call: 15 minutes.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <Shield className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-white font-semibold">Zero Obligation</p>
+                          <p className="text-white/60 text-sm">
+                            100% free. No contracts. Your decision, your timeline.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Continue browsing CTA */}
+                    <a
+                      href="/learn"
+                      className="inline-flex items-center gap-2 text-[#C5A55A] hover:text-[#d4b96a] font-medium transition-colors"
+                    >
+                      Explore our Learning Center while you wait
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+                  </div>
+                ) : (
+                  /* Non-Augusta: simple redirect screen */
+                  <>
+                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <CheckCircle className="h-8 w-8 text-green-400" />
+                    </div>
+                    <h2 className="text-3xl font-serif font-bold text-white mb-4">
+                      You&apos;re all set, {state.firstName}!
+                    </h2>
+                    <p className="text-white/70 text-lg mb-2">
+                      {result.companyName} is preparing your personalized kit.
+                    </p>
+                    <p className="text-white/50 text-sm">
+                      Redirecting you now...
+                    </p>
+                    <Loader2 className="h-5 w-5 text-white/30 animate-spin mx-auto mt-6" />
+                  </>
+                )}
               </motion.div>
             )}
           </AnimatePresence>
