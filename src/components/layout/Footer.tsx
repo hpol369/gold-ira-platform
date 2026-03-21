@@ -115,6 +115,8 @@ export function Footer() {
                             <li><Link href="/robs-401k" className="text-gray-400 hover:text-white transition-colors text-sm">ROBS 401k Guide</Link></li>
                             <li><Link href="/real-estate-ira" className="text-gray-400 hover:text-white transition-colors text-sm">Real Estate IRA</Link></li>
                             <li><Link href="/solo-401k" className="text-gray-400 hover:text-white transition-colors text-sm">Solo 401k Guide</Link></li>
+                            <li><Link href="/gold-stocks" className="text-gray-400 hover:text-white transition-colors text-sm">Gold Mining Stocks</Link></li>
+                            <li><Link href="/medicaid-planning" className="text-gray-400 hover:text-white transition-colors text-sm">Medicaid Planning</Link></li>
                         </ul>
                         <h3 className="font-semibold text-white mb-4 mt-6 text-sm">Company</h3>
                         <ul className="space-y-2">
@@ -188,10 +190,10 @@ export function Footer() {
                     <p>© {currentYear} Rich Dad Retirement. All rights reserved.</p>
                     <div className="flex gap-6">
                         <Link href="/editorial-policy" className="hover:text-white transition-colors">Affiliate Disclosure</Link>
-                        <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+                        <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+                        <Link href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
                         <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/editorial-policy" className="hover:text-white transition-colors">Editorial Policy</Link>
-                        <Link href="/editorial-standards" className="hover:text-white transition-colors">Editorial Standards</Link>
                     </div>
                 </div>
             </Container>
