@@ -431,8 +431,8 @@ function getGoldIRARecommendation(budget: BudgetRange): RoutingResult {
 
     case '50k-100k':
       return {
-        primary: companies.goldco,
-        alternatives: [companies.augusta, companies.americanHartford],
+        primary: companies.augusta,
+        alternatives: [companies.goldco, companies.americanHartford],
       };
 
     case '25k-50k':

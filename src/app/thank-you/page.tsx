@@ -1,12 +1,13 @@
 // src/app/thank-you/page.tsx
 // Thank you page after lead submission - instant value delivery
+// V2.1: Dynamic messaging based on company routing (Augusta vs affiliate)
 
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { CheckCircle2, Download, Phone, Clock, Shield, ArrowRight } from "lucide-react";
+import { CheckCircle2, Download, Phone, Clock, Shield, ArrowRight, Mail, BookOpen } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -16,13 +17,57 @@ export const metadata: Metadata = {
 };
 
 interface ThankYouPageProps {
-  searchParams: Promise<{ name?: string; company?: string }>;
+  searchParams: Promise<{ name?: string; company?: string; tier?: string }>;
 }
+
+// Augusta leads get a call. Affiliate leads get email resources.
+const AUGUSTA_COMPANIES = ["Augusta Precious Metals"];
 
 export default async function ThankYouPage({ searchParams }: ThankYouPageProps) {
   const params = await searchParams;
   const firstName = params.name || "";
   const companyName = params.company || "your matched partner";
+  const tier = params.tier || "";
+
+  // Determine if this is an Augusta lead (gets a call) or affiliate lead (gets email resources)
+  const isAugustaLead = AUGUSTA_COMPANIES.some((c) => companyName.toLowerCase().includes(c.toLowerCase()));
+
+  // Build the right "what happens next" steps based on routing
+  const nextSteps = isAugustaLead
+    ? [
+        {
+          icon: Phone,
+          title: "Expect a Call",
+          desc: `A specialist from ${companyName} will reach out within 24 hours to answer your questions.`,
+        },
+        {
+          icon: Download,
+          title: "Your Kit Ships Free",
+          desc: "A physical information kit will be mailed to you at no cost.",
+        },
+        {
+          icon: Shield,
+          title: "No Obligation",
+          desc: "This is purely educational. No pressure, no commitment required.",
+        },
+      ]
+    : [
+        {
+          icon: Mail,
+          title: "Check Your Email",
+          desc: `We just sent your free Gold IRA Protection Guide and a personalized recommendation for ${companyName}.`,
+        },
+        {
+          icon: BookOpen,
+          title: "Your Guide is Ready",
+          desc: "Read the guide — Chapter 9 (Scams to Avoid) alone could save you thousands.",
+        },
+        {
+          icon: Shield,
+          title: "No Obligation",
+          desc: `When you're ready, ${companyName} offers a free, no-pressure consultation.`,
+        },
+      ];
 
   return (
     <main className="min-h-screen bg-white">
@@ -43,30 +88,16 @@ export default async function ThankYouPage({ searchParams }: ThankYouPageProps) 
             </h1>
 
             <p className="text-xl text-slate-600 mb-8">
-              Your free Gold IRA kit is being prepared. A specialist from {companyName} will contact you within 24 hours.
+              {isAugustaLead
+                ? `Your free Gold IRA kit is being prepared. A specialist from ${companyName} will contact you within 24 hours.`
+                : `Your free Gold IRA guide and personalized recommendation are on the way to your inbox.`}
             </p>
 
             {/* What Happens Next */}
             <div className="bg-white border border-slate-200 rounded-2xl p-8 mb-8 text-left shadow-sm">
               <h2 className="text-lg font-bold text-[#000080] mb-6 text-center">What Happens Next?</h2>
               <div className="space-y-4">
-                {[
-                  {
-                    icon: Phone,
-                    title: "Expect a Call",
-                    desc: `A specialist from ${companyName} will reach out within 24 hours to answer your questions.`,
-                  },
-                  {
-                    icon: Download,
-                    title: "Your Kit Ships Free",
-                    desc: "A physical information kit will be mailed to you at no cost.",
-                  },
-                  {
-                    icon: Shield,
-                    title: "No Obligation",
-                    desc: "This is purely educational. No pressure, no commitment required.",
-                  },
-                ].map((item, i) => (
+                {nextSteps.map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
                       <item.icon className="h-5 w-5 text-[#B22234]" />

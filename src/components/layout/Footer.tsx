@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { FooterNewsletter } from "./FooterNewsletter";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -7,6 +8,11 @@ export function Footer() {
     return (
         <footer className="bg-[#000080] text-white pt-16 pb-8">
             <Container>
+                {/* Newsletter Capture — top of footer */}
+                <div className="mb-12 pb-10 border-b border-white/10">
+                    <FooterNewsletter />
+                </div>
+
                 {/* Main Footer Grid - 6 columns on large screens */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
                     {/* Brand Column */}
