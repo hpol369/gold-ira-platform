@@ -1,5 +1,6 @@
-// Email sequence queue management
+// Email sequence queue management — V2.1
 // Enrolls subscribers in sequences, processes pending sends, handles unsubscribes
+// NEW: sequence upgrades, status-aware sending, metadata support
 
 import { supabase } from "./supabase";
 import { sendEmail, isResendConfigured } from "./resend";
@@ -18,6 +19,7 @@ interface QueueEntry {
   unsubscribed_at: string | null;
   source: string | null;
   first_name: string | null;
+  metadata: Record<string, unknown> | null;
 }
 
 /**
@@ -28,7 +30,8 @@ export async function enrollInSequence(
   email: string,
   sequenceId: string,
   source?: string,
-  firstName?: string
+  firstName?: string,
+  metadata?: Record<string, unknown>
 ): Promise<boolean> {
   const sequence = SEQUENCES[sequenceId];
   if (!sequence) {
@@ -58,6 +61,7 @@ export async function enrollInSequence(
     next_send_at: getNextSendTime(seqEmail.delayDays).toISOString(),
     source: source || null,
     first_name: firstName || null,
+    ...(metadata ? { metadata } : {}),
   }));
 
   const { error } = await supabase
@@ -74,10 +78,54 @@ export async function enrollInSequence(
   // Send the first email immediately if delay is 0
   const firstEmail = sequence.emails[0];
   if (firstEmail && firstEmail.delayDays === 0) {
-    await processQueueEntry(email, sequenceId, 0, firstName || undefined);
+    await processQueueEntry(email, sequenceId, 0, firstName || undefined, metadata);
   }
 
   return true;
+}
+
+/**
+ * Upgrade a lead from one sequence to another
+ * Cancels pending emails in old sequence, enrolls in new one
+ * Used when: guide-nurture reader submits lead form → enters high-intent/mid/starter
+ */
+export async function upgradeSequence(
+  email: string,
+  newSequenceId: string,
+  source?: string,
+  firstName?: string,
+  metadata?: Record<string, unknown>
+): Promise<boolean> {
+  // Cancel all pending emails in ALL current sequences for this email
+  const { error: cancelError } = await supabase
+    .from("email_sequence_queue")
+    .update({ status: "upgraded" })
+    .eq("email", email)
+    .eq("status", "pending");
+
+  if (cancelError) {
+    console.error("[EMAIL_QUEUE] Cancel error during upgrade:", cancelError);
+    // Continue anyway — enrollment is more important
+  }
+
+  console.log(`[EMAIL_QUEUE] Upgrading ${email} to ${newSequenceId}`);
+
+  // Enroll in the new sequence
+  return enrollInSequence(email, newSequenceId, source, firstName, metadata);
+}
+
+/**
+ * Check if an email has an active (pending) sequence
+ */
+export async function checkActiveSequence(email: string): Promise<string | null> {
+  const { data } = await supabase
+    .from("email_sequence_queue")
+    .select("sequence")
+    .eq("email", email)
+    .eq("status", "pending")
+    .limit(1);
+
+  return data && data.length > 0 ? data[0].sequence : null;
 }
 
 /**
@@ -87,7 +135,8 @@ async function processQueueEntry(
   email: string,
   sequenceId: string,
   step: number,
-  firstName?: string
+  firstName?: string,
+  metadata?: Record<string, unknown>
 ): Promise<boolean> {
   const sequence = SEQUENCES[sequenceId];
   if (!sequence) return false;
@@ -95,16 +144,37 @@ async function processQueueEntry(
   const seqEmail = sequence.emails.find((e) => e.step === step);
   if (!seqEmail) return false;
 
+  // Status-aware: skip if lead is connected and email is marked skipIfConnected
+  if (seqEmail.skipIfConnected) {
+    const { data: lead } = await supabase
+      .from("leads")
+      .select("status")
+      .eq("email", email)
+      .maybeSingle();
+
+    if (lead?.status === "contacted" || lead?.status === "qualified" || lead?.status === "converted") {
+      console.log(`[EMAIL_QUEUE] Skipping ${sequenceId} step ${step} for ${email} (status: ${lead.status})`);
+      await supabase
+        .from("email_sequence_queue")
+        .update({ status: "skipped" })
+        .eq("email", email)
+        .eq("sequence", sequenceId)
+        .eq("step", step);
+      return true; // Not a failure, just skipped
+    }
+  }
+
   if (!isResendConfigured()) {
     console.log(`[EMAIL_QUEUE] Resend not configured, skipping send to ${email}`);
     return false;
   }
 
-  // Build and send the email
-  const html = seqEmail.buildHtml(email, firstName);
+  // Build and send the email — resolve {{firstName}} in subject
+  const subject = seqEmail.subject.replace("{{firstName}}", firstName || "Hey");
+  const html = seqEmail.buildHtml(email, firstName, metadata || undefined);
   const result = await sendEmail({
     to: email,
-    subject: seqEmail.subject,
+    subject,
     html,
     tags: [
       { name: "sequence", value: sequenceId },
@@ -178,7 +248,8 @@ export async function processEmailQueue(): Promise<{
       entry.email,
       entry.sequence,
       entry.step,
-      entry.first_name || undefined
+      entry.first_name || undefined,
+      entry.metadata || undefined
     );
 
     if (success) {

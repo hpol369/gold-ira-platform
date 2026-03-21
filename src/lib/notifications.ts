@@ -348,6 +348,57 @@ export async function sendTelegramNotification(message: string, urgent: boolean 
 }
 
 /**
+ * Send a Telegram message with inline keyboard buttons
+ * Used for lead status management (connected / no answer / callback scheduled)
+ */
+export async function sendTelegramWithButtons(
+  message: string,
+  buttons: Array<{ text: string; callback_data: string }>[],
+  urgent: boolean = false
+): Promise<Record<string, number> | null> {
+  const { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS } = getConfig();
+
+  if (!TELEGRAM_BOT_TOKEN || TELEGRAM_CHAT_IDS.length === 0) {
+    return null;
+  }
+
+  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+  const messageIds: Record<string, number> = {};
+
+  for (const chatId of TELEGRAM_CHAT_IDS) {
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+          parse_mode: "HTML",
+          disable_notification: !urgent,
+          reply_markup: {
+            inline_keyboard: buttons,
+          },
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.result?.message_id) {
+          messageIds[chatId] = data.result.message_id;
+        }
+      } else {
+        const error = await response.text();
+        console.error(`[TELEGRAM] Button message failed for ${chatId}:`, error);
+      }
+    } catch (error) {
+      console.error(`[TELEGRAM] Button message error for ${chatId}:`, error);
+    }
+  }
+
+  return Object.keys(messageIds).length > 0 ? messageIds : null;
+}
+
+/**
  * Edit existing Telegram messages across multiple chats
  * @param messageIds - Object with chatId as key and messageId as value: {"chatId": messageId}
  * @param newMessage - The new message content

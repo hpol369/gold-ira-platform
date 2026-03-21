@@ -1,22 +1,32 @@
-// Email nurture sequence definitions
-// Sequence A: Gold IRA Primer ($50k+ leads who didn't convert)
-// Sequence B: Starter Path (sub-$50k leads)
-// Sequence C: Weekly Market Digest (newsletter subscribers)
+// Email nurture sequence definitions — V2.1
+// 6 sequences: newsletter-welcome, guide-nurture, high-intent, mid-nurture, starter-nurture, re-engage
+//
+// CRITICAL DESIGN DECISIONS:
+// 1. high-intent CTAs use Augusta PHONE NUMBER (844-405-3908), NEVER affiliate LP links
+//    (leads already submitted via webhook — affiliate link creates duplicate lead)
+// 2. guide-nurture + mid-nurture + starter-nurture use affiliate links (first contact)
+// 3. No separate sendGuideEmail() — sequence step 0 IS the guide delivery
+// 4. Days 0-3 of high-intent = Augusta Support Window (prep for the call)
 
 import { emailLayout, p, h2, ul, hr, trustBadge } from "./email-templates";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 const SITE = "https://richdadretirement.com";
-const AUGUSTA_LP = AFFILIATE_LINKS.augusta;
-const AUGUSTA_MID = AFFILIATE_LINKS.augustaMidIntent;
-const AUGUSTA_COMPARE = AFFILIATE_LINKS.augustaComparison;
+const GUIDE_PDF = `${SITE}/guides/gold-ira-protection-guide-2026.pdf`;
+const AUGUSTA_PHONE = "844-405-3908";
 const NOBLE_LP = AFFILIATE_LINKS.noble;
+const GOLDCO_LP = AFFILIATE_LINKS.goldco;
+const AHG_LP = AFFILIATE_LINKS.americanHartford;
+// Augusta affiliate links — ONLY for leads NOT already sent via webhook
+const AUGUSTA_LP = AFFILIATE_LINKS.augusta;
 
 export interface SequenceEmail {
   step: number;
-  delayDays: number; // days after enrollment to send
+  delayDays: number;
   subject: string;
-  buildHtml: (email: string, firstName?: string) => string;
+  /** If true, only send when lead status is NOT "augusta-connected" */
+  skipIfConnected?: boolean;
+  buildHtml: (email: string, firstName?: string, metadata?: Record<string, unknown>) => string;
 }
 
 export interface Sequence {
@@ -27,312 +37,723 @@ export interface Sequence {
 }
 
 // ============================================
-// SEQUENCE A — "The Gold IRA Primer"
-// For $50k+ leads who entered funnel but didn't call
-// 7 emails over 20 days
+// SEQUENCE 1 — Newsletter Welcome
+// Trigger: Newsletter signup (footer, popup)
+// Goal: Convert to guide download → guide-nurture
+// 3 emails over 7 days
 // ============================================
 
-const sequenceA: Sequence = {
-  id: "gold-ira-primer",
-  name: "The Gold IRA Primer",
-  description: "For qualified $50k+ leads — builds trust over 20 days",
+const newsletterWelcome: Sequence = {
+  id: "newsletter-welcome",
+  name: "Newsletter Welcome",
+  description: "Converts newsletter subscribers to guide downloaders",
   emails: [
     {
       step: 0,
       delayDays: 0,
-      subject: "Your Free Gold IRA Guide Is Here",
-      buildHtml: (email, firstName) => emailLayout({
+      subject: "You're in. Here's what to expect.",
+      buildHtml: (email) => emailLayout({
         email,
-        sequence: "gold-ira-primer",
-        preheader: "Everything you need to know about protecting your retirement with gold",
+        sequence: "newsletter-welcome",
+        preheader: "Weekly gold & silver updates, guides, and exclusive tools.",
         body: `
-          ${h2(`${firstName ? `${firstName}, welcome` : "Welcome"} to Rich Dad Retirement`)}
-          ${p("Thanks for requesting your personalized Gold IRA kit. You're joining 10,000+ Americans who are taking control of their retirement.")}
-          ${p("Here's what you need to know about Gold IRAs in 2026:")}
+          ${h2("Welcome to Rich Dad Retirement.")}
+          ${p("Here's what you'll get from us:")}
           ${ul([
-            "<strong>Tax advantages:</strong> A Gold IRA offers the same tax benefits as your traditional IRA or 401(k)",
-            "<strong>Physical ownership:</strong> You own real, IRS-approved gold coins and bars stored in a secure depository",
-            "<strong>Protection:</strong> Gold has held value for 5,000 years — through every recession, market crash, and currency crisis",
-            "<strong>Easy rollover:</strong> You can roll over your existing 401(k) or IRA with zero taxes and zero penalties",
+            "Weekly gold & silver market updates",
+            "Breaking news that affects your retirement",
+            "New guides and calculator tools",
           ])}
-          ${p("The best part? <strong>Augusta Precious Metals handles everything</strong> — the paperwork, the IRS compliance, the secure storage. Their team of specialists will walk you through every step.")}
-          ${trustBadge()}
+          ${p("We publish for one audience: hardworking Americans who saved smart and want to protect what they've built. No Wall Street jargon. No generic advice. Just facts.")}
+          ${hr()}
+          ${p("<strong>Start here</strong> — our 3 most popular resources:")}
+          ${ul([
+            `<a href="${SITE}/learn/what-is-gold-ira" style="color:#B22234;text-decoration:underline;">What Is a Gold IRA? (Complete Guide)</a>`,
+            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Best Gold IRA Companies Ranked for 2026</a>`,
+            `<a href="${SITE}/tools/gold-ira-calculator" style="color:#B22234;text-decoration:underline;">Gold IRA Calculator</a>`,
+          ])}
+          ${p("See you in your inbox,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
-        ctaText: "Get Your Free Gold IRA Kit →",
-        ctaUrl: AUGUSTA_LP,
+        ctaText: "Visit richdadretirement.com →",
+        ctaUrl: SITE,
       }),
     },
     {
       step: 1,
-      delayDays: 2,
-      subject: "3 Things Your Financial Advisor Won't Tell You About Gold",
+      delayDays: 3,
+      subject: "The free guide 10,000+ Americans have downloaded",
       buildHtml: (email, firstName) => emailLayout({
         email,
-        sequence: "gold-ira-primer",
-        preheader: "Why most advisors steer you away from gold (and why that's a mistake)",
+        sequence: "newsletter-welcome",
+        preheader: "10 chapters. Zero sales pitch. Just the facts about Gold IRAs.",
         body: `
-          ${h2(`${firstName || "Hey"}, let's talk about your advisor`)}
-          ${p("Most financial advisors won't recommend gold. Here's why — and why it matters for your retirement:")}
-          ${h2("1. They don't earn commissions on physical gold")}
-          ${p("Your advisor makes money when you buy mutual funds, ETFs, and annuities. Physical gold? They get nothing. So of course they'll tell you gold is \"risky\" or \"doesn't pay dividends.\"")}
-          ${h2("2. They're trained in paper assets only")}
-          ${p("The Series 7 exam doesn't cover physical gold. Most advisors genuinely don't understand how a Gold IRA works. They'll confuse gold ETFs (paper) with physical gold (real).")}
-          ${h2("3. They underestimate inflation risk")}
-          ${p("Your advisor's Monte Carlo simulations assume 2-3% inflation. But with $36 trillion in national debt and persistent 4%+ inflation, those models are dangerously optimistic.")}
-          ${hr()}
-          ${p("<strong>The bottom line:</strong> A Gold IRA isn't about replacing your entire portfolio — it's about protecting 10-25% of your savings in an asset that has NEVER gone to zero.")}
-          ${p("Augusta Precious Metals has a Harvard-trained economist on staff who can explain exactly how gold fits into YOUR situation.")}
-          ${trustBadge()}
+          ${h2(`${firstName ? `Hey ${firstName}` : "Hey"},`)}
+          ${p("Our most popular resource is the 2026 Gold IRA Protection Guide.")}
+          ${p("It covers:")}
+          ${ul([
+            "Why $36 trillion in national debt threatens your savings",
+            "How a Gold IRA rollover works (step by step)",
+            "The real fees — what's fair vs. a ripoff",
+            "Scams to avoid (Chapter 9 alone is worth it)",
+            "10 questions to ask any Gold IRA company",
+            "Our honest company rankings",
+          ])}
+          ${p("It's free. No credit card. No phone call required.")}
+          ${p("We built it because we got tired of seeing retirees get ripped off by shady gold companies.")}
         `,
-        ctaText: "Talk to Augusta's Team — Free →",
-        ctaUrl: AUGUSTA_LP,
+        ctaText: "Download the Free Guide →",
+        ctaUrl: `${SITE}/guide/free`,
       }),
     },
     {
       step: 2,
-      delayDays: 5,
-      subject: "How $100k in a 401(k) Becomes $215k in Gold (Real Math)",
+      delayDays: 7,
+      subject: "One number that should worry every saver",
       buildHtml: (email, firstName) => emailLayout({
         email,
-        sequence: "gold-ira-primer",
-        preheader: "The numbers don't lie — see the 20-year comparison",
+        sequence: "newsletter-welcome",
+        preheader: "$36,000,000,000,000. And it's growing.",
         body: `
-          ${h2("Let's look at real numbers")}
-          ${p(`${firstName || "Friend"}, forget the hype. Let's do actual math.`)}
-          ${p("If you had $100,000 in a traditional 401(k) 20 years ago:")}
+          ${p(`${firstName || "Hey"}, here's a number: <strong>$36 trillion.</strong>`)}
+          ${p("That's the U.S. national debt. It was $10 trillion in 2008. $20 trillion in 2017. $36 trillion today.")}
+          ${p("When the government owes this much, they have two options:")}
           ${ul([
-            "<strong>S&P 500:</strong> $100k → ~$410k (10.5% avg return, but -50% in 2008, -33% in 2020)",
-            "<strong>Gold:</strong> $100k → ~$530k (gold went from $400/oz to $2,800+/oz)",
-            "<strong>60/40 portfolio:</strong> $100k → ~$310k (bonds dragged down returns)",
+            "Raise taxes (your retirement income gets hit)",
+            "Print more dollars (your savings lose purchasing power)",
           ])}
-          ${p("But here's what matters more than returns: <strong>gold never had a 50% drawdown.</strong> The S&P 500 did — twice. For someone in or near retirement, a 50% loss means working 5-10 more years.")}
-          ${hr()}
-          ${p("You don't need to go all-in on gold. Most advisors who ACTUALLY understand gold recommend 10-25% of your portfolio.")}
-          ${p("Want to see what a partial gold allocation looks like for YOUR savings? Augusta's team will run the numbers for free.")}
-          ${trustBadge()}
+          ${p("Both options hurt savers. Both are already happening.")}
+          ${p("Gold doesn't care about government debt. Gold can't be printed. Gold has held its value for 5,000 years — through every empire, every currency collapse, every financial crisis.")}
+          ${p("That's why more Americans are adding gold to their retirement accounts. Not as a get-rich scheme. As insurance.")}
+          ${p("If you want to learn more, our free guide covers everything:")}
         `,
-        ctaText: "See Your Personalized Analysis →",
-        ctaUrl: AUGUSTA_LP,
-      }),
-    },
-    {
-      step: 3,
-      delayDays: 8,
-      subject: "Augusta vs Goldco vs Noble Gold — Our Honest Comparison",
-      buildHtml: (email, firstName) => emailLayout({
-        email,
-        sequence: "gold-ira-primer",
-        preheader: "We compared 15+ companies. Here's who came out on top.",
-        body: `
-          ${h2("Which Gold IRA Company Is Best?")}
-          ${p(`${firstName || "Hey"}, we get this question a lot. After reviewing 15+ Gold IRA companies, here's our honest ranking:`)}
-          ${h2("🥇 #1: Augusta Precious Metals")}
-          ${ul([
-            "A+ BBB rating, zero complaints in 6+ years",
-            "Transparent pricing (no hidden fees)",
-            "Harvard-trained economist on staff",
-            "$50,000 minimum investment",
-            "Lifetime customer support",
-          ])}
-          ${h2("🥈 #2: Goldco")}
-          ${ul([
-            "A+ BBB rating, strong track record",
-            "$25,000 minimum (lower barrier)",
-            "Good for mid-range investors",
-          ])}
-          ${h2("🥉 #3: Noble Gold")}
-          ${ul([
-            "Lowest minimum: $2,000",
-            "Great for beginners",
-            "Smaller selection of products",
-          ])}
-          ${hr()}
-          ${p("<strong>Our recommendation:</strong> If you have $50k+ in retirement savings, Augusta is the clear winner. Their transparency, education-first approach, and Harvard economist make them unmatched.")}
-          ${p(`Read our full comparison: <a href="${SITE}/compare" style="color:#B22234;text-decoration:underline;">Compare All Gold IRA Companies →</a>`)}
-          ${trustBadge()}
-        `,
-        ctaText: "Get Augusta's Free Gold IRA Kit →",
-        ctaUrl: AUGUSTA_COMPARE,
-      }),
-    },
-    {
-      step: 4,
-      delayDays: 12,
-      subject: "The 2026 IRA Deadline Is Approaching — Here's What to Know",
-      buildHtml: (email, firstName) => emailLayout({
-        email,
-        sequence: "gold-ira-primer",
-        preheader: "Important IRA contribution and rollover deadlines for 2026",
-        body: `
-          ${h2("Don't Miss These 2026 Deadlines")}
-          ${p(`${firstName || "Quick reminder"} — there are important deadlines you should know about:`)}
-          ${ul([
-            "<strong>IRA contribution deadline:</strong> April 15, 2027 (for tax year 2026)",
-            "<strong>401(k) rollover:</strong> No deadline — but the sooner you start, the sooner your gold starts protecting you",
-            "<strong>Required Minimum Distributions (RMDs):</strong> If you're 73+, you must take distributions by Dec 31",
-          ])}
-          ${h2("Why timing matters with gold")}
-          ${p("Gold is at $2,800+/oz right now. Analysts from Goldman Sachs, JPMorgan, and Bank of America all project $3,000-$3,500/oz by end of 2026.")}
-          ${p("Every month you wait is potentially hundreds of dollars in lost gains. The rollover process takes 2-3 weeks, so starting now means your gold is working for you before Q2.")}
-          ${hr()}
-          ${p("Augusta handles the entire rollover process — paperwork, IRS compliance, everything. Most clients are fully set up within 15 business days.")}
-          ${trustBadge()}
-        `,
-        ctaText: "Start Your Tax-Free Rollover →",
-        ctaUrl: AUGUSTA_LP,
-      }),
-    },
-    {
-      step: 5,
-      delayDays: 15,
-      subject: "What Robert Kiyosaki Says About Gold in 2026",
-      buildHtml: (email, firstName) => emailLayout({
-        email,
-        sequence: "gold-ira-primer",
-        preheader: "The Rich Dad author's latest take on gold, silver, and the dollar",
-        body: `
-          ${h2("\"Savers Are Losers\" — Robert Kiyosaki")}
-          ${p(`${firstName || "Hey"}, if you've read Rich Dad Poor Dad, you know Kiyosaki has been saying the same thing for 25 years: <em>"The dollar is dying. Gold and silver are real money."</em>`)}
-          ${p("Here's what he's been saying recently:")}
-          ${ul([
-            "\"Gold is going to $5,000. Silver to $100. The dollar is trash.\"",
-            "\"The biggest crash in history is coming. Only gold, silver, and Bitcoin will survive.\"",
-            "\"Your 401(k) is the biggest scam in history. Get real assets.\"",
-          ])}
-          ${p("Now, Kiyosaki is known for dramatic predictions. But his core message is sound: <strong>paper assets carry more risk than most people realize, and physical gold is a proven hedge.</strong>")}
-          ${hr()}
-          ${p("You don't have to be as extreme as Kiyosaki. Even moving 10-15% of your retirement into gold provides meaningful protection against inflation, market crashes, and dollar devaluation.")}
-          ${p("The question isn't IF you should own gold — it's how much, and which company to trust with your savings.")}
-          ${trustBadge()}
-        `,
-        ctaText: "Get Your Free Gold IRA Kit →",
-        ctaUrl: AUGUSTA_MID,
-      }),
-    },
-    {
-      step: 6,
-      delayDays: 20,
-      subject: "Your Free Consultation Is Still Available",
-      buildHtml: (email, firstName) => emailLayout({
-        email,
-        sequence: "gold-ira-primer",
-        preheader: "Your personalized Gold IRA consultation — no pressure, no commitment",
-        body: `
-          ${h2(`${firstName || "Hey"}, one last thing`)}
-          ${p("I noticed you requested a Gold IRA kit but haven't scheduled your free consultation yet. No pressure — but I wanted to make sure you know what you're getting:")}
-          ${ul([
-            "✅ <strong>15-minute call</strong> with a Gold IRA specialist (not a salesperson)",
-            "✅ <strong>Personalized analysis</strong> based on your retirement savings",
-            "✅ <strong>Full education</strong> on IRS rules, fees, and the rollover process",
-            "✅ <strong>Zero obligation</strong> — many people call just to learn",
-          ])}
-          ${p("Augusta has an A+ BBB rating with zero complaints in 6+ years. They won't pressure you. Their approach is education-first: they want you to understand gold before you invest a single dollar.")}
-          ${hr()}
-          ${p("This is the last email in this series. If you ever have questions about Gold IRAs, visit us anytime at <a href=\"" + SITE + "\" style=\"color:#B22234;text-decoration:underline;\">richdadretirement.com</a>.")}
-          ${p("Wishing you a secure retirement,<br><strong>The Rich Dad Retirement Team</strong>")}
-          ${trustBadge()}
-        `,
-        ctaText: "Schedule Your Free Consultation →",
-        ctaUrl: AUGUSTA_LP,
+        ctaText: "Get the Free Gold IRA Guide →",
+        ctaUrl: `${SITE}/guide/free`,
       }),
     },
   ],
 };
 
 // ============================================
-// SEQUENCE B — "The Starter Path"
-// For sub-$50k leads
-// 4 emails over 14 days
+// SEQUENCE 2 — Guide Follow-Up
+// Trigger: Guide LP form submit (name + email, no phone)
+// Goal: Build trust → convert to full lead at /get-started
+// 5 emails over 16 days
 // ============================================
 
-const sequenceB: Sequence = {
-  id: "starter-path",
-  name: "The Starter Path",
-  description: "For sub-$50k investors — guides them to appropriate companies",
+const guideNurture: Sequence = {
+  id: "guide-nurture",
+  name: "Guide Follow-Up",
+  description: "Nurtures guide downloaders toward full lead submission",
   emails: [
     {
       step: 0,
       delayDays: 0,
-      subject: "Your Gold IRA Starter Guide Is Here",
+      subject: "Your Gold IRA Protection Guide is here",
       buildHtml: (email, firstName) => emailLayout({
         email,
-        sequence: "starter-path",
-        preheader: "You don't need $50k to start protecting your retirement with gold",
+        sequence: "guide-nurture",
+        preheader: "The 2026 guide — 10 chapters, zero sales pitch.",
         body: `
-          ${h2(`Welcome, ${firstName || "friend"}!`)}
-          ${p("Thanks for your interest in Gold IRAs. Here's the great news: <strong>you don't need $50,000 to get started.</strong>")}
-          ${p("Several reputable companies offer Gold IRAs with much lower minimums:")}
+          ${p(`${firstName || "Hey"}, here's your guide.`)}
+          ${p("We built the 2026 Gold IRA Protection Guide because every American deserves straight answers about protecting their retirement. No sales pitch. Just facts.")}
+          ${p("<strong>Here's what's inside:</strong>")}
           ${ul([
-            "<strong>Noble Gold:</strong> Start with as little as $2,000",
-            "<strong>American Hartford Gold:</strong> $10,000 minimum",
-            "<strong>Goldco:</strong> $25,000 minimum",
+            "Why $36 trillion in national debt threatens your 401(k)",
+            "How a Gold IRA rollover actually works (step by step)",
+            "The real fees — what's fair and what's a ripoff",
+            "Which companies we'd trust with our own money",
+            "10 questions to ask before you sign anything",
           ])}
-          ${p("The process is the same regardless of your investment size:")}
-          ${ul([
-            "Open a self-directed IRA (the company handles this)",
-            "Roll over funds from your existing 401(k) or IRA — tax-free",
-            "Choose your gold and silver products",
-            "Your metals are stored in an IRS-approved depository",
-          ])}
-          ${hr()}
-          ${p("Start with what you have. You can always add more later. The important thing is getting started while gold is still accessible.")}
-          ${trustBadge()}
+          ${p("Read it when you have 15 minutes. Chapter 9 (Scams to Avoid) is worth the read alone — it could save you thousands.")}
+          ${p("Talk soon,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
-        ctaText: "Explore Noble Gold (Starts at $2k) →",
+        ctaText: "Download Your Free Guide →",
+        ctaUrl: GUIDE_PDF,
+      }),
+    },
+    {
+      step: 1,
+      delayDays: 3,
+      subject: "Did you get to Chapter 4?",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "guide-nurture",
+        preheader: "If you only read one chapter, make it the one about fees.",
+        body: `
+          ${p(`${firstName || "Hey"}, quick follow-up on your guide.`)}
+          ${p("Chapter 4 breaks down exactly what Gold IRA companies charge. Most people are shocked at the range.")}
+          ${p("Some companies charge 3-5% over spot price. Others charge 20-50%. That's not a typo. On a $100,000 rollover, that's the difference between $3,000 in fees and $50,000.")}
+          ${p("<strong>Here's the short version:</strong>")}
+          ${ul([
+            "<strong>Fair markup:</strong> 3-8% over spot price",
+            "<strong>Red flag:</strong> Anything over 15%",
+            "<strong>Walk away:</strong> \"Rare\" coins pushed at huge premiums",
+          ])}
+          ${p("If you haven't read the guide yet, no rush. It'll be waiting for you.")}
+          ${p("— The Rich Dad Retirement Team")}
+          ${p("P.S. If you're curious what your savings could look like with gold, our calculator does the math in 60 seconds.")}
+        `,
+        ctaText: "Try the Gold IRA Calculator →",
+        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+      }),
+    },
+    {
+      step: 2,
+      delayDays: 7,
+      subject: "We ranked every Gold IRA company (honest results)",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "guide-nurture",
+        preheader: "15+ companies reviewed. 3 made our list.",
+        body: `
+          ${p(`${firstName || "Hey"}, if you're comparing Gold IRA companies, we did the work for you.`)}
+          ${p("We reviewed 15+ companies on fees, BBB ratings, customer reviews, minimum investments, and how they treat people on the phone.")}
+          ${p("<strong>Here's the short version:</strong>")}
+          ${h2("#1 Augusta Precious Metals")}
+          ${ul([
+            "A+ BBB, zero complaints in 6+ years",
+            "Zero fees for up to 10 years on qualifying accounts",
+            "Harvard-trained economist on staff",
+            "$50,000 minimum",
+          ])}
+          ${h2("#2 Goldco")}
+          ${ul([
+            "A+ BBB, strong reviews",
+            "$25,000 minimum",
+            "Good for mid-range investors",
+          ])}
+          ${h2("#3 Noble Gold")}
+          ${ul([
+            "A+ BBB, lowest minimum ($2,000)",
+            "Great for getting started",
+          ])}
+          ${p("The full comparison with fee tables, real customer experiences, and detailed breakdowns is on our site.")}
+        `,
+        ctaText: "Read the Full Comparison →",
+        ctaUrl: `${SITE}/best-gold-ira-companies`,
+      }),
+    },
+    {
+      step: 3,
+      delayDays: 11,
+      subject: '"I expected it to be a nightmare" — Jennifer H.',
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "guide-nurture",
+        preheader: "What real people say after their Gold IRA rollover.",
+        body: `
+          ${p(`${firstName || "Hey"}, one of the biggest questions we hear: "What do people actually think AFTER they've done the rollover?"`)}
+          ${p("Fair question. Here's what verified customers told us:")}
+          ${p("<em>\"I expected it to be a nightmare — tons of paperwork, hidden fees, the whole nine yards. Augusta made it shockingly easy. Two phone calls and my 401k was rolled over in 12 days. No taxes. No penalties.\"</em><br>— Jennifer H., retired nurse, Ohio")}
+          ${p("<em>\"My advisor told me I was crazy. Then gold went up 27% the next year and my 'safe' bond fund lost 8%. I stopped taking his calls.\"</em><br>— Mike T., retired trucker, Texas")}
+          ${p("<em>\"I only moved 15% of my savings into gold. That's it. But knowing that 15% can't be wiped out by a market crash lets me sleep at night.\"</em><br>— Barbara K., retired teacher, Florida")}
+          ${p("If you want to find out which company is right for YOUR situation, our free matching tool takes about 2 minutes.")}
+        `,
+        ctaText: "Find Your Match →",
+        ctaUrl: `${SITE}/get-started`,
+      }),
+    },
+    {
+      step: 4,
+      delayDays: 16,
+      subject: "Your guide. Your decision. No pressure.",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "guide-nurture",
+        preheader: "This is the last email in this series.",
+        body: `
+          ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
+          ${p("You downloaded our Gold IRA Protection Guide. You now know more about gold, IRAs, fees, and scams than 95% of Americans.")}
+          ${p("<strong>Here's everything in one place:</strong>")}
+          ${ul([
+            `<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;">Your guide (PDF)</a>`,
+            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Company reviews</a>`,
+            `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Calculators</a>`,
+            `<a href="${SITE}/get-started" style="color:#B22234;text-decoration:underline;">Find your match</a>`,
+          ])}
+          ${p("Whatever you decide, that's your call. We built this site because every hardworking American who saved smart deserves honest info.")}
+          ${p(`If you ever want a no-obligation conversation with a Gold IRA specialist, Augusta's number is <strong>${AUGUSTA_PHONE}</strong>. Free call. No pressure.`)}
+          ${p("Wishing you a retirement you've earned,<br><strong>The Rich Dad Retirement Team</strong>")}
+        `,
+        ctaText: "Find Your Match →",
+        ctaUrl: `${SITE}/get-started`,
+      }),
+    },
+  ],
+};
+
+// ============================================
+// SEQUENCE 3 — Augusta Support (High Intent)
+// Trigger: Lead form, $50k+ savings
+// CRITICAL: Lead ALREADY sent to Augusta via webhook.
+//   → CTAs = phone number + site links, NEVER Augusta LP affiliate links
+// Goal: Get them to ANSWER the Augusta call
+// 7 emails over 21 days
+// ============================================
+
+const highIntent: Sequence = {
+  id: "high-intent",
+  name: "Augusta Support",
+  description: "Supports Augusta call for $50k+ leads — NEVER uses Augusta affiliate links",
+  emails: [
+    // === THE AUGUSTA SUPPORT WINDOW (Days 0-3) ===
+    {
+      step: 0,
+      delayDays: 0,
+      subject: "{{firstName}}, here's your guide + what happens next",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "A specialist will reach out within 24 hours. Here's how to prep.",
+        body: `
+          ${p(`${firstName || "Hey"}, you're in.`)}
+          ${p("<strong>Two things are happening right now:</strong>")}
+          ${h2("1. Your Free Guide")}
+          ${p("Download the 2026 Gold IRA Protection Guide below. If you're short on time, read Chapter 10 first — it has the 10 questions to ask your specialist.")}
+          ${h2("2. Your Specialist Call")}
+          ${p("An Augusta Precious Metals specialist will reach out within 24 hours. Here's what to expect:")}
+          ${ul([
+            "It takes about 15 minutes",
+            "It's educational, not a sales pitch",
+            "They'll explain how a Gold IRA works for YOUR situation",
+            "There's zero obligation",
+          ])}
+          ${p("Augusta has an A+ BBB rating with zero complaints in 6+ years. They didn't get that rating by being pushy.")}
+          ${hr()}
+          ${p("<strong>If you want to prep (takes 2 minutes):</strong>")}
+          ${ul([
+            "Know your total retirement savings (rough number is fine)",
+            "Know where it's held (Fidelity, Vanguard, employer plan)",
+            "Have one question ready (the guide has 10 good ones)",
+          ])}
+          ${p("Talk soon,<br><strong>The Rich Dad Retirement Team</strong>")}
+        `,
+        ctaText: "Download Your Free Guide (PDF) →",
+        ctaUrl: GUIDE_PDF,
+      }),
+    },
+    {
+      step: 1,
+      delayDays: 1,
+      subject: "Quick heads up: what the call looks like",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "15 minutes. Here's the agenda so there are no surprises.",
+        body: `
+          ${p(`${firstName || "Hey"}, your Augusta specialist is reaching out today or tomorrow. Here's exactly what the call looks like so there are no surprises:`)}
+          ${h2("Minute 1-3: Your Situation")}
+          ${p("They'll ask about your savings — how much, where it's held, and when you're planning to retire. They don't need account numbers.")}
+          ${h2("Minute 4-8: Education")}
+          ${p("They'll explain how a Gold IRA rollover works, the IRS rules, and what it actually costs. This is the part most people find valuable even if they don't move forward.")}
+          ${h2("Minute 9-12: Your Questions")}
+          ${p("Your turn. Ask anything. The 10 questions from your guide are perfect for this.")}
+          ${h2("Minute 13-15: Next Steps (only if YOU want)")}
+          ${p("If you want to proceed, they'll explain the paperwork. If not, they'll say thanks and mean it.")}
+          ${hr()}
+          ${p("Nobody will pressure you. Nobody will call you 47 times afterward.")}
+        `,
+        ctaText: "Review Your Guide Before the Call →",
+        ctaUrl: GUIDE_PDF,
+      }),
+    },
+    {
+      step: 2,
+      delayDays: 3,
+      subject: "Did you connect with Augusta yet?",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "Just checking in — either way, we've got you covered.",
+        body: `
+          ${p(`${firstName || "Hey"}, quick check-in.`)}
+          ${p("By now, your Augusta specialist should have reached out. Did you get a chance to talk?")}
+          ${h2("→ Yes, We Connected")}
+          ${p(`<a href="${SITE}/api/email/status?action=connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here to let us know</a> — Great! If you have follow-up questions, reply to this email. We read every response.`)}
+          ${h2("→ Not Yet / I Missed the Call")}
+          ${p(`<a href="${SITE}/api/email/status?action=not-connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here</a> — No problem. You can call Augusta directly at <strong>${AUGUSTA_PHONE}</strong> (ask for the Gold IRA education team). Or just wait — they'll try again.`)}
+          ${h2("→ I Changed My Mind")}
+          ${p("Totally fine. No hard feelings. You'll stay on our newsletter unless you unsubscribe below.")}
+          ${hr()}
+          ${p("Either way, you've already done more research than 95% of people. That puts you in a strong position no matter what you decide.")}
+        `,
+        ctaText: `Call Augusta Directly: ${AUGUSTA_PHONE}`,
+        ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
+      }),
+    },
+    // === POST-SUPPORT WINDOW (Days 7+) — education + value ===
+    {
+      step: 3,
+      delayDays: 7,
+      skipIfConnected: true,
+      subject: "3 things your financial advisor won't tell you about gold",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "Why most advisors steer you away — and why that matters.",
+        body: `
+          ${p(`${firstName || "Hey"}, while you're thinking things over, here's something worth knowing.`)}
+          ${p("Most financial advisors won't recommend physical gold. Not because it's bad — but because they don't earn commissions on it.")}
+          ${h2("Your Advisor's Incentive")}
+          ${p("They make money on mutual funds, ETFs, and annuities. Physical gold? Nothing. So they'll tell you gold is \"risky\" or \"doesn't pay dividends.\" Both statements are misleading.")}
+          ${h2("What Gold Actually Does")}
+          ${p("Gold isn't meant to replace your stocks. It's insurance. You don't buy car insurance hoping for a crash — you buy it so a crash doesn't ruin you.")}
+          ${h2("The Numbers")}
+          ${p("10-25% of your portfolio in gold. That's what independent advisors (the ones who don't earn commissions) recommend.")}
+          ${hr()}
+          ${p("If your advisor pushes back on gold, ask them one question: <em>\"What's your plan to protect my savings during the next 50% crash?\"</em>")}
+          ${p("If they say \"stay the course\" — that's not a plan. That's hope.")}
+          ${p(`Augusta's team includes a Harvard-trained economist who can show you exactly how gold fits into your portfolio. The call is still free: <strong>${AUGUSTA_PHONE}</strong>`)}
+        `,
+        ctaText: "See Your Personalized Numbers →",
+        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+      }),
+    },
+    {
+      step: 4,
+      delayDays: 11,
+      skipIfConnected: true,
+      subject: "Real people. Real rollovers. Zero regrets.",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "What actual customers say after the fact.",
+        body: `
+          ${p(`${firstName || "Hey"}, the hardest part of a Gold IRA rollover is making the decision. The actual process? Easy.`)}
+          ${p("<em>\"I was terrified of the paperwork. Augusta did everything. I signed three forms and it was done in two weeks.\"</em><br>— Richard M., retired factory supervisor, Michigan")}
+          ${p("<em>\"My wife thought I was nuts. Then she saw gold go up 27% while our stocks went sideways. Now she wants to move more.\"</em><br>— Dave L., retired electrician, Pennsylvania")}
+          ${p("<em>\"I only moved $75,000 — about 20% of our savings. It's not about getting rich. It's about knowing that no matter what happens to the market, that $75k is safe.\"</em><br>— Sandra W., retired school teacher, Arizona")}
+          ${hr()}
+          ${p("Every one of these people had the same hesitation you might have. Every one of them is glad they made the call.")}
+          ${p(`If you haven't connected with Augusta yet, it's not too late. Call them directly: <strong>${AUGUSTA_PHONE}</strong> (Gold IRA education team).`)}
+        `,
+        ctaText: `Talk to Augusta — Free: ${AUGUSTA_PHONE}`,
+        ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
+      }),
+    },
+    {
+      step: 5,
+      delayDays: 16,
+      subject: "What Robert Kiyosaki gets right (and wrong) about gold",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "The Rich Dad author's take — with our honest commentary.",
+        body: `
+          ${p(`${firstName || "Hey"}, if you follow Robert Kiyosaki, you've heard him say:`)}
+          ${ul([
+            '"Gold is going to $5,000."',
+            '"The dollar is trash."',
+            '"Your 401(k) is the biggest scam in history."',
+          ])}
+          ${p("<strong>Here's our honest take:</strong>")}
+          ${h2("What He Gets Right:")}
+          ${ul([
+            "Paper currency loses value over time (the dollar has lost 87% of purchasing power since 1971 — that's a fact)",
+            "Gold is a real asset that can't be printed into oblivion",
+            "Most Americans are dangerously overexposed to paper assets",
+          ])}
+          ${h2("What He Exaggerates:")}
+          ${ul([
+            "Gold to $5,000 — possible but not certain",
+            "\"Biggest crash in history\" — he's said this for 10 years",
+            "401(k)s are a \"scam\" — imperfect, not a scam",
+          ])}
+          ${h2("The Middle Ground:")}
+          ${p("You don't need to be extreme. Moving 10-25% of your savings into gold is a proven strategy that protects you without betting the farm.")}
+          ${p("That's what we recommend. That's what the data supports.")}
+        `,
+        ctaText: "See Your Personalized Numbers →",
+        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+      }),
+    },
+    {
+      step: 6,
+      delayDays: 21,
+      subject: "Your consultation is still available",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "Last email in this series. Everything in one place.",
+        body: `
+          ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
+          ${p("<strong>Here's where things stand:</strong>")}
+          ${ul([
+            `<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;">Your free guide</a>`,
+            `Your free consultation → still available (<strong>${AUGUSTA_PHONE}</strong>)`,
+            `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Your tools</a> (43 calculators)`,
+            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Company reviews</a>`,
+          ])}
+          ${p("If now isn't the right time, that's fine. Bookmark our site. We publish daily and we'll always be here when you're ready.")}
+          ${p("If now IS the right time — one call. 15 minutes. Zero obligation.")}
+          ${p("Wishing you the retirement you've earned,<br><strong>The Rich Dad Retirement Team</strong>")}
+        `,
+        ctaText: "Visit richdadretirement.com →",
+        ctaUrl: SITE,
+      }),
+    },
+  ],
+};
+
+// ============================================
+// SEQUENCE 4 — Mid-Tier Nurture
+// Trigger: Lead form, $25k-$50k savings
+// Goal: Route to Goldco ($25k min) or American Hartford ($10k min)
+// 5 emails over 16 days
+// ============================================
+
+const midNurture: Sequence = {
+  id: "mid-nurture",
+  name: "The Consideration Path",
+  description: "Routes $25k-$50k leads to Goldco/AHG",
+  emails: [
+    {
+      step: 0,
+      delayDays: 0,
+      subject: "{{firstName}}, your Gold IRA guide + your best match",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "mid-nurture",
+        preheader: "We found the right company for your savings level.",
+        body: `
+          ${p(`${firstName || "Hey"}, welcome to Rich Dad Retirement.`)}
+          ${p("<strong>Here's your free 2026 Gold IRA Protection Guide:</strong>")}
+          ${p(`<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Download Your Free Guide (PDF) →</a>`)}
+          ${hr()}
+          ${p("And here's something specific to you:")}
+          ${p("Based on your savings level, <strong>your best match is Goldco.</strong>")}
+          ${p("<strong>Why Goldco:</strong>")}
+          ${ul([
+            "$25,000 minimum — fits your range perfectly",
+            "A+ BBB rating, trusted by 20,000+ Americans",
+            "Free precious metals on qualifying accounts",
+            "Strong buyback program when you're ready to sell",
+            "No high-pressure sales",
+          ])}
+          ${p("A Goldco specialist will reach out for a free consultation. Like Augusta, it's educational — not a pitch. They'll explain exactly how a Gold IRA works for your situation.")}
+          ${p("The call takes about 15 minutes. Zero obligation.")}
+          ${p("— The Rich Dad Retirement Team")}
+        `,
+        ctaText: "Learn More About Goldco →",
+        ctaUrl: GOLDCO_LP,
+      }),
+    },
+    {
+      step: 1,
+      delayDays: 3,
+      subject: "You don't need $50k to protect your retirement",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "mid-nurture",
+        preheader: "The strategy that works at any savings level.",
+        body: `
+          ${p(`${firstName || "Hey"}, here's something most Gold IRA sites won't tell you: you don't need $50,000 to get meaningful protection.`)}
+          ${h2("The Dollar-Cost Averaging Approach")}
+          ${ul([
+            "<strong>Start:</strong> Open your Gold IRA with $10,000-$25,000",
+            "<strong>Monthly:</strong> Add $200-$500 from each paycheck",
+            "<strong>Annually:</strong> Use your IRA contribution limit ($7,000/yr, $8,000 if 50+)",
+            "<strong>Windfalls:</strong> Tax refunds, bonuses → straight to gold",
+          ])}
+          ${p("<strong>Here's what that looks like:</strong>")}
+          ${ul([
+            "Year 1: $25,000 + ($300 x 12) = $28,600",
+            "Year 2: $28,600 + ($300 x 12) = $32,200",
+            "Year 3: $32,200 + ($300 x 12) = $35,800",
+            "(Plus any gold price appreciation)",
+          ])}
+          ${p("In 3 years, you'd have a meaningful gold position — and you could even qualify for Augusta's premium services at that point.")}
+          ${p("The key: start with what you have. Build from there.")}
+        `,
+        ctaText: "Start with Goldco ($25k min) →",
+        ctaUrl: GOLDCO_LP,
+      }),
+    },
+    {
+      step: 2,
+      delayDays: 7,
+      subject: "Augusta vs Goldco — honest comparison for your range",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "mid-nurture",
+        preheader: "Both are A+ rated. Here's which one fits you.",
+        body: `
+          ${p(`${firstName || "Hey"}, you might be wondering: should I stretch for Augusta or go with Goldco?`)}
+          ${p("<strong>Here's the honest comparison:</strong>")}
+          ${h2("Augusta Precious Metals")}
+          ${ul([
+            "Best-in-class education and transparency",
+            "Harvard-trained economist on staff",
+            "Zero fees for up to 10 years",
+            "$50,000 minimum (firm)",
+          ])}
+          ${p("<em>Best for: Investors with $50k+ who want premium service</em>")}
+          ${h2("Goldco")}
+          ${ul([
+            "Lower minimum ($25,000)",
+            "Free precious metals on qualifying accounts",
+            "A+ BBB, strong track record",
+            "More flexible for mid-range investors",
+          ])}
+          ${p("<em>Best for: Your savings level — great service, accessible minimums</em>")}
+          ${h2("American Hartford Gold")}
+          ${ul([
+            "Even lower minimum ($10,000)",
+            "Price match guarantee",
+            "Family-owned, personal service",
+          ])}
+          ${p("<em>Best for: If you want to start even smaller</em>")}
+          ${hr()}
+          ${p("Our recommendation: <strong>Goldco is the sweet spot for your range.</strong> Strong reputation, reasonable minimums, and no pressure.")}
+          ${p("If your savings grow past $50k later, you can always add an Augusta account for their premium services.")}
+        `,
+        ctaText: "Get Goldco's Free Kit →",
+        ctaUrl: GOLDCO_LP,
+      }),
+    },
+    {
+      step: 3,
+      delayDays: 11,
+      subject: "4 ways to grow your retirement faster",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "mid-nurture",
+        preheader: "Proven strategies that work at any income level.",
+        body: `
+          ${p(`${firstName || "Hey"}, while you're building your gold position, here are 4 ways to accelerate your retirement savings:`)}
+          ${h2("1. Max Your Catch-Up Contributions")}
+          ${p("If you're 50+, you can contribute $8,000/year to your IRA (vs the normal $7,000). That extra $1,000/year = $10,000+ over a decade.")}
+          ${h2("2. Consolidate Old 401(k)s")}
+          ${p("Have a forgotten 401(k) from a previous job? Roll it into your Gold IRA. Stop paying fees on accounts you're not watching.")}
+          ${h2("3. Consider a Roth Conversion")}
+          ${p("If you expect higher tax rates in retirement (most experts do, given $36T in debt), converting some funds to a Roth Gold IRA could save you thousands in taxes later.")}
+          ${h2("4. Diversify Across Metals")}
+          ${p("Silver is undervalued relative to gold right now. A 70/30 gold/silver split gives you more upside potential.")}
+          ${hr()}
+          ${p("These aren't tricks. They're the same strategies financial planners use for their own accounts.")}
+        `,
+        ctaText: "Explore Our Free Calculators →",
+        ctaUrl: `${SITE}/tools`,
+      }),
+    },
+    {
+      step: 4,
+      delayDays: 16,
+      subject: "Your path forward",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "mid-nurture",
+        preheader: "Everything you need, in one place.",
+        body: `
+          ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
+          ${p("<strong>Your complete resource kit:</strong>")}
+          ${ul([
+            `<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;">Your Guide</a> — Gold IRA Protection Guide`,
+            `<a href="${GOLDCO_LP}" style="color:#B22234;text-decoration:underline;">Your Match</a> — Goldco ($25,000 minimum)`,
+            `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Calculators</a> — 43 free tools`,
+            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Reviews</a> — Full company comparison`,
+          ])}
+          ${p("The size of your first investment doesn't matter. What matters is that you start protecting what you've built.")}
+          ${p("Visit us anytime at richdadretirement.com. We publish daily.")}
+          ${p("Wishing you a secure retirement,<br><strong>The Rich Dad Retirement Team</strong>")}
+        `,
+        ctaText: "Get Goldco's Free Kit →",
+        ctaUrl: GOLDCO_LP,
+      }),
+    },
+  ],
+};
+
+// ============================================
+// SEQUENCE 5 — Starter Nurture
+// Trigger: Lead form, <$25k savings
+// Goal: Route to Noble Gold ($2k minimum)
+// 5 emails over 16 days
+// ============================================
+
+const starterNurture: Sequence = {
+  id: "starter-nurture",
+  name: "The Starter Path",
+  description: "Routes <$25k leads to Noble Gold",
+  emails: [
+    {
+      step: 0,
+      delayDays: 0,
+      subject: "Good news: you can start with $2,000",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "starter-nurture",
+        preheader: "Your free guide + the best company for your savings level.",
+        body: `
+          ${p(`${firstName || "Hey"}, welcome to Rich Dad Retirement.`)}
+          ${p("<strong>First — your free 2026 Gold IRA Protection Guide:</strong>")}
+          ${p(`<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Download Your Free Guide (PDF) →</a>`)}
+          ${hr()}
+          ${p("Now, here's something important: a lot of Gold IRA sites only talk to people with $100k+. We don't. Every saver deserves protection.")}
+          ${h2("Your Best Match: Noble Gold Investments")}
+          ${ul([
+            "Start with as little as $2,000",
+            "A+ BBB rating, thousands of 5-star reviews",
+            "Fast account setup",
+            "No high-pressure sales",
+          ])}
+          ${p("Noble Gold has the lowest minimum in the entire industry. Start with what you have and build from there.")}
+          ${p("— The Rich Dad Retirement Team")}
+        `,
+        ctaText: "Explore Noble Gold →",
         ctaUrl: NOBLE_LP,
       }),
     },
     {
       step: 1,
       delayDays: 3,
-      subject: "You Don't Need $50k to Start — Here's How",
+      subject: "The $200/month strategy",
       buildHtml: (email, firstName) => emailLayout({
         email,
-        sequence: "starter-path",
-        preheader: "Smart strategies for building your gold position over time",
+        sequence: "starter-nurture",
+        preheader: "How small, consistent moves build real protection.",
         body: `
-          ${h2("Building Your Gold Position Over Time")}
-          ${p(`${firstName || "Hey"}, many of the wealthiest Gold IRA holders started small. Here's a smart approach:`)}
-          ${h2("The Dollar-Cost Averaging Strategy")}
-          ${p("Instead of investing a lump sum, add to your Gold IRA regularly:")}
+          ${p(`${firstName || "Hey"}, here's a strategy that works at any savings level:`)}
           ${ul([
-            "<strong>Month 1:</strong> Open your account with $2,000-$5,000",
-            "<strong>Monthly:</strong> Add $200-$500 per month",
-            "<strong>Yearly:</strong> Use your IRA contribution limit ($7,000/year, or $8,000 if 50+)",
-            "<strong>Windfalls:</strong> Tax refunds, bonuses, inheritances → straight to gold",
+            "<strong>Month 1:</strong> Open your Gold IRA with $2,000-$5,000",
+            "<strong>Monthly:</strong> Add $200-$500 from each paycheck",
+            "<strong>Annually:</strong> Use your IRA contribution ($7,000/yr, $8,000 if 50+)",
+            "<strong>Windfalls:</strong> Tax refunds, bonuses → straight to gold",
           ])}
-          ${p("In 2-3 years, you'll have a substantial gold position that protects your retirement from inflation and market crashes.")}
-          ${hr()}
-          ${p("Noble Gold makes this easy with low minimums and no pressure to invest more than you're comfortable with.")}
-          ${trustBadge()}
+          ${p("<strong>Here's what that looks like:</strong>")}
+          ${ul([
+            "Year 1: $5,000 + ($300 x 12) = $8,600",
+            "Year 2: $8,600 + ($300 x 12) = $12,200",
+            "Year 3: $12,200 + ($300 x 12) = $15,800",
+            "(Plus any gold price appreciation)",
+          ])}
+          ${p("In 3 years, you'll have a meaningful gold position. And you didn't have to stretch yourself thin to get it.")}
+          ${p("<strong>The key is starting. Not starting big.</strong>")}
         `,
-        ctaText: "Start Your Gold IRA with Noble Gold →",
+        ctaText: "Open Your Account — Starts at $2k →",
         ctaUrl: NOBLE_LP,
       }),
     },
     {
       step: 2,
       delayDays: 7,
-      subject: "Noble Gold: Why We Recommend Them for New Investors",
+      subject: "Why Noble Gold works for new gold investors",
       buildHtml: (email, firstName) => emailLayout({
         email,
-        sequence: "starter-path",
-        preheader: "Low minimums, great service, and a solid track record",
+        sequence: "starter-nurture",
+        preheader: "Low minimums. No pressure. Here's the full picture.",
         body: `
-          ${h2("Why Noble Gold Is Perfect for Getting Started")}
-          ${p(`${firstName || "Here's"} why we recommend Noble Gold for investors with under $50k:`)}
+          ${p(`${firstName || "Hey"}, here's why we recommend Noble Gold:`)}
           ${ul([
-            "✅ <strong>Lowest minimum in the industry:</strong> Start with just $2,000",
-            "✅ <strong>A+ BBB rating</strong> with thousands of 5-star reviews",
-            "✅ <strong>Free gold guide</strong> shipped to your door",
-            "✅ <strong>No high-pressure sales</strong> — education-first approach",
-            "✅ <strong>Royal Survival Packs</strong> — unique emergency gold/silver kits",
-            "✅ <strong>Texas depository option</strong> — not just Delaware",
+            "$2,000 minimum — lowest in the industry",
+            "A+ BBB rating, thousands of 5-star reviews",
+            "Texas-based depository (not just Delaware)",
+            "No high-pressure sales tactics",
+            "Fast setup — most accounts funded in 2 weeks",
           ])}
+          ${p("One thing we love: they don't make you feel small for starting small. A $5,000 account gets the same respect as a $500,000 account.")}
           ${hr()}
-          ${p("As your gold position grows past $50k, you can always open a second account with Augusta for their premium services. But for now, Noble Gold is the best place to start.")}
-          ${p(`Compare all companies: <a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Best Gold IRA Companies Ranked →</a>`)}
-          ${trustBadge()}
+          ${p("As your gold position grows past $50k, you can explore Augusta for premium services. But for now, Noble Gold is where you want to be.")}
         `,
         ctaText: "Get Noble Gold's Free Kit →",
         ctaUrl: NOBLE_LP,
@@ -340,76 +761,132 @@ const sequenceB: Sequence = {
     },
     {
       step: 3,
-      delayDays: 14,
-      subject: "How to Grow Your Retirement Savings Faster",
+      delayDays: 11,
+      subject: "4 ways to grow your retirement faster",
       buildHtml: (email, firstName) => emailLayout({
         email,
-        sequence: "starter-path",
-        preheader: "4 strategies to accelerate your retirement savings in 2026",
+        sequence: "starter-nurture",
+        preheader: "Same strategies the pros use for their own money.",
         body: `
-          ${h2("4 Ways to Grow Your Retirement Faster")}
-          ${p(`${firstName || "Hey"}, while you're building your gold position, here are proven strategies to accelerate your overall retirement savings:`)}
-          ${h2("1. Max out your catch-up contributions")}
-          ${p("If you're 50+, you can contribute an extra $1,000/year to your IRA ($8,000 total). That's an extra $10,000 over 10 years — before growth.")}
-          ${h2("2. Consolidate old 401(k)s")}
-          ${p("If you have forgotten 401(k)s from previous jobs, roll them into one Gold IRA. You'll save on fees and have better control.")}
-          ${h2("3. Consider a Roth conversion")}
-          ${p("If you expect higher tax rates in retirement (likely, given the national debt), converting some traditional IRA funds to a Roth Gold IRA could save you thousands in taxes.")}
-          ${h2("4. Diversify across metals")}
-          ${p("Don't just buy gold. Silver is currently undervalued relative to gold (the gold-to-silver ratio is historically high). A mix of both gives you more upside.")}
+          ${p(`${firstName || "Hey"}, while you're building your gold position, here are 4 ways to accelerate your retirement savings:`)}
+          ${h2("1. Max Your Catch-Up Contributions")}
+          ${p("If you're 50+, you can contribute $8,000/year to your IRA (vs the normal $7,000). That extra $1,000/year = $10,000+ over a decade.")}
+          ${h2("2. Consolidate Old 401(k)s")}
+          ${p("Have a forgotten 401(k) from a previous job? Roll it into your Gold IRA. Stop paying fees on accounts you're not watching.")}
+          ${h2("3. Consider a Roth Conversion")}
+          ${p("If you expect higher tax rates in retirement (most experts do, given $36T in debt), converting some funds to a Roth Gold IRA could save you thousands in taxes later.")}
+          ${h2("4. Diversify Across Metals")}
+          ${p("Silver is undervalued relative to gold right now. A 70/30 gold/silver split gives you more upside potential.")}
           ${hr()}
-          ${p("This is the last email in this series. Visit us anytime at <a href=\"" + SITE + "\" style=\"color:#B22234;text-decoration:underline;\">richdadretirement.com</a> for guides, calculators, and expert reviews.")}
-          ${p("Wishing you a secure retirement,<br><strong>The Rich Dad Retirement Team</strong>")}
-          ${trustBadge()}
+          ${p("These aren't tricks. They're the same strategies financial planners use for their own accounts.")}
         `,
-        ctaText: "Explore Our Retirement Calculators →",
+        ctaText: "Explore Our Free Calculators →",
         ctaUrl: `${SITE}/tools`,
+      }),
+    },
+    {
+      step: 4,
+      delayDays: 16,
+      subject: "Your path forward",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "starter-nurture",
+        preheader: "Everything in one place. Start when you're ready.",
+        body: `
+          ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
+          ${p("<strong>Your complete resource kit:</strong>")}
+          ${ul([
+            `<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;">Your Guide</a> — Gold IRA Protection Guide`,
+            `<a href="${NOBLE_LP}" style="color:#B22234;text-decoration:underline;">Your Match</a> — Noble Gold (starts at $2,000)`,
+            `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Calculators</a> — 43 free tools`,
+            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Reviews</a> — Full company comparison`,
+          ])}
+          ${p("$2,000 in gold today is infinitely more protection than $0 tomorrow. Start when you're ready. We'll be here.")}
+          ${p("Wishing you a secure retirement,<br><strong>The Rich Dad Retirement Team</strong>")}
+        `,
+        ctaText: "Start with Noble Gold →",
+        ctaUrl: NOBLE_LP,
       }),
     },
   ],
 };
 
 // ============================================
-// SEQUENCE C — Newsletter confirmation (single email)
-// The weekly digest is handled separately via cron
+// SEQUENCE 6 — Re-Engagement
+// Trigger: 30 days after any sequence ends without conversion
+// HTML built at SEND TIME for fresh content
+// 3 emails over 10 days
 // ============================================
 
-const sequenceC: Sequence = {
-  id: "newsletter-welcome",
-  name: "Newsletter Welcome",
-  description: "Confirmation email for newsletter subscribers",
+const reEngage: Sequence = {
+  id: "re-engage",
+  name: "Re-Engagement",
+  description: "Wins back cold leads 30+ days after sequence completion",
   emails: [
     {
       step: 0,
       delayDays: 0,
-      subject: "Welcome to Rich Dad Retirement — Your Free Guide Inside",
-      buildHtml: (email) => emailLayout({
+      subject: "Gold just crossed another milestone",
+      buildHtml: (email, firstName) => emailLayout({
         email,
-        sequence: "newsletter-welcome",
-        preheader: "Your Gold IRA investor's guide + weekly market updates",
+        sequence: "re-engage",
+        preheader: "Here's what it means for your retirement savings.",
         body: `
-          ${h2("You're In! Welcome to Rich Dad Retirement")}
-          ${p("Thanks for subscribing. Here's what you'll get from us:")}
-          ${ul([
-            "📊 <strong>Weekly Gold & Silver Market Updates</strong> — prices, trends, and what they mean for your retirement",
-            "📰 <strong>Breaking News</strong> — Fed decisions, inflation data, and policy changes that affect your savings",
-            "📚 <strong>Educational Guides</strong> — Gold IRA rules, tax strategies, and company reviews",
-            "🔥 <strong>Exclusive Offers</strong> — Special deals from our vetted Gold IRA partners",
-          ])}
-          ${hr()}
-          ${h2("Start Here: Your Free Gold IRA Guide")}
-          ${p("New to Gold IRAs? Start with our most popular resources:")}
-          ${ul([
-            `<a href="${SITE}/learn/what-is-gold-ira" style="color:#B22234;text-decoration:underline;">What Is a Gold IRA? Complete Beginner's Guide</a>`,
-            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Best Gold IRA Companies Ranked for 2026</a>`,
-            `<a href="${SITE}/tools/gold-ira-calculator" style="color:#B22234;text-decoration:underline;">Gold IRA Calculator — See Your Potential Returns</a>`,
-            `<a href="${SITE}/learn/401k-to-gold-ira-rollover" style="color:#B22234;text-decoration:underline;">How to Roll Over Your 401(k) Tax-Free</a>`,
-          ])}
-          ${p("If you have $50,000+ in retirement savings and want personalized guidance, our top-rated partner Augusta Precious Metals offers free consultations with a Harvard-trained economist.")}
-          ${trustBadge()}
+          ${p(`${firstName || "Hey"}, it's been a while since we connected.`)}
+          ${p("Gold has been making moves. Here's what that means in plain English: if you had moved $100,000 into gold three years ago, it would be worth roughly $155,000 today. Without dividends. Without compounding. Just the metal sitting in a vault.")}
+          ${p("Meanwhile, every dollar in your savings account has lost about 15% of its purchasing power to inflation over the same period.")}
+          ${p("If you've been thinking about protecting your retirement with gold but haven't taken the step — the information hasn't changed. Gold is still gold. And your savings still need protection.")}
         `,
-        ctaText: "Get Your Free Gold IRA Kit →",
-        ctaUrl: AUGUSTA_MID,
+        ctaText: "See Today's Gold Prices →",
+        ctaUrl: `${SITE}/tools/gold-price`,
+      }),
+    },
+    {
+      step: 1,
+      delayDays: 5,
+      subject: "60 seconds to see your numbers",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "re-engage",
+        preheader: "Our most popular calculator — 50,000+ people have used it.",
+        body: `
+          ${p(`${firstName || "Hey"}, we updated our Gold IRA Calculator for 2026.`)}
+          ${p("<strong>In 60 seconds, you can see:</strong>")}
+          ${ul([
+            "What your savings could be worth in gold",
+            "How different allocations (10%, 15%, 25%) affect your returns",
+            "The impact of inflation on unprotected savings",
+            "Side-by-side: stocks vs. gold vs. mixed portfolio",
+          ])}
+          ${p("Over 50,000 people have used it. It's free, takes one minute, and doesn't require any personal information.")}
+          ${p("Sometimes seeing your own numbers is what makes it click.")}
+        `,
+        ctaText: "Try the Calculator →",
+        ctaUrl: `${SITE}/tools/gold-ira-calculator`,
+      }),
+    },
+    {
+      step: 2,
+      delayDays: 10,
+      subject: "The door's always open",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "re-engage",
+        preheader: "Last nudge. Then just our regular newsletter.",
+        body: `
+          ${p(`${firstName || "Hey"}, this is the last personal email from us.`)}
+          ${p("You'll still get our regular newsletter with market updates and new guides. But no more one-on-one emails unless you take a new action on our site.")}
+          ${p("<strong>If you ever want to pick up where you left off:</strong>")}
+          ${ul([
+            `<a href="${SITE}/guide/free" style="color:#B22234;text-decoration:underline;">Guide</a> — Free Gold IRA Protection Guide`,
+            `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Calculators</a> — 43 free tools`,
+            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Reviews</a> — Full company comparison`,
+            `Talk to Augusta: <strong>${AUGUSTA_PHONE}</strong> (free, no obligation)`,
+          ])}
+          ${p("All the best,<br><strong>The Rich Dad Retirement Team</strong>")}
+        `,
+        ctaText: "Visit richdadretirement.com →",
+        ctaUrl: SITE,
       }),
     },
   ],
@@ -420,35 +897,40 @@ const sequenceC: Sequence = {
 // ============================================
 
 export const SEQUENCES: Record<string, Sequence> = {
-  "gold-ira-primer": sequenceA,
-  "starter-path": sequenceB,
-  "newsletter-welcome": sequenceC,
+  "newsletter-welcome": newsletterWelcome,
+  "guide-nurture": guideNurture,
+  "high-intent": highIntent,
+  "mid-nurture": midNurture,
+  "starter-nurture": starterNurture,
+  "re-engage": reEngage,
 };
 
 /**
- * Get the appropriate sequence for a lead based on savings tier
- * Handles both funnel format ("50k-100k") and display format ("$50k-$100k")
+ * Get the appropriate sequence based on context and savings tier
+ * Replaces the old getSequenceForTier() — now handles all entry points
+ */
+export function getSequenceForContext(
+  source: "guide-lp" | "lead-form" | "newsletter",
+  savingsTier?: string,
+): string {
+  if (source === "newsletter") return "newsletter-welcome";
+  if (source === "guide-lp") return "guide-nurture";
+
+  // Lead form: route by savings tier
+  const tier = savingsTier?.replace(/[$\s]/g, "").toLowerCase() || "";
+  if (["500k-plus", "500k+", "250k-500k", "250k+", "100k-250k", "50k-100k"].includes(tier)) {
+    return "high-intent";
+  }
+  if (["25k-50k"].includes(tier)) return "mid-nurture";
+  return "starter-nurture";
+}
+
+/**
+ * Legacy compatibility — maps old function name to new routing
+ * TODO: Remove after all callers are updated to getSequenceForContext
  */
 export function getSequenceForTier(savingsTier: string): string {
-  // Normalize: strip $ and whitespace, lowercase
-  const normalized = savingsTier.replace(/[$\s]/g, "").toLowerCase();
-
-  switch (normalized) {
-    // $50k+ tiers → Augusta "Gold IRA Primer" sequence
-    case "500k-plus":
-    case "500k+":
-    case "250k-500k":
-    case "250k+":
-    case "100k-250k":
-    case "50k-100k":
-      return "gold-ira-primer";
-    // Sub-$50k tiers → "Starter Path" sequence
-    case "25k-50k":
-    case "under-25k":
-    case "under25k":
-    default:
-      return "starter-path";
-  }
+  return getSequenceForContext("lead-form", savingsTier);
 }
 
 /**

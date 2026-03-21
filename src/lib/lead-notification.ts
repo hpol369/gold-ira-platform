@@ -1,6 +1,6 @@
 // Living Lead Notification - One message that evolves with the lead lifecycle
 import { Lead } from "@/lib/supabase";
-import { sendTelegramNotification, editTelegramMessages } from "@/lib/notifications";
+import { sendTelegramNotification, sendTelegramWithButtons, editTelegramMessages } from "@/lib/notifications";
 import { formatCurrency, getSavingsLabel, getHotLeadIndicator } from "@/lib/deal-calculator";
 
 // Detect traffic source and return emoji + label
@@ -141,6 +141,31 @@ export async function updateLeadNotification(
 
   // Otherwise send new messages to all chats
   console.log("[TELEGRAM] Sending new notification to all chats");
+
+  // For $50k+ leads sent to Augusta, add inline status buttons
+  const isHighIntent = lead.status === "sent_to_augusta" ||
+    (lead.savings_tier && ["500k-plus", "500k+", "250k-500k", "100k-250k", "50k-100k"].includes(
+      lead.savings_tier.replace(/[$\s]/g, "").toLowerCase()
+    ));
+
+  if (isHighIntent && lead.email) {
+    const buttons = [
+      [
+        { text: "✅ Connected", callback_data: `lead_connected:${lead.email}` },
+        { text: "❌ No Answer", callback_data: `lead_no_answer:${lead.email}` },
+      ],
+      [
+        { text: "🔄 Callback Scheduled", callback_data: `lead_callback:${lead.email}` },
+      ],
+    ];
+
+    const messageIds = await sendTelegramWithButtons(message, buttons, isUrgent);
+    if (messageIds) {
+      return JSON.stringify(messageIds);
+    }
+    return null;
+  }
+
   const messageIds = await sendTelegramNotification(message, isUrgent);
 
   if (messageIds) {

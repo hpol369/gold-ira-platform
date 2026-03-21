@@ -5,12 +5,26 @@ const AUGUSTA_WEBHOOK_URL = process.env.AUGUSTA_WEBHOOK_URL!;
 const AFFILIATE_ID = process.env.AUGUSTA_AFFILIATE_ID || "5129";
 
 export async function submitToAugusta(lead: Lead): Promise<boolean> {
+  // Build human-readable notes for the specialist
+  const notesParts: string[] = [];
+  if (lead.savings_tier) notesParts.push(`Savings: ${lead.savings_tier}`);
+  if (lead.concern) notesParts.push(`Concern: ${lead.concern}`);
+  if (lead.source) notesParts.push(`Source: ${lead.source}`);
+  if (lead.qualification_tier) notesParts.push(`Tier: ${lead.qualification_tier}`);
+  notesParts.push("Guide sent via email. From richdadretirement.com.");
+
   const payload = {
     firstname: lead.first_name,
     lastname: lead.last_name || "",
     phone: lead.phone,
     email: lead.email,
     affiliate_id: AFFILIATE_ID,
+    // Enrichment fields for Augusta specialist context
+    savings_tier: lead.savings_tier || "",
+    primary_concern: lead.concern || "",
+    source_page: lead.source || "",
+    qualification_tier: lead.qualification_tier || "",
+    lead_notes: notesParts.join(". "),
   };
 
   try {
