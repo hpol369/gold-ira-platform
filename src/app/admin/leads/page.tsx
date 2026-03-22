@@ -435,11 +435,13 @@ function LeadCard({
   emailItems,
   postbackItems,
   smsConfigured,
+  duplicate,
 }: {
   lead: LeadData;
   emailItems: EmailQueueItem[];
   postbackItems: PostbackEvent[];
   smsConfigured: boolean;
+  duplicate?: boolean;
 }) {
   const [expanded, setExpanded] = useState(false);
   const pipeline = getPipelineSteps(lead, emailItems, postbackItems, smsConfigured);
@@ -460,6 +462,11 @@ function LeadCard({
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
               <span className="font-semibold text-slate-900 text-sm">{getLeadName(lead)}</span>
+              {duplicate && (
+                <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-orange-100 text-orange-700 border border-orange-200">
+                  DUPE
+                </span>
+              )}
               <span className="text-slate-400 text-xs">--</span>
               <span className="text-xs text-slate-600">{lead.savingsTier || "Pre-funnel"}</span>
               <span className="text-slate-400 text-xs">--</span>
@@ -782,6 +789,20 @@ export default function LeadsActivityPage() {
     return lead.status === statusFilter;
   });
 
+  // Detect duplicate leads (same email or same name+phone)
+  const duplicateEmails = new Set<string>();
+  const emailCounts: Record<string, number> = {};
+  for (const lead of leads) {
+    const key = lead.email?.toLowerCase() || "";
+    if (key) emailCounts[key] = (emailCounts[key] || 0) + 1;
+  }
+  for (const [email, count] of Object.entries(emailCounts)) {
+    if (count > 1) duplicateEmails.add(email);
+  }
+  const isDuplicate = (lead: LeadData): boolean => {
+    return duplicateEmails.has(lead.email?.toLowerCase() || "");
+  };
+
   // Helpers for lead-specific email and postback data
   function getEmailItemsForLead(lead: LeadData): EmailQueueItem[] {
     return emailQueue.filter((eq) => eq.email === lead.email);
@@ -947,6 +968,7 @@ export default function LeadsActivityPage() {
                       emailItems={getEmailItemsForLead(lead)}
                       postbackItems={getPostbacksForLead(lead)}
                       smsConfigured={systemHealth.sms}
+                      duplicate={isDuplicate(lead)}
                     />
                   ))}
                 </div>
