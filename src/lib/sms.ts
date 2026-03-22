@@ -80,6 +80,38 @@ export async function sendHighIntentSMS(
  * Send a "missed call" follow-up SMS
  * Triggered by Day 3 check-in if lead hasn't connected
  */
+/**
+ * Send a call-reminder SMS on the morning Augusta may call
+ * Triggered by high-intent sequence step 2 ("morning of" email)
+ */
+export async function sendCallReminderSMS(
+  phone: string,
+  firstName?: string,
+): Promise<boolean> {
+  const twilioClient = getTwilioClient();
+  const fromNumber = process.env.TWILIO_PHONE_NUMBER;
+
+  if (!twilioClient || !fromNumber) return false;
+
+  const name = firstName || "there";
+  const message =
+    `Hi ${name}, Augusta may call today from 844-405-3908. Just 15 min — they'll explain how a Gold IRA works for your situation. Worth the call!`;
+
+  try {
+    const result = await twilioClient.messages.create({
+      body: message,
+      from: fromNumber,
+      to: toE164(phone),
+    });
+
+    console.log(`[SMS] Call-reminder sent to ${phone}, SID: ${result.sid}`);
+    return true;
+  } catch (err) {
+    console.error("[SMS] Call-reminder SMS failed:", err);
+    return false;
+  }
+}
+
 export async function sendMissedCallSMS(
   phone: string,
   firstName?: string,

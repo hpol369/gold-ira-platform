@@ -298,36 +298,40 @@ const highIntent: Sequence = {
   name: "Augusta Support",
   description: "Supports Augusta call for $50k+ leads — NEVER uses Augusta affiliate links",
   emails: [
-    // === THE AUGUSTA SUPPORT WINDOW (Hours 0-24) ===
-    // Step 0: Immediate — guide + expect-a-call callout
+    // ===================================================
+    // WINDOW 1 — Call Prep (Hours 0-72)
+    // ===================================================
+
+    // Step 0: Immediate — guide delivery + expect-a-call callout
     {
       step: 0,
       delayDays: 0,
-      subject: "{{firstName}}, your guide + what happens next",
+      subject: "{{firstName}}, your guide is ready + Augusta is calling",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
         preheader: "Augusta will call within 24hrs. 15 minutes, zero obligation.",
         body: `
-          ${p(`${firstName || "Hey"}, you're in. Two things are happening right now:`)}
-          ${callout(`<strong>&#128222; EXPECT A CALL:</strong> An Augusta specialist will call you within 24 hours to walk you through how a Gold IRA works for your situation. It's a <strong>free info call</strong> — 15 minutes, purely educational. <strong>Please answer even if you don't recognize the number.</strong>`, "warning")}
-          ${h2("1. Your Free Guide")}
-          ${p("Download the 2026 Gold IRA Protection Guide below. Short on time? Read Chapter 10 first — it has the 10 questions to ask your specialist.")}
-          ${h2("2. Quick Prep (2 minutes)")}
+          ${p(`${firstName || "Hey"}, you're in. Here's what's happening right now.`)}
+          ${h2("Your Free Guide")}
+          ${p(`Download the 2026 Gold IRA Protection Guide below. Start with Chapter 10 — it has the 10 questions to ask your Augusta specialist.`)}
+          ${h2("Expect a Call")}
+          ${callout(`<strong>Augusta will call within 24 hours from ${AUGUSTA_PHONE}.</strong> 15 minutes, purely educational. Please answer even if you don't recognize the number.`, "warning")}
+          ${h2("2-Minute Prep")}
           ${ul([
-            "Know your total retirement savings (rough number is fine)",
+            "Know your total savings (rough number is fine)",
             "Know where it's held (Fidelity, Vanguard, employer plan, etc.)",
-            "Have one question ready (the guide has 10 good ones)",
+            "Have one question ready (Chapter 10 has 10 good ones)",
           ])}
-          ${p("Augusta has an A+ BBB rating with zero complaints in 6+ years. They didn't get that by being pushy.")}
+          ${p(`Augusta has an A+ BBB rating with zero complaints in 7+ years. They didn't get there by being pushy.`)}
           ${p("Talk soon,<br><strong>The Rich Dad Retirement Team</strong>")}
         `,
         ctaText: "Download Your Free Guide (PDF) →",
         ctaUrl: GUIDE_PDF,
       }),
     },
-    // Step 1: 4 HOURS later — "call is coming soon" + minute-by-minute preview
-    // This is the KEY email — arrives while they're still warm, BEFORE the call
+
+    // Step 1: ~4 hours later — minute-by-minute call preview
     {
       step: 1,
       delayDays: 0.17, // ~4 hours (0.17 * 24 = 4.08hrs)
@@ -348,164 +352,251 @@ const highIntent: Sequence = {
           ${h2("Minute 13-15: Next Steps (only if YOU want)")}
           ${p("If you want to proceed, they'll explain the paperwork. If not, they'll say thanks and mean it.")}
           ${hr()}
-          ${p("<strong>Bottom line:</strong> Nobody will pressure you. Nobody will call you 47 times afterward. Augusta has zero BBB complaints in 6+ years — they don't operate that way.")}
+          ${p("<strong>Bottom line:</strong> Nobody will pressure you. Nobody will call you 47 times afterward. Augusta has zero BBB complaints in 7+ years — they don't operate that way.")}
+          ${p(`P.S. If your spouse or partner has questions too, they're welcome to join the call. Many couples do.`)}
         `,
         ctaText: "Review Your Guide Before the Call →",
         ctaUrl: GUIDE_PDF,
       }),
     },
-    // Step 2: Day 1 — morning-of reminder (in case they submitted late evening)
+
+    // Step 2: ~18 hours — short urgent reminder
     {
       step: 2,
-      delayDays: 1,
-      subject: "Heads up — Augusta may call today",
+      delayDays: 0.75, // ~18 hours (0.75 * 24 = 18hrs)
+      subject: "Quick heads up — Augusta may call today",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "If you get an unfamiliar call today, pick up — it's your specialist.",
+        preheader: `Look for ${AUGUSTA_PHONE} on your caller ID today.`,
         body: `
-          ${p(`Quick reminder, ${firstName || "hey"} — Augusta's team may reach out today.`)}
-          ${callout(`If you get a call from a number you don't recognize today — <strong>pick up.</strong> It's a 15-minute info call where they'll explain exactly how a Gold IRA works for your situation. Educational, not sales.`, "info")}
-          ${p("If you miss it, no stress — they'll try again. Or you can call them directly anytime:")}
-          ${p(`<strong><a href="tel:${AUGUSTA_PHONE.replace(/-/g, "")}" style="color:#B22234;text-decoration:underline;font-size:18px;">&#128222; ${AUGUSTA_PHONE}</a></strong><br><span style="font-size:13px;color:#64748b;">Ask for the Gold IRA education team</span>`)}
-        `,
-        ctaText: "Review Your Guide →",
-        ctaUrl: GUIDE_PDF,
-      }),
-    },
-    {
-      step: 3,
-      delayDays: 3,
-      subject: "Quick check-in (3 options inside)",
-      buildHtml: (email, firstName) => emailLayout({
-        email,
-        sequence: "high-intent",
-        preheader: "Connected? Missed the call? Changed your mind? All good.",
-        body: `
-          ${p(`${firstName || "Hey"}, quick check-in.`)}
-          ${p("By now, your Augusta specialist should have reached out. Did you get a chance to talk?")}
-          ${h2("→ Yes, We Connected")}
-          ${p(`<a href="${SITE}/api/email/status?action=connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here to let us know</a> — Great! If you have follow-up questions, reply to this email. We read every response.`)}
-          ${h2("→ Not Yet / I Missed the Call")}
-          ${p(`<a href="${SITE}/api/email/status?action=not-connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here</a> — No problem. You can call Augusta directly at <strong>${AUGUSTA_PHONE}</strong> (ask for the Gold IRA education team). Or just wait — they'll try again.`)}
-          ${h2("→ Still Thinking It Over")}
-          ${p("Completely normal. Most people who end up moving forward took a few weeks to decide. There's no rush — your free info call with Augusta stays open. When you're ready, call them at <strong>" + AUGUSTA_PHONE + "</strong>.")}
-          ${hr()}
-          ${p("Either way, you've already done more research than 95% of people. That puts you in a strong position no matter what you decide.")}
+          ${p(`${firstName || "Hey"}, quick heads up.`)}
+          ${p(`Augusta's team may reach out today. The number is <strong>${AUGUSTA_PHONE}</strong>.`)}
+          ${p("If you see it — pick up. 15 minutes. They'll explain exactly how a Gold IRA works for your situation.")}
+          ${p(`If you miss it, you can always call them back at the same number:`)}
+          ${p(`<strong><a href="tel:${AUGUSTA_PHONE.replace(/-/g, "")}" style="color:#B22234;text-decoration:underline;font-size:18px;">&#128222; ${AUGUSTA_PHONE}</a></strong>`)}
         `,
         ctaText: `Call Augusta Directly: ${AUGUSTA_PHONE}`,
         ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
       }),
     },
-    // === POST-SUPPORT WINDOW (Days 7+) — education + value ===
+
+    // Step 3: Day 2 — check-in with status tracking
     {
-      step: 4,
-      delayDays: 7,
-      skipIfConnected: true,
-      subject: "Why your advisor steers you away from gold",
+      step: 3,
+      delayDays: 2,
+      subject: "Quick check-in — did you connect with Augusta?",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "Follow the commissions. The answer is always the commissions.",
+        preheader: "Connected? Missed the call? Still thinking? All good.",
         body: `
-          ${p(`${firstName || "Hey"}, while you're thinking things over, here's something worth knowing.`)}
-          ${p("Most financial advisors won't recommend physical gold. Not because it's bad — but because they don't earn commissions on it.")}
-          ${h2("Your Advisor's Incentive")}
-          ${p("They make money on mutual funds, ETFs, and annuities. Physical gold? Nothing. So they'll tell you gold is \"risky\" or \"doesn't pay dividends.\" Both statements are misleading.")}
-          ${h2("What Gold Actually Does")}
-          ${p("Gold isn't meant to replace your stocks. It's insurance. You don't buy car insurance hoping for a crash — you buy it so a crash doesn't ruin you.")}
-          ${h2("The Numbers")}
-          ${p("10-25% of your portfolio in gold. That's what independent advisors (the ones who don't earn commissions) recommend.")}
+          ${p(`${firstName || "Hey"}, quick check-in. By now your Augusta specialist should have reached out. How did it go?`)}
+          ${h2("→ Yes, We Connected")}
+          ${p(`<a href="${SITE}/api/email/status?action=connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here to let us know</a> — Great! If you have follow-up questions, reply to this email. We read every response.`)}
+          ${h2("→ Not Yet / Missed the Call")}
+          ${p(`<a href="${SITE}/api/email/status?action=not-connected&email=${encodeURIComponent(email)}" style="color:#B22234;text-decoration:underline;font-weight:bold;">Click here</a> — No problem. You can call Augusta directly at <strong>${AUGUSTA_PHONE}</strong> or just wait — they'll try again.`)}
+          ${h2("→ Still Thinking It Over")}
+          ${p(`Completely normal. Most people who end up moving forward took a few weeks to decide. There's no rush — your free info call with Augusta stays open. When you're ready, call them at <strong>${AUGUSTA_PHONE}</strong>.`)}
           ${hr()}
-          ${p("If your advisor pushes back on gold, ask them one question: <em>\"What's your plan to protect my savings during the next 50% crash?\"</em>")}
-          ${p("If they say \"stay the course\" — that's not a plan. That's hope.")}
-          ${p(`Augusta's team includes a Harvard-trained economist who can show you exactly how gold fits into your portfolio. The call is still free: <strong>${AUGUSTA_PHONE}</strong>`)}
+          ${p("Either way, you've done more research than 95% of people. That puts you in a strong position.")}
         `,
-        ctaText: "See Your Personalized Numbers →",
-        ctaUrl: utmLink(`${SITE}/tools/gold-ira-calculator`, "high-intent", 3),
-      }),
-    },
-    {
-      step: 5,
-      delayDays: 11,
-      skipIfConnected: true,
-      subject: "\"My wife thought I was nuts\"",
-      buildHtml: (email, firstName) => emailLayout({
-        email,
-        sequence: "high-intent",
-        preheader: "Then gold went up 27% while their stocks went sideways.",
-        body: `
-          ${p(`${firstName || "Hey"}, the hardest part of a Gold IRA rollover is making the decision. The actual process? Easy.`)}
-          ${p("<em>\"I was terrified of the paperwork. Augusta did everything. I signed three forms and it was done in two weeks.\"</em><br>— Richard M., retired factory supervisor, Michigan")}
-          ${p("<em>\"My wife thought I was nuts. Then she saw gold go up 27% while our stocks went sideways. Now she wants to move more.\"</em><br>— Dave L., retired electrician, Pennsylvania")}
-          ${p("<em>\"I only moved $75,000 — about 20% of our savings. It's not about getting rich. It's about knowing that no matter what happens to the market, that $75k is safe.\"</em><br>— Sandra W., retired school teacher, Arizona")}
-          ${hr()}
-          ${p("Every one of these people had the same hesitation you might have. Every one of them is glad they made the call.")}
-          ${p(`If you haven't connected with Augusta yet, it's not too late. Call them directly: <strong>${AUGUSTA_PHONE}</strong> (Gold IRA education team).`)}
-        `,
-        ctaText: `Talk to Augusta — Free: ${AUGUSTA_PHONE}`,
+        ctaText: `Call Augusta Directly: ${AUGUSTA_PHONE}`,
         ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
       }),
     },
+
+    // Step 4: Day 3 — address #1 objection: "Is this legit?"
     {
-      step: 6,
-      delayDays: 16,
-      subject: "Kiyosaki is half right about gold",
+      step: 4,
+      delayDays: 3,
+      skipIfConnected: true,
+      subject: "Most people who hesitate have the same question",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "What he nails. What he exaggerates. The middle ground.",
+        preheader: "The #1 reason people don't answer Augusta's call — and why they should.",
         body: `
-          ${p(`${firstName || "Hey"}, if you follow Robert Kiyosaki, you've heard him say:`)}
+          ${p(`${firstName || "Hey"}, the most common reason people don't answer Augusta's call isn't that they're not interested — it's that they're worried it's a scam.`)}
+          ${p("Fair concern. Here's the reality:")}
           ${ul([
-            '"Gold is going to $5,000."',
-            '"The dollar is trash."',
-            '"Your 401(k) is the biggest scam in history."',
+            "<strong>Zero</strong> BBB complaints in 7+ years",
+            "A+ BBB rating",
+            "10+ year track record serving retirees",
+            "Harvard-trained economist on staff",
+            "No high-pressure sales (their reputation depends on it)",
           ])}
-          ${p("<strong>Here's our honest take:</strong>")}
-          ${h2("What He Gets Right:")}
-          ${ul([
-            "Paper currency loses value over time (the dollar has lost 87% of purchasing power since 1971 — that's a fact)",
-            "Gold is a real asset that can't be printed into oblivion",
-            "Most Americans are dangerously overexposed to paper assets",
-          ])}
-          ${h2("What He Exaggerates:")}
-          ${ul([
-            "Gold to $5,000 — possible but not certain",
-            "\"Biggest crash in history\" — he's said this for 10 years",
-            "401(k)s are a \"scam\" — imperfect, not a scam",
-          ])}
-          ${h2("The Middle Ground:")}
-          ${p("You don't need to be extreme. Moving 10-25% of your savings into gold is a proven strategy that protects you without betting the farm.")}
-          ${p("That's what we recommend. That's what the data supports.")}
+          ${quote("I almost didn't answer. Glad I did. The guy knew more about retirement than my financial advisor.", "Mike T., retired truck driver, Ohio")}
+          ${p("If you want to see our full breakdown — fees, ratings, real customer experiences — it's all on our review page.")}
+        `,
+        ctaText: "Read Our Full Augusta Review →",
+        ctaUrl: utmLink(`${SITE}/reviews/augusta-precious-metals`, "high-intent", 4),
+      }),
+    },
+
+    // ===================================================
+    // WINDOW 2 — Education & Trust (Days 5-14)
+    // ===================================================
+
+    // Step 5: Day 5 — what your advisor won't tell you
+    {
+      step: 5,
+      delayDays: 5,
+      skipIfConnected: true,
+      subject: "What your advisor won't tell you about gold",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "It's not their fault — it's just not their specialty.",
+        body: `
+          ${p(`${firstName || "Hey"}, here's something worth knowing while you're weighing your options.`)}
+          ${p("Financial advisors are great at stocks and bonds. But most aren't trained in physical precious metals. That's not their fault — it's just not their specialty.")}
+          ${p("Augusta's team specializes in ONE thing: helping retirees understand how gold fits their situation. That's why their education call is so valuable — even if you decide gold isn't for you.")}
+          ${h2("What the Data Says")}
+          ${p("Independent advisors (fee-only, no commissions) recommend <strong>10-25% allocation to gold</strong> as a hedge against inflation and market volatility.")}
+          ${p("Not 100%. Not 50%. Just enough to protect what you've built.")}
+          ${p("Curious what that looks like for your savings? Our calculator does the math in 60 seconds.")}
         `,
         ctaText: "See Your Personalized Numbers →",
         ctaUrl: utmLink(`${SITE}/tools/gold-ira-calculator`, "high-intent", 5),
       }),
     },
+
+    // Step 6: Day 8 — 3 retirees, 3 stories
     {
-      step: 7,
-      delayDays: 21,
-      subject: "Your Gold IRA toolkit — one last thing",
+      step: 6,
+      delayDays: 8,
+      skipIfConnected: true,
+      subject: "3 retirees, 3 stories, 1 regret",
       buildHtml: (email, firstName) => emailLayout({
         email,
         sequence: "high-intent",
-        preheader: "Your guide, your tools, Augusta's number. Bookmark this one.",
+        preheader: "They all agree on one thing: the 15-minute call was worth it.",
         body: `
-          ${p(`${firstName || "Hey"}, this is the last email in this series.`)}
-          ${p("<strong>Here's where things stand:</strong>")}
-          ${ul([
-            `<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;">Your free guide</a>`,
-            `Your free info call → still available (<strong>${AUGUSTA_PHONE}</strong>)`,
-            `<a href="${SITE}/tools" style="color:#B22234;text-decoration:underline;">Your tools</a> (43 calculators)`,
-            `<a href="${SITE}/best-gold-ira-companies" style="color:#B22234;text-decoration:underline;">Company reviews</a>`,
-          ])}
-          ${p("If now isn't the right time, that's fine. Bookmark our site. We publish daily and we'll always be here when you're ready.")}
-          ${p("If now IS the right time — one call. 15 minutes. They'll explain how it works for your situation.")}
-          ${p("Wishing you the retirement you've earned,<br><strong>The Rich Dad Retirement Team</strong>")}
+          ${p(`${firstName || "Hey"}, sometimes the best way to explain something is to let real people do the talking.`)}
+          ${quote("My pension covers bills, but gold is my 'sleep at night' money. Up 40% since I started. I moved $80k in 2021 and haven't looked back.", "Linda, retired teacher, Ohio")}
+          ${quote("My wife was skeptical. She joined the Augusta call with me. By minute 8, she was asking more questions than I was. We moved $120k.", "Dave, retired truck driver, Texas")}
+          ${quote("I kept telling myself next year. Then 2022 happened and my target-date fund dropped 22%. I finally called Augusta, but I wish I'd done it when I first thought about it.", "Carol, retired nurse, Florida")}
+          ${p("Three people. Three different situations. But they all agree on one thing: the 15-minute call was worth it.")}
         `,
-        ctaText: "Visit richdadretirement.com →",
-        ctaUrl: SITE,
+        ctaText: `Your free call is still open: ${AUGUSTA_PHONE}`,
+        ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
+      }),
+    },
+
+    // Step 7: Day 12 — spouse's top 3 questions
+    {
+      step: 7,
+      delayDays: 12,
+      skipIfConnected: true,
+      subject: "Your spouse's top 3 questions (answered)",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "If one of you is interested and the other isn't sure — read this together.",
+        body: `
+          ${p(`${firstName || "Hey"}, if you're like most couples, one of you is interested in gold and the other isn't sure. Here are the 3 questions we hear most from the skeptical spouse:`)}
+          ${h2("Q1: Is our money safe?")}
+          ${p("Yes. Gold is stored in IRS-approved depositories, fully insured, and segregated in your name. Even if the gold IRA company goes bankrupt, your gold is yours. It's held by a third-party custodian — completely separate.")}
+          ${h2("Q2: What are the real fees?")}
+          ${p("Typical total: <strong>$330-$450/year</strong> (storage + custodian). Augusta waives setup fees for qualifying accounts. Compare that to the 1-2% your mutual fund charges on your <em>entire</em> balance every year.")}
+          ${h2("Q3: Can we get our money back if we change our minds?")}
+          ${p("Yes. You can sell your gold back (Augusta has a buyback program) or take physical delivery after 59&frac12;. It's YOUR gold in YOUR name.")}
+          ${hr()}
+          ${p("P.S. Augusta welcomes couples on their calls. Many of their best clients started with a skeptical spouse.")}
+        `,
+        ctaText: `Schedule a Call Together: ${AUGUSTA_PHONE}`,
+        ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
+      }),
+    },
+
+    // ===================================================
+    // WINDOW 3 — Final Push (Days 18-28)
+    // ===================================================
+
+    // Step 8: Day 18 — gold vs cash performance
+    {
+      step: 8,
+      delayDays: 18,
+      skipIfConnected: true,
+      subject: "Gold is up 22% this year. Your savings account earned 0.5%.",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "Every month in cash, inflation takes another bite. Here's the math.",
+        body: `
+          ${p(`${firstName || "Hey"}, here's a side-by-side comparison that tells the whole story:`)}
+          ${statRow([
+            { label: "Gold", value: "+22% YTD" },
+            { label: "S&P 500", value: "+8%" },
+            { label: "Savings Account", value: "+0.5%" },
+            { label: "Inflation", value: "-4.2%" },
+          ])}
+          ${p("Every month your savings sit in cash, inflation takes another bite. $100,000 in January is worth about $96,500 in purchasing power today.")}
+          ${p("This isn't fear-mongering — it's math. And gold has beaten inflation in 48 of the last 55 years.")}
+          ${p("Curious what your specific savings could look like with gold vs. cash over the next 5-10 years?")}
+        `,
+        ctaText: "See What Your Savings Could Look Like →",
+        ctaUrl: utmLink(`${SITE}/tools/gold-vs-cash-calculator`, "high-intent", 8),
+      }),
+    },
+
+    // Step 9: Day 23 — demystify the process
+    {
+      step: 9,
+      delayDays: 23,
+      skipIfConnected: true,
+      subject: "What happens in the first 2 weeks after you say yes",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "2 weeks. 3 forms. Here's the full timeline.",
+        body: `
+          ${p(`${firstName || "Hey"}, one of the biggest reasons people delay is they assume the process is complicated. It's not. Here's exactly what happens:`)}
+          ${h2("Day 1")}
+          ${p("You and Augusta complete the paperwork. They handle everything — you sign 3 forms.")}
+          ${h2("Day 2-3")}
+          ${p("Your old custodian initiates the direct transfer. No taxes, no penalties.")}
+          ${h2("Day 5-7")}
+          ${p("Funds arrive. Your Augusta advisor helps you choose your metals.")}
+          ${h2("Day 7-10")}
+          ${p("Gold is purchased at market price and shipped to your depository.")}
+          ${h2("Day 10-14")}
+          ${p("Your metals are received, verified, and stored in your name. You get confirmation.")}
+          ${hr()}
+          ${p("That's it. 2 weeks. 3 forms. And your retirement has a layer of protection it didn't have before.")}
+        `,
+        ctaText: `Start the Process: ${AUGUSTA_PHONE}`,
+        ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
+      }),
+    },
+
+    // Step 10: Day 28 — final email with full toolkit
+    {
+      step: 10,
+      delayDays: 28,
+      skipIfConnected: true,
+      subject: "Last email — your toolkit + one question",
+      buildHtml: (email, firstName) => emailLayout({
+        email,
+        sequence: "high-intent",
+        preheader: "Everything you need, all in one place. Plus one question to think about.",
+        body: `
+          ${p(`${firstName || "Hey"}, this is the last planned email in this series. Here's everything you need, all in one place:`)}
+          ${ul([
+            `<a href="${GUIDE_PDF}" style="color:#B22234;text-decoration:underline;">Free guide (PDF)</a>`,
+            `<a href="${utmLink(`${SITE}/best-gold-ira-companies`, "high-intent", 10)}" style="color:#B22234;text-decoration:underline;">Company reviews</a>`,
+            `<a href="${utmLink(`${SITE}/tools`, "high-intent", 10)}" style="color:#B22234;text-decoration:underline;">Calculators</a>`,
+            `Your free Augusta call: <a href="tel:${AUGUSTA_PHONE.replace(/-/g, "")}" style="color:#B22234;text-decoration:underline;font-weight:bold;">${AUGUSTA_PHONE}</a>`,
+          ])}
+          ${hr()}
+          ${p("One question to think about:")}
+          ${callout(`Gold was $1,800 two years ago. It's over $5,300 today. If you'd moved 15% of your savings into gold back then, how much further ahead would you be?<br><br>Your free consultation with Augusta is still open. When you're ready: <strong>${AUGUSTA_PHONE}</strong>`)}
+          ${p("Wishing you the retirement you've earned,<br><strong>The Rich Dad Retirement Team</strong>")}
+          ${p(`P.S. You'll still receive our weekly market digest with gold prices and retirement tips. If you ever want to revisit gold, we'll be here.`)}
+        `,
+        ctaText: `Call Augusta — Free Consultation: ${AUGUSTA_PHONE}`,
+        ctaUrl: `tel:${AUGUSTA_PHONE.replace(/-/g, "")}`,
       }),
     },
   ],
