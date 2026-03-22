@@ -165,6 +165,28 @@ function getLeadFullName(lead: LeadData): string {
   return `${lead.firstName || ""} ${lead.lastName || ""}`.trim() || "Unknown";
 }
 
+function humanizeSource(source: string): string {
+  if (!source) return "Unknown";
+  return source
+    .replace(/^(get-started|lp|quiz|guide|learn|tools|news)[-_]/, (_, prefix) => {
+      const labels: Record<string, string> = {
+        "get-started": "Funnel: ",
+        "lp": "LP: ",
+        "quiz": "Quiz: ",
+        "guide": "Guide: ",
+        "learn": "Learn: ",
+        "tools": "Tool: ",
+        "news": "News: ",
+      };
+      return labels[prefix] || `${prefix}: `;
+    })
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, c => c.toUpperCase())
+    .replace(/\bIra\b/g, "IRA")
+    .replace(/\bLp\b/g, "LP")
+    .replace(/\bSms\b/g, "SMS");
+}
+
 function maskEmail(email: string): string {
   const parts = email.split("@");
   if (parts.length !== 2) return email;
@@ -359,7 +381,7 @@ function buildActivityFeed(
       events.push({
         id: `email-${eq.id}`,
         type: "email",
-        description: `Email ${eq.stepNumber} sent to ${maskEmail(eq.email)}`,
+        description: `${eq.sequenceName.replace(/-/g, " ")} (${eq.stepNumber + 1}) sent to ${maskEmail(eq.email)}`,
         email: eq.email,
         timestamp: eq.sentAt,
       });
@@ -446,17 +468,35 @@ function LeadCard({
             {/* Compact pipeline */}
             <div className="flex items-center gap-1.5 mt-1">
               <span className="text-xs text-slate-400 mr-1">Pipeline:</span>
-              {pipeline.map((step, i) => (
-                <span key={i} className="flex items-center gap-0.5" title={step.label}>
-                  <PipelineIconCompact status={step.status} />
-                  <span className="text-[10px] text-slate-400">{step.shortLabel}</span>
-                </span>
-              ))}
+              {(() => {
+                // Separate core steps from email steps
+                const coreSteps = pipeline.filter(s => !s.shortLabel.startsWith("E"));
+                const emailSteps = pipeline.filter(s => s.shortLabel.startsWith("E"));
+                const sentEmails = emailSteps.filter(s => s.status === "success").length;
+                const totalEmails = emailSteps.length;
+
+                return (
+                  <>
+                    {coreSteps.map((step, i) => (
+                      <span key={i} className="flex items-center gap-0.5" title={step.label}>
+                        <PipelineIconCompact status={step.status} />
+                        <span className="text-[10px] text-slate-400">{step.shortLabel}</span>
+                      </span>
+                    ))}
+                    {totalEmails > 0 && (
+                      <span className="flex items-center gap-0.5" title={`${sentEmails}/${totalEmails} emails sent`}>
+                        <PipelineIconCompact status={sentEmails === totalEmails ? "success" : sentEmails > 0 ? "pending" : "pending"} />
+                        <span className="text-[10px] text-slate-400">{sentEmails}/{totalEmails} emails</span>
+                      </span>
+                    )}
+                  </>
+                );
+              })()}
             </div>
             {/* Source + time */}
             <div className="flex items-center gap-2 mt-1">
               <span className="text-[11px] text-slate-400 truncate max-w-[200px]">
-                Source: {lead.source}
+                {humanizeSource(lead.source)}
               </span>
               <span className="text-[11px] text-slate-300">&bull;</span>
               <span className="text-[11px] text-slate-400">{timeAgo(lead.createdAt)}</span>
@@ -575,6 +615,7 @@ export default function LeadsActivityPage() {
   const [error, setError] = useState<string | null>(null);
   const [lastRefresh, setLastRefresh] = useState<Date | null>(null);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
+  const [hideTestLeads, setHideTestLeads] = useState(true);
   const pinRef = useRef<string>("");
 
   // Check session storage for saved auth
@@ -725,8 +766,15 @@ export default function LeadsActivityPage() {
   // Build activity feed
   const activityFeed = buildActivityFeed(leads, emailQueue, postbacks);
 
-  // Filter leads by status
+  // Filter leads
+  const isTestLead = (lead: LeadData): boolean => {
+    const name = (lead.firstName + " " + (lead.lastName || "")).toLowerCase();
+    const email = lead.email?.toLowerCase() || "";
+    return name.includes("test") || email.includes("test@") || email.includes("test.") || name === "test t." || name === "test test";
+  };
+
   const filteredLeads = leads.filter((lead) => {
+    if (hideTestLeads && isTestLead(lead)) return false;
     if (statusFilter === "all") return true;
     if (statusFilter === "errors") {
       return lead.status === "declined_call" || lead.status === "unqualified";
@@ -863,6 +911,16 @@ export default function LeadsActivityPage() {
                     </button>
                   );
                 })}
+                {/* Hide test leads toggle */}
+                <label className="flex items-center gap-2 ml-4 cursor-pointer select-none">
+                  <input
+                    type="checkbox"
+                    checked={hideTestLeads}
+                    onChange={(e) => setHideTestLeads(e.target.checked)}
+                    className="rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <span className="text-xs text-slate-500">Hide test leads</span>
+                </label>
               </div>
 
               {/* Section 4: Lead Persona Cards */}
