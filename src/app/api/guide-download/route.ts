@@ -32,8 +32,21 @@ export async function POST(request: Request) {
       .maybeSingle();
 
     if (existingLead) {
-      // Already a lead — still enroll in guide-nurture if not already in a sequence
-      await enrollInSequence(email.toLowerCase(), "guide-nurture", "guide-landing-page", firstName);
+      // Already a lead — check if they're in content-nurture (better sequence, don't downgrade)
+      const { data: activeSequence } = await supabase
+        .from("email_sequence_queue")
+        .select("sequence")
+        .eq("email", email.toLowerCase())
+        .eq("status", "pending")
+        .limit(1)
+        .maybeSingle();
+
+      if (!activeSequence || activeSequence.sequence !== "content-nurture") {
+        // Not in content-nurture — enroll in guide-nurture
+        await enrollInSequence(email.toLowerCase(), "guide-nurture", "guide-landing-page", firstName);
+      }
+      // If already in content-nurture, let that better sequence continue
+
       return NextResponse.json({
         success: true,
         message: "Guide sent! Check your email.",
@@ -69,8 +82,13 @@ export async function POST(request: Request) {
       );
     }
 
-    // Enroll in guide-nurture sequence
-    await enrollInSequence(email.toLowerCase(), "guide-nurture", "guide-landing-page", firstName);
+    // Enroll in content-nurture (better than guide-nurture for new leads)
+    // Falls back to guide-nurture if content-nurture doesn't exist
+    try {
+      await enrollInSequence(email.toLowerCase(), "content-nurture", "guide-landing-page", firstName, { topicSlug: "guide-free" });
+    } catch {
+      await enrollInSequence(email.toLowerCase(), "guide-nurture", "guide-landing-page", firstName);
+    }
 
     // Also add to email_subscribers
     await supabase

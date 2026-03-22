@@ -35,11 +35,30 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Enroll in newsletter welcome sequence (sends confirmation email immediately)
+    // Enroll in content nurture sequence (topic-aware, 13 emails over 60 days)
+    // Extract topic slug from source path for personalized content
+    const topicSlug = cleanSource.startsWith("/learn/")
+      ? cleanSource.replace("/learn/", "")
+      : cleanSource.startsWith("/")
+        ? cleanSource.replace(/^\//, "").replace(/\//g, "-")
+        : cleanSource;
+
     try {
-      await enrollInSequence(cleanEmail, "newsletter-welcome", cleanSource);
+      await enrollInSequence(
+        cleanEmail,
+        "content-nurture",
+        cleanSource,
+        undefined, // firstName not captured in newsletter
+        { topicSlug } // metadata for topic-specific email content
+      );
     } catch (err) {
       console.error("[NEWSLETTER] Sequence enrollment failed:", err);
+      // Fallback to legacy sequence if content-nurture doesn't exist yet
+      try {
+        await enrollInSequence(cleanEmail, "newsletter-welcome", cleanSource);
+      } catch {
+        console.error("[NEWSLETTER] Fallback enrollment also failed");
+      }
     }
 
     // Send Telegram notification
