@@ -13,6 +13,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { SourcesSection } from "@/components/content/SourcesSection";
 import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
@@ -24,6 +25,15 @@ export default function AugustaReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
             <SchemaScript schema={reviewSchema({ itemName: "Augusta Precious Metals", reviewBody: "Augusta is the premium choice for investors with $50,000+. Education-first approach, transparent fees, and fee-waiver program.", ratingValue: 4.9, author: "Thomas Richardson", url: "/reviews/augusta-precious-metals" })} />
+            <SchemaScript schema={{
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Augusta Precious Metals Review 2026 | Fees & Ratings",
+                "datePublished": "2025-06-15",
+                "dateModified": "2026-03-22",
+                "author": { "@type": "Person", "name": "Thomas Richardson" },
+                "publisher": { "@type": "Organization", "name": "Rich Dad Retirement", "logo": { "@type": "ImageObject", "url": "https://richdadretirement.com/logo.png" } }
+            }} />
             <SchemaScript schema={aggregateRatingSchema({ itemName: "Augusta Precious Metals", ratingValue: 4.9, reviewCount: 1247 })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Augusta Precious Metals", url: "/reviews/augusta-precious-metals" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/augusta-precious-metals"))} />
@@ -54,7 +64,7 @@ export default function AugustaReviewPage() {
                             <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
                                 <span className="bg-white px-2 py-1 rounded border border-slate-200">Gold IRA Company Reviews</span>
                                 <span>•</span>
-                                <span>Updated Jan 2026</span>
+                                <span className="bg-green-50 text-green-700 px-2 py-1 rounded border border-green-200">Updated March 2026</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
                                 Augusta Precious Metals Review: <br />
@@ -214,6 +224,18 @@ export default function AugustaReviewPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/augusta-precious-metals")} title="Augusta Precious Metals FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
+            <section className="py-8 bg-white">
+                <Container className="max-w-3xl">
+                    <SourcesSection
+                        sources={[
+                            { name: "BBB.org — Augusta Precious Metals Accreditation", url: "https://www.bbb.org/us/nv/las-vegas/profile/gold-dealers/augusta-precious-metals-1086-90046530", accessDate: "March 2026" },
+                            { name: "BusinessConsumerAlliance.org — Augusta BCA Rating", url: "https://www.businessconsumeralliance.org/Report/augusta-precious-metals", accessDate: "March 2026" },
+                            { name: "Trustpilot — Augusta Precious Metals Reviews", url: "https://www.trustpilot.com/review/augustapreciousmetals.com", accessDate: "March 2026" },
+                        ]}
+                        lastVerified="March 2026"
+                    />
                 </Container>
             </section>
             <section className="py-12 bg-white">
