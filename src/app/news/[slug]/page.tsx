@@ -20,6 +20,7 @@ import { ArrowRight, ArrowLeft, Clock, Calendar, ExternalLink, Share2 } from "lu
 import { SpotPriceWidget } from "@/components/widgets/SpotPriceWidget";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
+import { NOINDEX_NEWS_SLUGS } from "@/data/news-noindex";
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -38,9 +39,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: "Article Not Found" };
     }
 
+    const shouldNoindex = NOINDEX_NEWS_SLUGS.has(slug);
+
     return {
         title: article.headline || article.metaTitle || `${article.title} | Rich Dad Daily Briefing`,
         description: article.metaDescription || article.excerpt,
+        ...(shouldNoindex && { robots: { index: false, follow: true } }),
         alternates: {
             canonical: `/news/${slug}`,
         },
