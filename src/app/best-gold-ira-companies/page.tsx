@@ -16,10 +16,13 @@ import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { getCanonicalUrl } from "@/lib/metadata";
 
 export const metadata = {
     title: "Best Gold IRA Companies of 2026 | Independent Reviews",
     description: "Objective comparison of the top Gold IRA companies. We analyze fees, minimums, customer service, and track records to help you make an informed decision.",
+    alternates: { canonical: getCanonicalUrl("/best-gold-ira-companies") },
 };
 
 export default function BestGoldIraCompaniesPage() {
@@ -53,7 +56,7 @@ export default function BestGoldIraCompaniesPage() {
                     <Container className="relative z-10 text-center">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B22234]/10 border border-[#B22234]/20 text-[#B22234] text-sm font-semibold mb-6">
                             <Sparkles className="w-4 h-4" />
-                            Updated January 2026
+                            Updated March 2026
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#000080]">
                             We Know You&apos;re Skeptical. You Should Be.
@@ -325,6 +328,18 @@ export default function BestGoldIraCompaniesPage() {
                         title="Gold IRA Company FAQs"
                         className="max-w-3xl"
                         includeSchema={false}
+                    />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container className="max-w-4xl">
+                    <SourcesSection
+                        sources={[
+                            { name: "BBB.org — Better Business Bureau Company Ratings", url: "https://www.bbb.org/", accessDate: "March 2026" },
+                            { name: "BusinessConsumerAlliance.org — BCA Accreditation", url: "https://www.businessconsumeralliance.org/", accessDate: "March 2026" },
+                            { name: "IRS.gov — Retirement Plan and IRA Rules", url: "https://www.irs.gov/retirement-plans", accessDate: "March 2026" },
+                        ]}
+                        lastVerified="March 2026"
                     />
                 </Container>
             </section>
