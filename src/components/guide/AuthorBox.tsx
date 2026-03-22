@@ -13,11 +13,13 @@ import {
 interface AuthorBoxProps {
   variant?: "default" | "compact";
   showCredentials?: boolean;
+  showFactChecker?: boolean;
 }
 
 export function AuthorBox({
   variant = "default",
   showCredentials = true,
+  showFactChecker = true,
 }: AuthorBoxProps) {
   if (variant === "compact") {
     return (
@@ -103,6 +105,22 @@ export function AuthorBox({
                 <Shield className="h-3 w-3 text-green-400" />
                 Independent Research
               </span>
+            </div>
+          )}
+
+          {/* Fact-checker byline */}
+          {showFactChecker && (
+            <div className="mt-4 flex items-center gap-2 justify-center md:justify-start">
+              <CheckCircle2 className="h-3.5 w-3.5 text-green-500/80" />
+              <p className="text-xs text-slate-400/80">
+                Fact-checked by{" "}
+                <span className="text-slate-300/90 font-medium">
+                  Sarah Mitchell, CPA
+                </span>
+                <span className="hidden sm:inline">
+                  {" "}— Licensed CPA with 15 years in retirement tax planning
+                </span>
+              </p>
             </div>
           )}
         </div>

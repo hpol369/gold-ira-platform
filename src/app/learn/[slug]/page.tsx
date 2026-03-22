@@ -373,13 +373,17 @@ export default async function LearnArticlePage({ params }: PageProps) {
   const threatMeta = threatLevelMeta[article.threatLevel];
   const catMeta = categoryMeta[article.category];
 
+  // Resolve dates from article data with static fallbacks
+  const publishDate = article.publishDate ?? "2026-01-15";
+  const updateDate = article.updatedDate ?? "2026-03-20";
+
   // JSON-LD Schemas (centralized generators)
   const articleSchemaData = buildArticleSchema({
     title: article.title,
     description: article.metaDescription,
     slug: `/learn/${slug}`,
-    datePublished: "2026-01-15",
-    dateModified: "2026-03-20",
+    datePublished: publishDate,
+    dateModified: updateDate,
   });
 
   const faqSchemaData = buildFaqSchema(article.faqs);
@@ -405,7 +409,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
       <SchemaScript schema={faqSchemaData} />
       <SchemaScript schema={breadcrumbData} />
       
-      <TrustBar updateDate="2026-03-20" />
+      <TrustBar updateDate={updateDate} />
 
       {/* Hero Section - Premium Visual Styling */}
       <section className="relative pt-24 pb-12 overflow-hidden">
@@ -460,8 +464,8 @@ export default async function LearnArticlePage({ params }: PageProps) {
         <Container>
           <div className="max-w-4xl">
             <ArticleMeta
-              publishDate="2026-01-15"
-              updateDate="2026-03-20"
+              publishDate={publishDate}
+              updateDate={updateDate}
               readTime="8 min"
             />
           </div>

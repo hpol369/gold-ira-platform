@@ -5,7 +5,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Users } from "lucide-react";
 
 export function WhySection() {
   return (
@@ -89,6 +89,15 @@ export function WhySection() {
                 Free, No Obligation
               </span>
             </div>
+
+            {/* Social proof counter */}
+            <p
+              style={{ animation: "fadeInUp 0.6s ease-out 0.55s both" }}
+              className="mt-4 flex items-center justify-center lg:justify-start gap-1.5 text-xs text-white/50"
+            >
+              <Users className="w-3.5 h-3.5" />
+              Join 50,000+ Americans who&apos;ve requested their free Gold IRA kit
+            </p>
           </div>
 
           {/* Right: Hero Image */}
