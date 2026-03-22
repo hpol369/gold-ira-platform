@@ -7,6 +7,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { X, Shield, CheckCircle, Loader2, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { trackExitIntent, trackEmailSignup } from "@/lib/analytics";
 
 const SESSION_KEY = "exitIntentShown";
 
@@ -16,6 +17,7 @@ export function ExitIntentPopup() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleClose = useCallback(() => {
+    trackExitIntent('closed', window.location.pathname);
     setIsVisible(false);
   }, []);
 
@@ -26,6 +28,7 @@ export function ExitIntentPopup() {
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0) {
         setIsVisible(true);
+        trackExitIntent('shown', window.location.pathname);
         sessionStorage.setItem(SESSION_KEY, "true");
         document.removeEventListener("mouseleave", handleMouseLeave);
       }
@@ -35,6 +38,7 @@ export function ExitIntentPopup() {
     const mobileTimer = setTimeout(() => {
       if (!sessionStorage.getItem(SESSION_KEY) && window.innerWidth < 768) {
         setIsVisible(true);
+        trackExitIntent('shown', window.location.pathname);
         sessionStorage.setItem(SESSION_KEY, "true");
       }
     }, 45000);
@@ -68,6 +72,8 @@ export function ExitIntentPopup() {
       });
       const data = await res.json();
       if (data.success) {
+        trackExitIntent('converted', window.location.pathname);
+        trackEmailSignup(window.location.pathname, 'exit_intent');
         setStatus("success");
         setTimeout(() => setIsVisible(false), 2500);
       } else {

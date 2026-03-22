@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { getQuizResult, type QuizState, type QuizResult } from "@/types/quiz";
 import { Container } from "@/components/ui/Container";
 import { useRouter } from "next/navigation";
+import { trackQuizStep } from "@/lib/analytics";
 
 // Updated for "Rich Dad" style scoring
 const steps = [
@@ -78,6 +79,7 @@ export function QuizWizard() {
     const progress = ((currentStepIndex) / (steps.length - 1)) * 100;
 
     const handleOptionSelect = (key: keyof QuizState, value: string) => {
+        trackQuizStep(currentStepIndex, value);
         setAnswers(prev => ({ ...prev, [key]: value }));
         const nextIndex = currentStepIndex + 1;
 

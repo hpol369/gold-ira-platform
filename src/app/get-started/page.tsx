@@ -8,6 +8,7 @@ import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
 import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
 import { useABTest } from "@/lib/ab-testing";
 import { GOOGLE_ADS_CONVERSION_TAG } from "@/config/google-ads";
+import { trackFunnelStep, trackLeadSubmission } from "@/lib/analytics";
 
 const CONCERN_ICONS = {
   TrendingDown,
@@ -139,6 +140,7 @@ function GetStartedContent() {
   }
 
   const selectSavings = useCallback((tier: SavingsTier) => {
+    trackFunnelStep("savings", { savingsTier: tier, abVariant: `funnel-order-v1:${variant}` });
     if (variant === "variant") {
       // Variant B: savings is step 2, go to result
       const result = getQualificationResult(tier);
@@ -150,6 +152,7 @@ function GetStartedContent() {
   }, [variant]);
 
   const selectConcern = useCallback((concern: Concern) => {
+    trackFunnelStep("concern", { concern, abVariant: `funnel-order-v1:${variant}` });
     if (variant === "variant") {
       // Variant B: concern is step 1, go to savings
       setState(prev => ({ ...prev, concern, step: "savings" }));
@@ -166,8 +169,10 @@ function GetStartedContent() {
   }, [state.savingsTier, variant]);
 
   const proceedToContact = useCallback(() => {
+    const r = state.savingsTier ? getQualificationResult(state.savingsTier) : null;
+    trackFunnelStep("contact", { savingsTier: state.savingsTier || undefined, concern: state.concern || undefined, company: r?.companyName });
     setState(prev => ({ ...prev, step: "contact" }));
-  }, []);
+  }, [state.savingsTier, state.concern]);
 
   const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
@@ -191,6 +196,7 @@ function GetStartedContent() {
       }
     }
 
+    trackFunnelStep("submit", { savingsTier: state.savingsTier || undefined, concern: state.concern || undefined, company: result.companyName });
     setState(prev => ({ ...prev, step: "submitting" }));
 
     try {
@@ -229,6 +235,8 @@ function GetStartedContent() {
         } catch { /* gtag not available */ }
       }
 
+      trackLeadSubmission({ source: `get-started_${ref}`, savingsTier: state.savingsTier || undefined, company: result.companyName, isAugusta });
+      trackFunnelStep("success", { savingsTier: state.savingsTier || undefined, company: result.companyName });
       setIsAugustaResult(isAugusta);
       setState(prev => ({ ...prev, step: "success" }));
 
