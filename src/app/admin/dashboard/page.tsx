@@ -340,6 +340,12 @@ export default function DashboardPage() {
             </div>
             <div className="flex items-center gap-3">
               <a
+                href="/admin/leads"
+                className="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 rounded-lg transition-colors text-sm border border-blue-500/30 font-medium"
+              >
+                Lead Activity →
+              </a>
+              <a
                 href="/admin/conversions"
                 className="px-4 py-2 bg-white/5 hover:bg-white/10 text-slate-300 rounded-lg transition-colors text-sm border border-white/10"
               >
@@ -430,7 +436,7 @@ export default function DashboardPage() {
                 <span className="text-xs text-slate-400 uppercase font-medium">Click→Lead Rate</span>
               </div>
               <div className="text-2xl font-bold text-white">
-                {overview.totalClicks > 0 ? ((overview.totalLeads / overview.totalClicks) * 100).toFixed(1) : 0}%
+                {overview.totalClicks > 0 ? Math.min(((overview.weeklyLeads / Math.max(overview.monthlyClicks, 1)) * 100), 100).toFixed(1) : "N/A"}%
               </div>
             </div>
           </div>

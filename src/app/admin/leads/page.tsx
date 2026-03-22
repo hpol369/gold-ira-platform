@@ -230,24 +230,27 @@ function getPipelineSteps(
       else if (eq.status === "failed") emailStatus = "failed";
       else if (eq.status === "skipped") emailStatus = "skipped";
 
-      const emailLabel = eq.sequenceName
-        ? `${eq.sequenceName.replace(/-/g, " ")} step ${eq.stepNumber}`
-        : `Email ${eq.stepNumber}`;
+      const stepNum = eq.stepNumber + 1; // 0-indexed in DB, show as 1-indexed
+      const seqName = eq.sequenceName ? eq.sequenceName.replace(/-/g, " ") : "email";
       steps.push({
-        label: emailLabel,
-        shortLabel: `E${eq.stepNumber}`,
+        label: `${seqName} (${stepNum}/${sorted.length})`,
+        shortLabel: `E${stepNum}`,
         status: emailStatus,
         timestamp: eq.sentAt || eq.scheduledAt,
       });
     }
   }
 
-  // SMS
-  steps.push({
-    label: smsConfigured ? "SMS notification" : "SMS (not configured)",
-    shortLabel: "SMS",
-    status: smsConfigured ? "pending" : "failed",
-  });
+  // SMS — only relevant for high-intent leads with phone numbers
+  const isHighIntent = lead.qualificationTier?.startsWith("augusta");
+  const hasPhone = lead.phone && lead.phone.length >= 10;
+  if (isHighIntent && hasPhone) {
+    steps.push({
+      label: smsConfigured ? "SMS confirmation sent" : "SMS (Twilio not configured)",
+      shortLabel: "SMS",
+      status: smsConfigured ? "success" : "failed",
+    });
+  }
 
   // Postback
   if (postbackItems.length > 0) {
@@ -436,9 +439,9 @@ function LeadCard({
             <div className="flex items-center gap-2 flex-wrap">
               <span className="font-semibold text-slate-900 text-sm">{getLeadName(lead)}</span>
               <span className="text-slate-400 text-xs">--</span>
-              <span className="text-xs text-slate-600">{lead.savingsTier || "No tier"}</span>
+              <span className="text-xs text-slate-600">{lead.savingsTier || "Pre-funnel"}</span>
               <span className="text-slate-400 text-xs">--</span>
-              <span className="text-xs text-slate-500">{lead.routedTo || "Unrouted"}</span>
+              <span className="text-xs text-slate-500">{lead.routedTo || (lead.savingsTier ? "Unrouted" : "Legacy lead")}</span>
             </div>
             {/* Compact pipeline */}
             <div className="flex items-center gap-1.5 mt-1">
