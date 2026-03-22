@@ -89,6 +89,10 @@ export interface LearnArticle {
   difficulty?: number;
   cpc?: number;
 
+  // Dates (ISO format, e.g. "2026-01-15")
+  publishDate?: string;
+  updatedDate?: string;
+
   // Classification
   category: ArticleCategory;
   threatLevel: ThreatLevel;

@@ -1,9 +1,9 @@
 "use client";
 
-import { Suspense, useState, useCallback } from "react";
+import { Suspense, useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2, Mail, Users, Star, Award } from "lucide-react";
+import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2, Mail, Users, Star, Award, Check } from "lucide-react";
 import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
 import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
 import { useABTest } from "@/lib/ab-testing";
@@ -42,7 +42,106 @@ const TESTIMONIALS = [
     state: "Pennsylvania",
     job: "Former Steelworker",
   },
+  {
+    quote: "Carried mail for 28 years and saved every penny I could. Moving part of my TSP into gold gave me real peace of mind.",
+    name: "Gary W.",
+    state: "Michigan",
+    job: "Retired Postal Worker",
+  },
+  {
+    quote: "After decades of night shifts, I deserved better than watching my 401(k) shrink. The whole process took less than a week.",
+    name: "Patricia D.",
+    state: "Arizona",
+    job: "Retired Nurse",
+  },
 ];
+
+const PROGRESS_STEPS = [
+  { label: "Savings", step: "savings" },
+  { label: "Concerns", step: "concern" },
+  { label: "Your Match", step: "result" },
+  { label: "Get Kit", step: "contact" },
+] as const;
+
+function getProgressIndex(currentStep: string): number {
+  switch (currentStep) {
+    case "savings": return 0;
+    case "concern": return 1;
+    case "result": return 2;
+    case "contact":
+    case "submitting":
+    case "success":
+      return 3;
+    default: return 0;
+  }
+}
+
+function ProgressIndicator({ currentStep }: { currentStep: string }) {
+  const activeIndex = getProgressIndex(currentStep);
+
+  return (
+    <div className="flex items-center justify-center gap-0 mb-8">
+      {PROGRESS_STEPS.map((s, i) => {
+        const isCompleted = i < activeIndex;
+        const isActive = i === activeIndex;
+
+        return (
+          <div key={s.step} className="flex items-center">
+            {/* Dot */}
+            <div className="flex flex-col items-center">
+              <div
+                className={`w-2 h-2 rounded-full flex items-center justify-center transition-colors duration-300 ${
+                  isCompleted
+                    ? "bg-green-400"
+                    : isActive
+                      ? "bg-amber-400"
+                      : "bg-white/30"
+                }`}
+              >
+                {isCompleted && (
+                  <Check className="h-1.5 w-1.5 text-white" strokeWidth={4} />
+                )}
+              </div>
+              <span
+                className={`text-[10px] mt-1.5 whitespace-nowrap transition-colors duration-300 ${
+                  isCompleted
+                    ? "text-green-400"
+                    : isActive
+                      ? "text-amber-400"
+                      : "text-white/30"
+                }`}
+              >
+                {s.label}
+              </span>
+            </div>
+            {/* Connecting line */}
+            {i < PROGRESS_STEPS.length - 1 && (
+              <div
+                className={`w-12 sm:w-16 h-px mx-1.5 mb-5 transition-colors duration-300 ${
+                  i < activeIndex ? "bg-green-400/60" : "bg-white/15"
+                }`}
+              />
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function RotatingTestimonial({ testimonialIndex }: { testimonialIndex: number }) {
+  const t = TESTIMONIALS[testimonialIndex % TESTIMONIALS.length];
+  return (
+    <div className="mt-5 bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3">
+      <p className="text-white/60 text-sm italic leading-relaxed">
+        &ldquo;{t.quote}&rdquo;
+      </p>
+      <p className="text-white/40 text-xs mt-1.5">
+        — {t.name}, {t.state} &bull; {t.job}
+      </p>
+    </div>
+  );
+}
 
 export default function GetStartedPage() {
   return (
@@ -131,6 +230,14 @@ function GetStartedContent() {
   });
   const [error, setError] = useState("");
   const [isAugustaResult, setIsAugustaResult] = useState(false);
+  const [testimonialIndex, setTestimonialIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTestimonialIndex(prev => (prev + 1) % TESTIMONIALS.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   function formatPhone(value: string): string {
     const digits = value.replace(/\D/g, "").slice(0, 10);
@@ -290,6 +397,7 @@ function GetStartedContent() {
       {/* Main content */}
       <main className="flex-1 flex items-center justify-center px-4 py-8 md:py-16">
         <div className="w-full max-w-2xl">
+          <ProgressIndicator currentStep={state.step} />
           <AnimatePresence mode="wait">
             {/* STEP 1: Savings */}
             {state.step === "savings" && (
@@ -332,6 +440,8 @@ function GetStartedContent() {
                       </button>
                     ))}
                   </div>
+
+                  <RotatingTestimonial testimonialIndex={testimonialIndex} />
                 </div>
               </motion.div>
             )}
@@ -373,6 +483,8 @@ function GetStartedContent() {
                       );
                     })}
                   </div>
+
+                  <RotatingTestimonial testimonialIndex={testimonialIndex} />
                 </div>
               </motion.div>
             )}
