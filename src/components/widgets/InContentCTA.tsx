@@ -11,6 +11,10 @@ interface InContentCTAProps {
   variant?: InContentCTAVariant;
   /** Source page for tracking (e.g. "learn-gold-ira-fees") */
   trackSource?: string;
+  /** Custom headline (overrides default) */
+  headline?: string;
+  /** Custom body text (overrides default) */
+  body?: string;
   className?: string;
 }
 
@@ -36,7 +40,7 @@ const variantStyles: Record<InContentCTAVariant, {
   },
 };
 
-export function InContentCTA({ variant = "default", trackSource, className }: InContentCTAProps) {
+export function InContentCTA({ variant = "default", trackSource, headline, body, className }: InContentCTAProps) {
   const styles = variantStyles[variant];
 
   const href = trackSource
@@ -53,8 +57,8 @@ export function InContentCTA({ variant = "default", trackSource, className }: In
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className={cn("text-sm leading-relaxed", styles.text)}>
-          <p className="font-semibold text-[#000080]">Thinking about protecting your retirement?</p>
-          <p>Get matched with the right Gold IRA company for your situation — free, no obligation.</p>
+          <p className="font-semibold text-[#000080]">{headline || "Thinking about protecting your retirement?"}</p>
+          <p>{body || "Get matched with the right Gold IRA company for your situation — free, no obligation."}</p>
         </div>
         <Link
           href={href}
