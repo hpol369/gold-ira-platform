@@ -11,7 +11,9 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SourcesSection } from "@/components/content/SourcesSection";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { getPageFAQs } from "@/data/faqs";
 import {
   Shield,
@@ -30,6 +32,7 @@ import {
 export const metadata: Metadata = {
   title: "Gold IRA Rules 2026 | IRS Regulations & Requirements",
   description: "Gold IRA rules guide. Learn IRS contribution limits, eligible metals, storage requirements, distribution rules, and prohibited transactions.",
+  alternates: { canonical: getCanonicalUrl("/gold-ira-rules") },
   openGraph: {
     title: "Gold IRA Rules 2026 | IRS Regulations & Requirements",
     description: "Everything you need to know about Gold IRA rules - contribution limits, eligible metals, storage requirements, and IRS regulations.",
@@ -100,6 +103,7 @@ export default function GoldIRARulesPage() {
             <a href="#storage-rules" className="text-[#B22234] hover:text-[#8B1A28]">Storage Rules</a>
             <a href="#distribution-rules" className="text-[#B22234] hover:text-[#8B1A28]">Distribution Rules</a>
             <a href="#prohibited-transactions" className="text-[#B22234] hover:text-[#8B1A28]">Prohibited Transactions</a>
+            <a href="#tax-rules" className="text-[#B22234] hover:text-[#8B1A28]">Tax Rules</a>
           </div>
         </Container>
       </section>
@@ -110,6 +114,27 @@ export default function GoldIRARulesPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Column */}
             <div className="lg:col-span-2 space-y-12">
+              {/* 2026 Contribution Limits Callout */}
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+                <h3 className="text-xl font-bold text-amber-900 mb-3 flex items-center gap-2">
+                  <DollarSign className="h-6 w-6 text-amber-600" />
+                  2026 Gold IRA Contribution Limits
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-4 mb-3">
+                  <div className="bg-white rounded-lg p-4 border border-amber-100 text-center">
+                    <div className="text-3xl font-bold text-amber-700">$7,000</div>
+                    <div className="text-sm text-amber-800/70 mt-1">Per year (under age 50)</div>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border border-amber-100 text-center">
+                    <div className="text-3xl font-bold text-amber-700">$8,000</div>
+                    <div className="text-sm text-amber-800/70 mt-1">Per year (age 50+ catch-up)</div>
+                  </div>
+                </div>
+                <p className="text-sm text-amber-800/70">
+                  These limits are set by IRS Publication 590-A and apply to your combined IRA contributions (traditional + Roth + Gold IRA). Rollovers and trustee-to-trustee transfers have no dollar limit.
+                </p>
+              </div>
+
               {/* Contribution Limits */}
               <div id="contribution-limits">
                 <h2 className="text-2xl font-bold text-[#000080] mb-6 flex items-center gap-3">
@@ -465,6 +490,98 @@ export default function GoldIRARulesPage() {
                   </p>
                 </div>
               </div>
+              {/* Gold IRA Tax Rules */}
+              <div id="tax-rules">
+                <h2 className="text-2xl font-bold text-[#000080] mb-6 flex items-center gap-3">
+                  <FileText className="h-7 w-7 text-[#B22234]" />
+                  Gold IRA Tax Rules
+                </h2>
+                <p className="text-slate-500 mb-6">
+                  Gold IRA tax rules depend on whether you have a Traditional or Roth Gold IRA. Understanding the tax treatment helps you plan withdrawals and minimize your tax burden in retirement.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                    <h4 className="font-bold text-[#000080] mb-3">Tax-Deferred Growth (Traditional Gold IRA)</h4>
+                    <p className="text-sm text-slate-500 mb-3">
+                      Contributions to a Traditional Gold IRA may be tax-deductible depending on your income and whether you have a workplace retirement plan. Your gold investments grow tax-deferred, meaning you pay no capital gains tax as your metals appreciate.
+                    </p>
+                    <ul className="space-y-2 text-sm text-slate-500">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>Contributions may be tax-deductible (subject to income limits)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>No capital gains tax while metals are held inside the IRA</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <span>Withdrawals taxed as ordinary income (not capital gains rates)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                    <h4 className="font-bold text-[#000080] mb-3">Roth Gold IRA Tax Treatment</h4>
+                    <p className="text-sm text-slate-500 mb-3">
+                      Roth Gold IRA contributions are made with after-tax dollars. The major advantage is that qualified withdrawals are completely tax-free, including all gains from gold appreciation.
+                    </p>
+                    <ul className="space-y-2 text-sm text-slate-500">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>Qualified withdrawals are 100% tax-free (account must be 5+ years old)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>No Required Minimum Distributions during the owner&apos;s lifetime</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <span>Contributions are NOT tax-deductible (funded with after-tax money)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                    <h4 className="font-bold text-[#000080] mb-3">Required Minimum Distributions (RMDs)</h4>
+                    <p className="text-sm text-slate-500 mb-3">
+                      Traditional Gold IRA holders must begin taking Required Minimum Distributions at age 73 under the SECURE 2.0 Act. Failing to take your RMD results in a 25% excise tax on the amount not withdrawn (reduced from 50% under prior law).
+                    </p>
+                    <ul className="space-y-2 text-sm text-slate-500">
+                      <li className="flex items-start gap-2">
+                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <span>Traditional Gold IRA: RMDs begin at age 73</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>Roth Gold IRA: No RMDs during owner&apos;s lifetime</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <span>Gold IRA RMDs can be taken as physical metals (in-kind) or cash after liquidation</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+                    <h4 className="font-bold text-red-600 mb-3">Early Withdrawal Penalties</h4>
+                    <p className="text-sm text-red-700/80 mb-3">
+                      Withdrawing from a Gold IRA before age 59 1/2 triggers both income tax and a 10% early withdrawal penalty. Some exceptions apply:
+                    </p>
+                    <ul className="space-y-2 text-sm text-red-700/80">
+                      <li className="flex items-start gap-2">
+                        <XCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                        <span>10% penalty + ordinary income tax on the distribution amount</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span>Penalty exceptions: disability, first-time home purchase ($10k max), certain medical expenses, substantially equal periodic payments (72(t))</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Sidebar */}
@@ -576,6 +693,15 @@ export default function GoldIRARulesPage() {
 
       <section className="py-12 bg-white">
         <Container>
+          <SourcesSection
+            sources={[
+              { name: "IRS Publication 590-A: Contributions to Individual Retirement Arrangements", url: "https://www.irs.gov/publications/p590a", accessDate: "2026-03-15" },
+              { name: "IRS Publication 590-B: Distributions from Individual Retirement Arrangements", url: "https://www.irs.gov/publications/p590b", accessDate: "2026-03-15" },
+              { name: "IRC Section 408(m)(3) — Investment in Collectibles", url: "https://www.law.cornell.edu/uscode/text/26/408", accessDate: "2026-03-15" },
+              { name: "SECURE 2.0 Act — Required Minimum Distribution Changes", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds", accessDate: "2026-03-15" },
+            ]}
+            lastVerified="2026-03-15"
+          />
           <AutoRelatedContent currentUrl="/gold-ira-rules" />
         </Container>
       </section>

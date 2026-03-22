@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/gold-ira-pros-and-cons",
     "/how-does-a-gold-ira-work",
     "/is-a-gold-ira-a-good-idea",
+    "/gold-ira-statistics",
     "/why-gold",
     "/what-is-a-gold-ira",
     "/gold-ira-rules",

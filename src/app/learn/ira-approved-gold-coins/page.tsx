@@ -14,10 +14,13 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { getCanonicalUrl } from "@/lib/metadata";
 
 export const metadata: Metadata = {
     title: "IRA-Approved Gold Coins & Bars 2026: Complete List & Guide",
     description: "Complete list of IRS-approved gold coins and bars for your Gold IRA in 2026. Learn purity requirements, which products to buy, and what to avoid.",
+    alternates: { canonical: getCanonicalUrl("/learn/ira-approved-gold-coins") },
 };
 
 const takeaways = [
@@ -194,6 +197,71 @@ export default function IraApprovedGoldCoinsPage() {
                             <Callout type="info" title="The American Eagle Exception">
                                 The American Gold Eagle is only 91.67% gold (22 karat) but is specifically approved by Congress for IRAs. It&apos;s the only exception to the 99.5% rule. The remaining alloy (copper and silver) makes the coin more durable.
                             </Callout>
+
+                            <h3>Complete IRA-Approved Gold Products List</h3>
+                            <p>
+                                The following table lists the most commonly held IRA-approved gold coins and bars, including their type, minimum fineness required by the IRS under IRC Section 408(m)(3), and country of origin:
+                            </p>
+
+                            <div className="overflow-x-auto not-prose my-8">
+                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
+                                    <thead className="bg-slate-100">
+                                        <tr>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Product</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Type</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Minimum Fineness</th>
+                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Country of Origin</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-200 text-sm">
+                                        <tr>
+                                            <td className="p-4 font-semibold text-slate-900">American Gold Eagle</td>
+                                            <td className="p-4 text-slate-600">Coin</td>
+                                            <td className="p-4 text-slate-600">91.67% (22k)*</td>
+                                            <td className="p-4 text-slate-600">United States</td>
+                                        </tr>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">American Gold Buffalo</td>
+                                            <td className="p-4 text-slate-600">Coin</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">United States</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 font-semibold text-slate-900">Canadian Gold Maple Leaf</td>
+                                            <td className="p-4 text-slate-600">Coin</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">Canada</td>
+                                        </tr>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">Austrian Gold Philharmonic</td>
+                                            <td className="p-4 text-slate-600">Coin</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">Austria</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 font-semibold text-slate-900">Australian Gold Kangaroo</td>
+                                            <td className="p-4 text-slate-600">Coin</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">Australia</td>
+                                        </tr>
+                                        <tr className="bg-slate-100/50">
+                                            <td className="p-4 font-semibold text-slate-900">Credit Suisse Gold Bar</td>
+                                            <td className="p-4 text-slate-600">Bar</td>
+                                            <td className="p-4 text-slate-600">99.5% (0.995)</td>
+                                            <td className="p-4 text-slate-600">Switzerland</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 font-semibold text-slate-900">PAMP Suisse Gold Bar</td>
+                                            <td className="p-4 text-slate-600">Bar</td>
+                                            <td className="p-4 text-slate-600">99.99% (24k)</td>
+                                            <td className="p-4 text-slate-600">Switzerland</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p className="text-sm text-slate-500">
+                                *American Gold Eagle is specifically exempted by Congress from the 99.5% purity requirement per IRC Section 408(m)(3)(A)(i).
+                            </p>
                         </section>
 
                         {/* Approved Gold Coins */}
@@ -603,6 +671,15 @@ export default function IraApprovedGoldCoinsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <SourcesSection
+                          sources={[
+                            { name: "IRC Section 408(m)(3) — Definition of Collectibles; IRA-Eligible Metals", url: "https://www.law.cornell.edu/uscode/text/26/408", accessDate: "2026-03-15" },
+                            { name: "IRS Publication 590-A: Contributions to Individual Retirement Arrangements", url: "https://www.irs.gov/publications/p590a", accessDate: "2026-03-15" },
+                            { name: "U.S. Mint — American Eagle Bullion Coins", url: "https://www.usmint.gov/coins/coin-medal-programs/american-eagle", accessDate: "2026-03-15" },
+                          ]}
+                          lastVerified="2026-03-15"
+                        />
 
                         <AutoRelatedContent currentUrl="/learn/ira-approved-gold-coins" />
 
