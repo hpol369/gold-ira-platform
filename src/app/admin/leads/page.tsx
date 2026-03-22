@@ -913,14 +913,15 @@ export default function LeadsActivityPage() {
               {/* Section 3: Status Filter Tabs */}
               <div className="flex items-center gap-1 mb-4 overflow-x-auto pb-1">
                 {STATUS_FILTERS.map(({ key, label }) => {
+                  const visibleLeads = hideTestLeads ? leads.filter((l) => !isTestLead(l)) : leads;
                   const count =
                     key === "all"
-                      ? leads.length
+                      ? visibleLeads.length
                       : key === "errors"
-                        ? leads.filter(
+                        ? visibleLeads.filter(
                             (l) => l.status === "declined_call" || l.status === "unqualified"
                           ).length
-                        : leads.filter((l) => l.status === key).length;
+                        : visibleLeads.filter((l) => l.status === key).length;
                   return (
                     <button
                       key={key}
