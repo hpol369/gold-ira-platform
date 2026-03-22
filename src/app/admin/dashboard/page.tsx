@@ -103,6 +103,55 @@ interface DashboardData {
   timestamp: string;
 }
 
+// Humanize raw DB labels for display
+function humanizeSource(source: string): string {
+  if (!source) return "Unknown";
+  return source
+    .replace(/^(get-started|lp|quiz|guide|learn|tools|news)[-_]/, (_, prefix: string) => {
+      const labels: Record<string, string> = {
+        "get-started": "Funnel: ",
+        "lp": "LP: ",
+        "quiz": "Quiz: ",
+        "guide": "Guide: ",
+        "learn": "Learn: ",
+        "tools": "Tool: ",
+        "news": "News: ",
+      };
+      return labels[prefix] || `${prefix}: `;
+    })
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, c => c.toUpperCase())
+    .replace(/\bIra\b/g, "IRA")
+    .replace(/\bLp\b/g, "LP");
+}
+
+function humanizeStatus(status: string): string {
+  const map: Record<string, string> = {
+    new: "New",
+    sent_to_augusta: "Sent to Augusta",
+    qualified: "Qualified",
+    converted: "Converted",
+    contacted: "Contacted",
+    declined_call: "Declined Call",
+    unqualified: "Unqualified",
+  };
+  return map[status] || status.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function humanizeTier(tier: string): string {
+  if (tier === "Unknown" || !tier) return "Pre-funnel (no tier)";
+  return tier;
+}
+
+function transformBreakdown(data: Record<string, number>, transformer: (key: string) => string): Record<string, number> {
+  const result: Record<string, number> = {};
+  for (const [key, value] of Object.entries(data)) {
+    const newKey = transformer(key);
+    result[newKey] = (result[newKey] || 0) + value;
+  }
+  return result;
+}
+
 function formatCurrency(amount: number): string {
   if (amount >= 1000000) return `$${(amount / 1000000).toFixed(1)}M`;
   if (amount >= 1000) return `$${(amount / 1000).toFixed(0)}k`;
@@ -131,7 +180,7 @@ function StatusBadge({ status }: { status: string }) {
 
   return (
     <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border ${colors[status] || colors.new}`}>
-      {status.replace(/_/g, " ")}
+      {humanizeStatus(status)}
     </span>
   );
 }
@@ -438,6 +487,9 @@ export default function DashboardPage() {
               <div className="text-2xl font-bold text-white">
                 {overview.totalClicks > 0 ? Math.min(((overview.weeklyLeads / Math.max(overview.monthlyClicks, 1)) * 100), 100).toFixed(1) : "N/A"}%
               </div>
+              {overview.totalClicks < 50 && (
+                <div className="text-[10px] text-slate-500 mt-1">⚠ Low sample size ({overview.totalClicks} clicks)</div>
+              )}
             </div>
           </div>
 
@@ -466,14 +518,14 @@ export default function DashboardPage() {
                 <h3 className="text-sm font-medium text-white">Savings Tier Breakdown</h3>
               </div>
               <BreakdownBar
-                data={breakdowns.tier}
+                data={transformBreakdown(breakdowns.tier, humanizeTier)}
                 colors={{
                   "$250k+": "#10b981",
                   "$100k-$250k": "#22c55e",
                   "$50k-$100k": "#84cc16",
                   "$25k-$50k": "#f59e0b",
                   "Under $25k": "#ef4444",
-                  Unknown: "#64748b",
+                  "Pre-funnel (no tier)": "#64748b",
                 }}
               />
             </div>
@@ -484,7 +536,7 @@ export default function DashboardPage() {
                 <ArrowUpRight className="h-4 w-4 text-blue-400" />
                 <h3 className="text-sm font-medium text-white">Lead Source</h3>
               </div>
-              <BreakdownBar data={breakdowns.source} />
+              <BreakdownBar data={transformBreakdown(breakdowns.source, humanizeSource)} />
             </div>
 
             {/* Concern */}
@@ -503,14 +555,14 @@ export default function DashboardPage() {
                 <h3 className="text-sm font-medium text-white">Lead Status</h3>
               </div>
               <BreakdownBar
-                data={breakdowns.status}
+                data={transformBreakdown(breakdowns.status, humanizeStatus)}
                 colors={{
-                  new: "#3b82f6",
-                  sent_to_augusta: "#f59e0b",
-                  qualified: "#10b981",
-                  converted: "#059669",
-                  contacted: "#8b5cf6",
-                  declined_call: "#ef4444",
+                  "New": "#3b82f6",
+                  "Sent to Augusta": "#f59e0b",
+                  "Qualified": "#10b981",
+                  "Converted": "#059669",
+                  "Contacted": "#8b5cf6",
+                  "Declined Call": "#ef4444",
                 }}
               />
             </div>
@@ -684,7 +736,7 @@ export default function DashboardPage() {
                           <div className="text-white font-medium">{lead.name}</div>
                           <div className="text-xs text-slate-500">{lead.email}</div>
                         </td>
-                        <td className="p-3 text-slate-400 text-xs max-w-[120px] truncate">{lead.source}</td>
+                        <td className="p-3 text-slate-400 text-xs max-w-[150px] truncate">{humanizeSource(lead.source)}</td>
                         <td className="p-3"><TierBadge tier={lead.savingsTier} /></td>
                         <td className="p-3"><StatusBadge status={lead.status} /></td>
                         <td className="p-3 text-slate-400 text-xs">

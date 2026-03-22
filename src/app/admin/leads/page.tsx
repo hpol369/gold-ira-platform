@@ -864,7 +864,11 @@ export default function LeadsActivityPage() {
                     <div className="p-6 text-center text-slate-400 text-sm">No activity yet</div>
                   ) : (
                     <div className="divide-y divide-slate-50">
-                      {activityFeed.map((event) => (
+                      {activityFeed.filter((event) => {
+                        if (!hideTestLeads) return true;
+                        const desc = event.description.toLowerCase();
+                        return !desc.includes("test") && !desc.includes("test@");
+                      }).map((event) => (
                         <div key={event.id} className="flex items-start gap-3 px-4 py-3">
                           <ActivityFeedIcon type={event.type} />
                           <div className="min-w-0 flex-1">
