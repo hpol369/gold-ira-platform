@@ -107,8 +107,15 @@ export const CONFIG = {
 
     // Scoring thresholds
     scoring: {
-        minimumScore: 6, // Only genuinely relevant stories (was 3 = too permissive)
-        maxArticlesPerRun: 1, // 1 quality article per run, 3 runs/day = 2-3 articles/day
+        minimumScore: 7, // Higher bar for relevance (was 6, before that 3)
+        maxArticlesPerRun: 2, // 2 articles per run, 3 runs/day — but only the best survive quality gate
+    },
+
+    // Quality gate — articles below this score get auto-rejected
+    qualityGate: {
+        minimumScore: 40, // Must score at least Tier B on quality scorer
+        minimumWordCount: 700, // No thin articles
+        maxFormulaPhrases: 0, // Zero tolerance for AI fingerprint phrases
     },
 
     // Output paths

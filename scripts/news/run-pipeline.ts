@@ -168,6 +168,66 @@ async function runPipeline() {
 
     console.log(`Generated ${articles.length} articles`);
 
+    // Step 3.5: Quality gate — check for formulaic phrases and minimum quality
+    console.log("");
+    console.log("STEP 3.5: Quality gate...");
+    console.log("-".repeat(40));
+
+    const FORMULA_PHRASES = [
+        "wake up, people",
+        "follow the money",
+        "i've been saying this for years",
+        "what the mainstream won't tell you",
+        "here's what they're not telling you",
+        "paper promises",
+        "printing presses",
+        "fiat currency",
+        "fake money",
+        "the rich already know this",
+        "in today's uncertain times",
+        "now more than ever",
+    ];
+
+    const qualityArticles = articles.filter((article) => {
+        const body = (article.body || "").toLowerCase();
+        const wordCount = body.split(/\s+/).length;
+
+        // Check word count
+        if (wordCount < (CONFIG.qualityGate?.minimumWordCount || 700)) {
+            console.log(`  REJECTED [${article.title.slice(0, 50)}]: only ${wordCount} words (min: ${CONFIG.qualityGate?.minimumWordCount || 700})`);
+            return false;
+        }
+
+        // Check for formulaic phrases
+        const foundPhrases = FORMULA_PHRASES.filter((phrase) => body.includes(phrase));
+        const maxPhrases = CONFIG.qualityGate?.maxFormulaPhrases ?? 0;
+        if (foundPhrases.length > maxPhrases) {
+            console.log(`  REJECTED [${article.title.slice(0, 50)}]: ${foundPhrases.length} formulaic phrases found: ${foundPhrases.join(", ")}`);
+            return false;
+        }
+
+        // Check for data points (numbers with $ or %)
+        const dataPoints = (body.match(/\$[\d,.]+|\d+\.?\d*%/g) || []).length;
+        if (dataPoints < 3) {
+            console.log(`  WARNING [${article.title.slice(0, 50)}]: only ${dataPoints} data points (recommended: 5+)`);
+            // Don't reject, just warn — some topics legitimately have fewer numbers
+        }
+
+        console.log(`  PASSED [${article.title.slice(0, 50)}]: ${wordCount} words, ${dataPoints} data points`);
+        return true;
+    });
+
+    console.log(`Quality gate: ${qualityArticles.length}/${articles.length} articles passed`);
+
+    if (qualityArticles.length === 0) {
+        console.log("No articles passed quality gate. Exiting.");
+        saveProcessedUrls(processedUrls, newItems.map(i => i.link));
+        return;
+    }
+
+    // Replace articles with quality-filtered ones
+    const filteredArticles = qualityArticles;
+
     // Step 4: Write articles to files
     console.log("");
     console.log("STEP 4: Writing articles...");
@@ -175,7 +235,7 @@ async function runPipeline() {
 
     const writtenSlugs: string[] = [];
 
-    for (const article of articles) {
+    for (const article of filteredArticles) {
         const status = autoPublish ? "published" : "review";
         const slug = writeArticle(article, status);
         writtenSlugs.push(slug);
@@ -190,7 +250,7 @@ async function runPipeline() {
     console.log("STEP 5: Generating silver tweets...");
     console.log("-".repeat(40));
 
-    const silverArticles = articles.filter((a) => a.category === "silver");
+    const silverArticles = filteredArticles.filter((a) => a.category === "silver");
     const tweetQueue: Array<{ title: string; text: string }> = [];
 
     if (silverArticles.length === 0) {
