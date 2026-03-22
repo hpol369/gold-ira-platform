@@ -19,6 +19,7 @@ import { LoadingAnalysis } from "@/components/audit/LoadingAnalysis";
 // import { QuizResults } from "./QuizResults";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { useRouter } from "next/navigation";
+import { trackQuizStep } from "@/lib/analytics";
 
 // ============================================
 // TYPE DEFINITIONS
@@ -473,6 +474,7 @@ export function UniversalQuiz() {
   }, []);
 
   const handleProductTypeSelect = useCallback((productType: string) => {
+    trackQuizStep(0, productType);
     setState(prev => ({
       ...prev,
       step: 'questions',
@@ -487,6 +489,7 @@ export function UniversalQuiz() {
       const newAnswers = { ...prev.answers, [questionId]: value };
       const questionsForType = getQuestionsForProductType(prev.productType);
       const isLastQuestion = prev.currentQuestionIndex >= questionsForType.length - 1;
+      trackQuizStep(prev.currentQuestionIndex + 1, value);
 
       if (isLastQuestion) {
         // Move to analyzing step

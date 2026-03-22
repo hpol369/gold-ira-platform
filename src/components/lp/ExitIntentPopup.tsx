@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { X, FileText, ArrowRight } from "lucide-react";
 import TrackedLPLink from "./TrackedLPLink";
+import { trackExitIntent } from "@/lib/analytics";
 
 interface ExitIntentPopupProps {
     affiliateLink: string;
@@ -29,6 +30,7 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                 setIsVisible(true);
                 setHasShown(true);
                 sessionStorage.setItem("exitPopupShown", "true");
+                trackExitIntent('shown', source);
             }
         };
 
@@ -38,6 +40,7 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                 setIsVisible(true);
                 setHasShown(true);
                 sessionStorage.setItem("exitPopupShown", "true");
+                trackExitIntent('shown', source);
             }
         }, 30000);
 
@@ -50,6 +53,7 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
     }, [hasShown]);
 
     const handleClose = () => {
+        trackExitIntent('closed', source);
         setIsVisible(false);
     };
 

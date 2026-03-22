@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { trackEmailSignup } from "@/lib/analytics";
 
 export function FooterNewsletter() {
   const [email, setEmail] = useState("");
@@ -21,6 +22,7 @@ export function FooterNewsletter() {
 
       const data = await res.json();
       if (data.success) {
+        trackEmailSignup('footer-newsletter', 'footer');
         setStatus("success");
         setMessage("You're in! Check your inbox for a welcome email.");
         setEmail("");

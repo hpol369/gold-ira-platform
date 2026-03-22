@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Mail, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { trackEmailSignup } from "@/lib/analytics";
 
 interface NewsletterSignupProps {
   variant?: "default" | "inline" | "footer" | "popup";
@@ -41,6 +42,8 @@ export function NewsletterSignup({
 
       if (!res.ok) throw new Error("Failed to subscribe");
 
+      const trigger = variant === "footer" ? "footer" : variant === "inline" ? "inline" : "inline";
+      trackEmailSignup(window.location.pathname, trigger);
       setStatus("success");
       setEmail("");
     } catch {

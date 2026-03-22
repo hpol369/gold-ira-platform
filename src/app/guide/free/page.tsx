@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Shield, BookOpen, AlertTriangle, Lock, CheckCircle, Loader2, Download, ArrowRight } from "lucide-react";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { getTrackedAugustaLink } from "@/config/affiliates";
+import { trackGuideDownload, trackEmailSignup } from "@/lib/analytics";
 
 export default function FreeGuidePage() {
   const [firstName, setFirstName] = useState("");
@@ -28,6 +29,8 @@ export default function FreeGuidePage() {
       const data = await response.json();
 
       if (data.success) {
+        trackGuideDownload('gold-ira-protection-guide-2026', 'guide-free');
+        trackEmailSignup('guide-free', 'guide_download');
         setIsSuccess(true);
       } else {
         setError(data.message || "Something went wrong. Please try again.");
