@@ -12,6 +12,7 @@ import { KeyTakeaways } from "@/components/learn/KeyTakeaways";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { NewsletterSignup } from "@/components/email/NewsletterSignup";
 import { ArticleMeta } from "@/components/content/ArticleMeta";
 import { TrustBar } from "@/components/content/TrustBar";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
@@ -521,6 +522,13 @@ export default async function LearnArticlePage({ params }: PageProps) {
                       body={ctaCopy.inContentBody}
                     />
                   )}
+                  {index === 4 && (
+                    <NewsletterSignup
+                      variant="inline"
+                      headline="Stay Updated on Retirement Strategies"
+                      description="Get weekly insights on IRS rule changes, gold market moves, and retirement planning tips. No spam, unsubscribe anytime."
+                    />
+                  )}
                 </Fragment>
               ))}
 
@@ -636,6 +644,13 @@ export default async function LearnArticlePage({ params }: PageProps) {
                   </div>
                 </div>
               )}
+
+              {/* Newsletter Signup - Post FAQ */}
+              <NewsletterSignup
+                variant="inline"
+                headline="Stay Updated on Retirement Strategies"
+                description="Get weekly insights on IRS rule changes, gold market moves, and retirement planning tips. No spam, unsubscribe anytime."
+              />
 
               {/* Related Articles - Float Card Effect */}
               {relatedArticles.length > 0 && (

@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhySection } from "@/components/home/GoldenCircle";
+import { TrustBadgeBar } from "@/components/trust/TrustBadgeBar";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { webSiteSchema, siteNavigationSchema } from "@/lib/schema";
 
@@ -102,6 +103,13 @@ export default function Home() {
 
         {/* 4. FEATURED PARTNER: Augusta — the solution */}
         <FeaturedPartner />
+
+        {/* 4b. TRUST BADGES: Social proof credibility bar */}
+        <section className="py-6 bg-white">
+          <div className="max-w-5xl mx-auto px-4">
+            <TrustBadgeBar variant="light" />
+          </div>
+        </section>
 
         {/* 5. HOW IT WORKS: 3 simple steps — reduce anxiety */}
         <HowSection />

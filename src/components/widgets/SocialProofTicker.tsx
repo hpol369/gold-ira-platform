@@ -5,76 +5,62 @@
 
 "use client";
 
-import { useState, useEffect, useCallback, useTransition } from "react";
+import { useState, useEffect, useCallback, useRef, useTransition } from "react";
 import { X, MapPin } from "lucide-react";
 
-// Common first names for realistic fake data
-const FIRST_NAMES = [
-  "Sarah", "Michael", "Jennifer", "David", "Lisa", "James", "Emily", "Robert",
-  "Michelle", "William", "Jessica", "John", "Amanda", "Daniel", "Ashley",
-  "Christopher", "Stephanie", "Matthew", "Nicole", "Anthony", "Elizabeth",
-  "Mark", "Heather", "Steven", "Megan", "Paul", "Rachel", "Andrew", "Laura",
-  "Kenneth", "Karen", "Joshua", "Susan", "Kevin", "Linda", "Brian", "Patricia",
-  "George", "Barbara", "Timothy", "Nancy", "Ronald", "Betty", "Edward", "Margaret",
-  "Thomas", "Sandra", "Richard", "Dorothy", "Charles", "Carol"
-];
-
-// US states for location diversity
-const US_STATES = [
-  "Texas", "California", "Florida", "New York", "Pennsylvania", "Illinois",
-  "Ohio", "Georgia", "North Carolina", "Michigan", "New Jersey", "Virginia",
-  "Washington", "Arizona", "Massachusetts", "Tennessee", "Indiana", "Missouri",
-  "Maryland", "Wisconsin", "Colorado", "Minnesota", "South Carolina", "Alabama",
-  "Louisiana", "Kentucky", "Oregon", "Oklahoma", "Connecticut", "Utah",
-  "Nevada", "Iowa", "Arkansas", "Mississippi", "Kansas", "New Mexico"
-];
-
-// Actions users can take
-const ACTIONS = [
-  { text: "requested their free kit", icon: "kit" },
-  { text: "started their retirement audit", icon: "audit" },
-  { text: "downloaded the 2026 guide", icon: "guide" },
-  { text: "requested a free info kit", icon: "consultation" },
-  { text: "compared Gold IRA companies", icon: "compare" },
-];
-
-interface Notification {
-  id: number;
+interface CuratedEntry {
   name: string;
+  profession: string;
   state: string;
   action: string;
   timeAgo: string;
 }
 
-// Helper to generate random time ago
-function getRandomTimeAgo(): string {
-  const options = [
-    "just now",
-    "1 minute ago",
-    "2 minutes ago",
-    "3 minutes ago",
-    "5 minutes ago",
-    "8 minutes ago",
-    "12 minutes ago",
-    "15 minutes ago",
-  ];
-  return options[Math.floor(Math.random() * options.length)];
+const CURATED_NOTIFICATIONS: CuratedEntry[] = [
+  { name: "Robert T.", profession: "Retired Electrician", state: "Ohio", action: "requested their free Gold IRA kit", timeAgo: "just now" },
+  { name: "Linda M.", profession: "Retired Nurse", state: "Florida", action: "downloaded the 2026 retirement guide", timeAgo: "2 minutes ago" },
+  { name: "James W.", profession: "Former Truck Driver", state: "Texas", action: "completed their retirement readiness check", timeAgo: "3 minutes ago" },
+  { name: "Patricia K.", profession: "Retired Teacher", state: "Pennsylvania", action: "requested a fee comparison", timeAgo: "5 minutes ago" },
+  { name: "Gary S.", profession: "Retired Firefighter", state: "Michigan", action: "started their Gold IRA application", timeAgo: "just now" },
+  { name: "Carol D.", profession: "Former Postal Worker", state: "North Carolina", action: "requested their free Gold IRA kit", timeAgo: "1 minute ago" },
+  { name: "Dennis R.", profession: "Retired Police Officer", state: "Arizona", action: "downloaded the 2026 retirement guide", timeAgo: "8 minutes ago" },
+  { name: "Sharon H.", profession: "Retired Factory Worker", state: "Indiana", action: "completed their retirement readiness check", timeAgo: "3 minutes ago" },
+  { name: "Kenneth B.", profession: "Former Construction Foreman", state: "Tennessee", action: "requested their free Gold IRA kit", timeAgo: "5 minutes ago" },
+  { name: "Barbara J.", profession: "Retired Government Worker", state: "Virginia", action: "requested a fee comparison", timeAgo: "2 minutes ago" },
+  { name: "Ronald P.", profession: "Retired Machinist", state: "Wisconsin", action: "started their Gold IRA application", timeAgo: "just now" },
+  { name: "Donna L.", profession: "Former School Secretary", state: "Georgia", action: "downloaded the 2026 retirement guide", timeAgo: "12 minutes ago" },
+  { name: "Larry C.", profession: "Retired Plumber", state: "Missouri", action: "requested their free Gold IRA kit", timeAgo: "1 minute ago" },
+  { name: "Nancy F.", profession: "Retired Nurse", state: "South Carolina", action: "completed their retirement readiness check", timeAgo: "8 minutes ago" },
+  { name: "Wayne A.", profession: "Former Auto Mechanic", state: "Alabama", action: "requested a fee comparison", timeAgo: "3 minutes ago" },
+  { name: "Susan E.", profession: "Retired Teacher", state: "Colorado", action: "started their Gold IRA application", timeAgo: "5 minutes ago" },
+  { name: "Thomas G.", profession: "Retired Welder", state: "Kentucky", action: "requested their free Gold IRA kit", timeAgo: "2 minutes ago" },
+  { name: "Margaret N.", profession: "Former Union Rep", state: "Illinois", action: "downloaded the 2026 retirement guide", timeAgo: "just now" },
+  { name: "Richard V.", profession: "Retired Electrician", state: "Nevada", action: "completed their retirement readiness check", timeAgo: "15 minutes ago" },
+  { name: "Deborah W.", profession: "Retired Cafeteria Worker", state: "Oklahoma", action: "requested their free Gold IRA kit", timeAgo: "1 minute ago" },
+  { name: "Harold M.", profession: "Former Truck Driver", state: "Iowa", action: "requested a fee comparison", timeAgo: "5 minutes ago" },
+  { name: "Judy R.", profession: "Retired Dispatcher", state: "Minnesota", action: "started their Gold IRA application", timeAgo: "3 minutes ago" },
+  { name: "Carl T.", profession: "Retired Firefighter", state: "Louisiana", action: "downloaded the 2026 retirement guide", timeAgo: "8 minutes ago" },
+  { name: "Betty S.", profession: "Former Medical Assistant", state: "Arkansas", action: "requested their free Gold IRA kit", timeAgo: "2 minutes ago" },
+  { name: "Frank D.", profession: "Retired Postal Worker", state: "Oregon", action: "completed their retirement readiness check", timeAgo: "just now" },
+];
+
+/** Fisher-Yates shuffle (returns a new array) */
+function shuffleArray<T>(arr: T[]): T[] {
+  const shuffled = [...arr];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 }
 
-// Helper to get random item from array
-function getRandomItem<T>(array: T[]): T {
-  return array[Math.floor(Math.random() * array.length)];
-}
-
-// Generate a random notification
-function generateNotification(id: number): Notification {
-  return {
-    id,
-    name: getRandomItem(FIRST_NAMES),
-    state: getRandomItem(US_STATES),
-    action: getRandomItem(ACTIONS).text,
-    timeAgo: getRandomTimeAgo(),
-  };
+interface Notification {
+  id: number;
+  name: string;
+  profession: string;
+  state: string;
+  action: string;
+  timeAgo: string;
 }
 
 export function SocialProofTicker() {
@@ -85,13 +71,36 @@ export function SocialProofTicker() {
   const [notificationId, setNotificationId] = useState(0);
   const [, startTransition] = useTransition();
 
+  // Shuffled queue and current index, persisted across renders
+  const queueRef = useRef<CuratedEntry[]>(shuffleArray(CURATED_NOTIFICATIONS));
+  const indexRef = useRef(0);
+
+  /** Get next entry from the shuffled queue, re-shuffling when exhausted */
+  const getNextEntry = useCallback((): CuratedEntry => {
+    if (indexRef.current >= queueRef.current.length) {
+      queueRef.current = shuffleArray(CURATED_NOTIFICATIONS);
+      indexRef.current = 0;
+    }
+    const entry = queueRef.current[indexRef.current];
+    indexRef.current += 1;
+    return entry;
+  }, []);
+
   // Show a new notification
   const showNotification = useCallback(() => {
     if (isDismissed) return;
 
     const newId = notificationId + 1;
+    const entry = getNextEntry();
     setNotificationId(newId);
-    setCurrentNotification(generateNotification(newId));
+    setCurrentNotification({
+      id: newId,
+      name: entry.name,
+      profession: entry.profession,
+      state: entry.state,
+      action: entry.action,
+      timeAgo: entry.timeAgo,
+    });
     setIsExiting(false);
     setIsVisible(true);
 
@@ -106,7 +115,7 @@ export function SocialProofTicker() {
         });
       }, 300);
     }, 4000);
-  }, [isDismissed, notificationId]);
+  }, [isDismissed, notificationId, getNextEntry]);
 
   // Schedule next notification (15-30 seconds random)
   const scheduleNextNotification = useCallback(() => {
@@ -174,11 +183,16 @@ export function SocialProofTicker() {
               <p className="text-sm text-slate-700 leading-relaxed">
                 <span className="font-semibold text-[#B22234]">
                   {currentNotification.name}
-                </span>{" "}
-                from{" "}
+                </span>
+                {", "}
+                <span className="text-slate-500">
+                  {currentNotification.profession}
+                </span>
+                {" from "}
                 <span className="font-medium text-slate-900">
                   {currentNotification.state}
-                </span>{" "}
+                </span>
+                {" — "}
                 {currentNotification.action}
               </p>
 

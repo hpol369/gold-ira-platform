@@ -53,24 +53,25 @@ export default function FreeGuidePage() {
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-8 h-8 text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold text-slate-900 mb-3">Your Guide Is Ready</h2>
+          <h2 className="text-2xl font-bold text-slate-900 mb-3">You&apos;re Almost There!</h2>
           <p className="text-slate-600 mb-6">
-            Check your email for the download link. If you want to start reading right now:
+            We&apos;ve saved your spot. Answer 2 quick questions so we can personalize your Gold IRA kit for your situation.
           </p>
           <a
-            href="/guides/gold-ira-protection-guide-2026.pdf"
+            href="/get-started?ref=guide-free"
             className="inline-flex items-center gap-2 bg-[#B22234] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#9a1e2d] transition-colors"
           >
-            <Download className="w-5 h-5" />
-            Download the Guide (PDF)
+            Get My Personalized Kit
+            <ArrowRight className="w-5 h-5" />
           </a>
+          <p className="text-xs text-slate-400 mt-3">Takes 60 seconds. No phone call required.</p>
           <div className="mt-8 pt-6 border-t border-slate-200">
-            <p className="text-sm text-slate-500 mb-3">Want a specialist to walk you through it?</p>
+            <p className="text-sm text-slate-500 mb-3">Or speak directly with a specialist:</p>
             <a
               href={getTrackedAugustaLink("default", "guide-free-success")}
               className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 px-6 py-3 rounded-xl font-bold text-sm transition-colors"
             >
-              Get a Free Consultation from Augusta
+              Free Consultation from Augusta
               <ArrowRight className="w-4 h-4" />
             </a>
             <p className="text-xs text-slate-400 mt-2">Our #1 rated company — A+ BBB, zero complaints</p>
