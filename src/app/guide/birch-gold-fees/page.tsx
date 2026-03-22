@@ -4,6 +4,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
         title: "Birch Gold Fees 2026: Complete Fee Breakdown",
         description: "Complete breakdown of Birch Gold fees. Compare costs with Augusta Precious Metals.",
     },
+    alternates: { canonical: getCanonicalUrl("/guide/birch-gold-fees") },
 };
 
 // FAQ data for schema markup

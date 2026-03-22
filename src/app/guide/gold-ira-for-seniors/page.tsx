@@ -6,6 +6,7 @@ import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { ShieldCheck, Calendar, DollarSign, TrendingUp, AlertTriangle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -15,6 +16,7 @@ import { AnswerFirst } from "@/components/seo/AnswerFirst";
 export const metadata: Metadata = {
     title: "Gold IRA for Seniors: Retirement Protection Guide (2026)",
     description: "Is a Gold IRA right for seniors? Learn about RMD rules, safe withdrawal strategies, and how to protect your nest egg from inflation and market crashes.",
+    alternates: { canonical: getCanonicalUrl("/guide/gold-ira-for-seniors") },
 };
 
 const takeaways = [

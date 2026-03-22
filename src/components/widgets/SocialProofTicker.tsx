@@ -155,11 +155,11 @@ export function SocialProofTicker() {
     <>
       {isVisible && currentNotification && (
         <div
-          className={`fixed bottom-6 left-6 z-40 hidden lg:block ${
+          className={`fixed bottom-20 left-4 z-40 sm:bottom-6 sm:left-6 ${
             isExiting ? 'notification-exit' : 'notification-enter'
           }`}
         >
-          <div className="relative max-w-xs bg-white rounded-lg border border-slate-200 shadow-lg overflow-hidden">
+          <div className="relative max-w-[280px] sm:max-w-xs bg-white rounded-lg border border-slate-200 shadow-lg overflow-hidden">
             {/* Close button */}
             <button
               onClick={handleDismiss}

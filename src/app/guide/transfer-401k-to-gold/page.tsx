@@ -5,6 +5,7 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, ShieldCheck, Clock, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -12,6 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
     title: "How to Transfer 401k to Gold: Simple Guide (2026)",
     description: "Learn how to transfer your 401k to gold in plain English. It's called a rollover and it's 100% tax-free when done right. Simple 3-step process explained.",
+    alternates: { canonical: getCanonicalUrl("/guide/transfer-401k-to-gold") },
 };
 
 const schema = {

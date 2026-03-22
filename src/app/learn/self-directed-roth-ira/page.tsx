@@ -18,6 +18,7 @@ import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { getTrackedAugustaLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Self-Directed Roth IRA Guide 2026: Tax-Free Alternative Investments",
@@ -335,6 +336,29 @@ export default function SelfDirectedRothIRAPage() {
                                 ))}
                             </div>
                         </div>
+                    </div>
+                </Container>
+            </section>
+
+            {/* Augusta CTA */}
+            <section className="py-12 bg-gradient-to-r from-[#000080] to-[#000060]">
+                <Container>
+                    <div className="max-w-3xl mx-auto text-center">
+                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">Our #1 Recommended Company</p>
+                        <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
+                            Want Gold in Your Self-Directed IRA?
+                        </h2>
+                        <p className="text-blue-200 mb-6 max-w-xl mx-auto">
+                            Augusta Precious Metals makes it easy to add physical gold and silver to your retirement account. Free info kit, no pressure.
+                        </p>
+                        <a
+                            href={getTrackedAugustaLink("default", "learn-self-directed-roth-ira")}
+                            className="inline-flex items-center gap-2 bg-[#B22234] hover:bg-[#9a1e2d] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg"
+                        >
+                            Get Your Free Augusta Kit
+                            <ArrowRight className="w-5 h-5" />
+                        </a>
+                        <p className="text-white/40 text-xs mt-3">A+ BBB Rated &bull; Zero Complaints &bull; No Obligation</p>
                     </div>
                 </Container>
             </section>

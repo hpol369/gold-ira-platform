@@ -8,6 +8,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/401k-to-gold-without-penalty") },
 };
 
 const schema = {

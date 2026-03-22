@@ -18,6 +18,7 @@ import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
+import { getTrackedAugustaLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Checkbook IRA Guide 2026: What is Checkbook Control?",
@@ -366,6 +367,29 @@ export default function CheckbookIRAPage() {
                                 ))}
                             </div>
                         </div>
+                    </div>
+                </Container>
+            </section>
+
+            {/* Augusta CTA */}
+            <section className="py-12 bg-gradient-to-r from-[#000080] to-[#000060]">
+                <Container>
+                    <div className="max-w-3xl mx-auto text-center">
+                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">Prefer a Simpler Approach?</p>
+                        <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
+                            Just Want Gold in Your IRA? No LLC Needed.
+                        </h2>
+                        <p className="text-blue-200 mb-6 max-w-xl mx-auto">
+                            If a Checkbook IRA feels like too much complexity, Augusta Precious Metals handles everything for you. Simple rollover, zero hassle.
+                        </p>
+                        <a
+                            href={getTrackedAugustaLink("default", "learn-checkbook-ira")}
+                            className="inline-flex items-center gap-2 bg-[#B22234] hover:bg-[#9a1e2d] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg"
+                        >
+                            Get Your Free Augusta Kit
+                            <ArrowRight className="w-5 h-5" />
+                        </a>
+                        <p className="text-white/40 text-xs mt-3">A+ BBB Rated &bull; Zero Complaints &bull; No Obligation</p>
                     </div>
                 </Container>
             </section>

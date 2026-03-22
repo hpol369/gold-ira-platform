@@ -8,6 +8,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, AlertTriangle, Building2, RefreshCw, Briefcase, Shield } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -15,6 +16,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
     title: "457(b) to Gold IRA Rollover Guide: For Government Employees (2026)",
     description: "457(b) to Gold IRA rollover guide for government employees. Transfer your deferred compensation plan tax-free with no early withdrawal penalty.",
+    alternates: { canonical: getCanonicalUrl("/guide/457b-to-gold-ira-rollover") },
 };
 
 const tocItems = [

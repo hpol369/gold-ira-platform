@@ -4,6 +4,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
         description: "Complete breakdown of Noble Gold fees. Compare setup costs, annual fees, storage charges, and spreads.",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/noble-gold-fees") },
 };
 
 const breadcrumbs = breadcrumbSchema([

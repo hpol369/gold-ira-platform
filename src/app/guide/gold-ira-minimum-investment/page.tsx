@@ -6,6 +6,7 @@ import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { DollarSign, Wallet, TrendingUp, AlertTriangle, ArrowRight, Layers } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -16,6 +17,7 @@ import { ArticleMeta } from "@/components/content/ArticleMeta";
 export const metadata: Metadata = {
     title: "Gold IRA Minimum Investment: How Much Do You Need? (2026)",
     description: "What is the minimum amount to start a Gold IRA? We break down the entry requirements for top companies, starting from $10,000 to $50,000+.",
+    alternates: { canonical: getCanonicalUrl("/guide/gold-ira-minimum-investment") },
 };
 
 const takeaways = [

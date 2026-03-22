@@ -8,19 +8,17 @@ import { ArrowRight, ShieldCheck, TrendingDown, Coins, BarChart3, AlertTriangle,
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
-import { Metadata } from "next";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-    title: "How to Protect Your 401(k) From a Stock Market Crash",
-    description: "Learn proven strategies to protect your 401(k) from stock market crashes. Diversification, rebalancing, gold allocation, and crisis-proofing techniques.",
-    openGraph: {
-        title: "Protect Your 401(k) From Market Crash - 2026 Guide",
-        description: "Proven strategies to protect your 401(k) from stock market crashes and economic downturns.",
-        type: "article",
-        images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
-    },
-};
+export const metadata = createPageMetadata({
+    title: "Can I Lose My 401k if the Market Crashes? Protection Guide 2026",
+    description: "Yes, your 401(k) can lose value in a market crash — the average 401(k) lost 31% in 2008. Here are 9 proven strategies to protect your retirement savings from the next downturn.",
+    url: "https://www.richdadretirement.com/guide/protect-401k-from-crash",
+    type: "article",
+});
 
 const tocItems = [
     { id: "overview", label: "Why Protection Matters" },
@@ -92,6 +90,30 @@ const schema = {
                         "@type": "Answer",
                         "text": "Most 401(k) plans don't offer direct gold investment options. However, you can: 1) Roll over an old 401(k) to a Gold IRA (tax-free), 2) Invest in gold ETFs or mining stocks if your 401(k) offers them, or 3) Wait until you change jobs or retire to do a rollover. A Gold IRA allows you to hold physical gold in a tax-advantaged account."
                     }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can you lose everything in a 401k?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It's extremely unlikely to lose everything in a 401(k) because most plans are diversified across many investments. However, you can lose 30-50% or more during severe crashes. In 2008, the average 401(k) lost 31%. For workers near retirement, this kind of loss can permanently impact their retirement timeline."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to protect retirement savings from economic collapse?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "To protect retirement savings from economic collapse: 1) Diversify across asset classes (stocks, bonds, gold, real estate), 2) Allocate 10-20% to precious metals through a Gold IRA, 3) Maintain 1-2 years of expenses in cash, 4) Reduce stock exposure as you near retirement, 5) Consider rolling over old 401(k)s to a self-directed IRA with more investment options."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Should I move my 401k to bonds before a crash?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Moving your entire 401(k) to bonds is risky because you can't predict crashes reliably, and bonds alone may not keep up with inflation. A better approach is gradual diversification: shift to a mix of bonds (30-40%), stable value funds (10-20%), and gold (10-15%) as you near retirement."
+                    }
                 }
             ]
         }
@@ -113,14 +135,21 @@ export default function Protect401kFromCrashPage() {
             <header className="bg-slate-100 py-16 border-b border-slate-200">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4 block">
-                            Comprehensive Guide
-                        </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
-                            How to Protect Your 401(k) From a Stock Market Crash
+                        <div className="flex items-center gap-3 mb-4">
+                            <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs">
+                                Comprehensive Guide
+                            </span>
+                            <span className="text-slate-400">|</span>
+                            <span className="text-slate-500 text-xs">Updated March 2026</span>
+                        </div>
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-4">
+                            Can I Lose My 401(k) if the Market Crashes?
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
-                            Proven strategies to shield your retirement savings from market downturns.
+                        <h2 className="text-xl md:text-2xl font-serif text-slate-600 mb-6">
+                            9 Proven Strategies to Protect Your Retirement Savings
+                        </h2>
+                        <p className="text-lg text-slate-600 leading-relaxed">
+                            Yes, your 401(k) can lose significant value in a crash — the average account lost 31% in 2008. Here&apos;s how to protect what you&apos;ve built.
                         </p>
                     </div>
                 </Container>
@@ -455,11 +484,62 @@ export default function Protect401kFromCrashPage() {
                             </div>
                         </div>
 
+                        {/* Additional FAQs matching PAA queries */}
+                        <div className="space-y-4 not-prose mt-8">
+                            <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                    <h4 className="text-lg font-bold">Can you lose everything in a 401(k)?</h4>
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                                    </span>
+                                </summary>
+                                <p className="mt-4 leading-relaxed text-slate-600">
+                                    It&apos;s extremely unlikely to lose everything because most plans are diversified. However, you can lose 30-50% in severe crashes. The average 401(k) lost 31% in 2008. For workers near retirement, this can permanently impact your timeline.
+                                </p>
+                            </details>
+
+                            <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                    <h4 className="text-lg font-bold">How do I protect my retirement savings from economic collapse?</h4>
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                                    </span>
+                                </summary>
+                                <p className="mt-4 leading-relaxed text-slate-600">
+                                    Diversify across asset classes (stocks, bonds, gold, real estate), allocate 10-20% to precious metals through a <Link href="/what-is-a-gold-ira" className="text-[#B22234] hover:underline">Gold IRA</Link>, maintain 1-2 years of expenses in cash, and reduce stock exposure as you near retirement.
+                                </p>
+                            </details>
+
+                            <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                    <h4 className="text-lg font-bold">Should I move my 401(k) to bonds before a crash?</h4>
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                                    </span>
+                                </summary>
+                                <p className="mt-4 leading-relaxed text-slate-600">
+                                    Moving entirely to bonds is risky — you can&apos;t predict crashes, and bonds alone may not beat inflation. A better approach: shift to a mix of bonds (30-40%), stable value funds (10-20%), and gold (10-15%) as you approach retirement.
+                                </p>
+                            </details>
+                        </div>
+
+                        <SourcesSection
+                            sources={[
+                                { name: "Federal Reserve — Effects of the Financial Crisis on 401(k) Account Balances", url: "https://www.federalreserve.gov/", accessDate: "March 2026" },
+                                { name: "Investment Company Institute — 401(k) Plan Asset Allocation", url: "https://www.ici.org/", accessDate: "March 2026" },
+                                { name: "World Gold Council — Gold During Market Downturns", url: "https://www.gold.org/", accessDate: "March 2026" },
+                                { name: "Bureau of Labor Statistics — Inflation Data", url: "https://www.bls.gov/cpi/", accessDate: "March 2026" },
+                            ]}
+                            lastVerified="March 2026"
+                        />
+
                         <AuthorBox />
 
                     </article>
                 </div>
             </Container>
+
+            <AutoRelatedContent currentUrl="/guide/protect-401k-from-crash" />
 
             {/* CTA Section */}
             <section className="py-16 bg-slate-100">

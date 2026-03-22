@@ -4,8 +4,9 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { EvidenceCard } from "@/components/investigation/EvidenceCard";
 import { GoldChart } from "@/components/investigation/GoldChart";
-import { ShieldAlert, Search, FileSearch, Lock } from "lucide-react";
+import { ShieldAlert, Search, FileSearch, Lock, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { getTrackedAugustaLink } from "@/config/affiliates";
 
 export const metadata = {
     title: "Gold IRA Industry: Red Flags & What to Watch For",
@@ -176,6 +177,32 @@ export default function InvestigativeHubPage() {
                     </aside>
                 </div>
             </Container>
+            {/* Augusta CTA */}
+            <section className="py-16 bg-gradient-to-r from-[#000080] to-[#000060]">
+                <Container>
+                    <div className="max-w-3xl mx-auto text-center">
+                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">The Company That Passed Every Check</p>
+                        <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
+                            Augusta Precious Metals: Our #1 Pick
+                        </h2>
+                        <div className="flex flex-wrap justify-center gap-4 text-sm text-blue-200 mb-6">
+                            <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-green-400" /> A+ BBB Rating</span>
+                            <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-green-400" /> Zero Complaints</span>
+                            <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-green-400" /> Transparent Fees</span>
+                            <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-green-400" /> Education First</span>
+                        </div>
+                        <a
+                            href={getTrackedAugustaLink("default", "investigative-hub")}
+                            className="inline-flex items-center gap-2 bg-[#B22234] hover:bg-[#9a1e2d] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg"
+                        >
+                            Get Your Free Info Kit
+                            <ArrowRight className="w-5 h-5" />
+                        </a>
+                        <p className="text-white/40 text-xs mt-3">No pressure. No obligation. Just the facts.</p>
+                    </div>
+                </Container>
+            </section>
+
             <Footer />
         </main>
     );

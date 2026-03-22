@@ -7,6 +7,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, AlertTriangle, DollarSign, Calculator, Percent, Building2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
@@ -15,6 +16,7 @@ import { ArticleMeta } from "@/components/content/ArticleMeta";
 export const metadata: Metadata = {
     title: "Gold IRA Fees Guide 2026: Complete Fee Breakdown & Comparison",
     description: "Complete guide to gold IRA fees in 2026. Understand setup fees, storage fees, custodian fees, and dealer markups. Compare fees across top companies.",
+    alternates: { canonical: getCanonicalUrl("/guide/gold-ira-fees") },
 };
 
 const tocItems = [

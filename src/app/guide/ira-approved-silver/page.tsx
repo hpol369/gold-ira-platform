@@ -5,6 +5,7 @@ import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { Coins, CheckCircle2, XCircle, ArrowRight, Shield, Scale, DollarSign, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/ira-approved-silver") },
 };
 
 const tocItems = [

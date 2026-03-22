@@ -32,7 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/solo-401k",
     "/reviews",
     "/compare",
-    "/rollover",
+    "/gold-ira-rollover",
+    "/is-gold-a-good-investment",
     "/why-gold",
     "/what-is-a-gold-ira",
     "/gold-ira-rules",
@@ -57,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/is-enough-to-retire",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-22'),
     changeFrequency: "weekly" as const,
     priority: route === "" ? 1 : 0.9,
   }));
@@ -74,7 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/disclaimer",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-01-15'),
     changeFrequency: "monthly" as const,
     priority: 0.3,
   }));
@@ -86,7 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/author/thomas-richardson",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));
@@ -139,7 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/gold-ira-calculator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-02-01'),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -172,7 +173,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/401k-to-gold-without-penalty",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -220,7 +221,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/why-is-gold-valuable",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-20'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -231,7 +232,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const learnArticleSlugs = getAllLearnArticleSlugs();
   const learnArticlePages = learnArticleSlugs.map((slug) => ({
     url: `${baseUrl}/learn/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-20'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -246,7 +247,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/why-gold/gold-vs-stocks",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -258,7 +259,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/rich-dad-strategy/robert-kiyosaki-gold",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -288,7 +289,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/compare/gold-ira-vs-annuity",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -342,7 +343,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews/preferred-trust",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -353,7 +354,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const companySlugs = getCompanySlugs();
   const reviewDynamicPages = companySlugs.map((slug) => ({
     url: `${baseUrl}/reviews/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -381,7 +382,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/compare/gold-etf-vs-physical-gold",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
@@ -400,7 +401,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   const companyComparePages = companyComparisonSlugs.map((slug) => ({
     url: `${baseUrl}/compare/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
@@ -411,7 +412,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const assetSlugs = getAllAssetSlugs();
   const assetComparePages = assetSlugs.map((slug) => ({
     url: `${baseUrl}/compare/gold-vs/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
@@ -422,7 +423,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const accountTypeSlugs = getAccountTypeSlugs();
   const rolloverAccountPages = accountTypeSlugs.map((slug) => ({
     url: `${baseUrl}/rollover/${slug}-to-gold-ira`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -433,7 +434,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const providerSlugs = getProviderSlugs();
   const rolloverProviderPages = providerSlugs.map((slug) => ({
     url: `${baseUrl}/rollover/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -443,7 +444,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ============================================
   const audiencePages = audienceSlugs.map((slug) => ({
     url: `${baseUrl}/best-gold-ira-for/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -454,7 +455,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const scenarioSlugs = getAllScenarioSlugs();
   const scenarioPages = scenarioSlugs.map((slug) => ({
     url: `${baseUrl}/scenarios/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-02-01'),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
@@ -464,7 +465,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ============================================
   const statePages = US_STATES.map((state) => ({
     url: `${baseUrl}/local/${state.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-01-15'),
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));
@@ -475,7 +476,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const citySlugs = getAllCitySlugs();
   const cityPages = citySlugs.map(({ state, city }) => ({
     url: `${baseUrl}/local/${state}/${city}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-01-15'),
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));
@@ -486,7 +487,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const newsSlugs = getAllNewsSlugs();
   const newsPages = newsSlugs.map((slug) => ({
     url: `${baseUrl}/news/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-22'),
     changeFrequency: "daily" as const,
     priority: 0.7,
   }));
@@ -499,14 +500,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Hub page
     {
       url: `${baseUrl}/widow-guide`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     // Article pages
     ...widowGuideSlugs.map((slug) => ({
       url: `${baseUrl}/widow-guide/${slug}`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
@@ -520,14 +521,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Hub page
     {
       url: `${baseUrl}/medicaid-planning`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     // Article pages
     ...medicaidSlugs.map((slug) => ({
       url: `${baseUrl}/medicaid-planning/${slug}`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
@@ -541,14 +542,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Hub page
     {
       url: `${baseUrl}/grandchildren`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     // Article pages
     ...grandchildrenSlugs.map((slug) => ({
       url: `${baseUrl}/grandchildren/${slug}`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
@@ -562,14 +563,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Hub page
     {
       url: `${baseUrl}/senior-protection`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     // Article pages
     ...seniorProtectionSlugs.map((slug) => ({
       url: `${baseUrl}/senior-protection/${slug}`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
@@ -594,7 +595,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-squeeze/silver-to-gold-ratio-calculator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
@@ -615,7 +616,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-ira/vs-gold-ira",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
@@ -634,7 +635,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-price/will-silver-hit-100",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
@@ -654,7 +655,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-products/pslv-vs-slv",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -672,7 +673,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-experts/ted-butler",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -683,7 +684,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const silverCoinValuesHubPages = [
     {
       url: `${baseUrl}/silver-coin-values`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
@@ -699,7 +700,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-coin-values/melt-value-calculator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -710,7 +711,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const silverDealerReviewsHubPages = [
     {
       url: `${baseUrl}/silver-dealer-reviews`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
@@ -725,7 +726,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-dealer-reviews/comparison",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -736,7 +737,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const buySellSilverHubPages = [
     {
       url: `${baseUrl}/buy-sell-silver`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
@@ -753,7 +754,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/buy-sell-silver/stacking-beginners",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -764,7 +765,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const silverRetirementHubPages = [
     {
       url: `${baseUrl}/silver-retirement`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
@@ -780,7 +781,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-retirement/rmd-rules",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -798,7 +799,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-products/generic-rounds",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -813,7 +814,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/gold-stocks/gold-mining-stocks-vs-physical-gold",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: route === "/gold-stocks" ? 0.8 : 0.7,
   }));
@@ -826,7 +827,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-stocks/best-silver-stocks",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: route === "/silver-stocks" ? 0.7 : 0.6,
   }));
@@ -838,13 +839,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const federalRetirementPages = [
     {
       url: `${baseUrl}/federal-retirement`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     ...federalRetirementSlugs.map((slug) => ({
       url: `${baseUrl}/federal-retirement/${slug}`,
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-15'),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

@@ -7,6 +7,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, Building2, Lock, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
@@ -15,6 +16,7 @@ import { ArticleMeta } from "@/components/content/ArticleMeta";
 export const metadata: Metadata = {
     title: "401k to Gold IRA Rollover Guide 2026: Tax-Free Transfer Steps",
     description: "Complete 401k to gold IRA rollover guide for 2026. Learn how to transfer your retirement funds to physical gold tax-free. Step-by-step instructions and rules.",
+    alternates: { canonical: getCanonicalUrl("/guide/401k-to-gold-rollover") },
 };
 
 const tocItems = [

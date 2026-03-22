@@ -5,6 +5,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, HelpCircle, Coins, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -12,6 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
     title: "Can I Buy Gold With My 401k? Yes, Here's How (2026)",
     description: "Yes, you can buy gold with your 401k through a Gold IRA rollover. Learn the simple process to convert your retirement savings to physical gold.",
+    alternates: { canonical: getCanonicalUrl("/guide/can-i-buy-gold-with-401k") },
 };
 
 const faqs = [

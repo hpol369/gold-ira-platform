@@ -5,6 +5,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, Shield, Clock, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -12,6 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
     title: "How to Move 401k to Gold: Easy Guide (2026)",
     description: "Learn how to move your 401k to gold with a simple, tax-free direct rollover. Step-by-step guide explains the process in plain language.",
+    alternates: { canonical: getCanonicalUrl("/guide/move-401k-to-gold") },
 };
 
 const faqs = [
