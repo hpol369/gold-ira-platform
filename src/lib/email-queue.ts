@@ -6,6 +6,7 @@ import { supabase } from "./supabase";
 import { sendEmail, isResendConfigured } from "./resend";
 import { SEQUENCES, getNextSendTime } from "./email-sequences";
 import { sendTelegramNotification } from "./notifications";
+import { sendCallReminderSMS, isTwilioConfigured } from "./sms";
 
 interface QueueEntry {
   id: string;
@@ -195,6 +196,28 @@ async function processQueueEntry(
       .eq("step", step);
 
     console.log(`[EMAIL_QUEUE] Sent ${sequenceId} step ${step} to ${email}`);
+
+    // After sending high-intent step 2 ("morning of" reminder), also send SMS
+    if (sequenceId === "high-intent" && step === 2 && isTwilioConfigured()) {
+      try {
+        const { data: lead } = await supabase
+          .from("leads")
+          .select("phone, first_name, status")
+          .eq("email", email)
+          .maybeSingle();
+
+        if (
+          lead?.phone &&
+          !["contacted", "qualified", "converted"].includes(lead.status ?? "")
+        ) {
+          const smsSent = await sendCallReminderSMS(lead.phone, lead.first_name || firstName);
+          console.log(`[EMAIL_QUEUE] Call-reminder SMS ${smsSent ? "sent" : "skipped"} for ${email}`);
+        }
+      } catch (smsErr) {
+        console.error("[EMAIL_QUEUE] SMS reminder failed (non-blocking):", smsErr);
+      }
+    }
+
     return true;
   }
 
