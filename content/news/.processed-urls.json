@@ -1,169 +1,5 @@
 [
   {
-    "url": "https://www.investing.com/news/cryptocurrency-news/eos-climbs-10-in-rally-4561552",
-    "timestamp": 1773575873632
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-interest-rates-today-sunday-march-15-2026-100000241.html",
-    "timestamp": 1773575873632
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-interest-rates-today-sunday-march-15-2026-100000083.html",
-    "timestamp": 1773575873632
-  },
-  {
-    "url": "https://www.marketwatch.com/story/its-all-about-oil-as-fedex-kicks-off-earnings-this-week-f11d6b48?mod=mw_rss_topstories",
-    "timestamp": 1773583581610
-  },
-  {
-    "url": "https://www.marketwatch.com/story/nvidias-big-gtc-event-is-on-deck-and-the-company-faces-a-very-high-bar-this-year-8927e906?mod=mw_rss_topstories",
-    "timestamp": 1773583581610
-  },
-  {
-    "url": "https://finance.yahoo.com/news/florida-trucking-company-raised-158-142133037.html",
-    "timestamp": 1773586063737
-  },
-  {
-    "url": "https://finance.yahoo.com/news/soon-ex-husband-maxed-credit-140000549.html",
-    "timestamp": 1773586063737
-  },
-  {
-    "url": "https://finance.yahoo.com/news/looming-fed-meeting-shifts-bets-150700230.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/internet-infrastructure-stock-plunged-72-150126130.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/apples-stock-split-history-everything-150100867.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/exclusive-congress-stock-trading-could-150041850.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/vr-adviser-adds-over-1-145905191.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/sotera-health-shares-rise-18-145059027.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/constellation-energy-only-nuclear-utility-144255103.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/meta-virtually-no-ai-users-144058392.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/better-investment-buy-now-1-144000084.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/unilever-vs-mccormick-two-consumer-143956804.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/software-stocks-teased-a-comeback--but-investors-still-want-proof-143632393.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/best-warren-buffett-stocks-buy-143300610.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/elon-musks-x-money-debit-143110785.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/dave-ramsey-says-wasting-5k-143103599.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/hollywood-integrating-artificial-intelligence-143000515.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/the-straw-that-stirs-the-drink-wall-street-weighs-impact-of-surging-oil-prices-133021522.html",
-    "timestamp": 1773587894041
-  },
-  {
-    "url": "https://finance.yahoo.com/news/rivian-stock-gets-shocking-upgrade-153300584.html",
-    "timestamp": 1773589744828
-  },
-  {
-    "url": "https://finance.yahoo.com/news/a-dividend-for-your-crypto-wall-streets-newest-way-to-sweeten-the-deal-for-etf-holders-153053526.html",
-    "timestamp": 1773589744828
-  },
-  {
-    "url": "https://finance.yahoo.com/news/top-2-mega-cap-stocks-152500074.html",
-    "timestamp": 1773589744828
-  },
-  {
-    "url": "https://finance.yahoo.com/news/government-drops-sweeping-ai-chip-152400673.html",
-    "timestamp": 1773589744828
-  },
-  {
-    "url": "https://finance.yahoo.com/news/netflix-stock-going-200-150500452.html",
-    "timestamp": 1773589744828
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nvidia-gpu-availability-near-zero-160541678.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/does-stock-most-impregnable-defenses-160538265.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/vong-spym-stock-etf-better-160500827.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/brookfield-renewable-vs-clean-harbors-160410214.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/nice-stock-fell-over-20-160408080.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/financial-experts-often-blame-coffee-160014364.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://www.marketwatch.com/story/individual-investors-are-chasing-oils-iran-conflict-surge-institutions-are-thinking-what-comes-next-1b3dda7b?mod=mw_rss_topstories",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/1-dividend-etf-buy-hand-155500424.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/investor-betting-16-million-software-155256723.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/better-buy-now-1-500-154500789.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/waystar-stock-down-32-past-154339425.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/why-surging-oil-prices-should-matter-even-if-you-own-apple-nvidia-and-microsoft-123027737.html",
-    "timestamp": 1773591527205
-  },
-  {
-    "url": "https://finance.yahoo.com/news/a-critical-fed-meeting-100-oil-and-micron-earnings-what-to-watch-this-week-113002550.html",
-    "timestamp": 1773591527205
-  },
-  {
     "url": "https://finance.yahoo.com/news/2-brilliant-growth-stocks-buy-163500114.html",
     "timestamp": 1773593617268
   },
@@ -6226,5 +6062,89 @@
   {
     "url": "https://www.marketwatch.com/story/i-find-that-advice-questionable-is-it-time-to-rethink-the-myth-of-tapping-your-roth-last-before-your-401-k-and-ira-2975ac61?mod=mw_rss_topstories",
     "timestamp": 1774178163992
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/currencies/articles/employee-says-hes-asked-push-160108455.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/economy/policy/articles/arizona-man-sold-two-homes-160000168.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/economy/articles/reverse-recruiting-employment-standstill-job-160000090.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://www.marketwatch.com/story/stocks-are-teetering-on-the-edge-of-correction-territory-why-the-taco-trade-could-flop-e1010039?mod=mw_rss_topstories",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/micron-buy-revenue-explodes-higher-155600104.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/vig-vs-nobl-dividend-etf-155402963.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/rivian-uber-stocks-struggle-robotaxi-154958069.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/investor-doubles-down-8-million-154628837.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/netflixs-ad-revenue-surges-1-154000812.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/crypto/articles/michael-saylor-changed-tactics-buy-153116394.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-stock-gets-headlines-ai-153000848.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/economy/articles/americans-crash-course-global-economy-123000926.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/retirees-steel-yourselves-global-crises-121000010.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/news/the-energy-tax-analysts-weigh-impact-of-surging-gasoline-prices-on-inflation-consumers-143027350.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/1-stock-buy-now-bet-130002142.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/articles/fianc-makes-6-figures-hiding-130000830.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-sunday-march-22-2026-100056389.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-sunday-march-22-2026-100032306.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/article/best-high-yield-savings-interest-rates-today-sunday-march-22-2026-100031246.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-home-equity-loan-interest-rates-today-sunday-march-22-2026-100000460.html",
+    "timestamp": 1774196539770
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-interest-rates-today-sunday-march-22-2026-100000411.html",
+    "timestamp": 1774196539770
   }
 ]
