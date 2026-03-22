@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Shield, BookOpen, AlertTriangle, Lock, CheckCircle, Loader2, Download } from "lucide-react";
+import { Shield, BookOpen, AlertTriangle, Lock, CheckCircle, Loader2, Download, ArrowRight } from "lucide-react";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { getTrackedAugustaLink } from "@/config/affiliates";
 
 export default function FreeGuidePage() {
   const [firstName, setFirstName] = useState("");
@@ -60,6 +61,17 @@ export default function FreeGuidePage() {
             <Download className="w-5 h-5" />
             Download the Guide (PDF)
           </a>
+          <div className="mt-8 pt-6 border-t border-slate-200">
+            <p className="text-sm text-slate-500 mb-3">Want a specialist to walk you through it?</p>
+            <a
+              href={getTrackedAugustaLink("default", "guide-free-success")}
+              className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 px-6 py-3 rounded-xl font-bold text-sm transition-colors"
+            >
+              Get a Free Consultation from Augusta
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <p className="text-xs text-slate-400 mt-2">Our #1 rated company — A+ BBB, zero complaints</p>
+          </div>
           <p className="text-sm text-slate-500 mt-6">
             We also sent a copy to your inbox for easy access later.
           </p>

@@ -368,6 +368,28 @@ export const LINK_HUBS: Record<string, HubConfig> = {
       { url: "/learn/what-to-do-with-300k-inheritance", title: "What to Do with $300K Inheritance" },
     ],
   },
+  "gold-ira-rollover": {
+    hub: { url: "/gold-ira-rollover", title: "Gold IRA Rollover Guide" },
+    spokes: [
+      { url: "/guide/401k-to-gold-rollover", title: "401(k) to Gold IRA Rollover" },
+      { url: "/guide/tsp-to-gold-ira-rollover", title: "TSP to Gold IRA Rollover" },
+      { url: "/guide/403b-to-gold-ira-rollover", title: "403(b) to Gold IRA Rollover" },
+      { url: "/guide/457b-to-gold-ira-rollover", title: "457(b) to Gold IRA Rollover" },
+      { url: "/guide/transfer-401k-to-gold", title: "Transfer 401(k) to Gold" },
+      { url: "/guide/401k-to-gold-without-penalty", title: "Rollover Without Penalty" },
+    ],
+  },
+  "gold-investment": {
+    hub: { url: "/is-gold-a-good-investment", title: "Is Gold a Good Investment?" },
+    spokes: [
+      { url: "/gold-ira-pros-and-cons", title: "Gold IRA Pros and Cons" },
+      { url: "/is-a-gold-ira-a-good-idea", title: "Is a Gold IRA a Good Idea?" },
+      { url: "/how-does-a-gold-ira-work", title: "How Does a Gold IRA Work?" },
+      { url: "/why-gold", title: "Why Gold for Retirement" },
+      { url: "/learn/why-is-gold-valuable", title: "Why Is Gold Valuable?" },
+      { url: "/gold-ira-statistics", title: "Gold IRA Statistics 2026" },
+    ],
+  },
 };
 
 /**

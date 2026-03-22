@@ -39,6 +39,18 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // SEO: Redirect old learn slug to new standalone authority page
+      {
+        source: '/learn/is-gold-good-investment-2026',
+        destination: '/is-gold-a-good-investment',
+        permanent: true,
+      },
+      // SEO: Consolidate rollover hub
+      {
+        source: '/rollover',
+        destination: '/gold-ira-rollover',
+        permanent: true,
+      },
       {
         source: '/guide/silver-ira-rules',
         destination: '/silver-ira/rules',

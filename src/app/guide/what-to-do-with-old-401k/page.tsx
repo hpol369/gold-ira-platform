@@ -11,6 +11,7 @@ import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 
 export const metadata: Metadata = {
     title: "What to Do with an Old 401(k): 5 Options for 2026",
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/what-to-do-with-old-401k") },
 };
 
 const tocItems = [

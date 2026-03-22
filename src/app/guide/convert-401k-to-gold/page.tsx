@@ -5,6 +5,7 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, ShieldCheck, Coins, TrendingUp, Lock, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -12,6 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
     title: "How to Convert 401k to Gold: Step-by-Step (2026)",
     description: "Converting your 401k to gold is possible and tax-free. The IRS calls it a rollover. Learn the simple steps to convert your retirement savings to physical gold.",
+    alternates: { canonical: getCanonicalUrl("/guide/convert-401k-to-gold") },
 };
 
 const schema = {

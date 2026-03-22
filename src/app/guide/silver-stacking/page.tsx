@@ -4,6 +4,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import Link from "next/link";
 import { Coins, Target, Scale, ShieldCheck, TrendingUp, ArrowRight, CheckCircle2, AlertTriangle, Layers, Calculator, Sparkles } from "lucide-react";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/silver-stacking") },
 };
 
 const tocItems = [

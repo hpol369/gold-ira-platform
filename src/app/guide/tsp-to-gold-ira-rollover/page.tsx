@@ -7,15 +7,18 @@ import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, Building2, Lock, RefreshCw } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-    title: "TSP to Gold IRA Rollover Guide: Federal & Military Rules (2026)",
-    description: "Complete TSP to Gold IRA rollover guide for Federal Employees and Military. Learn Form TSP-70, in-service withdrawals, and tax-free transfers.",
-};
+export const metadata = createPageMetadata({
+    title: "TSP to Gold IRA Rollover: Federal & Military Guide (2026)",
+    description: "How to roll over your Thrift Savings Plan (TSP) to a Gold IRA. Step-by-step process, Form TSP-70, in-service withdrawal rules, and tax-free transfer options for federal employees and military.",
+    url: "https://www.richdadretirement.com/guide/tsp-to-gold-ira-rollover",
+    type: "article",
+});
 
 const tocItems = [
     { id: "what-is-tsp-rollover", label: "What is a TSP Rollover?" },
@@ -37,8 +40,9 @@ const schema = {
             "description": "Complete guide for Federal Employees and Military personnel on rolling over TSP funds to a Gold IRA. Learn about Form TSP-70, in-service withdrawals, and tax-free transfers.",
             "image": "https://richdadretirement.com/images/tsp-rollover-guide-cover.jpg",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement"
+                "@type": "Person",
+                "name": "Thomas Richardson",
+                "url": "https://www.richdadretirement.com/author/thomas-richardson"
             },
             "publisher": {
                 "@type": "Organization",
@@ -49,7 +53,7 @@ const schema = {
                 }
             },
             "datePublished": "2026-01-17",
-            "dateModified": "2026-01-17"
+            "dateModified": "2026-03-22"
         },
         {
             "@type": "FAQPage",
@@ -98,9 +102,12 @@ export default function TspRolloverPage() {
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-[#B22234] mb-6 border border-[#B22234]/20">
-                            <span className="w-2 h-2 rounded-full bg-[#B22234]"></span>
-                            For Federal & Military Personnel
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-[#B22234] border border-[#B22234]/20">
+                                <span className="w-2 h-2 rounded-full bg-[#B22234]"></span>
+                                For Federal &amp; Military Personnel
+                            </div>
+                            <span className="text-slate-400 text-sm">Updated March 2026</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#000080]">
                             TSP to Gold IRA Rollover Guide
@@ -378,6 +385,15 @@ export default function TspRolloverPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <SourcesSection
+                            sources={[
+                                { name: "TSP.gov — Withdrawals and Rollovers", url: "https://www.tsp.gov/", accessDate: "March 2026" },
+                                { name: "OPM.gov — Federal Employees Retirement System", url: "https://www.opm.gov/retirement-center/", accessDate: "March 2026" },
+                                { name: "IRS.gov — Rollover Rules for Retirement Plans", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions", accessDate: "March 2026" },
+                            ]}
+                            lastVerified="March 2026"
+                        />
 
                         <AuthorBox />
 

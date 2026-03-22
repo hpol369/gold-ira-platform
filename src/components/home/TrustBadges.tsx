@@ -3,35 +3,57 @@
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 
-export function TrustBadges() {
-    const logos = [
-        { name: "Forbes", width: 100 },
-        { name: "CNBC", width: 80 },
-        { name: "Bloomberg", width: 110 },
-        { name: "Fox Business", width: 90 },
-        { name: "Morningstar", width: 120 },
-    ];
+// Each publication styled to mimic its real logo typography
+const publications = [
+  {
+    name: "Forbes",
+    className: "font-serif font-black italic tracking-tight text-[28px] md:text-[32px]",
+  },
+  {
+    name: "CNBC",
+    className: "font-sans font-extrabold tracking-wider text-[24px] md:text-[28px] uppercase",
+  },
+  {
+    name: "Bloomberg",
+    className: "font-sans font-light tracking-wide text-[24px] md:text-[28px]",
+  },
+  {
+    name: "Fox Business",
+    className: "font-sans font-extrabold tracking-tight text-[22px] md:text-[26px] uppercase",
+  },
+  {
+    name: "Morningstar",
+    className: "font-sans font-semibold tracking-normal text-[22px] md:text-[26px]",
+  },
+];
 
-    return (
-        <section className="relative py-20 border-b border-slate-200 bg-white overflow-hidden">
-            <Container className="relative z-10">
-                <FadeIn>
-                    <p className="text-center text-sm font-bold text-slate-500 uppercase tracking-widest mb-10">
-                        Insights Featured In
-                    </p>
-                </FadeIn>
-                <div className="flex flex-wrap justify-center items-center gap-8">
-                    {logos.map((logo, i) => (
-                        <FadeIn key={i} delay={i * 0.1}>
-                            <div className="group flex items-center justify-center p-4 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300">
-                                <span className="text-2xl font-serif font-black text-slate-400 group-hover:text-[#000080] transition-colors">
-                                    {logo.name}
-                                </span>
-                            </div>
-                        </FadeIn>
-                    ))}
-                </div>
-            </Container>
-        </section>
-    );
+export function TrustBadges() {
+  return (
+    <section className="relative py-16 md:py-20 border-b border-slate-200 bg-white overflow-hidden">
+      <Container className="relative z-10">
+        <FadeIn>
+          <div className="flex items-center gap-4 justify-center mb-10">
+            <div className="h-px w-12 bg-slate-300" />
+            <p className="text-center text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">
+              Insights Featured In
+            </p>
+            <div className="h-px w-12 bg-slate-300" />
+          </div>
+        </FadeIn>
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+          {publications.map((pub, i) => (
+            <FadeIn key={pub.name} delay={i * 0.08}>
+              <div className="group flex items-center justify-center px-3 py-2 opacity-40 hover:opacity-90 transition-all duration-300">
+                <span
+                  className={`text-slate-400 group-hover:text-[#000080] transition-colors select-none ${pub.className}`}
+                >
+                  {pub.name}
+                </span>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
 }

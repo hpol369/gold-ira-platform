@@ -3,7 +3,7 @@
 import { Suspense, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2, Mail } from "lucide-react";
+import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2, Mail, Users, Star, Award } from "lucide-react";
 import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
 import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
 import { useABTest } from "@/lib/ab-testing";
@@ -21,6 +21,27 @@ const slideVariants = {
   center: { opacity: 1, x: 0 },
   exit: { opacity: 0, x: -40 },
 };
+
+const TESTIMONIALS = [
+  {
+    quote: "I was skeptical at first, but the free consultation answered every question. Zero pressure — just solid information.",
+    name: "Robert T.",
+    state: "Ohio",
+    job: "Retired Electrician",
+  },
+  {
+    quote: "After 30 years driving trucks, I wanted my savings protected. The process was simpler than I expected.",
+    name: "Linda M.",
+    state: "Texas",
+    job: "Retired Truck Driver",
+  },
+  {
+    quote: "My financial advisor never mentioned gold. Wish I had found this years ago — my portfolio feels more secure now.",
+    name: "James K.",
+    state: "Pennsylvania",
+    job: "Former Steelworker",
+  },
+];
 
 export default function GetStartedPage() {
   return (
@@ -248,6 +269,16 @@ function GetStartedContent() {
         </div>
       </header>
 
+      {/* Trust stats bar */}
+      <div className="w-full py-2.5 border-b border-white/5 bg-white/[0.02]">
+        <div className="max-w-2xl mx-auto flex flex-wrap justify-center gap-x-5 gap-y-1.5 px-4 text-white/50 text-[11px]">
+          <span className="flex items-center gap-1"><Users className="h-3 w-3 text-amber-400/60" />50,000+ Educated</span>
+          <span className="flex items-center gap-1"><Shield className="h-3 w-3 text-amber-400/60" />$2B+ Protected</span>
+          <span className="flex items-center gap-1"><Star className="h-3 w-3 text-amber-400/60" />4.9/5 Rating</span>
+          <span className="flex items-center gap-1"><Award className="h-3 w-3 text-amber-400/60" />A+ BBB Partners</span>
+        </div>
+      </div>
+
       {/* Main content */}
       <main className="flex-1 flex items-center justify-center px-4 py-8 md:py-16">
         <div className="w-full max-w-2xl">
@@ -379,7 +410,22 @@ function GetStartedContent() {
                   </button>
                 </div>
 
-                <div className="flex items-center justify-center gap-4 text-white/40 text-xs">
+                {/* Testimonial */}
+                <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-4">
+                  <div className="flex items-center gap-0.5 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <p className="text-white/70 text-sm italic mb-2">
+                    &ldquo;{TESTIMONIALS[0].quote}&rdquo;
+                  </p>
+                  <p className="text-white/50 text-xs">
+                    — {TESTIMONIALS[0].name}, {TESTIMONIALS[0].state} &bull; {TESTIMONIALS[0].job}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-center gap-4 text-white/40 text-xs mt-4">
                   <span>A+ BBB Rated Partners</span>
                   <span>|</span>
                   <span>No Spam, Ever</span>

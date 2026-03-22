@@ -7,6 +7,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, Building2, Lock, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -14,6 +15,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
     title: "403(b) to Gold IRA Rollover Guide: For Teachers & Nurses (2026)",
     description: "Complete guide for Teachers, Nurses, and Non-Profit employees. Learn how to roll over your 403(b) / TSA to a Gold IRA tax-free. Avoid annuity surrender charges.",
+    alternates: { canonical: getCanonicalUrl("/guide/403b-to-gold-ira-rollover") },
 };
 
 const tocItems = [
