@@ -179,6 +179,7 @@ interface PipelineStep {
   label: string;
   shortLabel: string;
   status: "success" | "pending" | "failed" | "skipped" | "na";
+  timestamp?: string | null;
 }
 
 function getPipelineSteps(
@@ -229,10 +230,14 @@ function getPipelineSteps(
       else if (eq.status === "failed") emailStatus = "failed";
       else if (eq.status === "skipped") emailStatus = "skipped";
 
+      const emailLabel = eq.sequenceName
+        ? `${eq.sequenceName.replace(/-/g, " ")} step ${eq.stepNumber}`
+        : `Email ${eq.stepNumber}`;
       steps.push({
-        label: `Email ${eq.stepNumber}: "${eq.subject}"`,
+        label: emailLabel,
         shortLabel: `E${eq.stepNumber}`,
         status: emailStatus,
+        timestamp: eq.sentAt || eq.scheduledAt,
       });
     }
   }

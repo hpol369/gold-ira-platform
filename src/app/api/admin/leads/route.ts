@@ -43,13 +43,15 @@ interface LeadRow {
 interface EmailQueueRow {
   id: string;
   email: string;
-  sequence_name: string;
-  step_number: number;
-  subject: string;
+  sequence: string;
+  step: number;
   status: string;
-  scheduled_at: string;
+  next_send_at: string;
   sent_at: string | null;
   created_at: string;
+  first_name: string | null;
+  source: string | null;
+  metadata: Record<string, string> | null;
 }
 
 interface PostbackRow {
@@ -151,11 +153,11 @@ function mapEmailQueue(row: EmailQueueRow): EmailQueueResponse {
   return {
     id: row.id,
     email: row.email,
-    sequenceName: row.sequence_name,
-    stepNumber: row.step_number,
-    subject: row.subject,
+    sequenceName: row.sequence || "unknown",
+    stepNumber: row.step || 0,
+    subject: `${(row.sequence || "email").replace(/-/g, " ")} #${row.step || 0}`,
     status: row.status,
-    scheduledAt: row.scheduled_at,
+    scheduledAt: row.next_send_at || row.created_at,
     sentAt: row.sent_at,
     createdAt: row.created_at,
   };
