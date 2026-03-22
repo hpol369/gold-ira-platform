@@ -7,9 +7,13 @@ import { Shield, ArrowRight, Users } from "lucide-react";
 interface SidebarAuditWidgetProps {
   /** Source page for tracking (e.g. "learn-gold-ira-fees") */
   trackSource?: string;
+  /** Custom headline (overrides "Free Gold IRA Kit") */
+  headline?: string;
+  /** Custom body text (overrides "Get matched with the right company in 60 seconds") */
+  body?: string;
 }
 
-export function SidebarAuditWidget({ trackSource }: SidebarAuditWidgetProps) {
+export function SidebarAuditWidget({ trackSource, headline, body }: SidebarAuditWidgetProps) {
   const [auditsToday, setAuditsToday] = useState<number>(0);
 
   useEffect(() => {
@@ -33,16 +37,12 @@ export function SidebarAuditWidget({ trackSource }: SidebarAuditWidgetProps) {
             <Shield className="h-5 w-5 text-[#B22234]" />
           </div>
           <h4 className="font-serif font-bold text-[#000080] text-sm">
-            Free Gold IRA Kit
+            {headline || "Free Gold IRA Kit"}
           </h4>
         </div>
 
-        <p className="text-lg font-bold text-slate-800 mb-2">
-          Protect Your Retirement
-        </p>
-
-        <p className="text-sm text-slate-500 mb-4 leading-relaxed">
-          Get matched with the right company in 60 seconds
+        <p className="text-sm text-slate-600 mb-4 leading-relaxed">
+          {body || "Get matched with the right company in 60 seconds. No cost, no pressure."}
         </p>
 
         <Link

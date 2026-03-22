@@ -28,6 +28,7 @@ import {
   getAllLearnArticleSlugs,
   getRelatedLearnArticles,
 } from "@/data/learn-articles";
+import { getContextualCTABySlug } from "@/data/contextual-ctas";
 import { threatLevelMeta, categoryMeta } from "@/types/learn-article";
 import type { IconColor, ArticleSection } from "@/types/learn-article";
 import {
@@ -367,6 +368,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
   }
 
   const relatedArticles = getRelatedLearnArticles(slug, 3);
+  const ctaCopy = getContextualCTABySlug(slug);
   const threatMeta = threatLevelMeta[article.threatLevel];
   const catMeta = categoryMeta[article.category];
 
@@ -499,7 +501,11 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 items={article.tocItems}
                 className="static block"
               />
-              <SidebarAuditWidget trackSource={`learn-${article.slug}`} />
+              <SidebarAuditWidget
+                trackSource={`learn-${article.slug}`}
+                headline={ctaCopy.sidebarHeadline}
+                body={ctaCopy.sidebarBody}
+              />
             </div>
 
             {/* Article Content */}
@@ -508,7 +514,13 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {article.sections.map((section, index) => (
                 <Fragment key={section.id}>
                   <ArticleSectionComponent section={section} />
-                  {index === 2 && <InContentCTA trackSource={`learn-${article.slug}`} />}
+                  {index === 2 && (
+                    <InContentCTA
+                      trackSource={`learn-${article.slug}`}
+                      headline={ctaCopy.inContentHeadline}
+                      body={ctaCopy.inContentBody}
+                    />
+                  )}
                 </Fragment>
               ))}
 
@@ -743,8 +755,9 @@ export default async function LearnArticlePage({ params }: PageProps) {
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Ready to Protect Your Retirement?"
-            subheadline="Join thousands of Americans who have secured their savings with physical gold. Augusta Precious Metals makes the process simple."
+            headline={ctaCopy.footerHeadline}
+            subheadline={ctaCopy.footerSubheadline}
+            augustaContext={ctaCopy.augustaContext}
             trackSource={`learn-${slug}`}
           />
         </Container>
