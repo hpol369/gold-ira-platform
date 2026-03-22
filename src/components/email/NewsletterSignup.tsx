@@ -37,7 +37,10 @@ export function NewsletterSignup({
       const res = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({
+          email,
+          source: typeof window !== "undefined" ? window.location.pathname : "",
+        }),
       });
 
       if (!res.ok) throw new Error("Failed to subscribe");
