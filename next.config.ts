@@ -105,6 +105,7 @@ const nextConfig: NextConfig = {
       { source: '/learn/voya-401k-rollover-guide', destination: '/learn/voya-401k-rollover', permanent: true },
       { source: '/learn/railroad-retirement-guide', destination: '/learn/railroad-retirement-calculator', permanent: true },
       { source: '/learn/comex-silver-inventory', destination: '/learn/comex-silver-inventory-data', permanent: true },
+      { source: '/learn/gold-ira-rollover-rules', destination: '/gold-ira-rules', permanent: true },
       // 401k-to-gold cannibalization fix — consolidate to single authority page
       { source: '/guide/transfer-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
       { source: '/guide/convert-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
