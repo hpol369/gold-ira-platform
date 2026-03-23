@@ -358,6 +358,21 @@ function GetStartedContent() {
         } catch { /* gtag not available */ }
       }
 
+      // Fire Microsoft UET conversion (Bing Ads) — all leads, not just Augusta
+      if (typeof window !== "undefined") {
+        try {
+          const w = window as unknown as { uetq?: Array<Record<string, unknown>> };
+          w.uetq = w.uetq || [];
+          w.uetq.push({
+            ec: "lead",
+            ea: "submit",
+            el: result.companyName,
+            ev: isAugusta ? 100 : 25,
+            gv: isAugusta ? 100 : 25,
+          });
+        } catch { /* UET not available */ }
+      }
+
       trackLeadSubmission({ source: `get-started_${ref}`, savingsTier: state.savingsTier || undefined, company: result.companyName, isAugusta });
       trackFunnelStep("success", { savingsTier: state.savingsTier || undefined, company: result.companyName });
       setIsAugustaResult(isAugusta);
