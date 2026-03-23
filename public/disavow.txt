@@ -1,0 +1,11 @@
+# Disavow file for richdadretirement.com
+# All referring domains are SEO spam services with zero real traffic
+# Submitted 2026-03-23
+# These domains appeared Jan-Mar 2026 with nofollow links only
+
+domain:seo-backlink.agency
+domain:grow-your.website
+domain:primeseo.xyz
+domain:fiverr-affordable-seo-services.site
+domain:seodaro.com
+domain:seonexi.com
