@@ -44,7 +44,7 @@ export function MobileStickyBar() {
               paddingBottom: "calc(0.875rem + env(safe-area-inset-bottom, 0px))"
             }}
           >
-            Get Your Free Gold IRA Kit
+            Get Your Free Precious Metals Kit
             <ArrowRight className="h-5 w-5" />
           </Link>
         </motion.div>

@@ -82,6 +82,10 @@ export function buildLeadNotification(lead: Lead, location?: string): string {
     const tierLabel = lead.qualification_tier ? (tierLabels[lead.qualification_tier] || lead.qualification_tier) : "";
     lines.push(`💰 <b>Savings:</b> ${lead.savings_tier}`);
     if (lead.concern) lines.push(`⚠️ <b>Concern:</b> ${lead.concern}`);
+    if (lead.metal_preference) {
+      const metalLabels: Record<string, string> = { gold: "🥇 Gold", silver: "🥈 Silver", both: "🥇🥈 Gold & Silver" };
+      lines.push(`⚙️ <b>Metal:</b> ${metalLabels[lead.metal_preference] || lead.metal_preference}`);
+    }
     if (tierLabel) lines.push(`🎯 <b>Tier:</b> ${tierLabel}`);
     if (lead.routed_to) lines.push(`➡️ <b>Routed to:</b> ${lead.routed_to}`);
   }

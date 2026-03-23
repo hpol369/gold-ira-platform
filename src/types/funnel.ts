@@ -14,6 +14,11 @@ export type Concern =
   | "outliving-savings"
   | "legacy";
 
+export type MetalPreference = "gold" | "silver" | "both";
+
+/** Used by CTA components to determine display text */
+export type MetalContext = "gold" | "silver" | "precious-metals";
+
 export type QualificationTier =
   | "augusta-white-glove"   // $250k+
   | "augusta-private"       // $100k-$250k
@@ -22,7 +27,8 @@ export type QualificationTier =
   | "starter";              // <$25k → Noble Gold
 
 export interface FunnelState {
-  step: "savings" | "concern" | "result" | "contact" | "submitting" | "success";
+  step: "metal" | "savings" | "concern" | "result" | "contact" | "submitting" | "success";
+  metalPreference: MetalPreference | null;
   savingsTier: SavingsTier | null;
   concern: Concern | null;
   qualificationTier: QualificationTier | null;
@@ -39,6 +45,45 @@ export interface QualificationResult {
   affiliateKey: string;
   requiresPhone: boolean;
 }
+
+// ---------------------------------------------------------------------------
+// Metal preference options & helpers
+// ---------------------------------------------------------------------------
+
+export const METAL_OPTIONS: { value: MetalPreference; label: string; icon: string; description: string }[] = [
+  { value: "gold", label: "Gold", icon: "Coins", description: "The #1 safe-haven asset for retirement protection" },
+  { value: "silver", label: "Silver", icon: "CircleDollarSign", description: "Higher upside potential with industrial demand" },
+  { value: "both", label: "Both Gold & Silver", icon: "Gem", description: "Maximum diversification and protection" },
+];
+
+/** Returns CTA-friendly kit label based on metal context */
+export function getKitLabel(ctx: MetalContext): string {
+  switch (ctx) {
+    case "gold": return "Gold IRA Kit";
+    case "silver": return "Silver IRA Kit";
+    case "precious-metals": return "Precious Metals IRA Kit";
+  }
+}
+
+/** Returns specialist label for success messages */
+export function getSpecialistLabel(ctx: MetalContext): string {
+  switch (ctx) {
+    case "gold": return "Gold IRA specialist";
+    case "silver": return "Silver IRA specialist";
+    case "precious-metals": return "precious metals specialist";
+  }
+}
+
+/** Maps a user's metal preference to CTA context */
+export function metalPrefToContext(pref: MetalPreference | null): MetalContext {
+  if (pref === "silver") return "silver";
+  if (pref === "both") return "precious-metals";
+  return "gold";
+}
+
+// ---------------------------------------------------------------------------
+// Funnel options
+// ---------------------------------------------------------------------------
 
 export const SAVINGS_OPTIONS: { value: SavingsTier; label: string }[] = [
   { value: "under-25k", label: "Under $25,000" },
@@ -99,7 +144,7 @@ export function getQualificationResult(savingsTier: SavingsTier): QualificationR
       return {
         tier: "starter",
         companyName: "Noble Gold Investments",
-        headline: "Start building your gold position today",
+        headline: "Start building your precious metals position today",
         description: "Noble Gold has one of the lowest minimums in the industry. Start protecting your savings now and grow from there.",
         affiliateKey: "noble",
         requiresPhone: false,

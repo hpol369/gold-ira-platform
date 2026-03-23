@@ -3,9 +3,9 @@
 import { Suspense, useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2, Mail, Users, Star, Award, Check } from "lucide-react";
-import type { SavingsTier, Concern, FunnelState } from "@/types/funnel";
-import { SAVINGS_OPTIONS, CONCERN_OPTIONS, getQualificationResult } from "@/types/funnel";
+import { Shield, TrendingDown, AlertTriangle, Clock, Heart, ArrowRight, Lock, CheckCircle, Phone, Loader2, Mail, Users, Star, Award, Check, Coins, CircleDollarSign, Gem } from "lucide-react";
+import type { SavingsTier, Concern, FunnelState, MetalPreference } from "@/types/funnel";
+import { SAVINGS_OPTIONS, CONCERN_OPTIONS, METAL_OPTIONS, getQualificationResult, getKitLabel, getSpecialistLabel, metalPrefToContext } from "@/types/funnel";
 import { useABTest } from "@/lib/ab-testing";
 import { GOOGLE_ADS_CONVERSION_TAG } from "@/config/google-ads";
 import { trackFunnelStep, trackLeadSubmission } from "@/lib/analytics";
@@ -15,6 +15,12 @@ const CONCERN_ICONS = {
   AlertTriangle,
   Clock,
   Heart,
+} as const;
+
+const METAL_ICONS = {
+  Coins,
+  CircleDollarSign,
+  Gem,
 } as const;
 
 const slideVariants = {
@@ -57,6 +63,7 @@ const TESTIMONIALS = [
 ];
 
 const PROGRESS_STEPS = [
+  { label: "Interest", step: "metal" },
   { label: "Savings", step: "savings" },
   { label: "Concerns", step: "concern" },
   { label: "Your Match", step: "result" },
@@ -65,13 +72,14 @@ const PROGRESS_STEPS = [
 
 function getProgressIndex(currentStep: string): number {
   switch (currentStep) {
-    case "savings": return 0;
-    case "concern": return 1;
-    case "result": return 2;
+    case "metal": return 0;
+    case "savings": return 1;
+    case "concern": return 2;
+    case "result": return 3;
     case "contact":
     case "submitting":
     case "success":
-      return 3;
+      return 4;
     default: return 0;
   }
 }
@@ -190,11 +198,13 @@ function GetStartedContent() {
   const ref = searchParams.get("ref") || "direct";
   const variant = useABTest("funnel-order-v1");
 
-  // Read pre-filled params from quiz/calculator
+  // Read pre-filled params from quiz/calculator/Bing Ads
   const savingsParam = searchParams.get("savings");
   const concernParam = searchParams.get("concern");
+  const metalParam = searchParams.get("metal") as MetalPreference | null;
   const prefillSavings = savingsParam ? mapSavingsParam(savingsParam) : null;
   const prefillConcern = concernParam ? mapConcernParam(concernParam) : null;
+  const prefillMetal = metalParam && ["gold", "silver", "both"].includes(metalParam) ? metalParam : null;
 
   // Variant B: concern-first (emotional hook), then savings
   const firstStep = variant === "variant" ? "concern" : "savings";
@@ -208,19 +218,24 @@ function GetStartedContent() {
     }
     if (prefillSavings) {
       // Savings pre-filled → skip to concern
-      return variant === "variant" ? "concern" : "concern";
+      return "concern";
     }
     if (prefillConcern) {
       // Concern pre-filled → skip to savings
-      return variant === "variant" ? "savings" : "savings";
+      return "savings";
     }
-    return firstStep as FunnelState["step"];
+    // If metal is pre-filled via URL param (e.g. Bing Ads ?metal=silver), skip metal step
+    if (prefillMetal) {
+      return firstStep as FunnelState["step"];
+    }
+    return "metal";
   }
 
   const initialQualification = prefillSavings ? getQualificationResult(prefillSavings) : null;
 
   const [state, setState] = useState<FunnelState>({
     step: getInitialStep(),
+    metalPreference: prefillMetal,
     savingsTier: prefillSavings,
     concern: prefillConcern,
     qualificationTier: initialQualification?.tier || null,
@@ -322,6 +337,7 @@ function GetStartedContent() {
           routedTo: result.companyName,
           skipAugusta: !isAugusta,
           abVariant: `funnel-order-v1:${variant}`,
+          metalPreference: state.metalPreference || "gold",
         }),
       });
 
@@ -399,6 +415,55 @@ function GetStartedContent() {
         <div className="w-full max-w-2xl">
           <ProgressIndicator currentStep={state.step} />
           <AnimatePresence mode="wait">
+            {/* STEP 0: Metal Preference */}
+            {state.step === "metal" && (
+              <motion.div
+                key="metal"
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.3 }}
+              >
+                <div className="text-center mb-10">
+                  <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/30 rounded-full px-4 py-1.5 mb-6">
+                    <Shield className="h-4 w-4 text-amber-400" />
+                    <span className="text-amber-300 text-sm font-medium">Free — No Obligation</span>
+                  </div>
+                  <h1 className="text-3xl md:text-5xl font-serif font-black text-white mb-4 leading-tight">
+                    Get Your Free<br />Precious Metals IRA Kit
+                  </h1>
+                  <p className="text-white/70 text-lg max-w-lg mx-auto">
+                    What are you most interested in?
+                  </p>
+                </div>
+
+                <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 md:p-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {METAL_OPTIONS.map((option) => {
+                      const Icon = METAL_ICONS[option.icon as keyof typeof METAL_ICONS];
+                      return (
+                        <button
+                          key={option.value}
+                          onClick={() => {
+                            trackFunnelStep("metal", { metalPreference: option.value, abVariant: `funnel-order-v1:${variant}` });
+                            setState(prev => ({ ...prev, metalPreference: option.value, step: firstStep as FunnelState["step"] }));
+                          }}
+                          className="flex flex-col items-center gap-3 text-center px-5 py-6 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 hover:border-amber-400/50 text-white font-medium transition-all duration-200 active:scale-[0.98]"
+                        >
+                          <Icon className="h-8 w-8 text-amber-400" />
+                          <span className="text-lg font-bold">{option.label}</span>
+                          <span className="text-white/50 text-xs leading-tight">{option.description}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  <RotatingTestimonial testimonialIndex={testimonialIndex} />
+                </div>
+              </motion.div>
+            )}
+
             {/* STEP 1: Savings */}
             {state.step === "savings" && (
               <motion.div
@@ -415,7 +480,7 @@ function GetStartedContent() {
                     <span className="text-amber-300 text-sm font-medium">Free — No Obligation</span>
                   </div>
                   <h1 className="text-3xl md:text-5xl font-serif font-black text-white mb-4 leading-tight">
-                    Get Your Personalized<br />Gold IRA Kit
+                    Get Your Personalized<br />{getKitLabel(metalPrefToContext(state.metalPreference))}
                   </h1>
                   <p className="text-white/70 text-lg max-w-lg mx-auto">
                     Answer 2 quick questions so we can match you with the best company for your situation.
@@ -685,8 +750,8 @@ function GetStartedContent() {
                     </h2>
 
                     <p className="text-white/80 text-lg mb-6">
-                      A Gold IRA specialist from Augusta Precious Metals will reach out shortly
-                      for a free info call about how a Gold IRA works for your situation.
+                      A {getSpecialistLabel(metalPrefToContext(state.metalPreference))} from Augusta Precious Metals will reach out shortly
+                      for a free info call about how a precious metals IRA works for your situation.
                     </p>
 
                     {/* PDF Guide Delivery Confirmation */}
@@ -694,9 +759,9 @@ function GetStartedContent() {
                       <div className="flex items-start gap-3 mb-4">
                         <Mail className="h-5 w-5 text-[#C5A55A] mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-white font-semibold">Your Free Gold IRA Guide</p>
+                          <p className="text-white font-semibold">Your Free {getKitLabel(metalPrefToContext(state.metalPreference)).replace(" Kit", " Guide")}</p>
                           <p className="text-white/60 text-sm">
-                            We just sent the 2026 Gold IRA Protection Guide to{" "}
+                            We just sent your 2026 Precious Metals Protection Guide to{" "}
                             <span className="text-white/80">{state.email}</span>.
                             Check your inbox (and spam folder).
                           </p>

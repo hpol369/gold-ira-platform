@@ -8,14 +8,14 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { webSiteSchema, siteNavigationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Best Gold IRA Companies 2026 | Compare Reviews, Fees & Ratings",
-  description: "Compare the top Gold IRA companies for 2026. Independent reviews, fee breakdowns, and expert analysis to help you protect your retirement savings with precious metals.",
+  title: "Best Gold & Silver IRA Companies 2026 | Compare Reviews, Fees & Ratings",
+  description: "Compare the top Gold and Silver IRA companies for 2026. Independent reviews, fee breakdowns, and expert analysis to help you protect your retirement savings with precious metals.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Best Gold IRA Companies 2026 | Rich Dad Retirement",
-    description: "Compare top Gold IRA companies. Independent reviews, fee comparisons, and retirement protection strategies from experts who understand blue-collar retirement.",
+    title: "Best Gold & Silver IRA Companies 2026 | Rich Dad Retirement",
+    description: "Compare top Gold and Silver IRA companies. Independent reviews, fee comparisons, and precious metals retirement protection strategies.",
     type: "website",
   },
 };

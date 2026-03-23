@@ -55,7 +55,7 @@ export function FeaturedPartner() {
 
                             <div className="relative z-10">
                                 <span className="text-[#B22234] font-bold tracking-widest uppercase text-sm mb-2 block drop-shadow-[0_0_20px_rgba(178,34,52,0.4)]">
-                                    #1 Rated Gold IRA Company
+                                    #1 Rated Precious Metals Company
                                 </span>
                                 <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                                     Augusta Precious Metals
@@ -114,7 +114,7 @@ export function FeaturedPartner() {
                                 Education First, Not Sales Pressure
                             </h4>
                             <p className="text-slate-600 mb-6 leading-relaxed">
-                                Augusta built their reputation on teaching, not selling. Request their free kit and you&apos;ll get a one-on-one web conference explaining how Gold IRAs work—no obligation, no hard sell.
+                                Augusta built their reputation on teaching, not selling. Request their free kit and you&apos;ll get a one-on-one web conference explaining how precious metals IRAs work—no obligation, no hard sell.
                             </p>
 
                             {/* Benefits list with premium red checkmarks */}
@@ -152,7 +152,7 @@ export function FeaturedPartner() {
                                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
                                 <div className="flex flex-col items-center relative z-10">
                                     <span className="flex items-center gap-2">
-                                        Get Your Free Gold IRA Kit
+                                        Get Your Free Precious Metals Kit
                                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </span>
                                     <span className="text-[10px] font-normal opacity-80 uppercase tracking-widest mt-1 text-white/80">

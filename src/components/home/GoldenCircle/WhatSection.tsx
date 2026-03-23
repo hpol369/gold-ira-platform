@@ -179,7 +179,7 @@ export function WhatSection() {
                       onClick={handleCtaClick}
                     >
                       <span className="flex items-center gap-2">
-                        Get Free Gold IRA Kit
+                        Get Free Precious Metals Kit
                         <ArrowRight className="h-4 w-4" />
                       </span>
                     </Button>

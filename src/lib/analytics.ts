@@ -99,8 +99,8 @@ export function trackCalculatorInteraction(
 
 // Track each step of the /get-started funnel
 export function trackFunnelStep(
-  step: 'savings' | 'concern' | 'result' | 'contact' | 'submit' | 'success',
-  data?: { savingsTier?: string; concern?: string; company?: string; abVariant?: string }
+  step: 'metal' | 'savings' | 'concern' | 'result' | 'contact' | 'submit' | 'success',
+  data?: { savingsTier?: string; concern?: string; company?: string; abVariant?: string; metalPreference?: string }
 ) {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', `funnel_${step}`, {

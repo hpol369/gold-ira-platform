@@ -17,7 +17,7 @@ export function QuizCTA() {
                     Not Sure Which Account Is Right for You?
                 </h2>
                 <p className="text-white/80 mb-8 max-w-xl mx-auto">
-                    Take our 60-second quiz to find the perfect retirement account - Gold IRA, Crypto IRA, ROBS 401k, or Self-Directed IRA.
+                    Take our 60-second quiz to find the perfect retirement account - Gold IRA, Silver IRA, Crypto IRA, ROBS 401k, or Self-Directed IRA.
                 </p>
                 <Link
                     href="/audit"

@@ -59,7 +59,7 @@ export function WhySection() {
                 href="/get-started?ref=homepage-hero"
                 className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#C5A55A] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#B8860B] text-[#000080] font-bold text-lg rounded-xl transition-all duration-300 shadow-[0_0_40px_rgba(197,165,90,0.4)] hover:shadow-[0_0_60px_rgba(197,165,90,0.6)] hover:-translate-y-1 group"
               >
-                Get Your Free Gold IRA Kit
+                Get Your Free Precious Metals Kit
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a

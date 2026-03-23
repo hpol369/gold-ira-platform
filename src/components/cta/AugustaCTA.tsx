@@ -14,6 +14,8 @@ import { trackAffiliateClick } from "@/lib/analytics";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 import { useLeadModal } from "@/context/LeadModalContext";
 import { getTrackedAugustaLink, type AugustaContext } from "@/config/affiliates";
+import type { MetalContext } from "@/types/funnel";
+import { getKitLabel } from "@/types/funnel";
 
 interface AugustaCTAProps {
   variant?: "default" | "sidebar" | "inline" | "footer" | "banner";
@@ -27,6 +29,7 @@ interface AugustaCTAProps {
   linkContext?: string;
   trackSource?: string;
   className?: string;
+  metalContext?: MetalContext;
 }
 
 // Valid AugustaContext values for auto-mapping from legacy linkContext
@@ -44,6 +47,7 @@ export function AugustaCTA({
   linkContext,
   trackSource,
   className,
+  metalContext = "gold",
 }: AugustaCTAProps) {
   const augusta = getFeaturedCompany();
   const { openModal } = useLeadModal();
@@ -79,7 +83,7 @@ export function AugustaCTA({
       if (variant === "sidebar") return "Get Free Kit";
       if (variant === "inline") return "Visit Augusta";
       if (variant === "banner") return "Get Free Kit";
-      return "Get Your Free Gold IRA Kit";
+      return getKitLabel(metalContext);
     }
     // Path A: A/B test on main CTA text
     if (variant === "sidebar") return ctaVariant === "variant" ? "Check Your Options" : "Free Info Call";
@@ -194,7 +198,7 @@ export function AugustaCTA({
               RECOMMENDED
             </div>
             <p className="text-slate-600 text-sm">
-              {subheadline || "Augusta Precious Metals is our #1 rated Gold IRA company for their education-first approach and transparent pricing."}
+              {subheadline || (metalContext === "gold" ? "Augusta Precious Metals is our #1 rated Gold IRA company for their education-first approach and transparent pricing." : "Augusta Precious Metals is our #1 rated precious metals IRA company for their education-first approach and transparent pricing.")}
             </p>
           </div>
           <PremiumButton size="sm" className="whitespace-nowrap">
@@ -224,7 +228,7 @@ export function AugustaCTA({
               #1 RATED
             </div>
             <span className="text-[#000080]">
-              {headline || "Get Your Free Gold IRA Guide from Augusta Precious Metals"}
+              {headline || (metalContext === "gold" ? "Get Your Free Gold IRA Guide from Augusta Precious Metals" : "Get Your Free Precious Metals IRA Guide from Augusta Precious Metals")}
             </span>
           </div>
           <PremiumButton size="sm">
@@ -303,7 +307,7 @@ export function AugustaCTA({
         <div>
           <div className="inline-flex items-center gap-2 bg-[#B22234] text-white font-semibold text-sm px-4 py-2 rounded-full mb-4">
             <Award className="h-4 w-4" />
-            #1 RATED GOLD IRA COMPANY
+            {metalContext === "gold" ? "#1 RATED GOLD IRA COMPANY" : "#1 RATED PRECIOUS METALS COMPANY"}
           </div>
           <h3 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
             {headline || "Augusta Precious Metals"}

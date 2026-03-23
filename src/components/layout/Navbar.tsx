@@ -270,7 +270,7 @@ export function Navbar() {
                                 size="sm"
                                 asChild
                             >
-                                <Link href="/get-started">Get Free Gold Kit</Link>
+                                <Link href="/get-started">Get Free Kit</Link>
                             </Button>
                         </nav>
 
