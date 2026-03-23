@@ -7,6 +7,7 @@ const AFFILIATE_ID = process.env.AUGUSTA_AFFILIATE_ID || "5129";
 export async function submitToAugusta(lead: Lead): Promise<boolean> {
   // Build human-readable notes for the specialist
   const notesParts: string[] = [];
+  if (lead.metal_preference) notesParts.push(`Metal Interest: ${lead.metal_preference === "both" ? "Gold & Silver" : lead.metal_preference === "silver" ? "Silver" : "Gold"}`);
   if (lead.savings_tier) notesParts.push(`Savings: ${lead.savings_tier}`);
   if (lead.concern) notesParts.push(`Concern: ${lead.concern}`);
   if (lead.source) notesParts.push(`Source: ${lead.source}`);
@@ -24,6 +25,7 @@ export async function submitToAugusta(lead: Lead): Promise<boolean> {
     primary_concern: lead.concern || "",
     source_page: lead.source || "",
     qualification_tier: lead.qualification_tier || "",
+    metal_preference: lead.metal_preference || "gold",
     lead_notes: notesParts.join(". "),
   };
 

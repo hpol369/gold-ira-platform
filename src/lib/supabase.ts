@@ -34,6 +34,8 @@ export interface Lead {
   routed_to?: string;
   email_sequence?: string;
   ab_variant?: string;
+  // Metal preference for precious metals leads
+  metal_preference?: "gold" | "silver" | "both";
 }
 
 // Insert a new lead

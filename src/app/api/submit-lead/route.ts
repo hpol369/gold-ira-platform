@@ -55,6 +55,8 @@ interface LeadData {
   qualificationTier?: string;
   routedTo?: string;
   abVariant?: string;
+  // Metal preference (gold, silver, both, or undefined for legacy leads)
+  metalPreference?: "gold" | "silver" | "both";
 }
 
 export async function POST(request: NextRequest) {
@@ -127,6 +129,7 @@ export async function POST(request: NextRequest) {
       if (body.qualificationTier) enrichUpdates.qualification_tier = body.qualificationTier;
       if (body.routedTo) enrichUpdates.routed_to = body.routedTo;
       if (body.source) enrichUpdates.source = body.source;
+      if (body.metalPreference) enrichUpdates.metal_preference = body.metalPreference;
 
       if (Object.keys(enrichUpdates).length > 0) {
         await updateLead(existingLead.id!, enrichUpdates);
@@ -200,6 +203,7 @@ export async function POST(request: NextRequest) {
       ...(body.qualificationTier && { qualification_tier: body.qualificationTier }),
       ...(body.routedTo && { routed_to: body.routedTo }),
       ...(body.abVariant && { ab_variant: body.abVariant }),
+      ...(body.metalPreference && { metal_preference: body.metalPreference }),
     };
 
     const lead = await insertLead(leadData);
