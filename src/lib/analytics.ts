@@ -1,5 +1,5 @@
 // src/lib/analytics.ts
-// Google Analytics 4 event tracking utilities
+// Google Analytics 4 + Microsoft Advertising UET event tracking utilities
 
 declare global {
   interface Window {
@@ -8,10 +8,61 @@ declare global {
       action: string,
       params?: Record<string, unknown>
     ) => void;
+    uetq: Array<Record<string, unknown> | string>;
   }
 }
 
-// Track affiliate link clicks
+// ============================================
+// MICROSOFT ADVERTISING UET TRACKING
+// ============================================
+
+/** Fire a Bing UET conversion event */
+export function trackBingConversion(
+  eventAction: string,
+  eventCategory: string,
+  eventLabel: string,
+  eventValue?: number
+) {
+  if (typeof window !== 'undefined' && window.uetq) {
+    window.uetq.push({
+      ec: eventCategory,
+      ea: eventAction,
+      el: eventLabel,
+      ev: eventValue ?? 0,
+    });
+  }
+}
+
+/** Fire Bing UET lead submission event — used as primary conversion goal */
+export function trackBingLeadSubmission(data: {
+  source: string;
+  metalPreference?: string;
+  savingsTier?: string;
+  isAugusta: boolean;
+}) {
+  if (typeof window !== 'undefined' && window.uetq) {
+    window.uetq.push('event', 'lead_form_submit', {
+      event_category: 'conversion',
+      event_label: data.source,
+      event_value: data.isAugusta ? 50 : 25,
+      revenue_value: data.isAugusta ? 50 : 25,
+      currency: 'USD',
+    });
+  }
+}
+
+/** Fire Bing UET affiliate click event — secondary conversion goal */
+export function trackBingAffiliateClick(company: string, source: string) {
+  if (typeof window !== 'undefined' && window.uetq) {
+    window.uetq.push('event', 'affiliate_click', {
+      event_category: 'conversion',
+      event_label: `${company}_${source}`,
+      event_value: 1,
+    });
+  }
+}
+
+// Track affiliate link clicks (GA4 + Bing UET)
 export function trackAffiliateClick(
   company: string,
   source: string,
@@ -27,6 +78,8 @@ export function trackAffiliateClick(
       value: 1,
     });
   }
+  // Also fire Bing UET conversion
+  trackBingAffiliateClick(company, source);
 }
 
 // Track quiz completions
@@ -115,12 +168,13 @@ export function trackFunnelStep(
   }
 }
 
-// Track lead form submission (separate from Google Ads conversion)
+// Track lead form submission (GA4 + Bing UET)
 export function trackLeadSubmission(data: {
   source: string;
   savingsTier?: string;
   company?: string;
   isAugusta: boolean;
+  metalPreference?: string;
 }) {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'lead_submitted', {
@@ -132,6 +186,13 @@ export function trackLeadSubmission(data: {
       value: data.isAugusta ? 50 : 25,
     });
   }
+  // Also fire Bing UET conversion
+  trackBingLeadSubmission({
+    source: data.source,
+    metalPreference: data.metalPreference,
+    savingsTier: data.savingsTier,
+    isAugusta: data.isAugusta,
+  });
 }
 
 // ============================================

@@ -13,6 +13,7 @@ import { GOOGLE_ADS_ID } from "@/config/google-ads";
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
 const CLARITY_PROJECT_ID = "v816rr21t5";
 const GTM_ID = "GTM-TPC628G9";
+const BING_UET_TAG_ID = "97235692";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -116,6 +117,17 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
             gtag('config', '${GOOGLE_ADS_ID}');
+          `}
+        </Script>
+        {/* Microsoft Advertising UET Tag - Bing Ads Conversion Tracking */}
+        <Script id="bing-uet" strategy="lazyOnload">
+          {`
+            (function(w,d,t,u,o){
+              w[u]=w[u]||[];var n=d.createElement(t);n.async=1;
+              n.src="https://bat.bing.net/bat.js?ti=${BING_UET_TAG_ID}&enableAutoSpaTracking=true";
+              var i=d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n,i);
+              w.uetq=w.uetq||[];w.uetq.push("pageLoad");
+            })(window,document,"script","uetq");
           `}
         </Script>
         {/* Microsoft Clarity - Session Recording & Heatmaps */}
