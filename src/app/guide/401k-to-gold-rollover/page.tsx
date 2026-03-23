@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { ArticleMeta } from "@/components/content/ArticleMeta";
 
@@ -113,6 +113,18 @@ export default function RolloverGuidePage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Roll Over Your 401(k) to a Gold IRA",
+                description: "Step-by-step guide to transferring your 401(k) into a Gold IRA tax-free",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Choose a Gold IRA Company", text: "Research and select a reputable Gold IRA company like Augusta Precious Metals. Compare fees, minimums, reviews, and customer service." },
+                    { name: "Open a Self-Directed IRA", text: "Your Gold IRA company helps you open a self-directed IRA account with an approved custodian. This typically takes 1-3 business days." },
+                    { name: "Request a Direct Rollover", text: "Contact your 401(k) plan administrator and request a direct rollover (trustee-to-trustee transfer) to your new Gold IRA custodian. This avoids taxes and penalties." },
+                    { name: "Fund Your Account", text: "Once the rollover is processed (usually 1-3 weeks), the funds arrive in your new Gold IRA account ready to invest." },
+                    { name: "Select and Purchase Metals", text: "Work with your Gold IRA company to choose IRS-approved gold and silver products. Your custodian executes the purchase and arranges storage at an approved depository." },
+                ],
+            })} />
             {/* Header */}
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>

@@ -7,6 +7,7 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Metadata } from "next";
@@ -33,6 +34,23 @@ export default function AugustaVsNoblePage() {
         <main className="min-h-screen flex flex-col bg-slate-50">
             <SchemaScript schema={schema} />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Augusta Precious Metals is the better choice for investors with $50,000+ who want premium education and zero-complaints transparency. Noble Gold is better for smaller investors ($5,000-$25,000) who want the lowest minimum in the industry and a unique Royal Survival Packs option. Augusta has a 4.9/5 TrustPilot rating; Noble Gold has 4.8/5 with an A+ BBB rating."
+                        keyFacts={[
+                            "Augusta minimum: $50,000 | Noble Gold minimum: $5,000 (lowest in the industry)",
+                            "Augusta: zero BBB complaints | Noble Gold: A+ BBB rating with strong reviews",
+                            "Noble Gold offers unique Royal Survival Packs for physical delivery outside IRA",
+                            "Augusta provides 1-on-1 webinar with Harvard economist; Noble Gold offers phone consultations",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             <div className="flex-grow">
                 <header className="bg-slate-50 border-b border-slate-200 py-16">
                     <Container>

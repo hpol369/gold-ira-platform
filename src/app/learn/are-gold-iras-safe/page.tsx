@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { ShieldCheck, Lock, AlertTriangle, Scale, Building, FileCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -97,6 +98,23 @@ export default function AreGoldIrasSafePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Yes, Gold IRAs are safe and fully legal. They were authorized by the Taxpayer Relief Act of 1997, are regulated by the IRS, and your physical metals are stored in insured depositories (like Delaware Depository or Brinks) with comprehensive insurance from carriers like Lloyds of London. Your metals are held in trust — not on the custodians balance sheet — so they are protected even if your custodian goes bankrupt."
+                        keyFacts={[
+                            "Gold IRAs are IRS-approved under the Taxpayer Relief Act of 1997 — 100% legal",
+                            "You have direct title ownership; metals are not custodian assets and cannot be seized by creditors",
+                            "Approved depositories carry comprehensive theft, damage, and loss insurance",
+                            "The biggest risk is choosing a dishonest dealer — not the IRA structure itself",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>

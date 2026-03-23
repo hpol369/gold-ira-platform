@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How to Convert 401k to Gold: Step-by-Step (2026)",
@@ -98,6 +98,18 @@ export default function Convert401kToGoldPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Convert Your 401(k) to Gold",
+                description: "Step-by-step process for converting 401(k) funds into physical gold in an IRA",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Verify 401(k) Eligibility", text: "Confirm your 401(k) is eligible for rollover. If you have left your employer, you can roll over any amount. If still employed, check if your plan allows in-service rollovers." },
+                    { name: "Select a Gold IRA Provider", text: "Choose a reputable Gold IRA company that handles the conversion process. Top-rated companies include Augusta Precious Metals and Goldco." },
+                    { name: "Open Your Gold IRA Account", text: "Complete the application to open a self-directed IRA with an approved custodian. Most applications take 1-3 business days to process." },
+                    { name: "Initiate the Direct Transfer", text: "Request a direct trustee-to-trustee transfer from your 401(k) to your new Gold IRA. This method is tax-free and penalty-free." },
+                    { name: "Purchase IRS-Approved Gold", text: "Once funds arrive, select from IRS-approved gold products (minimum 99.5% purity). Your metals are shipped to an insured, approved depository." },
+                ],
+            })} />
 
             <section className="pt-8 pb-4 bg-white">
                 <Container>

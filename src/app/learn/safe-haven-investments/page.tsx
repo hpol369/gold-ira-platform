@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { ShieldCheck, Coins, Building2, Globe, ArrowRight, TrendingUp, Lock, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
@@ -105,6 +106,23 @@ export default function SafeHavenInvestmentsPage() {
                 { name: "Learn", url: "/learn" },
                 { name: "Safe Haven Investments", url: "/learn/safe-haven-investments" },
             ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Safe haven investments are assets that hold or increase their value during economic downturns, stock market crashes, and geopolitical crises. The top safe haven assets are physical gold, U.S. Treasury bonds, the Swiss franc, and cash. Gold is considered the ultimate safe haven because it has maintained purchasing power for over 5,000 years and has no counterparty risk — it cannot default or go bankrupt."
+                        keyFacts={[
+                            "Gold rose 25% during the 2008 financial crisis while the S&P 500 fell 37%",
+                            "U.S. Treasuries are backed by the full faith of the government but lose value to inflation",
+                            "Cash is safe short-term but guaranteed to lose purchasing power at 3-4% annually",
+                            "Physical gold in an IRA combines safe-haven protection with tax-deferred growth"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>

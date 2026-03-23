@@ -7,6 +7,7 @@ import { VerdictBox } from "@/components/compare/VerdictBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Callout } from "@/components/ui/Callout";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { Metadata } from "next";
 import { ArrowRight, TrendingUp, ShieldCheck, DollarSign, Scale, Coins } from "lucide-react";
 import Link from "next/link";
@@ -106,6 +107,23 @@ export default function GoldVsSilverIraPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Gold IRA and a Silver IRA work identically — same tax rules, same custodians, same IRS requirements — the only difference is the metal inside. Gold is the more stable store of value with lower volatility, while silver offers higher upside potential due to industrial demand (solar panels, EVs, electronics) and a historically undervalued gold-to-silver ratio. Most investors hold both: 60-70% gold for stability and 30-40% silver for growth."
+                        keyFacts={[
+                            "Gold purity requirement: 99.5% (.995); Silver: 99.9% (.999)",
+                            "Gold is ~80x the price of silver per ounce — silver has a lower entry point",
+                            "Silver has dual demand: investment + industrial (solar, EVs, 5G, medical devices)",
+                            "Historical gold-to-silver ratio averages 60:1 — when above 80:1, silver is considered undervalued"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 border-b border-slate-200 text-slate-900 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">

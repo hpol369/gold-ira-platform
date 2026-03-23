@@ -8,6 +8,7 @@ import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -35,6 +36,22 @@ export default function IndirectVsDirectRolloverPage() {
                 { name: "Learn", url: "/learn" },
                 { name: "Direct vs Indirect Rollover", url: "/learn/indirect-vs-direct-rollover" },
             ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A direct rollover transfers retirement funds straight from one custodian to another — you never touch the money, and there are zero taxes or penalties. An indirect rollover sends you a check, and you have 60 days to deposit the full amount into the new account or face income taxes plus a 10% early withdrawal penalty if under 59½. Always choose a direct rollover for a Gold IRA transfer."
+                        keyFacts={[
+                            "Direct rollover: tax-free, penalty-free, no 60-day deadline, unlimited per year",
+                            "Indirect rollover: 20% mandatory withholding, 60-day deadline, limited to one per 12 months",
+                            "If you miss the 60-day window on an indirect rollover, the IRS treats it as a taxable distribution",
+                            "Your Gold IRA company handles all direct rollover paperwork — typical processing: 1-3 weeks"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

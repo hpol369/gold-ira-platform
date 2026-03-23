@@ -11,7 +11,7 @@ import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "457(b) to Gold IRA Rollover Guide: For Government Employees (2026)",
@@ -103,6 +103,18 @@ export default function Page457bRolloverPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Roll Over Your 457(b) to a Gold IRA",
+                description: "Step-by-step guide for government employees to transfer 457(b) funds into a Gold IRA",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Check 457(b) Rollover Rules", text: "Governmental 457(b) plans are eligible for rollover to a Gold IRA. Private 457(b) plans have different rules — verify with your plan administrator." },
+                    { name: "Select a Gold IRA Company", text: "Choose a provider experienced with government retirement plan rollovers. Augusta Precious Metals and Goldco handle 457(b) transfers." },
+                    { name: "Open Your Gold IRA Account", text: "Set up a self-directed IRA through an approved custodian. Your Gold IRA company handles the paperwork." },
+                    { name: "Complete the Direct Transfer", text: "Request a direct rollover to avoid the 20% withholding on indirect transfers. Funds move directly between custodians tax-free." },
+                    { name: "Select and Store Precious Metals", text: "Choose IRS-approved gold and silver products. Metals are stored in an insured depository — not at your home." },
+                ],
+            })} />
             <section className="pt-8 pb-4 bg-white">
                 <Container>
                     <AnswerFirst

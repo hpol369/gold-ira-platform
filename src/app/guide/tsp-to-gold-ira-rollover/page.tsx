@@ -8,7 +8,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, Building2, Lock, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SourcesSection } from "@/components/content/SourcesSection";
 import { createPageMetadata } from "@/lib/metadata";
@@ -98,6 +98,18 @@ export default function TspRolloverPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Roll Over Your TSP to a Gold IRA",
+                description: "Step-by-step guide for federal employees to transfer Thrift Savings Plan funds into a Gold IRA",
+                totalTime: "P28D",
+                steps: [
+                    { name: "Confirm TSP Rollover Eligibility", text: "You can roll over your TSP after separating from federal service, or at age 59½ while still employed. Active employees under 59½ cannot do a full rollover." },
+                    { name: "Choose a Gold IRA Company", text: "Select a Gold IRA provider experienced with TSP rollovers. Augusta Precious Metals and Goldco both handle TSP transfers regularly." },
+                    { name: "Open a Self-Directed Gold IRA", text: "Your Gold IRA company helps you open an account with an IRS-approved custodian. This takes 1-3 business days." },
+                    { name: "Complete TSP Form TSP-99", text: "Submit TSP withdrawal form TSP-99 requesting a direct transfer to your new Gold IRA custodian. Processing typically takes 7-10 business days." },
+                    { name: "Select and Purchase Precious Metals", text: "Once funds arrive in your Gold IRA, work with your advisor to select IRS-approved gold and silver coins or bars for your portfolio." },
+                ],
+            })} />
             {/* Header */}
             <header className="bg-slate-50 py-20 border-b border-slate-200">
                 <Container>

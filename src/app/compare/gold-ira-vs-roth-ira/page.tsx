@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Gold IRA vs. Roth IRA: Which is Better for Your Retirement? (2026)",
@@ -109,6 +110,23 @@ export default function GoldIraVsRothIraPage() {
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Gold IRA holds physical precious metals for inflation protection and crash insurance, while a Roth IRA typically holds stocks and bonds for tax-free growth. You can actually have a Roth Gold IRA — combining physical gold with tax-free withdrawals. For most people over 50, the ideal strategy is a Roth IRA for growth plus a Gold IRA for protection."
+                        keyFacts={[
+                            "Both have the same 2026 contribution limits: $7,000/year ($8,000 if 50+)",
+                            "Roth IRAs have income limits ($161k single / $240k married); Gold IRAs have none",
+                            "A Roth Gold IRA gives you physical gold with zero taxes on withdrawals",
+                            "Gold IRAs protect against market crashes; Roth IRAs are fully exposed to stock volatility",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">

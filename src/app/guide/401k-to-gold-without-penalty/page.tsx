@@ -6,7 +6,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, XCircle, AlertTriangle, ShieldCheck, Clock, Building2 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/metadata";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
@@ -121,6 +121,18 @@ export default function GoldWithoutPenaltyGuidePage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Move 401(k) to Gold Without Penalty",
+                description: "Tax-free, penalty-free process for moving 401(k) funds into a Gold IRA",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Choose a Direct Rollover", text: "Always use a direct rollover (trustee-to-trustee transfer) to avoid the 20% mandatory withholding and potential 10% early withdrawal penalty." },
+                    { name: "Select a Gold IRA Custodian", text: "Choose an IRS-approved custodian through a reputable Gold IRA company. They handle the paperwork and ensure compliance." },
+                    { name: "Complete Rollover Paperwork", text: "Your Gold IRA company provides the forms. You sign, and they coordinate with your 401(k) plan administrator to initiate the transfer." },
+                    { name: "Wait for Fund Transfer", text: "Direct rollovers typically complete in 1-3 weeks. The funds move directly between financial institutions — you never touch the money." },
+                    { name: "Purchase Gold for Your IRA", text: "Once funded, select IRS-approved gold products. Your metals are purchased and stored in an insured depository." },
+                ],
+            })} />
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
@@ -140,6 +141,22 @@ export default function TooLateToSaveRetirementPage() {
                 { name: "Learn", url: "/learn" },
                 { name: "Too Late to Save for Retirement?", url: "/learn/too-late-to-save-retirement" },
             ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="It is never too late to improve your retirement outlook, but the strategy changes dramatically after age 50. Instead of focusing on growth, the priority shifts to protection — preserving what you have already saved from market crashes and inflation. Catch-up contributions ($8,000/year for IRAs, $31,000/year for 401ks in 2026), tax-free Roth conversions, and diversifying into tangible assets like gold can significantly strengthen a late-start retirement plan."
+                        keyFacts={[
+                            "Catch-up contributions at 50+: extra $1,000/year for IRAs, extra $7,500/year for 401(k)s",
+                            "Social Security delayed to age 70 increases benefits by 8% per year after full retirement age",
+                            "A Gold IRA allocation of 10-15% protects against the sequence-of-returns risk that devastates late retirees",
+                            "Downsizing, eliminating debt, and part-time work can close a $200k+ retirement gap",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">

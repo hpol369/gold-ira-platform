@@ -20,6 +20,7 @@ import {
     Landmark
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Real Estate IRA Guide 2026: Invest in Property Tax-Free",
@@ -93,6 +94,23 @@ export default function RealEstateIraPage() {
             />
 
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Real Estate IRA is a self-directed Individual Retirement Account that lets you invest in rental properties, commercial buildings, raw land, and real estate notes using tax-advantaged retirement funds. You can buy investment property with your IRA and all rental income and appreciation grows tax-deferred (Traditional) or completely tax-free (Roth)."
+                        keyFacts={[
+                            "All rental income flows back into the IRA tax-deferred — no annual tax on rent",
+                            "IRS rules: you cannot live in or personally use the property, and cannot do repairs yourself",
+                            "Non-recourse loans available for leveraged real estate purchases inside an IRA",
+                            "Top custodians: Equity Trust, Entrust, IRA Financial Group — starting at $50/year",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden bg-slate-50">

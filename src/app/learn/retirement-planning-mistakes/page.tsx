@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { AlertTriangle, TrendingDown, Clock, PieChart, ArrowRight, DollarSign, ShieldCheck, Target } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
@@ -108,6 +109,23 @@ export default function RetirementPlanningMistakesPage() {
                 { name: "Learn", url: "/learn" },
                 { name: "Retirement Planning Mistakes", url: "/learn/retirement-planning-mistakes" },
             ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The biggest retirement planning mistakes are starting too late, keeping 100% of savings in stocks, ignoring inflation, underestimating healthcare costs, and not diversifying beyond Wall Street. For people over 50, the most costly mistake is staying fully invested in stocks when a single market crash can cut your portfolio by 30-40% right before you need the money."
+                        keyFacts={[
+                            "Average American has $87,000 saved at age 55 — well below the $500k+ most advisors recommend",
+                            "A 40% market crash at age 60 requires a 67% gain just to break even",
+                            "Healthcare costs in retirement average $315,000 per couple (Fidelity 2026 estimate)",
+                            "Inflation at 3.5% cuts your purchasing power by 50% over 20 years",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
                 <Container>

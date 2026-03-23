@@ -7,6 +7,7 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, Building2, Scale, Lock, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
@@ -57,6 +58,22 @@ export default function SelfDirectedIraGoldPage() {
                 { name: "Learn", url: "/learn" },
                 { name: "Self-Directed IRA Gold Investing", url: "/learn/self-directed-ira-gold" },
             ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A self-directed IRA for gold is a retirement account that lets you hold physical gold, silver, platinum, and palladium instead of just stocks and bonds. Unlike regular IRAs limited to paper assets, a self-directed Gold IRA gives you full control over your investment choices through a specialized custodian who handles IRS compliance and depository storage."
+                        keyFacts={[
+                            "Self-directed means you choose the assets — the custodian handles IRS paperwork",
+                            "Same tax benefits as a regular IRA: tax-deferred growth or tax-free (Roth)",
+                            "Requires an IRS-approved custodian and depository — you cannot store metals at home",
+                            "2026 limits: $7,000/year ($8,000 if 50+); rollovers from 401k/IRA have no dollar limit",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 {/* Header */}

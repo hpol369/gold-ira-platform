@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import {
     ArrowRight,
     Shield,
@@ -71,6 +72,22 @@ export default function CryptoIRAPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Crypto IRA (Bitcoin IRA) is a self-directed Individual Retirement Account that lets you hold Bitcoin, Ethereum, and other cryptocurrencies with tax-deferred or tax-free growth. Unlike buying crypto on Coinbase, a Crypto IRA shelters your gains from capital gains tax — potentially saving tens of thousands of dollars on a portfolio that appreciates significantly."
+                        keyFacts={[
+                            "Tax advantage: no capital gains tax on crypto trades inside the IRA",
+                            "Top providers: iTrustCapital, Alto IRA, Bitcoin IRA — minimum investments from $1,000",
+                            "Available as Traditional (tax-deferred) or Roth (tax-free withdrawals)",
+                            "Can hold Bitcoin, Ethereum, Solana, and 50+ other cryptocurrencies depending on provider",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Hero Section */}
             <header className="relative py-20 overflow-hidden bg-slate-50">

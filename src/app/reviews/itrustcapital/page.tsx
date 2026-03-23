@@ -8,6 +8,8 @@ import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { reviewSchema } from "@/lib/schema";
 import {
     CheckCircle2,
     XCircle,
@@ -52,6 +54,7 @@ export default function ITrustCapitalReviewPage() {
 
     return (
         <main className="min-h-screen flex flex-col bg-white">
+            <SchemaScript schema={reviewSchema({ itemName: "iTrustCapital", reviewBody: "iTrustCapital offers a unique combination of crypto and precious metals IRA investing with low fees and a modern digital platform. They are best for tech-savvy investors who want both Bitcoin and gold in their retirement account.", ratingValue: 4.2, url: "/reviews/itrustcapital" })} />
             <Navbar />
 
             {/* Hero Section */}

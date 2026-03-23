@@ -10,7 +10,7 @@ import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "403(b) to Gold IRA Rollover Guide: For Teachers & Nurses (2026)",
@@ -94,6 +94,18 @@ export default function TsaRolloverPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Roll Over Your 403(b) to a Gold IRA",
+                description: "Step-by-step process for transferring 403(b) retirement funds into physical gold",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Confirm 403(b) Rollover Eligibility", text: "You can roll over your 403(b) after leaving your employer or at age 59½ while still employed if your plan allows in-service distributions." },
+                    { name: "Choose a Gold IRA Provider", text: "Select a reputable Gold IRA company experienced with 403(b) rollovers. Compare fees, minimums, and customer reviews." },
+                    { name: "Open a Self-Directed Gold IRA", text: "Complete the application to open a self-directed IRA with an IRS-approved custodian. Typically takes 1-3 business days." },
+                    { name: "Initiate a Direct Rollover", text: "Request a direct trustee-to-trustee transfer from your 403(b) plan to your Gold IRA custodian. This avoids taxes and penalties." },
+                    { name: "Purchase IRS-Approved Gold", text: "Select gold coins or bars meeting the 99.5% purity requirement. Your custodian arranges purchase and insured depository storage." },
+                ],
+            })} />
             <section className="pt-8 pb-4 bg-white">
                 <Container>
                     <AnswerFirst

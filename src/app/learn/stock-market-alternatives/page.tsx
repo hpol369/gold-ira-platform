@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import { Coins, Building2, Home, BarChart3, ArrowRight, ShieldCheck, TrendingUp, Landmark } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -101,6 +102,23 @@ export default function StockMarketAlternativesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The best stock market alternatives for retirement savings include physical gold and silver IRAs, real estate (rental properties through a self-directed IRA), Treasury bonds (I-bonds and TIPS), high-yield savings accounts, and fixed annuities. For people over 50, a Gold IRA is the most popular stock market alternative because it provides inflation protection, zero counterparty risk, and the same tax benefits as a regular IRA."
+                        keyFacts={[
+                            "Gold IRAs: tax-deferred growth, inflation hedge, no correlation to stock market",
+                            "Real Estate IRAs: rental income grows tax-free, tangible asset with appreciation",
+                            "I-Bonds: government-backed, inflation-adjusted, risk-free (limited to $10k/year)",
+                            "Fixed annuities: guaranteed income for life, but lower returns and less flexibility"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>

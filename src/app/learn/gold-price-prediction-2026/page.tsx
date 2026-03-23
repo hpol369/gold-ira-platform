@@ -8,6 +8,7 @@ import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -105,6 +106,21 @@ export default function GoldPricePrediction2026Page() {
             <SchemaScript schema={articleSchema({ title: "Gold Price Prediction 2026: Expert Forecasts & Analysis", description: "What will gold prices do in 2026? Expert predictions from major banks, analysts, and market factors driving gold. Updated analysis for investors.", slug: "/learn/gold-price-prediction-2026" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Gold Price Prediction 2026", url: "/learn/gold-price-prediction-2026" }])} />
 
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Gold price forecasts for 2026 range from $2,400 to $3,200 per ounce according to major banks and analysts. Goldman Sachs, JP Morgan, and Bank of America have all raised gold targets citing central bank buying, geopolitical uncertainty, and persistent inflation. The key drivers are record central bank purchases (1,000+ tons annually since 2022), de-dollarization trends, and potential Fed rate cuts."
+                        keyFacts={[
+                            "Major bank consensus: $2,400-$3,200/oz range for 2026",
+                            "Central banks bought 1,000+ tons of gold annually since 2022 — a 55-year high",
+                            "Gold has outperformed the S&P 500 over the past 5 years",
+                            "Key catalysts: Fed rate cuts, geopolitical tensions, US debt exceeding $36 trillion",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">

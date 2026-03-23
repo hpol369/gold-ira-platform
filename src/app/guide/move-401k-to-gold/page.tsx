@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How to Move 401k to Gold: Easy Guide (2026)",
@@ -87,6 +87,18 @@ export default function Move401kToGoldPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Move Your 401(k) to Gold",
+                description: "Simple 5-step process for moving retirement savings from a 401(k) into physical gold",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Decide How Much to Move", text: "Most advisors recommend moving 10-20% of your 401(k) into gold — enough for protection without sacrificing growth potential." },
+                    { name: "Pick a Gold IRA Company", text: "Compare top providers on fees, minimums, and customer service. Augusta Precious Metals is rated best for accounts over $50,000." },
+                    { name: "Open Your Gold IRA", text: "Complete a quick application to set up a self-directed IRA with an approved custodian. Takes 1-3 business days." },
+                    { name: "Transfer Funds Tax-Free", text: "Request a direct rollover from your 401(k) to your Gold IRA. Direct transfers are tax-free and penalty-free regardless of your age." },
+                    { name: "Buy Physical Gold", text: "Select IRS-approved gold coins or bars. Your custodian executes the purchase and stores your metals in an insured depository." },
+                ],
+            })} />
 
             <section className="pt-8 pb-4 bg-white">
                 <Container>

@@ -7,7 +7,7 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, ShieldCheck, TrendingDown, Coins, BarChart3, AlertTriangle, PieChart } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SourcesSection } from "@/components/content/SourcesSection";
@@ -131,6 +131,18 @@ export default function Protect401kFromCrashPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Protect Your 401(k) from a Stock Market Crash",
+                description: "Practical steps to shield your retirement savings from market downturns",
+                totalTime: "P14D",
+                steps: [
+                    { name: "Assess Your Current Risk", text: "Review your 401(k) allocation. If you are over 50 and more than 70% in stocks, you are overexposed to a market crash." },
+                    { name: "Diversify into Precious Metals", text: "Roll over 10-20% of your 401(k) into a Gold IRA. Gold historically rises during market crashes — it gained 25% during the 2008 crisis." },
+                    { name: "Rebalance to Age-Appropriate Mix", text: "Shift remaining 401(k) funds toward more conservative options: stable value funds, bond funds, and money market accounts." },
+                    { name: "Set Up Automatic Rebalancing", text: "Enable quarterly rebalancing in your 401(k) to maintain your target allocation and prevent drift back into high-risk positions." },
+                    { name: "Review and Adjust Annually", text: "As you approach retirement, gradually increase your gold allocation and decrease stock exposure. Target 30-40% conservative assets by retirement." },
+                ],
+            })} />
             {/* Header */}
             <header className="bg-slate-100 py-16 border-b border-slate-200">
                 <Container>

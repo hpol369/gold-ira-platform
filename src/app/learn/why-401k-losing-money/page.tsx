@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { breadcrumbSchema } from "@/lib/schema";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
@@ -141,6 +142,23 @@ export default function Why401kLosingMoneyPage() {
                 { name: "Learn", url: "/learn" },
                 { name: "Why Is My 401(k) Losing Money?", url: "/learn/why-401k-losing-money" },
             ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Your 401(k) loses money when the stock market drops because most 401(k) plans are invested in stock-based mutual funds and target-date funds that track the market. During the 2008 crash, the average 401(k) lost 31%. During the 2022 bear market, the average balance dropped 23%. The closer you are to retirement, the more dangerous these losses become because you have less time to recover."
+                        keyFacts={[
+                            "Average 401(k) lost 31% in 2008 and 23% in 2022 — both within a 15-year span",
+                            "A 40% loss at age 60 requires a 67% gain just to get back to even",
+                            "Sequence-of-returns risk: losses in the first 5 years of retirement can permanently deplete savings",
+                            "Diversifying 10-20% into a Gold IRA provides crash protection without abandoning your 401(k)"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-slate-50 py-16 border-b border-slate-200">
                 <Container>

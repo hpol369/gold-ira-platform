@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How to Transfer 401k to Gold: Simple Guide (2026)",
@@ -98,6 +98,18 @@ export default function Transfer401kToGoldPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Transfer Your 401(k) to Gold",
+                description: "Complete guide to transferring 401(k) retirement savings into physical gold",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Research Gold IRA Companies", text: "Compare top-rated Gold IRA companies based on fees, minimums, BBB ratings, and customer reviews. Request free information kits." },
+                    { name: "Open a Self-Directed IRA", text: "Work with your chosen Gold IRA company to open a self-directed IRA through an approved custodian." },
+                    { name: "Request Direct Rollover", text: "Initiate a direct rollover from your 401(k) plan to your new Gold IRA. The funds transfer directly between custodians with zero tax consequences." },
+                    { name: "Choose Your Metals", text: "Select IRS-approved gold products including American Gold Eagles, Canadian Maple Leafs, or gold bars meeting the 99.5% purity requirement." },
+                    { name: "Secure Depository Storage", text: "Your custodian arranges insured storage at an IRS-approved depository such as Delaware Depository or Brinks." },
+                ],
+            })} />
 
             <section className="pt-8 pb-4 bg-white">
                 <Container>

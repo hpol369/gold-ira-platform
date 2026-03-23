@@ -21,6 +21,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Solo 401k Guide 2026: Best Plan for Self-Employed",
@@ -94,6 +95,23 @@ export default function Solo401kPage() {
             />
 
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Solo 401(k) is a retirement plan designed for self-employed individuals and small business owners with no full-time employees (except a spouse). It allows you to contribute up to $69,000 per year in 2026 — far more than a traditional IRA ($7,000) or SEP IRA. You can also invest in alternative assets like real estate, precious metals, and crypto through a self-directed Solo 401(k)."
+                        keyFacts={[
+                            "2026 contribution limit: $69,000 ($76,500 if 50+) — highest of any individual retirement plan",
+                            "Dual contributions: employee deferral ($23,500) + employer profit sharing (up to 25%)",
+                            "Available to freelancers, contractors, sole proprietors, and single-member LLCs",
+                            "Self-directed version allows gold, real estate, crypto, and private equity investments",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden bg-slate-50">
