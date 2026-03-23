@@ -608,7 +608,7 @@ export default function Is401kFDICInsuredPage() {
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">You didn&apos;t work 30 years to watch a crash wipe it out. Physical gold doesn&apos;t care what the stock market does.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <LeadCaptureButton variant="default" source="is-401k-fdic-insured" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
-                                        Get Your Free Gold IRA Guide <ArrowRight className="ml-2 w-5 h-5" />
+                                        Get Your Free Precious Metals Guide <ArrowRight className="ml-2 w-5 h-5" />
                                     </LeadCaptureButton>
                                     <Button variant="outline" size="xl" asChild className="border-white/30 text-[#000080] hover:bg-slate-200">
                                         <Link href="/what-is-a-gold-ira">Learn About Gold IRAs</Link>

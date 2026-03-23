@@ -280,7 +280,7 @@ export default async function NewsArticlePage({ params }: Props) {
                                     purchasing power from inflation and market volatility.
                                 </p>
                                 <LeadCaptureButton variant="default" source={`news-${slug}`} className="bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold px-6 py-3 rounded-lg inline-flex items-center">
-                                    Get Your Free Gold IRA Guide <ArrowRight className="ml-2 w-4 h-4" />
+                                    Get Your Free Precious Metals Guide <ArrowRight className="ml-2 w-4 h-4" />
                                 </LeadCaptureButton>
                             </div>
                         </article>

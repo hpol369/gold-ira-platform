@@ -550,7 +550,7 @@ export default function RiskAnalyzerPage() {
                         source="401k-risk-analyzer-cta"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-[#B22234] text-slate-900 font-bold text-lg rounded-xl hover:bg-[#8b1c2a] transition-all shadow-lg shadow-amber-500/25"
                       >
-                        Get Your Free Gold IRA Guide
+                        Get Your Free Precious Metals Guide
                         <ArrowRight className="h-5 w-5" />
                       </LeadCaptureButton>
                       <p className="text-slate-500 text-xs mt-3">

@@ -54,7 +54,7 @@ export function StickyMobileCTAGeneric() {
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-1.5 text-green-700 text-xs font-bold">
               <Shield className="h-3 w-3" />
-              <span>Free Gold IRA Kit</span>
+              <span>Free Precious Metals Kit</span>
             </div>
             <p className="text-slate-900 text-sm font-bold truncate">
               See if a Gold IRA is right for you

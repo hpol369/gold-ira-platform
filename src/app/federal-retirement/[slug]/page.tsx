@@ -388,7 +388,7 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
               </ul>
               <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
                 <Link href="/get-started">
-                  Get Your Free Gold IRA Kit <ArrowRight className="ml-2 h-4 w-4" />
+                  Get Your Free Precious Metals Kit <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>

@@ -78,7 +78,7 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                   <span>Our #1 Pick</span>
                 </div>
                 <p className="text-slate-900 text-sm font-bold truncate">
-                  Get Your Free Gold IRA Kit
+                  Get Your Free Precious Metals Kit
                 </p>
               </div>
               <button

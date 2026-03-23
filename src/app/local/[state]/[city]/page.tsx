@@ -354,7 +354,7 @@ export default async function CityPage({ params }: Props) {
                                         source={`city-${state}-${city}-cta`}
                                         className="inline-flex items-center justify-center rounded-md font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-6 text-base"
                                     >
-                                        Get Your Free Gold IRA Kit
+                                        Get Your Free Precious Metals Kit
                                     </LeadCaptureButton>
                                 </div>
                             </div>

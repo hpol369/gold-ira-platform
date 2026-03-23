@@ -7,7 +7,7 @@ import { Shield, ArrowRight, Users } from "lucide-react";
 interface SidebarAuditWidgetProps {
   /** Source page for tracking (e.g. "learn-gold-ira-fees") */
   trackSource?: string;
-  /** Custom headline (overrides "Free Gold IRA Kit") */
+  /** Custom headline (overrides "Free Precious Metals Kit") */
   headline?: string;
   /** Custom body text (overrides "Get matched with the right company in 60 seconds") */
   body?: string;
@@ -37,7 +37,7 @@ export function SidebarAuditWidget({ trackSource, headline, body }: SidebarAudit
             <Shield className="h-5 w-5 text-[#B22234]" />
           </div>
           <h4 className="font-serif font-bold text-[#000080] text-sm">
-            {headline || "Free Gold IRA Kit"}
+            {headline || "Free Precious Metals Kit"}
           </h4>
         </div>
 

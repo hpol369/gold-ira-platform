@@ -119,7 +119,7 @@ export function ExitIntentPopup() {
                 <div className="text-center py-4">
                   <CheckCircle className="w-14 h-14 text-green-500 mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-[#000080] mb-2">You&apos;re In!</h3>
-                  <p className="text-slate-500 text-sm">Check your inbox for the Gold IRA guide.</p>
+                  <p className="text-slate-500 text-sm">Check your inbox for the precious metals guide.</p>
                 </div>
               ) : (
                 <>
@@ -136,7 +136,7 @@ export function ExitIntentPopup() {
                   </div>
 
                   <p className="text-slate-500 text-sm mb-5 leading-relaxed">
-                    Get our free <span className="font-semibold text-slate-700">2026 Gold IRA Investor&apos;s Guide</span> — the same research that helped 10,000+ Americans protect their retirement.
+                    Get our free <span className="font-semibold text-slate-700">2026 Precious Metals Investor&apos;s Guide</span> — the same research that helped 10,000+ Americans protect their retirement.
                   </p>
 
                   {/* Benefits */}
@@ -147,7 +147,7 @@ export function ExitIntentPopup() {
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-600">
                       <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                      Top 5 Gold IRA companies ranked
+                      Top 5 precious metals IRA companies ranked
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-600">
                       <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />

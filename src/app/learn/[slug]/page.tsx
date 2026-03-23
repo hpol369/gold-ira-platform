@@ -609,7 +609,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                   </ul>
                   <Button variant="gold" size="lg" asChild>
                     <Link href="/quiz">
-                      Get Your Free Gold IRA Guide <ArrowRight className="ml-2 h-4 w-4" />
+                      Get Your Free Precious Metals Guide <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </div>
