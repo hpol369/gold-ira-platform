@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "created": "2026-03-23",
+    "purpose": "Track all backlink outreach campaigns — broken links, guest posts, resource pages, statistics citations"
+  },
+  "campaigns": [
+    {
+      "id": "BL-001",
+      "type": "broken_link",
+      "target_domain": "forbes.com",
+      "target_dr": 94,
+      "contact_name": null,
+      "contact_email": null,
+      "date_pitched": null,
+      "date_followed_up": null,
+      "our_page": "/guide/is-gold-a-good-investment",
+      "status": "not_started",
+      "result": null,
+      "notes": "Find Forbes 'How To Invest In Gold' author on LinkedIn"
+    },
+    {
+      "id": "BL-002",
+      "type": "broken_link",
+      "target_domain": "investopedia.com",
+      "target_dr": 92,
+      "contact_name": null,
+      "contact_email": null,
+      "date_pitched": null,
+      "date_followed_up": null,
+      "our_page": "/best-gold-ira-companies",
+      "status": "not_started",
+      "result": null,
+      "notes": "Find Investopedia retirement section editor"
+    },
+    {
+      "id": "BL-005",
+      "type": "broken_link",
+      "target_domain": "cbsnews.com",
+      "target_dr": 92,
+      "contact_name": null,
+      "contact_email": null,
+      "date_pitched": null,
+      "date_followed_up": null,
+      "our_page": "/best-gold-ira-companies",
+      "status": "not_started",
+      "result": null,
+      "notes": "Find CBS MoneyWatch author"
+    }
+  ],
+  "stats": {
+    "total_pitched": 0,
+    "total_won": 0,
+    "total_rejected": 0,
+    "total_pending": 0
+  }
+}

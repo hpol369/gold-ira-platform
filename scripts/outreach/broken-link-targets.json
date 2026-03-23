@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "generated": "2026-03-23",
+    "source": "Ahrefs competitor broken backlink analysis",
+    "competitors_analyzed": ["augustapreciousmetals.com", "goldco.com", "birchgold.com"],
+    "status_legend": {
+      "ready": "We have matching content — pitch immediately",
+      "needs_content": "Need to create matching page first",
+      "pitched": "Outreach email sent",
+      "won": "Link updated to point to us",
+      "rejected": "Site declined or no response after 2 follow-ups"
+    }
+  },
+  "targets": [
+    {
+      "id": "BL-001",
+      "source_domain": "forbes.com",
+      "source_dr": 94,
+      "source_url": "Forbes 'How To Invest In Gold' article",
+      "broken_url": "Augusta affiliate landing page (broken)",
+      "our_replacement": "/guide/is-gold-a-good-investment",
+      "pitch_angle": "Independent, non-affiliate gold investment guide with 2026 data, IRS citations, and comparison tables",
+      "contact_approach": "Find article author via LinkedIn, pitch as updated resource",
+      "status": "ready",
+      "priority": "P1",
+      "notes": "Forbes links to all 3 competitors. Getting in here is high value."
+    },
+    {
+      "id": "BL-002",
+      "source_domain": "investopedia.com",
+      "source_dr": 92,
+      "source_url": "Investopedia 'Best Gold IRAs' article",
+      "broken_url": "Augusta contact page (broken)",
+      "our_replacement": "/best-gold-ira-companies",
+      "pitch_angle": "Comprehensive 2026 gold IRA company comparison with fee breakdowns, BBB ratings, and user reviews",
+      "contact_approach": "Find Investopedia retirement editor, pitch as citation source",
+      "status": "ready",
+      "priority": "P1",
+      "notes": "6 dofollow links from Investopedia to Augusta. Getting cited as a review source is realistic."
+    },
+    {
+      "id": "BL-003",
+      "source_domain": "prnewswire.com",
+      "source_dr": 92,
+      "source_url": "PR Newswire Augusta coverage",
+      "broken_url": "Augusta Joe Montana celebrity page (broken)",
+      "our_replacement": "/learn/gold-ira-celebrity-endorsements",
+      "pitch_angle": "Analysis of celebrity endorsements in gold IRA industry — consumer protection angle",
+      "contact_approach": "PR Newswire editorial team",
+      "status": "needs_content",
+      "priority": "P2",
+      "notes": "Would need to create a celebrity endorsement analysis page first"
+    },
+    {
+      "id": "BL-004",
+      "source_domain": "globenewswire.com",
+      "source_dr": 91,
+      "source_url": "GlobeNewsWire Augusta recognition article",
+      "broken_url": "Augusta gold IRA recognition page (broken)",
+      "our_replacement": "/best-gold-ira-companies",
+      "pitch_angle": "Updated 2026 gold IRA company rankings with industry recognition data",
+      "contact_approach": "GlobeNewsWire editorial submissions",
+      "status": "ready",
+      "priority": "P2",
+      "notes": "Wire services may not update old articles, but worth trying"
+    },
+    {
+      "id": "BL-005",
+      "source_domain": "cbsnews.com",
+      "source_dr": 92,
+      "source_url": "CBS News 'Best gold IRA companies' article",
+      "broken_url": "Goldco free silver promo page (broken)",
+      "our_replacement": "/best-gold-ira-companies",
+      "pitch_angle": "Independent comparison resource with no affiliate bias, updated fee data, BBB ratings",
+      "contact_approach": "Find CBS MoneyWatch author, pitch via email/LinkedIn",
+      "status": "ready",
+      "priority": "P1",
+      "notes": "CBS has 13 links to Goldco. Their retirement/money editors are reachable."
+    },
+    {
+      "id": "BL-006",
+      "source_domain": "iheart.com",
+      "source_dr": 91,
+      "source_url": "iHeart podcast pages (multiple)",
+      "broken_url": "Multiple broken Goldco affiliate links",
+      "our_replacement": "/guide/gold-ira-rollover",
+      "pitch_angle": "Educational gold IRA rollover guide — better than a broken affiliate link for listener experience",
+      "contact_approach": "iHeart podcast producers via show contact forms",
+      "status": "ready",
+      "priority": "P3",
+      "notes": "Podcast show notes rarely get updated. Lower success rate but high DR."
+    },
+    {
+      "id": "BL-007",
+      "source_domain": "prweb.com",
+      "source_dr": 90,
+      "source_url": "PRWeb Goldco articles (multiple)",
+      "broken_url": "Old Goldco 'how to start a gold IRA' pages",
+      "our_replacement": "/guide/how-does-a-gold-ira-work",
+      "pitch_angle": "Comprehensive 2026 guide to starting a gold IRA with step-by-step instructions",
+      "contact_approach": "PRWeb editorial team",
+      "status": "ready",
+      "priority": "P2",
+      "notes": "Wire services — same caveat as GlobeNewsWire"
+    },
+    {
+      "id": "BL-008",
+      "source_domain": "forexfactory.com",
+      "source_dr": 76,
+      "source_url": "ForexFactory forum threads (multiple)",
+      "broken_url": "Multiple broken Birch Gold news/analysis links",
+      "our_replacement": "/news (matching topic articles)",
+      "pitch_angle": "Updated market analysis and retirement planning data — direct topic match",
+      "contact_approach": "Forum moderators or thread authors via PM",
+      "status": "ready",
+      "priority": "P2",
+      "notes": "Forum links are dofollow. Birch Gold has multiple broken links here. Match specific news topics to our articles."
+    }
+  ]
+}
