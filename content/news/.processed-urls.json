@@ -1,373 +1,5 @@
 [
   {
-    "url": "https://www.marketwatch.com/story/software-stocks-are-in-bargain-territory-and-thats-reviving-an-age-old-debate-7a098406?mod=mw_rss_topstories",
-    "timestamp": 1774092951815
-  },
-  {
-    "url": "https://www.marketwatch.com/story/heres-the-exact-oil-price-that-would-tip-the-u-s-into-a-recession-and-were-getting-closer-as-the-iran-conflict-drags-on-35a7e4ca?mod=mw_rss_topstories",
-    "timestamp": 1774092951815
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-interest-rates-today-saturday-march-21-2026-100000860.html",
-    "timestamp": 1774092951815
-  },
-  {
-    "url": "https://silverseek.com/article/gold-joins-silver-launchpad",
-    "timestamp": 1774093995556
-  },
-  {
-    "url": "https://finance.yahoo.com/personal-finance/mortgages/article/how-to-buy-a-house-as-a-single-woman-181344633.html",
-    "timestamp": 1774093995556
-  },
-  {
-    "url": "https://www.marketwatch.com/story/retirees-steel-yourselves-global-crises-might-rattle-the-markets-but-they-dont-have-to-ruin-your-retirement-b73fcb7a?mod=mw_rss_topstories",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/healthcare/articles/nyxoah-details-early-u-genio-120703025.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-price-prediction-one-analyst-120637579.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/insider-just-sold-10-000-120525101.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/where-sofi-technologies-5-years-120500077.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/articles/texas-man-frustrated-800-purchase-120000918.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/options/articles/americans-2-1t-sitting-abandoned-120000301.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://www.marketwatch.com/story/financial-markets-are-responding-to-the-iran-conflict-in-unexpected-ways-leaving-some-investors-puzzled-0ce070d9?mod=mw_rss_topstories",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/commodities/articles/jpmorgan-ceo-jamie-dimon-said-115900916.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/economy/policy/articles/tax-refunds-falling-short-trump-000842164.html",
-    "timestamp": 1774095800274
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/millionaire-next-door-adopt-wealthy-130000234.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://www.marketwatch.com/story/jensen-huang-once-said-there-was-no-evidence-nvidia-chips-were-getting-diverted-to-china-the-scandal-at-super-micro-suggests-otherwise-12ec0904?mod=mw_rss_topstories",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/cn-railway-cni-delivers-strong-125609008.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://www.investors.com/news/sp-500-stocks-five-ai-stocks-near-buy-points/?src=A00220&yptr=yahoo",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/union-pacific-corporation-unp-gains-125434073.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/l-b-foster-company-fstr-125309163.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/gatx-corporation-gatx-strengthens-rail-125157764.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-being-valued-dying-125100643.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/freightcar-america-rail-earnings-miss-125012910.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-just-had-worst-start-125000690.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-corporation-msft-starts-validating-124639981.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://www.investors.com/research/best-stocks-seven-magnificent-stocks-earnings-growth/?src=A00220&yptr=yahoo",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-corporation-nvda-unveils-agent-124332917.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/down-21-oracle-most-undervalued-124200069.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/1-000-vti-etf-could-123500235.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-yields-trump-iran-war-winding-down/?src=A00220&yptr=yahoo",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/news/property-taxes-are-skyrocketing-but-states-are-learning-that-cutting-them-has-major-consequences-123024706.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/ukrainian-tech-startup-swarmer-ipo-123152752.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/economy/policy/articles/2027-social-security-cola-probably-123103279.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://www.marketwatch.com/story/americans-are-about-to-get-a-crash-course-in-the-global-economy-higher-prices-are-coming-for-pineapples-plastic-chocolate-and-berries-0be67162?mod=mw_rss_topstories",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/better-ai-stock-alphabet-vs-122600390.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/1-brilliant-driverless-vehicle-stock-122500299.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-hoards-cash-americans-122000149.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/ray-dalio-says-ai-investors-121700871.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/technology/articles/openai-nearly-double-workforce-8-120814494.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/options/articles/hard-workers-raiding-401-k-114500171.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/currencies/articles/someone-accidentally-deposited-150k-bank-113000469.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/millennial-made-1m-trading-meme-111500378.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/news/wall-street-priced-a-swift-bombing-campaign-what-it-got-was-an-energy-war-100009193.html",
-    "timestamp": 1774098951429
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/1-clear-signal-buy-international-133500244.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://www.investing.com/news/cryptocurrency-news/analyst-lists-6-key-elements-of-emerging-bitcoin-market-structure-4574056",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/chevron-cvx-best-stock-benefit-132440515.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-ko-best-forever-132148478.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-just-delivered-incredible-132000385.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/emerging-markets-outperforming-schwab-etf-130500868.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/csx-corporation-csx-one-best-130230463.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/greenbrier-companies-gbx-secures-300m-130125501.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/options/articles/5-retirement-tax-myths-sound-130015023.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/soundhound-grew-revenue-59-stock-130002660.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/energy/articles/standard-uranium-kicks-off-rocas-130002042.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/canadian-pacific-kansas-city-cp-130001649.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/trinity-industries-trn-raises-dividend-125821640.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/norfolk-southern-corporation-nsc-showcases-125717569.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/articles/3-mistakes-wipe-million-dollar-125304222.html",
-    "timestamp": 1774101209535
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/surprise-america-chosen-favorite-fast-135600393.html",
-    "timestamp": 1774102564843
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/t-mobile-verizon-t-discounts-133737921.html",
-    "timestamp": 1774102564843
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/healthcare/articles/1-7-americans-borrowed-healthcare-133735250.html",
-    "timestamp": 1774102564843
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-said-killed-dow-110000461.html",
-    "timestamp": 1774102564843
-  },
-  {
-    "url": "https://finance.yahoo.com/news/retiring-overseas-answering-readers-big-questions-143003952.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-networks-acquired-3-144000062.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/usa-rare-earth-vs-mp-143500977.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/options/articles/1b-loan-0-interest-sounds-143108380.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/apple-winning-chinas-brutal-smartphone-143107839.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-bank-30-billion-private-142841517.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/youd-invested-1-000-costco-141300942.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/news/strategy-now-holds-63-billion-202322517.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/ondas-repeat-last-281-gain-140726085.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/kratos-vs-rocket-lab-under-140500988.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/insulet-stock-underperforming-dow-112812017.html",
-    "timestamp": 1774104544115
-  },
-  {
-    "url": "https://finance.yahoo.com/news/the-fallout-from-oils-surge-is-spreading-as-forecasts-for-crude-keep-rising-150447796.html",
-    "timestamp": 1774106107176
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/technology/articles/nextech3d-ai-hits-profitability-milestone-144502309.html",
-    "timestamp": 1774106107176
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/could-nvidia-stock-turn-10-152203616.html",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/energy/articles/nuclear-energy-stock-rising-oil-152200056.html",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/energy/articles/occidental-petroleum-oxy-best-energy-152150255.html",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/kraft-heinz-khc-best-stock-151151571.html",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://www.barrons.com/articles/iran-war-oil-stock-market-big-tech-value-985f6c32?siteid=yhoof2&yptr=yahoo",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/commodities/articles/silver-price-today-warning-bigger-150700500.html",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/oracles-553-billion-backlog-either-150500425.html",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/osi-systems-highlights-strong-bookings-150212846.html",
-    "timestamp": 1774107789791
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/energy/articles/3-possible-oil-price-scenarios-153500883.html",
-    "timestamp": 1774108522287
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/energy/articles/asia-lng-scramble-gives-venture-153300843.html",
-    "timestamp": 1774108522287
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/carl-icahn-once-fired-12-153132574.html",
-    "timestamp": 1774108522287
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/technology/articles/exclusive-aduro-moves-closer-commercializing-153129453.html",
-    "timestamp": 1774108522287
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/1-rule-3-stocks-why-155000600.html",
-    "timestamp": 1774109723358
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/energy/articles/iran-war-just-triggered-bigger-155000889.html",
-    "timestamp": 1774109723358
-  },
-  {
-    "url": "https://finance.yahoo.com/sectors/energy/articles/ocean-power-technologies-record-backlog-154503189.html",
-    "timestamp": 1774109723358
-  },
-  {
-    "url": "https://finance.yahoo.com/markets/stocks/articles/better-real-estate-etf-flexshares-153905531.html",
-    "timestamp": 1774109723358
-  },
-  {
     "url": "https://finance.yahoo.com/sectors/healthcare/articles/viemed-healthcare-highlights-growth-diversification-210252334.html",
     "timestamp": 1774214320575
   },
@@ -2362,5 +1994,181 @@
   {
     "url": "https://finance.yahoo.com/personal-finance/mortgages/article/selling-and-buying-a-house-at-the-same-time-184933881.html",
     "timestamp": 1774696770639
+  },
+  {
+    "url": "https://www.marketwatch.com/story/palo-alto-networks-ceo-sends-a-message-through-his-10-million-stock-purchase-32b4d96d?mod=mw_rss_topstories",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/streaming-wars-1-netflix-rival-160500423.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/sectors/technology/articles/leaked-meta-memo-reveals-company-160300827.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/state-streets-sptm-better-u-160205864.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.cnbc.com/2026/03/28/oil-doordash-lyft-usps-united.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/chief-commercial-officer-liquidia-lqda-154627519.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-near-100-iran-war-drags-tesla-deliveries/?src=A00220&yptr=yahoo",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/retail-giant-trading-half-price-153500130.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/commodities/articles/wells-fargo-resets-gold-price-153300506.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/sectors/technology/articles/paul-shark-aspesi-judicial-administration-153258383.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-starved-balance-sheet-153236385.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/why-retirees-consider-3-ultra-152000112.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/sectors/technology/articles/ai-chip-means-arm-holdings-151854629.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-signals-caution-amid-demand-151852290.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-reiterates-palantir-pltr-rating-151850792.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/sectors/technology/articles/shopify-shop-adds-another-ai-151849403.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-saying-applovin-corporation-app-151847197.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/braclays-points-capex-concerns-tesla-151845903.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-orcl-backlog-drives-bull-151844148.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-avgo-bags-another-us-151842270.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/sectors/technology/articles/taiwan-semiconductor-tsm-going-strong-151840195.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-nudge-nvidia-nvda-price-151838495.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.investors.com/research/investing-action-plan/market-week-ahead-scarcity-narratives-and-naval-tactics/?src=A00220&yptr=yahoo",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.marketwatch.com/story/parents-with-student-loans-could-fall-into-default-if-they-dont-take-steps-soon-67e381ab?mod=mw_rss_topstories",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/economy/policy/articles/retired-florida-couple-fear-losing-143000642.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/teradyne-ter-stock-significantly-jim-135243347.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-shares-higher-jim-134935341.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-shares-jim-cramer-134928306.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/intuitive-surgical-isrg-stock-jim-134920256.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/deere-shares-jim-cramer-said-134912513.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/rockwell-automation-rok-since-jim-134904787.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/symbotic-sym-share-price-performance-134855804.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/uipath-path-stock-down-since-134831052.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/ambarella-amba-stock-down-since-134649570.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/soundhound-ai-soun-stock-down-134616372.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.marketwatch.com/story/what-felt-like-a-great-deal-turned-into-a-150-night-how-am-i-supposed-to-have-fun-without-going-broke-ced48667?mod=mw_rss_topstories",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.marketwatch.com/story/these-2-chip-stocks-could-be-cheaper-ways-to-invest-in-a-hot-ai-trend-fc52000a?mod=mw_rss_topstories",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-once-said-2-125500617.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.marketwatch.com/story/gas-prices-are-nearing-this-psychological-wall-one-group-of-drivers-might-smash-right-through-7605bdd8?mod=mw_rss_topstories",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://www.investors.com/news/marvell-stock-caterpillar-stocks-to-watch/?src=A00220&yptr=yahoo",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/markets/stocks/articles/surgeon-struggle-665k-salary-ramit-120000399.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/news/canadas-tariff-frontline-business-stalls-100730047.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/news/almost-everything-is-going-wrong-for-markets-right-now-100005327.html",
+    "timestamp": 1774715173750
+  },
+  {
+    "url": "https://finance.yahoo.com/news/magnificent-7-stocks-wipe-more-than-850-billion-in-value-as-stock-market-sell-off-hits-ai-winners-hard-213921360.html",
+    "timestamp": 1774715173750
   }
 ]
