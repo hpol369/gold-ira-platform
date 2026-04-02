@@ -1,8 +1,7 @@
 // src/app/api/track-click/route.ts
-// Track affiliate link clicks and send Telegram notifications
+// Track affiliate link clicks
 
 import { NextRequest, NextResponse } from "next/server";
-import { sendTelegramNotification } from "@/lib/notifications";
 
 type TrafficType = "organic" | "paid" | "direct";
 
@@ -38,41 +37,6 @@ function detectTrafficType(referer: string, explicitType?: string): TrafficType 
 
   // Default to direct for unknown sources
   return "direct";
-}
-
-async function sendClickNotification(data: {
-  company: string;
-  source: string;
-  device: string;
-  timestamp: string;
-  referer: string;
-  trafficType: TrafficType;
-  campaign?: string;
-  location?: string;
-  clickId?: string;
-}) {
-  // Traffic type indicators
-  const trafficIndicators: Record<TrafficType, { emoji: string; label: string }> = {
-    paid: { emoji: "💰", label: "PAID CLICK" },
-    organic: { emoji: "🟢", label: "ORGANIC CLICK" },
-    direct: { emoji: "🔗", label: "DIRECT CLICK" },
-  };
-
-  const indicator = trafficIndicators[data.trafficType];
-  const campaignLine = data.campaign ? `\n🎯 <b>Campaign:</b> ${data.campaign}` : "";
-  const locationLine = data.location ? `\n🌍 <b>Location:</b> ${data.location}` : "";
-  const clickIdLine = data.clickId ? `\n🔑 <b>Click ID:</b> ${data.clickId}` : "";
-
-  const message = `${indicator.emoji} <b>${indicator.label} - ${data.company.toUpperCase()}</b>
-
-📍 <b>Source:</b> ${data.source}${clickIdLine}
-${data.device}${locationLine}
-🕐 ${data.timestamp}${campaignLine}
-
-💰 <i>Lead incoming...</i>`;
-
-  // Use shared notification function (uses same env vars as other notifications)
-  await sendTelegramNotification(message, false);
 }
 
 export async function GET(request: NextRequest) {
@@ -139,9 +103,6 @@ export async function GET(request: NextRequest) {
 
   // Detect traffic type
   const trafficType = detectTrafficType(referer, traffic);
-
-  // Send notification (async, don't block redirect)
-  sendClickNotification({ company, source, device, timestamp, referer, trafficType, campaign, location, clickId });
 
   // Log
   console.log(`[CLICK] ${trafficType.toUpperCase()} | ${company} | ${source} | ${device}`);
