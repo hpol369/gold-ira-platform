@@ -14,6 +14,7 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Shield, ArrowRight, Clock, Home, AlertTriangle, BookOpen, Scale } from "lucide-react";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Medicaid Planning Guide | Protect Assets & Qualify for Care",
@@ -89,6 +90,23 @@ export default function MedicaidPlanningPage() {
                 <a href="#guides">View Guides</a>
               </Button>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="Medicaid's 5-year lookback period examines all asset transfers made within 60 months of applying. Gold IRAs in qualified retirement accounts may be exempt from Medicaid asset counting in many states, but rules vary significantly."
+              keyFacts={[
+                "5-year lookback applies to all gifts and transfers (Medicaid.gov)",
+                "Retirement accounts are exempt in many states",
+                "Spousal protections allow the community spouse to keep significant assets",
+              ]}
+              variant="dark"
+            />
           </div>
         </Container>
       </section>

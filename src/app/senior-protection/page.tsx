@@ -14,6 +14,7 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { ShieldAlert, ArrowRight, Phone, AlertTriangle, BookOpen, Users, Heart } from "lucide-react";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Senior Protection Center | Scam Prevention & Financial Safety",
@@ -95,6 +96,23 @@ export default function SeniorProtectionPage() {
                 <a href="#guides">View Protection Guides</a>
               </Button>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="Elder financial fraud costs Americans over $3.4 billion annually according to the FBI. The most common Gold IRA scams involve inflated coin premiums (30-100% markups), fake buyback guarantees, and high-pressure sales tactics targeting retirees."
+              keyFacts={[
+                "$3.4 billion lost to elder fraud annually (FBI IC3 Report)",
+                "CFTC fined two precious metals dealers $107M in 2024-2025",
+                "Always verify BBB rating and check for CFTC/SEC enforcement actions",
+              ]}
+              variant="dark"
+            />
           </div>
         </Container>
       </section>

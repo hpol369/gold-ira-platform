@@ -101,6 +101,7 @@ export function Footer() {
                             <li><Link href="/news" className="text-gray-400 hover:text-white transition-colors text-sm">Daily News Briefing</Link></li>
                             <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors text-sm">FAQ Hub</Link></li>
                             <li><Link href="/glossary" className="text-gray-400 hover:text-white transition-colors text-sm">Glossary</Link></li>
+                            <li><Link href="/gold-ira-industry-report-2026" className="text-gray-400 hover:text-white transition-colors text-sm">Industry Report 2026</Link></li>
                         </ul>
                     </div>
 

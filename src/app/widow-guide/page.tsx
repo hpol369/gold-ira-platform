@@ -15,6 +15,7 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Heart, ArrowRight, Phone, BookOpen, Clock, Shield } from "lucide-react";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Widow's Financial Guide | Navigating Finances After Loss",
@@ -83,6 +84,23 @@ export default function WidowGuidePage() {
                 <a href="#guides">View Guides</a>
               </Button>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="If you've recently lost a spouse, your first financial steps should be: claim Social Security survivor benefits (up to 100% of your spouse's benefit), understand inherited IRA distribution rules, and avoid making major investment decisions for at least 6 months."
+              keyFacts={[
+                "Survivor benefits can be up to 100% of deceased spouse's benefit (SSA.gov)",
+                "Inherited IRA RMD rules changed under the SECURE Act 2.0",
+                "You have 60 days to decide on an inherited IRA rollover",
+              ]}
+              variant="dark"
+            />
           </div>
         </Container>
       </section>

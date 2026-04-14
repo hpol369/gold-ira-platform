@@ -94,7 +94,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en-US">
       <head>
         {/* Google Tag Manager - must be first */}
         <Script id="google-tag-manager" strategy="lazyOnload">

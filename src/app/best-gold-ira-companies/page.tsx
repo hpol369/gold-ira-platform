@@ -87,7 +87,7 @@ export default function BestGoldIraCompaniesPage() {
                                 <p>
                                     We look at what actually matters: Do they have complaints with the BBB? Will they pressure you into
                                     buying today? Can a retired steelworker or nurse actually understand their fee structure? Do they
-                                    treat you like a partner or a transaction?
+                                    treat you like a partner or a transaction? See our <Link href="/gold-ira-industry-report-2026" className="text-[#B22234] hover:underline">2026 Industry Report</Link> for fee analysis and recession performance data across all major providers.
                                 </p>
                                 <p>
                                     <strong>Real example:</strong> Tom, a retired electrician from Ohio, told us he called three Gold IRA

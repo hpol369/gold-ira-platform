@@ -141,7 +141,6 @@ export function AugustaCTA({
         "shadow-[0_8px_32px_rgba(0,0,0,0.1),0_0_60px_rgba(178,34,52,0.1)]",
         className
       )}
-      style={{ animation: 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}
       >
         <FloatingOrbs variant="minimal" />
         <div className="relative z-10">
@@ -250,7 +249,6 @@ export function AugustaCTA({
         "shadow-[0_8px_32px_rgba(0,0,0,0.1),0_0_60px_rgba(178,34,52,0.1)]",
         className
       )}
-      style={{ animation: 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}
       >
         <FloatingOrbs variant="section" />
         {/* Ambient patriot gradient overlay */}
