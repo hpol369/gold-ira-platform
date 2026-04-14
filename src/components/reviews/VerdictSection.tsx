@@ -128,7 +128,7 @@ export function VerdictSection({
             <a
               href={getTrackedLink(company.affiliateLink, `verdict-${company.slug}`, company.slug)}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className={cn(
                 "inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all",
                 isFeatured

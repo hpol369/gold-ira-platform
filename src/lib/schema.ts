@@ -31,6 +31,7 @@ export function articleSchema(params: {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${SITE_URL}${params.slug}#article`,
     headline: params.title,
     description: params.description,
     author: params.author
@@ -90,6 +91,7 @@ export function faqSchema(
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${SITE_URL}#faq`,
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
