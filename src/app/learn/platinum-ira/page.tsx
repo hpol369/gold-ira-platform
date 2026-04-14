@@ -10,6 +10,7 @@ import { Gem, TrendingUp, AlertTriangle, ArrowRight, BarChart3, Factory } from "
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -118,6 +119,20 @@ export default function PlatinumIraPage() {
                     </div>
                 </Container>
             </header>
+
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="A Platinum IRA allows you to hold IRS-approved platinum bullion (99.95% purity) in a self-directed retirement account. Platinum is rarer than gold — annual mine production is about 190 tonnes vs 3,000+ tonnes for gold. The same contribution limits and tax rules apply as Gold IRAs."
+                        keyFacts={[
+                            "Platinum must be 99.95% pure for IRA eligibility (IRS)",
+                            "Annual platinum production: ~190 tonnes vs gold: ~3,000+ tonnes",
+                            "Same contribution limits as Gold IRA: $7,000/$8,000 (2026)",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

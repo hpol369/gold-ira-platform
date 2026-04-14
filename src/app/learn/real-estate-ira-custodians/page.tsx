@@ -14,6 +14,7 @@ import {
     Clock
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -128,6 +129,20 @@ export default function RealEstateIraCustodiansPage() {
                     </div>
                 </Container>
             </section>
+
+            <Container className="py-8">
+                <div className="max-w-4xl">
+                    <AnswerFirst
+                        variant="light"
+                        answer="The top self-directed IRA custodians for real estate include Equity Trust ($70B+ in assets under custody), Directed IRA (part of Solera National Bank), and Pacific Premier Trust ($18B AUM). Custodian fees typically range from $75-$400/year depending on account size, plus transaction fees for each property purchase."
+                        keyFacts={[
+                            "Equity Trust: largest SDIRA custodian with $70B+ in assets",
+                            "Annual custodian fees: $75-$400 depending on account size",
+                            "Transaction fees: $25-$250 per real estate purchase/sale",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             <div className="py-8 bg-white">
                 <Container>

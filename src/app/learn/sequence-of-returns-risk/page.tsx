@@ -13,6 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Sequence of Returns Risk: Hidden Retirement Danger",
@@ -125,6 +126,16 @@ export default function SequenceOfReturnsRiskPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                variant="light"
+                answer="Sequence of returns risk is the danger that poor investment returns early in retirement can permanently deplete your portfolio, even if average returns over the full period are adequate. A retiree who experiences a -30% drop in year one needs a +43% gain just to break even — while simultaneously withdrawing living expenses."
+                keyFacts={[
+                    "Early losses + withdrawals create a compounding death spiral",
+                    "A -30% loss requires a +43% gain to break even (before withdrawals)",
+                    "The first 5-10 years of retirement are the most vulnerable period",
+                ]}
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

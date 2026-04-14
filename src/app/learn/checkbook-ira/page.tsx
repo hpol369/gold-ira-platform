@@ -13,6 +13,7 @@ import {
     AlertTriangle,
     FileText
 } from "lucide-react";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -82,6 +83,20 @@ export default function CheckbookIRAPage() {
                     </div>
                 </Container>
             </header>
+
+            <Container className="py-8">
+                <div className="max-w-4xl">
+                    <AnswerFirst
+                        variant="light"
+                        answer="A Checkbook IRA (or IRA LLC) gives you direct control over your self-directed IRA investments through an LLC owned by the IRA. You write checks directly from the LLC bank account instead of going through the custodian for every transaction. Setup costs $1,000-$3,000 plus state LLC fees."
+                        keyFacts={[
+                            "IRA owns the LLC, you manage it as a non-compensated manager",
+                            "Eliminates custodian approval delays for each investment",
+                            "Setup: $1,000-$3,000 + state LLC filing fees",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             {/* Key Takeaways */}
             <section className="py-12 bg-slate-50">

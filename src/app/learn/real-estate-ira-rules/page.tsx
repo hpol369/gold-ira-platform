@@ -20,6 +20,7 @@ import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Real Estate IRA Rules 2026: IRS Requirements Guide",
@@ -70,6 +71,16 @@ export default function RealEstateIraRulesPage() {
                     </div>
                 </Container>
             </section>
+
+            <AnswerFirst
+                variant="light"
+                answer="Real estate IRA rules require that the IRA (not you personally) holds title to the property. You cannot live in it, vacation in it, or use it for any personal benefit. All repairs must be paid from the IRA by third-party contractors — you cannot perform maintenance yourself, even if you're qualified."
+                keyFacts={[
+                    "IRA holds title — not you personally",
+                    "No personal use: cannot live in, vacation in, or benefit from the property",
+                    "All expenses paid from IRA funds by third-party contractors only",
+                ]}
+            />
 
             <div className="py-8 bg-white">
                 <Container>
