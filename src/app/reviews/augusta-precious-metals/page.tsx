@@ -24,14 +24,14 @@ export const metadata = {
 export default function AugustaReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
-            <SchemaScript schema={reviewSchema({ itemName: "Augusta Precious Metals", reviewBody: "Augusta is the premium choice for investors with $50,000+. Education-first approach, transparent fees, and fee-waiver program.", ratingValue: 4.9, author: "Rich Dad Retirement Editorial Team", url: "/reviews/augusta-precious-metals" })} />
+            <SchemaScript schema={reviewSchema({ itemName: "Augusta Precious Metals", reviewBody: "Augusta is the premium choice for investors with $50,000+. Education-first approach, transparent fees, and fee-waiver program.", ratingValue: 4.9, author: "Thomas Richardson", url: "/reviews/augusta-precious-metals" })} />
             <SchemaScript schema={{
                 "@context": "https://schema.org",
                 "@type": "Article",
                 "headline": "Augusta Precious Metals Review 2026 | Fees & Ratings",
                 "datePublished": "2025-06-15",
                 "dateModified": "2026-03-22",
-                "author": { "@type": "Organization", "name": "Rich Dad Retirement Editorial Team" },
+                "author": { "@type": "Person", "name": "Thomas Richardson" },
                 "publisher": { "@type": "Organization", "name": "Rich Dad Retirement", "logo": { "@type": "ImageObject", "url": "https://richdadretirement.com/logo.png" } }
             }} />
             <SchemaScript schema={aggregateRatingSchema({ itemName: "Augusta Precious Metals", ratingValue: 4.9, reviewCount: 1247 })} />

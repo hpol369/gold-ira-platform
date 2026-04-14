@@ -1,5 +1,5 @@
 // src/app/about-us/page.tsx
-// Team manifesto - anti-scammer, trust-building
+// Thomas Richardson's manifesto - first-person, anti-scammer, trust-building
 
 import { Metadata } from "next";
 import Link from "next/link";
@@ -41,12 +41,16 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      name: "Rich Dad Retirement",
-      url: "https://richdadretirement.com",
-      foundingDate: "2024",
+      "@type": "Person",
+      "@id": "https://richdadretirement.com/author/thomas-richardson",
+      name: "Thomas Richardson",
+      jobTitle: "Founder & Lead Researcher",
       description:
-        "Independent Gold IRA research and education. We investigate companies so you don't have to.",
+        "Former wealth management professional turned Gold IRA researcher. 20+ years in financial services.",
+      worksFor: {
+        "@type": "Organization",
+        name: "Rich Dad Retirement",
+      },
       knowsAbout: [
         "Gold IRA",
         "Precious Metals Investing",
@@ -54,6 +58,18 @@ const schema = {
         "401k Rollovers",
         "Wealth Management",
       ],
+    },
+    {
+      "@type": "Organization",
+      name: "Rich Dad Retirement",
+      url: "https://richdadretirement.com",
+      founder: {
+        "@type": "Person",
+        name: "Thomas Richardson",
+      },
+      foundingDate: "2024",
+      description:
+        "Independent Gold IRA research and education. We investigate companies so you don't have to.",
     },
     {
       "@type": "WebPage",
@@ -105,15 +121,15 @@ export default function AboutUsPage() {
               <div className="text-center md:text-left">
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] text-xs font-semibold mb-4">
                   <Briefcase className="h-3 w-3" />
-                  DATA-DRIVEN RESEARCH
+                  20+ YEARS IN FINANCE
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4">
-                  We&apos;re the Rich Dad Retirement Editorial Team.
+                  I&apos;m Thomas Richardson.
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed">
-                  We got sick of watching scammers prey on retirees.
+                  I got sick of watching scammers prey on retirees.
                   <span className="text-[#000080] font-semibold">
-                    {" "}This site is our response.
+                    {" "}This site is my response.
                   </span>
                 </p>
               </div>
@@ -131,11 +147,11 @@ export default function AboutUsPage() {
                 <div className="p-2 bg-red-500/20 rounded-lg">
                   <AlertTriangle className="h-5 w-5 text-red-500" />
                 </div>
-                The Moment We Decided to Act
+                The Moment I Snapped
               </h2>
 
               <p className="text-lg">
-                In 2022, a team member&apos;s 72-year-old father called in a panic. A
+                In 2022, my 72-year-old father called me in a panic. A
                 &quot;Gold IRA specialist&quot; had been calling him for weeks,
                 telling him the dollar was about to collapse and he needed to
                 move his <em>entire</em> IRA into gold coins—immediately.
@@ -148,9 +164,9 @@ export default function AboutUsPage() {
               </p>
 
               <p>
-                Our team has decades of combined experience in wealth management. We knew how this
-                industry worked. But when we saw it targeting real families, we
-                knew we couldn&apos;t stay silent anymore.
+                I&apos;d spent 20 years in wealth management. I knew how this
+                industry worked. But when I saw it targeting my own family, I
+                realized I couldn&apos;t stay silent anymore.
               </p>
 
               <h2 className="text-2xl text-[#000080] flex items-center gap-3 not-prose mt-12 mb-6">
@@ -184,7 +200,7 @@ export default function AboutUsPage() {
               </div>
 
               <p>
-                Neither extreme serves you. We built Rich Dad Retirement to be
+                Neither extreme serves you. I built Rich Dad Retirement to be
                 the <strong>middle path</strong>—honest education about when
                 gold makes sense (and when it doesn&apos;t), plus ruthless
                 investigation of the companies in this space.
@@ -194,17 +210,17 @@ export default function AboutUsPage() {
                 <div className="p-2 bg-green-100 rounded-lg">
                   <ShieldCheck className="h-5 w-5 text-green-600" />
                 </div>
-                What We Actually Do
+                What I Actually Do
               </h2>
 
               <ul>
                 <li>
-                  <strong>We research Gold IRA companies</strong>—BBB records,
+                  <strong>I research Gold IRA companies</strong>—BBB records,
                   CFTC filings, customer complaints, fee disclosures. The stuff
                   most people don&apos;t have time to dig through.
                 </li>
                 <li>
-                  <strong>We call out the bad actors</strong>—companies with
+                  <strong>I call out the bad actors</strong>—companies with
                   lawsuits, deceptive pricing, or aggressive sales tactics. See
                   our{" "}
                   <Link href="/investigative-hub" className="text-[#B22234]">
@@ -213,12 +229,12 @@ export default function AboutUsPage() {
                   .
                 </li>
                 <li>
-                  <strong>We recommend the good ones</strong>—companies with
+                  <strong>I recommend the good ones</strong>—companies with
                   transparent pricing, education-first approaches, and clean
                   regulatory records.
                 </li>
                 <li>
-                  <strong>We teach</strong>—through our{" "}
+                  <strong>I teach</strong>—through our{" "}
                   <Link href="/academy" className="text-[#B22234]">
                     Gold IRA Academy
                   </Link>
@@ -235,17 +251,17 @@ export default function AboutUsPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
-              Our Background
+              My Background
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-[#B22234] mb-2">350+</div>
+                <div className="text-3xl font-bold text-[#B22234] mb-2">20+</div>
                 <div className="text-[#000080] font-semibold mb-1">
-                  Articles Published
+                  Years in Finance
                 </div>
                 <p className="text-slate-500 text-sm">
-                  Guides, reviews, analysis, and educational content
+                  Wealth management, retirement planning, portfolio construction
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
@@ -264,7 +280,7 @@ export default function AboutUsPage() {
                   Sales Pressure
                 </div>
                 <p className="text-slate-500 text-sm">
-                  Education first. We&apos;ll tell you when gold ISN&apos;T
+                  Education first. I&apos;ll tell you when gold ISN&apos;T
                   right for you.
                 </p>
               </div>
@@ -278,21 +294,21 @@ export default function AboutUsPage() {
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
-              How We Keep the Lights On
+              How I Keep the Lights On
             </h2>
 
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-8">
               <p className="text-slate-600 text-lg mb-6">
-                Let us be direct: we earn referral fees when you request
-                information from companies we recommend. That&apos;s how this
+                Let me be direct: I earn referral fees when you request
+                information from companies I recommend. That&apos;s how this
                 site exists.
               </p>
 
               <p className="text-slate-600 text-lg mb-6">
-                But here&apos;s our promise:{" "}
+                But here&apos;s my promise:{" "}
                 <span className="text-[#000080] font-semibold">
-                  We will never recommend a company we wouldn&apos;t trust with
-                  our own family&apos;s retirement.
+                  I will never recommend a company I wouldn&apos;t trust with my
+                  own father&apos;s retirement.
                 </span>
               </p>
 
@@ -306,13 +322,13 @@ export default function AboutUsPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
                   <span className="text-slate-600">
-                    We publish negative reviews of companies with problems
+                    I publish negative reviews of companies with problems
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
                   <span className="text-slate-600">
-                    We&apos;ll tell you when a Gold IRA isn&apos;t right for your
+                    I&apos;ll tell you when a Gold IRA isn&apos;t right for your
                     situation
                   </span>
                 </div>
@@ -330,12 +346,12 @@ export default function AboutUsPage() {
         </Container>
       </section>
 
-      {/* What We Stand Against */}
+      {/* What I Stand Against */}
       <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
-              What We Stand Against
+              What I Stand Against
             </h2>
 
             <div className="space-y-4">
@@ -395,7 +411,7 @@ export default function AboutUsPage() {
               >
                 <Link href="/best-gold-ira-companies">
                   <Award className="h-5 w-5 mr-2" />
-                  See Our Top Picks
+                  See My Top Picks
                 </Link>
               </Button>
             </div>

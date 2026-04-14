@@ -55,8 +55,8 @@ const schema = {
             "description": "Learn proven strategies to protect your retirement savings from stock market crashes.",
             "image": "https://richdadretirement.com/images/crash-protection.jpg",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

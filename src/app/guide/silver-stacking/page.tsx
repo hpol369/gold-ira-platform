@@ -129,8 +129,8 @@ const schema = {
             "headline": "Silver Stacking Guide 2026: How to Build Your Silver Stack",
             "description": "Complete silver stacking guide for beginners. Learn the best silver to stack, stacking strategies, premiums, and how to grow your silver holdings over time.",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

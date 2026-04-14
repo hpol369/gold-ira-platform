@@ -55,8 +55,8 @@ const schema = {
             "headline": "Is 401k FDIC Insured? NO - But Here's What Does Protect Your Retirement",
             "description": "401(k)s are NOT FDIC insured. Learn what actually protects your retirement savings (ERISA, SIPC), what happens if your employer goes bankrupt, and how to add real asset protection.",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

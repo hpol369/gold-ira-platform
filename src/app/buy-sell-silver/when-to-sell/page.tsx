@@ -162,8 +162,8 @@ const schema = {
       "headline": "When to Sell Silver: Market Timing & Exit Strategy Guide",
       "description": "Learn when to sell silver for maximum profit. Market timing considerations, gold-to-silver ratio, exit strategies, and signs it's time to sell.",
       "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement Editorial Team"
+        "@type": "Person",
+        "name": "Thomas Richardson"
       },
       "publisher": {
         "@type": "Organization",

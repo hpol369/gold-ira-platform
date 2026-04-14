@@ -51,8 +51,8 @@ const schema = {
             "description": "Learn Robert Kiyosaki's gold investment strategy and why the Rich Dad Poor Dad author recommends precious metals for wealth protection.",
             "image": "https://richdadretirement.com/images/kiyosaki-gold.jpg",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

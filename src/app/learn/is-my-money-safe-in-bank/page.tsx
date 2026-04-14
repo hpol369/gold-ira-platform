@@ -53,8 +53,8 @@ const schema = {
             "headline": "Is My Money Safe in the Bank? FDIC Limits & Risks Explained",
             "description": "Understand FDIC insurance limits, bank failure risks, and what happens to your money if a bank collapses.",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

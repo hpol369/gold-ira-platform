@@ -75,7 +75,10 @@ export default function RootLayout({
     "name": "Rich Dad Retirement",
     "url": "https://www.richdadretirement.com",
     "logo": "https://www.richdadretirement.com/logo.png",
-    "foundingDate": "2024",
+    "founder": {
+      "@type": "Person",
+      "name": "Thomas Richardson"
+    },
     "sameAs": [
       "https://twitter.com/richdadretire",
       "https://facebook.com/richdadretirement",

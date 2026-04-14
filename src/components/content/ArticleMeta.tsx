@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Clock, Users, ShieldCheck } from "lucide-react";
+import { Clock, User, ShieldCheck } from "lucide-react";
 
 interface ArticleMetaProps {
   author?: string;
@@ -21,8 +21,8 @@ function formatDate(dateStr: string): string {
 }
 
 export function ArticleMeta({
-  author = "Rich Dad Retirement Editorial Team",
-  authorUrl = "/editorial-board",
+  author = "Thomas Richardson",
+  authorUrl = "/author/thomas-richardson",
   reviewer = "Editorial Board",
   reviewerUrl = "/editorial-board",
   publishDate,
@@ -32,7 +32,7 @@ export function ArticleMeta({
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-slate-500 border-b border-slate-200 pb-4 mb-6">
       <span className="inline-flex items-center gap-1.5">
-        <Users className="h-3.5 w-3.5" />
+        <User className="h-3.5 w-3.5" />
         <span>By{" "}
           <Link href={authorUrl} className="text-slate-700 font-medium hover:text-[#B22234] transition-colors">
             {author}

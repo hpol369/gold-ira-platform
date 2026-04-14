@@ -33,7 +33,7 @@ export default function PreviewArticle() {
                     <div className="flex items-center gap-6 text-sm text-slate-500 border-b border-slate-200 pb-8 mb-8">
                         <div className="flex items-center gap-2">
                             <User className="h-4 w-4" />
-                            <span>By <strong>Editorial Team</strong></span>
+                            <span>By <strong>Thomas Richardson</strong></span>
                         </div>
                         <div className="flex items-center gap-2">
                             <Calendar className="h-4 w-4" />
@@ -89,9 +89,9 @@ export default function PreviewArticle() {
                     <div className="mt-12 bg-slate-50 p-8 rounded-xl border border-slate-200 flex items-start gap-6">
                         <div className="w-16 h-16 bg-[#000080] rounded-full flex-shrink-0"></div>
                         <div>
-                            <h4 className="font-bold text-[#000080] text-lg">About the Editorial Team</h4>
+                            <h4 className="font-bold text-[#000080] text-lg">About Thomas Richardson</h4>
                             <p className="text-slate-600 text-sm mt-2">
-                                The Rich Dad Retirement Editorial Team specializes in retirement preservation research, helping Americans understand the benefits of precious metals diversification through data-driven analysis.
+                                I&apos;m Thomas Richardson, Senior Editor &amp; Founder of Rich Dad Retirement. I specialize in retirement preservation research, helping Americans understand the benefits of precious metals diversification through data-driven analysis.
                             </p>
                         </div>
                     </div>

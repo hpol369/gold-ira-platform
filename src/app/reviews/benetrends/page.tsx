@@ -37,7 +37,7 @@ const reviewJsonLd = {
     "@context": "https://schema.org",
     "@type": "Review",
     "itemReviewed": {
-        "@type": "Organization",
+        "@type": "Person",
         "name": "Benetrends"
     },
     "reviewRating": {
@@ -47,8 +47,8 @@ const reviewJsonLd = {
         "worstRating": "1"
     },
     "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement Editorial Team"
+        "@type": "Person",
+        "name": "Thomas Richardson"
     },
     "publisher": {
         "@type": "Organization",

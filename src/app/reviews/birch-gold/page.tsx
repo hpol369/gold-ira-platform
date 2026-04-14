@@ -24,7 +24,7 @@ export const metadata = {
 export default function BirchGoldReviewPage() {
     return (
             <main className="min-h-screen flex flex-col bg-slate-50">
-            <SchemaScript schema={reviewSchema({ itemName: "Birch Gold Group", reviewBody: "Birch Gold Group has been in business since 2003 with a flat-fee structure and strong track record.", ratingValue: 4.5, author: "Rich Dad Retirement Editorial Team", url: "/reviews/birch-gold" })} />
+            <SchemaScript schema={reviewSchema({ itemName: "Birch Gold Group", reviewBody: "Birch Gold Group has been in business since 2003 with a flat-fee structure and strong track record.", ratingValue: 4.5, author: "Thomas Richardson", url: "/reviews/birch-gold" })} />
             <SchemaScript schema={aggregateRatingSchema({ itemName: "Birch Gold Group", ratingValue: 4.5, reviewCount: 523 })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Birch Gold", url: "/reviews/birch-gold" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/birch-gold"))} />

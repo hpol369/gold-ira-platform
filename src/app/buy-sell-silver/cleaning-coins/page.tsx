@@ -136,8 +136,8 @@ const schema = {
       "headline": "Cleaning Silver Coins: When It's OK & Safe Methods",
       "description": "Should you clean silver coins? Learn when cleaning is acceptable, when it destroys value, and safe cleaning methods.",
       "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement Editorial Team"
+        "@type": "Person",
+        "name": "Thomas Richardson"
       },
       "publisher": {
         "@type": "Organization",

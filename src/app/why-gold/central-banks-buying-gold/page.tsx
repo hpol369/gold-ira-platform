@@ -35,11 +35,11 @@ const schema = {
     headline: "Why Central Banks Are Buying Gold at Record Pace",
     description: "Central banks bought more gold in 2022-2024 than any time in 55 years. Learn what this means for gold prices and your retirement.",
     author: {
-        "@type": "Organization",
-        name: "Rich Dad Retirement Editorial Team",
+        "@type": "Person",
+        name: "Thomas Richardson",
     },
     publisher: {
-        "@type": "Organization",
+        "@type": "Person",
         name: "Rich Dad Retirement",
     },
     datePublished: "2026-01-23",

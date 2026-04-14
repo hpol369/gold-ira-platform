@@ -35,11 +35,11 @@ const schema = {
     headline: "Gold vs Stocks: Which Is Better for Your Portfolio?",
     description: "Compare gold vs stocks for your investment portfolio. Learn when gold outperforms and how to balance both.",
     author: {
-        "@type": "Organization",
-        name: "Rich Dad Retirement Editorial Team",
+        "@type": "Person",
+        name: "Thomas Richardson",
     },
     publisher: {
-        "@type": "Organization",
+        "@type": "Person",
         name: "Rich Dad Retirement",
     },
     datePublished: "2026-01-23",

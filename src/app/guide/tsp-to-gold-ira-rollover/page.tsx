@@ -40,9 +40,9 @@ const schema = {
             "description": "Complete guide for Federal Employees and Military personnel on rolling over TSP funds to a Gold IRA. Learn about Form TSP-70, in-service withdrawals, and tax-free transfers.",
             "image": "https://richdadretirement.com/images/tsp-rollover-guide-cover.jpg",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team",
-                "url": "https://www.richdadretirement.com/editorial-board"
+                "@type": "Person",
+                "name": "Thomas Richardson",
+                "url": "https://www.richdadretirement.com/author/thomas-richardson"
             },
             "publisher": {
                 "@type": "Organization",
