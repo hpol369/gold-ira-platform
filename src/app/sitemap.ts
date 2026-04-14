@@ -68,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn",
     "/is-enough-to-retire",
     "/audit",
+    "/gold-ira-industry-report-2026",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-03-22'),
