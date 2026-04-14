@@ -8,6 +8,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
   title: "Gold IRA Calculator - Calculate Your Gold IRA Investment Returns",
@@ -76,6 +77,20 @@ export default function GoldIRACalculatorPage() {
       <section className="py-12 bg-white">
         <Container>
           <AutoRelatedContent currentUrl="/tools/gold-ira-calculator" />
+        </Container>
+      </section>
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Retirement Topics: IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits", accessDate: "Mar 2026" },
+                { name: "World Gold Council — Gold Performance Data", url: "https://www.gold.org/goldhub/data/gold-prices", accessDate: "Mar 2026" },
+                { name: "IRS — Self-Directed IRA Rules (Publication 590-A)", url: "https://www.irs.gov/publications/p590a", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
+          </div>
         </Container>
       </section>
       <Footer />

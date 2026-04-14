@@ -21,6 +21,7 @@ import {
   Calendar,
   PiggyBank,
 } from "lucide-react";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 // Format currency
 function formatCurrency(value: number): string {
@@ -680,6 +681,20 @@ export default function RothConversionCalculatorPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Roth IRA Conversions", url: "https://www.irs.gov/retirement-plans/roth-iras", accessDate: "Mar 2026" },
+                { name: "IRS — Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
           </div>
         </Container>
       </section>

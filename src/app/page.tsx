@@ -25,11 +25,7 @@ function SectionSkeleton({ height = "h-64" }: { height?: string }) {
   return <div className={`${height} bg-slate-100 animate-pulse rounded-lg`} />;
 }
 
-// Section 2: Social Proof + Urgency (merged Authority + Urgency)
-const SocialProofUrgency = dynamic(
-  () => import("@/components/home/SocialProofUrgency").then(mod => ({ default: mod.SocialProofUrgency })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-48" /> }
-);
+// SocialProofUrgency REMOVED — Google recovery: excessive urgency/CTA density
 
 // Section 3: Wealth Calculator
 const WealthCalculator = dynamic(
@@ -37,11 +33,7 @@ const WealthCalculator = dynamic(
   { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
 );
 
-// Section 4: Augusta Featured Partner
-const FeaturedPartner = dynamic(
-  () => import("@/components/home/FeaturedPartner").then(mod => ({ default: mod.FeaturedPartner })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-72" /> }
-);
+// FeaturedPartner REMOVED — Google recovery: pure ad unit hurts content quality signal
 
 // Section 5: How It Works
 const HowSection = dynamic(
@@ -61,11 +53,7 @@ const ComparisonTable = dynamic(
   { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
 );
 
-// Section 7: Testimonials
-const Testimonials = dynamic(
-  () => import("@/components/home/Testimonials").then(mod => ({ default: mod.Testimonials })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-64" /> }
-);
+// Testimonials REMOVED — Google recovery: reduces CTA density (testimonials had embedded CTA)
 
 // Section 8: Closing CTA
 const ClosingCTA = dynamic(
@@ -95,16 +83,10 @@ export default function Home() {
         {/* 1. HERO: Emotional hook + primary CTA to /get-started */}
         <WhySection />
 
-        {/* 2. SOCIAL PROOF + URGENCY: Stats + central bank urgency */}
-        <SocialProofUrgency />
-
-        {/* 3. WEALTH CALCULATOR: Make the pain real — interactive */}
+        {/* 2. WEALTH CALCULATOR: Interactive value tool */}
         <WealthCalculator />
 
-        {/* 4. FEATURED PARTNER: Augusta — the solution */}
-        <FeaturedPartner />
-
-        {/* 4b. TRUST BADGES: Social proof credibility bar */}
+        {/* 3. TRUST BADGES: Credibility bar */}
         <section className="py-6 bg-white">
           <div className="max-w-5xl mx-auto px-4">
             <TrustBadgeBar variant="light" />
@@ -120,10 +102,7 @@ export default function Home() {
         {/* 6. COMPANY COMPARISON: For researchers */}
         <ComparisonTable />
 
-        {/* 7. TESTIMONIALS: Social proof from real people */}
-        <Testimonials />
-
-        {/* 8. CLOSING CTA: Final push */}
+        {/* 7. CLOSING CTA */}
         <ClosingCTA />
       </div>
 

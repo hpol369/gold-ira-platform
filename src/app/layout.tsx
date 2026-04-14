@@ -5,8 +5,9 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SocialProofTickerClient } from "@/components/widgets/SocialProofTickerClient";
 import { MobileBottomNav } from "@/components/layout/MobileBottomNav";
-import { ExitIntentPopup } from "@/components/layout/ExitIntentPopup";
+// ExitIntentPopup REMOVED — Google recovery: aggressive popups are negative quality signal
 import Providers from "@/components/providers/Providers";
+import { AIDisclosureBanner } from "@/components/content/AIDisclosureBanner";
 
 import { GOOGLE_ADS_ID } from "@/config/google-ads";
 
@@ -156,10 +157,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Providers>
+          <AIDisclosureBanner />
           {children}
           <SocialProofTickerClient />
           <MobileBottomNav />
-          <ExitIntentPopup />
         </Providers>
       </body>
     </html>

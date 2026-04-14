@@ -13,6 +13,8 @@ import { FAQSection } from "@/components/seo/FAQSection";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { AuthorBox } from "@/components/guide/AuthorBox";
 import { getAllFederalRetirementArticles } from "@/data/federal-retirement";
 import {
   ArrowRight,
@@ -148,6 +150,12 @@ export default function FederalRetirementPage() {
           </div>
         </Container>
       </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-slate-400">Last updated: March 2026</p>
+      </div>
 
       {/* Quick Stats */}
       <section className="py-8 border-y border-slate-200 bg-white">
@@ -477,6 +485,20 @@ export default function FederalRetirementPage() {
           <AutoRelatedContent currentUrl="/federal-retirement" />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "OPM — FERS Information", url: "https://www.opm.gov/retirement-center/fers-information/", accessDate: "Mar 2026" },
+              { name: "TSP — Thrift Savings Plan", url: "https://www.tsp.gov/", accessDate: "Mar 2026" },
+              { name: "IRS — Retirement Plans for Federal Employees", url: "https://www.irs.gov/retirement-plans", accessDate: "Mar 2026" },
+              { name: "PBGC — Pension Benefit Guaranty Corporation", url: "https://www.pbgc.gov/", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>

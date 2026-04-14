@@ -12,6 +12,8 @@ import { getAllMedicaidArticles } from "@/data/medicaid-planning";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Shield, ArrowRight, Clock, Home, AlertTriangle, BookOpen, Scale } from "lucide-react";
+import { AuthorBox } from "@/components/guide/AuthorBox";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
   title: "Medicaid Planning Guide | Protect Assets & Qualify for Care",
@@ -90,6 +92,12 @@ export default function MedicaidPlanningPage() {
           </div>
         </Container>
       </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-slate-400">Last updated: March 2026</p>
+      </div>
 
       {/* Key Stats */}
       <section className="py-8 border-y border-slate-200 bg-white">
@@ -225,6 +233,19 @@ export default function MedicaidPlanningPage() {
           />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "Medicaid.gov — Eligibility", url: "https://www.medicaid.gov/medicaid/eligibility/index.html", accessDate: "Mar 2026" },
+              { name: "IRS — Retirement Topics: Exceptions to Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions", accessDate: "Mar 2026" },
+              { name: "AARP — Understanding Medicaid's Asset Rules", url: "https://www.aarp.org/health/medicaid/", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>

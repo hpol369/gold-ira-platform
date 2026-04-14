@@ -11,6 +11,7 @@ import { AugustaCTA } from '@/components/cta/AugustaCTA';
 import { CalculatorCTA } from '@/components/widgets/CalculatorCTA';
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 const breadcrumbs = breadcrumbSchema([
   { name: "Home", url: "/" },
@@ -760,6 +761,20 @@ export default function SocialSecurityCalculatorPage() {
         <section className="py-12 bg-white">
           <Container>
             <AutoRelatedContent currentUrl="/tools/social-security-calculator" />
+          </Container>
+        </section>
+
+        <section className="bg-white">
+          <Container>
+            <div className="max-w-4xl mx-auto px-4 pb-12">
+              <SourcesSection
+                sources={[
+                  { name: "SSA — Your Retirement Benefit: How It's Figured", url: "https://www.ssa.gov/pubs/EN-05-10070.pdf", accessDate: "Mar 2026" },
+                  { name: "SSA — Benefit Reduction for Early Retirement", url: "https://www.ssa.gov/benefits/retirement/planner/agereduction.html", accessDate: "Mar 2026" },
+                ]}
+                lastVerified="March 2026"
+              />
+            </div>
           </Container>
         </section>
       </main>

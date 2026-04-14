@@ -26,6 +26,7 @@ import {
   Target,
   Info,
 } from "lucide-react";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 // Step configuration
 const steps = [
@@ -1198,6 +1199,21 @@ export default function RetirementCalculatorPage() {
       <section className="py-12 bg-white">
         <Container>
           <AutoRelatedContent currentUrl="/tools/retirement-calculator" />
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Retirement Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions", accessDate: "Mar 2026" },
+                { name: "SSA — Retirement Benefits", url: "https://www.ssa.gov/benefits/retirement/", accessDate: "Mar 2026" },
+                { name: "BLS — Consumer Expenditure Survey", url: "https://www.bls.gov/cex/", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
+          </div>
         </Container>
       </section>
 

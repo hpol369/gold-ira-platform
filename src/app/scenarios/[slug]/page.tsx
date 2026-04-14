@@ -27,6 +27,7 @@ import {
   Zap,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -292,6 +293,21 @@ export default async function ScenarioPage({ params }: PageProps) {
             subheadline="Steelworkers from Ohio, nurses from Texas, teachers from Florida - working Americans who spent 30 years building something real. They're moving part of their savings to gold before the next crisis hits. Augusta has helped 47,000+ people just like you."
             trackSource={`scenario-${slug}`}
           />
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "Federal Reserve — Financial Stability Reports", url: "https://www.federalreserve.gov/publications/financial-stability-report.htm", accessDate: "Mar 2026" },
+                { name: "BLS — Consumer Price Index", url: "https://www.bls.gov/cpi/", accessDate: "Mar 2026" },
+                { name: "World Gold Council — Gold as a Strategic Asset", url: "https://www.gold.org/goldhub/research/relevance-of-gold-as-a-strategic-asset", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
+          </div>
         </Container>
       </section>
 

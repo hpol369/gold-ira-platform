@@ -16,6 +16,7 @@ import {
   Calculator,
   Table,
 } from "lucide-react";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
   title: "RMD Calculator 2026 | Free Required Minimum Distribution Calculator",
@@ -426,6 +427,20 @@ export default function RMDCalculatorPage() {
       <section className="py-12 bg-white">
         <Container>
           <AutoRelatedContent currentUrl="/tools/rmd-calculator" />
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Retirement Topics: Required Minimum Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds", accessDate: "Mar 2026" },
+                { name: "IRS — Uniform Lifetime Table", url: "https://www.irs.gov/publications/p590b", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
+          </div>
         </Container>
       </section>
 

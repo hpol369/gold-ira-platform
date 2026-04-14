@@ -13,6 +13,8 @@ import { getAllWidowGuideArticles } from "@/data/widow-guide";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Heart, ArrowRight, Phone, BookOpen, Clock, Shield } from "lucide-react";
+import { AuthorBox } from "@/components/guide/AuthorBox";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
   title: "Widow's Financial Guide | Navigating Finances After Loss",
@@ -84,6 +86,12 @@ export default function WidowGuidePage() {
           </div>
         </Container>
       </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-slate-400">Last updated: March 2026</p>
+      </div>
 
       {/* Quick Stats */}
       <section className="py-8 border-y border-slate-200 bg-white">
@@ -226,6 +234,19 @@ export default function WidowGuidePage() {
           />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "Social Security Administration — Survivor Benefits", url: "https://www.ssa.gov/benefits/survivors/", accessDate: "Mar 2026" },
+              { name: "IRS — Retirement Plan and IRA Required Minimum Distributions FAQs", url: "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs", accessDate: "Mar 2026" },
+              { name: "IRS — Publication 590-B: Distributions from IRAs", url: "https://www.irs.gov/publications/p590b", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>

@@ -12,6 +12,8 @@ import { getAllSeniorProtectionArticles } from "@/data/senior-protection";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { ShieldAlert, ArrowRight, Phone, AlertTriangle, BookOpen, Users, Heart } from "lucide-react";
+import { AuthorBox } from "@/components/guide/AuthorBox";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
   title: "Senior Protection Center | Scam Prevention & Financial Safety",
@@ -96,6 +98,12 @@ export default function SeniorProtectionPage() {
           </div>
         </Container>
       </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-slate-400">Last updated: March 2026</p>
+      </div>
 
       {/* Key Stats */}
       <section className="py-8 border-y border-slate-200 bg-white">
@@ -227,6 +235,19 @@ export default function SeniorProtectionPage() {
           />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "FBI — Elder Fraud Report", url: "https://www.ic3.gov/", accessDate: "Mar 2026" },
+              { name: "FTC — Consumer Information: Scams", url: "https://consumer.ftc.gov/scams", accessDate: "Mar 2026" },
+              { name: "CFPB — Protecting Older Americans from Financial Exploitation", url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/resources-for-older-adults/", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>
