@@ -39,12 +39,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: "Article Not Found" };
     }
 
-    const shouldNoindex = NOINDEX_NEWS_SLUGS.has(slug);
-
+    // Noindex ALL news articles — AI-generated content flagged by Google's scaled content abuse detection
+    // Keeping pages live for direct/social traffic but hiding from Google index
     return {
         title: article.headline || article.metaTitle || `${article.title} | Rich Dad Daily Briefing`,
         description: article.metaDescription || article.excerpt,
-        ...(shouldNoindex && { robots: { index: false, follow: true } }),
+        robots: { index: false, follow: true },
         alternates: {
             canonical: `/news/${slug}`,
         },

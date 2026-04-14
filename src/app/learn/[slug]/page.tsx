@@ -212,6 +212,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `/learn/${slug}`,
     },
+    // Noindex dynamic cluster articles — scaled content flagged by Google
+    // Static learn pages in dedicated directories remain indexed
+    robots: { index: false, follow: true },
     openGraph: {
       title: article.metaTitle,
       description: article.metaDescription.length > 155

@@ -82,6 +82,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    // Noindex dynamic company comparison permutations — scaled content
+    // Only curated static comparison pages remain indexed
+    robots: { index: false, follow: true },
     openGraph: {
       title,
       description,

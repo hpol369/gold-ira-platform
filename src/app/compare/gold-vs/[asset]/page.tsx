@@ -53,6 +53,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Gold vs ${asset.name}: Retirement Investment Comparison`,
     description: `Compare Physical Gold vs ${asset.name} (${asset.ticker}) for retirement. See 10-year returns, volatility, inflation protection, and which asset protects your wealth better.`,
+    // Noindex dynamic asset comparison pages — scaled content
+    robots: { index: false, follow: true },
     keywords: [
       `gold vs ${asset.name.toLowerCase()}`,
       `${asset.name} vs gold`,

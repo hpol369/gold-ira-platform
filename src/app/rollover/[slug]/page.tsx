@@ -102,6 +102,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `/rollover/${slug}`,
     },
+    // Noindex provider-specific rollover pages — templated content
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${provider.name} Gold IRA Rollover Guide 2026`,
       description: `Step-by-step instructions for rolling over your ${provider.name} account to a Gold IRA. Tax-free transfer in ${provider.typicalTimeline}.`,
