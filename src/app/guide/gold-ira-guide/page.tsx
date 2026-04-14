@@ -10,7 +10,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { createPageMetadata } from "@/lib/metadata";
-import { breadcrumbSchema, howToSchema } from "@/lib/schema";
+import { breadcrumbSchema, howToSchema, faqSchema } from "@/lib/schema";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { ArticleMeta } from "@/components/content/ArticleMeta";
 
@@ -113,6 +113,14 @@ const howTo = howToSchema({
     ],
 });
 
+const faqs = faqSchema([
+    { question: "Can I physically hold the gold in my IRA?", answer: "No, IRS rules require precious metals in an IRA to be stored at an approved depository. You can only take physical possession when you take a distribution." },
+    { question: "What is the minimum investment for a gold IRA?", answer: "Minimums vary by company. Noble Gold accepts investments as low as $2,000, while Augusta Precious Metals usually requires $50,000+." },
+    { question: "Can I rollover my 401(k) to a gold IRA without penalties?", answer: "Yes. You can rollover funds from a 401(k), 403(b), TSP, or traditional IRA into a gold IRA completely tax-free and penalty-free using a direct rollover." },
+    { question: "Is a gold IRA a good investment in 2026?", answer: "Gold IRAs can be an excellent choice for investors seeking to protect against inflation, economic uncertainty, and stock market volatility. Most advisors recommend 10-20% allocation." },
+    { question: "Are gold IRAs safe?", answer: "Gold IRAs are safe when you work with reputable companies and IRS-approved depositories. Your metals are stored in high-security vaults, fully insured against theft and damage." },
+]);
+
 const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "/" },
     { name: "Guides", url: "/guide" },
@@ -124,6 +132,7 @@ export default function GoldIraGuidePage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={howTo} />
+            <SchemaScript schema={faqs} />
             <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-slate-100 text-[#000080] py-20 relative overflow-hidden border-b border-slate-200">

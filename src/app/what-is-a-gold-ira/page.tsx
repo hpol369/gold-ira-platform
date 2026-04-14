@@ -11,7 +11,7 @@ import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FAQSection } from "@/components/seo/FAQSection";
 import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
-import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { articleSchema, breadcrumbSchema, faqSchema, financialProductSchema } from "@/lib/schema";
 import { getPageFAQs } from "@/data/faqs";
 import {
   Shield,
@@ -45,6 +45,7 @@ export default function WhatIsGoldIRAPage() {
       <SchemaScript schema={articleSchema({ title: "What Is a Gold IRA? Complete Guide 2026", description: "Learn what a Gold IRA is, how it works, IRS rules, custodians, storage requirements, and if it's right for your retirement.", slug: "/what-is-a-gold-ira" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "What Is a Gold IRA?", url: "/what-is-a-gold-ira" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("what-is-a-gold-ira"))} />
+      <SchemaScript schema={financialProductSchema({ name: "Gold IRA (Self-Directed Precious Metals IRA)", description: "A self-directed Individual Retirement Account that holds IRS-approved physical gold, silver, platinum, and palladium. Offers tax-deferred or tax-free growth with the same contribution limits as traditional IRAs ($7,000 in 2026, $8,000 if 50+). Requires a specialized custodian and IRS-approved depository storage.", provider: "Augusta Precious Metals", url: "/what-is-a-gold-ira", category: "Retirement Investment Account" })} />
       <Navbar />
 
       {/* Answer-First GEO Block */}

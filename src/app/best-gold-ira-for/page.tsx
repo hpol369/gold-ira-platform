@@ -19,13 +19,17 @@ import {
   Landmark,
 } from "lucide-react";
 
-export const metadata = createPageMetadata({
-  title: "Best Gold IRA For Your Situation | Rich Dad Retirement",
-  description:
-    "Find the best Gold IRA strategy for your specific situation. Personalized guides for retirees, veterans, teachers, beginners, and more.",
-  url: "https://www.richdadretirement.com/best-gold-ira-for",
-  imageAlt: "Best Gold IRA for Your Situation - Rich Dad Retirement",
-});
+export const metadata = {
+  ...createPageMetadata({
+    title: "Best Gold IRA For Your Situation | Rich Dad Retirement",
+    description:
+      "Find the best Gold IRA strategy for your specific situation. Personalized guides for retirees, veterans, teachers, beginners, and more.",
+    url: "https://www.richdadretirement.com/best-gold-ira-for",
+    imageAlt: "Best Gold IRA for Your Situation - Rich Dad Retirement",
+  }),
+  // Noindex — all child audience pages are noindexed, so index page should be too
+  robots: { index: false, follow: true },
+};
 
 const audienceCategories = [
   {

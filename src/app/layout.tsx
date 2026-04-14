@@ -3,8 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { SocialProofTickerClient } from "@/components/widgets/SocialProofTickerClient";
-import { MobileBottomNav } from "@/components/layout/MobileBottomNav";
+// SocialProofTicker REMOVED — fake "someone just signed up" notifications are manipulative dark patterns
+// MobileBottomNav REMOVED — aggressive sticky "Free Kit" CTA on every mobile page hurts quality signal
 // ExitIntentPopup REMOVED — Google recovery: aggressive popups are negative quality signal
 import Providers from "@/components/providers/Providers";
 import { AIDisclosureBanner } from "@/components/content/AIDisclosureBanner";
@@ -142,7 +142,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900 pb-16 lg:pb-0")}>
+      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900")}>
         {/* Google Tag Manager (noscript) - must be first in body */}
         <noscript>
           <iframe
@@ -159,8 +159,6 @@ export default function RootLayout({
         <Providers>
           <AIDisclosureBanner />
           {children}
-          <SocialProofTickerClient />
-          <MobileBottomNav />
         </Providers>
       </body>
     </html>
