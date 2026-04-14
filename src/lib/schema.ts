@@ -34,7 +34,7 @@ export function articleSchema(params: {
     headline: params.title,
     description: params.description,
     author: params.author
-      ? { "@type": "Person", name: params.author, url: `${SITE_URL}/editorial-board` }
+      ? { "@type": "Organization", name: params.author, url: `${SITE_URL}/editorial-board` }
       : defaultAuthor,
     publisher,
     datePublished: params.datePublished || new Date().toISOString(),
@@ -69,7 +69,7 @@ export function newsArticleSchema(params: {
     headline: params.title,
     description: params.description,
     author: params.author
-      ? { "@type": "Person", name: params.author }
+      ? { "@type": "Organization", name: params.author }
       : defaultAuthor,
     publisher,
     datePublished: params.datePublished,
@@ -191,7 +191,7 @@ export function reviewSchema(params: {
       bestRating: params.bestRating || 5,
     },
     author: params.author
-      ? { "@type": "Person", name: params.author }
+      ? { "@type": "Organization", name: params.author }
       : defaultAuthor,
     publisher,
   };

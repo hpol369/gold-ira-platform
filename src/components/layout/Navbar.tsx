@@ -14,7 +14,7 @@ interface GoldPrice {
 }
 
 export function Navbar() {
-    // Mobile navigation handled by MobileBottomNav in layout.tsx
+    // Mobile navigation handled by hamburger menu
     const [isLearnOpen, setIsLearnOpen] = useState(false);
     const [isToolsOpen, setIsToolsOpen] = useState(false);
     const [goldPrice, setGoldPrice] = useState<GoldPrice | null>(null);
@@ -280,7 +280,7 @@ export function Navbar() {
                 </Container>
             </div>
 
-            {/* Mobile navigation is handled by MobileBottomNav in layout.tsx */}
+            {/* Mobile navigation handled via hamburger menu above */}
         </header>
     );
 }

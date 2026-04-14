@@ -264,7 +264,7 @@ export default function AboutUsPage() {
                   Sales Pressure
                 </div>
                 <p className="text-slate-500 text-sm">
-                  Education first. I&apos;ll tell you when gold ISN&apos;T
+                  Education first. We&apos;ll tell you when gold ISN&apos;T
                   right for you.
                 </p>
               </div>
@@ -330,7 +330,7 @@ export default function AboutUsPage() {
         </Container>
       </section>
 
-      {/* What I Stand Against */}
+      {/* What We Stand Against */}
       <section className="py-16 bg-slate-50">
         <Container>
           <div className="max-w-3xl mx-auto">
