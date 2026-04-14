@@ -11,6 +11,7 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -122,6 +123,20 @@ export default function Is401kFDICInsuredPage() {
                     </div>
                 </Container>
             </header>
+
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="No, your 401(k) is not FDIC insured. FDIC insurance only covers bank deposits (savings, checking, CDs) up to $250,000 per depositor. 401(k) investments in stocks, bonds, and mutual funds have no government insurance. However, SIPC protects brokerage accounts up to $500,000 if the brokerage firm fails."
+                        keyFacts={[
+                            "FDIC covers bank deposits only — not investment accounts",
+                            "SIPC protects brokerage accounts up to $500,000 (securities) + $250,000 (cash)",
+                            "Your 401(k) is at market risk, not institution risk",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

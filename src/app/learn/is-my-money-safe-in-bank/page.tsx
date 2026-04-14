@@ -10,6 +10,7 @@ import { Building2, ShieldCheck, AlertTriangle, DollarSign, ArrowRight, Lock, Tr
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -120,6 +121,20 @@ export default function IsMyMoneySafeInBankPage() {
                     </div>
                 </Container>
             </header>
+
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="Your money is safe in a bank up to $250,000 per depositor per bank, guaranteed by FDIC insurance. Amounts above $250,000 are uninsured. Joint accounts are covered up to $500,000 ($250,000 per owner). In the rare event of a bank failure, FDIC typically makes insured deposits available within 2 business days."
+                        keyFacts={[
+                            "FDIC insures up to $250,000 per depositor per bank",
+                            "Joint accounts covered up to $500,000",
+                            "FDIC has never failed to pay an insured deposit since 1933",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

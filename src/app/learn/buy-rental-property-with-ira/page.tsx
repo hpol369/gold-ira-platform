@@ -16,6 +16,7 @@ import {
     Calculator
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -81,6 +82,20 @@ export default function BuyRentalPropertyWithIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <Container className="py-8">
+                <div className="max-w-4xl">
+                    <AnswerFirst
+                        variant="light"
+                        answer="You can buy rental property with a self-directed IRA, but all expenses must be paid from the IRA and all income must return to it. You cannot live in the property, perform repairs yourself, or rent it to family members — these are prohibited transactions under IRC Section 4975."
+                        keyFacts={[
+                            "All expenses and income must flow through the IRA",
+                            "Prohibited transactions include self-dealing and family rentals (IRC 4975)",
+                            "UBIT tax applies to debt-financed real estate in an IRA",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             {/* Step-by-Step Process */}
             <section className="py-16 bg-slate-50">

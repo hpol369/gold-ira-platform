@@ -19,6 +19,7 @@ import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { getTrackedAugustaLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Self-Directed Roth IRA Guide 2026: Tax-Free Alternative Investments",
@@ -84,6 +85,16 @@ export default function SelfDirectedRothIRAPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                variant="light"
+                answer="A self-directed Roth IRA combines the tax-free growth of a Roth with the investment freedom of a self-directed account. You can hold real estate, precious metals, private equity, and more — and qualified withdrawals after age 59½ are completely tax-free. Income limits apply: $161,000 (single) or $240,000 (married filing jointly) for 2026."
+                keyFacts={[
+                    "Tax-free withdrawals after age 59½ and 5-year holding period",
+                    "Income limits: $161,000 single / $240,000 MFJ for 2026 (IRS)",
+                    "Can hold alternative assets: real estate, gold, crypto, private equity",
+                ]}
+            />
 
             {/* Key Benefits */}
             <section className="py-12 bg-slate-50">

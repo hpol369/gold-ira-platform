@@ -20,6 +20,7 @@ import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "ROBS 401k Rules 2026: IRS Compliance Guide",
@@ -109,6 +110,16 @@ export default function Robs401kRulesPage() {
                         </div>
                     </Container>
                 </section>
+
+                <AnswerFirst
+                    variant="light"
+                    answer="ROBS (Rollover for Business Startups) lets you use 401(k) or IRA funds to start or buy a business without early withdrawal penalties or taxes. You create a C-Corporation, establish a 401(k) plan for it, roll your existing retirement funds into it, then the corporation buys stock in itself. The IRS considers this legal but high-risk — about 50% of ROBS businesses fail within 5 years."
+                    keyFacts={[
+                        "Must be a C-Corporation (not LLC or S-Corp)",
+                        "No early withdrawal penalty or taxes on the rollover",
+                        "~50% failure rate within 5 years (SBA data)",
+                    ]}
+                />
 
                 <div className="py-8 bg-white">
                     <Container>

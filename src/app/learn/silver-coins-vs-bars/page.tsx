@@ -6,6 +6,7 @@ import { Coins, SquareStack, Scale, CheckCircle2, AlertTriangle, ArrowRight, Dol
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Silver Coins vs Bars: Which is Better for Your IRA? (2026)",
@@ -180,6 +181,16 @@ export default function SilverCoinsVsBarsPage() {
                         </div>
                     </Container>
                 </header>
+
+                <AnswerFirst
+                    variant="light"
+                    answer="Silver coins carry higher premiums (5-15% over spot) but are more recognizable, easier to sell, and some are IRS-approved for IRAs. Silver bars have lower premiums (2-5% over spot) but require assay verification when selling. For IRA purposes, silver must be 99.9% pure — American Silver Eagles and Canadian Silver Maple Leafs are the most popular IRA-approved coins."
+                    keyFacts={[
+                        "Coins: 5-15% premium, more liquid; Bars: 2-5% premium, less liquid",
+                        "IRA silver must be 99.9% pure (IRS requirement)",
+                        "American Silver Eagles are the most popular IRA-approved silver coin",
+                    ]}
+                />
 
                 {/* Quick Answer */}
                 <section className="py-12 bg-[#B22234]/10 border-y border-[#B22234]/30">

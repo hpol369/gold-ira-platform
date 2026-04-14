@@ -4,6 +4,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { ArrowRight, CheckCircle2, XCircle, Scale, Coins, Box, Shield, TrendingUp, DollarSign } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -89,6 +90,20 @@ export default function GoldBullionVsCoinsPage() {
                     </div>
                 </Container>
             </header>
+
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="Gold bullion bars offer lower premiums over spot price (1-5%) while gold coins carry higher premiums (3-10%) but are more recognizable and liquid. For Gold IRAs, both must meet IRS purity requirements: 99.5% for gold (0.995 fineness). American Gold Eagles are the exception — they're 91.67% pure but IRS-approved."
+                        keyFacts={[
+                            "Bars: 1-5% premium over spot; Coins: 3-10% premium",
+                            "IRS requires 99.5% purity for IRA gold (except American Eagles)",
+                            "American Gold Eagles are 91.67% pure but specifically IRS-approved",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             {/* Quick Answer */}
             <section className="py-12 bg-slate-50 border-b border-slate-200">

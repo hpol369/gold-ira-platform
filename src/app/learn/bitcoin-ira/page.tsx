@@ -14,6 +14,7 @@ import {
     Clock,
     Coins
 } from "lucide-react";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -83,6 +84,20 @@ export default function BitcoinIRAPage() {
                     </div>
                 </Container>
             </header>
+
+            <Container className="py-8">
+                <div className="max-w-4xl">
+                    <AnswerFirst
+                        variant="light"
+                        answer="A Bitcoin IRA lets you hold cryptocurrency in a tax-advantaged retirement account. Contribution limits are the same as traditional IRAs ($7,000 in 2026, $8,000 if 50+). Top providers include iTrustCapital (1% trading fee, no monthly fees) and Alto IRA ($10/month + 1.5% trading fee)."
+                        keyFacts={[
+                            "Same $7,000/$8,000 contribution limits as traditional IRAs (IRS, 2026)",
+                            "Crypto IRAs are self-directed — you need a specialized custodian",
+                            "Capital gains tax is deferred (traditional) or eliminated (Roth)",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             {/* Key Takeaways */}
             <section className="py-12 bg-slate-50">

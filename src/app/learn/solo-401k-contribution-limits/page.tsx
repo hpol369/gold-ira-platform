@@ -7,6 +7,7 @@ import { ArrowRight, Calculator, Calendar, DollarSign, TrendingUp, AlertCircle, 
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Solo 401k Contribution Limits 2026 | Max Contribution",
@@ -64,6 +65,16 @@ export default function Solo401kContributionLimitsPage() {
                     </div>
                 </Container>
             </section>
+
+            <AnswerFirst
+                variant="light"
+                answer="Solo 401(k) contribution limits for 2026 are $70,000 total ($77,500 if age 50+). This breaks down as $23,500 employee deferral + up to 25% of net self-employment income as employer contribution. Solo 401(k)s have the highest contribution limits of any retirement account available to self-employed individuals."
+                keyFacts={[
+                    "2026 total limit: $70,000 ($77,500 with catch-up) — IRS",
+                    "Employee deferral: $23,500 + employer: up to 25% of net SE income",
+                    "Highest limits of any retirement plan for self-employed individuals",
+                ]}
+            />
 
             {/* 2026 Limits Breakdown */}
             <section className="py-16 bg-white">

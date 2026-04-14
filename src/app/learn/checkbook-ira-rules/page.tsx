@@ -10,6 +10,7 @@ import { AlertTriangle, FileText, Scale, Building, ArrowRight, CheckCircle2, XCi
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -126,6 +127,20 @@ export default function CheckbookIraRulesPage() {
                     </div>
                 </Container>
             </header>
+
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="Checkbook IRA rules require that the LLC is owned 100% by the IRA, the IRA holder serves as a non-compensated manager, and all prohibited transaction rules still apply. You cannot use the funds for personal expenses, lend to disqualified persons, or invest in collectibles or life insurance."
+                        keyFacts={[
+                            "LLC must be 100% owned by the IRA",
+                            "IRA holder is non-compensated manager",
+                            "All IRS prohibited transaction rules still apply (IRC 4975)",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
