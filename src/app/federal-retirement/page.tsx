@@ -186,14 +186,13 @@ export default function FederalRetirementPage() {
         <Container>
           <div className="max-w-3xl mx-auto">
             <AnswerFirst
-              answer="Federal employees under FERS receive a retirement pension, Thrift Savings Plan (TSP) benefits, and Social Security — the 'three-legged stool.' But each leg carries risk: TSP is 100% market-exposed with zero precious metals options, FERS pensions don't keep up with inflation after retirement due to diet COLAs, and Social Security faces a 2033 trust fund shortfall. Diversifying 10-15% of your TSP into a Gold IRA after separation protects against all three risks."
+              answer="Federal employees can roll their TSP (Thrift Savings Plan) into a Gold IRA after separation from service. The TSP-to-Gold-IRA rollover is tax-free when done as a direct trustee-to-trustee transfer. FERS employees also keep their pension and Social Security benefits."
               keyFacts={[
-                "FERS pension COLAs are capped at CPI minus 1% when inflation exceeds 3%",
-                "The TSP offers 5 funds — none include gold or precious metals",
-                "TSP to Gold IRA rollovers are tax-free via direct transfer",
-                "Gold has averaged 8.3% annual returns since 2000",
-                "2.8 million federal/public workers gained from the Social Security Fairness Act",
+                "TSP-to-Gold IRA rollover is tax-free via direct transfer",
+                "FERS pension + Social Security + TSP = three retirement income streams",
+                "TSP funds in the G Fund earned 4.5% in 2025 (TSP.gov)",
               ]}
+              variant="dark"
             />
           </div>
         </Container>

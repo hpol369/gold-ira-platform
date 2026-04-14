@@ -336,6 +336,10 @@ export default function GoldIraFeesGuidePage() {
                                 </table>
                             </div>
 
+                            <p className="text-slate-600">
+                                For industry-wide fee benchmarks and how costs have changed year over year, see our <Link href="/gold-ira-industry-report-2026" className="text-[#B22234] hover:underline">Gold IRA Industry Report 2026</Link>.
+                            </p>
+
                             <Callout type="tip" title="Best Value Tip">
                                 For accounts over $50,000, <Link href="/reviews/augusta-precious-metals">Augusta Precious Metals</Link> often waives up to 10 years of fees—a potential savings of $2,250+. For smaller accounts, <Link href="/reviews/noble-gold">Noble Gold</Link> and <Link href="/reviews/advantage-gold">Advantage Gold</Link> offer competitive pricing without high minimums.
                             </Callout>

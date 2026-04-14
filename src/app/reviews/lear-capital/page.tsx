@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import { Star, ArrowRight, ShieldCheck, CheckCircle2, Award, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 
 export const metadata: Metadata = {
@@ -92,6 +93,22 @@ export default function LearCapitalReviewPage() {
                     </div>
                 </Container>
             </header>
+
+            <section className="pt-8 pb-4 bg-slate-50">
+                <Container>
+                    <AnswerFirst
+                        answer="Lear Capital is one of the oldest Gold IRA companies, founded in 1997. They offer a $10,000-$25,000 minimum with ~$265/year in fees and a unique price lock guarantee. Note: Lear faced a New York Attorney General lawsuit alleging predatory practices, and filed for bankruptcy in 2022."
+                        keyFacts={[
+                            "Founded in 1997 — over 25 years in the precious metals industry",
+                            "A+ BBB rating with price lock guarantee on purchases",
+                            "Annual fees: $225-$280/year (custodian + storage combined)",
+                            "Filed for Chapter 11 bankruptcy in 2022; faced NY AG lawsuit over sales practices",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">

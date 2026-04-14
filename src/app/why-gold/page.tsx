@@ -322,6 +322,7 @@ export default function WhyGoldPage() {
             </div>
             <p className="text-sm text-slate-500 text-center mt-6">
               Past performance doesn&apos;t guarantee future results. But the pattern is hard to ignore.
+              Gold outperformed the S&P 500 in 5 of 7 recessions — see the full data in our <Link href="/gold-ira-industry-report-2026" className="text-[#B22234] hover:underline">2026 Industry Report</Link>.
             </p>
           </div>
         </Container>

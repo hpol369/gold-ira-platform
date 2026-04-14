@@ -14,6 +14,7 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Gift, ArrowRight, GraduationCap, Briefcase, Heart, BookOpen, DollarSign } from "lucide-react";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Grandchildren Legacy Hub | Gift, Save & Invest for Grandkids",
@@ -72,6 +73,23 @@ export default function GrandchildrenPage() {
                 <a href="#guides">View Guides</a>
               </Button>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="The three most tax-efficient ways to build wealth for grandchildren are: 529 education plans (tax-free growth), custodial Roth IRAs (if the child has earned income), and irrevocable trusts for larger estates. The 2026 annual gift tax exclusion is $19,000 per recipient."
+              keyFacts={[
+                "$19,000 annual gift tax exclusion per recipient (IRS, 2026)",
+                "529 plans grow tax-free for qualified education expenses",
+                "Custodial Roth IRAs require the child to have earned income",
+              ]}
+              variant="dark"
+            />
           </div>
         </Container>
       </section>

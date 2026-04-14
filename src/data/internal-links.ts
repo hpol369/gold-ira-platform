@@ -390,6 +390,16 @@ export const LINK_HUBS: Record<string, HubConfig> = {
       { url: "/gold-ira-statistics", title: "Gold IRA Statistics 2026" },
     ],
   },
+  "research": {
+    hub: { url: "/gold-ira-industry-report-2026", title: "Gold IRA Industry Report 2026" },
+    spokes: [
+      { url: "/best-gold-ira-companies", title: "Best Gold IRA Companies" },
+      { url: "/gold-ira-statistics", title: "Gold IRA Statistics 2026" },
+      { url: "/guide/gold-ira-fees", title: "Gold IRA Fees Explained" },
+      { url: "/why-gold", title: "Why Gold for Retirement" },
+      { url: "/compare", title: "Compare Gold IRA Companies" },
+    ],
+  },
 };
 
 /**
