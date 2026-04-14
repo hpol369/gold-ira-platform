@@ -97,7 +97,7 @@ export default function EditorialBoardPage() {
               The Rich Dad Retirement Editorial Board is responsible for maintaining the accuracy and integrity of all content published on this site. We review guides, reviews, calculators, and educational articles to ensure they reflect current regulations, accurate data, and honest assessments.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Our team brings expertise in retirement planning, IRS regulations, precious metals markets, and financial product analysis. Content is led by <Link href="/author/thomas-richardson" className="text-blue-600 hover:underline font-medium">Thomas Richardson</Link>, CFP, who has 20+ years of experience as a wealth manager.
+              Our team brings deep expertise in retirement planning, IRS regulations, precious metals markets, and financial product analysis. Every article is the product of data-driven research and editorial review.
             </p>
           </section>
 
@@ -193,8 +193,8 @@ export default function EditorialBoardPage() {
               <Link href="/editorial-policy" className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium">
                 <FileText className="h-4 w-4" /> Editorial Policy
               </Link>
-              <Link href="/author/thomas-richardson" className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium">
-                <BookOpen className="h-4 w-4" /> About Our Lead Analyst
+              <Link href="/about-us" className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium">
+                <BookOpen className="h-4 w-4" /> About Us
               </Link>
             </div>
           </section>

@@ -52,8 +52,8 @@ const schema = {
             "description": "Comprehensive fair value analysis of silver using historical valuations, the silver-to-gold ratio, inflation-adjusted prices, industrial utility value, and expert price targets.",
             "image": "https://richdadretirement.com/images/silver-undervalued.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

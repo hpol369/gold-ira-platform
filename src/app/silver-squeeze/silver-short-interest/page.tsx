@@ -52,8 +52,8 @@ const schema = {
             "description": "Comprehensive analysis of silver short interest using CFTC Commitment of Traders data, examining commercial positions, bank involvement, and potential for short squeezes.",
             "image": "https://richdadretirement.com/images/silver-short-interest.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

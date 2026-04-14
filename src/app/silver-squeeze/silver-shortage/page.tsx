@@ -40,8 +40,8 @@ const schema = {
     "datePublished": "2024-03-01",
     "dateModified": "2026-01-27",
     "author": {
-        "@type": "Person",
-        "name": "Thomas Richardson",
+        "@type": "Organization",
+        "name": "Rich Dad Retirement Editorial Team",
         "jobTitle": "Retirement Investment Specialist",
         "description": "30+ years experience in retirement planning and precious metals investing"
     },

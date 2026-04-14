@@ -37,8 +37,8 @@ const articleSchema = {
     headline: "Gold Mining Stocks vs Physical Gold: Which Is Better?",
     description: "A comprehensive comparison of gold mining stocks and physical gold, covering leverage, risks, storage, crisis protection, and when each makes sense.",
     author: {
-        "@type": "Person",
-        name: "Thomas Richardson",
+        "@type": "Organization",
+        name: "Rich Dad Retirement Editorial Team",
     },
     publisher: {
         "@type": "Organization",

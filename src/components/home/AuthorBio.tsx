@@ -20,23 +20,23 @@ export function AuthorBio() {
                     {/* Content */}
                     <FadeIn delay={0.2} className="w-full md:w-2/3 space-y-6">
                         <h2 className="text-3xl font-serif font-bold text-primary">
-                            Why I Built Rich Dad Retirement
+                            Why We Built Rich Dad Retirement
                         </h2>
                         <div className="space-y-4 text-lg text-text leading-relaxed">
                             <p>
-                                Hello, I&apos;m <span className="font-semibold text-primary">Thomas Richardson</span>.
+                                We&apos;re the <span className="font-semibold text-primary">Rich Dad Retirement Editorial Team</span>.
                             </p>
                             <p>
-                                After 20 years in traditional wealth management, I saw too many retirees lose their hard-earned savings to market crashes and inflation. I realized that the traditional "60/40" portfolio was no longer enough to protect against modern economic risks.
+                                With decades of combined experience in wealth management, we&apos;ve seen too many retirees lose their hard-earned savings to market crashes and inflation. We realized that the traditional &quot;60/40&quot; portfolio was no longer enough to protect against modern economic risks.
                             </p>
                             <p>
-                                I created this platform to help Americans understand how to legally, safely, and easily move a portion of their retirement savings into physical gold—tax-free.
+                                We created this platform to help Americans understand how to legally, safely, and easily move a portion of their retirement savings into physical gold—tax-free.
                             </p>
                         </div>
 
                         <div className="pt-4">
-                            <span className="font-serif italic text-2xl text-primary font-bold">Thomas Richardson</span>
-                            <p className="text-sm text-gray-500 uppercase tracking-wide mt-1">Senior Editor & Founder</p>
+                            <span className="font-serif italic text-2xl text-primary font-bold">Rich Dad Retirement Editorial Team</span>
+                            <p className="text-sm text-gray-500 uppercase tracking-wide mt-1">Data-Driven Research & Education</p>
                         </div>
                     </FadeIn>
                 </div>

@@ -57,8 +57,8 @@ const schema = {
             "description": "Discover if silver is a good investment for 2026. Learn about silver's industrial demand, historical returns, silver-to-gold ratio, and how to invest in silver through a Silver IRA.",
             "image": "https://richdadretirement.com/images/silver-investment.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

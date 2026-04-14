@@ -57,8 +57,8 @@ const schema = {
             "headline": "Recession-Proof Investments: 7 Assets That Survive Economic Downturns",
             "description": "Discover recession-proof investments that protect your portfolio during economic downturns.",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

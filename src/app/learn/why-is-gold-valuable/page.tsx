@@ -54,8 +54,8 @@ const schema = {
             "description": "Discover why gold has been valuable for 5,000+ years. Learn the scientific properties, historical significance, and economic factors that make gold the ultimate store of value.",
             "image": "https://richdadretirement.com/images/why-gold-valuable.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

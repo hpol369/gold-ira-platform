@@ -46,8 +46,8 @@ const reviewJsonLd = {
         "worstRating": "1"
     },
     "author": {
-        "@type": "Person",
-        "name": "Thomas Richardson"
+        "@type": "Organization",
+        "name": "Rich Dad Retirement Editorial Team"
     },
     "publisher": {
         "@type": "Organization",

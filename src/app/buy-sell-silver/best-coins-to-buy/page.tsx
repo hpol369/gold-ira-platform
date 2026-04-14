@@ -197,8 +197,8 @@ const schema = {
       "headline": "Best Silver Coins to Buy: Top Picks for Investors",
       "description": "Discover the best silver coins to buy for investment. Compare American Eagles, Canadian Maple Leafs, and other top choices.",
       "author": {
-        "@type": "Person",
-        "name": "Thomas Richardson"
+        "@type": "Organization",
+        "name": "Rich Dad Retirement Editorial Team"
       },
       "publisher": {
         "@type": "Organization",

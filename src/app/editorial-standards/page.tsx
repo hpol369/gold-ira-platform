@@ -87,7 +87,7 @@ export default function EditorialStandardsPage() {
             <h2 className="text-2xl font-serif font-bold text-[#000080] m-0">How We Write</h2>
           </div>
           <p>
-            Our content is written by <Link href="/author/thomas-richardson">Thomas Richardson</Link>, CFP, a former wealth manager with 20+ years of experience. Thomas writes for real people &mdash; factory workers, nurses, teachers, government employees, truckers &mdash; not Wall Street insiders.
+            Our content is written by the <Link href="/editorial-board">Rich Dad Retirement Editorial Team</Link>, a team with deep expertise in retirement planning and precious metals research. We write for real people &mdash; factory workers, nurses, teachers, government employees, truckers &mdash; not Wall Street insiders.
           </p>
           <p>Our writing standards:</p>
           <ul>
@@ -178,7 +178,7 @@ export default function EditorialStandardsPage() {
             All content on Rich Dad Retirement is written and reviewed by individuals with direct experience in retirement planning and financial services:
           </p>
           <ul>
-            <li><strong>Thomas Richardson, CFP</strong> &mdash; 20+ years as a wealth manager, Certified Financial Planner, University of Virginia graduate. <Link href="/author/thomas-richardson">Full bio</Link>.</li>
+            <li><strong>Rich Dad Retirement Editorial Team</strong> &mdash; Data-driven research across retirement planning, IRS regulations, and precious metals markets. <Link href="/editorial-board">Meet the team</Link>.</li>
             <li><strong>Editorial Board</strong> &mdash; Our board reviews all content for accuracy and compliance with these standards. <Link href="/editorial-board">Learn more</Link>.</li>
           </ul>
 
@@ -192,8 +192,8 @@ export default function EditorialStandardsPage() {
               <Link href="/editorial-policy" className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium">
                 <FileText className="h-4 w-4" /> Editorial Policy
               </Link>
-              <Link href="/author/thomas-richardson" className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium">
-                <Users className="h-4 w-4" /> About Our Lead Analyst
+              <Link href="/editorial-board" className="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium">
+                <Users className="h-4 w-4" /> About Our Editorial Team
               </Link>
             </div>
           </div>

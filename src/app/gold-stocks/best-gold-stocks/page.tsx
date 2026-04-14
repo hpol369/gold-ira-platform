@@ -36,8 +36,8 @@ const articleSchema = {
     headline: "Best Gold Stocks vs Physical Gold: What to Buy in 2026",
     description: "Compare gold mining stocks, ETFs, and physical gold to find the best gold investment for your portfolio.",
     author: {
-        "@type": "Person",
-        name: "Thomas Richardson",
+        "@type": "Organization",
+        name: "Rich Dad Retirement Editorial Team",
     },
     publisher: {
         "@type": "Organization",
