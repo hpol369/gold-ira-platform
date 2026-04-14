@@ -240,7 +240,7 @@ export default function AboutUsPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-[#B22234] mb-2">1,500+</div>
+                <div className="text-3xl font-bold text-[#B22234] mb-2">350+</div>
                 <div className="text-[#000080] font-semibold mb-1">
                   Articles Published
                 </div>

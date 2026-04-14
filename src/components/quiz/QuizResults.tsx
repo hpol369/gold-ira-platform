@@ -277,7 +277,7 @@ export function QuizResults({
                     <a
                       href={primaryAffiliateLink}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="sponsored noopener noreferrer"
                     >
                       Get Your Free Investment Kit
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -344,7 +344,7 @@ export function QuizResults({
                           <a
                             href={affiliateLink}
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="sponsored noopener noreferrer"
                           >
                             Learn More
                             <ArrowRight className="ml-1 h-3 w-3" />

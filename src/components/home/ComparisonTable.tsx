@@ -186,7 +186,7 @@ export function ComparisonTable() {
                                     `}
                                     asChild
                                 >
-                                    <a href={company.ctaUrl} target="_blank" rel="noopener noreferrer">
+                                    <a href={company.ctaUrl} target="_blank" rel="sponsored noopener noreferrer">
                                         {company.rank === 1 ? "Visit Secure Site" : "Visit Site"} <ArrowRight className="w-4 h-4 ml-1" />
                                     </a>
                                 </Button>
@@ -285,7 +285,7 @@ export function ComparisonTable() {
                                             `}
                                             asChild
                                         >
-                                            <a href={company.ctaUrl} target="_blank" rel="noopener noreferrer">
+                                            <a href={company.ctaUrl} target="_blank" rel="sponsored noopener noreferrer">
                                                 {company.rank === 1 ? "Get Free Kit" : "View Site"}
                                             </a>
                                         </Button>

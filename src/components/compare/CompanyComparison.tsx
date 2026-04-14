@@ -223,7 +223,7 @@ export function CompanyComparisonTable({
               <a
                 href={getTrackedLink(companyA.affiliateLink, "compare-component", companyA.slug)}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className={cn(
                   "inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all",
                   companyA.featured
@@ -239,7 +239,7 @@ export function CompanyComparisonTable({
               <a
                 href={getTrackedLink(companyB.affiliateLink, "compare-component", companyB.slug)}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className={cn(
                   "inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all",
                   companyB.featured
@@ -390,7 +390,7 @@ export function ComparisonWinner({ companyA, companyB }: ComparisonWinnerProps) 
         <a
           href={getTrackedLink(winner.affiliateLink, "compare-component", winner.slug)}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored noopener noreferrer"
           className={cn(
             "inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all",
             winner.featured
