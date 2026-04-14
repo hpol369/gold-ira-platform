@@ -46,8 +46,8 @@ const schema = {
             "headline": "401(k) Alternatives: 7 Ways to Save for Retirement in 2026",
             "description": "Explore the best 401(k) alternatives including IRAs, Gold IRAs, HSAs, real estate, and more.",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

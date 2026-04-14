@@ -56,8 +56,8 @@ const schema = {
             "headline": "Stock Market Alternatives: 8 Ways to Invest Beyond Stocks",
             "description": "Explore stock market alternatives including gold, real estate, bonds, private equity, and more.",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

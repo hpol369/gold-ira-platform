@@ -167,8 +167,8 @@ const schema = {
       "headline": "Silver Stacking for Beginners: Complete Getting Started Guide",
       "description": "Learn how to start stacking silver. Budget recommendations, first purchases to make, where to buy, and how to build a solid silver position.",
       "author": {
-        "@type": "Person",
-        "name": "Thomas Richardson"
+        "@type": "Organization",
+        "name": "Rich Dad Retirement Editorial Team"
       },
       "publisher": {
         "@type": "Organization",

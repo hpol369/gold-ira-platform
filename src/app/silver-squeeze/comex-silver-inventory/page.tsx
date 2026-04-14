@@ -52,8 +52,8 @@ const schema = {
             "description": "Comprehensive analysis of COMEX silver inventory levels, explaining registered vs eligible silver, historical drawdowns, and implications for silver prices.",
             "image": "https://richdadretirement.com/images/comex-silver-inventory.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

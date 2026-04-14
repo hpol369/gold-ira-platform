@@ -52,8 +52,8 @@ const schema = {
             "description": "Complete guide to understanding silver backwardation, including how futures markets work, the difference between contango and backwardation, and why backwardation signals physical shortage.",
             "image": "https://richdadretirement.com/images/silver-backwardation.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

@@ -12,9 +12,9 @@ const publisher = {
 };
 
 const defaultAuthor = {
-  "@type": "Person" as const,
-  name: "Thomas Richardson",
-  url: `${SITE_URL}/author/thomas-richardson`,
+  "@type": "Organization" as const,
+  name: "Rich Dad Retirement Editorial Team",
+  url: `${SITE_URL}/editorial-board`,
 };
 
 // --- Article Schema ---
@@ -34,7 +34,7 @@ export function articleSchema(params: {
     headline: params.title,
     description: params.description,
     author: params.author
-      ? { "@type": "Person", name: params.author, url: `${SITE_URL}/author/thomas-richardson` }
+      ? { "@type": "Person", name: params.author, url: `${SITE_URL}/editorial-board` }
       : defaultAuthor,
     publisher,
     datePublished: params.datePublished || new Date().toISOString(),

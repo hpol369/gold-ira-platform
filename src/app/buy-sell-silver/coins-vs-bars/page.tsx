@@ -152,8 +152,8 @@ const schema = {
       "headline": "Silver Coins vs Bars: Which Should You Buy?",
       "description": "Compare silver coins vs silver bars for investment. Analyze premiums, liquidity, storage, and which is better for your goals.",
       "author": {
-        "@type": "Person",
-        "name": "Thomas Richardson"
+        "@type": "Organization",
+        "name": "Rich Dad Retirement Editorial Team"
       },
       "publisher": {
         "@type": "Organization",

@@ -52,8 +52,8 @@ const schema = {
             "description": "Comprehensive analysis of the silver supply deficit, examining mining production trends, industrial demand from solar and EVs, investment demand, and price implications.",
             "image": "https://richdadretirement.com/images/silver-supply-deficit.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

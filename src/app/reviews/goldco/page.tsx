@@ -24,7 +24,7 @@ export const metadata = {
 export default function GoldcoReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
-            <SchemaScript schema={reviewSchema({ itemName: "Goldco", reviewBody: "Goldco is one of the largest Gold IRA companies with billions in transactions and a strong buyback guarantee.", ratingValue: 4.6, author: "Thomas Richardson", url: "/reviews/goldco" })} />
+            <SchemaScript schema={reviewSchema({ itemName: "Goldco", reviewBody: "Goldco is one of the largest Gold IRA companies with billions in transactions and a strong buyback guarantee.", ratingValue: 4.6, author: "Rich Dad Retirement Editorial Team", url: "/reviews/goldco" })} />
             <SchemaScript schema={aggregateRatingSchema({ itemName: "Goldco", ratingValue: 4.6, reviewCount: 956 })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Goldco", url: "/reviews/goldco" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/goldco"))} />

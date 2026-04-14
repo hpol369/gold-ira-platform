@@ -36,8 +36,8 @@ const articleSchema = {
     headline: "Gold Stocks to Buy vs Physical Gold: Investment Guide 2026",
     description: "Understanding the differences between gold stocks, ETFs, and physical gold for investors seeking gold exposure.",
     author: {
-        "@type": "Person",
-        name: "Thomas Richardson",
+        "@type": "Organization",
+        name: "Rich Dad Retirement Editorial Team",
     },
     publisher: {
         "@type": "Organization",

@@ -54,8 +54,8 @@ const schema = {
             "description": "Understand sequence of returns risk and how it can devastate your retirement savings.",
             "image": "https://richdadretirement.com/images/sequence-risk.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

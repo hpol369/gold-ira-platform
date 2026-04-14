@@ -55,8 +55,8 @@ const schema = {
             "headline": "Safe Haven Investments: 6 Assets That Protect During Crisis",
             "description": "Discover safe haven investments that protect wealth during market crashes, geopolitical crises, and economic uncertainty.",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

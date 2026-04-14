@@ -58,8 +58,8 @@ const schema = {
             "headline": "10 Retirement Planning Mistakes That Destroy Wealth",
             "description": "Avoid these 10 costly retirement planning mistakes that can devastate your retirement savings.",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

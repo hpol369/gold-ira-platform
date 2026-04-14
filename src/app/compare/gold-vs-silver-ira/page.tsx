@@ -57,8 +57,8 @@ const schema = {
             "headline": "Gold vs Silver IRA: Which Precious Metal is Best for 2026?",
             "description": "Compare gold vs silver for your IRA. Learn the differences in volatility, growth potential, storage costs, and which metal is right for your retirement.",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson"
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team"
             },
             "publisher": {
                 "@type": "Organization",

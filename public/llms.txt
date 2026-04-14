@@ -2,7 +2,7 @@
 # https://www.richdadretirement.com
 # Comprehensive Gold IRA, Silver IRA, and retirement investment education
 
-> Rich Dad Retirement is an independent retirement investment education platform providing expert reviews, fee comparisons, and guides for Gold IRAs, Silver IRAs, and alternative retirement accounts. Content is researched with AI assistance and fact-checked by a certified editorial board led by Thomas Richardson, CFP.
+> Rich Dad Retirement is an independent retirement investment education platform providing expert reviews, fee comparisons, and guides for Gold IRAs, Silver IRAs, and alternative retirement accounts. Content is researched with AI assistance and fact-checked by a certified editorial board led by our editorial team.
 
 ## Core Topics
 
@@ -56,4 +56,4 @@
 - [About Us](https://www.richdadretirement.com/about-us)
 - [Editorial Standards](https://www.richdadretirement.com/editorial-standards)
 - [Editorial Policy](https://www.richdadretirement.com/editorial-policy)
-- [Author: Thomas Richardson, CFP](https://www.richdadretirement.com/author/thomas-richardson)
+- [Editorial Board](https://www.richdadretirement.com/editorial-board)

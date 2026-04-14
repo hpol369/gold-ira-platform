@@ -101,8 +101,8 @@ const schema = {
             "description": "Compare gold mining stocks, ETFs, and physical gold investments. Understand the pros and cons of each gold investment option.",
             "image": "https://richdadretirement.com/images/gold-stocks-guide.jpg",
             "author": {
-                "@type": "Person",
-                "name": "Thomas Richardson",
+                "@type": "Organization",
+                "name": "Rich Dad Retirement Editorial Team",
             },
             "publisher": {
                 "@type": "Organization",
