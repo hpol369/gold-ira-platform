@@ -38,11 +38,11 @@ const articleSchema = {
     headline: "Best Silver Stocks vs Physical Silver: What to Buy in 2026",
     description: "Compare silver mining stocks, ETFs, and physical silver to find the best silver investment for your portfolio.",
     author: {
-        "@type": "Organization",
-        name: "Rich Dad Retirement Editorial Team",
+        "@type": "Person",
+        name: "Thomas Richardson",
     },
     publisher: {
-        "@type": "Organization",
+        "@type": "Person",
         name: "Rich Dad Retirement",
     },
     datePublished: "2026-01-27",

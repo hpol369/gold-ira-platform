@@ -87,11 +87,11 @@ const articleSchema = {
     headline: "Silver Stocks vs Physical Silver: Investment Guide (2026)",
     description: "Compare silver stocks vs physical silver investing. Learn why physical silver offers the purest exposure to silver prices.",
     author: {
-        "@type": "Organization",
-        name: "Rich Dad Retirement Editorial Team",
+        "@type": "Person",
+        name: "Thomas Richardson",
     },
     publisher: {
-        "@type": "Organization",
+        "@type": "Person",
         name: "Rich Dad Retirement",
     },
     datePublished: "2026-01-27",

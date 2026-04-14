@@ -141,8 +141,8 @@ const schema = {
       "headline": "Best Place to Sell Silver: Compare Options & Get Top Dollar",
       "description": "Find the best place to sell silver coins and bullion. Compare online dealers, local coin shops, pawn shops, and private buyers.",
       "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement Editorial Team"
+        "@type": "Person",
+        "name": "Thomas Richardson"
       },
       "publisher": {
         "@type": "Organization",

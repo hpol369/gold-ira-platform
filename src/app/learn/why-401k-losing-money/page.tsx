@@ -71,8 +71,8 @@ const schema = {
             "description": "A comprehensive guide to understanding why your 401k might be losing value and actionable steps to protect your retirement savings.",
             "image": "https://richdadretirement.com/images/401k-losses.jpg",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

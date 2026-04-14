@@ -74,8 +74,8 @@ const schema = {
             "headline": "Is It Too Late to Save for Retirement? Hope & Strategies for Late Starters",
             "description": "Comprehensive guide for those who feel behind on retirement savings. Actionable strategies for starting at 50, 55, or 60.",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

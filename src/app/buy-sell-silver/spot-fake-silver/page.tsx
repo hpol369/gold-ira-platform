@@ -169,8 +169,8 @@ const schema = {
       "headline": "How to Spot Fake Silver: Visual Inspection & Testing Guide",
       "description": "Learn how to spot fake silver coins and bars. Visual inspection tips, common counterfeits to watch for, and simple tests.",
       "author": {
-        "@type": "Organization",
-        "name": "Rich Dad Retirement Editorial Team"
+        "@type": "Person",
+        "name": "Thomas Richardson"
       },
       "publisher": {
         "@type": "Organization",

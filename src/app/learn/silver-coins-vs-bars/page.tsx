@@ -129,8 +129,8 @@ const schema = {
             "headline": "Silver Coins vs Bars: Which is Better for Your IRA?",
             "description": "Compare silver coins vs silver bars for your IRA. Learn the differences in premiums, liquidity, recognition, and which is better for your investment goals.",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement Editorial Team"
+                "@type": "Person",
+                "name": "Thomas Richardson"
             },
             "publisher": {
                 "@type": "Organization",

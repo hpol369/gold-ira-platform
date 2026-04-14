@@ -24,7 +24,7 @@ export const metadata = {
 export default function NobleGoldReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
-            <SchemaScript schema={reviewSchema({ itemName: "Noble Gold Investments", reviewBody: "Noble Gold offers the lowest minimum in the industry at $2,000, making Gold IRAs accessible to everyone.", ratingValue: 4.7, author: "Rich Dad Retirement Editorial Team", url: "/reviews/noble-gold" })} />
+            <SchemaScript schema={reviewSchema({ itemName: "Noble Gold Investments", reviewBody: "Noble Gold offers the lowest minimum in the industry at $2,000, making Gold IRAs accessible to everyone.", ratingValue: 4.7, author: "Thomas Richardson", url: "/reviews/noble-gold" })} />
             <SchemaScript schema={aggregateRatingSchema({ itemName: "Noble Gold Investments", ratingValue: 4.7, reviewCount: 834 })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Noble Gold", url: "/reviews/noble-gold" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/noble-gold"))} />

@@ -93,10 +93,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
-  // EDITORIAL TEAM PAGES
+  // AUTHOR PAGES
   // ============================================
   const authorPages = [
-    "/editorial-board",
+    "/author/thomas-richardson",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-03-01'),

@@ -24,7 +24,7 @@ export const metadata = {
 export default function AmericanHartfordGoldReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-slate-50">
-            <SchemaScript schema={reviewSchema({ itemName: "American Hartford Gold", reviewBody: "American Hartford Gold offers a $10,000 minimum and price match guarantee, making them a strong mid-range option.", ratingValue: 4.5, author: "Rich Dad Retirement Editorial Team", url: "/reviews/american-hartford-gold" })} />
+            <SchemaScript schema={reviewSchema({ itemName: "American Hartford Gold", reviewBody: "American Hartford Gold offers a $10,000 minimum and price match guarantee, making them a strong mid-range option.", ratingValue: 4.5, author: "Thomas Richardson", url: "/reviews/american-hartford-gold" })} />
             <SchemaScript schema={aggregateRatingSchema({ itemName: "American Hartford Gold", ratingValue: 4.5, reviewCount: 612 })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "American Hartford Gold", url: "/reviews/american-hartford-gold" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("reviews/american-hartford-gold"))} />
