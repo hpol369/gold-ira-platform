@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/audit",
     "/gold-ira-industry-report-2026",
     "/when-not-to-open-gold-ira",
+    "/retirement-risk-score",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-03-22'),
