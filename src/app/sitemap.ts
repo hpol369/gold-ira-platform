@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { getAllSegmentSlugs } from "@/data/segment-hubs";
 
 /**
  * SITEMAP — QUALITY-ONLY VERSION
@@ -69,6 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/is-enough-to-retire",
     "/audit",
     "/gold-ira-industry-report-2026",
+    "/when-not-to-open-gold-ira",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-03-22'),
@@ -549,6 +551,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // ============================================
+  // SEGMENT HUB PAGES (occupation + life-event)
+  // ============================================
+  const segmentSlugs = getAllSegmentSlugs();
+  const segmentPages = segmentSlugs.map((slug) => ({
+    url: `${baseUrl}/retirement/${slug}`,
+    lastModified: new Date('2026-04-14'),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  // ============================================
   // COMBINE ALL PAGES
   // ============================================
   const allPages = [
@@ -568,6 +581,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...specialTopicPages,
     ...silverPages,
     ...stocksPages,
+    ...segmentPages,
   ];
 
   // Deduplicate by URL
