@@ -1,10 +1,25 @@
 // Shared Augusta submission logic
 import { Lead } from "@/lib/supabase";
 
-const AUGUSTA_WEBHOOK_URL = process.env.AUGUSTA_WEBHOOK_URL!;
-const AFFILIATE_ID = process.env.AUGUSTA_AFFILIATE_ID || "5129";
+const AFFILIATE_ID_DEFAULT = "5129";
+
+function getWebhookUrl(): string | null {
+  // Read at call time (not module load) — matches the lazy pattern used in
+  // supabase.ts. Keeps the build working when env is absent at page-data
+  // collection and surfaces a clear error at request time rather than a
+  // cryptic "fetch(undefined)" failure.
+  return process.env.AUGUSTA_WEBHOOK_URL || null;
+}
 
 export async function submitToAugusta(lead: Lead): Promise<boolean> {
+  const webhookUrl = getWebhookUrl();
+  if (!webhookUrl) {
+    console.error("[AUGUSTA] AUGUSTA_WEBHOOK_URL is not set — lead NOT forwarded:", lead.email);
+    return false;
+  }
+
+  const affiliateId = process.env.AUGUSTA_AFFILIATE_ID || AFFILIATE_ID_DEFAULT;
+
   // Build human-readable notes for the specialist
   const notesParts: string[] = [];
   if (lead.metal_preference) notesParts.push(`Metal Interest: ${lead.metal_preference === "both" ? "Gold & Silver" : lead.metal_preference === "silver" ? "Silver" : "Gold"}`);
@@ -19,7 +34,7 @@ export async function submitToAugusta(lead: Lead): Promise<boolean> {
     lastname: lead.last_name || "",
     phone: lead.phone,
     email: lead.email,
-    affiliate_id: AFFILIATE_ID,
+    affiliate_id: affiliateId,
     // Enrichment fields for Augusta specialist context
     savings_tier: lead.savings_tier || "",
     primary_concern: lead.concern || "",
@@ -31,11 +46,22 @@ export async function submitToAugusta(lead: Lead): Promise<boolean> {
 
   try {
     console.log("[AUGUSTA] Submitting to webhook:", lead.email);
-    const augustaResponse = await fetch(AUGUSTA_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    // Bound the request so a hanging Zapier doesn't block the API route
+    // past Vercel's function timeout. 8s gives plenty of room while keeping
+    // the caller responsive.
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    let augustaResponse: Response;
+    try {
+      augustaResponse = await fetch(webhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        signal: controller.signal,
+      });
+    } finally {
+      clearTimeout(timeout);
+    }
 
     console.log("[AUGUSTA] Response status:", augustaResponse.status);
 
@@ -50,7 +76,8 @@ export async function submitToAugusta(lead: Lead): Promise<boolean> {
       return false;
     }
   } catch (error) {
-    console.error("[AUGUSTA] Submit error:", error);
+    const isAbort = error instanceof Error && error.name === "AbortError";
+    console.error(`[AUGUSTA] Submit error${isAbort ? " (timeout)" : ""}:`, error);
     return false;
   }
 }

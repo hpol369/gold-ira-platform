@@ -323,7 +323,7 @@ export async function POST(request: NextRequest) {
 export async function PATCH(request: NextRequest) {
   try {
     const body = await request.json();
-    const { leadId, action, totalRetirementSavings, percentageToProtect, notes } = body;
+    const { leadId, email, action, totalRetirementSavings, percentageToProtect, notes } = body;
 
     if (!leadId || !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(leadId)) {
       return NextResponse.json(
@@ -336,6 +336,16 @@ export async function PATCH(request: NextRequest) {
     const lead = await getLeadById(leadId);
     if (!lead) {
       return NextResponse.json({ success: false, error: "Lead not found" }, { status: 404 });
+    }
+
+    // Caller must know the email the lead was created with. Prevents random
+    // actors from marking arbitrary leads as qualified or overwriting notes.
+    if (!email || typeof email !== "string" || email.trim().toLowerCase() !== lead.email) {
+      console.warn(`[PATCH-LEAD] Email mismatch for lead ${leadId} from ${request.headers.get("x-forwarded-for")}`);
+      return NextResponse.json(
+        { success: false, error: "Unauthorized" },
+        { status: 403 }
+      );
     }
 
     // Handle decline_call action

@@ -69,7 +69,11 @@ export function LeadCaptureForm() {
           lastName: formData.lastName,
           email: formData.email,
           phone: formData.phone,
-          investmentAmount: formData.investmentAmount,
+          // Map UI field → API contract. /api/submit-lead reads `savingsTier`
+          // and uses it for sequence routing (high-intent vs starter-nurture)
+          // and for the Augusta specialist's qualification context. Without
+          // this, every lead from this form defaulted to starter-nurture.
+          savingsTier: formData.investmentAmount,
           source: "lead-capture-form",
         }),
       });
