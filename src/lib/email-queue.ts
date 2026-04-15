@@ -356,14 +356,16 @@ export async function unsubscribeEmail(
   sequenceId?: string
 ): Promise<boolean> {
   const now = new Date().toISOString();
+  const normalizedEmail = email.toLowerCase();
 
+  // 1. Update email_sequence_queue — cancel all pending entries
   let query = supabase
     .from("email_sequence_queue")
     .update({
       status: "unsubscribed",
       unsubscribed_at: now,
     })
-    .eq("email", email)
+    .eq("email", normalizedEmail)
     .eq("status", "pending");
 
   if (sequenceId && sequenceId !== "all") {
@@ -377,13 +379,20 @@ export async function unsubscribeEmail(
     return false;
   }
 
-  console.log(`[EMAIL_QUEUE] ${email} unsubscribed from ${sequenceId || "all"}`);
+  console.log(`[EMAIL_QUEUE] ${normalizedEmail} unsubscribed from ${sequenceId || "all"}`);
 
-  // Also update email_subscribers table
-  await supabase
+  // 2. Update email_subscribers table — set status + timestamp
+  const { error: subError } = await supabase
     .from("email_subscribers")
-    .update({ status: "unsubscribed" })
-    .eq("email", email);
+    .update({
+      status: "unsubscribed",
+      unsubscribed_at: now,
+    })
+    .eq("email", normalizedEmail);
+
+  if (subError) {
+    console.error("[EMAIL_QUEUE] Subscriber unsubscribe error:", subError);
+  }
 
   return true;
 }

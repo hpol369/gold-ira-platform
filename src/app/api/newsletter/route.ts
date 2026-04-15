@@ -1,7 +1,24 @@
 import { NextRequest, NextResponse } from "next/server";
+import crypto from "crypto";
 import { supabase } from "@/lib/supabase";
 import { sendTelegramNotification } from "@/lib/notifications";
-import { enrollInSequence } from "@/lib/email-queue";
+import { sendEmail, isResendConfigured } from "@/lib/resend";
+import { emailLayout, p } from "@/lib/email-templates";
+
+const SITE_URL = "https://richdadretirement.com";
+
+/**
+ * Generate a confirmation token from email + secret
+ * Used for double opt-in verification
+ */
+function generateConfirmToken(email: string): string {
+  const secret = process.env.CRON_SECRET || "fallback-secret";
+  return crypto
+    .createHash("sha256")
+    .update(email + secret)
+    .digest("hex")
+    .slice(0, 32);
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,11 +36,11 @@ export async function POST(request: NextRequest) {
     const cleanEmail = email.trim().toLowerCase();
     const cleanSource = (source || "unknown").replace(/<[^>]*>/g, "").trim().slice(0, 100);
 
-    // Upsert to Supabase (ignore duplicate)
+    // Upsert to Supabase with confirmed_at = null (unconfirmed)
     const { error } = await supabase
       .from("email_subscribers")
       .upsert(
-        { email: cleanEmail, source: cleanSource },
+        { email: cleanEmail, source: cleanSource, confirmed_at: null },
         { onConflict: "email", ignoreDuplicates: true }
       );
 
@@ -35,29 +52,35 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Enroll in content nurture sequence (topic-aware, 13 emails over 60 days)
-    // Extract topic slug from source path for personalized content
-    const topicSlug = cleanSource.startsWith("/learn/")
-      ? cleanSource.replace("/learn/", "")
-      : cleanSource.startsWith("/")
-        ? cleanSource.replace(/^\//, "").replace(/\//g, "-")
-        : cleanSource;
+    // Send confirmation email (double opt-in)
+    if (isResendConfigured()) {
+      const token = generateConfirmToken(cleanEmail);
+      const confirmUrl = `${SITE_URL}/api/email/confirm?token=${token}&email=${encodeURIComponent(cleanEmail)}`;
 
-    try {
-      await enrollInSequence(
-        cleanEmail,
-        "content-nurture",
-        cleanSource,
-        undefined, // firstName not captured in newsletter
-        { topicSlug } // metadata for topic-specific email content
-      );
-    } catch (err) {
-      console.error("[NEWSLETTER] Sequence enrollment failed:", err);
-      // Fallback to legacy sequence if content-nurture doesn't exist yet
+      const html = emailLayout({
+        preheader: "Please confirm your subscription to The Sovereign Weekly",
+        body: [
+          p("Thanks for signing up for <strong>The Sovereign Weekly</strong> — your weekly guide to protecting retirement savings with gold, silver, and smart IRA strategies."),
+          p("Please confirm your email address by clicking the button below:"),
+        ].join(""),
+        ctaText: "Confirm My Subscription",
+        ctaUrl: confirmUrl,
+        email: cleanEmail,
+        sequence: "confirmation",
+      });
+
       try {
-        await enrollInSequence(cleanEmail, "newsletter-welcome", cleanSource);
-      } catch {
-        console.error("[NEWSLETTER] Fallback enrollment also failed");
+        await sendEmail({
+          to: cleanEmail,
+          subject: "Confirm your subscription to Rich Dad Retirement",
+          html,
+          tags: [
+            { name: "type", value: "double-opt-in" },
+            { name: "source", value: cleanSource },
+          ],
+        });
+      } catch (err) {
+        console.error("[NEWSLETTER] Confirmation email failed:", err);
       }
     }
 
@@ -65,11 +88,11 @@ export async function POST(request: NextRequest) {
     try {
       await sendTelegramNotification(
         [
-          "📧 <b>New Email Subscriber</b>",
+          "\u{1F4E7} <b>New Email Subscriber (pending confirmation)</b>",
           "",
-          `📩 ${cleanEmail}`,
-          `📄 Source: ${cleanSource}`,
-          `🕐 ${new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" })}`,
+          `\u{1F4E9} ${cleanEmail}`,
+          `\u{1F4C4} Source: ${cleanSource}`,
+          `\u{1F550} ${new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" })}`,
         ].join("\n"),
         false
       );
@@ -77,11 +100,11 @@ export async function POST(request: NextRequest) {
       console.error("[NEWSLETTER] Telegram notification failed");
     }
 
-    console.log(`[NEWSLETTER] Subscriber: ${cleanEmail} from ${cleanSource}`);
+    console.log(`[NEWSLETTER] Subscriber (pending): ${cleanEmail} from ${cleanSource}`);
 
     return NextResponse.json({
       success: true,
-      message: "Successfully subscribed",
+      message: "Confirmation email sent. Please check your inbox.",
     });
   } catch (error) {
     console.error("[NEWSLETTER ERROR]", error);

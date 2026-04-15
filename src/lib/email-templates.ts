@@ -19,7 +19,7 @@ interface EmailLayoutOptions {
  * V2.2: Gold accent bar, responsive CTA, trust footer, mobile padding
  */
 export function emailLayout({ preheader, body, ctaText, ctaUrl, email, sequence }: EmailLayoutOptions): string {
-  const prefLink = `${SITE_URL}/api/email/preferences?email=${encodeURIComponent(email)}&seq=${encodeURIComponent(sequence || "all")}`;
+  const prefLink = `${SITE_URL}/email-preferences?email=${encodeURIComponent(email)}&seq=${encodeURIComponent(sequence || "all")}`;
   const unsubLink = `${UNSUBSCRIBE_URL}?email=${encodeURIComponent(email)}&seq=${encodeURIComponent(sequence || "all")}`;
 
   // Pad preheader to prevent email clients from pulling body text into preview
@@ -118,12 +118,17 @@ export function emailLayout({ preheader, body, ctaText, ctaUrl, email, sequence 
                 &nbsp;&middot;&nbsp;
                 <a href="${SITE_URL}/best-gold-ira-companies" style="color:#64748b;text-decoration:underline;">Company reviews</a>
                 &nbsp;&middot;&nbsp;
+                <a href="${SITE_URL}/privacy-policy" style="color:#64748b;text-decoration:underline;">Privacy policy</a>
+                &nbsp;&middot;&nbsp;
                 <a href="${prefLink}" style="color:#64748b;text-decoration:underline;">Email preferences</a>
                 &nbsp;&middot;&nbsp;
                 <a href="${unsubLink}" style="color:#64748b;text-decoration:underline;">Unsubscribe</a>
               </p>
-              <p style="margin:0;font-size:11px;color:#cbd5e1;text-align:center;">
+              <p style="margin:0 0 4px;font-size:11px;color:#cbd5e1;text-align:center;">
                 Rich Dad Retirement &middot; You're receiving this because you signed up at richdadretirement.com
+              </p>
+              <p style="margin:0;font-size:10px;color:#cbd5e1;text-align:center;">
+                CCC Impact BV &middot; Apeldoorn, Netherlands &middot; This email may contain affiliate links.
               </p>
             </td>
           </tr>
