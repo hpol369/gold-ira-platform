@@ -63,7 +63,7 @@ export function WhySection() {
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
-                href="#social-proof"
+                href="#how-it-works"
                 className="inline-flex items-center justify-center px-6 py-3 text-blue-200 hover:text-white font-medium text-base transition-colors"
               >
                 See How It Works
