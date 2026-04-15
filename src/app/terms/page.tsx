@@ -15,6 +15,7 @@ import {
   Lock,
   Scale,
   RefreshCw,
+  Phone,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -307,6 +308,25 @@ export default function TermsPage() {
               >
                 <Handshake className="h-4 w-4" /> Contact
               </Link>
+            </div>
+          </div>
+
+          {/* SMS/Text Messaging Terms */}
+          <div className="mt-12 bg-white border border-slate-200 rounded-xl p-8">
+            <h2 className="text-xl font-bold text-[#000080] mb-4 flex items-center gap-2">
+              <Phone className="h-5 w-5" /> SMS/Text Messaging Terms
+            </h2>
+            <div className="prose prose-slate max-w-none text-sm space-y-3">
+              <p><strong>Program Name:</strong> Rich Dad Retirement Gold IRA Notifications</p>
+              <p><strong>What You&apos;ll Receive:</strong> After submitting a Gold IRA information request form on our website, you may receive up to 3 transactional text messages related to your request. These include: (1) a confirmation of your form submission, (2) a reminder about an upcoming informational phone call from our partner, and (3) a follow-up if the call was missed.</p>
+              <p><strong>Message Frequency:</strong> Up to 3 text messages total per form submission. This is not a recurring subscription.</p>
+              <p><strong>Message and Data Rates:</strong> Message and data rates may apply. Check with your wireless carrier for details about your text messaging plan.</p>
+              <p><strong>Opt-In:</strong> You consent to receive text messages by submitting the Gold IRA information request form at <a href="/get-started" className="text-[#B22234] hover:underline">richdadretirement.com/get-started</a> and providing your phone number. Consent is not a condition of purchase.</p>
+              <p><strong>Opt-Out:</strong> Reply <strong>STOP</strong> to any message to unsubscribe from all future text messages. You will receive a one-time confirmation of your opt-out.</p>
+              <p><strong>Help:</strong> Reply <strong>HELP</strong> for support, or email us at <a href="mailto:hello@richdadretirement.com" className="text-[#B22234] hover:underline">hello@richdadretirement.com</a>.</p>
+              <p><strong>Supported Carriers:</strong> Compatible with all major US carriers including AT&amp;T, Verizon, T-Mobile, Sprint, and others.</p>
+              <p><strong>Privacy:</strong> Your phone number is only used for the purpose described above and is never sold to third parties. See our <Link href="/privacy-policy" className="text-[#B22234] hover:underline">Privacy Policy</Link> for details.</p>
+              <p><strong>Contact:</strong> CCC Impact BV, Apeldoorn, Netherlands. Email: <a href="mailto:hello@richdadretirement.com" className="text-[#B22234] hover:underline">hello@richdadretirement.com</a></p>
             </div>
           </div>
         </div>
