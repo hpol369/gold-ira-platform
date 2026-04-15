@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -23,18 +24,24 @@ import {
   Banknote,
   Scale,
 } from "lucide-react";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "7 Situations Where a Gold IRA Does Not Make Sense (2026)",
-  description:
-    "A Gold IRA is not always the right move. Learn 7 situations where fees, liquidity needs, or emotional decisions make other retirement options a better fit.",
-  url: "https://www.richdadretirement.com/learn/when-a-gold-ira-does-not-make-sense",
-  type: "article",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "7 Situations Where a Gold IRA Does Not Make Sense (2026)",
+    description:
+      "A Gold IRA is not always the right move. Learn 7 situations where fees, liquidity needs, or emotional decisions make other retirement options a better fit.",
+    url: "https://www.richdadretirement.com/learn/when-a-gold-ira-does-not-make-sense",
+    type: "article",
+  }),
+  robots: isPublished("when-a-gold-ira-does-not-make-sense") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Page data

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -17,19 +18,25 @@ import {
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "Can You Lose Money in a Gold IRA? Real Risks Retirees Should Understand",
-  description:
-    "Yes, you can lose money in a Gold IRA. We explain the real risks: price declines, fee drag, dealer markups, opportunity cost, and how to protect yourself.",
-  url: "https://www.richdadretirement.com/learn/can-you-lose-money-in-a-gold-ira",
-  type: "article",
-  imageAlt: "Can You Lose Money in a Gold IRA?",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Can You Lose Money in a Gold IRA? Real Risks Retirees Should Understand",
+    description:
+      "Yes, you can lose money in a Gold IRA. We explain the real risks: price declines, fee drag, dealer markups, opportunity cost, and how to protect yourself.",
+    url: "https://www.richdadretirement.com/learn/can-you-lose-money-in-a-gold-ira",
+    type: "article",
+    imageAlt: "Can You Lose Money in a Gold IRA?",
+  }),
+  robots: isPublished("can-you-lose-money-in-a-gold-ira") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Data

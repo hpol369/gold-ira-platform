@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -17,19 +18,25 @@ import {
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "Gold IRA for Truck Drivers Near Retirement: When It Makes Sense (2026)",
-  description:
-    "Gold IRA guide for truck drivers nearing retirement. Learn when rolling a 401(k) or SEP IRA into gold makes sense, what to watch for, and how freight cycles affect the decision.",
-  url: "https://www.richdadretirement.com/learn/gold-ira-for-truck-drivers",
-  type: "article",
-  imageAlt: "Gold IRA for Truck Drivers Near Retirement",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Gold IRA for Truck Drivers Near Retirement: When It Makes Sense (2026)",
+    description:
+      "Gold IRA guide for truck drivers nearing retirement. Learn when rolling a 401(k) or SEP IRA into gold makes sense, what to watch for, and how freight cycles affect the decision.",
+    url: "https://www.richdadretirement.com/learn/gold-ira-for-truck-drivers",
+    type: "article",
+    imageAlt: "Gold IRA for Truck Drivers Near Retirement",
+  }),
+  robots: isPublished("gold-ira-for-truck-drivers") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Data
