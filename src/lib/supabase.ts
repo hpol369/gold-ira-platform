@@ -51,6 +51,10 @@ export interface Lead {
   user_agent?: string;
   status?: "new" | "sent_to_augusta" | "contacted" | "qualified" | "unqualified" | "converted" | "declined_call";
   augusta_submitted_at?: string;
+  // Augusta retry queue (see scripts/migrate-augusta-retry.sql)
+  augusta_retry_count?: number;
+  augusta_last_attempt_at?: string;
+  augusta_failed_at?: string;
   notes?: string;
   total_retirement_savings?: string;
   percentage_to_protect?: string;

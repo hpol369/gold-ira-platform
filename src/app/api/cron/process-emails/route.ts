@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { processEmailQueue, enrollInSequence, getQueueStats } from "@/lib/email-queue";
 import { supabase } from "@/lib/supabase";
 import { sendTelegramNotification } from "@/lib/notifications";
+import { retryFailedAugustaSubmissions } from "@/lib/augusta-retry";
 
 export const dynamic = "force-dynamic";
 
@@ -18,7 +19,11 @@ export async function GET(request: Request) {
     // 1. Process pending email queue
     const result = await processEmailQueue();
 
-    // 2. Weekly re-engage enrollment (runs on Sundays only to avoid over-enrollment)
+    // 2. Retry failed Augusta submissions (exponential backoff, max 5 tries,
+    //    Telegram alert on exhaustion). Bounded internally to 50 leads/run.
+    const augustaRetry = await retryFailedAugustaSubmissions();
+
+    // 3. Weekly re-engage enrollment (Sundays only, avoids over-enrollment)
     const today = new Date();
     let reEngaged = 0;
     if (today.getUTCDay() === 0) {
@@ -28,6 +33,7 @@ export async function GET(request: Request) {
     return NextResponse.json({
       success: true,
       ...result,
+      augustaRetry,
       reEngaged,
       timestamp: new Date().toISOString(),
     });

@@ -289,9 +289,14 @@ export async function POST(request: NextRequest) {
         console.error("[TELEGRAM ERROR]", err);
       }
     } else {
-      // Keep as new, flag for manual review
+      // Mark for the retry cron — augusta-retry.ts picks these up, retries
+      // with exponential backoff, and alerts via Telegram after MAX_RETRIES.
+      const nowIso = new Date().toISOString();
       await updateLeadStatus(lead.id!, "new", {
-        notes: "Augusta webhook failed - needs manual upload",
+        notes: "Augusta webhook failed at capture — retry queue scheduled",
+        augusta_failed_at: nowIso,
+        augusta_last_attempt_at: nowIso,
+        augusta_retry_count: 1,
       });
     }
 
