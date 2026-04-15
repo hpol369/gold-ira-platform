@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, ChevronDown, Flag, Phone } from "lucide-react";
+import { ArrowRight, ShieldCheck, ChevronDown, Flag, Phone, Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { useState, useEffect, startTransition } from "react";
@@ -17,6 +17,7 @@ export function Navbar() {
     // Mobile navigation handled by hamburger menu
     const [isLearnOpen, setIsLearnOpen] = useState(false);
     const [isToolsOpen, setIsToolsOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [goldPrice, setGoldPrice] = useState<GoldPrice | null>(null);
 
     // Fetch live gold price on mount (non-blocking)
@@ -274,13 +275,109 @@ export function Navbar() {
                             </Button>
                         </nav>
 
-                        {/* Mobile: clean header — bottom nav handles navigation */}
-                        <div className="lg:hidden" />
+                        {/* Mobile: hamburger menu */}
+                        <div className="flex items-center gap-3 lg:hidden">
+                            <Button
+                                className="bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold text-xs px-3 py-2"
+                                size="sm"
+                                asChild
+                            >
+                                <Link href="/get-started">Free Kit</Link>
+                            </Button>
+                            <button
+                                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                                className="p-2 text-slate-600 hover:text-[#000080] transition-colors"
+                                aria-label="Toggle menu"
+                            >
+                                {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                            </button>
+                        </div>
                     </div>
                 </Container>
             </div>
 
-            {/* Mobile navigation handled via hamburger menu above */}
+            {/* Mobile slide-out menu */}
+            {isMobileMenuOpen && (
+                <div className="lg:hidden border-t border-slate-200 bg-white shadow-lg">
+                    <nav className="px-4 py-4 space-y-1 max-h-[70vh] overflow-y-auto">
+                        <Link href="/why-gold" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">
+                            Why Gold?
+                        </Link>
+                        <Link href="/what-is-a-gold-ira" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">
+                            How It Works
+                        </Link>
+                        <Link href="/best-gold-ira-companies" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">
+                            Best Companies
+                        </Link>
+                        <Link href="/reviews" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">
+                            Reviews
+                        </Link>
+                        <Link href="/compare" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 px-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 rounded-lg">
+                            Compare Companies
+                        </Link>
+
+                        <div className="border-t border-slate-100 my-2" />
+                        <p className="px-3 text-xs font-bold text-[#000080] uppercase tracking-wide">Learn</p>
+                        <Link href="/guide/gold-ira-guide" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Gold IRA Guide
+                        </Link>
+                        <Link href="/learn" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Learning Center
+                        </Link>
+                        <Link href="/rollover" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            401k Rollover Hub
+                        </Link>
+                        <Link href="/scenarios" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Crisis Scenarios
+                        </Link>
+                        <Link href="/faq" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            FAQ
+                        </Link>
+                        <Link href="/gold-ira-industry-report-2026" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-[#B22234] font-medium hover:bg-slate-50 rounded-lg">
+                            Industry Report 2026
+                        </Link>
+
+                        <div className="border-t border-slate-100 my-2" />
+                        <p className="px-3 text-xs font-bold text-[#000080] uppercase tracking-wide">Tools</p>
+                        <Link href="/tools/retirement-calculator" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Retirement Calculator
+                        </Link>
+                        <Link href="/tools/rmd-calculator" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            RMD Calculator
+                        </Link>
+                        <Link href="/tools/gold-ira-calculator" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Gold IRA Calculator
+                        </Link>
+                        <Link href="/retirement-risk-score" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-[#B22234] font-medium hover:bg-slate-50 rounded-lg">
+                            Retirement Risk Quiz
+                        </Link>
+                        <Link href="/tools" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            All 44 Calculators →
+                        </Link>
+
+                        <div className="border-t border-slate-100 my-2" />
+                        <p className="px-3 text-xs font-bold text-[#000080] uppercase tracking-wide">Silver & More</p>
+                        <Link href="/silver-ira" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Silver IRA Hub
+                        </Link>
+                        <Link href="/crypto-ira" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Crypto IRA Guide
+                        </Link>
+                        <Link href="/self-directed-ira" onClick={() => setIsMobileMenuOpen(false)} className="block py-2.5 px-3 text-sm text-slate-600 hover:bg-slate-50 rounded-lg">
+                            Self-Directed IRA
+                        </Link>
+
+                        <div className="border-t border-slate-100 my-2" />
+                        <Link
+                            href="/get-started"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block py-3 px-3 bg-[#B22234] text-white text-center font-bold rounded-lg hover:bg-[#8b1c2a] transition-colors"
+                        >
+                            Get Your Free Precious Metals Kit →
+                        </Link>
+                    </nav>
+                </div>
+            )}
         </header>
     );
 }
