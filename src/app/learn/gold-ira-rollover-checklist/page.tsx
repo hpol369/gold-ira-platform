@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -21,18 +22,24 @@ import {
   ArrowRight,
   Clock,
 } from "lucide-react";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "Gold IRA Rollover Checklist for First-Time Retirees (2026)",
-  description:
-    "Step-by-step Gold IRA rollover checklist. 25 items covering what to verify before, during, and after moving your 401(k) or IRA into physical gold.",
-  url: "https://www.richdadretirement.com/learn/gold-ira-rollover-checklist",
-  type: "article",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Gold IRA Rollover Checklist for First-Time Retirees (2026)",
+    description:
+      "Step-by-step Gold IRA rollover checklist. 25 items covering what to verify before, during, and after moving your 401(k) or IRA into physical gold.",
+    url: "https://www.richdadretirement.com/learn/gold-ira-rollover-checklist",
+    type: "article",
+  }),
+  robots: isPublished("gold-ira-rollover-checklist") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Page data

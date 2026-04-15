@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -17,19 +18,25 @@ import {
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "Gold IRA for Nurses Over 55: A Practical Retirement Protection Guide (2026)",
-  description:
-    "Gold IRA guide for nurses over 55. Learn how 403(b), 457(b), and pension plans affect the decision, when gold makes sense, and how to avoid common mistakes.",
-  url: "https://www.richdadretirement.com/learn/gold-ira-for-nurses",
-  type: "article",
-  imageAlt: "Gold IRA for Nurses Over 55",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Gold IRA for Nurses Over 55: A Practical Retirement Protection Guide (2026)",
+    description:
+      "Gold IRA guide for nurses over 55. Learn how 403(b), 457(b), and pension plans affect the decision, when gold makes sense, and how to avoid common mistakes.",
+    url: "https://www.richdadretirement.com/learn/gold-ira-for-nurses",
+    type: "article",
+    imageAlt: "Gold IRA for Nurses Over 55",
+  }),
+  robots: isPublished("gold-ira-for-nurses") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Data

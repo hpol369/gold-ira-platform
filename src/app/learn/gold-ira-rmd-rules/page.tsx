@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -17,19 +18,25 @@ import {
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "Gold IRA RMD Rules After Age 73: What Retirees Must Know (2026)",
-  description:
-    "Gold IRA RMD rules explained in plain English. Learn when required minimum distributions start, how physical gold is valued, in-kind vs cash options, and penalties for missing an RMD.",
-  url: "https://www.richdadretirement.com/learn/gold-ira-rmd-rules",
-  type: "article",
-  imageAlt: "Gold IRA RMD Rules After Age 73",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Gold IRA RMD Rules After Age 73: What Retirees Must Know (2026)",
+    description:
+      "Gold IRA RMD rules explained in plain English. Learn when required minimum distributions start, how physical gold is valued, in-kind vs cash options, and penalties for missing an RMD.",
+    url: "https://www.richdadretirement.com/learn/gold-ira-rmd-rules",
+    type: "article",
+    imageAlt: "Gold IRA RMD Rules After Age 73",
+  }),
+  robots: isPublished("gold-ira-rmd-rules") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Data

@@ -10,6 +10,9 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { ArticleMeta } from "@/components/content/ArticleMeta";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { ChevronDown } from "lucide-react";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 export const metadata: Metadata = {
     title: "Gold IRA vs Physical Gold at Home: What Retirees Need to Know (2026)",
@@ -18,6 +21,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://www.richdadretirement.com/learn/gold-ira-vs-physical-gold-at-home",
     },
+    robots: isPublished("gold-ira-vs-physical-gold-at-home") ? { index: true, follow: true } : { index: false, follow: true },
     openGraph: {
         title: "Gold IRA vs. Physical Gold at Home: What Retirees Need to Know",
         description:

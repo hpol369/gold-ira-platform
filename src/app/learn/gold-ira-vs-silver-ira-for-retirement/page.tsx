@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -21,18 +22,24 @@ import {
   Users,
   CheckCircle2,
 } from "lucide-react";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "Gold IRA vs. Silver IRA for Retirement: Which Is More Appropriate? (2026)",
-  description:
-    "Compare gold and silver IRAs for retirement. Learn about volatility, IRS purity rules, storage costs, and which precious metal fits most retirees better.",
-  url: "https://www.richdadretirement.com/learn/gold-ira-vs-silver-ira-for-retirement",
-  type: "article",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Gold IRA vs. Silver IRA for Retirement: Which Is More Appropriate? (2026)",
+    description:
+      "Compare gold and silver IRAs for retirement. Learn about volatility, IRS purity rules, storage costs, and which precious metal fits most retirees better.",
+    url: "https://www.richdadretirement.com/learn/gold-ira-vs-silver-ira-for-retirement",
+    type: "article",
+  }),
+  robots: isPublished("gold-ira-vs-silver-ira-for-retirement") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Page data

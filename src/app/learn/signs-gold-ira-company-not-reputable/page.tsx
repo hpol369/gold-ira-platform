@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { AutoRelatedContent } from "@/components/content/RelatedContent";
@@ -17,19 +18,25 @@ import {
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "9 Signs a Gold IRA Company Is Not Reputable (2026 Red Flag Guide)",
-  description:
-    "Learn the 9 warning signs of an untrustworthy Gold IRA company. Covers high-pressure tactics, hidden fees, collectible coin scams, and real CFTC enforcement cases.",
-  url: "https://www.richdadretirement.com/learn/signs-gold-ira-company-not-reputable",
-  type: "article",
-  imageAlt: "9 Signs a Gold IRA Company Is Not Reputable",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "9 Signs a Gold IRA Company Is Not Reputable (2026 Red Flag Guide)",
+    description:
+      "Learn the 9 warning signs of an untrustworthy Gold IRA company. Covers high-pressure tactics, hidden fees, collectible coin scams, and real CFTC enforcement cases.",
+    url: "https://www.richdadretirement.com/learn/signs-gold-ira-company-not-reputable",
+    type: "article",
+    imageAlt: "9 Signs a Gold IRA Company Is Not Reputable",
+  }),
+  robots: isPublished("signs-gold-ira-company-not-reputable") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Data

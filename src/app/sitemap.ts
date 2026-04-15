@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getAllSegmentSlugs } from "@/data/segment-hubs";
+import { getPublishedEditorialSlugs } from "@/data/editorial-schedule";
 
 /**
  * SITEMAP — QUALITY-ONLY VERSION
@@ -236,22 +237,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/too-late-to-save-retirement",
     "/learn/why-401k-losing-money",
     "/learn/why-is-gold-valuable",
-    // 15 new editorial articles (GPT-5.4 researched, high-quality)
-    "/learn/how-much-gold-in-retirement-portfolio",
-    "/learn/gold-ira-vs-physical-gold-at-home",
-    "/learn/gold-ira-fees-explained",
-    "/learn/401k-to-gold-ira-tax-rules",
-    "/learn/best-age-to-open-gold-ira",
-    "/learn/gold-ira-rmd-rules",
-    "/learn/can-you-lose-money-in-a-gold-ira",
-    "/learn/gold-ira-for-truck-drivers",
-    "/learn/gold-ira-for-nurses",
-    "/learn/signs-gold-ira-company-not-reputable",
-    "/learn/gold-ira-vs-silver-ira-for-retirement",
-    "/learn/is-gold-a-good-hedge-against-inflation-in-retirement",
-    "/learn/when-a-gold-ira-does-not-make-sense",
-    "/learn/gold-ira-rollover-checklist",
-    "/learn/how-to-compare-gold-ira-companies",
+    // 15 editorial articles — only include those whose publish date has passed
+    ...getPublishedEditorialSlugs().map((slug) => `/learn/${slug}`),
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date('2026-04-15'),

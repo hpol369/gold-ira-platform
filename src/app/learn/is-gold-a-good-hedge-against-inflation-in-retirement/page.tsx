@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { SchemaScript } from "@/components/seo/SchemaScript";
@@ -22,18 +23,24 @@ import {
   CheckCircle2,
   DollarSign,
 } from "lucide-react";
+import { isPublished } from "@/data/editorial-schedule";
+
+export const revalidate = 86400; // Revalidate daily so pages go live on schedule
 
 // ---------------------------------------------------------------------------
 // Metadata
 // ---------------------------------------------------------------------------
 
-export const metadata = createPageMetadata({
-  title: "Is Gold a Good Hedge Against Inflation in Retirement? (2026)",
-  description:
-    "Does gold really protect retirees from inflation? We examine the historical record, the 1970s vs. 1980-2000, and how gold fits a broader retirement inflation plan.",
-  url: "https://www.richdadretirement.com/learn/is-gold-a-good-hedge-against-inflation-in-retirement",
-  type: "article",
-});
+export const metadata: Metadata = {
+  ...createPageMetadata({
+    title: "Is Gold a Good Hedge Against Inflation in Retirement? (2026)",
+    description:
+      "Does gold really protect retirees from inflation? We examine the historical record, the 1970s vs. 1980-2000, and how gold fits a broader retirement inflation plan.",
+    url: "https://www.richdadretirement.com/learn/is-gold-a-good-hedge-against-inflation-in-retirement",
+    type: "article",
+  }),
+  robots: isPublished("is-gold-a-good-hedge-against-inflation-in-retirement") ? { index: true, follow: true } : { index: false, follow: true },
+};
 
 // ---------------------------------------------------------------------------
 // Page data
