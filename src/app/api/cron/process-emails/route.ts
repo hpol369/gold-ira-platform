@@ -121,7 +121,7 @@ async function enrollReEngageLeads(): Promise<number> {
 
     const emailsAlreadyReEngaged = new Set((alreadyReEngaged || []).map((r) => r.email));
 
-    // Also check unsubscribed
+    // Check unsubscribed in email_subscribers table
     const { data: unsubscribed } = await supabase
       .from("email_subscribers")
       .select("email")
@@ -129,6 +129,18 @@ async function enrollReEngageLeads(): Promise<number> {
       .eq("status", "unsubscribed");
 
     const emailsUnsubscribed = new Set((unsubscribed || []).map((r) => r.email));
+
+    // Also check queue-level unsubscribes (belt-and-suspenders: covers webhook bounces
+    // where subscriber table update may have failed)
+    const { data: queueUnsubscribed } = await supabase
+      .from("email_sequence_queue")
+      .select("email")
+      .in("email", emails.slice(0, 100))
+      .eq("status", "unsubscribed");
+
+    for (const row of queueUnsubscribed || []) {
+      emailsUnsubscribed.add(row.email);
+    }
 
     let enrolled = 0;
     for (const [email, info] of emailMap) {
