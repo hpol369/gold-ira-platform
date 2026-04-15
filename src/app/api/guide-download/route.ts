@@ -2,9 +2,20 @@ import { NextResponse } from "next/server";
 import { supabase, type Lead } from "@/lib/supabase";
 import { enrollInSequence } from "@/lib/email-queue";
 import { sendTelegramNotification } from "@/lib/notifications";
+import { checkRateLimit, getRequestIdentifier, rateLimitedResponse } from "@/lib/rate-limit";
+
+const GUIDE_RATE_LIMIT = 15;
+const GUIDE_RATE_WINDOW_SEC = 60 * 60;
 
 export async function POST(request: Request) {
   try {
+    const rl = await checkRateLimit(getRequestIdentifier(request), {
+      bucket: "guide-download",
+      max: GUIDE_RATE_LIMIT,
+      windowSec: GUIDE_RATE_WINDOW_SEC,
+    });
+    if (!rl.ok) return rateLimitedResponse(rl, GUIDE_RATE_LIMIT);
+
     const body = await request.json();
     const { firstName, email } = body;
 

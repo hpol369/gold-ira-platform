@@ -9,22 +9,13 @@ import { submitToAugusta } from "@/lib/augusta";
 import { enrollInSequence, upgradeSequence, checkActiveSequence } from "@/lib/email-queue";
 import { getSequenceForContext } from "@/lib/email-sequences";
 import { sendHighIntentSMS, isTwilioConfigured } from "@/lib/sms";
+import { checkRateLimit, getRequestIdentifier, rateLimitedResponse } from "@/lib/rate-limit";
 
-// Simple rate limiting (per IP, resets on deploy)
-const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT = 10; // max submissions per window
-const RATE_WINDOW = 60 * 60 * 1000; // 1 hour
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
-  if (!entry || now > entry.resetAt) {
-    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_WINDOW });
-    return false;
-  }
-  entry.count++;
-  return entry.count > RATE_LIMIT;
-}
+// Rate limit: 10 lead submissions per hour per IP. Backed by Vercel KV so
+// the counter is shared across serverless instances (the prior in-memory
+// Map was bypassed by hitting cold instances).
+const RATE_LIMIT = 10;
+const RATE_WINDOW_SEC = 60 * 60;
 
 // Validation helpers
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -61,14 +52,15 @@ interface LeadData {
 
 export async function POST(request: NextRequest) {
   try {
-    // Rate limiting
-    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-      request.headers.get("x-real-ip") || "unknown";
-    if (isRateLimited(ip)) {
-      return NextResponse.json(
-        { success: false, error: "Too many requests" },
-        { status: 429 }
-      );
+    // Rate limiting (KV-backed, shared across Vercel instances)
+    const ip = getRequestIdentifier(request);
+    const rl = await checkRateLimit(ip, {
+      bucket: "submit-lead",
+      max: RATE_LIMIT,
+      windowSec: RATE_WINDOW_SEC,
+    });
+    if (!rl.ok) {
+      return rateLimitedResponse(rl, RATE_LIMIT);
     }
 
     const body: LeadData = await request.json();

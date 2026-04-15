@@ -4,8 +4,14 @@ import { supabase } from "@/lib/supabase";
 import { sendTelegramNotification } from "@/lib/notifications";
 import { sendEmail, isResendConfigured } from "@/lib/resend";
 import { emailLayout, p } from "@/lib/email-templates";
+import { checkRateLimit, getRequestIdentifier, rateLimitedResponse } from "@/lib/rate-limit";
 
 const SITE_URL = "https://richdadretirement.com";
+
+// 20 newsletter signups per hour per IP — generous enough for legit shared
+// IPs (offices, mobile carriers) but blocks abuse.
+const NEWSLETTER_RATE_LIMIT = 20;
+const NEWSLETTER_RATE_WINDOW_SEC = 60 * 60;
 
 /**
  * Generate a confirmation token from email + secret
@@ -22,6 +28,13 @@ function generateConfirmToken(email: string): string {
 
 export async function POST(request: NextRequest) {
   try {
+    const rl = await checkRateLimit(getRequestIdentifier(request), {
+      bucket: "newsletter",
+      max: NEWSLETTER_RATE_LIMIT,
+      windowSec: NEWSLETTER_RATE_WINDOW_SEC,
+    });
+    if (!rl.ok) return rateLimitedResponse(rl, NEWSLETTER_RATE_LIMIT);
+
     const { email, source } = await request.json();
 
     // Validate email

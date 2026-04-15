@@ -13,8 +13,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 import { sendTelegramNotification } from "@/lib/notifications";
+import { checkRateLimit, getRequestIdentifier, rateLimitedResponse } from "@/lib/rate-limit";
 
 const REQUIRED_FIELDS = ["productType", "budget", "answers", "recommendedCompany"] as const;
+
+// Quiz is anonymous and called once per completion. 30/hr per IP catches
+// scripted abuse without ever bothering a real user.
+const QUIZ_RATE_LIMIT = 30;
+const QUIZ_RATE_WINDOW_SEC = 60 * 60;
 
 interface QuizCompletion {
   productType: string;
@@ -27,6 +33,13 @@ interface QuizCompletion {
 
 export async function POST(request: NextRequest) {
   try {
+    const rl = await checkRateLimit(getRequestIdentifier(request), {
+      bucket: "quiz-leads",
+      max: QUIZ_RATE_LIMIT,
+      windowSec: QUIZ_RATE_WINDOW_SEC,
+    });
+    if (!rl.ok) return rateLimitedResponse(rl, QUIZ_RATE_LIMIT);
+
     const body = (await request.json()) as QuizCompletion;
 
     // Validate required fields
