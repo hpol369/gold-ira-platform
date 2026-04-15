@@ -1,6 +1,7 @@
-// Cron endpoint: processes the email sequence queue
-// Called by Vercel Cron every day at 10 AM ET (14:00 UTC)
-// Also callable manually for testing
+// Manual / ops endpoint: processes the email sequence queue on demand.
+// NOTE: This is no longer wired to Vercel Cron — /api/cron/process-emails is
+// the canonical daily cron (it also handles weekly re-engage enrollment).
+// This route remains for manual triggering and queue-stats lookups.
 
 import { NextRequest, NextResponse } from "next/server";
 import { processEmailQueue, getQueueStats } from "@/lib/email-queue";
