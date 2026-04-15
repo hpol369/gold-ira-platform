@@ -25,13 +25,36 @@ import { trackQuizStep } from "@/lib/analytics";
 // TYPE DEFINITIONS
 // ============================================
 
-type QuizStep = 'intro' | 'product-type' | 'questions' | 'analyzing' | 'results';
+type QuizStep = 'intro' | 'product-type' | 'questions' | 'analyzing' | 'email-gate' | 'results';
 
 interface QuizState {
   step: QuizStep;
   productType: string | null;
   currentQuestionIndex: number;
   answers: Record<string, string>;
+  // email-gate capture (optional — soft gate, skippable)
+  firstName: string;
+  email: string;
+  emailSubmitting: boolean;
+  emailError: string | null;
+  // Whether the user has already been captured (or skipped) — prevents
+  // re-prompting if they navigate back from results.
+  emailHandled: boolean;
+}
+
+// Map quiz budget answer values to the savings_tier values that
+// /api/submit-lead expects (used for email sequence routing).
+// Quiz budget options vary by product flow — gold/crypto have "500k-plus",
+// robs has "250k-plus", sdira has "100k-plus" — so normalize here.
+function mapBudgetToSavingsTier(budget: string | undefined): string | undefined {
+  if (!budget) return undefined;
+  const b = budget.toLowerCase();
+  if (b.startsWith('under')) return undefined; // sub-25k → no tier (starter-nurture default)
+  if (b === '500k-plus' || b === '500k+' || b === '250k-plus' || b === '250k+' || b === '100k-plus' || b === '100k+') {
+    // Map "100k-plus" / "250k-plus" / "500k-plus" all to high-intent territory
+    return b.replace('-plus', '+');
+  }
+  return b; // 25k-50k, 50k-100k, 100k-250k, 100k-500k, 250k-500k pass through
 }
 
 interface QuestionOption {
@@ -418,6 +441,11 @@ export function UniversalQuiz() {
     productType: null,
     currentQuestionIndex: 0,
     answers: {},
+    firstName: '',
+    email: '',
+    emailSubmitting: false,
+    emailError: null,
+    emailHandled: false,
   });
 
   // UTM parameter tracking
@@ -510,7 +538,8 @@ export function UniversalQuiz() {
   }, []);
 
   const handleAnalysisComplete = useCallback(async () => {
-    // Save the lead when analysis completes
+    // Fire-and-forget quiz completion analytics (Supabase source_clicks).
+    // Wrapped in try/catch so a failure here never blocks the funnel.
     try {
       const recommendedCompany = getRecommendedCompany(state.productType, state.answers);
       const budget = state.answers["budget"] || state.answers["funding-amount"] || "unknown";
@@ -527,12 +556,92 @@ export function UniversalQuiz() {
         }),
       });
     } catch (error) {
-      // Don't block quiz completion if lead save fails
-      console.error('Failed to save lead:', error);
+      console.error('Failed to record quiz analytics:', error);
     }
 
-    setState(prev => ({ ...prev, step: 'results' }));
+    // Route to soft email gate (skippable). If user already submitted earlier
+    // (e.g. came back from results), skip straight to results.
+    setState(prev => ({
+      ...prev,
+      step: prev.emailHandled ? 'results' : 'email-gate',
+    }));
   }, [state.productType, state.answers, utmParams]);
+
+  // Soft-gate submit: enroll the user in the email nurture sequence, then
+  // continue to results. Phone is NOT collected here (that happens later
+  // on /get-started for full Augusta-qualifying capture), so we pass
+  // skipAugusta:true to /api/submit-lead. The route still saves to Supabase,
+  // sends the Telegram alert, and enrolls in the right sequence based on
+  // the savings tier mapped from the quiz budget answer.
+  const handleEmailGateSubmit = useCallback(async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (state.emailSubmitting) return;
+
+    const email = state.email.trim().toLowerCase();
+    const firstName = state.firstName.trim();
+    if (!firstName) {
+      setState(prev => ({ ...prev, emailError: 'Please enter your first name' }));
+      return;
+    }
+    // Same regex as /api/submit-lead so client + server agree
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 254) {
+      setState(prev => ({ ...prev, emailError: 'Please enter a valid email' }));
+      return;
+    }
+
+    setState(prev => ({ ...prev, emailSubmitting: true, emailError: null }));
+
+    try {
+      const recommendedCompany = getRecommendedCompany(state.productType, state.answers);
+      const budget = state.answers['budget'] || state.answers['funding-amount'];
+      const concern = state.answers['primary-concern'] || state.answers['crypto-experience'];
+      const metalPreference: 'gold' | 'silver' | 'both' | undefined =
+        state.productType === 'gold-ira' ? 'gold' : undefined;
+
+      const response = await fetch('/api/submit-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName,
+          email,
+          source: `quiz-email-gate:${state.productType || 'unknown'}`,
+          savingsTier: mapBudgetToSavingsTier(budget),
+          concern,
+          routedTo: recommendedCompany.name,
+          skipAugusta: true,
+          ...(metalPreference && { metalPreference }),
+        }),
+      });
+
+      const data = await response.json();
+      if (!data.success) {
+        // Don't block the user from seeing their results if the API failed.
+        // Log and continue so we don't penalize the user for our outage.
+        console.error('Email gate submit failed:', data.error);
+      }
+
+      // Mark handled regardless so they don't get re-prompted on back-nav
+      setState(prev => ({
+        ...prev,
+        emailSubmitting: false,
+        emailHandled: true,
+        step: 'results',
+      }));
+    } catch (err) {
+      console.error('Email gate network error:', err);
+      // Same — let them through, don't penalize for our error
+      setState(prev => ({
+        ...prev,
+        emailSubmitting: false,
+        emailHandled: true,
+        step: 'results',
+      }));
+    }
+  }, [state.email, state.firstName, state.emailSubmitting, state.productType, state.answers]);
+
+  const handleEmailGateSkip = useCallback(() => {
+    setState(prev => ({ ...prev, emailHandled: true, step: 'results' }));
+  }, []);
 
   const handleBack = useCallback(() => {
     setState(prev => {
@@ -555,6 +664,13 @@ export function UniversalQuiz() {
       productType: null,
       currentQuestionIndex: 0,
       answers: {},
+      // Preserve email-handled state on restart so a user who already gave
+      // their email doesn't get re-prompted in the same session.
+      firstName: '',
+      email: '',
+      emailSubmitting: false,
+      emailError: null,
+      emailHandled: false,
     });
   }, []);
 
@@ -728,6 +844,121 @@ export function UniversalQuiz() {
       </div>
     );
   };
+
+  const renderEmailGate = () => (
+    <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12
+                    shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]">
+      <FloatingOrbs variant="minimal" />
+
+      <div className="relative max-w-md mx-auto py-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4 }}
+          className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-1.5 text-sm font-semibold text-emerald-400 mb-6
+                     border border-emerald-400/20 shadow-[0_0_20px_rgba(16,185,129,0.15)]"
+        >
+          <Shield className="h-4 w-4" />
+          Your match is ready
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-2xl md:text-3xl font-serif font-bold text-white mb-3
+                     [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]"
+        >
+          Where should we send your<br />
+          <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">personalized match?</span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-slate-400 mb-8"
+        >
+          Get your recommendation plus a free retirement protection guide.
+        </motion.p>
+
+        <motion.form
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          onSubmit={handleEmailGateSubmit}
+          className="space-y-4 text-left"
+        >
+          <div>
+            <label htmlFor="quiz-firstName" className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">
+              First Name
+            </label>
+            <input
+              id="quiz-firstName"
+              type="text"
+              value={state.firstName}
+              onChange={(e) => setState(prev => ({ ...prev, firstName: e.target.value, emailError: null }))}
+              autoComplete="given-name"
+              required
+              maxLength={100}
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-slate-500
+                         focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50 transition-all"
+              placeholder="Your first name"
+              disabled={state.emailSubmitting}
+            />
+          </div>
+          <div>
+            <label htmlFor="quiz-email" className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">
+              Email
+            </label>
+            <input
+              id="quiz-email"
+              type="email"
+              value={state.email}
+              onChange={(e) => setState(prev => ({ ...prev, email: e.target.value, emailError: null }))}
+              autoComplete="email"
+              required
+              maxLength={254}
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-slate-500
+                         focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50 transition-all"
+              placeholder="you@example.com"
+              disabled={state.emailSubmitting}
+            />
+          </div>
+
+          {state.emailError && (
+            <p className="text-red-400 text-sm text-center">{state.emailError}</p>
+          )}
+
+          <Button
+            type="submit"
+            size="xl"
+            variant="gold"
+            disabled={state.emailSubmitting}
+            className="w-full shadow-[0_8px_30px_rgba(212,175,55,0.3),0_0_60px_rgba(212,175,55,0.15)]
+                       hover:shadow-[0_12px_40px_rgba(212,175,55,0.4),0_0_80px_rgba(212,175,55,0.2)]
+                       transition-shadow duration-300"
+          >
+            {state.emailSubmitting ? 'Sending...' : 'See My Match'}
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+
+          <button
+            type="button"
+            onClick={handleEmailGateSkip}
+            disabled={state.emailSubmitting}
+            className="w-full text-sm text-slate-500 hover:text-slate-300 transition-colors py-2"
+          >
+            Skip — show me my match
+          </button>
+
+          <p className="text-xs text-slate-500 text-center">
+            We&apos;ll send your personalized match plus retirement guides. Unsubscribe anytime.
+          </p>
+        </motion.form>
+      </div>
+    </div>
+  );
 
   const renderResults = () => {
 
@@ -966,6 +1197,19 @@ export function UniversalQuiz() {
               transition={pageTransition}
             >
               <LoadingAnalysis onComplete={handleAnalysisComplete} />
+            </motion.div>
+          )}
+
+          {state.step === 'email-gate' && (
+            <motion.div
+              key="email-gate"
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+            >
+              {renderEmailGate()}
             </motion.div>
           )}
 
