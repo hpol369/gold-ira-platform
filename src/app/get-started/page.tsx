@@ -716,9 +716,9 @@ function GetStartedContent() {
                     <ArrowRight className="h-5 w-5" />
                   </button>
 
-                  <p className="text-white/30 text-xs text-center mt-4">
+                  <p className="text-white/40 text-xs text-center mt-4 leading-relaxed">
                     <Lock className="h-3 w-3 inline mr-1" />
-                    Your information is encrypted and never shared without your consent.
+                    By submitting, you agree to receive info about Gold IRAs via phone, email, and text message from Rich Dad Retirement and our partners. Msg frequency: up to 3 texts. Msg & data rates may apply. Reply STOP to cancel. <a href="/privacy-policy" className="underline hover:text-white/60">Privacy Policy</a> · <a href="/terms" className="underline hover:text-white/60">Terms</a>
                   </p>
                 </form>
               </motion.div>

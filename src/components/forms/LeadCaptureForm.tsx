@@ -244,7 +244,7 @@ export function LeadCaptureForm() {
         <div className="flex items-start gap-2 text-xs text-slate-500">
           <Lock className="h-4 w-4 flex-shrink-0 mt-0.5" />
           <p>
-            Your information is secure and will never be shared. By submitting, you agree to receive information about Gold IRAs via phone, email, and text. You can opt out anytime.
+            By submitting, you agree to receive info about Gold IRAs via phone, email, and text message from Rich Dad Retirement and our partners. Msg frequency: up to 3 texts. Msg &amp; data rates may apply. Reply STOP to cancel. <a href="/privacy-policy" className="underline hover:text-slate-700">Privacy Policy</a> · <a href="/terms" className="underline hover:text-slate-700">Terms</a>
           </p>
         </div>
       </form>

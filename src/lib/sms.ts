@@ -59,7 +59,7 @@ export async function sendHighIntentSMS(
 
   // Keep under 160 chars for single SMS (no splitting/reordering)
   const message =
-    `${name}, great move! Augusta will call within 24hrs to walk you through how a Gold IRA works. Info call, not sales. Pick up if you see an unknown number!`;
+    `${name}, thanks for your Gold IRA kit request from Rich Dad Retirement! Augusta will call within 24hrs at 844-405-3908 — free info, not sales. Reply STOP to opt out.`;
 
   try {
     const result = await twilioClient.messages.create({
@@ -95,7 +95,7 @@ export async function sendCallReminderSMS(
 
   const name = firstName || "there";
   const message =
-    `Hi ${name}, Augusta may call today from 844-405-3908. Just 15 min — they'll explain how a Gold IRA works for your situation. Worth the call!`;
+    `Hi ${name}, Augusta may call today from 844-405-3908. Free 15-min Gold IRA info call — not sales. Rich Dad Retirement. Reply STOP to opt out.`;
 
   try {
     const result = await twilioClient.messages.create({
@@ -123,7 +123,7 @@ export async function sendMissedCallSMS(
 
   const name = firstName || "there";
   const message =
-    `${name}, did you connect with Augusta yet? If you missed them, call 844-405-3908 anytime — free info call, no strings. Totally worth the 15 min!`;
+    `${name}, missed Augusta's call? Reach them at 844-405-3908 anytime — free 15-min Gold IRA info session. Rich Dad Retirement. Reply STOP to opt out.`;
 
   try {
     const result = await twilioClient.messages.create({
