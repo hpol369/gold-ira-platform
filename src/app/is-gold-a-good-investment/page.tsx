@@ -774,7 +774,7 @@ export default function IsGoldAGoodInvestmentPage() {
                     </p>
                     <Link
                       href="/guide/gold-ira-guide"
-                      className="inline-flex items-center gap-1 text-sm font-semibold text-[#D4A94E] hover:text-[#8b1c2a] mt-2"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-[#D4A94E] hover:text-[#F6F4EF] mt-2"
                     >
                       Read our full Gold IRA guide
                       <ArrowRight className="w-4 h-4" />

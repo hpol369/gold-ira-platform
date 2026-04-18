@@ -531,7 +531,7 @@ export function TSPCalculator() {
           </div>
 
           {/* Important Notes */}
-          <div className="mt-8 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-6">
+          <div className="mt-8 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-6">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[rgba(220,38,38,0.1)] rounded-xl flex items-center justify-center flex-shrink-0">
                 <Info className="h-6 w-6 text-[#D4A94E]" />

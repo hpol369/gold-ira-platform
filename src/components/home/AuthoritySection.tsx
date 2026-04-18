@@ -77,12 +77,12 @@ export function AuthoritySection() {
               variants={itemVariants}
               className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6
                          hover:bg-[#121423] hover:-translate-y-2
-                         hover:shadow-[0_20px_60px_rgba(0,0,0,0.1),0_0_40px_rgba(178,34,52,0.1)]
+                         hover:shadow-[0_20px_60px_rgba(0,0,0,0.1),0_0_40px_rgba(197,149,46,0.08)]
                          hover:border-[rgba(197,149,46,0.45)]
                          transition-all duration-400 text-center"
             >
               <div className="flex justify-center mb-3">
-                <div className="p-3 rounded-full bg-gradient-to-br from-[#B22234]/20 to-[#B22234]/5">
+                <div className="p-3 rounded-full bg-gradient-to-br from-[#C5952E]/20 to-[#B22234]/5">
                   <stat.icon className="h-5 w-5 text-[#D4A94E]" />
                 </div>
               </div>

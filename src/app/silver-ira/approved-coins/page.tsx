@@ -324,7 +324,7 @@ export default function ApprovedCoinsPage() {
                             {approvedCoins.map((coin, index) => (
                                 <div
                                     key={index}
-                                    className={`rounded-xl p-6 border ${coin.featured ? 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30' : 'bg-[#0C0D18] border-[#2A2D42]'}`}
+                                    className={`rounded-xl p-6 border ${coin.featured ? 'bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]' : 'bg-[#0C0D18] border-[#2A2D42]'}`}
                                 >
                                     <div className="flex items-start justify-between mb-4">
                                         <div>

@@ -140,7 +140,7 @@ export default function WarNickelsValuePage() {
               How to Identify Silver War Nickels
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Look for the Large Mint Mark</h3>
                 <p className="text-[#D0CCC4] mb-4">
                   Silver war nickels have a <span className="text-[#F6F4EF] font-semibold">large mint mark
@@ -176,7 +176,7 @@ export default function WarNickelsValuePage() {
                 </ul>
               </div>
             </div>
-            <div className="mt-6 bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-4">
+            <div className="mt-6 bg-gradient-to-r from-[#C5952E]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-4">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <p className="text-[#D0CCC4] text-sm">
@@ -254,7 +254,7 @@ export default function WarNickelsValuePage() {
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               The 1943/2-P Overdate Variety
             </h2>
-            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-[#D4A94E] mb-4">What Is It?</h3>
@@ -368,7 +368,7 @@ export default function WarNickelsValuePage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-[#C5952E]/10 via-amber-500/5 to-transparent border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Quick Math @ $25/oz</h3>
                 <ul className="space-y-2 text-[#D0CCC4]">
                   <li>1 war nickel = $1.41 melt value</li>

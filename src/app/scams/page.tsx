@@ -541,7 +541,7 @@ export default function ScamsPage() {
                 },
               ].map((item) => (
                 <div key={item.step} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-[rgba(220,38,38,0.1)] text-[#D4A94E] flex items-center justify-center font-bold text-xl mx-auto mb-4 border border-[#B22234]/30">
+                  <div className="w-12 h-12 rounded-full bg-[rgba(220,38,38,0.1)] text-[#D4A94E] flex items-center justify-center font-bold text-xl mx-auto mb-4 border border-[rgba(197,149,46,0.32)]">
                     {item.step}
                   </div>
                   <h3 className="font-bold text-[#F6F4EF] mb-2">{item.title}</h3>

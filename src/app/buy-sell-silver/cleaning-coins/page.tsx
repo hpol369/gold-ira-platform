@@ -322,7 +322,7 @@ export default function CleaningCoinsPage() {
                     method.safety === "Dangerous" || method.safety === "High Risk"
                       ? "border-red-500/30"
                       : method.safety === "Moderate Risk"
-                      ? "border-[#B22234]/30"
+                      ? "border-[rgba(197,149,46,0.32)]"
                       : "border-green-500/30"
                   }`}
                 >

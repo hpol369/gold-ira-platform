@@ -241,7 +241,7 @@ export default function PensionPresentValueCalculatorPage() {
                   </div>
                 </div>
 
-                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+                <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4">
                   <p className="text-[#D4A94E] text-sm">
                     <strong>Important:</strong> Courts may use different discount rates or methodologies. Consult a divorce attorney and actuary for legal proceedings. This calculator is for educational purposes only.
                   </p>

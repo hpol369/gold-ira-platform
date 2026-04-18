@@ -69,7 +69,7 @@ export default function GlossaryPage() {
       <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Book className="h-4 w-4" />
               REFERENCE
             </div>

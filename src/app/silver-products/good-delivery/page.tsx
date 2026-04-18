@@ -125,7 +125,7 @@ export default function GoodDeliveryPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Building2 className="h-4 w-4" />
               30 MONTHLY SEARCHES - $1.90 CPC
             </div>

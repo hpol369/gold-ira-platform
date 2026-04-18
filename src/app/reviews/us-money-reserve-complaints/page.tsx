@@ -57,7 +57,7 @@ export default function UsMoneyReserveComplaintsPage() {
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 text-sm font-semibold text-red-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] text-sm font-semibold text-red-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <AlertTriangle className="w-4 h-4" /> Consumer Warning
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">

@@ -41,7 +41,7 @@ export default function RealEstateIraRulesPage() {
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Real Estate IRA Rules", url: "/learn/real-estate-ira-rules" }])} />
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0C0D18] via-white to-[#161828]" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0C0D18] via-[#121423] to-[#161828]" />
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
 
                 <Container className="relative z-10">

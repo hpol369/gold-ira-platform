@@ -347,7 +347,7 @@ export default async function ComparisonPage({ params }: Props) {
                     <div className="flex gap-3">
                       <Link
                         href={`/reviews/${companyA.slug}`}
-                        className="text-[#D4A94E] font-semibold hover:text-[#8b1c2a]"
+                        className="text-[#D4A94E] font-semibold hover:text-[#F6F4EF]"
                       >
                         Read Full Review →
                       </Link>
@@ -389,7 +389,7 @@ export default async function ComparisonPage({ params }: Props) {
                     <div className="flex gap-3">
                       <Link
                         href={`/reviews/${companyB.slug}`}
-                        className="text-[#D4A94E] font-semibold hover:text-[#8b1c2a]"
+                        className="text-[#D4A94E] font-semibold hover:text-[#F6F4EF]"
                       >
                         Read Full Review →
                       </Link>
@@ -479,7 +479,7 @@ export default async function ComparisonPage({ params }: Props) {
                       </Link>
                       <Link
                         href="/compare"
-                        className="block text-sm text-[#D4A94E] font-semibold hover:text-[#8b1c2a]"
+                        className="block text-sm text-[#D4A94E] font-semibold hover:text-[#F6F4EF]"
                       >
                         See All Comparisons →
                       </Link>

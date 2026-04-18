@@ -243,7 +243,7 @@ export default function FERSSupplementCalculatorPage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-2xl p-8">
+            <div className="bg-[rgba(220,38,38,0.06)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-[rgba(220,38,38,0.1)] rounded-xl flex items-center justify-center">
                   <Info className="h-6 w-6 text-[#D4A94E]" />

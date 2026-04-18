@@ -193,7 +193,7 @@ export default function SilverCoinsVsBarsPage() {
                 />
 
                 {/* Quick Answer */}
-                <section className="py-12 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
+                <section className="py-12 bg-[rgba(220,38,38,0.1)] border-y border-[rgba(197,149,46,0.32)]">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-xl font-bold text-[#D4A94E] mb-4">Quick Answer</h2>
@@ -411,7 +411,7 @@ export default function SilverCoinsVsBarsPage() {
                                     </p>
                                 </div>
 
-                                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
                                         <span className="w-8 h-8 rounded-full bg-amber-400 text-[#F6F4EF] flex items-center justify-center font-bold">3</span>
                                         <h4 className="font-bold text-[#D4A94E]">Advanced (500+ oz): 50% Coins / 50% Bars</h4>

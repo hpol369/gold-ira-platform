@@ -314,7 +314,7 @@ export default function SilverIraCompaniesPage() {
                             <div
                                 key={company.rank}
                                 id={company.name.toLowerCase().replace(/\s+/g, '-')}
-                                className={`rounded-2xl overflow-hidden border ${company.featured ? 'border-[#B22234]/50 bg-gradient-to-br from-[#B22234]/10 to-slate-900' : 'border-[#2A2D42] bg-[#0C0D18]'}`}
+                                className={`rounded-2xl overflow-hidden border ${company.featured ? 'border-[#B22234]/50 bg-gradient-to-br from-[#C5952E]/10 to-slate-900' : 'border-[#2A2D42] bg-[#0C0D18]'}`}
                             >
                                 {/* Header */}
                                 <div className={`p-6 ${company.featured ? 'bg-[rgba(220,38,38,0.18)]' : 'bg-[#0C0D18]'}`}>

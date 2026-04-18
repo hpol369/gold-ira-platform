@@ -120,7 +120,7 @@ export function FatFIRECalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#B22234]/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <Crown className="h-4 w-4" />
           Luxury FIRE Calculator
         </div>
@@ -136,9 +136,9 @@ export function FatFIRECalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Lifestyle Spending */}
-          <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-6 border border-[#B22234]/30">
+          <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-6 border border-[rgba(197,149,46,0.32)]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Sparkles className="h-5 w-5 text-[#D4A94E]" />
               </div>
               <h3 className="text-lg font-semibold">Desired Lifestyle</h3>
@@ -155,7 +155,7 @@ export function FatFIRECalculator() {
                     type="number"
                     value={annualSpending}
                     onChange={(e) => setAnnualSpending(Number(e.target.value))}
-                    className="w-full bg-[#121423] border border-[#B22234]/30 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-[#B22234]"
+                    className="w-full bg-[#121423] border border-[rgba(197,149,46,0.32)] rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-[#B22234]"
                     min="0"
                     step="10000"
                   />
@@ -312,7 +312,7 @@ export function FatFIRECalculator() {
         {/* Results Section */}
         <div className="space-y-6">
           {/* Fat FIRE Number */}
-          <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+          <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
             <div className="flex items-center gap-3 mb-4">
               <Crown className="h-10 w-10 text-[#D4A94E]" />
               <div>
@@ -323,7 +323,7 @@ export function FatFIRECalculator() {
               </div>
             </div>
 
-            <div className="mt-6 pt-6 border-t border-[#B22234]/30">
+            <div className="mt-6 pt-6 border-t border-[rgba(197,149,46,0.32)]">
               <div className="flex justify-between text-sm mb-2">
                 <span>Progress to Goal</span>
                 <span className="font-semibold">{calculations.progressPercent.toFixed(1)}%</span>

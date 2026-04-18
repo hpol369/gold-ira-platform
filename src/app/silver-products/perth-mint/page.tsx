@@ -178,7 +178,7 @@ export default function PerthMintPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Gem className="h-4 w-4" />
               60 MONTHLY SEARCHES - DIFFICULTY 1
             </div>
@@ -312,7 +312,7 @@ export default function PerthMintPage() {
                 Featured: Silver Kangaroo
               </h2>
 
-              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8">
                 <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Australian Silver Kangaroo</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>

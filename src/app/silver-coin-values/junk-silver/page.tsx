@@ -105,7 +105,7 @@ export default function JunkSilverValuePage() {
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
               <Star className="h-4 w-4" />
               CONSTITUTIONAL SILVER
             </div>
@@ -145,7 +145,7 @@ export default function JunkSilverValuePage() {
       <section className="py-12 bg-[#161828] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
+            <div className="bg-gradient-to-r from-[#C5952E]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
               <h2 className="text-lg font-bold text-[#F6F4EF] mb-2">
                 Why &quot;Junk&quot; Silver?
               </h2>
@@ -230,7 +230,7 @@ export default function JunkSilverValuePage() {
                   <li><span className="text-[#F6F4EF] font-semibold">Face Value</span> = Total denomination ($1, $10, $1000, etc.)</li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-[#C5952E]/10 via-amber-500/5 to-transparent border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Example @ $25/oz Silver</h3>
                 <ul className="space-y-3 text-[#D0CCC4]">
                   <li className="flex justify-between">
@@ -392,7 +392,7 @@ export default function JunkSilverValuePage() {
       <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-1" />
                 <div>

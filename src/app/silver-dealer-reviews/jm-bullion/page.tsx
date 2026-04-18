@@ -350,7 +350,7 @@ export default function JMBullionReviewPage() {
                                 JM Bullion sells IRA-eligible silver products but does not offer in-house IRA custodian services. They partner with third-party custodians for retirement accounts.
                             </p>
 
-                            <div className="bg-amber-900/20 border border-[#B22234]/30 rounded-xl p-6 my-8 not-prose">
+                            <div className="bg-amber-900/20 border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
                                     <Award className="w-5 h-5 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>

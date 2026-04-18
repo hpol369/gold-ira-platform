@@ -229,7 +229,7 @@ export function RailroadRetirementCalculator() {
                       ))}
                     </div>
 
-                    <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+                    <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4">
                       <p className="text-amber-800 text-sm">
                         <strong>Note:</strong> You need at least 10 years of railroad service to
                         qualify for Railroad Retirement benefits. With 30+ years, you can retire
@@ -387,7 +387,7 @@ export function RailroadRetirementCalculator() {
                       className={`rounded-lg p-4 ${
                         yearsOfService >= 30
                           ? "bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]"
-                          : "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
+                          : "bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]"
                       }`}
                     >
                       <p
@@ -537,7 +537,7 @@ export function RailroadRetirementCalculator() {
               className="space-y-8"
             >
               {/* Total Benefit Card */}
-              <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[#B22234]/30 rounded-2xl p-8 text-center">
+              <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[rgba(197,149,46,0.32)] rounded-2xl p-8 text-center">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(220,38,38,0.1)] text-[#D4A94E] mb-4">
                   Your Total Monthly Benefit
                 </span>
@@ -597,7 +597,7 @@ export function RailroadRetirementCalculator() {
                   </div>
 
                   {/* Tier II */}
-                  <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[#B22234]/30 rounded-xl p-6 relative">
+                  <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[rgba(197,149,46,0.32)] rounded-xl p-6 relative">
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                       <span className="bg-[#DC2626] text-[#F6F4EF] text-xs font-bold px-3 py-1 rounded-full">
                         RAILROAD ONLY
@@ -725,7 +725,7 @@ export function RailroadRetirementCalculator() {
                       {formatCurrency(calculations.spouseTierII)}
                     </p>
                   </div>
-                  <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+                  <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4">
                     <p className="text-[#D4A94E] text-sm">Total Spouse Benefit</p>
                     <p className="text-2xl font-bold text-[#F6F4EF]">
                       {formatCurrency(calculations.spouseTotal)}

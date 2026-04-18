@@ -404,7 +404,7 @@ export default function SilverForGrandchildrenPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#C5952E]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">
@@ -443,7 +443,7 @@ export default function SilverForGrandchildrenPage() {
               </div>
             ))}
           </div>
-          <div className="max-w-3xl mx-auto mt-6 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
+          <div className="max-w-3xl mx-auto mt-6 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-4">
             <div className="flex items-start gap-3">
               <AlertTriangle className="h-5 w-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
               <p className="text-sm text-[#D0CCC4]">

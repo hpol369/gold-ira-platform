@@ -422,7 +422,7 @@ export function InheritanceCalculator() {
 
           {/* Asset Type Specific Info */}
           {assetType === "inherited_ira" && beneficiaryType !== "spouse" && (
-            <div className="bg-[rgba(220,38,38,0.1)] backdrop-blur-sm rounded-xl p-6 border border-[#B22234]/30">
+            <div className="bg-[rgba(220,38,38,0.1)] backdrop-blur-sm rounded-xl p-6 border border-[rgba(197,149,46,0.32)]">
               <div className="flex items-center gap-2 mb-4">
                 <Clock className="h-5 w-5 text-[#D4A94E]" />
                 <h3 className="text-lg font-semibold text-[#D4A94E]">10-Year Distribution Rule</h3>
@@ -593,7 +593,7 @@ export function InheritanceCalculator() {
 
       {/* Gold IRA Bridge */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
           <div className="flex items-center gap-3 mb-6">
             <PiggyBank className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">Preserve Your Inheritance Across Generations</h2>

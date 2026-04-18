@@ -145,7 +145,7 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden bg-[#0C0D18] border-b border-[#2A2D42]">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(178,34,52,0.05),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(197,149,46,0.04),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -192,7 +192,7 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
         <Container>
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {/* Gold Card - First (Winner Position) */}
-            <div className="bg-[#161828] rounded-2xl border-2 border-[#B22234]/30 overflow-hidden shadow-lg">
+            <div className="bg-[#161828] rounded-2xl border-2 border-[rgba(197,149,46,0.32)] overflow-hidden shadow-lg">
               <div className="bg-[rgba(220,38,38,0.06)] px-6 py-4 border-b border-[#B22234]/20">
                 <div className="flex items-center justify-between">
                   <div>

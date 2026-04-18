@@ -292,7 +292,7 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Quick Recommendation */}
-      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
+      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[rgba(197,149,46,0.32)]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl font-bold text-[#D4A94E] mb-4 flex items-center justify-center gap-2">
@@ -324,7 +324,7 @@ export default function BestCoinsToBuyPage() {
                 <div
                   key={index}
                   className={`bg-[#0C0D18] backdrop-blur-sm border rounded-xl p-6 ${
-                    coin.featured ? "border-[#B22234]/30" : "border-[#2A2D42]"
+                    coin.featured ? "border-[rgba(197,149,46,0.32)]" : "border-[#2A2D42]"
                   }`}
                 >
                   {coin.featured && (
@@ -454,7 +454,7 @@ export default function BestCoinsToBuyPage() {
                   </div>
                 </div>
 
-                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4 mt-6">
+                <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4 mt-6">
                   <p className="text-[#D4A94E] font-semibold mb-1 flex items-center gap-2">
                     <Sparkles className="h-4 w-4" />
                     Pro Tip

@@ -315,7 +315,7 @@ export function Solo401kCalculator() {
               className="w-full flex items-center justify-between"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+                <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                   <TrendingUp className="h-5 w-5 text-[#D4A94E]" />
                 </div>
                 <h3 className="text-lg font-semibold">Advanced Options</h3>
@@ -535,7 +535,7 @@ export function Solo401kCalculator() {
 
       {/* Gold Bridge Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
           <div className="flex items-center gap-3 mb-6">
             <Shield className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">Solo 401(k) with Checkbook Control</h2>

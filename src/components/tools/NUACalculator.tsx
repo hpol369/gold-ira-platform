@@ -531,7 +531,7 @@ export function NUACalculator() {
                 className={`rounded-2xl p-8 text-center border-2 ${
                   calculations.taxSavings > 0
                     ? "bg-gradient-to-b from-green-500/10 to-transparent border-green-500/30"
-                    : "bg-[rgba(220,38,38,0.06)] border-[#B22234]/30"
+                    : "bg-[rgba(220,38,38,0.06)] border-[rgba(197,149,46,0.32)]"
                 }`}
               >
                 <span
@@ -620,7 +620,7 @@ export function NUACalculator() {
                   <div
                     className={`rounded-xl p-6 ${
                       calculations.recommendedStrategy === "rollover"
-                        ? "bg-[rgba(220,38,38,0.1)] border-2 border-[#B22234]/30 relative"
+                        ? "bg-[rgba(220,38,38,0.1)] border-2 border-[rgba(197,149,46,0.32)] relative"
                         : "bg-[#0C0D18] border border-slate-700"
                     }`}
                   >
@@ -741,7 +741,7 @@ export function NUACalculator() {
               </div>
 
               {/* Important NUA Rules */}
-              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-[#D4A94E] mb-4">
                   Critical NUA Rules
                 </h3>
@@ -779,7 +779,7 @@ export function NUACalculator() {
               </div>
 
               {/* Gold IRA Bridge */}
-              <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.06)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-[#D4A94E] mb-3">
                   After Your NUA Distribution
                 </h3>

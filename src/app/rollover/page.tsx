@@ -290,7 +290,7 @@ export default function RolloverPage() {
               <p className="text-[#D0CCC4]">
                 That&apos;s why you use a direct rollover&mdash;there&apos;s nothing to mess up. The money goes straight between custodians. You don&apos;t handle it, so there&apos;s no 60-day deadline to worry about and no risk of triggering taxes by accident.
               </p>
-              <Link href="/learn/indirect-vs-direct-rollover" className="inline-flex items-center gap-1 text-[#D4A94E] text-sm font-medium mt-3 hover:text-[#8b1c2a]">
+              <Link href="/learn/indirect-vs-direct-rollover" className="inline-flex items-center gap-1 text-[#D4A94E] text-sm font-medium mt-3 hover:text-[#F6F4EF]">
                 Why direct rollovers are safer <ArrowRight className="h-3 w-3" />
               </Link>
             </div>

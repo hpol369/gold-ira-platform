@@ -89,7 +89,7 @@ export function CoastFIRECalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#B22234]/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <Calculator className="h-4 w-4" />
           FIRE Calculator
         </div>
@@ -230,7 +230,7 @@ export function CoastFIRECalculator() {
           <div className={`rounded-xl p-6 border ${
             calculations.hasReachedCoast
               ? 'bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30'
-              : 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30'
+              : 'bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]'
           }`}>
             <div className="flex items-center gap-3 mb-4">
               {calculations.hasReachedCoast ? (

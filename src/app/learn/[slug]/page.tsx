@@ -583,7 +583,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
 
               {/* Gold Bridge CTA - Premium Glass Card with Gold Accent */}
               <div id="gold-ira-bridge" className="scroll-mt-24 relative rounded-2xl p-8 mb-12 overflow-hidden
-                                                   bg-gradient-to-br from-amber-500/10 via-white/5 to-amber-500/5
+                                                   bg-gradient-to-br from-[rgba(197,149,46,0.08)] via-[#121423] to-[rgba(197,149,46,0.04)]
                                                    backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_60px_rgba(251,191,36,0.1)]">
                 {/* Gold gradient border effect */}
                 <div className="absolute inset-0 rounded-2xl border border-amber-500/30" />

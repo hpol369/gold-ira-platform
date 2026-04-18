@@ -65,13 +65,13 @@ export function AuditWizard() {
                             FREE PORTFOLIO DIAGNOSTIC
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#F6F4EF] mb-6 leading-tight">
-                            Is Your Retrieval <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B22234] to-[#8b1c2a]">Sovereign or Exposed?</span>
+                            Is Your Retrieval <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-[#C5952E]">Sovereign or Exposed?</span>
                         </h1>
                         <p className="text-xl text-[#A8A39A] max-w-2xl mx-auto mb-10 leading-relaxed">
                             Inflation has eroded 25% of the dollar's value since 2020.
                             Take this 60-second audit to calculate your <strong>Inflation Exposure Score</strong> and generate a custom protection blueprint.
                         </p>
-                        <Button size="xl" variant="gold" onClick={() => setStep("fear")} className="px-12 py-8 text-xl shadow-[0_0_40px_-5px_rgba(178,34,52,0.3)]">
+                        <Button size="xl" variant="gold" onClick={() => setStep("fear")} className="px-12 py-8 text-xl shadow-[0_0_40px_-5px_rgba(197,149,46,0.18)]">
                             Start Brief Audit <ArrowRight className="ml-3 w-6 h-6" />
                         </Button>
                         <p className="mt-6 text-sm text-[#A8A39A]">

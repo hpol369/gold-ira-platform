@@ -86,7 +86,7 @@ export function ExitIntentModal() {
 
             <div className="p-8 text-center">
               {/* Icon */}
-              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 flex items-center justify-center">
+              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] flex items-center justify-center">
                 <FileText className="w-8 h-8 text-white" />
               </div>
 

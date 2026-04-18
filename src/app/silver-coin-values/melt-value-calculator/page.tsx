@@ -133,7 +133,7 @@ export default function MeltValueCalculatorPage() {
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
               <Star className="h-4 w-4" />
               INTERACTIVE TOOL - 1,200 SEARCHES
             </div>
@@ -237,7 +237,7 @@ export default function MeltValueCalculatorPage() {
                   <div className="flex gap-3 pt-2">
                     <button
                       onClick={handleCalculate}
-                      className="flex-1 bg-gradient-to-r from-[#B22234] to-[#8b1c2a] hover:from-amber-400 hover:to-amber-500 text-[#F6F4EF] font-bold py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2"
+                      className="flex-1 bg-[#C5952E] hover:from-amber-400 hover:to-amber-500 text-[#F6F4EF] font-bold py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2"
                     >
                       <Calculator className="h-5 w-5" />
                       Calculate Value
@@ -253,7 +253,7 @@ export default function MeltValueCalculatorPage() {
 
                 {/* Right Column - Results */}
                 <div className={`transition-all duration-300 ${showResults ? 'opacity-100' : 'opacity-50'}`}>
-                  <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-[#C5952E]/10 via-amber-500/5 to-transparent border border-[rgba(197,149,46,0.32)] rounded-xl p-6 h-full">
                     <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Results</h3>
 
                     {/* Main Result */}
@@ -387,7 +387,7 @@ export default function MeltValueCalculatorPage() {
                 </p>
               </div>
             </div>
-            <div className="mt-8 bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-4">
+            <div className="mt-8 bg-gradient-to-r from-[#C5952E]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-4">
               <p className="text-[#D0CCC4] text-sm">
                 <span className="font-semibold text-[#F6F4EF]">Pro Tip:</span> For 90% silver coins,
                 you can also use this shortcut: <span className="text-[#D4A94E] font-mono">Face Value x 0.7234 x Spot Price</span>.

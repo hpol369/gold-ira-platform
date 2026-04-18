@@ -345,7 +345,7 @@ export function InheritedIRARMDCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#B22234]/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <Calculator className="h-4 w-4" />
           Inherited IRA Calculator
         </div>
@@ -567,7 +567,7 @@ export function InheritedIRARMDCalculator() {
         {/* Results Section */}
         <div className="space-y-6">
           {/* Strategy Overview */}
-          <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+          <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
             <div className="flex items-center gap-3 mb-4">
               <Clock className="h-10 w-10 text-[#D4A94E]" />
               <div>
@@ -674,7 +674,7 @@ export function InheritedIRARMDCalculator() {
 
           {/* Strategy Tips */}
           {beneficiaryType === "designated" && !isPreSecureAct && (
-            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
               <div className="flex items-start gap-3">
                 <Info className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>

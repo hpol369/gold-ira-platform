@@ -453,7 +453,7 @@ export default function ComparePage() {
                     <td className="p-4 text-center">
                       <Link
                         href={`/reviews/${company.slug}`}
-                        className="text-[#D4A94E] text-sm font-semibold hover:text-[#8b1c2a]"
+                        className="text-[#D4A94E] text-sm font-semibold hover:text-[#F6F4EF]"
                       >
                         Review &rarr;
                       </Link>
@@ -466,7 +466,7 @@ export default function ComparePage() {
           <div className="text-center mt-6">
             <Link
               href="/reviews"
-              className="text-[#D4A94E] font-semibold hover:text-[#8b1c2a]"
+              className="text-[#D4A94E] font-semibold hover:text-[#F6F4EF]"
             >
               View All {companies.length} Company Reviews &rarr;
             </Link>

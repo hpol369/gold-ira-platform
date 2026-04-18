@@ -76,7 +76,7 @@ function getRiskAssessment(
     return {
       level: "Moderate Risk",
       color: "text-[#D4A94E]",
-      bgColor: "bg-[rgba(220,38,38,0.1)] border-[#B22234]/30",
+      bgColor: "bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]",
       message:
         "You have a monthly income shortfall. Your savings will need to cover this gap, which accelerates depletion.",
     };
@@ -86,7 +86,7 @@ function getRiskAssessment(
     return {
       level: "Market Vulnerable",
       color: "text-[#D4A94E]",
-      bgColor: "bg-[rgba(220,38,38,0.1)] border-[#B22234]/30",
+      bgColor: "bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]",
       message:
         "High stock market exposure with limited runway. A major market crash could significantly impact your retirement timeline.",
     };
@@ -252,7 +252,7 @@ export default function RetirementCalculatorPage() {
       <section className="py-12 md:py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FREE RETIREMENT CALCULATOR
             </div>
@@ -989,7 +989,7 @@ export default function RetirementCalculatorPage() {
 
                     {/* Gold IRA Recommendation */}
                     {stockAllocation > 50 && (
-                      <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-5 mb-6">
+                      <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mb-6">
                         <div className="flex items-start gap-3">
                           <Shield className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                           <div>

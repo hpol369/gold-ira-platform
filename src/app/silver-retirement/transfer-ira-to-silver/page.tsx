@@ -246,7 +246,7 @@ export default function TransferIraToSilverPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
             </Link>
-            <div className="inline-flex items-center gap-2 text-[#D4A94E] text-sm font-medium mb-4 bg-[rgba(220,38,38,0.18)] px-4 py-2 rounded-full border border-[#B22234]/30">
+            <div className="inline-flex items-center gap-2 text-[#D4A94E] text-sm font-medium mb-4 bg-[rgba(220,38,38,0.18)] px-4 py-2 rounded-full border border-[rgba(197,149,46,0.32)]">
               <Clock className="h-4 w-4" />
               STEP-BY-STEP GUIDE
             </div>
@@ -281,7 +281,7 @@ export default function TransferIraToSilverPage() {
       </section>
 
       {/* Urgency Banner */}
-      <section className="py-4 bg-gradient-to-r from-amber-600/20 via-amber-500/20 to-[#8b1c2a]/20 border-y border-[#B22234]/30">
+      <section className="py-4 bg-gradient-to-r from-amber-600/20 via-amber-500/20 to-[#A67D24]/20 border-y border-[rgba(197,149,46,0.32)]">
         <Container>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
             <AlertTriangle className="h-5 w-5 text-[#D4A94E]" />
@@ -314,7 +314,7 @@ export default function TransferIraToSilverPage() {
                 >
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-[rgba(220,38,38,0.18)] rounded-full flex items-center justify-center border border-[#B22234]/30">
+                      <div className="w-14 h-14 bg-[rgba(220,38,38,0.18)] rounded-full flex items-center justify-center border border-[rgba(197,149,46,0.32)]">
                         <span className="text-2xl font-bold text-[#D4A94E]">
                           {step.step}
                         </span>
@@ -344,9 +344,9 @@ export default function TransferIraToSilverPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#C5952E]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
-          <div className="max-w-4xl mx-auto text-center bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-2xl p-8">
+          <div className="max-w-4xl mx-auto text-center bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
             <div className="inline-flex items-center gap-2 text-[#D4A94E] text-sm font-semibold mb-4">
               <Award className="h-4 w-4" />
               OUR #1 RECOMMENDATION

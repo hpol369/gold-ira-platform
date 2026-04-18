@@ -292,7 +292,7 @@ export default function Calculator401kPage() {
       <section className="py-12 md:py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FREE 401(k) CALCULATOR
             </div>
@@ -544,7 +544,7 @@ export default function Calculator401kPage() {
                 {/* Investment Assumptions */}
                 <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 shadow-sm">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+                    <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                       <TrendingUp className="h-5 w-5 text-[#D4A94E]" />
                     </div>
                     <h2 className="text-lg font-semibold text-[#F6F4EF]">Investment Assumptions</h2>
@@ -610,7 +610,7 @@ export default function Calculator401kPage() {
               {/* Results Section */}
               <div className="space-y-6">
                 {/* Main Result Card */}
-                <div className="bg-[rgba(220,38,38,0.1)] rounded-2xl p-8 border border-[#B22234]/30">
+                <div className="bg-[rgba(220,38,38,0.1)] rounded-2xl p-8 border border-[rgba(197,149,46,0.32)]">
                   <div className="flex items-center gap-3 mb-4">
                     <Target className="h-10 w-10 text-[#D4A94E]" />
                     <div>
@@ -621,7 +621,7 @@ export default function Calculator401kPage() {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-[#B22234]/30">
+                  <div className="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-[rgba(197,149,46,0.32)]">
                     <div>
                       <div className="text-sm text-[#A8A39A] mb-1">Real Value (Today's Dollars)</div>
                       <div className="text-xl font-bold text-[#F6F4EF]">
@@ -701,7 +701,7 @@ export default function Calculator401kPage() {
                       <span className="font-semibold text-[#D4A94E]">+{formatFullCurrency(calculations.totalInvestmentGrowth)}</span>
                     </div>
 
-                    <div className="flex justify-between items-center p-4 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg">
+                    <div className="flex justify-between items-center p-4 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg">
                       <span className="text-[#F6F4EF] font-semibold">Total at Retirement</span>
                       <span className="text-2xl font-bold text-[#D4A94E]">{formatFullCurrency(calculations.finalBalance)}</span>
                     </div>
@@ -1136,7 +1136,7 @@ export default function Calculator401kPage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-2xl p-8">
+            <div className="bg-[rgba(220,38,38,0.06)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-6">
                 <Shield className="h-8 w-8 text-[#D4A94E] shrink-0" />
                 <div>

@@ -114,7 +114,7 @@ export default function RobertKiyosakiGoldPage() {
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <Link href="/rich-dad-strategy" className="text-[#D4A94E] hover:text-[#8b1c2a] text-sm font-semibold mb-4 inline-block">
+                        <Link href="/rich-dad-strategy" className="text-[#D4A94E] hover:text-[#F6F4EF] text-sm font-semibold mb-4 inline-block">
                             ← Back to Rich Dad Strategy
                         </Link>
                         <span className="text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4 block mt-4">

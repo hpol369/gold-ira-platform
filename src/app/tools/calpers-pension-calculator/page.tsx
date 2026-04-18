@@ -312,7 +312,7 @@ export default function CalPERSPensionCalculatorPage() {
                     50% at 10 years, increasing 5% per year.
                   </p>
                 </div>
-                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-5">
+                <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                   <h4 className="text-[#D4A94E] font-semibold mb-2">Local Government</h4>
                   <p className="text-[#D0CCC4] text-sm">
                     Varies by employer contract. Many require 20 years for full vesting.
@@ -399,7 +399,7 @@ export default function CalPERSPensionCalculatorPage() {
               </div>
             </div>
 
-            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
               <div className="flex items-start gap-3">
                 <Info className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>

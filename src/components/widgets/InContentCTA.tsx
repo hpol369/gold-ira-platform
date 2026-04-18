@@ -34,7 +34,7 @@ const variantStyles: Record<InContentCTAVariant, {
     button: "bg-[#DC2626]/90 hover:bg-[#DC2626] text-white",
   },
   emphasized: {
-    container: "bg-gradient-to-r from-[#B22234]/10 via-[#B22234]/5 to-transparent border border-[#B22234]/20",
+    container: "bg-gradient-to-r from-[#C5952E]/10 via-[#C5952E]/5 to-transparent border border-[#B22234]/20",
     text: "text-[#D0CCC4]",
     button: "bg-[#DC2626] hover:bg-[#991B1B] text-white",
   },

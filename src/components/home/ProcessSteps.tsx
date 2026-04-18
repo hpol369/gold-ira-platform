@@ -40,7 +40,7 @@ export function ProcessSteps() {
 
                 <div className="grid md:grid-cols-3 gap-8 relative">
                     {/* Connecting Line (Desktop) */}
-                    <div className="hidden md:block absolute top-[40px] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-[#B22234]/20 via-[#B22234]/40 to-[#B22234]/20 z-0" />
+                    <div className="hidden md:block absolute top-[40px] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-[#C5952E]/20 via-[#C5952E]/40 to-[#B22234]/20 z-0" />
 
                     {steps.map((step, i) => (
                         <div key={i} className="relative z-10 flex flex-col items-center text-center group">

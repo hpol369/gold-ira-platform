@@ -87,7 +87,7 @@ export default function HowMuchGoldPage() {
             <section className="py-12 bg-[#0C0D18] border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-8 text-center">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8 text-center">
                             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">The Short Answer</h2>
                             <p className="text-5xl font-bold text-[#D4A94E] mb-4">5-15%</p>
                             <p className="text-lg text-[#D0CCC4]">
@@ -362,7 +362,7 @@ export default function HowMuchGoldPage() {
 
                         {/* Summary */}
                         <div className="mb-16">
-                            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-8">
+                            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
                                 <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 text-center">Summary: Your Gold Allocation</h2>
                                 <div className="grid md:grid-cols-3 gap-6 text-center">
                                     <div>

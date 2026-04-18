@@ -159,7 +159,7 @@ export function SequenceOfReturnsCalculator() {
           {/* Portfolio Value */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <DollarSign className="h-5 w-5 text-[#D4A94E]" />
               </div>
               <h3 className="text-lg font-semibold">Starting Portfolio</h3>
@@ -495,7 +495,7 @@ export function SequenceOfReturnsCalculator() {
       {/* Educational Content */}
       <div className="max-w-4xl mx-auto mt-16">
         {/* Key Insight Alert */}
-        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 mb-8">
+        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 mb-8">
           <div className="flex items-start gap-4">
             <Shield className="h-8 w-8 text-[#D4A94E] flex-shrink-0" />
             <div>

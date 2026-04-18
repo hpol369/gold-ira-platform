@@ -371,7 +371,7 @@ export default function SilverVsGoldIraPage() {
                                     {goldAdvantages.map((item, index) => {
                                         const Icon = item.icon;
                                         return (
-                                            <div key={index} className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
+                                            <div key={index} className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-4">
                                                 <div className="flex items-start gap-3">
                                                     <div className="w-10 h-10 bg-[#DC2626]/30 rounded-lg flex items-center justify-center flex-shrink-0">
                                                         <Icon className="h-5 w-5 text-[#D4A94E]" />
@@ -447,7 +447,7 @@ export default function SilverVsGoldIraPage() {
                             ))}
                         </div>
 
-                        <div className="mt-8 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                        <div className="mt-8 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                             <h4 className="font-bold text-[#D4A94E] mb-2">Our Recommendation</h4>
                             <p className="text-[#D0CCC4]">
                                 For most investors, a <strong className="text-[#F6F4EF]">60/40 or 70/30 gold-to-silver split</strong> provides a good balance of stability and growth potential.

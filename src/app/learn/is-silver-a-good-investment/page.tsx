@@ -400,7 +400,7 @@ export default function IsSilverGoodInvestmentPage() {
                                     </div>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]">
                                     <h4 className="font-bold text-[#D4A94E] text-lg mb-2">Silver IRA</h4>
                                     <p className="text-sm text-[#D0CCC4] mb-3">Hold physical silver in a tax-advantaged retirement account. Combines the benefits of real ownership with IRA tax benefits.</p>
                                     <div className="flex gap-4 text-xs">

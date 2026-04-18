@@ -276,7 +276,7 @@ export default function SilverAllTimeHighPage() {
                                 In other words, for silver to reach its &quot;real&quot; all-time high in today&apos;s dollars, it would need to rise <strong>5-6x from current levels</strong>. That&apos;s the magnitude of the opportunity some investors see.
                             </p>
 
-                            <div className="bg-gradient-to-r from-[#B22234]/10 to-green-500/10 rounded-2xl p-6 border border-amber-500/20 not-prose my-8">
+                            <div className="bg-gradient-to-r from-[#C5952E]/10 to-green-500/10 rounded-2xl p-6 border border-amber-500/20 not-prose my-8">
                                 <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">What Silver Prices &quot;Should Be&quot; If They Kept Pace</h4>
                                 <div className="space-y-4">
                                     <div>

@@ -372,7 +372,7 @@ export function HECMCalculator() {
           {/* Proprietary Results */}
           <div className={`bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border ${
             !calculations.hecmIsBetter || calculations.exceedsHECMLimit
-              ? "border-[#B22234]/30"
+              ? "border-[rgba(197,149,46,0.32)]"
               : "border-[#2A2D42]"
           }`}>
             <div className="flex items-center justify-between mb-4">
@@ -581,7 +581,7 @@ export function HECMCalculator() {
 
       {/* Gold IRA Alternative */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
           <div className="flex items-center gap-3 mb-6">
             <DollarSign className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">Protect Your Home, Diversify Your Retirement</h2>

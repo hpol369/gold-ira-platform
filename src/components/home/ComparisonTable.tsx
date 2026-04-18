@@ -119,7 +119,7 @@ export function ComparisonTable() {
                         >
                             {company.rank === 1 && (
                                 <>
-                                    <div className="absolute top-0 right-0 bg-[#DC2626] text-white text-xs font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1 shadow-[0_0_20px_rgba(178,34,52,0.3)] animate-pulse z-10" style={{ animationDuration: '3s' }}>
+                                    <div className="absolute top-0 right-0 bg-[#DC2626] text-white text-xs font-bold px-3 py-1 rounded-bl-lg flex items-center gap-1 shadow-[0_0_20px_rgba(197,149,46,0.18)] animate-pulse z-10" style={{ animationDuration: '3s' }}>
                                         <Trophy className="w-3 h-3" /> #1 Top Pick
                                     </div>
                                     <div className="absolute inset-0 bg-[rgba(220,38,38,0.06)] pointer-events-none" />
@@ -228,7 +228,7 @@ export function ComparisonTable() {
                                     <td className="p-5 align-middle">
                                         <div className="font-bold text-lg text-[#F6F4EF] whitespace-nowrap">{company.name}</div>
                                         {company.rank === 1 && (
-                                            <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-white bg-[#DC2626] px-2 py-0.5 rounded-full mt-1 shadow-[0_0_20px_rgba(178,34,52,0.3)] animate-pulse" style={{ animationDuration: '3s' }}>
+                                            <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-white bg-[#DC2626] px-2 py-0.5 rounded-full mt-1 shadow-[0_0_20px_rgba(197,149,46,0.18)] animate-pulse" style={{ animationDuration: '3s' }}>
                                                 <Trophy className="w-3 h-3" /> Editors Choice
                                             </span>
                                         )}
@@ -239,7 +239,7 @@ export function ComparisonTable() {
                                         </div>
                                     </td>
                                     <td className="p-5 align-middle">
-                                        <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${company.badgeColor === 'gold' ? 'bg-[rgba(220,38,38,0.1)] text-[#D4A94E] border border-[#B22234]/30' :
+                                        <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${company.badgeColor === 'gold' ? 'bg-[rgba(220,38,38,0.1)] text-[#D4A94E] border border-[rgba(197,149,46,0.32)]' :
                                                 company.badgeColor === 'silver' ? 'bg-[#121423] text-[#D0CCC4] border border-[#3F4460]' :
                                                     'bg-[rgba(197,149,46,0.08)] text-[#F6F4EF] border border-[#000080]/30'
                                             }`}>

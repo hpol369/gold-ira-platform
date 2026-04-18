@@ -118,7 +118,7 @@ export function AuditResults({ score, riskLabel, projectedLoss, primaryFear }: A
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                className="text-center bg-gradient-to-br from-[#B22234] to-[#8b1c2a] rounded-2xl p-8 md:p-12 shadow-2xl shadow-[#B22234]/20"
+                className="text-center bg-gradient-to-br from-[#C5952E] to-[#A67D24] rounded-2xl p-8 md:p-12 shadow-2xl shadow-[#B22234]/20"
             >
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                     Get Your Full "Sovereign Blueprint"

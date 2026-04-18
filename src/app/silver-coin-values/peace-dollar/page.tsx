@@ -188,7 +188,7 @@ export default function PeaceDollarValuePage() {
               {keyDates.map((coin, index) => (
                 <div
                   key={index}
-                  className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-4"
+                  className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-4"
                 >
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold text-[#D4A94E]">{coin.year}</h3>
@@ -326,7 +326,7 @@ export default function PeaceDollarValuePage() {
                 </ul>
               </div>
             </div>
-            <div className="mt-6 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
+            <div className="mt-6 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-4">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <p className="text-[#D0CCC4] text-sm">
@@ -348,7 +348,7 @@ export default function PeaceDollarValuePage() {
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               1921 High Relief: The First Peace Dollar
             </h2>
-            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-[#D4A94E] mb-4">High Relief Features (1921 Only)</h3>

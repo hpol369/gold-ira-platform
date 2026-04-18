@@ -214,7 +214,7 @@ export default function BuySellSilverHubPage() {
       </section>
 
       {/* Rich Dad Quote */}
-      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
+      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[rgba(197,149,46,0.32)]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-xl text-[#F6F4EF] italic">
@@ -362,7 +362,7 @@ export default function BuySellSilverHubPage() {
               </div>
 
               {/* Selling Tips */}
-              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-4 flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5" />
                   Selling Smart

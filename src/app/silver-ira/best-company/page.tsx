@@ -181,7 +181,7 @@ export default function BestSilverIraCompanyPage() {
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
                             <Award className="h-4 w-4" />
                             2026 EDITOR'S CHOICE
                         </div>
@@ -199,7 +199,7 @@ export default function BestSilverIraCompanyPage() {
             <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-gradient-to-br from-[#B22234]/20 to-[#8b1c2a]/10 border-2 border-[#B22234]/50 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
+                        <div className="bg-gradient-to-br from-[#C5952E]/20 to-[#A67D24]/10 border-2 border-[#B22234]/50 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
                             <div className="absolute top-4 right-4">
                                 <Award className="h-16 w-16 text-[#D4A94E]/30" />
                             </div>

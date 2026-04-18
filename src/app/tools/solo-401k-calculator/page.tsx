@@ -221,7 +221,7 @@ export default function Solo401kCalculatorPage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[rgba(220,38,38,0.06)] rounded-xl p-8 border border-[#B22234]/30">
+            <div className="bg-[rgba(220,38,38,0.06)] rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
               <div className="flex items-center gap-3 mb-6">
                 <Shield className="h-8 w-8 text-[#D4A94E]" />
                 <h2 className="text-2xl font-bold text-[#F6F4EF]">
@@ -281,7 +281,7 @@ export default function Solo401kCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4 mb-6">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4 mb-6">
                 <p className="text-[#D4A94E] text-sm">
                   <strong>Key Insight:</strong> Solo 401(k) with checkbook control lets you invest in physical gold directly. This gives self-employed individuals more control and potentially lower fees than traditional Gold IRAs, while sheltering up to $76,500 per year from taxes.
                 </p>

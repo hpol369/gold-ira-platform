@@ -418,7 +418,7 @@ export default function SilverTestingPage() {
                           </div>
                         </div>
 
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-3">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-3">
                           <h4 className="text-sm font-semibold text-[#D4A94E] mb-1 flex items-center gap-1">
                             <AlertTriangle className="h-3 w-3" /> Limitations
                           </h4>

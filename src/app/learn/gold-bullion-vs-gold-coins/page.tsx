@@ -109,7 +109,7 @@ export default function GoldBullionVsCoinsPage() {
             <section className="py-12 bg-[#0C0D18] border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-8">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
                             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Quick Answer</h2>
                             <p className="text-lg text-[#D0CCC4] mb-4">
                                 <strong className="text-[#F6F4EF]">For most folks protecting their retirement, coins are the better choice.</strong> They&apos;re easier to sell when you need them, everyone recognizes them, and you can cash out a few at a time instead of all or nothing. If you&apos;ve got $100,000+ to move, bars can save you some money on markups.
@@ -378,7 +378,7 @@ export default function GoldBullionVsCoinsPage() {
                         <div className="mb-16">
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">Our Recommendation</h2>
                             <div className="grid md:grid-cols-2 gap-6">
-                                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-6">
                                     <h3 className="text-xl font-bold text-[#D4A94E] mb-3">Choose Coins If...</h3>
                                     <ul className="space-y-2 text-[#D0CCC4]">
                                         <li>You&apos;re rolling over $50,000-$100,000 from your 401(k)</li>

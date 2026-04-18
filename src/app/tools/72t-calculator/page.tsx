@@ -124,7 +124,7 @@ export default function SEPP72tCalculatorPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(220,38,38,0.1)] text-[#D4A94E] border border-[#B22234]/30 mb-4">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(220,38,38,0.1)] text-[#D4A94E] border border-[rgba(197,149,46,0.32)] mb-4">
                 Early Retirement Tool
               </span>
               <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
@@ -364,7 +364,7 @@ export default function SEPP72tCalculatorPage() {
                           ))}
                         </div>
 
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4">
                           <p className="text-amber-800 text-sm">
                             <strong>Tip:</strong> A higher interest rate results in larger annual distributions.
                             The IRS publishes updated rates monthly.
@@ -450,7 +450,7 @@ export default function SEPP72tCalculatorPage() {
                       </div>
 
                       {/* Fixed Amortization */}
-                      <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[#B22234]/30 rounded-xl p-6 relative">
+                      <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[rgba(197,149,46,0.32)] rounded-xl p-6 relative">
                         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                           <span className="bg-[#DC2626] text-[#F6F4EF] text-xs font-bold px-3 py-1 rounded-full">
                             MOST POPULAR

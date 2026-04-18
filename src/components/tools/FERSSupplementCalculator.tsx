@@ -214,7 +214,7 @@ export function FERSSupplementCalculator() {
               <div className={`rounded-xl p-4 mb-6 ${
                 checkEligibility.eligible
                   ? 'bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]'
-                  : 'bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30'
+                  : 'bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]'
               }`}>
                 <div className="flex items-start gap-3">
                   {checkEligibility.eligible ? (
@@ -312,7 +312,7 @@ export function FERSSupplementCalculator() {
                       </div>
                     </>
                   ) : (
-                    <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                    <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                       <div className="flex items-start gap-3">
                         <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0" />
                         <div>

@@ -187,7 +187,7 @@ export function QuizWizard() {
 
                 <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-8 mb-8 text-left relative overflow-hidden shadow-lg">
                     {/* Top Banner */}
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#B22234] to-[#8b1c2a]" />
+                    <div className="absolute top-0 left-0 w-full h-1 bg-[#C5952E]" />
 
                     <div className="flex flex-col md:flex-row gap-8 items-start">
                         {/* Score Circle */}

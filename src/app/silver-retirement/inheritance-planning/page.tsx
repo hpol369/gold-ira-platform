@@ -430,7 +430,7 @@ export default function SilverInheritancePlanningPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#C5952E]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">

@@ -260,7 +260,7 @@ export function CrashSimulator() {
                   </div>
 
                   {/* Difference */}
-                  <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4 text-center">
+                  <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-4 text-center">
                     <div className="text-[#D4A94E] font-semibold mb-1">GOLD PROTECTED</div>
                     <div className="text-3xl font-bold text-[#F6F4EF]">
                       ${result.difference.toLocaleString()}

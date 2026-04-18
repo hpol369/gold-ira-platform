@@ -401,7 +401,7 @@ export default function SilverUndervaluedPage() {
                                     <p className="text-sm text-[#D0CCC4]">Based on gold-silver ratio returning to 40:1, or inflation-adjusted pricing. Likely requires broader precious metals bull market.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]">
                                     <div className="flex justify-between items-center mb-2">
                                         <h4 className="font-bold text-[#D4A94E] text-lg">Aggressive Target</h4>
                                         <span className="text-2xl font-bold text-red-700">$100-300/oz</span>

@@ -183,7 +183,7 @@ export default function ComexSilverInventoryPage() {
                                         <li>This is what matters for delivery</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]">
                                     <Warehouse className="w-8 h-8 text-[#D4A94E] mb-4" />
                                     <h4 className="font-bold text-[#D4A94E] text-lg mb-2">Eligible Silver</h4>
                                     <p className="text-sm text-[#D0CCC4] mb-4">Silver that meets COMEX standards but isn&apos;t available for delivery. It&apos;s just stored there by private parties.</p>
@@ -366,7 +366,7 @@ export default function ComexSilverInventoryPage() {
                                     <p className="text-sm text-[#D0CCC4]">Higher prices incentivize holders to deposit more silver and reduce industrial/investment demand. The market balances through price discovery.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]">
                                     <h4 className="font-bold text-[#D4A94E] text-lg mb-2">Scenario 3: Delivery Failure</h4>
                                     <p className="text-sm text-[#D0CCC4]">If delivery requests exceed available metal, COMEX may force cash settlement at potentially unfavorable rates. This would destroy confidence in paper silver markets.</p>
                                 </div>

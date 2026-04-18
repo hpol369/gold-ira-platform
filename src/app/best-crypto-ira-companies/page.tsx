@@ -107,7 +107,7 @@ export default function BestCryptoIRACompaniesPage() {
 
             {/* Hero Section */}
             <header className="relative py-20 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-100/50 via-white to-purple-100/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[rgba(59,130,246,0.12)] via-[#161828] to-[rgba(197,149,46,0.08)]"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-medium mb-6">

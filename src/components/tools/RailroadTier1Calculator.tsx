@@ -384,7 +384,7 @@ export function RailroadTier1Calculator() {
                     <div
                       className={`rounded-lg p-4 ${
                         retirementAge < 67
-                          ? "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
+                          ? "bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]"
                           : retirementAge > 67
                           ? "bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]"
                           : "bg-[#121423] border border-blue-200"
@@ -502,7 +502,7 @@ export function RailroadTier1Calculator() {
                           className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                         />
 
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4">
                           <p className="text-amber-800 text-sm">
                             <strong>WEP Impact:</strong> If you receive a pension from
                             work not covered by Social Security (e.g., some government
@@ -743,7 +743,7 @@ export function RailroadTier1Calculator() {
 
               {/* WEP/GPO Explanation */}
               {(calculations.hasWEP || calculations.hasGPO) && (
-                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                   <h3 className="text-lg font-semibold text-[#D4A94E] mb-4">
                     WEP/GPO Impact on Your Benefits
                   </h3>

@@ -210,7 +210,7 @@ export default function SilverCoinValuesHubPage() {
       <section className="py-12 bg-[#161828] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
+            <div className="bg-gradient-to-r from-[#C5952E]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
               <h2 className="text-lg font-bold text-[#F6F4EF] mb-2">
                 What the Banks Don&apos;t Want You to Know About Silver
               </h2>
@@ -246,7 +246,7 @@ export default function SilverCoinValuesHubPage() {
                     href={`/silver-coin-values/${page.slug}`}
                     className={`group bg-[#0C0D18] backdrop-blur-sm border rounded-xl p-6 hover:bg-[#1E2134] transition-all ${
                       page.highlight
-                        ? "border-[#B22234]/30 hover:border-[#B22234]/50"
+                        ? "border-[rgba(197,149,46,0.32)] hover:border-[#B22234]/50"
                         : "border-[#2A2D42] hover:border-[#3F4460]"
                     }`}
                   >

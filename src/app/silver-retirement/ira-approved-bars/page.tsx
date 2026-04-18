@@ -351,7 +351,7 @@ export default function IraApprovedBarsPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#C5952E]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">
@@ -423,7 +423,7 @@ export default function IraApprovedBarsPage() {
               </ul>
               <p className="text-xs text-[#D0CCC4]">Best for: Small investments under $5,000</p>
             </div>
-            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
               <div className="flex items-center gap-3 mb-4">
                 <Scale className="h-6 w-6 text-[#D4A94E]" />
                 <h3 className="font-bold text-[#F6F4EF]">10 oz Bars</h3>

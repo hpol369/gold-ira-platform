@@ -328,7 +328,7 @@ export default function Convert401kToSilverPage() {
                                 return (
                                     <div key={step.step} className="flex gap-6">
                                         <div className="flex-shrink-0">
-                                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#B22234] to-[#8b1c2a] flex items-center justify-center">
+                                            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#C5952E] to-[#A67D24] flex items-center justify-center">
                                                 <span className="text-xl font-bold text-[#F6F4EF]">{step.step}</span>
                                             </div>
                                         </div>
@@ -338,7 +338,7 @@ export default function Convert401kToSilverPage() {
                                                 <h3 className="text-xl font-bold text-[#F6F4EF]">{step.title}</h3>
                                             </div>
                                             <p className="text-[#D0CCC4] mb-4">{step.description}</p>
-                                            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg px-4 py-3">
+                                            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg px-4 py-3">
                                                 <p className="text-sm text-[#D4A94E]">
                                                     <strong>Action:</strong> {step.action}
                                                 </p>

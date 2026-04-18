@@ -338,7 +338,7 @@ export default function SilverManipulationPage() {
                                     <li><strong className="text-[#F6F4EF]">4. Think Long-Term:</strong> Manipulation can persist longer than expected, but fundamentals eventually prevail.</li>
                                 </ol>
 
-                                <div className="bg-gradient-to-r from-[#B22234]/20 to-[#8b1c2a]/10 border border-[#B22234]/30 rounded-lg p-6 my-8">
+                                <div className="bg-gradient-to-r from-[#C5952E]/20 to-[#A67D24]/10 border border-[rgba(197,149,46,0.32)] rounded-lg p-6 my-8">
                                     <h4 className="text-lg font-bold text-[#D4A94E] mb-3">The Silver IRA Advantage</h4>
                                     <p className="text-[#D0CCC4]">
                                         A properly structured Silver IRA holds <strong className="text-[#F6F4EF]">physical silver</strong> in IRS-approved depositories with segregated storage. This is not paper silver. This is not an ETF. This is real metal that you legally own, protected from manipulation and positioned for price discovery.

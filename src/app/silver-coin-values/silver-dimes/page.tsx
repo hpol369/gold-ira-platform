@@ -175,7 +175,7 @@ export default function SilverDimesValuePage() {
                   The 1894-S is one of America&apos;s rarest coins.
                 </p>
               </div>
-              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-2">Mercury Dime</h3>
                 <p className="text-[#D0CCC4] text-sm mb-3">1916-1945</p>
                 <p className="text-[#D0CCC4] text-sm">
@@ -386,7 +386,7 @@ export default function SilverDimesValuePage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-[#C5952E]/10 via-amber-500/5 to-transparent border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Quick Math</h3>
                 <p className="text-[#D0CCC4] mb-4">
                   At <span className="text-[#F6F4EF] font-semibold">$25/oz silver</span>:

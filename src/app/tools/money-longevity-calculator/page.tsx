@@ -536,7 +536,7 @@ export default function MoneyLongevityCalculatorPage() {
                       : calculations.ageWhenDepleted >= 95
                         ? 'bg-gradient-to-b from-green-500/10 to-transparent border-green-500/30'
                         : calculations.ageWhenDepleted >= 85
-                          ? 'bg-[rgba(220,38,38,0.06)] border-[#B22234]/30'
+                          ? 'bg-[rgba(220,38,38,0.06)] border-[rgba(197,149,46,0.32)]'
                           : 'bg-gradient-to-b from-red-500/10 to-transparent border-red-500/30'
                   }`}>
                     {calculations.yearsLasting === Infinity ? (
@@ -669,7 +669,7 @@ export default function MoneyLongevityCalculatorPage() {
 
                   {/* Recommendations */}
                   {calculations.yearsLasting !== Infinity && calculations.ageWhenDepleted < 95 && (
-                    <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                    <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                       <h3 className="text-lg font-semibold text-[#D4A94E] mb-4">
                         Ways to Extend Your Savings
                       </h3>

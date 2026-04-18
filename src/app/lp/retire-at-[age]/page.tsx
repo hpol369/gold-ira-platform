@@ -249,7 +249,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
         <div className="max-w-4xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Problem */}
-            <div className="bg-[rgba(220,38,38,0.18)] rounded-xl p-6 border border-[#B22234]/30">
+            <div className="bg-[rgba(220,38,38,0.18)] rounded-xl p-6 border border-[rgba(197,149,46,0.32)]">
               <div className="flex items-center gap-2 text-[#D4A94E] font-bold mb-4">
                 <TrendingDown className="h-5 w-5" />
                 THE HIDDEN THREAT

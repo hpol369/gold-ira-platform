@@ -189,7 +189,7 @@ export default function HECMCalculatorPage() {
                 </div>
               </div>
 
-              <div className="p-4 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg">
+              <div className="p-4 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg">
                 <h4 className="text-[#D4A94E] font-semibold mb-2">What Does MIP Pay For?</h4>
                 <ul className="text-[#D0CCC4] text-sm space-y-1">
                   <li>- Guarantees you receive your loan funds even if the lender fails</li>

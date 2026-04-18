@@ -334,7 +334,7 @@ export default function FERSCalculatorPage() {
                         calculations.canRetireImmediate
                           ? 'bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]'
                           : calculations.canRetireMRAPlus10
-                            ? 'bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30'
+                            ? 'bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]'
                             : 'bg-[rgba(220,38,38,0.08)] border border-red-200'
                       }`}>
                         <p className={`text-sm ${
@@ -656,7 +656,7 @@ export default function FERSCalculatorPage() {
 
                   {/* FERS Supplement Notice */}
                   {calculations.fersSupplementAnnual > 0 && (
-                    <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                    <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                       <h3 className="text-lg font-semibold text-[#D4A94E] mb-2">FERS Supplement</h3>
                       <p className="text-[#D0CCC4]">
                         You may be eligible for the FERS Supplement of approximately <strong>{formatCurrency(calculations.fersSupplementMonthly)}/month</strong>.

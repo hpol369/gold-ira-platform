@@ -126,7 +126,7 @@ export default function RailroadRetirementCalculatorPage() {
 
         <Container>
           <div className="relative max-w-4xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-[rgba(220,38,38,0.1)] text-[#D4A94E] border border-[#B22234]/30 mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-[rgba(220,38,38,0.1)] text-[#D4A94E] border border-[rgba(197,149,46,0.32)] mb-4">
               <Train className="h-4 w-4" />
               Railroad Retirement Tool
             </span>
@@ -217,7 +217,7 @@ export default function RailroadRetirementCalculatorPage() {
                 </ul>
               </div>
 
-              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-xl font-bold text-[#D4A94E] mb-4">
                   Tier II: Railroad Pension
                 </h3>

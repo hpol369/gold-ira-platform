@@ -145,7 +145,7 @@ export default function RothConversionCalculatorPage() {
       <section className="py-12 md:py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FREE ROTH CONVERSION CALCULATOR
             </div>
@@ -339,7 +339,7 @@ export default function RothConversionCalculatorPage() {
                         className={`rounded-2xl p-6 border ${
                           results.worthIt
                             ? "bg-[rgba(46,139,87,0.08)]0/10 border-green-500/30"
-                            : "bg-[rgba(220,38,38,0.1)] border-[#B22234]/30"
+                            : "bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]"
                         }`}
                       >
                         <div className="flex items-start gap-3 mb-4">
@@ -405,7 +405,7 @@ export default function RothConversionCalculatorPage() {
                           </div>
 
                           {/* Net Benefit */}
-                          <div className="p-4 bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-xl">
+                          <div className="p-4 bg-[rgba(220,38,38,0.06)] border border-[rgba(197,149,46,0.32)] rounded-xl">
                             <div className="flex justify-between items-center">
                               <div>
                                 <div className="text-[#D0CCC4] text-sm mb-1">
@@ -538,7 +538,7 @@ export default function RothConversionCalculatorPage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-2xl p-8">
+            <div className="bg-[rgba(220,38,38,0.06)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-6">
                 <Shield className="h-8 w-8 text-[#D4A94E] flex-shrink-0" />
                 <div>

@@ -175,7 +175,7 @@ export default function SilverQuartersValuePage() {
                   The 1901-S is a major rarity worth $2,500+ even worn.
                 </p>
               </div>
-              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-2">Standing Liberty</h3>
                 <p className="text-[#D0CCC4] text-sm mb-3">1916-1930</p>
                 <p className="text-[#D0CCC4] text-sm">
@@ -294,7 +294,7 @@ export default function SilverQuartersValuePage() {
                 </tbody>
               </table>
             </div>
-            <div className="mt-4 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
+            <div className="mt-4 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-4">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <p className="text-[#D0CCC4] text-sm">
@@ -396,7 +396,7 @@ export default function SilverQuartersValuePage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-[#C5952E]/10 via-amber-500/5 to-transparent border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Quick Math @ $25/oz</h3>
                 <ul className="space-y-2 text-[#D0CCC4]">
                   <li>1 quarter = $4.52 melt value</li>

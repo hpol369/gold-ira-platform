@@ -257,7 +257,7 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Key Insight */}
-      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
+      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[rgba(197,149,46,0.32)]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl font-bold text-[#D4A94E] mb-4 flex items-center justify-center gap-2">
@@ -410,7 +410,7 @@ export default function WhenToSellPage() {
                           ))}
                         </ul>
                       </div>
-                      <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-3">
+                      <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-3">
                         <h4 className="text-sm font-semibold text-[#D4A94E] mb-1">Best For:</h4>
                         <p className="text-[#D0CCC4] text-sm">{strategy.bestFor}</p>
                       </div>

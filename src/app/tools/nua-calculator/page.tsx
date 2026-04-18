@@ -346,7 +346,7 @@ export default function NUACalculatorPage() {
                 </ul>
               </div>
 
-              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-[#D4A94E] mb-4">
                   Regular Rollover May Be Better When:
                 </h3>

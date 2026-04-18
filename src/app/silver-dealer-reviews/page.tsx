@@ -373,7 +373,7 @@ export default function SilverDealerReviewsPage() {
                 <Container>
                     <div className="bg-gradient-to-br from-amber-900/20 to-amber-800/10 border border-amber-500/20 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
                         <div className="text-center">
-                            <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-6 border border-[#B22234]/30">
+                            <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-6 border border-[rgba(197,149,46,0.32)]">
                                 <Award className="w-4 h-4" />
                                 IMPORTANT FOR IRA INVESTORS
                             </div>

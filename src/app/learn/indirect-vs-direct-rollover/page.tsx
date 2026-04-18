@@ -287,7 +287,7 @@ export default function IndirectVsDirectRolloverPage() {
                                         <span>Check you receive</span>
                                         <span className="font-bold text-[#F6F4EF]">$80,000</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                                         <span>Amount you must deposit to avoid taxes/penalties</span>
                                         <span className="font-bold text-[#D4A94E]">$100,000</span>
                                     </div>
@@ -313,7 +313,7 @@ export default function IndirectVsDirectRolloverPage() {
                             <p className="text-[#D0CCC4] mb-6">
                                 With an indirect rollover, you have exactly <strong className="text-[#F6F4EF]">60 calendar days</strong> to deposit the funds into your new IRA. Miss this deadline by even one day, and the entire amount becomes a taxable distribution.
                             </p>
-                            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                                 <h4 className="font-bold text-[#D4A94E] mb-3">What Can Go Wrong:</h4>
                                 <ul className="space-y-2 text-red-800">
                                     <li className="flex items-start gap-2">

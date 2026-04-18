@@ -23,12 +23,12 @@ export function QuizCTA() {
                     href="/audit"
                     className="group relative overflow-hidden inline-flex items-center justify-center gap-2 py-4 px-10 rounded-xl font-bold text-lg
                                bg-[#DC2626] text-white
-                               shadow-[0_4px_20px_rgba(178,34,52,0.3)]
+                               shadow-[0_4px_20px_rgba(197,149,46,0.18)]
                                hover:bg-[#991B1B] hover:shadow-[0_4px_25px_rgba(178,34,52,0.4)]
                                hover:scale-105 transition-all duration-300"
                 >
                     {/* Shine effect overlay */}
-                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
                     <span className="relative z-10 flex items-center gap-2">
                         Find My Perfect Account <ArrowRight className="w-5 h-5" />
                     </span>

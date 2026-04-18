@@ -132,7 +132,7 @@ export default function MoneyMetalsExchangeReviewPage() {
                             <span>/</span>
                             <span>Money Metals Exchange</span>
                         </div>
-                        <div className="inline-block bg-[rgba(220,38,38,0.18)] text-[#D4A94E] text-sm font-bold px-3 py-1 rounded-full mb-4 border border-[#B22234]/30">
+                        <div className="inline-block bg-[rgba(220,38,38,0.18)] text-[#D4A94E] text-sm font-bold px-3 py-1 rounded-full mb-4 border border-[rgba(197,149,46,0.32)]">
                             High CPC Keyword: $3.50
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
@@ -356,7 +356,7 @@ export default function MoneyMetalsExchangeReviewPage() {
                                 Money Metals can facilitate precious metals IRAs through partner custodians. However, this is not their core specialty&mdash;they are primarily a direct dealer focused on physical delivery.
                             </p>
 
-                            <div className="bg-amber-900/20 border border-[#B22234]/30 rounded-xl p-6 my-8 not-prose">
+                            <div className="bg-amber-900/20 border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
                                     <Award className="w-5 h-5 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>

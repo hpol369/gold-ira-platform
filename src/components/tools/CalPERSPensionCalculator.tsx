@@ -245,7 +245,7 @@ export function CalPERSPensionCalculator() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               ADVANCED CALPERS CALCULATOR
             </div>
@@ -406,7 +406,7 @@ export function CalPERSPensionCalculator() {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                      <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-5">
+                      <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                         <div className="text-[#D4A94E] text-sm mb-1">Monthly Benefit at Age {retirementAge}</div>
                         <div className="text-4xl font-bold text-[#F6F4EF]">{formatCurrency(result.monthlyBenefit)}</div>
                         <div className="text-[#D0CCC4] text-sm mt-1">{formatCurrency(result.annualBenefit)}/year</div>
@@ -497,7 +497,7 @@ export function CalPERSPensionCalculator() {
                     <div className={`p-4 rounded-xl ${
                       result.healthBenefitsEligible
                         ? "bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]"
-                        : "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
+                        : "bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]"
                     }`}>
                       {result.healthBenefitsEligible ? (
                         <div className="flex items-start gap-3">

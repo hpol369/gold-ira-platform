@@ -549,7 +549,7 @@ export function FIRECalculator() {
               ? 'bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30'
               : calculations.yearsToFIRE < 100
               ? 'bg-[#121423]0/20 border-blue-500/30'
-              : 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30'
+              : 'bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]'
           }`}>
             <div className="flex items-center gap-3 mb-4">
               {calculations.hasReachedFIRE ? (
@@ -815,7 +815,7 @@ export function FIRECalculator() {
             className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-4 border border-[#2A2D42] hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <DollarSign className="h-5 w-5 text-[#D4A94E]" />
               </div>
               <div>

@@ -84,7 +84,7 @@ function calculateRiskScore(stockExposure: number, ageRange: string): number {
 function getRiskLevel(score: number): { level: string; color: string; bgColor: string } {
   if (score < 30) return { level: "Low", color: "text-green-600", bgColor: "bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30" };
   if (score < 50) return { level: "Medium", color: "text-blue-600", bgColor: "bg-[#121423]0/20 border-blue-500/30" };
-  if (score < 75) return { level: "High", color: "text-[#D4A94E]", bgColor: "bg-[rgba(220,38,38,0.1)] border-[#B22234]/30" };
+  if (score < 75) return { level: "High", color: "text-[#D4A94E]", bgColor: "bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]" };
   return { level: "Very High", color: "text-red-600", bgColor: "bg-[rgba(220,38,38,0.08)]0/20 border-red-500/30" };
 }
 
@@ -527,7 +527,7 @@ export default function RiskAnalyzerPage() {
                     </div>
 
                     {/* Recommendation */}
-                    <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-5 mb-6">
+                    <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mb-6">
                       <div className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <div>
@@ -538,7 +538,7 @@ export default function RiskAnalyzerPage() {
                     </div>
 
                     {/* CTA */}
-                    <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 text-center">
+                    <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 text-center">
                       <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">
                         You've Worked Too Hard to Lose It Now
                       </h3>

@@ -60,9 +60,9 @@ function getProductTypeLabel(productType: string): string {
 
 function getProductTypeColor(productType: string): string {
   const colors: Record<string, string> = {
-    "gold-ira": "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[#B22234]/30",
+    "gold-ira": "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[rgba(197,149,46,0.32)]",
     "silver-ira": "bg-slate-400/20 text-[#D0CCC4] border-[#3F4460]/30",
-    "precious-metals-ira": "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[#B22234]/30",
+    "precious-metals-ira": "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[rgba(197,149,46,0.32)]",
     "crypto-ira": "bg-[#121423]0/20 text-blue-600 border-blue-500/30",
     "real-estate-ira": "bg-teal-500/20 text-teal-600 border-teal-500/30",
     "self-directed-ira": "bg-[rgba(46,139,87,0.08)]0/20 text-green-600 border-green-500/30",
@@ -206,7 +206,7 @@ export function QuizResults({
           {/* Glass-morphism Card */}
           <div className="relative overflow-hidden rounded-2xl border border-[#2A2D42] bg-[#161828] shadow-xl">
             {/* Top Gradient Accent */}
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#B22234] via-[#8b1c2a] to-[#B22234]" />
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#C5952E] via-[#8b1c2a] to-[#B22234]" />
 
             {/* Best Match Badge */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -328,7 +328,7 @@ export function QuizResults({
                         <Button
                           size="sm"
                           variant="outline"
-                          className="text-[#D4A94E] border-[#B22234]/30 hover:bg-[rgba(220,38,38,0.1)] hover:border-[#B22234]/50"
+                          className="text-[#D4A94E] border-[rgba(197,149,46,0.32)] hover:bg-[rgba(220,38,38,0.1)] hover:border-[#B22234]/50"
                           onClick={() => openModal("default", `quiz-results-alt-${productType}`)}
                         >
                           Learn More
@@ -339,7 +339,7 @@ export function QuizResults({
                           size="sm"
                           variant="outline"
                           asChild
-                          className="text-[#D4A94E] border-[#B22234]/30 hover:bg-[rgba(220,38,38,0.1)] hover:border-[#B22234]/50"
+                          className="text-[#D4A94E] border-[rgba(197,149,46,0.32)] hover:bg-[rgba(220,38,38,0.1)] hover:border-[#B22234]/50"
                         >
                           <a
                             href={affiliateLink}

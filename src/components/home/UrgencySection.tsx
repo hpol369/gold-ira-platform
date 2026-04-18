@@ -51,7 +51,7 @@ export function UrgencySection() {
         >
           {/* Urgency Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] text-sm font-bold mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] text-sm font-bold mb-6">
               <AlertTriangle className="h-4 w-4" />
               Why Smart Money Is Moving NOW
             </div>

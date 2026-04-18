@@ -110,7 +110,7 @@ export default function AboutUsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               {/* Photo */}
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl border-4 border-[#B22234]/30 shadow-2xl overflow-hidden flex-shrink-0 bg-[#2A2D42]">
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl border-4 border-[rgba(197,149,46,0.32)] shadow-2xl overflow-hidden flex-shrink-0 bg-[#2A2D42]">
                 <div className="w-full h-full flex items-center justify-center text-[#A8A39A]">
                   {/* Placeholder - replace with actual photo */}
                   <Users className="w-20 h-20 opacity-50" />
@@ -119,7 +119,7 @@ export default function AboutUsPage() {
 
               {/* Intro */}
               <div className="text-center md:text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] text-xs font-semibold mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] text-xs font-semibold mb-4">
                   <Briefcase className="h-3 w-3" />
                   20+ YEARS IN FINANCE
                 </div>

@@ -203,10 +203,10 @@ export default function ComparisonPage() {
 
             {/* Hero Section */}
             <header className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden border-b border-[#2A2D42]">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#B22234]/10 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#C5952E]/10 via-transparent to-transparent" />
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.18)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#B22234]/30">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.18)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[rgba(197,149,46,0.32)]">
                             <Award className="w-4 h-4" />
                             750+ Monthly Searches
                         </div>
@@ -232,7 +232,7 @@ export default function ComparisonPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {/* Best Overall */}
-                        <div className="bg-gradient-to-br from-[#B22234]/20 to-[#8b1c2a]/10 border border-[#B22234]/30 rounded-xl p-6">
+                        <div className="bg-gradient-to-br from-[#C5952E]/20 to-[#A67D24]/10 border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                             <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-sm mb-4">
                                 <Crown className="w-5 h-5" />
                                 BEST OVERALL
@@ -552,7 +552,7 @@ export default function ComparisonPage() {
                 <Container>
                     <div className="bg-gradient-to-br from-amber-900/20 to-amber-800/10 border border-amber-500/20 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
                         <div className="text-center">
-                            <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-6 border border-[#B22234]/30">
+                            <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-6 border border-[rgba(197,149,46,0.32)]">
                                 <Shield className="w-4 h-4" />
                                 FOR IRA ACCOUNTS
                             </div>

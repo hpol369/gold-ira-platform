@@ -170,7 +170,7 @@ export default function WhenNotToOpenGoldIraPage() {
       {/* Page Header */}
       <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 md:py-20 relative overflow-hidden">
         {/* Subtle patriot gradient accent */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#B22234] via-[#000080] to-[#B22234]" />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#C5952E] via-[#000080] to-[#B22234]" />
         <Container className="relative z-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.08)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-red-200">

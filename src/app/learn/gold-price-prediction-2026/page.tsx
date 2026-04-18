@@ -142,7 +142,7 @@ export default function GoldPricePrediction2026Page() {
             </header>
 
             {/* Current Price Banner */}
-            <section className="bg-[rgba(220,38,38,0.1)] border-b border-[#B22234]/30 py-6">
+            <section className="bg-[rgba(220,38,38,0.1)] border-b border-[rgba(197,149,46,0.32)] py-6">
                 <Container>
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4 max-w-4xl mx-auto">
                         <div className="text-center md:text-left">
@@ -283,7 +283,7 @@ export default function GoldPricePrediction2026Page() {
                                         <span className="text-[#D0CCC4]">2024</span>
                                         <span className="text-green-600 font-bold">+27.2%</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                                         <span className="text-[#D4A94E]">2025 YTD</span>
                                         <span className="text-green-600 font-bold">+4.8%</span>
                                     </div>
@@ -334,7 +334,7 @@ export default function GoldPricePrediction2026Page() {
                         {/* What This Means For You */}
                         <div className="mb-16">
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">What This Means If You&apos;re Near Retirement</h2>
-                            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-8">
+                            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
                                 <p className="text-[#D0CCC4] mb-6">
                                     Here&apos;s the truth after 30+ years of watching markets: price predictions are a guessing game. But protecting what you&apos;ve built isn&apos;t about timing. Here&apos;s what matters:
                                 </p>

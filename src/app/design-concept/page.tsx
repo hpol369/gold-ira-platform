@@ -97,7 +97,7 @@ export default function DesignConceptPage() {
 
                             <h1 className="text-5xl md:text-7xl font-serif font-black text-[#F6F4EF] leading-[1.1] mb-6">
                                 Protect Your <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B22234] to-red-600 decoration-[#B22234] underline decoration-4 underline-offset-8">Retirement.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C5952E] to-red-600 decoration-[#B22234] underline decoration-4 underline-offset-8">Retirement.</span>
                             </h1>
 
                             <p className="text-xl text-[#D0CCC4] mb-8 leading-relaxed max-w-lg">

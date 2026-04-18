@@ -47,8 +47,8 @@ export default function DebtInfographic() {
                             {/* Bar */}
                             <div
                                 className={`w-full max-w-[40px] rounded-t shadow-[0_0_15px_rgba(255,0,0,0.3)] transition-all duration-700 ease-out hover:brightness-110 ${index === debtData.length - 1
-                                        ? "bg-gradient-to-t from-[#B22234] to-red-500 animate-pulse border-t-2 border-white/50"
-                                        : "bg-gradient-to-t from-slate-700 to-[#0C0D18]0 hover:from-[#B22234] hover:to-red-500"
+                                        ? "bg-gradient-to-t from-[#C5952E] to-red-500 animate-pulse border-t-2 border-white/50"
+                                        : "bg-gradient-to-t from-slate-700 to-[#0C0D18]0 hover:from-[#C5952E] hover:to-red-500"
                                     }`}
                                 style={{ height: `${item.height}%` }}
                             >
@@ -98,7 +98,7 @@ export default function DebtInfographic() {
                 </div>
 
                 {/* Bottom Message */}
-                <div className="mt-8 bg-black/40 border border-[#B22234]/30 rounded-lg p-4 text-center">
+                <div className="mt-8 bg-black/40 border border-[rgba(197,149,46,0.32)] rounded-lg p-4 text-center">
                     <p className="text-white/90 font-medium text-sm md:text-base italic">
                         <span className="text-[#D4A94E] font-bold">"</span>
                         When governments print money, gold preserves purchasing power.

@@ -62,7 +62,7 @@ export default function Robs401kRulesPage() {
             <main className="min-h-screen bg-[#0C0D18]">
                 {/* Hero Section */}
                 <section className="relative py-12 lg:py-16 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#0C0D18] via-white to-[#161828]" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#0C0D18] via-[#121423] to-[#161828]" />
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent" />
 
                     <Container className="relative z-10">

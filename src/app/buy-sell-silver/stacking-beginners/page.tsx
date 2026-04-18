@@ -262,7 +262,7 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Rich Dad Quote */}
-      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
+      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[rgba(197,149,46,0.32)]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-xl text-[#F6F4EF] italic">
@@ -481,7 +481,7 @@ export default function StackingBeginnersPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {stackingMilestones.map((milestone, index) => (
-                <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 text-center">
+                <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6 text-center">
                   <div className="text-4xl font-bold text-[#D4A94E] mb-2">{milestone.oz} oz</div>
                   <h3 className="text-lg font-bold text-[#F6F4EF] mb-1">{milestone.achievement}</h3>
                   <p className="text-[#D0CCC4] text-sm">{milestone.description}</p>

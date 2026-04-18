@@ -207,7 +207,7 @@ export function GoldIRACalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#B22234]/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <Calculator className="h-4 w-4" />
           Gold IRA Calculator
         </div>
@@ -226,7 +226,7 @@ export function GoldIRACalculator() {
           {/* Portfolio Inputs */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <DollarSign className="h-5 w-5 text-[#D4A94E]" />
               </div>
               <h3 className="text-lg font-semibold">Your Retirement Portfolio</h3>
@@ -383,7 +383,7 @@ export function GoldIRACalculator() {
               </div>
 
               {/* With Gold */}
-              <div className="bg-[rgba(220,38,38,0.1)] rounded-xl p-4 border border-[#B22234]/30">
+              <div className="bg-[rgba(220,38,38,0.1)] rounded-xl p-4 border border-[rgba(197,149,46,0.32)]">
                 <div className="flex items-center gap-2 text-[#D4A94E] text-sm mb-2">
                   <Shield className="h-4 w-4" />
                   {calculations.stocksAllocation}% Stocks + {goldAllocation}% Gold
@@ -402,7 +402,7 @@ export function GoldIRACalculator() {
               className={`text-center p-3 rounded-lg ${
                 calculations.difference >= 0
                   ? "bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30"
-                  : "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
+                  : "bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]"
               }`}
             >
               <div className="text-sm text-[#A8A39A] mb-1">
@@ -730,7 +730,7 @@ export function GoldIRACalculator() {
                   Basic diversification
                 </div>
               </div>
-              <div className="bg-[rgba(220,38,38,0.1)] rounded-lg p-4 text-center border border-[#B22234]/30">
+              <div className="bg-[rgba(220,38,38,0.1)] rounded-lg p-4 text-center border border-[rgba(197,149,46,0.32)]">
                 <div className="text-2xl font-bold text-[#D4A94E] mb-1">10-15%</div>
                 <div className="text-xs text-[#A8A39A]">Moderate</div>
                 <div className="text-xs text-[#A8A39A] mt-1">

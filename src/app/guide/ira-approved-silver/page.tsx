@@ -299,7 +299,7 @@ export default function IraApprovedSilverPage() {
                     <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-a:text-[#D4A94E] max-w-none">
 
                         {/* Key Point Box */}
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 not-prose mb-8">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 not-prose mb-8">
                             <h3 className="font-bold text-[#D4A94E] text-lg mb-3">The 99.9% Rule</h3>
                             <p className="text-[#D0CCC4]">
                                 <strong>All silver in an IRA must be at least 99.9% pure (0.999 fineness).</strong> This is stricter than gold&apos;s 99.5% requirement. Most government-minted silver bullion coins meet this standard, but junk silver and sterling silver do NOT qualify.
@@ -387,7 +387,7 @@ export default function IraApprovedSilverPage() {
 
                             <h3 className="text-[#F6F4EF]">Top 3 Silver Coins for IRAs</h3>
                             <div className="grid md:grid-cols-3 gap-4 not-prose my-6">
-                                <div className="bg-[#0C0D18] border border-[#B22234]/30 rounded-xl p-5">
+                                <div className="bg-[#0C0D18] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                                     <div className="text-[#D4A94E] font-bold text-sm mb-2">#1 Best Overall</div>
                                     <h4 className="font-bold text-[#F6F4EF]">American Silver Eagle</h4>
                                     <p className="text-[#D0CCC4] text-sm mt-2">Maximum liquidity and recognition. The &quot;gold standard&quot; of silver coins (ironic, we know). Higher premiums but easiest to sell.</p>
@@ -533,7 +533,7 @@ export default function IraApprovedSilverPage() {
                                 For most investors, we recommend a mix of coins and bars to balance liquidity with value:
                             </p>
 
-                            <div className="bg-[#0C0D18] border border-[#B22234]/30 rounded-xl p-6 not-prose my-8">
+                            <div className="bg-[#0C0D18] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 not-prose my-8">
                                 <h4 className="font-bold text-[#D4A94E] mb-4">Recommended Silver IRA Portfolio</h4>
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between p-3 bg-[#0C0D18] rounded-lg">

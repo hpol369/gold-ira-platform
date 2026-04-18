@@ -101,7 +101,7 @@ export default function AndySchectmanPage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.18)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#B22234]/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.18)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[rgba(197,149,46,0.32)] ml-4">
                             <TrendingUp className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
@@ -308,7 +308,7 @@ export default function AndySchectmanPage() {
                     {/* Sidebar */}
                     <aside className="lg:col-span-1 space-y-8">
                         {/* CTA Box */}
-                        <div className="bg-gradient-to-br from-amber-900/30 to-slate-800/50 border border-[#B22234]/30 rounded-xl p-6 sticky top-24">
+                        <div className="bg-gradient-to-br from-amber-900/30 to-slate-800/50 border border-[rgba(197,149,46,0.32)] rounded-xl p-6 sticky top-24">
                             <h3 className="text-xl font-bold font-serif text-[#F6F4EF] mb-4">
                                 Want to Follow the Experts Into Silver?
                             </h3>

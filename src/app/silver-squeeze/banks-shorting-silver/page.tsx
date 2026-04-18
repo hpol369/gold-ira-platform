@@ -72,7 +72,7 @@ export default function BanksShortingSilverPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-slate-900 to-slate-900 z-0"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="inline-block py-1 px-3 rounded-full bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border border-[#B22234]/30 text-xs font-bold tracking-widest uppercase mb-4">
+                        <span className="inline-block py-1 px-3 rounded-full bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border border-[rgba(197,149,46,0.32)] text-xs font-bold tracking-widest uppercase mb-4">
                             INVESTIGATION
                         </span>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
@@ -315,7 +315,7 @@ export default function BanksShortingSilverPage() {
                                     This explains the apparent contradiction: banks short paper silver while buying physical. They know paper silver is not real - but physical silver is. They are positioning for the end of their own manipulation.
                                 </p>
 
-                                <div className="bg-gradient-to-r from-[#B22234]/20 to-[#8b1c2a]/10 border border-[#B22234]/30 rounded-lg p-6 my-8">
+                                <div className="bg-gradient-to-r from-[#C5952E]/20 to-[#A67D24]/10 border border-[rgba(197,149,46,0.32)] rounded-lg p-6 my-8">
                                     <h4 className="text-lg font-bold text-[#D4A94E] mb-3">What This Means For You</h4>
                                     <p className="text-[#D0CCC4]">
                                         If banks are accumulating physical silver while shorting paper, they expect physical silver to outperform paper silver significantly. Smart retail investors should follow the same playbook: <strong className="text-[#F6F4EF]">own physical silver, not paper derivatives</strong>.
@@ -391,7 +391,7 @@ export default function BanksShortingSilverPage() {
                     {/* Sidebar */}
                     <aside className="lg:col-span-1 space-y-8">
                         {/* CTA Box */}
-                        <div className="bg-gradient-to-br from-amber-900/30 to-slate-800/50 border border-[#B22234]/30 rounded-xl p-6 sticky top-24">
+                        <div className="bg-gradient-to-br from-amber-900/30 to-slate-800/50 border border-[rgba(197,149,46,0.32)] rounded-xl p-6 sticky top-24">
                             <div className="flex items-center gap-2 mb-4">
                                 <AlertTriangle className="w-5 h-5 text-[#D4A94E]" />
                                 <span className="text-[#D4A94E] font-bold text-sm uppercase tracking-wide">Take Action</span>

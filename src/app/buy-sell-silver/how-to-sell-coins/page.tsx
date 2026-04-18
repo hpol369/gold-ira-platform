@@ -311,7 +311,7 @@ export default function HowToSellCoinsPage() {
                             </li>
                           ))}
                         </ul>
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-3">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-3">
                           <p className="text-sm">
                             <span className="text-[#D4A94E] font-semibold">Pro Tip: </span>
                             <span className="text-[#D0CCC4]">{step.tip}</span>

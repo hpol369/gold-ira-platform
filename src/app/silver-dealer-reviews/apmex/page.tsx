@@ -340,7 +340,7 @@ export default function APMEXReviewPage() {
                                 APMEX sells plenty of IRA-eligible silver products, but they are not an IRA custodian themselves. They partner with third-party custodians like Equity Trust and GoldStar Trust to facilitate precious metals IRAs.
                             </p>
 
-                            <div className="bg-amber-900/20 border border-[#B22234]/30 rounded-xl p-6 my-8 not-prose">
+                            <div className="bg-amber-900/20 border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
                                     <Award className="w-5 h-5 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>

@@ -247,7 +247,7 @@ export default function CoinsVsBarsPage() {
       </section>
 
       {/* Quick Answer */}
-      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
+      <section className="py-8 bg-[rgba(220,38,38,0.1)] border-y border-[rgba(197,149,46,0.32)]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl font-bold text-[#D4A94E] mb-4">Quick Answer</h2>
@@ -265,7 +265,7 @@ export default function CoinsVsBarsPage() {
         <Container>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Coins */}
-            <div className="bg-[rgba(220,38,38,0.1)] backdrop-blur-sm border border-[#B22234]/30 rounded-2xl p-8">
+            <div className="bg-[rgba(220,38,38,0.1)] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-[rgba(220,38,38,0.18)] rounded-xl">
                   <Coins className="w-8 h-8 text-[#D4A94E]" />

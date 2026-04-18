@@ -6,7 +6,7 @@ import { ArrowRight, ShieldAlert, TrendingDown } from "lucide-react";
 
 export function SidebarAuditWidget() {
     return (
-        <div className="bg-[#0C0D18] border border-[#B22234]/30 rounded-xl p-6 shadow-xl relative overflow-hidden group">
+        <div className="bg-[#0C0D18] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 shadow-xl relative overflow-hidden group">
             {/* Ambient Glow Effect */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-[rgba(220,38,38,0.1)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-[rgba(220,38,38,0.18)] transition-all duration-700" />
 

@@ -423,7 +423,7 @@ export default function WhatIsGoldIRAPage() {
               </div>
 
               {/* CTA */}
-              <div className="bg-gradient-to-br from-[#B22234]/20 to-[#B22234]/10 rounded-xl p-6 border border-[#B22234]/20">
+              <div className="bg-gradient-to-br from-[#C5952E]/20 to-[#B22234]/10 rounded-xl p-6 border border-[#B22234]/20">
                 <h3 className="font-bold text-[#F6F4EF] mb-2">
                   Get Your Free Gold IRA Kit
                 </h3>

@@ -653,7 +653,7 @@ export default function GoldIRARolloverPage() {
                 </p>
 
                 <div className="space-y-4 mb-6">
-                  <div className="bg-[#0C0D18] border-2 border-[#B22234]/30 rounded-xl p-5">
+                  <div className="bg-[#0C0D18] border-2 border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-[rgba(220,38,38,0.1)] rounded-lg flex items-center justify-center shrink-0">
                         <Building2 className="h-6 w-6 text-[#D4A94E]" />

@@ -357,7 +357,7 @@ export function FIRENumberCalculator() {
               ? 'bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30'
               : calculations.willReachGoal
               ? 'bg-[#121423]0/20 border-blue-500/30'
-              : 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30'
+              : 'bg-[rgba(220,38,38,0.1)] border-[rgba(197,149,46,0.32)]'
           }`}>
             <div className="flex items-center gap-3 mb-4">
               {calculations.hasReachedFIRE ? (

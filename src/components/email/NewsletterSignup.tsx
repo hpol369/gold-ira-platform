@@ -130,7 +130,7 @@ export function NewsletterSignup({
   // Footer variant - horizontal layout
   if (variant === "footer") {
     return (
-      <div className={cn("bg-gradient-to-r from-[#B22234]/10 to-[#B22234]/5 border border-[#B22234]/20 rounded-2xl p-6 md:p-8", className)}>
+      <div className={cn("bg-gradient-to-r from-[#C5952E]/10 to-[#B22234]/5 border border-[#B22234]/20 rounded-2xl p-6 md:p-8", className)}>
         <div className="flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-1">
             <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-sm mb-2">
@@ -241,7 +241,7 @@ export function NewsletterSignup({
           <button
             type="submit"
             disabled={status === "loading" || !consent}
-            className="w-full px-6 py-4 bg-gradient-to-r from-[#B22234] to-[#8b1c2a] hover:from-[#8b1c2a] hover:to-[#6b1520] disabled:from-[#B22234]/50 disabled:to-[#8b1c2a]/50 text-white font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+            className="w-full px-6 py-4 bg-[#C5952E] hover:from-[#8b1c2a] hover:to-[#6b1520] disabled:from-[#C5952E]/50 disabled:to-[#A67D24]/50 text-white font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
           >
             {status === "loading" ? (
               <Loader2 className="h-5 w-5 animate-spin" />

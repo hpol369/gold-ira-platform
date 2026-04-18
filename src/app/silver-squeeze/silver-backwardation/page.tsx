@@ -378,7 +378,7 @@ export default function SilverBackwardationPage() {
                                     <p className="text-sm text-[#D0CCC4]">Backwardation is a bullish indicator. It suggests the physical market is tight and prices may need to rise to attract supply or ration demand.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)]">
                                     <h4 className="font-bold text-[#D4A94E] text-lg mb-2">Silver IRA Holders</h4>
                                     <p className="text-sm text-[#D0CCC4]">Backwardation confirms the value of holding physical silver in an IRA. Your allocated metal is genuine, not a paper claim that might not be deliverable.</p>
                                 </div>

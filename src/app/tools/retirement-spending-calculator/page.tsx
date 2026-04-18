@@ -159,7 +159,7 @@ export default function RetirementSpendingCalculatorPage() {
       <section className="py-12 md:py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FREE RETIREMENT SPENDING CALCULATOR
             </div>
@@ -373,7 +373,7 @@ export default function RetirementSpendingCalculatorPage() {
                   </div>
 
                   {/* Total Display */}
-                  <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-xl p-5 mt-4">
+                  <div className="bg-[rgba(220,38,38,0.06)] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mt-4">
                     <div className="text-center">
                       <div className="text-[#D0CCC4] text-sm mb-2">
                         Current Monthly Total
@@ -423,7 +423,7 @@ export default function RetirementSpendingCalculatorPage() {
                         </div>
 
                         {/* Inflation Impact Warning */}
-                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-4">
                           <div className="flex items-start gap-3">
                             <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                             <div>
@@ -596,7 +596,7 @@ export default function RetirementSpendingCalculatorPage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-2xl p-8">
+            <div className="bg-[rgba(220,38,38,0.06)] border border-[rgba(197,149,46,0.32)] rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-6">
                 <Shield className="h-8 w-8 text-[#D4A94E] flex-shrink-0" />
                 <div>

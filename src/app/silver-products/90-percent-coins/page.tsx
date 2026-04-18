@@ -257,7 +257,7 @@ export default function NinetyPercentCoinsPage() {
                   <div
                     key={coin.name}
                     className={`bg-[#0C0D18] backdrop-blur-sm border rounded-xl p-5 ${
-                      coin.highlight ? "border-[#B22234]/30" : "border-[#2A2D42]"
+                      coin.highlight ? "border-[rgba(197,149,46,0.32)]" : "border-[#2A2D42]"
                     }`}
                   >
                     <div className="flex justify-between items-start mb-2">
@@ -352,7 +352,7 @@ export default function NinetyPercentCoinsPage() {
               </h2>
 
               {/* Mercury Dime */}
-              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8">
                 <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Mercury Dime (1916-1945)</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -392,7 +392,7 @@ export default function NinetyPercentCoinsPage() {
               </div>
 
               {/* Walking Liberty Half */}
-              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8">
                 <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Walking Liberty Half Dollar (1916-1947)</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -468,7 +468,7 @@ export default function NinetyPercentCoinsPage() {
                 </div>
               </div>
 
-              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
                   <Info className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>

@@ -146,7 +146,7 @@ export default function MorganDollarValuePage() {
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
               <Star className="h-4 w-4" />
               6,800 MONTHLY SEARCHES
             </div>
@@ -181,7 +181,7 @@ export default function MorganDollarValuePage() {
       <section className="py-8 bg-[#161828] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
+            <div className="bg-gradient-to-r from-[#C5952E]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
               <div className="flex items-start gap-4">
                 <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-1" />
                 <div>
@@ -265,7 +265,7 @@ export default function MorganDollarValuePage() {
               {keyDates.map((coin, index) => (
                 <div
                   key={index}
-                  className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-5"
+                  className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-5"
                 >
                   <div className="flex flex-col md:flex-row md:items-center gap-4">
                     <div className="md:w-1/4">
@@ -379,7 +379,7 @@ export default function MorganDollarValuePage() {
                 <h3 className="font-bold text-[#D0CCC4] mb-1">Philadelphia</h3>
                 <p className="text-sm text-[#D0CCC4]">No mint mark. Highest total mintage.</p>
               </div>
-              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-5 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[rgba(197,149,46,0.32)] rounded-xl p-5 text-center">
                 <div className="text-3xl font-bold text-[#D4A94E] mb-2">CC</div>
                 <h3 className="font-bold text-[#D0CCC4] mb-1">Carson City</h3>
                 <p className="text-sm text-[#D0CCC4]">Most valuable. Minted 1878-1893.</p>

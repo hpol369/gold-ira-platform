@@ -224,7 +224,7 @@ export default function SilverToGoldRatioCalculatorPage() {
 
           {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#B22234]/30">
+            <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
               <Scale className="h-4 w-4" />
               Precious Metals Analysis Tool
             </div>
@@ -245,7 +245,7 @@ export default function SilverToGoldRatioCalculatorPage() {
               {/* Calculator Card */}
               <div className="bg-[#0C0D18] backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-[#2A2D42] shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-[rgba(220,38,38,0.18)] rounded-lg border border-[#B22234]/30">
+                  <div className="p-2 bg-[rgba(220,38,38,0.18)] rounded-lg border border-[rgba(197,149,46,0.32)]">
                     <Calculator className="h-5 w-5 text-[#D4A94E]" />
                   </div>
                   <h2 className="text-xl font-semibold">Price Inputs</h2>
@@ -292,7 +292,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                 </div>
 
                 {/* Current Ratio Display */}
-                <div className="mt-8 p-6 bg-gradient-to-br from-[#B22234]/20 to-yellow-500/10 rounded-xl border border-[#B22234]/30">
+                <div className="mt-8 p-6 bg-gradient-to-br from-[#C5952E]/20 to-yellow-500/10 rounded-xl border border-[rgba(197,149,46,0.32)]">
                   <div className="text-center">
                     <p className="text-sm text-[#D0CCC4] mb-2">
                       Current Silver-to-Gold Ratio
@@ -450,7 +450,7 @@ export default function SilverToGoldRatioCalculatorPage() {
                   </div>
 
                   {/* Long-term Average Scenario */}
-                  <div className="p-5 bg-gradient-to-r from-[#B22234]/10 to-yellow-500/5 rounded-xl border border-amber-500/20">
+                  <div className="p-5 bg-gradient-to-r from-[#C5952E]/10 to-yellow-500/5 rounded-xl border border-amber-500/20">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
                         <TrendingUp className="h-5 w-5 text-[#D4A94E]" />
@@ -688,7 +688,7 @@ export default function SilverToGoldRatioCalculatorPage() {
           <div className="max-w-4xl mx-auto mb-16">
             <div className="bg-gradient-to-br from-slate-800/90 via-slate-900/90 to-slate-800/90 rounded-2xl p-8 md:p-10 border border-amber-500/20 shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_60px_rgba(212,175,55,0.1)]">
               <div className="text-center mb-6">
-                <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[#B22234]/30">
+                <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.18)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[rgba(197,149,46,0.32)]">
                   <Coins className="h-4 w-4" />
                   Investment Opportunity
                 </div>
@@ -705,7 +705,7 @@ export default function SilverToGoldRatioCalculatorPage() {
               <div className="grid md:grid-cols-2 gap-4">
                 <Link
                   href="/quiz"
-                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#B22234] to-[#8b1c2a] text-[#F6F4EF] font-bold py-4 px-6 rounded-xl hover:scale-105 transition-transform shadow-[0_0_30px_rgba(212,175,55,0.3)]"
+                  className="flex items-center justify-center gap-2 bg-[#C5952E] text-[#F6F4EF] font-bold py-4 px-6 rounded-xl hover:scale-105 transition-transform shadow-[0_0_30px_rgba(212,175,55,0.3)]"
                 >
                   Take Our Precious Metals Quiz
                   <ArrowRight className="h-5 w-5" />

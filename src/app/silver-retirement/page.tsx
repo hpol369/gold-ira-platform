@@ -261,7 +261,7 @@ export default function SilverRetirementPage() {
       </section>
 
       {/* Rich Dad Quote */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#C5952E]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <blockquote className="max-w-3xl mx-auto text-center">
             <p className="text-2xl md:text-3xl font-serif italic text-[#F6F4EF] mb-4">
@@ -290,7 +290,7 @@ export default function SilverRetirementPage() {
             {hubPages.map((page, index) => {
               const Icon = page.icon;
               const colorClasses: Record<string, string> = {
-                amber: "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[#B22234]/30",
+                amber: "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[rgba(197,149,46,0.32)]",
                 blue: "bg-[#121423]0/20 text-blue-400 border-blue-500/30",
                 green: "bg-[rgba(46,139,87,0.08)]0/20 text-green-400 border-green-500/30",
                 purple: "bg-purple-500/20 text-[#D4A94E] border-[rgba(197,149,46,0.32)]",
@@ -307,7 +307,7 @@ export default function SilverRetirementPage() {
                   href={page.href}
                   className={`bg-[#0C0D18] hover:bg-[#1E2134] backdrop-blur-sm border rounded-xl p-6 transition-all group ${
                     page.featured
-                      ? "border-[#B22234]/30 ring-1 ring-amber-500/20 md:col-span-2 lg:col-span-1"
+                      ? "border-[rgba(197,149,46,0.32)] ring-1 ring-amber-500/20 md:col-span-2 lg:col-span-1"
                       : "border-[#2A2D42] hover:border-[#3F4460]"
                   }`}
                 >

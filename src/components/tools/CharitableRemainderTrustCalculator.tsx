@@ -534,7 +534,7 @@ export function CharitableRemainderTrustCalculator() {
               </div>
             </div>
 
-            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+            <div className="bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4">
               <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-semibold mb-2">
                 <Gift className="h-4 w-4" />
                 Charitable Remainder

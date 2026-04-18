@@ -264,7 +264,7 @@ export default function HowMuchSilverPage() {
               const colorClasses: Record<string, string> = {
                 blue: "border-blue-500/30 bg-[#121423]0/10",
                 green: "border-green-500/30 bg-[rgba(46,139,87,0.08)]0/10",
-                amber: "border-[#B22234]/30 bg-[rgba(220,38,38,0.1)]",
+                amber: "border-[rgba(197,149,46,0.32)] bg-[rgba(220,38,38,0.1)]",
               };
               const textColors: Record<string, string> = {
                 blue: "text-blue-400",
@@ -365,7 +365,7 @@ export default function HowMuchSilverPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#C5952E]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">
@@ -456,7 +456,7 @@ export default function HowMuchSilverPage() {
       {/* Warning Section */}
       <section className="py-12">
         <Container>
-          <div className="max-w-3xl mx-auto bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+          <div className="max-w-3xl mx-auto bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
             <div className="flex items-start gap-4">
               <AlertTriangle className="h-6 w-6 text-[#D4A94E] mt-1 flex-shrink-0" />
               <div>

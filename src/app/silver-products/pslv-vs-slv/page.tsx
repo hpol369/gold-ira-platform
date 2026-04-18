@@ -122,7 +122,7 @@ export default function PSLVvsSLVPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[rgba(197,149,46,0.32)] rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <BarChart3 className="h-4 w-4" />
               100 MONTHLY SEARCHES - DIFFICULTY 0
             </div>
@@ -396,7 +396,7 @@ export default function PSLVvsSLVPage() {
                 <li>PSLV silver cannot be rehypothecated or used against silver bulls</li>
               </ul>
 
-              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
                   <Info className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>

@@ -321,7 +321,7 @@ export default function BoldPreciousMetalsReviewPage() {
                                 Bold sells IRA-eligible products but partners with third-party custodians for retirement account setup. This is typical for direct dealers.
                             </p>
 
-                            <div className="bg-amber-900/20 border border-[#B22234]/30 rounded-xl p-6 my-8 not-prose">
+                            <div className="bg-amber-900/20 border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
                                     <Award className="w-5 h-5 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>
